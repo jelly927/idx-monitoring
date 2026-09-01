@@ -1,0 +1,250 @@
+{
+ "_comment": "whitelist 31개. rss 가 비면 home 에서 <link rel=alternate type=rss> 자동 탐색 후 data/cache/rss_map.json 에 저장. 그래도 없으면 home 페이지 헤드라인 스크랩. ytd_base 는 2025-12-31 기준.",
+ "whitelist": [
+  {
+   "name": "Reuters",
+   "home": "https://www.reuters.com/world/asia-pacific/",
+   "rss": "https://www.reuters.com/arc/outboundfeeds/rss/category/world/asia-pacific/?outputType=xml"
+  },
+  {
+   "name": "Bloomberg",
+   "home": "https://www.bloomberg.com/asia",
+   "rss": "https://feeds.bloomberg.com/markets/news.rss"
+  },
+  {
+   "name": "Bloomberg Technoz",
+   "home": "https://www.bloombergtechnoz.com/",
+   "rss": "https://www.bloombergtechnoz.com/rss"
+  },
+  {
+   "name": "The Jakarta Post",
+   "home": "https://www.thejakartapost.com/business",
+   "rss": "https://www.thejakartapost.com/rss/business"
+  },
+  {
+   "name": "Kompas",
+   "home": "https://money.kompas.com/",
+   "rss": "https://money.kompas.com/rss"
+  },
+  {
+   "name": "Tempo",
+   "home": "https://bisnis.tempo.co/",
+   "rss": "https://rss.tempo.co/bisnis"
+  },
+  {
+   "name": "ANTARA",
+   "home": "https://www.antaranews.com/ekonomi",
+   "rss": "https://www.antaranews.com/rss/ekonomi.xml"
+  },
+  {
+   "name": "CNN Indonesia",
+   "home": "https://www.cnnindonesia.com/ekonomi",
+   "rss": "https://www.cnnindonesia.com/ekonomi/rss"
+  },
+  {
+   "name": "Detik",
+   "home": "https://finance.detik.com/",
+   "rss": "https://finance.detik.com/rss"
+  },
+  {
+   "name": "Liputan6",
+   "home": "https://www.liputan6.com/saham",
+   "rss": "https://feed.liputan6.com/rss/saham"
+  },
+  {
+   "name": "tvOne",
+   "home": "https://www.tvonenews.com/ekonomi",
+   "rss": "https://www.tvonenews.com/rss/ekonomi"
+  },
+  {
+   "name": "Kompas TV",
+   "home": "https://www.kompas.tv/ekonomi",
+   "rss": "https://www.kompas.tv/rss/ekonomi"
+  },
+  {
+   "name": "TVRI",
+   "home": "https://www.tvrinews.com/ekonomi",
+   "rss": "https://www.tvrinews.com/rss"
+  },
+  {
+   "name": "Jawa Pos",
+   "home": "https://www.jawapos.com/ekonomi",
+   "rss": "https://www.jawapos.com/rss/ekonomi"
+  },
+  {
+   "name": "Bisnis",
+   "home": "https://market.bisnis.com/",
+   "rss": "https://www.bisnis.com/rss/market"
+  },
+  {
+   "name": "Kontan",
+   "home": "https://investasi.kontan.co.id/",
+   "rss": "https://rss.kontan.co.id/news/investasi"
+  },
+  {
+   "name": "CNBC Indonesia",
+   "home": "https://www.cnbcindonesia.com/market",
+   "rss": "https://www.cnbcindonesia.com/market/rss"
+  },
+  {
+   "name": "Investor Daily",
+   "home": "https://investor.id/market",
+   "rss": "https://investor.id/rss"
+  },
+  {
+   "name": "IDNFinancials",
+   "home": "https://www.idnfinancials.com/news",
+   "rss": "https://www.idnfinancials.com/rss"
+  },
+  {
+   "name": "EmitenNews",
+   "home": "https://www.emitennews.com/",
+   "rss": "https://www.emitennews.com/feed"
+  },
+  {
+   "name": "IDX Channel",
+   "home": "https://www.idxchannel.com/market-news",
+   "rss": "https://www.idxchannel.com/rss/market-news"
+  },
+  {
+   "name": "Infobank",
+   "home": "https://infobanknews.com/",
+   "rss": "https://infobanknews.com/feed"
+  },
+  {
+   "name": "Katadata",
+   "home": "https://katadata.co.id/finansial",
+   "rss": "https://katadata.co.id/rss"
+  },
+  {
+   "name": "Media Indonesia",
+   "home": "https://mediaindonesia.com/ekonomi",
+   "rss": "https://mediaindonesia.com/rss/ekonomi"
+  },
+  {
+   "name": "Rakyat Merdeka",
+   "home": "https://rm.id/ekonomi-bisnis",
+   "rss": "https://rm.id/rss"
+  },
+  {
+   "name": "Tribunnews",
+   "home": "https://www.tribunnews.com/bisnis",
+   "rss": "https://www.tribunnews.com/rss/bisnis"
+  },
+  {
+   "name": "Kumparan",
+   "home": "https://kumparan.com/kumparanbisnis",
+   "rss": "https://kumparan.com/rss/kumparanbisnis"
+  },
+  {
+   "name": "BeritaSatu",
+   "home": "https://www.beritasatu.com/ekonomi",
+   "rss": "https://www.beritasatu.com/rss/ekonomi"
+  },
+  {
+   "name": "Medcom",
+   "home": "https://www.medcom.id/ekonomi",
+   "rss": "https://www.medcom.id/rss/ekonomi"
+  },
+  {
+   "name": "Republika",
+   "home": "https://ekonomi.republika.co.id/",
+   "rss": "https://www.republika.co.id/rss/ekonomi"
+  },
+  {
+   "name": "SWA",
+   "home": "https://swa.co.id/",
+   "rss": "https://swa.co.id/feed"
+  }
+ ],
+ "news_only_with_ticker": true,
+ "min_value_idr": 1000000000,
+ "fx_basis": "FY26 YTD 누적환율 (KISI 시트, 매주 월 갱신)",
+ "idr_per_krw": 11.7705,
+ "ytd_base": {
+  "JCI": 8646.46,
+  "USDIDR": 16720,
+  "KRWIDR": 11.6144,
+  "SUN10Y": 6.1635,
+  "Brent": 60.9
+ },
+ "universe": [
+  "BBCA",
+  "BBRI",
+  "BMRI",
+  "BBNI",
+  "BBTN",
+  "BRIS",
+  "TLKM",
+  "ISAT",
+  "EXCL",
+  "ASII",
+  "UNVR",
+  "ICBP",
+  "INDF",
+  "AMRT",
+  "MAPI",
+  "ACES",
+  "KLBF",
+  "SIDO",
+  "CPIN",
+  "JPFA",
+  "ADRO",
+  "AADI",
+  "PTBA",
+  "ITMG",
+  "BUMI",
+  "INDY",
+  "MEDC",
+  "PGAS",
+  "AKRA",
+  "PGEO",
+  "BRPT",
+  "TPIA",
+  "BREN",
+  "DSSA",
+  "INCO",
+  "ANTM",
+  "MDKA",
+  "MBMA",
+  "NCKL",
+  "AMMN",
+  "TINS",
+  "EMAS",
+  "SMGR",
+  "INTP",
+  "UNTR",
+  "HRTA",
+  "GOTO",
+  "BUKA",
+  "EMTK",
+  "DCII",
+  "DNET",
+  "SCMA",
+  "MNCN",
+  "TOWR",
+  "MTEL",
+  "JSMR",
+  "PTRO",
+  "CUAN",
+  "DEWA",
+  "BRMS",
+  "ENRG",
+  "INKP",
+  "TKIM",
+  "SRTG",
+  "BSDE",
+  "CTRA",
+  "PWON",
+  "SMRA",
+  "MIKA",
+  "HEAL",
+  "ARTO",
+  "BFIN",
+  "WIFI",
+  "BSIM",
+  "KOTA",
+  "DMAS"
+ ],
+ "news_max_items": 80
+}
