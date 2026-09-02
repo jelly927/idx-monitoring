@@ -926,7 +926,9 @@ def translate_field(items, field="t", langs=("ko", "id"), budget=None):
     cfg = CFG.get("translate") or {}
     if not cfg.get("enabled", True): return items
     _tr_cache_reload()                              # 예약 작업이 채워 넣은 번역도 반영
-    engines = [e for e in (cfg.get("engines") or [cfg.get("engine", "google"), "mymemory"]) if e in TR_ENGINES]
+    eng_cfg = cfg.get("engines")
+    if eng_cfg is None: eng_cfg = [cfg.get("engine", "google"), "mymemory"]
+    engines = [e for e in eng_cfg if e in TR_ENGINES]          # engines: [] 이면 외부 기계번역 사용 안 함 (원문 유지)
     if not engines: return items
     budget = cfg.get("max_per_run", 60) if budget is None else budget
 

@@ -84,6 +84,19 @@ class Quiet(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
         self.send_header("Cache-Control", "no-store"); super().end_headers()
 
+def find_git():
+    """PATH → GitHub Desktop 내장 git → Program Files 순으로 git.exe 를 찾는다."""
+    import shutil, glob
+    g = shutil.which("git")
+    if g: return g
+    la = os.environ.get("LOCALAPPDATA", "")
+    cands = glob.glob(os.path.join(la, "GitHubDesktop", "app-*", "resources", "app", "git", "cmd", "git.exe"))
+    cands += [os.path.join(os.environ.get("ProgramFiles", r"C:\Program Files"), "Git", "cmd", "git.exe"),
+              os.path.join(la, "Programs", "Git", "cmd", "git.exe")]
+    for c in sorted(cands, reverse=True):
+        if os.path.exists(c): return c
+    return None
+
 def auto_push():
     """config.json 의 auto_push 가 true 면 수집 결과(data.json, data.js)를 GitHub 로 올린다.
     → GitHub Pages 주소만 공유하면 받는 사람은 파이썬 없이 항상 최신 화면을 본다."""
@@ -93,9 +106,13 @@ def auto_push():
         if not cfg.get("auto_push"): return
         if not (ROOT / ".git").exists():
             print("auto_push: .git 폴더가 없어 건너뜀 (git init 필요)"); return
-        q = lambda *a: subprocess.run(["git", *a], cwd=str(ROOT), capture_output=True, text=True, timeout=120)
-        q("add", "data.json", "data.js", "data/cache/tr_ko.json", "data/cache/tr_claude.json")
-        c = q("commit", "-q", "-m", "data " + datetime.datetime.now().strftime("%Y-%m-%d %H:%M"))
+        git = find_git()
+        if not git: print("auto_push: git 을 찾지 못해 건너뜀 (Git for Windows 또는 GitHub Desktop 설치 필요)"); return
+        q = lambda *a: subprocess.run([git, *a], cwd=str(ROOT), capture_output=True, text=True, timeout=120)
+        files = ["data/cache/tr_claude.json", "data/manual.json", "config.json", "tickers.json"]
+        if cfg.get("auto_push_data"): files += ["data.json", "data.js"]   # GitHub 러너가 수집을 못 할 때만 PC 가 data 도 올린다
+        q("add", *files)
+        c = q("commit", "-q", "-m", ("data " if cfg.get("auto_push_data") else "translations ") + datetime.datetime.now().strftime("%Y-%m-%d %H:%M") + " [skip ci]")
         if c.returncode != 0 and "nothing to commit" in (c.stdout + c.stderr): return
         p = q("push", "-q", "origin", "main")
         if p.returncode == 0: print("auto_push: GitHub 반영 완료", flush=True)
