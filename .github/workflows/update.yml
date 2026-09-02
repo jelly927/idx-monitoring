@@ -1,1 +1,49 @@
-github_upload\.github\workflows\update.yml
+name: update-and-deploy
+on:
+  schedule:
+    - cron: "*/5 1-10 * * 1-5"
+    - cron: "0 12,23 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency: { group: update, cancel-in-progress: false }
+jobs:
+  fetch:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: fetch
+        run: python fetch_data.py
+        env:
+          TZ: Asia/Jakarta
+          IDX_PROXY: ${{ vars.IDX_PROXY }}
+      - name: commit data
+        run: |
+          git config user.name idx-live-bot && git config user.email bot@users.noreply.github.com
+          git add data.json data.js data/cache/investing_cal.json data/cache/rss_map.json data/cache/ss_*.json || true
+          git commit -m "data $(TZ=Asia/Jakarta date +%Y-%m-%d\ %H:%M) WIB [skip ci]" || echo "no change"
+          git pull --rebase origin main || true
+          git push || true
+  deploy:
+    needs: fetch
+    if: always() && !cancelled()
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.d.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: . }
+      - id: d
+        uses: actions/deploy-pages@v4
