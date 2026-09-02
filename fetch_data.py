@@ -21,7 +21,7 @@ IDX Live 수집기 v2 — index.html 이 읽는 data.json 을 생성한다.
 
 원칙: 못 구한 값은 null → 화면에 "확인 필요". 추정 금지. 출처는 항목마다 기록.
 """
-import json, re, sys, time, html, datetime as dt
+import json, re, sys, time, html, hashlib, threading, queue as _queue, datetime as dt
 from pathlib import Path
 
 try:
@@ -48,6 +48,147 @@ def log(*a): print(now_wib().strftime("%H:%M:%S"), *a, flush=True)
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
 
+# =============================================================== 브라우저 폴백 (Cloudflare 우회)
+# IDX 는 Cloudflare 뒤라 python requests 가 403 으로 막힌다. 실제 크로미움으로 열면 통과한다.
+# 지속 세션(start() 후 계속 보유)은 Windows 에서 "browser has been closed" 로 끊기므로
+# 반드시 with sync_playwright() 블록 안에서 열고 닫는다.
+def _pw_call(job, label="", timeout=300):
+    """모든 브라우저 작업을 전용 스레드 하나에 몰아서 처리한다.
+    - playwright sync API 는 asyncio 루프가 도는 스레드에서 못 쓴다 (yfinance 가 루프를 남긴다)
+      → "Playwright Sync API inside the asyncio loop" 오류의 원인
+    - playwright 객체는 스레드 간 공유가 안 되므로 세션도 이 스레드에 묶는다"""
+    if threading.current_thread() is _PWQ.get("th"):
+        return job()                                   # 이미 워커 스레드 안이면 바로 실행
+    if _PWQ["q"] is None:
+        _PWQ["q"] = _queue.Queue()
+        def _loop():
+            import asyncio
+            try: asyncio.set_event_loop(None)          # 이 스레드에는 루프를 두지 않는다
+            except Exception: pass
+            while True:
+                item = _PWQ["q"].get()
+                if item is None: break
+                f, box, ev = item
+                try: box["v"] = f()
+                except Exception as e:
+                    box["e"] = e
+                    try:
+                        import asyncio as _a
+                        box["diag"] = f"thread={threading.current_thread().name} loop={_a._get_running_loop()}"
+                    except Exception: pass
+                finally: ev.set()
+        _PWQ["th"] = threading.Thread(target=_loop, daemon=True, name="pw-worker")
+        _PWQ["th"].start()
+    box, ev = {}, threading.Event()
+    _PWQ["q"].put((job, box, ev))
+    if not ev.wait(timeout=timeout):
+        log("브라우저 시간 초과", label); return None
+    if "e" in box:
+        log("브라우저 실패", label, str(box["e"])[:120], box.get("diag", "")); return None
+    return box.get("v")
+
+def _pw_browser():
+    """워커 스레드 안에서만 호출. sync_playwright 인스턴스는 프로세스당 하나만 띄운다.
+    (start() 를 여러 번 하면 스레드에 러닝 루프가 남아 다음 호출이 전부 실패한다)"""
+    br = _PWQ.get("br")
+    if br is not None:
+        try:
+            br.contexts; return br
+        except Exception:
+            _pw_shutdown()
+    from playwright.sync_api import sync_playwright
+    _PWQ["pw"] = sync_playwright().start()
+    _PWQ["br"] = _PWQ["pw"].chromium.launch()
+    log("브라우저 기동")
+    return _PWQ["br"]
+
+def _pw_shutdown():
+    """워커 스레드 안에서만 호출."""
+    _IDXPW["pg"] = None
+    for k, m in (("br", "close"), ("pw", "stop")):
+        try:
+            o = _PWQ.get(k)
+            if o is not None: getattr(o, m)()
+        except Exception: pass
+    _PWQ["br"] = _PWQ["pw"] = None
+
+def _pw_session(fn, label=""):
+    def job():
+        try:
+            import playwright  # noqa
+        except ImportError:
+            log("playwright 없음 → 브라우저 폴백 불가 (pip install playwright && playwright install chromium)"); return None
+        pg = _pw_browser().new_page(user_agent=UA, locale="id-ID", timezone_id="Asia/Jakarta")
+        pg.set_default_timeout(45000)
+        try:
+            return fn(pg)
+        finally:
+            try: pg.close()
+            except Exception: pass
+    return _pw_call(job, label)
+
+def _host(u):
+    try: return u.split("/")[2]
+    except Exception: return u[:40]
+
+def _wait_cf(pg, tries=10):
+    """Cloudflare 대기 화면이 걷힐 때까지."""
+    for _ in range(tries):
+        try: t = pg.evaluate("() => document.body ? document.body.innerText.slice(0,300) : ''") or ""
+        except Exception: t = ""
+        if not re.search(r"Just a moment|Checking your browser|Verifying you are human", t): return True
+        pg.wait_for_timeout(1500)
+    return False
+
+# IDX 는 호출이 많다(전종목·지수·캘린더·공시·20일 캐시). 매번 브라우저를 새로 띄우면 느리고
+# Windows 에서 실행파일 잠금(WinError 32)이 난다 → 빌드 1회당 세션 하나를 열어 재사용하고 끝에 닫는다.
+_PWQ = {"q": None, "th": None, "pw": None, "br": None}
+_IDXPW = {"pg": None}
+
+def _idx_page(base):
+    """워커 스레드 안에서만 호출. IDX 는 호출이 많아 탭 하나를 빌드 내내 재사용한다."""
+    pg = _IDXPW.get("pg")
+    if pg is not None:
+        try:
+            pg.evaluate("() => 1"); return pg
+        except Exception:
+            _IDXPW["pg"] = None
+    pg = _pw_browser().new_page(user_agent=UA, locale="id-ID", timezone_id="Asia/Jakarta")
+    pg.set_default_timeout(45000)
+    pg.goto(base + "/id", wait_until="domcontentloaded", timeout=60000)
+    _wait_cf(pg)
+    _IDXPW["pg"] = pg
+    log("IDX 브라우저 탭 준비 (이후 호출은 이 탭을 재사용)")
+    return pg
+
+def _idx_close_now():
+    try:
+        pg = _IDXPW.get("pg")
+        if pg is not None: pg.close()
+    except Exception: pass
+    _IDXPW["pg"] = None
+
+def idx_browser_close():
+    """빌드 종료 시 브라우저를 완전히 내린다."""
+    _pw_call(_pw_shutdown, "close", timeout=60)
+
+def browser_text(url, timeout=45000):
+    def work(pg):
+        pg.goto(url, wait_until="domcontentloaded", timeout=timeout)
+        _wait_cf(pg)
+        return pg.content()
+    return _pw_session(work, _host(url))
+
+def http_text(url, **kw):
+    """requests 우선, 막히면 브라우저로 재시도."""
+    try:
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=30, **kw)
+        if r.status_code == 200 and len(r.text) > 200: return r.text
+        log("http", r.status_code, _host(url))
+    except Exception as e:
+        log("http err", _host(url), str(e)[:80])
+    return browser_text(url)
+
 # =============================================================== IDX client
 class IDX:
     """idx.co.id 는 Cloudflare 뒤에 있어 첫 접속에서 쿠키를 받아야 JSON 엔드포인트가 열린다."""
@@ -61,6 +202,7 @@ class IDX:
         self.s.headers.update({"User-Agent": UA, "Accept": "application/json, text/plain, */*",
                                "Accept-Language": "en-US,en;q=0.9,id;q=0.8", "Referer": self.BASE + "/"})
         self.ready = False
+        self.blocked = False          # 403 한 번 겪으면 이후엔 곧장 브라우저로
     def session(self):
         if self.ready: return
         self.s.get(self.BASE + "/id", timeout=30); time.sleep(1)
@@ -69,8 +211,10 @@ class IDX:
     def get(self, path, **params):
         import os
         proxy = os.environ.get("IDX_PROXY")            # Cloudflare Worker 주소. GitHub 러너 IP가 IDX에 막히면 Worker 경유
-        if not proxy: self.session()
-        for i in range(3):
+        if not proxy:
+            try: self.session()
+            except Exception as e: log("IDX 세션 준비 실패", str(e)[:80])
+        for i in (range(3) if not self.blocked else []):
             try:
                 if proxy:
                     full = requests.Request("GET", self.BASE + path, params=params).prepare().url
@@ -79,10 +223,34 @@ class IDX:
                     r = self.s.get(self.BASE + path, params=params, headers={"X-Requested-With": "XMLHttpRequest"}, timeout=40)
                 if r.status_code == 200: return r.json()
                 log("IDX", r.status_code, path)
+                if r.status_code == 403:
+                    self.blocked = True; break        # Cloudflare 차단은 재시도로 안 풀린다 → 바로 브라우저로
             except Exception as e:
                 log("IDX err", path, e)
             time.sleep(2 * (i + 1))
+        full = requests.Request("GET", self.BASE + path, params=params).prepare().url
+        j = self.browser_get(full)
+        if j is not None:
+            log("IDX 브라우저 경유 OK", path); return j
+        log("IDX 최종 실패", path)
         return None
+
+    def browser_get(self, full_url):
+        """Cloudflare 를 통과한 페이지 안에서 fetch() 로 JSON 을 받는다. 세션은 빌드 내내 재사용."""
+        base = self.BASE
+        def job():
+            for attempt in (1, 2):
+                try:
+                    pg = _idx_page(base)
+                    return pg.evaluate("""async (u) => {
+                        try { const r = await fetch(u, {headers:{'X-Requested-With':'XMLHttpRequest'}});
+                              if(!r.ok) return null; return await r.json(); }
+                        catch(e) { return null; } }""", full_url)
+                except Exception as e:
+                    log("IDX 브라우저", ("재시도" if attempt == 1 else "실패"), str(e)[:110])
+                    _idx_close_now()
+            return None
+        return _pw_call(job, "idx.co.id")
 
     # ---- 일별 전종목 요약 (확정된 날은 캐시)
     def stock_summary(self, d, force=False):
@@ -131,7 +299,12 @@ def idx_market():
     adv = sum(1 for r in stocks if r["Change"] > 0); dec = sum(1 for r in stocks if r["Change"] < 0)
     unch = sum(1 for r in stocks if r["Change"] == 0 and r.get("Volume"))
     value = sum(r.get("Value") or 0 for r in rows)
-    fbuy = sum(r.get("ForeignBuy") or 0 for r in rows); fsell = sum(r.get("ForeignSell") or 0 for r in rows)
+    # IDX StockSummary 의 ForeignBuy/ForeignSell 은 '체결 주식 수'다. 금액(IDR)으로 쓰려면 체결단가를 곱한다.
+    def _upx(r):
+        v, vol = (r.get("Value") or 0), (r.get("Volume") or 0)
+        return (v / vol) if vol else (r.get("Close") or 0)
+    fbuy = sum((r.get("ForeignBuy") or 0) * _upx(r) for r in rows)
+    fsell = sum((r.get("ForeignSell") or 0) * _upx(r) for r in rows)
     nonreg = sum(r.get("NonRegularValue") or 0 for r in rows)
     # 20일 평균 대금 (과거 요약은 캐시에서; 첫 실행만 IDX 호출)
     hist = {}; dd = d - dt.timedelta(days=1); n = 0; tries = 0
@@ -153,10 +326,11 @@ def idx_market():
                        "pct": round(r["Change"] / r["Previous"] * 100, 2), "val": r["Value"],
                        "ratio": round(r["Value"] / avg, 1) if avg else None,
                        "nonreg": round((r.get("NonRegularValue") or 0) / r["Value"] * 100) if r["Value"] else 0,
-                       "fnet": (r.get("ForeignBuy") or 0) - (r.get("ForeignSell") or 0)})
+                       "fbuy": (r.get("ForeignBuy") or 0) * _upx(r), "fsell": (r.get("ForeignSell") or 0) * _upx(r),
+                       "fnet": ((r.get("ForeignBuy") or 0) - (r.get("ForeignSell") or 0)) * _upx(r)})
     return {"date": d.isoformat(), "adv": adv, "dec": dec, "unch": unch, "value_idr": value, "nonreg_idr": nonreg,
             "foreign_buy": fbuy, "foreign_sell": fsell, "foreign_net_idr": fbuy - fsell,
-            "foreign_note": f"IDX StockSummary {d:%m/%d} 전체시장 합산 (비정규 Rp{nonreg/1e12:.2f}조 포함)",
+            "foreign_note": None,
             "value": sorted(liquid, key=lambda x: -x["val"])[:10],
             "gainers": sorted(liquid, key=lambda x: -x["pct"])[:10], "losers": sorted(liquid, key=lambda x: x["pct"])[:10],
             "turnover": sorted([x for x in liquid if x["ratio"]], key=lambda x: -x["ratio"])[:10],
@@ -224,60 +398,163 @@ def idx_corp_calendar(days_ahead=14, days_back=1):
 def saveticker_calendar(days=14):
     """saveticker.com/calendar 는 클라이언트 렌더링 → playwright 로 열어 DOM 파싱.
     실패 시 data/cache/saveticker.html 에 원본 저장 (셀렉터 조정용)."""
-    try:
-        from playwright.sync_api import sync_playwright
-    except ImportError:
-        log("playwright 없음: pip install playwright && playwright install chromium"); return []
     out = []
-    try:
-        with sync_playwright() as p:
-            b = p.chromium.launch(); pg = b.new_page(user_agent=UA, timezone_id="Asia/Jakarta")
-            for i in range(days):
-                d = now_wib().date() + dt.timedelta(days=i)
-                pg.goto(f"https://www.saveticker.com/calendar?date={d.isoformat()}", wait_until="networkidle", timeout=45000)
-                pg.wait_for_timeout(1500)
+    def _collect(pg):
+        for i in range(days):
+            d = now_wib().date() + dt.timedelta(days=i)
+            try:
+                pg.goto(f"https://www.saveticker.com/calendar?date={d.isoformat()}", wait_until="domcontentloaded", timeout=30000)
+                pg.wait_for_timeout(1800)
                 html_ = pg.content()
-                if i == 0: (CACHE / "saveticker.html").write_text(html_, encoding="utf-8")
-                # 카드 후보: 시간(HH:MM) + 제목 + (예상: x 이전: y) 패턴을 텍스트에서 추출
-                txt = re.sub(r"\s+", " ", re.sub("<[^>]+>", "\n", html_))
-                for m in re.finditer(r"(\d{1,2}:\d{2})\s*((?:★|☆|\*){0,3})?\s*([^\n(]{4,80}?)\s*(?:\(예상: ([^ )]+)\s*이전: ([^ )]+)\))?(?:\s*실제: ([^\n ]+))?", txt):
-                    tm, st, title, exp, prev, act = m.groups()
-                    title = title.strip()
-                    if not title or "알림" in title: continue
-                    imp = st.count("★") if st else 2
-                    country = "ID" if re.search(r"인도네시아|Indonesia", title) else "US" if re.search(r"美|미국|ISM|JOLTS|연준|Fed|CPI|고용", title) else "GL"
-                    out.append({"date": d.isoformat(), "time": tm, "kind": "macro", "country": country, "title": title, "imp": imp, "exp": exp, "prev": prev, "act": act, "src": "saveticker"})
-            b.close()
-    except Exception as e:
-        log("saveticker fail", e)
+            except Exception as e:
+                log("saveticker", d.isoformat(), str(e)[:60]); continue
+            if i == 0: (CACHE / "saveticker.html").write_text(html_, encoding="utf-8")
+            # 카드 후보: 시간(HH:MM) + 제목 + (예상: x 이전: y) 패턴을 텍스트에서 추출
+            txt = re.sub(r"\s+", " ", re.sub("<[^>]+>", "\n", html_))
+            for m in re.finditer(r"(\d{1,2}:\d{2})\s*((?:★|☆|\*){0,3})?\s*([^\n(]{4,80}?)\s*(?:\(예상: ([^ )]+)\s*이전: ([^ )]+)\))?(?:\s*실제: ([^\n ]+))?", txt):
+                tm, st, title, exp, prev, act = m.groups()
+                title = title.strip()
+                if not title or "알림" in title: continue
+                imp = st.count("★") if st else 2
+                country = "ID" if re.search(r"인도네시아|Indonesia", title) else "US" if re.search(r"美|미국|ISM|JOLTS|연준|Fed|CPI|고용", title) else "GL"
+                out.append({"date": d.isoformat(), "time": tm, "kind": "macro", "country": country, "title": title, "imp": imp, "exp": exp, "prev": prev, "act": act, "src": "saveticker"})
+        return out
+    _pw_session(_collect, "saveticker")
+    if not out: log("saveticker 결과 없음 → investing.com 대체")
     return out
 
 INVESTING_CAL = "https://www.investing.com/economic-calendar/Service/getCalendarFilteredData"
-def investing_calendar(days=14, countries=("5", "48")):   # 5=US, 48=Indonesia
-    """investing.com 경제 캘린더 (비공식 XHR). saveticker 실패 시 대체."""
-    if BeautifulSoup is None: return []
-    d0 = now_wib().date(); d1 = d0 + dt.timedelta(days=days)
-    data = [("country[]", c) for c in countries] + [("importance[]", "1"), ("importance[]", "2"), ("importance[]", "3"),
-            ("dateFrom", d0.isoformat()), ("dateTo", d1.isoformat()), ("timeZone", "113"), ("timeFilter", "timeRemain"), ("currentTab", "custom"), ("limit_from", "0")]
-    try:
-        r = requests.post(INVESTING_CAL, data=data, headers={"User-Agent": UA, "X-Requested-With": "XMLHttpRequest", "Referer": "https://www.investing.com/economic-calendar/"}, timeout=40)
-        soup = BeautifulSoup(r.json().get("data", ""), "lxml"); out = []; cur = None
-        for tr in soup.select("tr"):
-            if tr.get("id", "").startswith("theDay"):
-                cur = tr.get_text(strip=True); continue
-            if not tr.get("event_timestamp"): continue
-            ts = dt.datetime.strptime(tr["event_timestamp"], "%Y-%m-%d %H:%M:%S")
-            flag = tr.select_one(".flagCur span"); cty = (flag.get("title") if flag else "")
-            imp = len(tr.select(".sentiment .grayFullBullishIcon"))
-            cells = [c.get_text(" ", strip=True) for c in tr.select("td")]
-            title = (tr.select_one(".event") or tr).get_text(" ", strip=True)
-            act, exp, prev = (tr.select_one(".act") or tr.select_one("td.bold")), tr.select_one(".fore"), tr.select_one(".prev")
-            out.append({"date": ts.date().isoformat(), "time": ts.strftime("%H:%M"), "kind": "macro", "country": "ID" if "Indonesia" in cty else "US" if "United States" in cty else cty[:2].upper(),
-                        "title": title, "imp": imp or 1, "exp": exp.get_text(strip=True) if exp else None, "prev": prev.get_text(strip=True) if prev else None,
-                        "act": act.get_text(strip=True) if act and act.get_text(strip=True) else None, "src": "investing.com"})
-        return out
+INVESTING_CAL_PAGE = "https://www.investing.com/economic-calendar/"
+
+def _week_start():
+    d = now_wib().date(); return d - dt.timedelta(days=d.weekday())      # 이번 주 월요일
+
+def _inv_form(days, countries):
+    d0 = _week_start(); d1 = now_wib().date() + dt.timedelta(days=days)
+    return ([("country[]", c) for c in countries]
+            + [("importance[]", "1"), ("importance[]", "2"), ("importance[]", "3"),
+               ("dateFrom", d0.isoformat()), ("dateTo", d1.isoformat()), ("timeZone", "113"),
+               ("timeFilter", "timeOnly"), ("currentTab", "custom"), ("limit_from", "0")])
+
+def _inv_parse(html_frag, tz_offset=7, keep=("ID", "US")):
+    """investing.com 캘린더 HTML(XHR 조각 또는 페이지 표) → 이벤트 리스트. WIB 로 환산."""
+    if not html_frag or BeautifulSoup is None: return []
+    soup = BeautifulSoup(html_frag, "lxml"); out = []
+    shift = dt.timedelta(hours=7 - tz_offset)
+    for tr in soup.select("tr"):
+        raw = tr.get("event_timestamp") or tr.get("data-event-datetime")
+        if not raw: continue
+        ts = None
+        for f in ("%Y-%m-%d %H:%M:%S", "%Y/%m/%d %H:%M:%S"):
+            try: ts = dt.datetime.strptime(raw.strip(), f); break
+            except Exception: pass
+        if ts is None: continue
+        ts += shift
+        flag = tr.select_one(".flagCur span"); cty = (flag.get("title") if flag else "") or ""
+        cc = "ID" if "Indonesia" in cty else "US" if "United States" in cty else (cty[:2].upper() or "GL")
+        if keep and cc not in keep: continue
+        imp = len(tr.select(".sentiment .grayFullBullishIcon"))
+        ev = tr.select_one("td.event")
+        title = (ev.get_text(" ", strip=True) if ev else "").strip()
+        if not title or len(title) < 3: continue
+        g = lambda sel: (tr.select_one(sel).get_text(strip=True) if tr.select_one(sel) else None) or None
+        act, fore, prev = g("td.act"), g("td.fore"), g("td.prev")
+        out.append({"date": ts.date().isoformat(), "time": ts.strftime("%H:%M"), "kind": "macro", "country": cc,
+                    "title": title, "imp": imp or 1, "exp": fore, "prev": prev, "act": act, "src": "investing.com"})
+    return out
+
+def _tz_offset_from(text):
+    m = re.search(r"GMT\s*([+-])\s*(\d{1,2})(?::(\d{2}))?", text or "")
+    if not m: return 7
+    return (1 if m.group(1) == "+" else -1) * (int(m.group(2)) + int(m.group(3) or 0) / 60)
+
+def investing_calendar(days=14, countries=("5", "48")):
+    """investing.com 경제 캘린더 — 이번 주 월요일부터. 실제치(act)는 발표 후 다음 수집에서 자동 반영."""
+    form = _inv_form(days, countries)
+    try:                                                  # 1) XHR (requests)
+        r = requests.post(INVESTING_CAL, data=form, timeout=40,
+                          headers={"User-Agent": UA, "X-Requested-With": "XMLHttpRequest", "Referer": INVESTING_CAL_PAGE})
+        if r.status_code == 200:
+            # timeZone=113 응답은 WIB(+7) 보다 1시간 빠른 것으로 확인됨(PMI 08:30↔07:30, ISM 22:00↔21:00) → UTC+8 로 환산
+            out = _inv_parse((r.json() or {}).get("data", ""), tz_offset=CFG.get("investing_tz_offset", 8))
+            out = [e for e in out if e["country"] != "US" or (e.get("imp") or 1) >= CFG.get("calendar_min_imp_us", 2)]
+            if out: log(f"캘린더 investing.com {len(out)}건 (http)"); _inv_cache_save(out); return out
+        log("investing 캘린더 http", r.status_code, "빈 응답")
     except Exception as e:
-        log("investing fail", e); return []
+        log("investing 캘린더 http 실패", str(e)[:80])
+
+    def work(pg):                                         # 2) 브라우저 — 새 레이아웃(datatable-v2) 표를 직접 읽는다
+        pg.goto(INVESTING_CAL_PAGE, wait_until="domcontentloaded", timeout=60000)
+        _wait_cf(pg)
+        for sel in ("#onetrust-accept-btn-handler", "button:has-text('Accept')"):
+            try: pg.click(sel, timeout=2000); break
+            except Exception: pass
+        try:                                              # '이번 주' 탭 (버튼 텍스트로 찾는다)
+            pg.click("button:has-text('This Week')", timeout=8000); pg.wait_for_timeout(3500)
+        except Exception as e:
+            log("investing 'This Week' 클릭 실패", str(e)[:60])
+        return pg.evaluate("""() => {
+            const out = []; let cur = null;
+            for (const tr of document.querySelectorAll('table tbody tr')) {
+                const txt = (tr.textContent || '').replace(/\\s+/g, ' ').trim();
+                if (!tr.id) { const m = txt.match(/^[A-Z][a-z]+day, ([A-Z][a-z]+ \\d{1,2}, \\d{4})/); if (m) cur = m[1]; continue; }
+                const tds = tr.querySelectorAll('td'); if (tds.length < 8) continue;
+                const flag = tr.querySelector('[title]');
+                const name = tr.querySelector('td:nth-child(4) a div') || tr.querySelector('td:nth-child(4) a');
+                out.push({ date: cur, time: tds[1].textContent.trim(), country: flag ? flag.getAttribute('title') : '',
+                           title: name ? name.textContent.trim() : '', imp: tr.querySelectorAll('td:nth-child(5) svg.opacity-60').length,
+                           act: tds[5].textContent.trim(), fore: tds[6].textContent.trim(), prev: tds[7].textContent.trim() });
+            }
+            const tz = (document.body.textContent.match(/GMT[+-]\\d{1,2}:\\d{2}/) || [''])[0];
+            return { rows: out, tz: tz };
+        }""")
+    res = _pw_session(work, "investing-calendar") or {}
+    out = _inv_rows(res.get("rows") or [], tz_offset=_tz_offset_from(res.get("tz")))
+    out = [e for e in out if e["country"] != "US" or (e.get("imp") or 1) >= CFG.get("calendar_min_imp_us", 2)]
+    if out:
+        log(f"캘린더 investing.com {len(out)}건 (browser, {res.get('tz') or 'tz?'})"); _inv_cache_save(out); return out
+    log(f"캘린더 investing.com 실패 (browser, 행 {len(res.get('rows') or [])}) → 마지막 성공분 사용")
+    return _inv_cache_load()
+
+INV_CACHE_P = CACHE / "investing_cal.json"
+def _inv_cache_save(out):
+    try: INV_CACHE_P.write_text(json.dumps({"saved": now_wib().isoformat(), "events": out}, ensure_ascii=False), encoding="utf-8")
+    except Exception: pass
+def _inv_cache_load():
+    """두 경로 다 실패해도 캘린더가 사라지지 않도록 마지막 성공분을 쓴다 (실제치는 다음 성공 때 갱신)."""
+    try:
+        j = json.loads(INV_CACHE_P.read_text(encoding="utf-8")); ev = j.get("events") or []
+        if ev: log(f"캘린더 캐시 {len(ev)}건 (저장 {j.get('saved','')[:16]})")
+        return ev
+    except Exception: return []
+
+def _inv_rows(rows, tz_offset=7, keep=("ID", "US")):
+    """새 레이아웃(datatable-v2)에서 JS 로 뽑은 행 → 이벤트. 페이지 표시 시간대를 WIB 로 환산."""
+    out = []; shift = dt.timedelta(hours=7 - (tz_offset if tz_offset is not None else 7))
+    for r in rows:
+        try: d0 = dt.datetime.strptime(r.get("date") or "", "%B %d, %Y")
+        except Exception: continue
+        tm = (r.get("time") or "").strip(); m = re.match(r"^(\d{1,2}):(\d{2})$", tm)
+        if m: ts = d0.replace(hour=int(m.group(1)), minute=int(m.group(2))) + shift; time_s = ts.strftime("%H:%M"); date_s = ts.date().isoformat()
+        else: time_s = "—"; date_s = d0.date().isoformat()           # All Day / Tentative
+        cty = r.get("country") or ""
+        cc = "ID" if "Indonesia" in cty else "US" if "United States" in cty else (cty[:2].upper() or "GL")
+        if keep and cc not in keep: continue
+        title = (r.get("title") or "").strip()
+        if len(title) < 3: continue
+        g = lambda k: ((r.get(k) or "").strip() or None)
+        out.append({"date": date_s, "time": time_s, "kind": "macro", "country": cc, "title": title, "imp": int(r.get("imp") or 1) or 1,
+                    "exp": g("fore"), "prev": g("prev"), "act": g("act"), "src": "investing.com"})
+    return out
+
+def macro_calendar_auto(days=14):
+    """설정에 따라 글로벌 매크로 캘린더 소스를 고른다. 기본은 investing.com."""
+    src = (CFG.get("calendar_source") or "investing").lower()
+    if src == "saveticker":
+        out = saveticker_calendar(days)
+        if out: return out
+        log("saveticker 실패 → investing.com 으로 대체")
+    return investing_calendar(days)
 
 def idx_announcements_today(hours=30):
     """IDX 공시 스트림 (실시간 갱신용). 최근 N시간 공시 전체를 시간순으로."""
@@ -298,12 +575,13 @@ BI_LIST = "https://www.bi.go.id/id/publikasi/ruang-media/news-release/"
 def bi_indicators():
     """월·금 발표. 최신 'Perkembangan Indikator Stabilitas Nilai Rupiah' 보도자료에서 수치 추출."""
     try:
-        h = requests.get(BI_LIST, headers={"User-Agent": UA}, timeout=30).text
+        h = http_text(BI_LIST)
+        if not h: return None
         urls = re.findall(r'href="([^"]*news-release/Pages/sp_[^"]+\.aspx)"', h)
         cand = [u for u in urls if re.search(r"Indikator Stabilitas", h[max(0, h.find(u) - 300):h.find(u) + 600], re.I)]
         if not cand: return None
         url = cand[0] if cand[0].startswith("http") else "https://www.bi.go.id" + cand[0]
-        t = requests.get(url, headers={"User-Agent": UA}, timeout=30).text
+        t = http_text(url) or ""
         t = re.sub("<[^>]+>", " ", html.unescape(t)); t = re.sub(r"\s+", " ", t)
         num = lambda s: float(s.replace(".", "").replace(",", ".")) if s else None
         g = lambda rx: (re.search(rx, t, re.I) or [None, None])[1]
@@ -324,11 +602,42 @@ def bi_indicators():
     except Exception as e:
         log("BI fail", e); return None
 
+_IV = {}                                   # 빌드 1회분 investing.com 시세 캐시
+INVESTING_QUOTES = {
+    "SUN10Y": "https://www.investing.com/rates-bonds/indonesia-10-year-bond-yield",
+}
+
+def investing_quote(url):
+    """investing.com 공개 시세 페이지에서 현재가·변동을 읽는다 (실시간, 브라우저 경유).
+    반환: {"px": float, "chg": float|None, "pct": float|None, "asof": str|None} · 실패 시 None"""
+    def work(pg):
+        pg.goto(url, wait_until="domcontentloaded", timeout=45000)
+        _wait_cf(pg)
+        for _ in range(6):
+            v = pg.evaluate("""() => {
+                const q = s => { const e = document.querySelector(s); return e ? e.textContent.trim() : null; };
+                return {last: q('[data-test="instrument-price-last"]'),
+                        chg:  q('[data-test="instrument-price-change"]'),
+                        pct:  q('[data-test="instrument-price-change-percent"]'),
+                        time: q('[data-test="trading-time-label"]')};
+            }""")
+            if v and v.get("last"): return v
+            pg.wait_for_timeout(1200)
+        return None
+    v = _pw_session(work, "investing")
+    if not v or not v.get("last"): return None
+    num = lambda x: None if x is None else float(re.sub(r"[^0-9.\-]", "", str(x)) or 0)
+    try:
+        px = float(str(v["last"]).replace(",", ""))
+    except Exception:
+        return None
+    return {"px": px, "chg": num(v.get("chg")), "pct": num(v.get("pct")), "asof": v.get("time")}
+
 def kontan_sun10y():
     """Kontan pusatdata 벤치마크 SUN yield 표 — '10 tahun' 행의 첫 숫자."""
     if BeautifulSoup is None: return None
     try:
-        h = requests.get("https://pusatdata.kontan.co.id/market/yield_sun_acuan", headers={"User-Agent": UA}, timeout=30).text
+        h = http_text("https://pusatdata.kontan.co.id/market/yield_sun_acuan") or ""
         for tr in BeautifulSoup(h, "lxml").select("tr"):
             cells = [c.get_text(" ", strip=True) for c in tr.find_all(["td", "th"])]
             if any(re.search(r"\b10\b.*tahun", c, re.I) for c in cells[:2]):
@@ -374,6 +683,22 @@ def yq(sym):
     except Exception as e:
         log("yahoo fail", sym, e); return None
 
+MACRO_ID = [  # 시장지표 라벨/주석 → 인니어 (긴 것부터)
+    ("USD/IDR (BI bid 종가)", "USD/IDR (penutupan bid BI)"),
+    ("USD/IDR (Yahoo 15분 지연)", "USD/IDR (Yahoo, tunda 15 mnt)"),
+    ("IDR/KRW (1원당 루피아)", "IDR/KRW (Rupiah per 1 Won)"),
+    ("비거주자 주간 순매수", "Net beli nonresiden mingguan"),
+    ("국채 10년물", "Obligasi negara 10 tahun"),
+    ("investing.com 실시간", "investing.com real-time"),
+    ("BI 보도자료", "Siaran pers BI"),
+    ("연초", "Awal tahun"), ("수기", "manual"), ("확인 필요", "perlu konfirmasi"),
+    ("6월", "Jun"), ("2회", "2x"),
+]
+def _id_label(t):
+    if not t: return t
+    for ko, idn in MACRO_ID: t = t.replace(ko, idn)
+    return t
+
 def macro_block(bi):
     yb = CFG["ytd_base"]; out = []; m = manual()
     def row(k, q, inv=False, base=None, fmt="{:,.2f}", inverse_ytd=False, note=None, src=None):
@@ -388,10 +713,16 @@ def macro_block(bi):
         row("USD/IDR (BI bid 종가)", {"px": bi["idr_close"], "prev": usdidr["prev"] if usdidr else None}, inv=True, base=yb.get("USDIDR"), fmt="{:,.0f}", inverse_ytd=True, note=f'BI {bi.get("as_of")}')
     row("USD/IDR (Yahoo 15분 지연)", usdidr, inv=True, base=yb.get("USDIDR"), fmt="{:,.0f}", inverse_ytd=True)
     row("IDR/KRW (1원당 루피아)", yq("KRWIDR=X"), inv=True, base=yb.get("KRWIDR"), inverse_ytd=True, note=f'연초 {yb.get("KRWIDR")}')
-    sun, sun_src = (bi.get("sun10y"), "BI 보도자료") if bi and bi.get("sun10y") else (None, None)
-    if not sun: sun, sun_src = kontan_sun10y(), "Kontan pusatdata"
-    if not sun and m.get("sun10y"): sun, sun_src = m["sun10y"], "수기"
-    row("국채 10년물", {"px": sun, "prev": None}, inv=True, base=yb.get("SUN10Y"), fmt="{:,.2f}%", note=f'연초 {yb.get("SUN10Y")}%', src=sun_src)
+    # 국채 10년물 — investing.com 실시간이 1순위, 실패 시 BI 보도자료 → Kontan → 수기
+    sun = sun_prev = sun_src = None
+    iv = _IV.get("SUN10Y")
+    if iv:
+        sun, sun_src = iv["px"], "investing.com 실시간"
+        if iv.get("chg") is not None: sun_prev = round(iv["px"] - iv["chg"], 4)
+    if sun is None and bi and bi.get("sun10y"): sun, sun_src = bi["sun10y"], "BI 보도자료"
+    if sun is None: sun, sun_src = kontan_sun10y(), "Kontan pusatdata"
+    if sun is None and m.get("sun10y"): sun, sun_src = m["sun10y"], "수기"
+    row("국채 10년물", {"px": sun, "prev": sun_prev}, inv=True, base=yb.get("SUN10Y"), fmt="{:,.3f}%", note=f'연초 {yb.get("SUN10Y")}%', src=sun_src)
     out.append({"k": "BI Rate", "v": f'{m["bi_rate"]:.2f}%' if m.get("bi_rate") else "확인 필요", "d": None, "ytd": None, "note": m.get("bi_note")})
     row("Brent (US$/bbl)", yq("BZ=F"), base=yb.get("Brent"))
     dxy = yq("DX-Y.NYB")
@@ -403,6 +734,9 @@ def macro_block(bi):
     if bi and bi.get("cds5y"): out.append({"k": "CDS 5Y (bps)", "v": f'{bi["cds5y"]:.2f}', "d": None, "ytd": None, "inv": True, "note": "BI 보도자료"})
     if bi and bi.get("nonres_week"):
         w = bi["nonres_week"]; out.append({"k": f'비거주자 주간 순매수 ({w["period"]})', "v": f'{w["total"]/1e12:+.2f}조', "d": None, "ytd": None, "note": w["text"]})
+    for r in out:                                   # 인니어 화면용 라벨
+        r["k_ko"] = r["k"]; r["k_id"] = _id_label(r["k"])
+        if r.get("note"): r["note_ko"] = r["note"]; r["note_id"] = _id_label(r["note"])
     return out
 
 # =============================================================== news
@@ -470,6 +804,185 @@ def scrape_home(src, limit=25):
         return out
     except Exception as e: log("scrape fail", src["name"], e); return []
 
+# =============================================================== 헤드라인 번역 (인니/영어 → 한국어)
+# 원문(t)은 절대 지우지 않는다. 번역문은 t_ko 로 따로 붙이고 화면에서 병기한다 (기계번역이므로 원문 대조 가능해야 함).
+TR_CACHE_P = CACHE / "tr_ko.json"          # 외부 엔진(구글·마이메모리) 결과
+TR_GOOD_P  = CACHE / "tr_claude.json"      # Claude 번역 — 품질이 좋아 항상 우선한다
+def _load_json(p):
+    try: return json.loads(p.read_text(encoding="utf-8"))
+    except Exception: return {}
+TR_CACHE = _load_json(TR_CACHE_P)
+TR_GOOD = _load_json(TR_GOOD_P)
+
+TR_URL = "https://translate.googleapis.com/translate_a/single"
+TR_STATE = {"blocked": False}          # requests 가 막히면 True → 이후는 브라우저 경유
+
+def _tr_parse(j):
+    if not (isinstance(j, list) and j and isinstance(j[0], list)): return None
+    v = "".join(x[0] for x in j[0] if isinstance(x, list) and x and isinstance(x[0], str)).strip()
+    return v or None
+
+def _tr_google(text, sl="auto", tl="ko"):
+    """Google 무료 엔드포인트(키 불필요). 사내망에서 막히면 None → 브라우저 경유로 넘어간다."""
+    try:
+        r = requests.get(TR_URL, params={"client": "gtx", "sl": sl, "tl": tl, "dt": "t", "q": text},
+                         headers={"User-Agent": UA}, timeout=12)
+        if r.status_code != 200: return None
+        return _tr_parse(r.json())
+    except Exception:
+        return None
+
+def _tr_google_url(text, tl):
+    import urllib.parse as _u
+    return f"{TR_URL}?client=gtx&sl=auto&tl={tl}&dt=t&q=" + _u.quote(text)
+
+MYMEMORY = "https://api.mymemory.translated.net/get"
+
+def _mm_parse(j):
+    try:
+        v = (j or {}).get("responseData", {}).get("translatedText")
+        if v and "MYMEMORY WARNING" not in v.upper(): return v.strip()
+    except Exception: pass
+    return None
+
+def _tr_mymemory(text, sl="auto", tl="ko"):
+    src = "id" if tl == "ko" else "ko"
+    try:
+        r = requests.get(MYMEMORY, params={"q": text, "langpair": f"{src}|{tl}"},
+                         headers={"User-Agent": UA}, timeout=12)
+        if r.status_code != 200: return None
+        return _mm_parse(r.json())
+    except Exception:
+        return None
+
+TR_ENGINES = {"google": _tr_google, "mymemory": _tr_mymemory}
+
+TR_ORIGIN = {"google": "https://translate.googleapis.com/",
+             "mymemory": "https://api.mymemory.translated.net/"}
+
+def _tr_path(engine, text, tl):
+    import urllib.parse as _u
+    if engine == "google":
+        return f"/translate_a/single?client=gtx&sl=auto&tl={tl}&dt=t&q=" + _u.quote(text)
+    src = "id" if tl == "ko" else "ko"
+    return f"/get?q={_u.quote(text)}&langpair=" + _u.quote(src + "|" + tl)
+
+def _tr_browser_batch(pairs, engine="google"):
+    """[(원문, 목표언어)] → {(원문, 목표언어): 번역}.
+    JSON URL 을 goto 하면 브라우저가 다운로드로 처리하고, page.request 는 지문이 달라 차단된다.
+    → 같은 도메인의 렌더 가능한 경로로 이동해 origin 을 맞춘 뒤 상대경로 fetch (same-origin, CORS 없음)."""
+    if not pairs: return {}
+    parse = {"google": _tr_parse, "mymemory": _mm_parse}[engine]
+    def work(pg):
+        try:
+            pg.goto(TR_ORIGIN[engine], wait_until="domcontentloaded", timeout=45000)
+        except Exception as e:
+            log("번역 origin 이동 실패", engine, str(e)[:70])       # 404 라도 origin 은 잡힌다
+        out = {}; first_err = None
+        for text, tl in pairs:
+            try:
+                j = pg.evaluate("""async (u) => {
+                    try { const r = await fetch(u, {credentials:'omit'});
+                          if (!r.ok) return {__err: 'HTTP ' + r.status};
+                          return await r.json(); }
+                    catch (e) { return {__err: String(e).slice(0,80)}; } }""", _tr_path(engine, text, tl))
+            except Exception as e:
+                j = {"__err": str(e)[:80]}
+            if isinstance(j, dict) and j.get("__err"):
+                if first_err is None: first_err = j["__err"]
+                continue
+            v = parse(j)
+            if v: out[(text, tl)] = v
+        if not out and first_err: log(f"번역 {engine} 브라우저 응답 오류: {first_err}")
+        return out
+    return _pw_session(work, "translate:" + engine) or {}
+
+def _tr_cache_reload():
+    """다른 프로세스(예약 작업)가 채워 넣은 번역을 반영한다."""
+    global TR_CACHE, TR_GOOD
+    for key, path, setter in (("m", TR_CACHE_P, "TR_CACHE"), ("c", TR_GOOD_P, "TR_GOOD")):
+        try: st = path.stat().st_mtime
+        except Exception: continue
+        if TR_STATE.get("mtime_" + key) == st: continue
+        d = _load_json(path)
+        if setter == "TR_CACHE": TR_CACHE = d
+        else: TR_GOOD = d
+        TR_STATE["mtime_" + key] = st
+
+ID_HINT = re.compile(r"\b(di|ke|dan|yang|naik|turun|saham|laba|persen|pada|dari|untuk|ini|akan|jadi|sebesar|triliun|miliar)\b", re.I)
+
+def _native_lang(t):
+    if re.search(r"[가-힣]", t): return "ko"
+    if ID_HINT.search(t): return "id"
+    return None                                  # 영어 등 → 양쪽 다 번역
+
+def _tr_save():
+    try: TR_CACHE_P.write_text(json.dumps(TR_CACHE, ensure_ascii=False), encoding="utf-8")
+    except Exception as e: log("번역 캐시 저장 실패", e)
+
+def translate_field(items, field="t", langs=("ko", "id"), budget=None):
+    """items 의 field 를 언어별로 번역해 field_ko / field_id 를 붙인다.
+    엔진을 순서대로 시도하고(requests → 브라우저), 실패한 건은 원문을 유지한다."""
+    cfg = CFG.get("translate") or {}
+    if not cfg.get("enabled", True): return items
+    _tr_cache_reload()                              # 예약 작업이 채워 넣은 번역도 반영
+    engines = [e for e in (cfg.get("engines") or [cfg.get("engine", "google"), "mymemory"]) if e in TR_ENGINES]
+    if not engines: return items
+    budget = cfg.get("max_per_run", 60) if budget is None else budget
+
+    need = []                                        # (item, 대상필드, 원문, 목표언어, 캐시키)
+    for it in items:
+        src = (it.get(field) or "").strip()
+        if not src: continue
+        native = _native_lang(src)
+        for tl in langs:
+            tgt = f"{field}_{tl}"
+            if it.get(tgt): continue
+            if tl == native: it[tgt] = src; continue
+            key = hashlib.md5((src + "|" + tl).encode("utf-8")).hexdigest()
+            if key in TR_GOOD: it[tgt] = TR_GOOD[key]; continue      # Claude 번역 우선
+            if key in TR_CACHE: it[tgt] = TR_CACHE[key]; continue
+            need.append((it, tgt, src, tl, key))
+    if not need: return items
+    need = need[:budget]                             # 남은 건 다음 실행에서 이어서
+    ok = 0; used = []
+    remaining = need
+
+    for eng in engines:
+        if not remaining: break
+        fn = TR_ENGINES[eng]
+        flag = "blocked_" + eng
+        if not TR_STATE.get(flag):                   # 1) requests 경로 — 첫 건으로 가능 여부 판정
+            it, tgt, src, tl, key = remaining[0]
+            v = fn(src, "auto", tl)
+            if v is None:
+                TR_STATE[flag] = True
+                log(f"번역 {eng}: requests 차단 → 브라우저 경유")
+            else:
+                TR_CACHE[key] = v; it[tgt] = v; ok += 1
+                for it, tgt, src, tl, key in remaining[1:]:
+                    v = fn(src, "auto", tl)
+                    if v: TR_CACHE[key] = v; it[tgt] = v; ok += 1
+                    time.sleep(0.12)
+                used.append(eng + "(http)")
+                remaining = [n for n in remaining if not n[0].get(n[1])]
+                continue
+        got = _tr_browser_batch([(n[2], n[3]) for n in remaining], eng)   # 2) 브라우저 경로
+        if got:
+            for it, tgt, src, tl, key in remaining:
+                v = got.get((src, tl))
+                if v: TR_CACHE[key] = v; it[tgt] = v; ok += 1
+            used.append(eng + "(browser)")
+        remaining = [n for n in remaining if not n[0].get(n[1])]
+
+    _tr_save()
+    tag = " · ".join(used) if used else "전부 실패"
+    log(f"번역[{field}] {ok}/{len(need)}건 · {tag}" + ("" if not remaining else f" · 미번역 {len(remaining)}건은 원문 유지"))
+    return items
+
+def translate_news(items):
+    return translate_field(items, "t")
+
 def news_block(max_items=None):
     global CODES, CODE_RX, NAME_RX
     CODES, CODE_RX, NAME_RX = build_alias()
@@ -501,7 +1014,7 @@ def news_block(max_items=None):
         k = it["t"][:60]
         if k in seen: continue
         seen.add(k); out.append(it)
-    return out[:max_items]
+    return translate_news(out[:max_items])
 
 # =============================================================== manual / build
 def manual():
@@ -520,9 +1033,24 @@ def macro_calendar():
                         "exp": c.get("exp"), "prev": c.get("prev"), "act": c.get("act"), "src": c.get("src") or "manual"})
     return out
 
+EV_TAGS = [  # 캘린더 제목 → 지표 태그 (한/영/인니). 같은 (날짜·시각·국가)에서 태그가 같을 때만 같은 지표로 본다
+    ("core", r"\bcore\b|근원|inti"), ("cpi", r"\bcpi\b|inflation|inflasi|물가|인플레"),
+    ("pmi", r"\bpmi\b"), ("mfg", r"manufactur|제조업|manufaktur"), ("svc", r"services|non-manufacturing|서비스|jasa|composite"),
+    ("ism", r"\bism\b"), ("jolts", r"jolts|구인"), ("nfp", r"nonfarm|payroll|비농업"), ("unemp", r"unemployment|실업|pengangguran"),
+    ("trade", r"trade balance|무역수지|neraca"), ("retail", r"retail|소매|ritel"), ("gdp", r"\bgdp\b|성장률|pdb"),
+    ("rate", r"rate decision|기준금리|bi rate|bi-rate|7-day|fomc|suku bunga|금리 결정"), ("fx", r"reserves|외환보유|cadangan devisa"),
+    ("conf", r"confidence|심리|keyakinan|sentiment"), ("claims", r"jobless|claims|실업수당"), ("ppi", r"\bppi\b|생산자물가"),
+    ("auction", r"auction|입찰|lelang"), ("oil", r"crude|oil|원유|minyak"), ("speech", r"speaks|speech|연설|testif"),
+]
+def _ev_tags(title):
+    t = (title or "").lower(); return frozenset(k for k, rx in EV_TAGS if re.search(rx, t))
+
 def build():
     m = manual(); yb = CFG["ytd_base"]
     mk = idx_market(); ix = idx_index(); bi = bi_indicators()
+    # investing.com 은 yfinance 보다 먼저 — yfinance 가 스레드에 asyncio 루프를 남기면 브라우저 기동이 막힌다
+    _IV["SUN10Y"] = investing_quote(INVESTING_QUOTES["SUN10Y"])
+    log("국채10Y investing.com", (f'{_IV["SUN10Y"]["px"]}%' if _IV.get("SUN10Y") else "실패"))
     h = yq("^JKSE"); usd = yq("USDIDR=X")
     in_session = 9 <= now_wib().hour < 17 and now_wib().weekday() < 5
     indices = []
@@ -530,7 +1058,7 @@ def build():
         """장중엔 Yahoo 실시간(지연) 우선 — 전일 종가를 현재가로 보여주지 않는다. 장 마감 후엔 IDX 확정 종가."""
         if live and (in_session or not eod):
             indices.append({"code": code, "label": label, "name": name, "px": round(live["px"], dec), "prev": round(live["prev"], dec), "pct": round((live["px"] / live["prev"] - 1) * 100, 2),
-                            "spark": live["spark"], "inv": inv, "asof": f'{live["ts"]} · 15분 지연', "high": live.get("high"), "low": live.get("low")})
+                            "spark": live["spark"], "inv": inv, "asof": live["ts"], "high": live.get("high"), "low": live.get("low")})
         elif eod:
             indices.append({"code": code, "label": label, "name": name, "px": round(eod["px"], dec), "prev": round(eod["prev"], dec), "pct": round((eod["px"] / eod["prev"] - 1) * 100, 2),
                             "spark": eod.get("spark") or [], "inv": inv, "asof": eod.get("asof", "종가")})
@@ -555,14 +1083,27 @@ def build():
     if bi and bi.get("nonres_week"): index["bi_nonres"] = bi["nonres_week"]["text"]
     corp = idx_corp_calendar() or []
     for c in corp: c["country"] = "ID"
-    glob = saveticker_calendar() or investing_calendar()
-    seen = set(); macro = []
-    for e in macro_calendar() + glob:                    # 수기 항목이 우선, 같은 날짜+제목 앞 12자 중복 제거
+    glob = macro_calendar_auto()
+    # 수기 항목이 우선하되, 수기 exp/prev/act 가 비어 있으면 자동 수집값으로 채운다
+    # (예: ID CPI 를 미리 적어두고 act 를 비워두면 발표 후 자동으로 실제치가 들어온다)
+    seen = {}; macro = []
+    for e in macro_calendar() + glob:
         k = (e["date"], re.sub(r"\W", "", e["title"])[:12])
-        if k in seen: continue
-        seen.add(k); macro.append(e)
-    calendar = sorted(macro + corp, key=lambda e: (e["date"], e.get("time") or "—"))
-    announcements = idx_announcements_today()
+        tags = _ev_tags(e["title"])
+        k2 = (e["date"], e.get("time"), e.get("country"), tags) if (e.get("time") not in (None, "", "—") and tags) else None
+        if k2 and k2 in seen: k = k2                      # 같은 시각 + 같은 지표 태그일 때만 수기·investing 병합
+        if k in seen:
+            base = seen[k]
+            for f in ("exp", "prev", "act"):
+                if base.get(f) in (None, "", "—") and e.get(f) not in (None, "", "—"):
+                    base[f] = e[f]
+                    if f == "act": base["act_src"] = e.get("src")
+            continue
+        seen[k] = e
+        if k2: seen[k2] = e
+        macro.append(e)
+    calendar = translate_field(sorted(macro + corp, key=lambda e: (e["date"], e.get("time") or "—")), "title")
+    announcements = translate_field(idx_announcements_today(), "title")
     data = {"mode": "live", "updated": now_wib().strftime("%Y-%m-%d %H:%M"), "delay_min": 0 if ix else 15,
             "fx_basis": m.get("fx_basis", CFG.get("fx_basis")), "idr_per_krw": m.get("idr_per_krw", CFG.get("idr_per_krw")),
             "indices": indices, "index": index,
@@ -571,6 +1112,10 @@ def build():
             "news": news_block(), "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
             "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else 0, "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    # data.js: index.html 을 파일(file://)로 직접 열어도 마지막 수집 데이터가 보이도록 (fetch 는 file:// 에서 막힘)
+    try: (ROOT / "data.js").write_text("window.__IDX_DATA=" + json.dumps(data, ensure_ascii=False) + ";", encoding="utf-8")
+    except Exception as e: log("data.js 저장 실패", e)
+    idx_browser_close()
     log(f"data.json | JCI {px} | 상승 {mk['adv'] if mk else '-'} | 외인 {(mk['foreign_net_idr']/1e9) if mk else 0:,.0f}억 | 뉴스 {len(data['news'])} | 일정 {len(calendar)} | 공시 {len(announcements)} | BI {'OK' if bi else 'X'}")
 
 if __name__ == "__main__":

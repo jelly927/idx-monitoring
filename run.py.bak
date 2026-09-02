@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+"""
+한 번에 실행: 수집기(5분 반복) + 화면 서버(8080) + 브라우저 자동 열기.
+    python run.py            (창 하나만 켜두면 됨. 닫으면 멈춤)
+    python run.py --port 8090 --interval 300
+"""
+import sys, threading, time, webbrowser, subprocess, os, http.server, socketserver, functools
+from pathlib import Path
+ROOT = Path(__file__).parent
+os.chdir(ROOT)
+port = int(sys.argv[sys.argv.index("--port") + 1]) if "--port" in sys.argv else 8080
+interval = int(sys.argv[sys.argv.index("--interval") + 1]) if "--interval" in sys.argv else 300
+
+def ensure_deps():
+    """requirements 미설치·playwright 브라우저 미설치면 자동으로 설치 (처음 한 번만 시간이 걸림)."""
+    try:
+        import requests, feedparser, yfinance, bs4, lxml  # noqa
+    except ImportError:
+        print("패키지 설치 중…", flush=True)
+        subprocess.call([sys.executable, "-m", "pip", "install", "-q", "-r", str(ROOT / "requirements.txt")])
+    try:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            p.chromium.launch().close()
+    except Exception:
+        print("캘린더용 브라우저(chromium) 설치 중… (처음 한 번, 1~3분)", flush=True)
+        subprocess.call([sys.executable, "-m", "playwright", "install", "chromium"])
+
+def fetch_loop():
+    ensure_deps()
+    import fetch_data
+    while True:
+        try: fetch_data.build()
+        except Exception as e: print("build error", repr(e), flush=True)
+        time.sleep(interval)
+
+class Quiet(http.server.SimpleHTTPRequestHandler):
+    def log_message(self, *a): pass
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-store"); super().end_headers()
+
+if __name__ == "__main__":
+    threading.Thread(target=fetch_loop, daemon=True).start()
+    socketserver.TCPServer.allow_reuse_address = True
+    with socketserver.TCPServer(("", port), functools.partial(Quiet, directory=str(ROOT))) as httpd:
+        url = f"http://localhost:{port}/"
+        print(f"IDX Live 실행 중 → {url}   (수집 {interval}초마다 · 이 창을 닫으면 멈춤)", flush=True)
+        threading.Timer(2, lambda: webbrowser.open(url)).start()
+        try: httpd.serve_forever()
+        except KeyboardInterrupt: pass

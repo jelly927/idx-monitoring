@@ -19,6 +19,19 @@ python -m http.server 8080           # 같은 폴더 → http://localhost:8080
 ```
 서버 배포: cron `*/5 9-16 * * 1-5 python fetch_data.py` 후 index.html + data.json 을 정적 호스팅(Netlify/S3/사내 서버).
 
+## 다른 사람에게 보내기 (3가지)
+| 방법 | 받는 사람이 할 일 | 자동 갱신 | 준비 |
+|---|---|---|---|
+| **① 링크** (권장) | 브라우저로 `https://jelly927.github.io/idx-live/` 열기 | ○ 5분마다 | `config.json` 의 `auto_push: true` + 최초 1회 `push.bat` 로그인 |
+| **② 공유용 zip** | 압축 풀고 `index.html` 더블클릭 | × (보낸 시점 데이터) | `share.bat` 더블클릭 → `IDX_Live_share.zip` |
+| **③ 전체 실행** | 압축 풀고 `start.bat` | ○ | 받는 쪽 PC 에 python.org 파이썬 + 인터넷 |
+
+③ 이 안 될 때 (자주 겪는 원인)
+- **zip 안에서 바로 start.bat 을 눌렀다** → 탐색기가 그 파일만 임시폴더에 풀어 실행하므로 run.py 를 못 찾는다. 반드시 "압축 풀기" 후 실행. (start.bat 이 이 경우를 감지해 안내한다)
+- **"python" 이 Microsoft Store 자리표시자** → Store 창만 열리고 아무것도 안 된다. python.org 설치판(Add to PATH 체크) 사용. (start.bat 이 감지)
+- 첫 실행은 패키지 + 크로미움 다운로드로 3~5분 걸리며, 사내망에서 pip/playwright 다운로드가 막히면 IDX 항목은 비고 Yahoo 지수·뉴스만 나온다 → 이 경우 ①로.
+- 화면은 `http://localhost:8080` 으로 열린다. index.html 을 파일로 열면 자동 갱신 없이 마지막 수집 데이터(`data.js`)만 보인다.
+
 ## 자동 수집 항목과 출처
 | 항목 | 출처 | 갱신 |
 |---|---|---|
@@ -52,6 +65,8 @@ python -m http.server 8080           # 같은 폴더 → http://localhost:8080
 ## 주의
 - saveticker 는 로그인 없이 렌더되는 공개 페이지지만 DOM 구조가 바뀌면 파서가 비어 나온다 → `data/cache/saveticker.html` 저장본 보고 정규식 조정. 그동안은 investing.com 캘린더로 자동 대체.
 - IDX 는 Cloudflare 뒤. 403 이 나오면 `pip install cloudscraper` (자동 사용됨). 과도한 호출 금지 — 5분 주기 권장.
-- IDX `GetStockSummary` 의 ForeignBuy/Sell 은 전체시장(정규+협상+현금) 합산. 정규시장만 보려면 `NonRegularValue` 를 빼서 판단.
+- IDX `GetStockSummary` 의 **ForeignBuy/ForeignSell 은 금액이 아니라 체결 주식 수**다. IDR 로 쓰려면 종목별 체결단가(Value/Volume)를 곱해야 한다 — 곱하지 않으면 실제의 1/1,000 수준으로 나온다.
+- 위 값은 전체시장(정규+협상+현금) 합산. 정규시장만 보려면 `NonRegularValue` 를 빼서 판단.
+- IDX 엔드포인트가 python requests 로 403 이 나면 수집기가 자동으로 playwright 크로미움을 띄워 같은 URL 을 다시 받는다 (`IDX 브라우저 경유 OK` 로그).
 - RSS 주소 7개는 매체별로 바뀔 수 있음 → 로그에 `rss empty` 뜨면 config.json 수정.
 - 못 구한 값은 "확인 필요"로 표시되며 추정하지 않음.
