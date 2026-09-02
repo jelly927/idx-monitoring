@@ -259,5 +259,8 @@
  "calendar_min_imp_us": 2,
  "auto_push": true,
  "_auto_push_comment": "auto_push: 수집 후 번역 캐시·수기값·설정을 GitHub 로 push (최초 1회 push.bat 로그인 필요). data.json 은 GitHub Actions 러너가 5분마다 직접 수집해 올리므로 PC 가 꺼져 있어도 사이트가 갱신됨. 러너가 IDX 에 막혀 데이터가 비면 auto_push_data 를 true 로 바꾸고 Actions 의 schedule 을 끈다(둘이 동시에 data.json 을 올리면 충돌)",
- "auto_push_data": false
+ "auto_push_data": false,
+ "intraday_rank": true,
+ "intraday_min_prev_value": 100000000.0,
+ "_intraday_comment": "IDX StockSummary 는 장 마감 후에만 당일치를 내므로 장중(09~17시) 종목 랭킹은 Yahoo(15분 지연)로 만든다. intraday_min_prev_value: 전일 거래대금이 이 값(IDR) 이상인 종목만 조회(속도)"
 }

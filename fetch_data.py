@@ -258,9 +258,10 @@ class IDX:
         if f.exists() and not force:
             return json.loads(f.read_text(encoding="utf-8"))
         j = self.get("/primary/TradingSummary/GetStockSummary", date=f"{d:%Y%m%d}", length=9999, start=0)
+        time.sleep(0.6)                                    # IDX 과호출 방지 (실제 네트워크 호출일 때만)
         rows = (j or {}).get("data") or []
-        if rows and (d < now_wib().date() or now_wib().hour >= 17):
-            f.write_text(json.dumps(rows), encoding="utf-8")
+        if j is not None and (d < now_wib().date() or (rows and now_wib().hour >= 17)):
+            f.write_text(json.dumps(rows), encoding="utf-8")       # 과거 날짜는 빈 결과(주말·휴장)도 캐시
         return rows
     def index_summary(self, d):
         j = self.get("/primary/TradingSummary/GetIndexSummary", lang="id", date=f"{d:%Y%m%d}", start=0, length=9999)
@@ -292,7 +293,72 @@ def last_trading_day(with_data):
     return None, []
 
 # =============================================================== market block from IDX
+def yahoo_intraday(codes, chunk=150):
+    """장중 종목 시세 (Yahoo, ~15분 지연). {code: {"px","vol","val"}}. val ≈ 거래량 × (고+저+종)/3."""
+    if yf is None or not codes: return {}
+    out = {}
+    for i in range(0, len(codes), chunk):
+        part = codes[i:i + chunk]
+        try:
+            df = yf.download([c + ".JK" for c in part], period="1d", interval="1d", group_by="ticker",
+                             threads=True, progress=False, auto_adjust=False)
+        except Exception as e:
+            log("yahoo 장중 랭킹 chunk 실패", str(e)[:80]); continue
+        for c in part:
+            try:
+                d = df[c + ".JK"] if len(part) > 1 else df
+                row = d.dropna(subset=["Close"]).iloc[-1]
+                px, vol = float(row["Close"]), float(row["Volume"] or 0)
+                if not px or px != px or vol <= 0: continue
+                vwap = float((row["High"] + row["Low"] + row["Close"]) / 3)
+                out[c] = {"px": px, "vol": vol, "val": vol * vwap}
+            except Exception:
+                continue
+        time.sleep(0.4)
+    return out
+
 def idx_market():
+    d, rows = last_trading_day(idx.stock_summary)
+    if not rows: return None
+    today = now_wib().date()
+    in_session = (d < today) and today.weekday() < 5 and 9 <= now_wib().hour < 17
+    if in_session and CFG.get("intraday_rank", True):
+        mk = _market_from_rows(d, rows)                    # 전일 확정치 (외국인·시장 합계)
+        prev = {r["StockCode"]: r for r in rows if r.get("Close")}
+        universe = [c for c, r in prev.items() if (r.get("Value") or 0) >= CFG.get("intraday_min_prev_value", 1e8)]
+        q = yahoo_intraday(universe)
+        if len(q) >= 50:
+            hist = mk.pop("_hist", {})
+            liquid = []
+            for c, v in q.items():
+                r = prev.get(c)
+                if not r or not r.get("Close"): continue
+                pc = r["Close"]
+                if v["val"] < CFG.get("min_value_idr", 1e9): continue
+                h = hist.get(c, []); avg = sum(h) / len(h) if len(h) >= 5 else None
+                liquid.append({"t": c, "n": (r.get("StockName") or "").replace("Tbk.", "").strip(), "px": v["px"],
+                               "pct": round((v["px"] / pc - 1) * 100, 2), "val": v["val"],
+                               "ratio": round(v["val"] / avg, 1) if avg else None, "nonreg": 0,
+                               "fbuy": None, "fsell": None, "fnet": None})
+            qq = {c: v for c, v in q.items() if c in prev and prev[c].get("Close")}
+            adv = sum(1 for c, v in qq.items() if v["px"] > prev[c]["Close"])
+            dec = sum(1 for c, v in qq.items() if v["px"] < prev[c]["Close"])
+            unch = len(qq) - adv - dec
+            mk.update({"rank_date": today.isoformat(), "adv": adv, "dec": dec, "unch": unch,
+                       "value_idr_intraday": sum(v["val"] for v in q.values()), "rank_cover": len(q),
+                       "rank_src": f"Yahoo 15분 지연 · {len(q)}종목", "rank_asof": now_wib().strftime("%H:%M"),
+                       "value": sorted(liquid, key=lambda x: -x["val"])[:10],
+                       "gainers": sorted(liquid, key=lambda x: -x["pct"])[:10], "losers": sorted(liquid, key=lambda x: x["pct"])[:10],
+                       "turnover": sorted([x for x in liquid if x["ratio"]], key=lambda x: -x["ratio"])[:10]})
+            log(f"장중 랭킹 Yahoo {len(q)}/{len(universe)}종목 · 상승 {adv} 하락 {dec}")
+            return mk
+        log(f"장중 랭킹 Yahoo 실패({len(q)}종목) → 전일 IDX 확정치 표시")
+        mk.pop("_hist", None); return mk
+    mk = _market_from_rows(d, rows); mk.pop("_hist", None)
+    mk.update({"rank_date": d.isoformat(), "rank_src": f"IDX 확정 {d:%m/%d}", "rank_asof": None})
+    return mk
+
+def _market_from_rows(d, rows):
     d, rows = last_trading_day(idx.stock_summary)
     if not rows: return None
     stocks = [r for r in rows if r.get("Close") and r.get("Previous")]
@@ -314,7 +380,6 @@ def idx_market():
         if past:
             for r in past: hist.setdefault(r["StockCode"], []).append(r.get("Value") or 0)
             n += 1
-        if not f.exists(): time.sleep(0.8)
         dd -= dt.timedelta(days=1); tries += 1
     minval = CFG.get("min_value_idr", 1e9)
     liquid = []
@@ -335,7 +400,7 @@ def idx_market():
             "gainers": sorted(liquid, key=lambda x: -x["pct"])[:10], "losers": sorted(liquid, key=lambda x: x["pct"])[:10],
             "turnover": sorted([x for x in liquid if x["ratio"]], key=lambda x: -x["ratio"])[:10],
             "foreign_top": sorted(liquid, key=lambda x: -x["fnet"])[:5], "foreign_bottom": sorted(liquid, key=lambda x: x["fnet"])[:5],
-            "hist_days": n}
+            "hist_days": n, "_hist": hist}
 
 def idx_index():
     d, rows = last_trading_day(idx.index_summary)
@@ -928,8 +993,7 @@ def translate_field(items, field="t", langs=("ko", "id"), budget=None):
     _tr_cache_reload()                              # 예약 작업이 채워 넣은 번역도 반영
     eng_cfg = cfg.get("engines")
     if eng_cfg is None: eng_cfg = [cfg.get("engine", "google"), "mymemory"]
-    engines = [e for e in eng_cfg if e in TR_ENGINES]          # engines: [] 이면 외부 기계번역 사용 안 함 (원문 유지)
-    if not engines: return items
+    engines = [e for e in eng_cfg if e in TR_ENGINES]          # engines: [] 이면 외부 기계번역은 안 쓰되 캐시(Claude 번역)는 반드시 적용
     budget = cfg.get("max_per_run", 60) if budget is None else budget
 
     need = []                                        # (item, 대상필드, 원문, 목표언어, 캐시키)
@@ -945,7 +1009,7 @@ def translate_field(items, field="t", langs=("ko", "id"), budget=None):
             if key in TR_GOOD: it[tgt] = TR_GOOD[key]; continue      # Claude 번역 우선
             if key in TR_CACHE: it[tgt] = TR_CACHE[key]; continue
             need.append((it, tgt, src, tl, key))
-    if not need: return items
+    if not need or not engines: return items         # 캐시 적용은 위에서 끝남. 엔진이 없으면 미번역분은 원문 유지
     need = need[:budget]                             # 남은 건 다음 실행에서 이어서
     ok = 0; used = []
     remaining = need
@@ -1008,6 +1072,14 @@ def news_block(max_items=None):
             if CFG.get("news_only_with_ticker", True) and not tags: continue
             ts = e.get("published_parsed") or e.get("updated_parsed")
             t = dt.datetime(*ts[:6], tzinfo=dt.timezone.utc).astimezone(WIB) if ts else now_wib()
+            raw = str(e.get("published") or e.get("updated") or "")
+            # 시간대 표기가 없는 피드(예: "Wed, 02 Sep 2026 11:34:02")는 feedparser 가 UTC 로 간주해 WIB 보다 7시간 미래가 된다
+            # → 표기가 없거나 결과가 미래이면 현지(WIB) 시각으로 되돌린다
+            has_tz = bool(re.search(r"(Z|[+-]\d{2}:?\d{2}|GMT|UTC|WIB|WITA|WIT)\s*$", raw.strip()))
+            if ts and (not has_tz or t > now_wib() + dt.timedelta(minutes=10)):
+                t2 = t - dt.timedelta(hours=7)
+                if t2 <= now_wib() + dt.timedelta(minutes=10): t = t2
+            if t > now_wib(): t = now_wib()
             items.append({"ts": t.isoformat(), "date": t.date().isoformat(), "time": t.strftime("%H:%M") if t.date() == now_wib().date() else t.strftime("%m/%d"),
                           "src": src["name"], "t": title, "tags": tags, "url": e.get("link", "")})
     items.sort(key=lambda x: x["ts"], reverse=True)
@@ -1076,6 +1148,7 @@ def build():
              "ytd": round((px / yb["JCI"] - 1) * 100, 2) if px and yb.get("JCI") else None, "m1": round((px / h["m1"] - 1) * 100, 2) if px and h else None,
              "value_idr": ix.get("value_idr") if ix else None, "volume": ix.get("volume") if ix else None}
     if mk:
+        index.update({"rank_src": mk.get("rank_src"), "rank_asof": mk.get("rank_asof"), "rank_date": mk.get("rank_date")})
         index.update({"adv": mk["adv"], "dec": mk["dec"], "unch": mk["unch"], "foreign_net_idr": mk["foreign_net_idr"], "foreign_buy": mk["foreign_buy"],
                       "foreign_sell": mk["foreign_sell"], "foreign_note": mk["foreign_note"], "foreign_date": mk["date"][5:].replace("-", "/"), "nonreg_idr": mk["nonreg_idr"]})
         if not index.get("value_idr"): index["value_idr"] = mk["value_idr"]

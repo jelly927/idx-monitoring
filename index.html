@@ -71,9 +71,10 @@ a{color:inherit;text-decoration:none}
 .ix .live.off{color:var(--ink2);background:var(--chip)}
 .ix svg{width:100%;height:56px;display:block;margin-top:8px}
 .ix .fmeta{font-size:11.5px;color:var(--ink3);margin-top:8px;line-height:1.4}
-.kv{display:grid;grid-template-columns:repeat(4,1fr);gap:8px 14px;margin-top:12px}
-.kv div span{display:block;font-size:11.5px;color:var(--ink3)}
-.kv div b{font-weight:700;font-size:13.5px}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:10px 14px;margin-top:12px}
+.kv div{min-width:0}
+.kv div span{display:block;font-size:11.5px;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kv div b{font-weight:700;font-size:13.5px;white-space:nowrap;display:block}
 
 /* pills */
 .pills{display:flex;gap:6px;flex-wrap:wrap}
@@ -369,7 +370,7 @@ function stockRow(o,i,kind){const bad=o.px==null;const sub=kind==='turnover'?`${
   return`<div class="row" onclick="openDr('${o.t}')"><span class="rk ${i<3?'top':''}">${i+1}</span>${logo(o.t,o.n)}<div class="nm"><b>${o.n||o.t}</b><small>${sub}</small></div><div class="px">${right}</div><span class="heart">♡</span></div>`;}
 function renderRank(){const list=DATA[rankKey]||[];if(changed('rank',[rankKey,list,LANG]))$('rank').innerHTML=list.length?list.slice(0,10).map((o,i)=>stockRow(o,i,rankKey)).join(''):`<div class="empty">${T('noData')}</div>`;
   const lab={value:T('labValue'),gainers:T('labG'),losers:T('labL'),turnover:T('labT')};
-  $('rank-sub').textContent=`${lab[rankKey]} · ${DATA.index?.session||''}`;}
+  const rs=DATA.index?.rank_src?`${DATA.index.rank_src}${DATA.index.rank_asof?' · '+DATA.index.rank_asof:''}`:(DATA.index?.session||'');$('rank-sub').textContent=`${lab[rankKey]} · ${rs}`;}
 const H={};const changed=(k,v)=>{const j=JSON.stringify(v);if(H[k]===j)return false;H[k]=j;return true;};
 function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo';
   if(!liveOk){$('dot').className='dot'+(demo?' demo':'');$('mode').textContent=demo?T('demo'):`${T('live')} · 15${T('delay')}`;}
@@ -456,7 +457,10 @@ let left=60,liveTimer=null;
 function dataWarn(msg){let b=document.getElementById('fwarn');if(!b){b=document.createElement('div');b.id='fwarn';b.style.cssText='position:fixed;left:0;right:0;top:0;z-index:9999;background:#7a5a00;color:#fff;font:600 13px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;padding:10px 16px;text-align:center';document.body.appendChild(b);}b.textContent=msg;}
 function dataOk(){const b=document.getElementById('fwarn');if(b)b.remove();}
 function loadSidecar(){return new Promise(res=>{if(window.__IDX_DATA)return res(window.__IDX_DATA);const sc=document.createElement('script');sc.src='data.js?t='+Date.now();sc.onload=()=>res(window.__IDX_DATA||null);sc.onerror=()=>res(null);document.head.appendChild(sc);});}
-async function load(){try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;const d=await r.json();(d.indices||[]).forEach(x=>{x.live=/지연|tunda/.test(x.asof||'');x.t=0;});dataOk();render(d);}
+const REMOTE_DATA_URL='https://raw.githubusercontent.com/jelly927/idx-live/main/data.json';   // 공개 사이트(workers.dev 등)는 GitHub 의 최신 data.json 을 읽는다 (Actions 가 5분마다 갱신). localhost 는 같은 폴더의 data.json
+const DATA_URL=()=>(REMOTE_DATA_URL&&!/^(localhost|127\.0\.0\.1)$/.test(location.hostname))?REMOTE_DATA_URL:'data.json';
+async function fetchJson(u){const r=await fetch(u+(u.includes('?')?'&':'?')+'t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;return r.json();}
+async function load(){try{let d;try{d=await fetchJson(DATA_URL());}catch(e){if(DATA_URL()==='data.json')throw e;d=await fetchJson('data.json');}(d.indices||[]).forEach(x=>{x.live=/지연|tunda/.test(x.asof||'');x.t=0;});dataOk();render(d);}
   catch(e){const sc=await loadSidecar();
     if(sc){(sc.indices||[]).forEach(x=>{x.live=false;x.t=0;});render(sc);dataWarn((LANG==='id'?'Dibuka sebagai file — data terakhir ':'파일로 열어 자동 갱신은 되지 않습니다 — 마지막 수집 ')+(sc.updated||'')+' WIB'+(LANG==='id'?'. Untuk pembaruan otomatis jalankan start.bat lalu buka http://localhost:8080':'. 자동 갱신은 start.bat 실행 후 http://localhost:8080'));return;}
     dataWarn(location.protocol==='file:'?'파일을 직접 열어 실데이터(data.json)를 읽지 못했습니다 — 지금 화면은 스냅샷입니다. start.bat 을 실행한 뒤 http://localhost:8080 으로 접속하세요.':'data.json 을 읽지 못했습니다 — 수집기(run.py)가 실행 중인지 검은 창을 확인하세요. 지금 화면은 스냅샷입니다.');if(!DATA)render(window.DEMO_DATA);}
