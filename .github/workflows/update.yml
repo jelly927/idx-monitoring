@@ -1,8 +1,11 @@
 name: update-and-deploy
+# GitHub 서버(Actions)가 장중 5분마다 수집해 data.json 을 갱신하고 Pages 로 배포한다.
+# → 사장님 PC 가 꺼져 있어도 사이트는 계속 갱신된다.
+# PC 쪽 auto_push 는 기본적으로 번역 캐시(tr_claude.json)·수기값(manual.json)만 올린다 (data.json 은 러너가 단일 작성자).
 on:
   schedule:
-    - cron: "*/5 1-10 * * 1-5"
-    - cron: "0 12,23 * * *"
+    - cron: "*/5 1-10 * * 1-5"    # 08:00~17:59 WIB 평일, 5분마다 (GitHub 사정으로 5~15분 지연 가능)
+    - cron: "0 12,23 * * *"        # 장 마감 후 확정치 · 새벽 캘린더 갱신
   push:
     branches: [main]
   workflow_dispatch:
@@ -13,7 +16,7 @@ permissions:
 concurrency: { group: update, cancel-in-progress: false }
 jobs:
   fetch:
-    if: github.event_name != 'push'
+    if: github.event_name != 'push'          # push 이벤트는 배포만
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,11 +28,11 @@ jobs:
         run: python fetch_data.py
         env:
           TZ: Asia/Jakarta
-          IDX_PROXY: ${{ vars.IDX_PROXY }}
+          IDX_PROXY: ${{ vars.IDX_PROXY }}      # (선택) 러너 IP 가 IDX 에 막히면 Cloudflare Worker 주소를 Variables 에 등록
       - name: commit data
         run: |
           git config user.name idx-live-bot && git config user.email bot@users.noreply.github.com
-                    for f in data.json data.js data/cache; do [ -e "$f" ] && git add -A -- "$f"; done; true
+          for f in data.json data.js data/cache; do [ -e "$f" ] && git add -A -- "$f"; done; true
           git commit -m "data $(TZ=Asia/Jakarta date +%Y-%m-%d\ %H:%M) WIB [skip ci]" || echo "no change"
           git pull --rebase origin main || true
           git push || true
