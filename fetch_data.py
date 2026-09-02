@@ -1237,20 +1237,42 @@ def build():
         macro.append(e)
     calendar = translate_field(sorted(macro + corp, key=lambda e: (e["date"], e.get("time") or "—")), "title")
     announcements = translate_field(idx_announcements_today(), "title")
+    # ---- IDX 분리 파일: PC(IDX 접근 가능)가 data/idx_part.json 을 쓰고 GitHub 로 올리면,
+    #      IDX 가 막힌 GitHub 러너는 그 파일을 읽어 랭킹·종목·외국인·공시를 채운다 (러너는 지수·뉴스·캘린더만 직접 수집)
+    IDX_PART = ROOT / "data" / "idx_part.json"; idx_from_pc = None
+    if mk:
+        part = {"saved": now_wib().strftime("%Y-%m-%d %H:%M"), "index": {k: index.get(k) for k in ("rank_src", "rank_asof", "rank_date", "adv", "dec", "unch", "foreign_net_idr", "foreign_buy", "foreign_sell", "foreign_note", "foreign_date", "nonreg_idr", "value_idr", "volume")},
+                "value": mk["value"], "gainers": mk["gainers"], "losers": mk["losers"], "turnover": mk["turnover"], "foreign_top": mk["foreign_top"], "foreign_bottom": mk["foreign_bottom"],
+                "stocks": mk.get("stocks", []), "announcements": announcements, "hist_days": mk["hist_days"],
+                "ix": ({k: v for k, v in ix.items() if k not in ("spark", "lq45")} | {"spark": (ix.get("spark") or [])[::max(1, len(ix.get("spark") or []) // 120)], "lq45": ({k: v for k, v in ix["lq45"].items() if k != "spark"} | {"spark": (ix["lq45"].get("spark") or [])[::max(1, len(ix["lq45"].get("spark") or []) // 120)]}) if ix.get("lq45") else None}) if ix else None}
+        try: IDX_PART.write_text(json.dumps(part, ensure_ascii=False), encoding="utf-8")
+        except Exception as e: log("idx_part 저장 실패", e)
+    elif IDX_PART.exists():
+        try:
+            idx_from_pc = json.loads(IDX_PART.read_text(encoding="utf-8"))
+            pi = idx_from_pc.get("index") or {}
+            for k, v in pi.items():
+                if v is not None and index.get(k) is None: index[k] = v
+            index["rank_src"] = (pi.get("rank_src") or "IDX") + f' · PC {idx_from_pc.get("saved", "")[-5:]}'
+            if not ix and idx_from_pc.get("ix"): ix = idx_from_pc["ix"]
+            if not announcements: announcements = idx_from_pc.get("announcements") or []
+            log(f'IDX 차단 → PC 수집분 사용 (idx_part.json {idx_from_pc.get("saved")})')
+        except Exception as e: log("idx_part 읽기 실패", e); idx_from_pc = None
+    P = lambda k: (mk[k] if mk else (idx_from_pc or {}).get(k) or [])
     data = {"mode": "live", "updated": now_wib().strftime("%Y-%m-%d %H:%M"), "delay_min": 0 if ix else 15,
             "fx_basis": m.get("fx_basis", CFG.get("fx_basis")), "idr_per_krw": m.get("idr_per_krw", CFG.get("idr_per_krw")),
             "indices": indices, "index": index,
-            "value": mk["value"] if mk else [], "gainers": mk["gainers"] if mk else [], "losers": mk["losers"] if mk else [],
-            "turnover": mk["turnover"] if mk else [], "foreign_top": mk["foreign_top"] if mk else [], "foreign_bottom": mk["foreign_bottom"] if mk else [],
-            "stocks": mk.get("stocks", []) if mk else [],
+            "value": P("value"), "gainers": P("gainers"), "losers": P("losers"),
+            "turnover": P("turnover"), "foreign_top": P("foreign_top"), "foreign_bottom": P("foreign_bottom"),
+            "stocks": P("stocks"),
             "news": news_block(), "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
-            "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else 0, "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
+            "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     # data.js: index.html 을 파일(file://)로 직접 열어도 마지막 수집 데이터가 보이도록 (fetch 는 file:// 에서 막힘)
     try: (ROOT / "data.js").write_text("window.__IDX_DATA=" + json.dumps(data, ensure_ascii=False) + ";", encoding="utf-8")
     except Exception as e: log("data.js 저장 실패", e)
     idx_browser_close()
-    log(f"data.json | JCI {px} | 상승 {mk['adv'] if mk else '-'} | 외인 {(mk['foreign_net_idr']/1e9) if mk else 0:,.0f}억 | 뉴스 {len(data['news'])} | 일정 {len(calendar)} | 공시 {len(announcements)} | BI {'OK' if bi else 'X'}")
+    log(f"data.json | JCI {px} | 상승 {index.get('adv', '-')} | 외인 {(index.get('foreign_net_idr') or 0)/1e9:,.0f}억 | 뉴스 {len(data['news'])} | 일정 {len(calendar)} | 공시 {len(announcements)} | BI {'OK' if bi else 'X'}")
 
 if __name__ == "__main__":
     if "--loop" in sys.argv:
