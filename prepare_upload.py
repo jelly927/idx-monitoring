@@ -6,8 +6,8 @@ from pathlib import Path
 ROOT = Path(__file__).parent; OUT = ROOT / "github_upload"
 FILES = ["index.html", "fetch_data.py", "run.py", "selftest.py", "config.json", "tickers.json", "requirements.txt",
          "README.md", "DEPLOY.md", ".gitignore", "start.bat", "push.bat", "share.bat", "make_share.py",
-         "setup_autostart.bat", "prepare_upload.py", "upload.bat", "data.json", "data.js",
-         "data/manual.json", "data/cache/tr_claude.json", "data/cache/rss_map.json", "data/cache/investing_cal.json",
+         "setup_autostart.bat", "prepare_upload.py", "upload.bat", "publish.py", "publish.bat", "data.json", "data.js",
+         "data/manual.json", "data/idx_part.json", "data/cache/tr_claude.json", "data/cache/rss_map.json", "data/cache/investing_cal.json",
          ".github/workflows/update.yml", "worker/worker.js"]
 FILES += sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "data" / "cache").glob("ss_*.json"))[-25:]
 if OUT.exists(): shutil.rmtree(OUT)
@@ -23,5 +23,5 @@ print("2) 아래 'Commit changes' 클릭")
 print("   .github 폴더가 안 올라가면: Add file > Create new file > 이름 .github/workflows/update.yml > 내용 붙여넣기")
 try:
     os.startfile(str(OUT))
-    webbrowser.open("https://github.com/jelly927/idx-live/upload/main")
+    webbrowser.open("https://github.com/jelly927/idx-monitoring/upload/main")
 except Exception: pass
