@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": "2026-09-02 16:16",
+ "updated": "2026-09-02 16:31",
  "delay_min": 15,
  "fx_basis": "FY26 YTD 누적환율 (KISI 시트, 매주 월 갱신)",
  "idr_per_krw": 11.7705,
@@ -9,11 +9,10 @@
    "code": "COMPOSITE",
    "label": "IHSG",
    "name": "자카르타 종합",
-   "px": 6590.9,
+   "px": 6595.78,
    "prev": 6599.94,
-   "pct": -0.14,
+   "pct": -0.06,
    "spark": [
-    6583.59,
     6584.32,
     6584.73,
     6579.73,
@@ -132,10 +131,11 @@
     6589.23,
     6590.59,
     6591.64,
-    6590.9
+    6590.9,
+    6595.78
    ],
    "inv": false,
-   "asof": "15:50",
+   "asof": "16:00",
    "high": 6622.80908203125,
    "low": 6564.27001953125
   },
@@ -143,11 +143,10 @@
    "code": "LQ45",
    "label": "LQ45",
    "name": "대형 45종목",
-   "px": 650.7,
+   "px": 651.87,
    "prev": 654.41,
-   "pct": -0.57,
+   "pct": -0.39,
    "spark": [
-    649.92,
     650.09,
     650.21,
     649.47,
@@ -266,10 +265,11 @@
     650.7,
     650.69,
     650.84,
-    650.7
+    650.7,
+    651.87
    ],
    "inv": false,
-   "asof": "15:50",
+   "asof": "16:00",
    "high": 657.1640014648438,
    "low": 649.0130004882812
   },
@@ -310,21 +310,22 @@
     17760.0,
     17750.0,
     17750.0,
+    17750.0,
     17750.0
    ],
    "inv": true,
-   "asof": "16:01",
+   "asof": "16:17",
    "high": 17773.0,
    "low": 17710.0
   }
  ],
  "index": {
-  "session": "15:50",
+  "session": "16:00",
   "high": 6622.80908203125,
   "low": 6564.27001953125,
   "prev": 6599.94,
-  "ytd": -23.77,
-  "m1": 5.72,
+  "ytd": -23.72,
+  "m1": 5.79,
   "value_idr": null,
   "volume": null
  },
@@ -395,19 +396,6 @@
    "t_id": "Telkom Perkuat SDM Inklusif untuk Dorong Bisnis Berkelanjutan"
   },
   {
-   "ts": "2026-09-02T13:17:34+07:00",
-   "date": "2026-09-02",
-   "time": "13:17",
-   "src": "Bloomberg Technoz",
-   "t": "Penyebab IHSG Balik Arah Hingga Tergelincir di Zona Merah",
-   "tags": [
-    "TLKM"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120273/penyebab-ihsg-balik-arah-hingga-tergelincir-di-zona-merah",
-   "t_ko": "IHSG 하락 반전 배경",
-   "t_id": "Penyebab IHSG Balik Arah Hingga Tergelincir di Zona Merah"
-  },
-  {
    "ts": "2026-09-02T13:05:36+07:00",
    "date": "2026-09-02",
    "time": "13:05",
@@ -457,19 +445,6 @@
    ],
    "url": "https://katadata.co.id/digital/teknologi/6a97c651b75a8/menakar-kekuatan-infrastruktur-telekomunikasi-mtel-tbig-jika-jadi-merger",
    "t_id": "Menakar Kekuatan Infrastruktur Telekomunikasi MTEL - TBIG jika Jadi Merger"
-  },
-  {
-   "ts": "2026-09-02T12:53:00+07:00",
-   "date": "2026-09-02",
-   "time": "12:53",
-   "src": "Katadata",
-   "t": "IHSG Sesi I Lesu, Asing Net Sell Rp 379 Miliar dan Jual Saham TLKM hingga GOTO",
-   "tags": [
-    "GOTO",
-    "TLKM"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6a97c6a533ecc/ihsg-sesi-i-lesu-asing-net-sell-rp-379-miliar-dan-jual-saham-tlkm-hingga-goto",
-   "t_id": "IHSG Sesi I Lesu, Asing Net Sell Rp 379 Miliar dan Jual Saham TLKM hingga GOTO"
   },
   {
    "ts": "2026-09-02T12:30:00+07:00",
@@ -734,9 +709,9 @@
   },
   {
    "k": "IDR/KRW (1원당 루피아)",
-   "v": "13.01",
-   "d": 0.55,
-   "ytd": -10.7,
+   "v": "13.00",
+   "d": 0.51,
+   "ytd": -10.67,
    "inv": true,
    "note": "연초 11.6144",
    "k_ko": "IDR/KRW (1원당 루피아)",
@@ -767,9 +742,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "94.76",
-   "d": 0.12,
-   "ytd": 55.6,
+   "v": "95.06",
+   "d": 0.43,
+   "ytd": 56.09,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -777,8 +752,8 @@
   },
   {
    "k": "DXY",
-   "v": "99.78",
-   "d": 0.11,
+   "v": "99.79",
+   "d": 0.12,
    "ytd": null,
    "inv": false,
    "note": null,
