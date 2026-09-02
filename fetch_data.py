@@ -1016,6 +1016,55 @@ def _tr_save():
     try: TR_CACHE_P.write_text(json.dumps(TR_CACHE, ensure_ascii=False), encoding="utf-8")
     except Exception as e: log("번역 캐시 저장 실패", e)
 
+CLAUDE_RULES_KO = """한국어 번역 규칙(증권사 데일리 헤드라인체, 예외 없음): ① 명사형 종결 — 종결어미(~합니다/~했습니다/~됩니다/~하세요/~입니다)와 마침표 금지. 예: "TRIS 중간배당 Rp70억 결정 — 지급 일정", "IHSG 9/2 1부 0.28% 하락 반전 — ADMR·ADRO 약세가 부담". ② 고유명사(회사명·인명·지명)는 로마자 원문 유지(Danantara, Bakrie, Boy Thohir…; Boy→소년 같은 번역 금지). 널리 알려진 지명만 한국어(Indonesia=인도네시아, Jakarta=자카르타). 종목코드·퍼센트 원문 유지. ③ 통화는 Rp 표기, Miliar=억 단위 환산(Rp500 Miliar=Rp5,000억, Rp1,27 Triliun=Rp1.27조), 소수점은 마침표. ④ 용어: Laba=순이익, Pendapatan=매출, Saham=주식, Rekomendasi=투자의견, Kinerja=실적, Emiten=상장사, RUPS(LB)=(임시)주주총회, Buyback=자사주 매입, Dividen=배당, Rights Issue=유상증자, Tender Offer=공개매수, Net Buy/Sell=순매수/순매도, Sesi I=1부, IHSG/JCI=IHSG, Asing=외국인, Komisaris=이사, Direktur Utama=대표. ⑤ 두 절은 " — "로 연결. 영어 원문도 한국어로. ⑥ 경제 캘린더 지표명은 국내 리서치 표기: "ISM Manufacturing PMI (Aug)"→"8월 ISM 제조업 PMI", "Nonfarm Payrolls (Aug)"→"8월 비농업 고용", "Initial Jobless Claims"→"신규 실업수당 청구", "Crude Oil Inventories"→"EIA 원유 재고", "Fed Chair Powell Speaks"→"연준 Powell 의장 연설", "FOMC Member Waller Speaks"→"연준 Waller 이사 연설"; (Aug) 같은 월은 앞으로 "8월 …", (MoM)/(YoY)/(QoQ)는 유지. ⑦ "실적 공시 · " 같은 한국어 접두어가 있으면 유지하고 뒤의 인니어만 번역."""
+CLAUDE_RULES_ID = """Terjemahkan ke bahasa Indonesia gaya judul berita ekonomi (Kontan/Bisnis): ringkas, tanpa titik di akhir, nama perusahaan/orang/kode saham tetap, angka & persen tetap. Untuk judul kalender ekonomi AS tambahkan "AS" bila perlu dan bulan dalam bahasa Indonesia (Agu, Jul). Awalan Korea seperti "실적 공시 · " diganti "Laporan Keuangan · ", "주주총회 · "→"RUPS · ", "기업설명회 · "→"Public Expose · ", "공시 · "→"Keterbukaan · "."""
+
+def _secret(name):
+    import os
+    v = os.environ.get(name.upper())
+    if v: return v.strip()
+    try: return (json.loads((ROOT / "secrets.json").read_text(encoding="utf-8-sig")).get(name) or "").strip() or None
+    except Exception: return None
+
+def _tr_claude_api(pairs):
+    """pairs: [(원문, 목표언어)] → {(원문, 목표언어): 번역}. Anthropic API (secrets.json 의 anthropic_api_key). 결과는 tr_claude.json 에 영구 저장."""
+    key = _secret("anthropic_api_key")
+    if not key or not pairs: return {}
+    cfg = CFG.get("translate") or {}
+    model = cfg.get("claude_model", "claude-sonnet-4-5")
+    out = {}
+    for tl in ("ko", "id"):
+        texts = [t for t, l in pairs if l == tl]
+        if not texts: continue
+        rules = CLAUDE_RULES_KO if tl == "ko" else CLAUDE_RULES_ID
+        for i in range(0, len(texts), 40):
+            chunk = texts[i:i + 40]
+            prompt = (rules + "\n\n아래 JSON 배열의 각 제목을 같은 순서로 번역해, 번역문만 담은 JSON 문자열 배열 하나로만 답하라(설명·코드블록 금지).\n" if tl == "ko" else
+                      rules + "\n\nTerjemahkan setiap judul dalam array JSON berikut dengan urutan yang sama; jawab HANYA dengan satu array JSON berisi string terjemahan (tanpa penjelasan/code block).\n")
+            body = {"model": model, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt + json.dumps(chunk, ensure_ascii=False)}]}
+            try:
+                r = requests.post("https://api.anthropic.com/v1/messages", json=body, timeout=90,
+                                  headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
+                if r.status_code != 200:
+                    log(f"Claude API 번역 실패 {r.status_code}: {r.text[:120]}"); return out
+                txt = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text").strip()
+                txt = re.sub(r"^```(?:json)?|```$", "", txt.strip(), flags=re.M).strip()
+                arr = json.loads(txt)
+                if not isinstance(arr, list) or len(arr) != len(chunk): log(f"Claude API 번역 응답 형식 불일치 ({len(chunk)}→{len(arr) if isinstance(arr, list) else '?'})"); continue
+                for t, v in zip(chunk, arr):
+                    if isinstance(v, str) and v.strip(): out[(t, tl)] = v.strip()
+            except Exception as e:
+                log("Claude API 번역 오류", str(e)[:100]); return out
+    if out:
+        try:
+            cur = _load_json(TR_GOOD_P) or {}
+            for (t, tl), v in out.items(): cur[hashlib.md5((t + "|" + tl).encode("utf-8")).hexdigest()] = v
+            TR_GOOD_P.write_text(json.dumps(cur, ensure_ascii=False), encoding="utf-8")
+            TR_GOOD.update(cur)
+            log(f"Claude API 번역 {len(out)}건 → tr_claude.json (총 {len(cur)})")
+        except Exception as e: log("tr_claude.json 저장 실패", e)
+    return out
+
 def translate_field(items, field="t", langs=("ko", "id"), budget=None):
     """items 의 field 를 언어별로 번역해 field_ko / field_id 를 붙인다.
     엔진을 순서대로 시도하고(requests → 브라우저), 실패한 건은 원문을 유지한다."""
@@ -1040,6 +1089,15 @@ def translate_field(items, field="t", langs=("ko", "id"), budget=None):
             if key in TR_GOOD: it[tgt] = TR_GOOD[key]; continue      # Claude 번역 우선
             if key in TR_CACHE: it[tgt] = TR_CACHE[key]; continue
             need.append((it, tgt, src, tl, key))
+    if need and _secret("anthropic_api_key"):        # Claude API (키가 있을 때만) — 품질 우선, 결과는 영구 캐시
+        got = _tr_claude_api(list({(src, tl) for _, _, src, tl, _ in need[:cfg.get("claude_max_per_run", 120)]}))
+        if got:
+            rest = []
+            for it, tgt, src, tl, key in need:
+                v = got.get((src, tl))
+                if v: it[tgt] = v
+                else: rest.append((it, tgt, src, tl, key))
+            need = rest
     if not need or not engines: return items         # 캐시 적용은 위에서 끝남. 엔진이 없으면 미번역분은 원문 유지
     need = need[:budget]                             # 남은 건 다음 실행에서 이어서
     ok = 0; used = []
