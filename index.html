@@ -457,7 +457,7 @@ let left=60,liveTimer=null;
 function dataWarn(msg){let b=document.getElementById('fwarn');if(!b){b=document.createElement('div');b.id='fwarn';b.style.cssText='position:fixed;left:0;right:0;top:0;z-index:9999;background:#7a5a00;color:#fff;font:600 13px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;padding:10px 16px;text-align:center';document.body.appendChild(b);}b.textContent=msg;}
 function dataOk(){const b=document.getElementById('fwarn');if(b)b.remove();}
 function loadSidecar(){return new Promise(res=>{if(window.__IDX_DATA)return res(window.__IDX_DATA);const sc=document.createElement('script');sc.src='data.js?t='+Date.now();sc.onload=()=>res(window.__IDX_DATA||null);sc.onerror=()=>res(null);document.head.appendChild(sc);});}
-const REMOTE_DATA_URL='https://raw.githubusercontent.com/jelly927/idx-live/main/data.json';   // 공개 사이트(workers.dev 등)는 GitHub 의 최신 data.json 을 읽는다 (Actions 가 5분마다 갱신). localhost 는 같은 폴더의 data.json
+const REMOTE_DATA_URL='https://raw.githubusercontent.com/jelly927/idx-monitoring/main/data.json';   // 공개 사이트(workers.dev 등)는 GitHub 의 최신 data.json 을 읽는다 (Actions 가 5분마다 갱신). localhost 는 같은 폴더의 data.json
 const DATA_URL=()=>(REMOTE_DATA_URL&&!/^(localhost|127\.0\.0\.1)$/.test(location.hostname))?REMOTE_DATA_URL:'data.json';
 async function fetchJson(u){const r=await fetch(u+(u.includes('?')?'&':'?')+'t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;return r.json();}
 async function load(){try{let d;try{d=await fetchJson(DATA_URL());}catch(e){if(DATA_URL()==='data.json')throw e;d=await fetchJson('data.json');}(d.indices||[]).forEach(x=>{x.live=/지연|tunda/.test(x.asof||'');x.t=0;});dataOk();render(d);}
