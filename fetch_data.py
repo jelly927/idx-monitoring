@@ -311,7 +311,7 @@ def yahoo_intraday(codes, chunk=150):
                 px, vol = float(row["Close"]), float(row["Volume"] or 0)
                 if not px or px != px or vol <= 0: continue
                 vwap = float((row["High"] + row["Low"] + row["Close"]) / 3)
-                out[c] = {"px": px, "vol": vol, "val": vol * vwap}
+                out[c] = {"px": px, "vol": vol, "val": vol * vwap, "hi": float(row["High"]), "lo": float(row["Low"])}
             except Exception:
                 continue
         time.sleep(0.4)
@@ -340,6 +340,15 @@ def idx_market():
                                "pct": round((v["px"] / pc - 1) * 100, 2), "val": v["val"],
                                "ratio": round(v["val"] / avg, 1) if avg else None, "nonreg": 0,
                                "fbuy": None, "fsell": None, "fnet": None})
+            for st in mk.get("stocks", []):
+                v = q.get(st["t"])
+                if not v or not st.get("px"): continue
+                pc = st["px"]                                  # 장중 기준가 = 전일(IDX 확정) 종가
+                st.update({"px": v["px"], "prev": pc, "pct": round((v["px"] / pc - 1) * 100, 2), "val": v["val"], "vol": v.get("vol"),
+                           "hi": v.get("hi"), "lo": v.get("lo"), "live": 1})
+                h = hist.get(st["t"], []); avg = sum(h) / len(h) if len(h) >= 5 else None
+                st["ratio"] = round(v["val"] / avg, 1) if avg else None
+            mk["stocks"] = sorted(mk.get("stocks", []), key=lambda x: -(x["val"] or 0))
             qq = {c: v for c, v in q.items() if c in prev and prev[c].get("Close")}
             adv = sum(1 for c, v in qq.items() if v["px"] > prev[c]["Close"])
             dec = sum(1 for c, v in qq.items() if v["px"] < prev[c]["Close"])
@@ -393,7 +402,17 @@ def _market_from_rows(d, rows):
                        "nonreg": round((r.get("NonRegularValue") or 0) / r["Value"] * 100) if r["Value"] else 0,
                        "fbuy": (r.get("ForeignBuy") or 0) * _upx(r), "fsell": (r.get("ForeignSell") or 0) * _upx(r),
                        "fnet": ((r.get("ForeignBuy") or 0) - (r.get("ForeignSell") or 0)) * _upx(r)})
+    # 종목 검색용 전 종목 (거래 없는 종목 제외)
+    allst = []
+    for r in stocks:
+        if not r.get("Volume"): continue
+        h = hist.get(r["StockCode"], []); avg = sum(h) / len(h) if len(h) >= 5 else None
+        allst.append({"t": r["StockCode"], "n": (r.get("StockName") or "").replace("Tbk.", "").strip(), "px": r["Close"], "prev": r["Previous"],
+                      "pct": round(r["Change"] / r["Previous"] * 100, 2), "val": r["Value"] or 0, "vol": r.get("Volume") or 0,
+                      "hi": r.get("High"), "lo": r.get("Low"), "ratio": round((r["Value"] or 0) / avg, 1) if avg else None,
+                      "fnet": ((r.get("ForeignBuy") or 0) - (r.get("ForeignSell") or 0)) * _upx(r)})
     return {"date": d.isoformat(), "adv": adv, "dec": dec, "unch": unch, "value_idr": value, "nonreg_idr": nonreg,
+            "stocks": sorted(allst, key=lambda x: -x["val"]),
             "foreign_buy": fbuy, "foreign_sell": fsell, "foreign_net_idr": fbuy - fsell,
             "foreign_note": None,
             "value": sorted(liquid, key=lambda x: -x["val"])[:10],
@@ -583,8 +602,20 @@ def investing_calendar(days=14, countries=("5", "48")):
 
 INV_CACHE_P = CACHE / "investing_cal.json"
 def _inv_cache_save(out):
-    try: INV_CACHE_P.write_text(json.dumps({"saved": now_wib().isoformat(), "events": out}, ensure_ascii=False), encoding="utf-8")
-    except Exception: pass
+    """새로 받은 행을 캐시와 합친다 — 부분 응답(예: 브라우저 경로가 당일치만 준 경우)에도 주간 일정이 사라지지 않게.
+    같은 (날짜·시각·국가·제목) 은 새 값으로 덮어써 실제치가 갱신되고, 10일 지난 항목은 버린다."""
+    try:
+        old = []
+        try: old = json.loads(INV_CACHE_P.read_text(encoding="utf-8")).get("events") or []
+        except Exception: pass
+        key = lambda e: (e.get("date"), e.get("time"), e.get("country"), (e.get("title") or "")[:60])
+        m = {key(e): e for e in old}
+        m.update({key(e): e for e in out})
+        lim = (now_wib().date() - dt.timedelta(days=10)).isoformat()
+        merged = sorted([e for e in m.values() if (e.get("date") or "") >= lim], key=lambda e: (e.get("date") or "", e.get("time") or ""))
+        INV_CACHE_P.write_text(json.dumps({"saved": now_wib().isoformat(), "events": merged}, ensure_ascii=False), encoding="utf-8")
+        out[:] = merged
+    except Exception as ex: log("캘린더 캐시 저장 실패", ex)
 def _inv_cache_load():
     """두 경로 다 실패해도 캘린더가 사라지지 않도록 마지막 성공분을 쓴다 (실제치는 다음 성공 때 갱신)."""
     try:
@@ -1049,6 +1080,26 @@ def translate_field(items, field="t", langs=("ko", "id"), budget=None):
 def translate_news(items):
     return translate_field(items, "t")
 
+SEEN_P = CACHE / "news_seen.json"; _SEEN = None
+def _seen_load():
+    global _SEEN
+    if _SEEN is None:
+        try: _SEEN = json.loads(SEEN_P.read_text(encoding="utf-8"))
+        except Exception: _SEEN = {}
+    return _SEEN
+def _seen_get(k):
+    v = _seen_load().get(k)
+    try: return dt.datetime.fromisoformat(v) if v else None
+    except Exception: return None
+def _seen_put(k, t):
+    m = _seen_load()
+    if k in m: return
+    m[k] = t.isoformat()
+    if len(m) > 3000:  # 오래된 항목 정리
+        for kk in sorted(m, key=m.get)[: len(m) - 2000]: m.pop(kk, None)
+    try: SEEN_P.write_text(json.dumps(m, ensure_ascii=False), encoding="utf-8")
+    except Exception as ex: log("news_seen save fail", ex)
+
 def news_block(max_items=None):
     global CODES, CODE_RX, NAME_RX
     CODES, CODE_RX, NAME_RX = build_alias()
@@ -1071,7 +1122,12 @@ def news_block(max_items=None):
             tags = screen(title + " " + summ)
             if CFG.get("news_only_with_ticker", True) and not tags: continue
             ts = e.get("published_parsed") or e.get("updated_parsed")
-            t = dt.datetime(*ts[:6], tzinfo=dt.timezone.utc).astimezone(WIB) if ts else now_wib()
+            est = not ts
+            # 발행시각이 없는 항목(홈 스크랩·날짜 없는 피드)은 "처음 본 시각"을 기억해 매 빌드마다 최신으로 올라오지 않게 한다
+            if ts: t = dt.datetime(*ts[:6], tzinfo=dt.timezone.utc).astimezone(WIB)
+            else:
+                k = e.get("link") or title
+                t = _seen_get(k) or now_wib(); _seen_put(k, t)
             raw = str(e.get("published") or e.get("updated") or "")
             # 시간대 표기가 없는 피드(예: "Wed, 02 Sep 2026 11:34:02")는 feedparser 가 UTC 로 간주해 WIB 보다 7시간 미래가 된다
             # → 표기가 없거나 결과가 미래이면 현지(WIB) 시각으로 되돌린다
@@ -1080,8 +1136,10 @@ def news_block(max_items=None):
                 t2 = t - dt.timedelta(hours=7)
                 if t2 <= now_wib() + dt.timedelta(minutes=10): t = t2
             if t > now_wib(): t = now_wib()
-            items.append({"ts": t.isoformat(), "date": t.date().isoformat(), "time": t.strftime("%H:%M") if t.date() == now_wib().date() else t.strftime("%m/%d"),
-                          "src": src["name"], "t": title, "tags": tags, "url": e.get("link", "")})
+            it = {"ts": t.isoformat(), "date": t.date().isoformat(), "time": t.strftime("%H:%M") if t.date() == now_wib().date() else t.strftime("%m/%d"),
+                  "src": src["name"], "t": title, "tags": tags, "url": e.get("link", "")}
+            if est: it["t_est"] = True
+            items.append(it)
     items.sort(key=lambda x: x["ts"], reverse=True)
     seen, out = set(), []
     for it in items:
@@ -1184,6 +1242,7 @@ def build():
             "indices": indices, "index": index,
             "value": mk["value"] if mk else [], "gainers": mk["gainers"] if mk else [], "losers": mk["losers"] if mk else [],
             "turnover": mk["turnover"] if mk else [], "foreign_top": mk["foreign_top"] if mk else [], "foreign_bottom": mk["foreign_bottom"] if mk else [],
+            "stocks": mk.get("stocks", []) if mk else [],
             "news": news_block(), "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
             "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else 0, "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")

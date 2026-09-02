@@ -39,7 +39,25 @@ a{color:inherit;text-decoration:none}
 .nav button.on{background:var(--ink);color:var(--card)}
 .nav .strip{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink2);max-width:60%;overflow:hidden;white-space:nowrap}
 .nav .strip .lab{color:var(--brown);font-weight:700;flex:0 0 auto}
-.nav .strip .txt{overflow:hidden;text-overflow:ellipsis}
+.nav .strip .txt{overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+.nav .strip{position:relative;overflow:visible;cursor:pointer}.nav .strip .cnt{flex:0 0 auto;color:var(--ink3);font-size:12px}.nav .strip .arr{flex:0 0 auto;color:var(--ink3);font-size:11px}
+.hotbox{display:none;position:absolute;top:28px;right:0;width:560px;max-width:90vw;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 34px rgba(0,0,0,.16);z-index:58;padding:6px 0 4px;white-space:normal;cursor:default}
+.hotbox.on{display:block}
+.hotbox .hh{display:flex;align-items:baseline;gap:10px;padding:8px 16px 8px;border-bottom:1px solid var(--line)}.hotbox .hh b{font-size:13px;color:var(--ink)}.hotbox .hh small{color:var(--ink3);font-size:11.5px}.hotbox .hh a{margin-left:auto;font-size:12px;color:var(--brand);text-decoration:none;font-weight:700}
+.hotbox .it{display:flex;gap:10px;padding:7px 16px;font-size:13px;line-height:1.35;align-items:baseline}.hotbox .it:hover{background:var(--chip)}
+.hotbox .it .tm{flex:0 0 42px;color:var(--ink3);font-size:12px;font-variant-numeric:tabular-nums}.hotbox .it .tm.est{color:var(--ink3);opacity:.7}
+.hotbox .it a{color:var(--ink);text-decoration:none;flex:1;min-width:0}.hotbox .it a:hover{text-decoration:underline}
+.hotbox .it .sr{flex:0 0 auto;color:var(--ink3);font-size:11.5px;max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hotbox .it .tg{display:inline-block;font-size:10.5px;font-weight:700;color:var(--brand);margin-right:5px}
+.srch{position:relative;margin-left:14px;flex:0 0 auto}
+.srch input{width:170px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;padding:6px 10px 6px 30px;border-radius:8px;outline:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239a9ea3' stroke-width='2.4'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:9px 50%}
+.srch input:focus{border-color:var(--brand);width:230px}
+.qbox{position:absolute;top:36px;right:0;width:330px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.14);z-index:60;overflow:hidden}
+.qbox div{display:flex;align-items:center;gap:10px;padding:8px 12px;cursor:pointer;font-size:13px}.qbox div:hover,.qbox div.sel{background:var(--chip)}
+.qbox b{font-weight:800;min-width:48px}.qbox span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink2)}.qbox small{font-weight:700}
+.qbox .none{color:var(--ink3);cursor:default}
+.dr .stat{grid-template-columns:repeat(3,1fr)}.dr .stat b{font-size:14px;display:block;white-space:nowrap}.dr .stat b .src{font-size:11px}
+.dr .ann .row{padding:8px 0}
 .lang{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-left:14px}
 .lang button{border:0;background:var(--card);color:var(--ink2);font:inherit;font-weight:700;font-size:12px;padding:5px 10px;cursor:pointer}
 .lang button.on{background:var(--brand);color:#fff}
@@ -75,6 +93,11 @@ a{color:inherit;text-decoration:none}
 .kv div{min-width:0}
 .kv div span{display:block;font-size:11.5px;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .kv div b{font-weight:700;font-size:13.5px;white-space:nowrap;display:block}
+.kv div.wide{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding-bottom:2px;border-bottom:1px solid var(--line)}
+.kv div.wide>span{display:inline;flex:0 0 auto}.kv div.wide>b{display:inline-flex;flex:1 1 auto;min-width:0}
+.kv div span.adv{display:flex;gap:14px;align-items:baseline;white-space:nowrap;flex:1 1 auto;overflow:visible}.kv .adv>span{display:inline;font-size:13.5px;color:inherit;overflow:visible}.kv .adv>span.up{color:var(--up)}.kv .adv>span.dn{color:var(--dn)}.kv .adv>span.flat{color:var(--ink2)}.adv .pct{margin-left:auto;font-size:11.5px;color:var(--ink3);font-weight:500}
+.adbar{display:flex;height:6px;border-radius:3px;overflow:hidden;background:var(--line);flex:1 0 100%;margin:2px 0 4px}.adbar i{display:block;height:100%}.adbar .a{background:var(--up)}.adbar .d{background:var(--dn)}.adbar .u{background:#c9ced6}
+.n-item .t.est{color:var(--ink3);font-weight:400}
 
 /* pills */
 .pills{display:flex;gap:6px;flex-wrap:wrap}
@@ -188,7 +211,9 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
 
 <div class="nav" id="tabs">
   <button data-v="market" class="on" data-t="market">증시</button><button data-v="news" data-t="news">뉴스</button><button data-v="cal" data-t="cal">캘린더</button>
-  <div class="strip"><span class="lab" data-t="hot">주요뉴스</span><span class="txt" id="hot">—</span><span id="hotcnt"></span></div>
+  <div class="strip" id="strip" onmouseenter="hotOpen(true)" onmouseleave="hotOpen(false)" onclick="hotOpen(!$('hotbox').classList.contains('on'))"><span class="lab" data-t="hot">주요뉴스</span><span class="txt" id="hot">—</span><span id="hotcnt" class="cnt"></span><span class="arr">▾</span>
+    <div id="hotbox" class="hotbox" onclick="event.stopPropagation()"><div class="hh"><b data-t="hotLatest">최신 헤드라인</b><small data-t="hotNote">종목 추천·전망성 기사 제외</small><a href="#" onclick="showView('news');hotOpen(false);return false" data-t="viewAll">전체 보기 ›</a></div><div id="hotlist"></div></div></div>
+  <div class="srch"><input id="q" type="text" autocomplete="off" spellcheck="false" placeholder="종목 검색 · BBCA" oninput="qSuggest(this.value)" onkeydown="qKey(event)" onfocus="qSuggest(this.value)"><div id="qbox" class="qbox" hidden></div></div>
   <div class="lang"><button data-lang="ko" class="on" onclick="setLang('ko')">KO</button><button data-lang="id" onclick="setLang('id')">ID</button></div>
 </div>
 
@@ -278,14 +303,14 @@ const I18N={
  ko:{market:'증시',news:'뉴스',cal:'캘린더',hot:'주요뉴스',connecting:'연결 중',updated:'갱신',next:'다음',sec:'초',fx:'환산',demo:'스냅샷 · 9/1 15:45 (수집기 미연결)',live:'실시간',delay:'분 지연',liveIdx:'실시간 · IDX 직접 수집',
    rank:'종목 랭킹',value:'거래대금',gainers:'상승',losers:'하락',turnover:'대금급증',status:'시장 현황',foreign:'외국인 수급',prevday:'전일 기준',ftop:'순매수 상위',fbot:'순매도 상위',macro:'시장 지표',macroSub:'환율 · 금리 · 원자재',
    newsCard:'종목 뉴스',all:'전체',more:'전체 보기 ›',todayEv:'오늘 일정',calLink:'캘린더 ›',ann:'실시간 공시',annSub:'IDX 공시 · 최근 30시간',calTitle:'캘린더',today:'오늘',macroCorp:'매크로+기업',macroOnly:'매크로',corpOnly:'기업',
-   labValue:'거래대금 순',labG:'상승률 순',labL:'하락률 순',labT:'20일 평균 대비 대금 배수 순',advdec:'상승 / 하락 / 보합',turnoverK:'거래대금',hilo:'장중 고 / 저',vol:'거래량',ytd:'YTD',m1:'1개월',range:'장중 폭',fPrev:'외국인 (전일)',
+   labValue:'거래대금 순',labG:'상승률 순',labL:'하락률 순',labT:'20일 평균 대비 대금 배수 순',advdec:'상승 / 하락 / 보합',advPct:'상승 비중',hotLatest:'최신 헤드라인',hotNote:'종목 추천·전망성 기사 제외 · 최신순',viewAll:'전체 보기 ›',noStock:'해당 종목 없음',noStockData:'시세 데이터 없음 (거래 없음 또는 미수집)',prevClose:'전일종가',annT:'공시',asofClose:'IDX 확정',qPh:'종목 검색 · BBCA',estTime:'수집 시각 기준 (발행시각 미제공)',turnoverK:'거래대금',hilo:'장중 고 / 저',vol:'거래량',ytd:'YTD',m1:'1개월',range:'장중 폭',fPrev:'외국인 (전일)',
    netbuy:'순매수',buy:'매수',sell:'매도',price:'현재가',chg:'등락',ratio20:'20일 평균 대비',fnet:'외국인 순매수',headlines:'화이트리스트 매체 헤드라인',sched:'일정',noNews:'최근 헤드라인 없음',noSched:'등록된 기업 일정 없음',noEv:'오늘 일정 없음',upcoming:'다음 예정',noEv2:'2주 내 일정 없음',
    exp:'예상',prev:'이전',act:'실제',imp:'중요도',pre:'발표 전 · 확인 필요',chk:'확인 필요',exch:'인도네시아 거래소',foot:'출처: IDX · Bank Indonesia · Kontan · Yahoo Finance · 화이트리스트 매체 RSS',footChk:'미확인 값은',footChk2:'표기',
    now:'현재',close:'종가',prevClose:'전일종가',lastOk:'마지막 수신',retry:'재시도 중',noProxy:'실시간 프록시 연결 실패 (Worker 미설정)',ixIHSG:'자카르타 종합',ixLQ:'대형 45종목',ixFX:'달러/루피아',fnetAll:'외국인 순매수 · 전체시장',prevLabel:'전일',src:'출처',idxNote:'IDX 실시간 공시',days:'일월화수목금토',day:'일',month:'월',dow:'요일',noAnn:'공시 없음',noData:'데이터 없음',noNewsTag:'해당 종목 뉴스 없음'},
  id:{market:'Pasar',news:'Berita',cal:'Kalender',hot:'Berita utama',connecting:'Menghubungkan',updated:'Diperbarui',next:'Berikut',sec:'dtk',fx:'Kurs',demo:'Snapshot · 1/9 15:45 (kolektor belum aktif)',live:'Live',delay:' mnt tunda',liveIdx:'Live · IDX langsung',
    rank:'Peringkat saham',value:'Nilai transaksi',gainers:'Top gainer',losers:'Top loser',turnover:'Lonjakan nilai',status:'Kondisi pasar',foreign:'Investor asing',prevday:'Hari sebelumnya',ftop:'Net buy terbesar',fbot:'Net sell terbesar',macro:'Indikator pasar',macroSub:'Kurs · Yield · Komoditas',
    newsCard:'Berita emiten',all:'Semua',more:'Lihat semua ›',todayEv:'Agenda hari ini',calLink:'Kalender ›',ann:'Keterbukaan informasi',annSub:'Pengumuman IDX · 30 jam terakhir',calTitle:'Kalender',today:'Hari ini',macroCorp:'Makro+Emiten',macroOnly:'Makro',corpOnly:'Emiten',
-   labValue:'Urut nilai transaksi',labG:'Urut kenaikan',labL:'Urut penurunan',labT:'Nilai vs rata-rata 20 hari',advdec:'Naik / Turun / Tetap',turnoverK:'Nilai transaksi',hilo:'Tertinggi / Terendah',vol:'Volume',ytd:'YTD',m1:'1 bulan',range:'Rentang harian',fPrev:'Asing (kemarin)',
+   labValue:'Urut nilai transaksi',labG:'Urut kenaikan',labL:'Urut penurunan',labT:'Nilai vs rata-rata 20 hari',advdec:'Naik / Turun / Tetap',advPct:'Porsi naik',hotLatest:'Headline terbaru',hotNote:'Tanpa artikel rekomendasi/prediksi · terbaru dulu',viewAll:'Lihat semua ›',noStock:'Saham tidak ditemukan',noStockData:'Data harga tidak tersedia',prevClose:'Tutup kemarin',annT:'Keterbukaan',asofClose:'IDX final',qPh:'Cari saham · BBCA',estTime:'Waktu pengambilan (jam terbit tidak tersedia)',turnoverK:'Nilai transaksi',hilo:'Tertinggi / Terendah',vol:'Volume',ytd:'YTD',m1:'1 bulan',range:'Rentang harian',fPrev:'Asing (kemarin)',
    netbuy:'Net buy',buy:'Beli',sell:'Jual',price:'Harga',chg:'Perubahan',ratio20:'vs rata-rata 20 hari',fnet:'Net asing',headlines:'Headline media whitelist',sched:'Agenda',noNews:'Belum ada headline',noSched:'Tidak ada agenda emiten',noEv:'Tidak ada agenda hari ini',upcoming:'Jadwal berikutnya',noEv2:'Tidak ada agenda 2 minggu ke depan',
    exp:'Perkiraan',prev:'Sebelumnya',act:'Aktual',imp:'Tingkat',pre:'Belum rilis · perlu konfirmasi',chk:'perlu konfirmasi',exch:'Bursa Efek Indonesia',foot:'Sumber: IDX · Bank Indonesia · Kontan · Yahoo Finance · RSS media whitelist',footChk:'Nilai belum terverifikasi ditandai',footChk2:'',
    now:'Sekarang',close:'Penutupan',prevClose:'Penutupan sebelumnya',lastOk:'terakhir diterima',retry:'mencoba lagi',noProxy:'proxy live gagal (Worker belum diset)',ixIHSG:'Indeks Harga Saham Gabungan',ixLQ:'45 saham likuid',ixFX:'Dolar/Rupiah',fnetAll:'Net beli asing · seluruh pasar',prevLabel:'Sebelumnya',src:'Sumber',idxNote:'Pengumuman IDX real-time',days:'MinSenSelRabKamJumSab',day:'',month:'',dow:'',noAnn:'Belum ada pengumuman',noData:'Tidak ada data',noNewsTag:'Tidak ada berita untuk saham ini'}
@@ -293,7 +318,7 @@ const I18N={
 let LANG='ko';try{LANG=localStorage.getItem('idxlive_lang')||'ko';}catch(e){}
 const T=k=>(I18N[LANG]&&I18N[LANG][k])??I18N.ko[k]??k;
 function setLang(l){LANG=l;try{localStorage.setItem('idxlive_lang',l)}catch(e){}document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('on',b.dataset.lang===l));applyStatic();if(DATA)render(DATA);}
-function applyStatic(){document.querySelectorAll('[data-t]').forEach(el=>{el.textContent=T(el.dataset.t);});document.documentElement.lang=LANG;}
+function applyStatic(){document.querySelectorAll('[data-t]').forEach(el=>{el.textContent=T(el.dataset.t);});document.documentElement.lang=LANG;const q=$('q');if(q)q.placeholder=T('qPh');}
 function dayLabel(iso){const x=new Date(iso+'T00:00:00');if(LANG==='id'){const dn=['Min','Sen','Sel','Rab','Kam','Jum','Sab'][x.getDay()],mn=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'][x.getMonth()];return `${dn}, ${x.getDate()} ${mn}`;}return `${x.getMonth()+1}월 ${x.getDate()}일 ${'일월화수목금토'[x.getDay()]}요일`;}
 const FLAG={ID:'🇮🇩',US:'🇺🇸',GL:'🌐',KR:'🇰🇷',CN:'🇨🇳',JP:'🇯🇵',EU:'🇪🇺',GB:'🇬🇧'};
 const cbadge=c=>c?`<span class="cb">${FLAG[c]||'🌐'} ${c}</span>`:'';
@@ -375,7 +400,7 @@ const H={};const changed=(k,v)=>{const j=JSON.stringify(v);if(H[k]===j)return fa
 function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo';
   if(!liveOk){$('dot').className='dot'+(demo?' demo':'');$('mode').textContent=demo?T('demo'):`${T('live')} · 15${T('delay')}`;}
   $('updated').textContent=d.updated||'—';$('fxbasis').textContent=d.fx_basis||'—';
-  const hot=(d.news||[])[0];$('hot').textContent=hot?`${hot.src} · ${nTitle(hot)}`:'—';$('hotcnt').textContent=`1 / ${(d.news||[]).length}`;
+  hotRender();
   // 지수
   $('ixsess').textContent=d.index?.session||'';
   const i=d.index||{};const fn=i.foreign_net_idr;
@@ -383,7 +408,9 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   const ixs=mergeLive((d.indices||[]).slice(0,3));
   if(changed('idx',[ixs,LANG,i.foreign_net_idr,i.foreign_date]))$('idx').innerHTML=ixs.map(x=>ixCard(x)).join('')
    +`<div class="ix"><div class="lbl"><span>${T('fnetAll')}</span><span class="pill">${i.foreign_date||T('prevLabel')}</span></div><div class="px num ${fn==null?'':fn>=0?'up':'dn'}">${fn==null?`<span class="chk" style="font-size:16px">${T('chk')}</span>`:(fn>=0?'+':'−')+idrShort(fn)}</div><div class="chg num">${fn==null?'':'≈'+krwShort(fn)}</div><div class="fmeta">${T('buy')} ${i.foreign_buy==null?'—':'Rp'+fmt(i.foreign_buy/1e12,2)+'T'} · ${T('sell')} ${i.foreign_sell==null?'—':'Rp'+fmt(i.foreign_sell/1e12,2)+'T'}<br>${(d.foreign_top||[]).slice(0,3).map(o=>`<span class="tag" onclick="openDr('${o.t}')">${o.t}</span>`).join(' ')} ${T('netbuy')} &nbsp; ${(d.foreign_bottom||[]).slice(0,3).map(o=>`<span class="tag" style="background:var(--dnbg);color:var(--dn)" onclick="openDr('${o.t}')">${o.t}</span>`).join(' ')} ${T('sell')}</div></div>`;
-  $('kv').innerHTML=[[T('advdec'),`<span class="up">${i.adv??'—'}</span> / <span class="dn">${i.dec??'—'}</span> / ${i.unch??'—'}`],[T('turnoverK'),idr(i.value_idr)],[T('hilo'),`${fmt(i.high)} / ${fmt(i.low)}`],[T('vol'),i.volume?`${fmt(i.volume/1e9,2)}B`:'—'],[T('ytd'),sg(i.ytd)],[T('m1'),sg(i.m1)],[T('range'),i.high&&i.low?`${fmt(i.high-i.low,2)}p (${fmt((i.high-i.low)/(i.prev||d.indices?.[0]?.prev||1)*100,2)}%)`:'—'],[T('fPrev'),fn==null?`<span class="chk">${T('chk')}</span>`:`<span class="${fn>=0?'up':'dn'}">${fn>=0?'+':'−'}${idrShort(fn)}</span>`]].map(([k,v])=>`<div><span>${k}</span><b class="num">${v}</b></div>`).join('');
+  const adT=(i.adv||0)+(i.dec||0)+(i.unch||0);
+  const adBar=adT?`<div class="adbar"><i class="a" style="width:${(i.adv||0)/adT*100}%"></i><i class="d" style="width:${(i.dec||0)/adT*100}%"></i><i class="u" style="width:${(i.unch||0)/adT*100}%"></i></div>`:'';
+  $('kv').innerHTML=[[T('advdec'),`<span class="adv"><span class="up">▲ ${i.adv??'—'}</span><span class="dn">▼ ${i.dec??'—'}</span><span class="flat">— ${i.unch??'—'}</span>${adT?`<span class="pct">${T('advPct')} ${(i.adv/adT*100).toFixed(0)}%</span>`:''}</span>`,'wide',adBar],[T('turnoverK'),idr(i.value_idr)],[T('hilo'),`${fmt(i.high)} / ${fmt(i.low)}`],[T('vol'),i.volume?`${fmt(i.volume/1e9,2)}B`:'—'],[T('ytd'),sg(i.ytd)],[T('m1'),sg(i.m1)],[T('range'),i.high&&i.low?`${fmt(i.high-i.low,2)}p (${fmt((i.high-i.low)/(i.prev||d.indices?.[0]?.prev||1)*100,2)}%)`:'—'],[T('fPrev'),fn==null?`<span class="chk">${T('chk')}</span>`:`<span class="${fn>=0?'up':'dn'}">${fn>=0?'+':'−'}${idrShort(fn)}</span>`]].map(([k,v,c,x])=>`<div class="${c||''}"><span>${k}</span><b class="num">${v}</b>${x||''}</div>`).join('');
   // 외국인
   $('fdate').textContent=i.foreign_date?((i.foreign_date)+' · '+T('prevday')):'';$('fnote').textContent='';
   $('fx').innerHTML=`<div><span>${T('netbuy')}</span><b class="num ${fn==null?'':fn>=0?'up':'dn'}">${fn==null?'<span class="chk">확인 필요</span>':(fn>=0?'+':'−')+idr(Math.abs(fn))}</b></div><div><span>${T('buy')}</span><b class="num">${i.foreign_buy==null?'—':idr(i.foreign_buy).replace(/<span.*<\/span>/,'')}</b></div><div><span>${T('sell')}</span><b class="num">${i.foreign_sell==null?'—':idr(i.foreign_sell).replace(/<span.*<\/span>/,'')}</b></div>`;
@@ -407,7 +434,16 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
 /* ---------- 뉴스 ---------- */
 function L(o,f){return (o&&(o[f+'_'+LANG]||o[f]))||'';}
 function nTitle(n){return L(n,'t');}
-function newsItem(n){return`<div class="n-item"><div class="t">${n.time}</div><div class="b"><a href="${n.url||'#'}" target="_blank" rel="noopener">${nTitle(n)}</a><div class="m">${(n.tags||[]).map(t=>`<span class="tag ${t===newsTag?'on':''}" onclick="setTag('${t}')">${t}</span>`).join('')}<span class="src">${n.src}${n.date?' · '+n.date.slice(5).replace('-','/'):''}</span></div></div></div>`;}
+/* ---------- 주요뉴스 스트립 (최신순, 종목 추천·전망 기사 제외, 7초 회전, 마우스 올리면 목록) ---------- */
+const RECO_RX=/rekomendasi|saham pilihan|stock ?picks?|top picks?|watchlist|추천|관심주|매수 의견|투자의견|target harga|목표가|프로젝션|proyeksi|prediksi|berpeluang|potensi (naik|menguat|cuan)|cermati|simak|layak (dikoleksi|dibeli|dilirik)|bisa (dikoleksi|dilirik)|analis (sebut|beberkan|rekomendasi)|전망|outlook/i;
+function hotList(){return (DATA?.news||[]).filter(n=>!RECO_RX.test(n.t||'')&&!RECO_RX.test(n.t_ko||''));}
+let hotI=0,hotTimer=null;
+function hotRender(){const l=hotList();if(!l.length){$('hot').textContent='—';$('hotcnt').textContent='';return;}
+  hotI=hotI%l.length;const h=l[hotI];$('hot').textContent=`${h.src} · ${nTitle(h)}`;$('hotcnt').textContent=`${hotI+1} / ${l.length}`;
+  $('hotlist').innerHTML=l.slice(0,15).map(n=>`<div class="it"><span class="tm${n.t_est?' est':''}">${n.t_est?'~':''}${n.time}</span><a href="${n.url||'#'}" target="_blank" rel="noopener">${(n.tags||[]).slice(0,2).map(t=>`<span class="tg">${t}</span>`).join('')}${nTitle(n)}</a><span class="sr">${n.src}</span></div>`).join('');
+  clearInterval(hotTimer);hotTimer=setInterval(()=>{if($('hotbox').classList.contains('on'))return;hotI=(hotI+1)%l.length;const x=l[hotI];$('hot').textContent=`${x.src} · ${nTitle(x)}`;$('hotcnt').textContent=`${hotI+1} / ${l.length}`;},7000);}
+function hotOpen(on){$('hotbox').classList.toggle('on',!!on);}
+function newsItem(n){return`<div class="n-item"><div class="t${n.t_est?' est':''}" ${n.t_est?`title="${T('estTime')}"`:''}>${n.t_est?'~':''}${n.time}</div><div class="b"><a href="${n.url||'#'}" target="_blank" rel="noopener">${nTitle(n)}</a><div class="m">${(n.tags||[]).map(t=>`<span class="tag ${t===newsTag?'on':''}" onclick="setTag('${t}')">${t}</span>`).join('')}<span class="src">${n.src}${n.date?' · '+n.date.slice(5).replace('-','/'):''}</span></div></div></div>`;}
 function renderNews(){const all=DATA.news||[];const tags={};all.forEach(n=>(n.tags||[]).forEach(t=>tags[t]=(tags[t]||0)+1));
   $('newsfilt').innerHTML=Object.entries(tags).sort((a,b)=>b[1]-a[1]).map(([t,c])=>`<span class="pill sm ${t===newsTag?'on':''}" onclick="setTag('${t}')">${t} ${c}</span>`).join('');
   document.querySelector('.news-tools .pill[data-f=""]').classList.toggle('on',!newsTag);
@@ -416,11 +452,23 @@ function setTag(t){newsTag=newsTag===t?null:t;showView('news');renderNews();}
 document.querySelector('.news-tools .pill[data-f=""]').onclick=()=>{newsTag=null;renderNews();};
 
 /* ---------- 종목 드로어 ---------- */
-function findStock(t){for(const k of['value','gainers','losers','turnover','foreign_top','foreign_bottom']){const o=(DATA[k]||[]).find(x=>x.t===t);if(o)return o;}return{t};}
-function openDr(t){const o=findStock(t),news=(DATA.news||[]).filter(n=>(n.tags||[]).includes(t));
+function findStock(t){const a=(DATA.stocks||[]).find(x=>x.t===t);if(a)return a;for(const k of['value','gainers','losers','turnover','foreign_top','foreign_bottom']){const o=(DATA[k]||[]).find(x=>x.t===t);if(o)return o;}return{t};}
+/* ---------- 종목 검색 ---------- */
+let qSel=0,qList=[];
+function qSuggest(v){v=(v||'').trim().toUpperCase();const box=$('qbox');if(!v){box.hidden=true;return;}
+  const all=DATA.stocks||[];const pre=all.filter(x=>x.t.startsWith(v)),sub=all.filter(x=>!x.t.startsWith(v)&&(x.t.includes(v)||(x.n||'').toUpperCase().includes(v)));
+  qList=[...pre,...sub].slice(0,8);qSel=0;
+  box.innerHTML=qList.length?qList.map((x,i)=>`<div class="${i===qSel?'sel':''}" onmousedown="qPick(${i})"><b>${x.t}</b><span>${x.n||''}</span><small class="num ${x.pct>0?'up':x.pct<0?'dn':''}">${x.px!=null?'Rp'+fmt(x.px,0):'—'} ${sg(x.pct)}</small></div>`).join(''):`<div class="none">${T('noStock')}</div>`;box.hidden=false;}
+function qKey(e){if(e.key==='ArrowDown'){qSel=Math.min(qSel+1,qList.length-1);qMark();e.preventDefault();}else if(e.key==='ArrowUp'){qSel=Math.max(qSel-1,0);qMark();e.preventDefault();}else if(e.key==='Enter'){if(qList.length)qPick(qSel);else{const v=e.target.value.trim().toUpperCase();if(v)openDr(v);}}else if(e.key==='Escape'){$('qbox').hidden=true;e.target.blur();}}
+function qMark(){[...$('qbox').children].forEach((d,i)=>d.classList.toggle('sel',i===qSel));}
+function qPick(i){const x=qList[i];if(!x)return;$('q').value='';$('qbox').hidden=true;$('q').blur();openDr(x.t);}
+document.addEventListener('click',e=>{if(!e.target.closest('.srch'))$('qbox').hidden=true;});
+function openDr(t){const o=findStock(t),news=(DATA.news||[]).filter(n=>(n.tags||[]).includes(t)),ann=(DATA.announcements||[]).filter(a=>a.t===t);
   $('dr-body').innerHTML=`<div class="hd">${logo(t,o.n)}<div><h3>${o.n||t}</h3><small>${t} · ${T('exch')}</small></div></div>
-  <div class="stat"><div><span>${T('price')}</span><b class="num">${o.px==null?'—':'Rp'+fmt(o.px,0)}</b></div><div><span>${T('chg')}</span><b class="num">${sg(o.pct)}</b></div><div><span>${T('turnoverK')}</span><b class="num">${o.val==null?'—':idr(o.val).replace(/<span.*<\/span>/,'')}</b></div>${o.ratio?`<div><span>${T('ratio20')}</span><b>${fmt(o.ratio,1)}×</b></div>`:''}${o.fnet!=null?`<div><span>${T('fnet')}</span><b class="num ${o.fnet>=0?'up':'dn'}">${o.fnet>=0?'+':'−'}${idrShort(o.fnet)} <small class="src">≈${krwShort(o.fnet)}</small></b></div>`:''}</div>
+  <div class="stat"><div><span>${T('price')}</span><b class="num">${o.px==null?'—':'Rp'+fmt(o.px,0)}</b></div><div><span>${T('chg')}</span><b class="num">${sg(o.pct)}</b></div><div><span>${T('turnoverK')}</span><b class="num">${o.val==null?'—':idr(o.val).replace(/<span.*<\/span>/,'')}</b></div>${o.ratio?`<div><span>${T('ratio20')}</span><b>${fmt(o.ratio,1)}×</b></div>`:''}${o.fnet!=null?`<div><span>${T('fnet')} (${DATA.index?.foreign_date||T('prevLabel')})</span><b class="num ${o.fnet>=0?'up':'dn'}">${o.fnet>=0?'+':'−'}${idrShort(o.fnet)} <small class="src">≈${krwShort(o.fnet)}</small></b></div>`:''}${o.prev?`<div><span>${T('prevClose')}</span><b class="num">Rp${fmt(o.prev,0)}</b></div>`:''}${o.hi&&o.lo?`<div><span>${T('hilo')}</span><b class="num">${fmt(o.hi,0)} / ${fmt(o.lo,0)}</b></div>`:''}${o.vol?`<div><span>${T('vol')}</span><b class="num">${o.vol>=1e9?fmt(o.vol/1e9,2)+'B':o.vol>=1e6?fmt(o.vol/1e6,1)+'M':fmt(o.vol,0)}</b></div>`:''}</div>
+  ${o.px==null?`<div class="empty">${T('noStockData')}</div>`:`<div class="src" style="margin:-8px 0 10px">${o.live?(DATA.index?.rank_src||'')+' · '+(DATA.index?.rank_asof||''):T('asofClose')+' '+(DATA.index?.foreign_date||'')}</div>`}
   <h4>${T('headlines')} · ${news.length}</h4>${news.map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`}
+  <h4>${T('annT')} · ${ann.length}</h4><div class="ann">${ann.slice(0,15).map(a=>`<div class="row"><span class="tm">${a.date===today()?a.time:a.date.slice(5).replace('-','/')}</span><div class="nm"><span class="ty">${a.type||''}</span><b><a href="${a.url||'#'}" target="_blank" rel="noopener">${L(a,'title')}</a></b></div></div>`).join('')||`<div class="empty">${T('noAnn')}</div>`}</div>
   <h4>${T('sched')}</h4>${(DATA.calendar||[]).filter(e=>e.t===t).map(ev).join('')||`<div class="empty">${T('noSched')}</div>`}`;
   $('ov').classList.add('on');$('dr').classList.add('on');}
 function closeDr(){$('ov').classList.remove('on');$('dr').classList.remove('on');}
@@ -458,9 +506,9 @@ function dataWarn(msg){let b=document.getElementById('fwarn');if(!b){b=document.
 function dataOk(){const b=document.getElementById('fwarn');if(b)b.remove();}
 function loadSidecar(){return new Promise(res=>{if(window.__IDX_DATA)return res(window.__IDX_DATA);const sc=document.createElement('script');sc.src='data.js?t='+Date.now();sc.onload=()=>res(window.__IDX_DATA||null);sc.onerror=()=>res(null);document.head.appendChild(sc);});}
 const REMOTE_DATA_URL='https://raw.githubusercontent.com/jelly927/idx-monitoring/main/data.json';   // 공개 사이트(workers.dev 등)는 GitHub 의 최신 data.json 을 읽는다 (Actions 가 5분마다 갱신). localhost 는 같은 폴더의 data.json
-const DATA_URL=()=>(REMOTE_DATA_URL&&!/^(localhost|127\.0\.0\.1)$/.test(location.hostname))?REMOTE_DATA_URL:'data.json';
+const DATA_URL=()=>'data.json';   // 항상 같은 주소의 data.json 먼저 (localhost·Pages·Worker 프록시 모두 여기서 제공) → 실패 시 GitHub raw
 async function fetchJson(u){const r=await fetch(u+(u.includes('?')?'&':'?')+'t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;return r.json();}
-async function load(){try{let d;try{d=await fetchJson(DATA_URL());}catch(e){if(DATA_URL()==='data.json')throw e;d=await fetchJson('data.json');}(d.indices||[]).forEach(x=>{x.live=/지연|tunda/.test(x.asof||'');x.t=0;});dataOk();render(d);}
+async function load(){try{let d;try{d=await fetchJson(DATA_URL());}catch(e){if(!REMOTE_DATA_URL||/^(localhost|127\.0\.0\.1)$/.test(location.hostname))throw e;d=await fetchJson(REMOTE_DATA_URL);}(d.indices||[]).forEach(x=>{x.live=/지연|tunda/.test(x.asof||'');x.t=0;});dataOk();render(d);}
   catch(e){const sc=await loadSidecar();
     if(sc){(sc.indices||[]).forEach(x=>{x.live=false;x.t=0;});render(sc);dataWarn((LANG==='id'?'Dibuka sebagai file — data terakhir ':'파일로 열어 자동 갱신은 되지 않습니다 — 마지막 수집 ')+(sc.updated||'')+' WIB'+(LANG==='id'?'. Untuk pembaruan otomatis jalankan start.bat lalu buka http://localhost:8080':'. 자동 갱신은 start.bat 실행 후 http://localhost:8080'));return;}
     dataWarn(location.protocol==='file:'?'파일을 직접 열어 실데이터(data.json)를 읽지 못했습니다 — 지금 화면은 스냅샷입니다. start.bat 을 실행한 뒤 http://localhost:8080 으로 접속하세요.':'data.json 을 읽지 못했습니다 — 수집기(run.py)가 실행 중인지 검은 창을 확인하세요. 지금 화면은 스냅샷입니다.');if(!DATA)render(window.DEMO_DATA);}
