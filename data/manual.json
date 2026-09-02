@@ -1,0 +1,91 @@
+{
+ "_comment": "자동 수집을 덮어쓰는 수기값. macrocal: date/time(WIB)/title/imp(1~3)/exp/prev/act. 비우면 화면에 '확인 필요'. country: ID/US/GL. 글로벌 일정은 saveticker→investing.com 자동, 여기는 수기 보정용.",
+ "fx_basis": "FY26 YTD 누적 11.7705 IDR/KRW (8/28 누적)",
+ "idr_per_krw": 11.7705,
+ "bi_rate": 5.75,
+ "bi_note": "6월 2회 +25bp",
+ "sun10y": null,
+ "index": {},
+ "macrocal": [
+  {
+   "date": "2026-09-01",
+   "time": "07:30",
+   "title": "8월 제조업 PMI (S&P Global 인도네시아)",
+   "imp": 3,
+   "exp": "50.5",
+   "prev": "50.2",
+   "act": "49.8",
+   "country": "ID"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "title": "8월 CPI (BPS)",
+   "imp": 3,
+   "exp": "2.86~3.15% y/y",
+   "prev": "2.88%",
+   "act": null,
+   "country": "ID"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "20:45",
+   "title": "8월 S&P글로벌 제조업 PMI (미국)",
+   "imp": 3,
+   "exp": "53.2",
+   "prev": "53.9",
+   "country": "US"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "21:00",
+   "title": "8월 ISM 제조업 PMI",
+   "imp": 3,
+   "exp": "55",
+   "prev": "55.6",
+   "country": "US",
+   "act": "54.6",
+   "act_src": "investing.com"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "21:00",
+   "title": "7월 JOLTS 구인인원",
+   "imp": 3,
+   "exp": "7.4M",
+   "prev": "7.359M",
+   "country": "US",
+   "act": "7.271M",
+   "act_src": "investing.com"
+  },
+  {
+   "date": "2026-09-04",
+   "time": "19:30",
+   "title": "美 8월 비농업 고용",
+   "imp": 3,
+   "exp": "+58K",
+   "country": "US"
+  },
+  {
+   "date": "2026-09-07",
+   "time": "—",
+   "title": "BEI 호가·가격제한 개편 시행 (최저가 Rp1, 구간별 상하한)",
+   "imp": 2,
+   "country": "ID"
+  },
+  {
+   "date": "2026-09-11",
+   "time": "19:30",
+   "title": "美 8월 CPI",
+   "imp": 3,
+   "country": "US"
+  },
+  {
+   "date": "2026-09-18",
+   "time": "—",
+   "title": "FTSE GEIS 리밸런싱 기준 종가 (9/21 효력)",
+   "imp": 2,
+   "country": "ID"
+  }
+ ]
+}
