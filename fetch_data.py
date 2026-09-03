@@ -852,6 +852,7 @@ def bi_indicators():
 _IV = {}                                   # 빌드 1회분 investing.com 시세 캐시
 INVESTING_QUOTES = {
     "SUN10Y": "https://www.investing.com/rates-bonds/indonesia-10-year-bond-yield",
+    "CPO": "https://www.investing.com/commodities/palm-oil",          # Bursa Malaysia FCPO 근월물 (MYR/톤)
 }
 
 def investing_quote(url):
@@ -986,7 +987,10 @@ def macro_block(bi):
     if sun is None and bi and bi.get("sun10y"): sun, sun_src = bi["sun10y"], "BI 보도자료"
     if sun is None: sun, sun_src = kontan_sun10y(), "Kontan pusatdata"
     if sun is None and m.get("sun10y"): sun, sun_src = m["sun10y"], "수기"
-    row("국채 10년물", {"px": sun, "prev": sun_prev}, inv=True, base=yb.get("SUN10Y"), fmt="{:,.3f}%", note=f'연초 {yb.get("SUN10Y")}%', src=sun_src)
+    # 국채 10년물은 상단 지수 카드(4번째)로 이동 → 시장 지표에는 CPO(팜유 선물, Bursa Malaysia FCPO 근월물, MYR/톤)
+    cv = _IV.get("CPO")
+    row("CPO (MYR/t)", {"px": cv["px"], "prev": (round(cv["px"] - cv["chg"], 2) if cv.get("chg") is not None else None)} if cv else None,
+        base=yb.get("CPO"), fmt="{:,.0f}", note="Bursa Malaysia FCPO 근월물", src="investing.com")
     out.append({"k": "BI Rate", "v": f'{m["bi_rate"]:.2f}%' if m.get("bi_rate") else "확인 필요", "d": None, "ytd": None, "note": m.get("bi_note")})
     row("Brent (US$/bbl)", yq("BZ=F"), base=yb.get("Brent"))
     dxy = yq("DX-Y.NYB")
@@ -1552,6 +1556,34 @@ def _auto_publish():
     except Exception as e:
         log("auto_push 오류", str(e)[:120])
 
+SUN_HIST_P = CACHE / "sun10y_hist.json"
+def sun10y_card(iv):
+    """상단 4번째 지수 카드 — 국채 10년물(investing.com 실시간). 스파크는 빌드마다 쌓는 자체 이력(최근 7일, PC 가 저장·업로드)"""
+    if not iv or iv.get("px") is None: return None
+    px = float(iv["px"]); prev = round(px - iv["chg"], 4) if iv.get("chg") is not None else None
+    try: hist = json.loads(SUN_HIST_P.read_text(encoding="utf-8"))
+    except Exception: hist = []
+    ts = now_wib().replace(second=0, microsecond=0).isoformat()
+    # investing.com 이 간헐적으로 엉뚱한 값을 한 번 주는 경우(예: 7.229 → 7.102 → 7.229) — 직전 확정값과 30bp 이상 차이 나면
+    # '미확인'([ts, px, 1]) 으로만 적고 카드에는 직전 확정값을 유지, 다음 빌드에서 같은 값이 다시 오면 확정한다
+    conf = [h for h in hist if len(h) < 3]; last = conf[-1][1] if conf else None
+    if last is not None and abs(px - last) > 0.3:
+        pend = [h for h in hist if len(h) >= 3]
+        if pend and abs(pend[-1][1] - px) <= 0.05: hist = [h[:2] for h in hist]; hist.append([ts, px])
+        else:
+            hist.append([ts, px, 1]); log(f"국채10Y 급변 보류 {last} → {px} (다음 빌드 확인)")
+            px = last; prev = conf[-2][1] if len(conf) > 1 else px
+    elif not hist or hist[-1][1] != px: hist.append([ts, px])
+    lim = (now_wib() - dt.timedelta(days=7)).isoformat()
+    hist = [h for h in hist if h[0] >= lim][-400:]
+    if not os.environ.get("GITHUB_ACTIONS"):
+        try: SUN_HIST_P.write_text(json.dumps(hist), encoding="utf-8")
+        except Exception as e: log("국채 이력 저장 실패", e)
+    spark = [h[1] for h in hist if len(h) < 3]
+    if prev is None: prev = px
+    return {"code": "SUN10Y", "label": "SUN 10Y", "name": "국채 10년물", "px": round(px, 3), "prev": round(prev, 3), "pct": round((px - prev) * 100, 1),   # pct = bp 변화
+            "spark": spark if len(spark) > 1 else [], "inv": True, "asof": ("investing.com " + str(iv.get("asof") or "")).strip(), "unit": "bp"}
+
 # ---------------- KISI 뉴스 (kisi.co.id/blog/edukasi — 공개 API, 본문 안에 base64 사진) ----------------
 KISI_API = "https://api-compro.kisi.co.id/api/v1/kisiNews/list"
 KISI_P = CACHE / "kisi_news.json"; _PIL_TRIED = False
@@ -1630,6 +1662,8 @@ def build():
     # investing.com 은 yfinance 보다 먼저 — yfinance 가 스레드에 asyncio 루프를 남기면 브라우저 기동이 막힌다
     _IV["SUN10Y"] = investing_quote(INVESTING_QUOTES["SUN10Y"])
     log("국채10Y investing.com", (f'{_IV["SUN10Y"]["px"]}%' if _IV.get("SUN10Y") else "실패"))
+    _IV["CPO"] = investing_quote(INVESTING_QUOTES["CPO"])
+    log("CPO investing.com", (f'{_IV["CPO"]["px"]:,.0f} MYR/t' if _IV.get("CPO") else "실패"))
     h = yq("^JKSE"); usd = yq("USDIDR=X"); krw = yq("KRW=X")
     in_session = 9 <= now_wib().hour < 17 and now_wib().weekday() < 5
     indices = []
@@ -1647,6 +1681,8 @@ def build():
     add_index("COMPOSITE", "IHSG", "자카르타 종합", jl, {"px": ix["px"], "prev": ix["prev"], "spark": ix["spark"], "asof": f'IDX {ix["date"][5:].replace("-", "/")} 종가'} if ix else None)
     add_index("LQ45", "LQ45", "대형 45종목", ll, {"px": ix["lq45"]["px"], "prev": ix["lq45"]["prev"], "spark": ix["lq45"]["spark"], "asof": "IDX 종가"} if ix and ix["lq45"] else None)
     add_index("USDIDR", "USD/IDR", "달러/루피아", ul, {"px": usd["px"], "prev": usd["prev"], "asof": "Yahoo", "spark": usd.get("spark") or []} if usd else None, inv=True, dec=0)
+    sc = sun10y_card(_IV.get("SUN10Y"))
+    if sc: indices.append(sc)                         # 4번째 카드: 국채 10년물 (외국인 순매수 카드는 시장 현황 아래 '외국인 수급'으로 통합)
     jci_card = next((x for x in indices if x["code"] == "COMPOSITE"), None)
     px = jci_card["px"] if jci_card else None
     index = {"session": (jci_card["asof"] if jci_card else "—"),
