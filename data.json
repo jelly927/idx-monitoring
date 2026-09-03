@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 19:17",
+ "updated": "2026-09-03 19:25",
  "delay_min": 0,
- "fx_basis": "13.01 IDR/KRW · USD/IDR 17,655 · USD/KRW 1,357 · 17:13 Yahoo",
- "idr_per_krw": 13.0132,
+ "fx_basis": "13.02 IDR/KRW · USD/IDR 17,655 · USD/KRW 1,356 · 17:13 Yahoo",
+ "idr_per_krw": 13.0195,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -14,9 +14,9 @@
    "pct": 1.09,
    "spark": [
     6667.891,
-    6633.364,
-    6634.863,
-    6624.438,
+    6633.503,
+    6630.982,
+    6628.04,
     6629.4,
     6630.128,
     6627.969,
@@ -82,15 +82,15 @@
     6666.638,
     6667.021,
     6664.316,
-    6666.924,
+    6668.232,
     6663.931,
-    6661.789,
-    6665.424,
-    6665.882,
-    6663.949,
-    6664.264,
-    6667.334,
-    6668.11,
+    6663.685,
+    6666.338,
+    6664.903,
+    6666.797,
+    6665.748,
+    6666.986,
+    6664.767,
     6664.391,
     6665.043,
     6662.137,
@@ -209,15 +209,15 @@
     660.422,
     661.594,
     660.662,
-    660.361,
-    660.797,
-    661.053,
-    660.835,
-    660.614,
-    660.994,
-    661.281,
-    660.394,
-    660.342,
+    660.557,
+    660.573,
+    660.982,
+    660.878,
+    660.351,
+    661.437,
+    660.34,
+    661.317,
+    660.644,
     661.09,
     660.415,
     660.19,
@@ -305,6 +305,18 @@
    ],
    "inv": true,
    "asof": "Yahoo"
+  },
+  {
+   "code": "SUN10Y",
+   "label": "SUN 10Y",
+   "name": "국채 10년물",
+   "px": 7.102,
+   "prev": 7.229,
+   "pct": -12.7,
+   "spark": [],
+   "inv": true,
+   "asof": "investing.com 05:39:59",
+   "unit": "bp"
   }
  ],
  "index": {
@@ -316,7 +328,7 @@
   "m1": 6.95,
   "value_idr": 18607401563700,
   "volume": 39305835265,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-03 19:13",
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-03 19:20",
   "rank_asof": null,
   "rank_date": "2026-09-03",
   "adv": 416,
@@ -15573,19 +15585,6 @@
  ],
  "news": [
   {
-   "ts": "2026-09-03T18:48:00+07:00",
-   "date": "2026-09-03",
-   "time": "18:48",
-   "src": "Media Indonesia",
-   "t": "Bali United vs PSS Sleman, Laga Pembuka Super League 2026/2027 Sarat Dukungan Suporter",
-   "tags": [
-    "BALI"
-   ],
-   "url": "https://mediaindonesia.com/sepak-bola/929416/bali-united-vs-pss-sleman-laga-pembuka-super-league-20262027-sarat-dukungan-suporter",
-   "t_ko": "발리 유나이티드 vs PSS 슬레만, 서포터 가득한 2026/2027 슈퍼리그 개막전",
-   "t_id": "Bali United vs PSS Sleman, Laga Pembuka Super League 2026/2027 Sarat Dukungan Suporter"
-  },
-  {
    "ts": "2026-09-03T18:44:00+07:00",
    "date": "2026-09-03",
    "time": "18:44",
@@ -16248,6 +16247,17 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-03T19:20:00+07:00",
+   "date": "2026-09-03",
+   "time": "19:20",
+   "src": "Media Indonesia",
+   "t": "Polisi Selidiki Dugaan Loker Bodong di Pasar Minggu, Korban Rugi Jutaan Rupiah",
+   "tags": [],
+   "url": "https://mediaindonesia.com/megapolitan/929457/polisi-selidiki-dugaan-loker-bodong-di-pasar-minggu-korban-rugi-jutaan-rupiah",
+   "t_id": "Polisi Selidiki Dugaan Loker Bodong di Pasar Minggu, Korban Rugi Jutaan Rupiah",
+   "t_ko": "경찰, Pasar Minggu에서 사기성 사물함 조사, 피해자는 수백만 루피아 손실"
+  },
+  {
    "ts": "2026-09-03T19:10:00+07:00",
    "date": "2026-09-03",
    "time": "19:10",
@@ -16256,8 +16266,8 @@
    "tags": [],
    "url": "https://www.idnfinancials.com/news/68322/jpmorgan-investors-cant-dismiss-indonesia-jci-target-set-at-7-000",
    "img": "https://photo2.idnfinancials.com/fly/idn/gioshia-ralie-benny-kurniawan-jpmorgan-indonesia.jpg",
-   "t_ko": "JPMorgan: 투자자들은 인도네시아를 무시할 수 없으며 JCI 목표는 7,000으로 설정",
-   "t_id": "JPMorgan: Investor tidak bisa mengabaikan Indonesia, target IHSG dipatok 7.000"
+   "t_ko": "JPMorgan: 투자자들 인도네시아 외면 못해 — IHSG 목표 7,000 제시",
+   "t_id": "JPMorgan: Investor Tak Bisa Abaikan Indonesia, Target IHSG Dipatok 7.000"
   },
   {
    "ts": "2026-09-03T19:06:00+07:00",
@@ -16268,7 +16278,7 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/makro/6a9962ae88e47/purbaya-klaim-ri-negara-paling-tenang-saat-minyak-melonjak-puji-arahan-prabowo",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/20/2026_08_20-14_20_00_b37f9bd6-9c6b-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "Purbaya는 RI가 석유 급등 시 가장 조용한 나라라고 주장하고 Prabowo의 방향을 칭찬합니다.",
+   "t_ko": "Purbaya, 유가 급등에도 인도네시아 가장 안정적 국가라 주장 — Prabowo 지침 호평",
    "t_id": "Purbaya Klaim RI Negara Paling Tenang saat Minyak Melonjak, Puji Arahan Prabowo"
   },
   {
@@ -16290,8 +16300,8 @@
    "t": "Rising Yields Seen Pushing Companies to Sell Bonds Sooner",
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-03/rising-yields-seen-pushing-companies-to-sell-bonds-sooner",
-   "t_ko": "채권수익률 상승으로 기업들이 채권을 더 빨리 매도하도록 압력을 가하는 것으로 보임",
-   "t_id": "Meningkatnya Imbal Hasil Terlihat Mendorong Perusahaan untuk Menjual Obligasi Lebih Cepat"
+   "t_ko": "금리 상승에 기업 채권 발행 앞당길 전망",
+   "t_id": "Imbal Hasil Naik, Perusahaan Didorong Percepat Penerbitan Obligasi"
   },
   {
    "ts": "2026-09-03T18:56:00+07:00",
@@ -16315,17 +16325,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260805153348.jpeg",
    "t_ko": "Purbaya: SBN 금리 상승, 정부 부채 부담에 영향 없어",
    "t_id": "Purbaya: Kenaikan Yield SBN Tak Pengaruhi Beban Utang Pemerintah"
-  },
-  {
-   "ts": "2026-09-03T18:40:00+07:00",
-   "date": "2026-09-03",
-   "time": "18:40",
-   "src": "Media Indonesia",
-   "t": "BI Kucurkan Likuiditas Rp930 Triliun lewat Repo dan FX Swap",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929407/bi-kucurkan-likuiditas-rp930-triliun-lewat-repo-dan-fx-swap",
-   "t_ko": "BI, Repo·FX Swap 통해 Rp930조 유동성 공급",
-   "t_id": "BI Kucurkan Likuiditas Rp930 Triliun lewat Repo dan FX Swap"
   },
   {
    "ts": "2026-09-03T18:21:25+07:00",
@@ -16782,16 +16781,16 @@
    "note_id": "Awal tahun 11.6144"
   },
   {
-   "k": "국채 10년물",
-   "v": "7.102%",
-   "d": -1.76,
-   "ytd": 15.23,
-   "inv": true,
-   "note": "연초 6.1635% · investing.com 실시간",
-   "k_ko": "국채 10년물",
-   "k_id": "Obligasi negara 10 tahun",
-   "note_ko": "연초 6.1635% · investing.com 실시간",
-   "note_id": "Awal tahun 6.1635% · investing.com real-time"
+   "k": "CPO (MYR/t)",
+   "v": "4,984",
+   "d": 0.52,
+   "ytd": null,
+   "inv": false,
+   "note": "Bursa Malaysia FCPO 근월물 · investing.com",
+   "k_ko": "CPO (MYR/t)",
+   "k_id": "CPO (MYR/t)",
+   "note_ko": "Bursa Malaysia FCPO 근월물 · investing.com",
+   "note_id": "Bursa Malaysia FCPO 근월물 · investing.com"
   },
   {
    "k": "BI Rate",
@@ -16806,9 +16805,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "97.11",
-   "d": 1.55,
-   "ytd": 59.46,
+   "v": "96.63",
+   "d": 1.05,
+   "ytd": 58.67,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16816,8 +16815,8 @@
   },
   {
    "k": "DXY",
-   "v": "99.10",
-   "d": -0.47,
+   "v": "99.11",
+   "d": -0.45,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -17576,6 +17575,17 @@
   },
   {
    "date": "2026-09-03",
+   "t": "UNTR",
+   "kind": "corp",
+   "imp": 3,
+   "title": "자사주 · 자사주 매입 보고",
+   "src": "IDX 캘린더",
+   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
+   "country": "ID",
+   "title_ko": "자사주 · 자사주 매입 보고"
+  },
+  {
+   "date": "2026-09-03",
    "t": "AKRA",
    "kind": "corp",
    "imp": 3,
@@ -17694,17 +17704,6 @@
    "title_id": "Public Expose · Materi public expose Tahunan  PT Medela Potentia Tbk",
    "country": "ID",
    "title_ko": "기업설명회 · Medela Potentia Public Expose 자료"
-  },
-  {
-   "date": "2026-09-03",
-   "t": "BAIK",
-   "kind": "corp",
-   "imp": 2,
-   "title": "기업설명회 · Bersama Mencapai Puncak 수시 Public Expose 계획",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Rencana public expose Insidentil  PT Bersama Mencapai Puncak Tbk.",
-   "country": "ID",
-   "title_ko": "기업설명회 · Bersama Mencapai Puncak 수시 Public Expose 계획"
   },
   {
    "date": "2026-09-04",
@@ -20069,7 +20068,7 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-03 19:13",
+  "idx_from_pc": "2026-09-03 19:20",
   "bi": null,
   "hist_days": 20,
   "calendar": "investing.com"
