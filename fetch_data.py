@@ -1393,6 +1393,7 @@ def news_block(max_items=None):
             title = html.unescape(e.get("title", "")).strip()
             summ = re.sub("<[^>]+>", " ", html.unescape(e.get("summary", "")))
             tags = screen(title + " " + summ)
+            _div_from_text(title + ". " + summ, tags, e.get("link", ""), src["name"])
             is_market = not tags
             if is_market and not _market_news_ok(title, summ): dg["drop"] += 1; continue     # 티커 없는 기사 중 시장·거시 관련만 별도 목록으로
             if is_market and not (e.get("published_parsed") or e.get("updated_parsed")) and not _entry_image(e): dg["drop"] += 1; continue   # 홈 스크랩(시각·사진 없음)은 시장 뉴스에서 제외
@@ -1437,6 +1438,27 @@ def news_block(max_items=None):
     return translate_news(out[:max_items])
 
 MARKET_NEWS = []
+# 뉴스 제목·요약에서 주당 배당금 추출 (예: "dividen interim Rp30 per saham", "Rp169,15 miliar ... Rp30 per lembar saham")
+NEWS_DIVS = {}
+DIV_RX = re.compile(r"(?:dividen|dps)[^.]{0,160}?rp\s?([\d.,]+)\s*(?:per|/|tiap|setiap)\s*(?:lembar\s+|unit\s+)?saham|rp\s?([\d.,]+)\s*(?:per|/|tiap|setiap)\s*(?:lembar\s+)?saham[^.]{0,100}?dividen", re.I)
+def _id_num(raw):
+    """인니식 숫자: 1.000,5 → 1000.5 · 17,01 → 17.01 · 1.000 → 1000 · 30 → 30"""
+    raw = raw.strip().rstrip(".,")
+    try:
+        if "." in raw and "," in raw: return float(raw.replace(".", "").replace(",", "."))
+        if "," in raw:
+            a, b = raw.rsplit(",", 1); return float(raw.replace(",", "")) if len(b) == 3 else float(a.replace(",", "") + "." + b)
+        if "." in raw:
+            a, b = raw.rsplit(".", 1); return float(raw.replace(".", "")) if len(b) == 3 else float(raw)
+        return float(raw)
+    except Exception: return None
+def _div_from_text(text, tags, url="", src=""):
+    """단일 종목 기사 + 배당 언급 + 'Rp N per saham' 이 있으면 NEWS_DIVS[티커] 에 기록 (먼저 본 것 유지)"""
+    if len(tags) != 1 or "dividen" not in (text or "").lower() or tags[0] in NEWS_DIVS: return
+    m = DIV_RX.search(text)
+    if not m: return
+    v = _id_num(m.group(1) or m.group(2) or "")
+    if v and 0 < v < 100000: NEWS_DIVS[tags[0]] = {"dps": v, "src": src, "url": url}
 MARKET_RX = re.compile(r"\b(ihsg|jci|bei\b|bursa|ojk|bank indonesia|bi rate|bi-rate|suku bunga|rupiah|inflasi|deflasi|the fed|fomc|wall street|nasdaq|s&p|dow jones|net buy|net sell|asing (beli|jual|masuk|keluar)|obligasi|sbn\b|sun\b|yield|treasury|brent|harga minyak|batu ?bara|coal|nikel|nickel|cpo\b|sawit|harga emas|gold price|danantara|msci|ftse|resesi|pasar saham|pasar modal|stock market|ekonomi (ri|indonesia|global|as|china)|pdb\b|gdp\b|neraca (dagang|perdagangan)|cadangan devisa|tarif (trump|impor|as)|trade war|perang dagang|dividen|ipo\b|right issue|rights issue)\b", re.I)
 def _market_news_ok(title, summ=""):
     """티커가 없는 기사 중 시장 전체·거시·정책·원자재 관련만 시장 뉴스로 채택"""
@@ -1747,12 +1769,13 @@ def kisi_news(max_items=None):
         try: ts = dt.datetime.fromisoformat(f"{d}T{tm or '00:00'}:00").replace(tzinfo=WIB)
         except Exception: continue
         tags = c.get("tags") if c.get("tags") is not None else screen(title + " " + text[:400])
+        _div_from_text(title + ". " + (text or c.get("text") or ""), tags, "", "KISI")
         it = {"id": nid, "ts": ts.isoformat(), "date": d, "time": tm if d == today else ts.strftime("%m/%d"), "src": "KISI", "t": title, "tags": tags,
               "url": f"https://kisi.co.id/blog/edukasi/{requests.utils.quote(title)}/{nid}"}
         if img: it["img"] = img
         if text: it["sum"] = text[:220]
         out.append(it)
-        cache[nid] = {"t": title, "date": d, "tm": tm, "tags": tags, "img": img, "text": text[:220]}
+        cache[nid] = {"t": title, "date": d, "tm": tm, "tags": tags, "img": img, "text": text[:1500]}
     out.sort(key=lambda x: x["ts"], reverse=True); out = out[:n]
     try:                                              # 캐시는 최근 60건만 유지
         keep = sorted(cache.items(), key=lambda kv: (kv[1].get("date") or "", kv[1].get("tm") or ""), reverse=True)[:60]
@@ -1769,7 +1792,10 @@ def build():
     if (not mk or yahoo_mode) and IDX_PART.exists():  # IDX 가 막힌 환경(GitHub 러너): PC 가 올린 IDX 분리 파일을 먼저 읽는다
         try: idx_from_pc = json.loads(IDX_PART.read_text(encoding="utf-8"))
         except Exception as e: log("idx_part 읽기 실패", e); idx_from_pc = None
-        if idx_from_pc and not ix and idx_from_pc.get("ix"): ix = idx_from_pc["ix"]
+        pix = (idx_from_pc or {}).get("ix")
+        if pix and (not ix or (pix.get("date") or "") > (ix.get("date") or "")):   # 러너가 받은 IDX 지수가 오래된 날짜(예: 08/28)면 PC 분(09/03) 사용
+            if ix: log(f"IDX 지수 러너 응답 {ix.get('date')} < PC {pix.get('date')} → PC 수집분 사용")
+            ix = pix
     # investing.com 은 yfinance 보다 먼저 — yfinance 가 스레드에 asyncio 루프를 남기면 브라우저 기동이 막힌다
     _IV["SUN10Y"] = investing_quote(INVESTING_QUOTES["SUN10Y"])
     log("국채10Y investing.com", (f'{_IV["SUN10Y"]["px"]}%' if _IV.get("SUN10Y") else "실패"))
@@ -1810,10 +1836,15 @@ def build():
         for k, v in m["index"].items():
             if v is not None: index[k] = v
     if bi and bi.get("nonres_week"): index["bi_nonres"] = bi["nonres_week"]["text"]
+    news_items = news_block(); kisi_items = kisi_news()   # 뉴스를 먼저 — 기사 속 배당 금액(NEWS_DIVS)을 캘린더에 쓴다
     corp = idx_corp_calendar() or []
     if not corp and idx_from_pc and idx_from_pc.get("corp_cal"):          # IDX 차단 환경: PC 가 올린 기업·배당 캘린더 사용
         corp = idx_from_pc["corp_cal"]
-    try: DIVS = investing_dividends(); log(f"배당 금액 부착 {attach_dividends(corp, DIVS)}건")
+    try:
+        DIVS = investing_dividends()
+        for t, v in NEWS_DIVS.items():                     # investing.com 에 없는 종목은 화이트리스트·KISI 기사에서 보충
+            if t not in DIVS or not DIVS[t].get("dps"): DIVS[t] = {"dps": v["dps"], "type": "", "ex": None, "pay": None, "yld": None, "src": v["src"], "url": v.get("url")}
+        log(f"배당 금액 부착 {attach_dividends(corp, DIVS)}건 (기사 보충 {len(NEWS_DIVS)}: {', '.join(NEWS_DIVS)})")
     except Exception as e: log("배당 금액 오류", e); DIVS = {}
     for c in corp: c["country"] = "ID"
     glob = macro_calendar_auto()
@@ -1876,7 +1907,7 @@ def build():
             "turnover": P("turnover"), "foreign_top": P("foreign_top"), "foreign_bottom": P("foreign_bottom"),
             "stocks": P("stocks"),
             "sectors": sector_block(P("stocks")), "global": glob_idx, "dividends": DIVS,
-            "news": news_block(), "market_news": MARKET_NEWS, "kisi_news": kisi_news(), "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
+            "news": news_items, "market_news": MARKET_NEWS, "kisi_news": kisi_items, "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
             "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     # data.js: index.html 을 파일(file://)로 직접 열어도 마지막 수집 데이터가 보이도록 (fetch 는 file:// 에서 막힘)
