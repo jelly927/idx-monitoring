@@ -74,10 +74,10 @@ a{color:inherit;text-decoration:none}
 .mn-item .th{flex:0 0 76px;width:76px;height:56px;border-radius:8px;object-fit:cover;background:var(--chip)}
 .mn-item .b{flex:1;min-width:0}.mn-item a{color:var(--ink);text-decoration:none;font-weight:600;font-size:13px;line-height:1.35;display:block}
 .mn-item a:hover{text-decoration:underline}.mn-item .m{font-size:11.5px;color:var(--ink3);margin-top:3px}
-.srch{position:relative;margin-left:14px;flex:0 0 auto}
-.srch input{width:170px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;padding:6px 10px 6px 30px;border-radius:8px;outline:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239a9ea3' stroke-width='2.4'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:9px 50%}
-.srch input:focus{border-color:var(--brand);width:230px}
-.qbox{position:absolute;top:36px;right:0;width:330px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.14);z-index:60;overflow:hidden}
+.srch{position:relative;margin-left:18px;flex:0 0 auto}
+.srch input{width:260px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:14.5px;font-weight:600;padding:8px 12px 8px 36px;border-radius:10px;outline:none;box-shadow:0 1px 2px rgba(0,0,0,.04);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239a9ea3' stroke-width='2.4'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:9px 50%}
+.srch input:focus{border-color:var(--brand);width:320px}
+.qbox{position:absolute;top:42px;left:0;width:360px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.14);z-index:60;overflow:hidden}
 .qbox div{display:flex;align-items:center;gap:10px;padding:8px 12px;cursor:pointer;font-size:13px}.qbox div:hover,.qbox div.sel{background:var(--chip)}
 .qbox b{font-weight:800;min-width:48px}.qbox span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink2)}.qbox small{font-weight:700}
 .qbox .none{color:var(--ink3);cursor:default}
@@ -98,6 +98,7 @@ a{color:inherit;text-decoration:none}
 .view{display:none}.view.on{display:block}
 .row2{display:grid;grid-template-columns:minmax(300px,1.25fr) minmax(330px,1.25fr) minmax(290px,1fr);gap:16px;margin-top:16px;align-items:stretch}
 .card.ann{flex:1;display:flex;flex-direction:column}.card.ann .list{flex:1}
+.spacer{flex:1;min-height:0}
 .col{display:flex;flex-direction:column;gap:16px;min-width:0}
 @media (max-width:1280px){.row2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.row2>.col:last-child{grid-column:1/-1}}
 @media (max-width:980px){.row2{grid-template-columns:minmax(0,1fr)}.row2>.col:last-child{grid-column:auto}}
@@ -148,9 +149,9 @@ a{color:inherit;text-decoration:none}
 .row .px small{font-size:12.5px;font-weight:600}
 .row .heart{display:none}
 .fx{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:12px}
-.fx div{background:var(--chip);border-radius:8px;padding:8px 10px}
-.fx span{display:block;font-size:11px;color:var(--ink3)}
-.fx b{font-size:14px;font-weight:800}
+.fx div{background:var(--chip);border-radius:8px;padding:10px 12px}
+.fx span{display:block;font-size:11.5px;color:var(--ink3);margin-bottom:2px}
+.fx b{font-size:21px;font-weight:800;line-height:1.15;letter-spacing:-.01em}.fx b span,.fx b small{font-size:12px;font-weight:600;color:var(--ink3);margin-left:4px}
 .mini-list .row{padding:7px 4px}
 .mini-list .logo{width:28px;height:28px;flex-basis:28px;font-size:11px}
 .mini-list .row .nm b{font-size:13px}
@@ -246,9 +247,9 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
 
 <div class="nav" id="tabs">
   <button data-v="market" class="on" data-t="market">증시</button><button data-v="news" data-t="news">뉴스</button><button data-v="cal" data-t="cal">캘린더</button>
+  <div class="srch"><input id="q" type="text" autocomplete="off" spellcheck="false" placeholder="종목 검색 · BBCA" oninput="qSuggest(this.value)" onkeydown="qKey(event)" onfocus="qSuggest(this.value)"><div id="qbox" class="qbox" hidden></div></div>
   <div class="strip" id="strip" onmouseenter="hotOpen(true)" onmouseleave="hotOpen(false)" onclick="hotOpen(!$('hotbox').classList.contains('on'))"><span class="lab" data-t="hot">주요뉴스</span><span class="txt" id="hot">—</span><span id="hotcnt" class="cnt"></span><span class="arr">▾</span>
     <div id="hotbox" class="hotbox" onclick="event.stopPropagation()"><div class="hh"><b data-t="hotLatest">최신 헤드라인</b><small data-t="hotNote">종목 추천·전망성 기사 제외</small><a href="#" onclick="showView('news');hotOpen(false);return false" data-t="viewAll">전체 보기 ›</a></div><div id="hotlist"></div></div></div>
-  <div class="srch"><input id="q" type="text" autocomplete="off" spellcheck="false" placeholder="종목 검색 · BBCA" oninput="qSuggest(this.value)" onkeydown="qKey(event)" onfocus="qSuggest(this.value)"><div id="qbox" class="qbox" hidden></div></div>
   <div class="lang"><button data-lang="ko" class="on" onclick="setLang('ko')">KO</button><button data-lang="id" onclick="setLang('id')">ID</button></div>
 </div>
 
@@ -281,6 +282,7 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
       <h2><span data-t="status">시장 현황</span> <span class="more" id="ixsess">—</span></h2>
       <div class="kv" id="kv"></div>
     </div>
+    <div class="spacer" id="mid-spacer"></div><!-- 예약 공간: 나중에 넣을 카드 자리 -->
     <div class="card">
       <h2><span data-t="foreign">외국인 수급</span> <span class="more" id="fdate">전일 기준</span></h2>
       <div class="fx" id="fx"></div>
