@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 23:08",
+ "updated": "2026-09-03 23:27",
  "delay_min": 0,
  "fx_basis": "13.04 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,356 · 22:49 Yahoo",
- "idr_per_krw": 13.0434,
+ "idr_per_krw": 13.044,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7742.82,
+   "px": 7740.26,
    "prev": 7666.6,
-   "pct": 0.99,
-   "asof": "23:05",
+   "pct": 0.96,
+   "asof": "23:25",
    "live": true,
    "spark": [
     7707.12,
@@ -15115,17 +15115,21 @@
     7748.15,
     7749.46,
     7745.07,
-    7742.82
+    7742.62,
+    7743.48,
+    7744.21,
+    7741.41,
+    7740.26
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26571.62,
+   "px": 26556.36,
    "prev": 26217.83,
-   "pct": 1.35,
-   "asof": "23:05",
+   "pct": 1.29,
+   "asof": "23:25",
    "live": true,
    "spark": [
     26381.93,
@@ -15159,17 +15163,21 @@
     26586.13,
     26592.95,
     26576.96,
-    26571.62
+    26573.81,
+    26579.45,
+    26581.09,
+    26560.42,
+    26556.36
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53655.83,
+   "px": 53640.74,
    "prev": 53061.95,
-   "pct": 1.12,
-   "asof": "23:05",
+   "pct": 1.09,
+   "asof": "23:25",
    "live": true,
    "spark": [
     53453.07,
@@ -15203,7 +15211,11 @@
     53712.35,
     53712.3,
     53681.63,
-    53655.83
+    53642.51,
+    53641.19,
+    53644.16,
+    53657.4,
+    53640.74
    ]
   },
   {
@@ -15513,6 +15525,34 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-03T23:22:50+07:00",
+   "date": "2026-09-03",
+   "time": "23:22",
+   "src": "Jawa Pos",
+   "t": "Percepat Penanganan Kecelakaan, Jasa Marga dan Jasa Raharja Permudah Akses Informasi Jalan Tol",
+   "tags": [
+    "JSMR"
+   ],
+   "url": "https://www.jawapos.com/bisnis/2609030515/percepat-penanganan-kecelakaan-jasa-marga-dan-jasa-raharja-permudah-akses-informasi-jalan-tol",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/03/direktur-utama-jasa-marga-rivan-a-purwantono-dan-direktur-utama-jasa-raharja-muhammad-awaluddin-istimewa-2NlyT.webp",
+   "t_id": "Percepat Penanganan Kecelakaan, Jasa Marga dan Jasa Raharja Permudah Akses Informasi Jalan Tol",
+   "t_ko": "사고 처리 가속화, Jasa Marga 및 Jasa Raharja를 통해 유료 도로 정보에 더욱 쉽게 액세스"
+  },
+  {
+   "ts": "2026-09-03T23:15:49+07:00",
+   "date": "2026-09-03",
+   "time": "23:15",
+   "src": "Detik",
+   "t": "BRI, Dana, hingga bank bjb Sabet Penghargaan Anugerah Ekonomi Hijau",
+   "tags": [
+    "MEGA"
+   ],
+   "url": "https://finance.detik.com/ekonomi-hijau/d-8647572/bri-dana-hingga-bank-bjb-sabet-penghargaan-anugerah-ekonomi-hijau",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/01/anugerah-ekonomi-hijau-1788257473437_169.jpeg?w=360&q=90",
+   "t_ko": "BRI, 다나, 뱅크BJB가 녹색경제상 수상",
+   "t_id": "BRI, Dana, hingga bank bjb Sabet Penghargaan Anugerah Ekonomi Hijau"
+  },
   {
    "ts": "2026-09-03T23:00:06+07:00",
    "date": "2026-09-03",
@@ -16383,6 +16423,17 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-03T23:03:00+07:00",
+   "date": "2026-09-03",
+   "time": "23:03",
+   "src": "Media Indonesia",
+   "t": "Luhut Dorong Penguatan Industri Daur Ulang Baterai Kendaraan Listrik",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/929555/luhut-dorong-penguatan-industri-daur-ulang-baterai-kendaraan-listrik",
+   "t_ko": "Luhut, 전기자동차 배터리 재활용 산업 강화 장려",
+   "t_id": "Luhut Dorong Penguatan Industri Daur Ulang Baterai Kendaraan Listrik"
+  },
+  {
    "ts": "2026-09-03T22:34:11+07:00",
    "date": "2026-09-03",
    "time": "22:34",
@@ -16725,18 +16776,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/099670000-1784823630-830-556.jpg",
    "t_ko": "OJK, 2027년부터 광물·전략상품 거래소 감독 이관",
    "t_id": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027"
-  },
-  {
-   "ts": "2026-09-03T15:49:06+07:00",
-   "date": "2026-09-03",
-   "time": "15:49",
-   "src": "Jawa Pos",
-   "t": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+",
-   "tags": [],
-   "url": "https://www.jawapos.com/energi/2609030090/harga-minyak-mentah-dunia-naik-tipis-di-tengah-eskalasi-as-iran-cek-pemicu-dan-proyeksi-opec",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/18/ilustrasi-kapal-tanker-di-perairan-selat-hormuz-ap-photokamran-jebreili-6ydWQ.webp",
-   "t_ko": "美-이란 긴장 고조에 국제유가 소폭 상승 — OPEC+ 전망",
-   "t_id": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+"
   }
  ],
  "kisi_news": [
@@ -16908,9 +16947,9 @@
   },
   {
    "k": "IDR/KRW (1원당 루피아)",
-   "v": "13.03",
-   "d": 1.11,
-   "ytd": 12.19,
+   "v": "13.04",
+   "d": 1.17,
+   "ytd": 12.26,
    "inv": true,
    "note": "연초 11.6144",
    "k_ko": "IDR/KRW (1원당 루피아)",
@@ -16943,9 +16982,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "95.55",
-   "d": -0.08,
-   "ytd": 56.9,
+   "v": "95.45",
+   "d": -0.19,
+   "ytd": 56.73,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16953,8 +16992,8 @@
   },
   {
    "k": "DXY",
-   "v": "98.98",
-   "d": -0.58,
+   "v": "98.90",
+   "d": -0.66,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -17643,8 +17682,9 @@
    "imp": 2,
    "exp": "4.8%",
    "prev": "4.8%",
-   "act": null,
+   "act": "4.7%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
    "title_id": "GDPNow The Fed Atlanta (Q3)"
   },
