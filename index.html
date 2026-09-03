@@ -41,8 +41,8 @@ a{color:inherit;text-decoration:none}
 .nav .strip .lab{color:var(--brown);font-weight:700;flex:0 0 auto}
 .nav .strip .txt{overflow:hidden;text-overflow:ellipsis;cursor:pointer}
 .nav .strip{position:relative;overflow:visible;cursor:pointer}.nav .strip .cnt{flex:0 0 auto;color:var(--ink3);font-size:12px}.nav .strip .arr{flex:0 0 auto;color:var(--ink3);font-size:11px}
-.hotbox{display:none;position:absolute;top:28px;right:0;width:560px;max-width:90vw;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 34px rgba(0,0,0,.16);z-index:58;padding:6px 0 4px;white-space:normal;cursor:default}
-.hotbox.on{display:block}
+.hotbox{display:none;position:absolute;top:24px;right:0;width:560px;max-width:90vw;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 34px rgba(0,0,0,.16);z-index:58;padding:6px 0 4px;white-space:normal;cursor:default}
+.hotbox.on{display:block}.hotbox::before{content:"";position:absolute;left:0;right:0;top:-16px;height:16px}
 .hotbox .hh{display:flex;align-items:baseline;gap:10px;padding:8px 16px 8px;border-bottom:1px solid var(--line)}.hotbox .hh b{font-size:13px;color:var(--ink)}.hotbox .hh small{color:var(--ink3);font-size:11.5px}.hotbox .hh a{margin-left:auto;font-size:12px;color:var(--brand);text-decoration:none;font-weight:700}
 .hotbox .it{display:flex;gap:10px;padding:7px 16px;font-size:13px;line-height:1.35;align-items:baseline}.hotbox .it:hover{background:var(--chip)}
 .hotbox .it .tm{flex:0 0 42px;color:var(--ink3);font-size:12px;font-variant-numeric:tabular-nums}.hotbox .it .tm.est{color:var(--ink3);opacity:.7}
@@ -96,7 +96,8 @@ a{color:inherit;text-decoration:none}
 .card h2 .more{font-size:12.5px;color:var(--ink2);font-weight:500;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:10px}.card h2>span:first-child{white-space:nowrap;flex:0 0 auto}
 .card .sub{font-size:12px;color:var(--ink3);margin-top:6px}
 .view{display:none}.view.on{display:block}
-.row2{display:grid;grid-template-columns:minmax(300px,1.25fr) minmax(330px,1.25fr) minmax(290px,1fr);gap:16px;margin-top:16px;align-items:start}
+.row2{display:grid;grid-template-columns:minmax(300px,1.25fr) minmax(330px,1.25fr) minmax(290px,1fr);gap:16px;margin-top:16px;align-items:stretch}
+.card.ann{flex:1;display:flex;flex-direction:column}.card.ann .list{flex:1}
 .col{display:flex;flex-direction:column;gap:16px;min-width:0}
 @media (max-width:1280px){.row2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.row2>.col:last-child{grid-column:1/-1}}
 @media (max-width:980px){.row2{grid-template-columns:minmax(0,1fr)}.row2>.col:last-child{grid-column:auto}}
@@ -173,7 +174,7 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
 .news-tools{display:flex;gap:6px;align-items:center;margin-top:12px;flex-wrap:wrap;max-height:84px;overflow-y:auto}
 .n-item{display:flex;gap:12px;padding:11px 4px;border-bottom:1px solid var(--line)}
 .n-item:last-child{border-bottom:0}
-.banner{position:relative;margin-top:16px;border-radius:14px;overflow:hidden;box-shadow:var(--sh,0 1px 3px rgba(0,0,0,.08));background:#0b3d2e}
+.banner{position:relative;border-radius:14px;overflow:hidden;box-shadow:var(--sh,0 1px 3px rgba(0,0,0,.08));background:#0b3d2e}
 .banner img{display:block;width:100%;height:auto;transition:opacity .6s}.banner img.fade{opacity:0}
 .banner .dots{position:absolute;right:10px;bottom:8px;display:flex;gap:5px}.banner .dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.45);cursor:pointer}.banner .dots i.on{background:#fff}
 .n-item .logo{width:34px;height:34px;flex-basis:34px;font-size:12px;margin-top:1px}
@@ -303,11 +304,11 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
       <h2><span data-t="knews">KISI 뉴스</span> <span class="more" onclick="setMode('kisi');showView('news')" style="cursor:pointer" data-t="more">전체 보기 ›</span></h2>
       <div id="knews"></div>
     </div>
+    <div class="banner" id="banner" hidden><a id="banner-a" href="https://kisi.co.id" target="_blank" rel="noopener"><img id="banner-img" alt=""></a><div class="dots" id="banner-dots"></div></div>
     <div class="card compact">
       <h2><span data-t="newsCard">종목 뉴스</span> <span class="more" onclick="setMode('stock');showView('news')" style="cursor:pointer" data-t="more">전체 보기 ›</span></h2>
       <div id="news-preview"></div>
     </div>
-    <div class="banner" id="banner" hidden><a id="banner-a" href="https://kisi.co.id" target="_blank" rel="noopener"><img id="banner-img" alt=""></a><div class="dots" id="banner-dots"></div></div>
   </div>
 </div>
 <div class="card" id="sec-card" style="margin-top:16px" hidden>
@@ -505,7 +506,7 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   $('today-ev').innerHTML=(td.length?td.map(ev).join('')+(tdAll.length>td.length?`<div class="ev-more" onclick="showView('cal')">+${tdAll.length-td.length} ${T('moreCal')}</div>`:'')
     :(up.length?`<div class="ev-day">${T('upcoming')}</div>`+up.map(e=>ev(Object.assign({},e,{time:(e.date.slice(5).replace('-','/'))+' '+(e.time&&e.time!=='—'?e.time:'')}))).join('')
               :`<div class="empty">${T('noEv')}</div>`));
-  renderAnn();
+  renderAnn();setTimeout(annFit,50);
   renderNews();$('news-preview').innerHTML=(d.news||[]).slice(0,10).map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`;
   {const td=today();if(!calDate||calDate===calTodayISO)calDate=td;calTodayISO=td;}renderCal();
   $('foot').innerHTML=T('foot');applyStatic();}
@@ -521,10 +522,15 @@ function hotRender(){const l=hotList();if(!l.length){$('hot').textContent='—';
   hotI=hotI%l.length;const h=l[hotI];$('hot').textContent=`${h.src} · ${nTitle(h)}`;$('hotcnt').textContent=`${hotI+1} / ${l.length}`;
   $('hotlist').innerHTML=l.slice(0,15).map(n=>`<div class="it"><span class="tm${n.t_est?' est':''}">${n.t_est?'~':''}${n.time}</span><a href="${n.url||'#'}" target="_blank" rel="noopener">${(n.tags||[]).slice(0,2).map(t=>`<span class="tg">${t}</span>`).join('')}${nTitle(n)}</a><span class="sr">${n.src}</span></div>`).join('');
   clearInterval(hotTimer);hotTimer=setInterval(()=>{if($('hotbox').classList.contains('on'))return;hotI=(hotI+1)%l.length;const x=l[hotI];$('hot').textContent=`${x.src} · ${nTitle(x)}`;$('hotcnt').textContent=`${hotI+1} / ${l.length}`;},7000);}
-function hotOpen(on){$('hotbox').classList.toggle('on',!!on);}
-let annQ='',annMore=false;
+let hotCloseT=null;
+function hotOpen(on){clearTimeout(hotCloseT);if(on)$('hotbox').classList.add('on');else hotCloseT=setTimeout(()=>$('hotbox').classList.remove('on'),450);}   // 마우스가 잠깐 벗어나도 바로 닫히지 않게
+let annQ='',annMore=false,annLim=8;
+function annFit(){const card=document.querySelector('.card.ann'),list=$('ann');if(!card||!list||!DATA||annMore||annQ)return;const rows=list.querySelectorAll('.row');if(!rows.length)return;
+  const spare=card.getBoundingClientRect().bottom-list.getBoundingClientRect().bottom-16,rh=rows[0].getBoundingClientRect().height||44;
+  let n=annLim+Math.floor(spare/rh);n=Math.max(8,Math.min(n,(DATA.announcements||[]).length,20));if(n!==annLim){annLim=n;renderAnn();}}
+window.addEventListener('resize',()=>{clearTimeout(window._annT);window._annT=setTimeout(annFit,200);});
 function renderAnn(){if(!DATA)return;const q=annQ.toUpperCase();let all=(DATA.announcements||[]);if(q)all=all.filter(a=>(a.t||'').toUpperCase().includes(q)||(a.title||'').toUpperCase().includes(q)||(a.title_ko||'').toUpperCase().includes(q)||(a.title_id||'').toUpperCase().includes(q));
-  const lim=annMore||q?all.length:8;$('anncnt').textContent=all.length?`${Math.min(lim,all.length)} / ${all.length}`:'';$('annmore').textContent=all.length>8&&!q?(annMore?T('less'):T('more')):'';
+  const lim=annMore||q?all.length:annLim;$('anncnt').textContent=all.length?`${Math.min(lim,all.length)} / ${all.length}`:'';$('annmore').textContent=all.length>annLim&&!q?(annMore?T('less'):T('more')):'';
   if(changed('ann',[all,LANG,lim]))$('ann').innerHTML=all.slice(0,lim).map(a=>`<div class="row"><span class="tm">${a.date===today()?a.time:a.date.slice(5).replace('-','/')}</span>${logo(a.t)}<div class="nm"><span class="ty">${a.t}${a.type?' · '+a.type:''}</span><b><a href="${a.url||'#'}" target="_blank" rel="noopener">${L(a,'title')}</a></b></div></div>`).join('')||`<div class="empty">${T('noAnn')}</div>`;}
 function newsLogo(n){const tg=n.tags||[];if(tg.length===1)return logo(tg[0]);if(tg.length>1)return`<div class="logo ik" title="${tg.join(' · ')}"><img alt="iKISI" src="${IKISI}"></div>`;if(n.img)return`<div class="logo ik"><img alt="" src="${n.img}" referrerpolicy="no-referrer" loading="lazy" onerror="this.parentNode.classList.add('none')"></div>`;return`<div class="logo none"></div>`;}
 const nDate=n=>n.date&&!String(n.time||'').includes('/')?' · '+n.date.slice(5).replace('-','/'):'';
