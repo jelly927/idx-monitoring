@@ -21,7 +21,7 @@ IDX Live 수집기 v2 — index.html 이 읽는 data.json 을 생성한다.
 
 원칙: 못 구한 값은 null → 화면에 "확인 필요". 추정 금지. 출처는 항목마다 기록.
 """
-import json, re, sys, time, html, hashlib, threading, queue as _queue, datetime as dt
+import json, re, sys, os, time, html, hashlib, threading, queue as _queue, datetime as dt
 from pathlib import Path
 
 try:
@@ -1325,6 +1325,23 @@ EV_TAGS = [  # 캘린더 제목 → 지표 태그 (한/영/인니). 같은 (날�
 def _ev_tags(title):
     t = (title or "").lower(); return frozenset(k for k, rx in EV_TAGS if re.search(rx, t))
 
+PUBLISHED_IN_BUILD = False
+def _auto_publish():
+    """PC 에서 수집이 끝나면 변경 파일(idx_part·번역 캐시 등)을 GitHub 로 올린다 (publish.py, 토큰은 secrets.json).
+    run.py 를 재시작하지 않아도 동작하도록 build() 끝에서 직접 호출한다. GitHub 러너에서는 실행하지 않는다."""
+    global PUBLISHED_IN_BUILD
+    PUBLISHED_IN_BUILD = False
+    if os.environ.get("GITHUB_ACTIONS") or not CFG.get("auto_push") or not (ROOT / "secrets.json").exists(): return
+    try:
+        import subprocess
+        args = [sys.executable, str(ROOT / "publish.py"), "--quiet"] + (["--data"] if CFG.get("auto_push_data") else [])
+        r = subprocess.run(args, cwd=str(ROOT), capture_output=True, text=True, encoding="utf-8", timeout=300)
+        out = (r.stdout + r.stderr).strip().splitlines()
+        log("auto_push:", out[-1][:140] if out else f"exit {r.returncode}")
+        PUBLISHED_IN_BUILD = True
+    except Exception as e:
+        log("auto_push 오류", str(e)[:120])
+
 def build():
     m = manual(); yb = CFG["ytd_base"]
     mk = idx_market(); ix = idx_index(); bi = bi_indicators()
@@ -1428,6 +1445,7 @@ def build():
     try: (ROOT / "data.js").write_text("window.__IDX_DATA=" + json.dumps(data, ensure_ascii=False) + ";", encoding="utf-8")
     except Exception as e: log("data.js 저장 실패", e)
     idx_browser_close()
+    _auto_publish()
     log(f"data.json | JCI {px} | 상승 {index.get('adv', '-')} | 외인 {(index.get('foreign_net_idr') or 0)/1e9:,.0f}억 | 뉴스 {len(data['news'])} | 일정 {len(calendar)} | 공시 {len(announcements)} | BI {'OK' if bi else 'X'}")
 
 if __name__ == "__main__":
