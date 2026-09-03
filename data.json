@@ -1,22 +1,22 @@
 {
  "mode": "live",
- "updated": "2026-09-03 20:05",
+ "updated": "2026-09-03 20:15",
  "delay_min": 0,
- "fx_basis": "13.02 IDR/KRW · USD/IDR 17,655 · USD/KRW 1,355 · 17:13 Yahoo",
- "idr_per_krw": 13.0249,
+ "fx_basis": "13.02 IDR/KRW · USD/IDR 17,655 · USD/KRW 1,356 · 17:13 Yahoo",
+ "idr_per_krw": 13.0243,
  "indices": [
   {
    "code": "COMPOSITE",
    "label": "IHSG",
    "name": "자카르타 종합",
-   "px": 6518.12,
-   "prev": 6521.75,
-   "pct": -0.06,
+   "px": 6667.89,
+   "prev": 6595.78,
+   "pct": 1.09,
    "spark": [
     6667.891,
-    6633.503,
-    6636.513,
-    6624.438,
+    6633.364,
+    6630.982,
+    6628.04,
     6629.4,
     6630.128,
     6627.969,
@@ -83,14 +83,14 @@
     6667.021,
     6664.316,
     6668.232,
-    6663.931,
-    6663.685,
-    6666.338,
-    6661.948,
-    6664.344,
-    6667.902,
-    6665.106,
-    6668.11,
+    6663.61,
+    6662.809,
+    6662.198,
+    6664.903,
+    6666.797,
+    6665.748,
+    6665.545,
+    6670.046,
     6664.391,
     6665.043,
     6662.137,
@@ -135,15 +135,15 @@
     6675.014
    ],
    "inv": false,
-   "asof": "IDX 08/28 종가"
+   "asof": "IDX 09/03 종가"
   },
   {
    "code": "LQ45",
    "label": "LQ45",
    "name": "대형 45종목",
-   "px": 641.82,
-   "prev": 641.07,
-   "pct": 0.12,
+   "px": 662.77,
+   "prev": 651.87,
+   "pct": 1.67,
    "spark": [
     662.773,
     654.68,
@@ -209,15 +209,15 @@
     660.422,
     661.594,
     660.662,
-    660.557,
-    660.573,
-    660.982,
-    660.492,
-    660.854,
+    660.361,
+    660.797,
+    660.997,
+    660.652,
+    661.321,
     661.158,
-    660.805,
-    661.219,
-    660.342,
+    660.734,
+    661.317,
+    660.644,
     661.09,
     660.415,
     660.19,
@@ -328,15 +328,15 @@
   }
  ],
  "index": {
-  "session": "IDX 08/28 종가",
-  "high": 6566.905,
-  "low": 6495.737,
-  "prev": 6521.75,
-  "ytd": -24.62,
-  "m1": 4.55,
-  "value_idr": 15131881058755,
-  "volume": 34412145624,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-03 20:01",
+  "session": "IDX 09/03 종가",
+  "high": 6681.838,
+  "low": 6614.714,
+  "prev": 6595.78,
+  "ytd": -22.88,
+  "m1": 6.95,
+  "value_idr": 18607401563700,
+  "volume": 39305835265,
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-03 20:09",
   "rank_asof": null,
   "rank_date": "2026-09-03",
   "adv": 416,
@@ -15643,6 +15643,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-03T20:00:00+07:00",
+   "date": "2026-09-03",
+   "time": "20:00",
+   "src": "Medcom",
+   "t": "Tak Lagi Gaptek, Generasi 40+ Ternyata Mulai Berani Bereksperimen dengan AI",
+   "tags": [
+    "HILL"
+   ],
+   "url": "https://www.medcom.id/ekonomi/bisnis/Zke1xvPk-tak-lagi-gaptek-generasi-40-ternyata-mulai-berani-bereksperimen-dengan-ai",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/03/1839912/8SnJzowRZB.jpeg?w=720",
+   "t_ko": "더 이상 아무것도 모르는 40+세대가 AI 실험에 도전하기 시작했습니다.",
+   "t_id": "Tak Lagi Gaptek, Generasi 40+ Ternyata Mulai Berani Bereksperimen dengan AI"
+  },
+  {
    "ts": "2026-09-03T19:56:26+07:00",
    "date": "2026-09-03",
    "time": "19:56",
@@ -15653,8 +15667,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8284185/ocbc-kini-genggam-20-saham-great-eastern-life-indonesia",
    "img": "https://cdn1-production-images-kly.akamaized.net/wmYNECXEzDFvuHSlTTNAdtrxzzg=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5285412/original/045032800_1752672091-Foto_2_-_Gedung_OCBC_Space.jpg",
-   "t_id": "OCBC Kini Genggam 20% Saham Great Eastern Life Indonesia",
-   "t_ko": "OCBC는 이제 Great Eastern Life Indonesia 지분의 20%를 보유하고 있습니다."
+   "t_ko": "OCBC, Great Eastern Life Indonesia 지분 20% 확보",
+   "t_id": "OCBC Kini Genggam 20% Saham Great Eastern Life Indonesia"
   },
   {
    "ts": "2026-09-03T19:50:00+07:00",
@@ -16921,9 +16935,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "96.01",
-   "d": 0.4,
-   "ytd": 57.65,
+   "v": "96.17",
+   "d": 0.56,
+   "ytd": 57.91,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16931,8 +16945,8 @@
   },
   {
    "k": "DXY",
-   "v": "98.95",
-   "d": -0.61,
+   "v": "99.01",
+   "d": -0.55,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -19317,6 +19331,17 @@
  ],
  "announcements": [
   {
+   "ts": "2026-09-03T20:03:08+07:00",
+   "date": "2026-09-03",
+   "time": "20:03",
+   "t": "MGLV",
+   "type": "STOCK",
+   "title": "Rencana Transaksi Material Dengan Persetujuan RUPS",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/c20a300955_77184e1ed6.pdf",
+   "title_ko": "주주총회 승인 대상 중요 거래 계획",
+   "title_id": "Rencana Transaksi Material dengan Persetujuan RUPS"
+  },
+  {
    "ts": "2026-09-03T19:55:59+07:00",
    "date": "2026-09-03",
    "time": "19:55",
@@ -19335,8 +19360,8 @@
    "type": "STOCK",
    "title": "Saham Hilang",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/45e1c3b930_6b812d6fc8.pdf",
-   "title_id": "Saham Hilang",
-   "title_ko": "사라진 주식"
+   "title_ko": "사라진 주식",
+   "title_id": "Saham Hilang"
   },
   {
    "ts": "2026-09-03T19:37:55+07:00",
@@ -20184,23 +20209,12 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b93ae3d896_c23be22b40.pdf",
    "title_ko": "수익증권 유통 좌수 보고",
    "title_id": "Laporan Jumlah Peredaran Unit Penyertaan"
-  },
-  {
-   "ts": "2026-09-03T16:43:38+07:00",
-   "date": "2026-09-03",
-   "time": "16:43",
-   "t": "MDIY",
-   "type": "STOCK",
-   "title": "Siaran Pers - MR.D.I.Y. Indonesia Resmi Mencapai 1.400 Toko, Ekspansi 2026 Tetap Sesuai Target",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e036cd1608_05ab121b42.pdf",
-   "title_ko": "보도자료 — MR.D.I.Y. Indonesia 1,400호점 달성, 2026 확장 목표 순항",
-   "title_id": "Siaran Pers - MR.D.I.Y. Indonesia Resmi Capai 1.400 Toko, Ekspansi 2026 Sesuai Target"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-03 20:01",
+  "idx_from_pc": "2026-09-03 20:09",
   "bi": null,
   "hist_days": 20,
   "calendar": "investing.com"
