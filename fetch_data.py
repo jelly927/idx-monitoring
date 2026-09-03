@@ -1374,9 +1374,9 @@ def _seen_put(k, t):
 def news_block(max_items=None):
     global CODES, CODE_RX, NAME_RX
     CODES, CODE_RX, NAME_RX = build_alias()
-    max_items = max_items or CFG.get("news_max_items", 80); items = []; market = []
+    max_items = max_items or CFG.get("news_max_items", 80); items = []; market = []; diag = {}
     for src in CFG["whitelist"]:
-        entries = []
+        entries = []; dg = diag.setdefault(src["name"], {"feed": 0, "stock": 0, "market": 0, "drop": 0, "via": "rss"})
         for url in [u for u in (src.get("rss"), None) if u is not None]:
             try: entries = feedparser.parse(url, request_headers={"User-Agent": UA}).entries
             except Exception as e: log("rss fail", src["name"], e)
@@ -1386,14 +1386,16 @@ def news_block(max_items=None):
                 try: entries = feedparser.parse(alt, request_headers={"User-Agent": UA}).entries
                 except Exception: pass
         if not entries:
-            entries = scrape_home(src); log("rss empty → home scrape", src["name"], len(entries))
+            entries = scrape_home(src); log("rss empty → home scrape", src["name"], len(entries)); dg["via"] = "home"
+        dg["feed"] = len(entries)
         for e in entries[:40]:
             title = html.unescape(e.get("title", "")).strip()
             summ = re.sub("<[^>]+>", " ", html.unescape(e.get("summary", "")))
             tags = screen(title + " " + summ)
             is_market = not tags
-            if is_market and not _market_news_ok(title, summ): continue     # 티커 없는 기사 중 시장·거시 관련만 별도 목록으로
-            if is_market and not (e.get("published_parsed") or e.get("updated_parsed")) and not _entry_image(e): continue   # 홈 스크랩(시각·사진 없음)은 시장 뉴스에서 제외
+            if is_market and not _market_news_ok(title, summ): dg["drop"] += 1; continue     # 티커 없는 기사 중 시장·거시 관련만 별도 목록으로
+            if is_market and not (e.get("published_parsed") or e.get("updated_parsed")) and not _entry_image(e): dg["drop"] += 1; continue   # 홈 스크랩(시각·사진 없음)은 시장 뉴스에서 제외
+            dg["market" if is_market else "stock"] += 1
             ts = e.get("published_parsed") or e.get("updated_parsed")
             est = not ts
             # 발행시각이 없는 항목(홈 스크랩·날짜 없는 피드)은 "처음 본 시각"을 기억해 매 빌드마다 최신으로 올라오지 않게 한다
@@ -1416,6 +1418,10 @@ def news_block(max_items=None):
             if img: it["img"] = img
             (market if is_market else items).append(it)
     items.sort(key=lambda x: x["ts"], reverse=True); market.sort(key=lambda x: x["ts"], reverse=True)
+    try:                                              # 매체별 연결 상태 진단 (피드 건수 · 종목/시장 채택 · 제외) → 로그 + 캐시
+        (CACHE / "news_srcs.json").write_text(json.dumps({"saved": now_wib().isoformat(), "srcs": diag}, ensure_ascii=False, indent=1), encoding="utf-8")
+        log("뉴스 매체 진단 " + " | ".join(f'{k} {v["feed"]}/{v["stock"]}/{v["market"]}/{v["drop"]}{"h" if v["via"]=="home" else ""}' for k, v in diag.items()))
+    except Exception as ex: log("뉴스 진단 저장 실패", ex)
     seen, out = set(), []
     for it in items:
         k = it["t"][:60]
@@ -1573,7 +1579,7 @@ def sun10y_card(iv):
         else:
             hist.append([ts, px, 1]); log(f"국채10Y 급변 보류 {last} → {px} (다음 빌드 확인)")
             px = last; prev = conf[-2][1] if len(conf) > 1 else px
-    elif not hist or hist[-1][1] != px: hist.append([ts, px])
+    elif not hist or hist[-1][1] != px or hist[-1][0] < (now_wib() - dt.timedelta(minutes=30)).isoformat(): hist.append([ts, px])   # 값이 같아도 30분마다 1점 (추세선 유지)
     lim = (now_wib() - dt.timedelta(days=7)).isoformat()
     hist = [h for h in hist if h[0] >= lim][-400:]
     if not os.environ.get("GITHUB_ACTIONS"):
