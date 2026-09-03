@@ -1208,8 +1208,13 @@ def _claude_cli():
     for name in ("claude", "claude.cmd", "claude.exe"):
         w = shutil.which(name)
         if w: return w
-    for c in [Path.home() / ".local" / "bin" / "claude.exe", Path.home() / "AppData" / "Roaming" / "npm" / "claude.cmd", Path.home() / "AppData" / "Local" / "Programs" / "claude" / "claude.exe"]:
+    cands = [Path.home() / ".local" / "bin" / "claude.exe", Path.home() / ".local" / "bin" / "claude", Path.home() / "AppData" / "Roaming" / "npm" / "claude.cmd",
+             Path.home() / "AppData" / "Local" / "Programs" / "claude" / "claude.exe", Path.home() / ".claude" / "bin" / "claude.exe", Path.home() / ".claude" / "local" / "claude.exe"]
+    for c in cands:
         if c.exists(): return str(c)
+    if not TR_STATE.get("cli_logged"):
+        TR_STATE["cli_logged"] = True
+        log("Claude Code 미발견 — 확인 경로:", "; ".join(str(c) for c in cands[:4]))
     return None
 
 def _claude_complete(prompt, key, model):
