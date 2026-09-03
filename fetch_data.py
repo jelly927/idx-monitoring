@@ -321,12 +321,12 @@ def yahoo_market(chunk=150):
     """IDX 가 막힌 환경(GitHub 러너 등)용: Yahoo 일봉(약 2개월)만으로 랭킹·전 종목·등락 집계를 만든다.
     외국인·공시는 Yahoo 에 없으므로 None (build 가 PC 분리 파일로 채운다)."""
     if yf is None: return None
-    names = all_tickers() or {}
+    names = all_tickers() or {}; shares = {}
     try:
         part_p = ROOT / "data" / "idx_part.json"
         if part_p.exists():
             for st in json.loads(part_p.read_text(encoding="utf-8")).get("stocks", []):
-                names.setdefault(st["t"], [st.get("n") or st["t"]])
+                names.setdefault(st["t"], [st.get("n") or st["t"]]); shares[st["t"]] = st.get("sh") or 0
     except Exception: pass
     codes = sorted(names)
     if len(codes) < 50: log("yahoo_market: 종목 목록 없음"); return None
@@ -355,7 +355,7 @@ def yahoo_market(chunk=150):
                 if vol <= 0: continue
                 pct = round((px / pc - 1) * 100, 2)
                 adv += px > pc; dec += px < pc; unch += px == pc; value += val
-                allst.append({"t": c, "n": names.get(c, [c])[0], "px": px, "prev": pc, "pct": pct, "val": val, "vol": vol,
+                allst.append({"t": c, "n": names.get(c, [c])[0], "px": px, "prev": pc, "pct": pct, "val": val, "vol": vol, "sh": shares.get(c, 0), "mcap": px * shares.get(c, 0),
                               "hi": float(row["High"]), "lo": float(row["Low"]), "ratio": round(val / avg, 1) if avg else None, "fnet": None, "live": 1 if in_session else 0})
             except Exception:
                 continue
@@ -408,7 +408,7 @@ def idx_market():
                 if not v or not st.get("px"): continue
                 pc = st["px"]                                  # 장중 기준가 = 전일(IDX 확정) 종가
                 st.update({"px": v["px"], "prev": pc, "pct": round((v["px"] / pc - 1) * 100, 2), "val": v["val"], "vol": v.get("vol"),
-                           "hi": v.get("hi"), "lo": v.get("lo"), "live": 1})
+                           "hi": v.get("hi"), "lo": v.get("lo"), "live": 1, "mcap": v["px"] * (st.get("sh") or 0)})
                 h = hist.get(st["t"], []); avg = sum(h) / len(h) if len(h) >= 5 else None
                 st["ratio"] = round(v["val"] / avg, 1) if avg else None
             mk["stocks"] = sorted(mk.get("stocks", []), key=lambda x: -(x["val"] or 0))
@@ -470,7 +470,9 @@ def _market_from_rows(d, rows):
     for r in stocks:
         if not r.get("Volume"): continue
         h = hist.get(r["StockCode"], []); avg = sum(h) / len(h) if len(h) >= 5 else None
+        sh = r.get("ListedShares") or 0
         allst.append({"t": r["StockCode"], "n": (r.get("StockName") or "").replace("Tbk.", "").strip(), "px": r["Close"], "prev": r["Previous"],
+                      "sh": sh, "mcap": (r["Close"] or 0) * sh,
                       "pct": round(r["Change"] / r["Previous"] * 100, 2), "val": r["Value"] or 0, "vol": r.get("Volume") or 0,
                       "hi": r.get("High"), "lo": r.get("Low"), "ratio": round((r["Value"] or 0) / avg, 1) if avg else None,
                       "fnet": ((r.get("ForeignBuy") or 0) - (r.get("ForeignSell") or 0)) * _upx(r)})
@@ -908,11 +910,16 @@ def all_tickers():
     j = idx.get("/primary/ListedCompany/GetCompanyProfiles", start=0, length=9999)
     rows = (j or {}).get("data") or []
     out = {}
+    if rows:
+        try: (CACHE / "profiles_sample.json").write_text(json.dumps(rows[:3], ensure_ascii=False, indent=1), encoding="utf-8")
+        except Exception: pass
     for r in rows:
         code = (r.get("KodeEmiten") or "").strip().upper(); name = (r.get("NamaEmiten") or "").strip()
         if len(code) == 4 and name:
             clean = re.sub(r"^PT\.?\s+|\s+Tbk\.?$|\s*\(Persero\)\s*", " ", name, flags=re.I).strip()
-            out[code] = [clean]
+            sec = (r.get("Sektor") or r.get("Sector") or r.get("sektor") or "").strip()
+            sub = (r.get("SubSektor") or r.get("SubSector") or r.get("subsektor") or "").strip()
+            out[code] = [clean, sec, sub]
     if out:
         f.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8"); log("tickers_all", len(out))
         return out
@@ -922,7 +929,7 @@ def all_tickers():
     return {}
 
 def build_alias():
-    universe = dict(all_tickers()); 
+    universe = {t: v[:1] for t, v in all_tickers().items()}          # [회사명, 업종, 세부업종] 중 회사명만 별칭으로
     for t, names in TICKERS.items(): universe[t] = list(dict.fromkeys((universe.get(t) or []) + names))
     codes = set(universe) - STOP
     code_rx = re.compile(r"\b([A-Z]{4})\b")
@@ -1255,7 +1262,7 @@ def _seen_put(k, t):
 def news_block(max_items=None):
     global CODES, CODE_RX, NAME_RX
     CODES, CODE_RX, NAME_RX = build_alias()
-    max_items = max_items or CFG.get("news_max_items", 80); items = []
+    max_items = max_items or CFG.get("news_max_items", 80); items = []; market = []
     for src in CFG["whitelist"]:
         entries = []
         for url in [u for u in (src.get("rss"), None) if u is not None]:
@@ -1272,7 +1279,8 @@ def news_block(max_items=None):
             title = html.unescape(e.get("title", "")).strip()
             summ = re.sub("<[^>]+>", " ", html.unescape(e.get("summary", "")))
             tags = screen(title + " " + summ)
-            if CFG.get("news_only_with_ticker", True) and not tags: continue
+            is_market = not tags
+            if is_market and not _market_news_ok(title, summ): continue     # 티커 없는 기사 중 시장·거시 관련만 별도 목록으로
             ts = e.get("published_parsed") or e.get("updated_parsed")
             est = not ts
             # 발행시각이 없는 항목(홈 스크랩·날짜 없는 피드)은 "처음 본 시각"을 기억해 매 빌드마다 최신으로 올라오지 않게 한다
@@ -1291,14 +1299,45 @@ def news_block(max_items=None):
             it = {"ts": t.isoformat(), "date": t.date().isoformat(), "time": t.strftime("%H:%M") if t.date() == now_wib().date() else t.strftime("%m/%d"),
                   "src": src["name"], "t": title, "tags": tags, "url": e.get("link", "")}
             if est: it["t_est"] = True
-            items.append(it)
-    items.sort(key=lambda x: x["ts"], reverse=True)
+            img = _entry_image(e)
+            if img: it["img"] = img
+            (market if is_market else items).append(it)
+    items.sort(key=lambda x: x["ts"], reverse=True); market.sort(key=lambda x: x["ts"], reverse=True)
     seen, out = set(), []
     for it in items:
         k = it["t"][:60]
         if k in seen: continue
         seen.add(k); out.append(it)
+    seen2, out2 = set(), []
+    for it in market:
+        k = it["t"][:60]
+        if k in seen2: continue
+        seen2.add(k); out2.append(it)
+    MARKET_NEWS[:] = translate_news(out2[:CFG.get("market_news_max", 30)])
     return translate_news(out[:max_items])
+
+MARKET_NEWS = []
+MARKET_RX = re.compile(r"\b(ihsg|jci|bei|bursa|ojk|bank indonesia|\bbi\b|bi rate|suku bunga|rupiah|kurs|inflasi|cpi|pdb|gdp|the fed|fomc|fed\b|wall street|dow|nasdaq|s&p|asia|asing|net (buy|sell)|obligasi|sbn|sun\b|yield|treasury|minyak|brent|batu ?bara|coal|nikel|nickel|cpo|sawit|emas\b|gold|dolar|dollar|ekspor|impor|neraca|apbn|fiskal|tarif|trump|china|tiongkok|prabowo|danantara|msci|ftse|resesi|pasar saham|pasar modal|stock market|bond|equit|investor)\b", re.I)
+def _market_news_ok(title, summ=""):
+    """티커가 없는 기사 중 시장 전체·거시·정책·원자재 관련만 시장 뉴스로 채택"""
+    return bool(MARKET_RX.search(title)) or bool(MARKET_RX.search((summ or "")[:200]))
+
+def _entry_image(e):
+    """RSS 항목의 썸네일 URL (media:thumbnail / media:content / enclosure / summary 안의 <img>)"""
+    try:
+        for m in (e.get("media_thumbnail") or []):
+            u = m.get("url")
+            if u: return u
+        for m in (e.get("media_content") or []):
+            u = m.get("url")
+            if u and (m.get("medium") in (None, "image") or re.search(r"\.(jpe?g|png|webp)", u, re.I)): return u
+        for l in (e.get("enclosures") or e.get("links") or []):
+            if str(l.get("type", "")).startswith("image") and l.get("href"): return l["href"]
+        m = re.search(r'<img[^>]+src=["\']([^"\']+)', e.get("summary", "") or "")
+        if m: return m.group(1)
+        if e.get("img"): return e["img"]
+    except Exception: pass
+    return None
 
 # =============================================================== manual / build
 def manual():
@@ -1328,6 +1367,34 @@ EV_TAGS = [  # 캘린더 제목 → 지표 태그 (한/영/인니). 같은 (날�
 ]
 def _ev_tags(title):
     t = (title or "").lower(); return frozenset(k for k, rx in EV_TAGS if re.search(rx, t))
+
+SECTOR_KO = {"Energy": "에너지", "Energi": "에너지", "Basic Materials": "소재", "Barang Baku": "소재", "Industrials": "산업재", "Perindustrian": "산업재",
+             "Consumer Non-Cyclicals": "필수소비재", "Barang Konsumen Primer": "필수소비재", "Consumer Cyclicals": "경기소비재", "Barang Konsumen Non-Primer": "경기소비재",
+             "Healthcare": "헬스케어", "Kesehatan": "헬스케어", "Financials": "금융", "Keuangan": "금융", "Properties & Real Estate": "부동산", "Properti & Real Estat": "부동산",
+             "Technology": "기술", "Teknologi": "기술", "Infrastructures": "인프라", "Infrastruktur": "인프라", "Transportation & Logistic": "운송·물류", "Transportasi & Logistik": "운송·물류"}
+SECTOR_ID = {"에너지": "Energi", "소재": "Barang Baku", "산업재": "Perindustrian", "필수소비재": "Konsumen Primer", "경기소비재": "Konsumen Non-Primer", "헬스케어": "Kesehatan",
+             "금융": "Keuangan", "부동산": "Properti", "기술": "Teknologi", "인프라": "Infrastruktur", "운송·물류": "Transportasi"}
+def sector_block(stocks):
+    """업종별 집계: 종목 수·상승/하락·대금가중 평균 등락·거래대금·대표 종목. 업종은 IDX 회사 프로필(IDX-IC) 기준."""
+    names = all_tickers() or {}
+    agg = {}
+    for st in stocks or []:
+        info = names.get(st["t"]) or []
+        sec = info[1] if len(info) > 1 and info[1] else ""
+        if not sec: continue
+        ko = SECTOR_KO.get(sec, sec)
+        a = agg.setdefault(ko, {"name": ko, "name_id": SECTOR_ID.get(ko, sec), "n": 0, "adv": 0, "dec": 0, "val": 0.0, "wsum": 0.0, "mcap": 0.0, "top": []})
+        pct = st.get("pct") or 0; val = st.get("val") or 0; mc = st.get("mcap") or 0
+        a["n"] += 1; a["adv"] += pct > 0; a["dec"] += pct < 0; a["val"] += val; a["mcap"] += mc
+        a["wsum"] += pct * (mc if mc else val)
+        a["top"].append((mc if mc else val, st["t"], pct))
+    out = []
+    for a in agg.values():
+        w = a["mcap"] if a["mcap"] else a["val"]
+        a["pct"] = round(a["wsum"] / w, 2) if w else 0.0
+        a["top"] = [{"t": t, "pct": p} for _, t, p in sorted(a["top"], reverse=True)[:4]]
+        a.pop("wsum", None); out.append(a)
+    return sorted(out, key=lambda x: -x["val"])
 
 PUBLISHED_IN_BUILD = False
 def _auto_publish():
@@ -1443,7 +1510,8 @@ def build():
             "value": P("value"), "gainers": P("gainers"), "losers": P("losers"),
             "turnover": P("turnover"), "foreign_top": P("foreign_top"), "foreign_bottom": P("foreign_bottom"),
             "stocks": P("stocks"),
-            "news": news_block(), "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
+            "sectors": sector_block(P("stocks")),
+            "news": news_block(), "market_news": MARKET_NEWS, "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
             "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     # data.js: index.html 을 파일(file://)로 직접 열어도 마지막 수집 데이터가 보이도록 (fetch 는 file:// 에서 막힘)
