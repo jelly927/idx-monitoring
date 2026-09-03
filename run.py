@@ -104,6 +104,10 @@ def auto_push():
         import json as _j
         cfg = _j.loads((ROOT / "config.json").read_text(encoding="utf-8"))
         if not cfg.get("auto_push"): return
+        try:
+            import fetch_data as _fd
+            if getattr(_fd, "PUBLISHED_IN_BUILD", False): return     # build() 안에서 이미 올림
+        except Exception: pass
         if (ROOT / "secrets.json").exists():   # git 없이 GitHub API 로 올림 (publish.py) — 토큰은 secrets.json 에 본인이 저장
             args = [sys.executable, str(ROOT / "publish.py"), "--quiet"] + (["--data"] if cfg.get("auto_push_data") else [])
             r = subprocess.run(args, cwd=str(ROOT), capture_output=True, text=True, timeout=300)
