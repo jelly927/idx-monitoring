@@ -16,7 +16,7 @@ API = "https://api.github.com"
 CODE = ["index.html", "fetch_data.py", "run.py", "selftest.py", "publish.py", "config.json", "tickers.json", "requirements.txt",
         "README.md", "DEPLOY.md", ".gitignore", "start.bat", "push.bat", "share.bat", "make_share.py", "setup_autostart.bat",
         "prepare_upload.py", "upload.bat", "publish.bat", ".github/workflows/update.yml", "worker/worker.js",
-        "data/manual.json", "data/idx_part.json", "data/cache/tr_claude.json", "data/cache/rss_map.json", "data/cache/tickers_all.json", "data/cache/kisi_news.json"]
+        "data/manual.json", "data/idx_part.json", "data/cache/tr_claude.json", "data/cache/rss_map.json", "data/cache/tickers_all.json", "data/cache/kisi_news.json", "data/cache/sun10y_hist.json", "data/banners.json"]
 DATA = ["data.json", "data.js", "data/cache/investing_cal.json", "data/cache/news_seen.json"]
 
 def token():
