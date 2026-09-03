@@ -1,22 +1,22 @@
 {
  "mode": "live",
- "updated": "2026-09-03 19:48",
+ "updated": "2026-09-03 20:05",
  "delay_min": 0,
- "fx_basis": "13.03 IDR/KRW · USD/IDR 17,655 · USD/KRW 1,355 · 17:13 Yahoo",
- "idr_per_krw": 13.0258,
+ "fx_basis": "13.02 IDR/KRW · USD/IDR 17,655 · USD/KRW 1,355 · 17:13 Yahoo",
+ "idr_per_krw": 13.0249,
  "indices": [
   {
    "code": "COMPOSITE",
    "label": "IHSG",
    "name": "자카르타 종합",
-   "px": 6667.89,
-   "prev": 6595.78,
-   "pct": 1.09,
+   "px": 6518.12,
+   "prev": 6521.75,
+   "pct": -0.06,
    "spark": [
     6667.891,
-    6633.364,
-    6630.982,
-    6628.04,
+    6633.503,
+    6636.513,
+    6624.438,
     6629.4,
     6630.128,
     6627.969,
@@ -83,13 +83,13 @@
     6667.021,
     6664.316,
     6668.232,
-    6663.101,
+    6663.931,
     6663.685,
     6666.338,
     6661.948,
     6664.344,
     6667.902,
-    6667.334,
+    6665.106,
     6668.11,
     6664.391,
     6665.043,
@@ -135,15 +135,15 @@
     6675.014
    ],
    "inv": false,
-   "asof": "IDX 09/03 종가"
+   "asof": "IDX 08/28 종가"
   },
   {
    "code": "LQ45",
    "label": "LQ45",
    "name": "대형 45종목",
-   "px": 662.77,
-   "prev": 651.87,
-   "pct": 1.67,
+   "px": 641.82,
+   "prev": 641.07,
+   "pct": 0.12,
    "spark": [
     662.773,
     654.68,
@@ -209,15 +209,15 @@
     660.422,
     661.594,
     660.662,
-    660.361,
-    660.797,
-    660.997,
-    660.878,
-    660.351,
-    661.437,
-    660.34,
-    661.317,
-    660.644,
+    660.557,
+    660.573,
+    660.982,
+    660.492,
+    660.854,
+    661.158,
+    660.805,
+    661.219,
+    660.342,
     661.09,
     660.415,
     660.19,
@@ -314,24 +314,29 @@
    "prev": 7.229,
    "pct": -12.7,
    "spark": [
+    7.005,
+    6.96,
+    6.99,
+    6.99,
     7.229,
     7.102
    ],
+   "span": "1W",
    "inv": true,
-   "asof": "investing.com 05:39:59",
+   "asof": "investing.com 05:39",
    "unit": "bp"
   }
  ],
  "index": {
-  "session": "IDX 09/03 종가",
-  "high": 6681.838,
-  "low": 6614.714,
-  "prev": 6595.78,
-  "ytd": -22.88,
-  "m1": 6.95,
-  "value_idr": 18607401563700,
-  "volume": 39305835265,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-03 19:36",
+  "session": "IDX 08/28 종가",
+  "high": 6566.905,
+  "low": 6495.737,
+  "prev": 6521.75,
+  "ytd": -24.62,
+  "m1": 4.55,
+  "value_idr": 15131881058755,
+  "volume": 34412145624,
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-03 20:01",
   "rank_asof": null,
   "rank_date": "2026-09-03",
   "adv": 416,
@@ -15586,7 +15591,113 @@
    ]
   }
  ],
+ "dividends": {
+  "MARK": {
+   "dps": 20.0,
+   "type": "Interim",
+   "ex": "2026-08-14",
+   "pay": "2026-09-04",
+   "yld": "8.11%",
+   "name": "Mark Dynamics Indonesia Tbk PT"
+  },
+  "INPP": {
+   "dps": 4.5,
+   "type": "Interim",
+   "ex": "2026-08-21",
+   "pay": "2026-09-10",
+   "yld": "1.29%",
+   "name": "Indonesian Paradise Property"
+  },
+  "BPII": {
+   "dps": 3.54,
+   "type": "Interim",
+   "ex": "2026-08-27",
+   "pay": "2026-09-11",
+   "yld": "1.24%",
+   "name": "Batavia Prosperindo Int"
+  },
+  "BBCA": {
+   "dps": 25.0,
+   "type": "Interim",
+   "ex": "2026-08-31",
+   "pay": "2026-09-16",
+   "yld": "5.88%",
+   "name": "Bank Central Asia Tbk"
+  },
+  "YUPI": {
+   "dps": 17.01486,
+   "type": "Interim",
+   "ex": "2026-09-01",
+   "pay": "2026-09-10",
+   "yld": "4.82%",
+   "name": "Yupi Indo Jelly Gum PT Tbk"
+  },
+  "CMRY": {
+   "dps": 100.0,
+   "type": "Interim",
+   "ex": "2026-09-04",
+   "pay": "2026-09-18",
+   "yld": "6.38%",
+   "name": "Cisarua Mountain Dairy Tbk PT"
+  }
+ },
  "news": [
+  {
+   "ts": "2026-09-03T19:56:26+07:00",
+   "date": "2026-09-03",
+   "time": "19:56",
+   "src": "Liputan6",
+   "t": "OCBC Kini Genggam 20% Saham Great Eastern Life Indonesia",
+   "tags": [
+    "NISP"
+   ],
+   "url": "https://www.liputan6.com/saham/read/8284185/ocbc-kini-genggam-20-saham-great-eastern-life-indonesia",
+   "img": "https://cdn1-production-images-kly.akamaized.net/wmYNECXEzDFvuHSlTTNAdtrxzzg=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5285412/original/045032800_1752672091-Foto_2_-_Gedung_OCBC_Space.jpg",
+   "t_id": "OCBC Kini Genggam 20% Saham Great Eastern Life Indonesia",
+   "t_ko": "OCBC는 이제 Great Eastern Life Indonesia 지분의 20%를 보유하고 있습니다."
+  },
+  {
+   "ts": "2026-09-03T19:50:00+07:00",
+   "date": "2026-09-03",
+   "time": "19:50",
+   "src": "Bloomberg Technoz",
+   "t": "Mandiri: El Nino Berpotensi Seret Inflasi ke 3,5%",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120462/mandiri-el-nino-berpotensi-seret-inflasi-ke-3-5",
+   "img": "https://images.bloombergtechnoz.com/data/2026/03/image-20260302161920.jpg",
+   "t_ko": "Mandiri: El Nino, 인플레이션 3.5%까지 끌어올릴 가능성",
+   "t_id": "Mandiri: El Nino Berpotensi Seret Inflasi ke 3,5%"
+  },
+  {
+   "ts": "2026-09-03T19:42:11+07:00",
+   "date": "2026-09-03",
+   "time": "19:42",
+   "src": "Detik",
+   "t": "Bos BGN Benarkan Bakal Pindah Kantor ke Graha Merah Putih Telkom",
+   "tags": [
+    "TLKM"
+   ],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8647325/bos-bgn-benarkan-bakal-pindah-kantor-ke-graha-merah-putih-telkom",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/27/tancap-gas-kepala-bgn-sudaryono-pecat-261-pegawai-bermasalah-1785138053252_169.jpeg?w=360&q=90",
+   "t_ko": "BGN 대표, Telkom Graha Merah Putih로 사무실 이전 확인",
+   "t_id": "Bos BGN Benarkan Bakal Pindah Kantor ke Graha Merah Putih Telkom"
+  },
+  {
+   "ts": "2026-09-03T19:38:00+07:00",
+   "date": "2026-09-03",
+   "time": "19:38",
+   "src": "IDX Channel",
+   "t": "Laba SIG (SMGR) Melonjak 470 Persen, Ini Faktor Penopangnya",
+   "tags": [
+    "SMGR"
+   ],
+   "url": "https://www.idxchannel.com/market-news/laba-sig-smgr-melonjak-470-persen-ini-faktor-penopangnya",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/03/pabrik_SIG__2_.jpeg",
+   "t_ko": "SIG(SMGR) 순이익 470% 급증 — 이를 뒷받침한 요인",
+   "t_id": "Laba SIG (SMGR) Melonjak 470 Persen, Ini Faktor Penopangnya"
+  },
   {
    "ts": "2026-09-03T19:30:00+07:00",
    "date": "2026-09-03",
@@ -15813,20 +15924,6 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2025/12/02/BMRI__2___2_.jpg",
    "t_ko": "Indosat(ISAT) Rp2,550억 채무 상환 — Pefindo, 증권 2건 등급 철회",
    "t_id": "Lunasi Utang Rp255 Miliar, Peringkat Dua Efek Indosat Ditarik Pefindo"
-  },
-  {
-   "ts": "2026-09-03T12:13:00+07:00",
-   "date": "2026-09-03",
-   "time": "12:13",
-   "src": "IDX Channel",
-   "t": "Saham ERAA Terbang 15 Persen, Buyback Rp500 Miliar hingga Momentum iPhone 18 Pro Jadi Sorotan",
-   "tags": [
-    "ERAA"
-   ],
-   "url": "https://www.idxchannel.com/market-news/saham-eraa-terbang-15-persen-buyback-rp500-miliar-hingga-momentum-iphone-18-pro-jadi-sorotan",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/09/04/erajaya_eraa_ibox.jpg",
-   "t_ko": "ERAA 15% 급등 — Rp5,000억 자사주 매입·iPhone 18 Pro 모멘텀 부각",
-   "t_id": "Saham ERAA Terbang 15 Persen, Buyback Rp500 Miliar hingga Momentum iPhone 18 Pro Jadi Sorotan"
   },
   {
    "ts": "2026-09-03T11:12:48+07:00",
@@ -16271,8 +16368,8 @@
    "t": "LPS Soroti Bunga Khusus Deposito Besar Hambat Intermediasi Perbankan",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/929475/lps-soroti-bunga-khusus-deposito-besar-hambat-intermediasi-perbankan",
-   "t_ko": "LPS, 은행 중개 장벽으로 거액 예금에 대한 특별한 관심 강조",
-   "t_id": "LPS Soroti Bunga Khusus Deposito Besar Hambat Intermediasi Perbankan"
+   "t_ko": "LPS, 거액 예금 특별금리가 은행 중개기능 저해 지적",
+   "t_id": "LPS Soroti Bunga Khusus Deposito Jumbo Hambat Intermediasi Perbankan"
   },
   {
    "ts": "2026-09-03T19:40:00+07:00",
@@ -16282,8 +16379,8 @@
    "t": "Menerapkan Matriks Eisenhower untuk Pengendalian Inflasi Sultra",
    "tags": [],
    "url": "https://mediaindonesia.com/opini/929469/menerapkan-matriks-eisenhower-untuk-pengendalian-inflasi-sultra",
-   "t_id": "Menerapkan Matriks Eisenhower untuk Pengendalian Inflasi Sultra",
-   "t_ko": "남동부 술라웨시 인플레이션을 제어하기 위해 아이젠하워 매트릭스 적용"
+   "t_ko": "Sultra 인플레이션 관리에 Eisenhower Matrix 적용",
+   "t_id": "Menerapkan Matriks Eisenhower untuk Pengendalian Inflasi Sultra"
   },
   {
    "ts": "2026-09-03T19:20:00+07:00",
@@ -16779,17 +16876,19 @@
    "k": "USD/IDR (Yahoo 15분 지연)",
    "v": "17,655",
    "d": -0.24,
-   "ytd": -5.3,
+   "ytd": 5.59,
    "inv": true,
-   "note": null,
+   "note": "연초 16,720",
    "k_ko": "USD/IDR (Yahoo 15분 지연)",
-   "k_id": "USD/IDR (Yahoo, tunda 15 mnt)"
+   "k_id": "USD/IDR (Yahoo, tunda 15 mnt)",
+   "note_ko": "연초 16,720",
+   "note_id": "Awal tahun 16,720"
   },
   {
    "k": "IDR/KRW (1원당 루피아)",
    "v": "12.99",
    "d": 0.79,
-   "ytd": -10.58,
+   "ytd": 11.84,
    "inv": true,
    "note": "연초 11.6144",
    "k_ko": "IDR/KRW (1원당 루피아)",
@@ -16799,15 +16898,15 @@
   },
   {
    "k": "CPO (MYR/t)",
-   "v": "확인 필요",
-   "d": null,
+   "v": "4,984",
+   "d": 0.52,
    "ytd": null,
    "inv": false,
-   "note": "Bursa Malaysia FCPO 근월물",
+   "note": "Bursa Malaysia FCPO 근월물 · investing.com",
    "k_ko": "CPO (MYR/t)",
    "k_id": "CPO (MYR/t)",
-   "note_ko": "Bursa Malaysia FCPO 근월물",
-   "note_id": "Bursa Malaysia FCPO 근월물"
+   "note_ko": "Bursa Malaysia FCPO 근월물 · investing.com",
+   "note_id": "Bursa Malaysia FCPO 근월물 · investing.com"
   },
   {
    "k": "BI Rate",
@@ -16822,9 +16921,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "96.68",
-   "d": 1.1,
-   "ytd": 58.75,
+   "v": "96.01",
+   "d": 0.4,
+   "ytd": 57.65,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16832,8 +16931,8 @@
   },
   {
    "k": "DXY",
-   "v": "99.04",
-   "d": -0.53,
+   "v": "98.95",
+   "d": -0.61,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -16842,8 +16941,8 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.77%",
-   "d": -0.63,
+   "v": "4.74%",
+   "d": -1.08,
    "ytd": null,
    "inv": true,
    "note": null,
@@ -17107,17 +17206,6 @@
   },
   {
    "date": "2026-09-01",
-   "t": "BMAS",
-   "kind": "corp",
-   "imp": 3,
-   "title": "실적 공시 · Penyampaian Laporan Keuangan Interim Auditan",
-   "src": "IDX 공시",
-   "country": "ID",
-   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan Interim Auditan",
-   "title_id": "Kinerja · Penyampaian Laporan Keuangan Interim Auditan"
-  },
-  {
-   "date": "2026-09-01",
    "t": "WIKA",
    "kind": "corp",
    "imp": 2,
@@ -17210,11 +17298,14 @@
    "t": "YUPI",
    "kind": "div",
    "imp": 1,
-   "title": "배당 기준일(DPS) · 중간현금배당 — Yupi Indo Jelly Gum",
+   "title": "배당 기준일(DPS) · 중간현금배당 Rp17/주 — Yupi Indo Jelly Gum",
    "src": "IDX 캘린더",
-   "title_id": "DPS Dividen Tunai Interim PT Yupi Indo Jelly Gum Tbk",
+   "title_id": "DPS Dividen Tunai Interim PT Yupi Indo Jelly Gum Tbk — Rp17/saham",
+   "dps": 17.01486,
+   "pay": "2026-09-10",
+   "yld": "4.82%",
    "country": "ID",
-   "title_ko": "배당 기준일(DPS) · 중간현금배당 — Yupi Indo Jelly Gum"
+   "title_ko": "배당 기준일(DPS) · 중간현금배당 Rp17/주 — Yupi Indo Jelly Gum"
   },
   {
    "date": "2026-09-02",
@@ -17551,11 +17642,14 @@
    "t": "CMRY",
    "kind": "div",
    "imp": 3,
-   "title": "배당부 마감(cum) · 중간현금배당 — Cisarua Mountain Dairy",
+   "title": "배당부 마감(cum) · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy",
    "src": "IDX 캘린더",
-   "title_id": "cum Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk",
+   "title_id": "cum Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk — Rp100/saham",
+   "dps": 100.0,
+   "pay": "2026-09-18",
+   "yld": "6.38%",
    "country": "ID",
-   "title_ko": "배당부 마감(cum) · 중간현금배당 — Cisarua Mountain Dairy"
+   "title_ko": "배당부 마감(cum) · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy"
   },
   {
    "date": "2026-09-03",
@@ -17797,22 +17891,28 @@
    "t": "CMRY",
    "kind": "div",
    "imp": 3,
-   "title": "배당락(ex) · 중간현금배당 — Cisarua Mountain Dairy",
+   "title": "배당락(ex) · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy",
    "src": "IDX 캘린더",
-   "title_id": "ex Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk",
+   "title_id": "ex Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk — Rp100/saham",
+   "dps": 100.0,
+   "pay": "2026-09-18",
+   "yld": "6.38%",
    "country": "ID",
-   "title_ko": "배당락(ex) · 중간현금배당 — Cisarua Mountain Dairy"
+   "title_ko": "배당락(ex) · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy"
   },
   {
    "date": "2026-09-04",
    "t": "MARK",
    "kind": "div",
    "imp": 1,
-   "title": "배당 지급 · 중간현금배당 — Mark Dynamics Indonesia",
+   "title": "배당 지급 · 중간현금배당 Rp20/주 — Mark Dynamics Indonesia",
    "src": "IDX 캘린더",
-   "title_id": "Pembayaran Dividen Tunai Interim PT Mark Dynamics Indonesia Tbk.",
+   "title_id": "Pembayaran Dividen Tunai Interim PT Mark Dynamics Indonesia Tbk. — Rp20/saham",
+   "dps": 20.0,
+   "pay": "2026-09-04",
+   "yld": "8.11%",
    "country": "ID",
-   "title_ko": "배당 지급 · 중간현금배당 — Mark Dynamics Indonesia"
+   "title_ko": "배당 지급 · 중간현금배당 Rp20/주 — Mark Dynamics Indonesia"
   },
   {
    "date": "2026-09-04",
@@ -18008,11 +18108,14 @@
    "t": "CMRY",
    "kind": "div",
    "imp": 1,
-   "title": "배당 기준일(DPS) · 중간현금배당 — Cisarua Mountain Dairy",
+   "title": "배당 기준일(DPS) · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy",
    "src": "IDX 캘린더",
-   "title_id": "DPS Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk",
+   "title_id": "DPS Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk — Rp100/saham",
+   "dps": 100.0,
+   "pay": "2026-09-18",
+   "yld": "6.38%",
    "country": "ID",
-   "title_ko": "배당 기준일(DPS) · 중간현금배당 — Cisarua Mountain Dairy"
+   "title_ko": "배당 기준일(DPS) · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy"
   },
   {
    "date": "2026-09-07",
@@ -18408,22 +18511,28 @@
    "t": "YUPI",
    "kind": "div",
    "imp": 1,
-   "title": "배당 지급 · 중간현금배당 — Yupi Indo Jelly Gum",
+   "title": "배당 지급 · 중간현금배당 Rp17/주 — Yupi Indo Jelly Gum",
    "src": "IDX 캘린더",
-   "title_id": "Pembayaran Dividen Tunai Interim PT Yupi Indo Jelly Gum Tbk",
+   "title_id": "Pembayaran Dividen Tunai Interim PT Yupi Indo Jelly Gum Tbk — Rp17/saham",
+   "dps": 17.01486,
+   "pay": "2026-09-10",
+   "yld": "4.82%",
    "country": "ID",
-   "title_ko": "배당 지급 · 중간현금배당 — Yupi Indo Jelly Gum"
+   "title_ko": "배당 지급 · 중간현금배당 Rp17/주 — Yupi Indo Jelly Gum"
   },
   {
    "date": "2026-09-10",
    "t": "INPP",
    "kind": "div",
    "imp": 1,
-   "title": "배당 지급 · 중간현금배당 — Indonesian Paradise Property",
+   "title": "배당 지급 · 중간현금배당 Rp4.5/주 — Indonesian Paradise Property",
    "src": "IDX 캘린더",
-   "title_id": "Pembayaran Dividen Tunai Interim Indonesian Paradise Property Tbk",
+   "title_id": "Pembayaran Dividen Tunai Interim Indonesian Paradise Property Tbk — Rp4.5/saham",
+   "dps": 4.5,
+   "pay": "2026-09-10",
+   "yld": "1.29%",
    "country": "ID",
-   "title_ko": "배당 지급 · 중간현금배당 — Indonesian Paradise Property"
+   "title_ko": "배당 지급 · 중간현금배당 Rp4.5/주 — Indonesian Paradise Property"
   },
   {
    "date": "2026-09-10",
@@ -18627,11 +18736,14 @@
    "t": "BPII",
    "kind": "div",
    "imp": 1,
-   "title": "배당 지급 · 중간현금배당 — Batavia Prosperindo Internasional",
+   "title": "배당 지급 · 중간현금배당 Rp3.54/주 — Batavia Prosperindo Internasional",
    "src": "IDX 캘린더",
-   "title_id": "Pembayaran Dividen Tunai Interim PT Batavia Prosperindo Internasional Tbk.",
+   "title_id": "Pembayaran Dividen Tunai Interim PT Batavia Prosperindo Internasional Tbk. — Rp3.54/saham",
+   "dps": 3.54,
+   "pay": "2026-09-11",
+   "yld": "1.24%",
    "country": "ID",
-   "title_ko": "배당 지급 · 중간현금배당 — Batavia Prosperindo Internasional"
+   "title_ko": "배당 지급 · 중간현금배당 Rp3.54/주 — Batavia Prosperindo Internasional"
   },
   {
    "date": "2026-09-11",
@@ -18965,11 +19077,14 @@
    "t": "BBCA",
    "kind": "div",
    "imp": 1,
-   "title": "배당 지급 · 중간현금배당 — Bank Central Asia",
+   "title": "배당 지급 · 중간현금배당 Rp25/주 — Bank Central Asia",
    "src": "IDX 캘린더",
-   "title_id": "Pembayaran Dividen Tunai Interim PT Bank Central Asia Tbk.",
+   "title_id": "Pembayaran Dividen Tunai Interim PT Bank Central Asia Tbk. — Rp25/saham",
+   "dps": 25.0,
+   "pay": "2026-09-16",
+   "yld": "5.88%",
    "country": "ID",
-   "title_ko": "배당 지급 · 중간현금배당 — Bank Central Asia"
+   "title_ko": "배당 지급 · 중간현금배당 Rp25/주 — Bank Central Asia"
   },
   {
    "date": "2026-09-16",
@@ -19201,6 +19316,39 @@
   }
  ],
  "announcements": [
+  {
+   "ts": "2026-09-03T19:55:59+07:00",
+   "date": "2026-09-03",
+   "time": "19:55",
+   "t": "EDGE",
+   "type": "STOCK",
+   "title": "Transaksi Material Tanpa Persetujuan RUPS",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/ee28316f16_da808554c0.pdf",
+   "title_ko": "주주총회 승인 불요 중요거래 공시",
+   "title_id": "Transaksi Material Tanpa Persetujuan RUPS"
+  },
+  {
+   "ts": "2026-09-03T19:55:07+07:00",
+   "date": "2026-09-03",
+   "time": "19:55",
+   "t": "INKP",
+   "type": "STOCK",
+   "title": "Saham Hilang",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/45e1c3b930_6b812d6fc8.pdf",
+   "title_id": "Saham Hilang",
+   "title_ko": "사라진 주식"
+  },
+  {
+   "ts": "2026-09-03T19:37:55+07:00",
+   "date": "2026-09-03",
+   "time": "19:37",
+   "t": "MGLV",
+   "type": "STOCK",
+   "title": "Rencana Transaksi Perubahan Kegiatan Usaha",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/9feef64fd3_fc2e53d5a5.pdf",
+   "title_ko": "사업목적 변경 거래 계획",
+   "title_id": "Rencana Transaksi Perubahan Kegiatan Usaha"
+  },
   {
    "ts": "2026-09-03T19:08:15+07:00",
    "date": "2026-09-03",
@@ -20047,45 +20195,12 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e036cd1608_05ab121b42.pdf",
    "title_ko": "보도자료 — MR.D.I.Y. Indonesia 1,400호점 달성, 2026 확장 목표 순항",
    "title_id": "Siaran Pers - MR.D.I.Y. Indonesia Resmi Capai 1.400 Toko, Ekspansi 2026 Sesuai Target"
-  },
-  {
-   "ts": "2026-09-03T16:37:21+07:00",
-   "date": "2026-09-03",
-   "time": "16:37",
-   "t": "R-ABFII",
-   "type": "STOCK",
-   "title": "Laporan Jumlah Peredaran Unit Penyertaan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/1f161ae04d_15a9f69537.pdf",
-   "title_ko": "수익증권 유통 좌수 보고",
-   "title_id": "Laporan Jumlah Peredaran Unit Penyertaan"
-  },
-  {
-   "ts": "2026-09-03T16:32:19+07:00",
-   "date": "2026-09-03",
-   "time": "16:32",
-   "t": "BQ",
-   "type": "STOCK",
-   "title": "Laporan Jumlah Structured Warrant Beredar",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b2961f6ed3_978f7dba07.pdf",
-   "title_ko": "구조화 워런트 유통 수량 보고",
-   "title_id": "Laporan Jumlah Structured Warrant Beredar"
-  },
-  {
-   "ts": "2026-09-03T16:29:40+07:00",
-   "date": "2026-09-03",
-   "time": "16:29",
-   "t": "BQ",
-   "type": "STOCK",
-   "title": "Penyesuaian Structured Warrant",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/007f38c12f_708d408971.pdf",
-   "title_ko": "구조화 워런트 조정",
-   "title_id": "Penyesuaian Structured Warrant"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-03 19:36",
+  "idx_from_pc": "2026-09-03 20:01",
   "bi": null,
   "hist_days": 20,
   "calendar": "investing.com"
