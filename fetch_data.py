@@ -975,9 +975,10 @@ def macro_block(bi):
         out.append({"k": k, "v": fmt.format(q["px"]), "d": d, "ytd": ytd, "inv": inv, "note": " · ".join(x for x in (note, src) if x) or None})
     usdidr = yq("USDIDR=X")
     if bi and bi.get("idr_close"):
-        row("USD/IDR (BI bid 종가)", {"px": bi["idr_close"], "prev": usdidr["prev"] if usdidr else None}, inv=True, base=yb.get("USDIDR"), fmt="{:,.0f}", inverse_ytd=True, note=f'BI {bi.get("as_of")}')
-    row("USD/IDR (Yahoo 15분 지연)", usdidr, inv=True, base=yb.get("USDIDR"), fmt="{:,.0f}", inverse_ytd=True)
-    row("IDR/KRW (1원당 루피아)", yq("KRWIDR=X"), inv=True, base=yb.get("KRWIDR"), inverse_ytd=True, note=f'연초 {yb.get("KRWIDR")}')
+        row("USD/IDR (BI bid 종가)", {"px": bi["idr_close"], "prev": usdidr["prev"] if usdidr else None}, inv=True, base=yb.get("USDIDR"), fmt="{:,.0f}", note=f'BI {bi.get("as_of")}')
+    # YTD 는 수치 기준(연초 대비 %): 루피아 약세 = 수치 상승 = + 표시(빨강). 이전엔 역수로 계산돼 부호가 반대였음
+    row("USD/IDR (Yahoo 15분 지연)", usdidr, inv=True, base=yb.get("USDIDR"), fmt="{:,.0f}", note=f'연초 {yb.get("USDIDR"):,}')
+    row("IDR/KRW (1원당 루피아)", yq("KRWIDR=X"), inv=True, base=yb.get("KRWIDR"), note=f'연초 {yb.get("KRWIDR")}')
     # 국채 10년물 — investing.com 실시간이 1순위, 실패 시 BI 보도자료 → Kontan → 수기
     sun = sun_prev = sun_src = None
     iv = _IV.get("SUN10Y")
@@ -1562,6 +1563,103 @@ def _auto_publish():
     except Exception as e:
         log("auto_push 오류", str(e)[:120])
 
+# ---------------- 배당 금액 (investing.com 배당 캘린더 · 인도네시아) + 국채 10년물 일별 이력 ----------------
+INV_DIV_SVC = "https://www.investing.com/dividends-calendar/Service/getCalendarFilteredData"
+INV_DIV_PAGE = "https://www.investing.com/dividends-calendar/"
+DIV_P = CACHE / "dividends.json"
+def _div_parse(frag):
+    """XHR 조각(<tr>…) → {code: {dps, type, ex, pay, yld, name}}"""
+    out = {}
+    if not frag or BeautifulSoup is None: return out
+    soup = BeautifulSoup("<table>" + frag + "</table>", "lxml")
+    for tr in soup.select("tr"):
+        if tr.has_attr("tablesorterdivider"): continue
+        tds = tr.select("td")
+        if len(tds) < 7: continue
+        a = tds[1].select_one("a"); code = (a.get_text(strip=True) if a else "").upper()
+        if not code: continue
+        def d8(s):
+            try: return dt.datetime.strptime(s.strip(), "%b %d, %Y").date().isoformat()
+            except Exception: return None
+        try: dps = float(tds[3].get_text(strip=True).replace(",", ""))
+        except Exception: dps = None
+        sp = tds[4].select_one("span[title]")
+        out[code] = {"dps": dps, "type": (sp.get("title") if sp else "") or "", "ex": d8(tds[2].get_text()), "pay": d8(tds[5].get_text()),
+                     "yld": tds[6].get_text(strip=True) or None, "name": (tds[1].get("title") or "").strip()}
+    return out
+
+def investing_dividends(days_back=20, days_ahead=30):
+    """인도네시아(country 48) 배당: 배당락일·주당 배당금·지급일·수익률. 6시간 캐시, 실패 시 마지막 성공분"""
+    try: cache = json.loads(DIV_P.read_text(encoding="utf-8"))
+    except Exception: cache = {}
+    try:
+        if cache.get("saved") and (now_wib() - dt.datetime.fromisoformat(cache["saved"])).total_seconds() < 6 * 3600: return cache.get("items") or {}
+    except Exception: pass
+    d0 = (now_wib().date() - dt.timedelta(days=days_back)).isoformat(); d1 = (now_wib().date() + dt.timedelta(days=days_ahead)).isoformat()
+    form = [("country[]", "48"), ("dateFrom", d0), ("dateTo", d1), ("currentTab", "custom"), ("limit_from", "0")]
+    items = {}
+    try:
+        r = requests.post(INV_DIV_SVC, data=form, timeout=40, headers={"User-Agent": UA, "X-Requested-With": "XMLHttpRequest", "Referer": INV_DIV_PAGE})
+        if r.status_code == 200: items = _div_parse((r.json() or {}).get("data", ""))
+    except Exception as e: log("배당 investing http 실패", str(e)[:80])
+    if not items:
+        def work(pg):
+            pg.goto(INV_DIV_PAGE, wait_until="domcontentloaded", timeout=60000); _wait_cf(pg)
+            return pg.evaluate("""async ([d0, d1]) => {
+                const fd = new URLSearchParams(); fd.append('country[]', '48'); fd.append('dateFrom', d0); fd.append('dateTo', d1); fd.append('currentTab', 'custom'); fd.append('limit_from', '0');
+                const r = await fetch('/dividends-calendar/Service/getCalendarFilteredData', {method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded', 'X-Requested-With': 'XMLHttpRequest'}, body: fd.toString()});
+                const j = await r.json(); return j.data || ''; }""", [d0, d1])
+        try: items = _div_parse(_pw_session(work, "investing-dividends") or "")
+        except Exception as e: log("배당 investing browser 실패", str(e)[:80])
+    if items:
+        old = cache.get("items") or {}; old.update(items)                # 지난 항목은 유지(30일)
+        lim = (now_wib().date() - dt.timedelta(days=30)).isoformat()
+        old = {k: v for k, v in old.items() if (v.get("ex") or "9999") >= lim}
+        try: DIV_P.write_text(json.dumps({"saved": now_wib().isoformat(), "items": old}, ensure_ascii=False), encoding="utf-8")
+        except Exception: pass
+        log(f"배당 investing.com {len(items)}건 (캐시 {len(old)})"); return old
+    log("배당 investing.com 실패 → 캐시 사용"); return cache.get("items") or {}
+
+def attach_dividends(corp, divs):
+    """배당 캘린더 항목(kind=div)에 주당 배당금·지급일·수익률을 붙이고 제목에 Rp/주 를 넣는다"""
+    n = 0
+    for e in corp:
+        if e.get("kind") != "div": continue
+        v = divs.get(e.get("t") or "")
+        if not v or not v.get("dps"): continue
+        e["dps"] = v["dps"]; e["pay"] = v.get("pay"); e["yld"] = v.get("yld"); n += 1
+        amt = f"Rp{v['dps']:,.2f}".rstrip("0").rstrip(".") if v["dps"] < 10 else f"Rp{v['dps']:,.0f}"
+        if "/주" not in e["title"]: e["title"] = e["title"].replace("현금배당", f"현금배당 {amt}/주", 1)
+        if e.get("title_id") and "/saham" not in e["title_id"]: e["title_id"] = e["title_id"] + f" — {amt}/saham"
+    return n
+
+SUN_DAILY_P = CACHE / "sun10y_daily.json"
+INV_SUN_HIST = "https://www.investing.com/rates-bonds/indonesia-10-year-bond-yield-historical-data"
+def sun10y_daily():
+    """investing.com 국채 10년물 일별 종가(최근 약 1개월) → [[date, px], …] 오름차순. 1시간 캐시"""
+    try: c = json.loads(SUN_DAILY_P.read_text(encoding="utf-8"))
+    except Exception: c = {}
+    try:
+        if c.get("saved") and (now_wib() - dt.datetime.fromisoformat(c["saved"])).total_seconds() < 3600 and c.get("rows"): return c["rows"]
+    except Exception: pass
+    def work(pg):
+        pg.goto(INV_SUN_HIST, wait_until="domcontentloaded", timeout=60000); _wait_cf(pg)
+        try: pg.wait_for_selector("table tbody tr", timeout=15000)
+        except Exception: pass
+        return pg.evaluate("""() => [...document.querySelectorAll('table')[0]?.querySelectorAll('tbody tr') || []].map(tr => [...tr.querySelectorAll('td')].slice(0, 2).map(td => td.textContent.trim()))""")
+    rows = []
+    try:
+        for d, p in (_pw_session(work, "sun10y-hist") or []):
+            try: rows.append([dt.datetime.strptime(d, "%b %d, %Y").date().isoformat(), float(p.replace(",", ""))])
+            except Exception: pass
+    except Exception as e: log("국채 이력 investing 실패", str(e)[:80])
+    rows.sort()
+    if rows:
+        try: SUN_DAILY_P.write_text(json.dumps({"saved": now_wib().isoformat(), "rows": rows}), encoding="utf-8")
+        except Exception: pass
+        log(f"국채10Y 일별 {len(rows)}일 ({rows[0][0]}~{rows[-1][0]})"); return rows
+    return c.get("rows") or []
+
 SUN_HIST_P = CACHE / "sun10y_hist.json"
 def sun10y_card(iv):
     """상단 4번째 지수 카드 — 국채 10년물(investing.com 실시간). 스파크는 빌드마다 쌓는 자체 이력(최근 7일, PC 가 저장·업로드)"""
@@ -1585,10 +1683,17 @@ def sun10y_card(iv):
     if not os.environ.get("GITHUB_ACTIONS"):
         try: SUN_HIST_P.write_text(json.dumps(hist), encoding="utf-8")
         except Exception as e: log("국채 이력 저장 실패", e)
-    spark = [h[1] for h in hist if len(h) < 3]
+    spark = [h[1] for h in hist if len(h) < 3]; span = "intraday"
+    daily = sun10y_daily()
+    if len(daily) >= 3:                                   # 1W: 최근 5거래일 일별 종가 + 현재가
+        wk = [r[1] for r in daily[-6:]]
+        if daily[-1][0] == now_wib().date().isoformat(): wk[-1] = px
+        else: wk.append(px)
+        spark = wk[-6:]; span = "1W"
+        if prev is None or iv.get("chg") is None: prev = daily[-2][1] if daily[-1][0] == now_wib().date().isoformat() else daily[-1][1]
     if prev is None: prev = px
     return {"code": "SUN10Y", "label": "SUN 10Y", "name": "국채 10년물", "px": round(px, 3), "prev": round(prev, 3), "pct": round((px - prev) * 100, 1),   # pct = bp 변화
-            "spark": spark if len(spark) > 1 else [], "inv": True, "asof": ("investing.com " + str(iv.get("asof") or "")).strip(), "unit": "bp"}
+            "spark": spark if len(spark) > 1 else [], "span": span, "inv": True, "asof": ("investing.com " + str(iv.get("asof") or "")).strip(), "unit": "bp"}
 
 # ---------------- KISI 뉴스 (kisi.co.id/blog/edukasi — 공개 API, 본문 안에 base64 사진) ----------------
 KISI_API = "https://api-compro.kisi.co.id/api/v1/kisiNews/list"
@@ -1708,6 +1813,8 @@ def build():
     corp = idx_corp_calendar() or []
     if not corp and idx_from_pc and idx_from_pc.get("corp_cal"):          # IDX 차단 환경: PC 가 올린 기업·배당 캘린더 사용
         corp = idx_from_pc["corp_cal"]
+    try: DIVS = investing_dividends(); log(f"배당 금액 부착 {attach_dividends(corp, DIVS)}건")
+    except Exception as e: log("배당 금액 오류", e); DIVS = {}
     for c in corp: c["country"] = "ID"
     glob = macro_calendar_auto()
     # 수기 항목이 우선하되, 수기 exp/prev/act 가 비어 있으면 자동 수집값으로 채운다
@@ -1768,7 +1875,7 @@ def build():
             "value": P("value"), "gainers": P("gainers"), "losers": P("losers"),
             "turnover": P("turnover"), "foreign_top": P("foreign_top"), "foreign_bottom": P("foreign_bottom"),
             "stocks": P("stocks"),
-            "sectors": sector_block(P("stocks")), "global": glob_idx,
+            "sectors": sector_block(P("stocks")), "global": glob_idx, "dividends": DIVS,
             "news": news_block(), "market_news": MARKET_NEWS, "kisi_news": kisi_news(), "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
             "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
