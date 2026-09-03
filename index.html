@@ -21,7 +21,7 @@ html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans 
 a{color:inherit;text-decoration:none}
 .num{font-variant-numeric:tabular-nums}
 .up{color:var(--up)}.dn{color:var(--dn)}.flat{color:var(--ink2)}
-.wrap{max-width:1360px;margin:0 auto;padding:0 28px 48px}
+.wrap{max-width:1720px;margin:0 auto;padding:0 24px 48px}
 
 /* header */
 .hdr{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0 14px;border-bottom:2px solid var(--brown)}
@@ -74,7 +74,7 @@ a{color:inherit;text-decoration:none}
 .view{display:none}.view.on{display:block}
 .row2{display:grid;grid-template-columns:minmax(300px,1.25fr) minmax(330px,1.25fr) minmax(290px,1fr);gap:16px;margin-top:16px;align-items:start}
 .col{display:flex;flex-direction:column;gap:16px;min-width:0}
-@media (max-width:1480px){.row2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.row2>.col:last-child{grid-column:1/-1}}
+@media (max-width:1280px){.row2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.row2>.col:last-child{grid-column:1/-1}}
 @media (max-width:980px){.row2{grid-template-columns:minmax(0,1fr)}.row2>.col:last-child{grid-column:auto}}
 
 /* index strip */
@@ -117,7 +117,7 @@ a{color:inherit;text-decoration:none}
 .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;display:block}
 .row .nm{flex:1;min-width:0}
 .row .nm b{display:block;font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.row .nm small{color:var(--ink3);font-size:12px}
+.row .nm small{color:var(--ink3);font-size:12px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .row .px{text-align:right}
 .row .px b{display:block;font-size:14px;font-weight:700}
 .row .px small{font-size:12.5px;font-weight:600}
@@ -393,7 +393,8 @@ async function liveIndices(){let any=false;for(const s of LIVE_SYMS){const res=a
 function stockRow(o,i,kind){const bad=o.px==null;const sub=kind==='turnover'?`${o.t} · ${T('ratio20')} ${fmt(o.ratio,1)}×`:kind==='foreign'?`${o.t}`:`${o.t} · ${T('turnoverK')} ${o.val==null?'—':idr(o.val).replace(/<span.*<\/span>/,'')}`;
   const right=kind==='foreign'?`<b class="num ${o.fnet>=0?'up':'dn'}">${o.fnet>=0?'+':'−'}${idrShort(o.fnet)}</b><small class="src">≈${krwShort(o.fnet)}</small>`
     :`<b class="num">${bad?`<span class="chk">${T('chk')}</span>`:'Rp'+fmt(o.px,0)}</b><small class="num">${sg(o.pct)}</small>`;
-  return`<div class="row" onclick="openDr('${o.t}')"><span class="rk ${i<3?'top':''}">${i+1}</span>${logo(o.t,o.n)}<div class="nm"><b>${o.n||o.t}</b><small>${sub}</small></div><div class="px">${right}</div><span class="heart">♡</span></div>`;}
+  const nm=kind==='foreign'?`<b>${o.t}</b><small>${o.n||''}</small>`:`<b>${o.n||o.t}</b><small>${sub}</small>`;
+  return`<div class="row" onclick="openDr('${o.t}')"><span class="rk ${i<3?'top':''}">${i+1}</span>${logo(o.t,o.n)}<div class="nm">${nm}</div><div class="px">${right}</div><span class="heart">♡</span></div>`;}
 function renderRank(){const list=DATA[rankKey]||[];if(changed('rank',[rankKey,list,LANG]))$('rank').innerHTML=list.length?list.slice(0,10).map((o,i)=>stockRow(o,i,rankKey)).join(''):`<div class="empty">${T('noData')}</div>`;
   const lab={value:T('labValue'),gainers:T('labG'),losers:T('labL'),turnover:T('labT')};
   const rs=DATA.index?.rank_src?`${DATA.index.rank_src}${DATA.index.rank_asof?' · '+DATA.index.rank_asof:''}`:(DATA.index?.session||'');$('rank-sub').textContent=`${lab[rankKey]} · ${rs}`;}
