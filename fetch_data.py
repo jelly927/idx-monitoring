@@ -583,12 +583,15 @@ def idx_corp_calendar(days_ahead=14, days_back=1):
         out.append({"date": d.isoformat(), "t": (p.get("Kode_Emiten") or "").strip(), "kind": "corp", "imp": 3 if "Laporan Keuangan" in title else 2,
                     "title": f"{kor_type(title)} · {title[:90]}", "src": "IDX 공시"})
     uni = set(CFG["universe"]); seen = set(); res = []
-    for o in sorted(out, key=lambda o: (o["date"], o["t"] not in uni)):
+    per_day = {}
+    for o in sorted(out, key=lambda o: (o["date"], o["kind"] not in ("div", "ipo"), o["t"] not in uni, -o["imp"])):
         o["imp"] = 3 if o["t"] in uni and o["imp"] >= 2 else o["imp"]
         k = (o["date"], o["t"], o["title"][:30])
         if k in seen: continue
+        if o["kind"] == "corp" and per_day.get(o["date"], 0) >= CFG.get("corp_per_day", 15): continue   # 날짜별 상한 (배당·상장은 제한 없음)
+        per_day[o["date"]] = per_day.get(o["date"], 0) + (o["kind"] == "corp")
         seen.add(k); res.append(o)
-    return res[:40]
+    return res[:200]
 
 # =============================================================== global / ID calendar
 def saveticker_calendar(days=14):
