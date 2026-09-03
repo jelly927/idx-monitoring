@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 21:28",
+ "updated": "2026-09-03 21:40",
  "delay_min": 0,
  "fx_basis": "13.03 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,357 · 21:23 Yahoo",
- "idr_per_krw": 13.033,
+ "idr_per_krw": 13.0327,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7704.65,
+   "px": 7698.3,
    "prev": 7666.6,
-   "pct": 0.5,
-   "asof": "21:25",
+   "pct": 0.41,
+   "asof": "21:35",
    "live": true,
    "spark": [
     7707.12,
@@ -15095,17 +15095,19 @@
     7700.07,
     7704.71,
     7704.96,
-    7704.65
+    7703.52,
+    7694.84,
+    7698.3
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26451.79,
+   "px": 26395.0,
    "prev": 26217.83,
-   "pct": 0.89,
-   "asof": "21:25",
+   "pct": 0.68,
+   "asof": "21:35",
    "live": true,
    "spark": [
     26381.93,
@@ -15119,17 +15121,19 @@
     26419.62,
     26446.85,
     26450.73,
-    26451.79
+    26447.91,
+    26400.19,
+    26395.0
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53346.37,
+   "px": 53408.64,
    "prev": 53061.95,
-   "pct": 0.54,
-   "asof": "21:25",
+   "pct": 0.65,
+   "asof": "21:35",
    "live": true,
    "spark": [
     53453.07,
@@ -15143,7 +15147,9 @@
     53336.94,
     53372.32,
     53364.69,
-    53346.37
+    53343.01,
+    53342.61,
+    53408.64
    ]
   },
   {
@@ -16225,6 +16231,17 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-03T21:34:12+07:00",
+   "date": "2026-09-03",
+   "time": "21:34",
+   "src": "Bloomberg",
+   "t": "Odd Lots: What the Fed Needs to Do to Shrink Its Balance Sheet",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-03/odd-lots-what-the-fed-needs-to-do-to-shrink-its-balance-sheet",
+   "t_ko": "이상한 일들: 대차대조표를 축소하기 위해 연준이 해야 할 일",
+   "t_id": "Odd Lot: Apa yang Perlu Dilakukan The Fed untuk Menyusut Neracanya"
+  },
+  {
    "ts": "2026-09-03T20:48:00+07:00",
    "date": "2026-09-03",
    "time": "20:48",
@@ -16568,18 +16585,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/08/18/ilustrasi-kapal-tanker-di-perairan-selat-hormuz-ap-photokamran-jebreili-6ydWQ.webp",
    "t_ko": "美-이란 긴장 고조에 국제유가 소폭 상승 — OPEC+ 전망",
    "t_id": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+"
-  },
-  {
-   "ts": "2026-09-03T15:44:41+07:00",
-   "date": "2026-09-03",
-   "time": "15:44",
-   "src": "Detik",
-   "t": "Purbaya Pastikan Danantara Tak Gabung KSSK: Diundang Ikut Rapat Saja",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8646870/purbaya-pastikan-danantara-tak-gabung-kssk-diundang-ikut-rapat-saja",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/menteri-keuangan-purbaya-yudhi-sadewa-1788414776958_169.jpeg?w=360&q=90",
-   "t_ko": "Purbaya는 Danantara가 KSSK에 가입하지 않도록 보장: 방금 회의에 초대됨",
-   "t_id": "Purbaya Pastikan Danantara Tak Gabung KSSK: Diundang Ikut Rapat Saja"
   }
  ],
  "kisi_news": [
@@ -16752,8 +16757,8 @@
   {
    "k": "IDR/KRW (1원당 루피아)",
    "v": "13.03",
-   "d": 1.08,
-   "ytd": 12.15,
+   "d": 1.09,
+   "ytd": 12.16,
    "inv": true,
    "note": "연초 11.6144",
    "k_ko": "IDR/KRW (1원당 루피아)",
@@ -16786,9 +16791,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "96.38",
-   "d": 0.78,
-   "ytd": 58.26,
+   "v": "96.60",
+   "d": 1.01,
+   "ytd": 58.62,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16796,8 +16801,8 @@
   },
   {
    "k": "DXY",
-   "v": "98.99",
-   "d": -0.57,
+   "v": "99.01",
+   "d": -0.55,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -16807,7 +16812,7 @@
   {
    "k": "UST 10Y",
    "v": "4.76%",
-   "d": -0.79,
+   "d": -0.83,
    "ytd": null,
    "inv": true,
    "note": null,
