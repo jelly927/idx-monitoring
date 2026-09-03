@@ -51,7 +51,7 @@ a{color:inherit;text-decoration:none}
 .hotbox .it .tg{display:inline-block;font-size:10.5px;font-weight:700;color:var(--brand);margin-right:5px}
 .mstate{font-weight:700;padding:2px 8px;border-radius:6px;font-size:12px;white-space:nowrap}.mstate.on{background:var(--upbg);color:var(--up)}.mstate.off{background:var(--chip);color:var(--ink2)}.mstate.warn{background:#fff3cd;color:#7a5a00}
 .ev.div .bd b{color:var(--brand)}.ev.ipo .bd b{color:#7a4a00}
-.secgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:10px}
+.secgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:10px;margin-top:10px}
 .sec{border-radius:10px;padding:10px 12px;cursor:default;min-width:0;color:#fff;position:relative}
 .sec .sn{font-size:12.5px;font-weight:700;opacity:.95;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sec .sp{font-size:20px;font-weight:800;margin:2px 0 4px;letter-spacing:-.3px}
@@ -449,7 +449,7 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   if(secs.length&&changed('sec',[secs,LANG])){const mx=Math.max(1.5,...secs.map(x=>Math.abs(x.pct)));
     $('secmeta').textContent=(d.index?.rank_asof?d.index.rank_asof+' · ':'')+T('secNote');
     $('sectors').innerHTML=secs.map(x=>{const a=Math.min(1,Math.abs(x.pct)/mx);const bg=x.pct>=0?`rgba(30,138,92,${0.35+0.65*a})`:`rgba(200,53,47,${0.35+0.65*a})`;
-      return`<div class="sec" style="background:${bg}"><div class="sn">${LANG==='id'?(x.name_id||x.name):x.name}</div><div class="sp num">${sg(x.pct)}</div><div class="sm">${T('turnoverK')} ${idrShort(x.val)} · ▲${x.adv} ▼${x.dec} / ${x.n}</div><div class="st">${(x.top||[]).map(t=>`<span onclick="openDr('${t.t}')">${t.t} <b class="num">${sg(t.pct)}</b></span>`).join('')}</div></div>`;}).join('');}
+      return`<div class="sec" style="background:${bg}"><div class="sn">${LANG==='id'?(x.name_id||x.name):x.name}</div><div class="sp num">${sg(x.pct)}</div><div class="sm">${T('turnoverK')} ${idrShort(x.val)} · ▲${x.adv} ▼${x.dec} / ${x.n}</div><div class="st">${(x.top||[]).slice(0,3).map(t=>`<span onclick="openDr('${t.t}')">${t.t} <b class="num">${sg(t.pct)}</b></span>`).join('')}</div></div>`;}).join('');}
   // 지표
   $('macro').innerHTML=(d.macro||[]).map(m=>`<tr><td>${L(m,'k')}${L(m,'note')?`<span class="n2">${L(m,'note')}</span>`:''}</td><td class="r num">${String(m.v).includes('확인')?`<span class="chk">${T('chk')}</span>`:m.v}</td><td class="r num" style="width:70px">${m.d==null?'<span class="flat">—</span>':`<span class="badge ${(m.inv?-m.d:m.d)>0?'up':'dn'}">${m.d>0?'+':''}${fmt(m.d)}%</span>`}</td><td class="r num" style="width:70px">${sg(m.ytd,2,'%',m.inv)}</td></tr>`).join('');
   // 오늘 일정
