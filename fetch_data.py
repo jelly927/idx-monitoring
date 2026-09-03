@@ -1564,7 +1564,7 @@ def build():
     # investing.com 은 yfinance 보다 먼저 — yfinance 가 스레드에 asyncio 루프를 남기면 브라우저 기동이 막힌다
     _IV["SUN10Y"] = investing_quote(INVESTING_QUOTES["SUN10Y"])
     log("국채10Y investing.com", (f'{_IV["SUN10Y"]["px"]}%' if _IV.get("SUN10Y") else "실패"))
-    h = yq("^JKSE"); usd = yq("USDIDR=X")
+    h = yq("^JKSE"); usd = yq("USDIDR=X"); krw = yq("KRW=X")
     in_session = 9 <= now_wib().hour < 17 and now_wib().weekday() < 5
     indices = []
     def add_index(code, label, name, live, eod, inv=False, dec=2):
@@ -1646,8 +1646,16 @@ def build():
             log(f'IDX 차단 → {"Yahoo 랭킹 + " if yahoo_mode else ""}PC 수집분 사용 (idx_part.json {idx_from_pc.get("saved")})')
         except Exception as e: log("idx_part 읽기 실패", e); idx_from_pc = None
     P = lambda k: (mk[k] if mk else (idx_from_pc or {}).get(k) or [])
+    # 원화 환산율: 실시간(USD/IDR ÷ USD/KRW, Yahoo). 실패 시 config 기본값
+    usd_px = (ul or {}).get("px") or (usd or {}).get("px"); krw_px = (krw or {}).get("px")
+    if usd_px and krw_px:
+        idr_per_krw = round(usd_px / krw_px, 4)
+        fx_ts = (ul or {}).get("ts") or now_wib().strftime("%H:%M")
+        fx_basis = f"{idr_per_krw:.2f} IDR/KRW · USD/IDR {usd_px:,.0f} · USD/KRW {krw_px:,.0f} · {fx_ts} Yahoo"
+    else:
+        idr_per_krw = CFG.get("idr_per_krw"); fx_basis = CFG.get("fx_basis")
     data = {"mode": "live", "updated": now_wib().strftime("%Y-%m-%d %H:%M"), "delay_min": 0 if ix else 15,
-            "fx_basis": m.get("fx_basis", CFG.get("fx_basis")), "idr_per_krw": m.get("idr_per_krw", CFG.get("idr_per_krw")),
+            "fx_basis": fx_basis, "idr_per_krw": idr_per_krw,
             "indices": indices, "index": index,
             "value": P("value"), "gainers": P("gainers"), "losers": P("losers"),
             "turnover": P("turnover"), "foreign_top": P("foreign_top"), "foreign_bottom": P("foreign_bottom"),
