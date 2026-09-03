@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 20:43",
+ "updated": "2026-09-03 20:54",
  "delay_min": 0,
  "fx_basis": "13.02 IDR/KRW · USD/IDR 17,655 · USD/KRW 1,356 · 17:13 Yahoo",
- "idr_per_krw": 13.0153,
+ "idr_per_krw": 13.017,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,45 +15078,51 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7713.08,
+   "px": 7715.07,
    "prev": 7666.6,
-   "pct": 0.61,
-   "asof": "20:40",
+   "pct": 0.63,
+   "asof": "20:50",
    "live": true,
    "spark": [
     7707.12,
     7715.19,
-    7713.08
+    7714.12,
+    7712.88,
+    7715.07
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26432.28,
+   "px": 26461.5,
    "prev": 26217.83,
-   "pct": 0.82,
-   "asof": "20:40",
+   "pct": 0.93,
+   "asof": "20:50",
    "live": true,
    "spark": [
     26381.93,
     26436.99,
-    26432.28
+    26440.97,
+    26465.4,
+    26461.5
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53481.34,
+   "px": 53530.04,
    "prev": 53061.95,
-   "pct": 0.79,
-   "asof": "20:40",
+   "pct": 0.88,
+   "asof": "20:50",
    "live": true,
    "spark": [
     53453.07,
     53449.82,
-    53481.34
+    53511.01,
+    53437.08,
+    53530.04
    ]
   },
   {
@@ -16184,6 +16190,17 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-03T20:48:00+07:00",
+   "date": "2026-09-03",
+   "time": "20:48",
+   "src": "Media Indonesia",
+   "t": "Gubernur BI: Sinergi Merah Putih Penting untuk Jaga Stabilitas Ekonomi",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/929508/gubernur-bi-sinergi-merah-putih-penting-untuk-jaga-stabilitas-ekonomi",
+   "t_id": "Gubernur BI: Sinergi Merah Putih Penting untuk Jaga Stabilitas Ekonomi",
+   "t_ko": "BI 주지사: 레드와 화이트 시너지는 경제 안정을 유지하는 데 중요합니다"
+  },
+  {
    "ts": "2026-09-03T20:32:56+07:00",
    "date": "2026-09-03",
    "time": "20:32",
@@ -16446,18 +16463,6 @@
    "t_id": "Rupiah Menguat, IHSG Naik 1,09% ke Level Tertinggi 3,5 Bulan"
   },
   {
-   "ts": "2026-09-03T16:28:00+07:00",
-   "date": "2026-09-03",
-   "time": "16:28",
-   "src": "Katadata",
-   "t": "Purbaya Pastikan Tarik Rp 120 Triliun dari Danantara Meski Diprotes",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6a993dbdbe625/purbaya-pastikan-tarik-rp-120-triliun-dari-danantara-meski-diprotes",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/05/2026_08_05-17_48_00_ae6fab08-90c3-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "Purbaya 재무장관, 반발에도 Danantara에서 Rp120조 회수 확정",
-   "t_id": "Purbaya Pastikan Tarik Rp 120 Triliun dari Danantara Meski Diprotes"
-  },
-  {
    "ts": "2026-09-03T16:24:36+07:00",
    "date": "2026-09-03",
    "time": "16:24",
@@ -16699,9 +16704,9 @@
  "macro": [
   {
    "k": "USD/IDR (Yahoo 15분 지연)",
-   "v": "17,655",
-   "d": -0.24,
-   "ytd": 5.59,
+   "v": "확인 필요",
+   "d": null,
+   "ytd": null,
    "inv": true,
    "note": "연초 16,720",
    "k_ko": "USD/IDR (Yahoo 15분 지연)",
@@ -16746,9 +16751,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "96.17",
-   "d": 0.56,
-   "ytd": 57.91,
+   "v": "96.31",
+   "d": 0.71,
+   "ytd": 58.14,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16757,7 +16762,7 @@
   {
    "k": "DXY",
    "v": "99.03",
-   "d": -0.53,
+   "d": -0.54,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -16766,8 +16771,8 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.74%",
-   "d": -1.08,
+   "v": "4.75%",
+   "d": -1.0,
    "ytd": null,
    "inv": true,
    "note": null,
@@ -17429,7 +17434,7 @@
    "imp": 2,
    "exp": "56.0",
    "prev": "54.5",
-   "act": null,
+   "act": "56.0",
    "src": "investing.com",
    "title_ko": "8월 S&P Global 합성 PMI",
    "title_id": "PMI Komposit S&P Global (Agustus)"
