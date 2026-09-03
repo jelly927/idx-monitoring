@@ -921,12 +921,29 @@ def ylive(sym):
     except Exception as e:
         log("ylive fail", sym, e); return None
 
+def ylive_fx(sym):
+    """환율용: 15분봉 5일치에서 최근 24시간(WIB)을 스파크로. 오늘 틱이 없어도 마지막 24시간을 보여준다."""
+    if yf is None: return None
+    try:
+        h = yf.Ticker(sym).history(period="5d", interval="15m")["Close"].dropna()
+        if len(h) < 4: return None
+        idx = h.index.tz_convert(WIB) if h.index.tz is not None else h.index.tz_localize("UTC").tz_convert(WIB)
+        last_ts = idx[-1]
+        if (now_wib() - last_ts).total_seconds() > 12 * 3600: return None
+        d = yf.Ticker(sym).history(period="5d", interval="1d")["Close"].dropna()
+        prev = float(d.iloc[-2]) if len(d) >= 2 and d.index[-1].date() == last_ts.date() else float(d.iloc[-1]) if len(d) else float(h.iloc[0])
+        recent = h[idx >= last_ts - dt.timedelta(hours=24)]
+        return {"px": float(h.iloc[-1]), "prev": prev, "ts": last_ts.strftime("%H:%M"),
+                "spark": [round(float(v), 2) for v in recent.tolist()][-120:], "high": float(recent.max()), "low": float(recent.min())}
+    except Exception as e:
+        log("ylive_fx fail", sym, e); return None
+
 def yq(sym):
     if yf is None: return None
     try:
         c = yf.Ticker(sym).history(period="1mo", interval="1d", auto_adjust=False)["Close"].dropna()
         if len(c) < 2: return None
-        return {"px": float(c.iloc[-1]), "prev": float(c.iloc[-2]), "m1": float(c.iloc[0])}
+        return {"px": float(c.iloc[-1]), "prev": float(c.iloc[-2]), "m1": float(c.iloc[0]), "spark": [round(float(v), 2) for v in c.tolist()]}
     except Exception as e:
         log("yahoo fail", sym, e); return None
 
@@ -1554,10 +1571,11 @@ def build():
             indices.append({"code": code, "label": label, "name": name, "px": round(eod["px"], dec), "prev": round(eod["prev"], dec), "pct": round((eod["px"] / eod["prev"] - 1) * 100, 2),
                             "spark": eod.get("spark") or [], "inv": inv, "asof": eod.get("asof", "종가")})
     jl, ll, ul = ylive("^JKSE"), ylive("^JKLQ45"), ylive("USDIDR=X")
+    if not ul: ul = ylive_fx("USDIDR=X")             # 환율은 24시간 거래 — 1분봉이 비면 15분봉 최근 24시간으로
     glob_idx = global_indices()                       # yfinance 호출은 브라우저 작업(번역·캘린더) 전에 모아서
     add_index("COMPOSITE", "IHSG", "자카르타 종합", jl, {"px": ix["px"], "prev": ix["prev"], "spark": ix["spark"], "asof": f'IDX {ix["date"][5:].replace("-", "/")} 종가'} if ix else None)
     add_index("LQ45", "LQ45", "대형 45종목", ll, {"px": ix["lq45"]["px"], "prev": ix["lq45"]["prev"], "spark": ix["lq45"]["spark"], "asof": "IDX 종가"} if ix and ix["lq45"] else None)
-    add_index("USDIDR", "USD/IDR", "달러/루피아", ul, {"px": usd["px"], "prev": usd["prev"], "asof": "Yahoo"} if usd else None, inv=True, dec=0)
+    add_index("USDIDR", "USD/IDR", "달러/루피아", ul, {"px": usd["px"], "prev": usd["prev"], "asof": "Yahoo", "spark": usd.get("spark") or []} if usd else None, inv=True, dec=0)
     jci_card = next((x for x in indices if x["code"] == "COMPOSITE"), None)
     px = jci_card["px"] if jci_card else None
     index = {"session": (jci_card["asof"] if jci_card else "—"),
