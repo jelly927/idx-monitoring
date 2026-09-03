@@ -21,7 +21,7 @@ IDX Live 수집기 v2 — index.html 이 읽는 data.json 을 생성한다.
 
 원칙: 못 구한 값은 null → 화면에 "확인 필요". 추정 금지. 출처는 항목마다 기록.
 """
-import json, re, sys, os, time, html, hashlib, threading, queue as _queue, datetime as dt
+import json, re, sys, os, time, html, hashlib, threading, subprocess, queue as _queue, datetime as dt
 from pathlib import Path
 
 try:
@@ -1552,6 +1552,72 @@ def _auto_publish():
     except Exception as e:
         log("auto_push 오류", str(e)[:120])
 
+# ---------------- KISI 뉴스 (kisi.co.id/blog/edukasi — 공개 API, 본문 안에 base64 사진) ----------------
+KISI_API = "https://api-compro.kisi.co.id/api/v1/kisiNews/list"
+KISI_P = CACHE / "kisi_news.json"; _PIL_TRIED = False
+def _kisi_thumb(b64):
+    """본문에 박힌 base64 원본 사진(수백 KB)을 320px JPEG 썸네일(≈10KB) data URI 로 축소. Pillow 없으면 None"""
+    global _PIL_TRIED
+    try:
+        try: from PIL import Image
+        except ImportError:                                   # PC 에 Pillow 가 없으면 1회 자동 설치
+            if _PIL_TRIED: return None
+            _PIL_TRIED = True
+            subprocess.call([sys.executable, "-m", "pip", "install", "-q", "pillow"], timeout=180)
+            from PIL import Image
+        import base64, io
+        im = Image.open(io.BytesIO(base64.b64decode(b64))).convert("RGB")
+        w, h = im.size
+        if w > 320: im = im.resize((320, max(1, round(h * 320 / w))), Image.LANCZOS)
+        buf = io.BytesIO(); im.save(buf, "JPEG", quality=62, optimize=True)
+        return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
+    except Exception as e:
+        log("KISI 썸네일 실패", repr(e)[:80]); return None
+
+def kisi_news(max_items=None):
+    """KISI 블로그(Edukasi) 최신 글: 제목·시각·링크·썸네일·언급 종목. API 실패 시 캐시 목록 사용"""
+    global CODES, CODE_RX, NAME_RX
+    if not CODE_RX: CODES, CODE_RX, NAME_RX = build_alias()
+    n = max_items or CFG.get("kisi_news_max", 10)
+    try: cache = json.loads(KISI_P.read_text(encoding="utf-8"))
+    except Exception: cache = {}
+    rows = None
+    try:
+        r = requests.get(KISI_API, params={"limit": n, "offset": 0, "active": 1},
+                         headers={"User-Agent": UA, "Origin": "https://kisi.co.id", "Referer": "https://kisi.co.id/"}, timeout=60)
+        rows = (r.json() or {}).get("data") or []
+    except Exception as e: log("KISI 뉴스 실패", repr(e)[:120])
+    today = now_wib().date().isoformat(); out = []
+    if rows is None:                                  # 오프라인 → 캐시로 목록 복원
+        rows = [{"news_id": k, **v, "_cached": True} for k, v in cache.items()]
+    for a in rows:
+        nid = str(a.get("news_id") or ""); title = html.unescape(str(a.get("news_title") or a.get("t") or "")).strip()
+        if not nid or not title: continue
+        c = cache.get(nid) or {}
+        content = a.get("news_content") or ""
+        img = c.get("img")
+        if not img and content:
+            m = re.search(r'<img[^>]+src=["\']data:image/[a-z]+;base64,([^"\']+)', content)
+            if m: img = _kisi_thumb(m.group(1))
+        text = re.sub(r"\s+", " ", re.sub("<[^>]+>", " ", html.unescape(content))).strip() if content else c.get("text", "")
+        d = str(a.get("news_date") or c.get("date") or "")[:10]; tm = str(a.get("news_time") or c.get("tm") or "")[:5]
+        try: ts = dt.datetime.fromisoformat(f"{d}T{tm or '00:00'}:00").replace(tzinfo=WIB)
+        except Exception: continue
+        tags = c.get("tags") if c.get("tags") is not None else screen(title + " " + text[:400])
+        it = {"id": nid, "ts": ts.isoformat(), "date": d, "time": tm if d == today else ts.strftime("%m/%d"), "src": "KISI", "t": title, "tags": tags,
+              "url": f"https://kisi.co.id/blog/edukasi/{requests.utils.quote(title)}/{nid}"}
+        if img: it["img"] = img
+        if text: it["sum"] = text[:220]
+        out.append(it)
+        cache[nid] = {"t": title, "date": d, "tm": tm, "tags": tags, "img": img, "text": text[:220]}
+    out.sort(key=lambda x: x["ts"], reverse=True); out = out[:n]
+    try:                                              # 캐시는 최근 60건만 유지
+        keep = sorted(cache.items(), key=lambda kv: (kv[1].get("date") or "", kv[1].get("tm") or ""), reverse=True)[:60]
+        KISI_P.write_text(json.dumps(dict(keep), ensure_ascii=False), encoding="utf-8")
+    except Exception as e: log("KISI 캐시 저장 실패", e)
+    log(f"KISI 뉴스 {len(out)}건 (사진 {sum(1 for x in out if x.get('img'))})")
+    return translate_news(out)
+
 def build():
     m = manual(); yb = CFG["ytd_base"]
     mk = idx_market(); ix = idx_index(); bi = bi_indicators()
@@ -1661,7 +1727,7 @@ def build():
             "turnover": P("turnover"), "foreign_top": P("foreign_top"), "foreign_bottom": P("foreign_bottom"),
             "stocks": P("stocks"),
             "sectors": sector_block(P("stocks")), "global": glob_idx,
-            "news": news_block(), "market_news": MARKET_NEWS, "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
+            "news": news_block(), "market_news": MARKET_NEWS, "kisi_news": kisi_news(), "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
             "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     # data.js: index.html 을 파일(file://)로 직접 열어도 마지막 수집 데이터가 보이도록 (fetch 는 file:// 에서 막힘)
