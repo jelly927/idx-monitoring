@@ -1281,6 +1281,7 @@ def news_block(max_items=None):
             tags = screen(title + " " + summ)
             is_market = not tags
             if is_market and not _market_news_ok(title, summ): continue     # 티커 없는 기사 중 시장·거시 관련만 별도 목록으로
+            if is_market and not (e.get("published_parsed") or e.get("updated_parsed")) and not _entry_image(e): continue   # 홈 스크랩(시각·사진 없음)은 시장 뉴스에서 제외
             ts = e.get("published_parsed") or e.get("updated_parsed")
             est = not ts
             # 발행시각이 없는 항목(홈 스크랩·날짜 없는 피드)은 "처음 본 시각"을 기억해 매 빌드마다 최신으로 올라오지 않게 한다
@@ -1317,7 +1318,7 @@ def news_block(max_items=None):
     return translate_news(out[:max_items])
 
 MARKET_NEWS = []
-MARKET_RX = re.compile(r"\b(ihsg|jci|bei|bursa|ojk|bank indonesia|\bbi\b|bi rate|suku bunga|rupiah|kurs|inflasi|cpi|pdb|gdp|the fed|fomc|fed\b|wall street|dow|nasdaq|s&p|asia|asing|net (buy|sell)|obligasi|sbn|sun\b|yield|treasury|minyak|brent|batu ?bara|coal|nikel|nickel|cpo|sawit|emas\b|gold|dolar|dollar|ekspor|impor|neraca|apbn|fiskal|tarif|trump|china|tiongkok|prabowo|danantara|msci|ftse|resesi|pasar saham|pasar modal|stock market|bond|equit|investor)\b", re.I)
+MARKET_RX = re.compile(r"\b(ihsg|jci|bei\b|bursa|ojk|bank indonesia|bi rate|bi-rate|suku bunga|rupiah|inflasi|deflasi|the fed|fomc|wall street|nasdaq|s&p|dow jones|net buy|net sell|asing (beli|jual|masuk|keluar)|obligasi|sbn\b|sun\b|yield|treasury|brent|harga minyak|batu ?bara|coal|nikel|nickel|cpo\b|sawit|harga emas|gold price|danantara|msci|ftse|resesi|pasar saham|pasar modal|stock market|ekonomi (ri|indonesia|global|as|china)|pdb\b|gdp\b|neraca (dagang|perdagangan)|cadangan devisa|tarif (trump|impor|as)|trade war|perang dagang|dividen|ipo\b|right issue|rights issue)\b", re.I)
 def _market_news_ok(title, summ=""):
     """티커가 없는 기사 중 시장 전체·거시·정책·원자재 관련만 시장 뉴스로 채택"""
     return bool(MARKET_RX.search(title)) or bool(MARKET_RX.search((summ or "")[:200]))
