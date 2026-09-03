@@ -251,7 +251,9 @@
     "enabled": true,
     "max_per_run": 60,
     "_comment": "외부 기계번역(구글·마이메모리)은 헤드라인 문체가 안 나와 기본 비활성(engines: []). 번역은 매시 Claude 예약 작업이 tr_claude.json 에 채운다. 그 전까지는 원문 표시. 급하면 engines 에 \"google\" 을 넣어 임시 기계번역 사용 가능",
-    "engines": []
+    "engines": [
+      "google"
+    ]
   },
   "calendar_source": "investing",
   "_calendar_comment": "글로벌 매크로 캘린더 소스(investing 기본). investing_tz_offset: investing XHR(timeZone=113) 응답 시간대(UTC+8 확인) → WIB 환산. calendar_min_imp_us: 미국 지표 최소 중요도(1~3), 인니 지표는 전부 표시",
