@@ -60,8 +60,8 @@ a{color:inherit;text-decoration:none}
 .secpop{display:none;position:absolute;left:0;top:calc(100% + 4px);z-index:40;min-width:250px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.16);padding:6px 0}
 .secpop .ph{font-size:11.5px;color:var(--ink3);padding:4px 12px 6px;border-bottom:1px solid var(--line);margin-bottom:2px}
 .secpop .pr{display:flex;align-items:center;gap:8px;padding:5px 12px;font-size:12.5px;cursor:pointer}.secpop .pr:hover{background:var(--chip)}
-.secpop .pr b{min-width:44px;font-weight:800}.secpop .pr span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink2)}.secpop .pr em{font-style:normal;font-weight:700}
-.secpop .up{color:var(--up)!important}.secpop .dn{color:var(--dn)!important}
+.secpop .pr b{min-width:44px;font-weight:800}.secpop .pr .nm2{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink2)}.secpop .pr em{font-style:normal;font-weight:700;flex:0 0 auto}
+.sec .secpop .up{color:var(--up)!important}.sec .secpop .dn{color:var(--dn)!important}
 .ev-more{font-size:12px;color:var(--brand);font-weight:700;padding:8px 4px 2px;cursor:pointer}
 .secgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:10px;margin-top:10px}
 .sec{border-radius:10px;padding:10px 12px;cursor:default;min-width:0;color:#fff;position:relative}
@@ -466,7 +466,7 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   if(secs.length&&changed('sec',[secs,LANG])){const mx=Math.max(1.5,...secs.map(x=>Math.abs(x.pct)));
     $('secmeta').textContent=(d.index?.rank_asof?d.index.rank_asof+' · ':'')+T('secNote');
     $('sectors').innerHTML=secs.map(x=>{const a=Math.min(1,Math.abs(x.pct)/mx);const bg=x.pct>=0?`rgba(30,138,92,${0.35+0.65*a})`:`rgba(200,53,47,${0.35+0.65*a})`;
-      const pop=`<div class="secpop"><div class="ph">${LANG==='id'?(x.name_id||x.name):x.name} · ${T('secTop')}</div>${(x.top||[]).map(t=>`<div class="pr" onclick="openDr('${t.t}')"><b>${t.t}</b><span>${stockName(t.t)}</span><em class="num ${t.pct>0?'up':t.pct<0?'dn':''}">${sg(t.pct)}</em></div>`).join('')}</div>`;
+      const pop=`<div class="secpop"><div class="ph">${LANG==='id'?(x.name_id||x.name):x.name} · ${T('secTop')}</div>${(x.top||[]).map(t=>`<div class="pr" onclick="openDr('${t.t}')"><b>${t.t}</b><span class="nm2">${stockName(t.t)}</span><em class="num ${t.pct>0?'up':t.pct<0?'dn':''}">${t.pct==null?'—':(t.pct>0?'+':'')+t.pct.toFixed(2)+'%'}</em></div>`).join('')}</div>`;
       return`<div class="sec" style="background:${bg}"><div class="sn">${LANG==='id'?(x.name_id||x.name):x.name}</div><div class="sp num">${sg(x.pct)}</div><div class="sm">${T('turnoverK')} ${idrShort(x.val)} · ▲${x.adv} ▼${x.dec} / ${x.n}</div><div class="st">${(x.top||[]).slice(0,3).map(t=>`<span onclick="openDr('${t.t}')">${t.t} <b class="num">${sg(t.pct)}</b></span>`).join('')}</div>${pop}</div>`;}).join('');}
   // 주요 지수
   const g=d.global||[];$('gidx-card').hidden=!g.length;
@@ -480,7 +480,7 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   const up=tdAll.length?[]:cal.filter(e=>e.date>_t).sort((a,b)=>(b.imp||0)-(a.imp||0)||(a.date+(a.time||'')).localeCompare(b.date+(b.time||''))).slice(0,4);
   $('today-ev').innerHTML=(td.length?td.map(ev).join('')+(tdAll.length>td.length?`<div class="ev-more" onclick="showView('cal')">+${tdAll.length-td.length} ${T('moreCal')}</div>`:'')
     :(up.length?`<div class="ev-day">${T('upcoming')}</div>`+up.map(e=>ev(Object.assign({},e,{time:(e.date.slice(5).replace('-','/'))+' '+(e.time&&e.time!=='—'?e.time:'')}))).join('')
-              :`<div class="empty">${T('noEv')}</div>`);
+              :`<div class="empty">${T('noEv')}</div>`));
   renderAnn();
   renderNews();$('news-preview').innerHTML=(d.news||[]).slice(0,14).map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`;
   {const td=today();if(!calDate||calDate===calTodayISO)calDate=td;calTodayISO=td;}renderCal();
