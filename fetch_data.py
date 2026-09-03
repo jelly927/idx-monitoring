@@ -268,7 +268,7 @@ class IDX:
         return (j or {}).get("data") or []
     def index_chart(self, code="COMPOSITE", period="1D"):
         j = self.get("/primary/helper/GetIndexChart", indexCode=code, period=period)
-        return [p["Close"] for p in (j or {}).get("ChartData", []) if p.get("Close")]
+        return [p["Close"] for p in ((j or {}).get("ChartData") or []) if p.get("Close")]   # 장 시작 전엔 ChartData 가 null
     def calendar(self, d):
         j = self.get("/primary/Home/GetCalendar", range="m", date=f"{d:%Y%m%d}")
         return (j or {}).get("Results") or []
@@ -1026,10 +1026,37 @@ def _secret(name):
     try: return (json.loads((ROOT / "secrets.json").read_text(encoding="utf-8-sig")).get(name) or "").strip() or None
     except Exception: return None
 
+def _claude_cli():
+    """PC 에 설치된 Claude Code(claude 명령, Max/Pro 구독으로 로그인) 경로. 없으면 None."""
+    import shutil
+    for name in ("claude", "claude.cmd", "claude.exe"):
+        w = shutil.which(name)
+        if w: return w
+    for c in [Path.home() / ".local" / "bin" / "claude.exe", Path.home() / "AppData" / "Roaming" / "npm" / "claude.cmd", Path.home() / "AppData" / "Local" / "Programs" / "claude" / "claude.exe"]:
+        if c.exists(): return str(c)
+    return None
+
+def _claude_complete(prompt, key, model):
+    """프롬프트 → 응답 텍스트. 1) API 키가 있으면 Anthropic API  2) 없으면 Claude Code CLI(구독)  3) 둘 다 없으면 None."""
+    if key:
+        r = requests.post("https://api.anthropic.com/v1/messages", json={"model": model, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt}]}, timeout=90,
+                          headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
+        if r.status_code != 200: log(f"Claude API 번역 실패 {r.status_code}: {r.text[:120]}"); return None
+        return "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text").strip()
+    cli = _claude_cli()
+    if not cli: return None
+    import subprocess
+    try:
+        r = subprocess.run([cli, "-p", "--output-format", "text"], input=prompt, capture_output=True, text=True, encoding="utf-8", timeout=180, cwd=str(ROOT))
+    except Exception as e:
+        log("Claude Code 번역 실행 오류", str(e)[:100]); return None
+    if r.returncode != 0: log(f"Claude Code 번역 실패 (exit {r.returncode}): {(r.stderr or r.stdout)[:120]}"); return None
+    return (r.stdout or "").strip()
+
 def _tr_claude_api(pairs):
-    """pairs: [(원문, 목표언어)] → {(원문, 목표언어): 번역}. Anthropic API (secrets.json 의 anthropic_api_key). 결과는 tr_claude.json 에 영구 저장."""
+    """pairs: [(원문, 목표언어)] → {(원문, 목표언어): 번역}. Anthropic API 키(secrets.json) 또는 PC 의 Claude Code 로 번역. 결과는 tr_claude.json 에 영구 저장."""
     key = _secret("anthropic_api_key")
-    if not key or not pairs: return {}
+    if not pairs or not (key or _claude_cli()): return {}
     cfg = CFG.get("translate") or {}
     model = cfg.get("claude_model", "claude-sonnet-4-5")
     out = {}
@@ -1041,14 +1068,11 @@ def _tr_claude_api(pairs):
             chunk = texts[i:i + 40]
             prompt = (rules + "\n\n아래 JSON 배열의 각 제목을 같은 순서로 번역해, 번역문만 담은 JSON 문자열 배열 하나로만 답하라(설명·코드블록 금지).\n" if tl == "ko" else
                       rules + "\n\nTerjemahkan setiap judul dalam array JSON berikut dengan urutan yang sama; jawab HANYA dengan satu array JSON berisi string terjemahan (tanpa penjelasan/code block).\n")
-            body = {"model": model, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt + json.dumps(chunk, ensure_ascii=False)}]}
             try:
-                r = requests.post("https://api.anthropic.com/v1/messages", json=body, timeout=90,
-                                  headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
-                if r.status_code != 200:
-                    log(f"Claude API 번역 실패 {r.status_code}: {r.text[:120]}"); return out
-                txt = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text").strip()
+                txt = _claude_complete(prompt + json.dumps(chunk, ensure_ascii=False), key, model)
+                if txt is None: return out
                 txt = re.sub(r"^```(?:json)?|```$", "", txt.strip(), flags=re.M).strip()
+                m = re.search(r"\[.*\]", txt, re.S); txt = m.group(0) if m else txt
                 arr = json.loads(txt)
                 if not isinstance(arr, list) or len(arr) != len(chunk): log(f"Claude API 번역 응답 형식 불일치 ({len(chunk)}→{len(arr) if isinstance(arr, list) else '?'})"); continue
                 for t, v in zip(chunk, arr):
@@ -1061,7 +1085,7 @@ def _tr_claude_api(pairs):
             for (t, tl), v in out.items(): cur[hashlib.md5((t + "|" + tl).encode("utf-8")).hexdigest()] = v
             TR_GOOD_P.write_text(json.dumps(cur, ensure_ascii=False), encoding="utf-8")
             TR_GOOD.update(cur)
-            log(f"Claude API 번역 {len(out)}건 → tr_claude.json (총 {len(cur)})")
+            log(f"Claude 번역 {len(out)}건 ({'API' if key else 'Claude Code'}) → tr_claude.json (총 {len(cur)})")
         except Exception as e: log("tr_claude.json 저장 실패", e)
     return out
 
@@ -1089,7 +1113,7 @@ def translate_field(items, field="t", langs=("ko", "id"), budget=None):
             if key in TR_GOOD: it[tgt] = TR_GOOD[key]; continue      # Claude 번역 우선
             if key in TR_CACHE: it[tgt] = TR_CACHE[key]; continue
             need.append((it, tgt, src, tl, key))
-    if need and _secret("anthropic_api_key"):        # Claude API (키가 있을 때만) — 품질 우선, 결과는 영구 캐시
+    if need and (_secret("anthropic_api_key") or _claude_cli()):   # Claude (API 키 또는 PC 의 Claude Code) — 품질 우선, 결과는 영구 캐시
         got = _tr_claude_api(list({(src, tl) for _, _, src, tl, _ in need[:cfg.get("claude_max_per_run", 120)]}))
         if got:
             rest = []
@@ -1238,6 +1262,11 @@ def _ev_tags(title):
 def build():
     m = manual(); yb = CFG["ytd_base"]
     mk = idx_market(); ix = idx_index(); bi = bi_indicators()
+    IDX_PART = ROOT / "data" / "idx_part.json"; idx_from_pc = None
+    if not mk and IDX_PART.exists():                 # IDX 가 막힌 환경(GitHub 러너): PC 가 올린 IDX 분리 파일을 먼저 읽는다
+        try: idx_from_pc = json.loads(IDX_PART.read_text(encoding="utf-8"))
+        except Exception as e: log("idx_part 읽기 실패", e); idx_from_pc = None
+        if idx_from_pc and not ix and idx_from_pc.get("ix"): ix = idx_from_pc["ix"]
     # investing.com 은 yfinance 보다 먼저 — yfinance 가 스레드에 asyncio 루프를 남기면 브라우저 기동이 막힌다
     _IV["SUN10Y"] = investing_quote(INVESTING_QUOTES["SUN10Y"])
     log("국채10Y investing.com", (f'{_IV["SUN10Y"]["px"]}%' if _IV.get("SUN10Y") else "실패"))
@@ -1297,7 +1326,6 @@ def build():
     announcements = translate_field(idx_announcements_today(), "title")
     # ---- IDX 분리 파일: PC(IDX 접근 가능)가 data/idx_part.json 을 쓰고 GitHub 로 올리면,
     #      IDX 가 막힌 GitHub 러너는 그 파일을 읽어 랭킹·종목·외국인·공시를 채운다 (러너는 지수·뉴스·캘린더만 직접 수집)
-    IDX_PART = ROOT / "data" / "idx_part.json"; idx_from_pc = None
     if mk:
         part = {"saved": now_wib().strftime("%Y-%m-%d %H:%M"), "index": {k: index.get(k) for k in ("rank_src", "rank_asof", "rank_date", "adv", "dec", "unch", "foreign_net_idr", "foreign_buy", "foreign_sell", "foreign_note", "foreign_date", "nonreg_idr", "value_idr", "volume")},
                 "value": mk["value"], "gainers": mk["gainers"], "losers": mk["losers"], "turnover": mk["turnover"], "foreign_top": mk["foreign_top"], "foreign_bottom": mk["foreign_bottom"],
@@ -1305,14 +1333,12 @@ def build():
                 "ix": ({k: v for k, v in ix.items() if k not in ("spark", "lq45")} | {"spark": (ix.get("spark") or [])[::max(1, len(ix.get("spark") or []) // 120)], "lq45": ({k: v for k, v in ix["lq45"].items() if k != "spark"} | {"spark": (ix["lq45"].get("spark") or [])[::max(1, len(ix["lq45"].get("spark") or []) // 120)]}) if ix.get("lq45") else None}) if ix else None}
         try: IDX_PART.write_text(json.dumps(part, ensure_ascii=False), encoding="utf-8")
         except Exception as e: log("idx_part 저장 실패", e)
-    elif IDX_PART.exists():
+    elif idx_from_pc:
         try:
-            idx_from_pc = json.loads(IDX_PART.read_text(encoding="utf-8"))
             pi = idx_from_pc.get("index") or {}
             for k, v in pi.items():
                 if v is not None and index.get(k) is None: index[k] = v
             index["rank_src"] = (pi.get("rank_src") or "IDX") + f' · PC {idx_from_pc.get("saved", "")[-5:]}'
-            if not ix and idx_from_pc.get("ix"): ix = idx_from_pc["ix"]
             if not announcements: announcements = idx_from_pc.get("announcements") or []
             log(f'IDX 차단 → PC 수집분 사용 (idx_part.json {idx_from_pc.get("saved")})')
         except Exception as e: log("idx_part 읽기 실패", e); idx_from_pc = None
