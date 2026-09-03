@@ -476,7 +476,11 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   // 오늘 일정
   const _t=today(),cal=(d.calendar||[]);
   const tdAll=cal.filter(e=>e.date===_t);
-  const td=tdAll.slice().sort((a,b)=>(b.imp||0)-(a.imp||0)||(a.kind==='macro'?-1:1)-(b.kind==='macro'?-1:1)||(a.time||'—').localeCompare(b.time||'—')).slice(0,8).sort((a,b)=>(a.time||'—').localeCompare(b.time||'—'));
+  const byImp=(a,b)=>(b.imp||0)-(a.imp||0)||(a.time||'—').localeCompare(b.time||'—');
+  const tdM=tdAll.filter(e=>e.kind==='macro').sort(byImp),tdC=tdAll.filter(e=>e.kind!=='macro').sort((a,b)=>(a.kind==='div'||a.kind==='ipo'?-1:0)-(b.kind==='div'||b.kind==='ipo'?-1:0)||byImp(a,b));
+  let pick=[...tdM.slice(0,4),...tdC.slice(0,4)];                       // 매크로 4 + 기업(배당·상장 우선) 4, 한쪽이 모자라면 다른 쪽으로 채움
+  if(pick.length<8)pick=[...pick,...[...tdM.slice(4),...tdC.slice(4)].sort(byImp).slice(0,8-pick.length)];
+  const td=pick.sort((a,b)=>(a.time||'—').localeCompare(b.time||'—'));
   const up=tdAll.length?[]:cal.filter(e=>e.date>_t).sort((a,b)=>(b.imp||0)-(a.imp||0)||(a.date+(a.time||'')).localeCompare(b.date+(b.time||''))).slice(0,4);
   $('today-ev').innerHTML=(td.length?td.map(ev).join('')+(tdAll.length>td.length?`<div class="ev-more" onclick="showView('cal')">+${tdAll.length-td.length} ${T('moreCal')}</div>`:'')
     :(up.length?`<div class="ev-day">${T('upcoming')}</div>`+up.map(e=>ev(Object.assign({},e,{time:(e.date.slice(5).replace('-','/'))+' '+(e.time&&e.time!=='—'?e.time:'')}))).join('')
