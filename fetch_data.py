@@ -1113,7 +1113,7 @@ def _claude_complete(prompt, key, model):
     if not cli: return None
     import subprocess
     try:
-        r = subprocess.run([cli, "-p", "--output-format", "text"], input=prompt, capture_output=True, text=True, encoding="utf-8", timeout=180, cwd=str(ROOT))
+        r = subprocess.run([cli, "-p", "--output-format", "text"], input=prompt, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=180, cwd=str(ROOT))
     except Exception as e:
         log("Claude Code 번역 실행 오류", str(e)[:100]); return None
     if r.returncode != 0: log(f"Claude Code 번역 실패 (exit {r.returncode}): {(r.stderr or r.stdout)[:120]}"); return None
@@ -1339,7 +1339,8 @@ def _auto_publish():
     try:
         import subprocess
         args = [sys.executable, str(ROOT / "publish.py"), "--quiet"] + (["--data"] if CFG.get("auto_push_data") else [])
-        r = subprocess.run(args, cwd=str(ROOT), capture_output=True, text=True, encoding="utf-8", timeout=300)
+        env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONUTF8="1")
+        r = subprocess.run(args, cwd=str(ROOT), capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=300, env=env)
         out = ((r.stdout or "") + (r.stderr or "")).strip().splitlines()
         log("auto_push:", out[-1][:140] if out else f"exit {r.returncode}")
         PUBLISHED_IN_BUILD = True
