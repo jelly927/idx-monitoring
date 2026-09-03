@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 21:40",
+ "updated": "2026-09-03 21:54",
  "delay_min": 0,
- "fx_basis": "13.03 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,357 · 21:23 Yahoo",
- "idr_per_krw": 13.0327,
+ "fx_basis": "13.03 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,357 · 21:43 Yahoo",
+ "idr_per_krw": 13.0309,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7698.3,
+   "px": 7699.27,
    "prev": 7666.6,
-   "pct": 0.41,
-   "asof": "21:35",
+   "pct": 0.43,
+   "asof": "21:50",
    "live": true,
    "spark": [
     7707.12,
@@ -15097,17 +15097,20 @@
     7704.96,
     7703.52,
     7694.84,
-    7698.3
+    7697.83,
+    7697.54,
+    7703.83,
+    7699.27
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26395.0,
+   "px": 26381.91,
    "prev": 26217.83,
-   "pct": 0.68,
-   "asof": "21:35",
+   "pct": 0.63,
+   "asof": "21:50",
    "live": true,
    "spark": [
     26381.93,
@@ -15123,17 +15126,20 @@
     26450.73,
     26447.91,
     26400.19,
-    26395.0
+    26393.34,
+    26393.17,
+    26408.84,
+    26381.91
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53408.64,
+   "px": 53444.35,
    "prev": 53061.95,
-   "pct": 0.65,
-   "asof": "21:35",
+   "pct": 0.72,
+   "asof": "21:50",
    "live": true,
    "spark": [
     53453.07,
@@ -15149,7 +15155,10 @@
     53364.69,
     53343.01,
     53342.61,
-    53408.64
+    53404.69,
+    53398.93,
+    53460.24,
+    53444.35
    ]
   },
   {
@@ -16231,6 +16240,17 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-03T21:42:00+07:00",
+   "date": "2026-09-03",
+   "time": "21:42",
+   "src": "Media Indonesia",
+   "t": "Dana Asing Diproyeksi Kembali Masuk Jelang Tinjauan MSCI November 2026",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/929534/dana-asing-diproyeksi-kembali-masuk-jelang-tinjauan-msci-november-2026",
+   "t_ko": "2026년 11월 MSCI 검토를 앞두고 해외 자금이 반환될 것으로 예상",
+   "t_id": "Dana Asing Diproyeksi Kembali Masuk Jelang Tinjauan MSCI November 2026"
+  },
+  {
    "ts": "2026-09-03T21:34:12+07:00",
    "date": "2026-09-03",
    "time": "21:34",
@@ -16573,18 +16593,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/099670000-1784823630-830-556.jpg",
    "t_ko": "OJK, 2027년부터 광물·전략상품 거래소 감독 이관",
    "t_id": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027"
-  },
-  {
-   "ts": "2026-09-03T15:49:06+07:00",
-   "date": "2026-09-03",
-   "time": "15:49",
-   "src": "Jawa Pos",
-   "t": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+",
-   "tags": [],
-   "url": "https://www.jawapos.com/energi/2609030090/harga-minyak-mentah-dunia-naik-tipis-di-tengah-eskalasi-as-iran-cek-pemicu-dan-proyeksi-opec",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/18/ilustrasi-kapal-tanker-di-perairan-selat-hormuz-ap-photokamran-jebreili-6ydWQ.webp",
-   "t_ko": "美-이란 긴장 고조에 국제유가 소폭 상승 — OPEC+ 전망",
-   "t_id": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+"
   }
  ],
  "kisi_news": [
@@ -16756,9 +16764,9 @@
   },
   {
    "k": "IDR/KRW (1원당 루피아)",
-   "v": "13.03",
-   "d": 1.09,
-   "ytd": 12.16,
+   "v": "13.02",
+   "d": 1.07,
+   "ytd": 12.14,
    "inv": true,
    "note": "연초 11.6144",
    "k_ko": "IDR/KRW (1원당 루피아)",
@@ -16791,9 +16799,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "96.60",
-   "d": 1.01,
-   "ytd": 58.62,
+   "v": "96.59",
+   "d": 1.0,
+   "ytd": 58.6,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16801,8 +16809,8 @@
   },
   {
    "k": "DXY",
-   "v": "99.01",
-   "d": -0.55,
+   "v": "99.08",
+   "d": -0.48,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -16812,7 +16820,7 @@
   {
    "k": "UST 10Y",
    "v": "4.76%",
-   "d": -0.83,
+   "d": -0.75,
    "ytd": null,
    "inv": true,
    "note": null,
