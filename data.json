@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 20:15",
+ "updated": "2026-09-03 20:25",
  "delay_min": 0,
  "fx_basis": "13.02 IDR/KRW · USD/IDR 17,655 · USD/KRW 1,356 · 17:13 Yahoo",
- "idr_per_krw": 13.0243,
+ "idr_per_krw": 13.0182,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -14,9 +14,9 @@
    "pct": 1.09,
    "spark": [
     6667.891,
-    6633.364,
-    6630.982,
-    6628.04,
+    6633.503,
+    6636.188,
+    6624.463,
     6629.4,
     6630.128,
     6627.969,
@@ -83,13 +83,13 @@
     6667.021,
     6664.316,
     6668.232,
-    6663.61,
-    6662.809,
-    6662.198,
-    6664.903,
-    6666.797,
-    6665.748,
-    6665.545,
+    6663.931,
+    6665.21,
+    6663.533,
+    6665.917,
+    6664.599,
+    6664.264,
+    6666.937,
     6670.046,
     6664.391,
     6665.043,
@@ -211,13 +211,13 @@
     660.662,
     660.361,
     660.797,
-    660.997,
-    660.652,
-    661.321,
+    661.053,
+    660.835,
+    660.232,
     661.158,
-    660.734,
-    661.317,
-    660.644,
+    660.372,
+    661.281,
+    660.342,
     661.09,
     660.415,
     660.19,
@@ -336,7 +336,7 @@
   "m1": 6.95,
   "value_idr": 18607401563700,
   "volume": 39305835265,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-03 20:09",
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-03 20:19",
   "rank_asof": null,
   "rank_date": "2026-09-03",
   "adv": 416,
@@ -15639,9 +15639,31 @@
    "pay": "2026-09-18",
    "yld": "6.38%",
    "name": "Cisarua Mountain Dairy Tbk PT"
+  },
+  "DKFT": {
+   "dps": 30.0,
+   "type": "",
+   "ex": null,
+   "pay": null,
+   "yld": null,
+   "src": "KISI",
+   "url": ""
   }
  },
  "news": [
+  {
+   "ts": "2026-09-03T20:12:00+07:00",
+   "date": "2026-09-03",
+   "time": "20:12",
+   "src": "Media Indonesia",
+   "t": "Hotel Ciputra Jakarta Rayakan HUT Ke-33 dengan Promo B33ST Anniversary Escape",
+   "tags": [
+    "CTRA"
+   ],
+   "url": "https://mediaindonesia.com/ekonomi/929491/hotel-ciputra-jakarta-rayakan-hut-ke-33-dengan-promo-b33st-anniversary-escape",
+   "t_id": "Hotel Ciputra Jakarta Rayakan HUT Ke-33 dengan Promo B33ST Anniversary Escape",
+   "t_ko": "호텔 시푸트라 자카르타, B33ST 기념일 탈출 프로모션으로 33주년 기념"
+  },
   {
    "ts": "2026-09-03T20:00:00+07:00",
    "date": "2026-09-03",
@@ -15653,8 +15675,8 @@
    ],
    "url": "https://www.medcom.id/ekonomi/bisnis/Zke1xvPk-tak-lagi-gaptek-generasi-40-ternyata-mulai-berani-bereksperimen-dengan-ai",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/03/1839912/8SnJzowRZB.jpeg?w=720",
-   "t_ko": "더 이상 아무것도 모르는 40+세대가 AI 실험에 도전하기 시작했습니다.",
-   "t_id": "Tak Lagi Gaptek, Generasi 40+ Ternyata Mulai Berani Bereksperimen dengan AI"
+   "t_ko": "더 이상 기계치 아냐, 40대 이상 세대 AI 실험 시작 — 사용 확산",
+   "t_id": "Tak Lagi Gaptek, Generasi 40+ Mulai Berani Bereksperimen dengan AI"
   },
   {
    "ts": "2026-09-03T19:56:26+07:00",
@@ -16397,17 +16419,6 @@
    "t_id": "Menerapkan Matriks Eisenhower untuk Pengendalian Inflasi Sultra"
   },
   {
-   "ts": "2026-09-03T19:20:00+07:00",
-   "date": "2026-09-03",
-   "time": "19:20",
-   "src": "Media Indonesia",
-   "t": "Polisi Selidiki Dugaan Loker Bodong di Pasar Minggu, Korban Rugi Jutaan Rupiah",
-   "tags": [],
-   "url": "https://mediaindonesia.com/megapolitan/929457/polisi-selidiki-dugaan-loker-bodong-di-pasar-minggu-korban-rugi-jutaan-rupiah",
-   "t_ko": "경찰, Pasar Minggu 허위 구인 의혹 수사 — 피해자 수백만 Rp 손실",
-   "t_id": "Polisi Selidiki Dugaan Loker Bodong di Pasar Minggu, Korban Rugi Jutaan Rupiah"
-  },
-  {
    "ts": "2026-09-03T19:10:00+07:00",
    "date": "2026-09-03",
    "time": "19:10",
@@ -16683,18 +16694,6 @@
    "t_id": "EV Kurangi Konsumsi Minyak China, Emisi Karbon Terpangkas 1%"
   },
   {
-   "ts": "2026-09-03T16:16:00+07:00",
-   "date": "2026-09-03",
-   "time": "16:16",
-   "src": "Katadata",
-   "t": "JP Morgan Ungkap 4 Kunci agar Investor Asing Masuk Lagi ke Pasar Saham RI",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/bursa/6a993af64e636/jp-morgan-ungkap-4-kunci-agar-investor-asing-masuk-lagi-ke-pasar-saham-ri",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2021/07/26/JP_Morgan-2021_07_26-19_39_24_bef441004a800ca20e098941cb5c028b_620x413_thumb.jpg",
-   "t_ko": "JP Morgan — 외국인 자금 복귀를 위한 인니 증시 4대 조건",
-   "t_id": "JP Morgan Ungkap 4 Kunci agar Investor Asing Masuk Lagi ke Pasar Saham RI"
-  },
-  {
    "ts": "2026-09-03T16:14:12+07:00",
    "date": "2026-09-03",
    "time": "16:14",
@@ -16729,6 +16728,30 @@
    "img": "https://images.bloombergtechnoz.com/data/2025/11/image-20251126163917.jpeg",
    "t_ko": "1~8월 수익률 상위 종목 — 1,100% 이상 상승 종목 포함",
    "t_id": "Daftar Saham Tercuan Januari-Agustus, Ada yang Naik 1.100% Lebih"
+  },
+  {
+   "ts": "2026-09-03T15:51:12+07:00",
+   "date": "2026-09-03",
+   "time": "15:51",
+   "src": "Republika",
+   "t": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tks5xc423/ojk-ambil-alih-pengawasan-bursa-mineral-dan-komoditas-strategis-pada-2027",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/099670000-1784823630-830-556.jpg",
+   "t_ko": "OJK, 2027년부터 광물·전략상품 거래소 감독 이관",
+   "t_id": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027"
+  },
+  {
+   "ts": "2026-09-03T15:49:06+07:00",
+   "date": "2026-09-03",
+   "time": "15:49",
+   "src": "Jawa Pos",
+   "t": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+",
+   "tags": [],
+   "url": "https://www.jawapos.com/energi/2609030090/harga-minyak-mentah-dunia-naik-tipis-di-tengah-eskalasi-as-iran-cek-pemicu-dan-proyeksi-opec",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/18/ilustrasi-kapal-tanker-di-perairan-selat-hormuz-ap-photokamran-jebreili-6ydWQ.webp",
+   "t_ko": "美-이란 긴장 고조에 국제유가 소폭 상승 — OPEC+ 전망",
+   "t_id": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+"
   }
  ],
  "kisi_news": [
@@ -16935,9 +16958,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "96.17",
-   "d": 0.56,
-   "ytd": 57.91,
+   "v": "96.10",
+   "d": 0.49,
+   "ytd": 57.8,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16945,8 +16968,8 @@
   },
   {
    "k": "DXY",
-   "v": "99.01",
-   "d": -0.55,
+   "v": "98.99",
+   "d": -0.58,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -16956,7 +16979,7 @@
   {
    "k": "UST 10Y",
    "v": "4.74%",
-   "d": -1.08,
+   "d": -1.13,
    "ytd": null,
    "inv": true,
    "note": null,
@@ -18739,11 +18762,14 @@
    "t": "DKFT",
    "kind": "div",
    "imp": 3,
-   "title": "배당부 마감(cum) · 중간현금배당 — Central Omega Resources",
+   "title": "배당부 마감(cum) · 중간현금배당 Rp30/주 — Central Omega Resources",
    "src": "IDX 캘린더",
-   "title_id": "cum Dividen Tunai Interim Central Omega Resources Tbk",
+   "title_id": "cum Dividen Tunai Interim Central Omega Resources Tbk — Rp30/saham",
    "country": "ID",
-   "title_ko": "배당부 마감(cum) · 중간현금배당 — Central Omega Resources"
+   "title_ko": "배당부 마감(cum) · 중간현금배당 — Central Omega Resources",
+   "dps": 30.0,
+   "pay": null,
+   "yld": null
   },
   {
    "date": "2026-09-11",
@@ -18880,11 +18906,14 @@
    "t": "DKFT",
    "kind": "div",
    "imp": 3,
-   "title": "배당락(ex) · 중간현금배당 — Central Omega Resources",
+   "title": "배당락(ex) · 중간현금배당 Rp30/주 — Central Omega Resources",
    "src": "IDX 캘린더",
-   "title_id": "ex Dividen Tunai Interim Central Omega Resources Tbk",
+   "title_id": "ex Dividen Tunai Interim Central Omega Resources Tbk — Rp30/saham",
    "country": "ID",
-   "title_ko": "배당락(ex) · 중간현금배당 — Central Omega Resources"
+   "title_ko": "배당락(ex) · 중간현금배당 — Central Omega Resources",
+   "dps": 30.0,
+   "pay": null,
+   "yld": null
   },
   {
    "date": "2026-09-14",
@@ -18916,11 +18945,14 @@
    "t": "DKFT",
    "kind": "div",
    "imp": 1,
-   "title": "배당 기준일(DPS) · 중간현금배당 — Central Omega Resources",
+   "title": "배당 기준일(DPS) · 중간현금배당 Rp30/주 — Central Omega Resources",
    "src": "IDX 캘린더",
-   "title_id": "DPS Dividen Tunai Interim Central Omega Resources Tbk",
+   "title_id": "DPS Dividen Tunai Interim Central Omega Resources Tbk — Rp30/saham",
    "country": "ID",
-   "title_ko": "배당 기준일(DPS) · 중간현금배당 — Central Omega Resources"
+   "title_ko": "배당 기준일(DPS) · 중간현금배당 — Central Omega Resources",
+   "dps": 30.0,
+   "pay": null,
+   "yld": null
   },
   {
    "date": "2026-09-15",
@@ -19330,6 +19362,17 @@
   }
  ],
  "announcements": [
+  {
+   "ts": "2026-09-03T20:12:53+07:00",
+   "date": "2026-09-03",
+   "time": "20:12",
+   "t": "VTNY",
+   "type": "STOCK",
+   "title": "Penyampaian Materi Public Expose - Tahunan",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/574c191597_5949c1b433.pdf",
+   "title_ko": "연례 기업설명회(Public Expose) 자료 제출",
+   "title_id": "Penyampaian Materi Public Expose - Tahunan"
+  },
   {
    "ts": "2026-09-03T20:03:08+07:00",
    "date": "2026-09-03",
@@ -20198,23 +20241,12 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/f5a9db84d2_2f210385c7.pdf",
    "title_ko": "구조화 워런트 공모 조건서(Term Sheet) 제출",
    "title_id": "Penyampaian Term Sheet Penawaran Umum Structured Warrant"
-  },
-  {
-   "ts": "2026-09-03T16:43:38+07:00",
-   "date": "2026-09-03",
-   "time": "16:43",
-   "t": "XCEG",
-   "type": "STOCK",
-   "title": "Laporan Jumlah Peredaran Unit Penyertaan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b93ae3d896_c23be22b40.pdf",
-   "title_ko": "수익증권 유통 좌수 보고",
-   "title_id": "Laporan Jumlah Peredaran Unit Penyertaan"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-03 20:09",
+  "idx_from_pc": "2026-09-03 20:19",
   "bi": null,
   "hist_days": 20,
   "calendar": "investing.com"
