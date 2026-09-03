@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 22:30",
+ "updated": "2026-09-03 22:41",
  "delay_min": 0,
- "fx_basis": "13.03 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,357 · 22:27 Yahoo",
- "idr_per_krw": 13.0309,
+ "fx_basis": "13.04 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,356 · 22:27 Yahoo",
+ "idr_per_krw": 13.0405,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7742.71,
+   "px": 7741.65,
    "prev": 7666.6,
-   "pct": 0.99,
-   "asof": "22:25",
+   "pct": 0.98,
+   "asof": "22:40",
    "live": true,
    "spark": [
     7707.12,
@@ -15107,17 +15107,20 @@
     7730.88,
     7735.85,
     7737.29,
-    7742.71
+    7745.69,
+    7745.08,
+    7741.78,
+    7741.65
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26567.05,
+   "px": 26569.51,
    "prev": 26217.83,
-   "pct": 1.33,
-   "asof": "22:25",
+   "pct": 1.34,
+   "asof": "22:35",
    "live": true,
    "spark": [
     26381.93,
@@ -15143,17 +15146,19 @@
     26519.06,
     26537.2,
     26543.9,
-    26567.05
+    26580.46,
+    26578.3,
+    26569.51
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53694.91,
+   "px": 53667.64,
    "prev": 53061.95,
-   "pct": 1.19,
-   "asof": "22:25",
+   "pct": 1.14,
+   "asof": "22:40",
    "live": true,
    "spark": [
     53453.07,
@@ -15179,7 +15184,10 @@
     53596.61,
     53647.95,
     53675.28,
-    53694.91
+    53716.26,
+    53712.31,
+    53668.5,
+    53667.64
    ]
   },
   {
@@ -15490,6 +15498,33 @@
  },
  "news": [
   {
+   "ts": "2026-09-03T22:30:56+07:00",
+   "date": "2026-09-03",
+   "time": "22:30",
+   "src": "Detik",
+   "t": "Peraih Anugerah Ekonomi Hijau Investasi & Pembiayaan Hijau",
+   "tags": [
+    "MEGA"
+   ],
+   "url": "https://finance.detik.com/foto-bisnis/d-8647512/peraih-anugerah-ekonomi-hijau-investasi-pembiayaan-hijau",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/peraih-anugerah-ekonomi-hijau-investasi-pembiayaan-hijau-1788448846547_169.jpeg?w=360&q=90",
+   "t_ko": "녹색투자금융부문 녹색경제대상 수상",
+   "t_id": "Peraih Anugerah Ekonomi Hijau Investasi & Pembiayaan Hijau"
+  },
+  {
+   "ts": "2026-09-03T22:20:00+07:00",
+   "date": "2026-09-03",
+   "time": "22:20",
+   "src": "Media Indonesia",
+   "t": "Bank Mandiri: El Nino Berpeluang Bikin Inflasi Sentuh 3,5 Persen di Akhir 2026",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://mediaindonesia.com/ekonomi/929543/bank-mandiri-el-nino-berpeluang-bikin-inflasi-sentuh-35-persen-di-akhir-2026",
+   "t_id": "Bank Mandiri: El Nino Berpeluang Bikin Inflasi Sentuh 3,5 Persen di Akhir 2026",
+   "t_ko": "Bank Mandiri: 엘니뇨는 2026년 말까지 인플레이션을 3.5%까지 높일 가능성이 있음"
+  },
+  {
    "ts": "2026-09-03T22:15:26+07:00",
    "date": "2026-09-03",
    "time": "22:15",
@@ -15528,8 +15563,8 @@
    ],
    "url": "https://finance.detik.com/ekonomi-hijau/d-8647486/harita-nickel-sabet-anugerah-ekonomi-hijau-dari-pengelolaan-sumber-daya-air",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/anugerah-ekonomi-hijau-harita-1788447461345_169.jpeg?w=360&q=90",
-   "t_id": "Harita Nickel Sabet Anugerah Ekonomi Hijau dari Pengelolaan Sumber Daya Air",
-   "t_ko": "Harita Nickel, 수자원 관리 부문 녹색 경제상 수상"
+   "t_ko": "Harita Nickel, 수자원 관리 부문 녹색 경제상 수상",
+   "t_id": "Harita Nickel Sabet Anugerah Ekonomi Hijau dari Pengelolaan Sumber Daya Air"
   },
   {
    "ts": "2026-09-03T21:34:03+07:00",
@@ -16304,6 +16339,17 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-03T22:34:11+07:00",
+   "date": "2026-09-03",
+   "time": "22:34",
+   "src": "Bloomberg",
+   "t": "The Fed Fights Over the Right Sports Analogy",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/newsletters/2026-09-03/the-fed-fights-over-the-right-sports-analogy",
+   "t_ko": "연준은 올바른 스포츠 비유를 두고 싸운다",
+   "t_id": "The Fed Berjuang Atas Analogi Olahraga yang Benar"
+  },
+  {
    "ts": "2026-09-03T21:42:00+07:00",
    "date": "2026-09-03",
    "time": "21:42",
@@ -16645,18 +16691,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2025/11/image-20251126163917.jpeg",
    "t_ko": "1~8월 수익률 상위 종목 — 1,100% 이상 상승 종목 포함",
    "t_id": "Daftar Saham Tercuan Januari-Agustus, Ada yang Naik 1.100% Lebih"
-  },
-  {
-   "ts": "2026-09-03T15:51:12+07:00",
-   "date": "2026-09-03",
-   "time": "15:51",
-   "src": "Republika",
-   "t": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tks5xc423/ojk-ambil-alih-pengawasan-bursa-mineral-dan-komoditas-strategis-pada-2027",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/099670000-1784823630-830-556.jpg",
-   "t_ko": "OJK, 2027년부터 광물·전략상품 거래소 감독 이관",
-   "t_id": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027"
   }
  ],
  "kisi_news": [
@@ -16828,9 +16862,9 @@
   },
   {
    "k": "IDR/KRW (1원당 루피아)",
-   "v": "13.02",
-   "d": 1.06,
-   "ytd": 12.13,
+   "v": "13.03",
+   "d": 1.12,
+   "ytd": 12.2,
    "inv": true,
    "note": "연초 11.6144",
    "k_ko": "IDR/KRW (1원당 루피아)",
@@ -16863,9 +16897,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "96.77",
-   "d": 1.19,
-   "ytd": 58.9,
+   "v": "96.16",
+   "d": 0.55,
+   "ytd": 57.9,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16873,8 +16907,8 @@
   },
   {
    "k": "DXY",
-   "v": "98.99",
-   "d": -0.57,
+   "v": "98.96",
+   "d": -0.61,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -16883,8 +16917,8 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.74%",
-   "d": -1.08,
+   "v": "4.75%",
+   "d": -0.96,
    "ytd": null,
    "inv": true,
    "note": null,
