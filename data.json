@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 22:07",
+ "updated": "2026-09-03 22:30",
  "delay_min": 0,
- "fx_basis": "13.04 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,356 · 22:06 Yahoo",
- "idr_per_krw": 13.0386,
+ "fx_basis": "13.03 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,357 · 22:27 Yahoo",
+ "idr_per_krw": 13.0309,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7720.86,
+   "px": 7742.71,
    "prev": 7666.6,
-   "pct": 0.71,
-   "asof": "22:05",
+   "pct": 0.99,
+   "asof": "22:25",
    "live": true,
    "spark": [
     7707.12,
@@ -15103,17 +15103,21 @@
     7702.2,
     7709.04,
     7720.21,
-    7720.86
+    7723.47,
+    7730.88,
+    7735.85,
+    7737.29,
+    7742.71
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26477.83,
+   "px": 26567.05,
    "prev": 26217.83,
-   "pct": 0.99,
-   "asof": "22:05",
+   "pct": 1.33,
+   "asof": "22:25",
    "live": true,
    "spark": [
     26381.93,
@@ -15135,17 +15139,21 @@
     26392.92,
     26425.81,
     26480.37,
-    26477.83
+    26491.1,
+    26519.06,
+    26537.2,
+    26543.9,
+    26567.05
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53539.06,
+   "px": 53694.91,
    "prev": 53061.95,
-   "pct": 0.9,
-   "asof": "22:05",
+   "pct": 1.19,
+   "asof": "22:25",
    "live": true,
    "spark": [
     53453.07,
@@ -15167,7 +15175,11 @@
     53461.5,
     53493.83,
     53531.91,
-    53539.06
+    53560.93,
+    53596.61,
+    53647.95,
+    53675.28,
+    53694.91
    ]
   },
   {
@@ -15478,6 +15490,62 @@
  },
  "news": [
   {
+   "ts": "2026-09-03T22:15:26+07:00",
+   "date": "2026-09-03",
+   "time": "22:15",
+   "src": "Detik",
+   "t": "PGN Raih Anugerah Ekonomi Hijau dengan Dukung Ekonomi Desa",
+   "tags": [
+    "PGAS"
+   ],
+   "url": "https://finance.detik.com/ekonomi-hijau/d-8647508/pgn-raih-anugerah-ekonomi-hijau-dengan-dukung-ekonomi-desa",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/anugerah-ekonomi-hijau-pgn-1788448446209_169.jpeg?w=360&q=90",
+   "t_ko": "PGN, 마을 경제 지원으로 녹색 경제상 수상",
+   "t_id": "PGN Raih Anugerah Ekonomi Hijau dengan Dukung Ekonomi Desa"
+  },
+  {
+   "ts": "2026-09-03T22:09:09+07:00",
+   "date": "2026-09-03",
+   "time": "22:09",
+   "src": "Detik",
+   "t": "Peraih Anugerah Ekonomi Hijau Komitmen Tanggung Jawab Sosial",
+   "tags": [
+    "MEGA"
+   ],
+   "url": "https://finance.detik.com/foto-bisnis/d-8647494/peraih-anugerah-ekonomi-hijau-komitmen-tanggung-jawab-sosial",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/peraih-anugerah-komitmen-tanggung-jawab-sosial-1788446770010_169.jpeg?w=360&q=90",
+   "t_ko": "사회적 책임에 대한 헌신으로 녹색 경제상 수상",
+   "t_id": "Peraih Anugerah Ekonomi Hijau Komitmen Tanggung Jawab Sosial"
+  },
+  {
+   "ts": "2026-09-03T21:58:11+07:00",
+   "date": "2026-09-03",
+   "time": "21:58",
+   "src": "Detik",
+   "t": "Harita Nickel Sabet Anugerah Ekonomi Hijau dari Pengelolaan Sumber Daya Air",
+   "tags": [
+    "NCKL"
+   ],
+   "url": "https://finance.detik.com/ekonomi-hijau/d-8647486/harita-nickel-sabet-anugerah-ekonomi-hijau-dari-pengelolaan-sumber-daya-air",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/anugerah-ekonomi-hijau-harita-1788447461345_169.jpeg?w=360&q=90",
+   "t_id": "Harita Nickel Sabet Anugerah Ekonomi Hijau dari Pengelolaan Sumber Daya Air",
+   "t_ko": "Harita Nickel, 수자원 관리 부문 녹색 경제상 수상"
+  },
+  {
+   "ts": "2026-09-03T21:34:03+07:00",
+   "date": "2026-09-03",
+   "time": "21:34",
+   "src": "Detik",
+   "t": "Peraih Anugerah Ekonomi Hijau Progam Ramah Limgkungan",
+   "tags": [
+    "MEGA"
+   ],
+   "url": "https://finance.detik.com/foto-bisnis/d-8647448/peraih-anugerah-ekonomi-hijau-progam-ramah-limgkungan",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/penerima-anugerah-progam-ramah-lingkungan-1788444350864_169.jpeg?w=360&q=90",
+   "t_ko": "친환경 프로그램 부문 녹색경제상 수상",
+   "t_id": "Peraih Anugerah Ekonomi Hijau Progam Ramah Limgkungan"
+  },
+  {
    "ts": "2026-09-03T21:17:48+07:00",
    "date": "2026-09-03",
    "time": "21:17",
@@ -15643,6 +15711,20 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/03/1839919/bEi0puDayS.jpeg?w=720",
    "t_ko": "PLN 태양광 에너지 최적화 추진 — 100 GWp PLTS로 효율 제고 및 국내 에너지 강화",
    "t_id": "PLN Siap Optimalkan Energi Surya, PLTS 100 GWp Dorong Efisiensi dan Penguatan Energi Domestik"
+  },
+  {
+   "ts": "2026-09-03T18:22:00+07:00",
+   "date": "2026-09-03",
+   "time": "18:22",
+   "src": "Katadata",
+   "t": "MORA Tambah Kredit Investasi Rp 4 Triliun untuk Ekspansi Jaringan",
+   "tags": [
+    "MORA"
+   ],
+   "url": "https://katadata.co.id/digital/teknologi/6a99587a5eb3b/mora-tambah-kredit-investasi-rp-4-triliun-untuk-ekspansi-jaringan",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/06/MoraRepublic_bekerja_sama_dengan_ZTE-2026_07_06-16_44_49_78805a221a988e79ef3f42d7c5bfd418_620x413_thumb.jpeg",
+   "t_ko": "MORA 네트워크 확장 위해 투자 대출 Rp4조 추가 확보",
+   "t_id": "MORA Tambah Kredit Investasi Rp 4 Triliun untuk Ekspansi Jaringan"
   },
   {
    "ts": "2026-09-03T18:00:00+07:00",
@@ -16301,6 +16383,18 @@
    "t_id": "JPMorgan: Investor Tak Bisa Abaikan Indonesia, Target IHSG Dipatok 7.000"
   },
   {
+   "ts": "2026-09-03T19:06:00+07:00",
+   "date": "2026-09-03",
+   "time": "19:06",
+   "src": "Katadata",
+   "t": "Purbaya Klaim RI Negara Paling Tenang saat Minyak Melonjak, Puji Arahan Prabowo",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/makro/6a9962ae88e47/purbaya-klaim-ri-negara-paling-tenang-saat-minyak-melonjak-puji-arahan-prabowo",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/20/2026_08_20-14_20_00_b37f9bd6-9c6b-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
+   "t_ko": "Purbaya, 유가 급등에도 인도네시아 가장 안정적 국가라 주장 — Prabowo 지침 호평",
+   "t_id": "Purbaya Klaim RI Negara Paling Tenang saat Minyak Melonjak, Puji Arahan Prabowo"
+  },
+  {
    "ts": "2026-09-03T18:40:00+07:00",
    "date": "2026-09-03",
    "time": "18:40",
@@ -16493,18 +16587,6 @@
    "t_id": "Rupiah Menguat, IHSG Naik 1,09% ke Level Tertinggi 3,5 Bulan"
   },
   {
-   "ts": "2026-09-03T16:28:00+07:00",
-   "date": "2026-09-03",
-   "time": "16:28",
-   "src": "Katadata",
-   "t": "Purbaya Pastikan Tarik Rp 120 Triliun dari Danantara Meski Diprotes",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6a993dbdbe625/purbaya-pastikan-tarik-rp-120-triliun-dari-danantara-meski-diprotes",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/05/2026_08_05-17_48_00_ae6fab08-90c3-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "Purbaya 재무장관, 반발에도 Danantara에서 Rp120조 회수 확정",
-   "t_id": "Purbaya Pastikan Tarik Rp 120 Triliun dari Danantara Meski Diprotes"
-  },
-  {
    "ts": "2026-09-03T16:24:36+07:00",
    "date": "2026-09-03",
    "time": "16:24",
@@ -16527,18 +16609,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2024/12/image-20241223100210.jpg",
    "t_ko": "전기차 확산에 중국 석유 소비 감소 — 탄소 배출 1% 감축",
    "t_id": "EV Kurangi Konsumsi Minyak China, Emisi Karbon Terpangkas 1%"
-  },
-  {
-   "ts": "2026-09-03T16:16:00+07:00",
-   "date": "2026-09-03",
-   "time": "16:16",
-   "src": "Katadata",
-   "t": "JP Morgan Ungkap 4 Kunci agar Investor Asing Masuk Lagi ke Pasar Saham RI",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/bursa/6a993af64e636/jp-morgan-ungkap-4-kunci-agar-investor-asing-masuk-lagi-ke-pasar-saham-ri",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2021/07/26/JP_Morgan-2021_07_26-19_39_24_bef441004a800ca20e098941cb5c028b_620x413_thumb.jpg",
-   "t_ko": "JP Morgan — 외국인 자금 복귀를 위한 인니 증시 4대 조건",
-   "t_id": "JP Morgan Ungkap 4 Kunci agar Investor Asing Masuk Lagi ke Pasar Saham RI"
   },
   {
    "ts": "2026-09-03T16:14:12+07:00",
@@ -16575,6 +16645,18 @@
    "img": "https://images.bloombergtechnoz.com/data/2025/11/image-20251126163917.jpeg",
    "t_ko": "1~8월 수익률 상위 종목 — 1,100% 이상 상승 종목 포함",
    "t_id": "Daftar Saham Tercuan Januari-Agustus, Ada yang Naik 1.100% Lebih"
+  },
+  {
+   "ts": "2026-09-03T15:51:12+07:00",
+   "date": "2026-09-03",
+   "time": "15:51",
+   "src": "Republika",
+   "t": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tks5xc423/ojk-ambil-alih-pengawasan-bursa-mineral-dan-komoditas-strategis-pada-2027",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/099670000-1784823630-830-556.jpg",
+   "t_ko": "OJK, 2027년부터 광물·전략상품 거래소 감독 이관",
+   "t_id": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027"
   }
  ],
  "kisi_news": [
@@ -16746,9 +16828,9 @@
   },
   {
    "k": "IDR/KRW (1원당 루피아)",
-   "v": "13.03",
-   "d": 1.11,
-   "ytd": 12.19,
+   "v": "13.02",
+   "d": 1.06,
+   "ytd": 12.13,
    "inv": true,
    "note": "연초 11.6144",
    "k_ko": "IDR/KRW (1원당 루피아)",
@@ -16781,9 +16863,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "96.68",
-   "d": 1.1,
-   "ytd": 58.75,
+   "v": "96.77",
+   "d": 1.19,
+   "ytd": 58.9,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16791,8 +16873,8 @@
   },
   {
    "k": "DXY",
-   "v": "99.01",
-   "d": -0.56,
+   "v": "98.99",
+   "d": -0.57,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -16801,8 +16883,8 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.75%",
-   "d": -0.88,
+   "v": "4.74%",
+   "d": -1.08,
    "ytd": null,
    "inv": true,
    "note": null,
