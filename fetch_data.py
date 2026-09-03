@@ -386,6 +386,10 @@ def idx_market():
         prev = {r["StockCode"]: r for r in rows if r.get("Close")}
         universe = [c for c, r in prev.items() if (r.get("Value") or 0) >= CFG.get("intraday_min_prev_value", 1e8)]
         q = yahoo_intraday(universe)
+        matched = [c for c in q if prev.get(c) and prev[c].get("Close")]
+        moved = sum(1 for c in matched if q[c]["px"] != prev[c]["Close"])
+        if len(q) >= 50 and matched and moved / len(matched) < 0.02:   # 개장 직후(15분 지연) 아직 체결 전 → 전일 확정치 유지
+            log(f"장중 랭킹: Yahoo 시세가 아직 전일 종가와 동일 ({moved}/{len(matched)} 변동) → 전일 IDX 확정치 표시"); q = {}
         if len(q) >= 50:
             hist = mk.pop("_hist", {})
             liquid = []
