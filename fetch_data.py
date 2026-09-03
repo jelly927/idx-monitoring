@@ -1419,8 +1419,8 @@ EV_TAGS = [  # 캘린더 제목 → 지표 태그 (한/영/인니). 같은 (날�
 def _ev_tags(title):
     t = (title or "").lower(); return frozenset(k for k, rx in EV_TAGS if re.search(rx, t))
 
-GLOBAL_IDX = [("^GSPC", "S&P 500", "S&P500"), ("^IXIC", "나스닥", "Nasdaq"), ("^DJI", "다우", "Dow Jones"), ("^KS11", "코스피", "KOSPI"),
-              ("^N225", "니케이 225", "Nikkei 225"), ("^HSI", "항셍", "Hang Seng"), ("^STI", "싱가포르 STI", "STI"), ("^SET.BK", "태국 SET", "SET")]
+GLOBAL_IDX = [("^GSPC", "S&P 500", "S&P500"), ("^IXIC", "나스닥", "Nasdaq"), ("^DJI", "다우", "Dow Jones"),
+              ("^KS11", "코스피", "KOSPI"), ("^N225", "니케이 225", "Nikkei 225"), ("^HSI", "항셍", "Hang Seng")]   # 6개 = 3열×2행 고정
 def global_indices():
     """주요 해외 지수: Yahoo 5일 일봉 + 당일 1분봉(있으면). 미국은 전일 마감, 아시아는 장중이면 실시간(15분 지연)."""
     if yf is None: return []
