@@ -317,9 +317,68 @@ def yahoo_intraday(codes, chunk=150):
         time.sleep(0.4)
     return out
 
+def yahoo_market(chunk=150):
+    """IDX 가 막힌 환경(GitHub 러너 등)용: Yahoo 일봉(약 2개월)만으로 랭킹·전 종목·등락 집계를 만든다.
+    외국인·공시는 Yahoo 에 없으므로 None (build 가 PC 분리 파일로 채운다)."""
+    if yf is None: return None
+    names = all_tickers() or {}
+    try:
+        part_p = ROOT / "data" / "idx_part.json"
+        if part_p.exists():
+            for st in json.loads(part_p.read_text(encoding="utf-8")).get("stocks", []):
+                names.setdefault(st["t"], [st.get("n") or st["t"]])
+    except Exception: pass
+    codes = sorted(names)
+    if len(codes) < 50: log("yahoo_market: 종목 목록 없음"); return None
+    today = now_wib().date(); in_session = today.weekday() < 5 and 9 <= now_wib().hour < 17
+    allst = []; adv = dec = unch = 0; value = 0.0; last_date = None
+    for i in range(0, len(codes), chunk):
+        part = codes[i:i + chunk]
+        try:
+            df = yf.download([c + ".JK" for c in part], period="2mo", interval="1d", group_by="ticker", threads=True, progress=False, auto_adjust=False)
+        except Exception as e:
+            log("yahoo_market chunk 실패", str(e)[:80]); continue
+        for c in part:
+            try:
+                d = (df[c + ".JK"] if len(part) > 1 else df).dropna(subset=["Close"])
+                if len(d) < 2: continue
+                row, prev = d.iloc[-1], d.iloc[-2]
+                px, pc = float(row["Close"]), float(prev["Close"])
+                if not px or px != px or not pc: continue
+                vol = float(row["Volume"] or 0)
+                val = vol * float((row["High"] + row["Low"] + row["Close"]) / 3)
+                hist = d.iloc[-21:-1]
+                hv = (hist["Volume"] * (hist["High"] + hist["Low"] + hist["Close"]) / 3).dropna()
+                avg = float(hv.mean()) if len(hv) >= 5 else None
+                ld = d.index[-1].date() if hasattr(d.index[-1], "date") else None
+                if ld and (last_date is None or ld > last_date): last_date = ld
+                if vol <= 0: continue
+                pct = round((px / pc - 1) * 100, 2)
+                adv += px > pc; dec += px < pc; unch += px == pc; value += val
+                allst.append({"t": c, "n": names.get(c, [c])[0], "px": px, "prev": pc, "pct": pct, "val": val, "vol": vol,
+                              "hi": float(row["High"]), "lo": float(row["Low"]), "ratio": round(val / avg, 1) if avg else None, "fnet": None, "live": 1 if in_session else 0})
+            except Exception:
+                continue
+        time.sleep(0.4)
+    if len(allst) < 50: log(f"yahoo_market: 유효 종목 부족 ({len(allst)})"); return None
+    minval = CFG.get("min_value_idr", 1e9)
+    liquid = [x for x in allst if x["val"] >= minval]
+    dstr = (last_date or today).isoformat()
+    log(f"yahoo_market {len(allst)}종목 (기준일 {dstr}) · 상승 {adv} 하락 {dec}")
+    return {"date": dstr, "adv": adv, "dec": dec, "unch": unch, "value_idr": value, "nonreg_idr": None,
+            "foreign_buy": None, "foreign_sell": None, "foreign_net_idr": None, "foreign_note": None,
+            "stocks": sorted(allst, key=lambda x: -x["val"]),
+            "value": sorted(liquid, key=lambda x: -x["val"])[:10],
+            "gainers": sorted(liquid, key=lambda x: -x["pct"])[:10], "losers": sorted(liquid, key=lambda x: x["pct"])[:10],
+            "turnover": sorted([x for x in liquid if x["ratio"]], key=lambda x: -x["ratio"])[:10],
+            "foreign_top": [], "foreign_bottom": [], "hist_days": 20, "src": "yahoo",
+            "rank_date": dstr, "rank_src": f"Yahoo 15분 지연 · {len(allst)}종목" + ("" if in_session else " · 종가"), "rank_asof": now_wib().strftime("%H:%M") if in_session else None}
+
 def idx_market():
     d, rows = last_trading_day(idx.stock_summary)
-    if not rows: return None
+    if not rows:
+        try: return yahoo_market()
+        except Exception as e: log("yahoo_market 오류", str(e)[:120]); return None
     today = now_wib().date()
     in_session = (d < today) and today.weekday() < 5 and 9 <= now_wib().hour < 17
     if in_session and CFG.get("intraday_rank", True):
@@ -853,6 +912,9 @@ def all_tickers():
     if out:
         f.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8"); log("tickers_all", len(out))
         return out
+    if f.exists():                                   # IDX 가 막힌 환경 → 오래된 캐시라도 사용
+        try: return json.loads(f.read_text(encoding="utf-8"))
+        except Exception: pass
     return {}
 
 def build_alias():
@@ -1263,7 +1325,8 @@ def build():
     m = manual(); yb = CFG["ytd_base"]
     mk = idx_market(); ix = idx_index(); bi = bi_indicators()
     IDX_PART = ROOT / "data" / "idx_part.json"; idx_from_pc = None
-    if not mk and IDX_PART.exists():                 # IDX 가 막힌 환경(GitHub 러너): PC 가 올린 IDX 분리 파일을 먼저 읽는다
+    yahoo_mode = bool(mk and mk.get("src") == "yahoo")
+    if (not mk or yahoo_mode) and IDX_PART.exists():  # IDX 가 막힌 환경(GitHub 러너): PC 가 올린 IDX 분리 파일을 먼저 읽는다
         try: idx_from_pc = json.loads(IDX_PART.read_text(encoding="utf-8"))
         except Exception as e: log("idx_part 읽기 실패", e); idx_from_pc = None
         if idx_from_pc and not ix and idx_from_pc.get("ix"): ix = idx_from_pc["ix"]
@@ -1295,7 +1358,7 @@ def build():
     if mk:
         index.update({"rank_src": mk.get("rank_src"), "rank_asof": mk.get("rank_asof"), "rank_date": mk.get("rank_date")})
         index.update({"adv": mk["adv"], "dec": mk["dec"], "unch": mk["unch"], "foreign_net_idr": mk["foreign_net_idr"], "foreign_buy": mk["foreign_buy"],
-                      "foreign_sell": mk["foreign_sell"], "foreign_note": mk["foreign_note"], "foreign_date": mk["date"][5:].replace("-", "/"), "nonreg_idr": mk["nonreg_idr"]})
+                      "foreign_sell": mk["foreign_sell"], "foreign_note": mk["foreign_note"], "foreign_date": None if yahoo_mode else mk["date"][5:].replace("-", "/"), "nonreg_idr": mk["nonreg_idr"]})
         if not index.get("value_idr"): index["value_idr"] = mk["value_idr"]
     if m.get("index"):                               # 수기값(IDX Daily Statistics PDF 확정치)이 있으면 최우선
         for k, v in m["index"].items():
@@ -1326,7 +1389,7 @@ def build():
     announcements = translate_field(idx_announcements_today(), "title")
     # ---- IDX 분리 파일: PC(IDX 접근 가능)가 data/idx_part.json 을 쓰고 GitHub 로 올리면,
     #      IDX 가 막힌 GitHub 러너는 그 파일을 읽어 랭킹·종목·외국인·공시를 채운다 (러너는 지수·뉴스·캘린더만 직접 수집)
-    if mk:
+    if mk and not yahoo_mode:
         part = {"saved": now_wib().strftime("%Y-%m-%d %H:%M"), "index": {k: index.get(k) for k in ("rank_src", "rank_asof", "rank_date", "adv", "dec", "unch", "foreign_net_idr", "foreign_buy", "foreign_sell", "foreign_note", "foreign_date", "nonreg_idr", "value_idr", "volume")},
                 "value": mk["value"], "gainers": mk["gainers"], "losers": mk["losers"], "turnover": mk["turnover"], "foreign_top": mk["foreign_top"], "foreign_bottom": mk["foreign_bottom"],
                 "stocks": mk.get("stocks", []), "announcements": announcements, "hist_days": mk["hist_days"],
@@ -1338,9 +1401,14 @@ def build():
             pi = idx_from_pc.get("index") or {}
             for k, v in pi.items():
                 if v is not None and index.get(k) is None: index[k] = v
-            index["rank_src"] = (pi.get("rank_src") or "IDX") + f' · PC {idx_from_pc.get("saved", "")[-5:]}'
+            tag = f' · 외국인·공시 PC {idx_from_pc.get("saved", "")[5:]}' if yahoo_mode else f' · PC {idx_from_pc.get("saved", "")[-5:]}'
+            index["rank_src"] = (index.get("rank_src") or pi.get("rank_src") or "IDX") + tag
             if not announcements: announcements = idx_from_pc.get("announcements") or []
-            log(f'IDX 차단 → PC 수집분 사용 (idx_part.json {idx_from_pc.get("saved")})')
+            if yahoo_mode:                               # Yahoo 랭킹 + PC 의 외국인 순매수(종목별) 결합
+                fn = {st["t"]: st.get("fnet") for st in idx_from_pc.get("stocks", [])}
+                for st in mk.get("stocks", []): st["fnet"] = fn.get(st["t"])
+                mk["foreign_top"] = idx_from_pc.get("foreign_top") or []; mk["foreign_bottom"] = idx_from_pc.get("foreign_bottom") or []
+            log(f'IDX 차단 → {"Yahoo 랭킹 + " if yahoo_mode else ""}PC 수집분 사용 (idx_part.json {idx_from_pc.get("saved")})')
         except Exception as e: log("idx_part 읽기 실패", e); idx_from_pc = None
     P = lambda k: (mk[k] if mk else (idx_from_pc or {}).get(k) or [])
     data = {"mode": "live", "updated": now_wib().strftime("%Y-%m-%d %H:%M"), "delay_min": 0 if ix else 15,
