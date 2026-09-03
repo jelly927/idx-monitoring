@@ -18,7 +18,8 @@ permissions:
 concurrency: { group: update, cancel-in-progress: false }
 jobs:
   fetch:
-    if: github.event_name != 'push'          # push 이벤트는 배포만
+    # 스케줄 · 수동 · PC 가 idx_part.json 을 올린 push([skip ci] 없음) 모두 수집. 러너 자신의 커밋은 [skip ci] 라 재실행되지 않는다
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, 'idx_part')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
