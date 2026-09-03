@@ -50,6 +50,17 @@ a{color:inherit;text-decoration:none}
 .hotbox .it .sr{flex:0 0 auto;color:var(--ink3);font-size:11.5px;max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .hotbox .it .tg{display:inline-block;font-size:10.5px;font-weight:700;color:var(--brand);margin-right:5px}
 .mstate{font-weight:700;padding:2px 8px;border-radius:6px;font-size:12px;white-space:nowrap}.mstate.on{background:var(--upbg);color:var(--up)}.mstate.off{background:var(--chip);color:var(--ink2)}.mstate.warn{background:#fff3cd;color:#7a5a00}
+.secgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:10px}
+.sec{border-radius:10px;padding:10px 12px;cursor:default;min-width:0;color:#fff;position:relative}
+.sec .sn{font-size:12.5px;font-weight:700;opacity:.95;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sec .sp{font-size:20px;font-weight:800;margin:2px 0 4px;letter-spacing:-.3px}
+.sec .sm{font-size:11px;opacity:.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sec .st{font-size:11px;opacity:.95;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sec .st span{cursor:pointer;margin-right:6px}.sec .up,.sec .dn,.sec .flat{color:#fff!important}.sec .st b{font-weight:600;opacity:.9}
+.mn-item{display:flex;gap:10px;padding:9px 4px;border-bottom:1px solid var(--line);align-items:flex-start}
+.mn-item .th{flex:0 0 76px;width:76px;height:56px;border-radius:8px;object-fit:cover;background:var(--chip)}
+.mn-item .b{flex:1;min-width:0}.mn-item a{color:var(--ink);text-decoration:none;font-weight:600;font-size:13px;line-height:1.35;display:block}
+.mn-item a:hover{text-decoration:underline}.mn-item .m{font-size:11.5px;color:var(--ink3);margin-top:3px}
 .srch{position:relative;margin-left:14px;flex:0 0 auto}
 .srch input{width:170px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:13px;padding:6px 10px 6px 30px;border-radius:8px;outline:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239a9ea3' stroke-width='2.4'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:9px 50%}
 .srch input:focus{border-color:var(--brand);width:230px}
@@ -263,7 +274,15 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
       <h2><span data-t="newsCard">종목 뉴스</span> <span class="more" onclick="showView('news')" style="cursor:pointer" data-t="more">전체 보기 ›</span></h2>
       <div id="news-preview"></div>
     </div>
+    <div class="card compact" id="mnews-card">
+      <h2><span data-t="mnews">시장 뉴스</span> <span class="more" data-t="mnewsSub">거시 · 정책 · 원자재 · 글로벌</span></h2>
+      <div id="mnews"></div>
+    </div>
   </div>
+</div>
+<div class="card" id="sec-card" style="margin-top:16px" hidden>
+  <h2><span data-t="secTitle">업종별 등락</span> <span class="more" id="secmeta"></span></h2>
+  <div id="sectors" class="secgrid"></div>
 </div>
 </div>
 
@@ -304,14 +323,14 @@ const I18N={
  ko:{market:'증시',news:'뉴스',cal:'캘린더',hot:'주요뉴스',connecting:'연결 중',updated:'갱신',next:'다음',sec:'초',fx:'환산',demo:'스냅샷 · 9/1 15:45 (수집기 미연결)',live:'실시간',delay:'분 지연',liveIdx:'실시간 · IDX 직접 수집',
    rank:'종목 랭킹',value:'거래대금',gainers:'상승',losers:'하락',turnover:'대금급증',status:'시장 현황',foreign:'외국인 수급',prevday:'전일 기준',ftop:'순매수 상위',fbot:'순매도 상위',macro:'시장 지표',macroSub:'환율 · 금리 · 원자재',
    newsCard:'종목 뉴스',all:'전체',more:'전체 보기 ›',todayEv:'오늘 일정',calLink:'캘린더 ›',ann:'실시간 공시',annSub:'IDX 공시 · 최근 30시간',calTitle:'캘린더',today:'오늘',macroCorp:'매크로+기업',macroOnly:'매크로',corpOnly:'기업',
-   labValue:'거래대금 순',labG:'상승률 순',labL:'하락률 순',labT:'20일 평균 대비 대금 배수 순',advdec:'상승 / 하락 / 보합',advPct:'상승 비중',inSession:'장중',closed:'장 마감',nextOpen:'다음 개장 09:00',nextMon:'다음 개장 월 09:00',stale:'갱신 지연 · 마지막',hotLatest:'최신 헤드라인',hotNote:'종목 추천·전망성 기사 제외 · 최신순',viewAll:'전체 보기 ›',noStock:'해당 종목 없음',noStockData:'시세 데이터 없음 (거래 없음 또는 미수집)',prevClose:'전일종가',annT:'공시',asofClose:'IDX 확정',qPh:'종목 검색 · BBCA',estTime:'수집 시각 기준 (발행시각 미제공)',turnoverK:'거래대금',hilo:'장중 고 / 저',vol:'거래량',ytd:'YTD',m1:'1개월',range:'장중 폭',fPrev:'외국인 (전일)',
+   labValue:'거래대금 순',labG:'상승률 순',labL:'하락률 순',labT:'20일 평균 대비 대금 배수 순',advdec:'상승 / 하락 / 보합',advPct:'상승 비중',mnews:'시장 뉴스',mnewsSub:'거시 · 정책 · 원자재 · 글로벌',secTitle:'업종별 등락',secNote:'시총가중 · IDX 업종분류',mcap:'시가총액',inSession:'장중',closed:'장 마감',nextOpen:'다음 개장 09:00',nextMon:'다음 개장 월 09:00',stale:'갱신 지연 · 마지막',hotLatest:'최신 헤드라인',hotNote:'종목 추천·전망성 기사 제외 · 최신순',viewAll:'전체 보기 ›',noStock:'해당 종목 없음',noStockData:'시세 데이터 없음 (거래 없음 또는 미수집)',prevClose:'전일종가',annT:'공시',asofClose:'IDX 확정',qPh:'종목 검색 · BBCA',estTime:'수집 시각 기준 (발행시각 미제공)',turnoverK:'거래대금',hilo:'장중 고 / 저',vol:'거래량',ytd:'YTD',m1:'1개월',range:'장중 폭',fPrev:'외국인 (전일)',
    netbuy:'순매수',buy:'매수',sell:'매도',price:'현재가',chg:'등락',ratio20:'20일 평균 대비',fnet:'외국인 순매수',headlines:'화이트리스트 매체 헤드라인',sched:'일정',noNews:'최근 헤드라인 없음',noSched:'등록된 기업 일정 없음',noEv:'오늘 일정 없음',upcoming:'다음 예정',noEv2:'2주 내 일정 없음',
    exp:'예상',prev:'이전',act:'실제',imp:'중요도',pre:'발표 전 · 확인 필요',chk:'확인 필요',exch:'인도네시아 거래소',foot:'출처: IDX · Bank Indonesia · Kontan · Yahoo Finance · 화이트리스트 매체 RSS',footChk:'미확인 값은',footChk2:'표기',
    now:'현재',close:'종가',prevClose:'전일종가',lastOk:'마지막 수신',retry:'재시도 중',noProxy:'실시간 프록시 연결 실패 (Worker 미설정)',ixIHSG:'자카르타 종합',ixLQ:'대형 45종목',ixFX:'달러/루피아',fnetAll:'외국인 순매수 · 전체시장',prevLabel:'전일',src:'출처',idxNote:'IDX 실시간 공시',days:'일월화수목금토',day:'일',month:'월',dow:'요일',noAnn:'공시 없음',noData:'데이터 없음',noNewsTag:'해당 종목 뉴스 없음'},
  id:{market:'Pasar',news:'Berita',cal:'Kalender',hot:'Berita utama',connecting:'Menghubungkan',updated:'Diperbarui',next:'Berikut',sec:'dtk',fx:'Kurs',demo:'Snapshot · 1/9 15:45 (kolektor belum aktif)',live:'Live',delay:' mnt tunda',liveIdx:'Live · IDX langsung',
    rank:'Peringkat saham',value:'Nilai transaksi',gainers:'Top gainer',losers:'Top loser',turnover:'Lonjakan nilai',status:'Kondisi pasar',foreign:'Investor asing',prevday:'Hari sebelumnya',ftop:'Net buy terbesar',fbot:'Net sell terbesar',macro:'Indikator pasar',macroSub:'Kurs · Yield · Komoditas',
    newsCard:'Berita emiten',all:'Semua',more:'Lihat semua ›',todayEv:'Agenda hari ini',calLink:'Kalender ›',ann:'Keterbukaan informasi',annSub:'Pengumuman IDX · 30 jam terakhir',calTitle:'Kalender',today:'Hari ini',macroCorp:'Makro+Emiten',macroOnly:'Makro',corpOnly:'Emiten',
-   labValue:'Urut nilai transaksi',labG:'Urut kenaikan',labL:'Urut penurunan',labT:'Nilai vs rata-rata 20 hari',advdec:'Naik / Turun / Tetap',advPct:'Porsi naik',inSession:'Sesi berjalan',closed:'Pasar tutup',nextOpen:'Buka 09:00',nextMon:'Buka Senin 09:00',stale:'Tertunda · terakhir',hotLatest:'Headline terbaru',hotNote:'Tanpa artikel rekomendasi/prediksi · terbaru dulu',viewAll:'Lihat semua ›',noStock:'Saham tidak ditemukan',noStockData:'Data harga tidak tersedia',prevClose:'Tutup kemarin',annT:'Keterbukaan',asofClose:'IDX final',qPh:'Cari saham · BBCA',estTime:'Waktu pengambilan (jam terbit tidak tersedia)',turnoverK:'Nilai transaksi',hilo:'Tertinggi / Terendah',vol:'Volume',ytd:'YTD',m1:'1 bulan',range:'Rentang harian',fPrev:'Asing (kemarin)',
+   labValue:'Urut nilai transaksi',labG:'Urut kenaikan',labL:'Urut penurunan',labT:'Nilai vs rata-rata 20 hari',advdec:'Naik / Turun / Tetap',advPct:'Porsi naik',mnews:'Berita pasar',mnewsSub:'Makro · kebijakan · komoditas · global',secTitle:'Kinerja sektor',secNote:'Tertimbang kapitalisasi · sektor IDX',mcap:'Kapitalisasi pasar',inSession:'Sesi berjalan',closed:'Pasar tutup',nextOpen:'Buka 09:00',nextMon:'Buka Senin 09:00',stale:'Tertunda · terakhir',hotLatest:'Headline terbaru',hotNote:'Tanpa artikel rekomendasi/prediksi · terbaru dulu',viewAll:'Lihat semua ›',noStock:'Saham tidak ditemukan',noStockData:'Data harga tidak tersedia',prevClose:'Tutup kemarin',annT:'Keterbukaan',asofClose:'IDX final',qPh:'Cari saham · BBCA',estTime:'Waktu pengambilan (jam terbit tidak tersedia)',turnoverK:'Nilai transaksi',hilo:'Tertinggi / Terendah',vol:'Volume',ytd:'YTD',m1:'1 bulan',range:'Rentang harian',fPrev:'Asing (kemarin)',
    netbuy:'Net buy',buy:'Beli',sell:'Jual',price:'Harga',chg:'Perubahan',ratio20:'vs rata-rata 20 hari',fnet:'Net asing',headlines:'Headline media whitelist',sched:'Agenda',noNews:'Belum ada headline',noSched:'Tidak ada agenda emiten',noEv:'Tidak ada agenda hari ini',upcoming:'Jadwal berikutnya',noEv2:'Tidak ada agenda 2 minggu ke depan',
    exp:'Perkiraan',prev:'Sebelumnya',act:'Aktual',imp:'Tingkat',pre:'Belum rilis · perlu konfirmasi',chk:'perlu konfirmasi',exch:'Bursa Efek Indonesia',foot:'Sumber: IDX · Bank Indonesia · Kontan · Yahoo Finance · RSS media whitelist',footChk:'Nilai belum terverifikasi ditandai',footChk2:'',
    now:'Sekarang',close:'Penutupan',prevClose:'Penutupan sebelumnya',lastOk:'terakhir diterima',retry:'mencoba lagi',noProxy:'proxy live gagal (Worker belum diset)',ixIHSG:'Indeks Harga Saham Gabungan',ixLQ:'45 saham likuid',ixFX:'Dolar/Rupiah',fnetAll:'Net beli asing · seluruh pasar',prevLabel:'Sebelumnya',src:'Sumber',idxNote:'Pengumuman IDX real-time',days:'MinSenSelRabKamJumSab',day:'',month:'',dow:'',noAnn:'Belum ada pengumuman',noData:'Tidak ada data',noNewsTag:'Tidak ada berita untuk saham ini'}
@@ -419,6 +438,17 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   if(changed('ftop',[d.foreign_top,LANG]))$('ftop').innerHTML=(d.foreign_top||[]).slice(0,5).map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
   if(changed('fbot',[d.foreign_bottom,LANG]))$('fbot').innerHTML=(d.foreign_bottom||[]).slice(0,5).map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
   renderRank();
+  // 시장 뉴스 (티커 없는 거시·정책 기사, 썸네일)
+  const mn=(d.market_news||[]).slice(0,12);
+  if(changed('mnews',[mn,LANG]))$('mnews').innerHTML=mn.map(n=>`<div class="mn-item">${n.img?`<img class="th" src="${n.img}" referrerpolicy="no-referrer" loading="lazy" onerror="this.remove()">`:''}<div class="b"><a href="${n.url||'#'}" target="_blank" rel="noopener">${nTitle(n)}</a><div class="m">${n.t_est?'~':''}${n.time} · ${n.src}</div></div></div>`).join('')||`<div class="empty">${T('noNews')}</div>`;
+  $('mnews-card').hidden=!mn.length;
+  // 업종별 등락 히트맵
+  const secs=(d.sectors||[]).filter(x=>x.n>=3);
+  $('sec-card').hidden=!secs.length;
+  if(secs.length&&changed('sec',[secs,LANG])){const mx=Math.max(1.5,...secs.map(x=>Math.abs(x.pct)));
+    $('secmeta').textContent=(d.index?.rank_asof?d.index.rank_asof+' · ':'')+T('secNote');
+    $('sectors').innerHTML=secs.map(x=>{const a=Math.min(1,Math.abs(x.pct)/mx);const bg=x.pct>=0?`rgba(30,138,92,${0.35+0.65*a})`:`rgba(200,53,47,${0.35+0.65*a})`;
+      return`<div class="sec" style="background:${bg}"><div class="sn">${LANG==='id'?(x.name_id||x.name):x.name}</div><div class="sp num">${sg(x.pct)}</div><div class="sm">${T('turnoverK')} ${idrShort(x.val)} · ▲${x.adv} ▼${x.dec} / ${x.n}</div><div class="st">${(x.top||[]).map(t=>`<span onclick="openDr('${t.t}')">${t.t} <b class="num">${sg(t.pct)}</b></span>`).join('')}</div></div>`;}).join('');}
   // 지표
   $('macro').innerHTML=(d.macro||[]).map(m=>`<tr><td>${L(m,'k')}${L(m,'note')?`<span class="n2">${L(m,'note')}</span>`:''}</td><td class="r num">${String(m.v).includes('확인')?`<span class="chk">${T('chk')}</span>`:m.v}</td><td class="r num" style="width:70px">${m.d==null?'<span class="flat">—</span>':`<span class="badge ${(m.inv?-m.d:m.d)>0?'up':'dn'}">${m.d>0?'+':''}${fmt(m.d)}%</span>`}</td><td class="r num" style="width:70px">${sg(m.ytd,2,'%',m.inv)}</td></tr>`).join('');
   // 오늘 일정
@@ -467,7 +497,7 @@ function qPick(i){const x=qList[i];if(!x)return;$('q').value='';$('qbox').hidden
 document.addEventListener('click',e=>{if(!e.target.closest('.srch'))$('qbox').hidden=true;});
 function openDr(t){const o=findStock(t),news=(DATA.news||[]).filter(n=>(n.tags||[]).includes(t)),ann=(DATA.announcements||[]).filter(a=>a.t===t);
   $('dr-body').innerHTML=`<div class="hd">${logo(t,o.n)}<div><h3>${o.n||t}</h3><small>${t} · ${T('exch')}</small></div></div>
-  <div class="stat"><div><span>${T('price')}</span><b class="num">${o.px==null?'—':'Rp'+fmt(o.px,0)}</b></div><div><span>${T('chg')}</span><b class="num">${sg(o.pct)}</b></div><div><span>${T('turnoverK')}</span><b class="num">${o.val==null?'—':idr(o.val).replace(/<span.*<\/span>/,'')}</b></div>${o.ratio?`<div><span>${T('ratio20')}</span><b>${fmt(o.ratio,1)}×</b></div>`:''}${o.fnet!=null?`<div><span>${T('fnet')} (${DATA.index?.foreign_date||T('prevLabel')})</span><b class="num ${o.fnet>=0?'up':'dn'}">${o.fnet>=0?'+':'−'}${idrShort(o.fnet)} <small class="src">≈${krwShort(o.fnet)}</small></b></div>`:''}${o.prev?`<div><span>${T('prevClose')}</span><b class="num">Rp${fmt(o.prev,0)}</b></div>`:''}${o.hi&&o.lo?`<div><span>${T('hilo')}</span><b class="num">${fmt(o.hi,0)} / ${fmt(o.lo,0)}</b></div>`:''}${o.vol?`<div><span>${T('vol')}</span><b class="num">${o.vol>=1e9?fmt(o.vol/1e9,2)+'B':o.vol>=1e6?fmt(o.vol/1e6,1)+'M':fmt(o.vol,0)}</b></div>`:''}</div>
+  <div class="stat"><div><span>${T('price')}</span><b class="num">${o.px==null?'—':'Rp'+fmt(o.px,0)}</b></div><div><span>${T('chg')}</span><b class="num">${sg(o.pct)}</b></div><div><span>${T('turnoverK')}</span><b class="num">${o.val==null?'—':idr(o.val).replace(/<span.*<\/span>/,'')}</b></div>${o.ratio?`<div><span>${T('ratio20')}</span><b>${fmt(o.ratio,1)}×</b></div>`:''}${o.fnet!=null?`<div><span>${T('fnet')} (${DATA.index?.foreign_date||T('prevLabel')})</span><b class="num ${o.fnet>=0?'up':'dn'}">${o.fnet>=0?'+':'−'}${idrShort(o.fnet)} <small class="src">≈${krwShort(o.fnet)}</small></b></div>`:''}${o.prev?`<div><span>${T('prevClose')}</span><b class="num">Rp${fmt(o.prev,0)}</b></div>`:''}${o.hi&&o.lo?`<div><span>${T('hilo')}</span><b class="num">${fmt(o.hi,0)} / ${fmt(o.lo,0)}</b></div>`:''}${o.vol?`<div><span>${T('vol')}</span><b class="num">${o.vol>=1e9?fmt(o.vol/1e9,2)+'B':o.vol>=1e6?fmt(o.vol/1e6,1)+'M':fmt(o.vol,0)}</b></div>`:''}${o.mcap?`<div><span>${T('mcap')}</span><b class="num">${idrShort(o.mcap)} <small class="src">≈${krwShort(o.mcap)}</small></b></div>`:''}</div>
   ${o.px==null?`<div class="empty">${T('noStockData')}</div>`:`<div class="src" style="margin:-8px 0 10px">${o.live?(DATA.index?.rank_src||'')+' · '+(DATA.index?.rank_asof||''):T('asofClose')+' '+(DATA.index?.foreign_date||'')}</div>`}
   <h4>${T('headlines')} · ${news.length}</h4>${news.map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`}
   <h4>${T('annT')} · ${ann.length}</h4><div class="ann">${ann.slice(0,15).map(a=>`<div class="row"><span class="tm">${a.date===today()?a.time:a.date.slice(5).replace('-','/')}</span><div class="nm"><span class="ty">${a.type||''}</span><b><a href="${a.url||'#'}" target="_blank" rel="noopener">${L(a,'title')}</a></b></div></div>`).join('')||`<div class="empty">${T('noAnn')}</div>`}</div>
