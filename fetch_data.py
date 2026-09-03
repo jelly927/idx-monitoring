@@ -509,16 +509,63 @@ def kor_type(s):
         if k.lower() in (s or "").lower(): return v
     return s or "공시"
 
+def probe_ipo():
+    """IDX 배당·IPO 엔드포인트 점검 (PC 에서 하루 1회). 결과 샘플을 data/cache/probe_*.json 에 남긴다."""
+    if os.environ.get("GITHUB_ACTIONS"): return
+    f = CACHE / "probe_done.txt"
+    if f.exists() and (time.time() - f.stat().st_mtime) < 86400: return
+    today = now_wib().date()
+    try:
+        dv = idx.dividends(today.year, today.month); log(f"probe 배당 {today:%Y-%m}: {len(dv)}건")
+        (CACHE / "probe_dividend.json").write_text(json.dumps(dv[:3], ensure_ascii=False, indent=1), encoding="utf-8")
+    except Exception as e: log("probe 배당 오류", e)
+    cands = [("/primary/ListedCompany/GetIPO", {}), ("/primary/ListedCompany/GetIpo", {}), ("/primary/Home/GetIpo", {}),
+             ("/primary/ListedCompany/GetCompanyProfilesIPO", {}), ("/primary/DigitalStatistic/GetApiDataPaginated", {"urlName": "LINK_IPO", "periodYear": today.year, "periodType": "yearly", "isPrint": "False", "pageSize": 100, "pageNumber": 1}),
+             ("/primary/ListedCompany/GetRightIssue", {}), ("/primary/ListedCompany/GetNewListing", {"year": today.year}),
+             ("/primary/ListedCompany/GetDividend", {}), ("/primary/Home/GetDividend", {}), ("/primary/ListedCompany/GetCorporateAction", {}),
+             ("/primary/ListedCompany/GetIPOList", {}), ("/primary/DigitalStatistic/GetApiDataPaginated", {"urlName": "LINK_DIVIDEND", "periodYear": today.year, "periodMonth": today.month, "periodType": "monthly", "isPrint": "False", "cumulative": "false", "pageSize": 50, "pageNumber": 1}),
+             ("/primary/Home/GetCalendar", {"range": "m", "date": f"{today:%Y%m%d}"})]
+    res = {}
+    for path, params in cands:
+        try:
+            j = idx.get(path, **params)
+            n = len(j) if isinstance(j, list) else len((j or {}).get("data") or (j or {}).get("Results") or (j or {}).get("Replies") or [])
+            res[path] = {"type": type(j).__name__, "n": n, "sample": (j[:2] if isinstance(j, list) else j) if j else None}
+            log(f"probe {path}: {type(j).__name__} {n}")
+        except Exception as e: res[path] = {"err": str(e)[:80]}
+    try: (CACHE / "probe_ipo.json").write_text(json.dumps(res, ensure_ascii=False, indent=1, default=str)[:200000], encoding="utf-8")
+    except Exception: pass
+    f.write_text(now_wib().isoformat(), encoding="utf-8")
+
 def idx_corp_calendar(days_ahead=14, days_back=1):
     today = now_wib().date(); out = []
+    try: probe_ipo()
+    except Exception as e: log("probe 오류", e)
     months = (today, (today.replace(day=1) + dt.timedelta(days=32)).replace(day=1))
     for m in months:                                                      # 1) IDX 캘린더
         for e in idx.calendar(m):
             try: d = dt.datetime.fromisoformat(str(e.get("start"))[:19]).date()
             except Exception: continue
             if -days_back <= (d - today).days <= days_ahead:
-                out.append({"date": d.isoformat(), "t": (e.get("title") or "").strip()[:6], "kind": "corp", "imp": 2,
-                            "title": f'{kor_type(e.get("Jenis"))} · {e.get("description") or ""}'.strip(" ·"), "src": "IDX 캘린더"})
+                desc = (e.get("description") or "").strip(); dl = desc.lower(); kind = "corp"; imp = 2
+                if "dividen" in dl:                                            # 배당 일정: cum / ex / 기준일(DPS) / 지급
+                    kind = "div"
+                    lab = ("배당부 마감(cum)" if " cum " in f" {dl} " else "배당락(ex)" if " ex " in f" {dl} " else "배당 기준일(DPS)" if "dps" in dl else "배당 지급" if "pembayaran" in dl else "배당")
+                    m = re.search(r"dividen tunai( interim| final)?", dl); typ = ("중간" if m and "interim" in m.group(0) else "결산" if m and "final" in m.group(0) else "")
+                    imp = 3 if lab.startswith(("배당부", "배당락")) else 1
+                    title = f"{lab} · {typ}현금배당".replace(" · 현금배당", " · 현금배당") + (" — " + re.sub(r"^tanggal\s+\w+\s+", "", desc, flags=re.I) if desc else "")
+                else:
+                    title = f'{kor_type(e.get("Jenis") or desc)} · {desc}'.strip(" ·")
+                out.append({"date": d.isoformat(), "t": (e.get("title") or "").strip()[:6], "kind": kind, "imp": imp, "title": title, "src": "IDX 캘린더"})
+    # 신규 상장 (회사 프로필의 상장일 기준, 최근 30일)
+    try:
+        for code, info in (all_tickers() or {}).items():
+            ld = info[3] if len(info) > 3 else None
+            if not ld: continue
+            d = dt.date.fromisoformat(ld[:10])
+            if -30 <= (d - today).days <= days_ahead:
+                out.append({"date": d.isoformat(), "t": code, "kind": "ipo", "imp": 2, "title": f"신규 상장 · {info[0]}" + (f" ({info[1]})" if len(info) > 1 and info[1] else ""), "src": "IDX 상장"})
+    except Exception as e: log("신규 상장 목록 오류", e)
     for m in months:                                                      # 2) 배당 cum/ex/payment
         for r in idx.dividends(m.year, m.month):
             for k, lab in (("cumDividend", "배당부 마감"), ("exDividend", "배당락"), ("paymentDate", "배당 지급")):
@@ -919,7 +966,7 @@ def all_tickers():
             clean = re.sub(r"^PT\.?\s+|\s+Tbk\.?$|\s*\(Persero\)\s*", " ", name, flags=re.I).strip()
             sec = (r.get("Sektor") or r.get("Sector") or r.get("sektor") or "").strip()
             sub = (r.get("SubSektor") or r.get("SubSector") or r.get("subsektor") or "").strip()
-            out[code] = [clean, sec, sub]
+            out[code] = [clean, sec, sub, str(r.get("TanggalPencatatan") or "")[:10]]
     if out:
         f.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8"); log("tickers_all", len(out))
         return out
