@@ -1419,6 +1419,35 @@ EV_TAGS = [  # 캘린더 제목 → 지표 태그 (한/영/인니). 같은 (날�
 def _ev_tags(title):
     t = (title or "").lower(); return frozenset(k for k, rx in EV_TAGS if re.search(rx, t))
 
+GLOBAL_IDX = [("^GSPC", "S&P 500", "S&P500"), ("^IXIC", "나스닥", "Nasdaq"), ("^DJI", "다우", "Dow Jones"), ("^KS11", "코스피", "KOSPI"),
+              ("^N225", "니케이 225", "Nikkei 225"), ("^HSI", "항셍", "Hang Seng"), ("^STI", "싱가포르 STI", "STI"), ("^SET.BK", "태국 SET", "SET")]
+def global_indices():
+    """주요 해외 지수: Yahoo 5일 일봉 + 당일 1분봉(있으면). 미국은 전일 마감, 아시아는 장중이면 실시간(15분 지연)."""
+    if yf is None: return []
+    out = []
+    for sym, ko, en in GLOBAL_IDX:
+        try:
+            t = yf.Ticker(sym)
+            d = t.history(period="7d", interval="1d", auto_adjust=False)["Close"].dropna()
+            if len(d) < 2: continue
+            last_d = d.index[-1]; last_date = (last_d.tz_convert(WIB) if last_d.tzinfo else last_d).date()
+            px, prev = float(d.iloc[-1]), float(d.iloc[-2]); ts = f"{last_date:%m/%d} 종가"; spark = []; live = False
+            try:
+                h = t.history(period="1d", interval="5m")["Close"].dropna()
+                if len(h) >= 3:
+                    ht = h.index[-1]; ht = (ht.tz_convert(WIB) if ht.tzinfo else ht.tz_localize("UTC").tz_convert(WIB))
+                    if (now_wib() - ht).total_seconds() < 3 * 3600:      # 3시간 이내 틱이면 장중으로 본다
+                        px = float(h.iloc[-1]); ts = ht.strftime("%H:%M"); live = True
+                        if last_date == ht.date(): prev = float(d.iloc[-2])
+                        else: prev = float(d.iloc[-1])
+                    spark = [round(float(v), 2) for v in h.tolist()][-80:]
+                if not spark: spark = [round(float(v), 2) for v in d.tolist()]
+            except Exception: spark = [round(float(v), 2) for v in d.tolist()]
+            out.append({"sym": sym, "name": ko, "name_id": en, "px": round(px, 2), "prev": round(prev, 2), "pct": round((px / prev - 1) * 100, 2), "asof": ts, "live": live, "spark": spark})
+        except Exception as e:
+            log("global idx fail", sym, str(e)[:60])
+    return out
+
 SECTOR_KO = {"Energy": "에너지", "Energi": "에너지", "Basic Materials": "소재", "Barang Baku": "소재", "Industrials": "산업재", "Perindustrian": "산업재",
              "Consumer Non-Cyclicals": "필수소비재", "Barang Konsumen Primer": "필수소비재", "Consumer Cyclicals": "경기소비재", "Barang Konsumen Non-Primer": "경기소비재",
              "Healthcare": "헬스케어", "Kesehatan": "헬스케어", "Financials": "금융", "Keuangan": "금융", "Properties & Real Estate": "부동산", "Properti & Real Estat": "부동산",
@@ -1443,7 +1472,7 @@ def sector_block(stocks):
     for a in agg.values():
         w = a["mcap"] if a["mcap"] else a["val"]
         a["pct"] = round(a["wsum"] / w, 2) if w else 0.0
-        a["top"] = [{"t": t, "pct": p} for _, t, p in sorted(a["top"], reverse=True)[:4]]
+        a["top"] = [{"t": t, "pct": p} for _, t, p in sorted(a["top"], reverse=True)[:10]]
         a.pop("wsum", None); out.append(a)
     return sorted(out, key=lambda x: -x["val"])
 
@@ -1489,6 +1518,7 @@ def build():
             indices.append({"code": code, "label": label, "name": name, "px": round(eod["px"], dec), "prev": round(eod["prev"], dec), "pct": round((eod["px"] / eod["prev"] - 1) * 100, 2),
                             "spark": eod.get("spark") or [], "inv": inv, "asof": eod.get("asof", "종가")})
     jl, ll, ul = ylive("^JKSE"), ylive("^JKLQ45"), ylive("USDIDR=X")
+    glob_idx = global_indices()                       # yfinance 호출은 브라우저 작업(번역·캘린더) 전에 모아서
     add_index("COMPOSITE", "IHSG", "자카르타 종합", jl, {"px": ix["px"], "prev": ix["prev"], "spark": ix["spark"], "asof": f'IDX {ix["date"][5:].replace("-", "/")} 종가'} if ix else None)
     add_index("LQ45", "LQ45", "대형 45종목", ll, {"px": ix["lq45"]["px"], "prev": ix["lq45"]["prev"], "spark": ix["lq45"]["spark"], "asof": "IDX 종가"} if ix and ix["lq45"] else None)
     add_index("USDIDR", "USD/IDR", "달러/루피아", ul, {"px": usd["px"], "prev": usd["prev"], "asof": "Yahoo"} if usd else None, inv=True, dec=0)
@@ -1563,7 +1593,7 @@ def build():
             "value": P("value"), "gainers": P("gainers"), "losers": P("losers"),
             "turnover": P("turnover"), "foreign_top": P("foreign_top"), "foreign_bottom": P("foreign_bottom"),
             "stocks": P("stocks"),
-            "sectors": sector_block(P("stocks")),
+            "sectors": sector_block(P("stocks")), "global": glob_idx,
             "news": news_block(), "market_news": MARKET_NEWS, "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
             "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
