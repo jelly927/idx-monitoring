@@ -52,7 +52,7 @@ a{color:inherit;text-decoration:none}
 .mstate{font-weight:700;padding:2px 8px;border-radius:6px;font-size:12px;white-space:nowrap}.mstate.on{background:var(--upbg);color:var(--up)}.mstate.off{background:var(--chip);color:var(--ink2)}.mstate.warn{background:#fff3cd;color:#7a5a00}
 .ev.div .bd b{color:var(--brand)}.ev.ipo .bd b{color:#7a4a00}
 .annbar{display:flex;align-items:center;gap:10px;margin-top:8px}.annbar input{flex:1;min-width:0;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:12.5px;padding:5px 9px;border-radius:7px;outline:none}.annbar input:focus{border-color:var(--brand)}.annbar a{font-size:12px;color:var(--brand);font-weight:700;text-decoration:none;white-space:nowrap}
-.gidx{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px 14px;margin-top:10px}
+.gidx{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 14px;margin-top:10px}
 .gi{min-width:0}.gi .gn{font-size:12.5px;color:var(--ink2);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.gi .gn small{display:block;font-weight:500;color:var(--ink3);font-size:11px}
 .gi .gv{display:flex;align-items:baseline;gap:8px;margin-top:2px}.gi .gv b{font-size:17px;font-weight:800}.gi .gv span{font-size:12.5px;font-weight:700}
 .gi .gs{height:38px;margin-top:2px}.gi .gs svg{width:100%;height:38px}
@@ -470,7 +470,7 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
       return`<div class="sec" style="background:${bg}"><div class="sn">${LANG==='id'?(x.name_id||x.name):x.name}</div><div class="sp num">${sg(x.pct)}</div><div class="sm">${T('turnoverK')} ${idrShort(x.val)} · ▲${x.adv} ▼${x.dec} / ${x.n}</div><div class="st">${(x.top||[]).slice(0,3).map(t=>`<span onclick="openDr('${t.t}')">${t.t} <b class="num">${sg(t.pct)}</b></span>`).join('')}</div>${pop}</div>`;}).join('');}
   // 주요 지수
   const g=d.global||[];$('gidx-card').hidden=!g.length;
-  if(g.length&&changed('gidx',[g,LANG]))$('gidx').innerHTML=g.map(x=>`<div class="gi"><div class="gn">${LANG==='id'?(x.name_id||x.name):x.name}<small>${x.live?T('now')+' · '+x.asof:x.asof.replace('종가',T('close'))}</small></div><div class="gv"><b class="num">${fmt(x.px,x.px>1000?0:2)}</b><span class="num ${x.pct>0?'up':x.pct<0?'dn':''}">${sg(x.pct)}</span></div><div class="gs">${spark(x.spark,x.prev)}</div></div>`).join('');
+  if(g.length&&changed('gidx',[g,LANG]))$('gidx').innerHTML=g.filter(x=>!/STI|SET/.test(x.sym)).slice(0,6).map(x=>`<div class="gi"><div class="gn">${LANG==='id'?(x.name_id||x.name):x.name}<small>${x.live?T('now')+' · '+x.asof:x.asof.replace('종가',T('close'))}</small></div><div class="gv"><b class="num">${fmt(x.px,x.px>1000?0:2)}</b><span class="num ${x.pct>0?'up':x.pct<0?'dn':''}">${sg(x.pct)}</span></div><div class="gs">${spark(x.spark,x.prev)}</div></div>`).join('');
   // 지표
   $('macro').innerHTML=(d.macro||[]).map(m=>`<tr><td>${L(m,'k')}${L(m,'note')?`<span class="n2">${L(m,'note')}</span>`:''}</td><td class="r num">${String(m.v).includes('확인')?`<span class="chk">${T('chk')}</span>`:m.v}</td><td class="r num" style="width:70px">${m.d==null?'<span class="flat">—</span>':`<span class="badge ${(m.inv?-m.d:m.d)>0?'up':'dn'}">${m.d>0?'+':''}${fmt(m.d)}%</span>`}</td><td class="r num" style="width:70px">${sg(m.ytd,2,'%',m.inv)}</td></tr>`).join('');
   // 오늘 일정
