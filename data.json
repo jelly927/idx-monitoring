@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": "2026-09-03 08:20",
+ "updated": "2026-09-03 08:37",
  "delay_min": 0,
  "fx_basis": "FY26 YTD 누적 11.7705 IDR/KRW (8/28 누적)",
  "idr_per_krw": 11.7705,
@@ -31,9 +31,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17697.0,
-   "prev": 17690.0,
-   "pct": 0.04,
+   "px": 17765.0,
+   "prev": 17697.0,
+   "pct": 0.38,
    "spark": [],
    "inv": true,
    "asof": "Yahoo"
@@ -48,7 +48,7 @@
   "m1": 5.79,
   "value_idr": 16800488597112,
   "volume": 63132020859,
-  "rank_src": "IDX 확정 09/02 · PC 08:16",
+  "rank_src": "IDX 확정 09/02 · PC 08:23",
   "rank_date": "2026-09-02",
   "adv": 296,
   "dec": 338,
@@ -11439,30 +11439,6 @@
  ],
  "news": [
   {
-   "ts": "2026-09-03T08:20:27.046048+07:00",
-   "date": "2026-09-03",
-   "time": "08:20",
-   "src": "The Jakarta Post",
-   "t": "VKTR to build electric bus, truck assembly plant next year after IPO",
-   "tags": [
-    "VKTR"
-   ],
-   "url": "https://www.thejakartapost.com/business/2023/06/14/vktr-to-build-electric-bus-truck-assembly-plant-next-year-after-ipo?utm_source=(direct)&amp;utm_medium=channel_business",
-   "t_est": true
-  },
-  {
-   "ts": "2026-09-03T08:20:27.045768+07:00",
-   "date": "2026-09-03",
-   "time": "08:20",
-   "src": "The Jakarta Post",
-   "t": "Pertamina NRE and VKTR collaborate to accelerate the transition to EVs in Indonesia",
-   "tags": [
-    "VKTR"
-   ],
-   "url": "https://www.thejakartapost.com/adv/2023/11/18/pertamina-nre-and-vktr-collaborate-to-accelerate-the-transition-to-evs-in-indonesia?utm_source=(direct)&amp;utm_medium=channel_business",
-   "t_est": true
-  },
-  {
    "ts": "2026-09-03T08:05:53+07:00",
    "date": "2026-09-03",
    "time": "08:05",
@@ -11471,7 +11447,8 @@
    "tags": [
     "BMRI"
    ],
-   "url": "https://www.jawapos.com/ekonomi/2609030065/menuju-28-tahun-bank-mandiri-hadirkan-livin-berbagi-rp28-bagi-pekerja-lapangan"
+   "url": "https://www.jawapos.com/ekonomi/2609030065/menuju-28-tahun-bank-mandiri-hadirkan-livin-berbagi-rp28-bagi-pekerja-lapangan",
+   "t_ko": "Bank Mandiri 창립 28주년 앞두고 현장 근로자 대상 'Livin' Berbagi Rp28' 캠페인"
   },
   {
    "ts": "2026-09-03T08:00:00+07:00",
@@ -11483,6 +11460,7 @@
     "BBRI"
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/120349/jp-morgan-bullish-terhadap-saham-bbri-ini-alasannya",
+   "t_ko": "JP Morgan, BBRI 긍정 전망 — 근거",
    "t_id": "JP Morgan Bullish Terhadap Saham BBRI, Ini Alasannya"
   },
   {
@@ -11497,6 +11475,7 @@
     "BRPT"
    ],
    "url": "https://www.jawapos.com/ekonomi/2609030043/ihsg-hari-ini-berpeluang-menguat-cek-rekomendasi-saham-arci-bbri-brms-dan-brpt",
+   "t_ko": "IHSG 금일 강세 가능성 — ARCI·BBRI·BRMS·BRPT 투자의견",
    "t_id": "IHSG Hari Ini Berpeluang Menguat, Cek Rekomendasi Saham ARCI, BBRI, BRMS, dan BRPT"
   },
   {
@@ -11509,6 +11488,7 @@
     "AMMN"
    ],
    "url": "https://katadata.co.id/finansial/bursa/6a98bff5d2294/babak-baru-raksasa-tambang-emastembaga-amman-mineral-ammn-dari-tanah-sumbawa",
+   "t_ko": "Sumbawa 금·구리 대형 광산 Amman Mineral(AMMN)의 새 국면",
    "t_id": "Babak Baru Raksasa Tambang Emas–Tembaga Amman Mineral (AMMN) dari Tanah Sumbawa"
   },
   {
@@ -11521,6 +11501,7 @@
     "JSMR"
    ],
    "url": "https://katadata.co.id/finansial/bursa/6a98c774c1b1b/laba-jasa-marga-jsmr-naik-2-jadi-rp-1-9-triliun-apa-saja-penopangnya",
+   "t_ko": "Jasa Marga(JSMR) 순이익 2% 증가 Rp1.9조 — 실적 배경",
    "t_id": "Laba Jasa Marga (JSMR) Naik 2% jadi Rp 1,9 Triliun, Apa Saja Penopangnya?"
   },
   {
@@ -11533,6 +11514,7 @@
     "ADRO"
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/120341/adro-tanggapi-kabar-pengusutan-kasus-pajak-di-kpk",
+   "t_ko": "ADRO, KPK 조세 사건 조사 보도에 입장",
    "t_id": "ADRO Tanggapi Kabar Pengusutan Kasus Pajak di KPK"
   },
   {
@@ -11546,6 +11528,7 @@
     "SMRA"
    ],
    "url": "https://katadata.co.id/finansial/bursa/6a98acb0eb8db/ihsg-diramal-naik-hari-ini-saham-cuan-psab-hingga-smra-jadi-rekomendasi-analis",
+   "t_ko": "IHSG 금일 상승 전망 — CUAN·PSAB·SMRA 애널리스트 추천",
    "t_id": "IHSG Diramal Naik Hari Ini, Saham CUAN, PSAB hingga SMRA jadi Rekomendasi Analis"
   },
   {
@@ -11558,6 +11541,7 @@
     "BRMS"
    ],
    "url": "https://www.idxchannel.com/market-news/ihsg-berpeluang-menguat-ke-6666-saham-arci-brms-bisa-jadi-pilihan",
+   "t_ko": "IHSG 6,666 상승 가능성 — ARCI·BRMS 관심",
    "t_id": "IHSG Berpeluang Menguat ke 6.666, Saham ARCI-BRMS Bisa Jadi Pilihan"
   },
   {
@@ -11571,7 +11555,9 @@
     "BBRI",
     "TLKM"
    ],
-   "url": "https://www.idnfinancials.com/news/68269/foreign-trading-slows-down-outflow-of-idr-235-billion"
+   "url": "https://www.idnfinancials.com/news/68269/foreign-trading-slows-down-outflow-of-idr-235-billion",
+   "t_ko": "외국인 거래 둔화 — Rp2,350억 순유출",
+   "t_id": "Transaksi Asing Melambat, Net Sell Rp 235 Miliar"
   },
   {
    "ts": "2026-09-02T19:45:00+07:00",
@@ -11583,6 +11569,7 @@
     "TLKM"
    ],
    "url": "https://katadata.co.id/finansial/bursa/6a981a5004542/reaksi-tlkm-soal-gedung-telkom-di-gatot-soebroto-bakal-disulap-jadi-kantor-bgn",
+   "t_ko": "TLKM, Gatot Soebroto Telkom 사옥 BGN 청사 전환 보도에 입장",
    "t_id": "Reaksi TLKM soal Gedung Telkom di Gatot Soebroto Bakal Disulap Jadi Kantor BGN"
   },
   {
@@ -11595,6 +11582,7 @@
     "BBRI"
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/120325/analis-pemulihan-kredit-mikro-jadi-sentimen-positif-saham-bbri",
+   "t_ko": "애널리스트 — 소액대출 회복, BBRI 긍정 요인",
    "t_id": "Analis: Pemulihan Kredit Mikro Jadi Sentimen Positif Saham BBRI"
   },
   {
@@ -11624,18 +11612,6 @@
    "t_id": "Danantara Gandeng 2 Perusahaan Bakrie, Genjot Masif Bus dan Truk Listrik di Indonesia"
   },
   {
-   "ts": "2026-09-02T17:54:00+07:00",
-   "date": "2026-09-02",
-   "time": "09/02",
-   "src": "Katadata",
-   "t": "Astra Jajaki Pembangunan 2.000 Rumah Subsidi di Jakarta dan Bandung",
-   "tags": [
-    "ASII"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9800557fda8/astra-jajaki-pembangunan-2000-rumah-subsidi-di-jakarta-dan-bandung",
-   "t_id": "Astra Jajaki Pembangunan 2.000 Rumah Subsidi di Jakarta dan Bandung"
-  },
-  {
    "ts": "2026-09-02T17:07:43+07:00",
    "date": "2026-09-02",
    "time": "09/02",
@@ -11645,6 +11621,7 @@
     "BMRI"
    ],
    "url": "https://www.liputan6.com/saham/read/8283210/ihsg-hari-ini-tergelincir-ke-6597-saham-bmri-melambung-093",
+   "t_ko": "IHSG 6,597로 하락 — BMRI 0.93% 상승",
    "t_id": "IHSG Hari Ini Tergelincir ke 6.597, Saham BMRI Melambung 0,93%"
   },
   {
@@ -11798,9 +11775,9 @@
  "macro": [
   {
    "k": "USD/IDR (Yahoo 15분 지연)",
-   "v": "17,697",
-   "d": 0.04,
-   "ytd": -5.52,
+   "v": "17,765",
+   "d": 0.38,
+   "ytd": -5.88,
    "inv": true,
    "note": null,
    "k_ko": "USD/IDR (Yahoo 15분 지연)",
@@ -11808,9 +11785,9 @@
   },
   {
    "k": "IDR/KRW (1원당 루피아)",
-   "v": "12.89",
-   "d": -0.37,
-   "ytd": -9.87,
+   "v": "13.09",
+   "d": 1.54,
+   "ytd": -11.24,
    "inv": true,
    "note": "연초 11.6144",
    "k_ko": "IDR/KRW (1원당 루피아)",
@@ -11843,9 +11820,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "95.20",
-   "d": 0.58,
-   "ytd": 56.32,
+   "v": "95.45",
+   "d": 0.85,
+   "ytd": 56.73,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -11853,8 +11830,8 @@
   },
   {
    "k": "DXY",
-   "v": "99.54",
-   "d": -0.13,
+   "v": "99.53",
+   "d": -0.14,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -13018,6 +12995,15 @@
  ],
  "announcements": [
   {
+   "ts": "2026-09-03T08:18:11+07:00",
+   "date": "2026-09-03",
+   "time": "08:18",
+   "t": "GRPM",
+   "type": "STOCK",
+   "title": "Laporan Informasi atau Fakta Material PT Graha Prima Mentari Tbk",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/d51ec2e3ab_fc9d66c623.pdf"
+  },
+  {
    "ts": "2026-09-02T22:45:08+07:00",
    "date": "2026-09-02",
    "time": "22:45",
@@ -13167,7 +13153,9 @@
    "t": "BNBA",
    "type": "STOCK",
    "title": "Perkara Hukum Terhadap Anggota Direksi Perseroan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/259716a381_855fe253e5.pdf"
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/259716a381_855fe253e5.pdf",
+   "title_ko": "이사회 구성원 대상 법적 소송",
+   "title_id": "Perkara Hukum Terhadap Anggota Direksi Perseroan"
   },
   {
    "ts": "2026-09-02T22:27:49+07:00",
@@ -13230,7 +13218,9 @@
    "t": "TMPO",
    "type": "STOCK",
    "title": "Laporan Hasil Public Expose - Insidentil",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/80613e11ce_536c84cff2.pdf"
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/80613e11ce_536c84cff2.pdf",
+   "title_ko": "수시 기업설명회(Public Expose) 결과 보고",
+   "title_id": "Laporan Hasil Public Expose - Insidentil"
   },
   {
    "ts": "2026-09-02T21:47:20+07:00",
@@ -13239,7 +13229,9 @@
    "t": "CRAB",
    "type": "STOCK",
    "title": "Penyampaian Laporan Tahunan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/af2647daa1_d736224575.pdf"
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/af2647daa1_d736224575.pdf",
+   "title_ko": "연차보고서 제출",
+   "title_id": "Penyampaian Laporan Tahunan"
   },
   {
    "ts": "2026-09-02T21:44:32+07:00",
@@ -13248,7 +13240,9 @@
    "t": "ADRO",
    "type": "STOCK",
    "title": "Penjelasan atas Pemberitaan Media Massa",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/f796769f6c_1748475539.pdf"
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/f796769f6c_1748475539.pdf",
+   "title_ko": "언론 보도에 대한 해명",
+   "title_id": "Penjelasan atas Pemberitaan Media Massa"
   },
   {
    "ts": "2026-09-02T21:39:28+07:00",
@@ -13312,7 +13306,9 @@
    "t": "CASH",
    "type": "STOCK",
    "title": "Penyampaian Bukti Iklan Pemberitahuan RUPS",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e486ee1ac5_cc7f4d94e7.pdf"
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e486ee1ac5_cc7f4d94e7.pdf",
+   "title_ko": "주주총회 통지 공고 게재 증빙 제출",
+   "title_id": "Penyampaian Bukti Iklan Pemberitahuan RUPS"
   },
   {
    "ts": "2026-09-02T20:38:41+07:00",
@@ -13344,6 +13340,7 @@
    "type": "STOCK",
    "title": "Perubahan susunan Direksi dan Dewan Komisaris PT. Universal Health Network (Perusahaan Terkendali dari PT. Soho Global Health Tbk) (PT UHN)",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/32e14704ed_b40ace25cd.pdf",
+   "title_ko": "Soho Global Health(SOHO) 종속회사 Universal Health Network 이사회·감사회 변경",
    "title_id": "Perubahan susunan Direksi dan Dewan Komisaris PT. Universal Health Network (Perusahaan Terkendali dari PT. Soho Global Health Tbk) (PT UHN)"
   },
   {
@@ -13354,6 +13351,7 @@
    "type": "STOCK",
    "title": "Perubahan susunan Direksi dan Dewan Komisaris PT. Soho Global Medika (Perusahaan Terkendali dari PT. Soho Global Health Tbk) (PT SGM)",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/14ca28f782_7e244cfc1f.pdf",
+   "title_ko": "Soho Global Health(SOHO) 종속회사 Soho Global Medika 이사회·감사회 변경",
    "title_id": "Perubahan susunan Direksi dan Dewan Komisaris PT. Soho Global Medika (Perusahaan Terkendali dari PT. Soho Global Health Tbk) (PT SGM)"
   },
   {
@@ -13364,6 +13362,7 @@
    "type": "STOCK",
    "title": "Perubahan susunan Direksi dan Dewan Komisaris PT. Soho Industri Pharmasi (Perusahaan Terkendali dari PT. Soho Global Health Tbk) (PT SIP)",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/dfa028a288_78afc063a2.pdf",
+   "title_ko": "Soho Global Health(SOHO) 종속회사 Soho Industri Pharmasi 이사회·감사회 변경",
    "title_id": "Perubahan susunan Direksi dan Dewan Komisaris PT. Soho Industri Pharmasi (Perusahaan Terkendali dari PT. Soho Global Health Tbk) (PT SIP)"
   },
   {
@@ -13374,6 +13373,7 @@
    "type": "STOCK",
    "title": "Perubahan susunan Direksi dan Dewan Komisaris PT. Parit Padang Global (Perusahaan Terkendali dari PT. Soho Global Health Tbk) (PT PPG)",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/916affcfc7_7d02f248ce.pdf",
+   "title_ko": "Soho Global Health(SOHO) 종속회사 Parit Padang Global 이사회·감사회 변경",
    "title_id": "Perubahan susunan Direksi dan Dewan Komisaris PT. Parit Padang Global (Perusahaan Terkendali dari PT. Soho Global Health Tbk) (PT PPG)"
   },
   {
@@ -13384,6 +13384,7 @@
    "type": "STOCK",
    "title": "Laporan Informasi dan Fakta Material Hasil Keputusan Permohonan Penundaan Kewajiban Pembayaran Utang",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/85fd1c7c6c_4d55de3548.pdf",
+   "title_ko": "채무상환유예(PKPU) 신청 결정 결과 중요사실 보고",
    "title_id": "Laporan Informasi dan Fakta Material Hasil Keputusan Permohonan Penundaan Kewajiban Pembayaran Utang"
   },
   {
@@ -13404,7 +13405,9 @@
    "t": "BTPN",
    "type": "STOCK",
    "title": "Keterbukaan Informasi Pembayaran Bunga Obligasi",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/a4ed328d41_ecc44cb980.pdf"
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/a4ed328d41_ecc44cb980.pdf",
+   "title_ko": "회사채 이자 지급 공시",
+   "title_id": "Keterbukaan Informasi Pembayaran Bunga Obligasi"
   },
   {
    "ts": "2026-09-02T19:37:45+07:00",
@@ -13413,7 +13416,9 @@
    "t": "GTBO",
    "type": "STOCK",
    "title": "Penyampaian Laporan Tahunan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/aa9218fa02_288b609daf.pdf"
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/aa9218fa02_288b609daf.pdf",
+   "title_ko": "연차보고서 제출",
+   "title_id": "Penyampaian Laporan Tahunan"
   },
   {
    "ts": "2026-09-02T19:37:16+07:00",
@@ -13696,7 +13701,9 @@
    "t": "WARAN TERSTRUKTUR",
    "type": "SPOP",
    "title": "Mengingatkan Jadwal Penghapusan (Delisting) Efek Waran Terstruktur",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/Exchange/Peng-Batas Akhir Perdagangan 260911-No. Peng-00167BEI.POP09-2026.pdf"
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/Exchange/Peng-Batas Akhir Perdagangan 260911-No. Peng-00167BEI.POP09-2026.pdf",
+   "title_ko": "구조화 워런트 상장폐지 일정 안내",
+   "title_id": "Mengingatkan Jadwal Penghapusan (Delisting) Efek Waran Terstruktur"
   },
   {
    "ts": "2026-09-02T17:58:56+07:00",
@@ -13717,6 +13724,7 @@
    "type": "STOCK",
    "title": "Penyampaian Informasi Hasil Keputusan Fit & Proper Sdr Ignatius Susatyo Wijoyo  dan Surat Keputusan Kementerian Hukum dan HAM",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b6a0f5633c_68d72869b4.pdf",
+   "title_ko": "Ignatius Susatyo Wijoyo 적격성 심사 결과 및 법무인권부 결정서 제출",
    "title_id": "Penyampaian Informasi Hasil Keputusan Fit & Proper Sdr Ignatius Susatyo Wijoyo  dan Surat Keputusan Kementerian Hukum dan HAM"
   },
   {
@@ -13815,6 +13823,7 @@
    "type": "STOCK",
    "title": "Perubahan Jadwal Rapat Umum Pemegang Saham Luar Biasa dan Independen",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/eff2c0ac24_60a9c62c5c.pdf",
+   "title_ko": "임시·독립주주총회 일정 변경",
    "title_id": "Perubahan Jadwal Rapat Umum Pemegang Saham Luar Biasa dan Independen"
   },
   {
@@ -13847,6 +13856,7 @@
    "type": "STOCK",
    "title": "Keterbukaan Informasi atas Fakta Material terkait Rencana pembelian kembali saham Perseroan dalam kondisi pasar yang berfluktuasi secara signifikan",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/9d00973675_7fdad62f35.pdf",
+   "title_ko": "시장 급변동 상황 자사주 매입 계획 중요사실 공시",
    "title_id": "Keterbukaan Informasi atas Fakta Material terkait Rencana pembelian kembali saham Perseroan dalam kondisi pasar yang berfluktuasi secara signifikan"
   },
   {
@@ -13859,23 +13869,12 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/5f3eb6c4ea_a66787c984.pdf",
    "title_ko": "일간 순자산가치(NAV)·포트폴리오 구성 보고",
    "title_id": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio"
-  },
-  {
-   "ts": "2026-09-02T17:43:48+07:00",
-   "date": "2026-09-02",
-   "time": "17:43",
-   "t": "MPXL",
-   "type": "STOCK",
-   "title": "Penyampaian Materi Public Expose - Tahunan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/93ecbcbb5d_009d1b813f.pdf",
-   "title_ko": "연례 기업설명회(Public Expose) 자료 제출",
-   "title_id": "Penyampaian Materi Public Expose - Tahunan"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": false,
-  "idx_from_pc": "2026-09-03 08:16",
+  "idx_from_pc": "2026-09-03 08:23",
   "bi": null,
   "hist_days": 20,
   "calendar": "investing.com"
