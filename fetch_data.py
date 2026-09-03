@@ -537,6 +537,38 @@ def probe_ipo():
     except Exception: pass
     f.write_text(now_wib().isoformat(), encoding="utf-8")
 
+def _co(name):
+    """회사명 정리: PT · Tbk · (Persero) 제거"""
+    n = (name or "").strip()
+    for _ in range(2): n = re.sub(r"^PT\.?\s+|\s+Tbk\.?$|\s*\(Persero\)\s*", " ", n, flags=re.I).strip(" .")
+    return n
+
+def _corp_title(jenis, desc):
+    """IDX 캘린더 정형 항목을 한국어·인니어 제목으로. (제목, 인니어제목)"""
+    j = (jenis or "").strip().lower(); dl = desc.lower()
+    m = re.search(r"pemberitahuan rups\s*(rencana)?\s*([\d-]+\s+)?(.+)$", desc, flags=re.I)
+    if j == "rencana" and m:
+        co = _co(m.group(3)); return f"주주총회 · {co} 주주총회 개최 예정", f"RUPS · Pemberitahuan RUPS {co}"
+    if j in ("rupo", "rupsu", "rupup"):
+        who = {"rupo": ("사채권자집회", "RUPO"), "rupsu": ("수쿠크보유자집회", "RUPSU"), "rupup": ("수익자총회", "RUPUP")}[j]
+        act = "소집" if re.search(r"panggilan", dl) else "연기" if re.search(r"penundaan", dl) else "계획" if re.search(r"rencana", dl) else "결과" if re.search(r"hasil", dl) else ""
+        obj = re.sub(r"^(rencana|panggilan|penundaan|hasil|pemberitahuan)\s+(dan\s+panggilan\s+)?(rupo|rupsu|rupup)\s*(emisi)?\s*", "", desc, flags=re.I).strip()
+        return f"{who[0]} {act} · {obj}".strip(" ·"), f"{who[1]} · {desc}"
+    if j in ("tahunan", "insidentil"):
+        kind = "연례" if j == "tahunan" else "수시"
+        act = "결과" if re.search(r"hasil", dl) else "자료" if re.search(r"materi", dl) else "계획" if re.search(r"rencana", dl) else "취소" if re.search(r"pembatalan", dl) else ""
+        co = _co(re.sub(r"^(rencana|hasil|materi)\s+(public expose\s+)?(tahunan|insidentil)\s*(\d{4})?\s*", "", desc, flags=re.I))
+        return f"기업설명회 · {co} {kind} Public Expose {act}".strip(), f"Public Expose · {desc}"
+    if re.search(r"materi public expose", dl):
+        co = _co(re.sub(r"^materi public expose\s+(tahunan|insidentil)?\s*", "", desc, flags=re.I))
+        return f"기업설명회 · {co} Public Expose 자료", f"Public Expose · {desc}"
+    if re.search(r"pembayaran kupon|pembayaran ijarah", dl):
+        rest = re.sub(r"^informasi pembayaran\s+", "", desc, flags=re.I)
+        return f"공시 · 이자 지급 — {rest}", f"Keterbukaan · {desc}"
+    if re.search(r"pembelian kembali|buyback", dl):
+        return "자사주 · 자사주 매입 보고", f"Buyback · {desc}"
+    return f"{kor_type(jenis or desc)} · {desc}".strip(" ·"), None
+
 def idx_corp_calendar(days_ahead=14, days_back=1):
     today = now_wib().date(); out = []
     try: probe_ipo()
@@ -553,10 +585,14 @@ def idx_corp_calendar(days_ahead=14, days_back=1):
                     lab = ("배당부 마감(cum)" if " cum " in f" {dl} " else "배당락(ex)" if " ex " in f" {dl} " else "배당 기준일(DPS)" if "dps" in dl else "배당 지급" if "pembayaran" in dl else "배당")
                     m = re.search(r"dividen tunai( interim| final)?", dl); typ = ("중간" if m and "interim" in m.group(0) else "결산" if m and "final" in m.group(0) else "")
                     imp = 3 if lab.startswith(("배당부", "배당락")) else 1
-                    title = f"{lab} · {typ}현금배당".replace(" · 현금배당", " · 현금배당") + (" — " + re.sub(r"^tanggal\s+\w+\s+", "", desc, flags=re.I) if desc else "")
+                    co = _co(re.sub(r"^tanggal\s+\w+\s+dividen tunai( interim| final)?\s*", "", desc, flags=re.I))
+                    title = f"{lab} · {typ}현금배당" + (f" — {co}" if co else "")
+                    title_id = re.sub(r"^tanggal\s+", "", desc, flags=re.I)
                 else:
-                    title = f'{kor_type(e.get("Jenis") or desc)} · {desc}'.strip(" ·")
-                out.append({"date": d.isoformat(), "t": (e.get("title") or "").strip()[:6], "kind": kind, "imp": imp, "title": title, "src": "IDX 캘린더"})
+                    title, title_id = _corp_title(e.get("Jenis") or "", desc)
+                ev = {"date": d.isoformat(), "t": (e.get("title") or "").strip()[:6], "kind": kind, "imp": imp, "title": title, "src": "IDX 캘린더"}
+                if title_id: ev["title_id"] = title_id
+                out.append(ev)
     # 신규 상장 (회사 프로필의 상장일 기준, 최근 30일)
     try:
         for code, info in (all_tickers() or {}).items():
