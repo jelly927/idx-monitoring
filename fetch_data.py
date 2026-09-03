@@ -1436,10 +1436,10 @@ def global_indices():
                 h = t.history(period="1d", interval="5m")["Close"].dropna()
                 if len(h) >= 3:
                     ht = h.index[-1]; ht = (ht.tz_convert(WIB) if ht.tzinfo else ht.tz_localize("UTC").tz_convert(WIB))
-                    if (now_wib() - ht).total_seconds() < 3 * 3600:      # 3시간 이내 틱이면 장중으로 본다
-                        px = float(h.iloc[-1]); ts = ht.strftime("%H:%M"); live = True
-                        if last_date == ht.date(): prev = float(d.iloc[-2])
-                        else: prev = float(d.iloc[-1])
+                    if ht.date() > last_date or (ht.date() == last_date and ht.date() == now_wib().date()):   # 5분봉이 일봉보다 최신(당일)
+                        px = float(h.iloc[-1]); prev = float(d.iloc[-1]) if ht.date() > last_date else float(d.iloc[-2])
+                        if (now_wib() - ht).total_seconds() < 3 * 3600: ts = ht.strftime("%H:%M"); live = True      # 3시간 이내 틱이면 장중
+                        else: ts = f"{ht.date():%m/%d} 종가"
                     spark = [round(float(v), 2) for v in h.tolist()][-80:]
                 if not spark: spark = [round(float(v), 2) for v in d.tolist()]
             except Exception: spark = [round(float(v), 2) for v in d.tolist()]
