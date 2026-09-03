@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 21:07",
+ "updated": "2026-09-03 21:28",
  "delay_min": 0,
- "fx_basis": "13.04 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,356 · 21:00 Yahoo",
- "idr_per_krw": 13.0388,
+ "fx_basis": "13.03 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,357 · 21:23 Yahoo",
+ "idr_per_krw": 13.033,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7698.19,
+   "px": 7704.65,
    "prev": 7666.6,
-   "pct": 0.41,
-   "asof": "21:05",
+   "pct": 0.5,
+   "asof": "21:25",
    "live": true,
    "spark": [
     7707.12,
@@ -15091,17 +15091,21 @@
     7712.52,
     7711.25,
     7697.72,
-    7698.19
+    7694.57,
+    7700.07,
+    7704.71,
+    7704.96,
+    7704.65
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26393.8,
+   "px": 26451.79,
    "prev": 26217.83,
-   "pct": 0.67,
-   "asof": "21:05",
+   "pct": 0.89,
+   "asof": "21:25",
    "live": true,
    "spark": [
     26381.93,
@@ -15111,17 +15115,21 @@
     26443.95,
     26427.55,
     26383.97,
-    26393.8
+    26390.19,
+    26419.62,
+    26446.85,
+    26450.73,
+    26451.79
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53340.25,
+   "px": 53346.37,
    "prev": 53061.95,
-   "pct": 0.52,
-   "asof": "21:05",
+   "pct": 0.54,
+   "asof": "21:25",
    "live": true,
    "spark": [
     53453.07,
@@ -15131,7 +15139,11 @@
     53482.98,
     53491.49,
     53352.48,
-    53340.25
+    53303.2,
+    53336.94,
+    53372.32,
+    53364.69,
+    53346.37
    ]
   },
   {
@@ -15441,6 +15453,34 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-03T21:17:48+07:00",
+   "date": "2026-09-03",
+   "time": "21:17",
+   "src": "Detik",
+   "t": "Akselerasi Perkebunan Hijau, Astra Agro Dorong Efisiensi Energi-Berdayakan 256 Desa",
+   "tags": [
+    "AALI"
+   ],
+   "url": "https://finance.detik.com/ekonomi-hijau/d-8647431/akselerasi-perkebunan-hijau-astra-agro-dorong-efisiensi-energi-berdayakan-256-desa",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/anugerah-ekonomi-hijau-astra-agro-1788445045204_169.jpeg?w=360&q=90",
+   "t_ko": "녹색 농장을 가속화하는 Astra Agro는 에너지 효율성을 장려하여 256개 마을에 힘을 실어줍니다",
+   "t_id": "Akselerasi Perkebunan Hijau, Astra Agro Dorong Efisiensi Energi-Berdayakan 256 Desa"
+  },
+  {
+   "ts": "2026-09-03T21:03:56+07:00",
+   "date": "2026-09-03",
+   "time": "21:03",
+   "src": "Detik",
+   "t": "Dongkrak Ekonomi Lokal, bank bjb Kerek Kapasitas UMKM Lewat PESAT",
+   "tags": [
+    "BJBR"
+   ],
+   "url": "https://finance.detik.com/ekonomi-hijau/d-8647408/dongkrak-ekonomi-lokal-bank-bjb-kerek-kapasitas-umkm-lewat-pesat",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/anugerah-ekonomi-hijau-bank-bjb-1788444214878_169.jpeg?w=360&q=90",
+   "t_ko": "지역 경제 활성화, bjb 은행, PESAT를 통해 중소기업 역량 강화",
+   "t_id": "Dongkrak Ekonomi Lokal, bank bjb Kerek Kapasitas UMKM Lewat PESAT"
+  },
   {
    "ts": "2026-09-03T20:34:00+07:00",
    "date": "2026-09-03",
@@ -16203,8 +16243,8 @@
    "t": "Solar Langka di Sumbar, COO Danantara Segera Panggil Dirut Pertamina Patra Niaga",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/929510/solar-langka-di-sumbar-coo-danantara-segera-panggil-dirut-pertamina-patra-niaga",
-   "t_id": "Solar Langka di Sumbar, COO Danantara Segera Panggil Dirut Pertamina Patra Niaga",
-   "t_ko": "서수마트라에서는 태양광이 드물다, COO Danantara, 즉시 Pertamina Patra Niaga 전무이사 소환"
+   "t_ko": "서수마트라에서는 태양광이 드물다, COO Danantara, 즉시 Pertamina Patra Niaga 전무이사 소환",
+   "t_id": "Solar Langka di Sumbar, COO Danantara Segera Panggil Dirut Pertamina Patra Niaga"
   },
   {
    "ts": "2026-09-03T20:32:56+07:00",
@@ -16712,8 +16752,8 @@
   {
    "k": "IDR/KRW (1원당 루피아)",
    "v": "13.03",
-   "d": 1.13,
-   "ytd": 12.21,
+   "d": 1.08,
+   "ytd": 12.15,
    "inv": true,
    "note": "연초 11.6144",
    "k_ko": "IDR/KRW (1원당 루피아)",
@@ -16746,9 +16786,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "96.27",
-   "d": 0.67,
-   "ytd": 58.08,
+   "v": "96.38",
+   "d": 0.78,
+   "ytd": 58.26,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16766,8 +16806,8 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.75%",
-   "d": -0.96,
+   "v": "4.76%",
+   "d": -0.79,
    "ytd": null,
    "inv": true,
    "note": null,
