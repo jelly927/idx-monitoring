@@ -1166,6 +1166,7 @@ def translate_field(items, field="t", langs=("ko", "id"), budget=None):
     engines = [e for e in eng_cfg if e in TR_ENGINES]          # engines: [] 이면 외부 기계번역은 안 쓰되 캐시(Claude 번역)는 반드시 적용
     budget = cfg.get("max_per_run", 60) if budget is None else budget
 
+    claude_ok = bool(_secret("anthropic_api_key") or _claude_cli())
     need = []                                        # (item, 대상필드, 원문, 목표언어, 캐시키)
     for it in items:
         src = (it.get(field) or "").strip()
@@ -1177,7 +1178,9 @@ def translate_field(items, field="t", langs=("ko", "id"), budget=None):
             if tl == native: it[tgt] = src; continue
             key = hashlib.md5((src + "|" + tl).encode("utf-8")).hexdigest()
             if key in TR_GOOD: it[tgt] = TR_GOOD[key]; continue      # Claude 번역 우선
-            if key in TR_CACHE: it[tgt] = TR_CACHE[key]; continue
+            if key in TR_CACHE:
+                it[tgt] = TR_CACHE[key]                                # 기계번역 캐시 — Claude 가 가능하면 뒤에서 품질 업그레이드 대상에 포함
+                if not claude_ok: continue
             need.append((it, tgt, src, tl, key))
     if need and (_secret("anthropic_api_key") or _claude_cli()):   # Claude (API 키 또는 PC 의 Claude Code) — 품질 우선, 결과는 영구 캐시
         got = _tr_claude_api(list({(src, tl) for _, _, src, tl, _ in need[:cfg.get("claude_max_per_run", 120)]}))
@@ -1188,6 +1191,7 @@ def translate_field(items, field="t", langs=("ko", "id"), budget=None):
                 if v: it[tgt] = v
                 else: rest.append((it, tgt, src, tl, key))
             need = rest
+    need = [n for n in need if n[4] not in TR_CACHE]  # 기계번역 캐시가 이미 있는 건은 엔진 재호출 불필요
     if not need or not engines: return items         # 캐시 적용은 위에서 끝남. 엔진이 없으면 미번역분은 원문 유지
     need = need[:budget]                             # 남은 건 다음 실행에서 이어서
     ok = 0; used = []
@@ -1336,7 +1340,7 @@ def _auto_publish():
         import subprocess
         args = [sys.executable, str(ROOT / "publish.py"), "--quiet"] + (["--data"] if CFG.get("auto_push_data") else [])
         r = subprocess.run(args, cwd=str(ROOT), capture_output=True, text=True, encoding="utf-8", timeout=300)
-        out = (r.stdout + r.stderr).strip().splitlines()
+        out = ((r.stdout or "") + (r.stderr or "")).strip().splitlines()
         log("auto_push:", out[-1][:140] if out else f"exit {r.returncode}")
         PUBLISHED_IN_BUILD = True
     except Exception as e:
