@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 18:36",
+ "updated": "2026-09-03 18:46",
  "delay_min": 0,
- "fx_basis": "FY26 YTD 누적 11.7705 IDR/KRW (8/28 누적)",
- "idr_per_krw": 11.7705,
+ "fx_basis": "13.01 IDR/KRW · USD/IDR 17,655 · USD/KRW 1,357 · 17:13 Yahoo",
+ "idr_per_krw": 13.0076,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -14,8 +14,8 @@
    "pct": 1.09,
    "spark": [
     6667.891,
-    6633.364,
-    6634.863,
+    6633.503,
+    6635.351,
     6628.04,
     6629.4,
     6630.128,
@@ -85,12 +85,12 @@
     6668.232,
     6663.931,
     6662.809,
-    6662.198,
-    6664.903,
-    6667.799,
-    6663.777,
+    6663.021,
+    6662.106,
+    6666.661,
+    6663.898,
     6667.334,
-    6668.11,
+    6666.937,
     6664.391,
     6665.043,
     6662.137,
@@ -209,15 +209,15 @@
     660.422,
     661.594,
     660.662,
-    660.361,
-    660.797,
-    660.997,
-    660.878,
-    660.351,
-    661.437,
-    660.725,
-    660.617,
-    660.342,
+    660.557,
+    660.573,
+    660.982,
+    660.492,
+    660.854,
+    661.158,
+    660.805,
+    661.317,
+    660.644,
     661.09,
     660.415,
     660.19,
@@ -316,10 +316,10 @@
   "m1": 6.95,
   "value_idr": 18607401563700,
   "volume": 39305835265,
-  "rank_src": "Yahoo 15분 지연 · 835종목 · 종가 · 외국인·공시 PC 09-03 18:27",
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-03 18:41",
   "rank_asof": null,
   "rank_date": "2026-09-03",
-  "adv": 415,
+  "adv": 416,
   "dec": 228,
   "unch": 192,
   "foreign_net_idr": 1104392864864.3184,
@@ -8607,6 +8607,22 @@
    "live": 0
   },
   {
+   "t": "ALII",
+   "n": "Ancara Logistics Indonesia",
+   "px": 785.0,
+   "prev": 775.0,
+   "pct": 1.29,
+   "val": 505752000.0,
+   "vol": 648400.0,
+   "sh": 15825800000,
+   "mcap": 12423253000000.0,
+   "hi": 790.0,
+   "lo": 765.0,
+   "ratio": 0.6,
+   "fnet": -67435676.43429981,
+   "live": 0
+  },
+  {
    "t": "IBOS",
    "n": "Indo Boga Sukses",
    "px": 90.0,
@@ -14467,11 +14483,11 @@
   {
    "name": "에너지",
    "name_id": "Energi",
-   "n": 78,
-   "adv": 40,
+   "n": 79,
+   "adv": 41,
    "dec": 22,
-   "val": 4392344539937.3335,
-   "mcap": 1654006629922986.0,
+   "val": 4392850291937.3335,
+   "mcap": 1666429882922986.0,
    "top": [
     {
      "t": "BYAN",
@@ -15557,6 +15573,34 @@
  ],
  "news": [
   {
+   "ts": "2026-09-03T18:36:42+07:00",
+   "date": "2026-09-03",
+   "time": "18:36",
+   "src": "Medcom",
+   "t": "PLN Siap Optimalkan Energi Surya, PLTS 100 GWp Dorong Efisiensi dan Penguatan Energi Domestik",
+   "tags": [
+    "BESS"
+   ],
+   "url": "https://www.medcom.id/ekonomi/bisnis/GNl1zWgb-pln-siap-optimalkan-energi-surya-plts-100-gwp-dorong-efisiensi-dan-penguatan-energi-domestik",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/03/1839919/bEi0puDayS.jpeg?w=720",
+   "t_id": "PLN Siap Optimalkan Energi Surya, PLTS 100 GWp Dorong Efisiensi dan Penguatan Energi Domestik",
+   "t_ko": "PLN, 태양에너지 최적화 준비 완료, 100GWp PLTS로 효율성 촉진 및 국내 에너지 강화"
+  },
+  {
+   "ts": "2026-09-03T18:22:00+07:00",
+   "date": "2026-09-03",
+   "time": "18:22",
+   "src": "Katadata",
+   "t": "MORA Tambah Kredit Investasi Rp 4 Triliun untuk Ekspansi Jaringan",
+   "tags": [
+    "MORA"
+   ],
+   "url": "https://katadata.co.id/digital/teknologi/6a99587a5eb3b/mora-tambah-kredit-investasi-rp-4-triliun-untuk-ekspansi-jaringan",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/06/MoraRepublic_bekerja_sama_dengan_ZTE-2026_07_06-16_44_49_78805a221a988e79ef3f42d7c5bfd418_620x413_thumb.jpeg",
+   "t_id": "MORA Tambah Kredit Investasi Rp 4 Triliun untuk Ekspansi Jaringan",
+   "t_ko": "MORA, 네트워크 확장을 위해 IDR 4조 투자 크레딧 추가"
+  },
+  {
    "ts": "2026-09-03T16:47:00+07:00",
    "date": "2026-09-03",
    "time": "16:47",
@@ -15726,20 +15770,6 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2025/09/04/erajaya_eraa_ibox.jpg",
    "t_ko": "ERAA 15% 급등 — Rp5,000억 자사주 매입·iPhone 18 Pro 모멘텀 부각",
    "t_id": "Saham ERAA Terbang 15 Persen, Buyback Rp500 Miliar hingga Momentum iPhone 18 Pro Jadi Sorotan"
-  },
-  {
-   "ts": "2026-09-03T12:10:08+07:00",
-   "date": "2026-09-03",
-   "time": "12:10",
-   "src": "Detik",
-   "t": "Antam Cetak Laba Rp 6,91 T",
-   "tags": [
-    "ANTM"
-   ],
-   "url": "https://finance.detik.com/bursa-dan-valas/d-8646412/antam-cetak-laba-rp-6-91-t",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2017/01/23/6ed09365-8341-4f97-8cb3-272dbe0f57ff_169.jpg?w=360&q=90",
-   "t_ko": "Antam(ANTM) 순이익 Rp6.91조",
-   "t_id": "Antam Cetak Laba Rp 6,91 T"
   },
   {
    "ts": "2026-09-03T11:25:00+07:00",
@@ -16191,6 +16221,29 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-03T18:40:00+07:00",
+   "date": "2026-09-03",
+   "time": "18:40",
+   "src": "Bloomberg Technoz",
+   "t": "Purbaya: Kenaikan Yield SBN Tak Pengaruhi Beban Utang Pemerintah",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120446/purbaya-kenaikan-yield-sbn-tak-pengaruhi-beban-utang-pemerintah",
+   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260805153348.jpeg",
+   "t_ko": "Purbaya: SBN 수익률 증가는 정부 부채 부담에 영향을 미치지 않습니다",
+   "t_id": "Purbaya: Kenaikan Yield SBN Tak Pengaruhi Beban Utang Pemerintah"
+  },
+  {
+   "ts": "2026-09-03T18:40:00+07:00",
+   "date": "2026-09-03",
+   "time": "18:40",
+   "src": "Media Indonesia",
+   "t": "BI Kucurkan Likuiditas Rp930 Triliun Lewat Repo dan FX Swap",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/929407/bi-kucurkan-likuiditas-rp930-triliun-lewat-repo-dan-fx-swap",
+   "t_id": "BI Kucurkan Likuiditas Rp930 Triliun Lewat Repo dan FX Swap",
+   "t_ko": "BI, Repo 및 FX 스왑을 통해 IDR 930조 유동성 지급"
+  },
+  {
    "ts": "2026-09-03T18:21:25+07:00",
    "date": "2026-09-03",
    "time": "18:21",
@@ -16201,6 +16254,18 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/03/1839914/Jk0TdiV45h.jpg?w=720",
    "t_ko": "자본 시장이 다시 돌아오기 시작하고 OJK는 국내 투자자의 급증을 강조",
    "t_id": "Pasar Modal Mulai Comeback, OJK Soroti Lonjakan Investor Domestik"
+  },
+  {
+   "ts": "2026-09-03T18:19:00+07:00",
+   "date": "2026-09-03",
+   "time": "18:19",
+   "src": "Katadata",
+   "t": "Poin Pidato Prabowo di Rusia: Kebut Perdagangan, Ingin Buka Penerbangan Langsung",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6a9957a413ea4/poin-pidato-prabowo-di-rusia-kebut-perdagangan-ingin-buka-penerbangan-langsung",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/03/2026_09_03-14_35_00_b92012ba-a76e-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
+   "t_ko": "프라보워의 러시아 연설: 무역을 가속화하고 직항편을 개설하고 싶다",
+   "t_id": "Poin Pidato Prabowo di Rusia: Kebut Perdagangan, Ingin Buka Penerbangan Langsung"
   },
   {
    "ts": "2026-09-03T18:10:00+07:00",
@@ -16507,42 +16572,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/03/image-20260328141857.jpg",
    "t_ko": "구리 가격 2027년 초 US$15,000 돌파 전망",
    "t_id": "Harga Tembaga Diprediksi Tembus US$15.000 pada Awal 2027"
-  },
-  {
-   "ts": "2026-09-03T16:03:04+07:00",
-   "date": "2026-09-03",
-   "time": "16:03",
-   "src": "Bloomberg Technoz",
-   "t": "Daftar Saham Tercuan Januari-Agustus, Ada yang Naik 1.100% Lebih",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120432/daftar-saham-tercuan-januari-agustus-ada-yang-naik-1-100-lebih",
-   "img": "https://images.bloombergtechnoz.com/data/2025/11/image-20251126163917.jpeg",
-   "t_ko": "1~8월 수익률 상위 종목 — 1,100% 이상 상승 종목 포함",
-   "t_id": "Daftar Saham Tercuan Januari-Agustus, Ada yang Naik 1.100% Lebih"
-  },
-  {
-   "ts": "2026-09-03T15:51:12+07:00",
-   "date": "2026-09-03",
-   "time": "15:51",
-   "src": "Republika",
-   "t": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tks5xc423/ojk-ambil-alih-pengawasan-bursa-mineral-dan-komoditas-strategis-pada-2027",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/099670000-1784823630-830-556.jpg",
-   "t_ko": "OJK, 2027년부터 광물·전략상품 거래소 감독 이관",
-   "t_id": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027"
-  },
-  {
-   "ts": "2026-09-03T15:49:06+07:00",
-   "date": "2026-09-03",
-   "time": "15:49",
-   "src": "Jawa Pos",
-   "t": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+",
-   "tags": [],
-   "url": "https://www.jawapos.com/energi/2609030090/harga-minyak-mentah-dunia-naik-tipis-di-tengah-eskalasi-as-iran-cek-pemicu-dan-proyeksi-opec",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/18/ilustrasi-kapal-tanker-di-perairan-selat-hormuz-ap-photokamran-jebreili-6ydWQ.webp",
-   "t_ko": "美-이란 긴장 고조에 국제유가 소폭 상승 — OPEC+ 전망",
-   "t_id": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+"
   }
  ],
  "macro": [
@@ -16593,9 +16622,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "96.80",
-   "d": 1.22,
-   "ytd": 58.95,
+   "v": "96.86",
+   "d": 1.29,
+   "ytd": 59.05,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16603,8 +16632,8 @@
   },
   {
    "k": "DXY",
-   "v": "99.16",
-   "d": -0.4,
+   "v": "99.15",
+   "d": -0.41,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -16897,17 +16926,6 @@
    "country": "ID",
    "title_ko": "실적 공시 · Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
    "title_id": "Kinerja · Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim"
-  },
-  {
-   "date": "2026-09-01",
-   "t": "PSAB",
-   "kind": "corp",
-   "imp": 3,
-   "title": "실적 공시 · Penyampaian Laporan Keuangan Interim Yang Ditelaah Secara Terbatas",
-   "src": "IDX 공시",
-   "country": "ID",
-   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan Interim Yang Ditelaah Secara Terbatas",
-   "title_id": "Kinerja · Penyampaian Laporan Keuangan Interim Yang Ditelaah Secara Terbatas"
   },
   {
    "date": "2026-09-01",
@@ -19006,6 +19024,28 @@
  ],
  "announcements": [
   {
+   "ts": "2026-09-03T18:31:33+07:00",
+   "date": "2026-09-03",
+   "time": "18:31",
+   "t": "PTPP",
+   "type": "STOCK",
+   "title": "Penjelasan atas Pemberitaan Media Massa",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/8d693c7630_1f4df8d453.pdf",
+   "title_ko": "언론 보도에 대한 해명",
+   "title_id": "Penjelasan atas Pemberitaan Media Massa"
+  },
+  {
+   "ts": "2026-09-03T18:27:08+07:00",
+   "date": "2026-09-03",
+   "time": "18:27",
+   "t": "BIPP",
+   "type": "STOCK",
+   "title": "Pemanggilan Rapat Umum Pemegang Saham Luar Biasa",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/4691b1101c_b00b12740b.pdf",
+   "title_ko": "임시주주총회 소집 통지",
+   "title_id": "Pemanggilan Rapat Umum Pemegang Saham Luar Biasa"
+  },
+  {
    "ts": "2026-09-03T18:14:39+07:00",
    "date": "2026-09-03",
    "time": "18:14",
@@ -19862,34 +19902,12 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/ca57ab12a5_d0c07d42c8.pdf",
    "title_ko": "유동성공급자(LP) 활동 보고",
    "title_id": "Aktivitas Liquidity Provider"
-  },
-  {
-   "ts": "2026-09-03T16:16:41+07:00",
-   "date": "2026-09-03",
-   "time": "16:16",
-   "t": "YU",
-   "type": "STOCK",
-   "title": "Laporan Jumlah Structured Warrant Beredar",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b9f12a4c6e_4bbd2d098c.pdf",
-   "title_ko": "구조화 워런트 유통 수량 보고",
-   "title_id": "Laporan Jumlah Structured Warrant Beredar"
-  },
-  {
-   "ts": "2026-09-03T16:15:29+07:00",
-   "date": "2026-09-03",
-   "time": "16:15",
-   "t": "AIMS",
-   "type": "STOCK",
-   "title": "Rencana Penyelenggaraan Public Expose - Tahunan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/d801cc6e7c_92dcc69307.pdf",
-   "title_ko": "연례 기업설명회(Public Expose) 개최 계획",
-   "title_id": "Rencana Penyelenggaraan Public Expose - Tahunan"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-03 18:27",
+  "idx_from_pc": "2026-09-03 18:41",
   "bi": null,
   "hist_days": 20,
   "calendar": "investing.com"
