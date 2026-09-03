@@ -1693,7 +1693,7 @@ def sun10y_card(iv):
         if prev is None or iv.get("chg") is None: prev = daily[-2][1] if daily[-1][0] == now_wib().date().isoformat() else daily[-1][1]
     if prev is None: prev = px
     return {"code": "SUN10Y", "label": "SUN 10Y", "name": "국채 10년물", "px": round(px, 3), "prev": round(prev, 3), "pct": round((px - prev) * 100, 1),   # pct = bp 변화
-            "spark": spark if len(spark) > 1 else [], "span": span, "inv": True, "asof": ("investing.com " + str(iv.get("asof") or "")).strip(), "unit": "bp"}
+            "spark": spark if len(spark) > 1 else [], "span": span, "inv": True, "asof": ("investing.com " + re.sub(r"^(\d{2}:\d{2}):\d{2}$", r"\1", str(iv.get("asof") or ""))).strip(), "unit": "bp"}
 
 # ---------------- KISI 뉴스 (kisi.co.id/blog/edukasi — 공개 API, 본문 안에 base64 사진) ----------------
 KISI_API = "https://api-compro.kisi.co.id/api/v1/kisiNews/list"
