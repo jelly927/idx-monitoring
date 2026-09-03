@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-03 23:27",
+ "updated": "2026-09-03 23:40",
  "delay_min": 0,
  "fx_basis": "13.04 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,356 · 22:49 Yahoo",
- "idr_per_krw": 13.044,
+ "idr_per_krw": 13.0419,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7740.26,
+   "px": 7746.74,
    "prev": 7666.6,
-   "pct": 0.96,
-   "asof": "23:25",
+   "pct": 1.05,
+   "asof": "23:35",
    "live": true,
    "spark": [
     7707.12,
@@ -15119,17 +15119,19 @@
     7743.48,
     7744.21,
     7741.41,
-    7740.26
+    7741.01,
+    7741.71,
+    7746.74
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26556.36,
+   "px": 26575.84,
    "prev": 26217.83,
-   "pct": 1.29,
-   "asof": "23:25",
+   "pct": 1.37,
+   "asof": "23:35",
    "live": true,
    "spark": [
     26381.93,
@@ -15167,17 +15169,19 @@
     26579.45,
     26581.09,
     26560.42,
-    26556.36
+    26557.52,
+    26555.91,
+    26575.84
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53640.74,
+   "px": 53692.6,
    "prev": 53061.95,
-   "pct": 1.09,
-   "asof": "23:25",
+   "pct": 1.19,
+   "asof": "23:35",
    "live": true,
    "spark": [
     53453.07,
@@ -15215,7 +15219,9 @@
     53641.19,
     53644.16,
     53657.4,
-    53640.74
+    53652.41,
+    53670.51,
+    53692.6
    ]
   },
   {
@@ -15526,6 +15532,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-03T23:25:02+07:00",
+   "date": "2026-09-03",
+   "time": "23:25",
+   "src": "Detik",
+   "t": "Mitigasi Risiko Lingkungan, Triputra Agro Persada Raih Anugerah Ekonomi Hijau",
+   "tags": [
+    "TAPG"
+   ],
+   "url": "https://finance.detik.com/ekonomi-hijau/d-8647578/mitigasi-risiko-lingkungan-triputra-agro-persada-raih-anugerah-ekonomi-hijau",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/anugerah-ekonomi-hijau-triputra-agro-1788452674428_169.jpeg?w=360&q=90",
+   "t_ko": "환경 위험 완화, Triputra Agro Persada, 녹색 경제상 수상",
+   "t_id": "Mitigasi Risiko Lingkungan, Triputra Agro Persada Raih Anugerah Ekonomi Hijau"
+  },
+  {
    "ts": "2026-09-03T23:22:50+07:00",
    "date": "2026-09-03",
    "time": "23:22",
@@ -15536,8 +15556,8 @@
    ],
    "url": "https://www.jawapos.com/bisnis/2609030515/percepat-penanganan-kecelakaan-jasa-marga-dan-jasa-raharja-permudah-akses-informasi-jalan-tol",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/03/direktur-utama-jasa-marga-rivan-a-purwantono-dan-direktur-utama-jasa-raharja-muhammad-awaluddin-istimewa-2NlyT.webp",
-   "t_id": "Percepat Penanganan Kecelakaan, Jasa Marga dan Jasa Raharja Permudah Akses Informasi Jalan Tol",
-   "t_ko": "사고 처리 가속화, Jasa Marga 및 Jasa Raharja를 통해 유료 도로 정보에 더욱 쉽게 액세스"
+   "t_ko": "사고 처리 가속화, Jasa Marga 및 Jasa Raharja를 통해 유료 도로 정보에 더욱 쉽게 액세스",
+   "t_id": "Percepat Penanganan Kecelakaan, Jasa Marga dan Jasa Raharja Permudah Akses Informasi Jalan Tol"
   },
   {
    "ts": "2026-09-03T23:15:49+07:00",
@@ -16526,18 +16546,6 @@
    "t_id": "Purbaya: Kenaikan Yield SBN Tak Pengaruhi Beban Utang Pemerintah"
   },
   {
-   "ts": "2026-09-03T18:21:25+07:00",
-   "date": "2026-09-03",
-   "time": "18:21",
-   "src": "Medcom",
-   "t": "Pasar Modal Mulai Comeback, OJK Soroti Lonjakan Investor Domestik",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/keuangan/gNQrwenb-pasar-modal-mulai-comeback-ojk-soroti-lonjakan-investor-domestik",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/03/1839914/Jk0TdiV45h.jpg?w=720",
-   "t_ko": "자본시장 회복 조짐 — OJK, 국내 투자자 급증 주목",
-   "t_id": "Pasar Modal Mulai Comeback, OJK Soroti Lonjakan Investor Domestik"
-  },
-  {
    "ts": "2026-09-03T18:19:00+07:00",
    "date": "2026-09-03",
    "time": "18:19",
@@ -16776,6 +16784,18 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/099670000-1784823630-830-556.jpg",
    "t_ko": "OJK, 2027년부터 광물·전략상품 거래소 감독 이관",
    "t_id": "OJK Ambil Alih Pengawasan Bursa Mineral dan Komoditas Strategis pada 2027"
+  },
+  {
+   "ts": "2026-09-03T15:49:06+07:00",
+   "date": "2026-09-03",
+   "time": "15:49",
+   "src": "Jawa Pos",
+   "t": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+",
+   "tags": [],
+   "url": "https://www.jawapos.com/energi/2609030090/harga-minyak-mentah-dunia-naik-tipis-di-tengah-eskalasi-as-iran-cek-pemicu-dan-proyeksi-opec",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/18/ilustrasi-kapal-tanker-di-perairan-selat-hormuz-ap-photokamran-jebreili-6ydWQ.webp",
+   "t_ko": "美-이란 긴장 고조에 국제유가 소폭 상승 — OPEC+ 전망",
+   "t_id": "Harga Minyak Mentah Dunia Naik Tipis di Tengah Eskalasi AS-Iran, Cek Pemicu dan Proyeksi OPEC+"
   }
  ],
  "kisi_news": [
@@ -16982,9 +17002,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "95.45",
-   "d": -0.19,
-   "ytd": 56.73,
+   "v": "95.79",
+   "d": 0.17,
+   "ytd": 57.29,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16992,8 +17012,8 @@
   },
   {
    "k": "DXY",
-   "v": "98.90",
-   "d": -0.66,
+   "v": "98.86",
+   "d": -0.7,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -17003,7 +17023,7 @@
   {
    "k": "UST 10Y",
    "v": "4.74%",
-   "d": -1.08,
+   "d": -1.13,
    "ytd": null,
    "inv": true,
    "note": null,
