@@ -50,7 +50,9 @@ def main(argv):
         if not p.exists(): continue
         b = p.read_bytes()
         if remote.get(rel) == blob_sha(b): skip += 1; continue
-        body = {"message": f"{rel} {time.strftime('%Y-%m-%d %H:%M')} [skip ci]", "content": base64.b64encode(b).decode(), "branch": BRANCH}
+        # idx_part.json(PC 의 IDX 수집분)만 [skip ci] 없이 올려 GitHub 러너가 바로 병합·배포하게 한다. 나머지는 러너를 깨우지 않음
+        tag = "" if rel == "data/idx_part.json" else " [skip ci]"
+        body = {"message": f"{rel} {time.strftime('%Y-%m-%d %H:%M')}{tag}", "content": base64.b64encode(b).decode(), "branch": BRANCH}
         if rel in remote: body["sha"] = remote[rel]
         for attempt in range(3):
             pr = s.put(f"{API}/repos/{REPO}/contents/{rel}", json=body, timeout=60)
