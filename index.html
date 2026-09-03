@@ -277,13 +277,13 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
       <div class="two"><div><div class="h" data-t="ftop">순매수 상위</div><div class="list mini-list" id="ftop"></div></div><div><div class="h" data-t="fbot">순매도 상위</div><div class="list mini-list" id="fbot"></div></div></div>
       <div class="sub" id="fnote"></div>
     </div>
-    <div class="card">
-      <h2><span data-t="macro">시장 지표</span> <span class="more" data-t="macroSub">환율 · 금리 · 원자재</span></h2>
-      <table id="macro"></table>
-    </div>
     <div class="card" id="gidx-card" hidden>
       <h2><span data-t="gidx">주요 지수</span> <span class="more" data-t="gidxSub">미국 · 아시아</span></h2>
       <div class="gidx" id="gidx"></div>
+    </div>
+    <div class="card">
+      <h2><span data-t="macro">시장 지표</span> <span class="more" data-t="macroSub">환율 · 금리 · 원자재</span></h2>
+      <table id="macro"></table>
     </div>
   </div>
 
@@ -457,8 +457,8 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   if(changed('fbot',[d.foreign_bottom,LANG]))$('fbot').innerHTML=(d.foreign_bottom||[]).slice(0,5).map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
   renderRank();
   // 시장 뉴스 (티커 없는 거시·정책 기사, 썸네일)
-  const mn=(d.market_news||[]).slice(0,12);
-  if(changed('mnews',[mn,LANG]))$('mnews').innerHTML=mn.slice(0,8).map(mnItem).join('')||`<div class="empty">${T('noNews')}</div>`;
+  const mn=(d.market_news||[]).slice(0,10);
+  if(changed('mnews',[mn,LANG]))$('mnews').innerHTML=mn.slice(0,10).map(mnItem).join('')||`<div class="empty">${T('noNews')}</div>`;
   $('mnews-card').hidden=!mn.length;
   // 업종별 등락 히트맵
   const secs=(d.sectors||[]).filter(x=>x.n>=3);
@@ -476,13 +476,13 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   // 오늘 일정
   const _t=today(),cal=(d.calendar||[]);
   const tdAll=cal.filter(e=>e.date===_t);
-  const td=tdAll.slice().sort((a,b)=>(b.imp||0)-(a.imp||0)||(a.kind==='macro'?-1:1)-(b.kind==='macro'?-1:1)||(a.time||'—').localeCompare(b.time||'—')).slice(0,10).sort((a,b)=>(a.time||'—').localeCompare(b.time||'—'));
+  const td=tdAll.slice().sort((a,b)=>(b.imp||0)-(a.imp||0)||(a.kind==='macro'?-1:1)-(b.kind==='macro'?-1:1)||(a.time||'—').localeCompare(b.time||'—')).slice(0,8).sort((a,b)=>(a.time||'—').localeCompare(b.time||'—'));
   const up=tdAll.length?[]:cal.filter(e=>e.date>_t).sort((a,b)=>(b.imp||0)-(a.imp||0)||(a.date+(a.time||'')).localeCompare(b.date+(b.time||''))).slice(0,4);
   $('today-ev').innerHTML=(td.length?td.map(ev).join('')+(tdAll.length>td.length?`<div class="ev-more" onclick="showView('cal')">+${tdAll.length-td.length} ${T('moreCal')}</div>`:'')
     :(up.length?`<div class="ev-day">${T('upcoming')}</div>`+up.map(e=>ev(Object.assign({},e,{time:(e.date.slice(5).replace('-','/'))+' '+(e.time&&e.time!=='—'?e.time:'')}))).join('')
               :`<div class="empty">${T('noEv')}</div>`));
   renderAnn();
-  renderNews();$('news-preview').innerHTML=(d.news||[]).slice(0,14).map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`;
+  renderNews();$('news-preview').innerHTML=(d.news||[]).slice(0,10).map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`;
   {const td=today();if(!calDate||calDate===calTodayISO)calDate=td;calTodayISO=td;}renderCal();
   $('foot').innerHTML=`${T('foot')} &nbsp;|&nbsp; ${T('footChk')} <span class="chk">${T('chk')}</span> ${T('footChk2')}`;applyStatic();}
 
@@ -500,7 +500,7 @@ function hotRender(){const l=hotList();if(!l.length){$('hot').textContent='—';
 function hotOpen(on){$('hotbox').classList.toggle('on',!!on);}
 let annQ='',annMore=false;
 function renderAnn(){if(!DATA)return;const q=annQ.toUpperCase();let all=(DATA.announcements||[]);if(q)all=all.filter(a=>(a.t||'').toUpperCase().includes(q)||(a.title||'').toUpperCase().includes(q)||(a.title_ko||'').toUpperCase().includes(q)||(a.title_id||'').toUpperCase().includes(q));
-  const lim=annMore||q?all.length:12;$('anncnt').textContent=all.length?`${Math.min(lim,all.length)} / ${all.length}`:'';$('annmore').textContent=all.length>12&&!q?(annMore?T('less'):T('more')):'';
+  const lim=annMore||q?all.length:8;$('anncnt').textContent=all.length?`${Math.min(lim,all.length)} / ${all.length}`:'';$('annmore').textContent=all.length>8&&!q?(annMore?T('less'):T('more')):'';
   if(changed('ann',[all,LANG,lim]))$('ann').innerHTML=all.slice(0,lim).map(a=>`<div class="row"><span class="tm">${a.date===today()?a.time:a.date.slice(5).replace('-','/')}</span>${logo(a.t)}<div class="nm"><span class="ty">${a.t}${a.type?' · '+a.type:''}</span><b><a href="${a.url||'#'}" target="_blank" rel="noopener">${L(a,'title')}</a></b></div></div>`).join('')||`<div class="empty">${T('noAnn')}</div>`;}
 function newsItem(n){return`<div class="n-item"><div class="t${n.t_est?' est':''}" ${n.t_est?`title="${T('estTime')}"`:''}>${n.t_est?'~':''}${n.time}</div><div class="b"><a href="${n.url||'#'}" target="_blank" rel="noopener">${nTitle(n)}</a><div class="m">${(n.tags||[]).map(t=>`<span class="tag ${t===newsTag?'on':''}" onclick="setTag('${t}')">${t}</span>`).join('')}<span class="src">${n.src}${n.date?' · '+n.date.slice(5).replace('-','/'):''}</span></div></div></div>`;}
 function renderNews(){const all=DATA.news||[];const tags={};all.forEach(n=>(n.tags||[]).forEach(t=>tags[t]=(tags[t]||0)+1));
