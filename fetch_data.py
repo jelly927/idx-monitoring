@@ -1509,6 +1509,8 @@ def build():
             if v is not None: index[k] = v
     if bi and bi.get("nonres_week"): index["bi_nonres"] = bi["nonres_week"]["text"]
     corp = idx_corp_calendar() or []
+    if not corp and idx_from_pc and idx_from_pc.get("corp_cal"):          # IDX 차단 환경: PC 가 올린 기업·배당 캘린더 사용
+        corp = idx_from_pc["corp_cal"]
     for c in corp: c["country"] = "ID"
     glob = macro_calendar_auto()
     # 수기 항목이 우선하되, 수기 exp/prev/act 가 비어 있으면 자동 수집값으로 채운다
@@ -1536,7 +1538,7 @@ def build():
     if mk and not yahoo_mode:
         part = {"saved": now_wib().strftime("%Y-%m-%d %H:%M"), "index": {k: index.get(k) for k in ("rank_src", "rank_asof", "rank_date", "adv", "dec", "unch", "foreign_net_idr", "foreign_buy", "foreign_sell", "foreign_note", "foreign_date", "nonreg_idr", "value_idr", "volume")},
                 "value": mk["value"], "gainers": mk["gainers"], "losers": mk["losers"], "turnover": mk["turnover"], "foreign_top": mk["foreign_top"], "foreign_bottom": mk["foreign_bottom"],
-                "stocks": mk.get("stocks", []), "announcements": announcements, "hist_days": mk["hist_days"],
+                "stocks": mk.get("stocks", []), "announcements": announcements, "hist_days": mk["hist_days"], "corp_cal": corp,
                 "ix": ({k: v for k, v in ix.items() if k not in ("spark", "lq45")} | {"spark": (ix.get("spark") or [])[::max(1, len(ix.get("spark") or []) // 120)], "lq45": ({k: v for k, v in ix["lq45"].items() if k != "spark"} | {"spark": (ix["lq45"].get("spark") or [])[::max(1, len(ix["lq45"].get("spark") or []) // 120)]}) if ix.get("lq45") else None}) if ix else None}
         try: IDX_PART.write_text(json.dumps(part, ensure_ascii=False), encoding="utf-8")
         except Exception as e: log("idx_part 저장 실패", e)
