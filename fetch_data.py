@@ -287,7 +287,7 @@ class IDX:
                      periodType="monthly", isPrint="False", cumulative="false", pageSize=500, pageNumber=1)
         return (j or {}).get("data") or []
     def announcements(self, d_from, d_to, code=""):
-        j = self.get("/primary/ListedCompany/GetAnnouncement", kodeEmiten=code, indexFrom=0, pageSize=500,
+        j = self.get("/primary/ListedCompany/GetAnnouncement", kodeEmiten=code, indexFrom=0, pageSize=1000,
                      dateFrom=f"{d_from:%Y%m%d}", dateTo=f"{d_to:%Y%m%d}", lang="id")
         return (j or {}).get("Replies") or []
 
@@ -836,7 +836,7 @@ def idx_announcements_today(hours=30):
         out.append({"ts": ts.isoformat(), "date": ts.date().isoformat(), "time": ts.strftime("%H:%M"), "t": (p.get("Kode_Emiten") or "").strip(),
                     "type": p.get("JenisPengumuman") or "", "title": title, "url": ("https://www.idx.co.id" + att) if att and att.startswith("/") else att})
     out.sort(key=lambda x: x["ts"], reverse=True)
-    return out[:80]
+    return out[:400]        # 24시간(실제 창 30시간) 내 공시를 모두 싣는다. 400 은 data.json 비대화 방지용 안전장치
 
 # =============================================================== BI press release
 BI_LIST = "https://www.bi.go.id/id/publikasi/ruang-media/news-release/"
