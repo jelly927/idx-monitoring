@@ -273,7 +273,9 @@ class IDX:
         if meta is not None and pts:
             last = pts[-1]; raw = str(last.get("Date") or last.get("DateTime") or last.get("Time") or "")
             try:
-                ts = dt.datetime.fromisoformat(raw[:19]) if raw else None
+                if re.fullmatch(r"\d{12,13}", raw): ts = dt.datetime.utcfromtimestamp(int(raw) / 1000)      # IDX 는 WIB 시각을 UTC 인 것처럼 epoch(ms) 로 준다
+                elif re.fullmatch(r"\d{9,10}", raw): ts = dt.datetime.utcfromtimestamp(int(raw))
+                else: ts = dt.datetime.fromisoformat(raw[:19]) if raw else None
                 meta.update({"px": float(last["Close"]), "date": ts.date().isoformat() if ts else None, "ts": ts.strftime("%H:%M") if ts else None, "raw": raw[:25]})
             except Exception: meta.update({"px": float(last["Close"]), "raw": raw[:25]})
         return [p["Close"] for p in pts]
