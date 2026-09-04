@@ -1393,7 +1393,7 @@ def news_block(max_items=None):
             tags = screen(title + " " + summ)
             _div_from_text(title + ". " + summ, tags, e.get("link", ""), src["name"])
             is_market = not tags
-            if is_market and not _market_news_ok(title, summ): dg["drop"] += 1; continue     # 티커 없는 기사 중 시장·거시 관련만 별도 목록으로
+            if is_market and not _market_news_ok(title, summ, e.get("link", "")): dg["drop"] += 1; continue     # 티커 없는 기사 중 경제·정책·금융·증시 섹션만 시장 뉴스로
             if is_market and not (e.get("published_parsed") or e.get("updated_parsed")) and not _entry_image(e): dg["drop"] += 1; continue   # 홈 스크랩(시각·사진 없음)은 시장 뉴스에서 제외
             dg["market" if is_market else "stock"] += 1
             ts = e.get("published_parsed") or e.get("updated_parsed")
@@ -1458,8 +1458,21 @@ def _div_from_text(text, tags, url="", src=""):
     v = _id_num(m.group(1) or m.group(2) or "")
     if v and 0 < v < 100000: NEWS_DIVS[tags[0]] = {"dps": v, "src": src, "url": url}
 MARKET_RX = re.compile(r"\b(ihsg|jci|bei\b|bursa|ojk|bank indonesia|bi rate|bi-rate|suku bunga|rupiah|inflasi|deflasi|the fed|fomc|wall street|nasdaq|s&p|dow jones|net buy|net sell|asing (beli|jual|masuk|keluar)|obligasi|sbn\b|sun\b|yield|treasury|brent|harga minyak|batu ?bara|coal|nikel|nickel|cpo\b|sawit|harga emas|gold price|danantara|msci|ftse|resesi|pasar saham|pasar modal|stock market|ekonomi (ri|indonesia|global|as|china)|pdb\b|gdp\b|neraca (dagang|perdagangan)|cadangan devisa|tarif (trump|impor|as)|trade war|perang dagang|dividen|ipo\b|right issue|rights issue)\b", re.I)
-def _market_news_ok(title, summ=""):
-    """티커가 없는 기사 중 시장 전체·거시·정책·원자재 관련만 시장 뉴스로 채택"""
+# 시장 뉴스 섹션 필터: URL 의 섹션(경제·금융·증시·산업)으로 1차 판별, 비경제 섹션(사회·정치·스포츠·연예 등)은 키워드가 맞아도 제외
+SEC_OK = re.compile(r"[/.](market|market-news|saham|bursa|bursa-dan-valas|ekonomi|economy|ekonomi-bisnis|berita-ekonomi-bisnis|finansial|finance|keuangan|bisnis|business|investasi|moneter|makro|perbankan|industri|energi|komoditas|pasar-modal|emiten|korporasi|migas|mineral|properti|infrastruktur|money|kontan)(?=[/.\-?]|$)", re.I)
+SEC_SOFT = re.compile(r"[/.](politik|nasional|medcom-nasional|internasional|news)(?=[/.\-?]|$)", re.I)   # 정치·국내·국제면: 정책·경제 키워드가 있으면 채택
+POLICY_RX = re.compile(r"\b(kebijakan|pemerintah|presiden|prabowo|menteri|menkeu|purbaya|kabinet|dpr|apbn|anggaran|pajak|bea|cukai|subsidi|stimulus|regulasi|perpres|peraturan|ojk|bank indonesia|\bbi\b|bps|kemenkeu|kemendag|kementerian|ekspor|impor|tarif|investasi|danantara|bumn|utang|defisit|inflasi|pertumbuhan ekonomi|pdb|umkm|upah|umr|ump|ketenagakerjaan|harga (bbm|pangan|beras)|the fed|fomc|trump|tarif)\b", re.I)
+SEC_NO = re.compile(r"[/.](humaniora|nusantara|megapolitan|hukum|hukum-kriminal|kriminal|olahraga|sport|sports|bola|sepakbola|lifestyle|gaya-hidup|hiburan|entertainment|selebriti|seleb|showbiz|teknologi|tekno|inet|travel|wisata|kuliner|food|kesehatan|health|edukasi|pendidikan|opini|kolom|foto|weekend|hype|inspirasi|regional|daerah|jateng|jatim|jabar|sumut|sulsel|bali|otomotif|oto|wolipop|haibunda|sepakbola|liga|piala)(?=[/.\-?]|$)", re.I)
+NONMKT_RX = re.compile(r"\b(orangutan|orang utan|satwa|hewan|gajah|harimau|komodo|badak|penyu|banjir|gempa|erupsi|tsunami|longsor|kebakaran|sepak ?bola|timnas|liga|piala|artis|selebriti|film|drama|konser|kriminal|pembunuhan|narkoba|polisi|kecelakaan|virus|covid|cuaca|resep|kuliner|wisata|pernikahan|viral|horoskop|zodiak|ramalan|sinopsis|jadwal (sholat|shalat|imsak)|doa|khutbah)\b", re.I)
+def _market_news_ok(title, summ="", link=""):
+    """티커가 없는 기사 중 시장 뉴스로 채택할지: 비경제 섹션·비경제 소재는 제외, 경제 섹션이거나 시장·거시 키워드가 있으면 채택"""
+    if NONMKT_RX.search(title or ""): return False
+    path = "/" + re.sub(r"^https?://", "", link or "")     # 호스트 첫 토큰(nasional.kompas.com 등)도 섹션으로 판별되게
+    if SEC_NO.search(path) and not SEC_OK.search(path): return False
+    if SEC_OK.search(path): return True
+    if SEC_SOFT.search(path):                          # 정치·국내·국제면은 정책/경제 관련일 때만
+        txt = (title or "") + " " + (summ or "")[:200]
+        return bool(POLICY_RX.search(txt) or MARKET_RX.search(txt))
     return bool(MARKET_RX.search(title)) or bool(MARKET_RX.search((summ or "")[:200]))
 
 def _entry_image(e):
