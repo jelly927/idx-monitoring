@@ -708,11 +708,13 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
 </script>
 <!-- ── AI 챗봇 위젯 (Gemini) ─────────────────────────────────────────── -->
 <style>
-#gchatFab{position:fixed;right:22px;bottom:22px;z-index:9998;width:60px;height:60px;border-radius:50%;border:2px solid var(--card);
-  background:var(--brand);cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.24);padding:0;overflow:hidden}
-#gchatFab img{width:100%;height:100%;object-fit:cover;display:block}
+#gchatFab{position:fixed;right:22px;bottom:22px;z-index:9998;width:56px;height:56px;border-radius:50%;border:0;
+  background:var(--brand);color:#fff;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.24);padding:0;
+  font-size:16px;font-weight:800;letter-spacing:.06em;font-family:inherit;transition:transform .15s ease}
 #gchatFab:hover{transform:translateY(-2px)}
-#gchatFab{transition:transform .15s ease}
+#gchatFab i{position:absolute;right:9px;top:9px;width:9px;height:9px;background:var(--star);border-radius:50%;
+  box-shadow:0 0 0 2px var(--card);animation:gcPulse 2.2s ease-in-out infinite}
+@keyframes gcPulse{0%,100%{opacity:.55;transform:scale(.82)}50%{opacity:1;transform:scale(1)}}
 #gchatPanel{position:fixed;right:22px;bottom:94px;z-index:9999;width:410px;max-width:calc(100vw - 44px);height:min(580px,calc(100vh - 140px));
   display:none;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--r);
   box-shadow:0 14px 44px rgba(0,0,0,.24);overflow:hidden}
@@ -722,10 +724,10 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
 #gchatHead .nm b{font-size:13px;color:var(--ink);letter-spacing:.02em}
 #gchatHead .nm span{font-size:10.5px;color:var(--ink2)}
 #gchatHead button{border:0;background:none;color:var(--ink2);font-size:18px;cursor:pointer;margin-left:auto;padding:0 2px}
-.gcAva{flex:none;width:34px;height:34px;border-radius:50%;overflow:hidden;background:var(--chip);display:block}
+.gcAva{flex:none;width:42px;height:42px;border-radius:50%;overflow:hidden;background:var(--chip);display:block;border:1.5px solid var(--card);box-shadow:0 1px 4px rgba(0,0,0,.12)}
 .gcAva img{width:100%;height:100%;object-fit:cover;display:block}
-.gcAva.lg{width:52px;height:52px}
-.gcAva.sm{width:26px;height:26px}
+.gcAva.lg{width:112px;height:112px;border-width:3px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.gcAva.sm{width:30px;height:30px}
 #gchatBody{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:9px;background:var(--bg)}
 .gcRow{display:flex;gap:7px;align-items:flex-start;max-width:92%}
 .gcRow.u{align-self:flex-end}
@@ -733,10 +735,11 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
 .gcMsg.u{background:var(--brand);color:#fff;border-bottom-right-radius:3px}
 .gcMsg.a{background:var(--card);color:var(--ink);border:1px solid var(--line);border-bottom-left-radius:3px}
 .gcMsg.e{background:var(--dnbg);color:var(--dn);border:1px solid var(--line);font-size:12px}
-.gcHello{display:flex;gap:9px;align-items:center;padding:4px 0 2px}
-.gcHello .txt{font-size:12.5px;line-height:1.6;color:var(--ink)}
-.gcHello .txt b{color:var(--brand)}
-.gcMeta{align-self:flex-start;font-size:10.5px;color:var(--ink3);margin:-4px 0 0 33px}
+.gcHello{display:flex;flex-direction:column;align-items:center;gap:10px;padding:14px 0 6px;text-align:center}
+.gcHello .txt{font-size:13.5px;line-height:1.65;color:var(--ink)}
+.gcHello .txt b{color:var(--brand);font-size:15px;letter-spacing:.02em}
+.gcHello .tag{font-size:10.5px;color:var(--ink3);letter-spacing:.06em;text-transform:uppercase}
+.gcMeta{align-self:flex-start;font-size:10.5px;color:var(--ink3);margin:-4px 0 0 37px}
 #gchatFoot{border-top:1px solid var(--line);padding:9px;background:var(--card)}
 #gchatForm{display:flex;gap:7px}
 #gchatIn{flex:1;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:9px;padding:8px 10px;font-size:12.5px;font-family:inherit;resize:none;height:38px;max-height:96px}
@@ -751,7 +754,7 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
 .gcChips button{border:1px solid var(--line);background:var(--card);color:var(--ink2);border-radius:999px;padding:5px 10px;font-size:11px;cursor:pointer}
 .gcChips button:hover{border-color:var(--brand);color:var(--brand)}
 </style>
-<button id="gchatFab" title="KIRUDA"><img id="gchatFabImg" alt="KIRUDA"></button>
+<button id="gchatFab" title="KIRUDA · AI 시장 어시스턴트">AI<i></i></button>
 <div id="gchatPanel" role="dialog" aria-label="KIRUDA">
   <div id="gchatHead">
     <span class="gcAva"><img id="gchatHeadImg" alt="KIRUDA"></span>
@@ -788,7 +791,7 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
   var hist = [], busy = false, greeted = false, token = '';
   try { token = localStorage.getItem('idxlive_chat_token') || ''; } catch(e){}
 
-  $('gchatFabImg').src = HEAD; $('gchatHeadImg').src = HEAD;
+  $('gchatHeadImg').src = HEAD;
   $('gchatSub').textContent = T.sub; input.placeholder = T.ph; send.textContent = T.send;
   $('gchatTokIn').placeholder = T.tok; $('gchatTokBtn').textContent = T.ok; $('gchatHint').textContent = T.hint;
 
@@ -804,7 +807,9 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
   function hello(){
     if (greeted) return; greeted = true;
     var d = document.createElement('div'); d.className = 'gcHello';
-    d.innerHTML = '<span class="gcAva lg"><img src="' + FULL + '" alt="KIRUDA"></span><span class="txt">' + T.hello + '</span>';
+    d.innerHTML = '<span class="gcAva lg"><img src="' + FULL + '" alt="KIRUDA"></span>'
+                + '<span class="tag">' + T.sub + '</span>'
+                + '<span class="txt">' + T.hello + '</span>';
     body.appendChild(d);
   }
   function add(kind, text){
