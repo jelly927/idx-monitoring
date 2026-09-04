@@ -1672,28 +1672,31 @@ def investing_batch(ttl_min=8):
     if fresh and q: return q
     need_base = [k for k, *_ in INV_QUOTES if not (q.get(k) or {}).get("base")]
     def work(pg):
-        pg.goto(INV_DIV_PAGE, wait_until="domcontentloaded", timeout=60000); _wait_cf(pg)
-        return pg.evaluate("""async ([items, needBase]) => {
-            const out = {};
-            for (const [k, u] of items) {
-                try {
-                    const t = await (await fetch(u)).text();
-                    const g = re => { const m = t.match(re); return m ? m[1].trim() : null; };
-                    const o = { last: g(/data-test="instrument-price-last"[^>]*>([^<]+)</), chg: g(/data-test="instrument-price-change"[^>]*>([^<]+)</),
-                                pct: g(/data-test="instrument-price-change-percent"[^>]*>([^<]+)</), time: g(/data-test="trading-time-label"[^>]*>([^<]+)</),
-                                id: g(/"instrument_id":"?(\\d+)/) };
-                    if (needBase.includes(k) && o.id) {
-                        try {
-                            const r = await fetch(`https://api.investing.com/api/financialdata/historical/${o.id}?start-date=2025-12-15&end-date=2026-01-03&time-frame=Daily&add-missing-rows=false`, { headers: { 'domain-id': 'www' } });
+        """페이지 안 fetch() 는 Cloudflare 가 403(Just a moment) 으로 막으므로 종목별로 goto 로 진입해 읽는다 (건당 3~5초)"""
+        out = {}
+        for k, u, *_ in INV_QUOTES:
+            try:
+                pg.goto("https://www.investing.com" + u, wait_until="domcontentloaded", timeout=45000); _wait_cf(pg)
+                o = None
+                for _ in range(6):
+                    o = pg.evaluate("""() => {
+                        const q = s => { const e = document.querySelector(s); return e ? e.textContent.trim() : null; };
+                        const m = document.documentElement.innerHTML.match(/"instrument_id":"?(\\d+)/);
+                        return { last: q('[data-test="instrument-price-last"]'), chg: q('[data-test="instrument-price-change"]'),
+                                 pct: q('[data-test="instrument-price-change-percent"]'), time: q('[data-test="trading-time-label"]'), id: m ? m[1] : null }; }""")
+                    if o and o.get("last"): break
+                    pg.wait_for_timeout(1000)
+                if o and o.get("last") and k in need_base and o.get("id"):
+                    try:
+                        o.update(pg.evaluate("""async (id) => {
+                            const r = await fetch(`https://api.investing.com/api/financialdata/historical/${id}?start-date=2025-12-15&end-date=2026-01-03&time-frame=Daily&add-missing-rows=false`, { headers: { 'domain-id': 'www' } });
                             const j = await r.json();
                             const rows = (j.data || []).map(x => [x.rowDateTimestamp.slice(0, 10), parseFloat(x.last_closeRaw)]).filter(x => x[0] <= '2025-12-31').sort();
-                            if (rows.length) { o.base = rows[rows.length - 1][1]; o.base_date = rows[rows.length - 1][0]; }
-                        } catch (e) {}
-                    }
-                    out[k] = o;
-                } catch (e) { out[k] = { err: String(e) }; }
-            }
-            return out; }""", [[(k, u) for k, u, *_ in INV_QUOTES], need_base])
+                            return rows.length ? { base: rows[rows.length - 1][1], base_date: rows[rows.length - 1][0] } : {}; }""", o["id"]) or {})
+                    except Exception as e: o["base_err"] = str(e)[:80]
+                out[k] = o or {}
+            except Exception as e: out[k] = {"err": str(e)[:120]}
+        return out
     res = None
     try: res = _pw_session(work, "investing-batch")
     except Exception as e: log("investing 일괄 시세 실패", str(e)[:100])
