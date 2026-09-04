@@ -953,7 +953,9 @@ MACRO_ID = [  # 시장지표 라벨/주석 → 인니어 (긴 것부터)
     ("USD/IDR (Yahoo 15분 지연)", "USD/IDR (Yahoo, tunda 15 mnt)"),
     ("IDR/KRW (1원당 루피아)", "IDR/KRW (Rupiah per 1 Won)"),
     ("비거주자 주간 순매수", "Net beli nonresiden mingguan"),
-    ("국채 10년물", "Obligasi negara 10 tahun"),
+    ("국채 10년물", "Obligasi negara 10 tahun"), ("국채 1년물 (단기)", "Obligasi negara 1 tahun (jangka pendek)"),
+    ("달러 인덱스 (DXY)", "Indeks dolar (DXY)"), ("금 (US$/oz)", "Emas (US$/oz)"), ("석탄 Newcastle", "Batu bara Newcastle"), ("니켈 LME", "Nikel LME"), ("주석 LME", "Timah LME"),
+    ("Bursa Malaysia FCPO 근월물", "FCPO Bursa Malaysia kontrak terdekat"), ("6월 2회 +25bp", "Juni 2x +25bp"),
     ("investing.com 실시간", "investing.com real-time"),
     ("BI 보도자료", "Siaran pers BI"),
     ("연초", "Awal tahun"), ("수기", "manual"), ("확인 필요", "perlu konfirmasi"),
@@ -984,8 +986,8 @@ def macro_block(bi):
         out.append({"k": label, "v": fmt.format(v["px"]), "d": v.get("pct"), "ytd": ytd, "inv": inv,
                     "note": " · ".join(x for x in (note, (f'연초 {base:,.4g}' if base and key not in ("TIN", "NICKEL") else f'연초 {base:,.0f}' if base else None)) if x) or None})
     spec = {k: (lab, fmt, inv, note) for k, _, lab, fmt, inv, note in INV_QUOTES}
-    for key in ("USDKRW", "UST10Y"): irow(key, *spec[key])
-    out.append({"k": "BI Rate", "v": f'{m["bi_rate"]:.2f}%' if m.get("bi_rate") else "확인 필요", "d": None, "ytd": None, "note": m.get("bi_note")})
+    for key in ("SUN1Y", "UST10Y"): irow(key, *spec[key])
+    out.append({"k": "BI Rate (7D RR)", "v": f'{m["bi_rate"]:.2f}%' if m.get("bi_rate") else "확인 필요", "d": None, "ytd": None, "note": m.get("bi_note")})
     for key in ("DXY", "WTI", "BRENT", "GOLD", "COAL", "NICKEL", "TIN", "CPO"): irow(key, *spec[key])
     if bi and bi.get("cds5y"): out.append({"k": "CDS 5Y (bps)", "v": f'{bi["cds5y"]:.2f}', "d": None, "ytd": None, "inv": True, "note": "BI 보도자료"})
     if bi and bi.get("nonres_week"):
@@ -1645,9 +1647,9 @@ def attach_dividends(corp, divs):
 # ---------------- investing.com 일괄 시세 (브라우저 1세션 안에서 fetch — 페이지별 로딩 없음) + 연초 종가(YTD 기준) ----------------
 INV_QUOTES = [   # key, path, 표시명, 포맷, inv(상승=빨강), 단위 메모
     ("SUN10Y", "/rates-bonds/indonesia-10-year-bond-yield", "국채 10년물", "{:,.3f}%", True, ""),
-    ("USDKRW", "/currencies/usd-krw", "USD/KRW", "{:,.1f}", True, ""),
+    ("SUN1Y", "/rates-bonds/indonesia-1-year-bond-yield", "국채 1년물 (단기)", "{:,.3f}%", True, ""),
     ("UST10Y", "/rates-bonds/u.s.-10-year-bond-yield", "UST 10Y", "{:,.3f}%", True, ""),
-    ("DXY", "/indices/usdollar", "DXY", "{:,.2f}", False, ""),
+    ("DXY", "/indices/usdollar", "달러 인덱스 (DXY)", "{:,.2f}", False, ""),
     ("WTI", "/commodities/crude-oil", "WTI (US$/bbl)", "{:,.2f}", False, ""),
     ("BRENT", "/commodities/brent-oil", "Brent (US$/bbl)", "{:,.2f}", False, ""),
     ("GOLD", "/commodities/gold", "금 (US$/oz)", "{:,.1f}", False, ""),
