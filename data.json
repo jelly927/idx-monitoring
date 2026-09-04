@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 12:50",
+ "updated": "2026-09-04 13:03",
  "delay_min": 0,
- "fx_basis": "13.04 IDR/KRW · USD/IDR 17,638 · USD/KRW 1,353 · 12:33 Yahoo",
- "idr_per_krw": 13.0374,
+ "fx_basis": "13.05 IDR/KRW · USD/IDR 17,638 · USD/KRW 1,351 · 12:33 Yahoo",
+ "idr_per_krw": 13.0518,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -342,7 +342,7 @@
   "value_idr": 18607401563700,
   "volume": 39305835265,
   "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-04 11:58",
-  "rank_asof": "12:49",
+  "rank_asof": "13:01",
   "rank_date": "2026-09-04",
   "adv": 289,
   "dec": 342,
@@ -15353,10 +15353,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6728.84,
+   "px": 6720.27,
    "prev": 6598.23,
-   "pct": 1.98,
-   "asof": "12:25",
+   "pct": 1.85,
+   "asof": "12:40",
    "live": true,
    "spark": [
     6677.11,
@@ -15424,17 +15424,20 @@
     6722.57,
     6745.21,
     6736.8,
-    6728.84
+    6727.68,
+    6733.4,
+    6722.51,
+    6720.27
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65151.88,
+   "px": 65177.78,
    "prev": 64269.48,
-   "pct": 1.37,
-   "asof": "12:30",
+   "pct": 1.41,
+   "asof": "12:45",
    "live": true,
    "spark": [
     64439.01,
@@ -15493,17 +15496,20 @@
     65106.95,
     65111.3,
     65083.0,
-    65151.88
+    65154.61,
+    65142.43,
+    65152.36,
+    65177.78
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25674.97,
+   "px": 25691.08,
    "prev": 25213.31,
-   "pct": 1.83,
-   "asof": "12:30",
+   "pct": 1.89,
+   "asof": "12:45",
    "live": true,
    "spark": [
     25696.61,
@@ -15544,7 +15550,10 @@
     25733.46,
     25726.98,
     25690.19,
-    25674.97
+    25676.49,
+    25665.45,
+    25682.23,
+    25691.08
    ]
   }
  ],
@@ -15608,6 +15617,35 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-04T12:58:49+07:00",
+   "date": "2026-09-04",
+   "time": "12:58",
+   "src": "Detik",
+   "t": "Balik Arah dari Rugi, ID FOOD Cetak Laba Rp 1,34 T",
+   "tags": [
+    "FOOD"
+   ],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648193/balik-arah-dari-rugi-id-food-cetak-laba-rp-1-34-t",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/id-food-1788501238663_169.jpeg?w=360&q=90",
+   "t_id": "Balik Arah dari Rugi, ID FOOD Cetak Laba Rp 1,34 T",
+   "t_ko": "손실을 반전하여 ID FOOD는 IDR 1.34 T의 이익을 인쇄합니다."
+  },
+  {
+   "ts": "2026-09-04T12:50:00+07:00",
+   "date": "2026-09-04",
+   "time": "12:50",
+   "src": "IDX Channel",
+   "t": "Petrindo (CUAN) Siap Akuisisi Saham Mayoritas Singaraja Putra (SINI)",
+   "tags": [
+    "CUAN",
+    "SINI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/petrindo-cuan-siap-akuisisi-saham-mayoritas-singaraja-putra-sini",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2025/11/13/petrindo_cuan.jpg",
+   "t_id": "Petrindo (CUAN) Siap Akuisisi Saham Mayoritas Singaraja Putra (SINI)",
+   "t_ko": "Petrindo(CUAN)가 Singaraja Putra(SINI)의 최대 지분을 인수할 준비가 되었습니다."
+  },
   {
    "ts": "2026-09-04T12:24:09+07:00",
    "date": "2026-09-04",
@@ -16129,34 +16167,6 @@
    "t_id": "BNI Tanam 258 Ribu Mangrove, Dorong Ekonomi Pesisir Lewat Kepiting Soka-Ekowisata"
   },
   {
-   "ts": "2026-09-03T23:25:02+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Detik",
-   "t": "Mitigasi Risiko Lingkungan, Triputra Agro Persada Raih Anugerah Ekonomi Hijau",
-   "tags": [
-    "TAPG"
-   ],
-   "url": "https://finance.detik.com/ekonomi-hijau/d-8647578/mitigasi-risiko-lingkungan-triputra-agro-persada-raih-anugerah-ekonomi-hijau",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/anugerah-ekonomi-hijau-triputra-agro-1788452674428_169.jpeg?w=360&q=90",
-   "t_ko": "환경 리스크 완화 — Triputra Agro Persada, Anugerah Ekonomi Hijau 수상",
-   "t_id": "Mitigasi Risiko Lingkungan, Triputra Agro Persada Raih Anugerah Ekonomi Hijau"
-  },
-  {
-   "ts": "2026-09-03T23:15:49+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Detik",
-   "t": "BRI, Dana, hingga bank bjb Sabet Penghargaan Anugerah Ekonomi Hijau",
-   "tags": [
-    "MEGA"
-   ],
-   "url": "https://finance.detik.com/ekonomi-hijau/d-8647572/bri-dana-hingga-bank-bjb-sabet-penghargaan-anugerah-ekonomi-hijau",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/01/anugerah-ekonomi-hijau-1788257473437_169.jpeg?w=360&q=90",
-   "t_ko": "BRI·Dana·bank bjb, Anugerah Ekonomi Hijau 수상",
-   "t_id": "BRI, Dana, hingga bank bjb Sabet Penghargaan Anugerah Ekonomi Hijau"
-  },
-  {
    "ts": "2026-09-03T19:56:26+07:00",
    "date": "2026-09-03",
    "time": "09/03",
@@ -16543,6 +16553,29 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T12:52:11+07:00",
+   "date": "2026-09-04",
+   "time": "12:52",
+   "src": "Detik",
+   "t": "KAI Buka Lowongan 2026, Lulusan SMA-S1 Bisa Daftar Jadi Masinis hingga Kondektur",
+   "tags": [],
+   "url": "https://finance.detik.com/bumn/d-8648178/kai-buka-lowongan-2026-lulusan-sma-s1-bisa-daftar-jadi-masinis-hingga-kondektur",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/08/28/kondektur-pt-kereta-api-indonesia-indonesia-1756353080315_169.jpeg?w=360&q=90",
+   "t_id": "KAI Buka Lowongan 2026, Lulusan SMA-S1 Bisa Daftar Jadi Masinis hingga Kondektur",
+   "t_ko": "KAI, 2026년 공석 개시, SMA-S1 졸업생은 기계공에서 지휘자 지원 가능"
+  },
+  {
+   "ts": "2026-09-04T12:44:55+07:00",
+   "date": "2026-09-04",
+   "time": "12:44",
+   "src": "Bloomberg",
+   "t": "FTSE 100 Live: European Stocks Set to Rise After Asia Rally",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/live-blog/2026-09-04/ftse-100-live-pound-bonds-gilts-fed-yen-oil-hormuz-trump-iran-war-vw-what-s-moving-uk-markets-right-now-markets-today-mtmj4wxv",
+   "t_ko": "FTSE 100 Live: 아시아 랠리 이후 유럽 증시 상승 예정",
+   "t_id": "FTSE 100 Live: Saham Eropa Akan Naik Setelah Reli Asia"
+  },
+  {
    "ts": "2026-09-04T12:42:22+07:00",
    "date": "2026-09-04",
    "time": "12:42",
@@ -16550,7 +16583,9 @@
    "t": "Waskita Karya Rampungkan Restrukturisasi Utang Usai RUPO Disetujui",
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648161/waskita-karya-rampungkan-restrukturisasi-utang-usai-rupo-disetujui",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/waskita-karya-1788500504107.jpeg?w=360&q=90"
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/waskita-karya-1788500504107.jpeg?w=360&q=90",
+   "t_ko": "Waskita Karya, RUPO 승인 후 부채 구조 조정 완료",
+   "t_id": "Waskita Karya Rampungkan Restrukturisasi Utang Usai RUPO Disetujui"
   },
   {
    "ts": "2026-09-04T12:30:00+07:00",
@@ -16868,30 +16903,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/02/28/2025_02_28-13_06_00_28e37e0c-f5a3-11ef-adf0-910fd7dc604e_620x413_thumb.jpg",
    "t_ko": "싱가포르 법원 판결 — Sritex 자산 추적 길 확보",
    "t_id": "Putusan Pengadilan Singapura Buka Jalan Pelacakan Aset Sritex"
-  },
-  {
-   "ts": "2026-09-04T10:46:34+07:00",
-   "date": "2026-09-04",
-   "time": "10:46",
-   "src": "Republika",
-   "t": "Angka Tetap BPS: Produksi Beras Januari–April 2026 Tumbuh, Luas Panen dan Produksi Padi Ikut Naik",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tktmhm370/angka-tetap-bps-produksi-beras-januariapril-2026-tumbuh-luas-panen-dan-produksi-padi-ikut-naik",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260904104541-117.png",
-   "t_ko": "BPS 확정치: 2026년 1~4월 쌀 생산 증가 — 수확 면적·벼 생산 동반 상승",
-   "t_id": "Angka Tetap BPS: Produksi Beras Januari–April 2026 Tumbuh, Luas Panen dan Produksi Padi Ikut Naik"
-  },
-  {
-   "ts": "2026-09-04T10:41:06+07:00",
-   "date": "2026-09-04",
-   "time": "10:41",
-   "src": "Detik",
-   "t": "Magang Nasional Dibuka Lagi, Kuota 50 Ribu",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8647945/magang-nasional-dibuka-lagi-kuota-50-ribu",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/28/menteri-ketenagakerjaan-menaker-yassierli-1785214076092_169.jpeg?w=360&q=90",
-   "t_ko": "국가 인턴십 재개 — 정원 5만 명",
-   "t_id": "Magang Nasional Dibuka Lagi, Kuota 50 Ribu"
   }
  ],
  "kisi_news": [
@@ -17063,9 +17074,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.03",
-   "d": -0.1,
-   "ytd": 12.18,
+   "v": "13.04",
+   "d": 0.0,
+   "ytd": 12.3,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17098,9 +17109,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.01",
-   "d": 0.01,
-   "ytd": 0.75,
+   "v": "99.04",
+   "d": 0.03,
+   "ytd": 0.77,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17110,9 +17121,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "91.38",
-   "d": -0.39,
-   "ytd": 59.14,
+   "v": "91.64",
+   "d": -0.11,
+   "ytd": 59.6,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17122,9 +17133,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,520.2",
-   "d": 0.11,
-   "ytd": 4.5,
+   "v": "4,516.7",
+   "d": 0.03,
+   "ytd": 4.42,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17146,9 +17157,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,772",
-   "d": -0.04,
-   "ytd": 0.54,
+   "v": "16,770",
+   "d": -0.05,
+   "ytd": 0.53,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18642,7 +18653,7 @@
    "title": "Continuing Jobless Claims",
    "imp": 2,
    "exp": null,
-   "prev": "206K",
+   "prev": "1,779K",
    "act": null,
    "src": "investing.com",
    "title_ko": "연속 실업수당 청구",
@@ -18697,8 +18708,8 @@
    "country": "US",
    "title": "Atlanta Fed GDPNow  (Q3)",
    "imp": 2,
-   "exp": null,
-   "prev": null,
+   "exp": "4.7%",
+   "prev": "4.7%",
    "act": null,
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
@@ -18830,6 +18841,20 @@
    "title_id": "RUPSU · RENCANA RupSu emisi Sukuk Mudharabah Berkelanjutan II Wijaya Karya Tahap II Tahun 2022",
    "country": "ID",
    "title_ko": "수쿠크보유자집회 계획 · Sukuk Mudharabah Berkelanjutan II Wijaya Karya Tahap II Tahun 2022"
+  },
+  {
+   "date": "2026-09-11",
+   "time": "00:01",
+   "kind": "macro",
+   "country": "US",
+   "title": "30-Year Bond Auction",
+   "imp": 3,
+   "exp": null,
+   "prev": "5.216%",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "30년 만기 채권 경매",
+   "title_id": "Lelang Obligasi 30 Tahun"
   },
   {
    "date": "2026-09-11",
