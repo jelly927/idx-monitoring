@@ -32,6 +32,8 @@ def token():
         sys.exit("토큰 없음: secrets.json 에 {\"github_token\": \"github_pat_...\"} 저장 (README '자동 배포' 참고)")
     return t.strip()
 
+TRIGGER_MIN = 10   # 러너를 깨우는 최소 간격(분)
+
 def blob_sha(b: bytes) -> str:
     h = hashlib.sha1(); h.update(f"blob {len(b)}\0".encode()); h.update(b); return h.hexdigest()
 
@@ -54,7 +56,15 @@ def main(argv):
         b = p.read_bytes()
         if remote.get(rel) == blob_sha(b): skip += 1; continue
         # idx_part.json(PC 의 IDX 수집분)만 [skip ci] 없이 올려 GitHub 러너가 바로 병합·배포하게 한다. 나머지는 러너를 깨우지 않음
-        tag = "" if rel == "data/idx_part.json" else " [skip ci]"
+        tag = " [skip ci]"
+        if rel == "data/idx_part.json":                       # 러너(GitHub Actions) 트리거는 TRIGGER_MIN 분에 1회로 제한 — 빌드마다 깨우면 Actions 사용량·중복 실행 폭증
+            st = ROOT / "data" / "cache" / "last_trigger.txt"
+            try: last = float(st.read_text().strip() or 0)
+            except Exception: last = 0
+            if time.time() - last >= TRIGGER_MIN * 60:
+                tag = ""
+                try: st.write_text(str(time.time()))
+                except Exception: pass
         body = {"message": f"{rel} {time.strftime('%Y-%m-%d %H:%M')}{tag}", "content": base64.b64encode(b).decode(), "branch": BRANCH}
         if rel in remote: body["sha"] = remote[rel]
         for attempt in range(3):
