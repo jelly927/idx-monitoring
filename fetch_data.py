@@ -973,33 +973,20 @@ def macro_block(bi):
         ytd = None
         if base: ytd = round((base / q["px"] - 1) * 100, 2) if inverse_ytd else round((q["px"] / base - 1) * 100, 2)
         out.append({"k": k, "v": fmt.format(q["px"]), "d": d, "ytd": ytd, "inv": inv, "note": " · ".join(x for x in (note, src) if x) or None})
-    usdidr = yq("USDIDR=X")
-    if bi and bi.get("idr_close"):
-        row("USD/IDR (BI bid 종가)", {"px": bi["idr_close"], "prev": usdidr["prev"] if usdidr else None}, inv=True, base=yb.get("USDIDR"), fmt="{:,.0f}", note=f'BI {bi.get("as_of")}')
-    # YTD 는 수치 기준(연초 대비 %): 루피아 약세 = 수치 상승 = + 표시(빨강). 이전엔 역수로 계산돼 부호가 반대였음
-    row("USD/IDR (Yahoo 15분 지연)", usdidr, inv=True, base=yb.get("USDIDR"), fmt="{:,.0f}", note=f'연초 {yb.get("USDIDR"):,}')
-    row("IDR/KRW (1원당 루피아)", yq("KRWIDR=X"), inv=True, base=yb.get("KRWIDR"), note=f'연초 {yb.get("KRWIDR")}')
-    # 국채 10년물 — investing.com 실시간이 1순위, 실패 시 BI 보도자료 → Kontan → 수기
-    sun = sun_prev = sun_src = None
-    iv = _IV.get("SUN10Y")
-    if iv:
-        sun, sun_src = iv["px"], "investing.com 실시간"
-        if iv.get("chg") is not None: sun_prev = round(iv["px"] - iv["chg"], 4)
-    if sun is None and bi and bi.get("sun10y"): sun, sun_src = bi["sun10y"], "BI 보도자료"
-    if sun is None: sun, sun_src = kontan_sun10y(), "Kontan pusatdata"
-    if sun is None and m.get("sun10y"): sun, sun_src = m["sun10y"], "수기"
-    # 국채 10년물은 상단 지수 카드(4번째)로 이동 → 시장 지표에는 CPO(팜유 선물, Bursa Malaysia FCPO 근월물, MYR/톤)
-    cv = _IV.get("CPO")
-    row("CPO (MYR/t)", {"px": cv["px"], "prev": (round(cv["px"] - cv["chg"], 2) if cv.get("chg") is not None else None)} if cv else None,
-        base=yb.get("CPO"), fmt="{:,.0f}", note="Bursa Malaysia FCPO 근월물", src="investing.com")
+    # 상단 카드에 이미 있는 USD/IDR·국채 10년물은 제외. 순서: IDR/KRW → USD/KRW → UST 10Y → BI Rate → DXY → WTI → Brent → 금 → 석탄 → 니켈 → 주석 → CPO
+    kr = yq("KRWIDR=X")
+    row("IDR/KRW (1원당 루피아)", kr, inv=True, base=yb.get("KRWIDR"), note=f'연초 {yb.get("KRWIDR")}')
+    def irow(key, label, fmt, inv, note):
+        v = _IV.get(key)
+        if not v: out.append({"k": label, "v": "확인 필요", "d": None, "ytd": None, "inv": inv, "note": note or None}); return
+        base = yb.get(key) or v.get("base")
+        ytd = round((v["px"] / base - 1) * 100, 2) if base else None
+        out.append({"k": label, "v": fmt.format(v["px"]), "d": v.get("pct"), "ytd": ytd, "inv": inv,
+                    "note": " · ".join(x for x in (note, (f'연초 {base:,.4g}' if base and key not in ("TIN", "NICKEL") else f'연초 {base:,.0f}' if base else None)) if x) or None})
+    spec = {k: (lab, fmt, inv, note) for k, _, lab, fmt, inv, note in INV_QUOTES}
+    for key in ("USDKRW", "UST10Y"): irow(key, *spec[key])
     out.append({"k": "BI Rate", "v": f'{m["bi_rate"]:.2f}%' if m.get("bi_rate") else "확인 필요", "d": None, "ytd": None, "note": m.get("bi_note")})
-    row("Brent (US$/bbl)", yq("BZ=F"), base=yb.get("Brent"))
-    dxy = yq("DX-Y.NYB")
-    if bi and bi.get("dxy"): row("DXY", {"px": bi["dxy"], "prev": dxy["prev"] if dxy else None}, note=f'BI {bi.get("as_of")}')
-    else: row("DXY", dxy)
-    ust = yq("^TNX")
-    if bi and bi.get("ust10y"): row("UST 10Y", {"px": bi["ust10y"], "prev": ust["prev"] if ust else None}, inv=True, fmt="{:,.3f}%", note="BI")
-    else: row("UST 10Y", ust, inv=True, fmt="{:,.2f}%")
+    for key in ("DXY", "WTI", "BRENT", "GOLD", "COAL", "NICKEL", "TIN", "CPO"): irow(key, *spec[key])
     if bi and bi.get("cds5y"): out.append({"k": "CDS 5Y (bps)", "v": f'{bi["cds5y"]:.2f}', "d": None, "ytd": None, "inv": True, "note": "BI 보도자료"})
     if bi and bi.get("nonres_week"):
         w = bi["nonres_week"]; out.append({"k": f'비거주자 주간 순매수 ({w["period"]})', "v": f'{w["total"]/1e12:+.2f}조', "d": None, "ytd": None, "note": w["text"]})
@@ -1655,6 +1642,77 @@ def attach_dividends(corp, divs):
         if e.get("title_id") and "/saham" not in e["title_id"]: e["title_id"] = e["title_id"] + f" — {amt}/saham"
     return n
 
+# ---------------- investing.com 일괄 시세 (브라우저 1세션 안에서 fetch — 페이지별 로딩 없음) + 연초 종가(YTD 기준) ----------------
+INV_QUOTES = [   # key, path, 표시명, 포맷, inv(상승=빨강), 단위 메모
+    ("SUN10Y", "/rates-bonds/indonesia-10-year-bond-yield", "국채 10년물", "{:,.3f}%", True, ""),
+    ("USDKRW", "/currencies/usd-krw", "USD/KRW", "{:,.1f}", True, ""),
+    ("UST10Y", "/rates-bonds/u.s.-10-year-bond-yield", "UST 10Y", "{:,.3f}%", True, ""),
+    ("DXY", "/indices/usdollar", "DXY", "{:,.2f}", False, ""),
+    ("WTI", "/commodities/crude-oil", "WTI (US$/bbl)", "{:,.2f}", False, ""),
+    ("BRENT", "/commodities/brent-oil", "Brent (US$/bbl)", "{:,.2f}", False, ""),
+    ("GOLD", "/commodities/gold", "금 (US$/oz)", "{:,.1f}", False, ""),
+    ("COAL", "/commodities/newcastle-coal-futures", "석탄 Newcastle (US$/t)", "{:,.2f}", False, ""),
+    ("NICKEL", "/commodities/nickel", "니켈 LME (US$/t)", "{:,.0f}", False, ""),
+    ("TIN", "/commodities/tin", "주석 LME (US$/t)", "{:,.0f}", False, ""),
+    ("CPO", "/commodities/palm-oil", "CPO (MYR/t)", "{:,.0f}", False, "Bursa Malaysia FCPO 근월물"),
+]
+INV_Q_P = CACHE / "inv_quotes.json"
+def _inv_num(s):
+    try: return float(str(s).replace(",", "").replace("%", "").replace("(", "").replace(")", "").replace("+", "").strip())
+    except Exception: return None
+def investing_batch(ttl_min=8):
+    """모든 investing.com 시세를 브라우저 1세션에서 fetch 로 받는다. 연초(2025-12-31 이하 마지막) 종가는 1회만 받아 캐시.
+    반환 {key: {"px","chg","pct","asof","base","base_date"}} · 실패 시 캐시(오래됐으면 asof 에 표시)"""
+    try: c = json.loads(INV_Q_P.read_text(encoding="utf-8"))
+    except Exception: c = {}
+    q = c.get("quotes") or {}
+    try:
+        fresh = c.get("saved") and (now_wib() - dt.datetime.fromisoformat(c["saved"])).total_seconds() < ttl_min * 60
+    except Exception: fresh = False
+    if fresh and q: return q
+    need_base = [k for k, *_ in INV_QUOTES if not (q.get(k) or {}).get("base")]
+    def work(pg):
+        pg.goto(INV_DIV_PAGE, wait_until="domcontentloaded", timeout=60000); _wait_cf(pg)
+        return pg.evaluate("""async ([items, needBase]) => {
+            const out = {};
+            for (const [k, u] of items) {
+                try {
+                    const t = await (await fetch(u)).text();
+                    const g = re => { const m = t.match(re); return m ? m[1].trim() : null; };
+                    const o = { last: g(/data-test="instrument-price-last"[^>]*>([^<]+)</), chg: g(/data-test="instrument-price-change"[^>]*>([^<]+)</),
+                                pct: g(/data-test="instrument-price-change-percent"[^>]*>([^<]+)</), time: g(/data-test="trading-time-label"[^>]*>([^<]+)</),
+                                id: g(/"instrument_id":"?(\\d+)/) };
+                    if (needBase.includes(k) && o.id) {
+                        try {
+                            const r = await fetch(`https://api.investing.com/api/financialdata/historical/${o.id}?start-date=2025-12-15&end-date=2026-01-03&time-frame=Daily&add-missing-rows=false`, { headers: { 'domain-id': 'www' } });
+                            const j = await r.json();
+                            const rows = (j.data || []).map(x => [x.rowDateTimestamp.slice(0, 10), parseFloat(x.last_closeRaw)]).filter(x => x[0] <= '2025-12-31').sort();
+                            if (rows.length) { o.base = rows[rows.length - 1][1]; o.base_date = rows[rows.length - 1][0]; }
+                        } catch (e) {}
+                    }
+                    out[k] = o;
+                } catch (e) { out[k] = { err: String(e) }; }
+            }
+            return out; }""", [[(k, u) for k, u, *_ in INV_QUOTES], need_base])
+    res = None
+    try: res = _pw_session(work, "investing-batch")
+    except Exception as e: log("investing 일괄 시세 실패", str(e)[:100])
+    got = 0
+    for k, *_ in INV_QUOTES:
+        o = (res or {}).get(k) or {}
+        px = _inv_num(o.get("last"))
+        if px is None: continue
+        prev = q.get(k) or {}
+        q[k] = {"px": px, "chg": _inv_num(o.get("chg")), "pct": _inv_num(o.get("pct")), "asof": o.get("time") or "",
+                "base": o.get("base") or prev.get("base"), "base_date": o.get("base_date") or prev.get("base_date"), "id": o.get("id") or prev.get("id")}
+        got += 1
+    if got:
+        try: INV_Q_P.write_text(json.dumps({"saved": now_wib().isoformat(), "quotes": q}, ensure_ascii=False), encoding="utf-8")
+        except Exception: pass
+        log(f"investing.com 일괄 {got}/{len(INV_QUOTES)} · " + " ".join(f'{k} {q[k]["px"]:g}' for k, *_ in INV_QUOTES if k in q))
+    else: log("investing.com 일괄 시세 실패 → 캐시 사용")
+    return q
+
 SUN_DAILY_P = CACHE / "sun10y_daily.json"
 INV_SUN_HIST = "https://www.investing.com/rates-bonds/indonesia-10-year-bond-yield-historical-data"
 def sun10y_daily():
@@ -1797,10 +1855,7 @@ def build():
             if ix: log(f"IDX 지수 러너 응답 {ix.get('date')} < PC {pix.get('date')} → PC 수집분 사용")
             ix = pix
     # investing.com 은 yfinance 보다 먼저 — yfinance 가 스레드에 asyncio 루프를 남기면 브라우저 기동이 막힌다
-    _IV["SUN10Y"] = investing_quote(INVESTING_QUOTES["SUN10Y"])
-    log("국채10Y investing.com", (f'{_IV["SUN10Y"]["px"]}%' if _IV.get("SUN10Y") else "실패"))
-    _IV["CPO"] = investing_quote(INVESTING_QUOTES["CPO"])
-    log("CPO investing.com", (f'{_IV["CPO"]["px"]:,.0f} MYR/t' if _IV.get("CPO") else "실패"))
+    _IV.update(investing_batch())                     # 국채 10년물 카드 + 시장 지표(환율·금리·원자재) 한 번에
     h = yq("^JKSE"); usd = yq("USDIDR=X"); krw = yq("KRW=X")
     in_session = 9 <= now_wib().hour < 17 and now_wib().weekday() < 5
     indices = []
