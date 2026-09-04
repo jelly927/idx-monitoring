@@ -560,7 +560,7 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
     :(up.length?`<div class="ev-day">${T('upcoming')}</div>`+up.map(e=>ev(Object.assign({},e,{time:(e.date.slice(5).replace('-','/'))+' '+(e.time&&e.time!=='—'?e.time:'')}))).join('')
               :`<div class="empty">${T('noEv')}</div>`));
   renderAnn();renderWL();setTimeout(annFit,50);
-  renderNews();$('news-preview').innerHTML=(d.news||[]).slice(0,10).map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`;
+  renderNews();$('news-preview').innerHTML=(d.news||[]).slice(0,11).map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`;
   {const td=today();if(!calDate||calDate===calTodayISO)calDate=td;calTodayISO=td;}renderCal();
   $('foot').innerHTML=T('foot');applyStatic();}
 
@@ -578,11 +578,11 @@ function hotRender(){const l=hotList();if(!l.length){$('hot').textContent='—';
   clearInterval(hotTimer);hotTimer=setInterval(()=>{if($('hotbox').classList.contains('on'))return;hotI=(hotI+1)%l.length;const x=l[hotI];$('hot').textContent=`${x.src} · ${nTitle(x)}`;$('hotcnt').textContent=`${hotI+1} / ${l.length}`;},7000);}
 let hotCloseT=null;
 function hotOpen(on){clearTimeout(hotCloseT);if(on)$('hotbox').classList.add('on');else hotCloseT=setTimeout(()=>$('hotbox').classList.remove('on'),450);}   // 마우스가 잠깐 벗어나도 바로 닫히지 않게
-let annQ='',annMore=false,annLim=8;
+let annQ='',annMore=false,annLim=9;
 function mnFit(){const rc=$('rank-card'),mc=$('mnews-card'),list=$('mnews');if(!rc||!mc)return;let items=[...list.children];while(items.length>4&&mc.getBoundingClientRect().height>rc.getBoundingClientRect().height+2){items.pop().remove();items=[...list.children];}}
 function annFit(){const card=document.querySelector('.card.ann'),list=$('ann');if(!card||!list||!DATA||annMore||annQ)return;const rows=list.querySelectorAll('.row');if(!rows.length)return;
   const spare=card.getBoundingClientRect().bottom-list.getBoundingClientRect().bottom-16,rh=rows[0].getBoundingClientRect().height||44;
-  let n=annLim+Math.floor(spare/rh);n=Math.max(8,Math.min(n,(DATA.announcements||[]).length,20));if(n!==annLim){annLim=n;renderAnn();}}
+  let n=annLim+Math.floor(spare/rh);n=Math.max(9,Math.min(n,(DATA.announcements||[]).length,20));if(n!==annLim){annLim=n;renderAnn();}}
 window.addEventListener('resize',()=>{clearTimeout(window._annT);window._annT=setTimeout(annFit,200);});
 function renderAnn(){if(!DATA)return;const q=annQ.toUpperCase();let all=(DATA.announcements||[]);if(q)all=all.filter(a=>(a.t||'').toUpperCase().includes(q)||(a.title||'').toUpperCase().includes(q)||(a.title_ko||'').toUpperCase().includes(q)||(a.title_id||'').toUpperCase().includes(q));
   const lim=annMore||q?all.length:annLim;$('anncnt').textContent=all.length?`${Math.min(lim,all.length)} / ${all.length}`:'';$('annmore').textContent=all.length>annLim&&!q?(annMore?T('less'):T('more')):'';
