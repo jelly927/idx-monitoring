@@ -498,7 +498,7 @@ def idx_index():
     return {"date": d.isoformat(), "px": px, "prev": prev, "chg": round(px - prev, 2), "pct": round((px / prev - 1) * 100, 2),
             "high": jci["Highest"], "low": jci["Lowest"], "value_idr": jci.get("Value"), "volume": jci.get("Volume"),
             "lq45": {"px": lq["Close"], "prev": lq["Previous"], "pct": round((lq["Close"] / lq["Previous"] - 1) * 100, 2), "spark": idx.index_chart("LQ45", "1D")} if lq else None,
-            "spark": idx.index_chart("COMPOSITE", "1D")}
+            "spark": idx.index_chart("COMPOSITE", "1D"), "ts": now_wib().strftime("%H:%M") if d == now_wib().date() else None}
 
 # =============================================================== corporate calendar from IDX
 KW = [("Laporan Keuangan", "실적 공시"), ("RUPS", "주주총회"), ("Public Expose", "기업설명회"), ("Cum Date", "배당부 마감"),
@@ -1920,19 +1920,24 @@ def build():
     indices = []
     def add_index(code, label, name, live, eod, inv=False, dec=2):
         """장중엔 Yahoo 실시간(지연) 우선 — 전일 종가를 현재가로 보여주지 않는다. 장 마감 후엔 IDX 확정 종가."""
-        if live and eod and eod.get("date") and eod["date"] < now_wib().date().isoformat() and eod.get("px"):
+        today_iso = now_wib().date().isoformat()
+        if live and eod and eod.get("date") and eod["date"] < today_iso and eod.get("px"):
             live = dict(live, prev=eod["px"])             # IDX 가 확정한 직전 거래일 종가를 전일종가로 (Yahoo 는 하루 밀리는 경우가 있음)
+        if eod and eod.get("date") == today_iso and eod.get("px") and eod.get("ts") and (not live or str(live.get("ts", "")) < eod["ts"]):
+            # 장중 IDX 스냅샷(PC 수집)이 Yahoo 1분봉보다 최신 — Yahoo 는 점심 휴장 뒤 틱이 늦게 붙는 경우가 있다 → IDX 값을 현재가로
+            live = {"px": eod["px"], "prev": eod["prev"], "ts": eod["ts"], "spark": eod.get("spark") or (live or {}).get("spark") or [],
+                    "high": eod.get("high"), "low": eod.get("low"), "src": "idx"}
         if live and (in_session or not eod):
             indices.append({"code": code, "label": label, "name": name, "px": round(live["px"], dec), "prev": round(live["prev"], dec), "pct": round((live["px"] / live["prev"] - 1) * 100, 2),
-                            "spark": live["spark"], "inv": inv, "asof": live["ts"], "high": live.get("high"), "low": live.get("low")})
+                            "spark": live["spark"], "inv": inv, "asof": live["ts"], "high": live.get("high"), "low": live.get("low"), "src": live.get("src", "yahoo")})
         elif eod:
             indices.append({"code": code, "label": label, "name": name, "px": round(eod["px"], dec), "prev": round(eod["prev"], dec), "pct": round((eod["px"] / eod["prev"] - 1) * 100, 2),
                             "spark": eod.get("spark") or [], "inv": inv, "asof": eod.get("asof", "종가")})
     jl, ll, ul = ylive("^JKSE"), ylive("^JKLQ45"), ylive("USDIDR=X")
     if not ul: ul = ylive_fx("USDIDR=X")             # 환율은 24시간 거래 — 1분봉이 비면 15분봉 최근 24시간으로
     glob_idx = global_indices()                       # yfinance 호출은 브라우저 작업(번역·캘린더) 전에 모아서
-    add_index("COMPOSITE", "IHSG", "자카르타 종합", jl, {"px": ix["px"], "prev": ix["prev"], "spark": ix["spark"], "date": ix.get("date"), "asof": f'IDX {ix["date"][5:].replace("-", "/")} 종가'} if ix else None)
-    add_index("LQ45", "LQ45", "대형 45종목", ll, {"px": ix["lq45"]["px"], "prev": ix["lq45"]["prev"], "spark": ix["lq45"]["spark"], "date": ix.get("date"), "asof": "IDX 종가"} if ix and ix["lq45"] else None)
+    add_index("COMPOSITE", "IHSG", "자카르타 종합", jl, {"px": ix["px"], "prev": ix["prev"], "spark": ix["spark"], "date": ix.get("date"), "ts": ix.get("ts"), "high": ix.get("high"), "low": ix.get("low"), "asof": f'IDX {ix["date"][5:].replace("-", "/")} 종가'} if ix else None)
+    add_index("LQ45", "LQ45", "대형 45종목", ll, {"px": ix["lq45"]["px"], "prev": ix["lq45"]["prev"], "spark": ix["lq45"]["spark"], "date": ix.get("date"), "ts": ix.get("ts"), "asof": "IDX 종가"} if ix and ix["lq45"] else None)
     add_index("USDIDR", "USD/IDR", "달러/루피아", ul, {"px": usd["px"], "prev": usd["prev"], "asof": "Yahoo", "spark": usd.get("spark") or []} if usd else None, inv=True, dec=0)
     sc = sun10y_card(_IV.get("SUN10Y"))
     if sc: indices.append(sc)                         # 4번째 카드: 국채 10년물 (외국인 순매수 카드는 시장 현황 아래 '외국인 수급'으로 통합)
