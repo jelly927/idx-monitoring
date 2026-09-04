@@ -2074,9 +2074,9 @@ CAT_EVENTS = [
      r"direksi|komisaris|RUPS|pembebastugasan|mengundurkan diri|penunjukan direktur"),
 ]
 CAT_EVENTS = [(w, ko, idn, re.compile(rx, re.I)) for w, ko, idn, rx in CAT_EVENTS]
-CAT_W = {"news": 0.50, "size": 0.30, "liq": 0.20}     # Jay 지정 우선순위: 뉴스 > 시총 > 거래대금
+CAT_W = {"news": 0.40, "size": 0.30, "surge": 0.30}   # 뉴스 40 · 시가총액 30 · 거래대금 급증 30
 CAT_MCAP = (11.0, 15.0)      # log10(IDR) 정규화 구간 — Rp1,000억 ~ Rp1,000조
-CAT_VAL = (8.0, 12.5)        # log10(IDR) — Rp1억 ~ Rp3조
+CAT_SURGE = (1.0, 3.0)       # 20일 평균 대비 거래대금 배수: 1배=0점, 3배 이상=100점
 
 def _cat_norm(v, lo, hi):
     import math
@@ -2134,12 +2134,13 @@ def catalyst_block(data, top=10):
         news = c["w"] + (15 if len(c["outlets"]) >= 3 else 8 if len(c["outlets"]) == 2 else 0) + (10 if c["ann"] else 0)
         news = min(100.0, news)
         size = _cat_norm(o.get("mcap"), *CAT_MCAP)
-        liq = _cat_norm(o.get("val"), *CAT_VAL)
-        score = CAT_W["news"] * news + CAT_W["size"] * size + CAT_W["liq"] * liq
+        ratio = o.get("ratio") or 0
+        surge = max(0.0, min(1.0, (ratio - CAT_SURGE[0]) / (CAT_SURGE[1] - CAT_SURGE[0]))) * 100 if ratio else 0.0
+        score = CAT_W["news"] * news + CAT_W["size"] * size + CAT_W["surge"] * surge
         out.append({"t": t, "n": o.get("n"), "px": o.get("px"), "pct": o.get("pct"), "val": o.get("val"),
-                    "mcap": o.get("mcap"), "ev_ko": c["ko"], "ev_id": c["id"],
+                    "mcap": o.get("mcap"), "ratio": ratio, "ev_ko": c["ko"], "ev_id": c["id"],
                     "hl": (c["hl"] or "")[:160], "url": c["url"],
-                    "score": round(score, 1), "s_news": round(news), "s_size": round(size), "s_liq": round(liq),
+                    "score": round(score, 1), "s_news": round(news), "s_size": round(size), "s_surge": round(surge),
                     "srcs": len(c["outlets"])})
     out.sort(key=lambda x: -x["score"])
     return out[:top]
@@ -2463,6 +2464,12 @@ def build():
     except Exception as e: log("종목 AI 요약 오류", repr(e)[:120]); data["ai"] = {"stocks": {}}
     try: data["ai"]["index"] = ai_index(data)
     except Exception as e: log("지수 AI 요약 오류", repr(e)[:120])
+    try:
+        data["mcap"] = [{"t": r.get("t"), "n": r.get("n"), "px": r.get("px"), "pct": r.get("pct"),
+                         "val": r.get("val"), "ratio": r.get("ratio"), "fnet": r.get("fnet"), "mcap": r.get("mcap")}
+                        for r in sorted([x for x in (data.get("stocks") or []) if x.get("mcap")],
+                                        key=lambda x: -(x.get("mcap") or 0))[:10]]
+    except Exception as e: log("시가총액 랭킹 오류", repr(e)[:120]); data["mcap"] = []
     try:
         data["catalyst"] = catalyst_block(data)
         log(f"Catalyst {len(data['catalyst'])}종목" + (f" · 1위 {data['catalyst'][0]['t']} {data['catalyst'][0]['score']}점" if data["catalyst"] else ""))
