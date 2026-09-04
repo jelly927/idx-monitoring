@@ -2146,6 +2146,31 @@ def catalyst_block(data, top=10):
     return out[:top]
 
 AI_IDX_P = CACHE / "index_ai.json"
+IDX_HIST_P = CACHE / "index_hist.json"
+def _index_hist(data, keep=30):
+    """IHSG 일별 종가를 쌓아 최근 며칠 흐름을 만든다 — '며칠 올랐으니 차익실현' 판단의 근거.
+    빌드마다 오늘 종가를 갱신하고, 전일 종가(index.prev)도 비어 있으면 채운다."""
+    try: h = json.loads(IDX_HIST_P.read_text(encoding="utf-8"))
+    except Exception: h = {}
+    comp = next((x for x in (data.get("indices") or []) if x.get("code") == "COMPOSITE"), {})
+    today = (data.get("updated") or "")[:10]
+    if comp.get("px") and today: h[today] = round(float(comp["px"]), 2)
+    prev_close = comp.get("prev")
+    if prev_close:
+        past = sorted(d for d in h if d < today)
+        if not past or abs(h[past[-1]] - float(prev_close)) > 0.01:
+            d1 = (dt.date.fromisoformat(today) - dt.timedelta(days=1)).isoformat() if today else None
+            if d1 and d1 not in h: h[d1] = round(float(prev_close), 2)
+    h = dict(sorted(h.items())[-keep:])
+    try: IDX_HIST_P.write_text(json.dumps(h, ensure_ascii=False), encoding="utf-8")
+    except Exception: pass
+    ds = sorted(h)
+    out = []
+    for i in range(1, len(ds)):
+        a, b = h[ds[i - 1]], h[ds[i]]
+        if a: out.append({"날짜": ds[i], "종가": b, "등락%": round((b / a - 1) * 100, 2)})
+    return out[-6:]
+
 def _recent_ret(codes, days=6):
     """ss_YYYYMMDD.json(IDX 일별 요약)에서 종목별 최근 N거래일 누적 등락률을 뽑는다.
     '며칠 올랐으니 차익실현' 같은 판단의 근거로 쓴다. 파일이 없으면 빈 dict."""
@@ -2201,7 +2226,11 @@ def ai_index(data, ttl_min=30):
         "IHSG": {"현재": comp.get("px"), "전일종가": comp.get("prev"), "전일대비%": comp.get("pct"),
                   "장중고": i.get("high"), "장중저": i.get("low"), "YTD%": i.get("ytd"), "1개월%": i.get("m1")},
         "거래대금_IDR": i.get("value_idr"), "상승_하락_보합": [i.get("adv"), i.get("dec"), i.get("unch")],
-        "외국인순매수_IDR": i.get("foreign_net_idr"), "외국인기준일": i.get("foreign_date"),
+        "외국인수급": {"기준일": i.get("foreign_date"), "오늘날짜": (data.get("updated") or "")[:10],
+                       "순매수_IDR": i.get("foreign_net_idr"),
+                       "주의": "기준일이 오늘이 아니면 전일 확정치이므로 오늘 등락의 원인으로 쓰지 말 것. "
+                               "순매수/순매도 방향을 값의 부호로 반드시 확인할 것(음수=순매도)."},
+        "지수_최근흐름": _index_hist(data),
         "지수를_끌어내린_종목": drag, "지수를_끌어올린_종목": lift,
         "업종": [{"명": x.get("name"), "등락%": x.get("pct")} for x in (data.get("sectors") or [])],
         "해외지수": [{"명": g.get("name"), "등락%": g.get("pct")} for g in (data.get("global") or [])],
@@ -2210,23 +2239,26 @@ def ai_index(data, ttl_min=30):
         "종목뉴스": [f"{','.join(n.get('tags') or [])}: {n.get('t_id') or n.get('t')}" for n in (data.get("news") or [])[:20]],
     }
     prompt = (
-        "오늘 인도네시아 증시(IHSG) 데이터다. 지수가 왜 이렇게 움직였는지 한 문장으로 쓴다.\n\n"
-        "[작성 순서]\n"
-        "1. 지수를_끌어내린_종목 / 끌어올린_종목 과 업종 등락을 보고, 어느 업종·종목이 지수를 움직였는지 먼저 특정한다.\n"
-        "2. 그 다음 '왜 그 종목들이 움직였는지'를 아래 셋 중에서 찾는다.\n"
-        "   (a) 시장뉴스·종목뉴스에 나온 사건\n"
-        "   (b) 주가 흐름 — 최근5일누적% 가 크게 플러스인 종목이 오늘 하락했다면 차익실현 물량 출회로 본다\n"
-        "   (c) 해외지수·환율·금리 등 외부 변수\n"
-        "3. 위 데이터로 원인이 잡히지 않으면 구글 검색으로 오늘자 인도네시아 증시 관련 기사를 찾아 근거로 삼는다.\n\n"
-        "[금지] 지수 등락을 그 자체의 원인으로 쓰는 동어반복. 아래는 전부 틀린 문장이다.\n"
-        "  - '하락 종목 우위에 기인하여 하락'  - '대다수 업종 하락으로 지수 하락'  - '매도 우위로 약세 마감'\n"
-        "  이런 건 결과를 다시 말한 것일 뿐 원인이 아니다.\n\n"
+        "오늘 인도네시아 증시(IHSG)가 왜 이렇게 움직였는지 한 문장으로 쓴다.\n\n"
+        "[반드시 먼저 할 것] 구글 검색을 사용한다. 아래 같은 질의로 오늘자 기사를 찾아 원인을 확인한다.\n"
+        "  · \"IHSG hari ini turun kenapa\"  · \"IHSG melemah <오늘 날짜>\"  · \"오늘 IHSG 하락 이유\"\n"
+        "  Bloomberg Technoz·Kontan·CNBC Indonesia·Bisnis 기사에 그날의 원인이 정리돼 있다. 검색 결과가 1순위 근거다.\n\n"
+        "[검색으로도 안 잡히면] 아래 데이터에서 찾는다.\n"
+        "  1. 지수를_끌어내린_종목 / 끌어올린_종목 과 업종 등락으로 어느 업종·종목이 지수를 움직였는지 특정한다.\n"
+        "  2. 그 종목들이 왜 움직였는지를 (a) 종목뉴스·시장뉴스의 사건, "
+        "(b) 지수_최근흐름·최근5일누적% — 전일 급등했거나 며칠 올랐다면 차익실현 물량 출회, "
+        "(c) 해외지수·환율·금리 등 외부 변수 에서 찾는다.\n\n"
+        "[금지]\n"
+        "  · 지수 등락을 그 자체의 원인으로 쓰는 동어반복. '하락 종목 우위에 기인하여 하락', "
+        "'대다수 업종 하락으로 지수 하락', '매도 우위로 약세 마감' 은 전부 결과를 다시 말한 것이라 틀린 문장이다.\n"
+        "  · 외국인수급.기준일 이 오늘날짜와 다른데도 그 값을 오늘 원인으로 쓰는 것.\n  · 순매수/순매도를 반대로 쓰는 것. 값이 음수면 순매도다.\n"
+        "  · 데이터에 없는 수치를 지어내는 것.\n\n"
         "[좋은 예]\n"
-        "  - '전일 급등한 은행주(BBRI·BBCA·BMRI) 차익실현 물량 출회로 IHSG 0.41% 하락.'\n"
-        "  - '미 국채금리 상승에 따른 외국인 매도와 운송주 약세로 IHSG 0.41% 하락.'\n"
-        "  - '니켈 가격 반등에 따른 소재주 강세로 IHSG 0.35% 상승.'\n\n"
-        "[문체] 증권사 리포트체(명사형 종결), 90자 이내, 숫자는 천 단위 콤마. "
-        "추정형('~로 보인다') 금지, 근거 기반 표현('~ 영향', '~에 따른') 사용. 종목은 티커로 표기.\n"
+        "  · \"전일 1.09% 급등에 따른 차익실현 매물과 미국 8월 고용지표 발표 대기 관망세로 IHSG 0.47% 하락.\"\n"
+        "  · \"전일 급등한 은행주(BBRI·BBCA·BMRI) 차익실현 물량 출회로 IHSG 0.41% 하락.\"\n"
+        "  · \"니켈 가격 반등에 따른 소재주 강세로 IHSG 0.35% 상승.\"\n\n"
+        "[문체] 증권사 리포트체(명사형 종결), 100자 이내, 숫자는 천 단위 콤마. "
+        "추정형('~로 보인다') 금지, 근거 기반 표현('~ 영향', '~에 따른', '~ 대기') 사용. 종목은 티커로 표기.\n"
         "출력은 JSON 하나만: {\"ko\": \"한국어 한 문장\", \"id\": \"Bahasa Indonesia satu kalimat\"}\n\n"
         + json.dumps(ctx, ensure_ascii=False))
     j = _json_loads_loose(_gemini(prompt, 700, search=True))
