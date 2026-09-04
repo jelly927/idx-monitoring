@@ -12,6 +12,8 @@
 //   GEMINI_API_KEY  (Secret, 필수)  Gemini API 키. 절대 저장소·index.html 에 넣지 말 것 — 저장소는 공개다.
 //   CHAT_TOKEN      (Secret, 필수)  사내 접속 암구호. 미설정이면 /api/chat 은 503 으로 닫힌다.
 //   GEMINI_MODEL    (Variable, 선택) 기본 gemini-3.8-flash. 모델 교체 시 코드 수정 없이 여기만 바꾼다.
+//   GEMINI_THINKING (Variable, 선택) low / medium / high / off. 비워두면 gemini-3.8 계열에만 low 를 넣는다.
+//   QUOTA_MSG       (Variable, 선택) 할당량 초과(429) 때 화면에 뜨는 문구. 비워두면 기본 문구.
 //   GEMINI_BASE     (Variable, 선택) Gemini 호출 기지 주소. 기본은 구글 직통.
 //                   구글이 Cloudflare 데이터센터 IP 를 위치 미지원으로 막을 때(400 "not available in your
 //                   current location") Cloudflare AI Gateway 주소를 넣으면 우회된다:
@@ -28,6 +30,8 @@ const ALLOW = ["query1.finance.yahoo.com", "query2.finance.yahoo.com", "www.idx.
 
 // 챗봇 입력 상한 — 비용·남용 방어
 const MAX_Q = 1000, MAX_TURNS = 8, MAX_HIST_CHARS = 4000, MAX_STOCKS = 40, TOP_STOCKS = 30;
+// gemini-3.8-flash 는 사고형 모델이라 thought 토큰이 출력 예산을 함께 쓴다 — 넉넉히 잡아야 빈 응답이 안 난다
+const MAX_OUT = 8192;
 
 const CORS = { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET,POST,OPTIONS", "Access-Control-Allow-Headers": "Content-Type,x-chat-token" };
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { "Content-Type": TYPES.json, ...CORS } });
@@ -149,6 +153,16 @@ function sysPrompt(ctx, lang) {
   return rules.join("\n");
 }
 
+// thinking_level 은 사고형 모델에만 넣는다. GEMINI_THINKING 이 "off" 면 어떤 모델에도 넣지 않는다.
+function genCfg(env, model) {
+  const g = { max_output_tokens: MAX_OUT };
+  const want = (env && env.GEMINI_THINKING) || "";
+  if (want === "off") return g;
+  if (want) { g.thinking_level = want; return g; }
+  if (/^gemini-3\.8/.test(model)) g.thinking_level = "low";
+  return g;
+}
+
 function outputText(j) {
   const steps = (j && j.steps) || [];
   let out = "";
@@ -164,7 +178,7 @@ async function diag(req, env) {
   const gate = env && env.CHAT_TOKEN;
   if (!gate) return json({ error: "CHAT_TOKEN 미설정" }, 503);
   const u = new URL(req.url);
-  if ((req.headers.get("x-chat-token") || u.searchParams.get("token") || "") !== gate) return json({ error: "접속 암구호가 맞지 않습니다." }, 401);
+  if ((req.headers.get("x-chat-token") || u.searchParams.get("token") || "").trim() !== gate.trim()) return json({ error: "접속 암구호가 맞지 않습니다." }, 401);
 
   const cf = req.cf || {};
   const base = ((env && env.GEMINI_BASE) || GEMINI_HOST).replace(/\/+$/, "");
@@ -177,11 +191,15 @@ async function diag(req, env) {
     const r = await fetch(base + GEMINI_PATH, {
       method: "POST",
       headers: { "x-goog-api-key": env.GEMINI_API_KEY || "", "Content-Type": "application/json" },
-      body: JSON.stringify({ model: out.model, input: "ping", generation_config: { max_output_tokens: 16 }, store: false }),
+      body: JSON.stringify({ model: out.model, input: "한 단어로만 답하세요: 안녕", generation_config: genCfg(env, out.model), store: false }),
     });
     const t = await r.text();
     out.gemini_status = r.status;
-    out.gemini_body = t.slice(0, 400);
+    if (!r.ok) { out.gemini_body = t.slice(0, 600); }   // 실패면 원문을 그대로 보여준다 (원인이 여기 들어있다)
+    else {
+      try { const j = JSON.parse(t); out.gemini_reply = outputText(j); out.gemini_state = j.status; out.gemini_usage = j.usage || null; }
+      catch { out.gemini_body = t.slice(0, 300); }
+    }
   } catch (e) { out.gemini_error = String(e && e.message || e); }
   const ctx = await ctxRaw();
   out.context_ok = !!ctx; out.context_updated = ctx && ctx.updated;
@@ -193,8 +211,8 @@ async function chat(req, env) {
   if (!gate) return json({ error: "CHAT_TOKEN 미설정 — 챗봇이 잠겨 있습니다. Cloudflare Worker 설정에서 CHAT_TOKEN 을 등록하세요." }, 503);
   if (!key) return json({ error: "GEMINI_API_KEY 미설정 — Cloudflare Worker Secret 에 등록하세요." }, 503);
 
-  const given = req.headers.get("x-chat-token") || "";
-  if (given !== gate) return json({ error: "접속 암구호가 맞지 않습니다." }, 401);
+  const given = (req.headers.get("x-chat-token") || "").trim();
+  if (given !== gate.trim()) return json({ error: "접속 암구호가 맞지 않습니다." }, 401);
 
   let b; try { b = await req.json(); } catch { return json({ error: "JSON 본문이 아닙니다." }, 400); }
   const q = String(b.q || "").trim();
@@ -220,12 +238,20 @@ async function chat(req, env) {
       model,
       input: (histText ? `[이전 대화]\n${histText}\n\n` : "") + `[질문]\n${q}`,
       system_instruction: sysPrompt(ctx, lang),
-      generation_config: { max_output_tokens: 2048 },
+      generation_config: genCfg(env, model),
       store: false,          // 대화를 구글 쪽에 남기지 않는다 (사내 데이터)
     }),
   });
 
   const raw = await r.text();
+  if (r.status === 429) {
+    return json({
+      error: (env && env.QUOTA_MSG) || (lang === "id"
+        ? "Kuota AI gratis hari ini sudah habis.\n\nMr. Jay, mohon aktifkan pembayaran 🙏\n\n— Batas free tier Gemini API tercapai. Pulih otomatis setelah akun penagihan ditautkan."
+        : "오늘 무료 사용량을 모두 썼습니다.\n\nMr. Jay, 결제 부탁드립니다 🙏\n\n— Gemini API 무료 등급 한도 소진. 결제 계정을 연결하면 즉시 복구됩니다."),
+      quota_exceeded: true, model, detail: raw.slice(0, 300),
+    }, 429);
+  }
   if (!r.ok) {
     const geo = r.status === 400 && /not available in your current location/i.test(raw);
     return json({
@@ -238,7 +264,15 @@ async function chat(req, env) {
 
   let j; try { j = JSON.parse(raw); } catch { return json({ error: "Gemini 응답 파싱 실패", detail: raw.slice(0, 300) }, 502); }
   const text = outputText(j);
-  if (!text) return json({ error: "빈 응답", status: j.status, detail: raw.slice(0, 400) }, 502);
+  if (!text) {
+    const th = (j.usage && j.usage.total_thought_tokens) || 0;
+    return json({
+      error: j.status === "incomplete"
+        ? `답변이 생성되기 전에 출력 한도(${MAX_OUT})에 걸렸습니다. 질문을 좁히거나 GEMINI_THINKING 을 low 로 두세요.`
+        : "빈 응답",
+      status: j.status, thought_tokens: th, usage: j.usage || null,
+    }, 502);
+  }
 
   return json({
     text,
