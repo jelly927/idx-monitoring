@@ -32,6 +32,9 @@ jobs:
         env:
           TZ: Asia/Jakarta
           IDX_PROXY: ${{ vars.IDX_PROXY }}      # (선택) 러너 IP 가 IDX 에 막히면 Cloudflare Worker 주소를 Variables 에 등록
+      - name: chat context
+        run: python make_chat_context.py
+        env: { TZ: Asia/Jakarta }
       - name: commit data
         run: |
           git config user.name idx-live-bot && git config user.email bot@users.noreply.github.com
