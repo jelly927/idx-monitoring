@@ -699,5 +699,131 @@ setInterval(()=>{left--;if(left<=0)load();$('countdown').textContent=left;},1000
 load().then(liveLoop);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTimeout(liveTimer);liveLoop();}});
 </script>
+<!-- ── AI 챗봇 위젯 (Gemini) ─────────────────────────────────────────── -->
+<style>
+#gchatFab{position:fixed;right:22px;bottom:22px;z-index:9998;width:52px;height:52px;border-radius:50%;border:0;
+  background:var(--brand);color:#fff;font-size:20px;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.22);line-height:1}
+#gchatFab:hover{filter:brightness(1.08)}
+#gchatPanel{position:fixed;right:22px;bottom:86px;z-index:9999;width:400px;max-width:calc(100vw - 44px);height:min(560px,calc(100vh - 130px));
+  display:none;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:0 14px 44px rgba(0,0,0,.24);overflow:hidden}
+#gchatPanel.on{display:flex}
+#gchatHead{display:flex;align-items:center;gap:8px;padding:11px 13px;border-bottom:1px solid var(--line);background:var(--brand2)}
+#gchatHead b{font-size:13px;color:var(--ink)}
+#gchatHead .sub{font-size:11px;color:var(--ink2);margin-left:auto}
+#gchatHead button{border:0;background:none;color:var(--ink2);font-size:17px;cursor:pointer;padding:0 2px}
+#gchatBody{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:9px;background:var(--bg)}
+.gcMsg{max-width:88%;padding:8px 11px;border-radius:11px;font-size:12.5px;line-height:1.62;white-space:pre-wrap;word-break:break-word}
+.gcMsg.u{align-self:flex-end;background:var(--brand);color:#fff;border-bottom-right-radius:3px}
+.gcMsg.a{align-self:flex-start;background:var(--card);color:var(--ink);border:1px solid var(--line);border-bottom-left-radius:3px}
+.gcMsg.e{align-self:stretch;background:var(--dnbg);color:var(--dn);border:1px solid var(--line);font-size:12px}
+.gcMeta{align-self:flex-start;font-size:10.5px;color:var(--ink3);margin-top:-4px}
+#gchatFoot{border-top:1px solid var(--line);padding:9px;background:var(--card)}
+#gchatForm{display:flex;gap:7px}
+#gchatIn{flex:1;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:9px;padding:8px 10px;font-size:12.5px;font-family:inherit;resize:none;height:38px;max-height:96px}
+#gchatIn:focus{outline:1px solid var(--brand)}
+#gchatSend{border:0;background:var(--brand);color:#fff;border-radius:9px;padding:0 15px;font-size:12.5px;cursor:pointer}
+#gchatSend:disabled{opacity:.5;cursor:default}
+#gchatTok{display:flex;gap:7px;margin-bottom:7px}
+#gchatTok input{flex:1;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:9px;padding:7px 10px;font-size:12px}
+#gchatTok button{border:0;background:var(--chip);color:var(--ink);border-radius:9px;padding:0 12px;font-size:12px;cursor:pointer}
+#gchatHint{font-size:10.5px;color:var(--ink3);padding:5px 2px 0}
+.gcChips{display:flex;flex-wrap:wrap;gap:6px;padding:2px 0 4px}
+.gcChips button{border:1px solid var(--line);background:var(--card);color:var(--ink2);border-radius:999px;padding:5px 10px;font-size:11px;cursor:pointer}
+.gcChips button:hover{border-color:var(--brand);color:var(--brand)}
+</style>
+<button id="gchatFab" title="AI 시장 어시스턴트">AI</button>
+<div id="gchatPanel" role="dialog" aria-label="AI 시장 어시스턴트">
+  <div id="gchatHead"><b id="gchatTitle">AI 시장 어시스턴트</b><span class="sub" id="gchatSub"></span><button id="gchatX" aria-label="닫기">&times;</button></div>
+  <div id="gchatBody"></div>
+  <div id="gchatFoot">
+    <div id="gchatTok"><input id="gchatTokIn" type="password" placeholder="접속 암구호" autocomplete="off"><button id="gchatTokBtn">확인</button></div>
+    <div class="gcChips" id="gchatChips"></div>
+    <form id="gchatForm"><textarea id="gchatIn" rows="1" placeholder="예: 오늘 IHSG 왜 빠졌어?"></textarea><button id="gchatSend" type="submit">전송</button></form>
+    <div id="gchatHint"></div>
+  </div>
+</div>
+<script>
+(function(){
+  var L = (typeof LANG !== 'undefined' ? LANG : 'ko');
+  var T = {
+    ko:{title:'AI 시장 어시스턴트', ph:'예: 오늘 IHSG 왜 빠졌어?', send:'전송', tok:'접속 암구호', ok:'확인',
+        hint:'IDX Live 화면 데이터만 근거로 답합니다 · 투자 권유 아님',
+        need:'사내 접속 암구호를 입력하세요.', wait:'생각 중…', err:'오류: ',
+        chips:['오늘 시장 한 줄 요약','거래대금 상위 5종목','외국인 순매수 상하위','오늘 주요 일정','BBCA 오늘 어때?']},
+    id:{title:'Asisten Pasar AI', ph:'Cth: Kenapa IHSG turun hari ini?', send:'Kirim', tok:'Kata sandi', ok:'OK',
+        hint:'Hanya berdasarkan data IDX Live · Bukan rekomendasi investasi',
+        need:'Masukkan kata sandi internal.', wait:'Sedang berpikir…', err:'Error: ',
+        chips:['Ringkasan pasar hari ini','5 saham nilai transaksi teratas','Net asing tertinggi & terendah','Agenda penting hari ini','Bagaimana BBCA hari ini?']}
+  }[L === 'id' ? 'id' : 'ko'];
+
+  var $ = function(id){ return document.getElementById(id); };
+  var panel = $('gchatPanel'), body = $('gchatBody'), form = $('gchatForm'), input = $('gchatIn'), send = $('gchatSend');
+  var hist = [], busy = false, token = '';
+  try { token = localStorage.getItem('idxlive_chat_token') || ''; } catch(e){}
+
+  $('gchatTitle').textContent = T.title; input.placeholder = T.ph; send.textContent = T.send;
+  $('gchatTokIn').placeholder = T.tok; $('gchatTokBtn').textContent = T.ok; $('gchatHint').textContent = T.hint;
+
+  function tokUI(){ $('gchatTok').style.display = token ? 'none' : 'flex'; }
+  tokUI();
+  if (token) $('gchatTokIn').value = token;
+
+  T.chips.forEach(function(c){
+    var b = document.createElement('button'); b.type = 'button'; b.textContent = c;
+    b.onclick = function(){ input.value = c; form.requestSubmit(); };
+    $('gchatChips').appendChild(b);
+  });
+
+  function add(cls, text){
+    var d = document.createElement('div'); d.className = 'gcMsg ' + cls; d.textContent = text;
+    body.appendChild(d); body.scrollTop = body.scrollHeight; return d;
+  }
+  function meta(text){
+    var d = document.createElement('div'); d.className = 'gcMeta'; d.textContent = text;
+    body.appendChild(d); body.scrollTop = body.scrollHeight;
+  }
+
+  $('gchatFab').onclick = function(){ panel.classList.toggle('on'); if (panel.classList.contains('on')) input.focus(); };
+  $('gchatX').onclick = function(){ panel.classList.remove('on'); };
+  $('gchatTokBtn').onclick = function(){
+    token = $('gchatTokIn').value.trim();
+    try { localStorage.setItem('idxlive_chat_token', token); } catch(e){}
+    tokUI(); input.focus();
+  };
+  input.addEventListener('keydown', function(e){
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = input.value.trim();
+    if (!q || busy) return;
+    if (!token) { $('gchatTok').style.display = 'flex'; add('e', T.need); return; }
+    input.value = ''; add('u', q);
+    busy = true; send.disabled = true;
+    var w = add('a', T.wait);
+
+    fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-chat-token': token },
+      body: JSON.stringify({ q: q, lang: L, history: hist.slice(-8) })
+    }).then(function(r){ return r.json().then(function(j){ return { ok: r.ok, j: j }; }); })
+      .then(function(res){
+        if (!res.ok || res.j.error) {
+          w.className = 'gcMsg e';
+          w.textContent = T.err + (res.j.error || 'unknown') + (res.j.detail ? '\n' + res.j.detail : '');
+          return;
+        }
+        w.textContent = res.j.text;
+        hist.push({ role: 'user', text: q }); hist.push({ role: 'model', text: res.j.text });
+        meta((res.j.model || '') + ' · ' + (res.j.updated || '') + ' WIB' + (res.j.delay_min ? ' · ' + res.j.delay_min + '분 지연' : ''));
+      })
+      .catch(function(err){ w.className = 'gcMsg e'; w.textContent = T.err + err; })
+      .then(function(){ busy = false; send.disabled = false; input.focus(); });
+  });
+})();
+</script>
+<!-- ── /AI 챗봇 위젯 ─────────────────────────────────────────────────── -->
 </body>
 </html>
