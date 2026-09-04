@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 21:39",
+ "updated": "2026-09-04 21:53",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,346 · 21:06 Yahoo",
- "idr_per_krw": 13.1,
+ "fx_basis": "13.09 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,347 · 21:06 Yahoo",
+ "idr_per_krw": 13.0929,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7726.32,
+   "px": 7715.38,
    "prev": 7747.8,
-   "pct": -0.28,
-   "asof": "21:35",
+   "pct": -0.42,
+   "asof": "21:50",
    "live": true,
    "spark": [
     7743.86,
@@ -15098,17 +15098,20 @@
     7726.64,
     7728.01,
     7724.03,
-    7726.32
+    7727.09,
+    7718.89,
+    7713.91,
+    7715.38
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26540.87,
+   "px": 26494.05,
    "prev": 26584.06,
-   "pct": -0.16,
-   "asof": "21:35",
+   "pct": -0.34,
+   "asof": "21:50",
    "live": true,
    "spark": [
     26609.51,
@@ -15124,17 +15127,20 @@
     26551.93,
     26556.21,
     26522.56,
-    26540.87
+    26543.0,
+    26507.42,
+    26492.44,
+    26494.05
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53415.94,
+   "px": 53356.77,
    "prev": 53687.54,
-   "pct": -0.51,
-   "asof": "21:35",
+   "pct": -0.62,
+   "asof": "21:50",
    "live": true,
    "spark": [
     53577.29,
@@ -15150,7 +15156,10 @@
     53404.63,
     53406.23,
     53426.76,
-    53415.94
+    53434.71,
+    53398.18,
+    53347.06,
+    53356.77
    ]
   },
   {
@@ -15914,20 +15923,6 @@
    "t_id": "BGN Bakal Pindah ke Gedung Telkom, Bayar Sewa tapi Disebut Tak Mahal"
   },
   {
-   "ts": "2026-09-04T12:58:49+07:00",
-   "date": "2026-09-04",
-   "time": "12:58",
-   "src": "Detik",
-   "t": "Balik Arah dari Rugi, ID FOOD Cetak Laba Rp 1,34 T",
-   "tags": [
-    "FOOD"
-   ],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648193/balik-arah-dari-rugi-id-food-cetak-laba-rp-1-34-t",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/id-food-1788501238663_169.jpeg?w=360&q=90",
-   "t_ko": "ID FOOD 적자에서 흑자 전환 — 순이익 Rp1.34조",
-   "t_id": "Balik Arah dari Rugi, ID FOOD Cetak Laba Rp 1,34 T"
-  },
-  {
    "ts": "2026-09-04T12:50:00+07:00",
    "date": "2026-09-04",
    "time": "12:50",
@@ -16446,9 +16441,21 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-04T21:38:24.178496+07:00",
+   "ts": "2026-09-04T21:47:09+07:00",
    "date": "2026-09-04",
-   "time": "21:38",
+   "time": "21:47",
+   "src": "Detik",
+   "t": "Daya Listrik KRL Green Line Bakal Ditambah Tahun Depan",
+   "tags": [],
+   "url": "https://finance.detik.com/infrastruktur/d-8649142/daya-listrik-krl-green-line-bakal-ditambah-tahun-depan",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/06/elektrifikasi-krl-green-line-ditarget-rampung-2027-1783314914661_169.jpeg?w=360&q=90",
+   "t_ko": "그린 라인 KRL 전력은 내년에 추가됩니다",
+   "t_id": "Daya Listrik KRL Green Line Bakal Ditambah Tahun Depan"
+  },
+  {
+   "ts": "2026-09-04T21:46:33+07:00",
+   "date": "2026-09-04",
+   "time": "21:46",
    "src": "Jawa Pos",
    "t": "Bank Dunia Catat 183 Juta Penduduk Indonesia Miskin, Pakai Parameter USD 8,30",
    "tags": [],
@@ -16456,6 +16463,30 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2025/03/03/image-2-3-1-876074017.jpg",
    "t_ko": "세계은행, 인도네시아 빈곤층 1억 8,300만명 집계 — USD 8.30 기준 적용",
    "t_id": "Bank Dunia Catat 183 Juta Penduduk Indonesia Miskin, Pakai Parameter USD 8,30"
+  },
+  {
+   "ts": "2026-09-04T21:40:36+07:00",
+   "date": "2026-09-04",
+   "time": "21:40",
+   "src": "Detik",
+   "t": "Operasikan 2.991 Km Pipa Gas & 605 Km Pipa Minyak, Pertagas Genjot Pasokan Energi",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8649133/operasikan-2-991-km-pipa-gas-605-km-pipa-minyak-pertagas-genjot-pasokan-energi",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/pt-pertamina-gas-pertagas-1788532625229_169.jpeg?w=360&q=90",
+   "t_ko": "2,991km의 가스 파이프라인과 605km의 오일 파이프라인을 운영하여 Pertagas가 에너지 공급을 증대",
+   "t_id": "Operasikan 2.991 Km Pipa Gas & 605 Km Pipa Minyak, Pertagas Genjot Pasokan Energi"
+  },
+  {
+   "ts": "2026-09-04T21:39:00+07:00",
+   "date": "2026-09-04",
+   "time": "21:39",
+   "src": "Katadata",
+   "t": "Direksi TASPEN Kunjungi Langsung Pensiunan di Hari Pelanggan Nasional 2026",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/korporasi/6a9ad824e57e9/direksi-taspen-kunjungi-langsung-pensiunan-di-hari-pelanggan-nasional-2026",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/TASPEN_di_Harpelnas_2026-2026_09_04-21_34_06_6a8faf5d31c2af51aab0ece7fab99432_620x413_thumb.jpeg",
+   "t_id": "Direksi TASPEN Kunjungi Langsung Pensiunan di Hari Pelanggan Nasional 2026",
+   "t_ko": "TASPEN 이사, 2026년 전국 고객의 날에 연금 수령자를 직접 방문"
   },
   {
    "ts": "2026-09-04T21:33:00+07:00",
@@ -16477,8 +16508,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609040382/angsuran-lebih-ringan-btn-nilai-kpr-tenor-40-tahun-jadi-solusi-pembeli-rumah-pertama",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/direktur-utama-pt-bank-tabungan-negara-btn-nixon-lp-napitupulu-saat-ditemui-usai-rapat-umum-pemegang-saham-luar-biasa-rupslb-di-kantor-pusat-btn-jakarta-jumat-49-djati-waluyojawaposcom-MXB1j.webp",
-   "t_id": "Angsuran Lebih Ringan, BTN Nilai KPR Tenor 40 Tahun Jadi Solusi Pembeli Rumah Pertama",
-   "t_ko": "더 가벼운 할부, BTN 가치 KPR Tenor 40년, 첫 주택 구매자를 위한 솔루션이 됨"
+   "t_ko": "더 가벼운 할부, BTN 가치 KPR Tenor 40년, 첫 주택 구매자를 위한 솔루션이 됨",
+   "t_id": "Angsuran Lebih Ringan, BTN Nilai KPR Tenor 40 Tahun Jadi Solusi Pembeli Rumah Pertama"
   },
   {
    "ts": "2026-09-04T21:29:00+07:00",
@@ -16489,8 +16520,8 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/keuangan/6a9ad5d217de0/hari-pelanggan-nasional-2026-direksi-dan-komisaris-bni-sapa-langsung-nasabah",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/BNI_di_Hari_Pelanggan_Nasional_2026-2026_09_04-21_25_55_2c5a376e136a9a481465933381d82d22_620x413_thumb.jpeg",
-   "t_id": "Hari Pelanggan Nasional 2026, Direksi dan Komisaris BNI Sapa Langsung Nasabah",
-   "t_ko": "2026년 전국 고객의 날, BNI 이사 및 위원이 고객에게 직접 인사"
+   "t_ko": "2026년 전국 고객의 날, BNI 이사 및 위원이 고객에게 직접 인사",
+   "t_id": "Hari Pelanggan Nasional 2026, Direksi dan Komisaris BNI Sapa Langsung Nasabah"
   },
   {
    "ts": "2026-09-04T21:26:50+07:00",
@@ -16501,8 +16532,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609040380/rekomendasi-layanan-top-up-e-wallet-murah-dan-cepat-bebas-ribet",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/penggunaan-e-wallet-atau-e-wallet-seperti-gopay-ovo-dana-dan-shopeepay-semakin-melekat-dalam-aktivitas-sehari-hari-eQvvI.webp",
-   "t_id": "Rekomendasi Layanan Top Up E-Wallet Murah dan Cepat, Bebas Ribet",
-   "t_ko": "저렴하고 빠른 전자지갑 충전 서비스 추천, 번거로움 없음"
+   "t_ko": "저렴하고 빠른 전자지갑 충전 서비스 추천, 번거로움 없음",
+   "t_id": "Rekomendasi Layanan Top Up E-Wallet Murah dan Cepat, Bebas Ribet"
   },
   {
    "ts": "2026-09-04T21:20:05+07:00",
@@ -16645,28 +16676,6 @@
    "t_id": "Prabowo Dorong Danantara- RDIF Rusia Gaspol Kerja Sama Proyek Strategis"
   },
   {
-   "ts": "2026-09-04T20:39:00+07:00",
-   "date": "2026-09-04",
-   "time": "20:39",
-   "src": "Media Indonesia",
-   "t": "Pabrik BYD di Subang Resmi Beroperasi, DPR: Bukti Hilirisasi dan Momentum Percepat Transisi Energi",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929865/pabrik-byd-di-subang-resmi-beroperasi-dpr-bukti-hilirisasi-dan-momentum-percepat-transisi-energi",
-   "t_ko": "수방의 BYD 공장 공식 가동, DPR: 에너지 전환을 가속화하기 위한 다운스트림 및 모멘텀의 증거",
-   "t_id": "Pabrik BYD di Subang Resmi Beroperasi, DPR: Bukti Hilirisasi dan Momentum Percepat Transisi Energi"
-  },
-  {
-   "ts": "2026-09-04T20:38:00+07:00",
-   "date": "2026-09-04",
-   "time": "20:38",
-   "src": "Media Indonesia",
-   "t": "Menkop: Perpres KDKMP Segera Terbit Perjelas Tugas dan Fungsi Koperasi",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929868/menkop-perpres-kdkmp-segera-terbit-perjelas-tugas-dan-fungsi-koperasi",
-   "t_ko": "협동조합 장관: 협동조합의 의무와 기능을 명확히 하기 위한 KDKMP 대통령령이 곧 발표될 예정입니다",
-   "t_id": "Menkop: Perpres KDKMP Segera Terbit Perjelas Tugas dan Fungsi Koperasi"
-  },
-  {
    "ts": "2026-09-04T20:34:20+07:00",
    "date": "2026-09-04",
    "time": "20:34",
@@ -16707,12 +16716,12 @@
    "date": "2026-09-04",
    "time": "20:28",
    "src": "Republika",
-   "t": "Aset Negara di Blok Rokan Perlu Dijaga, Sinergi Pusat dan Daerah Jadi Kunci",
+   "t": "Aset Negara di Blok Rokan Perlu Dijaga, Sinergi Jadi Kunci",
    "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tkudg8416/aset-negara-di-blok-rokan-perlu-dijaga-sinergi-pusat-dan-daerah-jadi-kunci",
+   "url": "https://ekonomi.republika.co.id/berita/tkudg8416/aset-negara-di-blok-rokan-perlu-dijaga-sinergi-jadi-kunci",
    "img": "https://static.republika.co.id/uploads/images/detailnews/pekerja-melakukan-pengecekan-pompa-angguk-yang-beroperasi-di-lapangan_220819131544-472.jpg",
-   "t_ko": "Rokan 블록의 국가 자산을 보호해야 하며 중앙 및 지역 시너지가 핵심입니다.",
-   "t_id": "Aset Negara di Blok Rokan Perlu Dijaga, Sinergi Pusat dan Daerah Jadi Kunci"
+   "t_id": "Aset Negara di Blok Rokan Perlu Dijaga, Sinergi Jadi Kunci",
+   "t_ko": "Rokan 블록의 국가 자산을 보호해야 하며 시너지가 핵심입니다."
   },
   {
    "ts": "2026-09-04T20:23:44+07:00",
@@ -16785,18 +16794,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/spbu-pertamina-1788526000789_169.jpeg?w=360&q=90",
    "t_ko": "Pertamina 제재 대상 주유소 161곳!",
    "t_id": "161 SPBU Kena Sanksi Pertamina!"
-  },
-  {
-   "ts": "2026-09-04T19:35:49+07:00",
-   "date": "2026-09-04",
-   "time": "19:35",
-   "src": "Republika",
-   "t": "Hari Pelanggan Nasional 2026, bank bjb Hadir untuk Layanan yang Setara dan Berkelanjutan",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tkuaf5416/hari-pelanggan-nasional-2026-bank-bjb-hadir-untuk-layanan-yang-setara-dan-berkelanjutan",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/bank-bjb-menghadirkan-layanan-setara-dan-berkelanjutan-dalam-peringatan_260904193526-130.jpeg",
-   "t_ko": "2026년 전국 고객의 날, 평등하고 지속 가능한 서비스를 위한 은행 BJB 선물",
-   "t_id": "Hari Pelanggan Nasional 2026, bank bjb Hadir untuk Layanan yang Setara dan Berkelanjutan"
   }
  ],
  "kisi_news": [
@@ -16980,9 +16977,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.768%",
-   "d": 0.13,
-   "ytd": 14.53,
+   "v": "4.766%",
+   "d": 0.08,
+   "ytd": 14.48,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17003,9 +17000,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.13",
-   "d": 0.07,
-   "ytd": 0.86,
+   "v": "99.09",
+   "d": 0.03,
+   "ytd": 0.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17015,9 +17012,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "89.46",
-   "d": -2.78,
-   "ytd": 55.8,
+   "v": "90.27",
+   "d": -1.9,
+   "ytd": 57.21,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17027,9 +17024,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,479.8",
-   "d": -0.75,
-   "ytd": 3.56,
+   "v": "4,478.8",
+   "d": -0.78,
+   "ytd": 3.54,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17051,9 +17048,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,794",
-   "d": 0.09,
-   "ytd": 0.67,
+   "v": "16,789",
+   "d": 0.06,
+   "ytd": 0.64,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24001,7 +23998,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-04 18:22",
-  "pc_age_min": 197,
+  "pc_age_min": 211,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
