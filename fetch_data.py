@@ -914,9 +914,16 @@ def ylive(sym):
         last_ts = c.index[-1].tz_convert(WIB) if c.index.tz is not None else c.index[-1].tz_localize("UTC").tz_convert(WIB)
         today = now_wib().date()
         todays = c[c.index.tz_convert(WIB).date == today] if c.index.tz is not None else c
-        d = t.history(period="5d", interval="1d")["Close"].dropna()
-        prev = float(d.iloc[-2]) if len(d) >= 2 and last_ts.date() == today else float(d.iloc[-1])
         if last_ts.date() != today: return None          # 오늘 틱이 없으면 라이브 아님
+        prev = None
+        try:
+            pc = float(t.fast_info["previousClose"]); prev = pc if pc > 0 else None
+        except Exception: pass
+        if prev is None:                                  # 폴백: 일봉에서 '오늘보다 앞선 마지막 날' (위치가 아니라 날짜로)
+            d = t.history(period="7d", interval="1d")["Close"].dropna()
+            di = d.index.tz_convert(WIB) if d.index.tz is not None else d.index
+            dd = d[[x.date() < today for x in di]]
+            prev = float(dd.iloc[-1]) if len(dd) else float(d.iloc[-1])
         return {"px": float(c.iloc[-1]), "prev": prev, "ts": last_ts.strftime("%H:%M"),
                 "spark": [round(float(v), 2) for v in todays.tolist()][-120:], "high": float(todays.max()), "low": float(todays.min())}
     except Exception as e:
@@ -990,7 +997,7 @@ def macro_block(bi):
     spec = {k: (lab, fmt, inv, note) for k, _, lab, fmt, inv, note in INV_QUOTES}
     irow("UST10Y", *spec["UST10Y"])
     out.append({"k": "BI Rate (7D RR)", "v": f'{m["bi_rate"]:.2f}%' if m.get("bi_rate") else "확인 필요", "d": None, "ytd": None, "note": m.get("bi_note")})
-    for key in ("DXY", "WTI", "BRENT", "GOLD", "COAL", "NICKEL", "TIN", "CPO"): irow(key, *spec[key])
+    for key in ("DXY", "WTI", "GOLD", "COAL", "NICKEL", "CPO"): irow(key, *spec[key])
     if bi and bi.get("cds5y"): out.append({"k": "CDS 5Y (bps)", "v": f'{bi["cds5y"]:.2f}', "d": None, "ytd": None, "inv": True, "note": "BI 보도자료"})
     if bi and bi.get("nonres_week"):
         w = bi["nonres_week"]; out.append({"k": f'비거주자 주간 순매수 ({w["period"]})', "v": f'{w["total"]/1e12:+.2f}조', "d": None, "ytd": None, "note": w["text"]})
@@ -1504,28 +1511,30 @@ def _ev_tags(title):
 GLOBAL_IDX = [("^GSPC", "S&P 500", "S&P500"), ("^IXIC", "나스닥", "Nasdaq"), ("^DJI", "다우", "Dow Jones"),
               ("^KS11", "코스피", "KOSPI"), ("^N225", "니케이 225", "Nikkei 225"), ("^HSI", "항셍", "Hang Seng")]   # 6개 = 3열×2행 고정
 def global_indices():
-    """주요 해외 지수: Yahoo 5일 일봉 + 당일 1분봉(있으면). 미국은 전일 마감, 아시아는 장중이면 실시간(15분 지연)."""
+    """주요 해외 지수: 현재가·전일종가는 Yahoo fast_info(신뢰도 높음), 5분봉은 스파크와 장중 여부 판정용."""
     if yf is None: return []
     out = []
     for sym, ko, en in GLOBAL_IDX:
         try:
-            t = yf.Ticker(sym)
-            d = t.history(period="7d", interval="1d", auto_adjust=False)["Close"].dropna()
-            if len(d) < 2: continue
-            last_d = d.index[-1]; last_date = (last_d.tz_convert(WIB) if last_d.tzinfo else last_d).date()
-            px, prev = float(d.iloc[-1]), float(d.iloc[-2]); ts = f"{last_date:%m/%d} 종가"; spark = []; live = False
+            t = yf.Ticker(sym); fi = t.fast_info
+            px, prev = float(fi["lastPrice"]), float(fi["previousClose"])
+            if not (px > 0 and prev > 0): continue
+            spark = []; live = False; ts = ""
             try:
                 h = t.history(period="1d", interval="5m")["Close"].dropna()
-                if len(h) >= 3:
+                if len(h):
                     ht = h.index[-1]; ht = (ht.tz_convert(WIB) if ht.tzinfo else ht.tz_localize("UTC").tz_convert(WIB))
-                    if ht.date() > last_date or (ht.date() == last_date and ht.date() == now_wib().date()):   # 5분봉이 일봉보다 최신(당일)
-                        px = float(h.iloc[-1]); prev = float(d.iloc[-1]) if ht.date() > last_date else float(d.iloc[-2])
-                        if (now_wib() - ht).total_seconds() < 3 * 3600: ts = ht.strftime("%H:%M"); live = True      # 3시간 이내 틱이면 장중
-                        else: ts = f"{ht.date():%m/%d} 종가"
+                    live = (now_wib() - ht).total_seconds() < 3 * 3600
+                    ts = ht.strftime("%H:%M") if live else f"{ht.date():%m/%d} 종가"
+                    if live: px = float(h.iloc[-1])
                     spark = [round(float(v), 2) for v in h.tolist()][-80:]
-                if not spark: spark = [round(float(v), 2) for v in d.tolist()]
-            except Exception: spark = [round(float(v), 2) for v in d.tolist()]
-            out.append({"sym": sym, "name": ko, "name_id": en, "px": round(px, 2), "prev": round(prev, 2), "pct": round((px / prev - 1) * 100, 2), "asof": ts, "live": live, "spark": spark})
+            except Exception: pass
+            if not spark:
+                try:
+                    d = t.history(period="7d", interval="1d", auto_adjust=False)["Close"].dropna(); spark = [round(float(v), 2) for v in d.tolist()]
+                    if not ts and len(d): ld = d.index[-1]; ts = f"{(ld.tz_convert(WIB) if ld.tzinfo else ld).date():%m/%d} 종가"
+                except Exception: pass
+            out.append({"sym": sym, "name": ko, "name_id": en, "px": round(px, 2), "prev": round(prev, 2), "pct": round((px / prev - 1) * 100, 2), "asof": ts or "종가", "live": live, "spark": spark})
         except Exception as e:
             log("global idx fail", sym, str(e)[:60])
     return out
@@ -1660,8 +1669,8 @@ INV_QUOTES = [   # key, path, 표시명, 포맷, inv(상승=빨강), 단위 메�
     ("TIN", "/commodities/tin", "주석 LME (US$/t)", "{:,.0f}", False, ""),
     ("CPO", "/commodities/palm-oil", "CPO (MYR/t)", "{:,.0f}", False, "Bursa Malaysia FCPO 근월물"),
 ]
-INV_YAHOO = {"UST10Y": "^TNX", "DXY": "DX-Y.NYB", "WTI": "CL=F", "BRENT": "BZ=F", "GOLD": "GC=F"}   # Yahoo 15분 지연으로 대체 가능한 항목
-INV_ROTATE = ["COAL", "NICKEL", "TIN", "CPO"]                                              # investing 전용 — 빌드마다 1개씩 순환(세션당 진입 3회 넘으면 Cloudflare 검증에 걸림)
+INV_YAHOO = {"UST10Y": "^TNX", "DXY": "DX-Y.NYB", "WTI": "CL=F", "GOLD": "GC=F"}   # Yahoo 15분 지연으로 대체 가능한 항목
+INV_ROTATE = ["COAL", "NICKEL", "CPO"]                                              # investing 전용 — 빌드마다 1개씩 순환(세션당 진입 3회 넘으면 Cloudflare 검증에 걸림)
 INV_Q_P = CACHE / "inv_quotes.json"
 def y_base(sym):
     """연초(2025-12-31 이하 마지막 거래일) 종가 — YTD 기준"""
@@ -1898,6 +1907,8 @@ def build():
     indices = []
     def add_index(code, label, name, live, eod, inv=False, dec=2):
         """장중엔 Yahoo 실시간(지연) 우선 — 전일 종가를 현재가로 보여주지 않는다. 장 마감 후엔 IDX 확정 종가."""
+        if live and eod and eod.get("date") and eod["date"] < now_wib().date().isoformat() and eod.get("px"):
+            live = dict(live, prev=eod["px"])             # IDX 가 확정한 직전 거래일 종가를 전일종가로 (Yahoo 는 하루 밀리는 경우가 있음)
         if live and (in_session or not eod):
             indices.append({"code": code, "label": label, "name": name, "px": round(live["px"], dec), "prev": round(live["prev"], dec), "pct": round((live["px"] / live["prev"] - 1) * 100, 2),
                             "spark": live["spark"], "inv": inv, "asof": live["ts"], "high": live.get("high"), "low": live.get("low")})
@@ -1907,8 +1918,8 @@ def build():
     jl, ll, ul = ylive("^JKSE"), ylive("^JKLQ45"), ylive("USDIDR=X")
     if not ul: ul = ylive_fx("USDIDR=X")             # 환율은 24시간 거래 — 1분봉이 비면 15분봉 최근 24시간으로
     glob_idx = global_indices()                       # yfinance 호출은 브라우저 작업(번역·캘린더) 전에 모아서
-    add_index("COMPOSITE", "IHSG", "자카르타 종합", jl, {"px": ix["px"], "prev": ix["prev"], "spark": ix["spark"], "asof": f'IDX {ix["date"][5:].replace("-", "/")} 종가'} if ix else None)
-    add_index("LQ45", "LQ45", "대형 45종목", ll, {"px": ix["lq45"]["px"], "prev": ix["lq45"]["prev"], "spark": ix["lq45"]["spark"], "asof": "IDX 종가"} if ix and ix["lq45"] else None)
+    add_index("COMPOSITE", "IHSG", "자카르타 종합", jl, {"px": ix["px"], "prev": ix["prev"], "spark": ix["spark"], "date": ix.get("date"), "asof": f'IDX {ix["date"][5:].replace("-", "/")} 종가'} if ix else None)
+    add_index("LQ45", "LQ45", "대형 45종목", ll, {"px": ix["lq45"]["px"], "prev": ix["lq45"]["prev"], "spark": ix["lq45"]["spark"], "date": ix.get("date"), "asof": "IDX 종가"} if ix and ix["lq45"] else None)
     add_index("USDIDR", "USD/IDR", "달러/루피아", ul, {"px": usd["px"], "prev": usd["prev"], "asof": "Yahoo", "spark": usd.get("spark") or []} if usd else None, inv=True, dec=0)
     sc = sun10y_card(_IV.get("SUN10Y"))
     if sc: indices.append(sc)                         # 4번째 카드: 국채 10년물 (외국인 순매수 카드는 시장 현황 아래 '외국인 수급'으로 통합)
