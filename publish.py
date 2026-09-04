@@ -16,7 +16,7 @@ API = "https://api.github.com"
 
 CODE = ["index.html", "fetch_data.py", "run.py", "selftest.py", "publish.py", "config.json", "tickers.json", "requirements.txt",
         "README.md", "DEPLOY.md", ".gitignore", "start.bat", "push.bat", "share.bat", "make_share.py", "setup_autostart.bat",
-        "prepare_upload.py", "upload.bat", "publish.bat", "make_chat_context.py", "publish_chat.bat", "DEPLOY_CHAT.md", ".github/workflows/update.yml", "worker/worker.js",
+        "prepare_upload.py", "upload.bat", "publish.bat", "make_chat_context.py", "publish_chat.bat", "DEPLOY_CHAT.md", "WEEKEND.md", ".github/workflows/update.yml", "worker/worker.js",
         "data/manual.json", "data/idx_part.json", "data/cache/tr_claude.json", "data/cache/rss_map.json", "data/cache/tickers_all.json", "data/cache/kisi_news.json", "data/cache/sun10y_hist.json", "data/cache/sun10y_daily.json", "data/cache/dividends.json", "data/cache/ann_ai.json", "data/cache/stock_ai.json", "data/cache/index_ai.json", "data/banners.json"]
 CHAT = ["data/cache/chat_context.json"]
 DATA = ["data.json", "data.js", "data/cache/chat_context.json", "data/cache/investing_cal.json", "data/cache/news_seen.json"]
