@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 07:05",
+ "updated": "2026-09-04 08:17",
  "delay_min": 0,
- "fx_basis": "13.04 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,356 · 06:53 Yahoo",
- "idr_per_krw": 13.0432,
+ "fx_basis": "13.01 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,359 · 08:08 Yahoo",
+ "idr_per_krw": 13.0127,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -336,10 +336,10 @@
   "m1": 6.95,
   "value_idr": 18607401563700,
   "volume": 39305835265,
-  "rank_src": "Yahoo 15분 지연 · 835종목 · 종가 · 외국인·공시 PC 09-03 20:53",
+  "rank_src": "Yahoo 15분 지연 · 834종목 · 종가 · 외국인·공시 PC 09-03 20:53",
   "rank_asof": null,
   "rank_date": "2026-09-03",
-  "adv": 415,
+  "adv": 414,
   "dec": 228,
   "unch": 192,
   "foreign_net_idr": 1104392864864.3184,
@@ -2240,22 +2240,6 @@
    "lo": 690.0,
    "ratio": 1.1,
    "fnet": 14887806017.185465,
-   "live": 0
-  },
-  {
-   "t": "AMRT",
-   "n": "Sumber Alfaria Trijaya",
-   "px": 1325.0,
-   "prev": 1305.0,
-   "pct": 1.53,
-   "val": 42689965500.0,
-   "vol": 32300100.0,
-   "sh": 41524501700,
-   "mcap": 55019964752500.0,
-   "hi": 1335.0,
-   "lo": 1305.0,
-   "ratio": 0.8,
-   "fnet": -6095680336.398339,
    "live": 0
   },
   {
@@ -14695,11 +14679,11 @@
   {
    "name": "필수소비재",
    "name_id": "Konsumen Primer",
-   "n": 123,
-   "adv": 50,
+   "n": 122,
+   "adv": 49,
    "dec": 37,
-   "val": 1626860801233.333,
-   "mcap": 1109459734821987.0,
+   "val": 1584170835733.333,
+   "mcap": 1054439770069487.0,
    "top": [
     {
      "t": "HMSP",
@@ -14722,10 +14706,6 @@
      "pct": -1.51
     },
     {
-     "t": "AMRT",
-     "pct": 1.53
-    },
-    {
      "t": "CPIN",
      "pct": 8.25
     },
@@ -14740,9 +14720,13 @@
     {
      "t": "CMRY",
      "pct": 2.77
+    },
+    {
+     "t": "MYOR",
+     "pct": 1.29
     }
    ],
-   "pct": 1.17
+   "pct": 1.15
   },
   {
    "name": "산업재",
@@ -15332,34 +15316,47 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6562.72,
-   "prev": 6835.8,
-   "pct": -3.99,
-   "asof": "09/01 종가",
-   "live": false,
+   "px": 6680.54,
+   "prev": 6680.54,
+   "pct": 0.0,
+   "asof": "07:50",
+   "live": true,
    "spark": [
-    6912.37,
-    6788.88,
-    6820.02,
-    6835.8,
-    6562.72
+    6677.11,
+    6680.4,
+    6670.81,
+    6663.07,
+    6664.94,
+    6674.78,
+    6673.72,
+    6666.53,
+    6663.6,
+    6665.55,
+    6680.54
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64325.64,
-   "prev": 66215.34,
-   "pct": -2.85,
-   "asof": "09/01 종가",
-   "live": false,
+   "px": 64725.74,
+   "prev": 64725.74,
+   "pct": 0.0,
+   "asof": "07:55",
+   "live": true,
    "spark": [
-    66131.98,
-    66405.56,
-    66311.93,
-    66215.34,
-    64325.64
+    64439.01,
+    64569.11,
+    64423.52,
+    64463.67,
+    64644.87,
+    64788.65,
+    64736.62,
+    64788.87,
+    64800.22,
+    64745.09,
+    64799.94,
+    64725.74
    ]
   },
   {
@@ -15491,7 +15488,7 @@
    "type": "Interim",
    "ex": "2026-09-04",
    "pay": "2026-09-18",
-   "yld": "6.38%",
+   "yld": "6.21%",
    "name": "Cisarua Mountain Dairy Tbk PT"
   },
   "DKFT": {
@@ -15506,6 +15503,64 @@
  },
  "news": [
   {
+   "ts": "2026-09-04T07:45:00+07:00",
+   "date": "2026-09-04",
+   "time": "07:45",
+   "src": "IDX Channel",
+   "t": "Uni-Charm (UCID) Bakal Jaga Profitabilitas, Fokus pada Segmen Margin Tinggi",
+   "tags": [
+    "UCID"
+   ],
+   "url": "https://www.idxchannel.com/market-news/uni-charm-ucid-bakal-jaga-profitabilitas-fokus-pada-segmen-margin-tinggi",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2025/06/13/unicharm_ucid.jpg",
+   "t_id": "Uni-Charm (UCID) Bakal Jaga Profitabilitas, Fokus pada Segmen Margin Tinggi",
+   "t_ko": "Uni-Charm(UCID)은 수익성을 유지하고 고마진 부문에 집중할 예정입니다"
+  },
+  {
+   "ts": "2026-09-04T07:24:36+07:00",
+   "date": "2026-09-04",
+   "time": "07:24",
+   "src": "Jawa Pos",
+   "t": "IHSG Berpotensi Lanjut Menguat Hari Ini, Cek 4 Saham Pilihan MNC Sekuritas!",
+   "tags": [
+    "ASII",
+    "BMRI"
+   ],
+   "url": "https://www.jawapos.com/ekonomi/2609040040/ihsg-berpotensi-lanjut-menguat-hari-ini-cek-4-saham-pilihan-mnc-sekuritas",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/09/pergerakan-indeks-harga-saham-gabungan-ihsg-di-bursa-efek-indonesia-bei-jakarta-jumat-782026-dery-ridwansah-jawaposcom-4Wtb4.webp",
+   "t_id": "IHSG Berpotensi Lanjut Menguat Hari Ini, Cek 4 Saham Pilihan MNC Sekuritas!",
+   "t_ko": "JCI는 오늘도 계속해서 강세를 보일 가능성이 있습니다. MNC Sekuritas가 선정한 4개 주식을 확인하세요!"
+  },
+  {
+   "ts": "2026-09-04T07:20:00+07:00",
+   "date": "2026-09-04",
+   "time": "07:20",
+   "src": "Katadata",
+   "t": "IHSG Diramal Naik Jelang Akhir Pekan, Saham JPFA hingga BMRI Jadi Rekomendasi",
+   "tags": [
+    "BMRI",
+    "JPFA"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6a9a0edeb3145/ihsg-diramal-naik-jelang-akhir-pekan-saham-jpfa-hingga-bmri-jadi-rekomendasi",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/IHSG_sesi_pertama_ditutup_naik_056_ke_6337_Foto_KatadataFauza_Sy-2026_08_14-15_01_07_b43cb39450614904edc72579f8b60891_620x413_thumb.jpg",
+   "t_id": "IHSG Diramal Naik Jelang Akhir Pekan, Saham JPFA hingga BMRI Jadi Rekomendasi",
+   "t_ko": "IHSG는 주말을 앞두고 상승할 것으로 예상되며 JPFA 및 BMRI 주식은 권장 사항입니다"
+  },
+  {
+   "ts": "2026-09-04T07:00:00+07:00",
+   "date": "2026-09-04",
+   "time": "07:00",
+   "src": "IDX Channel",
+   "t": "MR.D.I.Y (MDIY) Resmikan Toko ke-1.400, Ekspansi 2026 Tetap Sesuai Target",
+   "tags": [
+    "MDIY"
+   ],
+   "url": "https://www.idxchannel.com/market-news/mrdiy-mdiy-resmikan-toko-ke-1400-ekspansi-2026-tetap-sesuai-target",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/04/mdiy.jpg",
+   "t_id": "MR.D.I.Y (MDIY) Resmikan Toko ke-1.400, Ekspansi 2026 Tetap Sesuai Target",
+   "t_ko": "미스터디아이(MDIY) 1,400호점 오픈, 2026년 확장 목표"
+  },
+  {
    "ts": "2026-09-04T06:37:00+07:00",
    "date": "2026-09-04",
    "time": "06:37",
@@ -15516,8 +15571,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/ipcc-tunjuk-wing-megantoro-jadi-direktur-utama-gantikan-sugeng-mulyadi",
    "img": "https://img.idxchannel.com/media/439/images/idx/2025/07/25/ipcc_ist.jpeg",
-   "t_id": "IPCC Tunjuk Wing Megantoro Jadi Direktur Utama Gantikan Sugeng Mulyadi",
-   "t_ko": "IPCC, Sugeng Mulyadi를 대신할 메인 이사로 Wing Megantoro 임명"
+   "t_ko": "IPCC, Sugeng Mulyadi를 대신할 메인 이사로 Wing Megantoro 임명",
+   "t_id": "IPCC Tunjuk Wing Megantoro Jadi Direktur Utama Gantikan Sugeng Mulyadi"
   },
   {
    "ts": "2026-09-04T06:30:13+07:00",
@@ -15558,8 +15613,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8284284/saham-dkft-melonjak-519-usai-umumkan-dividen-interim-rp-30",
    "img": "https://cdn0-production-images-kly.akamaized.net/DobzRmJuZ6AtCzudxcUozgUxViU=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277616/original/049381900_1672400412-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga-5.jpg",
-   "t_id": "Saham DKFT Melonjak 5,19% Usai Umumkan Dividen Interim Rp 30",
-   "t_ko": "DKFT 주가는 IDR 30의 중간 배당 발표 후 5.19% 급등했습니다."
+   "t_ko": "DKFT 주가는 IDR 30의 중간 배당 발표 후 5.19% 급등했습니다.",
+   "t_id": "Saham DKFT Melonjak 5,19% Usai Umumkan Dividen Interim Rp 30"
   },
   {
    "ts": "2026-09-04T06:00:00+07:00",
@@ -15773,20 +15828,6 @@
    "t_id": "Dari Posyandu hingga Gizi Anak, Komitmen Alfamart Dukung Generasi Sehat"
   },
   {
-   "ts": "2026-09-03T20:00:00+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Medcom",
-   "t": "Tak Lagi Gaptek, Generasi 40+ Ternyata Mulai Berani Bereksperimen dengan AI",
-   "tags": [
-    "HILL"
-   ],
-   "url": "https://www.medcom.id/ekonomi/bisnis/Zke1xvPk-tak-lagi-gaptek-generasi-40-ternyata-mulai-berani-bereksperimen-dengan-ai",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/03/1839912/8SnJzowRZB.jpeg?w=720",
-   "t_ko": "더 이상 기계치 아냐, 40대 이상 세대 AI 실험 시작 — 사용 확산",
-   "t_id": "Tak Lagi Gaptek, Generasi 40+ Mulai Berani Bereksperimen dengan AI"
-  },
-  {
    "ts": "2026-09-03T19:56:26+07:00",
    "date": "2026-09-03",
    "time": "09/03",
@@ -15813,20 +15854,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/03/image-20260302161920.jpg",
    "t_ko": "Mandiri: El Nino, 인플레이션 3.5%까지 끌어올릴 가능성",
    "t_id": "Mandiri: El Nino Berpotensi Seret Inflasi ke 3,5%"
-  },
-  {
-   "ts": "2026-09-03T19:42:11+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Detik",
-   "t": "Bos BGN Benarkan Bakal Pindah Kantor ke Graha Merah Putih Telkom",
-   "tags": [
-    "TLKM"
-   ],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8647325/bos-bgn-benarkan-bakal-pindah-kantor-ke-graha-merah-putih-telkom",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/27/tancap-gas-kepala-bgn-sudaryono-pecat-261-pegawai-bermasalah-1785138053252_169.jpeg?w=360&q=90",
-   "t_ko": "BGN 대표, Telkom Graha Merah Putih로 사무실 이전 확인",
-   "t_id": "Bos BGN Benarkan Bakal Pindah Kantor ke Graha Merah Putih Telkom"
   },
   {
    "ts": "2026-09-03T19:38:00+07:00",
@@ -15913,20 +15940,6 @@
    "t_id": "Raih Penghargaan ICAII 2026, Multitrend Indo Ungkap Strategi Integrasi Emway Globalindo"
   },
   {
-   "ts": "2026-09-03T15:21:41+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Republika",
-   "t": "Bank Mandiri Taspen Gandeng Nawakara Hadirkan Fasilitas Kredit bagi Pegawai",
-   "tags": [
-    "BMRI"
-   ],
-   "url": "https://ekonomi.republika.co.id/berita/tks4k5370/bank-mandiri-taspen-gandeng-nawakara-hadirkan-fasilitas-kredit-bagi-pegawai",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260903152117-431.png",
-   "t_ko": "Bank Mandiri Taspen, Nawakara와 제휴 — 임직원 대출 상품 출시",
-   "t_id": "Bank Mandiri Taspen Gandeng Nawakara Hadirkan Fasilitas Kredit bagi Pegawai"
-  },
-  {
    "ts": "2026-09-03T15:19:13+07:00",
    "date": "2026-09-03",
    "time": "09/03",
@@ -15939,20 +15952,6 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/_t906H__oXprF9kI7cWrrh8Nlzo=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4617857/original/062935500_1697787631-Summarecon_Mall_Bekasi_01.jpg",
    "t_ko": "Erajaya(ERAA), 9/4부터 Rp5,000억 자사주 매입 개시",
    "t_id": "Erajaya Siapkan Buyback Saham Rp 500 Miliar Mulai 4 September 2026"
-  },
-  {
-   "ts": "2026-09-03T15:12:00+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "IDX Channel",
-   "t": "Produk Listrik Hijau Hero Global Investment (HGII) Raih Penghargaan ICAII 2026",
-   "tags": [
-    "HGII"
-   ],
-   "url": "https://www.idxchannel.com/market-news/produk-listrik-hijau-hero-global-investment-hgii-raih-penghargaan-icaii-2026",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/03/IMG-20260903-WA0014_2.jpg",
-   "t_ko": "Hero Global Investment(HGII) 친환경 전력 제품, ICAII 2026 수상",
-   "t_id": "Produk Listrik Hijau Hero Global Investment (HGII) Raih Penghargaan ICAII 2026"
   },
   {
    "ts": "2026-09-03T15:05:53+07:00",
@@ -16012,20 +16011,6 @@
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/ERAA-29072026.jpg",
    "t_ko": "ERAA 자사주 2.36억주 매입 완료 — 주가 40% 급등",
    "t_id": "ERAA Rampungkan Buyback 236 Juta Saham, Harga Melonjak 40%"
-  },
-  {
-   "ts": "2026-09-03T13:13:00+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "IDX Channel",
-   "t": "Erajaya Swasembada (ERAA) Berencana Buyback Saham hingga Rp500 Miliar",
-   "tags": [
-    "ERAA"
-   ],
-   "url": "https://www.idxchannel.com/market-news/erajaya-swasembada-eraa-berencana-buyback-saham-hingga-rp500-miliar",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2022/08/05/Sejarah_Saham_ERAA.jpg",
-   "t_ko": "Erajaya Swasembada(ERAA) 최대 Rp5,000억 자사주 매입 계획",
-   "t_id": "Erajaya Swasembada (ERAA) Berencana Buyback Saham hingga Rp500 Miliar"
   },
   {
    "ts": "2026-09-03T11:12:48+07:00",
@@ -16417,6 +16402,100 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T07:58:13+07:00",
+   "date": "2026-09-04",
+   "time": "07:58",
+   "src": "Jawa Pos",
+   "t": "Ketegangan di Selat Hormuz Picu Harga Minyak Global Makin Fluktuatif",
+   "tags": [],
+   "url": "https://www.jawapos.com/energi/2609040043/ketegangan-di-selat-hormuz-picu-harga-minyak-global-makin-fluktuatif",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/ilusttrasi-harga-minyak-dunia-pexelsganesh-ramsumair-slwEx.webp",
+   "t_id": "Ketegangan di Selat Hormuz Picu Harga Minyak Global Makin Fluktuatif",
+   "t_ko": "호르무즈 해협 긴장으로 글로벌 유가 변동폭 커져"
+  },
+  {
+   "ts": "2026-09-04T07:58:00+07:00",
+   "date": "2026-09-04",
+   "time": "07:58",
+   "src": "Media Indonesia",
+   "t": "Indonesia Berencana Bangun Fasilitas Produksi Pupuk Urea di Vladivostok",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/929612/indonesia-berencana-bangun-fasilitas-produksi-pupuk-urea-di-vladivostok",
+   "t_id": "Indonesia Berencana Bangun Fasilitas Produksi Pupuk Urea di Vladivostok",
+   "t_ko": "인도네시아, 블라디보스토크에 요소비료 생산시설 건립 계획"
+  },
+  {
+   "ts": "2026-09-04T07:40:00+07:00",
+   "date": "2026-09-04",
+   "time": "07:40",
+   "src": "Bloomberg Technoz",
+   "t": "Komentar OJK Soal IPO SWAP UGM Ditunda",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120469/komentar-ojk-soal-ipo-swap-ugm-ditunda",
+   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814105502.jpeg",
+   "t_ko": "UGM SWAP IPO에 관한 OJK 의견 연기",
+   "t_id": "Komentar OJK Soal IPO SWAP UGM Ditunda"
+  },
+  {
+   "ts": "2026-09-04T07:37:13+07:00",
+   "date": "2026-09-04",
+   "time": "07:37",
+   "src": "Liputan6",
+   "t": "IHSG Bakal Menguat ke 6.681, Simak Rekomendasi Saham 4 September 2026",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8284339/ihsg-bakal-menguat-ke-6681-simak-rekomendasi-saham-4-september-2026",
+   "img": "https://cdn0-production-images-kly.akamaized.net/AWZph8pCbJyiMusqFF0g5JUR9wE=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3893146/original/099183700_1641196873-20220103-Pembukaan_Awal_Tahun_2022_IHSG_Menguat-3.jpg",
+   "t_id": "IHSG Bakal Menguat ke 6.681, Simak Rekomendasi Saham 4 September 2026",
+   "t_ko": "JCI는 6,681로 강화될 예정입니다. 2026년 9월 4일 주식 추천을 확인하세요"
+  },
+  {
+   "ts": "2026-09-04T07:32:00+07:00",
+   "date": "2026-09-04",
+   "time": "07:32",
+   "src": "Katadata",
+   "t": "Wall Street Menguat Imbas Ekspektasi Suku Bunga The Fed",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/bursa/6a9a11a3b4fdf/wall-street-menguat-imbas-ekspektasi-suku-bunga-the-fed",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2021/10/03/Wall_Street_New_York_Stock_Exchange_bendera_Amerika-2021_10_03-13_36_32_4f3e5dde966a8c01390b33ef8eb60936_620x413_thumb.jpg",
+   "t_ko": "연준 금리 기대로 인해 월스트리트가 강화됨",
+   "t_id": "Wall Street Menguat Imbas Ekspektasi Suku Bunga The Fed"
+  },
+  {
+   "ts": "2026-09-04T07:26:10+07:00",
+   "date": "2026-09-04",
+   "time": "07:26",
+   "src": "Bloomberg Technoz",
+   "t": "Harga Emas Naik 2 Hari Beruntun, Saatnya Jual atau Beli?",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120471/harga-emas-naik-2-hari-beruntun-saatnya-jual-atau-beli",
+   "img": "https://images.bloombergtechnoz.com/data/2025/02/image-20250226175208.jpeg",
+   "t_id": "Harga Emas Naik 2 Hari Beruntun, Saatnya Jual atau Beli?",
+   "t_ko": "금값 이틀 연속 상승, 매도 시점인가 매수 시점인가?"
+  },
+  {
+   "ts": "2026-09-04T07:18:48+07:00",
+   "date": "2026-09-04",
+   "time": "07:18",
+   "src": "Jawa Pos",
+   "t": "Prediksi Rupiah Jumat 4 September: Dibayang-bayangi Sentimen The Fed dan Arah Kebijakan BI",
+   "tags": [],
+   "url": "https://www.jawapos.com/finance/2609040037/prediksi-rupiah-jumat-4-september-dibayang-bayangi-sentimen-the-fed-dan-arah-kebijakan-bi",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/05/26/karyawan-menunjukkan-uang-pecahan-rupiah-dan-dolar-amerika-serikat-as-di-gerai-penukaran-mata-uang-asing-di-jakarta-dery-ridwansah-jawaposcom-J3SAI.webp",
+   "t_id": "Prediksi Rupiah Jumat 4 September: Dibayang-bayangi Sentimen The Fed dan Arah Kebijakan BI",
+   "t_ko": "9월 4일 금요일 루피아 예측: 연준 심리 및 BI 정책 방향에 의해 가려짐"
+  },
+  {
+   "ts": "2026-09-04T07:00:00+07:00",
+   "date": "2026-09-04",
+   "time": "07:00",
+   "src": "Bloomberg",
+   "t": "Jokowi’s Legacy of Debt May Curb Danantara’s Investment Ambition",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-04/jokowi-s-legacy-of-debt-may-curb-danantara-s-investment-ambition",
+   "t_ko": "조코위의 부채 유산이 다난타라의 투자 야망을 억제할 수 있음",
+   "t_id": "Warisan Utang yang Diwariskan Jokowi Dapat Mengekang Ambisi Investasi Danantara"
+  },
+  {
    "ts": "2026-09-04T07:00:00+07:00",
    "date": "2026-09-04",
    "time": "07:00",
@@ -16425,8 +16504,20 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120467/bursa-saham-asia-berpeluang-menguat-mengekor-wall-street",
    "img": "https://images.bloombergtechnoz.com/data/2025/01/image-20250116065530.jpg",
-   "t_id": "Bursa Saham Asia Berpeluang Menguat, Mengekor Wall Street",
-   "t_ko": "아시아 증권거래소, 월스트리트에 이어 강세를 보일 기회가 있다"
+   "t_ko": "아시아 증권거래소, 월스트리트에 이어 강세를 보일 기회가 있다",
+   "t_id": "Bursa Saham Asia Berpeluang Menguat, Mengekor Wall Street"
+  },
+  {
+   "ts": "2026-09-04T06:43:00+07:00",
+   "date": "2026-09-04",
+   "time": "06:43",
+   "src": "IDX Channel",
+   "t": "Harga Emas Melonjak, Pernyataan Gubernur The Fed Waller Redam Ekspektasi Kenaikan Suku Bunga",
+   "tags": [],
+   "url": "https://www.idxchannel.com/market-news/harga-emas-melonjak-pernyataan-gubernur-the-fed-waller-redam-ekspektasi-kenaikan-suku-bunga",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2023/08/15/dolar_emas_-_Freepik_-.jpeg",
+   "t_ko": "금 가격 급등, 월러 연준 총재 성명으로 금리 인상 기대 축소",
+   "t_id": "Harga Emas Melonjak, Pernyataan Gubernur The Fed Waller Redam Ekspektasi Kenaikan Suku Bunga"
   },
   {
    "ts": "2026-09-04T06:40:00+07:00",
@@ -16449,8 +16540,8 @@
    "tags": [],
    "url": "https://www.liputan6.com/saham/read/8284309/kinerja-sektor-emas-hingga-keuangan-berpotensi-positif-di-pasar-modal",
    "img": "https://cdn1-production-images-kly.akamaized.net/1muvztO9JwhJRh8cTbnEvARdRGI=/472x0:3363x1630/673x379/filters:quality(75):strip_icc():format(webp):watermark(kly-media-production/assets/images/watermarks/liputan6/watermark-gray-landscape-new.png,573,20,0)/kly-media-production/medias/1505536/original/011475000_1486967390-Pembukaan-Saham3.jpg",
-   "t_id": "Kinerja Sektor Emas hingga Keuangan Berpotensi Positif di Pasar Modal",
-   "t_ko": "금융 부문에 대한 금의 성과는 자본 시장에서 긍정적일 가능성이 있습니다"
+   "t_ko": "금융 부문에 대한 금의 성과는 자본 시장에서 긍정적일 가능성이 있습니다",
+   "t_id": "Kinerja Sektor Emas hingga Keuangan Berpotensi Positif di Pasar Modal"
   },
   {
    "ts": "2026-09-04T06:25:00+07:00",
@@ -16461,8 +16552,8 @@
    "tags": [],
    "url": "https://finance.detik.com/bursa-dan-valas/d-8647317/bocoran-aturan-demutualisasi-bursa-negara-bisa-genggam-saham-5",
    "img": "https://akcdn.detik.net.id/community/media/visual/2022/04/08/ihsg-ditutup-menguat-1_169.jpeg?w=360&q=90",
-   "t_id": "Bocoran Aturan Demutualisasi Bursa: Negara Bisa Genggam Saham 5%",
-   "t_ko": "거래소 탈상호화 규칙 유출: 국가가 5% 지분을 보유할 수 있음"
+   "t_ko": "거래소 탈상호화 규칙 유출: 국가가 5% 지분을 보유할 수 있음",
+   "t_id": "Bocoran Aturan Demutualisasi Bursa: Negara Bisa Genggam Saham 5%"
   },
   {
    "ts": "2026-09-04T06:20:00+07:00",
@@ -16473,8 +16564,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120465/saham-as-menguat-taruhan-kenaikan-suku-bunga-the-fed-mereda",
    "img": "https://images.bloombergtechnoz.com/data/2025/12/image-20251226163139.jpg",
-   "t_id": "Saham AS Menguat, Taruhan Kenaikan Suku Bunga The Fed  Mereda",
-   "t_ko": "미국 주식 상승, 연준 금리 인상 베팅 완화"
+   "t_ko": "미국 주식 상승, 연준 금리 인상 베팅 완화",
+   "t_id": "Saham AS Menguat, Taruhan Kenaikan Suku Bunga The Fed  Mereda"
   },
   {
    "ts": "2026-09-04T06:00:00+07:00",
@@ -16527,11 +16618,11 @@
    "date": "2026-09-04",
    "time": "05:43",
    "src": "Bloomberg",
-   "t": "Anthropic Nears Finalizing $15 Billion Pre-IPO Credit Facility",
+   "t": "Anthropic Finalizing $15 Billion Pre-IPO Credit Facility",
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-03/anthropic-nears-finalizing-15-billion-pre-ipo-credit-facility",
-   "t_ko": "Anthropic, 150억 달러 규모의 사전 IPO 신용 시설 마무리에 가까워짐",
-   "t_id": "Anthropic Hampir Menyelesaikan Fasilitas Kredit Pra-IPO $15 Miliar"
+   "t_ko": "150억 달러 규모의 사전 IPO 신용 시설을 인류가 마무리",
+   "t_id": "Anthropic Menyelesaikan Fasilitas Kredit Pra-IPO $15 Miliar"
   },
   {
    "ts": "2026-09-04T05:35:42+07:00",
@@ -16546,17 +16637,6 @@
    "t_id": "Dolar AS Jatuh ke Level Terendah Sejak Mei, Yen Jepang Menguat"
   },
   {
-   "ts": "2026-09-04T05:14:26+07:00",
-   "date": "2026-09-04",
-   "time": "05:14",
-   "src": "Bloomberg",
-   "t": "Asian Stocks to Climb as Fed Bets Cool, Yen Gains: Markets Wrap",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-03/stock-market-today-dow-s-p-live-updates",
-   "t_ko": "연준의 베팅 냉각, 엔화 상승으로 아시아 주식 상승: 시장 마무리",
-   "t_id": "Saham Asia Naik seiring Taruhan Fed Mendingin, Penguatan Yen: Pasar Selesai"
-  },
-  {
    "ts": "2026-09-04T03:32:56+07:00",
    "date": "2026-09-04",
    "time": "03:32",
@@ -16567,28 +16647,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/06/11/petugas-melayani-pengisian-bahan-bakar-minyak-bbm-jenis-pertamax-di-spbu-pertamina-menteng-jakarta-rabu-1062026-salman-toyibijawa-pos-RmPa4.webp",
    "t_ko": "이코노미스트는 유가와 루피아 환율을 고려할 때 Pertamax가 IDR 16,800에 판매되어야 한다고 추정합니다.",
    "t_id": "Ekonom Taksir Pertamax Harusnya Dijual Rp 16.800, Pertimbangkan Harga Minyak dan Nilai Tukar Rupiah"
-  },
-  {
-   "ts": "2026-09-04T03:14:02+07:00",
-   "date": "2026-09-04",
-   "time": "03:14",
-   "src": "Bloomberg",
-   "t": "Bessent 'Wants To Win', Drive Yields Lower: Brill",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-03/bessent-wants-to-win-drive-yields-lower-brill-video",
-   "t_ko": "Bessent '이기고 싶어', 수익률 하락: Brill",
-   "t_id": "Diberikan 'Ingin Menang', Mendorong Hasil Lebih Rendah: Brill"
-  },
-  {
-   "ts": "2026-09-03T19:50:32+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Bloomberg",
-   "t": "S&P 500 Notches Best Day in Month as Traders Pare Rate-Hike Bets",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-03/us-stock-futures-rise-as-traders-parse-fedspeak-earnings",
-   "t_ko": "트레이더들이 금리 인상 베팅을 하면서 S&P 500이 이달 최고의 날을 기록했습니다.",
-   "t_id": "S&P 500 Mencatat Hari Terbaik dalam Bulanan karena Pedagang Mengurangi Taruhan Kenaikan Suku Bunga"
   },
   {
    "ts": "2026-09-03T19:10:00+07:00",
@@ -16697,78 +16755,6 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/suHwJDwLDUTCP9Tv1GPG1shm1V4=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5182875/original/042479600_1744109077-20250408-Penutupan_IHSG-HER_4.jpg",
    "t_ko": "OJK, BEI 상호회사화 폐지 규정 2026년 9월 시행 목표",
    "t_id": "OJK Targetkan Aturan Demutualisasi BEI Terbit September 2026"
-  },
-  {
-   "ts": "2026-09-03T17:40:00+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Bloomberg Technoz",
-   "t": "Malaysia Tahan Suku Bunga, Beri Sinyal Hawkish ke Pasar",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120454/malaysia-tahan-suku-bunga-beri-sinyal-hawkish-ke-pasar",
-   "img": "https://images.bloombergtechnoz.com/data/2023/08/image-20230818121016.jpeg",
-   "t_ko": "Malaysia 기준금리 동결 — 시장에 매파적 신호",
-   "t_id": "Malaysia Tahan Suku Bunga, Beri Sinyal Hawkish ke Pasar"
-  },
-  {
-   "ts": "2026-09-03T17:21:00+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Katadata",
-   "t": "Membongkar 'Mitos' Purbaya soal Dana Rp 120 Triliun Danantara Masuk APBN",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/korporasi/6a994a3f2f87a/membongkar-mitos-purbaya-soal-dana-rp-120-triliun-danantara-masuk-apbn",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/05/26/Danantara_Indonesia-2026_05_26-14_22_46_65e50a6e1cd7e61735295345ccfce3c5_620x413_thumb.jpg",
-   "t_ko": "Purbaya 재무장관의 Danantara Rp120조 국고 편입 논란 점검",
-   "t_id": "Membongkar 'Mitos' Purbaya soal Dana Rp 120 Triliun Danantara Masuk APBN"
-  },
-  {
-   "ts": "2026-09-03T17:17:58+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Liputan6",
-   "t": "IHSG Hari Ini Melambung ke 6.687, Sektor Saham Transportasi Memimpin Kenaikan",
-   "tags": [],
-   "url": "https://www.liputan6.com/saham/read/8284023/ihsg-hari-ini-melambung-ke-6687-sektor-saham-transportasi-memimpin-kenaikan",
-   "img": "https://cdn0-production-images-kly.akamaized.net/QXQkVPMlOgHJ1FhUfK4f-XTK4Hw=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5755472/original/086144900_1778657370-2.jpg",
-   "t_ko": "IHSG 6,687 급등 — 운송 섹터가 상승 주도",
-   "t_id": "IHSG Hari Ini Melambung ke 6.687, Sektor Saham Transportasi Memimpin Kenaikan"
-  },
-  {
-   "ts": "2026-09-03T17:13:00+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Republika",
-   "t": "Rupiah Menguat Seiring Data Tenaga Kerja AS Lebih Lemah dari Perkiraan",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tks997423/rupiah-menguat-seiring-data-tenaga-kerja-as-lebih-lemah-dari-perkiraan",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/024070300-1780675505-830-556.jpg",
-   "t_ko": "美 고용지표 예상 하회에 루피아 강세",
-   "t_id": "Rupiah Menguat Seiring Data Tenaga Kerja AS Lebih Lemah dari Perkiraan"
-  },
-  {
-   "ts": "2026-09-03T17:04:00+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Katadata",
-   "t": "LPS Soroti Efek Special Rate Bank untuk Debitur Besar ke Bunga Kredit",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/keuangan/6a9946325b09e/lps-soroti-efek-special-rate-bank-untuk-debitur-besar-ke-bunga-kredit",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/20/2026_08_20-18_50_00_f7b8749c-9c95-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "LPS, 대형 차주 특별금리가 대출금리에 미치는 영향 지적",
-   "t_id": "LPS Soroti Efek Special Rate Bank untuk Debitur Besar ke Bunga Kredit"
-  },
-  {
-   "ts": "2026-09-03T16:45:00+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "IDNFinancials",
-   "t": "Rupiah strengthens, JCI rises 1.09% to 3.5-month high",
-   "tags": [],
-   "url": "https://www.idnfinancials.com/news/68313/rupiah-strengthens-jci-rises-1-09-to-3-5-month-high",
-   "img": "https://photos.idnfinancials.com/d/500x300/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG%202-min.jpg",
-   "t_ko": "루피아 강세, IHSG 1.09% 상승 3.5개월래 최고",
-   "t_id": "Rupiah Menguat, IHSG Naik 1,09% ke Level Tertinggi 3,5 Bulan"
   }
  ],
  "kisi_news": [
@@ -16940,9 +16926,9 @@
   },
   {
    "k": "IDR/KRW (1원당 루피아)",
-   "v": "13.03",
-   "d": -0.08,
-   "ytd": 12.21,
+   "v": "13.01",
+   "d": -0.26,
+   "ytd": 12.01,
    "inv": true,
    "note": "연초 11.6144",
    "k_ko": "IDR/KRW (1원당 루피아)",
@@ -16953,7 +16939,7 @@
   {
    "k": "CPO (MYR/t)",
    "v": "4,984",
-   "d": 0.52,
+   "d": 0.0,
    "ytd": null,
    "inv": false,
    "note": "Bursa Malaysia FCPO 근월물 · investing.com",
@@ -16975,9 +16961,9 @@
   },
   {
    "k": "Brent (US$/bbl)",
-   "v": "95.92",
-   "d": 0.3,
-   "ytd": 57.5,
+   "v": "95.80",
+   "d": 0.18,
+   "ytd": 57.31,
    "inv": false,
    "note": null,
    "k_ko": "Brent (US$/bbl)",
@@ -16985,8 +16971,8 @@
   },
   {
    "k": "DXY",
-   "v": "98.97",
-   "d": -0.59,
+   "v": "98.98",
+   "d": -0.58,
    "ytd": null,
    "inv": false,
    "note": null,
@@ -17691,7 +17677,7 @@
    "title_id": "cum Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk — Rp100/saham",
    "dps": 100.0,
    "pay": "2026-09-18",
-   "yld": "6.38%",
+   "yld": "6.21%",
    "country": "ID",
    "title_ko": "배당부 마감(cum) · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy"
   },
@@ -17940,7 +17926,7 @@
    "title_id": "ex Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk — Rp100/saham",
    "dps": 100.0,
    "pay": "2026-09-18",
-   "yld": "6.38%",
+   "yld": "6.21%",
    "country": "ID",
    "title_ko": "배당락(ex) · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy"
   },
@@ -18157,7 +18143,7 @@
    "title_id": "DPS Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk — Rp100/saham",
    "dps": 100.0,
    "pay": "2026-09-18",
-   "yld": "6.38%",
+   "yld": "6.21%",
    "country": "ID",
    "title_ko": "배당 기준일(DPS) · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy"
   },
