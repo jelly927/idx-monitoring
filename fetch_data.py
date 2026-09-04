@@ -1958,15 +1958,18 @@ def _gemini(prompt, max_tokens=1500, temperature=0.2):
         gc = {"temperature": temperature, "maxOutputTokens": max_tokens, "responseMimeType": "application/json"}
         if not _GEM.get("nothink"): gc["thinkingConfig"] = {"thinkingBudget": 0}          # 속도 우선(추론 비활성). 모델이 거부하면 빼고 재시도
         r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
-        if r.status_code == 400 and "thinking" in r.text.lower() and not _GEM.get("nothink"):
+        if r.status_code == 400 and not _GEM.get("nothink"):                      # 모델이 thinkingConfig 를 거부 → 빼고 재시도(이후 계속 제외)
             _GEM["nothink"] = True; gc.pop("thinkingConfig", None)
+            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
+        if r.status_code == 400 and not _GEM.get("nojson"):                       # JSON 응답 모드도 거부 → 일반 텍스트로(파싱은 _json_loads_loose 가 처리)
+            _GEM["nojson"] = True; gc.pop("responseMimeType", None)
             r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
         if r.status_code == 404 and _GEM["model"]:      # 모델 퇴역 → 캐시 지우고 다음 호출에서 재선택
             _GEM["model"] = None
             try: (CACHE / "gemini_model.txt").unlink()
             except Exception: pass
         if r.status_code != 200:
-            log("Gemini", r.status_code, re.sub(r"\s+", " ", r.text)[:300]); _GEM["fail"] = _GEM.get("fail", 0) + (1 if r.status_code in (429, 500, 503) else 0); return None
+            log("Gemini", r.status_code, re.sub(r"\s+", " ", r.text)[:300], "| gc:", ",".join(gc.keys())); _GEM["fail"] = _GEM.get("fail", 0) + (1 if r.status_code in (429, 500, 503) else 0); return None
         j = r.json(); txt = "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
         _GEM["fail"] = 0
         return txt
