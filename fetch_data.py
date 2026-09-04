@@ -1998,6 +1998,25 @@ def _gemini(prompt, max_tokens=1500, temperature=0.2, search=False):
         return txt
     except Exception as e:
         log("Gemini 오류", str(e)[:120]); _GEM["fail"] = _GEM.get("fail", 0) + 1; return None
+def _pc_age_min(idx_from_pc):
+    """PC 수집분(idx_part.json)이 몇 분 전 것인지. PC 가 꺼져 있으면 이 값이 계속 커진다."""
+    try:
+        t = dt.datetime.strptime((idx_from_pc or {}).get("saved", ""), "%Y-%m-%d %H:%M").replace(tzinfo=WIB)
+        return int((now_wib() - t).total_seconds() // 60)
+    except Exception:
+        return None
+
+def _ai_can(on_runner=False):
+    """AI 호출 가능 여부.
+    · PC: secrets.json 의 키가 있으면 전부 허용
+    · GitHub 러너(주말·PC 꺼짐): GEMINI_API_KEY 시크릿이 등록돼 있고, on_runner=True 인 작업만 허용
+      (종목 요약은 호출량이 커서 러너에서는 돌리지 않는다 — 무료 할당량 보호)"""
+    key = _secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")
+    if not key: return False
+    if os.environ.get("GITHUB_ACTIONS"):
+        return bool(on_runner and os.environ.get("GEMINI_API_KEY"))
+    return True
+
 def _json_loads_loose(txt):
     if not txt: return None
     try: return json.loads(txt)
@@ -2038,7 +2057,8 @@ def ai_announcements(anns, per_build=6):
     """공시 PDF 본문을 2문장으로 요약(한/인니) → a['ai_ko'], a['ai_id']. 캐시(url 기준) · 빌드당 최대 per_build 건 신규 처리"""
     try: cache = json.loads(AI_ANN_P.read_text(encoding="utf-8"))
     except Exception: cache = {}
-    can = bool(_secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")) and not os.environ.get("GITHUB_ACTIONS")
+    can = _ai_can(on_runner=True)
+    if can and os.environ.get("GITHUB_ACTIONS"): per_build = 3     # 러너에서는 천천히 (할당량 보호)
     todo = [a for a in anns if a.get("url") and a["url"] not in cache]
     done = 0
     for a in (todo[:per_build] if can else []):
@@ -2216,7 +2236,7 @@ def ai_index(data, ttl_min=30):
             if (now - dt.datetime.fromisoformat(ts)).total_seconds() < ttl_min * 60 and cache.get("ko"):
                 return {"ko": cache["ko"], "id": cache.get("id", ""), "ts": ts}
         except Exception: pass
-    can = bool(_secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")) and not os.environ.get("GITHUB_ACTIONS")
+    can = _ai_can(on_runner=True)
     if not can:
         return {"ko": cache.get("ko", ""), "id": cache.get("id", ""), "ts": ts} if cache.get("ko") else {}
 
@@ -2290,7 +2310,7 @@ def ai_stocks(data, batch=10, ttl_min=60, per_build=40):
     for sec in data.get("sectors") or []:
         for o in (sec.get("top") or [])[:10]:
             if o["t"] not in targets: targets.append(o["t"])
-    can = bool(_secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")) and not os.environ.get("GITHUB_ACTIONS")
+    can = _ai_can(on_runner=False)
     now = now_wib()
     def stale(t):
         c = cache.get(t)
@@ -2497,7 +2517,8 @@ def build():
             "stocks": P("stocks"),
             "sectors": sector_block(P("stocks")), "global": glob_idx, "dividends": DIVS,
             "news": news_items, "market_news": MARKET_NEWS, "kisi_news": kisi_items, "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
-            "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
+            "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "pc_age_min": _pc_age_min(idx_from_pc),
+                                "on_runner": bool(os.environ.get("GITHUB_ACTIONS")), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
     try: housekeeping()
     except Exception: pass
     _GEM["fail"] = 0
