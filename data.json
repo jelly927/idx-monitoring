@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 22:07",
+ "updated": "2026-09-04 22:27",
  "delay_min": 0,
  "fx_basis": "13.09 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,347 · 21:06 Yahoo",
- "idr_per_krw": 13.0936,
+ "idr_per_krw": 13.0906,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -337,10 +337,10 @@
   "m1": 5.01,
   "value_idr": 15001276676523,
   "volume": 34285124590,
-  "rank_src": "Yahoo 15분 지연 · 835종목 · 종가 · 외국인·공시 PC 09-04 18:22",
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-04 18:22",
   "rank_asof": null,
   "rank_date": "2026-09-04",
-  "adv": 279,
+  "adv": 280,
   "dec": 380,
   "unch": 176,
   "foreign_net_idr": -311796322852.979,
@@ -8452,6 +8452,22 @@
    "live": 0
   },
   {
+   "t": "BIKE",
+   "n": "Bhineka Inovasi Ketahanan Energi",
+   "px": 755.0,
+   "prev": 690.0,
+   "pct": 9.42,
+   "val": 487571666.6666666,
+   "vol": 657400.0,
+   "sh": 1293916404,
+   "mcap": 976906885020.0,
+   "hi": 755.0,
+   "lo": 715.0,
+   "ratio": 0.6,
+   "fnet": 0.0,
+   "live": 0
+  },
+  {
    "t": "CINT",
    "n": "Chitose Internasional",
    "px": 187.0,
@@ -14696,11 +14712,11 @@
   {
    "name": "경기소비재",
    "name_id": "Konsumen Non-Primer",
-   "n": 135,
-   "adv": 39,
+   "n": 136,
+   "adv": 40,
    "dec": 71,
-   "val": 1146400670966.6667,
-   "mcap": 419844411619143.0,
+   "val": 1146888242633.3335,
+   "mcap": 420821318504163.0,
    "top": [
     {
      "t": "VKTR",
@@ -14743,7 +14759,7 @@
      "pct": -1.92
     }
    ],
-   "pct": 0.42
+   "pct": 0.44
   },
   {
    "name": "산업재",
@@ -15063,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7710.62,
+   "px": 7708.75,
    "prev": 7747.8,
-   "pct": -0.48,
-   "asof": "22:05",
+   "pct": -0.5,
+   "asof": "22:25",
    "live": true,
    "spark": [
     7743.86,
@@ -15088,17 +15104,21 @@
     7712.03,
     7710.73,
     7710.68,
-    7710.62
+    7712.34,
+    7715.01,
+    7709.35,
+    7709.16,
+    7708.75
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26467.24,
+   "px": 26466.21,
    "prev": 26584.06,
    "pct": -0.44,
-   "asof": "22:05",
+   "asof": "22:25",
    "live": true,
    "spark": [
     26609.51,
@@ -15120,17 +15140,21 @@
     26476.6,
     26470.04,
     26468.04,
-    26467.24
+    26475.55,
+    26486.8,
+    26461.03,
+    26466.14,
+    26466.21
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53321.59,
+   "px": 53300.3,
    "prev": 53687.54,
-   "pct": -0.68,
-   "asof": "22:05",
+   "pct": -0.72,
+   "asof": "22:25",
    "live": true,
    "spark": [
     53577.29,
@@ -15152,7 +15176,11 @@
     53321.97,
     53308.25,
     53323.16,
-    53321.59
+    53310.84,
+    53326.68,
+    53311.55,
+    53304.71,
+    53300.3
    ]
   },
   {
@@ -15472,6 +15500,19 @@
  },
  "news": [
   {
+   "ts": "2026-09-04T22:22:00+07:00",
+   "date": "2026-09-04",
+   "time": "22:22",
+   "src": "Media Indonesia",
+   "t": "KBRI Beijing Luncurkan i-CorpU: Inovasi Digital Pelayanan Imigrasi Anggaran Nol Rupiah",
+   "tags": [
+    "KBRI"
+   ],
+   "url": "https://mediaindonesia.com/internasional/929926/kbri-beijing-luncurkan-i-corpu-inovasi-digital-pelayanan-imigrasi-anggaran-nol-rupiah",
+   "t_ko": "베이징 주재 인도네시아 대사관, i-CorpU 출범: 제로 루피아 예산 이민 서비스를 위한 디지털 혁신",
+   "t_id": "KBRI Beijing Luncurkan i-CorpU: Inovasi Digital Pelayanan Imigrasi Anggaran Nol Rupiah"
+  },
+  {
    "ts": "2026-09-04T21:00:00+07:00",
    "date": "2026-09-04",
    "time": "21:00",
@@ -15486,19 +15527,6 @@
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/NET%20FOREIGN%20IMAGE%20%28ARIF%29/NET%20FOREIGN%2017.jpeg",
    "t_ko": "해외 거래액 감소, IDR 3,170억 유출",
    "t_id": "Nilai perdagangan luar negeri anjlok, outflow Rp 317 miliar"
-  },
-  {
-   "ts": "2026-09-04T20:59:00+07:00",
-   "date": "2026-09-04",
-   "time": "20:59",
-   "src": "Media Indonesia",
-   "t": "Pulihkan Terumbu Karang Pulau Messah, Program Konservasi Libatkan Masyarakat",
-   "tags": [
-    "MPMX"
-   ],
-   "url": "https://mediaindonesia.com/nusantara/929880/pulihkan-terumbu-karang-pulau-messah-program-konservasi-libatkan-masyarakat",
-   "t_ko": "메사섬 산호초 복원, 보존 프로그램에 지역사회 참여",
-   "t_id": "Pulihkan Terumbu Karang Pulau Messah, Program Konservasi Libatkan Masyarakat"
   },
   {
    "ts": "2026-09-04T20:57:00+07:00",
@@ -15900,20 +15928,6 @@
    "img": "https://cdn1-production-images-kly.akamaized.net/-7BckhRnBYo5liqIOdphEpiliRg=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4112072/original/006568500_1659528503-IHSG_Ditutup_Menguat-Angga-2.jpg",
    "t_ko": "AKR Corporindo 이사, AKRA 주식 200만주 처분",
    "t_id": "Direktur AKR Corporindo Lepas 2 Juta Saham AKRA"
-  },
-  {
-   "ts": "2026-09-04T13:01:16+07:00",
-   "date": "2026-09-04",
-   "time": "13:01",
-   "src": "Detik",
-   "t": "BGN Bakal Pindah ke Gedung Telkom, Bayar Sewa tapi Disebut Tak Mahal",
-   "tags": [
-    "TLKM"
-   ],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648207/bgn-bakal-pindah-ke-gedung-telkom-bayar-sewa-tapi-disebut-tak-mahal",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/03/kantor-badan-gizi-nasional-bgn-1780455615624_169.jpeg?w=360&q=90",
-   "t_ko": "BGN, Telkom 빌딩으로 이전 예정 — 임차료 지급하나 부담 크지 않다는 설명",
-   "t_id": "BGN Bakal Pindah ke Gedung Telkom, Bayar Sewa tapi Disebut Tak Mahal"
   },
   {
    "ts": "2026-09-04T12:50:00+07:00",
@@ -16419,6 +16433,30 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T22:20:20+07:00",
+   "date": "2026-09-04",
+   "time": "22:20",
+   "src": "Medcom",
+   "t": "Pengawasan BBM Subsidi Diperketat, Pertamina Sanksi 161 SPBU di Sumbagsel",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/bisnis/dN6y6zpK-pengawasan-bbm-subsidi-diperketat-pertamina-sanksi-161-spbu-di-sumbagsel",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840173/8V12st0v4k.jpeg?w=720",
+   "t_id": "Pengawasan BBM Subsidi Diperketat, Pertamina Sanksi 161 SPBU di Sumbagsel",
+   "t_ko": "보조금을 받는 연료 감독 강화, Pertamina 제재, 남부 수마트라의 161개 SPBU"
+  },
+  {
+   "ts": "2026-09-04T22:13:32+07:00",
+   "date": "2026-09-04",
+   "time": "22:13",
+   "src": "Detik",
+   "t": "Kereta Mewah Nusantara Explorer Segera Meluncur",
+   "tags": [],
+   "url": "https://finance.detik.com/infrastruktur/d-8649160/kereta-mewah-nusantara-explorer-segera-meluncur",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/30/melihat-interior-kereta-mewah-nusantara-explore-yang-dijajal-prabowo-1785397124060_169.jpeg?w=360&q=90",
+   "t_ko": "누산타라 익스플로러(Nusantara Explorer) 럭셔리 열차 출시 예정",
+   "t_id": "Kereta Mewah Nusantara Explorer Segera Meluncur"
+  },
+  {
    "ts": "2026-09-04T22:00:45+07:00",
    "date": "2026-09-04",
    "time": "22:00",
@@ -16441,6 +16479,17 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260904210557-513.png",
    "t_ko": "남동부 술라웨시 주 정부, 지역 자산 관리를 위해 검찰청과 협력",
    "t_id": "Pemprov Sultra Gandeng Kejati Tata Aset Daerah"
+  },
+  {
+   "ts": "2026-09-04T21:59:00+07:00",
+   "date": "2026-09-04",
+   "time": "21:59",
+   "src": "Media Indonesia",
+   "t": "Pangan dan Gizi Jadi Fondasi Indonesia Sehat dan Berdaya Saing",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/929916/pangan-dan-gizi-jadi-fondasi-indonesia-sehat-dan-berdaya-saing",
+   "t_id": "Pangan dan Gizi Jadi Fondasi Indonesia Sehat dan Berdaya Saing",
+   "t_ko": "식품과 영양은 건강하고 경쟁력 있는 인도네시아의 기초입니다"
   },
   {
    "ts": "2026-09-04T21:47:09+07:00",
@@ -16608,17 +16657,6 @@
    "t_id": "Hari Pelanggan Nasional 2026, Pertamina Patra Niaga Tebar Promo BBM dan Bright Gas"
   },
   {
-   "ts": "2026-09-04T21:06:00+07:00",
-   "date": "2026-09-04",
-   "time": "21:06",
-   "src": "Media Indonesia",
-   "t": "Danantara Paksa Rumah Sakit BUMN Lakukan Transformasi",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929884/danantara-paksa-rumah-sakit-bumn-lakukan-transformasi",
-   "t_ko": "Danantara, BUMN 병원에 혁신 추진",
-   "t_id": "Danantara Paksa Rumah Sakit BUMN Lakukan Transformasi"
-  },
-  {
    "ts": "2026-09-04T21:00:20+07:00",
    "date": "2026-09-04",
    "time": "21:00",
@@ -16727,6 +16765,18 @@
    "t_id": "Jika Indonesia Ingin Jadi Walfare State, Begini Konsekuensinya Menurut Ekonom"
   },
   {
+   "ts": "2026-09-04T20:23:00+07:00",
+   "date": "2026-09-04",
+   "time": "20:23",
+   "src": "Republika",
+   "t": "Ketua Apindo Soroti Pentingnya Peran CMO dalam Perusahaan",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tkui63484/ketua-apindo-soroti-pentingnya-peran-cmo-dalam-perusahaan",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260904220602-308.png",
+   "t_ko": "Apindo 회장은 회사에서 CMO 역할의 중요성을 강조합니다.",
+   "t_id": "Ketua Apindo Soroti Pentingnya Peran CMO dalam Perusahaan"
+  },
+  {
    "ts": "2026-09-04T20:12:31+07:00",
    "date": "2026-09-04",
    "time": "20:12",
@@ -16737,42 +16787,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/harpelnas-2026-direksi-bsi-turun-langsung-sambut-layani-nasabah-1788527397187_169.jpeg?w=360&q=90",
    "t_ko": "Harpelnas 2026, BSI 이사들이 직접 고객 환영 및 서비스 제공",
    "t_id": "Harpelnas 2026, Direksi BSI Turun Langsung Sambut & Layani Nasabah"
-  },
-  {
-   "ts": "2026-09-04T20:08:13+07:00",
-   "date": "2026-09-04",
-   "time": "20:08",
-   "src": "Jawa Pos",
-   "t": "Ekonom Ungkap Dua Guncangan yang Mengubah Masa Depan Ekonomi Indonesia: AI dan EV",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609040168/ekonom-ungkap-dua-guncangan-yang-mengubah-masa-depan-ekonomi-indonesia-ai-dan-ev",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/07/ilustrasi-pengguna-mobil-listrik-melakukan-pengisian-daya-pada-stasiun-pengisian-kendaraan-listrik-umum-spklu-yang-dikelola-pln-istimewa-V70Ah.webp",
-   "t_ko": "이코노미스트, 인도네시아 경제 미래 바꿀 두 충격 지목 — AI와 EV",
-   "t_id": "Ekonom Ungkap Dua Guncangan yang Mengubah Masa Depan Ekonomi Indonesia: AI dan EV"
-  },
-  {
-   "ts": "2026-09-04T20:04:49+07:00",
-   "date": "2026-09-04",
-   "time": "20:04",
-   "src": "Detik",
-   "t": "1,4 Juta Penerima Bansos Terindikasi Main Judi Online",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8649010/1-4-juta-penerima-bansos-terindikasi-main-judi-online",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2021/07/29/potret-warga-terima-bansos-tunai-saat-ppkm-5_169.jpeg?w=360&q=90",
-   "t_ko": "140만 명의 사회 부조 수혜자가 온라인 도박을 하는 것으로 나타남",
-   "t_id": "1,4 Juta Penerima Bansos Terindikasi Main Judi Online"
-  },
-  {
-   "ts": "2026-09-04T19:57:00+07:00",
-   "date": "2026-09-04",
-   "time": "19:57",
-   "src": "Katadata",
-   "t": "Beda Pola Elektabilitas Prabowo dan Pendahulunya di Tahun Kedua Pemerintahan",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/nasional/6a9ac022ade69/beda-pola-elektabilitas-prabowo-dan-pendahulunya-di-tahun-kedua-pemerintahan",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/2026_08_14-13_58_00_57ea1aba-97bd-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "집권 2년차 프라보워와 전임자들의 당선 가능성 패턴 차이",
-   "t_id": "Beda Pola Elektabilitas Prabowo dan Pendahulunya di Tahun Kedua Pemerintahan"
   }
  ],
  "kisi_news": [
@@ -16956,9 +16970,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.778%",
-   "d": 0.34,
-   "ytd": 14.77,
+   "v": "4.774%",
+   "d": 0.25,
+   "ytd": 14.68,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16979,9 +16993,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.14",
-   "d": 0.08,
-   "ytd": 0.88,
+   "v": "99.09",
+   "d": 0.03,
+   "ytd": 0.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16991,9 +17005,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "90.88",
-   "d": -1.24,
-   "ytd": 58.27,
+   "v": "90.48",
+   "d": -1.67,
+   "ytd": 57.58,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17003,9 +17017,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,468.8",
-   "d": -1.0,
-   "ytd": 3.31,
+   "v": "4,491.6",
+   "d": -0.49,
+   "ytd": 3.84,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17027,9 +17041,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,804",
-   "d": 0.15,
-   "ytd": 0.73,
+   "v": "16,834",
+   "d": 0.33,
+   "ytd": 0.91,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -23977,7 +23991,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-04 18:22",
-  "pc_age_min": 225,
+  "pc_age_min": 245,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
