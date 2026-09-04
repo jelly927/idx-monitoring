@@ -1948,8 +1948,9 @@ def _gemini_model(key):
         log("Gemini 모델 목록 실패", str(e)[:80]); _GEM["model"] = GEMINI_MODEL
     return _GEM["model"]
 AI_ANN_P = CACHE / "ann_ai.json"; AI_STK_P = CACHE / "stock_ai.json"
-def _gemini(prompt, max_tokens=1500, temperature=0.2):
-    """Gemini generateContent (REST). 실패 시 None. 404(모델 없음)면 모델을 다시 고른다"""
+def _gemini(prompt, max_tokens=1500, temperature=0.2, search=False):
+    """Gemini generateContent (REST). 실패 시 None. 404(모델 없음)면 모델을 다시 고른다.
+    search=True 면 구글 검색 그라운딩을 붙인다 — 모델이 거부(400)하면 자동으로 빼고 재시도한다."""
     key = _secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")
     if not key: return None
     if _GEM.get("fail", 0) >= 2: return None                 # 이번 빌드에서 연속 2회 실패(타임아웃·503)면 나머지는 건너뛴다 — 빌드 지연 방지
@@ -1957,7 +1958,18 @@ def _gemini(prompt, max_tokens=1500, temperature=0.2):
     try:
         gc = {"temperature": temperature, "maxOutputTokens": max_tokens, "responseMimeType": "application/json"}
         if not _GEM.get("nothink"): gc["thinkingConfig"] = {"thinkingBudget": 0}          # 속도 우선(추론 비활성). 모델이 거부하면 빼고 재시도
-        r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
+        use_search = bool(search) and not _GEM.get("nosearch")
+        def _body():
+            b = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": dict(gc)}
+            if use_search:
+                b["tools"] = [{"google_search": {}}]
+                b["generationConfig"].pop("responseMimeType", None)   # 그라운딩과 JSON 강제는 함께 못 쓴다
+            return b
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
+        r = requests.post(url, json=_body(), timeout=90 if use_search else 60)
+        if r.status_code == 400 and use_search:                                  # 모델이 검색 도구를 거부 → 빼고 재시도(이후 계속 제외)
+            _GEM["nosearch"] = True; use_search = False
+            r = requests.post(url, json=_body(), timeout=60)
         if r.status_code == 400 and not _GEM.get("nothink"):                      # 모델이 thinkingConfig 를 거부 → 빼고 재시도(이후 계속 제외)
             _GEM["nothink"] = True; gc.pop("thinkingConfig", None)
             r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
@@ -2133,9 +2145,31 @@ def catalyst_block(data, top=10):
     return out[:top]
 
 AI_IDX_P = CACHE / "index_ai.json"
+def _recent_ret(codes, days=6):
+    """ss_YYYYMMDD.json(IDX 일별 요약)에서 종목별 최근 N거래일 누적 등락률을 뽑는다.
+    '며칠 올랐으니 차익실현' 같은 판단의 근거로 쓴다. 파일이 없으면 빈 dict."""
+    import glob
+    fs = sorted(glob.glob(str(CACHE / "ss_*.json")))[-days:]
+    series = {}
+    for f in fs:
+        try: rows = json.loads(Path(f).read_text(encoding="utf-8"))
+        except Exception: continue
+        if not isinstance(rows, list): continue
+        for r in rows:
+            c = r.get("StockCode")
+            if c in codes:
+                cl = r.get("Close")
+                if cl: series.setdefault(c, []).append(float(cl))
+    out = {}
+    for c, v in series.items():
+        if len(v) >= 2 and v[0]:
+            out[c] = round((v[-1] / v[0] - 1) * 100, 2)
+    return out
+
+
 def ai_index(data, ttl_min=30):
-    """지수가 왜 움직였나 — 한 줄 요약(한/인니). 지수·수급·업종·상하위·해외지수·환율·뉴스를 근거로 판단.
-    호출 비용을 아끼려고 ttl_min 분 캐시. 근거가 약하면 빈 값으로 두고 화면에 아무것도 띄우지 않는다."""
+    """지수가 왜 움직였나 — 한 줄. 지수를 끌어내린(올린) 대형주를 먼저 특정하고, 그 원인을
+    뉴스·최근 며칠 주가 흐름·해외 변수에서 찾는다. 지수 등락 자체를 원인으로 쓰는 동어반복은 금지."""
     try: cache = json.loads(AI_IDX_P.read_text(encoding="utf-8"))
     except Exception: cache = {}
     now = now_wib()
@@ -2150,35 +2184,57 @@ def ai_index(data, ttl_min=30):
         return {"ko": cache.get("ko", ""), "id": cache.get("id", ""), "ts": ts} if cache.get("ko") else {}
 
     i = data.get("index") or {}
-    ixs = {x.get("code"): x for x in (data.get("indices") or [])}
-    comp = ixs.get("COMPOSITE") or {}
-    def top(key, n=5):
-        return ", ".join(f"{r.get('t')} {r.get('pct')}%" for r in (data.get(key) or [])[:n])
+    comp = next((x for x in (data.get("indices") or []) if x.get("code") == "COMPOSITE"), {})
+    stocks = [r for r in (data.get("stocks") or []) if r.get("mcap") and r.get("pct") is not None]
+    # 지수 기여도 근사 = 시가총액 × 등락률 (IHSG 는 시총가중. 유동주식 조정은 반영 못 하므로 근사치)
+    for r in stocks: r["_c"] = (r.get("mcap") or 0) * (r.get("pct") or 0)
+    stocks.sort(key=lambda r: r["_c"])
+    def brief(rows):
+        return [{"t": r.get("t"), "n": r.get("n"), "등락%": r.get("pct"),
+                 "시총_조IDR": round((r.get("mcap") or 0) / 1e12, 1)} for r in rows]
+    drag, lift = brief(stocks[:8]), brief(list(reversed(stocks[-5:])))
+    rets = _recent_ret({r["t"] for r in drag + lift})
+    for r in drag + lift: r["최근5일누적%"] = rets.get(r["t"])
+
     ctx = {
         "IHSG": {"현재": comp.get("px"), "전일종가": comp.get("prev"), "전일대비%": comp.get("pct"),
-                  "장중고": i.get("high"), "장중저": i.get("low"), "YTD%": i.get("ytd")},
-        "거래대금_IDR": i.get("value_idr"),
-        "상승_하락_보합": [i.get("adv"), i.get("dec"), i.get("unch")],
+                  "장중고": i.get("high"), "장중저": i.get("low"), "YTD%": i.get("ytd"), "1개월%": i.get("m1")},
+        "거래대금_IDR": i.get("value_idr"), "상승_하락_보합": [i.get("adv"), i.get("dec"), i.get("unch")],
         "외국인순매수_IDR": i.get("foreign_net_idr"), "외국인기준일": i.get("foreign_date"),
+        "지수를_끌어내린_종목": drag, "지수를_끌어올린_종목": lift,
         "업종": [{"명": x.get("name"), "등락%": x.get("pct")} for x in (data.get("sectors") or [])],
-        "상승상위": top("gainers"), "하락상위": top("losers"), "거래대금상위": top("value"),
         "해외지수": [{"명": g.get("name"), "등락%": g.get("pct")} for g in (data.get("global") or [])],
         "환율_금리": [{"항목": m.get("k"), "값": m.get("v"), "전일대비": m.get("d")} for m in (data.get("macro") or [])[:5]],
-        "시장뉴스": [n.get("t_id") or n.get("t") for n in (data.get("market_news") or [])[:12]],
+        "시장뉴스": [n.get("t_id") or n.get("t") for n in (data.get("market_news") or [])[:14]],
+        "종목뉴스": [f"{','.join(n.get('tags') or [])}: {n.get('t_id') or n.get('t')}" for n in (data.get("news") or [])[:20]],
     }
-    prompt = ("아래는 오늘 인도네시아 증시(IHSG) 데이터다. 지수가 왜 이렇게 움직였는지 한 문장으로 설명하라.\n"
-              "규칙: (1) 아래 데이터에 있는 근거만 쓴다. (2) '데이터 → 원인' 구조로, 등락률과 핵심 원인을 한 문장에 담는다. "
-              "(3) 추정형 표현('~로 보인다') 금지, '~ 영향' '~에 기인' 같은 근거 기반 표현 사용. "
-              "(4) 증권사 리포트 문체(명사형 종결), 숫자는 천 단위 콤마. (5) 근거가 뚜렷하지 않으면 수급·업종 흐름만 사실대로 쓴다.\n"
-              "출력은 JSON 하나: {\"ko\": \"한국어 한 문장(90자 이내)\", \"id\": \"Bahasa Indonesia satu kalimat\"}\n\n"
-              + json.dumps(ctx, ensure_ascii=False))
-    j = _json_loads_loose(_gemini(prompt, 400))
+    prompt = (
+        "오늘 인도네시아 증시(IHSG) 데이터다. 지수가 왜 이렇게 움직였는지 한 문장으로 쓴다.\n\n"
+        "[작성 순서]\n"
+        "1. 지수를_끌어내린_종목 / 끌어올린_종목 과 업종 등락을 보고, 어느 업종·종목이 지수를 움직였는지 먼저 특정한다.\n"
+        "2. 그 다음 '왜 그 종목들이 움직였는지'를 아래 셋 중에서 찾는다.\n"
+        "   (a) 시장뉴스·종목뉴스에 나온 사건\n"
+        "   (b) 주가 흐름 — 최근5일누적% 가 크게 플러스인 종목이 오늘 하락했다면 차익실현 물량 출회로 본다\n"
+        "   (c) 해외지수·환율·금리 등 외부 변수\n"
+        "3. 위 데이터로 원인이 잡히지 않으면 구글 검색으로 오늘자 인도네시아 증시 관련 기사를 찾아 근거로 삼는다.\n\n"
+        "[금지] 지수 등락을 그 자체의 원인으로 쓰는 동어반복. 아래는 전부 틀린 문장이다.\n"
+        "  - '하락 종목 우위에 기인하여 하락'  - '대다수 업종 하락으로 지수 하락'  - '매도 우위로 약세 마감'\n"
+        "  이런 건 결과를 다시 말한 것일 뿐 원인이 아니다.\n\n"
+        "[좋은 예]\n"
+        "  - '전일 급등한 은행주(BBRI·BBCA·BMRI) 차익실현 물량 출회로 IHSG 0.41% 하락.'\n"
+        "  - '미 국채금리 상승에 따른 외국인 매도와 운송주 약세로 IHSG 0.41% 하락.'\n"
+        "  - '니켈 가격 반등에 따른 소재주 강세로 IHSG 0.35% 상승.'\n\n"
+        "[문체] 증권사 리포트체(명사형 종결), 90자 이내, 숫자는 천 단위 콤마. "
+        "추정형('~로 보인다') 금지, 근거 기반 표현('~ 영향', '~에 따른') 사용. 종목은 티커로 표기.\n"
+        "출력은 JSON 하나만: {\"ko\": \"한국어 한 문장\", \"id\": \"Bahasa Indonesia satu kalimat\"}\n\n"
+        + json.dumps(ctx, ensure_ascii=False))
+    j = _json_loads_loose(_gemini(prompt, 700, search=True))
     if not j or not j.get("ko"):
         return {"ko": cache.get("ko", ""), "id": cache.get("id", ""), "ts": ts} if cache.get("ko") else {}
     out = {"ko": str(j.get("ko", ""))[:200], "id": str(j.get("id", ""))[:250], "ts": now.isoformat()}
     try: AI_IDX_P.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
     except Exception: pass
-    log("지수 AI 요약 갱신:", out["ko"][:60])
+    log("지수 AI 요약 갱신:", out["ko"][:70])
     return out
 
 def ai_stocks(data, batch=10, ttl_min=60, per_build=40):
