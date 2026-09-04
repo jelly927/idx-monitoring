@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 17:52",
+ "updated": "2026-09-04 17:55",
  "delay_min": 0,
- "fx_basis": "13.05 IDR/KRW · USD/IDR 17,633 · USD/KRW 1,351 · 17:15 Yahoo",
- "idr_per_krw": 13.0531,
+ "fx_basis": "13.06 IDR/KRW · USD/IDR 17,633 · USD/KRW 1,351 · 17:15 Yahoo",
+ "idr_per_krw": 13.0555,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -81,19 +81,19 @@
     6665.598,
     6664.307,
     6664.884,
-    6664.683,
-    6662.32,
+    6663.683,
+    6664.332,
     6664.838,
-    6665.315,
-    6660.651,
-    6662.27,
+    6665.493,
+    6661.656,
+    6664.431,
     6662.817,
-    6665.24,
-    6665.633,
-    6666.18,
-    6666.231,
-    6665.04,
-    6667.275,
+    6665.395,
+    6662.918,
+    6661.73,
+    6664.834,
+    6662.868,
+    6663.754,
     6663.532,
     6658.867,
     6661.714,
@@ -209,15 +209,15 @@
     660.984,
     661.149,
     660.933,
-    660.551,
-    660.268,
-    660.444,
-    660.781,
+    660.709,
+    661.058,
+    660.397,
+    660.273,
     660.972,
-    660.743,
-    661.128,
-    660.941,
-    660.874,
+    661.252,
+    660.427,
+    661.075,
+    660.833,
     661.388,
     660.534,
     661.39,
@@ -337,12 +337,12 @@
   "m1": 5.01,
   "value_idr": 15001276676523,
   "volume": 34285124590,
-  "rank_src": "Yahoo 15분 지연 · 835종목 · 종가 · 외국인·공시 PC 09-04 17:37",
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-04 17:47",
   "rank_asof": null,
   "rank_date": "2026-09-04",
   "adv": 280,
   "dec": 380,
-  "unch": 175,
+  "unch": 176,
   "foreign_net_idr": -311796322852.979,
   "foreign_buy": 3302821255464.0825,
   "foreign_sell": 3614617578317.0615,
@@ -6273,6 +6273,22 @@
    "lo": 110.0,
    "ratio": 1.0,
    "fnet": 28163132.932893116,
+   "live": 0
+  },
+  {
+   "t": "ARNA",
+   "n": "Arwana Citramulia",
+   "px": 510.0,
+   "prev": 510.0,
+   "pct": 0.0,
+   "val": 1650513000.0,
+   "vol": 3236300.0,
+   "sh": 7341430976,
+   "mcap": 3744129797760.0,
+   "hi": 515.0,
+   "lo": 505.0,
+   "ratio": 1.1,
+   "fnet": 263732671.44578686,
    "live": 0
   },
   {
@@ -14748,11 +14764,11 @@
   {
    "name": "산업재",
    "name_id": "Perindustrian",
-   "n": 55,
+   "n": 56,
    "adv": 19,
    "dec": 23,
-   "val": 1090342313433.3329,
-   "mcap": 472054985655964.0,
+   "val": 1091992826433.3329,
+   "mcap": 475799115453724.0,
    "top": [
     {
      "t": "ASII",
@@ -14791,8 +14807,8 @@
      "pct": 2.88
     },
     {
-     "t": "VISI",
-     "pct": -1.53
+     "t": "ARNA",
+     "pct": 0
     }
    ],
    "pct": -0.27
@@ -17177,9 +17193,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.11",
-   "d": 0.05,
-   "ytd": 0.85,
+   "v": "99.09",
+   "d": 0.03,
+   "ytd": 0.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17189,9 +17205,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "90.68",
-   "d": -1.46,
-   "ytd": 57.92,
+   "v": "90.59",
+   "d": -1.55,
+   "ytd": 57.77,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17201,9 +17217,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,516.3",
-   "d": 0.06,
-   "ytd": 4.41,
+   "v": "4,519.9",
+   "d": 0.14,
+   "ytd": 4.49,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17225,9 +17241,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,767",
-   "d": -0.07,
-   "ytd": 0.51,
+   "v": "16,770",
+   "d": -0.05,
+   "ytd": 0.53,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18179,6 +18195,17 @@
   },
   {
    "date": "2026-09-04",
+   "t": "BBCA",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-04",
    "t": "MEDC",
    "kind": "corp",
    "imp": 3,
@@ -18246,17 +18273,6 @@
   {
    "date": "2026-09-04",
    "t": "SOFA",
-   "kind": "corp",
-   "imp": 3,
-   "title": "실적 공시 · Penyampaian Laporan Keuangan Interim (KOREKSI)",
-   "src": "IDX 공시",
-   "country": "ID",
-   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan Interim (KOREKSI)",
-   "title_id": "Kinerja · Penyampaian Laporan Keuangan Interim (KOREKSI)"
-  },
-  {
-   "date": "2026-09-04",
-   "t": "CBUT",
    "kind": "corp",
    "imp": 3,
    "title": "실적 공시 · Penyampaian Laporan Keuangan Interim (KOREKSI)",
@@ -19700,6 +19716,17 @@
  ],
  "announcements": [
   {
+   "ts": "2026-09-04T17:36:44+07:00",
+   "date": "2026-09-04",
+   "time": "17:36",
+   "t": "INDY",
+   "type": "STOCK",
+   "title": "Hasil dan Rencana Pengalihan Saham Treasuri Hasil Pembelian Kembali Saham",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/0cc49058bf_3e9905835c.pdf",
+   "title_id": "Hasil dan Rencana Pengalihan Saham Treasuri Hasil Pembelian Kembali Saham",
+   "title_ko": "자사주 매입 결과 및 자사주 처분 계획"
+  },
+  {
    "ts": "2026-09-04T17:33:55+07:00",
    "date": "2026-09-04",
    "time": "17:33",
@@ -19761,8 +19788,8 @@
    "type": "STOCK",
    "title": "Capaian PT Puradelta Lestari Tbk pada Semester Pertama 2026, Data Center Jadi Penggerak Utama ",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/11544c4f77_4a77e18fe6.pdf",
-   "title_id": "Capaian PT Puradelta Lestari Tbk pada Semester Pertama 2026, Data Center Jadi Penggerak Utama",
    "title_ko": "PT Puradelta Lestari Tbk 2026년 상반기 실적 — 데이터센터가 주요 성장 동력",
+   "title_id": "Capaian PT Puradelta Lestari Tbk pada Semester Pertama 2026, Data Center Jadi Penggerak Utama",
    "ai_ko": "PT Puradelta Lestari Tbk.는 2026년 상반기 실적 보고를 통해 데이터 센터 부문이 주요 성장 동력으로 작용했음을 공시함. 자사주 매입, 배당, 유상증자, 지분 변동에 관한 사항은 미기재됨.",
    "ai_id": "PT Puradelta Lestari Tbk. menyampaikan laporan kinerja semester pertama tahun 2026 dengan sektor pusat data sebagai penggerak utama. Informasi mengenai pembelian kembali saham, dividen, penambahan modal, dan divestasi atau akuisisi tidak dicantumkan.",
    "ai_tags": [
@@ -19837,8 +19864,8 @@
    "type": "STOCK",
    "title": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Tahunan",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/49c3650bfe_e27d3a2443.pdf",
-   "title_id": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Tahunan",
    "title_ko": "정기주주총회 의사록 요약",
+   "title_id": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Tahunan",
    "ai_ko": "PT Bersama Zatta Jaya Tbk(ZATA)는 2026년 9월 2일에 개최된 정기 주주총회에서 2025 회계연도 재무제표를 승인함. 당기순이익 전액을 결손금 보전에 사용함에 따라 2025 회계연도 현금 배당은 실시하지 않음.",
    "ai_id": "PT Bersama Zatta Jaya Tbk menyelenggarakan Rapat Umum Pemegang Saham Tahunan pada tanggal 2 September 2026 dan menyetujui Laporan Keuangan Tahun Buku 2025. Perseroan memutuskan untuk mengalokasikan seluruh laba bersih tahun buku 2025 untuk mengurangi akumulasi saldo defisit sehingga tidak membagikan dividen.",
    "ai_tags": [
@@ -19884,8 +19911,8 @@
    "type": "STOCK",
    "title": "Tanggapan atas Surat Pengumuman Unusual Market Activity (UMA)",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/3cebb16d93_7bf6ce026b.pdf",
-   "title_id": "Tanggapan atas Pengumuman Unusual Market Activity (UMA)",
-   "title_ko": "이상거래(UMA) 공시 서한에 대한 답변"
+   "title_ko": "이상거래(UMA) 공시 서한에 대한 답변",
+   "title_id": "Tanggapan atas Pengumuman Unusual Market Activity (UMA)"
   },
   {
    "ts": "2026-09-04T17:08:40+07:00",
@@ -22428,8 +22455,8 @@
    "type": "STOCK",
    "title": "Laporan Keterbukaan Informasi Hasil Pembelian Kembali Saham PT Erajaya Swasembada Tbk ",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/a918bbd1dc_bbfbe20696.pdf",
-   "title_id": "Laporan Keterbukaan Informasi Hasil Pembelian Kembali Saham PT Erajaya Swasembada Tbk",
-   "title_ko": "PT Erajaya Swasembada Tbk 자사주 매입 결과 정보공개 보고"
+   "title_ko": "PT Erajaya Swasembada Tbk 자사주 매입 결과 정보공개 보고",
+   "title_id": "Laporan Keterbukaan Informasi Hasil Pembelian Kembali Saham PT Erajaya Swasembada Tbk"
   },
   {
    "ts": "2026-09-02T18:00:00+07:00",
@@ -23913,8 +23940,8 @@
    "type": "STOCK",
    "title": "Penundaan Rapat Umum Pemegang Saham Luar Biasa dan Independen",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e0a30ad698_ce52f62d6c.pdf",
-   "title_id": "Penundaan Rapat Umum Pemegang Saham Luar Biasa dan Independen",
-   "title_ko": "임시 및 독립 주주총회 연기"
+   "title_ko": "임시 및 독립 주주총회 연기",
+   "title_id": "Penundaan Rapat Umum Pemegang Saham Luar Biasa dan Independen"
   },
   {
    "ts": "2026-09-01T19:29:56+07:00",
@@ -24034,8 +24061,8 @@
    "type": "STOCK",
    "title": "Penyampaian Pengumuman pada Surat Kabar tentang Pengumuman Pasca Pengambilalihan Saham dalam PT Maybank Sekuritas Indonesia dan PT Maybank Asset Management oleh PT Bank Maybank Indonesia Tbk.",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/d9c625e2eb_08dfbafc6b.pdf",
-   "title_id": "Penyampaian Pengumuman pada Surat Kabar tentang Pengumuman Pasca Pengambilalihan Saham dalam PT Maybank Sekuritas Indonesia dan PT Maybank Asset Management oleh PT Bank Maybank Indonesia Tbk.",
-   "title_ko": "PT Bank Maybank Indonesia Tbk의 PT Maybank Sekuritas Indonesia 및 PT Maybank Asset Management 주식 인수 완료 공고 신문 게재 제출"
+   "title_ko": "PT Bank Maybank Indonesia Tbk의 PT Maybank Sekuritas Indonesia 및 PT Maybank Asset Management 주식 인수 완료 공고 신문 게재 제출",
+   "title_id": "Penyampaian Pengumuman pada Surat Kabar tentang Pengumuman Pasca Pengambilalihan Saham dalam PT Maybank Sekuritas Indonesia dan PT Maybank Asset Management oleh PT Bank Maybank Indonesia Tbk."
   },
   {
    "ts": "2026-09-01T18:04:45+07:00",
@@ -24067,8 +24094,8 @@
    "type": "STOCK",
    "title": "Perubahan anggota Direksi dan/atau anggota Dewan Komisaris pada Perusahaan Terkendali BCA ",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/ca1603c553_f4c99b52a8.pdf",
-   "title_id": "Perubahan anggota Direksi dan/atau anggota Dewan Komisaris pada Perusahaan Terkendali BCA",
-   "title_ko": "BCA 종속회사 이사 및/또는 감사위원회 구성원 변경"
+   "title_ko": "BCA 종속회사 이사 및/또는 감사위원회 구성원 변경",
+   "title_id": "Perubahan anggota Direksi dan/atau anggota Dewan Komisaris pada Perusahaan Terkendali BCA"
   },
   {
    "ts": "2026-09-01T17:57:49+07:00",
@@ -24124,34 +24151,12 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/74493ac8d4_19dbaba655.pdf",
    "title_ko": "주가·거래량 변동성에 대한 소명",
    "title_id": "Penjelasan atas Volatilitas Transaksi"
-  },
-  {
-   "ts": "2026-09-01T17:46:44+07:00",
-   "date": "2026-09-01",
-   "time": "17:46",
-   "t": "TRIS",
-   "type": "STOCK",
-   "title": "Pembagian dividen interim",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/5b8ad1e57d_db9f6b3b88.pdf",
-   "title_ko": "중간배당 지급",
-   "title_id": "Pembagian dividen interim"
-  },
-  {
-   "ts": "2026-09-01T17:43:59+07:00",
-   "date": "2026-09-01",
-   "time": "17:43",
-   "t": "IKPM",
-   "type": "STOCK",
-   "title": "Penjelasan atas Volatilitas Transaksi",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/15bee9a7b0_6fc4ae4be0.pdf",
-   "title_ko": "주가·거래량 변동성에 대한 소명",
-   "title_id": "Penjelasan atas Volatilitas Transaksi"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-04 17:37",
+  "idx_from_pc": "2026-09-04 17:47",
   "bi": null,
   "hist_days": 20,
   "calendar": "investing.com"
