@@ -80,10 +80,11 @@ async function feed() {
 // ── 질문에 걸리는 종목만 골라 컨텍스트를 줄인다 (전체 835종목 = 67KB, 매 요청 넣으면 낭비) ──
 function sliceCtx(c, text) {
   const { stocks, ...base } = c;
-  const up = (text || "").toUpperCase(), low = (text || "").toLowerCase();
+  const src = text || "", low = src.toLowerCase();
   const hit = {};
   let n = 0;
-  for (const m of up.matchAll(/\b[A-Z]{4}\b/g)) {
+  // 티커는 대문자로 적힌 것만 인정한다 (소문자까지 올리면 news/high 같은 단어가 티커로 오인됨)
+  for (const m of src.matchAll(/\b[A-Z]{4}\b/g)) {
     const t = m[0];
     if (stocks[t] && !hit[t] && n < MAX_STOCKS) { hit[t] = stocks[t]; n++; }
   }
