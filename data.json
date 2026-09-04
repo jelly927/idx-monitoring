@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 13:03",
+ "updated": "2026-09-04 13:28",
  "delay_min": 0,
- "fx_basis": "13.05 IDR/KRW · USD/IDR 17,638 · USD/KRW 1,351 · 12:33 Yahoo",
- "idr_per_krw": 13.0518,
+ "fx_basis": "13.06 IDR/KRW · USD/IDR 17,640 · USD/KRW 1,351 · 13:03 Yahoo",
+ "idr_per_krw": 13.0571,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -277,9 +277,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17638.0,
+   "px": 17640.0,
    "prev": 17684.0,
-   "pct": -0.26,
+   "pct": -0.25,
    "spark": [
     17684.0,
     17684.0,
@@ -304,10 +304,11 @@
     17635.0,
     17640.0,
     17640.0,
-    17638.0
+    17638.0,
+    17640.0
    ],
    "inv": true,
-   "asof": "12:33",
+   "asof": "13:03",
    "high": 17684.0,
    "low": 17620.0
   },
@@ -342,7 +343,7 @@
   "value_idr": 18607401563700,
   "volume": 39305835265,
   "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-04 11:58",
-  "rank_asof": "13:01",
+  "rank_asof": "13:27",
   "rank_date": "2026-09-04",
   "adv": 289,
   "dec": 342,
@@ -15353,10 +15354,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6720.27,
-   "prev": 6598.23,
-   "pct": 1.85,
-   "asof": "12:40",
+   "px": 6706.56,
+   "prev": 6579.48,
+   "pct": 1.93,
+   "asof": "12:55",
    "live": true,
    "spark": [
     6677.11,
@@ -15427,17 +15428,20 @@
     6727.68,
     6733.4,
     6722.51,
-    6720.27
+    6716.45,
+    6708.63,
+    6703.8,
+    6706.56
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65177.78,
+   "px": 65049.74,
    "prev": 64269.48,
-   "pct": 1.41,
-   "asof": "12:45",
+   "pct": 1.21,
+   "asof": "13:10",
    "live": true,
    "spark": [
     64439.01,
@@ -15499,17 +15503,22 @@
     65154.61,
     65142.43,
     65152.36,
-    65177.78
+    65163.2,
+    65085.13,
+    65031.66,
+    65046.91,
+    65002.68,
+    65049.74
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25691.08,
+   "px": 25716.94,
    "prev": 25213.31,
-   "pct": 1.89,
-   "asof": "12:45",
+   "pct": 2.0,
+   "asof": "13:10",
    "live": true,
    "spark": [
     25696.61,
@@ -15553,7 +15562,12 @@
     25676.49,
     25665.45,
     25682.23,
-    25691.08
+    25700.2,
+    25679.79,
+    25689.38,
+    25712.46,
+    25705.76,
+    25716.94
    ]
   }
  ],
@@ -15618,6 +15632,77 @@
  },
  "news": [
   {
+   "ts": "2026-09-04T13:20:00+07:00",
+   "date": "2026-09-04",
+   "time": "13:20",
+   "src": "Bloomberg Technoz",
+   "t": "CUAN Negosiasi Ambil Kendali Singaraja Putra (SINI),",
+   "tags": [
+    "CUAN",
+    "SINI"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120515/cuan-negosiasi-ambil-kendali-singaraja-putra-sini",
+   "img": "https://images.bloombergtechnoz.com/data/2023/10/image-20231113102256.jpg",
+   "t_ko": "Singaraja Putra (여기)를 장악하기위한 CUAN 협상,",
+   "t_id": "CUAN Negosiasi Ambil Kendali Singaraja Putra (SINI),"
+  },
+  {
+   "ts": "2026-09-04T13:20:00+07:00",
+   "date": "2026-09-04",
+   "time": "13:20",
+   "src": "Katadata",
+   "t": "Fortune Indonesia Investment Forum 2026, Peluang di Tengah Dinamika Global",
+   "tags": [
+    "FORU"
+   ],
+   "url": "https://katadata.co.id/berita/industri/6a9a6339a0cc3/fortune-indonesia-investment-forum-2026-peluang-di-tengah-dinamika-global",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Fortune_Indonesia_Investment_Forum_FIIF_2026-2026_09_04-13_12_48_eadf555bef2f98a69e40048659e54825_620x413_thumb.jpg",
+   "t_id": "Fortune Indonesia Investment Forum 2026, Peluang di Tengah Dinamika Global",
+   "t_ko": "포춘 인도네시아 투자 포럼 2026, 글로벌 역학 속의 기회"
+  },
+  {
+   "ts": "2026-09-04T13:14:32+07:00",
+   "date": "2026-09-04",
+   "time": "13:14",
+   "src": "Bloomberg Technoz",
+   "t": "Rights Issue BUVA Rp1,53 T Makin Dekat, Dibayangi Sentimen PFII",
+   "tags": [
+    "BUVA"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120520/rights-issue-buva-rp1-53-t-makin-dekat-dibayangi-sentimen-pfii",
+   "img": "https://images.bloombergtechnoz.com/data/2026/01/image-20260129130014.jpeg",
+   "t_ko": "BUVA 권리 문제 IDR 1.53 T 점점 더 가까워지고 PFII 감정에 가려짐",
+   "t_id": "Rights Issue BUVA Rp1,53 T Makin Dekat, Dibayangi Sentimen PFII"
+  },
+  {
+   "ts": "2026-09-04T13:05:05+07:00",
+   "date": "2026-09-04",
+   "time": "13:05",
+   "src": "Liputan6",
+   "t": "Direktur AKR Corporindo Lepas 2 Juta Saham AKRA",
+   "tags": [
+    "AKRA"
+   ],
+   "url": "https://www.liputan6.com/saham/read/8284518/direktur-akr-corporindo-lepas-2-juta-saham-akra",
+   "img": "https://cdn1-production-images-kly.akamaized.net/-7BckhRnBYo5liqIOdphEpiliRg=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4112072/original/006568500_1659528503-IHSG_Ditutup_Menguat-Angga-2.jpg",
+   "t_id": "Direktur AKR Corporindo Lepas 2 Juta Saham AKRA",
+   "t_ko": "AKR Corporindo 이사, 200만 AKRA 주식 출시"
+  },
+  {
+   "ts": "2026-09-04T13:01:16+07:00",
+   "date": "2026-09-04",
+   "time": "13:01",
+   "src": "Detik",
+   "t": "BGN Bakal Pindah ke Gedung Telkom, Bayar Sewa tapi Disebut Tak Mahal",
+   "tags": [
+    "TLKM"
+   ],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648207/bgn-bakal-pindah-ke-gedung-telkom-bayar-sewa-tapi-disebut-tak-mahal",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/03/kantor-badan-gizi-nasional-bgn-1780455615624_169.jpeg?w=360&q=90",
+   "t_id": "BGN Bakal Pindah ke Gedung Telkom, Bayar Sewa tapi Disebut Tak Mahal",
+   "t_ko": "BGN은 Telkom 빌딩으로 이전하고 임대료를 지불하지만 비싸지 않다고 말합니다."
+  },
+  {
    "ts": "2026-09-04T12:58:49+07:00",
    "date": "2026-09-04",
    "time": "12:58",
@@ -15628,8 +15713,8 @@
    ],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648193/balik-arah-dari-rugi-id-food-cetak-laba-rp-1-34-t",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/id-food-1788501238663_169.jpeg?w=360&q=90",
-   "t_id": "Balik Arah dari Rugi, ID FOOD Cetak Laba Rp 1,34 T",
-   "t_ko": "손실을 반전하여 ID FOOD는 IDR 1.34 T의 이익을 인쇄합니다."
+   "t_ko": "손실을 반전하여 ID FOOD는 IDR 1.34 T의 이익을 인쇄합니다.",
+   "t_id": "Balik Arah dari Rugi, ID FOOD Cetak Laba Rp 1,34 T"
   },
   {
    "ts": "2026-09-04T12:50:00+07:00",
@@ -15643,8 +15728,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/petrindo-cuan-siap-akuisisi-saham-mayoritas-singaraja-putra-sini",
    "img": "https://img.idxchannel.com/media/439/images/idx/2025/11/13/petrindo_cuan.jpg",
-   "t_id": "Petrindo (CUAN) Siap Akuisisi Saham Mayoritas Singaraja Putra (SINI)",
-   "t_ko": "Petrindo(CUAN)가 Singaraja Putra(SINI)의 최대 지분을 인수할 준비가 되었습니다."
+   "t_ko": "Petrindo(CUAN)가 Singaraja Putra(SINI)의 최대 지분을 인수할 준비가 되었습니다.",
+   "t_id": "Petrindo (CUAN) Siap Akuisisi Saham Mayoritas Singaraja Putra (SINI)"
   },
   {
    "ts": "2026-09-04T12:24:09+07:00",
@@ -15680,14 +15765,14 @@
    "date": "2026-09-04",
    "time": "12:10",
    "src": "Katadata",
-   "t": "Jejak Kreditur Senyap di Balik Proyek Tambang Gayo Mineral Grup Bakrie (DEWA)",
+   "t": "Jejak Kreditur Senyap Grup Bakrie (DEWA) di Balik Proyek Tambang Gayo Mineral",
    "tags": [
     "DEWA"
    ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9a52b34f450/jejak-kreditur-senyap-di-balik-proyek-tambang-gayo-mineral-grup-bakrie-dewa",
+   "url": "https://katadata.co.id/finansial/bursa/6a9a633040915/jejak-kreditur-senyap-grup-bakrie-dewa-di-balik-proyek-tambang-gayo-mineral",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/20/PT_Darma_Henwa_Tbk_-_DEWA-2026_07_20-18_31_48_d76157975dd5b20e315fe960abe466b5_620x413_thumb.jpg",
-   "t_ko": "바크리 그룹(DEWA)의 가요 광물 광산 프로젝트 뒤에 숨은 채권자들의 흔적",
-   "t_id": "Jejak Kreditur Senyap di Balik Proyek Tambang Gayo Mineral Grup Bakrie (DEWA)"
+   "t_id": "Jejak Kreditur Senyap Grup Bakrie (DEWA) di Balik Proyek Tambang Gayo Mineral",
+   "t_ko": "가요 광물 채굴 프로젝트 뒤에 숨은 바크리 그룹(DEWA) 침묵 채권자들의 흔적"
   },
   {
    "ts": "2026-09-04T11:49:00+07:00",
@@ -16068,20 +16153,6 @@
    "t_id": "IHSG Berpotensi Lanjut Menguat Hari Ini, Cek 4 Saham Pilihan MNC Sekuritas!"
   },
   {
-   "ts": "2026-09-04T07:00:00+07:00",
-   "date": "2026-09-04",
-   "time": "07:00",
-   "src": "IDX Channel",
-   "t": "MR.D.I.Y (MDIY) Resmikan Toko ke-1.400, Ekspansi 2026 Tetap Sesuai Target",
-   "tags": [
-    "MDIY"
-   ],
-   "url": "https://www.idxchannel.com/market-news/mrdiy-mdiy-resmikan-toko-ke-1400-ekspansi-2026-tetap-sesuai-target",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/04/mdiy.jpg",
-   "t_ko": "MR.D.I.Y(MDIY) 1,400번째 매장 개점 — 2026년 확장 목표 유지",
-   "t_id": "MR.D.I.Y (MDIY) Resmikan Toko ke-1.400, Ekspansi 2026 Tetap Sesuai Target"
-  },
-  {
    "ts": "2026-09-04T06:30:13+07:00",
    "date": "2026-09-04",
    "time": "06:30",
@@ -16153,20 +16224,6 @@
    "t_id": "Sudaryono Benarkan BGN akan Berkantor di Grha Merah Putih, Telkom Diminta Pindah"
   },
   {
-   "ts": "2026-09-03T23:35:23+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Detik",
-   "t": "BNI Tanam 258 Ribu Mangrove, Dorong Ekonomi Pesisir Lewat Kepiting Soka-Ekowisata",
-   "tags": [
-    "BBNI"
-   ],
-   "url": "https://finance.detik.com/ekonomi-hijau/d-8647582/bni-tanam-258-ribu-mangrove-dorong-ekonomi-pesisir-lewat-kepiting-soka-ekowisata",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/anugerah-ekonomi-hijau-bni-1788453299892_169.jpeg?w=360&q=90",
-   "t_ko": "BNI 맹그로브 25.8만 그루 식재 — 소프트셸 크랩·생태관광으로 연안 경제 지원",
-   "t_id": "BNI Tanam 258 Ribu Mangrove, Dorong Ekonomi Pesisir Lewat Kepiting Soka-Ekowisata"
-  },
-  {
    "ts": "2026-09-03T19:56:26+07:00",
    "date": "2026-09-03",
    "time": "09/03",
@@ -16207,20 +16264,6 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/_t906H__oXprF9kI7cWrrh8Nlzo=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4617857/original/062935500_1697787631-Summarecon_Mall_Bekasi_01.jpg",
    "t_ko": "Erajaya(ERAA), 9/4부터 Rp5,000억 자사주 매입 개시",
    "t_id": "Erajaya Siapkan Buyback Saham Rp 500 Miliar Mulai 4 September 2026"
-  },
-  {
-   "ts": "2026-09-03T15:05:53+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Jawa Pos",
-   "t": "Menuju 28 Tahun, Bank Mandiri Hadirkan Livin’ Berbagi Rp28 bagi Pekerja Lapangan",
-   "tags": [
-    "BMRI"
-   ],
-   "url": "https://www.jawapos.com/ekonomi/2609030065/menuju-28-tahun-bank-mandiri-hadirkan-livin-berbagi-rp28-bagi-pekerja-lapangan",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/03/menyambut-28-tahun-perjalanan-bank-mandiri-dimaknai-sebagai-kesempatan-untuk-terus-tumbuh-bersama-masyarakat-dan-berbagi-manfaat-bagi-sesama-kURRp.webp",
-   "t_ko": "Bank Mandiri 창립 28주년 앞두고 현장 근로자 대상 'Livin' Berbagi Rp28' 캠페인",
-   "t_id": "Menuju 28 Tahun, Bank Mandiri Hadirkan Livin' Berbagi Rp28 bagi Pekerja Lapangan"
   },
   {
    "ts": "2026-09-03T13:49:36+07:00",
@@ -16481,20 +16524,6 @@
    "t_id": "Anak Usaha TPIA Buka Akses Terminal Umum, 3 Dermaga Jadi Andalan"
   },
   {
-   "ts": "2026-09-01T15:28:03+07:00",
-   "date": "2026-09-01",
-   "time": "09/01",
-   "src": "Liputan6",
-   "t": "Laba Emiten PSAB Melonjak 803% hingga Semester I 2026",
-   "tags": [
-    "PSAB"
-   ],
-   "url": "https://www.liputan6.com/saham/read/8282222/laba-emiten-psab-melonjak-803-hingga-semester-i-2026",
-   "img": "https://cdn1-production-images-kly.akamaized.net/Ct5wF0BiVtd0QTo_r75xrLcr-Hs=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4857433/original/009395600_1717852813-WhatsApp_Image_2024-06-08_at_10.14.15.jpeg",
-   "t_ko": "PSAB 상반기 순이익 803% 급증",
-   "t_id": "Laba Emiten PSAB Melonjak 803% hingga Semester I 2026"
-  },
-  {
    "ts": "2026-08-24T08:33:00+07:00",
    "date": "2026-08-24",
    "time": "08/24",
@@ -16553,6 +16582,126 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T13:23:44+07:00",
+   "date": "2026-09-04",
+   "time": "13:23",
+   "src": "Jawa Pos",
+   "t": "Jika Indonesia Ingin Jadi Walfare State, Begini Konsekuensinya Menurut Ekonom",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609040169/jika-indonesia-ingin-jadi-walfare-state-begini-konsekuensinya-menurut-ekonom",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/06/01/wajib-pajak-membuka-lapor-pajak-di-web-coretax-di-jakarta-selasa-1122025-hanung-hambarajawa-pos-YMLK7.webp",
+   "t_id": "Jika Indonesia Ingin Jadi Walfare State, Begini Konsekuensinya Menurut Ekonom",
+   "t_ko": "인도네시아가 월페어 국가가 되기를 원한다면 경제학자들에 따르면 그 결과는 다음과 같습니다."
+  },
+  {
+   "ts": "2026-09-04T13:22:18+07:00",
+   "date": "2026-09-04",
+   "time": "13:22",
+   "src": "Detik",
+   "t": "Heboh Gaji Peserta Maganghub Disebut Dipotong 80%, Kemnaker Buka Suara",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648254/heboh-gaji-peserta-maganghub-disebut-dipotong-80-kemnaker-buka-suara",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/09/21/gedung-kemnaker-1758444748166_169.jpeg?w=360&q=90",
+   "t_ko": "흥미롭게도 인턴십 참가자 급여가 80% 삭감됐다고 인력부가 밝혔다.",
+   "t_id": "Heboh Gaji Peserta Maganghub Disebut Dipotong 80%, Kemnaker Buka Suara"
+  },
+  {
+   "ts": "2026-09-04T13:19:33+07:00",
+   "date": "2026-09-04",
+   "time": "13:19",
+   "src": "Bloomberg Technoz",
+   "t": "Ekonomi Digital RI No 1 di ASEAN, Tapi Kecepatan Internet Lambat",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120512/ekonomi-digital-ri-no-1-di-asean-tapi-kecepatan-internet-lambat",
+   "img": "https://images.bloombergtechnoz.com/data/2025/09/image-20250919141128.jpg",
+   "t_id": "Ekonomi Digital RI No 1 di ASEAN, Tapi Kecepatan Internet Lambat",
+   "t_ko": "RI 디지털 경제는 아세안 1위지만 인터넷 속도는 느리다"
+  },
+  {
+   "ts": "2026-09-04T13:16:00+07:00",
+   "date": "2026-09-04",
+   "time": "13:16",
+   "src": "Katadata",
+   "t": "Incar Dana Segar, Bos Holywings Bakal Bawa Atlas Beach Club Canggu IPO di BEI",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/bursa/6a9a62cc1701c/incar-dana-segar-bos-holywings-bakal-bawa-atlas-beach-club-canggu-ipo-di-bei",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2021/09/06/zigi-613592695efc7-holywings_620x413_thumb.jpeg",
+   "t_id": "Incar Dana Segar, Bos Holywings Bakal Bawa Atlas Beach Club Canggu IPO di BEI",
+   "t_ko": "새로운 자금을 노리는 Holywings Boss, IDX에서 Atlas Beach Club Canggu를 IPO로 가져올 예정"
+  },
+  {
+   "ts": "2026-09-04T13:11:29+07:00",
+   "date": "2026-09-04",
+   "time": "13:11",
+   "src": "Detik",
+   "t": "Zulhas Buka-bukaan Penyebab RI Impor Kedelai",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648239/zulhas-buka-bukaan-penyebab-ri-impor-kedelai",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/menteri-koordinator-bidang-pangan-zulkifli-hasan-zulhas-1788501838850_169.jpeg?w=360&q=90",
+   "t_ko": "Zulhas는 RI 대두 수입의 원인을 밝힙니다.",
+   "t_id": "Zulhas Ungkap Penyebab Impor Kedelai RI"
+  },
+  {
+   "ts": "2026-09-04T13:10:00+07:00",
+   "date": "2026-09-04",
+   "time": "13:10",
+   "src": "Bloomberg Technoz",
+   "t": "BPJS dan Asuransi Swasta Bakal Terhubung, Targetnya Akhir 2026",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120510/bpjs-dan-asuransi-swasta-bakal-terhubung-targetnya-akhir-2026",
+   "img": "https://images.bloombergtechnoz.com/data/2026/02/image-20260226165835.jpeg",
+   "t_id": "BPJS dan Asuransi Swasta Bakal Terhubung, Targetnya Akhir 2026",
+   "t_ko": "BPJS와 민간 보험이 연결될 예정이며 목표는 2026년 말입니다."
+  },
+  {
+   "ts": "2026-09-04T13:08:13+07:00",
+   "date": "2026-09-04",
+   "time": "13:08",
+   "src": "Jawa Pos",
+   "t": "Ekonom Ungkap Dua Guncangan yang Mengubah Masa Depan Ekonomi Indonesia: AI dan EV",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609040168/ekonom-ungkap-dua-guncangan-yang-mengubah-masa-depan-ekonomi-indonesia-ai-dan-ev",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/07/ilustrasi-pengguna-mobil-listrik-melakukan-pengisian-daya-pada-stasiun-pengisian-kendaraan-listrik-umum-spklu-yang-dikelola-pln-istimewa-V70Ah.webp",
+   "t_id": "Ekonom Ungkap Dua Guncangan yang Mengubah Masa Depan Ekonomi Indonesia: AI dan EV",
+   "t_ko": "경제학자들은 인도네시아의 경제 미래를 바꾸는 두 가지 충격, 즉 AI와 EV를 밝힙니다."
+  },
+  {
+   "ts": "2026-09-04T13:05:40+07:00",
+   "date": "2026-09-04",
+   "time": "13:05",
+   "src": "Detik",
+   "t": "Zulhas Ungkap Biaya Produksi Beras di Vietnam Rp 3.800/Kg, RI Tembus Rp 12 Ribu",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648219/zulhas-ungkap-biaya-produksi-beras-di-vietnam-rp-3-800-kg-ri-tembus-rp-12-ribu",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/menteri-koordinator-bidang-pangan-zulkifli-hasan-zulhas-1788501838784_169.jpeg?w=360&q=90",
+   "t_id": "Zulhas Ungkap Biaya Produksi Beras di Vietnam Rp 3.800/Kg, RI Tembus Rp 12 Ribu",
+   "t_ko": "Zulhas는 베트남의 쌀 생산 비용이 IDR 3,800/Kg이고 RI가 IDR 12,000에 도달했다고 밝혔습니다."
+  },
+  {
+   "ts": "2026-09-04T13:05:00+07:00",
+   "date": "2026-09-04",
+   "time": "13:05",
+   "src": "Medcom",
+   "t": "5 Kulkas Samsung Side by Side Mewah, Harga Mulai Rp9 Jutaan",
+   "tags": [],
+   "url": "https://www.medcom.id/properti/news-properti/ybJdA04K-5-kulkas-samsung-side-by-side-mewah-harga-mulai-rp9-jutaan",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840038/8UlTCQP4nm.jpg?w=720",
+   "t_ko": "삼성 명품 냉장고 5대, 가격 IDR 900만부터 시작",
+   "t_id": "5 Kulkas Samsung Side by Side Mewah, Harga Mulai Rp9 Jutaan"
+  },
+  {
+   "ts": "2026-09-04T13:03:00+07:00",
+   "date": "2026-09-04",
+   "time": "13:03",
+   "src": "IDX Channel",
+   "t": "MNC Sekuritas Ajak Generasi Muda Cerdas Berinvestasi Syariah di Politeknik Negeri Jakarta",
+   "tags": [],
+   "url": "https://www.idxchannel.com/market-news/mnc-sekuritas-ajak-generasi-muda-cerdas-berinvestasi-syariah-di-politeknik-negeri-jakarta",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/04/WhatsApp_Image_2026-09-04_at_12_03_20_PM.jpeg",
+   "t_id": "MNC Sekuritas Ajak Generasi Muda Cerdas Berinvestasi Syariah di Politeknik Negeri Jakarta",
+   "t_ko": "MNC Sekuritas, 똑똑한 젊은 세대를 자카르타 주립 폴리테크닉의 샤리아에 투자하도록 초대"
+  },
+  {
    "ts": "2026-09-04T12:52:11+07:00",
    "date": "2026-09-04",
    "time": "12:52",
@@ -16561,8 +16710,8 @@
    "tags": [],
    "url": "https://finance.detik.com/bumn/d-8648178/kai-buka-lowongan-2026-lulusan-sma-s1-bisa-daftar-jadi-masinis-hingga-kondektur",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/08/28/kondektur-pt-kereta-api-indonesia-indonesia-1756353080315_169.jpeg?w=360&q=90",
-   "t_id": "KAI Buka Lowongan 2026, Lulusan SMA-S1 Bisa Daftar Jadi Masinis hingga Kondektur",
-   "t_ko": "KAI, 2026년 공석 개시, SMA-S1 졸업생은 기계공에서 지휘자 지원 가능"
+   "t_ko": "KAI, 2026년 공석 개시, SMA-S1 졸업생은 기계공에서 지휘자 지원 가능",
+   "t_id": "KAI Buka Lowongan 2026, Lulusan SMA-S1 Bisa Daftar Jadi Masinis hingga Kondektur"
   },
   {
    "ts": "2026-09-04T12:44:55+07:00",
@@ -16785,124 +16934,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/prabowo-dan-putin-membahas-sejumlah-peluang-investasi-mulai-dari-pupuk-energi-dan-sumber-daya-mineral-hingga-perkapalan-antara-tj18y.webp",
    "t_ko": "Prabowo 러시아 방문 — Vladimir Putin과 비료·조선 협력 논의",
    "t_id": "Kunjungan ke Rusia, Prabowo Bahas Kerja Sama Pupuk hingga Perkapalan dengan Vladimir Putin"
-  },
-  {
-   "ts": "2026-09-04T11:36:21+07:00",
-   "date": "2026-09-04",
-   "time": "11:36",
-   "src": "Detik",
-   "t": "Sektor Manufaktur RI Melemah, Pengusaha Ungkap Biang Keroknya",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648072/sektor-manufaktur-ri-melemah-pengusaha-ungkap-biang-keroknya",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/04/15/melihat-pameran-mesin-produksi-tekstil-di-jiexpo-kemayoran-1776240166047_169.jpeg?w=360&q=90",
-   "t_ko": "인도네시아 제조업 부문 약화 — 기업인들이 지목한 주범",
-   "t_id": "Sektor Manufaktur RI Melemah, Pengusaha Ungkap Biang Keroknya"
-  },
-  {
-   "ts": "2026-09-04T11:24:30+07:00",
-   "date": "2026-09-04",
-   "time": "11:24",
-   "src": "Medcom",
-   "t": "Federasi Asosiasi Tekstil Eropa Usul Biaya Impor Baju Rp200 Ribuan, Fast Fashion Bakal Makin Mahal?",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/global/akWmBXqN-federasi-asosiasi-tekstil-eropa-usul-biaya-impor-baju-rp200-ribuan-fast-fashion-bakal-makin-mahal",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840022/px5XjknsV4.jpeg?w=720",
-   "t_ko": "유럽 섬유협회연맹, 의류 수입관세 Rp20만대 제안 — Fast Fashion 가격 상승 전망",
-   "t_id": "Federasi Asosiasi Tekstil Eropa Usul Biaya Impor Baju Rp200 Ribuan, Fast Fashion Bakal Makin Mahal?"
-  },
-  {
-   "ts": "2026-09-04T11:23:43+07:00",
-   "date": "2026-09-04",
-   "time": "11:23",
-   "src": "Bloomberg",
-   "t": "China Flash Memory Giant YMTC Takes Key Step Toward Marquee IPO",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-04/china-flash-memory-giant-ymtc-takes-key-step-toward-marquee-ipo",
-   "t_ko": "중국 플래시메모리 대기업 YMTC, 대형 IPO 향한 핵심 관문 통과",
-   "t_id": "Raksasa Memori Flash China YMTC Melangkah Maju Menuju IPO Jumbo"
-  },
-  {
-   "ts": "2026-09-04T11:18:00+07:00",
-   "date": "2026-09-04",
-   "time": "11:18",
-   "src": "Medcom",
-   "t": "Berita Terpopuler Properti: Inspirasi Pagar Tembok Minimalis hingga Rekomendasi Kulkas Mini",
-   "tags": [],
-   "url": "https://www.medcom.id/properti/news-properti/GNGG61vN-berita-terpopuler-properti-inspirasi-pagar-tembok-minimalis-hingga-rekomendasi-kulkas-mini",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840036/tFjWBmC9sD.jpg?w=720",
-   "t_ko": "가장 인기 있는 부동산 뉴스: 미니멀리스트 벽 울타리에 대한 영감부터 미니 냉장고 추천까지",
-   "t_id": "Berita Terpopuler Properti: Inspirasi Pagar Tembok Minimalis hingga Rekomendasi Kulkas Mini"
-  },
-  {
-   "ts": "2026-09-04T11:12:21+07:00",
-   "date": "2026-09-04",
-   "time": "11:12",
-   "src": "Detik",
-   "t": "BGN Akui Belum Pernah Beri Kompensasi Kelembagaan ke Korban Keracunan MBG",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648005/bgn-akui-belum-pernah-beri-kompensasi-kelembagaan-ke-korban-keracunan-mbg",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/kepala-bgn-sudaryono-1788429181688_169.jpeg?w=360&q=90",
-   "t_ko": "BGN, MBG 급식 중독 피해자 기관 차원 보상 전무 인정",
-   "t_id": "BGN Akui Belum Pernah Beri Kompensasi Kelembagaan ke Korban Keracunan MBG"
-  },
-  {
-   "ts": "2026-09-04T11:12:10+07:00",
-   "date": "2026-09-04",
-   "time": "11:12",
-   "src": "Jawa Pos",
-   "t": "Beli BBM Subsidi Wajib Tunjukkan STNK, Pertamina Sebut hanya Berlaku di Sumatera Selatan",
-   "tags": [],
-   "url": "https://www.jawapos.com/energi/2609040145/beli-bbm-subsidi-wajib-tunjukkan-stnk-pertamina-sebut-hanya-berlaku-di-sumatera-selatan",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/06/27/papan-bertuliskan-biosolar-dalam-pengiriman-terpajang-di-sebuah-spbu-pertamina-di-jalan-outer-ringroad-jakarta-jumat-26062026-hanung-hambarajawa-pos-g9Qpp.webp",
-   "t_ko": "보조금 연료 구매 시 STNK 제시 의무화 — Pertamina, Sumatera Selatan에만 적용",
-   "t_id": "Beli BBM Subsidi Wajib Tunjukkan STNK, Pertamina Sebut hanya Berlaku di Sumatera Selatan"
-  },
-  {
-   "ts": "2026-09-04T11:01:31+07:00",
-   "date": "2026-09-04",
-   "time": "11:01",
-   "src": "Medcom",
-   "t": "Ini Komentar JP Morgan terhadap APBN 2027",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/makro/GNl1zMmb-ini-komentar-jp-morgan-terhadap-apbn-2027",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840019/BDEavtq0Ri.jpg?w=720",
-   "t_ko": "JP Morgan의 2027년 국가예산(APBN) 평가",
-   "t_id": "Ini Komentar JP Morgan terhadap APBN 2027"
-  },
-  {
-   "ts": "2026-09-04T10:58:00+07:00",
-   "date": "2026-09-04",
-   "time": "10:58",
-   "src": "Media Indonesia",
-   "t": "Dapat Anggaran Rp6,48 Triliun pada 2027,  BPS Mengaku tak Cukup",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929654/dapat-anggaran-rp648-triliun-pada-2027--bps-mengaku-tak-cukup",
-   "t_ko": "2027년 예산 Rp6.48조 배정 — BPS 부족 호소",
-   "t_id": "Dapat Anggaran Rp6,48 Triliun pada 2027,  BPS Mengaku tak Cukup"
-  },
-  {
-   "ts": "2026-09-04T10:56:00+07:00",
-   "date": "2026-09-04",
-   "time": "10:56",
-   "src": "Katadata",
-   "t": "Harga Referensi CPO Naik 1,1% per September 2026",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6a9a41825c2db/harga-referensi-cpo-naik-1-1-per-september-2026",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/10/29/2025_10_29-17_57_00_7cbf5cc6-b4bd-11f0-9c89-0242ac120006_620x413_thumb.jpg",
-   "t_ko": "2026년 9월 CPO 기준가 1.1% 상승",
-   "t_id": "Harga Referensi CPO Naik 1,1% per September 2026"
-  },
-  {
-   "ts": "2026-09-04T10:47:00+07:00",
-   "date": "2026-09-04",
-   "time": "10:47",
-   "src": "Katadata",
-   "t": "Putusan Pengadilan Singapura Buka Jalan Pelacakan Aset Sritex",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6a9a3f562c82a/putusan-pengadilan-singapura-buka-jalan-pelacakan-aset-sritex",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/02/28/2025_02_28-13_06_00_28e37e0c-f5a3-11ef-adf0-910fd7dc604e_620x413_thumb.jpg",
-   "t_ko": "싱가포르 법원 판결 — Sritex 자산 추적 길 확보",
-   "t_id": "Putusan Pengadilan Singapura Buka Jalan Pelacakan Aset Sritex"
   }
  ],
  "kisi_news": [
@@ -17062,9 +17093,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,638",
-   "d": -0.48,
-   "ytd": 5.49,
+   "v": "17,640",
+   "d": -0.47,
+   "ytd": 5.5,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -17074,9 +17105,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.04",
-   "d": 0.0,
-   "ytd": 12.3,
+   "v": "13.05",
+   "d": 0.03,
+   "ytd": 12.33,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17109,9 +17140,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.04",
-   "d": 0.03,
-   "ytd": 0.77,
+   "v": "99.00",
+   "d": 0.0,
+   "ytd": 0.74,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17121,9 +17152,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "91.64",
-   "d": -0.11,
-   "ytd": 59.6,
+   "v": "91.45",
+   "d": -0.32,
+   "ytd": 59.27,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17133,9 +17164,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,516.7",
-   "d": 0.03,
-   "ytd": 4.42,
+   "v": "4,514.0",
+   "d": -0.03,
+   "ytd": 4.36,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18666,7 +18697,7 @@
    "country": "US",
    "title": "Core PPI (MoM)  (Aug)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.3%",
    "prev": "0.2%",
    "act": null,
    "src": "investing.com",
@@ -18680,7 +18711,7 @@
    "country": "US",
    "title": "PPI (MoM)  (Aug)",
    "imp": 3,
-   "exp": null,
+   "exp": "0.3%",
    "prev": "0.0%",
    "act": null,
    "src": "investing.com",
@@ -18694,7 +18725,7 @@
    "country": "US",
    "title": "Existing Home Sales  (Aug)",
    "imp": 3,
-   "exp": null,
+   "exp": "4.03M",
    "prev": "4.06M",
    "act": null,
    "src": "investing.com",
@@ -18891,7 +18922,7 @@
    "country": "US",
    "title": "美 8월 CPI",
    "imp": 3,
-   "exp": null,
+   "exp": "0.4%",
    "prev": "0.1%",
    "act": null,
    "src": "manual",
@@ -18905,7 +18936,7 @@
    "country": "US",
    "title": "Core CPI (MoM)  (Aug)",
    "imp": 3,
-   "exp": null,
+   "exp": "0.2%",
    "prev": "0.2%",
    "act": null,
    "src": "investing.com",
