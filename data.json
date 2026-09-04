@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 21:27",
+ "updated": "2026-09-04 21:39",
  "delay_min": 0,
  "fx_basis": "13.10 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,346 · 21:06 Yahoo",
- "idr_per_krw": 13.1026,
+ "idr_per_krw": 13.1,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7727.25,
+   "px": 7726.32,
    "prev": 7747.8,
-   "pct": -0.27,
-   "asof": "21:25",
+   "pct": -0.28,
+   "asof": "21:35",
    "live": true,
    "spark": [
     7743.86,
@@ -15096,17 +15096,19 @@
     7732.47,
     7725.4,
     7726.64,
-    7727.25
+    7728.01,
+    7724.03,
+    7726.32
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26554.96,
+   "px": 26540.87,
    "prev": 26584.06,
-   "pct": -0.11,
-   "asof": "21:25",
+   "pct": -0.16,
+   "asof": "21:35",
    "live": true,
    "spark": [
     26609.51,
@@ -15120,17 +15122,19 @@
     26588.46,
     26558.76,
     26551.93,
-    26554.96
+    26556.21,
+    26522.56,
+    26540.87
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53405.61,
+   "px": 53415.94,
    "prev": 53687.54,
-   "pct": -0.53,
-   "asof": "21:25",
+   "pct": -0.51,
+   "asof": "21:35",
    "live": true,
    "spark": [
     53577.29,
@@ -15144,7 +15148,9 @@
     53433.13,
     53393.2,
     53404.63,
-    53405.61
+    53406.23,
+    53426.76,
+    53415.94
    ]
   },
   {
@@ -16440,6 +16446,65 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T21:38:24.178496+07:00",
+   "date": "2026-09-04",
+   "time": "21:38",
+   "src": "Jawa Pos",
+   "t": "Bank Dunia Catat 183 Juta Penduduk Indonesia Miskin, Pakai Parameter USD 8,30",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609040225/bank-dunia-catat-183-juta-penduduk-indonesia-miskin-pakai-parameter-usd-830",
+   "img": "https://cdn-assets.jawapos.com/images/1/2025/03/03/image-2-3-1-876074017.jpg",
+   "t_ko": "세계은행, 인도네시아 빈곤층 1억 8,300만명 집계 — USD 8.30 기준 적용",
+   "t_id": "Bank Dunia Catat 183 Juta Penduduk Indonesia Miskin, Pakai Parameter USD 8,30"
+  },
+  {
+   "ts": "2026-09-04T21:33:00+07:00",
+   "date": "2026-09-04",
+   "time": "21:33",
+   "src": "Media Indonesia",
+   "t": "8 WNI Diduga Gabung Militer Rusia, Pakar Hukum UMY Desak Pemerintah Dalami Penyebabnya",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/929903/8-wni-diduga-gabung-militer-rusia-pakar-hukum-umy-desak-pemerintah-dalami-penyebabnya",
+   "t_ko": "UMY 법률 전문가, 인도네시아 시민 8명 러시아군 합류 의심",
+   "t_id": "8 WNI Diduga Gabung Militer Rusia, Pakar Hukum UMY Desak Pemerintah Dalami Penyebabnya"
+  },
+  {
+   "ts": "2026-09-04T21:29:14+07:00",
+   "date": "2026-09-04",
+   "time": "21:29",
+   "src": "Jawa Pos",
+   "t": "Angsuran Lebih Ringan, BTN Nilai KPR Tenor 40 Tahun Jadi Solusi Pembeli Rumah Pertama",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609040382/angsuran-lebih-ringan-btn-nilai-kpr-tenor-40-tahun-jadi-solusi-pembeli-rumah-pertama",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/direktur-utama-pt-bank-tabungan-negara-btn-nixon-lp-napitupulu-saat-ditemui-usai-rapat-umum-pemegang-saham-luar-biasa-rupslb-di-kantor-pusat-btn-jakarta-jumat-49-djati-waluyojawaposcom-MXB1j.webp",
+   "t_id": "Angsuran Lebih Ringan, BTN Nilai KPR Tenor 40 Tahun Jadi Solusi Pembeli Rumah Pertama",
+   "t_ko": "더 가벼운 할부, BTN 가치 KPR Tenor 40년, 첫 주택 구매자를 위한 솔루션이 됨"
+  },
+  {
+   "ts": "2026-09-04T21:29:00+07:00",
+   "date": "2026-09-04",
+   "time": "21:29",
+   "src": "Katadata",
+   "t": "Hari Pelanggan Nasional 2026, Direksi dan Komisaris BNI Sapa Langsung Nasabah",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/keuangan/6a9ad5d217de0/hari-pelanggan-nasional-2026-direksi-dan-komisaris-bni-sapa-langsung-nasabah",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/BNI_di_Hari_Pelanggan_Nasional_2026-2026_09_04-21_25_55_2c5a376e136a9a481465933381d82d22_620x413_thumb.jpeg",
+   "t_id": "Hari Pelanggan Nasional 2026, Direksi dan Komisaris BNI Sapa Langsung Nasabah",
+   "t_ko": "2026년 전국 고객의 날, BNI 이사 및 위원이 고객에게 직접 인사"
+  },
+  {
+   "ts": "2026-09-04T21:26:50+07:00",
+   "date": "2026-09-04",
+   "time": "21:26",
+   "src": "Jawa Pos",
+   "t": "Rekomendasi Layanan Top Up E-Wallet Murah dan Cepat, Bebas Ribet",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609040380/rekomendasi-layanan-top-up-e-wallet-murah-dan-cepat-bebas-ribet",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/penggunaan-e-wallet-atau-e-wallet-seperti-gopay-ovo-dana-dan-shopeepay-semakin-melekat-dalam-aktivitas-sehari-hari-eQvvI.webp",
+   "t_id": "Rekomendasi Layanan Top Up E-Wallet Murah dan Cepat, Bebas Ribet",
+   "t_ko": "저렴하고 빠른 전자지갑 충전 서비스 추천, 번거로움 없음"
+  },
+  {
    "ts": "2026-09-04T21:20:05+07:00",
    "date": "2026-09-04",
    "time": "21:20",
@@ -16459,8 +16524,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8649074/layanan-rs-bumn-mau-naik-kelas-rspp-bakal-dipugar",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/coo-danantara-dony-oskaria-dan-direksi-ihc-1788531353185_169.jpeg?w=360&q=90",
-   "t_id": "Layanan RS BUMN Mau Naik Kelas, RSPP Bakal Dipugar",
-   "t_ko": "BUMN 병원 서비스가 업그레이드되고 RSPP가 혁신됩니다"
+   "t_ko": "BUMN 병원 서비스가 업그레이드되고 RSPP가 혁신됩니다",
+   "t_id": "Layanan RS BUMN Mau Naik Kelas, RSPP Bakal Dipugar"
   },
   {
    "ts": "2026-09-04T21:17:01+07:00",
@@ -16471,8 +16536,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/finance/2609040375/btn-siap-kembalikan-dana-sal-kemenkeu-rp-5-triliun-di-tahap-pertama",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/02/09/BTN-09-1232112525.jpg",
-   "t_id": "BTN Siap Kembalikan Dana SAL Kemenkeu Rp 5 Triliun di Tahap Pertama",
-   "t_ko": "BTN은 1단계에서 재무부의 SAL 자금에 IDR 5조를 반환할 준비가 되어 있습니다."
+   "t_ko": "BTN은 1단계에서 재무부의 SAL 자금에 IDR 5조를 반환할 준비가 되어 있습니다.",
+   "t_id": "BTN Siap Kembalikan Dana SAL Kemenkeu Rp 5 Triliun di Tahap Pertama"
   },
   {
    "ts": "2026-09-04T21:17:00+07:00",
@@ -16494,8 +16559,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tkuflu370/dari-modal-rp-2-juta-dermiyanti-kini-produksi-3000-bolu-setiap-hari",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260904211447-412.png",
-   "t_id": "Dari Modal Rp 2 Juta, Dermiyanti Kini Produksi 3.000 Bolu Setiap Hari",
-   "t_ko": "자본금 IDR 2백만에서 Dermiyanti는 이제 매일 3,000개의 케이크를 생산합니다."
+   "t_ko": "자본금 IDR 2백만에서 Dermiyanti는 이제 매일 3,000개의 케이크를 생산합니다.",
+   "t_id": "Dari Modal Rp 2 Juta, Dermiyanti Kini Produksi 3.000 Bolu Setiap Hari"
   },
   {
    "ts": "2026-09-04T21:09:00+07:00",
@@ -16506,8 +16571,8 @@
    "tags": [],
    "url": "https://www.medcom.id/ekonomi/bisnis/0k8dJeok-hari-pelanggan-nasional-2026-pertamina-patra-niaga-tebar-promo-bbm-dan-bright-gas",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840169/w0MZ9qJuBz.jpeg?w=720",
-   "t_id": "Hari Pelanggan Nasional 2026, Pertamina Patra Niaga Tebar Promo BBM dan Bright Gas",
-   "t_ko": "2026년 전국 고객의 날, Pertamina Patra Niaga, BBM 및 Bright Gas 프로모션 전파"
+   "t_ko": "2026년 전국 고객의 날, Pertamina Patra Niaga, BBM 및 Bright Gas 프로모션 전파",
+   "t_id": "Hari Pelanggan Nasional 2026, Pertamina Patra Niaga Tebar Promo BBM dan Bright Gas"
   },
   {
    "ts": "2026-09-04T21:06:00+07:00",
@@ -16662,17 +16727,6 @@
    "t_id": "Jika Indonesia Ingin Jadi Walfare State, Begini Konsekuensinya Menurut Ekonom"
   },
   {
-   "ts": "2026-09-04T20:18:00+07:00",
-   "date": "2026-09-04",
-   "time": "20:18",
-   "src": "Media Indonesia",
-   "t": "Teknologi Digital Dukung Ketepatan Waktu Operasional Penerbangan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929852/teknologi-digital-dukung-ketepatan-waktu-operasional-penerbangan",
-   "t_ko": "디지털 기술로 정확한 비행 운항 시간 지원",
-   "t_id": "Teknologi Digital Dukung Ketepatan Waktu Operasional Penerbangan"
-  },
-  {
    "ts": "2026-09-04T20:12:31+07:00",
    "date": "2026-09-04",
    "time": "20:12",
@@ -16743,54 +16797,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/bank-bjb-menghadirkan-layanan-setara-dan-berkelanjutan-dalam-peringatan_260904193526-130.jpeg",
    "t_ko": "2026년 전국 고객의 날, 평등하고 지속 가능한 서비스를 위한 은행 BJB 선물",
    "t_id": "Hari Pelanggan Nasional 2026, bank bjb Hadir untuk Layanan yang Setara dan Berkelanjutan"
-  },
-  {
-   "ts": "2026-09-04T19:35:43+07:00",
-   "date": "2026-09-04",
-   "time": "19:35",
-   "src": "Detik",
-   "t": "Melihat Inovasi Energi dan Ketenagalistrikan di IEE Energy Week 2026",
-   "tags": [],
-   "url": "https://finance.detik.com/foto-bisnis/d-8648764/melihat-inovasi-energi-dan-ketenagalistrikan-di-iee-energy-week-2026",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/pameran-indonesia-energy-and-engineering-series-1788517517261_169.jpeg?w=360&q=90",
-   "t_ko": "IEE Energy Week 2026에서 에너지 및 전기 혁신 살펴보기",
-   "t_id": "Melihat Inovasi Energi dan Ketenagalistrikan di IEE Energy Week 2026"
-  },
-  {
-   "ts": "2026-09-04T19:30:56+07:00",
-   "date": "2026-09-04",
-   "time": "19:30",
-   "src": "Detik",
-   "t": "Nabung Emas di Pegadaian Bisa Mulai dari Rp 10.000, Pakai Aplikasi Ini",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648940/nabung-emas-di-pegadaian-bisa-mulai-dari-rp-10-000-pakai-aplikasi-ini",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/wakil-direktur-utama-pt-pegadaian-budi-wahju-soesilo-1788523511343_169.jpeg?w=360&q=90",
-   "t_ko": "Pegadaian에서 금 절약은 IDR 10,000부터 시작할 수 있습니다. 이 애플리케이션을 사용하세요",
-   "t_id": "Nabung Emas di Pegadaian Bisa Mulai dari Rp 10.000, Pakai Aplikasi Ini"
-  },
-  {
-   "ts": "2026-09-04T19:30:50+07:00",
-   "date": "2026-09-04",
-   "time": "19:30",
-   "src": "Medcom",
-   "t": "Indonesia-Rusia Makin Dekat, Pupuk hingga Kapal Canggih Jadi Incaran Investasi",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/5b2ydydN-indonesia-rusia-makin-dekat-pupuk-hingga-kapal-canggih-jadi-incaran-investasi",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840150/HWngu2LzIV.jpg?w=720",
-   "t_ko": "인도네시아-러시아 가까워지고 비료·고급선박 투자대상 돼",
-   "t_id": "Indonesia-Rusia Makin Dekat, Pupuk hingga Kapal Canggih Jadi Incaran Investasi"
-  },
-  {
-   "ts": "2026-09-04T19:18:43+07:00",
-   "date": "2026-09-04",
-   "time": "19:18",
-   "src": "Detik",
-   "t": "LRT Jabodebek Dorong Transportasi Ramah Lingkungan, Kenalkan Energi Hijau",
-   "tags": [],
-   "url": "https://finance.detik.com/ekonomi-hijau/d-8648959/lrt-jabodebek-dorong-transportasi-ramah-lingkungan-kenalkan-energi-hijau",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/anugerah-ekonomi-hijau-lrt-jabodebek-1788441490094_169.jpeg?w=360&q=90",
-   "t_ko": "Jabodebek LRT, 친환경 운송 장려, 그린 에너지 도입",
-   "t_id": "LRT Jabodebek Dorong Transportasi Ramah Lingkungan, Kenalkan Energi Hijau"
   }
  ],
  "kisi_news": [
@@ -16963,7 +16969,7 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.10",
-   "d": 0.42,
+   "d": 0.43,
    "ytd": 12.77,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
@@ -16974,9 +16980,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.776%",
-   "d": 0.29,
-   "ytd": 14.72,
+   "v": "4.768%",
+   "d": 0.13,
+   "ytd": 14.53,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16997,9 +17003,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.16",
-   "d": 0.1,
-   "ytd": 0.89,
+   "v": "99.13",
+   "d": 0.07,
+   "ytd": 0.86,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17009,9 +17015,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "89.21",
-   "d": -3.05,
-   "ytd": 55.36,
+   "v": "89.46",
+   "d": -2.78,
+   "ytd": 55.8,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17021,9 +17027,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,481.6",
-   "d": -0.71,
-   "ytd": 3.61,
+   "v": "4,479.8",
+   "d": -0.75,
+   "ytd": 3.56,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17045,9 +17051,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,774",
-   "d": -0.03,
-   "ytd": 0.55,
+   "v": "16,794",
+   "d": 0.09,
+   "ytd": 0.67,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -23995,7 +24001,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-04 18:22",
-  "pc_age_min": 185,
+  "pc_age_min": 197,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
