@@ -131,12 +131,12 @@ def _host(u):
     try: return u.split("/")[2]
     except Exception: return u[:40]
 
-def _wait_cf(pg, tries=10):
+def _wait_cf(pg, tries=14):
     """Cloudflare 대기 화면이 걷힐 때까지."""
     for _ in range(tries):
         try: t = pg.evaluate("() => document.body ? document.body.innerText.slice(0,300) : ''") or ""
         except Exception: t = ""
-        if not re.search(r"Just a moment|Checking your browser|Verifying you are human", t): return True
+        if not re.search(r"Just a moment|Checking your browser|Verifying you are human|Tunggu sebentar|verifikasi keamanan|Memverifikasi", t, re.I): return True   # 브라우저 locale 이 id-ID 라 인니어 문구도 뜬다
         pg.wait_for_timeout(1500)
     return False
 
@@ -1683,9 +1683,11 @@ def investing_batch(ttl_min=8):
                         const q = s => { const e = document.querySelector(s); return e ? e.textContent.trim() : null; };
                         const m = document.documentElement.innerHTML.match(/"instrument_id":"?(\\d+)/);
                         return { last: q('[data-test="instrument-price-last"]'), chg: q('[data-test="instrument-price-change"]'),
-                                 pct: q('[data-test="instrument-price-change-percent"]'), time: q('[data-test="trading-time-label"]'), id: m ? m[1] : null }; }""")
+                                 pct: q('[data-test="instrument-price-change-percent"]'), time: q('[data-test="trading-time-label"]'), id: m ? m[1] : null,
+                                 snip: document.title + ' | ' + (document.body ? document.body.innerText.replace(/\s+/g, ' ').slice(0, 160) : '') }; }""")
                     if o and o.get("last"): break
-                    pg.wait_for_timeout(1000)
+                    pg.wait_for_timeout(1500)
+                pg.wait_for_timeout(2500)                 # 연속 진입 시 속도 제한 완화
                 if o and o.get("last") and k in need_base and o.get("id"):
                     try:
                         o.update(pg.evaluate("""async (id) => {
