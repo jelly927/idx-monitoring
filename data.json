@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 21:53",
+ "updated": "2026-09-04 22:07",
  "delay_min": 0,
  "fx_basis": "13.09 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,347 · 21:06 Yahoo",
- "idr_per_krw": 13.0929,
+ "idr_per_krw": 13.0936,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -337,10 +337,10 @@
   "m1": 5.01,
   "value_idr": 15001276676523,
   "volume": 34285124590,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-04 18:22",
+  "rank_src": "Yahoo 15분 지연 · 835종목 · 종가 · 외국인·공시 PC 09-04 18:22",
   "rank_asof": null,
   "rank_date": "2026-09-04",
-  "adv": 280,
+  "adv": 279,
   "dec": 380,
   "unch": 176,
   "foreign_net_idr": -311796322852.979,
@@ -8452,22 +8452,6 @@
    "live": 0
   },
   {
-   "t": "BIKE",
-   "n": "Bhineka Inovasi Ketahanan Energi",
-   "px": 755.0,
-   "prev": 690.0,
-   "pct": 9.42,
-   "val": 487571666.6666666,
-   "vol": 657400.0,
-   "sh": 1293916404,
-   "mcap": 976906885020.0,
-   "hi": 755.0,
-   "lo": 715.0,
-   "ratio": 0.6,
-   "fnet": 0.0,
-   "live": 0
-  },
-  {
    "t": "CINT",
    "n": "Chitose Internasional",
    "px": 187.0,
@@ -14712,11 +14696,11 @@
   {
    "name": "경기소비재",
    "name_id": "Konsumen Non-Primer",
-   "n": 136,
-   "adv": 40,
+   "n": 135,
+   "adv": 39,
    "dec": 71,
-   "val": 1146888242633.3335,
-   "mcap": 420821318504163.0,
+   "val": 1146400670966.6667,
+   "mcap": 419844411619143.0,
    "top": [
     {
      "t": "VKTR",
@@ -14759,7 +14743,7 @@
      "pct": -1.92
     }
    ],
-   "pct": 0.44
+   "pct": 0.42
   },
   {
    "name": "산업재",
@@ -15079,10 +15063,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7715.38,
+   "px": 7710.62,
    "prev": 7747.8,
-   "pct": -0.42,
-   "asof": "21:50",
+   "pct": -0.48,
+   "asof": "22:05",
    "live": true,
    "spark": [
     7743.86,
@@ -15101,17 +15085,20 @@
     7727.09,
     7718.89,
     7713.91,
-    7715.38
+    7712.03,
+    7710.73,
+    7710.68,
+    7710.62
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26494.05,
+   "px": 26467.24,
    "prev": 26584.06,
-   "pct": -0.34,
-   "asof": "21:50",
+   "pct": -0.44,
+   "asof": "22:05",
    "live": true,
    "spark": [
     26609.51,
@@ -15130,17 +15117,20 @@
     26543.0,
     26507.42,
     26492.44,
-    26494.05
+    26476.6,
+    26470.04,
+    26468.04,
+    26467.24
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53356.77,
+   "px": 53321.59,
    "prev": 53687.54,
-   "pct": -0.62,
-   "asof": "21:50",
+   "pct": -0.68,
+   "asof": "22:05",
    "live": true,
    "spark": [
     53577.29,
@@ -15159,7 +15149,10 @@
     53434.71,
     53398.18,
     53347.06,
-    53356.77
+    53321.97,
+    53308.25,
+    53323.16,
+    53321.59
    ]
   },
   {
@@ -15861,7 +15854,7 @@
     "COCO"
    ],
    "url": "https://www.idnfinancials.com/news/68363/maruarar-sirait-and-pulauintan-boss-sell-coco-shares",
-   "img": "https://photos.idnfinancials.com/static/web/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/SELL-16122025.jpg",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/MARUAR-COCO-Pui-Sudarto-04092026.jpg",
    "t_ko": "Maruarar Sirait·Pulauintan 대표, COCO 지분 매각",
    "t_id": "Maruarar Sirait dan Bos Pulauintan Lego Saham COCO"
   },
@@ -16108,21 +16101,6 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/DobzRmJuZ6AtCzudxcUozgUxViU=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277616/original/049381900_1672400412-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga-5.jpg",
    "t_ko": "DKFT 주가 5,19% 급등 — 중간배당 Rp30 발표 후",
    "t_id": "Saham DKFT Melonjak 5,19% Usai Umumkan Dividen Interim Rp 30"
-  },
-  {
-   "ts": "2026-09-04T06:00:00+07:00",
-   "date": "2026-09-04",
-   "time": "06:00",
-   "src": "IDNFinancials",
-   "t": "Foreign inflow, BMRI records top buy of IDR 471.4 billion",
-   "tags": [
-    "BMRI",
-    "BULL"
-   ],
-   "url": "https://www.idnfinancials.com/news/68329/foreign-inflow-bmri-records-top-buy-of-idr-471-4-billion",
-   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/NET%20FOREIGN%20IMAGE%20%28ARIF%29/NET%20FOREIGN%20-%201.png",
-   "t_ko": "외국인 순유입 — BMRI 순매수 1위 Rp4,714억",
-   "t_id": "Asing Masuk, BMRI Catat Top Buy Rp 471,4 Miliar"
   },
   {
    "ts": "2026-09-03T23:52:56.613700+07:00",
@@ -16441,6 +16419,30 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T22:00:45+07:00",
+   "date": "2026-09-04",
+   "time": "22:00",
+   "src": "Medcom",
+   "t": "Harpelnas 2026: BPJS Ketenagakerjaan Dorong Penerima Manfaat Bangkit Lewat Usaha",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/bisnis/Rb1y6rXb-harpelnas-2026-bpjs-ketenagakerjaan-dorong-penerima-manfaat-bangkit-lewat-usaha",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840171/BqxScbNXYi.jpeg?w=720",
+   "t_ko": "Harpelnas 2026: BPJS 고용은 수혜자의 비즈니스 성장을 장려합니다",
+   "t_id": "Harpelnas 2026: BPJS Ketenagakerjaan Dorong Penerima Manfaat Bangkit Lewat Usaha"
+  },
+  {
+   "ts": "2026-09-04T22:00:00+07:00",
+   "date": "2026-09-04",
+   "time": "22:00",
+   "src": "Republika",
+   "t": "Pemprov Sultra Gandeng Kejati Tata Aset Daerah",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tkuf3p416/pemprov-sultra-gandeng-kejati-tata-aset-daerah",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260904210557-513.png",
+   "t_ko": "남동부 술라웨시 주 정부, 지역 자산 관리를 위해 검찰청과 협력",
+   "t_id": "Pemprov Sultra Gandeng Kejati Tata Aset Daerah"
+  },
+  {
    "ts": "2026-09-04T21:47:09+07:00",
    "date": "2026-09-04",
    "time": "21:47",
@@ -16485,8 +16487,8 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/korporasi/6a9ad824e57e9/direksi-taspen-kunjungi-langsung-pensiunan-di-hari-pelanggan-nasional-2026",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/TASPEN_di_Harpelnas_2026-2026_09_04-21_34_06_6a8faf5d31c2af51aab0ece7fab99432_620x413_thumb.jpeg",
-   "t_id": "Direksi TASPEN Kunjungi Langsung Pensiunan di Hari Pelanggan Nasional 2026",
-   "t_ko": "TASPEN 이사, 2026년 전국 고객의 날에 연금 수령자를 직접 방문"
+   "t_ko": "TASPEN 이사, 2026년 전국 고객의 날에 연금 수령자를 직접 방문",
+   "t_id": "Direksi TASPEN Kunjungi Langsung Pensiunan di Hari Pelanggan Nasional 2026"
   },
   {
    "ts": "2026-09-04T21:33:00+07:00",
@@ -16629,17 +16631,6 @@
    "t_id": "33,2 Juta Keluarga Jadi Sasaran Bantuan Beras 30 Kg"
   },
   {
-   "ts": "2026-09-04T20:49:00+07:00",
-   "date": "2026-09-04",
-   "time": "20:49",
-   "src": "Media Indonesia",
-   "t": "Produsen Baja Dukung Delapan Program Prioritas Ekonomi Indonesia",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929877/produsen-baja-dukung-delapan-program-prioritas-ekonomi-indonesia",
-   "t_ko": "철강 생산업체는 8개의 인도네시아 경제 우선순위 프로그램을 지원합니다.",
-   "t_id": "Produsen Baja Dukung Delapan Program Prioritas Ekonomi Indonesia"
-  },
-  {
    "ts": "2026-09-04T20:43:46+07:00",
    "date": "2026-09-04",
    "time": "20:43",
@@ -16720,8 +16711,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tkudg8416/aset-negara-di-blok-rokan-perlu-dijaga-sinergi-jadi-kunci",
    "img": "https://static.republika.co.id/uploads/images/detailnews/pekerja-melakukan-pengecekan-pompa-angguk-yang-beroperasi-di-lapangan_220819131544-472.jpg",
-   "t_id": "Aset Negara di Blok Rokan Perlu Dijaga, Sinergi Jadi Kunci",
-   "t_ko": "Rokan 블록의 국가 자산을 보호해야 하며 시너지가 핵심입니다."
+   "t_ko": "Rokan 블록의 국가 자산을 보호해야 하며 시너지가 핵심입니다.",
+   "t_id": "Aset Negara di Blok Rokan Perlu Dijaga, Sinergi Jadi Kunci"
   },
   {
    "ts": "2026-09-04T20:23:44+07:00",
@@ -16782,18 +16773,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/2026_08_14-13_58_00_57ea1aba-97bd-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
    "t_ko": "집권 2년차 프라보워와 전임자들의 당선 가능성 패턴 차이",
    "t_id": "Beda Pola Elektabilitas Prabowo dan Pendahulunya di Tahun Kedua Pemerintahan"
-  },
-  {
-   "ts": "2026-09-04T19:47:37+07:00",
-   "date": "2026-09-04",
-   "time": "19:47",
-   "src": "Detik",
-   "t": "161 SPBU Kena Sanksi Pertamina!",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8648988/161-spbu-kena-sanksi-pertamina",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/spbu-pertamina-1788526000789_169.jpeg?w=360&q=90",
-   "t_ko": "Pertamina 제재 대상 주유소 161곳!",
-   "t_id": "161 SPBU Kena Sanksi Pertamina!"
   }
  ],
  "kisi_news": [
@@ -16977,9 +16956,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.766%",
-   "d": 0.08,
-   "ytd": 14.48,
+   "v": "4.778%",
+   "d": 0.34,
+   "ytd": 14.77,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17000,9 +16979,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.09",
-   "d": 0.03,
-   "ytd": 0.82,
+   "v": "99.14",
+   "d": 0.08,
+   "ytd": 0.88,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17012,9 +16991,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "90.27",
-   "d": -1.9,
-   "ytd": 57.21,
+   "v": "90.88",
+   "d": -1.24,
+   "ytd": 58.27,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17024,9 +17003,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,478.8",
-   "d": -0.78,
-   "ytd": 3.54,
+   "v": "4,468.8",
+   "d": -1.0,
+   "ytd": 3.31,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17048,9 +17027,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,789",
-   "d": 0.06,
-   "ytd": 0.64,
+   "v": "16,804",
+   "d": 0.15,
+   "ytd": 0.73,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -23998,7 +23977,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-04 18:22",
-  "pc_age_min": 211,
+  "pc_age_min": 225,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
