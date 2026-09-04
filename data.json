@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 23:39",
+ "updated": "2026-09-04 23:50",
  "delay_min": 0,
- "fx_basis": "13.11 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,345 · 22:44 Yahoo",
- "idr_per_krw": 13.1058,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,345 · 22:44 Yahoo",
+ "idr_per_krw": 13.1047,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7723.1,
+   "px": 7728.09,
    "prev": 7747.8,
-   "pct": -0.32,
-   "asof": "23:35",
+   "pct": -0.25,
+   "asof": "23:50",
    "live": true,
    "spark": [
     7743.86,
@@ -15122,17 +15122,20 @@
     7724.34,
     7722.26,
     7724.99,
-    7723.1
+    7723.68,
+    7724.62,
+    7727.95,
+    7728.09
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26508.19,
+   "px": 26530.47,
    "prev": 26584.06,
-   "pct": -0.29,
-   "asof": "23:35",
+   "pct": -0.2,
+   "asof": "23:50",
    "live": true,
    "spark": [
     26609.51,
@@ -15172,17 +15175,20 @@
     26504.12,
     26500.76,
     26514.25,
-    26508.19
+    26511.36,
+    26513.81,
+    26529.99,
+    26530.47
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53419.59,
+   "px": 53437.43,
    "prev": 53687.54,
-   "pct": -0.5,
-   "asof": "23:35",
+   "pct": -0.47,
+   "asof": "23:50",
    "live": true,
    "spark": [
     53577.29,
@@ -15222,7 +15228,10 @@
     53442.04,
     53426.17,
     53435.29,
-    53419.59
+    53424.85,
+    53433.69,
+    53437.95,
+    53437.43
    ]
   },
   {
@@ -15541,6 +15550,19 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-04T23:42:00+07:00",
+   "date": "2026-09-04",
+   "time": "23:42",
+   "src": "Media Indonesia",
+   "t": "Hari Pelanggan Nasional Momen Pererat Hubungan dengan Nasabah",
+   "tags": [
+    "BBNI"
+   ],
+   "url": "https://mediaindonesia.com/ekonomi/929962/hari-pelanggan-nasional-momen-pererat-hubungan-dengan-nasabah",
+   "t_ko": "전국 고객의 날은 고객과의 관계를 강화하는 시간입니다",
+   "t_id": "Hari Pelanggan Nasional Momen Pererat Hubungan dengan Nasabah"
+  },
   {
    "ts": "2026-09-04T23:08:43+07:00",
    "date": "2026-09-04",
@@ -16497,8 +16519,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tku53m522/bursa-mineral-perkuat-daya-tawar-indonesia-di-pasar-komoditas-global",
    "img": "https://static.republika.co.id/uploads/images/detailnews/083322800-1768578150-830-556.jpg",
-   "t_id": "Bursa Mineral Perkuat Daya Tawar Indonesia di Pasar Komoditas Global",
-   "t_ko": "광물 거래소를 통해 글로벌 상품 시장에서 인도네시아의 협상력이 강화되었습니다."
+   "t_ko": "광물 거래소를 통해 글로벌 상품 시장에서 인도네시아의 협상력이 강화되었습니다.",
+   "t_id": "Bursa Mineral Perkuat Daya Tawar Indonesia di Pasar Komoditas Global"
   },
   {
    "ts": "2026-09-04T23:07:45+07:00",
@@ -16630,17 +16652,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260904210557-513.png",
    "t_ko": "남동부 술라웨시 주 정부, 지역 자산 관리를 위해 검찰청과 협력",
    "t_id": "Pemprov Sultra Gandeng Kejati Tata Aset Daerah"
-  },
-  {
-   "ts": "2026-09-04T21:59:00+07:00",
-   "date": "2026-09-04",
-   "time": "21:59",
-   "src": "Media Indonesia",
-   "t": "Pangan dan Gizi Jadi Fondasi Indonesia Sehat dan Berdaya Saing",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929916/pangan-dan-gizi-jadi-fondasi-indonesia-sehat-dan-berdaya-saing",
-   "t_ko": "식품과 영양은 건강하고 경쟁력 있는 인도네시아의 기초입니다",
-   "t_id": "Pangan dan Gizi Jadi Fondasi Indonesia Sehat dan Berdaya Saing"
   },
   {
    "ts": "2026-09-04T21:47:09+07:00",
@@ -16845,6 +16856,18 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/25/arus-balik-padati-gambir-belasan-ribu-pemudik-tiba-di-jakarta-1774437627759_169.jpeg?w=360&q=90",
    "t_ko": "감비르역은 2년에 걸쳐 단계적으로 개조되었습니다.",
    "t_id": "Stasiun Gambir Direnovasi Bertahap dalam 2 Tahun"
+  },
+  {
+   "ts": "2026-09-04T20:30:05+07:00",
+   "date": "2026-09-04",
+   "time": "20:30",
+   "src": "Detik",
+   "t": "Hari Pelanggan Nasional 2026, Nasabah Dapat Layanan Spesial",
+   "tags": [],
+   "url": "https://finance.detik.com/foto-bisnis/d-8648903/hari-pelanggan-nasional-2026-nasabah-dapat-layanan-spesial",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/hari-pelanggan-nasional-2026-nasabah-dapat-layanan-spesial-1788520726963_169.jpeg?w=360&q=90",
+   "t_ko": "2026년 전국 고객의 날, 고객에게 특별 서비스 제공",
+   "t_id": "Hari Pelanggan Nasional 2026, Nasabah Dapat Layanan Spesial"
   }
  ],
  "kisi_news": [
@@ -17063,9 +17086,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "90.61",
-   "d": -1.53,
-   "ytd": 57.8,
+   "v": "90.73",
+   "d": -1.4,
+   "ytd": 58.01,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17075,9 +17098,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,482.5",
-   "d": -0.69,
-   "ytd": 3.63,
+   "v": "4,484.6",
+   "d": -0.65,
+   "ytd": 3.68,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17099,9 +17122,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,811",
-   "d": 0.19,
-   "ytd": 0.77,
+   "v": "16,818",
+   "d": 0.24,
+   "ytd": 0.82,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24063,7 +24086,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-04 18:22",
-  "pc_age_min": 317,
+  "pc_age_min": 328,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
