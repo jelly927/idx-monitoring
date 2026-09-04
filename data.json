@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 22:27",
+ "updated": "2026-09-04 22:40",
  "delay_min": 0,
  "fx_basis": "13.09 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,347 · 21:06 Yahoo",
- "idr_per_krw": 13.0906,
+ "idr_per_krw": 13.0892,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7708.75,
+   "px": 7710.81,
    "prev": 7747.8,
-   "pct": -0.5,
-   "asof": "22:25",
+   "pct": -0.48,
+   "asof": "22:35",
    "live": true,
    "spark": [
     7743.86,
@@ -15108,17 +15108,19 @@
     7715.01,
     7709.35,
     7709.16,
-    7708.75
+    7710.44,
+    7708.12,
+    7710.81
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26466.21,
+   "px": 26468.54,
    "prev": 26584.06,
-   "pct": -0.44,
-   "asof": "22:25",
+   "pct": -0.43,
+   "asof": "22:35",
    "live": true,
    "spark": [
     26609.51,
@@ -15144,17 +15146,19 @@
     26486.8,
     26461.03,
     26466.14,
-    26466.21
+    26470.3,
+    26455.67,
+    26468.54
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53300.3,
+   "px": 53329.21,
    "prev": 53687.54,
-   "pct": -0.72,
-   "asof": "22:25",
+   "pct": -0.67,
+   "asof": "22:35",
    "live": true,
    "spark": [
     53577.29,
@@ -15180,7 +15184,9 @@
     53326.68,
     53311.55,
     53304.71,
-    53300.3
+    53317.39,
+    53319.69,
+    53329.21
    ]
   },
   {
@@ -15499,6 +15505,20 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-04T22:30:00+07:00",
+   "date": "2026-09-04",
+   "time": "22:30",
+   "src": "Republika",
+   "t": "Harpelnas 2026, BNI Jadikan Masukan Nasabah untuk Tingkatkan Layanan",
+   "tags": [
+    "BBNI"
+   ],
+   "url": "https://ekonomi.republika.co.id/berita/tkuhzq416/harpelnas-2026-bni-jadikan-masukan-nasabah-untuk-tingkatkan-layanan",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/jajaran-manajemen-bni-berinteraksi-dengan-nasabah-dalam-rangkaian-peringatan_260904220609-956.jpeg",
+   "t_id": "Harpelnas 2026, BNI Jadikan Masukan Nasabah untuk Tingkatkan Layanan",
+   "t_ko": "Harpelnas 2026, BNI, 고객 의견을 활용해 서비스 개선"
+  },
   {
    "ts": "2026-09-04T22:22:00+07:00",
    "date": "2026-09-04",
@@ -16441,8 +16461,8 @@
    "tags": [],
    "url": "https://www.medcom.id/ekonomi/bisnis/dN6y6zpK-pengawasan-bbm-subsidi-diperketat-pertamina-sanksi-161-spbu-di-sumbagsel",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840173/8V12st0v4k.jpeg?w=720",
-   "t_id": "Pengawasan BBM Subsidi Diperketat, Pertamina Sanksi 161 SPBU di Sumbagsel",
-   "t_ko": "보조금을 받는 연료 감독 강화, Pertamina 제재, 남부 수마트라의 161개 SPBU"
+   "t_ko": "보조금을 받는 연료 감독 강화, Pertamina 제재, 남부 수마트라의 161개 SPBU",
+   "t_id": "Pengawasan BBM Subsidi Diperketat, Pertamina Sanksi 161 SPBU di Sumbagsel"
   },
   {
    "ts": "2026-09-04T22:13:32+07:00",
@@ -16488,8 +16508,8 @@
    "t": "Pangan dan Gizi Jadi Fondasi Indonesia Sehat dan Berdaya Saing",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/929916/pangan-dan-gizi-jadi-fondasi-indonesia-sehat-dan-berdaya-saing",
-   "t_id": "Pangan dan Gizi Jadi Fondasi Indonesia Sehat dan Berdaya Saing",
-   "t_ko": "식품과 영양은 건강하고 경쟁력 있는 인도네시아의 기초입니다"
+   "t_ko": "식품과 영양은 건강하고 경쟁력 있는 인도네시아의 기초입니다",
+   "t_id": "Pangan dan Gizi Jadi Fondasi Indonesia Sehat dan Berdaya Saing"
   },
   {
    "ts": "2026-09-04T21:47:09+07:00",
@@ -16993,9 +17013,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.09",
-   "d": 0.03,
-   "ytd": 0.82,
+   "v": "99.10",
+   "d": 0.04,
+   "ytd": 0.84,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17005,9 +17025,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "90.48",
-   "d": -1.67,
-   "ytd": 57.58,
+   "v": "90.61",
+   "d": -1.53,
+   "ytd": 57.8,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17017,9 +17037,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,491.6",
-   "d": -0.49,
-   "ytd": 3.84,
+   "v": "4,488.6",
+   "d": -0.56,
+   "ytd": 3.77,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -23991,7 +24011,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-04 18:22",
-  "pc_age_min": 245,
+  "pc_age_min": 258,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
