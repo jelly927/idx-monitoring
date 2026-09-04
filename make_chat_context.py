@@ -62,6 +62,11 @@ def build(d):
                   for r in (d.get("macro") or [])],
         "sectors": [{"name": r.get("name"), "pct": num(r.get("pct")), "adv": r.get("adv"),
                      "dec": r.get("dec"), "val": num(r.get("val"))} for r in (d.get("sectors") or [])],
+        # Catalyst — 오늘 재료가 있는 종목 상위 10 (점수 산식은 fetch_data.py catalyst_block 참고)
+        "catalyst": [{"t": r.get("t"), "n": r.get("n"), "pct": num(r.get("pct")), "val": num(r.get("val")),
+                      "event": r.get("ev_ko"), "headline": r.get("hl"), "score": r.get("score"),
+                      "s_news": r.get("s_news"), "s_size": r.get("s_size"), "s_liq": r.get("s_liq")}
+                     for r in (d.get("catalyst") or [])],
         "rank_fields": RANK_FIELDS,
         "rank": {k: [pick(r, RANK_FIELDS) for r in (d.get(k) or [])] for k in RANKS},
         "stock_fields": STOCK_FIELDS,
