@@ -74,7 +74,11 @@ def build(d):
                          "url": r.get("url")} for r in (d.get("market_news") or [])[:MKT_N]],
         "announcements": [{"date": r.get("date"), "time": r.get("time"), "t": r.get("t"),
                            "type": r.get("type"), "title": r.get("title_ko") or r.get("title"),
-                           "url": r.get("url")} for r in (d.get("announcements") or [])[:ANN_N]],
+                           "ai": r.get("ai_ko") or "", "url": r.get("url")}
+                          for r in (d.get("announcements") or [])[:ANN_N]],
+        # AI 요약 — 지수는 한 줄, 종목은 '왜 움직였나'. fetch_data.py 가 만든 값 그대로 (없으면 비움)
+        "ai_index": ((d.get("ai") or {}).get("index") or {}).get("ko") or "",
+        "ai_stocks": {k: (v or {}).get("ko", "") for k, v in (((d.get("ai") or {}).get("stocks")) or {}).items() if (v or {}).get("ko")},
         "calendar": [],
     }
 
@@ -105,7 +109,8 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     txt = json.dumps(out, ensure_ascii=False, separators=(",", ":"))
     OUT.write_text(txt, encoding="utf-8")
-    print(f"chat_context.json 생성: {len(txt)/1024:.0f}KB · 종목 {len(out['stocks'])} · 뉴스 {len(out['news'])} · 일정 {len(out['calendar'])} · 공시 {len(out['announcements'])}")
+    nann = sum(1 for a in out["announcements"] if a.get("ai"))
+    print(f"chat_context.json 생성: {len(txt)/1024:.0f}KB · 종목 {len(out['stocks'])} · 뉴스 {len(out['news'])} · 일정 {len(out['calendar'])} · 공시 {len(out['announcements'])}(AI요약 {nann}) · 종목AI {len(out['ai_stocks'])} · 지수AI {'있음' if out['ai_index'] else '없음'}")
     return 0
 
 
