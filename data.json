@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 23:27",
+ "updated": "2026-09-04 23:39",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,346 · 22:44 Yahoo",
- "idr_per_krw": 13.0968,
+ "fx_basis": "13.11 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,345 · 22:44 Yahoo",
+ "idr_per_krw": 13.1058,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7723.19,
+   "px": 7723.1,
    "prev": 7747.8,
    "pct": -0.32,
-   "asof": "23:25",
+   "asof": "23:35",
    "live": true,
    "spark": [
     7743.86,
@@ -15120,17 +15120,19 @@
     7722.88,
     7723.68,
     7724.34,
-    7723.19
+    7722.26,
+    7724.99,
+    7723.1
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26499.13,
+   "px": 26508.19,
    "prev": 26584.06,
-   "pct": -0.32,
-   "asof": "23:25",
+   "pct": -0.29,
+   "asof": "23:35",
    "live": true,
    "spark": [
     26609.51,
@@ -15168,17 +15170,19 @@
     26500.39,
     26497.02,
     26504.12,
-    26499.13
+    26500.76,
+    26514.25,
+    26508.19
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53437.37,
+   "px": 53419.59,
    "prev": 53687.54,
-   "pct": -0.47,
-   "asof": "23:25",
+   "pct": -0.5,
+   "asof": "23:35",
    "live": true,
    "spark": [
     53577.29,
@@ -15216,7 +15220,9 @@
     53440.55,
     53454.19,
     53442.04,
-    53437.37
+    53426.17,
+    53435.29,
+    53419.59
    ]
   },
   {
@@ -16483,6 +16489,18 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T23:27:00+07:00",
+   "date": "2026-09-04",
+   "time": "23:27",
+   "src": "Republika",
+   "t": "Bursa Mineral Perkuat Daya Tawar Indonesia di Pasar Komoditas Global",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tku53m522/bursa-mineral-perkuat-daya-tawar-indonesia-di-pasar-komoditas-global",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/083322800-1768578150-830-556.jpg",
+   "t_id": "Bursa Mineral Perkuat Daya Tawar Indonesia di Pasar Komoditas Global",
+   "t_ko": "광물 거래소를 통해 글로벌 상품 시장에서 인도네시아의 협상력이 강화되었습니다."
+  },
+  {
    "ts": "2026-09-04T23:07:45+07:00",
    "date": "2026-09-04",
    "time": "23:07",
@@ -16827,18 +16845,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/25/arus-balik-padati-gambir-belasan-ribu-pemudik-tiba-di-jakarta-1774437627759_169.jpeg?w=360&q=90",
    "t_ko": "감비르역은 2년에 걸쳐 단계적으로 개조되었습니다.",
    "t_id": "Stasiun Gambir Direnovasi Bertahap dalam 2 Tahun"
-  },
-  {
-   "ts": "2026-09-04T20:30:05+07:00",
-   "date": "2026-09-04",
-   "time": "20:30",
-   "src": "Detik",
-   "t": "Hari Pelanggan Nasional 2026, Nasabah Dapat Layanan Spesial",
-   "tags": [],
-   "url": "https://finance.detik.com/foto-bisnis/d-8648903/hari-pelanggan-nasional-2026-nasabah-dapat-layanan-spesial",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/hari-pelanggan-nasional-2026-nasabah-dapat-layanan-spesial-1788520726963_169.jpeg?w=360&q=90",
-   "t_ko": "2026년 전국 고객의 날, 고객에게 특별 서비스 제공",
-   "t_id": "Hari Pelanggan Nasional 2026, Nasabah Dapat Layanan Spesial"
   }
  ],
  "kisi_news": [
@@ -17022,9 +17028,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.770%",
-   "d": 0.17,
-   "ytd": 14.58,
+   "v": "4.764%",
+   "d": 0.04,
+   "ytd": 14.44,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17045,9 +17051,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.09",
-   "d": 0.03,
-   "ytd": 0.82,
+   "v": "99.10",
+   "d": 0.04,
+   "ytd": 0.83,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17057,9 +17063,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "90.71",
-   "d": -1.42,
-   "ytd": 57.98,
+   "v": "90.61",
+   "d": -1.53,
+   "ytd": 57.8,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17069,9 +17075,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,486.2",
-   "d": -0.61,
-   "ytd": 3.71,
+   "v": "4,482.5",
+   "d": -0.69,
+   "ytd": 3.63,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17093,9 +17099,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,818",
-   "d": 0.24,
-   "ytd": 0.82,
+   "v": "16,811",
+   "d": 0.19,
+   "ytd": 0.77,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24057,7 +24063,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-04 18:22",
-  "pc_age_min": 305,
+  "pc_age_min": 317,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
