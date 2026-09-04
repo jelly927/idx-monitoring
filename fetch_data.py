@@ -273,8 +273,8 @@ class IDX:
         if meta is not None and pts:
             last = pts[-1]; raw = str(last.get("Date") or last.get("DateTime") or last.get("Time") or "")
             try:
-                if re.fullmatch(r"\d{12,13}", raw): ts = dt.datetime.utcfromtimestamp(int(raw) / 1000)      # IDX 는 WIB 시각을 UTC 인 것처럼 epoch(ms) 로 준다
-                elif re.fullmatch(r"\d{9,10}", raw): ts = dt.datetime.utcfromtimestamp(int(raw))
+                if re.fullmatch(r"\d{12,13}", raw): ts = dt.datetime.fromtimestamp(int(raw) / 1000, dt.timezone.utc).replace(tzinfo=None)      # IDX 는 WIB 시각을 UTC 인 것처럼 epoch(ms) 로 준다
+                elif re.fullmatch(r"\d{9,10}", raw): ts = dt.datetime.fromtimestamp(int(raw), dt.timezone.utc).replace(tzinfo=None)
                 else: ts = dt.datetime.fromisoformat(raw[:19]) if raw else None
                 meta.update({"px": float(last["Close"]), "date": ts.date().isoformat() if ts else None, "ts": ts.strftime("%H:%M") if ts else None, "raw": raw[:25]})
             except Exception: meta.update({"px": float(last["Close"]), "raw": raw[:25]})
@@ -1923,21 +1923,55 @@ def kisi_news(max_items=None):
     return translate_news(out)
 
 # ---------------- AI 요약 (Google Gemini · PC 에서만 생성, 캐시를 GitHub 로 올려 러너·사이트가 그대로 씀) ----------------
-GEMINI_MODEL = "gemini-2.5-flash-lite"
+GEMINI_MODEL = "gemini-2.5-flash-lite"                      # 기본값 — 계정에서 못 쓰면 models 목록에서 flash 계열을 자동 선택
+_GEM = {"model": None}
+def _gemini_model(key):
+    """사용 가능한 모델 자동 선택: generateContent 지원 + 'flash' 계열, 최신 버전·lite 우선. 결과는 캐시(data/cache/gemini_model.txt)"""
+    if _GEM["model"]: return _GEM["model"]
+    fp = CACHE / "gemini_model.txt"
+    try:
+        if fp.exists() and (time.time() - fp.stat().st_mtime) < 7 * 86400: _GEM["model"] = fp.read_text().strip() or None
+    except Exception: pass
+    if _GEM["model"]: return _GEM["model"]
+    try:
+        r = requests.get(f"https://generativelanguage.googleapis.com/v1beta/models?pageSize=200&key={key}", timeout=30); ms = (r.json() or {}).get("models") or []
+        cand = [m["name"].split("/")[-1] for m in ms if "generateContent" in (m.get("supportedGenerationMethods") or []) and "flash" in m["name"] and not re.search(r"image|tts|audio|live|preview|exp|thinking|native", m["name"])]
+        def ver(n):
+            v = re.search(r"(\d+(?:\.\d+)?)", n); return float(v.group(1)) if v else 0
+        cand.sort(key=lambda n: ("lite" in n, ver(n)), reverse=True)   # lite 우선(빠르고 무료 한도 큼), 그 안에서 최신
+        if not cand: cand = [m["name"].split("/")[-1] for m in ms if "generateContent" in (m.get("supportedGenerationMethods") or [])]
+        _GEM["model"] = cand[0] if cand else GEMINI_MODEL
+        log(f"Gemini 모델 선택: {_GEM['model']} (후보 {', '.join(cand[:6])})")
+        try: fp.write_text(_GEM["model"])
+        except Exception: pass
+    except Exception as e:
+        log("Gemini 모델 목록 실패", str(e)[:80]); _GEM["model"] = GEMINI_MODEL
+    return _GEM["model"]
 AI_ANN_P = CACHE / "ann_ai.json"; AI_STK_P = CACHE / "stock_ai.json"
 def _gemini(prompt, max_tokens=1500, temperature=0.2):
-    """Gemini generateContent (REST). 실패 시 None"""
+    """Gemini generateContent (REST). 실패 시 None. 404(모델 없음)면 모델을 다시 고른다"""
     key = _secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")
     if not key: return None
+    if _GEM.get("fail", 0) >= 2: return None                 # 이번 빌드에서 연속 2회 실패(타임아웃·503)면 나머지는 건너뛴다 — 빌드 지연 방지
+    model = _gemini_model(key)
     try:
-        r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={key}",
-                          json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"temperature": temperature, "maxOutputTokens": max_tokens, "responseMimeType": "application/json"}},
-                          timeout=90)
-        if r.status_code != 200: log("Gemini", r.status_code, r.text[:160]); return None
+        gc = {"temperature": temperature, "maxOutputTokens": max_tokens, "responseMimeType": "application/json"}
+        if not _GEM.get("nothink"): gc["thinkingConfig"] = {"thinkingBudget": 0}          # 속도 우선(추론 비활성). 모델이 거부하면 빼고 재시도
+        r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
+        if r.status_code == 400 and "thinking" in r.text.lower() and not _GEM.get("nothink"):
+            _GEM["nothink"] = True; gc.pop("thinkingConfig", None)
+            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
+        if r.status_code == 404 and _GEM["model"]:      # 모델 퇴역 → 캐시 지우고 다음 호출에서 재선택
+            _GEM["model"] = None
+            try: (CACHE / "gemini_model.txt").unlink()
+            except Exception: pass
+        if r.status_code != 200:
+            log("Gemini", r.status_code, re.sub(r"\s+", " ", r.text)[:300]); _GEM["fail"] = _GEM.get("fail", 0) + (1 if r.status_code in (429, 500, 503) else 0); return None
         j = r.json(); txt = "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
+        _GEM["fail"] = 0
         return txt
     except Exception as e:
-        log("Gemini 오류", str(e)[:120]); return None
+        log("Gemini 오류", str(e)[:120]); _GEM["fail"] = _GEM.get("fail", 0) + 1; return None
 def _json_loads_loose(txt):
     if not txt: return None
     try: return json.loads(txt)
@@ -1974,7 +2008,7 @@ def _pdf_text(url, max_pages=3, max_chars=6000):
     except Exception as e:
         log("PDF 텍스트 실패", str(e)[:80]); return ""
 
-def ai_announcements(anns, per_build=12):
+def ai_announcements(anns, per_build=6):
     """공시 PDF 본문을 2문장으로 요약(한/인니) → a['ai_ko'], a['ai_id']. 캐시(url 기준) · 빌드당 최대 per_build 건 신규 처리"""
     try: cache = json.loads(AI_ANN_P.read_text(encoding="utf-8"))
     except Exception: cache = {}
@@ -2198,9 +2232,10 @@ def build():
             "sectors": sector_block(P("stocks")), "global": glob_idx, "dividends": DIVS,
             "news": news_items, "market_news": MARKET_NEWS, "kisi_news": kisi_items, "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
             "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
+    _GEM["fail"] = 0
     try: ai_announcements(data["announcements"])
     except Exception as e: log("공시 AI 요약 오류", repr(e)[:120])
-    try: data["ai"] = {"stocks": ai_stocks(data), "model": GEMINI_MODEL}
+    try: data["ai"] = {"stocks": ai_stocks(data), "model": _GEM.get("model") or GEMINI_MODEL}
     except Exception as e: log("종목 AI 요약 오류", repr(e)[:120]); data["ai"] = {"stocks": {}}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     # data.js: index.html 을 파일(file://)로 직접 열어도 마지막 수집 데이터가 보이도록 (fetch 는 file:// 에서 막힘)
