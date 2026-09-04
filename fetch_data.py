@@ -2039,6 +2039,55 @@ def ai_announcements(anns, per_build=6):
         if c and c.get("ko"): a["ai_ko"] = c["ko"]; a["ai_id"] = c["id"]; a["ai_tags"] = c.get("tags") or []
     return anns
 
+AI_IDX_P = CACHE / "index_ai.json"
+def ai_index(data, ttl_min=30):
+    """지수가 왜 움직였나 — 한 줄 요약(한/인니). 지수·수급·업종·상하위·해외지수·환율·뉴스를 근거로 판단.
+    호출 비용을 아끼려고 ttl_min 분 캐시. 근거가 약하면 빈 값으로 두고 화면에 아무것도 띄우지 않는다."""
+    try: cache = json.loads(AI_IDX_P.read_text(encoding="utf-8"))
+    except Exception: cache = {}
+    now = now_wib()
+    ts = cache.get("ts")
+    if ts:
+        try:
+            if (now - dt.datetime.fromisoformat(ts)).total_seconds() < ttl_min * 60 and cache.get("ko"):
+                return {"ko": cache["ko"], "id": cache.get("id", ""), "ts": ts}
+        except Exception: pass
+    can = bool(_secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")) and not os.environ.get("GITHUB_ACTIONS")
+    if not can:
+        return {"ko": cache.get("ko", ""), "id": cache.get("id", ""), "ts": ts} if cache.get("ko") else {}
+
+    i = data.get("index") or {}
+    ixs = {x.get("code"): x for x in (data.get("indices") or [])}
+    comp = ixs.get("COMPOSITE") or {}
+    def top(key, n=5):
+        return ", ".join(f"{r.get('t')} {r.get('pct')}%" for r in (data.get(key) or [])[:n])
+    ctx = {
+        "IHSG": {"현재": comp.get("px"), "전일종가": comp.get("prev"), "전일대비%": comp.get("pct"),
+                  "장중고": i.get("high"), "장중저": i.get("low"), "YTD%": i.get("ytd")},
+        "거래대금_IDR": i.get("value_idr"),
+        "상승_하락_보합": [i.get("adv"), i.get("dec"), i.get("unch")],
+        "외국인순매수_IDR": i.get("foreign_net_idr"), "외국인기준일": i.get("foreign_date"),
+        "업종": [{"명": x.get("name"), "등락%": x.get("pct")} for x in (data.get("sectors") or [])],
+        "상승상위": top("gainers"), "하락상위": top("losers"), "거래대금상위": top("value"),
+        "해외지수": [{"명": g.get("name"), "등락%": g.get("pct")} for g in (data.get("global") or [])],
+        "환율_금리": [{"항목": m.get("k"), "값": m.get("v"), "전일대비": m.get("d")} for m in (data.get("macro") or [])[:5]],
+        "시장뉴스": [n.get("t_id") or n.get("t") for n in (data.get("market_news") or [])[:12]],
+    }
+    prompt = ("아래는 오늘 인도네시아 증시(IHSG) 데이터다. 지수가 왜 이렇게 움직였는지 한 문장으로 설명하라.\n"
+              "규칙: (1) 아래 데이터에 있는 근거만 쓴다. (2) '데이터 → 원인' 구조로, 등락률과 핵심 원인을 한 문장에 담는다. "
+              "(3) 추정형 표현('~로 보인다') 금지, '~ 영향' '~에 기인' 같은 근거 기반 표현 사용. "
+              "(4) 증권사 리포트 문체(명사형 종결), 숫자는 천 단위 콤마. (5) 근거가 뚜렷하지 않으면 수급·업종 흐름만 사실대로 쓴다.\n"
+              "출력은 JSON 하나: {\"ko\": \"한국어 한 문장(90자 이내)\", \"id\": \"Bahasa Indonesia satu kalimat\"}\n\n"
+              + json.dumps(ctx, ensure_ascii=False))
+    j = _json_loads_loose(_gemini(prompt, 400))
+    if not j or not j.get("ko"):
+        return {"ko": cache.get("ko", ""), "id": cache.get("id", ""), "ts": ts} if cache.get("ko") else {}
+    out = {"ko": str(j.get("ko", ""))[:200], "id": str(j.get("id", ""))[:250], "ts": now.isoformat()}
+    try: AI_IDX_P.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
+    except Exception: pass
+    log("지수 AI 요약 갱신:", out["ko"][:60])
+    return out
+
 def ai_stocks(data, batch=10, ttl_min=60, per_build=40):
     """종목별 '왜 움직였나' — 거래대금 상위 100 + 업종 대표 종목. 뉴스·공시·배당·수급·거래대금을 근거로 한/인니 요약. 1시간 캐시, 배치 호출"""
     try: cache = json.loads(AI_STK_P.read_text(encoding="utf-8"))
@@ -2263,6 +2312,8 @@ def build():
     except Exception as e: log("공시 AI 요약 오류", repr(e)[:120])
     try: data["ai"] = {"stocks": ai_stocks(data), "model": _GEM.get("model") or GEMINI_MODEL}
     except Exception as e: log("종목 AI 요약 오류", repr(e)[:120]); data["ai"] = {"stocks": {}}
+    try: data["ai"]["index"] = ai_index(data)
+    except Exception as e: log("지수 AI 요약 오류", repr(e)[:120])
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     # data.js: index.html 을 파일(file://)로 직접 열어도 마지막 수집 데이터가 보이도록 (fetch 는 file:// 에서 막힘)
     try: (ROOT / "data.js").write_text("window.__IDX_DATA=" + json.dumps(data, ensure_ascii=False) + ";", encoding="utf-8")
