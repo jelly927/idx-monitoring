@@ -27,7 +27,13 @@ class Tee:
         for x in (self.stream, self.fh):
             try: x.flush()
             except Exception: pass
-LOG = open(ROOT / "run_log.txt", "a", encoding="utf-8", errors="replace")
+_lp = ROOT / "run_log.txt"
+try:                                                            # 로그 회전: 5MB 넘으면 마지막 4000줄만 남긴다
+    if _lp.exists() and _lp.stat().st_size > 5_000_000:
+        _tail = _lp.read_text(encoding="utf-8", errors="replace").splitlines()[-4000:]
+        _lp.write_text("\n".join(_tail) + "\n", encoding="utf-8")
+except Exception: pass
+LOG = open(_lp, "a", encoding="utf-8", errors="replace")
 sys.stdout = Tee(sys.__stdout__, LOG); sys.stderr = Tee(sys.__stderr__, LOG)
 print("\n" + "=" * 70)
 print("IDX Live 시작", datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
