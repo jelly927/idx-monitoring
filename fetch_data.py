@@ -1698,10 +1698,13 @@ def investing_batch(ttl_min=8):
     try: res = _pw_session(work, "investing-batch")
     except Exception as e: log("investing 일괄 시세 실패", str(e)[:100])
     got = 0
+    try: (CACHE / "inv_batch_raw.json").write_text(json.dumps(res, ensure_ascii=False)[:20000], encoding="utf-8")
+    except Exception: pass
     for k, *_ in INV_QUOTES:
         o = (res or {}).get(k) or {}
         px = _inv_num(o.get("last"))
-        if px is None: continue
+        if px is None:
+            log(f"investing {k} 실패: {str(o.get('err') or o)[:160]}"); continue
         prev = q.get(k) or {}
         q[k] = {"px": px, "chg": _inv_num(o.get("chg")), "pct": _inv_num(o.get("pct")), "asof": o.get("time") or "",
                 "base": o.get("base") or prev.get("base"), "base_date": o.get("base_date") or prev.get("base_date"), "id": o.get("id") or prev.get("id")}
