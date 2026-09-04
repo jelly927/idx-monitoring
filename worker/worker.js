@@ -145,6 +145,7 @@ function sysPrompt(ctx, lang) {
     "- announcements: IDX 공시.",
     "- macro: v 는 이미 포맷된 문자열이다. 그대로 인용한다.",
     "- ai_index 는 오늘 지수가 왜 움직였는지 한 줄 요약, ai_stocks 는 종목별 등락 사유, announcements[].ai 는 공시 요약이다. 이미 만들어진 요약이니 근거로 인용하되 숫자는 원본 필드로 검증한다.",
+    "- catalyst 는 오늘 재료(뉴스·공시·배당락)가 있는 종목 상위 10이다. score = s_news×0.5 + s_size×0.3 + s_liq×0.2 로 계산된 값이며, event 는 재료 유형, headline 은 근거 기사다. 순위 근거를 물으면 이 세 점수를 그대로 제시한다.",
     "",
     lang === "id"
       ? "[출력 언어] 반드시 인도네시아어(Bahasa Indonesia)로만 답한다."
