@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 11:42",
+ "updated": "2026-09-04 11:48",
  "delay_min": 0,
  "fx_basis": "13.02 IDR/KRW · USD/IDR 17,640 · USD/KRW 1,355 · 11:35 Yahoo",
- "idr_per_krw": 13.0191,
+ "idr_per_krw": 13.02,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -339,10 +339,10 @@
   "m1": 5.4,
   "value_idr": 18607401563700,
   "volume": 39305835265,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-04 11:38",
-  "rank_asof": "11:41",
+  "rank_src": "Yahoo 15분 지연 · 835종목 · 외국인·공시 PC 09-04 11:38",
+  "rank_asof": "11:47",
   "rank_date": "2026-09-04",
-  "adv": 289,
+  "adv": 288,
   "dec": 342,
   "unch": 205,
   "foreign_net_idr": 1104392864864.3184,
@@ -6291,22 +6291,6 @@
    "lo": 290.0,
    "ratio": 3.4,
    "fnet": -47171721.18967713,
-   "live": 1
-  },
-  {
-   "t": "AKSI",
-   "n": "Mineral Sumberdaya Mandiri",
-   "px": 324.0,
-   "prev": 260.0,
-   "pct": 24.62,
-   "val": 909503200.0,
-   "vol": 3011600.0,
-   "sh": 720000000,
-   "mcap": 233280000000.0,
-   "hi": 324.0,
-   "lo": 258.0,
-   "ratio": 6.2,
-   "fnet": 0.0,
    "live": 1
   },
   {
@@ -14974,11 +14958,11 @@
   {
    "name": "운송·물류",
    "name_id": "Transportasi",
-   "n": 37,
-   "adv": 11,
+   "n": 36,
+   "adv": 10,
    "dec": 15,
-   "val": 97969521066.66669,
-   "mcap": 76717621415950.0,
+   "val": 97060017866.66669,
+   "mcap": 76484341415950.0,
    "top": [
     {
      "t": "GIAA",
@@ -15021,7 +15005,7 @@
      "pct": -0.53
     }
    ],
-   "pct": -0.98
+   "pct": -1.06
   },
   {
    "name": "헬스케어",
@@ -15351,10 +15335,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6687.96,
+   "px": 6692.55,
    "prev": 6598.23,
-   "pct": 1.36,
-   "asof": "11:20",
+   "pct": 1.43,
+   "asof": "11:25",
    "live": true,
    "spark": [
     6677.11,
@@ -15409,17 +15393,18 @@
     6684.22,
     6697.6,
     6688.67,
-    6687.96
+    6690.15,
+    6692.55
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65032.57,
+   "px": 65043.17,
    "prev": 64269.48,
-   "pct": 1.19,
-   "asof": "11:25",
+   "pct": 1.2,
+   "asof": "11:30",
    "live": true,
    "spark": [
     64439.01,
@@ -15465,7 +15450,8 @@
     64933.54,
     64968.67,
     65000.16,
-    65032.57
+    65044.06,
+    65043.17
    ]
   },
   {
@@ -15573,6 +15559,35 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-04T11:44:01+07:00",
+   "date": "2026-09-04",
+   "time": "11:44",
+   "src": "Detik",
+   "t": "Bank Mandiri Bakal Tebar Dividen Rp 6 T",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8648090/bank-mandiri-bakal-tebar-dividen-rp-6-t",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/02/23/gedung-bank-mandiri-1771821848230_169.jpeg?w=360&q=90",
+   "t_ko": "Bank Mandiri는 IDR 6 T의 배당금을 분배할 예정입니다.",
+   "t_id": "Bank Mandiri Bakal Tebar Dividen Rp 6 T"
+  },
+  {
+   "ts": "2026-09-04T11:41:48+07:00",
+   "date": "2026-09-04",
+   "time": "11:41",
+   "src": "Detik",
+   "t": "Merger ADHI-PTPP Ditargetkan Selesai Akhir Tahun",
+   "tags": [
+    "ADHI",
+    "PTPP"
+   ],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8648089/merger-adhi-ptpp-ditargetkan-selesai-akhir-tahun",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2017/03/16/3a759689-914d-4726-9f8a-5485f315725b_169.jpg?w=360&q=90",
+   "t_ko": "ADHI-PTPP 합병, 연말까지 완료 목표",
+   "t_id": "Merger ADHI-PTPP Ditargetkan Selesai Akhir Tahun"
+  },
   {
    "ts": "2026-09-04T11:40:00+07:00",
    "date": "2026-09-04",
@@ -16079,20 +16094,6 @@
    "t_id": "Peraih Anugerah Ekonomi Hijau Pendukung Ekosistem Berkelanjutan"
   },
   {
-   "ts": "2026-09-03T22:56:15+07:00",
-   "date": "2026-09-03",
-   "time": "09/03",
-   "src": "Detik",
-   "t": "Daftar Perusahaan Pendukung Ekosistem Berkelanjutan Raih Anugerah Ekonomi Hijau",
-   "tags": [
-    "MEGA"
-   ],
-   "url": "https://finance.detik.com/ekonomi-hijau/d-8647552/daftar-perusahaan-pendukung-ekosistem-berkelanjutan-raih-anugerah-ekonomi-hijau",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/01/anugerah-ekonomi-hijau-1788257473437_169.jpeg?w=360&q=90",
-   "t_ko": "지속가능 생태계 지원 기업 리스트 — Anugerah Ekonomi Hijau 수상",
-   "t_id": "Daftar Perusahaan Pendukung Ekosistem Berkelanjutan Raih Anugerah Ekonomi Hijau"
-  },
-  {
    "ts": "2026-09-03T19:56:26+07:00",
    "date": "2026-09-03",
    "time": "09/03",
@@ -16479,6 +16480,18 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T11:46:00+07:00",
+   "date": "2026-09-04",
+   "time": "11:46",
+   "src": "Republika",
+   "t": "Pakar: Harga Keekonomian Pertamax Ditaksir Rp16.800, Pemerintah Masih Tahan Harga Jual",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tkte7n522/pakar-harga-keekonomian-pertamax-ditaksir-rp16800-pemerintah-masih-tahan-harga-jual",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/pertamax_260901062334-752.jpeg",
+   "t_ko": "전문가: Pertamax의 경제적 가격은 IDR 16,800으로 추산되며, 정부는 여전히 판매 가격을 유지하고 있습니다.",
+   "t_id": "Pakar: Harga Keekonomian Pertamax Ditaksir Rp16.800, Pemerintah Masih Tahan Harga Jual"
+  },
+  {
    "ts": "2026-09-04T11:40:00+07:00",
    "date": "2026-09-04",
    "time": "11:40",
@@ -16487,8 +16500,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tktdyl522/pertamina-patra-niaga-klarifikasi-isu-stnk-untuk-pembelian-bbm-subsidi",
    "img": "https://static.republika.co.id/uploads/images/detailnews/pengecekan-stnk-untuk-beli-bbm-di-sumatera_260904074153-150.jpeg",
-   "t_id": "Pertamina Patra Niaga Klarifikasi isu STNK untuk pembelian BBM Subsidi",
-   "t_ko": "Pertamina Patra Niaga는 보조금을 받는 연료 구매에 대한 STNK 문제를 명확히 합니다."
+   "t_ko": "Pertamina Patra Niaga는 보조금을 받는 연료 구매에 대한 STNK 문제를 명확히 합니다.",
+   "t_id": "Pertamina Patra Niaga Klarifikasi isu STNK untuk pembelian BBM Subsidi"
   },
   {
    "ts": "2026-09-04T11:36:52+07:00",
@@ -16499,8 +16512,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609040155/kunjungan-ke-rusia-prabowo-bahas-kerja-sama-pupuk-hingga-perkapalan-dengan-vladimir-putin",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/prabowo-dan-putin-membahas-sejumlah-peluang-investasi-mulai-dari-pupuk-energi-dan-sumber-daya-mineral-hingga-perkapalan-antara-tj18y.webp",
-   "t_id": "Kunjungan ke Rusia, Prabowo Bahas Kerja Sama Pupuk hingga Perkapalan dengan Vladimir Putin",
-   "t_ko": "프라보워 러시아 방문, 블라디미르 푸틴 대통령과 비료 및 운송 협력 논의"
+   "t_ko": "Prabowo 러시아 방문 — Vladimir Putin과 비료·조선 협력 논의",
+   "t_id": "Kunjungan ke Rusia, Prabowo Bahas Kerja Sama Pupuk hingga Perkapalan dengan Vladimir Putin"
   },
   {
    "ts": "2026-09-04T11:36:21+07:00",
@@ -16523,7 +16536,7 @@
    "tags": [],
    "url": "https://www.medcom.id/ekonomi/global/akWmBXqN-federasi-asosiasi-tekstil-eropa-usul-biaya-impor-baju-rp200-ribuan-fast-fashion-bakal-makin-mahal",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840022/px5XjknsV4.jpeg?w=720",
-   "t_ko": "유럽섬유협회연맹, 의류 수입 비용 IDR 20만 제안, 패스트 패션이 더 비싸질까?",
+   "t_ko": "유럽 섬유협회연맹, 의류 수입관세 Rp20만대 제안 — Fast Fashion 가격 상승 전망",
    "t_id": "Federasi Asosiasi Tekstil Eropa Usul Biaya Impor Baju Rp200 Ribuan, Fast Fashion Bakal Makin Mahal?"
   },
   {
@@ -16794,8 +16807,8 @@
    "tags": [],
    "url": "https://finance.detik.com/energi/d-8647995/pgn-dorong-penggunaan-bbg-untuk-kendaraan-taksi-online",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/bbg-1788494881571_169.jpeg?w=360&q=90",
-   "t_id": "PGN Dorong Penggunaan BBG untuk Kendaraan Taksi Online",
-   "t_ko": "PGN, 온라인 택시 차량에 CNG 사용 권장"
+   "t_ko": "PGN, 온라인 택시 차량에 CNG 사용 권장",
+   "t_id": "PGN Dorong Penggunaan BBG untuk Kendaraan Taksi Online"
   },
   {
    "ts": "2026-09-04T09:36:47+07:00",
@@ -16820,18 +16833,6 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840005/QGHgSy4bfL.jpg?w=720",
    "t_ko": "IHSG 6,650 돌파 후 추가 상승 — 투자자 차익실현 경계",
    "t_id": "IHSG Tembus 6.650 dan Lanjut Menguat, Investor Waspadai <i>Profit Taking</i>"
-  },
-  {
-   "ts": "2026-09-04T09:33:39+07:00",
-   "date": "2026-09-04",
-   "time": "09:33",
-   "src": "Medcom",
-   "t": "Rupiah Kembali Perkasa ke Rp17.621,2/USD",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/keuangan/VNxAW0qb-rupiah-kembali-perkasa-ke-rp17-621-2-usd",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840003/2mDrLUCpEd.jpg?w=720",
-   "t_ko": "루피아 재차 강세 Rp17,621.2/USD",
-   "t_id": "Rupiah Kembali Perkasa ke Rp17.621,2/USD"
   }
  ],
  "kisi_news": [
@@ -17003,9 +17004,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.01",
-   "d": -0.24,
-   "ytd": 12.02,
+   "v": "13.02",
+   "d": -0.21,
+   "ytd": 12.06,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17040,7 +17041,7 @@
    "k": "달러 인덱스 (DXY)",
    "v": "99.03",
    "d": 0.03,
-   "ytd": 0.77,
+   "ytd": 0.76,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17050,9 +17051,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "91.84",
-   "d": 0.11,
-   "ytd": 59.94,
+   "v": "91.71",
+   "d": -0.03,
+   "ytd": 59.72,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17062,7 +17063,7 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,520.2",
+   "v": "4,520.3",
    "d": 0.11,
    "ytd": 4.5,
    "inv": false,
