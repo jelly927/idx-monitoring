@@ -36,12 +36,17 @@ jobs:
         run: python make_chat_context.py
         env: { TZ: Asia/Jakarta }
       - name: commit data
+        # 러너의 산출물(data.json·data.js·구글 번역 캐시)만 올린다. PC 가 그 사이 올린 파일과 충돌하지 않도록
+        # 최신 main 위에 산출물을 다시 얹어 커밋한다 (rebase 충돌로 data.json 이 안 올라가는 일 방지)
         run: |
           git config user.name idx-live-bot && git config user.email bot@users.noreply.github.com
-          for f in data.json data.js data/cache; do [ -e "$f" ] && git add -A -- "$f"; done; true
+          mkdir -p /tmp/out && for f in data.json data.js data/cache/tr_ko.json data/cache/news_seen.json; do [ -e "$f" ] && cp "$f" /tmp/out/$(basename "$f"); done; true
+          git fetch origin main && git reset --hard origin/main
+          [ -e /tmp/out/data.json ] && cp /tmp/out/data.json data.json; [ -e /tmp/out/data.js ] && cp /tmp/out/data.js data.js
+          [ -e /tmp/out/tr_ko.json ] && cp /tmp/out/tr_ko.json data/cache/tr_ko.json; [ -e /tmp/out/news_seen.json ] && cp /tmp/out/news_seen.json data/cache/news_seen.json; true
+          git add -A -- data.json data.js data/cache/tr_ko.json data/cache/news_seen.json 2>/dev/null; true
           git commit -m "data $(TZ=Asia/Jakarta date +%Y-%m-%d\ %H:%M) WIB [skip ci]" || echo "no change"
-          git pull --rebase origin main || true
-          git push || true
+          for i in 1 2 3; do git push && break; git fetch origin main && git rebase origin/main || git rebase --abort; sleep 5; done; true
   deploy:
     needs: fetch
     if: always() && !cancelled()
