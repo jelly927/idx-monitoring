@@ -955,7 +955,7 @@ MACRO_ID = [  # 시장지표 라벨/주석 → 인니어 (긴 것부터)
     ("비거주자 주간 순매수", "Net beli nonresiden mingguan"),
     ("국채 10년물", "Obligasi negara 10 tahun"), ("국채 1년물 (단기)", "Obligasi negara 1 tahun (jangka pendek)"),
     ("달러 인덱스 (DXY)", "Indeks dolar (DXY)"), ("금 (US$/oz)", "Emas (US$/oz)"), ("석탄 Newcastle", "Batu bara Newcastle"), ("니켈 LME", "Nikel LME"), ("주석 LME", "Timah LME"),
-    ("Bursa Malaysia FCPO 근월물", "FCPO Bursa Malaysia kontrak terdekat"), ("6월 2회 +25bp", "Juni 2x +25bp"),
+    ("Bursa Malaysia FCPO 근월물", "FCPO Bursa Malaysia kontrak terdekat"), ("Yahoo 15분 지연", "Yahoo, tunda 15 mnt"), ("6월 2회 +25bp", "Juni 2x +25bp"),
     ("investing.com 실시간", "investing.com real-time"),
     ("BI 보도자료", "Siaran pers BI"),
     ("연초", "Awal tahun"), ("수기", "manual"), ("확인 필요", "perlu konfirmasi"),
@@ -983,8 +983,9 @@ def macro_block(bi):
         if not v: out.append({"k": label, "v": "확인 필요", "d": None, "ytd": None, "inv": inv, "note": note or None}); return
         base = yb.get(key) or v.get("base")
         ytd = round((v["px"] / base - 1) * 100, 2) if base else None
+        src = "Yahoo 15분 지연" if str(v.get("asof", "")).startswith("Yahoo") else "investing.com"
         out.append({"k": label, "v": fmt.format(v["px"]), "d": v.get("pct"), "ytd": ytd, "inv": inv,
-                    "note": " · ".join(x for x in (note, (f'연초 {base:,.4g}' if base and key not in ("TIN", "NICKEL") else f'연초 {base:,.0f}' if base else None)) if x) or None})
+                    "note": " · ".join(x for x in (note, src, (f'연초 {base:,.4g}' if base and key not in ("TIN", "NICKEL") else f'연초 {base:,.0f}' if base else None)) if x) or None})
     spec = {k: (lab, fmt, inv, note) for k, _, lab, fmt, inv, note in INV_QUOTES}
     for key in ("SUN1Y", "UST10Y"): irow(key, *spec[key])
     out.append({"k": "BI Rate (7D RR)", "v": f'{m["bi_rate"]:.2f}%' if m.get("bi_rate") else "확인 필요", "d": None, "ytd": None, "note": m.get("bi_note")})
@@ -1658,25 +1659,46 @@ INV_QUOTES = [   # key, path, 표시명, 포맷, inv(상승=빨강), 단위 메�
     ("TIN", "/commodities/tin", "주석 LME (US$/t)", "{:,.0f}", False, ""),
     ("CPO", "/commodities/palm-oil", "CPO (MYR/t)", "{:,.0f}", False, "Bursa Malaysia FCPO 근월물"),
 ]
+INV_YAHOO = {"UST10Y": "^TNX", "DXY": "DX-Y.NYB", "WTI": "CL=F", "BRENT": "BZ=F", "GOLD": "GC=F"}   # Yahoo 15분 지연으로 대체 가능한 항목
+INV_ROTATE = ["SUN1Y", "COAL", "NICKEL", "TIN", "CPO"]                                              # investing 전용 — 빌드마다 1개씩 순환(세션당 진입 3회 넘으면 Cloudflare 검증에 걸림)
 INV_Q_P = CACHE / "inv_quotes.json"
+def y_base(sym):
+    """연초(2025-12-31 이하 마지막 거래일) 종가 — YTD 기준"""
+    if yf is None: return None, None
+    try:
+        c = yf.Ticker(sym).history(start="2025-12-15", end="2026-01-06", interval="1d", auto_adjust=False)["Close"].dropna()
+        c = c[c.index.strftime("%Y-%m-%d") <= "2025-12-31"]
+        return (float(c.iloc[-1]), c.index[-1].strftime("%Y-%m-%d")) if len(c) else (None, None)
+    except Exception as e:
+        log("yahoo base fail", sym, e); return None, None
 def _inv_num(s):
     try: return float(str(s).replace(",", "").replace("%", "").replace("(", "").replace(")", "").replace("+", "").strip())
     except Exception: return None
-def investing_batch(ttl_min=8):
-    """모든 investing.com 시세를 브라우저 1세션에서 fetch 로 받는다. 연초(2025-12-31 이하 마지막) 종가는 1회만 받아 캐시.
-    반환 {key: {"px","chg","pct","asof","base","base_date"}} · 실패 시 캐시(오래됐으면 asof 에 표시)"""
+def investing_batch(ttl_min=3):
+    """국채 10년물(카드용)은 매 빌드, investing 전용 원자재·단기채는 빌드마다 1개씩 순환 갱신(약 35분 주기), 나머지는 Yahoo.
+    연초 종가(YTD 기준)는 1회만 받아 캐시. 반환 {key: {"px","chg","pct","asof","base","base_date","ts"}}"""
     try: c = json.loads(INV_Q_P.read_text(encoding="utf-8"))
     except Exception: c = {}
     q = c.get("quotes") or {}
+    for k, sym in INV_YAHOO.items():                     # Yahoo 항목
+        v = yq(sym)
+        if v:
+            prev = q.get(k) or {}
+            if not prev.get("base"): prev["base"], prev["base_date"] = y_base(sym)
+            q[k] = {"px": v["px"], "chg": round(v["px"] - v["prev"], 4), "pct": round((v["px"] / v["prev"] - 1) * 100, 2), "asof": "Yahoo 15분 지연",
+                    "base": prev.get("base"), "base_date": prev.get("base_date"), "ts": now_wib().isoformat()}
     try:
         fresh = c.get("saved") and (now_wib() - dt.datetime.fromisoformat(c["saved"])).total_seconds() < ttl_min * 60
     except Exception: fresh = False
-    if fresh and q: return q
-    need_base = [k for k, *_ in INV_QUOTES if not (q.get(k) or {}).get("base")]
+    if fresh and q.get("SUN10Y"): return q
+    oldest = min(INV_ROTATE, key=lambda k: (q.get(k) or {}).get("ts") or "")
+    keys = ["SUN10Y", oldest]
+    need_base = [k for k in keys if not (q.get(k) or {}).get("base")]
     def work(pg):
         """페이지 안 fetch() 는 Cloudflare 가 403(Just a moment) 으로 막으므로 종목별로 goto 로 진입해 읽는다 (건당 3~5초)"""
-        out = {}
-        for k, u, *_ in INV_QUOTES:
+        out = {}; urls = {k: u for k, u, *_ in INV_QUOTES}
+        for k in keys:
+            u = urls[k]
             try:
                 pg.goto("https://www.investing.com" + u, wait_until="domcontentloaded", timeout=45000); _wait_cf(pg)
                 o = None
@@ -1705,22 +1727,18 @@ def investing_batch(ttl_min=8):
     try: res = _pw_session(work, "investing-batch")
     except Exception as e: log("investing 일괄 시세 실패", str(e)[:100])
     got = 0
-    try: (CACHE / "inv_batch_raw.json").write_text(json.dumps(res, ensure_ascii=False)[:20000], encoding="utf-8")
-    except Exception: pass
-    for k, *_ in INV_QUOTES:
+    for k in keys:
         o = (res or {}).get(k) or {}
         px = _inv_num(o.get("last"))
         if px is None:
             log(f"investing {k} 실패: {str(o.get('err') or o)[:160]}"); continue
         prev = q.get(k) or {}
         q[k] = {"px": px, "chg": _inv_num(o.get("chg")), "pct": _inv_num(o.get("pct")), "asof": o.get("time") or "",
-                "base": o.get("base") or prev.get("base"), "base_date": o.get("base_date") or prev.get("base_date"), "id": o.get("id") or prev.get("id")}
+                "base": o.get("base") or prev.get("base"), "base_date": o.get("base_date") or prev.get("base_date"), "id": o.get("id") or prev.get("id"), "ts": now_wib().isoformat()}
         got += 1
-    if got:
-        try: INV_Q_P.write_text(json.dumps({"saved": now_wib().isoformat(), "quotes": q}, ensure_ascii=False), encoding="utf-8")
-        except Exception: pass
-        log(f"investing.com 일괄 {got}/{len(INV_QUOTES)} · " + " ".join(f'{k} {q[k]["px"]:g}' for k, *_ in INV_QUOTES if k in q))
-    else: log("investing.com 일괄 시세 실패 → 캐시 사용")
+    try: INV_Q_P.write_text(json.dumps({"saved": now_wib().isoformat(), "quotes": q}, ensure_ascii=False), encoding="utf-8")
+    except Exception: pass
+    log(f"investing.com {got}/{len(keys)} ({'·'.join(keys)}) · 보유 " + " ".join(f'{k} {q[k]["px"]:g}' for k, *_ in INV_QUOTES if k in q))
     return q
 
 SUN_DAILY_P = CACHE / "sun10y_daily.json"
