@@ -951,7 +951,7 @@ def yq(sym):
 MACRO_ID = [  # 시장지표 라벨/주석 → 인니어 (긴 것부터)
     ("USD/IDR (BI bid 종가)", "USD/IDR (penutupan bid BI)"),
     ("USD/IDR (Yahoo 15분 지연)", "USD/IDR (Yahoo, tunda 15 mnt)"),
-    ("IDR/KRW (1원당 루피아)", "IDR/KRW (Rupiah per 1 Won)"),
+    ("IDR/KRW (1원당 루피아)", "IDR/KRW (Rupiah per 1 Won)"), ("KRW/IDR (1원당 루피아)", "KRW/IDR (Rupiah per 1 Won)"),
     ("비거주자 주간 순매수", "Net beli nonresiden mingguan"),
     ("국채 10년물", "Obligasi negara 10 tahun"), ("국채 1년물 (단기)", "Obligasi negara 1 tahun (jangka pendek)"),
     ("달러 인덱스 (DXY)", "Indeks dolar (DXY)"), ("금 (US$/oz)", "Emas (US$/oz)"), ("석탄 Newcastle", "Batu bara Newcastle"), ("니켈 LME", "Nikel LME"), ("주석 LME", "Timah LME"),
@@ -976,8 +976,9 @@ def macro_block(bi):
         if base: ytd = round((base / q["px"] - 1) * 100, 2) if inverse_ytd else round((q["px"] / base - 1) * 100, 2)
         out.append({"k": k, "v": fmt.format(q["px"]), "d": d, "ytd": ytd, "inv": inv, "note": " · ".join(x for x in (note, src) if x) or None})
     # 상단 카드에 이미 있는 USD/IDR·국채 10년물은 제외. 순서: IDR/KRW → USD/KRW → UST 10Y → BI Rate → DXY → WTI → Brent → 금 → 석탄 → 니켈 → 주석 → CPO
-    kr = yq("KRWIDR=X")
-    row("IDR/KRW (1원당 루피아)", kr, inv=True, base=yb.get("KRWIDR"), note=f'연초 {yb.get("KRWIDR")}')
+    usdidr = yq("USDIDR=X"); kr = yq("KRWIDR=X")
+    row("USD/IDR", usdidr, inv=True, base=yb.get("USDIDR"), fmt="{:,.0f}", note=f'Yahoo 15분 지연 · 연초 {yb.get("USDIDR"):,}')
+    row("KRW/IDR (1원당 루피아)", kr, inv=True, base=yb.get("KRWIDR"), note=f'Yahoo 15분 지연 · 연초 {yb.get("KRWIDR")}')
     def irow(key, label, fmt, inv, note):
         v = _IV.get(key)
         if not v: out.append({"k": label, "v": "확인 필요", "d": None, "ytd": None, "inv": inv, "note": note or None}); return
@@ -987,7 +988,7 @@ def macro_block(bi):
         out.append({"k": label, "v": fmt.format(v["px"]), "d": v.get("pct"), "ytd": ytd, "inv": inv,
                     "note": " · ".join(x for x in (note, src, (f'연초 {base:,.4g}' if base and key not in ("TIN", "NICKEL") else f'연초 {base:,.0f}' if base else None)) if x) or None})
     spec = {k: (lab, fmt, inv, note) for k, _, lab, fmt, inv, note in INV_QUOTES}
-    for key in ("SUN1Y", "UST10Y"): irow(key, *spec[key])
+    irow("UST10Y", *spec["UST10Y"])
     out.append({"k": "BI Rate (7D RR)", "v": f'{m["bi_rate"]:.2f}%' if m.get("bi_rate") else "확인 필요", "d": None, "ytd": None, "note": m.get("bi_note")})
     for key in ("DXY", "WTI", "BRENT", "GOLD", "COAL", "NICKEL", "TIN", "CPO"): irow(key, *spec[key])
     if bi and bi.get("cds5y"): out.append({"k": "CDS 5Y (bps)", "v": f'{bi["cds5y"]:.2f}', "d": None, "ytd": None, "inv": True, "note": "BI 보도자료"})
@@ -1660,7 +1661,7 @@ INV_QUOTES = [   # key, path, 표시명, 포맷, inv(상승=빨강), 단위 메�
     ("CPO", "/commodities/palm-oil", "CPO (MYR/t)", "{:,.0f}", False, "Bursa Malaysia FCPO 근월물"),
 ]
 INV_YAHOO = {"UST10Y": "^TNX", "DXY": "DX-Y.NYB", "WTI": "CL=F", "BRENT": "BZ=F", "GOLD": "GC=F"}   # Yahoo 15분 지연으로 대체 가능한 항목
-INV_ROTATE = ["SUN1Y", "COAL", "NICKEL", "TIN", "CPO"]                                              # investing 전용 — 빌드마다 1개씩 순환(세션당 진입 3회 넘으면 Cloudflare 검증에 걸림)
+INV_ROTATE = ["COAL", "NICKEL", "TIN", "CPO"]                                              # investing 전용 — 빌드마다 1개씩 순환(세션당 진입 3회 넘으면 Cloudflare 검증에 걸림)
 INV_Q_P = CACHE / "inv_quotes.json"
 def y_base(sym):
     """연초(2025-12-31 이하 마지막 거래일) 종가 — YTD 기준"""
