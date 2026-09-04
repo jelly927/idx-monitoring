@@ -983,7 +983,7 @@ def macro_block(bi):
         if base: ytd = round((base / q["px"] - 1) * 100, 2) if inverse_ytd else round((q["px"] / base - 1) * 100, 2)
         out.append({"k": k, "v": fmt.format(q["px"]), "d": d, "ytd": ytd, "inv": inv, "note": " · ".join(x for x in (note, src) if x) or None})
     # 상단 카드에 이미 있는 USD/IDR·국채 10년물은 제외. 순서: IDR/KRW → USD/KRW → UST 10Y → BI Rate → DXY → WTI → Brent → 금 → 석탄 → 니켈 → 주석 → CPO
-    usdidr = yq("USDIDR=X"); kr = yq("KRWIDR=X")
+    usdidr = yq("USDIDR=X") or ylive_fx("USDIDR=X") or ylive("USDIDR=X"); kr = yq("KRWIDR=X")   # 일봉이 비면(러너에서 간헐적) 15분봉·1분봉으로
     row("USD/IDR", usdidr, inv=True, base=yb.get("USDIDR"), fmt="{:,.0f}", note=f'Yahoo 15분 지연 · 연초 {yb.get("USDIDR"):,}')
     row("KRW/IDR (1원당 루피아)", kr, inv=True, base=yb.get("KRWIDR"), note=f'Yahoo 15분 지연 · 연초 {yb.get("KRWIDR")}')
     def irow(key, label, fmt, inv, note):
