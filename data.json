@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-05 01:05",
+ "updated": "2026-09-05 02:04",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,346 · 00:45 Yahoo",
- "idr_per_krw": 13.0972,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,346 · 01:56 Yahoo",
+ "idr_per_krw": 13.0967,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15063,10 +15063,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7708.83,
+   "px": 7713.96,
    "prev": 7747.8,
-   "pct": -0.5,
-   "asof": "01:00",
+   "pct": -0.44,
+   "asof": "02:00",
    "live": true,
    "spark": [
     7743.86,
@@ -15123,17 +15123,29 @@
     7709.28,
     7708.96,
     7709.79,
-    7708.83
+    7708.76,
+    7711.41,
+    7711.97,
+    7713.0,
+    7714.4,
+    7714.06,
+    7715.52,
+    7714.5,
+    7717.01,
+    7717.61,
+    7717.49,
+    7718.12,
+    7713.96
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26449.33,
+   "px": 26490.25,
    "prev": 26584.06,
-   "pct": -0.51,
-   "asof": "01:00",
+   "pct": -0.35,
+   "asof": "02:00",
    "live": true,
    "spark": [
     26609.51,
@@ -15190,17 +15202,29 @@
     26456.3,
     26453.18,
     26459.3,
-    26449.33
+    26448.98,
+    26459.44,
+    26460.4,
+    26471.19,
+    26473.71,
+    26472.22,
+    26477.54,
+    26476.5,
+    26487.4,
+    26494.17,
+    26496.65,
+    26503.34,
+    26490.25
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53401.29,
+   "px": 53382.63,
    "prev": 53687.54,
-   "pct": -0.53,
-   "asof": "01:00",
+   "pct": -0.57,
+   "asof": "02:00",
    "live": true,
    "spark": [
     53577.29,
@@ -15257,7 +15281,19 @@
     53376.37,
     53376.91,
     53385.28,
-    53401.29
+    53400.72,
+    53414.79,
+    53419.22,
+    53415.93,
+    53424.84,
+    53417.53,
+    53436.68,
+    53420.53,
+    53433.34,
+    53426.54,
+    53418.06,
+    53410.58,
+    53382.63
    ]
   },
   {
@@ -16524,6 +16560,29 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-05T01:54:45+07:00",
+   "date": "2026-09-05",
+   "time": "01:54",
+   "src": "Jawa Pos",
+   "t": "BTN Merombak Direksi Lewat RUPSLB, Cek Jajaran Manajemen Terbaru",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609040333/btn-merombak-direksi-lewat-rupslb-cek-jajaran-manajemen-terbaru",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/direktur-utama-pt-bank-tabungan-negara-btn-nixon-lp-napitupulu-saat-ditemui-usai-rapat-umum-pemegang-saham-luar-biasa-rupslb-di-kantor-pusat-btn-jakarta-jumat-49-djati-waluyojawaposcom-MXB1j.webp",
+   "t_ko": "BTN, EGMS를 통해 이사회 개편, 최신 경영진 순위 확인",
+   "t_id": "BTN Merombak Direksi Lewat RUPSLB, Cek Jajaran Manajemen Terbaru"
+  },
+  {
+   "ts": "2026-09-05T01:47:37+07:00",
+   "date": "2026-09-05",
+   "time": "01:47",
+   "src": "Bloomberg",
+   "t": "Trump Doubles Down on Push for Lower Rates After Strong Jobs Report",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-04/trump-doubles-down-on-push-for-lower-rates-video",
+   "t_ko": "트럼프는 강력한 일자리 보고서 이후 금리 인하 추진을 두 배로 늘렸다",
+   "t_id": "Trump Menggandakan Dorongan untuk Menurunkan Suku Bunga Setelah Laporan Pekerjaan yang Kuat"
+  },
+  {
    "ts": "2026-09-05T00:25:04+07:00",
    "date": "2026-09-05",
    "time": "00:25",
@@ -16542,7 +16601,9 @@
    "src": "Media Indonesia",
    "t": "Kemenko Perekonomian: IEU-CEPA Perkuat Akses Pasar Produk Unggulan Indonesia",
    "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929966/kemenko-perekonomian-ieu-cepa-perkuat-akses-pasar-produk-unggulan-indonesia"
+   "url": "https://mediaindonesia.com/ekonomi/929966/kemenko-perekonomian-ieu-cepa-perkuat-akses-pasar-produk-unggulan-indonesia",
+   "t_ko": "경제 조정부: IEU-CEPA, 주요 인도네시아 제품에 대한 시장 접근 강화",
+   "t_id": "Kemenko Perekonomian: IEU-CEPA Perkuat Akses Pasar Produk Unggulan Indonesia"
   },
   {
    "ts": "2026-09-04T23:50:00+07:00",
@@ -16551,7 +16612,9 @@
    "src": "Media Indonesia",
    "t": "DPR Minta Pemerintah Perjelas Kabar 8 WNI Gabung Militer Asing",
    "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/929968/dpr-minta-pemerintah-perjelas-kabar-8-wni-gabung-militer-asing"
+   "url": "https://mediaindonesia.com/politik-dan-hukum/929968/dpr-minta-pemerintah-perjelas-kabar-8-wni-gabung-militer-asing",
+   "t_ko": "조선민주주의인민공화국, 정부에 인도네시아 국민 8명이 외국군에 입대했다는 소식을 명확히 해줄 것을 요청",
+   "t_id": "DPR Minta Pemerintah Perjelas Kabar 8 WNI Gabung Militer Asing"
   },
   {
    "ts": "2026-09-04T23:41:00+07:00",
@@ -16850,30 +16913,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/332-juta-keluarga-jadi-sasaran-bantuan-beras-30-kg-buatkan-1788519049900_169.jpeg?w=360&q=90",
    "t_ko": "3,320만 가구에 쌀 30kg 지원 대상",
    "t_id": "33,2 Juta Keluarga Jadi Sasaran Bantuan Beras 30 Kg"
-  },
-  {
-   "ts": "2026-09-04T20:43:46+07:00",
-   "date": "2026-09-04",
-   "time": "09/04",
-   "src": "Jawa Pos",
-   "t": "Harga Emas Hari Ini 4 September Naik Tajam! Rincian Lengkap Antam, Galeri24, dan UBS",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609040181/harga-emas-hari-ini-4-september-naik-tajam-rincian-lengkap-antam-galeri24-dan-ubs",
-   "img": "https://cdn-assets.jawapos.com/images/1/2025/05/14/JKT_-Harga-Emas-Anjlok-Dipicu-Sinyal-Positif-AS-dan-China_SALMAN-TOYIBI-6JPG-571603326.jpg",
-   "t_ko": "9/4 금 가격 급등 — Antam·Galeri24·UBS 상세 시세",
-   "t_id": "Harga Emas Hari Ini 4 September Naik Tajam! Rincian Lengkap Antam, Galeri24, dan UBS"
-  },
-  {
-   "ts": "2026-09-04T20:41:58+07:00",
-   "date": "2026-09-04",
-   "time": "09/04",
-   "src": "Jawa Pos",
-   "t": "Kemasan Vape Diseragamkan, Industri Khawatir Biaya Naik dan Produk Ilegal Makin Sulit Dibedakan",
-   "tags": [],
-   "url": "https://www.jawapos.com/bisnis/2609040180/kemasan-vape-diseragamkan-industri-khawatir-biaya-naik-dan-produk-ilegal-makin-sulit-dibedakan",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/persyaratan-kemasan-produk-tembakau-dirancang-oleh-kementerian-kesehatan-antaraho-kemenkes-QXYCE.webp",
-   "t_ko": "전자담배 포장 규격 통일 — 업계, 비용 상승·불법 제품 식별 곤란 우려",
-   "t_id": "Kemasan Vape Diseragamkan, Industri Khawatir Biaya Naik dan Produk Ilegal Makin Sulit Dibedakan"
   }
  ],
  "kisi_news": [
@@ -17046,8 +17085,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.09",
-   "d": 0.37,
-   "ytd": 12.71,
+   "d": 0.36,
+   "ytd": 12.7,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17057,9 +17096,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.776%",
-   "d": 0.29,
-   "ytd": 14.72,
+   "v": "4.780%",
+   "d": 0.38,
+   "ytd": 14.82,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17080,9 +17119,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.15",
-   "d": 0.1,
-   "ytd": 0.89,
+   "v": "99.19",
+   "d": 0.13,
+   "ytd": 0.93,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17092,9 +17131,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "90.90",
-   "d": -1.22,
-   "ytd": 58.31,
+   "v": "91.63",
+   "d": -0.42,
+   "ytd": 59.58,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17104,9 +17143,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,467.9",
-   "d": -1.02,
-   "ytd": 3.29,
+   "v": "4,472.3",
+   "d": -0.92,
+   "ytd": 3.39,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -24062,7 +24101,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-04 18:22",
-  "pc_age_min": 403,
+  "pc_age_min": 462,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
