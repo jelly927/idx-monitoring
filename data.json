@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 11:48",
+ "updated": "2026-09-04 11:52",
  "delay_min": 0,
  "fx_basis": "13.02 IDR/KRW · USD/IDR 17,640 · USD/KRW 1,355 · 11:35 Yahoo",
- "idr_per_krw": 13.02,
+ "idr_per_krw": 13.0207,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -339,10 +339,10 @@
   "m1": 5.4,
   "value_idr": 18607401563700,
   "volume": 39305835265,
-  "rank_src": "Yahoo 15분 지연 · 835종목 · 외국인·공시 PC 09-04 11:38",
-  "rank_asof": "11:47",
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-04 11:49",
+  "rank_asof": "11:51",
   "rank_date": "2026-09-04",
-  "adv": 288,
+  "adv": 289,
   "dec": 342,
   "unch": 205,
   "foreign_net_idr": 1104392864864.3184,
@@ -6291,6 +6291,22 @@
    "lo": 290.0,
    "ratio": 3.4,
    "fnet": -47171721.18967713,
+   "live": 1
+  },
+  {
+   "t": "AKSI",
+   "n": "Mineral Sumberdaya Mandiri",
+   "px": 324.0,
+   "prev": 260.0,
+   "pct": 24.62,
+   "val": 909503200.0,
+   "vol": 3011600.0,
+   "sh": 720000000,
+   "mcap": 233280000000.0,
+   "hi": 324.0,
+   "lo": 258.0,
+   "ratio": 6.2,
+   "fnet": 0.0,
    "live": 1
   },
   {
@@ -14958,11 +14974,11 @@
   {
    "name": "운송·물류",
    "name_id": "Transportasi",
-   "n": 36,
-   "adv": 10,
+   "n": 37,
+   "adv": 11,
    "dec": 15,
-   "val": 97060017866.66669,
-   "mcap": 76484341415950.0,
+   "val": 97969521066.66669,
+   "mcap": 76717621415950.0,
    "top": [
     {
      "t": "GIAA",
@@ -15005,7 +15021,7 @@
      "pct": -0.53
     }
    ],
-   "pct": -1.06
+   "pct": -0.98
   },
   {
    "name": "헬스케어",
@@ -15335,10 +15351,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6692.55,
+   "px": 6710.05,
    "prev": 6598.23,
-   "pct": 1.43,
-   "asof": "11:25",
+   "pct": 1.69,
+   "asof": "11:30",
    "live": true,
    "spark": [
     6677.11,
@@ -15394,17 +15410,18 @@
     6697.6,
     6688.67,
     6690.15,
-    6692.55
+    6699.07,
+    6710.05
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65043.17,
+   "px": 65065.82,
    "prev": 64269.48,
-   "pct": 1.2,
-   "asof": "11:30",
+   "pct": 1.24,
+   "asof": "11:35",
    "live": true,
    "spark": [
     64439.01,
@@ -15451,7 +15468,8 @@
     64968.67,
     65000.16,
     65044.06,
-    65043.17
+    65064.68,
+    65065.82
    ]
   },
   {
@@ -16480,6 +16498,18 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T11:48:14+07:00",
+   "date": "2026-09-04",
+   "time": "11:48",
+   "src": "Jawa Pos",
+   "t": "Jaring Investor untuk Aset BPR-BPRS Sebesar Rp 2,3 Triliun, LPS Gandeng Kadin DKI Jakarta",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609040159/jaring-investor-untuk-aset-bpr-bprs-sebesar-rp-23-triliun-lps-gandeng-kadin-dki-jakarta",
+   "img": "https://cdn-assets.jawapos.com/images/1/2025/05/10/Ilustrasi-investasi-berkelanjutan-Freepik-2813042439.jpg",
+   "t_id": "Jaring Investor untuk Aset BPR-BPRS Sebesar Rp 2,3 Triliun, LPS Gandeng Kadin DKI Jakarta",
+   "t_ko": "IDR 2.3조의 BPR-BPRS 자산에 대한 Investor Net, LPS가 DKI Jakarta Kadin과 협력"
+  },
+  {
    "ts": "2026-09-04T11:46:00+07:00",
    "date": "2026-09-04",
    "time": "11:46",
@@ -16821,18 +16851,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/01/anugerah-ekonomi-hijau-1788257473437_169.jpeg?w=360&q=90",
    "t_ko": "녹색 경제 운전 공약 부문 녹색 경제상 수상자 목록",
    "t_id": "Daftar Peraih Anugerah Ekonomi Hijau Kategori Komitmen Penggerak Ekonomi Hijau"
-  },
-  {
-   "ts": "2026-09-04T09:35:07+07:00",
-   "date": "2026-09-04",
-   "time": "09:35",
-   "src": "Medcom",
-   "t": "IHSG Tembus 6.650 dan Lanjut Menguat, Investor Waspadai <i>Profit Taking</i>",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/keuangan/aNr1O0aK-ihsg-tembus-6-650-dan-lanjut-menguat-investor-waspadai-profit-taking",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840005/QGHgSy4bfL.jpg?w=720",
-   "t_ko": "IHSG 6,650 돌파 후 추가 상승 — 투자자 차익실현 경계",
-   "t_id": "IHSG Tembus 6.650 dan Lanjut Menguat, Investor Waspadai <i>Profit Taking</i>"
   }
  ],
  "kisi_news": [
@@ -17039,9 +17057,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.03",
-   "d": 0.03,
-   "ytd": 0.76,
+   "v": "99.02",
+   "d": 0.02,
+   "ytd": 0.75,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17051,9 +17069,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "91.71",
-   "d": -0.03,
-   "ytd": 59.72,
+   "v": "91.77",
+   "d": 0.03,
+   "ytd": 59.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17063,7 +17081,7 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,520.3",
+   "v": "4,520.1",
    "d": 0.11,
    "ytd": 4.5,
    "inv": false,
@@ -17994,6 +18012,28 @@
    "title_id": "Public Expose · Materi public expose Tahunan  PT Jasa Marga Tbk",
    "country": "ID",
    "title_ko": "기업설명회 · Jasa Marga Public Expose 자료"
+  },
+  {
+   "date": "2026-09-04",
+   "t": "SIDO",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Industri Jamu Dan Farmasi Sido Muncul Public Expose 자료",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Materi public expose Tahunan  PT Industri Jamu Dan Farmasi Sido Muncul Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · Industri Jamu Dan Farmasi Sido Muncul Public Expose 자료"
+  },
+  {
+   "date": "2026-09-04",
+   "t": "SIDO",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Tahunan"
   },
   {
    "date": "2026-09-04",
@@ -19512,6 +19552,17 @@
  ],
  "announcements": [
   {
+   "ts": "2026-09-04T11:43:01+07:00",
+   "date": "2026-09-04",
+   "time": "11:43",
+   "t": "SIDO",
+   "type": "STOCK",
+   "title": "Penyampaian Materi Public Expose - Tahunan",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/51bce25d28_44e0b156fa.pdf",
+   "title_ko": "연례 기업설명회(Public Expose) 자료 제출",
+   "title_id": "Penyampaian Materi Public Expose - Tahunan"
+  },
+  {
    "ts": "2026-09-04T11:24:02+07:00",
    "date": "2026-09-04",
    "time": "11:24",
@@ -20379,23 +20430,12 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e650045b13_d95bcb92e2.pdf",
    "title_ko": "연례 기업설명회(Public Expose) 자료 제출",
    "title_id": "Penyampaian Materi Public Expose - Tahunan"
-  },
-  {
-   "ts": "2026-09-03T19:07:24+07:00",
-   "date": "2026-09-03",
-   "time": "19:07",
-   "t": "XMES",
-   "type": "STOCK",
-   "title": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/9bc241994e_f585ea6bfb.pdf",
-   "title_ko": "일간 순자산가치(NAV)·포트폴리오 구성 보고",
-   "title_id": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-04 11:38",
+  "idx_from_pc": "2026-09-04 11:49",
   "bi": null,
   "hist_days": 20,
   "calendar": "investing.com"
