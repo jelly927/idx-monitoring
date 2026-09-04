@@ -89,7 +89,7 @@ async function feed() {
 
 // ── 질문에 걸리는 종목만 골라 컨텍스트를 줄인다 (전체 835종목 = 67KB, 매 요청 넣으면 낭비) ──
 function sliceCtx(c, text) {
-  const { stocks, ...base } = c;
+  const { stocks, ai_stocks, ...base } = c;
   const src = text || "", low = src.toLowerCase();
   const hit = {};
   let n = 0;
@@ -106,6 +106,11 @@ function sliceCtx(c, text) {
     }
   }
   base.stocks_matched = hit;
+  const ais = c.ai_stocks || {};
+  const aiHit = {};
+  for (const t in hit) if (ais[t]) aiHit[t] = ais[t];
+  if (n === 0) { let k = 0; for (const t in ais) { if (k++ >= 10) break; aiHit[t] = ais[t]; } }
+  base.ai_stocks = aiHit;
   if (n === 0) {
     // 종목 특정이 안 되면 거래대금 상위만 넣는다
     const top = Object.entries(stocks).sort((a, b) => (b[1][3] || 0) - (a[1][3] || 0)).slice(0, TOP_STOCKS);
@@ -139,6 +144,7 @@ function sysPrompt(ctx, lang) {
     "- calendar: imp 는 중요도(별 개수). act=실제, exp=예상, prev=이전.",
     "- announcements: IDX 공시.",
     "- macro: v 는 이미 포맷된 문자열이다. 그대로 인용한다.",
+    "- ai_index 는 오늘 지수가 왜 움직였는지 한 줄 요약, ai_stocks 는 종목별 등락 사유, announcements[].ai 는 공시 요약이다. 이미 만들어진 요약이니 근거로 인용하되 숫자는 원본 필드로 검증한다.",
     "",
     lang === "id"
       ? "[출력 언어] 반드시 인도네시아어(Bahasa Indonesia)로만 답한다."
