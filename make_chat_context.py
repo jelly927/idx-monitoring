@@ -47,6 +47,7 @@ def build(d):
         "mode": d.get("mode"),
         "idr_per_krw": d.get("idr_per_krw"),
         "fx_basis": d.get("fx_basis"),
+        "freshness": {k: (d.get("sources") or {}).get(k) for k in ("idx_from_pc", "pc_age_min", "on_runner")},
         "note": "IDX Live 요약 컨텍스트. 여기에 없는 값은 '확인 불가'로 답할 것. 금액 단위는 data.json 원본과 동일(IDR).",
         "index": {k: num(idx.get(k)) if k not in ("session", "rank_src", "rank_asof", "rank_date", "foreign_date", "foreign_note") else idx.get(k)
                   for k in ("session", "high", "low", "prev", "ytd", "m1", "value_idr", "volume", "adv", "dec", "unch",
