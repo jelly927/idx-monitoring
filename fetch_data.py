@@ -1525,7 +1525,8 @@ def global_indices():
                 if len(h):
                     ht = h.index[-1]; ht = (ht.tz_convert(WIB) if ht.tzinfo else ht.tz_localize("UTC").tz_convert(WIB))
                     live = (now_wib() - ht).total_seconds() < 3 * 3600
-                    ts = ht.strftime("%H:%M") if live else f"{ht.date():%m/%d} 종가"
+                    hl = h.index[-1] if h.index[-1].tzinfo else ht                   # 종가 날짜는 현지(거래소) 기준 — 미국 9/3 마감이 WIB 로는 9/4 새벽
+                    ts = ht.strftime("%H:%M") if live else f"{hl.date():%m/%d} 종가"
                     if live: px = float(h.iloc[-1])
                     spark = [round(float(v), 2) for v in h.tolist()][-80:]
             except Exception: pass
