@@ -266,9 +266,17 @@ class IDX:
     def index_summary(self, d):
         j = self.get("/primary/TradingSummary/GetIndexSummary", lang="id", date=f"{d:%Y%m%d}", start=0, length=9999)
         return (j or {}).get("data") or []
-    def index_chart(self, code="COMPOSITE", period="1D"):
+    def index_chart(self, code="COMPOSITE", period="1D", meta=None):
+        """1D 차트 종가열. meta(dict) 를 주면 마지막 점의 시각·값을 채운다 (장중 현재 지수)"""
         j = self.get("/primary/helper/GetIndexChart", indexCode=code, period=period)
-        return [p["Close"] for p in ((j or {}).get("ChartData") or []) if p.get("Close")]   # 장 시작 전엔 ChartData 가 null
+        pts = [p for p in ((j or {}).get("ChartData") or []) if p.get("Close")]        # 장 시작 전엔 ChartData 가 null
+        if meta is not None and pts:
+            last = pts[-1]; raw = str(last.get("Date") or last.get("DateTime") or last.get("Time") or "")
+            try:
+                ts = dt.datetime.fromisoformat(raw[:19]) if raw else None
+                meta.update({"px": float(last["Close"]), "date": ts.date().isoformat() if ts else None, "ts": ts.strftime("%H:%M") if ts else None, "raw": raw[:25]})
+            except Exception: meta.update({"px": float(last["Close"]), "raw": raw[:25]})
+        return [p["Close"] for p in pts]
     def calendar(self, d):
         j = self.get("/primary/Home/GetCalendar", range="m", date=f"{d:%Y%m%d}")
         return (j or {}).get("Results") or []
@@ -495,10 +503,21 @@ def idx_index():
     jci, lq = pick("COMPOSITE"), pick("LQ45")
     if not jci: return None
     prev, px = jci["Previous"], jci["Close"]
-    return {"date": d.isoformat(), "px": px, "prev": prev, "chg": round(px - prev, 2), "pct": round((px / prev - 1) * 100, 2),
-            "high": jci["Highest"], "low": jci["Lowest"], "value_idr": jci.get("Value"), "volume": jci.get("Volume"),
-            "lq45": {"px": lq["Close"], "prev": lq["Previous"], "pct": round((lq["Close"] / lq["Previous"] - 1) * 100, 2), "spark": idx.index_chart("LQ45", "1D")} if lq else None,
-            "spark": idx.index_chart("COMPOSITE", "1D"), "ts": now_wib().strftime("%H:%M") if d == now_wib().date() else None}
+    today = now_wib().date()
+    m1, m2 = {}, {}
+    sp = idx.index_chart("COMPOSITE", "1D", m1); sp_lq = idx.index_chart("LQ45", "1D", m2) if lq else []
+    out = {"date": d.isoformat(), "px": px, "prev": prev, "chg": round(px - prev, 2), "pct": round((px / prev - 1) * 100, 2),
+           "high": jci["Highest"], "low": jci["Lowest"], "value_idr": jci.get("Value"), "volume": jci.get("Volume"),
+           "lq45": {"px": lq["Close"], "prev": lq["Previous"], "pct": round((lq["Close"] / lq["Previous"] - 1) * 100, 2), "spark": sp_lq} if lq else None,
+           "spark": sp, "ts": now_wib().strftime("%H:%M") if d == today else None}
+    # 장중: 일별 요약(d)이 어제까지라도 1D 차트의 마지막 점이 오늘이면 그것이 현재 지수 — 어제 종가(px)를 prev 로 두고 intraday 로 표시
+    if d < today and m1.get("date") == today.isoformat() and m1.get("px"):
+        out["intraday"] = {"px": m1["px"], "prev": px, "ts": m1.get("ts") or now_wib().strftime("%H:%M"), "spark": sp, "high": max(sp) if sp else None, "low": min(sp) if sp else None}
+        if lq and m2.get("date") == today.isoformat() and m2.get("px"):
+            out["intraday_lq45"] = {"px": m2["px"], "prev": lq["Close"], "ts": m2.get("ts") or out["intraday"]["ts"], "spark": sp_lq}
+        log(f"IDX 장중 지수 {m1['px']} ({out['intraday']['ts']}, 차트 {len(sp)}점 · {m1.get('raw')})")
+    elif d < today and sp: log(f"IDX 1D 차트 마지막 점 날짜 확인 필요: {m1.get('raw')}")
+    return out
 
 # =============================================================== corporate calendar from IDX
 KW = [("Laporan Keuangan", "실적 공시"), ("RUPS", "주주총회"), ("Public Expose", "기업설명회"), ("Cum Date", "배당부 마감"),
@@ -1901,6 +1920,9 @@ def kisi_news(max_items=None):
     log(f"KISI 뉴스 {len(out)}건 (사진 {sum(1 for x in out if x.get('img'))})")
     return translate_news(out)
 
+def _thin(a, n=120):
+    a = a or []; return a[::max(1, len(a) // n)]
+
 def build():
     m = manual(); yb = CFG["ytd_base"]
     mk = idx_market(); ix = idx_index(); bi = bi_indicators()
@@ -1910,7 +1932,7 @@ def build():
         try: idx_from_pc = json.loads(IDX_PART.read_text(encoding="utf-8"))
         except Exception as e: log("idx_part 읽기 실패", e); idx_from_pc = None
         pix = (idx_from_pc or {}).get("ix")
-        if pix and (not ix or (pix.get("date") or "") > (ix.get("date") or "")):   # 러너가 받은 IDX 지수가 오래된 날짜(예: 08/28)면 PC 분(09/03) 사용
+        if pix and (not ix or (pix.get("date") or "") > (ix.get("date") or "") or (pix.get("intraday") and not ix.get("intraday"))):   # 러너 IDX 지수가 오래됐거나 장중 스냅샷이 없으면 PC 분 사용
             if ix: log(f"IDX 지수 러너 응답 {ix.get('date')} < PC {pix.get('date')} → PC 수집분 사용")
             ix = pix
     # investing.com 은 yfinance 보다 먼저 — yfinance 가 스레드에 asyncio 루프를 남기면 브라우저 기동이 막힌다
@@ -1936,8 +1958,14 @@ def build():
     jl, ll, ul = ylive("^JKSE"), ylive("^JKLQ45"), ylive("USDIDR=X")
     if not ul: ul = ylive_fx("USDIDR=X")             # 환율은 24시간 거래 — 1분봉이 비면 15분봉 최근 24시간으로
     glob_idx = global_indices()                       # yfinance 호출은 브라우저 작업(번역·캘린더) 전에 모아서
-    add_index("COMPOSITE", "IHSG", "자카르타 종합", jl, {"px": ix["px"], "prev": ix["prev"], "spark": ix["spark"], "date": ix.get("date"), "ts": ix.get("ts"), "high": ix.get("high"), "low": ix.get("low"), "asof": f'IDX {ix["date"][5:].replace("-", "/")} 종가'} if ix else None)
-    add_index("LQ45", "LQ45", "대형 45종목", ll, {"px": ix["lq45"]["px"], "prev": ix["lq45"]["prev"], "spark": ix["lq45"]["spark"], "date": ix.get("date"), "ts": ix.get("ts"), "asof": "IDX 종가"} if ix and ix["lq45"] else None)
+    today_iso = now_wib().date().isoformat()
+    ixi = (ix or {}).get("intraday"); ixl = (ix or {}).get("intraday_lq45")
+    add_index("COMPOSITE", "IHSG", "자카르타 종합", jl,
+              ({"px": ixi["px"], "prev": ixi["prev"], "spark": ixi["spark"], "date": today_iso, "ts": ixi["ts"], "high": ixi.get("high"), "low": ixi.get("low"), "asof": f'IDX {ixi["ts"]}'} if ixi else
+               {"px": ix["px"], "prev": ix["prev"], "spark": ix["spark"], "date": ix.get("date"), "ts": ix.get("ts"), "high": ix.get("high"), "low": ix.get("low"), "asof": f'IDX {ix["date"][5:].replace("-", "/")} 종가'}) if ix else None)
+    add_index("LQ45", "LQ45", "대형 45종목", ll,
+              ({"px": ixl["px"], "prev": ixl["prev"], "spark": ixl["spark"], "date": today_iso, "ts": ixl["ts"], "asof": f'IDX {ixl["ts"]}'} if ixl else
+               {"px": ix["lq45"]["px"], "prev": ix["lq45"]["prev"], "spark": ix["lq45"]["spark"], "date": ix.get("date"), "ts": ix.get("ts"), "asof": "IDX 종가"}) if ix and ix.get("lq45") else None)
     add_index("USDIDR", "USD/IDR", "달러/루피아", ul, {"px": usd["px"], "prev": usd["prev"], "asof": "Yahoo", "spark": usd.get("spark") or []} if usd else None, inv=True, dec=0)
     sc = sun10y_card(_IV.get("SUN10Y"))
     if sc: indices.append(sc)                         # 4번째 카드: 국채 10년물 (외국인 순매수 카드는 시장 현황 아래 '외국인 수급'으로 통합)
@@ -1995,7 +2023,9 @@ def build():
         part = {"saved": now_wib().strftime("%Y-%m-%d %H:%M"), "index": {k: index.get(k) for k in ("rank_src", "rank_asof", "rank_date", "adv", "dec", "unch", "foreign_net_idr", "foreign_buy", "foreign_sell", "foreign_note", "foreign_date", "nonreg_idr", "value_idr", "volume")},
                 "value": mk["value"], "gainers": mk["gainers"], "losers": mk["losers"], "turnover": mk["turnover"], "foreign_top": mk["foreign_top"], "foreign_bottom": mk["foreign_bottom"],
                 "stocks": mk.get("stocks", []), "announcements": announcements, "hist_days": mk["hist_days"], "corp_cal": corp,
-                "ix": ({k: v for k, v in ix.items() if k not in ("spark", "lq45")} | {"spark": (ix.get("spark") or [])[::max(1, len(ix.get("spark") or []) // 120)], "lq45": ({k: v for k, v in ix["lq45"].items() if k != "spark"} | {"spark": (ix["lq45"].get("spark") or [])[::max(1, len(ix["lq45"].get("spark") or []) // 120)]}) if ix.get("lq45") else None}) if ix else None}
+                "ix": ({k: v for k, v in ix.items() if k not in ("spark", "lq45", "intraday", "intraday_lq45")} | {"spark": _thin(ix.get("spark")), "lq45": ({k: v for k, v in ix["lq45"].items() if k != "spark"} | {"spark": _thin(ix["lq45"].get("spark"))}) if ix.get("lq45") else None}
+                       | ({"intraday": ix["intraday"] | {"spark": _thin(ix["intraday"].get("spark"))}} if ix.get("intraday") else {})
+                       | ({"intraday_lq45": ix["intraday_lq45"] | {"spark": _thin(ix["intraday_lq45"].get("spark"))}} if ix.get("intraday_lq45") else {})) if ix else None}
         try: IDX_PART.write_text(json.dumps(part, ensure_ascii=False), encoding="utf-8")
         except Exception as e: log("idx_part 저장 실패", e)
     elif idx_from_pc:
