@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 16:08",
+ "updated": "2026-09-04 16:11",
  "delay_min": 0,
  "fx_basis": "13.04 IDR/KRW · USD/IDR 17,633 · USD/KRW 1,352 · 15:59 Yahoo",
- "idr_per_krw": 13.0422,
+ "idr_per_krw": 13.042,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -66,7 +66,7 @@
     6661.64,
     6659.89,
     6661.21,
-    6661.05,
+    6661.48,
     6659.31,
     6656.89,
     6660.78,
@@ -79,7 +79,7 @@
     6651.82,
     6649.34,
     6654.35,
-    6650.57,
+    6650.52,
     6650.22,
     6652.11,
     6650.22,
@@ -87,7 +87,7 @@
     6649.28,
     6648.92,
     6646.85,
-    6646.83,
+    6646.86,
     6647.99,
     6648.04,
     6648.29,
@@ -113,7 +113,7 @@
     6641.36,
     6642.47,
     6640.9,
-    6643.31,
+    6643.34,
     6641.64,
     6643.47,
     6643.41,
@@ -126,8 +126,8 @@
     6638.68,
     6639.95,
     6639.98,
-    6642.14,
-    6639.65,
+    6642.09,
+    6639.23,
     6642.46,
     6642.23,
     6641.55,
@@ -216,7 +216,7 @@
     659.7,
     659.1,
     659.06,
-    659.24,
+    659.38,
     659.07,
     659.23,
     658.8,
@@ -242,14 +242,14 @@
     658.04,
     657.75,
     657.82,
-    657.72,
+    657.71,
     657.73,
     657.99,
     657.99,
     658.41,
     657.85,
     658.35,
-    657.78,
+    657.76,
     658.16,
     658.22,
     658.35,
@@ -299,7 +299,6 @@
     17684.0,
     17684.0,
     17684.0,
-    17625.0,
     17684.0,
     17655.0,
     17620.0,
@@ -353,8 +352,8 @@
   "m1": 5.08,
   "value_idr": 18607401563700,
   "volume": 39305835265,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-04 15:53",
-  "rank_asof": "16:06",
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-04 16:04",
+  "rank_asof": "16:10",
   "rank_date": "2026-09-04",
   "adv": 275,
   "dec": 373,
@@ -729,12 +728,12 @@
    "px": 975.0,
    "prev": 1080.0,
    "pct": -9.72,
-   "val": 13182008000.0,
+   "val": 13203653333.333332,
    "vol": 12987200.0,
    "sh": 1750040072,
    "mcap": 1706289070200.0,
    "hi": 1095.0,
-   "lo": 975.0,
+   "lo": 980.0,
    "ratio": 4.8,
    "fnet": -577872394.5339227,
    "live": 1
@@ -891,13 +890,13 @@
    "px": 193.0,
    "prev": 188.0,
    "pct": 2.66,
-   "val": 5609095600.0,
+   "val": 5590583733.333334,
    "vol": 27767800.0,
    "sh": 3021875000,
    "mcap": 583221875000.0,
-   "hi": 226.0,
+   "hi": 224.0,
    "lo": 187.0,
-   "ratio": 31.4,
+   "ratio": 31.3,
    "fnet": -41051794.13140963,
    "live": 1
   },
@@ -3241,12 +3240,12 @@
    "px": 975.0,
    "prev": 1080.0,
    "pct": -9.72,
-   "val": 13182008000.0,
+   "val": 13203653333.333332,
    "vol": 12987200.0,
    "sh": 1750040072,
    "mcap": 1706289070200.0,
    "hi": 1095.0,
-   "lo": 975.0,
+   "lo": 980.0,
    "ratio": 4.8,
    "fnet": -577872394.5339227,
    "live": 1
@@ -3348,22 +3347,6 @@
    "live": 1
   },
   {
-   "t": "BYAN",
-   "n": "Bayan Resources",
-   "px": 13800.0,
-   "prev": 13825.0,
-   "pct": -0.18,
-   "val": 11097913333.333332,
-   "vol": 794600.0,
-   "sh": 33333335000,
-   "mcap": 460000023000000.0,
-   "hi": 14325.0,
-   "lo": 13775.0,
-   "ratio": 0.6,
-   "fnet": -3509085998.65161,
-   "live": 1
-  },
-  {
    "t": "MGLV",
    "n": "NexAI Digital Infrastruktur",
    "px": 12275.0,
@@ -3377,6 +3360,22 @@
    "lo": 11400.0,
    "ratio": 0.5,
    "fnet": -287243174.5268383,
+   "live": 1
+  },
+  {
+   "t": "BYAN",
+   "n": "Bayan Resources",
+   "px": 13800.0,
+   "prev": 13825.0,
+   "pct": -0.18,
+   "val": 11091291666.666668,
+   "vol": 794600.0,
+   "sh": 33333335000,
+   "mcap": 460000023000000.0,
+   "hi": 14300.0,
+   "lo": 13775.0,
+   "ratio": 0.6,
+   "fnet": -3509085998.65161,
    "live": 1
   },
   {
@@ -4372,22 +4371,6 @@
    "live": 1
   },
   {
-   "t": "PZZA",
-   "n": "Sarimelati Kencana",
-   "px": 193.0,
-   "prev": 188.0,
-   "pct": 2.66,
-   "val": 5609095600.0,
-   "vol": 27767800.0,
-   "sh": 3021875000,
-   "mcap": 583221875000.0,
-   "hi": 226.0,
-   "lo": 187.0,
-   "ratio": 31.4,
-   "fnet": -41051794.13140963,
-   "live": 1
-  },
-  {
    "t": "TOSK",
    "n": "Topindo Solusi Komunika",
    "px": 81.0,
@@ -4401,6 +4384,22 @@
    "lo": 77.0,
    "ratio": 3.4,
    "fnet": 299548982.458428,
+   "live": 1
+  },
+  {
+   "t": "PZZA",
+   "n": "Sarimelati Kencana",
+   "px": 193.0,
+   "prev": 188.0,
+   "pct": 2.66,
+   "val": 5590583733.333334,
+   "vol": 27767800.0,
+   "sh": 3021875000,
+   "mcap": 583221875000.0,
+   "hi": 224.0,
+   "lo": 187.0,
+   "ratio": 31.3,
+   "fnet": -41051794.13140963,
    "live": 1
   },
   {
@@ -6297,13 +6296,13 @@
    "px": 535.0,
    "prev": 500.0,
    "pct": 7.0,
-   "val": 1608570133.3333335,
+   "val": 1589119466.6666665,
    "vol": 2917600.0,
    "sh": 220000000,
    "mcap": 117700000000.0,
-   "hi": 625.0,
+   "hi": 605.0,
    "lo": 494.0,
-   "ratio": 4.0,
+   "ratio": 3.9,
    "fnet": 0.0,
    "live": 1
   },
@@ -7913,12 +7912,12 @@
    "px": 900.0,
    "prev": 890.0,
    "pct": 1.12,
-   "val": 592020000.0,
+   "val": 594212666.6666667,
    "vol": 657800.0,
    "sh": 1560000000,
    "mcap": 1404000000000.0,
    "hi": 940.0,
-   "lo": 860.0,
+   "lo": 870.0,
    "ratio": 12.6,
    "fnet": 0.0,
    "live": 1
@@ -8185,11 +8184,11 @@
    "px": 2550.0,
    "prev": 2420.0,
    "pct": 5.37,
-   "val": 503296000.0,
+   "val": 500674666.6666666,
    "vol": 196600.0,
    "sh": 822333600,
    "mcap": 2096950680000.0,
-   "hi": 2730.0,
+   "hi": 2690.0,
    "lo": 2400.0,
    "ratio": 6.5,
    "fnet": -480480.39215686277,
@@ -10457,12 +10456,12 @@
    "px": 330.0,
    "prev": 326.0,
    "pct": 1.23,
-   "val": 172887000.0,
+   "val": 173236266.6666667,
    "vol": 523900.0,
    "sh": 1120000000,
    "mcap": 369600000000.0,
    "hi": 352.0,
-   "lo": 308.0,
+   "lo": 310.0,
    "ratio": 11.6,
    "fnet": -1090003.4059945503,
    "live": 1
@@ -11284,6 +11283,22 @@
    "live": 1
   },
   {
+   "t": "KBLI",
+   "n": "KMI Wire and Cable",
+   "px": 334.0,
+   "prev": 336.0,
+   "pct": -0.6,
+   "val": 105033600.0,
+   "vol": 312600.0,
+   "sh": 4007235107,
+   "mcap": 1338416525738.0,
+   "hi": 342.0,
+   "lo": 332.0,
+   "ratio": 0.5,
+   "fnet": 15139877.795031056,
+   "live": 1
+  },
+  {
    "t": "TAMU",
    "n": "Pelayaran Tamarin Samudra",
    "px": 28.0,
@@ -11297,22 +11312,6 @@
    "lo": 28.0,
    "ratio": 0.4,
    "fnet": 0.0,
-   "live": 1
-  },
-  {
-   "t": "KBLI",
-   "n": "KMI Wire and Cable",
-   "px": 334.0,
-   "prev": 336.0,
-   "pct": -0.6,
-   "val": 104825200.0,
-   "vol": 312600.0,
-   "sh": 4007235107,
-   "mcap": 1338416525738.0,
-   "hi": 342.0,
-   "lo": 330.0,
-   "ratio": 0.5,
-   "fnet": 15139877.795031056,
    "live": 1
   },
   {
@@ -11833,11 +11832,11 @@
    "px": 760.0,
    "prev": 750.0,
    "pct": 1.33,
-   "val": 72139333.33333334,
+   "val": 71978666.66666666,
    "vol": 96400.0,
    "sh": 11181971732,
    "mcap": 8498298516320.0,
-   "hi": 760.0,
+   "hi": 755.0,
    "lo": 725.0,
    "ratio": 0.3,
    "fnet": -4244345.360824742,
@@ -14523,7 +14522,7 @@
    "n": 79,
    "adv": 34,
    "dec": 37,
-   "val": 3985598982700.001,
+   "val": 3985572910366.667,
    "mcap": 1671063191558184.0,
    "top": [
     {
@@ -14575,7 +14574,7 @@
    "n": 92,
    "adv": 28,
    "dec": 47,
-   "val": 2297081046399.998,
+   "val": 2297083239066.6646,
    "mcap": 1551310312541960.0,
    "top": [
     {
@@ -14731,7 +14730,7 @@
    "n": 136,
    "adv": 37,
    "dec": 72,
-   "val": 1103499288766.6665,
+   "val": 1103480776900.0,
    "mcap": 423789580290294.0,
    "top": [
     {
@@ -14783,7 +14782,7 @@
    "n": 56,
    "adv": 20,
    "dec": 23,
-   "val": 1038226365466.6669,
+   "val": 1038224301800.0001,
    "mcap": 478104291086887.0,
    "top": [
     {
@@ -14835,7 +14834,7 @@
    "n": 123,
    "adv": 41,
    "dec": 55,
-   "val": 976091365666.6669,
+   "val": 976113011000.0002,
    "mcap": 1099139658024038.0,
    "top": [
     {
@@ -14887,7 +14886,7 @@
    "n": 79,
    "adv": 25,
    "dec": 29,
-   "val": 350732283399.99994,
+   "val": 350732122733.3333,
    "mcap": 464606708652299.0,
    "top": [
     {
@@ -15156,7 +15155,7 @@
     7750.45,
     7748.69,
     7753.82,
-    7753.4,
+    7754.07,
     7754.75,
     7753.69,
     7753.83,
@@ -15246,7 +15245,7 @@
     26608.94,
     26603.29,
     26625.59,
-    26626.96,
+    26626.78,
     26634.29,
     26630.48,
     26627.32,
@@ -15335,8 +15334,8 @@
     53681.15,
     53690.0,
     53676.62,
-    53692.0,
-    53680.14,
+    53697.42,
+    53685.86,
     53699.03,
     53689.14,
     53694.09,
@@ -16655,9 +16654,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-04T16:07:25.373480+07:00",
+   "ts": "2026-09-04T16:10:53.632763+07:00",
    "date": "2026-09-04",
-   "time": "16:07",
+   "time": "16:10",
    "src": "Jawa Pos",
    "t": "BRI Rayakan Hari Pelanggan Nasional 2026 Lewat Beragam Promo Spesial",
    "tags": [],
@@ -16665,6 +16664,42 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/bri-sambut-hari-pelanggan-nasional-dengan-promo-di-berbagai-merchant-promo-dapat-dinikmati-dengan-transaksi-menggunakan-bri-debit-bri-kartu-kredit-atau-qris-brimo-dok-bri-kqqka.webp",
    "t_ko": "BRI, 다양한 특별 프로모션을 통해 2026년 전국 고객의 날 기념",
    "t_id": "BRI Rayakan Hari Pelanggan Nasional 2026 Lewat Beragam Promo Spesial"
+  },
+  {
+   "ts": "2026-09-04T16:07:45+07:00",
+   "date": "2026-09-04",
+   "time": "16:07",
+   "src": "Jawa Pos",
+   "t": "Perilaku Investasi di Pasar Modal Indonesia Makin Dinamis, Jumlah Investor Meningkat 9,9 Juta",
+   "tags": [],
+   "url": "https://www.jawapos.com/bisnis/2609040293/perilaku-investasi-di-pasar-modal-indonesia-makin-dinamis-jumlah-investor-meningkat-99-juta",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/09/pergerakan-indeks-harga-saham-gabungan-ihsg-di-bursa-efek-indonesia-bei-jakarta-jumat-782026-dery-ridwansah-jawaposcom-4Wtb4.webp",
+   "t_id": "Perilaku Investasi di Pasar Modal Indonesia Makin Dinamis, Jumlah Investor Meningkat 9,9 Juta",
+   "t_ko": "인도네시아 자본 시장의 투자 행동은 점점 더 역동적으로 변하고 있으며, 투자자 수는 990만 명 증가했습니다."
+  },
+  {
+   "ts": "2026-09-04T16:07:42+07:00",
+   "date": "2026-09-04",
+   "time": "16:07",
+   "src": "Jawa Pos",
+   "t": "Indonesia Tawarkannya Lebih dari 100 Blok Migas ke Investor Rusia di Forum EEF",
+   "tags": [],
+   "url": "https://www.jawapos.com/energi/2609040292/indonesia-tawarkannya-lebih-dari-100-blok-migas-ke-investor-rusia-di-forum-eef",
+   "img": "https://cdn-assets.jawapos.com/images/1/jawapos/2019/02/begini-alasan-istana-mengapa-pertumbuhan-ekonomi-2018-patut-diapresias_m_.jpg",
+   "t_id": "Indonesia Tawarkannya Lebih dari 100 Blok Migas ke Investor Rusia di Forum EEF",
+   "t_ko": "인도네시아, EEF 포럼에서 러시아 투자자들에게 100개 이상의 석유 및 가스 블록 제공"
+  },
+  {
+   "ts": "2026-09-04T16:05:00+07:00",
+   "date": "2026-09-04",
+   "time": "16:05",
+   "src": "Katadata",
+   "t": "Beras Premium Langka di Ritel, Pemasok Enggan Jual di Bawah HET",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/industri/6a9a89c729c54/beras-premium-langka-di-ritel-pemasok-enggan-jual-di-bawah-het",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2020/03/17/2020_03_17-21_43_40_da3339b133ee5d4402835a249a96ad6a_620x413_thumb.jpg",
+   "t_id": "Beras Premium Langka di Ritel, Pemasok Enggan Jual di Bawah HET",
+   "t_ko": "프리미엄 쌀은 소매점에서 드물고 공급업체는 HET 이하 판매를 꺼립니다."
   },
   {
    "ts": "2026-09-04T16:01:34+07:00",
@@ -16689,6 +16724,18 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840091/F1tV0DY6nE.jpeg?w=720",
    "t_id": "Adhi Karya Pangkas 18 Entitas, Fokus Kembali Jadi Kontraktor",
    "t_ko": "Adhi Karya, 18개 법인을 해고하고 계약자로서의 삶에 다시 집중"
+  },
+  {
+   "ts": "2026-09-04T16:00:11+07:00",
+   "date": "2026-09-04",
+   "time": "16:00",
+   "src": "Detik",
+   "t": "Otorita IKN Sanksi Perusahaan Perkebunan Penyebab Karhutla, Wajib Pulihkan Lahan",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648566/otorita-ikn-sanksi-perusahaan-perkebunan-penyebab-karhutla-wajib-pulihkan-lahan",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/foto-udara-kebaran-hutan-dan-lahan-karhutla-dengan-kabut-asap-yang-membumbung-tinggi-di-hutan-lindung-liang-anggang-banjarbaru-1788493293279_169.jpeg?w=360&q=90",
+   "t_ko": "IKN 당국, 산불과 토지 화재를 일으키는 농장 회사를 제재하고 토지를 복원해야 함",
+   "t_id": "Otorita IKN Sanksi Perusahaan Perkebunan Penyebab Karhutla, Wajib Pulihkan Lahan"
   },
   {
    "ts": "2026-09-04T16:00:00+07:00",
@@ -16958,54 +17005,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/04/ilusttrasi-harga-minyak-dunia-pexelsganesh-ramsumair-slwEx.webp",
    "t_ko": "Hormuz 해협 긴장 — 국제유가 변동성 확대",
    "t_id": "Ketegangan di Selat Hormuz Picu Harga Minyak Global Makin Fluktuatif"
-  },
-  {
-   "ts": "2026-09-04T14:55:00+07:00",
-   "date": "2026-09-04",
-   "time": "14:55",
-   "src": "Katadata",
-   "t": "Indonesia Tawarkan Lebih dari 100 Blok Migas ke Investor Rusia",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/energi/6a9a797369ef7/indonesia-tawarkan-lebih-dari-100-blok-migas-ke-investor-rusia",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/03/2026_09_03-14_35_00_b92012ba-a76e-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "인도네시아, 러시아 투자자에 유전·가스 광구 100개 이상 제시",
-   "t_id": "Indonesia Tawarkan Lebih dari 100 Blok Migas ke Investor Rusia"
-  },
-  {
-   "ts": "2026-09-04T14:54:47+07:00",
-   "date": "2026-09-04",
-   "time": "14:54",
-   "src": "Republika",
-   "t": "DPR Ungkap Masalah Inclusion dan Exclusion Error Data Subsidi, Minta BPS Perbaiki",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tktxzb370/dpr-ungkap-masalah-inclusion-dan-exclusion-error-data-subsidi-minta-bps-perbaiki",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/093726700-1785055270-830-556.jpg",
-   "t_ko": "국회, 보조금 데이터 포함·배제 오류 문제 지적 — BPS에 개선 요구",
-   "t_id": "DPR Ungkap Masalah Inclusion dan Exclusion Error Data Subsidi, Minta BPS Perbaiki"
-  },
-  {
-   "ts": "2026-09-04T14:52:00+07:00",
-   "date": "2026-09-04",
-   "time": "14:52",
-   "src": "Katadata",
-   "t": "Zulhas: Daya Saing Nelayan Lemah, Potensi Ikan Rp200 Triliun Hilang",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6a9a78bd123d6/zulhas-daya-saing-nelayan-lemah-potensi-ikan-rp200-triliun-hilang",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/01/2026_09_01-19_58_00_f177b9ac-a623-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "Zulhas, 어민 경쟁력 취약 지적 — 수산 잠재가치 Rp200조 유실",
-   "t_id": "Zulhas: Daya Saing Nelayan Lemah, Potensi Ikan Rp200 Triliun Hilang"
-  },
-  {
-   "ts": "2026-09-04T14:47:44+07:00",
-   "date": "2026-09-04",
-   "time": "14:47",
-   "src": "Detik",
-   "t": "Zulhas Minta Pegawai SPPG Dipecat Buntut Keracunan MBG di Sidoarjo",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648439/zulhas-minta-pegawai-sppg-dipecat-buntut-keracunan-mbg-di-sidoarjo",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/01/menko-zulhas-1788252015862_169.jpeg?w=360&q=90",
-   "t_ko": "Zulhas, Sidoarjo MBG 식중독 여파로 SPPG 직원 해고 요구",
-   "t_id": "Zulhas Minta Pegawai SPPG Dipecat Buntut Keracunan MBG di Sidoarjo"
   }
  ],
  "kisi_news": [
@@ -17213,7 +17212,7 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "99.06",
-   "d": 0.0,
+   "d": -0.0,
    "ytd": 0.79,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -17224,9 +17223,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "90.55",
-   "d": -1.6,
-   "ytd": 57.7,
+   "v": "90.59",
+   "d": -1.55,
+   "ytd": 57.77,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17236,9 +17235,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,525.6",
-   "d": 0.26,
-   "ytd": 4.62,
+   "v": "4,525.2",
+   "d": 0.25,
+   "ytd": 4.61,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17260,9 +17259,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,807",
-   "d": 0.17,
-   "ytd": 0.75,
+   "v": "16,815",
+   "d": 0.21,
+   "ytd": 0.8,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -19735,6 +19734,28 @@
  ],
  "announcements": [
   {
+   "ts": "2026-09-04T15:58:26+07:00",
+   "date": "2026-09-04",
+   "time": "15:58",
+   "t": "HOKI",
+   "type": "STOCK",
+   "title": "Laporan Bulanan Registrasi Pemegang Efek",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/f634353515_320446e256.pdf",
+   "title_ko": "월간 증권 보유자 등록 현황 보고",
+   "title_id": "Laporan Bulanan Registrasi Pemegang Efek"
+  },
+  {
+   "ts": "2026-09-04T15:53:29+07:00",
+   "date": "2026-09-04",
+   "time": "15:53",
+   "t": "SUNI",
+   "type": "STOCK",
+   "title": "Keterbukaan Informasi Sehubungan dengan Penunjukan PT Sunindo Pratama Tbk Sebagai   Pemenang Tender dari PT Pertamina EP ",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/330b37a9cf_aaabcbd8ad.pdf",
+   "title_id": "Keterbukaan Informasi Sehubungan dengan Penunjukan PT Sunindo Pratama Tbk Sebagai   Pemenang Tender dari PT Pertamina EP",
+   "title_ko": "PT Sunindo Pratama Tbk, PT Pertamina EP 입찰 낙찰자 선정 관련 정보공개"
+  },
+  {
    "ts": "2026-09-04T15:49:05+07:00",
    "date": "2026-09-04",
    "time": "15:49",
@@ -19742,8 +19763,8 @@
    "type": "STOCK",
    "title": "Keterbukaan Informasi sehubungan rencana pembelian kembali saham PT Bank BTPN Syariah Tbk",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/c28f77a5ec_5457bebb72.pdf",
-   "title_id": "Keterbukaan Informasi sehubungan rencana pembelian kembali saham PT Bank BTPN Syariah Tbk",
    "title_ko": "PT Bank BTPN Syariah Tbk 자사주 매입 계획 관련 정보 공개",
+   "title_id": "Keterbukaan Informasi sehubungan rencana pembelian kembali saham PT Bank BTPN Syariah Tbk",
    "ai_ko": "PT Bank BTPN Syariah Tbk. 자사주 취득 계획 공시 제출. 해당 건은 2026년 9월 4일 자로 발생.",
    "ai_id": "PT Bank BTPN Syariah Tbk menyampaikan keterbukaan informasi sehubungan rencana pembelian kembali saham. Kejadian tersebut berlangsung pada tanggal 04 September 2026.",
    "ai_tags": [
@@ -19850,8 +19871,8 @@
    "type": "STOCK",
    "title": "Perubahan Komite Nominasi dan Remunerasi Emiten atau Perusahaan Publik",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/0989eb759b_a7a8d8d60d.pdf",
-   "title_id": "Perubahan Komite Nominasi dan Remunerasi Emiten atau Perusahaan Publik",
-   "title_ko": "상장사 또는 공개기업 지명·보수위원회 변경"
+   "title_ko": "상장사 또는 공개기업 지명·보수위원회 변경",
+   "title_id": "Perubahan Komite Nominasi dan Remunerasi Emiten atau Perusahaan Publik"
   },
   {
    "ts": "2026-09-04T15:31:11+07:00",
@@ -20710,34 +20731,12 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/d1ad59ed13_020febd7d1.pdf",
    "title_ko": "연례 기업설명회(Public Expose) 자료 제출",
    "title_id": "Penyampaian Materi Public Expose - Tahunan"
-  },
-  {
-   "ts": "2026-09-04T10:24:25+07:00",
-   "date": "2026-09-04",
-   "time": "10:24",
-   "t": "BFIN",
-   "type": "STOCK",
-   "title": "Laporan Bulanan Registrasi Pemegang Efek",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e747df8e66_4d07fa0c7e.pdf",
-   "title_ko": "월간 증권 보유자 등록 현황 보고",
-   "title_id": "Laporan Bulanan Registrasi Pemegang Efek"
-  },
-  {
-   "ts": "2026-09-04T10:18:38+07:00",
-   "date": "2026-09-04",
-   "time": "10:18",
-   "t": "NELY",
-   "type": "STOCK",
-   "title": "Laporan Bulanan Registrasi Pemegang Efek",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/71f5e1de0b_a001b0fde9.pdf",
-   "title_ko": "월간 증권 보유자 등록 현황 보고",
-   "title_id": "Laporan Bulanan Registrasi Pemegang Efek"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-04 15:53",
+  "idx_from_pc": "2026-09-04 16:04",
   "bi": null,
   "hist_days": 20,
   "calendar": "investing.com"
@@ -22171,6 +22170,7 @@
     "hhmm": "15:54"
    }
   },
-  "model": "gemini-2.5-flash-lite"
+  "model": "gemini-2.5-flash-lite",
+  "index": {}
  }
 }
