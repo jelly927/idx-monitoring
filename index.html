@@ -140,6 +140,9 @@ a{color:inherit;text-decoration:none}
 .adbar{display:flex;height:6px;border-radius:3px;overflow:hidden;background:var(--line);flex:1 0 100%;margin:2px 0 4px}.adbar i{display:block;height:100%}.adbar .a{background:var(--up)}.adbar .d{background:var(--dn)}.adbar .u{background:#c9ced6}
 .n-item .t.est{color:var(--ink3);font-weight:400}
 
+.row.cat{align-items:flex-start}
+.row .evtag{display:inline-block;background:var(--brand2);color:var(--brand);border-radius:5px;padding:0 6px;font-size:10.5px;font-weight:700;margin-left:2px}
+.row .cathl{margin-top:3px;font-size:11.5px;line-height:1.45;color:var(--ink2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* pills */
 .pills{display:flex;gap:6px;flex-wrap:wrap}
 .pill{border:1px solid var(--line);background:var(--card);color:var(--ink2);font:inherit;font-weight:600;font-size:13px;padding:5px 13px;border-radius:999px;cursor:pointer}
@@ -283,7 +286,7 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
     <div class="card" id="rank-card">
       <h2><span data-t="rank">종목 랭킹</span> <span class="more" id="rank-sub">—</span></h2>
       <div class="pills" id="rank-pills" style="margin-top:12px">
-        <button class="pill on" data-k="value" data-t="value">거래대금</button><button class="pill" data-k="gainers" data-t="gainers">상승</button><button class="pill" data-k="losers" data-t="losers">하락</button><button class="pill" data-k="turnover" data-t="turnover">대금급증</button>
+        <button class="pill on" data-k="value" data-t="value">거래대금</button><button class="pill" data-k="gainers" data-t="gainers">상승</button><button class="pill" data-k="losers" data-t="losers">하락</button><button class="pill" data-k="turnover" data-t="turnover">Trending</button><button class="pill" data-k="catalyst" data-t="catalyst">Catalyst</button>
       </div>
       <div class="list" id="rank"></div>
     </div>
@@ -389,14 +392,14 @@ window.DEMO_DATA={"mode":"demo","updated":"2026-09-01 15:45","delay_min":0,"fx_b
 /* ---------- i18n ---------- */
 const I18N={
  ko:{market:'증시',news:'뉴스',cal:'캘린더',hot:'주요뉴스',connecting:'연결 중',updated:'갱신',next:'다음',sec:'초',fx:'환산',demo:'스냅샷 · 9/1 15:45 (수집기 미연결)',live:'실시간',delay:'분 지연',liveIdx:'실시간 · IDX 직접 수집',
-   rank:'종목 랭킹',value:'거래대금',gainers:'상승',losers:'하락',turnover:'대금급증',status:'시장 현황',foreign:'외국인 수급',prevday:'전일 기준',ftop:'순매수 상위',fbot:'순매도 상위',macro:'시장 지표',macroSub:'환율 · 금리 · 원자재',
+   rank:'종목 랭킹',value:'거래대금',gainers:'상승',losers:'하락',turnover:'Trending',catalyst:'Catalyst',status:'시장 현황',foreign:'외국인 수급',prevday:'전일 기준',ftop:'순매수 상위',fbot:'순매도 상위',macro:'시장 지표',macroSub:'환율 · 금리 · 원자재',
    newsCard:'종목 뉴스',newsTab:'뉴스',snews:'종목 뉴스',knews:'KISI 뉴스',all:'전체',more:'전체 보기 ›',todayEv:'오늘 일정',calLink:'캘린더 ›',ann:'실시간 공시',annSub:'IDX 공시 · 최근 30시간',calTitle:'캘린더',today:'오늘',macroCorp:'매크로+기업',macroOnly:'매크로',corpOnly:'기업',
    labValue:'거래대금 순',labG:'상승률 순',labL:'하락률 순',labT:'20일 평균 대비 급증',advdec:'상승 / 하락 / 보합',advPct:'상승 비중',gidx:'주요 지수',gidxSub:'미국 · 아시아',secTop:'시총 상위 종목',moreCal:'건 더 · 캘린더 ›',less:'접기 ‹',divOnly:'배당',ipoOnly:'상장',mnews:'시장 뉴스',mnewsSub:'거시 · 정책 · 원자재 · 글로벌',secTitle:'업종별 등락',secNote:'시총가중 · IDX 업종분류',mcap:'시가총액',inSession:'장중',closed:'장 마감',nextOpen:'다음 개장 09:00',nextMon:'다음 개장 월 09:00',stale:'갱신 지연 · 마지막',hotLatest:'최신 헤드라인',hotNote:'종목 추천·전망성 기사 제외 · 최신순',viewAll:'전체 보기 ›',noStock:'해당 종목 없음',noStockData:'시세 데이터 없음 (거래 없음 또는 미수집)',prevClose:'전일종가',annT:'공시',asofClose:'IDX 확정',qPh:'종목 검색 · BBCA',estTime:'수집 시각 기준 (발행시각 미제공)',turnoverK:'거래대금',hilo:'장중 고 / 저',vol:'거래량',ytd:'YTD',m1:'1개월',range:'장중 폭',fPrev:'외국인 (전일)',
    netbuy:'순매수',buy:'매수',sell:'매도',price:'현재가',chg:'등락',ratio20:'20일 평균 대비',fnet:'외국인 순매수',headlines:'뉴스',sched:'일정',noNews:'최근 헤드라인 없음',noSched:'등록된 기업 일정 없음',noEv:'오늘 일정 없음',upcoming:'다음 예정',noEv2:'2주 내 일정 없음',
    exp:'예상',prev:'이전',act:'실제',imp:'중요도',pre:'발표 전 · 확인 필요',chk:'확인 필요',exch:'인도네시아 거래소',foot:'출처: IDX · Investing.com · Yahoo Finance · Bank Indonesia · 화이트리스트 매체 RSS',footChk:'미확인 값은',footChk2:'표기',
    now:'현재',close:'종가',prevClose:'전일종가',lastOk:'마지막 수신',retry:'재시도 중',noProxy:'실시간 프록시 연결 실패 (Worker 미설정)',ixIHSG:'자카르타 종합',ixLQ:'대형 45종목',ixFX:'달러/루피아',ixSUN:'국채 10년물',aiWhy:'왜 움직였을까?',aiSrc:'AI 요약 · Gemini',aiSearching:'왜 움직였는지 이유를 찾고 있어요 · 뉴스·공시·수급이 모이면 요약이 올라옵니다',aiLow:'뚜렷한 재료는 확인되지 않음 — 시장·업종 흐름과 유사한 수준',aiUp:'상승',aiDown:'하락',aiFlat:'보합',aiSum:'공시 요약',watch:'관심 종목',wlEmpty:'종목 추가 · 최근 추가가 위로, ▲▼·드래그로 순서 변경 · 최대 20개 · 이 브라우저에 저장',wlSrc:'출처',dchg:'전일비',divInfo:'배당',exDate:'배당락',payDate:'지급',yld:'수익률',fnetAll:'외국인 순매수 · 전체시장',prevLabel:'전일',src:'출처',idxNote:'IDX 실시간 공시',days:'일월화수목금토',day:'일',month:'월',dow:'요일',noAnn:'공시 없음',noData:'데이터 없음',noNewsTag:'해당 종목 뉴스 없음'},
  id:{market:'Pasar',news:'Berita',cal:'Kalender',hot:'Berita utama',connecting:'Menghubungkan',updated:'Diperbarui',next:'Berikut',sec:'dtk',fx:'Kurs',demo:'Snapshot · 1/9 15:45 (kolektor belum aktif)',live:'Live',delay:' mnt tunda',liveIdx:'Live · IDX langsung',
-   rank:'Peringkat saham',value:'Nilai transaksi',gainers:'Top gainer',losers:'Top loser',turnover:'Lonjakan nilai',status:'Kondisi pasar',foreign:'Investor asing',prevday:'Hari sebelumnya',ftop:'Net buy terbesar',fbot:'Net sell terbesar',macro:'Indikator pasar',macroSub:'Kurs · Yield · Komoditas',
+   rank:'Peringkat saham',value:'Nilai transaksi',gainers:'Top gainer',losers:'Top loser',turnover:'Trending',catalyst:'Catalyst',status:'Kondisi pasar',foreign:'Investor asing',prevday:'Hari sebelumnya',ftop:'Net buy terbesar',fbot:'Net sell terbesar',macro:'Indikator pasar',macroSub:'Kurs · Yield · Komoditas',
    newsCard:'Berita emiten',newsTab:'Berita',snews:'Berita emiten',knews:'Berita KISI',all:'Semua',more:'Lihat semua ›',todayEv:'Agenda hari ini',calLink:'Kalender ›',ann:'Keterbukaan informasi',annSub:'Pengumuman IDX · 30 jam terakhir',calTitle:'Kalender',today:'Hari ini',macroCorp:'Makro+Emiten',macroOnly:'Makro',corpOnly:'Emiten',
    labValue:'Urut nilai transaksi',labG:'Urut kenaikan',labL:'Urut penurunan',labT:'Lonjakan vs 20 hari',advdec:'Naik / Turun / Tetap',advPct:'Porsi naik',gidx:'Indeks global',gidxSub:'AS · Asia',secTop:'Saham kapitalisasi terbesar',moreCal:'lagi · Kalender ›',less:'Tutup ‹',divOnly:'Dividen',ipoOnly:'Listing',mnews:'Berita pasar',mnewsSub:'Makro · kebijakan · komoditas · global',secTitle:'Kinerja sektor',secNote:'Tertimbang kapitalisasi · sektor IDX',mcap:'Kapitalisasi pasar',inSession:'Sesi berjalan',closed:'Pasar tutup',nextOpen:'Buka 09:00',nextMon:'Buka Senin 09:00',stale:'Tertunda · terakhir',hotLatest:'Headline terbaru',hotNote:'Tanpa artikel rekomendasi/prediksi · terbaru dulu',viewAll:'Lihat semua ›',noStock:'Saham tidak ditemukan',noStockData:'Data harga tidak tersedia',prevClose:'Tutup kemarin',annT:'Keterbukaan',asofClose:'IDX final',qPh:'Cari saham · BBCA',estTime:'Waktu pengambilan (jam terbit tidak tersedia)',turnoverK:'Nilai transaksi',hilo:'Tertinggi / Terendah',vol:'Volume',ytd:'YTD',m1:'1 bulan',range:'Rentang harian',fPrev:'Asing (kemarin)',
    netbuy:'Net buy',buy:'Beli',sell:'Jual',price:'Harga',chg:'Perubahan',ratio20:'vs rata-rata 20 hari',fnet:'Net asing',headlines:'Berita',sched:'Agenda',noNews:'Belum ada headline',noSched:'Tidak ada agenda emiten',noEv:'Tidak ada agenda hari ini',upcoming:'Jadwal berikutnya',noEv2:'Tidak ada agenda 2 minggu ke depan',
@@ -519,13 +522,14 @@ async function liveIndices(){let any=false;for(const s of LIVE_SYMS){const res=a
 }
 
 /* ---------- 렌더: 증시 ---------- */
-function stockRow(o,i,kind){const bad=o.px==null;const sub=kind==='turnover'?`${o.t} · ${T('ratio20')} ${fmt(o.ratio,1)}×`:kind==='foreign'?`${o.t}`:`${o.t} · ${T('turnoverK')} ${o.val==null?'—':idr(o.val).replace(/<span.*<\/span>/,'')}`;
+function stockRow(o,i,kind){const bad=o.px==null;const sub=kind==='catalyst'?`${o.t} · <span class="evtag">${(LANG==='id'?o.ev_id:o.ev_ko)||''}</span>`:kind==='turnover'?`${o.t} · ${T('ratio20')} ${fmt(o.ratio,1)}×`:kind==='foreign'?`${o.t}`:`${o.t} · ${T('turnoverK')} ${o.val==null?'—':idr(o.val).replace(/<span.*<\/span>/,'')}`;
   const right=kind==='foreign'?`<b class="num ${o.fnet>=0?'up':'dn'}">${o.fnet>=0?'+':'−'}${idrShort(o.fnet)}</b><small class="src krw">≈${krwShort(o.fnet)}</small>`
     :`<b class="num">${bad?`<span class="chk">${T('chk')}</span>`:'Rp'+fmt(o.px,0)}</b><small class="num">${sg(o.pct)}</small>`;
   const nm=kind==='foreign'?`<b>${o.t}</b><small>${o.n||''}</small>`:`<b>${o.n||o.t}</b><small>${sub}</small>`;
-  return`<div class="row" onclick="openDr('${o.t}')"><span class="rk ${i<3?'top':''}">${i+1}</span>${logo(o.t,o.n)}<div class="nm">${nm}</div><div class="px">${right}</div><span class="heart">♡</span></div>`;}
+  const hl=kind==='catalyst'&&o.hl?`<div class="cathl" title="점수 ${o.score} = 뉴스 ${o.s_news}×0.5 + 시총 ${o.s_size}×0.3 + 거래대금 ${o.s_liq}×0.2${o.srcs>1?' · 보도 '+o.srcs+'곳':''}">${o.hl}</div>`:'';
+  return`<div class="row${kind==='catalyst'?' cat':''}" onclick="openDr('${o.t}')"><span class="rk ${i<3?'top':''}">${i+1}</span>${logo(o.t,o.n)}<div class="nm">${nm}${hl}</div><div class="px">${right}</div><span class="heart">♡</span></div>`;}
 function renderRank(){const list=DATA[rankKey]||[];if(changed('rank',[rankKey,list,LANG]))$('rank').innerHTML=list.length?list.slice(0,10).map((o,i)=>stockRow(o,i,rankKey)).join(''):`<div class="empty">${T('noData')}</div>`;
-  const lab={value:T('labValue'),gainers:T('labG'),losers:T('labL'),turnover:T('labT')};
+  const lab={value:T('labValue'),gainers:T('labG'),losers:T('labL'),turnover:T('labT'),catalyst:T('catalyst')};
   const rs=DATA.index?.rank_src?`${DATA.index.rank_src.replace(/ · 외국인·공시 PC \d\d-\d\d /,' · PC ')}${DATA.index.rank_asof?' · '+DATA.index.rank_asof:''}`:(DATA.index?.session||'');$('rank-sub').textContent=`${lab[rankKey]} · ${rs}`;$('rank-sub').title=`${lab[rankKey]} · ${DATA.index?.rank_src||''} · ${DATA.index?.rank_asof||''}`;}
 const H={};const changed=(k,v)=>{const j=JSON.stringify(v);if(H[k]===j)return false;H[k]=j;return true;};
 function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo';
