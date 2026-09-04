@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 12:21",
+ "updated": "2026-09-04 12:36",
  "delay_min": 0,
- "fx_basis": "13.05 IDR/KRW · USD/IDR 17,640 · USD/KRW 1,351 · 12:01 Yahoo",
- "idr_per_krw": 13.0524,
+ "fx_basis": "13.04 IDR/KRW · USD/IDR 17,638 · USD/KRW 1,352 · 12:33 Yahoo",
+ "idr_per_krw": 13.0432,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -277,9 +277,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17640.0,
+   "px": 17638.0,
    "prev": 17684.0,
-   "pct": -0.25,
+   "pct": -0.26,
    "spark": [
     17684.0,
     17684.0,
@@ -303,10 +303,11 @@
     17635.0,
     17635.0,
     17640.0,
-    17640.0
+    17640.0,
+    17638.0
    ],
    "inv": true,
-   "asof": "12:01",
+   "asof": "12:33",
    "high": 17684.0,
    "low": 17620.0
   },
@@ -341,7 +342,7 @@
   "value_idr": 18607401563700,
   "volume": 39305835265,
   "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-04 11:58",
-  "rank_asof": "12:19",
+  "rank_asof": "12:35",
   "rank_date": "2026-09-04",
   "adv": 289,
   "dec": 342,
@@ -15352,10 +15353,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6702.02,
+   "px": 6722.32,
    "prev": 6598.23,
-   "pct": 1.57,
-   "asof": "12:00",
+   "pct": 1.88,
+   "asof": "12:15",
    "live": true,
    "spark": [
     6677.11,
@@ -15418,17 +15419,20 @@
     6699.06,
     6701.1,
     6705.92,
-    6702.02
+    6709.0,
+    6714.39,
+    6722.57,
+    6722.32
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64986.01,
+   "px": 65111.93,
    "prev": 64269.48,
-   "pct": 1.11,
-   "asof": "12:05",
+   "pct": 1.31,
+   "asof": "12:20",
    "live": true,
    "spark": [
     64439.01,
@@ -15482,17 +15486,20 @@
     64915.05,
     64957.99,
     65000.89,
-    64986.01
+    64983.58,
+    65005.42,
+    65106.95,
+    65111.93
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25724.64,
+   "px": 25735.39,
    "prev": 25213.31,
-   "pct": 2.03,
-   "asof": "12:05",
+   "pct": 2.07,
+   "asof": "12:20",
    "live": true,
    "spark": [
     25696.61,
@@ -15528,7 +15535,10 @@
     25737.6,
     25737.6,
     25730.07,
-    25724.64
+    25737.39,
+    25722.23,
+    25733.46,
+    25735.39
    ]
   }
  ],
@@ -15593,6 +15603,35 @@
  },
  "news": [
   {
+   "ts": "2026-09-04T12:24:09+07:00",
+   "date": "2026-09-04",
+   "time": "12:24",
+   "src": "Bloomberg Technoz",
+   "t": "Laba BULL Melonjak, Ekspansi LNG & Rights Issue Disorot",
+   "tags": [
+    "BULL"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120507/laba-bull-melonjak-ekspansi-lng-rights-issue-disorot",
+   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727155440.jpeg",
+   "t_id": "Laba BULL Melonjak, Ekspansi LNG & Rights Issue Disorot",
+   "t_ko": "BULL 이익 급증, LNG 확장 및 권리 문제 강조"
+  },
+  {
+   "ts": "2026-09-04T12:19:00+07:00",
+   "date": "2026-09-04",
+   "time": "12:19",
+   "src": "Katadata",
+   "t": "IHSG Sesi I Lesu, Ada Crossing Jumbo di Saham Dian Swastatika (DSSA) dan BUKA",
+   "tags": [
+    "BUKA",
+    "DSSA"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6a9a54d085f23/ihsg-sesi-i-lesu-ada-crossing-jumbo-di-saham-dian-swastatika-dssa-dan-buka",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/27/2026_07_27-11_53_00_29b31032-8987-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "IHSG Sesi I Lesu, Ada Crossing Jumbo di Saham Dian Swastatika (DSSA) dan BUKA",
+   "t_ko": "JCI 세션 I 부진, Dian Swaistika(DSSA) 및 BUKA 주식에 점보 교차가 있음"
+  },
+  {
    "ts": "2026-09-04T12:10:00+07:00",
    "date": "2026-09-04",
    "time": "12:10",
@@ -15603,8 +15642,8 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6a9a52b34f450/jejak-kreditur-senyap-di-balik-proyek-tambang-gayo-mineral-grup-bakrie-dewa",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/20/PT_Darma_Henwa_Tbk_-_DEWA-2026_07_20-18_31_48_d76157975dd5b20e315fe960abe466b5_620x413_thumb.jpg",
-   "t_id": "Jejak Kreditur Senyap di Balik Proyek Tambang Gayo Mineral Grup Bakrie (DEWA)",
-   "t_ko": "바크리 그룹(DEWA)의 가요 광물 광산 프로젝트 뒤에 숨은 채권자들의 흔적"
+   "t_ko": "바크리 그룹(DEWA)의 가요 광물 광산 프로젝트 뒤에 숨은 채권자들의 흔적",
+   "t_id": "Jejak Kreditur Senyap di Balik Proyek Tambang Gayo Mineral Grup Bakrie (DEWA)"
   },
   {
    "ts": "2026-09-04T11:49:00+07:00",
@@ -16498,6 +16537,77 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T12:30:00+07:00",
+   "date": "2026-09-04",
+   "time": "12:30",
+   "src": "Katadata",
+   "t": "BGN akan Ubah Skema Insentif Dapur MBG di Tengah Pemangkasan Anggaran",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6a9a57581404f/bgn-akan-ubah-skema-insentif-dapur-mbg-di-tengah-pemangkasan-anggaran",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/03/2026_09_03-19_02_00_c2817d0e-a795-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "BGN akan Ubah Skema Insentif Dapur MBG di Tengah Pemangkasan Anggaran",
+   "t_ko": "BGN, 예산 삭감 속에서 MBG Kitchen 인센티브 제도 변경"
+  },
+  {
+   "ts": "2026-09-04T12:30:00+07:00",
+   "date": "2026-09-04",
+   "time": "12:30",
+   "src": "Medcom",
+   "t": "Hari Pelanggan Nasional 2026, Begini Standar Pelayanan yang Diam-Diam Diinginkan Gen Z",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/bisnis/wkBdGjgN-hari-pelanggan-nasional-2026-begini-standar-pelayanan-yang-diam-diam-diinginkan-gen-z",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840015/9q7yYVkl45.jpeg?w=720",
+   "t_id": "Hari Pelanggan Nasional 2026, Begini Standar Pelayanan yang Diam-Diam Diinginkan Gen Z",
+   "t_ko": "2026년 전국 고객의 날, Z세대가 몰래 원하는 서비스 표준"
+  },
+  {
+   "ts": "2026-09-04T12:26:46+07:00",
+   "date": "2026-09-04",
+   "time": "12:26",
+   "src": "Medcom",
+   "t": "Pasar Makin Dinamis, Ini Strategi Investasi yang Dibahas di FIIF 2026",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/keuangan/8KyxaP6k-pasar-makin-dinamis-ini-strategi-investasi-yang-dibahas-di-fiif-2026",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840037/IEvpV9quCR.jpg?w=720",
+   "t_id": "Pasar Makin Dinamis, Ini Strategi Investasi yang Dibahas di FIIF 2026",
+   "t_ko": "시장은 점점 더 역동적으로 변하고 있습니다. 이것이 FIIF 2026에서 논의된 투자 전략입니다."
+  },
+  {
+   "ts": "2026-09-04T12:25:00+07:00",
+   "date": "2026-09-04",
+   "time": "12:25",
+   "src": "Katadata",
+   "t": "Ekspor Sawit Melonjak 64% pada Juni 2026, Stok Capai 2,84 Juta Ton",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/industri/6a9a56554224e/ekspor-sawit-melonjak-64-pada-juni-2026-stok-capai-2-84-juta-ton",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/17/2026_07_17-16_40_00_e9764b22-81cc-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "Ekspor Sawit Melonjak 64% pada Juni 2026, Stok Capai 2,84 Juta Ton",
+   "t_ko": "2026년 6월 팜유 수출량 64% 급증, 재고량 284만 톤 도달"
+  },
+  {
+   "ts": "2026-09-04T12:20:00+07:00",
+   "date": "2026-09-04",
+   "time": "12:20",
+   "src": "Media Indonesia",
+   "t": "Kolaborasi Strategis dengan Tiongkok Diperkuat untuk Tingkatkan SDM Pertanian",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/929672/kolaborasi-strategis-dengan-tiongkok-diperkuat-untuk-tingkatkan-sdm-pertanian",
+   "t_id": "Kolaborasi Strategis dengan Tiongkok Diperkuat untuk Tingkatkan SDM Pertanian",
+   "t_ko": "농업인력 향상을 위해 중국과의 전략적 협력 강화"
+  },
+  {
+   "ts": "2026-09-04T12:10:55+07:00",
+   "date": "2026-09-04",
+   "time": "12:10",
+   "src": "Medcom",
+   "t": "Biaya Pasang Listrik Baru PLN September 2026, Mulai Rp421 Ribu",
+   "tags": [],
+   "url": "https://www.medcom.id/properti/news-properti/MkM5rQwk-biaya-pasang-listrik-baru-pln-september-2026-mulai-rp421-ribu",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840032/KrztNALR7i.jpg?w=720",
+   "t_ko": "2026년 9월 신규 PLN 전기 설치 비용, IDR 421,000부터 시작",
+   "t_id": "Biaya Pasang Listrik Baru PLN September 2026, Mulai Rp421 Ribu"
+  },
+  {
    "ts": "2026-09-04T12:09:00+07:00",
    "date": "2026-09-04",
    "time": "12:09",
@@ -16509,6 +16619,17 @@
    "t_id": "Menko Pangan Ancam Pecat Petugas SPPG Lalai terkait Kasus Keracunan MBG"
   },
   {
+   "ts": "2026-09-04T12:08:00+07:00",
+   "date": "2026-09-04",
+   "time": "12:08",
+   "src": "Media Indonesia",
+   "t": "Laporan Aset yang Transparan Bangun Rasa Aman untuk Nasabah",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/929671/laporan-aset-yang-transparan-bangun-rasa-aman-untuk-nasabah",
+   "t_id": "Laporan Aset yang Transparan Bangun Rasa Aman untuk Nasabah",
+   "t_ko": "투명한 자산 보고로 고객의 보안 의식 구축"
+  },
+  {
    "ts": "2026-09-04T12:03:00+07:00",
    "date": "2026-09-04",
    "time": "12:03",
@@ -16517,8 +16638,8 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/makro/6a9a5129f349b/beda-versi-garis-kemiskinan-bank-dunia-dan-bps-ini-penjelasannya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/15/2026_06_15-14_43_00_46a6d196-689f-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Beda Versi Garis Kemiskinan Bank Dunia dan BPS, Ini Penjelasannya",
-   "t_ko": "세계은행과 BPS 빈곤선의 다양한 버전에 대한 설명은 다음과 같습니다."
+   "t_ko": "세계은행과 BPS 빈곤선의 다양한 버전에 대한 설명은 다음과 같습니다.",
+   "t_id": "Beda Versi Garis Kemiskinan Bank Dunia dan BPS, Ini Penjelasannya"
   },
   {
    "ts": "2026-09-04T11:58:41+07:00",
@@ -16541,8 +16662,8 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/makro/6a9a5007db3a3/purbaya-optimistis-kelas-menengah-ri-tumbuh-dalam-2-tahun-ini-strateginya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/20/2026_08_20-14_20_00_a7cc97a8-9c6b-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Purbaya Optimistis Kelas Menengah RI Tumbuh dalam 2 Tahun, Ini Strateginya",
-   "t_ko": "Purbaya는 인도네시아 중산층이 2년 내에 성장할 것이라고 낙관하고 있으며 이것이 전략입니다."
+   "t_ko": "Purbaya는 인도네시아 중산층이 2년 내에 성장할 것이라고 낙관하고 있으며 이것이 전략입니다.",
+   "t_id": "Purbaya Optimistis Kelas Menengah RI Tumbuh dalam 2 Tahun, Ini Strateginya"
   },
   {
    "ts": "2026-09-04T11:52:00+07:00",
@@ -16650,6 +16771,18 @@
    "t_id": "Raksasa Memori Flash China YMTC Melangkah Maju Menuju IPO Jumbo"
   },
   {
+   "ts": "2026-09-04T11:18:00+07:00",
+   "date": "2026-09-04",
+   "time": "11:18",
+   "src": "Medcom",
+   "t": "Berita Terpopuler Properti: Inspirasi Pagar Tembok Minimalis hingga Rekomendasi Kulkas Mini",
+   "tags": [],
+   "url": "https://www.medcom.id/properti/news-properti/GNGG61vN-berita-terpopuler-properti-inspirasi-pagar-tembok-minimalis-hingga-rekomendasi-kulkas-mini",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840036/tFjWBmC9sD.jpg?w=720",
+   "t_ko": "가장 인기 있는 부동산 뉴스: 미니멀리스트 벽 울타리에 대한 영감부터 미니 냉장고 추천까지",
+   "t_id": "Berita Terpopuler Properti: Inspirasi Pagar Tembok Minimalis hingga Rekomendasi Kulkas Mini"
+  },
+  {
    "ts": "2026-09-04T11:12:21+07:00",
    "date": "2026-09-04",
    "time": "11:12",
@@ -16754,100 +16887,6 @@
    "url": "https://mediaindonesia.com/ekonomi/929649/ihsg-hari-ini-4-september-melemah-ke-6647-di-tengah-aksi-profit-taking",
    "t_ko": "IHSG 9/4 6,647로 하락 마감 — 차익실현 매물 출회",
    "t_id": "IHSG Hari Ini 4 September Melemah ke 6.647 di Tengah Aksi Profit Taking"
-  },
-  {
-   "ts": "2026-09-04T10:39:03+07:00",
-   "date": "2026-09-04",
-   "time": "10:39",
-   "src": "Republika",
-   "t": "BPS Jelaskan Alasan Minta Tambahan Anggaran Rp 1,47 Triliun untuk Tahun 2027 ke DPR",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tktm53370/bps-jelaskan-alasan-minta-tambahan-anggaran-rp-147-triliun-untuk-tahun-2027-ke-dpr",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/096769900-1785055266-830-556.jpg",
-   "t_ko": "BPS 2027년 예산 Rp1.47조 증액 요청 사유 국회 설명",
-   "t_id": "BPS Jelaskan Alasan Minta Tambahan Anggaran Rp 1,47 Triliun untuk Tahun 2027 ke DPR"
-  },
-  {
-   "ts": "2026-09-04T10:37:00+07:00",
-   "date": "2026-09-04",
-   "time": "10:37",
-   "src": "Media Indonesia",
-   "t": "Purbaya Pastikan Gaji PPPK Dibayar Pusat Mulai Januari 2027",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929650/purbaya-pastikan-gaji-pppk-dibayar-pusat-mulai-januari-2027",
-   "t_ko": "Purbaya, 2027년 1월부터 PPPK 급여 중앙정부 지급 확약",
-   "t_id": "Purbaya Pastikan Gaji PPPK Dibayar Pusat Mulai Januari 2027"
-  },
-  {
-   "ts": "2026-09-04T10:10:00+07:00",
-   "date": "2026-09-04",
-   "time": "10:10",
-   "src": "IDX Channel",
-   "t": "Swayasa (SWAP) Pastikan Tunda Rencana IPO Imbas Masa Berlaku Lapkeu",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/swayasa-swap-pastikan-tunda-rencana-ipo-imbas-masa-berlaku-lapkeu",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/08/23/swayasa_swap_ipo.jpeg",
-   "t_ko": "Swayasa(SWAP) IPO 계획 연기 확정 — 재무제표 유효기간 만료 여파",
-   "t_id": "Swayasa (SWAP) Pastikan Tunda Rencana IPO Imbas Masa Berlaku Lapkeu"
-  },
-  {
-   "ts": "2026-09-04T10:04:00+07:00",
-   "date": "2026-09-04",
-   "time": "10:04",
-   "src": "Media Indonesia",
-   "t": "Rupiah Hari Ini Menguat ke Rp17.628 per Dolar AS Imbas Pernyataan Pejabat The Fed",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929644/rupiah-hari-ini-menguat-ke-rp17628-per-dolar-as-imbas-pernyataan-pejabat-the-fed",
-   "t_ko": "Rupiah 오늘 달러당 Rp17,628로 강세 — 연준 관계자 발언 영향",
-   "t_id": "Rupiah Hari Ini Menguat ke Rp17.628 per Dolar AS Imbas Pernyataan Pejabat The Fed"
-  },
-  {
-   "ts": "2026-09-04T10:00:00+07:00",
-   "date": "2026-09-04",
-   "time": "10:00",
-   "src": "Medcom",
-   "t": "<i>Fresh Graduate</i> Sulit Cari Kerja? MagangHub Jadi Salah Satu Jalan Dapat Pengalaman",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/Gbm0mM3N-fresh-graduate-sulit-cari-kerja-maganghub-jadi-salah-satu-jalan-dapat-pengalaman",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1839999/RMUiGgbJPF.jpeg?w=720",
-   "t_ko": "신입 구직난 — MagangHub, 경력 확보 통로로 부상",
-   "t_id": "<i>Fresh Graduate</i> Sulit Cari Kerja? MagangHub Jadi Salah Satu Jalan Dapat Pengalaman"
-  },
-  {
-   "ts": "2026-09-04T09:56:00+07:00",
-   "date": "2026-09-04",
-   "time": "09:56",
-   "src": "Katadata",
-   "t": "Pertamina Batalkan Rencana Penggunaan STNK untuk Pembelian BBM Subsidi di Sumsel",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/energi/6a9a335c9a3b4/pertamina-batalkan-rencana-penggunaan-stnk-untuk-pembelian-bbm-subsidi-di-sumsel",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/08/02/2023_08_02-15_45_04_90daade0-3117-11ee-96cf-3f7d2834a153_620x413_thumb.jpg",
-   "t_ko": "Pertamina, Sumsel 보조금 연료 구매 STNK 도입 계획 철회",
-   "t_id": "Pertamina Batalkan Rencana Penggunaan STNK untuk Pembelian BBM Subsidi di Sumsel"
-  },
-  {
-   "ts": "2026-09-04T09:50:00+07:00",
-   "date": "2026-09-04",
-   "time": "09:50",
-   "src": "IDX Channel",
-   "t": "Harga Emas di Pegadaian Hari Ini: Antam, Galeri 24, UBS Kompak Naik",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/harga-emas-di-pegadaian-hari-ini-antam-galeri-24-ubs-kompak-naik",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/11/12/pegadaian.jpg",
-   "t_ko": "오늘 Pegadaian 금 시세 — Antam·Galeri 24·UBS 일제히 상승",
-   "t_id": "Harga Emas di Pegadaian Hari Ini: Antam, Galeri 24, UBS Kompak Naik"
-  },
-  {
-   "ts": "2026-09-04T09:44:48+07:00",
-   "date": "2026-09-04",
-   "time": "09:44",
-   "src": "Jawa Pos",
-   "t": "Penyebab Desil DTSEN Berubah Drastis Terungkap, Apakah Bansos Batal Cair?",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609040109/penyebab-desil-dtsen-berubah-drastis-terungkap-apakah-bansos-batal-cair",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/06/07/ilustrasi-warga-menerima-pencairan-bansos-dokjawaposcom-ZlFwS.webp",
-   "t_ko": "DTSEN 소득분위 급변 원인 규명 — Bansos 지급 무산 여부 주목",
-   "t_id": "Penyebab Desil DTSEN Berubah Drastis Terungkap, Apakah Bansos Batal Cair?"
   }
  ],
  "kisi_news": [
@@ -17007,9 +17046,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,640",
-   "d": -0.47,
-   "ytd": 5.5,
+   "v": "17,638",
+   "d": -0.48,
+   "ytd": 5.49,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -17019,9 +17058,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.05",
-   "d": 0.02,
-   "ytd": 12.32,
+   "v": "13.04",
+   "d": -0.04,
+   "ytd": 12.25,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17054,8 +17093,8 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.04",
-   "d": 0.04,
+   "v": "99.03",
+   "d": 0.03,
    "ytd": 0.77,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -17066,9 +17105,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "91.52",
-   "d": -0.24,
-   "ytd": 59.39,
+   "v": "91.51",
+   "d": -0.25,
+   "ytd": 59.37,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17078,9 +17117,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,515.5",
-   "d": 0.01,
-   "ytd": 4.39,
+   "v": "4,517.3",
+   "d": 0.05,
+   "ytd": 4.43,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17114,9 +17153,9 @@
   },
   {
    "k": "CPO (MYR/t)",
-   "v": "4,984",
-   "d": 0.0,
-   "ytd": 23.06,
+   "v": "4,911",
+   "d": 0.14,
+   "ytd": 21.26,
    "inv": false,
    "note": "Bursa Malaysia FCPO 근월물 · investing.com · 연초 4,050",
    "k_ko": "CPO (MYR/t)",
