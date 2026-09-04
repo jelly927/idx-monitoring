@@ -32,6 +32,8 @@ jobs:
         env:
           TZ: Asia/Jakarta
           IDX_PROXY: ${{ vars.IDX_PROXY }}      # (선택) 러너 IP 가 IDX 에 막히면 Cloudflare Worker 주소를 Variables 에 등록
+          # (선택) 등록하면 PC 가 꺼진 주말에도 러너가 지수·공시 AI 요약을 만든다. 종목 요약은 호출량이 커서 PC 전용.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - name: chat context
         run: python make_chat_context.py
         env: { TZ: Asia/Jakarta }
