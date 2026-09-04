@@ -131,7 +131,7 @@ def _host(u):
     try: return u.split("/")[2]
     except Exception: return u[:40]
 
-def _wait_cf(pg, tries=14):
+def _wait_cf(pg, tries=20):
     """Cloudflare 대기 화면이 걷힐 때까지."""
     for _ in range(tries):
         try: t = pg.evaluate("() => document.body ? document.body.innerText.slice(0,300) : ''") or ""
@@ -1694,10 +1694,12 @@ def investing_batch(ttl_min=3):
     oldest = min(INV_ROTATE, key=lambda k: (q.get(k) or {}).get("ts") or "")
     keys = ["SUN10Y", oldest]
     need_base = [k for k in keys if not (q.get(k) or {}).get("base")]
-    def work(pg):
-        """페이지 안 fetch() 는 Cloudflare 가 403(Just a moment) 으로 막으므로 종목별로 goto 로 진입해 읽는다 (건당 3~5초)"""
-        out = {}; urls = {k: u for k, u, *_ in INV_QUOTES}
-        for k in keys:
+    urls = {k: u for k, u, *_ in INV_QUOTES}
+    def work_one(k):
+      def work(pg):
+        """페이지 안 fetch() 는 Cloudflare 가 403 으로 막고, 한 탭에서 연속 진입도 검증에 걸린다 → 항목마다 새 탭으로 진입"""
+        out = {}
+        for _once in (1,):
             u = urls[k]
             try:
                 pg.goto("https://www.investing.com" + u, wait_until="domcontentloaded", timeout=45000); _wait_cf(pg)
@@ -1723,9 +1725,11 @@ def investing_batch(ttl_min=3):
                 out[k] = o or {}
             except Exception as e: out[k] = {"err": str(e)[:120]}
         return out
-    res = None
-    try: res = _pw_session(work, "investing-batch")
-    except Exception as e: log("investing 일괄 시세 실패", str(e)[:100])
+      return work
+    res = {}
+    for k in keys:
+        try: res.update(_pw_session(work_one(k), f"investing-{k}") or {})
+        except Exception as e: log("investing 시세 실패", k, str(e)[:100])
     got = 0
     for k in keys:
         o = (res or {}).get(k) or {}
