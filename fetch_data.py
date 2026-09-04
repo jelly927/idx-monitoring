@@ -2023,12 +2023,17 @@ def ai_announcements(anns, per_build=6):
         if len(text) < 200:
             cache[a["url"]] = {"ko": "", "id": "", "note": "scan", "ts": now_wib().isoformat()}; continue   # 스캔본·본문 없음 → 요약 불가로 기록(재시도 안 함)
         prompt = ("다음은 인도네시아 증권거래소(IDX) 공시 원문 일부다. 투자자 관점에서 핵심만 요약하라.\n"
-                  "출력은 JSON 하나: {\"ko\": \"한국어 2문장, 증권사 리포트 문체(명사형 종결), 금액·비율·날짜 등 숫자 포함\", \"id\": \"Bahasa Indonesia 2 kalimat\", \"tags\": [\"핵심 키워드 최대 3개(한국어)\"]}\n"
+                  "[필수 포함 항목] 공시 유형이 아래에 해당하면 그 수치와 일정을 반드시 요약에 넣는다. 원문에 없으면 '미기재'로 적는다.\n"
+                  "  · 자사주 매입(pembelian kembali saham/buyback): 매입 한도 금액, 매입 주식수, 발행주식 대비 비율, 매입 기간(시작~종료일), 자금 출처\n"
+                  "  · 배당(dividen): 주당 배당금(DPS), 총액, 배당락일(cum/ex date), 지급일\n"
+                  "  · 유상증자·제3자배정(rights issue/HMETD/private placement): 발행 주식수, 발행가, 조달 금액, 지분 희석률, 일정\n"
+                  "  · 지분 매각·인수(divestasi/akuisisi): 대상 회사, 지분율, 거래 금액, 매도·매수 주체, 완료 예정일\n"
+                  "출력은 JSON 하나: {\"ko\": \"한국어 2~3문장, 증권사 리포트 문체(명사형 종결), 금액·비율·날짜 등 숫자 포함\", \"id\": \"Bahasa Indonesia 2-3 kalimat\", \"tags\": [\"핵심 키워드 최대 3개(한국어)\"]}\n"
                   "숫자는 한국식 표기(천 단위 콤마, 소수점은 마침표: 58.31%, 3,190,144,498주, Rp1,250억)로 바꾸고 회사명은 원문 그대로. 원문에 없는 내용은 쓰지 말 것. 한국어 문장에 인니어·스페인어 단어를 섞지 말 것.\n\n"
                   f"[종목] {a.get('t')}  [제목] {a.get('title')}\n[원문]\n{text}")
-        j = _json_loads_loose(_gemini(prompt, 700))
+        j = _json_loads_loose(_gemini(prompt, 1100))
         if not j or not j.get("ko"): continue
-        cache[a["url"]] = {"ko": str(j.get("ko", ""))[:400], "id": str(j.get("id", ""))[:400], "tags": [str(x)[:20] for x in (j.get("tags") or [])][:3], "ts": now_wib().isoformat()}; done += 1
+        cache[a["url"]] = {"ko": str(j.get("ko", ""))[:600], "id": str(j.get("id", ""))[:600], "tags": [str(x)[:20] for x in (j.get("tags") or [])][:3], "ts": now_wib().isoformat()}; done += 1
     if done or (can and todo):
         keep = sorted(cache.items(), key=lambda kv: kv[1].get("ts", ""), reverse=True)[:400]
         try: AI_ANN_P.write_text(json.dumps(dict(keep), ensure_ascii=False), encoding="utf-8")
@@ -2038,6 +2043,94 @@ def ai_announcements(anns, per_build=6):
         c = cache.get(a.get("url") or "")
         if c and c.get("ko"): a["ai_ko"] = c["ko"]; a["ai_id"] = c["id"]; a["ai_tags"] = c.get("tags") or []
     return anns
+
+# ── Catalyst — 오늘 주가에 영향을 줄 재료가 있는 종목 ────────────────────────
+# 점수 = 뉴스영향도 0.50 + 시가총액 0.30 + 거래대금 0.20 (각 0~100)
+# 룰 기반이라 왜 이 종목이 위에 왔는지 항상 되짚어볼 수 있다 (AI 호출 없음 = 할당량 소모 없음)
+CAT_EVENTS = [
+    (95, "지분매각·경영권", "Divestasi & pengendali",
+     r"jual saham|penjualan saham|melepas saham|divestasi|lepas kepemilikan|pengendali|pengambilalihan|caplok|tender offer|sell .{0,20}shares"),
+    (90, "법적 리스크", "Risiko hukum",
+     r"wanprestasi|digugat|menggugat|gugatan|pailit|PKPU|disuspensi|suspensi saham|delisting|sanksi|denda|tersangka|penyidikan"),
+    (80, "자본구조", "Aksi korporasi",
+     r"rights issue|HMETD|private placement|penambahan modal|buyback|pembelian kembali saham|stock split|reverse stock|konversi saham"),
+    (70, "실적·배당", "Kinerja & dividen",
+     r"dividen|laba bersih|rugi bersih|kinerja keuangan|pendapatan naik|pendapatan turun|revisi target"),
+    (55, "영업·계약", "Operasional",
+     r"kontrak|ekspansi|pabrik baru|proyek|kerja sama|MoU|akuisisi aset|IPO anak"),
+    (40, "경영진 변동", "Manajemen",
+     r"direksi|komisaris|RUPS|pembebastugasan|mengundurkan diri|penunjukan direktur"),
+]
+CAT_EVENTS = [(w, ko, idn, re.compile(rx, re.I)) for w, ko, idn, rx in CAT_EVENTS]
+CAT_W = {"news": 0.50, "size": 0.30, "liq": 0.20}     # Jay 지정 우선순위: 뉴스 > 시총 > 거래대금
+CAT_MCAP = (11.0, 15.0)      # log10(IDR) 정규화 구간 — Rp1,000억 ~ Rp1,000조
+CAT_VAL = (8.0, 12.5)        # log10(IDR) — Rp1억 ~ Rp3조
+
+def _cat_norm(v, lo, hi):
+    import math
+    if not v or v <= 0: return 0.0
+    x = (math.log10(v) - lo) / (hi - lo)
+    return max(0.0, min(1.0, x)) * 100
+
+def catalyst_block(data, top=10):
+    today = (data.get("updated") or "")[:10]
+    stocks = {r.get("t"): r for r in (data.get("stocks") or []) if r.get("t")}
+    divs = data.get("dividends") or {}
+    cand = {}    # ticker → dict
+
+    def bump(t, w, ko, idn, src, hl=None, url=None, outlet=None):
+        if t not in stocks: return
+        c = cand.setdefault(t, {"w": 0, "ko": "", "id": "", "outlets": set(), "ann": False, "hl": "", "url": ""})
+        if w > c["w"]:
+            c["w"], c["ko"], c["id"] = w, ko, idn
+            if hl: c["hl"], c["url"] = hl, url or ""
+        if outlet: c["outlets"].add(outlet)
+        if src == "ann": c["ann"] = True
+        if not c["hl"] and hl: c["hl"], c["url"] = hl, url or ""
+
+    # 1) 종목 뉴스
+    #    한 기사에 티커가 여러 개 달릴 때(본문 언급까지 태깅됨) 그 재료를 전 종목에 나눠주면
+    #    엉뚱한 종목이 상위로 올라온다. 제목에 티커나 회사명이 직접 등장하는 종목만 인정한다.
+    for n in (data.get("news") or []):
+        head = f"{n.get('t_id') or ''} {n.get('t') or ''} {n.get('t_ko') or ''}"
+        tags = n.get("tags") or []
+        for w, ko, idn, rx in CAT_EVENTS:
+            if not rx.search(head): continue
+            for t in tags:
+                if len(tags) > 1:
+                    nm = (stocks.get(t, {}).get("n") or "").split()
+                    key = " ".join(nm[:2]).lower()
+                    if t not in head and not (key and key in head.lower()): continue
+                bump(t, w, ko, idn, "news", n.get("t_ko") or n.get("t"), n.get("url"), n.get("src"))
+            break
+    # 2) 공시
+    for a in (data.get("announcements") or []):
+        txt = f"{a.get('title') or ''} {a.get('title_ko') or ''}"
+        for w, ko, idn, rx in CAT_EVENTS:
+            if rx.search(txt):
+                bump(a.get("t"), w, ko, idn, "ann", a.get("ai_ko") or a.get("title_ko") or a.get("title"), a.get("url"))
+                break
+    # 3) 배당락 당일 — 뉴스가 없어도 주가에 기계적으로 영향
+    for t, dv in divs.items():
+        if dv.get("ex") == today:
+            bump(t, 75, "배당락", "Ex-dividend", "div",
+                 f"배당락일 · DPS Rp{dv.get('dps')} ({dv.get('type') or ''}, 수익률 {dv.get('yld') or '—'})", "")
+
+    out = []
+    for t, c in cand.items():
+        o = stocks[t]
+        news = c["w"] + (15 if len(c["outlets"]) >= 3 else 8 if len(c["outlets"]) == 2 else 0) + (10 if c["ann"] else 0)
+        news = min(100.0, news)
+        size = _cat_norm(o.get("mcap"), *CAT_MCAP)
+        liq = _cat_norm(o.get("val"), *CAT_VAL)
+        score = CAT_W["news"] * news + CAT_W["size"] * size + CAT_W["liq"] * liq
+        out.append({"t": t, "n": o.get("n"), "px": o.get("px"), "pct": o.get("pct"), "val": o.get("val"),
+                    "mcap": o.get("mcap"), "ev_ko": c["ko"], "ev_id": c["id"],
+                    "hl": (c["hl"] or "")[:160], "url": c["url"],
+                    "score": round(score, 1), "s_news": round(news), "s_size": round(size), "s_liq": round(liq),
+                    "srcs": len(c["outlets"])})
+    out.sort(key=lambda x: -x["score"])
+    return out[:top]
 
 AI_IDX_P = CACHE / "index_ai.json"
 def ai_index(data, ttl_min=30):
@@ -2314,6 +2407,10 @@ def build():
     except Exception as e: log("종목 AI 요약 오류", repr(e)[:120]); data["ai"] = {"stocks": {}}
     try: data["ai"]["index"] = ai_index(data)
     except Exception as e: log("지수 AI 요약 오류", repr(e)[:120])
+    try:
+        data["catalyst"] = catalyst_block(data)
+        log(f"Catalyst {len(data['catalyst'])}종목" + (f" · 1위 {data['catalyst'][0]['t']} {data['catalyst'][0]['score']}점" if data["catalyst"] else ""))
+    except Exception as e: log("Catalyst 오류", repr(e)[:120]); data["catalyst"] = []
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     # data.js: index.html 을 파일(file://)로 직접 열어도 마지막 수집 데이터가 보이도록 (fetch 는 file:// 에서 막힘)
     try: (ROOT / "data.js").write_text("window.__IDX_DATA=" + json.dumps(data, ensure_ascii=False) + ";", encoding="utf-8")
