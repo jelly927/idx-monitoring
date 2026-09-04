@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 20:53",
+ "updated": "2026-09-04 21:08",
  "delay_min": 0,
- "fx_basis": "13.11 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,345 · 20:07 Yahoo",
- "idr_per_krw": 13.1059,
+ "fx_basis": "13.09 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,347 · 20:54 Yahoo",
+ "idr_per_krw": 13.0864,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15079,51 +15079,60 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7737.88,
+   "px": 7737.39,
    "prev": 7747.8,
    "pct": -0.13,
-   "asof": "20:50",
+   "asof": "21:05",
    "live": true,
    "spark": [
     7743.86,
     7740.86,
     7737.53,
     7741.57,
-    7737.88
+    7740.27,
+    7740.45,
+    7736.04,
+    7737.39
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26576.71,
+   "px": 26611.84,
    "prev": 26584.06,
-   "pct": -0.03,
-   "asof": "20:50",
+   "pct": 0.1,
+   "asof": "21:05",
    "live": true,
    "spark": [
     26609.51,
     26610.07,
     26575.78,
     26592.34,
-    26576.71
+    26606.49,
+    26619.89,
+    26608.21,
+    26611.84
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 53538.44,
+   "px": 53459.56,
    "prev": 53687.54,
-   "pct": -0.28,
-   "asof": "20:50",
+   "pct": -0.42,
+   "asof": "21:05",
    "live": true,
    "spark": [
     53577.29,
     53540.71,
     53522.05,
     53584.39,
-    53538.44
+    53521.91,
+    53503.79,
+    53451.24,
+    53459.56
    ]
   },
   {
@@ -15443,6 +15452,50 @@
  },
  "news": [
   {
+   "ts": "2026-09-04T21:00:00+07:00",
+   "date": "2026-09-04",
+   "time": "21:00",
+   "src": "IDNFinancials",
+   "t": "Foreign trading value drops, outflow of IDR 317 billion",
+   "tags": [
+    "ASII",
+    "DSSA",
+    "TINS"
+   ],
+   "url": "https://www.idnfinancials.com/news/68383/foreign-trading-value-drops-outflow-of-idr-317-billion",
+   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/NET%20FOREIGN%20IMAGE%20%28ARIF%29/NET%20FOREIGN%2017.jpeg",
+   "t_ko": "해외 거래액 감소, IDR 3,170억 유출",
+   "t_id": "Nilai perdagangan luar negeri anjlok, outflow Rp 317 miliar"
+  },
+  {
+   "ts": "2026-09-04T20:57:00+07:00",
+   "date": "2026-09-04",
+   "time": "20:57",
+   "src": "Katadata",
+   "t": "Deretan Aksi Pengendali Lepas Saham UVCR, Porsi Kepemilikan Kini Tinggal 16,18%",
+   "tags": [
+    "UVCR"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6a9ace4452ff6/deretan-aksi-pengendali-lepas-saham-uvcr-porsi-kepemilikan-kini-tinggal-16-18",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Ultra_Voucher_UVCR-2026_09_04-20_56_34_40f0fef0eea6bd9eb11e08cf27b4970c_620x413_thumb.jpg",
+   "t_id": "Deretan Aksi Pengendali Lepas Saham UVCR, Porsi Kepemilikan Kini Tinggal 16,18%",
+   "t_ko": "UVCR 주식을 공개하기 위해 컨트롤러가 취한 일련의 조치, 소유권 비율은 이제 16.18%에 불과합니다."
+  },
+  {
+   "ts": "2026-09-04T20:55:14+07:00",
+   "date": "2026-09-04",
+   "time": "20:55",
+   "src": "Medcom",
+   "t": "Awich, CHICO CARLITO, ONE OK ROCK, dan Paledusk Bersatu di “FOR OKINAWA”",
+   "tags": [
+    "ROCK"
+   ],
+   "url": "https://www.medcom.id/hiburan/musik/PNg1rBXk-awich-chico-carlito-one-ok-rock-dan-paledusk-bersatu-di-for-okinawa",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840168/fsdu9mWEYP.jpg?w=720",
+   "t_id": "Awich, CHICO CARLITO, ONE OK ROCK, dan Paledusk Bersatu di “FOR OKINAWA”",
+   "t_ko": "Awich, CHICO CARLITO, ONE OK ROCK, Paledusk가 “FOR OKINAWA”에 뭉쳤습니다."
+  },
+  {
    "ts": "2026-09-04T20:27:58+07:00",
    "date": "2026-09-04",
    "time": "20:27",
@@ -15471,6 +15524,34 @@
    "t_id": "Emiten BTPS Bakal Buyback Saham Rp 1 Triliun"
   },
   {
+   "ts": "2026-09-04T19:04:00+07:00",
+   "date": "2026-09-04",
+   "time": "19:04",
+   "src": "Katadata",
+   "t": "Ada Pejabat Senior Danantara dalam Jajaran Pengurus Baru BTN (BBTN)",
+   "tags": [
+    "BBTN"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6a9ab3c189254/ada-pejabat-senior-danantara-dalam-jajaran-pengurus-baru-btn-bbtn",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Wiwik_Wahyuni_Danantara-2026_09_04-19_03_43_a1e0e9e44a8440fdfec1b72e18f4fcfa_620x413_thumb.jpg",
+   "t_ko": "BTN(BBTN)의 새 경영진에는 다난타라 고위 관계자가 있습니다.",
+   "t_id": "Ada Pejabat Senior Danantara dalam Jajaran Pengurus Baru BTN (BBTN)"
+  },
+  {
+   "ts": "2026-09-04T18:49:00+07:00",
+   "date": "2026-09-04",
+   "time": "18:49",
+   "src": "Katadata",
+   "t": "Kinerja Bank Mandiri Solid, Kredit Tumbuh 17,6% dan Laba Bersih Naik 22,3% YoY",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://katadata.co.id/finansial/keuangan/6a9ab03f05e7b/kinerja-bank-mandiri-solid-kredit-tumbuh-17-6-dan-laba-bersih-naik-22-3-yoy",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Ilustrasi_Bank_Mandiri-2026_09_04-18_40_43_2974910a2ea94d92153a2a64a42fd0f4_620x413_thumb.jpg",
+   "t_ko": "Bank Mandiri의 실적은 견조하며 신용은 17.6% 증가하고 순이익은 22.3% YoY 증가합니다.",
+   "t_id": "Kinerja Bank Mandiri Solid, Kredit Tumbuh 17,6% dan Laba Bersih Naik 22,3% YoY"
+  },
+  {
    "ts": "2026-09-04T18:36:43+07:00",
    "date": "2026-09-04",
    "time": "18:36",
@@ -15485,6 +15566,20 @@
    "t_id": "Harpelnas 2026, BNI Usung Semangat 80 Tahun Melayani Sepenuh Hati"
   },
   {
+   "ts": "2026-09-04T18:36:00+07:00",
+   "date": "2026-09-04",
+   "time": "18:36",
+   "src": "Katadata",
+   "t": "RUPSLB BTN (BBTN) Rombak 5 Direktur Sekaligus, Bagaimana Nasib Dirut Nixon?",
+   "tags": [
+    "BBTN"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6a9aad303fb69/rupslb-btn-bbtn-rombak-5-direktur-sekaligus-bagaimana-nasib-dirut-nixon",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/03/26/Logo_Bank_Tabungan_Negara_Bank_BTN-2025_03_26-18_31_08_f9c4a7da5f7f2e19e26ef627237a4e47_620x413_thumb.jpg",
+   "t_ko": "BTN(BBTN) EGMS, 이사 5명 한꺼번에 개편, 닉슨 대통령의 운명은?",
+   "t_id": "RUPSLB BTN (BBTN) Rombak 5 Direktur Sekaligus, Bagaimana Nasib Dirut Nixon?"
+  },
+  {
    "ts": "2026-09-04T18:14:34+07:00",
    "date": "2026-09-04",
    "time": "18:14",
@@ -15497,6 +15592,24 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/9ZuF5oM121rlBegnw41DQS8U8Tw=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3893145/original/056566800_1641196873-20220103-Pembukaan_Awal_Tahun_2022_IHSG_Menguat-2.jpg",
    "t_ko": "Adhi Karya, PTPP와의 합병 추진설에 입장 표명",
    "t_id": "Adhi Karya Buka Suara Soal Rencana Merger dengan PTPP"
+  },
+  {
+   "ts": "2026-09-04T18:12:00+07:00",
+   "date": "2026-09-04",
+   "time": "18:12",
+   "src": "Katadata",
+   "t": "IHSG Ditutup Lesu, Saham CUAN, BULL, BBCA, BBRI, dan TINS Ramai Diburu Investor",
+   "tags": [
+    "BBCA",
+    "BBRI",
+    "BULL",
+    "CUAN",
+    "TINS"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6a9a92ce48709/ihsg-ditutup-lesu-saham-cuan-bull-bbca-bbri-dan-tins-ramai-diburu-investor",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/27/IHSG_ditutup_turun_017_atau_1065_poin_ke_level_6185_Foto_Katadat-2026_07_27-17_14_38_34fc19751d414c987c9a15d0f6f1bf9e_620x413_thumb.jpg",
+   "t_ko": "IHSG 약세 마감 — CUAN·BULL·BBCA·BBRI·TINS에 매수세 집중",
+   "t_id": "IHSG Ditutup Lesu, Saham CUAN, BULL, BBCA, BBRI, dan TINS Ramai Diburu Investor"
   },
   {
    "ts": "2026-09-04T17:53:34+07:00",
@@ -15642,20 +15755,6 @@
    "t_id": "Investasi, Edwin Soeryadjaya Beli 2,25 Juta Saham SRTG"
   },
   {
-   "ts": "2026-09-04T15:33:00+07:00",
-   "date": "2026-09-04",
-   "time": "15:33",
-   "src": "Katadata",
-   "t": "Danantara Minta Adhi Karya (ADHI) Pangkas Semua Anak Usaha, Bagaimana Skemanya?",
-   "tags": [
-    "ADHI"
-   ],
-   "url": "https://katadata.co.id/finansial/korporasi/6a9a8252c8a2c/danantara-minta-adhi-karya-adhi-pangkas-semua-anak-usaha-bagaimana-skemanya",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2020/12/17/2020_12_17-17_51_08_e71f2f56130a0f08d21dfdc094b98b77_620x413_thumb.jpg",
-   "t_ko": "Danantara, Adhi Karya(ADHI)에 전 자회사 축소 요구 — 추진 방안은",
-   "t_id": "Danantara Minta Adhi Karya (ADHI) Pangkas Semua Anak Usaha, Bagaimana Skemanya?"
-  },
-  {
    "ts": "2026-09-04T15:28:49+07:00",
    "date": "2026-09-04",
    "time": "15:28",
@@ -15682,34 +15781,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/adhi-karya-melakukan-fundamental-business-review-untuk-memperkuat_260414133829-203.jpeg",
    "t_ko": "Adhi Karya, 전 자회사 정리 추진",
    "t_id": "Adhi Karya Bakal Pangkas Seluruh Anak Usahanya"
-  },
-  {
-   "ts": "2026-09-04T15:04:00+07:00",
-   "date": "2026-09-04",
-   "time": "15:04",
-   "src": "Katadata",
-   "t": "Indosat Targetkan Melatih 2 Juta Talenta AI hingga 2030",
-   "tags": [
-    "ISAT"
-   ],
-   "url": "https://katadata.co.id/digital/teknologi/6a9a87681c519/indosat-targetkan-melatih-2-juta-talenta-ai-hingga-2030",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Ideafest_2026-2026_09_04-15_02_28_c6a966941d13096ebc443a5acfe1eb40_620x413_thumb.jpeg",
-   "t_ko": "Indosat, 2030년까지 AI 인재 200만명 양성 목표",
-   "t_id": "Indosat Targetkan Melatih 2 Juta Talenta AI hingga 2030"
-  },
-  {
-   "ts": "2026-09-04T15:03:00+07:00",
-   "date": "2026-09-04",
-   "time": "15:03",
-   "src": "Katadata",
-   "t": "Dividen Interim Jumbo Bank Mandiri (BMRI) 2026 Tembus Rp 6,16 Triliun",
-   "tags": [
-    "BMRI"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9a7b3b43283/dividen-interim-jumbo-bank-mandiri-bmri-2026-tembus-rp-6-16-triliun",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/10/27/2025_10_27-18_16_00_d3447ec8-b32d-11f0-9c89-0242ac120006_620x413_thumb.jpg",
-   "t_ko": "Bank Mandiri(BMRI) 2026년 중간배당 Rp6.16조 — 사상 최대 규모",
-   "t_id": "Dividen Interim Jumbo Bank Mandiri (BMRI) 2026 Tembus Rp 6,16 Triliun"
   },
   {
    "ts": "2026-09-04T15:00:52+07:00",
@@ -15739,20 +15810,6 @@
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/PRAJOGO-CUAN-10062026.jpg",
    "t_ko": "CUAN, SINI 지분 27.78% 확보 후 경영권 지분 목표",
    "t_id": "CUAN Incar Pengendalian SINI Usai Kantongi 27,78%"
-  },
-  {
-   "ts": "2026-09-04T14:38:00+07:00",
-   "date": "2026-09-04",
-   "time": "14:38",
-   "src": "Katadata",
-   "t": "Dicecar Bursa soal Saham Terbang 24%, SMBR Singgung Rencana Streamlining Bisnis",
-   "tags": [
-    "SMBR"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9a756572233/dicecar-bursa-soal-saham-terbang-24-smbr-singgung-rencana-streamlining-bisnis",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Semen_Baturaja_SMBR-2026_09_04-14_31_23_d6d3441e5e81f328354384cafd667ba4_620x413_thumb.jpg",
-   "t_ko": "주가 24% 급등에 거래소 소명 요구 — SMBR, 사업 구조조정 계획 언급",
-   "t_id": "Dicecar Bursa soal Saham Terbang 24%, SMBR Singgung Rencana Streamlining Bisnis"
   },
   {
    "ts": "2026-09-04T14:30:00+07:00",
@@ -16358,6 +16415,29 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T21:00:20+07:00",
+   "date": "2026-09-04",
+   "time": "21:00",
+   "src": "Detik",
+   "t": "33,2 Juta Keluarga Jadi Sasaran Bantuan Beras 30 Kg",
+   "tags": [],
+   "url": "https://finance.detik.com/foto-bisnis/d-8648875/33-2-juta-keluarga-jadi-sasaran-bantuan-beras-30-kg",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/332-juta-keluarga-jadi-sasaran-bantuan-beras-30-kg-buatkan-1788519049900_169.jpeg?w=360&q=90",
+   "t_id": "33,2 Juta Keluarga Jadi Sasaran Bantuan Beras 30 Kg",
+   "t_ko": "3,320만 가구에 쌀 30kg 지원 대상"
+  },
+  {
+   "ts": "2026-09-04T20:49:00+07:00",
+   "date": "2026-09-04",
+   "time": "20:49",
+   "src": "Media Indonesia",
+   "t": "Produsen Baja Dukung Delapan Program Prioritas Ekonomi Indonesia",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/929877/produsen-baja-dukung-delapan-program-prioritas-ekonomi-indonesia",
+   "t_ko": "철강 생산업체는 8개의 인도네시아 경제 우선순위 프로그램을 지원합니다.",
+   "t_id": "Produsen Baja Dukung Delapan Program Prioritas Ekonomi Indonesia"
+  },
+  {
    "ts": "2026-09-04T20:43:46+07:00",
    "date": "2026-09-04",
    "time": "20:43",
@@ -16401,8 +16481,8 @@
    "t": "Pabrik BYD di Subang Resmi Beroperasi, DPR: Bukti Hilirisasi dan Momentum Percepat Transisi Energi",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/929865/pabrik-byd-di-subang-resmi-beroperasi-dpr-bukti-hilirisasi-dan-momentum-percepat-transisi-energi",
-   "t_id": "Pabrik BYD di Subang Resmi Beroperasi, DPR: Bukti Hilirisasi dan Momentum Percepat Transisi Energi",
-   "t_ko": "수방의 BYD 공장 공식 가동, DPR: 에너지 전환을 가속화하기 위한 다운스트림 및 모멘텀의 증거"
+   "t_ko": "수방의 BYD 공장 공식 가동, DPR: 에너지 전환을 가속화하기 위한 다운스트림 및 모멘텀의 증거",
+   "t_id": "Pabrik BYD di Subang Resmi Beroperasi, DPR: Bukti Hilirisasi dan Momentum Percepat Transisi Energi"
   },
   {
    "ts": "2026-09-04T20:38:00+07:00",
@@ -16412,8 +16492,8 @@
    "t": "Menkop: Perpres KDKMP Segera Terbit Perjelas Tugas dan Fungsi Koperasi",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/929868/menkop-perpres-kdkmp-segera-terbit-perjelas-tugas-dan-fungsi-koperasi",
-   "t_id": "Menkop: Perpres KDKMP Segera Terbit Perjelas Tugas dan Fungsi Koperasi",
-   "t_ko": "협동조합 장관: 협동조합의 의무와 기능을 명확히 하기 위한 KDKMP 대통령령이 곧 발표될 예정입니다"
+   "t_ko": "협동조합 장관: 협동조합의 의무와 기능을 명확히 하기 위한 KDKMP 대통령령이 곧 발표될 예정입니다",
+   "t_id": "Menkop: Perpres KDKMP Segera Terbit Perjelas Tugas dan Fungsi Koperasi"
   },
   {
    "ts": "2026-09-04T20:34:20+07:00",
@@ -16523,6 +16603,18 @@
    "t_id": "1,4 Juta Penerima Bansos Terindikasi Main Judi Online"
   },
   {
+   "ts": "2026-09-04T19:57:00+07:00",
+   "date": "2026-09-04",
+   "time": "19:57",
+   "src": "Katadata",
+   "t": "Beda Pola Elektabilitas Prabowo dan Pendahulunya di Tahun Kedua Pemerintahan",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6a9ac022ade69/beda-pola-elektabilitas-prabowo-dan-pendahulunya-di-tahun-kedua-pemerintahan",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/2026_08_14-13_58_00_57ea1aba-97bd-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
+   "t_ko": "집권 2년차 프라보워와 전임자들의 당선 가능성 패턴 차이",
+   "t_id": "Beda Pola Elektabilitas Prabowo dan Pendahulunya di Tahun Kedua Pemerintahan"
+  },
+  {
    "ts": "2026-09-04T19:49:00+07:00",
    "date": "2026-09-04",
    "time": "19:49",
@@ -16555,17 +16647,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/spbu-pertamina-1788526000789_169.jpeg?w=360&q=90",
    "t_ko": "Pertamina 제재 대상 주유소 161곳!",
    "t_id": "161 SPBU Kena Sanksi Pertamina!"
-  },
-  {
-   "ts": "2026-09-04T19:45:00+07:00",
-   "date": "2026-09-04",
-   "time": "19:45",
-   "src": "Media Indonesia",
-   "t": "Soroti Pemindahan Payroll ASN, FSP BPD SI Desak Kepastian Hukum bagi Pekerja Perbankan Daerah",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929842/soroti-pemindahan-payroll-asn-fsp-bpd-si-desak-kepastian-hukum-bagi-pekerja-perbankan-daerah",
-   "t_ko": "ASN 급여 이체를 강조하는 FSP BPD SI는 지역 은행 직원에 대한 법적 확실성을 촉구합니다.",
-   "t_id": "Soroti Pemindahan Payroll ASN, FSP BPD SI Desak Kepastian Hukum bagi Pekerja Perbankan Daerah"
   },
   {
    "ts": "2026-09-04T19:35:49+07:00",
@@ -16616,28 +16697,6 @@
    "t_id": "Indonesia-Rusia Makin Dekat, Pupuk hingga Kapal Canggih Jadi Incaran Investasi"
   },
   {
-   "ts": "2026-09-04T19:28:00+07:00",
-   "date": "2026-09-04",
-   "time": "19:28",
-   "src": "Media Indonesia",
-   "t": "EBTKE-GGGI Perkuat Langkah Daerah dan Nasional Percepat Energi Terbarukan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929835/ebtke-gggi-perkuat-langkah-daerah-dan-nasional-percepat-energi-terbarukan",
-   "t_ko": "EBTKE-GGGI, 재생 에너지 가속화를 위한 지역 및 국가적 조치 강화",
-   "t_id": "EBTKE-GGGI Perkuat Langkah Daerah dan Nasional Percepat Energi Terbarukan"
-  },
-  {
-   "ts": "2026-09-04T19:25:00+07:00",
-   "date": "2026-09-04",
-   "time": "19:25",
-   "src": "Media Indonesia",
-   "t": "Standar Keselamatan Maritim Indonesia Terus Diperkuat",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/929832/standar-keselamatan-maritim-indonesia-terus-diperkuat",
-   "t_ko": "인도네시아 해상 안전 표준은 지속적으로 강화됩니다",
-   "t_id": "Standar Keselamatan Maritim Indonesia Terus Diperkuat"
-  },
-  {
    "ts": "2026-09-04T19:18:43+07:00",
    "date": "2026-09-04",
    "time": "19:18",
@@ -16648,6 +16707,18 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/anugerah-ekonomi-hijau-lrt-jabodebek-1788441490094_169.jpeg?w=360&q=90",
    "t_ko": "Jabodebek LRT, 친환경 운송 장려, 그린 에너지 도입",
    "t_id": "LRT Jabodebek Dorong Transportasi Ramah Lingkungan, Kenalkan Energi Hijau"
+  },
+  {
+   "ts": "2026-09-04T19:09:00+07:00",
+   "date": "2026-09-04",
+   "time": "19:09",
+   "src": "Katadata",
+   "t": "Hari Pelanggan Nasional 2026, bank bjb Usung Layanan Setara dan Berkelanjutan",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/keuangan/6a9ab50e13219/hari-pelanggan-nasional-2026-bank-bjb-usung-layanan-setara-dan-berkelanjutan",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/bank_bjb_sambut_Hari_Pelanggan_Nasional_Harpelnas_2026-2026_09_04-19_00_55_93f8b60f832c387ae69b7cedc7c174d5_620x413_thumb.jpeg",
+   "t_ko": "2026년 전국 고객의 날, Bank BJB, 평등하고 지속 가능한 서비스 촉진",
+   "t_id": "Hari Pelanggan Nasional 2026, bank bjb Usung Layanan Setara dan Berkelanjutan"
   },
   {
    "ts": "2026-09-04T19:00:01+07:00",
@@ -16674,40 +16745,27 @@
    "t_id": "BTN Merombak Direksi Lewat RUPSLB, Cek Jajaran Manajemen Terbaru"
   },
   {
-   "ts": "2026-09-04T18:50:09+07:00",
+   "ts": "2026-09-04T18:52:00+07:00",
+   "date": "2026-09-04",
+   "time": "18:52",
+   "src": "Katadata",
+   "t": "Kepolisian Bidik Korporasi Sawit, Diduga Sengaja Bakar Lahan Sumatra Kalimantan",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6a9ab10934606/kepolisian-bidik-korporasi-sawit-diduga-sengaja-bakar-lahan-sumatra-kalimantan",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/03/2026_09_03-21_21_00_14e51070-a803-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
+   "t_ko": "경찰은 칼리만탄 수마트라의 토지를 고의로 불태운 혐의를 받는 팜유 회사를 표적으로 삼았습니다.",
+   "t_id": "Kepolisian Bidik Korporasi Sawit, Diduga Sengaja Bakar Lahan Sumatra Kalimantan"
+  },
+  {
+   "ts": "2026-09-04T18:50:13+07:00",
    "date": "2026-09-04",
    "time": "18:50",
-   "src": "Medcom",
-   "t": "Harga Beras Naik Bukan karena Stok Langka, Ada Dugaan Praktik Curang Produsen",
+   "src": "Bloomberg",
+   "t": "S&P 500 Wavers as Strong Jobs Growth Fuels Fed-Hike Bets",
    "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/xkEd6dZb-harga-beras-naik-bukan-karena-stok-langka-ada-dugaan-praktik-curang-produsen",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840140/4Fv1O2xWIS.jpg?w=720",
-   "t_ko": "쌀값이 오르는 것은 재고가 부족해서가 아니라 생산자들의 사기행위 의혹이 있다",
-   "t_id": "Harga Beras Naik Bukan karena Stok Langka, Ada Dugaan Praktik Curang Produsen"
-  },
-  {
-   "ts": "2026-09-04T18:48:14+07:00",
-   "date": "2026-09-04",
-   "time": "18:48",
-   "src": "Jawa Pos",
-   "t": "Jaring Investor untuk Aset BPR-BPRS Sebesar Rp 2,3 Triliun, LPS Gandeng Kadin DKI Jakarta",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609040159/jaring-investor-untuk-aset-bpr-bprs-sebesar-rp-23-triliun-lps-gandeng-kadin-dki-jakarta",
-   "img": "https://cdn-assets.jawapos.com/images/1/2025/05/10/Ilustrasi-investasi-berkelanjutan-Freepik-2813042439.jpg",
-   "t_ko": "BPR·BPRS 자산 Rp2.3조 투자자 유치 — LPS, Kadin DKI Jakarta와 협력",
-   "t_id": "Jaring Investor untuk Aset BPR-BPRS Sebesar Rp 2,3 Triliun, LPS Gandeng Kadin DKI Jakarta"
-  },
-  {
-   "ts": "2026-09-04T18:40:00+07:00",
-   "date": "2026-09-04",
-   "time": "18:40",
-   "src": "Bloomberg Technoz",
-   "t": "Purbaya Wanti-wanti Daerah Jangan Asal Terbitkan Obligasi",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120554/purbaya-wanti-wanti-daerah-jangan-asal-terbitkan-obligasi",
-   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814202049.jpeg",
-   "t_ko": "Purbaya, 지역에 채권만 발행하지 말라고 경고",
-   "t_id": "Purbaya Wanti-wanti Daerah Jangan Asal Terbitkan Obligasi"
+   "url": "https://www.bloomberg.com/news/articles/2026-09-04/us-stock-futures-steady-ahead-of-key-august-jobs-data",
+   "t_ko": "S&P 500은 강력한 고용 성장으로 Fed-Hike 베팅을 촉진합니다.",
+   "t_id": "S&P 500 Goyah karena Pertumbuhan Lapangan Kerja yang Kuat Memicu Taruhan Kenaikan Fed"
   }
  ],
  "kisi_news": [
@@ -16880,8 +16938,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.09",
-   "d": 0.37,
-   "ytd": 12.71,
+   "d": 0.33,
+   "ytd": 12.67,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16891,9 +16949,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.772%",
-   "d": 0.21,
-   "ytd": 14.63,
+   "v": "4.768%",
+   "d": 0.13,
+   "ytd": 14.53,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16926,9 +16984,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "89.12",
-   "d": -3.15,
-   "ytd": 55.21,
+   "v": "88.83",
+   "d": -3.47,
+   "ytd": 54.7,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16938,9 +16996,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,458.1",
-   "d": -1.23,
-   "ytd": 3.06,
+   "v": "4,472.0",
+   "d": -0.93,
+   "ytd": 3.38,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16962,9 +17020,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,772",
-   "d": -0.04,
-   "ytd": 0.54,
+   "v": "16,751",
+   "d": -0.16,
+   "ytd": 0.42,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -23912,7 +23970,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-04 18:22",
-  "pc_age_min": 151,
+  "pc_age_min": 166,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26243,8 +26301,8 @@
    "ratio": 0.8,
    "ev_ko": "실적·배당",
    "ev_id": "Kinerja & dividen",
-   "hl": "Bank Mandiri(BMRI) 2026년 중간배당 Rp6.16조 — 사상 최대 규모",
-   "url": "https://katadata.co.id/finansial/bursa/6a9a7b3b43283/dividen-interim-jumbo-bank-mandiri-bmri-2026-tembus-rp-6-16-triliun",
+   "hl": "Bank Mandiri의 실적은 견조하며 신용은 17.6% 증가하고 순이익은 22.3% YoY 증가합니다.",
+   "url": "https://katadata.co.id/finansial/keuangan/6a9ab03f05e7b/kinerja-bank-mandiri-solid-kredit-tumbuh-17-6-dan-laba-bersih-naik-22-3-yoy",
    "score": 65.1,
    "s_news": 95,
    "s_size": 90,
