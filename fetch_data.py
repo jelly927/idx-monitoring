@@ -2024,7 +2024,7 @@ def ai_announcements(anns, per_build=6):
             cache[a["url"]] = {"ko": "", "id": "", "note": "scan", "ts": now_wib().isoformat()}; continue   # 스캔본·본문 없음 → 요약 불가로 기록(재시도 안 함)
         prompt = ("다음은 인도네시아 증권거래소(IDX) 공시 원문 일부다. 투자자 관점에서 핵심만 요약하라.\n"
                   "출력은 JSON 하나: {\"ko\": \"한국어 2문장, 증권사 리포트 문체(명사형 종결), 금액·비율·날짜 등 숫자 포함\", \"id\": \"Bahasa Indonesia 2 kalimat\", \"tags\": [\"핵심 키워드 최대 3개(한국어)\"]}\n"
-                  "숫자·회사명은 원문 그대로. 원문에 없는 내용은 쓰지 말 것.\n\n"
+                  "숫자는 한국식 표기(천 단위 콤마, 소수점은 마침표: 58.31%, 3,190,144,498주, Rp1,250억)로 바꾸고 회사명은 원문 그대로. 원문에 없는 내용은 쓰지 말 것. 한국어 문장에 인니어·스페인어 단어를 섞지 말 것.\n\n"
                   f"[종목] {a.get('t')}  [제목] {a.get('title')}\n[원문]\n{text}")
         j = _json_loads_loose(_gemini(prompt, 700))
         if not j or not j.get("ko"): continue
@@ -2078,7 +2078,7 @@ def ai_stocks(data, batch=10, ttl_min=60, per_build=40):
     for i in range(0, len(todo), batch):
         chunk = todo[i:i + batch]
         prompt = ("아래는 인도네시아 증시(IDX) 종목별 오늘 데이터다. 각 종목이 오늘 왜 오르고/내리고 있는지 근거를 연결해 요약하라.\n"
-                  "규칙: 데이터에 있는 뉴스·공시·배당·수급·거래대금·업종/시장 흐름만 근거로 쓴다. 근거가 없거나 시장·업종 흐름과 비슷한 수준이면 conf 를 \"low\" 로 하고 억지 이유를 만들지 않는다.\n"
+                  "규칙: 데이터에 있는 뉴스·공시·배당·수급·거래대금·업종/시장 흐름만 근거로 쓴다. 근거가 없거나 시장·업종 흐름과 비슷한 수준이면 conf 를 \"low\" 로 하고 억지 이유를 만들지 않는다. 숫자는 한국식 표기(Rp1,250억·3.85%·2.1배), 금액 단위는 억/조 루피아.\n"
                   "출력은 JSON 배열: [{\"t\": 티커, \"ko\": \"한국어 2문장, 증권사 시황 문체(명사형 종결), 숫자 포함\", \"id\": \"Bahasa Indonesia 2 kalimat\", \"tags\": [\"키워드 최대 3개(한국어)\"], \"conf\": \"high|low\"}]\n\n"
                   + "\n\n".join(ctx(t) for t in chunk))
         j = _json_loads_loose(_gemini(prompt, 3000))
@@ -2097,6 +2097,27 @@ def ai_stocks(data, batch=10, ttl_min=60, per_build=40):
 
 def _thin(a, n=120):
     a = a or []; return a[::max(1, len(a) // n)]
+
+def housekeeping():
+    """캐시 비대화 방지: 30일 지난 일별 요약(ss_*.json)·프로브 파일 삭제, news_seen 14일, stock_ai 2일"""
+    try:
+        cut = (now_wib().date() - dt.timedelta(days=30)).strftime("%Y%m%d"); n = 0
+        for f in CACHE.glob("ss_*.json"):
+            if f.stem[3:] < cut:
+                try: f.unlink(); n += 1
+                except Exception: pass
+        try:
+            m = json.loads(SEEN_P.read_text(encoding="utf-8")); lim = (now_wib() - dt.timedelta(days=14)).isoformat()
+            m2 = {k: v for k, v in m.items() if str(v) >= lim}
+            if len(m2) < len(m): SEEN_P.write_text(json.dumps(m2, ensure_ascii=False), encoding="utf-8")
+        except Exception: pass
+        try:
+            c = json.loads(AI_STK_P.read_text(encoding="utf-8")); lim = (now_wib() - dt.timedelta(days=2)).isoformat()
+            c2 = {k: v for k, v in c.items() if v.get("ts", "") >= lim}
+            if len(c2) < len(c): AI_STK_P.write_text(json.dumps(c2, ensure_ascii=False), encoding="utf-8")
+        except Exception: pass
+        if n: log(f"캐시 정리: 일별 요약 {n}개 삭제")
+    except Exception as e: log("캐시 정리 오류", e)
 
 def build():
     m = manual(); yb = CFG["ytd_base"]
@@ -2126,10 +2147,10 @@ def build():
                     "high": eod.get("high"), "low": eod.get("low"), "src": "idx"}
         if live and (in_session or not eod):
             indices.append({"code": code, "label": label, "name": name, "px": round(live["px"], dec), "prev": round(live["prev"], dec), "pct": round((live["px"] / live["prev"] - 1) * 100, 2),
-                            "spark": live["spark"], "inv": inv, "asof": live["ts"], "high": live.get("high"), "low": live.get("low"), "src": live.get("src", "yahoo")})
+                            "spark": _thin(live["spark"], 240), "inv": inv, "asof": live["ts"], "high": live.get("high"), "low": live.get("low"), "src": live.get("src", "yahoo")})
         elif eod:
             indices.append({"code": code, "label": label, "name": name, "px": round(eod["px"], dec), "prev": round(eod["prev"], dec), "pct": round((eod["px"] / eod["prev"] - 1) * 100, 2),
-                            "spark": eod.get("spark") or [], "inv": inv, "asof": eod.get("asof", "종가")})
+                            "spark": _thin(eod.get("spark"), 240), "inv": inv, "asof": eod.get("asof", "종가")})
     jl, ll, ul = ylive("^JKSE"), ylive("^JKLQ45"), ylive("USDIDR=X")
     if not ul: ul = ylive_fx("USDIDR=X")             # 환율은 24시간 거래 — 1분봉이 비면 15분봉 최근 24시간으로
     glob_idx = global_indices()                       # yfinance 호출은 브라우저 작업(번역·캘린더) 전에 모아서
@@ -2235,6 +2256,8 @@ def build():
             "sectors": sector_block(P("stocks")), "global": glob_idx, "dividends": DIVS,
             "news": news_items, "market_news": MARKET_NEWS, "kisi_news": kisi_items, "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
             "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
+    try: housekeeping()
+    except Exception: pass
     _GEM["fail"] = 0
     try: ai_announcements(data["announcements"])
     except Exception as e: log("공시 AI 요약 오류", repr(e)[:120])
