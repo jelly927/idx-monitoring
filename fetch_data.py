@@ -1922,6 +1922,142 @@ def kisi_news(max_items=None):
     log(f"KISI 뉴스 {len(out)}건 (사진 {sum(1 for x in out if x.get('img'))})")
     return translate_news(out)
 
+# ---------------- AI 요약 (Google Gemini · PC 에서만 생성, 캐시를 GitHub 로 올려 러너·사이트가 그대로 씀) ----------------
+GEMINI_MODEL = "gemini-2.5-flash-lite"
+AI_ANN_P = CACHE / "ann_ai.json"; AI_STK_P = CACHE / "stock_ai.json"
+def _gemini(prompt, max_tokens=1500, temperature=0.2):
+    """Gemini generateContent (REST). 실패 시 None"""
+    key = _secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")
+    if not key: return None
+    try:
+        r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={key}",
+                          json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"temperature": temperature, "maxOutputTokens": max_tokens, "responseMimeType": "application/json"}},
+                          timeout=90)
+        if r.status_code != 200: log("Gemini", r.status_code, r.text[:160]); return None
+        j = r.json(); txt = "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
+        return txt
+    except Exception as e:
+        log("Gemini 오류", str(e)[:120]); return None
+def _json_loads_loose(txt):
+    if not txt: return None
+    try: return json.loads(txt)
+    except Exception: pass
+    m = re.search(r"[\[{].*[\]}]", txt, re.S)
+    try: return json.loads(m.group(0)) if m else None
+    except Exception: return None
+
+def _pdf_text(url, max_pages=3, max_chars=6000):
+    """IDX 공시 PDF → 텍스트 (pypdf). 스캔본이면 빈 문자열"""
+    try:
+        try: from pypdf import PdfReader
+        except ImportError:
+            subprocess.call([sys.executable, "-m", "pip", "install", "-q", "pypdf"], timeout=180); from pypdf import PdfReader
+        import io, base64
+        raw = b""
+        try:
+            r = idx.s.get(url, timeout=40, headers={"User-Agent": UA, "Referer": "https://www.idx.co.id/"}) if hasattr(idx, "s") else requests.get(url, timeout=40, headers={"User-Agent": UA})
+            if r.status_code == 200 and r.content[:5].startswith(b"%PDF"): raw = r.content
+        except Exception: pass
+        if not raw:                                       # Cloudflare 에 막히면 IDX 브라우저 탭 안에서 fetch → base64
+            def job():
+                pg = _idx_page(idx.BASE)
+                return pg.evaluate("""async (u) => { try { const r = await fetch(u); if (!r.ok) return null; const b = new Uint8Array(await r.arrayBuffer());
+                    if (b.length > 6000000) return null; let s = ''; for (let i = 0; i < b.length; i += 0x8000) s += String.fromCharCode.apply(null, b.subarray(i, i + 0x8000)); return btoa(s); } catch (e) { return null; } }""", url)
+            b64 = _pw_call(job, "idx-pdf")
+            if b64: raw = base64.b64decode(b64)
+        if not raw or len(raw) > 6_000_000 or not raw[:5].startswith(b"%PDF"): return ""
+        rd = PdfReader(io.BytesIO(raw)); out = []
+        for pg in rd.pages[:max_pages]:
+            try: out.append(pg.extract_text() or "")
+            except Exception: pass
+        return re.sub(r"[ \t]+", " ", "\n".join(out)).strip()[:max_chars]
+    except Exception as e:
+        log("PDF 텍스트 실패", str(e)[:80]); return ""
+
+def ai_announcements(anns, per_build=12):
+    """공시 PDF 본문을 2문장으로 요약(한/인니) → a['ai_ko'], a['ai_id']. 캐시(url 기준) · 빌드당 최대 per_build 건 신규 처리"""
+    try: cache = json.loads(AI_ANN_P.read_text(encoding="utf-8"))
+    except Exception: cache = {}
+    can = bool(_secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")) and not os.environ.get("GITHUB_ACTIONS")
+    todo = [a for a in anns if a.get("url") and a["url"] not in cache]
+    done = 0
+    for a in (todo[:per_build] if can else []):
+        text = _pdf_text(a["url"])
+        if len(text) < 200:
+            cache[a["url"]] = {"ko": "", "id": "", "note": "scan", "ts": now_wib().isoformat()}; continue   # 스캔본·본문 없음 → 요약 불가로 기록(재시도 안 함)
+        prompt = ("다음은 인도네시아 증권거래소(IDX) 공시 원문 일부다. 투자자 관점에서 핵심만 요약하라.\n"
+                  "출력은 JSON 하나: {\"ko\": \"한국어 2문장, 증권사 리포트 문체(명사형 종결), 금액·비율·날짜 등 숫자 포함\", \"id\": \"Bahasa Indonesia 2 kalimat\", \"tags\": [\"핵심 키워드 최대 3개(한국어)\"]}\n"
+                  "숫자·회사명은 원문 그대로. 원문에 없는 내용은 쓰지 말 것.\n\n"
+                  f"[종목] {a.get('t')}  [제목] {a.get('title')}\n[원문]\n{text}")
+        j = _json_loads_loose(_gemini(prompt, 700))
+        if not j or not j.get("ko"): continue
+        cache[a["url"]] = {"ko": str(j.get("ko", ""))[:400], "id": str(j.get("id", ""))[:400], "tags": [str(x)[:20] for x in (j.get("tags") or [])][:3], "ts": now_wib().isoformat()}; done += 1
+    if done or (can and todo):
+        keep = sorted(cache.items(), key=lambda kv: kv[1].get("ts", ""), reverse=True)[:400]
+        try: AI_ANN_P.write_text(json.dumps(dict(keep), ensure_ascii=False), encoding="utf-8")
+        except Exception: pass
+        log(f"공시 AI 요약 {done}건 (대기 {max(0, len(todo) - per_build)}) · 캐시 {len(keep)}")
+    for a in anns:
+        c = cache.get(a.get("url") or "")
+        if c and c.get("ko"): a["ai_ko"] = c["ko"]; a["ai_id"] = c["id"]; a["ai_tags"] = c.get("tags") or []
+    return anns
+
+def ai_stocks(data, batch=10, ttl_min=60, per_build=40):
+    """종목별 '왜 움직였나' — 거래대금 상위 100 + 업종 대표 종목. 뉴스·공시·배당·수급·거래대금을 근거로 한/인니 요약. 1시간 캐시, 배치 호출"""
+    try: cache = json.loads(AI_STK_P.read_text(encoding="utf-8"))
+    except Exception: cache = {}
+    stocks = {s["t"]: s for s in (data.get("stocks") or [])}
+    targets = [s["t"] for s in sorted(data.get("stocks") or [], key=lambda s: -(s.get("val") or 0))[:100]]
+    for sec in data.get("sectors") or []:
+        for o in (sec.get("top") or [])[:10]:
+            if o["t"] not in targets: targets.append(o["t"])
+    can = bool(_secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")) and not os.environ.get("GITHUB_ACTIONS")
+    now = now_wib()
+    def stale(t):
+        c = cache.get(t)
+        if not c: return True
+        try: age = (now - dt.datetime.fromisoformat(c["ts"])).total_seconds() / 60
+        except Exception: return True
+        pct = (stocks.get(t) or {}).get("pct")
+        return age > ttl_min or (pct is not None and c.get("pct") is not None and abs(pct - c["pct"]) >= 1.5)
+    todo = [t for t in targets if stale(t)][:per_build] if can else []
+    news = data.get("news") or []; anns = data.get("announcements") or []; divs = data.get("dividends") or {}
+    jci = next((x for x in data.get("indices") or [] if x["code"] == "COMPOSITE"), {}) or {}
+    sec_of = {}
+    for sec in data.get("sectors") or []:
+        for o in sec.get("top") or []: sec_of[o["t"]] = sec
+    def ctx(t):
+        s = stocks.get(t) or {}; sec = sec_of.get(t) or {}
+        nl = [f'- {n.get("time")} {n.get("src")}: {n.get("t")}' for n in news if t in (n.get("tags") or [])][:6]
+        al = [f'- {a.get("time")} {a.get("title")}' + (f' → {a["ai_ko"]}' if a.get("ai_ko") else "") for a in anns if a.get("t") == t][:5]
+        dv = divs.get(t)
+        lines = [f'[{t}] {s.get("n","")} · 현재가 Rp{s.get("px")} ({s.get("pct")}%) · 거래대금 Rp{(s.get("val") or 0)/1e9:,.0f}억 (20일 평균 대비 {s.get("ratio")}배) · 외국인 순매수 {(s.get("fnet") or 0)/1e9:+,.0f}억 · 장중 고/저 {s.get("hi")}/{s.get("lo")}',
+                 f'  시장: JCI {jci.get("pct")}% · 업종 {sec.get("name","?")} {(sec.get("mcap_pct") if sec.get("mcap_pct") is not None else sec.get("pct"))}%']
+        if dv and dv.get("dps"): lines.append(f'  배당: Rp{dv["dps"]}/주 · 배당락 {dv.get("ex")} · 지급 {dv.get("pay")}')
+        lines.append("  오늘 뉴스:\n" + ("\n".join(nl) if nl else "  (없음)"))
+        lines.append("  오늘 공시:\n" + ("\n".join(al) if al else "  (없음)"))
+        return "\n".join(lines)
+    done = 0
+    for i in range(0, len(todo), batch):
+        chunk = todo[i:i + batch]
+        prompt = ("아래는 인도네시아 증시(IDX) 종목별 오늘 데이터다. 각 종목이 오늘 왜 오르고/내리고 있는지 근거를 연결해 요약하라.\n"
+                  "규칙: 데이터에 있는 뉴스·공시·배당·수급·거래대금·업종/시장 흐름만 근거로 쓴다. 근거가 없거나 시장·업종 흐름과 비슷한 수준이면 conf 를 \"low\" 로 하고 억지 이유를 만들지 않는다.\n"
+                  "출력은 JSON 배열: [{\"t\": 티커, \"ko\": \"한국어 2문장, 증권사 시황 문체(명사형 종결), 숫자 포함\", \"id\": \"Bahasa Indonesia 2 kalimat\", \"tags\": [\"키워드 최대 3개(한국어)\"], \"conf\": \"high|low\"}]\n\n"
+                  + "\n\n".join(ctx(t) for t in chunk))
+        j = _json_loads_loose(_gemini(prompt, 3000))
+        if not isinstance(j, list): log("종목 AI 요약 응답 파싱 실패"); continue
+        for o in j:
+            t = str(o.get("t", "")).upper()
+            if t not in chunk: continue
+            cache[t] = {"ko": str(o.get("ko", ""))[:500], "id": str(o.get("id", ""))[:500], "tags": [str(x)[:20] for x in (o.get("tags") or [])][:3], "conf": "low" if str(o.get("conf", "")).lower() == "low" else "high",
+                        "pct": (stocks.get(t) or {}).get("pct"), "ts": now.isoformat(), "hhmm": now.strftime("%H:%M")}; done += 1
+    if done:
+        try: AI_STK_P.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+        except Exception: pass
+    if can: log(f"종목 AI 요약 {done}건 (대상 {len(targets)} · 갱신 필요 {len(todo)})")
+    lim = (now - dt.timedelta(hours=26)).isoformat()
+    return {t: c for t, c in cache.items() if c.get("ts", "") >= lim}
+
 def _thin(a, n=120):
     a = a or []; return a[::max(1, len(a) // n)]
 
@@ -2062,6 +2198,10 @@ def build():
             "sectors": sector_block(P("stocks")), "global": glob_idx, "dividends": DIVS,
             "news": news_items, "market_news": MARKET_NEWS, "kisi_news": kisi_items, "macro": macro_block(bi), "calendar": calendar, "announcements": announcements,
             "sources": {"idx_index": bool(ix), "idx_market": bool(mk), "idx_from_pc": (idx_from_pc or {}).get("saved"), "bi": bi.get("src") if bi else None, "hist_days": mk["hist_days"] if mk else (idx_from_pc or {}).get("hist_days", 0), "calendar": "saveticker" if any(e.get("src") == "saveticker" for e in calendar) else "investing.com" if any(e.get("src") == "investing.com" for e in calendar) else "manual"}}
+    try: ai_announcements(data["announcements"])
+    except Exception as e: log("공시 AI 요약 오류", repr(e)[:120])
+    try: data["ai"] = {"stocks": ai_stocks(data), "model": GEMINI_MODEL}
+    except Exception as e: log("종목 AI 요약 오류", repr(e)[:120]); data["ai"] = {"stocks": {}}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     # data.js: index.html 을 파일(file://)로 직접 열어도 마지막 수집 데이터가 보이도록 (fetch 는 file:// 에서 막힘)
     try: (ROOT / "data.js").write_text("window.__IDX_DATA=" + json.dumps(data, ensure_ascii=False) + ";", encoding="utf-8")
