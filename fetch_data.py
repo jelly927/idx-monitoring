@@ -2006,6 +2006,31 @@ def _pc_age_min(idx_from_pc):
     except Exception:
         return None
 
+# ── AI 요약 운영 시간 ────────────────────────────────────────────────
+# 평일 06:00 갱신 시작 → 30분마다 → 17:00 마지막(고정값). 17:00~익일 06:00 및 주말은 정지.
+# 지수·공시·종목 요약 모두 이 창을 따른다. 호출량을 줄여 무료 할당량을 아끼는 목적도 겸한다.
+AI_CYCLE_P = CACHE / "ai_cycle.json"
+AI_FROM_MIN, AI_TO_MIN, AI_EVERY_MIN = 6 * 60, 17 * 60 + 5, 30
+
+def _ai_window(n=None):
+    """지금이 AI 요약을 돌릴 시간대인가 (WIB 기준 평일 06:00~17:05)."""
+    n = n or now_wib()
+    if n.weekday() >= 5: return False                      # 토·일 정지
+    return AI_FROM_MIN <= n.hour * 60 + n.minute <= AI_TO_MIN
+
+def _ai_cycle_ok():
+    """시간대 안이고, 직전 사이클로부터 AI_EVERY_MIN 분이 지났는지."""
+    if not _ai_window(): return False
+    try:
+        last = dt.datetime.fromisoformat(json.loads(AI_CYCLE_P.read_text(encoding="utf-8"))["ts"])
+        return (now_wib() - last).total_seconds() >= AI_EVERY_MIN * 60
+    except Exception:
+        return True                                        # 기록이 없으면 이번에 돈다
+
+def _ai_cycle_mark():
+    try: AI_CYCLE_P.write_text(json.dumps({"ts": now_wib().isoformat()}), encoding="utf-8")
+    except Exception: pass
+
 def _ai_can(on_runner=False):
     """AI 호출 가능 여부.
     · PC: secrets.json 의 키가 있으면 전부 허용
@@ -2013,6 +2038,7 @@ def _ai_can(on_runner=False):
       (종목 요약은 호출량이 커서 러너에서는 돌리지 않는다 — 무료 할당량 보호)"""
     key = _secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")
     if not key: return False
+    if not _GEM.get("ai_window"): return False              # 운영 시간대 밖이면 전부 정지
     if os.environ.get("GITHUB_ACTIONS"):
         return bool(on_runner and os.environ.get("GEMINI_API_KEY"))
     return True
@@ -2522,12 +2548,15 @@ def build():
     try: housekeeping()
     except Exception: pass
     _GEM["fail"] = 0
+    _GEM["ai_window"] = _ai_cycle_ok()      # 이번 빌드에서 AI 를 돌릴지 한 번만 판정 (지수·공시·종목 공통)
+    if _GEM["ai_window"]: log("AI 요약 사이클 실행")
     try: ai_announcements(data["announcements"])
     except Exception as e: log("공시 AI 요약 오류", repr(e)[:120])
     try: data["ai"] = {"stocks": ai_stocks(data), "model": _GEM.get("model") or GEMINI_MODEL}
     except Exception as e: log("종목 AI 요약 오류", repr(e)[:120]); data["ai"] = {"stocks": {}}
     try: data["ai"]["index"] = ai_index(data)
     except Exception as e: log("지수 AI 요약 오류", repr(e)[:120])
+    if _GEM.get("ai_window"): _ai_cycle_mark()
     try:
         data["mcap"] = [{"t": r.get("t"), "n": r.get("n"), "px": r.get("px"), "pct": r.get("pct"),
                          "val": r.get("val"), "ratio": r.get("ratio"), "fnet": r.get("fnet"), "mcap": r.get("mcap")}
