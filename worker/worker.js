@@ -12,11 +12,16 @@
 //   GEMINI_API_KEY  (Secret, 필수)  Gemini API 키. 절대 저장소·index.html 에 넣지 말 것 — 저장소는 공개다.
 //   CHAT_TOKEN      (Secret, 필수)  사내 접속 암구호. 미설정이면 /api/chat 은 503 으로 닫힌다.
 //   GEMINI_MODEL    (Variable, 선택) 기본 gemini-3.8-flash. 모델 교체 시 코드 수정 없이 여기만 바꾼다.
+//   GEMINI_BASE     (Variable, 선택) Gemini 호출 기지 주소. 기본은 구글 직통.
+//                   구글이 Cloudflare 데이터센터 IP 를 위치 미지원으로 막을 때(400 "not available in your
+//                   current location") Cloudflare AI Gateway 주소를 넣으면 우회된다:
+//                   https://gateway.ai.cloudflare.com/v1/<account_id>/<gateway_name>/google-ai-studio
 
 const REPO = "jelly927/idx-monitoring", BRANCH = "main";
 const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
 const CTX_PATH = "/data/cache/chat_context.json";
-const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/interactions";
+const GEMINI_HOST = "https://generativelanguage.googleapis.com";
+const GEMINI_PATH = "/v1beta/interactions";
 const MODEL_DEFAULT = "gemini-3.8-flash";
 const TYPES = { html: "text/html; charset=utf-8", json: "application/json; charset=utf-8", js: "text/javascript; charset=utf-8", css: "text/css; charset=utf-8", png: "image/png", svg: "image/svg+xml", ico: "image/x-icon" };
 const ALLOW = ["query1.finance.yahoo.com", "query2.finance.yahoo.com", "www.idx.co.id"];   // (선택) ?url= 프록시 — GitHub 러너가 IDX 에 막힐 때 사용
@@ -36,6 +41,7 @@ export default {
     if (target) return proxy(target);
 
     if (u.pathname === "/api/feed") return feed();
+    if (u.pathname === "/api/diag") return diag(req, env);
     if (u.pathname === "/api/chat") {
       if (req.method !== "POST") return json({ error: "POST 만 허용" }, 405);
       try { return await chat(req, env); }
@@ -153,6 +159,35 @@ function outputText(j) {
   return out.trim();
 }
 
+// 문제 생겼을 때 원인을 한 화면에서 보기 위한 진단 라우트 (CHAT_TOKEN 필요)
+async function diag(req, env) {
+  const gate = env && env.CHAT_TOKEN;
+  if (!gate) return json({ error: "CHAT_TOKEN 미설정" }, 503);
+  const u = new URL(req.url);
+  if ((req.headers.get("x-chat-token") || u.searchParams.get("token") || "") !== gate) return json({ error: "접속 암구호가 맞지 않습니다." }, 401);
+
+  const cf = req.cf || {};
+  const base = ((env && env.GEMINI_BASE) || GEMINI_HOST).replace(/\/+$/, "");
+  const out = {
+    colo: cf.colo, country: cf.country, city: cf.city,
+    base, model: (env && env.GEMINI_MODEL) || MODEL_DEFAULT,
+    has_key: !!(env && env.GEMINI_API_KEY), has_token: !!gate,
+  };
+  try {
+    const r = await fetch(base + GEMINI_PATH, {
+      method: "POST",
+      headers: { "x-goog-api-key": env.GEMINI_API_KEY || "", "Content-Type": "application/json" },
+      body: JSON.stringify({ model: out.model, input: "ping", generation_config: { max_output_tokens: 16 }, store: false }),
+    });
+    const t = await r.text();
+    out.gemini_status = r.status;
+    out.gemini_body = t.slice(0, 400);
+  } catch (e) { out.gemini_error = String(e && e.message || e); }
+  const ctx = await ctxRaw();
+  out.context_ok = !!ctx; out.context_updated = ctx && ctx.updated;
+  return json(out);
+}
+
 async function chat(req, env) {
   const key = env && env.GEMINI_API_KEY, gate = env && env.CHAT_TOKEN;
   if (!gate) return json({ error: "CHAT_TOKEN 미설정 — 챗봇이 잠겨 있습니다. Cloudflare Worker 설정에서 CHAT_TOKEN 을 등록하세요." }, 503);
@@ -176,8 +211,9 @@ async function chat(req, env) {
 
   const ctx = sliceCtx(c, q + " " + histText);
   const model = (env && env.GEMINI_MODEL) || MODEL_DEFAULT;
+  const base = ((env && env.GEMINI_BASE) || GEMINI_HOST).replace(/\/+$/, "");
 
-  const r = await fetch(GEMINI_URL, {
+  const r = await fetch(base + GEMINI_PATH, {
     method: "POST",
     headers: { "x-goog-api-key": key, "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -190,7 +226,15 @@ async function chat(req, env) {
   });
 
   const raw = await r.text();
-  if (!r.ok) return json({ error: `Gemini ${r.status}`, detail: raw.slice(0, 500), model }, 502);
+  if (!r.ok) {
+    const geo = r.status === 400 && /not available in your current location/i.test(raw);
+    return json({
+      error: `Gemini ${r.status}`,
+      detail: raw.slice(0, 500),
+      model, base,
+      hint: geo ? "구글이 이 서버의 IP 를 위치 미지원으로 막았습니다. Cloudflare AI Gateway 주소를 GEMINI_BASE 변수에 넣으면 우회됩니다." : undefined,
+    }, 502);
+  }
 
   let j; try { j = JSON.parse(raw); } catch { return json({ error: "Gemini 응답 파싱 실패", detail: raw.slice(0, 300) }, 502); }
   const text = outputText(j);
