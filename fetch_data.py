@@ -824,19 +824,30 @@ def macro_calendar_auto(days=14):
         log("saveticker 실패 → investing.com 으로 대체")
     return investing_calendar(days)
 
-def idx_announcements_today(hours=30):
-    """IDX 공시 스트림 (실시간 갱신용). 최근 N시간 공시 전체를 시간순으로."""
+# 정기·기계적 공시 — 리서치에 쓸모가 없어 화면에서 제외한다 (제외분만큼 기간을 더 길게 가져간다)
+ANN_NOISE = re.compile(r"""
+  laporan\s+bulanan\s+registrasi\s+pemegang        # 월간 주주명부 등록보고
+| laporan\s+harian\s+atas\s+nilai                  # 일일 순자산가치(NAV) 보고 — ETF·펀드
+| laporan\s+jumlah\s+peredaran\s+unit              # 펀드 유통좌수 보고
+| laporan\s+jumlah\s+structured\s+warrant          # 워런트 유통수량 보고
+| penyesuaian\s+structured\s+warrant               # 워런트 조정
+| laporan\s+(bulanan|harian)\s+(kegiatan|aktivitas) # 기타 월간·일일 정기보고
+""", re.I | re.X)
+
+def idx_announcements_today(hours=72):
+    """IDX 공시 스트림 (실시간 갱신용). 최근 N시간 공시를 시간순으로. 정기·기계적 공시는 제외."""
     today = now_wib().date(); out = []
-    for a in idx.announcements(today - dt.timedelta(days=1), today):
+    for a in idx.announcements(today - dt.timedelta(days=4), today):
         p = a.get("pengumuman", {}); title = p.get("JudulPengumuman") or ""
         try: ts = dt.datetime.fromisoformat(str(p.get("TglPengumuman"))[:19]).replace(tzinfo=WIB)
         except Exception: continue
         if (now_wib() - ts).total_seconds() > hours * 3600: continue
+        if ANN_NOISE.search(title): continue
         att = (a.get("attachments") or [{}])[0].get("FullSavePath")
         out.append({"ts": ts.isoformat(), "date": ts.date().isoformat(), "time": ts.strftime("%H:%M"), "t": (p.get("Kode_Emiten") or "").strip(),
                     "type": p.get("JenisPengumuman") or "", "title": title, "url": ("https://www.idx.co.id" + att) if att and att.startswith("/") else att})
     out.sort(key=lambda x: x["ts"], reverse=True)
-    return out[:400]        # 24시간(실제 창 30시간) 내 공시를 모두 싣는다. 400 은 data.json 비대화 방지용 안전장치
+    return out[:500]        # 최근 72시간(3일) 공시. 500 은 data.json 비대화 방지용 안전장치
 
 # =============================================================== BI press release
 BI_LIST = "https://www.bi.go.id/id/publikasi/ruang-media/news-release/"
