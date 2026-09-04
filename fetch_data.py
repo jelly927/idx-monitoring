@@ -1683,6 +1683,10 @@ def investing_batch(ttl_min=3):
     q = c.get("quotes") or {}
     for k, sym in INV_YAHOO.items():                     # Yahoo 항목
         v = yq(sym)
+        try:                                              # 선물(금·원유)은 1개월 일봉의 '전일' 이 월물 교체로 어긋날 수 있어 fast_info 의 전일 종가를 우선 사용
+            fi = yf.Ticker(sym).fast_info; lp, pc = float(fi["lastPrice"]), float(fi["previousClose"])
+            if lp > 0 and pc > 0: v = dict(v or {}, px=lp, prev=pc)
+        except Exception: pass
         if v:
             prev = q.get(k) or {}
             if not prev.get("base"): prev["base"], prev["base_date"] = y_base(sym)
