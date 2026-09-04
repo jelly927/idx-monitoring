@@ -492,7 +492,7 @@ function mergeLive(list){return (list||[]).map(x=>{const l=LIVE[x.code];if(!l)re
 
 /* ---------- 브라우저 직접 실시간 (Yahoo chart API · CORS 프록시 경유) ---------- */
 const LIVE_SYMS=[{sym:'^JKSE',code:'COMPOSITE',label:'IHSG'},{sym:'^JKLQ45',code:'LQ45',label:'LQ45'},{sym:'USDIDR=X',code:'USDIDR',label:'USD/IDR',inv:true}];
-const LIVE_PROXY='';   // ← Cloudflare Worker 주소 (예: 'https://idx-live.xxx.workers.dev') 넣으면 그것만 사용. 비우면 공용 프록시(불안정)
+const LIVE_PROXY='https://idx-live.hjaelim0.workers.dev';   // ← Cloudflare Worker 주소 (예: 'https://idx-live.xxx.workers.dev') 넣으면 그것만 사용. 비우면 공용 프록시(불안정)
 const PROXIES=LIVE_PROXY?[u=>LIVE_PROXY+'/?url='+encodeURIComponent(u)]:[u=>'https://api.allorigins.win/raw?url='+encodeURIComponent(u),u=>'https://corsproxy.io/?'+encodeURIComponent(u)];
 let proxyIdx=0,liveOk=false;
 async function yahooChart(sym){const url=`https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?interval=1m&range=1d&includePrePost=false`;
