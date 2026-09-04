@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 16:50",
+ "updated": "2026-09-04 16:58",
  "delay_min": 0,
- "fx_basis": "13.05 IDR/KRW · USD/IDR 17,633 · USD/KRW 1,351 · 16:26 Yahoo",
- "idr_per_krw": 13.0482,
+ "fx_basis": "13.05 IDR/KRW · USD/IDR 17,633 · USD/KRW 1,351 · 16:53 Yahoo",
+ "idr_per_krw": 13.0473,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -315,10 +315,11 @@
     17633.0,
     17633.0,
     17633.0,
+    17633.0,
     17633.0
    ],
    "inv": true,
-   "asof": "16:26",
+   "asof": "16:53",
    "high": 17684.0,
    "low": 17620.0,
    "src": "yahoo"
@@ -353,11 +354,11 @@
   "m1": 5.01,
   "value_idr": 18607401563700,
   "volume": 39305835265,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-04 16:44",
-  "rank_asof": "16:49",
+  "rank_src": "Yahoo 15분 지연 · 835종목 · 외국인·공시 PC 09-04 16:44",
+  "rank_asof": "16:57",
   "rank_date": "2026-09-04",
   "adv": 280,
-  "dec": 380,
+  "dec": 379,
   "unch": 176,
   "foreign_net_idr": 1104392864864.3184,
   "foreign_buy": 5907743579975.218,
@@ -7281,22 +7282,6 @@
    "lo": 1245.0,
    "ratio": 44.4,
    "fnet": 5460986.666666667,
-   "live": 1
-  },
-  {
-   "t": "TPMA",
-   "n": "Trans Power Marine",
-   "px": 492.0,
-   "prev": 494.0,
-   "pct": -0.4,
-   "val": 947397333.3333333,
-   "vol": 1920400.0,
-   "sh": 3507420034,
-   "mcap": 1725650656728.0,
-   "hi": 498.0,
-   "lo": 490.0,
-   "ratio": 1.6,
-   "fnet": 87830662.99510182,
    "live": 1
   },
   {
@@ -14520,11 +14505,11 @@
   {
    "name": "에너지",
    "name_id": "Energi",
-   "n": 79,
+   "n": 78,
    "adv": 34,
-   "dec": 37,
-   "val": 4144930702300.0005,
-   "mcap": 1671944797158889.0,
+   "dec": 36,
+   "val": 4143983304966.667,
+   "mcap": 1670219146502161.0,
    "top": [
     {
      "t": "BYAN",
@@ -15678,6 +15663,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-04T16:55:00+07:00",
+   "date": "2026-09-04",
+   "time": "16:55",
+   "src": "IDX Channel",
+   "t": "TOBA Pangkas Utang Jangka Pendek 30,9 Persen, Arus Kas Operasi Kembali Positif",
+   "tags": [
+    "TOBA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/toba-pangkas-utang-jangka-pendek-309-persen-arus-kas-operasi-kembali-positif",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/04/TBS_Energi_-_TOBA_-_4_Spet_26.jpg",
+   "t_id": "TOBA Pangkas Utang Jangka Pendek 30,9 Persen, Arus Kas Operasi Kembali Positif",
+   "t_ko": "TOBA, 단기 부채 30.9% 감소, 영업현금흐름 흑자 전환"
+  },
+  {
    "ts": "2026-09-04T16:38:54+07:00",
    "date": "2026-09-04",
    "time": "16:38",
@@ -15688,7 +15687,7 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8284789/ihsg-hari-ini-merosot-ke-6637-saham-arci-naik-037",
    "img": "https://cdn0-production-images-kly.akamaized.net/bfvBekeq0MYZyCenby7HbXaDPg4=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5487881/original/098610500_1769682055-4.jpg",
-   "t_ko": "JCI 오늘 6,637로 하락, ARCI 주가 0.37% 상승",
+   "t_ko": "IHSG 오늘 6,637로 하락 — ARCI 주가 0.37% 상승",
    "t_id": "IHSG Hari Ini Merosot ke 6.637, Saham ARCI Naik 0,37%"
   },
   {
@@ -15718,7 +15717,7 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/120547/ihsg-ditutup-di-zona-merah-saham-cuan-bumi-dkk-justru-melesat",
    "img": "https://images.bloombergtechnoz.com/data/2024/01/image-20240125174821.jpg",
-   "t_ko": "JCI 레드존 폐쇄, CUAN·BUMI 등 주가 실제로 급등",
+   "t_ko": "IHSG 하락 마감에도 CUAN·BUMI 등 급등",
    "t_id": "IHSG Ditutup di Zona Merah, Saham CUAN, BUMI Dkk Justru Melesat"
   },
   {
@@ -15733,7 +15732,7 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/120543/harga-beras-mahal-emitennya-panen-cuan",
    "img": "https://images.bloombergtechnoz.com/data/2026/01/image-20260115185319.jpeg",
-   "t_ko": "쌀값 비싸는데 발행사들이 이익을 챙기고 있는가?",
+   "t_ko": "쌀값 고공행진 — 관련 상장사 수혜 여부",
    "t_id": "Harga Beras Mahal, Emitennya Panen Cuan?"
   },
   {
@@ -15747,7 +15746,7 @@
    ],
    "url": "https://ekonomi.republika.co.id/berita/tku1jl423/transaksi-dan-ekosistem-terus-tumbuh-kinerja-bank-mandiri-tetap-solid",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260904161029-202.png",
-   "t_ko": "거래 및 생태계는 지속적으로 성장하고 있으며 Bank Mandiri의 실적은 여전히 ​​견고합니다.",
+   "t_ko": "거래·생태계 지속 성장 — Bank Mandiri 실적 견조 유지",
    "t_id": "Transaksi dan Ekosistem Terus Tumbuh, Kinerja Bank Mandiri Tetap Solid"
   },
   {
@@ -15761,7 +15760,7 @@
     "PTPP"
    ],
    "url": "https://mediaindonesia.com/ekonomi/929747/merger-bumn-karya-rampung-tahun-ini-ptpp-dan-adhi-buka-suara",
-   "t_ko": "올해 BUMN Karya의 합병이 완료되었으며 PTPP와 ADHI가 목소리를 냈습니다.",
+   "t_ko": "국영 건설사 합병 연내 완료 — PTPP·ADHI 입장 표명",
    "t_id": "Merger BUMN Karya Rampung Tahun Ini, PTPP dan ADHI Buka Suara"
   },
   {
@@ -15775,7 +15774,7 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8284731/investasi-edwin-soeryadjaya-beli-225-juta-saham-srtg",
    "img": "https://cdn1-production-images-kly.akamaized.net/Uzy4pYV4VSnyg8hXhZWEd4vKD4U=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3267162/original/045706800_1602658744-20201014-IHSG-Dibuka-di-Zona-Merah-angga-5.jpg",
-   "t_ko": "투자, Edwin Soeryadjaya, SRTG 주식 225만주 매입",
+   "t_ko": "투자, Edwin Soeryadjaya SRTG 주식 225만주 매입",
    "t_id": "Investasi, Edwin Soeryadjaya Beli 2,25 Juta Saham SRTG"
   },
   {
@@ -15789,7 +15788,7 @@
    ],
    "url": "https://katadata.co.id/finansial/korporasi/6a9a8252c8a2c/danantara-minta-adhi-karya-adhi-pangkas-semua-anak-usaha-bagaimana-skemanya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2020/12/17/2020_12_17-17_51_08_e71f2f56130a0f08d21dfdc094b98b77_620x413_thumb.jpg",
-   "t_ko": "Danantara는 Adhi Karya(ADHI)에 모든 자회사를 축소하라고 요청합니다. 계획은 무엇입니까?",
+   "t_ko": "Danantara, Adhi Karya(ADHI)에 전 자회사 축소 요구 — 추진 방안은",
    "t_id": "Danantara Minta Adhi Karya (ADHI) Pangkas Semua Anak Usaha, Bagaimana Skemanya?"
   },
   {
@@ -15831,7 +15830,7 @@
    ],
    "url": "https://katadata.co.id/digital/teknologi/6a9a87681c519/indosat-targetkan-melatih-2-juta-talenta-ai-hingga-2030",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Ideafest_2026-2026_09_04-15_02_28_c6a966941d13096ebc443a5acfe1eb40_620x413_thumb.jpeg",
-   "t_ko": "Indosat, 2030년까지 200만 명의 AI 인재 교육 목표",
+   "t_ko": "Indosat, 2030년까지 AI 인재 200만명 양성 목표",
    "t_id": "Indosat Targetkan Melatih 2 Juta Talenta AI hingga 2030"
   },
   {
@@ -16035,20 +16034,6 @@
    "t_id": "Petrindo (CUAN) Siap Akuisisi Saham Mayoritas Singaraja Putra (SINI)"
   },
   {
-   "ts": "2026-09-04T12:24:09+07:00",
-   "date": "2026-09-04",
-   "time": "12:24",
-   "src": "Bloomberg Technoz",
-   "t": "Laba BULL Melonjak, Ekspansi LNG & Rights Issue Disorot",
-   "tags": [
-    "BULL"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120507/laba-bull-melonjak-ekspansi-lng-rights-issue-disorot",
-   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727155440.jpeg",
-   "t_ko": "BULL 순이익 급증 — LNG 확장·유상증자 주목",
-   "t_id": "Laba BULL Melonjak, Ekspansi LNG & Rights Issue Disorot"
-  },
-  {
    "ts": "2026-09-04T11:49:00+07:00",
    "date": "2026-09-04",
    "time": "11:49",
@@ -16172,8 +16157,8 @@
    ],
    "url": "https://www.idnfinancials.com/news/68366/indonesia-japan-strengthen-infrastructure-investment-with-32-projects",
    "img": "https://photos.idnfinancials.com/d/1600x900/japan.jpg",
-   "t_ko": "인도네시아-일본 32개 프로젝트로 인프라 투자 강화",
-   "t_id": "Indonesia-Jepang perkuat investasi infrastruktur dengan 32 proyek"
+   "t_ko": "인도네시아-일본, 32개 프로젝트로 인프라 투자 강화",
+   "t_id": "Indonesia-Jepang Perkuat Investasi Infrastruktur lewat 32 Proyek"
   },
   {
    "ts": "2026-09-04T10:19:04+07:00",
@@ -16246,8 +16231,8 @@
    ],
    "url": "https://www.idnfinancials.com/news/68365/adhi-secures-idr8-3-trillion-in-new-contracts-through-july-2026",
    "img": "https://photos.idnfinancials.com/_idn/2025/adhi%20karya.jpg",
-   "t_ko": "ADHI, 2026년 7월까지 신규 계약 IDR8조 3천억 확보",
-   "t_id": "ADHI raih kontrak baru senilai Rp8,3 triliun hingga Juli 2026"
+   "t_ko": "ADHI 2026년 7월까지 신규 수주 Rp8.3조 확보",
+   "t_id": "ADHI Raih Kontrak Baru IDR8,3 Triliun hingga Juli 2026"
   },
   {
    "ts": "2026-09-04T09:04:58+07:00",
@@ -16654,6 +16639,17 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-04T16:54:00+07:00",
+   "date": "2026-09-04",
+   "time": "16:54",
+   "src": "Media Indonesia",
+   "t": "IHSG Hari Ini Terkoreksi ke 6.636 Akibat Profit Taking Jelang Akhir Pekan",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/929761/ihsg-hari-ini-terkoreksi-ke-6636-akibat-profit-taking-jelang-akhir-pekan",
+   "t_id": "IHSG Hari Ini Terkoreksi ke 6.636 Akibat Profit Taking Jelang Akhir Pekan",
+   "t_ko": "JCI는 주말을 앞둔 이익으로 인해 오늘 6,636으로 수정되었습니다."
+  },
+  {
    "ts": "2026-09-04T16:48:00+07:00",
    "date": "2026-09-04",
    "time": "16:48",
@@ -16661,8 +16657,8 @@
    "t": "Rupiah Menguat ke Rp17.642 per Dolar AS, Dipicu Sinyal Dovish The Fed",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/929759/rupiah-menguat-ke-rp17642-per-dolar-as-dipicu-sinyal-dovish-the-fed",
-   "t_id": "Rupiah Menguat ke Rp17.642 per Dolar AS, Dipicu Sinyal Dovish The Fed",
-   "t_ko": "연준의 비둘기파 신호로 인해 루피아 가치가 미국 달러당 IDR 17,642로 상승했습니다."
+   "t_ko": "연준의 비둘기파 신호로 인해 루피아 가치가 미국 달러당 IDR 17,642로 상승했습니다.",
+   "t_id": "Rupiah Menguat ke Rp17.642 per Dolar AS, Dipicu Sinyal Dovish The Fed"
   },
   {
    "ts": "2026-09-04T16:44:48+07:00",
@@ -16677,6 +16673,18 @@
    "t_id": "Penyebab Desil DTSEN Berubah Drastis Terungkap, Apakah Bansos Batal Cair?"
   },
   {
+   "ts": "2026-09-04T16:43:00+07:00",
+   "date": "2026-09-04",
+   "time": "16:43",
+   "src": "IDX Channel",
+   "t": "BEI Sebut ETF Emas Bisa Jadi Pilihan Diversifikasi Investasi di Pasar Modal",
+   "tags": [],
+   "url": "https://www.idxchannel.com/market-news/bei-sebut-etf-emas-bisa-jadi-pilihan-diversifikasi-investasi-di-pasar-modal",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/08/12/ETF_Emas_-_Magnific_-_12_Agust_26.jpeg",
+   "t_id": "BEI Sebut ETF Emas Bisa Jadi Pilihan Diversifikasi Investasi di Pasar Modal",
+   "t_ko": "BEI는 Gold ETF가 자본 시장에서 투자 다각화 옵션이 될 수 있다고 말합니다."
+  },
+  {
    "ts": "2026-09-04T16:29:00+07:00",
    "date": "2026-09-04",
    "time": "16:29",
@@ -16685,7 +16693,7 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/keuangan/6a9a8f96248c0/hari-pelanggan-nasional-2026-bri-beri-ragam-promo-spesial",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/BRI_sambut_Hari_Pelanggan_Nasional_dengan_promo_di_berbagai_merc-2026_09_04-16_22_33_bf4f4c4d011d4fc7d0e66a4fcfb63891_620x413_thumb.jpg",
-   "t_ko": "2026년 전국 고객의 날, BRI, 다양한 특별 프로모션 제공",
+   "t_ko": "2026 국가고객의 날, BRI 다양한 특별 프로모션 제공",
    "t_id": "Hari Pelanggan Nasional 2026, BRI Beri Ragam Promo Spesial"
   },
   {
@@ -16697,8 +16705,8 @@
    "tags": [],
    "url": "https://finance.detik.com/infrastruktur/d-8648633/brantas-abipraya-pangkas-entitas-usaha",
    "img": "https://akcdn.detik.net.id/community/media/visual/2024/04/19/proyek-brantas-abipraya-1_169.jpeg?w=360&q=90",
-   "t_ko": "Brantas Abipraya는 사업체를 축소합니다!",
-   "t_id": "Brantas Abipraya Pangkas Entitas Usaha!"
+   "t_ko": "Brantas Abipraya, 사업 자회사 축소!",
+   "t_id": "Brantas Abipraya Pangkas Entitas Usaha"
   },
   {
    "ts": "2026-09-04T16:20:47+07:00",
@@ -16709,7 +16717,7 @@
    "tags": [],
    "url": "https://www.liputan6.com/saham/read/8284711/jp-morgan-buka-suara-soal-dampak-saham-rp-1-ke-likuiditas-pasar",
    "img": "https://cdn1-production-images-kly.akamaized.net/5W0GE4sWweL0PQeIQ3WMkoVDQkQ=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9340551/original/010722000_1788509977-IMG_6850.jpg",
-   "t_ko": "JP Morgan, IDR 1 주식이 시장 유동성에 미치는 영향에 대해 공개",
+   "t_ko": "JP Morgan, Rp1 주식이 시장 유동성에 미칠 영향 언급",
    "t_id": "JP Morgan Buka Suara soal Dampak Saham Rp 1 ke Likuiditas Pasar"
   },
   {
@@ -16721,7 +16729,7 @@
    "tags": [],
    "url": "https://www.medcom.id/properti/tips-properti/4KZQowEk-feng-shui-kamar-mandi-di-dalam-kamar-tidur-utama-begini-penataannya",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840088/8V6imqandr.jpg?w=720",
-   "t_ko": "안방의 풍수 욕실, 배치는 이렇습니다",
+   "t_ko": "안방 내 욕실 풍수 — 이렇게 배치",
    "t_id": "Feng Shui Kamar Mandi di Dalam Kamar Tidur Utama, Begini Penataannya"
   },
   {
@@ -16745,7 +16753,7 @@
    "tags": [],
    "url": "https://www.medcom.id/ekonomi/bisnis/aNr1OjaK-telkomsel-respons-aturan-baru-sisa-kuota-produk-dan-layanan-mulai-dikaji",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/04/1840093/86g9eFl0L4.jpeg?w=720",
-   "t_ko": "Telkomsel은 남은 할당량에 대한 새로운 규칙에 대응하여 제품 및 서비스 검토를 시작했습니다.",
+   "t_ko": "Telkomsel, 잔여 데이터 신규 규정에 대응 — 상품·서비스 검토 착수",
    "t_id": "Telkomsel Respons Aturan Baru Sisa Kuota, Produk dan Layanan Mulai Dikaji"
   },
   {
@@ -16757,7 +16765,7 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/korporasi/6a9a8ad47bd53/orang-kaya-ri-mulai-lirik-asuransi-berdenominasi-dolar-as-apa-pemicunya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Prudential_Indonesia-2026_09_04-16_09_00_865cc4d5ed2e4456095911d81b2fd8ce_620x413_thumb.jpg",
-   "t_ko": "부유한 인도네시아인들이 미국 달러 표시 보험에 관심을 갖기 시작했는데, 그 계기는 무엇입니까?",
+   "t_ko": "인도네시아 부유층, 미 달러화 표시 보험에 관심 — 배경은",
    "t_id": "Orang Kaya RI Mulai Lirik Asuransi Berdenominasi Dolar AS, Apa Pemicunya?"
   },
   {
@@ -16981,30 +16989,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/26/Uji_kelayakan_dan_kepatutan_calon_Gubernur_Bank_Indonesia_Foto_K-2026_08_26-17_15_25_322d6910a2959e66d0ed0bb99e16b75a_620x413_thumb.jpg",
    "t_ko": "BI 정부 프로그램 대출 확대 속 은행 유동성 안전 확인",
    "t_id": "BI Pastikan Likuiditas Bank Aman di Tengah Kucuran Kredit Program Pemerintah"
-  },
-  {
-   "ts": "2026-09-04T15:21:45+07:00",
-   "date": "2026-09-04",
-   "time": "15:21",
-   "src": "Detik",
-   "t": "RI Gandeng Irlandia Kembangkan AI-Industri Penerbangan",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8648497/ri-gandeng-irlandia-kembangkan-ai-industri-penerbangan",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/04/deputi-kerja-sama-ekonomi-dan-investasi-kementerian-koordinator-bidang-perekonomian-edi-prio-pambudi-1788510070454_169.jpeg?w=360&q=90",
-   "t_ko": "인도네시아, Ireland와 항공산업 AI 개발 협력",
-   "t_id": "RI Gandeng Irlandia Kembangkan AI-Industri Penerbangan"
-  },
-  {
-   "ts": "2026-09-04T15:20:00+07:00",
-   "date": "2026-09-04",
-   "time": "15:20",
-   "src": "IDX Channel",
-   "t": "Gelar RUPO, Waskita Karya Dapat Persetujuan Restrukturisasi dari Pemegang Obligasi",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/gelar-rupo-waskita-karya-dapat-persetujuan-restrukturisasi-dari-pemegang-obligasi",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2021/03/29/waskita.jpg",
-   "t_ko": "채권자 총회 개최, Waskita Karya 채권자로부터 채무 재조정 승인 획득",
-   "t_id": "Gelar RUPO, Waskita Karya Dapat Persetujuan Restrukturisasi dari Pemegang Obligasi"
   }
  ],
  "kisi_news": [
@@ -17177,8 +17161,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.04",
-   "d": -0.04,
-   "ytd": 12.25,
+   "d": -0.02,
+   "ytd": 12.27,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17211,8 +17195,8 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.10",
-   "d": 0.04,
+   "v": "99.11",
+   "d": 0.05,
    "ytd": 0.84,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -17223,9 +17207,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "90.78",
-   "d": -1.35,
-   "ytd": 58.1,
+   "v": "90.80",
+   "d": -1.33,
+   "ytd": 58.13,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17235,9 +17219,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,514.6",
-   "d": 0.02,
-   "ytd": 4.37,
+   "v": "4,515.0",
+   "d": 0.03,
+   "ytd": 4.38,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17259,9 +17243,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,802",
-   "d": 0.14,
-   "ytd": 0.72,
+   "v": "16,794",
+   "d": 0.09,
+   "ytd": 0.67,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -19742,7 +19726,14 @@
    "title": "Laporan Jumlah Structured Warrant Beredar",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e169c9934f_f28fbc25c5.pdf",
    "title_ko": "구조화 워런트 유통 수량 보고",
-   "title_id": "Laporan Jumlah Structured Warrant Beredar"
+   "title_id": "Laporan Jumlah Structured Warrant Beredar",
+   "ai_ko": "KGI Sekuritas Indonesia는 AADIHDCH7A 등 다양한 구조화증권(Structured Warrant)의 종목별 유통 잔량 변동 내역을 공시함. 자사주 매입, 배당, 유상증자, 지분 변동 관련 사항은 미기재됨.",
+   "ai_id": "KGI Sekuritas Indonesia melaporkan perubahan jumlah waran terstruktur beredar untuk berbagai kode waran per tanggal 04 September 2026. Informasi mengenai pembelian kembali saham, dividen, rights issue, dan divestasi tidak dicantumkan.",
+   "ai_tags": [
+    "구조화증권",
+    "유통잔량",
+    "KGI Sekuritas Indone"
+   ]
   },
   {
    "ts": "2026-09-04T16:34:49+07:00",
@@ -19753,7 +19744,14 @@
    "title": "Laporan Bulanan Registrasi Pemegang Efek",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/3bd91c6b86_cb41ec15d8.pdf",
    "title_ko": "월간 증권 보유자 등록 현황 보고",
-   "title_id": "Laporan Bulanan Registrasi Pemegang Efek"
+   "title_id": "Laporan Bulanan Registrasi Pemegang Efek",
+   "ai_ko": "PT Wijaya Karya (Persero) Tbk의 2026년 8월 기준 월간 주주 명부 등록 보고서 공시. 대주주인 PT DANANTARA의 지분율은 90,108%로 변동 없음. 총 발행 주식수는 39,873,063,858주임.",
+   "ai_id": "Pengumuman Laporan Bulanan Registrasi Pemegang Efek PT Wijaya Karya (Persero) Tbk per akhir Agustus 2026. Kepemilikan pemegang saham pengendali PT DANANTARA tetap sebesar 90,108%. Total saham yang diterbitkan adalah 39.873.063.858 saham.",
+   "ai_tags": [
+    "월간주주명부보고서",
+    "지분변동현황",
+    "PT Wijaya Karya (Per"
+   ]
   },
   {
    "ts": "2026-09-04T16:32:10+07:00",
@@ -19764,7 +19762,14 @@
    "title": "Laporan Bulanan Registrasi Pemegang Efek",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/8543c56fc7_f4bdff9d74.pdf",
    "title_ko": "월간 증권 보유자 등록 현황 보고",
-   "title_id": "Laporan Bulanan Registrasi Pemegang Efek"
+   "title_id": "Laporan Bulanan Registrasi Pemegang Efek",
+   "ai_ko": "PT Supreme Cable Manufacturing & Commerce Tbk의 2026년 8월 기준 월간 주주 명부 등록 보고 공시. 최대주주인 PT Moda Sukma가 33.60%, PT Tutulan Sukma가 29.67%, Furukawa Electric Co.가 11.81%의 지분을 보유.",
+   "ai_id": "Laporan bulanan registrasi pemegang efek PT Supreme Cable Manufacturing & Commerce Tbk per Agustus 2026. Pemegang saham pengendali PT Moda Sukma memegang 33,60%, PT Tutulan Sukma 29,67%, dan Furukawa Electric Co. 11,81%.",
+   "ai_tags": [
+    "SCCO",
+    "주주명부",
+    "지분현황"
+   ]
   },
   {
    "ts": "2026-09-04T16:31:22+07:00",
@@ -19775,7 +19780,14 @@
    "title": "Penjelasan atas Volatilitas Transaksi",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/50a83b104b_aa7c1fdcdb.pdf",
    "title_ko": "주가·거래량 변동성에 대한 소명",
-   "title_id": "Penjelasan atas Volatilitas Transaksi"
+   "title_id": "Penjelasan atas Volatilitas Transaksi",
+   "ai_ko": "PT Topindo Solusi Komunika Tbk.는 주가 변동성 관련 조회공시를 통해 미공개 중요 정보나 특이사항이 없음을 확인. 향후 3개월 내 기업공개 행위나 주가에 영향을 미칠 만한 구체적인 기업 설명 및 자본 행동 계획은 부존재.",
+   "ai_id": "PT Topindo Solusi Komunika Tbk. menyatakan tidak mengetahui adanya informasi material atau fakta penting yang belum diungkapkan terkait volatilitas transaksi efek. Perseroan juga tidak memiliki rencana aksi korporasi dalam waktu dekat sekurang-kurangnya untuk 3 bulan ke depan.",
+   "ai_tags": [
+    "TOSK",
+    "주가변동성",
+    "조회공시"
+   ]
   },
   {
    "ts": "2026-09-04T16:31:06+07:00",
@@ -19786,7 +19798,14 @@
    "title": "Laporan Jumlah Structured Warrant Beredar",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/614de31d3d_075e362aef.pdf",
    "title_ko": "구조화 워런트 유통 수량 보고",
-   "title_id": "Laporan Jumlah Structured Warrant Beredar"
+   "title_id": "Laporan Jumlah Structured Warrant Beredar",
+   "ai_ko": "CGS International Sekuritas Indonesia의 2026년 9월 4일 기준 구조화 워런(Structured Warrant) 유통 현황 공시. 각 종목별 워런의 증감 내역 및 변동 후 잔여 수량 반영.",
+   "ai_id": "Laporan jumlah waran terstruktur beredar oleh CGS International Sekuritas Indonesia per 4 September 2026. Mencakup rincian penambahan, pengurangan, dan jumlah akhir waran terstruktur untuk setiap Seri.",
+   "ai_tags": [
+    "구조화 워런",
+    "유통 주식수",
+    "CGS International"
+   ]
   },
   {
    "ts": "2026-09-04T16:30:54+07:00",
@@ -19797,7 +19816,14 @@
    "title": "Laporan Bulanan Registrasi Pemegang Efek",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/27382db6d0_14ebbcd246.pdf",
    "title_ko": "월간 증권 보유자 등록 현황 보고",
-   "title_id": "Laporan Bulanan Registrasi Pemegang Efek"
+   "title_id": "Laporan Bulanan Registrasi Pemegang Efek",
+   "ai_ko": "PT Indonesian Tobacco Tbk.의 2026년 8월 기준 월간 주주 명부 등록 보고서 공시. 대주주인 Djonny Saksono의 지분율은 68,48%, PT Anugerah Investindo의 지분율은 7,02%로 변동 없음. 전체 발행 주식수는 940,720,000주로 유지됨.",
+   "ai_id": "Laporan Bulanan Registrasi Pemegang Efek PT Indonesian Tobacco Tbk. per Agustus 2026. Kepemilikan saham Djonny Saksono tercatat sebesar 68,48% dan PT Anugerah Investindo sebesar 7,02%. Total saham beredar tetap di angka 940.720.000 lembar.",
+   "ai_tags": [
+    "주주명부",
+    "지분현황",
+    "ITIC"
+   ]
   },
   {
    "ts": "2026-09-04T16:17:43+07:00",
@@ -21367,183 +21393,198 @@
     "hhmm": "16:33"
    },
    "UNTR": {
-    "ko": "JCI 지수가 0.38% 하락한 약세장 속에서 20일 평균 대비 0.6배의 저조한 거래대금을 기록하며 1.09% 하락 마감. 외국인 순매수 +Rp7억이 유입되었으나 전반적인 시장 하락 흐름을 방어하기에는 역부족.",
-    "id": "Ditutup melemah 1,09% di tengah pelemahan Indeks Harga Saham Gabungan sebesar 0,38% dengan nilai transaksi tipis 0,6 kali rata-rata 20 hari. Aksi beli asing sebesar Rp7 miliar belum mampu menahan tekanan jual di pasar.",
+    "ko": "JCI 및 산업재 업종 약세 흐름 속에서 특별한 재료 없이 1.38% 하락 마감. 외국인 순매수가 유입되었으나 전반적인 시장 부진을 방어하기에는 역부족임.",
+    "id": "Ditutup melemah 1,38% di tengah pelemahan JCI dan sektor perindustrian tanpa katalis spesifik. Meskipun ada aksi beli bersih asing, hal tersebut belum cukup menahan tekanan pasar secara keseluruhan.",
     "tags": [
-     "지수하락",
-     "외국인순매수"
+     "산업재",
+     "외국인순매수",
+     "약세마감"
     ],
     "conf": "low",
-    "pct": -1.09,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "pct": -1.38,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "BBHI": {
-    "ko": "2026년 9월 3일부터 시작될 Rp3,000억 규모의 자사주 매입 소식이 전해지며 20일 평균 대비 5.4배 증가한 거래대금 Rp58억과 함께 0.56% 상승. 주주 환원 정책 강화 기대감이 매수세를 유인.",
-    "id": "Menguat 0,56% didorong oleh rencana pembelian kembali saham senilai Rp300 miliar mulai 3 September 2026 dengan nilai transaksi melesat 5,4 kali rata-rata 20 hari. Kebijakan aksi korporasi tersebut meningkatkan sentimen positif pemegang saham.",
+    "ko": "300억 루피아 규모의 자사주 매입 소식이 전해진 가운데 20일 평균 대비 5.4배에 달하는 대규모 거래대금과 함께 보합 마감. 외국인 순매도가 소폭 출회됨.",
+    "id": "Ditutup stagnan dengan lonjakan nilai transaksi mencapai 5,4 kali rata-rata 20 hari di tengah kabar buyback saham senilai Rp300 miliar. Aksi jual bersih asing tercatat tipis.",
     "tags": [
      "자사주매입",
-     "거래대금증가"
+     "거래대금",
+     "보합"
     ],
     "conf": "high",
-    "pct": 0.56,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "pct": 0.0,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "RATU": {
-    "ko": "제3자 배정 유상증자(PMT-HMETD) 관련 공시와 프라조고 팡에스투 관련 지분 희석 우려 뉴스 등이 반영되며 0.44% 하락 마감. 외국인 순매수 +Rp9억 유입에도 불구하고 대규모 자본 확충 및 지분 변동 이슈가 부담으로 작용.",
-    "id": "Ditutup melemah 0,44% seiring pengumuman penambahan modal tanpa HMETD serta berita kekhawatiran dilusi saham. Masuknya aksi beli asing sebesar Rp9 miliar belum cukup meredam sentimen aksi korporasi tersebut.",
+    "ko": "제3자 배정 유상증자에 따른 지분 희석 우려와 주가 추천 보도가 혼재된 가운데 0.44% 하락 마감. 외국인 순매수세가 유입되었으나 주가 하단을 지지하지 못함.",
+    "id": "Ditutup melemah 0,44% di tengah kekhawatiran dilusi dari rencana private placement dan berita rekomendasi saham. Aksi beli bersih asing masuk namun belum mampu menahan pelemahan.",
     "tags": [
      "유상증자",
+     "외국인순매수",
      "지분희석"
     ],
     "conf": "high",
     "pct": -0.44,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "LAJU": {
-    "ko": "뚜렷한 개별 호재 공시가 없는 가운데 20일 평균 대비 40.5배 폭증한 거래대금 Rp55억을 동반하며 5.63% 상승. 단기적인 투기성 자금 유입으로 인한 급등세 연출.",
-    "id": "Melesat 5,63% di tengah lonjakan nilai transaksi hingga 40,5 kali rata-rata 20 hari menjadi Rp55 miliar tanpa adanya rilis informasi material. Pergerakan ini didorong oleh lonjakan volume perdagangan yang spekulatif.",
+    "ko": "특별한 뉴스나 공시가 없는 가운데 20일 평균 대비 42.0배에 달하는 폭발적인 거래대금이 몰리며 5.63% 급등 마감. 외국인 수급은 중립에 가까움.",
+    "id": "Lonjakan harga 5,63% didukung oleh volume transaksi luar biasa mencapai 42,0 kali rata-rata 20 hari tanpa adanya berita atau keterbukaan informasi khusus. Aliran dana asing terpantau netral.",
     "tags": [
-     "거래대금폭증",
-     "급등"
+     "거래대금",
+     "급등",
+     "물류"
     ],
     "conf": "low",
     "pct": 5.63,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "BUVA": {
-    "ko": "Rp1조 5,300억 규모의 라이츠 이슈(Rights Issue) 임박 소식과 PFII 센티멘트 우려 뉴스가 부각되며 1.91% 하락 마감. 외국인 순매수 -Rp5억을 기록하며 투자 심리가 위축됨.",
-    "id": "Turun 1,91% diwarnai oleh pemberitaan mendekatnya pelaksanaan Rights Issue senilai Rp1,53 triliun serta bayang-bayang sentimen PFII. Tekanan jual asing tercatat sebesar Rp5 miliar seiring melemahnya minat investor.",
+    "ko": "1조 5,300억 루피아 규모의 라이츠 이슈가 임박했다는 소식과 PFII 센티멘트 우려 속에서 1.91% 하락 마감. 외국인 순매도와 함께 약세 흐름을 기록함.",
+    "id": "Ditutup melemah 1,91% di tengah berita dekatnya pelaksanaan rights issue senilai Rp1,53 triliun dan bayಙan sentimen PFII. Tekanan diperberat oleh aksi jual bersih asing.",
     "tags": [
      "라이츠이슈",
-     "외국인순매도"
+     "외국인순매도",
+     "하락마감"
     ],
     "conf": "high",
     "pct": -1.91,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "INKP": {
-    "ko": "PEFINDO로부터 회사채 및 수쿠크 채권 신용등급 A+ 및 irAA를 안정적(STABLE) 전망과 함께 획득했다는 공시를 발표했으나 0.28% 소폭 하락 마감. 신용평가 결과 발표에도 불구하고 주가는 지수 하락과 맞물려 약보세 기록.",
-    "id": "Melemah tipis 0,28% meskipun perseroan telah mengumumkan perolehan peringkat obligasi dan sukuk Single A Plus serta irAA dengan prospek stabil dari PEFINDO. Sentimen positif pemeringkatan tersebut belum mampu mengangkat pergerakan harga di tengah pasar yang melemah.",
+    "ko": "PEFINDO로부터 회사채 및 수쿠크에 대해 안정적 전망과 함께 신용등급을 획득함. 신용평가 공시에도 불구하고 JCI 하락 여파로 1.12% 하락 마감.",
+    "id": "Memperoleh pemeringkatan obligasi dan sukuk dengan prospek stabil dari PEFINDO. Meskipun ada keterbukaan informasi pemeringkatan, saham ditutup melemah 1,12% di tengah penurunan JCI.",
     "tags": [
      "신용등급",
-     "채권평가"
+     "회사채",
+     "하락마감"
     ],
-    "conf": "high",
-    "pct": -0.28,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "conf": "low",
+    "pct": -1.12,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "CBRE": {
-    "ko": "안드레 하킴 계열 발행사의 채무불이행(채무불이행 소송) 관련 뉴스 보도가 있었음에도 불구하고 20일 평균 대비 4.6배 늘어난 거래대금 Rp49억과 함께 6.29% 급등. 외국인 순매수 +Rp4억이 유입되며 악재 우려를 상쇄하는 강한 매수세 유입.",
-    "id": "Melonjak 6,29% di tengah berita gugatan wanprestasi yang melibatkan emiten, didukung nilai transaksi 4,6 kali rata-rata 20 hari menjadi Rp49 miliar. Masuknya aksi beli asing sebesar Rp4 miliar menunjukkan tingginya minat beli pasar.",
+    "ko": "채무불이행 소송 관련 경영진의 입장 표명 뉴스가 나온 가운데 20일 평균 대비 4.9배의 거래대금이 몰리며 7.69% 급등 마감. 외국인 순매수가 유입되며 상승세를 뒷받침함.",
+    "id": "Lonjakan tajam 7,69% disertai nilai transaksi 4,9 kali rata-rata 20 hari di tengah berita klarifikasi manajemen atas gugatan wanprestasi. Aksi beli bersih asing turut mendukung penguatan.",
     "tags": [
-     "소송뉴스",
-     "거래대금증가"
+     "채무불이행",
+     "급등",
+     "외국인순매수"
     ],
     "conf": "high",
-    "pct": 6.29,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "pct": 7.69,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "MEDC": {
-    "ko": "연례 기업설명회(Public Expose) 자료 제출 공시가 있었으며, 에너지 업종의 0.38% 상승 흐름 속에서 1.01% 상승 마감. 외국인 순매수 -Rp7억 매도 우위에도 업종 호조세에 힘입어 완만한 반등.",
-    "id": "Menguat 1,01% sejalan dengan kenaikan sektor energi sebesar 0,38% serta penyampaian materi public expose tahunan. Aksi jual asing sebesar Rp7 miliar terjadi di tengah penguatan harga saham.",
+    "ko": "연례 공개 기업 설명회 자료를 제출한 가운데 에너지 업종 강세에 힘입어 0.67% 상승 마감. 외국인 순매도에도 불구하고 업종 흐름이 주가를 지지함.",
+    "id": "Menguat 0,67% didorong oleh penguatan sektor energi di tengah penyampaian materi public expose tahunan. Meskipun terjadi aksi jual bersih asing, pergerakan sektor menjadi pendukung utama.",
     "tags": [
-     "기업설명회",
-     "업종상승"
+     "에너지",
+     "공개설명회",
+     "상승마감"
     ],
-    "conf": "high",
-    "pct": 1.01,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "conf": "low",
+    "pct": 0.67,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "ARCI": {
-    "ko": "특별한 뉴스나 공시가 없는 가운데 외국인 순매수 -Rp24억의 대규모 이탈이 발생했으나 보합세(0.0%)로 마감. 거래대금은 20일 평균 대비 0.6배로 저조하며 시장 관망세 지배.",
-    "id": "Ditutup stagnan 0,0% di tengah ketiadaan berita maupun keterbukaan informasi serta aksi jual asing mencapai Rp24 miliar. Nilai transaksi yang tipis sebesar 0,6 kali rata-rata 20 hari menunjukkan sikap wait and see pelaku pasar.",
+    "ko": "JCI 지수가 6,637선으로 급락하는 약세장 속에서도 소폭 반등하며 0.37% 상승 마감. 외국인 순매도세에도 불구하고 개별 저가 매수세가 유입된 것으로 풀이됨.",
+    "id": "Menguat tipis 0,37% di tengah melemahnya IHSG ke level 6.637. Aksi beli selektif masuk meskipun tercatat aksi jual bersih asing.",
     "tags": [
-     "외국인순매도",
-     "보합"
-    ],
-    "conf": "low",
-    "pct": 0.0,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "IRSX": {
-    "ko": "거래대금 Rp45억으로 20일 평균 대비 2.0배 증가하며 5.91% 상승 마감. RUPS 소집 공시 외 특이사항 부재.",
-    "id": "Ditutup naik 5,91% dengan nilai transaksi Rp45 miliar atau 2,0 kali lipat dari rata-rata 20 hari. Tidak ada sentimen khusus selain pengumuman pemanggilan RUPS.",
-    "tags": [
-     "RUPS",
-     "거래대금증가"
-    ],
-    "conf": "low",
-    "pct": 5.91,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "JGLE": {
-    "ko": "외국인 순매수 -4억 루피아를 기록하며 4.55% 하락 마감. 특별한 뉴스 및 공시 없이 약세 흐름 시현.",
-    "id": "Ditutup melemah 4,55% dengan aksi jual bersih asing sebesar Rp4 miliar. Pergerakan melemah tanpa adanya berita atau keterbukaan informasi khusus.",
-    "tags": [
+     "IHSG",
+     "상승마감",
      "외국인순매도"
     ],
     "conf": "low",
+    "pct": 0.37,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "IRSX": {
+    "ko": "RUPS 소집 광고 증빙 공시가 제출된 가운데 20일 평균 대비 2.1배의 거래대금이 몰리며 4.43% 상승 마감. 외국인 순매수는 미미한 수준 기록.",
+    "id": "Ditutup menguat 4,43% diiringi penyampaian bukti iklan panggilan RUPS dan lonjakan nilai transaksi mencapai 2,1 kali rata-rata 20 hari. Aksi beli bersih asing tercatat nihil.",
+    "tags": [
+     "RUPS",
+     "거래대금",
+     "주가상승"
+    ],
+    "conf": "high",
+    "pct": 4.43,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "JGLE": {
+    "ko": "종합주가지수 하락 및 부진한 거래대금 속에서 4.55% 하락 마감. 별다른 특이 공시나 뉴스는 부재.",
+    "id": "Ditutup melemah 4,55% di tengah penurunan IHSG dan nilai transaksi yang rendah. Tidak ada pengumuman atau berita khusus yang dirilis.",
+    "tags": [
+     "종합주가지수",
+     "거래대금",
+     "주가하락"
+    ],
+    "conf": "low",
     "pct": -4.55,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "WIFI": {
-    "ko": "외국인 순매수 +4억 루피아가 유입되며 0.48% 소폭 상승 마감. 기술주 업종 하락세 속에서 제한적인 강보세 기록.",
-    "id": "Ditutup menguat tipis 0,48% didukung aksi beli bersih asing sebesar Rp4 miliar. Bergerak terbatas di tengah pelemahan sektor teknologi.",
+    "ko": "기술 업종 약세 및 종합주가지수 하락 속에서도 보합세로 마감. 외국인 순매수 Rp4억 유입.",
+    "id": "Ditutup stagnan di tengah pelemahan sektor teknologi dan IHSG. Tercatat aksi beli bersih asing sebesar Rp4 miliar.",
     "tags": [
-     "외국인순매수",
-     "기술주"
+     "기술업종",
+     "보합",
+     "외국인순매수"
     ],
     "conf": "low",
-    "pct": 0.48,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "pct": 0.0,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "PANI": {
-    "ko": "외국인 순매수 +31억 루피아에도 불구하고 부동산 업종 약세와 함께 1.63% 하락 마감. 거래대금은 Rp41억 기록.",
-    "id": "Ditutup turun 1,63% sejalan dengan pelemahan sektor properti meskipun mencatat beli bersih asing Rp4 miliar. Nilai transaksi tercatat sebesar Rp41 miliar.",
+    "ko": "부동산 업종 약세와 종합주가지수 하락 여파로 2.03% 하락 마감. 외국인 순매수 Rp31억 유입.",
+    "id": "Ditutup melemah 2,03% akibat tekanan dari sektor properti dan IHSG. Terdapat aksi beli bersih asing sebesar Rp31 miliar.",
     "tags": [
+     "부동산",
      "외국인순매수",
-     "부동산"
+     "주가하락"
     ],
-    "conf": "low",
-    "pct": -1.63,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "conf": "high",
+    "pct": -2.03,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "TRIN": {
-    "ko": "거래대금 Rp41억으로 20일 평균 대비 7.2배 급증하며 18.64% 급등 마감. 외국인 순매수 +3억 루피아 유입.",
-    "id": "Ditutup meroket 18,64% dengan lonjakan nilai transaksi Rp41 miliar atau 7,2 kali rata-rata 20 hari. Terdapat aliran masuk beli bersih asing sebesar Rp3 miliar.",
+    "ko": "20일 평균 대비 8.2배에 달하는 대규모 거래대금이 집중되며 17.51% 급등 마감. 외국인 순매수 Rp3억 유입.",
+    "id": "Ditutup meroket 17,51% dengan lonjakan nilai transaksi hingga 8,2 kali rata-rata 20 hari. Terdapat aliran masuk beli bersih asing sebesar Rp3 miliar.",
     "tags": [
-     "거래대금급증",
-     "외국인순매수",
-     "급등"
+     "거래대금",
+     "급등",
+     "외국인순매수"
     ],
-    "conf": "low",
-    "pct": 18.64,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "conf": "high",
+    "pct": 17.51,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "COIN": {
-    "ko": "외국인 순매도 -1억 루피아 속에서 1.2% 상승 마감. 특별한 뉴스 및 공시 없이 완만한 반등 시현.",
-    "id": "Ditutup naik 1,2% di tengah penjualan bersih asing sebesar Rp1 miliar. Mengalami pemulihan moderat tanpa adanya berita atau keterbukaan informasi khusus.",
+    "ko": "종합주가지수 하락 흐름 속에서도 소폭 상승하며 1.20% 오름세 기록. 외국인 순매도 Rp1억 출회.",
+    "id": "Ditutup menguat 1,20% melawan tren pelemahan IHSG. Tercatat aksi jual bersih asing sebesar Rp1 miliar.",
     "tags": [
-     "완만한반등"
+     "종합주가지수",
+     "주가상승"
     ],
     "conf": "low",
     "pct": 1.2,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "SGER": {
     "ko": "외국인 순매수 +5억 루피아가 유입되었으나 시장 약세 속에서 보합세로 마감함. 20일 평균 대비 1.6배 늘어난 Rp42억의 거래대금을 기록함.",
@@ -21558,258 +21599,261 @@
     "hhmm": "16:19"
    },
    "MBMA": {
-    "ko": "소재 업종 약세 및 외국인 순매도 -7억 루피아의 영향으로 1.89% 하락 마감. 거래대금은 Rp40억 기록.",
-    "id": "Ditutup melemah 1,89% akibat tekanan sektor material dan aksi jual bersih asing sebesar Rp7 miliar. Nilai transaksi tercatat sebesar Rp40 miliar.",
+    "ko": "소재 업종의 전반적인 약세 흐름과 JCI 하락 여파를 받으며 1.89% 하락 마감. 외국인 순매도가 이어지며 주가 하방 압력이 커짐.",
+    "id": "Ditutup melemah 1,89% seiring dengan tren pelemahan di sektor material dan penurunan JCI. Tekanan jual asing turut memperberat laju saham.",
     "tags": [
+     "소재업종",
      "외국인순매도",
-     "소재주"
+     "하락마감"
     ],
     "conf": "low",
     "pct": -1.89,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "BWPT": {
-    "ko": "외국인 순매도 -6억 루피아가 출회된 가운데 보합세 마감. 거래대금 Rp39억으로 전일과사 유사한 흐름.",
-    "id": "Ditutup stagnan di tengah aksi jual bersih asing sebesar Rp6 miliar. Nilai transaksi tercatat Rp39 miliar dengan pergerakan yang cenderung datar.",
+    "ko": "종합주가지수 약세 분위기 속에서도 소폭 상승 마감. 거래대금 Rp44억과 함께 제한적인 수급 내에서 반등 시도.",
+    "id": "Ditutup menguat tipis di tengah pelemahan umum Indeks Harga Saham Gabungan. Mencatatkan nilai transaksi sebesar Rp44억 dengan dinamika perdagangan yang terbatas.",
     "tags": [
-     "보합세",
-     "외국인순매도"
+     "소폭상승",
+     "지수대조"
     ],
     "conf": "low",
-    "pct": 0.0,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "pct": 0.78,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "MDKA": {
-    "ko": "증권사 종목 추천 소식에도 불구하고 소재 업종 약세와 외국인 순매도 -11억 루피아로 0.68% 하락 마감. 거래대금은 Rp38억 기록.",
-    "id": "Ditutup turun 0,68% tertekan pelemahan sektor material dan jual bersih asing Rp11 miliar meskipun masuk dalam rekomendasi saham sekuritas. Nilai transaksi tercatat Rp38 miliar.",
+    "ko": "소재 업종의 약세 및 종합주가지수 하락에 연동되며 하락 마감. 증권가 추천주 언급에도 불구하고 약세를 면치 못함.",
+    "id": "Melemah seiring penurunan sektor material dan Indeks Harga Saham Gabungan. Tekanan jual berlanjut meskipun sempat masuk dalam rekomendasi saham analis.",
     "tags": [
-     "종목추천",
-     "외국인순매도",
-     "소재주"
+     "소재업종",
+     "종목추천"
     ],
     "conf": "low",
     "pct": -0.68,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "SMGR": {
-    "ko": "종가 Rp1,785로 보합 마감함. 거래대금 Rp38억과 외국인 순매수 -19억을 기록하며 시장 하락세와 유사한 흐름을 보임.",
-    "id": "Ditutup stagnan di Rp1.785 dengan nilai transaksi Rp38 miliar dan net foreign sell Rp19 miliar. Pergerakan sejalan dengan tren pelemahan pasar secara keseluruhan.",
+    "ko": "종합주가지수 하락세 속에서 소폭 반등 마감. 외국인 순매도세에도 불구하고 개별 장중 변동성을 보임.",
+    "id": "Ditutup sedikit menguat di tengah pelemahan Indeks Harga Saham Gabungan. Mencatatkan volatilitas intraday meskipun investor asing melakukan aksi jual bersih.",
     "tags": [
-     "보합",
-     "외국인순매도"
+     "소폭반등",
+     "외국인매도"
     ],
     "conf": "low",
-    "pct": 0.0,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "pct": 0.56,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "ESSA": {
-    "ko": "주가 2.08% 하락한 Rp705를 기록함. 1세션 종합주가지수(IHSG) 하락을 주도한 종목으로 언론에 언급됨.",
-    "id": "Turun 2,08% ke Rp705. Tercatat memimpin pelemahan IHSG di sesi I perdagangan.",
+    "ko": "장중 종합주가지수가 6,660선으로 급락하며 하락세를 주도. 외국인 순매도와 함께 시장 전반의 약세 분위기에 동참.",
+    "id": "Memimpin pelemahan pasar setelah IHSG merosot ke level 6.660 pada sesi pertama perdagangan. Tertekan oleh aksi jual asing dan sentimen negatif pasar.",
     "tags": [
-     "하락",
-     "IHSG하락주도"
+     "하락주도",
+     "지수급락"
     ],
     "conf": "high",
     "pct": -2.08,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "INDY": {
-    "ko": "종가 Rp2,780로 0.36% 소폭 하락함. 거래대금 Rp37억 속 외국인 순매수 +11억 유입에도 시장 전반의 약세 흐름을 벗어나지 못함.",
-    "id": "Melemah 0,36% ke Rp2,780. Di tengah net foreign buy Rp11 miliar dan nilai transaksi Rp37 miliar, pergerakan sejalan dengan pelemahan pasar.",
+    "ko": "외국인 순매수세가 유입되었으나 종합주가지수 하락과 맞물려 보합세로 마감. 특별한 개별 이슈는 관측되지 않음.",
+    "id": "Ditutup stagnan seiring pelemahan Indeks Harga Saham Gabungan meskipun ada masuknya aksi beli asing. Tidak ada katalis spesifik yang mempengaruhi pergerakan.",
     "tags": [
-     "소폭하락",
-     "외국인순매수"
-    ],
-    "conf": "low",
-    "pct": -0.36,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "DMAS": {
-    "ko": "주가 2.48% 하락한 Rp197로 마감함. 외국인 순매수 +14억에도 불구하고 약세장 속에서 조정을 받음.",
-    "id": "Ditutup melemah 2,48% ke Rp197. Mengalami koreksi di tengah pasar yang melemah meskipun mencatat net foreign buy Rp14 miliar.",
-    "tags": [
-     "하락",
-     "외국인순매수"
-    ],
-    "conf": "low",
-    "pct": -2.48,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "KLBF": {
-    "ko": "주가 변동 없이 Rp780로 마감함. 헬스케어 업종이 2.35% 하락한 가운데 외국인 순매수 -11억을 기록함.",
-    "id": "Ditutup stagnan di Rp780. Bergerak di tengah pelemahan sektor kesehatan sebesar 2,35% dan net foreign sell Rp11 miliar.",
-    "tags": [
-     "보합",
-     "헬스케어하락"
+     "보합세",
+     "외국인매수"
     ],
     "conf": "low",
     "pct": 0.0,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "DMAS": {
+    "ko": "종합주가지수 약세와 함께 2.97% 하락 마감. 외국인 순매수 Rp14억 유입에도 주가 방어 실패.",
+    "id": "Ditutup melemah 2,97% seiring dengan penurunan IHSG. Gagal menahan koreksi meskipun ada aksi beli bersih asing sebesar Rp14 miliar.",
+    "tags": [
+     "종합주가지수",
+     "외국인순매수",
+     "주가하락"
+    ],
+    "conf": "high",
+    "pct": -2.97,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "KLBF": {
+    "ko": "헬스케어 업종의 2.36% 급락과 종합주가지수 하락 여파로 0.64% 소폭 하락 마감. 외국인 순매도 Rp11억 기록.",
+    "id": "Ditutup melemah 0,64% sejalan dengan kejatuhan sektor kesehatan sebesar 2,36% dan penurunan IHSG. Tercatat aksi jual bersih asing sebesar Rp11 miliar.",
+    "tags": [
+     "헬스케어",
+     "외국인순매도",
+     "주가하락"
+    ],
+    "conf": "high",
+    "pct": -0.64,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "ICBP": {
-    "ko": "주가 1.02% 하락한 Rp7,300을 기록함. 필수소비재 업종 하락세 및 종합주가지수 약세와 동조화됨.",
-    "id": "Turun 1,02% ke Rp7.300. Bergerak sejalan dengan pelemahan sektor barang konsumsi primer dan IHSG.",
+    "ko": "필수소비재 업종의 하락세 및 종합주가지수 약세 흐름과 연동된 부진. 구체적인 개별 재료는 부재.",
+    "id": "Pelemahan sejalan dengan penurunan sektor barang konsumsi primer dan Indeks Harga Saham Gabungan. Tidak ada katalis spesifik dari berita maupun keterbukaan informasi.",
     "tags": [
-     "필수소비재하락",
-     "하락"
-    ],
-    "conf": "low",
-    "pct": -1.02,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "KIJA": {
-    "ko": "주가 1.5% 하락한 Rp197로 마감함. 증권가 추천 종목으로 거론되었으나 시장 하락세를 극복하지 못함.",
-    "id": "Melemah 1,5% ke Rp197. Sempat masuk dalam rekomendasi saham analis namun tertekan oleh pelemahan pasar.",
-    "tags": [
-     "종목추천",
-     "하락"
-    ],
-    "conf": "low",
-    "pct": -1.5,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "TAPG": {
-    "ko": "주가 4.26% 하락한 Rp2,250을 기록함. 경제와 환경의 조화를 다룬 보도가 있었으나 필수소비재 업종 약세 속 하락폭을 키움.",
-    "id": "Turun 4,26% ke Rp2,250. Tertekan di tengah pelemahan sektor barang konsumsi primer meskipun ada pemberitaan terkait selaras ekonomi dan lingkungan.",
-    "tags": [
-     "필수소비재하락",
-     "하락폭확대"
-    ],
-    "conf": "low",
-    "pct": -4.26,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "ADMR": {
-    "ko": "주가 0.6% 하락한 Rp1,650을 기록함. 에너지 업종의 상승세에도 불구하고 종합주가지수 약세 영향으로 소폭 조정을 받음.",
-    "id": "Melemah 0,6% ke Rp1.650. Mengalami koreksi tipis di tengah pelemahan IHSG meskipun sektor energi mencatat penguatan.",
-    "tags": [
-     "소폭하락",
-     "에너지업종상승"
-    ],
-    "conf": "low",
-    "pct": -0.6,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "INCO": {
-    "ko": "주가 0.2% 상승한 Rp4,960으로 마감함. 소재 업종의 하락세 속에서도 외국인 순매수 +16억이 유입되며 강보합세를 나타냄.",
-    "id": "Menguat tipis 0,2% ke Rp4.960. Ditopang oleh net foreign buy Rp16 miliar di tengah pelemahan sektor material.",
-    "tags": [
-     "강보합",
-     "외국인순매수"
-    ],
-    "conf": "low",
-    "pct": 0.2,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "MYOR": {
-    "ko": "JCI 지수 약세(-0.38%) 속에서 20일 평균 대비 1.6배의 거래대금(Rp35억)을 기록하며 -1.59% 하락 마감. 외국인은 9억 루피아 순매수를 보였으나 지수 하방 압력을 방어하지 못함.",
-    "id": "Di tengah pelemahan IHSG (-0,38%), saham ditutup turun -1,59% dengan nilai transaksi Rp35 miliar atau 1,6 kali rata-rata 20 hari. Investor asing mencatatkan aksi beli bersih Rp9 miliar namun gagal menahan tekanan pasar.",
-    "tags": [
-     "외국인순매수",
-     "거래대금증가",
-     "약세마감"
-    ],
-    "conf": "low",
-    "pct": -1.59,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "MMIX": {
-    "ko": "전반적인 시장 약세 분위기에도 불구하고 1.27% 상승하며 선방함. 20일 평균 대비 1.8배 수준인 Rp33억의 거래대금이 유입됨.",
-    "id": "Meskipun suasana pasar secara keseluruhan melemah, saham berhasil menguat 1,27%. Nilai transaksi tercatat Rp33 miliar atau 1,8 kali rata-rata 20 hari.",
-    "tags": [
-     "거래대금증가",
-     "개별강세"
-    ],
-    "conf": "low",
-    "pct": 1.27,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "PGAS": {
-    "ko": "JCI 약세(-0.38%)와 연동되며 -0.97% 하락세를 나타냄. 외국인은 9억 루피아 순매도를 기록했으며 거래대금은 Rp33억으로 평소 대비 부진함.",
-    "id": "Saham melemah -0,97% sejalan dengan pelemahan IHSG (-0,38%). Asing mencatatkan jual bersih Rp9 miliar dengan nilai transaksi Rp33 miliar.",
-    "tags": [
-     "외국인순매도",
-     "지수연동하락"
-    ],
-    "conf": "low",
-    "pct": -0.97,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "AMRT": {
-    "ko": "필수소비재 업종 지수(-0.93%) 하락 흐름과 JCI 약세(-0.38%)의 영향으로 -1.13% 하락함. 외국인 6억 루피아 순매도와 함께 거래대금은 Rp32억을 기록함.",
-    "id": "Saham turun -1,13% terimbas pelemahan indeks sektor barang konsumsi primer (-0,93%) dan IHSG (-0,38%). Asing melakukan jual bersih Rp6 miliar dengan nilai transaksi Rp32 miliar.",
-    "tags": [
-     "필수소비재하락",
-     "외국인순매도"
-    ],
-    "conf": "low",
-    "pct": -1.13,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
-   },
-   "RMKE": {
-    "ko": "JCI 하락(-0.38%) 속에서 외국인 4억 루피아 순매수에도 불구하고 -2.76% 약세 마감. 거래대금은 Rp32억으로 20일 평균 수준을 유지함.",
-    "id": "Di tengah pelemahan IHSG (-0,38%), saham ditutup melemah -2,76% meskipun asing mencatatkan beli bersih Rp4 miliar. Nilai transaksi tercatat Rp32 miliar.",
-    "tags": [
-     "외국인순매수",
+     "필수소비재",
      "지수하락"
     ],
     "conf": "low",
-    "pct": -2.76,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "pct": -1.36,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
-   "LSIP": {
-    "ko": "JCI 약세(-0.38%) 마감에도 불구하고 2.42% 상승세를 기록함. 외국인의 4억 루피아 순매도에도 불구하고 20일 평균 대비 2.2배에 달하는 Rp31억의 거래대금이 몰림.",
-    "id": "Saham mencatat kenaikan 2,42% meskipun IHSG ditutup melemah (-0,38%). Transaksi melonjak hingga Rp31 miliar atau 2,2 kali rata-rata 20 hari di tengah aksi jual asing Rp4 miliar.",
+   "KIJA": {
+    "ko": "증권가 종목 추천 뉴스 보도에도 불구하고 종합주가지수 하락과 연동되어 2.0% 하락 마감. 외국인 순매도 Rp6억 기록.",
+    "id": "Ditutup melemah 2,0% sejalan dengan penurunan IHSG meskipun sempat diberitakan dalam rekomendasi saham analis. Tercatat aksi jual bersih asing sebesar Rp6 miliar.",
     "tags": [
-     "거래대금급증",
-     "역발상강세"
+     "증권사추천",
+     "외국인순매도",
+     "주가하락"
+    ],
+    "conf": "high",
+    "pct": -2.0,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "TAPG": {
+    "ko": "필수소비재 업종 약세 및 종합주가지수 하락 흐름 속에서 5.11% 하락 마감. 외국인 순매수 Rp47억 유입에도 불구하고 장중 약세 면치 못함.",
+    "id": "Ditutup melemah 5,11% di tengah pelemahan sektor barang konsumsi primer dan IHSG. Tekanan jual terjadi meskipun terdapat aksi beli bersih asing sebesar Rp47 miliar.",
+    "tags": [
+     "필수소비재",
+     "외국인순매수",
+     "주가하락"
+    ],
+    "conf": "high",
+    "pct": -5.11,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "ADMR": {
+    "ko": "에너지 업종의 소폭 상승세와 외국인 순매수 유입에도 불구하고 지수 하락 영향으로 약보합 마감. 장중 제한적인 등락 기록.",
+    "id": "Ditutup melemah tipis terimbas pelemahan indeks meskipun sektor energi menguat dan ada aksi beli asing. Pergerakan harga terpantau terbatas sepanjang sesi.",
+    "tags": [
+     "에너지업종",
+     "외국인순매수"
     ],
     "conf": "low",
-    "pct": 2.42,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "pct": -0.3,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "INCO": {
+    "ko": "외국인 순매수 유입에도 불구하고 소재 업종의 약세 속에서 강보합 마감. 종합주가지수 하락 압력을 제한적으로 방어.",
+    "id": "Ditutup menguat tipis di tengah pelemahan sektor material dan aksi beli bersih asing. Menunjukkan ketahanan terbatas terhadap tekanan indeks.",
+    "tags": [
+     "외국인순매수",
+     "강보합"
+    ],
+    "conf": "low",
+    "pct": 0.2,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "MYOR": {
+    "ko": "20일 평균 대비 1.9배에 달하는 거래대금을 기록하며 변동성 확대. 외국인 순매수에도 불구하고 지수 하락 압력에 밀려 하락.",
+    "id": "Mencatatkan lonjakan nilai transaksi hingga 1,9 kali rata-rata 20 hari. Mengalami pelemahan akibat tekanan indeks meskipun mencatat aksi beli bersih asing.",
+    "tags": [
+     "거래대금증가",
+     "외국인매수"
+    ],
+    "conf": "low",
+    "pct": -0.95,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "MMIX": {
+    "ko": "JCI 약세 마감에도 불구하고 20일 평균 대비 2.0배의 거래대금이 유입되며 상승세로 마감함. 외국인 순매수 1억 루피아가 유입됨.",
+    "id": "Meskipun JCI melemah, saham ditutup menguat dengan nilai transaksi mencapai 2,0 kali rata-rata 20 hari. Aliran masuk bersih asing tercatat sebesar 1 miliar Rupiah.",
+    "tags": [
+     "거래대금 증가",
+     "외국인 순매수"
+    ],
+    "conf": "low",
+    "pct": 1.27,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "PGAS": {
+    "ko": "JCI 종합지수 하락세 속에서 특별한 이슈 없이 약세를 기록함. 외국인 순매도 9억 루피아를 기록하며 하락 압력을 받음.",
+    "id": "Di tengah pelemahan indeks JCI, saham melemah tanpa adanya berita khusus. Tekanan jual asing tercatat sebesar 9 miliar Rupiah.",
+    "tags": [
+     "JCI 하락",
+     "외국인 순매도"
+    ],
+    "conf": "low",
+    "pct": -1.3,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "AMRT": {
+    "ko": "필수소비재 업종의 약세 및 종합주가지수 하락 흐름과 동조화되며 하락. 외국인 순매도세가 출회되며 약세 마감.",
+    "id": "Melemah sejalan dengan penurunan sektor barang konsumsi primer dan Indeks Harga Saham Gabungan. Tertekan oleh aksi jual bersih investor asing.",
+    "tags": [
+     "필수소비재",
+     "외국인매도"
+    ],
+    "conf": "low",
+    "pct": -1.13,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "RMKE": {
+    "ko": "JCI 지수 하락과 연동되어 약세 마감하며 2.76% 하락률을 기록함. 외국인 순매수 4억 루피아 유입에도 불구하고 하락세를 방어하지 못함.",
+    "id": "Saham ditutup melemah sebesar 2,76% sejalan dengan penurunan indeks JCI. Masuknya pembelian bersih asing sebesar 4 miliar Rupiah belum mampu menahan penurunan.",
+    "tags": [
+     "JCI 하락",
+     "외국인 순매수"
+    ],
+    "conf": "low",
+    "pct": -2.76,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
+   },
+   "LSIP": {
+    "ko": "JCI의 하락세에도 불구하고 20일 평균 대비 2.5배에 달하는 활발한 거래대금을 기록하며 상승함. 외국인 순매도 4억 루피아에도 매수세가 우위를 보임.",
+    "id": "Meskipun JCI turun, saham menguat dengan nilai transaksi yang aktif mencapai 2,5 kali rata-rata 20 hari. Aksi beli mendominasi meski ada penjualan asing sebesar 4 miliar Rupiah.",
+    "tags": [
+     "거래대금 증가",
+     "종목 상승"
+    ],
+    "conf": "low",
+    "pct": 1.81,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "BIPI": {
-    "ko": "JCI 지수 하락(-0.38%)과 외국인 8억 루피아 순매도 영향으로 -1.35% 하락함. 거래대금은 Rp31억으로 20일 평균 대비 저조함.",
-    "id": "Saham turun -1,35% akibat pelemahan IHSG (-0,38%) dan aksi jual bersih asing sebesar Rp8 miliar. Nilai transaksi Rp31 miliar atau di bawah rata-rata.",
+    "ko": "시장 전반의 약세 분위기 속에서 뚜렷한 호재 없이 하락 마감함. 외국인 순매도 8억 루피아와 함께 저조한 거래대금을 기록함.",
+    "id": "Di tengah suasana pasar yang melemah, saham ditutup turun tanpa sentimen positif yang jelas. Penjualan bersih asing sebesar 8 miliar Rupiah disertai nilai transaksi yang rendah.",
     "tags": [
-     "외국인순매도",
-     "약세마감"
+     "JCI 하락",
+     "외국인 순매도"
     ],
     "conf": "low",
     "pct": -1.35,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "KKES": {
-    "ko": "전체 시장의 약세(-0.38%) 분위기 속에서도 8.99% 급등하며 강한 탄력세를 보임. 20일 평균 대비 3.0배에 이르는 Rp31억의 거래대금이 유입됨.",
-    "id": "Saham melonjak tajam 8,99% di tengah pelemahan pasar secara umum (-0,38%). Nilai transaksi melesat hingga Rp31 miliar atau 3,0 kali rata-rata 20 hari.",
+    "ko": "JCI 하락세 속에서도 20일 평균 대비 3.1배의 급증한 거래대금을 동반하며 7.87% 급등함. 강한 수급 유입으로 지수와 디커플링을 보임.",
+    "id": "Di tengah pelemahan JCI, saham melonjak 7,87% disertai lonjakan nilai transaksi hingga 3,1 kali rata-rata 20 hari. Masuknya likuiditas yang kuat membuat saham bergerak melawan tren pasar.",
     "tags": [
-     "거래대금급증",
-     "급등주"
+     "거래대금 급증",
+     "주가 급등"
     ],
     "conf": "low",
-    "pct": 8.99,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "pct": 7.87,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "PSAB": {
     "ko": "증권사 분석가들의 추천 종목으로 거론되었으나 JCI 하락 및 외국인 순매도 -15억 루피아의 영향으로 1.72% 하락 마감. 20일 평균 대비 0.5배 수준의 부진한 거래대금 Rp34억을 기록함.",
@@ -21824,16 +21868,16 @@
     "hhmm": "16:19"
    },
    "ARKO": {
-    "ko": "JCI 지수 하락(-0.38%)과 맞물려 -2.48% 하락세를 나타냄. 거래대금은 Rp30억으로 20일 평균 대비 소폭 증가함.",
-    "id": "Saham melemah -2,48% sejalan dengan penurunan IHSG (-0,38%). Nilai transaksi tercatat Rp30 miliar atau sedikit di atas rata-rata 20 hari.",
+    "ko": "시장 약세 흐름 속에서 2.89% 하락하며 장중 고점 대비 조정을 받음. 20일 평균 거래대금의 1.3배가 거래되었으나 하락세를 면치 못함.",
+    "id": "Saham terkoreksi 2,89% di tengah tren pelemahan pasar dari level tertingginya. Nilai transaksi tercatat 1,3 kali rata-rata 20 hari namun tidak mampu menghindari penurunan.",
     "tags": [
-     "거래대금증가",
-     "지수연동하락"
+     "JCI 하락",
+     "가격 조정"
     ],
     "conf": "low",
-    "pct": -2.48,
-    "ts": "2026-09-04T15:42:38.671888+07:00",
-    "hhmm": "15:42"
+    "pct": -2.89,
+    "ts": "2026-09-04T16:45:57.407130+07:00",
+    "hhmm": "16:45"
    },
    "MSIN": {
     "ko": "외국인 순매도 -3억 루피아에도 불구하고 경기소비재 업종 상승 흐름과 동조화되며 3.95% 상승 마감. 20일 평균 대비 3.8배 수준인 Rp49억의 거래대금이 유입됨.",
@@ -23014,23 +23058,6 @@
    "srcs": 1
   },
   {
-   "t": "BULL",
-   "n": "Buana Lintas Lautan",
-   "px": 436.0,
-   "pct": -3.54,
-   "val": 775014671600.0,
-   "mcap": 6755574354548.0,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "BULL 순이익 급증 — LNG 확장·유상증자 주목",
-   "url": "https://www.bloombergtechnoz.com/detail-news/120507/laba-bull-melonjak-ekspansi-lng-rights-issue-disorot",
-   "score": 71.0,
-   "s_news": 80,
-   "s_size": 46,
-   "s_liq": 86,
-   "srcs": 1
-  },
-  {
    "t": "BBHI",
    "n": "Allo Bank Indonesia",
    "px": 900.0,
@@ -23079,6 +23106,23 @@
    "s_news": 75,
    "s_size": 64,
    "s_liq": 51,
+   "srcs": 0
+  },
+  {
+   "t": "BTPS",
+   "n": "Bank BTPN Syariah",
+   "px": 1015.0,
+   "pct": 0.5,
+   "val": 3006458666.666667,
+   "mcap": 7741062945000.0,
+   "ev_ko": "자본구조",
+   "ev_id": "Aksi korporasi",
+   "hl": "PT Bank BTPN Syariah Tbk. 자사주 취득 계획 공시 제출. 해당 건은 2026년 9월 4일 자로 발생.",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/c28f77a5ec_5457bebb72.pdf",
+   "score": 65.7,
+   "s_news": 90,
+   "s_size": 47,
+   "s_liq": 33,
    "srcs": 0
   }
  ]
