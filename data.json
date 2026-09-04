@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-04 08:45",
+ "updated": "2026-09-04 08:52",
  "delay_min": 0,
  "fx_basis": "13.02 IDR/KRW · USD/IDR 17,684 · USD/KRW 1,358 · 08:08 Yahoo",
- "idr_per_krw": 13.0184,
+ "idr_per_krw": 13.0175,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -93,7 +93,7 @@
   "m1": 6.95,
   "value_idr": 18607401563700,
   "volume": 39305835265,
-  "rank_src": "Yahoo 15분 지연 · 835종목 · 종가 · 외국인·공시 PC 09-04 08:41",
+  "rank_src": "Yahoo 15분 지연 · 835종목 · 종가 · 외국인·공시 PC 09-04 08:49",
   "rank_asof": null,
   "rank_date": "2026-09-03",
   "adv": 415,
@@ -15089,10 +15089,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6658.59,
-   "prev": 6658.59,
+   "px": 6654.32,
+   "prev": 6654.32,
    "pct": 0.0,
-   "asof": "08:20",
+   "asof": "08:30",
    "live": true,
    "spark": [
     6677.11,
@@ -15111,17 +15111,19 @@
     6654.67,
     6651.18,
     6661.69,
-    6658.59
+    6661.41,
+    6657.18,
+    6654.32
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64707.5,
-   "prev": 64707.5,
+   "px": 64753.85,
+   "prev": 64753.85,
    "pct": 0.0,
-   "asof": "08:25",
+   "asof": "08:35",
    "live": true,
    "spark": [
     64439.01,
@@ -15141,24 +15143,27 @@
     64633.74,
     64641.86,
     64723.08,
-    64707.5
+    64738.49,
+    64729.47,
+    64753.85
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25311.21,
-   "prev": 25329.73,
-   "pct": -0.07,
-   "asof": "09/01 종가",
+   "px": 25706.06,
+   "prev": 25311.21,
+   "pct": 1.56,
+   "asof": "09/03 종가",
    "live": false,
    "spark": [
     25565.74,
     25584.79,
     25566.99,
     25329.73,
-    25311.21
+    25311.21,
+    25706.06
    ]
   }
  ],
@@ -15222,6 +15227,21 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-04T08:49:03+07:00",
+   "date": "2026-09-04",
+   "time": "08:49",
+   "src": "Bloomberg Technoz",
+   "t": "IHSG Lompat 1%, Investor Asing Net Buy Rp1 T & Borong BMRI-BBCA",
+   "tags": [
+    "BBCA",
+    "BMRI"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120487/ihsg-lompat-1-investor-asing-net-buy-rp1-t-borong-bmri-bbca",
+   "img": "https://images.bloombergtechnoz.com/data/2024/10/image-20241021134434.jpg",
+   "t_ko": "IHSG 1% 상승, 외국인 투자자 순매수 IDR 1 T & 매수 BMRI-BBCA",
+   "t_id": "IHSG Lompat 1%, Investor Asing Net Buy Rp1 T & Borong BMRI-BBCA"
+  },
   {
    "ts": "2026-09-04T07:45:00+07:00",
    "date": "2026-09-04",
@@ -16114,8 +16134,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tktgti370/ekonomi-ri-tumbuh-53-persen-umkm-justru-terjepit-biaya-dan-daya-beli",
    "img": "https://static.republika.co.id/uploads/images/detailnews/060642200-1748877433-830-556.jpg",
-   "t_id": "Ekonomi RI Tumbuh 5,3 Persen, UMKM Justru Terjepit Biaya dan Daya Beli",
-   "t_ko": "RI 경제는 5.3% 성장하지만 중소기업은 실제로 비용과 구매력으로 인해 압박을 받고 있습니다."
+   "t_ko": "RI 경제는 5.3% 성장하지만 중소기업은 실제로 비용과 구매력으로 인해 압박을 받고 있습니다.",
+   "t_id": "Ekonomi RI Tumbuh 5,3 Persen, UMKM Justru Terjepit Biaya dan Daya Beli"
   },
   {
    "ts": "2026-09-04T08:40:00+07:00",
@@ -19089,6 +19109,17 @@
  ],
  "announcements": [
   {
+   "ts": "2026-09-04T08:43:47+07:00",
+   "date": "2026-09-04",
+   "time": "08:43",
+   "t": "BMRI",
+   "type": "STOCK",
+   "title": "Pembagian dividen interim",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/69c58eb3ee_21bddc12c2.pdf",
+   "title_ko": "중간배당 지급",
+   "title_id": "Pembagian dividen interim"
+  },
+  {
    "ts": "2026-09-04T08:31:49+07:00",
    "date": "2026-09-04",
    "time": "08:31",
@@ -19956,23 +19987,12 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/71aa6d3e73_0ffed7a988.pdf",
    "title_ko": "일간 순자산가치(NAV)·포트폴리오 구성 보고",
    "title_id": "Laporan Harian atas Nilai Aktiva Bersih dan Komposisi Portofolio"
-  },
-  {
-   "ts": "2026-09-03T17:42:42+07:00",
-   "date": "2026-09-03",
-   "time": "17:42",
-   "t": "TAPG",
-   "type": "STOCK",
-   "title": "Penjelasan atas Volatilitas Transaksi",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/6cf2e82f3a_283586f767.pdf",
-   "title_ko": "주가·거래량 변동성에 대한 소명",
-   "title_id": "Penjelasan atas Volatilitas Transaksi"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-04 08:41",
+  "idx_from_pc": "2026-09-04 08:49",
   "bi": null,
   "hist_days": 20,
   "calendar": "investing.com"
