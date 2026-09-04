@@ -437,7 +437,7 @@ function spark(arr,prev,inv){if(!arr||arr.length<2)return'';const W=300,H=72,p=5
 const ixName=()=>({COMPOSITE:T('ixIHSG'),LQ45:T('ixLQ'),USDIDR:T('ixFX'),SUN10Y:T('ixSUN')});
 function asofTs(a){return String(a||'').replace(/\s*·?\s*15\s*분?\s*지연/g,'').replace(/\s*·?\s*15\s*mnt\s*tunda/gi,'').replace(/^\s*·\s*|\s*·\s*$/g,'').trim();}
 function ixCard(x){const yld=x.code==='SUN10Y';const dec=x.code==='USDIDR'?0:yld?3:2,unit=x.code==='USDIDR'?'':yld?'%':'pt',chg=x.px-x.prev;
-  return`<div class="ix" id="ix-${x.code}"><div class="lbl"><span>${x.label} · ${ixName()[x.code]||x.name}</span><span class="live ${x.live?'':'off'}">${x.live?T('now')+' · 15'+T('delay')+(asofTs(x.asof)?' · '+asofTs(x.asof):''):(asofTs(x.asof)||T('close'))}</span></div>
+  return`<div class="ix" id="ix-${x.code}"><div class="lbl"><span>${x.label} · ${ixName()[x.code]||x.name}</span><span class="live ${x.live?'':'off'}">${x.live?(x.src==='idx'?'IDX '+T('now'):T('now')+' · 15'+T('delay'))+(asofTs(x.asof)?' · '+asofTs(x.asof):''):(asofTs(x.asof)||T('close'))}</span></div>
   <div class="px num" data-px="${x.px}">${fmt(x.px,dec)}${yld?'%':''}</div>
   <div class="chg num">${yld?sg(x.pct,1,'bp',x.inv):sg(x.pct,2,'%',x.inv)} ${yld?'':`<span class="num ${(x.inv?-chg:chg)>0?'up':(x.inv?-chg:chg)<0?'dn':'flat'}">${chg>0?'+':''}${fmt(chg,dec)}${unit}</span>`}</div>
   <div class="prevc num">${T('prevClose')} ${fmt(x.prev,dec)}${unit}</div>${spark(x.spark,x.prev,x.inv)}${x.span==='1W'?'<span class="spl">1W</span>':''}</div>`;}
@@ -479,7 +479,9 @@ function updateIx(x){const el=$('ix-'+x.code);if(!el){return;}const old=+el.quer
   if(old===x.px){const b=el.querySelector('.live');if(b&&x.live){b.textContent=`${T('now')} · 15${T('delay')}${asofTs(x.asof)?' · '+asofTs(x.asof):''}`;b.classList.remove('off');}return;}   // 값 같으면 숫자 갱신 없이 시각만
   const card=document.createElement('div');card.innerHTML=ixCard(x);el.replaceWith(card.firstElementChild);
   if(old&&old!==x.px){const p=$('ix-'+x.code).querySelector('.px');p.classList.add(x.px>old?'flash-up':'flash-dn');setTimeout(()=>p.classList.remove('flash-up','flash-dn'),900);}}
-function mergeLive(list){return (list||[]).map(x=>{const l=LIVE[x.code];return (l&&(!x.live||l.t>=(x.t||0)))?{...x,...l}:x;});}
+const hhmm=v=>((v||'')+'').match(/\d\d:\d\d/)?.[0]||'';
+function mergeLive(list){return (list||[]).map(x=>{const l=LIVE[x.code];if(!l)return x;if(hhmm(x.asof)&&l.asof&&hhmm(x.asof)>=l.asof&&x.src==='idx')return x;   // 서버(IDX) 스냅샷이 브라우저 Yahoo 틱보다 최신이면 유지
+  return (!x.live||l.t>=(x.t||0))?{...x,...l,prev:x.prev??l.prev,pct:x.prev?(l.px/x.prev-1)*100:l.pct}:x;});}
 
 /* ---------- 브라우저 직접 실시간 (Yahoo chart API · CORS 프록시 경유) ---------- */
 const LIVE_SYMS=[{sym:'^JKSE',code:'COMPOSITE',label:'IHSG'},{sym:'^JKLQ45',code:'LQ45',label:'LQ45'},{sym:'USDIDR=X',code:'USDIDR',label:'USD/IDR',inv:true}];
@@ -490,9 +492,11 @@ async function yahooChart(sym){const url=`https://query1.finance.yahoo.com/v8/fi
   for(let k=0;k<PROXIES.length;k++){const p=(proxyIdx+k)%PROXIES.length;try{const ctl=new AbortController();setTimeout(()=>ctl.abort(),8000);const r=await fetch(PROXIES[p](url),{signal:ctl.signal,cache:'no-store'});if(!r.ok)throw 0;const j=await r.json();const res=j.chart?.result?.[0];if(!res)throw 0;proxyIdx=p;return res;}catch(e){}}
   return null;}
 let liveFail=0,liveLast=null;
-async function liveIndices(){let any=false;for(const s of LIVE_SYMS){const res=await yahooChart(s.sym);if(!res)continue;const m=res.meta,cl=(res.indicators?.quote?.[0]?.close||[]).filter(v=>v!=null);const px=m.regularMarketPrice??cl[cl.length-1];const prev=m.chartPreviousClose??m.previousClose;if(!px||!prev)continue;
+async function liveIndices(){let any=false;for(const s of LIVE_SYMS){const res=await yahooChart(s.sym);if(!res)continue;const m=res.meta,cl=(res.indicators?.quote?.[0]?.close||[]).filter(v=>v!=null);const px=m.regularMarketPrice??cl[cl.length-1];const base=(DATA?.indices||[]).find(i=>i.code===s.code);const prev=base?.prev??m.previousClose??m.chartPreviousClose;if(!px||!prev)continue;   // 전일종가는 서버(IDX 확정)값 우선 — Yahoo chartPreviousClose 는 하루 밀리는 경우가 있음
     const ts=new Date((m.regularMarketTime||Date.now()/1000)*1000+7*3600e3).toISOString().slice(11,16);
-    const x={code:s.code,label:s.label,px:px,prev:prev,pct:(px/prev-1)*100,spark:cl.slice(-120),inv:s.inv,live:true,asof:ts,t:Date.now()};LIVE[s.code]=x;updateIx(x);any=true;}
+    const x={code:s.code,label:s.label,px:px,prev:prev,pct:(px/prev-1)*100,spark:cl.slice(-120),inv:s.inv,live:true,asof:ts,t:Date.now()};any=true;
+    if(base&&base.src==='idx'&&hhmm(base.asof)>=ts){continue;}   // IDX 장중 스냅샷이 더 최신이면 Yahoo 로 덮어쓰지 않음
+    LIVE[s.code]=x;updateIx(x);}
   liveOk=any;
   if(any){liveFail=0;liveLast=new Date();$('dot').className='dot';$('mode').textContent=`${T('live')} · 15${T('delay')} · Yahoo`;}
   else{liveFail++;const keep=Object.keys(LIVE).length;   // 실패해도 마지막 값 유지 — 지우지 않는다
