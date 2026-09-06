@@ -1,8 +1,8 @@
 {
  "mode": "live",
- "updated": "2026-09-06 16:11",
+ "updated": "2026-09-06 18:10",
  "delay_min": 0,
- "fx_basis": "13.05 IDR/KRW · USD/IDR 17,633 · USD/KRW 1,351 · 16:11 Yahoo",
+ "fx_basis": "13.05 IDR/KRW · USD/IDR 17,633 · USD/KRW 1,351 · 18:10 Yahoo",
  "idr_per_krw": 13.0508,
  "indices": [
   {
@@ -5109,22 +5109,6 @@
    "live": 0
   },
   {
-   "t": "ASGR",
-   "n": "Astra Graphia",
-   "px": 2160.0,
-   "prev": 2170.0,
-   "pct": -0.46,
-   "val": 2582083000.0,
-   "vol": 1189900.0,
-   "sh": 1348780500,
-   "mcap": 2913365880000.0,
-   "hi": 2200.0,
-   "lo": 2150.0,
-   "ratio": 0.7,
-   "fnet": -844710586.8560382,
-   "live": 0
-  },
-  {
    "t": "INTP",
    "n": "Indocement Tunggal Prakarsa",
    "px": 5450.0,
@@ -9506,6 +9490,22 @@
    "lo": 308.0,
    "ratio": 0.6,
    "fnet": 33189588.714581054,
+   "live": 0
+  },
+  {
+   "t": "ADES",
+   "n": "Akasha Wira International Tbk",
+   "px": 31800.0,
+   "prev": 31850.0,
+   "pct": -0.16,
+   "val": 257715000.0,
+   "vol": 8100.0,
+   "sh": 589896800,
+   "mcap": 18758718240000.0,
+   "hi": 31850.0,
+   "lo": 31800.0,
+   "ratio": 0.6,
+   "fnet": 0.0,
    "live": 0
   },
   {
@@ -14429,11 +14429,11 @@
   {
    "name": "산업재",
    "name_id": "Perindustrian",
-   "n": 56,
+   "n": 55,
    "adv": 19,
-   "dec": 23,
-   "val": 1091994885899.9995,
-   "mcap": 475799115453724.0,
+   "dec": 22,
+   "val": 1089412802899.9995,
+   "mcap": 472885749573724.0,
    "top": [
     {
      "t": "ASII",
@@ -14481,11 +14481,11 @@
   {
    "name": "필수소비재",
    "name_id": "Konsumen Primer",
-   "n": 122,
+   "n": 123,
    "adv": 44,
-   "dec": 56,
-   "val": 1021342149599.9999,
-   "mcap": 1078996296491778.0,
+   "dec": 57,
+   "val": 1021599864599.9999,
+   "mcap": 1097755014731778.0,
    "top": [
     {
      "t": "HMSP",
@@ -14528,7 +14528,7 @@
      "pct": -5.38
     }
    ],
-   "pct": -1.03
+   "pct": -1.02
   },
   {
    "name": "부동산",
@@ -15335,6 +15335,60 @@
  },
  "news": [
   {
+   "ts": "2026-09-06T17:43:00+07:00",
+   "date": "2026-09-06",
+   "time": "17:43",
+   "src": "Media Indonesia",
+   "t": "Pengunjung Lampung Financial Festival 2026 Antusias Jajal Layanan Digital",
+   "tags": [
+    "BBNI"
+   ],
+   "url": "https://mediaindonesia.com/nusantara/930407/pengunjung-lampung-financial-festival-2026-antusias-jajal-layanan-digital",
+   "t_ko": "2026년 람풍 금융축제를 찾은 관람객들이 디지털 서비스 체험에 열광하고 있다.",
+   "t_id": "Pengunjung Lampung Financial Festival 2026 Antusias Jajal Layanan Digital"
+  },
+  {
+   "ts": "2026-09-06T17:15:00+07:00",
+   "date": "2026-09-06",
+   "time": "17:15",
+   "src": "Media Indonesia",
+   "t": "Hubble Temukan Struktur Dekagon Misterius di Kutub Selatan Saturnus",
+   "tags": [
+    "NASA"
+   ],
+   "url": "https://mediaindonesia.com/teknologi/930374/hubble-temukan-struktur-dekagon-misterius-di-kutub-selatan-saturnus",
+   "t_id": "Hubble Temukan Struktur Dekagon Misterius di Kutub Selatan Saturnus",
+   "t_ko": "허블, 토성 남극에서 신비한 십각형 구조 발견"
+  },
+  {
+   "ts": "2026-09-06T17:00:00+07:00",
+   "date": "2026-09-06",
+   "time": "17:00",
+   "src": "Bloomberg Technoz",
+   "t": "ADRO Akui Terdampak Penurunan Debit Air Sungai Barito",
+   "tags": [
+    "ADRO"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120616/adro-akui-terdampak-penurunan-debit-air-sungai-barito",
+   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260902110811.jpg",
+   "t_ko": "ADRO, 바리토강 유수 감소의 영향 인정",
+   "t_id": "ADRO Akui Terdampak Penurunan Debit Air Sungai Barito"
+  },
+  {
+   "ts": "2026-09-06T16:03:00+07:00",
+   "date": "2026-09-06",
+   "time": "16:03",
+   "src": "IDX Channel",
+   "t": "Sunindo (SUNI) Menang Tender Casing Pertamina EP Senilai Rp56,28 Miliar",
+   "tags": [
+    "SUNI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/sunindo-suni-menang-tender-casing-pertamina-ep-senilai-rp5628-miliar",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2024/04/01/sunindo_foto_atikah.jpg",
+   "t_id": "Sunindo (SUNI) Menang Tender Casing Pertamina EP Senilai Rp56,28 Miliar",
+   "t_ko": "Sunindo(SUNI), IDR 562억 8천만 달러 규모의 Pertamina EP 케이싱 입찰에서 승리"
+  },
+  {
    "ts": "2026-09-06T16:00:00+07:00",
    "date": "2026-09-06",
    "time": "16:00",
@@ -15359,8 +15413,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/indy-masih-kantongi-75-juta-saham-treasuri-penjualan-dilanjutkan-18-september",
    "img": "https://img.idxchannel.com/media/439/images/idx/2025/05/07/indika_indy.jpg",
-   "t_id": "INDY Masih Kantongi 7,5 Juta Saham Treasuri, Penjualan Dilanjutkan 18 September",
-   "t_ko": "INDY는 여전히 750만 자사주를 보유하고 있으며 9월 18일에도 판매가 계속됩니다"
+   "t_ko": "INDY는 여전히 750만 자사주를 보유하고 있으며 9월 18일에도 판매가 계속됩니다",
+   "t_id": "INDY Masih Kantongi 7,5 Juta Saham Treasuri, Penjualan Dilanjutkan 18 September"
   },
   {
    "ts": "2026-09-06T14:39:51+07:00",
@@ -15373,8 +15427,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8285735/bisnis-ai-bakal-jadi-mesin-pertumbuhan-emiten-mtdl",
    "img": "https://cdn1-production-images-kly.akamaized.net/SJQKzgchc0x1CghU1Ky4n0laL6k=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4426546/original/091200600_1683985465-MTDL_1.jpg",
-   "t_id": "Bisnis AI Bakal Jadi Mesin Pertumbuhan Emiten MTDL",
-   "t_ko": "AI 사업은 MTDL 발행자의 성장 엔진이 될 것입니다"
+   "t_ko": "AI 사업은 MTDL 발행자의 성장 엔진이 될 것입니다",
+   "t_id": "Bisnis AI Bakal Jadi Mesin Pertumbuhan Emiten MTDL"
   },
   {
    "ts": "2026-09-06T14:30:00+07:00",
@@ -15401,8 +15455,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/mglv-revisi-asumsi-harga-rights-issue-jadi-rp8400-target-dana-rp24-triliun",
    "img": "https://img.idxchannel.com/media/439/images/idx/2024/06/26/Bagaimana_Jika_Saham_Rights_Issue_Tidak_Ditebus.jpg",
-   "t_id": "MGLV Revisi Asumsi Harga Rights Issue Jadi Rp8.400, Target Dana Rp2,4 Triliun",
-   "t_ko": "MGLV, 권리 발행 가격 가정을 IDR 8,400으로 수정, 목표 기금 IDR 2.4 조"
+   "t_ko": "MGLV, 권리 발행 가격 가정을 IDR 8,400으로 수정, 목표 기금 IDR 2.4 조",
+   "t_id": "MGLV Revisi Asumsi Harga Rights Issue Jadi Rp8.400, Target Dana Rp2,4 Triliun"
   },
   {
    "ts": "2026-09-06T12:56:00+07:00",
@@ -15518,20 +15572,6 @@
    "t_id": "Metrodata (MDTL) Proyeksi Bisnis AI Jadi Mesin Pertumbuhan Baru"
   },
   {
-   "ts": "2026-09-05T18:32:30+07:00",
-   "date": "2026-09-05",
-   "time": "09/05",
-   "src": "Detik",
-   "t": "Raffi Ahmad & Nagita Slavina Buka-bukaan Sumber Cuan dari Investasi",
-   "tags": [
-    "RANS"
-   ],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8649843/raffi-ahmad-nagita-slavina-buka-bukaan-sumber-cuan-dari-investasi",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/05/raffi-ahmad-dan-nagita-slavina-memberikan-motivasi-dan-tips-atur-keuangan-kepada-gen-z-di-lampung-1788598913023_169.jpeg?w=360&q=90",
-   "t_ko": "Raffi Ahmad와 Nagita Slavina, 투자 수익원 공개",
-   "t_id": "Raffi Ahmad & Nagita Slavina Buka-bukaan Sumber Cuan dari Investasi"
-  },
-  {
    "ts": "2026-09-05T18:00:00+07:00",
    "date": "2026-09-05",
    "time": "09/05",
@@ -15615,7 +15655,7 @@
     "BMRI"
    ],
    "url": "https://www.idnfinancials.com/news/68396/big-banks-drive-idr-2-3-trillion-weekly-foreign-inflows-up-eightfold",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/BBCA-BBRI-BMRI-BBNI-29062026.jpg",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/BIG-BANKS-06092026.jpg",
    "t_ko": "대형 은행은 IDR 2.3조 주간 해외 유입을 8배 증가시켰습니다.",
    "t_id": "Bank-bank besar mendorong arus masuk asing mingguan sebesar IDR 2,3 triliun, naik delapan kali lipat"
   },
@@ -15689,20 +15729,6 @@
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/DOOH-05092026.jpg",
    "t_ko": "DOOH는 권리 문제를 염두에 두고 데이터 센터와 태양광 발전에 진출을 모색하고 있습니까?",
    "t_id": "DOOH berupaya memasuki pusat data dan tenaga surya, mengincar isu hak asasi manusia?"
-  },
-  {
-   "ts": "2026-09-05T10:00:00+07:00",
-   "date": "2026-09-05",
-   "time": "09/05",
-   "src": "IDX Channel",
-   "t": "10 Saham yang Rugi Sepekan, RGAS Pimpin Top Losers",
-   "tags": [
-    "RGAS"
-   ],
-   "url": "https://www.idxchannel.com/market-news/10-saham-yang-rugi-sepekan-rgas-pimpin-top-losers",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/03/06/IHSG_merah.jpg",
-   "t_ko": "일주일에 하락하는 10개 주식, RGAS가 최고 하락주 선두",
-   "t_id": "10 Saham yang Rugi Sepekan, RGAS Pimpin Top Losers"
   },
   {
    "ts": "2026-09-05T06:00:34+07:00",
@@ -16009,20 +16035,6 @@
    "t_id": "Emiten BBHI Buyback Saham Rp 300 Miliar Mulai 3 September 2026"
   },
   {
-   "ts": "2026-09-02T21:10:33+07:00",
-   "date": "2026-09-02",
-   "time": "09/02",
-   "src": "Liputan6",
-   "t": "Mondial Beli 56,52 Juta Saham DYAN",
-   "tags": [
-    "DYAN"
-   ],
-   "url": "https://www.liputan6.com/saham/read/8283383/mondial-beli-5652-juta-saham-dyan",
-   "img": "https://cdn0-production-images-kly.akamaized.net/wE0lxJZlSk1TenE5_wzc3x04qC0=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5755475/original/077659200_1778657376-5.jpg",
-   "t_ko": "Mondial, DYAN 주식 5,652만주 매입",
-   "t_id": "Mondial Beli 56,52 Juta Saham DYAN"
-  },
-  {
    "ts": "2026-08-24T08:33:00+07:00",
    "date": "2026-08-24",
    "time": "08/24",
@@ -16063,23 +16075,138 @@
    "img": "https://statik.tempo.co/data/2026/08/07/id_1485550/1485550_720.jpg",
    "t_ko": "Bogor 군청, Sentul City 공공시설(PSU) 인수 완료 — BPN 등기 대기",
    "t_id": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN"
-  },
-  {
-   "ts": "2026-07-31T09:42:15+07:00",
-   "date": "2026-07-31",
-   "time": "07/31",
-   "src": "Tempo",
-   "t": "Agung Podomoro Land Bukukan Pendapatan Rp 3,66 T",
-   "tags": [
-    "APLN"
-   ],
-   "url": "https://bisnis.tempo.co/read/2116250/agung-podomoro-land-bukukan-pendapatan-rp-366-t",
-   "img": "https://statik.tempo.co/data/2023/12/19/id_1264559/1264559_720.jpg",
-   "t_ko": "Agung Podomoro Land 매출 Rp3.66조 기록",
-   "t_id": "Agung Podomoro Land Bukukan Pendapatan Rp 3,66 T"
   }
  ],
  "market_news": [
+  {
+   "ts": "2026-09-06T18:00:00+07:00",
+   "date": "2026-09-06",
+   "time": "18:00",
+   "src": "Republika",
+   "t": "BNI Kenalkan Layanan Digital di Lampung Financial Festival 2026",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tkxt1i416/bni-kenalkan-layanan-digital-di-lampung-financial-festival-2026",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260906165902-724.png",
+   "t_id": "BNI Kenalkan Layanan Digital di Lampung Financial Festival 2026",
+   "t_ko": "BNI, 2026년 람풍 금융 축제에서 디지털 서비스 소개"
+  },
+  {
+   "ts": "2026-09-06T17:56:00+07:00",
+   "date": "2026-09-06",
+   "time": "17:56",
+   "src": "Media Indonesia",
+   "t": "Arti Hari Pelanggan Nasional bagi Perusahaan Asuransi",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/930412/arti-hari-pelanggan-nasional-bagi-perusahaan-asuransi",
+   "t_ko": "보험사에게 전국 고객의 날의 의미",
+   "t_id": "Arti Hari Pelanggan Nasional bagi Perusahaan Asuransi"
+  },
+  {
+   "ts": "2026-09-06T17:54:00+07:00",
+   "date": "2026-09-06",
+   "time": "17:54",
+   "src": "Media Indonesia",
+   "t": "YLBHI Desak Prabowo Tinjau Putusan Banding Prajurit TNI Penyiram Andrie Yunus",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/930410/ylbhi-desak-prabowo-tinjau-putusan-banding-prajurit-tni-penyiram-andrie-yunus",
+   "t_ko": "YLBHI, Prabowo에게 TNI 군인 Siram Andrie Yunus의 항소 결정을 검토할 것을 촉구",
+   "t_id": "YLBHI Desak Prabowo Tinjau Putusan Banding Prajurit TNI Penyiram Andrie Yunus"
+  },
+  {
+   "ts": "2026-09-06T17:29:53+07:00",
+   "date": "2026-09-06",
+   "time": "17:29",
+   "src": "Republika",
+   "t": "Bulan Dana Pensiun 2026: Taspen Ingin Dongkrak Tingkat Kepesertaan Dana Pensiun Masyarakat",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tkxe4q370/bulan-dana-pensiun-2026-taspen-ingin-dongkrak-tingkat-kepesertaan-dana-pensiun-masyarakat",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260906113515-430.png",
+   "t_ko": "2026년 연금기금의 달: Taspen은 지역사회 연금기금 멤버십 수준을 높이고 싶어합니다.",
+   "t_id": "Bulan Dana Pensiun 2026: Taspen Ingin Dongkrak Tingkat Kepesertaan Dana Pensiun Masyarakat"
+  },
+  {
+   "ts": "2026-09-06T17:20:37+07:00",
+   "date": "2026-09-06",
+   "time": "17:20",
+   "src": "Detik",
+   "t": "8 Bandara Ditutup Sementara Imbas Abu Anak Krakatau, Ini Daftarnya",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651082/8-bandara-ditutup-sementara-imbas-abu-anak-krakatau-ini-daftarnya",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/antrean-penumpang-reschedule-mengular-di-soetta-1788673854114_169.jpeg?w=360&q=90",
+   "t_id": "8 Bandara Ditutup Sementara Imbas Abu Anak Krakatau, Ini Daftarnya",
+   "t_ko": "아낙 크라카타우 화산재로 인해 8개 공항이 임시 폐쇄되었습니다. 목록은 다음과 같습니다."
+  },
+  {
+   "ts": "2026-09-06T16:55:17+07:00",
+   "date": "2026-09-06",
+   "time": "16:55",
+   "src": "Tempo",
+   "t": "Arfadia Taruh Tiga Laporan Risetnya di Zenodo",
+   "tags": [],
+   "url": "https://bisnis.tempo.co/read/2119053/arfadia-taruh-tiga-laporan-risetnya-di-zenodo",
+   "img": "https://statik.tempo.co/data/2026/09/06/id_1488506/1488506_720.jpg",
+   "t_id": "Arfadia Taruh Tiga Laporan Risetnya di Zenodo",
+   "t_ko": "Arfadia, Zenodo에 대한 세 가지 연구 보고서 제출"
+  },
+  {
+   "ts": "2026-09-06T16:46:00+07:00",
+   "date": "2026-09-06",
+   "time": "16:46",
+   "src": "Media Indonesia",
+   "t": "Kertajati Terima Dua Penerbangan Garuda dari Jeddah yang Dialihkan Akibat Terdampak Abu Vulkanik",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/930397/kertajati-terima-dua-penerbangan-garuda-dari-jeddah-yang-dialihkan-akibat-terdampak-abu-vulkanik-",
+   "t_id": "Kertajati Terima Dua Penerbangan Garuda dari Jeddah yang Dialihkan Akibat Terdampak Abu Vulkanik",
+   "t_ko": "Kertajati는 화산재의 영향으로 방향이 전환된 제다에서 두 대의 가루다 항공편을 받았습니다."
+  },
+  {
+   "ts": "2026-09-06T16:30:47+07:00",
+   "date": "2026-09-06",
+   "time": "16:30",
+   "src": "Detik",
+   "t": "Antisipasi Abu Vulkanik, Pesawat di Soekarno-Hatta Ditutup Mesinnya",
+   "tags": [],
+   "url": "https://finance.detik.com/foto-bisnis/d-8650630/antisipasi-abu-vulkanik-pesawat-di-soekarno-hatta-ditutup-mesinnya",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/antisipasi-abu-vulkanik-pesawat-di-soekarno-hatta-ditutup-mesinnya-1788667323626_169.jpeg?w=360&q=90",
+   "t_id": "Antisipasi Abu Vulkanik, Pesawat di Soekarno-Hatta Ditutup Mesinnya",
+   "t_ko": "화산재 예상, 수카르노하타의 비행기 엔진 정지"
+  },
+  {
+   "ts": "2026-09-06T16:19:37+07:00",
+   "date": "2026-09-06",
+   "time": "16:19",
+   "src": "Liputan6",
+   "t": "Berkshire Hathaway Siapkan 2 Strategi Masuk Bisnis AI",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8285771/berkshire-hathaway-siapkan-2-strategi-masuk-bisnis-ai",
+   "img": "https://cdn0-production-images-kly.akamaized.net/oi2mcMZt51aEMzSFq_pp4FyMk0E=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/7636880/original/008140100_1780426248-Berkshire_Hathaway.jpeg",
+   "t_ko": "버크셔 해서웨이, 2가지 AI 사업 진출 전략 준비",
+   "t_id": "Berkshire Hathaway Siapkan 2 Strategi Masuk Bisnis AI"
+  },
+  {
+   "ts": "2026-09-06T16:14:44+07:00",
+   "date": "2026-09-06",
+   "time": "16:14",
+   "src": "Republika",
+   "t": "15 Juta Orang Belum Punya Rekening Tabungan, Ini Target LPS",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tkxr0k490/15-juta-orang-belum-punya-rekening-tabungan-ini-target-lps",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260906161342-899.png",
+   "t_id": "15 Juta Orang Belum Punya Rekening Tabungan, Ini Target LPS",
+   "t_ko": "저축계좌 없는 1,500만명, 이것이 LPS의 목표다"
+  },
+  {
+   "ts": "2026-09-06T16:03:05+07:00",
+   "date": "2026-09-06",
+   "time": "16:03",
+   "src": "Detik",
+   "t": "CT: AI Bukan untuk Gantikan Kreativitas, tapi Jadi Alat Bantu",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651013/ct-ai-bukan-untuk-gantikan-kreativitas-tapi-jadi-alat-bantu",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/05/chairmen-ct-crop-chairul-tanjung-saat-memberikan-motivasi-kepada-pelajar-dan-mahasiswa-di-lampung-1788612492168_169.jpeg?w=360&q=90",
+   "t_id": "CT: AI Bukan untuk Gantikan Kreativitas, tapi Jadi Alat Bantu",
+   "t_ko": "CT: AI는 창의성을 대체하기 위한 것이 아니라 도구가 되기 위한 것입니다."
+  },
   {
    "ts": "2026-09-06T15:42:08+07:00",
    "date": "2026-09-06",
@@ -16141,17 +16268,6 @@
    "t_id": "Pengguna QRIS Tembus 67 Juta, Sudah Terhubung dengan Enam Negara"
   },
   {
-   "ts": "2026-09-06T15:05:00+07:00",
-   "date": "2026-09-06",
-   "time": "15:05",
-   "src": "Media Indonesia",
-   "t": "Tingkatkan Pemahaman Masyarakat terhadap Sektor Maritim dan Perkapalan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/930363/tingkatkan-pemahaman-masyarakat-terhadap-sektor-maritim-dan-perkapalan",
-   "t_id": "Tingkatkan Pemahaman Masyarakat terhadap Sektor Maritim dan Perkapalan",
-   "t_ko": "해양 및 해운 부문에 대한 대중의 이해 증진"
-  },
-  {
    "ts": "2026-09-06T15:00:53+07:00",
    "date": "2026-09-06",
    "time": "15:00",
@@ -16160,8 +16276,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8650643/alat-kebersihan-banting-harga-di-transmart-full-day-sale",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/transmart-full-day-sale-1788668114005_169.png?w=360&q=90",
-   "t_id": "Alat Kebersihan Banting Harga di Transmart Full Day Sale",
-   "t_ko": "Transmart Full Day Sale에서 청소 장비 가격 인하"
+   "t_ko": "Transmart Full Day Sale에서 청소 장비 가격 인하",
+   "t_id": "Alat Kebersihan Banting Harga di Transmart Full Day Sale"
   },
   {
    "ts": "2026-09-06T14:57:19+07:00",
@@ -16184,19 +16300,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8650927/menhub-soal-bandara-soetta-halim-4-jam-ke-depan-kami-masih-tutup",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/menhub-1788677040870_169.jpeg?w=360&q=90",
-   "t_id": "Menhub soal Bandara Soetta-Halim: 4 Jam ke Depan Kami Masih Tutup",
-   "t_ko": "소에타-할림 공항 관련 교통부 장관: 앞으로 4시간 동안 계속 폐쇄됩니다."
-  },
-  {
-   "ts": "2026-09-06T14:43:00+07:00",
-   "date": "2026-09-06",
-   "time": "14:43",
-   "src": "Media Indonesia",
-   "t": "Penutupan Bandara Soekarno-Hatta Diperpanjang hingga 17.30 WIB",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/930359/penutupan-bandara-soekarno-hatta-diperpanjang-hingga-1730-wib",
-   "t_ko": "수카르노-하타 공항 폐쇄 WIB 17시 30분까지 연장",
-   "t_id": "Penutupan Bandara Soekarno-Hatta Diperpanjang hingga 17.30 WIB"
+   "t_ko": "소에타-할림 공항 관련 교통부 장관: 앞으로 4시간 동안 계속 폐쇄됩니다.",
+   "t_id": "Menhub soal Bandara Soetta-Halim: 4 Jam ke Depan Kami Masih Tutup"
   },
   {
    "ts": "2026-09-06T14:30:26+07:00",
@@ -16207,8 +16312,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8650875/2-penerbangan-dari-arab-saudi-dialihkan-ke-kertajati",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/08/bandara-internasional-jawa-barat-bijb-kertajati-1765184327061_169.jpeg?w=360&q=90",
-   "t_id": "2 Penerbangan dari Arab Saudi Dialihkan ke Kertajati",
-   "t_ko": "사우디아라비아발 2편의 항공편이 케르타자티(Kertajati)로 우회했습니다"
+   "t_ko": "사우디아라비아발 2편의 항공편이 케르타자티(Kertajati)로 우회했습니다",
+   "t_id": "2 Penerbangan dari Arab Saudi Dialihkan ke Kertajati"
   },
   {
    "ts": "2026-09-06T14:20:31+07:00",
@@ -16219,8 +16324,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tkxlq7370/hari-pelanggan-nasional-2026-bri-life-perkuat-layanan-dan-kedekatan-dengan-nasabah",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260906141846-975.png",
-   "t_id": "Hari Pelanggan Nasional 2026, BRI Life Perkuat Layanan dan Kedekatan dengan Nasabah",
-   "t_ko": "2026년 전국 고객의 날, BRI Life, 서비스 강화 및 고객 친밀도 강화"
+   "t_ko": "2026년 전국 고객의 날, BRI Life, 서비스 강화 및 고객 친밀도 강화",
+   "t_id": "Hari Pelanggan Nasional 2026, BRI Life Perkuat Layanan dan Kedekatan dengan Nasabah"
   },
   {
    "ts": "2026-09-06T14:14:05+07:00",
@@ -16329,112 +16434,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/14/bandara-husein-sastranegara-kembali-layani-penerbangan-jet-komersil-1786699855419_169.jpeg?w=360&q=90",
    "t_ko": "가루다, 공항 폐쇄로 인해 승객 항공권 일정 변경 및 환불 준비",
    "t_id": "Garuda Siapkan Reschedule-Refund Tiket Penumpang Imbas Bandara Tutup"
-  },
-  {
-   "ts": "2026-09-06T13:30:00+07:00",
-   "date": "2026-09-06",
-   "time": "13:30",
-   "src": "Bloomberg Technoz",
-   "t": "Hadapi  El Niño, Ekonom Saran Pemerintah Perkuat Kebijakan Fiskal",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120610/hadapi-el-nino-ekonom-saran-pemerintah-perkuat-kebijakan-fiskal",
-   "img": "https://images.bloombergtechnoz.com/data/2026/04/image-20260420185100.jpg",
-   "t_ko": "엘니뇨에 직면한 경제학자들은 정부에 재정 정책을 강화하라고 조언합니다",
-   "t_id": "Hadapi  El Niño, Ekonom Saran Pemerintah Perkuat Kebijakan Fiskal"
-  },
-  {
-   "ts": "2026-09-06T13:18:56+07:00",
-   "date": "2026-09-06",
-   "time": "13:18",
-   "src": "Detik",
-   "t": "Kick Off Bulan Dana Pensiun 2026, TASPEN Kenalkan 4 Program Utama",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8650790/kick-off-bulan-dana-pensiun-2026-taspen-kenalkan-4-program-utama",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/kick-off-bulan-dana-pensiun-2026-taspen-kenalkan-4-program-utama-1788675392860_169.jpeg?w=360&q=90",
-   "t_ko": "2026년 연금 기금의 달 시작, TASPEN, 4가지 주요 프로그램 소개",
-   "t_id": "Kick Off Bulan Dana Pensiun 2026, TASPEN Kenalkan 4 Program Utama"
-  },
-  {
-   "ts": "2026-09-06T13:15:34+07:00",
-   "date": "2026-09-06",
-   "time": "13:15",
-   "src": "Detik",
-   "t": "Modus Penipuan Makin Marak, Jangan Asal Klik Link!",
-   "tags": [],
-   "url": "https://finance.detik.com/moneter/d-8650779/modus-penipuan-makin-marak-jangan-asal-klik-link",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/vice-president-bank-mandiri-region-ii-pt-bank-mandiri-persero-tbk-hari-mulyana-1788675012196_169.jpeg?w=360&q=90",
-   "t_ko": "사기가 점점 일반화되고 있습니다. 링크를 클릭만 하지 마세요!",
-   "t_id": "Modus Penipuan Makin Marak, Jangan Asal Klik Link!"
-  },
-  {
-   "ts": "2026-09-06T13:15:00+07:00",
-   "date": "2026-09-06",
-   "time": "13:15",
-   "src": "Media Indonesia",
-   "t": "Strategi Pascaperang Trump: Bendung Iran dan Perluas Abraham Accords",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/930343/strategi-pascaperang-trump-bendung-iran-dan-perluas-abraham-accords",
-   "t_ko": "트럼프의 전후 전략: 이란을 견제하고 아브라함 협정을 확장하다",
-   "t_id": "Strategi Pascaperang Trump: Bendung Iran dan Perluas Abraham Accords"
-  },
-  {
-   "ts": "2026-09-06T13:07:04+07:00",
-   "date": "2026-09-06",
-   "time": "13:07",
-   "src": "Republika",
-   "t": "Abu Vulkanik Menempel di Mobil, Begini Cara Membersihkannya Agar tak Baret",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tkxibs370/abu-vulkanik-menempel-di-mobil-begini-cara-membersihkannya-agar-tak-baret",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/025175200-1705851254-830-556.jpg",
-   "t_ko": "화산재가 자동차에 달라붙는데, 긁히지 않게 청소하는 방법은 다음과 같습니다.",
-   "t_id": "Abu Vulkanik Menempel di Mobil, Begini Cara Membersihkannya Agar tak Baret"
-  },
-  {
-   "ts": "2026-09-06T13:06:03+07:00",
-   "date": "2026-09-06",
-   "time": "13:06",
-   "src": "Jawa Pos",
-   "t": "Angka Kemiskinan versi BPS Beda Jauh dari Bank Dunia, Indef: Garis Kemiskinannya Terlalu Rendah",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609060001/angka-kemiskinan-versi-bps-beda-jauh-dari-bank-dunia-indef-garis-kemiskinannya-terlalu-rendah",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/05/10/direktur-eksekutif-institute-for-development-of-economics-and-finance-indef-esther-sri-astuti-antara-UOyRt.webp",
-   "t_ko": "빈곤 수치의 BPS 버전은 세계 은행과 매우 다릅니다. Indef: 빈곤선이 너무 낮습니다.",
-   "t_id": "Angka Kemiskinan versi BPS Beda Jauh dari Bank Dunia, Indef: Garis Kemiskinannya Terlalu Rendah"
-  },
-  {
-   "ts": "2026-09-06T12:56:04+07:00",
-   "date": "2026-09-06",
-   "time": "12:56",
-   "src": "Detik",
-   "t": "Bandara Husein Sastranegara & Pondok Cabe Ditutup Sementara!",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8650768/bandara-husein-sastranegara-pondok-cabe-ditutup-sementara",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/14/bandara-husein-sastranegara-kembali-layani-penerbangan-jet-komersil-1786699855285_169.jpeg?w=360&q=90",
-   "t_ko": "Husein Sastranegara & Pondok Cabe 공항 임시 폐쇄!",
-   "t_id": "Bandara Husein Sastranegara & Pondok Cabe Ditutup Sementara!"
-  },
-  {
-   "ts": "2026-09-06T12:47:00+07:00",
-   "date": "2026-09-06",
-   "time": "12:47",
-   "src": "Media Indonesia",
-   "t": "AirNav Perpanjang Penutupan Bandara Soekarno-Hatta, Halim, dan Radin Inten II Akibat Abu Gunung Anak Krakatau",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/930342/airnav-perpanjang-penutupan-bandara-soekarno-hatta-halim-dan-radin-inten-ii-akibat-abu-gunung-anak-krakatau",
-   "t_ko": "AirNav, Anak Krakatau Ash 산으로 인해 Soekarno-Hatta, Halim 및 Radin Inten II 공항 폐쇄 연장",
-   "t_id": "AirNav Perpanjang Penutupan Bandara Soekarno-Hatta, Halim, dan Radin Inten II Akibat Abu Gunung Anak Krakatau"
-  },
-  {
-   "ts": "2026-09-06T12:00:32+07:00",
-   "date": "2026-09-06",
-   "time": "12:00",
-   "src": "Detik",
-   "t": "Angkasa Pura Ungkap 336 Penerbangan Terdampak 3 Bandara Tutup",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8650682/angkasa-pura-ungkap-336-penerbangan-terdampak-3-bandara-tutup",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/suasana-bandara-soetta-yang-ditutup-sementara-imbas-erupsi-gunung-anak-krakatau-1788654020547_169.jpeg?w=360&q=90",
-   "t_ko": "앙카사 푸라(Angkasa Pura), 폐쇄된 공항 3곳의 영향을 받은 항공편 336편 공개",
-   "t_id": "Angkasa Pura Ungkap 336 Penerbangan Terdampak 3 Bandara Tutup"
   }
  ],
  "kisi_news": [
@@ -23080,7 +23079,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-06 01:55",
-  "pc_age_min": 856,
+  "pc_age_min": 975,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
