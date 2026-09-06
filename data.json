@@ -1,8 +1,8 @@
 {
  "mode": "live",
- "updated": "2026-09-06 18:10",
+ "updated": "2026-09-06 20:11",
  "delay_min": 0,
- "fx_basis": "13.05 IDR/KRW · USD/IDR 17,633 · USD/KRW 1,351 · 18:10 Yahoo",
+ "fx_basis": "13.05 IDR/KRW · USD/IDR 17,633 · USD/KRW 1,351 · 20:11 Yahoo",
  "idr_per_krw": 13.0508,
  "indices": [
   {
@@ -98,11 +98,11 @@
   "m1": 5.01,
   "value_idr": 15001276676523,
   "volume": 34285124590,
-  "rank_src": "Yahoo 15분 지연 · 830종목 · 종가 · 외국인·공시 PC 09-06 01:55",
+  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-06 01:55",
   "rank_asof": null,
   "rank_date": "2026-09-04",
   "adv": 276,
-  "dec": 378,
+  "dec": 379,
   "unch": 176,
   "foreign_net_idr": -311796322852.979,
   "foreign_buy": 3302821255464.0825,
@@ -5106,6 +5106,22 @@
    "lo": 1020.0,
    "ratio": 5.7,
    "fnet": 36575562.72990869,
+   "live": 0
+  },
+  {
+   "t": "ASGR",
+   "n": "Astra Graphia",
+   "px": 2160.0,
+   "prev": 2170.0,
+   "pct": -0.46,
+   "val": 2582083000.0,
+   "vol": 1189900.0,
+   "sh": 1348780500,
+   "mcap": 2913365880000.0,
+   "hi": 2200.0,
+   "lo": 2150.0,
+   "ratio": 0.7,
+   "fnet": -844710586.8560382,
    "live": 0
   },
   {
@@ -14429,11 +14445,11 @@
   {
    "name": "산업재",
    "name_id": "Perindustrian",
-   "n": 55,
+   "n": 56,
    "adv": 19,
-   "dec": 22,
-   "val": 1089412802899.9995,
-   "mcap": 472885749573724.0,
+   "dec": 23,
+   "val": 1091994885899.9995,
+   "mcap": 475799115453724.0,
    "top": [
     {
      "t": "ASII",
@@ -15335,6 +15351,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-06T20:00:00+07:00",
+   "date": "2026-09-06",
+   "time": "20:00",
+   "src": "Bloomberg Technoz",
+   "t": "Baru Ganti Pengendali, BEI Pertanyakan Salah Satu Transaksi DOOH",
+   "tags": [
+    "DOOH"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120609/baru-ganti-pengendali-bei-pertanyakan-salah-satu-transaksi-dooh",
+   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814105646.jpeg",
+   "t_ko": "방금 컨트롤러를 변경한 IDX는 DOOH 거래 중 하나에 대해 질문합니다.",
+   "t_id": "Baru Ganti Pengendali, BEI Pertanyakan Salah Satu Transaksi DOOH"
+  },
+  {
    "ts": "2026-09-06T17:43:00+07:00",
    "date": "2026-09-06",
    "time": "17:43",
@@ -15357,8 +15387,8 @@
     "NASA"
    ],
    "url": "https://mediaindonesia.com/teknologi/930374/hubble-temukan-struktur-dekagon-misterius-di-kutub-selatan-saturnus",
-   "t_id": "Hubble Temukan Struktur Dekagon Misterius di Kutub Selatan Saturnus",
-   "t_ko": "허블, 토성 남극에서 신비한 십각형 구조 발견"
+   "t_ko": "허블, 토성 남극에서 신비한 십각형 구조 발견",
+   "t_id": "Hubble Temukan Struktur Dekagon Misterius di Kutub Selatan Saturnus"
   },
   {
    "ts": "2026-09-06T17:00:00+07:00",
@@ -15385,8 +15415,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/sunindo-suni-menang-tender-casing-pertamina-ep-senilai-rp5628-miliar",
    "img": "https://img.idxchannel.com/media/439/images/idx/2024/04/01/sunindo_foto_atikah.jpg",
-   "t_id": "Sunindo (SUNI) Menang Tender Casing Pertamina EP Senilai Rp56,28 Miliar",
-   "t_ko": "Sunindo(SUNI), IDR 562억 8천만 달러 규모의 Pertamina EP 케이싱 입찰에서 승리"
+   "t_ko": "Sunindo(SUNI), IDR 562억 8천만 달러 규모의 Pertamina EP 케이싱 입찰에서 승리",
+   "t_id": "Sunindo (SUNI) Menang Tender Casing Pertamina EP Senilai Rp56,28 Miliar"
   },
   {
    "ts": "2026-09-06T16:00:00+07:00",
@@ -16021,20 +16051,6 @@
    "t_id": "Rekomendasi Saham 3 September 2026: MDKA, EMAS, KIJA, INET hingga KETR"
   },
   {
-   "ts": "2026-09-02T21:49:25+07:00",
-   "date": "2026-09-02",
-   "time": "09/02",
-   "src": "Liputan6",
-   "t": "Emiten BBHI Buyback Saham Rp 300 Miliar Mulai 3 September 2026",
-   "tags": [
-    "BBHI"
-   ],
-   "url": "https://www.liputan6.com/saham/read/8283401/emiten-bbhi-buyback-saham-rp-300-miliar-mulai-3-september-2026",
-   "img": "https://cdn0-production-images-kly.akamaized.net/tZETKcytiRd_A3VZdFR6_MGa_E8=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5182873/original/071417500_1744109076-20250408-Penutupan_IHSG-HER_2.jpg",
-   "t_ko": "BBHI, 9/3부터 Rp3,000억 자사주 매입 개시",
-   "t_id": "Emiten BBHI Buyback Saham Rp 300 Miliar Mulai 3 September 2026"
-  },
-  {
    "ts": "2026-08-24T08:33:00+07:00",
    "date": "2026-08-24",
    "time": "08/24",
@@ -16079,6 +16095,101 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-06T20:00:41+07:00",
+   "date": "2026-09-06",
+   "time": "20:00",
+   "src": "Detik",
+   "t": "Tak Langsung Ditutup, Begini Cara LPS Selamatkan Bank Bangkrut",
+   "tags": [],
+   "url": "https://finance.detik.com/moneter/d-8651146/tak-langsung-ditutup-begini-cara-lps-selamatkan-bank-bangkrut",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/anggota-dewan-komisioner-lembaga-penjamin-simpanan-lps-doddy-zulverdi-1788666949217_169.jpeg?w=360&q=90",
+   "t_ko": "즉시 폐쇄되지는 않았지만 LPS가 파산 은행을 구하는 방법은 다음과 같습니다.",
+   "t_id": "Tak Langsung Ditutup, Begini Cara LPS Selamatkan Bank Bangkrut"
+  },
+  {
+   "ts": "2026-09-06T20:00:00+07:00",
+   "date": "2026-09-06",
+   "time": "20:00",
+   "src": "Media Indonesia",
+   "t": "Kepercayaan dan Kepuasan Publik pada Pemerintahan Prabowo masih Tinggi",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/930430/kepercayaan-dan-kepuasan-publik-pada-pemerintahan-prabowo-masih-tinggi",
+   "t_id": "Kepercayaan dan Kepuasan Publik pada Pemerintahan Prabowo masih Tinggi",
+   "t_ko": "프라보워 정부에 대한 대중의 신뢰와 만족도는 여전히 높다"
+  },
+  {
+   "ts": "2026-09-06T19:47:17+07:00",
+   "date": "2026-09-06",
+   "time": "19:47",
+   "src": "Republika",
+   "t": "Status Gunung Anak Krakatau Tetap Siaga Level III, Radius Aman 3 Kilometer",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tky0ut490/status-gunung-anak-krakatau-tetap-siaga-level-iii-radius-aman-3-kilometer",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/086136300-1788694578-830-556.jpg",
+   "t_ko": "아낙 크라카타우 산 상태는 경계 수준 III, 안전 반경 3km로 유지됩니다.",
+   "t_id": "Status Gunung Anak Krakatau Tetap Siaga Level III, Radius Aman 3 Kilometer"
+  },
+  {
+   "ts": "2026-09-06T19:41:44+07:00",
+   "date": "2026-09-06",
+   "time": "19:41",
+   "src": "Republika",
+   "t": "Pasar Wiwitan SCBD Kembali Hadir di SCBD Park, Hadirkan Produk Lokal dan Ruang Berkumpul",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tky0lk490/pasar-wiwitan-scbd-kembali-hadir-di-scbd-park-hadirkan-produk-lokal-dan-ruang-berkumpul",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260906194025-383.png",
+   "t_id": "Pasar Wiwitan SCBD Kembali Hadir di SCBD Park, Hadirkan Produk Lokal dan Ruang Berkumpul",
+   "t_ko": "SCBD 위위탄 마켓(SCBD Wiwitan Market)이 SCBD 파크로 돌아와 현지 상품과 모임 공간을 선보입니다."
+  },
+  {
+   "ts": "2026-09-06T18:46:04+07:00",
+   "date": "2026-09-06",
+   "time": "18:46",
+   "src": "Medcom",
+   "t": "Bikin Ambang Jendela Makin Cantik, 5 Tanaman Ini Bisa Jadi Pilihan",
+   "tags": [],
+   "url": "https://www.medcom.id/properti/tips-properti/Wb7dpprk-bikin-ambang-jendela-makin-cantik-5-tanaman-ini-bisa-jadi-pilihan",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/06/1840377/8OsDhiGISj.jpg?w=720",
+   "t_id": "Bikin Ambang Jendela Makin Cantik, 5 Tanaman Ini Bisa Jadi Pilihan",
+   "t_ko": "창틀을 더욱 아름답게 만들고 싶다면 이 5가지 식물을 선택해보세요."
+  },
+  {
+   "ts": "2026-09-06T18:36:49+07:00",
+   "date": "2026-09-06",
+   "time": "18:36",
+   "src": "Jawa Pos",
+   "t": "Anggaran BNPB hanya Rp 490 Miliar, Ekonom Minta Dana MBG Dialihkan ke Bencana",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609060293/anggaran-bnpb-hanya-rp-490-miliar-ekonom-minta-dana-mbg-dialihkan-ke-bencana",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/22/badan-nasional-penanggulangan-bencana-bnpb-mencatat-jumlah-bantuan-untuk-korban-terdampak-gempa-bumi-di-nusa-tenggara-timur-ntt-sudah-mencapai-1541-ton-dok-bnpb-eiZC7.webp",
+   "t_id": "Anggaran BNPB hanya Rp 490 Miliar, Ekonom Minta Dana MBG Dialihkan ke Bencana",
+   "t_ko": "BNPB 예산은 IDR 4,900억에 불과하며, 경제학자들은 MBG 자금을 재난에 전용하도록 요청합니다."
+  },
+  {
+   "ts": "2026-09-06T18:18:37+07:00",
+   "date": "2026-09-06",
+   "time": "18:18",
+   "src": "Liputan6",
+   "t": "Data Inflasi AS Bakal Warnai Wall Street",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8285781/data-inflasi-as-bakal-warnai-wall-street",
+   "img": "https://cdn1-production-images-kly.akamaized.net/bVNESnhHKmYd5Dycq3p0oFsi5FU=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3074968/original/085718000_1584006687-20200312-Wall-Street-3.jpg",
+   "t_ko": "미국 인플레이션 데이터가 월스트리트를 물들일 것입니다",
+   "t_id": "Data Inflasi AS Bakal Warnai Wall Street"
+  },
+  {
+   "ts": "2026-09-06T18:00:06+07:00",
+   "date": "2026-09-06",
+   "time": "18:00",
+   "src": "Detik",
+   "t": "Dulu Dikuasai Asing, SBN Kini Banyak Dipegang Investor Ritel Dalam Negeri",
+   "tags": [],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8651015/dulu-dikuasai-asing-sbn-kini-banyak-dipegang-investor-ritel-dalam-negeri",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/direktur-jenderal-stabilitas-dan-pengembangan-sektor-keuangan-spsk-kementerian-keuangan-kemenkeu-herman-saheruddin-1788667304668_169.jpeg?w=360&q=90",
+   "t_ko": "과거 외국인이 지배하던 SBN은 현재 대부분 국내 개인 투자자들이 보유하고 있다.",
+   "t_id": "Dulu Dikuasai Asing, SBN Kini Banyak Dipegang Investor Ritel Dalam Negeri"
+  },
+  {
    "ts": "2026-09-06T18:00:00+07:00",
    "date": "2026-09-06",
    "time": "18:00",
@@ -16087,8 +16198,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tkxt1i416/bni-kenalkan-layanan-digital-di-lampung-financial-festival-2026",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260906165902-724.png",
-   "t_id": "BNI Kenalkan Layanan Digital di Lampung Financial Festival 2026",
-   "t_ko": "BNI, 2026년 람풍 금융 축제에서 디지털 서비스 소개"
+   "t_ko": "BNI, 2026년 람풍 금융 축제에서 디지털 서비스 소개",
+   "t_id": "BNI Kenalkan Layanan Digital di Lampung Financial Festival 2026"
   },
   {
    "ts": "2026-09-06T17:56:00+07:00",
@@ -16133,8 +16244,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651082/8-bandara-ditutup-sementara-imbas-abu-anak-krakatau-ini-daftarnya",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/antrean-penumpang-reschedule-mengular-di-soetta-1788673854114_169.jpeg?w=360&q=90",
-   "t_id": "8 Bandara Ditutup Sementara Imbas Abu Anak Krakatau, Ini Daftarnya",
-   "t_ko": "아낙 크라카타우 화산재로 인해 8개 공항이 임시 폐쇄되었습니다. 목록은 다음과 같습니다."
+   "t_ko": "아낙 크라카타우 화산재로 인해 8개 공항이 임시 폐쇄되었습니다. 목록은 다음과 같습니다.",
+   "t_id": "8 Bandara Ditutup Sementara Imbas Abu Anak Krakatau, Ini Daftarnya"
   },
   {
    "ts": "2026-09-06T16:55:17+07:00",
@@ -16145,8 +16256,8 @@
    "tags": [],
    "url": "https://bisnis.tempo.co/read/2119053/arfadia-taruh-tiga-laporan-risetnya-di-zenodo",
    "img": "https://statik.tempo.co/data/2026/09/06/id_1488506/1488506_720.jpg",
-   "t_id": "Arfadia Taruh Tiga Laporan Risetnya di Zenodo",
-   "t_ko": "Arfadia, Zenodo에 대한 세 가지 연구 보고서 제출"
+   "t_ko": "Arfadia, Zenodo에 대한 세 가지 연구 보고서 제출",
+   "t_id": "Arfadia Taruh Tiga Laporan Risetnya di Zenodo"
   },
   {
    "ts": "2026-09-06T16:46:00+07:00",
@@ -16156,8 +16267,8 @@
    "t": "Kertajati Terima Dua Penerbangan Garuda dari Jeddah yang Dialihkan Akibat Terdampak Abu Vulkanik",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/930397/kertajati-terima-dua-penerbangan-garuda-dari-jeddah-yang-dialihkan-akibat-terdampak-abu-vulkanik-",
-   "t_id": "Kertajati Terima Dua Penerbangan Garuda dari Jeddah yang Dialihkan Akibat Terdampak Abu Vulkanik",
-   "t_ko": "Kertajati는 화산재의 영향으로 방향이 전환된 제다에서 두 대의 가루다 항공편을 받았습니다."
+   "t_ko": "Kertajati는 화산재의 영향으로 방향이 전환된 제다에서 두 대의 가루다 항공편을 받았습니다.",
+   "t_id": "Kertajati Terima Dua Penerbangan Garuda dari Jeddah yang Dialihkan Akibat Terdampak Abu Vulkanik"
   },
   {
    "ts": "2026-09-06T16:30:47+07:00",
@@ -16168,8 +16279,8 @@
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8650630/antisipasi-abu-vulkanik-pesawat-di-soekarno-hatta-ditutup-mesinnya",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/antisipasi-abu-vulkanik-pesawat-di-soekarno-hatta-ditutup-mesinnya-1788667323626_169.jpeg?w=360&q=90",
-   "t_id": "Antisipasi Abu Vulkanik, Pesawat di Soekarno-Hatta Ditutup Mesinnya",
-   "t_ko": "화산재 예상, 수카르노하타의 비행기 엔진 정지"
+   "t_ko": "화산재 예상, 수카르노하타의 비행기 엔진 정지",
+   "t_id": "Antisipasi Abu Vulkanik, Pesawat di Soekarno-Hatta Ditutup Mesinnya"
   },
   {
    "ts": "2026-09-06T16:19:37+07:00",
@@ -16192,8 +16303,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tkxr0k490/15-juta-orang-belum-punya-rekening-tabungan-ini-target-lps",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260906161342-899.png",
-   "t_id": "15 Juta Orang Belum Punya Rekening Tabungan, Ini Target LPS",
-   "t_ko": "저축계좌 없는 1,500만명, 이것이 LPS의 목표다"
+   "t_ko": "저축계좌 없는 1,500만명, 이것이 LPS의 목표다",
+   "t_id": "15 Juta Orang Belum Punya Rekening Tabungan, Ini Target LPS"
   },
   {
    "ts": "2026-09-06T16:03:05+07:00",
@@ -16203,9 +16314,9 @@
    "t": "CT: AI Bukan untuk Gantikan Kreativitas, tapi Jadi Alat Bantu",
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651013/ct-ai-bukan-untuk-gantikan-kreativitas-tapi-jadi-alat-bantu",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/05/chairmen-ct-crop-chairul-tanjung-saat-memberikan-motivasi-kepada-pelajar-dan-mahasiswa-di-lampung-1788612492168_169.jpeg?w=360&q=90",
-   "t_id": "CT: AI Bukan untuk Gantikan Kreativitas, tapi Jadi Alat Bantu",
-   "t_ko": "CT: AI는 창의성을 대체하기 위한 것이 아니라 도구가 되기 위한 것입니다."
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/founder-chairman-ct-corp-chairul-tanjung-1788695549769_169.jpeg?w=360&q=90",
+   "t_ko": "CT: AI는 창의성을 대체하기 위한 것이 아니라 도구가 되기 위한 것입니다.",
+   "t_id": "CT: AI Bukan untuk Gantikan Kreativitas, tapi Jadi Alat Bantu"
   },
   {
    "ts": "2026-09-06T15:42:08+07:00",
@@ -16338,102 +16449,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/071565800-1788660592-830-556.jpg",
    "t_ko": "교통부, 아낙 크라카타우 화산재의 영향을 피하기 위해 3개의 대체 공항 준비",
    "t_id": "Kemenhub Siapkan 3 Bandara Alternatif Hindari Dampak Abu Vulkanik Anak Krakatau"
-  },
-  {
-   "ts": "2026-09-06T14:00:20+07:00",
-   "date": "2026-09-06",
-   "time": "14:00",
-   "src": "Detik",
-   "t": "Sarung Bantal Sofa Diobral di Transmart Full Day Sale",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8650640/sarung-bantal-sofa-diobral-di-transmart-full-day-sale",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/transmart-full-day-sale-1788667929950_169.png?w=360&q=90",
-   "t_ko": "Transmart Full Day Sale에서 소파 베개 커버 판매 중",
-   "t_id": "Sarung Bantal Sofa Diobral di Transmart Full Day Sale"
-  },
-  {
-   "ts": "2026-09-06T14:00:00+07:00",
-   "date": "2026-09-06",
-   "time": "14:00",
-   "src": "Bloomberg Technoz",
-   "t": "Demutualisasi BEI Belum Sepenuhnya Siap",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120606/demutualisasi-bei-belum-sepenuhnya-siap",
-   "img": "https://images.bloombergtechnoz.com/data/2023/05/image-20230504174414.jpg",
-   "t_ko": "BEI 탈상호화는 아직 완전히 준비되지 않았습니다",
-   "t_id": "Demutualisasi BEI Belum Sepenuhnya Siap"
-  },
-  {
-   "ts": "2026-09-06T13:57:00+07:00",
-   "date": "2026-09-06",
-   "time": "13:57",
-   "src": "Katadata",
-   "t": "Abu Anak Krakatau Ganggu Penerbangan, Maskapai Diminta Layani Refund Elektronik",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6a9d0ed4e9a71/abu-anak-krakatau-ganggu-penerbangan-maskapai-diminta-layani-refund-elektronik",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/06/2026_09_06-10_42_00_8c0e84e4-a9b9-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "Anak Krakatau 재로 인해 항공편이 중단되고 항공사에 전자 환불 제공 요청",
-   "t_id": "Abu Anak Krakatau Ganggu Penerbangan, Maskapai Diminta Layani Refund Elektronik"
-  },
-  {
-   "ts": "2026-09-06T13:48:00+07:00",
-   "date": "2026-09-06",
-   "time": "13:48",
-   "src": "Katadata",
-   "t": "Enam Bandara Ditutup Imbas Anak Krakatau, Kertajati dan Juanda Jadi Alternatif",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6a9d0cda02b70/enam-bandara-ditutup-imbas-anak-krakatau-kertajati-dan-juanda-jadi-alternatif",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/10/29/2023_10_29-14_00_07_fe0d639c-7629-11ee-be8d-ade2d0c5fade_620x413_thumb.jpg",
-   "t_ko": "Anak Krakatau, Kertajati 및 Juanda로 인해 폐쇄된 6개 공항이 대안이 됨",
-   "t_id": "Enam Bandara Ditutup Imbas Anak Krakatau, Kertajati dan Juanda Jadi Alternatif"
-  },
-  {
-   "ts": "2026-09-06T13:42:59+07:00",
-   "date": "2026-09-06",
-   "time": "13:42",
-   "src": "Detik",
-   "t": "6 Bandara Ditutup Sementara, Ratusan Penerbangan Terdampak",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8650862/6-bandara-ditutup-sementara-ratusan-penerbangan-terdampak",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/bandara-soetta-ditutup-imbas-erupsi-anak-krakatau-1788663859508_169.jpeg?w=360&q=90",
-   "t_ko": "6개 공항 임시 폐쇄, 수백 편의 항공편 영향 받음",
-   "t_id": "6 Bandara Ditutup Sementara, Ratusan Penerbangan Terdampak"
-  },
-  {
-   "ts": "2026-09-06T13:32:52+07:00",
-   "date": "2026-09-06",
-   "time": "13:32",
-   "src": "Medcom",
-   "t": "Jadi Tren Lagi, Ini Rekomendasi 5 Warna Cat Rumah Tahun 90-an",
-   "tags": [],
-   "url": "https://www.medcom.id/properti/news-properti/8N0X6D5N-jadi-tren-lagi-ini-rekomendasi-5-warna-cat-rumah-tahun-90-an",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/06/1840335/bPCXxqMBR0.jpeg?w=720",
-   "t_ko": "다시 트렌드가 되고 있는 90년대 하우스 페인트 색상 추천 5가지",
-   "t_id": "Jadi Tren Lagi, Ini Rekomendasi 5 Warna Cat Rumah Tahun 90-an"
-  },
-  {
-   "ts": "2026-09-06T13:30:58+07:00",
-   "date": "2026-09-06",
-   "time": "13:30",
-   "src": "Detik",
-   "t": "Kabut Asap Pekat, Tol Palembang-Prabumulih Ditutup Sementara",
-   "tags": [],
-   "url": "https://finance.detik.com/foto-bisnis/d-8650666/kabut-asap-pekat-tol-palembang-prabumulih-ditutup-sementara",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/kabut-asap-pekat-tol-palembang-prabumulih-ditutup-sementara-1788669281339_169.jpeg?w=360&q=90",
-   "t_ko": "짙은 안개, 팔렘방-프라부물리 유료도로 임시 폐쇄",
-   "t_id": "Kabut Asap Pekat, Tol Palembang-Prabumulih Ditutup Sementara"
-  },
-  {
-   "ts": "2026-09-06T13:30:06+07:00",
-   "date": "2026-09-06",
-   "time": "13:30",
-   "src": "Detik",
-   "t": "Garuda Siapkan Reschedule-Refund Tiket Penumpang Imbas Bandara Tutup",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8650722/garuda-siapkan-reschedule-refund-tiket-penumpang-imbas-bandara-tutup",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/14/bandara-husein-sastranegara-kembali-layani-penerbangan-jet-komersil-1786699855419_169.jpeg?w=360&q=90",
-   "t_ko": "가루다, 공항 폐쇄로 인해 승객 항공권 일정 변경 및 환불 준비",
-   "t_id": "Garuda Siapkan Reschedule-Refund Tiket Penumpang Imbas Bandara Tutup"
   }
  ],
  "kisi_news": [
@@ -23079,7 +23094,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-06 01:55",
-  "pc_age_min": 975,
+  "pc_age_min": 1096,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -23239,13 +23254,13 @@
    "ratio": 4.4,
    "ev_ko": "자본구조",
    "ev_id": "Aksi korporasi",
-   "hl": "BBHI, 9/3부터 Rp3,000억 자사주 매입 개시",
-   "url": "https://www.liputan6.com/saham/read/8283401/emiten-bbhi-buyback-saham-rp-300-miliar-mulai-3-september-2026",
+   "hl": "시장 급변동 상황 자사주 매입 계획 중요사실 공시",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/9d00973675_7fdad62f35.pdf",
    "score": 83.2,
    "s_news": 90,
    "s_size": 57,
    "s_surge": 100,
-   "srcs": 1
+   "srcs": 0
   },
   {
    "t": "CBRE",
