@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-07 12:56",
+ "updated": "2026-09-07 13:12",
  "delay_min": 0,
- "fx_basis": "13.12 IDR/KRW · USD/IDR 17,650 · USD/KRW 1,345 · 12:35 Yahoo",
- "idr_per_krw": 13.1248,
+ "fx_basis": "13.13 IDR/KRW · USD/IDR 17,650 · USD/KRW 1,344 · 13:02 Yahoo",
+ "idr_per_krw": 13.132,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -294,10 +294,11 @@
     17650.0,
     17650.0,
     17650.0,
+    17650.0,
     17650.0
    ],
    "inv": true,
-   "asof": "12:35",
+   "asof": "13:02",
    "high": 17655.0,
    "low": 17631.0,
    "src": "yahoo"
@@ -332,8 +333,8 @@
   "m1": 3.41,
   "value_idr": 15001276676523,
   "volume": 34285124590,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-07 10:49",
-  "rank_asof": "12:54",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-07 13:08",
+  "rank_asof": "13:11",
   "rank_date": "2026-09-07",
   "adv": 314,
   "dec": 306,
@@ -15296,10 +15297,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6976.69,
+   "px": 6971.31,
    "prev": 6706.56,
-   "pct": 4.03,
-   "asof": "12:35",
+   "pct": 3.95,
+   "asof": "12:50",
    "live": true,
    "spark": [
     6892.15,
@@ -15369,17 +15370,20 @@
     6963.65,
     6974.62,
     6976.59,
-    6976.69
+    6971.46,
+    6978.88,
+    6976.09,
+    6971.31
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 66265.58,
+   "px": 66246.24,
    "prev": 65054.56,
-   "pct": 1.86,
-   "asof": "12:40",
+   "pct": 1.83,
+   "asof": "12:55",
    "live": true,
    "spark": [
     65886.75,
@@ -15440,17 +15444,20 @@
     66298.11,
     66298.96,
     66266.0,
-    66265.58
+    66324.2,
+    66295.96,
+    66303.72,
+    66246.24
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25413.28,
+   "px": 25393.71,
    "prev": 25650.87,
-   "pct": -0.93,
-   "asof": "12:40",
+   "pct": -1.0,
+   "asof": "12:55",
    "live": true,
    "spark": [
     25587.16,
@@ -15493,7 +15500,10 @@
     25406.2,
     25410.51,
     25412.95,
-    25413.28
+    25404.04,
+    25405.34,
+    25398.27,
+    25393.71
    ]
   }
  ],
@@ -15574,6 +15584,34 @@
  },
  "news": [
   {
+   "ts": "2026-09-07T12:55:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:55",
+   "src": "Katadata",
+   "t": "DOOH Pivot Bisnis ke Ekosistem AI: dari Billboard ke Data Center hingga PLTS",
+   "tags": [
+    "DOOH"
+   ],
+   "url": "https://katadata.co.id/digital/teknologi/6a9e51cc877d4/dooh-pivot-bisnis-ke-ekosistem-ai-dari-billboard-ke-data-center-hingga-plts",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/05/08/PT_Era_Media_Sejahtera_Tbk_DOOH-2023_05_08-09_54_42_196c20b6fb9191fe7255b6bec523a9f4_620x413_thumb.jpeg",
+   "t_id": "DOOH Pivot Bisnis ke Ekosistem AI: dari Billboard ke Data Center hingga PLTS",
+   "t_ko": "DOOH 비즈니스를 AI 생태계로 전환: 빌보드부터 데이터 센터, PLTS까지"
+  },
+  {
+   "ts": "2026-09-07T12:53:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:53",
+   "src": "Katadata",
+   "t": "Manuver Telkom (TLKM) Kerek Kapasitas Data Center 3 Kali Lipat di Batam 2027",
+   "tags": [
+    "TLKM"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6a9e5141a61a4/manuver-telkom-tlkm-kerek-kapasitas-data-center-3-kali-lipat-di-batam-2027",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/03/21/Logo_Telkom_Indonesia-2025_03_21-15_33_00_c7fc6427d0c027ae33fb5bfafdbb5d7f_620x413_thumb.jpg",
+   "t_id": "Manuver Telkom (TLKM) Kerek Kapasitas Data Center 3 Kali Lipat di Batam 2027",
+   "t_ko": "Telkom Maneuver(TLKM)는 2027년 바탐에서 데이터 센터 용량을 3배 늘렸습니다."
+  },
+  {
    "ts": "2026-09-07T12:50:00+07:00",
    "date": "2026-09-07",
    "time": "12:50",
@@ -15600,8 +15638,8 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6a9e4e62baacc/ihsg-memerah-di-level-6628-sesi-i-tpia-bbca-cuan-ramai-dijual-asing",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/27/IHSG_ditutup_turun_017_atau_1065_poin_ke_level_6185_Foto_Katadat-2026_07_27-17_15_06_d167f2e3a605f9c0b0ffc5e8a4d8dfb8_620x413_thumb.jpg",
-   "t_id": "IHSG Memerah di Level 6.628 Sesi I, TPIA, BBCA, CUAN Ramai Dijual Asing",
-   "t_ko": "JCI, 레벨 6,628 세션 I, TPIA, BBCA, CUAN에서 외국인 매물로 붐비면서 적자 전환"
+   "t_ko": "JCI, 레벨 6,628 세션 I, TPIA, BBCA, CUAN에서 외국인 매물로 붐비면서 적자 전환",
+   "t_id": "IHSG Memerah di Level 6.628 Sesi I, TPIA, BBCA, CUAN Ramai Dijual Asing"
   },
   {
    "ts": "2026-09-07T11:58:00+07:00",
@@ -15761,6 +15799,20 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/03/21/istockphoto-batu_bara_-_21_Mar_26_-.jpg",
    "t_ko": "석탄주 강세, BUMI-AADI Cs의 행동 지켜보기",
    "t_id": "Saham Batu Bara Menguat, Simak Gerak BUMI-AADI Cs"
+  },
+  {
+   "ts": "2026-09-07T09:25:00+07:00",
+   "date": "2026-09-07",
+   "time": "09:25",
+   "src": "IDNFinancials",
+   "t": "BUMI acquires 100% of Loyal Metals for IDR 1 trillion",
+   "tags": [
+    "BUMI"
+   ],
+   "url": "https://www.idnfinancials.com/news/68438/bumi-acquires-100-of-loyal-metals-for-idr-1-trillion",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/BUMI-BAKRIE-SALIM-07092026.jpg",
+   "t_ko": "BUMI, IDR 1조에 Loyal Metals 지분 100% 인수",
+   "t_id": "BUMI mengakuisisi 100% Loyal Metals senilai Rp 1 triliun"
   },
   {
    "ts": "2026-09-07T08:31:36+07:00",
@@ -16040,20 +16092,6 @@
    "t_id": "Adhi Karya Buka Suara Soal Rencana Merger dengan PTPP"
   },
   {
-   "ts": "2026-09-04T17:20:00+07:00",
-   "date": "2026-09-04",
-   "time": "09/04",
-   "src": "IDNFinancials",
-   "t": "BTPS prepares buyback of up to IDR 1 trillion to boost liquidity",
-   "tags": [
-    "BTPS"
-   ],
-   "url": "https://www.idnfinancials.com/news/68372/btps-prepares-buyback-of-up-to-idr-1-trillion-to-boost-liquidity",
-   "img": "https://photos.idnfinancials.com/static/web/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/BTPS-min.jpg",
-   "t_ko": "BTPS 최대 Rp1조 규모 자사주 매입 추진 — 유동성 제고 목적",
-   "t_id": "BTPS Siapkan Buyback hingga Rp 1 Triliun untuk Dorong Likuiditas"
-  },
-  {
    "ts": "2026-09-04T15:42:51+07:00",
    "date": "2026-09-04",
    "time": "09/04",
@@ -16214,6 +16252,77 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-07T13:08:15+07:00",
+   "date": "2026-09-07",
+   "time": "13:08",
+   "src": "Bloomberg Technoz",
+   "t": "Penyebab IHSG Turun Tipis Siang Ini",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120732/penyebab-ihsg-turun-tipis-siang-ini",
+   "img": "https://images.bloombergtechnoz.com/data/2026/05/image-20260522184041.jpeg",
+   "t_id": "Penyebab IHSG Turun Tipis Siang Ini",
+   "t_ko": "오늘 오후 JCI가 소폭 하락한 이유"
+  },
+  {
+   "ts": "2026-09-07T13:01:54+07:00",
+   "date": "2026-09-07",
+   "time": "13:01",
+   "src": "Detik",
+   "t": "Purbaya Masih Tunggu Ini buat Bayar Utang Kopdes",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8652004/purbaya-masih-tunggu-ini-buat-bayar-utang-kopdes",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/menteri-keuangan-menkeu-purbaya-yudhi-sadewa-1788758870758_169.jpeg?w=360&q=90",
+   "t_id": "Purbaya Masih Tunggu Ini buat Bayar Utang Kopdes",
+   "t_ko": "Purbaya는 여전히 Kopdes 부채 지불을 기다리고 있습니다."
+  },
+  {
+   "ts": "2026-09-07T12:58:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:58",
+   "src": "Katadata",
+   "t": "Purbaya vs Pramono soal Obligasi Jakarta dan Dana Bagi Hasil",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/makro/6a9e542be7ec1/purbaya-vs-pramono-soal-obligasi-jakarta-dan-dana-bagi-hasil",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/Konferensi_Pers_Nota_Keuangan_dan_RAPBN_2027_Foto_KatadataFauza-2026_08_14-21_04_25_1fc13eeb35f837a7f076df30fc6680ca_620x413_thumb.jpg",
+   "t_id": "Purbaya vs Pramono soal Obligasi Jakarta dan Dana Bagi Hasil",
+   "t_ko": "자카르타 채권 및 이익 공유 기금에 관한 Purbaya vs Pramono"
+  },
+  {
+   "ts": "2026-09-07T12:57:06+07:00",
+   "date": "2026-09-07",
+   "time": "12:57",
+   "src": "Bloomberg",
+   "t": "FTSE 100 Live: UK Stock Futures Steady as Oil Approaches $98",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/live-blog/2026-09-07/ftse-100-live-pound-gilts-bonds-healey-iran-us-war-oil-prices-hormuz-what-s-moving-uk-markets-right-now-markets-today",
+   "t_ko": "FTSE 100 Live: 유가가 98달러에 접근함에 따라 영국 주식 선물은 안정세를 유지하고 있습니다.",
+   "t_id": "FTSE 100 Live: Saham Berjangka Inggris Stabil Saat Minyak Mendekati $98"
+  },
+  {
+   "ts": "2026-09-07T12:52:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:52",
+   "src": "Katadata",
+   "t": "Prabowo Pantau Aktivitas Gunung Anak Krakatau, Minta Warga Tak Panik",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6a9e511b6f8d1/prabowo-pantau-aktivitas-gunung-anak-krakatau-minta-warga-tak-panik",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/26/2026_08_26-17_26_00_e5253c2e-a146-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_ko": "Prabowo는 Anak Krakatau 산 활동을 모니터링하고 주민들에게 당황하지 말 것을 요청합니다.",
+   "t_id": "Prabowo Pantau Aktivitas Gunung Anak Krakatau, Minta Warga Tak Panik"
+  },
+  {
+   "ts": "2026-09-07T12:50:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:50",
+   "src": "Katadata",
+   "t": "Pemerintah Ganti Nama Beras SPHP jadi Beras Kita, Meluncur 20 Oktober 2026",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/industri/6a9e50a3d396c/pemerintah-ganti-nama-beras-sphp-jadi-beras-kita-meluncur-20-oktober-2026",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/Menko_Pangan_Zulkifli_Hasan-2026_09_07-12_27_11_6e0de553345c686ad46ac01f57017571_620x413_thumb.jpeg",
+   "t_id": "Pemerintah Ganti Nama Beras SPHP jadi Beras Kita, Meluncur 20 Oktober 2026",
+   "t_ko": "정부, SPHP 쌀 이름을 우리 쌀로 변경, 2026년 10월 20일 출시"
+  },
+  {
    "ts": "2026-09-07T12:47:00+07:00",
    "date": "2026-09-07",
    "time": "12:47",
@@ -16245,8 +16354,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120707/minyak-hvo-mau-dicampur-ke-biodiesel-b60-harganya-rp24-000-liter",
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260715080524.jpg",
-   "t_id": "Minyak HVO Mau Dicampur ke Biodiesel B60, Harganya Rp24.000/Liter",
-   "t_ko": "HVO 오일은 바이오디젤 B60에 혼합되기를 원했으며 가격은 Rp24.000/Liter입니다."
+   "t_ko": "HVO 오일은 바이오디젤 B60에 혼합되기를 원했으며 가격은 Rp24.000/Liter입니다.",
+   "t_id": "Minyak HVO Mau Dicampur ke Biodiesel B60, Harganya Rp24.000/Liter"
   },
   {
    "ts": "2026-09-07T12:38:00+07:00",
@@ -16475,6 +16584,18 @@
    "t_id": "Terdampak Abu Vulkanik, ASN Boleh Kerja dari Rumah?"
   },
   {
+   "ts": "2026-09-07T11:15:00+07:00",
+   "date": "2026-09-07",
+   "time": "11:15",
+   "src": "Medcom",
+   "t": "5 Rekomendasi Blender yang Tidak Berisik, Mulai Rp200 Ribuan",
+   "tags": [],
+   "url": "https://www.medcom.id/properti/news-properti/1bVzQ5nb-5-rekomendasi-blender-yang-tidak-berisik-mulai-rp200-ribuan",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/07/1840470/zTSijnqdIL.jpg?w=720",
+   "t_id": "5 Rekomendasi Blender yang Tidak Berisik, Mulai Rp200 Ribuan",
+   "t_ko": "IDR 200,000부터 시작하는 소음이 없는 블렌더에 대한 5가지 권장 사항"
+  },
+  {
    "ts": "2026-09-07T11:14:57+07:00",
    "date": "2026-09-07",
    "time": "11:14",
@@ -16485,90 +16606,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/pgn-hadirkan-langsung-bentuk-pemanfaatan-gas-bumi-lewat-city-gas-tour-1788754391516_169.jpeg?w=360&q=90",
    "t_ko": "PGN, 2026년 도시가스 투어를 통해 천연가스 활용 형태 직접 소개",
    "t_id": "PGN Kenalkan Langsung Bentuk Pemanfaatan Gas Bumi Lewat City Gas Tour 2026"
-  },
-  {
-   "ts": "2026-09-07T11:14:00+07:00",
-   "date": "2026-09-07",
-   "time": "11:14",
-   "src": "Katadata",
-   "t": "Pupuk Indonesia Jajaki Investasi Pabrik di Rusia, Target Operasi 2030",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6a9e3a21c6e5d/pupuk-indonesia-jajaki-investasi-pabrik-di-rusia-target-operasi-2030",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/Pupuk_Indonesia_dan_JSC_Ruschem-2026_09_07-11_11_42_eef5cc4f9f968d4c8dfd4017505936b8_620x413_thumb.jpeg",
-   "t_ko": "Pupuk Indonesia, 러시아 공장 투자 탐색, 운영 목표 2030",
-   "t_id": "Pupuk Indonesia Jajaki Investasi Pabrik di Rusia, Target Operasi 2030"
-  },
-  {
-   "ts": "2026-09-07T11:10:00+07:00",
-   "date": "2026-09-07",
-   "time": "11:10",
-   "src": "Republika",
-   "t": "Rupiah Melemah ke Rp 17.646 per Dolar AS, Sementara Cadangan Devisa Naik",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tkz7ac423/rupiah-melemah-ke-rp-17646-per-dolar-as-sementara-cadangan-devisa-naik",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/068653500-1780675482-830-556.jpg",
-   "t_ko": "루피아는 미국 달러당 IDR 17,646으로 약세를 보였고 외환 보유액은 증가했습니다.",
-   "t_id": "Rupiah Melemah ke Rp 17.646 per Dolar AS, Sementara Cadangan Devisa Naik"
-  },
-  {
-   "ts": "2026-09-07T11:03:42+07:00",
-   "date": "2026-09-07",
-   "time": "11:03",
-   "src": "Detik",
-   "t": "Purbaya Siap Tambah Anggaran buat Penanganan Bencana Alam",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651780/purbaya-siap-tambah-anggaran-buat-penanganan-bencana-alam",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/menteri-keuangan-purbaya-yudhi-sadewa-1788414776958_169.jpeg?w=360&q=90",
-   "t_ko": "Purbaya, 자연재해 처리 예산 증액 준비 완료",
-   "t_id": "Purbaya Siap Tambah Anggaran buat Penanganan Bencana Alam"
-  },
-  {
-   "ts": "2026-09-07T11:00:00+07:00",
-   "date": "2026-09-07",
-   "time": "11:00",
-   "src": "Bloomberg Technoz",
-   "t": "Bursa Mineral Buka Risiko Komoditas Tambang RI Ditinggal Pembeli",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120690/bursa-mineral-buka-risiko-komoditas-tambang-ri-ditinggal-pembeli",
-   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260907100514.jpg",
-   "t_ko": "광물 거래소로 인해 구매자가 인도네시아 광산 상품을 포기할 위험이 있음",
-   "t_id": "Bursa Mineral Buka Risiko Komoditas Tambang RI Ditinggal Pembeli"
-  },
-  {
-   "ts": "2026-09-07T10:56:00+07:00",
-   "date": "2026-09-07",
-   "time": "10:56",
-   "src": "Katadata",
-   "t": "BI Ungkap Alasan Terbitkan Kartu Kredit Indonesia, Jadi Buffer Konsumsi Rakyat",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/keuangan/6a9e360800fcc/bi-ungkap-alasan-terbitkan-kartu-kredit-indonesia-jadi-buffer-konsumsi-rakyat",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/20/Kartu_Kredit_Indonesia-2026_08_20-10_28_12_9183bb7afe71abbb565032df514a1b4a_620x413_thumb.jpg",
-   "t_ko": "BI, 사람들의 소비를 완충하기 위해 인도네시아 신용 카드를 발행하는 이유를 밝힙니다.",
-   "t_id": "BI Ungkap Alasan Terbitkan Kartu Kredit Indonesia, Jadi Buffer Konsumsi Rakyat"
-  },
-  {
-   "ts": "2026-09-07T10:47:00+07:00",
-   "date": "2026-09-07",
-   "time": "10:47",
-   "src": "IDX Channel",
-   "t": "Public Expose Live 2026, OJK Dorong Emiten Ungkap Kinerja dan Prospek kepada Investor",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/public-expose-live-2026-ojk-dorong-emiten-ungkap-kinerja-dan-prospek-kepada-investor",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/07/hasan_ojk_pubex.jpg",
-   "t_ko": "OJK는 2026년 공개 공개 라이브를 통해 발행사가 투자자에게 성과와 전망을 공개하도록 장려합니다.",
-   "t_id": "Public Expose Live 2026, OJK Dorong Emiten Ungkap Kinerja dan Prospek kepada Investor"
-  },
-  {
-   "ts": "2026-09-07T10:37:18+07:00",
-   "date": "2026-09-07",
-   "time": "10:37",
-   "src": "Detik",
-   "t": "7 Bandara Ditutup, 2.300 Penerbangan Terdampak",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651750/7-bandara-ditutup-2-300-penerbangan-terdampak",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/suasana-bandara-soekarno-hatta-pada-senin-792026-pagi-devidetikcom-1788749572312_169.jpeg?w=360&q=90",
-   "t_ko": "7개 공항 폐쇄, 2,300편의 항공편 영향",
-   "t_id": "7 Bandara Ditutup, 2.300 Penerbangan Terdampak"
   }
  ],
  "kisi_news": [
@@ -16740,9 +16777,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.11",
-   "d": 0.99,
-   "ytd": 12.92,
+   "v": "13.12",
+   "d": 1.07,
+   "ytd": 13.01,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16775,9 +16812,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.16",
-   "d": 0.0,
-   "ytd": 0.9,
+   "v": "99.14",
+   "d": -0.01,
+   "ytd": 0.88,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16823,9 +16860,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,813",
-   "d": 0.01,
-   "ytd": 0.79,
+   "v": "16,766",
+   "d": -0.27,
+   "ytd": 0.5,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -17479,6 +17516,28 @@
   },
   {
    "date": "2026-09-07",
+   "t": "SMGR",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Semen Indonesia Public Expose 자료",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Materi public expose Tahunan  Semen Indonesia (Persero) Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · Semen Indonesia Public Expose 자료"
+  },
+  {
+   "date": "2026-09-07",
+   "t": "SMGR",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Tahunan (KOREKSI)",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Tahunan (KOREKSI)",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose - Tahunan (KOREKSI)"
+  },
+  {
+   "date": "2026-09-07",
    "t": "INCO",
    "kind": "corp",
    "imp": 3,
@@ -17490,6 +17549,39 @@
   },
   {
    "date": "2026-09-07",
+   "t": "SOCI",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+   "title_id": "Kinerja · Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim"
+  },
+  {
+   "date": "2026-09-07",
+   "t": "AMOR",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Penyampaian Laporan Keuangan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan",
+   "title_id": "Kinerja · Penyampaian Laporan Keuangan"
+  },
+  {
+   "date": "2026-09-07",
+   "t": "AMOR",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Penyampaian Bukti Iklan Informasi Laporan Keuangan Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Penyampaian Bukti Iklan Informasi Laporan Keuangan Tahunan",
+   "title_id": "실적 공시 · Penyampaian Bukti Iklan Informasi Laporan Keuangan Tahunan"
+  },
+  {
+   "date": "2026-09-07",
    "t": "REFI",
    "kind": "corp",
    "imp": 3,
@@ -17498,17 +17590,6 @@
    "country": "ID",
    "title_ko": "실적 공시 · Rencana Penyampaian Laporan Keuangan Kuartal II 2026 Diaudit",
    "title_id": "실적 공시 · Rencana Penyampaian Laporan Keuangan Kuartal II 2026 Diaudit"
-  },
-  {
-   "date": "2026-09-07",
-   "t": "AMOR",
-   "kind": "corp",
-   "imp": 3,
-   "title": "실적 공시 · Penyampaian Laporan Keuangan Tahunan",
-   "src": "IDX 공시",
-   "country": "ID",
-   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan Tahunan",
-   "title_id": "Laporan Keuangan · Penyampaian Laporan Keuangan Tahunan"
   },
   {
    "date": "2026-09-07",
@@ -17531,6 +17612,17 @@
    "country": "ID",
    "title_ko": "특별한 · PT Yelooo Integra Datanet Tbk의 특별한 GMS 결과.",
    "title_id": "Luar Biasa · Hasil RUPS Luar Biasa  PT Yelooo Integra Datanet Tbk."
+  },
+  {
+   "date": "2026-09-07",
+   "t": "BTPS",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Bank BTPN Syariah Public Expose 자료",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Materi public expose Tahunan  PT Bank BTPN Syariah Tbk.",
+   "country": "ID",
+   "title_ko": "기업설명회 · Bank BTPN Syariah Public Expose 자료"
   },
   {
    "date": "2026-09-07",
@@ -17564,6 +17656,17 @@
    "title_id": "RUPS · Pemberitahuan RUPS Asuransi Bina Dana Arta",
    "country": "ID",
    "title_ko": "주주총회 · Asuransi Bina Dana Arta 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-07",
+   "t": "BTPS",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Tahunan (KOREKSI)",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Tahunan (KOREKSI)",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose - Tahunan (KOREKSI)"
   },
   {
    "date": "2026-09-08",
@@ -18969,6 +19072,149 @@
   }
  ],
  "announcements": [
+  {
+   "ts": "2026-09-07T12:43:18+07:00",
+   "date": "2026-09-07",
+   "time": "12:43",
+   "t": "CANI",
+   "type": "STOCK",
+   "title": "Transaksi penjualan aset berupa 1 (satu) unit kapal (Transaksi)",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/31c853ef29_bbf24ebc98.pdf",
+   "title_ko": "1개 선박 단위 형태의 자산 매각 거래(Transaction)",
+   "title_id": "Transaksi penjualan aset berupa 1 (satu) unit kapal (Transaksi)"
+  },
+  {
+   "ts": "2026-09-07T12:42:15+07:00",
+   "date": "2026-09-07",
+   "time": "12:42",
+   "t": "MIKA",
+   "type": "STOCK",
+   "title": "Penyampaian Materi Public Expose - Tahunan",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/140e09f6ee_8958b165e5.pdf",
+   "title_ko": "연례 기업설명회(Public Expose) 자료 제출",
+   "title_id": "Penyampaian Materi Public Expose - Tahunan"
+  },
+  {
+   "ts": "2026-09-07T12:30:51+07:00",
+   "date": "2026-09-07",
+   "time": "12:30",
+   "t": "OMED",
+   "type": "STOCK",
+   "title": "Penjelasan atas Informasi yang Beredar Mengenai Harga Produk Masker OneMed",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/433d3955a7_0d58b9918d.pdf",
+   "title_id": "Penjelasan atas Informasi yang Beredar Mengenai Harga Produk Masker OneMed",
+   "title_ko": "원메드 마스크 제품 가격 관련 정보 유통에 대한 설명"
+  },
+  {
+   "ts": "2026-09-07T12:00:31+07:00",
+   "date": "2026-09-07",
+   "time": "12:00",
+   "t": "INPP",
+   "type": "STOCK",
+   "title": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07092026-0079-00.pdf-0.pdf",
+   "title_ko": "상장사 주식 보유 및 보유 변동 보고",
+   "title_id": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA"
+  },
+  {
+   "ts": "2026-09-07T11:53:38+07:00",
+   "date": "2026-09-07",
+   "time": "11:53",
+   "t": "SOCI",
+   "type": "STOCK",
+   "title": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Interim",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/baec89e83d_6938afb47b.pdf",
+   "title_ko": "중간 재무제표 정보 공고 게재 증빙 제출",
+   "title_id": "Bukti Iklan Laporan Keuangan Interim"
+  },
+  {
+   "ts": "2026-09-07T11:37:11+07:00",
+   "date": "2026-09-07",
+   "time": "11:37",
+   "t": "SMIL",
+   "type": "STOCK",
+   "title": "Penjelasan atas Permintaan Penjelasan Bursa",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b8f197d991_90a9e4284e.pdf",
+   "title_ko": "거래소 조회공시 요구에 대한 답변",
+   "title_id": "Penjelasan atas Permintaan Penjelasan Bursa"
+  },
+  {
+   "ts": "2026-09-07T11:28:53+07:00",
+   "date": "2026-09-07",
+   "time": "11:28",
+   "t": "SQMI",
+   "type": "STOCK",
+   "title": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07092026-5264-00.pdf-0.pdf",
+   "title_ko": "상장사 주식 보유 및 보유 변동 보고",
+   "title_id": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA"
+  },
+  {
+   "ts": "2026-09-07T11:16:25+07:00",
+   "date": "2026-09-07",
+   "time": "11:16",
+   "t": "BTPS",
+   "type": "STOCK",
+   "title": "Penyampaian Materi Public Expose - Tahunan (KOREKSI)",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/df8e63eca3_cc42628a24.pdf",
+   "title_ko": "Public Expose 자료 제출 - 연례 (정정)",
+   "title_id": "Penyampaian Materi Public Expose Tahunan (Koreksi)"
+  },
+  {
+   "ts": "2026-09-07T11:16:25+07:00",
+   "date": "2026-09-07",
+   "time": "11:16",
+   "t": "JAYA",
+   "type": "STOCK",
+   "title": "Penjelasan atas Volatilitas Transaksi",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/51564277cf_8d86c9d8d8.pdf",
+   "title_ko": "주가·거래량 변동성에 대한 소명",
+   "title_id": "Penjelasan atas Volatilitas Transaksi"
+  },
+  {
+   "ts": "2026-09-07T11:04:02+07:00",
+   "date": "2026-09-07",
+   "time": "11:04",
+   "t": "AMOR",
+   "type": "STOCK",
+   "title": "Penyampaian Laporan Keuangan",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/8216708211_b470482b27.pdf",
+   "title_ko": "재무제표 제출",
+   "title_id": "Penyampaian Laporan Keuangan"
+  },
+  {
+   "ts": "2026-09-07T11:03:20+07:00",
+   "date": "2026-09-07",
+   "time": "11:03",
+   "t": "AMOR",
+   "type": "STOCK",
+   "title": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Tahunan",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/3d01a76edb_e4d4e0fdbe.pdf",
+   "title_ko": "연간 재무 보고서 정보 광고 증명 제출",
+   "title_id": "Penyampaian Bukti Iklan Informasi Laporan Keuangan Tahunan"
+  },
+  {
+   "ts": "2026-09-07T10:57:52+07:00",
+   "date": "2026-09-07",
+   "time": "10:57",
+   "t": "SMGR",
+   "type": "STOCK",
+   "title": "Penyampaian Materi Public Expose - Tahunan (KOREKSI)",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/1368bf4033_059c7296c3.pdf",
+   "title_ko": "Public Expose 자료 제출 - 연례 (정정)",
+   "title_id": "Penyampaian Materi Public Expose Tahunan (Koreksi)"
+  },
+  {
+   "ts": "2026-09-07T10:57:07+07:00",
+   "date": "2026-09-07",
+   "time": "10:57",
+   "t": "HATM",
+   "type": "STOCK",
+   "title": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07092026-0100-00.pdf-0.pdf",
+   "title_ko": "상장사 주식 보유 및 보유 변동 보고",
+   "title_id": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA"
+  },
   {
    "ts": "2026-09-07T10:34:16+07:00",
    "date": "2026-09-07",
@@ -20570,112 +20816,13 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/dd4951147d_93ace8f581.pdf",
    "title_ko": "임시주주총회 소집 통지 (정정)",
    "title_id": "Pemanggilan Rapat Umum Pemegang Saham Luar Biasa (KOREKSI)"
-  },
-  {
-   "ts": "2026-09-04T12:44:38+07:00",
-   "date": "2026-09-04",
-   "time": "12:44",
-   "t": "BBNI",
-   "type": "STOCK",
-   "title": "Penyampaian Materi Public Expose - Tahunan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/6503bc751e_64e2e5b849.pdf",
-   "title_ko": "연례 기업설명회(Public Expose) 자료 제출",
-   "title_id": "Penyampaian Materi Public Expose - Tahunan"
-  },
-  {
-   "ts": "2026-09-04T12:33:58+07:00",
-   "date": "2026-09-04",
-   "time": "12:33",
-   "t": "CSIS",
-   "type": "STOCK",
-   "title": "Laporan Penggunaan Dana Hasil Penawaran Umum (KOREKSI)",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/d36fc6e9c0_1a421b3c8b.pdf",
-   "title_ko": "공모자금 사용내역 보고 (정정)",
-   "title_id": "Laporan Penggunaan Dana Hasil Penawaran Umum (Koreksi)"
-  },
-  {
-   "ts": "2026-09-04T12:30:49+07:00",
-   "date": "2026-09-04",
-   "time": "12:30",
-   "t": "UFOE",
-   "type": "STOCK",
-   "title": "Penjelasan atas Volatilitas Transaksi",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/9cc2894bf9_d2a21732a8.pdf",
-   "title_ko": "주가·거래량 변동성에 대한 소명",
-   "title_id": "Penjelasan atas Volatilitas Transaksi"
-  },
-  {
-   "ts": "2026-09-04T12:02:28+07:00",
-   "date": "2026-09-04",
-   "time": "12:02",
-   "t": "BAIK",
-   "type": "STOCK",
-   "title": "Penyampaian Materi Public Expose - Insidentil",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/4fef1ae562_384ff8d172.pdf",
-   "title_ko": "Public Expose 자료 제출 — 수시",
-   "title_id": "Penyampaian Materi Public Expose - Insidentil"
-  },
-  {
-   "ts": "2026-09-04T12:00:19+07:00",
-   "date": "2026-09-04",
-   "time": "12:00",
-   "t": "CUAN",
-   "type": "STOCK",
-   "title": "Pengumuman Negosiasi Sehubungan Dengan Rencana Pengambilalihan PT Singaraja Putra Tbk",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/183a73b163_2e996ca10d.pdf",
-   "title_ko": "PT Singaraja Putra Tbk 인수 계획 관련 협상 공시",
-   "title_id": "Pengumuman Negosiasi Terkait Rencana Pengambilalihan PT Singaraja Putra Tbk"
-  },
-  {
-   "ts": "2026-09-04T11:43:01+07:00",
-   "date": "2026-09-04",
-   "time": "11:43",
-   "t": "SIDO",
-   "type": "STOCK",
-   "title": "Penyampaian Materi Public Expose - Tahunan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/51bce25d28_44e0b156fa.pdf",
-   "title_ko": "연례 기업설명회(Public Expose) 자료 제출",
-   "title_id": "Penyampaian Materi Public Expose - Tahunan"
-  },
-  {
-   "ts": "2026-09-04T11:22:17+07:00",
-   "date": "2026-09-04",
-   "time": "11:22",
-   "t": "MOLI",
-   "type": "STOCK",
-   "title": "Penjelasan atas Volatilitas Transaksi",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/47319ca8c9_d6c55faf46.pdf",
-   "title_ko": "주가·거래량 변동성에 대한 소명",
-   "title_id": "Penjelasan atas Volatilitas Transaksi"
-  },
-  {
-   "ts": "2026-09-04T11:18:37+07:00",
-   "date": "2026-09-04",
-   "time": "11:18",
-   "t": "GEMA",
-   "type": "STOCK",
-   "title": "Penjelasan atas Volatilitas Transaksi",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/784f292ec2_07a712664d.pdf",
-   "title_ko": "주가·거래량 변동성에 대한 소명",
-   "title_id": "Penjelasan atas Volatilitas Transaksi"
-  },
-  {
-   "ts": "2026-09-04T10:49:47+07:00",
-   "date": "2026-09-04",
-   "time": "10:49",
-   "t": "SMBR",
-   "type": "STOCK",
-   "title": "Penjelasan atas Volatilitas Transaksi",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/308481bdf7_47157eda5b.pdf",
-   "title_ko": "주가·거래량 변동성에 대한 소명",
-   "title_id": "Penjelasan atas Volatilitas Transaksi"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-07 10:49",
-  "pc_age_min": 127,
+  "idx_from_pc": "2026-09-07 13:08",
+  "pc_age_min": 4,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21785,11 +21932,11 @@
    "ev_id": "Aksi korporasi",
    "hl": "상장사 BTPS, Rp1조 규모 Buyback 추진",
    "url": "https://www.liputan6.com/saham/read/8284983/emiten-btps-bakal-buyback-saham-rp-1-triliun",
-   "score": 83.5,
-   "s_news": 98,
+   "score": 80.3,
+   "s_news": 90,
    "s_size": 48,
    "s_surge": 100,
-   "srcs": 2
+   "srcs": 1
   },
   {
    "t": "PRDA",
@@ -21810,24 +21957,6 @@
    "srcs": 0
   },
   {
-   "t": "CUAN",
-   "n": "Petrindo Jaya Kreasi",
-   "px": 945.0,
-   "pct": 0.53,
-   "val": 269414679333.33334,
-   "mcap": 106235860500000.0,
-   "ratio": 0.5,
-   "ev_ko": "지분매각·경영권",
-   "ev_id": "Divestasi & pengendali",
-   "hl": "상장사 CUAN, SINI 신규 지배주주 등극 예정",
-   "url": "https://www.liputan6.com/saham/read/8285711/emiten-cuan-bakal-jadi-pengendali-baru-sini",
-   "score": 62.7,
-   "s_news": 100,
-   "s_size": 76,
-   "s_surge": 0,
-   "srcs": 1
-  },
-  {
    "t": "BUMI",
    "n": "Bumi Resources",
    "px": 224.0,
@@ -21844,6 +21973,24 @@
    "s_size": 73,
    "s_surge": 0,
    "srcs": 0
+  },
+  {
+   "t": "CUAN",
+   "n": "Petrindo Jaya Kreasi",
+   "px": 945.0,
+   "pct": 0.53,
+   "val": 269414679333.33334,
+   "mcap": 106235860500000.0,
+   "ratio": 0.5,
+   "ev_ko": "지분매각·경영권",
+   "ev_id": "Divestasi & pengendali",
+   "hl": "상장사 CUAN, SINI 신규 지배주주 등극 예정",
+   "url": "https://www.liputan6.com/saham/read/8285711/emiten-cuan-bakal-jadi-pengendali-baru-sini",
+   "score": 60.7,
+   "s_news": 95,
+   "s_size": 76,
+   "s_surge": 0,
+   "srcs": 1
   },
   {
    "t": "KAEF",
