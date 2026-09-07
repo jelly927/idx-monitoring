@@ -2035,6 +2035,8 @@ def _gemini(prompt, max_tokens=1500, temperature=0.2, search=False):
             if r.status_code == 400 and use_search: _GEM["nosearch"] = True; use_search = False; continue          # 검색 도구 거부
             if r.status_code == 400 and "thinkingConfig" in gc: _GEM["nothink"] = True; gc.pop("thinkingConfig", None); continue   # thinking 옵션 거부
             if r.status_code == 400 and "responseMimeType" in gc: _GEM["nojson"] = True; gc.pop("responseMimeType", None); continue  # JSON 모드 거부
+            if r.status_code == 429 and use_search:                                 # 검색 그라운딩은 별도(아주 작은) 무료 한도 → 검색 빼고 재시도
+                _GEM["nosearch"] = True; use_search = False; log("Gemini 검색 그라운딩 한도 → 검색 없이 재시도"); continue
             if r.status_code == 429:
                 msg = re.sub(r"\s+", " ", r.text)
                 if re.search(r"per.?day|daily|PerDay", msg, re.I) or _GEM.get("r429_model") == model:   # 일일 한도 소진 → 다른 모델로
