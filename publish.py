@@ -28,7 +28,7 @@ def token():
     t = os.environ.get("GITHUB_TOKEN")
     p = ROOT / "secrets.json"
     if not t and p.exists():
-        try: t = json.loads(p.read_text(encoding="utf-8")).get("github_token")
+        try: t = json.loads(p.read_text(encoding="utf-8-sig")).get("github_token")   # BOM 허용 (PowerShell 저장 대비)
         except Exception as e: sys.exit(f"secrets.json 파싱 실패: {e}")
     if not t:
         sys.exit("토큰 없음: secrets.json 에 {\"github_token\": \"github_pat_...\"} 저장 (README '자동 배포' 참고)")
