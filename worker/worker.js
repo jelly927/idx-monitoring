@@ -25,7 +25,7 @@ const CTX_PATH = "/data/cache/chat_context.json";
 const GEMINI_HOST = "https://generativelanguage.googleapis.com";
 const GEMINI_PATH = "/v1beta/interactions";
 const MODEL_DEFAULT = "gemini-3.8-flash";
-const TYPES = { html: "text/html; charset=utf-8", json: "application/json; charset=utf-8", js: "text/javascript; charset=utf-8", css: "text/css; charset=utf-8", png: "image/png", svg: "image/svg+xml", ico: "image/x-icon" };
+const TYPES = { html: "text/html; charset=utf-8", json: "application/json; charset=utf-8", js: "text/javascript; charset=utf-8", css: "text/css; charset=utf-8", png: "image/png", svg: "image/svg+xml", ico: "image/x-icon", pdf: "application/pdf" };
 const ALLOW = ["query1.finance.yahoo.com", "query2.finance.yahoo.com", "www.idx.co.id"];   // (선택) ?url= 프록시 — GitHub 러너가 IDX 에 막힐 때 사용
 
 // 챗봇 입력 상한 — 비용·남용 방어
