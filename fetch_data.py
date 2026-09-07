@@ -52,13 +52,15 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15) AppleWebKit/537.36 (KHTML, l
 # IDX 는 Cloudflare 뒤라 python requests 가 403 으로 막힌다. 실제 크로미움으로 열면 통과한다.
 # 지속 세션(start() 후 계속 보유)은 Windows 에서 "browser has been closed" 로 끊기므로
 # 반드시 with sync_playwright() 블록 안에서 열고 닫는다.
-def _pw_call(job, label="", timeout=300):
+def _pw_call(job, label="", timeout=180):
     """모든 브라우저 작업을 전용 스레드 하나에 몰아서 처리한다.
     - playwright sync API 는 asyncio 루프가 도는 스레드에서 못 쓴다 (yfinance 가 루프를 남긴다)
       → "Playwright Sync API inside the asyncio loop" 오류의 원인
     - playwright 객체는 스레드 간 공유가 안 되므로 세션도 이 스레드에 묶는다"""
     if threading.current_thread() is _PWQ.get("th"):
         return job()                                   # 이미 워커 스레드 안이면 바로 실행
+    if _PWQ.get("dead") and time.time() - _PWQ["dead"] < 600 and label != "close":
+        return None                                    # 브라우저가 죽어 있으면 10분간 브라우저 작업을 건너뛴다 (건당 타임아웃 대기 방지)
     if _PWQ["q"] is None:
         _PWQ["q"] = _queue.Queue()
         def _loop():
@@ -82,10 +84,21 @@ def _pw_call(job, label="", timeout=300):
     box, ev = {}, threading.Event()
     _PWQ["q"].put((job, box, ev))
     if not ev.wait(timeout=timeout):
-        log("브라우저 시간 초과", label); return None
+        log("브라우저 시간 초과", label); _pw_mark_fail(); return None
     if "e" in box:
-        log("브라우저 실패", label, str(box["e"])[:120], box.get("diag", "")); return None
+        log("브라우저 실패", label, str(box["e"])[:120], box.get("diag", ""))
+        if re.search(r"closed|driver|Target|crash|Connection", str(box["e"]), re.I): _pw_mark_fail()
+        return None
+    _PWQ["fails"] = 0
     return box.get("v")
+
+def _pw_mark_fail():
+    """연속 2회 브라우저 장애면 '죽음' 표시 → 10분간 브라우저 경로를 건너뛴다. 빌드 시작 시 해제"""
+    _PWQ["fails"] = _PWQ.get("fails", 0) + 1
+    if _PWQ["fails"] >= 2 and not _PWQ.get("dead"):
+        _PWQ["dead"] = time.time(); log("브라우저 장애 반복 → 10분간 브라우저 작업 건너뜀 (IDX·investing 은 캐시/PC 분 사용)")
+        try: _PWQ["q"].put((_pw_shutdown, {}, threading.Event()))
+        except Exception: pass
 
 def _pw_browser():
     """워커 스레드 안에서만 호출. sync_playwright 인스턴스는 프로세스당 하나만 띄운다.
@@ -93,14 +106,23 @@ def _pw_browser():
     br = _PWQ.get("br")
     if br is not None:
         try:
-            br.contexts; return br
-        except Exception:
-            _pw_shutdown()
+            if br.is_connected(): return br
+        except Exception: pass
+        _pw_shutdown()
     from playwright.sync_api import sync_playwright
-    _PWQ["pw"] = sync_playwright().start()
-    _PWQ["br"] = _PWQ["pw"].chromium.launch()
-    log("브라우저 기동")
-    return _PWQ["br"]
+    for attempt in (1, 2):
+        try:
+            _PWQ["pw"] = sync_playwright().start()
+            _PWQ["br"] = _PWQ["pw"].chromium.launch()
+            _PWQ["br"].new_page().close()                 # 드라이버 연결 확인 (기동 직후 끊기는 경우 감지)
+            log("브라우저 기동"); return _PWQ["br"]
+        except Exception as e:
+            log("브라우저 기동 실패", attempt, str(e)[:100]); _pw_shutdown()
+            if attempt == 1 and not _PWQ.get("reinstalled"):   # 크로미움 손상·버전 불일치 대비 1회 재설치
+                _PWQ["reinstalled"] = True
+                try: subprocess.call([sys.executable, "-m", "playwright", "install", "chromium"], timeout=600)
+                except Exception: pass
+    raise RuntimeError("browser launch failed")
 
 def _pw_shutdown():
     """워커 스레드 안에서만 호출."""
@@ -2408,6 +2430,7 @@ def housekeeping():
     except Exception as e: log("캐시 정리 오류", e)
 
 def build():
+    _PWQ["dead"] = None; _PWQ["fails"] = 0
     m = manual(); yb = CFG["ytd_base"]
     mk = idx_market(); ix = idx_index(); bi = bi_indicators()
     IDX_PART = ROOT / "data" / "idx_part.json"; idx_from_pc = None
