@@ -2346,6 +2346,13 @@ def ai_index(data, ttl_min=30):
         "출력은 JSON 하나만: {\"ko\": \"한국어 한 문장\", \"id\": \"Bahasa Indonesia satu kalimat\"}\n\n"
         + json.dumps(ctx, ensure_ascii=False))
     j = _json_loads_loose(_gemini(prompt, 700, search=True))
+    if not j or not j.get("ko"):                                   # 검색 그라운딩 실패 시 무검색 재시도
+        j = _json_loads_loose(_gemini(prompt, 700, search=False))
+    if (not j or not j.get("ko")) and _secret("anthropic_api_key"):  # 최후 폴백 — Claude
+        try:
+            model = (CFG.get("translate") or {}).get("claude_model", "claude-sonnet-4-5")
+            j = _json_loads_loose(_claude_complete(prompt, _secret("anthropic_api_key"), model) or "")
+        except Exception as e: log("지수 요약 Claude 폴백 실패", e)
     if not j or not j.get("ko"):
         return {"ko": cache.get("ko", ""), "id": cache.get("id", ""), "ts": ts} if cache.get("ko") else {}
     out = {"ko": str(j.get("ko", ""))[:200], "id": str(j.get("id", ""))[:250], "ts": now.isoformat()}
