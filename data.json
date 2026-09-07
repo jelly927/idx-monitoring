@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-07 12:40",
+ "updated": "2026-09-07 12:56",
  "delay_min": 0,
  "fx_basis": "13.12 IDR/KRW · USD/IDR 17,650 · USD/KRW 1,345 · 12:35 Yahoo",
- "idr_per_krw": 13.1238,
+ "idr_per_krw": 13.1248,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -333,7 +333,7 @@
   "value_idr": 15001276676523,
   "volume": 34285124590,
   "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-07 10:49",
-  "rank_asof": "12:39",
+  "rank_asof": "12:54",
   "rank_date": "2026-09-07",
   "adv": 314,
   "dec": 306,
@@ -15296,10 +15296,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6960.74,
+   "px": 6976.69,
    "prev": 6706.56,
-   "pct": 3.79,
-   "asof": "12:15",
+   "pct": 4.03,
+   "asof": "12:35",
    "live": true,
    "spark": [
     6892.15,
@@ -15365,17 +15365,21 @@
     6955.99,
     6949.6,
     6954.14,
-    6960.74
+    6963.04,
+    6963.65,
+    6974.62,
+    6976.59,
+    6976.69
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 66269.12,
+   "px": 66265.58,
    "prev": 65054.56,
-   "pct": 1.87,
-   "asof": "12:20",
+   "pct": 1.86,
+   "asof": "12:40",
    "live": true,
    "spark": [
     65886.75,
@@ -15432,17 +15436,21 @@
     66266.08,
     66264.06,
     66269.68,
-    66269.12
+    66290.6,
+    66298.11,
+    66298.96,
+    66266.0,
+    66265.58
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25394.48,
+   "px": 25413.28,
    "prev": 25650.87,
-   "pct": -1.0,
-   "asof": "12:20",
+   "pct": -0.93,
+   "asof": "12:40",
    "live": true,
    "spark": [
     25587.16,
@@ -15481,7 +15489,11 @@
     25384.41,
     25390.69,
     25391.75,
-    25394.48
+    25394.48,
+    25406.2,
+    25410.51,
+    25412.95,
+    25413.28
    ]
   }
  ],
@@ -15561,6 +15573,36 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-07T12:50:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:50",
+   "src": "IDNFinancials",
+   "t": "Data centres take up land bank, DMAS struggles to expand",
+   "tags": [
+    "DMAS"
+   ],
+   "url": "https://www.idnfinancials.com/news/68454/data-centres-take-up-land-bank-dmas-struggles-to-expand",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/DMAS-28072026.jpg",
+   "t_ko": "데이터 센터가 토지 은행을 차지하고 DMAS는 확장에 어려움을 겪고 있습니다.",
+   "t_id": "Pusat data menggunakan cadangan lahan, DMAS kesulitan untuk berkembang"
+  },
+  {
+   "ts": "2026-09-07T12:40:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:40",
+   "src": "Katadata",
+   "t": "IHSG Memerah di Level 6.628 Sesi I, TPIA, BBCA, CUAN Ramai Dijual Asing",
+   "tags": [
+    "BBCA",
+    "CUAN",
+    "TPIA"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6a9e4e62baacc/ihsg-memerah-di-level-6628-sesi-i-tpia-bbca-cuan-ramai-dijual-asing",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/27/IHSG_ditutup_turun_017_atau_1065_poin_ke_level_6185_Foto_Katadat-2026_07_27-17_15_06_d167f2e3a605f9c0b0ffc5e8a4d8dfb8_620x413_thumb.jpg",
+   "t_id": "IHSG Memerah di Level 6.628 Sesi I, TPIA, BBCA, CUAN Ramai Dijual Asing",
+   "t_ko": "JCI, 레벨 6,628 세션 I, TPIA, BBCA, CUAN에서 외국인 매물로 붐비면서 적자 전환"
+  },
   {
    "ts": "2026-09-07T11:58:00+07:00",
    "date": "2026-09-07",
@@ -15719,20 +15761,6 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/03/21/istockphoto-batu_bara_-_21_Mar_26_-.jpg",
    "t_ko": "석탄주 강세, BUMI-AADI Cs의 행동 지켜보기",
    "t_id": "Saham Batu Bara Menguat, Simak Gerak BUMI-AADI Cs"
-  },
-  {
-   "ts": "2026-09-07T09:23:13+07:00",
-   "date": "2026-09-07",
-   "time": "09:23",
-   "src": "Medcom",
-   "t": "Harga Emas Antam Hari Ini Turun Tipis Buyback Jadi Rp2,490 Juta",
-   "tags": [
-    "ANTM"
-   ],
-   "url": "https://www.medcom.id/ekonomi/bisnis/PNg1r29k-harga-emas-antam-hari-ini-turun-tipis-buyback-jadi-rp2-490-juta",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/07/1840424/WRK0q5G7Xc.jpg?w=720",
-   "t_ko": "오늘의 Antam 금 가격은 환매로 IDR 2,490 Million으로 소폭 하락했습니다.",
-   "t_id": "Harga Emas Antam Hari Ini Turun Tipis Buyback Jadi Rp2,490 Juta"
   },
   {
    "ts": "2026-09-07T08:31:36+07:00",
@@ -16186,6 +16214,52 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-07T12:47:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:47",
+   "src": "Media Indonesia",
+   "t": "Meski Ada Pro Kontra, DPR Kebut RUU Perampasan Aset Diketok 15 Desember",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/930542/meski-ada-pro-kontra-dpr-kebut-ruu-perampasan-aset-diketok-15-desember",
+   "t_ko": "찬반양론 있음에도 불구하고 조선민주주의인민공화국은 12월 15일 자산몰수법 통과를 서두르고 있다.",
+   "t_id": "Meski Ada Pro Kontra, DPR Kebut RUU Perampasan Aset Diketok 15 Desember"
+  },
+  {
+   "ts": "2026-09-07T12:45:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:45",
+   "src": "IDNFinancials",
+   "t": "JCI falls 0.12% in first session, foreigners buy these stocks",
+   "tags": [],
+   "url": "https://www.idnfinancials.com/news/68453/jci-falls-0-12-in-first-session-foreigners-buy-these-stocks",
+   "img": "https://photos.idnfinancials.com/d/500x300/2024/Ilustrasi%20adhy/IHSG.JPG",
+   "t_ko": "JCI가 첫 번째 세션에서 0.12% 하락, 외국인이 해당 주식을 매수",
+   "t_id": "IHSG turun 0,12% di sesi pertama, asing beli saham tersebut"
+  },
+  {
+   "ts": "2026-09-07T12:40:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:40",
+   "src": "Bloomberg Technoz",
+   "t": "Minyak HVO Mau Dicampur ke Biodiesel B60, Harganya Rp24.000/Liter",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120707/minyak-hvo-mau-dicampur-ke-biodiesel-b60-harganya-rp24-000-liter",
+   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260715080524.jpg",
+   "t_id": "Minyak HVO Mau Dicampur ke Biodiesel B60, Harganya Rp24.000/Liter",
+   "t_ko": "HVO 오일은 바이오디젤 B60에 혼합되기를 원했으며 가격은 Rp24.000/Liter입니다."
+  },
+  {
+   "ts": "2026-09-07T12:38:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:38",
+   "src": "Media Indonesia",
+   "t": "Purbaya: Pemerintah Siapkan Tambahan Anggaran Bencana",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/930541/purbaya-pemerintah-siapkan-tambahan-anggaran-bencana",
+   "t_ko": "Purbaya: 정부는 추가 재해 예산을 준비합니다",
+   "t_id": "Purbaya: Pemerintah Siapkan Tambahan Anggaran Bencana"
+  },
+  {
    "ts": "2026-09-07T12:35:00+07:00",
    "date": "2026-09-07",
    "time": "12:35",
@@ -16198,18 +16272,6 @@
    "t_id": "Kemenhub Siapkan Bandara Alternatif Imbas Penutupan Sejumlah Bandara"
   },
   {
-   "ts": "2026-09-07T12:31:00+07:00",
-   "date": "2026-09-07",
-   "time": "12:31",
-   "src": "Katadata",
-   "t": "Misteri Suara Dentuman di Jawa Barat, Benarkah dari Anak Krakatau?",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6a9e4c319ea5b/misteri-suara-dentuman-di-jawa-barat-benarkah-dari-anak-krakatau",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/Gunung_Anak_Krakatau-2026_09_07-09_06_38_ecc9f6bbe9587d53005c476496573f9b_620x413_thumb.png",
-   "t_id": "Misteri Suara Dentuman di Jawa Barat, Benarkah dari Anak Krakatau?",
-   "t_ko": "서부 자바에서 들려오는 웅웅거리는 소리의 미스터리, 정말 크라카토아 아이들의 소리였나요?"
-  },
-  {
    "ts": "2026-09-07T12:29:00+07:00",
    "date": "2026-09-07",
    "time": "12:29",
@@ -16220,6 +16282,18 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/26/2026_08_26-15_17_00_301a5384-a12b-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
    "t_ko": "Purbaya는 자연 재해 처리를 위한 예산을 보장합니다: 제한되지 않음",
    "t_id": "Purbaya Pastikan Anggaran Penanganan Bencana Alam Tersedia: Tidak Dibatasi"
+  },
+  {
+   "ts": "2026-09-07T12:28:44+07:00",
+   "date": "2026-09-07",
+   "time": "12:28",
+   "src": "Detik",
+   "t": "Pramono Tetap Mau Terbitkan Obligasi, Purbaya Bilang Begini",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651925/pramono-tetap-mau-terbitkan-obligasi-purbaya-bilang-begini",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/menteri-keuangan-menkeu-purbaya-yudhi-sadewa-1788758870844_169.jpeg?w=360&q=90",
+   "t_ko": "Pramono는 여전히 채권 발행을 원한다고 Purbaya는 말합니다.",
+   "t_id": "Pramono Tetap Mau Terbitkan Obligasi, Purbaya Bilang Begini"
   },
   {
    "ts": "2026-09-07T12:18:22+07:00",
@@ -16485,18 +16559,6 @@
    "t_id": "Public Expose Live 2026, OJK Dorong Emiten Ungkap Kinerja dan Prospek kepada Investor"
   },
   {
-   "ts": "2026-09-07T10:38:51+07:00",
-   "date": "2026-09-07",
-   "time": "10:38",
-   "src": "Bloomberg Technoz",
-   "t": "Uang Primer (M0) Masih Tumbuh Tinggi Meski Melambat",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120694/uang-primer-m0-masih-tumbuh-tinggi-meski-melambat",
-   "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260604174017.jpeg",
-   "t_ko": "기본화폐(M0)는 둔화되긴 했지만 여전히 높은 성장세를 보이고 있다",
-   "t_id": "Uang Primer (M0) Masih Tumbuh Tinggi Meski Melambat"
-  },
-  {
    "ts": "2026-09-07T10:37:18+07:00",
    "date": "2026-09-07",
    "time": "10:37",
@@ -16507,42 +16569,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/suasana-bandara-soekarno-hatta-pada-senin-792026-pagi-devidetikcom-1788749572312_169.jpeg?w=360&q=90",
    "t_ko": "7개 공항 폐쇄, 2,300편의 항공편 영향",
    "t_id": "7 Bandara Ditutup, 2.300 Penerbangan Terdampak"
-  },
-  {
-   "ts": "2026-09-07T10:27:00+07:00",
-   "date": "2026-09-07",
-   "time": "10:27",
-   "src": "IDX Channel",
-   "t": "OJK Sebut Keterbukaan Informasi Bukan Formalitas, Emiten Harus Jujur Sampaikan Pernyataan",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/ojk-sebut-keterbukaan-informasi-bukan-formalitas-emiten-harus-jujur-sampaikan-pernyataan",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/07/hasan_ojk_pubex.jpg",
-   "t_ko": "OJK는 정보 공개가 형식적인 것이 아니며 발행인은 진술을 정직하게 전달해야 한다고 말합니다.",
-   "t_id": "OJK Sebut Keterbukaan Informasi Bukan Formalitas, Emiten Harus Jujur Sampaikan Pernyataan"
-  },
-  {
-   "ts": "2026-09-07T10:23:15+07:00",
-   "date": "2026-09-07",
-   "time": "10:23",
-   "src": "Republika",
-   "t": "8 Bandara Ditutup, Menhub: Keselamatan Jadi Prioritas Utama",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tkz5er423/8-bandara-ditutup-menhub-keselamatan-jadi-prioritas-utama",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/095646700-1788704356-830-556.jpg",
-   "t_ko": "8개 공항 폐쇄, 교통부 장관 “안전이 최우선”",
-   "t_id": "8 Bandara Ditutup, Menhub: Keselamatan Jadi Prioritas Utama"
-  },
-  {
-   "ts": "2026-09-07T10:21:00+07:00",
-   "date": "2026-09-07",
-   "time": "10:21",
-   "src": "Bloomberg Technoz",
-   "t": "Demutualisasi BEI, OJK Pisahkan Kepemilikan dari Hak Perdagangan",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120689/demutualisasi-bei-ojk-pisahkan-kepemilikan-dari-hak-perdagangan",
-   "img": "https://images.bloombergtechnoz.com/data/2025/06/image-20250602181333.jpg",
-   "t_ko": "BEI 탈상호화, OJK, 소유권과 거래권 분리",
-   "t_id": "Demutualisasi BEI, OJK Pisahkan Kepemilikan dari Hak Perdagangan"
   }
  ],
  "kisi_news": [
@@ -16714,9 +16740,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.13",
-   "d": 1.08,
-   "ytd": 13.02,
+   "v": "13.11",
+   "d": 0.99,
+   "ytd": 12.92,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16749,8 +16775,8 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.17",
-   "d": 0.01,
+   "v": "99.16",
+   "d": 0.0,
    "ytd": 0.9,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -16797,9 +16823,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,804",
-   "d": -0.04,
-   "ytd": 0.73,
+   "v": "16,813",
+   "d": 0.01,
+   "ytd": 0.79,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20649,7 +20675,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-07 10:49",
-  "pc_age_min": 111,
+  "pc_age_min": 127,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21892,24 +21918,6 @@
    "srcs": 1
   },
   {
-   "t": "ANTM",
-   "n": "ANTAM Tbk",
-   "px": 3080.0,
-   "pct": -1.28,
-   "val": 106348800000.0,
-   "mcap": 74014755353000.0,
-   "ratio": 0.4,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "오늘의 Antam 금 가격은 환매로 IDR 2,490 Million으로 소폭 하락했습니다.",
-   "url": "https://www.medcom.id/ekonomi/bisnis/PNg1r29k-harga-emas-antam-hari-ini-turun-tipis-buyback-jadi-rp2-490-juta",
-   "score": 53.5,
-   "s_news": 80,
-   "s_size": 72,
-   "s_surge": 0,
-   "srcs": 1
-  },
-  {
    "t": "INDY",
    "n": "Indika Energy",
    "px": 2770.0,
@@ -21924,6 +21932,24 @@
    "score": 52.2,
    "s_news": 90,
    "s_size": 54,
+   "s_surge": 0,
+   "srcs": 0
+  },
+  {
+   "t": "RATU",
+   "n": "Raharja Energi Cepu",
+   "px": 4580.0,
+   "pct": 2.0,
+   "val": 42086536000.0,
+   "mcap": 12434946404000.0,
+   "ratio": 0.9,
+   "ev_ko": "자본구조",
+   "ev_id": "Aksi korporasi",
+   "hl": "PT Raharja Energi Cepu Tbk(RATU)는 제3자배정 유상증자를 통해 271,505,380주의 주식을 발행할 예정이며, 이는 기존 2,715,053,800주에서 총 2,986,559,180주로 증가하는 규모임. 증자 관련 발행가와 조달 금액 및 지분 희석률은 미기재 상",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/3684f18dd8_1f894169fc.pdf",
+   "score": 51.7,
+   "s_news": 90,
+   "s_size": 52,
    "s_surge": 0,
    "srcs": 0
   }
