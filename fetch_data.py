@@ -113,7 +113,7 @@ def _pw_browser():
     for attempt in (1, 2):
         try:
             _PWQ["pw"] = sync_playwright().start()
-            _PWQ["br"] = _PWQ["pw"].chromium.launch()
+            _PWQ["br"] = _PWQ["pw"].chromium.launch(args=["--disable-gpu", "--disable-dev-shm-usage", "--no-sandbox", "--disable-extensions", "--disable-background-networking"])   # 기동 직후 크래시(Target crashed) 완화
             _PWQ["br"].new_page().close()                 # 드라이버 연결 확인 (기동 직후 끊기는 경우 감지)
             log("브라우저 기동"); return _PWQ["br"]
         except Exception as e:
@@ -1796,7 +1796,7 @@ def investing_batch(ttl_min=3):
                         const m = document.documentElement.innerHTML.match(/"instrument_id":"?(\\d+)/);
                         return { last: q('[data-test="instrument-price-last"]'), chg: q('[data-test="instrument-price-change"]'),
                                  pct: q('[data-test="instrument-price-change-percent"]'), time: q('[data-test="trading-time-label"]'), id: m ? m[1] : null,
-                                 snip: document.title + ' | ' + (document.body ? document.body.innerText.replace(/\s+/g, ' ').slice(0, 160) : '') }; }""")
+                                 snip: document.title + ' | ' + (document.body ? document.body.innerText.replace(/\\s+/g, ' ').slice(0, 160) : '') }; }""")
                     if o and o.get("last"): break
                     pg.wait_for_timeout(1500)
                 pg.wait_for_timeout(2500)                 # 연속 진입 시 속도 제한 완화
@@ -2346,13 +2346,6 @@ def ai_index(data, ttl_min=30):
         "출력은 JSON 하나만: {\"ko\": \"한국어 한 문장\", \"id\": \"Bahasa Indonesia satu kalimat\"}\n\n"
         + json.dumps(ctx, ensure_ascii=False))
     j = _json_loads_loose(_gemini(prompt, 700, search=True))
-    if not j or not j.get("ko"):                                   # 검색 그라운딩 실패 시 무검색 재시도
-        j = _json_loads_loose(_gemini(prompt, 700, search=False))
-    if (not j or not j.get("ko")) and _secret("anthropic_api_key"):  # 최후 폴백 — Claude
-        try:
-            model = (CFG.get("translate") or {}).get("claude_model", "claude-sonnet-4-5")
-            j = _json_loads_loose(_claude_complete(prompt, _secret("anthropic_api_key"), model) or "")
-        except Exception as e: log("지수 요약 Claude 폴백 실패", e)
     if not j or not j.get("ko"):
         return {"ko": cache.get("ko", ""), "id": cache.get("id", ""), "ts": ts} if cache.get("ko") else {}
     out = {"ko": str(j.get("ko", ""))[:200], "id": str(j.get("id", ""))[:250], "ts": now.isoformat()}
