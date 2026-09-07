@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-07 12:22",
+ "updated": "2026-09-07 12:40",
  "delay_min": 0,
- "fx_basis": "13.12 IDR/KRW · USD/IDR 17,650 · USD/KRW 1,346 · 11:58 Yahoo",
- "idr_per_krw": 13.1178,
+ "fx_basis": "13.12 IDR/KRW · USD/IDR 17,650 · USD/KRW 1,345 · 12:35 Yahoo",
+ "idr_per_krw": 13.1238,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -292,10 +292,12 @@
     17655.0,
     17650.0,
     17650.0,
+    17650.0,
+    17650.0,
     17650.0
    ],
    "inv": true,
-   "asof": "11:58",
+   "asof": "12:35",
    "high": 17655.0,
    "low": 17631.0,
    "src": "yahoo"
@@ -330,10 +332,10 @@
   "m1": 3.41,
   "value_idr": 15001276676523,
   "volume": 34285124590,
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 외국인·공시 PC 09-07 10:49",
-  "rank_asof": "12:21",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-07 10:49",
+  "rank_asof": "12:39",
   "rank_date": "2026-09-07",
-  "adv": 313,
+  "adv": 314,
   "dec": 306,
   "unch": 213,
   "foreign_net_idr": -311796322852.979,
@@ -11309,6 +11311,22 @@
    "live": 1
   },
   {
+   "t": "ARII",
+   "n": "Atlas Resources",
+   "px": 318.0,
+   "prev": 310.0,
+   "pct": 2.58,
+   "val": 64306000.0,
+   "vol": 203500.0,
+   "sh": 3750000000,
+   "mcap": 1192500000000.0,
+   "hi": 320.0,
+   "lo": 310.0,
+   "ratio": 1.7,
+   "fnet": 0.0,
+   "live": 1
+  },
+  {
    "t": "NETV",
    "n": "MDTV Media Technologies",
    "px": 50.0,
@@ -14433,11 +14451,11 @@
   {
    "name": "에너지",
    "name_id": "Energi",
-   "n": 78,
-   "adv": 37,
+   "n": 79,
+   "adv": 38,
    "dec": 26,
-   "val": 1980012898913.3333,
-   "mcap": 1691306182284647.0,
+   "val": 1980077204913.3333,
+   "mcap": 1692498682284647.0,
    "top": [
     {
      "t": "BYAN",
@@ -15278,10 +15296,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6963.49,
+   "px": 6960.74,
    "prev": 6706.56,
-   "pct": 3.83,
-   "asof": "12:00",
+   "pct": 3.79,
+   "asof": "12:15",
    "live": true,
    "spark": [
     6892.15,
@@ -15344,17 +15362,20 @@
     6959.35,
     6962.09,
     6965.59,
-    6963.49
+    6955.99,
+    6949.6,
+    6954.14,
+    6960.74
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 66308.34,
+   "px": 66269.12,
    "prev": 65054.56,
-   "pct": 1.93,
-   "asof": "12:05",
+   "pct": 1.87,
+   "asof": "12:20",
    "live": true,
    "spark": [
     65886.75,
@@ -15408,17 +15429,20 @@
     66317.31,
     66337.56,
     66354.19,
-    66308.34
+    66266.08,
+    66264.06,
+    66269.68,
+    66269.12
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25392.55,
+   "px": 25394.48,
    "prev": 25650.87,
-   "pct": -1.01,
-   "asof": "12:05",
+   "pct": -1.0,
+   "asof": "12:20",
    "live": true,
    "spark": [
     25587.16,
@@ -15454,7 +15478,10 @@
     25402.73,
     25402.73,
     25389.48,
-    25392.55
+    25384.41,
+    25390.69,
+    25391.75,
+    25394.48
    ]
   }
  ],
@@ -15545,8 +15572,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/infranexia-dan-xlsmart-excl-kolaborasi-perkuat-infrastruktur-konektivitas-nasional",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/07/infranexia_excl.jpg",
-   "t_id": "Infranexia dan XLSMART (EXCL) Kolaborasi Perkuat Infrastruktur Konektivitas Nasional",
-   "t_ko": "인프라넥시아와 XLSMART(EXCL), 국가 연결 인프라 강화를 위해 협력"
+   "t_ko": "인프라넥시아와 XLSMART(EXCL), 국가 연결 인프라 강화를 위해 협력",
+   "t_id": "Infranexia dan XLSMART (EXCL) Kolaborasi Perkuat Infrastruktur Konektivitas Nasional"
   },
   {
    "ts": "2026-09-07T11:45:00+07:00",
@@ -15560,8 +15587,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/mtdl-issp-ikut-ramaikan-sentimen-ai-dan-data-center-simak-prospeknya",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/07/MTDL_Metrodata.jpg",
-   "t_id": "MTDL-ISSP Ikut Ramaikan Sentimen AI dan Data Center, Simak Prospeknya",
-   "t_ko": "MTDL-ISSP, AI 및 데이터센터 감성 활성화에 참여, 전망 확인"
+   "t_ko": "MTDL-ISSP, AI 및 데이터센터 감성 활성화에 참여, 전망 확인",
+   "t_id": "MTDL-ISSP Ikut Ramaikan Sentimen AI dan Data Center, Simak Prospeknya"
   },
   {
    "ts": "2026-09-07T11:38:20+07:00",
@@ -15706,20 +15733,6 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/07/1840424/WRK0q5G7Xc.jpg?w=720",
    "t_ko": "오늘의 Antam 금 가격은 환매로 IDR 2,490 Million으로 소폭 하락했습니다.",
    "t_id": "Harga Emas Antam Hari Ini Turun Tipis Buyback Jadi Rp2,490 Juta"
-  },
-  {
-   "ts": "2026-09-07T09:19:13+07:00",
-   "date": "2026-09-07",
-   "time": "09:19",
-   "src": "Bloomberg Technoz",
-   "t": "Emas Antam Turun Tipis, Ikut Harga Emas Dunia",
-   "tags": [
-    "ANTM"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120668/emas-antam-turun-tipis-ikut-harga-emas-dunia",
-   "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250411083024.jpeg",
-   "t_ko": "Antam Gold는 세계 금 가격에 따라 소폭 하락합니다.",
-   "t_id": "Emas Antam Turun Tipis, Ikut Harga Emas Dunia"
   },
   {
    "ts": "2026-09-07T08:31:36+07:00",
@@ -16173,6 +16186,42 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-07T12:35:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:35",
+   "src": "Republika",
+   "t": "Kemenhub Siapkan Bandara Alternatif Imbas Penutupan Sejumlah Bandara",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tkzail423/kemenhub-siapkan-bandara-alternatif-imbas-penutupan-sejumlah-bandara",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/084401000-1788704344-830-556.jpg",
+   "t_ko": "교통부, 다수의 공항 폐쇄로 인해 대체 공항 준비",
+   "t_id": "Kemenhub Siapkan Bandara Alternatif Imbas Penutupan Sejumlah Bandara"
+  },
+  {
+   "ts": "2026-09-07T12:31:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:31",
+   "src": "Katadata",
+   "t": "Misteri Suara Dentuman di Jawa Barat, Benarkah dari Anak Krakatau?",
+   "tags": [],
+   "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6a9e4c319ea5b/misteri-suara-dentuman-di-jawa-barat-benarkah-dari-anak-krakatau",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/Gunung_Anak_Krakatau-2026_09_07-09_06_38_ecc9f6bbe9587d53005c476496573f9b_620x413_thumb.png",
+   "t_id": "Misteri Suara Dentuman di Jawa Barat, Benarkah dari Anak Krakatau?",
+   "t_ko": "서부 자바에서 들려오는 웅웅거리는 소리의 미스터리, 정말 크라카토아 아이들의 소리였나요?"
+  },
+  {
+   "ts": "2026-09-07T12:29:00+07:00",
+   "date": "2026-09-07",
+   "time": "12:29",
+   "src": "Katadata",
+   "t": "Purbaya Pastikan Anggaran Penanganan Bencana Alam Tersedia: Tidak Dibatasi",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/makro/6a9e4bbeb391f/purbaya-pastikan-anggaran-penanganan-bencana-alam-tersedia-tidak-dibatasi",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/26/2026_08_26-15_17_00_301a5384-a12b-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
+   "t_ko": "Purbaya는 자연 재해 처리를 위한 예산을 보장합니다: 제한되지 않음",
+   "t_id": "Purbaya Pastikan Anggaran Penanganan Bencana Alam Tersedia: Tidak Dibatasi"
+  },
+  {
    "ts": "2026-09-07T12:18:22+07:00",
    "date": "2026-09-07",
    "time": "12:18",
@@ -16192,8 +16241,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609070142/celios-dorong-anggaran-bnpb-dan-bmkg-lebih-besar-dari-program-mbg",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/erupsi-gunung-lewotobi-laki-laki-di-flores-timur-antaraho-ppg-lewotobi-laki-lakipri-6ABRl.webp",
-   "t_id": "Celios Dorong Anggaran BNPB dan BMKG Lebih Besar dari Program MBG",
-   "t_ko": "Celios는 BNPB 및 BMKG 예산을 MBG 프로그램보다 더 크게 추진합니다."
+   "t_ko": "Celios는 BNPB 및 BMKG 예산을 MBG 프로그램보다 더 크게 추진합니다.",
+   "t_id": "Celios Dorong Anggaran BNPB dan BMKG Lebih Besar dari Program MBG"
   },
   {
    "ts": "2026-09-07T12:10:00+07:00",
@@ -16204,8 +16253,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120703/jorjoran-smelter-aluminium-china-di-ri-butuh-tambahan-pltu-8-gw",
    "img": "https://images.bloombergtechnoz.com/data/2024/05/image-20240518082313.jpg",
-   "t_id": "Jorjoran Smelter Aluminium China di RI Butuh Tambahan PLTU 8 GW",
-   "t_ko": "RI의 Jorjoran 중국 알루미늄 제련소에 8GW PLTU가 추가로 필요"
+   "t_ko": "RI의 Jorjoran 중국 알루미늄 제련소에 8GW PLTU가 추가로 필요",
+   "t_id": "Jorjoran Smelter Aluminium China di RI Butuh Tambahan PLTU 8 GW"
   },
   {
    "ts": "2026-09-07T12:06:39+07:00",
@@ -16494,42 +16543,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2025/06/image-20250602181333.jpg",
    "t_ko": "BEI 탈상호화, OJK, 소유권과 거래권 분리",
    "t_id": "Demutualisasi BEI, OJK Pisahkan Kepemilikan dari Hak Perdagangan"
-  },
-  {
-   "ts": "2026-09-07T10:13:18+07:00",
-   "date": "2026-09-07",
-   "time": "10:13",
-   "src": "Detik",
-   "t": "Bandara Soetta Ditutup Imbas Abu Vulkanik, Kertajati Jadi Alternatif",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651694/bandara-soetta-ditutup-imbas-abu-vulkanik-kertajati-jadi-alternatif",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/04/15/ahy-dorong-sinergitas-dalam-pembangunan-infrastruktur-ri-1776226359881_169.jpeg?w=360&q=90",
-   "t_ko": "화산재로 인해 Soetta 공항 폐쇄, Kertajati가 대안이 됨",
-   "t_id": "Bandara Soetta Ditutup Imbas Abu Vulkanik, Kertajati Jadi Alternatif"
-  },
-  {
-   "ts": "2026-09-07T10:10:41+07:00",
-   "date": "2026-09-07",
-   "time": "10:10",
-   "src": "Republika",
-   "t": "Harga Emas Turun Lagi, Kini Rp2,63 juta per Gram",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tkz4tt502/harga-emas-turun-lagi-kini-rp263-juta-per-gram",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/060424600-1774695053-830-556.jpg",
-   "t_ko": "금 가격이 다시 하락하여 현재 그램당 IDR 263만",
-   "t_id": "Harga Emas Turun Lagi, Kini Rp2,63 juta per Gram"
-  },
-  {
-   "ts": "2026-09-07T10:10:40+07:00",
-   "date": "2026-09-07",
-   "time": "10:10",
-   "src": "Detik",
-   "t": "Zero ODOL 2027, Pemerintah Diminta Segera Rilis Roadmap",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651901/zero-odol-2027-pemerintah-diminta-segera-rilis-roadmap",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/11/25/peserta-aksi-truk-odol-tinggalkan-kantor-dishub-dan-menuju-ke-gubernur-jatim-1764055510695_169.jpeg?w=360&q=90",
-   "t_ko": "Zero ODOL 2027, 정부에 로드맵 즉각 공개 요청",
-   "t_id": "Zero ODOL 2027, Pemerintah Diminta Segera Rilis Roadmap"
   }
  ],
  "kisi_news": [
@@ -16701,9 +16714,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.11",
-   "d": 0.95,
-   "ytd": 12.87,
+   "v": "13.13",
+   "d": 1.08,
+   "ytd": 13.02,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16784,9 +16797,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,754",
-   "d": -0.34,
-   "ytd": 0.43,
+   "v": "16,804",
+   "d": -0.04,
+   "ytd": 0.73,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20636,7 +20649,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-07 10:49",
-  "pc_age_min": 93,
+  "pc_age_min": 111,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
