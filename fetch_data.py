@@ -1981,13 +1981,31 @@ def _gemini_model(key):
             v = re.search(r"(\d+(?:\.\d+)?)", n); return float(v.group(1)) if v else 0
         cand.sort(key=lambda n: ("lite" in n, ver(n)), reverse=True)   # lite 우선(빠르고 무료 한도 큼), 그 안에서 최신
         if not cand: cand = [m["name"].split("/")[-1] for m in ms if "generateContent" in (m.get("supportedGenerationMethods") or [])]
-        _GEM["model"] = cand[0] if cand else GEMINI_MODEL
+        _GEM["model"] = cand[0] if cand else GEMINI_MODEL; _GEM["cand"] = cand
         log(f"Gemini 모델 선택: {_GEM['model']} (후보 {', '.join(cand[:6])})")
         try: fp.write_text(_GEM["model"])
         except Exception: pass
     except Exception as e:
         log("Gemini 모델 목록 실패", str(e)[:80]); _GEM["model"] = GEMINI_MODEL
     return _GEM["model"]
+def _gemini_next_model(key, cur):
+    """한도가 소진된 모델을 오늘 하루 제외하고 다음 후보(lite 우선·최신)를 고른다"""
+    ex = _GEM.setdefault("exhausted", {}); ex[cur] = now_wib().date().isoformat()
+    cand = _GEM.get("cand") or []
+    if not cand:
+        try:
+            r = requests.get(f"https://generativelanguage.googleapis.com/v1beta/models?pageSize=200&key={key}", timeout=30); ms = (r.json() or {}).get("models") or []
+            cand = [m["name"].split("/")[-1] for m in ms if "generateContent" in (m.get("supportedGenerationMethods") or []) and "flash" in m["name"] and not re.search(r"image|tts|audio|live|preview|exp|thinking|native", m["name"])]
+            cand.sort(key=lambda n: ("lite" in n, float((re.search(r"(\d+(?:\.\d+)?)", n) or [0, 0])[1])), reverse=True); _GEM["cand"] = cand
+        except Exception: return None
+    today = now_wib().date().isoformat()
+    for n in cand:
+        if ex.get(n) != today:
+            _GEM["model"] = n
+            try: (CACHE / "gemini_model.txt").write_text(n)
+            except Exception: pass
+            return n
+    return None
 AI_ANN_P = CACHE / "ann_ai.json"; AI_STK_P = CACHE / "stock_ai.json"
 def _gemini(prompt, max_tokens=1500, temperature=0.2, search=False):
     """Gemini generateContent (REST). 실패 시 None. 404(모델 없음)면 모델을 다시 고른다.
@@ -2010,26 +2028,28 @@ def _gemini(prompt, max_tokens=1500, temperature=0.2, search=False):
                 b["generationConfig"].pop("responseMimeType", None)   # 그라운딩과 JSON 강제는 함께 못 쓴다
             return b
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
-        r = requests.post(url, json=_body(), timeout=90 if use_search else 60)
-        if r.status_code == 400 and use_search:                                  # 모델이 검색 도구를 거부 → 빼고 재시도(이후 계속 제외)
-            _GEM["nosearch"] = True; use_search = False
-            r = requests.post(url, json=_body(), timeout=60)
-        if r.status_code == 400 and not _GEM.get("nothink"):                      # 모델이 thinkingConfig 를 거부 → 빼고 재시도(이후 계속 제외)
-            _GEM["nothink"] = True; gc.pop("thinkingConfig", None)
-            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
-        if r.status_code == 400 and not _GEM.get("nojson"):                       # JSON 응답 모드도 거부 → 일반 텍스트로(파싱은 _json_loads_loose 가 처리)
-            _GEM["nojson"] = True; gc.pop("responseMimeType", None)
-            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
-        if r.status_code == 429:                          # 분당/일일 한도 → 25초 쉬고 1회 재시도
-            log("Gemini 429 → 25초 대기 후 재시도"); time.sleep(25)
-            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
-            _GEM["last_call"] = time.time()
+        r = None; waited = False
+        for _attempt in range(6):                                                 # 400(옵션 거부)·429(한도) 를 순서와 무관하게 처리
+            r = requests.post(url, json=_body(), timeout=90 if use_search else 60); _GEM["last_call"] = time.time()
+            if r.status_code == 200: break
+            if r.status_code == 400 and use_search: _GEM["nosearch"] = True; use_search = False; continue          # 검색 도구 거부
+            if r.status_code == 400 and "thinkingConfig" in gc: _GEM["nothink"] = True; gc.pop("thinkingConfig", None); continue   # thinking 옵션 거부
+            if r.status_code == 400 and "responseMimeType" in gc: _GEM["nojson"] = True; gc.pop("responseMimeType", None); continue  # JSON 모드 거부
+            if r.status_code == 429:
+                msg = re.sub(r"\s+", " ", r.text)
+                if re.search(r"per.?day|daily|PerDay", msg, re.I) or _GEM.get("r429_model") == model:   # 일일 한도 소진 → 다른 모델로
+                    nxt = _gemini_next_model(key, model)
+                    if nxt and nxt != model:
+                        log(f"Gemini {model} 일일 한도 소진 → {nxt} 로 전환"); model = nxt
+                        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"; continue
+                if not waited: waited = True; _GEM["r429_model"] = model; log("Gemini 429 → 25초 대기 후 재시도"); time.sleep(25); continue
+            break
         if r.status_code == 404 and _GEM["model"]:      # 모델 퇴역 → 캐시 지우고 다음 호출에서 재선택
             _GEM["model"] = None
             try: (CACHE / "gemini_model.txt").unlink()
             except Exception: pass
         if r.status_code != 200:
-            log("Gemini", r.status_code, re.sub(r"\s+", " ", r.text)[:300], "| gc:", ",".join(gc.keys())); _GEM["fail"] = _GEM.get("fail", 0) + (1 if r.status_code in (429, 500, 503) else 0); return None
+            log("Gemini", r.status_code, re.sub(r"\s+", " ", r.text)[:700], "| gc:", ",".join(gc.keys()), "| model:", model); _GEM["fail"] = _GEM.get("fail", 0) + (1 if r.status_code in (429, 500, 503) else 0); return None
         j = r.json(); txt = "".join(p.get("text", "") for p in j["candidates"][0]["content"]["parts"])
         _GEM["fail"] = 0
         return txt
