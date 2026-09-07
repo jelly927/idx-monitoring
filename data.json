@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-07 08:17",
+ "updated": "2026-09-07 08:35",
  "delay_min": 0,
- "fx_basis": "13.19 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,337 · 07:24 Yahoo",
- "idr_per_krw": 13.1872,
+ "fx_basis": "13.18 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,338 · 07:24 Yahoo",
+ "idr_per_krw": 13.1775,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -95,12 +95,12 @@
   "m1": 5.01,
   "value_idr": 15001276676523,
   "volume": 34285124590,
-  "rank_src": "Yahoo 15분 지연 · 830종목 · 종가 · 외국인·공시 PC 09-06 01:55",
+  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-06 01:55",
   "rank_asof": null,
   "rank_date": "2026-09-04",
   "adv": 276,
   "dec": 379,
-  "unch": 175,
+  "unch": 176,
   "foreign_net_idr": -311796322852.979,
   "foreign_buy": 3302821255464.0825,
   "foreign_sell": 3614617578317.0615,
@@ -13506,6 +13506,22 @@
    "live": 0
   },
   {
+   "t": "BATR",
+   "n": "Benteng Api Technic",
+   "px": 94.0,
+   "prev": 94.0,
+   "pct": 0.0,
+   "val": 14128200.0,
+   "vol": 150300.0,
+   "sh": 3025037353,
+   "mcap": 284353511182.0,
+   "hi": 95.0,
+   "lo": 93.0,
+   "ratio": 0.1,
+   "fnet": -28228.14371257485,
+   "live": 0
+  },
+  {
    "t": "PTIS",
    "n": "Indo Straits",
    "px": 254.0,
@@ -14218,11 +14234,11 @@
   {
    "name": "소재",
    "name_id": "Barang Baku",
-   "n": 91,
+   "n": 92,
    "adv": 27,
    "dec": 46,
-   "val": 2409205348099.999,
-   "mcap": 1548670320395134.0,
+   "val": 2409219476299.999,
+   "mcap": 1548954673906316.0,
    "top": [
     {
      "t": "AMMN",
@@ -15011,10 +15027,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6903.71,
+   "px": 6883.39,
    "prev": 6706.56,
-   "pct": 2.94,
-   "asof": "07:55",
+   "pct": 2.64,
+   "asof": "08:10",
    "live": true,
    "spark": [
     6892.15,
@@ -15028,17 +15044,20 @@
     6895.08,
     6892.2,
     6895.02,
-    6903.71
+    6883.29,
+    6875.43,
+    6882.66,
+    6883.39
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 66130.02,
+   "px": 66381.99,
    "prev": 65054.56,
-   "pct": 1.65,
-   "asof": "08:00",
+   "pct": 2.04,
+   "asof": "08:15",
    "live": true,
    "spark": [
     65886.75,
@@ -15053,7 +15072,10 @@
     66262.12,
     66171.01,
     66157.93,
-    66130.02
+    66268.27,
+    66358.2,
+    66419.05,
+    66381.99
    ]
   },
   {
@@ -15063,78 +15085,14 @@
    "px": 25650.87,
    "prev": 25213.31,
    "pct": 1.74,
-   "asof": "09/04 종가",
+   "asof": "09/03 종가",
    "live": false,
    "spark": [
-    25696.61,
-    25695.6,
-    25747.76,
-    25748.74,
-    25721.11,
-    25741.64,
-    25752.61,
-    25769.95,
-    25750.99,
-    25755.29,
-    25723.08,
-    25724.13,
-    25754.31,
-    25758.57,
-    25777.08,
-    25763.82,
-    25776.29,
-    25771.76,
-    25773.21,
-    25763.85,
-    25755.59,
-    25749.66,
-    25729.85,
-    25753.57,
-    25758.54,
-    25766.57,
-    25737.94,
-    25731.73,
-    25732.54,
-    25738.13,
-    25737.6,
-    25737.6,
-    25730.07,
-    25737.39,
-    25722.23,
-    25733.46,
-    25726.98,
-    25690.19,
-    25676.49,
-    25665.45,
-    25682.23,
-    25700.2,
-    25679.79,
-    25689.38,
-    25712.46,
-    25705.76,
-    25739.59,
-    25712.18,
-    25708.23,
-    25698.88,
-    25685.84,
-    25651.59,
-    25654.55,
-    25659.86,
-    25660.96,
-    25654.93,
-    25648.37,
-    25641.51,
-    25655.14,
-    25675.15,
-    25676.69,
-    25669.25,
-    25677.84,
-    25664.25,
-    25672.4,
-    25671.22,
-    25669.05,
-    25664.19,
-    25665.35,
+    25584.79,
+    25566.99,
+    25329.73,
+    25311.21,
+    25213.31,
     25650.87
    ]
   }
@@ -15216,6 +15174,38 @@
  },
  "news": [
   {
+   "ts": "2026-09-07T08:31:36+07:00",
+   "date": "2026-09-07",
+   "time": "08:31",
+   "src": "Detik",
+   "t": "Rekomendasi Saham Saat IHSG Melemah, Apa Saja?",
+   "tags": [
+    "BTPS",
+    "BULL",
+    "RATU"
+   ],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8651569/rekomendasi-saham-saat-ihsg-melemah-apa-saja",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/bursa-dan-valas-1788744208-1788744209417.jpeg?w=360&q=90",
+   "t_id": "Rekomendasi Saham Saat IHSG Melemah, Apa Saja?",
+   "t_ko": "JCI 약세 시 주식 추천, 그것은 무엇인가?"
+  },
+  {
+   "ts": "2026-09-07T08:26:06+07:00",
+   "date": "2026-09-07",
+   "time": "08:26",
+   "src": "Bloomberg Technoz",
+   "t": "Saham BBRI Diborong Investor Asing Sepekan, CPIN & BRMS Dilego",
+   "tags": [
+    "BBRI",
+    "BRMS",
+    "CPIN"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120665/saham-bbri-diborong-investor-asing-sepekan-cpin-brms-dilego",
+   "img": "https://images.bloombergtechnoz.com/data/2024/10/image-20241021134403.jpg",
+   "t_id": "Saham BBRI Diborong Investor Asing Sepekan, CPIN & BRMS Dilego",
+   "t_ko": "외국인 투자자가 매주 매입한 BBRI 주식, CPIN & BRMS 매도"
+  },
+  {
    "ts": "2026-09-07T07:32:15+07:00",
    "date": "2026-09-07",
    "time": "07:32",
@@ -15226,7 +15216,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/120659/bumi-resmi-ambil-alih-loyal-metals-rogoh-rp1-triliun",
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260904185415.jpg",
-   "t_id": "BUMI Resmi Ambil Alih Loyal Metals, Rogoh Rp1 Triliun"
+   "t_id": "BUMI Resmi Ambil Alih Loyal Metals, Rogoh Rp1 Triliun",
+   "t_ko": "BUMI, Loyal Metals 공식 인수로 1조 IDR 조달"
   },
   {
    "ts": "2026-09-07T06:48:00+07:00",
@@ -15240,7 +15231,8 @@
    ],
    "url": "https://katadata.co.id/finansial/makro/6a9dfbe2c9070/ihsg-berpotensi-turun-pada-awal-pekan-saham-jpfa-hingga-ptro-jadi-rekomendasi",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/IHSG_sesi_pertama_ditutup_naik_056_ke_6337_Foto_KatadataFauza_Sy-2026_08_14-15_00_42_54c2a677375ba4e9abda7c37345a362d_620x413_thumb.jpg",
-   "t_id": "IHSG Berpotensi Turun pada Awal Pekan, Saham JPFA hingga PTRO Jadi Rekomendasi"
+   "t_id": "IHSG Berpotensi Turun pada Awal Pekan, Saham JPFA hingga PTRO Jadi Rekomendasi",
+   "t_ko": "JCI는 주 초에 하락할 가능성이 있으며 JPFA 및 PTRO 주식은 권장 사항입니다"
   },
   {
    "ts": "2026-09-06T23:55:59+07:00",
@@ -15266,7 +15258,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8286017/emiten-hatm-kantongi-rp-320-miliar-dari-private-placement-buat-apa",
    "img": "https://cdn0-production-images-kly.akamaized.net/ZRRqiT15TrUOeT5j8OnqVrWCI5U=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277612/original/069968900_1672400409-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga-1.JPG",
-   "t_id": "Emiten HATM Kantongi Rp 320 Miliar dari Private Placement, Buat Apa?"
+   "t_id": "Emiten HATM Kantongi Rp 320 Miliar dari Private Placement, Buat Apa?",
+   "t_ko": "HATM 발행자가 사모에서 IDR 3,200억을 빼돌린 이유는 무엇입니까?"
   },
   {
    "ts": "2026-09-06T20:59:00+07:00",
@@ -15929,6 +15922,30 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-07T08:32:45+07:00",
+   "date": "2026-09-07",
+   "time": "08:32",
+   "src": "Jawa Pos",
+   "t": "Eskalasi Menegangnya Relasi AS-Iran Picu Kenaikan Harga Minyak Global",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609070064/eskalasi-menegangnya-relasi-as-iran-picu-kenaikan-harga-minyak-global",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/14/ilustrasi-pelayaran-di-selat-hormuz-dok-jawaposcom-m4Lss.webp",
+   "t_ko": "미·이란 관계 고조로 국제유가 급등",
+   "t_id": "Eskalasi Menegangnya Relasi AS-Iran Picu Kenaikan Harga Minyak Global"
+  },
+  {
+   "ts": "2026-09-07T08:25:51+07:00",
+   "date": "2026-09-07",
+   "time": "08:25",
+   "src": "Detik",
+   "t": "Cara Refund dan Reschedule Penerbangan yang Batal Imbas Abu Vulkanik",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651564/cara-refund-dan-reschedule-penerbangan-yang-batal-imbas-abu-vulkanik",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2022/08/30/ilustrasi-tiket-pesawat_169.jpeg?w=360&q=90",
+   "t_id": "Cara Refund dan Reschedule Penerbangan yang Batal Imbas Abu Vulkanik",
+   "t_ko": "화산재로 인해 취소된 항공편을 환불하고 일정을 변경하는 방법"
+  },
+  {
    "ts": "2026-09-07T08:15:30+07:00",
    "date": "2026-09-07",
    "time": "08:15",
@@ -15937,7 +15954,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120662/rupiah-di-bawah-bayang-bayang-the-fed-dan-harga-minyak",
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171734.jpeg",
-   "t_id": "Rupiah di Bawah Bayang-Bayang The Fed dan Harga Minyak"
+   "t_id": "Rupiah di Bawah Bayang-Bayang The Fed dan Harga Minyak",
+   "t_ko": "연준과 유가의 그림자 아래 루피아"
   },
   {
    "ts": "2026-09-07T08:10:00+07:00",
@@ -15948,7 +15966,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120661/investor-asing-borong-saham-big-banks-posisi-beli-bersih-rp1-6-t",
    "img": "https://images.bloombergtechnoz.com/data/2023/01/image-20230125210734.jpg",
-   "t_id": "Investor Asing Borong Saham Big Banks, Posisi Beli Bersih Rp1,6 T"
+   "t_id": "Investor Asing Borong Saham Big Banks, Posisi Beli Bersih Rp1,6 T",
+   "t_ko": "외국인 투자자는 대형 은행 주식을 매입하고 순매수 포지션 IDR 1.6 T"
   },
   {
    "ts": "2026-09-07T08:01:12+07:00",
@@ -15959,7 +15978,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tkyyu0423/radius-tiga-km-anak-krakatau-jadi-zona-terlarang-bagi-warga-dan-wisatawan",
    "img": "https://static.republika.co.id/uploads/images/detailnews/076624300-1788694574-830-556.jpg",
-   "t_id": "Radius Tiga Km Anak Krakatau Jadi Zona Terlarang Bagi Warga dan Wisatawan"
+   "t_id": "Radius Tiga Km Anak Krakatau Jadi Zona Terlarang Bagi Warga dan Wisatawan",
+   "t_ko": "아낙 크라카타우(Anak Krakatau)의 반경 3km는 주민과 관광객에게 금지 구역이 됩니다"
   },
   {
    "ts": "2026-09-07T08:00:54+07:00",
@@ -15969,7 +15989,9 @@
    "t": "Debit Sungai Mahakam Menyusut, Muatan Tongkang Batu Bara Dibatasi 5.500 Ton",
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8650928/debit-sungai-mahakam-menyusut-muatan-tongkang-batu-bara-dibatasi-5-500-ton",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/debit-sungai-mahakam-menyusut-muatan-tongkang-batu-bara-dibatasi-5500-ton-1788681154414_169.jpeg?w=360&q=90"
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/debit-sungai-mahakam-menyusut-muatan-tongkang-batu-bara-dibatasi-5500-ton-1788681154414_169.jpeg?w=360&q=90",
+   "t_ko": "Mahakam 강 방류량 감소, 석탄 바지선 적재량 5,500톤으로 제한",
+   "t_id": "Debit Sungai Mahakam Menyusut, Muatan Tongkang Batu Bara Dibatasi 5.500 Ton"
   },
   {
    "ts": "2026-09-07T08:00:00+07:00",
@@ -15980,7 +16002,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609070034/peringati-harpelnas-tring-pegadaian-hadirkan-an-evening-with-pegadaian-dan-semangat-tenang-saja",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/07/pt-pegadaian-persero-merayakan-hari-pelanggan-nasional-dengan-memberikan-apresiasi-khusus-kepada-nasabah-terpilih-dan-prioritas-yang-telah-menjadi-bagian-penting-dari-perjalanan-pegadaian-istimewa-D8Gzi.webp",
-   "t_id": "Peringati Harpelnas, Tring Pegadaian Hadirkan “An Evening with Pegadaian” dan Semangat “Tenang Saja”"
+   "t_id": "Peringati Harpelnas, Tring Pegadaian Hadirkan “An Evening with Pegadaian” dan Semangat “Tenang Saja”",
+   "t_ko": "Harpelnas를 기념하여 Tring Pegadaian은 \"An Evening with Pegadaian\"과 \"Just Relax\" 정신을 선보입니다."
   },
   {
    "ts": "2026-09-07T07:52:00+07:00",
@@ -15989,7 +16012,9 @@
    "src": "Media Indonesia",
    "t": "Kertajati, Semarang, hingga Solo Disiagakan Layani Pengalihan Penerbangan Jakarta",
    "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/930509/kertajati-semarang-hingga-solo-disiagakan-layani-pengalihan-penerbangan-jakarta"
+   "url": "https://mediaindonesia.com/ekonomi/930509/kertajati-semarang-hingga-solo-disiagakan-layani-pengalihan-penerbangan-jakarta",
+   "t_ko": "Kertajati, Semarang 및 Solo는 자카르타 항공편 전환 서비스를 제공하도록 경고받습니다.",
+   "t_id": "Kertajati, Semarang, hingga Solo Disiagakan Layani Pengalihan Penerbangan Jakarta"
   },
   {
    "ts": "2026-09-07T07:40:10+07:00",
@@ -16000,7 +16025,8 @@
    "tags": [],
    "url": "https://www.liputan6.com/saham/read/8286063/45-emiten-gelar-public-expose-live-pada-7-11-september-2026-ini-jadwalnya",
    "img": "https://cdn0-production-images-kly.akamaized.net/mdeY2gQ8oBrTcV7coU8ZCafN5Fg=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3146516/original/009220300_1591597610-20200608-Pagi-Ini-IHSG-Menguat--ANGGA-4.jpg",
-   "t_id": "45 Emiten Gelar Public Expose Live pada 7-11 September 2026, Ini Jadwalnya"
+   "t_id": "45 Emiten Gelar Public Expose Live pada 7-11 September 2026, Ini Jadwalnya",
+   "t_ko": "45개 발행사가 2026년 9월 7~11일 공개 공개를 진행합니다. 일정은 다음과 같습니다."
   },
   {
    "ts": "2026-09-07T07:40:00+07:00",
@@ -16011,7 +16037,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120654/bursa-asia-menguat-usai-saham-teknologi-as-minyak-naik",
    "img": "https://images.bloombergtechnoz.com/data/2024/08/image-20240802062040.jpg",
-   "t_id": "Bursa Asia Menguat Usai Saham Teknologi AS & Minyak Naik"
+   "t_id": "Bursa Asia Menguat Usai Saham Teknologi AS & Minyak Naik",
+   "t_ko": "미국 기술 및 석유 주식 상승 후 아시아 주식 강세"
   },
   {
    "ts": "2026-09-07T07:35:39+07:00",
@@ -16021,7 +16048,9 @@
    "t": "Kemenkeu Sebut Pajak RI Rendah",
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651282/kemenkeu-sebut-pajak-ri-rendah",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/direktur-jenderal-stabilitas-dan-pengembangan-sektor-keuangan-spsk-kementerian-keuangan-kemenkeu-herman-saheruddin-1788667304668_169.jpeg?w=360&q=90"
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/direktur-jenderal-stabilitas-dan-pengembangan-sektor-keuangan-spsk-kementerian-keuangan-kemenkeu-herman-saheruddin-1788667304668_169.jpeg?w=360&q=90",
+   "t_ko": "재무부는 RI 세금이 낮다고 밝혔습니다",
+   "t_id": "Kemenkeu Sebut Pajak RI Rendah"
   },
   {
    "ts": "2026-09-07T07:32:21+07:00",
@@ -16032,7 +16061,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609070033/eskalasi-konflik-selat-hormuz-dan-data-tenaga-kerja-as-bayangi-pergerakan-rupiah-hari-ini",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/05/26/karyawan-menunjukkan-uang-pecahan-rupiah-dan-dolar-amerika-serikat-as-di-gerai-penukaran-mata-uang-asing-di-jakarta-dery-ridwansah-jawaposcom-KKMzb.webp",
-   "t_id": "Eskalasi Konflik Selat Hormuz dan Data Tenaga Kerja AS Bayangi Pergerakan Rupiah Hari Ini"
+   "t_id": "Eskalasi Konflik Selat Hormuz dan Data Tenaga Kerja AS Bayangi Pergerakan Rupiah Hari Ini",
+   "t_ko": "호르무즈 해협 분쟁의 확대와 미국 고용 데이터가 오늘날의 루피아 운동을 가리고 있습니다"
   },
   {
    "ts": "2026-09-07T07:31:00+07:00",
@@ -16041,7 +16071,9 @@
    "src": "Media Indonesia",
    "t": "Penutupan 8 Bandara Terdampak Abu Gunung Anak Krakatau Diperpanjang hingga 7 September 2026",
    "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/930504/penutupan-8-bandara-terdampak-abu-gunung-anak-krakatau-diperpanjang-hingga-7-september-2026"
+   "url": "https://mediaindonesia.com/ekonomi/930504/penutupan-8-bandara-terdampak-abu-gunung-anak-krakatau-diperpanjang-hingga-7-september-2026",
+   "t_ko": "아낙 크라카타우 산 화산재 영향을 받은 8개 공항 폐쇄가 2026년 9월 7일까지 연장되었습니다",
+   "t_id": "Penutupan 8 Bandara Terdampak Abu Gunung Anak Krakatau Diperpanjang hingga 7 September 2026"
   },
   {
    "ts": "2026-09-07T07:23:00+07:00",
@@ -16052,7 +16084,8 @@
    "tags": [],
    "url": "https://www.idxchannel.com/market-news/berikut-prediksi-ihsg-pada-pekan-ini-cermati-sentimen-abu-vulkanik-krakatau",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/07/27/IHSG_-_10_Jul_26_-.jpeg",
-   "t_id": "Berikut Prediksi IHSG Pada Pekan Ini, Cermati Sentimen Abu Vulkanik Krakatau"
+   "t_id": "Berikut Prediksi IHSG Pada Pekan Ini, Cermati Sentimen Abu Vulkanik Krakatau",
+   "t_ko": "이번 주 JCI 전망은 다음과 같습니다. 크라카타우 화산재의 정서를 주목하세요"
   },
   {
    "ts": "2026-09-07T07:22:51+07:00",
@@ -16063,7 +16096,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120657/kalender-ekonomi-pekan-penuh-risiko-global-dan-bencana-domestik",
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260906135052.jpeg",
-   "t_id": "Kalender Ekonomi: Pekan Penuh Risiko Global dan Bencana Domestik"
+   "t_id": "Kalender Ekonomi: Pekan Penuh Risiko Global dan Bencana Domestik",
+   "t_ko": "경제 캘린더: 글로벌 리스크와 국내 재난으로 가득한 한 주"
   },
   {
    "ts": "2026-09-07T07:18:23+07:00",
@@ -16074,7 +16108,8 @@
    "tags": [],
    "url": "https://www.liputan6.com/saham/read/8286080/ihsg-berpeluang-melemah-cek-rekomendasi-saham-analis-7-september-2026",
    "img": "https://cdn0-production-images-kly.akamaized.net/DobzRmJuZ6AtCzudxcUozgUxViU=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277616/original/049381900_1672400412-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga-5.jpg",
-   "t_id": "IHSG Berpeluang Melemah, Cek Rekomendasi Saham Analis 7 September 2026"
+   "t_id": "IHSG Berpeluang Melemah, Cek Rekomendasi Saham Analis 7 September 2026",
+   "t_ko": "JCI는 약세 가능성이 있으며 분석가의 주식 추천을 확인합니다 2026년 9월 7일"
   },
   {
    "ts": "2026-09-07T07:09:31+07:00",
@@ -16084,7 +16119,9 @@
    "t": "Bandara Soetta-Lampung Masih Ditutup hingga Jam 9 Pagi",
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8651523/bandara-soetta-lampung-masih-ditutup-hingga-jam-9-pagi",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/menteri-perhubungan-dudy-purwagandhi-1788739019329_169.jpeg?w=360&q=90"
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/menteri-perhubungan-dudy-purwagandhi-1788739019329_169.jpeg?w=360&q=90",
+   "t_ko": "Soetta-Lampung 공항은 여전히 ​​오전 9시까지 폐쇄됩니다.",
+   "t_id": "Bandara Soetta-Lampung Masih Ditutup hingga Jam 9 Pagi"
   },
   {
    "ts": "2026-09-07T07:00:54+07:00",
@@ -16095,7 +16132,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tkyw1i423/menhub-abu-vulkanik-krakatau-sebabkan-penumpang-transportasi-laut-turun",
    "img": "https://static.republika.co.id/uploads/images/detailnews/076624300-1788694574-830-556.jpg",
-   "t_id": "Menhub: Abu Vulkanik Krakatau Sebabkan Penumpang Transportasi Laut Turun"
+   "t_id": "Menhub: Abu Vulkanik Krakatau Sebabkan Penumpang Transportasi Laut Turun",
+   "t_ko": "교통부 장관: 크라카토아 화산재로 인해 해상 운송 승객 감소"
   },
   {
    "ts": "2026-09-07T07:00:36+07:00",
@@ -16105,7 +16143,9 @@
    "t": "Garam Lokal Dipanen, Target Hentikan Impor Terus Dikejar",
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8650758/garam-lokal-dipanen-target-hentikan-impor-terus-dikejar",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/garam-lokal-dipanen-target-hentikan-impor-terus-dikejar-1788673754474_169.jpeg?w=360&q=90"
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/garam-lokal-dipanen-target-hentikan-impor-terus-dikejar-1788673754474_169.jpeg?w=360&q=90",
+   "t_ko": "현지에서 수확한 소금, 수입 중단 목표 계속 추구",
+   "t_id": "Garam Lokal Dipanen, Target Hentikan Impor Terus Dikejar"
   },
   {
    "ts": "2026-09-07T07:00:00+07:00",
@@ -16116,7 +16156,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tky9n2416/bukan-hanya-menabung-ini-yang-perlu-dipahami-anak-muda-soal-keuangan",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260906230030-973.png",
-   "t_id": "Bukan Hanya Menabung, Ini yang Perlu Dipahami Anak Muda soal Keuangan"
+   "t_id": "Bukan Hanya Menabung, Ini yang Perlu Dipahami Anak Muda soal Keuangan",
+   "t_ko": "저축뿐만 아니라, 젊은이들이 재정에 대해 알아야 할 것"
   },
   {
    "ts": "2026-09-07T06:57:00+07:00",
@@ -16126,7 +16167,9 @@
    "t": "Wall Street Lesu Imbas Ekspektasi Kenaikan Suku Bunga The Fed",
    "tags": [],
    "url": "https://katadata.co.id/finansial/bursa/6a9dfe063d27f/wall-street-lesu-imbas-ekspektasi-kenaikan-suku-bunga-the-fed",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2022/06/01/zigi-6296f6202ad81-wall-street_620x413_thumb.jpg"
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2022/06/01/zigi-6296f6202ad81-wall-street_620x413_thumb.jpg",
+   "t_ko": "연준 금리 인상 기대감에 미 증시 부진",
+   "t_id": "Wall Street Lesu Imbas Ekspektasi Kenaikan Suku Bunga The Fed"
   },
   {
    "ts": "2026-09-07T06:51:00+07:00",
@@ -16137,7 +16180,8 @@
    "tags": [],
    "url": "https://www.idxchannel.com/market-news/harga-minyak-diproyeksi-bertahan-di-atas-usd90-sepekan-konflik-as-iran-jadi-sorotan",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/03/03/drilling_platform_kilang_minyak_-_Freepik.jpeg",
-   "t_id": "Harga Minyak Diproyeksi Bertahan di Atas USD90 Sepekan, Konflik AS-Iran Jadi Sorotan"
+   "t_id": "Harga Minyak Diproyeksi Bertahan di Atas USD90 Sepekan, Konflik AS-Iran Jadi Sorotan",
+   "t_ko": "유가 주당 90달러 이상 유지 예상, 미-이란 갈등 부각"
   },
   {
    "ts": "2026-09-07T06:40:03+07:00",
@@ -16147,7 +16191,9 @@
    "t": "BEI Proses IPO 7 Perusahaan, Mayoritas Punya Aset Jumbo",
    "tags": [],
    "url": "https://www.liputan6.com/saham/read/8286026/bei-proses-ipo-7-perusahaan-mayoritas-punya-aset-jumbo",
-   "img": "https://cdn0-production-images-kly.akamaized.net/XTjvp5OAvzcUNpUH5iuq12XkvrQ=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3893147/original/054077900_1641196874-20220103-Pembukaan_Awal_Tahun_2022_IHSG_Menguat-4.jpg"
+   "img": "https://cdn0-production-images-kly.akamaized.net/XTjvp5OAvzcUNpUH5iuq12XkvrQ=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3893147/original/054077900_1641196874-20220103-Pembukaan_Awal_Tahun_2022_IHSG_Menguat-4.jpg",
+   "t_ko": "IDX는 7개 회사의 IPO를 처리하며 대부분이 점보 자산을 보유하고 있습니다.",
+   "t_id": "BEI Proses IPO 7 Perusahaan, Mayoritas Punya Aset Jumbo"
   },
   {
    "ts": "2026-09-07T06:33:00+07:00",
@@ -16157,7 +16203,8 @@
    "t": "Pemanfaatan Data dan Teknologi Perkuat Peran Strategis Marketing",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/930498/pemanfaatan-data-dan-teknologi-perkuat-peran-strategis-marketing",
-   "t_id": "Pemanfaatan Data dan Teknologi Perkuat Peran Strategis Marketing"
+   "t_id": "Pemanfaatan Data dan Teknologi Perkuat Peran Strategis Marketing",
+   "t_ko": "데이터와 기술의 활용으로 마케팅의 전략적 역할 강화"
   },
   {
    "ts": "2026-09-07T06:31:03+07:00",
@@ -16167,7 +16214,9 @@
    "t": "Dampak Ngeri Jika Bank Sampai Bangkrut",
    "tags": [],
    "url": "https://finance.detik.com/moneter/d-8651277/dampak-ngeri-jika-bank-sampai-bangkrut",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/anggota-dewan-komisioner-lembaga-penjamin-simpanan-lps-doddy-zulverdi-1788666949307_169.jpeg?w=360&q=90"
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/06/anggota-dewan-komisioner-lembaga-penjamin-simpanan-lps-doddy-zulverdi-1788666949307_169.jpeg?w=360&q=90",
+   "t_ko": "은행이 파산하면 무서운 영향",
+   "t_id": "Dampak Ngeri Jika Bank Sampai Bangkrut"
   },
   {
    "ts": "2026-09-07T06:30:00+07:00",
@@ -16178,7 +16227,8 @@
    "tags": [],
    "url": "https://www.idxchannel.com/market-news/ihsg-hari-ini-masih-rawan-terkoreksi-simak-analisa-4-saham-berikut",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/02/02/Papan_IHSG_-_30_Jan_26_-_2.jpeg",
-   "t_id": "IHSG Hari Ini Masih Rawan Terkoreksi, Simak Analisa 4 Saham Berikut"
+   "t_id": "IHSG Hari Ini Masih Rawan Terkoreksi, Simak Analisa 4 Saham Berikut",
+   "t_ko": "금일 JCI는 여전히 조정 가능성이 높습니다. 다음 4개 종목의 분석을 참조하세요."
   },
   {
    "ts": "2026-09-07T06:20:00+07:00",
@@ -16188,7 +16238,9 @@
    "t": "AS Serang Tanker Iran, Harga Minyak Dunia Melonjak",
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120652/as-serang-tanker-iran-harga-minyak-dunia-melonjak",
-   "img": "https://images.bloombergtechnoz.com/data/2024/02/image-20240215053551.jpg"
+   "img": "https://images.bloombergtechnoz.com/data/2024/02/image-20240215053551.jpg",
+   "t_ko": "미국,이란 유조선 공격, 세계 유가 급등",
+   "t_id": "AS Serang Tanker Iran, Harga Minyak Dunia Melonjak"
   },
   {
    "ts": "2026-09-07T06:00:00+07:00",
@@ -16198,7 +16250,9 @@
    "t": "Trump Again Pressures The Fed to Cut Interest Rates",
    "tags": [],
    "url": "https://www.idnfinancials.com/news/68414/trump-again-pressures-the-fed-to-cut-interest-rates",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/DONALD-TRUMP-21082026.jpg"
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/DONALD-TRUMP-21082026.jpg",
+   "t_ko": "트럼프, 연준에 금리 인하 압력 또 압박",
+   "t_id": "Trump Kembali Menekan The Fed untuk Memotong Suku Bunga"
   },
   {
    "ts": "2026-09-07T05:59:24+07:00",
@@ -16209,7 +16263,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120651/simak-prediksi-harga-emas-minggu-ini-waktunya-jual-atau-beli",
    "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260819071648.jpg",
-   "t_id": "Simak Prediksi Harga Emas Minggu Ini, Waktunya Jual atau Beli?"
+   "t_id": "Simak Prediksi Harga Emas Minggu Ini, Waktunya Jual atau Beli?",
+   "t_ko": "이번주 금값 전망을 확인해보세요, 팔아야 할 때인가요, 살 때인가요?"
   },
   {
    "ts": "2026-09-07T03:28:45+07:00",
@@ -16222,26 +16277,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/04/01/ilustrasi-jamkrindo-catat-kenaikan-laba-pada-2025-istimewa-HbdN9.webp",
    "t_ko": "이익 34.7% 증가, IDR 157조 보장으로 중소기업의 자본 접근성 강화",
    "t_id": "Laba Melonjak 34,7 Persen, Penjaminan Rp 157 Triliun Perkuat Akses Modal UMKM"
-  },
-  {
-   "ts": "2026-09-07T02:16:57+07:00",
-   "date": "2026-09-07",
-   "time": "02:16",
-   "src": "Republika",
-   "t": "Dirut ASDP Perkuat Koordinasi Urai Kepadatan Kendaraan di Pelabuhan Ketapang",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tkyiw92830000/dirut-asdp-perkuat-koordinasi-urai-kepadatan-kendaraan-di-pelabuhan-ketapang",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/084544100-1788722217-812B5F89-748A-4E2B-9317-397334.jpeg",
-   "t_id": "Dirut ASDP Perkuat Koordinasi Urai Kepadatan Kendaraan di Pelabuhan Ketapang"
-  },
-  {
-   "ts": "2026-09-07T02:00:00+07:00",
-   "date": "2026-09-07",
-   "time": "02:00",
-   "src": "Bloomberg",
-   "t": "Bond Traders Brace for More Swings at Both Ends of US Yield Curve",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-06/bond-traders-brace-for-more-swings-at-both-ends-of-us-yield-curve"
   }
  ],
  "kisi_news": [
@@ -16448,9 +16483,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.10",
-   "d": -0.05,
-   "ytd": 0.84,
+   "v": "99.12",
+   "d": -0.03,
+   "ytd": 0.86,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16496,9 +16531,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,801",
-   "d": -0.06,
-   "ytd": 0.72,
+   "v": "16,789",
+   "d": -0.13,
+   "ytd": 0.64,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -22900,7 +22935,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-06 01:55",
-  "pc_age_min": 1822,
+  "pc_age_min": 1840,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
