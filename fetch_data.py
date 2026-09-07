@@ -1517,11 +1517,16 @@ SEC_OK = re.compile(r"[/.](market|market-news|saham|bursa|bursa-dan-valas|ekonom
 SEC_SOFT = re.compile(r"[/.](politik|nasional|medcom-nasional|internasional|news)(?=[/.\-?]|$)", re.I)   # 정치·국내·국제면: 정책·경제 키워드가 있으면 채택
 POLICY_RX = re.compile(r"\b(kebijakan|pemerintah|presiden|prabowo|menteri|menkeu|purbaya|kabinet|dpr|apbn|anggaran|pajak|bea|cukai|subsidi|stimulus|regulasi|perpres|peraturan|ojk|bank indonesia|\bbi\b|bps|kemenkeu|kemendag|kementerian|ekspor|impor|tarif|investasi|danantara|bumn|utang|defisit|inflasi|pertumbuhan ekonomi|pdb|umkm|upah|umr|ump|ketenagakerjaan|harga (bbm|pangan|beras)|the fed|fomc|trump|tarif)\b", re.I)
 SEC_NO = re.compile(r"[/.](video|foto|humaniora|nusantara|megapolitan|hukum|hukum-kriminal|kriminal|olahraga|sport|sports|bola|sepakbola|lifestyle|gaya-hidup|hiburan|entertainment|selebriti|seleb|showbiz|teknologi|tekno|inet|travel|wisata|kuliner|food|kesehatan|health|edukasi|pendidikan|opini|kolom|foto|weekend|hype|inspirasi|regional|daerah|jateng|jatim|jabar|sumut|sulsel|bali|otomotif|oto|wolipop|haibunda|sepakbola|liga|piala)(?=[/.\-?]|$)", re.I)
+SEC_TIPS = re.compile(r"[/.](tips|tips-properti|feng-shui|desain|dekorasi|interior|hunian|inspirasi|inspirasi-properti|panduan|advertorial|sponsored|brandconnect|rumah-idaman|agen-properti)(?=[/.\-?]|$)", re.I)   # 경제 섹션(properti 등)에 얹힌 생활정보·광고성 하위섹션 — 무조건 제외
+TIPS_RX  = re.compile(r"\b(feng ?shui|shio|hoki|zodiak|desain (rumah|kamar|dapur|interior)|dekorasi|inspirasi (rumah|hunian|desain)|tips (rumah|kamar|dapur|hunian|menata|membeli rumah)|cara (menata|membersihkan|merawat|mengusir)|rumah minimalis|kamar tidur)\b", re.I)   # 제목 기반 생활정보 차단
+DISASTER_RX = re.compile(r"\b(banjir|gempa|erupsi|gunung (anak )?krakatau|tsunami|longsor|karhutla|kebakaran hutan|abu vulkanik|bandara (ditutup|tutup)|status (siaga|awas))\b", re.I)   # 자연재해 — 시장 영향 사안이라 채택
 NONMKT_RX = re.compile(r"\b(orangutan|orang utan|satwa|hewan|gajah|harimau|komodo|badak|penyu|banjir|gempa|erupsi|tsunami|longsor|kebakaran|sepak ?bola|timnas|liga|piala|artis|selebriti|film|drama|konser|kriminal|pembunuhan|narkoba|polisi|kecelakaan|virus|covid|cuaca|resep|kuliner|wisata|pernikahan|viral|horoskop|zodiak|ramalan|sinopsis|jadwal (sholat|shalat|imsak)|doa|khutbah)\b", re.I)
 def _market_news_ok(title, summ="", link=""):
-    """티커가 없는 기사 중 시장 뉴스로 채택할지: 비경제 섹션·비경제 소재는 제외, 경제 섹션이거나 시장·거시 키워드가 있으면 채택"""
-    if NONMKT_RX.search(title or ""): return False
+    """티커가 없는 기사 중 시장 뉴스로 채택할지: 생활정보·광고성 제외 → 자연재해 채택 → 비경제 섹션·소재 제외, 경제 섹션·시장 키워드 채택"""
     path = "/" + re.sub(r"^https?://", "", link or "")     # 호스트 첫 토큰(nasional.kompas.com 등)도 섹션으로 판별되게
+    if SEC_TIPS.search(path) or TIPS_RX.search(title or ""): return False   # 풍수·인테리어·생활 팁류는 경제 섹션이어도 제외
+    if DISASTER_RX.search(title or ""): return True                          # 화산·지진 등 재해는 시장 영향 — 채택
+    if NONMKT_RX.search(title or ""): return False
     if SEC_NO.search(path) and not SEC_OK.search(path): return False
     if SEC_OK.search(path): return True
     if SEC_SOFT.search(path):                          # 정치·국내·국제면은 제목에 정책/경제 키워드가 있을 때만 (요약은 보지 않음)
