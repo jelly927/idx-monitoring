@@ -1276,11 +1276,14 @@ def _claude_cli():
 
 def _claude_complete(prompt, key, model):
     """프롬프트 → 응답 텍스트. 1) API 키가 있으면 Anthropic API  2) 없으면 Claude Code CLI(구독)  3) 둘 다 없으면 None."""
-    if key:
-        r = requests.post("https://api.anthropic.com/v1/messages", json={"model": model, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt}]}, timeout=90,
-                          headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
-        if r.status_code != 200: log(f"Claude API 번역 실패 {r.status_code}: {r.text[:120]}"); return None
-        return "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text").strip()
+    if key and not _GEM.get("claude_api_dead"):
+        try:
+            r = requests.post("https://api.anthropic.com/v1/messages", json={"model": model, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt}]}, timeout=90,
+                              headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
+            if r.status_code == 200: return "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text").strip()
+            log(f"Claude API 번역 실패 {r.status_code}: {r.text[:120]}")
+            if r.status_code in (400, 401, 402, 403, 429): _GEM["claude_api_dead"] = True; log("Claude API 사용 불가(크레딧·키) → 이 세션은 Claude Code(구독) 로 번역")
+        except Exception as e: log("Claude API 오류", str(e)[:80])
     cli = _claude_cli()
     if not cli: return None
     import subprocess
@@ -1994,6 +1997,9 @@ def _gemini(prompt, max_tokens=1500, temperature=0.2, search=False):
     if _GEM.get("fail", 0) >= 2: return None                 # 이번 빌드에서 연속 2회 실패(타임아웃·503)면 나머지는 건너뛴다 — 빌드 지연 방지
     model = _gemini_model(key)
     try:
+        gap = time.time() - _GEM.get("last_call", 0)
+        if gap < 3: time.sleep(3 - gap)                    # 분당 한도 보호
+        _GEM["last_call"] = time.time()
         gc = {"temperature": temperature, "maxOutputTokens": max_tokens, "responseMimeType": "application/json"}
         if not _GEM.get("nothink"): gc["thinkingConfig"] = {"thinkingBudget": 0}          # 속도 우선(추론 비활성). 모델이 거부하면 빼고 재시도
         use_search = bool(search) and not _GEM.get("nosearch")
@@ -2014,6 +2020,10 @@ def _gemini(prompt, max_tokens=1500, temperature=0.2, search=False):
         if r.status_code == 400 and not _GEM.get("nojson"):                       # JSON 응답 모드도 거부 → 일반 텍스트로(파싱은 _json_loads_loose 가 처리)
             _GEM["nojson"] = True; gc.pop("responseMimeType", None)
             r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
+        if r.status_code == 429:                          # 분당/일일 한도 → 25초 쉬고 1회 재시도
+            log("Gemini 429 → 25초 대기 후 재시도"); time.sleep(25)
+            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}", json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": gc}, timeout=60)
+            _GEM["last_call"] = time.time()
         if r.status_code == 404 and _GEM["model"]:      # 모델 퇴역 → 캐시 지우고 다음 호출에서 재선택
             _GEM["model"] = None
             try: (CACHE / "gemini_model.txt").unlink()
@@ -2578,12 +2588,13 @@ def build():
     _GEM["fail"] = 0
     _GEM["ai_window"] = _ai_cycle_ok()      # 이번 빌드에서 AI 를 돌릴지 한 번만 판정 (지수·공시·종목 공통)
     if _GEM["ai_window"]: log("AI 요약 사이클 실행")
+    data["ai"] = {"stocks": {}, "model": _GEM.get("model") or GEMINI_MODEL}
+    try: data["ai"]["index"] = ai_index(data)                  # 지수 요약을 먼저 (가장 중요 · 한도에 걸리기 전에)
+    except Exception as e: log("지수 AI 요약 오류", repr(e)[:120])
     try: ai_announcements(data["announcements"])
     except Exception as e: log("공시 AI 요약 오류", repr(e)[:120])
-    try: data["ai"] = {"stocks": ai_stocks(data), "model": _GEM.get("model") or GEMINI_MODEL}
-    except Exception as e: log("종목 AI 요약 오류", repr(e)[:120]); data["ai"] = {"stocks": {}}
-    try: data["ai"]["index"] = ai_index(data)
-    except Exception as e: log("지수 AI 요약 오류", repr(e)[:120])
+    try: data["ai"]["stocks"] = ai_stocks(data)
+    except Exception as e: log("종목 AI 요약 오류", repr(e)[:120])
     if _GEM.get("ai_window"): _ai_cycle_mark()
     try:
         data["mcap"] = [{"t": r.get("t"), "n": r.get("n"), "px": r.get("px"), "pct": r.get("pct"),
