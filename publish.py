@@ -2,6 +2,7 @@
 """Git 설치 없이 GitHub 저장소에 변경된 파일만 올린다 (GitHub REST API, requests 만 사용).
 토큰: secrets.json {"github_token": "github_pat_..."} (gitignore 됨) 또는 환경변수 GITHUB_TOKEN.
 사용: python publish.py            → 코드·설정·번역 캐시 등 (data.json 제외, GitHub 러너가 작성)
+      python publish.py --brief    → briefs/latest_ko.pdf·latest_id.pdf 만 (데일리시황 배포)
       python publish.py --chat     → 코드 + 챗봇 컨텍스트(chat_context.json) — 챗봇 배포용
       python publish.py --data     → data.json / data.js 도 함께 (러너가 IDX 를 못 읽을 때)
       python publish.py --all      → 위 전부 + 전일 IDX 요약 캐시 (ss_*.json)"""
@@ -19,6 +20,7 @@ CODE = ["index.html", "fetch_data.py", "run.py", "selftest.py", "publish.py", "c
         "prepare_upload.py", "upload.bat", "publish.bat", "make_chat_context.py", "publish_chat.bat", "DEPLOY_CHAT.md", "WEEKEND.md", ".github/workflows/update.yml", "worker/worker.js",
         "data/manual.json", "data/idx_part.json", "data/cache/tr_claude.json", "data/cache/rss_map.json", "data/cache/tickers_all.json", "data/cache/kisi_news.json", "data/cache/sun10y_hist.json", "data/cache/sun10y_daily.json", "data/cache/dividends.json", "data/cache/ann_ai.json", "data/cache/stock_ai.json", "data/cache/index_ai.json", "data/banners.json"]
 CHAT = ["data/cache/chat_context.json"]
+BRIEF = ["briefs/latest_ko.pdf", "briefs/latest_id.pdf"]   # 데일리시황 PDF (KO/ID) — publish_brief.bat 이 사용
 DATA = ["data.json", "data.js", "data/cache/chat_context.json", "data/cache/investing_cal.json", "data/cache/news_seen.json"]
 
 def token():
@@ -39,6 +41,7 @@ def blob_sha(b: bytes) -> str:
 
 def main(argv):
     files = list(CODE)
+    if "--brief" in argv: files = list(BRIEF)   # 브리프 PDF 만 업로드 (코드 미포함)
     if "--chat" in argv: files += CHAT
     if "--data" in argv or "--all" in argv: files += DATA
     if "--all" in argv: files += sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / "data" / "cache").glob("ss_*.json"))[-25:]
