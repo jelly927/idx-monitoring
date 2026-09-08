@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 23:08",
+ "updated": "2026-09-08 23:31",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,341 · 21:34 Yahoo",
- "idr_per_krw": 13.1325,
+ "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,342 · 21:34 Yahoo",
+ "idr_per_krw": 13.1282,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15029,10 +15029,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7692.82,
+   "px": 7686.96,
    "prev": 7717.81,
-   "pct": -0.32,
-   "asof": "23:05",
+   "pct": -0.4,
+   "asof": "23:25",
    "live": true,
    "spark": [
     7705.24,
@@ -15066,17 +15066,21 @@
     7691.13,
     7689.52,
     7691.49,
-    7692.82
+    7688.86,
+    7687.5,
+    7684.66,
+    7689.33,
+    7686.96
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26488.55,
+   "px": 26443.67,
    "prev": 26506.99,
-   "pct": -0.07,
-   "asof": "23:05",
+   "pct": -0.24,
+   "asof": "23:25",
    "live": true,
    "spark": [
     26482.08,
@@ -15110,17 +15114,21 @@
     26480.89,
     26475.21,
     26482.52,
-    26488.55
+    26464.51,
+    26459.52,
+    26442.97,
+    26454.97,
+    26443.67
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52854.51,
+   "px": 52839.51,
    "prev": 53406.91,
-   "pct": -1.03,
-   "asof": "23:05",
+   "pct": -1.06,
+   "asof": "23:25",
    "live": true,
    "spark": [
     52962.24,
@@ -15154,7 +15162,11 @@
     52838.47,
     52836.49,
     52843.52,
-    52854.51
+    52825.67,
+    52809.73,
+    52791.24,
+    52845.87,
+    52839.51
    ]
   },
   {
@@ -16215,13 +16227,75 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/ZRRqiT15TrUOeT5j8OnqVrWCI5U=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277612/original/069968900_1672400409-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga-1.JPG",
    "t_ko": "상장사 HATM, 제3자배정 유상증자로 Rp3,200억 조달 — 사용처는",
    "t_id": "Emiten HATM Kantongi Rp 320 Miliar dari Private Placement, Buat Apa?"
+  },
+  {
+   "ts": "2026-08-24T08:33:00+07:00",
+   "date": "2026-08-24",
+   "time": "08/24",
+   "src": "Tempo",
+   "t": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1",
+   "tags": [
+    "AREA"
+   ],
+   "url": "https://bisnis.tempo.co/read/2117248/pt-pertamina-patra-niaga-ru-cilacap-buka-tender-penggantian-column-assy-11c-1",
+   "img": "https://statik.tempo.co/data/2026/08/10/id_1485829/1485829_720.jpg",
+   "t_ko": "Pertamina Patra Niaga Cilacap 정유공장, Column Assy 11C-1 교체 입찰 공고",
+   "t_id": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1"
+  },
+  {
+   "ts": "2026-08-10T18:35:31+07:00",
+   "date": "2026-08-10",
+   "time": "08/10",
+   "src": "Tempo",
+   "t": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://bisnis.tempo.co/read/2117152/bank-mandiri-gandeng-paramount-dorong-pertumbuhan-properti-berkelanjutan",
+   "img": "https://statik.tempo.co/data/2026/08/10/id_1485793/1485793_720.jpg",
+   "t_ko": "Bank Mandiri, Paramount와 제휴 — 지속가능 부동산 성장 추진",
+   "t_id": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan"
+  },
+  {
+   "ts": "2026-08-07T14:18:08+07:00",
+   "date": "2026-08-07",
+   "time": "08/07",
+   "src": "Tempo",
+   "t": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN",
+   "tags": [
+    "BKSL"
+   ],
+   "url": "https://bisnis.tempo.co/read/2116937/pemkab-bogor-serah-terima-psu-sentul-city-rampung-tinggal-tunggu-sertifikat-bpn",
+   "img": "https://statik.tempo.co/data/2026/08/07/id_1485550/1485550_720.jpg",
+   "t_ko": "Bogor 군청, Sentul City 공공시설(PSU) 인수 완료 — BPN 등기 대기",
+   "t_id": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN"
   }
  ],
  "market_news": [
   {
-   "ts": "2026-09-08T23:07:58.437257+07:00",
+   "ts": "2026-09-08T23:21:00+07:00",
    "date": "2026-09-08",
-   "time": "23:07",
+   "time": "23:21",
+   "src": "Media Indonesia",
+   "t": "Lokasi Bekas Karhutla Disegel usai Terbukti Ditanami Sawit",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931261/lokasi-bekas-karhutla-disegel-usai-terbukti-ditanami-sawit-"
+  },
+  {
+   "ts": "2026-09-08T23:09:50+07:00",
+   "date": "2026-09-08",
+   "time": "23:09",
+   "src": "Detik",
+   "t": "Masih Bingung Kelola Arus Kas Bisnis Jasamu? Ikut Program Ini Solusinya",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8654602/masih-bingung-kelola-arus-kas-bisnis-jasamu-ikut-program-ini-solusinya",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/detikevent-accurate-service-company-1788883745552_169.jpeg?w=360&q=90",
+   "t_id": "Masih Bingung Kelola Arus Kas Bisnis Jasamu? Ikut Program Ini Solusinya"
+  },
+  {
+   "ts": "2026-09-08T23:08:07+07:00",
+   "date": "2026-09-08",
+   "time": "23:08",
    "src": "Jawa Pos",
    "t": "Cerita Purbaya Kehilangan Berat Badan hampir 15 Kg akibat Beratnya jadi Menteri Keuangan",
    "tags": [],
@@ -16229,6 +16303,27 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/menteri-keuangan-menkeu-purbaya-yudhi-sadewa-dalam-jumpa-media-di-jakarta-selasa-89-djati-waluyojawaposcom-o75w6.webp",
    "t_ko": "Purbaya, 재무장관 부담에 체중 15kg 가까이 감소 언급",
    "t_id": "Cerita Purbaya Kehilangan Berat Badan hampir 15 Kg akibat Beratnya jadi Menteri Keuangan"
+  },
+  {
+   "ts": "2026-09-08T23:00:52+07:00",
+   "date": "2026-09-08",
+   "time": "23:00",
+   "src": "Medcom",
+   "t": "BPBD Kalbar: Karhutla Lebih Banyak Terjadi di Wilayah Non-Hutan",
+   "tags": [],
+   "url": "https://www.medcom.id/nasional/peristiwa/zNPRDBEk-bpbd-kalbar-karhutla-lebih-banyak-terjadi-di-wilayah-non-hutan",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840875/AI2UkVqc5e.jpg?w=720",
+   "t_id": "BPBD Kalbar: Karhutla Lebih Banyak Terjadi di Wilayah Non-Hutan"
+  },
+  {
+   "ts": "2026-09-08T23:00:00+07:00",
+   "date": "2026-09-08",
+   "time": "23:00",
+   "src": "Media Indonesia",
+   "t": "Belanja Pengadaan Pemerintah Capai Rp1.200 Triliun, Layanan Penjaminan Diperkuat",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931257/belanja-pengadaan-pemerintah-capai-rp1200-triliun-layanan-penjaminan-diperkuat",
+   "t_id": "Belanja Pengadaan Pemerintah Capai Rp1.200 Triliun, Layanan Penjaminan Diperkuat"
   },
   {
    "ts": "2026-09-08T23:00:00+07:00",
@@ -16239,8 +16334,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl1q52416/dunia-kerja-berubah-cepat-talenta-jadi-penentu",
    "img": "https://static.republika.co.id/uploads/images/detailnews/pekerja-wanita-melakukan-model-kerja-microshifting-ilustrasi-masa-depan_251013101234-805.jpg",
-   "t_id": "Dunia Kerja Berubah Cepat, Talenta Jadi Penentu",
-   "t_ko": "직업의 세계는 빠르게 변화하고 있으며, 인재는 결정적인 요소입니다."
+   "t_ko": "직업의 세계는 빠르게 변화하고 있으며, 인재는 결정적인 요소입니다.",
+   "t_id": "Dunia Kerja Berubah Cepat, Talenta Jadi Penentu"
   },
   {
    "ts": "2026-09-08T22:56:00+07:00",
@@ -16371,16 +16466,6 @@
    "t_id": "Perusahaan Multinasional Butuh Staf Paham Pajak Lintas Negara, Belajar di Sini!"
   },
   {
-   "ts": "2026-09-08T21:36:00+07:00",
-   "date": "2026-09-08",
-   "time": "21:36",
-   "src": "Media Indonesia",
-   "t": "Karhutla di Desa Bintet Bangka Hanguskan 30 Hektare Lahan dan 2 Rumah",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931215/karhutla-di-desa-bintet-bangka-hanguskan-30-hektare-lahan-dan-2-rumah",
-   "t_id": "Karhutla di Desa Bintet Bangka Hanguskan 30 Hektare Lahan dan 2 Rumah"
-  },
-  {
    "ts": "2026-09-08T21:34:29+07:00",
    "date": "2026-09-08",
    "time": "21:34",
@@ -16400,16 +16485,6 @@
    "url": "https://ekonomi.republika.co.id/berita/tl1uyj370/mentan-amran-dua-tahun-berkinerja-terbaik-di-kabinet-merah-putih",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260908212934-233.png",
    "t_id": "Mentan Amran, Dua Tahun Berkinerja Terbaik di Kabinet Merah Putih"
-  },
-  {
-   "ts": "2026-09-08T21:27:00+07:00",
-   "date": "2026-09-08",
-   "time": "21:27",
-   "src": "Media Indonesia",
-   "t": "Karhutla di Wilayah IKN Terkendali, Lokasi Jauh dari KIPP",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931214/karhutla-di-wilayah-ikn-terkendali-lokasi-jauh-dari-kipp",
-   "t_id": "Karhutla di Wilayah IKN Terkendali, Lokasi Jauh dari KIPP"
   },
   {
    "ts": "2026-09-08T21:21:35+07:00",
@@ -16518,28 +16593,6 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8654444/pemda-bisa-pinjam-ke-smi-bayarnya-pakai-dbh",
    "img": "https://akcdn.detik.net.id/community/media/visual/2015/12/17/00d5a8dc-da3d-483a-bd2e-e78ce08f1d66_169.jpg?w=360&q=90",
    "t_id": "Pemda Bisa Pinjam ke SMI, Bayarnya Pakai DBH"
-  },
-  {
-   "ts": "2026-09-08T20:34:24+07:00",
-   "date": "2026-09-08",
-   "time": "20:34",
-   "src": "Medcom",
-   "t": "Didominasi Lahan Gambut, Ini 4 Wilayah Penanganan Karhutla Tersulit di Kalbar",
-   "tags": [],
-   "url": "https://www.medcom.id/nasional/peristiwa/8ko13EWN-didominasi-lahan-gambut-ini-4-wilayah-penanganan-karhutla-tersulit-di-kalbar",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840862/D6l2PfurT9.jpeg?w=720",
-   "t_id": "Didominasi Lahan Gambut, Ini 4 Wilayah Penanganan Karhutla Tersulit di Kalbar"
-  },
-  {
-   "ts": "2026-09-08T20:27:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:27",
-   "src": "Katadata",
-   "t": "Utang Whoosh Berpotensi Dikelola INA dan SMI, Cicilan di Bawah Rp1 Triliun/Tahun",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa00d5ee3a81/utang-whoosh-berpotensi-dikelola-ina-dan-smi-cicilan-di-bawah-rp1-triliuntahun",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/02/2026_07_02-13_52_00_b0f4b5c8-75f5-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Utang Whoosh Berpotensi Dikelola INA dan SMI, Cicilan di Bawah Rp1 Triliun/Tahun"
   }
  ],
  "kisi_news": [
@@ -16725,9 +16778,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.792%",
-   "d": 0.17,
-   "ytd": 15.11,
+   "v": "4.798%",
+   "d": 0.29,
+   "ytd": 15.25,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16748,9 +16801,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.85",
-   "d": -0.32,
-   "ytd": 0.58,
+   "v": "98.92",
+   "d": -0.25,
+   "ytd": 0.65,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16760,9 +16813,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "92.31",
-   "d": 0.91,
-   "ytd": 60.76,
+   "v": "92.32",
+   "d": 0.92,
+   "ytd": 60.78,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16772,9 +16825,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,443.9",
-   "d": -0.73,
-   "ytd": 2.73,
+   "v": "4,430.4",
+   "d": -1.03,
+   "ytd": 2.42,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16796,9 +16849,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,777",
-   "d": -0.01,
-   "ytd": 0.57,
+   "v": "16,776",
+   "d": 0.45,
+   "ytd": 0.56,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -22723,7 +22776,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 297,
+  "pc_age_min": 320,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -24205,11 +24258,11 @@
    "ev_id": "Kinerja & dividen",
    "hl": "Optimistis terhadap Fundamental Bisnis, Bank Mandiri Bagikan Dividen Interim Rp6,16 Triliun",
    "url": "https://ekonomi.republika.co.id/berita/tl1wh6370/optimistis-terhadap-fundamental-bisnis-bank-mandiri-bagikan-dividen-interim-rp616-triliun",
-   "score": 62.3,
-   "s_news": 88,
+   "score": 65.1,
+   "s_news": 95,
    "s_size": 90,
    "s_surge": 0,
-   "srcs": 2
+   "srcs": 3
   },
   {
    "t": "BUMI",
