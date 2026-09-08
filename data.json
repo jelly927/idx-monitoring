@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 22:09",
+ "updated": "2026-09-08 22:30",
  "delay_min": 0,
- "fx_basis": "13.12 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,342 · 21:34 Yahoo",
- "idr_per_krw": 13.1217,
+ "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,341 · 21:34 Yahoo",
+ "idr_per_krw": 13.1296,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15029,10 +15029,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7692.4,
+   "px": 7695.66,
    "prev": 7717.81,
-   "pct": -0.33,
-   "asof": "22:05",
+   "pct": -0.29,
+   "asof": "22:25",
    "live": true,
    "spark": [
     7705.24,
@@ -15054,17 +15054,21 @@
     7691.37,
     7691.69,
     7692.51,
-    7692.4
+    7691.41,
+    7696.74,
+    7696.06,
+    7695.55,
+    7695.66
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26440.09,
+   "px": 26488.02,
    "prev": 26506.99,
-   "pct": -0.25,
-   "asof": "22:05",
+   "pct": -0.07,
+   "asof": "22:25",
    "live": true,
    "spark": [
     26482.08,
@@ -15086,17 +15090,21 @@
     26426.17,
     26436.2,
     26443.27,
-    26440.09
+    26430.46,
+    26475.59,
+    26475.54,
+    26485.33,
+    26488.02
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52871.74,
+   "px": 52901.84,
    "prev": 53406.91,
-   "pct": -1.0,
-   "asof": "22:05",
+   "pct": -0.95,
+   "asof": "22:25",
    "live": true,
    "spark": [
     52962.24,
@@ -15118,7 +15126,11 @@
     52831.36,
     52850.07,
     52874.25,
-    52871.74
+    52880.06,
+    52873.11,
+    52877.6,
+    52867.08,
+    52901.84
    ]
   },
   {
@@ -15453,6 +15465,18 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-08T22:20:00+07:00",
+   "date": "2026-09-08",
+   "time": "22:20",
+   "src": "Media Indonesia",
+   "t": "Kembali ke Semarang Vol. 2: Pollux Hotels Group Perkuat Kemitraan di Kota Semarang",
+   "tags": [
+    "POLI"
+   ],
+   "url": "https://mediaindonesia.com/travelista/931238/kembali-ke-semarang-vol-2-pollux-hotels-group-perkuat-kemitraan-di-kota-semarang",
+   "t_id": "Kembali ke Semarang Vol. 2: Pollux Hotels Group Perkuat Kemitraan di Kota Semarang"
+  },
   {
    "ts": "2026-09-08T22:03:06+07:00",
    "date": "2026-09-08",
@@ -15955,21 +15979,6 @@
    "t_id": "Laba Semester I BLOG Naik 9% Ditopang Ekspansi Cold Chain"
   },
   {
-   "ts": "2026-09-08T13:14:35+07:00",
-   "date": "2026-09-08",
-   "time": "13:14",
-   "src": "Detik",
-   "t": "IHSG Bergerak Menguat, Asing Borong Saham BBCA-BBRI",
-   "tags": [
-    "BBCA",
-    "BBRI"
-   ],
-   "url": "https://finance.detik.com/bursa-dan-valas/d-8653649/ihsg-bergerak-menguat-asing-borong-saham-bbca-bbri",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/01/30/ihsg-rebound-usai-dua-hari-anjlok-seiring-pengunduran-diri-dirut-bei-1769748663323_169.jpeg?w=360&q=90",
-   "t_ko": "IHSG 강세 — 외국인 BBCA·BBRI 대량 순매수",
-   "t_id": "IHSG Bergerak Menguat, Asing Borong Saham BBCA-BBRI"
-  },
-  {
    "ts": "2026-09-08T12:10:22+07:00",
    "date": "2026-09-08",
    "time": "12:10",
@@ -16215,6 +16224,37 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-08T22:14:00+07:00",
+   "date": "2026-09-08",
+   "time": "22:14",
+   "src": "Media Indonesia",
+   "t": "Kronologi 5 Jurnalis Hilang Kontak di Perairan Gunung Anak Krakatau",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931236/kronologi-5-jurnalis-hilang-kontak-di-perairan-gunung-anak-krakatau",
+   "t_id": "Kronologi 5 Jurnalis Hilang Kontak di Perairan Gunung Anak Krakatau"
+  },
+  {
+   "ts": "2026-09-08T22:10:40+07:00",
+   "date": "2026-09-08",
+   "time": "22:10",
+   "src": "Detik",
+   "t": "Sampah Kini 'Disulap' Jadi Bensin dan Solar",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8654538/sampah-kini-disulap-jadi-bensin-dan-solar",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/10/sampah-plastik-disulap-jadi-bbm-alternatif-lewat-teknologi-pirolisis-1783652532982_169.jpeg?w=360&q=90",
+   "t_id": "Sampah Kini 'Disulap' Jadi Bensin dan Solar"
+  },
+  {
+   "ts": "2026-09-08T22:07:15+07:00",
+   "date": "2026-09-08",
+   "time": "22:07",
+   "src": "Medcom",
+   "t": "BPBD Kalbar Berlomba dengan Angin Demi Padamkan Karhutla",
+   "tags": [],
+   "url": "https://www.medcom.id/nasional/peristiwa/Rb1y6Beb-bpbd-kalbar-berlomba-dengan-angin-demi-padamkan-karhutla",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840871/DtCwgIxeF0.jpg?w=720"
+  },
+  {
    "ts": "2026-09-08T21:56:02+07:00",
    "date": "2026-09-08",
    "time": "21:56",
@@ -16373,15 +16413,6 @@
    "t_id": "Pertamina Sebut tak Ada Komplain Signifikan dari Pengguna B50"
   },
   {
-   "ts": "2026-09-08T21:09:00+07:00",
-   "date": "2026-09-08",
-   "time": "21:09",
-   "src": "Media Indonesia",
-   "t": "Polres Tegal Rangkul Kelompok Tani Hutan Cegah Karhutla",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931203/polres-tegal-rangkul-kelompok-tani-hutan-cegah-karhutla"
-  },
-  {
    "ts": "2026-09-08T21:07:46+07:00",
    "date": "2026-09-08",
    "time": "21:07",
@@ -16417,16 +16448,6 @@
    "ts": "2026-09-08T21:00:00+07:00",
    "date": "2026-09-08",
    "time": "21:00",
-   "src": "Media Indonesia",
-   "t": "BPBD Sumut Catat Enam Kabupaten dan Kota Dilanda Banjir",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931195/bpbd-sumut-catat-enam-kabupaten-dan-kota-dilanda-banjir",
-   "t_id": "BPBD Sumut Catat Enam Kabupaten dan Kota Dilanda Banjir"
-  },
-  {
-   "ts": "2026-09-08T21:00:00+07:00",
-   "date": "2026-09-08",
-   "time": "21:00",
    "src": "Republika",
    "t": "Abu Vulkanis Anak Krakatau Menyebar ke Jakarta, PAM Jaya Pastikan Air Aman",
    "tags": [],
@@ -16444,16 +16465,6 @@
    "url": "https://katadata.co.id/berita/nasional/6aa014698fea6/lima-jurnalis-hilang-kontak-saat-akan-meliput-erupsi-anak-krakatau",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/08/Kepala_Basarnas_Mohammad_Syafii_tengah_diampingi_Deputi_Operasi-2026_09_08-20_56_32_129772bdedd6c5902b0765e5cf830dcd_620x413_thumb.jpg",
    "t_id": "Lima Jurnalis Hilang Kontak saat Akan Meliput Erupsi Anak Krakatau"
-  },
-  {
-   "ts": "2026-09-08T20:52:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:52",
-   "src": "Media Indonesia",
-   "t": "BP Tapera Jajaki Integrasi Katalog Properti ke rumah.go.id",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931188/bp-tapera-jajaki-integrasi-katalog-properti-ke-rumahgoid",
-   "t_id": "BP Tapera Jajaki Integrasi Katalog Properti ke rumah.go.id"
   },
   {
    "ts": "2026-09-08T20:44:12+07:00",
@@ -16717,9 +16728,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.788%",
-   "d": 0.08,
-   "ytd": 15.01,
+   "v": "4.784%",
+   "d": 0.0,
+   "ytd": 14.92,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16740,8 +16751,8 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.82",
-   "d": -0.35,
+   "v": "98.81",
+   "d": -0.36,
    "ytd": 0.54,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -16752,9 +16763,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "92.76",
-   "d": 1.4,
-   "ytd": 61.55,
+   "v": "92.75",
+   "d": 1.39,
+   "ytd": 61.53,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16764,9 +16775,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,440.1",
-   "d": -0.82,
-   "ytd": 2.65,
+   "v": "4,452.3",
+   "d": -0.54,
+   "ytd": 2.93,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16788,9 +16799,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,791",
-   "d": 0.54,
-   "ytd": 0.65,
+   "v": "16,805",
+   "d": 0.62,
+   "ytd": 0.74,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -22715,7 +22726,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 238,
+  "pc_age_min": 259,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
