@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 21:44",
+ "updated": "2026-09-08 21:58",
  "delay_min": 0,
  "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,342 · 21:34 Yahoo",
- "idr_per_krw": 13.1279,
+ "idr_per_krw": 13.1287,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -335,10 +335,10 @@
   "m1": 5.04,
   "value_idr": 15709984999251,
   "volume": 35150343143,
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-08 18:11",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-08 18:11",
   "rank_asof": null,
   "rank_date": "2026-09-08",
-  "adv": 389,
+  "adv": 390,
   "dec": 253,
   "unch": 190,
   "foreign_net_idr": 378259109581.2046,
@@ -3983,6 +3983,22 @@
    "lo": 650.0,
    "ratio": 1.1,
    "fnet": -2278093712.7015233,
+   "live": 0
+  },
+  {
+   "t": "AALI",
+   "n": "Astra Agro Lestari",
+   "px": 8525.0,
+   "prev": 8375.0,
+   "pct": 1.79,
+   "val": 7239487500.000001,
+   "vol": 855900.0,
+   "sh": 1924688333,
+   "mcap": 16407968038825.0,
+   "hi": 8525.0,
+   "lo": 8325.0,
+   "ratio": 0.5,
+   "fnet": 2001990283.9116719,
    "live": 0
   },
   {
@@ -14646,11 +14662,11 @@
   {
    "name": "필수소비재",
    "name_id": "Konsumen Primer",
-   "n": 122,
-   "adv": 65,
+   "n": 123,
+   "adv": 66,
    "dec": 34,
-   "val": 1172329841466.667,
-   "mcap": 1095030244829241.0,
+   "val": 1179569328966.667,
+   "mcap": 1111438212868066.0,
    "top": [
     {
      "t": "HMSP",
@@ -14693,7 +14709,7 @@
      "pct": 1.31
     }
    ],
-   "pct": 1.33
+   "pct": 1.34
   },
   {
    "name": "산업재",
@@ -15013,10 +15029,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7686.47,
+   "px": 7692.77,
    "prev": 7717.81,
-   "pct": -0.41,
-   "asof": "21:40",
+   "pct": -0.32,
+   "asof": "21:55",
    "live": true,
    "spark": [
     7705.24,
@@ -15033,17 +15049,20 @@
     7682.37,
     7685.12,
     7684.78,
-    7686.47
+    7686.42,
+    7687.4,
+    7691.37,
+    7692.77
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26406.4,
+   "px": 26435.39,
    "prev": 26506.99,
-   "pct": -0.38,
-   "asof": "21:40",
+   "pct": -0.27,
+   "asof": "21:55",
    "live": true,
    "spark": [
     26482.08,
@@ -15060,17 +15079,20 @@
     26392.81,
     26392.43,
     26390.89,
-    26406.4
+    26408.83,
+    26408.08,
+    26426.17,
+    26435.39
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52781.64,
+   "px": 52856.5,
    "prev": 53406.91,
-   "pct": -1.17,
-   "asof": "21:40",
+   "pct": -1.03,
+   "asof": "21:55",
    "live": true,
    "spark": [
     52962.24,
@@ -15087,7 +15109,10 @@
     52726.49,
     52752.55,
     52788.82,
-    52781.64
+    52776.77,
+    52812.39,
+    52831.36,
+    52856.5
    ]
   },
   {
@@ -15413,6 +15438,18 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-08T21:48:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:48",
+   "src": "Media Indonesia",
+   "t": "Infiltrasi Drone ke Wilayah NATO: Garis Depan Baru Perang Hibrida di Eropa",
+   "tags": [
+    "NATO"
+   ],
+   "url": "https://mediaindonesia.com/internasional/931222/infiltrasi-drone-ke-wilayah-nato-garis-depan-baru-perang-hibrida-di-eropa",
+   "t_id": "Infiltrasi Drone ke Wilayah NATO: Garis Depan Baru Perang Hibrida di Eropa"
+  },
   {
    "ts": "2026-09-08T21:00:00+07:00",
    "date": "2026-09-08",
@@ -16164,6 +16201,38 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-08T21:56:02+07:00",
+   "date": "2026-09-08",
+   "time": "21:56",
+   "src": "Jawa Pos",
+   "t": "BTN Pertahankan Peringkat Tertinggi idAAA dengan Outlook Stable dari PEFINDO",
+   "tags": [],
+   "url": "https://www.jawapos.com/properti/2609080293/btn-pertahankan-peringkat-tertinggi-idaaa-dengan-outlook-stable-dari-pefindo",
+   "img": "https://cdn-assets.jawapos.com/images/1/2025/05/27/bale-btn-2664925550.jpg",
+   "t_ko": "BTN PEFINDO 최고등급 idAAA 유지 — 등급전망 Stable",
+   "t_id": "BTN Pertahankan Peringkat Tertinggi idAAA dengan Outlook Stable dari PEFINDO"
+  },
+  {
+   "ts": "2026-09-08T21:47:20+07:00",
+   "date": "2026-09-08",
+   "time": "21:47",
+   "src": "Detik",
+   "t": "Sudah Lulus Brevet Pajak AB, Saatnya Lanjut Brevet C untuk CV Lebih Kuat",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8654509/sudah-lulus-brevet-pajak-ab-saatnya-lanjut-brevet-c-untuk-cv-lebih-kuat",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/detikevent-brevet-pajak-1788878364678_169.jpeg?w=360&q=90",
+   "t_id": "Sudah Lulus Brevet Pajak AB, Saatnya Lanjut Brevet C untuk CV Lebih Kuat"
+  },
+  {
+   "ts": "2026-09-08T21:42:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:42",
+   "src": "Media Indonesia",
+   "t": "Kabut Asap Karhutla, Pekanbaru Perpanjang PJJ Sekolah hingga 9 September",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931220/kabut-asap-karhutla-pekanbaru-perpanjang-pjj-sekolah-hingga-9-september"
+  },
+  {
    "ts": "2026-09-08T21:39:42+07:00",
    "date": "2026-09-08",
    "time": "21:39",
@@ -16172,8 +16241,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8654502/perusahaan-multinasional-butuh-staf-paham-pajak-lintas-negara-belajar-di-sini",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/detikevent-brevet-pajak-1788878364678_169.jpeg?w=360&q=90",
-   "t_id": "Perusahaan Multinasional Butuh Staf Paham Pajak Lintas Negara, Belajar di Sini!",
-   "t_ko": "다국적 기업에는 국경 간 세금을 이해하는 직원이 필요합니다. 여기에서 알아보십시오!"
+   "t_ko": "다국적 기업에는 국경 간 세금을 이해하는 직원이 필요합니다. 여기에서 알아보십시오!",
+   "t_id": "Perusahaan Multinasional Butuh Staf Paham Pajak Lintas Negara, Belajar di Sini!"
   },
   {
    "ts": "2026-09-08T21:36:00+07:00",
@@ -16194,6 +16263,17 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl1v5h370/purbaya-bantah-masyarakat-ramairamai-makan-tabungan",
    "img": "https://static.republika.co.id/uploads/images/detailnews/purbaya-mengaku-menikmati-hidangan-khas-yang_260717145010-588.jpeg"
+  },
+  {
+   "ts": "2026-09-08T21:30:19+07:00",
+   "date": "2026-09-08",
+   "time": "21:30",
+   "src": "Republika",
+   "t": "Mentan Amran, Dua Tahun Berkinerja Terbaik di Kabinet Merah Putih",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl1uyj370/mentan-amran-dua-tahun-berkinerja-terbaik-di-kabinet-merah-putih",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260908212934-233.png",
+   "t_id": "Mentan Amran, Dua Tahun Berkinerja Terbaik di Kabinet Merah Putih"
   },
   {
    "ts": "2026-09-08T21:27:00+07:00",
@@ -16352,16 +16432,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/executive-vice-president-retention-business-acc-vivi-elfira-kiri-bersama-vice-president-retention-business-sekaligus-brand-manager-retention-acc-m-dimas-purbayanto-saat-workshop-investasi-emas-pada-selasa-89-NbN9G.webp"
   },
   {
-   "ts": "2026-09-08T20:44:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:44",
-   "src": "Media Indonesia",
-   "t": "Kapal Rombongan Jurnalis Hilang di Selat Sunda, Basarnas: Pencarian Terkendala Ancaman Erupsi Krakatau",
-   "tags": [],
-   "url": "https://mediaindonesia.com/humaniora/931187/kapal-rombongan-jurnalis-hilang-di-selat-sunda-basarnas-pencarian-terkendala-ancaman-erupsi-krakatau",
-   "t_id": "Kapal Rombongan Jurnalis Hilang di Selat Sunda, Basarnas: Pencarian Terkendala Ancaman Erupsi Krakatau"
-  },
-  {
    "ts": "2026-09-08T20:39:30+07:00",
    "date": "2026-09-08",
    "time": "20:39",
@@ -16449,38 +16519,6 @@
    "url": "https://katadata.co.id/digital/teknologi/6aa006b71e91e/cara-kerja-teknologi-omc-untuk-atasi-kebakaran-hutan-satelit-hingga-tabur-garam",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/11/02/2025_11_02-17_32_00_6365595c-b7dc-11f0-9c89-0242ac120006_620x413_thumb.jpg",
    "t_id": "Cara Kerja Teknologi OMC untuk Atasi Kebakaran Hutan: Satelit hingga Tabur Garam"
-  },
-  {
-   "ts": "2026-09-08T19:56:14+07:00",
-   "date": "2026-09-08",
-   "time": "19:56",
-   "src": "Republika",
-   "t": "Bunga Pembiayaan Properti Mulai 3,3 Persen, Alam Sutera Gandeng Sejumlah Bank",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl1qlq522/bunga-pembiayaan-properti-mulai-33-persen-alam-sutera-gandeng-sejumlah-bank",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/status-kawasan-ekonomi-khusus-kek-bsd-city-diproyeksikan-mendorong_260709231811-134.jpg",
-   "t_id": "Bunga Pembiayaan Properti Mulai 3,3 Persen, Alam Sutera Gandeng Sejumlah Bank"
-  },
-  {
-   "ts": "2026-09-08T19:55:23+07:00",
-   "date": "2026-09-08",
-   "time": "19:55",
-   "src": "Medcom",
-   "t": "VinFast Perluas Jaringan Authorized Service Outlet di Indonesia, Tingkatkan Pengalaman Layanan Purnajual",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/ObzRgEgb-vinfast-perluas-jaringan-authorized-service-outlet-di-indonesia-tingkatkan-pengalaman-layanan-purnajual",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840854/r20Ea4NPCK.jpeg?w=720",
-   "t_id": "VinFast Perluas Jaringan Authorized Service Outlet di Indonesia, Tingkatkan Pengalaman Layanan Purnajual"
-  },
-  {
-   "ts": "2026-09-08T19:54:43+07:00",
-   "date": "2026-09-08",
-   "time": "19:54",
-   "src": "Republika",
-   "t": "Ekonomi Kreator Tumbuh, 6 Juta Kreator Produksi 400 Ribu Templat per Hari",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl1qj7522/ekonomi-kreator-tumbuh-6-juta-kreator-produksi-400-ribu-templat-per-hari",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/kreator-konten-aleta-novianda-mengatakan-membangun-bisnis-di-media_260727131200-185.jpeg"
   }
  ],
  "kisi_news": [
@@ -16655,8 +16693,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.12",
-   "d": 0.13,
-   "ytd": 12.97,
+   "d": 0.14,
+   "ytd": 12.98,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16666,9 +16704,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.792%",
-   "d": 0.17,
-   "ytd": 15.11,
+   "v": "4.790%",
+   "d": 0.13,
+   "ytd": 15.06,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16689,9 +16727,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.82",
-   "d": -0.35,
-   "ytd": 0.55,
+   "v": "98.80",
+   "d": -0.37,
+   "ytd": 0.53,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16701,9 +16739,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "93.20",
-   "d": 1.88,
-   "ytd": 62.31,
+   "v": "92.97",
+   "d": 1.63,
+   "ytd": 61.91,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16713,9 +16751,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,442.3",
-   "d": -0.77,
-   "ytd": 2.7,
+   "v": "4,440.8",
+   "d": -0.8,
+   "ytd": 2.66,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16737,9 +16775,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,783",
-   "d": 0.5,
-   "ytd": 0.61,
+   "v": "16,804",
+   "d": 0.62,
+   "ytd": 0.73,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -22664,7 +22702,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 213,
+  "pc_age_min": 227,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
