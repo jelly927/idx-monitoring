@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 02:06",
+ "updated": "2026-09-09 03:05",
  "delay_min": 0,
- "fx_basis": "13.15 IDR/KRW · USD/IDR 17,625 · USD/KRW 1,340 · 01:39 Yahoo",
- "idr_per_krw": 13.1481,
+ "fx_basis": "13.14 IDR/KRW · USD/IDR 17,625 · USD/KRW 1,341 · 01:39 Yahoo",
+ "idr_per_krw": 13.1436,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -335,10 +335,10 @@
   "m1": 5.04,
   "value_idr": 15709984999251,
   "volume": 35150343143,
-  "rank_src": "Yahoo 15분 지연 · 830종목 · 종가 · 외국인·공시 PC 09-08 18:11",
+  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-08 18:11",
   "rank_asof": null,
   "rank_date": "2026-09-08",
-  "adv": 387,
+  "adv": 388,
   "dec": 253,
   "unch": 190,
   "foreign_net_idr": 378259109581.2046,
@@ -7810,6 +7810,22 @@
    "live": 0
   },
   {
+   "t": "AREA",
+   "n": "Dunia Virtual Online",
+   "px": 344.0,
+   "prev": 336.0,
+   "pct": 2.38,
+   "val": 856147200.0,
+   "vol": 2488800.0,
+   "sh": 2539601000,
+   "mcap": 873622744000.0,
+   "hi": 352.0,
+   "lo": 336.0,
+   "ratio": 0.7,
+   "fnet": 5576649.5178399235,
+   "live": 0
+  },
+  {
    "t": "TSPC",
    "n": "Tempo Scan Pacific",
    "px": 2750.0,
@@ -14874,11 +14890,11 @@
   {
    "name": "기술",
    "name_id": "Teknologi",
-   "n": 40,
-   "adv": 20,
+   "n": 41,
+   "adv": 21,
    "dec": 9,
-   "val": 177943723066.6667,
-   "mcap": 728807614665817.0,
+   "val": 178799870266.6667,
+   "mcap": 729681237409817.0,
    "top": [
     {
      "t": "DCII",
@@ -14921,7 +14937,7 @@
      "pct": 0.75
     }
    ],
-   "pct": 0.16
+   "pct": 0.17
   },
   {
    "name": "운송·물류",
@@ -14981,10 +14997,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7681.31,
-   "prev": 7717.81,
-   "pct": -0.47,
-   "asof": "02:00",
+   "px": 7674.13,
+   "prev": 7718.6,
+   "pct": -0.58,
+   "asof": "02:55",
    "live": true,
    "spark": [
     7705.24,
@@ -15053,17 +15069,28 @@
     7679.14,
     7684.88,
     7682.94,
-    7681.31
+    7681.48,
+    7683.83,
+    7684.73,
+    7682.41,
+    7680.06,
+    7684.39,
+    7686.49,
+    7685.04,
+    7683.32,
+    7680.5,
+    7671.71,
+    7674.13
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26444.1,
+   "px": 26423.21,
    "prev": 26506.99,
-   "pct": -0.24,
-   "asof": "02:00",
+   "pct": -0.32,
+   "asof": "02:55",
    "live": true,
    "spark": [
     26482.08,
@@ -15132,17 +15159,28 @@
     26420.22,
     26444.68,
     26443.91,
-    26444.1
+    26440.7,
+    26443.77,
+    26447.7,
+    26437.24,
+    26429.89,
+    26442.47,
+    26443.59,
+    26438.46,
+    26434.38,
+    26434.37,
+    26398.02,
+    26423.21
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52786.86,
-   "prev": 53406.91,
-   "pct": -1.16,
-   "asof": "02:00",
+   "px": 52790.22,
+   "prev": 53414.25,
+   "pct": -1.17,
+   "asof": "02:55",
    "live": true,
    "spark": [
     52962.24,
@@ -15211,7 +15249,18 @@
     52784.71,
     52804.97,
     52780.23,
-    52786.86
+    52790.82,
+    52834.8,
+    52848.75,
+    52830.65,
+    52814.26,
+    52849.13,
+    52869.1,
+    52849.55,
+    52846.04,
+    52807.78,
+    52766.16,
+    52790.22
    ]
   },
   {
@@ -16027,7 +16076,7 @@
     "AKRA"
    ],
    "url": "https://www.idnfinancials.com/news/68528/akra-steps-up-jiipe-gresik-expansion-from-lng-to-solar-power",
-   "img": "https://photos.idnfinancials.com/static/web/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/AKRA-min.jpg",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/AKRA-09092026.jpg",
    "t_ko": "AKRA, JIIPE Gresik 확장 가속 — LNG에서 태양광까지",
    "t_id": "AKRA Genjot Ekspansi JIIPE Gresik, dari LNG hingga PLTS"
   },
@@ -16318,6 +16367,35 @@
   }
  ],
  "market_news": [
+  {
+   "ts": "2026-09-09T02:45:43+07:00",
+   "date": "2026-09-09",
+   "time": "02:45",
+   "src": "Jawa Pos",
+   "t": "Pendapatan Rp 44,9 Miliar, Employee Super App Venteny Tumbuh Pesat",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi-digital/2609080440/pendapatan-rp-449-miliar-employee-super-app-venteny-tumbuh-pesat",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/istimewa-fPofQ.webp",
+   "t_id": "Pendapatan Rp 44,9 Miliar, Employee Super App Venteny Tumbuh Pesat"
+  },
+  {
+   "ts": "2026-09-09T02:43:56+07:00",
+   "date": "2026-09-09",
+   "time": "02:43",
+   "src": "Bloomberg",
+   "t": "SpaceX Shares to Get a Boost If Nasdaq 100 Increases Weighting",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-08/spacex-shares-to-get-boost-if-nasdaq-100-ups-weighting-video"
+  },
+  {
+   "ts": "2026-09-09T02:17:26+07:00",
+   "date": "2026-09-09",
+   "time": "02:17",
+   "src": "Bloomberg",
+   "t": "Bessent’s ‘Fever’-Quelling Debt Buybacks Put Wall Street on Edge",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-08/bessent-s-fever-quelling-debt-buybacks-put-wall-street-on-edge"
+  },
   {
    "ts": "2026-09-09T01:52:08+07:00",
    "date": "2026-09-09",
@@ -16614,38 +16692,6 @@
    "url": "https://ekonomi.republika.co.id/berita/tl1uao490/pertamina-sebut-tak-ada-komplain-signifikan-dari-pengguna-b50",
    "img": "https://static.republika.co.id/uploads/images/detailnews/050628200-1783597939-830-556.jpg",
    "t_id": "Pertamina Sebut tak Ada Komplain Signifikan dari Pengguna B50"
-  },
-  {
-   "ts": "2026-09-08T21:07:46+07:00",
-   "date": "2026-09-08",
-   "time": "09/08",
-   "src": "Jawa Pos",
-   "t": "Purbaya Berencana Pakai Data Lama untuk Salurkan Bansos jika BPS Masih Nggak Akurat",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609080475/purbaya-berencana-pakai-data-lama-untuk-salurkan-bansos-jika-bps-masih-nggak-akurat",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/menteri-keuangan-purbaya-yudhi-sadewa-bersiap-menyampaikan-tanggapan-pemerintah-pada-rapat-paripurna-ke-3-masa-persidangan-i-tahun-sidang-2026-2027-di-kompleks-parlemen-senayan-jakarta-kamis-2782026-salman-toyibijawa-pos-SW245.webp",
-   "t_id": "Purbaya Berencana Pakai Data Lama untuk Salurkan Bansos jika BPS Masih Nggak Akurat"
-  },
-  {
-   "ts": "2026-09-08T21:05:05+07:00",
-   "date": "2026-09-08",
-   "time": "09/08",
-   "src": "Republika",
-   "t": "Anggaran Subsidi Energi Dipangkas, Ini Respons Pertamina",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl1tsh490/anggaran-subsidi-energi-dipangkas-ini-respons-pertamina",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/066899800-1781079739-830-556.jpg",
-   "t_id": "Anggaran Subsidi Energi Dipangkas, Ini Respons Pertamina"
-  },
-  {
-   "ts": "2026-09-08T21:00:00+07:00",
-   "date": "2026-09-08",
-   "time": "09/08",
-   "src": "Bloomberg Technoz",
-   "t": "KPK: Sejumlah Saksi Tak Hadiri Pemeriksaan Karena Erupsi Gunung",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120960/kpk-sejumlah-saksi-tak-hadiri-pemeriksaan-karena-erupsi-gunung",
-   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260906141932.jpeg"
   }
  ],
  "kisi_news": [
@@ -16820,8 +16866,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.14",
-   "d": 0.31,
-   "ytd": 13.17,
+   "d": 0.24,
+   "ytd": 13.09,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16831,9 +16877,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.812%",
-   "d": 0.59,
-   "ytd": 15.59,
+   "v": "4.806%",
+   "d": 0.46,
+   "ytd": 15.45,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16854,9 +16900,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.85",
-   "d": -0.32,
-   "ytd": 0.57,
+   "v": "98.86",
+   "d": -0.31,
+   "ytd": 0.59,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16866,9 +16912,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "93.72",
-   "d": 2.45,
-   "ytd": 63.22,
+   "v": "93.66",
+   "d": 2.38,
+   "ytd": 63.11,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16878,9 +16924,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,419.0",
-   "d": -1.29,
-   "ytd": 2.16,
+   "v": "4,407.1",
+   "d": -1.55,
+   "ytd": 1.88,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17711,7 +17757,7 @@
    "imp": 2,
    "exp": null,
    "prev": "3.6%",
-   "act": "3.6%",
+   "act": null,
    "src": "investing.com",
    "title_ko": "8월 뉴욕 연은 1년 기대인플레이션",
    "title_id": "Ekspektasi Inflasi Konsumen 1 Tahun The Fed NY (Agu)"
@@ -18120,7 +18166,7 @@
    "country": "US",
    "title": "Continuing Jobless Claims",
    "imp": 2,
-   "exp": "205K",
+   "exp": null,
    "prev": "1,779K",
    "act": null,
    "src": "investing.com",
@@ -18162,7 +18208,7 @@
    "country": "US",
    "title": "Existing Home Sales  (Aug)",
    "imp": 3,
-   "exp": "3.98M",
+   "exp": "4.03M",
    "prev": "4.06M",
    "act": null,
    "src": "investing.com",
@@ -18182,20 +18228,6 @@
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
    "title_id": "GDPNow The Fed Atlanta (Q3)"
-  },
-  {
-   "date": "2026-09-10",
-   "time": "23:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "Crude Oil Inventories",
-   "imp": 3,
-   "exp": null,
-   "prev": "-4.450M",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "EIA 원유 재고",
-   "title_id": "Stok Minyak Mentah EIA"
   },
   {
    "date": "2026-09-10",
@@ -18340,20 +18372,6 @@
    "src": "investing.com",
    "title_ko": "30년물 국채 입찰",
    "title_id": "Lelang Obligasi AS Tenor 30 Tahun"
-  },
-  {
-   "date": "2026-09-11",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Fed's Balance Sheet",
-   "imp": 2,
-   "exp": null,
-   "prev": "6,737B",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "연준 대차대조표",
-   "title_id": "Neraca The Fed"
   },
   {
    "date": "2026-09-11",
@@ -22704,7 +22722,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 475,
+  "pc_age_min": 534,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
