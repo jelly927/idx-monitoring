@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 21:08",
+ "updated": "2026-09-08 21:30",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,341 · 20:09 Yahoo",
- "idr_per_krw": 13.1305,
+ "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,342 · 20:09 Yahoo",
+ "idr_per_krw": 13.1286,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15029,10 +15029,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7680.96,
+   "px": 7680.43,
    "prev": 7717.81,
    "pct": -0.48,
-   "asof": "21:05",
+   "asof": "21:25",
    "live": true,
    "spark": [
     7705.24,
@@ -15042,17 +15042,21 @@
     7688.48,
     7690.91,
     7684.21,
-    7680.96
+    7680.03,
+    7679.5,
+    7681.32,
+    7685.92,
+    7680.43
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26374.67,
+   "px": 26381.28,
    "prev": 26506.99,
-   "pct": -0.5,
-   "asof": "21:05",
+   "pct": -0.47,
+   "asof": "21:25",
    "live": true,
    "spark": [
     26482.08,
@@ -15062,17 +15066,21 @@
     26389.82,
     26413.68,
     26383.19,
-    26374.67
+    26372.03,
+    26369.36,
+    26386.01,
+    26405.28,
+    26381.28
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52808.45,
+   "px": 52730.77,
    "prev": 53406.91,
-   "pct": -1.12,
-   "asof": "21:05",
+   "pct": -1.27,
+   "asof": "21:25",
    "live": true,
    "spark": [
     52962.24,
@@ -15082,7 +15090,11 @@
     52899.43,
     52889.91,
     52837.88,
-    52808.45
+    52770.59,
+    52769.42,
+    52759.42,
+    52786.01,
+    52730.77
    ]
   },
   {
@@ -16159,6 +16171,79 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-08T21:25:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:25",
+   "src": "Media Indonesia",
+   "t": "Kemarau Ekstrem, 63 Kasus Karhutla Landa Kabupaten Sukabumi dalam Sebulan",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931213/kemarau-ekstrem-63-kasus-karhutla-landa-kabupaten-sukabumi-dalam-sebulan",
+   "t_ko": "극심한 가뭄, 한 달 만에 수카부미 지역에 63건의 산림 및 임업 사례 발생"
+  },
+  {
+   "ts": "2026-09-08T21:23:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:23",
+   "src": "Media Indonesia",
+   "t": "Kabut Asap Karhutla, Penderita ISPA di Riau Capai 10.783 Kasus",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931208/kabut-asap-karhutla-penderita-ispa-di-riau-capai-10783-kasus",
+   "t_id": "Kabut Asap Karhutla, Penderita ISPA di Riau Capai 10.783 Kasus"
+  },
+  {
+   "ts": "2026-09-08T21:21:35+07:00",
+   "date": "2026-09-08",
+   "time": "21:21",
+   "src": "Jawa Pos",
+   "t": "Pembeli Properti Indonesia Mulai Lirik Roselands Sebagai Alternatif Investasi di Australia",
+   "tags": [],
+   "url": "https://www.jawapos.com/properti/2609080291/pembeli-properti-indonesia-mulai-lirik-roselands-sebagai-alternatif-investasi-di-australia",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/kawasan-roselands-yang-banyak-dilirik-investor-property-termasuk-dari-indonesia-istimewa-cegD6.webp",
+   "t_ko": "인도네시아 부동산 매수자, 호주 투자 대안으로 Roselands 주목",
+   "t_id": "Pembeli Properti Indonesia Mulai Lirik Roselands Sebagai Alternatif Investasi di Australia"
+  },
+  {
+   "ts": "2026-09-08T21:18:54+07:00",
+   "date": "2026-09-08",
+   "time": "21:18",
+   "src": "Detik",
+   "t": "Purbaya Terjunkan Anak Buah Awasi Ketat Dapur MBG",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8654488/purbaya-terjunkan-anak-buah-awasi-ketat-dapur-mbg",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/05/tawa-purbaya-pastikan-ekonomi-hingga-mei-2026-masih-solid-1780655487362_169.jpeg?w=360&q=90"
+  },
+  {
+   "ts": "2026-09-08T21:16:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:16",
+   "src": "Republika",
+   "t": "Pertamina Sebut Tak Ada Komplain Signifikan dari Pengguna B50",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl1uao490/pertamina-sebut-tak-ada-komplain-signifikan-dari-pengguna-b50",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/050628200-1783597939-830-556.jpg",
+   "t_id": "Pertamina Sebut Tak Ada Komplain Signifikan dari Pengguna B50"
+  },
+  {
+   "ts": "2026-09-08T21:09:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:09",
+   "src": "Media Indonesia",
+   "t": "Polres Tegal Rangkul Kelompok Tani Hutan Cegah Karhutla",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931203/polres-tegal-rangkul-kelompok-tani-hutan-cegah-karhutla"
+  },
+  {
+   "ts": "2026-09-08T21:07:46+07:00",
+   "date": "2026-09-08",
+   "time": "21:07",
+   "src": "Jawa Pos",
+   "t": "Purbaya Berencana Pakai Data Lama untuk Salurkan Bansos jika BPS Masih Nggak Akurat",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609080475/purbaya-berencana-pakai-data-lama-untuk-salurkan-bansos-jika-bps-masih-nggak-akurat",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/menteri-keuangan-purbaya-yudhi-sadewa-bersiap-menyampaikan-tanggapan-pemerintah-pada-rapat-paripurna-ke-3-masa-persidangan-i-tahun-sidang-2026-2027-di-kompleks-parlemen-senayan-jakarta-kamis-2782026-salman-toyibijawa-pos-SW245.webp",
+   "t_id": "Purbaya Berencana Pakai Data Lama untuk Salurkan Bansos jika BPS Masih Nggak Akurat"
+  },
+  {
    "ts": "2026-09-08T21:05:05+07:00",
    "date": "2026-09-08",
    "time": "21:05",
@@ -16178,6 +16263,16 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120960/kpk-sejumlah-saksi-tak-hadiri-pemeriksaan-karena-erupsi-gunung",
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260906141932.jpeg"
+  },
+  {
+   "ts": "2026-09-08T21:00:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:00",
+   "src": "Media Indonesia",
+   "t": "BPBD Sumut Catat Enam Kabupaten dan Kota Dilanda Banjir",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931195/bpbd-sumut-catat-enam-kabupaten-dan-kota-dilanda-banjir",
+   "t_id": "BPBD Sumut Catat Enam Kabupaten dan Kota Dilanda Banjir"
   },
   {
    "ts": "2026-09-08T21:00:00+07:00",
@@ -16243,6 +16338,16 @@
    "t_id": "Pemda Bisa Pinjam ke SMI, Bayarnya Pakai DBH"
   },
   {
+   "ts": "2026-09-08T20:35:00+07:00",
+   "date": "2026-09-08",
+   "time": "20:35",
+   "src": "Media Indonesia",
+   "t": "Dana Pensiun Jiwasraya, Hak Pekerja Tidak Boleh Raib di Tengah Likuidasi",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931198/dana-pensiun-jiwasraya-hak-pekerja-tidak-boleh-raib-di-tengah-likuidasi-",
+   "t_id": "Dana Pensiun Jiwasraya, Hak Pekerja Tidak Boleh Raib di Tengah Likuidasi"
+  },
+  {
    "ts": "2026-09-08T20:34:24+07:00",
    "date": "2026-09-08",
    "time": "20:34",
@@ -16277,16 +16382,6 @@
    "t_id": "Setiap Interaksi, Jadi Cerita”, Kawan Lama Group Hadirkan Apresiasi di Hari Pelanggan Nasional 2026"
   },
   {
-   "ts": "2026-09-08T20:24:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:24",
-   "src": "Media Indonesia",
-   "t": "Klarifikasi Polemik Saldo UMKM ke DPR, Ini Kata Tokopedia dan TikTok Shop",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931164/klarifikasi-polemik-saldo-umkm-ke-dpr-ini-kata-tokopedia-dan-tiktok-shop",
-   "t_id": "Klarifikasi Polemik Saldo UMKM ke DPR, Ini Kata Tokopedia dan TikTok Shop"
-  },
-  {
    "ts": "2026-09-08T20:17:10+07:00",
    "date": "2026-09-08",
    "time": "20:17",
@@ -16296,24 +16391,6 @@
    "url": "https://ekonomi.republika.co.id/berita/tl1rkm348/giias-bandung-2026-dibuka-besok-ini-yang-perlu-disiapkan-pengunjung",
    "img": "https://static.republika.co.id/uploads/images/detailnews/lokasi-giias-bandung-2026-di-sudirman-grand-ballroom-bandung_260908201634-724.png",
    "t_id": "GIIAS Bandung 2026 Dibuka Besok, Ini yang Perlu Disiapkan Pengunjung"
-  },
-  {
-   "ts": "2026-09-08T20:14:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:14",
-   "src": "Media Indonesia",
-   "t": "Purbaya Tanggapi Pidana Pajak dalam RUU Perampasan Aset",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931154/purbaya-tanggapi-pidana-pajak-dalam-ruu-perampasan-aset"
-  },
-  {
-   "ts": "2026-09-08T20:08:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:08",
-   "src": "Media Indonesia",
-   "t": "Penerbangan Bandara Jambi Kembali Normal Usai Erupsi Gunung Anak Krakatau",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931153/penerbangan-bandara-jambi-kembali-normal-usai-erupsi-gunung-anak-krakatau"
   },
   {
    "ts": "2026-09-08T20:06:10+07:00",
@@ -16411,72 +16488,6 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl1q74349/purbaya-dapur-mbg-bermasalah-anggaran-bisa-dipangkas",
    "img": "https://static.republika.co.id/uploads/images/detailnews/059150800-1785818178-830-556.jpg"
-  },
-  {
-   "ts": "2026-09-08T19:45:43+07:00",
-   "date": "2026-09-08",
-   "time": "19:45",
-   "src": "Jawa Pos",
-   "t": "Pendapatan Rp 44,9 Miliar, Employee Super App Venteny Tumbuh Pesat",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi-digital/2609080440/pendapatan-rp-449-miliar-employee-super-app-venteny-tumbuh-pesat",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/istimewa-fPofQ.webp",
-   "t_id": "Pendapatan Rp 44,9 Miliar, Employee Super App Venteny Tumbuh Pesat"
-  },
-  {
-   "ts": "2026-09-08T19:45:18+07:00",
-   "date": "2026-09-08",
-   "time": "19:45",
-   "src": "Jawa Pos",
-   "t": "Pembangunan Proyek PSEL Serang Raya Dimulai Akhir Tahun, Olah 1.161 Ton Sampah per Hari",
-   "tags": [],
-   "url": "https://www.jawapos.com/energi/2609080239/pembangunan-proyek-psel-serang-raya-dimulai-akhir-tahun-olah-1161-ton-sampah-per-hari",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/gubernur-banten-andra-soni-saat-menghadiri-audiensi-bersama-badan-pengelola-investasi-daya-anagata-nusantara-danantara-di-serang-senin-79-antara-XVwVa.webp",
-   "t_ko": "Serang Raya PSEL 프로젝트 연말 착공 — 일일 폐기물 1,161톤 처리",
-   "t_id": "Pembangunan Proyek PSEL Serang Raya Dimulai Akhir Tahun, Olah 1.161 Ton Sampah per Hari"
-  },
-  {
-   "ts": "2026-09-08T19:44:00+07:00",
-   "date": "2026-09-08",
-   "time": "19:44",
-   "src": "Katadata",
-   "t": "Kepercayaan Nasabah Dorong Penghimpunan Dana, DPK BRI Capai Rp1.580 Triliun",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/korporasi/6aa003147a946/kepercayaan-nasabah-dorong-penghimpunan-dana-dpk-bri-capai-rp1580-triliun",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/08/Ilustrasi_BRImo-2026_09_08-19_43_26_04a7b4eccb1cf818c3d4b43bfd0afa90_620x413_thumb.jpeg",
-   "t_id": "Kepercayaan Nasabah Dorong Penghimpunan Dana, DPK BRI Capai Rp1.580 Triliun"
-  },
-  {
-   "ts": "2026-09-08T19:40:49+07:00",
-   "date": "2026-09-08",
-   "time": "19:40",
-   "src": "Detik",
-   "t": "7 Rekomendasi Jasa Forwarder Import Barang dari China ke Indonesia",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8654391/7-rekomendasi-jasa-forwarder-import-barang-dari-china-ke-indonesia",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/ilustrasi-pelabunan-peti-kemas-1788871229542_169.jpeg?w=360&q=90",
-   "t_id": "7 Rekomendasi Jasa Forwarder Import Barang dari China ke Indonesia"
-  },
-  {
-   "ts": "2026-09-08T19:35:00+07:00",
-   "date": "2026-09-08",
-   "time": "19:35",
-   "src": "Katadata",
-   "t": "DPLK bank bjb Gelar Bulan Dana Pensiun, Dorong Masyarakat Sejahtera Finansial",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/korporasi/6aa0010f2346a/dplk-bank-bjb-gelar-bulan-dana-pensiun-dorong-masyarakat-sejahtera-finansial",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/08/Bank_bjb_Gelar_Bulan_Dana_Pensiun_2026-2026_09_08-19_34_59_5c9271996f21848b450b13d1c4825b3c_620x413_thumb.jpeg"
-  },
-  {
-   "ts": "2026-09-08T19:32:17+07:00",
-   "date": "2026-09-08",
-   "time": "19:32",
-   "src": "Detik",
-   "t": "Ungkap Pemda Punya Rp 100 Triliun Nganggur, Purbaya Ingatkan Tak Perlu Minjam",
-   "tags": [],
-   "url": "https://finance.detik.com/moneter/d-8654381/ungkap-pemda-punya-rp-100-triliun-nganggur-purbaya-ingatkan-tak-perlu-minjam",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/menteri-keuangan-menkeu-purbaya-yudhi-sadewa-1788758870844_169.jpeg?w=360&q=90",
-   "t_id": "Ungkap Pemda Punya Rp 100 Triliun Nganggur, Purbaya Ingatkan Tak Perlu Minjam"
   }
  ],
  "kisi_news": [
@@ -16662,9 +16673,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.780%",
-   "d": -0.08,
-   "ytd": 14.82,
+   "v": "4.794%",
+   "d": 0.21,
+   "ytd": 15.16,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16685,9 +16696,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.86",
-   "d": -0.31,
-   "ytd": 0.59,
+   "v": "98.87",
+   "d": -0.3,
+   "ytd": 0.6,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16697,9 +16708,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "93.22",
-   "d": 1.9,
-   "ytd": 62.35,
+   "v": "93.45",
+   "d": 2.15,
+   "ytd": 62.75,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16709,9 +16720,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,449.3",
-   "d": -0.61,
-   "ytd": 2.86,
+   "v": "4,444.0",
+   "d": -0.73,
+   "ytd": 2.74,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16733,9 +16744,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,794",
-   "d": 0.56,
-   "ytd": 0.67,
+   "v": "16,801",
+   "d": 0.6,
+   "ytd": 0.71,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -22660,7 +22671,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 177,
+  "pc_age_min": 199,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
