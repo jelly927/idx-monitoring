@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 21:58",
+ "updated": "2026-09-08 22:09",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,342 · 21:34 Yahoo",
- "idr_per_krw": 13.1287,
+ "fx_basis": "13.12 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,342 · 21:34 Yahoo",
+ "idr_per_krw": 13.1217,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15029,10 +15029,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7692.77,
+   "px": 7692.4,
    "prev": 7717.81,
-   "pct": -0.32,
-   "asof": "21:55",
+   "pct": -0.33,
+   "asof": "22:05",
    "live": true,
    "spark": [
     7705.24,
@@ -15052,17 +15052,19 @@
     7686.42,
     7687.4,
     7691.37,
-    7692.77
+    7691.69,
+    7692.51,
+    7692.4
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26435.39,
+   "px": 26440.09,
    "prev": 26506.99,
-   "pct": -0.27,
-   "asof": "21:55",
+   "pct": -0.25,
+   "asof": "22:05",
    "live": true,
    "spark": [
     26482.08,
@@ -15082,17 +15084,19 @@
     26408.83,
     26408.08,
     26426.17,
-    26435.39
+    26436.2,
+    26443.27,
+    26440.09
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52856.5,
+   "px": 52871.74,
    "prev": 53406.91,
-   "pct": -1.03,
-   "asof": "21:55",
+   "pct": -1.0,
+   "asof": "22:05",
    "live": true,
    "spark": [
     52962.24,
@@ -15112,7 +15116,9 @@
     52776.77,
     52812.39,
     52831.36,
-    52856.5
+    52850.07,
+    52874.25,
+    52871.74
    ]
   },
   {
@@ -15435,9 +15441,31 @@
    "yld": null,
    "src": "Liputan6",
    "url": "https://www.liputan6.com/saham/read/8286819/emiten-psab-tebar-dividen-rp-30-per-saham-simak-jadwal-lengkapnya"
+  },
+  "BMRI": {
+   "dps": 66.0,
+   "type": "",
+   "ex": null,
+   "pay": null,
+   "yld": null,
+   "src": "Republika",
+   "url": "https://ekonomi.republika.co.id/berita/tl1wh6370/optimistis-terhadap-fundamental-bisnis-bank-mandiri-bagikan-dividen-interim-rp616-triliun"
   }
  },
  "news": [
+  {
+   "ts": "2026-09-08T22:03:06+07:00",
+   "date": "2026-09-08",
+   "time": "22:03",
+   "src": "Republika",
+   "t": "Optimistis terhadap Fundamental Bisnis, Bank Mandiri Bagikan Dividen Interim Rp6,16 Triliun",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://ekonomi.republika.co.id/berita/tl1wh6370/optimistis-terhadap-fundamental-bisnis-bank-mandiri-bagikan-dividen-interim-rp616-triliun",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260908220239-141.png",
+   "t_id": "Optimistis terhadap Fundamental Bisnis, Bank Mandiri Bagikan Dividen Interim Rp6,16 Triliun"
+  },
   {
    "ts": "2026-09-08T21:48:00+07:00",
    "date": "2026-09-08",
@@ -15970,20 +15998,6 @@
    "t_id": "Pemegang Saham Setujui Babak Baru MGLV sebagai Penyedia Pusat Data AI"
   },
   {
-   "ts": "2026-09-08T09:10:00+07:00",
-   "date": "2026-09-08",
-   "time": "09:10",
-   "src": "IDNFinancials",
-   "t": "Morgan Stanley buys more GOTO shares at 50% discount",
-   "tags": [
-    "GOTO"
-   ],
-   "url": "https://www.idnfinancials.com/news/68500/morgan-stanley-buys-more-goto-shares-at-50-discount",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/MORGAN-STANLEY-GOTO-28082026.jpg",
-   "t_ko": "Morgan Stanley GOTO 주식 50% 할인가에 추가 매입",
-   "t_id": "Morgan Stanley Borong Saham GOTO dengan Diskon 50%"
-  },
-  {
    "ts": "2026-09-08T09:07:11+07:00",
    "date": "2026-09-08",
    "time": "09:07",
@@ -16211,6 +16225,26 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2025/05/27/bale-btn-2664925550.jpg",
    "t_ko": "BTN PEFINDO 최고등급 idAAA 유지 — 등급전망 Stable",
    "t_id": "BTN Pertahankan Peringkat Tertinggi idAAA dengan Outlook Stable dari PEFINDO"
+  },
+  {
+   "ts": "2026-09-08T21:55:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:55",
+   "src": "Medcom",
+   "t": "AI Membuat Pekerjaan Semakin Murah, Skill Ini Justru Jadi Rebutan Perusahaan",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/ekonomi-digital/9K5y62BK-ai-membuat-pekerjaan-semakin-murah-skill-ini-justru-jadi-rebutan-perusahaan",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840745/YBoJxabV8v.jpeg?w=720",
+   "t_id": "AI Membuat Pekerjaan Semakin Murah, Skill Ini Justru Jadi Rebutan Perusahaan"
+  },
+  {
+   "ts": "2026-09-08T21:54:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:54",
+   "src": "Media Indonesia",
+   "t": "Pertumbuhan E-Commerce Tuntut Percepatan Logistik Antarpulau",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931225/pertumbuhan-e-commerce-tuntut-percepatan-logistik-antarpulau"
   },
   {
    "ts": "2026-09-08T21:47:20+07:00",
@@ -16498,27 +16532,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/pemerintah-menyepakati-mengganti-nama-dan-kemasan-beras-stabilisasi-pasokan-dan-harga-pangan-sphp-menjadi-beras-kita-sebagai-identitas-baru-antara-3gxdq.webp",
    "t_ko": "Zulhas: 정부, SPHP 명칭·포장 'Beras Kita'로 변경",
    "t_id": "Zulhas: Pemerintah Ganti Nama dan Kemasan SPHP jadi 'Beras Kita'"
-  },
-  {
-   "ts": "2026-09-08T20:05:25+07:00",
-   "date": "2026-09-08",
-   "time": "20:05",
-   "src": "Detik",
-   "t": "Purbaya Sebut Bank RI Siap Pungut Pajak Transaksi Digital Luar Negeri",
-   "tags": [],
-   "url": "https://finance.detik.com/moneter/d-8654414/purbaya-sebut-bank-ri-siap-pungut-pajak-transaksi-digital-luar-negeri",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/02/purbaya-1788337519390_169.jpeg?w=360&q=90"
-  },
-  {
-   "ts": "2026-09-08T19:59:00+07:00",
-   "date": "2026-09-08",
-   "time": "19:59",
-   "src": "Katadata",
-   "t": "Cara Kerja Teknologi OMC untuk Atasi Kebakaran Hutan: Satelit hingga Tabur Garam",
-   "tags": [],
-   "url": "https://katadata.co.id/digital/teknologi/6aa006b71e91e/cara-kerja-teknologi-omc-untuk-atasi-kebakaran-hutan-satelit-hingga-tabur-garam",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/11/02/2025_11_02-17_32_00_6365595c-b7dc-11f0-9c89-0242ac120006_620x413_thumb.jpg",
-   "t_id": "Cara Kerja Teknologi OMC untuk Atasi Kebakaran Hutan: Satelit hingga Tabur Garam"
   }
  ],
  "kisi_news": [
@@ -16693,8 +16706,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.12",
-   "d": 0.14,
-   "ytd": 12.98,
+   "d": 0.13,
+   "ytd": 12.97,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16704,9 +16717,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.790%",
-   "d": 0.13,
-   "ytd": 15.06,
+   "v": "4.788%",
+   "d": 0.08,
+   "ytd": 15.01,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16727,9 +16740,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.80",
-   "d": -0.37,
-   "ytd": 0.53,
+   "v": "98.82",
+   "d": -0.35,
+   "ytd": 0.54,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16739,9 +16752,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "92.97",
-   "d": 1.63,
-   "ytd": 61.91,
+   "v": "92.76",
+   "d": 1.4,
+   "ytd": 61.55,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16751,9 +16764,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,440.8",
-   "d": -0.8,
-   "ytd": 2.66,
+   "v": "4,440.1",
+   "d": -0.82,
+   "ytd": 2.65,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16775,9 +16788,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,804",
-   "d": 0.62,
-   "ytd": 0.73,
+   "v": "16,791",
+   "d": 0.54,
+   "ytd": 0.65,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -17584,7 +17597,7 @@
    "imp": 2,
    "exp": null,
    "prev": "3.6%",
-   "act": null,
+   "act": "3.6%",
    "src": "investing.com",
    "title_ko": "8월 뉴욕 연은 1년 기대인플레이션",
    "title_id": "Ekspektasi Inflasi Konsumen 1 Tahun The Fed NY (Agu)"
@@ -22702,7 +22715,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 227,
+  "pc_age_min": 238,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -24182,13 +24195,13 @@
    "ratio": 0.8,
    "ev_ko": "실적·배당",
    "ev_id": "Kinerja & dividen",
-   "hl": "Bank Mandiri 2026년 중간배당 주당 Rp66 — 지급 일정",
-   "url": "https://www.liputan6.com/saham/read/8286694/bank-mandiri-tebar-dividen-interim-2026-rp-66-cek-jadwal-lengkapnya",
-   "score": 62.3,
-   "s_news": 88,
+   "hl": "Optimistis terhadap Fundamental Bisnis, Bank Mandiri Bagikan Dividen Interim Rp6,16 Triliun",
+   "url": "https://ekonomi.republika.co.id/berita/tl1wh6370/optimistis-terhadap-fundamental-bisnis-bank-mandiri-bagikan-dividen-interim-rp616-triliun",
+   "score": 65.1,
+   "s_news": 95,
    "s_size": 90,
    "s_surge": 0,
-   "srcs": 2
+   "srcs": 3
   },
   {
    "t": "BUMI",
