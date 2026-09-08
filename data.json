@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 23:44",
+ "updated": "2026-09-08 23:54",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,342 · 21:34 Yahoo",
- "idr_per_krw": 13.1292,
+ "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,341 · 21:34 Yahoo",
+ "idr_per_krw": 13.13,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -335,12 +335,12 @@
   "m1": 5.04,
   "value_idr": 15709984999251,
   "volume": 35150343143,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-08 18:11",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-08 18:11",
   "rank_asof": null,
   "rank_date": "2026-09-08",
   "adv": 390,
   "dec": 253,
-  "unch": 190,
+  "unch": 189,
   "foreign_net_idr": 378259109581.2046,
   "foreign_buy": 4159530438801.383,
   "foreign_sell": 3781271329220.178,
@@ -9346,22 +9346,6 @@
    "live": 0
   },
   {
-   "t": "BCIP",
-   "n": "Bumi Citra Permai",
-   "px": 63.0,
-   "prev": 63.0,
-   "pct": 0.0,
-   "val": 362275200.0,
-   "vol": 5750400.0,
-   "sh": 1429915525,
-   "mcap": 90084678075.0,
-   "hi": 64.0,
-   "lo": 62.0,
-   "ratio": 0.6,
-   "fnet": -119340.24763494713,
-   "live": 0
-  },
-  {
    "t": "IKAI",
    "n": "Intikeramik Alamasri Industri",
    "px": 19.0,
@@ -14818,11 +14802,11 @@
   {
    "name": "부동산",
    "name_id": "Properti",
-   "n": 79,
+   "n": 78,
    "adv": 34,
    "dec": 21,
-   "val": 495036167700.00006,
-   "mcap": 460424521968504.0,
+   "val": 494673892500.00006,
+   "mcap": 460334437290429.0,
    "top": [
     {
      "t": "MPRO",
@@ -15029,10 +15013,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7685.47,
+   "px": 7686.88,
    "prev": 7717.81,
-   "pct": -0.42,
-   "asof": "23:40",
+   "pct": -0.4,
+   "asof": "23:50",
    "live": true,
    "spark": [
     7705.24,
@@ -15073,17 +15057,19 @@
     7686.6,
     7687.44,
     7685.08,
-    7685.47
+    7685.59,
+    7687.69,
+    7686.88
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26458.76,
+   "px": 26462.43,
    "prev": 26506.99,
-   "pct": -0.18,
-   "asof": "23:40",
+   "pct": -0.17,
+   "asof": "23:50",
    "live": true,
    "spark": [
     26482.08,
@@ -15124,17 +15110,19 @@
     26442.62,
     26449.74,
     26452.43,
-    26458.76
+    26455.42,
+    26465.55,
+    26462.43
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52804.75,
+   "px": 52839.11,
    "prev": 53406.91,
-   "pct": -1.13,
-   "asof": "23:40",
+   "pct": -1.06,
+   "asof": "23:50",
    "live": true,
    "spark": [
     52962.24,
@@ -15175,7 +15163,9 @@
     52839.1,
     52828.81,
     52799.4,
-    52804.75
+    52814.87,
+    52835.56,
+    52839.11
    ]
   },
   {
@@ -16423,15 +16413,6 @@
    "t_id": "AI Membuat Pekerjaan Semakin Murah, Skill Ini Justru Jadi Rebutan Perusahaan"
   },
   {
-   "ts": "2026-09-08T21:54:00+07:00",
-   "date": "2026-09-08",
-   "time": "21:54",
-   "src": "Media Indonesia",
-   "t": "Pertumbuhan E-Commerce Tuntut Percepatan Logistik Antarpulau",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931225/pertumbuhan-e-commerce-tuntut-percepatan-logistik-antarpulau"
-  },
-  {
    "ts": "2026-09-08T21:47:20+07:00",
    "date": "2026-09-08",
    "time": "21:47",
@@ -16593,6 +16574,17 @@
    "url": "https://www.medcom.id/nasional/peristiwa/8ko13EWN-didominasi-lahan-gambut-ini-4-wilayah-penanganan-karhutla-tersulit-di-kalbar",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840862/D6l2PfurT9.jpeg?w=720",
    "t_id": "Didominasi Lahan Gambut, Ini 4 Wilayah Penanganan Karhutla Tersulit di Kalbar"
+  },
+  {
+   "ts": "2026-09-08T20:27:00+07:00",
+   "date": "2026-09-08",
+   "time": "20:27",
+   "src": "Katadata",
+   "t": "Utang Whoosh Berpotensi Dikelola INA dan SMI, Cicilan di Bawah Rp1 Triliun/Tahun",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/makro/6aa00d5ee3a81/utang-whoosh-berpotensi-dikelola-ina-dan-smi-cicilan-di-bawah-rp1-triliuntahun",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/02/2026_07_02-13_52_00_b0f4b5c8-75f5-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "Utang Whoosh Berpotensi Dikelola INA dan SMI, Cicilan di Bawah Rp1 Triliun/Tahun"
   }
  ],
  "kisi_news": [
@@ -16778,9 +16770,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.790%",
-   "d": 0.13,
-   "ytd": 15.06,
+   "v": "4.792%",
+   "d": 0.17,
+   "ytd": 15.11,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16801,9 +16793,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.89",
-   "d": -0.28,
-   "ytd": 0.62,
+   "v": "98.91",
+   "d": -0.26,
+   "ytd": 0.64,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16813,9 +16805,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "92.19",
-   "d": 0.78,
-   "ytd": 60.55,
+   "v": "92.14",
+   "d": 0.72,
+   "ytd": 60.47,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16825,7 +16817,7 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,439.9",
+   "v": "4,440.0",
    "d": -0.82,
    "ytd": 2.64,
    "inv": false,
@@ -22776,7 +22768,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 333,
+  "pc_age_min": 343,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
