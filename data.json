@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 22:43",
+ "updated": "2026-09-08 22:56",
  "delay_min": 0,
  "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,341 · 21:34 Yahoo",
- "idr_per_krw": 13.133,
+ "idr_per_krw": 13.1315,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15029,10 +15029,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7695.25,
+   "px": 7690.61,
    "prev": 7717.81,
-   "pct": -0.29,
-   "asof": "22:40",
+   "pct": -0.35,
+   "asof": "22:55",
    "live": true,
    "spark": [
     7705.24,
@@ -15061,17 +15061,20 @@
     7693.87,
     7693.27,
     7690.38,
-    7695.25
+    7695.04,
+    7691.1,
+    7691.13,
+    7690.61
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26505.33,
+   "px": 26476.59,
    "prev": 26506.99,
-   "pct": -0.01,
-   "asof": "22:40",
+   "pct": -0.11,
+   "asof": "22:55",
    "live": true,
    "spark": [
     26482.08,
@@ -15100,17 +15103,20 @@
     26486.85,
     26483.18,
     26478.69,
-    26505.33
+    26502.2,
+    26478.94,
+    26480.89,
+    26476.59
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52872.32,
+   "px": 52843.14,
    "prev": 53406.91,
-   "pct": -1.0,
-   "asof": "22:40",
+   "pct": -1.06,
+   "asof": "22:55",
    "live": true,
    "spark": [
     52962.24,
@@ -15139,7 +15145,10 @@
     52879.48,
     52880.13,
     52837.31,
-    52872.32
+    52861.89,
+    52852.88,
+    52838.47,
+    52843.14
    ]
   },
   {
@@ -16191,6 +16200,17 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-08T22:38:47+07:00",
+   "date": "2026-09-08",
+   "time": "22:38",
+   "src": "Detik",
+   "t": "513,9 Km Listrik Aliran Atas KRL Jabodetabek Dirawat, Ini Prosesnya",
+   "tags": [],
+   "url": "https://finance.detik.com/infrastruktur/d-8654568/513-9-km-listrik-aliran-atas-krl-jabodetabek-dirawat-ini-prosesnya",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/krl-commuter-line-1788881722737_169.jpeg?w=360&q=90",
+   "t_id": "513,9 Km Listrik Aliran Atas KRL Jabodetabek Dirawat, Ini Prosesnya"
+  },
+  {
    "ts": "2026-09-08T22:36:34+07:00",
    "date": "2026-09-08",
    "time": "22:36",
@@ -16498,17 +16518,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/kawan-lama-group-hadir-melalui-lebih-dari-30-merek-usaha-yang-bergerak-dalam-enam-pilar-bisnis-yaitu-industrial-commercial-consumer-retail-food-beverage-property-hospitality-commercial-technology-serta-manufacturing-engineering-istimewa-KZMie.webp",
    "t_ko": "Kawan Lama Group, 2026 전국 고객의 날 감사 프로모션 전개 — '모든 상호작용이 이야기로'",
    "t_id": "Setiap Interaksi, Jadi Cerita”, Kawan Lama Group Hadirkan Apresiasi di Hari Pelanggan Nasional 2026"
-  },
-  {
-   "ts": "2026-09-08T20:17:10+07:00",
-   "date": "2026-09-08",
-   "time": "20:17",
-   "src": "Republika",
-   "t": "GIIAS Bandung 2026 Dibuka Besok, Ini yang Perlu Disiapkan Pengunjung",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl1rkm348/giias-bandung-2026-dibuka-besok-ini-yang-perlu-disiapkan-pengunjung",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/lokasi-giias-bandung-2026-di-sudirman-grand-ballroom-bandung_260908201634-724.png",
-   "t_id": "GIIAS Bandung 2026 Dibuka Besok, Ini yang Perlu Disiapkan Pengunjung"
   }
  ],
  "kisi_news": [
@@ -16717,9 +16726,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.82",
-   "d": -0.35,
-   "ytd": 0.55,
+   "v": "98.86",
+   "d": -0.31,
+   "ytd": 0.59,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16729,9 +16738,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "92.62",
-   "d": 1.25,
-   "ytd": 61.3,
+   "v": "92.40",
+   "d": 1.01,
+   "ytd": 60.92,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16741,9 +16750,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,448.2",
-   "d": -0.63,
-   "ytd": 2.83,
+   "v": "4,444.7",
+   "d": -0.71,
+   "ytd": 2.75,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16765,9 +16774,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,814",
-   "d": 0.68,
-   "ytd": 0.79,
+   "v": "16,804",
+   "d": 0.62,
+   "ytd": 0.74,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -22692,7 +22701,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 272,
+  "pc_age_min": 285,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
