@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 07:05",
+ "updated": "2026-09-08 08:19",
  "delay_min": 0,
- "fx_basis": "13.15 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,341 · 04:22 Yahoo",
- "idr_per_krw": 13.1465,
+ "fx_basis": "13.16 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,340 · 07:45 Yahoo",
+ "idr_per_krw": 13.1616,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -275,9 +275,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17638.0,
-   "prev": 17618.0,
-   "pct": 0.11,
+   "px": 17631.0,
+   "prev": 17638.0,
+   "pct": -0.04,
    "spark": [
     17794.0,
     17791.0,
@@ -299,7 +299,8 @@
     17697.2,
     17723.0,
     17618.1,
-    17638.0
+    17638.0,
+    17631.0
    ],
    "inv": true,
    "asof": "Yahoo"
@@ -16137,34 +16138,49 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6995.39,
-   "prev": 6687.21,
-   "pct": 4.61,
-   "asof": "09/03 종가",
-   "live": false,
+   "px": 7097.4,
+   "prev": 6975.17,
+   "pct": 1.75,
+   "asof": "07:55",
+   "live": true,
    "spark": [
-    6820.02,
-    6835.8,
-    6562.72,
-    6579.48,
-    6687.21
+    7024.02,
+    7025.04,
+    7053.55,
+    7084.29,
+    7074.69,
+    7080.89,
+    7062.12,
+    7049.43,
+    7061.37,
+    7090.3,
+    7090.02,
+    7097.4
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 66399.84,
-   "prev": 65054.56,
-   "pct": 2.07,
-   "asof": "09/03 종가",
-   "live": false,
+   "px": 66664.51,
+   "prev": 66346.97,
+   "pct": 0.48,
+   "asof": "08:00",
+   "live": true,
    "spark": [
-    66311.93,
-    66215.34,
-    64325.64,
-    64214.48,
-    65020.94
+    65927.21,
+    65970.45,
+    66056.47,
+    66254.03,
+    66312.49,
+    66427.06,
+    66405.12,
+    66389.05,
+    66413.43,
+    66649.37,
+    66686.11,
+    66734.63,
+    66664.51
    ]
   },
   {
@@ -16326,6 +16342,46 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-08T08:10:00+07:00",
+   "date": "2026-09-08",
+   "time": "08:10",
+   "src": "Bloomberg Technoz",
+   "t": "Morgan Stanley Lanjut Borong Saham GOTO Rp541,9 Miliar",
+   "tags": [
+    "GOTO"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120822/morgan-stanley-lanjut-borong-saham-goto-rp541-9-miliar",
+   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260729184551.jpg",
+   "t_id": "Morgan Stanley Lanjut Borong Saham GOTO Rp541,9 Miliar",
+   "t_ko": "Morgan Stanley는 IDR 5,419억에 GOTO 주식을 계속 매입합니다."
+  },
+  {
+   "ts": "2026-09-08T08:08:31+07:00",
+   "date": "2026-09-08",
+   "time": "08:08",
+   "src": "Jawa Pos",
+   "t": "IHSG Rawan Terkoreksi Hari Ini, Cek Rekomendasi Saham HRUM hingga TPIA",
+   "tags": [
+    "HRUM",
+    "INKP",
+    "TPIA"
+   ],
+   "url": "https://www.jawapos.com/ekonomi/2609080080/ihsg-rawan-terkoreksi-hari-ini-cek-rekomendasi-saham-hrum-hingga-tpia",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/09/pergerakan-indeks-harga-saham-gabungan-ihsg-di-bursa-efek-indonesia-bei-jakarta-jumat-782026-dery-ridwansah-jawaposcom-c9Zlv.webp",
+   "t_id": "IHSG Rawan Terkoreksi Hari Ini, Cek Rekomendasi Saham HRUM hingga TPIA"
+  },
+  {
+   "ts": "2026-09-08T07:24:00+07:00",
+   "date": "2026-09-08",
+   "time": "07:24",
+   "src": "Media Indonesia",
+   "t": "Abu Vulkanik Sampai Jakarta, PAM JAYA Sebut Kualitas Air Aman",
+   "tags": [
+    "JAYA"
+   ],
+   "url": "https://mediaindonesia.com/megapolitan/930830/abu-vulkanik-sampai-jakarta-pam-jaya-sebut-kualitas-air-aman"
+  },
   {
    "ts": "2026-09-08T07:00:00+07:00",
    "date": "2026-09-08",
@@ -16587,34 +16643,6 @@
    "t_id": "PTBA Bakal Pangkas Separuh Anak Usaha dalam 3 Tahun, Ini Rencananya"
   },
   {
-   "ts": "2026-09-07T19:26:00+07:00",
-   "date": "2026-09-07",
-   "time": "09/07",
-   "src": "IDX Channel",
-   "t": "Kinerja Tertekan RKAB Batu Bara, Laba United Tractors (UNTR) Merosot 48 Persen",
-   "tags": [
-    "UNTR"
-   ],
-   "url": "https://www.idxchannel.com/market-news/kinerja-tertekan-rkab-batu-bara-laba-united-tractors-untr-merosot-48-persen",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2022/09/15/Sejarah_Saham_UNTR.jpg",
-   "t_ko": "석탄 RKAB 압박 성능, United Tractors(UNTR) 이익 48% 감소",
-   "t_id": "Kinerja Tertekan RKAB Batu Bara, Laba United Tractors (UNTR) Merosot 48 Persen"
-  },
-  {
-   "ts": "2026-09-07T19:04:00+07:00",
-   "date": "2026-09-07",
-   "time": "09/07",
-   "src": "Medcom",
-   "t": "JIExpo Buka Lowongan Kerja 2026 untuk 13 Posisi, Cek Syarat Lengkapnya!",
-   "tags": [
-    "MICE"
-   ],
-   "url": "https://www.medcom.id/pendidikan/jobseeker/xkEd6zDb-jiexpo-buka-lowongan-kerja-2026-untuk-13-posisi-cek-syarat-lengkapnya",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/07/1840540/QrbkEAvY9G.jpeg?w=720",
-   "t_ko": "JIExpo는 13개 직위에 대한 2026년 채용공고를 공개합니다. 전체 요구사항을 확인하세요!",
-   "t_id": "JIExpo Buka Lowongan Kerja 2026 untuk 13 Posisi, Cek Syarat Lengkapnya!"
-  },
-  {
    "ts": "2026-09-07T19:02:15+07:00",
    "date": "2026-09-07",
    "time": "09/07",
@@ -16641,34 +16669,6 @@
    "img": "https://cdn1-production-images-kly.akamaized.net/7iBoYR_fTTNcAnGQSXN_YQnVMS4=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4559985/original/063854000_1693559590-WhatsApp_Image_2023-09-01_at_15.37.08.jpeg",
    "t_ko": "Bank Mandiri는 2026년 중간 배당금 IDR 66을 분배합니다. 전체 일정을 확인하세요",
    "t_id": "Bank Mandiri Tebar Dividen Interim 2026 Rp 66, Cek Jadwal Lengkapnya"
-  },
-  {
-   "ts": "2026-09-07T18:48:00+07:00",
-   "date": "2026-09-07",
-   "time": "09/07",
-   "src": "Katadata",
-   "t": "Anak Usaha Astra (UNTR) Lirik Tambang Tembaga, Ada Peluang Akusisi?",
-   "tags": [
-    "UNTR"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9ea47bec5e9/anak-usaha-astra-untr-lirik-tambang-tembaga-ada-peluang-akusisi",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/04/28/Alat_berat_United_Tractors_UNTR-2025_04_28-05_25_15_288e040003aacd9897d502729cde1de8_620x413_thumb.jpg",
-   "t_ko": "아스트라 자회사(UNTR)가 구리 채굴을 본다, 인수 기회는 있을까?",
-   "t_id": "Anak Usaha Astra (UNTR) Lirik Tambang Tembaga, Ada Peluang Akusisi?"
-  },
-  {
-   "ts": "2026-09-07T18:13:00+07:00",
-   "date": "2026-09-07",
-   "time": "09/07",
-   "src": "Katadata",
-   "t": "Jurus PTBA Siapkan 3 Mesin Bisnis: Batu Bara, Power, dan Coal to Chemicals",
-   "tags": [
-    "PTBA"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9e9c496bd7f/jurus-ptba-siapkan-3-mesin-bisnis-batu-bara-power-dan-coal-to-chemicals",
-   "img": "https://cdn1.katadata.co.id/media/oldmedia/media/Bukit Asam1_www.ptba_.co_.id_.jpg",
-   "t_ko": "3가지 비즈니스 기계를 준비하는 PTBA 단계: 석탄, 전력, 석탄에서 화학 물질까지",
-   "t_id": "Jurus PTBA Siapkan 3 Mesin Bisnis: Batu Bara, Power, dan Coal to Chemicals"
   },
   {
    "ts": "2026-09-07T18:10:00+07:00",
@@ -16953,20 +16953,6 @@
    "t_id": "Wakil Komisaris Utama Jual 32,88 Juta Saham DILD"
   },
   {
-   "ts": "2026-09-05T12:18:01+07:00",
-   "date": "2026-09-05",
-   "time": "09/05",
-   "src": "Liputan6",
-   "t": "IHSG Hari Ini Merosot ke 6.637, Saham ARCI Naik 0,37%",
-   "tags": [
-    "ARCI"
-   ],
-   "url": "https://www.liputan6.com/saham/read/8284789/ihsg-hari-ini-merosot-ke-6637-saham-arci-naik-037",
-   "img": "https://cdn0-production-images-kly.akamaized.net/bfvBekeq0MYZyCenby7HbXaDPg4=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5487881/original/098610500_1769682055-4.jpg",
-   "t_ko": "IHSG 오늘 6,637로 하락 — ARCI 주가 0.37% 상승",
-   "t_id": "IHSG Hari Ini Merosot ke 6.637, Saham ARCI Naik 0,37%"
-  },
-  {
    "ts": "2026-09-05T06:00:34+07:00",
    "date": "2026-09-05",
    "time": "09/05",
@@ -17053,6 +17039,182 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-08T08:15:12+07:00",
+   "date": "2026-09-08",
+   "time": "08:15",
+   "src": "Bloomberg Technoz",
+   "t": "Posisi Investor Asing Kala IHSG Turun",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120825/posisi-investor-asing-kala-ihsg-turun",
+   "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260604121736.jpeg",
+   "t_id": "Posisi Investor Asing Kala IHSG Turun"
+  },
+  {
+   "ts": "2026-09-08T08:00:00+07:00",
+   "date": "2026-09-08",
+   "time": "08:00",
+   "src": "Media Indonesia",
+   "t": "Partikel Halus Abu Vulkanik Bikin Susah Bernapas, Penderita Asma Wajib Waspada",
+   "tags": [],
+   "url": "https://mediaindonesia.com/kesehatan/930839/partikel-halus-abu-vulkanik-bikin-susah-bernapas-penderita-asma-wajib-waspada"
+  },
+  {
+   "ts": "2026-09-08T07:47:43+07:00",
+   "date": "2026-09-08",
+   "time": "07:47",
+   "src": "Jawa Pos",
+   "t": "Pusri Wujudkan Ekonomi Sirkular Lewat Pelatihan Menjahit Kampung Sehati Palembang",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609080076/pusri-wujudkan-ekonomi-sirkular-lewat-pelatihan-menjahit-kampung-sehati-palembang",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/pt-pusari-palembang-menggelar-pelatihan-menjahit-kampung-sehati-palembang-dengan-tujuan-masyarakat-kampung-sehati-dapat-semakin-mandiri-dan-produktif-dalam-mengembangkan-keterampilan-yang-dimiliki-istimewa-tyvsn.webp"
+  },
+  {
+   "ts": "2026-09-08T07:45:00+07:00",
+   "date": "2026-09-08",
+   "time": "07:45",
+   "src": "Bloomberg Technoz",
+   "t": "Harga Minyak Naik saat Pakta Iran-Oman soal Hormuz Kian Dekat",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120818/harga-minyak-naik-saat-pakta-iran-oman-soal-hormuz-kian-dekat",
+   "img": "https://images.bloombergtechnoz.com/data/2023/05/image-20230531061326.jpg",
+   "t_id": "Harga Minyak Naik saat Pakta Iran-Oman soal Hormuz Kian Dekat"
+  },
+  {
+   "ts": "2026-09-08T07:40:16+07:00",
+   "date": "2026-09-08",
+   "time": "07:40",
+   "src": "Republika",
+   "t": "Karhutla dan Abu Anak Krakatau Ancam Aktivitas Ekonomi hingga Rp 123,1 Triliun",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl0sj4423/karhutla-dan-abu-anak-krakatau-ancam-aktivitas-ekonomi-hingga-rp-1231-triliun",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/penanganan_260906071400-979.jpg",
+   "t_id": "Karhutla dan Abu Anak Krakatau Ancam Aktivitas Ekonomi hingga Rp 123,1 Triliun"
+  },
+  {
+   "ts": "2026-09-08T07:38:29+07:00",
+   "date": "2026-09-08",
+   "time": "07:38",
+   "src": "Detik",
+   "t": "Bandara Soetta-Husein Siap Beroperasi Lagi Usai Dibuka",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8653139/bandara-soetta-husein-siap-beroperasi-lagi-usai-dibuka",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/bandara-soetta-tutup-imbas-abu-vulkanik-anak-krakatau-penumpang-lengang-1788767957505_169.jpeg?w=360&q=90"
+  },
+  {
+   "ts": "2026-09-08T07:38:00+07:00",
+   "date": "2026-09-08",
+   "time": "07:38",
+   "src": "Katadata",
+   "t": "Pengakuan Purbaya usai Setahun jadi Menkeu: Pusing Hampir Setiap Hari",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/makro/6a9f58fc56959/pengakuan-purbaya-usai-setahun-jadi-menkeu-pusing-hampir-setiap-hari",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/2026_09_07-13_42_00_9670f4fa-aa93-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "Pengakuan Purbaya usai Setahun jadi Menkeu: Pusing Hampir Setiap Hari"
+  },
+  {
+   "ts": "2026-09-08T07:28:00+07:00",
+   "date": "2026-09-08",
+   "time": "07:28",
+   "src": "Media Indonesia",
+   "t": "Gunung Lewotolok Erupsi Lagi, Kolom Abu Terpantau Setinggi 800 Meter",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/930833/gunung-lewotolok-erupsi-lagi-kolom-abu-terpantau-setinggi-800-meter"
+  },
+  {
+   "ts": "2026-09-08T07:27:27+07:00",
+   "date": "2026-09-08",
+   "time": "07:27",
+   "src": "Medcom",
+   "t": "InJourney Pastikan 3 Bandara Kembali Beroperasi Usai Terdampak Abu Vulkanik Anak Krakatau",
+   "tags": [],
+   "url": "https://www.medcom.id/gaya/wisata/8N0X63rN-injourney-pastikan-3-bandara-kembali-beroperasi-usai-terdampak-abu-vulkanik-anak-krakatau",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840635/CcjebB4Tw9.jpeg?w=720"
+  },
+  {
+   "ts": "2026-09-08T07:25:00+07:00",
+   "date": "2026-09-08",
+   "time": "07:25",
+   "src": "Detik",
+   "t": "Pinjaman Online Warga RI Makin Banyak, Tembus Rp 105 Triliun",
+   "tags": [],
+   "url": "https://finance.detik.com/moneter/d-8653044/pinjaman-online-warga-ri-makin-banyak-tembus-rp-105-triliun",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2022/09/27/infografis-aturan-bunga-pinjol-1_169.jpeg?w=360&q=90",
+   "t_id": "Pinjaman Online Warga RI Makin Banyak, Tembus Rp 105 Triliun"
+  },
+  {
+   "ts": "2026-09-08T07:24:00+07:00",
+   "date": "2026-09-08",
+   "time": "07:24",
+   "src": "Media Indonesia",
+   "t": "Gunung Ili Lewotolok Erupsi Lagi, Kolom Abu Capai 800 Meter",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/930832/gunung-ili-lewotolok-erupsi-lagi-kolom-abu-capai-800-meter"
+  },
+  {
+   "ts": "2026-09-08T07:22:00+07:00",
+   "date": "2026-09-08",
+   "time": "07:22",
+   "src": "Detik",
+   "t": "3 Bandara Masih Ditutup hingga Pukul 10.00 WIB, Ini Daftarnya",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8653127/3-bandara-masih-ditutup-hingga-pukul-10-00-wib-ini-daftarnya",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2022/08/29/bandara-radin-inten-ii-lampung_169.jpeg?w=360&q=90",
+   "t_id": "3 Bandara Masih Ditutup hingga Pukul 10.00 WIB, Ini Daftarnya"
+  },
+  {
+   "ts": "2026-09-08T07:17:14+07:00",
+   "date": "2026-09-08",
+   "time": "07:17",
+   "src": "Liputan6",
+   "t": "IHSG Berpeluang Koreksi ke 6.578, Cek Rekomendasi Saham Analis 8 September 2026",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8286859/ihsg-berpeluang-koreksi-ke-6578-cek-rekomendasi-saham-analis-8-september-2026",
+   "img": "https://cdn0-production-images-kly.akamaized.net/BBzg1xQPOcbb0FC7LAqi5cpqdK4=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5342655/original/057756700_1757397640-2.jpg",
+   "t_id": "IHSG Berpeluang Koreksi ke 6.578, Cek Rekomendasi Saham Analis 8 September 2026"
+  },
+  {
+   "ts": "2026-09-08T07:16:00+07:00",
+   "date": "2026-09-08",
+   "time": "07:16",
+   "src": "IDX Channel",
+   "t": "OJK Catat Net Buy Asing Tembus Rp1,19 Triliun pada Agustus 2026",
+   "tags": [],
+   "url": "https://www.idxchannel.com/market-news/ojk-catat-net-buy-asing-tembus-rp119-triliun-pada-agustus-2026",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/05/04/saham_-_sell_buy_-_Magnific_Freepik_-_2_jpg.jpeg",
+   "t_id": "OJK Catat Net Buy Asing Tembus Rp1,19 Triliun pada Agustus 2026"
+  },
+  {
+   "ts": "2026-09-08T07:12:00+07:00",
+   "date": "2026-09-08",
+   "time": "07:12",
+   "src": "Katadata",
+   "t": "Mitigasi Banjir, Kali Serua Ciledug Tangerang Diperlebar Menjadi 6 Meter",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/daerah/6a9f52f75435d/mitigasi-banjir-kali-serua-ciledug-tangerang-diperlebar-menjadi-6-meter",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/24/2026_06_24-16_37_00_45a66944-6fbd-11f1-8ba5-0242ac12000a_620x413_thumb.jpg"
+  },
+  {
+   "ts": "2026-09-08T07:05:50+07:00",
+   "date": "2026-09-08",
+   "time": "07:05",
+   "src": "Bloomberg Technoz",
+   "t": "Emas Dilepas Sampai Oversold, Saatnya Jual atau Beli?",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120820/emas-dilepas-sampai-oversold-saatnya-jual-atau-beli",
+   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260815094844.jpg"
+  },
+  {
+   "ts": "2026-09-08T07:05:00+07:00",
+   "date": "2026-09-08",
+   "time": "07:05",
+   "src": "Medcom",
+   "t": "Kemenkes Kirim 160 Nakes Batch 2 ke NTT, untuk Pemulihan Psikososial Korban Gempa",
+   "tags": [],
+   "url": "https://www.medcom.id/gaya/fitness-health/ob3y6joK-kemenkes-kirim-160-nakes-batch-2-ke-ntt-untuk-pemulihan-psikososial-korban-gempa",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/07/1840613/VnO2XQZipd.jpeg?w=720",
+   "t_id": "Kemenkes Kirim 160 Nakes Batch 2 ke NTT, untuk Pemulihan Psikososial Korban Gempa"
+  },
+  {
    "ts": "2026-09-08T07:00:52+07:00",
    "date": "2026-09-08",
    "time": "07:00",
@@ -17061,8 +17223,8 @@
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8652670/aktivitas-jual-beli-pasar-agung-depok-tetap-ramai-di-tengah-sebaran-abu-vulkanik",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/aktivitas-jual-beli-pasar-agung-depok-tetap-ramai-di-tengah-sebaran-abu-vulkanik-1788766364451_169.jpeg?w=360&q=90",
-   "t_id": "Aktivitas Jual Beli Pasar Agung Depok Tetap Ramai di Tengah Sebaran Abu Vulkanik",
-   "t_ko": "화산재 확산 속에 데폭대시장 매매 활동 여전히 분주"
+   "t_ko": "화산재 확산 속에 데폭대시장 매매 활동 여전히 분주",
+   "t_id": "Aktivitas Jual Beli Pasar Agung Depok Tetap Ramai di Tengah Sebaran Abu Vulkanik"
   },
   {
    "ts": "2026-09-08T06:55:00+07:00",
@@ -17186,182 +17348,6 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8653106/bandara-soetta-husein-dibuka-lagi-radin-inten-masih-ditutup",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/pemerintah-sebut-2961-penerbangan-terdampak-erupsi-anak-krakatau-1788779302166_169.jpeg?w=360&q=90"
-  },
-  {
-   "ts": "2026-09-08T06:19:00+07:00",
-   "date": "2026-09-08",
-   "time": "06:19",
-   "src": "Media Indonesia",
-   "t": "BMKG: Abu Vulkanik Gunung Anak Krakatau Belum Terindikasi Masuk Jawa Tengah",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/930817/bmkg-abu-vulkanik-gunung-anak-krakatau-belum-terindikasi-masuk-jawa-tengah"
-  },
-  {
-   "ts": "2026-09-08T06:15:00+07:00",
-   "date": "2026-09-08",
-   "time": "06:15",
-   "src": "Bloomberg Technoz",
-   "t": "Gunung Anak Krakatau Erupsi Pagi Ini, Status Masih Siaga",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120814/gunung-anak-krakatau-erupsi-pagi-ini-status-masih-siaga",
-   "img": "https://images.bloombergtechnoz.com/data/2023/06/image-20230610092932.jpeg",
-   "t_id": "Gunung Anak Krakatau Erupsi Pagi Ini, Status Masih Siaga"
-  },
-  {
-   "ts": "2026-09-08T06:05:00+07:00",
-   "date": "2026-09-08",
-   "time": "06:05",
-   "src": "Katadata",
-   "t": "Menkeu Purbaya Bantah Penyaluran Gaji PNS Bakal Dialihkan dari BPD ke Bank BUMN",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6a9ebe7cee44e/menkeu-purbaya-bantah-penyaluran-gaji-pns-bakal-dialihkan-dari-bpd-ke-bank-bumn",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/05/26/2026_05_26-13_23_00_3625d146-58d7-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Menkeu Purbaya Bantah Penyaluran Gaji PNS Bakal Dialihkan dari BPD ke Bank BUMN"
-  },
-  {
-   "ts": "2026-09-08T06:05:00+07:00",
-   "date": "2026-09-08",
-   "time": "06:05",
-   "src": "Katadata",
-   "t": "Bencana Karhutla: antara Politik dan Sains",
-   "tags": [],
-   "url": "https://katadata.co.id/indepth/opini/6a9d58ce1a78e/bencana-karhutla-antara-politik-dan-sains",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/21/Samira_Hanim_Wildan_Faisol-2026_08_21-23_40_19_35aba7aae7928062028eb242d7d3b870_620x413_thumb.jpg",
-   "t_id": "Bencana Karhutla: antara Politik dan Sains"
-  },
-  {
-   "ts": "2026-09-08T06:00:20+07:00",
-   "date": "2026-09-08",
-   "time": "06:00",
-   "src": "Detik",
-   "t": "Pramono Mau Terbitkan Obligasi, Purbaya: Kalau Uangnya Banyak buat Apa Utang?",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8652990/pramono-mau-terbitkan-obligasi-purbaya-kalau-uangnya-banyak-buat-apa-utang",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/raker-komisi-xi-dpr-dengan-menteri-keuangan-1788761455217_169.jpeg?w=360&q=90"
-  },
-  {
-   "ts": "2026-09-08T06:00:00+07:00",
-   "date": "2026-09-08",
-   "time": "06:00",
-   "src": "IDX Channel",
-   "t": "IHSG Hari Ini Masih Rawan Terkoreksi, Cermati Analisa 4 Saham Berikut",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/ihsg-hari-ini-masih-rawan-terkoreksi-cermati-analisa-4-saham-berikut-4",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/02/02/Papan_IHSG_-_30_Jan_26_-_2.jpeg",
-   "t_id": "IHSG Hari Ini Masih Rawan Terkoreksi, Cermati Analisa 4 Saham Berikut"
-  },
-  {
-   "ts": "2026-09-08T05:47:00+07:00",
-   "date": "2026-09-08",
-   "time": "05:47",
-   "src": "Media Indonesia",
-   "t": "Penyesuaian Harga BBM September 2026: Upaya Menjaga Daya Beli dan Tantangan Kelas Menengah",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/930812/penyesuaian-harga-bbm-september-2026-upaya-menjaga-daya-beli-dan-tantangan-kelas-menengah",
-   "t_id": "Penyesuaian Harga BBM September 2026: Upaya Menjaga Daya Beli dan Tantangan Kelas Menengah"
-  },
-  {
-   "ts": "2026-09-08T05:30:00+07:00",
-   "date": "2026-09-08",
-   "time": "05:30",
-   "src": "Bloomberg Technoz",
-   "t": "Saham AS Melemah, Kenaikan Harga Minyak Bikin Investor Waspada",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120811/saham-as-melemah-kenaikan-harga-minyak-bikin-investor-waspada",
-   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260813121812.jpg",
-   "t_id": "Saham AS Melemah, Kenaikan Harga Minyak Bikin Investor Waspada"
-  },
-  {
-   "ts": "2026-09-08T05:15:15+07:00",
-   "date": "2026-09-08",
-   "time": "05:15",
-   "src": "Republika",
-   "t": "Abu Gunung Anak Krakatau Lumpuhkan 2.961 Penerbangan, 341 Ribu Penumpang Terdampak",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl0ltf4630000/abu-gunung-anak-krakatau-lumpuhkan-2961-penerbangan-341-ribu-penumpang-terdampak",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/045161600-1788819315-C836C48A-662A-498A-996C-623FED.jpeg"
-  },
-  {
-   "ts": "2026-09-08T05:05:00+07:00",
-   "date": "2026-09-08",
-   "time": "05:05",
-   "src": "Media Indonesia",
-   "t": "Pelajaran Penting dari Erupsi Anak Krakatau 2026",
-   "tags": [],
-   "url": "https://mediaindonesia.com/opini/930792/pelajaran-penting-dari-erupsi-anak-krakatau-2026",
-   "t_id": "Pelajaran Penting dari Erupsi Anak Krakatau 2026"
-  },
-  {
-   "ts": "2026-09-08T04:31:00+07:00",
-   "date": "2026-09-08",
-   "time": "04:31",
-   "src": "Media Indonesia",
-   "t": "Korban Meninggal Banjir Nepal Utara Capai 1.355 Orang",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/930803/korban-meninggal-banjir-nepal-utara-capai-1355-orang"
-  },
-  {
-   "ts": "2026-09-08T04:30:14+07:00",
-   "date": "2026-09-08",
-   "time": "04:30",
-   "src": "Republika",
-   "t": "Erupsi Anak Krakatau Tunda 624 Penerbangan di Bandara Soekarno-Hatta",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl0jqe1930000/erupsi-anak-krakatau-tunda-624-penerbangan-di-bandara-soekarnohatta",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/089426200-1788816614-36560747-2598-4a4b-8ef1-435bee.jpg",
-   "t_id": "Erupsi Anak Krakatau Tunda 624 Penerbangan di Bandara Soekarno-Hatta"
-  },
-  {
-   "ts": "2026-09-08T04:17:00+07:00",
-   "date": "2026-09-08",
-   "time": "04:17",
-   "src": "Media Indonesia",
-   "t": "Hingga Senin (7/9), Erupsi Gunung Anak Krakatau Ganggu 2.961 Penerbangan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/930801/hingga-senin-79-erupsi-gunung-anak-krakatau-ganggu-2961-penerbangan"
-  },
-  {
-   "ts": "2026-09-08T03:09:02+07:00",
-   "date": "2026-09-08",
-   "time": "03:09",
-   "src": "Jawa Pos",
-   "t": "Bukan Cuma Gaji, ini 3 Hal yang Dicari Gen Z di Dunia Kerja",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609070375/bukan-cuma-gaji-ini-3-hal-yang-dicari-gen-z-di-dunia-kerja",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/07/ilustrasi-gen-z-bekerja-magnific-freepik-UFMe8.webp",
-   "t_id": "Bukan Cuma Gaji, ini 3 Hal yang Dicari Gen Z di Dunia Kerja"
-  },
-  {
-   "ts": "2026-09-08T03:05:40+07:00",
-   "date": "2026-09-08",
-   "time": "03:05",
-   "src": "Jawa Pos",
-   "t": "Bukan Sekadar Debu, Ini Alasan Abu Vulkanik Bisa Paksa Bandara Ditutup",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609070399/bukan-sekadar-debu-ini-alasan-abu-vulkanik-bisa-paksa-bandara-ditutup",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/07/MgNfSpdhurvBaHQpkOn6Yqv8i08yg07Hh4man2iE.webp",
-   "t_ko": "먼지뿐만 아니라 화산재로 인해 공항이 폐쇄될 수도 있습니다.",
-   "t_id": "Bukan Sekadar Debu, Ini Alasan Abu Vulkanik Bisa Paksa Bandara Ditutup"
-  },
-  {
-   "ts": "2026-09-08T02:40:00+07:00",
-   "date": "2026-09-08",
-   "time": "02:40",
-   "src": "IDNFinancials",
-   "t": "Trump weighs on GOP ahead of midterms",
-   "tags": [],
-   "url": "https://www.idnfinancials.com/news/68481/trump-weighs-on-gop-ahead-of-midterms",
-   "img": "https://www.idnfinancials.com/assets/img/idn-d2.png?t=1"
-  },
-  {
-   "ts": "2026-09-08T01:18:00+07:00",
-   "date": "2026-09-08",
-   "time": "01:18",
-   "src": "Media Indonesia",
-   "t": "Indeks Inklusi Keuangan 93,61%, Literasi Digital Jadi Bekal Generasi Muda",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/930796/indeks-inklusi-keuangan-9361-literasi-digital-jadi-bekal-generasi-muda",
-   "t_id": "Indeks Inklusi Keuangan 93,61%, Literasi Digital Jadi Bekal Generasi Muda"
   }
  ],
  "kisi_news": [
@@ -17521,9 +17507,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,638",
-   "d": 0.11,
-   "ytd": 5.49,
+   "v": "17,631",
+   "d": -0.04,
+   "ytd": 5.45,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -17533,9 +17519,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.10",
-   "d": 0.9,
-   "ytd": 12.82,
+   "v": "13.15",
+   "d": 0.38,
+   "ytd": 13.25,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17580,9 +17566,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "92.53",
-   "d": 0.55,
-   "ytd": 61.15,
+   "v": "92.45",
+   "d": 0.47,
+   "ytd": 61.01,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17592,9 +17578,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,467.6",
-   "d": -1.02,
-   "ytd": 3.28,
+   "v": "4,466.1",
+   "d": -1.06,
+   "ytd": 3.25,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17616,9 +17602,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,686",
-   "d": -0.09,
-   "ytd": 0.02,
+   "v": "16,659",
+   "d": -0.25,
+   "ytd": -0.14,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -21981,7 +21967,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-07 17:06",
-  "pc_age_min": 839,
+  "pc_age_min": 913,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -23087,9 +23073,9 @@
   },
   "model": "gemini-2.5-flash-lite",
   "index": {
-   "ko": "금융주 및 대형주 약세 영향으로 IHSG 0.25% 하락.",
-   "id": "IHSG melemah 0,25% dipimpin oleh pelemahan saham sektor keuangan dan berkapitalisasi besar.",
-   "ts": "2026-09-08T07:05:42.750245+07:00"
+   "ko": "대형 금융주(BBCA, BBRI, BMRI) 약세 영향으로 IHSG 0.25% 하락.",
+   "id": "IHSG melemah 0,25% akibat tekanan pada saham-saham perbankan besar (BBCA, BBRI, BMRI).",
+   "ts": "2026-09-08T08:19:14.604702+07:00"
   }
  },
  "mcap": [
