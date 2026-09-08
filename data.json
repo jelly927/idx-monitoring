@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 22:56",
+ "updated": "2026-09-08 23:08",
  "delay_min": 0,
  "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,341 · 21:34 Yahoo",
- "idr_per_krw": 13.1315,
+ "idr_per_krw": 13.1325,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15029,10 +15029,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7690.61,
+   "px": 7692.82,
    "prev": 7717.81,
-   "pct": -0.35,
-   "asof": "22:55",
+   "pct": -0.32,
+   "asof": "23:05",
    "live": true,
    "spark": [
     7705.24,
@@ -15064,17 +15064,19 @@
     7695.04,
     7691.1,
     7691.13,
-    7690.61
+    7689.52,
+    7691.49,
+    7692.82
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26476.59,
+   "px": 26488.55,
    "prev": 26506.99,
-   "pct": -0.11,
-   "asof": "22:55",
+   "pct": -0.07,
+   "asof": "23:05",
    "live": true,
    "spark": [
     26482.08,
@@ -15106,17 +15108,19 @@
     26502.2,
     26478.94,
     26480.89,
-    26476.59
+    26475.21,
+    26482.52,
+    26488.55
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52843.14,
+   "px": 52854.51,
    "prev": 53406.91,
-   "pct": -1.06,
-   "asof": "22:55",
+   "pct": -1.03,
+   "asof": "23:05",
    "live": true,
    "spark": [
     52962.24,
@@ -15148,7 +15152,9 @@
     52861.89,
     52852.88,
     52838.47,
-    52843.14
+    52836.49,
+    52843.52,
+    52854.51
    ]
   },
   {
@@ -15483,6 +15489,19 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-08T23:00:00+07:00",
+   "date": "2026-09-08",
+   "time": "23:00",
+   "src": "IDNFinancials",
+   "t": "SMGR Net Profit Soars 445.9%, Domestic Sales Grow 9.7%",
+   "tags": [
+    "SMGR"
+   ],
+   "url": "https://www.idnfinancials.com/news/68534/smgr-net-profit-soars-445-9-domestic-sales-grow-9-7",
+   "img": "https://photos.idnfinancials.com/_idn/LOGO/SMGR.jpg",
+   "t_ko": "SMGR 순이익 445.9% 급증, 국내 매출 9.7% 증가"
+  },
   {
    "ts": "2026-09-08T22:20:00+07:00",
    "date": "2026-09-08",
@@ -16200,6 +16219,41 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-08T23:07:58.437257+07:00",
+   "date": "2026-09-08",
+   "time": "23:07",
+   "src": "Jawa Pos",
+   "t": "Cerita Purbaya Kehilangan Berat Badan hampir 15 Kg akibat Beratnya jadi Menteri Keuangan",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609080367/cerita-purbaya-kehilangan-berat-badan-hampir-15-kg-akibat-beratnya-jadi-menteri-keuangan",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/menteri-keuangan-menkeu-purbaya-yudhi-sadewa-dalam-jumpa-media-di-jakarta-selasa-89-djati-waluyojawaposcom-o75w6.webp",
+   "t_ko": "Purbaya, 재무장관 부담에 체중 15kg 가까이 감소 언급",
+   "t_id": "Cerita Purbaya Kehilangan Berat Badan hampir 15 Kg akibat Beratnya jadi Menteri Keuangan"
+  },
+  {
+   "ts": "2026-09-08T23:00:00+07:00",
+   "date": "2026-09-08",
+   "time": "23:00",
+   "src": "Republika",
+   "t": "Dunia Kerja Berubah Cepat, Talenta Jadi Penentu",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl1q52416/dunia-kerja-berubah-cepat-talenta-jadi-penentu",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/pekerja-wanita-melakukan-model-kerja-microshifting-ilustrasi-masa-depan_251013101234-805.jpg",
+   "t_id": "Dunia Kerja Berubah Cepat, Talenta Jadi Penentu",
+   "t_ko": "직업의 세계는 빠르게 변화하고 있으며, 인재는 결정적인 요소입니다."
+  },
+  {
+   "ts": "2026-09-08T22:56:00+07:00",
+   "date": "2026-09-08",
+   "time": "22:56",
+   "src": "Medcom",
+   "t": "Deepfake Makin Canggih, DANA Gunakan AI untuk Deteksi Penipuan Digital",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/ekonomi-digital/5b2ydxVN-deepfake-makin-canggih-dana-gunakan-ai-untuk-deteksi-penipuan-digital",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840750/To4HsedS3V.jpeg?w=720",
+   "t_id": "Deepfake Makin Canggih, DANA Gunakan AI untuk Deteksi Penipuan Digital"
+  },
+  {
    "ts": "2026-09-08T22:38:47+07:00",
    "date": "2026-09-08",
    "time": "22:38",
@@ -16358,26 +16412,6 @@
    "t_id": "Karhutla di Wilayah IKN Terkendali, Lokasi Jauh dari KIPP"
   },
   {
-   "ts": "2026-09-08T21:25:00+07:00",
-   "date": "2026-09-08",
-   "time": "21:25",
-   "src": "Media Indonesia",
-   "t": "Kemarau Ekstrem, 63 Kasus Karhutla Landa Kabupaten Sukabumi dalam Sebulan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931213/kemarau-ekstrem-63-kasus-karhutla-landa-kabupaten-sukabumi-dalam-sebulan",
-   "t_ko": "극심한 가뭄, 한 달 만에 수카부미 지역에 63건의 산림 및 임업 사례 발생"
-  },
-  {
-   "ts": "2026-09-08T21:23:00+07:00",
-   "date": "2026-09-08",
-   "time": "21:23",
-   "src": "Media Indonesia",
-   "t": "Kabut Asap Karhutla, Penderita ISPA di Riau Capai 10.783 Kasus",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931208/kabut-asap-karhutla-penderita-ispa-di-riau-capai-10783-kasus",
-   "t_id": "Kabut Asap Karhutla, Penderita ISPA di Riau Capai 10.783 Kasus"
-  },
-  {
    "ts": "2026-09-08T21:21:35+07:00",
    "date": "2026-09-08",
    "time": "21:21",
@@ -16506,18 +16540,6 @@
    "url": "https://katadata.co.id/finansial/makro/6aa00d5ee3a81/utang-whoosh-berpotensi-dikelola-ina-dan-smi-cicilan-di-bawah-rp1-triliuntahun",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/02/2026_07_02-13_52_00_b0f4b5c8-75f5-11f1-9607-0242ac12000a_620x413_thumb.jpg",
    "t_id": "Utang Whoosh Berpotensi Dikelola INA dan SMI, Cicilan di Bawah Rp1 Triliun/Tahun"
-  },
-  {
-   "ts": "2026-09-08T20:26:05+07:00",
-   "date": "2026-09-08",
-   "time": "20:26",
-   "src": "Jawa Pos",
-   "t": "Setiap Interaksi, Jadi Cerita”, Kawan Lama Group Hadirkan Apresiasi di Hari Pelanggan Nasional 2026",
-   "tags": [],
-   "url": "https://www.jawapos.com/bisnis/2609080266/setiap-interaksi-jadi-cerita-kawan-lama-group-hadirkan-apresiasi-di-hari-pelanggan-nasional-2026",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/kawan-lama-group-hadir-melalui-lebih-dari-30-merek-usaha-yang-bergerak-dalam-enam-pilar-bisnis-yaitu-industrial-commercial-consumer-retail-food-beverage-property-hospitality-commercial-technology-serta-manufacturing-engineering-istimewa-KZMie.webp",
-   "t_ko": "Kawan Lama Group, 2026 전국 고객의 날 감사 프로모션 전개 — '모든 상호작용이 이야기로'",
-   "t_id": "Setiap Interaksi, Jadi Cerita”, Kawan Lama Group Hadirkan Apresiasi di Hari Pelanggan Nasional 2026"
   }
  ],
  "kisi_news": [
@@ -16703,9 +16725,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.788%",
-   "d": 0.08,
-   "ytd": 15.01,
+   "v": "4.792%",
+   "d": 0.17,
+   "ytd": 15.11,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16726,9 +16748,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.86",
-   "d": -0.31,
-   "ytd": 0.59,
+   "v": "98.85",
+   "d": -0.32,
+   "ytd": 0.58,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16738,9 +16760,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "92.40",
-   "d": 1.01,
-   "ytd": 60.92,
+   "v": "92.31",
+   "d": 0.91,
+   "ytd": 60.76,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16750,9 +16772,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,444.7",
-   "d": -0.71,
-   "ytd": 2.75,
+   "v": "4,443.9",
+   "d": -0.73,
+   "ytd": 2.73,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16774,9 +16796,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,804",
-   "d": 0.62,
-   "ytd": 0.74,
+   "v": "16,777",
+   "d": -0.01,
+   "ytd": 0.57,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -22701,7 +22723,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 285,
+  "pc_age_min": 297,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
