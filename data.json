@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 20:56",
+ "updated": "2026-09-08 21:08",
  "delay_min": 0,
  "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,341 · 20:09 Yahoo",
- "idr_per_krw": 13.1301,
+ "idr_per_krw": 13.1305,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15029,10 +15029,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7689.24,
+   "px": 7680.96,
    "prev": 7717.81,
-   "pct": -0.37,
-   "asof": "20:55",
+   "pct": -0.48,
+   "asof": "21:05",
    "live": true,
    "spark": [
     7705.24,
@@ -15040,17 +15040,19 @@
     7687.52,
     7691.87,
     7688.48,
-    7689.24
+    7690.91,
+    7684.21,
+    7680.96
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26399.91,
+   "px": 26374.67,
    "prev": 26506.99,
-   "pct": -0.4,
-   "asof": "20:55",
+   "pct": -0.5,
+   "asof": "21:05",
    "live": true,
    "spark": [
     26482.08,
@@ -15058,17 +15060,19 @@
     26386.53,
     26412.95,
     26389.82,
-    26399.91
+    26413.68,
+    26383.19,
+    26374.67
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52916.73,
+   "px": 52808.45,
    "prev": 53406.91,
-   "pct": -0.92,
-   "asof": "20:55",
+   "pct": -1.12,
+   "asof": "21:05",
    "live": true,
    "spark": [
     52962.24,
@@ -15076,7 +15080,9 @@
     52967.38,
     52945.75,
     52899.43,
-    52916.73
+    52889.91,
+    52837.88,
+    52808.45
    ]
   },
   {
@@ -15402,6 +15408,18 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-08T21:00:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:00",
+   "src": "IDNFinancials",
+   "t": "MDLA net profit rises 11.6% to IDR 220 billion in H1 2026",
+   "tags": [
+    "MDLA"
+   ],
+   "url": "https://www.idnfinancials.com/news/68536/mdla-net-profit-rises-11-6-to-idr-220-billion-in-h1-2026",
+   "img": "https://photos.idnfinancials.com/d/1600x900/_DESIGN%20GRAFIS/MARKET%20HINTS%20IMAGE%20%28ARIF%29/MDLA%20-%20PT.%20Medela%20Potentia%20Tbk%20-%20DIVIDEN-min.jpg"
+  },
   {
    "ts": "2026-09-08T20:40:00+07:00",
    "date": "2026-09-08",
@@ -15943,20 +15961,6 @@
    "t_id": "Rekomendasi Saham Hari Ini 8 September 2026: SSIA,ADRO, BBRI, ERAA, COCO, COIN"
   },
   {
-   "ts": "2026-09-08T08:50:00+07:00",
-   "date": "2026-09-08",
-   "time": "08:50",
-   "src": "IDNFinancials",
-   "t": "Willgo Zainar named KRAS CEO, replacing Akbar Djohan",
-   "tags": [
-    "KRAS"
-   ],
-   "url": "https://www.idnfinancials.com/news/68532/willgo-zainar-named-kras-ceo-replacing-akbar-djohan",
-   "img": "https://photos.idnfinancials.com/_idn/2024/Ilustrasi%20adhy/KRAS%201.jpg",
-   "t_ko": "Willgo Zainar KRAS 대표 선임 — Akbar Djohan 교체",
-   "t_id": "Willgo Zainar Ditunjuk Jadi Dirut KRAS, Gantikan Akbar Djohan"
-  },
-  {
    "ts": "2026-09-08T06:31:53+07:00",
    "date": "2026-09-08",
    "time": "06:31",
@@ -16155,6 +16159,59 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-08T21:05:05+07:00",
+   "date": "2026-09-08",
+   "time": "21:05",
+   "src": "Republika",
+   "t": "Anggaran Subsidi Energi Dipangkas, Ini Respons Pertamina",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl1tsh490/anggaran-subsidi-energi-dipangkas-ini-respons-pertamina",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/066899800-1781079739-830-556.jpg",
+   "t_id": "Anggaran Subsidi Energi Dipangkas, Ini Respons Pertamina"
+  },
+  {
+   "ts": "2026-09-08T21:00:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:00",
+   "src": "Bloomberg Technoz",
+   "t": "KPK: Sejumlah Saksi Tak Hadiri Pemeriksaan Karena Erupsi Gunung",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120960/kpk-sejumlah-saksi-tak-hadiri-pemeriksaan-karena-erupsi-gunung",
+   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260906141932.jpeg"
+  },
+  {
+   "ts": "2026-09-08T21:00:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:00",
+   "src": "Republika",
+   "t": "Abu Vulkanis Anak Krakatau Menyebar ke Jakarta, PAM Jaya Pastikan Air Aman",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl1pfj416/abu-vulkanis-anak-krakatau-menyebar-ke-jakarta-pam-jaya-pastikan-air-aman",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260908192956-434.png",
+   "t_id": "Abu Vulkanis Anak Krakatau Menyebar ke Jakarta, PAM Jaya Pastikan Air Aman"
+  },
+  {
+   "ts": "2026-09-08T20:58:00+07:00",
+   "date": "2026-09-08",
+   "time": "20:58",
+   "src": "Katadata",
+   "t": "Lima Jurnalis Hilang Kontak saat Akan Meliput Erupsi Anak Krakatau",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6aa014698fea6/lima-jurnalis-hilang-kontak-saat-akan-meliput-erupsi-anak-krakatau",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/08/Kepala_Basarnas_Mohammad_Syafii_tengah_diampingi_Deputi_Operasi-2026_09_08-20_56_32_129772bdedd6c5902b0765e5cf830dcd_620x413_thumb.jpg",
+   "t_id": "Lima Jurnalis Hilang Kontak saat Akan Meliput Erupsi Anak Krakatau"
+  },
+  {
+   "ts": "2026-09-08T20:52:00+07:00",
+   "date": "2026-09-08",
+   "time": "20:52",
+   "src": "Media Indonesia",
+   "t": "BP Tapera Jajaki Integrasi Katalog Properti ke rumah.go.id",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931188/bp-tapera-jajaki-integrasi-katalog-properti-ke-rumahgoid",
+   "t_id": "BP Tapera Jajaki Integrasi Katalog Properti ke rumah.go.id"
+  },
+  {
    "ts": "2026-09-08T20:44:12+07:00",
    "date": "2026-09-08",
    "time": "20:44",
@@ -16279,45 +16336,6 @@
    "tags": [],
    "url": "https://finance.detik.com/moneter/d-8654414/purbaya-sebut-bank-ri-siap-pungut-pajak-transaksi-digital-luar-negeri",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/02/purbaya-1788337519390_169.jpeg?w=360&q=90"
-  },
-  {
-   "ts": "2026-09-08T20:02:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:02",
-   "src": "Media Indonesia",
-   "t": "Tujuh Properti Pertahankan Pengelolaan hingga Tiga Dekade",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931147/tujuh-properti-pertahankan-pengelolaan-hingga-tiga-dekade"
-  },
-  {
-   "ts": "2026-09-08T20:01:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:01",
-   "src": "Media Indonesia",
-   "t": "Kemenhan RI: Kapal Jepang Tiba di Kalbar Bantu Padamkan Karhutla",
-   "tags": [],
-   "url": "https://mediaindonesia.com/humaniora/931149/kemenhan-ri-kapal-jepang-tiba-di-kalbar-bantu-padamkan-karhutla",
-   "t_id": "Kemenhan RI: Kapal Jepang Tiba di Kalbar Bantu Padamkan Karhutla"
-  },
-  {
-   "ts": "2026-09-08T20:00:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:00",
-   "src": "Media Indonesia",
-   "t": "BMKG: Erupsi Gunung Anak Krakatau tidak Picu Tsunami di Selat Sunda",
-   "tags": [],
-   "url": "https://mediaindonesia.com/humaniora/931148/bmkg-erupsi-gunung-anak-krakatau-tidak-picu-tsunami-di-selat-sunda",
-   "t_id": "BMKG: Erupsi Gunung Anak Krakatau tidak Picu Tsunami di Selat Sunda"
-  },
-  {
-   "ts": "2026-09-08T20:00:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:00",
-   "src": "Media Indonesia",
-   "t": "Permintaan Tinggi imbas Erupsi, KAI Daop 8 Surabaya Tambah Kereta Ekstra ke Jakarta",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931144/permintaan-tinggi-imbas-erupsi-kai-daop-8-surabaya-tambah-kereta-ekstra-ke-jakarta-",
-   "t_id": "Permintaan Tinggi imbas Erupsi, KAI Daop 8 Surabaya Tambah Kereta Ekstra ke Jakarta"
   },
   {
    "ts": "2026-09-08T19:59:00+07:00",
@@ -16459,17 +16477,6 @@
    "url": "https://finance.detik.com/moneter/d-8654381/ungkap-pemda-punya-rp-100-triliun-nganggur-purbaya-ingatkan-tak-perlu-minjam",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/menteri-keuangan-menkeu-purbaya-yudhi-sadewa-1788758870844_169.jpeg?w=360&q=90",
    "t_id": "Ungkap Pemda Punya Rp 100 Triliun Nganggur, Purbaya Ingatkan Tak Perlu Minjam"
-  },
-  {
-   "ts": "2026-09-08T19:28:00+07:00",
-   "date": "2026-09-08",
-   "time": "19:28",
-   "src": "Katadata",
-   "t": "Benarkah Material Letusan Gunung Bisa Picu Hujan? Ini Kata BRIN",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/ekonomi-sirkular/6a9fff76b8a20/benarkah-material-letusan-gunung-bisa-picu-hujan-ini-kata-brin",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/Gunung_Meletus-2026_09_07-16_23_38_14658dd4c15d5543e9713c60d475b6c7_620x413_thumb.png",
-   "t_id": "Benarkah Material Letusan Gunung Bisa Picu Hujan? Ini Kata BRIN"
   }
  ],
  "kisi_news": [
@@ -16655,9 +16662,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.786%",
-   "d": 0.04,
-   "ytd": 14.97,
+   "v": "4.780%",
+   "d": -0.08,
+   "ytd": 14.82,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16690,9 +16697,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "93.32",
-   "d": 2.01,
-   "ytd": 62.52,
+   "v": "93.22",
+   "d": 1.9,
+   "ytd": 62.35,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16702,9 +16709,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,441.2",
-   "d": -0.79,
-   "ytd": 2.67,
+   "v": "4,449.3",
+   "d": -0.61,
+   "ytd": 2.86,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16726,9 +16733,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,799",
-   "d": 0.59,
-   "ytd": 0.7,
+   "v": "16,794",
+   "d": 0.56,
+   "ytd": 0.67,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -22653,7 +22660,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 165,
+  "pc_age_min": 177,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
