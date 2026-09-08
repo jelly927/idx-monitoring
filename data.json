@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 12:30",
+ "updated": "2026-09-08 12:34",
  "delay_min": 0,
- "fx_basis": "13.12 IDR/KRW · USD/IDR 17,610 · USD/KRW 1,342 · 12:09 Yahoo",
- "idr_per_krw": 13.1214,
+ "fx_basis": "13.12 IDR/KRW · USD/IDR 17,610 · USD/KRW 1,343 · 12:09 Yahoo",
+ "idr_per_krw": 13.1156,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -340,8 +340,8 @@
   "m1": 4.86,
   "value_idr": 13700648900792,
   "volume": 35580199205,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-08 12:20",
-  "rank_asof": "12:29",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-08 12:30",
+  "rank_asof": "12:33",
   "rank_date": "2026-09-08",
   "adv": 415,
   "dec": 222,
@@ -15304,10 +15304,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7063.01,
+   "px": 7080.17,
    "prev": 6975.17,
-   "pct": 1.26,
-   "asof": "12:05",
+   "pct": 1.51,
+   "asof": "12:10",
    "live": true,
    "spark": [
     7024.02,
@@ -15371,17 +15371,18 @@
     7114.54,
     7103.84,
     7096.27,
-    7063.01
+    7063.01,
+    7080.17
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 66183.87,
+   "px": 66264.55,
    "prev": 66346.97,
-   "pct": -0.25,
-   "asof": "12:10",
+   "pct": -0.12,
+   "asof": "12:15",
    "live": true,
    "spark": [
     65927.21,
@@ -15436,17 +15437,18 @@
     66382.3,
     66278.32,
     66166.84,
-    66183.87
+    66183.87,
+    66264.55
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25319.47,
+   "px": 25358.49,
    "prev": 25413.12,
-   "pct": -0.37,
-   "asof": "12:10",
+   "pct": -0.21,
+   "asof": "12:15",
    "live": true,
    "spark": [
     25282.08,
@@ -15483,7 +15485,8 @@
     25345.57,
     25312.78,
     25293.03,
-    25319.47
+    25319.47,
+    25358.49
    ]
   }
  ],
@@ -15574,8 +15577,7 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6a9f9a333e141/dividen-akr-corporindo-akra-menyusut-rasiotahun-buku-2026-turun-jadi-30",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/08/11/PT_AKR_Corporindo_Tbk_AKRA-2025_08_11-09_27_56_3da466d3e6290d1bdf6fef269d227a25_620x413_thumb.jpg",
-   "t_id": "Dividen AKR Corporindo (AKRA) Menyusut, RasioTahun Buku 2026 Turun Jadi 30%",
-   "t_ko": "AKR Corporindo(AKRA) 배당금 감소, 2026 회계연도 비율이 30%로 하락"
+   "t_id": "Dividen AKR Corporindo (AKRA) Menyusut, RasioTahun Buku 2026 Turun Jadi 30%"
   },
   {
    "ts": "2026-09-08T12:10:22+07:00",
@@ -16375,6 +16377,38 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-08T12:31:00+07:00",
+   "date": "2026-09-08",
+   "time": "12:31",
+   "src": "Republika",
+   "t": "Hilirisasi Mineral Dinilai Jadi Kunci Kedaulatan Ekonomi Nasional",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl10it522/hilirisasi-mineral-dinilai-jadi-kunci-kedaulatan-ekonomi-nasional",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/dekan-fakultas-ilmu-sosial-dan-ilmu-politik-universitas-sumatera_260908103235-398.jpeg",
+   "t_id": "Hilirisasi Mineral Dinilai Jadi Kunci Kedaulatan Ekonomi Nasional"
+  },
+  {
+   "ts": "2026-09-08T12:23:27+07:00",
+   "date": "2026-09-08",
+   "time": "12:23",
+   "src": "Medcom",
+   "t": "​Pembelajaran Daring di Tengah Kabut Asap Karhutla Pontianak",
+   "tags": [],
+   "url": "https://www.medcom.id/foto/news/ObzRg7Zb-pembelajaran-daring-di-tengah-kabut-asap-karhutla-pontianak",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840710/pjj_karhutla_1.jpg?w=720",
+   "t_id": "​Pembelajaran Daring di Tengah Kabut Asap Karhutla Pontianak"
+  },
+  {
+   "ts": "2026-09-08T12:22:35+07:00",
+   "date": "2026-09-08",
+   "time": "12:22",
+   "src": "Medcom",
+   "t": "Anak Krakatau Mulai Mereda, Soetta Kembali Layani Penerbangan",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/bisnis/nbw5n9jK-anak-krakatau-mulai-mereda-soetta-kembali-layani-penerbangan",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840709/9ZzYEs40RQ.jpeg?w=720"
+  },
+  {
    "ts": "2026-09-08T12:18:55+07:00",
    "date": "2026-09-08",
    "time": "12:18",
@@ -16383,8 +16417,7 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8653551/ada-demam-masker-di-pasar-pramuka-pembeli-borong-20-box-sekaligus",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/pasar-pramuka-1788842222460_169.jpeg?w=360&q=90",
-   "t_id": "Ada 'Demam Masker' di Pasar Pramuka, Pembeli Borong 20 Box Sekaligus!",
-   "t_ko": "프라무카시장 '마스크 열풍', 구매자 한 번에 20박스 구매!"
+   "t_id": "Ada 'Demam Masker' di Pasar Pramuka, Pembeli Borong 20 Box Sekaligus!"
   },
   {
    "ts": "2026-09-08T12:15:00+07:00",
@@ -16689,41 +16722,6 @@
    "url": "https://mediaindonesia.com/ekonomi/930902/strategi-investasi-bitcoin-2026-menghadapi-volatilitas-dengan-dollar-cost-averaging",
    "t_ko": "2026년 Bitcoin 투자 전략 — 분할매수(DCA)로 변동성 대응",
    "t_id": "Strategi Investasi Bitcoin 2026: Hadapi Volatilitas dengan Dollar Cost Averaging"
-  },
-  {
-   "ts": "2026-09-08T11:13:00+07:00",
-   "date": "2026-09-08",
-   "time": "11:13",
-   "src": "Katadata",
-   "t": "PLTS 100 GWp Dimulai, Iklim Investasi Perlu Dibuat Atraktif",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/energi-baru/6a9f8b181b029/plts-100-gwp-dimulai-iklim-investasi-perlu-dibuat-atraktif",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/25/2026_08_25-18_07_00_df4d56b4-a07a-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "100 GWp 태양광 발전 착수 — 투자 환경 매력도 제고 필요",
-   "t_id": "PLTS 100 GWp Dimulai, Iklim Investasi Perlu Dibuat Atraktif"
-  },
-  {
-   "ts": "2026-09-08T11:11:36+07:00",
-   "date": "2026-09-08",
-   "time": "11:11",
-   "src": "Medcom",
-   "t": "Bukan Cuma Latihan Tempur, F-16 Ikut Pantau Karhutla di Riau",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/0kpqQ66K-bukan-cuma-latihan-tempur-f-16-ikut-pantau-karhutla-di-riau",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840685/pvr5BT9fSz.jpg?w=720",
-   "t_ko": "훈련 비행에 그치지 않아 — F-16, Riau 산불 감시 투입",
-   "t_id": "Bukan Cuma Latihan Tempur, F-16 Ikut Pantau Karhutla di Riau"
-  },
-  {
-   "ts": "2026-09-08T11:11:00+07:00",
-   "date": "2026-09-08",
-   "time": "11:11",
-   "src": "Medcom",
-   "t": "Berita Properti Terpopuler: Desain Taman Mini dan Gazebo Minimalis di Rumah",
-   "tags": [],
-   "url": "https://www.medcom.id/properti/news-properti/5b2yd6VN-berita-properti-terpopuler-desain-taman-mini-dan-gazebo-minimalis-di-rumah",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840706/J8s3TH1pce.jpg?w=720",
-   "t_id": "Berita Properti Terpopuler: Desain Taman Mini dan Gazebo Minimalis di Rumah"
   }
  ],
  "kisi_news": [
@@ -16895,9 +16893,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.12",
-   "d": 0.11,
-   "ytd": 12.95,
+   "v": "13.11",
+   "d": 0.02,
+   "ytd": 12.84,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16942,9 +16940,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "93.20",
-   "d": 1.88,
-   "ytd": 62.31,
+   "v": "93.22",
+   "d": 1.9,
+   "ytd": 62.35,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16954,9 +16952,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,474.5",
-   "d": -0.05,
-   "ytd": 3.44,
+   "v": "4,474.0",
+   "d": -0.06,
+   "ytd": 3.43,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16978,9 +16976,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,696",
-   "d": -0.02,
-   "ytd": 0.09,
+   "v": "16,686",
+   "d": -0.08,
+   "ytd": 0.03,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -22077,8 +22075,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-08 12:20",
-  "pc_age_min": 10,
+  "idx_from_pc": "2026-09-08 12:30",
+  "pc_age_min": 4,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -23571,7 +23569,7 @@
    "ratio": 1.7,
    "ev_ko": "실적·배당",
    "ev_id": "Kinerja & dividen",
-   "hl": "AKR Corporindo(AKRA) 배당금 감소, 2026 회계연도 비율이 30%로 하락",
+   "hl": "Dividen AKR Corporindo (AKRA) Menyusut, RasioTahun Buku 2026 Turun Jadi 30%",
    "url": "https://katadata.co.id/finansial/bursa/6a9f9a333e141/dividen-akr-corporindo-akra-menyusut-rasiotahun-buku-2026-turun-jadi-30",
    "score": 57.1,
    "s_news": 70,
