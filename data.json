@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 13:00",
+ "updated": "2026-09-08 13:22",
  "delay_min": 0,
- "fx_basis": "13.12 IDR/KRW · USD/IDR 17,610 · USD/KRW 1,342 · 12:41 Yahoo",
- "idr_per_krw": 13.1184,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,610 · USD/KRW 1,344 · 13:07 Yahoo",
+ "idr_per_krw": 13.099,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -303,10 +303,11 @@
     17603.0,
     17610.0,
     17610.0,
+    17610.0,
     17610.0
    ],
    "inv": true,
-   "asof": "12:41",
+   "asof": "13:07",
    "high": 17635.0,
    "low": 17603.0,
    "src": "yahoo"
@@ -341,8 +342,8 @@
   "m1": 4.86,
   "value_idr": 13700648900792,
   "volume": 35580199205,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-08 12:30",
-  "rank_asof": "12:59",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-08 13:18",
+  "rank_asof": "13:21",
   "rank_date": "2026-09-08",
   "adv": 415,
   "dec": 222,
@@ -16176,10 +16177,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7048.31,
-   "prev": 6975.17,
-   "pct": 1.05,
-   "asof": "12:35",
+   "px": 7006.24,
+   "prev": 6995.39,
+   "pct": 0.16,
+   "asof": "12:55",
    "live": true,
    "spark": [
     7024.02,
@@ -16249,17 +16250,21 @@
     7089.75,
     7076.18,
     7040.85,
-    7048.31
+    7062.52,
+    7041.17,
+    7051.22,
+    7012.61,
+    7006.24
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65934.39,
+   "px": 65662.39,
    "prev": 66346.97,
-   "pct": -0.62,
-   "asof": "12:40",
+   "pct": -1.03,
+   "asof": "13:05",
    "live": true,
    "spark": [
     65927.21,
@@ -16320,17 +16325,22 @@
     66204.27,
     66063.75,
     66128.24,
-    65934.39
+    65934.39,
+    65896.5,
+    65817.74,
+    65773.38,
+    65738.36,
+    65662.39
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25341.42,
+   "px": 25320.74,
    "prev": 25413.12,
-   "pct": -0.28,
-   "asof": "12:40",
+   "pct": -0.36,
+   "asof": "13:05",
    "live": true,
    "spark": [
     25282.08,
@@ -16373,7 +16383,12 @@
     25339.42,
     25313.13,
     25334.95,
-    25341.42
+    25341.42,
+    25346.02,
+    25330.6,
+    25339.24,
+    25325.19,
+    25320.74
    ]
   }
  ],
@@ -16454,33 +16469,31 @@
  },
  "news": [
   {
-   "ts": "2026-09-08T12:39:00+07:00",
+   "ts": "2026-09-08T13:10:13+07:00",
    "date": "2026-09-08",
-   "time": "12:39",
-   "src": "Katadata",
-   "t": "IHSG Naik ke Level 6.674, Saham Hapsoro RATU, RAJA, BUVA Menghijau",
+   "time": "13:10",
+   "src": "Bloomberg Technoz",
+   "t": "Saham-saham Pendorong Lesatan IHSG Siang Hari Ini",
    "tags": [
-    "BUVA",
-    "RAJA",
-    "RATU"
+    "AMMN",
+    "BBRI"
    ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9f9f999839e/ihsg-naik-ke-level-6674-saham-hapsoro-ratu-raja-buva-menghijau",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/2026_08_14-19_34_00_a80a53c0-97e5-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "IHSG Naik ke Level 6.674, Saham Hapsoro RATU, RAJA, BUVA Menghijau"
+   "url": "https://www.bloombergtechnoz.com/detail-news/120879/saham-saham-pendorong-lesatan-ihsg-siang-hari-ini",
+   "img": "https://images.bloombergtechnoz.com/data/2024/10/image-20241022075526.jpeg",
+   "t_id": "Saham-saham Pendorong Lesatan IHSG Siang Hari Ini"
   },
   {
-   "ts": "2026-09-08T12:16:00+07:00",
+   "ts": "2026-09-08T13:04:00+07:00",
    "date": "2026-09-08",
-   "time": "12:16",
-   "src": "Katadata",
-   "t": "Dividen AKR Corporindo (AKRA) Menyusut, RasioTahun Buku 2026 Turun Jadi 30%",
+   "time": "13:04",
+   "src": "IDX Channel",
+   "t": "TOWR Kantongi Kontrak Jangka Panjang Lebih dari Rp100 Triliun",
    "tags": [
-    "AKRA"
+    "TOWR"
    ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9f9a333e141/dividen-akr-corporindo-akra-menyusut-rasiotahun-buku-2026-turun-jadi-30",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/08/11/PT_AKR_Corporindo_Tbk_AKRA-2025_08_11-09_27_56_3da466d3e6290d1bdf6fef269d227a25_620x413_thumb.jpg",
-   "t_ko": "AKR Corporindo(AKRA) 배당 축소 — 2026 회계연도 배당성향 30%로 하향",
-   "t_id": "Dividen AKR Corporindo (AKRA) Menyusut, RasioTahun Buku 2026 Turun Jadi 30%"
+   "url": "https://www.idxchannel.com/market-news/towr-kantongi-kontrak-jangka-panjang-lebih-dari-rp100-triliun",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2022/08/12/TOWR.jpg",
+   "t_id": "TOWR Kantongi Kontrak Jangka Panjang Lebih dari Rp100 Triliun"
   },
   {
    "ts": "2026-09-08T12:10:22+07:00",
@@ -16509,34 +16522,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/04/29/logo-goto-dok-goto-1777462423393_169.jpeg?w=360&q=90",
    "t_ko": "Morgan Stanley, GOTO 주식 재차 대량 매수",
    "t_id": "Morgan Stanley Borong Saham GOTO Lagi"
-  },
-  {
-   "ts": "2026-09-08T11:49:00+07:00",
-   "date": "2026-09-08",
-   "time": "11:49",
-   "src": "Katadata",
-   "t": "Jurus TOWR Perkuat Cengkraman Bisnis Fiber Optic hingga Komitmen Tebar Dividen",
-   "tags": [
-    "TOWR"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9f93e1572b5/jurus-towr-perkuat-cengkraman-bisnis-fiber-optic-hingga-komitmen-tebar-dividen",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/12/06/PT_Sarana_Menara_Nusantara_Tbk-2023_12_06-13_53_08_6a9cd1fbb3782aa73fce0d843509ecf5_620x413_thumb.png",
-   "t_ko": "TOWR 광케이블 사업 지배력 강화 전략 — 배당 지급 의지도 재확인",
-   "t_id": "Jurus TOWR Perkuat Cengkeraman Bisnis Fiber Optic hingga Komitmen Tebar Dividen"
-  },
-  {
-   "ts": "2026-09-08T11:22:00+07:00",
-   "date": "2026-09-08",
-   "time": "11:22",
-   "src": "Katadata",
-   "t": "Telkom Solution Perkuat B2B ICT, Bidik Bisnis Enterprise di Asia Pasifik",
-   "tags": [
-    "TLKM"
-   ],
-   "url": "https://katadata.co.id/digital/teknologi/6a9f8d83628a6/telkom-solution-perkuat-b2b-ict-bidik-bisnis-enterprise-di-asia-pasifik",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/08/Telkom_Solution-2026_09_08-11_18_24_1cb3f329e628d09171d29d4da9382afc_620x413_thumb.jpeg",
-   "t_ko": "Telkom Solution B2B ICT 강화 — 아시아태평양 엔터프라이즈 사업 정조준",
-   "t_id": "Telkom Solution Perkuat B2B ICT, Bidik Bisnis Enterprise di Asia Pasifik"
   },
   {
    "ts": "2026-09-08T11:20:00+07:00",
@@ -16579,48 +16564,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727161106.jpeg",
    "t_ko": "Anak Krakatau 분화 국면에 브로커 집중 매수 종목",
    "t_id": "Saham Ini Diborong Broker Saat Erupsi Anak Krakatau"
-  },
-  {
-   "ts": "2026-09-08T11:06:00+07:00",
-   "date": "2026-09-08",
-   "time": "11:06",
-   "src": "Katadata",
-   "t": "Setelah Impairment Rp 2,76 Triliun, UNTR Tak Tambah Modal di Bisnis Geotermal",
-   "tags": [
-    "UNTR"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9f89b3d9cad/setelah-impairment-rp-2-76-triliun-untr-tak-tambah-modal-di-bisnis-geotermal",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/04/28/Green_Building_United_Tractors_UNTR-2025_04_28-05_55_15_216266302ef0549279ee2d6cd456f5e7_620x413_thumb.jpg",
-   "t_ko": "Rp2.76조 손상차손 이후 UNTR 지열 사업 추가 출자 없음",
-   "t_id": "Setelah Impairment Rp 2,76 Triliun, UNTR Tak Tambah Modal di Bisnis Geotermal"
-  },
-  {
-   "ts": "2026-09-08T11:05:00+07:00",
-   "date": "2026-09-08",
-   "time": "11:05",
-   "src": "Katadata",
-   "t": "Booming Data Center Dongkrak Bisnis DMAS, 75% Permintaan Lahan dari Data Center",
-   "tags": [
-    "DMAS"
-   ],
-   "url": "https://katadata.co.id/digital/teknologi/6a9f89a7a3b7e/booming-data-center-dongkrak-bisnis-dmas-75-permintaan-lahan-dari-data-center",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2024/06/05/Kota_Deltamas_Gunakan_Aspal_Campuran_Plastik-2024_06_05-06_49_57_d1a88d1d56d8eef4b8755a105dce6739_620x413_thumb.jpeg",
-   "t_ko": "데이터센터 붐이 DMAS 사업 견인 — 토지 수요 75%가 데이터센터발",
-   "t_id": "Booming Data Center Dongkrak Bisnis DMAS, 75% Permintaan Lahan dari Data Center"
-  },
-  {
-   "ts": "2026-09-08T11:00:00+07:00",
-   "date": "2026-09-08",
-   "time": "11:00",
-   "src": "Katadata",
-   "t": "MBMA Bidik Himpun Dana Lewat Depository Receipts di Hong Kong",
-   "tags": [
-    "MBMA"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6a9f8855c7c3e/mbma-bidik-himpun-dana-lewat-depository-receipts-di-hong-kong",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/04/12/PT_Merdeka_Battery_Materials_Tbk_MBMA-2023_04_12-14_28_59_2af9ef9aaa6d32873e51431d5cdd3dfb_620x413_thumb.png",
-   "t_ko": "MBMA, Hong Kong Depository Receipts 통한 자금 조달 추진",
-   "t_id": "MBMA Bidik Himpun Dana Lewat Depository Receipts di Hong Kong"
   },
   {
    "ts": "2026-09-08T10:55:00+07:00",
@@ -16666,20 +16609,6 @@
    "t_id": "Pendapatan Melesat, MPXL Balik Rugi Jadi Laba di Semester I-2026"
   },
   {
-   "ts": "2026-09-08T09:55:00+07:00",
-   "date": "2026-09-08",
-   "time": "09:55",
-   "src": "Katadata",
-   "t": "PGEO Bidik Pasokan Listrik Data Center dan AI lewat Panas Bumi",
-   "tags": [
-    "PGEO"
-   ],
-   "url": "https://katadata.co.id/finansial/korporasi/6a9f79357b393/pgeo-bidik-pasokan-listrik-data-center-dan-ai-lewat-panas-bumi",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/09/15/2025_09_15-19_42_00_a956538b-9239-11f0-b2e7-27691799e7cd_620x413_thumb.jpg",
-   "t_ko": "PGEO 지열 활용 데이터센터·AI 전력 공급 겨냥",
-   "t_id": "PGEO Bidik Pasokan Listrik Data Center dan AI lewat Panas Bumi"
-  },
-  {
    "ts": "2026-09-08T09:48:00+07:00",
    "date": "2026-09-08",
    "time": "09:48",
@@ -16721,48 +16650,6 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2021/04/20/tpia.jpg",
    "t_ko": "Chandra Asri(TPIA) 정상 가동 확인 — Anak Krakatau 화산 활동 속",
    "t_id": "Chandra Asri (TPIA) Pastikan Operasional Berjalan Normal di Tengah Aktivitas Anak Krakatau"
-  },
-  {
-   "ts": "2026-09-08T09:30:00+07:00",
-   "date": "2026-09-08",
-   "time": "09:30",
-   "src": "Bloomberg Technoz",
-   "t": "PTBA Kejar Produksi 50 Juta Ton Batu Bara hingga Akhir 2026",
-   "tags": [
-    "PTBA"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120834/ptba-kejar-produksi-50-juta-ton-batu-bara-hingga-akhir-2026",
-   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260716080617.jpg",
-   "t_ko": "PTBA 2026년 말까지 석탄 생산 5,000만톤 목표",
-   "t_id": "PTBA Kejar Produksi 50 Juta Ton Batu Bara hingga Akhir 2026"
-  },
-  {
-   "ts": "2026-09-08T09:28:44+07:00",
-   "date": "2026-09-08",
-   "time": "09:28",
-   "src": "Bloomberg Technoz",
-   "t": "Harga Emas Antam Hari Ini Turun Jadi Rp2,627 Juta/Gram",
-   "tags": [
-    "ANTM"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120835/harga-emas-antam-hari-ini-turun-jadi-rp2-627-juta-gram",
-   "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250415103736.jpeg",
-   "t_ko": "Antam 금 가격 오늘 그램당 Rp262만7,000으로 하락",
-   "t_id": "Harga Emas Antam Hari Ini Turun Jadi Rp2,627 Juta/Gram"
-  },
-  {
-   "ts": "2026-09-08T09:28:00+07:00",
-   "date": "2026-09-08",
-   "time": "09:28",
-   "src": "IDX Channel",
-   "t": "Dukung Ekosistem AI, PGEO Siapkan Pasokan Listrik dari Panas Bumi untuk Data Center",
-   "tags": [
-    "PGEO"
-   ],
-   "url": "https://www.idxchannel.com/market-news/dukung-ekosistem-ai-pgeo-siapkan-pasokan-listrik-dari-panas-bumi-untuk-data-center",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/08/pgeo_kamojang.jpeg",
-   "t_ko": "AI 생태계 지원 — PGEO 데이터센터용 지열 전력 공급 준비",
-   "t_id": "Dukung Ekosistem AI, PGEO Siapkan Pasokan Listrik dari Panas Bumi untuk Data Center"
   },
   {
    "ts": "2026-09-08T09:10:00+07:00",
@@ -16844,6 +16731,23 @@
    "t_id": "IHSG Rawan Terkoreksi Hari Ini, Cek Rekomendasi Saham HRUM hingga TPIA"
   },
   {
+   "ts": "2026-09-08T06:44:00+07:00",
+   "date": "2026-09-08",
+   "time": "06:44",
+   "src": "Katadata",
+   "t": "IHSG Rawan Turun, Saham AKRA, MDKA, HRUM, INDF Jadi Rekomendasi",
+   "tags": [
+    "AKRA",
+    "HRUM",
+    "INDF",
+    "MDKA"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6a9f4c4435eb9/ihsg-rawan-turun-saham-akra-mdka-hrum-indf-jadi-rekomendasi",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/IHSG_sesi_pertama_ditutup_naik_056_ke_6337_Foto_KatadataFauza_Sy-2026_08_14-15_00_02_d1f307d7ade0e0d7f740120c7b2c1742_620x413_thumb.jpg",
+   "t_ko": "IHSG 하락 우려 — AKRA·MDKA·HRUM·INDF 투자의견 제시",
+   "t_id": "IHSG Rawan Turun, Saham AKRA, MDKA, HRUM, INDF Jadi Rekomendasi"
+  },
+  {
    "ts": "2026-09-08T06:31:53+07:00",
    "date": "2026-09-08",
    "time": "06:31",
@@ -16915,6 +16819,21 @@
    "t_id": "Transformasi TOBA Berbuah Manis, Arus Kas Berbalik"
   },
   {
+   "ts": "2026-09-07T19:58:00+07:00",
+   "date": "2026-09-07",
+   "time": "09/07",
+   "src": "Katadata",
+   "t": "InfraNexia Telkom Gaet XLSmart Perkuat Internet di Kalimantan, Sulawesi, Sumatra",
+   "tags": [
+    "EXCL",
+    "TLKM"
+   ],
+   "url": "https://katadata.co.id/digital/teknologi/6a9eb4ec536c3/infranexia-telkom-gaet-xlsmart-perkuat-internet-di-kalimantan-sulawesi-sumatra",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/Direktur_Commercial_InfraNexia_Syaiful_Rahim_Soenaria_dan_Group-2026_09_07-19_57_54_a5a90a34f198483d48428475cea12b7a_620x413_thumb.png",
+   "t_ko": "Telkom InfraNexia, XLSmart와 협력 — Kalimantan·Sulawesi·Sumatra 인터넷 강화",
+   "t_id": "InfraNexia Telkom Gaet XLSmart Perkuat Internet di Kalimantan, Sulawesi, Sumatra"
+  },
+  {
    "ts": "2026-09-07T19:52:00+07:00",
    "date": "2026-09-07",
    "time": "09/07",
@@ -16941,6 +16860,34 @@
    "img": "https://cdn1-production-images-kly.akamaized.net/Uzy4pYV4VSnyg8hXhZWEd4vKD4U=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3267162/original/045706800_1602658744-20201014-IHSG-Dibuka-di-Zona-Merah-angga-5.jpg",
    "t_ko": "BUMI 9/7 4.76% 상승 — 애널리스트 코멘트",
    "t_id": "Saham BUMI 7 September 2026 Menguat 4,76%, Ini Kata Analis"
+  },
+  {
+   "ts": "2026-09-07T19:35:00+07:00",
+   "date": "2026-09-07",
+   "time": "09/07",
+   "src": "Katadata",
+   "t": "Kejagung Tetapkan Toba Pulp INRU Tersangka Korupsi Transfer dan Manipulasi Harga",
+   "tags": [
+    "INRU"
+   ],
+   "url": "https://katadata.co.id/finansial/korporasi/6a9eafa5dd39e/kejagung-tetapkan-toba-pulp-inru-tersangka-korupsi-transfer-dan-manipulasi-harga",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2020/02/06/2020_02_06-16_51_17_aeab81b40f5a002f2e5f9d55c0c3250c_620x413_thumb.jpg",
+   "t_ko": "검찰, Toba Pulp(INRU) 이전가격·가격조작 부패 혐의 피의자 입건",
+   "t_id": "Kejagung Tetapkan Toba Pulp INRU Tersangka Korupsi Transfer dan Manipulasi Harga"
+  },
+  {
+   "ts": "2026-09-07T19:30:00+07:00",
+   "date": "2026-09-07",
+   "time": "09/07",
+   "src": "Katadata",
+   "t": "PTBA Bakal Pangkas Separuh Anak Usaha dalam 3 Tahun, Ini Rencananya",
+   "tags": [
+    "PTBA"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6a9eae7beecea/ptba-bakal-pangkas-separuh-anak-usaha-dalam-3-tahun-ini-rencananya",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2024/03/04/2024_03_04-21_00_04_84b83996-da5f-11ee-b472-0242ac14000d_620x413_thumb.jpg",
+   "t_ko": "PTBA 3년 내 자회사 절반 감축 계획 — 세부 방안",
+   "t_id": "PTBA Bakal Pangkas Separuh Anak Usaha dalam 3 Tahun, Ini Rencananya"
   },
   {
    "ts": "2026-09-07T19:02:15+07:00",
@@ -17198,6 +17145,49 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-08T13:20:00+07:00",
+   "date": "2026-09-08",
+   "time": "13:20",
+   "src": "Bloomberg Technoz",
+   "t": "Ekonom: Erupsi Anak Krakatau Pengaruhi Pertumbuhan di Q3-2026",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120870/ekonom-erupsi-anak-krakatau-pengaruhi-pertumbuhan-di-q3-2026",
+   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260906141932.jpeg",
+   "t_id": "Ekonom: Erupsi Anak Krakatau Pengaruhi Pertumbuhan di Q3-2026"
+  },
+  {
+   "ts": "2026-09-08T13:15:00+07:00",
+   "date": "2026-09-08",
+   "time": "13:15",
+   "src": "Media Indonesia",
+   "t": "Ancaman Kebakaran Hutan dan Gelombang Panas Terhadap Kualitas Udara Global",
+   "tags": [],
+   "url": "https://mediaindonesia.com/humaniora/930888/ancaman-kebakaran-hutan-dan-gelombang-panas-terhadap-kualitas-udara-global",
+   "t_id": "Ancaman Kebakaran Hutan dan Gelombang Panas Terhadap Kualitas Udara Global"
+  },
+  {
+   "ts": "2026-09-08T13:15:00+07:00",
+   "date": "2026-09-08",
+   "time": "13:15",
+   "src": "Republika",
+   "t": "Harga Beras Jadi Sorotan, HAP dan HET Bakal Dievaluasi",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl16j5423/harga-beras-jadi-sorotan-hap-dan-het-bakal-dievaluasi",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/036121100-1770885515-830-556.jpg",
+   "t_id": "Harga Beras Jadi Sorotan, HAP dan HET Bakal Dievaluasi"
+  },
+  {
+   "ts": "2026-09-08T13:06:10+07:00",
+   "date": "2026-09-08",
+   "time": "13:06",
+   "src": "Jawa Pos",
+   "t": "Zulhas: Pemerintah Ganti Nama dan Kemasan SPHP jadi 'Beras Kita'",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609080256/zulhas-pemerintah-ganti-nama-dan-kemasan-sphp-jadi-beras-kita",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/08/pemerintah-menyepakati-mengganti-nama-dan-kemasan-beras-stabilisasi-pasokan-dan-harga-pangan-sphp-menjadi-beras-kita-sebagai-identitas-baru-antara-3gxdq.webp",
+   "t_id": "Zulhas: Pemerintah Ganti Nama dan Kemasan SPHP jadi 'Beras Kita'"
+  },
+  {
    "ts": "2026-09-08T13:00:00+07:00",
    "date": "2026-09-08",
    "time": "13:00",
@@ -17207,6 +17197,15 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/120856/smelter-aluminium-china-di-ri-diramal-kerek-emisi-50-juta-ton-co",
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260908103359.jpg",
    "t_id": "Smelter Aluminium China di RI Diramal Kerek Emisi 50 Juta Ton CO₂"
+  },
+  {
+   "ts": "2026-09-08T13:00:00+07:00",
+   "date": "2026-09-08",
+   "time": "13:00",
+   "src": "Media Indonesia",
+   "t": "51.591 Rumah Terdampak Gempa M7,7 NTT Selesai Diverifikasi BNPB",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/930887/51591-rumah-terdampak-gempa-m77-ntt-selesai-diverifikasi-bnpb"
   },
   {
    "ts": "2026-09-08T12:52:38+07:00",
@@ -17237,17 +17236,6 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8653611/harga-emas-diramal-naik-ke-rp-3-juta-lagi-ini-perkiraan-waktunya",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/10/21/harga-emas-antam-meroket-hari-ini-nyaris-rp-25-juta-per-gram-1761021329634_169.jpeg?w=360&q=90",
    "t_id": "Harga Emas Diramal Naik ke Rp 3 Juta Lagi, Ini Perkiraan Waktunya"
-  },
-  {
-   "ts": "2026-09-08T12:46:00+07:00",
-   "date": "2026-09-08",
-   "time": "12:46",
-   "src": "Katadata",
-   "t": "DPR Minta Pemerintah Kaji Wacana Penggabungan BMKG dan Badan Geologi",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/nasional/6a9fa11c69f77/dpr-minta-pemerintah-kaji-wacana-penggabungan-bmkg-dan-badan-geologi",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/21/2026_07_21-13_19_00_3407ec3a-84d0-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "DPR Minta Pemerintah Kaji Wacana Penggabungan BMKG dan Badan Geologi"
   },
   {
    "ts": "2026-09-08T12:45:18+07:00",
@@ -17299,16 +17287,6 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8653574/puan-soroti-lahan-bekas-karhutla-jadi-kebun-sawit-harus-segera-diselidiki",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/ketua-dpr-puan-maharani-tengah-adrialdetik-1788841627426_169.jpeg?w=360&q=90",
    "t_id": "Puan Soroti Lahan Bekas Karhutla Jadi Kebun Sawit: Harus Segera Diselidiki"
-  },
-  {
-   "ts": "2026-09-08T12:38:00+07:00",
-   "date": "2026-09-08",
-   "time": "12:38",
-   "src": "Katadata",
-   "t": "Letusan Anak Krakatau: Mampukah Mendinginkan Bumi?",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6a9f9f52d93db/letusan-anak-krakatau-mampukah-mendinginkan-bumi",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/Gunung_Anak_Krakatau-2026_09_07-09_06_38_ecc9f6bbe9587d53005c476496573f9b_620x413_thumb.png"
   },
   {
    "ts": "2026-09-08T12:31:00+07:00",
@@ -17364,18 +17342,6 @@
    "url": "https://www.bloomberg.com/news/articles/2026-09-08/europe-gas-rally-dividing-stock-market-winter-looms",
    "t_ko": "유럽 가스 랠리가 증시 분열 — 겨울 앞두고",
    "t_id": "Reli Harga Gas Eropa Belah Pasar Saham Jelang Musim Dingin"
-  },
-  {
-   "ts": "2026-09-08T12:12:00+07:00",
-   "date": "2026-09-08",
-   "time": "12:12",
-   "src": "Katadata",
-   "t": "Yen Makin Perkasa, Tembus Level Terkuat Tahun Ini",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6a9f994b22861/yen-makin-perkasa-tembus-level-terkuat-tahun-ini",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/08/Yen_Jepang-2026_09_08-12_11_46_72da1778a3299c4f9514094a3736ddab_620x413_thumb.jpg",
-   "t_ko": "엔화 강세 지속 — 올해 최강 수준 돌파",
-   "t_id": "Yen Makin Perkasa, Tembus Level Terkuat Tahun Ini"
   },
   {
    "ts": "2026-09-08T12:11:44+07:00",
@@ -17450,18 +17416,6 @@
    "t_id": "Harga Mulai Rp145 Juta, Ini 5 Rumah Murah di Kabupaten Kendal"
   },
   {
-   "ts": "2026-09-08T11:58:00+07:00",
-   "date": "2026-09-08",
-   "time": "11:58",
-   "src": "Katadata",
-   "t": "Anak Krakatau Erupsi, Bagaimana Nasib Badak Jawa di Ujung Kulon?",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/ekonomi-sirkular/6a9f95da1659e/anak-krakatau-erupsi-bagaimana-nasib-badak-jawa-di-ujung-kulon",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2022/10/04/Badak_Jawa-2022_10_04-13_18_16_895b9b64e6d461ae0be754b47f554d3d_620x413_thumb.jpg",
-   "t_ko": "Anak Krakatau 분화 — Ujung Kulon 자바코뿔소 운명은",
-   "t_id": "Anak Krakatau Erupsi, Bagaimana Nasib Badak Jawa di Ujung Kulon?"
-  },
-  {
    "ts": "2026-09-08T11:56:00+07:00",
    "date": "2026-09-08",
    "time": "11:56",
@@ -17484,18 +17438,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/02/05/EMAS-OK-1999769027.jpg",
    "t_ko": "9월 8일 화요일 금 시세 업데이트 — Antam·Galeri24·UBS",
    "t_id": "Update Harga Emas Selasa 8 September: Antam, Galeri24, dan UBS"
-  },
-  {
-   "ts": "2026-09-08T11:54:00+07:00",
-   "date": "2026-09-08",
-   "time": "11:54",
-   "src": "Katadata",
-   "t": "Erupsi Anak Krakatau Berpotensi Tunda Ekspor-Impor via Soetta hingga Rp 2,9 T",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6a9f9507452da/erupsi-anak-krakatau-berpotensi-tunda-ekspor-impor-via-soetta-hingga-rp-2-9-t",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/Bandara_Soekarno_Hatta_Ditutup_Imbas_Abu_Vulkanik_Erupsi_Gunung-2026_09_07-20_49_55_f7e442731a5437ba96f68025d383909a_620x413_thumb.jpg",
-   "t_ko": "Anak Krakatau 분화, Soetta 경유 수출입 최대 Rp2.9조 지연 우려",
-   "t_id": "Erupsi Anak Krakatau Berpotensi Tunda Ekspor-Impor via Soetta hingga Rp 2,9 T"
   },
   {
    "ts": "2026-09-08T11:52:30+07:00",
@@ -17703,9 +17645,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.11",
-   "d": 0.04,
-   "ytd": 12.87,
+   "v": "13.10",
+   "d": -0.04,
+   "ytd": 12.77,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17738,9 +17680,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.81",
-   "d": -0.36,
-   "ytd": 0.54,
+   "v": "98.78",
+   "d": -0.38,
+   "ytd": 0.51,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17750,9 +17692,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "93.39",
-   "d": 2.09,
-   "ytd": 62.64,
+   "v": "93.76",
+   "d": 2.49,
+   "ytd": 63.29,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17762,9 +17704,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,470.4",
-   "d": -0.14,
-   "ytd": 3.35,
+   "v": "4,455.5",
+   "d": -0.47,
+   "ytd": 3.0,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17786,9 +17728,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,714",
-   "d": 0.08,
-   "ytd": 0.19,
+   "v": "16,698",
+   "d": -0.02,
+   "ytd": 0.1,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20263,6 +20205,17 @@
   }
  ],
  "announcements": [
+  {
+   "ts": "2026-09-08T12:57:46+07:00",
+   "date": "2026-09-08",
+   "time": "12:57",
+   "t": "VISI",
+   "type": "STOCK",
+   "title": "Pemanggilan Rapat Umum Pemegang Saham Luar Biasa dan Independen",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e6726936d4_88044975b9.pdf",
+   "title_id": "Pemanggilan Rapat Umum Pemegang Saham Luar Biasa dan Independen",
+   "title_ko": "임시·독립 주주총회 소집 통지"
+  },
   {
    "ts": "2026-09-08T12:08:25+07:00",
    "date": "2026-09-08",
@@ -22885,8 +22838,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-08 12:30",
-  "pc_age_min": 30,
+  "idx_from_pc": "2026-09-08 13:18",
+  "pc_age_min": 4,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -24153,9 +24106,9 @@
   },
   "model": "gemini-2.5-flash-lite",
   "index": {
-   "ko": "대형주인 BBCA 강세와 금융 및 소재 등 주요 업종의 상승세에 힘입어 IHSG 0.84% 상승.",
-   "id": "IHSG menguat 0,84% didorong oleh penguatan saham berkapitalisasi besar BBCA serta kenaikan sektor keuangan dan material.",
-   "ts": "2026-09-08T13:00:59.758985+07:00"
+   "ko": "대형주인 AMMN와 BBCA의 강세 및 금융·소재 업종의 상승에 힘입어 IHSG 0.84% 상승.",
+   "id": "IHSG menguat 0,84% didorong oleh penguatan saham berkapitalisasi besar AMMN dan BBCA serta kenaikan sektor keuangan dan material.",
+   "ts": "2026-09-08T13:22:52.437693+07:00"
   }
  },
  "mcap": [
@@ -24352,24 +24305,6 @@
    "srcs": 0
   },
   {
-   "t": "AKRA",
-   "n": "AKR Corporindo",
-   "px": 1515.0,
-   "pct": 4.48,
-   "val": 36139413333.33333,
-   "mcap": 30411314019000.0,
-   "ratio": 1.7,
-   "ev_ko": "실적·배당",
-   "ev_id": "Kinerja & dividen",
-   "hl": "AKR Corporindo(AKRA) 배당 축소 — 2026 회계연도 배당성향 30%로 하향",
-   "url": "https://katadata.co.id/finansial/bursa/6a9f9a333e141/dividen-akr-corporindo-akra-menyusut-rasiotahun-buku-2026-turun-jadi-30",
-   "score": 57.1,
-   "s_news": 70,
-   "s_size": 62,
-   "s_surge": 35,
-   "srcs": 1
-  },
-  {
    "t": "TLKM",
    "n": "Telkom Indonesia Tbk",
    "px": 2640.0,
@@ -24385,24 +24320,6 @@
    "s_news": 70,
    "s_size": 85,
    "s_surge": 0,
-   "srcs": 1
-  },
-  {
-   "t": "TOWR",
-   "n": "Sarana Menara Nusantara",
-   "px": 474.0,
-   "pct": 4.87,
-   "val": 46767356200.0,
-   "mcap": 28012501168494.0,
-   "ratio": 1.4,
-   "ev_ko": "실적·배당",
-   "ev_id": "Kinerja & dividen",
-   "hl": "TOWR 광케이블 사업 지배력 강화 전략 — 배당 지급 의지도 재확인",
-   "url": "https://katadata.co.id/finansial/bursa/6a9f93e1572b5/jurus-towr-perkuat-cengkraman-bisnis-fiber-optic-hingga-komitmen-tebar-dividen",
-   "score": 52.4,
-   "s_news": 70,
-   "s_size": 61,
-   "s_surge": 20,
    "srcs": 1
   },
   {
@@ -24439,6 +24356,42 @@
    "s_news": 90,
    "s_size": 43,
    "s_surge": 0,
+   "srcs": 1
+  },
+  {
+   "t": "PSAB",
+   "n": "J RESOURCES ASIA PASIFIK",
+   "px": 575.0,
+   "pct": 2.68,
+   "val": 20066292500.0,
+   "mcap": 15214500000000.0,
+   "ratio": 0.3,
+   "ev_ko": "실적·배당",
+   "ev_id": "Kinerja & dividen",
+   "hl": "상장사 PSAB 주당 Rp30 배당 — 지급 일정",
+   "url": "https://www.liputan6.com/saham/read/8286819/emiten-psab-tebar-dividen-rp-30-per-saham-simak-jadwal-lengkapnya",
+   "score": 48.4,
+   "s_news": 80,
+   "s_size": 55,
+   "s_surge": 0,
+   "srcs": 1
+  },
+  {
+   "t": "MEDS",
+   "n": "Hetzer Medical Indonesia",
+   "px": 110.0,
+   "pct": 13.4,
+   "val": 136352328200.0,
+   "mcap": 171875000000.0,
+   "ratio": 18.9,
+   "ev_ko": "경영진 변동",
+   "ev_id": "Manajemen",
+   "hl": "Anak Krakatau 분화 국면에 브로커 집중 매수 종목",
+   "url": "https://www.bloombergtechnoz.com/detail-news/120862/saham-ini-diborong-broker-saat-erupsi-anak-krakatau",
+   "score": 47.8,
+   "s_news": 40,
+   "s_size": 6,
+   "s_surge": 100,
    "srcs": 1
   }
  ]
