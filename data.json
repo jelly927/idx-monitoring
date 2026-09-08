@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 21:30",
+ "updated": "2026-09-08 21:44",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,342 · 20:09 Yahoo",
- "idr_per_krw": 13.1286,
+ "fx_basis": "13.13 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,342 · 21:34 Yahoo",
+ "idr_per_krw": 13.1279,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -335,10 +335,10 @@
   "m1": 5.04,
   "value_idr": 15709984999251,
   "volume": 35150343143,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-08 18:11",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-08 18:11",
   "rank_asof": null,
   "rank_date": "2026-09-08",
-  "adv": 390,
+  "adv": 389,
   "dec": 253,
   "unch": 190,
   "foreign_net_idr": 378259109581.2046,
@@ -3983,22 +3983,6 @@
    "lo": 650.0,
    "ratio": 1.1,
    "fnet": -2278093712.7015233,
-   "live": 0
-  },
-  {
-   "t": "AALI",
-   "n": "Astra Agro Lestari",
-   "px": 8525.0,
-   "prev": 8375.0,
-   "pct": 1.79,
-   "val": 7239487500.000001,
-   "vol": 855900.0,
-   "sh": 1924688333,
-   "mcap": 16407968038825.0,
-   "hi": 8525.0,
-   "lo": 8325.0,
-   "ratio": 0.5,
-   "fnet": 2001990283.9116719,
    "live": 0
   },
   {
@@ -14662,11 +14646,11 @@
   {
    "name": "필수소비재",
    "name_id": "Konsumen Primer",
-   "n": 123,
-   "adv": 66,
+   "n": 122,
+   "adv": 65,
    "dec": 34,
-   "val": 1179569328966.667,
-   "mcap": 1111438212868066.0,
+   "val": 1172329841466.667,
+   "mcap": 1095030244829241.0,
    "top": [
     {
      "t": "HMSP",
@@ -14709,7 +14693,7 @@
      "pct": 1.31
     }
    ],
-   "pct": 1.34
+   "pct": 1.33
   },
   {
    "name": "산업재",
@@ -15029,10 +15013,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7680.43,
+   "px": 7686.47,
    "prev": 7717.81,
-   "pct": -0.48,
-   "asof": "21:25",
+   "pct": -0.41,
+   "asof": "21:40",
    "live": true,
    "spark": [
     7705.24,
@@ -15046,17 +15030,20 @@
     7679.5,
     7681.32,
     7685.92,
-    7680.43
+    7682.37,
+    7685.12,
+    7684.78,
+    7686.47
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26381.28,
+   "px": 26406.4,
    "prev": 26506.99,
-   "pct": -0.47,
-   "asof": "21:25",
+   "pct": -0.38,
+   "asof": "21:40",
    "live": true,
    "spark": [
     26482.08,
@@ -15070,17 +15057,20 @@
     26369.36,
     26386.01,
     26405.28,
-    26381.28
+    26392.81,
+    26392.43,
+    26390.89,
+    26406.4
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52730.77,
+   "px": 52781.64,
    "prev": 53406.91,
-   "pct": -1.27,
-   "asof": "21:25",
+   "pct": -1.17,
+   "asof": "21:40",
    "live": true,
    "spark": [
     52962.24,
@@ -15094,7 +15084,10 @@
     52769.42,
     52759.42,
     52786.01,
-    52730.77
+    52726.49,
+    52752.55,
+    52788.82,
+    52781.64
    ]
   },
   {
@@ -16171,6 +16164,48 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-08T21:39:42+07:00",
+   "date": "2026-09-08",
+   "time": "21:39",
+   "src": "Detik",
+   "t": "Perusahaan Multinasional Butuh Staf Paham Pajak Lintas Negara, Belajar di Sini!",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8654502/perusahaan-multinasional-butuh-staf-paham-pajak-lintas-negara-belajar-di-sini",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/detikevent-brevet-pajak-1788878364678_169.jpeg?w=360&q=90",
+   "t_id": "Perusahaan Multinasional Butuh Staf Paham Pajak Lintas Negara, Belajar di Sini!",
+   "t_ko": "다국적 기업에는 국경 간 세금을 이해하는 직원이 필요합니다. 여기에서 알아보십시오!"
+  },
+  {
+   "ts": "2026-09-08T21:36:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:36",
+   "src": "Media Indonesia",
+   "t": "Karhutla di Desa Bintet Bangka Hanguskan 30 Hektare Lahan dan 2 Rumah",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931215/karhutla-di-desa-bintet-bangka-hanguskan-30-hektare-lahan-dan-2-rumah",
+   "t_id": "Karhutla di Desa Bintet Bangka Hanguskan 30 Hektare Lahan dan 2 Rumah"
+  },
+  {
+   "ts": "2026-09-08T21:34:29+07:00",
+   "date": "2026-09-08",
+   "time": "21:34",
+   "src": "Republika",
+   "t": "Purbaya Bantah Masyarakat Ramai-Ramai Makan Tabungan",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl1v5h370/purbaya-bantah-masyarakat-ramairamai-makan-tabungan",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/purbaya-mengaku-menikmati-hidangan-khas-yang_260717145010-588.jpeg"
+  },
+  {
+   "ts": "2026-09-08T21:27:00+07:00",
+   "date": "2026-09-08",
+   "time": "21:27",
+   "src": "Media Indonesia",
+   "t": "Karhutla di Wilayah IKN Terkendali, Lokasi Jauh dari KIPP",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931214/karhutla-di-wilayah-ikn-terkendali-lokasi-jauh-dari-kipp",
+   "t_id": "Karhutla di Wilayah IKN Terkendali, Lokasi Jauh dari KIPP"
+  },
+  {
    "ts": "2026-09-08T21:25:00+07:00",
    "date": "2026-09-08",
    "time": "21:25",
@@ -16217,11 +16252,11 @@
    "date": "2026-09-08",
    "time": "21:16",
    "src": "Republika",
-   "t": "Pertamina Sebut Tak Ada Komplain Signifikan dari Pengguna B50",
+   "t": "Pertamina Sebut tak Ada Komplain Signifikan dari Pengguna B50",
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl1uao490/pertamina-sebut-tak-ada-komplain-signifikan-dari-pengguna-b50",
    "img": "https://static.republika.co.id/uploads/images/detailnews/050628200-1783597939-830-556.jpg",
-   "t_id": "Pertamina Sebut Tak Ada Komplain Signifikan dari Pengguna B50"
+   "t_id": "Pertamina Sebut tak Ada Komplain Signifikan dari Pengguna B50"
   },
   {
    "ts": "2026-09-08T21:09:00+07:00",
@@ -16338,16 +16373,6 @@
    "t_id": "Pemda Bisa Pinjam ke SMI, Bayarnya Pakai DBH"
   },
   {
-   "ts": "2026-09-08T20:35:00+07:00",
-   "date": "2026-09-08",
-   "time": "20:35",
-   "src": "Media Indonesia",
-   "t": "Dana Pensiun Jiwasraya, Hak Pekerja Tidak Boleh Raib di Tengah Likuidasi",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931198/dana-pensiun-jiwasraya-hak-pekerja-tidak-boleh-raib-di-tengah-likuidasi-",
-   "t_id": "Dana Pensiun Jiwasraya, Hak Pekerja Tidak Boleh Raib di Tengah Likuidasi"
-  },
-  {
    "ts": "2026-09-08T20:34:24+07:00",
    "date": "2026-09-08",
    "time": "20:34",
@@ -16456,38 +16481,6 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl1qj7522/ekonomi-kreator-tumbuh-6-juta-kreator-produksi-400-ribu-templat-per-hari",
    "img": "https://static.republika.co.id/uploads/images/detailnews/kreator-konten-aleta-novianda-mengatakan-membangun-bisnis-di-media_260727131200-185.jpeg"
-  },
-  {
-   "ts": "2026-09-08T19:52:22+07:00",
-   "date": "2026-09-08",
-   "time": "19:52",
-   "src": "Medcom",
-   "t": "Cara Memilih Asuransi Mobil yang Tepat, Jangan Cuma Lihat Premi",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/nbw5nERK-cara-memilih-asuransi-mobil-yang-tepat-jangan-cuma-lihat-premi",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840853/ZIPYJOycx4.jpeg?w=720",
-   "t_id": "Cara Memilih Asuransi Mobil yang Tepat, Jangan Cuma Lihat Premi"
-  },
-  {
-   "ts": "2026-09-08T19:48:30+07:00",
-   "date": "2026-09-08",
-   "time": "19:48",
-   "src": "Republika",
-   "t": "Purbaya: Serapan Anggaran MBG Maksimal Rp240 Triliun",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl1q8u370/purbaya-serapan-anggaran-mbg-maksimal-rp240-triliun",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/067355000-1786706139-830-556.jpg",
-   "t_id": "Purbaya: Serapan Anggaran MBG Maksimal Rp240 Triliun"
-  },
-  {
-   "ts": "2026-09-08T19:47:28+07:00",
-   "date": "2026-09-08",
-   "time": "19:47",
-   "src": "Republika",
-   "t": "Purbaya: Dapur MBG Bermasalah, Anggaran Bisa Dipangkas",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl1q74349/purbaya-dapur-mbg-bermasalah-anggaran-bisa-dipangkas",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/059150800-1785818178-830-556.jpg"
   }
  ],
  "kisi_news": [
@@ -16661,9 +16654,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.13",
-   "d": 0.18,
-   "ytd": 13.02,
+   "v": "13.12",
+   "d": 0.13,
+   "ytd": 12.97,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16673,9 +16666,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.794%",
-   "d": 0.21,
-   "ytd": 15.16,
+   "v": "4.792%",
+   "d": 0.17,
+   "ytd": 15.11,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -16696,9 +16689,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.87",
-   "d": -0.3,
-   "ytd": 0.6,
+   "v": "98.82",
+   "d": -0.35,
+   "ytd": 0.55,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16708,9 +16701,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "93.45",
-   "d": 2.15,
-   "ytd": 62.75,
+   "v": "93.20",
+   "d": 1.88,
+   "ytd": 62.31,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16720,9 +16713,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,444.0",
-   "d": -0.73,
-   "ytd": 2.74,
+   "v": "4,442.3",
+   "d": -0.77,
+   "ytd": 2.7,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16744,9 +16737,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,801",
-   "d": 0.6,
-   "ytd": 0.71,
+   "v": "16,783",
+   "d": 0.5,
+   "ytd": 0.61,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -22671,7 +22664,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-08 18:11",
-  "pc_age_min": 199,
+  "pc_age_min": 213,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
