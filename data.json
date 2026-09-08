@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-08 08:37",
+ "updated": "2026-09-08 08:48",
  "delay_min": 0,
- "fx_basis": "13.17 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,339 · 08:34 Yahoo",
- "idr_per_krw": 13.1655,
+ "fx_basis": "13.17 IDR/KRW · USD/IDR 17,631 · USD/KRW 1,338 · 08:36 Yahoo",
+ "idr_per_krw": 13.1734,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -91,7 +91,7 @@
   "m1": 3.28,
   "value_idr": 13700648900792,
   "volume": 35580199205,
-  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-08 08:25",
+  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-08 08:44",
   "rank_asof": null,
   "rank_date": "2026-09-07",
   "adv": 300,
@@ -15023,10 +15023,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7080.28,
+   "px": 7083.5,
    "prev": 6975.17,
-   "pct": 1.51,
-   "asof": "08:15",
+   "pct": 1.55,
+   "asof": "08:25",
    "live": true,
    "spark": [
     7024.02,
@@ -15044,17 +15044,19 @@
     7077.79,
     7077.7,
     7079.49,
-    7080.28
+    7079.73,
+    7076.16,
+    7083.5
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 66532.69,
+   "px": 66514.3,
    "prev": 66346.97,
-   "pct": 0.28,
-   "asof": "08:20",
+   "pct": 0.25,
+   "asof": "08:30",
    "live": true,
    "spark": [
     65927.21,
@@ -15073,25 +15075,22 @@
     66640.34,
     66625.27,
     66547.09,
-    66532.69
+    66468.18,
+    66466.51,
+    66514.3
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25413.12,
-   "prev": 25650.87,
-   "pct": -0.93,
-   "asof": "09/06 종가",
-   "live": false,
+   "px": 25334.49,
+   "prev": 25413.12,
+   "pct": -0.31,
+   "asof": "08:30",
+   "live": true,
    "spark": [
-    25566.99,
-    25329.73,
-    25311.21,
-    25213.31,
-    25650.87,
-    25413.12
+    25334.49
    ]
   }
  ],
@@ -15172,6 +15171,18 @@
  },
  "news": [
   {
+   "ts": "2026-09-08T08:40:00+07:00",
+   "date": "2026-09-08",
+   "time": "08:40",
+   "src": "Bloomberg Technoz",
+   "t": "Operasional TPIA Tak Terganggu Erupsi Anak Krakatau",
+   "tags": [
+    "TPIA"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/120827/operasional-tpia-tak-terganggu-erupsi-anak-krakatau",
+   "img": "https://images.bloombergtechnoz.com/data/2024/11/image-20241121073650.jpeg"
+  },
+  {
    "ts": "2026-09-08T08:32:56+07:00",
    "date": "2026-09-08",
    "time": "08:32",
@@ -15184,8 +15195,8 @@
    ],
    "url": "https://finance.detik.com/bursa-dan-valas/d-8653192/simak-rekomendasi-saham-saat-ihsg-loyo",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/bursa-dan-valas-1788830401-1788830402565.jpeg?w=360&q=90",
-   "t_id": "Simak Rekomendasi Saham saat IHSG Loyo",
-   "t_ko": "IHSG가 부진할 때 주식 추천을 확인하세요"
+   "t_ko": "IHSG가 부진할 때 주식 추천을 확인하세요",
+   "t_id": "Simak Rekomendasi Saham saat IHSG Loyo"
   },
   {
    "ts": "2026-09-08T08:19:06+07:00",
@@ -15851,6 +15862,48 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/9ZuF5oM121rlBegnw41DQS8U8Tw=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3893145/original/056566800_1641196873-20220103-Pembukaan_Awal_Tahun_2022_IHSG_Menguat-2.jpg",
    "t_ko": "Adhi Karya, PTPP와의 합병 추진설에 입장 표명",
    "t_id": "Adhi Karya Buka Suara Soal Rencana Merger dengan PTPP"
+  },
+  {
+   "ts": "2026-08-24T08:33:00+07:00",
+   "date": "2026-08-24",
+   "time": "08/24",
+   "src": "Tempo",
+   "t": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1",
+   "tags": [
+    "AREA"
+   ],
+   "url": "https://bisnis.tempo.co/read/2117248/pt-pertamina-patra-niaga-ru-cilacap-buka-tender-penggantian-column-assy-11c-1",
+   "img": "https://statik.tempo.co/data/2026/08/10/id_1485829/1485829_720.jpg",
+   "t_ko": "Pertamina Patra Niaga Cilacap 정유공장, Column Assy 11C-1 교체 입찰 공고",
+   "t_id": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1"
+  },
+  {
+   "ts": "2026-08-10T18:35:31+07:00",
+   "date": "2026-08-10",
+   "time": "08/10",
+   "src": "Tempo",
+   "t": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://bisnis.tempo.co/read/2117152/bank-mandiri-gandeng-paramount-dorong-pertumbuhan-properti-berkelanjutan",
+   "img": "https://statik.tempo.co/data/2026/08/10/id_1485793/1485793_720.jpg",
+   "t_ko": "Bank Mandiri, Paramount와 제휴 — 지속가능 부동산 성장 추진",
+   "t_id": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan"
+  },
+  {
+   "ts": "2026-08-07T14:18:08+07:00",
+   "date": "2026-08-07",
+   "time": "08/07",
+   "src": "Tempo",
+   "t": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN",
+   "tags": [
+    "BKSL"
+   ],
+   "url": "https://bisnis.tempo.co/read/2116937/pemkab-bogor-serah-terima-psu-sentul-city-rampung-tinggal-tunggu-sertifikat-bpn",
+   "img": "https://statik.tempo.co/data/2026/08/07/id_1485550/1485550_720.jpg",
+   "t_ko": "Bogor 군청, Sentul City 공공시설(PSU) 인수 완료 — BPN 등기 대기",
+   "t_id": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN"
   }
  ],
  "market_news": [
@@ -15863,7 +15916,7 @@
    "tags": [],
    "url": "https://www.medcom.id/gaya/fitness-health/eN446Y2N-abu-vulkanik-anak-krakatau-beterbangan-ini-pakaian-yang-bisa-lindungi-kulit",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/08/1840639/VGtQWF10SO.jpg?w=720",
-   "t_ko": "날아다니는 크라카토아 아이들의 화산재, 피부를 보호할 수 있는 옷이다",
+   "t_ko": "Anak Krakatau 화산재 확산 — 피부 보호에 적합한 복장",
    "t_id": "Abu Vulkanik Anak Krakatau Beterbangan, Ini Pakaian yang Bisa Lindungi Kulit"
   },
   {
@@ -15875,6 +15928,7 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609080090/dampak-erupsi-anak-krakatau-dan-gangguan-logistik-pada-rupiah",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/05/13/VgvTdmd5GM4KMfJBTNj1nhUpykwUmfhjCin39Ieu.webp",
+   "t_ko": "Anak Krakatau 분화와 물류 차질이 Rupiah에 미치는 영향",
    "t_id": "Dampak Erupsi Anak Krakatau dan Gangguan Logistik pada Rupiah"
   },
   {
@@ -15885,7 +15939,9 @@
    "t": "17 Perjalanan KRL Dibatalkan Imbas Perawatan Armada Buatan INKA",
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8653186/17-perjalanan-krl-dibatalkan-imbas-perawatan-armada-buatan-inka",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/29/krl-baru-seri-cli-225-buatan-inka-resmi-beroperasi-per-selasa-1612-jabbar-ramdhanidetikcom-1766995985039_169.jpeg?w=360&q=90"
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/29/krl-baru-seri-cli-225-buatan-inka-resmi-beroperasi-per-selasa-1612-jabbar-ramdhanidetikcom-1766995985039_169.jpeg?w=360&q=90",
+   "t_ko": "INKA 제작 차량 정비로 KRL 17개 운행 취소",
+   "t_id": "17 Perjalanan KRL Dibatalkan Imbas Perawatan Armada Buatan INKA"
   },
   {
    "ts": "2026-09-08T08:24:56+07:00",
@@ -15896,6 +15952,7 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120832/arah-rupiah-kala-harga-minyak-mahal-dan-dolar-as-lemah",
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171645.jpeg",
+   "t_ko": "유가 강세·달러 약세 국면의 Rupiah 향방",
    "t_id": "Arah Rupiah Kala Harga Minyak Mahal dan Dolar AS Lemah"
   },
   {
@@ -15907,6 +15964,7 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/120829/rangkuman-rekomendasi-saham-hari-ini-8-september-2026",
    "img": "https://images.bloombergtechnoz.com/data/2023/06/image-20230609174904.jpg",
+   "t_ko": "오늘의 투자의견 종합, 2026년 9월 8일",
    "t_id": "Rangkuman Rekomendasi Saham Hari Ini, 8 September 2026"
   },
   {
@@ -15941,7 +15999,9 @@
    "t": "Kemenhub Ungkap Biang Kerok Kemacetan Panjang Pelabuhan Ketapang",
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8653167/kemenhub-ungkap-biang-kerok-kemacetan-panjang-pelabuhan-ketapang",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/antrean-pelabuhan-ketapang-1788755236728_169.jpeg?w=360&q=90"
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/antrean-pelabuhan-ketapang-1788755236728_169.jpeg?w=360&q=90",
+   "t_ko": "교통부, Ketapang 항만 장기 정체 원인 지목",
+   "t_id": "Kemenhub Ungkap Biang Kerok Kemacetan Panjang Pelabuhan Ketapang"
   },
   {
    "ts": "2026-09-08T08:00:00+07:00",
@@ -16374,8 +16434,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.17",
-   "d": 0.51,
-   "ytd": 13.39,
+   "d": 0.48,
+   "ytd": 13.36,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16420,9 +16480,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "92.44",
-   "d": 0.46,
-   "ytd": 60.99,
+   "v": "92.38",
+   "d": 0.39,
+   "ytd": 60.88,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16432,9 +16492,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,479.2",
-   "d": -0.77,
-   "ytd": 3.55,
+   "v": "4,476.9",
+   "d": -0.82,
+   "ytd": 3.5,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -16456,9 +16516,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,687",
-   "d": -0.08,
-   "ytd": 0.03,
+   "v": "16,709",
+   "d": 0.05,
+   "ytd": 0.16,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -16898,8 +16958,8 @@
    "prev": "-23K",
    "act": null,
    "src": "investing.com",
-   "title_ko": "비농업 고용 (8월)",
-   "title_id": "Nonfarm Payrolls (Agustus)"
+   "title_ko": "8월 비농업 고용",
+   "title_id": "Nonfarm Payrolls AS (Agu)"
   },
   {
    "date": "2026-09-04",
@@ -17140,8 +17200,8 @@
    "title": "Luar Biasa · Hasil RUPS Luar Biasa  PT Bank Tabungan Negara (Persero) Tbk",
    "src": "IDX 캘린더",
    "country": "ID",
-   "title_ko": "임시 · PT Bank Tabungan Negara (Persero) Tbk 임시주주총회 결과",
-   "title_id": "Luar Biasa · Hasil RUPS Luar Biasa  PT Bank Tabungan Negara (Persero) Tbk"
+   "title_ko": "임시주총 · PT Bank Tabungan Negara (Persero) Tbk 임시주주총회 결과",
+   "title_id": "Luar Biasa · Hasil RUPS Luar Biasa PT Bank Tabungan Negara (Persero) Tbk"
   },
   {
    "date": "2026-09-07",
@@ -17322,7 +17382,8 @@
    "title": "주주총회 · Penyampaian Bukti Iklan PEMANGGILAN RAPAT UMUM PEMEGANG OBLIGASI & SUKUK IJARAH (RUPO & RU",
    "src": "IDX 공시",
    "country": "ID",
-   "title_ko": "주주총회 · Penyampaian Bukti Iklan PEMANGGILAN RAPAT UMUM PEMEGANG OBLIGASI & SUKUK IJARAH (RUPO & RU"
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan PEMANGGILAN RAPAT UMUM PEMEGANG OBLIGASI & SUKUK IJARAH (RUPO & RU",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Pemanggilan Rapat Umum Pemegang Obligasi & Sukuk Ijarah (RUPO & RU"
   },
   {
    "date": "2026-09-09",
@@ -18801,6 +18862,17 @@
  ],
  "announcements": [
   {
+   "ts": "2026-09-08T08:21:18+07:00",
+   "date": "2026-09-08",
+   "time": "08:21",
+   "t": "POST",
+   "type": "STOCK",
+   "title": "Penyampaian Bukti Iklan PEMANGGILAN RAPAT UMUM PEMEGANG OBLIGASI & SUKUK IJARAH (RUPO & RUPSI) OBLIGASI I POS INDONESIA TAHUN 2022 SUKUK IJARAH BERKELANJUTAN I POS INDONESIA TAHAP I TAHUN 2024 (KOREKSI)",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/5cc6d79bbf_9638d19cd7.pdf",
+   "title_ko": "POS INDONESIA 2022년 채권 I 및 2024년 지속성 수쿠크 이자라 I 1단계 사채권자·수쿠크보유자 총회(RUPO·RUPSI) 소집 공고 게재 증빙 제출 (정정)",
+   "title_id": "Bukti Iklan Pemanggilan RUPO & RUPSI Obligasi I Pos Indonesia 2022 dan Sukuk Ijarah Berkelanjutan I Pos Indonesia Tahap I 2024 (Koreksi)"
+  },
+  {
    "ts": "2026-09-08T07:51:19+07:00",
    "date": "2026-09-08",
    "time": "07:51",
@@ -18808,8 +18880,8 @@
    "type": "STOCK",
    "title": "HIS Raih Corporate Secretary Champion 2026 Predikat Very Good dari SWA",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/4524d2be0f_cefe90f393.pdf",
-   "title_id": "HIS Raih Corporate Secretary Champion 2026 Predikat Very Good dari SWA",
    "title_ko": "HIS, SWA 선정 Corporate Secretary Champion 2026 Very Good 등급 수상",
+   "title_id": "HIS Raih Corporate Secretary Champion 2026 Predikat Very Good dari SWA",
    "ai_ko": "PT Hasnur Internasional Shipping Tbk가 SWA Media Group 주관 Corporate Secretary Champion 2026에서 Very Good 등급을 수상. 이번 수상으로 기업 거버넌스 강화와 평판 유지에 대한 노력을 입증함. 해당 공시가 운영, 재무 및 사업 영속성에 미치는 영향은 없음.",
    "ai_id": "PT Hasnur Internasional Shipping Tbk meraih predikat Very Good dalam ajang Corporate Secretary Champion 2026 dari SWA Media Group. Penghargaan ini mencerminkan komitmen perusahaan dalam memperkuat tata kelola dan reputasi bisnis. Kejadian ini tidak berdampak material terhadap kegiatan operasional maupun kondisi keuangan perusahaan.",
    "ai_tags": [
@@ -18982,8 +19054,8 @@
    "type": "STOCK",
    "title": "Dukung Ekosistem AI Nasional, PGE Siapkan Pasokan Listrik Baseload dari Panas Bumi untuk Green Data Center",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/69a124af92_d64486f97f.pdf",
-   "title_id": "Dukung Ekosistem AI Nasional, PGE Siapkan Pasokan Listrik Baseload dari Panas Bumi untuk Green Data Center",
-   "title_ko": "국가 AI 생태계 지원 — PGE, Green Data Center용 지열 기반 베이스로드 전력 공급 준비"
+   "title_ko": "국가 AI 생태계 지원 — PGE, Green Data Center용 지열 기반 베이스로드 전력 공급 준비",
+   "title_id": "Dukung Ekosistem AI Nasional, PGE Siapkan Pasokan Listrik Baseload dari Panas Bumi untuk Green Data Center"
   },
   {
    "ts": "2026-09-07T19:50:00+07:00",
@@ -19015,8 +19087,8 @@
    "type": "STOCK",
    "title": "Penyampaian Bukti Iklan Ringkasan Risalah Rapat  Umum Pemegang Saham Luar  Biasa PT Champ Resto Indonesia  Tbk (Perseroan)",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b2e5531c3b_bf85d40e3f.pdf",
-   "title_id": "Penyampaian Bukti Iklan Ringkasan Risalah Rapat  Umum Pemegang Saham Luar  Biasa PT Champ Resto Indonesia  Tbk (Perseroan)",
-   "title_ko": "PT Champ Resto Indonesia Tbk 임시주주총회 의사록 요약 공고 게재 증빙 제출"
+   "title_ko": "PT Champ Resto Indonesia Tbk 임시주주총회 의사록 요약 공고 게재 증빙 제출",
+   "title_id": "Penyampaian Bukti Iklan Ringkasan Risalah Rapat  Umum Pemegang Saham Luar  Biasa PT Champ Resto Indonesia  Tbk (Perseroan)"
   },
   {
    "ts": "2026-09-07T19:36:14+07:00",
@@ -19191,8 +19263,8 @@
    "type": "STOCK",
    "title": "Kesiapan Dana Untuk Pembayaran Obligasi",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b625859af3_b0d3111781.pdf",
-   "title_id": "Kesiapan Dana Untuk Pembayaran Obligasi",
-   "title_ko": "채권 상환 자금 준비 현황"
+   "title_ko": "채권 상환 자금 준비 현황",
+   "title_id": "Kesiapan Dana Untuk Pembayaran Obligasi"
   },
   {
    "ts": "2026-09-07T18:22:19+07:00",
@@ -19202,8 +19274,8 @@
    "type": "STOCK",
    "title": "Laporan Informasi dan Fakta Material Penundaan Pembayaran Bunga Obligasi III",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/a35027c061_09ac4b3cfd.pdf",
-   "title_id": "Laporan Informasi dan Fakta Material Penundaan Pembayaran Bunga Obligasi III",
-   "title_ko": "채권 III 이자 지급 연기 관련 정보 및 중대 사실 보고"
+   "title_ko": "채권 III 이자 지급 연기 관련 정보 및 중대 사실 보고",
+   "title_id": "Laporan Informasi dan Fakta Material Penundaan Pembayaran Bunga Obligasi III"
   },
   {
    "ts": "2026-09-07T18:10:19+07:00",
@@ -19279,8 +19351,8 @@
    "type": "STOCK",
    "title": "Keterbukaan Informasi Mengenai Perkembangan Pelaksanaan Penawaran Tender Sukarela Oleh PT Iforte Solusi Infotek Atas Saham-Saham PT Inti Bangun Sejahtera Tbk",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/308c2b125a_88e4464886.pdf",
-   "title_id": "Keterbukaan Informasi Mengenai Perkembangan Pelaksanaan Penawaran Tender Sukarela Oleh PT Iforte Solusi Infotek Atas Saham-Saham PT Inti Bangun Sejahtera Tbk",
-   "title_ko": "PT Iforte Solusi Infotek의 PT Inti Bangun Sejahtera Tbk 주식 자발적 공개매수 진행 상황 정보공개"
+   "title_ko": "PT Iforte Solusi Infotek의 PT Inti Bangun Sejahtera Tbk 주식 자발적 공개매수 진행 상황 정보공개",
+   "title_id": "Keterbukaan Informasi Mengenai Perkembangan Pelaksanaan Penawaran Tender Sukarela Oleh PT Iforte Solusi Infotek Atas Saham-Saham PT Inti Bangun Sejahtera Tbk"
   },
   {
    "ts": "2026-09-07T17:17:08+07:00",
@@ -19290,8 +19362,8 @@
    "type": "STOCK",
    "title": "Terlampir untuk Penyampaian Laporan Keuangan Tengah Tahunan (LKTT) Konsolidasian PT Wahana Inti Selaras (Perseroan) dan Entitas Anak Tanggal 30 Juni 2026 dan untuk periode enam bulan yang berakhir pada tanggal tersebut (Audit)",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/9cdcca0981_adde4a3345.pdf",
-   "title_id": "Terlampir untuk Penyampaian Laporan Keuangan Tengah Tahunan (LKTT) Konsolidasian PT Wahana Inti Selaras (Perseroan) dan Entitas Anak Tanggal 30 Juni 2026 dan untuk periode enam bulan yang berakhir pada tanggal tersebut (Audit)",
-   "title_ko": "PT Wahana Inti Selaras 및 종속기업 2026년 6월 30일 기준 연결 반기 재무제표(감사) 제출 첨부"
+   "title_ko": "PT Wahana Inti Selaras 및 종속기업 2026년 6월 30일 기준 연결 반기 재무제표(감사) 제출 첨부",
+   "title_id": "Terlampir untuk Penyampaian Laporan Keuangan Tengah Tahunan (LKTT) Konsolidasian PT Wahana Inti Selaras (Perseroan) dan Entitas Anak Tanggal 30 Juni 2026 dan untuk periode enam bulan yang berakhir pada tanggal tersebut (Audit)"
   },
   {
    "ts": "2026-09-07T17:10:05+07:00",
@@ -19323,8 +19395,8 @@
    "type": "STOCK",
    "title": "Siaran Pers: Chandra Asri Group Pastikan Operasional Berjalan Aman, Perkuat Kesiapsiagaan Hadapi Aktivitas Gunung Anak Krakatau",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e7f90374c8_7ef4686775.pdf",
-   "title_id": "Chandra Asri Group Pastikan Operasional Aman di Tengah Aktivitas Gunung Anak Krakatau",
-   "title_ko": "보도자료 · Chandra Asri Group, Anak Krakatau 화산 활동 대비 태세 강화 — 조업 안전 운영 확인"
+   "title_ko": "보도자료 · Chandra Asri Group, Anak Krakatau 화산 활동 대비 태세 강화 — 조업 안전 운영 확인",
+   "title_id": "Chandra Asri Group Pastikan Operasional Aman di Tengah Aktivitas Gunung Anak Krakatau"
   },
   {
    "ts": "2026-09-07T16:56:48+07:00",
@@ -20814,8 +20886,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-08 08:25",
-  "pc_age_min": 12,
+  "idx_from_pc": "2026-09-08 08:44",
+  "pc_age_min": 4,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -22101,6 +22173,24 @@
    "srcs": 1
   },
   {
+   "t": "BMRI",
+   "n": "Bank Mandiri Tbk",
+   "px": 4390.0,
+   "pct": -0.68,
+   "val": 417875012333.3333,
+   "mcap": 405635999982440.0,
+   "ratio": 0.8,
+   "ev_ko": "실적·배당",
+   "ev_id": "Kinerja & dividen",
+   "hl": "Bank Mandiri는 2026년 중간 배당금 IDR 66을 분배합니다. 전체 일정을 확인하세요",
+   "url": "https://www.liputan6.com/saham/read/8286694/bank-mandiri-tebar-dividen-interim-2026-rp-66-cek-jadwal-lengkapnya",
+   "score": 62.3,
+   "s_news": 88,
+   "s_size": 90,
+   "s_surge": 0,
+   "srcs": 2
+  },
+  {
    "t": "CUAN",
    "n": "Petrindo Jaya Kreasi",
    "px": 935.0,
@@ -22115,24 +22205,6 @@
    "score": 60.7,
    "s_news": 95,
    "s_size": 76,
-   "s_surge": 0,
-   "srcs": 1
-  },
-  {
-   "t": "BMRI",
-   "n": "Bank Mandiri Tbk",
-   "px": 4390.0,
-   "pct": -0.68,
-   "val": 417875012333.3333,
-   "mcap": 405635999982440.0,
-   "ratio": 0.8,
-   "ev_ko": "실적·배당",
-   "ev_id": "Kinerja & dividen",
-   "hl": "Bank Mandiri는 2026년 중간 배당금 IDR 66을 분배합니다. 전체 일정을 확인하세요",
-   "url": "https://www.liputan6.com/saham/read/8286694/bank-mandiri-tebar-dividen-interim-2026-rp-66-cek-jadwal-lengkapnya",
-   "score": 59.1,
-   "s_news": 80,
-   "s_size": 90,
    "s_surge": 0,
    "srcs": 1
   },
