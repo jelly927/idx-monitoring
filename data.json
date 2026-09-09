@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 21:27",
+ "updated": "2026-09-09 21:42",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,337 · 20:43 Yahoo",
- "idr_per_krw": 13.1263,
+ "fx_basis": "13.12 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,337 · 20:43 Yahoo",
+ "idr_per_krw": 13.1244,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7646.21,
+   "px": 7650.96,
    "prev": 7673.52,
-   "pct": -0.36,
-   "asof": "21:25",
+   "pct": -0.29,
+   "asof": "21:40",
    "live": true,
    "spark": [
     7653.65,
@@ -15095,17 +15095,20 @@
     7653.43,
     7644.29,
     7640.94,
-    7646.21
+    7654.35,
+    7648.97,
+    7650.25,
+    7650.96
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26302.05,
+   "px": 26312.92,
    "prev": 26421.41,
-   "pct": -0.45,
-   "asof": "21:25",
+   "pct": -0.41,
+   "asof": "21:40",
    "live": true,
    "spark": [
     26328.66,
@@ -15119,17 +15122,20 @@
     26345.95,
     26294.45,
     26276.72,
-    26302.05
+    26329.41,
+    26310.81,
+    26308.13,
+    26312.92
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52411.23,
+   "px": 52500.62,
    "prev": 52786.07,
-   "pct": -0.71,
-   "asof": "21:25",
+   "pct": -0.54,
+   "asof": "21:40",
    "live": true,
    "spark": [
     52496.92,
@@ -15143,7 +15149,10 @@
     52413.68,
     52373.08,
     52373.58,
-    52411.23
+    52480.54,
+    52463.87,
+    52477.84,
+    52500.62
    ]
   },
   {
@@ -15469,6 +15478,18 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-09T21:30:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:30",
+   "src": "IDNFinancials",
+   "t": "Foreign outflow, BBCA top sell IDR 638 billion",
+   "tags": [
+    "BBCA"
+   ],
+   "url": "https://www.idnfinancials.com/news/68604/foreign-outflow-bbca-top-sell-idr-638-billion",
+   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/NET%20FOREIGN%20IMAGE%20%28ARIF%29/NET%20FOREIGN%2015.jpeg"
+  },
   {
    "ts": "2026-09-09T21:10:00+07:00",
    "date": "2026-09-09",
@@ -16179,20 +16200,6 @@
    "t_id": "Kejar Target Produksi Migas 2026, MEDC Bidik Proyek Baru"
   },
   {
-   "ts": "2026-09-09T12:00:39+07:00",
-   "date": "2026-09-09",
-   "time": "12:00",
-   "src": "Detik",
-   "t": "Emiten Rukun Raharja Rampungkan Akuisisi 5% Saham PT LNG",
-   "tags": [
-    "RAJA"
-   ],
-   "url": "https://finance.detik.com/bursa-dan-valas/d-8655085/emiten-rukun-raharja-rampungkan-akuisisi-5-saham-pt-lng",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2021/11/19/ihsg-ditutup-menguat-1_169.jpeg?w=360&q=90",
-   "t_ko": "RAJA, PT LNG 지분 5% 인수 완료",
-   "t_id": "Emiten Rukun Raharja Rampungkan Akuisisi 5% Saham PT LNG"
-  },
-  {
    "ts": "2026-09-09T10:30:00+07:00",
    "date": "2026-09-09",
    "time": "10:30",
@@ -16223,20 +16230,6 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/ZRRqiT15TrUOeT5j8OnqVrWCI5U=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277612/original/069968900_1672400409-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga-1.JPG",
    "t_ko": "9월 9일 투자의견 정리 — MEDC·TPIA·CUAN·KOTA·ESSA",
    "t_id": "Rekomendasi Saham Analis 9 September 2026: MEDC, TPIA, CUAN, KOTA hingga ESSA"
-  },
-  {
-   "ts": "2026-09-09T07:00:00+07:00",
-   "date": "2026-09-09",
-   "time": "07:00",
-   "src": "IDNFinancials",
-   "t": "SMGR cuts IDR3.34 trillion debt, prepares optimal returns",
-   "tags": [
-    "SMGR"
-   ],
-   "url": "https://www.idnfinancials.com/news/68535/smgr-cuts-idr3-34-trillion-debt-prepares-optimal-returns",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/SMGR-09092026.jpg",
-   "t_ko": "SMGR, 부채 Rp3.34조 상환해 수익성 개선 추진",
-   "t_id": "SMGR Pangkas Utang Rp3,34 Triliun, Siapkan Imbal Hasil Optimal"
   },
   {
    "ts": "2026-09-09T06:47:16+07:00",
@@ -16568,6 +16561,65 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-09T21:39:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:39",
+   "src": "Media Indonesia",
+   "t": "Kementerian HAM Rekomendasikan BGN Bentuk Unit Pemulihan Korban MBG",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/931655/kementerian-ham-rekomendasikan-bgn-bentuk-unit-pemulihan-korban-mbg",
+   "t_ko": "인권부, BGN에 MBG 피해자 복구 부서 구성 권고"
+  },
+  {
+   "ts": "2026-09-09T21:36:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:36",
+   "src": "Media Indonesia",
+   "t": "BI: Indeks Keyakinan Konsumen Meningkat pada Agustus 2026",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931654/bi-indeks-keyakinan-konsumen-meningkat-pada-agustus-2026",
+   "t_id": "BI: Indeks Keyakinan Konsumen Meningkat pada Agustus 2026"
+  },
+  {
+   "ts": "2026-09-09T21:34:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:34",
+   "src": "Media Indonesia",
+   "t": "Karhutla Kembali Landa Kawasan IKN, Satgas Gabungan Berjibaku Padamkan Api",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931650/karhutla-kembali-landa-kawasan-ikn-satgas-gabungan-berjibaku-padamkan-api"
+  },
+  {
+   "ts": "2026-09-09T21:34:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:34",
+   "src": "Media Indonesia",
+   "t": "HUT Ke-25 Demokrat: AHY Tegaskan Partainya Bisa Diandalkan Pemerintahan Prabowo",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/931649/hut-ke-25-demokrat-ahy-tegaskan-partainya-bisa-diandalkan-pemerintahan-prabowo",
+   "t_id": "HUT Ke-25 Demokrat: AHY Tegaskan Partainya Bisa Diandalkan Pemerintahan Prabowo"
+  },
+  {
+   "ts": "2026-09-09T21:32:39+07:00",
+   "date": "2026-09-09",
+   "time": "21:32",
+   "src": "Jawa Pos",
+   "t": "Pameran GIFA-METEC 2026 Hadirkan Inovasi Industri Logam Internasional",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609090427/pameran-gifa-metec-2026-hadirkan-inovasi-industri-logam-internasional",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/pameran-internasional-gifa-indonesia-dan-metec-indonesia-2026-resmi-dibuka-di-jakarta-international-expo-jiexpo-kemayoran-jakarta-pada-rabu-99-dok-nanda-prayogajawaposcom-NCOlE.webp"
+  },
+  {
+   "ts": "2026-09-09T21:29:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:29",
+   "src": "Media Indonesia",
+   "t": "Prabowo Apresiasi Dukungan Partai Demokrat dan SBY di HUT Ke-25",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/931647/prabowo-apresiasi-dukungan-partai-demokrat-dan-sby-di-hut-ke-25",
+   "t_id": "Prabowo Apresiasi Dukungan Partai Demokrat dan SBY di HUT Ke-25"
+  },
+  {
    "ts": "2026-09-09T21:24:27+07:00",
    "date": "2026-09-09",
    "time": "21:24",
@@ -16577,6 +16629,16 @@
    "url": "https://ekonomi.republika.co.id/berita/tl3pcr348/baic-perkuat-jaringan-di-jawa-barat-bawa-mobil-listrik-t1-ke-giias-bandung",
    "img": "https://static.republika.co.id/uploads/images/detailnews/baic_260909212209-689.jpg",
    "t_id": "BAIC Perkuat Jaringan di Jawa Barat, Bawa Mobil Listrik T1 ke GIIAS Bandung"
+  },
+  {
+   "ts": "2026-09-09T21:15:47+07:00",
+   "date": "2026-09-09",
+   "time": "21:15",
+   "src": "Detik",
+   "t": "Prabowo Ungkap Kata Pakar: 2050 RI Negara Keempat Ekonomi Terbesar Dunia",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656126/prabowo-ungkap-kata-pakar-2050-ri-negara-keempat-ekonomi-terbesar-dunia",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/presiden-prabowo-subianto-dalam-hut-ke-25-demokrat-1788961314954_169.png?w=360&q=90"
   },
   {
    "ts": "2026-09-09T21:14:00+07:00",
@@ -16761,16 +16823,6 @@
    "url": "https://mediaindonesia.com/jabar/berita/931609/warga-kabupaten-bandung-waspadai-abu-vulkanik-gunung-anak-krakatau"
   },
   {
-   "ts": "2026-09-09T20:37:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:37",
-   "src": "Media Indonesia",
-   "t": "Nasabah Fasilitas KPR dan Kredit Multiguna Mendapat Perlindungan Risiko",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931610/nasabah-fasilitas-kpr-dan-kredit-multiguna-mendapat-perlindungan-risiko",
-   "t_id": "Nasabah Fasilitas KPR dan Kredit Multiguna Mendapat Perlindungan Risiko"
-  },
-  {
    "ts": "2026-09-09T20:33:35+07:00",
    "date": "2026-09-09",
    "time": "20:33",
@@ -16780,15 +16832,6 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656057/kopdes-merah-putih-bakal-gandeng-pnm-dan-pt-pos",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/06/lokasi-kopdes-merah-putih-di-atas-gunungmasigit-1783335021447_169.jpeg?w=360&q=90",
    "t_id": "Kopdes Merah Putih Bakal Gandeng PNM dan PT Pos"
-  },
-  {
-   "ts": "2026-09-09T20:33:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:33",
-   "src": "Media Indonesia",
-   "t": "Harga Masker Melonjak akibat Erupsi Anak Krakatau, Warganet Protes Aksi Borong tanpa Checkout",
-   "tags": [],
-   "url": "https://mediaindonesia.com/megapolitan/931606/harga-masker-melonjak-akibat-erupsi-anak-krakatau-warganet-protes-aksi-borong-tanpa-checkout"
   },
   {
    "ts": "2026-09-09T20:28:00+07:00",
@@ -16821,57 +16864,6 @@
    "url": "https://finance.detik.com/infrastruktur/d-8656017/otorita-ikn-minta-tambah-rp-15-8-triliun-purbaya-jawab-begini",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/22/ikn-buka-kunjungan-selama-libur-lebaran-2026-1774143191357_169.jpeg?w=360&q=90",
    "t_id": "Otorita IKN Minta Tambah Rp 15,8 Triliun, Purbaya Jawab Begini"
-  },
-  {
-   "ts": "2026-09-09T20:08:59+07:00",
-   "date": "2026-09-09",
-   "time": "20:08",
-   "src": "Republika",
-   "t": "Jadi Bos Pengawas Bursa Mineral, Sarjito Yakin Indonesia Bakal Lebih Berdaulat",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl3luz490/jadi-bos-pengawas-bursa-mineral-sarjito-yakin-indonesia-bakal-lebih-berdaulat",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260909165639-859.png",
-   "t_id": "Jadi Bos Pengawas Bursa Mineral, Sarjito Yakin Indonesia Bakal Lebih Berdaulat"
-  },
-  {
-   "ts": "2026-09-09T20:00:12+07:00",
-   "date": "2026-09-09",
-   "time": "20:00",
-   "src": "Detik",
-   "t": "Bulog Minta Jatah Minyakita 100%, Mendag Tegaskan UMKM Harus Kebagian",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8655884/bulog-minta-jatah-minyakita-100-mendag-tegaskan-umkm-harus-kebagian",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/20/menteri-perdagangan-mendag-budi-santoso-1787211883943_169.jpeg?w=360&q=90"
-  },
-  {
-   "ts": "2026-09-09T19:58:58+07:00",
-   "date": "2026-09-09",
-   "time": "19:58",
-   "src": "Republika",
-   "t": "Harga Bitcoin Masih Volatil, Investor Perlu Cermat Kelola Risiko",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl3lea370/harga-bitcoin-masih-volatil-investor-perlu-cermat-kelola-risiko",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/investor-tidak-lagi-hanya-melirik-bitcoin-melainkan-juga_250925193745-790.jpg"
-  },
-  {
-   "ts": "2026-09-09T19:50:00+07:00",
-   "date": "2026-09-09",
-   "time": "19:50",
-   "src": "Katadata",
-   "t": "Utang Whoosh Diperpanjang 80 Tahun, Purbaya Malah Bilang Begini",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/keuangan/6aa155faaa688/utang-whoosh-diperpanjang-80-tahun-purbaya-malah-bilang-begini",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/05/2026_08_05-17_48_00_c835adf8-90c3-11f1-8ba5-0242ac12000a_620x413_thumb.jpg"
-  },
-  {
-   "ts": "2026-09-09T19:49:46+07:00",
-   "date": "2026-09-09",
-   "time": "19:49",
-   "src": "Detik",
-   "t": "BNI Biayai Kopdes Merah Putih, Dinilai Minim Risiko Kredit Macet",
-   "tags": [],
-   "url": "https://finance.detik.com/moneter/d-8656006/bni-biayai-kopdes-merah-putih-dinilai-minim-risiko-kredit-macet",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2018/07/28/bb462c7f-0b4a-4501-8faf-d038e168e32b_169.jpeg?w=360&q=90"
   }
  ],
  "kisi_news": [
@@ -17056,9 +17048,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.800%",
-   "d": -0.12,
-   "ytd": 15.3,
+   "v": "4.810%",
+   "d": 0.08,
+   "ytd": 15.54,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17079,9 +17071,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.62",
-   "d": -0.15,
-   "ytd": 0.35,
+   "v": "98.66",
+   "d": -0.11,
+   "ytd": 0.39,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17091,9 +17083,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "95.89",
-   "d": 1.82,
-   "ytd": 67.0,
+   "v": "96.01",
+   "d": 1.94,
+   "ytd": 67.21,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17103,9 +17095,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,461.1",
-   "d": 0.92,
-   "ytd": 3.13,
+   "v": "4,466.8",
+   "d": 1.05,
+   "ytd": 3.26,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17127,9 +17119,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,850",
-   "d": 0.44,
-   "ytd": 1.01,
+   "v": "16,890",
+   "d": 0.68,
+   "ytd": 1.25,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24640,7 +24632,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 239,
+  "pc_age_min": 254,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
