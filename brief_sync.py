@@ -59,6 +59,47 @@ def _save_state(st):
     try: STATE.parent.mkdir(parents=True, exist_ok=True); STATE.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding="utf-8")
     except Exception: pass
 
+
+# ---------------- 생성기 산출물 보정 (PowerPoint "손상" 판정 방지) ----------------
+_A = "http://schemas.openxmlformats.org/drawingml/2006/main"
+_RPR_ORDER = ["ln", "noFill", "solidFill", "gradFill", "blipFill", "pattFill", "grpFill", "effectLst", "effectDag", "highlight",
+              "uLnTx", "uLn", "uFillTx", "uFill", "latin", "ea", "cs", "sym", "hlinkClick", "hlinkMouseOver", "rtl", "extLst"]
+
+def _repair_xml(data: bytes) -> bytes:
+    """슬라이드 XML 보정: (1) 좌표 실수값 5664600.0 → 정수 (2) a:rPr 자식 순서(solidFill 이 latin/ea/cs 앞) — 둘 다 PowerPoint COM 에서 0x80070570 유발"""
+    from lxml import etree
+    x = etree.fromstring(data); changed = False
+    for e in x.iter("{%s}off" % _A, "{%s}ext" % _A, "{%s}chOff" % _A, "{%s}chExt" % _A):
+        for k in ("x", "y", "cx", "cy"):
+            v = e.get(k)
+            if v is not None and not v.lstrip("-").isdigit():
+                try: e.set(k, str(int(round(float(v))))); changed = True
+                except ValueError: pass
+    for e in x.iter("{%s}rPr" % _A, "{%s}defRPr" % _A, "{%s}endParaRPr" % _A):
+        kids = list(e)
+        keys = [_RPR_ORDER.index(etree.QName(c).localname) if etree.QName(c).localname in _RPR_ORDER else 99 for c in kids]
+        if keys != sorted(keys):
+            for c in kids: e.remove(c)
+            for _, c in sorted(zip(keys, kids), key=lambda t: t[0]): e.append(c)
+            changed = True
+    return etree.tostring(x, xml_declaration=True, encoding="UTF-8", standalone=True) if changed else data
+
+def repair_pptx(src: Path, dst: Path) -> int:
+    """src → dst 로 복사하면서 슬라이드 XML 을 보정. 반환: 보정한 파트 수"""
+    import zipfile
+    n = 0
+    with zipfile.ZipFile(src) as zi, zipfile.ZipFile(dst, "w", zipfile.ZIP_DEFLATED) as zo:
+        for info in zi.infolist():
+            b = zi.read(info.filename)
+            if re.match(r"ppt/(slides|slideLayouts|slideMasters)/[^/]+\.xml$", info.filename):
+                try:
+                    nb = _repair_xml(b)
+                    if nb is not b: b = nb; n += 1
+                except Exception as e:
+                    print("  브리프 XML 보정 건너뜀:", info.filename, str(e)[:80], flush=True)
+            zo.writestr(info.filename, b)
+    return n
+
 # ---------------- PPTX → PDF ----------------
 LAST_ERR = ""
 def _ppt_com(src: Path, dst: Path) -> bool:
@@ -110,9 +151,14 @@ def convert(src: Path, dst: Path) -> bool:
     """원본을 임시 폴더에 복사한 뒤 변환 (열려 있는 원본 파일 보호). 성공 시 dst 에 PDF."""
     tmpd = Path(tempfile.mkdtemp(prefix="brief_"))
     try:
-        tsrc = tmpd / re.sub(r"[^\w.\-]", "_", src.name); shutil.copy2(src, tsrc)
+        tsrc = tmpd / re.sub(r"[^\w.\-]", "_", src.name)
         if src.suffix.lower() == ".pdf":
-            shutil.copy2(tsrc, dst); return True
+            shutil.copy2(src, dst); return True
+        try:
+            fixed = repair_pptx(src, tsrc)                       # 생성기 산출물의 실수 좌표·rPr 순서 보정 (PowerPoint 손상 판정 방지)
+            if fixed: print(f"  브리프 XML 보정 {fixed}개 파트:", src.name, flush=True)
+        except Exception as e:
+            print("  브리프 보정 실패, 원본 사용:", str(e)[:80], flush=True); shutil.copy2(src, tsrc)
         tdst = tmpd / "out.pdf"
         ok = _ppt_com(tsrc, tdst) or _soffice(tsrc, tdst)
         if ok: shutil.copy2(tdst, dst)
