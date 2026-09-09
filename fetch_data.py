@@ -2307,7 +2307,7 @@ def ai_news(items, per_build=NEWS_AI_PER_BUILD):
             arts = "\n\n".join(f"[{k+1}] 매체: {n.get('src','')} · 제목: {n.get('t','')}\n{txt}" for k, (n, txt) in enumerate(chunk))
             prompt = ("너는 한국 증권사 인도네시아 리서치의 데스크 편집자다. 아래 인도네시아 뉴스 기사 " + str(len(chunk)) + "건을 각각 요약하라.\n"
                       "각 기사마다 JSON 객체 {\"i\": 번호, \"ko\": \"…\", \"id\": \"…\", \"tags\": [\"…\"]} 를 만들고, 전체를 JSON 배열 하나로만 답하라(설명·코드블록 금지).\n"
-                      "· ko: 한국어 2문장, 증권사 데일리 문체(명사형 종결, 마침표 없음, 문장 사이는 마침표 대신 줄바꿈 없이 ' / '). 1문장 = 무슨 일이 있었나(핵심 사실·수치·일정), 2문장 = 관련 종목·업종에 갖는 의미. 기사에 없는 내용·전망은 쓰지 말 것.\n"
+                      "· ko: 한국어 2문장, 각 문장 70자 이내(총 150자 안팎), 증권사 데일리 문체(명사형 종결, 마침표 없음, 문장 사이는 ' / '). 1문장 = 무슨 일이 있었나(핵심 사실·수치·일정), 2문장 = 관련 종목·업종에 갖는 의미. 회사명은 'PT ○○ Tbk' 대신 짧은 이름+종목코드(예: Indika Energy(INDY)). 기사에 없는 내용·전망은 쓰지 말 것.\n"
                       "· id: Bahasa Indonesia 2 kalimat, gaya ringkas Kontan/Bisnis.\n"
                       "· tags: 한국어 키워드 최대 3개(예: 배당, 유상증자, 실적, 규제, M&A, 유가).\n"
                       "· 표기: 회사명·인명은 로마자 원문, 종목코드 유지, 숫자는 Rp5,000억·Rp1.27조·USD 100처럼 한국식, 소수점은 마침표. Laba=순이익, Pendapatan=매출, Emiten=상장사, Asing=외국인, RUPS=주주총회.\n"
@@ -2322,7 +2322,7 @@ def ai_news(items, per_build=NEWS_AI_PER_BUILD):
             for k, (n, _t) in enumerate(chunk):
                 j = got.get(k + 1)
                 if not j or not str(j.get("ko", "")).strip(): continue
-                cache[n["url"]] = {"ko": str(j.get("ko", ""))[:400], "id": str(j.get("id", ""))[:400], "tags": [str(x)[:16] for x in (j.get("tags") or [])][:3], "ts": now_wib().isoformat()}; done += 1
+                cache[n["url"]] = {"ko": str(j.get("ko", ""))[:480], "id": str(j.get("id", ""))[:480], "tags": [str(x)[:16] for x in (j.get("tags") or [])][:3], "ts": now_wib().isoformat()}; done += 1
     if done or (can and todo):
         keep = sorted(cache.items(), key=lambda kv: kv[1].get("ts", ""), reverse=True)[:NEWS_AI_KEEP]
         try: AI_NEWS_P.write_text(json.dumps(dict(keep), ensure_ascii=False), encoding="utf-8")
