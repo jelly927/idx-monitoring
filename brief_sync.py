@@ -79,7 +79,11 @@ if ($app.Presentations.Count -eq 0) {{ $app.Quit() }}
         r = subprocess.run(["powershell", "-NoProfile", "-NonInteractive", "-EncodedCommand", enc], capture_output=True, text=True, timeout=180)
         if "OK" in (r.stdout or "") and dst.exists() and dst.stat().st_size > 10_000: return True
         global LAST_ERR
-        LAST_ERR = " ".join(((r.stderr or "") + " " + (r.stdout or "")).split())[:300] or f"exit {r.returncode}"
+        raw = (r.stderr or "") + " " + (r.stdout or "")
+        errs = re.findall(r'<S S="Error">(.*?)</S>', raw, re.S)                     # PowerShell CLIXML 에서 오류 문장만 추출
+        txt = " ".join(errs) if errs else raw
+        txt = txt.replace("_x000D__x000A_", " ").replace("&quot;", '"').replace("&apos;", "'").replace("&gt;", ">").replace("&lt;", "<")
+        LAST_ERR = " ".join(txt.split())[:600] or f"exit {r.returncode}"
         print("  브리프 변환(PowerPoint) 실패:", LAST_ERR[:120], flush=True)
     except Exception as e:
         LAST_ERR = str(e)[:300]
