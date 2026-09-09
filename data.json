@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 21:56",
+ "updated": "2026-09-09 22:07",
  "delay_min": 0,
- "fx_basis": "13.12 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,337 · 20:43 Yahoo",
- "idr_per_krw": 13.1206,
+ "fx_basis": "13.11 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,339 · 21:55 Yahoo",
+ "idr_per_krw": 13.1087,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7651.07,
+   "px": 7641.14,
    "prev": 7673.52,
-   "pct": -0.29,
-   "asof": "21:50",
+   "pct": -0.42,
+   "asof": "22:05",
    "live": true,
    "spark": [
     7653.65,
@@ -15100,17 +15100,20 @@
     7650.25,
     7651.95,
     7651.98,
-    7651.07
+    7650.93,
+    7651.94,
+    7642.98,
+    7641.14
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26301.9,
+   "px": 26270.68,
    "prev": 26421.41,
-   "pct": -0.45,
-   "asof": "21:50",
+   "pct": -0.57,
+   "asof": "22:05",
    "live": true,
    "spark": [
     26328.66,
@@ -15129,17 +15132,20 @@
     26308.13,
     26320.71,
     26323.0,
-    26301.9
+    26303.43,
+    26315.96,
+    26280.06,
+    26270.68
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52534.6,
+   "px": 52409.69,
    "prev": 52786.07,
-   "pct": -0.48,
-   "asof": "21:50",
+   "pct": -0.71,
+   "asof": "22:05",
    "live": true,
    "spark": [
     52496.92,
@@ -15158,7 +15164,10 @@
     52477.84,
     52477.52,
     52489.66,
-    52534.6
+    52530.52,
+    52490.46,
+    52406.63,
+    52409.69
    ]
   },
   {
@@ -16567,6 +16576,24 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-09T21:52:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:52",
+   "src": "Media Indonesia",
+   "t": "OJK Finalisasi POJK Demutualisasi BEI, Target Terbit September 2026",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931666/ojk-finalisasi-pojk-demutualisasi-bei-target-terbit-september-2026"
+  },
+  {
+   "ts": "2026-09-09T21:52:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:52",
+   "src": "Media Indonesia",
+   "t": "Prabowo: Partai Demokrat tidak Bakar-Bakar",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/931664/prabowo-partai-demokrat-tidak-bakar-bakar"
+  },
+  {
    "ts": "2026-09-09T21:44:00+07:00",
    "date": "2026-09-09",
    "time": "21:44",
@@ -16759,16 +16786,6 @@
    "t_id": "DEN Wanti-Wanti Capital Outflow Jumbo dari Pasar RI jika Tak Ada Disiplin Fiskal"
   },
   {
-   "ts": "2026-09-09T20:59:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:59",
-   "src": "Media Indonesia",
-   "t": "Gerak Cepat Rescue untuk Cegah Karhutla Berdampak ke Satwa",
-   "tags": [],
-   "url": "https://mediaindonesia.com/humaniora/931623/gerak-cepat-rescue-untuk-cegah-karhutla-berdampak-ke-satwa",
-   "t_id": "Gerak Cepat Rescue untuk Cegah Karhutla Berdampak ke Satwa"
-  },
-  {
    "ts": "2026-09-09T20:57:30+07:00",
    "date": "2026-09-09",
    "time": "20:57",
@@ -16778,36 +16795,6 @@
    "url": "https://ekonomi.republika.co.id/berita/tl3o3u416/harga-bitcoin-turun-arus-dana-etf-mengalir-deras",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_210104130006-294.png",
    "t_id": "Harga Bitcoin Turun, Arus Dana ETF Mengalir Deras"
-  },
-  {
-   "ts": "2026-09-09T20:57:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:57",
-   "src": "Media Indonesia",
-   "t": "Infrastruktur Tol Buka Sumber Pertumbuhan Ekonomi Baru di Berbagai Koridor",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931625/infrastruktur-tol-buka-sumber-pertumbuhan-ekonomi-baru-di-berbagai-koridor",
-   "t_id": "Infrastruktur Tol Buka Sumber Pertumbuhan Ekonomi Baru di Berbagai Koridor"
-  },
-  {
-   "ts": "2026-09-09T20:56:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:56",
-   "src": "Media Indonesia",
-   "t": "Gen Z & Milenial Jadi Sasaran Perluasan Akses KPR",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931621/gen-z--milenial-jadi-sasaran-perluasan-akses-kpr",
-   "t_id": "Gen Z & Milenial Jadi Sasaran Perluasan Akses KPR"
-  },
-  {
-   "ts": "2026-09-09T20:53:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:53",
-   "src": "Media Indonesia",
-   "t": "Pemerintah Prioritaskan Pemulihan 333 Rumah Pascakonflik di Papua Pegunungan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/931620/pemerintah-prioritaskan-pemulihan-333-rumah-pascakonflik-di-papua-pegunungan",
-   "t_id": "Pemerintah Prioritaskan Pemulihan 333 Rumah Pascakonflik di Papua Pegunungan"
   },
   {
    "ts": "2026-09-09T20:47:02+07:00",
@@ -16873,6 +16860,27 @@
    "url": "https://finance.detik.com/infrastruktur/d-8656017/otorita-ikn-minta-tambah-rp-15-8-triliun-purbaya-jawab-begini",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/22/ikn-buka-kunjungan-selama-libur-lebaran-2026-1774143191357_169.jpeg?w=360&q=90",
    "t_id": "Otorita IKN Minta Tambah Rp 15,8 Triliun, Purbaya Jawab Begini"
+  },
+  {
+   "ts": "2026-09-09T20:08:59+07:00",
+   "date": "2026-09-09",
+   "time": "20:08",
+   "src": "Republika",
+   "t": "Jadi Bos Pengawas Bursa Mineral, Sarjito Yakin Indonesia Bakal Lebih Berdaulat",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl3luz490/jadi-bos-pengawas-bursa-mineral-sarjito-yakin-indonesia-bakal-lebih-berdaulat",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260909165639-859.png",
+   "t_id": "Jadi Bos Pengawas Bursa Mineral, Sarjito Yakin Indonesia Bakal Lebih Berdaulat"
+  },
+  {
+   "ts": "2026-09-09T20:00:12+07:00",
+   "date": "2026-09-09",
+   "time": "20:00",
+   "src": "Detik",
+   "t": "Bulog Minta Jatah Minyakita 100%, Mendag Tegaskan UMKM Harus Kebagian",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8655884/bulog-minta-jatah-minyakita-100-mendag-tegaskan-umkm-harus-kebagian",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/20/menteri-perdagangan-mendag-budi-santoso-1787211883943_169.jpeg?w=360&q=90"
   }
  ],
  "kisi_news": [
@@ -17045,9 +17053,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.12",
-   "d": -0.16,
-   "ytd": 12.93,
+   "v": "13.10",
+   "d": -0.28,
+   "ytd": 12.79,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17057,9 +17065,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.804%",
-   "d": -0.04,
-   "ytd": 15.4,
+   "v": "4.812%",
+   "d": 0.12,
+   "ytd": 15.59,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17080,9 +17088,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.67",
-   "d": -0.1,
-   "ytd": 0.4,
+   "v": "98.66",
+   "d": -0.11,
+   "ytd": 0.39,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17092,9 +17100,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.07",
-   "d": 2.01,
-   "ytd": 67.31,
+   "v": "96.31",
+   "d": 2.26,
+   "ytd": 67.73,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17104,9 +17112,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,464.5",
-   "d": 1.0,
-   "ytd": 3.21,
+   "v": "4,462.0",
+   "d": 0.94,
+   "ytd": 3.15,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17128,9 +17136,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,879",
-   "d": 0.61,
-   "ytd": 1.18,
+   "v": "16,864",
+   "d": 0.52,
+   "ytd": 1.09,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24641,7 +24649,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 268,
+  "pc_age_min": 279,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
