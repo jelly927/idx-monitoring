@@ -2,7 +2,7 @@
 """Git 설치 없이 GitHub 저장소에 변경된 파일만 올린다 (GitHub REST API, requests 만 사용).
 토큰: secrets.json {"github_token": "github_pat_..."} (gitignore 됨) 또는 환경변수 GITHUB_TOKEN.
 사용: python publish.py            → 코드·설정·번역 캐시 등 (data.json 제외, GitHub 러너가 작성)
-      python publish.py --brief    → briefs/latest_ko.pdf·latest_id.pdf 만 (데일리시황 배포)
+      python publish.py --brief    → briefs/latest_ko.pdf·latest_id.pdf 만 (데일리시황 즉시 배포; 기본 실행에도 포함됨)
       python publish.py --chat     → 코드 + 챗봇 컨텍스트(chat_context.json) — 챗봇 배포용
       python publish.py --data     → data.json / data.js 도 함께 (러너가 IDX 를 못 읽을 때)
       python publish.py --all      → 위 전부 + 전일 IDX 요약 캐시 (ss_*.json)"""
@@ -17,7 +17,7 @@ API = "https://api.github.com"
 
 CODE = ["index.html", "fetch_data.py", "run.py", "selftest.py", "publish.py", "config.json", "tickers.json", "requirements.txt",
         "README.md", "DEPLOY.md", ".gitignore", "start.bat", "push.bat", "share.bat", "make_share.py", "setup_autostart.bat",
-        "prepare_upload.py", "upload.bat", "publish.bat", "make_chat_context.py", "publish_chat.bat", "DEPLOY_CHAT.md", "WEEKEND.md", ".github/workflows/update.yml", "worker/worker.js",
+        "prepare_upload.py", "upload.bat", "publish.bat", "make_chat_context.py", "publish_chat.bat", "publish_brief.bat", "DEPLOY_CHAT.md", "WEEKEND.md", ".github/workflows/update.yml", "worker/worker.js",
         "data/manual.json", "data/idx_part.json", "data/cache/tr_claude.json", "data/cache/rss_map.json", "data/cache/tickers_all.json", "data/cache/kisi_news.json", "data/cache/sun10y_hist.json", "data/cache/sun10y_daily.json", "data/cache/dividends.json", "data/cache/ann_ai.json", "data/cache/stock_ai.json", "data/cache/index_ai.json", "data/banners.json"]
 CHAT = ["data/cache/chat_context.json"]
 BRIEF = ["briefs/latest_ko.pdf", "briefs/latest_id.pdf"]   # 데일리시황 PDF (KO/ID) — publish_brief.bat 이 사용
@@ -39,8 +39,23 @@ TRIGGER_MIN = 10   # 러너를 깨우는 최소 간격(분)
 def blob_sha(b: bytes) -> str:
     h = hashlib.sha1(); h.update(f"blob {len(b)}\0".encode()); h.update(b); return h.hexdigest()
 
+def sync_briefs():
+    """Morning Brief PDF 동기화: 폴더 루트 또는 briefs/ 에 저장된 latest_ko.pdf / latest_id.pdf 중 가장 최신 파일을 briefs/ 로 맞춘다.
+    (브리프는 별도 세션에서 만들어 이 폴더에 저장 → 다음 빌드의 publish 가 자동 업로드. 파일명은 latest_ko.pdf / latest_id.pdf 고정)"""
+    bd = ROOT / "briefs"; bd.mkdir(exist_ok=True)
+    for rel in BRIEF:
+        name = Path(rel).name; dst = bd / name
+        cands = [q for q in (ROOT / name, ROOT / "Downloads" / name, dst) if q.exists()]
+        if not cands: continue
+        src = max(cands, key=lambda q: q.stat().st_mtime)
+        if src != dst and (not dst.exists() or src.stat().st_mtime > dst.stat().st_mtime + 1 or src.read_bytes() != dst.read_bytes()):
+            try: dst.write_bytes(src.read_bytes()); print("  브리프 갱신:", name, "←", src.relative_to(ROOT).as_posix(), flush=True)
+            except Exception as e: print("  브리프 복사 실패:", name, e)
+
 def main(argv):
-    files = list(CODE)
+    try: sync_briefs()
+    except Exception as e: print("  브리프 동기화 실패:", e)
+    files = list(CODE) + list(BRIEF)             # 브리프 PDF 는 매 빌드 함께 확인 (동일하면 건너뜀)
     if "--brief" in argv: files = list(BRIEF)   # 브리프 PDF 만 업로드 (코드 미포함)
     if "--chat" in argv: files += CHAT
     if "--data" in argv or "--all" in argv: files += DATA
