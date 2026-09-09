@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 23:44",
+ "updated": "2026-09-09 23:55",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,340 · 22:24 Yahoo",
- "idr_per_krw": 13.0989,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,339 · 22:24 Yahoo",
+ "idr_per_krw": 13.1015,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7637.85,
+   "px": 7641.39,
    "prev": 7673.52,
-   "pct": -0.46,
-   "asof": "23:40",
+   "pct": -0.42,
+   "asof": "23:50",
    "live": true,
    "spark": [
     7653.65,
@@ -15122,17 +15122,19 @@
     7630.64,
     7635.5,
     7636.96,
-    7637.85
+    7638.96,
+    7638.91,
+    7641.39
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26245.54,
+   "px": 26264.56,
    "prev": 26421.41,
-   "pct": -0.67,
-   "asof": "23:40",
+   "pct": -0.59,
+   "asof": "23:50",
    "live": true,
    "spark": [
     26328.66,
@@ -15173,17 +15175,19 @@
     26211.36,
     26232.49,
     26240.24,
-    26245.54
+    26252.52,
+    26253.09,
+    26264.56
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52433.66,
+   "px": 52457.7,
    "prev": 52786.07,
-   "pct": -0.67,
-   "asof": "23:40",
+   "pct": -0.62,
+   "asof": "23:50",
    "live": true,
    "spark": [
     52496.92,
@@ -15224,7 +15228,9 @@
     52380.18,
     52410.7,
     52421.41,
-    52433.66
+    52442.0,
+    52448.17,
+    52457.7
    ]
   },
   {
@@ -16144,6 +16150,18 @@
    "t_id": "Proyeksi IHSG Rabu 9 September 2026: Berpeluang Menguat, Cek Rekomendasi 4 Saham Pilihan"
   },
   {
+   "ts": "2026-09-09T14:30:00+07:00",
+   "date": "2026-09-09",
+   "time": "14:30",
+   "src": "IDNFinancials",
+   "t": "BBCA’s loans reached IDR1,036 trillion, while NPL fell to 1.9%",
+   "tags": [
+    "BBCA"
+   ],
+   "url": "https://www.idnfinancials.com/news/68603/bbcas-loans-reached-idr1-036-trillion-while-npl-fell-to-1-9",
+   "img": "https://photos.idnfinancials.com/_idn/2025/BBCA%20%282%29.png"
+  },
+  {
    "ts": "2026-09-09T14:23:06+07:00",
    "date": "2026-09-09",
    "time": "14:23",
@@ -16603,9 +16621,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-09T23:43:14.542442+07:00",
+   "ts": "2026-09-09T23:53:06+07:00",
    "date": "2026-09-09",
-   "time": "23:43",
+   "time": "23:53",
    "src": "Jawa Pos",
    "t": "Pimpin BMKS OJK, Sarjito Targetkan Indonesia Bisa Tentukan Harga Komoditas",
    "tags": [],
@@ -17123,9 +17141,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.81",
-   "d": 0.04,
-   "ytd": 0.54,
+   "v": "98.77",
+   "d": -0.0,
+   "ytd": 0.5,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17135,9 +17153,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.25",
-   "d": 2.2,
-   "ytd": 67.62,
+   "v": "95.73",
+   "d": 1.65,
+   "ytd": 66.72,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17147,9 +17165,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,445.2",
-   "d": 0.56,
-   "ytd": 2.76,
+   "v": "4,452.1",
+   "d": 0.72,
+   "ytd": 2.92,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -24684,7 +24702,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 376,
+  "pc_age_min": 387,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
