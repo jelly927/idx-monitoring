@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 12:17",
+ "updated": "2026-09-09 12:25",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,550 · USD/KRW 1,336 · 11:59 Yahoo",
- "idr_per_krw": 13.1322,
+ "fx_basis": "13.14 IDR/KRW · USD/IDR 17,550 · USD/KRW 1,336 · 11:59 Yahoo",
+ "idr_per_krw": 13.1389,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -341,7 +341,7 @@
   "value_idr": 15709984999251,
   "volume": 35150343143,
   "rank_src": "Yahoo 15분 지연 · 835종목 · 외국인·공시 PC 09-09 12:13",
-  "rank_asof": "12:16",
+  "rank_asof": "12:23",
   "rank_date": "2026-09-09",
   "adv": 289,
   "dec": 372,
@@ -15336,10 +15336,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7068.4,
+   "px": 7060.75,
    "prev": 7006.24,
-   "pct": 0.89,
-   "asof": "11:55",
+   "pct": 0.78,
+   "asof": "12:00",
    "live": true,
    "spark": [
     6998.61,
@@ -15401,17 +15401,18 @@
     7066.06,
     7064.5,
     7067.07,
-    7068.4
+    7064.78,
+    7060.75
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65212.05,
+   "px": 65193.45,
    "prev": 65370.42,
-   "pct": -0.24,
-   "asof": "12:00",
+   "pct": -0.27,
+   "asof": "12:05",
    "live": true,
    "spark": [
     65479.27,
@@ -15464,17 +15465,18 @@
     65316.39,
     65265.24,
     65296.41,
-    65212.05
+    65211.74,
+    65193.45
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25308.57,
+   "px": 25265.01,
    "prev": 25317.18,
-   "pct": -0.03,
-   "asof": "12:00",
+   "pct": -0.21,
+   "asof": "12:05",
    "live": true,
    "spark": [
     25189.55,
@@ -15509,7 +15511,8 @@
     25317.63,
     25316.87,
     25316.87,
-    25308.57
+    25274.79,
+    25265.01
    ]
   }
  ],
@@ -15907,7 +15910,7 @@
     "INRU"
    ],
    "url": "https://www.idnfinancials.com/news/68563/17-year-export-manipulation-makes-sukanto-tanoto-backed-inru-a-suspect",
-   "img": "https://photo2.idnfinancials.com/fly/idn/adhy-2026/tokoh/sukanto-tanoto/Sukanto-Tanoto-2.jpg",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/INRU-09092026.jpg",
    "t_ko": "17년간 수출 조작 — Sukanto Tanoto 계열 INRU 피의자 입건",
    "t_id": "Manipulasi Ekspor 17 Tahun, INRU Milik Sukanto Tanoto Jadi Tersangka"
   },
@@ -16428,6 +16431,28 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-09T12:20:00+07:00",
+   "date": "2026-09-09",
+   "time": "12:20",
+   "src": "Bloomberg Technoz",
+   "t": "Kemenhut Tangkap Pelaku Karhutla di Taman Nasional Baluran",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121018/kemenhut-tangkap-pelaku-karhutla-di-taman-nasional-baluran",
+   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260812090301.jpg",
+   "t_id": "Kemenhut Tangkap Pelaku Karhutla di Taman Nasional Baluran"
+  },
+  {
+   "ts": "2026-09-09T12:14:15+07:00",
+   "date": "2026-09-09",
+   "time": "12:14",
+   "src": "Detik",
+   "t": "BGN Larang Susu Kental Manis hingga Minuman Rasa Susu di Menu MBG",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8655118/bgn-larang-susu-kental-manis-hingga-minuman-rasa-susu-di-menu-mbg",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/09/30/ilustrasi-makan-siang-gratis-1759218011364_169.jpeg?w=360&q=90",
+   "t_id": "BGN Larang Susu Kental Manis hingga Minuman Rasa Susu di Menu MBG"
+  },
+  {
    "ts": "2026-09-09T12:01:57+07:00",
    "date": "2026-09-09",
    "time": "12:01",
@@ -16436,8 +16461,8 @@
    "tags": [],
    "url": "https://www.medcom.id/nasional/peristiwa/lKY3YnVb-ini-alasan-karhutla-di-lahan-gambut-susah-dipadamkan",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1840961/JsHVWf29FO.jpg?w=720",
-   "t_id": "Ini Alasan Karhutla di Lahan Gambut Susah Dipadamkan",
-   "t_ko": "이것이 바로 이탄지에서 발생한 산불과 육지 화재를 진화하기 어려운 이유입니다."
+   "t_ko": "이것이 바로 이탄지에서 발생한 산불과 육지 화재를 진화하기 어려운 이유입니다.",
+   "t_id": "Ini Alasan Karhutla di Lahan Gambut Susah Dipadamkan"
   },
   {
    "ts": "2026-09-09T12:00:00+07:00",
@@ -16446,7 +16471,9 @@
    "src": "Bloomberg",
    "t": "Spanish Defense Tycoon Plots Family IPO After Shock Indra Exit",
    "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-09/spanish-defense-tycoon-plots-family-ipo-after-shock-indra-exit"
+   "url": "https://www.bloomberg.com/news/articles/2026-09-09/spanish-defense-tycoon-plots-family-ipo-after-shock-indra-exit",
+   "t_ko": "Spanish 방산 재벌, 충격적 Indra 사임 후 가족 기업 IPO 추진",
+   "t_id": "Taipan Pertahanan Spanyol Siapkan IPO Perusahaan Keluarga usai Hengkang Mendadak dari Indra"
   },
   {
    "ts": "2026-09-09T11:54:26+07:00",
@@ -16754,30 +16781,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2024/05/image-20240521204043.jpg",
    "t_ko": "Pegadaian 금 가격 전 품목 하락 — 전체 목록",
    "t_id": "Harga Emas di Pegadaian Turun Semua, Ini Daftar Lengkapnya"
-  },
-  {
-   "ts": "2026-09-09T10:45:00+07:00",
-   "date": "2026-09-09",
-   "time": "10:45",
-   "src": "Bloomberg Technoz",
-   "t": "Kemhan: Helikopter Jepang Tangani Karhutla Pekan Depan",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121008/kemhan-helikopter-jepang-tangani-karhutla-pekan-depan",
-   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260821130630.jpg",
-   "t_ko": "국방부: 일본 헬리콥터, 다음 주 산불 진화 투입",
-   "t_id": "Kemhan: Helikopter Jepang Tangani Karhutla Pekan Depan"
-  },
-  {
-   "ts": "2026-09-09T10:45:00+07:00",
-   "date": "2026-09-09",
-   "time": "10:45",
-   "src": "Katadata",
-   "t": "Hadapi Musim Paceklik, Pemerintah Tambah 1 Juta Ton Beras SPHP",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6aa0d66b1d737/hadapi-musim-paceklik-pemerintah-tambah-1-juta-ton-beras-sphp",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/19/2026_08_19-12_18_00_6a6b96de-9b94-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "춘궁기 대응 — 정부, SPHP 쌀 100만톤 추가 공급",
-   "t_id": "Hadapi Musim Paceklik, Pemerintah Tambah 1 Juta Ton Beras SPHP"
   }
  ],
  "kisi_news": [
@@ -16952,8 +16955,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.13",
-   "d": -0.06,
-   "ytd": 13.04,
+   "d": -0.09,
+   "ytd": 13.01,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16988,7 +16991,7 @@
    "k": "달러 인덱스 (DXY)",
    "v": "98.74",
    "d": -0.04,
-   "ytd": 0.46,
+   "ytd": 0.47,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16998,9 +17001,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "94.02",
-   "d": -0.17,
-   "ytd": 63.74,
+   "v": "93.95",
+   "d": -0.62,
+   "ytd": 63.62,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17010,9 +17013,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,426.6",
-   "d": 0.14,
-   "ytd": 2.33,
+   "v": "4,431.3",
+   "d": 0.21,
+   "ytd": 2.44,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17034,9 +17037,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,677",
-   "d": -0.59,
-   "ytd": -0.03,
+   "v": "16,672",
+   "d": -0.62,
+   "ytd": -0.06,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -17807,7 +17810,7 @@
    "imp": 2,
    "exp": null,
    "prev": "3.6%",
-   "act": null,
+   "act": "3.6%",
    "src": "investing.com",
    "title_ko": "8월 뉴욕 연은 1년 기대인플레이션",
    "title_id": "Ekspektasi Inflasi Konsumen 1 Tahun The Fed NY (Agu)"
@@ -18303,7 +18306,7 @@
    "country": "US",
    "title": "Continuing Jobless Claims",
    "imp": 2,
-   "exp": null,
+   "exp": "205K",
    "prev": "1,779K",
    "act": null,
    "src": "investing.com",
@@ -18345,7 +18348,7 @@
    "country": "US",
    "title": "Existing Home Sales  (Aug)",
    "imp": 3,
-   "exp": "4.03M",
+   "exp": "3.98M",
    "prev": "4.06M",
    "act": null,
    "src": "investing.com",
@@ -18365,6 +18368,20 @@
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
    "title_id": "GDPNow The Fed Atlanta (Q3)"
+  },
+  {
+   "date": "2026-09-10",
+   "time": "23:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "Crude Oil Inventories",
+   "imp": 3,
+   "exp": null,
+   "prev": "-4.450M",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "EIA 원유 재고",
+   "title_id": "Stok Minyak Mentah EIA"
   },
   {
    "date": "2026-09-10",
@@ -18509,6 +18526,20 @@
    "src": "investing.com",
    "title_ko": "30년물 국채 입찰",
    "title_id": "Lelang Obligasi AS Tenor 30 Tahun"
+  },
+  {
+   "date": "2026-09-11",
+   "time": "03:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Fed's Balance Sheet",
+   "imp": 2,
+   "exp": null,
+   "prev": "6,737B",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "연준 대차대조표",
+   "title_id": "Neraca The Fed"
   },
   {
    "date": "2026-09-11",
@@ -23796,7 +23827,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 12:13",
-  "pc_age_min": 4,
+  "pc_age_min": 12,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
