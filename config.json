@@ -266,5 +266,9 @@
   "intraday_min_prev_value": 100000000.0,
   "_intraday_comment": "IDX StockSummary 는 장 마감 후에만 당일치를 내므로 장중(09~17시) 종목 랭킹은 Yahoo(15분 지연)로 만든다. intraday_min_prev_value: 전일 거래대금이 이 값(IDR) 이상인 종목만 조회(속도)",
   "github_repo": "jelly927/idx-monitoring",
-  "github_branch": "main"
+  "github_branch": "main",
+  "brief_dirs": [
+    "C:\\Users\\csd04\\Desktop\\데일리 시황"
+  ],
+  "_brief_comment": "Morning Brief 자동 배포: brief_dirs 폴더의 최신 YYMMDD_데일리시황_KISI.pptx(KO) / kisi_morning_brief_YYYYMMDD.pptx(ID) 를 매 빌드 PowerPoint 로 PDF 변환 → briefs/latest_ko.pdf·latest_id.pdf 로 GitHub 업로드 (brief_sync.py). 7일 넘은 파일은 무시"
 }
