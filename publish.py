@@ -17,7 +17,7 @@ API = "https://api.github.com"
 
 CODE = ["index.html", "fetch_data.py", "run.py", "selftest.py", "publish.py", "config.json", "tickers.json", "requirements.txt",
         "README.md", "DEPLOY.md", ".gitignore", "start.bat", "push.bat", "share.bat", "make_share.py", "setup_autostart.bat",
-        "prepare_upload.py", "upload.bat", "publish.bat", "make_chat_context.py", "publish_chat.bat", "publish_brief.bat", "DEPLOY_CHAT.md", "WEEKEND.md", ".github/workflows/update.yml", "worker/worker.js",
+        "prepare_upload.py", "upload.bat", "publish.bat", "make_chat_context.py", "publish_chat.bat", "publish_brief.bat", "brief_sync.py", "DEPLOY_CHAT.md", "WEEKEND.md", ".github/workflows/update.yml", "worker/worker.js",
         "data/manual.json", "data/idx_part.json", "data/cache/tr_claude.json", "data/cache/rss_map.json", "data/cache/tickers_all.json", "data/cache/kisi_news.json", "data/cache/sun10y_hist.json", "data/cache/sun10y_daily.json", "data/cache/dividends.json", "data/cache/ann_ai.json", "data/cache/stock_ai.json", "data/cache/index_ai.json", "data/banners.json"]
 CHAT = ["data/cache/chat_context.json"]
 BRIEF = ["briefs/latest_ko.pdf", "briefs/latest_id.pdf"]   # 데일리시황 PDF (KO/ID) — publish_brief.bat 이 사용
@@ -39,22 +39,17 @@ TRIGGER_MIN = 10   # 러너를 깨우는 최소 간격(분)
 def blob_sha(b: bytes) -> str:
     h = hashlib.sha1(); h.update(f"blob {len(b)}\0".encode()); h.update(b); return h.hexdigest()
 
-def sync_briefs():
-    """Morning Brief PDF 동기화: 폴더 루트 또는 briefs/ 에 저장된 latest_ko.pdf / latest_id.pdf 중 가장 최신 파일을 briefs/ 로 맞춘다.
-    (브리프는 별도 세션에서 만들어 이 폴더에 저장 → 다음 빌드의 publish 가 자동 업로드. 파일명은 latest_ko.pdf / latest_id.pdf 고정)"""
-    bd = ROOT / "briefs"; bd.mkdir(exist_ok=True)
-    for rel in BRIEF:
-        name = Path(rel).name; dst = bd / name
-        cands = [q for q in (ROOT / name, ROOT / "Downloads" / name, dst) if q.exists()]
-        if not cands: continue
-        src = max(cands, key=lambda q: q.stat().st_mtime)
-        if src != dst and (not dst.exists() or src.stat().st_mtime > dst.stat().st_mtime + 1 or src.read_bytes() != dst.read_bytes()):
-            try: dst.write_bytes(src.read_bytes()); print("  브리프 갱신:", name, "←", src.relative_to(ROOT).as_posix(), flush=True)
-            except Exception as e: print("  브리프 복사 실패:", name, e)
+def sync_briefs() -> str:
+    """Morning Brief PDF 동기화 — brief_sync.py: '데일리 시황' 폴더(config brief_dirs)의 최신 PPTX/PDF 를 PowerPoint 로 변환해
+    briefs/latest_ko.pdf · latest_id.pdf 로 만든다 (새 파일이 있을 때만). 루트에 직접 놓은 latest_*.pdf 는 수동 대체본으로 우선."""
+    try:
+        import brief_sync
+        return brief_sync.sync(quiet=True)
+    except Exception as e:
+        print("  브리프 동기화 실패:", str(e)[:120], flush=True); return ""
 
 def main(argv):
-    try: sync_briefs()
-    except Exception as e: print("  브리프 동기화 실패:", e)
+    bnote = sync_briefs()
     files = list(CODE) + list(BRIEF)             # 브리프 PDF 는 매 빌드 함께 확인 (동일하면 건너뜀)
     if "--brief" in argv: files = list(BRIEF)   # 브리프 PDF 만 업로드 (코드 미포함)
     if "--chat" in argv: files += CHAT
@@ -95,7 +90,7 @@ def main(argv):
             print("  실패:", rel, pr.status_code, pr.text[:120]); fail += 1; break
         else:
             print("  실패(재시도 초과):", rel); fail += 1
-    msg = f"publish: 올림 {up} · 동일 {skip} · 실패 {fail}  →  https://github.com/{REPO}"
+    msg = f"publish: 올림 {up} · 동일 {skip} · 실패 {fail}" + (f" · 브리프 {bnote}" if bnote else "") + f"  →  https://github.com/{REPO}"
     print(msg, flush=True)
     return 1 if fail else 0
 
