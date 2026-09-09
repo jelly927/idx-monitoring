@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 23:08",
+ "updated": "2026-09-09 23:29",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,339 · 22:24 Yahoo",
- "idr_per_krw": 13.1016,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,340 · 22:24 Yahoo",
+ "idr_per_krw": 13.0955,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -336,11 +336,11 @@
   "m1": 4.91,
   "value_idr": 16134522240878,
   "volume": 32530207402,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-09 17:28",
+  "rank_src": "Yahoo 15분 지연 · 835종목 · 종가 · 외국인·공시 PC 09-09 17:28",
   "rank_asof": null,
   "rank_date": "2026-09-09",
   "adv": 328,
-  "dec": 337,
+  "dec": 336,
   "unch": 171,
   "foreign_net_idr": -622541709678.7041,
   "foreign_buy": 4582577849975.8955,
@@ -4304,22 +4304,6 @@
    "lo": 530.0,
    "ratio": 0.5,
    "fnet": 1546649527.7708623,
-   "live": 0
-  },
-  {
-   "t": "BEST",
-   "n": "Bekasi Fajar Industrial Estate",
-   "px": 134.0,
-   "prev": 135.0,
-   "pct": -0.74,
-   "val": 7004122533.333334,
-   "vol": 51754600.0,
-   "sh": 9647311150,
-   "mcap": 1292739694100.0,
-   "hi": 139.0,
-   "lo": 133.0,
-   "ratio": 0.7,
-   "fnet": 503960741.9097047,
    "live": 0
   },
   {
@@ -14867,11 +14851,11 @@
   {
    "name": "부동산",
    "name_id": "Properti",
-   "n": 80,
+   "n": 79,
    "adv": 25,
-   "dec": 34,
-   "val": 308629609933.3333,
-   "mcap": 446330876510249.0,
+   "dec": 33,
+   "val": 301625487399.99994,
+   "mcap": 445038136816149.0,
    "top": [
     {
      "t": "MPRO",
@@ -15078,10 +15062,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7636.83,
+   "px": 7630.59,
    "prev": 7673.52,
-   "pct": -0.48,
-   "asof": "23:05",
+   "pct": -0.56,
+   "asof": "23:25",
    "live": true,
    "spark": [
     7653.65,
@@ -15115,17 +15099,21 @@
     7639.6,
     7636.62,
     7638.16,
-    7636.83
+    7630.43,
+    7631.16,
+    7628.93,
+    7630.88,
+    7630.59
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26252.46,
+   "px": 26211.26,
    "prev": 26421.41,
-   "pct": -0.64,
-   "asof": "23:05",
+   "pct": -0.8,
+   "asof": "23:25",
    "live": true,
    "spark": [
     26328.66,
@@ -15159,17 +15147,21 @@
     26261.56,
     26247.3,
     26252.76,
-    26252.46
+    26224.95,
+    26223.15,
+    26214.75,
+    26217.62,
+    26211.26
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52374.76,
+   "px": 52378.88,
    "prev": 52786.07,
-   "pct": -0.78,
-   "asof": "23:05",
+   "pct": -0.77,
+   "asof": "23:25",
    "live": true,
    "spark": [
     52496.92,
@@ -15203,7 +15195,11 @@
     52382.62,
     52360.22,
     52390.76,
-    52374.76
+    52346.07,
+    52348.89,
+    52329.55,
+    52358.57,
+    52378.88
    ]
   },
   {
@@ -16583,9 +16579,53 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-09T23:07:00.030099+07:00",
+   "ts": "2026-09-09T23:25:00+07:00",
    "date": "2026-09-09",
-   "time": "23:07",
+   "time": "23:25",
+   "src": "Media Indonesia",
+   "t": "Purbaya Tunggu Usulan Tambahan Anggaran OIKN Sebesar Rp15,8 triliun",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931702/purbaya-tunggu-usulan-tambahan-anggaran-oikn-sebesar-rp158-triliun",
+   "t_id": "Purbaya Tunggu Usulan Tambahan Anggaran OIKN Sebesar Rp15,8 triliun"
+  },
+  {
+   "ts": "2026-09-09T23:18:26+07:00",
+   "date": "2026-09-09",
+   "time": "23:18",
+   "src": "Jawa Pos",
+   "t": "ExxonMobil Bawa Solusi Tekan Downtime Alat Berat di Mining Indonesia 2026",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609090311/exxonmobil-bawa-solusi-tekan-downtime-alat-berat-di-mining-indonesia-2026",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/ilustrasi-alat-berat-dok-exxonmobil-D7rvJ.webp",
+   "t_ko": "ExxonMobil, Mining Indonesia 2026서 중장비 가동중단 축소 솔루션 공개",
+   "t_id": "ExxonMobil Bawa Solusi Tekan Downtime Alat Berat di Mining Indonesia 2026"
+  },
+  {
+   "ts": "2026-09-09T23:13:53+07:00",
+   "date": "2026-09-09",
+   "time": "23:13",
+   "src": "Detik",
+   "t": "MRT Ungkap Rencana 'Sulap' Kawasan Kota Tua",
+   "tags": [],
+   "url": "https://finance.detik.com/infrastruktur/d-8656204/mrt-ungkap-rencana-sulap-kawasan-kota-tua",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/17/rencana-revitalisasi-kawasan-kota-tua-jakarta-1781630437729_169.jpeg?w=360&q=90"
+  },
+  {
+   "ts": "2026-09-09T23:13:10+07:00",
+   "date": "2026-09-09",
+   "time": "23:13",
+   "src": "Jawa Pos",
+   "t": "Bea Cukai Kembali Sita 10,7 Juta Batang Rokok Ilegal yang Berpotensi Rugian Negara Rp8,05 Miliar",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609090307/bea-cukai-kembali-sita-107-juta-batang-rokok-ilegal-yang-berpotensi-rugian-negara-rp805-miliar",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/konferensi-pers-penindakan-rokok-ilegal-oleh-ditjen-bea-dan-cukai-jakarta-istimewa-6sBO6.webp",
+   "t_ko": "관세청, 불법 담배 1,070만 개비 추가 압수 — 국고 손실 Rp80.5억",
+   "t_id": "Bea Cukai Kembali Sita 10,7 Juta Batang Rokok Ilegal yang Berpotensi Rugian Negara Rp8,05 Miliar"
+  },
+  {
+   "ts": "2026-09-09T23:12:57+07:00",
+   "date": "2026-09-09",
+   "time": "23:12",
    "src": "Jawa Pos",
    "t": "MA Resmi Lantik Sarjito jadi Kepala Eksekutif BMKS OJK",
    "tags": [],
@@ -16595,16 +16635,15 @@
    "t_id": "MA Resmi Lantik Sarjito jadi Kepala Eksekutif BMKS OJK"
   },
   {
-   "ts": "2026-09-09T23:07:00.026592+07:00",
+   "ts": "2026-09-09T23:06:00+07:00",
    "date": "2026-09-09",
-   "time": "23:07",
-   "src": "Jawa Pos",
-   "t": "Bea Cukai Kembali Sita 10,7 Juta Batang Rokok Ilegal yang Berpotensi Rugian Negara Rp8,05 Miliar",
+   "time": "23:06",
+   "src": "Katadata",
+   "t": "Prabowo Tanggapi Pidato AHY yang Sempat Picu Tafsir Politik 2029",
    "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609090307/bea-cukai-kembali-sita-107-juta-batang-rokok-ilegal-yang-berpotensi-rugian-negara-rp805-miliar",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/konferensi-pers-penindakan-rokok-ilegal-oleh-ditjen-bea-dan-cukai-jakarta-istimewa-6sBO6.webp",
-   "t_ko": "관세청, 불법 담배 1,070만 개비 추가 압수 — 국고 손실 Rp80.5억",
-   "t_id": "Bea Cukai Kembali Sita 10,7 Juta Batang Rokok Ilegal yang Berpotensi Rugian Negara Rp8,05 Miliar"
+   "url": "https://katadata.co.id/berita/nasional/6aa183f9df8b5/prabowo-tanggapi-pidato-ahy-yang-sempat-picu-tafsir-politik-2029",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/03/31/2025_03_31-14_20_00_d17c02f0-0e0f-11f0-ac65-499bbafb337e_620x413_thumb.jpg",
+   "t_id": "Prabowo Tanggapi Pidato AHY yang Sempat Picu Tafsir Politik 2029"
   },
   {
    "ts": "2026-09-09T23:04:51+07:00",
@@ -16616,6 +16655,15 @@
    "url": "https://www.jawapos.com/finance/2609090298/airlangga-wni-usia-17-tahun-otomatis-dapat-ktp-beserta-nomor-rekening-dan-saldo-rp-50000",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/06/23/menteri-koordinator-bidang-perekonomian-airlangga-hartarto-memberikan-paparan-pada-konferensi-pers-stimulus-pertumbuhan-ekonomi-semester-2-tahun-2026-di-jakarta-senin-2262026-salman-toyibijawa-pos-GR2Ys.webp",
    "t_id": "Airlangga: WNI Usia 17 Tahun Otomatis Dapat KTP Beserta Nomor Rekening dan Saldo Rp 50.000"
+  },
+  {
+   "ts": "2026-09-09T23:04:33+07:00",
+   "date": "2026-09-09",
+   "time": "23:04",
+   "src": "Bloomberg",
+   "t": "Trump’s Latest Trade Threat Weighs on Canadian Firms With US Contracts",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-09/trump-s-latest-trade-threat-weighs-on-canadian-firms-with-us-contracts"
   },
   {
    "ts": "2026-09-09T22:48:07+07:00",
@@ -16767,16 +16815,6 @@
    "url": "https://mediaindonesia.com/politik-dan-hukum/931664/prabowo-partai-demokrat-tidak-bakar-bakar"
   },
   {
-   "ts": "2026-09-09T21:44:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:44",
-   "src": "Media Indonesia",
-   "t": "Bulog Minta Jadi Distributor Tunggal Minyakita, Mendag: UMKM harus Dapat Jatah",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931661/bulog-minta-jadi-distributor-tunggal-minyakita-mendag-umkm-harus-dapat-jatah",
-   "t_id": "Bulog Minta Jadi Distributor Tunggal Minyakita, Mendag: UMKM harus Dapat Jatah"
-  },
-  {
    "ts": "2026-09-09T21:42:00+07:00",
    "date": "2026-09-09",
    "time": "21:42",
@@ -16786,36 +16824,6 @@
    "url": "https://katadata.co.id/finansial/keuangan/6aa170712eaef/purbaya-belum-restui-penambahan-anggaran-untuk-ikn-rp-15-8-triliun",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/03/21/2026_03_21-21_01_00_52f5b3b4-25aa-11f1-b1cf-0242ac120004_620x413_thumb.jpg",
    "t_id": "Purbaya Belum Restui Penambahan Anggaran untuk IKN Rp 15,8 Triliun"
-  },
-  {
-   "ts": "2026-09-09T21:39:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:39",
-   "src": "Media Indonesia",
-   "t": "Kementerian HAM Rekomendasikan BGN Bentuk Unit Pemulihan Korban MBG",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/931655/kementerian-ham-rekomendasikan-bgn-bentuk-unit-pemulihan-korban-mbg",
-   "t_ko": "인권부, BGN에 MBG 피해자 복구 부서 구성 권고"
-  },
-  {
-   "ts": "2026-09-09T21:37:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:37",
-   "src": "Media Indonesia",
-   "t": "Digitalisasi Perkuat Keselamatan Kerja di Tengah Ekspansi Industri Tambang",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931660/digitalisasi-perkuat-keselamatan-kerja-di-tengah-ekspansi-industri-tambang",
-   "t_id": "Digitalisasi Perkuat Keselamatan Kerja di Tengah Ekspansi Industri Tambang"
-  },
-  {
-   "ts": "2026-09-09T21:36:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:36",
-   "src": "Media Indonesia",
-   "t": "BI: Indeks Keyakinan Konsumen Meningkat pada Agustus 2026",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931654/bi-indeks-keyakinan-konsumen-meningkat-pada-agustus-2026",
-   "t_id": "BI: Indeks Keyakinan Konsumen Meningkat pada Agustus 2026"
   },
   {
    "ts": "2026-09-09T21:32:39+07:00",
@@ -16879,17 +16887,6 @@
    "url": "https://katadata.co.id/finansial/makro/6aa166af3423e/den-wanti-wanti-capital-outflow-jumbo-dari-pasar-ri-jika-tak-ada-disiplin-fiskal",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/04/29/Tekanan_Outflow-2026_04_29-14_11_15_757babdb4a800bbf8b8e29cf4e975b73_620x413_thumb.png",
    "t_id": "DEN Wanti-Wanti Capital Outflow Jumbo dari Pasar RI jika Tak Ada Disiplin Fiskal"
-  },
-  {
-   "ts": "2026-09-09T20:57:30+07:00",
-   "date": "2026-09-09",
-   "time": "20:57",
-   "src": "Republika",
-   "t": "Harga Bitcoin Turun, Arus Dana ETF Mengalir Deras",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl3o3u416/harga-bitcoin-turun-arus-dana-etf-mengalir-deras",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_210104130006-294.png",
-   "t_id": "Harga Bitcoin Turun, Arus Dana ETF Mengalir Deras"
   }
  ],
  "kisi_news": [
@@ -17074,9 +17071,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.847%",
-   "d": 0.85,
-   "ytd": 16.43,
+   "v": "4.845%",
+   "d": 0.81,
+   "ytd": 16.38,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17097,9 +17094,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.82",
-   "d": 0.05,
-   "ytd": 0.55,
+   "v": "98.84",
+   "d": 0.07,
+   "ytd": 0.57,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17109,9 +17106,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.47",
-   "d": 2.43,
-   "ytd": 68.01,
+   "v": "96.37",
+   "d": 2.33,
+   "ytd": 67.83,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17121,9 +17118,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,443.8",
-   "d": 0.53,
-   "ytd": 2.73,
+   "v": "4,437.4",
+   "d": 0.38,
+   "ytd": 2.58,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17145,9 +17142,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,892",
-   "d": 0.69,
-   "ytd": 1.26,
+   "v": "16,872",
+   "d": 0.57,
+   "ytd": 1.14,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24658,7 +24655,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 340,
+  "pc_age_min": 361,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
