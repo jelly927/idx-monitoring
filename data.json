@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 22:07",
+ "updated": "2026-09-09 22:28",
  "delay_min": 0,
- "fx_basis": "13.11 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,339 · 21:55 Yahoo",
- "idr_per_krw": 13.1087,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,340 · 22:24 Yahoo",
+ "idr_per_krw": 13.0969,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7641.14,
+   "px": 7626.27,
    "prev": 7673.52,
-   "pct": -0.42,
-   "asof": "22:05",
+   "pct": -0.62,
+   "asof": "22:25",
    "live": true,
    "spark": [
     7653.65,
@@ -15103,17 +15103,21 @@
     7650.93,
     7651.94,
     7642.98,
-    7641.14
+    7636.29,
+    7630.75,
+    7635.05,
+    7624.85,
+    7626.27
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26270.68,
+   "px": 26189.66,
    "prev": 26421.41,
-   "pct": -0.57,
-   "asof": "22:05",
+   "pct": -0.88,
+   "asof": "22:25",
    "live": true,
    "spark": [
     26328.66,
@@ -15135,17 +15139,21 @@
     26303.43,
     26315.96,
     26280.06,
-    26270.68
+    26250.25,
+    26214.29,
+    26247.94,
+    26186.12,
+    26189.66
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52409.69,
+   "px": 52354.17,
    "prev": 52786.07,
-   "pct": -0.71,
-   "asof": "22:05",
+   "pct": -0.82,
+   "asof": "22:25",
    "live": true,
    "spark": [
     52496.92,
@@ -15167,7 +15175,11 @@
     52530.52,
     52490.46,
     52406.63,
-    52409.69
+    52394.77,
+    52373.35,
+    52356.98,
+    52330.2,
+    52354.17
    ]
   },
   {
@@ -15516,18 +15528,6 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6aa168e188db7/intip-kisi-kisi-dividen-interim-ketiga-bca-bbca-hingga-bidik-kredit-tumbuh-10",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/03/21/Logo_Bank_Central_Asia_BCA-2025_03_21-15_39_06_df86aafa4f1153fc487567ebec7ec74f_620x413_thumb.jpg"
-  },
-  {
-   "ts": "2026-09-09T21:03:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:03",
-   "src": "Media Indonesia",
-   "t": "Perkuat Struktur Regional, Bank Mandiri Taspen Terapkan Sistem RCEO di 10 Wilayah",
-   "tags": [
-    "BMRI"
-   ],
-   "url": "https://mediaindonesia.com/ekonomi/931641/perkuat-struktur-regional-bank-mandiri-taspen-terapkan-sistem-rceo-di-10-wilayah",
-   "t_id": "Perkuat Struktur Regional, Bank Mandiri Taspen Terapkan Sistem RCEO di 10 Wilayah"
   },
   {
    "ts": "2026-09-09T20:52:48+07:00",
@@ -16173,20 +16173,6 @@
    "t_id": "Minim tender baru, JSMR bidik investasi di tol eksisting"
   },
   {
-   "ts": "2026-09-09T12:24:39+07:00",
-   "date": "2026-09-09",
-   "time": "12:24",
-   "src": "Detik",
-   "t": "Elnusa Petrofin Salurkan Bantuan bagi Pengungsi Erupsi Gunung Sinabung",
-   "tags": [
-    "ELSA"
-   ],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8655132/elnusa-petrofin-salurkan-bantuan-bagi-pengungsi-erupsi-gunung-sinabung",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/elnusa-petrofin-salurkan-bantuan-bagi-pengungsi-erupsi-gunung-sinabung-1788931445262_169.jpeg?w=360&q=90",
-   "t_ko": "Elnusa Petrofin, Sinabung 화산 분화 이재민 지원",
-   "t_id": "Elnusa Petrofin Salurkan Bantuan bagi Pengungsi Erupsi Gunung Sinabung"
-  },
-  {
    "ts": "2026-09-09T12:19:29+07:00",
    "date": "2026-09-09",
    "time": "12:19",
@@ -16576,6 +16562,85 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-09T22:20:00+07:00",
+   "date": "2026-09-09",
+   "time": "22:20",
+   "src": "Media Indonesia",
+   "t": "Paparan Abu Vulkanik Gunung Anak Krakatau masih Dirasakan Warga di Kota Tasikmalaya",
+   "tags": [],
+   "url": "https://mediaindonesia.com/jabar/berita/931682/paparan-abu-vulkanik-gunung-anak-krakatau-masih-dirasakan-warga-di-kota-tasikmalaya",
+   "t_id": "Paparan Abu Vulkanik Gunung Anak Krakatau masih Dirasakan Warga di Kota Tasikmalaya"
+  },
+  {
+   "ts": "2026-09-09T22:19:00+07:00",
+   "date": "2026-09-09",
+   "time": "22:19",
+   "src": "Media Indonesia",
+   "t": "Industri Tambang Indonesia Mulai Melirik Elektrifikasi Kendaraan Berat",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931683/industri-tambang-indonesia-mulai-melirik-elektrifikasi-kendaraan-berat"
+  },
+  {
+   "ts": "2026-09-09T22:18:00+07:00",
+   "date": "2026-09-09",
+   "time": "22:18",
+   "src": "Media Indonesia",
+   "t": "Prabowo Pilih Pidato Tanpa Teks: Kalau Salah Tinggal Minta Maaf",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/931684/prabowo-pilih-pidato-tanpa-teks-kalau-salah-tinggal-minta-maaf"
+  },
+  {
+   "ts": "2026-09-09T22:11:02+07:00",
+   "date": "2026-09-09",
+   "time": "22:11",
+   "src": "Detik",
+   "t": "Ini Kesalahan Promosi di WhatsApp yang Bikin Calon Customer Kabur",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656172/ini-kesalahan-promosi-di-whatsapp-yang-bikin-calon-customer-kabur",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/detikevent-whatsapp-marketing-1788966625671_169.jpeg?w=360&q=90",
+   "t_id": "Ini Kesalahan Promosi di WhatsApp yang Bikin Calon Customer Kabur"
+  },
+  {
+   "ts": "2026-09-09T22:10:00+07:00",
+   "date": "2026-09-09",
+   "time": "22:10",
+   "src": "Media Indonesia",
+   "t": "Erupsi Gunung Lewotolok Picu Krisis Air Bersih, 19.998 Warga di 26 Desa Terdampak",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931672/erupsi-gunung-lewotolok-picu-krisis-air-bersih-19998-warga-di-26-desa-terdampak",
+   "t_id": "Erupsi Gunung Lewotolok Picu Krisis Air Bersih, 19.998 Warga di 26 Desa Terdampak"
+  },
+  {
+   "ts": "2026-09-09T22:09:00+07:00",
+   "date": "2026-09-09",
+   "time": "22:09",
+   "src": "Media Indonesia",
+   "t": "Prabowo: Pidato AHY Bukti Komitmen Demokrat Bekerja untuk Rakyat",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/931677/prabowo-pidato-ahy-bukti-komitmen-demokrat-bekerja-untuk-rakyat",
+   "t_id": "Prabowo: Pidato AHY Bukti Komitmen Demokrat Bekerja untuk Rakyat"
+  },
+  {
+   "ts": "2026-09-09T22:03:52+07:00",
+   "date": "2026-09-09",
+   "time": "22:03",
+   "src": "Detik",
+   "t": "Pembukuan Usaha Jasa Kamu Masih Manual? Pelajari Accurate Lewat Pelatihan Ini!",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656160/pembukuan-usaha-jasa-kamu-masih-manual-pelajari-accurate-lewat-pelatihan-ini",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/detikevent-accurate-service-company-1788883745552_169.jpeg?w=360&q=90",
+   "t_id": "Pembukuan Usaha Jasa Kamu Masih Manual? Pelajari Accurate Lewat Pelatihan Ini!"
+  },
+  {
+   "ts": "2026-09-09T22:02:22+07:00",
+   "date": "2026-09-09",
+   "time": "22:02",
+   "src": "Bloomberg",
+   "t": "US Treasury Triples Long-Dated Debt Buyback to $6 Billion",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-09/us-more-than-doubles-long-dated-debt-buyback-size-to-6-billion"
+  },
+  {
    "ts": "2026-09-09T21:52:00+07:00",
    "date": "2026-09-09",
    "time": "21:52",
@@ -16705,16 +16770,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/presiden-prabowo-subianto-dalam-hut-ke-25-demokrat-1788961314954_169.png?w=360&q=90"
   },
   {
-   "ts": "2026-09-09T21:14:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:14",
-   "src": "Media Indonesia",
-   "t": "Wakil Ketua DPR RI Desak BGN dan Pemda Tanggung Biaya Pengobatan Korban Keracunan MBG",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/931638/wakil-ketua-dpr-ri-desak-bgn-dan-pemda-tanggung-biaya-pengobatan-korban-keracunan-mbg",
-   "t_id": "Wakil Ketua DPR RI Desak BGN dan Pemda Tanggung Biaya Pengobatan Korban Keracunan MBG"
-  },
-  {
    "ts": "2026-09-09T21:10:09+07:00",
    "date": "2026-09-09",
    "time": "21:10",
@@ -16724,45 +16779,6 @@
    "url": "https://www.medcom.id/ekonomi/bisnis/GNl1mDmb-anak-muda-makin-pilih-minuman-tanpa-gula-bisnis-ini-melihat-peluang-besar",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1841163/jt63SFrRMC.jpg?w=720",
    "t_id": "Anak Muda Makin Pilih Minuman Tanpa Gula, Bisnis Ini Melihat Peluang Besar"
-  },
-  {
-   "ts": "2026-09-09T21:10:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:10",
-   "src": "Media Indonesia",
-   "t": "Serangan Houthi ke Saudi Picu Eskalasi Regional, Harga Minyak Dunia Melonjak",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/931636/serangan-houthi-ke-saudi-picu-eskalasi-regional-harga-minyak-dunia-melonjak",
-   "t_id": "Serangan Houthi ke Saudi Picu Eskalasi Regional, Harga Minyak Dunia Melonjak"
-  },
-  {
-   "ts": "2026-09-09T21:09:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:09",
-   "src": "Media Indonesia",
-   "t": "Sebaran Abu Vulkanik Gunung Anak Krakatau ke Arah Barat Laut, Warga Diimbau Tetap Pakai Masker",
-   "tags": [],
-   "url": "https://mediaindonesia.com/humaniora/931637/sebaran-abu-vulkanik-gunung-anak-krakatau-ke-arah-barat-laut-warga-diimbau-tetap-pakai-masker",
-   "t_id": "Sebaran Abu Vulkanik Gunung Anak Krakatau ke Arah Barat Laut, Warga Diimbau Tetap Pakai Masker"
-  },
-  {
-   "ts": "2026-09-09T21:08:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:08",
-   "src": "Media Indonesia",
-   "t": "Waspada Dampak Abu Vulkanik, Ini Nutrisi Penting untuk Jaga Imun Tubuh",
-   "tags": [],
-   "url": "https://mediaindonesia.com/humaniora/931630/waspada-dampak-abu-vulkanik-ini-nutrisi-penting-untuk-jaga-imun-tubuh",
-   "t_id": "Waspada Dampak Abu Vulkanik, Ini Nutrisi Penting untuk Jaga Imun Tubuh"
-  },
-  {
-   "ts": "2026-09-09T21:04:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:04",
-   "src": "Media Indonesia",
-   "t": "Kualitas Udara Singkawang tidak Sehat, ISPU Capai 180 akibat Karhutla",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931628/kualitas-udara-singkawang-tidak-sehat-ispu-capai-180-akibat-karhutla"
   },
   {
    "ts": "2026-09-09T21:03:00+07:00",
@@ -16849,38 +16865,6 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/nasional/6aa15d12588ef/prabowo-perketat-aturan-pembukaan-lahan-dengan-cara-dibakar",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/09/2026_09_09-17_39_00_4be5228c-ac44-11f1-9cb1-0242ac12000a_620x413_thumb.jpg"
-  },
-  {
-   "ts": "2026-09-09T20:15:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:15",
-   "src": "Detik",
-   "t": "Otorita IKN Minta Tambah Rp 15,8 Triliun, Purbaya Jawab Begini",
-   "tags": [],
-   "url": "https://finance.detik.com/infrastruktur/d-8656017/otorita-ikn-minta-tambah-rp-15-8-triliun-purbaya-jawab-begini",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/22/ikn-buka-kunjungan-selama-libur-lebaran-2026-1774143191357_169.jpeg?w=360&q=90",
-   "t_id": "Otorita IKN Minta Tambah Rp 15,8 Triliun, Purbaya Jawab Begini"
-  },
-  {
-   "ts": "2026-09-09T20:08:59+07:00",
-   "date": "2026-09-09",
-   "time": "20:08",
-   "src": "Republika",
-   "t": "Jadi Bos Pengawas Bursa Mineral, Sarjito Yakin Indonesia Bakal Lebih Berdaulat",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl3luz490/jadi-bos-pengawas-bursa-mineral-sarjito-yakin-indonesia-bakal-lebih-berdaulat",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260909165639-859.png",
-   "t_id": "Jadi Bos Pengawas Bursa Mineral, Sarjito Yakin Indonesia Bakal Lebih Berdaulat"
-  },
-  {
-   "ts": "2026-09-09T20:00:12+07:00",
-   "date": "2026-09-09",
-   "time": "20:00",
-   "src": "Detik",
-   "t": "Bulog Minta Jatah Minyakita 100%, Mendag Tegaskan UMKM Harus Kebagian",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8655884/bulog-minta-jatah-minyakita-100-mendag-tegaskan-umkm-harus-kebagian",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/20/menteri-perdagangan-mendag-budi-santoso-1787211883943_169.jpeg?w=360&q=90"
   }
  ],
  "kisi_news": [
@@ -17053,9 +17037,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.10",
-   "d": -0.28,
-   "ytd": 12.79,
+   "v": "13.09",
+   "d": -0.36,
+   "ytd": 12.7,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17065,9 +17049,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.812%",
-   "d": 0.12,
-   "ytd": 15.59,
+   "v": "4.849%",
+   "d": 0.89,
+   "ytd": 16.48,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17088,9 +17072,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.66",
-   "d": -0.11,
-   "ytd": 0.39,
+   "v": "98.86",
+   "d": 0.09,
+   "ytd": 0.59,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17100,9 +17084,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.31",
-   "d": 2.26,
-   "ytd": 67.73,
+   "v": "96.39",
+   "d": 2.35,
+   "ytd": 67.87,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17112,9 +17096,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,462.0",
-   "d": 0.94,
-   "ytd": 3.15,
+   "v": "4,436.2",
+   "d": 0.36,
+   "ytd": 2.56,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17136,9 +17120,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,864",
-   "d": 0.52,
-   "ytd": 1.09,
+   "v": "16,872",
+   "d": 0.57,
+   "ytd": 1.14,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24649,7 +24633,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 279,
+  "pc_age_min": 300,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
