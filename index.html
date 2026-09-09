@@ -203,6 +203,9 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
 #ann.exp{max-height:62vh;overflow-y:auto}
 .ann .row .nm{position:relative}.ann .row .annpop{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:46;width:min(420px,80vw);background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.16);padding:10px 12px;font-size:12.5px;line-height:1.5;color:var(--ink);white-space:normal}
 .ann .row .nm:hover .annpop{display:block}.ann .row .annpop b{display:block;color:var(--brand);font-size:12px;margin-bottom:3px}.ann .row .annpop small{display:block;color:var(--ink3);font-size:10.5px;margin-top:6px}
+.n-item .b,.mn-item .b{position:relative}.n-item .b .annpop,.mn-item .b .annpop{display:none;position:absolute;left:0;top:calc(100% + 4px);z-index:46;width:min(440px,84vw);background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.16);padding:10px 12px;font-size:12.5px;line-height:1.5;color:var(--ink);white-space:normal;font-weight:400}
+.n-item .b:hover .annpop,.mn-item .b:hover .annpop{display:block}.n-item .b .annpop b,.mn-item .b .annpop b{display:block;color:var(--brand);font-size:12px;margin-bottom:3px}.n-item .b .annpop small,.mn-item .b .annpop small{display:block;color:var(--ink3);font-size:10.5px;margin-top:6px}
+.aichip{display:inline-block;font-size:9.5px;font-weight:800;color:var(--brand);border:1px solid var(--brand2);background:var(--brand2);border-radius:4px;padding:0 4px;margin-left:6px;vertical-align:1px;line-height:14px}
 .ann .row a.pdf{display:inline-block;font-size:10px;font-weight:800;color:var(--ink3);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:6px;vertical-align:1px;text-decoration:none}.ann .row a.pdf:hover{color:var(--brand);border-color:var(--brand)}
 .divline{background:var(--brand2);color:var(--brand);border-radius:8px;padding:8px 10px;font-size:12.5px;margin:0 0 8px}.divline b{margin-right:4px}
 #macro tr.th td{font-size:11px;color:var(--ink3);font-weight:700;padding-bottom:4px;border-bottom:1px solid var(--line)}
@@ -601,7 +604,7 @@ function hotList(){return [...(DATA?.news||[]),...(DATA?.market_news||[])].filte
 let hotI=0,hotTimer=null;
 function hotRender(){const l=hotList();if(!l.length){$('hot').textContent='—';$('hotcnt').textContent='';return;}
   hotI=hotI%l.length;const h=l[hotI];$('hot').textContent=`${h.src} · ${nTitle(h)}`;$('hotcnt').textContent=`${hotI+1} / ${l.length}`;
-  $('hotlist').innerHTML=l.slice(0,15).map(n=>`<div class="it"><span class="tm${n.t_est?' est':''}">${n.t_est?'~':''}${n.time}</span><a href="${n.url||'#'}" target="_blank" rel="noopener">${(n.tags||[]).slice(0,2).map(t=>`<span class="tg">${t}</span>`).join('')}${nTitle(n)}</a><span class="sr">${n.src}</span></div>`).join('');
+  $('hotlist').innerHTML=l.slice(0,15).map(n=>`<div class="it"><span class="tm${n.t_est?' est':''}">${n.t_est?'~':''}${n.time}</span><a href="${n.url||'#'}" target="_blank" rel="noopener" ${n.ai_ko?`title="${(LANG==='id'?(n.ai_id||n.ai_ko):n.ai_ko).replace(/"/g,'&quot;')}"`:''}>${(n.tags||[]).slice(0,2).map(t=>`<span class="tg">${t}</span>`).join('')}${nTitle(n)}</a><span class="sr">${n.src}</span></div>`).join('');
   clearInterval(hotTimer);hotTimer=setInterval(()=>{if($('hotbox').classList.contains('on'))return;hotI=(hotI+1)%l.length;const x=l[hotI];$('hot').textContent=`${x.src} · ${nTitle(x)}`;$('hotcnt').textContent=`${hotI+1} / ${l.length}`;},7000);}
 let hotCloseT=null;
 function hotOpen(on){clearTimeout(hotCloseT);if(on)$('hotbox').classList.add('on');else hotCloseT=setTimeout(()=>$('hotbox').classList.remove('on'),450);}   // 마우스가 잠깐 벗어나도 바로 닫히지 않게
@@ -618,7 +621,8 @@ function annPop(a){const s=LANG==='id'?(a.ai_id||a.ai_ko):a.ai_ko;if(!s)return''
 const idxCo=t=>`https://www.idx.co.id/id/perusahaan-tercatat/profil-perusahaan-tercatat/${encodeURIComponent(t||'')}`;   // 종목의 IDX 공시(Pengumuman) 페이지
 function newsLogo(n){const tg=n.tags||[];if(tg.length===1)return logo(tg[0]);if(tg.length>1)return`<div class="logo ik" title="${tg.join(' · ')}"><img alt="iKISI" src="${IKISI}"></div>`;if(n.img)return`<div class="logo ik"><img alt="" src="${n.img}" referrerpolicy="no-referrer" loading="lazy" onerror="this.parentNode.classList.add('none')"></div>`;return`<div class="logo none"></div>`;}
 const nDate=n=>n.date&&!String(n.time||'').includes('/')?' · '+n.date.slice(5).replace('-','/'):'';
-function newsItem(n){return`<div class="n-item"><div class="t${n.t_est?' est':''}" ${n.t_est?`title="${T('estTime')}"`:''}>${n.t_est?'~':''}${n.time}</div>${newsLogo(n)}<div class="b"><a href="${n.url||'#'}" target="_blank" rel="noopener">${nTitle(n)}</a><div class="m">${(n.tags||[]).map(t=>`<span class="tag ${t===newsTag?'on':''}" onclick="setTag('${t}')">${t}</span>`).join('')}<span class="src">${n.src}${nDate(n)}</span></div></div></div>`;}
+const aiChip=n=>n.ai_ko?`<span class="aichip">AI</span>`:'';
+function newsItem(n){return`<div class="n-item"><div class="t${n.t_est?' est':''}" ${n.t_est?`title="${T('estTime')}"`:''}>${n.t_est?'~':''}${n.time}</div>${newsLogo(n)}<div class="b"><a href="${n.url||'#'}" target="_blank" rel="noopener">${nTitle(n)}</a><div class="m">${(n.tags||[]).map(t=>`<span class="tag ${t===newsTag?'on':''}" onclick="setTag('${t}')">${t}</span>`).join('')}<span class="src">${n.src}${nDate(n)}</span>${aiChip(n)}</div>${annPop(n)}</div></div>`;}
 function renderNews(){const stock=DATA.news||[],market=DATA.market_news||[],kisi=DATA.kisi_news||[];const tags={};stock.forEach(n=>(n.tags||[]).forEach(t=>tags[t]=(tags[t]||0)+1));
   document.querySelectorAll('.news-mode .pill[data-f]').forEach(p=>p.classList.toggle('on',p.dataset.f===(newsMode==='all'?'':newsMode)));
   const showFilt=newsMode==='all'||newsMode==='stock';
@@ -629,7 +633,7 @@ function renderNews(){const stock=DATA.news||[],market=DATA.market_news||[],kisi
   else if(newsMode==='stock')list=stock.filter(f).map(n=>({...n,_k:'s'}));
   else list=stock.concat(market,kisi).filter(f).map(n=>({...n,_k:'s'})).sort((a,b)=>(b.ts||'').localeCompare(a.ts||''));   // 전체: 통일된 한 줄 형식(시각·로고/썸네일·제목)
   if(changed('news',[list,LANG,newsTag,newsMode]))$('news').innerHTML=list.map(n=>n._k==='m'?mnItem(n):newsItem(n)).join('')||`<div class="empty">${T('noNewsTag')}</div>`;}
-function mnItem(n){return`<div class="mn-item">${n.img?`<img class="th" src="${n.img}" referrerpolicy="no-referrer" loading="lazy" onerror="this.remove()">`:''}<div class="b"><a href="${n.url||'#'}" target="_blank" rel="noopener">${nTitle(n)}</a><div class="m">${(n.tags||[]).map(t=>`<span class="tag ${t===newsTag?'on':''}" onclick="setTag('${t}')">${t}</span>`).join('')}${n.t_est?'~':''}${n.time} · ${n.src}${nDate(n)}</div></div></div>`;}
+function mnItem(n){return`<div class="mn-item">${n.img?`<img class="th" src="${n.img}" referrerpolicy="no-referrer" loading="lazy" onerror="this.remove()">`:''}<div class="b"><a href="${n.url||'#'}" target="_blank" rel="noopener">${nTitle(n)}</a><div class="m">${(n.tags||[]).map(t=>`<span class="tag ${t===newsTag?'on':''}" onclick="setTag('${t}')">${t}</span>`).join('')}${n.t_est?'~':''}${n.time} · ${n.src}${nDate(n)}${aiChip(n)}</div>${annPop(n)}</div></div>`;}
 function setTag(t){newsTag=newsTag===t?null:t;if(newsMode==='market'||newsMode==='kisi')newsMode='all';showView('news');renderNews();}
 function setMode(m){newsMode=m;if(m==='market'||m==='kisi')newsTag=null;renderNews();}
 
