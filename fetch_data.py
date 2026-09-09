@@ -1304,8 +1304,28 @@ def _claude_cli():
     return None
 
 _CLAUDE_MODEL = {}
-def _claude_complete(prompt, key, model):
-    """프롬프트 → 응답 텍스트. 1) API 키가 있으면 Anthropic API  2) 없으면 Claude Code CLI(구독)  3) 둘 다 없으면 None."""
+def _claude_cli_run(prompt, cli_model=None, timeout=240):
+    """Claude Code CLI(Max 구독) 로 프롬프트 실행 → 텍스트. 실패 시 None."""
+    cli = _claude_cli()
+    if not cli: return None
+    import subprocess
+    wd = CACHE / "claude_cwd"; wd.mkdir(parents=True, exist_ok=True)          # 빈 폴더에서 실행 — 프로젝트 파일·CLAUDE.md 컨텍스트 차단
+    cmd = [cli, "-p", "--output-format", "text"] + (["--model", cli_model] if cli_model else [])
+    try:
+        r = subprocess.run(cmd, input=prompt, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout, cwd=str(wd))
+    except Exception as e:
+        log("Claude Code 실행 오류", str(e)[:100]); return None
+    if r.returncode != 0: log(f"Claude Code 실패 (exit {r.returncode}): {(r.stderr or r.stdout)[:120]}"); return None
+    return (r.stdout or "").strip()
+
+def _claude_complete(prompt, key, model, cli_model=None):
+    """프롬프트 → 응답 텍스트. 순서: 1) Claude Code CLI(Max 구독, 추가 비용 없음)  2) CLI 가 없거나 실패하면 Anthropic API 키  3) 둘 다 없으면 None.
+    config translate.claude_engine 을 "api" 로 두면 API 를 먼저 쓴다."""
+    engine = (CFG.get("translate") or {}).get("claude_engine", "cli")
+    if engine != "api" and _claude_cli():
+        out = _claude_cli_run(prompt, cli_model)
+        if out: return out
+        log("Claude Code 응답 없음 → API 시도")
     if key and not _GEM.get("claude_api_dead"):
         try:
             r = requests.post("https://api.anthropic.com/v1/messages", json={"model": model, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt}]}, timeout=90,
@@ -1316,18 +1336,11 @@ def _claude_complete(prompt, key, model):
             log(f"Claude API 번역 실패 {r.status_code} ({model}): {r.text[:120]}")
             if r.status_code in (400, 404) and model != "claude-sonnet-4-5" and not _CLAUDE_MODEL.get("fallback"):   # 자동 선택 모델이 거부되면 검증된 모델로 1회 재시도
                 _CLAUDE_MODEL["id"] = "claude-sonnet-4-5"; _CLAUDE_MODEL["fallback"] = True; log("Claude 번역 모델 → claude-sonnet-4-5 로 대체")
-                return _claude_complete(prompt, key, "claude-sonnet-4-5")
-            if r.status_code in (400, 401, 402, 403, 429): _GEM["claude_api_dead"] = True; log("Claude API 사용 불가(크레딧·키) → 이 세션은 Claude Code(구독) 로 번역")
+                return _claude_complete(prompt, key, "claude-sonnet-4-5", cli_model)
+            if r.status_code in (400, 401, 402, 403, 429): _GEM["claude_api_dead"] = True; log("Claude API 사용 불가(크레딧·키)")
         except Exception as e: log("Claude API 오류", str(e)[:80])
-    cli = _claude_cli()
-    if not cli: return None
-    import subprocess
-    try:
-        r = subprocess.run([cli, "-p", "--output-format", "text"], input=prompt, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=180, cwd=str(ROOT))
-    except Exception as e:
-        log("Claude Code 번역 실행 오류", str(e)[:100]); return None
-    if r.returncode != 0: log(f"Claude Code 번역 실패 (exit {r.returncode}): {(r.stderr or r.stdout)[:120]}"); return None
-    return (r.stdout or "").strip()
+    if engine == "api" and _claude_cli(): return _claude_cli_run(prompt, cli_model)
+    return None
 
 def _claude_model(key):
     """번역 모델: config translate.claude_model 이 있으면 그것, 없으면 API /v1/models 에서 가장 최신 Sonnet 을 고른다(빌드당 1회 캐시). 실패 시 claude-sonnet-4-5."""
@@ -1335,7 +1348,7 @@ def _claude_model(key):
     if cfg.get("claude_model"): return cfg["claude_model"]
     if _CLAUDE_MODEL.get("id"): return _CLAUDE_MODEL["id"]
     pick = "claude-sonnet-4-5"
-    if key:
+    if key and (cfg.get("claude_engine", "cli") == "api" or not _claude_cli()):
         try:
             r = requests.get("https://api.anthropic.com/v1/models", params={"limit": 100}, timeout=20, headers={"x-api-key": key, "anthropic-version": "2023-06-01"})
             if r.status_code == 200:
@@ -1362,7 +1375,7 @@ def _tr_claude_api(pairs):
             prompt = (rules + "\n\n아래 JSON 배열의 각 제목을 같은 순서로 번역해, 번역문만 담은 JSON 문자열 배열 하나로만 답하라(설명·코드블록 금지).\n" if tl == "ko" else
                       rules + "\n\nTerjemahkan setiap judul dalam array JSON berikut dengan urutan yang sama; jawab HANYA dengan satu array JSON berisi string terjemahan (tanpa penjelasan/code block).\n")
             try:
-                txt = _claude_complete(prompt + json.dumps(chunk, ensure_ascii=False), key, model)
+                txt = _claude_complete(prompt + json.dumps(chunk, ensure_ascii=False), key, model, cli_model=cfg.get("cli_model", "sonnet"))
                 if txt is None: return out
                 txt = re.sub(r"^```(?:json)?|```$", "", txt.strip(), flags=re.M).strip()
                 m = re.search(r"\[.*\]", txt, re.S); txt = m.group(0) if m else txt
@@ -1378,7 +1391,7 @@ def _tr_claude_api(pairs):
             for (t, tl), v in out.items(): cur[hashlib.md5((t + "|" + tl).encode("utf-8")).hexdigest()] = v
             TR_GOOD_P.write_text(json.dumps(cur, ensure_ascii=False), encoding="utf-8")
             TR_GOOD.update(cur)
-            log(f"Claude 번역 {len(out)}건 ({'API ' + model if key and not _GEM.get('claude_api_dead') else 'Claude Code'}) → tr_claude.json (총 {len(cur)})")
+            log(f"Claude 번역 {len(out)}건 ({'Claude Code' if cfg.get('claude_engine', 'cli') != 'api' and _claude_cli() else 'API ' + model}) → tr_claude.json (총 {len(cur)})")
         except Exception as e: log("tr_claude.json 저장 실패", e)
     return out
 
@@ -2224,6 +2237,93 @@ def ai_announcements(anns, per_build=6):
         if c and c.get("ko"): a["ai_ko"] = c["ko"]; a["ai_id"] = c["id"]; a["ai_tags"] = c.get("tags") or []
     return anns
 
+# ---------------- 뉴스 AI 요약 (Claude Code · Max 구독) ----------------
+AI_NEWS_P = CACHE / "news_ai.json"
+NEWS_AI_BATCH, NEWS_AI_PER_BUILD, NEWS_AI_KEEP = 12, 24, 700
+
+def _article_text(url, max_chars=2800):
+    """기사 본문 추출: <article>/본문 div 우선, 없으면 문단 밀도 최대 블록. 실패 시 meta description."""
+    if not url or BeautifulSoup is None: return ""
+    try:
+        r = requests.get(url, headers={"User-Agent": UA, "Accept-Language": "id,en;q=0.8"}, timeout=10)
+        if r.status_code != 200 or not r.text: return ""
+        soup = BeautifulSoup(r.text, "lxml")
+        for t in soup(["script", "style", "nav", "header", "footer", "aside", "iframe", "figure", "form", "noscript"]): t.decompose()
+        cands = soup.select("article, [class*=detail__body], [class*=article-content], [class*=articleContent], [class*=article__body], [class*=tmpt-desc], [class*=entry-content], [class*=post-content], [class*=read__content], [class*=detail-text], [class*=body-content], [itemprop=articleBody]")
+        best = ""
+        for c in cands:
+            ps = [x.get_text(" ", strip=True) for x in c.find_all("p")]
+            txt = " ".join(x for x in ps if len(x) > 40)
+            if len(txt) > len(best): best = txt
+        if len(best) < 300:
+            groups = {}
+            for pp in soup.find_all("p"):
+                t = pp.get_text(" ", strip=True)
+                if len(t) < 40: continue
+                key = id(pp.parent); groups[key] = groups.get(key, "") + " " + t
+            if groups: best = max(groups.values(), key=len).strip()
+        if len(best) < 200:
+            m = soup.find("meta", attrs={"property": "og:description"}) or soup.find("meta", attrs={"name": "description"})
+            best = (m.get("content") or "").strip() if m else best
+        best = re.sub(r"\s+", " ", best)
+        best = re.sub(r"(Baca juga|BACA JUGA|Baca Juga|ADVERTISEMENT|SCROLL TO CONTINUE WITH CONTENT|Simak Video|Tonton juga)[^.]*\.?", " ", best)
+        return best[:max_chars]
+    except Exception:
+        return ""
+
+def ai_news(items, per_build=NEWS_AI_PER_BUILD):
+    """뉴스(종목·시장·KISI) 본문을 2문장으로 요약(한/인니) → n['ai_ko'], n['ai_id'], n['ai_tags']. Claude Code(Max 구독) 전용 — 러너는 캐시만 적용.
+    캐시(url 기준) · 운영 시간대(평일 06:00~17:05) 안에서 빌드당 최대 per_build 건 신규 처리."""
+    try: cache = json.loads(AI_NEWS_P.read_text(encoding="utf-8"))
+    except Exception: cache = {}
+    can = bool(_claude_cli()) and _ai_window() and not os.environ.get("GITHUB_ACTIONS")
+    seen = set(); todo = []
+    for n in items:
+        u = n.get("url") or ""
+        if not u or u in cache or u in seen: continue
+        seen.add(u); todo.append(n)
+    done = 0
+    if can and todo:
+        from concurrent.futures import ThreadPoolExecutor
+        batch_items = todo[:per_build]
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            texts = list(ex.map(lambda n: _article_text(n["url"]), batch_items))
+        ready = []
+        for n, txt in zip(batch_items, texts):
+            if len(txt) < 250:
+                cache[n["url"]] = {"ko": "", "id": "", "note": "nobody", "ts": now_wib().isoformat()}; continue   # 본문을 못 읽은 기사는 재시도 안 함
+            ready.append((n, txt))
+        for i in range(0, len(ready), NEWS_AI_BATCH):
+            chunk = ready[i:i + NEWS_AI_BATCH]
+            arts = "\n\n".join(f"[{k+1}] 매체: {n.get('src','')} · 제목: {n.get('t','')}\n{txt}" for k, (n, txt) in enumerate(chunk))
+            prompt = ("너는 한국 증권사 인도네시아 리서치의 데스크 편집자다. 아래 인도네시아 뉴스 기사 " + str(len(chunk)) + "건을 각각 요약하라.\n"
+                      "각 기사마다 JSON 객체 {\"i\": 번호, \"ko\": \"…\", \"id\": \"…\", \"tags\": [\"…\"]} 를 만들고, 전체를 JSON 배열 하나로만 답하라(설명·코드블록 금지).\n"
+                      "· ko: 한국어 2문장, 증권사 데일리 문체(명사형 종결, 마침표 없음, 문장 사이는 마침표 대신 줄바꿈 없이 ' / '). 1문장 = 무슨 일이 있었나(핵심 사실·수치·일정), 2문장 = 관련 종목·업종에 갖는 의미. 기사에 없는 내용·전망은 쓰지 말 것.\n"
+                      "· id: Bahasa Indonesia 2 kalimat, gaya ringkas Kontan/Bisnis.\n"
+                      "· tags: 한국어 키워드 최대 3개(예: 배당, 유상증자, 실적, 규제, M&A, 유가).\n"
+                      "· 표기: 회사명·인명은 로마자 원문, 종목코드 유지, 숫자는 Rp5,000억·Rp1.27조·USD 100처럼 한국식, 소수점은 마침표. Laba=순이익, Pendapatan=매출, Emiten=상장사, Asing=외국인, RUPS=주주총회.\n"
+                      "· 한국어 문장에 인니어 단어를 섞지 말 것. 번역투(…속에서, …한 가운데, 타격)를 피하고 한국 경제지 기자처럼 쓸 것.\n\n" + arts)
+            txt = _claude_complete(prompt, None, None)
+            arr = _json_loads_loose(re.sub(r"^```(?:json)?|```$", "", (txt or "").strip(), flags=re.M).strip())
+            if not isinstance(arr, list): log("뉴스 AI 요약 응답 형식 불일치"); continue
+            got = {}
+            for j in arr:
+                try: got[int(j.get("i"))] = j
+                except Exception: pass
+            for k, (n, _t) in enumerate(chunk):
+                j = got.get(k + 1)
+                if not j or not str(j.get("ko", "")).strip(): continue
+                cache[n["url"]] = {"ko": str(j.get("ko", ""))[:400], "id": str(j.get("id", ""))[:400], "tags": [str(x)[:16] for x in (j.get("tags") or [])][:3], "ts": now_wib().isoformat()}; done += 1
+    if done or (can and todo):
+        keep = sorted(cache.items(), key=lambda kv: kv[1].get("ts", ""), reverse=True)[:NEWS_AI_KEEP]
+        try: AI_NEWS_P.write_text(json.dumps(dict(keep), ensure_ascii=False), encoding="utf-8")
+        except Exception: pass
+        log(f"뉴스 AI 요약 {done}건 (대기 {max(0, len(todo) - per_build)}) · 캐시 {len(keep)}")
+    for n in items:
+        c = cache.get(n.get("url") or "")
+        if c and c.get("ko"): n["ai_ko"] = c["ko"]; n["ai_id"] = c["id"]; n["ai_tags"] = c.get("tags") or []
+    return items
+
 # ── Catalyst — 오늘 주가에 영향을 줄 재료가 있는 종목 ────────────────────────
 # 점수 = 뉴스영향도 0.50 + 시가총액 0.30 + 거래대금 0.20 (각 0~100)
 # 룰 기반이라 왜 이 종목이 위에 왔는지 항상 되짚어볼 수 있다 (AI 호출 없음 = 할당량 소모 없음)
@@ -2667,6 +2767,8 @@ def build():
     except Exception as e: log("지수 AI 요약 오류", repr(e)[:120])
     try: ai_announcements(data["announcements"])
     except Exception as e: log("공시 AI 요약 오류", repr(e)[:120])
+    try: ai_news((data.get("news") or []) + (data.get("market_news") or []) + (data.get("kisi_news") or []))   # 뉴스 요약 — Claude Code(Max), 매 빌드
+    except Exception as e: log("뉴스 AI 요약 오류", repr(e)[:120])
     try: data["ai"]["stocks"] = ai_stocks(data)
     except Exception as e: log("종목 AI 요약 오류", repr(e)[:120])
     if _GEM.get("ai_window"): _ai_cycle_mark()
