@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 22:28",
+ "updated": "2026-09-09 22:42",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,340 · 22:24 Yahoo",
- "idr_per_krw": 13.0969,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,339 · 22:24 Yahoo",
+ "idr_per_krw": 13.1033,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7626.27,
+   "px": 7638.18,
    "prev": 7673.52,
-   "pct": -0.62,
-   "asof": "22:25",
+   "pct": -0.46,
+   "asof": "22:40",
    "live": true,
    "spark": [
     7653.65,
@@ -15107,17 +15107,20 @@
     7630.75,
     7635.05,
     7624.85,
-    7626.27
+    7629.6,
+    7635.03,
+    7639.57,
+    7638.18
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26189.66,
+   "px": 26243.69,
    "prev": 26421.41,
-   "pct": -0.88,
-   "asof": "22:25",
+   "pct": -0.67,
+   "asof": "22:40",
    "live": true,
    "spark": [
     26328.66,
@@ -15143,17 +15146,20 @@
     26214.29,
     26247.94,
     26186.12,
-    26189.66
+    26200.1,
+    26233.01,
+    26241.37,
+    26243.69
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52354.17,
+   "px": 52416.37,
    "prev": 52786.07,
-   "pct": -0.82,
-   "asof": "22:25",
+   "pct": -0.7,
+   "asof": "22:40",
    "live": true,
    "spark": [
     52496.92,
@@ -15179,7 +15185,10 @@
     52373.35,
     52356.98,
     52330.2,
-    52354.17
+    52386.83,
+    52375.85,
+    52415.91,
+    52416.37
    ]
   },
   {
@@ -15505,6 +15514,19 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-09T22:39:54+07:00",
+   "date": "2026-09-09",
+   "time": "22:39",
+   "src": "Liputan6",
+   "t": "Direktur AKR Corporindo Lepas Saham AKRA, Ini Rinciannya",
+   "tags": [
+    "AKRA"
+   ],
+   "url": "https://www.liputan6.com/saham/read/8288470/direktur-akr-corporindo-lepas-saham-akra-ini-rinciannya",
+   "img": "https://cdn1-production-images-kly.akamaized.net/xL-s7t9nrybnY2lB5rdU_xfpVZg=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3499494/original/021865400_1625220394-akra_1_WhatsApp_Image_2021-07-02_at_10.13.01.jpg",
+   "t_id": "Direktur AKR Corporindo Lepas Saham AKRA, Ini Rinciannya"
+  },
   {
    "ts": "2026-09-09T21:30:00+07:00",
    "date": "2026-09-09",
@@ -16504,20 +16526,6 @@
    "t_id": "PTBA Siap Pangkas Separuh Anak Usaha dalam 2 Tahun"
   },
   {
-   "ts": "2026-09-07T22:43:23+07:00",
-   "date": "2026-09-07",
-   "time": "09/07",
-   "src": "Liputan6",
-   "t": "Hadapi Perkembangan Aktivitas Anak Krakatau, TPIA Pastikan Operasional Tetap Aman",
-   "tags": [
-    "TPIA"
-   ],
-   "url": "https://www.liputan6.com/saham/read/8286812/hadapi-perkembangan-aktivitas-anak-krakatau-tpia-pastikan-operasional-tetap-aman",
-   "img": "https://cdn1-production-images-kly.akamaized.net/tWMSl5QFFn62XQNCht8mzdsG8ik=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/996495/original/022378500_1442844596-FOTO_LIPUTAN6.jpg",
-   "t_ko": "Anak Krakatau 화산 활동 확대 대응 — TPIA 조업 안정 유지 확인",
-   "t_id": "Hadapi Perkembangan Aktivitas Anak Krakatau, TPIA Pastikan Operasional Tetap Aman"
-  },
-  {
    "ts": "2026-08-24T08:33:00+07:00",
    "date": "2026-08-24",
    "time": "08/24",
@@ -16561,6 +16569,46 @@
   }
  ],
  "market_news": [
+  {
+   "ts": "2026-09-09T22:41:55.664223+07:00",
+   "date": "2026-09-09",
+   "time": "22:41",
+   "src": "Jawa Pos",
+   "t": "BTN dan Rumah123 Gelar Harpropnas 2026, Dorong KPR Mudah",
+   "tags": [],
+   "url": "https://www.jawapos.com/properti/2609090291/btn-dan-rumah123-gelar-harpropnas-2026-dorong-kpr-mudah",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/direktur-consumer-banking-btn-evita-marliana-dalam-pembukaan-hari-properti-nasional-harpropmnas-2026-di-grand-atrium-mall-kotakasablanka-jakarta-rabu-99-foto-djati-waluypjawaposcom-4caGK.webp",
+   "t_ko": "BTN과 Rumah123, Harpropnas 2026 개최, Easy KPR 장려",
+   "t_id": "BTN dan Rumah123 Gelar Harpropnas 2026, Dorong KPR Mudah"
+  },
+  {
+   "ts": "2026-09-09T22:33:00+07:00",
+   "date": "2026-09-09",
+   "time": "22:33",
+   "src": "Katadata",
+   "t": "Seloroh Purbaya Hadapi Kemungkinan Harga Minyak Kembali Melambung",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/energi/6aa17c3856e2f/seloroh-purbaya-hadapi-kemungkinan-harga-minyak-kembali-melambung",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/20/2026_08_20-14_20_00_b37f9bd6-9c6b-11f1-9cb1-0242ac12000a_620x413_thumb.jpg"
+  },
+  {
+   "ts": "2026-09-09T22:25:00+07:00",
+   "date": "2026-09-09",
+   "time": "22:25",
+   "src": "Media Indonesia",
+   "t": "Jawa Tengah Perkuat Daya Tarik Investasi melalui Industri Hijau",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931688/jawa-tengah-perkuat-daya-tarik-investasi-melalui-industri-hijau-"
+  },
+  {
+   "ts": "2026-09-09T22:24:31+07:00",
+   "date": "2026-09-09",
+   "time": "22:24",
+   "src": "Bloomberg",
+   "t": "US Treasury to Buy Up to $6 Billion in Long-Dated Debt",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-09/us-treasury-to-buy-up-to-6-billion-in-long-dated-debt-video"
+  },
   {
    "ts": "2026-09-09T22:20:00+07:00",
    "date": "2026-09-09",
@@ -16630,15 +16678,6 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656160/pembukuan-usaha-jasa-kamu-masih-manual-pelajari-accurate-lewat-pelatihan-ini",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/detikevent-accurate-service-company-1788883745552_169.jpeg?w=360&q=90",
    "t_id": "Pembukuan Usaha Jasa Kamu Masih Manual? Pelajari Accurate Lewat Pelatihan Ini!"
-  },
-  {
-   "ts": "2026-09-09T22:02:22+07:00",
-   "date": "2026-09-09",
-   "time": "22:02",
-   "src": "Bloomberg",
-   "t": "US Treasury Triples Long-Dated Debt Buyback to $6 Billion",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-09/us-more-than-doubles-long-dated-debt-buyback-size-to-6-billion"
   },
   {
    "ts": "2026-09-09T21:52:00+07:00",
@@ -16739,16 +16778,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/pameran-internasional-gifa-indonesia-dan-metec-indonesia-2026-resmi-dibuka-di-jakarta-international-expo-jiexpo-kemayoran-jakarta-pada-rabu-99-dok-nanda-prayogajawaposcom-NCOlE.webp"
   },
   {
-   "ts": "2026-09-09T21:29:00+07:00",
-   "date": "2026-09-09",
-   "time": "21:29",
-   "src": "Media Indonesia",
-   "t": "Prabowo Apresiasi Dukungan Partai Demokrat dan SBY di HUT Ke-25",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/931647/prabowo-apresiasi-dukungan-partai-demokrat-dan-sby-di-hut-ke-25",
-   "t_id": "Prabowo Apresiasi Dukungan Partai Demokrat dan SBY di HUT Ke-25"
-  },
-  {
    "ts": "2026-09-09T21:24:27+07:00",
    "date": "2026-09-09",
    "time": "21:24",
@@ -16844,27 +16873,6 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656057/kopdes-merah-putih-bakal-gandeng-pnm-dan-pt-pos",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/06/lokasi-kopdes-merah-putih-di-atas-gunungmasigit-1783335021447_169.jpeg?w=360&q=90",
    "t_id": "Kopdes Merah Putih Bakal Gandeng PNM dan PT Pos"
-  },
-  {
-   "ts": "2026-09-09T20:28:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:28",
-   "src": "Katadata",
-   "t": "Sarjito Dilantik Jadi Kepala Eksekutif Bursa Mineral, OJK Siapkan Dua AturanÂ",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/keuangan/6aa15ee44dde9/sarjito-dilantik-jadi-kepala-eksekutif-bursa-mineral-ojk-siapkan-dua-aturan",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/09/Pelantikan_Kepala_Eksekutif_Pengawas_BMKS-2026_09_09-18_29_04_543c247e2fd8e4b473c9ead42ba0f3a9_620x413_thumb.jpeg",
-   "t_id": "Sarjito Dilantik Jadi Kepala Eksekutif Bursa Mineral, OJK Siapkan Dua AturanÂ"
-  },
-  {
-   "ts": "2026-09-09T20:20:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:20",
-   "src": "Katadata",
-   "t": "Prabowo Perketat Aturan Pembukaan Lahan dengan Cara Dibakar",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/nasional/6aa15d12588ef/prabowo-perketat-aturan-pembukaan-lahan-dengan-cara-dibakar",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/09/2026_09_09-17_39_00_4be5228c-ac44-11f1-9cb1-0242ac12000a_620x413_thumb.jpg"
   }
  ],
  "kisi_news": [
@@ -17037,9 +17045,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.09",
-   "d": -0.36,
-   "ytd": 12.7,
+   "v": "13.10",
+   "d": -0.31,
+   "ytd": 12.77,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17072,9 +17080,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.86",
-   "d": 0.09,
-   "ytd": 0.59,
+   "v": "98.84",
+   "d": 0.07,
+   "ytd": 0.57,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17084,9 +17092,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.39",
-   "d": 2.35,
-   "ytd": 67.87,
+   "v": "96.47",
+   "d": 2.43,
+   "ytd": 68.01,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17096,9 +17104,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,436.2",
-   "d": 0.36,
-   "ytd": 2.56,
+   "v": "4,438.8",
+   "d": 0.42,
+   "ytd": 2.62,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17120,9 +17128,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,872",
-   "d": 0.57,
-   "ytd": 1.14,
+   "v": "16,878",
+   "d": 0.6,
+   "ytd": 1.17,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24633,7 +24641,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 300,
+  "pc_age_min": 314,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
