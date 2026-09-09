@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 21:07",
+ "updated": "2026-09-09 21:27",
  "delay_min": 0,
- "fx_basis": "13.12 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,337 · 20:43 Yahoo",
- "idr_per_krw": 13.1224,
+ "fx_basis": "13.13 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,337 · 20:43 Yahoo",
+ "idr_per_krw": 13.1263,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7653.66,
+   "px": 7646.21,
    "prev": 7673.52,
-   "pct": -0.26,
-   "asof": "21:05",
+   "pct": -0.36,
+   "asof": "21:25",
    "live": true,
    "spark": [
     7653.65,
@@ -15091,17 +15091,21 @@
     7652.21,
     7656.22,
     7653.08,
-    7653.66
+    7655.29,
+    7653.43,
+    7644.29,
+    7640.94,
+    7646.21
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26363.54,
+   "px": 26302.05,
    "prev": 26421.41,
-   "pct": -0.22,
-   "asof": "21:05",
+   "pct": -0.45,
+   "asof": "21:25",
    "live": true,
    "spark": [
     26328.66,
@@ -15111,17 +15115,21 @@
     26335.41,
     26360.16,
     26360.36,
-    26363.54
+    26360.86,
+    26345.95,
+    26294.45,
+    26276.72,
+    26302.05
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52380.02,
+   "px": 52411.23,
    "prev": 52786.07,
-   "pct": -0.77,
-   "asof": "21:05",
+   "pct": -0.71,
+   "asof": "21:25",
    "live": true,
    "spark": [
     52496.92,
@@ -15131,7 +15139,11 @@
     52407.82,
     52424.52,
     52401.97,
-    52380.02
+    52397.19,
+    52413.68,
+    52373.08,
+    52373.58,
+    52411.23
    ]
   },
   {
@@ -15457,6 +15469,30 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-09T21:10:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:10",
+   "src": "Katadata",
+   "t": "Intip Kisi-Kisi Dividen Interim Ketiga BCA (BBCA) hingga Bidik Kredit Tumbuh 10%",
+   "tags": [
+    "BBCA"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6aa168e188db7/intip-kisi-kisi-dividen-interim-ketiga-bca-bbca-hingga-bidik-kredit-tumbuh-10",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/03/21/Logo_Bank_Central_Asia_BCA-2025_03_21-15_39_06_df86aafa4f1153fc487567ebec7ec74f_620x413_thumb.jpg"
+  },
+  {
+   "ts": "2026-09-09T21:03:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:03",
+   "src": "Media Indonesia",
+   "t": "Perkuat Struktur Regional, Bank Mandiri Taspen Terapkan Sistem RCEO di 10 Wilayah",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://mediaindonesia.com/ekonomi/931641/perkuat-struktur-regional-bank-mandiri-taspen-terapkan-sistem-rceo-di-10-wilayah",
+   "t_id": "Perkuat Struktur Regional, Bank Mandiri Taspen Terapkan Sistem RCEO di 10 Wilayah"
+  },
   {
    "ts": "2026-09-09T20:52:48+07:00",
    "date": "2026-09-09",
@@ -16532,6 +16568,68 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-09T21:24:27+07:00",
+   "date": "2026-09-09",
+   "time": "21:24",
+   "src": "Republika",
+   "t": "BAIC Perkuat Jaringan di Jawa Barat, Bawa Mobil Listrik T1 ke GIIAS Bandung",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl3pcr348/baic-perkuat-jaringan-di-jawa-barat-bawa-mobil-listrik-t1-ke-giias-bandung",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/baic_260909212209-689.jpg",
+   "t_id": "BAIC Perkuat Jaringan di Jawa Barat, Bawa Mobil Listrik T1 ke GIIAS Bandung"
+  },
+  {
+   "ts": "2026-09-09T21:14:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:14",
+   "src": "Media Indonesia",
+   "t": "Wakil Ketua DPR RI Desak BGN dan Pemda Tanggung Biaya Pengobatan Korban Keracunan MBG",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/931638/wakil-ketua-dpr-ri-desak-bgn-dan-pemda-tanggung-biaya-pengobatan-korban-keracunan-mbg",
+   "t_id": "Wakil Ketua DPR RI Desak BGN dan Pemda Tanggung Biaya Pengobatan Korban Keracunan MBG"
+  },
+  {
+   "ts": "2026-09-09T21:10:09+07:00",
+   "date": "2026-09-09",
+   "time": "21:10",
+   "src": "Medcom",
+   "t": "Anak Muda Makin Pilih Minuman Tanpa Gula, Bisnis Ini Melihat Peluang Besar",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/bisnis/GNl1mDmb-anak-muda-makin-pilih-minuman-tanpa-gula-bisnis-ini-melihat-peluang-besar",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1841163/jt63SFrRMC.jpg?w=720",
+   "t_id": "Anak Muda Makin Pilih Minuman Tanpa Gula, Bisnis Ini Melihat Peluang Besar"
+  },
+  {
+   "ts": "2026-09-09T21:10:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:10",
+   "src": "Media Indonesia",
+   "t": "Serangan Houthi ke Saudi Picu Eskalasi Regional, Harga Minyak Dunia Melonjak",
+   "tags": [],
+   "url": "https://mediaindonesia.com/internasional/931636/serangan-houthi-ke-saudi-picu-eskalasi-regional-harga-minyak-dunia-melonjak",
+   "t_id": "Serangan Houthi ke Saudi Picu Eskalasi Regional, Harga Minyak Dunia Melonjak"
+  },
+  {
+   "ts": "2026-09-09T21:09:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:09",
+   "src": "Media Indonesia",
+   "t": "Sebaran Abu Vulkanik Gunung Anak Krakatau ke Arah Barat Laut, Warga Diimbau Tetap Pakai Masker",
+   "tags": [],
+   "url": "https://mediaindonesia.com/humaniora/931637/sebaran-abu-vulkanik-gunung-anak-krakatau-ke-arah-barat-laut-warga-diimbau-tetap-pakai-masker",
+   "t_id": "Sebaran Abu Vulkanik Gunung Anak Krakatau ke Arah Barat Laut, Warga Diimbau Tetap Pakai Masker"
+  },
+  {
+   "ts": "2026-09-09T21:08:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:08",
+   "src": "Media Indonesia",
+   "t": "Waspada Dampak Abu Vulkanik, Ini Nutrisi Penting untuk Jaga Imun Tubuh",
+   "tags": [],
+   "url": "https://mediaindonesia.com/humaniora/931630/waspada-dampak-abu-vulkanik-ini-nutrisi-penting-untuk-jaga-imun-tubuh",
+   "t_id": "Waspada Dampak Abu Vulkanik, Ini Nutrisi Penting untuk Jaga Imun Tubuh"
+  },
+  {
    "ts": "2026-09-09T21:04:00+07:00",
    "date": "2026-09-09",
    "time": "21:04",
@@ -16549,6 +16647,17 @@
    "tags": [],
    "url": "https://www.medcom.id/pendidikan/news-pendidikan/0kpqQYEK-pemkot-tangerang-perpanjang-pjj-hingga-11-september-akibat-abu-vulkanik",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1841085/0oWDiLlU28.jpg?w=720"
+  },
+  {
+   "ts": "2026-09-09T21:01:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:01",
+   "src": "Katadata",
+   "t": "DEN Wanti-Wanti Capital Outflow Jumbo dari Pasar RI jika Tak Ada Disiplin Fiskal",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/makro/6aa166af3423e/den-wanti-wanti-capital-outflow-jumbo-dari-pasar-ri-jika-tak-ada-disiplin-fiskal",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/04/29/Tekanan_Outflow-2026_04_29-14_11_15_757babdb4a800bbf8b8e29cf4e975b73_620x413_thumb.png",
+   "t_id": "DEN Wanti-Wanti Capital Outflow Jumbo dari Pasar RI jika Tak Ada Disiplin Fiskal"
   },
   {
    "ts": "2026-09-09T20:59:00+07:00",
@@ -16693,16 +16802,6 @@
    "t_id": "Sarjito Dilantik Jadi Kepala Eksekutif Bursa Mineral, OJK Siapkan Dua AturanÂ"
   },
   {
-   "ts": "2026-09-09T20:23:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:23",
-   "src": "Media Indonesia",
-   "t": "Agen Terapkan Batas Komisi 70 Persen",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931601/agen-terapkan-batas-komisi-70-persen",
-   "t_id": "Agen Terapkan Batas Komisi 70 Persen"
-  },
-  {
    "ts": "2026-09-09T20:20:00+07:00",
    "date": "2026-09-09",
    "time": "20:20",
@@ -16733,15 +16832,6 @@
    "url": "https://ekonomi.republika.co.id/berita/tl3luz490/jadi-bos-pengawas-bursa-mineral-sarjito-yakin-indonesia-bakal-lebih-berdaulat",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260909165639-859.png",
    "t_id": "Jadi Bos Pengawas Bursa Mineral, Sarjito Yakin Indonesia Bakal Lebih Berdaulat"
-  },
-  {
-   "ts": "2026-09-09T20:06:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:06",
-   "src": "Media Indonesia",
-   "t": "Presiden Prabowo Perintahkan Karhutla Dipadamkan, Satwa Diselamatkan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/humaniora/931589/presiden-prabowo-perintahkan-karhutla-dipadamkan-satwa-diselamatkan"
   },
   {
    "ts": "2026-09-09T20:00:12+07:00",
@@ -16782,61 +16872,6 @@
    "tags": [],
    "url": "https://finance.detik.com/moneter/d-8656006/bni-biayai-kopdes-merah-putih-dinilai-minim-risiko-kredit-macet",
    "img": "https://akcdn.detik.net.id/community/media/visual/2018/07/28/bb462c7f-0b4a-4501-8faf-d038e168e32b_169.jpeg?w=360&q=90"
-  },
-  {
-   "ts": "2026-09-09T19:45:06+07:00",
-   "date": "2026-09-09",
-   "time": "19:45",
-   "src": "Detik",
-   "t": "Kopdes Diklaim Bikin Negara Hemat Rp 150 T-Putus Mata Rantai Rentenir",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8655921/kopdes-diklaim-bikin-negara-hemat-rp-150-t-putus-mata-rantai-rentenir",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/04/14/koperasi-merah-putih-digeber-30-ribu-unit-ditargetkan-jalan-agustus-2026-1776153628799_169.jpeg?w=360&q=90"
-  },
-  {
-   "ts": "2026-09-09T19:42:28+07:00",
-   "date": "2026-09-09",
-   "time": "19:42",
-   "src": "Jawa Pos",
-   "t": "BPS Tegaskan Masuk DTSEN Tak Otomatis Dapat Bansos",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609090216/bps-tegaskan-masuk-dtsen-tak-otomatis-dapat-bansos",
-   "img": "https://cdn-assets.jawapos.com/images/1/2023/09/21/JKT-1-PEMBAGIAN-KUPON-BANSOS-2023-FED-8JPG-1600029306.jpg",
-   "t_ko": "BPS, DTSEN 등재가 자동 보조금 수급 아님을 강조",
-   "t_id": "BPS Tegaskan Masuk DTSEN Tak Otomatis Dapat Bansos"
-  },
-  {
-   "ts": "2026-09-09T19:38:03+07:00",
-   "date": "2026-09-09",
-   "time": "19:38",
-   "src": "Republika",
-   "t": "Sebelum Beralih ke Mobil Listrik, Konsumen Perlu Coba Langsung",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl3kff416/sebelum-beralih-ke-mobil-listrik-konsumen-perlu-coba-langsung",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/032928100-1745923535-830-556.jpg",
-   "t_id": "Sebelum Beralih ke Mobil Listrik, Konsumen Perlu Coba Langsung"
-  },
-  {
-   "ts": "2026-09-09T19:36:00+07:00",
-   "date": "2026-09-09",
-   "time": "19:36",
-   "src": "Katadata",
-   "t": "Pemerintah Anggarkan Rp 11 Triliun untuk Pembukaan Rekening Bank 200 Juta Warga",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/keuangan/6aa152d200f76/pemerintah-anggarkan-rp-11-triliun-untuk-pembukaan-rekening-bank-200-juta-warga",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2022/07/21/zigi-62d8fec7eb531-ilustrasi-rekening-bank-untuk-mahasiswa_620x413_thumb.jpg",
-   "t_id": "Pemerintah Anggarkan Rp 11 Triliun untuk Pembukaan Rekening Bank 200 Juta Warga"
-  },
-  {
-   "ts": "2026-09-09T19:30:41+07:00",
-   "date": "2026-09-09",
-   "time": "19:30",
-   "src": "Detik",
-   "t": "Berburu Mainan dan Nostalgia Masa Kecil di Kampoeng Mainan Blok M",
-   "tags": [],
-   "url": "https://finance.detik.com/foto-bisnis/d-8655963/berburu-mainan-dan-nostalgia-masa-kecil-di-kampoeng-mainan-blok-m",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/berburu-mainan-dan-nostalgia-masa-kecil-di-kampoeng-mainan-blok-m-1788956285282.jpeg?w=360&q=90",
-   "t_id": "Berburu Mainan dan Nostalgia Masa Kecil di Kampoeng Mainan Blok M"
   }
  ],
  "kisi_news": [
@@ -17010,8 +17045,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.12",
-   "d": -0.15,
-   "ytd": 12.94,
+   "d": -0.16,
+   "ytd": 12.93,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17021,9 +17056,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.796%",
-   "d": -0.21,
-   "ytd": 15.21,
+   "v": "4.800%",
+   "d": -0.12,
+   "ytd": 15.3,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17044,9 +17079,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.65",
-   "d": -0.12,
-   "ytd": 0.38,
+   "v": "98.62",
+   "d": -0.15,
+   "ytd": 0.35,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17056,9 +17091,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "95.76",
-   "d": 1.68,
-   "ytd": 66.77,
+   "v": "95.89",
+   "d": 1.82,
+   "ytd": 67.0,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17068,9 +17103,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,456.9",
-   "d": 0.83,
-   "ytd": 3.04,
+   "v": "4,461.1",
+   "d": 0.92,
+   "ytd": 3.13,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17092,9 +17127,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,854",
-   "d": 0.46,
-   "ytd": 1.03,
+   "v": "16,850",
+   "d": 0.44,
+   "ytd": 1.01,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24605,7 +24640,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 219,
+  "pc_age_min": 239,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26005,11 +26040,11 @@
    "ev_id": "Aksi korporasi",
    "hl": "BCA Siapkan Buyback BBCA Rp5 Triliun hingga Maret 2027",
    "url": "https://www.bloombergtechnoz.com/detail-news/121075/bca-siapkan-buyback-bbca-rp5-triliun-hingga-maret-2027",
-   "score": 79.5,
-   "s_news": 88,
+   "score": 82.3,
+   "s_news": 95,
    "s_size": 98,
    "s_surge": 50,
-   "srcs": 2
+   "srcs": 3
   },
   {
    "t": "BMRI",
