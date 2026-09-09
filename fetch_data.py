@@ -2276,7 +2276,11 @@ def ai_news(items, per_build=NEWS_AI_PER_BUILD):
     캐시(url 기준) · 운영 시간대(평일 06:00~17:05) 안에서 빌드당 최대 per_build 건 신규 처리."""
     try: cache = json.loads(AI_NEWS_P.read_text(encoding="utf-8"))
     except Exception: cache = {}
-    can = bool(_claude_cli()) and _ai_window() and not os.environ.get("GITHUB_ACTIONS")
+    force = (CACHE / "ai_force.txt").exists()                  # 점검용 1회 강제 실행 플래그 (실행 후 삭제)
+    can = bool(_claude_cli()) and (_ai_window() or force) and not os.environ.get("GITHUB_ACTIONS")
+    if force:
+        try: (CACHE / "ai_force.txt").unlink()
+        except Exception: pass
     seen = set(); todo = []
     for n in items:
         u = n.get("url") or ""
