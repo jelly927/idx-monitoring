@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 08:44",
+ "updated": "2026-09-09 08:53",
  "delay_min": 0,
  "fx_basis": "13.16 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,339 · 08:19 Yahoo",
- "idr_per_krw": 13.1564,
+ "idr_per_krw": 13.1551,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -92,12 +92,12 @@
   "m1": 5.04,
   "value_idr": 15709984999251,
   "volume": 35150343143,
-  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-09 08:40",
+  "rank_src": "Yahoo 15분 지연 · 830종목 · 종가 · 외국인·공시 PC 09-09 08:47",
   "rank_asof": null,
   "rank_date": "2026-09-08",
   "adv": 388,
   "dec": 253,
-  "unch": 190,
+  "unch": 189,
   "foreign_net_idr": 378259109581.2046,
   "foreign_buy": 4159530438801.383,
   "foreign_sell": 3781271329220.178,
@@ -13375,22 +13375,6 @@
    "live": 0
   },
   {
-   "t": "ASDM",
-   "n": "Asuransi Dayin Mitra",
-   "px": 515.0,
-   "prev": 515.0,
-   "pct": 0.0,
-   "val": 11403333.333333334,
-   "vol": 22000.0,
-   "sh": 384000000,
-   "mcap": 197760000000.0,
-   "hi": 525.0,
-   "lo": 515.0,
-   "ratio": 0.7,
-   "fnet": 0.0,
-   "live": 0
-  },
-  {
    "t": "BPII",
    "n": "Batavia Prosperindo Internasional",
    "px": 474.0,
@@ -14179,11 +14163,11 @@
   {
    "name": "에너지",
    "name_id": "Energi",
-   "n": 79,
-   "adv": 37,
+   "n": 78,
+   "adv": 36,
    "dec": 28,
-   "val": 4160161767233.333,
-   "mcap": 1690418752493313.0,
+   "val": 4144476016566.6665,
+   "mcap": 1677576557493313.0,
    "top": [
     {
      "t": "BYAN",
@@ -14231,11 +14215,11 @@
   {
    "name": "소재",
    "name_id": "Barang Baku",
-   "n": 92,
-   "adv": 43,
+   "n": 93,
+   "adv": 44,
    "dec": 26,
-   "val": 2950208140800.0,
-   "mcap": 1570796080812388.0,
+   "val": 2965893891466.6665,
+   "mcap": 1583638275812388.0,
    "top": [
     {
      "t": "AMMN",
@@ -14278,16 +14262,16 @@
      "pct": 4.13
     }
    ],
-   "pct": 2.19
+   "pct": 2.18
   },
   {
    "name": "금융",
    "name_id": "Keuangan",
-   "n": 98,
+   "n": 97,
    "adv": 47,
    "dec": 22,
-   "val": 2146800236266.6677,
-   "mcap": 3016233988540144.0,
+   "val": 2146788832933.3345,
+   "mcap": 3016036228540144.0,
    "top": [
     {
      "t": "BBCA",
@@ -14439,11 +14423,11 @@
   {
    "name": "경기소비재",
    "name_id": "Konsumen Non-Primer",
-   "n": 135,
+   "n": 134,
    "adv": 65,
    "dec": 42,
-   "val": 778907171300.0004,
-   "mcap": 429482684854721.0,
+   "val": 778713491966.667,
+   "mcap": 425768708190791.0,
    "top": [
     {
      "t": "VKTR",
@@ -14486,7 +14470,7 @@
      "pct": 0
     }
    ],
-   "pct": 0.8
+   "pct": 0.81
   },
   {
    "name": "산업재",
@@ -14543,11 +14527,11 @@
   {
    "name": "부동산",
    "name_id": "Properti",
-   "n": 79,
+   "n": 80,
    "adv": 34,
    "dec": 21,
-   "val": 495036167700.00006,
-   "mcap": 460424521968504.0,
+   "val": 495229847033.3334,
+   "mcap": 464138498632434.0,
    "top": [
     {
      "t": "MPRO",
@@ -15024,10 +15008,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7047.55,
+   "px": 7058.53,
    "prev": 7006.24,
-   "pct": 0.59,
-   "asof": "08:20",
+   "pct": 0.75,
+   "asof": "08:30",
    "live": true,
    "spark": [
     6998.61,
@@ -15046,17 +15030,19 @@
     7051.37,
     7049.62,
     7043.31,
-    7047.55
+    7053.0,
+    7060.54,
+    7058.53
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65748.9,
+   "px": 65669.16,
    "prev": 65370.42,
-   "pct": 0.58,
-   "asof": "08:25",
+   "pct": 0.46,
+   "asof": "08:35",
    "live": true,
    "spark": [
     65479.27,
@@ -15076,25 +15062,23 @@
     65770.31,
     65698.1,
     65726.26,
-    65748.9
+    65685.88,
+    65656.27,
+    65669.16
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25328.13,
+   "px": 25215.0,
    "prev": 25317.18,
-   "pct": 0.04,
-   "asof": "09/07 종가",
-   "live": false,
+   "pct": -0.4,
+   "asof": "08:35",
+   "live": true,
    "spark": [
-    25329.73,
-    25311.21,
-    25213.31,
-    25650.87,
-    25413.12,
-    25317.18
+    25189.55,
+    25215.0
    ]
   }
  ],
@@ -15194,8 +15178,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/120986/harga-emas-antam-hari-ini-turun-rp17-000-buyback-lebih-dalam",
    "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250411124107.jpg",
-   "t_id": "Harga Emas Antam Hari Ini Turun Rp17.000, Buyback Lebih Dalam",
-   "t_ko": "Antam Gold 가격은 오늘 IDR 17,000 하락했으며 환매가 더 깊어졌습니다."
+   "t_ko": "Antam Gold 가격은 오늘 IDR 17,000 하락했으며 환매가 더 깊어졌습니다.",
+   "t_id": "Harga Emas Antam Hari Ini Turun Rp17.000, Buyback Lebih Dalam"
   },
   {
    "ts": "2026-09-09T08:30:00+07:00",
@@ -15971,6 +15955,17 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-09T08:47:02+07:00",
+   "date": "2026-09-09",
+   "time": "08:47",
+   "src": "Liputan6",
+   "t": "Bursa Saham Asia Hari Ini Beragam Imbas Ketegangan di Timur Tengah",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8287743/bursa-saham-asia-hari-ini-beragam-imbas-ketegangan-di-timur-tengah",
+   "img": "https://cdn0-production-images-kly.akamaized.net/OD_Mar2z7vAkPov4BJdvnUJy4Ws=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1694575/original/019523900_1503994463-20170829-Saham-Akibat-Rudal-Korut-AP2.jpg",
+   "t_id": "Bursa Saham Asia Hari Ini Beragam Imbas Ketegangan di Timur Tengah"
+  },
+  {
    "ts": "2026-09-09T08:30:00+07:00",
    "date": "2026-09-09",
    "time": "08:30",
@@ -15978,7 +15973,9 @@
    "t": "Langgar Kewajiban B50, Badan Usaha Bisa Kena Sanksi hingga Pencabutan Izin",
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl2n96416/langgar-kewajiban-b50-badan-usaha-bisa-kena-sanksi-hingga-pencabutan-izin",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/086706700-1783597973-830-556.jpg"
+   "img": "https://static.republika.co.id/uploads/images/detailnews/086706700-1783597973-830-556.jpg",
+   "t_ko": "B50 의무 위반 시 사업자 제재 — 인가 취소까지 가능",
+   "t_id": "Langgar Kewajiban B50, Badan Usaha Bisa Kena Sanksi hingga Pencabutan Izin"
   },
   {
    "ts": "2026-09-09T08:15:29+07:00",
@@ -15989,7 +15986,8 @@
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8654578/pemerintah-perkuat-database-penerima-gas-melon-lpg-3kg",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/pemerintah-perkuat-database-penerima-gas-melon-lpg-3kg-1788882204645.jpeg?w=360&q=90",
-   "t_ko": "정부, 3Kg LPG '멜론' 가스 수급자 데이터베이스 강화"
+   "t_ko": "정부, LPG 3Kg '멜론' 가스 수급자 데이터베이스 강화",
+   "t_id": "Pemerintah Perkuat Database Penerima LPG 3 Kg 'Melon'"
   },
   {
    "ts": "2026-09-09T08:15:12+07:00",
@@ -16311,16 +16309,6 @@
    "t": "Treasury Buybacks Won't Fix US Yields, Strategist Says",
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-08/treasury-buybacks-won-t-fix-us-yields-strategist-says-video"
-  },
-  {
-   "ts": "2026-09-09T06:49:00+07:00",
-   "date": "2026-09-09",
-   "time": "06:49",
-   "src": "IDX Channel",
-   "t": "Harga Minyak Tembus Level Tertinggi 6 Pekan usai Houthi Serang Fasilitas Saudi",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/harga-minyak-tembus-level-tertinggi-6-pekan-usai-houthi-serang-fasilitas-saudi",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/03/10/kilang_minyak_-_freepik_-_10_Mar_26.jpeg"
   }
  ],
  "kisi_news": [
@@ -16495,8 +16483,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.15",
-   "d": 0.14,
-   "ytd": 13.26,
+   "d": 0.12,
+   "ytd": 13.25,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -16529,9 +16517,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.82",
-   "d": -0.35,
-   "ytd": 0.55,
+   "v": "98.80",
+   "d": -0.37,
+   "ytd": 0.53,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16541,9 +16529,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "94.53",
-   "d": 3.33,
-   "ytd": 64.63,
+   "v": "94.46",
+   "d": 3.26,
+   "ytd": 64.51,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16553,9 +16541,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,417.6",
-   "d": -1.32,
-   "ytd": 2.13,
+   "v": "4,420.1",
+   "d": -1.26,
+   "ytd": 2.18,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18998,6 +18986,17 @@
   }
  ],
  "announcements": [
+  {
+   "ts": "2026-09-09T08:37:42+07:00",
+   "date": "2026-09-09",
+   "time": "08:37",
+   "t": "ITMA",
+   "type": "STOCK",
+   "title": "Penjelasan atas Volatilitas Transaksi",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/822c711101_3bfb28cdd8.pdf",
+   "title_ko": "주가·거래량 변동성에 대한 소명",
+   "title_id": "Penjelasan atas Volatilitas Transaksi"
+  },
   {
    "ts": "2026-09-09T07:28:31+07:00",
    "date": "2026-09-09",
@@ -22872,8 +22871,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-09 08:40",
-  "pc_age_min": 4,
+  "idx_from_pc": "2026-09-09 08:47",
+  "pc_age_min": 6,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
