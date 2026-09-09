@@ -1249,7 +1249,36 @@ def _tr_save():
     try: TR_CACHE_P.write_text(json.dumps(TR_CACHE, ensure_ascii=False), encoding="utf-8")
     except Exception as e: log("번역 캐시 저장 실패", e)
 
-CLAUDE_RULES_KO = """한국어 번역 규칙(증권사 데일리 헤드라인체, 예외 없음): ① 명사형 종결 — 종결어미(~합니다/~했습니다/~됩니다/~하세요/~입니다)와 마침표 금지. 예: "TRIS 중간배당 Rp70억 결정 — 지급 일정", "IHSG 9/2 1부 0.28% 하락 반전 — ADMR·ADRO 약세가 부담". ② 고유명사(회사명·인명·지명)는 로마자 원문 유지(Danantara, Bakrie, Boy Thohir…; Boy→소년 같은 번역 금지). 널리 알려진 지명만 한국어(Indonesia=인도네시아, Jakarta=자카르타). 종목코드·퍼센트 원문 유지. ③ 통화는 Rp 표기, Miliar=억 단위 환산(Rp500 Miliar=Rp5,000억, Rp1,27 Triliun=Rp1.27조), 소수점은 마침표. ④ 용어: Laba=순이익, Pendapatan=매출, Saham=주식, Rekomendasi=투자의견, Kinerja=실적, Emiten=상장사, RUPS(LB)=(임시)주주총회, Buyback=자사주 매입, Dividen=배당, Rights Issue=유상증자, Tender Offer=공개매수, Net Buy/Sell=순매수/순매도, Sesi I=1부, IHSG/JCI=IHSG, Asing=외국인, Komisaris=이사, Direktur Utama=대표. ⑤ 두 절은 " — "로 연결. 영어 원문도 한국어로. ⑥ 경제 캘린더 지표명은 국내 리서치 표기: "ISM Manufacturing PMI (Aug)"→"8월 ISM 제조업 PMI", "Nonfarm Payrolls (Aug)"→"8월 비농업 고용", "Initial Jobless Claims"→"신규 실업수당 청구", "Crude Oil Inventories"→"EIA 원유 재고", "Fed Chair Powell Speaks"→"연준 Powell 의장 연설", "FOMC Member Waller Speaks"→"연준 Waller 이사 연설"; (Aug) 같은 월은 앞으로 "8월 …", (MoM)/(YoY)/(QoQ)는 유지. ⑦ "실적 공시 · " 같은 한국어 접두어가 있으면 유지하고 뒤의 인니어만 번역."""
+CLAUDE_RULES_KO = """너는 한국 증권사 인도네시아 리서치 데스크의 편집자다. 인도네시아어·영어 뉴스 헤드라인과 공시 제목을 한국 증권사 데일리 헤드라인체로 옮긴다. 직역이 아니라, 한국 경제지 기자가 같은 사실을 처음부터 한국어로 쓴 것처럼 써라.
+
+[문체]
+① 명사형 종결(…확대, …전망, …결정, …하락). 종결어미(~합니다/~했다/~됨)와 마침표 금지. 25~35자 안팎, 최대 45자.
+② 한국어 어순(주체 → 내용 → 결과)으로 재배열. 원문의 절 순서·쉼표를 그대로 따르지 말 것. 부제 연결 " — "는 꼭 필요할 때 한 번만.
+③ 번역투 금지: "타격", "정조준", "…속에서", "…에도 불구하고", "…를 위해", "…에 따라", "…한 가운데" 같은 표현 대신 자연스러운 조사·명사형. 비유·감탄("롤러코스터", "쌍둥이 열쇠", "천정부지")은 사실 표현으로 바꾼다.
+④ 매체 관용구는 삭제: Simak, Ini Daftarnya, Cek, Begini, Apa Kabar, Ini Penyebabnya, Rabu (9/9) 같은 요일·괄호 날짜(필요하면 "9일"만). 핵심이 숫자 하나면 숫자를 앞세운다.
+⑤ 주체가 상장사면 "회사명(종목코드)" 또는 종목코드만. 원문에 종목코드가 있으면 반드시 유지.
+
+[표기]
+⑥ 고유명사(회사명·인명·지명)는 로마자 원문 유지(Danantara, Bakrie, Boy Thohir…; Boy→소년 같은 번역 금지). 널리 알려진 지명만 한국어(Indonesia=인도네시아, Jakarta=자카르타, Sulawesi=술라웨시). 퍼센트·숫자 원문 유지, 소수점은 마침표(0,12%→0.12%).
+⑦ 통화는 Rp 표기, Miliar=억, Triliun=조 (Rp500 Miliar=Rp5,000억, Rp1,27 Triliun=Rp1.27조, US$100=USD 100).
+⑧ 용어: Laba=순이익, Pendapatan=매출, Saham=주식, Rekomendasi=투자의견, Kinerja=실적, Emiten=상장사, RUPS(LB)=(임시)주주총회, Buyback=자사주 매입, Dividen=배당, Rights Issue=유상증자, Tender Offer=공개매수, Net Buy/Sell=순매수/순매도, Sesi I=1부, IHSG/JCI=IHSG, Asing=외국인, Komisaris=이사, Direktur Utama=대표, Capex=설비투자, Top Losers/Gainers=낙폭/상승 상위, Suspensi=거래정지, Obligasi=채권, Sukuk=수쿡, Smelter=제련소, Tol=유료도로.
+⑨ 경제 캘린더 지표명은 국내 리서치 표기: "ISM Manufacturing PMI (Aug)"→"8월 ISM 제조업 PMI", "Nonfarm Payrolls (Aug)"→"8월 비농업 고용", "Initial Jobless Claims"→"신규 실업수당 청구", "Crude Oil Inventories"→"EIA 원유 재고", "Fed Chair Powell Speaks"→"연준 Powell 의장 연설"; (MoM)/(YoY)/(QoQ)는 유지.
+⑩ "실적 공시 · " 같은 한국어 접두어가 있으면 유지하고 뒤만 번역. 공시 제목은 격식체 명사형("임시주주총회 소집 통지", "정정 공시 — 연간 기업설명회 자료").
+
+[예시 — 원문 → 번역]
+"Garap 5 Proyek Tol, Jasa Marga (JSMR) Proyeksi Capex Tembus Rp12 T" → "JSMR, 유료도로 5개 사업에 설비투자 Rp12조 전망"
+"El Niño Dera Sulawesi, Vale Sebut Smelter Normal Meski Pakai PLTA" → "Vale Indonesia, 술라웨시 엘니뇨 가뭄에도 수력 제련소 정상 가동"
+"Harga Minyak Bak Roller Coaster, Medco Energi Siapkan Kunci Ganda" → "유가 급등락에 Medco Energi(MEDC), 이중 헤지 전략 가동"
+"Haji Isam Disebut Incar 62 Persen Saham Bayan Senilai Rp52,53 T" → "Haji Isam, Bayan(BYAN) 지분 62% Rp52.53조 인수 추진설"
+"IHSG Ditutup Melemah 0,12% ke 6.678 pada Rabu (9/9), KLBF, MAPI, BBTN Top Losers" → "IHSG 0.12% 하락한 6,678 마감 — KLBF·MAPI·BBTN 낙폭 상위"
+"SIDO Bidik Pemulihan Kinerja pada Semester II Usai Penjualan Turun 19,8%" → "SIDO, 매출 19.8% 감소 딛고 하반기 실적 회복 목표"
+"Belum Bayar Obligasi dan Sukuk, BEI Lanjut Suspensi Saham WIKA" → "WIKA, 채권·수쿡 미상환으로 거래정지 연장"
+"BJTM tightens lending as NPL hits 4.24%" → "BJTM, NPL 4.24%로 상승에 대출 심사 강화"
+"Transformasi Organisasi, Bank Mandiri Taspen Implementasikan RCEO di 10 Wilayah" → "Bank Mandiri Taspen, 10개 권역에 RCEO 도입해 조직 개편"
+"Unit Bisnis Sinar Mas (DSSA) Punya Mesin Pertumbuhan Baru, Data Center Capai 1 GW" → "DSSA, 데이터센터 1GW 확보로 새 성장축 마련"
+"Ringkasan Risalah Rapat Umum Para Pemegang Saham Luar Biasa" → "임시주주총회 의사록 요약"
+"Simak Rekomendasi Saham BBCA, BMRI, dan BBRI Hari Ini" → "BBCA·BMRI·BBRI 투자의견 정리\""""
+
 CLAUDE_RULES_ID = """Terjemahkan ke bahasa Indonesia gaya judul berita ekonomi (Kontan/Bisnis): ringkas, tanpa titik di akhir, nama perusahaan/orang/kode saham tetap, angka & persen tetap. Untuk judul kalender ekonomi AS tambahkan "AS" bila perlu dan bulan dalam bahasa Indonesia (Agu, Jul). Awalan Korea seperti "실적 공시 · " diganti "Laporan Keuangan · ", "주주총회 · "→"RUPS · ", "기업설명회 · "→"Public Expose · ", "공시 · "→"Keterbukaan · "."""
 
 def _secret(name):
@@ -1274,14 +1303,20 @@ def _claude_cli():
         log("Claude Code 미발견 — 확인 경로:", "; ".join(str(c) for c in cands[:4]))
     return None
 
+_CLAUDE_MODEL = {}
 def _claude_complete(prompt, key, model):
     """프롬프트 → 응답 텍스트. 1) API 키가 있으면 Anthropic API  2) 없으면 Claude Code CLI(구독)  3) 둘 다 없으면 None."""
     if key and not _GEM.get("claude_api_dead"):
         try:
             r = requests.post("https://api.anthropic.com/v1/messages", json={"model": model, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt}]}, timeout=90,
                               headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
-            if r.status_code == 200: return "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text").strip()
-            log(f"Claude API 번역 실패 {r.status_code}: {r.text[:120]}")
+            if r.status_code == 200:
+                _GEM["claude_api_used"] = True
+                return "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text").strip()
+            log(f"Claude API 번역 실패 {r.status_code} ({model}): {r.text[:120]}")
+            if r.status_code in (400, 404) and model != "claude-sonnet-4-5" and not _CLAUDE_MODEL.get("fallback"):   # 자동 선택 모델이 거부되면 검증된 모델로 1회 재시도
+                _CLAUDE_MODEL["id"] = "claude-sonnet-4-5"; _CLAUDE_MODEL["fallback"] = True; log("Claude 번역 모델 → claude-sonnet-4-5 로 대체")
+                return _claude_complete(prompt, key, "claude-sonnet-4-5")
             if r.status_code in (400, 401, 402, 403, 429): _GEM["claude_api_dead"] = True; log("Claude API 사용 불가(크레딧·키) → 이 세션은 Claude Code(구독) 로 번역")
         except Exception as e: log("Claude API 오류", str(e)[:80])
     cli = _claude_cli()
@@ -1294,12 +1329,29 @@ def _claude_complete(prompt, key, model):
     if r.returncode != 0: log(f"Claude Code 번역 실패 (exit {r.returncode}): {(r.stderr or r.stdout)[:120]}"); return None
     return (r.stdout or "").strip()
 
+def _claude_model(key):
+    """번역 모델: config translate.claude_model 이 있으면 그것, 없으면 API /v1/models 에서 가장 최신 Sonnet 을 고른다(빌드당 1회 캐시). 실패 시 claude-sonnet-4-5."""
+    cfg = CFG.get("translate") or {}
+    if cfg.get("claude_model"): return cfg["claude_model"]
+    if _CLAUDE_MODEL.get("id"): return _CLAUDE_MODEL["id"]
+    pick = "claude-sonnet-4-5"
+    if key:
+        try:
+            r = requests.get("https://api.anthropic.com/v1/models", params={"limit": 100}, timeout=20, headers={"x-api-key": key, "anthropic-version": "2023-06-01"})
+            if r.status_code == 200:
+                ms = [m for m in r.json().get("data", []) if "sonnet" in m.get("id", "") and "claude" in m.get("id", "")]
+                ms.sort(key=lambda m: m.get("created_at", ""), reverse=True)
+                if ms: pick = ms[0]["id"]
+        except Exception as e: log("Claude 모델 조회 실패", str(e)[:80])
+    _CLAUDE_MODEL["id"] = pick; log("Claude 번역 모델:", pick)
+    return pick
+
 def _tr_claude_api(pairs):
     """pairs: [(원문, 목표언어)] → {(원문, 목표언어): 번역}. Anthropic API 키(secrets.json) 또는 PC 의 Claude Code 로 번역. 결과는 tr_claude.json 에 영구 저장."""
     key = _secret("anthropic_api_key")
     if not pairs or not (key or _claude_cli()): return {}
     cfg = CFG.get("translate") or {}
-    model = cfg.get("claude_model", "claude-sonnet-4-5")
+    model = _claude_model(key)
     out = {}
     for tl in ("ko", "id"):
         texts = [t for t, l in pairs if l == tl]
@@ -1326,7 +1378,7 @@ def _tr_claude_api(pairs):
             for (t, tl), v in out.items(): cur[hashlib.md5((t + "|" + tl).encode("utf-8")).hexdigest()] = v
             TR_GOOD_P.write_text(json.dumps(cur, ensure_ascii=False), encoding="utf-8")
             TR_GOOD.update(cur)
-            log(f"Claude 번역 {len(out)}건 ({'API' if key else 'Claude Code'}) → tr_claude.json (총 {len(cur)})")
+            log(f"Claude 번역 {len(out)}건 ({'API ' + model if key and not _GEM.get('claude_api_dead') else 'Claude Code'}) → tr_claude.json (총 {len(cur)})")
         except Exception as e: log("tr_claude.json 저장 실패", e)
     return out
 
