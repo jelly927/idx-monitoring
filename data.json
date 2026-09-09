@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 12:42",
+ "updated": "2026-09-09 12:46",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,550 · USD/KRW 1,336 · 12:27 Yahoo",
- "idr_per_krw": 13.1335,
+ "fx_basis": "13.13 IDR/KRW · USD/IDR 17,550 · USD/KRW 1,337 · 12:27 Yahoo",
+ "idr_per_krw": 13.1276,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -341,8 +341,8 @@
   "m1": 4.43,
   "value_idr": 15709984999251,
   "volume": 35150343143,
-  "rank_src": "Yahoo 15분 지연 · 835종목 · 외국인·공시 PC 09-09 12:31",
-  "rank_asof": "12:41",
+  "rank_src": "Yahoo 15분 지연 · 835종목 · 외국인·공시 PC 09-09 12:40",
+  "rank_asof": "12:45",
   "rank_date": "2026-09-09",
   "adv": 289,
   "dec": 372,
@@ -16208,10 +16208,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7010.23,
+   "px": 7022.73,
    "prev": 7006.24,
-   "pct": 0.06,
-   "asof": "12:20",
+   "pct": 0.24,
+   "asof": "12:25",
    "live": true,
    "spark": [
     6998.61,
@@ -16278,17 +16278,18 @@
     7061.28,
     7062.25,
     7030.77,
-    7010.23
+    7024.59,
+    7022.73
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65111.77,
+   "px": 65061.47,
    "prev": 65370.42,
-   "pct": -0.4,
-   "asof": "12:25",
+   "pct": -0.47,
+   "asof": "12:30",
    "live": true,
    "spark": [
     65479.27,
@@ -16346,17 +16347,18 @@
     65225.78,
     65091.47,
     65136.63,
-    65111.77
+    65097.9,
+    65061.47
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25248.81,
+   "px": 25232.77,
    "prev": 25317.18,
-   "pct": -0.27,
-   "asof": "12:25",
+   "pct": -0.33,
+   "asof": "12:30",
    "live": true,
    "spark": [
     25189.55,
@@ -16396,7 +16398,8 @@
     25251.81,
     25227.06,
     25232.4,
-    25248.81
+    25238.75,
+    25232.77
    ]
   }
  ],
@@ -16485,6 +16488,31 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-09T12:35:00+07:00",
+   "date": "2026-09-09",
+   "time": "12:35",
+   "src": "Katadata",
+   "t": "Saham GOTO Potensi Turun ke Rp 20 Imbas Aturan Rp 1 BEI, Antrian Jual Mengular",
+   "tags": [
+    "GOTO"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6aa0f0383e95a/saham-goto-potensi-turun-ke-rp-20-imbas-aturan-rp-1-bei-antrian-jual-mengular",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/05/25/PT_GoTo_Gojek_Tokopedia_Tbk-2023_05_25-10_26_12_95f92d31614b486e03fff274ac02adad_620x413_thumb.jpeg",
+   "t_id": "Saham GOTO Potensi Turun ke Rp 20 Imbas Aturan Rp 1 BEI, Antrian Jual Mengular"
+  },
+  {
+   "ts": "2026-09-09T12:31:44+07:00",
+   "date": "2026-09-09",
+   "time": "12:31",
+   "src": "Detik",
+   "t": "Tol Probolinggo-Banyuwangi Beroperasi Awal 2027",
+   "tags": [
+    "JSMR"
+   ],
+   "url": "https://finance.detik.com/infrastruktur/d-8655144/tol-probolinggo-banyuwangi-beroperasi-awal-2027",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/27/pembangunan-tol-probolinggo-banyuwangi-dikebut-ruas-gending-besuki-rampung-100-1782536255257_169.jpeg?w=360&q=90"
+  },
   {
    "ts": "2026-09-09T12:30:00+07:00",
    "date": "2026-09-09",
@@ -17340,6 +17368,16 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-09T12:42:28+07:00",
+   "date": "2026-09-09",
+   "time": "12:42",
+   "src": "Jawa Pos",
+   "t": "BPS Tegaskan Masuk DTSEN Tak Otomatis Dapat Bansos",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609090216/bps-tegaskan-masuk-dtsen-tak-otomatis-dapat-bansos",
+   "img": "https://cdn-assets.jawapos.com/images/1/2023/09/21/JKT-1-PEMBAGIAN-KUPON-BANSOS-2023-FED-8JPG-1600029306.jpg"
+  },
+  {
    "ts": "2026-09-09T12:40:00+07:00",
    "date": "2026-09-09",
    "time": "12:40",
@@ -17348,6 +17386,28 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl30vk423/kepercayaan-konsumen-meningkat-sinyal-ekonomi-pulih",
    "img": "https://static.republika.co.id/uploads/images/detailnews/017835000-1774843830-830-556.jpg"
+  },
+  {
+   "ts": "2026-09-09T12:37:11+07:00",
+   "date": "2026-09-09",
+   "time": "12:37",
+   "src": "Detik",
+   "t": "Bea Cukai Tindak 10 Juta Batang Rokok Ilegal yang Rugikan Negara Rp 8 M",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8655154/bea-cukai-tindak-10-juta-batang-rokok-ilegal-yang-rugikan-negara-rp-8-m",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/kepala-kantor-wilayah-bea-cukai-jakarta-hendri-darnadi-1788931242796_169.jpeg?w=360&q=90",
+   "t_id": "Bea Cukai Tindak 10 Juta Batang Rokok Ilegal yang Rugikan Negara Rp 8 M"
+  },
+  {
+   "ts": "2026-09-09T12:36:00+07:00",
+   "date": "2026-09-09",
+   "time": "12:36",
+   "src": "Katadata",
+   "t": "Purbaya Ungkap BNPB Masih Punya Dana Siap Pakai Rp 950 Miliar",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/makro/6aa0f04ac0ed8/purbaya-ungkap-bnpb-masih-punya-dana-siap-pakai-rp-950-miliar",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/03/Konferensi_Pers_Hasil_Rapat_Berkala_Komite_Stabilitas_Sistem_Keu-2026_08_03-18_22_31_ab1d6a2f3fa4a197e2a90e951f33641a_620x413_thumb.jpg",
+   "t_id": "Purbaya Ungkap BNPB Masih Punya Dana Siap Pakai Rp 950 Miliar"
   },
   {
    "ts": "2026-09-09T12:25:31+07:00",
@@ -17651,41 +17711,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/04/16/2026_04_16-18_04_00_5e6802be-398d-11f1-9348-0242ac120002_620x413_thumb.jpg",
    "t_ko": "노동계, 노동법 개정안에 의견 제시 — 임금부터 아웃소싱 폐지까지",
    "t_id": "Catatan Buruh untuk RUU Ketenagakerjaan: Upah hingga Hapus Outsourcing"
-  },
-  {
-   "ts": "2026-09-09T11:05:00+07:00",
-   "date": "2026-09-09",
-   "time": "11:05",
-   "src": "Bloomberg Technoz",
-   "t": "Jaksa Periksa 4 Direksi PT CNI di Kasus Korupsi Nikel",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121011/jaksa-periksa-4-direksi-pt-cni-di-kasus-korupsi-nikel",
-   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260831155259.jpeg",
-   "t_ko": "검찰, 니켈 부패 사건서 PT CNI 이사 4인 조사",
-   "t_id": "Jaksa Periksa 4 Direksi PT CNI di Kasus Korupsi Nikel"
-  },
-  {
-   "ts": "2026-09-09T11:02:00+07:00",
-   "date": "2026-09-09",
-   "time": "11:02",
-   "src": "Media Indonesia",
-   "t": "Abu Vulkanik Anak Krakatau Masih Terdeteksi di Kepulauan Seribu, Warga Dimbau Pakai Masker",
-   "tags": [],
-   "url": "https://mediaindonesia.com/megapolitan/931322/abu-vulkanik-anak-krakatau-masih-terdeteksi-di-kepulauan-seribu-warga-dimbau-pakai-masker",
-   "t_ko": "Anak Krakatau 화산재 Kepulauan Seribu서 여전히 감지 — 주민 마스크 착용 권고",
-   "t_id": "Abu Vulkanik Anak Krakatau Masih Terdeteksi di Kepulauan Seribu, Warga Dimbau Pakai Masker"
-  },
-  {
-   "ts": "2026-09-09T11:00:00+07:00",
-   "date": "2026-09-09",
-   "time": "11:00",
-   "src": "Katadata",
-   "t": "BRIN: Letusan Gunung Bukan Solusi Pemanasan Global, Termasuk Anak Krakatau",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6aa0d9c9c2a2d/brin-letusan-gunung-bukan-solusi-pemanasan-global-termasuk-anak-krakatau",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/Gunung_Anak_Krakatau-2026_09_07-09_50_47_6ebbbfbdcf1c740192ef8fcbffce13ea_620x413_thumb.png",
-   "t_ko": "BRIN — 화산 분화는 지구 온난화 해법 아냐, Anak Krakatau 포함",
-   "t_id": "BRIN: Letusan Gunung Bukan Solusi Pemanasan Global, Termasuk Anak Krakatau"
   }
  ],
  "kisi_news": [
@@ -17906,9 +17931,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "93.90",
-   "d": -0.3,
-   "ytd": 63.53,
+   "v": "94.00",
+   "d": -0.19,
+   "ytd": 63.71,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17918,9 +17943,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,429.3",
-   "d": 0.2,
-   "ytd": 2.4,
+   "v": "4,429.7",
+   "d": 0.21,
+   "ytd": 2.41,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17942,9 +17967,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,682",
-   "d": -0.56,
-   "ytd": -0.0,
+   "v": "16,684",
+   "d": -0.55,
+   "ytd": 0.01,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24956,8 +24981,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-09 12:31",
-  "pc_age_min": 11,
+  "idx_from_pc": "2026-09-09 12:40",
+  "pc_age_min": 6,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26172,9 +26197,9 @@
   },
   "model": "gemini-2.5-flash-lite",
   "index": {
-   "ko": "금융주(BBCA·BMRI·BBRI) 약세와 미 증시(다우 -1.18%, S&P 500 -0.58%) 하락 여파로 IHSG 0.58% 하락.",
-   "id": "IHSG melemah 0,58% akibat pelemahan saham perbankan (BBCA, BMRI, BBRI) serta penurunan bursa AS (Dow Jones -1,18%, S&P 500 -0,58%).",
-   "ts": "2026-09-09T12:42:47.727774+07:00"
+   "ko": "대형 은행주(BBCA, BMRI, BBRI) 약세와 금융업종 하락 영향으로 IHSG 0.58% 하락 마감.",
+   "id": "IHSG ditutup melemah 0,58% dipengaruhi oleh pelemahan saham perbankan besar (BBCA, BMRI, BBRI) dan sektor keuangan.",
+   "ts": "2026-09-09T12:46:22.808600+07:00"
   }
  },
  "mcap": [
