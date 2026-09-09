@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 20:56",
+ "updated": "2026-09-09 21:07",
  "delay_min": 0,
  "fx_basis": "13.12 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,337 · 20:43 Yahoo",
- "idr_per_krw": 13.1244,
+ "idr_per_krw": 13.1224,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,44 +15078,50 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7652.21,
+   "px": 7653.66,
    "prev": 7673.52,
-   "pct": -0.28,
-   "asof": "20:50",
+   "pct": -0.26,
+   "asof": "21:05",
    "live": true,
    "spark": [
     7653.65,
     7652.62,
     7651.12,
     7653.13,
-    7652.21
+    7652.21,
+    7656.22,
+    7653.08,
+    7653.66
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26335.41,
+   "px": 26363.54,
    "prev": 26421.41,
-   "pct": -0.33,
-   "asof": "20:50",
+   "pct": -0.22,
+   "asof": "21:05",
    "live": true,
    "spark": [
     26328.66,
     26335.59,
     26323.03,
     26331.69,
-    26335.41
+    26335.41,
+    26360.16,
+    26360.36,
+    26363.54
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52407.53,
+   "px": 52380.02,
    "prev": 52786.07,
-   "pct": -0.72,
-   "asof": "20:55",
+   "pct": -0.77,
+   "asof": "21:05",
    "live": true,
    "spark": [
     52496.92,
@@ -15123,7 +15129,9 @@
     52425.59,
     52435.55,
     52407.82,
-    52407.53
+    52424.52,
+    52401.97,
+    52380.02
    ]
   },
   {
@@ -15459,7 +15467,8 @@
     "BBNI"
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121087/bni-ungkap-3-faktor-tren-likuiditas-perbankan-longgar",
-   "img": "https://images.bloombergtechnoz.com/data/2025/01/image-20250122154815.jpg"
+   "img": "https://images.bloombergtechnoz.com/data/2025/01/image-20250122154815.jpg",
+   "t_ko": "BNI, 느슨한 은행 유동성 추세의 3가지 요인 공개"
   },
   {
    "ts": "2026-09-09T20:24:00+07:00",
@@ -16523,6 +16532,76 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-09T21:04:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:04",
+   "src": "Media Indonesia",
+   "t": "Kualitas Udara Singkawang tidak Sehat, ISPU Capai 180 akibat Karhutla",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931628/kualitas-udara-singkawang-tidak-sehat-ispu-capai-180-akibat-karhutla"
+  },
+  {
+   "ts": "2026-09-09T21:03:00+07:00",
+   "date": "2026-09-09",
+   "time": "21:03",
+   "src": "Medcom",
+   "t": "Pemkot Tangerang Perpanjang PJJ Hingga 11 September Akibat Abu Vulkanik",
+   "tags": [],
+   "url": "https://www.medcom.id/pendidikan/news-pendidikan/0kpqQYEK-pemkot-tangerang-perpanjang-pjj-hingga-11-september-akibat-abu-vulkanik",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1841085/0oWDiLlU28.jpg?w=720"
+  },
+  {
+   "ts": "2026-09-09T20:59:00+07:00",
+   "date": "2026-09-09",
+   "time": "20:59",
+   "src": "Media Indonesia",
+   "t": "Gerak Cepat Rescue untuk Cegah Karhutla Berdampak ke Satwa",
+   "tags": [],
+   "url": "https://mediaindonesia.com/humaniora/931623/gerak-cepat-rescue-untuk-cegah-karhutla-berdampak-ke-satwa",
+   "t_id": "Gerak Cepat Rescue untuk Cegah Karhutla Berdampak ke Satwa"
+  },
+  {
+   "ts": "2026-09-09T20:57:30+07:00",
+   "date": "2026-09-09",
+   "time": "20:57",
+   "src": "Republika",
+   "t": "Harga Bitcoin Turun, Arus Dana ETF Mengalir Deras",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl3o3u416/harga-bitcoin-turun-arus-dana-etf-mengalir-deras",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_210104130006-294.png",
+   "t_id": "Harga Bitcoin Turun, Arus Dana ETF Mengalir Deras"
+  },
+  {
+   "ts": "2026-09-09T20:57:00+07:00",
+   "date": "2026-09-09",
+   "time": "20:57",
+   "src": "Media Indonesia",
+   "t": "Infrastruktur Tol Buka Sumber Pertumbuhan Ekonomi Baru di Berbagai Koridor",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931625/infrastruktur-tol-buka-sumber-pertumbuhan-ekonomi-baru-di-berbagai-koridor",
+   "t_id": "Infrastruktur Tol Buka Sumber Pertumbuhan Ekonomi Baru di Berbagai Koridor"
+  },
+  {
+   "ts": "2026-09-09T20:56:00+07:00",
+   "date": "2026-09-09",
+   "time": "20:56",
+   "src": "Media Indonesia",
+   "t": "Gen Z & Milenial Jadi Sasaran Perluasan Akses KPR",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931621/gen-z--milenial-jadi-sasaran-perluasan-akses-kpr",
+   "t_id": "Gen Z & Milenial Jadi Sasaran Perluasan Akses KPR"
+  },
+  {
+   "ts": "2026-09-09T20:53:00+07:00",
+   "date": "2026-09-09",
+   "time": "20:53",
+   "src": "Media Indonesia",
+   "t": "Pemerintah Prioritaskan Pemulihan 333 Rumah Pascakonflik di Papua Pegunungan",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/931620/pemerintah-prioritaskan-pemulihan-333-rumah-pascakonflik-di-papua-pegunungan",
+   "t_id": "Pemerintah Prioritaskan Pemulihan 333 Rumah Pascakonflik di Papua Pegunungan"
+  },
+  {
    "ts": "2026-09-09T20:50:00+07:00",
    "date": "2026-09-09",
    "time": "20:50",
@@ -16675,15 +16754,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/20/menteri-perdagangan-mendag-budi-santoso-1787211883943_169.jpeg?w=360&q=90"
   },
   {
-   "ts": "2026-09-09T20:00:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:00",
-   "src": "Media Indonesia",
-   "t": "Sebagian Besar Wilayah Jawa Tengah Masuk Status Awas Kekeringan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931580/sebagian-besar-wilayah-jawa-tengah-masuk-status-awas-kekeringan"
-  },
-  {
    "ts": "2026-09-09T19:58:58+07:00",
    "date": "2026-09-09",
    "time": "19:58",
@@ -16692,16 +16762,6 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl3lea370/harga-bitcoin-masih-volatil-investor-perlu-cermat-kelola-risiko",
    "img": "https://static.republika.co.id/uploads/images/detailnews/investor-tidak-lagi-hanya-melirik-bitcoin-melainkan-juga_250925193745-790.jpg"
-  },
-  {
-   "ts": "2026-09-09T19:53:00+07:00",
-   "date": "2026-09-09",
-   "time": "19:53",
-   "src": "Media Indonesia",
-   "t": "Tampilkan Portofolio Ban Pertambangan Komprehensif di Mining Expo 2026",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931576/tampilkan-portofolio-ban-pertambangan-komprehensif-di-mining-expo-2026",
-   "t_id": "Tampilkan Portofolio Ban Pertambangan Komprehensif di Mining Expo 2026"
   },
   {
    "ts": "2026-09-09T19:50:00+07:00",
@@ -16777,55 +16837,6 @@
    "url": "https://finance.detik.com/foto-bisnis/d-8655963/berburu-mainan-dan-nostalgia-masa-kecil-di-kampoeng-mainan-blok-m",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/berburu-mainan-dan-nostalgia-masa-kecil-di-kampoeng-mainan-blok-m-1788956285282.jpeg?w=360&q=90",
    "t_id": "Berburu Mainan dan Nostalgia Masa Kecil di Kampoeng Mainan Blok M"
-  },
-  {
-   "ts": "2026-09-09T19:30:15+07:00",
-   "date": "2026-09-09",
-   "time": "19:30",
-   "src": "Detik",
-   "t": "BRI Ditugaskan Buka Rekening Warga RI, Khusus Aceh Lewat BSI",
-   "tags": [],
-   "url": "https://finance.detik.com/moneter/d-8655862/bri-ditugaskan-buka-rekening-warga-ri-khusus-aceh-lewat-bsi",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/18/menteri-hilirisasi-dan-investasi-rosan-roeslani-kamis-1862026-1781790660049_169.jpeg?w=360&q=90"
-  },
-  {
-   "ts": "2026-09-09T19:30:00+07:00",
-   "date": "2026-09-09",
-   "time": "19:30",
-   "src": "Republika",
-   "t": "Peredaran Rokok Ilegal Tekan Industri Tembakau dan Penerimaan Daerah",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl3iwl416/peredaran-rokok-ilegal-tekan-industri-tembakau-dan-penerimaan-daerah",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/059908500-1781062296-830-556.jpg",
-   "t_id": "Peredaran Rokok Ilegal Tekan Industri Tembakau dan Penerimaan Daerah"
-  },
-  {
-   "ts": "2026-09-09T19:28:14+07:00",
-   "date": "2026-09-09",
-   "time": "19:28",
-   "src": "Bloomberg",
-   "t": "Wall Street’s Leveraged ETF Push Gets New Twist With Hourly Bets",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-09/wall-street-s-leveraged-etf-push-gets-new-twist-with-hourly-bets"
-  },
-  {
-   "ts": "2026-09-09T19:27:46+07:00",
-   "date": "2026-09-09",
-   "time": "19:27",
-   "src": "Bloomberg",
-   "t": "Brent Hits $100, US Slaps Bans, New Tariffs on Canada, Trump to Speak at RNC",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-09/bloomberg-brief-09-09-2026-video"
-  },
-  {
-   "ts": "2026-09-09T19:18:49+07:00",
-   "date": "2026-09-09",
-   "time": "19:18",
-   "src": "Detik",
-   "t": "Duit APBN Dipakai Biayai Buka Rekening Bank, Purbaya Buka Suara",
-   "tags": [],
-   "url": "https://finance.detik.com/moneter/d-8655958/duit-apbn-dipakai-biayai-buka-rekening-bank-purbaya-buka-suara",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/20/purbaya-1787205133556_169.jpeg?w=360&q=90"
   }
  ],
  "kisi_news": [
@@ -16999,8 +17010,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.12",
-   "d": -0.14,
-   "ytd": 12.95,
+   "d": -0.15,
+   "ytd": 12.94,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17010,9 +17021,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.802%",
-   "d": -0.08,
-   "ytd": 15.35,
+   "v": "4.796%",
+   "d": -0.21,
+   "ytd": 15.21,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17045,9 +17056,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "95.69",
-   "d": 1.6,
-   "ytd": 66.65,
+   "v": "95.76",
+   "d": 1.68,
+   "ytd": 66.77,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17057,9 +17068,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,461.5",
-   "d": 0.93,
-   "ytd": 3.14,
+   "v": "4,456.9",
+   "d": 0.83,
+   "ytd": 3.04,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -24594,7 +24605,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 208,
+  "pc_age_min": 219,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
