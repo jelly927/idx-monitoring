@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 20:43",
+ "updated": "2026-09-09 20:56",
  "delay_min": 0,
- "fx_basis": "13.12 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,337 · 20:40 Yahoo",
- "idr_per_krw": 13.1246,
+ "fx_basis": "13.12 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,337 · 20:43 Yahoo",
+ "idr_per_krw": 13.1244,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,45 +15078,52 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7654.04,
+   "px": 7652.21,
    "prev": 7673.52,
-   "pct": -0.25,
-   "asof": "20:40",
+   "pct": -0.28,
+   "asof": "20:50",
    "live": true,
    "spark": [
     7653.65,
     7652.62,
-    7654.04
+    7651.12,
+    7653.13,
+    7652.21
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26343.85,
+   "px": 26335.41,
    "prev": 26421.41,
-   "pct": -0.29,
-   "asof": "20:40",
+   "pct": -0.33,
+   "asof": "20:50",
    "live": true,
    "spark": [
     26328.66,
     26335.59,
-    26343.85
+    26323.03,
+    26331.69,
+    26335.41
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52465.34,
+   "px": 52407.53,
    "prev": 52786.07,
-   "pct": -0.61,
-   "asof": "20:40",
+   "pct": -0.72,
+   "asof": "20:55",
    "live": true,
    "spark": [
     52496.92,
     52409.34,
-    52465.34
+    52425.59,
+    52435.55,
+    52407.82,
+    52407.53
    ]
   },
   {
@@ -15442,6 +15449,18 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-09T20:52:48+07:00",
+   "date": "2026-09-09",
+   "time": "20:52",
+   "src": "Bloomberg Technoz",
+   "t": "BNI Ungkap 3 Faktor Tren Likuiditas Perbankan Longgar",
+   "tags": [
+    "BBNI"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121087/bni-ungkap-3-faktor-tren-likuiditas-perbankan-longgar",
+   "img": "https://images.bloombergtechnoz.com/data/2025/01/image-20250122154815.jpg"
+  },
   {
    "ts": "2026-09-09T20:24:00+07:00",
    "date": "2026-09-09",
@@ -16504,6 +16523,66 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-09T20:50:00+07:00",
+   "date": "2026-09-09",
+   "time": "20:50",
+   "src": "Media Indonesia",
+   "t": "Prabowo-Gibran Hadir di HUT Ke-25 Partai Demokrat",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/931616/prabowo-gibran-hadir-di-hut-ke-25-partai-demokrat-",
+   "t_id": "Prabowo-Gibran Hadir di HUT Ke-25 Partai Demokrat"
+  },
+  {
+   "ts": "2026-09-09T20:47:02+07:00",
+   "date": "2026-09-09",
+   "time": "20:47",
+   "src": "Detik",
+   "t": "Kapan Pembukaan Rekening buat Masyarakat Dimulai? Ini Jawabannya",
+   "tags": [],
+   "url": "https://finance.detik.com/moneter/d-8656071/kapan-pembukaan-rekening-buat-masyarakat-dimulai-ini-jawabannya",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/20/jaga-pertumbuhan-ekonomi-nasional-pemerintah-perkuat-sektor-strategis-1787215028622_169.jpeg?w=360&q=90",
+   "t_id": "Kapan Pembukaan Rekening buat Masyarakat Dimulai? Ini Jawabannya"
+  },
+  {
+   "ts": "2026-09-09T20:46:00+07:00",
+   "date": "2026-09-09",
+   "time": "20:46",
+   "src": "Medcom",
+   "t": "Bukan Sekadar Modal, Ini Solusi untuk Tantangan Keuangan UMKM",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/keuangan/nN9dEREK-bukan-sekadar-modal-ini-solusi-untuk-tantangan-keuangan-umkm",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1841074/iVIO75eap8.jpg?w=720",
+   "t_id": "Bukan Sekadar Modal, Ini Solusi untuk Tantangan Keuangan UMKM"
+  },
+  {
+   "ts": "2026-09-09T20:45:00+07:00",
+   "date": "2026-09-09",
+   "time": "20:45",
+   "src": "Media Indonesia",
+   "t": "Distribusi DMO MinyaKita Lewat Perum Bulog Disebut Perlu Kajian",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931612/distribusi-dmo-minyakita-lewat-perum-bulog-disebut-perlu-kajian"
+  },
+  {
+   "ts": "2026-09-09T20:45:00+07:00",
+   "date": "2026-09-09",
+   "time": "20:45",
+   "src": "Media Indonesia",
+   "t": "Warga Kabupaten Bandung Waspadai Abu Vulkanik Gunung Anak Krakatau",
+   "tags": [],
+   "url": "https://mediaindonesia.com/jabar/berita/931609/warga-kabupaten-bandung-waspadai-abu-vulkanik-gunung-anak-krakatau"
+  },
+  {
+   "ts": "2026-09-09T20:37:00+07:00",
+   "date": "2026-09-09",
+   "time": "20:37",
+   "src": "Media Indonesia",
+   "t": "Nasabah Fasilitas KPR dan Kredit Multiguna Mendapat Perlindungan Risiko",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931610/nasabah-fasilitas-kpr-dan-kredit-multiguna-mendapat-perlindungan-risiko",
+   "t_id": "Nasabah Fasilitas KPR dan Kredit Multiguna Mendapat Perlindungan Risiko"
+  },
+  {
    "ts": "2026-09-09T20:33:35+07:00",
    "date": "2026-09-09",
    "time": "20:33",
@@ -16655,16 +16734,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/04/14/koperasi-merah-putih-digeber-30-ribu-unit-ditargetkan-jalan-agustus-2026-1776153628799_169.jpeg?w=360&q=90"
   },
   {
-   "ts": "2026-09-09T19:43:00+07:00",
-   "date": "2026-09-09",
-   "time": "19:43",
-   "src": "Media Indonesia",
-   "t": "Tim Gabungan Tangani Karhutla di Gunung Ciremai Kuningan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/931571/tim-gabungan-tangani-karhutla-di-gunung-ciremai-kuningan",
-   "t_id": "Tim Gabungan Tangani Karhutla di Gunung Ciremai Kuningan"
-  },
-  {
    "ts": "2026-09-09T19:42:28+07:00",
    "date": "2026-09-09",
    "time": "19:42",
@@ -16675,15 +16744,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2023/09/21/JKT-1-PEMBAGIAN-KUPON-BANSOS-2023-FED-8JPG-1600029306.jpg",
    "t_ko": "BPS, DTSEN 등재가 자동 보조금 수급 아님을 강조",
    "t_id": "BPS Tegaskan Masuk DTSEN Tak Otomatis Dapat Bansos"
-  },
-  {
-   "ts": "2026-09-09T19:41:00+07:00",
-   "date": "2026-09-09",
-   "time": "19:41",
-   "src": "Media Indonesia",
-   "t": "Indonesia Terus Berkoordinasi dengan Negara-Negara Tetangga dalam Penanganan Karhutla",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/931574/indonesia-terus-berkoordinasi-dengan-negara-negara-tetangga-dalam-penanganan-karhutla"
   },
   {
    "ts": "2026-09-09T19:38:03+07:00",
@@ -16697,16 +16757,6 @@
    "t_id": "Sebelum Beralih ke Mobil Listrik, Konsumen Perlu Coba Langsung"
   },
   {
-   "ts": "2026-09-09T19:38:00+07:00",
-   "date": "2026-09-09",
-   "time": "19:38",
-   "src": "Media Indonesia",
-   "t": "Malaysia Tunggu Lampu Hijau Indonesia untuk Bantu Padamkan Karhutla",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/931569/malaysia-tunggu-lampu-hijau-indonesia-untuk-bantu-padamkan-karhutla",
-   "t_id": "Malaysia Tunggu Lampu Hijau Indonesia untuk Bantu Padamkan Karhutla"
-  },
-  {
    "ts": "2026-09-09T19:36:00+07:00",
    "date": "2026-09-09",
    "time": "19:36",
@@ -16716,15 +16766,6 @@
    "url": "https://katadata.co.id/finansial/keuangan/6aa152d200f76/pemerintah-anggarkan-rp-11-triliun-untuk-pembukaan-rekening-bank-200-juta-warga",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2022/07/21/zigi-62d8fec7eb531-ilustrasi-rekening-bank-untuk-mahasiswa_620x413_thumb.jpg",
    "t_id": "Pemerintah Anggarkan Rp 11 Triliun untuk Pembukaan Rekening Bank 200 Juta Warga"
-  },
-  {
-   "ts": "2026-09-09T19:36:00+07:00",
-   "date": "2026-09-09",
-   "time": "19:36",
-   "src": "Media Indonesia",
-   "t": "Pakar: Gas Bumi Adalah Bahan Baku Ekonomi, bukan Sekadar Komoditas",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931570/pakar-gas-bumi-adalah-bahan-baku-ekonomi-bukan-sekadar-komoditas"
   },
   {
    "ts": "2026-09-09T19:30:41+07:00",
@@ -16785,28 +16826,6 @@
    "tags": [],
    "url": "https://finance.detik.com/moneter/d-8655958/duit-apbn-dipakai-biayai-buka-rekening-bank-purbaya-buka-suara",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/20/purbaya-1787205133556_169.jpeg?w=360&q=90"
-  },
-  {
-   "ts": "2026-09-09T19:15:00+07:00",
-   "date": "2026-09-09",
-   "time": "19:15",
-   "src": "Medcom",
-   "t": "5 Rekomendasi Setrika Mini Rp100 Ribuan, Ringkas untuk Kos dan Traveling",
-   "tags": [],
-   "url": "https://www.medcom.id/properti/news-properti/4ba18Wvb-5-rekomendasi-setrika-mini-rp100-ribuan-ringkas-untuk-kos-dan-traveling",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1841123/jKPLW9TBFA.jpg?w=720",
-   "t_id": "5 Rekomendasi Setrika Mini Rp100 Ribuan, Ringkas untuk Kos dan Traveling"
-  },
-  {
-   "ts": "2026-09-09T19:04:49+07:00",
-   "date": "2026-09-09",
-   "time": "19:04",
-   "src": "Jawa Pos",
-   "t": "Pemerintah Sepakati Pembentukan Satgas Untuk Optimalkan KDKMP",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609090409/pemerintah-sepakati-pembentukan-satgas-untuk-optimalkan-kdkmp",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/menteri-keuangan-purbaya-yudhi-sadewa-bersiap-menyampaikan-tanggapan-pemerintah-pada-rapat-paripurna-ke-3-masa-persidangan-i-tahun-sidang-2026-2027-di-kompleks-parlemen-senayan-jakarta-kamis-2782026-salman-toyibijawa-pos-SW245.webp",
-   "t_id": "Pemerintah Sepakati Pembentukan Satgas Untuk Optimalkan KDKMP"
   }
  ],
  "kisi_news": [
@@ -16980,7 +16999,7 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.12",
-   "d": -0.15,
+   "d": -0.14,
    "ytd": 12.95,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
@@ -17014,9 +17033,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.66",
-   "d": -0.11,
-   "ytd": 0.39,
+   "v": "98.65",
+   "d": -0.12,
+   "ytd": 0.38,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17026,9 +17045,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "95.84",
-   "d": 1.76,
-   "ytd": 66.91,
+   "v": "95.69",
+   "d": 1.6,
+   "ytd": 66.65,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17038,9 +17057,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,474.4",
-   "d": 1.22,
-   "ytd": 3.44,
+   "v": "4,461.5",
+   "d": 0.93,
+   "ytd": 3.14,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17062,9 +17081,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,894",
-   "d": 0.7,
-   "ytd": 1.27,
+   "v": "16,854",
+   "d": 0.46,
+   "ytd": 1.03,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24575,7 +24594,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 195,
+  "pc_age_min": 208,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
