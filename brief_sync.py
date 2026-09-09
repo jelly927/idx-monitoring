@@ -7,7 +7,7 @@ config.json:
 파일명 규칙(둘 다 날짜가 이름에 있어야 함):
   KO: 260909_데일리시황_KISI.pptx / .pdf      (YYMMDD_데일리시황… 또는 YYMMDD 데일리 시황…)
   ID: kisi_morning_brief_20260909.pptx / .pdf  (kisi_morning_brief[_ID]_YYYYMMDD…)
-수동 대체: idx-live 루트 또는 briefs\ 에 latest_ko.pdf / latest_id.pdf 를 직접 넣으면 그 파일이 더 새로울 때 그대로 쓴다.
+수동 대체: idx-live 루트 또는 briefs 폴더에 latest_ko.pdf / latest_id.pdf 를 직접 넣으면 그 파일이 더 새로울 때 그대로 쓴다.
 상태: data/cache/brief_state.json (어느 원본을 변환했는지 기록 → 같은 파일은 다시 변환하지 않음)"""
 import sys, re, json, shutil, subprocess, tempfile, datetime as dt
 from pathlib import Path
