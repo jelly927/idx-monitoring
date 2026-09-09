@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 17:28",
+ "updated": "2026-09-09 17:32",
  "delay_min": 0,
- "fx_basis": "13.08 IDR/KRW · USD/IDR 17,505 · USD/KRW 1,339 · 17:06 Yahoo",
- "idr_per_krw": 13.0762,
+ "fx_basis": "13.08 IDR/KRW · USD/IDR 17,505 · USD/KRW 1,338 · 17:06 Yahoo",
+ "idr_per_krw": 13.0783,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -85,15 +85,15 @@
     6648.275,
     6649.609,
     6649.254,
-    6649.515,
-    6647.639,
-    6645.676,
-    6646.993,
+    6646.922,
+    6649.924,
+    6646.744,
+    6646.796,
     6646.839,
     6647.153,
-    6647.087,
-    6647.586,
-    6649.102,
+    6648.879,
+    6649.25,
+    6648.559,
     6646.914,
     6655.473,
     6654.396,
@@ -211,15 +211,15 @@
     660.821,
     660.846,
     660.427,
-    660.221,
-    660.921,
-    660.864,
-    660.498,
+    660.393,
+    660.334,
+    660.632,
+    660.686,
     660.675,
     661.141,
     660.836,
-    660.769,
-    660.691,
+    660.553,
+    660.856,
     661.082,
     661.077,
     660.231,
@@ -336,7 +336,7 @@
   "m1": 4.91,
   "value_idr": 16134522240878,
   "volume": 32530207402,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-09 17:21",
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 종가 · 외국인·공시 PC 09-09 17:28",
   "rank_asof": null,
   "rank_date": "2026-09-09",
   "adv": 328,
@@ -15668,6 +15668,19 @@
  },
  "news": [
   {
+   "ts": "2026-09-09T17:23:22+07:00",
+   "date": "2026-09-09",
+   "time": "17:23",
+   "src": "Medcom",
+   "t": "Tangani 77 Karhutla dalam Sebulan, PTBA Andalkan Tim Rescue dan Kolaborasi",
+   "tags": [
+    "PTBA"
+   ],
+   "url": "https://www.medcom.id/ekonomi/bisnis/9K5y6Z1K-tangani-77-karhutla-dalam-sebulan-ptba-andalkan-tim-rescue-dan-kolaborasi",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1841089/Q1X83HdRp9.jpeg?w=720",
+   "t_id": "Tangani 77 Karhutla dalam Sebulan, PTBA Andalkan Tim Rescue dan Kolaborasi"
+  },
+  {
    "ts": "2026-09-09T17:23:00+07:00",
    "date": "2026-09-09",
    "time": "17:23",
@@ -17285,9 +17298,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.84",
-   "d": 0.07,
-   "ytd": 0.57,
+   "v": "98.82",
+   "d": 0.05,
+   "ytd": 0.55,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17297,9 +17310,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "95.19",
-   "d": 1.07,
-   "ytd": 65.78,
+   "v": "95.09",
+   "d": 0.97,
+   "ytd": 65.6,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17309,9 +17322,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,434.1",
-   "d": 0.31,
-   "ytd": 2.51,
+   "v": "4,439.0",
+   "d": 0.42,
+   "ytd": 2.62,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17333,9 +17346,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,826",
-   "d": 0.3,
-   "ytd": 0.86,
+   "v": "16,840",
+   "d": 0.38,
+   "ytd": 0.95,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18008,17 +18021,6 @@
   },
   {
    "date": "2026-09-07",
-   "t": "INCO",
-   "kind": "corp",
-   "imp": 3,
-   "title": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
-   "src": "IDX 공시",
-   "country": "ID",
-   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
-   "title_id": "Public Expose · Penyampaian Materi Public Expose Tahunan"
-  },
-  {
-   "date": "2026-09-07",
    "t": "WISL",
    "kind": "corp",
    "imp": 3,
@@ -18082,6 +18084,17 @@
    "country": "ID",
    "title_ko": "실적 공시 · Penyampaian Bukti Iklan Informasi Laporan Keuangan Tahunan",
    "title_id": "Laporan Keuangan · Penyampaian Bukti Iklan Informasi Laporan Keuangan Tahunan"
+  },
+  {
+   "date": "2026-09-07",
+   "t": "RAJA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Tahunan"
   },
   {
    "date": "2026-09-08",
@@ -20099,6 +20112,28 @@
  ],
  "announcements": [
   {
+   "ts": "2026-09-09T17:24:20+07:00",
+   "date": "2026-09-09",
+   "time": "17:24",
+   "t": "ARKO",
+   "type": "STOCK",
+   "title": "Transaksi Material Tanpa Persetujuan RUPS",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/beb1b0de64_1d48b8d914.pdf",
+   "title_ko": "주주총회 승인 불요 중요거래 공시",
+   "title_id": "Transaksi Material Tanpa Persetujuan RUPS"
+  },
+  {
+   "ts": "2026-09-09T17:20:58+07:00",
+   "date": "2026-09-09",
+   "time": "17:20",
+   "t": "ADHI",
+   "type": "STOCK",
+   "title": "Penyampaian Bukti Iklan Pemanggilan Rapat Umum Pemegang Saham Luar Biasa Tahun 2026",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/9770c6dd10_fe4f437efe.pdf",
+   "title_id": "Penyampaian Bukti Iklan Pemanggilan Rapat Umum Pemegang Saham Luar Biasa Tahun 2026",
+   "title_ko": "임시주주총회 소집 통지 광고 증빙 제출"
+  },
+  {
    "ts": "2026-09-09T17:10:00+07:00",
    "date": "2026-09-09",
    "time": "17:10",
@@ -20106,8 +20141,8 @@
    "type": "STOCK",
    "title": "Pencabutan Efek Bersifat Ekuitas Dari Pemantauan Khusus (KOREKSI)",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/47591356e2_5cf0234ace.pdf",
-   "title_id": "Pencabutan Efek Bersifat Ekuitas Dari Pemantauan Khusus (KOREKSI)",
-   "title_ko": "지분증권 특별관리 지정 해제 (정정 공시)"
+   "title_ko": "지분증권 특별관리 지정 해제 (정정 공시)",
+   "title_id": "Pencabutan Efek Bersifat Ekuitas Dari Pemantauan Khusus (KOREKSI)"
   },
   {
    "ts": "2026-09-09T17:08:56+07:00",
@@ -24818,24 +24853,13 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07092026-0100-00.pdf-0.pdf",
    "title_ko": "상장법인 주식 보유 및 지분 변동 보고",
    "title_id": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA"
-  },
-  {
-   "ts": "2026-09-07T10:34:16+07:00",
-   "date": "2026-09-07",
-   "time": "10:34",
-   "t": "INCO",
-   "type": "STOCK",
-   "title": "Penyampaian Materi Public Expose - Tahunan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/28863c127d_2268e990a5.pdf",
-   "title_ko": "연간 기업설명회 자료 제출",
-   "title_id": "Penyampaian Materi Public Expose - Tahunan"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-09 17:21",
-  "pc_age_min": 7,
+  "idx_from_pc": "2026-09-09 17:28",
+  "pc_age_min": 4,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
