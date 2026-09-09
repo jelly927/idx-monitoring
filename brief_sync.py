@@ -3,7 +3,9 @@
 publish.py 가 매 빌드마다 호출 → 새 파일이 생겼을 때만 변환(PowerPoint COM, 없으면 LibreOffice)하고 GitHub 에 올린다.
 
 config.json:
-  "brief_dirs": ["C:\\Users\\csd04\\Desktop\\데일리 시황"]   ← 브리프가 저장되는 폴더(여러 개 가능). 없으면 idx-live 폴더만 본다.
+  "brief_dirs_ko": ["C:\\Users\\csd04\\Desktop\\데일리 시황"]   ← KO 브리프 폴더 (여러 개 가능)
+  "brief_dirs_id": ["C:\\Users\\csd04\\Downloads"]              ← ID 브리프 폴더 (다운로드 폴더의 kisi_morning_brief_YYYYMMDD.pptx)
+  같은 날짜 파일이 여러 개면(_1, (1) 등) 마지막으로 저장된 것을 쓴다.
 파일명 규칙(둘 다 날짜가 이름에 있어야 함):
   KO: 260909_데일리시황_KISI.pptx / .pdf      (YYMMDD_데일리시황… 또는 YYMMDD 데일리 시황…)
   ID: kisi_morning_brief_20260909.pptx / .pdf  (kisi_morning_brief[_ID]_YYYYMMDD…)
@@ -25,17 +27,18 @@ def _date(m, lang):
     try: return dt.datetime.strptime(g, "%y%m%d" if len(g) == 6 else "%Y%m%d").date()
     except ValueError: return None
 
-def _dirs():
+def _dirs(lang):
+    """언어별 검색 폴더: config brief_dirs_ko / brief_dirs_id (없으면 brief_dirs) + idx-live 루트·briefs/"""
     try: cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
     except Exception: cfg = {}
-    ds = [Path(d) for d in cfg.get("brief_dirs", []) if d]
+    ds = [Path(d) for d in (cfg.get(f"brief_dirs_{lang}") or cfg.get("brief_dirs") or []) if d]
     ds += [ROOT, ROOT / "briefs"]
     return [d for d in ds if d.is_dir()]
 
 def _candidates(lang):
     rx = KO_RX if lang == "ko" else ID_RX
     today = dt.date.today(); out = []
-    for d in _dirs():
+    for d in _dirs(lang):
         try: names = list(d.iterdir())
         except Exception: continue
         for p in names:
