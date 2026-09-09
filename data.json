@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": "2026-09-09 12:35",
+ "updated": "2026-09-09 12:42",
  "delay_min": 0,
  "fx_basis": "13.13 IDR/KRW · USD/IDR 17,550 · USD/KRW 1,336 · 12:27 Yahoo",
  "idr_per_krw": 13.1335,
@@ -342,7 +342,7 @@
   "value_idr": 15709984999251,
   "volume": 35150343143,
   "rank_src": "Yahoo 15분 지연 · 835종목 · 외국인·공시 PC 09-09 12:31",
-  "rank_asof": "12:34",
+  "rank_asof": "12:41",
   "rank_date": "2026-09-09",
   "adv": 289,
   "dec": 372,
@@ -16208,10 +16208,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7060.33,
+   "px": 7010.23,
    "prev": 7006.24,
-   "pct": 0.77,
-   "asof": "12:10",
+   "pct": 0.06,
+   "asof": "12:20",
    "live": true,
    "spark": [
     6998.61,
@@ -16276,17 +16276,19 @@
     7064.78,
     7062.93,
     7061.28,
-    7060.33
+    7062.25,
+    7030.77,
+    7010.23
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65104.81,
+   "px": 65111.77,
    "prev": 65370.42,
-   "pct": -0.41,
-   "asof": "12:15",
+   "pct": -0.4,
+   "asof": "12:25",
    "live": true,
    "spark": [
     65479.27,
@@ -16342,17 +16344,19 @@
     65211.74,
     65223.63,
     65225.78,
-    65104.81
+    65091.47,
+    65136.63,
+    65111.77
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25224.03,
+   "px": 25248.81,
    "prev": 25317.18,
-   "pct": -0.37,
-   "asof": "12:15",
+   "pct": -0.27,
+   "asof": "12:25",
    "live": true,
    "spark": [
     25189.55,
@@ -16390,7 +16394,9 @@
     25274.79,
     25258.91,
     25251.81,
-    25224.03
+    25227.06,
+    25232.4,
+    25248.81
    ]
   }
  ],
@@ -16490,6 +16496,18 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121012/bsi-soal-prabowo-minta-semua-wni-punya-rekening-siap-jalankan",
    "img": "https://images.bloombergtechnoz.com/data/2025/09/image-20250923154204.jpg"
+  },
+  {
+   "ts": "2026-09-09T12:30:00+07:00",
+   "date": "2026-09-09",
+   "time": "12:30",
+   "src": "IDNFinancials",
+   "t": "Few new tenders, JSMR eyes investments in existing toll roads",
+   "tags": [
+    "JSMR"
+   ],
+   "url": "https://www.idnfinancials.com/news/68582/few-new-tenders-jsmr-eyes-investments-in-existing-toll-roads",
+   "img": "https://photos.idnfinancials.com/d/1600x900/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/JASA%20MARGA.jpg"
   },
   {
    "ts": "2026-09-09T12:24:39+07:00",
@@ -16745,21 +16763,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250411124107.jpg",
    "t_ko": "Antam 금 가격 금일 Rp17,000 하락 — Buyback 가격 낙폭 확대",
    "t_id": "Harga Emas Antam Hari Ini Turun Rp17.000, Buyback Lebih Dalam"
-  },
-  {
-   "ts": "2026-09-09T08:30:00+07:00",
-   "date": "2026-09-09",
-   "time": "08:30",
-   "src": "Bloomberg Technoz",
-   "t": "Saham AMMN & MDKA Menguat, Harga Tembaga Cetak Rekor",
-   "tags": [
-    "AMMN",
-    "MDKA"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/120980/saham-ammn-mdka-menguat-harga-tembaga-cetak-rekor",
-   "img": "https://images.bloombergtechnoz.com/data/2023/04/image-20230405103950.jpg",
-   "t_ko": "AMMN·MDKA 주가 강세 — 구리 가격 사상 최고치 경신",
-   "t_id": "Saham AMMN & MDKA Menguat, Harga Tembaga Cetak Rekor"
   },
   {
    "ts": "2026-09-09T07:38:47+07:00",
@@ -17337,6 +17340,16 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-09T12:40:00+07:00",
+   "date": "2026-09-09",
+   "time": "12:40",
+   "src": "Republika",
+   "t": "Kepercayaan Konsumen Meningkat, Sinyal Ekonomi Pulih?",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl30vk423/kepercayaan-konsumen-meningkat-sinyal-ekonomi-pulih",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/017835000-1774843830-830-556.jpg"
+  },
+  {
    "ts": "2026-09-09T12:25:31+07:00",
    "date": "2026-09-09",
    "time": "12:25",
@@ -17347,16 +17360,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/garuda-cek-pesawat-sebelum-terbang-lagi-imbas-abu-vulkanik-1788931426427_169.jpeg?w=360&q=90"
   },
   {
-   "ts": "2026-09-09T12:22:27+07:00",
-   "date": "2026-09-09",
-   "time": "12:22",
-   "src": "Medcom",
-   "t": "Karhutla Belum Usai, Krisis Air Menghantui Warga Kubu Raya",
-   "tags": [],
-   "url": "https://www.medcom.id/nasional/peristiwa/0KvZvp1K-karhutla-belum-usai-krisis-air-menghantui-warga-kubu-raya",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1840964/jdrCtW9RkV.jpeg?w=720"
-  },
-  {
    "ts": "2026-09-09T12:20:36+07:00",
    "date": "2026-09-09",
    "time": "12:20",
@@ -17365,6 +17368,7 @@
    "tags": [],
    "url": "https://www.medcom.id/properti/news-properti/GNl1zpXb-rekomendasi-rumah-murah-di-kabupaten-cianjur-harga-mulai-rp150-jutaan",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1840963/ipmX3C2krj.jpg?w=720",
+   "t_ko": "Cianjur 지역 저가 주택 추천 — 가격 Rp1.5억부터",
    "t_id": "Rekomendasi Rumah Murah di Kabupaten Cianjur, Harga Mulai Rp150 Jutaan"
   },
   {
@@ -17856,8 +17860,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.13",
-   "d": -0.07,
-   "ytd": 13.03,
+   "d": -0.06,
+   "ytd": 13.04,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17902,9 +17906,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "93.96",
-   "d": -0.23,
-   "ytd": 63.64,
+   "v": "93.90",
+   "d": -0.3,
+   "ytd": 63.53,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17914,9 +17918,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,427.9",
-   "d": 0.17,
-   "ytd": 2.36,
+   "v": "4,429.3",
+   "d": 0.2,
+   "ytd": 2.4,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17938,9 +17942,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,670",
-   "d": -0.63,
-   "ytd": -0.07,
+   "v": "16,682",
+   "d": -0.56,
+   "ytd": -0.0,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24953,7 +24957,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 12:31",
-  "pc_age_min": 4,
+  "pc_age_min": 11,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26168,9 +26172,9 @@
   },
   "model": "gemini-2.5-flash-lite",
   "index": {
-   "ko": "금융주(BBCA·BMRI·BBRI) 약세와 뉴욕증시 하락 마감 영향으로 IHSG 0.58% 하락.",
-   "id": "IHSG melemah 0,58% akibat penurunan saham perbankan (BBCA, BMRI, BBRI) serta pelemahan bursa Wall Street.",
-   "ts": "2026-09-09T12:35:11.593122+07:00"
+   "ko": "금융주(BBCA·BMRI·BBRI) 약세와 미 증시(다우 -1.18%, S&P 500 -0.58%) 하락 여파로 IHSG 0.58% 하락.",
+   "id": "IHSG melemah 0,58% akibat pelemahan saham perbankan (BBCA, BMRI, BBRI) serta penurunan bursa AS (Dow Jones -1,18%, S&P 500 -0,58%).",
+   "ts": "2026-09-09T12:42:47.727774+07:00"
   }
  },
  "mcap": [
