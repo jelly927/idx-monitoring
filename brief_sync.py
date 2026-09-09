@@ -60,6 +60,7 @@ def _save_state(st):
     except Exception: pass
 
 # ---------------- PPTX → PDF ----------------
+LAST_ERR = ""
 def _ppt_com(src: Path, dst: Path) -> bool:
     """PowerPoint COM (PowerShell 경유, 추가 패키지 불필요). 사용자가 PowerPoint 를 열어 둔 상태여도 그 문서는 건드리지 않고,
     다른 프레젠테이션이 열려 있으면 PowerPoint 를 종료하지 않는다."""
@@ -77,9 +78,12 @@ if ($app.Presentations.Count -eq 0) {{ $app.Quit() }}
         enc = base64.b64encode(ps.encode("utf-16-le")).decode()
         r = subprocess.run(["powershell", "-NoProfile", "-NonInteractive", "-EncodedCommand", enc], capture_output=True, text=True, timeout=180)
         if "OK" in (r.stdout or "") and dst.exists() and dst.stat().st_size > 10_000: return True
-        print("  브리프 변환(PowerPoint) 실패:", ((r.stderr or r.stdout) or "").strip().splitlines()[-1:][0][:120] if (r.stderr or r.stdout) else r.returncode, flush=True)
+        global LAST_ERR
+        LAST_ERR = " ".join(((r.stderr or "") + " " + (r.stdout or "")).split())[:300] or f"exit {r.returncode}"
+        print("  브리프 변환(PowerPoint) 실패:", LAST_ERR[:120], flush=True)
     except Exception as e:
-        print("  브리프 변환(PowerPoint) 오류:", str(e)[:120], flush=True)
+        LAST_ERR = str(e)[:300]
+        print("  브리프 변환(PowerPoint) 오류:", LAST_ERR[:120], flush=True)
     return False
 
 def _soffice(src: Path, dst: Path) -> bool:
@@ -133,7 +137,7 @@ def sync(quiet=False) -> str:
                     notes.append(f"{lang.upper()} {day:%m/%d} ← {src.name}")
                     if not quiet: print("  브리프 변환:", lang, src.name, flush=True)
                 else:
-                    st[lang] = dict(cur, fail_key=key)
+                    st[lang] = dict(cur, fail_key=key, fail_msg=LAST_ERR, fail_at=dt.datetime.now().strftime("%Y-%m-%d %H:%M"))
         # 수동 대체: 루트에 직접 놓인 latest_*.pdf 가 더 새로우면 그대로 사용
         manual = ROOT / dst.name
         if manual.exists() and (not dst.exists() or manual.stat().st_mtime > dst.stat().st_mtime + 1):
