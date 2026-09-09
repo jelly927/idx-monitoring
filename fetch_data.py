@@ -1311,10 +1311,15 @@ def _claude_cli_run(prompt, cli_model=None, timeout=240):
     import subprocess
     wd = CACHE / "claude_cwd"; wd.mkdir(parents=True, exist_ok=True)          # 빈 폴더에서 실행 — 프로젝트 파일·CLAUDE.md 컨텍스트 차단
     cmd = [cli, "-p", "--output-format", "text"] + (["--model", cli_model] if cli_model else [])
-    try:
-        r = subprocess.run(cmd, input=prompt, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout, cwd=str(wd))
-    except Exception as e:
-        log("Claude Code 실행 오류", str(e)[:100]); return None
+    env = dict(os.environ, DISABLE_AUTOUPDATER="1", CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC="1")   # 자동 업데이트가 실행 파일을 잠그면 WinError 32 → 끔
+    r = None
+    for attempt in range(3):
+        try:
+            r = subprocess.run(cmd, input=prompt, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout, cwd=str(wd), env=env); break
+        except Exception as e:
+            if attempt < 2 and ("32" in str(e) or "사용 중" in str(e) or "being used" in str(e)): time.sleep(4); continue
+            log("Claude Code 실행 오류", str(e)[:100]); return None
+    if r is None: return None
     if r.returncode != 0: log(f"Claude Code 실패 (exit {r.returncode}): {(r.stderr or r.stdout)[:120]}"); return None
     return (r.stdout or "").strip()
 
