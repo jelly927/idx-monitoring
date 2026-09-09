@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-09 22:42",
+ "updated": "2026-09-09 22:55",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,339 · 22:24 Yahoo",
- "idr_per_krw": 13.1033,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,340 · 22:24 Yahoo",
+ "idr_per_krw": 13.0972,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15078,10 +15078,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7638.18,
+   "px": 7639.18,
    "prev": 7673.52,
-   "pct": -0.46,
-   "asof": "22:40",
+   "pct": -0.45,
+   "asof": "22:50",
    "live": true,
    "spark": [
     7653.65,
@@ -15110,17 +15110,19 @@
     7629.6,
     7635.03,
     7639.57,
-    7638.18
+    7637.12,
+    7637.0,
+    7639.18
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26243.69,
+   "px": 26258.24,
    "prev": 26421.41,
-   "pct": -0.67,
-   "asof": "22:40",
+   "pct": -0.62,
+   "asof": "22:50",
    "live": true,
    "spark": [
     26328.66,
@@ -15149,17 +15151,19 @@
     26200.1,
     26233.01,
     26241.37,
-    26243.69
+    26242.33,
+    26244.87,
+    26258.24
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52416.37,
+   "px": 52389.02,
    "prev": 52786.07,
-   "pct": -0.7,
-   "asof": "22:40",
+   "pct": -0.75,
+   "asof": "22:50",
    "live": true,
    "spark": [
     52496.92,
@@ -15188,7 +15192,9 @@
     52386.83,
     52375.85,
     52415.91,
-    52416.37
+    52392.34,
+    52376.74,
+    52389.02
    ]
   },
   {
@@ -15515,7 +15521,19 @@
  },
  "news": [
   {
-   "ts": "2026-09-09T22:39:54+07:00",
+   "ts": "2026-09-09T22:50:00+07:00",
+   "date": "2026-09-09",
+   "time": "22:50",
+   "src": "IDNFinancials",
+   "t": "Danantara asks ADHI to streamline business, new contracts jump 118%",
+   "tags": [
+    "ADHI"
+   ],
+   "url": "https://www.idnfinancials.com/news/68616/danantara-asks-adhi-to-streamline-business-new-contracts-jump-118",
+   "img": "https://photos.idnfinancials.com/_idn/2024/Ilustrasi%20adhy/ADHI/adhi%20karya%203.jpg"
+  },
+  {
+   "ts": "2026-09-09T22:39:56+07:00",
    "date": "2026-09-09",
    "time": "22:39",
    "src": "Liputan6",
@@ -16167,20 +16185,6 @@
    "t_id": "Koperasi Desa Merah Putih dongkrak penjualan anak usaha SMSM 20%"
   },
   {
-   "ts": "2026-09-09T12:31:44+07:00",
-   "date": "2026-09-09",
-   "time": "12:31",
-   "src": "Detik",
-   "t": "Tol Probolinggo-Banyuwangi Beroperasi Awal 2027",
-   "tags": [
-    "JSMR"
-   ],
-   "url": "https://finance.detik.com/infrastruktur/d-8655144/tol-probolinggo-banyuwangi-beroperasi-awal-2027",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/27/pembangunan-tol-probolinggo-banyuwangi-dikebut-ruas-gending-besuki-rampung-100-1782536255257_169.jpeg?w=360&q=90",
-   "t_ko": "Probolinggo-Banyuwangi 유료도로, 2027년 초 개통",
-   "t_id": "Tol Probolinggo-Banyuwangi Beroperasi Awal 2027"
-  },
-  {
    "ts": "2026-09-09T12:30:00+07:00",
    "date": "2026-09-09",
    "time": "12:30",
@@ -16570,9 +16574,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-09T22:41:55.664223+07:00",
+   "ts": "2026-09-09T22:48:07+07:00",
    "date": "2026-09-09",
-   "time": "22:41",
+   "time": "22:48",
    "src": "Jawa Pos",
    "t": "BTN dan Rumah123 Gelar Harpropnas 2026, Dorong KPR Mudah",
    "tags": [],
@@ -16580,6 +16584,17 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/direktur-consumer-banking-btn-evita-marliana-dalam-pembukaan-hari-properti-nasional-harpropmnas-2026-di-grand-atrium-mall-kotakasablanka-jakarta-rabu-99-foto-djati-waluypjawaposcom-4caGK.webp",
    "t_ko": "BTN과 Rumah123, Harpropnas 2026 개최, Easy KPR 장려",
    "t_id": "BTN dan Rumah123 Gelar Harpropnas 2026, Dorong KPR Mudah"
+  },
+  {
+   "ts": "2026-09-09T22:36:46+07:00",
+   "date": "2026-09-09",
+   "time": "22:36",
+   "src": "Detik",
+   "t": "RUU Ketenagakerjaan Dinilai Jauh dari Harapan, Buruh Besok Demo Besar",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656192/ruu-ketenagakerjaan-dinilai-jauh-dari-harapan-buruh-besok-demo-besar",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/01/08/buruh-demo-tolak-ump-2026-minta-upah-layak-1767860482938_169.jpeg?w=360&q=90",
+   "t_id": "RUU Ketenagakerjaan Dinilai Jauh dari Harapan, Buruh Besok Demo Besar"
   },
   {
    "ts": "2026-09-09T22:33:00+07:00",
@@ -16608,6 +16623,16 @@
    "t": "US Treasury to Buy Up to $6 Billion in Long-Dated Debt",
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-09/us-treasury-to-buy-up-to-6-billion-in-long-dated-debt-video"
+  },
+  {
+   "ts": "2026-09-09T22:22:56+07:00",
+   "date": "2026-09-09",
+   "time": "22:22",
+   "src": "Detik",
+   "t": "Menaker soal Formula Upah Minimum 2027: Tunggu Aja!",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656183/menaker-soal-formula-upah-minimum-2027-tunggu-aja",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/04/09/menaker-yassierli-1775719774015_169.jpeg?w=360&q=90"
   },
   {
    "ts": "2026-09-09T22:20:00+07:00",
@@ -16851,28 +16876,6 @@
    "url": "https://finance.detik.com/moneter/d-8656071/kapan-pembukaan-rekening-buat-masyarakat-dimulai-ini-jawabannya",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/20/jaga-pertumbuhan-ekonomi-nasional-pemerintah-perkuat-sektor-strategis-1787215028622_169.jpeg?w=360&q=90",
    "t_id": "Kapan Pembukaan Rekening buat Masyarakat Dimulai? Ini Jawabannya"
-  },
-  {
-   "ts": "2026-09-09T20:46:00+07:00",
-   "date": "2026-09-09",
-   "time": "20:46",
-   "src": "Medcom",
-   "t": "Bukan Sekadar Modal, Ini Solusi untuk Tantangan Keuangan UMKM",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/keuangan/nN9dEREK-bukan-sekadar-modal-ini-solusi-untuk-tantangan-keuangan-umkm",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1841074/iVIO75eap8.jpg?w=720",
-   "t_id": "Bukan Sekadar Modal, Ini Solusi untuk Tantangan Keuangan UMKM"
-  },
-  {
-   "ts": "2026-09-09T20:33:35+07:00",
-   "date": "2026-09-09",
-   "time": "20:33",
-   "src": "Detik",
-   "t": "Kopdes Merah Putih Bakal Gandeng PNM dan PT Pos",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656057/kopdes-merah-putih-bakal-gandeng-pnm-dan-pt-pos",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/06/lokasi-kopdes-merah-putih-di-atas-gunungmasigit-1783335021447_169.jpeg?w=360&q=90",
-   "t_id": "Kopdes Merah Putih Bakal Gandeng PNM dan PT Pos"
   }
  ],
  "kisi_news": [
@@ -17046,8 +17049,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.10",
-   "d": -0.31,
-   "ytd": 12.77,
+   "d": -0.32,
+   "ytd": 12.75,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17057,9 +17060,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.849%",
-   "d": 0.89,
-   "ytd": 16.48,
+   "v": "4.841%",
+   "d": 0.73,
+   "ytd": 16.29,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17080,9 +17083,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.84",
-   "d": 0.07,
-   "ytd": 0.57,
+   "v": "98.78",
+   "d": 0.01,
+   "ytd": 0.51,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17104,9 +17107,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,438.8",
-   "d": 0.42,
-   "ytd": 2.62,
+   "v": "4,447.4",
+   "d": 0.61,
+   "ytd": 2.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17128,9 +17131,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,878",
-   "d": 0.6,
-   "ytd": 1.17,
+   "v": "16,889",
+   "d": 0.67,
+   "ytd": 1.24,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24641,7 +24644,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 314,
+  "pc_age_min": 327,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
