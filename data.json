@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 00:05",
+ "updated": "2026-09-10 01:06",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,340 · 22:15 Yahoo",
- "idr_per_krw": 13.0974,
+ "fx_basis": "13.07 IDR/KRW · USD/IDR 17,500 · USD/KRW 1,339 · 00:19 Yahoo",
+ "idr_per_krw": 13.071,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -275,9 +275,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17547.0,
+   "px": 17500.0,
    "prev": 17664.0,
-   "pct": -0.66,
+   "pct": -0.93,
    "spark": [
     17794.0,
     17791.0,
@@ -301,7 +301,7 @@
     17618.1,
     17638.0,
     17664.0,
-    17547.0
+    17500.0
    ],
    "inv": true,
    "asof": "Yahoo"
@@ -14998,10 +14998,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7639.28,
+   "px": 7644.75,
    "prev": 7673.52,
-   "pct": -0.45,
-   "asof": "00:00",
+   "pct": -0.37,
+   "asof": "01:05",
    "live": true,
    "spark": [
     7653.65,
@@ -15046,17 +15046,30 @@
     7638.91,
     7641.19,
     7640.53,
-    7639.28
+    7638.31,
+    7640.85,
+    7645.78,
+    7643.07,
+    7646.5,
+    7643.76,
+    7642.58,
+    7639.28,
+    7643.86,
+    7645.16,
+    7646.77,
+    7644.53,
+    7645.0,
+    7644.75
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26257.94,
+   "px": 26271.35,
    "prev": 26421.41,
-   "pct": -0.62,
-   "asof": "00:00",
+   "pct": -0.57,
+   "asof": "01:05",
    "live": true,
    "spark": [
     26328.66,
@@ -15101,17 +15114,30 @@
     26253.09,
     26264.01,
     26262.64,
-    26257.94
+    26251.23,
+    26259.11,
+    26270.06,
+    26256.15,
+    26270.46,
+    26254.71,
+    26252.69,
+    26242.34,
+    26264.33,
+    26268.44,
+    26279.14,
+    26273.8,
+    26272.44,
+    26271.35
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52448.84,
+   "px": 52470.47,
    "prev": 52786.07,
-   "pct": -0.64,
-   "asof": "00:00",
+   "pct": -0.6,
+   "asof": "01:05",
    "live": true,
    "spark": [
     52496.92,
@@ -15156,7 +15182,20 @@
     52448.17,
     52466.6,
     52456.53,
-    52448.84
+    52446.29,
+    52457.28,
+    52512.4,
+    52504.63,
+    52532.66,
+    52517.63,
+    52484.12,
+    52450.79,
+    52493.14,
+    52506.16,
+    52501.74,
+    52479.56,
+    52469.3,
+    52470.47
    ]
   },
   {
@@ -16547,6 +16586,30 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T00:32:37+07:00",
+   "date": "2026-09-10",
+   "time": "00:32",
+   "src": "Jawa Pos",
+   "t": "Alat Berat Listrik Diproyeksi Kuasai 20 Persen Pasar dalam 5 Tahun, Ini Tantangannya",
+   "tags": [],
+   "url": "https://www.jawapos.com/bisnis/2609090375/alat-berat-listrik-diproyeksi-kuasai-20-persen-pasar-dalam-5-tahun-ini-tantangannya",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/press-conference-gm-group-mining-indonesia-2026-di-jakarta-rabu-99-dimas-choiruljawaposcom-TyLU1.webp",
+   "t_ko": "전기 중장비는 5년 안에 시장의 20%를 장악할 것으로 예상되지만 이것이 과제입니다.",
+   "t_id": "Alat Berat Listrik Diproyeksi Kuasai 20 Persen Pasar dalam 5 Tahun, Ini Tantangannya"
+  },
+  {
+   "ts": "2026-09-10T00:17:41+07:00",
+   "date": "2026-09-10",
+   "time": "00:17",
+   "src": "Jawa Pos",
+   "t": "OJK Targetkan Bursa Komoditas BMKS Beroperasi Januari 2027",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609090368/ojk-targetkan-bursa-komoditas-bmks-beroperasi-januari-2027",
+   "img": "https://cdn-assets.jawapos.com/images/1/2023/11/16/Ilustrasi-OJK-4222434501.jpg",
+   "t_ko": "OJK, BMKS 상품거래소 2027년 1월 출범 목표",
+   "t_id": "OJK Targetkan Bursa Komoditas BMKS Beroperasi Januari 2027"
+  },
+  {
    "ts": "2026-09-10T00:00:00+07:00",
    "date": "2026-09-10",
    "time": "00:00",
@@ -16698,15 +16761,6 @@
    "url": "https://mediaindonesia.com/ekonomi/931688/jawa-tengah-perkuat-daya-tarik-investasi-melalui-industri-hijau-"
   },
   {
-   "ts": "2026-09-09T22:24:31+07:00",
-   "date": "2026-09-09",
-   "time": "09/09",
-   "src": "Bloomberg",
-   "t": "US Treasury to Buy Up to $6 Billion in Long-Dated Debt",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-09/us-treasury-to-buy-up-to-6-billion-in-long-dated-debt-video"
-  },
-  {
    "ts": "2026-09-09T22:22:56+07:00",
    "date": "2026-09-09",
    "time": "09/09",
@@ -16848,17 +16902,6 @@
    "tags": [],
    "url": "https://www.medcom.id/pendidikan/news-pendidikan/0kpqQYEK-pemkot-tangerang-perpanjang-pjj-hingga-11-september-akibat-abu-vulkanik",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/09/1841085/0oWDiLlU28.jpg?w=720"
-  },
-  {
-   "ts": "2026-09-09T21:01:00+07:00",
-   "date": "2026-09-09",
-   "time": "09/09",
-   "src": "Katadata",
-   "t": "DEN Wanti-Wanti Capital Outflow Jumbo dari Pasar RI jika Tak Ada Disiplin Fiskal",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa166af3423e/den-wanti-wanti-capital-outflow-jumbo-dari-pasar-ri-jika-tak-ada-disiplin-fiskal",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/04/29/Tekanan_Outflow-2026_04_29-14_11_15_757babdb4a800bbf8b8e29cf4e975b73_620x413_thumb.png",
-   "t_id": "DEN Wanti-Wanti Capital Outflow Jumbo dari Pasar RI jika Tak Ada Disiplin Fiskal"
   }
  ],
  "kisi_news": [
@@ -17019,9 +17062,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,547",
-   "d": -0.66,
-   "ytd": 4.95,
+   "v": "17,500",
+   "d": -0.93,
+   "ytd": 4.67,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -17031,9 +17074,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.10",
-   "d": -0.32,
-   "ytd": 12.75,
+   "v": "13.06",
+   "d": -0.6,
+   "ytd": 12.43,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17043,9 +17086,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.845%",
-   "d": 0.81,
-   "ytd": 16.38,
+   "v": "4.829%",
+   "d": 0.48,
+   "ytd": 16.0,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17066,9 +17109,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.76",
-   "d": -0.01,
-   "ytd": 0.49,
+   "v": "98.75",
+   "d": -0.02,
+   "ytd": 0.48,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17078,9 +17121,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "95.75",
-   "d": 1.67,
-   "ytd": 66.75,
+   "v": "95.72",
+   "d": 1.64,
+   "ytd": 66.7,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17090,9 +17133,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,451.6",
-   "d": 0.71,
-   "ytd": 2.91,
+   "v": "4,460.3",
+   "d": 0.9,
+   "ytd": 3.11,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -24663,7 +24706,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 397,
+  "pc_age_min": 458,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
