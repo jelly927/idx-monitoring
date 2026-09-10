@@ -260,7 +260,7 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
 .dr .stat{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0}
 .dr .stat div{background:var(--chip);border-radius:8px;padding:9px 11px}
 .dr .stat span{display:block;font-size:11px;color:var(--ink3)}
-.dr .stat b{font-size:14px}
+.dr .stat b{font-size:14px}.dr .stat b span.up,.dr .stat b span.dn,.dr .stat b span.flat{display:inline;font-size:inherit}.dr .stat b span.up{color:var(--up)}.dr .stat b span.dn{color:var(--dn)}
 .dr h4{font-size:13px;margin:16px 0 4px;color:var(--brown);font-weight:700}
 .empty{color:var(--ink3);font-size:12.5px;padding:12px 0}
 .foot{margin-top:28px;font-size:11.5px;color:var(--ink3);display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);padding-top:12px}
@@ -534,7 +534,7 @@ function stockRow(o,i,kind){const bad=o.px==null;const sub=kind==='catalyst'?`${
   const right=kind==='foreign'?`<b class="num ${o.fnet>=0?'up':'dn'}">${o.fnet>=0?'+':'−'}${idrShort(o.fnet)}</b><small class="src krw">≈${krwShort(o.fnet)}</small>`
     :`<b class="num">${bad?`<span class="chk">${T('chk')}</span>`:'Rp'+fmt(o.px,0)}</b><small class="num">${sg(o.pct)}</small>`;
   const nm=kind==='foreign'?`<b>${o.t}</b><small>${o.n||''}</small>`:`<b>${o.n||o.t}</b><small>${sub}</small>`;
-  const hl=kind==='catalyst'&&o.hl?`<div class="cathl" title="점수 ${o.score} = 뉴스 ${o.s_news}×0.4 + 시총 ${o.s_size}×0.3 + 대금급증 ${o.s_surge}×0.3${o.ratio?' (20일 평균 '+o.ratio.toFixed(1)+'배)':''}${o.srcs>1?' · 보도 '+o.srcs+'곳':''}">${o.hl}</div>`:'';
+  const hl=kind==='catalyst'&&o.hl?`<div class="cathl" title="점수 ${o.score} = 뉴스 ${o.s_news}×0.4 + 시총 ${o.s_size}×0.3 + 대금급증 ${o.s_surge}×0.3${o.ratio?' (20일 평균 '+o.ratio.toFixed(1)+'배)':''}${o.srcs>1?' · 보도 '+o.srcs+'곳':''}">${LANG==='id'?(o.hl_id||o.hl):o.hl}</div>`:'';
   return`<div class="row${kind==='catalyst'?' cat':''}" onclick="openDr('${o.t}')"><span class="rk ${i<3?'top':''}">${i+1}</span>${logo(o.t,o.n)}<div class="nm">${nm}${hl}</div><div class="px">${right}</div><span class="heart">♡</span></div>`;}
 function renderRank(){const list=DATA[rankKey]||[];if(changed('rank',[rankKey,list,LANG]))$('rank').innerHTML=list.length?list.slice(0,10).map((o,i)=>stockRow(o,i,rankKey)).join(''):`<div class="empty">${T('noData')}</div>`;
   const lab={value:T('labValue'),gainers:T('labG'),losers:T('labL'),turnover:T('labT'),mcap:T('mcapR'),catalyst:T('catalyst')};
