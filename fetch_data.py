@@ -1757,8 +1757,12 @@ def _auto_publish():
     if os.environ.get("GITHUB_ACTIONS") or not CFG.get("auto_push") or not (ROOT / "secrets.json").exists(): return
     try:
         import subprocess
-        args = [sys.executable, str(ROOT / "publish.py"), "--quiet"] + (["--data"] if CFG.get("auto_push_data") else [])
         env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONUTF8="1")
+        try:                                                     # 챗봇(KIRUDA) 컨텍스트를 매 빌드 갱신 — data.json → data/cache/chat_context.json (publish 가 함께 올림)
+            if (ROOT / "make_chat_context.py").exists():
+                subprocess.run([sys.executable, str(ROOT / "make_chat_context.py")], cwd=str(ROOT), capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60, env=env)
+        except Exception as e: log("chat_context 생성 오류", str(e)[:80])
+        args = [sys.executable, str(ROOT / "publish.py"), "--quiet"] + (["--data"] if CFG.get("auto_push_data") else [])
         r = subprocess.run(args, cwd=str(ROOT), capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=300, env=env)
         out = ((r.stdout or "") + (r.stderr or "")).strip().splitlines()
         log("auto_push:", out[-1][:140] if out else f"exit {r.returncode}")
