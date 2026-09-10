@@ -17,11 +17,11 @@ API = "https://api.github.com"
 
 CODE = ["index.html", "fetch_data.py", "run.py", "selftest.py", "publish.py", "config.json", "tickers.json", "requirements.txt",
         "README.md", "DEPLOY.md", ".gitignore", "start.bat", "push.bat", "share.bat", "make_share.py", "setup_autostart.bat",
-        "prepare_upload.py", "upload.bat", "publish.bat", "make_chat_context.py", "publish_chat.bat", "publish_brief.bat", "brief_sync.py", "DEPLOY_CHAT.md", "WEEKEND.md", ".github/workflows/update.yml", "worker/worker.js",
-        "data/manual.json", "data/idx_part.json", "data/cache/tr_claude.json", "data/cache/rss_map.json", "data/cache/tickers_all.json", "data/cache/kisi_news.json", "data/cache/sun10y_hist.json", "data/cache/sun10y_daily.json", "data/cache/dividends.json", "data/cache/ann_ai.json", "data/cache/stock_ai.json", "data/cache/index_ai.json", "data/cache/news_ai.json", "data/cache/chat_context.json", "data/banners.json"]
+        "prepare_upload.py", "upload.bat", "publish.bat", "make_chat_context.py", "publish_chat.bat", "publish_brief.bat", "brief_sync.py", "memory_build.py", "DEPLOY_CHAT.md", "WEEKEND.md", ".github/workflows/update.yml", "worker/worker.js",
+        "data/manual.json", "data/idx_part.json", "data/cache/tr_claude.json", "data/cache/rss_map.json", "data/cache/tickers_all.json", "data/cache/kisi_news.json", "data/cache/sun10y_hist.json", "data/cache/sun10y_daily.json", "data/cache/dividends.json", "data/cache/ann_ai.json", "data/cache/stock_ai.json", "data/cache/index_ai.json", "data/cache/news_ai.json", "data/cache/chat_context.json", "data/memory/cards.json", "data/memory/memory_chat.json", "data/banners.json"]
 CHAT = ["data/cache/chat_context.json"]
 BRIEF = ["briefs/latest_ko.pdf", "briefs/latest_id.pdf"]   # 데일리시황 PDF (KO/ID) — publish_brief.bat 이 사용
-DATA = ["data.json", "data.js", "data/cache/chat_context.json", "data/cache/investing_cal.json", "data/cache/news_seen.json"]
+DATA = ["data.json", "data.js", "data/cache/chat_context.json", "data/memory/cards.json", "data/memory/memory_chat.json", "data/cache/investing_cal.json", "data/cache/news_seen.json"]
 
 def token():
     import os
