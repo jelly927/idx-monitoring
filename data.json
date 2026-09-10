@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 22:41",
+ "updated": "2026-09-10 22:53",
  "delay_min": 0,
- "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,345 · 20:07 Yahoo",
- "idr_per_krw": 13.0325,
+ "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 20:07 Yahoo",
+ "idr_per_krw": 13.029,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 22:39",
+   "asof": "investing.com 22:52",
    "unit": "bp"
   }
  ],
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7605.45,
+   "px": 7603.16,
    "prev": 7637.7,
-   "pct": -0.42,
-   "asof": "22:35",
+   "pct": -0.45,
+   "asof": "22:50",
    "live": true,
    "spark": [
     7591.46,
@@ -15110,17 +15110,20 @@
     7606.4,
     7605.92,
     7607.73,
-    7605.45
+    7606.04,
+    7607.34,
+    7604.33,
+    7603.16
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26141.74,
+   "px": 26126.0,
    "prev": 26253.34,
-   "pct": -0.43,
-   "asof": "22:35",
+   "pct": -0.49,
+   "asof": "22:50",
    "live": true,
    "spark": [
     26012.32,
@@ -15148,17 +15151,20 @@
     26140.37,
     26143.62,
     26147.63,
-    26141.74
+    26146.31,
+    26153.41,
+    26138.41,
+    26126.0
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52119.4,
+   "px": 52131.43,
    "prev": 52391.48,
-   "pct": -0.52,
-   "asof": "22:35",
+   "pct": -0.5,
+   "asof": "22:50",
    "live": true,
    "spark": [
     52225.89,
@@ -15186,7 +15192,10 @@
     52160.17,
     52143.06,
     52157.13,
-    52119.4
+    52119.27,
+    52126.32,
+    52131.84,
+    52131.43
    ]
   },
   {
@@ -16806,31 +16815,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-10T22:40:17.714912+07:00",
+   "ts": "2026-09-10T22:49:33+07:00",
    "date": "2026-09-10",
-   "time": "22:40",
-   "src": "Jawa Pos",
-   "t": "Agar Barang Aman, Inilah 5 Manfaat Safe Deposit Box Ini Wajib Kamu Tahu",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609100341/agar-barang-aman-inilah-5-manfaat-safe-deposit-box-ini-wajib-kamu-tahu",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/ilustrasi-safe-deposit-box-istimewa-Mw2yb.webp",
-   "t_ko": "물품 보관 안전하게 — 세이프디파짓박스 5가지 활용법",
-   "t_id": "Agar Barang Aman, Inilah 5 Manfaat Safe Deposit Box Ini Wajib Kamu Tahu",
-   "ai_ko": "Bank Sembada의 Sandibrata Simanjuntak 대표가 대여금고(SDB)를 회사의 핵심 서비스로 제시하며 이용 혜택 5가지 소개 / 상장사 실적이나 수치 언급은 없어 투자 판단에 미치는 영향은 제한적",
-   "ai_id": "Direktur Utama Bank Sembada, Sandibrata Simanjuntak, menyebut layanan Safe Deposit Box (SDB) sebagai salah satu andalan perseroan dan memaparkan lima manfaatnya. Pemberitaan bersifat informasi layanan tanpa data kinerja keuangan.",
-   "ai_tags": [
-    "은행",
-    "서비스"
-   ],
-   "ai_tags_id": [
-    "perbankan",
-    "layanan"
-   ]
-  },
-  {
-   "ts": "2026-09-10T22:40:17.711018+07:00",
-   "date": "2026-09-10",
-   "time": "22:40",
+   "time": "22:49",
    "src": "Jawa Pos",
    "t": "KemenPPPA Dorong Perempuan Lebih Terlibat dalam Pemberdayaan Ekonomi",
    "tags": [],
@@ -16852,9 +16839,58 @@
    ]
   },
   {
-   "ts": "2026-09-10T22:39:03+07:00",
+   "ts": "2026-09-10T22:48:00+07:00",
    "date": "2026-09-10",
-   "time": "22:39",
+   "time": "22:48",
+   "src": "MarketWatch",
+   "t": "Treasury yields surge toward the danger zone for stocks, as inflation pressures heat up",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/treasury-yields-surge-toward-the-danger-zone-for-stocks-as-inflation-pressures-heat-up-fe0f9aa6?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-97261506",
+   "t_ko": "인플레이션 압박에 국채 금리 급등하며 주식시장 위협",
+   "t_id": "Imbal Hasil US Treasury Melonjak ke Zona Bahaya Saham Seiring Tekanan Inflasi"
+  },
+  {
+   "ts": "2026-09-10T22:46:50+07:00",
+   "date": "2026-09-10",
+   "time": "22:46",
+   "src": "Bloomberg",
+   "t": "Macy's and American Eagle Drop, JetBlue Dips",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-10/macy-s-american-eagle-drop-jetblue-dips-stock-movers-video",
+   "g": 1,
+   "t_ko": "Macy's·American Eagle 하락 및 JetBlue 약세",
+   "t_id": "Macy's dan American Eagle Turun, JetBlue Melemah"
+  },
+  {
+   "ts": "2026-09-10T22:46:45+07:00",
+   "date": "2026-09-10",
+   "time": "22:46",
+   "src": "CNBC",
+   "t": "Trump's $1 trillion-plus 'dividend' plan meets immediate bipartisan pushback",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/trump-dividend-midterms-gop.html",
+   "g": 1,
+   "t_ko": "트럼프의 1조 달러 이상 배당 계획, 초당파적 반대에 직면",
+   "t_id": "Rencana 'dividen' $1 triliun lebih ala Trump langsung hadapi penolakan bipartisan",
+   "ai_ko": "Trump 대통령이 중간선거에서 공화당 승리 시 미국 시민에게 USD 5,000 '배당' 지급을 공약 / 투표 유인 목적 금품 제공은 연방법상 형사처벌 대상이며 앞서 DOGE 배당과 USD 2,000 관세 환급 공약도 무산",
+   "ai_id": "Presiden Trump menjanjikan 'dividen' USD 5.000 bagi warga AS jika Partai Republik menang dalam pemilu sela. Rencana ini berpotensi bermasalah secara hukum karena pemberian uang untuk memengaruhi pemilih merupakan tindak pidana federal, sementara janji dividen DOGE dan rabat tarif USD 2.000 sebelumnya tidak terealisasi.",
+   "ai_tags": [
+    "미국정책",
+    "선거",
+    "현금지급"
+   ],
+   "ai_tags_id": [
+    "kebijakan AS",
+    "pemilu",
+    "bantuan tunai"
+   ]
+  },
+  {
+   "ts": "2026-09-10T22:45:09+07:00",
+   "date": "2026-09-10",
+   "time": "22:45",
    "src": "CNBC",
    "t": "Kimmel says interview with Senate candidate Talarico won't air on ABC amid FCC threats",
    "tags": [],
@@ -16862,6 +16898,102 @@
    "g": 1,
    "t_ko": "Kimmel, FCC 압박 속 상원 후보 Talarico 인터뷰 ABC 방영 취소",
    "t_id": "Kimmel Sebut Wawancara dengan Kandidat Senat Talarico Batal Tayang di ABC di Tengah Ancaman FCC"
+  },
+  {
+   "ts": "2026-09-10T22:42:03+07:00",
+   "date": "2026-09-10",
+   "time": "22:42",
+   "src": "Jawa Pos",
+   "t": "Agar Barang Aman, Inilah 5 Manfaat Safe Deposit Box Ini Wajib Kamu Tahu",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609100341/agar-barang-aman-inilah-5-manfaat-safe-deposit-box-ini-wajib-kamu-tahu",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/ilustrasi-safe-deposit-box-istimewa-Mw2yb.webp",
+   "t_ko": "물품 보관 안전하게 — 세이프디파짓박스 5가지 활용법",
+   "t_id": "Agar Barang Aman, Inilah 5 Manfaat Safe Deposit Box Ini Wajib Kamu Tahu",
+   "ai_ko": "Bank Sembada의 Sandibrata Simanjuntak 대표가 대여금고(SDB)를 회사의 핵심 서비스로 제시하며 이용 혜택 5가지 소개 / 상장사 실적이나 수치 언급은 없어 투자 판단에 미치는 영향은 제한적",
+   "ai_id": "Direktur Utama Bank Sembada, Sandibrata Simanjuntak, menyebut layanan Safe Deposit Box (SDB) sebagai salah satu andalan perseroan dan memaparkan lima manfaatnya. Pemberitaan bersifat informasi layanan tanpa data kinerja keuangan.",
+   "ai_tags": [
+    "은행",
+    "서비스"
+   ],
+   "ai_tags_id": [
+    "perbankan",
+    "layanan"
+   ]
+  },
+  {
+   "ts": "2026-09-10T22:40:00+07:00",
+   "date": "2026-09-10",
+   "time": "22:40",
+   "src": "Yahoo Finance",
+   "t": "Is PayPal Stock a Buy, Sell, or Hold at 80% Below Its Record High?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/paypal-stock-buy-sell-hold-154000614.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/16a3c9a9e69c8da1635611f5281049d6.jpg",
+   "t_ko": "고점 대비 80% 하락한 PayPal 주가, 투자 의견 엇갈려",
+   "t_id": "Saham PayPal Layak Beli, Jual, atau Tahan Saat Anjlok 80% dari Rekor Tertinggi?"
+  },
+  {
+   "ts": "2026-09-10T22:38:38+07:00",
+   "date": "2026-09-10",
+   "time": "22:38",
+   "src": "Bloomberg",
+   "t": "Ukraine’s Arctic Drone Attacks Reveal New Risks for Gas Market",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/ukraine-s-arctic-drone-attacks-reveal-new-risks-for-gas-market",
+   "g": 1,
+   "t_ko": "우크라이나의 아르틱 드론 공격으로 가스 시장 신규 리스크 부각",
+   "t_id": "Serangan Drone Arktik Ukraina Ungkap Risiko Baru Pasar Gas"
+  },
+  {
+   "ts": "2026-09-10T22:38:22+07:00",
+   "date": "2026-09-10",
+   "time": "22:38",
+   "src": "Bloomberg",
+   "t": "Diesel Futures in US Top $5 a Gallon for First Time Since 2022",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/diesel-futures-in-us-top-5-a-gallon-for-first-time-since-2022",
+   "g": 1,
+   "t_ko": "미국 디젤 선물, 2022년 이후 처음으로 갤런당 5달러 돌파",
+   "t_id": "Futures Solar AS Tembus $5 per Galon untuk Pertama Kalinya Sejak 2022"
+  },
+  {
+   "ts": "2026-09-10T22:35:34+07:00",
+   "date": "2026-09-10",
+   "time": "22:35",
+   "src": "Yahoo Finance",
+   "t": "IonQ’s CEO Says ‘Q-Day’ Hits in 2028. The Stock Says Investors Stopped Listening",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/ionq-ceo-says-q-day-153534215.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/8f0b8c6aa54c3917a8ef7d559fd5df82.jpg",
+   "t_ko": "IonQ 대표, 'Q-Day' 2028년 도래 전망 — 투자자들 무관심에 주가 하락",
+   "t_id": "CEO IonQ Sebut 'Q-Day' Tiba 2028, Pasar Abaikan Sahamnya"
+  },
+  {
+   "ts": "2026-09-10T22:35:00+07:00",
+   "date": "2026-09-10",
+   "time": "22:35",
+   "src": "Yahoo Finance",
+   "t": "History Says a Bear Market Is Coming Eventually. Here's the 1 Move the Smartest Investors Are Making Right Now.",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/history-says-bear-market-coming-153500105.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/221983e34dd6372d998a26b1b9bbb0de.jpg",
+   "t_ko": "약세장 도래 역사적 전망 속 현명한 투자자들의 핵심 대응 전략",
+   "t_id": "Sejarah Beri Sinyal Bear Market Pasti Datang, Ini 1 Langkah Investor Cerdas Saat Ini"
+  },
+  {
+   "ts": "2026-09-10T22:35:00+07:00",
+   "date": "2026-09-10",
+   "time": "22:35",
+   "src": "Media Indonesia",
+   "t": "Diversifikasi Rantai Pasok Kunci Jaga Investasi Indonesia",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932149/diversifikasi-rantai-pasok-kunci-jaga-investasi-indonesia",
+   "t_ko": "공급망 다변화, 인도네시아 투자 유치 핵심 과제",
+   "t_id": "Diversifikasi Rantai Pasok Kunci Jaga Investasi Indonesia"
   },
   {
    "ts": "2026-09-10T22:34:00+07:00",
@@ -16875,6 +17007,19 @@
    "img": "https://images.mktw.net/im-89991410",
    "t_ko": "재생에너지 의무화 조치, 소비자 및 태양광 주가에 악영향",
    "t_id": "Mandat Energi Terbarukan Ternyata Buruk bagi Konsumen dan Saham Solar"
+  },
+  {
+   "ts": "2026-09-10T22:33:01+07:00",
+   "date": "2026-09-10",
+   "time": "22:33",
+   "src": "Yahoo Finance",
+   "t": "Nasdaq Pours Millions Into Crypto Platform Partnership For Tokenized Trading",
+   "tags": [],
+   "url": "https://www.investors.com/news/nasdaq-pours-millions-into-crypto-platform-partnership-for-tokenized-trading/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/cf5fd8016906948afc40f08b2a168141.jpg",
+   "t_ko": "Nasdaq, 토큰화 거래 위한 암호화폐 플랫폼 제휴에 수백만 달러 투자",
+   "t_id": "Nasdaq Guyur Jutaan Dolar ke Kemitraan Platform Kripto untuk Perdagangan Aset Tokenisasi"
   },
   {
    "ts": "2026-09-10T22:25:19+07:00",
@@ -16939,6 +17084,32 @@
    "t_id": "Meta Pikat Wall Street Lewat Agen AI Baru Muse"
   },
   {
+   "ts": "2026-09-10T22:22:32+07:00",
+   "date": "2026-09-10",
+   "time": "22:22",
+   "src": "Yahoo Finance",
+   "t": "The Surprising Pockmarks On Cooper's Earnings That Caused Its Stock To Dive",
+   "tags": [],
+   "url": "https://www.investors.com/news/technology/cooper-companies-stock-fiscal-q3-2026-earnings/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/46306618e5aba43fac0641bf2b99498f.jpg",
+   "t_ko": "Cooper, 실적 속 지표 부진에 주가 급락",
+   "t_id": "Celah Mengejutkan pada Laporan Keuangan Cooper yang Bikin Sahamnya Anjlok"
+  },
+  {
+   "ts": "2026-09-10T22:22:26+07:00",
+   "date": "2026-09-10",
+   "time": "22:22",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Dow Slides As Oil Rocks Higher; Sandisk Slumps As SpaceX Rises (Live Coverage)",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-nvidia-chipmaker-tsmc/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/efdd2096566747a1c5895ff0ab582f7b.jpg",
+   "t_ko": "뉴욕증시, 유가 급등 속 Dow 하락 — Sandisk 급락·SpaceX 상승",
+   "t_id": "Bursa Saham Hari Ini: Dow Turun Saat Minyak Naik Tajam; SanDisk Anjlok Saat SpaceX Naik"
+  },
+  {
    "ts": "2026-09-10T22:22:04+07:00",
    "date": "2026-09-10",
    "time": "22:22",
@@ -16952,56 +17123,6 @@
    "t_id": "Aksi Jual Obligasi Global Kembali Membara Seiring Lonjakan Minyak di Atas $105"
   },
   {
-   "ts": "2026-09-10T22:21:00+07:00",
-   "date": "2026-09-10",
-   "time": "22:21",
-   "src": "MarketWatch",
-   "t": "Treasury yields surge toward the danger zone for stocks, as inflation pressures heat up",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/treasury-yields-surge-toward-the-danger-zone-for-stocks-as-inflation-pressures-heat-up-fe0f9aa6?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-97261506",
-   "t_ko": "인플레이션 압박에 국채 금리 급등하며 주식시장 위협",
-   "t_id": "Imbal Hasil US Treasury Melonjak ke Zona Bahaya Saham Seiring Tekanan Inflasi"
-  },
-  {
-   "ts": "2026-09-10T22:20:57+07:00",
-   "date": "2026-09-10",
-   "time": "22:20",
-   "src": "Bloomberg",
-   "t": "Rate Hike Will Re-Establish Fed Credibility: Aliaga",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-10/rate-hike-will-re-establish-fed-credibility-aliaga-video",
-   "g": 1,
-   "t_ko": "Aliaga, 금리 인상이 연준 신뢰도 회복 계기 전망",
-   "t_id": "Kenaikan Suku Bunga Pulihkan Kredibilitas The Fed: Aliaga"
-  },
-  {
-   "ts": "2026-09-10T22:18:24+07:00",
-   "date": "2026-09-10",
-   "time": "22:18",
-   "src": "BBC",
-   "t": "Oil, gas and borrowing costs surge as fears over Middle East escalate",
-   "tags": [],
-   "url": "https://www.bbc.co.uk/news/articles/c5y48rz2nddo?at_medium=RSS&at_campaign=rss",
-   "g": 1,
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f162/live/08923520-ad29-11f1-980e-4fc6f1211def.jpg",
-   "t_ko": "중동 리스크 고조로 유가·가스 가격 및 차입 비용 급등",
-   "t_id": "Minyak, Gas, dan Biaya Pinjaman Melonjak Seiring Meningkatnya Kekhawatiran Konflik Timur Tengah"
-  },
-  {
-   "ts": "2026-09-10T22:17:00+07:00",
-   "date": "2026-09-10",
-   "time": "22:17",
-   "src": "Media Indonesia",
-   "t": "Kementerian ESDM Prediksi Permintaan Batu Bara Global Turun dalam 5 Tahun",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932135/kementerian-esdm-prediksi-permintaan-batu-bara-global-turun-dalam-5-tahun",
-   "g": 1,
-   "t_ko": "에너지광물자원부, 향후 5년간 글로벌 석탄 수요 감소 전망",
-   "t_id": "Kementerian ESDM Prediksi Permintaan Batu Bara Global Turun dalam 5 Tahun"
-  },
-  {
    "ts": "2026-09-10T22:15:00+07:00",
    "date": "2026-09-10",
    "time": "22:15",
@@ -17011,56 +17132,6 @@
    "url": "https://mediaindonesia.com/ekonomi/932134/dpr-bansos-digital-nasional-harus-dibarengi-kanal-pengaduan",
    "t_ko": "DPR, 국가 디지털 사회보장지원금에 신고 채널 구축 촉구",
    "t_id": "DPR: Bansos Digital Nasional Harus Dibarengi Kanal Pengaduan"
-  },
-  {
-   "ts": "2026-09-10T22:14:27+07:00",
-   "date": "2026-09-10",
-   "time": "22:14",
-   "src": "Yahoo Finance",
-   "t": "Meta Stock Scores Wall Street Upgrade After Muse AI App Launch",
-   "tags": [],
-   "url": "https://www.investors.com/news/technology/meta-stock-jpmorgan-upgrade-buy-muse-ai/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/86cd8457b369c3adf3ced91f77a50bca.jpg",
-   "t_ko": "Meta Platforms, Muse AI 앱 출시 계기로 월가 투자의견 상향",
-   "t_id": "Saham Meta Raih Upgrade Wall Street Usai Peluncuran Aplikasi Muse AI"
-  },
-  {
-   "ts": "2026-09-10T22:10:00+07:00",
-   "date": "2026-09-10",
-   "time": "22:10",
-   "src": "Media Indonesia",
-   "t": "Strategi Konfrontasi Iran Jelang Pemilu Sela AS, Upaya Melemahkan Donald Trump",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/932130/strategi-konfrontasi-iran-jelang-pemilu-sela-as-upaya-melemahkan-donald-trump",
-   "g": 1,
-   "t_ko": "미국 중간선거 앞둔 이란의 대외 강경 전략, Donald Trump 견제 포석",
-   "t_id": "Strategi Konfrontasi Iran Jelang Pemilu Sela AS, Upaya Melemahkan Donald Trump"
-  },
-  {
-   "ts": "2026-09-10T22:08:22+07:00",
-   "date": "2026-09-10",
-   "time": "22:08",
-   "src": "FT",
-   "t": "America is losing its captive creditors",
-   "tags": [],
-   "url": "https://www.ft.com/content/a441ea66-329a-4f42-8e50-3ff140958e53",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F26e03b3d-c86b-42e1-9374-48d84c5632a8.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "미국, 국채 고정 수요처 이탈 직면",
-   "t_id": "Amerika Kehilangan Kreditor Setianya"
-  },
-  {
-   "ts": "2026-09-10T22:07:21+07:00",
-   "date": "2026-09-10",
-   "time": "22:07",
-   "src": "Bloomberg",
-   "t": "SBI-Led Group Said to Provide $3.5 Billion Debt to Vodafone Idea",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-10/sbi-led-group-said-to-provide-3-5-billion-debt-to-vodafone-idea",
-   "g": 1,
-   "t_ko": "SBI 주도 컨소시엄, Vodafone Idea에 35억 달러 부채 조달 지원",
-   "t_id": "Konsorsium Dipimpin SBI Dikabarkan Berikan Utang $3,5 Miliar ke Vodafone Idea"
   },
   {
    "ts": "2026-09-10T22:07:15+07:00",
@@ -17087,19 +17158,6 @@
    ]
   },
   {
-   "ts": "2026-09-10T22:06:40+07:00",
-   "date": "2026-09-10",
-   "time": "22:06",
-   "src": "Yahoo Finance",
-   "t": "Inflation Is About to Hit Hard as Diesel Prices Soar to Record Near $6 a Gallon",
-   "tags": [],
-   "url": "https://finance.yahoo.com/economy/articles/inflation-hit-hard-diesel-prices-150640473.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/0c3d62d196ef21fc7f6def32f645a1a0",
-   "t_ko": "디젤 가격 갤런당 6달러 육박하며 물가 압박 본격화",
-   "t_id": "Inflasi Bakal Hantam Berat Seiring Lonjakan Harga Solar Dekati Rekor $6 per Galon"
-  },
-  {
    "ts": "2026-09-10T22:05:48+07:00",
    "date": "2026-09-10",
    "time": "22:05",
@@ -17124,30 +17182,6 @@
    "t_id": "Investasi Butuh Kepastian Hukum, Regulasi Jangan Tumpang Tindih"
   },
   {
-   "ts": "2026-09-10T22:00:47+07:00",
-   "date": "2026-09-10",
-   "time": "22:00",
-   "src": "CNBC",
-   "t": "Our top 3 stocks that bucked the market’s recent pullback — plus, a look at the bottom 3",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/our-top-3-stocks-that-bucked-the-markets-recent-pullback-plus-a-look-at-the-bottom-3.html",
-   "g": 1,
-   "t_ko": "시장 조정기 하락장 딛고 반등한 유망주 3선 및 부진주 3선",
-   "t_id": "3 Saham Pilihan yang Tahan Koreksi Pasar Terbaru Beserta 3 Saham Terburuknya"
-  },
-  {
-   "ts": "2026-09-10T22:00:00+07:00",
-   "date": "2026-09-10",
-   "time": "22:00",
-   "src": "Media Indonesia",
-   "t": "Harga Minyak Tembus US$105 per Barel, Pasar Obligasi dan Saham Terguncang",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/932123/harga-minyak-tembus-us105-per-barel-pasar-obligasi-dan-saham-terguncang",
-   "g": 1,
-   "t_ko": "유가 배럴당 105달러 돌파로 채권·주식시장 충격",
-   "t_id": "Harga Minyak Tembus US$105 per Barel, Pasar Obligasi dan Saham Terguncang"
-  },
-  {
    "ts": "2026-09-10T21:59:55+07:00",
    "date": "2026-09-10",
    "time": "21:59",
@@ -17156,8 +17190,8 @@
    "tags": [],
    "url": "https://www.medcom.id/properti/news-properti/ybDy89Zk-5-rekomendasi-kompor-listrik-mini-hemat-daya-untuk-hunian-kecil",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841396/mxkYQfFd4J.jpg?w=720",
-   "t_id": "5 Rekomendasi Kompor Listrik Mini Hemat Daya untuk Hunian Kecil",
-   "t_ko": "소형 주거용 저전력 미니 전기레인지 추천 5선"
+   "t_ko": "소형 주거용 저전력 미니 전기레인지 추천 5선",
+   "t_id": "5 Rekomendasi Kompor Listrik Mini Hemat Daya untuk Hunian Kecil"
   },
   {
    "ts": "2026-09-10T21:54:00+07:00",
@@ -17276,18 +17310,6 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841385/fYpoJLGR0q.jpg?w=720",
    "t_ko": "스테인리스 울타리 디자인 5선 — 유리부터 레이저 컷까지",
    "t_id": "5 Inspirasi Pagar Stainless, dari Kaca hingga Laser Cut"
-  },
-  {
-   "ts": "2026-09-10T20:09:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:09",
-   "src": "IDX Channel",
-   "t": "MNC Sekuritas Ajak Mahasiswa Baru Cerdas Berinvestasi lewat GI BEI JGU",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/mnc-sekuritas-ajak-mahasiswa-baru-cerdas-berinvestasi-lewat-gi-bei-jgu",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/10/MNC_Sekuritas.jpg",
-   "t_ko": "MNC Sekuritas, GI BEI JGU 통해 신입생 투자 교육 진행",
-   "t_id": "MNC Sekuritas Ajak Mahasiswa Baru Cerdas Berinvestasi lewat GI BEI JGU"
   }
  ],
  "kisi_news": [
@@ -17472,9 +17494,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.920%",
-   "d": 1.72,
-   "ytd": 18.18,
+   "v": "4.918%",
+   "d": 1.67,
+   "ytd": 18.14,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17495,9 +17517,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.93",
-   "d": 0.2,
-   "ytd": 0.66,
+   "v": "98.91",
+   "d": 0.17,
+   "ytd": 0.64,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17507,9 +17529,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "100.39",
-   "d": 4.46,
-   "ytd": 74.83,
+   "v": "100.68",
+   "d": 4.77,
+   "ytd": 75.34,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17519,9 +17541,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,406.7",
-   "d": -1.02,
-   "ytd": 1.87,
+   "v": "4,408.3",
+   "d": -0.98,
+   "ytd": 1.91,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17543,9 +17565,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,639",
-   "d": -1.37,
-   "ytd": -0.26,
+   "v": "16,653",
+   "d": -1.29,
+   "ytd": -0.17,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25412,7 +25434,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 318,
+  "pc_age_min": 330,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
