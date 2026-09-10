@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 12:25",
+ "updated": "2026-09-10 12:28",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,527 · USD/KRW 1,337 · 12:01 Yahoo",
- "idr_per_krw": 13.1045,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,525 · USD/KRW 1,338 · 12:27 Yahoo",
+ "idr_per_krw": 13.0979,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -279,9 +279,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17527.0,
+   "px": 17525.0,
    "prev": 17500.0,
-   "pct": 0.15,
+   "pct": 0.14,
    "spark": [
     17500.0,
     17547.0,
@@ -293,10 +293,11 @@
     17530.0,
     17531.0,
     17525.0,
-    17527.0
+    17527.0,
+    17525.0
    ],
    "inv": true,
-   "asof": "12:01",
+   "asof": "12:27",
    "high": 17547.0,
    "low": 17500.0,
    "src": "yahoo"
@@ -318,7 +319,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 12:22",
+   "asof": "investing.com 12:27",
    "unit": "bp"
   }
  ],
@@ -331,8 +332,8 @@
   "m1": 4.76,
   "value_idr": 16134522240878,
   "volume": 32530207402,
-  "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-10 12:11",
-  "rank_asof": "12:21",
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-10 12:18",
+  "rank_asof": "12:27",
   "rank_date": "2026-09-10",
   "adv": 286,
   "dec": 355,
@@ -16215,10 +16216,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7047.51,
+   "px": 7029.55,
    "prev": 7056.35,
-   "pct": -0.13,
-   "asof": "12:00",
+   "pct": -0.38,
+   "asof": "12:05",
    "live": true,
    "spark": [
     7070.5,
@@ -16281,17 +16282,18 @@
     7032.13,
     7039.78,
     7046.71,
-    7047.51
+    7030.65,
+    7029.55
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64868.26,
+   "px": 64844.65,
    "prev": 65148.08,
-   "pct": -0.43,
-   "asof": "12:05",
+   "pct": -0.47,
+   "asof": "12:10",
    "live": true,
    "spark": [
     64771.93,
@@ -16345,17 +16347,18 @@
     64921.79,
     64962.67,
     64923.55,
-    64868.26
+    64868.12,
+    64844.65
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24946.98,
+   "px": 24935.32,
    "prev": 25274.96,
-   "pct": -1.3,
-   "asof": "12:05",
+   "pct": -1.34,
+   "asof": "12:10",
    "live": true,
    "spark": [
     24894.55,
@@ -16391,7 +16394,8 @@
     24949.52,
     24949.52,
     24945.01,
-    24946.98
+    24941.29,
+    24935.32
    ]
   }
  ],
@@ -16473,7 +16477,7 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121140/bocoran-rasio-dividen-astra-asii-tahun-buku-2026",
    "img": "https://images.bloombergtechnoz.com/data/2023/04/image-20230419091537.jpg",
-   "t_ko": "Astra International(ASII), 2026년 회계연도 배당 성향 공개",
+   "t_ko": "Astra International(ASII), 2026 회계연도 배당 성향 가이드라인 공개",
    "t_id": "Bocoran Rasio Dividen Astra (ASII) Tahun Buku 2026"
   },
   {
@@ -16781,7 +16785,7 @@
     "RANS"
    ],
    "url": "https://www.idnfinancials.com/news/68617/rans-shareholders-plunge-by-606-000-while-raffi-ahmad-controls-62-93",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/RANS-25082026.jpg",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/RAFFI-AHMAD-10092026.jpg",
    "t_ko": "RANS, 주주 60만 6,000명 이탈에도 Raffi Ahmad 지분 62.93% 유지",
    "t_id": "Pemegang saham RANS anjlok 606.000, Raffi Ahmad kuasai 62,93%",
    "ai_ko": "Rans Entertainment(RANS) 주주 수가 7월 10일 754,691명에서 9월 9일 148,096명으로 606,595명(80.4%) 감소 / 상장 후 고점 Rp272 대비 24.3% 낮은 Rp206에 마감했고 Raffi Ahmad 지분 62.93% 유지",
@@ -17870,6 +17874,17 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T12:22:00+07:00",
+   "date": "2026-09-10",
+   "time": "12:22",
+   "src": "Media Indonesia",
+   "t": "Dokter tak Rekomendasikan Pemakaian Lensa Kontak saat Ada Abu Vulkanik",
+   "tags": [],
+   "url": "https://mediaindonesia.com/kesehatan/931828/dokter-tak-rekomendasikan-pemakaian-lensa-kontak-saat-ada-abu-vulkanik",
+   "t_ko": "의사들, 화산재 발생 시 콘택트렌즈 착용 자제 권고",
+   "t_id": "Dokter Tak Anjurkan Pakai Lensa Kontak Saat Abu Vulkanik"
+  },
+  {
    "ts": "2026-09-10T12:19:11+07:00",
    "date": "2026-09-10",
    "time": "12:19",
@@ -17890,8 +17905,8 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/nasional/6aa23c9da659b/malaysia-tawarkan-bantuan-atasi-karhutla-ri-tunggu-persetujuan-indonesia",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/09/2026_09_09-21_39_00_8bdc0be0-acb1-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "말레이시아, 인도네시아 산불 진화 지원 제안… 승인 대기",
-   "t_id": "Malaysia Tawarkan Bantuan Karhutla RI, Tunggu Lampu Hijau Indonesia"
+   "t_ko": "말레이시아, 인도네시아 산불 진화 지원 제안… 정부 승인 대기",
+   "t_id": "Malaysia Tawarkan Bantuan Karhutla RI, Tunggu Restu Indonesia"
   },
   {
    "ts": "2026-09-10T12:13:38+07:00",
@@ -17903,7 +17918,7 @@
    "url": "https://finance.detik.com/moneter/d-8656716/ri-kalah-jauh-dari-singapura-soal-asuransi-ini-buktinya",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/10/komisi-xi-1789016941896_169.jpeg?w=360&q=90",
    "t_id": "RI Kalah Jauh dari Singapura soal Asuransi, Ini Buktinya!",
-   "t_ko": "인도네시아, 싱가포르 대비 보험업 경쟁력 열세"
+   "t_ko": "인도네시아, 싱가포르 대비 보험업 경쟁력 크게 열세"
   },
   {
    "ts": "2026-09-10T12:09:00+07:00",
@@ -17914,8 +17929,8 @@
    "tags": [],
    "url": "https://katadata.co.id/ekonomi-hijau/energi-baru/6aa23bd48448c/bank-singapura-disorot-komitmen-setop-danai-batu-bara-kecualikan-pltu-captive",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/02/20/PLTU_Indonesia_Morowali_Industrial_Park_IMIP-2026_02_20-08_02_29_c4275c1eded322f32c9a0b820618e1a4_620x413_thumb.jpg",
-   "t_ko": "싱가포르 은행권, 석탄화력발전소 제외한 석탄 투자 중단 비판 직면",
-   "t_id": "Bank Singapura Disorot: Komitmen Setop Danai Batu Bara, Kecuali PLTU Captive"
+   "t_ko": "싱가포르 은행들, 석탄화력발전소 자체 수요 제외한 석탄 투자 중단 선언",
+   "t_id": "Bank Singapura Disorot: Setop Danai Batu Bara, Kecuali PLTU Captive"
   },
   {
    "ts": "2026-09-10T12:02:00+07:00",
@@ -18369,25 +18384,6 @@
     "외국인",
     "자금흐름"
    ]
-  },
-  {
-   "ts": "2026-09-10T10:15:21+07:00",
-   "date": "2026-09-10",
-   "time": "10:15",
-   "src": "Republika",
-   "t": "Aturan Baru OJK Berlaku, Bittime Sambut Penguatan Tata Kelola Aset Digital",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl4p1l416/aturan-baru-ojk-berlaku-bittime-sambut-penguatan-tata-kelola-aset-digital",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/uang-kripto_211029094238-547.jpg",
-   "t_ko": "OJK 신규 규정 시행, Bittime 디지털자산 거버넌스 강화 환영",
-   "t_id": "Aturan Baru OJK Berlaku, Bittime Sambut Penguatan Tata Kelola Aset Digital",
-   "ai_ko": "디지털 금융자산·가상자산 거래 관련 OJK 규정(PADK 3/2026)이 9월 1일 시행되며 월간·연간·수시 보고와 리스크 자체평가 의무 부과 / 6월 11개 거래소 거래대금 USD 4.74조 중 84.5%가 파생상품",
-   "ai_id": "Aturan OJK PADK Nomor 3 Tahun 2026 tentang perdagangan aset keuangan digital termasuk aset kripto berlaku sejak 1 September 2026, mencakup laporan bulanan, penilaian mandiri manajemen risiko, laporan tahunan, dan insidental. Bittime menyambut aturan tersebut, sementara data CoinMarketCap Research mencatat volume 11 bursa US$4,74 triliun pada Juni 2026 dengan derivatives 84,5%.",
-   "ai_tags": [
-    "규제",
-    "가상자산",
-    "거래소"
-   ]
   }
  ],
  "kisi_news": [
@@ -18549,9 +18545,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,527",
-   "d": -0.35,
-   "ytd": 4.83,
+   "v": "17,525",
+   "d": -0.36,
+   "ytd": 4.81,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -18561,9 +18557,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.10",
-   "d": -0.18,
-   "ytd": 12.77,
+   "v": "13.09",
+   "d": -0.22,
+   "ytd": 12.73,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18596,9 +18592,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.75",
-   "d": -0.06,
-   "ytd": 0.48,
+   "v": "98.74",
+   "d": -0.08,
+   "ytd": 0.47,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18608,9 +18604,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.12",
-   "d": -0.46,
-   "ytd": 67.4,
+   "v": "96.02",
+   "d": -0.56,
+   "ytd": 67.22,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18620,9 +18616,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,458.9",
-   "d": 0.48,
-   "ytd": 3.08,
+   "v": "4,462.3",
+   "d": 0.55,
+   "ytd": 3.16,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18644,9 +18640,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,880",
-   "d": 0.06,
-   "ytd": 1.18,
+   "v": "16,875",
+   "d": 0.03,
+   "ytd": 1.16,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -26138,8 +26134,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-10 12:11",
-  "pc_age_min": 14,
+  "idx_from_pc": "2026-09-10 12:18",
+  "pc_age_min": 10,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27498,9 +27494,9 @@
   },
   "model": "gemini-3.5-flash-lite",
   "index": {
-   "ko": "글로벌 유가 상승 및 지정학적 긴장 심화에 따른 금융주(BBCA·BBRI) 약세로 IHSG 0.14% 하락.",
-   "id": "IHSG melemah 0,14% akibat pelemahan saham perbankan (BBCA·BBRI) di tengah kenaikan harga minyak global dan ketegangan geopolitik.",
-   "ts": "2026-09-10T12:25:13.155185+07:00"
+   "ko": "글로벌 유가 상승 및 지오폴리틱스 긴장감 여파 속 금융주(BBCA·BBRI) 약세로 IHSG 0.14% 하락.",
+   "id": "IHSG melemah 0.14% akibat kenaikan harga minyak global dan tensi geopolitik di tengah pelemahan saham keuangan (BBCA, BBRI).",
+   "ts": "2026-09-10T12:28:53.562049+07:00"
   }
  },
  "mcap": [
@@ -27730,7 +27726,7 @@
    "ratio": 0.4,
    "ev_ko": "실적·배당",
    "ev_id": "Kinerja & dividen",
-   "hl": "Astra International(ASII), 2026년 회계연도 배당 성향 공개",
+   "hl": "Astra International(ASII), 2026 회계연도 배당 성향 가이드라인 공개",
    "hl_id": "Bocoran Rasio Dividen Astra (ASII) Tahun Buku 2026",
    "url": "https://www.bloombergtechnoz.com/detail-news/121140/bocoran-rasio-dividen-astra-asii-tahun-buku-2026",
    "score": 52.7,
