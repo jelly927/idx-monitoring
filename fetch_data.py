@@ -1091,6 +1091,8 @@ def all_tickers():
 def build_alias():
     universe = {t: v[:1] for t, v in all_tickers().items()}          # [회사명, 업종, 세부업종] 중 회사명만 별칭으로
     for t, names in TICKERS.items(): universe[t] = list(dict.fromkeys((universe.get(t) or []) + names))
+    global ALL_CODES
+    ALL_CODES = set(universe)
     codes = set(universe) - STOP
     code_rx = re.compile(r"\b([A-Z]{4})\b")
     name_rx = []
@@ -1100,10 +1102,18 @@ def build_alias():
                 name_rx.append((t, re.compile(r"\b" + re.escape(n) + r"\b", re.I)))
     return codes, code_rx, name_rx
 CODES, CODE_RX, NAME_RX = set(), None, []
-def screen(text):
+ALL_CODES = set()
+AMBIG_CUE = re.compile(r"\b(saham|emiten|kode|ticker|bursa|IHSG|LQ45|harga saham|investor|dividen|laba|kinerja|target harga|rekomendasi)\b", re.I)
+def screen(text, link=""):
+    """헤드라인/본문에서 티커 추출. 일반 단어와 겹치는 코드(BANK·EMAS·ANTM 등 STOP)는 대문자로 쓰였고 증시 문맥(saham·emiten·(코드) 표기·증권 섹션)일 때만 인정"""
     hits = {c for c in CODE_RX.findall(text) if c in CODES} if CODE_RX else set()
     for t, rx in NAME_RX:
         if rx.search(text): hits.add(t)
+    if CODE_RX:
+        for c in set(CODE_RX.findall(text)) - CODES:
+            if c not in STOP or c not in ALL_CODES: continue
+            if re.search(r"[(\[]\s*" + c + r"\s*[)\]]|\b(saham|emiten|kode)\s+" + c + r"\b", text) or (AMBIG_CUE.search(text) and (not link or SEC_OK.search("/" + re.sub(r"^https?://", "", link)))):
+                hits.add(c)
     return sorted(hits)
 
 def discover_rss(src):
@@ -1259,7 +1269,7 @@ CLAUDE_RULES_KO = """너는 한국 증권사 인도네시아 리서치 데스크
 ⑤ 주체가 상장사면 "회사명(종목코드)" 또는 종목코드만. 원문에 종목코드가 있으면 반드시 유지.
 
 [표기]
-⑥ 고유명사(회사명·인명·지명)는 로마자 원문 유지(Danantara, Bakrie, Boy Thohir…; Boy→소년 같은 번역 금지). 널리 알려진 지명만 한국어(Indonesia=인도네시아, Jakarta=자카르타, Sulawesi=술라웨시). 퍼센트·숫자 원문 유지, 소수점은 마침표(0,12%→0.12%).
+⑥ 고유명사(회사명·인명·지명·지역명·기관명)는 로마자 원문 그대로 쓴다(Danantara, Bakrie, Boy Thohir, Sulawesi, Kota Tua, Rantau Prapat…; Boy→소년, Sulawesi→술라웨시 같은 음역·번역 금지). 예외는 국가명 Indonesia=인도네시아, 수도 Jakarta=자카르타 둘뿐. 퍼센트·숫자 원문 유지, 소수점은 마침표(0,12%→0.12%).
 ⑦ 통화는 Rp 표기, Miliar=억, Triliun=조 (Rp500 Miliar=Rp5,000억, Rp1,27 Triliun=Rp1.27조, US$100=USD 100).
 ⑧ 용어: Laba=순이익, Pendapatan=매출, Saham=주식, Rekomendasi=투자의견, Kinerja=실적, Emiten=상장사, RUPS(LB)=(임시)주주총회, Buyback=자사주 매입, Dividen=배당, Rights Issue=유상증자, Tender Offer=공개매수, Net Buy/Sell=순매수/순매도, Sesi I=1부, IHSG/JCI=IHSG, Asing=외국인, Komisaris=이사, Direktur Utama=대표, Capex=설비투자, Top Losers/Gainers=낙폭/상승 상위, Suspensi=거래정지, Obligasi=채권, Sukuk=수쿡, Smelter=제련소, Tol=유료도로.
 ⑨ 경제 캘린더 지표명은 국내 리서치 표기: "ISM Manufacturing PMI (Aug)"→"8월 ISM 제조업 PMI", "Nonfarm Payrolls (Aug)"→"8월 비농업 고용", "Initial Jobless Claims"→"신규 실업수당 청구", "Crude Oil Inventories"→"EIA 원유 재고", "Fed Chair Powell Speaks"→"연준 Powell 의장 연설"; (MoM)/(YoY)/(QoQ)는 유지.
@@ -1267,7 +1277,7 @@ CLAUDE_RULES_KO = """너는 한국 증권사 인도네시아 리서치 데스크
 
 [예시 — 원문 → 번역]
 "Garap 5 Proyek Tol, Jasa Marga (JSMR) Proyeksi Capex Tembus Rp12 T" → "JSMR, 유료도로 5개 사업에 설비투자 Rp12조 전망"
-"El Niño Dera Sulawesi, Vale Sebut Smelter Normal Meski Pakai PLTA" → "Vale Indonesia, 술라웨시 엘니뇨 가뭄에도 수력 제련소 정상 가동"
+"El Niño Dera Sulawesi, Vale Sebut Smelter Normal Meski Pakai PLTA" → "Vale Indonesia, Sulawesi 엘니뇨 가뭄에도 수력 제련소 정상 가동"
 "Harga Minyak Bak Roller Coaster, Medco Energi Siapkan Kunci Ganda" → "유가 급등락에 Medco Energi(MEDC), 이중 헤지 전략 가동"
 "Haji Isam Disebut Incar 62 Persen Saham Bayan Senilai Rp52,53 T" → "Haji Isam, Bayan(BYAN) 지분 62% Rp52.53조 인수 추진설"
 "IHSG Ditutup Melemah 0,12% ke 6.678 pada Rabu (9/9), KLBF, MAPI, BBTN Top Losers" → "IHSG 0.12% 하락한 6,678 마감 — KLBF·MAPI·BBTN 낙폭 상위"
@@ -1547,7 +1557,7 @@ def news_block(max_items=None):
         for e in entries[:40]:
             title = html.unescape(e.get("title", "")).strip()
             summ = re.sub("<[^>]+>", " ", html.unescape(e.get("summary", "")))
-            tags = screen(title + " " + summ)
+            tags = screen(title + " " + summ, e.get("link", ""))
             _div_from_text(title + ". " + summ, tags, e.get("link", ""), src["name"])
             is_market = not tags
             if is_market and not _market_news_ok(title, summ, e.get("link", "")): dg["drop"] += 1; continue     # 티커 없는 기사 중 경제·정책·금융·증시 섹션만 시장 뉴스로
@@ -2266,12 +2276,13 @@ def ai_announcements(anns, per_build=6):
                   "  · 배당(dividen): 주당 배당금(DPS), 총액, 배당락일(cum/ex date), 지급일\n"
                   "  · 유상증자·제3자배정(rights issue/HMETD/private placement): 발행 주식수, 발행가, 조달 금액, 지분 희석률, 일정\n"
                   "  · 지분 매각·인수(divestasi/akuisisi): 대상 회사, 지분율, 거래 금액, 매도·매수 주체, 완료 예정일\n"
-                  "출력은 JSON 하나: {\"ko\": \"한국어 2~3문장, 증권사 리포트 문체(명사형 종결), 금액·비율·날짜 등 숫자 포함\", \"id\": \"Bahasa Indonesia 2-3 kalimat\", \"tags\": [\"핵심 키워드 최대 3개(한국어)\"]}\n"
+                  "출력은 JSON 하나: {\"ko\": \"한국어 2~3문장, 증권사 리포트 문체(명사형 종결), 금액·비율·날짜 등 숫자 포함\", \"id\": \"Bahasa Indonesia 2-3 kalimat\", \"tags\": [\"핵심 키워드 최대 3개(한국어)\"], \"tags_id\": [\"kata kunci yang sama dalam Bahasa Indonesia\"]}\n"
                   "숫자는 한국식 표기(천 단위 콤마, 소수점은 마침표: 58.31%, 3,190,144,498주, Rp1,250억)로 바꾸고 회사명은 원문 그대로. 원문에 없는 내용은 쓰지 말 것. 한국어 문장에 인니어·스페인어 단어를 섞지 말 것.\n\n"
                   f"[종목] {a.get('t')}  [제목] {a.get('title')}\n[원문]\n{text}")
         j = _json_loads_loose(_gemini(prompt, 1100))
         if not j or not j.get("ko"): continue
-        cache[a["url"]] = {"ko": str(j.get("ko", ""))[:600], "id": str(j.get("id", ""))[:600], "tags": [str(x)[:20] for x in (j.get("tags") or [])][:3], "ts": now_wib().isoformat()}; done += 1
+        cache[a["url"]] = {"ko": str(j.get("ko", ""))[:600], "id": str(j.get("id", ""))[:600], "tags": [str(x)[:20] for x in (j.get("tags") or [])][:3],
+                           "tags_id": [str(x)[:24] for x in (j.get("tags_id") or [])][:3], "ts": now_wib().isoformat()}; done += 1
     if done or (can and todo):
         keep = sorted(cache.items(), key=lambda kv: kv[1].get("ts", ""), reverse=True)[:400]
         try: AI_ANN_P.write_text(json.dumps(dict(keep), ensure_ascii=False), encoding="utf-8")
@@ -2279,7 +2290,7 @@ def ai_announcements(anns, per_build=6):
         log(f"공시 AI 요약 {done}건 (대기 {max(0, len(todo) - per_build)}) · 캐시 {len(keep)}")
     for a in anns:
         c = cache.get(a.get("url") or "")
-        if c and c.get("ko"): a["ai_ko"] = c["ko"]; a["ai_id"] = c["id"]; a["ai_tags"] = c.get("tags") or []
+        if c and c.get("ko"): a["ai_ko"] = c["ko"]; a["ai_id"] = c["id"]; a["ai_tags"] = c.get("tags") or []; a["ai_tags_id"] = c.get("tags_id") or []
     return anns
 
 # ---------------- 뉴스 AI 요약 (Claude Code · Max 구독) ----------------
@@ -2346,11 +2357,11 @@ def ai_news(items, per_build=NEWS_AI_PER_BUILD):
             chunk = ready[i:i + NEWS_AI_BATCH]
             arts = "\n\n".join(f"[{k+1}] 매체: {n.get('src','')} · 제목: {n.get('t','')}\n{txt}" for k, (n, txt) in enumerate(chunk))
             prompt = ("너는 한국 증권사 인도네시아 리서치의 데스크 편집자다. 아래 인도네시아 뉴스 기사 " + str(len(chunk)) + "건을 각각 요약하라.\n"
-                      "각 기사마다 JSON 객체 {\"i\": 번호, \"ko\": \"…\", \"id\": \"…\", \"tags\": [\"…\"]} 를 만들고, 전체를 JSON 배열 하나로만 답하라(설명·코드블록 금지).\n"
+                      "각 기사마다 JSON 객체 {\"i\": 번호, \"ko\": \"…\", \"id\": \"…\", \"tags\": [\"…\"], \"tags_id\": [\"…\"]} 를 만들고, 전체를 JSON 배열 하나로만 답하라(설명·코드블록 금지).\n"
                       "· ko: 한국어 2문장, 각 문장 70자 이내(총 150자 안팎), 증권사 데일리 문체(명사형 종결, 마침표 없음, 문장 사이는 ' / '). 1문장 = 무슨 일이 있었나(핵심 사실·수치·일정), 2문장 = 관련 종목·업종에 갖는 의미. 회사명은 'PT ○○ Tbk' 대신 짧은 이름+종목코드(예: Indika Energy(INDY)). 기사에 없는 내용·전망은 쓰지 말 것.\n"
                       "· id: Bahasa Indonesia 2 kalimat, gaya ringkas Kontan/Bisnis.\n"
-                      "· tags: 한국어 키워드 최대 3개(예: 배당, 유상증자, 실적, 규제, M&A, 유가).\n"
-                      "· 표기: 회사명·인명은 로마자 원문, 종목코드 유지, 숫자는 Rp5,000억·Rp1.27조·USD 100처럼 한국식, 소수점은 마침표. Laba=순이익, Pendapatan=매출, Emiten=상장사, Asing=외국인, RUPS=주주총회.\n"
+                      "· tags: 한국어 키워드 최대 3개(예: 배당, 유상증자, 실적, 규제, M&A, 유가). tags_id: 같은 키워드의 인도네시아어(예: dividen, rights issue, kinerja).\n"
+                      "· 표기: 회사명·인명·지명은 로마자 원문 그대로(음역 금지, 예외는 인도네시아·자카르타), 종목코드 유지, 숫자는 Rp5,000억·Rp1.27조·USD 100처럼 한국식, 소수점은 마침표. Laba=순이익, Pendapatan=매출, Emiten=상장사, Asing=외국인, RUPS=주주총회.\n"
                       "· 한국어 문장에 인니어 단어를 섞지 말 것. 번역투(…속에서, …한 가운데, 타격)를 피하고 한국 경제지 기자처럼 쓸 것.\n\n" + arts)
             txt = _claude_complete(prompt, None, None)
             arr = _json_loads_loose(re.sub(r"^```(?:json)?|```$", "", (txt or "").strip(), flags=re.M).strip())
@@ -2362,7 +2373,8 @@ def ai_news(items, per_build=NEWS_AI_PER_BUILD):
             for k, (n, _t) in enumerate(chunk):
                 j = got.get(k + 1)
                 if not j or not str(j.get("ko", "")).strip(): continue
-                cache[n["url"]] = {"ko": str(j.get("ko", ""))[:480], "id": str(j.get("id", ""))[:480], "tags": [str(x)[:16] for x in (j.get("tags") or [])][:3], "ts": now_wib().isoformat()}; done += 1
+                cache[n["url"]] = {"ko": str(j.get("ko", ""))[:480], "id": str(j.get("id", ""))[:480], "tags": [str(x)[:16] for x in (j.get("tags") or [])][:3],
+                                   "tags_id": [str(x)[:20] for x in (j.get("tags_id") or [])][:3], "ts": now_wib().isoformat()}; done += 1
     if done or (can and todo):
         keep = sorted(cache.items(), key=lambda kv: kv[1].get("ts", ""), reverse=True)[:NEWS_AI_KEEP]
         try: AI_NEWS_P.write_text(json.dumps(dict(keep), ensure_ascii=False), encoding="utf-8")
@@ -2370,7 +2382,7 @@ def ai_news(items, per_build=NEWS_AI_PER_BUILD):
         log(f"뉴스 AI 요약 {done}건 (대기 {max(0, len(todo) - per_build)}) · 캐시 {len(keep)}")
     for n in items:
         c = cache.get(n.get("url") or "")
-        if c and c.get("ko"): n["ai_ko"] = c["ko"]; n["ai_id"] = c["id"]; n["ai_tags"] = c.get("tags") or []
+        if c and c.get("ko"): n["ai_ko"] = c["ko"]; n["ai_id"] = c["id"]; n["ai_tags"] = c.get("tags") or []; n["ai_tags_id"] = c.get("tags_id") or []
     return items
 
 # ── Catalyst — 오늘 주가에 영향을 줄 재료가 있는 종목 ────────────────────────
@@ -2628,14 +2640,14 @@ def ai_stocks(data, batch=10, ttl_min=60, per_build=40):
         chunk = todo[i:i + batch]
         prompt = ("아래는 인도네시아 증시(IDX) 종목별 오늘 데이터다. 각 종목이 오늘 왜 오르고/내리고 있는지 근거를 연결해 요약하라.\n"
                   "규칙: 데이터에 있는 뉴스·공시·배당·수급·거래대금·업종/시장 흐름만 근거로 쓴다. 근거가 없거나 시장·업종 흐름과 비슷한 수준이면 conf 를 \"low\" 로 하고 억지 이유를 만들지 않는다. 숫자는 한국식 표기(Rp1,250억·3.85%·2.1배), 금액 단위는 억/조 루피아.\n"
-                  "출력은 JSON 배열: [{\"t\": 티커, \"ko\": \"한국어 2문장, 증권사 시황 문체(명사형 종결), 숫자 포함\", \"id\": \"Bahasa Indonesia 2 kalimat\", \"tags\": [\"키워드 최대 3개(한국어)\"], \"conf\": \"high|low\"}]\n\n"
+                  "출력은 JSON 배열: [{\"t\": 티커, \"ko\": \"한국어 2문장, 증권사 시황 문체(명사형 종결), 숫자 포함\", \"id\": \"Bahasa Indonesia 2 kalimat\", \"tags\": [\"키워드 최대 3개(한국어)\"], \"tags_id\": [\"kata kunci yang sama (Bahasa Indonesia)\"], \"conf\": \"high|low\"}]\n\n"
                   + "\n\n".join(ctx(t) for t in chunk))
         j = _json_loads_loose(_gemini(prompt, 3000))
         if not isinstance(j, list): log("종목 AI 요약 응답 파싱 실패"); continue
         for o in j:
             t = str(o.get("t", "")).upper()
             if t not in chunk: continue
-            cache[t] = {"ko": str(o.get("ko", ""))[:500], "id": str(o.get("id", ""))[:500], "tags": [str(x)[:20] for x in (o.get("tags") or [])][:3], "conf": "low" if str(o.get("conf", "")).lower() == "low" else "high",
+            cache[t] = {"ko": str(o.get("ko", ""))[:500], "id": str(o.get("id", ""))[:500], "tags": [str(x)[:20] for x in (o.get("tags") or [])][:3], "tags_id": [str(x)[:24] for x in (o.get("tags_id") or [])][:3], "conf": "low" if str(o.get("conf", "")).lower() == "low" else "high",
                         "pct": (stocks.get(t) or {}).get("pct"), "ts": now.isoformat(), "hhmm": now.strftime("%H:%M")}; done += 1
     if done:
         try: AI_STK_P.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
