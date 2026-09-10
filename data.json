@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 08:18",
+ "updated": "2026-09-10 08:34",
  "delay_min": 0,
- "fx_basis": "13.12 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,338 · 08:03 Yahoo",
- "idr_per_krw": 13.1175,
+ "fx_basis": "13.11 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,339 · 08:03 Yahoo",
+ "idr_per_krw": 13.1087,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -16157,10 +16157,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6960.38,
+   "px": 6900.18,
    "prev": 7056.35,
-   "pct": -1.36,
-   "asof": "07:55",
+   "pct": -2.21,
+   "asof": "08:10",
    "live": true,
    "spark": [
     7070.5,
@@ -16174,17 +16174,20 @@
     6976.97,
     6975.07,
     6965.12,
-    6960.38
+    6949.47,
+    6951.08,
+    6924.61,
+    6900.18
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64464.09,
+   "px": 64371.79,
    "prev": 65148.08,
-   "pct": -1.05,
-   "asof": "08:00",
+   "pct": -1.19,
+   "asof": "08:15",
    "live": true,
    "spark": [
     64771.93,
@@ -16199,7 +16202,10 @@
     64434.47,
     64438.81,
     64383.97,
-    64464.09
+    64423.48,
+    64302.31,
+    64318.18,
+    64371.79
    ]
   },
   {
@@ -16209,79 +16215,14 @@
    "px": 25274.96,
    "prev": 25317.18,
    "pct": -0.17,
-   "asof": "09/09 종가",
+   "asof": "09/07 종가",
    "live": false,
    "spark": [
-    25189.55,
-    25204.24,
-    25241.55,
-    25259.58,
-    25270.37,
-    25257.59,
-    25295.09,
-    25283.64,
-    25269.33,
-    25272.07,
-    25307.72,
-    25296.77,
-    25282.65,
-    25305.66,
-    25297.19,
-    25283.94,
-    25277.04,
-    25274.99,
-    25285.88,
-    25280.34,
-    25272.7,
-    25277.95,
-    25298.87,
-    25315.29,
-    25311.32,
-    25305.42,
-    25294.01,
-    25311.11,
-    25317.58,
-    25317.63,
-    25316.87,
-    25316.87,
-    25274.79,
-    25258.91,
-    25251.81,
-    25227.06,
-    25232.4,
-    25238.75,
-    25208.51,
-    25211.68,
-    25229.07,
-    25245.42,
-    25255.99,
-    25268.15,
-    25250.49,
-    25246.99,
-    25259.23,
-    25255.88,
-    25262.79,
-    25238.88,
-    25243.55,
-    25246.56,
-    25244.7,
-    25229.37,
-    25237.98,
-    25240.48,
-    25247.75,
-    25266.88,
-    25260.44,
-    25251.6,
-    25248.65,
-    25254.08,
-    25248.3,
-    25241.2,
-    25243.56,
-    25252.23,
-    25254.03,
-    25252.83,
-    25255.42,
-    25274.96
+    25311.21,
+    25213.31,
+    25650.87,
+    25413.12,
+    25317.18
    ]
   }
  ],
@@ -16352,6 +16293,19 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-10T08:20:00+07:00",
+   "date": "2026-09-10",
+   "time": "08:20",
+   "src": "Bloomberg Technoz",
+   "t": "Penjelasan Merdeka Battery (MBMA) Soal Dual Listing di Hong Kong",
+   "tags": [
+    "MBMA"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121107/penjelasan-merdeka-battery-mbma-soal-dual-listing-di-hong-kong",
+   "img": "https://images.bloombergtechnoz.com/data/2023/09/image-20230929140901.jpg",
+   "t_id": "Penjelasan Merdeka Battery (MBMA) Soal Dual Listing di Hong Kong"
+  },
   {
    "ts": "2026-09-10T08:10:00+07:00",
    "date": "2026-09-10",
@@ -16591,7 +16545,7 @@
    "t_id": "Kantongi Restu Pemegang Saham, RATU Siapkan Private Placement 271,51 Juta Saham"
   },
   {
-   "ts": "2026-09-09T20:10:11+07:00",
+   "ts": "2026-09-09T20:10:07+07:00",
    "date": "2026-09-09",
    "time": "09/09",
    "src": "Liputan6",
@@ -16832,27 +16786,6 @@
    "img": "https://photos.idnfinancials.com/d/1600x900/_NEW/wika%20beton.jpg",
    "t_ko": "WTON, 신규 계약 목표 Rp4조로 하향 — 수익성 중심 전략",
    "t_id": "WTON pangkas target kontrak baru jadi Rp4 triliun, fokus jaga margin"
-  },
-  {
-   "ts": "2026-09-09T16:10:06+07:00",
-   "date": "2026-09-09",
-   "time": "09/09",
-   "src": "Republika",
-   "t": "Transformasi Organisasi, Bank Mandiri Taspen Implementasikan RCEO di 10 Wilayah",
-   "tags": [
-    "BMRI"
-   ],
-   "url": "https://ekonomi.republika.co.id/berita/tl3asu370/transformasi-organisasi-bank-mandiri-taspen-implementasikan-rceo-di-10-wilayah",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260909160916-925.png",
-   "t_ko": "Bank Mandiri Taspen, 10개 권역에 RCEO 도입해 조직 개편",
-   "t_id": "Transformasi Organisasi, Bank Mandiri Taspen Implementasikan RCEO di 10 Wilayah",
-   "ai_ko": "Bank Mandiri Taspen은 9월 9일 자카르타 Rawamangun 지점에서 열린 행사에서 지역별 최고경영자(RCEO) 체제를 도입하며 전국 10개 지역본부를 출범 / Panji Irawan 사장은 RCEO가 손익·자산건전성·포트폴리오·서비스·인력을 총괄해 의사결정 속도를 높이는 조직 개편이라고 설명, 기존 배급 조직의 명칭 변경이 아닌 권한 위임 구조 전환임을 강조",
-   "ai_id": "Bank Mandiri Taspen meresmikan 10 kantor wilayah di bawah kepemimpinan Regional Chief Executive Officer (RCEO) pada Rabu (9/9/2026) di KCP Jakarta Rawamangun. Dirut Panji Irawan menegaskan RCEO bertanggung jawab atas profit and loss, kualitas portofolio, layanan, hingga SDM agar pengambilan keputusan lebih cepat.",
-   "ai_tags": [
-    "조직개편",
-    "은행",
-    "지배구조"
-   ]
   },
   {
    "ts": "2026-09-09T15:35:22+07:00",
@@ -17330,6 +17263,86 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T08:33:00+07:00",
+   "date": "2026-09-10",
+   "time": "08:33",
+   "src": "Republika",
+   "t": "ShopeeVIP+ Hadirkan Pengalaman ‘Sekali Langganan, Dapat Semua’, Semakin Lengkap dengan Akses Netflix",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl3p4v490/shopeevip-hadirkan-pengalaman-sekali-langganan-dapat-semua-semakin-lengkap-dengan-akses-netflix",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260909213046-938.png"
+  },
+  {
+   "ts": "2026-09-10T08:30:00+07:00",
+   "date": "2026-09-10",
+   "time": "08:30",
+   "src": "Bloomberg Technoz",
+   "t": "Skala Buyback Menkeu AS Gagal Tahan Lonjakan Yield Treasury",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121105/skala-buyback-menkeu-as-gagal-tahan-lonjakan-yield-treasury",
+   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260825065038.jpg"
+  },
+  {
+   "ts": "2026-09-10T08:26:12+07:00",
+   "date": "2026-09-10",
+   "time": "08:26",
+   "src": "Republika",
+   "t": "Harga Minyak Dunia Naik, Menkeu Siapkan Langkah Jaga APBN 2027",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl4jzo423/harga-minyak-dunia-naik-menkeu-siapkan-langkah-jaga-apbn-2027",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/069600300-1780650825-830-556.jpg",
+   "t_id": "Harga Minyak Dunia Naik, Menkeu Siapkan Langkah Jaga APBN 2027"
+  },
+  {
+   "ts": "2026-09-10T08:22:00+07:00",
+   "date": "2026-09-10",
+   "time": "08:22",
+   "src": "Media Indonesia",
+   "t": "ShopeeVIP+ Hadirkan Pengalaman Sekali Langganan Dapat Semua, Semakin Lengkap dengan Akses Netflix",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/931773/shopeevip-hadirkan-pengalaman-sekali-langganan-dapat-semua-semakin-lengkap-dengan-akses-netflix"
+  },
+  {
+   "ts": "2026-09-10T08:21:03+07:00",
+   "date": "2026-09-10",
+   "time": "08:21",
+   "src": "Detik",
+   "t": "Harga Minyak Tembus US$ 101 per Barel!",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8656368/harga-minyak-tembus-us-101-per-barel",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/25/iran-crisishormuz-1774420577359_169.jpeg?w=360&q=90"
+  },
+  {
+   "ts": "2026-09-10T08:20:02+07:00",
+   "date": "2026-09-10",
+   "time": "08:20",
+   "src": "Bloomberg Technoz",
+   "t": "Investor Asing Diam-diam Borong Saham ANTM Rp300 Miliar",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121106/investor-asing-diam-diam-borong-saham-antm-rp300-miliar",
+   "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260604121843.jpeg",
+   "t_id": "Investor Asing Diam-diam Borong Saham ANTM Rp300 Miliar"
+  },
+  {
+   "ts": "2026-09-10T08:19:38+07:00",
+   "date": "2026-09-10",
+   "time": "08:19",
+   "src": "Bloomberg",
+   "t": "Iran Ready to Escalate War Trump Says Will End After US Election",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-10/iran-ready-to-escalate-war-video"
+  },
+  {
+   "ts": "2026-09-10T08:16:20+07:00",
+   "date": "2026-09-10",
+   "time": "08:16",
+   "src": "Medcom",
+   "t": "Kemenpar Siapkan Penanganan Wisatawan Terdampak Erupsi Anak Krakatau",
+   "tags": [],
+   "url": "https://www.medcom.id/gaya/wisata/yNLZ2MPk-kemenpar-siapkan-penanganan-wisatawan-terdampak-erupsi-anak-krakatau",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841195/tKl9V7f1R8.jpg?w=720"
+  },
+  {
    "ts": "2026-09-10T08:01:18+07:00",
    "date": "2026-09-10",
    "time": "08:01",
@@ -17562,89 +17575,6 @@
    "url": "https://www.idxchannel.com/market-news/adu-kuat-bank-digital-analis-soroti-sederet-saham-ini",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/10/bank_digital_-_mobile_banking_-_Magnific.jpeg",
    "t_id": "Adu Kuat Bank Digital, Analis Soroti Sederet Saham Ini"
-  },
-  {
-   "ts": "2026-09-10T06:19:00+07:00",
-   "date": "2026-09-10",
-   "time": "06:19",
-   "src": "Katadata",
-   "t": "Nilai Investasi Rp 780 T, Kopdes Merah Putih Bakal Gandeng PNM - Pos Indonesia",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/keuangan/6aa1e9658a0a0/nilai-investasi-rp-780-t-kopdes-merah-putih-bakal-gandeng-pnm-pos-indonesia",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/28/2026_08_28-21_14_00_587283a2-a33c-11f1-8ba5-0242ac12000a_620x413_thumb.jpg"
-  },
-  {
-   "ts": "2026-09-10T06:16:00+07:00",
-   "date": "2026-09-10",
-   "time": "06:16",
-   "src": "Media Indonesia",
-   "t": "Ruangan Dirjen Bea Cukai Djaka Budhi Utama Sempat Disegel KPK",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/931736/ruangan-dirjen-bea-cukai-djaka-budhi-utama-sempat-disegel-kpk"
-  },
-  {
-   "ts": "2026-09-10T06:08:09+07:00",
-   "date": "2026-09-10",
-   "time": "06:08",
-   "src": "Bloomberg Technoz",
-   "t": "Minyak Lampaui US$100, Indeks S&P 500 Turun 3 Hari Beruntun",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121092/minyak-lampaui-us-100-indeks-s-p-500-turun-3-hari-beruntun",
-   "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260616065352.jpg",
-   "t_id": "Minyak Lampaui US$100, Indeks S&P 500 Turun 3 Hari Beruntun"
-  },
-  {
-   "ts": "2026-09-10T06:02:00+07:00",
-   "date": "2026-09-10",
-   "time": "06:02",
-   "src": "Jawa Pos",
-   "t": "Anggota GAPKI Diminta Tingkatkan Kewaspadaan untuk Antisipasi Karhutla",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609100015/anggota-gapki-diminta-tingkatkan-kewaspadaan-untuk-antisipasi-karhutla",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/24/kondisi-karhutla-di-kabupaten-bulungan-provinsi-kalimantan-utara-selasa-188-bpbd-kabupaten-bulungan-8HBkm.webp",
-   "t_id": "Anggota GAPKI Diminta Tingkatkan Kewaspadaan untuk Antisipasi Karhutla"
-  },
-  {
-   "ts": "2026-09-10T06:00:00+07:00",
-   "date": "2026-09-10",
-   "time": "06:00",
-   "src": "IDX Channel",
-   "t": "IHSG Hari Ini Masih Berpeluang Menguat, Cermati Analisa 4 Saham Berikut",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/ihsg-hari-ini-masih-berpeluang-menguat-cermati-analisa-4-saham-berikut-1",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/02/10/Papan_IHSG_Hijau_--.jpeg",
-   "t_id": "IHSG Hari Ini Masih Berpeluang Menguat, Cermati Analisa 4 Saham Berikut"
-  },
-  {
-   "ts": "2026-09-10T06:00:00+07:00",
-   "date": "2026-09-10",
-   "time": "06:00",
-   "src": "Katadata",
-   "t": "Purbaya Sebut APBN Siap Sokong Program Bikin KTP Dapat Rekening Bank Rp 50 Ribu",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/keuangan/6aa18c7129f7a/purbaya-sebut-apbn-siap-sokong-program-bikin-ktp-dapat-rekening-bank-rp-50-ribu",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/28/Konferensi_pers_Komite_Stabilitas_Sistem_Keuangan_Foto_KatadataF-2026_07_28-19_23_35_5fe074cfbb60def90e827b0ba09ddcf3_620x413_thumb.jpg"
-  },
-  {
-   "ts": "2026-09-10T06:00:00+07:00",
-   "date": "2026-09-10",
-   "time": "06:00",
-   "src": "Republika",
-   "t": "Aset Daerah Ditata, Pemprov Sultra Fokuskan Pemanfaatan untuk Publik",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl3t26416/aset-daerah-ditata-pemprov-sultra-fokuskan-pemanfaatan-untuk-publik",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260909224605-280.png",
-   "t_id": "Aset Daerah Ditata, Pemprov Sultra Fokuskan Pemanfaatan untuk Publik"
-  },
-  {
-   "ts": "2026-09-10T05:56:00+07:00",
-   "date": "2026-09-10",
-   "time": "05:56",
-   "src": "Katadata",
-   "t": "Ancaman Minyak US$ 120 Membayangi Wall Street, Tiga Indeks Berguguran",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/bursa/6aa1e40a50648/ancaman-minyak-us-120-membayangi-wall-street-tiga-indeks-berguguran",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/10/12/Wall_Street-2023_10_12-05_51_11_8074be86ec350e0281213fa81ef24863_620x413_thumb.png"
   }
  ],
  "kisi_news": [
@@ -17817,9 +17747,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.11",
-   "d": -0.1,
-   "ytd": 12.87,
+   "v": "13.10",
+   "d": -0.14,
+   "ytd": 12.82,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17852,9 +17782,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.80",
-   "d": 0.03,
-   "ytd": 0.53,
+   "v": "98.79",
+   "d": 0.01,
+   "ytd": 0.51,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17864,9 +17794,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.59",
-   "d": 2.56,
-   "ytd": 68.22,
+   "v": "96.81",
+   "d": 2.79,
+   "ytd": 68.6,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17876,9 +17806,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,452.5",
-   "d": 0.73,
-   "ytd": 2.93,
+   "v": "4,458.0",
+   "d": 0.85,
+   "ytd": 3.06,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17900,9 +17830,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,884",
-   "d": 0.08,
-   "ytd": 1.21,
+   "v": "16,865",
+   "d": -0.03,
+   "ytd": 1.1,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25452,7 +25382,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 890,
+  "pc_age_min": 906,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26714,9 +26644,9 @@
   },
   "model": "gemini-2.5-flash-lite",
   "index": {
-   "ko": "대형 은행주(BBCA·BMRI) 약세로 금융업종이 하락하며 IHSG 0.12% 하락 마감.",
-   "id": "IHSG ditutup melemah 0,12% ditekan oleh pelemahan sektor keuangan akibat penurunan saham bank besar (BBCA dan BMRI).",
-   "ts": "2026-09-10T08:18:11.127177+07:00"
+   "ko": "금융주(BBCA·BMRI) 약세와 미국 국채금리 상승 영향으로 IHSG 0.12% 하락.",
+   "id": "IHSG melemah 0,12% akibat pelemahan saham perbankan (BBCA dan BMRI) serta kenaikan imbal hasil obligasi AS.",
+   "ts": "2026-09-10T08:34:47.596816+07:00"
   }
  },
  "mcap": [
