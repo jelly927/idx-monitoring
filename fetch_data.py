@@ -1624,10 +1624,16 @@ SEC_TIPS = re.compile(r"[/.](tips|tips-properti|feng-shui|desain|dekorasi|interi
 TIPS_RX  = re.compile(r"\b(feng ?shui|shio|hoki|zodiak|desain (rumah|kamar|dapur|interior)|dekorasi|inspirasi (rumah|hunian|desain)|tips (rumah|kamar|dapur|hunian|menata|membeli rumah)|cara (menata|membersihkan|merawat|mengusir)|rumah minimalis|kamar tidur)\b", re.I)   # 제목 기반 생활정보 차단
 DISASTER_RX = re.compile(r"\b(banjir|gempa|erupsi|gunung (anak )?krakatau|tsunami|longsor|karhutla|kebakaran hutan|abu vulkanik|bandara (ditutup|tutup)|status (siaga|awas))\b", re.I)   # 자연재해 — 시장 영향 사안이라 채택
 NONMKT_RX = re.compile(r"\b(orangutan|orang utan|satwa|hewan|gajah|harimau|komodo|badak|penyu|banjir|gempa|erupsi|tsunami|longsor|kebakaran|sepak ?bola|timnas|liga|piala|artis|selebriti|film|drama|konser|kriminal|pembunuhan|narkoba|polisi|kecelakaan|virus|covid|cuaca|resep|kuliner|wisata|pernikahan|viral|horoskop|zodiak|ramalan|sinopsis|jadwal (sholat|shalat|imsak)|doa|khutbah)\b", re.I)
+PROMO_RX = re.compile(r"\b(promo|diskon|cashback|voucher|gratis|giveaway|undian|flash sale|paket (langganan|bundling|data|internet)|langganan|berlangganan|fitur (baru|terbaru)|kini (hadir|tersedia)|tersedia di|manjakan|pengalaman (baru|belanja|menonton|berbelanja)|bintang iklan|brand ambassador|sponsor|advertorial|ulasan|review|spesifikasi|smartphone|iphone|samsung galaxy|xiaomi|netflix|shopee|tokopedia|lazada|tiktok shop|grab|gojek|traveloka|tiket\.com|rekomendasi (hp|laptop|mobil|motor|skincare|gadget|wisata)|harga (hp|iphone|samsung|xiaomi|laptop|motor|mobil|tiket))\b", re.I)   # 광고·제품 홍보성
+LAUNCH_RX = re.compile(r"\b(hadirkan|menghadirkan|meluncurkan|luncurkan|resmi (hadir|meluncur|dirilis)|rilis|gandeng|menggandeng|kolaborasi|berkolaborasi)\b", re.I)   # 출시·제휴 보도자료 — 정책·시장 키워드 없으면 제외
+LIFE_RX = re.compile(r"\b(kota tua|little amsterdam|destinasi|wisatawan|liburan|libur (panjang|lebaran|nataru)|festival|pameran|expo|car free day|resep|kuliner|kafe|restoran|staycation|mudik|arus (mudik|balik)|hujan|bmkg|ganjil genap|orang terkaya|keluarga terkaya|konglomerat terkaya|daftar (orang|keluarga|crazy rich)|crazy rich|kisah (sukses|inspiratif)|inspiratif|motivasi|biodata|sosok|donasi|bakti sosial|santunan|csr)\b", re.I)   # 관광·생활·인물 읽을거리
 def _market_news_ok(title, summ="", link=""):
     """티커가 없는 기사 중 시장 뉴스로 채택할지: 생활정보·광고성 제외 → 자연재해 채택 → 비경제 섹션·소재 제외, 경제 섹션·시장 키워드 채택"""
     path = "/" + re.sub(r"^https?://", "", link or "")     # 호스트 첫 토큰(nasional.kompas.com 등)도 섹션으로 판별되게
     if SEC_TIPS.search(path) or TIPS_RX.search(title or ""): return False   # 풍수·인테리어·생활 팁류는 경제 섹션이어도 제외
+    t = title or ""
+    if PROMO_RX.search(t) or LIFE_RX.search(t): return False                # 광고·제품 홍보·관광·인물 읽을거리는 경제 섹션이어도 제외
+    if LAUNCH_RX.search(t) and not (POLICY_RX.search(t) or MARKET_RX.search(t)): return False   # 소비재 출시·제휴 보도자료
     if DISASTER_RX.search(title or ""): return True                          # 화산·지진 등 재해는 시장 영향 — 채택
     if NONMKT_RX.search(title or ""): return False
     if SEC_NO.search(path) and not SEC_OK.search(path): return False
