@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 22:28",
+ "updated": "2026-09-10 22:41",
  "delay_min": 0,
  "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,345 · 20:07 Yahoo",
- "idr_per_krw": 13.0316,
+ "idr_per_krw": 13.0325,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 22:27",
+   "asof": "investing.com 22:39",
    "unit": "bp"
   }
  ],
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7607.29,
+   "px": 7605.45,
    "prev": 7637.7,
-   "pct": -0.4,
-   "asof": "22:25",
+   "pct": -0.42,
+   "asof": "22:35",
    "live": true,
    "spark": [
     7591.46,
@@ -15108,17 +15108,19 @@
     7603.95,
     7603.43,
     7606.4,
-    7607.29
+    7605.92,
+    7607.73,
+    7605.45
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26144.74,
+   "px": 26141.74,
    "prev": 26253.34,
-   "pct": -0.41,
-   "asof": "22:25",
+   "pct": -0.43,
+   "asof": "22:35",
    "live": true,
    "spark": [
     26012.32,
@@ -15144,17 +15146,19 @@
     26144.09,
     26128.81,
     26140.37,
-    26144.74
+    26143.62,
+    26147.63,
+    26141.74
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52156.16,
+   "px": 52119.4,
    "prev": 52391.48,
-   "pct": -0.45,
-   "asof": "22:25",
+   "pct": -0.52,
+   "asof": "22:35",
    "live": true,
    "spark": [
     52225.89,
@@ -15180,7 +15184,9 @@
     52135.4,
     52148.46,
     52160.17,
-    52156.16
+    52143.06,
+    52157.13,
+    52119.4
    ]
   },
   {
@@ -16800,6 +16806,77 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T22:40:17.714912+07:00",
+   "date": "2026-09-10",
+   "time": "22:40",
+   "src": "Jawa Pos",
+   "t": "Agar Barang Aman, Inilah 5 Manfaat Safe Deposit Box Ini Wajib Kamu Tahu",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609100341/agar-barang-aman-inilah-5-manfaat-safe-deposit-box-ini-wajib-kamu-tahu",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/ilustrasi-safe-deposit-box-istimewa-Mw2yb.webp",
+   "t_ko": "물품 보관 안전하게 — 세이프디파짓박스 5가지 활용법",
+   "t_id": "Agar Barang Aman, Inilah 5 Manfaat Safe Deposit Box Ini Wajib Kamu Tahu",
+   "ai_ko": "Bank Sembada의 Sandibrata Simanjuntak 대표가 대여금고(SDB)를 회사의 핵심 서비스로 제시하며 이용 혜택 5가지 소개 / 상장사 실적이나 수치 언급은 없어 투자 판단에 미치는 영향은 제한적",
+   "ai_id": "Direktur Utama Bank Sembada, Sandibrata Simanjuntak, menyebut layanan Safe Deposit Box (SDB) sebagai salah satu andalan perseroan dan memaparkan lima manfaatnya. Pemberitaan bersifat informasi layanan tanpa data kinerja keuangan.",
+   "ai_tags": [
+    "은행",
+    "서비스"
+   ],
+   "ai_tags_id": [
+    "perbankan",
+    "layanan"
+   ]
+  },
+  {
+   "ts": "2026-09-10T22:40:17.711018+07:00",
+   "date": "2026-09-10",
+   "time": "22:40",
+   "src": "Jawa Pos",
+   "t": "KemenPPPA Dorong Perempuan Lebih Terlibat dalam Pemberdayaan Ekonomi",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609100349/kemenpppa-dorong-perempuan-lebih-terlibat-dalam-pemberdayaan-ekonomi",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/29/peserta-mempraktikkan-cara-membuat-telur-rempah-dalam-lokakarya-kewirausahaan-bagi-perempuan-dan-disabilitas-di-rumah-inklusif-kantor-kecamatan-semarang-barat-semarang-jawa-tengah-rabu-2682026-gxYec.webp",
+   "t_ko": "KemenPPPA, 여성 경제 참여 확대 독려",
+   "t_id": "KemenPPPA Dorong Perempuan Lebih Terlibat dalam Pemberdayaan Ekonomi",
+   "ai_ko": "Pelindo 직원 20명이 Port Captain Inspirasi 2026 참여, Banda Aceh·Garut·Sumbawa·Ambon 파견 확정 / 교육·보건 분야 봉사로 3T 낙후지역 서비스 접근성 확대",
+   "ai_id": "Program Port Captain Inspirasi 2026 melibatkan 20 pekerja Pelindo yang bertugas di Banda Aceh, Garut, Sumbawa, dan Ambon. Para relawan bergerak di bidang pendidikan dan kesehatan untuk memperluas akses layanan sosial ke wilayah 3T.",
+   "ai_tags": [
+    "사회공헌",
+    "항만",
+    "국영기업"
+   ],
+   "ai_tags_id": [
+    "CSR",
+    "pelabuhan",
+    "BUMN"
+   ]
+  },
+  {
+   "ts": "2026-09-10T22:39:03+07:00",
+   "date": "2026-09-10",
+   "time": "22:39",
+   "src": "CNBC",
+   "t": "Kimmel says interview with Senate candidate Talarico won't air on ABC amid FCC threats",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/abc-kimmel-talarico-fcc.html",
+   "g": 1,
+   "t_ko": "Kimmel, FCC 압박 속 상원 후보 Talarico 인터뷰 ABC 방영 취소",
+   "t_id": "Kimmel Sebut Wawancara dengan Kandidat Senat Talarico Batal Tayang di ABC di Tengah Ancaman FCC"
+  },
+  {
+   "ts": "2026-09-10T22:34:00+07:00",
+   "date": "2026-09-10",
+   "time": "22:34",
+   "src": "MarketWatch",
+   "t": "Renewable-energy mandates are actually bad for consumers. They’re not great for solar stocks, either.",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/renewable-energy-mandates-are-actually-bad-for-consumers-theyre-not-great-for-solar-stocks-either-bdfa13bb?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-89991410",
+   "t_ko": "재생에너지 의무화 조치, 소비자 및 태양광 주가에 악영향",
+   "t_id": "Mandat Energi Terbarukan Ternyata Buruk bagi Konsumen dan Saham Solar"
+  },
+  {
    "ts": "2026-09-10T22:25:19+07:00",
    "date": "2026-09-10",
    "time": "22:25",
@@ -16862,6 +16939,19 @@
    "t_id": "Meta Pikat Wall Street Lewat Agen AI Baru Muse"
   },
   {
+   "ts": "2026-09-10T22:22:04+07:00",
+   "date": "2026-09-10",
+   "time": "22:22",
+   "src": "FT",
+   "t": "Global bond sell-off reignites as oil jumps above $105",
+   "tags": [],
+   "url": "https://www.ft.com/content/49e8c693-0064-4ef9-917f-5f2be97458fc?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fe5996a66-3010-4e36-b651-46e7015f19bb.png?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "유가 배럴당 105달러 돌파에 글로벌 채권 매도세 재확산",
+   "t_id": "Aksi Jual Obligasi Global Kembali Membara Seiring Lonjakan Minyak di Atas $105"
+  },
+  {
    "ts": "2026-09-10T22:21:00+07:00",
    "date": "2026-09-10",
    "time": "22:21",
@@ -16908,8 +16998,8 @@
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932135/kementerian-esdm-prediksi-permintaan-batu-bara-global-turun-dalam-5-tahun",
    "g": 1,
-   "t_id": "Kementerian ESDM Prediksi Permintaan Batu Bara Global Turun dalam 5 Tahun",
-   "t_ko": "에너지광물자원부, 향후 5년간 글로벌 석탄 수요 감소 전망"
+   "t_ko": "에너지광물자원부, 향후 5년간 글로벌 석탄 수요 감소 전망",
+   "t_id": "Kementerian ESDM Prediksi Permintaan Batu Bara Global Turun dalam 5 Tahun"
   },
   {
    "ts": "2026-09-10T22:15:00+07:00",
@@ -16921,6 +17011,19 @@
    "url": "https://mediaindonesia.com/ekonomi/932134/dpr-bansos-digital-nasional-harus-dibarengi-kanal-pengaduan",
    "t_ko": "DPR, 국가 디지털 사회보장지원금에 신고 채널 구축 촉구",
    "t_id": "DPR: Bansos Digital Nasional Harus Dibarengi Kanal Pengaduan"
+  },
+  {
+   "ts": "2026-09-10T22:14:27+07:00",
+   "date": "2026-09-10",
+   "time": "22:14",
+   "src": "Yahoo Finance",
+   "t": "Meta Stock Scores Wall Street Upgrade After Muse AI App Launch",
+   "tags": [],
+   "url": "https://www.investors.com/news/technology/meta-stock-jpmorgan-upgrade-buy-muse-ai/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/86cd8457b369c3adf3ced91f77a50bca.jpg",
+   "t_ko": "Meta Platforms, Muse AI 앱 출시 계기로 월가 투자의견 상향",
+   "t_id": "Saham Meta Raih Upgrade Wall Street Usai Peluncuran Aplikasi Muse AI"
   },
   {
    "ts": "2026-09-10T22:10:00+07:00",
@@ -17005,8 +17108,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8657718/setoran-pajak-tembus-rp-1-224-triliun-purbaya-buka-suara",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/05/toko-online-lega-pemerintah-tunda-pajak-final-05-persen-1785929270093_169.jpeg?w=360&q=90",
-   "t_id": "Setoran Pajak Tembus Rp 1.224 Triliun, Purbaya Buka Suara",
-   "t_ko": "세수 납부액 Rp1,224조 돌파에 Purbaya 입장 표명"
+   "t_ko": "세수 납부액 Rp1,224조 돌파에 Purbaya 입장 표명",
+   "t_id": "Setoran Pajak Tembus Rp 1.224 Triliun, Purbaya Buka Suara"
   },
   {
    "ts": "2026-09-10T22:02:19+07:00",
@@ -17041,57 +17144,20 @@
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/932123/harga-minyak-tembus-us105-per-barel-pasar-obligasi-dan-saham-terguncang",
    "g": 1,
-   "t_id": "Harga Minyak Tembus US$105 per Barel, Pasar Obligasi dan Saham Terguncang",
-   "t_ko": "유가 배럴당 105달러 돌파로 채권·주식시장 충격"
+   "t_ko": "유가 배럴당 105달러 돌파로 채권·주식시장 충격",
+   "t_id": "Harga Minyak Tembus US$105 per Barel, Pasar Obligasi dan Saham Terguncang"
   },
   {
-   "ts": "2026-09-10T21:58:08+07:00",
+   "ts": "2026-09-10T21:59:55+07:00",
    "date": "2026-09-10",
-   "time": "21:58",
-   "src": "CNBC",
-   "t": "Where investors are finding income outside traditional bonds as rates rise",
+   "time": "21:59",
+   "src": "Medcom",
+   "t": "5 Rekomendasi Kompor Listrik Mini Hemat Daya untuk Hunian Kecil",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/income-alternatives-bond-yields-rates.html",
-   "g": 1,
-   "t_ko": "금리 상승기 전통 채권 외 대체 투자처로 몰리는 자금",
-   "t_id": "Tempat Investor Cari Cuan di Luar Obligasi Tradisional Saat Suku Bunga Naik"
-  },
-  {
-   "ts": "2026-09-10T21:56:00+07:00",
-   "date": "2026-09-10",
-   "time": "21:56",
-   "src": "WSJ",
-   "t": "Brooks Automation Files Confidentially for IPO",
-   "tags": [],
-   "url": "https://www.wsj.com/pro/private-equity/brooks-automation-files-confidentially-for-ipo-a7939e5a?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-73959262",
-   "t_ko": "Brooks Automation, 비공개 IPO 신청",
-   "t_id": "Brooks Automation Ajukan IPO Secara Rahasia"
-  },
-  {
-   "ts": "2026-09-10T21:55:39+07:00",
-   "date": "2026-09-10",
-   "time": "21:55",
-   "src": "CNBC",
-   "t": "Kimmel says interview with Senate candidate Talarico won't air on ABC amid FCC threats",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/abc-kimmel-talarico-fcc.html",
-   "g": 1,
-   "t_ko": "Kimmel, FCC 압박 속 상원 후보 Talarico 인터뷰 ABC 방영 취소",
-   "t_id": "Kimmel Sebut Wawancara dengan Kandidat Senat Talarico Batal Tayang di ABC di Tengah Ancaman FCC"
-  },
-  {
-   "ts": "2026-09-10T21:54:52+07:00",
-   "date": "2026-09-10",
-   "time": "21:54",
-   "src": "Bloomberg",
-   "t": "Never Short-Sell a Bubble, Syzygy's Arnott Warns",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-10/never-short-sell-a-bubble-syzygy-s-arnott-warns-video",
-   "g": 1,
-   "t_ko": "Syzygy의 Arnott, 버블 공매도 경고",
-   "t_id": "Jangan Pernah Short-Sell Gelembung, Peringatkan Arnott dari Syzygy"
+   "url": "https://www.medcom.id/properti/news-properti/ybDy89Zk-5-rekomendasi-kompor-listrik-mini-hemat-daya-untuk-hunian-kecil",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841396/mxkYQfFd4J.jpg?w=720",
+   "t_id": "5 Rekomendasi Kompor Listrik Mini Hemat Daya untuk Hunian Kecil",
+   "t_ko": "소형 주거용 저전력 미니 전기레인지 추천 5선"
   },
   {
    "ts": "2026-09-10T21:54:00+07:00",
@@ -17101,8 +17167,8 @@
    "t": "Siapkan SDM Unggul, Job Fair Perluas Akses Pencari Kerja ke Industri",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932119/siapkan-sdm-unggul-job-fair-perluas-akses-pencari-kerja-ke-industri",
-   "t_id": "Siapkan SDM Unggul, Job Fair Perluas Akses Pencari Kerja ke Industri",
-   "t_ko": "우수 인력 육성 위한 잡페어, 구직자 산업 접근성 확대"
+   "t_ko": "우수 인력 육성 위한 잡페어, 구직자 산업 접근성 확대",
+   "t_id": "Siapkan SDM Unggul, Job Fair Perluas Akses Pencari Kerja ke Industri"
   },
   {
    "ts": "2026-09-10T21:48:58+07:00",
@@ -17164,17 +17230,6 @@
    "t_id": "Pemanfaatan AI dalam Analisis Klaim Asuransi dan Deteksi Fraud"
   },
   {
-   "ts": "2026-09-10T21:18:00+07:00",
-   "date": "2026-09-10",
-   "time": "21:18",
-   "src": "Media Indonesia",
-   "t": "Kebutuhan HVAC Komersial Makin Beragam, Pemain Lokal Bidik Segmen Proyek",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932104/kebutuhan-hvac-komersial-makin-beragam-pemain-lokal-bidik-segmen-proyek",
-   "t_ko": "상업용 HVAC 수요 다변화에 국내 업체 프로젝트 공략 본격화",
-   "t_id": "Kebutuhan HVAC Komersial Makin Beragam, Pemain Lokal Bidik Segmen Proyek"
-  },
-  {
    "ts": "2026-09-10T21:00:55+07:00",
    "date": "2026-09-10",
    "time": "21:00",
@@ -17233,30 +17288,6 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/10/MNC_Sekuritas.jpg",
    "t_ko": "MNC Sekuritas, GI BEI JGU 통해 신입생 투자 교육 진행",
    "t_id": "MNC Sekuritas Ajak Mahasiswa Baru Cerdas Berinvestasi lewat GI BEI JGU"
-  },
-  {
-   "ts": "2026-09-10T20:03:24+07:00",
-   "date": "2026-09-10",
-   "time": "20:03",
-   "src": "Detik",
-   "t": "Minyak Jelantah dari MBG Bakal 'Disulap' Jadi Avtur Ramah Lingkungan",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8657564/minyak-jelantah-dari-mbg-bakal-disulap-jadi-avtur-ramah-lingkungan",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2024/07/30/warga-bandung-bisa-raup-cuan-dari-setor-minyak-jelantah_169.jpeg?w=360&q=90",
-   "t_ko": "MBG 폐식용유 활용 친환경 항공유 전환 추진",
-   "t_id": "Minyak Jelantah dari MBG Bakal 'Disulap' Jadi Avtur Ramah Lingkungan"
-  },
-  {
-   "ts": "2026-09-10T19:50:00+07:00",
-   "date": "2026-09-10",
-   "time": "19:50",
-   "src": "Katadata",
-   "t": "Inpres Larangan Bakar Hutan, Walhi Sorot Risiko Masyarakat Jadi Kambing Hitam",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6aa2a78b4b31e/inpres-larangan-bakar-hutan-walhi-sorot-risiko-masyarakat-jadi-kambing-hitam",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/09/2026_09_09-21_39_00_9e832174-ac8f-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "산불 금지 대통령령에 Walhi, 주민들이 희생양이 될 위험 지적",
-   "t_id": "Inpres Larangan Bakar Hutan, Walhi Sorot Risiko Masyarakat Jadi Kambing Hitam"
   }
  ],
  "kisi_news": [
@@ -17441,9 +17472,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.922%",
-   "d": 1.76,
-   "ytd": 18.23,
+   "v": "4.920%",
+   "d": 1.72,
+   "ytd": 18.18,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17464,9 +17495,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.89",
-   "d": 0.15,
-   "ytd": 0.62,
+   "v": "98.93",
+   "d": 0.2,
+   "ytd": 0.66,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17476,9 +17507,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "100.05",
-   "d": 4.11,
-   "ytd": 74.24,
+   "v": "100.39",
+   "d": 4.46,
+   "ytd": 74.83,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17488,9 +17519,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,404.1",
-   "d": -1.07,
-   "ytd": 1.81,
+   "v": "4,406.7",
+   "d": -1.02,
+   "ytd": 1.87,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17512,9 +17543,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,638",
-   "d": -1.38,
-   "ytd": -0.27,
+   "v": "16,639",
+   "d": -1.37,
+   "ytd": -0.26,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18696,6 +18727,20 @@
   },
   {
    "date": "2026-09-10",
+   "time": "20:20",
+   "kind": "macro",
+   "country": "US",
+   "title": "Atlanta Fed GDPNow  (Q3)",
+   "imp": 2,
+   "exp": "4.7%",
+   "prev": "4.7%",
+   "act": "4.4%",
+   "src": "investing.com",
+   "title_ko": "3분기 애틀랜타 연은 GDPNow",
+   "title_id": "GDPNow The Fed Atlanta (Q3)"
+  },
+  {
+   "date": "2026-09-10",
    "time": "21:00",
    "kind": "macro",
    "country": "US",
@@ -18707,20 +18752,6 @@
    "src": "investing.com",
    "title_ko": "8월 기존주택 판매",
    "title_id": "Penjualan Rumah Existing AS (Agu)"
-  },
-  {
-   "date": "2026-09-10",
-   "time": "22:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Atlanta Fed GDPNow  (Q3)",
-   "imp": 2,
-   "exp": "4.7%",
-   "prev": "4.7%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "3분기 애틀랜타 연은 GDPNow",
-   "title_id": "GDPNow The Fed Atlanta (Q3)"
   },
   {
    "date": "2026-09-10",
@@ -25381,7 +25412,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 305,
+  "pc_age_min": 318,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
