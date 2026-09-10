@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 21:07",
+ "updated": "2026-09-10 21:27",
  "delay_min": 0,
- "fx_basis": "13.04 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,345 · 20:07 Yahoo",
- "idr_per_krw": 13.0358,
+ "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 20:07 Yahoo",
+ "idr_per_krw": 13.0257,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 21:06",
+   "asof": "investing.com 21:26",
    "unit": "bp"
   }
  ],
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7585.36,
+   "px": 7605.54,
    "prev": 7637.7,
-   "pct": -0.69,
-   "asof": "21:05",
+   "pct": -0.42,
+   "asof": "21:25",
    "live": true,
    "spark": [
     7591.46,
@@ -15092,17 +15092,21 @@
     7586.24,
     7580.91,
     7586.73,
-    7585.36
+    7581.73,
+    7587.65,
+    7594.02,
+    7607.11,
+    7605.54
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26052.51,
+   "px": 26125.21,
    "prev": 26253.34,
-   "pct": -0.76,
-   "asof": "21:05",
+   "pct": -0.49,
+   "asof": "21:25",
    "live": true,
    "spark": [
     26012.32,
@@ -15112,17 +15116,21 @@
     26049.94,
     26022.87,
     26061.46,
-    26052.51
+    26042.36,
+    26052.92,
+    26067.99,
+    26127.47,
+    26125.21
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52050.13,
+   "px": 52222.38,
    "prev": 52391.48,
-   "pct": -0.65,
-   "asof": "21:05",
+   "pct": -0.32,
+   "asof": "21:25",
    "live": true,
    "spark": [
     52225.89,
@@ -15132,7 +15140,11 @@
     52117.83,
     52077.69,
     52067.64,
-    52050.13
+    52013.18,
+    52088.49,
+    52136.88,
+    52225.21,
+    52222.38
    ]
   },
   {
@@ -15449,6 +15461,47 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-10T21:20:43+07:00",
+   "date": "2026-09-10",
+   "time": "21:20",
+   "src": "Liputan6",
+   "t": "Emiten RAJA Ungkap Alasan Akuisisi 5% Saham Layar Nusantara Gas",
+   "tags": [
+    "RAJA"
+   ],
+   "url": "https://www.liputan6.com/saham/read/8289156/emiten-raja-ungkap-alasan-akuisisi-5-saham-layar-nusantara-gas",
+   "img": "https://cdn0-production-images-kly.akamaized.net/jerop9yDm0xIDFxGh1_ee-NwmYA=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5497603/original/096409200_1770638744-3.jpg",
+   "t_id": "Emiten RAJA Ungkap Alasan Akuisisi 5% Saham Layar Nusantara Gas",
+   "t_ko": "RAJA, Layar Nusantara Gas 지분 5% 인수 배경 공개"
+  },
+  {
+   "ts": "2026-09-10T21:10:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:10",
+   "src": "Media Indonesia",
+   "t": "Dorong Pertumbuhan Berkualitas, Profitabilitas Meningkat",
+   "tags": [
+    "LIFE"
+   ],
+   "url": "https://mediaindonesia.com/nusantara/932098/dorong-pertumbuhan-berkualitas-profitabilitas-meningkat-",
+   "t_ko": "질적 성장 견인으로 수익성 개선",
+   "t_id": "Dorong Pertumbuhan Berkualitas, Profitabilitas Meningkat"
+  },
+  {
+   "ts": "2026-09-10T21:02:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:02",
+   "src": "IDX Channel",
+   "t": "Pemangkasan RKAB Tekan Bisnis Pertambangan Astra (ASII)",
+   "tags": [
+    "ASII"
+   ],
+   "url": "https://www.idxchannel.com/market-news/pemangkasan-rkab-tekan-bisnis-pertambangan-astra-asii",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2024/08/13/batu_bara.jpg",
+   "t_ko": "RKAB 감축으로 Astra(ASII) 광업 부문 실적 압박",
+   "t_id": "Pemangkasan RKAB Tekan Bisnis Pertambangan Astra (ASII)"
+  },
   {
    "ts": "2026-09-10T20:40:00+07:00",
    "date": "2026-09-10",
@@ -15844,32 +15897,6 @@
     "merger",
     "perbankan",
     "public expose"
-   ]
-  },
-  {
-   "ts": "2026-09-10T14:49:00+07:00",
-   "date": "2026-09-10",
-   "time": "14:49",
-   "src": "IDX Channel",
-   "t": "Diakuisisi Nagita-Raffi, Savitra (VISI) Sebut Tidak Ada Investor Publik yang Ikut MTO",
-   "tags": [
-    "VISI"
-   ],
-   "url": "https://www.idxchannel.com/market-news/diakuisisi-nagita-raffi-savitra-visi-sebut-tidak-ada-investor-publik-yang-ikut-mto",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/07/04/raffi_nagita_okz.jpg",
-   "t_ko": "VISI, Nagita-Raffi 인수 속 공개매수 참여 공모 투자자 전무",
-   "t_id": "Diakuisisi Nagita-Raffi, Savitra (VISI) Sebut Tidak Ada Investor Publik yang Ikut MTO",
-   "ai_ko": "Harmoni Semesta Investama, Satu Visi Putra(VISI) 지분 61.85%를 주당 Rp94, 총 Rp1,787억에 인수 후 의무공개매수 종료 / 7월 23일~8월 21일 공개매수에 응한 소액주주 전무로 유통주식 변동 없음",
-   "ai_id": "PT Harmoni Semesta Investama milik Raffi Ahmad dan Nagita Slavina merampungkan MTO saham PT Satu Visi Putra Tbk (VISI) setelah mengakuisisi 1,9 miliar saham atau 61,85% senilai Rp178,7 miliar pada harga Rp94 per saham. Selama periode 23 Juli-21 Agustus 2026, tidak ada satu pun pemegang saham publik yang menjual sahamnya.",
-   "ai_tags": [
-    "M&A",
-    "공개매수",
-    "경영권 변동"
-   ],
-   "ai_tags_id": [
-    "akuisisi",
-    "MTO",
-    "perubahan pengendali"
    ]
   },
   {
@@ -16741,20 +16768,6 @@
    "t_id": "HEAL Kantongi Pendapatan Rp 3,61 Triliun pada Semester I 2026"
   },
   {
-   "ts": "2026-09-08T17:40:35+07:00",
-   "date": "2026-09-08",
-   "time": "09/08",
-   "src": "Liputan6",
-   "t": "Boy Thohir Terafiliasi Emiten MGLV di Sektor Data Center dan AI, Saham Melambung",
-   "tags": [
-    "MGLV"
-   ],
-   "url": "https://www.liputan6.com/saham/read/8287471/boy-thohir-terafiliasi-emiten-mglv-di-sektor-data-center-dan-ai-saham-melambung",
-   "img": "https://cdn0-production-images-kly.akamaized.net/PUXjR6dr9BFQrNgJ_RjZ3wH-OJo=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9343617/original/089872200_1788863226-Pengusaha_Garibaldi_Thohir-8_September_2026a.jpeg",
-   "t_ko": "Boy Thohir 데이터센터·AI 섹터 상장사 MGLV 계열 편입 — 주가 급등",
-   "t_id": "Boy Thohir Terafiliasi Emiten MGLV di Sektor Data Center dan AI, Saham Melambung"
-  },
-  {
    "ts": "2026-08-24T08:33:00+07:00",
    "date": "2026-08-24",
    "time": "08/24",
@@ -16799,6 +16812,127 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T21:25:54+07:00",
+   "date": "2026-09-10",
+   "time": "21:25",
+   "src": "CNBC",
+   "t": "Where investors are finding income outside traditional bonds as rates rise",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/income-alternatives-bond-yields-rates.html",
+   "g": 1,
+   "t_ko": "금리 상승기 전통 채권 외 대체 투자처로 몰리는 자금",
+   "t_id": "Tempat Investor Cari Cuan di Luar Obligasi Tradisional Saat Suku Bunga Naik"
+  },
+  {
+   "ts": "2026-09-10T21:24:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:24",
+   "src": "WSJ",
+   "t": "U.S. Stocks Slide as Bond Yields Jump and Oil Climbs",
+   "tags": [],
+   "url": "https://www.wsj.com/finance/investing/stock-futures-rise-treasury-yields-hold-near-highs-as-oil-tops-101-74944fa2?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-35679620",
+   "t_ko": "미 국채 금리 급등·유가 상승에 뉴욕증시 하락",
+   "t_id": "Saham AS Tergelincir Seiring Lonjakan Imbal Hasil Obligasi dan Kenaikan Harga Minyak"
+  },
+  {
+   "ts": "2026-09-10T21:23:54+07:00",
+   "date": "2026-09-10",
+   "time": "21:23",
+   "src": "Jawa Pos",
+   "t": "Pemanfaatan AI dalam Analisis Klaim Asuransi dan Deteksi Fraud",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609100487/pemanfaatan-ai-dalam-analisis-klaim-asuransi-dan-deteksi-fraud",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/ilustrasi-asuransi-perlindungan-jiwa-pinterest-DXfQ2.webp",
+   "t_id": "Pemanfaatan AI dalam Analisis Klaim Asuransi dan Deteksi Fraud",
+   "t_ko": "보험금 청구 분석 및 사기 적발에 AI 활용"
+  },
+  {
+   "ts": "2026-09-10T21:18:48+07:00",
+   "date": "2026-09-10",
+   "time": "21:18",
+   "src": "Yahoo Finance",
+   "t": "Top Funds Bet Billions As This AI Stock Lights Up A Buy Zone",
+   "tags": [],
+   "url": "https://www.investors.com/research/ibd-stock-analysis/lumentum-stock-lights-up-buy-zone-lite/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/566d82673044a9c50e9303d75e7e2e9e.jpg",
+   "t_ko": "대형 펀드, AI 매수 구간 진입 종목에 수십억 달러 베팅",
+   "t_id": "Dana Top Pasang Taruhan Miliaran Dolar Saat Saham AI Ini Masuk Area Beli"
+  },
+  {
+   "ts": "2026-09-10T21:18:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:18",
+   "src": "Media Indonesia",
+   "t": "Rakyat Dapat Rekening, Negara Dapat Statistik",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932100/rakyat-dapat-rekening-negara-dapat-statistik",
+   "t_ko": "국민은 계좌 확보, 국가는 통계 확보",
+   "t_id": "Rakyat Dapat Rekening, Negara Dapat Statistik"
+  },
+  {
+   "ts": "2026-09-10T21:13:27+07:00",
+   "date": "2026-09-10",
+   "time": "21:13",
+   "src": "BBC",
+   "t": "England's mayors to get power to impose tourist tax",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/c3wjnv3z8nxo?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/076b/live/05f504c0-ad18-11f1-bc1f-3f186ca4140c.jpg",
+   "t_ko": "영국 시장들, 관광세 부과 권한 확보",
+   "t_id": "Wali Kota di Inggris Kantongi Kewenangan Pungut Pajak Turis"
+  },
+  {
+   "ts": "2026-09-10T21:13:24+07:00",
+   "date": "2026-09-10",
+   "time": "21:13",
+   "src": "Yahoo Finance",
+   "t": "Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/opendoor-sinks-7-yield-spike-141324330.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/b4aec597cc928bf33d385b8fdbcf343f.jpg",
+   "t_ko": "금리 급등·수익 시점 지연에 Opendoor 7% 하락 — Offerpad·Zillow 동반 부진",
+   "t_id": "Opendoor Anjlok 7% Akibat Lonjakan Imbal Hasil dan Penundaan Laba, Disusul Offerpad dan Zillow Group"
+  },
+  {
+   "ts": "2026-09-10T21:10:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:10",
+   "src": "Media Indonesia",
+   "t": "Ekonom: Inflasi Bisa Terjaga jika Pemerintah tak Naikkan Harga BBM Subsidi",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932096/ekonom-inflasi-bisa-terjaga-jika-pemerintah-tak-naikkan-harga-bbm-subsidi",
+   "t_ko": "정부 보조금 유가 동결 시 인플레이션 안정 전망",
+   "t_id": "Ekonom: Inflasi Bisa Terjaga jika Pemerintah tak Naikkan Harga BBM Subsidi"
+  },
+  {
+   "ts": "2026-09-10T21:06:37+07:00",
+   "date": "2026-09-10",
+   "time": "21:06",
+   "src": "Bloomberg",
+   "t": "European Bond Selloff Deepens as ECB Flags Inflationary Risks",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/european-bond-selloff-deepens-as-ecb-flags-inflationary-risks",
+   "g": 1,
+   "t_ko": "ECB 인플레이션 경고에 유럽 채권 매도세 심화",
+   "t_id": "Aksi Jual Obligasi Eropa Berlanjut Saat ECB Isyaratkan Risiko Inflasi"
+  },
+  {
+   "ts": "2026-09-10T21:05:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:05",
+   "src": "Media Indonesia",
+   "t": "Energy Insights Forum Soroti Masa Depan Pertambangan Indonesia",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932088/energy-insights-forum-soroti-masa-depan-pertambangan-indonesia",
+   "t_ko": "Energy Insights Forum, 인도네시아 광업 미래 조명",
+   "t_id": "Energy Insights Forum Soroti Masa Depan Pertambangan Indonesia"
+  },
+  {
    "ts": "2026-09-10T21:04:28+07:00",
    "date": "2026-09-10",
    "time": "21:04",
@@ -16835,6 +16969,18 @@
    "t_id": "3 Saham Pilihan yang Tahan Koreksi Pasar Terbaru Beserta 3 Saham Terburuknya"
   },
   {
+   "ts": "2026-09-10T21:00:55+07:00",
+   "date": "2026-09-10",
+   "time": "21:00",
+   "src": "Detik",
+   "t": "Pemerintah Dorong Efisiensi dan Transformasi Industri Nasional",
+   "tags": [],
+   "url": "https://finance.detik.com/foto-bisnis/d-8657602/pemerintah-dorong-efisiensi-dan-transformasi-industri-nasional",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/10/pemerintah-dorong-efisiensi-dan-transformasi-industri-nasional-1789047278799.jpeg?w=360&q=90",
+   "t_id": "Pemerintah Dorong Efisiensi dan Transformasi Industri Nasional",
+   "t_ko": "정부, 국가 산업 효율성 및 전환 추진"
+  },
+  {
    "ts": "2026-09-10T21:00:27+07:00",
    "date": "2026-09-10",
    "time": "21:00",
@@ -16846,6 +16992,19 @@
    "img": "https://dam.mediacorp.sg/image/upload/s--i3F5whj7--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-10T021157Z_1_LYNXMPEM8904G_RTROPTP_3_GLOBAL-FOREX.JPG?itok=xpbDgtHC",
    "t_ko": "ECB 금리 인상에 미국 달러 강세·유로 약세",
    "t_id": "Dolar Menguat, Euro Melemah Usai Kenaikan Suku Bunga ECB Sesuai Ekspektasi"
+  },
+  {
+   "ts": "2026-09-10T21:00:21+07:00",
+   "date": "2026-09-10",
+   "time": "21:00",
+   "src": "Yahoo Finance",
+   "t": "The Surprising Pockmarks On Cooper's Earnings That Caused Its Stock To Dive",
+   "tags": [],
+   "url": "https://www.investors.com/news/technology/cooper-companies-stock-fiscal-q3-2026-earnings/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/46306618e5aba43fac0641bf2b99498f.jpg",
+   "t_ko": "Cooper, 실적 속 지표 부진에 주가 급락",
+   "t_id": "Celah Mengejutkan pada Laporan Keuangan Cooper yang Bikin Sahamnya Anjlok"
   },
   {
    "ts": "2026-09-10T21:00:11+07:00",
@@ -16873,19 +17032,6 @@
    "t_id": "Kesalahan Sepele Ini Bisa Gerus Harta Warisan, Begini Cara Melindunginya"
   },
   {
-   "ts": "2026-09-10T20:59:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:59",
-   "src": "WSJ",
-   "t": "U.S. Stocks Fall as Bond Yields Jump and Oil Climbs",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/investing/stock-futures-rise-treasury-yields-hold-near-highs-as-oil-tops-101-74944fa2?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-35679620",
-   "t_ko": "미국 국채금리 급등 및 유가 상승에 증시 하락",
-   "t_id": "Bursa AS Anjlok Seiring Lonjakan Imbal Hasil Obligasi dan Harga Minyak"
-  },
-  {
    "ts": "2026-09-10T20:58:00+07:00",
    "date": "2026-09-10",
    "time": "20:58",
@@ -16899,6 +17045,19 @@
    "t_id": "Pasar Lirik Peluang Nyaris 50-50 ECB Kembali Kerek Suku Bunga pada Oktober"
   },
   {
+   "ts": "2026-09-10T20:56:52+07:00",
+   "date": "2026-09-10",
+   "time": "20:56",
+   "src": "Yahoo Finance",
+   "t": "Treasury yields rise as investors raise bets on Fed rate hike: AlphaCheck",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/article/treasury-yields-rise-as-investors-raise-bets-on-fed-rate-hike-alphacheck-135652896.html",
+   "g": 1,
+   "img": "https://s.yimg.com/uu/api/res/1.2/8yoAwNXyIvtCt0xDl.fc0A--~B/aD00MDAwO3c9NjAwMDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-09/6b7d7035-118e-4898-b3eb-511317ceca46",
+   "t_ko": "연준 금리 인상 기대 강화에 미 국채 금리 상승",
+   "t_id": "Imbal Hasil US Treasury Naik Seiring Investor Kerek Taruhan Kenaikan Suku Bunga The Fed: AlphaCheck"
+  },
+  {
    "ts": "2026-09-10T20:54:00+07:00",
    "date": "2026-09-10",
    "time": "20:54",
@@ -16906,8 +17065,21 @@
    "t": "Keruk Nikel 13 Juta Ton Hasilkan PNBP Rp21 Triliun",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932084/keruk-nikel-13-juta-ton-hasilkan-pnbp-rp21-triliun",
-   "t_id": "Keruk Nikel 13 Juta Ton Hasilkan PNBP Rp21 Triliun",
-   "t_ko": "니켈 1,300만 톤 채굴로 PNBP Rp21조 창출"
+   "t_ko": "니켈 1,300만 톤 채굴로 PNBP Rp21조 창출",
+   "t_id": "Keruk Nikel 13 Juta Ton Hasilkan PNBP Rp21 Triliun"
+  },
+  {
+   "ts": "2026-09-10T20:52:00+07:00",
+   "date": "2026-09-10",
+   "time": "20:52",
+   "src": "Yahoo Finance",
+   "t": "Nasdaq Invests $100 Million In Kraken Parent Company",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/crypto/articles/nasdaq-invests-100-million-kraken-135200836.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/cryptoprowl_304/ac8022faf34227214db9079ea6343c56.jpg",
+   "t_ko": "Nasdaq, Kraken 모회사에 USD 1.0억 투자",
+   "t_id": "Nasdaq Investasi $100 Juta di Perusahaan Induk Kraken"
   },
   {
    "ts": "2026-09-10T20:48:53+07:00",
@@ -16932,107 +17104,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260910134955-970.jpeg",
    "t_ko": "Pertamina Patra Niaga Regional Sulawesi, 마카사르에서 24시간 주유소 25곳 가동",
    "t_id": "Pertamina Patra Niaga Regional Sulawesi Operasikan 25 SPBU 24 Jam di Makassar"
-  },
-  {
-   "ts": "2026-09-10T20:47:40+07:00",
-   "date": "2026-09-10",
-   "time": "20:47",
-   "src": "Yahoo Finance",
-   "t": "10-year treasury at highest level since 2023 as oil prices jump to $105: Chart of the Day",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/article/10-year-treasury-at-highest-level-since-2023-as-oil-prices-jump-to-105-chart-of-the-day-134740387.html",
-   "g": 1,
-   "img": "https://s.yimg.com/uu/api/res/1.2/ffcjxwiEmW0SGvirUYL5AA--~B/aD0zNjQ4O3c9NTQ3MjthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-09/5abacb33-dc0f-4b64-9ee8-ba55094f9aff",
-   "t_ko": "유가 배럴당 105달러 돌파에 10년물 미 국채금리 2023년 이후 최고치",
-   "t_id": "Treasury 10 Tahun ke Level Tertinggi Sejak 2023 Saat Minyak Tembus $105: Grafik Hari Ini"
-  },
-  {
-   "ts": "2026-09-10T20:47:07+07:00",
-   "date": "2026-09-10",
-   "time": "20:47",
-   "src": "Yahoo Finance",
-   "t": "How The Elmet Group Co. (ELMT) Is Bolstering the Military Supply Chain",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/elmet-group-co-elmt-bolstering-134707702.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/8e6b6ef160da7da0a3080b4186902599.jpg",
-   "t_ko": "ELMT, 군사 공급망 강화 추진",
-   "t_id": "Strategi The Elmet Group Co. (ELMT) Perkuat Rantai Pasok Militer"
-  },
-  {
-   "ts": "2026-09-10T20:44:53+07:00",
-   "date": "2026-09-10",
-   "time": "20:44",
-   "src": "FT",
-   "t": "Bond sell-off reignites as oil jumps above $105",
-   "tags": [],
-   "url": "https://www.ft.com/content/49e8c693-0064-4ef9-917f-5f2be97458fc?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ff375d8a5-4063-419f-b45a-fbf1f6ac8c35.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "유가 배럴당 105달러 돌파에 채권 매도세 재확산",
-   "t_id": "Aksi Jual Obligasi Kembali Membara saat Minyak Melonjak di Atas $105"
-  },
-  {
-   "ts": "2026-09-10T20:44:20+07:00",
-   "date": "2026-09-10",
-   "time": "20:44",
-   "src": "CNBC",
-   "t": "Macy's posts strong results, raises guidance as turnaround begins to take hold",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/macys-m-q2-2026-earnings.html",
-   "g": 1,
-   "t_ko": "Macy's, 실적 호조 및 턴어라운드 기대감에 가이던스 상향",
-   "t_id": "Macy's Cetak Kinerja Kuat, Naikkan Proyeksi Seiring Pemulihan Berjalan"
-  },
-  {
-   "ts": "2026-09-10T20:42:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:42",
-   "src": "MarketWatch",
-   "t": "Apple is walking a ‘tightrope’ when it comes to the prices of its new iPhones",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/apples-stock-rises-after-iphone-reveal-the-company-is-walking-a-tightrope-on-pricing-say-analysts-813898ac?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-38300245",
-   "t_ko": "Apple, 신형 아이폰 가격 책정을 두고 고심",
-   "t_id": "Apple Berada di Ujung Tanduk Terkait Harga iPhone Baru"
-  },
-  {
-   "ts": "2026-09-10T20:41:50+07:00",
-   "date": "2026-09-10",
-   "time": "20:41",
-   "src": "Yahoo Finance",
-   "t": "Stock Market Today: Nasdaq Sells Off After Inflation Surprise; Oil, Yields Surge (Live Coverage)",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-nvidia-chipmaker-tsmc/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/efdd2096566747a1c5895ff0ab582f7b.jpg",
-   "t_ko": "증시 마감 — 인플레이션 서프라이즈·유가·국채금리 상승에 나스닥 급락",
-   "t_id": "Bursa Saham Hari Ini: Nasdaq Terguncang Usai Kejutan Inflasi; Minyak & Yield Melesat (Liputan Langsung)"
-  },
-  {
-   "ts": "2026-09-10T20:41:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:41",
-   "src": "Media Indonesia",
-   "t": "Trump Jumawa AS Kuasai Produksi Minyak Global",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/932070/trump-jumawa-as-kuasai-produksi-minyak-global",
-   "g": 1,
-   "t_ko": "Trump, 미국의 글로벌 원유 생산 지배력 과시",
-   "t_id": "Trump Jumawa AS Kuasai Produksi Minyak Global"
-  },
-  {
-   "ts": "2026-09-10T20:41:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:41",
-   "src": "Media Indonesia",
-   "t": "Perbedaan Garis Kemiskinan Versi BPS dan Bank Dunia, Ini Penjelasan Lengkapnya",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932068/perbedaan-garis-kemiskinan-versi-bps-dan-bank-dunia-ini-penjelasan-lengkapnya",
-   "g": 1,
-   "t_ko": "BPS와 세계은행의 빈곤선 기준 차이점 분석",
-   "t_id": "Perbedaan Garis Kemiskinan Versi BPS dan Bank Dunia, Ini Penjelasan Lengkapnya"
   },
   {
    "ts": "2026-09-10T20:40:00+07:00",
@@ -17081,17 +17152,6 @@
    "t_id": "Trading Derivatif Kripto Meningkat, Volume Pengguna Baru Tumbuh Lebih 200 Persen"
   },
   {
-   "ts": "2026-09-10T20:10:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:10",
-   "src": "Media Indonesia",
-   "t": "PNBP Nikel Capai Rp21 Triliun per Agustus 2026, Naik Dua Kali Lipat",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932050/pnbp-nikel-capai-rp21-triliun-per-agustus-2026-naik-dua-kali-lipat",
-   "t_ko": "2026년 8월 기준 니켈 PNBP Rp21조 기록하며 두 배 증가",
-   "t_id": "PNBP Nikel Capai Rp21 Triliun per Agustus 2026, Naik Dua Kali Lipat"
-  },
-  {
    "ts": "2026-09-10T20:09:00+07:00",
    "date": "2026-09-10",
    "time": "20:09",
@@ -17102,17 +17162,6 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/10/MNC_Sekuritas.jpg",
    "t_ko": "MNC Sekuritas, GI BEI JGU 통해 신입생 투자 교육 진행",
    "t_id": "MNC Sekuritas Ajak Mahasiswa Baru Cerdas Berinvestasi lewat GI BEI JGU"
-  },
-  {
-   "ts": "2026-09-10T20:05:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:05",
-   "src": "Media Indonesia",
-   "t": "Target Rasio Elektrifikasi 100 Persen: Pemerintah Kejar Desa tanpa Listrik hingga 2029",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932046/target-rasio-elektrifikasi-100-persen-pemerintah-kejar-desa-tanpa-listrik-hingga-2029",
-   "t_ko": "전기화율 100% 목표 — 정부, 2029년까지 무전력 마을 해소",
-   "t_id": "Target Rasio Elektrifikasi 100 Persen: Pemerintah Kejar Desa tanpa Listrik hingga 2029"
   },
   {
    "ts": "2026-09-10T20:03:24+07:00",
@@ -17209,42 +17258,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2015/09/14/f5262ff3-74f7-484d-931e-499471499cae_169.jpg?w=360&q=90",
    "t_ko": "폐식용유 바이오항공유 정유공장 건설 추진 — Rp19조 소요",
    "t_id": "Kilang Olah Minyak Jelantah Jadi Bioavtur Mau Dibangun, Butuh Rp 19 Triliun"
-  },
-  {
-   "ts": "2026-09-10T18:55:10+07:00",
-   "date": "2026-09-10",
-   "time": "18:55",
-   "src": "Jawa Pos",
-   "t": "Menkeu Purbaya Sebut Anggaran Rekening Massal BRI-BSI Tak sampai Rp 11 Triliun",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609100422/menkeu-purbaya-sebut-anggaran-rekening-massal-bri-bsi-tak-sampai-rp-11-triliun",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/07/15/menteri-keuangan-purbaya-yudhi-sadewa-memberikan-salam-pada-rapat-paripurna-ke-25-dpr-masa-persidangan-v-tahun-sidang-2025-2026-di-kompleks-parlemen-senayan-jakarta-selasa-1472026-salman-toyibijawa-pos-Lr06t.webp",
-   "t_ko": "Purbaya 재무장관, BRI·BSI 대량 계좌 예산 Rp11조 미만",
-   "t_id": "Menkeu Purbaya Sebut Anggaran Rekening Massal BRI-BSI Tak sampai Rp 11 Triliun"
-  },
-  {
-   "ts": "2026-09-10T18:44:00+07:00",
-   "date": "2026-09-10",
-   "time": "18:44",
-   "src": "Katadata",
-   "t": "Purbaya Bantah Airlangga: Anggaran untuk Buka 200 Juta Rekening Belum Final",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa29807bbb9a/purbaya-bantah-airlangga-anggaran-untuk-buka-200-juta-rekening-belum-final",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/07/2026_09_07-13_42_00_9670f4fa-aa93-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "Purbaya, 계좌 2억 개 개설 예산 확정 부인 — Airlangga 발언 반박",
-   "t_id": "Purbaya Bantah Airlangga: Anggaran untuk Buka 200 Juta Rekening Belum Final"
-  },
-  {
-   "ts": "2026-09-10T18:40:00+07:00",
-   "date": "2026-09-10",
-   "time": "18:40",
-   "src": "Bloomberg Technoz",
-   "t": "Total Produksi Batu Bara hingga Juli 2026 Tembus 423,71 Juta Ton",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121186/total-produksi-batu-bara-hingga-juli-2026-tembus-423-71-juta-ton",
-   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260722102846.jpg",
-   "t_ko": "2026년 7월까지 누적 석탄 생산량 4억 2,371만 톤 돌파",
-   "t_id": "Total Produksi Batu Bara hingga Juli 2026 Tembus 423,71 Juta Ton"
   }
  ],
  "kisi_news": [
@@ -17429,9 +17442,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.920%",
-   "d": 1.72,
-   "ytd": 18.18,
+   "v": "4.918%",
+   "d": 1.67,
+   "ytd": 18.14,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17452,9 +17465,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.01",
-   "d": 0.28,
-   "ytd": 0.74,
+   "v": "98.97",
+   "d": 0.23,
+   "ytd": 0.7,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17464,9 +17477,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.33",
-   "d": 3.36,
-   "ytd": 72.99,
+   "v": "99.63",
+   "d": 3.67,
+   "ytd": 73.51,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17476,9 +17489,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,409.9",
-   "d": -0.94,
-   "ytd": 1.95,
+   "v": "4,401.3",
+   "d": -1.14,
+   "ytd": 1.75,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17500,9 +17513,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,648",
-   "d": -1.31,
-   "ytd": -0.2,
+   "v": "16,657",
+   "d": -1.26,
+   "ytd": -0.15,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25369,7 +25382,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 224,
+  "pc_age_min": 244,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
