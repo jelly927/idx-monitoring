@@ -2004,7 +2004,7 @@ def sun10y_card(iv):
         if prev is None or iv.get("chg") is None: prev = daily[-2][1] if daily[-1][0] == now_wib().date().isoformat() else daily[-1][1]
     if prev is None: prev = px
     return {"code": "SUN10Y", "label": "SUN 10Y", "name": "국채 10년물", "px": round(px, 3), "prev": round(prev, 3), "pct": round((px - prev) * 100, 1),   # pct = bp 변화
-            "spark": spark if len(spark) > 1 else [], "span": span, "inv": True, "asof": ("investing.com " + re.sub(r"^(\d{2}:\d{2}):\d{2}$", r"\1", str(iv.get("asof") or ""))).strip(), "unit": "bp"}
+            "spark": spark if len(spark) > 1 else [], "span": span, "inv": True, "asof": "investing.com " + (str(iv.get("ts") or "")[11:16] or now_wib().strftime("%H:%M")), "unit": "bp"}   # 조회 시각(WIB). 페이지의 시각은 미국 시간대라 하루 전 날짜로 보인다
 
 # ---------------- KISI 뉴스 (kisi.co.id/blog/edukasi — 공개 API, 본문 안에 base64 사진) ----------------
 KISI_API = "https://api-compro.kisi.co.id/api/v1/kisiNews/list"
@@ -2407,15 +2407,15 @@ def catalyst_block(data, top=10):
     divs = data.get("dividends") or {}
     cand = {}    # ticker → dict
 
-    def bump(t, w, ko, idn, src, hl=None, url=None, outlet=None):
+    def bump(t, w, ko, idn, src, hl=None, url=None, outlet=None, hl_id=None):
         if t not in stocks: return
-        c = cand.setdefault(t, {"w": 0, "ko": "", "id": "", "outlets": set(), "ann": False, "hl": "", "url": ""})
+        c = cand.setdefault(t, {"w": 0, "ko": "", "id": "", "outlets": set(), "ann": False, "hl": "", "hl_id": "", "url": ""})
         if w > c["w"]:
             c["w"], c["ko"], c["id"] = w, ko, idn
-            if hl: c["hl"], c["url"] = hl, url or ""
+            if hl: c["hl"], c["hl_id"], c["url"] = hl, hl_id or hl, url or ""
         if outlet: c["outlets"].add(outlet)
         if src == "ann": c["ann"] = True
-        if not c["hl"] and hl: c["hl"], c["url"] = hl, url or ""
+        if not c["hl"] and hl: c["hl"], c["hl_id"], c["url"] = hl, hl_id or hl, url or ""
 
     # 1) 종목 뉴스
     #    한 기사에 티커가 여러 개 달릴 때(본문 언급까지 태깅됨) 그 재료를 전 종목에 나눠주면
@@ -2430,20 +2430,21 @@ def catalyst_block(data, top=10):
                     nm = (stocks.get(t, {}).get("n") or "").split()
                     key = " ".join(nm[:2]).lower()
                     if t not in head and not (key and key in head.lower()): continue
-                bump(t, w, ko, idn, "news", n.get("t_ko") or n.get("t"), n.get("url"), n.get("src"))
+                bump(t, w, ko, idn, "news", n.get("t_ko") or n.get("t"), n.get("url"), n.get("src"), hl_id=n.get("t_id") or n.get("t"))
             break
     # 2) 공시
     for a in (data.get("announcements") or []):
         txt = f"{a.get('title') or ''} {a.get('title_ko') or ''}"
         for w, ko, idn, rx in CAT_EVENTS:
             if rx.search(txt):
-                bump(a.get("t"), w, ko, idn, "ann", a.get("ai_ko") or a.get("title_ko") or a.get("title"), a.get("url"))
+                bump(a.get("t"), w, ko, idn, "ann", a.get("ai_ko") or a.get("title_ko") or a.get("title"), a.get("url"), hl_id=a.get("ai_id") or a.get("title_id") or a.get("title"))
                 break
     # 3) 배당락 당일 — 뉴스가 없어도 주가에 기계적으로 영향
     for t, dv in divs.items():
         if dv.get("ex") == today:
             bump(t, 75, "배당락", "Ex-dividend", "div",
-                 f"배당락일 · DPS Rp{dv.get('dps')} ({dv.get('type') or ''}, 수익률 {dv.get('yld') or '—'})", "")
+                 f"배당락일 · DPS Rp{dv.get('dps')} ({dv.get('type') or ''}, 수익률 {dv.get('yld') or '—'})", "",
+                 hl_id=f"Ex-dividend · DPS Rp{dv.get('dps')} ({dv.get('type') or ''}, yield {dv.get('yld') or '—'})")
 
     out = []
     for t, c in cand.items():
@@ -2456,7 +2457,7 @@ def catalyst_block(data, top=10):
         score = CAT_W["news"] * news + CAT_W["size"] * size + CAT_W["surge"] * surge
         out.append({"t": t, "n": o.get("n"), "px": o.get("px"), "pct": o.get("pct"), "val": o.get("val"),
                     "mcap": o.get("mcap"), "ratio": ratio, "ev_ko": c["ko"], "ev_id": c["id"],
-                    "hl": (c["hl"] or "")[:160], "url": c["url"],
+                    "hl": (c["hl"] or "")[:160], "hl_id": (c["hl_id"] or c["hl"] or "")[:160], "url": c["url"],
                     "score": round(score, 1), "s_news": round(news), "s_size": round(size), "s_surge": round(surge),
                     "srcs": len(c["outlets"])})
     out.sort(key=lambda x: -x["score"])
