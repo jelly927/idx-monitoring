@@ -1,15 +1,80 @@
 {
-  "_comment": "whitelist 31개. rss 가 비면 home 에서 <link rel=alternate type=rss> 자동 탐색 후 data/cache/rss_map.json 에 저장. 그래도 없으면 home 페이지 헤드라인 스크랩. ytd_base 는 2025-12-31 기준.",
+  "_comment": "whitelist: 글로벌 10곳(\"global\": true — RSS 를 8초 제한으로 받고, 실패한 URL 은 2시간 건너뜀. rss_alt 는 예비 피드. Reuters 는 공개 RSS 가 없어 구글뉴스 RSS 경유) + 국내 29곳. 국내 매체는 rss 가 비면 home 에서 <link rel=alternate type=rss> 자동 탐색 후 data/cache/rss_map.json 에 저장, 그래도 없으면 home 헤드라인 스크랩. ytd_base 는 2025-12-31 기준.",
   "whitelist": [
     {
       "name": "Reuters",
-      "home": "https://www.reuters.com/world/asia-pacific/",
-      "rss": "https://www.reuters.com/arc/outboundfeeds/rss/category/world/asia-pacific/?outputType=xml"
+      "global": true,
+      "home": "https://www.reuters.com/markets/",
+      "rss": "https://news.google.com/rss/search?q=site:reuters.com+(markets+OR+economy+OR+stocks+OR+oil+OR+fed)+when:1d&hl=en-US&gl=US&ceid=US:en",
+      "rss_alt": [
+        "https://news.google.com/rss/search?q=site:reuters.com+(asia+OR+china+OR+indonesia)+when:1d&hl=en-US&gl=US&ceid=US:en"
+      ]
     },
     {
       "name": "Bloomberg",
+      "global": true,
       "home": "https://www.bloomberg.com/asia",
-      "rss": "https://feeds.bloomberg.com/markets/news.rss"
+      "rss": "https://feeds.bloomberg.com/markets/news.rss",
+      "rss_alt": [
+        "https://feeds.bloomberg.com/economics/news.rss"
+      ]
+    },
+    {
+      "name": "CNBC",
+      "global": true,
+      "home": "https://www.cnbc.com/world/",
+      "rss": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "rss_alt": [
+        "https://www.cnbc.com/id/20910258/device/rss/rss.html"
+      ]
+    },
+    {
+      "name": "MarketWatch",
+      "global": true,
+      "home": "https://www.marketwatch.com/",
+      "rss": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+      "rss_alt": [
+        "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines"
+      ]
+    },
+    {
+      "name": "WSJ",
+      "global": true,
+      "home": "https://www.wsj.com/news/markets",
+      "rss": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain",
+      "rss_alt": [
+        "https://feeds.content.dowjones.io/public/rss/RSSWorldNews"
+      ]
+    },
+    {
+      "name": "Nikkei Asia",
+      "global": true,
+      "home": "https://asia.nikkei.com/",
+      "rss": "https://asia.nikkei.com/rss/feed/nar"
+    },
+    {
+      "name": "Yahoo Finance",
+      "global": true,
+      "home": "https://finance.yahoo.com/",
+      "rss": "https://finance.yahoo.com/news/rssindex"
+    },
+    {
+      "name": "FT",
+      "global": true,
+      "home": "https://www.ft.com/markets",
+      "rss": "https://www.ft.com/rss/home"
+    },
+    {
+      "name": "BBC",
+      "global": true,
+      "home": "https://www.bbc.com/business",
+      "rss": "https://feeds.bbci.co.uk/news/business/rss.xml"
+    },
+    {
+      "name": "CNA",
+      "global": true,
+      "home": "https://www.channelnewsasia.com/business",
+      "rss": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6936"
     },
     {
       "name": "Bloomberg Technoz",
@@ -247,6 +312,9 @@
     "DMAS"
   ],
   "news_max_items": 80,
+  "market_news_max": 36,
+  "market_news_global_min": 10,
+  "_market_news_comment": "시장 뉴스는 시각순 36건. 글로벌 기사(해외 매체 또는 Fed·유가·중국·지정학 단서)가 10건 미만이면 가장 오래된 국내 기사를 빼고 글로벌 기사를 채움",
   "translate": {
     "enabled": true,
     "max_per_run": 60,
