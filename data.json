@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 13:10",
+ "updated": "2026-09-10 13:18",
  "delay_min": 0,
- "fx_basis": "13.11 IDR/KRW · USD/IDR 17,525 · USD/KRW 1,337 · 12:59 Yahoo",
- "idr_per_krw": 13.1066,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,525 · USD/KRW 1,338 · 12:59 Yahoo",
+ "idr_per_krw": 13.0971,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -321,7 +321,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 13:09",
+   "asof": "investing.com 13:16",
    "unit": "bp"
   }
  ],
@@ -335,7 +335,7 @@
   "value_idr": 16134522240878,
   "volume": 32530207402,
   "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-10 13:06",
-  "rank_asof": "13:09",
+  "rank_asof": "13:16",
   "rank_date": "2026-09-10",
   "adv": 286,
   "dec": 355,
@@ -15346,10 +15346,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7056.18,
+   "px": 7037.58,
    "prev": 7056.35,
-   "pct": -0.0,
-   "asof": "12:45",
+   "pct": -0.27,
+   "asof": "12:55",
    "live": true,
    "spark": [
     7070.5,
@@ -15421,17 +15421,19 @@
     7062.21,
     7054.6,
     7060.43,
-    7056.18
+    7054.74,
+    7038.21,
+    7037.58
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64964.81,
+   "px": 65034.16,
    "prev": 65148.08,
-   "pct": -0.28,
-   "asof": "12:50",
+   "pct": -0.17,
+   "asof": "13:00",
    "live": true,
    "spark": [
     64771.93,
@@ -15494,17 +15496,19 @@
     65010.04,
     65036.71,
     65055.14,
-    64964.81
+    64955.7,
+    64937.58,
+    65034.16
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24934.43,
+   "px": 24921.84,
    "prev": 25274.96,
-   "pct": -1.35,
-   "asof": "12:50",
+   "pct": -1.4,
+   "asof": "13:00",
    "live": true,
    "spark": [
     24894.55,
@@ -15549,7 +15553,9 @@
     24946.71,
     24932.13,
     24931.44,
-    24934.43
+    24935.82,
+    24916.27,
+    24921.84
    ]
   }
  ],
@@ -15620,6 +15626,21 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-10T13:10:00+07:00",
+   "date": "2026-09-10",
+   "time": "13:10",
+   "src": "Bloomberg Technoz",
+   "t": "Keuntungan Astra (ASII) Usai Pertebal Saham AUTO",
+   "tags": [
+    "ASII",
+    "AUTO"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121146/keuntungan-astra-asii-usai-pertebal-saham-auto",
+   "img": "https://images.bloombergtechnoz.com/data/2026/01/image-20260129130014.jpeg",
+   "t_id": "Keuntungan Astra (ASII) Usai Pertebal Saham AUTO",
+   "t_ko": "Astra International(ASII), ASTRA OTOPARTS(AUTO) 지분 확대 성과"
+  },
   {
    "ts": "2026-09-10T13:05:00+07:00",
    "date": "2026-09-10",
@@ -15719,6 +15740,20 @@
     "금광",
     "석탄"
    ]
+  },
+  {
+   "ts": "2026-09-10T12:10:00+07:00",
+   "date": "2026-09-10",
+   "time": "12:10",
+   "src": "IDNFinancials",
+   "t": "HRTA explores major funding through 9.09% private placement",
+   "tags": [
+    "HRTA"
+   ],
+   "url": "https://www.idnfinancials.com/news/68642/hrta-explores-major-funding-through-9-09-private-placement",
+   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/HRTA-EMAS.jpg",
+   "t_ko": "HRTA, 9.09% 제3자배정 유상증자로 대규모 자금 조달 추진",
+   "t_id": "HRTA Kaji Pendanaan Jumbo Lewat Private Placement 9,09 Persen"
   },
   {
    "ts": "2026-09-10T12:05:47+07:00",
@@ -17016,6 +17051,74 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T13:14:23+07:00",
+   "date": "2026-09-10",
+   "time": "13:14",
+   "src": "Detik",
+   "t": "Catat! Ini Jadwal Uji Coba LRT Jakarta Velodrome-Manggarai",
+   "tags": [],
+   "url": "https://finance.detik.com/infrastruktur/d-8656819/catat-ini-jadwal-uji-coba-lrt-jakarta-velodrome-manggarai",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/10/lrt-jakarta-1789017719065_169.jpeg?w=360&q=90",
+   "t_id": "Catat! Ini Jadwal Uji Coba LRT Jakarta Velodrome-Manggarai",
+   "t_ko": "자카르타 LRT 벨로드롬-망가라이 구간 시범운행 일정 발표"
+  },
+  {
+   "ts": "2026-09-10T13:10:00+07:00",
+   "date": "2026-09-10",
+   "time": "13:10",
+   "src": "Media Indonesia",
+   "t": "Dokter Ingatkan Mata Terkena Abu Vulkanik Harus Dibilas Air Bersih",
+   "tags": [],
+   "url": "https://mediaindonesia.com/kesehatan/931839/dokter-ingatkan-mata-terkena-abu-vulkanik-harus-dibilas-air-bersih",
+   "t_ko": "의사협회, 화산재 눈에 들어갔을 때 깨끗한 물로 세척 당부",
+   "t_id": "Dokter Ingatkan Mata Terkena Abu Vulkanik Wajib Dibilas Air Bersih"
+  },
+  {
+   "ts": "2026-09-10T13:09:44+07:00",
+   "date": "2026-09-10",
+   "time": "13:09",
+   "src": "Detik",
+   "t": "Pemerintah Mau Atur Penggunaan Uang Bansos, Khawatir Jadi Modal Judol",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656817/pemerintah-mau-atur-penggunaan-uang-bansos-khawatir-jadi-modal-judol",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/10/ketua-komite-percepatan-transformasi-digital-pemerintah-luhut-binsar-pandjaitan-1789019836363_169.jpeg?w=360&q=90",
+   "t_id": "Pemerintah Mau Atur Penggunaan Uang Bansos, Khawatir Jadi Modal Judol",
+   "t_ko": "정부, 불법 도박 악용 우려에 지원금 사용처 규제 검토"
+  },
+  {
+   "ts": "2026-09-10T13:06:18+07:00",
+   "date": "2026-09-10",
+   "time": "13:06",
+   "src": "Bloomberg",
+   "t": "Trump Payout Pledge Adds to Bond Market Jitters as Auction Looms",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/trump-payout-pledge-adds-to-bond-market-jitters-as-auction-looms",
+   "t_ko": "미 국채 입찰 앞두고 Trump의 지출 공약에 채권시장 불안 확산",
+   "t_id": "Janji Payout Trump Picu Gejolak Pasar Obligasi Jelang Lelang"
+  },
+  {
+   "ts": "2026-09-10T13:05:00+07:00",
+   "date": "2026-09-10",
+   "time": "13:05",
+   "src": "Media Indonesia",
+   "t": "Trump Tuding Iran Ingin Pengaruhi Pemilu AS lewat Perang Berkepanjangan",
+   "tags": [],
+   "url": "https://mediaindonesia.com/internasional/931840/trump-tuding-iran-ingin-pengaruhi-pemilu-as-lewat-perang-berkepanjangan",
+   "t_ko": "Trump, 이란이 장기전으로 미 대선 개입 시도한다고 주장",
+   "t_id": "Trump Tuding Iran Ingin Pengaruhi Pemilu AS Lewat Perang Panjang"
+  },
+  {
+   "ts": "2026-09-10T13:05:00+07:00",
+   "date": "2026-09-10",
+   "time": "13:05",
+   "src": "Media Indonesia",
+   "t": "Wapres Gibran Tinjau Karhutla Kalteng, 9.228 Hektare Lahan Terbakar",
+   "tags": [],
+   "url": "https://mediaindonesia.com/nusantara/931838/wapres-gibran-tinjau-karhutla-kalteng-9228-hektare-lahan-terbakar",
+   "t_ko": "Gibran 부통령, 중부칼리만탄 산불 현장 시찰 — 9,228헥타르 소실",
+   "t_id": "Wapres Gibran Tinjau Karhutla Kalteng, 9.228 Hektare Lahan Terbakar"
+  },
+  {
    "ts": "2026-09-10T13:02:00+07:00",
    "date": "2026-09-10",
    "time": "13:02",
@@ -17035,6 +17138,18 @@
    ]
   },
   {
+   "ts": "2026-09-10T12:59:31+07:00",
+   "date": "2026-09-10",
+   "time": "12:59",
+   "src": "Detik",
+   "t": "Luhut Sebut Digitalisasi Bansos Meluncur Bulan Depan!",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656800/luhut-sebut-digitalisasi-bansos-meluncur-bulan-depan",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/10/ketua-komite-percepatan-transformasi-digital-pemerintah-luhut-binsar-pandjaitan-1789019836285_169.jpeg?w=360&q=90",
+   "t_ko": "Luhut, 다음 달 지원금 디지털 지급 시스템 도입 발표",
+   "t_id": "Luhut Sebut Digitalisasi Bansos Meluncur Bulan Depan"
+  },
+  {
    "ts": "2026-09-10T12:58:05+07:00",
    "date": "2026-09-10",
    "time": "12:58",
@@ -17043,8 +17158,15 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121148/ubs-sekuritas-hingga-jp-morgan-borong-saham-antm",
    "img": "https://images.bloombergtechnoz.com/data/2023/06/image-20230609175200.jpg",
+   "t_ko": "UBS Sekuritas·JP Morgan, ANTM 주식 대거 매수",
    "t_id": "UBS Sekuritas hingga JP Morgan Borong Saham ANTM",
-   "t_ko": "UBS·JP모간, ANTM(ANTM) 주식 순매수"
+   "ai_ko": "국제 금값이 온스당 USD 4,420을 돌파하며 Aneka Tambang(ANTM) 주가 9일 3.91% 상승한 Rp3,200, 10일 장중 4% 추가 상승한 Rp3,330 기록 / UBS Sekuritas가 하루 순매수 Rp950억 이상으로 순매수 1위, CGS International도 Rp750억 이상 순매수",
+   "ai_id": "Harga emas dunia yang menembus US$4.420/troy ons mengerek saham Aneka Tambang (ANTM) naik 3,91% ke Rp3.200 pada Rabu (9/9) dan berlanjut 4% ke Rp3.330 pada Kamis (10/9). Broker UBS Sekuritas (AK) memimpin top net buy dengan nilai lebih dari Rp95 miliar dalam sehari, disusul CGS International (YU) lebih dari Rp75 miliar.",
+   "ai_tags": [
+    "금값",
+    "수급",
+    "광업"
+   ]
   },
   {
    "ts": "2026-09-10T12:54:00+07:00",
@@ -17055,8 +17177,15 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/nasional/6aa246024abd0/pemerintah-luncurkan-sistem-perlinsos-digital-bulan-depan-janji-tepat-sasaran",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/09/2026_06_09-20_36_00_e59e2748-6432-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "정부, 다음 달 디지털 사회보장 시스템 출범해 정확성 제고 약속",
-   "t_id": "Pemerintah Luncurkan Sistem Perlinsos Digital Bulan Depan, Janji Tepat Sasaran"
+   "t_ko": "정부, 다음달 디지털 사회보장 시스템 도입 — 정확한 대상 선정 약속",
+   "t_id": "Pemerintah Luncurkan Sistem Perlinsos Digital Bulan Depan, Janji Tepat Sasaran",
+   "ai_ko": "정부 디지털전환가속위원회, 10월 은행 계좌 이체 방식 디지털 사회보장 시스템 출범 예정이며 실제 지급은 내년 1분기 시범 시행 / Luhut 위원장은 전달 정확도 90% 목표 제시, 현재 215개 시군에서 안면인식·DTSEN 연계 시범 운영 중",
+   "ai_id": "Komite Percepatan Transformasi Digital Pemerintah akan meluncurkan sistem perlinsos digital berbasis transfer bank pada Oktober 2026, meski penyaluran baru diuji coba pada kuartal I tahun depan karena kesiapan sistem 80%. Luhut Binsar Pandjaitan menargetkan ketepatan sasaran hingga 90%, dengan uji coba di 215 kabupaten/kota memakai pengenalan wajah yang terhubung DTSEN dan data kependudukan.",
+   "ai_tags": [
+    "정책",
+    "사회보장",
+    "디지털"
+   ]
   },
   {
    "ts": "2026-09-10T12:53:00+07:00",
@@ -17077,8 +17206,19 @@
    "t": "FTSE 100 Live: Markets Settle After Oil-Driven Bond and Stock Drops",
    "tags": [],
    "url": "https://www.bloomberg.com/news/live-blog/2026-09-10/ftse-100-live-pound-bonds-oil-prices-gilts-inflation-ecb-rate-what-s-moving-uk-markets-right-now-markets-today",
-   "t_ko": "FTSE 100 마감 — 유가발 채권·주식 하락세 진정",
-   "t_id": "FTSE 100 Live: Pasar Stabil Usai Penurunan Obligasi dan Saham Akibat Minyak"
+   "t_ko": "유가발 채권·주식 급락 후 FTSE 100 안정",
+   "t_id": "FTSE 100 Live: Pasar Mereda Usai Obligasi dan Saham Anjlok Dipicu Harga Minyak"
+  },
+  {
+   "ts": "2026-09-10T12:34:07+07:00",
+   "date": "2026-09-10",
+   "time": "12:34",
+   "src": "Bloomberg",
+   "t": "Trump Announces $5,000 to US Adults if GOP Wins Midterms",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-10/the-china-show-9-10-2026-video",
+   "t_ko": "Trump, 공화당 중간선거 승리 시 미국 성인에게 $5,000 지급 공약",
+   "t_id": "Trump Janji Beri USD 5.000 ke Warga AS Jika Republik Menang Pemilu Sela"
   },
   {
    "ts": "2026-09-10T12:33:03+07:00",
@@ -17124,7 +17264,7 @@
    "t": "Iran Ready to Escalate War, Trump at RNC Convention",
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-10/the-asia-trade-9-10-2026-video",
-   "t_ko": "이란, 확전 준비 완료와 트럼프 RNC 전당대회 참석",
+   "t_ko": "Trump, RNC 연설서 이란 전쟁 확전 경고",
    "t_id": "Iran Siap Eskalasi Perang, Trump di Konvensi RNC"
   },
   {
@@ -17374,156 +17514,6 @@
     "리테일",
     "투자전략"
    ]
-  },
-  {
-   "ts": "2026-09-10T11:37:00+07:00",
-   "date": "2026-09-10",
-   "time": "11:37",
-   "src": "Media Indonesia",
-   "t": "Indonesia Menuju Center of Excellence Kebencanaan dengan Penguatan Teknologi",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931817/indonesia-menuju-center-of-excellence-kebencanaan-dengan-penguatan-teknologi",
-   "t_ko": "인도네시아, 기술 강화로 재난대응 선도국 도약 추진",
-   "t_id": "Indonesia Menuju Center of Excellence Kebencanaan dengan Penguatan Teknologi",
-   "ai_ko": "BNPB, 9일 ADEXCO 2026에서 재난 기술·산업화 통한 재난관리 거점국 도약 추진 강조 / 조기경보·정수·간이식품 등 국산화 대상, Batam 정수필터 공장 투자로 산업화 성과 확인",
-   "ai_id": "BNPB mendorong Indonesia menjadi center of excellence kebencanaan lewat penguatan sains, teknologi, dan industrialisasi, sebagaimana disampaikan Deputi Raditya Jati di ADEXCO 2026, Rabu (9/9). Produk yang dibidik mencakup sistem peringatan dini, makanan siap santap, tenda, hingga penyediaan air bersih, dengan realisasi pabrik filtrasi air di Batam.",
-   "ai_tags": [
-    "재난산업",
-    "정책",
-    "투자"
-   ]
-  },
-  {
-   "ts": "2026-09-10T11:31:00+07:00",
-   "date": "2026-09-10",
-   "time": "11:31",
-   "src": "Katadata",
-   "t": "Grup Djarum Ungkap Strategi Ekspansi, Bocorkan Investasi Rp 24 T di Luar Negeri",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/bursa/6aa2358ced53e/grup-djarum-ungkap-strategi-ekspansi-bocorkan-investasi-rp-24-t-di-luar-negeri",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/Corporate_Communications_Manager_PT_Djarum_Budi_Darmawan-2026_09_10-11_25_24_b1758ecaa5eb7256553d14d8a414d7de_620x413_thumb.jpg",
-   "t_ko": "Djarum그룹, 해외투자 Rp24조 확장전략 공개",
-   "t_id": "Grup Djarum Ungkap Strategi Ekspansi, Bocorkan Investasi Rp 24 T di Luar Negeri",
-   "ai_ko": "Djarum그룹, 해외 투자 USD 14억(Rp24.9조) 자금 유출설을 부인하며 국내 투자 비중 90% 유지 강조 / BBCA 대주주 Hartono 가문의 해외 확장은 2023~2024년부터 진행, 외화 차입으로 조달",
-   "ai_id": "Grup Djarum membantah kabar pengalihan dana sekitar US$1,4 miliar atau Rp24,9 triliun ke luar negeri, dan menegaskan porsi investasi Keluarga Hartono di dalam negeri masih mencapai 90%. Ekspansi seperti bisnis kertas khusus di AS dan akuisisi produsen kertas rokok Austria sudah berjalan sejak 2023–2024 dengan pembiayaan pinjaman asing.",
-   "ai_tags": [
-    "해외투자",
-    "오너",
-    "은행"
-   ]
-  },
-  {
-   "ts": "2026-09-10T11:20:21+07:00",
-   "date": "2026-09-10",
-   "time": "11:20",
-   "src": "Liputan6",
-   "t": "Bank Jatim Beri Sinyal Tebar Dividen",
-   "tags": [],
-   "url": "https://www.liputan6.com/saham/read/8288607/bank-jatim-beri-sinyal-tebar-dividen",
-   "img": "https://cdn0-production-images-kly.akamaized.net/zs2x0mbvI5Gq_HhHXLUKVzmzC7s=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5344976/original/094862600_1757498720-4.jpg",
-   "t_ko": "Bank Jatim(BJTM), 배당 확대 시사",
-   "t_id": "Bank Jatim Beri Sinyal Tebar Dividen",
-   "ai_ko": "Bank Jatim(BJTM), 순이익 50~55% 배당성향 유지 방침 재확인, 배당수익률 10%선 언급 / 총자산 Rp162조·순이익 Rp1.2조로 각각 37.2%·53.4% 증가하며 배당 여력 뒷받침",
-   "ai_id": "Bank Jatim (BJTM) menegaskan kebijakan rasio pembayaran dividen 50%-55% dari laba bersih dengan dividend yield sekitar 10%, meski keputusan final ada di RUPS. Total aset konsolidasi mencapai Rp162 triliun naik 37,16% yoy dan laba bersih sekitar Rp1,2 triliun tumbuh 53,4% yoy.",
-   "ai_tags": [
-    "배당",
-    "실적",
-    "은행"
-   ]
-  },
-  {
-   "ts": "2026-09-10T11:20:00+07:00",
-   "date": "2026-09-10",
-   "time": "11:20",
-   "src": "Bloomberg Technoz",
-   "t": "Trump Janjikan Rp87 Juta Per Warga Jika Menang Pemilu Sela",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121132/trump-janjikan-rp87-juta-per-warga-jika-menang-pemilu-sela",
-   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260725075349.jpg",
-   "t_ko": "Trump, 중간선거 승리시 국민 1인당 Rp87만 지급 공약",
-   "t_id": "Trump Janjikan Rp87 Juta Per Warga Jika Menang Pemilu Sela",
-   "ai_ko": "Trump 대통령, 11월 중간선거에서 공화당이 상·하원 수성 시 성인 1인당 USD 5,000 지급 공약 / 재원·집행 방식 미제시로 의회 승인 필요, 미국 재정적자 부담 요인",
-   "ai_id": "Presiden Donald Trump menjanjikan pembayaran US$5.000 per warga dewasa jika Partai Republik mempertahankan DPR dan Senat pada pemilu sela November. Mekanisme penyaluran dan pendanaannya belum dijelaskan, sementara setiap pembayaran tunai memerlukan persetujuan Kongres di tengah defisit AS yang besar.",
-   "ai_tags": [
-    "정책",
-    "미국",
-    "재정"
-   ]
-  },
-  {
-   "ts": "2026-09-10T11:20:00+07:00",
-   "date": "2026-09-10",
-   "time": "11:20",
-   "src": "Katadata",
-   "t": "Warga Makassar Antre BBM Sejak Subuh karena Langka, Sudah Terjadi Dua Bulan",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/energi/6aa2301d0486c/warga-makassar-antre-bbm-sejak-subuh-karena-langka-sudah-terjadi-dua-bulan",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/SPBU_makassar_kehabisan_bbm-2026_09_10-11_19_44_b8941e1e5500bb25ce5902751057b01f_620x413_thumb.jpg",
-   "t_ko": "Makassar 주민, 유류 품귀에 새벽부터 주유 대기 두 달째",
-   "t_id": "Warga Makassar Antre BBM Sejak Subuh karena Langka, Sudah Terjadi Dua Bulan",
-   "ai_ko": "Makassar 주유소 연료 부족이 두 달째 지속되며 새벽부터 대기 행렬, 비보조 유종까지 품절 / Pertamina Patra Niaga 공급망 차질 부각, 남술라웨시 지방의회가 대책 요구",
-   "ai_id": "Kelangkaan BBM di SPBU Kota Makassar berlanjut hingga dua bulan, membuat warga antre sejak subuh dan BBM nonsubsidi ikut habis. Pimpinan DPRD Sulsel mendatangi Pertamina Regional Sulawesi menuntut langkah konkret mengatasi antrean panjang tersebut.",
-   "ai_tags": [
-    "유가",
-    "공급차질",
-    "정유"
-   ]
-  },
-  {
-   "ts": "2026-09-10T11:20:00+07:00",
-   "date": "2026-09-10",
-   "time": "11:20",
-   "src": "Media Indonesia",
-   "t": "Pengaruh Suku Bunga The Fed terhadap Harga Emas",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931813/pengaruh-suku-bunga-the-fed-terhadap-harga-emas",
-   "t_ko": "Fed 금리, 금값에 미치는 영향",
-   "t_id": "Pengaruh Suku Bunga The Fed terhadap Harga Emas",
-   "ai_ko": "9월 15~16일 FOMC를 앞두고 금값 변동성 경계, 달러와 미 국채금리가 방향 변수 / 고금리 유지 시 무이자 자산인 금 매력 저하, 인하 시 달러 약세로 금 강세",
-   "ai_id": "Pelaku pasar bersiap menghadapi volatilitas emas menjelang FOMC 15–16 September 2026, dengan dolar AS dan yield Treasury sebagai penentu arah XAU/USD. Suku bunga tinggi menekan emas sebagai aset non-yielding, sedangkan pelonggaran kebijakan cenderung mengangkat harganya.",
-   "ai_tags": [
-    "금값",
-    "금리",
-    "통화정책"
-   ]
-  },
-  {
-   "ts": "2026-09-10T11:17:48+07:00",
-   "date": "2026-09-10",
-   "time": "11:17",
-   "src": "Detik",
-   "t": "Janji Purbaya: Kita Nggak Akan Terbitkan Pajak-pajak Baru, Kecuali...",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656617/janji-purbaya-kita-nggak-akan-terbitkan-pajak-pajak-baru-kecuali",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/menteri-keuangan-purbaya-yudhi-sadewa-1788961452912_169.jpeg?w=360&q=90",
-   "t_ko": "Purbaya, 신규 세금 신설 없다고 약속 — 예외는...",
-   "t_id": "Janji Purbaya: Kita Nggak Akan Terbitkan Pajak-pajak Baru, Kecuali...",
-   "ai_ko": "Purbaya 재무장관, 2027 예산안 세수 목표 Rp2,593.4조·관세소비세 Rp318.6조로 상향하되 신규 세목은 없다고 언급 / 가당음료 소비세는 경제성장률 6% 초과 시 검토, 음식료 업종 규제 부담 완화",
-   "ai_id": "Menteri Keuangan Purbaya Yudhi Sadewa menyatakan tidak akan menerapkan pajak atau cukai baru meski target penerimaan pajak RAPBN 2027 dinaikkan menjadi Rp2.593,4 triliun dan kepabeanan cukai Rp318,6 triliun. Cukai MBDK baru akan dipertimbangkan jika pertumbuhan ekonomi di atas 6%, sementara pemerintah fokus memperketat tax collection yang tumbuh hampir 30%.",
-   "ai_tags": [
-    "세제",
-    "규제",
-    "음식료"
-   ]
-  },
-  {
-   "ts": "2026-09-10T11:01:14+07:00",
-   "date": "2026-09-10",
-   "time": "11:01",
-   "src": "Bloomberg Technoz",
-   "t": "10 September 2026, Harga Emas di Pegadaian Naik Semua",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121134/10-september-2026-harga-emas-di-pegadaian-naik-semua",
-   "img": "https://images.bloombergtechnoz.com/data/2024/05/image-20240521154431.jpg",
-   "t_ko": "9월 10일, Pegadaian 금 시세 일제히 상승",
-   "t_id": "10 September 2026, Harga Emas di Pegadaian Naik Semua",
-   "ai_ko": "Pegadaian 9월 10일 금 시세 전 품목 상승, Antam(ANTM) 1g Rp2,665,000으로 Rp15,000 올랐고 0.5g은 Rp1,384,000 / UBS 1g도 Rp15,000 오른 Rp2,600,000, 0.5g은 Rp1,405,000 기록",
-   "ai_id": "Harga emas di Pegadaian pada Kamis (10/9/2026) kompak naik untuk seluruh denominasi. Emas Antam 1 gram dibanderol Rp2.665.000 atau naik Rp15.000, sedangkan emas UBS 1 gram dipatok Rp2.600.000, juga menguat Rp15.000 dari posisi kemarin.",
-   "ai_tags": [
-    "금값",
-    "귀금속",
-    "원자재"
-   ]
   }
  ],
  "kisi_news": [
@@ -17698,8 +17688,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.10",
-   "d": -0.18,
-   "ytd": 12.77,
+   "d": -0.2,
+   "ytd": 12.76,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17732,9 +17722,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.74",
-   "d": 0.0,
-   "ytd": 0.47,
+   "v": "98.73",
+   "d": -0.0,
+   "ytd": 0.46,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17744,9 +17734,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "95.57",
-   "d": -0.55,
-   "ytd": 66.44,
+   "v": "95.44",
+   "d": -0.69,
+   "ytd": 66.21,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17756,9 +17746,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,472.9",
-   "d": 0.47,
-   "ytd": 3.41,
+   "v": "4,469.0",
+   "d": 0.38,
+   "ytd": 3.32,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -25352,7 +25342,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 13:06",
-  "pc_age_min": 4,
+  "pc_age_min": 12,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26894,6 +26884,25 @@
    "srcs": 1
   },
   {
+   "t": "HRTA",
+   "n": "Hartadinata Abadi",
+   "px": 2240.0,
+   "pct": -0.88,
+   "val": 8467542000.0,
+   "mcap": 10315787776000.0,
+   "ratio": 0.3,
+   "ev_ko": "자본구조",
+   "ev_id": "Aksi korporasi",
+   "hl": "HRTA, 9.09% 제3자배정 유상증자로 대규모 자금 조달 추진",
+   "hl_id": "HRTA Kaji Pendanaan Jumbo Lewat Private Placement 9,09 Persen",
+   "url": "https://www.idnfinancials.com/news/68642/hrta-explores-major-funding-through-9-09-private-placement",
+   "score": 55.1,
+   "s_news": 100,
+   "s_size": 50,
+   "s_surge": 0,
+   "srcs": 3
+  },
+  {
    "t": "BBTN",
    "n": "Bank Tabungan Negara Tbk",
    "px": 1215.0,
@@ -26930,25 +26939,6 @@
    "s_size": 15,
    "s_surge": 100,
    "srcs": 0
-  },
-  {
-   "t": "HRTA",
-   "n": "Hartadinata Abadi",
-   "px": 2240.0,
-   "pct": -0.88,
-   "val": 8467542000.0,
-   "mcap": 10315787776000.0,
-   "ratio": 0.3,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "HRTA, 제3자배정 유상증자로 4억6,052만주 발행",
-   "hl_id": "Private Placement, Emiten HRTA Terbitkan 460,52 Juta Saham",
-   "url": "https://www.liputan6.com/saham/read/8288589/private-placement-emiten-hrta-terbitkan-46052-juta-saham",
-   "score": 54.3,
-   "s_news": 98,
-   "s_size": 50,
-   "s_surge": 0,
-   "srcs": 2
   },
   {
    "t": "ASII",
