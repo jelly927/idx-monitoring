@@ -2832,6 +2832,13 @@ def build():
         data["catalyst"] = catalyst_block(data)
         log(f"Catalyst {len(data['catalyst'])}종목" + (f" · 1위 {data['catalyst'][0]['t']} {data['catalyst'][0]['score']}점" if data["catalyst"] else ""))
     except Exception as e: log("Catalyst 오류", repr(e)[:120]); data["catalyst"] = []
+    try:                                                   # 장기기억: 일별 로그 누적 → (금요일 17:30 이후) 주간 응고 → 챗봇·사이트용 압축본
+        import importlib, memory_build; importlib.reload(memory_build)
+        memory_build.daily(data)
+        if not os.environ.get("GITHUB_ACTIONS") and _claude_cli():
+            memory_build.weekly(lambda pr: _claude_cli_run(pr, None, timeout=900), log)
+        data["memory"] = memory_build.chat_slice() or {}
+    except Exception as e: log("기억 모듈 오류", repr(e)[:120]); data["memory"] = {}
     (ROOT / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     # data.js: index.html 을 파일(file://)로 직접 열어도 마지막 수집 데이터가 보이도록 (fetch 는 file:// 에서 막힘)
     try: (ROOT / "data.js").write_text("window.__IDX_DATA=" + json.dumps(data, ensure_ascii=False) + ";", encoding="utf-8")
