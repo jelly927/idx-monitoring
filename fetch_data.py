@@ -1294,7 +1294,7 @@ CLAUDE_RULES_KO = """너는 한국 증권사 인도네시아 리서치 데스크
 ⑤ 주체가 상장사면 "회사명(종목코드)" 또는 종목코드만. 원문에 종목코드가 있으면 반드시 유지.
 
 [표기]
-⑥ 고유명사(회사명·인명·지명·지역명·기관명)는 로마자 원문 그대로 쓴다(Danantara, Bakrie, Boy Thohir, Sulawesi, Kota Tua, Rantau Prapat…; Boy→소년, Sulawesi→술라웨시 같은 음역·번역 금지). 예외는 국가명 Indonesia=인도네시아, 수도 Jakarta=자카르타 둘뿐. 퍼센트·숫자 원문 유지, 소수점은 마침표(0,12%→0.12%).
+⑥ 고유명사(회사명·인명·지명·지역명·기관명)는 로마자 원문 그대로 쓴다(Danantara, Bakrie, Boy Thohir, Sulawesi, Kota Tua, Rantau Prapat…; Boy→소년, Sulawesi→술라웨시 같은 음역·번역 금지). 예외: 국가·대륙·통화·주요 국제도시는 한국어 관용 표기(Indonesia=인도네시아, Jakarta=자카르타, US/AS=미국, China/Tiongkok=중국, Japan=일본, India=인도, Europe/Eropa=유럽, Korea=한국, UK/Inggris=영국, Germany=독일, Russia=러시아, Iran=이란, Israel=이스라엘, Taiwan=대만, Vietnam=베트남, Singapore=싱가포르, New York=뉴욕, London=런던, Tokyo=도쿄, Beijing=베이징, Hong Kong=홍콩, Wall Street=월가). 인도네시아 안의 지역명·인명·기업명·기관명은 원문 유지. 퍼센트·숫자 원문 유지, 소수점은 마침표(0,12%→0.12%).
 ⑦ 통화는 Rp 표기, Miliar=억, Triliun=조 (Rp500 Miliar=Rp5,000억, Rp1,27 Triliun=Rp1.27조, US$100=USD 100).
 ⑧ 용어: Laba=순이익, Pendapatan=매출, Saham=주식, Rekomendasi=투자의견, Kinerja=실적, Emiten=상장사, RUPS(LB)=(임시)주주총회, Buyback=자사주 매입, Dividen=배당, Rights Issue=유상증자, Tender Offer=공개매수, Net Buy/Sell=순매수/순매도, Sesi I=1부, IHSG/JCI=IHSG, Asing=외국인, Komisaris=이사, Direktur Utama=대표, Capex=설비투자, Top Losers/Gainers=낙폭/상승 상위, Suspensi=거래정지, Obligasi=채권, Sukuk=수쿡, Smelter=제련소, Tol=유료도로.
 ⑨ 경제 캘린더 지표명은 국내 리서치 표기: "ISM Manufacturing PMI (Aug)"→"8월 ISM 제조업 PMI", "Nonfarm Payrolls (Aug)"→"8월 비농업 고용", "Initial Jobless Claims"→"신규 실업수당 청구", "Crude Oil Inventories"→"EIA 원유 재고", "Fed Chair Powell Speaks"→"연준 Powell 의장 연설"; (MoM)/(YoY)/(QoQ)는 유지.
@@ -1591,7 +1591,8 @@ def news_block(max_items=None):
             else: tags = screen(title + " " + summ, e.get("link", ""))
             _div_from_text(title + ". " + summ, tags, e.get("link", ""), src["name"])
             is_market = not tags
-            if is_market and glob and not _global_news_ok(title, summ): dg["drop"] += 1; continue          # 글로벌 매체: 영문 시장·경제·지정학 기준
+            if is_market and glob and not _global_news_ok(title, summ):
+                dg["drop"] += 1; dg.setdefault("dropped", []).append(title[:80]) if len(dg.get("dropped", [])) < 6 else None; continue   # 글로벌 매체: 영문 시장·경제·지정학 기준 (제외 예시 6건은 진단용)
             if is_market and not glob and not _market_news_ok(title, summ, e.get("link", "")): dg["drop"] += 1; continue     # 티커 없는 기사 중 경제·정책·금융·증시 섹션만 시장 뉴스로
             if is_market and not (e.get("published_parsed") or e.get("updated_parsed")) and not _entry_image(e): dg["drop"] += 1; continue   # 홈 스크랩(시각·사진 없음)은 시장 뉴스에서 제외
             dg["market" if is_market else "stock"] += 1
@@ -1632,7 +1633,7 @@ def news_block(max_items=None):
         k = it["t"][:60]
         if k in seen2: continue
         seen2.add(k); out2.append(it)
-    MARKET_NEWS[:] = translate_news(_mix_global(out2, CFG.get("market_news_max", 36), CFG.get("market_news_global_min", 10)))
+    MARKET_NEWS[:] = translate_news(_mix_global(out2, CFG.get("market_news_max", 36), CFG.get("market_news_global_min", 10), CFG.get("market_news_global_max", 16)))
     return translate_news(out[:max_items])
 
 MARKET_NEWS = []
@@ -1701,25 +1702,29 @@ def _market_news_ok(title, summ="", link=""):
     return bool(MARKET_RX.search(title)) or bool(MARKET_RX.search((summ or "")[:200]))
 
 # ---- 글로벌(영문) 매체용 기준: 시장·경제·원자재·통화·지정학 단서가 있을 때 채택, 스포츠·연예·범죄·생활·개인재테크는 제외
-GLOBAL_MKT_RX = re.compile(r"\b(fed|fomc|powell|treasur(y|ies)|yields?|bonds?|stocks?|shares?|equit(y|ies)|wall street|s&p|nasdaq|dow\b|nikkei|kospi|hang seng|shanghai|csi ?300|sensex|msci|futures|dollar|greenback|yen|yuan|renminbi|euro|rupiah|ringgit|baht|peso|won\b|forex|oil|brent|crude|opec|natural gas|lng|gold|silver|copper|nickel|coal|palm oil|iron ore|lithium|tariffs?|trade (war|deal|talks|deficit|surplus|truce)|sanctions?|exports?|imports?|inflation|cpi|ppi|gdp|recession|slowdown|jobs?|payrolls|unemployment|rate (cut|hike|decision|path)|interest rates?|central bank|ecb|boj|pboc|boe|rbi|bank of (japan|korea|england|indonesia)|earnings|profits?|revenue|ipo|merger|acquisition|takeover|buyout|stake|investors?|markets?|economy|economic|fiscal|stimulus|debt|deficit|budget|bailout|default|chips?|semiconductors?|nvidia|tsmc|samsung|tesla|apple|alibaba|tencent|byd|china|beijing|japan|korea|india|asean|asia|emerging markets?|indonesia|jakarta|geopolit|iran|israel|ukraine|russia|taiwan|ceasefire|missile|strait of hormuz|trump|white house|xi jinping|imf|world bank|wto|g20|g7|shipping|freight|supply chain|nickel|ev\b|electric vehicles?)\b", re.I)
-GLOBAL_NO_RX = re.compile(r"\b(nfl|nba|mlb|nhl|soccer|football|tennis|golf|olympics?|world cup|premier league|celebrit(y|ies)|actor|actress|movie|film|netflix|grammy|oscars?|royal family|prince|princess|kardashian|recipe|diet|weight loss|cancer|vaccine|covid|murder|shooting|stabbing|arrested|manhunt|wildfire|hurricane|tornado|storm|snow|heatwave|travel|vacation|hotel|restaurant|iphone|galaxy|gadget|opinion|editorial|horoscope|lottery|dating|wedding|divorce|obituary|dies at|podcast|crossword|quiz)\b", re.I)
+GLOBAL_MKT_RX = re.compile(r"\b(fed|fomc|powell|treasur(y|ies)|yields?|bonds?|stocks?|shares?|equit(y|ies)|wall street|s&p|nasdaq|dow\b|nikkei|kospi|hang seng|shanghai|csi ?300|sensex|msci|futures|dollar|greenback|yen|yuan|renminbi|euro|rupiah|ringgit|baht|peso|won\b|forex|oil|brent|crude|opec|natural gas|lng|gold|silver|copper|nickel|coal|palm oil|iron ore|lithium|tariffs?|trade (war|deal|talks|deficit|surplus|truce)|sanctions?|exports?|imports?|inflation|cpi|ppi|gdp|recession|slowdown|jobs?|payrolls|unemployment|rate (cut|hike|decision|path)|interest rates?|rates?\b|liquidity|hedge funds?|central bank|ecb|boj|pboc|boe|rbi|bank of (japan|korea|england|indonesia)|markets?|economy|economic|fiscal|stimulus|debt|deficit|budget|bailout|default|chips?|semiconductors?|nvidia|tsmc|samsung|tesla|apple|alibaba|tencent|byd|china|beijing|japan|korea|india|asean|asia|emerging markets?|indonesia|jakarta|geopolit|iran|israel|ukraine|russia|taiwan|ceasefire|missile|strait of hormuz|trump|white house|xi jinping|imf|world bank|wto|g20|g7|shipping|freight|supply chain|nickel|ev\b|electric vehicles?)\b", re.I)
+GLOBAL_NO_RX = re.compile(r"\b(nfl|nba|mlb|nhl|soccer|football|tennis|golf|olympics?|world cup|premier league|celebrit(y|ies)|actor|actress|movie|film|netflix|album|concert|singer|rapper|tv show|trailer|box office|taylor swift|grammy|oscars?|royal family|prince|princess|kardashian|recipe|diet|weight loss|cancer|vaccine|covid|murder|shooting|stabbing|arrested|manhunt|wildfire|hurricane|tornado|storm|snow|heatwave|travel|vacation|hotel|restaurant|iphone|galaxy|gadget|opinion|editorial|horoscope|lottery|dating|wedding|divorce|obituary|dies at|podcast|crossword|quiz)\b", re.I)
 GLOBAL_LIFE_RX = re.compile(r"^(‘|'|\"|“|my |i |we |how to|here's|here are|what to|should you|why you|the best|best |top \d+|\d+ (ways|things|reasons|stocks to|tips))|\b(moneyist|retire(ment|es)?|401\(k\)|ira\b|mortgage rates?|credit cards?|social security|medicare|savings account|personal finance|side hustle|net worth|dividend stocks to buy|stocks to buy|buy now)\b", re.I)
 GLOBAL_CUE_RX = re.compile(r"\b(the fed|fomc|wall street|nasdaq|dow jones|s&p|treasury|trump|gedung putih|white house|iran|israel|rusia|russia|ukraina|ukraine|china|tiongkok|beijing|jepang|japan|korea|india|eropa|europe|ecb|boj|pboc|opec|brent|wti|harga minyak|oil price|harga emas|gold price|global|dunia|world|asia|geopolitik|geopolit|tarif (trump|as|impor as)|perang dagang|trade war|resesi (global|as)|ekonomi (global|as|china|dunia)|bursa (asia|as|global)|saham (asia|as|global))\b", re.I)   # 국내 매체 기사도 이 단서가 있으면 글로벌 뉴스로 표시
 def _global_news_ok(title, summ=""):
     t = title or ""
     if GLOBAL_NO_RX.search(t) or GLOBAL_LIFE_RX.search(t): return False
     return bool(GLOBAL_MKT_RX.search(t)) or bool(GLOBAL_MKT_RX.search((summ or "")[:200]))
-def _mix_global(items, n, gmin):
-    """시각순 상위 n 건을 고르되 글로벌(g) 기사가 gmin 건 미만이면 가장 오래된 국내 기사를 빼고 글로벌 기사를 채운다 (국내 매체가 시간순으로 밀어내는 것 방지)"""
+def _mix_global(items, n, gmin, gmax=None):
+    """시각순 상위 n 건을 고르되 글로벌(g) 기사가 gmin 건 미만이면 가장 오래된 국내 기사를 빼고 글로벌 기사를 채우고,
+    gmax 건을 넘으면(해외 장중 해외 뉴스 폭주) 가장 오래된 글로벌 기사를 빼고 국내 기사를 채운다 — 어느 쪽도 시간순으로 밀려나지 않게"""
+    gmax = gmax or max(gmin, n // 2)
     pick = items[:n]
+    def _fill(want_g, k):                     # want_g 종류 기사 k 건을 밖에서 가져오고, 반대 종류의 가장 오래된 k 건을 뺀다
+        extra = [i for i in items[n:] if bool(i.get("g")) == want_g][:k]
+        if not extra: return
+        other = [i for i in pick if bool(i.get("g")) != want_g]
+        drop = {id(i) for i in other[max(0, len(other) - len(extra)):]}
+        pick[:] = [i for i in pick if id(i) not in drop] + extra
+        pick.sort(key=lambda x: x["ts"], reverse=True)
     have = sum(1 for i in pick if i.get("g"))
-    if have < gmin:
-        extra = [i for i in items[n:] if i.get("g")][:gmin - have]
-        if extra:
-            dom = [i for i in pick if not i.get("g")]
-            drop = {id(i) for i in dom[max(0, len(dom) - len(extra)):]}
-            pick = [i for i in pick if id(i) not in drop] + extra
-            pick.sort(key=lambda x: x["ts"], reverse=True)
+    if have < gmin: _fill(True, gmin - have)
+    elif have > gmax: _fill(False, have - gmax)
     return pick
 
 def _entry_image(e):
