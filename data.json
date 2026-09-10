@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 07:06",
+ "updated": "2026-09-10 08:18",
  "delay_min": 0,
- "fx_basis": "13.05 IDR/KRW · USD/IDR 17,500 · USD/KRW 1,341 · 00:19 Yahoo",
- "idr_per_krw": 13.0457,
+ "fx_basis": "13.12 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,338 · 08:03 Yahoo",
+ "idr_per_krw": 13.1175,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -275,9 +275,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17588.0,
-   "prev": 17664.0,
-   "pct": -0.43,
+   "px": 17547.0,
+   "prev": 17588.0,
+   "pct": -0.23,
    "spark": [
     17794.0,
     17791.0,
@@ -301,7 +301,8 @@
     17618.1,
     17638.0,
     17664.0,
-    17588.0
+    17588.0,
+    17547.0
    ],
    "inv": true,
    "asof": "Yahoo"
@@ -16156,34 +16157,49 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7051.64,
-   "prev": 6954.52,
-   "pct": 1.4,
-   "asof": "09/07 종가",
-   "live": false,
+   "px": 6960.38,
+   "prev": 7056.35,
+   "pct": -1.36,
+   "asof": "07:55",
+   "live": true,
    "spark": [
-    6562.72,
-    6579.48,
-    6687.21,
-    6995.39,
-    6954.52
+    7070.5,
+    7044.79,
+    7008.5,
+    7016.47,
+    7031.22,
+    7023.29,
+    7001.64,
+    6985.66,
+    6976.97,
+    6975.07,
+    6965.12,
+    6960.38
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65142.78,
-   "prev": 65370.42,
-   "pct": -0.35,
-   "asof": "09/07 종가",
-   "live": false,
+   "px": 64464.09,
+   "prev": 65148.08,
+   "pct": -1.05,
+   "asof": "08:00",
+   "live": true,
    "spark": [
-    64325.64,
-    64214.48,
-    65020.94,
-    66399.84,
-    65269.33
+    64771.93,
+    64798.77,
+    64675.45,
+    64681.88,
+    64720.24,
+    64639.01,
+    64525.72,
+    64346.44,
+    64468.84,
+    64434.47,
+    64438.81,
+    64383.97,
+    64464.09
    ]
   },
   {
@@ -16333,18 +16349,75 @@
    "pay": "2026-09-21",
    "yld": "12.68%",
    "name": "Central Omega Resources Tbk PT"
-  },
-  "PSAB": {
-   "dps": 30.0,
-   "type": "",
-   "ex": null,
-   "pay": null,
-   "yld": null,
-   "src": "Liputan6",
-   "url": "https://www.liputan6.com/saham/read/8286819/emiten-psab-tebar-dividen-rp-30-per-saham-simak-jadwal-lengkapnya"
   }
  },
  "news": [
+  {
+   "ts": "2026-09-10T08:10:00+07:00",
+   "date": "2026-09-10",
+   "time": "08:10",
+   "src": "Bloomberg Technoz",
+   "t": "Investor Asing Lepas Saham BYAN Usai Ditawar Murah Haji Isam",
+   "tags": [
+    "BYAN"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121104/investor-asing-lepas-saham-byan-usai-ditawar-murah-haji-isam",
+   "img": "https://images.bloombergtechnoz.com/data/2023/04/image-20230427053335.jpg",
+   "t_id": "Investor Asing Lepas Saham BYAN Usai Ditawar Murah Haji Isam"
+  },
+  {
+   "ts": "2026-09-10T08:00:00+07:00",
+   "date": "2026-09-10",
+   "time": "08:00",
+   "src": "IDNFinancials",
+   "t": "SIDO realises IDR 24 billion in capex through first half of 2026",
+   "tags": [
+    "SIDO"
+   ],
+   "url": "https://www.idnfinancials.com/news/68597/sido-realises-idr-24-billion-in-capex-through-first-half-of-2026",
+   "img": "https://photos.idnfinancials.com/d/500x300/2024/Ilustrasi%20adhy/SIDO%20MUNCUL/SIDO%20MUNCUL%202.jpg"
+  },
+  {
+   "ts": "2026-09-10T07:48:13+07:00",
+   "date": "2026-09-10",
+   "time": "07:48",
+   "src": "Liputan6",
+   "t": "Emiten BBCA Ungkap Kembali Tebar Dividen Interim Desember 2026",
+   "tags": [
+    "BBCA"
+   ],
+   "url": "https://www.liputan6.com/saham/read/8288566/emiten-bbca-ungkap-kembali-tebar-dividen-interim-desember-2026",
+   "img": "https://cdn1-production-images-kly.akamaized.net/T_l9QXnm4N82cpQ1wcgk1xlPAag=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3626295/original/027885300_1636365579-8_november_2021-2.jpeg"
+  },
+  {
+   "ts": "2026-09-10T07:44:00+07:00",
+   "date": "2026-09-10",
+   "time": "07:44",
+   "src": "Katadata",
+   "t": "Manuver ITMG di Bisnis Nikel hingga Pembangkit Surya, Seperti Apa Prospeknya?",
+   "tags": [
+    "ITMG"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6aa1fd6614bb0/manuver-itmg-di-bisnis-nikel-hingga-pembangkit-surya-seperti-apa-prospeknya",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2021/12/16/PT_Indo_Tambangraya_Megah_Tbk_ITMG-2021_12_16-17_40_36_f89e45f3db45a07493641d9d6c9d3d2f_620x413_thumb.png",
+   "t_id": "Manuver ITMG di Bisnis Nikel hingga Pembangkit Surya, Seperti Apa Prospeknya?"
+  },
+  {
+   "ts": "2026-09-10T07:22:47+07:00",
+   "date": "2026-09-10",
+   "time": "07:22",
+   "src": "Jawa Pos",
+   "t": "Prediksi IHSG Kamis: BIPI, HMSP, TINS Jadi Reaksi Saham Hot!",
+   "tags": [
+    "BIPI",
+    "HMSP",
+    "PTBA",
+    "TINS"
+   ],
+   "url": "https://www.jawapos.com/ekonomi/2609100061/prediksi-ihsg-kamis-bipi-hmsp-tins-jadi-reaksi-saham-hot",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/09/pergerakan-indeks-harga-saham-gabungan-ihsg-di-bursa-efek-indonesia-bei-jakarta-jumat-782026-dery-ridwansah-jawaposcom-c9Zlv.webp",
+   "t_id": "Prediksi IHSG Kamis: BIPI, HMSP, TINS Jadi Reaksi Saham Hot!"
+  },
   {
    "ts": "2026-09-10T06:40:00+07:00",
    "date": "2026-09-10",
@@ -16476,18 +16549,6 @@
    ],
    "url": "https://www.idnfinancials.com/news/68604/foreign-outflow-bbca-top-sell-idr-638-billion",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/NET%20FOREIGN%20IMAGE%20%28ARIF%29/NET%20FOREIGN%2015.jpeg"
-  },
-  {
-   "ts": "2026-09-09T21:10:00+07:00",
-   "date": "2026-09-09",
-   "time": "09/09",
-   "src": "Katadata",
-   "t": "Intip Kisi-Kisi Dividen Interim Ketiga BCA (BBCA) hingga Bidik Kredit Tumbuh 10%",
-   "tags": [
-    "BBCA"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa168e188db7/intip-kisi-kisi-dividen-interim-ketiga-bca-bbca-hingga-bidik-kredit-tumbuh-10",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/03/21/Logo_Bank_Central_Asia_BCA-2025_03_21-15_39_06_df86aafa4f1153fc487567ebec7ec74f_620x413_thumb.jpg"
   },
   {
    "ts": "2026-09-09T20:52:48+07:00",
@@ -16880,20 +16941,6 @@
    "img": "https://photos.idnfinancials.com/_idn/2025/BBCA%20%282%29.png"
   },
   {
-   "ts": "2026-09-09T14:23:06+07:00",
-   "date": "2026-09-09",
-   "time": "09/09",
-   "src": "Detik",
-   "t": "MGLV Resmi Jadi Pemain AI Data Center",
-   "tags": [
-    "MGLV"
-   ],
-   "url": "https://finance.detik.com/energi/d-8655368/mglv-resmi-jadi-pemain-ai-data-center",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/06/data-center-1786011344929_169.jpeg?w=360&q=90",
-   "t_ko": "MGLV, AI 데이터센터 사업 공식 진출",
-   "t_id": "MGLV Resmi Jadi Pemain AI Data Center"
-  },
-  {
    "ts": "2026-09-09T14:00:59+07:00",
    "date": "2026-09-09",
    "time": "09/09",
@@ -16976,20 +17023,6 @@
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/MEDC-07062026.jpg",
    "t_ko": "MEDC, 2026년 석유·가스 생산 목표 달성에 신규 사업 확대 검토",
    "t_id": "Kejar Target Produksi Migas 2026, MEDC Bidik Proyek Baru"
-  },
-  {
-   "ts": "2026-09-09T10:30:00+07:00",
-   "date": "2026-09-09",
-   "time": "09/09",
-   "src": "IDNFinancials",
-   "t": "ITMG eyes nickel and strategic minerals business with hefty cash pile",
-   "tags": [
-    "ITMG"
-   ],
-   "url": "https://www.idnfinancials.com/news/68573/itmg-eyes-nickel-and-strategic-minerals-business-with-hefty-cash-pile",
-   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/ITMG-26022026.jpg",
-   "t_ko": "ITMG, 풍부한 현금 앞세워 니켈·전략광물 사업 검토",
-   "t_id": "ITMG bidik bisnis nikel dan mineral strategis dengan kas melimpah"
   },
   {
    "ts": "2026-09-09T09:55:15+07:00",
@@ -17253,20 +17286,6 @@
    "t_id": "Rekomendasi Saham Hari Ini 8 September 2026: SSIA,ADRO, BBRI, ERAA, COCO, COIN"
   },
   {
-   "ts": "2026-09-08T06:31:53+07:00",
-   "date": "2026-09-08",
-   "time": "09/08",
-   "src": "Liputan6",
-   "t": "Emiten PSAB Tebar Dividen Rp 30 per Saham, Simak Jadwal Lengkapnya",
-   "tags": [
-    "PSAB"
-   ],
-   "url": "https://www.liputan6.com/saham/read/8286819/emiten-psab-tebar-dividen-rp-30-per-saham-simak-jadwal-lengkapnya",
-   "img": "https://cdn0-production-images-kly.akamaized.net/uOll4qDxl4LHEVFpxo0cjXqxpeI=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2935920/original/023277800_1570705755-20191010-IHSG-6.jpg",
-   "t_ko": "상장사 PSAB 주당 Rp30 배당 — 지급 일정",
-   "t_id": "Emiten PSAB Tebar Dividen Rp 30 per Saham, Simak Jadwal Lengkapnya"
-  },
-  {
    "ts": "2026-08-24T08:33:00+07:00",
    "date": "2026-08-24",
    "time": "08/24",
@@ -17310,6 +17329,122 @@
   }
  ],
  "market_news": [
+  {
+   "ts": "2026-09-10T08:01:18+07:00",
+   "date": "2026-09-10",
+   "time": "08:01",
+   "src": "Bloomberg Technoz",
+   "t": "Harga Minyak Mahal & Yield Obligasi Naik, ke Mana Arah Rupiah?",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121103/harga-minyak-mahal-yield-obligasi-naik-ke-mana-arah-rupiah",
+   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171645.jpeg",
+   "t_id": "Harga Minyak Mahal & Yield Obligasi Naik, ke Mana Arah Rupiah?"
+  },
+  {
+   "ts": "2026-09-10T08:00:00+07:00",
+   "date": "2026-09-10",
+   "time": "08:00",
+   "src": "Bloomberg Technoz",
+   "t": "Banjir di Nagoya: Persiapan Asian Games Dihentikan Sementara",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121102/banjir-di-nagoya-persiapan-asian-games-dihentikan-sementara",
+   "img": "https://images.bloombergtechnoz.com/data/2024/09/image-20240909125401.jpg",
+   "t_id": "Banjir di Nagoya: Persiapan Asian Games Dihentikan Sementara"
+  },
+  {
+   "ts": "2026-09-10T07:59:00+07:00",
+   "date": "2026-09-10",
+   "time": "07:59",
+   "src": "Katadata",
+   "t": "Mobil Listrik hingga Giant Sea Wall Masuk Pipeline Proyek Danantara Development",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/korporasi/6aa201086fc5d/mobil-listrik-hingga-giant-sea-wall-masuk-pipeline-proyek-danantara-development",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/02/05/2025_02_05-16_45_00_7971c238-e3af-11ef-a4d1-07983bf3bef5_620x413_thumb.jpg"
+  },
+  {
+   "ts": "2026-09-10T07:53:00+07:00",
+   "date": "2026-09-10",
+   "time": "07:53",
+   "src": "Katadata",
+   "t": "Prabowo Ungkit Sikap Demokrat 9 Tahun Jadi Oposisi, Sebut Tak Ada Caci Maki",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6aa1ff714cce5/prabowo-ungkit-sikap-demokrat-9-tahun-jadi-oposisi-sebut-tak-ada-caci-maki",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/09/2026_09_09-21_48_00_75f4b8e4-ac8f-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "Prabowo Ungkit Sikap Demokrat 9 Tahun Jadi Oposisi, Sebut Tak Ada Caci Maki"
+  },
+  {
+   "ts": "2026-09-10T07:45:16+07:00",
+   "date": "2026-09-10",
+   "time": "07:45",
+   "src": "Detik",
+   "t": "Penumpang Makin Padat, KCI Tambah 13 Perjalanan KRL Bogor",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656331/penumpang-makin-padat-kci-tambah-13-perjalanan-krl-bogor",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/perawatan-rangkaian-diperketat-17-perjalanan-krl-bogor-line-dibatalkan-1788837629268_169.jpeg?w=360&q=90"
+  },
+  {
+   "ts": "2026-09-10T07:33:11+07:00",
+   "date": "2026-09-10",
+   "time": "07:33",
+   "src": "Jawa Pos",
+   "t": "Harga Minyak Melonjak Kamis Pagi: Brent Tembus USD 101, WTI Naik ke 97",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609100076/harga-minyak-melonjak-kamis-pagi-brent-tembus-usd-101-wti-naik-ke-97",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/05/25/ilustrasi-pengeboran-minyak-mentah-dunia-istimewa-3vinA.webp",
+   "t_id": "Harga Minyak Melonjak Kamis Pagi: Brent Tembus USD 101, WTI Naik ke 97"
+  },
+  {
+   "ts": "2026-09-10T07:33:00+07:00",
+   "date": "2026-09-10",
+   "time": "07:33",
+   "src": "Katadata",
+   "t": "Di Hadapan Prabowo, AHY Jelaskan Maksud Pidato Kekuasaan Punya Batas Waktu",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6aa1fae3b561f/di-hadapan-prabowo-ahy-jelaskan-maksud-pidato-kekuasaan-punya-batas-waktu",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/02/09/2026_02_09-19_08_00_c1197fe6-05bc-11f1-b1cf-0242ac120004_620x413_thumb.jpg",
+   "t_id": "Di Hadapan Prabowo, AHY Jelaskan Maksud Pidato Kekuasaan Punya Batas Waktu"
+  },
+  {
+   "ts": "2026-09-10T07:16:28+07:00",
+   "date": "2026-09-10",
+   "time": "07:16",
+   "src": "Liputan6",
+   "t": "IHSG Berpotensi Melesat, Cermati Rekomendasi Saham 10 September 2026",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8288551/ihsg-berpotensi-melesat-cermati-rekomendasi-saham-10-september-2026",
+   "img": "https://cdn0-production-images-kly.akamaized.net/mQ3IIlzkxbyu1aB_G4MKycN5qpE=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4883223/original/030233500_1720093649-20240704-IHSG-ANG_5.jpg",
+   "t_id": "IHSG Berpotensi Melesat, Cermati Rekomendasi Saham 10 September 2026"
+  },
+  {
+   "ts": "2026-09-10T07:15:49+07:00",
+   "date": "2026-09-10",
+   "time": "07:15",
+   "src": "Detik",
+   "t": "Setahun Purbaya dan Gaya Koboinya Mengawal Kocek Negara",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656068/setahun-purbaya-dan-gaya-koboinya-mengawal-kocek-negara",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/menteri-keuangan-purbaya-yudhi-sadewa-1788961453006_169.jpeg?w=360&q=90",
+   "t_id": "Setahun Purbaya dan Gaya Koboinya Mengawal Kocek Negara"
+  },
+  {
+   "ts": "2026-09-10T07:06:29+07:00",
+   "date": "2026-09-10",
+   "time": "07:06",
+   "src": "Bloomberg Technoz",
+   "t": "Harga Emas Akhirnya Bangkit Usai 3 Hari Jatuh, Jual atau Beli?",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121097/harga-emas-akhirnya-bangkit-usai-3-hari-jatuh-jual-atau-beli",
+   "img": "https://images.bloombergtechnoz.com/data/2026/05/image-20260502132628.jpg"
+  },
+  {
+   "ts": "2026-09-10T07:02:48+07:00",
+   "date": "2026-09-10",
+   "time": "07:02",
+   "src": "Bloomberg",
+   "t": "China-US 10-Year Yield Gap Widens to Largest on Record",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/china-us-10-year-yield-gap-widens-to-largest-on-record"
+  },
   {
    "ts": "2026-09-10T06:55:00+07:00",
    "date": "2026-09-10",
@@ -17510,127 +17645,6 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/bursa/6aa1e40a50648/ancaman-minyak-us-120-membayangi-wall-street-tiga-indeks-berguguran",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/10/12/Wall_Street-2023_10_12-05_51_11_8074be86ec350e0281213fa81ef24863_620x413_thumb.png"
-  },
-  {
-   "ts": "2026-09-10T05:55:53+07:00",
-   "date": "2026-09-10",
-   "time": "05:55",
-   "src": "Detik",
-   "t": "BRI & BSI Dapat Tugas Siapkan Rekening Warga RI, yang Sudah Punya Gimana?",
-   "tags": [],
-   "url": "https://finance.detik.com/moneter/d-8656056/bri-bsi-dapat-tugas-siapkan-rekening-warga-ri-yang-sudah-punya-gimana",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/20/jaga-pertumbuhan-ekonomi-nasional-pemerintah-perkuat-sektor-strategis-1787215028622_169.jpeg?w=360&q=90",
-   "t_id": "BRI & BSI Dapat Tugas Siapkan Rekening Warga RI, yang Sudah Punya Gimana?"
-  },
-  {
-   "ts": "2026-09-10T05:50:00+07:00",
-   "date": "2026-09-10",
-   "time": "05:50",
-   "src": "Bloomberg Technoz",
-   "t": "Harga Minyak Dunia Naik Usai Pernyataan Iran Soal Perang",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121091/harga-minyak-dunia-naik-usai-pernyataan-iran-soal-perang",
-   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260828165138.jpg",
-   "t_id": "Harga Minyak Dunia Naik Usai Pernyataan Iran Soal Perang"
-  },
-  {
-   "ts": "2026-09-10T05:43:38+07:00",
-   "date": "2026-09-10",
-   "time": "05:43",
-   "src": "Republika",
-   "t": "Pertamina Patra Niaga Sulawesi Minta Satgas Awasi Antrean BBM dan Elpiji Bersubsidi",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl3x9m7630000/pertamina-patra-niaga-sulawesi-minta-satgas-awasi-antrean-bbm-dan-elpiji-bersubsidi",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/048737600-1788974122-antre-bbm-di-mksjpeg.jpeg",
-   "t_id": "Pertamina Patra Niaga Sulawesi Minta Satgas Awasi Antrean BBM dan Elpiji Bersubsidi"
-  },
-  {
-   "ts": "2026-09-10T05:15:00+07:00",
-   "date": "2026-09-10",
-   "time": "05:15",
-   "src": "Katadata",
-   "t": "Bos Danantara Klaim Kopdes Merah Putih Bisa Bikin Negara Hemat Rp 150 Triliun",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa18ef7c043a/bos-danantara-klaim-kopdes-merah-putih-bisa-bikin-negara-hemat-rp-150-triliun",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/08/2026_06_08-12_27_00_17d3e96c-6309-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Bos Danantara Klaim Kopdes Merah Putih Bisa Bikin Negara Hemat Rp 150 Triliun"
-  },
-  {
-   "ts": "2026-09-10T04:32:39+07:00",
-   "date": "2026-09-10",
-   "time": "04:32",
-   "src": "Jawa Pos",
-   "t": "Pameran GIFA-METEC 2026 Hadirkan Inovasi Industri Logam Internasional",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609090427/pameran-gifa-metec-2026-hadirkan-inovasi-industri-logam-internasional",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/pameran-internasional-gifa-indonesia-dan-metec-indonesia-2026-resmi-dibuka-di-jakarta-international-expo-jiexpo-kemayoran-jakarta-pada-rabu-99-dok-nanda-prayogajawaposcom-NCOlE.webp"
-  },
-  {
-   "ts": "2026-09-10T02:04:49+07:00",
-   "date": "2026-09-10",
-   "time": "02:04",
-   "src": "Jawa Pos",
-   "t": "Pemerintah Sepakati Pembentukan Satgas Untuk Optimalkan KDKMP",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609090409/pemerintah-sepakati-pembentukan-satgas-untuk-optimalkan-kdkmp",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/menteri-keuangan-purbaya-yudhi-sadewa-bersiap-menyampaikan-tanggapan-pemerintah-pada-rapat-paripurna-ke-3-masa-persidangan-i-tahun-sidang-2026-2027-di-kompleks-parlemen-senayan-jakarta-kamis-2782026-salman-toyibijawa-pos-SW245.webp",
-   "t_id": "Pemerintah Sepakati Pembentukan Satgas Untuk Optimalkan KDKMP"
-  },
-  {
-   "ts": "2026-09-10T01:30:33+07:00",
-   "date": "2026-09-10",
-   "time": "01:30",
-   "src": "Jawa Pos",
-   "t": "Risiko Industri Kian Kompleks, Fokus Keselamatan Kerja Makin Penting",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609090393/risiko-industri-kian-kompleks-fokus-keselamatan-kerja-makin-penting",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/sales-marketing-director-pt-wahana-safety-indonesia-fransiscus-b-hermanto-mridwanjawaposcom-r8jRl.webp"
-  },
-  {
-   "ts": "2026-09-10T00:32:37+07:00",
-   "date": "2026-09-10",
-   "time": "00:32",
-   "src": "Jawa Pos",
-   "t": "Alat Berat Listrik Diproyeksi Kuasai 20 Persen Pasar dalam 5 Tahun, Ini Tantangannya",
-   "tags": [],
-   "url": "https://www.jawapos.com/bisnis/2609090375/alat-berat-listrik-diproyeksi-kuasai-20-persen-pasar-dalam-5-tahun-ini-tantangannya",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/press-conference-gm-group-mining-indonesia-2026-di-jakarta-rabu-99-dimas-choiruljawaposcom-TyLU1.webp",
-   "t_ko": "전기 중장비는 5년 안에 시장의 20%를 장악할 것으로 예상되지만 이것이 과제입니다.",
-   "t_id": "Alat Berat Listrik Diproyeksi Kuasai 20 Persen Pasar dalam 5 Tahun, Ini Tantangannya"
-  },
-  {
-   "ts": "2026-09-10T00:17:41+07:00",
-   "date": "2026-09-10",
-   "time": "00:17",
-   "src": "Jawa Pos",
-   "t": "OJK Targetkan Bursa Komoditas BMKS Beroperasi Januari 2027",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609090368/ojk-targetkan-bursa-komoditas-bmks-beroperasi-januari-2027",
-   "img": "https://cdn-assets.jawapos.com/images/1/2023/11/16/Ilustrasi-OJK-4222434501.jpg",
-   "t_ko": "OJK, BMKS 상품거래소 2027년 1월 출범 목표",
-   "t_id": "OJK Targetkan Bursa Komoditas BMKS Beroperasi Januari 2027"
-  },
-  {
-   "ts": "2026-09-10T00:00:00+07:00",
-   "date": "2026-09-10",
-   "time": "00:00",
-   "src": "IDNFinancials",
-   "t": "Trump seeks to restore US-Russia ties after the Ukraine war",
-   "tags": [],
-   "url": "https://www.idnfinancials.com/news/68607/trump-seeks-to-restore-us-russia-ties-after-the-ukraine-war",
-   "img": "https://photo2.idnfinancials.com/fly/idn/Trump-Putin.jpg"
-  },
-  {
-   "ts": "2026-09-09T23:53:06+07:00",
-   "date": "2026-09-09",
-   "time": "09/09",
-   "src": "Jawa Pos",
-   "t": "Pimpin BMKS OJK, Sarjito Targetkan Indonesia Bisa Tentukan Harga Komoditas",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609090345/pimpin-bmks-ojk-sarjito-targetkan-indonesia-bisa-tentukan-harga-komoditas",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/09/sarjito-resmi-menjabat-sebagai-kepala-eksekutif-bursa-minyak-dan-komoditas-strategis-bmks-otoritas-jasa-keuangan-ojk-periode-2026-2031-dok-jawaposcom-tGQ5N.webp",
-   "t_ko": "Sarjito, BMKS 이끌며 인도네시아 원자재 가격 결정력 확보 목표",
-   "t_id": "Pimpin BMKS OJK, Sarjito Targetkan Indonesia Bisa Tentukan Harga Komoditas"
   }
  ],
  "kisi_news": [
@@ -17791,9 +17805,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,588",
-   "d": -0.43,
-   "ytd": 5.19,
+   "v": "17,547",
+   "d": -0.23,
+   "ytd": 4.95,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -17803,9 +17817,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.12",
-   "d": -0.12,
-   "ytd": 12.98,
+   "v": "13.11",
+   "d": -0.1,
+   "ytd": 12.87,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17838,9 +17852,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.78",
-   "d": 0.01,
-   "ytd": 0.51,
+   "v": "98.80",
+   "d": 0.03,
+   "ytd": 0.53,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17850,9 +17864,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "97.07",
-   "d": 3.07,
-   "ytd": 69.05,
+   "v": "96.59",
+   "d": 2.56,
+   "ytd": 68.22,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17862,9 +17876,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,437.8",
-   "d": 0.39,
-   "ytd": 2.59,
+   "v": "4,452.5",
+   "d": 0.73,
+   "ytd": 2.93,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17886,9 +17900,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,868",
-   "d": -0.01,
-   "ytd": 1.12,
+   "v": "16,884",
+   "d": 0.08,
+   "ytd": 1.21,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20673,7 +20687,8 @@
    "exp": null,
    "prev": "-226.8B",
    "act": null,
-   "src": "investing.com"
+   "src": "investing.com",
+   "title_ko": "경상계정(2분기)"
   },
   {
    "date": "2026-09-24",
@@ -25437,7 +25452,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 818,
+  "pc_age_min": 890,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26699,9 +26714,9 @@
   },
   "model": "gemini-2.5-flash-lite",
   "index": {
-   "ko": "금융주(BBCA·BMRI) 약세 영향으로 IHSG 0.12% 하락.",
-   "id": "IHSG melemah 0,12% akibat pelemahan saham sektor keuangan (BBCA·BMRI).",
-   "ts": "2026-09-10T07:06:26.863396+07:00"
+   "ko": "대형 은행주(BBCA·BMRI) 약세로 금융업종이 하락하며 IHSG 0.12% 하락 마감.",
+   "id": "IHSG ditutup melemah 0,12% ditekan oleh pelemahan sektor keuangan akibat penurunan saham bank besar (BBCA dan BMRI).",
+   "ts": "2026-09-10T08:18:11.127177+07:00"
   }
  },
  "mcap": [
