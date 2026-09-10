@@ -86,6 +86,8 @@ def build(d):
         "ai_index": ((d.get("ai") or {}).get("index") or {}).get("ko") or "",
         "ai_stocks": {k: (v or {}).get("ko", "") for k, v in (((d.get("ai") or {}).get("stocks")) or {}).items() if (v or {}).get("ko")},
         "calendar": [],
+        # 장기기억 (memory_build.py): weeks=주간 시장 카드, stocks=종목별 이벤트 카드(챗봇이 질문 종목만 골라 씀), threads=미결 후속 확인
+        "memory": d.get("memory") or {},
     }
 
     for r in (d.get("stocks") or []):
