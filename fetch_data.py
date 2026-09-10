@@ -1143,6 +1143,31 @@ def scrape_home(src, limit=25):
         return out
     except Exception as e: log("scrape fail", src["name"], e); return []
 
+# ---- 글로벌 매체(whitelist 에 "global": true) — RSS 를 requests(8초) 로 받고, 죽은 URL 은 2시간 건너뛰어 빌드가 늦어지지 않게 한다. 홈 스크랩은 하지 않는다.
+FEED_HEALTH_P = CACHE / "feed_health.json"
+def _feed_health():
+    try: return json.loads(FEED_HEALTH_P.read_text(encoding="utf-8"))
+    except Exception: return {}
+def _fetch_feed(url, timeout=8):
+    r = requests.get(url, headers={"User-Agent": UA, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"}, timeout=timeout)
+    if r.status_code != 200: raise RuntimeError(f"HTTP {r.status_code}")
+    ents = feedparser.parse(r.content).entries
+    if not ents: raise RuntimeError("empty")
+    return ents
+def _global_entries(src, dg):
+    hp = _feed_health(); now = time.time(); out = []
+    for url in [src.get("rss")] + list(src.get("rss_alt") or []):
+        if not url: continue
+        h = hp.get(url) or {}
+        if h.get("fail") and now - h["fail"] < 7200: continue          # 최근 실패 → 2시간 뒤 재시도
+        try:
+            out = _fetch_feed(url); hp[url] = {"ok": now}; dg["via"] = "rss" if url == src.get("rss") else "alt"; break
+        except Exception as e:
+            hp[url] = {"fail": now, "err": str(e)[:60]}; log("global rss fail", src["name"], url.split("/")[2], str(e)[:60])
+    try: FEED_HEALTH_P.write_text(json.dumps(hp), encoding="utf-8")
+    except Exception: pass
+    return out
+
 # =============================================================== 헤드라인 번역 (인니/영어 → 한국어)
 # 원문(t)은 절대 지우지 않는다. 번역문은 t_ko 로 따로 붙이고 화면에서 병기한다 (기계번역이므로 원문 대조 가능해야 함).
 TR_CACHE_P = CACHE / "tr_ko.json"          # 외부 엔진(구글·마이메모리) 결과
@@ -1543,24 +1568,31 @@ def news_block(max_items=None):
     max_items = max_items or CFG.get("news_max_items", 80); items = []; market = []; diag = {}
     for src in CFG["whitelist"]:
         entries = []; dg = diag.setdefault(src["name"], {"feed": 0, "stock": 0, "market": 0, "drop": 0, "via": "rss"})
-        for url in [u for u in (src.get("rss"), None) if u is not None]:
-            try: entries = feedparser.parse(url, request_headers={"User-Agent": UA}).entries
-            except Exception as e: log("rss fail", src["name"], e)
-        if not entries:
-            alt = discover_rss(src)
-            if alt and alt != src.get("rss"):
-                try: entries = feedparser.parse(alt, request_headers={"User-Agent": UA}).entries
-                except Exception: pass
-        if not entries:
-            entries = scrape_home(src); log("rss empty → home scrape", src["name"], len(entries)); dg["via"] = "home"
+        glob = bool(src.get("global"))
+        if glob:
+            entries = _global_entries(src, dg)
+        else:
+            for url in [u for u in (src.get("rss"), None) if u is not None]:
+                try: entries = feedparser.parse(url, request_headers={"User-Agent": UA}).entries
+                except Exception as e: log("rss fail", src["name"], e)
+            if not entries:
+                alt = discover_rss(src)
+                if alt and alt != src.get("rss"):
+                    try: entries = feedparser.parse(alt, request_headers={"User-Agent": UA}).entries
+                    except Exception: pass
+            if not entries:
+                entries = scrape_home(src); log("rss empty → home scrape", src["name"], len(entries)); dg["via"] = "home"
         dg["feed"] = len(entries)
-        for e in entries[:40]:
+        for e in entries[:(25 if glob else 40)]:
             title = html.unescape(e.get("title", "")).strip()
+            if glob: title = re.sub(r"\s+[-–|]\s+[A-Za-z .&']{3,30}$", "", title).strip()       # 구글뉴스식 " - Reuters" 매체 접미사 제거
             summ = re.sub("<[^>]+>", " ", html.unescape(e.get("summary", "")))
-            tags = screen(title + " " + summ, e.get("link", ""))
+            if glob and not re.search(r"\b(indonesia|jakarta)\b", title + " " + summ, re.I): tags = []   # 영문 기사의 대문자 낱말(BEST·NATO 등)을 티커로 오인하지 않게 — 인니 언급 기사만 티커 매칭
+            else: tags = screen(title + " " + summ, e.get("link", ""))
             _div_from_text(title + ". " + summ, tags, e.get("link", ""), src["name"])
             is_market = not tags
-            if is_market and not _market_news_ok(title, summ, e.get("link", "")): dg["drop"] += 1; continue     # 티커 없는 기사 중 경제·정책·금융·증시 섹션만 시장 뉴스로
+            if is_market and glob and not _global_news_ok(title, summ): dg["drop"] += 1; continue          # 글로벌 매체: 영문 시장·경제·지정학 기준
+            if is_market and not glob and not _market_news_ok(title, summ, e.get("link", "")): dg["drop"] += 1; continue     # 티커 없는 기사 중 경제·정책·금융·증시 섹션만 시장 뉴스로
             if is_market and not (e.get("published_parsed") or e.get("updated_parsed")) and not _entry_image(e): dg["drop"] += 1; continue   # 홈 스크랩(시각·사진 없음)은 시장 뉴스에서 제외
             dg["market" if is_market else "stock"] += 1
             ts = e.get("published_parsed") or e.get("updated_parsed")
@@ -1581,6 +1613,7 @@ def news_block(max_items=None):
             it = {"ts": t.isoformat(), "date": t.date().isoformat(), "time": t.strftime("%H:%M") if t.date() == now_wib().date() else t.strftime("%m/%d"),
                   "src": src["name"], "t": title, "tags": tags, "url": e.get("link", "")}
             if est: it["t_est"] = True
+            if is_market and (glob or GLOBAL_CUE_RX.search(title)): it["g"] = 1      # 글로벌 뉴스 표시(해외 매체 또는 해외 시장·지정학 단서)
             img = _entry_image(e)
             if img: it["img"] = img
             (market if is_market else items).append(it)
@@ -1599,7 +1632,7 @@ def news_block(max_items=None):
         k = it["t"][:60]
         if k in seen2: continue
         seen2.add(k); out2.append(it)
-    MARKET_NEWS[:] = translate_news(out2[:CFG.get("market_news_max", 30)])
+    MARKET_NEWS[:] = translate_news(_mix_global(out2, CFG.get("market_news_max", 36), CFG.get("market_news_global_min", 10)))
     return translate_news(out[:max_items])
 
 MARKET_NEWS = []
@@ -1666,6 +1699,28 @@ def _market_news_ok(title, summ="", link=""):
         if POLITICS_RX.search(t) and not MARKET_RX.search(t): return False  # 선거·정쟁·비난전은 시장 단서가 없으면 제외 (Trump 도 예외 아님)
         return bool(POLICY_RX.search(t) or MARKET_RX.search(t))
     return bool(MARKET_RX.search(title)) or bool(MARKET_RX.search((summ or "")[:200]))
+
+# ---- 글로벌(영문) 매체용 기준: 시장·경제·원자재·통화·지정학 단서가 있을 때 채택, 스포츠·연예·범죄·생활·개인재테크는 제외
+GLOBAL_MKT_RX = re.compile(r"\b(fed|fomc|powell|treasur(y|ies)|yields?|bonds?|stocks?|shares?|equit(y|ies)|wall street|s&p|nasdaq|dow\b|nikkei|kospi|hang seng|shanghai|csi ?300|sensex|msci|futures|dollar|greenback|yen|yuan|renminbi|euro|rupiah|ringgit|baht|peso|won\b|forex|oil|brent|crude|opec|natural gas|lng|gold|silver|copper|nickel|coal|palm oil|iron ore|lithium|tariffs?|trade (war|deal|talks|deficit|surplus|truce)|sanctions?|exports?|imports?|inflation|cpi|ppi|gdp|recession|slowdown|jobs?|payrolls|unemployment|rate (cut|hike|decision|path)|interest rates?|central bank|ecb|boj|pboc|boe|rbi|bank of (japan|korea|england|indonesia)|earnings|profits?|revenue|ipo|merger|acquisition|takeover|buyout|stake|investors?|markets?|economy|economic|fiscal|stimulus|debt|deficit|budget|bailout|default|chips?|semiconductors?|nvidia|tsmc|samsung|tesla|apple|alibaba|tencent|byd|china|beijing|japan|korea|india|asean|asia|emerging markets?|indonesia|jakarta|geopolit|iran|israel|ukraine|russia|taiwan|ceasefire|missile|strait of hormuz|trump|white house|xi jinping|imf|world bank|wto|g20|g7|shipping|freight|supply chain|nickel|ev\b|electric vehicles?)\b", re.I)
+GLOBAL_NO_RX = re.compile(r"\b(nfl|nba|mlb|nhl|soccer|football|tennis|golf|olympics?|world cup|premier league|celebrit(y|ies)|actor|actress|movie|film|netflix|grammy|oscars?|royal family|prince|princess|kardashian|recipe|diet|weight loss|cancer|vaccine|covid|murder|shooting|stabbing|arrested|manhunt|wildfire|hurricane|tornado|storm|snow|heatwave|travel|vacation|hotel|restaurant|iphone|galaxy|gadget|opinion|editorial|horoscope|lottery|dating|wedding|divorce|obituary|dies at|podcast|crossword|quiz)\b", re.I)
+GLOBAL_LIFE_RX = re.compile(r"^(‘|'|\"|“|my |i |we |how to|here's|here are|what to|should you|why you|the best|best |top \d+|\d+ (ways|things|reasons|stocks to|tips))|\b(moneyist|retire(ment|es)?|401\(k\)|ira\b|mortgage rates?|credit cards?|social security|medicare|savings account|personal finance|side hustle|net worth|dividend stocks to buy|stocks to buy|buy now)\b", re.I)
+GLOBAL_CUE_RX = re.compile(r"\b(the fed|fomc|wall street|nasdaq|dow jones|s&p|treasury|trump|gedung putih|white house|iran|israel|rusia|russia|ukraina|ukraine|china|tiongkok|beijing|jepang|japan|korea|india|eropa|europe|ecb|boj|pboc|opec|brent|wti|harga minyak|oil price|harga emas|gold price|global|dunia|world|asia|geopolitik|geopolit|tarif (trump|as|impor as)|perang dagang|trade war|resesi (global|as)|ekonomi (global|as|china|dunia)|bursa (asia|as|global)|saham (asia|as|global))\b", re.I)   # 국내 매체 기사도 이 단서가 있으면 글로벌 뉴스로 표시
+def _global_news_ok(title, summ=""):
+    t = title or ""
+    if GLOBAL_NO_RX.search(t) or GLOBAL_LIFE_RX.search(t): return False
+    return bool(GLOBAL_MKT_RX.search(t)) or bool(GLOBAL_MKT_RX.search((summ or "")[:200]))
+def _mix_global(items, n, gmin):
+    """시각순 상위 n 건을 고르되 글로벌(g) 기사가 gmin 건 미만이면 가장 오래된 국내 기사를 빼고 글로벌 기사를 채운다 (국내 매체가 시간순으로 밀어내는 것 방지)"""
+    pick = items[:n]
+    have = sum(1 for i in pick if i.get("g"))
+    if have < gmin:
+        extra = [i for i in items[n:] if i.get("g")][:gmin - have]
+        if extra:
+            dom = [i for i in pick if not i.get("g")]
+            drop = {id(i) for i in dom[max(0, len(dom) - len(extra)):]}
+            pick = [i for i in pick if id(i) not in drop] + extra
+            pick.sort(key=lambda x: x["ts"], reverse=True)
+    return pick
 
 def _entry_image(e):
     """RSS 항목의 썸네일 URL (media:thumbnail / media:content / enclosure / summary 안의 <img>)"""
