@@ -12,6 +12,7 @@
 //   GEMINI_API_KEY  (Secret, 필수)  Gemini API 키. 절대 저장소·index.html 에 넣지 말 것 — 저장소는 공개다.
 //   CHAT_TOKEN      (Secret, 필수)  사내 접속 암구호. 미설정이면 /api/chat 은 503 으로 닫힌다.
 //   GEMINI_MODEL    (Variable, 선택) 기본 gemini-3.8-flash. 모델 교체 시 코드 수정 없이 여기만 바꾼다.
+//   GEMINI_SEARCH   (Variable, 선택) off 로 두면 구글 검색 그라운딩을 끈다. 기본 켜짐 — 화이트리스트 매체 site: 검색만 허용.
 //   GEMINI_THINKING (Variable, 선택) low / medium / high / off. 비워두면 gemini-3.8 계열에만 low 를 넣는다.
 //   QUOTA_MSG       (Variable, 선택) 할당량 초과(429) 때 화면에 뜨는 문구. 비워두면 기본 문구.
 //   GEMINI_BASE     (Variable, 선택) Gemini 호출 기지 주소. 기본은 구글 직통.
@@ -32,6 +33,12 @@ const ALLOW = ["query1.finance.yahoo.com", "query2.finance.yahoo.com", "www.idx.
 const MAX_Q = 1000, MAX_TURNS = 8, MAX_HIST_CHARS = 4000, MAX_STOCKS = 40, TOP_STOCKS = 30;
 // gemini-3.8-flash 는 사고형 모델이라 thought 토큰이 출력 예산을 함께 쓴다 — 넉넉히 잡아야 빈 응답이 안 난다
 const MAX_OUT = 8192;
+
+
+// 검색 그라운딩 허용 매체 — config.json whitelist 31곳 + IDX 공식. 검색어에 site: 로 강제하고, 인용도 이 도메인만 남긴다
+const WL_DOMAINS = ["reuters.com","bloomberg.com","bloombergtechnoz.com","thejakartapost.com","kompas.com","tempo.co","antaranews.com","cnnindonesia.com","detik.com","liputan6.com","tvonenews.com","kompas.tv","tvrinews.com","jawapos.com","bisnis.com","kontan.co.id","cnbcindonesia.com","investor.id","idnfinancials.com","emitennews.com","idxchannel.com","infobanknews.com","katadata.co.id","mediaindonesia.com","rm.id","tribunnews.com","kumparan.com","beritasatu.com","medcom.id","republika.co.id","swa.co.id","idx.co.id"];
+const WL_SITE = WL_DOMAINS.slice(0, 12).map(d => "site:" + d).join(" OR ");   // 검색어에 붙일 site: 절 (너무 길면 검색이 실패하므로 주요 12곳)
+const wlOk = (url) => { try { const h = new URL(url).hostname.replace(/^www\./, ""); return WL_DOMAINS.some(d => h === d || h.endsWith("." + d)); } catch { return false; } };
 
 const CORS = { "Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET,POST,OPTIONS", "Access-Control-Allow-Headers": "Content-Type,x-chat-token" };
 const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { "Content-Type": TYPES.json, ...CORS } });
@@ -93,9 +100,12 @@ function sliceCtx(c, text) {
   const src = text || "", low = src.toLowerCase();
   const hit = {};
   let n = 0;
-  // 티커는 대문자로 적힌 것만 인정한다 (소문자까지 올리면 news/high 같은 단어가 티커로 오인됨)
-  for (const m of src.matchAll(/\b[A-Z]{4}\b/g)) {
-    const t = m[0];
+  // 티커는 대소문자 무관 (hatm → HATM). 실제 종목 목록에 있는 4글자만 채택하므로 news/high 같은 일반 단어는 걸리지 않는다
+  // 단, 소문자로 적힌 일반 단어(bank·emas·beli·good…)가 우연히 티커와 같은 경우는 제외 — 대문자로 적으면 항상 티커로 본다
+  const COMMON = new Set(["bank","emas","beli","jual","naik","same","good","best","fast","cash","mark","news","high","open","week","year","true","data","kali","juta","bisa","akan","dari","ini","yang","untuk","hari","ada","apa","saja","tadi","pagi","sore"]);
+  for (const m of src.matchAll(/\b[A-Za-z]{4}\b/g)) {
+    const raw = m[0], t = raw.toUpperCase();
+    if (raw !== t && COMMON.has(raw.toLowerCase())) continue;
     if (stocks[t] && !hit[t] && n < MAX_STOCKS) { hit[t] = stocks[t]; n++; }
   }
   if (n < MAX_STOCKS) {
@@ -125,8 +135,9 @@ function sysPrompt(ctx, lang) {
     "너는 KISI Research 의 인도네시아 증시 데이터 어시스턴트다. 사용자는 증권사 리서치 실무자다.",
     "",
     "[절대 규칙]",
-    "1. 아래 <DATA> 에 있는 값만 사용한다. DATA 에 없는 숫자는 절대 만들어내지 않는다.",
-    "2. DATA 에 없으면 '확인 불가'라고 명시한다. 추정치로 채우지 않는다.",
+    "1. 주가·등락률·거래대금·수급 같은 숫자는 아래 <DATA> 에 있는 값만 사용한다. DATA 에 없는 숫자는 절대 만들어내지 않는다.",
+    "2. 숫자가 DATA 에 없으면 '확인 불가'라고 명시한다. 추정치로 채우지 않는다.",
+    "2-1. [기사 검색] 왜 움직였는지·배경·회사 사정처럼 DATA 만으로 답이 안 되는 질문은 google_search 도구로 기사를 찾아 근거로 쓴다. 검색어에는 반드시 다음 site: 절을 붙인다: (" + WL_SITE + ") — 이 화이트리스트 매체 밖의 기사는 근거로 쓰지 않는다. 기사에서 가져온 내용은 '○○(매체명, 날짜) 보도에 따르면' 처럼 출처를 문장 안에 밝히고, 기사 내용과 DATA 숫자를 섞지 않는다. 시세 질문만이면 검색하지 않는다.",
     "3. '~인 것 같다', '~로 보인다' 같은 추정형 표현을 쓰지 않는다. '~로 확인됨', '~ 영향으로 판단됨' 처럼 근거 기반으로 쓴다.",
     "4. 숫자는 단독으로 두지 않고 비교를 붙인다 (전일 대비, YTD, 시장 대비, 섹터 대비).",
     "5. 설명은 '데이터 → 원인 → 결과' 순서로 연결한다. 원인이 DATA 로 뒷받침되지 않으면 원인을 쓰지 않는다.",
@@ -140,7 +151,7 @@ function sysPrompt(ctx, lang) {
     "- index: 장중 고저·YTD·거래대금(value_idr)·상승(adv)/하락(dec)/보합(unch)·외국인 순매수(foreign_net_idr, 기준일 foreign_date).",
     "- rank: 배열 순서는 rank_fields 와 같다. value=거래대금 상위, gainers=상승률, losers=하락률, turnover=거래대금 급증, foreign_top/bottom=외국인 순매수 상하위.",
     "- stocks_matched / stocks_top: 배열 순서는 stock_fields 와 같다.",
-    "- news/market_news: t 는 한국어, t_id 는 인도네시아어 원문. tags 는 관련 티커.",
+    "- news/market_news: t 는 한국어, t_id 는 인도네시아어 원문. tags 는 관련 티커. ai 는 기사 본문 2문장 요약(있을 때만) — 종목 사정을 물으면 먼저 이 요약을 근거로 쓰고, 부족할 때 검색한다.",
     "- calendar: imp 는 중요도(별 개수). act=실제, exp=예상, prev=이전.",
     "- announcements: IDX 공시.",
     "- macro: v 는 이미 포맷된 문자열이다. 그대로 인용한다.",
@@ -179,6 +190,22 @@ function outputText(j) {
     for (const c of (s.content || [])) if (c.type === "text" && c.text) out += c.text;
   }
   return out.trim();
+}
+
+// 검색 그라운딩 인용 — 화이트리스트 도메인만 남긴다 (url_citation annotations + 검색어)
+function citations(j) {
+  const steps = (j && j.steps) || [];
+  const urls = new Map(); const queries = []; let searched = false;
+  for (const s of steps) {
+    for (const c of (s.content || [])) {
+      if (c.type === "google_search_call") { searched = true; for (const q of (c.queries || [])) queries.push(q); }
+      for (const a of (c.annotations || [])) {
+        if (a.type === "url_citation" && a.url && !urls.has(a.url)) urls.set(a.url, a.title || "");
+      }
+    }
+  }
+  const wl = [...urls.entries()].filter(([u]) => wlOk(u)).map(([url, title]) => ({ url, title }));
+  return { searched, queries, sources: wl, dropped: urls.size - wl.length };
 }
 
 // 문제 생겼을 때 원인을 한 화면에서 보기 위한 진단 라우트 (CHAT_TOKEN 필요)
@@ -247,6 +274,7 @@ async function chat(req, env) {
       input: (histText ? `[이전 대화]\n${histText}\n\n` : "") + `[질문]\n${q}`,
       system_instruction: sysPrompt(ctx, lang),
       generation_config: genCfg(env, model),
+      ...(((env && env.GEMINI_SEARCH) || "") === "off" ? {} : { tools: [{ type: "google_search" }] }),   // 화이트리스트 매체 site: 검색 (프롬프트로 강제)
       store: false,          // 대화를 구글 쪽에 남기지 않는다 (사내 데이터)
     }),
   });
@@ -282,11 +310,18 @@ async function chat(req, env) {
     }, 502);
   }
 
+  const cit = citations(j);
+  let textOut = text;
+  if (cit.sources.length) {
+    const label = lang === "id" ? "Sumber" : "출처";
+    textOut += "\n\n" + label + ": " + cit.sources.slice(0, 5).map(s2 => { let h = ""; try { h = new URL(s2.url).hostname.replace(/^www\./, ""); } catch {} return `[${h}](${s2.url})`; }).join(" · ");
+  }
   return json({
-    text,
+    text: textOut,
     model,
     updated: c.updated,
     delay_min: c.delay_min,
+    search: cit.searched ? { queries: cit.queries.slice(0, 5), sources: cit.sources.length, dropped: cit.dropped } : null,
     usage: j.usage || null,
   });
 }
