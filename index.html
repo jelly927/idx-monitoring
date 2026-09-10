@@ -744,7 +744,7 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
 #gchatBody{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:9px;background:var(--bg)}
 .gcRow{display:flex;gap:7px;align-items:flex-start;max-width:92%}
 .gcRow.u{align-self:flex-end}
-.gcMsg{padding:8px 11px;border-radius:11px;font-size:12.5px;line-height:1.62;white-space:pre-wrap;word-break:break-word}
+.gcMsg{padding:8px 11px;border-radius:11px;font-size:12.5px;line-height:1.62;white-space:pre-wrap;word-break:break-word}.gcMsg a{color:var(--brand);text-decoration:underline}
 .gcMsg.u{background:var(--brand);color:#fff;border-bottom-right-radius:3px}
 .gcMsg.a{background:var(--card);color:var(--ink);border:1px solid var(--line);border-bottom-left-radius:3px}
 .gcMsg.e{background:var(--dnbg);color:var(--dn);border:1px solid var(--line);font-size:12px}
@@ -850,6 +850,11 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
   });
 
+  // 답변 표시: HTML 이스케이프 후 **굵게**·[제목](URL)·맨 URL 만 링크로 (표·목록은 텍스트 그대로)
+  function chatHtml(t){var e=String(t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    e=e.replace(/\[([^\]\n]+)\]\((https?:\/\/[^\s)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+    e=e.replace(/(^|[^"'>])(https?:\/\/[^\s<]+)/g,function(m,a,u){return a+'<a href="'+u+'" target="_blank" rel="noopener">'+u.replace(/^https?:\/\/(www\.)?/,'').slice(0,60)+'</a>';});
+    return e.replace(/\*\*([^*\n]+)\*\*/g,'<b>$1</b>');}
   form.addEventListener('submit', function(e){
     e.preventDefault();
     var q = input.value.trim();
@@ -870,7 +875,7 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
           w.textContent = res.j.error || ('HTTP ' + (res.j.status || '?'));
           return;
         }
-        w.textContent = res.j.text;
+        w.innerHTML = chatHtml(res.j.text);
         hist.push({ role: 'user', text: q }); hist.push({ role: 'model', text: res.j.text });
         meta((res.j.model || '') + ' · ' + (res.j.updated || '') + ' WIB');
       })
