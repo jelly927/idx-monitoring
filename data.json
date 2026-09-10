@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 23:39",
+ "updated": "2026-09-10 23:52",
  "delay_min": 0,
- "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 23:07 Yahoo",
- "idr_per_krw": 13.0264,
+ "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,345 · 23:07 Yahoo",
+ "idr_per_krw": 13.0325,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 23:37",
+   "asof": "investing.com 23:51",
    "unit": "bp"
   }
  ],
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7593.35,
+   "px": 7602.21,
    "prev": 7637.7,
-   "pct": -0.58,
-   "asof": "23:35",
+   "pct": -0.46,
+   "asof": "23:50",
    "live": true,
    "spark": [
     7591.46,
@@ -15122,17 +15122,20 @@
     7593.97,
     7593.73,
     7590.19,
-    7593.35
+    7594.94,
+    7601.41,
+    7602.3,
+    7602.21
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26100.42,
+   "px": 26143.72,
    "prev": 26253.34,
-   "pct": -0.58,
-   "asof": "23:35",
+   "pct": -0.42,
+   "asof": "23:50",
    "live": true,
    "spark": [
     26012.32,
@@ -15172,17 +15175,20 @@
     26107.09,
     26105.45,
     26092.24,
-    26100.42
+    26106.0,
+    26139.67,
+    26139.96,
+    26143.72
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52060.79,
+   "px": 52086.79,
    "prev": 52391.48,
-   "pct": -0.63,
-   "asof": "23:35",
+   "pct": -0.58,
+   "asof": "23:50",
    "live": true,
    "spark": [
     52225.89,
@@ -15222,7 +15228,10 @@
     52063.82,
     52064.25,
     52033.16,
-    52060.79
+    52078.11,
+    52092.88,
+    52094.09,
+    52086.79
    ]
   },
   {
@@ -15549,8 +15558,8 @@
     "KOTA"
    ],
    "url": "https://mediaindonesia.com/nusantara/932164/wali-kota-semarang-dukung-mbg-dan-kkmp",
-   "t_id": "Wali Kota Semarang dukung MBG dan KKMP",
-   "t_ko": "Semarang 시장, MBG와 KKMP 지원 표명"
+   "t_ko": "Semarang 시장, MBG와 KKMP 지원 표명",
+   "t_id": "Wali Kota Semarang dukung MBG dan KKMP"
   },
   {
    "ts": "2026-09-10T23:00:00+07:00",
@@ -16834,6 +16843,55 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T23:44:00+07:00",
+   "date": "2026-09-10",
+   "time": "23:44",
+   "src": "WSJ",
+   "t": "Regulatory Uncertainty Clouds Chinese Robot Firm Galaxea AI’s IPO Plan",
+   "tags": [],
+   "url": "https://www.wsj.com/business/regulatory-uncertainty-clouds-chinese-robot-firm-galaxea-ais-ipo-plan-b6dab954?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-53259187",
+   "t_ko": "중국 로봇업체 Galaxea AI, 규제 불확실성에 IPO 계획 차질",
+   "t_id": "Ketidakpastian Regulasi Bayangi Rencana IPO Perusahaan Robot China Galaxea AI"
+  },
+  {
+   "ts": "2026-09-10T23:40:25+07:00",
+   "date": "2026-09-10",
+   "time": "23:40",
+   "src": "Bloomberg",
+   "t": "How Jack Bogle Predicted Vanguard's Market Plateau",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/how-jack-bogle-predicted-vanguard-s-market-plateau",
+   "g": 1,
+   "t_ko": "Jack Bogle의 Vanguard 시장 정체 예측 배경",
+   "t_id": "Cara Jack Bogle Prediksi Dataran Tinggi Pasar Vanguard"
+  },
+  {
+   "ts": "2026-09-10T23:40:06+07:00",
+   "date": "2026-09-10",
+   "time": "23:40",
+   "src": "CNBC",
+   "t": "10-year Treasury yield tops 4.9%, highest since 2023, as oil surge raises inflation fears",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/us-treasurys-bonds-yield.html",
+   "g": 1,
+   "t_ko": "유가 급등에 인플레이션 우려 고조로 10년물 국채금리 4.9% 돌파",
+   "t_id": "Imbal Hasil US Treasury 10 Tahun Tembus 4,9%, Tertinggi Sejak 2023, Lonjakan Minyak Picu Inflasi"
+  },
+  {
+   "ts": "2026-09-10T23:37:52+07:00",
+   "date": "2026-09-10",
+   "time": "23:37",
+   "src": "Bloomberg",
+   "t": "Big Take: Trump's Venezuela Oil Deal",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-10/big-take-trump-s-venezuela-oil-deal-video",
+   "g": 1,
+   "t_ko": "트럼프의 베네수엘라 원유 거래 배경",
+   "t_id": "Big Take: Kesepakatan Minyak Venezuela Trump"
+  },
+  {
    "ts": "2026-09-10T23:37:19+07:00",
    "date": "2026-09-10",
    "time": "23:37",
@@ -16856,6 +16914,32 @@
     "investasi teknologi",
     "efisiensi"
    ]
+  },
+  {
+   "ts": "2026-09-10T23:35:16+07:00",
+   "date": "2026-09-10",
+   "time": "23:35",
+   "src": "Yahoo Finance",
+   "t": "Eli Lilly Stock Has Become a Trillion-Dollar Giant. Is It Too Late to Buy?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/eli-lilly-stock-become-trillion-163516555.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/b38cbbe9897c8d27b5d38acb9ade5a7d.jpg",
+   "t_ko": "시가총액 1조 달러 돌파한 Eli Lilly, 지금 매수해도 늦지 않나",
+   "t_id": "Saham Eli Lilly Jadi Raksasa USD 1 Triliun, Masih Layak Beli?"
+  },
+  {
+   "ts": "2026-09-10T23:35:00+07:00",
+   "date": "2026-09-10",
+   "time": "23:35",
+   "src": "Yahoo Finance",
+   "t": "Want to Make a Fortune From the AI Power Boom? Buy These 2 Industrial Stocks",
+   "tags": [],
+   "url": "https://finance.yahoo.com/technology/ai/articles/want-fortune-ai-power-boom-163500791.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/422a76db4941288cb30d396a6a1066c7.jpg",
+   "t_ko": "AI 전력 열풍 수혜주로 꼽히는 산업재 주식 2개",
+   "t_id": "Ingin Raup Untung Besar dari Lonjakan Energi AI? Beli 2 Saham Industri Ini"
   },
   {
    "ts": "2026-09-10T23:33:00+07:00",
@@ -16882,6 +16966,19 @@
    "img": "https://images.wsj.net/im-07626629",
    "t_ko": "헬스케어 부문 동향",
    "t_id": "Fokus Kesehatan: Market Talk"
+  },
+  {
+   "ts": "2026-09-10T23:31:37+07:00",
+   "date": "2026-09-10",
+   "time": "23:31",
+   "src": "Yahoo Finance",
+   "t": "Why Signet Jewelers Stock Pulled Back Today",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/why-signet-jewelers-stock-pulled-163137778.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/34e72661f193eb07d8f8284b580c10a2.jpg",
+   "t_ko": "Signet Jewelers 주가 하락 배경",
+   "t_id": "Alasan Saham Signet Jewelers Terkoreksi Hari Ini"
   },
   {
    "ts": "2026-09-10T23:30:00+07:00",
@@ -16972,17 +17069,17 @@
    "t_id": "Imbal Hasil Obligasi Global Sentuh Rekor Tertinggi, Minyak Kobarkan Kekhawatiran Inflasi"
   },
   {
-   "ts": "2026-09-10T23:18:04+07:00",
+   "ts": "2026-09-10T23:18:15+07:00",
    "date": "2026-09-10",
    "time": "23:18",
-   "src": "FT",
-   "t": "Global bond sell-off reignites as oil jumps to $107",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Dow Slides As Oil Hits $100; Nvidia Drops Amid News Of Palantir Partnership (Live Coverage)",
    "tags": [],
-   "url": "https://www.ft.com/content/49e8c693-0064-4ef9-917f-5f2be97458fc?syn-25a6b1a6=1",
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-nvidia-chipmaker-tsmc/?src=A00220&yptr=yahoo",
    "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fe5996a66-3010-4e36-b651-46e7015f19bb.png?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "유가 107달러 치솟으며 글로벌 채권 매도세 재확산",
-   "t_id": "Aksi Jual Obligasi Global Memanas Seiring Minyak Tembus $107"
+   "img": "https://media.zenfs.com/en/ibd.com/efdd2096566747a1c5895ff0ab582f7b.jpg",
+   "t_ko": "뉴욕증시, 유가 $100 돌파에 하락 — Nvidia는 Palantir 제휴설에 약세",
+   "t_id": "Bursa Saham Hari Ini: Dow Anjlok Saat Minyak Tembus USD 100; Nvidia Turun di Tengah Kabar Kemitraan Palantir"
   },
   {
    "ts": "2026-09-10T23:15:28+07:00",
@@ -16995,96 +17092,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/10/detikevent-accurate-1789056534137_169.jpeg?w=360&q=90",
    "t_ko": "Accurate로 회계 장부 작성법 학습",
    "t_id": "Masih Kesulitan Bikin Laporan Keuangan Usaha? Coba Belajar Accurate"
-  },
-  {
-   "ts": "2026-09-10T23:14:25+07:00",
-   "date": "2026-09-10",
-   "time": "23:14",
-   "src": "CNBC",
-   "t": "10-year Treasury yield tops 4.9%, highest since 2023, as oil surge raises inflation fears",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/us-treasurys-bonds-yield.html",
-   "g": 1,
-   "t_ko": "유가 급등에 인플레이션 우려 고조로 10년물 국채금리 4.9% 돌파",
-   "t_id": "Imbal Hasil US Treasury 10 Tahun Tembus 4,9%, Tertinggi Sejak 2023, Lonjakan Minyak Picu Inflasi"
-  },
-  {
-   "ts": "2026-09-10T23:13:24+07:00",
-   "date": "2026-09-10",
-   "time": "23:13",
-   "src": "FT",
-   "t": "Traders refocus on US Treasury auction as sovereign debt rout intensifies",
-   "tags": [],
-   "url": "https://www.ft.com/content/083a9c4b-3913-496d-be13-22c96053624b?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ffa2544fb-699a-4a59-8161-24ebd6a7594e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "국채 금리 급등 속 미국 국채 입찰로 눈 돌리는 트레이더",
-   "t_id": "Trader Kembali Fokus ke Lelang Obligasi AS di Tengah Ketatnya Tekanan Utang Negara"
-  },
-  {
-   "ts": "2026-09-10T23:08:45+07:00",
-   "date": "2026-09-10",
-   "time": "23:08",
-   "src": "Yahoo Finance",
-   "t": "3 Shaky Consumer Dividend Stocks Flashing Warning Signs",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/3-shaky-consumer-dividend-stocks-160845041.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/ec2751333e22ac535ba96fc7b53caa82.jpg",
-   "t_ko": "경고등 켜진 흔들리는 소비주 배당주 3선",
-   "t_id": "3 Saham Dividen Konsumer Goyah Beri Sinyal Peringatan"
-  },
-  {
-   "ts": "2026-09-10T23:07:28+07:00",
-   "date": "2026-09-10",
-   "time": "23:07",
-   "src": "Yahoo Finance",
-   "t": "SolarEdge Falls 4% on Analyst Day Despite Joint NVIDIA 800 VDC Paper; Enphase Energy and First Solar Edge Higher",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/solaredge-falls-4-analyst-day-160728979.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/a1137a91007156c8976aa98be61f8847.jpg",
-   "t_ko": "NVIDIA와 협력 발표에도 애널리스트 데이에 SolarEdge 4% 하락 — Enphase Energy와 First Solar는 상승",
-   "t_id": "SolarEdge Anjlok 4% di Analyst Day Meski Gandeng Kertas 800 VDC NVIDIA; Enphase Energy dan First Solar Menguat Tipis"
-  },
-  {
-   "ts": "2026-09-10T23:06:05+07:00",
-   "date": "2026-09-10",
-   "time": "23:06",
-   "src": "Yahoo Finance",
-   "t": "This Stock's Tumbling Price Lends Itself To A Bearish Options Move",
-   "tags": [],
-   "url": "https://www.investors.com/research/options/coreweave-crwv-stock-bear-put-spread-options/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/ecd9e26335fef47618374510afa9eb21.jpg",
-   "t_ko": "주가 급락세 반영한 풋옵션 매도 전략 유효",
-   "t_id": "Anjloknya Harga Saham Ini Dorong Strategi Opsi Bearish"
-  },
-  {
-   "ts": "2026-09-10T23:04:42+07:00",
-   "date": "2026-09-10",
-   "time": "23:04",
-   "src": "FT",
-   "t": "Vantage Data Centers seeks $2bn in loans from Pimco and PGIM",
-   "tags": [],
-   "url": "https://www.ft.com/content/e7a8a9fa-0dc2-41df-890c-9628efac54fd?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F49707736-0f02-4d95-9354-74014920718a.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "Vantage Data Centers, Pimco와 PGIM에 20억 달러 대출 추진",
-   "t_id": "Vantage Data Centers Incar Pinjaman $2 Miliar dari Pimco dan PGIM"
-  },
-  {
-   "ts": "2026-09-10T23:03:59+07:00",
-   "date": "2026-09-10",
-   "time": "23:03",
-   "src": "Yahoo Finance",
-   "t": "Red Robin (RRGB) Completes $89.4M of Refranchising Transactions. Will Debt Relief Offset the Loss of Company-Operated Economics?",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/red-robin-rrgb-completes-89-160359751.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/f4563b5117bb062f670b18c175af0cc0.jpg",
-   "t_ko": "Red Robin(RRGB), 8,940만 달러 규모 가맹 전환 완료 — 부채 감축 효과 기대",
-   "t_id": "Red Robin (RRGB) Rampungkan Refranchising $89,4 Juta, Restrukturisasi Utang Redam Kehilangan Pendapatan Gerai?"
   },
   {
    "ts": "2026-09-10T22:55:00+07:00",
@@ -17516,9 +17523,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.924%",
-   "d": 1.8,
-   "ytd": 18.28,
+   "v": "4.922%",
+   "d": 1.76,
+   "ytd": 18.23,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17539,9 +17546,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.93",
-   "d": 0.2,
-   "ytd": 0.66,
+   "v": "98.99",
+   "d": 0.25,
+   "ytd": 0.72,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17551,9 +17558,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.58",
-   "d": 5.7,
-   "ytd": 76.91,
+   "v": "101.68",
+   "d": 5.81,
+   "ytd": 77.08,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17563,9 +17570,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,404.0",
-   "d": -1.08,
-   "ytd": 1.81,
+   "v": "4,402.8",
+   "d": -1.1,
+   "ytd": 1.78,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -25456,7 +25463,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 376,
+  "pc_age_min": 389,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
