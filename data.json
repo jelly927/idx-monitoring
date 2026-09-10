@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 22:53",
+ "updated": "2026-09-10 23:10",
  "delay_min": 0,
- "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 20:07 Yahoo",
- "idr_per_krw": 13.029,
+ "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 22:59 Yahoo",
+ "idr_per_krw": 13.0259,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 22:52",
+   "asof": "investing.com 23:07",
    "unit": "bp"
   }
  ],
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7603.16,
+   "px": 7598.29,
    "prev": 7637.7,
-   "pct": -0.45,
-   "asof": "22:50",
+   "pct": -0.52,
+   "asof": "23:05",
    "live": true,
    "spark": [
     7591.46,
@@ -15113,17 +15113,20 @@
     7606.04,
     7607.34,
     7604.33,
-    7603.16
+    7599.87,
+    7598.51,
+    7599.05,
+    7598.29
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26126.0,
+   "px": 26120.8,
    "prev": 26253.34,
-   "pct": -0.49,
-   "asof": "22:50",
+   "pct": -0.5,
+   "asof": "23:05",
    "live": true,
    "spark": [
     26012.32,
@@ -15154,17 +15157,20 @@
     26146.31,
     26153.41,
     26138.41,
-    26126.0
+    26120.23,
+    26117.06,
+    26122.32,
+    26120.8
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52131.43,
+   "px": 52068.97,
    "prev": 52391.48,
-   "pct": -0.5,
-   "asof": "22:50",
+   "pct": -0.62,
+   "asof": "23:05",
    "live": true,
    "spark": [
     52225.89,
@@ -15195,7 +15201,10 @@
     52119.27,
     52126.32,
     52131.84,
-    52131.43
+    52096.16,
+    52078.09,
+    52088.05,
+    52068.97
    ]
   },
   {
@@ -15513,17 +15522,212 @@
  },
  "news": [
   {
-   "ts": "2026-09-10T21:46:00+07:00",
+   "ts": "2026-09-10T23:09:45.336104+07:00",
    "date": "2026-09-10",
-   "time": "21:46",
-   "src": "Media Indonesia",
-   "t": "Konektivitas Kapal di Wilayah Laut Terus Diperluas",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "Pangsa Pasar Gudang Garam (GGRM) Tergerus Rokok Ilegal, Pendapatan Lenyap Rp3,1 triliun",
    "tags": [
-    "STAR"
+    "GGRM"
    ],
-   "url": "https://mediaindonesia.com/nusantara/932114/konektivitas-kapal-di-wilayah-laut-terus-diperluas",
-   "t_ko": "해상 물류망 연결성 확대 지속",
-   "t_id": "Konektivitas Kapal di Wilayah Laut Terus Diperluas"
+   "url": "https://www.idxchannel.com/market-news/pangsa-pasar-gudang-garam-ggrm-tergerus-rokok-ilegal-pendapatan-lenyap-rp31-triliun",
+   "t_est": true,
+   "t_ko": "GGRM, 불법 담배에 시장점유율 잠식 — 매출 Rp3.1조 증발",
+   "t_id": "Pangsa Pasar Gudang Garam (GGRM) Tergerus Rokok Ilegal, Pendapatan Lenyap Rp3,1 triliun",
+   "ai_ko": "불법 담배 확산으로 Gudang Garam(GGRM) 상반기 매출 Rp41.17조, 전년 대비 Rp3.19조 감소 / 생산량 32억 개비 줄어 205억 개비, 매출원가도 13.3% 동반 축소",
+   "ai_id": "Pendapatan penjualan rokok Gudang Garam (GGRM) turun Rp3,19 triliun menjadi Rp41,17 triliun pada semester I-2026 seiring maraknya rokok ilegal. Volume produksi menyusut 3,2 miliar batang menjadi 20,5 miliar batang, sehingga cost of revenue ikut turun 13,3%.",
+   "ai_tags": [
+    "담배",
+    "실적",
+    "불법담배"
+   ],
+   "ai_tags_id": []
+  },
+  {
+   "ts": "2026-09-10T23:09:45.334731+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "Gudang Garam (GGRM) Ungkap Rencana Pembayaran Dividen di Tengah Menyusutnya Penjualan Rokok",
+   "tags": [
+    "GGRM"
+   ],
+   "url": "https://www.idxchannel.com/market-news/gudang-garam-ggrm-ungkap-rencana-pembayaran-dividen-di-tengah-menyusutnya-penjualan-rokok",
+   "t_est": true,
+   "t_ko": "Gudang Garam(GGRM), 담배 매출 감소에도 배당 지급 계획 공개",
+   "t_id": "Gudang Garam (GGRM) Ungkap Rencana Pembayaran Dividen di Tengah Menyusutnya Penjualan Rokok",
+   "ai_ko": "Gudang Garam(GGRM), 불법 담배 확산에 판매 압박에도 연간 배당 지속 방침 재확인 / 부채비율 30.7%→21.5% 개선, 6월 주주총회서 주당 Rp800·총 Rp1.53조 결의",
+   "ai_id": "PT Gudang Garam Tbk (GGRM) menegaskan komitmen membayar dividen tahunan meski volume penjualan tertekan rokok ilegal, dengan rasio gearing membaik dari 30,7% menjadi 21,5%. RUPS Juni 2026 menetapkan dividen tunai Rp800 per saham atau total Rp1,53 triliun yang dibagikan pada Juli 2026.",
+   "ai_tags": [
+    "배당",
+    "담배",
+    "재무구조"
+   ],
+   "ai_tags_id": []
+  },
+  {
+   "ts": "2026-09-10T23:09:45.333321+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "Astra International (ASII) Kucurkan Rp8 Triliun untuk Buyback Saham, Intip Strateginya",
+   "tags": [
+    "ASII"
+   ],
+   "url": "https://www.idxchannel.com/market-news/astra-international-asii-kucurkan-rp8-triliun-untuk-buyback-saham-intip-strateginya",
+   "t_est": true,
+   "t_ko": "ASII, 자사주 매입 Rp8조 집행 — 전략 살펴보니",
+   "t_id": "Astra International (ASII) Kucurkan Rp8 Triliun untuk Buyback Saham, Intip Strateginya",
+   "ai_ko": "Astra International(ASII), 향후 12개월간 최대 Rp8조 규모 자사주 매입 추진, 7월 17일 임시 주총 승인 완료 / 5월 도입한 신규 전략 로드맵에 따른 주주환원 강화로 해석",
+   "ai_id": "Astra International (ASII) menyiapkan dana hingga Rp8 triliun untuk buyback saham dalam 12 bulan ke depan, setelah disetujui RUPSLB pada 17 Juli 2026. Aksi ini merupakan bagian dari Strategy Roadmap baru Astra yang diperkenalkan sejak Mei 2026.",
+   "ai_tags": [
+    "자사주매입",
+    "주주환원",
+    "주주총회"
+   ],
+   "ai_tags_id": [
+    "buyback",
+    "shareholder value",
+    "RUPSLB"
+   ]
+  },
+  {
+   "ts": "2026-09-10T23:09:45.331942+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "Diakuisisi Nagita-Raffi, Savitra (VISI) Sebut Tidak Ada Investor Publik yang Ikut MTO",
+   "tags": [
+    "VISI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/diakuisisi-nagita-raffi-savitra-visi-sebut-tidak-ada-investor-publik-yang-ikut-mto",
+   "t_est": true,
+   "t_ko": "VISI, Nagita-Raffi 인수 속 공개매수 참여 공모 투자자 전무",
+   "t_id": "Diakuisisi Nagita-Raffi, Savitra (VISI) Sebut Tidak Ada Investor Publik yang Ikut MTO",
+   "ai_ko": "Harmoni Semesta Investama, Satu Visi Putra(VISI) 지분 61.85%를 주당 Rp94, 총 Rp1,787억에 인수 후 의무공개매수 종료 / 7월 23일~8월 21일 공개매수에 응한 소액주주 전무로 유통주식 변동 없음",
+   "ai_id": "PT Harmoni Semesta Investama milik Raffi Ahmad dan Nagita Slavina merampungkan MTO saham PT Satu Visi Putra Tbk (VISI) setelah mengakuisisi 1,9 miliar saham atau 61,85% senilai Rp178,7 miliar pada harga Rp94 per saham. Selama periode 23 Juli-21 Agustus 2026, tidak ada satu pun pemegang saham publik yang menjual sahamnya.",
+   "ai_tags": [
+    "M&A",
+    "공개매수",
+    "경영권 변동"
+   ],
+   "ai_tags_id": [
+    "akuisisi",
+    "MTO",
+    "perubahan pengendali"
+   ]
+  },
+  {
+   "ts": "2026-09-10T23:09:45.328475+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "Ultra Voucher (UVCR) Cari Peluang Pertumbuhan dari Konvergensi Voucher hingga Loyalty",
+   "tags": [
+    "UVCR"
+   ],
+   "url": "https://www.idxchannel.com/market-news/ultra-voucher-uvcr-cari-peluang-pertumbuhan-dari-konvergensi-voucher-hingga-loyalty",
+   "t_est": true,
+   "t_ko": "UVCR, 바우처·충성도 프로그램 융합으로 성장 기회 모색",
+   "t_id": "Ultra Voucher (UVCR) Cari Peluang Pertumbuhan dari Konvergensi Voucher hingga Loyalty"
+  },
+  {
+   "ts": "2026-09-10T23:09:45.327078+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "Potensi Pasar Masih Luas, Ultra Voucher (UVCR) Komitmen Lindungi Data Nasabah Pihak Ketiga",
+   "tags": [
+    "UVCR"
+   ],
+   "url": "https://www.idxchannel.com/market-news/potensi-pasar-masih-luas-ultra-voucher-uvcr-komitmen-lindungi-data-nasabah-pihak-ketiga",
+   "t_est": true,
+   "t_ko": "Ultra Voucher(UVCR), 시장 잠재력 바탕 제3자 고객 데이터 보호 강화",
+   "t_id": "Potensi Pasar Luas, Ultra Voucher (UVCR) Komitmen Lindungi Data Nasabah Pihak Ketiga"
+  },
+  {
+   "ts": "2026-09-10T23:09:45.325660+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "Anak Usaha Blibli (BELI) Perluas Layanan Fulfillment ke Perdagangan hingga Distribusi",
+   "tags": [
+    "BELI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/anak-usaha-blibli-beli-perluas-layanan-fulfillment-ke-perdagangan-hingga-distribusi",
+   "t_est": true,
+   "t_ko": "Blibli(BELI) 자회사, 풀필먼트 서비스를 유통·물류까지 확대",
+   "t_id": "Anak Usaha Blibli (BELI) Perluas Layanan Fulfillment ke Perdagangan hingga Distribusi"
+  },
+  {
+   "ts": "2026-09-10T23:09:45.324301+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "RATU Komitmen Bagi Dividen, Besarannya Ditargetkan Naik Setiap Tahun",
+   "tags": [
+    "RATU"
+   ],
+   "url": "https://www.idxchannel.com/market-news/ratu-komitmen-bagi-dividen-besarannya-ditargetkan-naik-setiap-tahun",
+   "t_est": true,
+   "t_ko": "RATU, 매년 배당금 확대 목표로 배당 실시 방침 공언",
+   "t_id": "RATU Komitmen Bagi Dividen, Besarannya Ditargetkan Naik Setiap Tahun"
+  },
+  {
+   "ts": "2026-09-10T23:09:45.323219+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "Raharja Energi (RATU) Targetkan Akuisisi Minimal Satu Aset Migas di 2027",
+   "tags": [
+    "RATU"
+   ],
+   "url": "https://www.idxchannel.com/market-news/raharja-energi-ratu-targetkan-akuisisi-minimal-satu-aset-migas-di-2027",
+   "t_est": true,
+   "t_ko": "Raharja Energi(RATU), 2027년까지 최소 1개 유가스 자산 인수 목표",
+   "t_id": "Raharja Energi (RATU) Targetkan Akuisisi Minimal Satu Aset Migas di 2027"
+  },
+  {
+   "ts": "2026-09-10T23:09:45.322065+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "AMMN Dirumorkan Bidik Bursa Hong Kong, Incar Dana Minimal Rp17,5 Triliun",
+   "tags": [
+    "AMMN"
+   ],
+   "url": "https://www.idxchannel.com/market-news/ammn-dirumorkan-bidik-bursa-hong-kong-incar-dana-minimal-rp175-triliun",
+   "t_est": true,
+   "t_ko": "AMMN, 홍콩 증시 상장 통해 최소 Rp17.5조 조달 추진설",
+   "t_id": "AMMN Dirumorkan Bidik Bursa Hong Kong, Incar Dana Minimal Rp17,5 Triliun"
+  },
+  {
+   "ts": "2026-09-10T23:09:45.319903+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "Pemangkasan RKAB Tekan Bisnis Pertambangan Astra (ASII)",
+   "tags": [
+    "ASII"
+   ],
+   "url": "https://www.idxchannel.com/market-news/pemangkasan-rkab-tekan-bisnis-pertambangan-astra-asii",
+   "t_est": true,
+   "t_ko": "RKAB 감축으로 Astra(ASII) 광업 부문 실적 압박",
+   "t_id": "Pemangkasan RKAB Tekan Bisnis Pertambangan Astra (ASII)"
+  },
+  {
+   "ts": "2026-09-10T23:09:45.318915+07:00",
+   "date": "2026-09-10",
+   "time": "23:09",
+   "src": "IDX Channel",
+   "t": "Daya Beli Mulai Pulih, ACES Catat Penjualan Rp4,54 Triliun di Semester I-2026",
+   "tags": [
+    "ACES"
+   ],
+   "url": "https://www.idxchannel.com/market-news/daya-beli-mulai-pulih-aces-catat-penjualan-rp454-triliun-di-semester-i-2026",
+   "t_est": true,
+   "t_id": "Daya Beli Mulai Pulih, ACES Catat Penjualan Rp4,54 Triliun di Semester I-2026",
+   "t_ko": "ACES, 상반기 매출 Rp4.54조 기록하며 구매력 회복세"
   },
   {
    "ts": "2026-09-10T21:29:23+07:00",
@@ -15552,20 +15756,6 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/jerop9yDm0xIDFxGh1_ee-NwmYA=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5497603/original/096409200_1770638744-3.jpg",
    "t_ko": "RAJA, Layar Nusantara Gas 지분 5% 인수 배경 공개",
    "t_id": "Emiten RAJA Ungkap Alasan Akuisisi 5% Saham Layar Nusantara Gas"
-  },
-  {
-   "ts": "2026-09-10T21:02:00+07:00",
-   "date": "2026-09-10",
-   "time": "21:02",
-   "src": "IDX Channel",
-   "t": "Pemangkasan RKAB Tekan Bisnis Pertambangan Astra (ASII)",
-   "tags": [
-    "ASII"
-   ],
-   "url": "https://www.idxchannel.com/market-news/pemangkasan-rkab-tekan-bisnis-pertambangan-astra-asii",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2024/08/13/batu_bara.jpg",
-   "t_ko": "RKAB 감축으로 Astra(ASII) 광업 부문 실적 압박",
-   "t_id": "Pemangkasan RKAB Tekan Bisnis Pertambangan Astra (ASII)"
   },
   {
    "ts": "2026-09-10T20:40:00+07:00",
@@ -15610,20 +15800,6 @@
    "t_id": "Rukun Raharja (RAJA) Bakal Bawa Anak Usaha IPO pada 2027"
   },
   {
-   "ts": "2026-09-10T20:00:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:00",
-   "src": "IDX Channel",
-   "t": "AMMN Dirumorkan Bidik Bursa Hong Kong, Incar Dana Minimal Rp17,5 Triliun",
-   "tags": [
-    "AMMN"
-   ],
-   "url": "https://www.idxchannel.com/market-news/ammn-dirumorkan-bidik-bursa-hong-kong-incar-dana-minimal-rp175-triliun",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/03/26/AMMN_dok_Amman_Mineral.jpg",
-   "t_ko": "AMMN, 홍콩 증시 상장 통해 최소 Rp17.5조 조달 추진설",
-   "t_id": "AMMN Dirumorkan Bidik Bursa Hong Kong, Incar Dana Minimal Rp17,5 Triliun"
-  },
-  {
    "ts": "2026-09-10T19:50:02+07:00",
    "date": "2026-09-10",
    "time": "19:50",
@@ -15638,34 +15814,6 @@
    "t_id": "MSIG Life Catat Laba Bersih Rp 181 Miliar pada Semester I 2026, Naik 69 Persen"
   },
   {
-   "ts": "2026-09-10T19:23:00+07:00",
-   "date": "2026-09-10",
-   "time": "19:23",
-   "src": "IDX Channel",
-   "t": "Raharja Energi (RATU) Targetkan Akuisisi Minimal Satu Aset Migas di 2027",
-   "tags": [
-    "RATU"
-   ],
-   "url": "https://www.idxchannel.com/market-news/raharja-energi-ratu-targetkan-akuisisi-minimal-satu-aset-migas-di-2027",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/10/08/Raharja_Energi_Cepu_-_RATU_-_Okt_25.jpg",
-   "t_ko": "Raharja Energi(RATU), 2027년까지 최소 1개 유가스 자산 인수 목표",
-   "t_id": "Raharja Energi (RATU) Targetkan Akuisisi Minimal Satu Aset Migas di 2027"
-  },
-  {
-   "ts": "2026-09-10T18:57:00+07:00",
-   "date": "2026-09-10",
-   "time": "18:57",
-   "src": "IDX Channel",
-   "t": "RATU Komitmen Bagi Dividen, Besarannya Ditargetkan Naik Setiap Tahun",
-   "tags": [
-    "RATU"
-   ],
-   "url": "https://www.idxchannel.com/market-news/ratu-komitmen-bagi-dividen-besarannya-ditargetkan-naik-setiap-tahun",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/10/ratu_dividen_naik.jpg",
-   "t_ko": "RATU, 매년 배당금 확대 목표로 배당 실시 방침 공언",
-   "t_id": "RATU Komitmen Bagi Dividen, Besarannya Ditargetkan Naik Setiap Tahun"
-  },
-  {
    "ts": "2026-09-10T18:53:31+07:00",
    "date": "2026-09-10",
    "time": "18:53",
@@ -15678,20 +15826,6 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/fFyvwscjNnCiJ0ROgGnyxmKL9UY=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277615/original/062866500_1672400411-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga-4.JPG",
    "t_ko": "VICI에서 Rp1.3조 규모 대량 거래 — 최대주주 지분 25% 매입",
    "t_id": "Transaksi Jumbo Rp 1,3 Triliun di VICI, Pengendali Borong 25% Saham"
-  },
-  {
-   "ts": "2026-09-10T18:52:00+07:00",
-   "date": "2026-09-10",
-   "time": "18:52",
-   "src": "IDX Channel",
-   "t": "Anak Usaha Blibli (BELI) Perluas Layanan Fulfillment ke Perdagangan hingga Distribusi",
-   "tags": [
-    "BELI"
-   ],
-   "url": "https://www.idxchannel.com/market-news/anak-usaha-blibli-beli-perluas-layanan-fulfillment-ke-perdagangan-hingga-distribusi",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/10/FAS_anak_usaha_blibli_foto_momo.jpg",
-   "t_ko": "Blibli(BELI) 자회사, 풀필먼트 서비스를 유통·물류까지 확대",
-   "t_id": "Anak Usaha Blibli (BELI) Perluas Layanan Fulfillment ke Perdagangan hingga Distribusi"
   },
   {
    "ts": "2026-09-10T18:50:53+07:00",
@@ -15720,34 +15854,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2017/01/23/6ed09365-8341-4f97-8cb3-272dbe0f57ff_169.jpg?w=360&q=90",
    "t_ko": "Antam, 매출 Rp50조 돌파 — 금이 전체 매출의 대다수 차지",
    "t_id": "Emas Sumbang Mayoritas Pendapatan Antam, Penjualan Tembus Rp 50 T"
-  },
-  {
-   "ts": "2026-09-10T18:27:00+07:00",
-   "date": "2026-09-10",
-   "time": "18:27",
-   "src": "IDX Channel",
-   "t": "Potensi Pasar Masih Luas, Ultra Voucher (UVCR) Komitmen Lindungi Data Nasabah Pihak Ketiga",
-   "tags": [
-    "UVCR"
-   ],
-   "url": "https://www.idxchannel.com/market-news/potensi-pasar-masih-luas-ultra-voucher-uvcr-komitmen-lindungi-data-nasabah-pihak-ketiga",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/10/07b2303d-566a-40db-aae4-62bc73a2633d.jpeg",
-   "t_ko": "Ultra Voucher(UVCR), 시장 잠재력 바탕 제3자 고객 데이터 보호 강화",
-   "t_id": "Potensi Pasar Luas, Ultra Voucher (UVCR) Komitmen Lindungi Data Nasabah Pihak Ketiga"
-  },
-  {
-   "ts": "2026-09-10T17:31:00+07:00",
-   "date": "2026-09-10",
-   "time": "17:31",
-   "src": "IDX Channel",
-   "t": "Ultra Voucher (UVCR) Cari Peluang Pertumbuhan dari Konvergensi Voucher hingga Loyalty",
-   "tags": [
-    "UVCR"
-   ],
-   "url": "https://www.idxchannel.com/market-news/ultra-voucher-uvcr-cari-peluang-pertumbuhan-dari-konvergensi-voucher-hingga-loyalty",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/10/dirut_uvcr_idx_channel.jpg",
-   "t_ko": "UVCR, 바우처·충성도 프로그램 융합으로 성장 기회 모색",
-   "t_id": "Ultra Voucher (UVCR) Cari Peluang Pertumbuhan dari Konvergensi Voucher hingga Loyalty"
   },
   {
    "ts": "2026-09-10T17:05:00+07:00",
@@ -16073,7 +16179,7 @@
     "ASII"
    ],
    "url": "https://www.idnfinancials.com/news/68646/astra-focuses-on-3-segments-non-core-lines-face-capital-reallocation",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/ASII-BUYBACK-16062026.jpg",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/Rudy-ASII-10092026.jpg",
    "t_ko": "ASII, 핵심 3개 사업 집중하고 비핵심 부문 자본 재배치",
    "t_id": "Astra fokus pada 3 segmen, lini non-inti hadapi realokasi modal",
    "ai_ko": "Astra International(ASII), 자동차·금융·중장비광업 3대 핵심사업 집중 전략 발표, 2026년 설비투자 Rp35.6조 책정 / 상반기 집행액 Rp16.9조, 비핵심 사업은 자본 재배분·매각 검토로 United Tractors(UNTR) 비중 확대",
@@ -16375,6 +16481,62 @@
     "실적"
    ],
    "ai_tags_id": []
+  },
+  {
+   "ts": "2026-09-10T06:06:08.946329+07:00",
+   "date": "2026-09-10",
+   "time": "06:06",
+   "src": "IDX Channel",
+   "t": "BCA (BBCA) Mulai Terapkan Pembagian Dividen Interim Kuartalan, Ini Bocorannya",
+   "tags": [
+    "BBCA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/bca-bbca-mulai-terapkan-pembagian-dividen-interim-kuartalan-ini-bocorannya",
+   "t_est": true,
+   "t_ko": "BCA(BBCA)가 분기별 중간 배당금 분배를 시행하기 시작했습니다. 여기에 누출이 있습니다.",
+   "t_id": "BCA (BBCA) Mulai Terapkan Pembagian Dividen Interim Kuartalan, Ini Bocorannya"
+  },
+  {
+   "ts": "2026-09-10T06:06:08.945522+07:00",
+   "date": "2026-09-10",
+   "time": "06:06",
+   "src": "IDX Channel",
+   "t": "RUPSLB Elnusa (ELSA) Tetapkan Perubahan Pengurus, Ini Susunan Terbarunya",
+   "tags": [
+    "ELSA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/rupslb-elnusa-elsa-tetapkan-perubahan-pengurus-ini-susunan-terbarunya",
+   "t_est": true,
+   "t_ko": "ELSA 임시주주총회, 임원진 개편 확정",
+   "t_id": "RUPSLB Elnusa (ELSA) Tetapkan Perubahan Pengurus, Ini Susunan Terbarunya"
+  },
+  {
+   "ts": "2026-09-10T06:06:08.938803+07:00",
+   "date": "2026-09-10",
+   "time": "06:06",
+   "src": "IDX Channel",
+   "t": "Kantongi Restu Pemegang Saham, RATU Siapkan Private Placement 271,51 Juta Saham",
+   "tags": [
+    "RATU"
+   ],
+   "url": "https://www.idxchannel.com/market-news/kantongi-restu-pemegang-saham-ratu-siapkan-private-placement-27151-juta-saham",
+   "t_est": true,
+   "t_ko": "주주들의 축복으로 RATU, 2억 7,151만 주 사모 발행 준비",
+   "t_id": "Kantongi Restu Pemegang Saham, RATU Siapkan Private Placement 271,51 Juta Saham"
+  },
+  {
+   "ts": "2026-09-10T06:06:08.937957+07:00",
+   "date": "2026-09-10",
+   "time": "06:06",
+   "src": "IDX Channel",
+   "t": "Perkuat Portofolio Kesehatan dan Lifestyle, Rata Kanan Capital Borong 30,75 Juta Saham MMIX",
+   "tags": [
+    "MMIX"
+   ],
+   "url": "https://www.idxchannel.com/market-news/perkuat-portofolio-kesehatan-dan-lifestyle-rata-kanan-capital-borong-3075-juta-saham-mmix",
+   "t_est": true,
+   "t_ko": "건강 및 라이프스타일 포트폴리오 강화, Rata Kanan Capital, MMIX 주식 3,075만주 매입",
+   "t_id": "Perkuat Portofolio Kesehatan dan Lifestyle, Rata Kanan Capital Borong 30,75 Juta Saham MMIX"
   },
   {
    "ts": "2026-09-10T06:03:21+07:00",
@@ -16769,51 +16931,94 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/xnsjMIZcUn1L4iRmVDw9frVaiFQ=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5354221/original/062916400_1758205890-df9cbc34-4120-4a02-95a2-3b3a4d743f6d.jpeg",
    "t_ko": "SMGR, 300만호 주택 프로그램發 긍정적 전망 겨냥",
    "t_id": "SMGR Bidik Prospek Positif dari Program 3 Juta Rumah"
-  },
-  {
-   "ts": "2026-08-24T08:33:00+07:00",
-   "date": "2026-08-24",
-   "time": "08/24",
-   "src": "Tempo",
-   "t": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1",
-   "tags": [
-    "AREA"
-   ],
-   "url": "https://bisnis.tempo.co/read/2117248/pt-pertamina-patra-niaga-ru-cilacap-buka-tender-penggantian-column-assy-11c-1",
-   "img": "https://statik.tempo.co/data/2026/08/10/id_1485829/1485829_720.jpg",
-   "t_ko": "Pertamina Patra Niaga Cilacap 정유공장, Column Assy 11C-1 교체 입찰 공고",
-   "t_id": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1"
-  },
-  {
-   "ts": "2026-08-10T18:35:31+07:00",
-   "date": "2026-08-10",
-   "time": "08/10",
-   "src": "Tempo",
-   "t": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
-   "tags": [
-    "BMRI"
-   ],
-   "url": "https://bisnis.tempo.co/read/2117152/bank-mandiri-gandeng-paramount-dorong-pertumbuhan-properti-berkelanjutan",
-   "img": "https://statik.tempo.co/data/2026/08/10/id_1485793/1485793_720.jpg",
-   "t_ko": "Bank Mandiri, Paramount와 제휴 — 지속가능 부동산 성장 추진",
-   "t_id": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan"
-  },
-  {
-   "ts": "2026-08-07T14:18:08+07:00",
-   "date": "2026-08-07",
-   "time": "08/07",
-   "src": "Tempo",
-   "t": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN",
-   "tags": [
-    "BKSL"
-   ],
-   "url": "https://bisnis.tempo.co/read/2116937/pemkab-bogor-serah-terima-psu-sentul-city-rampung-tinggal-tunggu-sertifikat-bpn",
-   "img": "https://statik.tempo.co/data/2026/08/07/id_1485550/1485550_720.jpg",
-   "t_ko": "Bogor 군청, Sentul City 공공시설(PSU) 인수 완료 — BPN 등기 대기",
-   "t_id": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN"
   }
  ],
  "market_news": [
+  {
+   "ts": "2026-09-10T22:56:33+07:00",
+   "date": "2026-09-10",
+   "time": "22:56",
+   "src": "BBC",
+   "t": "Oil, gas and borrowing costs surge as fears over Middle East escalate",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/c5y48rz2nddo?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f162/live/08923520-ad29-11f1-980e-4fc6f1211def.jpg",
+   "t_ko": "중동 리스크 고조로 유가·가스 가격 및 차입 비용 급등",
+   "t_id": "Minyak, Gas, dan Biaya Pinjaman Melonjak Seiring Meningkatnya Kekhawatiran Konflik Timur Tengah"
+  },
+  {
+   "ts": "2026-09-10T22:55:58+07:00",
+   "date": "2026-09-10",
+   "time": "22:55",
+   "src": "CNBC",
+   "t": "Starbucks is back, CEO Brian Niccol says. Here is what he's focused on next",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/starbucks-is-back-ceo-brian-niccol-says-here-is-what-hes-focused-on-next.html",
+   "g": 1,
+   "t_ko": "Starbucks, Brian Niccol 대표가 밝힌 경영 정상화와 향후 전략",
+   "t_id": "CEO Brian Niccol: Starbucks Kembali Bangkit, Ini Fokus Barunya"
+  },
+  {
+   "ts": "2026-09-10T22:55:00+07:00",
+   "date": "2026-09-10",
+   "time": "22:55",
+   "src": "Media Indonesia",
+   "t": "Indonesia Carbon and Biodiversity Summit 2026 Perkuat Dukungan untuk Ekonomi Hijau",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932158/indonesia-carbon-and-biodiversity-summit-2026-perkuat-dukungan-untuk-ekonomi-hijau",
+   "t_id": "Indonesia Carbon and Biodiversity Summit 2026 Perkuat Dukungan untuk Ekonomi Hijau",
+   "t_ko": "Indonesia Carbon and Biodiversity Summit 2026, 녹색경제 지원 강화"
+  },
+  {
+   "ts": "2026-09-10T22:53:41+07:00",
+   "date": "2026-09-10",
+   "time": "22:53",
+   "src": "CNBC",
+   "t": "Trump's $1 trillion-plus 'dividend' plan meets immediate bipartisan pushback",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/trump-dividend-midterms-gop.html",
+   "g": 1,
+   "t_ko": "트럼프의 1조 달러 이상 배당 계획, 초당파적 반대에 직면",
+   "t_id": "Rencana 'dividen' $1 triliun lebih ala Trump langsung hadapi penolakan bipartisan",
+   "ai_ko": "Trump 대통령이 중간선거에서 공화당 승리 시 미국 시민에게 USD 5,000 '배당' 지급을 공약 / 투표 유인 목적 금품 제공은 연방법상 형사처벌 대상이며 앞서 DOGE 배당과 USD 2,000 관세 환급 공약도 무산",
+   "ai_id": "Presiden Trump menjanjikan 'dividen' USD 5.000 bagi warga AS jika Partai Republik menang dalam pemilu sela. Rencana ini berpotensi bermasalah secara hukum karena pemberian uang untuk memengaruhi pemilih merupakan tindak pidana federal, sementara janji dividen DOGE dan rabat tarif USD 2.000 sebelumnya tidak terealisasi.",
+   "ai_tags": [
+    "미국정책",
+    "선거",
+    "현금지급"
+   ],
+   "ai_tags_id": [
+    "kebijakan AS",
+    "pemilu",
+    "bantuan tunai"
+   ]
+  },
+  {
+   "ts": "2026-09-10T22:50:00+07:00",
+   "date": "2026-09-10",
+   "time": "22:50",
+   "src": "Yahoo Finance",
+   "t": "Where Will Rocket Lab Stock Be by This Time Next Year?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/where-rocket-lab-stock-time-155000516.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/368d27c11ebdf0cf690beec8e76ec7c1.jpg",
+   "t_ko": "Rocket Lab 향후 1년 주가 전망",
+   "t_id": "Proyeksi Saham Rocket Lab Tahun Depan"
+  },
+  {
+   "ts": "2026-09-10T22:49:37+07:00",
+   "date": "2026-09-10",
+   "time": "22:49",
+   "src": "CNBC",
+   "t": "Affordability takes center stage in North Carolina’s pivotal Senate race",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/north-carolina-senate-race-affordability-cooper-whatley.html",
+   "g": 1,
+   "t_ko": "노스캐롤라이나 상원 선거, 물가·생계비 부담 최대 화두로 부상",
+   "t_id": "Isu Keterjangkauan Dominasi Senat Krusial North Carolina"
+  },
   {
    "ts": "2026-09-10T22:49:33+07:00",
    "date": "2026-09-10",
@@ -16839,6 +17044,32 @@
    ]
   },
   {
+   "ts": "2026-09-10T22:49:26+07:00",
+   "date": "2026-09-10",
+   "time": "22:49",
+   "src": "Yahoo Finance",
+   "t": "Why Designer Brands Stock Was Moving Higher Today",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/why-designer-brands-stock-moving-154926303.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/2a2df8acdd87c6dc9ebdd75fab32af88.jpg",
+   "t_ko": "Designer Brands 주가 상승 배경",
+   "t_id": "Alasan Saham Designer Brands Naik Hari Ini"
+  },
+  {
+   "ts": "2026-09-10T22:48:04+07:00",
+   "date": "2026-09-10",
+   "time": "22:48",
+   "src": "Yahoo Finance",
+   "t": "Trump administration proposes waiving grace period for H-1B holders after job loss",
+   "tags": [],
+   "url": "https://finance.yahoo.com/news/trump-administration-proposes-waiving-grace-152322715.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/reuters.com/993592de7788e142913ec352f7afdfe8.jpg",
+   "t_ko": "트럼프 행정부, 실직 H-1B 비자 소지자 유예기간 면제 추진",
+   "t_id": "Pemerintahan Trump Usul Hapus Masa Tenggang Pemegang H-1B Usai PHK"
+  },
+  {
    "ts": "2026-09-10T22:48:00+07:00",
    "date": "2026-09-10",
    "time": "22:48",
@@ -16850,6 +17081,19 @@
    "img": "https://images.mktw.net/im-97261506",
    "t_ko": "인플레이션 압박에 국채 금리 급등하며 주식시장 위협",
    "t_id": "Imbal Hasil US Treasury Melonjak ke Zona Bahaya Saham Seiring Tekanan Inflasi"
+  },
+  {
+   "ts": "2026-09-10T22:47:42+07:00",
+   "date": "2026-09-10",
+   "time": "22:47",
+   "src": "CNA",
+   "t": "AI chip startup Positron's valuation skyrockets in latest funding round",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/ai-chip-startup-positrons-valuation-skyrockets-in-latest-funding-round-6376731",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--hug23n9N--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-10T154742Z_1_LYNXMPEM891LA_RTROPTP_3_BIS-AI-DE-COS.JPG?itok=wVD_s-pf",
+   "t_ko": "AI 칩 스타트업 Positron, 신규 투자 유치로 기업가치 급등",
+   "t_id": "Valuasi Startup Chip AI Positron Meroket di Pendanaan Terbaru"
   },
   {
    "ts": "2026-09-10T22:46:50+07:00",
@@ -16864,28 +17108,16 @@
    "t_id": "Macy's dan American Eagle Turun, JetBlue Melemah"
   },
   {
-   "ts": "2026-09-10T22:46:45+07:00",
+   "ts": "2026-09-10T22:46:35+07:00",
    "date": "2026-09-10",
    "time": "22:46",
    "src": "CNBC",
-   "t": "Trump's $1 trillion-plus 'dividend' plan meets immediate bipartisan pushback",
+   "t": "Humans need to 'surf the wave' of AI rather than get swallowed by it, Chesky says at Communacopia",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/trump-dividend-midterms-gop.html",
+   "url": "https://www.cnbc.com/2026/09/10/goldman-sachs-communacopia-technology-conference-ai-tech.html",
    "g": 1,
-   "t_ko": "트럼프의 1조 달러 이상 배당 계획, 초당파적 반대에 직면",
-   "t_id": "Rencana 'dividen' $1 triliun lebih ala Trump langsung hadapi penolakan bipartisan",
-   "ai_ko": "Trump 대통령이 중간선거에서 공화당 승리 시 미국 시민에게 USD 5,000 '배당' 지급을 공약 / 투표 유인 목적 금품 제공은 연방법상 형사처벌 대상이며 앞서 DOGE 배당과 USD 2,000 관세 환급 공약도 무산",
-   "ai_id": "Presiden Trump menjanjikan 'dividen' USD 5.000 bagi warga AS jika Partai Republik menang dalam pemilu sela. Rencana ini berpotensi bermasalah secara hukum karena pemberian uang untuk memengaruhi pemilih merupakan tindak pidana federal, sementara janji dividen DOGE dan rabat tarif USD 2.000 sebelumnya tidak terealisasi.",
-   "ai_tags": [
-    "미국정책",
-    "선거",
-    "현금지급"
-   ],
-   "ai_tags_id": [
-    "kebijakan AS",
-    "pemilu",
-    "bantuan tunai"
-   ]
+   "t_ko": "Chesky, Communacopia에서 AI 흐름에 순응해야 한다고 강조",
+   "t_id": "Chesky: Manusia Harus 'Selancar' Hadapi AI, Bukan Tenggelam"
   },
   {
    "ts": "2026-09-10T22:45:09+07:00",
@@ -16922,28 +17154,15 @@
    ]
   },
   {
-   "ts": "2026-09-10T22:40:00+07:00",
-   "date": "2026-09-10",
-   "time": "22:40",
-   "src": "Yahoo Finance",
-   "t": "Is PayPal Stock a Buy, Sell, or Hold at 80% Below Its Record High?",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/paypal-stock-buy-sell-hold-154000614.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/16a3c9a9e69c8da1635611f5281049d6.jpg",
-   "t_ko": "고점 대비 80% 하락한 PayPal 주가, 투자 의견 엇갈려",
-   "t_id": "Saham PayPal Layak Beli, Jual, atau Tahan Saat Anjlok 80% dari Rekor Tertinggi?"
-  },
-  {
    "ts": "2026-09-10T22:38:38+07:00",
    "date": "2026-09-10",
    "time": "22:38",
    "src": "Bloomberg",
-   "t": "Ukraine’s Arctic Drone Attacks Reveal New Risks for Gas Market",
+   "t": "Ukraine Arctic Drone Attacks Reveal New Risks for Gas Market",
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-10/ukraine-s-arctic-drone-attacks-reveal-new-risks-for-gas-market",
    "g": 1,
-   "t_ko": "우크라이나의 아르틱 드론 공격으로 가스 시장 신규 리스크 부각",
+   "t_ko": "우크라이나 북극 드론 공격, 가스 시장 새 리스크 부각",
    "t_id": "Serangan Drone Arktik Ukraina Ungkap Risiko Baru Pasar Gas"
   },
   {
@@ -16957,32 +17176,6 @@
    "g": 1,
    "t_ko": "미국 디젤 선물, 2022년 이후 처음으로 갤런당 5달러 돌파",
    "t_id": "Futures Solar AS Tembus $5 per Galon untuk Pertama Kalinya Sejak 2022"
-  },
-  {
-   "ts": "2026-09-10T22:35:34+07:00",
-   "date": "2026-09-10",
-   "time": "22:35",
-   "src": "Yahoo Finance",
-   "t": "IonQ’s CEO Says ‘Q-Day’ Hits in 2028. The Stock Says Investors Stopped Listening",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/ionq-ceo-says-q-day-153534215.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/8f0b8c6aa54c3917a8ef7d559fd5df82.jpg",
-   "t_ko": "IonQ 대표, 'Q-Day' 2028년 도래 전망 — 투자자들 무관심에 주가 하락",
-   "t_id": "CEO IonQ Sebut 'Q-Day' Tiba 2028, Pasar Abaikan Sahamnya"
-  },
-  {
-   "ts": "2026-09-10T22:35:00+07:00",
-   "date": "2026-09-10",
-   "time": "22:35",
-   "src": "Yahoo Finance",
-   "t": "History Says a Bear Market Is Coming Eventually. Here's the 1 Move the Smartest Investors Are Making Right Now.",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/history-says-bear-market-coming-153500105.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/221983e34dd6372d998a26b1b9bbb0de.jpg",
-   "t_ko": "약세장 도래 역사적 전망 속 현명한 투자자들의 핵심 대응 전략",
-   "t_id": "Sejarah Beri Sinyal Bear Market Pasti Datang, Ini 1 Langkah Investor Cerdas Saat Ini"
   },
   {
    "ts": "2026-09-10T22:35:00+07:00",
@@ -17034,19 +17227,6 @@
    "t_id": "Jasaraharja Putera Terapkan Tata Kelola Manajemen Risiko, Targetkan Pertumbuhan Berkelanjutan"
   },
   {
-   "ts": "2026-09-10T22:25:00+07:00",
-   "date": "2026-09-10",
-   "time": "22:25",
-   "src": "MarketWatch",
-   "t": "Now’s your chance to make money during the best bond market for yields in decades — if you get over Treasury jitters",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/nows-your-chance-to-make-money-during-the-best-bond-market-for-yields-in-decades-if-you-get-over-treasury-jitters-4209f805?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-45520336",
-   "t_ko": "국채 금리 변동성 우려 딛고 수십 년 만의 최고 금리 채권시장 투자 적기 도래",
-   "t_id": "Peluang Emas Raup Cuan di Pasar Obligasi Terbaik Selama Dekade — Asalkan Atasi Kekhawatiran US Treasury"
-  },
-  {
    "ts": "2026-09-10T22:24:30+07:00",
    "date": "2026-09-10",
    "time": "22:24",
@@ -17069,58 +17249,6 @@
     "perbankan",
     "laba"
    ]
-  },
-  {
-   "ts": "2026-09-10T22:23:00+07:00",
-   "date": "2026-09-10",
-   "time": "22:23",
-   "src": "MarketWatch",
-   "t": "Meta is winning over Wall Street with its new Muse AI agent",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/meta-is-winning-over-wall-street-with-its-new-muse-ai-agent-0700ca87?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-48912216",
-   "t_ko": "Meta, 신규 AI 에이전트 Muse로 월가 장악",
-   "t_id": "Meta Pikat Wall Street Lewat Agen AI Baru Muse"
-  },
-  {
-   "ts": "2026-09-10T22:22:32+07:00",
-   "date": "2026-09-10",
-   "time": "22:22",
-   "src": "Yahoo Finance",
-   "t": "The Surprising Pockmarks On Cooper's Earnings That Caused Its Stock To Dive",
-   "tags": [],
-   "url": "https://www.investors.com/news/technology/cooper-companies-stock-fiscal-q3-2026-earnings/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/46306618e5aba43fac0641bf2b99498f.jpg",
-   "t_ko": "Cooper, 실적 속 지표 부진에 주가 급락",
-   "t_id": "Celah Mengejutkan pada Laporan Keuangan Cooper yang Bikin Sahamnya Anjlok"
-  },
-  {
-   "ts": "2026-09-10T22:22:26+07:00",
-   "date": "2026-09-10",
-   "time": "22:22",
-   "src": "Yahoo Finance",
-   "t": "Stock Market Today: Dow Slides As Oil Rocks Higher; Sandisk Slumps As SpaceX Rises (Live Coverage)",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-nvidia-chipmaker-tsmc/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/efdd2096566747a1c5895ff0ab582f7b.jpg",
-   "t_ko": "뉴욕증시, 유가 급등 속 Dow 하락 — Sandisk 급락·SpaceX 상승",
-   "t_id": "Bursa Saham Hari Ini: Dow Turun Saat Minyak Naik Tajam; SanDisk Anjlok Saat SpaceX Naik"
-  },
-  {
-   "ts": "2026-09-10T22:22:04+07:00",
-   "date": "2026-09-10",
-   "time": "22:22",
-   "src": "FT",
-   "t": "Global bond sell-off reignites as oil jumps above $105",
-   "tags": [],
-   "url": "https://www.ft.com/content/49e8c693-0064-4ef9-917f-5f2be97458fc?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fe5996a66-3010-4e36-b651-46e7015f19bb.png?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "유가 배럴당 105달러 돌파에 글로벌 채권 매도세 재확산",
-   "t_id": "Aksi Jual Obligasi Global Kembali Membara Seiring Lonjakan Minyak di Atas $105"
   },
   {
    "ts": "2026-09-10T22:15:00+07:00",
@@ -17194,17 +17322,6 @@
    "t_id": "5 Rekomendasi Kompor Listrik Mini Hemat Daya untuk Hunian Kecil"
   },
   {
-   "ts": "2026-09-10T21:54:00+07:00",
-   "date": "2026-09-10",
-   "time": "21:54",
-   "src": "Media Indonesia",
-   "t": "Siapkan SDM Unggul, Job Fair Perluas Akses Pencari Kerja ke Industri",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932119/siapkan-sdm-unggul-job-fair-perluas-akses-pencari-kerja-ke-industri",
-   "t_ko": "우수 인력 육성 위한 잡페어, 구직자 산업 접근성 확대",
-   "t_id": "Siapkan SDM Unggul, Job Fair Perluas Akses Pencari Kerja ke Industri"
-  },
-  {
    "ts": "2026-09-10T21:48:58+07:00",
    "date": "2026-09-10",
    "time": "21:48",
@@ -17215,17 +17332,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/henkel-memperkenalkan-teknologi-perlindungan-dan-perbaikan-aset-untuk-membantu_260910214832-214.jpg",
    "t_ko": "Henkel, 인도네시아 산업용 자산 보호 기술 선보여",
    "t_id": "Henkel Kenalkan Teknologi Perlindungan Aset untuk Industri Indonesia"
-  },
-  {
-   "ts": "2026-09-10T21:47:00+07:00",
-   "date": "2026-09-10",
-   "time": "21:47",
-   "src": "Media Indonesia",
-   "t": "Digitalisasi Perluas Akses Perlindungan Finansial bagi Masyarakat Indonesia",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932116/digitalisasi-perluas-akses-perlindungan-finansial-bagi-masyarakat-indonesia",
-   "t_ko": "디지털화로 인도네시아 금융보호 접근성 확대",
-   "t_id": "Digitalisasi Perluas Akses Perlindungan Finansial bagi Masyarakat Indonesia"
   },
   {
    "ts": "2026-09-10T21:32:53+07:00",
@@ -17310,6 +17416,18 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841385/fYpoJLGR0q.jpg?w=720",
    "t_ko": "스테인리스 울타리 디자인 5선 — 유리부터 레이저 컷까지",
    "t_id": "5 Inspirasi Pagar Stainless, dari Kaca hingga Laser Cut"
+  },
+  {
+   "ts": "2026-09-10T20:03:24+07:00",
+   "date": "2026-09-10",
+   "time": "20:03",
+   "src": "Detik",
+   "t": "Minyak Jelantah dari MBG Bakal 'Disulap' Jadi Avtur Ramah Lingkungan",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8657564/minyak-jelantah-dari-mbg-bakal-disulap-jadi-avtur-ramah-lingkungan",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2024/07/30/warga-bandung-bisa-raup-cuan-dari-setor-minyak-jelantah_169.jpeg?w=360&q=90",
+   "t_ko": "MBG 폐식용유 활용 친환경 항공유 전환 추진",
+   "t_id": "Minyak Jelantah dari MBG Bakal 'Disulap' Jadi Avtur Ramah Lingkungan"
   }
  ],
  "kisi_news": [
@@ -17483,8 +17601,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.02",
-   "d": -0.8,
-   "ytd": 12.08,
+   "d": -0.78,
+   "ytd": 12.09,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17494,9 +17612,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.918%",
-   "d": 1.67,
-   "ytd": 18.14,
+   "v": "4.922%",
+   "d": 1.76,
+   "ytd": 18.23,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17529,9 +17647,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "100.68",
-   "d": 4.77,
-   "ytd": 75.34,
+   "v": "101.55",
+   "d": 5.67,
+   "ytd": 76.85,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17541,9 +17659,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,408.3",
-   "d": -0.98,
-   "ytd": 1.91,
+   "v": "4,407.9",
+   "d": -0.99,
+   "ytd": 1.9,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17565,9 +17683,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,653",
-   "d": -1.29,
-   "ytd": -0.17,
+   "v": "16,628",
+   "d": -1.44,
+   "ytd": -0.32,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18784,7 +18902,7 @@
    "imp": 3,
    "exp": "-1.400M",
    "prev": "-4.450M",
-   "act": null,
+   "act": "-0.391M",
    "src": "investing.com",
    "title_ko": "EIA 원유 재고",
    "title_id": "Stok Minyak Mentah EIA"
@@ -25434,7 +25552,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 330,
+  "pc_age_min": 347,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27035,11 +27153,11 @@
    "hl": "BBCA, 12월 중간배당 재개 발표",
    "hl_id": "Emiten BBCA Ungkap Kembali Tebar Dividen Interim Desember 2026",
    "url": "https://www.liputan6.com/saham/read/8288566/emiten-bbca-ungkap-kembali-tebar-dividen-interim-desember-2026",
-   "score": 70.7,
-   "s_news": 70,
+   "score": 73.9,
+   "s_news": 78,
    "s_size": 97,
    "s_surge": 45,
-   "srcs": 1
+   "srcs": 2
   },
   {
    "t": "AMMN",
@@ -27078,6 +27196,25 @@
    "s_size": 56,
    "s_surge": 45,
    "srcs": 0
+  },
+  {
+   "t": "ASII",
+   "n": "Astra International",
+   "px": 4870.0,
+   "pct": 0.41,
+   "val": 175839920666.6667,
+   "mcap": 197154903791800.0,
+   "ratio": 0.8,
+   "ev_ko": "자본구조",
+   "ev_id": "Aksi korporasi",
+   "hl": "ASII, 자사주 매입 Rp8조 집행 — 전략 살펴보니",
+   "hl_id": "Astra International (ASII) Kucurkan Rp8 Triliun untuk Buyback Saham, Intip Strateginya",
+   "url": "https://www.idxchannel.com/market-news/astra-international-asii-kucurkan-rp8-triliun-untuk-buyback-saham-intip-strateginya",
+   "score": 59.9,
+   "s_news": 88,
+   "s_size": 82,
+   "s_surge": 0,
+   "srcs": 2
   },
   {
    "t": "TUGU",
@@ -27134,7 +27271,7 @@
    "s_news": 80,
    "s_size": 43,
    "s_surge": 45,
-   "srcs": 0
+   "srcs": 1
   },
   {
    "t": "KBLM",
@@ -27154,25 +27291,6 @@
    "s_size": 15,
    "s_surge": 100,
    "srcs": 0
-  },
-  {
-   "t": "HRTA",
-   "n": "Hartadinata Abadi",
-   "px": 2220.0,
-   "pct": -1.77,
-   "val": 17652565666.666668,
-   "mcap": 10223682528000.0,
-   "ratio": 0.6,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "HRTA, 9.09% 제3자배정 유상증자로 대규모 자금 조달 추진",
-   "hl_id": "HRTA jajaki pendanaan besar lewat private placement 9,09%",
-   "url": "https://www.idnfinancials.com/news/68642/hrta-explores-major-funding-through-9-09-private-placement",
-   "score": 54.3,
-   "s_news": 98,
-   "s_size": 50,
-   "s_surge": 0,
-   "srcs": 2
   }
  ],
  "memory": {}
