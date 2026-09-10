@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 21:27",
+ "updated": "2026-09-10 21:41",
  "delay_min": 0,
  "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 20:07 Yahoo",
- "idr_per_krw": 13.0257,
+ "idr_per_krw": 13.0261,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 21:26",
+   "asof": "investing.com 21:40",
    "unit": "bp"
   }
  ],
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7605.54,
+   "px": 7605.67,
    "prev": 7637.7,
    "pct": -0.42,
-   "asof": "21:25",
+   "asof": "21:40",
    "live": true,
    "spark": [
     7591.46,
@@ -15096,17 +15096,20 @@
     7587.65,
     7594.02,
     7607.11,
-    7605.54
+    7600.02,
+    7602.48,
+    7606.17,
+    7605.67
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26125.21,
+   "px": 26155.12,
    "prev": 26253.34,
-   "pct": -0.49,
-   "asof": "21:25",
+   "pct": -0.37,
+   "asof": "21:40",
    "live": true,
    "spark": [
     26012.32,
@@ -15120,17 +15123,20 @@
     26052.92,
     26067.99,
     26127.47,
-    26125.21
+    26107.46,
+    26119.57,
+    26157.39,
+    26155.12
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52222.38,
+   "px": 52158.13,
    "prev": 52391.48,
-   "pct": -0.32,
-   "asof": "21:25",
+   "pct": -0.45,
+   "asof": "21:40",
    "live": true,
    "spark": [
     52225.89,
@@ -15144,7 +15150,10 @@
     52088.49,
     52136.88,
     52225.21,
-    52222.38
+    52167.67,
+    52165.9,
+    52162.48,
+    52158.13
    ]
   },
   {
@@ -15462,6 +15471,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-10T21:29:23+07:00",
+   "date": "2026-09-10",
+   "time": "21:29",
+   "src": "Liputan6",
+   "t": "Medco Targetkan Produksi Gas dari Blok Sakakemang Kuartal III 2027",
+   "tags": [
+    "MEDC"
+   ],
+   "url": "https://www.liputan6.com/saham/read/8289271/medco-targetkan-produksi-gas-dari-blok-sakakemang-kuartal-iii-2027",
+   "img": "https://cdn1-production-images-kly.akamaized.net/6PBcgJE4IjYqeWSeNRU57xKY3ls=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9345682/original/092167000_1789049357-Medco_Energi-10_September_2026b.jpeg",
+   "t_id": "Medco Targetkan Produksi Gas dari Blok Sakakemang Kuartal III 2027",
+   "t_ko": "Medco Energi, Sakakemang 블록 가스 생산 2027년 3분기 목표"
+  },
+  {
    "ts": "2026-09-10T21:20:43+07:00",
    "date": "2026-09-10",
    "time": "21:20",
@@ -15472,8 +15495,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8289156/emiten-raja-ungkap-alasan-akuisisi-5-saham-layar-nusantara-gas",
    "img": "https://cdn0-production-images-kly.akamaized.net/jerop9yDm0xIDFxGh1_ee-NwmYA=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5497603/original/096409200_1770638744-3.jpg",
-   "t_id": "Emiten RAJA Ungkap Alasan Akuisisi 5% Saham Layar Nusantara Gas",
-   "t_ko": "RAJA, Layar Nusantara Gas 지분 5% 인수 배경 공개"
+   "t_ko": "RAJA, Layar Nusantara Gas 지분 5% 인수 배경 공개",
+   "t_id": "Emiten RAJA Ungkap Alasan Akuisisi 5% Saham Layar Nusantara Gas"
   },
   {
    "ts": "2026-09-10T21:10:00+07:00",
@@ -16087,28 +16110,6 @@
     "유상증자",
     "자금조달",
     "희석"
-   ],
-   "ai_tags_id": []
-  },
-  {
-   "ts": "2026-09-10T12:05:47+07:00",
-   "date": "2026-09-10",
-   "time": "12:05",
-   "src": "Republika",
-   "t": "BTN Perluas Porsi Kredit non-KPR, Targetkan 30 Persen pada 2030",
-   "tags": [
-    "BBTN"
-   ],
-   "url": "https://ekonomi.republika.co.id/berita/tl4u5n502/btn-perluas-porsi-kredit-nonkpr-targetkan-30-persen-pada-2030",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/direktur-utama-pt-bank-tabungan-negara-persero-tbk-btn_260828091225-948.JPG",
-   "t_ko": "BTN, 비주담보대출 비중 확대해 2030년 30% 목표",
-   "t_id": "BTN Perluas Porsi Kredit non-KPR, Targetkan 30 Persen pada 2030",
-   "ai_ko": "BTN, 2026년 6월 비주택 대출 비중 20.4%에서 2030년 30% 목표 제시 / 지방정부 59곳·대학 57곳·병원 26곳 제휴와 선별적 대출 포트폴리오 인수로 이익 기반 다각화",
-   "ai_id": "BTN menargetkan porsi kredit non-perumahan naik menjadi sekitar 30 persen dari total kredit pada 2030, dari 20,4 persen per Juni 2026 dan 18,0 persen akhir 2025. Diversifikasi ditempuh secara organik dan anorganik lewat akuisisi portofolio kredit selektif serta kemitraan ekosistem dengan 59 pemerintah daerah, 57 universitas, dan 26 rumah sakit.",
-   "ai_tags": [
-    "은행",
-    "대출",
-    "사업다각화"
    ],
    "ai_tags_id": []
   },
@@ -16754,20 +16755,6 @@
    "t_id": "SMGR Bidik Prospek Positif dari Program 3 Juta Rumah"
   },
   {
-   "ts": "2026-09-08T18:05:31+07:00",
-   "date": "2026-09-08",
-   "time": "09/08",
-   "src": "Liputan6",
-   "t": "HEAL Kantongi Pendapatan Rp 3,61 Triliun pada Semester I 2026",
-   "tags": [
-    "HEAL"
-   ],
-   "url": "https://www.liputan6.com/saham/read/8287309/heal-kantongi-pendapatan-rp-361-triliun-pada-semester-i-2026",
-   "img": "https://cdn0-production-images-kly.akamaized.net/VzKJndoAUpuH9fUHn7Mrad3bAuw=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4511272/original/099005400_1690099305-IMG-20230723-WA0049.jpg",
-   "t_ko": "HEAL 2026년 상반기 매출 Rp3.61조 확보",
-   "t_id": "HEAL Kantongi Pendapatan Rp 3,61 Triliun pada Semester I 2026"
-  },
-  {
    "ts": "2026-08-24T08:33:00+07:00",
    "date": "2026-08-24",
    "time": "08/24",
@@ -16812,6 +16799,79 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T21:33:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:33",
+   "src": "CNBC",
+   "t": "Trump's $1 trillion-plus 'dividend' plan meets immediate bipartisan pushback",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/trump-dividend-midterms-gop.html",
+   "g": 1,
+   "t_ko": "트럼프의 1조 달러 이상 배당 계획, 초당파적 반대에 직면",
+   "t_id": "Rencana 'dividen' $1 triliun lebih ala Trump langsung hadapi penolakan bipartisan",
+   "ai_ko": "Trump 대통령이 중간선거에서 공화당 승리 시 미국 시민에게 USD 5,000 '배당' 지급을 공약 / 투표 유인 목적 금품 제공은 연방법상 형사처벌 대상이며 앞서 DOGE 배당과 USD 2,000 관세 환급 공약도 무산",
+   "ai_id": "Presiden Trump menjanjikan 'dividen' USD 5.000 bagi warga AS jika Partai Republik menang dalam pemilu sela. Rencana ini berpotensi bermasalah secara hukum karena pemberian uang untuk memengaruhi pemilih merupakan tindak pidana federal, sementara janji dividen DOGE dan rabat tarif USD 2.000 sebelumnya tidak terealisasi.",
+   "ai_tags": [
+    "미국정책",
+    "선거",
+    "현금지급"
+   ],
+   "ai_tags_id": [
+    "kebijakan AS",
+    "pemilu",
+    "bantuan tunai"
+   ]
+  },
+  {
+   "ts": "2026-09-10T21:32:53+07:00",
+   "date": "2026-09-10",
+   "time": "21:32",
+   "src": "Liputan6",
+   "t": "IHSG Hari Ini Anjlok 1,3% ke 6.589, Transaksi Harian Sentuh Rp 21,6 Triliun",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8289070/ihsg-hari-ini-anjlok-13-ke-6589-transaksi-harian-sentuh-rp-216-triliun",
+   "img": "https://cdn0-production-images-kly.akamaized.net/Kh_8iUJQFacaeAZTj9DgYgWr0ns=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277611/original/083761300_1672400408-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga.jpg",
+   "t_ko": "IHSG 1.3% 급락한 6,589 — 거래대금 Rp21.6조",
+   "t_id": "IHSG Hari Ini Anjlok 1,3% ke 6.589, Transaksi Harian Sentuh Rp 21,6 Triliun"
+  },
+  {
+   "ts": "2026-09-10T21:29:11+07:00",
+   "date": "2026-09-10",
+   "time": "21:29",
+   "src": "Republika",
+   "t": "Cegah Piutang Macet, LPDB Perkuat Pengawasan Dana Bergulir Sejak Dini",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl5k8n349/cegah-piutang-macet-lpdb-perkuat-pengawasan-dana-bergulir-sejak-dini",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/lembaga-pengelola-dana-bergulir-lpdb-koperasi-memperkuat-pengawasan-dan_260910212831-564.jpg",
+   "t_ko": "LPDB, 부실채권 예방 위해 회전기금 초기 모니터링 강화",
+   "t_id": "Cegah Piutang Macet, LPDB Perkuat Pengawasan Dana Bergulir Sejak Dini"
+  },
+  {
+   "ts": "2026-09-10T21:29:03+07:00",
+   "date": "2026-09-10",
+   "time": "21:29",
+   "src": "CNA",
+   "t": "Wall Street dips, oil continues climb ahead of US inflation data",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/wall-street-dips-oil-continues-climb-ahead-us-inflation-data-6374561",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--Z7lTQfF0--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-10T130851Z_1_LYNXMPEM8919L_RTROPTP_3_USA-STOCKS.JPG?itok=_CRFtn8y",
+   "t_ko": "미국 물가 지표 발표 앞두고 월가 주가 하락 및 유가 상승세 지속",
+   "t_id": "Wall Street Melemah, Minyak Lanjutkan Kenaikan Jelang Data Inflasi AS"
+  },
+  {
+   "ts": "2026-09-10T21:26:40+07:00",
+   "date": "2026-09-10",
+   "time": "21:26",
+   "src": "CNBC",
+   "t": "10-year Treasury yield tops 4.9%, highest since 2023, as oil surge raises inflation fears",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/us-treasurys-bonds-yield.html",
+   "g": 1,
+   "t_ko": "유가 급등에 인플레이션 우려 고조로 10년물 국채금리 4.9% 돌파",
+   "t_id": "Imbal Hasil US Treasury 10 Tahun Tembus 4,9%, Tertinggi Sejak 2023, Lonjakan Minyak Picu Inflasi"
+  },
+  {
    "ts": "2026-09-10T21:25:54+07:00",
    "date": "2026-09-10",
    "time": "21:25",
@@ -16845,8 +16905,20 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609100487/pemanfaatan-ai-dalam-analisis-klaim-asuransi-dan-deteksi-fraud",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/ilustrasi-asuransi-perlindungan-jiwa-pinterest-DXfQ2.webp",
-   "t_id": "Pemanfaatan AI dalam Analisis Klaim Asuransi dan Deteksi Fraud",
-   "t_ko": "보험금 청구 분석 및 사기 적발에 AI 활용"
+   "t_ko": "보험금 청구 분석 및 사기 적발에 AI 활용",
+   "t_id": "Pemanfaatan AI dalam Analisis Klaim Asuransi dan Deteksi Fraud"
+  },
+  {
+   "ts": "2026-09-10T21:23:22+07:00",
+   "date": "2026-09-10",
+   "time": "21:23",
+   "src": "Bloomberg",
+   "t": "Dollar Has Best Day in Two Weeks as PPI, Oil Add to Fed Bets",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/dollar-has-best-day-in-two-weeks-as-ppi-oil-add-to-fed-bets",
+   "g": 1,
+   "t_ko": "PPI 상승 및 유가 강세 속 연준 금리 인하 기대 반영하며 달러 2주래 최고치 기록",
+   "t_id": "Dolar Catat Hari Terbaik dalam Dua Pekan Sedukung PPI dan Minyak untuk Taruhan Fed"
   },
   {
    "ts": "2026-09-10T21:18:48+07:00",
@@ -16866,11 +16938,34 @@
    "date": "2026-09-10",
    "time": "21:18",
    "src": "Media Indonesia",
+   "t": "Kebutuhan HVAC Komersial Makin Beragam, Pemain Lokal Bidik Segmen Proyek",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932104/kebutuhan-hvac-komersial-makin-beragam-pemain-lokal-bidik-segmen-proyek",
+   "t_ko": "상업용 HVAC 수요 다변화에 국내 업체 프로젝트 공략 본격화",
+   "t_id": "Kebutuhan HVAC Komersial Makin Beragam, Pemain Lokal Bidik Segmen Proyek"
+  },
+  {
+   "ts": "2026-09-10T21:18:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:18",
+   "src": "Media Indonesia",
    "t": "Rakyat Dapat Rekening, Negara Dapat Statistik",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932100/rakyat-dapat-rekening-negara-dapat-statistik",
    "t_ko": "국민은 계좌 확보, 국가는 통계 확보",
    "t_id": "Rakyat Dapat Rekening, Negara Dapat Statistik"
+  },
+  {
+   "ts": "2026-09-10T21:16:26+07:00",
+   "date": "2026-09-10",
+   "time": "21:16",
+   "src": "Bloomberg",
+   "t": "Hormuz Fuel Exports’ Slow Recovery Keeps Prices Near Record",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/hormuz-fuel-exports-slow-recovery-keeps-prices-near-record",
+   "g": 1,
+   "t_ko": "호르무즈 연료 수출 회복 지연에 고점 부근 유지되는 유가",
+   "t_id": "Pemulihan Lambat Ekspor Bahan Bakar Hormuz Jaga Harga di Level Tertinggi"
   },
   {
    "ts": "2026-09-10T21:13:27+07:00",
@@ -16914,11 +17009,11 @@
    "date": "2026-09-10",
    "time": "21:06",
    "src": "Bloomberg",
-   "t": "European Bond Selloff Deepens as ECB Flags Inflationary Risks",
+   "t": "European Bond Selloff Deepens as ECB Flags Inflation Risks",
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-10/european-bond-selloff-deepens-as-ecb-flags-inflationary-risks",
    "g": 1,
-   "t_ko": "ECB 인플레이션 경고에 유럽 채권 매도세 심화",
+   "t_ko": "ECB 인플레이션 위험 경고에 유럽 채권 매도세 심화",
    "t_id": "Aksi Jual Obligasi Eropa Berlanjut Saat ECB Isyaratkan Risiko Inflasi"
   },
   {
@@ -16977,8 +17072,8 @@
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8657602/pemerintah-dorong-efisiensi-dan-transformasi-industri-nasional",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/10/pemerintah-dorong-efisiensi-dan-transformasi-industri-nasional-1789047278799.jpeg?w=360&q=90",
-   "t_id": "Pemerintah Dorong Efisiensi dan Transformasi Industri Nasional",
-   "t_ko": "정부, 국가 산업 효율성 및 전환 추진"
+   "t_ko": "정부, 국가 산업 효율성 및 전환 추진",
+   "t_id": "Pemerintah Dorong Efisiensi dan Transformasi Industri Nasional"
   },
   {
    "ts": "2026-09-10T21:00:27+07:00",
@@ -17019,45 +17114,6 @@
    "t_id": "Kalshi Rilis 'Perps' Emas dan Perak Usai Restu CFTC, Perluas Penawaran Berjangka"
   },
   {
-   "ts": "2026-09-10T21:00:00+07:00",
-   "date": "2026-09-10",
-   "time": "21:00",
-   "src": "MarketWatch",
-   "t": "This simple mistake can cost your loved ones their share of your estate. Here’s how to protect your money.",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/this-simple-mistake-can-cost-your-loved-ones-their-share-of-your-estate-heres-how-to-protect-your-money-99374a95?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-77022960",
-   "t_ko": "재산 상속 누락 방지를 위한 자산 보호 전략",
-   "t_id": "Kesalahan Sepele Ini Bisa Gerus Harta Warisan, Begini Cara Melindunginya"
-  },
-  {
-   "ts": "2026-09-10T20:58:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:58",
-   "src": "MarketWatch",
-   "t": "Markets see a near 50-50 chance the European Central Bank will hike again in October",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/markets-see-a-near-50-50-chance-the-european-central-bank-will-hike-again-in-october-38a87c27?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-08865556",
-   "t_ko": "시장, 10월 ECB 추가 금리 인상 가능성 50% 전망",
-   "t_id": "Pasar Lirik Peluang Nyaris 50-50 ECB Kembali Kerek Suku Bunga pada Oktober"
-  },
-  {
-   "ts": "2026-09-10T20:56:52+07:00",
-   "date": "2026-09-10",
-   "time": "20:56",
-   "src": "Yahoo Finance",
-   "t": "Treasury yields rise as investors raise bets on Fed rate hike: AlphaCheck",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/article/treasury-yields-rise-as-investors-raise-bets-on-fed-rate-hike-alphacheck-135652896.html",
-   "g": 1,
-   "img": "https://s.yimg.com/uu/api/res/1.2/8yoAwNXyIvtCt0xDl.fc0A--~B/aD00MDAwO3c9NjAwMDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-09/6b7d7035-118e-4898-b3eb-511317ceca46",
-   "t_ko": "연준 금리 인상 기대 강화에 미 국채 금리 상승",
-   "t_id": "Imbal Hasil US Treasury Naik Seiring Investor Kerek Taruhan Kenaikan Suku Bunga The Fed: AlphaCheck"
-  },
-  {
    "ts": "2026-09-10T20:54:00+07:00",
    "date": "2026-09-10",
    "time": "20:54",
@@ -17067,31 +17123,6 @@
    "url": "https://mediaindonesia.com/ekonomi/932084/keruk-nikel-13-juta-ton-hasilkan-pnbp-rp21-triliun",
    "t_ko": "니켈 1,300만 톤 채굴로 PNBP Rp21조 창출",
    "t_id": "Keruk Nikel 13 Juta Ton Hasilkan PNBP Rp21 Triliun"
-  },
-  {
-   "ts": "2026-09-10T20:52:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:52",
-   "src": "Yahoo Finance",
-   "t": "Nasdaq Invests $100 Million In Kraken Parent Company",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/crypto/articles/nasdaq-invests-100-million-kraken-135200836.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/cryptoprowl_304/ac8022faf34227214db9079ea6343c56.jpg",
-   "t_ko": "Nasdaq, Kraken 모회사에 USD 1.0억 투자",
-   "t_id": "Nasdaq Investasi $100 Juta di Perusahaan Induk Kraken"
-  },
-  {
-   "ts": "2026-09-10T20:48:53+07:00",
-   "date": "2026-09-10",
-   "time": "20:48",
-   "src": "Bloomberg",
-   "t": "Oil Hits $105 as Iran Shows No Signs of Backing Down",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-10/oil-hits-105-as-iran-shows-no-signs-of-backing-down-video",
-   "g": 1,
-   "t_ko": "이란 강경 기조 유지에 유가 105달러 돌파",
-   "t_id": "Minyak Tembus $105 saat Iran Tunjukkan Tanda-Tanda Tak Mau Mundur"
   },
   {
    "ts": "2026-09-10T20:48:00+07:00",
@@ -17139,17 +17170,6 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841385/fYpoJLGR0q.jpg?w=720",
    "t_ko": "스테인리스 울타리 디자인 5선 — 유리부터 레이저 컷까지",
    "t_id": "5 Inspirasi Pagar Stainless, dari Kaca hingga Laser Cut"
-  },
-  {
-   "ts": "2026-09-10T20:20:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:20",
-   "src": "Media Indonesia",
-   "t": "Trading Derivatif Kripto Meningkat, Volume Pengguna Baru Tumbuh Lebih 200 Persen",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932060/trading-derivatif-kripto-meningkat-volume-pengguna-baru-tumbuh-lebih-200-persen",
-   "t_ko": "암호화폐 파생상품 거래 증가 및 신규 이용자 200% 이상 확대",
-   "t_id": "Trading Derivatif Kripto Meningkat, Volume Pengguna Baru Tumbuh Lebih 200 Persen"
   },
   {
    "ts": "2026-09-10T20:09:00+07:00",
@@ -17234,30 +17254,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/07/07/2025_07_07-12_09_00_56ab4425-5af9-11f0-ab06-2f0b0bf05855_620x413_thumb.jpg",
    "t_ko": "BRICS, 정상회의 앞두고 핵심 광물 산업·시장 공동 구축 제안",
    "t_id": "Jelang KTT, Bergulir Usul BRICS Bangun Industri dan Pasar Mineral Kritis Bersama"
-  },
-  {
-   "ts": "2026-09-10T19:19:15+07:00",
-   "date": "2026-09-10",
-   "time": "19:19",
-   "src": "Republika",
-   "t": "Pasar Otomotif Tumbuh, Lembaga Pembiayaan Targetkan 500 Kendaraan di GIIAS",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl5e3m416/pasar-otomotif-tumbuh-lembaga-pembiayaan-targetkan-500-kendaraan-di-giias",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/030253400-1785559217-830-556.jpg",
-   "t_ko": "자동차 시장 성장 속 금융사, GIIAS서 차량 500대 목표",
-   "t_id": "Pasar Otomotif Tumbuh, Lembaga Pembiayaan Targetkan 500 Kendaraan di GIIAS"
-  },
-  {
-   "ts": "2026-09-10T19:07:14+07:00",
-   "date": "2026-09-10",
-   "time": "19:07",
-   "src": "Detik",
-   "t": "Kilang Olah Minyak Jelantah Jadi Bioavtur Mau Dibangun, Butuh Rp 19 Triliun",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8657474/kilang-olah-minyak-jelantah-jadi-bioavtur-mau-dibangun-butuh-rp-19-triliun",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2015/09/14/f5262ff3-74f7-484d-931e-499471499cae_169.jpg?w=360&q=90",
-   "t_ko": "폐식용유 바이오항공유 정유공장 건설 추진 — Rp19조 소요",
-   "t_id": "Kilang Olah Minyak Jelantah Jadi Bioavtur Mau Dibangun, Butuh Rp 19 Triliun"
   }
  ],
  "kisi_news": [
@@ -17442,9 +17438,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.918%",
-   "d": 1.67,
-   "ytd": 18.14,
+   "v": "4.906%",
+   "d": 1.43,
+   "ytd": 17.85,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17465,9 +17461,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.97",
+   "v": "98.96",
    "d": 0.23,
-   "ytd": 0.7,
+   "ytd": 0.69,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17477,9 +17473,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.63",
-   "d": 3.67,
-   "ytd": 73.51,
+   "v": "98.98",
+   "d": 3.0,
+   "ytd": 72.38,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17489,9 +17485,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,401.3",
-   "d": -1.14,
-   "ytd": 1.75,
+   "v": "4,405.9",
+   "d": -1.03,
+   "ytd": 1.86,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17513,9 +17509,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,657",
-   "d": -1.26,
-   "ytd": -0.15,
+   "v": "16,672",
+   "d": -1.18,
+   "ytd": -0.06,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25382,7 +25378,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 244,
+  "pc_age_min": 258,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
