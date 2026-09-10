@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 21:41",
+ "updated": "2026-09-10 21:54",
  "delay_min": 0,
- "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 20:07 Yahoo",
- "idr_per_krw": 13.0261,
+ "fx_basis": "13.02 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 20:07 Yahoo",
+ "idr_per_krw": 13.0241,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 21:40",
+   "asof": "investing.com 21:53",
    "unit": "bp"
   }
  ],
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7605.67,
+   "px": 7603.72,
    "prev": 7637.7,
-   "pct": -0.42,
-   "asof": "21:40",
+   "pct": -0.44,
+   "asof": "21:50",
    "live": true,
    "spark": [
     7591.46,
@@ -15099,17 +15099,19 @@
     7600.02,
     7602.48,
     7606.17,
-    7605.67
+    7601.49,
+    7600.73,
+    7603.72
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26155.12,
+   "px": 26144.21,
    "prev": 26253.34,
-   "pct": -0.37,
-   "asof": "21:40",
+   "pct": -0.42,
+   "asof": "21:50",
    "live": true,
    "spark": [
     26012.32,
@@ -15126,17 +15128,19 @@
     26107.46,
     26119.57,
     26157.39,
-    26155.12
+    26132.8,
+    26134.44,
+    26144.21
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52158.13,
+   "px": 52152.4,
    "prev": 52391.48,
-   "pct": -0.45,
-   "asof": "21:40",
+   "pct": -0.46,
+   "asof": "21:50",
    "live": true,
    "spark": [
     52225.89,
@@ -15153,7 +15157,9 @@
     52167.67,
     52165.9,
     52162.48,
-    52158.13
+    52126.15,
+    52128.71,
+    52152.4
    ]
   },
   {
@@ -15481,8 +15487,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8289271/medco-targetkan-produksi-gas-dari-blok-sakakemang-kuartal-iii-2027",
    "img": "https://cdn1-production-images-kly.akamaized.net/6PBcgJE4IjYqeWSeNRU57xKY3ls=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9345682/original/092167000_1789049357-Medco_Energi-10_September_2026b.jpeg",
-   "t_id": "Medco Targetkan Produksi Gas dari Blok Sakakemang Kuartal III 2027",
-   "t_ko": "Medco Energi, Sakakemang 블록 가스 생산 2027년 3분기 목표"
+   "t_ko": "Medco Energi, Sakakemang 블록 가스 생산 2027년 3분기 목표",
+   "t_id": "Medco Targetkan Produksi Gas dari Blok Sakakemang Kuartal III 2027"
   },
   {
    "ts": "2026-09-10T21:20:43+07:00",
@@ -16799,6 +16805,92 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T21:54:12.821624+07:00",
+   "date": "2026-09-10",
+   "time": "21:54",
+   "src": "Jawa Pos",
+   "t": "Investasi Butuh Kepastian Hukum, Regulasi Jangan Tumpang Tindih",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609100311/investasi-butuh-kepastian-hukum-regulasi-jangan-tumpang-tindih",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/forum-dialog-nasional-kepastian-hukum-dan-masa-depan-iklim-investasi-di-universitas-indonesia-depok-kamis-109-foto-djati-waluypjawaposcom-9nWQv.webp",
+   "t_ko": "투자에는 법적 확실성 필요, 규제 중복 금지",
+   "t_id": "Investasi Butuh Kepastian Hukum, Regulasi Jangan Tumpang Tindih"
+  },
+  {
+   "ts": "2026-09-10T21:52:50+07:00",
+   "date": "2026-09-10",
+   "time": "21:52",
+   "src": "CNBC",
+   "t": "U.S. crude oil tops $100 again – last seen in May – as market braces for prolonged Iran war",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/iran-us-oil-hormuz-supply-trump-military-brent-wti.html",
+   "g": 1,
+   "t_ko": "이란 전쟁 장기화 우려에 미국 원유 가격 5월 이후 처음으로 100달러 돌파",
+   "t_id": "Minyak mentah AS tembus $100 lagi – terakhir di Mei – di tengah pasar siagakan perang Iran berkepanjangan",
+   "ai_ko": "미군이 화요일 이란 원유 유조선 5척을 격침하며 Brent유 배럴당 USD 100 상회 유지 / Goldman Sachs는 선박 공격 확대 시 USD 120 돌파 위험을 지적",
+   "ai_id": "Harga minyak melanjutkan kenaikan dengan Brent bertahan di atas US$100 per barel setelah militer AS menghancurkan lima kapal tanker minyak Iran pada Selasa. Goldman Sachs menilai eskalasi konflik AS-Iran yang memasuki bulan ketujuh meningkatkan risiko harga minyak menembus US$120 per barel.",
+   "ai_tags": [
+    "유가",
+    "지정학",
+    "원유"
+   ],
+   "ai_tags_id": [
+    "harga minyak",
+    "geopolitik",
+    "Brent"
+   ]
+  },
+  {
+   "ts": "2026-09-10T21:51:36+07:00",
+   "date": "2026-09-10",
+   "time": "21:51",
+   "src": "CNBC",
+   "t": "The likelihood of a Fed interest rate hike next week just got a lot higher",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
+   "g": 1,
+   "t_ko": "다음 주 연준 금리 인상 확률 급등",
+   "t_id": "Peluang Kenaikan Suku Bunga The Fed Pekan Depan Kian Tinggi"
+  },
+  {
+   "ts": "2026-09-10T21:49:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:49",
+   "src": "MarketWatch",
+   "t": "Treasury yields surge toward the danger zone for stocks, as inflation pressures heat up",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/treasury-yields-surge-toward-the-danger-zone-for-stocks-as-inflation-pressures-heat-up-fe0f9aa6?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-97261506",
+   "t_ko": "인플레이션 압박에 국채 금리 급등하며 주식시장 위협",
+   "t_id": "Imbal Hasil US Treasury Melonjak ke Zona Bahaya Saham Seiring Tekanan Inflasi"
+  },
+  {
+   "ts": "2026-09-10T21:48:58+07:00",
+   "date": "2026-09-10",
+   "time": "21:48",
+   "src": "Republika",
+   "t": "Henkel Kenalkan Teknologi Perlindungan Aset untuk Industri Indonesia",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl5l5m349/henkel-kenalkan-teknologi-perlindungan-aset-untuk-industri-indonesia",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/henkel-memperkenalkan-teknologi-perlindungan-dan-perbaikan-aset-untuk-membantu_260910214832-214.jpg",
+   "t_id": "Henkel Kenalkan Teknologi Perlindungan Aset untuk Industri Indonesia",
+   "t_ko": "Henkel, 인도네시아 산업용 자산 보호 기술 선보여"
+  },
+  {
+   "ts": "2026-09-10T21:46:09+07:00",
+   "date": "2026-09-10",
+   "time": "21:46",
+   "src": "BBC",
+   "t": "England's mayors to get power to impose tourist tax",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/c3wjnv3z8nxo?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/076b/live/05f504c0-ad18-11f1-bc1f-3f186ca4140c.jpg",
+   "t_ko": "영국 시장들, 관광세 부과 권한 확보",
+   "t_id": "Wali Kota di Inggris Kantongi Kewenangan Pungut Pajak Turis"
+  },
+  {
    "ts": "2026-09-10T21:33:00+07:00",
    "date": "2026-09-10",
    "time": "21:33",
@@ -16921,6 +17013,30 @@
    "t_id": "Dolar Catat Hari Terbaik dalam Dua Pekan Sedukung PPI dan Minyak untuk Taruhan Fed"
   },
   {
+   "ts": "2026-09-10T21:20:15+07:00",
+   "date": "2026-09-10",
+   "time": "21:20",
+   "src": "CNBC",
+   "t": "Trump warns Tehran over Pickaxe Mountain activity; U.S.-Iran exchange attacks on ships near Hormuz",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/iran-us-war-hormuz-pickaxe-mountain.html",
+   "g": 1,
+   "t_ko": "Trump, Pickaxe Mountain 활동에 Tehran 경고 — 미국·이란 Hormuz 인근 선박 상호 공격",
+   "t_id": "Trump Peringatkan Teheran soal Aktivitas Pickaxe Mountain, AS-Iran Saling Serang Kapal di Dekat Hormuz",
+   "ai_ko": "Trump 대통령, Pickaxe Mountain 핵시설 활동을 겨냥해 강력 타격 가능성 경고, Hormuz 해협 인근 유조선 공격 공방 직후 발언 / CSIS 위성 분석은 2026년 해당 부지 도로·건설 활동이 사상 최대라고 지적",
+   "ai_id": "Presiden Donald Trump memperingatkan Iran agar tidak macam-macam terkait aktivitas di situs nuklir Pickaxe Mountain, menyusul serangan saling balas atas kapal tanker di sekitar Selat Hormuz. Analisis citra satelit CSIS menunjukkan aktivitas jalan di lokasi tersebut pada 2026 tertinggi sepanjang sejarah situs itu disertai lonjakan aktivitas konstruksi.",
+   "ai_tags": [
+    "지정학",
+    "유가",
+    "호르무즈"
+   ],
+   "ai_tags_id": [
+    "geopolitik",
+    "harga minyak",
+    "Selat Hormuz"
+   ]
+  },
+  {
    "ts": "2026-09-10T21:18:48+07:00",
    "date": "2026-09-10",
    "time": "21:18",
@@ -16968,32 +17084,6 @@
    "t_id": "Pemulihan Lambat Ekspor Bahan Bakar Hormuz Jaga Harga di Level Tertinggi"
   },
   {
-   "ts": "2026-09-10T21:13:27+07:00",
-   "date": "2026-09-10",
-   "time": "21:13",
-   "src": "BBC",
-   "t": "England's mayors to get power to impose tourist tax",
-   "tags": [],
-   "url": "https://www.bbc.co.uk/news/articles/c3wjnv3z8nxo?at_medium=RSS&at_campaign=rss",
-   "g": 1,
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/076b/live/05f504c0-ad18-11f1-bc1f-3f186ca4140c.jpg",
-   "t_ko": "영국 시장들, 관광세 부과 권한 확보",
-   "t_id": "Wali Kota di Inggris Kantongi Kewenangan Pungut Pajak Turis"
-  },
-  {
-   "ts": "2026-09-10T21:13:24+07:00",
-   "date": "2026-09-10",
-   "time": "21:13",
-   "src": "Yahoo Finance",
-   "t": "Opendoor Sinks 7% as Yield Spike Meets Delayed Profit Timeline, Offerpad and Zillow Group Trail",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/opendoor-sinks-7-yield-spike-141324330.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/b4aec597cc928bf33d385b8fdbcf343f.jpg",
-   "t_ko": "금리 급등·수익 시점 지연에 Opendoor 7% 하락 — Offerpad·Zillow 동반 부진",
-   "t_id": "Opendoor Anjlok 7% Akibat Lonjakan Imbal Hasil dan Penundaan Laba, Disusul Offerpad dan Zillow Group"
-  },
-  {
    "ts": "2026-09-10T21:10:00+07:00",
    "date": "2026-09-10",
    "time": "21:10",
@@ -17026,30 +17116,6 @@
    "url": "https://mediaindonesia.com/ekonomi/932088/energy-insights-forum-soroti-masa-depan-pertambangan-indonesia",
    "t_ko": "Energy Insights Forum, 인도네시아 광업 미래 조명",
    "t_id": "Energy Insights Forum Soroti Masa Depan Pertambangan Indonesia"
-  },
-  {
-   "ts": "2026-09-10T21:04:28+07:00",
-   "date": "2026-09-10",
-   "time": "21:04",
-   "src": "CNBC",
-   "t": "U.S. crude oil tops $100 again – last seen in May – as market braces for prolonged Iran war",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/iran-us-oil-hormuz-supply-trump-military-brent-wti.html",
-   "g": 1,
-   "t_ko": "이란 전쟁 장기화 우려에 미국 원유 가격 5월 이후 처음으로 100달러 돌파",
-   "t_id": "Minyak mentah AS tembus $100 lagi – terakhir di Mei – di tengah pasar siagakan perang Iran berkepanjangan",
-   "ai_ko": "미군이 화요일 이란 원유 유조선 5척을 격침하며 Brent유 배럴당 USD 100 상회 유지 / Goldman Sachs는 선박 공격 확대 시 USD 120 돌파 위험을 지적",
-   "ai_id": "Harga minyak melanjutkan kenaikan dengan Brent bertahan di atas US$100 per barel setelah militer AS menghancurkan lima kapal tanker minyak Iran pada Selasa. Goldman Sachs menilai eskalasi konflik AS-Iran yang memasuki bulan ketujuh meningkatkan risiko harga minyak menembus US$120 per barel.",
-   "ai_tags": [
-    "유가",
-    "지정학",
-    "원유"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "geopolitik",
-    "Brent"
-   ]
   },
   {
    "ts": "2026-09-10T21:01:15+07:00",
@@ -17089,31 +17155,6 @@
    "t_id": "Dolar Menguat, Euro Melemah Usai Kenaikan Suku Bunga ECB Sesuai Ekspektasi"
   },
   {
-   "ts": "2026-09-10T21:00:21+07:00",
-   "date": "2026-09-10",
-   "time": "21:00",
-   "src": "Yahoo Finance",
-   "t": "The Surprising Pockmarks On Cooper's Earnings That Caused Its Stock To Dive",
-   "tags": [],
-   "url": "https://www.investors.com/news/technology/cooper-companies-stock-fiscal-q3-2026-earnings/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/46306618e5aba43fac0641bf2b99498f.jpg",
-   "t_ko": "Cooper, 실적 속 지표 부진에 주가 급락",
-   "t_id": "Celah Mengejutkan pada Laporan Keuangan Cooper yang Bikin Sahamnya Anjlok"
-  },
-  {
-   "ts": "2026-09-10T21:00:11+07:00",
-   "date": "2026-09-10",
-   "time": "21:00",
-   "src": "CNBC",
-   "t": "Kalshi launches ‘perps’ for gold and silver following CFTC approval, expanding futures offerings",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/kalshi-launches-perps-for-gold-and-silver-following-cftc-approval-expanding-futures-offerings.html",
-   "g": 1,
-   "t_ko": "Kalshi, CFTC 승인으로 금·은 퍼프스 출시 및 선물 확대",
-   "t_id": "Kalshi Rilis 'Perps' Emas dan Perak Usai Restu CFTC, Perluas Penawaran Berjangka"
-  },
-  {
    "ts": "2026-09-10T20:54:00+07:00",
    "date": "2026-09-10",
    "time": "20:54",
@@ -17147,17 +17188,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/01/image-20260126154211.jpg",
    "t_ko": "MediaTek, AI 칩 효과로 매출 44% 급증",
    "t_id": "Bisnis MediaTek Moncer Efek Chip AI, Penjualan Melesat 44%"
-  },
-  {
-   "ts": "2026-09-10T20:39:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:39",
-   "src": "Media Indonesia",
-   "t": "Tata Kelola Akuntabel Dukung Pertumbuhan Bisnis yang Berkelanjutan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932072/tata-kelola-akuntabel-dukung-pertumbuhan-bisnis-yang-berkelanjutan",
-   "t_ko": "투명한 지배구조 바탕으로 지속 가능한 성장 도모",
-   "t_id": "Tata Kelola Akuntabel Dukung Pertumbuhan Bisnis yang Berkelanjutan"
   },
   {
    "ts": "2026-09-10T20:28:44+07:00",
@@ -17242,18 +17272,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/AO_PNM_Dampingi_Pengusaha_Rumput_Laut-2026_09_10-19_16_49_d7dc5516f6a8ae155e0f4e868ce07465_620x413_thumb.jpeg",
    "t_ko": "Sebatik 험지 누비며 고객 성정 지원하는 PNM 계정 담당자",
    "t_id": "Menyusuri Medan Berat Sebatik, Kisah AO PNM Dampingi Nasabah Bertumbuh"
-  },
-  {
-   "ts": "2026-09-10T19:20:00+07:00",
-   "date": "2026-09-10",
-   "time": "19:20",
-   "src": "Katadata",
-   "t": "Jelang KTT, Bergulir Usul BRICS Bangun Industri dan Pasar Mineral Kritis Bersama",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6aa2a09a68759/jelang-ktt-bergulir-usul-brics-bangun-industri-dan-pasar-mineral-kritis-bersama",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/07/07/2025_07_07-12_09_00_56ab4425-5af9-11f0-ab06-2f0b0bf05855_620x413_thumb.jpg",
-   "t_ko": "BRICS, 정상회의 앞두고 핵심 광물 산업·시장 공동 구축 제안",
-   "t_id": "Jelang KTT, Bergulir Usul BRICS Bangun Industri dan Pasar Mineral Kritis Bersama"
   }
  ],
  "kisi_news": [
@@ -17438,9 +17456,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.906%",
-   "d": 1.43,
-   "ytd": 17.85,
+   "v": "4.916%",
+   "d": 1.63,
+   "ytd": 18.09,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17461,9 +17479,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.96",
-   "d": 0.23,
-   "ytd": 0.69,
+   "v": "98.94",
+   "d": 0.21,
+   "ytd": 0.67,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17473,9 +17491,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "98.98",
-   "d": 3.0,
-   "ytd": 72.38,
+   "v": "99.72",
+   "d": 3.77,
+   "ytd": 73.67,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17485,9 +17503,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,405.9",
-   "d": -1.03,
-   "ytd": 1.86,
+   "v": "4,401.0",
+   "d": -1.14,
+   "ytd": 1.74,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17509,9 +17527,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,672",
-   "d": -1.18,
-   "ytd": -0.06,
+   "v": "16,654",
+   "d": -1.28,
+   "ytd": -0.16,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25378,7 +25396,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 258,
+  "pc_age_min": 271,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
