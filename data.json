@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 23:27",
+ "updated": "2026-09-10 23:39",
  "delay_min": 0,
  "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 23:07 Yahoo",
- "idr_per_krw": 13.0272,
+ "idr_per_krw": 13.0264,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 23:26",
+   "asof": "investing.com 23:37",
    "unit": "bp"
   }
  ],
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7592.89,
+   "px": 7593.35,
    "prev": 7637.7,
-   "pct": -0.59,
-   "asof": "23:25",
+   "pct": -0.58,
+   "asof": "23:35",
    "live": true,
    "spark": [
     7591.46,
@@ -15120,17 +15120,19 @@
     7594.07,
     7593.38,
     7593.97,
-    7592.89
+    7593.73,
+    7590.19,
+    7593.35
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26104.38,
+   "px": 26100.42,
    "prev": 26253.34,
-   "pct": -0.57,
-   "asof": "23:25",
+   "pct": -0.58,
+   "asof": "23:35",
    "live": true,
    "spark": [
     26012.32,
@@ -15168,17 +15170,19 @@
     26103.41,
     26103.75,
     26107.09,
-    26104.38
+    26105.45,
+    26092.24,
+    26100.42
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52049.86,
+   "px": 52060.79,
    "prev": 52391.48,
-   "pct": -0.65,
-   "asof": "23:25",
+   "pct": -0.63,
+   "asof": "23:35",
    "live": true,
    "spark": [
     52225.89,
@@ -15216,7 +15220,9 @@
     52050.02,
     52062.6,
     52063.82,
-    52049.86
+    52064.25,
+    52033.16,
+    52060.79
    ]
   },
   {
@@ -15538,12 +15544,12 @@
    "date": "2026-09-10",
    "time": "23:04",
    "src": "Media Indonesia",
-   "t": "Wali Kota Semarang dukung MBG dan KKMP.",
+   "t": "Wali Kota Semarang dukung MBG dan KKMP",
    "tags": [
     "KOTA"
    ],
-   "url": "https://mediaindonesia.com/nusantara/932164/wali-kota-semarang-dukung-mbg-dan-kkmp-",
-   "t_id": "Wali Kota Semarang dukung MBG dan KKMP.",
+   "url": "https://mediaindonesia.com/nusantara/932164/wali-kota-semarang-dukung-mbg-dan-kkmp",
+   "t_id": "Wali Kota Semarang dukung MBG dan KKMP",
    "t_ko": "Semarang 시장, MBG와 KKMP 지원 표명"
   },
   {
@@ -16828,6 +16834,93 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T23:37:19+07:00",
+   "date": "2026-09-10",
+   "time": "23:37",
+   "src": "Jawa Pos",
+   "t": "Energy Insights Forum Soroti Pertambangan Indonesia ke Depan, Dorong Efisiensi dan Adopsi Teknologi",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609100360/energy-insights-forum-soroti-pertambangan-indonesia-ke-depan-dorong-efisiensi-dan-adopsi-teknologi",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/04/21/ilustrasi-aktivitas-pertambangan-batu-bara-antara-Iu7NP.webp",
+   "t_ko": "Energy Insights Forum, Indonesia 광업 효율화·기술 도입 촉구",
+   "t_id": "Energy Insights Forum Soroti Pertambangan Indonesia ke Depan, Dorong Efisiensi dan Adopsi Teknologi",
+   "ai_ko": "Energy Insights Forum에서 광업계에 자본 효율성 제고와 기술 도입 가속 주문 / Kadin은 기술 투자가 생산성과 경쟁력 향상으로 연결돼야 한다고 강조, 광업 섹터 비용 관리가 관건",
+   "ai_id": "Energy Insights Forum mendorong pelaku industri pertambangan meningkatkan efisiensi modal dan mempercepat adopsi teknologi di tengah tekanan geopolitik serta volatilitas biaya. Kadin Indonesia menilai investasi teknologi harus diarahkan pada peningkatan produktivitas dan daya saing, bukan sekadar mengikuti tren.",
+   "ai_tags": [
+    "광업",
+    "기술투자",
+    "비용"
+   ],
+   "ai_tags_id": [
+    "pertambangan",
+    "investasi teknologi",
+    "efisiensi"
+   ]
+  },
+  {
+   "ts": "2026-09-10T23:33:00+07:00",
+   "date": "2026-09-10",
+   "time": "23:33",
+   "src": "WSJ",
+   "t": "Financial Services Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/financial-services-roundup-market-talk-afa5e4d0?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-03838137",
+   "t_ko": "금융권 동향 — 시장 전망",
+   "t_id": "Rangkuman Jasa Keuangan: Sinyal Pasar"
+  },
+  {
+   "ts": "2026-09-10T23:32:00+07:00",
+   "date": "2026-09-10",
+   "time": "23:32",
+   "src": "WSJ",
+   "t": "Health Care Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/health-care-roundup-market-talk-b98107c7?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-07626629",
+   "t_ko": "헬스케어 부문 동향",
+   "t_id": "Fokus Kesehatan: Market Talk"
+  },
+  {
+   "ts": "2026-09-10T23:30:00+07:00",
+   "date": "2026-09-10",
+   "time": "23:30",
+   "src": "WSJ",
+   "t": "Tech, Media & Telecom Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-ad87364c?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-92361535",
+   "t_ko": "테크·미디어·텔레콤 부문 동향",
+   "t_id": "Teknologi, Media & Telekomunikasi: Market Talk"
+  },
+  {
+   "ts": "2026-09-10T23:30:00+07:00",
+   "date": "2026-09-10",
+   "time": "23:30",
+   "src": "Republika",
+   "t": "Kebutuhan Fasilitas Tambang Buka Pasar Ruang Modular",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl5kzl416/kebutuhan-fasilitas-tambang-buka-pasar-ruang-modular",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260910214704-372.png",
+   "t_ko": "광산 시설 수요로 모듈러 공간 시장 확대",
+   "t_id": "Kebutuhan Fasilitas Tambang Buka Pasar Ruang Modular"
+  },
+  {
+   "ts": "2026-09-10T23:29:34+07:00",
+   "date": "2026-09-10",
+   "time": "23:29",
+   "src": "CNBC",
+   "t": "Where investors are finding income outside traditional bonds as rates rise",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/income-alternatives-bond-yields-rates.html",
+   "g": 1,
+   "t_ko": "금리 상승기 전통 채권 외 대체 투자처로 몰리는 자금",
+   "t_id": "Tempat Investor Cari Cuan di Luar Obligasi Tradisional Saat Suku Bunga Naik"
+  },
+  {
    "ts": "2026-09-10T23:24:00+07:00",
    "date": "2026-09-10",
    "time": "23:24",
@@ -16879,6 +16972,19 @@
    "t_id": "Imbal Hasil Obligasi Global Sentuh Rekor Tertinggi, Minyak Kobarkan Kekhawatiran Inflasi"
   },
   {
+   "ts": "2026-09-10T23:18:04+07:00",
+   "date": "2026-09-10",
+   "time": "23:18",
+   "src": "FT",
+   "t": "Global bond sell-off reignites as oil jumps to $107",
+   "tags": [],
+   "url": "https://www.ft.com/content/49e8c693-0064-4ef9-917f-5f2be97458fc?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fe5996a66-3010-4e36-b651-46e7015f19bb.png?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "유가 107달러 치솟으며 글로벌 채권 매도세 재확산",
+   "t_id": "Aksi Jual Obligasi Global Memanas Seiring Minyak Tembus $107"
+  },
+  {
    "ts": "2026-09-10T23:15:28+07:00",
    "date": "2026-09-10",
    "time": "23:15",
@@ -16903,17 +17009,43 @@
    "t_id": "Imbal Hasil US Treasury 10 Tahun Tembus 4,9%, Tertinggi Sejak 2023, Lonjakan Minyak Picu Inflasi"
   },
   {
-   "ts": "2026-09-10T23:08:21+07:00",
+   "ts": "2026-09-10T23:13:24+07:00",
+   "date": "2026-09-10",
+   "time": "23:13",
+   "src": "FT",
+   "t": "Traders refocus on US Treasury auction as sovereign debt rout intensifies",
+   "tags": [],
+   "url": "https://www.ft.com/content/083a9c4b-3913-496d-be13-22c96053624b?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ffa2544fb-699a-4a59-8161-24ebd6a7594e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "국채 금리 급등 속 미국 국채 입찰로 눈 돌리는 트레이더",
+   "t_id": "Trader Kembali Fokus ke Lelang Obligasi AS di Tengah Ketatnya Tekanan Utang Negara"
+  },
+  {
+   "ts": "2026-09-10T23:08:45+07:00",
    "date": "2026-09-10",
    "time": "23:08",
-   "src": "FT",
-   "t": "Global bond sell-off reignites as oil jumps to $107",
+   "src": "Yahoo Finance",
+   "t": "3 Shaky Consumer Dividend Stocks Flashing Warning Signs",
    "tags": [],
-   "url": "https://www.ft.com/content/49e8c693-0064-4ef9-917f-5f2be97458fc?syn-25a6b1a6=1",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/3-shaky-consumer-dividend-stocks-160845041.html",
    "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fe5996a66-3010-4e36-b651-46e7015f19bb.png?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "유가 107달러 치솟으며 글로벌 채권 매도세 재확산",
-   "t_id": "Aksi Jual Obligasi Global Memanas Seiring Minyak Tembus $107"
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/ec2751333e22ac535ba96fc7b53caa82.jpg",
+   "t_ko": "경고등 켜진 흔들리는 소비주 배당주 3선",
+   "t_id": "3 Saham Dividen Konsumer Goyah Beri Sinyal Peringatan"
+  },
+  {
+   "ts": "2026-09-10T23:07:28+07:00",
+   "date": "2026-09-10",
+   "time": "23:07",
+   "src": "Yahoo Finance",
+   "t": "SolarEdge Falls 4% on Analyst Day Despite Joint NVIDIA 800 VDC Paper; Enphase Energy and First Solar Edge Higher",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/solaredge-falls-4-analyst-day-160728979.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/a1137a91007156c8976aa98be61f8847.jpg",
+   "t_ko": "NVIDIA와 협력 발표에도 애널리스트 데이에 SolarEdge 4% 하락 — Enphase Energy와 First Solar는 상승",
+   "t_id": "SolarEdge Anjlok 4% di Analyst Day Meski Gandeng Kertas 800 VDC NVIDIA; Enphase Energy dan First Solar Menguat Tipis"
   },
   {
    "ts": "2026-09-10T23:06:05+07:00",
@@ -16955,83 +17087,6 @@
    "t_id": "Red Robin (RRGB) Rampungkan Refranchising $89,4 Juta, Restrukturisasi Utang Redam Kehilangan Pendapatan Gerai?"
   },
   {
-   "ts": "2026-09-10T23:03:00+07:00",
-   "date": "2026-09-10",
-   "time": "23:03",
-   "src": "Yahoo Finance",
-   "t": "Bank of America flags a $163B risk hanging over stocks",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-flags-163b-risk-160300808.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/thestreet_881/2d3f77034e3c735768378ea1c31040e4.jpg",
-   "t_ko": "Bank of America, 주식시장에 1,630억 달러 규모 리스크 경고",
-   "t_id": "Bank of America Ingatkan Risiko $163 Miliar yang Bayangi Pasar Saham"
-  },
-  {
-   "ts": "2026-09-10T23:02:16+07:00",
-   "date": "2026-09-10",
-   "time": "23:02",
-   "src": "Yahoo Finance",
-   "t": "AI Server Stocks Slide as Two-Day Run Unwinds: Hewlett Packard Enterprise Sinks 4%, Dell Pulls Back, Super Micro Sits Out the Selloff",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/ai-server-stocks-slide-two-160216380.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/b2f9c7cb89d5cc4e471bfce65db4b79d.jpg",
-   "t_ko": "AI 서버주 하락 — Hewlett Packard Enterprise 4% 하락·Dell 조정",
-   "t_id": "Saham Server AI Anjlok Seiring Terhentinya Reli Dua Hari: Hewlett Packard Enterprise Ambles 4%, Dell Terkoreksi, Super Micro Tahan Aksi Jual"
-  },
-  {
-   "ts": "2026-09-10T23:00:39+07:00",
-   "date": "2026-09-10",
-   "time": "23:00",
-   "src": "Yahoo Finance",
-   "t": "SpaceX shares higher as data center overhaul, budding UK defense deal in focus",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/article/spacex-shares-higher-as-data-center-overhaul-budding-uk-defense-deal-in-focus-160039841.html",
-   "g": 1,
-   "img": "https://s.yimg.com/uu/api/res/1.2/NQjtyhTQRAay0xILwZMQsQ--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://d29szjachogqwa.cloudfront.net/images/2026-09/5c1659a1-4859-4ea8-9892-ba8fc9c25ee4",
-   "t_ko": "SpaceX, 데이터센터 개편 및 영국 국방 계약 임박에 주가 상승",
-   "t_id": "Saham SpaceX Menguat Ditopang Perombakan Pusat Data dan Potensi Kesepakatan Pertahanan Inggris"
-  },
-  {
-   "ts": "2026-09-10T23:00:04+07:00",
-   "date": "2026-09-10",
-   "time": "23:00",
-   "src": "Yahoo Finance",
-   "t": "Nvidia Has the AI Hype. AMD Has the Valuation. I’d Buy This Stock.",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-ai-hype-amd-valuation-160004773.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/7988387abe247447186e7611e1e75107.jpg",
-   "t_ko": "Nvidia의 성장성 대 AMD의 밸류에이션 — AMD 매수 의견",
-   "t_id": "Nvidia Punya Hype AI, AMD Punya Valuasi, Ini Saham Pilihan Saya"
-  },
-  {
-   "ts": "2026-09-10T22:56:33+07:00",
-   "date": "2026-09-10",
-   "time": "22:56",
-   "src": "BBC",
-   "t": "Oil, gas and borrowing costs surge as fears over Middle East escalate",
-   "tags": [],
-   "url": "https://www.bbc.co.uk/news/articles/c5y48rz2nddo?at_medium=RSS&at_campaign=rss",
-   "g": 1,
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f162/live/08923520-ad29-11f1-980e-4fc6f1211def.jpg",
-   "t_ko": "중동 리스크 고조로 유가·가스 가격 및 차입 비용 급등",
-   "t_id": "Minyak, Gas, dan Biaya Pinjaman Melonjak Seiring Meningkatnya Kekhawatiran Konflik Timur Tengah"
-  },
-  {
-   "ts": "2026-09-10T22:55:58+07:00",
-   "date": "2026-09-10",
-   "time": "22:55",
-   "src": "CNBC",
-   "t": "Starbucks is back, CEO Brian Niccol says. Here is what he's focused on next",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/starbucks-is-back-ceo-brian-niccol-says-here-is-what-hes-focused-on-next.html",
-   "g": 1,
-   "t_ko": "Starbucks, Brian Niccol 대표가 밝힌 경영 정상화와 향후 전략",
-   "t_id": "CEO Brian Niccol: Starbucks Kembali Bangkit, Ini Fokus Barunya"
-  },
-  {
    "ts": "2026-09-10T22:55:00+07:00",
    "date": "2026-09-10",
    "time": "22:55",
@@ -17041,30 +17096,6 @@
    "url": "https://mediaindonesia.com/ekonomi/932158/indonesia-carbon-and-biodiversity-summit-2026-perkuat-dukungan-untuk-ekonomi-hijau",
    "t_ko": "Indonesia Carbon and Biodiversity Summit 2026, 녹색경제 지원 강화",
    "t_id": "Indonesia Carbon and Biodiversity Summit 2026 Perkuat Dukungan untuk Ekonomi Hijau"
-  },
-  {
-   "ts": "2026-09-10T22:53:41+07:00",
-   "date": "2026-09-10",
-   "time": "22:53",
-   "src": "CNBC",
-   "t": "Trump's $1 trillion-plus 'dividend' plan meets immediate bipartisan pushback",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/trump-dividend-midterms-gop.html",
-   "g": 1,
-   "t_ko": "트럼프의 1조 달러 이상 배당 계획, 초당파적 반대에 직면",
-   "t_id": "Rencana 'dividen' $1 triliun lebih ala Trump langsung hadapi penolakan bipartisan",
-   "ai_ko": "Trump 대통령이 중간선거에서 공화당 승리 시 미국 시민에게 USD 5,000 '배당' 지급을 공약 / 투표 유인 목적 금품 제공은 연방법상 형사처벌 대상이며 앞서 DOGE 배당과 USD 2,000 관세 환급 공약도 무산",
-   "ai_id": "Presiden Trump menjanjikan 'dividen' USD 5.000 bagi warga AS jika Partai Republik menang dalam pemilu sela. Rencana ini berpotensi bermasalah secara hukum karena pemberian uang untuk memengaruhi pemilih merupakan tindak pidana federal, sementara janji dividen DOGE dan rabat tarif USD 2.000 sebelumnya tidak terealisasi.",
-   "ai_tags": [
-    "미국정책",
-    "선거",
-    "현금지급"
-   ],
-   "ai_tags_id": [
-    "kebijakan AS",
-    "pemilu",
-    "bantuan tunai"
-   ]
   },
   {
    "ts": "2026-09-10T22:49:33+07:00",
@@ -17301,30 +17332,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260910134955-970.jpeg",
    "t_ko": "Pertamina Patra Niaga Regional Sulawesi, 마카사르에서 24시간 주유소 25곳 가동",
    "t_id": "Pertamina Patra Niaga Regional Sulawesi Operasikan 25 SPBU 24 Jam di Makassar"
-  },
-  {
-   "ts": "2026-09-10T20:40:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:40",
-   "src": "Bloomberg Technoz",
-   "t": "Bisnis MediaTek Moncer Efek Chip AI, Penjualan Melesat 44%",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121195/bisnis-mediatek-moncer-efek-chip-ai-penjualan-melesat-44",
-   "img": "https://images.bloombergtechnoz.com/data/2026/01/image-20260126154211.jpg",
-   "t_ko": "MediaTek, AI 칩 효과로 매출 44% 급증",
-   "t_id": "Bisnis MediaTek Moncer Efek Chip AI, Penjualan Melesat 44%"
-  },
-  {
-   "ts": "2026-09-10T20:28:44+07:00",
-   "date": "2026-09-10",
-   "time": "20:28",
-   "src": "Medcom",
-   "t": "5 Inspirasi Pagar Stainless, dari Kaca hingga Laser Cut",
-   "tags": [],
-   "url": "https://www.medcom.id/properti/arsitektur/0kpqB7DK-5-inspirasi-pagar-stainless-dari-kaca-hingga-laser-cut",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841385/fYpoJLGR0q.jpg?w=720",
-   "t_ko": "스테인리스 울타리 디자인 5선 — 유리부터 레이저 컷까지",
-   "t_id": "5 Inspirasi Pagar Stainless, dari Kaca hingga Laser Cut"
   }
  ],
  "kisi_news": [
@@ -17499,7 +17506,7 @@
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.02",
    "d": -0.78,
-   "ytd": 12.09,
+   "ytd": 12.1,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17509,9 +17516,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.926%",
-   "d": 1.84,
-   "ytd": 18.33,
+   "v": "4.924%",
+   "d": 1.8,
+   "ytd": 18.28,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17532,9 +17539,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.95",
-   "d": 0.21,
-   "ytd": 0.68,
+   "v": "98.93",
+   "d": 0.2,
+   "ytd": 0.66,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17544,9 +17551,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.86",
-   "d": 5.99,
-   "ytd": 77.39,
+   "v": "101.58",
+   "d": 5.7,
+   "ytd": 76.91,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17556,9 +17563,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,400.7",
-   "d": -1.15,
-   "ytd": 1.74,
+   "v": "4,404.0",
+   "d": -1.08,
+   "ytd": 1.81,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17580,9 +17587,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,624",
-   "d": -1.46,
-   "ytd": -0.35,
+   "v": "16,627",
+   "d": -1.44,
+   "ytd": -0.33,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25449,7 +25456,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 364,
+  "pc_age_min": 376,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
