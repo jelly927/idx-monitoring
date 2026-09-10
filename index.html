@@ -732,7 +732,7 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
   display:none;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--r);
   box-shadow:0 14px 44px rgba(0,0,0,.24);overflow:hidden}
 #gchatPanel.on{display:flex}
-#gchatHead{display:flex;align-items:center;gap:9px;padding:10px 13px;border-bottom:1px solid var(--line);background:var(--brand2)}
+#gchatHead{display:flex;align-items:center;gap:9px;padding:10px 13px;border-bottom:1px solid var(--line);background:var(--brand2);cursor:move;user-select:none;touch-action:none}#gchatHead button{cursor:pointer}#gchatPanel.drag{transition:none;box-shadow:0 18px 54px rgba(0,0,0,.32)}
 #gchatHead .nm{display:flex;flex-direction:column;line-height:1.25}
 #gchatHead .nm b{font-size:13px;color:var(--ink);letter-spacing:.02em}
 #gchatHead .nm span{font-size:10.5px;color:var(--ink2)}
@@ -841,6 +841,43 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
     if (panel.classList.contains('on')) { hello(); input.focus(); }
   };
   $('gchatX').onclick = function(){ panel.classList.remove('on'); };
+
+  // 패널 위치 이동: 헤더를 누른 채 끌면 옮겨지고, 위치는 브라우저에 기억된다 (더블클릭하면 기본 위치로)
+  (function(){
+    var head = $('gchatHead'), key = 'idxlive_chat_pos', drag = null;
+    function clamp(x, y){
+      var w = panel.offsetWidth, h = panel.offsetHeight;
+      return { x: Math.max(0, Math.min(window.innerWidth - w, x)), y: Math.max(0, Math.min(window.innerHeight - h, y)) };
+    }
+    function apply(pos){ panel.style.left = pos.x + 'px'; panel.style.top = pos.y + 'px'; panel.style.right = 'auto'; panel.style.bottom = 'auto'; }
+    function restore(){
+      try { var p = JSON.parse(localStorage.getItem(key) || 'null'); if (p && isFinite(p.x) && isFinite(p.y)) apply(clamp(p.x, p.y)); } catch(e){}
+    }
+    head.addEventListener('pointerdown', function(e){
+      if (e.target.closest('button')) return;
+      var r = panel.getBoundingClientRect();
+      drag = { dx: e.clientX - r.left, dy: e.clientY - r.top, moved: false };
+      head.setPointerCapture(e.pointerId); panel.classList.add('drag');
+    });
+    head.addEventListener('pointermove', function(e){
+      if (!drag) return;
+      drag.moved = true; apply(clamp(e.clientX - drag.dx, e.clientY - drag.dy));
+    });
+    function end(e){
+      if (!drag) return;
+      panel.classList.remove('drag');
+      if (drag.moved) { var r = panel.getBoundingClientRect(); try { localStorage.setItem(key, JSON.stringify({ x: r.left, y: r.top })); } catch(e2){} }
+      drag = null;
+    }
+    head.addEventListener('pointerup', end); head.addEventListener('pointercancel', end);
+    head.addEventListener('dblclick', function(e){
+      if (e.target.closest('button')) return;
+      panel.style.left = panel.style.top = panel.style.right = panel.style.bottom = '';
+      try { localStorage.removeItem(key); } catch(e2){}
+    });
+    window.addEventListener('resize', function(){ if (panel.style.left) { var r = panel.getBoundingClientRect(); apply(clamp(r.left, r.top)); } });
+    restore();
+  })();
   $('gchatTokBtn').onclick = function(){
     token = $('gchatTokIn').value.trim();
     try { localStorage.setItem('idxlive_chat_token', token); } catch(e){}
