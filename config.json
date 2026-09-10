@@ -314,7 +314,8 @@
   "news_max_items": 80,
   "market_news_max": 36,
   "market_news_global_min": 10,
-  "_market_news_comment": "시장 뉴스는 시각순 36건. 글로벌 기사(해외 매체 또는 Fed·유가·중국·지정학 단서)가 10건 미만이면 가장 오래된 국내 기사를 빼고 글로벌 기사를 채움",
+  "market_news_global_max": 16,
+  "_market_news_comment": "시장 뉴스는 시각순 36건. 글로벌 기사(해외 매체 또는 Fed·유가·중국·지정학 단서)가 10건 미만이면 가장 오래된 국내 기사를 빼고 글로벌 기사를 채우고, 16건을 넘으면 반대로 국내 기사를 채움",
   "translate": {
     "enabled": true,
     "max_per_run": 60,
