@@ -137,6 +137,21 @@ def auto_push():
     except Exception as e:
         print("auto_push 오류:", repr(e)[:120], flush=True)
 
+
+def keep_awake():
+    """수집기가 도는 동안 Windows 가 절전·최대절전에 들어가지 않게 한다 (전원 설정과 무관, 화면은 꺼져도 됨).
+    SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED | ES_AWAYMODE_REQUIRED) — 프로세스가 끝나면 자동 해제.
+    수동 종료·정전·Windows 업데이트 재부팅은 막지 못한다 (재부팅 후엔 로그인 시 자동 실행이 되살린다)."""
+    if sys.platform != "win32": return
+    try:
+        import ctypes
+        ES_CONTINUOUS, ES_SYSTEM_REQUIRED, ES_AWAYMODE_REQUIRED = 0x80000000, 0x00000001, 0x00000040
+        r = ctypes.windll.kernel32.SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED | ES_AWAYMODE_REQUIRED)
+        if not r: ctypes.windll.kernel32.SetThreadExecutionState(ES_CONTINUOUS | ES_SYSTEM_REQUIRED)
+        print(">>> 절전 방지 켜짐 (수집기가 도는 동안 PC 가 잠들지 않음)", flush=True)
+    except Exception as e:
+        print("절전 방지 설정 실패:", e)
+
 def already_running(port):
     """같은 포트에 이미 IDX Live 가 떠 있으면 True. 창을 두 개 띄우면 data.json 과 브라우저가 충돌한다."""
     import socket
@@ -157,6 +172,7 @@ if __name__ == "__main__":
         except Exception: pass
         input("엔터를 누르면 닫힙니다... ")
         sys.exit(0)
+    keep_awake()
     try:
         threading.Thread(target=fetch_loop, daemon=True).start()
         socketserver.TCPServer.allow_reuse_address = False
