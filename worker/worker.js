@@ -127,6 +127,12 @@ function sliceCtx(c, text) {
     base.stocks_top = Object.fromEntries(top);
   }
   base.stocks_note = `전체 ${Object.keys(stocks).length}개 종목 중 질문에 관련된 것만 실었다. 여기 없는 종목은 '확인 불가'로 답할 것.`;
+  // 장기기억: 종목 카드는 질문에 걸린 종목만, 주간 카드·미결 스레드는 항상 (작다)
+  const mem = c.memory || {};
+  const memStocks = {};
+  for (const t in hit) if (mem.stocks && mem.stocks[t]) memStocks[t] = mem.stocks[t];
+  base.memory = { made: mem.made || null, weeks: mem.weeks || {}, stocks: memStocks,
+                  threads: (mem.threads || []).filter(th => n === 0 || hit[th.t]).slice(0, 20) };
   return base;
 }
 
@@ -157,6 +163,7 @@ function sysPrompt(ctx, lang) {
     "- macro: v 는 이미 포맷된 문자열이다. 그대로 인용한다.",
     "- ai_index 는 오늘 지수가 왜 움직였는지 한 줄 요약, ai_stocks 는 종목별 등락 사유, announcements[].ai 는 공시 요약이다. 이미 만들어진 요약이니 근거로 인용하되 숫자는 원본 필드로 검증한다.",
     "- freshness.pc_age_min 이 180 이상이면 수집 PC 가 꺼져 있어 공시·종목 요약이 오래된 값일 수 있다. 그럴 때는 답변 끝에 데이터 기준 시각을 밝힌다.",
+    "- memory 는 장기기억이다. memory.weeks 는 주간 시장 카드(주차별 요약·사건), memory.stocks[티커] 는 그 종목의 과거 이벤트 카드(date·type·summary·numbers·follow_up·due), memory.threads 는 아직 확인이 안 끝난 후속 사항(q=질문, due=확인 시점, last=최근 진전)이다. 종목·시장을 물으면 현재 DATA 와 함께 '지난 X주 카드에 따르면 …였고, 이번 주 후속은 …' 식으로 과거 맥락과 후속 상태를 이어서 말한다. 카드의 날짜를 밝히고, 카드에 없는 후속 결과를 지어내지 않는다. memory 가 비어 있으면 언급하지 않는다.",
     "- catalyst 는 오늘 재료(뉴스·공시·배당락)가 있는 종목 상위 10이다. score = s_news×0.4 + s_size×0.3 + s_surge×0.3 로 계산된 값이며, event 는 재료 유형, headline 은 근거 기사다. 순위 근거를 물으면 이 세 점수를 그대로 제시한다.",
     "",
     lang === "id"
