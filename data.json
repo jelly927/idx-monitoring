@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 17:12",
+ "updated": "2026-09-10 17:26",
  "delay_min": 0,
  "fx_basis": "13.07 IDR/KRW · USD/IDR 17,535 · USD/KRW 1,342 · 17:07 Yahoo",
- "idr_per_krw": 13.0673,
+ "idr_per_krw": 13.0658,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -83,13 +83,13 @@
     6671.001,
     6662.837,
     6666.891,
-    6663.422,
-    6665.307,
+    6663.984,
+    6665.23,
     6669.111,
-    6666.623,
-    6666.865,
-    6667.973,
-    6668.301,
+    6669.474,
+    6666.652,
+    6666.884,
+    6665.877,
     6663.362,
     6651.298,
     6652.714,
@@ -214,13 +214,13 @@
     662.684,
     662.566,
     662.148,
-    662.15,
-    662.195,
-    662.551,
-    662.724,
     662.449,
-    662.439,
-    662.068,
+    662.496,
+    662.219,
+    662.742,
+    662.612,
+    662.424,
+    662.485,
     662.422,
     661.428,
     661.657,
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 17:12",
+   "asof": "investing.com 17:25",
    "unit": "bp"
   }
  ],
@@ -337,7 +337,7 @@
   "m1": 3.52,
   "value_idr": 21546688746644,
   "volume": 48552221241,
-  "rank_src": "Yahoo 15분 지연 · 835종목 · 종가 · 외국인·공시 PC 09-10 17:09",
+  "rank_src": "Yahoo 15분 지연 · 835종목 · 종가 · 외국인·공시 PC 09-10 17:23",
   "rank_asof": null,
   "rank_date": "2026-09-10",
   "adv": 161,
@@ -7076,22 +7076,6 @@
    "live": 0
   },
   {
-   "t": "BAPI",
-   "n": "Bhakti Agung Propertindo",
-   "px": 25.0,
-   "prev": 23.0,
-   "pct": 8.7,
-   "val": 1383827500.0,
-   "vol": 55353100.0,
-   "sh": 5591980103,
-   "mcap": 139799502575.0,
-   "hi": 25.0,
-   "lo": 25.0,
-   "ratio": 5.4,
-   "fnet": 0.0,
-   "live": 0
-  },
-  {
    "t": "GEMS",
    "n": "Golden Energy Mines",
    "px": 7600.0,
@@ -13060,6 +13044,22 @@
    "live": 0
   },
   {
+   "t": "BBMD",
+   "n": "Bank Mestika Dharma",
+   "px": 2000.0,
+   "prev": 1985.0,
+   "pct": 0.76,
+   "val": 33943500.0,
+   "vol": 17100.0,
+   "sh": 4049189100,
+   "mcap": 8098378200000.0,
+   "hi": 2000.0,
+   "lo": 1955.0,
+   "ratio": 3.4,
+   "fnet": 0.0,
+   "live": 0
+  },
+  {
    "t": "SONA",
    "n": "Sona Topas Tourism Industry",
    "px": 2250.0,
@@ -14592,11 +14592,11 @@
   {
    "name": "금융",
    "name_id": "Keuangan",
-   "n": 98,
-   "adv": 17,
+   "n": 99,
+   "adv": 18,
    "dec": 60,
-   "val": 2969843334566.6675,
-   "mcap": 2950015231670951.0,
+   "val": 2969877278066.6675,
+   "mcap": 2958113609870951.0,
    "top": [
     {
      "t": "BBCA",
@@ -14639,7 +14639,7 @@
      "pct": -0.25
     }
    ],
-   "pct": -1.17
+   "pct": -1.16
   },
   {
    "name": "경기소비재",
@@ -14852,11 +14852,11 @@
   {
    "name": "부동산",
    "name_id": "Properti",
-   "n": 80,
-   "adv": 18,
+   "n": 79,
+   "adv": 17,
    "dec": 50,
-   "val": 468389529199.9999,
-   "mcap": 452972093975019.0,
+   "val": 467005701699.9999,
+   "mcap": 452832294472444.0,
    "top": [
     {
      "t": "MPRO",
@@ -15644,6 +15644,34 @@
  },
  "news": [
   {
+   "ts": "2026-09-10T17:17:00+07:00",
+   "date": "2026-09-10",
+   "time": "17:17",
+   "src": "Medcom",
+   "t": "Jelang Persija vs Persib, PSSI Berharap Laga Berjalan Aman dan Lancar",
+   "tags": [
+    "PSSI"
+   ],
+   "url": "https://www.medcom.id/olahraga/liga-indonesia/gNQrmLob-jelang-persija-vs-persib-pssi-berharap-laga-berjalan-aman-dan-lancar",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841314/PI5QegWUM0.jpg?w=720",
+   "t_id": "Jelang Persija vs Persib, PSSI Berharap Laga Berjalan Aman dan Lancar",
+   "t_ko": "Persija-Persib전 앞두고 PSSI, 안전하고 원활한 경기 진행 당부"
+  },
+  {
+   "ts": "2026-09-10T17:08:01+07:00",
+   "date": "2026-09-10",
+   "time": "17:08",
+   "src": "Medcom",
+   "t": "PSSI Buka Pendaftaran Volunteer FIFA ASEAN Cup 2026, Ini Syarat dan Cara Daftarnya",
+   "tags": [
+    "PSSI"
+   ],
+   "url": "https://www.medcom.id/pendidikan/jobseeker/8N0XrJdN-pssi-buka-pendaftaran-volunteer-fifa-asean-cup-2026-ini-syarat-dan-cara-daftarnya",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841335/YH1QvToLnz.jpg?w=720",
+   "t_id": "PSSI Buka Pendaftaran Volunteer FIFA ASEAN Cup 2026, Ini Syarat dan Cara Daftarnya",
+   "t_ko": "PSSI, FIFA ASEAN Cup 2026 자원봉사자 모집 개시 — 신청 자격 및 방법"
+  },
+  {
    "ts": "2026-09-10T17:05:00+07:00",
    "date": "2026-09-10",
    "time": "17:05",
@@ -15654,7 +15682,7 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6aa280ddf41a5/ihsg-merosot-ke-1-33-ada-transaksi-crossing-rp-1-25-triliun-di-saham-vici",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/27/2026_07_27-11_53_00_29b31032-8987-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "IHSG 1.33% 하락 마감 — VICI 주식 Rp1.25조 규모 크로스 거래 발생",
+   "t_ko": "IHSG 1.33% 하락 — VICI, Rp1.25조 크로싱 거래 발생",
    "t_id": "IHSG Merosot ke 1,33%, Ada Transaksi Crossing Rp 1,25 Triliun di Saham VICI"
   },
   {
@@ -15669,8 +15697,8 @@
    ],
    "url": "https://www.idnfinancials.com/news/68649/bank-jago-posts-idr-189-billion-net-profit-as-customers-hit-20-million",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/BANK%20JAGO-min.jpg",
-   "t_ko": "Bank Jago, 고객 2,000만 명 돌파하며 순이익 Rp1,890억 기록",
-   "t_id": "Bank Jago Catat Laba Bersih Rp189 Miliar Seiring Lonjakan Nasabah 20 Juta"
+   "t_ko": "Bank Jago, 고객 2,000만 명 돌파 속 순이익 IDR 1,890억",
+   "t_id": "Bank Jago cetak laba bersih Rp189 miliar, nasabah tembus 20 juta"
   },
   {
    "ts": "2026-09-10T16:55:36+07:00",
@@ -16191,32 +16219,6 @@
     "kinerja",
     "pertambangan",
     "biaya produksi"
-   ]
-  },
-  {
-   "ts": "2026-09-10T14:18:00+07:00",
-   "date": "2026-09-10",
-   "time": "14:18",
-   "src": "Katadata",
-   "t": "Kisi-Kisi Dividen Astra (ASII) hingga Gelontorkan Capex Jumbo Rp 35,5 Triliun",
-   "tags": [
-    "ASII"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa259b4f27e1/kisi-kisi-dividen-astra-asii-hingga-gelontorkan-capex-jumbo-rp-35-5-triliun",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/05/25/Menara_Astra-2026_05_25-18_08_05_d1d1d749c69abc3e524785ac004697b3_620x413_thumb.jpeg",
-   "t_ko": "ASII, 순이익 배당 기대감 속 설비투자 Rp35.5조 투입",
-   "t_id": "Kisi-Kisi Dividen Astra (ASII) hingga Gelontorkan Capex Jumbo Rp 35,5 Triliun",
-   "ai_ko": "Astra International(ASII) 2026 회계연도 배당성향 45~50% 유지 방침 발표, 연간 자본지출은 Rp35.5조 배정 / 상반기 순이익은 중장비·광산 부문 부진으로 19% 감소한 Rp12.53조",
-   "ai_id": "Astra International (ASII) memastikan dividend payout ratio tetap di kisaran 45%-50% dari laba untuk tahun buku 2026, dengan alokasi capex hingga Rp 35,5 triliun tahun ini. Laba bersih perseroan pada semester I-2026 turun 19% YoY menjadi Rp 12,53 triliun akibat lemahnya bisnis alat berat dan solusi pertambangan.",
-   "ai_tags": [
-    "배당",
-    "설비투자",
-    "실적"
-   ],
-   "ai_tags_id": [
-    "dividen",
-    "capex",
-    "kinerja"
    ]
   },
   {
@@ -16955,28 +16957,6 @@
    "ai_tags_id": []
   },
   {
-   "ts": "2026-09-09T21:30:00+07:00",
-   "date": "2026-09-09",
-   "time": "09/09",
-   "src": "IDNFinancials",
-   "t": "Foreign outflow, BBCA top sell IDR 638 billion",
-   "tags": [
-    "BBCA"
-   ],
-   "url": "https://www.idnfinancials.com/news/68604/foreign-outflow-bbca-top-sell-idr-638-billion",
-   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/NET%20FOREIGN%20IMAGE%20%28ARIF%29/NET%20FOREIGN%2015.jpeg",
-   "t_ko": "외국인 순매도 — BBCA Rp6,380억 최다 매도",
-   "t_id": "Foreign Outflow, BBCA Jadi Top Sell Rp 638 Miliar",
-   "ai_ko": "9월 9일 외국인은 정규장에서 Rp6,214억 순매도로 전환, BBCA를 Rp6,386억 최대 순매도 / 반면 ANTM Rp3,739억, AADI·PTBA·INDY 등 에너지·광업주는 순매수 상위 차지",
-   "ai_id": "Asing membukukan net sell Rp621,40 miliar di pasar reguler pada Rabu (9/9), berbalik dari net buy Rp379,39 miliar sehari sebelumnya. BBCA memimpin top sell asing senilai Rp638,6 miliar, sementara ANTM memuncaki top buy dengan Rp373,9 miliar.",
-   "ai_tags": [
-    "외국인",
-    "수급",
-    "은행주"
-   ],
-   "ai_tags_id": []
-  },
-  {
    "ts": "2026-09-09T20:10:07+07:00",
    "date": "2026-09-09",
    "time": "09/09",
@@ -17436,6 +17416,79 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T17:23:00+07:00",
+   "date": "2026-09-10",
+   "time": "17:23",
+   "src": "Katadata",
+   "t": "Prabowo Perintahkan TNI AL Cari Lima Jurnalis yang Hilang di Selat Sunda",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6aa2852704924/prabowo-perintahkan-tni-al-cari-lima-jurnalis-yang-hilang-di-selat-sunda",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/26/Presiden_Prabowo_Subianto_saat_memimpin_rapat_di_Posko_Penangana-2026_08_26-15_09_57_c5b9cefe9cd01aa6b121767ba0f40a03_620x413_thumb.png",
+   "t_id": "Prabowo Perintahkan TNI AL Cari Lima Jurnalis yang Hilang di Selat Sunda",
+   "t_ko": "Prabowo 대통령, 순다 해협 실종 기자 5명 수색 해군에 지시"
+  },
+  {
+   "ts": "2026-09-10T17:22:38+07:00",
+   "date": "2026-09-10",
+   "time": "17:22",
+   "src": "CNBC",
+   "t": "OpenAI, Anthropic researchers ramp up calls for AI slowdown as warnings of catastrophic risk intensify",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/openai-anthropic-ai-safety-slowdown-extinction.html",
+   "g": 1,
+   "t_ko": "OpenAI·Anthropic 연구진, AI 재앙적 위험 경고하며 개발 속도 조절 촉구",
+   "t_id": "Peneliti OpenAI dan Anthropic Desak Perlambatan AI di Tengah Peringatan Risiko Katastrofik"
+  },
+  {
+   "ts": "2026-09-10T17:20:00+07:00",
+   "date": "2026-09-10",
+   "time": "17:20",
+   "src": "Bloomberg Technoz",
+   "t": "Tambang Weda Bay Nickel Kembali Beroperasi Usai Stop 4 Bulan",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121177/tambang-weda-bay-nickel-kembali-beroperasi-usai-stop-4-bulan",
+   "img": "https://images.bloombergtechnoz.com/data/2025/05/image-20250523110708.jpg",
+   "t_ko": "Weda Bay Nickel 제련소, 4개월 중단 끝에 조업 재개",
+   "t_id": "Tambang Weda Bay Nickel Kembali Beroperasi Usai Stop 4 Bulan"
+  },
+  {
+   "ts": "2026-09-10T17:17:36+07:00",
+   "date": "2026-09-10",
+   "time": "17:17",
+   "src": "BBC",
+   "t": "England's mayors to be given power to introduce tourist tax",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/c3wjnv3z8nxo?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/82de/live/95f268a0-acf6-11f1-bc1f-3f186ca4140c.jpg",
+   "t_ko": "영국 시장들에게 관광세 도입 권한 부여",
+   "t_id": "Wali Kota di Inggris Diberi Kewenangan Terapkan Pajak Turis"
+  },
+  {
+   "ts": "2026-09-10T17:13:59+07:00",
+   "date": "2026-09-10",
+   "time": "17:13",
+   "src": "Jawa Pos",
+   "t": "Sebut Status Danantara Belum Jelas, Guru Besar UI Warning soal Pengelolaan BUMN",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609100384/sebut-status-danantara-belum-jelas-guru-besar-ui-warning-soal-pengelolaan-bumn",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/06/12/petugas-berjaga-di-depan-logo-danantara-di-jakarta-kamis-1162026-salman-toyibijawa-pos-yFqHP.webp",
+   "t_ko": "UI 교수, Danantara 지위 불투명에 BUMN 관리 우려",
+   "t_id": "Sebut Status Danantara Belum Jelas, Guru Besar UI Warning soal Pengelolaan BUMN"
+  },
+  {
+   "ts": "2026-09-10T17:12:44+07:00",
+   "date": "2026-09-10",
+   "time": "17:12",
+   "src": "Bloomberg",
+   "t": "Xi’s First India Trip Since 2019 Extends an Olive Branch to Modi",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/xi-s-first-india-trip-since-2019-extends-an-olive-branch-to-modi",
+   "g": 1,
+   "t_ko": "시진핑, 2019년 이후 첫 인도 방문… 모디 총리에 화해 손길",
+   "t_id": "Kunjungan Pertama Xi ke India Sejak 2019 Ulurkan Tangan ke Modi"
+  },
+  {
    "ts": "2026-09-10T17:07:02+07:00",
    "date": "2026-09-10",
    "time": "17:07",
@@ -17444,8 +17497,20 @@
    "tags": [],
    "url": "https://www.medcom.id/ekonomi/bisnis/GKdGxVek-antrean-bbm-di-makassar-25-spbu-kini-buka-24-jam-dan-pasokan-ditambah-15-persen",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841334/uRqWT1IsZk.jpeg?w=720",
-   "t_id": "Antrean BBM di Makassar, 25 SPBU Kini Buka 24 Jam dan Pasokan Ditambah 15 Persen",
-   "t_ko": "마카사르 연료유 대기 줄어 — 주유소 25곳 24시간 영업 및 공급 15% 확대"
+   "t_ko": "Makassar 주유난에 SPBU 25곳 24시간 운영 — 공급 15% 확대",
+   "t_id": "Antrean BBM di Makassar, 25 SPBU Kini Buka 24 Jam dan Pasokan Ditambah 15 Persen"
+  },
+  {
+   "ts": "2026-09-10T17:05:36+07:00",
+   "date": "2026-09-10",
+   "time": "17:05",
+   "src": "Bloomberg",
+   "t": "TotalEnergies Plans $10 Billion in Angola Oil Investments",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/totalenergies-plans-10-billion-in-angola-oil-investments",
+   "g": 1,
+   "t_ko": "TotalEnergies, 앙골라 석유 부문에 100억 달러 투자 계획",
+   "t_id": "TotalEnergies Rencanakan Investasi Minyak $10 Miliar di Angola"
   },
   {
    "ts": "2026-09-10T17:04:46+07:00",
@@ -17456,8 +17521,8 @@
    "tags": [],
    "url": "https://www.liputan6.com/saham/read/8289070/ihsg-hari-ini-anjlok-13-ke-6589-transaksi-harian-sentuh-rp-216-triliun",
    "img": "https://cdn0-production-images-kly.akamaized.net/Kh_8iUJQFacaeAZTj9DgYgWr0ns=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277611/original/083761300_1672400408-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga.jpg",
-   "t_id": "IHSG Hari Ini Anjlok 1,3% ke 6.589, Transaksi Harian Sentuh Rp 21,6 Triliun",
-   "t_ko": "IHSG 1.3% 급락한 6,589 마감 — 일일 거래대금 Rp21.6조 기록"
+   "t_ko": "IHSG 1.3% 급락한 6,589 — 거래대금 Rp21.6조",
+   "t_id": "IHSG Hari Ini Anjlok 1,3% ke 6.589, Transaksi Harian Sentuh Rp 21,6 Triliun"
   },
   {
    "ts": "2026-09-10T17:01:22+07:00",
@@ -17484,6 +17549,44 @@
    ]
   },
   {
+   "ts": "2026-09-10T17:01:17+07:00",
+   "date": "2026-09-10",
+   "time": "17:01",
+   "src": "Bloomberg",
+   "t": "Intesa Investors Back Share Issue to Finance Monte Paschi Bid",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/intesa-investors-back-share-issue-to-finance-monte-paschi-bid",
+   "g": 1,
+   "t_ko": "Intesa 주주들, Monte Paschi 인수 자금 조달용 유상증자 지지",
+   "t_id": "Investor Intesa Dukung Penerbitan Saham untuk Biayai Penawaran Monte Paschi"
+  },
+  {
+   "ts": "2026-09-10T17:00:11+07:00",
+   "date": "2026-09-10",
+   "time": "17:00",
+   "src": "FT",
+   "t": "On Europe’s economy, let’s ditch the lazy stereotypes",
+   "tags": [],
+   "url": "https://www.ft.com/content/362b3139-b0de-42f1-83db-67d4572a66ce?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7c3a45ad-af87-4957-a7ff-84d40f223e00.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "유럽 경제 바라보는 낡은 통념 탈피 필요",
+   "t_id": "Soal Ekonomi Eropa, Saatnya Tinggalkan Stereotip Usang"
+  },
+  {
+   "ts": "2026-09-10T17:00:11+07:00",
+   "date": "2026-09-10",
+   "time": "17:00",
+   "src": "FT",
+   "t": "Latham & Watkins buys Nvidia servers to set up in-house AI systems",
+   "tags": [],
+   "url": "https://www.ft.com/content/a2aaa848-92c3-4f7a-b758-5858bfb29e70?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fb78edb16-94b2-4c6b-8911-b9f4148cba16.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "Latham & Watkins, Nvidia 서버 도입해 사내 AI 시스템 구축",
+   "t_id": "Latham & Watkins Beli Server Nvidia untuk Bangun Sistem AI Internal"
+  },
+  {
    "ts": "2026-09-10T16:58:48+07:00",
    "date": "2026-09-10",
    "time": "16:58",
@@ -17492,7 +17595,7 @@
    "tags": [],
    "url": "https://www.medcom.id/nasional/peristiwa/nN9dQgeK-kaposwil-prr-aceh-anggaran-pusat-dan-daerah-untuk-kepentingan-rakyat",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841330/evXUTCIiGy.jpeg?w=720",
-   "t_ko": "Kaposwil PRR Aceh, 중앙·지방 예산은 오직 국민 편익에 투입 강조",
+   "t_ko": "Kaposwil PRR Aceh, 중앙·지방 예산은 국민 이익 우선",
    "t_id": "Kaposwil PRR Aceh: Anggaran Pusat dan Daerah untuk Kepentingan Rakyat"
   },
   {
@@ -17520,6 +17623,19 @@
    ]
   },
   {
+   "ts": "2026-09-10T16:58:12+07:00",
+   "date": "2026-09-10",
+   "time": "16:58",
+   "src": "FT",
+   "t": "ECB expected to raise rates to fight inflation shock",
+   "tags": [],
+   "url": "https://www.ft.com/content/083a9c4b-3913-496d-be13-22c96053624b?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F3586a0da-39fa-44f2-8625-15a01ca8c8aa.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "ECB, 인플레이션 충격 대응 금리 인상 전망",
+   "t_id": "ECB Diperkirakan Naikkan Suku Bunga demi Lawan Guncangan Inflasi"
+  },
+  {
    "ts": "2026-09-10T16:57:00+07:00",
    "date": "2026-09-10",
    "time": "16:57",
@@ -17529,8 +17645,8 @@
    "url": "https://www.wsj.com/articles/the-u-s-seized-225-million-from-scammers-who-gets-it-back-e479893e?mod=rss_markets_main",
    "g": 1,
    "img": "https://images.wsj.net/im-55629339",
-   "t_ko": "미국 정부, 사기단서 압수 자금 2억 2,500만 달러 반환 절차 착수",
-   "t_id": "AS Sita $225 Juta dari Penipu, Siapa yang Dapat?"
+   "t_ko": "미국, 사기범 압류자산 USD 2.25억 반환 대상은 누구",
+   "t_id": "AS Sita $225 Juta Dari Penipu, Bagaimana Cara Kembalikan ke Korban"
   },
   {
    "ts": "2026-09-10T16:54:00+07:00",
@@ -17565,8 +17681,8 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-10/legoland-operator-gets-657-million-new-debt-to-refinance-bonds",
    "g": 1,
-   "t_ko": "레고랜드 운영사, 채권 차환 위해 6억 5,700만 파운드 신규 부채 조달",
-   "t_id": "Operator Legoland Raih Utang Baru £657 Juta untuk Refinancing Obligasi"
+   "t_ko": "Legoland 운영사, 채권 차환에 6억5700만 파운드 신규 조달",
+   "t_id": "Operator Legoland Kantongi Utang Baru £657 Juta untuk Refinancing Obligasi"
   },
   {
    "ts": "2026-09-10T16:47:01+07:00",
@@ -17718,8 +17834,8 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-10/saudi-aramco-weighs-sale-of-chemicals-business-arlanxeo",
    "g": 1,
-   "t_ko": "Saudi Aramco, 화학 계열사 Arlanxeo 매각 검토",
-   "t_id": "Saudi Aramco Kaji Penjualan Bisnis Kimia Arlanxeo"
+   "t_ko": "Saudi Aramco, 화학 사업 Arlanxeo 매각 검토",
+   "t_id": "Saudi Aramco Pertimbangkan Jual Bisnis Kimia Arlanxeo"
   },
   {
    "ts": "2026-09-10T16:37:41+07:00",
@@ -17899,213 +18015,6 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841321/EyzXjl4QAr.jpg?w=720",
    "t_ko": "저금통 활용법 10가지 — Rp500부터 시작 가능",
    "t_id": "10 Cara Menabung Pakai Celengan, Bisa Mulai dari Rp500"
-  },
-  {
-   "ts": "2026-09-10T16:19:00+07:00",
-   "date": "2026-09-10",
-   "time": "16:19",
-   "src": "WSJ",
-   "t": "Regulatory Uncertainty Clouds Chinese Robot Firm Galaxea AI’s IPO Plan",
-   "tags": [],
-   "url": "https://www.wsj.com/business/regulatory-uncertainty-clouds-chinese-robot-firm-galaxea-ais-ipo-plan-b6dab954?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-53259187",
-   "t_ko": "중국 로봇업체 Galaxea AI, 규제 불확실성에 IPO 계획 차질",
-   "t_id": "Ketidakpastian Regulasi Bayangi Rencana IPO Perusahaan Robot China Galaxea AI"
-  },
-  {
-   "ts": "2026-09-10T16:17:43+07:00",
-   "date": "2026-09-10",
-   "time": "16:17",
-   "src": "CNBC",
-   "t": "Oil prices extend gains, Brent stays above $100 a barrel on Mideast worries",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/iran-us-oil-hormuz-supply-trump-military-brent-wti.html",
-   "g": 1,
-   "t_ko": "국제유가 상승세 지속 — Brent, 중동 정세 우려에 배럴당 $100 상회",
-   "t_id": "Harga Minyak Lanjutkan Penguatan, Brent Bertahan di Atas US$100 per Barel Imbas Kekhawatiran Timur Tengah",
-   "ai_ko": "미군이 화요일 이란 원유 유조선 5척을 격침하며 Brent유 배럴당 USD 100 상회 유지 / Goldman Sachs는 선박 공격 확대 시 USD 120 돌파 위험을 지적",
-   "ai_id": "Harga minyak melanjutkan kenaikan dengan Brent bertahan di atas US$100 per barel setelah militer AS menghancurkan lima kapal tanker minyak Iran pada Selasa. Goldman Sachs menilai eskalasi konflik AS-Iran yang memasuki bulan ketujuh meningkatkan risiko harga minyak menembus US$120 per barel.",
-   "ai_tags": [
-    "유가",
-    "지정학",
-    "원유"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "geopolitik",
-    "Brent"
-   ]
-  },
-  {
-   "ts": "2026-09-10T16:15:00+07:00",
-   "date": "2026-09-10",
-   "time": "16:15",
-   "src": "WSJ",
-   "t": "Stock Futures Rise, Treasury Yields Hold Near Highs as Oil Tops $101",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/investing/stock-futures-rise-treasury-yields-hold-near-highs-as-oil-tops-101-74944fa2?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-35679620",
-   "t_ko": "국제유가 $101 돌파 — 미 증시 선물 상승·국채금리 고점권 유지",
-   "t_id": "Bursa Berjangka AS Naik, Yield Treasury Bertahan Dekat Puncak saat Minyak Tembus US$101"
-  },
-  {
-   "ts": "2026-09-10T16:15:00+07:00",
-   "date": "2026-09-10",
-   "time": "16:15",
-   "src": "Katadata",
-   "t": "BI Diprediksi Tak Bakal Lagi Kerek Suku Bunga, Ini Faktornya",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa2752a15a31/bi-diprediksi-tak-bakal-lagi-kerek-suku-bunga-ini-faktornya",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2015/10/01/2015_10_01-19_02_59_97e4a258fe2151ae7b46109c8844bbc2_620x413_thumb.jpg",
-   "t_ko": "BI, 기준금리 추가 인상 없을 전망",
-   "t_id": "BI Diprediksi Tak Bakal Lagi Kerek Suku Bunga, Ini Faktornya",
-   "ai_ko": "DBS는 Bank Indonesia가 올해 기준금리를 100bp 올려 5.75%로 인상한 뒤 추가 인상은 없을 것으로 전망 / 물가가 목표 범위에 있고 SRBI 금리도 정점, 외국인직접투자와 채권 자금 유입이 국제수지를 지지",
-   "ai_id": "DBS memperkirakan Bank Indonesia tidak akan lagi menaikkan suku bunga setelah kenaikan 100 bps sepanjang tahun ini ke level 5,75%. Inflasi yang masih dalam sasaran serta imbal hasil SRBI yang mulai memuncak menjadi indikasi puncak suku bunga telah tercapai, dengan arus modal asing menopang neraca pembayaran.",
-   "ai_tags": [
-    "기준금리",
-    "물가",
-    "외국인자금"
-   ],
-   "ai_tags_id": [
-    "suku bunga",
-    "inflasi",
-    "arus modal asing"
-   ]
-  },
-  {
-   "ts": "2026-09-10T16:14:31+07:00",
-   "date": "2026-09-10",
-   "time": "16:14",
-   "src": "Bloomberg",
-   "t": "Volkswagen, JSW Tie-up Talks Focus on Cost Cuts, Export Access",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-10/volkswagen-jsw-tie-up-talks-focus-on-cost-cuts-export-access",
-   "g": 1,
-   "t_ko": "Volkswagen, JSW와 제휴 논의 — 비용 절감·수출 확대 초점",
-   "t_id": "Volkswagen dan JSW Bahas Kerja Sama, Fokus Efisiensi Biaya dan Akses Ekspor"
-  },
-  {
-   "ts": "2026-09-10T16:13:25+07:00",
-   "date": "2026-09-10",
-   "time": "16:13",
-   "src": "Bloomberg",
-   "t": "PGIM's Neiss Says 10-Year Yields Above 5% Not 'Implausible'",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-10/pgim-says-10-year-yields-above-5-not-implausible-video",
-   "g": 1,
-   "t_ko": "PGIM Neiss, 10년물 국채금리 5% 상회 가능성 시사",
-   "t_id": "Neiss dari PGIM Sebut Yield 10 Tahun di Atas 5% Bukan Hal 'Mustahil'"
-  },
-  {
-   "ts": "2026-09-10T16:07:31+07:00",
-   "date": "2026-09-10",
-   "time": "16:07",
-   "src": "Bloomberg",
-   "t": "How Jenny Nguyen is Growing Women’s Sports from a Bar",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-10/how-jenny-nguyen-is-growing-women-s-sports-from-a-bar-video",
-   "g": 1,
-   "t_ko": "Jenny Nguyen, 스포츠바 기반으로 여성 스포츠 성장 견인",
-   "t_id": "Cara Jenny Nguyen Kembangkan Olahraga Perempuan dari Sebuah Bar"
-  },
-  {
-   "ts": "2026-09-10T16:07:12+07:00",
-   "date": "2026-09-10",
-   "time": "16:07",
-   "src": "Republika",
-   "t": "Pertamina Pastikan Harga BBM Bersubsidi Tak Berubah di Tengah Lonjakan Harga Minyak",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl55c0370/pertamina-pastikan-harga-bbm-bersubsidi-tak-berubah-di-tengah-lonjakan-harga-minyak",
-   "g": 1,
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260904090406-937.png",
-   "t_ko": "Pertamina, 유가 급등에도 보조금 연료가 동결 확인",
-   "t_id": "Pertamina Pastikan Harga BBM Bersubsidi Tak Berubah di Tengah Lonjakan Harga Minyak",
-   "ai_ko": "Brent유가 3.4% 오른 USD 101.21로 5월 22일 이후 최고치 마감했으나 Pertamina는 보조금 유류 가격 동결 방침 확인 / 정부 정책에 따라 월별 평가로 대응, 규제당국과 협의 예정",
-   "ai_id": "Pertamina memastikan harga BBM bersubsidi tidak berubah meski harga minyak Brent kembali menembus US$100 per barel dan ditutup naik 3,4% ke US$101,21 pada Kamis (10/9/2026). Perseroan menyatakan tetap mengacu kebijakan pemerintah dan akan berkoordinasi dengan regulator melalui evaluasi bulanan.",
-   "ai_tags": [
-    "유가",
-    "보조금",
-    "정책"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "BBM subsidi",
-    "kebijakan"
-   ]
-  },
-  {
-   "ts": "2026-09-10T16:05:00+07:00",
-   "date": "2026-09-10",
-   "time": "16:05",
-   "src": "Katadata",
-   "t": "PT Timah Perluas Pasar Ekspor ke Filipina dan Inggris, Bidik Timur Tengah 2027",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/energi/6aa272ca61830/pt-timah-perluas-pasar-ekspor-ke-filipina-dan-inggris-bidik-timur-tengah-2027",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/10/16/2025_10_16-20_53_00_f60629d6-aa9d-11f0-9c89-0242ac120006_620x413_thumb.jpg",
-   "t_ko": "Timah(TINS), 필리핀·영국으로 수출시장 확대 — 2027년 중동 진출 목표",
-   "t_id": "PT Timah Perluas Pasar Ekspor ke Filipina dan Inggris, Bidik Timur Tengah 2027",
-   "ai_ko": "Timah(TINS), 2026년 주석 수출시장을 필리핀·영국으로 넓히고 India 비중을 5%에서 12%로 확대 / 2027년에는 중동 진출 추진, 상반기 세계 주석 수급은 3% 공급 부족",
-   "ai_id": "PT Timah (Persero) Tbk memperluas pasar ekspor logam timah ke Filipina dan Inggris pada 2026, dengan porsi pasar India naik dari 5% menjadi 12%. Perseroan membidik Timur Tengah pada 2027 di tengah defisit pasokan timah global sekitar 3% pada semester I-2026.",
-   "ai_tags": [
-    "수출",
-    "주석",
-    "수급"
-   ],
-   "ai_tags_id": [
-    "ekspor",
-    "timah",
-    "defisit pasokan"
-   ]
-  },
-  {
-   "ts": "2026-09-10T16:05:00+07:00",
-   "date": "2026-09-10",
-   "time": "16:05",
-   "src": "Katadata",
-   "t": "AS Siapkan Buyback Utang US$6 Miliar, Yield Treasury Malah Naik",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa272d037d57/as-siapkan-buyback-utang-us6-miliar-yield-treasury-malah-naik",
-   "g": 1,
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/11/Nilai_tukar_rupiah_rupiah_melemah_terhadap_dolar_AS_Foto_Katadat-2026_06_11-23_51_32_8a131e5a1366ec104b0ec2053b7e07fb_620x413_thumb.jpg",
-   "t_ko": "미국, USD 60억 국채 바이백 준비에도 국채금리 상승",
-   "t_id": "AS Siapkan Buyback Utang US$6 Miliar, Yield Treasury Malah Naik",
-   "ai_ko": "미국 재무부, 통상 규모의 2배인 최대 USD 60억 국채 바이백 발표, 향후 회차도 최소 USD 40억 규모 / 시장 기대치(USD 60~100억) 하단에 그치며 30년물 금리 5.307%로 5bp 상승",
-   "ai_id": "Departemen Keuangan AS mengumumkan buyback surat utang hingga US$6 miliar, dua kali lipat operasi normal, dengan operasi berikutnya minimal US$4 miliar. Angka itu berada di batas bawah ekspektasi pasar sehingga yield tenor panjang justru naik, dengan obligasi 30 tahun ke 5,307%.",
-   "ai_tags": [
-    "채권",
-    "금리",
-    "미국"
-   ],
-   "ai_tags_id": [
-    "obligasi",
-    "yield",
-    "buyback"
-   ]
-  },
-  {
-   "ts": "2026-09-10T16:03:00+07:00",
-   "date": "2026-09-10",
-   "time": "16:03",
-   "src": "Media Indonesia",
-   "t": "Kadin: Pemulihan Sentimen Publik belum Ciptakan Penguatan Daya Beli",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931918/kadin-pemulihan-sentimen-publik-belum-ciptakan-penguatan-daya-beli",
-   "t_ko": "Kadin, 소비심리 회복에도 구매력 개선은 미흡",
-   "t_id": "Kadin: Pemulihan Sentimen Publik Belum Ciptakan Penguatan Daya Beli",
-   "ai_ko": "Kadin, 8월 소비자신뢰지수가 7월 116.8에서 118.5로 올랐으나 실질 구매력 회복은 아직이라고 진단 / 4월 123 수준에 못 미쳐 기업들은 재고·생산·채용 확대에 신중한 상황",
-   "ai_id": "Kadin Indonesia menilai kenaikan Indeks Keyakinan Konsumen dari 116,8 pada Juli menjadi 118,5 pada Agustus 2026 sebagai sinyal positif, tetapi belum mencerminkan pemulihan daya beli yang kuat. Level tersebut masih di bawah sekitar 123 pada April, sehingga pelaku usaha berhati-hati menambah stok, produksi, dan tenaga kerja.",
-   "ai_tags": [
-    "소비",
-    "경기",
-    "내수"
-   ],
-   "ai_tags_id": [
-    "konsumsi",
-    "IKK",
-    "daya beli"
-   ]
   }
  ],
  "kisi_news": [
@@ -18279,8 +18188,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.06",
-   "d": -0.48,
-   "ytd": 12.44,
+   "d": -0.44,
+   "ytd": 12.48,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18313,9 +18222,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.81",
-   "d": 0.07,
-   "ytd": 0.53,
+   "v": "98.79",
+   "d": 0.06,
+   "ytd": 0.52,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18325,9 +18234,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "97.56",
-   "d": 1.52,
-   "ytd": 69.91,
+   "v": "97.45",
+   "d": 1.4,
+   "ytd": 69.71,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18337,9 +18246,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,438.2",
-   "d": -0.31,
-   "ytd": 2.6,
+   "v": "4,439.5",
+   "d": -0.28,
+   "ytd": 2.63,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18361,9 +18270,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,780",
-   "d": -0.53,
-   "ytd": 0.59,
+   "v": "16,828",
+   "d": -0.25,
+   "ytd": 0.88,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -26224,107 +26133,12 @@
     "공시"
    ],
    "ai_tags_id": []
-  },
-  {
-   "ts": "2026-09-08T08:21:18+07:00",
-   "date": "2026-09-08",
-   "time": "08:21",
-   "t": "POST",
-   "type": "STOCK",
-   "title": "Penyampaian Bukti Iklan PEMANGGILAN RAPAT UMUM PEMEGANG OBLIGASI & SUKUK IJARAH (RUPO & RUPSI) OBLIGASI I POS INDONESIA TAHUN 2022 SUKUK IJARAH BERKELANJUTAN I POS INDONESIA TAHAP I TAHUN 2024 (KOREKSI)",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/5cc6d79bbf_9638d19cd7.pdf",
-   "title_ko": "정정 공시 — Pos Indonesia 채권·수쿡 보유자 총회 소집 공고 게재 증빙",
-   "title_id": "Bukti Iklan Pemanggilan RUPO & RUPSI Obligasi I Pos Indonesia 2022 dan Sukuk Ijarah Berkelanjutan I Pos Indonesia Tahap I 2024 (Koreksi)",
-   "ai_ko": "PT Pos Indonesia (Persero)는 2022년 발행 회사채 및 2024년 제1차 지속가능 이슬람 채권(Sukuk Ijarah) 사채권자 및 수쿡 보유자 총회(RUPO 및 RUPSI) 소집 공고 광고 증빙을 정정 제출함. 해당 광고는 2026년 9월 7일자 Media Indonesia 일간지에 게재됨.",
-   "ai_id": "PT Pos Indonesia (Persero) menyampaikan koreksi bukti iklan panggilan Rapat Umum Pemegang Obligasi dan Sukuk Ijarah (RUPO & RUPSI) untuk Obligasi I Pos Indonesia Tahun 2022 dan Sukuk Ijarah Berkelanjutan I Pos Indonesia Tahap I Tahun 2024. Iklan tersebut telah diterbitkan di surat kabar Media Indonesia pada tanggal 07 September 2026.",
-   "ai_tags": [
-    "사채권자총회",
-    "정정공시",
-    "PT Pos Indonesia"
-   ],
-   "ai_tags_id": []
-  },
-  {
-   "ts": "2026-09-08T07:51:19+07:00",
-   "date": "2026-09-08",
-   "time": "07:51",
-   "t": "HAIS",
-   "type": "STOCK",
-   "title": "HIS Raih Corporate Secretary Champion 2026 Predikat Very Good dari SWA",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/4524d2be0f_cefe90f393.pdf",
-   "title_ko": "HIS, SWA 2026 Corporate Secretary Champion Very Good 등급 선정",
-   "title_id": "HIS Raih Corporate Secretary Champion 2026 Predikat Very Good dari SWA",
-   "ai_ko": "PT Hasnur Internasional Shipping Tbk가 SWA Media Group 주관 Corporate Secretary Champion 2026에서 Very Good 등급을 수상. 이번 수상으로 기업 거버넌스 강화와 평판 유지에 대한 노력을 입증함. 해당 공시가 운영, 재무 및 사업 영속성에 미치는 영향은 없음.",
-   "ai_id": "PT Hasnur Internasional Shipping Tbk meraih predikat Very Good dalam ajang Corporate Secretary Champion 2026 dari SWA Media Group. Penghargaan ini mencerminkan komitmen perusahaan dalam memperkuat tata kelola dan reputasi bisnis. Kejadian ini tidak berdampak material terhadap kegiatan operasional maupun kondisi keuangan perusahaan.",
-   "ai_tags": [
-    "수상",
-    "기업 거버넌스",
-    "HAIS"
-   ],
-   "ai_tags_id": []
-  },
-  {
-   "ts": "2026-09-08T07:46:03+07:00",
-   "date": "2026-09-08",
-   "time": "07:46",
-   "t": "POST",
-   "type": "STOCK",
-   "title": "Penyampaian Bukti Iklan PEMANGGILAN RAPAT UMUM PEMEGANG OBLIGASI & SUKUK IJARAH (RUPO & RUPSI) OBLIGASI I POS INDONESIA TAHUN 2022 SUKUK IJARAH BERKELANJUTAN I POS INDONESIA TAHAP I TAHUN 2024",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/32807bc7f9_5dc1c483ed.pdf",
-   "title_ko": "Pos Indonesia 채권·수쿡 보유자총회 소집 공고 게재 증빙 제출",
-   "title_id": "Pos Indonesia Sampaikan Bukti Iklan Pemanggilan RUPO & RUPSI Obligasi I 2022 dan Sukuk Ijarah Berkelanjutan I Tahap I 2024",
-   "ai_ko": "PT Pos Indonesia (Persero)는 2022년 발행 사채 및 2024년 1차 지속가능 이라주 수푹에 대한 사채권자 및 수푹 보유자 총회 소집 광고 증빙을 제출함. 해당 광고는 2026년 9월 7일자 미디어 인도네시아 지면에 게재됨.",
-   "ai_id": "PT Pos Indonesia (Persero) menyampaikan bukti iklan pemanggilan Rapat Umum Pemegang Obligasi dan Sukuk Ijarah Tahun 2022 serta Sukuk Ijarah Berkelanjutan I Tahap I Tahun 2024. Iklan tersebut telah diterbitkan di surat kabar Media Indonesia pada tanggal 07 September 2026.",
-   "ai_tags": [
-    "사채권자총회",
-    "수푹",
-    "공시증빙"
-   ],
-   "ai_tags_id": []
-  },
-  {
-   "ts": "2026-09-07T23:26:58+07:00",
-   "date": "2026-09-07",
-   "time": "23:26",
-   "t": "SMGR",
-   "type": "STOCK",
-   "title": "Perubahan Komite Audit",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/07f7a46a5e_e20d15db44.pdf",
-   "title_ko": "감사위원회 구성 변경",
-   "title_id": "Perubahan Komite Audit",
-   "ai_ko": "Semen Indonesia (Persero) Tbk는 감사위원회 위원 변경 공시를 발표함. 신임 감사위원회 위원으로 Sumaryo가 선임되었으며, 기존 위원은 Sahat Pardede임. 해당 변경 사항은 2026년 09월 06일부터 발효됨.",
-   "ai_id": "Semen Indonesia (Persero) Tbk mengumumkan perubahan susunan Komite Audit perseroan. Sumaryo ditunjuk sebagai anggota baru menggantikan Sahat Pardede, efektif mulai 06 September 2026.",
-   "ai_tags": [
-    "SMGR",
-    "감사위원회",
-    "인사변동"
-   ],
-   "ai_tags_id": []
-  },
-  {
-   "ts": "2026-09-07T23:24:20+07:00",
-   "date": "2026-09-07",
-   "time": "23:24",
-   "t": "RAJA",
-   "type": "STOCK",
-   "title": "Penyampaian Materi Public Expose - Tahunan",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/1117d2b6b7_96d34495ff.pdf",
-   "title_ko": "연간 기업설명회 자료 제출",
-   "title_id": "Penyampaian Materi Public Expose - Tahunan",
-   "ai_ko": "Rukun Raharja Tbk(RAJA)는 2026년 9월 7일 연례 공개 기업설명회(Public Expose) 자료를 제출함. 해당 공시에는 자사주 매입, 배당, 유상증자, 지분 변동 등에 관한 수치나 일정은 미기재됨.",
-   "ai_id": "Rukun Raharja Tbk (RAJA) menyampaikan materi public expose tahunan pada 7 September 2026. Pengumuman ini tidak memuat informasi mengenai buyback, dividen, rights issue, maupun divestasi atau akuisisi.",
-   "ai_tags": [
-    "RAJA",
-    "공개 기업설명회",
-    "연례보고서"
-   ],
-   "ai_tags_id": []
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-10 17:09",
+  "idx_from_pc": "2026-09-10 17:23",
   "pc_age_min": 3,
   "on_runner": true,
   "bi": null,
@@ -28157,7 +27971,7 @@
    "s_news": 95,
    "s_size": 82,
    "s_surge": 0,
-   "srcs": 4
+   "srcs": 3
   },
   {
    "t": "PTRO",
