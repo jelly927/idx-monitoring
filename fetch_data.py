@@ -1637,6 +1637,13 @@ NONMKT_RX = re.compile(r"\b(orangutan|orang utan|satwa|hewan|gajah|harimau|komod
 PROMO_RX = re.compile(r"\b(promo|diskon|cashback|voucher|gratis|giveaway|undian|flash sale|paket (langganan|bundling|data|internet)|langganan|berlangganan|fitur (baru|terbaru)|kini (hadir|tersedia)|tersedia di|manjakan|pengalaman (baru|belanja|menonton|berbelanja)|bintang iklan|brand ambassador|sponsor|advertorial|ulasan|review|spesifikasi|smartphone|iphone|samsung galaxy|xiaomi|netflix|shopee|tokopedia|lazada|tiktok shop|grab|gojek|traveloka|tiket\.com|rekomendasi (hp|laptop|mobil|motor|skincare|gadget|wisata)|harga (hp|iphone|samsung|xiaomi|laptop|motor|mobil|tiket))\b", re.I)   # 광고·제품 홍보성
 LAUNCH_RX = re.compile(r"\b(hadirkan|menghadirkan|meluncurkan|luncurkan|resmi (hadir|meluncur|dirilis)|rilis|gandeng|menggandeng|kolaborasi|berkolaborasi)\b", re.I)   # 출시·제휴 보도자료 — 정책·시장 키워드 없으면 제외
 LIFE_RX = re.compile(r"\b(kota tua|little amsterdam|destinasi|wisatawan|liburan|libur (panjang|lebaran|nataru)|festival|pameran|expo|car free day|resep|kuliner|kafe|restoran|staycation|mudik|arus (mudik|balik)|hujan|bmkg|ganjil genap|terkaya|termahal|terpopuler|atlet|pesepakbola|daftar (orang|keluarga|crazy rich)|crazy rich|kisah (sukses|inspiratif)|inspiratif|motivasi|biodata|sosok|donasi|bakti sosial|santunan|csr)\b", re.I)   # 관광·생활·인물 읽을거리
+PR_RX = re.compile(r"\b(PR Indonesia|belajar praktik|praktik terbaik|best practice|internal communication|workshop|seminar|webinar|pelatihan|sosialisasi|studi banding|kunjungan kerja|raih penghargaan|penghargaan|award|apresiasi|HUT ke|ulang tahun|peringati|meriahkan|gathering|halal ?bihalal|buka puasa bersama|donor darah)\b", re.I)   # 기업 PR·행사성
+LOCAL_ENF_RX = (re.compile(r"\b(tindak tegas|ditindak|razia|sanksi|tegur|segel|disegel|sidak)\b", re.I), re.compile(r"\b(SPBU|pedagang|warung|toko|kios|kanwil|cabang|kabupaten|kecamatan|desa|kelurahan|pasar tradisional)\b", re.I))   # 지역 단속·점검 소식
+JUDOL_RX = re.compile(r"\b(judol|judi online)\b", re.I); STAFF_RX = re.compile(r"\b(pegawai|karyawan|oknum|disanksi|dipecat|diberhentikan|dicopot)\b", re.I)   # 직원 징계 류
+TRANSIT_RX = re.compile(r"\b(jadwal (uji coba|operasional|perjalanan|kereta|KRL|LRT|MRT|TransJakarta)|uji coba (LRT|MRT|KRL|kereta)|rute baru|tarif (LRT|MRT|KRL|TransJakarta|tol)|rekayasa lalu lintas|contraflow|one way|ganjil genap)\b", re.I)   # 교통 생활정보
+POLITICS_RX = re.compile(r"\b(pilpres|pilkada|kampanye|partai|koalisi|oposisi|tuding|menuding|menuduh|pemakzulan|impeach|kongres partai|elektabilitas)\b", re.I)   # 선거·정쟁·비난전 (pemilu 자체는 지정학 문맥이 있어 제외하지 않음)   # 선거·정쟁
+HUMAN_RX = re.compile(r"\b(korban|jurnalis|wartawan|hilang|meninggal|tewas|dokter|kesehatan|mata|tinjau|meninjau|kunjungi|mengunjungi|latihan|berlatih|pemain|warga|pengungsi|relawan|donasi|bantuan logistik|evakuasi)\b", re.I)   # 재해의 인간적·사회적 측면
+DISASTER_ECON_RX = re.compile(r"\b(bandara|penerbangan|ditutup|tutup|produksi|pasokan|ekspor|tambang|smelter|pabrik|harga|kerugian|asuransi|saham|IHSG|emiten|pelabuhan|listrik|PLN|logistik|jalan tol|pipa|kilang)\b", re.I)   # 재해의 시장 영향 단서
 def _market_news_ok(title, summ="", link=""):
     """티커가 없는 기사 중 시장 뉴스로 채택할지: 생활정보·광고성 제외 → 자연재해 채택 → 비경제 섹션·소재 제외, 경제 섹션·시장 키워드 채택"""
     path = "/" + re.sub(r"^https?://", "", link or "")     # 호스트 첫 토큰(nasional.kompas.com 등)도 섹션으로 판별되게
@@ -1644,12 +1651,20 @@ def _market_news_ok(title, summ="", link=""):
     t = title or ""
     if PROMO_RX.search(t) or LIFE_RX.search(t): return False                # 광고·제품 홍보·관광·인물 읽을거리는 경제 섹션이어도 제외
     if LAUNCH_RX.search(t) and not (POLICY_RX.search(t) or MARKET_RX.search(t)): return False   # 소비재 출시·제휴 보도자료
-    if DISASTER_RX.search(title or ""): return True                          # 화산·지진 등 재해는 시장 영향 — 채택
-    if NONMKT_RX.search(title or ""): return False
-    if SEC_NO.search(path) and not SEC_OK.search(path): return False
+    if PR_RX.search(t) and not MARKET_RX.search(t): return False              # 기업 PR·행사(사례 발표·수상·워크숍·창립기념)
+    if LOCAL_ENF_RX[0].search(t) and LOCAL_ENF_RX[1].search(t): return False # 지역 단속·점검(주유소 제재 등)
+    if JUDOL_RX.search(t) and STAFF_RX.search(t): return False               # 온라인도박 연루 직원 징계 류
+    if TRANSIT_RX.search(t): return False                                    # 교통 시운전·노선·요금 생활정보
+    if SEC_NO.search(path) and not SEC_OK.search(path): return False         # 스포츠·건강·사회·지역면은 재해 단어가 있어도 제외
+    if DISASTER_RX.search(t):                                                # 재해: 사건 자체(분화·지진·상태 격상) 또는 시장 영향(공항·생산·수출·보험)만
+        if HUMAN_RX.search(t): return False                                  #   인물·피해자·현장 방문·훈련 같은 인간적 측면은 제외
+        if re.search(r"\b(karhutla|kebakaran hutan|kewaspadaan|antisipasi|siaga)\b", t, re.I) and not DISASTER_ECON_RX.search(t): return False   # 산불 대비·경계 강화 같은 예방 소식 제외
+        return True
+    if NONMKT_RX.search(t): return False
     if SEC_OK.search(path): return True
     if SEC_SOFT.search(path):                          # 정치·국내·국제면은 제목에 정책/경제 키워드가 있을 때만 (요약은 보지 않음)
-        return bool(POLICY_RX.search(title or "") or MARKET_RX.search(title or ""))
+        if POLITICS_RX.search(t) and not MARKET_RX.search(t): return False  # 선거·정쟁·비난전은 시장 단서가 없으면 제외 (Trump 도 예외 아님)
+        return bool(POLICY_RX.search(t) or MARKET_RX.search(t))
     return bool(MARKET_RX.search(title)) or bool(MARKET_RX.search((summ or "")[:200]))
 
 def _entry_image(e):
