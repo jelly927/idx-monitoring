@@ -12,6 +12,7 @@
 //   GEMINI_API_KEY  (Secret, 필수)  Gemini API 키. 절대 저장소·index.html 에 넣지 말 것 — 저장소는 공개다.
 //   CHAT_TOKEN      (Secret, 필수)  사내 접속 암구호. 미설정이면 /api/chat 은 503 으로 닫힌다.
 //   GEMINI_MODEL    (Variable, 선택) 기본 gemini-3.8-flash. 모델 교체 시 코드 수정 없이 여기만 바꾼다.
+//   LOG             (KV 바인딩, 선택) 이용 기록 — 네임스페이스 idx-live-log 를 변수명 LOG 로 바인딩하면 /api/stats?token=암구호 에서 조회·검색·질문 통계를 본다
 //   GEMINI_SEARCH   (Variable, 선택) off 로 두면 구글 검색 그라운딩을 끈다. 기본 켜짐 — 화이트리스트 매체 site: 검색만 허용.
 //   GEMINI_THINKING (Variable, 선택) low / medium / high / off. 비워두면 gemini-3.8 계열에만 low 를 넣는다.
 //   QUOTA_MSG       (Variable, 선택) 할당량 초과(429) 때 화면에 뜨는 문구. 비워두면 기본 문구.
@@ -53,6 +54,8 @@ export default {
 
     if (u.pathname === "/api/feed") return feed();
     if (u.pathname === "/api/diag") return diag(req, env);
+    if (u.pathname === "/api/hit") { try { return await hit(req, env); } catch { return json({ ok: false }); } }
+    if (u.pathname === "/api/stats") { try { return await stats(req, env); } catch (e) { return json({ error: "stats 실패: " + (e && e.message || e) }, 500); } }
     if (u.pathname === "/api/chat") {
       if (req.method !== "POST") return json({ error: "POST 만 허용" }, 405);
       try { return await chat(req, env); }
@@ -163,7 +166,7 @@ function sysPrompt(ctx, lang) {
     "- macro: v 는 이미 포맷된 문자열이다. 그대로 인용한다.",
     "- ai_index 는 오늘 지수가 왜 움직였는지 한 줄 요약, ai_stocks 는 종목별 등락 사유, announcements[].ai 는 공시 요약이다. 이미 만들어진 요약이니 근거로 인용하되 숫자는 원본 필드로 검증한다.",
     "- freshness.pc_age_min 이 180 이상이면 수집 PC 가 꺼져 있어 공시·종목 요약이 오래된 값일 수 있다. 그럴 때는 답변 끝에 데이터 기준 시각을 밝힌다.",
-    "- memory 는 장기기억이다. memory.weeks 는 주간 시장 카드(주차별 요약·사건), memory.stocks[티커] 는 그 종목의 과거 이벤트 카드(date·type·summary·numbers·follow_up·due), memory.threads 는 아직 확인이 안 끝난 후속 사항(q=질문, due=확인 시점, last=최근 진전)이다. 종목·시장을 물으면 현재 DATA 와 함께 '지난 X주 카드에 따르면 …였고, 이번 주 후속은 …' 식으로 과거 맥락과 후속 상태를 이어서 말한다. 카드의 날짜를 밝히고, 카드에 없는 후속 결과를 지어내지 않는다. memory 가 비어 있으면 언급하지 않는다.",
+    "- memory 는 과거 맥락이다. memory.weeks 는 주별 시장 흐름, memory.stocks[티커] 는 그 종목의 과거 이벤트(date·type·summary·numbers·follow_up·due), memory.threads 는 아직 결론이 안 난 후속 사항(q=확인할 것, due=시점, last=최근 진전). 종목·시장을 물으면 현재 DATA 와 함께 과거 맥락을 자연스럽게 잇는다 — 예: '지난주(9/5) BBTN 이 배당성향 25% 목표를 밝혔고, 이번 주 후속 기사로 12월 중간배당 검토가 확인됨'. 날짜는 밝히되, '카드'·'기억'·'메모리'·'저장'·'W37' 같은 내부 용어나 저장 방식에 대한 언급은 절대 하지 않는다. 사람 애널리스트가 기억을 되짚어 말하듯 쓴다. 기록에 없는 후속 결과를 지어내지 않고, memory 가 비어 있으면 아무 말도 덧붙이지 않는다.",
     "- catalyst 는 오늘 재료(뉴스·공시·배당락)가 있는 종목 상위 10이다. score = s_news×0.4 + s_size×0.3 + s_surge×0.3 로 계산된 값이며, event 는 재료 유형, headline 은 근거 기사다. 순위 근거를 물으면 이 세 점수를 그대로 제시한다.",
     "",
     lang === "id"
@@ -248,6 +251,76 @@ async function diag(req, env) {
   return json(out);
 }
 
+// ── 이용 기록 (KV 바인딩 LOG 가 있을 때만) — 조회·검색·종목 열람·챗봇 질문. 개인정보는 남기지 않는다(IP 저장 안 함, 국가·도시만) ──
+function dayKey(d) { return new Date(d.getTime() + 7 * 3600e3).toISOString().slice(0, 10); }   // WIB 날짜
+async function logEvent(env, req, k, v, extra) {
+  if (!env || !env.LOG) return;
+  const cf = req.cf || {};
+  const now = new Date();
+  const rec = { t: now.toISOString(), k, v: String(v || "").slice(0, 200), c: cf.country || "", city: cf.city || "", ...(extra || {}) };
+  const key = `ev:${dayKey(now)}:${now.getTime()}:${Math.random().toString(36).slice(2, 7)}`;
+  await env.LOG.put(key, JSON.stringify(rec), { expirationTtl: 90 * 86400 });   // 90일 보관
+}
+async function hit(req, env) {
+  if (req.method !== "POST") return json({ ok: false }, 405);
+  let b; try { b = await req.json(); } catch { return json({ ok: false }, 400); }
+  const k = String(b.k || "").slice(0, 12);
+  if (!["view", "search", "drawer", "tab", "lang", "brief"].includes(k)) return json({ ok: false }, 400);
+  await logEvent(env, req, k, b.v, { l: b.lang === "id" ? "id" : "ko", sid: String(b.sid || "").slice(0, 12) });
+  return json({ ok: true });
+}
+async function stats(req, env) {
+  const gate = env && env.CHAT_TOKEN;
+  const u = new URL(req.url);
+  if (!gate) return json({ error: "CHAT_TOKEN 미설정" }, 503);
+  if ((req.headers.get("x-chat-token") || u.searchParams.get("token") || "").trim() !== gate.trim()) return json({ error: "접속 암구호가 맞지 않습니다. /api/stats?token=암구호" }, 401);
+  if (!env.LOG) return json({ error: "KV 바인딩 LOG 가 없습니다 — Worker 설정 › 바인딩 › KV 네임스페이스(변수명 LOG, idx-live-log) 를 추가하세요." }, 503);
+  const days = Math.min(90, Math.max(1, parseInt(u.searchParams.get("days") || "7", 10)));
+  const from = dayKey(new Date(Date.now() - (days - 1) * 86400e3));
+  const evs = [];
+  let cursor;
+  do {
+    const r = await env.LOG.list({ prefix: "ev:", cursor, limit: 1000 });
+    for (const k of r.keys) { if (k.name.slice(3, 13) >= from) evs.push(k.name); }
+    cursor = r.list_complete ? undefined : r.cursor;
+  } while (cursor && evs.length < 20000);
+  const recs = (await Promise.all(evs.slice(-6000).map(k => env.LOG.get(k, "json")))).filter(Boolean);
+  const byDay = {}, top = {}, sids = {};
+  const inc = (o, k) => { o[k] = (o[k] || 0) + 1; };
+  const cnt = (name, v) => { top[name] = top[name] || {}; inc(top[name], v); };
+  for (const r of recs) {
+    const d = r.t.slice(0, 10); byDay[d] = byDay[d] || { view: 0, search: 0, drawer: 0, chat: 0, uniq: {} };
+    if (byDay[d][r.k] != null) byDay[d][r.k]++;
+    if (r.sid) byDay[d].uniq[r.sid] = 1;
+    if (r.sid) sids[r.sid] = 1;
+    if (r.k === "search" && r.v) cnt("search", r.v.toUpperCase());
+    if (r.k === "drawer" && r.v) cnt("drawer", r.v.toUpperCase());
+    if (r.k === "tab" && r.v) cnt("tab", r.v);
+    if (r.c) cnt("country", r.c + (r.city ? " · " + r.city : ""));
+    if (r.k === "view") cnt("lang", r.l || "ko");
+  }
+  const rank = (name, n = 15) => Object.entries(top[name] || {}).sort((a, b) => b[1] - a[1]).slice(0, n);
+  const chats = recs.filter(r => r.k === "chat").slice(-60).reverse().map(r => ({ t: r.t.replace("T", " ").slice(5, 16), q: r.v, lang: r.l, c: r.c }));
+  const out = {
+    range: `${from} ~ ${dayKey(new Date())} (WIB)`, events: recs.length, visitors: Object.keys(sids).length,
+    daily: Object.fromEntries(Object.entries(byDay).sort().map(([d, o]) => [d, { view: o.view, uniq: Object.keys(o.uniq).length, search: o.search, drawer: o.drawer, chat: o.chat }])),
+    top_search: rank("search"), top_stocks: rank("drawer"), tabs: rank("tab", 10), where: rank("country", 10), lang: rank("lang", 2), recent_chat: chats,
+  };
+  if (u.searchParams.get("format") === "json") return json(out);
+  const esc = s => String(s).replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+  const row = (a, b) => `<tr><td>${esc(a)}</td><td style="text-align:right">${esc(b)}</td></tr>`;
+  const tbl = (title, rows) => `<h3>${title}</h3><table>${rows.map(([a, b]) => row(a, b)).join("") || "<tr><td>—</td></tr>"}</table>`;
+  const html = `<!doctype html><meta charset="utf-8"><title>IDX Live 이용 통계</title>
+<style>body{font-family:-apple-system,Segoe UI,Malgun Gothic,sans-serif;max-width:920px;margin:24px auto;padding:0 16px;color:#1d2b25}h1{font-size:20px}h3{font-size:14px;margin:18px 0 6px;color:#226b5a}table{border-collapse:collapse;width:100%;font-size:13px}td,th{border-bottom:1px solid #e3e9e6;padding:5px 8px;text-align:left}th{background:#eef4f1;font-weight:600}.g{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}.k{display:inline-block;background:#eef4f1;border-radius:8px;padding:8px 14px;margin:4px 8px 4px 0;font-size:13px}.k b{font-size:18px;display:block}small{color:#6a7a73}</style>
+<h1>IDX Live 이용 통계 <small>${esc(out.range)}</small></h1>
+<div><span class="k"><b>${out.visitors}</b>방문자(브라우저 기준)</span><span class="k"><b>${Object.values(out.daily).reduce((a, o) => a + o.view, 0)}</b>페이지 열람</span><span class="k"><b>${Object.values(out.daily).reduce((a, o) => a + o.search, 0)}</b>종목 검색</span><span class="k"><b>${Object.values(out.daily).reduce((a, o) => a + o.chat, 0)}</b>KIRUDA 질문</span></div>
+<p><small>기간 바꾸기: ?days=30 · JSON: &amp;format=json</small></p>
+<h3>일별</h3><table><tr><th>날짜</th><th>열람</th><th>방문자</th><th>검색</th><th>종목 열람</th><th>챗봇</th></tr>${Object.entries(out.daily).map(([d, o]) => `<tr><td>${d}</td><td>${o.view}</td><td>${o.uniq}</td><td>${o.search}</td><td>${o.drawer}</td><td>${o.chat}</td></tr>`).join("")}</table>
+<div class="g"><div>${tbl("많이 검색한 종목", out.top_search)}${tbl("많이 열어본 종목(드로어)", out.top_stocks)}${tbl("탭", out.tabs)}</div><div>${tbl("접속 지역", out.where)}${tbl("언어", out.lang)}</div></div>
+<h3>최근 KIRUDA 질문</h3><table><tr><th>시각(UTC)</th><th>질문</th><th>언어</th><th>국가</th></tr>${out.recent_chat.map(c => `<tr><td>${esc(c.t)}</td><td>${esc(c.q)}</td><td>${esc(c.lang || "")}</td><td>${esc(c.c || "")}</td></tr>`).join("") || "<tr><td colspan=4>—</td></tr>"}</table>`;
+  return new Response(html, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } });
+}
+
 async function chat(req, env) {
   const key = env && env.GEMINI_API_KEY, gate = env && env.CHAT_TOKEN;
   if (!gate) return json({ error: "CHAT_TOKEN 미설정 — 챗봇이 잠겨 있습니다. Cloudflare Worker 설정에서 CHAT_TOKEN 을 등록하세요." }, 503);
@@ -269,6 +342,7 @@ async function chat(req, env) {
   const c = await ctxRaw();
   if (!c) return json({ error: "시장 데이터(chat_context.json)를 읽지 못했습니다." }, 503);
 
+  try { await logEvent(env, req, "chat", q, { l: lang, sid: String(b.sid || "").slice(0, 12) }); } catch {}
   const ctx = sliceCtx(c, q + " " + histText);
   const model = (env && env.GEMINI_MODEL) || MODEL_DEFAULT;
   const base = ((env && env.GEMINI_BASE) || GEMINI_HOST).replace(/\/+$/, "");
