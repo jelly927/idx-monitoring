@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 12:53",
+ "updated": "2026-09-10 12:58",
  "delay_min": 0,
- "fx_basis": "13.09 IDR/KRW · USD/IDR 17,525 · USD/KRW 1,339 · 12:27 Yahoo",
- "idr_per_krw": 13.0893,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,525 · USD/KRW 1,338 · 12:57 Yahoo",
+ "idr_per_krw": 13.0991,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -294,10 +294,11 @@
     17531.0,
     17525.0,
     17527.0,
+    17525.0,
     17525.0
    ],
    "inv": true,
-   "asof": "12:27",
+   "asof": "12:57",
    "high": 17547.0,
    "low": 17500.0,
    "src": "yahoo"
@@ -319,7 +320,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 12:52",
+   "asof": "investing.com 12:57",
    "unit": "bp"
   }
  ],
@@ -332,10 +333,10 @@
   "m1": 4.76,
   "value_idr": 16134522240878,
   "volume": 32530207402,
-  "rank_src": "Yahoo 15분 지연 · 835종목 · 외국인·공시 PC 09-10 12:49",
-  "rank_asof": "12:52",
+  "rank_src": "Yahoo 15분 지연 · 836종목 · 외국인·공시 PC 09-10 12:49",
+  "rank_asof": "12:57",
   "rank_date": "2026-09-10",
-  "adv": 285,
+  "adv": 286,
   "dec": 355,
   "unch": 195,
   "foreign_net_idr": -622541709678.7041,
@@ -6815,6 +6816,23 @@
    "fnet": -299048.95952275535,
    "live": 1,
    "_c": 400412740000.0
+  },
+  {
+   "t": "ACST",
+   "n": "Acset Indonusa",
+   "px": 128.0,
+   "prev": 117.0,
+   "pct": 9.4,
+   "val": 934208000.0,
+   "vol": 7298500.0,
+   "sh": 17675160000,
+   "mcap": 2262420480000.0,
+   "hi": 128.0,
+   "lo": 128.0,
+   "ratio": 9.1,
+   "fnet": -45045000.0,
+   "live": 1,
+   "_c": 21266752512000.0
   },
   {
    "t": "PEGE",
@@ -15562,11 +15580,11 @@
   {
    "name": "인프라",
    "name_id": "Infrastruktur",
-   "n": 54,
-   "adv": 14,
+   "n": 55,
+   "adv": 15,
    "dec": 29,
-   "val": 715302474633.3334,
-   "mcap": 1482488778618827.0,
+   "val": 716236682633.3334,
+   "mcap": 1484751199098827.0,
    "top": [
     {
      "t": "BREN",
@@ -15609,7 +15627,7 @@
      "pct": -2.07
     }
    ],
-   "pct": 0.69
+   "pct": 0.7
   },
   {
    "name": "필수소비재",
@@ -16199,10 +16217,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 7058.83,
+   "px": 7061.03,
    "prev": 7056.35,
-   "pct": 0.04,
-   "asof": "12:30",
+   "pct": 0.07,
+   "asof": "12:35",
    "live": true,
    "spark": [
     7070.5,
@@ -16271,17 +16289,18 @@
     7039.66,
     7041.5,
     7049.15,
-    7058.83
+    7062.21,
+    7061.03
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 65004.55,
+   "px": 65063.6,
    "prev": 65148.08,
-   "pct": -0.22,
-   "asof": "12:35",
+   "pct": -0.13,
+   "asof": "12:40",
    "live": true,
    "spark": [
     64771.93,
@@ -16341,17 +16360,18 @@
     64880.39,
     64955.84,
     64977.21,
-    65004.55
+    65010.04,
+    65063.6
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24954.34,
+   "px": 24941.62,
    "prev": 25274.96,
-   "pct": -1.27,
-   "asof": "12:35",
+   "pct": -1.32,
+   "asof": "12:40",
    "live": true,
    "spark": [
     24894.55,
@@ -16393,7 +16413,8 @@
     24951.55,
     24943.29,
     24951.41,
-    24954.34
+    24946.71,
+    24941.62
    ]
   }
  ],
@@ -16476,7 +16497,7 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/121144/efek-akuisisi-smbc-belum-terlihat-nim-btn-bbtn-turun",
    "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260824192505.jpg",
    "t_id": "Efek Akuisisi SMBC Belum Terlihat, NIM BTN (BBTN) Turun",
-   "t_ko": "BBTN, SMBC 인수 효과 아직 미반영으로 NIM 하락"
+   "t_ko": "BBTN, SMBC 인수 효과 아직 미미해 NIM 하락"
   },
   {
    "ts": "2026-09-10T12:41:00+07:00",
@@ -16491,8 +16512,15 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6aa2431155ebf/saham-bbca-bbri-hingga-isat-banyak-dijual-asing-kala-ihsg-turun-ke-level-6668",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/27/IHSG_ditutup_turun_017_atau_1065_poin_ke_level_6185_Foto_Katadat-2026_07_27-17_14_38_34fc19751d414c987c9a15d0f6f1bf9e_620x413_thumb.jpg",
+   "t_ko": "IHSG 6,668 하락에 BBCA·BBRI·ISAT 외국인 순매도",
    "t_id": "Saham BBCA, BBRI hingga ISAT Banyak Dijual Asing kala IHSG Turun ke Level 6.668",
-   "t_ko": "IHSG 6,668로 하락 마감 속 외국인 BBCA·BBRI·ISAT 대거 순매도"
+   "ai_ko": "10일 전장 IHSG 0.14% 하락한 6,668, 외국인 순매도 Rp1.31조 기록 / 은행 대형주 BBCA·BBRI 매도 상위, 반면 ANTM·TINS 등 소재주는 상승",
+   "ai_id": "IHSG turun 0,14% ke 6.668 pada sesi I Kamis (10/9) dengan net sell asing Rp 1,31 triliun, dipimpin BBCA Rp 276,2 miliar dan BBRI Rp 116,19 miliar. Saham bank jumbo terkoreksi berjamaah, sementara sektor bahan baku seperti ANTM dan TINS justru menguat.",
+   "ai_tags": [
+    "외국인 순매도",
+    "은행주",
+    "증시"
+   ]
   },
   {
    "ts": "2026-09-10T12:40:24+07:00",
@@ -16505,8 +16533,15 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8288752/laba-semester-i-2026-melesat-gudang-garam-pastikan-tak-tambah-capex",
    "img": "https://cdn1-production-images-kly.akamaized.net/WtU4M-KgkPD8Ch0rXm5RnIAk_08=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9344944/original/002565500_1789013083-WhatsApp_Image_2026-09-10_at_11.00.12.jpeg",
+   "t_ko": "Gudang Garam, 2026년 상반기 순이익 급증에도 설비투자 확대 없다",
    "t_id": "Laba Semester I 2026 Melesat, Gudang Garam Pastikan Tak Tambah Capex",
-   "t_ko": "Gudang Garam, 2026년 상반기 순이익 급증에도 설비투자 동결"
+   "ai_ko": "Gudang Garam(GGRM) 2026년 상반기 순이익 급증, 차입 축소로 기어링 30.7%→21.5% 개선 / 연내 추가 설비투자 없이 유료도로 Rp1조~2조만 집행, 여유 자금은 배당 검토 대상",
+   "ai_id": "GGRM mencatat lonjakan laba pada semester I 2026 seiring gearing membaik dari 30,7% menjadi 21,5% dan total liabilitas turun 26,4% yoy. Manajemen memastikan tidak ada penambahan capex tahun ini kecuali proyek jalan tol senilai Rp 1 triliun-Rp 2 triliun, serta membuka opsi dividen jika dana tak terpakai.",
+   "ai_tags": [
+    "실적",
+    "배당",
+    "설비투자"
+   ]
   },
   {
    "ts": "2026-09-10T12:20:00+07:00",
@@ -17119,27 +17154,6 @@
     "배당",
     "은행",
     "실적"
-   ]
-  },
-  {
-   "ts": "2026-09-10T07:44:00+07:00",
-   "date": "2026-09-10",
-   "time": "07:44",
-   "src": "Katadata",
-   "t": "Manuver ITMG di Bisnis Nikel hingga Pembangkit Surya, Seperti Apa Prospeknya?",
-   "tags": [
-    "ITMG"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa1fd6614bb0/manuver-itmg-di-bisnis-nikel-hingga-pembangkit-surya-seperti-apa-prospeknya",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2021/12/16/PT_Indo_Tambangraya_Megah_Tbk_ITMG-2021_12_16-17_40_36_f89e45f3db45a07493641d9d6c9d3d2f_620x413_thumb.png",
-   "t_ko": "ITMG, 니켈·태양광 발전 사업 확장 전망은",
-   "t_id": "Manuver ITMG di Bisnis Nikel hingga Pembangkit Surya, Seperti Apa Prospeknya?",
-   "ai_ko": "Indo Tambangraya Megah(ITMG), 2분기까지 태양광 계약 용량 152MWp·가동 용량 86MWp 확보하고 니켈 등 전략광물 투자 확대 추진 / Adhi Kartiko Pratama(NICE) 지분 9.62% 보유 중 추가 취득 검토, 올해 석탄 생산 목표는 2,200만~2,290만톤",
-   "ai_id": "Indo Tambangraya Megah (ITMG) memperluas bisnis di luar batu bara dengan kapasitas PLTS terkontrak 152 MWp dan 86 MWp telah beroperasi hingga kuartal II 2026, serta membidik nikel dan mineral strategis lain. ITMG kini menggenggam 9,62% saham Adhi Kartiko Pratama (NICE) dan membuka peluang menambah kepemilikan, dengan target produksi batu bara 22-22,9 juta ton pada 2026.",
-   "ai_tags": [
-    "신재생",
-    "니켈",
-    "석탄"
    ]
   },
   {
@@ -17888,16 +17902,28 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-10T12:53:03.548606+07:00",
+   "ts": "2026-09-10T12:58:14.785043+07:00",
    "date": "2026-09-10",
-   "time": "12:53",
+   "time": "12:58",
    "src": "Jawa Pos",
    "t": "Anggota GAPKI Diminta Tingkatkan Kewaspadaan untuk Antisipasi Karhutla",
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609100015/anggota-gapki-diminta-tingkatkan-kewaspadaan-untuk-antisipasi-karhutla",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/08/24/kondisi-karhutla-di-kabupaten-bulungan-provinsi-kalimantan-utara-selasa-188-bpbd-kabupaten-bulungan-8HBkm.webp",
    "t_id": "Anggota GAPKI Diminta Tingkatkan Kewaspadaan untuk Antisipasi Karhutla",
-   "t_ko": "GAPKI 회원사, 산불 대비 경계 태세 강화 권고"
+   "t_ko": "GAPKI 회원사, 산불 예방 경계태세 강화 권고"
+  },
+  {
+   "ts": "2026-09-10T12:54:00+07:00",
+   "date": "2026-09-10",
+   "time": "12:54",
+   "src": "Katadata",
+   "t": "Pemerintah Luncurkan Sistem Perlinsos Digital Bulan Depan, Janji Tepat Sasaran",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6aa246024abd0/pemerintah-luncurkan-sistem-perlinsos-digital-bulan-depan-janji-tepat-sasaran",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/09/2026_06_09-20_36_00_e59e2748-6432-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_ko": "정부, 다음 달 디지털 사회보장 시스템 출범해 정확성 제고 약속",
+   "t_id": "Pemerintah Luncurkan Sistem Perlinsos Digital Bulan Depan, Janji Tepat Sasaran"
   },
   {
    "ts": "2026-09-10T12:33:03+07:00",
@@ -18390,24 +18416,6 @@
    ]
   },
   {
-   "ts": "2026-09-10T10:26:00+07:00",
-   "date": "2026-09-10",
-   "time": "10:26",
-   "src": "Media Indonesia",
-   "t": "Dampak Erupsi Anak Krakatau, Kasus ISPA Tembus 16.759 di 4 Provinsi",
-   "tags": [],
-   "url": "https://mediaindonesia.com/humaniora/931802/dampak-erupsi-anak-krakatau-kasus-ispa-tembus-16759-di-4-provinsi",
-   "t_ko": "Anak Krakatau 분화 여파, 4개주 ISPA 환자 1만6,759명 육박",
-   "t_id": "Dampak Erupsi Anak Krakatau, Kasus ISPA Tembus 16.759 di 4 Provinsi",
-   "ai_ko": "보건부 집계 아낙 크라카타우 화산재로 급성호흡기감염 누적 16,759건 발생 / 4개 주 23개 시·군으로 확산되며 노약자·영유아 야외활동 자제 권고",
-   "ai_id": "Kemenkes mencatat kasus ISPA akibat sebaran abu vulkanik erupsi Gunung Anak Krakatau mencapai 16.759 kasus hingga Minggu (6/9), tersebar di 23 kabupaten/kota pada 4 provinsi. Wamenkes Dante mengimbau masyarakat, khususnya lansia, anak-anak, dan penderita penyakit tertentu, membatasi aktivitas luar ruangan selama kualitas udara belum membaik.",
-   "ai_tags": [
-    "화산",
-    "보건",
-    "재난"
-   ]
-  },
-  {
    "ts": "2026-09-10T10:22:49+07:00",
    "date": "2026-09-10",
    "time": "10:22",
@@ -18579,9 +18587,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "확인 필요",
-   "d": null,
-   "ytd": null,
+   "v": "17,525",
+   "d": -0.36,
+   "ytd": 4.81,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -18591,9 +18599,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.08",
-   "d": -0.31,
-   "ytd": 12.63,
+   "v": "13.09",
+   "d": -0.24,
+   "ytd": 12.71,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18628,7 +18636,7 @@
    "k": "달러 인덱스 (DXY)",
    "v": "98.75",
    "d": 0.01,
-   "ytd": 0.48,
+   "ytd": 0.47,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18638,9 +18646,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "95.68",
-   "d": -0.44,
-   "ytd": 66.63,
+   "v": "95.52",
+   "d": -0.6,
+   "ytd": 66.35,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18650,9 +18658,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,470.8",
-   "d": 0.42,
-   "ytd": 3.36,
+   "v": "4,472.7",
+   "d": 0.47,
+   "ytd": 3.4,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18674,9 +18682,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,879",
-   "d": 0.05,
-   "ytd": 1.18,
+   "v": "16,887",
+   "d": 0.1,
+   "ytd": 1.23,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -26179,7 +26187,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 12:49",
-  "pc_age_min": 5,
+  "pc_age_min": 9,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27527,9 +27535,9 @@
   },
   "model": "gemini-3.5-flash-lite",
   "index": {
-   "ko": "글로벌 유가 상승 및 지정학적 긴장 속 금융주 약세로 IHSG 0.14% 하락.",
-   "id": "IHSG melemah 0,14% akibat kenaikan harga minyak global dan tensi geopolitik serta pelemahan saham perbankan.",
-   "ts": "2026-09-10T12:54:58.877425+07:00"
+   "ko": "글로벌 유가 상승 및 지정학적 긴장 심화 여파로 금융주(BBCA·BBRI)가 약세를 보이며 IHSG 0.14% 하락.",
+   "id": "IHSG melemah 0,14% akibat kenaikan harga minyak global dan tensi geopolitik yang menekan saham perbankan (BBCA dan BBRI).",
+   "ts": "2026-09-10T12:58:58.297335+07:00"
   }
  },
  "mcap": [
