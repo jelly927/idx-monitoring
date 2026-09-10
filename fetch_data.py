@@ -1400,6 +1400,27 @@ def _tr_claude_api(pairs):
         except Exception as e: log("tr_claude.json 저장 실패", e)
     return out
 
+def _tr_gemini_batch(pairs, limit=80):
+    """PC 가 꺼져 Claude 번역이 없을 때(러너) Gemini 로 헤드라인을 번역한다. 결과는 tr_ko.json(기계번역 캐시)에 저장되고,
+    PC 가 다시 켜지면 Claude 가 같은 헤드라인을 재번역해 tr_claude.json 으로 덮어쓴다(품질 업그레이드)."""
+    key = _secret("gemini_api_key") or os.environ.get("GEMINI_API_KEY")
+    if not pairs or not key: return {}
+    out = {}
+    for tl in ("ko", "id"):
+        texts = [t for t, l in pairs if l == tl][:limit]
+        if not texts: continue
+        rules = CLAUDE_RULES_KO if tl == "ko" else CLAUDE_RULES_ID
+        prompt = (rules + ("\n\n아래 JSON 배열의 각 제목을 같은 순서로 번역해, 번역문만 담은 JSON 문자열 배열 하나로만 답하라(설명·코드블록 금지). 배열 길이는 입력과 같아야 한다.\n" if tl == "ko" else
+                  "\n\nTerjemahkan setiap judul dalam array JSON berikut dengan urutan yang sama; jawab HANYA dengan satu array JSON berisi string terjemahan (panjang array sama dengan input).\n") + json.dumps(texts, ensure_ascii=False))
+        txt = _gemini(prompt, max_tokens=6000, temperature=0.2)
+        arr = _json_loads_loose(txt)
+        if not isinstance(arr, list) or len(arr) != len(texts):
+            log(f"Gemini 번역 응답 형식 불일치 ({len(texts)}→{len(arr) if isinstance(arr, list) else '?'})"); continue
+        for t, v in zip(texts, arr):
+            if isinstance(v, str) and v.strip() and v.strip() != t: out[(t, tl)] = v.strip()
+    if out: log(f"Gemini 번역 {len(out)}건 (Claude 미가동 대체) → tr_ko.json")
+    return out
+
 def translate_field(items, field="t", langs=("ko", "id"), budget=None):
     """items 의 field 를 언어별로 번역해 field_ko / field_id 를 붙인다.
     엔진을 순서대로 시도하고(requests → 브라우저), 실패한 건은 원문을 유지한다."""
@@ -1437,6 +1458,15 @@ def translate_field(items, field="t", langs=("ko", "id"), budget=None):
                 else: rest.append((it, tgt, src, tl, key))
             need = rest
     need = [n for n in need if n[4] not in TR_CACHE]  # 기계번역 캐시가 이미 있는 건은 엔진 재호출 불필요
+    if need:                                          # Claude 가 없거나(러너·PC 꺼짐) 처리 못 한 잔여분 → Gemini 로 번역해 기계번역 캐시에 저장
+        got = _tr_gemini_batch(list({(src, tl) for _, _, src, tl, _ in need}))
+        if got:
+            rest = []
+            for it, tgt, src, tl, key in need:
+                v = got.get((src, tl))
+                if v: TR_CACHE[key] = v; it[tgt] = v
+                else: rest.append((it, tgt, src, tl, key))
+            need = rest; _tr_save()
     if not need or not engines: return items         # 캐시 적용은 위에서 끝남. 엔진이 없으면 미번역분은 원문 유지
     need = need[:budget]                             # 남은 건 다음 실행에서 이어서
     ok = 0; used = []
