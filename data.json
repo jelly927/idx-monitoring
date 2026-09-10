@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 08:34",
+ "updated": "2026-09-10 08:52",
  "delay_min": 0,
- "fx_basis": "13.11 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,339 · 08:03 Yahoo",
- "idr_per_krw": 13.1087,
+ "fx_basis": "13.11 IDR/KRW · USD/IDR 17,547 · USD/KRW 1,338 · 08:03 Yahoo",
+ "idr_per_krw": 13.1116,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -16157,10 +16157,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6900.18,
+   "px": 6910.12,
    "prev": 7056.35,
-   "pct": -2.21,
-   "asof": "08:10",
+   "pct": -2.07,
+   "asof": "08:30",
    "live": true,
    "spark": [
     7070.5,
@@ -16177,17 +16177,21 @@
     6949.47,
     6951.08,
     6924.61,
-    6900.18
+    6904.99,
+    6920.83,
+    6917.12,
+    6898.45,
+    6910.12
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64371.79,
+   "px": 64227.14,
    "prev": 65148.08,
-   "pct": -1.19,
-   "asof": "08:15",
+   "pct": -1.41,
+   "asof": "08:35",
    "live": true,
    "spark": [
     64771.93,
@@ -16205,24 +16209,25 @@
     64423.48,
     64302.31,
     64318.18,
-    64371.79
+    64459.07,
+    64383.78,
+    64290.91,
+    64244.5,
+    64227.14
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 25274.96,
-   "prev": 25317.18,
-   "pct": -0.17,
-   "asof": "09/07 종가",
-   "live": false,
+   "px": 24911.8,
+   "prev": 25274.96,
+   "pct": -1.44,
+   "asof": "08:35",
+   "live": true,
    "spark": [
-    25311.21,
-    25213.31,
-    25650.87,
-    25413.12,
-    25317.18
+    24894.55,
+    24911.8
    ]
   }
  ],
@@ -16294,6 +16299,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-10T08:49:39+07:00",
+   "date": "2026-09-10",
+   "time": "08:49",
+   "src": "Bloomberg Technoz",
+   "t": "Pendorong Harga Emas Antam Hari Ini Naik Rp15.000",
+   "tags": [
+    "ANTM"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121099/pendorong-harga-emas-antam-hari-ini-naik-rp15-000",
+   "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250411082945.jpeg",
+   "t_id": "Pendorong Harga Emas Antam Hari Ini Naik Rp15.000",
+   "t_ko": "오늘 Antam의 금 가격을 IDR 15,000 인상하도록 유도"
+  },
+  {
    "ts": "2026-09-10T08:20:00+07:00",
    "date": "2026-09-10",
    "time": "08:20",
@@ -16304,7 +16323,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121107/penjelasan-merdeka-battery-mbma-soal-dual-listing-di-hong-kong",
    "img": "https://images.bloombergtechnoz.com/data/2023/09/image-20230929140901.jpg",
-   "t_id": "Penjelasan Merdeka Battery (MBMA) Soal Dual Listing di Hong Kong"
+   "t_id": "Penjelasan Merdeka Battery (MBMA) Soal Dual Listing di Hong Kong",
+   "t_ko": "Merdeka Battery (MBMA) 홍콩 이중 상장 관련 설명"
   },
   {
    "ts": "2026-09-10T08:10:00+07:00",
@@ -16317,7 +16337,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121104/investor-asing-lepas-saham-byan-usai-ditawar-murah-haji-isam",
    "img": "https://images.bloombergtechnoz.com/data/2023/04/image-20230427053335.jpg",
-   "t_id": "Investor Asing Lepas Saham BYAN Usai Ditawar Murah Haji Isam"
+   "t_id": "Investor Asing Lepas Saham BYAN Usai Ditawar Murah Haji Isam",
+   "t_ko": "하지 이삼이 저렴한 가격을 제시한 후 외국인 투자자들이 BYAN 주식을 매도"
   },
   {
    "ts": "2026-09-10T08:00:00+07:00",
@@ -16329,7 +16350,9 @@
     "SIDO"
    ],
    "url": "https://www.idnfinancials.com/news/68597/sido-realises-idr-24-billion-in-capex-through-first-half-of-2026",
-   "img": "https://photos.idnfinancials.com/d/500x300/2024/Ilustrasi%20adhy/SIDO%20MUNCUL/SIDO%20MUNCUL%202.jpg"
+   "img": "https://photos.idnfinancials.com/d/500x300/2024/Ilustrasi%20adhy/SIDO%20MUNCUL/SIDO%20MUNCUL%202.jpg",
+   "t_ko": "SIDO는 2026년 상반기까지 240억 IDR의 자본 지출을 실현합니다.",
+   "t_id": "SIDO realisasikan belanja modal Rp 24 miliar hingga semester I 2026"
   },
   {
    "ts": "2026-09-10T07:48:13+07:00",
@@ -16341,7 +16364,9 @@
     "BBCA"
    ],
    "url": "https://www.liputan6.com/saham/read/8288566/emiten-bbca-ungkap-kembali-tebar-dividen-interim-desember-2026",
-   "img": "https://cdn1-production-images-kly.akamaized.net/T_l9QXnm4N82cpQ1wcgk1xlPAag=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3626295/original/027885300_1636365579-8_november_2021-2.jpeg"
+   "img": "https://cdn1-production-images-kly.akamaized.net/T_l9QXnm4N82cpQ1wcgk1xlPAag=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3626295/original/027885300_1636365579-8_november_2021-2.jpeg",
+   "t_ko": "발행사 BBCA, 2026년 12월 중간 배당금 분배 공개",
+   "t_id": "Emiten BBCA Ungkap Kembali Tebar Dividen Interim Desember 2026"
   },
   {
    "ts": "2026-09-10T07:44:00+07:00",
@@ -16354,7 +16379,8 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6aa1fd6614bb0/manuver-itmg-di-bisnis-nikel-hingga-pembangkit-surya-seperti-apa-prospeknya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2021/12/16/PT_Indo_Tambangraya_Megah_Tbk_ITMG-2021_12_16-17_40_36_f89e45f3db45a07493641d9d6c9d3d2f_620x413_thumb.png",
-   "t_id": "Manuver ITMG di Bisnis Nikel hingga Pembangkit Surya, Seperti Apa Prospeknya?"
+   "t_id": "Manuver ITMG di Bisnis Nikel hingga Pembangkit Surya, Seperti Apa Prospeknya?",
+   "t_ko": "니켈-태양광 발전 사업의 ITMG 전략, 전망은 어떻습니까?"
   },
   {
    "ts": "2026-09-10T07:22:47+07:00",
@@ -16370,7 +16396,8 @@
    ],
    "url": "https://www.jawapos.com/ekonomi/2609100061/prediksi-ihsg-kamis-bipi-hmsp-tins-jadi-reaksi-saham-hot",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/08/09/pergerakan-indeks-harga-saham-gabungan-ihsg-di-bursa-efek-indonesia-bei-jakarta-jumat-782026-dery-ridwansah-jawaposcom-c9Zlv.webp",
-   "t_id": "Prediksi IHSG Kamis: BIPI, HMSP, TINS Jadi Reaksi Saham Hot!"
+   "t_id": "Prediksi IHSG Kamis: BIPI, HMSP, TINS Jadi Reaksi Saham Hot!",
+   "t_ko": "목요일 JCI 예측: BIPI, HMSP, TINS가 뜨거운 주식 반응을 보입니다!"
   },
   {
    "ts": "2026-09-10T06:40:00+07:00",
@@ -16386,7 +16413,8 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6aa130562fa8b/menakar-tuah-label-hijau-keen-hgii-dan-toba-bagaimana-dampak-ke-valuasi-saham",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/05/18/IHSG_ditutup_melemah_185_atau_12408_poin_ke_Rp_6599_Foto_Katadat-2026_05_18-18_36_21_2d0166cc8e968c49853bc917423c4182_620x413_thumb.jpg",
-   "t_id": "Menakar Tuah Label Hijau KEEN, HGII dan TOBA, Bagaimana Dampak ke Valuasi Saham?"
+   "t_id": "Menakar Tuah Label Hijau KEEN, HGII dan TOBA, Bagaimana Dampak ke Valuasi Saham?",
+   "t_ko": "행운 측정 그린 라벨 KEEN, HGII 및 TOBA, 주식 평가에 미치는 영향은 무엇입니까?"
   },
   {
    "ts": "2026-09-10T06:03:21+07:00",
@@ -16399,7 +16427,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8288505/morgan-stanley-lepas-74-miliar-saham-goto",
    "img": "https://cdn1-production-images-kly.akamaized.net/qBNgXWUc4SHJvyWhS9YiLaXqrPM=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5568754/original/068350400_1777371982-PT_GoTo_Gojek_Tokopedia_Tbk__GOTO_-28_April_2026a.jpeg",
-   "t_id": "Morgan Stanley Lepas 7,4 Miliar Saham GOTO"
+   "t_id": "Morgan Stanley Lepas 7,4 Miliar Saham GOTO",
+   "t_ko": "Morgan Stanley, 74억 GOTO 주식 매각"
   },
   {
    "ts": "2026-09-10T06:01:00+07:00",
@@ -16414,7 +16443,8 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6aa1e5371a51a/ihsg-rawan-terkoreksi-saham-dssa-tins-admr-dan-emas-jadi-rekomendasi-analis",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/27/IHSG_ditutup_turun_017_atau_1065_poin_ke_level_6185_Foto_Katadat-2026_07_27-17_15_06_d167f2e3a605f9c0b0ffc5e8a4d8dfb8_620x413_thumb.jpg",
-   "t_id": "IHSG Rawan Terkoreksi, Saham DSSA, TINS, ADMR dan EMAS Jadi Rekomendasi Analis"
+   "t_id": "IHSG Rawan Terkoreksi, Saham DSSA, TINS, ADMR dan EMAS Jadi Rekomendasi Analis",
+   "t_ko": "IHSG는 수정되기 쉽고 DSSA, TINS, ADMR 및 EMAS 주식은 분석가가 권장합니다."
   },
   {
    "ts": "2026-09-10T05:45:00+07:00",
@@ -16427,7 +16457,8 @@
    ],
    "url": "https://katadata.co.id/finansial/korporasi/6aa18783bbfb7/gedung-telkom-disewa-bgn-bos-danantara-ini-optimalisasi-aset-tak-merugikan",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2022/10/29/Gedung_Telkom-2022_10_29-18_21_36_60b45cfde9613496daaca0dbd98dc335_620x413_thumb.jpeg",
-   "t_id": "Gedung Telkom Disewa BGN, Bos Danantara: Ini Optimalisasi Aset, Tak Merugikan"
+   "t_id": "Gedung Telkom Disewa BGN, Bos Danantara: Ini Optimalisasi Aset, Tak Merugikan",
+   "t_ko": "BGN, Danantara Boss가 임대한 Telkom 빌딩: 이것은 자산 최적화이지 해롭지 않습니다."
   },
   {
    "ts": "2026-09-10T04:00:00+07:00",
@@ -16440,7 +16471,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/adhi-karya-adhi-andalkan-divestasi-aset-perkuat-modal-kerja-dan-bayar-utang",
    "img": "https://img.idxchannel.com/media/439/images/idx/2018/11/29/PT-Adhi-Karya.jpg",
-   "t_id": "Adhi Karya (ADHI) Andalkan Divestasi Aset Perkuat Modal Kerja dan Bayar Utang"
+   "t_id": "Adhi Karya (ADHI) Andalkan Divestasi Aset Perkuat Modal Kerja dan Bayar Utang",
+   "t_ko": "Adhi Karya(ADHI), 운전 자본 강화 및 부채 상환을 위해 자산 매각에 의존"
   },
   {
    "ts": "2026-09-10T01:00:00+07:00",
@@ -16452,7 +16484,9 @@
     "ADHI"
    ],
    "url": "https://www.idxchannel.com/market-news/fokus-bisnis-konstruksi-adhi-karya-adhi-bakal-lepas-kepemilikan-jalan-tol-hingga-penyediaan-air",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2024/09/13/adhi_karya.jpg"
+   "img": "https://img.idxchannel.com/media/439/images/idx/2024/09/13/adhi_karya.jpg",
+   "t_ko": "건설 사업에 집중하는 Adhi Karya(ADHI)는 유료 도로 및 물 공급 소유권을 포기할 예정입니다.",
+   "t_id": "Fokus Bisnis Konstruksi, Adhi Karya (ADHI) Bakal Lepas Kepemilikan Jalan Tol hingga Penyediaan Air"
   },
   {
    "ts": "2026-09-09T23:30:00+07:00",
@@ -16465,7 +16499,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/tender-pemerintah-berkurang-jasa-marga-buka-opsi-investasi-di-jalan-tol-yang-sudah-beroperasi",
    "img": "https://img.idxchannel.com/media/439/images/idx/2025/08/19/jasa_marga_kendaraan_hut_80_ri.jpg",
-   "t_id": "Tender Pemerintah Berkurang, Jasa Marga Buka Opsi Investasi di Jalan Tol yang Sudah Beroperasi"
+   "t_id": "Tender Pemerintah Berkurang, Jasa Marga Buka Opsi Investasi di Jalan Tol yang Sudah Beroperasi",
+   "t_ko": "정부 입찰이 줄어들고 Jasa Marga는 이미 운영 중인 유료 도로에 대한 투자 옵션을 열었습니다."
   },
   {
    "ts": "2026-09-09T22:50:00+07:00",
@@ -16477,7 +16512,9 @@
     "ADHI"
    ],
    "url": "https://www.idnfinancials.com/news/68616/danantara-asks-adhi-to-streamline-business-new-contracts-jump-118",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/Rozi-Sparta-Moeharmein-Zein-ADHI-1-10092026.jpg"
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/Rozi-Sparta-Moeharmein-Zein-ADHI-1-10092026.jpg",
+   "t_ko": "Danantara는 ADHI에 사업 합리화를 요청했고 신규 계약은 118% 증가했습니다.",
+   "t_id": "Danantara minta ADHI perampingkan bisnis, kontrak baru melonjak 118%"
   },
   {
    "ts": "2026-09-09T22:39:56+07:00",
@@ -16490,7 +16527,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8288470/direktur-akr-corporindo-lepas-saham-akra-ini-rinciannya",
    "img": "https://cdn1-production-images-kly.akamaized.net/xL-s7t9nrybnY2lB5rdU_xfpVZg=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3499494/original/021865400_1625220394-akra_1_WhatsApp_Image_2021-07-02_at_10.13.01.jpg",
-   "t_id": "Direktur AKR Corporindo Lepas Saham AKRA, Ini Rinciannya"
+   "t_id": "Direktur AKR Corporindo Lepas Saham AKRA, Ini Rinciannya",
+   "t_ko": "AKR Corporindo 이사, AKRA 주식 공개, 자세한 내용은 다음과 같습니다."
   },
   {
    "ts": "2026-09-09T21:30:00+07:00",
@@ -16502,7 +16540,9 @@
     "BBCA"
    ],
    "url": "https://www.idnfinancials.com/news/68604/foreign-outflow-bbca-top-sell-idr-638-billion",
-   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/NET%20FOREIGN%20IMAGE%20%28ARIF%29/NET%20FOREIGN%2015.jpeg"
+   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/NET%20FOREIGN%20IMAGE%20%28ARIF%29/NET%20FOREIGN%2015.jpeg",
+   "t_ko": "해외 유출, BBCA 최고 판매 IDR 6,380억",
+   "t_id": "Asing Keluar, BBCA Jual Top Rp 638 Miliar"
   },
   {
    "ts": "2026-09-09T20:52:48+07:00",
@@ -16515,7 +16555,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121087/bni-ungkap-3-faktor-tren-likuiditas-perbankan-longgar",
    "img": "https://images.bloombergtechnoz.com/data/2025/01/image-20250122154815.jpg",
-   "t_ko": "BNI, 느슨한 은행 유동성 추세의 3가지 요인 공개"
+   "t_ko": "BNI, 느슨한 은행 유동성 추세의 3가지 요인 공개",
+   "t_id": "BNI Ungkap 3 Faktor Tren Likuiditas Perbankan Longgar"
   },
   {
    "ts": "2026-09-09T20:24:00+07:00",
@@ -16528,7 +16569,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/perkuat-portofolio-kesehatan-dan-lifestyle-rata-kanan-capital-borong-3075-juta-saham-mmix",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/09/Rata_Kanan_MMIX.jpeg",
-   "t_id": "Perkuat Portofolio Kesehatan dan Lifestyle, Rata Kanan Capital Borong 30,75 Juta Saham MMIX"
+   "t_id": "Perkuat Portofolio Kesehatan dan Lifestyle, Rata Kanan Capital Borong 30,75 Juta Saham MMIX",
+   "t_ko": "건강 및 라이프스타일 포트폴리오 강화, Rata Kanan Capital, MMIX 주식 3,075만주 매입"
   },
   {
    "ts": "2026-09-09T20:15:00+07:00",
@@ -16554,7 +16596,9 @@
     "SIDO"
    ],
    "url": "https://www.liputan6.com/saham/read/8288412/prediksi-penjualan-emiten-sido-hingga-akhir-2026",
-   "img": "https://cdn1-production-images-kly.akamaized.net/KQr7yZz-TWBSRLa1uWr6Z-i2XRs=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/968323/original/030117400_1440654907-FOTO_LIPUTAN6.jpg"
+   "img": "https://cdn1-production-images-kly.akamaized.net/KQr7yZz-TWBSRLa1uWr6Z-i2XRs=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/968323/original/030117400_1440654907-FOTO_LIPUTAN6.jpg",
+   "t_ko": "2026년 말까지 SIDO 발행자 매출 예측",
+   "t_id": "Prediksi Penjualan Emiten SIDO hingga Akhir 2026"
   },
   {
    "ts": "2026-09-09T19:52:00+07:00",
@@ -16567,7 +16611,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/rupslb-elnusa-elsa-tetapkan-perubahan-pengurus-ini-susunan-terbarunya",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/09/ec6ddfe0-cd8d-42a4-8cce-fff25ea95437.jpeg",
-   "t_id": "RUPSLB Elnusa (ELSA) Tetapkan Perubahan Pengurus, Ini Susunan Terbarunya"
+   "t_id": "RUPSLB Elnusa (ELSA) Tetapkan Perubahan Pengurus, Ini Susunan Terbarunya",
+   "t_ko": "엘누사(ELSA) EGMS가 경영 변화를 결정, 최신 구성이다"
   },
   {
    "ts": "2026-09-09T19:40:00+07:00",
@@ -16580,7 +16625,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121075/bca-siapkan-buyback-bbca-rp5-triliun-hingga-maret-2027",
    "img": "https://images.bloombergtechnoz.com/data/2024/07/image-20240701135122.jpg",
-   "t_id": "BCA Siapkan Buyback BBCA Rp5 Triliun hingga Maret 2027"
+   "t_id": "BCA Siapkan Buyback BBCA Rp5 Triliun hingga Maret 2027",
+   "t_ko": "BCA, 2027년 3월까지 IDR 5조 BBCA 자사주 매입 준비"
   },
   {
    "ts": "2026-09-09T19:35:00+07:00",
@@ -16592,7 +16638,9 @@
     "BBNI"
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121083/bni-ungkap-bunga-kredit-koperasi-desa-merah-putih-cuma-6",
-   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260904183210.jpg"
+   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260904183210.jpg",
+   "t_ko": "BNI, 홍백마을 협동조합 신용이자 6% 공개",
+   "t_id": "BNI Ungkap Bunga Kredit Koperasi Desa Merah Putih Cuma 6%"
   },
   {
    "ts": "2026-09-09T19:12:16+07:00",
@@ -16605,7 +16653,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121081/bni-salurkan-masker-dan-obat-bagi-korban-erupsi-anak-krakatau",
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260909174632.jpg",
-   "t_id": "BNI Salurkan Masker dan Obat bagi Korban Erupsi Anak Krakatau"
+   "t_id": "BNI Salurkan Masker dan Obat bagi Korban Erupsi Anak Krakatau",
+   "t_ko": "BNI, 아낙 크라카타우 화산 폭발 피해자들에게 마스크와 의약품 배포"
   },
   {
    "ts": "2026-09-09T19:05:32+07:00",
@@ -16618,7 +16667,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8288369/morgan-stanley-genggam-759-saham-goto",
    "img": "https://cdn1-production-images-kly.akamaized.net/zfJ3weLwMSNyDyCzzX3-5X1CHaM=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5568834/original/017634200_1777377979-PT_GoTo_Gojek_Tokopedia_Tbk__GOTO_-28_April_2026b.jpeg",
-   "t_id": "Morgan Stanley Genggam 7,59% Saham GOTO"
+   "t_id": "Morgan Stanley Genggam 7,59% Saham GOTO",
+   "t_ko": "Morgan Stanley는 GOTO 주식의 7.59%를 보유하고 있습니다."
   },
   {
    "ts": "2026-09-09T19:05:00+07:00",
@@ -16630,7 +16680,9 @@
     "BBNI"
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121080/bni-bbni-masih-kaji-dividen-interim-2026",
-   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260905123825.jpg"
+   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260905123825.jpg",
+   "t_ko": "BNI (BBNI)는 여전히 2026년 중간 배당을 검토 중입니다.",
+   "t_id": "BNI (BBNI) Masih Kaji Dividen Interim 2026"
   },
   {
    "ts": "2026-09-09T19:00:11+07:00",
@@ -16643,31 +16695,8 @@
    ],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8655809/nasib-karyawan-telkom-yang-gedungnya-bakal-ditempati-bgn",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/gedung-graha-merah-putih-1788845167948_169.jpeg?w=360&q=90",
-   "t_id": "Nasib Karyawan Telkom yang Gedungnya Bakal Ditempati BGN"
-  },
-  {
-   "ts": "2026-09-09T19:00:00+07:00",
-   "date": "2026-09-09",
-   "time": "09/09",
-   "src": "Bloomberg Technoz",
-   "t": "Bank BCA (BBCA) Buka Ruang Kenaikan Rasio Dividen",
-   "tags": [
-    "BBCA"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121079/bank-bca-bbca-buka-ruang-kenaikan-rasio-dividen",
-   "img": "https://images.bloombergtechnoz.com/data/2025/10/image-20251027150754.jpeg"
-  },
-  {
-   "ts": "2026-09-09T18:56:02+07:00",
-   "date": "2026-09-09",
-   "time": "09/09",
-   "src": "Bloomberg Technoz",
-   "t": "BNI (BBNI) Catat Perbaikan Cost of Fund",
-   "tags": [
-    "BBNI"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121078/bni-bbni-catat-perbaikan-cost-of-fund",
-   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260909174632.jpg"
+   "t_id": "Nasib Karyawan Telkom yang Gedungnya Bakal Ditempati BGN",
+   "t_ko": "BGN이 건물을 점유하게 될 Telkom 직원의 운명"
   },
   {
    "ts": "2026-09-09T18:41:38+07:00",
@@ -16680,7 +16709,8 @@
    ],
    "url": "https://ekonomi.republika.co.id/berita/tl3hte490/bgn-bakal-pakai-gedung-telkom-ini-penjelasan-danantara",
    "img": "https://static.republika.co.id/uploads/images/detailnews/kepala-bp-bumn-sekaligus-chief-operating-officer-coo-danantara_260723175851-993.jpeg",
-   "t_id": "BGN Bakal Pakai Gedung Telkom, Ini Penjelasan Danantara"
+   "t_id": "BGN Bakal Pakai Gedung Telkom, Ini Penjelasan Danantara",
+   "t_ko": "BGN은 Telkom 건물을 사용할 예정입니다. Danantara의 설명입니다."
   },
   {
    "ts": "2026-09-09T17:43:18+07:00",
@@ -16871,7 +16901,9 @@
     "BBCA"
    ],
    "url": "https://www.idnfinancials.com/news/68603/bbcas-loans-reached-idr1-036-trillion-while-npl-fell-to-1-9",
-   "img": "https://photos.idnfinancials.com/_idn/2025/BBCA%20%282%29.png"
+   "img": "https://photos.idnfinancials.com/_idn/2025/BBCA%20%282%29.png",
+   "t_ko": "BBCA 대출은 IDR1,036조에 이르렀고 NPL은 1.9%로 감소했습니다.",
+   "t_id": "Pinjaman BBCA mencapai Rp1.036 triliun, sementara NPL turun menjadi 1,9%"
   },
   {
    "ts": "2026-09-09T14:00:59+07:00",
@@ -17263,6 +17295,42 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T08:47:37+07:00",
+   "date": "2026-09-10",
+   "time": "08:47",
+   "src": "Bloomberg Technoz",
+   "t": "Rangkuman Rekomendasi Saham Hari Ini, 10 September 2026",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121110/rangkuman-rekomendasi-saham-hari-ini-10-september-2026",
+   "img": "https://images.bloombergtechnoz.com/data/2026/05/image-20260522183930.jpeg",
+   "t_id": "Rangkuman Rekomendasi Saham Hari Ini, 10 September 2026",
+   "t_ko": "2026년 9월 10일 오늘의 주식 추천 요약"
+  },
+  {
+   "ts": "2026-09-10T08:42:53+07:00",
+   "date": "2026-09-10",
+   "time": "08:42",
+   "src": "Liputan6",
+   "t": "Bursa Asia Diprediksi Melemah, Harga Minyak Picu Kekhawatiran Inflasi",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8288593/bursa-asia-diprediksi-melemah-harga-minyak-picu-kekhawatiran-inflasi",
+   "img": "https://cdn0-production-images-kly.akamaized.net/bVcREEfFgYAdo0-CJseGmUthNos=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/652395/original/Bursa%20Asia%201-ok.JPG",
+   "t_ko": "아시아 주식은 약세를 보일 것으로 예상되고 유가는 인플레이션 우려를 촉발합니다",
+   "t_id": "Bursa Asia Diprediksi Melemah, Harga Minyak Picu Kekhawatiran Inflasi"
+  },
+  {
+   "ts": "2026-09-10T08:34:15+07:00",
+   "date": "2026-09-10",
+   "time": "08:34",
+   "src": "Republika",
+   "t": "KAI Tambah 13 Perjalanan Commuter Line Bogor Mulai Hari Ini",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl4kd3416/kai-tambah-13-perjalanan-commuter-line-bogor-mulai-hari-ini",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/073137400-1774852962-830-556.jpg",
+   "t_id": "KAI Tambah 13 Perjalanan Commuter Line Bogor Mulai Hari Ini",
+   "t_ko": "KAI, 오늘부터 보고르까지 13개 통근 노선 추가"
+  },
+  {
    "ts": "2026-09-10T08:33:00+07:00",
    "date": "2026-09-10",
    "time": "08:33",
@@ -17270,7 +17338,9 @@
    "t": "ShopeeVIP+ Hadirkan Pengalaman ‘Sekali Langganan, Dapat Semua’, Semakin Lengkap dengan Akses Netflix",
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl3p4v490/shopeevip-hadirkan-pengalaman-sekali-langganan-dapat-semua-semakin-lengkap-dengan-akses-netflix",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260909213046-938.png"
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260909213046-938.png",
+   "t_ko": "ShopeeVIP+는 Netflix 액세스로 더욱 완벽한 '한 번의 구독으로 모든 것을 얻을 수 있는' 경험을 선사합니다.",
+   "t_id": "ShopeeVIP+ Hadirkan Pengalaman ‘Sekali Langganan, Dapat Semua’, Semakin Lengkap dengan Akses Netflix"
   },
   {
    "ts": "2026-09-10T08:30:00+07:00",
@@ -17280,7 +17350,9 @@
    "t": "Skala Buyback Menkeu AS Gagal Tahan Lonjakan Yield Treasury",
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121105/skala-buyback-menkeu-as-gagal-tahan-lonjakan-yield-treasury",
-   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260825065038.jpg"
+   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260825065038.jpg",
+   "t_ko": "미국 재무장관의 자사주 매입 규모가 국채 수익률 급등을 막지 못함",
+   "t_id": "Skala Buyback Menkeu AS Gagal Tahan Lonjakan Yield Treasury"
   },
   {
    "ts": "2026-09-10T08:26:12+07:00",
@@ -17291,7 +17363,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl4jzo423/harga-minyak-dunia-naik-menkeu-siapkan-langkah-jaga-apbn-2027",
    "img": "https://static.republika.co.id/uploads/images/detailnews/069600300-1780650825-830-556.jpg",
-   "t_id": "Harga Minyak Dunia Naik, Menkeu Siapkan Langkah Jaga APBN 2027"
+   "t_id": "Harga Minyak Dunia Naik, Menkeu Siapkan Langkah Jaga APBN 2027",
+   "t_ko": "세계 유가 상승, 재무부 장관, 2027 APBN 유지 조치 준비"
   },
   {
    "ts": "2026-09-10T08:22:00+07:00",
@@ -17300,7 +17373,9 @@
    "src": "Media Indonesia",
    "t": "ShopeeVIP+ Hadirkan Pengalaman Sekali Langganan Dapat Semua, Semakin Lengkap dengan Akses Netflix",
    "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/931773/shopeevip-hadirkan-pengalaman-sekali-langganan-dapat-semua-semakin-lengkap-dengan-akses-netflix"
+   "url": "https://mediaindonesia.com/ekonomi/931773/shopeevip-hadirkan-pengalaman-sekali-langganan-dapat-semua-semakin-lengkap-dengan-akses-netflix",
+   "t_ko": "ShopeeVIP+는 한 번의 구독으로 모든 경험을 얻을 수 있으며 Netflix 액세스로 더욱 완벽해집니다.",
+   "t_id": "ShopeeVIP+ Hadirkan Pengalaman Sekali Langganan Dapat Semua, Semakin Lengkap dengan Akses Netflix"
   },
   {
    "ts": "2026-09-10T08:21:03+07:00",
@@ -17310,7 +17385,9 @@
    "t": "Harga Minyak Tembus US$ 101 per Barel!",
    "tags": [],
    "url": "https://finance.detik.com/energi/d-8656368/harga-minyak-tembus-us-101-per-barel",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/25/iran-crisishormuz-1774420577359_169.jpeg?w=360&q=90"
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/25/iran-crisishormuz-1774420577359_169.jpeg?w=360&q=90",
+   "t_ko": "유가 배럴당 101달러 돌파!",
+   "t_id": "Harga Minyak Tembus US$ 101 per Barel!"
   },
   {
    "ts": "2026-09-10T08:20:02+07:00",
@@ -17321,7 +17398,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121106/investor-asing-diam-diam-borong-saham-antm-rp300-miliar",
    "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260604121843.jpeg",
-   "t_id": "Investor Asing Diam-diam Borong Saham ANTM Rp300 Miliar"
+   "t_id": "Investor Asing Diam-diam Borong Saham ANTM Rp300 Miliar",
+   "t_ko": "외국인 투자자들이 3,000억 IDR 규모의 ANTM 주식을 비밀리에 매입"
   },
   {
    "ts": "2026-09-10T08:19:38+07:00",
@@ -17330,7 +17408,9 @@
    "src": "Bloomberg",
    "t": "Iran Ready to Escalate War Trump Says Will End After US Election",
    "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-10/iran-ready-to-escalate-war-video"
+   "url": "https://www.bloomberg.com/news/videos/2026-09-10/iran-ready-to-escalate-war-video",
+   "t_ko": "이란은 전쟁을 확대할 준비가 되어 있다 트럼프는 미국 대선 이후 전쟁이 끝날 것이라고 말했다",
+   "t_id": "Iran Siap Meningkatkan Perang yang Trump Katakan Akan Berakhir Setelah Pemilu AS"
   },
   {
    "ts": "2026-09-10T08:16:20+07:00",
@@ -17340,7 +17420,9 @@
    "t": "Kemenpar Siapkan Penanganan Wisatawan Terdampak Erupsi Anak Krakatau",
    "tags": [],
    "url": "https://www.medcom.id/gaya/wisata/yNLZ2MPk-kemenpar-siapkan-penanganan-wisatawan-terdampak-erupsi-anak-krakatau",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841195/tKl9V7f1R8.jpg?w=720"
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841195/tKl9V7f1R8.jpg?w=720",
+   "t_ko": "관광부, 아낙 크라카타우 화산 폭발로 피해를 입은 관광객을 위한 조치 준비",
+   "t_id": "Kemenpar Siapkan Penanganan Wisatawan Terdampak Erupsi Anak Krakatau"
   },
   {
    "ts": "2026-09-10T08:01:18+07:00",
@@ -17351,7 +17433,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121103/harga-minyak-mahal-yield-obligasi-naik-ke-mana-arah-rupiah",
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171645.jpeg",
-   "t_id": "Harga Minyak Mahal & Yield Obligasi Naik, ke Mana Arah Rupiah?"
+   "t_id": "Harga Minyak Mahal & Yield Obligasi Naik, ke Mana Arah Rupiah?",
+   "t_ko": "비싼 유가 & 오르는 채권수익률, 루피아는 어디로 향하는가?"
   },
   {
    "ts": "2026-09-10T08:00:00+07:00",
@@ -17362,7 +17445,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121102/banjir-di-nagoya-persiapan-asian-games-dihentikan-sementara",
    "img": "https://images.bloombergtechnoz.com/data/2024/09/image-20240909125401.jpg",
-   "t_id": "Banjir di Nagoya: Persiapan Asian Games Dihentikan Sementara"
+   "t_id": "Banjir di Nagoya: Persiapan Asian Games Dihentikan Sementara",
+   "t_ko": "나고야 홍수로 아시안게임 준비 잠정 중단"
   },
   {
    "ts": "2026-09-10T07:59:00+07:00",
@@ -17372,7 +17456,9 @@
    "t": "Mobil Listrik hingga Giant Sea Wall Masuk Pipeline Proyek Danantara Development",
    "tags": [],
    "url": "https://katadata.co.id/finansial/korporasi/6aa201086fc5d/mobil-listrik-hingga-giant-sea-wall-masuk-pipeline-proyek-danantara-development",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/02/05/2025_02_05-16_45_00_7971c238-e3af-11ef-a4d1-07983bf3bef5_620x413_thumb.jpg"
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/02/05/2025_02_05-16_45_00_7971c238-e3af-11ef-a4d1-07983bf3bef5_620x413_thumb.jpg",
+   "t_ko": "거대한 방파제까지 전기 자동차가 다난타라 개발 프로젝트 파이프라인에 진입",
+   "t_id": "Mobil Listrik hingga Giant Sea Wall Masuk Pipeline Proyek Danantara Development"
   },
   {
    "ts": "2026-09-10T07:53:00+07:00",
@@ -17383,7 +17469,8 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/nasional/6aa1ff714cce5/prabowo-ungkit-sikap-demokrat-9-tahun-jadi-oposisi-sebut-tak-ada-caci-maki",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/09/2026_09_09-21_48_00_75f4b8e4-ac8f-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Prabowo Ungkit Sikap Demokrat 9 Tahun Jadi Oposisi, Sebut Tak Ada Caci Maki"
+   "t_id": "Prabowo Ungkit Sikap Demokrat 9 Tahun Jadi Oposisi, Sebut Tak Ada Caci Maki",
+   "t_ko": "프라보워는 9년 동안 야당에서 학대가 없었다며 민주당 입장을 밝혔다."
   },
   {
    "ts": "2026-09-10T07:45:16+07:00",
@@ -17393,7 +17480,9 @@
    "t": "Penumpang Makin Padat, KCI Tambah 13 Perjalanan KRL Bogor",
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656331/penumpang-makin-padat-kci-tambah-13-perjalanan-krl-bogor",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/perawatan-rangkaian-diperketat-17-perjalanan-krl-bogor-line-dibatalkan-1788837629268_169.jpeg?w=360&q=90"
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/perawatan-rangkaian-diperketat-17-perjalanan-krl-bogor-line-dibatalkan-1788837629268_169.jpeg?w=360&q=90",
+   "t_ko": "승객 밀도 높아져 KCI 보고르 KRL 운행 13회 추가",
+   "t_id": "Penumpang Makin Padat, KCI Tambah 13 Perjalanan KRL Bogor"
   },
   {
    "ts": "2026-09-10T07:33:11+07:00",
@@ -17404,7 +17493,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609100076/harga-minyak-melonjak-kamis-pagi-brent-tembus-usd-101-wti-naik-ke-97",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/05/25/ilustrasi-pengeboran-minyak-mentah-dunia-istimewa-3vinA.webp",
-   "t_id": "Harga Minyak Melonjak Kamis Pagi: Brent Tembus USD 101, WTI Naik ke 97"
+   "t_id": "Harga Minyak Melonjak Kamis Pagi: Brent Tembus USD 101, WTI Naik ke 97",
+   "t_ko": "목요일 아침 유가 급등: 브렌트유는 USD 101 돌파, WTI는 97로 상승"
   },
   {
    "ts": "2026-09-10T07:33:00+07:00",
@@ -17415,7 +17505,8 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/nasional/6aa1fae3b561f/di-hadapan-prabowo-ahy-jelaskan-maksud-pidato-kekuasaan-punya-batas-waktu",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/02/09/2026_02_09-19_08_00_c1197fe6-05bc-11f1-b1cf-0242ac120004_620x413_thumb.jpg",
-   "t_id": "Di Hadapan Prabowo, AHY Jelaskan Maksud Pidato Kekuasaan Punya Batas Waktu"
+   "t_id": "Di Hadapan Prabowo, AHY Jelaskan Maksud Pidato Kekuasaan Punya Batas Waktu",
+   "t_ko": "AHY는 프라보워 앞에서 연설의 의미를 설명했다. 힘에는 시간제한이 있다"
   },
   {
    "ts": "2026-09-10T07:16:28+07:00",
@@ -17426,7 +17517,8 @@
    "tags": [],
    "url": "https://www.liputan6.com/saham/read/8288551/ihsg-berpotensi-melesat-cermati-rekomendasi-saham-10-september-2026",
    "img": "https://cdn0-production-images-kly.akamaized.net/mQ3IIlzkxbyu1aB_G4MKycN5qpE=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4883223/original/030233500_1720093649-20240704-IHSG-ANG_5.jpg",
-   "t_id": "IHSG Berpotensi Melesat, Cermati Rekomendasi Saham 10 September 2026"
+   "t_id": "IHSG Berpotensi Melesat, Cermati Rekomendasi Saham 10 September 2026",
+   "t_ko": "JCI는 급등할 가능성이 있으며 주식 추천에 주의를 기울여야 합니다 2026년 9월 10일"
   },
   {
    "ts": "2026-09-10T07:15:49+07:00",
@@ -17437,7 +17529,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656068/setahun-purbaya-dan-gaya-koboinya-mengawal-kocek-negara",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/menteri-keuangan-purbaya-yudhi-sadewa-1788961453006_169.jpeg?w=360&q=90",
-   "t_id": "Setahun Purbaya dan Gaya Koboinya Mengawal Kocek Negara"
+   "t_id": "Setahun Purbaya dan Gaya Koboinya Mengawal Kocek Negara",
+   "t_ko": "퍼바야의 1년과 국가 주머니를 지키는 그의 카우보이 스타일"
   },
   {
    "ts": "2026-09-10T07:06:29+07:00",
@@ -17447,7 +17540,9 @@
    "t": "Harga Emas Akhirnya Bangkit Usai 3 Hari Jatuh, Jual atau Beli?",
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121097/harga-emas-akhirnya-bangkit-usai-3-hari-jatuh-jual-atau-beli",
-   "img": "https://images.bloombergtechnoz.com/data/2026/05/image-20260502132628.jpg"
+   "img": "https://images.bloombergtechnoz.com/data/2026/05/image-20260502132628.jpg",
+   "t_ko": "금 가격은 3일간의 하락 후 마침내 상승, 매도 또는 매수?",
+   "t_id": "Harga Emas Akhirnya Bangkit Usai 3 Hari Jatuh, Jual atau Beli?"
   },
   {
    "ts": "2026-09-10T07:02:48+07:00",
@@ -17456,7 +17551,9 @@
    "src": "Bloomberg",
    "t": "China-US 10-Year Yield Gap Widens to Largest on Record",
    "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-10/china-us-10-year-yield-gap-widens-to-largest-on-record"
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/china-us-10-year-yield-gap-widens-to-largest-on-record",
+   "t_ko": "중국-미국 10년 수익률 격차가 사상 최대로 확대",
+   "t_id": "Kesenjangan Imbal Hasil 10 Tahun Tiongkok-AS Melebar ke Rekor Terbesar"
   },
   {
    "ts": "2026-09-10T06:55:00+07:00",
@@ -17467,7 +17564,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656143/tka-makin-mudah-kerja-di-indonesia-ini-aturannya",
    "img": "https://akcdn.detik.net.id/community/media/visual/2023/02/09/potret-tka-china-di-sultra-bak-warlok-belanja-di-pasar-hingga-naik-motor_169.mpo?w=360&q=90",
-   "t_id": "TKA Makin Mudah Kerja di Indonesia, Ini Aturannya"
+   "t_id": "TKA Makin Mudah Kerja di Indonesia, Ini Aturannya",
+   "t_ko": "외국인 근로자가 인도네시아에서 일하는 것이 점점 쉬워지고 있습니다. 규칙은 다음과 같습니다."
   },
   {
    "ts": "2026-09-10T06:53:00+07:00",
@@ -17477,7 +17575,8 @@
    "t": "7 Tanker Minyak Diserang di Teluk Persia, Harga Minyak Melonjak",
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/931748/7-tanker-minyak-diserang-di-teluk-persia-harga-minyak-melonjak",
-   "t_id": "7 Tanker Minyak Diserang di Teluk Persia, Harga Minyak Melonjak"
+   "t_id": "7 Tanker Minyak Diserang di Teluk Persia, Harga Minyak Melonjak",
+   "t_ko": "페르시아만에서 유조선 7척 피격, 유가 급등"
   },
   {
    "ts": "2026-09-10T06:48:00+07:00",
@@ -17488,7 +17587,8 @@
    "tags": [],
    "url": "https://www.idxchannel.com/market-news/harga-emas-naik-lebih-dari-1-persen-di-tengah-pelemahan-dolar-as",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/03/25/Pexels_-_emas_-_gold_-_25_Mar_26.jpeg",
-   "t_id": "Harga Emas Naik Lebih dari 1 Persen di Tengah Pelemahan Dolar AS"
+   "t_id": "Harga Emas Naik Lebih dari 1 Persen di Tengah Pelemahan Dolar AS",
+   "t_ko": "미국 달러 약세 속에 금값 1% 이상 상승"
   },
   {
    "ts": "2026-09-10T06:46:00+07:00",
@@ -17499,7 +17599,8 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/nasional/6aa1efd251a05/hut-demokrat-prabowo-terima-kasih-ke-sby-ahy-sampaikan-salam-untuk-megawati",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/09/2026_09_09-21_48_00_6af3f446-ac8f-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "HUT Demokrat: Prabowo Terima Kasih ke SBY, AHY Sampaikan Salam untuk Megawati"
+   "t_id": "HUT Demokrat: Prabowo Terima Kasih ke SBY, AHY Sampaikan Salam untuk Megawati",
+   "t_ko": "민주당 기념일 : Prabowo는 SBY에게 감사를 표하고 AHY는 Megawati에게 인사를 보냅니다."
   },
   {
    "ts": "2026-09-10T06:43:00+07:00",
@@ -17509,7 +17610,8 @@
    "t": "Investasi Rp240 Triliun, Google Beli 50 Persen Listrik Pembangkit Nuklir Finlandia untuk AI",
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/931745/investasi-rp240-triliun-google-beli-50-persen-listrik-pembangkit-nuklir-finlandia-untuk-ai",
-   "t_id": "Investasi Rp240 Triliun, Google Beli 50 Persen Listrik Pembangkit Nuklir Finlandia untuk AI"
+   "t_id": "Investasi Rp240 Triliun, Google Beli 50 Persen Listrik Pembangkit Nuklir Finlandia untuk AI",
+   "t_ko": "Google은 IDR 240조를 투자하여 AI를 위해 핀란드 원자력 발전소 전력의 50%를 구매합니다."
   },
   {
    "ts": "2026-09-10T06:40:00+07:00",
@@ -17519,7 +17621,9 @@
    "t": "Bursa Asia Bersiap Melemah Akibat Lonjakan Harga Minyak",
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121095/bursa-asia-bersiap-melemah-akibat-lonjakan-harga-minyak",
-   "img": "https://images.bloombergtechnoz.com/data/2024/08/image-20240821060528.jpg"
+   "img": "https://images.bloombergtechnoz.com/data/2024/08/image-20240821060528.jpg",
+   "t_ko": "유가 급등으로 아시아 증시 약세 준비",
+   "t_id": "Bursa Asia Bersiap Melemah Akibat Lonjakan Harga Minyak"
   },
   {
    "ts": "2026-09-10T06:38:00+07:00",
@@ -17530,7 +17634,8 @@
    "tags": [],
    "url": "https://www.idxchannel.com/market-news/harga-minyak-brent-tembus-usd100-per-barel-di-tengah-eskalasi-perang-iran-as",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/03/03/drilling_platform_kilang_minyak_-_Freepik.jpeg",
-   "t_id": "Harga Minyak Brent Tembus USD100 per Barel di Tengah Eskalasi Perang Iran-AS"
+   "t_id": "Harga Minyak Brent Tembus USD100 per Barel di Tengah Eskalasi Perang Iran-AS",
+   "t_ko": "이란-미국 전쟁 격화 속에 브렌트유 가격 배럴당 100달러 도달"
   },
   {
    "ts": "2026-09-10T06:30:37+07:00",
@@ -17541,40 +17646,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8656060/makin-banyak-rokok-ilegal-di-jakarta-ditindak-bea-cukai-tanda-permasalahan-serius",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/kepala-kantor-wilayah-bea-cukai-jakarta-hendri-darnadi-1788931242796_169.jpeg?w=360&q=90",
-   "t_id": "Makin Banyak Rokok Ilegal di Jakarta Ditindak, Bea Cukai: Tanda Permasalahan Serius"
-  },
-  {
-   "ts": "2026-09-10T06:30:00+07:00",
-   "date": "2026-09-10",
-   "time": "06:30",
-   "src": "Bloomberg Technoz",
-   "t": "Status Lima Gunung Siaga Pagi Ini: Tak Ada Erupsi",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121094/status-lima-gunung-siaga-pagi-ini-tak-ada-erupsi",
-   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260906141932.jpeg",
-   "t_id": "Status Lima Gunung Siaga Pagi Ini: Tak Ada Erupsi"
-  },
-  {
-   "ts": "2026-09-10T06:28:46+07:00",
-   "date": "2026-09-10",
-   "time": "06:28",
-   "src": "Jawa Pos",
-   "t": "Rupiah Berpotensi Menguat ke Rp 17.480 per Dolar AS, Ditopang Data Ekonomi Domestik",
-   "tags": [],
-   "url": "https://www.jawapos.com/finance/2609100028/rupiah-berpotensi-menguat-ke-rp-17480-per-dolar-as-ditopang-data-ekonomi-domestik",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/05/26/karyawan-menunjukkan-uang-pecahan-rupiah-dan-dolar-amerika-serikat-as-di-gerai-penukaran-mata-uang-asing-di-jakarta-dery-ridwansah-jawaposcom-KKMzb.webp",
-   "t_id": "Rupiah Berpotensi Menguat ke Rp 17.480 per Dolar AS, Ditopang Data Ekonomi Domestik"
-  },
-  {
-   "ts": "2026-09-10T06:28:00+07:00",
-   "date": "2026-09-10",
-   "time": "06:28",
-   "src": "IDX Channel",
-   "t": "Adu Kuat Bank Digital, Analis Soroti Sederet Saham Ini",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/adu-kuat-bank-digital-analis-soroti-sederet-saham-ini",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/10/bank_digital_-_mobile_banking_-_Magnific.jpeg",
-   "t_id": "Adu Kuat Bank Digital, Analis Soroti Sederet Saham Ini"
+   "t_id": "Makin Banyak Rokok Ilegal di Jakarta Ditindak, Bea Cukai: Tanda Permasalahan Serius",
+   "t_ko": "자카르타에서 점점 더 많은 불법 담배가 기소되고 있습니다. 관세 및 소비세: 심각한 문제의 징후"
   }
  ],
  "kisi_news": [
@@ -17783,8 +17856,8 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "98.79",
-   "d": 0.01,
-   "ytd": 0.51,
+   "d": 0.02,
+   "ytd": 0.52,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17794,9 +17867,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.81",
-   "d": 2.79,
-   "ytd": 68.6,
+   "v": "96.88",
+   "d": 2.87,
+   "ytd": 68.72,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17806,9 +17879,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,458.0",
-   "d": 0.85,
-   "ytd": 3.06,
+   "v": "4,452.1",
+   "d": 0.72,
+   "ytd": 2.92,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17830,9 +17903,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,865",
-   "d": -0.03,
-   "ytd": 1.1,
+   "v": "16,884",
+   "d": 0.08,
+   "ytd": 1.21,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20618,7 +20691,8 @@
    "prev": "-226.8B",
    "act": null,
    "src": "investing.com",
-   "title_ko": "경상계정(2분기)"
+   "title_ko": "경상계정(2분기)",
+   "title_id": "Rekening Giro (Q2)"
   },
   {
    "date": "2026-09-24",
@@ -20630,7 +20704,9 @@
    "exp": null,
    "prev": "607K",
    "act": null,
-   "src": "investing.com"
+   "src": "investing.com",
+   "title_ko": "신규주택판매 (8월)",
+   "title_id": "Penjualan Rumah Baru (Agustus)"
   }
  ],
  "announcements": [
@@ -25382,7 +25458,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-09 17:28",
-  "pc_age_min": 906,
+  "pc_age_min": 924,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26644,9 +26720,9 @@
   },
   "model": "gemini-2.5-flash-lite",
   "index": {
-   "ko": "금융주(BBCA·BMRI) 약세와 미국 국채금리 상승 영향으로 IHSG 0.12% 하락.",
-   "id": "IHSG melemah 0,12% akibat pelemahan saham perbankan (BBCA dan BMRI) serta kenaikan imbal hasil obligasi AS.",
-   "ts": "2026-09-10T08:34:47.596816+07:00"
+   "ko": "금융주(BBCA·BMRI) 약세와 미 국채 금리 상승 영향으로 IHSG 0.12% 하락.",
+   "id": "IHSG melemah 0,12% akibat pelemahan saham perbankan (BBCA dan BMRI) serta kenaikan imbal hasil US Treasury.",
+   "ts": "2026-09-10T08:52:52.798355+07:00"
   }
  },
  "mcap": [
@@ -26780,7 +26856,7 @@
    "ratio": 2.0,
    "ev_ko": "자본구조",
    "ev_id": "Aksi korporasi",
-   "hl": "BCA Siapkan Buyback BBCA Rp5 Triliun hingga Maret 2027",
+   "hl": "BCA, 2027년 3월까지 IDR 5조 BBCA 자사주 매입 준비",
    "url": "https://www.bloombergtechnoz.com/detail-news/121075/bca-siapkan-buyback-bbca-rp5-triliun-hingga-maret-2027",
    "score": 79.5,
    "s_news": 88,
@@ -26888,7 +26964,7 @@
    "ratio": 1.4,
    "ev_ko": "실적·배당",
    "ev_id": "Kinerja & dividen",
-   "hl": "BNI (BBNI) Masih Kaji Dividen Interim 2026",
+   "hl": "BNI (BBNI)는 여전히 2026년 중간 배당을 검토 중입니다.",
    "url": "https://www.bloombergtechnoz.com/detail-news/121080/bni-bbni-masih-kaji-dividen-interim-2026",
    "score": 57.6,
    "s_news": 70,
