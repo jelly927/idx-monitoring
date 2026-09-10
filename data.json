@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 20:40",
+ "updated": "2026-09-10 20:54",
  "delay_min": 0,
- "fx_basis": "13.02 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 20:07 Yahoo",
- "idr_per_krw": 13.0216,
+ "fx_basis": "13.04 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,345 · 20:07 Yahoo",
+ "idr_per_krw": 13.0372,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 20:39",
+   "asof": "investing.com 20:53",
    "unit": "bp"
   }
  ],
@@ -15079,42 +15079,51 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7595.3,
+   "px": 7587.55,
    "prev": 7637.7,
-   "pct": -0.56,
-   "asof": "20:35",
+   "pct": -0.66,
+   "asof": "20:50",
    "live": true,
    "spark": [
     7591.46,
-    7595.3
+    7597.58,
+    7594.02,
+    7600.37,
+    7587.55
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26067.11,
+   "px": 26040.63,
    "prev": 26253.34,
-   "pct": -0.71,
-   "asof": "20:35",
+   "pct": -0.81,
+   "asof": "20:50",
    "live": true,
    "spark": [
     26012.32,
-    26067.11
+    26076.28,
+    26043.74,
+    26094.83,
+    26040.63
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52168.69,
+   "px": 52158.48,
    "prev": 52391.48,
-   "pct": -0.43,
-   "asof": "20:35",
+   "pct": -0.44,
+   "asof": "20:50",
    "live": true,
    "spark": [
     52225.89,
-    52168.69
+    52174.94,
+    52203.9,
+    52231.21,
+    52158.48
    ]
   },
   {
@@ -15432,6 +15441,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-10T20:40:00+07:00",
+   "date": "2026-09-10",
+   "time": "20:40",
+   "src": "IDNFinancials",
+   "t": "Foreign outflow, BBCA top sell again at around IDR 550 billion",
+   "tags": [
+    "BBCA"
+   ],
+   "url": "https://www.idnfinancials.com/news/68678/foreign-outflow-bbca-top-sell-again-at-around-idr-550-billion",
+   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/NET%20FOREIGN%20IMAGE%20%28ARIF%29/NET%20FOREIGN%2018.jpeg",
+   "t_ko": "BBCA, 외국인 순매도 집중되며 5,500억 루피아 기록",
+   "t_id": "Asing Lepas Saham, BBCA Kembali Jadi Top Sell Tembus Rp550 Miliar"
+  },
+  {
    "ts": "2026-09-10T20:31:18+07:00",
    "date": "2026-09-10",
    "time": "20:31",
@@ -15442,8 +15465,8 @@
    ],
    "url": "https://ekonomi.republika.co.id/berita/tl5hk6490/fokus-akuisisi-tambang-emas-belanja-modal-astra-tembus-rp169-triliun",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_210422115231-626.png",
-   "t_id": "Fokus Akuisisi Tambang Emas, Belanja Modal Astra Tembus Rp16,9 Triliun",
-   "t_ko": "Astra International(ASII), 금광 인수 집중으로 설비투자 Rp16.9조 전망"
+   "t_ko": "Astra International(ASII), 금광 인수 집중으로 설비투자 Rp16.9조 전망",
+   "t_id": "Fokus Akuisisi Tambang Emas, Belanja Modal Astra Tembus Rp16,9 Triliun"
   },
   {
    "ts": "2026-09-10T20:01:48+07:00",
@@ -16218,28 +16241,6 @@
    "ai_tags_id": []
   },
   {
-   "ts": "2026-09-10T11:31:42+07:00",
-   "date": "2026-09-10",
-   "time": "11:31",
-   "src": "Republika",
-   "t": "Dirut BTN Ungkap Kinerja BSN, Cost of Fund 2,7 Persen dan NPL di Bawah 3 Persen",
-   "tags": [
-    "BBTN"
-   ],
-   "url": "https://ekonomi.republika.co.id/berita/tl4sku423/dirut-btn-ungkap-kinerja-bsn-cost-of-fund-27-persen-dan-npl-di-bawah-3-persen",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/direktur-utama-pt-bank-tabungan-negara-persero-tbk-btn_260610201605-176.JPG",
-   "t_ko": "BTN 대표, BSN 실적 공개 — 조달비용 2.7%·NPL 3% 이하",
-   "t_id": "Dirut BTN Ungkap Kinerja BSN, Cost of Fund 2,7 Persen dan NPL di Bawah 3 Persen",
-   "ai_ko": "BTN(BBTN) 자회사 BSN, 6월 말 총자산 20.1% 증가한 Rp78.8조·조달금리 2.7%·NPL 3% 미만 / 모회사보다 낮은 조달비용 확인, 2026년 자산 목표는 Rp87조",
-   "ai_id": "Dirut BTN Nixon LP Napitupulu menyebut cost of fund Bank Syariah Nasional (BSN) berada di 2,7% dan NPL di bawah 3%, dengan aset per Juni 2026 tumbuh 20,1% yoy menjadi Rp78,8 triliun. BSN membidik aset sekitar Rp87 triliun, pembiayaan Rp66 triliun, dan DPK Rp69 triliun pada 2026.",
-   "ai_tags": [
-    "실적",
-    "이슬람금융",
-    "분사"
-   ],
-   "ai_tags_id": []
-  },
-  {
    "ts": "2026-09-10T11:12:00+07:00",
    "date": "2026-09-10",
    "time": "11:12",
@@ -16865,6 +16866,115 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-10T20:48:53+07:00",
+   "date": "2026-09-10",
+   "time": "20:48",
+   "src": "Bloomberg",
+   "t": "Oil Hits $105 as Iran Shows No Signs of Backing Down",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-10/oil-hits-105-as-iran-shows-no-signs-of-backing-down-video",
+   "g": 1,
+   "t_ko": "이란 강경 기조 유지에 유가 105달러 돌파",
+   "t_id": "Minyak Tembus $105 saat Iran Tunjukkan Tanda-Tanda Tak Mau Mundur"
+  },
+  {
+   "ts": "2026-09-10T20:48:00+07:00",
+   "date": "2026-09-10",
+   "time": "20:48",
+   "src": "Republika",
+   "t": "Pertamina Patra Niaga Regional Sulawesi Operasikan 25 SPBU 24 Jam di Makassar",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl4yzo522/pertamina-patra-niaga-regional-sulawesi-operasikan-25-spbu-24-jam-di-makassar",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260910134955-970.jpeg",
+   "t_id": "Pertamina Patra Niaga Regional Sulawesi Operasikan 25 SPBU 24 Jam di Makassar",
+   "t_ko": "Pertamina Patra Niaga Regional Sulawesi, 마카사르에서 24시간 주유소 25곳 가동"
+  },
+  {
+   "ts": "2026-09-10T20:44:20+07:00",
+   "date": "2026-09-10",
+   "time": "20:44",
+   "src": "CNBC",
+   "t": "Macy's posts strong results, raises guidance as turnaround begins to take hold",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/macys-m-q2-2026-earnings.html",
+   "g": 1,
+   "t_ko": "Macy's, 실적 호조 및 턴어라운드 기대감에 가이던스 상향",
+   "t_id": "Macy's Cetak Kinerja Kuat, Naikkan Proyeksi Seiring Pemulihan Berjalan"
+  },
+  {
+   "ts": "2026-09-10T20:42:00+07:00",
+   "date": "2026-09-10",
+   "time": "20:42",
+   "src": "MarketWatch",
+   "t": "Apple is walking a ‘tightrope’ when it comes to the prices of its new iPhones",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/apples-stock-rises-after-iphone-reveal-the-company-is-walking-a-tightrope-on-pricing-say-analysts-813898ac?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-38300245",
+   "t_ko": "Apple, 신형 아이폰 가격 책정을 두고 고심",
+   "t_id": "Apple Berada di Ujung Tanduk Terkait Harga iPhone Baru"
+  },
+  {
+   "ts": "2026-09-10T20:41:00+07:00",
+   "date": "2026-09-10",
+   "time": "20:41",
+   "src": "Media Indonesia",
+   "t": "Trump Jumawa AS Kuasai Produksi Minyak Global",
+   "tags": [],
+   "url": "https://mediaindonesia.com/internasional/932070/trump-jumawa-as-kuasai-produksi-minyak-global",
+   "g": 1,
+   "t_ko": "Trump, 미국의 글로벌 원유 생산 지배력 과시",
+   "t_id": "Trump Jumawa AS Kuasai Produksi Minyak Global"
+  },
+  {
+   "ts": "2026-09-10T20:41:00+07:00",
+   "date": "2026-09-10",
+   "time": "20:41",
+   "src": "Media Indonesia",
+   "t": "Perbedaan Garis Kemiskinan Versi BPS dan Bank Dunia, Ini Penjelasan Lengkapnya",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932068/perbedaan-garis-kemiskinan-versi-bps-dan-bank-dunia-ini-penjelasan-lengkapnya",
+   "g": 1,
+   "t_id": "Perbedaan Garis Kemiskinan Versi BPS dan Bank Dunia, Ini Penjelasan Lengkapnya",
+   "t_ko": "BPS와 세계은행의 빈곤선 기준 차이점 분석"
+  },
+  {
+   "ts": "2026-09-10T20:40:01+07:00",
+   "date": "2026-09-10",
+   "time": "20:40",
+   "src": "Yahoo Finance",
+   "t": "Insider Says Goodbye to More Than 5,000 Shares Valued at More Than $475,000",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/insider-says-goodbye-more-5-134001345.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/5a440778ac8f2b72736c872664e8a572.png",
+   "t_ko": "내부자, 47만 5,000달러어치 주식 5,000주 이상 매도",
+   "t_id": "Orang Dalam Lepas Lebih dari 5.000 Saham Senilai Lebih dari $475.000"
+  },
+  {
+   "ts": "2026-09-10T20:40:00+07:00",
+   "date": "2026-09-10",
+   "time": "20:40",
+   "src": "Bloomberg Technoz",
+   "t": "Bisnis MediaTek Moncer Efek Chip AI, Penjualan Melesat 44%",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121195/bisnis-mediatek-moncer-efek-chip-ai-penjualan-melesat-44",
+   "img": "https://images.bloombergtechnoz.com/data/2026/01/image-20260126154211.jpg",
+   "t_ko": "MediaTek, AI 칩 효과로 매출 44% 급증",
+   "t_id": "Bisnis MediaTek Moncer Efek Chip AI, Penjualan Melesat 44%"
+  },
+  {
+   "ts": "2026-09-10T20:39:00+07:00",
+   "date": "2026-09-10",
+   "time": "20:39",
+   "src": "Media Indonesia",
+   "t": "Tata Kelola Akuntabel Dukung Pertumbuhan Bisnis yang Berkelanjutan",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932072/tata-kelola-akuntabel-dukung-pertumbuhan-bisnis-yang-berkelanjutan",
+   "t_id": "Tata Kelola Akuntabel Dukung Pertumbuhan Bisnis yang Berkelanjutan",
+   "t_ko": "투명한 지배구조 바탕으로 지속 가능한 성장 도모"
+  },
+  {
    "ts": "2026-09-10T20:37:00+07:00",
    "date": "2026-09-10",
    "time": "20:37",
@@ -16887,8 +16997,21 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8657600/data-kemiskinan-ri-versi-bps-dan-bank-dunia-berbeda-kok-bisa",
    "g": 1,
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/01/07/tren-penurunan-tingkat-kemiskinan-ri-6_169.jpeg?w=360&q=90",
-   "t_id": "Data Kemiskinan RI Versi BPS dan Bank Dunia Berbeda, Kok Bisa?",
-   "t_ko": "통계청·세계은행 인도네시아 빈곤율 집계 차이 발생 배경"
+   "t_ko": "통계청·세계은행 인도네시아 빈곤율 집계 차이 발생 배경",
+   "t_id": "Data Kemiskinan RI Versi BPS dan Bank Dunia Berbeda, Kok Bisa?"
+  },
+  {
+   "ts": "2026-09-10T20:33:33+07:00",
+   "date": "2026-09-10",
+   "time": "20:33",
+   "src": "Yahoo Finance",
+   "t": "Stocks Kick Off 4th Straight Session of Losses on Rising Oil and Yields",
+   "tags": [],
+   "url": "https://www.barrons.com/livecoverage/stock-market-news-today-091026/card/stocks-kick-off-4th-straight-session-of-losses-on-rising-oil-and-yields-iANX1ltwcBw6WLbQQAHh?siteid=yhoof2&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/Barrons.com/12ea0f43d8f8307249a68d1cb2e0587e.png",
+   "t_ko": "유가·국채금리 상승에 뉴욕증시 4거래일 연속 하락",
+   "t_id": "Saham Catat Tren Rugi 4 Sesi Beruntun di Tengah Kenaikan Minyak dan Imbal Hasil"
   },
   {
    "ts": "2026-09-10T20:28:44+07:00",
@@ -16899,8 +17022,8 @@
    "tags": [],
    "url": "https://www.medcom.id/properti/arsitektur/0kpqB7DK-5-inspirasi-pagar-stainless-dari-kaca-hingga-laser-cut",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/10/1841385/fYpoJLGR0q.jpg?w=720",
-   "t_id": "5 Inspirasi Pagar Stainless, dari Kaca hingga Laser Cut",
-   "t_ko": "스테인리스 울타리 디자인 5선 — 유리부터 레이저 컷까지"
+   "t_ko": "스테인리스 울타리 디자인 5선 — 유리부터 레이저 컷까지",
+   "t_id": "5 Inspirasi Pagar Stainless, dari Kaca hingga Laser Cut"
   },
   {
    "ts": "2026-09-10T20:26:24+07:00",
@@ -16937,6 +17060,19 @@
     "geopolitik",
     "Brent"
    ]
+  },
+  {
+   "ts": "2026-09-10T20:26:10+07:00",
+   "date": "2026-09-10",
+   "time": "20:26",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Tech Futures Sell Off After Inflation Surprise; Oil, Yields Surge (Live Coverage)",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-nvidia-chipmaker-tsmc/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/efdd2096566747a1c5895ff0ab582f7b.jpg",
+   "t_ko": "물가 서프라이즈에 기술주 선물 급락·유가와 금리 급등",
+   "t_id": "Pasar Saham Hari Ini: Berjangka Teknologi Anjlok Usai Kejutkan Inflasi; Minyak, Imbal Hasil Melonjak (Liputan Langsung)"
   },
   {
    "ts": "2026-09-10T20:25:30+07:00",
@@ -16976,30 +17112,17 @@
    "t_id": "Harga Grosir Naik 0.4% di Agustus Sesuai Ekspektasi"
   },
   {
-   "ts": "2026-09-10T20:22:50+07:00",
+   "ts": "2026-09-10T20:23:21+07:00",
    "date": "2026-09-10",
-   "time": "20:22",
-   "src": "CNA",
-   "t": "Chip startup d-Matrix to use Nvidia chip-linking tech in AI servers",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/chip-startup-d-matrix-use-nvidia-chip-linking-tech-in-ai-servers-6376391",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--rzVgGIel--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-10T132250Z_2_LYNXMPEM891A7_RTROPTP_3_NVIDIA-JUSTICE-DEPARTMENT-GROQ.JPG?itok=UGimW0r_",
-   "t_ko": "AI 스타트업 d-Matrix, 서버에 Nvidia 칩 연동 기술 도입",
-   "t_id": "Startup Chip d-Matrix Gunakan Teknologi Penghubung Chip Nvidia untuk Server AI"
-  },
-  {
-   "ts": "2026-09-10T20:20:47+07:00",
-   "date": "2026-09-10",
-   "time": "20:20",
+   "time": "20:23",
    "src": "Yahoo Finance",
-   "t": "Nasdaq invests $100 million in Kraken parent Payward for tokenized stocks",
+   "t": "Is LightPath (LPTH) a Hidden Winner in Missile Defense and Space?",
    "tags": [],
-   "url": "https://finance.yahoo.com/markets/crypto/articles/nasdaq-invests-100-million-kraken-132047317.html",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/lightpath-lpth-hidden-winner-missile-132321806.html",
    "g": 1,
-   "img": "https://media.zenfs.com/en/quartz_855/bd9ad623293aacbf4c17258b1b352357.jpg",
-   "t_ko": "Nasdaq, 토큰화 주식 위해 Kraken 모회사 Payward에 1억 달러 투자",
-   "t_id": "Nasdaq Investasi $100 Juta di Induk Kraken Payward untuk Saham Tokenisasi"
+   "img": "https://media.zenfs.com/en/insidermonkey.com/9b698c372b8c35e4ecfacfd18d6b1596.jpg",
+   "t_ko": "LightPath(LPTH), 미사일 방어·우주 분야 수혜주 부각",
+   "t_id": "Apakah LightPath (LPTH) Pemenang Tersembunyi di Sektor Pertahanan Rudal dan Antariksa?"
   },
   {
    "ts": "2026-09-10T20:20:00+07:00",
@@ -17009,108 +17132,8 @@
    "t": "Trading Derivatif Kripto Meningkat, Volume Pengguna Baru Tumbuh Lebih 200 Persen",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932060/trading-derivatif-kripto-meningkat-volume-pengguna-baru-tumbuh-lebih-200-persen",
-   "t_id": "Trading Derivatif Kripto Meningkat, Volume Pengguna Baru Tumbuh Lebih 200 Persen",
-   "t_ko": "암호화폐 파생상품 거래 증가 및 신규 이용자 200% 이상 확대"
-  },
-  {
-   "ts": "2026-09-10T20:19:57+07:00",
-   "date": "2026-09-10",
-   "time": "20:19",
-   "src": "CNBC",
-   "t": "European Central Bank hikes interest rates to 2.5% as policymakers see risk of higher inflation, weaker growth",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/ecb-interest-rate-hike-lagarde-iran.html",
-   "g": 1,
-   "t_ko": "유럽중앙은행, 인플레이션 우려 및 성장 둔화에 금리 2.5%로 인상",
-   "t_id": "ECB Kerek Suku Bunga ke 2,5% di Tengah Risiko Inflasi Tinggi dan Pertumbuhan Melambat",
-   "ai_ko": "ECB 목요일 금리 인상이 기정사실화된 가운데 Deutsche Bank 고객 설문에서는 이후 경로에 대한 공감대 부재 확인 / 응답자 3분의 1 이상이 최종금리 2.75%, 4분의 1은 추가 1회, 또 다른 4분의 1은 3.00%를 예상",
-   "ai_id": "Kenaikan suku bunga ECB pada Kamis dinilai hampir pasti, tetapi survei nasabah Deutsche Bank menunjukkan tidak ada konsensus mengenai arah kebijakan setelahnya. Lebih dari sepertiga responden memperkirakan suku bunga acuan menuju 2,75%, seperempat melihat satu kali kenaikan lagi, dan seperempat lainnya memproyeksikan terminal rate 3%.",
-   "ai_tags": [
-    "금리",
-    "ECB",
-    "채권"
-   ],
-   "ai_tags_id": [
-    "suku bunga",
-    "ECB",
-    "obligasi"
-   ]
-  },
-  {
-   "ts": "2026-09-10T20:18:39+07:00",
-   "date": "2026-09-10",
-   "time": "20:18",
-   "src": "Yahoo Finance",
-   "t": "Jim Cramer Said Stay Away From This Drone Stock a Week Before Its Biggest Earnings Beat in Years",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-said-stay-away-131839364.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/2d7e05ca213e027c433de7a643002495.jpg",
-   "t_ko": "Jim Cramer, 사상 최대 실적 발표 직전 드론주 매각 권고",
-   "t_id": "Jim Cramer Sarankan Jauhi Saham Drone Ini Seminggu Sebelum Kinerja Keuangan Terbaik dalam Beberapa Tahun"
-  },
-  {
-   "ts": "2026-09-10T20:18:03+07:00",
-   "date": "2026-09-10",
-   "time": "20:18",
-   "src": "Bloomberg",
-   "t": "US Bond Yields Extend Climb as Oil Advance Stokes Rate-Hike Bets",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-10/us-bond-yields-extend-climb-as-oil-advance-stokes-rate-hike-bets",
-   "g": 1,
-   "t_ko": "유가 상승세 속 금리 인상 전망에 미국 국채금리 상승세 지속",
-   "t_id": "Imbal Hasil Obligasi AS Lanjutkan Kenaikan Seiring Lonjakan Minyak Perkuat Spekulasi Suku Bunga"
-  },
-  {
-   "ts": "2026-09-10T20:18:00+07:00",
-   "date": "2026-09-10",
-   "time": "20:18",
-   "src": "Yahoo Finance",
-   "t": "OPEC Further Cuts Demand Growth Forecast as Oil Surpasses $100 a Barrel",
-   "tags": [],
-   "url": "https://www.wsj.com/business/energy-oil/opec-further-cuts-this-years-oil-demand-growth-forecast-79ed23ad?siteid=yhoof2&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/wsj.com/b40ff15915c57acf6ad01581376ed610.jpg",
-   "t_ko": "유가 배럴당 100달러 상회에 OPEC 석유 수요 증가 전망 하향",
-   "t_id": "OPEC Kembali Pangkas Proyeksi Pertumbuhan Permintaan saat Minyak Tembus $100 per Barel"
-  },
-  {
-   "ts": "2026-09-10T20:16:50+07:00",
-   "date": "2026-09-10",
-   "time": "20:16",
-   "src": "Bloomberg",
-   "t": "JetBlue Cuts Capacity Outlook, Adding to Turnaround Pressure",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-10/jetblue-cuts-capacity-outlook-adding-to-turnaround-pressure",
-   "g": 1,
-   "t_ko": "JetBlue, 운항능력 전망치 하향 조정으로 경영 정상화 압박",
-   "t_id": "JetBlue Pangkas Prospek Kapasitas, Tekanan Pemulihan Bertambah"
-  },
-  {
-   "ts": "2026-09-10T20:15:06+07:00",
-   "date": "2026-09-10",
-   "time": "20:15",
-   "src": "Yahoo Finance",
-   "t": "AMD Stock’s 10-Year, 6,800% Rally Was Just the Beginning. Here’s Where AMD Could Be Headed Next",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/amd-stock-10-6-800-131506191.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/c1fb148b73e2677d019f7e7fdc928722.jpg",
-   "t_ko": "AMD 주가 10년간 6,800% 급등은 시작에 불과",
-   "t_id": "Reli 6.800% Saham AMD Selama 10 Tahun Baru Permulaan, Ini Prospek Berikutnya"
-  },
-  {
-   "ts": "2026-09-10T20:13:51+07:00",
-   "date": "2026-09-10",
-   "time": "20:13",
-   "src": "Yahoo Finance",
-   "t": "Copper, FCX Stock Plunge On Tariff Report, Surging Yields; Silver, Gold Also Fall",
-   "tags": [],
-   "url": "https://www.investors.com/news/copper-price-fcx-stock-trump-tariffs-treasury-yields-knock-silver-gold/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/bba06edc2be0dc8a14a828147c82226c.jpg",
-   "t_ko": "관세 보도 및 국채금리 급등에 구리·FCX 주가 폭락",
-   "t_id": "Tembaga dan Saham FCX Anjlok Akibat Laporan Tarif dan Lonjakan Imbal Hasil; Perak dan Emas Ikut Turun"
+   "t_ko": "암호화폐 파생상품 거래 증가 및 신규 이용자 200% 이상 확대",
+   "t_id": "Trading Derivatif Kripto Meningkat, Volume Pengguna Baru Tumbuh Lebih 200 Persen"
   },
   {
    "ts": "2026-09-10T20:10:00+07:00",
@@ -17180,39 +17203,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/22/usai-dilantik-sudaryono-langsung-pimpin-rapat-perdana-bersama-jajaran-bgn-1784718690795_169.jpeg?w=360&q=90",
    "t_ko": "Badan Gizi Nasional, MBG 중독 피해 복구 전담 조직 신설 요구",
    "t_id": "Badan Gizi Nasional Diminta Bikin Unit Pemulihan Korban Keracunan MBG"
-  },
-  {
-   "ts": "2026-09-10T19:39:00+07:00",
-   "date": "2026-09-10",
-   "time": "19:39",
-   "src": "Media Indonesia",
-   "t": "423,71 Juta Ton Batu Bara Dikeruk Hingga Juli 2026",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932029/42371-juta-ton-batu-bara-dikeruk-hingga-juli-2026",
-   "t_ko": "2026년 7월까지 석탄 4억2,371만 톤 채굴",
-   "t_id": "423,71 Juta Ton Batu Bara Dikeruk Hingga Jul 2026"
-  },
-  {
-   "ts": "2026-09-10T19:38:00+07:00",
-   "date": "2026-09-10",
-   "time": "19:38",
-   "src": "Media Indonesia",
-   "t": "B50 Tersalurkan di 6.050 SPBU, DPR: Tuntaskan Transisi dan Jaga Mutu",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932031/b50-tersalurkan-di-6050-spbu-dpr-tuntaskan-transisi-dan-jaga-mutu",
-   "t_ko": "6,050개 주유소에 B50 공급 — 하원, 전환 완료 및 품질 유지 촉구",
-   "t_id": "B50 Tersalurkan di 6.050 SPBU, DPR: Tuntaskan Transisi dan Jaga Mutu"
-  },
-  {
-   "ts": "2026-09-10T19:36:00+07:00",
-   "date": "2026-09-10",
-   "time": "19:36",
-   "src": "Media Indonesia",
-   "t": "Purbaya Tanggapi Isu soal Jual-Beli Jabatan di Kemenkeu",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932024/purbaya-tanggapi-isu-soal-jual-beli-jabatan-di-kemenkeu",
-   "t_ko": "Purbaya, 기획재정부 직위 매매설 관련 입장 표명",
-   "t_id": "Purbaya Tanggapi Isu soal Jual-Beli Jabatan di Kemenkeu"
   },
   {
    "ts": "2026-09-10T19:31:00+07:00",
@@ -17505,9 +17495,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.920%",
-   "d": 1.72,
-   "ytd": 18.18,
+   "v": "4.918%",
+   "d": 1.67,
+   "ytd": 18.14,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17528,9 +17518,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.10",
-   "d": 0.37,
-   "ytd": 0.83,
+   "v": "99.00",
+   "d": 0.27,
+   "ytd": 0.73,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17540,9 +17530,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "100.04",
-   "d": 4.1,
-   "ytd": 74.23,
+   "v": "99.50",
+   "d": 3.54,
+   "ytd": 73.28,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17552,9 +17542,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,398.5",
-   "d": -1.2,
-   "ytd": 1.69,
+   "v": "4,410.0",
+   "d": -0.94,
+   "ytd": 1.95,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17576,9 +17566,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,656",
-   "d": -1.27,
-   "ytd": -0.15,
+   "v": "16,672",
+   "d": -1.18,
+   "ytd": -0.06,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25445,7 +25435,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 197,
+  "pc_age_min": 211,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
