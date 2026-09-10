@@ -74,10 +74,10 @@ def build(d):
         "stocks": {},
         "news": [{"time": r.get("time"), "date": r.get("date"), "src": r.get("src"),
                   "t": r.get("t_ko") or r.get("t"), "t_id": r.get("t_id") or r.get("t"),
-                  "tags": r.get("tags"), "url": r.get("url")} for r in (d.get("news") or [])[:NEWS_N]],
+                  "tags": r.get("tags"), "url": r.get("url"), "ai": r.get("ai_ko") or ""} for r in (d.get("news") or [])[:NEWS_N]],
         "market_news": [{"time": r.get("time"), "date": r.get("date"), "src": r.get("src"),
                          "t": r.get("t_ko") or r.get("t"), "t_id": r.get("t_id") or r.get("t"),
-                         "url": r.get("url")} for r in (d.get("market_news") or [])[:MKT_N]],
+                         "url": r.get("url"), "ai": r.get("ai_ko") or ""} for r in (d.get("market_news") or [])[:MKT_N]],
         "announcements": [{"date": r.get("date"), "time": r.get("time"), "t": r.get("t"),
                            "type": r.get("type"), "title": r.get("title_ko") or r.get("title"),
                            "ai": r.get("ai_ko") or "", "url": r.get("url")}
