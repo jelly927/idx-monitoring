@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-10 21:54",
+ "updated": "2026-09-10 22:07",
  "delay_min": 0,
- "fx_basis": "13.02 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,346 · 20:07 Yahoo",
- "idr_per_krw": 13.0241,
+ "fx_basis": "13.03 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,345 · 20:07 Yahoo",
+ "idr_per_krw": 13.0344,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 21:53",
+   "asof": "investing.com 22:05",
    "unit": "bp"
   }
  ],
@@ -15079,10 +15079,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7603.72,
+   "px": 7606.24,
    "prev": 7637.7,
-   "pct": -0.44,
-   "asof": "21:50",
+   "pct": -0.41,
+   "asof": "22:05",
    "live": true,
    "spark": [
     7591.46,
@@ -15101,17 +15101,20 @@
     7606.17,
     7601.49,
     7600.73,
-    7603.72
+    7604.58,
+    7607.36,
+    7601.39,
+    7606.24
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26144.21,
+   "px": 26154.91,
    "prev": 26253.34,
-   "pct": -0.42,
-   "asof": "21:50",
+   "pct": -0.37,
+   "asof": "22:05",
    "live": true,
    "spark": [
     26012.32,
@@ -15130,17 +15133,20 @@
     26157.39,
     26132.8,
     26134.44,
-    26144.21
+    26150.59,
+    26169.17,
+    26138.8,
+    26154.91
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52152.4,
+   "px": 52143.32,
    "prev": 52391.48,
-   "pct": -0.46,
-   "asof": "21:50",
+   "pct": -0.47,
+   "asof": "22:05",
    "live": true,
    "spark": [
     52225.89,
@@ -15159,7 +15165,10 @@
     52162.48,
     52126.15,
     52128.71,
-    52152.4
+    52163.52,
+    52141.05,
+    52115.54,
+    52143.32
    ]
   },
   {
@@ -15476,6 +15485,19 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-10T21:46:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:46",
+   "src": "Media Indonesia",
+   "t": "Konektivitas Kapal di Wilayah Laut Terus Diperluas",
+   "tags": [
+    "STAR"
+   ],
+   "url": "https://mediaindonesia.com/nusantara/932114/konektivitas-kapal-di-wilayah-laut-terus-diperluas",
+   "t_id": "Konektivitas Kapal di Wilayah Laut Terus Diperluas",
+   "t_ko": "해상 물류망 연결성 확대 지속"
+  },
   {
    "ts": "2026-09-10T21:29:23+07:00",
    "date": "2026-09-10",
@@ -15953,32 +15975,6 @@
     "tender offer",
     "kepemilikan saham",
     "komponen otomotif"
-   ]
-  },
-  {
-   "ts": "2026-09-10T14:35:00+07:00",
-   "date": "2026-09-10",
-   "time": "14:35",
-   "src": "Bloomberg Technoz",
-   "t": "Investor Masih Akan Puasa Dividen ARTO Hingga Empat Tahun Lagi",
-   "tags": [
-    "ARTO"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121161/investor-masih-akan-puasa-dividen-arto-hingga-empat-tahun-lagi",
-   "img": "https://images.bloombergtechnoz.com/data/2023/01/image-20230104155511.jpg",
-   "t_ko": "ARTO, 배당 갈증 4년 더 이어질 전망",
-   "t_id": "Investor Masih Akan Puasa Dividen ARTO Hingga Empat Tahun Lagi",
-   "ai_ko": "Bank Jago(ARTO), 확장 자금 수요로 배당 유보 방침 밝히며 3~4년 뒤 배당 검토 시사 / 고성장 우선 전략 재확인으로 배당 기대 종목군에서는 당분간 제외 불가피",
-   "ai_id": "Bank Jago (ARTO) menegaskan belum akan membagikan dividen karena masih butuh dana ekspansi, dan baru mempertimbangkannya dalam tiga hingga empat tahun ke depan. Manajemen memilih fokus pada pertumbuhan yang masih pesat ketimbang distribusi laba ke pemegang saham.",
-   "ai_tags": [
-    "배당",
-    "은행",
-    "성장전략"
-   ],
-   "ai_tags_id": [
-    "dividen",
-    "perbankan",
-    "strategi pertumbuhan"
    ]
   },
   {
@@ -16805,9 +16801,33 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-10T21:54:12.821624+07:00",
+   "ts": "2026-09-10T22:06:19.281512+07:00",
    "date": "2026-09-10",
-   "time": "21:54",
+   "time": "22:06",
+   "src": "Jawa Pos",
+   "t": "Dua Tahun Prabowo: Pelaku Usaha Khawatir Penegakan Hukum Bergeser ke 'Power Based'",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609100317/dua-tahun-prabowo-pelaku-usaha-khawatir-penegakan-hukum-bergeser-ke-power-based",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/direktur-katalis-institute-hidayat-jati-dalam-forum-dialog-nasional-kepastian-hukum-dan-masa-depan-iklim-investasi-di-universitas-indonesia-depok-kamis-109-djati-waluyojawaposcom-7xg4p.webp",
+   "t_ko": "Prabowo 집권 2년, 재계 '법 집행 권력 기반화' 우려",
+   "t_id": "Dua Tahun Prabowo: Pelaku Usaha Khawatir Penegakan Hukum Bergeser ke 'Power Based'",
+   "ai_ko": "Prabowo 정부 2년을 맞아 기업인 대상 설문 결과 법 집행이 '권력 중심'으로 기울고 있다는 우려 제기 / Universidad Indonesia 토론회에서 잦은 규제 변경이 투자 환경 불확실성을 키운다는 지적",
+   "ai_id": "Survei pelaku usaha yang dipaparkan Hidayat dalam dialog nasional di Universitas Indonesia, Depok, Kamis (10/9), menyoroti kekhawatiran penegakan hukum bergeser ke pola power based selama dua tahun pemerintahan Prabowo. Banyaknya perubahan regulasi baru dinilai memengaruhi sikap pelaku usaha terhadap iklim investasi.",
+   "ai_tags": [
+    "규제",
+    "투자환경",
+    "정책"
+   ],
+   "ai_tags_id": [
+    "regulasi",
+    "iklim investasi",
+    "kebijakan"
+   ]
+  },
+  {
+   "ts": "2026-09-10T22:02:19+07:00",
+   "date": "2026-09-10",
+   "time": "22:02",
    "src": "Jawa Pos",
    "t": "Investasi Butuh Kepastian Hukum, Regulasi Jangan Tumpang Tindih",
    "tags": [],
@@ -16815,6 +16835,67 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/forum-dialog-nasional-kepastian-hukum-dan-masa-depan-iklim-investasi-di-universitas-indonesia-depok-kamis-109-foto-djati-waluypjawaposcom-9nWQv.webp",
    "t_ko": "투자에는 법적 확실성 필요, 규제 중복 금지",
    "t_id": "Investasi Butuh Kepastian Hukum, Regulasi Jangan Tumpang Tindih"
+  },
+  {
+   "ts": "2026-09-10T22:00:47+07:00",
+   "date": "2026-09-10",
+   "time": "22:00",
+   "src": "CNBC",
+   "t": "Our top 3 stocks that bucked the market’s recent pullback — plus, a look at the bottom 3",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/our-top-3-stocks-that-bucked-the-markets-recent-pullback-plus-a-look-at-the-bottom-3.html",
+   "g": 1,
+   "t_ko": "시장 조정기 하락장 딛고 반등한 유망주 3선 및 부진주 3선",
+   "t_id": "3 Saham Pilihan yang Tahan Koreksi Pasar Terbaru Beserta 3 Saham Terburuknya"
+  },
+  {
+   "ts": "2026-09-10T21:58:08+07:00",
+   "date": "2026-09-10",
+   "time": "21:58",
+   "src": "CNBC",
+   "t": "Where investors are finding income outside traditional bonds as rates rise",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/income-alternatives-bond-yields-rates.html",
+   "g": 1,
+   "t_ko": "금리 상승기 전통 채권 외 대체 투자처로 몰리는 자금",
+   "t_id": "Tempat Investor Cari Cuan di Luar Obligasi Tradisional Saat Suku Bunga Naik"
+  },
+  {
+   "ts": "2026-09-10T21:56:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:56",
+   "src": "WSJ",
+   "t": "Brooks Automation Files Confidentially for IPO",
+   "tags": [],
+   "url": "https://www.wsj.com/pro/private-equity/brooks-automation-files-confidentially-for-ipo-a7939e5a?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-73959262",
+   "t_ko": "Brooks Automation, 비공개 IPO 신청",
+   "t_id": "Brooks Automation Ajukan IPO Secara Rahasia"
+  },
+  {
+   "ts": "2026-09-10T21:55:39+07:00",
+   "date": "2026-09-10",
+   "time": "21:55",
+   "src": "CNBC",
+   "t": "Kimmel says interview with Senate candidate Talarico won't air on ABC amid FCC threats",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/10/abc-kimmel-talarico-fcc.html",
+   "g": 1,
+   "t_ko": "Kimmel, FCC 압박 속 상원 후보 Talarico 인터뷰 ABC 방영 취소",
+   "t_id": "Kimmel Sebut Wawancara dengan Kandidat Senat Talarico Batal Tayang di ABC di Tengah Ancaman FCC"
+  },
+  {
+   "ts": "2026-09-10T21:54:52+07:00",
+   "date": "2026-09-10",
+   "time": "21:54",
+   "src": "Bloomberg",
+   "t": "Never Short-Sell a Bubble, Syzygy's Arnott Warns",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-10/never-short-sell-a-bubble-syzygy-s-arnott-warns-video",
+   "g": 1,
+   "t_ko": "Syzygy의 Arnott, 버블 공매도 경고",
+   "t_id": "Jangan Pernah Short-Sell Gelembung, Peringatkan Arnott dari Syzygy"
   },
   {
    "ts": "2026-09-10T21:52:50+07:00",
@@ -16839,6 +16920,18 @@
     "geopolitik",
     "Brent"
    ]
+  },
+  {
+   "ts": "2026-09-10T21:51:40+07:00",
+   "date": "2026-09-10",
+   "time": "21:51",
+   "src": "Bloomberg",
+   "t": "Macy's Outlook Disappoints Investors",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-10/macy-s-outlook-disappoints-investors-video",
+   "g": 1,
+   "t_ko": "Macy's 실적 전망치 실망에 투자자 이탈",
+   "t_id": "Prospek Macy's Kecewakan Investor"
   },
   {
    "ts": "2026-09-10T21:51:36+07:00",
@@ -16874,8 +16967,19 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl5l5m349/henkel-kenalkan-teknologi-perlindungan-aset-untuk-industri-indonesia",
    "img": "https://static.republika.co.id/uploads/images/detailnews/henkel-memperkenalkan-teknologi-perlindungan-dan-perbaikan-aset-untuk-membantu_260910214832-214.jpg",
-   "t_id": "Henkel Kenalkan Teknologi Perlindungan Aset untuk Industri Indonesia",
-   "t_ko": "Henkel, 인도네시아 산업용 자산 보호 기술 선보여"
+   "t_ko": "Henkel, 인도네시아 산업용 자산 보호 기술 선보여",
+   "t_id": "Henkel Kenalkan Teknologi Perlindungan Aset untuk Industri Indonesia"
+  },
+  {
+   "ts": "2026-09-10T21:47:00+07:00",
+   "date": "2026-09-10",
+   "time": "21:47",
+   "src": "Media Indonesia",
+   "t": "Digitalisasi Perluas Akses Perlindungan Finansial bagi Masyarakat Indonesia",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932116/digitalisasi-perluas-akses-perlindungan-finansial-bagi-masyarakat-indonesia",
+   "t_ko": "디지털화로 인도네시아 금융보호 접근성 확대",
+   "t_id": "Digitalisasi Perluas Akses Perlindungan Finansial bagi Masyarakat Indonesia"
   },
   {
    "ts": "2026-09-10T21:46:09+07:00",
@@ -16889,6 +16993,57 @@
    "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/076b/live/05f504c0-ad18-11f1-bc1f-3f186ca4140c.jpg",
    "t_ko": "영국 시장들, 관광세 부과 권한 확보",
    "t_id": "Wali Kota di Inggris Kantongi Kewenangan Pungut Pajak Turis"
+  },
+  {
+   "ts": "2026-09-10T21:45:24+07:00",
+   "date": "2026-09-10",
+   "time": "21:45",
+   "src": "Yahoo Finance",
+   "t": "Why Did Sandisk Stock Slump Today?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/why-did-sandisk-stock-slump-144524276.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/68950acba3742bf77e6a2b5fe4ab51d8.jpg",
+   "t_ko": "SanDisk 주가 하락 배경",
+   "t_id": "Penyebab Saham Sandisk Anjlok Hari Ini"
+  },
+  {
+   "ts": "2026-09-10T21:43:21+07:00",
+   "date": "2026-09-10",
+   "time": "21:43",
+   "src": "Yahoo Finance",
+   "t": "Copper Stocks Tumble as Tariff Doubt Reverses Record Rally: Freeport-McMoRan Sinks 8%, Teck Resources and Southern Copper Drop 7%",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/commodities/articles/copper-stocks-tumble-tariff-doubt-144321514.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/2a70f6a63839baaded808a534c5811ba.jpg",
+   "t_ko": "관세 불확실성에 구리 관련주 급락 — Freeport-McMoRan 8%·Teck Resources 7% 하락",
+   "t_id": "Staham Tembaga Anjlok Akibat Keraguan Tarif Balikkan Reli Rekor: Freeport-McMoRan Anjlok 8%, Teck Resources dan Southern Copper Turun 7%"
+  },
+  {
+   "ts": "2026-09-10T21:41:45+07:00",
+   "date": "2026-09-10",
+   "time": "21:41",
+   "src": "Yahoo Finance",
+   "t": "Tomorrow’s CPI Report Could Send Rate-Hike Odds Even Higher",
+   "tags": [],
+   "url": "https://finance.yahoo.com/economy/policy/articles/tomorrow-cpi-report-could-send-144145444.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/0bbdbea1d8f9697a81be5c106e781bbf.jpg",
+   "t_ko": "내일 CPI 발표에 금리 인상 전망 추가 상승 가능성",
+   "t_id": "Laporan CPI Besok Bisa Kerek Peluang Kenaikan Suku Bunga Lebih Tinggi"
+  },
+  {
+   "ts": "2026-09-10T21:33:22+07:00",
+   "date": "2026-09-10",
+   "time": "21:33",
+   "src": "Bloomberg",
+   "t": "Private Equity’s AI Binge Tests Investors’ Appetite for Risk",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-10/private-equity-s-ai-binge-tests-investors-appetite-for-risk",
+   "g": 1,
+   "t_ko": "사모펀드의 AI 투자 열풍, 투자자 위험 감수 성향 시험",
+   "t_id": "Aksi Jor-Joran AI Private Equity Uji Selera Risiko Investor"
   },
   {
    "ts": "2026-09-10T21:33:00+07:00",
@@ -16952,43 +17107,6 @@
    "t_id": "Wall Street Melemah, Minyak Lanjutkan Kenaikan Jelang Data Inflasi AS"
   },
   {
-   "ts": "2026-09-10T21:26:40+07:00",
-   "date": "2026-09-10",
-   "time": "21:26",
-   "src": "CNBC",
-   "t": "10-year Treasury yield tops 4.9%, highest since 2023, as oil surge raises inflation fears",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/us-treasurys-bonds-yield.html",
-   "g": 1,
-   "t_ko": "유가 급등에 인플레이션 우려 고조로 10년물 국채금리 4.9% 돌파",
-   "t_id": "Imbal Hasil US Treasury 10 Tahun Tembus 4,9%, Tertinggi Sejak 2023, Lonjakan Minyak Picu Inflasi"
-  },
-  {
-   "ts": "2026-09-10T21:25:54+07:00",
-   "date": "2026-09-10",
-   "time": "21:25",
-   "src": "CNBC",
-   "t": "Where investors are finding income outside traditional bonds as rates rise",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/income-alternatives-bond-yields-rates.html",
-   "g": 1,
-   "t_ko": "금리 상승기 전통 채권 외 대체 투자처로 몰리는 자금",
-   "t_id": "Tempat Investor Cari Cuan di Luar Obligasi Tradisional Saat Suku Bunga Naik"
-  },
-  {
-   "ts": "2026-09-10T21:24:00+07:00",
-   "date": "2026-09-10",
-   "time": "21:24",
-   "src": "WSJ",
-   "t": "U.S. Stocks Slide as Bond Yields Jump and Oil Climbs",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/investing/stock-futures-rise-treasury-yields-hold-near-highs-as-oil-tops-101-74944fa2?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-35679620",
-   "t_ko": "미 국채 금리 급등·유가 상승에 뉴욕증시 하락",
-   "t_id": "Saham AS Tergelincir Seiring Lonjakan Imbal Hasil Obligasi dan Kenaikan Harga Minyak"
-  },
-  {
    "ts": "2026-09-10T21:23:54+07:00",
    "date": "2026-09-10",
    "time": "21:23",
@@ -16999,55 +17117,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/ilustrasi-asuransi-perlindungan-jiwa-pinterest-DXfQ2.webp",
    "t_ko": "보험금 청구 분석 및 사기 적발에 AI 활용",
    "t_id": "Pemanfaatan AI dalam Analisis Klaim Asuransi dan Deteksi Fraud"
-  },
-  {
-   "ts": "2026-09-10T21:23:22+07:00",
-   "date": "2026-09-10",
-   "time": "21:23",
-   "src": "Bloomberg",
-   "t": "Dollar Has Best Day in Two Weeks as PPI, Oil Add to Fed Bets",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-10/dollar-has-best-day-in-two-weeks-as-ppi-oil-add-to-fed-bets",
-   "g": 1,
-   "t_ko": "PPI 상승 및 유가 강세 속 연준 금리 인하 기대 반영하며 달러 2주래 최고치 기록",
-   "t_id": "Dolar Catat Hari Terbaik dalam Dua Pekan Sedukung PPI dan Minyak untuk Taruhan Fed"
-  },
-  {
-   "ts": "2026-09-10T21:20:15+07:00",
-   "date": "2026-09-10",
-   "time": "21:20",
-   "src": "CNBC",
-   "t": "Trump warns Tehran over Pickaxe Mountain activity; U.S.-Iran exchange attacks on ships near Hormuz",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/iran-us-war-hormuz-pickaxe-mountain.html",
-   "g": 1,
-   "t_ko": "Trump, Pickaxe Mountain 활동에 Tehran 경고 — 미국·이란 Hormuz 인근 선박 상호 공격",
-   "t_id": "Trump Peringatkan Teheran soal Aktivitas Pickaxe Mountain, AS-Iran Saling Serang Kapal di Dekat Hormuz",
-   "ai_ko": "Trump 대통령, Pickaxe Mountain 핵시설 활동을 겨냥해 강력 타격 가능성 경고, Hormuz 해협 인근 유조선 공격 공방 직후 발언 / CSIS 위성 분석은 2026년 해당 부지 도로·건설 활동이 사상 최대라고 지적",
-   "ai_id": "Presiden Donald Trump memperingatkan Iran agar tidak macam-macam terkait aktivitas di situs nuklir Pickaxe Mountain, menyusul serangan saling balas atas kapal tanker di sekitar Selat Hormuz. Analisis citra satelit CSIS menunjukkan aktivitas jalan di lokasi tersebut pada 2026 tertinggi sepanjang sejarah situs itu disertai lonjakan aktivitas konstruksi.",
-   "ai_tags": [
-    "지정학",
-    "유가",
-    "호르무즈"
-   ],
-   "ai_tags_id": [
-    "geopolitik",
-    "harga minyak",
-    "Selat Hormuz"
-   ]
-  },
-  {
-   "ts": "2026-09-10T21:18:48+07:00",
-   "date": "2026-09-10",
-   "time": "21:18",
-   "src": "Yahoo Finance",
-   "t": "Top Funds Bet Billions As This AI Stock Lights Up A Buy Zone",
-   "tags": [],
-   "url": "https://www.investors.com/research/ibd-stock-analysis/lumentum-stock-lights-up-buy-zone-lite/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/566d82673044a9c50e9303d75e7e2e9e.jpg",
-   "t_ko": "대형 펀드, AI 매수 구간 진입 종목에 수십억 달러 베팅",
-   "t_id": "Dana Top Pasang Taruhan Miliaran Dolar Saat Saham AI Ini Masuk Area Beli"
   },
   {
    "ts": "2026-09-10T21:18:00+07:00",
@@ -17072,18 +17141,6 @@
    "t_id": "Rakyat Dapat Rekening, Negara Dapat Statistik"
   },
   {
-   "ts": "2026-09-10T21:16:26+07:00",
-   "date": "2026-09-10",
-   "time": "21:16",
-   "src": "Bloomberg",
-   "t": "Hormuz Fuel Exports’ Slow Recovery Keeps Prices Near Record",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-10/hormuz-fuel-exports-slow-recovery-keeps-prices-near-record",
-   "g": 1,
-   "t_ko": "호르무즈 연료 수출 회복 지연에 고점 부근 유지되는 유가",
-   "t_id": "Pemulihan Lambat Ekspor Bahan Bakar Hormuz Jaga Harga di Level Tertinggi"
-  },
-  {
    "ts": "2026-09-10T21:10:00+07:00",
    "date": "2026-09-10",
    "time": "21:10",
@@ -17093,18 +17150,6 @@
    "url": "https://mediaindonesia.com/ekonomi/932096/ekonom-inflasi-bisa-terjaga-jika-pemerintah-tak-naikkan-harga-bbm-subsidi",
    "t_ko": "정부 보조금 유가 동결 시 인플레이션 안정 전망",
    "t_id": "Ekonom: Inflasi Bisa Terjaga jika Pemerintah tak Naikkan Harga BBM Subsidi"
-  },
-  {
-   "ts": "2026-09-10T21:06:37+07:00",
-   "date": "2026-09-10",
-   "time": "21:06",
-   "src": "Bloomberg",
-   "t": "European Bond Selloff Deepens as ECB Flags Inflation Risks",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-10/european-bond-selloff-deepens-as-ecb-flags-inflationary-risks",
-   "g": 1,
-   "t_ko": "ECB 인플레이션 위험 경고에 유럽 채권 매도세 심화",
-   "t_id": "Aksi Jual Obligasi Eropa Berlanjut Saat ECB Isyaratkan Risiko Inflasi"
   },
   {
    "ts": "2026-09-10T21:05:00+07:00",
@@ -17118,18 +17163,6 @@
    "t_id": "Energy Insights Forum Soroti Masa Depan Pertambangan Indonesia"
   },
   {
-   "ts": "2026-09-10T21:01:15+07:00",
-   "date": "2026-09-10",
-   "time": "21:01",
-   "src": "CNBC",
-   "t": "Our top 3 stocks that bucked the market’s recent pullback — plus, a look at the bottom 3",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/10/our-top-3-stocks-that-bucked-the-markets-recent-pullback-plus-a-look-at-the-bottom-3.html",
-   "g": 1,
-   "t_ko": "시장 조정기 하락장 딛고 반등한 유망주 3선 및 부진주 3선",
-   "t_id": "3 Saham Pilihan yang Tahan Koreksi Pasar Terbaru Beserta 3 Saham Terburuknya"
-  },
-  {
    "ts": "2026-09-10T21:00:55+07:00",
    "date": "2026-09-10",
    "time": "21:00",
@@ -17140,19 +17173,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/10/pemerintah-dorong-efisiensi-dan-transformasi-industri-nasional-1789047278799.jpeg?w=360&q=90",
    "t_ko": "정부, 국가 산업 효율성 및 전환 추진",
    "t_id": "Pemerintah Dorong Efisiensi dan Transformasi Industri Nasional"
-  },
-  {
-   "ts": "2026-09-10T21:00:27+07:00",
-   "date": "2026-09-10",
-   "time": "21:00",
-   "src": "CNA",
-   "t": "Dollar gains, euro slips after expected ECB rate increase",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/dollar-gains-euro-slips-after-expected-ecb-rate-increase-6374556",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--i3F5whj7--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-10T021157Z_1_LYNXMPEM8904G_RTROPTP_3_GLOBAL-FOREX.JPG?itok=xpbDgtHC",
-   "t_ko": "ECB 금리 인상에 미국 달러 강세·유로 약세",
-   "t_id": "Dolar Menguat, Euro Melemah Usai Kenaikan Suku Bunga ECB Sesuai Ekspektasi"
   },
   {
    "ts": "2026-09-10T20:54:00+07:00",
@@ -17248,30 +17268,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/22/usai-dilantik-sudaryono-langsung-pimpin-rapat-perdana-bersama-jajaran-bgn-1784718690795_169.jpeg?w=360&q=90",
    "t_ko": "Badan Gizi Nasional, MBG 중독 피해 복구 전담 조직 신설 요구",
    "t_id": "Badan Gizi Nasional Diminta Bikin Unit Pemulihan Korban Keracunan MBG"
-  },
-  {
-   "ts": "2026-09-10T19:31:00+07:00",
-   "date": "2026-09-10",
-   "time": "19:31",
-   "src": "Katadata",
-   "t": "Beredar BAP Tan Kian soal Uang Rp 40 M, Kejagung Bantah Hasil Pemeriksaan Tim 9",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa2a3371aee0/beredar-bap-tan-kian-soal-uang-rp-40-m-kejagung-bantah-hasil-pemeriksaan-tim-9",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/12/2026_08_12-22_17_00_7649a4dc-96d5-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "Tan Kian Rp40억 관련 BAP 유포에 검찰청, 9인조 조사 결과 부인",
-   "t_id": "Beredar BAP Tan Kian soal Uang Rp 40 M, Kejagung Bantah Hasil Pemeriksaan Tim 9"
-  },
-  {
-   "ts": "2026-09-10T19:20:00+07:00",
-   "date": "2026-09-10",
-   "time": "19:20",
-   "src": "Katadata",
-   "t": "Menyusuri Medan Berat Sebatik, Kisah AO PNM Dampingi Nasabah Bertumbuh",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/korporasi/6aa2a07397b5e/menyusuri-medan-berat-sebatik-kisah-ao-pnm-dampingi-nasabah-bertumbuh",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/AO_PNM_Dampingi_Pengusaha_Rumput_Laut-2026_09_10-19_16_49_d7dc5516f6a8ae155e0f4e868ce07465_620x413_thumb.jpeg",
-   "t_ko": "Sebatik 험지 누비며 고객 성정 지원하는 PNM 계정 담당자",
-   "t_id": "Menyusuri Medan Berat Sebatik, Kisah AO PNM Dampingi Nasabah Bertumbuh"
   }
  ],
  "kisi_news": [
@@ -17479,9 +17475,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "98.94",
-   "d": 0.21,
-   "ytd": 0.67,
+   "v": "98.92",
+   "d": 0.18,
+   "ytd": 0.65,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17491,9 +17487,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.72",
-   "d": 3.77,
-   "ytd": 73.67,
+   "v": "99.87",
+   "d": 3.92,
+   "ytd": 73.93,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17503,9 +17499,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,401.0",
-   "d": -1.14,
-   "ytd": 1.74,
+   "v": "4,399.1",
+   "d": -1.19,
+   "ytd": 1.7,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17527,9 +17523,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,654",
-   "d": -1.28,
-   "ytd": -0.16,
+   "v": "16,656",
+   "d": -1.27,
+   "ytd": -0.15,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25396,7 +25392,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 271,
+  "pc_age_min": 284,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
