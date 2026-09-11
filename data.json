@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 12:06",
+ "updated": "2026-09-11 12:20",
  "delay_min": 0,
- "fx_basis": "13.09 IDR/KRW · USD/IDR 17,610 · USD/KRW 1,345 · 11:21 Yahoo",
- "idr_per_krw": 13.0893,
+ "fx_basis": "13.09 IDR/KRW · USD/IDR 17,610 · USD/KRW 1,345 · 12:09 Yahoo",
+ "idr_per_krw": 13.0887,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -296,10 +296,12 @@
     17610.0,
     17610.0,
     17610.0,
+    17610.0,
+    17610.0,
     17610.0
    ],
    "inv": true,
-   "asof": "11:21",
+   "asof": "12:09",
    "high": 17610.0,
    "low": 17530.0,
    "src": "yahoo"
@@ -321,7 +323,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 12:05",
+   "asof": "investing.com 12:19",
    "unit": "bp"
   }
  ],
@@ -334,8 +336,8 @@
   "m1": 3.56,
   "value_idr": 21546688746644,
   "volume": 48552221241,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 12:01",
-  "rank_asof": "12:05",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 12:10",
+  "rank_asof": "12:19",
   "rank_date": "2026-09-11",
   "adv": 143,
   "dec": 552,
@@ -15298,10 +15300,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6911.71,
+   "px": 6883.2,
    "prev": 7042.44,
-   "pct": -1.86,
-   "asof": "11:45",
+   "pct": -2.26,
+   "asof": "11:55",
    "live": true,
    "spark": [
     6836.48,
@@ -15361,17 +15363,19 @@
     6878.41,
     6905.78,
     6914.6,
-    6911.71
+    6907.98,
+    6894.93,
+    6883.2
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63838.46,
+   "px": 63727.79,
    "prev": 65128.81,
-   "pct": -1.98,
-   "asof": "11:50",
+   "pct": -2.15,
+   "asof": "12:00",
    "live": true,
    "spark": [
     63748.21,
@@ -15422,17 +15426,19 @@
     63851.83,
     63911.21,
     63852.44,
-    63838.46
+    63826.62,
+    63724.9,
+    63727.79
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24742.51,
+   "px": 24797.38,
    "prev": 24954.47,
-   "pct": -0.85,
-   "asof": "11:05",
+   "pct": -0.63,
+   "asof": "12:00",
    "live": true,
    "spark": [
     24603.11,
@@ -15466,7 +15472,8 @@
     24732.37,
     24742.96,
     24742.51,
-    24742.51
+    24742.51,
+    24797.38
    ]
   }
  ],
@@ -15572,15 +15579,15 @@
    "date": "2026-09-11",
    "time": "11:57",
    "src": "Katadata",
-   "t": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Cuma 7,51%",
+   "t": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%",
    "tags": [
     "EPMT",
     "KLBF"
    ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa38a1ea0dbb/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-cuma-7-51",
+   "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2024/10/31/Kalbe_Farma-2024_10_31-15_43_04_d8d57b7996cc854f003170f0144f5795_620x413_thumb.jpeg",
-   "t_ko": "KLBF, 자회사 상장폐지 검토… EPMT 유동주식 7.51% 불과",
-   "t_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Cuma 7,51%"
+   "t_ko": "KLBF, 자회사 EPMT 상장폐지 검토 — 유통물량 7.51% 불과",
+   "t_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%"
   },
   {
    "ts": "2026-09-11T11:55:17+07:00",
@@ -17022,6 +17029,30 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T12:07:00+07:00",
+   "date": "2026-09-11",
+   "time": "12:07",
+   "src": "Medcom",
+   "t": "Gen Z Effect: Merek Mewah Mulai Jual Citra Pintar, Bukan Sekadar Gaya",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/bisnis/JKR2eR7K-gen-z-effect-merek-mewah-mulai-jual-citra-pintar-bukan-sekadar-gaya",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841448/JohnXw2TiL.jpg?w=720",
+   "t_ko": "명품 브랜드, 단순 과시 대신 스마트 이미지 부각 — Z세대 공략",
+   "t_id": "Gen Z Effect: Merek Mewah Mulai Jual Citra Pintar, Bukan Sekadar Gaya"
+  },
+  {
+   "ts": "2026-09-11T12:05:00+07:00",
+   "date": "2026-09-11",
+   "time": "12:05",
+   "src": "Katadata",
+   "t": "Debit Air Sungai Mahakam Menyusut, Kehidupan Pesut Terancam",
+   "tags": [],
+   "url": "https://katadata.co.id/ekonomi-hijau/energi-baru/6aa38b7ba5030/debit-air-sungai-mahakam-menyusut-kehidupan-pesut-terancam",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/09/08/Pesut_Mahakam-2023_09_08-20_29_30_10e714e8c1d31f101b8ad80293606eb9_620x413_thumb.jpeg",
+   "t_ko": "Mahakam강 수위 저하로 서식지 위협받는 Pesut 돌고래",
+   "t_id": "Debit Air Sungai Mahakam Menyusut, Kehidupan Pesut Terancam"
+  },
+  {
    "ts": "2026-09-11T12:00:00+07:00",
    "date": "2026-09-11",
    "time": "12:00",
@@ -17029,8 +17060,8 @@
    "t": "Perawatan Alat Berat Penting untuk Jaga Operasional Tambang dan Migas",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932250/perawatan-alat-berat-penting-untuk-jaga-operasional-tambang-dan-migas",
-   "t_id": "Perawatan Alat Berat Penting untuk Jaga Operasional Tambang dan Migas",
-   "t_ko": "광산·석유·가스 운영 유지를 위한 중장비 정비의 중요성"
+   "t_ko": "광산·석유·가스 운영 유지를 위한 중장비 정비의 중요성",
+   "t_id": "Perawatan Alat Berat Penting untuk Jaga Operasional Tambang dan Migas"
   },
   {
    "ts": "2026-09-11T11:52:33+07:00",
@@ -17449,30 +17480,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/bri-berkolaborasi-secara-resmi-dengan-fc-barcelona-untuk-menghadirkan-kartu-bri-debit-fc-barcelona-bagi-para-nasabah-dan-pengg-1789095909258_169.png?w=360&q=90",
    "t_ko": "BRI, FC Barcelona 체크카드로 Spotify Camp Nou 방문 기회 제공",
    "t_id": "Wujudkan Impian ke Spotify Camp Nou dengan Kartu BRI Debit FC Barcelona"
-  },
-  {
-   "ts": "2026-09-11T09:48:33+07:00",
-   "date": "2026-09-11",
-   "time": "09:48",
-   "src": "Medcom",
-   "t": "Gaji Manajer Kopdes Bakal Ditanggung Negara 2 Tahun, Ini Skemanya",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/makro/xkEdV85b-gaji-manajer-kopdes-bakal-ditanggung-negara-2-tahun-ini-skemanya",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841440/Ve2UgxvRr8.jpg?w=720",
-   "t_ko": "Kopdes 매니저 급여 2년간 국가 부담 — 지원 방식은",
-   "t_id": "Gaji Manajer Kopdes Bakal Ditanggung Negara 2 Tahun, Ini Skemanya"
-  },
-  {
-   "ts": "2026-09-11T09:48:00+07:00",
-   "date": "2026-09-11",
-   "time": "09:48",
-   "src": "Katadata",
-   "t": "Setara Raffi Ahmad, Warga Penghasilan Minimal Rp3,1 Juta Masuk Desil 10",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa36c07d9fc8/setara-raffi-ahmad-warga-penghasilan-minimal-rp3-1-juta-masuk-desil-10",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/09/2026_09_09-17_44_00_3958d49e-ac47-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "Raffi Ahmad급 소득 최소 Rp310만이면 10분위 진입",
-   "t_id": "Setara Raffi Ahmad, Warga Penghasilan Minimal Rp3,1 Juta Masuk Desil 10"
   }
  ],
  "kisi_news": [
@@ -17645,9 +17652,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.10",
-   "d": 0.3,
-   "ytd": 12.79,
+   "v": "13.08",
+   "d": 0.17,
+   "ytd": 12.64,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17680,9 +17687,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.11",
-   "d": 0.03,
-   "ytd": 0.85,
+   "v": "99.08",
+   "d": 0.05,
+   "ytd": 0.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17692,9 +17699,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.27",
-   "d": -0.49,
-   "ytd": 78.11,
+   "v": "102.17",
+   "d": -0.29,
+   "ytd": 77.93,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17704,9 +17711,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,375.0",
-   "d": 0.17,
-   "ytd": 1.14,
+   "v": "4,371.3",
+   "d": 0.1,
+   "ytd": 1.06,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17728,9 +17735,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,561",
-   "d": -0.39,
-   "ytd": -0.72,
+   "v": "16,606",
+   "d": -0.12,
+   "ytd": -0.45,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -19995,6 +20002,20 @@
    "src": "investing.com",
    "title_ko": "8월 산업생산 (MoM)",
    "title_id": "Produksi Industri AS (MoM) (Agu)"
+  },
+  {
+   "date": "2026-09-18",
+   "time": "20:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "FOMC Member Bowman Speaks",
+   "imp": 2,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "Bowman 연준 이사 연설",
+   "title_id": "Pejabat FOMC Bowman Berpidato"
   },
   {
    "date": "2026-09-18",
@@ -25585,8 +25606,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-11 12:01",
-  "pc_age_min": 5,
+  "idx_from_pc": "2026-09-11 12:10",
+  "pc_age_min": 10,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27450,9 +27471,9 @@
    "ratio": 0.5,
    "ev_ko": "법적 리스크",
    "ev_id": "Risiko hukum",
-   "hl": "KLBF, 자회사 상장폐지 검토… EPMT 유동주식 7.51% 불과",
-   "hl_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Cuma 7,51%",
-   "url": "https://katadata.co.id/finansial/bursa/6aa38a1ea0dbb/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-cuma-7-51",
+   "hl": "KLBF, 자회사 EPMT 상장폐지 검토 — 유통물량 7.51% 불과",
+   "hl_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%",
+   "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
    "score": 58.2,
    "s_news": 98,
    "s_size": 63,
@@ -27526,9 +27547,9 @@
    "ratio": 1.1,
    "ev_ko": "법적 리스크",
    "ev_id": "Risiko hukum",
-   "hl": "KLBF, 자회사 상장폐지 검토… EPMT 유동주식 7.51% 불과",
-   "hl_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Cuma 7,51%",
-   "url": "https://katadata.co.id/finansial/bursa/6aa38a1ea0dbb/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-cuma-7-51",
+   "hl": "KLBF, 자회사 EPMT 상장폐지 검토 — 유통물량 7.51% 불과",
+   "hl_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%",
+   "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
    "score": 51.1,
    "s_news": 90,
    "s_size": 45,
