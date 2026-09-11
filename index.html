@@ -92,7 +92,7 @@ a{color:inherit;text-decoration:none}
 .lang{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-left:14px}
 .laybtns{display:flex;gap:6px;margin-left:14px}.laybtn{border:1px solid var(--line);background:var(--card);color:var(--ink2);font:inherit;font-weight:700;font-size:12px;padding:5px 10px;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:5px}.laybtn .ic{font-size:13px}.laybtn:hover{color:var(--brand);border-color:var(--brand)}
 body.laymode .laybtn#lay-btn{background:var(--brand);color:#fff;border-color:var(--brand)}
-.lay-off{display:none!important}body.laymode .lay-off{display:block!important;opacity:.45}
+.lay-off{display:none!important}body.laymode .lay-off{display:block!important;opacity:.45}body.laymode .fillcard.lay-off{display:flex!important}
 body.laymode #row2 .card,body.laymode #row2 .banner{position:relative;cursor:grab;outline:2px dashed var(--line);outline-offset:3px}
 body.laymode #row2 .card.dragging,body.laymode #row2 .banner.dragging{opacity:.35}
 body.laymode #row2 .col{min-height:80px;border-radius:12px;transition:background .15s}body.laymode #row2 .col.over{background:rgba(30,138,92,.07)}
@@ -114,7 +114,9 @@ body.laymode #row2 .col{min-height:80px;border-radius:12px;transition:background
 .view{display:none}.view.on{display:block}
 .row2{display:grid;grid-template-columns:minmax(300px,1.25fr) minmax(330px,1.25fr) minmax(290px,1fr);gap:16px;margin-top:16px;align-items:stretch}
 .card.ann{flex:1;display:flex;flex-direction:column}.card.ann .list{flex:1}
-#mnews-card{flex:1}.col.r2>.card:last-child{flex:1}
+.card.ann{flex:1}#row2 .col:has(.fillcard:not(.lay-off)) .card.ann{flex:0 0 auto}   /* 공시 카드는 같은 열에 뉴스 채움 카드가 있으면 늘어나지 않는다 */
+/* 채움 카드(뉴스 목록): 열의 남는 높이를 차지하고, 목록은 카드 안에서 들어가는 만큼만 보여준다 (fitLists) — 어느 열로 옮겨도 박스에 딱 맞게 */
+.fillcard{display:flex;flex-direction:column;flex:1 1 auto;min-height:0}.fillcard>h2{flex:0 0 auto}.fillbox{flex:1 1 auto;position:relative;min-height:236px}#row2 .col.empty{display:none}body.laymode #row2 .col.empty{display:flex}.fillbox>.fill{position:absolute;left:0;right:0;top:0;bottom:0;overflow:hidden}.fillbox>.fill>.empty{position:static}
 .spacer{flex:1;min-height:0}
 .wl-add{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--brand);background:var(--card);color:var(--brand);font-size:18px;line-height:1;font-weight:800;cursor:pointer;margin-left:8px;vertical-align:middle;padding:0}.wl-add:hover,.wl-add.on{background:var(--brand);color:#fff}
 .wl-box{position:relative;margin-top:10px}.wl-box input{width:100%;box-sizing:border-box;border:1.5px solid var(--brand);border-radius:10px;padding:8px 12px;font:inherit;font-size:14px;outline:none;background:var(--card);color:var(--ink)}
@@ -325,9 +327,9 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
     </div>
   </div>
   <div class="col r1" data-col="2">
-    <div class="card compact" id="mnews-card">
+    <div class="card compact fillcard" id="mnews-card">
       <h2><span data-t="mnews">시장 뉴스</span> <span class="more" onclick="setMode('market');showView('news')" style="cursor:pointer" data-t="more">전체 보기 ›</span></h2>
-      <div id="mnews"></div>
+      <div class="fillbox"><div id="mnews" class="fill"></div></div>
     </div>
   </div>
   <div class="col r2" data-col="3">
@@ -360,14 +362,14 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
   </div>
 
   <div class="col r2" data-col="5">
-    <div class="card compact" id="knews-card">
+    <div class="card compact fillcard" id="knews-card">
       <h2><span data-t="knews">KISI 뉴스</span> <span class="more" onclick="setMode('kisi');showView('news')" style="cursor:pointer" data-t="more">전체 보기 ›</span></h2>
-      <div id="knews"></div>
+      <div class="fillbox"><div id="knews" class="fill"></div></div>
     </div>
     <div class="banner" id="banner" hidden><a id="banner-a" href="https://kisi.co.id" target="_blank" rel="noopener"><img id="banner-img" alt=""></a><div class="dots" id="banner-dots"></div></div>
-    <div class="card compact" id="snews-card">
+    <div class="card compact fillcard" id="snews-card">
       <h2><span data-t="newsCard">종목 뉴스</span> <span class="more" onclick="setMode('stock');showView('news')" style="cursor:pointer" data-t="more">전체 보기 ›</span></h2>
-      <div id="news-preview"></div>
+      <div class="fillbox"><div id="news-preview" class="fill"></div></div>
     </div>
   </div>
 </div>
@@ -582,10 +584,9 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   if(changed('fbot',[d.foreign_bottom,LANG]))$('fbot').innerHTML=(d.foreign_bottom||[]).slice(0,5).map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
   renderRank();
   // 시장 뉴스 (티커 없는 거시·정책 기사, 썸네일)
-  const mn=mnPick(d.market_news||[],10,3);   // 홈 카드 10건 — 글로벌 기사 최소 3건 포함
-  if(changed('mnews',[mn,LANG]))$('mnews').innerHTML=mn.slice(0,10).map(mnItem).join('')||`<div class="empty">${T('noNews')}</div>`;
-  mnFit();
-  const kn=d.kisi_news||[];if(changed('knews',[kn,LANG]))$('knews').innerHTML=kn.slice(0,5).map(mnItem).join('')||`<div class="empty">${T('noNews')}</div>`;
+  const mn=mnPick(d.market_news||[],16,4);   // 홈 카드 최대 16건(글로벌 최소 4) — 실제 표시 수는 카드 높이에 맞춰 fitLists 가 정함
+  if(changed('mnews',[mn,LANG]))$('mnews').innerHTML=mn.map(mnItem).join('')||`<div class="empty">${T('noNews')}</div>`;
+  const kn=d.kisi_news||[];if(changed('knews',[kn,LANG]))$('knews').innerHTML=kn.slice(0,10).map(mnItem).join('')||`<div class="empty">${T('noNews')}</div>`;
   $('mnews-card').hidden=!mn.length;
   // 업종별 등락 히트맵
   const secs=(d.sectors||[]).filter(x=>x.n>=3);
@@ -613,7 +614,8 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
     :(up.length?`<div class="ev-day">${T('upcoming')}</div>`+up.map(e=>ev(Object.assign({},e,{time:(e.date.slice(5).replace('-','/'))+' '+(e.time&&e.time!=='—'?e.time:'')}))).join('')
               :`<div class="empty">${T('noEv')}</div>`));
   renderAnn();renderWL();setTimeout(annFit,50);
-  renderNews();$('news-preview').innerHTML=(d.news||[]).slice(0,11).map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`;
+  renderNews();if(changed('npv',[(d.news||[]).slice(0,16),LANG]))$('news-preview').innerHTML=(d.news||[]).slice(0,16).map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`;
+  requestAnimationFrame(fitLists);
   {const td=today();if(!calDate||calDate===calTodayISO)calDate=td;calTodayISO=td;}renderCal();
   $('foot').innerHTML=T('foot');applyStatic();}
 
@@ -632,7 +634,18 @@ function hotRender(){const l=hotList();if(!l.length){$('hot').textContent='—';
 let hotCloseT=null;
 function hotOpen(on){clearTimeout(hotCloseT);if(on)$('hotbox').classList.add('on');else hotCloseT=setTimeout(()=>$('hotbox').classList.remove('on'),450);}   // 마우스가 잠깐 벗어나도 바로 닫히지 않게
 let annQ='',annMore=false,annLim=9;
-function mnFit(){const rc=$('rank-card'),mc=$('mnews-card'),list=$('mnews');if(!rc||!mc)return;let items=[...list.children];while(items.length>4&&mc.getBoundingClientRect().height>rc.getBoundingClientRect().height+2){items.pop().remove();items=[...list.children];}}
+function fitLists(){
+  // 빈 열(보이는 카드 없음)은 보기 모드에서 숨겨 다른 열이 채우게 한다 (편집 모드에서는 드롭 대상으로 보여야 하므로 표시)
+  document.querySelectorAll('#row2 .col').forEach(c=>c.classList.toggle('empty',![...c.children].some(el=>LAY_CARDS.includes(el.id)&&!el.hidden&&!el.classList.contains('lay-off'))));
+  const boxes=[...document.querySelectorAll('.fillbox')];
+  boxes.forEach(b=>{b.style.flex='';b.style.height='';});
+  for(let pass=0;pass<2;pass++){
+    boxes.forEach(box=>{const list=box.querySelector('.fill');if(!list)return;const H=box.clientHeight;if(!H)return;const items=[...list.children];items.forEach(el=>el.style.display='');let cut=false,last=null;
+      for(const el of items){if(cut){el.style.display='none';continue;}if(el.offsetTop+el.offsetHeight>H+1){el.style.display='none';cut=true;}else last=el;}
+      // 항목이 모두 들어가고도 남으면(예: KISI 뉴스 10건뿐) 카드를 내용 높이로 줄여 같은 열의 다른 카드가 남는 공간을 쓰게 한다
+      if(!cut&&last&&pass===0){const need=last.offsetTop+last.offsetHeight;if(H-need>24){box.style.flex='0 0 auto';box.style.height=need+'px';}}});}}
+window.addEventListener('resize',()=>{clearTimeout(window._fitT);window._fitT=setTimeout(fitLists,150);});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>fitLists());
 function annFit(){const card=document.querySelector('.card.ann'),list=$('ann');if(!card||!list||!DATA||annMore||annQ)return;const rows=list.querySelectorAll('.row');if(!rows.length)return;
   const spare=card.getBoundingClientRect().bottom-list.getBoundingClientRect().bottom-16,rh=rows[0].getBoundingClientRect().height||44;
   let n=annLim+Math.floor(spare/rh);n=Math.max(9,Math.min(n,(DATA.announcements||[]).length,20));if(n!==annLim){annLim=n;renderAnn();}}
@@ -739,7 +752,7 @@ function laySave(){try{localStorage.setItem('idxlive_layout',JSON.stringify(LAY)
 function layApply(){if(!LAY)layLoad();const cols=[...document.querySelectorAll('#row2 .col')];
   LAY.cols.forEach((ids,i)=>ids.forEach(id=>{const el=$(id);if(el&&cols[i])cols[i].appendChild(el);}));
   LAY_CARDS.forEach(id=>{const el=$(id);if(el)el.classList.toggle('lay-off',LAY.hidden.includes(id));});
-  layRankPills();}
+  layRankPills();requestAnimationFrame(fitLists);}
 function layRankPills(){if(!LAY)layLoad();if(!LAY.ranks.includes(rankKey))rankKey=LAY.ranks[0];
   $('rank-pills').innerHTML=LAY.ranks.map(k=>{const r=RANK_ALL.find(x=>x[0]===k);return`<button class="pill ${k===rankKey?'on':''}" data-k="${k}" data-t="${r[1]}">${T(r[1])}</button>`;}).join('')
     +`<div class="laypick" id="laypick"><span class="lp-t" data-t="layPick">${T('layPick')}</span>${RANK_ALL.map(([k,t])=>`<label><input type="checkbox" ${LAY.ranks.includes(k)?'checked':''} onchange="layRankToggle('${k}',this)"><span data-t="${t}">${T(t)}</span></label>`).join('')}</div>`;}
@@ -753,10 +766,10 @@ function layToggle(){layEdit=!layEdit;document.body.classList.toggle('laymode',l
     document.querySelectorAll('#row2 .col').forEach(c=>{c.addEventListener('dragover',layOver);c.addEventListener('dragleave',layLeave);c.addEventListener('drop',layDrop);});}
   else{LAY_CARDS.forEach(id=>{const el=$(id);if(!el)return;el.draggable=false;el.querySelectorAll(':scope>.laybar').forEach(b=>b.remove());el.removeEventListener('dragstart',layDS);el.removeEventListener('dragend',layDE);});
     document.querySelectorAll('#row2 .col').forEach(c=>{c.classList.remove('over');c.removeEventListener('dragover',layOver);c.removeEventListener('dragleave',layLeave);c.removeEventListener('drop',layDrop);});
-    layStore();laySave();if(DATA)render(DATA);}}
+    layStore();laySave();if(DATA)render(DATA);requestAnimationFrame(fitLists);}}
 function layStore(){LAY.cols=[...document.querySelectorAll('#row2 .col')].map(c=>[...c.children].filter(el=>LAY_CARDS.includes(el.id)).map(el=>el.id));}
 function layHide(id){const el=$(id);if(!el)return;const on=!LAY.hidden.includes(id);LAY.hidden=on?LAY.hidden.concat(id):LAY.hidden.filter(x=>x!==id);el.classList.toggle('lay-off',on);
-  const b=el.querySelector(':scope>.laybar button');if(b)b.textContent=on?T('layShow'):T('layHide');laySave();}
+  const b=el.querySelector(':scope>.laybar button');if(b)b.textContent=on?T('layShow'):T('layHide');laySave();requestAnimationFrame(fitLists);}
 function layDS(e){layDrag=e.currentTarget;layDrag.classList.add('dragging');try{e.dataTransfer.setData('text/plain',layDrag.id);e.dataTransfer.effectAllowed='move';}catch(x){}}
 function layDE(e){if(layDrag)layDrag.classList.remove('dragging');layDrag=null;document.querySelectorAll('#row2 .col').forEach(c=>c.classList.remove('over'));}
 function layOver(e){if(!layDrag)return;e.preventDefault();const col=e.currentTarget;col.classList.add('over');
@@ -764,7 +777,7 @@ function layOver(e){if(!layDrag)return;e.preventDefault();const col=e.currentTar
   for(const c of cards){const r=c.getBoundingClientRect();if(e.clientY<r.top+r.height/2){before=c;break;}}
   if(before){if(before!==layDrag.nextSibling)col.insertBefore(layDrag,before);}else if(col.lastElementChild!==layDrag)col.appendChild(layDrag);}
 function layLeave(e){if(e.currentTarget.contains(e.relatedTarget))return;e.currentTarget.classList.remove('over');}
-function layDrop(e){e.preventDefault();e.currentTarget.classList.remove('over');layStore();laySave();}
+function layDrop(e){e.preventDefault();e.currentTarget.classList.remove('over');layStore();laySave();requestAnimationFrame(fitLists);}
 function layReset(){if(layEdit)layToggle();LAY={cols:LAY_DEF.cols.map(c=>c.slice()),hidden:[],ranks:LAY_DEF.ranks.slice()};try{localStorage.removeItem('idxlive_layout');}catch(e){}
   layApply();if(DATA)render(DATA);}
 layLoad();layApply();
