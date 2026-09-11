@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 12:20",
+ "updated": "2026-09-11 12:24",
  "delay_min": 0,
- "fx_basis": "13.09 IDR/KRW · USD/IDR 17,610 · USD/KRW 1,345 · 12:09 Yahoo",
- "idr_per_krw": 13.0887,
+ "fx_basis": "13.09 IDR/KRW · USD/IDR 17,610 · USD/KRW 1,346 · 12:09 Yahoo",
+ "idr_per_krw": 13.0873,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -323,7 +323,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 12:19",
+   "asof": "investing.com 12:23",
    "unit": "bp"
   }
  ],
@@ -336,8 +336,8 @@
   "m1": 3.56,
   "value_idr": 21546688746644,
   "volume": 48552221241,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 12:10",
-  "rank_asof": "12:19",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 12:18",
+  "rank_asof": "12:23",
   "rank_date": "2026-09-11",
   "adv": 143,
   "dec": 552,
@@ -15300,10 +15300,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6883.2,
+   "px": 6866.65,
    "prev": 7042.44,
-   "pct": -2.26,
-   "asof": "11:55",
+   "pct": -2.5,
+   "asof": "12:00",
    "live": true,
    "spark": [
     6836.48,
@@ -15365,17 +15365,18 @@
     6914.6,
     6907.98,
     6894.93,
-    6883.2
+    6883.66,
+    6866.65
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63727.79,
+   "px": 63801.39,
    "prev": 65128.81,
-   "pct": -2.15,
-   "asof": "12:00",
+   "pct": -2.04,
+   "asof": "12:05",
    "live": true,
    "spark": [
     63748.21,
@@ -15428,17 +15429,18 @@
     63852.44,
     63826.62,
     63724.9,
-    63727.79
+    63738.41,
+    63801.39
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24797.38,
+   "px": 24792.17,
    "prev": 24954.47,
-   "pct": -0.63,
-   "asof": "12:00",
+   "pct": -0.65,
+   "asof": "12:05",
    "live": true,
    "spark": [
     24603.11,
@@ -15473,7 +15475,8 @@
     24742.96,
     24742.51,
     24742.51,
-    24797.38
+    24796.34,
+    24792.17
    ]
   }
  ],
@@ -15561,6 +15564,22 @@
  },
  "news": [
   {
+   "ts": "2026-09-11T12:17:00+07:00",
+   "date": "2026-09-11",
+   "time": "12:17",
+   "src": "Katadata",
+   "t": "IHSG Sesi I Merosot Tinggalkan Level 6.500, Saham CUAN, CPIN hingga BRPT Loyo",
+   "tags": [
+    "BRPT",
+    "CPIN",
+    "CUAN"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6aa38edb1297f/ihsg-sesi-i-merosot-tinggalkan-level-6500-saham-cuan-cpin-hingga-brpt-loyo",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/08/IHSG_kembali_ditutup_melemah_ke_level_5342_Foto_KatadataFauza_Sy-2026_06_08-17_44_21_323ed1c93b0bb1a000720b4fd085a28e_620x413_thumb.jpg",
+   "t_id": "IHSG Sesi I Merosot Tinggalkan Level 6.500, Saham CUAN, CPIN hingga BRPT Loyo",
+   "t_ko": "IHSG 1부 6,500선 이탈하며 약세 — CUAN·CPIN·BRPT 부진"
+  },
+  {
    "ts": "2026-09-11T12:00:00+07:00",
    "date": "2026-09-11",
    "time": "12:00",
@@ -15586,7 +15605,7 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2024/10/31/Kalbe_Farma-2024_10_31-15_43_04_d8d57b7996cc854f003170f0144f5795_620x413_thumb.jpeg",
-   "t_ko": "KLBF, 자회사 EPMT 상장폐지 검토 — 유통물량 7.51% 불과",
+   "t_ko": "KLBF, 자회사 상장폐지 검토 — EPMT 유동주식비율 7.51% 불과",
    "t_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%"
   },
   {
@@ -17029,6 +17048,18 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T12:18:35+07:00",
+   "date": "2026-09-11",
+   "time": "12:18",
+   "src": "Bloomberg",
+   "t": "How LV Lost Millions by Winning a Trademark Dispute in China",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-11/how-lv-lost-millions-winning-a-china-trademark-dispute-video",
+   "g": 1,
+   "t_ko": "LV, 중국 상표권 소송 승소에도 수백만 달러 손실 본 이유",
+   "t_id": "Cara LV Rugi Jutaan Dolar Lewat Kemenangan Sengketa Merek di China"
+  },
+  {
    "ts": "2026-09-11T12:07:00+07:00",
    "date": "2026-09-11",
    "time": "12:07",
@@ -17037,8 +17068,8 @@
    "tags": [],
    "url": "https://www.medcom.id/ekonomi/bisnis/JKR2eR7K-gen-z-effect-merek-mewah-mulai-jual-citra-pintar-bukan-sekadar-gaya",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841448/JohnXw2TiL.jpg?w=720",
-   "t_ko": "명품 브랜드, 단순 과시 대신 스마트 이미지 부각 — Z세대 공략",
-   "t_id": "Gen Z Effect: Merek Mewah Mulai Jual Citra Pintar, Bukan Sekadar Gaya"
+   "t_ko": "Gen Z 효과: 명품 브랜드, 과시 대신 지적 이미지 판매",
+   "t_id": "Efek Gen Z: Merek Mewah Mulai Jual Citra Pintar, Bukan Sekadar Gaya"
   },
   {
    "ts": "2026-09-11T12:05:00+07:00",
@@ -17049,7 +17080,7 @@
    "tags": [],
    "url": "https://katadata.co.id/ekonomi-hijau/energi-baru/6aa38b7ba5030/debit-air-sungai-mahakam-menyusut-kehidupan-pesut-terancam",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/09/08/Pesut_Mahakam-2023_09_08-20_29_30_10e714e8c1d31f101b8ad80293606eb9_620x413_thumb.jpeg",
-   "t_ko": "Mahakam강 수위 저하로 서식지 위협받는 Pesut 돌고래",
+   "t_ko": "Mahakam 강 수위 하락으로 돌고래 생존 위협",
    "t_id": "Debit Air Sungai Mahakam Menyusut, Kehidupan Pesut Terancam"
   },
   {
@@ -17435,18 +17466,6 @@
    "t_id": "3 Sungai Kalimantan Surut, APBI Sebut Ada Perusahaan Stop Operasi"
   },
   {
-   "ts": "2026-09-11T10:44:43+07:00",
-   "date": "2026-09-11",
-   "time": "10:44",
-   "src": "CNBC",
-   "t": "China-Philippines tensions simmer after Beijing rebukes Manila over Seoul clash",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/china-philippine-south-china-sea-disputes-tensions-.html",
-   "g": 1,
-   "t_ko": "중국, 서울 충돌 두고 필리핀 질타 — 양국 긴장 고조",
-   "t_id": "Ketegangan China-Filipina Memanas usai Beijing Kecam Manila Soal Bentrok di Seoul"
-  },
-  {
    "ts": "2026-09-11T10:29:51+07:00",
    "date": "2026-09-11",
    "time": "10:29",
@@ -17653,8 +17672,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.08",
-   "d": 0.17,
-   "ytd": 12.64,
+   "d": 0.18,
+   "ytd": 12.65,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17688,7 +17707,7 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "99.08",
-   "d": 0.05,
+   "d": 0.01,
    "ytd": 0.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -17699,9 +17718,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.17",
-   "d": -0.29,
-   "ytd": 77.93,
+   "v": "101.82",
+   "d": -0.92,
+   "ytd": 77.32,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17711,9 +17730,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,371.3",
-   "d": 0.1,
-   "ytd": 1.06,
+   "v": "4,375.3",
+   "d": 0.18,
+   "ytd": 1.15,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17735,9 +17754,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,606",
-   "d": -0.12,
-   "ytd": -0.45,
+   "v": "16,576",
+   "d": -0.3,
+   "ytd": -0.63,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20014,8 +20033,8 @@
    "prev": null,
    "act": null,
    "src": "investing.com",
-   "title_ko": "Bowman 연준 이사 연설",
-   "title_id": "Pejabat FOMC Bowman Berpidato"
+   "title_ko": "FOMC Bowman 위원 연설",
+   "title_id": "Pejabat FOMC Bowman Berbicara"
   },
   {
    "date": "2026-09-18",
@@ -25606,8 +25625,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-11 12:10",
-  "pc_age_min": 10,
+  "idx_from_pc": "2026-09-11 12:18",
+  "pc_age_min": 6,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27471,7 +27490,7 @@
    "ratio": 0.5,
    "ev_ko": "법적 리스크",
    "ev_id": "Risiko hukum",
-   "hl": "KLBF, 자회사 EPMT 상장폐지 검토 — 유통물량 7.51% 불과",
+   "hl": "KLBF, 자회사 상장폐지 검토 — EPMT 유동주식비율 7.51% 불과",
    "hl_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%",
    "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
    "score": 58.2,
@@ -27547,7 +27566,7 @@
    "ratio": 1.1,
    "ev_ko": "법적 리스크",
    "ev_id": "Risiko hukum",
-   "hl": "KLBF, 자회사 EPMT 상장폐지 검토 — 유통물량 7.51% 불과",
+   "hl": "KLBF, 자회사 상장폐지 검토 — EPMT 유동주식비율 7.51% 불과",
    "hl_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%",
    "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
    "score": 51.1,
