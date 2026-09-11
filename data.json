@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 21:55",
+ "updated": "2026-09-11 22:07",
  "delay_min": 0,
  "fx_basis": "13.14 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,340 · 21:47 Yahoo",
- "idr_per_krw": 13.1437,
+ "idr_per_krw": 13.1384,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -311,20 +311,20 @@
    "code": "SUN10Y",
    "label": "SUN 10Y",
    "name": "국채 10년물",
-   "px": 7.126,
+   "px": 7.156,
    "prev": 7.096,
-   "pct": 3.0,
+   "pct": 6.0,
    "spark": [
     7.102,
     7.088,
     7.088,
     7.095,
     7.096,
-    7.126
+    7.156
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 17:31",
+   "asof": "investing.com 22:06",
    "unit": "bp"
   }
  ],
@@ -15031,10 +15031,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7655.64,
+   "px": 7663.64,
    "prev": 7591.7,
-   "pct": 0.84,
-   "asof": "21:50",
+   "pct": 0.95,
+   "asof": "22:05",
    "live": true,
    "spark": [
     7672.47,
@@ -15053,17 +15053,20 @@
     7656.74,
     7653.93,
     7660.7,
-    7655.64
+    7654.78,
+    7654.13,
+    7659.6,
+    7663.64
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26341.37,
+   "px": 26378.07,
    "prev": 26081.72,
-   "pct": 1.0,
-   "asof": "21:50",
+   "pct": 1.14,
+   "asof": "22:05",
    "live": true,
    "spark": [
     26364.04,
@@ -15082,17 +15085,20 @@
     26336.1,
     26331.85,
     26351.46,
-    26341.37
+    26337.97,
+    26336.08,
+    26355.45,
+    26378.07
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52466.1,
+   "px": 52551.21,
    "prev": 52064.1,
-   "pct": 0.77,
-   "asof": "21:50",
+   "pct": 0.94,
+   "asof": "22:05",
    "live": true,
    "spark": [
     52691.44,
@@ -15111,7 +15117,10 @@
     52457.63,
     52432.85,
     52506.84,
-    52466.1
+    52462.84,
+    52458.03,
+    52509.28,
+    52551.21
    ]
   },
   {
@@ -16457,8 +16466,21 @@
    "tags": [],
    "url": "https://www.medcom.id/ekonomi/keuangan/Dkq1Oq6k-rekening-massal-untuk-200-juta-wni-disiapkan-ada-saldo-rp50-ribu",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841628/1dHyEurF5n.jpeg?w=720",
-   "t_id": "Rekening Massal untuk 200 Juta WNI Disiapkan, Ada Saldo Rp50 Ribu",
-   "t_ko": "인도네시아 국민 2억명 대상 가상계좌 개설 및 Rp50,000 잔액 지급 추진"
+   "t_ko": "인도네시아 국민 2억명 대상 가상계좌 개설 및 Rp50,000 잔액 지급 추진",
+   "t_id": "Rekening Massal untuk 200 Juta WNI Disiapkan, Ada Saldo Rp50 Ribu"
+  },
+  {
+   "ts": "2026-09-11T21:44:33+07:00",
+   "date": "2026-09-11",
+   "time": "21:44",
+   "src": "FT",
+   "t": "Warsh under mounting pressure to raise rates as US inflation persists",
+   "tags": [],
+   "url": "https://www.ft.com/content/24646e74-9506-4718-b1be-789208db86d9?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F5139a2e7-ed05-44af-af18-d885f8b0416d.png?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "미국 물가 지속에 Warsh 금리 인상 압박 고조",
+   "t_id": "Warsh di Bawah Tekanan Kenaikan Suku Bunga Seiring Inflasi AS Berlanjut"
   },
   {
    "ts": "2026-09-11T21:43:33+07:00",
@@ -16474,6 +16496,18 @@
    "t_id": "Alstom Akan Bangun Armada Kereta Baterai-Listrik Baru"
   },
   {
+   "ts": "2026-09-11T21:41:29+07:00",
+   "date": "2026-09-11",
+   "time": "21:41",
+   "src": "CNBC",
+   "t": "Here’s the inflation breakdown for August 2026 — in one chart",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/cpi-inflation-breakdown-august-2026.html",
+   "g": 1,
+   "t_ko": "2026년 8월 물가 지표 세부 내용 — 한눈에 보기",
+   "t_id": "Rincian Inflasi AS Agustus 2026 dalam Satu Grafik"
+  },
+  {
    "ts": "2026-09-11T21:39:18+07:00",
    "date": "2026-09-11",
    "time": "21:39",
@@ -16482,8 +16516,8 @@
    "tags": [],
    "url": "https://finance.detik.com/energi/d-8659148/cahaya-matahari-angin-jadi-sumber-energi-di-lahan-pertanian",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/10/12/pengembangan-tenaga-surya-untuk-irigasi-pertanian-1760250659551_169.jpeg?w=360&q=90",
-   "t_id": "Cahaya Matahari & Angin Jadi Sumber Energi di Lahan Pertanian",
-   "t_ko": "농경지 태양광·풍력 발전 에너지원 활용"
+   "t_ko": "농경지 태양광·풍력 발전 에너지원 활용",
+   "t_id": "Cahaya Matahari & Angin Jadi Sumber Energi di Lahan Pertanian"
   },
   {
    "ts": "2026-09-11T21:36:41+07:00",
@@ -16531,18 +16565,6 @@
    "g": 1,
    "t_ko": "Kroger 매출 전망 하향 및 Oracle 주가 상승",
    "t_id": "Kroger Pangkas Proyeksi Penjualan, Saham Oracle Naik"
-  },
-  {
-   "ts": "2026-09-11T21:33:19+07:00",
-   "date": "2026-09-11",
-   "time": "21:33",
-   "src": "WSJ",
-   "t": "Chevron CEO Warns Oil Market Is Quickly Losing Buffers That Kept Prices in Check",
-   "tags": [],
-   "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-09-11-2026/card/chevron-ceo-warns-oil-market-is-quickly-losing-buffers-that-kept-prices-in-check-Xi4INBAkBatM4j3OmDRG?mod=rss_markets_main",
-   "g": 1,
-   "t_ko": "Chevron CEO, 원유시장 가격 안정 완충력 급감 경고",
-   "t_id": "CEO Chevron Peringatkan Pasar Minyak Cepat Kehilangan Penyangga Harga"
   },
   {
    "ts": "2026-09-11T21:33:08+07:00",
@@ -16619,6 +16641,19 @@
    ]
   },
   {
+   "ts": "2026-09-11T21:27:58+07:00",
+   "date": "2026-09-11",
+   "time": "21:27",
+   "src": "Yahoo Finance",
+   "t": "US consumer inflation picks up in August",
+   "tags": [],
+   "url": "https://finance.yahoo.com/economy/policy/articles/us-consumer-inflation-picks-august-123741290.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/reuters.com/0dff0c20c1f50f090b282018f3aed3fe.jpg",
+   "t_ko": "미국 8월 소비자물가 상승세 전환",
+   "t_id": "Inflasi Konsumen AS Melaju pada Agustus"
+  },
+  {
    "ts": "2026-09-11T21:24:56+07:00",
    "date": "2026-09-11",
    "time": "21:24",
@@ -16681,32 +16716,6 @@
    "img": "https://media.zenfs.com/en/ibd.com/e5af0dc1beafaacaf03b081be9fc70a7.jpg",
    "t_ko": "자금 유입되는 금광주, 매수 타점 근접 거래",
    "t_id": "Kilau Emiten Emas Tarik Dana; Saham Di Area Buy"
-  },
-  {
-   "ts": "2026-09-11T21:22:00+07:00",
-   "date": "2026-09-11",
-   "time": "21:22",
-   "src": "MarketWatch",
-   "t": "All the ways $6 diesel and rising gas prices are about to make your life more expensive — from commuting to grocery shopping",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/all-the-ways-record-high-diesel-and-rising-gas-prices-are-about-to-make-your-life-more-expensive-from-commuting-to-grocery-shopping-2083fec3?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-82750709",
-   "t_ko": "디젤·가스 가격 상승이 통근부터 장보기까지 가계 부담 가중",
-   "t_id": "Dampak Solar $6 dan Kenaikan Harga BBM Bikin Biaya Hidup Makin Mahal"
-  },
-  {
-   "ts": "2026-09-11T21:21:00+07:00",
-   "date": "2026-09-11",
-   "time": "21:21",
-   "src": "WSJ",
-   "t": "BMO, Sun Life Pledge C$75 Billion Private Capital for Canadian Infrastructure Push",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/investing/bmo-sun-life-pledge-c-75-billion-private-capital-for-canadian-infrastructure-push-d35f5f58?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-74614478",
-   "t_ko": "BMO·Sun Life, 캐나다 인프라 확충에 C$750억 민간자본 약정",
-   "t_id": "BMO, Sun Life Kucurkan Modal Swasta C$75 Miliar untuk Infrastruktur Kanada"
   },
   {
    "ts": "2026-09-11T21:18:00+07:00",
@@ -17065,9 +17074,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.14",
-   "d": 0.62,
-   "ytd": 13.14,
+   "v": "13.13",
+   "d": 0.56,
+   "ytd": 13.08,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17077,9 +17086,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.938%",
-   "d": -0.12,
-   "ytd": 18.62,
+   "v": "4.926%",
+   "d": -0.36,
+   "ytd": 18.33,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17100,9 +17109,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.04",
-   "d": -0.1,
-   "ytd": 0.78,
+   "v": "99.00",
+   "d": -0.15,
+   "ytd": 0.74,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17112,9 +17121,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.63",
-   "d": -3.48,
-   "ytd": 73.51,
+   "v": "99.21",
+   "d": -3.88,
+   "ytd": 72.78,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17124,9 +17133,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,411.2",
-   "d": 1.52,
-   "ytd": 1.98,
+   "v": "4,416.8",
+   "d": 1.65,
+   "ytd": 2.11,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17172,20 +17181,6 @@
   }
  ],
  "calendar": [
-  {
-   "date": "2026-08-31",
-   "time": "20:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Chicago PMI  (Aug)",
-   "imp": 3,
-   "exp": "57.8",
-   "prev": "57.6",
-   "act": "47.1",
-   "src": "investing.com",
-   "title_ko": "8월 시카고 PMI",
-   "title_id": "PMI Chicago (Agustus)"
-  },
   {
    "date": "2026-09-01",
    "time": "07:30",
@@ -17742,7 +17737,7 @@
    "imp": 2,
    "exp": null,
    "prev": "3.6%",
-   "act": null,
+   "act": "3.6%",
    "src": "investing.com",
    "title_ko": "8월 뉴욕 연은 1년 기대인플레이션",
    "title_id": "Ekspektasi Inflasi Konsumen 1 Tahun The Fed NY (Agu)"
@@ -17756,7 +17751,7 @@
    "imp": 2,
    "exp": null,
    "prev": "4.291%",
-   "act": null,
+   "act": "4.474%",
    "src": "investing.com",
    "title_ko": "3년물 국채 입찰",
    "title_id": "Lelang Obligasi AS 3 Tahun"
@@ -17768,9 +17763,9 @@
    "country": "US",
    "title": "Consumer Credit  (Jul)",
    "imp": 2,
-   "exp": null,
-   "prev": "14.17B",
-   "act": null,
+   "exp": "11.90B",
+   "prev": "14.56B",
+   "act": "18.06B",
    "src": "investing.com",
    "title_ko": "7월 소비자신용",
    "title_id": "Kredit Konsumen AS (Jul)"
@@ -17791,14 +17786,14 @@
   },
   {
    "date": "2026-09-09",
-   "time": "19:15",
+   "time": "19:14",
    "kind": "macro",
    "country": "US",
    "title": "ADP Employment Change Weekly",
    "imp": 2,
    "exp": null,
    "prev": "11.80K",
-   "act": null,
+   "act": "10.00K",
    "src": "investing.com",
    "title_ko": "ADP 주간 고용 변화",
    "title_id": "Perubahan Tenaga Kerja Mingguan ADP AS"
@@ -17991,7 +17986,7 @@
    "imp": 3,
    "exp": null,
    "prev": "4.683%",
-   "act": null,
+   "act": "4.834%",
    "src": "investing.com",
    "title_ko": "10년물 국채 입찰",
    "title_id": "Lelang Obligasi AS 10 Tahun"
@@ -18003,9 +17998,9 @@
    "country": "US",
    "title": "API Weekly Crude Oil Stock",
    "imp": 2,
-   "exp": null,
+   "exp": "-1.300M",
    "prev": "-2.600M",
-   "act": null,
+   "act": "-0.300M",
    "src": "investing.com",
    "title_ko": "API 주간 원유 재고",
    "title_id": "Stok Minyak Mentah Mingguan API"
@@ -18023,6 +18018,20 @@
    "src": "investing.com",
    "title_ko": "8월 오토바이 판매 (YoY)",
    "title_id": "Penjualan Sepeda Motor (YoY) (Agu)"
+  },
+  {
+   "date": "2026-09-10",
+   "time": "08:15",
+   "kind": "macro",
+   "country": "US",
+   "title": "U.S. President Trump Speaks",
+   "imp": 3,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "트럼프 미 대통령 연설",
+   "title_id": "Presiden AS Trump Berbicara"
   },
   {
    "date": "2026-09-10",
@@ -18059,9 +18068,9 @@
    "country": "US",
    "title": "Continuing Jobless Claims",
    "imp": 2,
-   "exp": null,
-   "prev": "1,779K",
-   "act": null,
+   "exp": "1,780K",
+   "prev": "1,775K",
+   "act": "1,774K",
    "src": "investing.com",
    "title_ko": "연속 실업수당 청구",
    "title_id": "Klaim Pengangguran Berkelanjutan"
@@ -18075,8 +18084,9 @@
    "imp": 2,
    "exp": "0.3%",
    "prev": "0.2%",
-   "act": null,
+   "act": "0.2%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "8월 근원 PPI (MoM)",
    "title_id": "PPI Inti AS (MoM) (Agu)"
   },
@@ -18089,10 +18099,25 @@
    "imp": 3,
    "exp": "0.3%",
    "prev": "0.0%",
-   "act": null,
+   "act": "0.4%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "8월 PPI (MoM)",
    "title_id": "PPI AS (MoM) (Agu)"
+  },
+  {
+   "date": "2026-09-10",
+   "time": "20:20",
+   "kind": "macro",
+   "country": "US",
+   "title": "Atlanta Fed GDPNow  (Q3)",
+   "imp": 2,
+   "exp": "4.7%",
+   "prev": "4.7%",
+   "act": "4.4%",
+   "src": "investing.com",
+   "title_ko": "3분기 애틀랜타 연은 GDPNow",
+   "title_id": "GDPNow The Fed Atlanta (Q3)"
   },
   {
    "date": "2026-09-10",
@@ -18101,26 +18126,26 @@
    "country": "US",
    "title": "Existing Home Sales  (Aug)",
    "imp": 3,
-   "exp": "4.03M",
+   "exp": "3.98M",
    "prev": "4.06M",
-   "act": null,
+   "act": "3.98M",
    "src": "investing.com",
    "title_ko": "8월 기존주택 판매",
    "title_id": "Penjualan Rumah Existing AS (Agu)"
   },
   {
    "date": "2026-09-10",
-   "time": "22:30",
+   "time": "23:00",
    "kind": "macro",
    "country": "US",
-   "title": "Atlanta Fed GDPNow  (Q3)",
-   "imp": 2,
-   "exp": "4.7%",
-   "prev": "4.7%",
-   "act": null,
+   "title": "Crude Oil Inventories",
+   "imp": 3,
+   "exp": "-1.400M",
+   "prev": "-4.450M",
+   "act": "-0.391M",
    "src": "investing.com",
-   "title_ko": "3분기 애틀랜타 연은 GDPNow",
-   "title_id": "GDPNow The Fed Atlanta (Q3)"
+   "title_ko": "EIA 원유 재고",
+   "title_id": "Stok Minyak Mentah EIA"
   },
   {
    "date": "2026-09-10",
@@ -18338,10 +18363,24 @@
    "imp": 3,
    "exp": null,
    "prev": "5.216%",
-   "act": null,
+   "act": "5.308%",
    "src": "investing.com",
    "title_ko": "30년물 국채 입찰",
    "title_id": "Lelang Obligasi AS Tenor 30 Tahun"
+  },
+  {
+   "date": "2026-09-11",
+   "time": "03:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Fed's Balance Sheet",
+   "imp": 2,
+   "exp": null,
+   "prev": "6,737B",
+   "act": "6,741B",
+   "src": "investing.com",
+   "title_ko": "연준 대차대조표",
+   "title_id": "Neraca The Fed"
   },
   {
    "date": "2026-09-11",
@@ -25190,7 +25229,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 262,
+  "pc_age_min": 274,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
