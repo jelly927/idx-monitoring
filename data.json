@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 13:53",
+ "updated": "2026-09-11 14:04",
  "delay_min": 0,
- "fx_basis": "13.08 IDR/KRW · USD/IDR 17,605 · USD/KRW 1,346 · 13:41 Yahoo",
- "idr_per_krw": 13.0813,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,605 · USD/KRW 1,344 · 13:41 Yahoo",
+ "idr_per_krw": 13.0982,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 13:52",
+   "asof": "investing.com 14:03",
    "unit": "bp"
   }
  ],
@@ -339,8 +339,8 @@
   "m1": 3.56,
   "value_idr": 21546688746644,
   "volume": 48552221241,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 13:41",
-  "rank_asof": "13:51",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 14:00",
+  "rank_asof": "14:03",
   "rank_date": "2026-09-11",
   "adv": 143,
   "dec": 552,
@@ -15467,10 +15467,10 @@
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24806.09,
+   "px": 24812.37,
    "prev": 24954.47,
-   "pct": -0.59,
-   "asof": "13:35",
+   "pct": -0.57,
+   "asof": "13:45",
    "live": true,
    "spark": [
     24603.11,
@@ -15524,7 +15524,9 @@
     24831.92,
     24821.6,
     24803.24,
-    24806.09
+    24801.14,
+    24812.16,
+    24812.37
    ]
   }
  ],
@@ -15611,6 +15613,34 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-11T13:52:00+07:00",
+   "date": "2026-09-11",
+   "time": "13:52",
+   "src": "Katadata",
+   "t": "PTPP Restrukturisasi Utang Rp 18,2 Triliun, Lunas dalam 15 Tahun Ini Skemanya",
+   "tags": [
+    "PTPP"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6aa3a51e2d82d/ptpp-restrukturisasi-utang-rp-18-2-triliun-lunas-dalam-15-tahun-ini-skemanya",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/11/2026_06_11-19_31_00_fe76b4f0-65a5-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "PTPP Restrukturisasi Utang Rp 18,2 Triliun, Lunas dalam 15 Tahun Ini Skemanya",
+   "t_ko": "PTPP, Rp18.2조 채무 재구조화 — 15년 내 상환 스킴 확정"
+  },
+  {
+   "ts": "2026-09-11T13:45:00+07:00",
+   "date": "2026-09-11",
+   "time": "13:45",
+   "src": "Katadata",
+   "t": "Rupiah hingga Bahan Baku Tekan Margin Kalbe Farma (KLBF), Bagaimana Dampaknya?",
+   "tags": [
+    "KLBF"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6aa3a37398505/rupiah-hingga-bahan-baku-tekan-margin-kalbe-farma-klbf-bagaimana-dampaknya",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2024/12/18/Hemodialisis-2024_12_18-18_35_09_cf32465c993f6739669f55b41a194454_620x413_thumb.jpg",
+   "t_ko": "KLBF, 루피아 약세와 원재료 부담에 마진 압박",
+   "t_id": "Rupiah & Bahan Baku Tekan Margin Kalbe Farma (KLBF), Begini Dampaknya"
+  },
   {
    "ts": "2026-09-11T13:26:00+07:00",
    "date": "2026-09-11",
@@ -15901,6 +15931,20 @@
     "transaksi afiliasi",
     "pelayaran"
    ]
+  },
+  {
+   "ts": "2026-09-11T10:45:00+07:00",
+   "date": "2026-09-11",
+   "time": "10:45",
+   "src": "IDNFinancials",
+   "t": "SMLE targets patchouli oil exports to India and Europe in 2027",
+   "tags": [
+    "SMLE"
+   ],
+   "url": "https://www.idnfinancials.com/news/68707/smle-targets-patchouli-oil-exports-to-india-and-europe-in-2027",
+   "img": "https://photo2.idnfinancials.com/fly/idn/1000187818.jpg",
+   "t_ko": "SMLE, 2027년 인도 및 유럽으로 패출리 오일 수출 목표",
+   "t_id": "SMLE Targetkan Ekspor Minyak Nilam ke India dan Eropa pada 2027"
   },
   {
    "ts": "2026-09-11T10:33:49+07:00",
@@ -16412,33 +16456,6 @@
     "kinerja",
     "emas",
     "nikel"
-   ]
-  },
-  {
-   "ts": "2026-09-10T17:00:00+07:00",
-   "date": "2026-09-10",
-   "time": "09/10",
-   "src": "IDNFinancials",
-   "t": "Bank Jago posts IDR 189 billion net profit as customers hit 20 million",
-   "tags": [
-    "ARTO",
-    "BFIN"
-   ],
-   "url": "https://www.idnfinancials.com/news/68649/bank-jago-posts-idr-189-billion-net-profit-as-customers-hit-20-million",
-   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/BANK%20JAGO-min.jpg",
-   "t_ko": "Bank Jago, 고객 2,000만 명 돌파 속 순이익 IDR 1,890억",
-   "t_id": "Bank Jago cetak laba bersih Rp189 miliar, nasabah tembus 20 juta",
-   "ai_ko": "Bank Jago(ARTO), 상반기 순이익 Rp1,890억으로 49% 증가, 대출·샤리아 금융 Rp26.6조로 24% 확대 / 고객 2,010만명에 NPL 0.8%·CAR 28.4% 유지, 디지털 은행 성장성 확인",
-   "ai_id": "Bank Jago (ARTO) membukukan laba bersih Rp189 miliar pada semester I-2026, naik 49% yoy, ditopang kredit dan pembiayaan syariah Rp26,6 triliun yang tumbuh 24%. Jumlah nasabah digital dan lending menembus 20,1 juta dengan NPL gross 0,8% serta CAR 28,4%.",
-   "ai_tags": [
-    "실적",
-    "디지털은행",
-    "자산건전성"
-   ],
-   "ai_tags_id": [
-    "kinerja",
-    "bank digital",
-    "kualitas aset"
    ]
   },
   {
@@ -16996,6 +17013,42 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T13:54:47+07:00",
+   "date": "2026-09-11",
+   "time": "13:54",
+   "src": "Bloomberg Technoz",
+   "t": "Penyebab IHSG Turun 1,49% Siang Hari Ini",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121273/penyebab-ihsg-turun-1-49-siang-hari-ini",
+   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727155440.jpeg",
+   "t_id": "Penyebab IHSG Turun 1,49% Siang Hari Ini",
+   "t_ko": "IHSG, 외국인 매도 공세에 1.49% 하락"
+  },
+  {
+   "ts": "2026-09-11T13:53:06+07:00",
+   "date": "2026-09-11",
+   "time": "13:53",
+   "src": "CNBC",
+   "t": "China's wealthy brace for a widening tax net as Beijing closes in",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/china-rich-wealth-overseas-trust-tax-income-estate-inheritances-.html",
+   "g": 1,
+   "t_ko": "중국, 과세망 확대로 부유층 자산 압박 가중",
+   "t_id": "Orang Kaya China Bersiap Hadapi Perluasan Pajak Seiring Langkah Tegas Beijing"
+  },
+  {
+   "ts": "2026-09-11T13:52:28+07:00",
+   "date": "2026-09-11",
+   "time": "13:52",
+   "src": "Detik",
+   "t": "Pertamina: Harga Pertamax Akan Berkisar Rp 18-20 Ribuan",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8658387/pertamina-harga-pertamax-akan-berkisar-rp-18-20-ribuan",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/10/suasana-di-spbu-bandung-saat-pertamax-naik-1781063321403_169.jpeg?w=360&q=90",
+   "t_id": "Pertamina: Harga Pertamax Akan Berkisar Rp 18-20 Ribuan",
+   "t_ko": "Pertamina, Pertamax 가격 Rp 18,000~20,000선 전망"
+  },
+  {
    "ts": "2026-09-11T13:49:29+07:00",
    "date": "2026-09-11",
    "time": "13:49",
@@ -17004,8 +17057,19 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121260/ambisi-3-juta-rumah-pertaruhan-bank-indonesia-dan-sulap-pfii",
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260903211803.jpg",
-   "t_id": "Ambisi 3 Juta Rumah, Pertaruhan Bank Indonesia dan 'Sulap' PFII",
-   "t_ko": "주택 3백만 가구 공급 목표 — 인도네시아 중앙은행과 PFII의 자금 조달 전략"
+   "t_ko": "주택 3백만 가구 공급 목표 — 인도네시아 중앙은행과 PFII의 자금 조달 전략",
+   "t_id": "Ambisi 3 Juta Rumah, Pertaruhan Bank Indonesia dan 'Sulap' PFII"
+  },
+  {
+   "ts": "2026-09-11T13:47:00+07:00",
+   "date": "2026-09-11",
+   "time": "13:47",
+   "src": "Media Indonesia",
+   "t": "Inovasi Jadi Penggerak Bisnis Berkelanjutan",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932273/inovasi-jadi-penggerak-bisnis-berkelanjutan",
+   "t_id": "Inovasi Jadi Penggerak Bisnis Berkelanjutan",
+   "t_ko": "지속가능 경영 이끄는 혁신 전략 본격화"
   },
   {
    "ts": "2026-09-11T13:40:16+07:00",
@@ -17041,8 +17105,8 @@
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932272/harga-minyak-dunia-melonjak-icp-agustus-2026-naik-jadi-us8943-per-barel",
    "g": 1,
-   "t_id": "Harga Minyak Dunia Melonjak, ICP Agustus 2026 Naik Jadi US$89,43 per Barel",
-   "t_ko": "국제유가 급등에 2026년 8월 ICP 배럴당 US$89.43으로 상승"
+   "t_ko": "국제유가 급등에 2026년 8월 ICP 배럴당 US$89.43으로 상승",
+   "t_id": "Harga Minyak Dunia Melonjak, ICP Agustus 2026 Naik Jadi US$89,43 per Barel"
   },
   {
    "ts": "2026-09-11T13:36:06+07:00",
@@ -17237,6 +17301,18 @@
    "t_id": "Trump Tahan Tarif Tembaga Saat Gedung Putih Tandai Risiko Harga"
   },
   {
+   "ts": "2026-09-11T13:03:00+07:00",
+   "date": "2026-09-11",
+   "time": "13:03",
+   "src": "Reuters",
+   "t": "UK economy beats expectations in July with 0.4% growth",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5XSDFBSllVM3pZWVBqSlo3UGhUaVB2VXpyTXJMMUVpTmQ0U3NrMjVFblZDZHJnY3pKbHJ3S0l1aWRFMmJGYWR3eTBidlU3aksybDVpMWJxaXk5anI3OXYtREoxbXh3R0ZTZUJ2cklkQVlmNi1YX0Rz?oc=5",
+   "g": 1,
+   "t_ko": "영국 7월 GDP 0.4% 성장해 예상치 상회",
+   "t_id": "Ekonomi Inggris Lampaui Ekspektasi pada Jul dengan Pertumbuhan 0,4%"
+  },
+  {
    "ts": "2026-09-11T13:02:26+07:00",
    "date": "2026-09-11",
    "time": "13:02",
@@ -17380,66 +17456,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260907084627.jpg",
    "t_ko": "Perhapi, 엘니뇨 여파로 석탄 390만 톤 선적 차질",
    "t_id": "Dampak El Niño, Perhapi Ungkap 3,9 Juta Ton Batu Bara Gagal Dikirim"
-  },
-  {
-   "ts": "2026-09-11T12:40:16+07:00",
-   "date": "2026-09-11",
-   "time": "12:40",
-   "src": "Bloomberg",
-   "t": "Yields Hit Multiyear Highs on Oil Surge, Fed Hike Bets",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-11/the-asia-trade-9-11-2026-video",
-   "g": 1,
-   "t_ko": "유가 급등 및 연준 인상 베팅에 채권 금리 수년래 최고치 경신",
-   "t_id": "Yield Capai Level Tertinggi Multi-Tahun Seiring Lonjakan Minyak, Spekulasi Kenaikan Suku Bunga Fed"
-  },
-  {
-   "ts": "2026-09-11T12:40:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:40",
-   "src": "Media Indonesia",
-   "t": "Trump Ungkap Alasan Tunda Serangan Penuh ke Iran demi Pemilu Paruh Waktu AS",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/932259/trump-ungkap-alasan-tunda-serangan-penuh-ke-iran-demi-pemilu-paruh-waktu-as",
-   "g": 1,
-   "t_ko": "Trump, 미국 중간선거 앞두고 이란 전면 공격 연기 배경 설명",
-   "t_id": "Trump Ungkap Alasan Tunda Serangan Penuh ke Iran demi Pemilu Paruh Waktu AS"
-  },
-  {
-   "ts": "2026-09-11T12:39:40+07:00",
-   "date": "2026-09-11",
-   "time": "12:39",
-   "src": "Bloomberg",
-   "t": "Bonds Selloff Pushes 10-Year Treasury Yield Closer to 5%",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-11/bonds-selloff-pushes-10-year-treasury-yield-closer-to-5-video",
-   "g": 1,
-   "t_ko": "채권 매도세에 10년물 미 국채금리 5% 림박",
-   "t_id": "Aksi Jual Obligasi Dorong Yield US Treasury 10-Tahun Mendekati 5%"
-  },
-  {
-   "ts": "2026-09-11T12:38:13+07:00",
-   "date": "2026-09-11",
-   "time": "12:38",
-   "src": "Detik",
-   "t": "Negara Gagal Ini Tebar Bansos Rp 300 M, Satu Orang Dapat Rp 2 Juta",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8658239/negara-gagal-ini-tebar-bansos-rp-300-m-satu-orang-dapat-rp-2-juta",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2021/10/18/misionaris-hingga-anak-anak-jadi-korban-penculikan-geng-di-haiti-4_169.jpeg?w=360&q=90",
-   "t_ko": "파산 국가, Rp3,000억 규모 지원금 살포… 1인당 Rp200만 지급",
-   "t_id": "Negara Gagal Ini Tebar Bansos Rp 300 M, Satu Orang Dapat Rp 2 Juta"
-  },
-  {
-   "ts": "2026-09-11T12:33:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:33",
-   "src": "Katadata",
-   "t": "Pertamina Akui Ada Antrean BBM di SPBU Imbas Pergeseran Konsumsi ke Pertalite",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/energi/6aa39294e2dee/pertamina-akui-ada-antrean-bbm-di-spbu-imbas-pergeseran-konsumsi-ke-pertalite",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/2026_09_10-13_25_00_3ffcc242-acec-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "Pertamina, Pertalite로 소비 이동에 따른 일부 주유소 연료 대기 인정",
-   "t_id": "Pertamina Akui Ada Antrean BBM di SPBU Imbas Pergeseran Konsumsi ke Pertalite"
   }
  ],
  "kisi_news": [
@@ -17612,9 +17628,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.07",
-   "d": 0.11,
-   "ytd": 12.58,
+   "v": "13.09",
+   "d": 0.25,
+   "ytd": 12.73,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17647,8 +17663,8 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.04",
-   "d": -0.03,
+   "v": "99.05",
+   "d": -0.1,
    "ytd": 0.78,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -17659,9 +17675,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.25",
-   "d": -1.48,
-   "ytd": 76.33,
+   "v": "101.05",
+   "d": -2.1,
+   "ytd": 75.98,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17671,9 +17687,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,394.4",
-   "d": 0.61,
-   "ytd": 1.59,
+   "v": "4,392.2",
+   "d": 1.09,
+   "ytd": 1.54,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17695,9 +17711,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,602",
-   "d": -0.15,
-   "ytd": -0.48,
+   "v": "16,591",
+   "d": -0.21,
+   "ytd": -0.54,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -19243,14 +19259,14 @@
   },
   {
    "date": "2026-09-11",
-   "t": "HAIS",
+   "t": "UVCR",
    "kind": "corp",
    "imp": 2,
-   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
-   "src": "IDX 공시",
+   "title": "기업설명회 · Trimegah Karya Pratama 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  PT Trimegah Karya Pratama Tbk.",
    "country": "ID",
-   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
-   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+   "title_ko": "기업설명회 · Trimegah Karya Pratama 연례 Public Expose 결과"
   },
   {
    "date": "2026-09-12",
@@ -20490,6 +20506,17 @@
   }
  ],
  "announcements": [
+  {
+   "ts": "2026-09-11T13:47:54+07:00",
+   "date": "2026-09-11",
+   "time": "13:47",
+   "t": "UVCR",
+   "type": "STOCK",
+   "title": "Laporan Hasil Public Expose - Tahunan",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/bd877c6b42_7c35ab18e9.pdf",
+   "title_ko": "연간 기업설명회 결과 보고",
+   "title_id": "Laporan Hasil Public Expose Tahunan"
+  },
   {
    "ts": "2026-09-11T13:35:07+07:00",
    "date": "2026-09-11",
@@ -25829,8 +25856,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-11 13:41",
-  "pc_age_min": 12,
+  "idx_from_pc": "2026-09-11 14:00",
+  "pc_age_min": 4,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27454,6 +27481,32 @@
  "top_day": "2026-09-11",
  "top_news": [
   {
+   "ts": "2026-09-11T13:10:29+07:00",
+   "date": "2026-09-11",
+   "time": "13:10",
+   "src": "CNBC Indonesia",
+   "t": "IHSG Sesi 1 Jatuh 1,49%, Asing Ikut Berperan",
+   "tags": [],
+   "url": "https://www.cnbcindonesia.com/market/20260911123254-17-767176/ihsg-sesi-1-jatuh-149-asing-ikut-berperan",
+   "img": "https://akcdn.detik.net.id/visual/2019/03/19/76ed431f-ce14-48bd-86de-9d6127ae1a65_169.jpeg?w=1200&q=90",
+   "t_ko": "IHSG 1부 1.49% 하락 — 외국인도 영향 미쳐",
+   "t_id": "IHSG Sesi 1 Jatuh 1,49%, Asing Ikut Berperan",
+   "ai_ko": "9월 11일 전장 IHSG 1.49% 하락한 6,490.91, 외국인 Rp4,289.6억 순매도 / BBCA Rp3,117.1억·CUAN Rp997.3억 순매도 상위, BBRI는 Rp1,424.6억 순매수",
+   "ai_id": "IHSG anjlok 1,49% atau 98,43 poin ke 6.490,91 pada akhir sesi I Jumat (11/9/2026), dengan investor asing membukukan net sell Rp428,96 miliar. BBCA dilepas terbesar Rp311,71 miliar diikuti CUAN dan TPIA, sementara BBRI, BUMI, AADI, dan TLKM justru diakumulasi asing.",
+   "ai_tags": [
+    "증시",
+    "외국인",
+    "수급"
+   ],
+   "ai_tags_id": [
+    "IHSG",
+    "asing",
+    "net sell"
+   ],
+   "score": 14.5,
+   "srcs": 5
+  },
+  {
    "ts": "2026-09-11T08:15:21+07:00",
    "date": "2026-09-11",
    "time": "08:15",
@@ -27491,7 +27544,7 @@
    "g": 1,
    "img": "https://akcdn.detik.net.id/visual/2026/03/31/ilustrasi-petrol-1774934759988_169.jpeg?w=360&q=90",
    "score": 13.5,
-   "srcs": 5,
+   "srcs": 6,
    "t_ko": "국제유가 급등, 국가예산 버팀목 시험대",
    "t_id": "Harga Minyak Dunia Menyala, Seberapa Kuat Benteng APBN Menahan Beban?",
    "ai_ko": "Brent유 배럴당 USD 101.34로 2026년 7월 이후 최고, Purbaya 재무장관은 에너지 보조금 쿼터 증액 계획 없다고 밝힘 / USD 100 기준 잔여 재정여력 Rp38.6조에 월 Rp7.9조 부담으로 약 5개월치, 2027년 예산이 관건",
@@ -27531,32 +27584,6 @@
     "IHSG",
     "harga minyak",
     "yield"
-   ]
-  },
-  {
-   "ts": "2026-09-11T09:06:13+07:00",
-   "date": "2026-09-11",
-   "time": "09:06",
-   "src": "CNBC Indonesia",
-   "t": "Rupiah Dibuka Melemah 0,23%, Dolar AS Naik ke Rp17.570",
-   "tags": [],
-   "url": "https://www.cnbcindonesia.com/market/20260911083759-17-767099/rupiah-dibuka-melemah-023-dolar-as-naik-ke-rp17570",
-   "img": "https://awsimages.detik.net.id/visual/2026/07/08/petugas-menjunjukkan-uang-pecahan-dolar-amerika-serikat-as-dan-rupiah-di-dolar-asia-money-changer-jakarta-rabu-872026-1783496342884_169.jpeg?w=1200&q=90",
-   "score": 12.5,
-   "srcs": 5,
-   "t_ko": "루피아 0.23% 약세 개장, 달러 Rp17,570으로 상승",
-   "t_id": "Rupiah Dibuka Melemah 0,23%, Dolar AS Naik ke Rp17.570",
-   "ai_ko": "11일 루피아 개장 0.23% 약세, USD당 Rp17,570 기록 / 미국 8월 생산자물가 0.4% 상승과 Brent유 USD 108.96 급등으로 Fed 금리인상 확률 71.3%까지 상승",
-   "ai_id": "Rupiah dibuka melemah 0,23% ke Rp17.570/US$ pada Jumat (11/9), melanjutkan koreksi hari sebelumnya. Penguatan dolar ditopang PPI AS Agustus naik 0,4% dan harga Brent US$108,96/barel, mendorong peluang kenaikan suku bunga The Fed ke 71,3%.",
-   "ai_tags": [
-    "환율",
-    "금리",
-    "유가"
-   ],
-   "ai_tags_id": [
-    "kurs",
-    "suku bunga",
-    "harga minyak"
    ]
   },
   {
