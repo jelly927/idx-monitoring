@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 23:41",
+ "updated": "2026-09-11 23:52",
  "delay_min": 0,
- "fx_basis": "13.12 IDR/KRW · USD/IDR 17,585 · USD/KRW 1,340 · 23:30 Yahoo",
- "idr_per_krw": 13.1189,
+ "fx_basis": "13.12 IDR/KRW · USD/IDR 17,585 · USD/KRW 1,341 · 23:30 Yahoo",
+ "idr_per_krw": 13.1179,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 23:40",
+   "asof": "investing.com 23:51",
    "unit": "bp"
   }
  ],
@@ -15031,10 +15031,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7662.26,
+   "px": 7666.96,
    "prev": 7591.7,
-   "pct": 0.93,
-   "asof": "23:40",
+   "pct": 0.99,
+   "asof": "23:50",
    "live": true,
    "spark": [
     7672.47,
@@ -15075,17 +15075,19 @@
     7662.77,
     7669.74,
     7662.48,
-    7662.26
+    7667.46,
+    7666.68,
+    7666.96
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26349.27,
+   "px": 26365.22,
    "prev": 26081.72,
-   "pct": 1.03,
-   "asof": "23:40",
+   "pct": 1.09,
+   "asof": "23:50",
    "live": true,
    "spark": [
     26364.04,
@@ -15126,17 +15128,19 @@
     26356.52,
     26377.81,
     26350.49,
-    26349.27
+    26373.26,
+    26363.46,
+    26365.22
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52600.97,
+   "px": 52644.54,
    "prev": 52064.1,
-   "pct": 1.03,
-   "asof": "23:40",
+   "pct": 1.11,
+   "asof": "23:50",
    "live": true,
    "spark": [
     52691.44,
@@ -15177,7 +15181,9 @@
     52569.76,
     52641.97,
     52601.16,
-    52600.97
+    52637.22,
+    52654.51,
+    52644.54
    ]
   },
   {
@@ -16501,6 +16507,43 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T23:45:00+07:00",
+   "date": "2026-09-11",
+   "time": "23:45",
+   "src": "MarketWatch",
+   "t": "This investment is safe from both Trump and the Democrats — and it pays 4.7%",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/this-investment-is-safe-from-both-trump-and-the-democrats-and-it-pays-4-7-4b76c2f3?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-18511444",
+   "t_ko": "Trump·민주당 모두 비켜가는 안전한 투자처 — 연 4.7% 배당",
+   "t_id": "Investasi Ini Aman dari Trump & Demokrat — Serta Beri Imbal Hasil 4,7%"
+  },
+  {
+   "ts": "2026-09-11T23:42:42+07:00",
+   "date": "2026-09-11",
+   "time": "23:42",
+   "src": "Bloomberg",
+   "t": "In Post 9/11 Era, NYC's Downtown Forges Life Beyond Wall Street",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-11/in-post-9-11-era-nyc-forges-life-beyond-wall-street-video",
+   "g": 1,
+   "t_ko": "9·11 이후 뉴욕 로어맨해튼, 월가 넘어 자생적 경제 생태계 구축",
+   "t_id": "Di Era Pasca 9/11, Kawasan Bisnis NYC Temukan Kehidupan di Luar Wall Street"
+  },
+  {
+   "ts": "2026-09-11T23:39:23+07:00",
+   "date": "2026-09-11",
+   "time": "23:39",
+   "src": "Reuters",
+   "t": "Yemen's Houthis reach strategic island at mouth of vital shipping lane",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUk9oUjNYejhGeW1YblJUVWdfQ0JaZU52dHNPZUZVdnpMSkxYS3pKTWhLdjU0REdNUGdubUhnRl9KUXZabHRfbEQyOUJZeXUxQzZfcGFlbFV5V1BlSTVmRkhzdGJaNkpQa3p3OG9LZUt3Q3VXYkdrc2ZRWW9fcWQ4TkYxNFgxNFI0dlhIV0UyUU5Dbk44blJMempZVFVqVm5XbUlfV2dqSlN3YXBNUDlUQmVxS3JQMUxQ?oc=5",
+   "g": 1,
+   "t_ko": "예멘 후티 반군, 주요 해상교로 입구의 전략적 섬 도달",
+   "t_id": "Houthi Yaman Capai Pulau Strategis di Pintu Masuk Jalur Pelayaran Vital"
+  },
+  {
    "ts": "2026-09-11T23:36:00+07:00",
    "date": "2026-09-11",
    "time": "23:36",
@@ -16536,6 +16579,31 @@
     "perbankan",
     "Iran"
    ]
+  },
+  {
+   "ts": "2026-09-11T23:31:00+07:00",
+   "date": "2026-09-11",
+   "time": "23:31",
+   "src": "Yahoo Finance",
+   "t": "Financial Services Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/financial-services-roundup-market-talk-a516c8f3?siteid=yhoof2&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/wsj.com/6a4c0276b95fe838f91dfbf754758d0a.jpg",
+   "t_ko": "금융권 동향 — 시장 전망",
+   "t_id": "Rangkuman Jasa Keuangan: Sinyal Pasar"
+  },
+  {
+   "ts": "2026-09-11T23:30:05+07:00",
+   "date": "2026-09-11",
+   "time": "23:30",
+   "src": "Reuters",
+   "t": "Wall St bounces as oil cools, inflation risks keeps Fed in focus",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOTZpMXRyVmxGMjJTRmVVOV91TnZIWlJsZS1BNlE3bENxRlRlVnh2RFZKQmdwUVNydUJQd1RvZlZLam1KbnR2ZS1Vd2VNaWhrN3lNZ3hETUtvcTVxYTFEOENQQ292eWk0YXJYYjBrekoycE5sU0FqdloxRXNZcTcyd1dnYkFEdGpmMV9Pd0lwemdYWmd0aHZaYmpkWmlLOFgxdnc?oc=5",
+   "g": 1,
+   "t_ko": "유가 안정과 인플레이션 경계 속 연준 주시하며 월가 반등",
+   "t_id": "Wall St Rebound Seiring Minyak Mendingin, Risiko Inflasi Jaga Fokus ke The Fed"
   },
   {
    "ts": "2026-09-11T23:30:00+07:00",
@@ -16602,6 +16670,19 @@
    "t_id": "Teknologi, Media & Telekomunikasi: Market Talk"
   },
   {
+   "ts": "2026-09-11T23:23:25+07:00",
+   "date": "2026-09-11",
+   "time": "23:23",
+   "src": "Yahoo Finance",
+   "t": "GameStop Finds A Bulk Buyer For Its Stock — Its Own CEO",
+   "tags": [],
+   "url": "https://www.investors.com/news/gamestop-ceo-ryan-cohen-ebay-merger-meme-stock/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/aa3726d77fcff313c1bb625532be3356.jpg",
+   "t_ko": "GameStop, 자사주 대량 매입자는 CEO 본인으로 확인",
+   "t_id": "GameStop Temukan Pembeli Saham Jumbo — CEO-nya Sendiri"
+  },
+  {
    "ts": "2026-09-11T23:23:06+07:00",
    "date": "2026-09-11",
    "time": "23:23",
@@ -16636,81 +16717,6 @@
    "g": 1,
    "t_ko": "미국 원유, 100달러 아래로 하락했으나 주간 단위는 상승세",
    "t_id": "Minyak Mentah AS Turun Lagi di Bawah USD100 tapi Menuju Penguatan Mingguan"
-  },
-  {
-   "ts": "2026-09-11T23:17:25+07:00",
-   "date": "2026-09-11",
-   "time": "23:17",
-   "src": "Bloomberg",
-   "t": "Cantor Co‑CEO: AI Capex Will Drive Trillions in New Debt",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-11/cantor-co-ceo-ai-capex-will-drive-trillions-in-new-debt-video",
-   "g": 1,
-   "t_ko": "Cantor Co-CEO, AI 설비투자로 수조 달러 규모 신규 부채 발생 전망",
-   "t_id": "Co-CEO Cantor: Belanja Modal AI Picu Utang Baru Triliunan Dolar"
-  },
-  {
-   "ts": "2026-09-11T23:17:18+07:00",
-   "date": "2026-09-11",
-   "time": "23:17",
-   "src": "Jawa Pos",
-   "t": "Bahil Jamin Pertalite-Solar Subsidi Tidak Naik meski Harga Minyak Dunia Melonjak",
-   "tags": [],
-   "url": "https://www.jawapos.com/energi/2609110330/bahil-jamin-pertalite-solar-subsidi-tidak-naik-meski-harga-minyak-dunia-melonjak",
-   "g": 1,
-   "img": "https://cdn-assets.jawapos.com/images/1/2024/08/14/WhatsApp-Image-2024-08-14-at-151944-4140582986.jpeg",
-   "t_ko": "Bahlil, 국제유가 급등에도 보조금 연료 Pertalite·Solar 가격 동결 보장",
-   "t_id": "Bahil Jamin Pertalite-Solar Subsidi Tidak Naik meski Harga Minyak Dunia Melonjak"
-  },
-  {
-   "ts": "2026-09-11T23:17:00+07:00",
-   "date": "2026-09-11",
-   "time": "23:17",
-   "src": "MarketWatch",
-   "t": "How rising bond yields can wreck some portfolios while pumping up others with cash",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/how-rising-bond-yields-can-wreck-some-portfolios-while-pumping-up-others-with-cash-c415faf3?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-33880082",
-   "t_ko": "채권금리 상승, 일부 포트폴리오 타격인 반면 현금 확보 기회인 이유",
-   "t_id": "Alasan Kenaikan Imbal Hasil Obligasi Hancurkan Sebagian Portofolio Sekaligus Genjot Kas Portofolio Lain"
-  },
-  {
-   "ts": "2026-09-11T23:17:00+07:00",
-   "date": "2026-09-11",
-   "time": "23:17",
-   "src": "Yahoo Finance",
-   "t": "Kevin Mahn sees S&P 500 pullbacks as chances to stay invested",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/kevin-mahn-sees-p-500-161700802.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/thestreet_881/536eb1b2ec8439df7dc07e5a19a83c10.jpg",
-   "t_ko": "Kevin Mahn, S&P 500 조정기를 투자 유지 기회로 평가",
-   "t_id": "Kevin Mahn Nilai Koreksi S&P 500 Peluang Tetap Berinvestasi"
-  },
-  {
-   "ts": "2026-09-11T23:16:31+07:00",
-   "date": "2026-09-11",
-   "time": "23:16",
-   "src": "Bloomberg",
-   "t": "Cantor’s 9/11 Charity Day",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-11/cantor-s-9-11-charity-day-video",
-   "g": 1,
-   "t_ko": "Cantor, 9/11 자선 기부의 날 개최",
-   "t_id": "Hari Amal 9/11 Cantor"
-  },
-  {
-   "ts": "2026-09-11T23:16:23+07:00",
-   "date": "2026-09-11",
-   "time": "23:16",
-   "src": "CNBC",
-   "t": "Jim Cramer calls an AI data center stock a buy, offers a level to buy a household name",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/jim-cramer-calls-an-ai-data-center-stock-a-buy-offers-a-level-to-buy-a-household-name.html",
-   "g": 1,
-   "t_ko": "Jim Cramer, AI 데이터센터주 매수 추천 및 주요 종목 매수 가격대 제시",
-   "t_id": "Jim Cramer Sebut Saham Pusat Data AI Layak Beli, Beri Titik Masuk untuk Saham Blue Chip"
   },
   {
    "ts": "2026-09-11T22:51:47+07:00",
@@ -17122,8 +17128,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.11",
-   "d": 0.41,
-   "ytd": 12.91,
+   "d": 0.39,
+   "ytd": 12.89,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17133,9 +17139,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.957%",
-   "d": 0.26,
-   "ytd": 19.07,
+   "v": "4.947%",
+   "d": 0.06,
+   "ytd": 18.83,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17156,9 +17162,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.07",
-   "d": -0.08,
-   "ytd": 0.8,
+   "v": "99.08",
+   "d": -0.07,
+   "ytd": 0.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17168,9 +17174,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.93",
-   "d": -3.19,
-   "ytd": 74.03,
+   "v": "99.92",
+   "d": -3.2,
+   "ytd": 74.02,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17180,9 +17186,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,397.1",
-   "d": 1.2,
-   "ytd": 1.65,
+   "v": "4,405.9",
+   "d": 1.4,
+   "ytd": 1.86,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -25696,7 +25702,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 368,
+  "pc_age_min": 379,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
