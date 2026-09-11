@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 22:07",
+ "updated": "2026-09-11 22:27",
  "delay_min": 0,
- "fx_basis": "13.14 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,340 · 21:47 Yahoo",
- "idr_per_krw": 13.1384,
+ "fx_basis": "13.15 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,339 · 22:23 Yahoo",
+ "idr_per_krw": 13.1469,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 22:06",
+   "asof": "investing.com 22:25",
    "unit": "bp"
   }
  ],
@@ -15031,10 +15031,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7663.64,
+   "px": 7671.0,
    "prev": 7591.7,
-   "pct": 0.95,
-   "asof": "22:05",
+   "pct": 1.04,
+   "asof": "22:25",
    "live": true,
    "spark": [
     7672.47,
@@ -15056,17 +15056,21 @@
     7654.78,
     7654.13,
     7659.6,
-    7663.64
+    7662.9,
+    7659.9,
+    7667.21,
+    7672.19,
+    7671.0
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26378.07,
+   "px": 26406.75,
    "prev": 26081.72,
-   "pct": 1.14,
-   "asof": "22:05",
+   "pct": 1.25,
+   "asof": "22:25",
    "live": true,
    "spark": [
     26364.04,
@@ -15088,17 +15092,21 @@
     26337.97,
     26336.08,
     26355.45,
-    26378.07
+    26375.91,
+    26363.56,
+    26400.75,
+    26408.67,
+    26406.75
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52551.21,
+   "px": 52581.71,
    "prev": 52064.1,
-   "pct": 0.94,
-   "asof": "22:05",
+   "pct": 0.99,
+   "asof": "22:25",
    "live": true,
    "spark": [
     52691.44,
@@ -15120,7 +15128,11 @@
     52462.84,
     52458.03,
     52509.28,
-    52551.21
+    52530.95,
+    52521.78,
+    52562.79,
+    52594.02,
+    52581.71
    ]
   },
   {
@@ -16458,6 +16470,117 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T22:26:15.884876+07:00",
+   "date": "2026-09-11",
+   "time": "22:26",
+   "src": "Jawa Pos",
+   "t": "Kapolri: Keamanan Kawasan Industri Jadi Kunci Investasi dan Keberlangsungan Usaha",
+   "tags": [],
+   "url": "https://www.jawapos.com/bisnis/2609110316/kapolri-keamanan-kawasan-industri-jadi-kunci-investasi-dan-keberlangsungan-usaha",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/11/kapolri-saat-menghadiri-konsolidasi-akbar-federasi-serikat-pekerja-metal-indonesia-fspmi-di-kawasan-industri-mm2100-kabupaten-bekasi-jawa-barat-jumat-1192026-mabes-polri-9TLIw.webp",
+   "t_ko": "경찰청장, 산업단지 보안이 투자와 기업 안 정의 핵심 — 강조",
+   "t_id": "Kapolri: Keamanan Kawasan Industri Jadi Kunci Investasi dan Keberlangsungan Usaha"
+  },
+  {
+   "ts": "2026-09-11T22:25:21+07:00",
+   "date": "2026-09-11",
+   "time": "22:25",
+   "src": "CNBC",
+   "t": "Analysis: Hot CPI puts Kevin Warsh’s Fed credibility on the line before rate decision",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/kevin-warsh-fed-cpi-inflation-rate-hike-analysis.html",
+   "g": 1,
+   "t_ko": "미국 CPI 상승에 금리 결정 앞둔 Kevin Warsh 연준 신뢰도 시험대",
+   "t_id": "Analisis: CPI Panas Pertaruhkan Kredibilitas Fed Kevin Warsh Jelang Keputusan Suku Bunga"
+  },
+  {
+   "ts": "2026-09-11T22:23:00+07:00",
+   "date": "2026-09-11",
+   "time": "22:23",
+   "src": "MarketWatch",
+   "t": "Forget the Fed. The Bank of Japan could deliver next week’s market shock.",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/forget-the-fed-the-bank-of-japan-could-deliver-next-weeks-market-shock-bd8d56d7?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-69599389",
+   "t_ko": "미국 연준보다 일본은행의 다음 주 시장 충격 예고",
+   "t_id": "Lupakan The Fed, Bank of Japan Bisa Picu Kejutan Pasar Pekan Depan"
+  },
+  {
+   "ts": "2026-09-11T22:16:52+07:00",
+   "date": "2026-09-11",
+   "time": "22:16",
+   "src": "Bloomberg",
+   "t": "US Core CPI Tops Forecasts, Bolstering Case for Rate Hike",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-11/us-core-cpi-tops-forecasts-backing-case-for-rate-hike-video",
+   "g": 1,
+   "t_ko": "미국 근원 CPI 예상치 상회로 금리 인상 전망 강화",
+   "t_id": "IHK Inti AS Lampaui Proyeksi, Perkuat Suar Suku Bunga Naik"
+  },
+  {
+   "ts": "2026-09-11T22:10:45+07:00",
+   "date": "2026-09-11",
+   "time": "22:10",
+   "src": "CNBC",
+   "t": "Iran, Russia condemn Western economic sanctions and urge BRICS bloc to deepen economic ties",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/iran-russia-brics-sanctions-energy.html",
+   "g": 1,
+   "t_ko": "이란·러시아, 서방 경제제재 규탄 및 BRICS 경제 연대 강화 촉구",
+   "t_id": "Iran dan Rusia Kutuk Sanksi Barat, Dorong BRICS Perkuat Kerja Sama Ekonomi"
+  },
+  {
+   "ts": "2026-09-11T22:07:59+07:00",
+   "date": "2026-09-11",
+   "time": "22:07",
+   "src": "CNBC",
+   "t": "Here’s the inflation breakdown for August 2026 — in one chart",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/cpi-inflation-breakdown-august-2026.html",
+   "g": 1,
+   "t_ko": "2026년 8월 물가 지표 세부 내용 — 한눈에 보기",
+   "t_id": "Rincian Inflasi AS Agustus 2026 dalam Satu Grafik"
+  },
+  {
+   "ts": "2026-09-11T22:06:21+07:00",
+   "date": "2026-09-11",
+   "time": "22:06",
+   "src": "Yahoo Finance",
+   "t": "QatarEnergy seeks US LNG deals through to 2031, sources say",
+   "tags": [],
+   "url": "https://finance.yahoo.com/energy/articles/qatarenergy-seeks-us-lng-deals-150621924.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/reuters.com/25f3b95a0af210cb4e01a21e0c1185cd.jpg",
+   "t_ko": "QatarEnergy, 2031년까지 미국산 LNG 계약 추진",
+   "t_id": "QatarEnergy Incar Kesepakatan LNG AS hingga 2031"
+  },
+  {
+   "ts": "2026-09-11T22:05:00+07:00",
+   "date": "2026-09-11",
+   "time": "22:05",
+   "src": "Yahoo Finance",
+   "t": "Dell shares jump 11% to all-time high on RBC Outperform initiation",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/dell-shares-jump-11-time-150500585.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/proactive_us_504/5ad739a2dd36bac199ef42ebee4c5eef.jpg",
+   "t_ko": "Dell, RBC의 매수 의견에 주가 11% 급등해 사상 최고가",
+   "t_id": "Saham Dell Lonjak 11% ke Level Tertinggi Berkat Rekomendasi RBC"
+  },
+  {
+   "ts": "2026-09-11T21:54:32+07:00",
+   "date": "2026-09-11",
+   "time": "21:54",
+   "src": "Detik",
+   "t": "Coretax Diusulkan Jadi Acuan Ukur Tingkat Pendapatan Penerima Bansos",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8659185/coretax-diusulkan-jadi-acuan-ukur-tingkat-pendapatan-penerima-bansos",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/02/ilustrasi-coretax-1764665597521_169.jpeg?w=360&q=90",
+   "t_id": "Coretax Diusulkan Jadi Acuan Ukur Tingkat Pendapatan Penerima Bansos",
+   "t_ko": "Coretax, 복지 수급자 소득 수준 측정 기준 지표로 제안"
+  },
+  {
    "ts": "2026-09-11T21:46:36+07:00",
    "date": "2026-09-11",
    "time": "21:46",
@@ -16496,18 +16619,6 @@
    "t_id": "Alstom Akan Bangun Armada Kereta Baterai-Listrik Baru"
   },
   {
-   "ts": "2026-09-11T21:41:29+07:00",
-   "date": "2026-09-11",
-   "time": "21:41",
-   "src": "CNBC",
-   "t": "Here’s the inflation breakdown for August 2026 — in one chart",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/cpi-inflation-breakdown-august-2026.html",
-   "g": 1,
-   "t_ko": "2026년 8월 물가 지표 세부 내용 — 한눈에 보기",
-   "t_id": "Rincian Inflasi AS Agustus 2026 dalam Satu Grafik"
-  },
-  {
    "ts": "2026-09-11T21:39:18+07:00",
    "date": "2026-09-11",
    "time": "21:39",
@@ -16528,7 +16639,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8659142/ukm-tetap-resilien-sektor-produktif-penopang-ekonomi-semester-i-2026",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/ukm-tetap-resilien-sektor-produktif-penopang-ekonomi-semester-i-2026-1789137312934.jpeg?w=360&q=90",
-   "t_ko": "상반기 경제 버팀목 된 회복력 강한 중소기업 및 생산 부문"
+   "t_ko": "상반기 경제 버팀목 된 회복력 강한 중소기업 및 생산 부문",
+   "t_id": "UKM Tetap Resilien, Sektor Produktif Penopang Ekonomi Semester I-2026"
   },
   {
    "ts": "2026-09-11T21:35:54+07:00",
@@ -16617,43 +16729,6 @@
    "t_id": "Pemimpin Pasar Saham Kerap Bersinar, Didukung Tanda Kekuatan Likuiditas Ini"
   },
   {
-   "ts": "2026-09-11T21:28:43+07:00",
-   "date": "2026-09-11",
-   "time": "21:28",
-   "src": "CNBC",
-   "t": "Trump says he has no regrets about starting the Iran war as U.S. dials up economic pressure",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/us-iran-war-trump-hormuz-banks-oil-sanctions.html",
-   "g": 1,
-   "t_ko": "Trump, 이란전쟁 개전 후회 없다 — 미국 경제 제재 강화",
-   "t_id": "Trump Sebut Tak Menyesal Mulai Perang Iran, AS Tingkatkan Tekanan Ekonomi",
-   "ai_ko": "Trump 미국 대통령, 이란 전쟁 개시에 후회 없다며 같은 결정 반복할 것이라고 발언 / 중간선거 후 종전·유가 하락 주장에도 장기화 보도 나오며 시장은 전쟁 장기화 대비",
-   "ai_id": "Presiden AS Donald Trump menyatakan tidak menyesal memulai perang dengan Iran dan akan mengambil keputusan yang sama jika diulang. Pasar bersiap menghadapi perang yang lebih panjang setelah laporan Wall Street Journal menyebut konflik bisa berlanjut melewati masa jabatannya.",
-   "ai_tags": [
-    "지정학",
-    "유가",
-    "미국"
-   ],
-   "ai_tags_id": [
-    "geopolitik",
-    "harga minyak",
-    "AS"
-   ]
-  },
-  {
-   "ts": "2026-09-11T21:27:58+07:00",
-   "date": "2026-09-11",
-   "time": "21:27",
-   "src": "Yahoo Finance",
-   "t": "US consumer inflation picks up in August",
-   "tags": [],
-   "url": "https://finance.yahoo.com/economy/policy/articles/us-consumer-inflation-picks-august-123741290.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/reuters.com/0dff0c20c1f50f090b282018f3aed3fe.jpg",
-   "t_ko": "미국 8월 소비자물가 상승세 전환",
-   "t_id": "Inflasi Konsumen AS Melaju pada Agustus"
-  },
-  {
    "ts": "2026-09-11T21:24:56+07:00",
    "date": "2026-09-11",
    "time": "21:24",
@@ -16664,58 +16739,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/detikevent-business-acumen-kpi-1789136658269_169.jpeg?w=360&q=90",
    "t_ko": "KPI와 재무 지표 분석으로 비즈니스 의사결정 역량 강화 방법",
    "t_id": "Ini Cara Baca KPI dan Financial Insight biar Keputusan Bisnis Makin Tajam"
-  },
-  {
-   "ts": "2026-09-11T21:22:45+07:00",
-   "date": "2026-09-11",
-   "time": "21:22",
-   "src": "Jawa Pos",
-   "t": "Biaya Kesehatan Naik 17,8 %, Dunia Asuransi Hadapi Tantangan Besar",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609110464/biaya-kesehatan-naik-178-dunia-asuransi-hadapi-tantangan-besar",
-   "g": 1,
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/11/ilustrasi-dunia-asuransi-istimewa-mMAFl.webp",
-   "t_ko": "의료비 17.8% 상승에 보험업계 대형 악재 직면",
-   "t_id": "Biaya Kesehatan Naik 17,8 %, Dunia Asuransi Hadapi Tantangan Besar"
-  },
-  {
-   "ts": "2026-09-11T21:22:42+07:00",
-   "date": "2026-09-11",
-   "time": "21:22",
-   "src": "BBC",
-   "t": "US inflation holds steady as diesel prices pass $6 a gallon",
-   "tags": [],
-   "url": "https://www.bbc.co.uk/news/articles/cly41rdkrleo?at_medium=RSS&at_campaign=rss",
-   "g": 1,
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/39dc/live/efa1fdd0-addb-11f1-8b98-35ffe039e825.jpg",
-   "t_ko": "갤런당 6달러 넘은 디젤 가격에 미국 인플레이션 유지",
-   "t_id": "Inflasi AS Stabil Saat Harga Diesel Tembus $6 per Galon"
-  },
-  {
-   "ts": "2026-09-11T21:22:37+07:00",
-   "date": "2026-09-11",
-   "time": "21:22",
-   "src": "Yahoo Finance",
-   "t": "Stock Market Today: Dow Rallies On Surprise Inflation Data; This Tech Icon Eyes A Breakout (Live Coverage)",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-cpi-inflation-report-oracle-stock-orcl/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/55ca4252bd7c66820fc61ce444908e68.jpg",
-   "t_ko": "뉴욕증시, 예상 밖 물가 지표에 상승… 기술주 반등 주목",
-   "t_id": "Bursa Hari Ini: Dow Menguat Berkat Data Inflasi Mengejutkan; Saham Teknologi Ini Incar Breakout"
-  },
-  {
-   "ts": "2026-09-11T21:22:23+07:00",
-   "date": "2026-09-11",
-   "time": "21:22",
-   "src": "Yahoo Finance",
-   "t": "Gold Miner's Luster Lures Funds; Stock Trades Around Buy Point",
-   "tags": [],
-   "url": "https://www.investors.com/stock-lists/sector-leaders/gold-wheaton-precious-metals-wpm-stock-commodities-buy-point-markets/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/e5af0dc1beafaacaf03b081be9fc70a7.jpg",
-   "t_ko": "자금 유입되는 금광주, 매수 타점 근접 거래",
-   "t_id": "Kilau Emiten Emas Tarik Dana; Saham Di Area Buy"
   },
   {
    "ts": "2026-09-11T21:18:00+07:00",
@@ -16761,7 +16784,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8659104/hasil-seleksi-magang-nasional-diumumkan-18-september",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/16/onboarding-magang-hub-batch-3-di-jakarta-selasa-16122025-1765891831577_169.jpeg?w=360&q=90",
-   "t_ko": "국가 인턴십 선발 결과 18일 발표"
+   "t_ko": "국가 인턴십 선발 결과 18일 발표",
+   "t_id": "Hasil Seleksi Magang Nasional Diumumkan 18 September"
   },
   {
    "ts": "2026-09-11T21:01:59+07:00",
@@ -16879,30 +16903,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/01/kunjungan-wisman-meroket-pariwisata-indonesia-kembali-bergairah-1764594419975_169.jpeg?w=360&q=90",
    "t_ko": "재계, 인도네시아 관광업을 핵심 성장동력으로 육성 촉구",
    "t_id": "Pengusaha Dorong Pariwisata RI Jadi Mesin Ekonomi"
-  },
-  {
-   "ts": "2026-09-11T19:59:45+07:00",
-   "date": "2026-09-11",
-   "time": "19:59",
-   "src": "Medcom",
-   "t": "Ukuran Pintu Kamar Mandi PVC yang Umum dan Cara Menentukannya",
-   "tags": [],
-   "url": "https://www.medcom.id/properti/news-properti/lKY3lEWb-ukuran-pintu-kamar-mandi-pvc-yang-umum-dan-cara-menentukannya",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841617/nE38CBRP2m.jpg?w=720",
-   "t_ko": "PVC 욕실문 표준 규격과 선정 기준",
-   "t_id": "Ukuran Pintu Kamar Mandi PVC yang Umum dan Cara Menentukannya"
-  },
-  {
-   "ts": "2026-09-11T19:59:33+07:00",
-   "date": "2026-09-11",
-   "time": "19:59",
-   "src": "Jawa Pos",
-   "t": "BTN Percepat Beyond Mortgage, Porsi Kredit Non-Perumahan Dibidik 30%",
-   "tags": [],
-   "url": "https://www.jawapos.com/finance/2609110232/btn-percepat-beyond-mortgage-porsi-kredit-non-perumahan-dibidik-30",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/11/direktur-utama-btn-nixon-lp-napitupulu-tengah-istimewa-r7fkO.webp",
-   "t_ko": "BTN, Beyond Mortgage 가속화 — 비주택 대출 비중 30% 목표",
-   "t_id": "BTN Percepat Beyond Mortgage, Porsi Kredit Non-Perumahan Dibidik 30%"
   }
  ],
  "kisi_news": [
@@ -17074,9 +17074,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.13",
-   "d": 0.56,
-   "ytd": 13.08,
+   "v": "13.14",
+   "d": 0.58,
+   "ytd": 13.1,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17086,9 +17086,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.926%",
-   "d": -0.36,
-   "ytd": 18.33,
+   "v": "4.942%",
+   "d": -0.04,
+   "ytd": 18.71,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17109,9 +17109,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.00",
-   "d": -0.15,
-   "ytd": 0.74,
+   "v": "99.05",
+   "d": -0.09,
+   "ytd": 0.79,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17121,9 +17121,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.21",
-   "d": -3.88,
-   "ytd": 72.78,
+   "v": "99.49",
+   "d": -3.61,
+   "ytd": 73.27,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17133,9 +17133,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,416.8",
-   "d": 1.65,
-   "ytd": 2.11,
+   "v": "4,405.0",
+   "d": 1.38,
+   "ytd": 1.84,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17737,7 +17737,7 @@
    "imp": 2,
    "exp": null,
    "prev": "3.6%",
-   "act": "3.6%",
+   "act": null,
    "src": "investing.com",
    "title_ko": "8월 뉴욕 연은 1년 기대인플레이션",
    "title_id": "Ekspektasi Inflasi Konsumen 1 Tahun The Fed NY (Agu)"
@@ -17751,7 +17751,7 @@
    "imp": 2,
    "exp": null,
    "prev": "4.291%",
-   "act": "4.474%",
+   "act": null,
    "src": "investing.com",
    "title_ko": "3년물 국채 입찰",
    "title_id": "Lelang Obligasi AS 3 Tahun"
@@ -17763,9 +17763,9 @@
    "country": "US",
    "title": "Consumer Credit  (Jul)",
    "imp": 2,
-   "exp": "11.90B",
-   "prev": "14.56B",
-   "act": "18.06B",
+   "exp": null,
+   "prev": "14.17B",
+   "act": null,
    "src": "investing.com",
    "title_ko": "7월 소비자신용",
    "title_id": "Kredit Konsumen AS (Jul)"
@@ -17786,14 +17786,14 @@
   },
   {
    "date": "2026-09-09",
-   "time": "19:14",
+   "time": "19:15",
    "kind": "macro",
    "country": "US",
    "title": "ADP Employment Change Weekly",
    "imp": 2,
    "exp": null,
    "prev": "11.80K",
-   "act": "10.00K",
+   "act": null,
    "src": "investing.com",
    "title_ko": "ADP 주간 고용 변화",
    "title_id": "Perubahan Tenaga Kerja Mingguan ADP AS"
@@ -17986,7 +17986,7 @@
    "imp": 3,
    "exp": null,
    "prev": "4.683%",
-   "act": "4.834%",
+   "act": null,
    "src": "investing.com",
    "title_ko": "10년물 국채 입찰",
    "title_id": "Lelang Obligasi AS 10 Tahun"
@@ -17998,9 +17998,9 @@
    "country": "US",
    "title": "API Weekly Crude Oil Stock",
    "imp": 2,
-   "exp": "-1.300M",
+   "exp": null,
    "prev": "-2.600M",
-   "act": "-0.300M",
+   "act": null,
    "src": "investing.com",
    "title_ko": "API 주간 원유 재고",
    "title_id": "Stok Minyak Mentah Mingguan API"
@@ -18018,20 +18018,6 @@
    "src": "investing.com",
    "title_ko": "8월 오토바이 판매 (YoY)",
    "title_id": "Penjualan Sepeda Motor (YoY) (Agu)"
-  },
-  {
-   "date": "2026-09-10",
-   "time": "08:15",
-   "kind": "macro",
-   "country": "US",
-   "title": "U.S. President Trump Speaks",
-   "imp": 3,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "트럼프 미 대통령 연설",
-   "title_id": "Presiden AS Trump Berbicara"
   },
   {
    "date": "2026-09-10",
@@ -18068,9 +18054,9 @@
    "country": "US",
    "title": "Continuing Jobless Claims",
    "imp": 2,
-   "exp": "1,780K",
-   "prev": "1,775K",
-   "act": "1,774K",
+   "exp": null,
+   "prev": "1,779K",
+   "act": null,
    "src": "investing.com",
    "title_ko": "연속 실업수당 청구",
    "title_id": "Klaim Pengangguran Berkelanjutan"
@@ -18084,9 +18070,8 @@
    "imp": 2,
    "exp": "0.3%",
    "prev": "0.2%",
-   "act": "0.2%",
+   "act": null,
    "src": "investing.com",
-   "act_src": "investing.com",
    "title_ko": "8월 근원 PPI (MoM)",
    "title_id": "PPI Inti AS (MoM) (Agu)"
   },
@@ -18099,25 +18084,10 @@
    "imp": 3,
    "exp": "0.3%",
    "prev": "0.0%",
-   "act": "0.4%",
+   "act": null,
    "src": "investing.com",
-   "act_src": "investing.com",
    "title_ko": "8월 PPI (MoM)",
    "title_id": "PPI AS (MoM) (Agu)"
-  },
-  {
-   "date": "2026-09-10",
-   "time": "20:20",
-   "kind": "macro",
-   "country": "US",
-   "title": "Atlanta Fed GDPNow  (Q3)",
-   "imp": 2,
-   "exp": "4.7%",
-   "prev": "4.7%",
-   "act": "4.4%",
-   "src": "investing.com",
-   "title_ko": "3분기 애틀랜타 연은 GDPNow",
-   "title_id": "GDPNow The Fed Atlanta (Q3)"
   },
   {
    "date": "2026-09-10",
@@ -18126,26 +18096,26 @@
    "country": "US",
    "title": "Existing Home Sales  (Aug)",
    "imp": 3,
-   "exp": "3.98M",
+   "exp": "4.03M",
    "prev": "4.06M",
-   "act": "3.98M",
+   "act": null,
    "src": "investing.com",
    "title_ko": "8월 기존주택 판매",
    "title_id": "Penjualan Rumah Existing AS (Agu)"
   },
   {
    "date": "2026-09-10",
-   "time": "23:00",
+   "time": "22:30",
    "kind": "macro",
    "country": "US",
-   "title": "Crude Oil Inventories",
-   "imp": 3,
-   "exp": "-1.400M",
-   "prev": "-4.450M",
-   "act": "-0.391M",
+   "title": "Atlanta Fed GDPNow  (Q3)",
+   "imp": 2,
+   "exp": "4.7%",
+   "prev": "4.7%",
+   "act": null,
    "src": "investing.com",
-   "title_ko": "EIA 원유 재고",
-   "title_id": "Stok Minyak Mentah EIA"
+   "title_ko": "3분기 애틀랜타 연은 GDPNow",
+   "title_id": "GDPNow The Fed Atlanta (Q3)"
   },
   {
    "date": "2026-09-10",
@@ -18419,8 +18389,9 @@
    "imp": 3,
    "exp": "0.4%",
    "prev": "0.1%",
-   "act": null,
+   "act": "0.4%",
    "src": "manual",
+   "act_src": "investing.com",
    "title_ko": "美 8월 CPI",
    "title_id": "Inflasi (CPI) AS Agustus"
   },
@@ -18433,8 +18404,9 @@
    "imp": 3,
    "exp": "0.2%",
    "prev": "0.2%",
-   "act": null,
+   "act": "0.3%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "8월 근원 CPI (MoM)",
    "title_id": "CPI Inti AS (MoM) (Agu)"
   },
@@ -18445,9 +18417,9 @@
    "country": "US",
    "title": "Michigan 1-Year Inflation Expectations  (Sep)",
    "imp": 2,
-   "exp": null,
+   "exp": "4.2%",
    "prev": "4.0%",
-   "act": null,
+   "act": "4.6%",
    "src": "investing.com",
    "title_ko": "9월 미시간대 1년 기대인플레이션",
    "title_id": "Ekspektasi Inflasi 1 Tahun Michigan (Sep)"
@@ -18459,9 +18431,9 @@
    "country": "US",
    "title": "Michigan Consumer Expectations  (Sep)",
    "imp": 2,
-   "exp": null,
+   "exp": "50.5",
    "prev": "51.5",
-   "act": null,
+   "act": "45.8",
    "src": "investing.com",
    "title_ko": "9월 미시간대 소비자기대지수",
    "title_id": "Ekspektasi Konsumen Michigan (Sep)"
@@ -25229,7 +25201,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 274,
+  "pc_age_min": 294,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
