@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 08:33",
+ "updated": "2026-09-11 08:50",
  "delay_min": 0,
- "fx_basis": "13.01 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,348 · 08:24 Yahoo",
- "idr_per_krw": 13.0054,
+ "fx_basis": "13.01 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,347 · 08:24 Yahoo",
+ "idr_per_krw": 13.0101,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 08:32",
+   "asof": "investing.com 08:49",
    "unit": "bp"
   }
  ],
@@ -337,10 +337,10 @@
   "m1": 3.52,
   "value_idr": 21546688746644,
   "volume": 48552221241,
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-10 17:23",
+  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-10 17:23",
   "rank_asof": null,
   "rank_date": "2026-09-10",
-  "adv": 161,
+  "adv": 160,
   "dec": 543,
   "unch": 128,
   "foreign_net_idr": -746860085099.6025,
@@ -418,23 +418,6 @@
    "fnet": 38808410952.34284,
    "live": 0,
    "_c": -354253964032872.0
-  },
-  {
-   "t": "ANTM",
-   "n": "ANTAM Tbk",
-   "px": 3270.0,
-   "prev": 3200.0,
-   "pct": 2.19,
-   "val": 835064322000.0,
-   "vol": 255111300.0,
-   "sh": 24030764725,
-   "mcap": 78580600650750.0,
-   "hi": 3330.0,
-   "lo": 3220.0,
-   "ratio": 2.8,
-   "fnet": 300792183392.3852,
-   "live": 0,
-   "_c": 172091515425142.5
   },
   {
    "t": "BBRI",
@@ -520,6 +503,23 @@
    "fnet": 45945163637.597565,
    "live": 0,
    "_c": 37748938381599.0
+  },
+  {
+   "t": "TPIA",
+   "n": "Chandra Asri Pacific",
+   "px": 1930.0,
+   "prev": 1935.0,
+   "pct": -0.26,
+   "val": 402851865000.0,
+   "vol": 206590700.0,
+   "sh": 86511545092,
+   "mcap": 166967282027560.0,
+   "hi": 1990.0,
+   "lo": 1930.0,
+   "ratio": 0.8,
+   "fnet": -10752546311.456663,
+   "live": 0,
+   "_c": -43411493327165.6
   }
  ],
  "gainers": [
@@ -1230,23 +1230,6 @@
    "fnet": 38808410952.34284,
    "live": 0,
    "_c": -354253964032872.0
-  },
-  {
-   "t": "ANTM",
-   "n": "ANTAM Tbk",
-   "px": 3270.0,
-   "prev": 3200.0,
-   "pct": 2.19,
-   "val": 835064322000.0,
-   "vol": 255111300.0,
-   "sh": 24030764725,
-   "mcap": 78580600650750.0,
-   "hi": 3330.0,
-   "lo": 3220.0,
-   "ratio": 2.8,
-   "fnet": 300792183392.3852,
-   "live": 0,
-   "_c": 172091515425142.5
   },
   {
    "t": "BBRI",
@@ -15362,58 +15345,6 @@
    "pct": -2.53
   },
   {
-   "name": "소재",
-   "name_id": "Barang Baku",
-   "n": 93,
-   "adv": 18,
-   "dec": 62,
-   "val": 3278494129266.6655,
-   "mcap": 1585055633275981.0,
-   "top": [
-    {
-     "t": "AMMN",
-     "pct": -2.04
-    },
-    {
-     "t": "TPIA",
-     "pct": -0.26
-    },
-    {
-     "t": "BRPT",
-     "pct": -0.29
-    },
-    {
-     "t": "EMAS",
-     "pct": 0
-    },
-    {
-     "t": "BRMS",
-     "pct": -2.13
-    },
-    {
-     "t": "ANTM",
-     "pct": 2.19
-    },
-    {
-     "t": "MDKA",
-     "pct": -1.61
-    },
-    {
-     "t": "NCKL",
-     "pct": -4.98
-    },
-    {
-     "t": "MBMA",
-     "pct": -3.64
-    },
-    {
-     "t": "INCO",
-     "pct": -1.63
-    }
-   ],
-   "pct": -1.26
-  },
-  {
    "name": "금융",
    "name_id": "Keuangan",
    "n": 98,
@@ -15464,6 +15395,58 @@
     }
    ],
    "pct": -1.16
+  },
+  {
+   "name": "소재",
+   "name_id": "Barang Baku",
+   "n": 92,
+   "adv": 17,
+   "dec": 62,
+   "val": 2443429807266.665,
+   "mcap": 1506475032625231.0,
+   "top": [
+    {
+     "t": "AMMN",
+     "pct": -2.04
+    },
+    {
+     "t": "TPIA",
+     "pct": -0.26
+    },
+    {
+     "t": "BRPT",
+     "pct": -0.29
+    },
+    {
+     "t": "EMAS",
+     "pct": 0
+    },
+    {
+     "t": "BRMS",
+     "pct": -2.13
+    },
+    {
+     "t": "MDKA",
+     "pct": -1.61
+    },
+    {
+     "t": "NCKL",
+     "pct": -4.98
+    },
+    {
+     "t": "MBMA",
+     "pct": -3.64
+    },
+    {
+     "t": "INCO",
+     "pct": -1.63
+    },
+    {
+     "t": "INKP",
+     "pct": -2.15
+    }
+   ],
+   "pct": -1.44
   },
   {
    "name": "경기소비재",
@@ -16157,10 +16140,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6863.3,
+   "px": 6843.65,
    "prev": 7042.44,
-   "pct": -2.54,
-   "asof": "08:10",
+   "pct": -2.82,
+   "asof": "08:25",
    "live": true,
    "spark": [
     6836.48,
@@ -16177,17 +16160,20 @@
     6866.3,
     6857.98,
     6861.85,
-    6863.3
+    6858.61,
+    6856.68,
+    6845.05,
+    6843.65
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63554.64,
+   "px": 63427.43,
    "prev": 65128.81,
-   "pct": -2.42,
-   "asof": "08:15",
+   "pct": -2.61,
+   "asof": "08:30",
    "live": true,
    "spark": [
     63748.21,
@@ -16205,24 +16191,23 @@
     63578.31,
     63543.05,
     63521.29,
-    63554.64
+    63492.56,
+    63492.88,
+    63428.77,
+    63427.43
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24954.47,
-   "prev": 25274.96,
-   "pct": -1.27,
-   "asof": "09/08 종가",
-   "live": false,
+   "px": 24619.94,
+   "prev": 24954.47,
+   "pct": -1.34,
+   "asof": "08:30",
+   "live": true,
    "spark": [
-    25213.31,
-    25650.87,
-    25413.12,
-    25317.18,
-    25274.96
+    24619.94
    ]
   }
  ],
@@ -16309,6 +16294,20 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-11T08:35:00+07:00",
+   "date": "2026-09-11",
+   "time": "08:35",
+   "src": "IDX Channel",
+   "t": "Dua Anak Usaha ARKO Garap PLTA Pongbembe Senilai Rp287,98 Miliar",
+   "tags": [
+    "ARKO"
+   ],
+   "url": "https://www.idxchannel.com/market-news/dua-anak-usaha-arko-garap-plta-pongbembe-senilai-rp28798-miliar",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2024/07/18/ARKO.JPG",
+   "t_id": "Dua Anak Usaha ARKO Garap PLTA Pongbembe Senilai Rp287,98 Miliar",
+   "t_ko": "ARKO, 자회사 2곳 통해 Rp2,879억 규모 Pongbembe 수력발전소 개발"
+  },
   {
    "ts": "2026-09-11T07:59:00+07:00",
    "date": "2026-09-11",
@@ -16437,20 +16436,6 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2025/10/08/Raharja_Energi_Cepu_-_RATU_-_Okt_25.jpg",
    "t_ko": "RATU, 2026년 순이익 USD2,600만 달러 목표",
    "t_id": "Raharja Energi (RATU) Targetkan Laba Bersih Tembus USD26 Juta di 2026"
-  },
-  {
-   "ts": "2026-09-11T01:00:00+07:00",
-   "date": "2026-09-11",
-   "time": "01:00",
-   "src": "IDX Channel",
-   "t": "Rogoh USD46 Juta, RAJA Masuk Proyek FLNG Milik Genting Group",
-   "tags": [
-    "RAJA"
-   ],
-   "url": "https://www.idxchannel.com/market-news/rogoh-usd46-juta-raja-masuk-proyek-flng-milik-genting-group",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/03/07/rukun_raharja_raja.jpg",
-   "t_ko": "Rukun Raharja(RAJA), USD4,600만 투자해 Genting Group FLNG 사업 참여",
-   "t_id": "Rogoh USD46 Juta, RAJA Masuk Proyek FLNG Genting Group"
   },
   {
    "ts": "2026-09-10T21:29:23+07:00",
@@ -17321,6 +17306,67 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T08:43:57+07:00",
+   "date": "2026-09-11",
+   "time": "08:43",
+   "src": "CNBC",
+   "t": "Trump says he has no regrets about starting the Iran war as U.S. dials up economic pressure",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/us-iran-war-trump-hormuz-banks-oil-sanctions.html",
+   "g": 1,
+   "t_ko": "Trump, 대이란 경제 압박 강화 속 개전 후회 없어",
+   "t_id": "Trump Sebut Tak Menyesal Mulai Perang Iran saat AS Tingkatkan Tekanan Ekonomi"
+  },
+  {
+   "ts": "2026-09-11T08:37:07+07:00",
+   "date": "2026-09-11",
+   "time": "08:37",
+   "src": "CNBC",
+   "t": "Y Combinator’s Garry Tan says 'do nothing' about distillation as AI giants accuse China of copying their tech",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/y-combinator-garry-tan-says-do-nothing-about-distillation.html",
+   "g": 1,
+   "t_ko": "Y Combinator Garry Tan, AI 대기업의 중국 모방 비난에 무대응 조언",
+   "t_id": "Garry Tan Y Combinator Sarankan 'Diam Saja' soal Distilasi saat Raksasa AI Tuduh China Tiru Teknologi"
+  },
+  {
+   "ts": "2026-09-11T08:35:02+07:00",
+   "date": "2026-09-11",
+   "time": "08:35",
+   "src": "Bloomberg Technoz",
+   "t": "Rangkuman Rekomendasi Saham Hari Ini, 11 September 2026",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121228/rangkuman-rekomendasi-saham-hari-ini-11-september-2026",
+   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727155134.jpeg",
+   "t_id": "Rangkuman Rekomendasi Saham Hari Ini, 11 September 2026",
+   "t_ko": "오늘의 투자의견 정리"
+  },
+  {
+   "ts": "2026-09-11T08:35:01+07:00",
+   "date": "2026-09-11",
+   "time": "08:35",
+   "src": "Detik",
+   "t": "IHSG Melemah ke Level 6.500, Cek Rekomendasi Saham Hari Ini",
+   "tags": [],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8657906/ihsg-melemah-ke-level-6-500-cek-rekomendasi-saham-hari-ini",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/bursa-dan-valas-1789089568-1789089568859.jpeg?w=360&q=90",
+   "t_id": "IHSG Melemah ke Level 6.500, Cek Rekomendasi Saham Hari Ini",
+   "t_ko": "IHSG 6,500선으로 하락 — 오늘 투자의견 정리"
+  },
+  {
+   "ts": "2026-09-11T08:33:10+07:00",
+   "date": "2026-09-11",
+   "time": "08:33",
+   "src": "CNA",
+   "t": "Tencent-backed Enflame surges 188% in Shanghai debut after $912 million IPO",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/tencent-backed-enflame-surges-188-in-shanghai-debut-after-912-million-ipo-6377566",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--fjYhYnHr--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-11T013310Z_1_LYNXMPEM8A037_RTROPTP_3_CHINA-AI.JPG?itok=qTf-fEU_",
+   "t_ko": "Tencent 지원 Enflame, 상하이 상장 첫날 188% 급등",
+   "t_id": "Enflame Didukung Tencent Meroket 188% di Debut Shanghai Usai IPO $912 Juta"
+  },
+  {
    "ts": "2026-09-11T08:23:00+07:00",
    "date": "2026-09-11",
    "time": "08:23",
@@ -17329,8 +17375,8 @@
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/932211/peringatan-25-tahun-tragedi-911-tanpa-trump-dan-sorotan-wali-kota-muslim-new-york",
    "g": 1,
-   "t_id": "Peringatan 25 Tahun Tragedi 9/11: Tanpa Trump dan Sorotan Wali Kota Muslim New York",
-   "t_ko": "9/11 비극 25주년 — Trump와 뉴욕 무슬림 시장 배제"
+   "t_ko": "9/11 비극 25주년 — Trump와 뉴욕 무슬림 시장 배제",
+   "t_id": "Peringatan 25 Tahun Tragedi 9/11: Tanpa Trump dan Sorotan Wali Kota Muslim New York"
   },
   {
    "ts": "2026-09-11T08:22:37+07:00",
@@ -17341,8 +17387,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121226/investor-asing-net-sell-hampir-rp2-triliun-jadi-sebab-ihsg-turun",
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727155332.jpeg",
-   "t_id": "Investor Asing Net Sell Hampir Rp2 Triliun Jadi Sebab IHSG Turun",
-   "t_ko": "외국인 Rp2조 가까운 순매도에 IHSG 하락"
+   "t_ko": "외국인 Rp2조 가까운 순매도에 IHSG 하락",
+   "t_id": "Investor Asing Net Sell Hampir Rp2 Triliun Jadi Sebab IHSG Turun"
   },
   {
    "ts": "2026-09-11T08:15:21+07:00",
@@ -17569,18 +17615,6 @@
    "t_id": "Inflasi Grosir Jepang Tetap Tinggi di Agu, Perkuat Alasan Kenaikan Suku Bunga"
   },
   {
-   "ts": "2026-09-11T07:25:02+07:00",
-   "date": "2026-09-11",
-   "time": "07:25",
-   "src": "Bloomberg",
-   "t": "Japan’s Producer Price Gains Stay Elevated, Backing BOJ Hikes",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-11/japan-s-producer-price-gains-stay-elevated-backing-boj-hikes",
-   "g": 1,
-   "t_ko": "일본 8월 생산자물가 상승세 지속 — BOJ 추가 금리 인상 뒷받침",
-   "t_id": "Kenaikan Harga Produsen Jepang Tetap Tinggi, Dukung Kenaikan Suku Bunga BOJ"
-  },
-  {
    "ts": "2026-09-11T07:25:00+07:00",
    "date": "2026-09-11",
    "time": "07:25",
@@ -17593,18 +17627,6 @@
    "t_id": "50 Juta Warga RI Dapat Bansos ke Rekening 2027, Penggunaannya Bakal Diatur"
   },
   {
-   "ts": "2026-09-11T07:22:47+07:00",
-   "date": "2026-09-11",
-   "time": "07:22",
-   "src": "Bloomberg",
-   "t": "China Halts New Battery Factories on Capacity Concerns: Caixin",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-11/china-halts-new-battery-factories-on-capacity-concerns-caixin",
-   "g": 1,
-   "t_ko": "중국, 과잉 공급 우려로 신규 배터리 공장 건립 중단",
-   "t_id": "China Hentikan Pabrik Baterai Baru Akibat Khawatir Kapasitas Berlebih: Caixin"
-  },
-  {
    "ts": "2026-09-11T07:22:01+07:00",
    "date": "2026-09-11",
    "time": "07:22",
@@ -17615,19 +17637,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/03/10/teller-menunjukan-mata-uang-dolar-as-dan-rupiah-di-salah-satu-kantor-cabang-bank-mandiri-di-jakarta-senin-932026-salman-toyibijawa-pos-QHueb.webp",
    "t_ko": "대외 악재 2가지에 루피아화 USD당 Rp17,590으로 약세",
    "t_id": "2 Sentimen Pengaruhi Rupiah Melemah ke Rp 17.590 terhadap Dolar AS Hari Ini"
-  },
-  {
-   "ts": "2026-09-11T07:17:00+07:00",
-   "date": "2026-09-11",
-   "time": "07:17",
-   "src": "MarketWatch",
-   "t": "Adobe’s latest earnings leave Wall Street wanting more",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/adobes-latest-earnings-leave-wall-street-wanting-more-137ea782?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-14886165",
-   "t_ko": "Adobe의 최근 실적에 대한 월가 기대치 미달",
-   "t_id": "Kinerja Terbaru Adobe Kecewakan Wall Street"
   },
   {
    "ts": "2026-09-11T07:11:30+07:00",
@@ -17736,30 +17745,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/IzQ3AKZxBK7sX1RkOIrtwn4kJG4Aiv26w7akUmBO.webp",
    "t_ko": "Jasaraharja Putera, 리스크 관리 거버넌스 도입해 지속가능 성장 목표",
    "t_id": "Jasaraharja Putera Terapkan Tata Kelola Manajemen Risiko, Targetkan Pertumbuhan Berkelanjutan"
-  },
-  {
-   "ts": "2026-09-11T05:00:00+07:00",
-   "date": "2026-09-11",
-   "time": "05:00",
-   "src": "IDX Channel",
-   "t": "Antam Targetkan Pabrik Emas di Gresik Beroperasi 2028, Tambah Kapasitas Produksi 30 Ton per Tahun",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/antam-targetkan-pabrik-emas-di-gresik-beroperasi-2028-tambah-kapasitas-produksi-30-ton-per-tahun",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/04/17/antam_antm.jpg",
-   "t_ko": "Antam, Gresik 금 공장 2028년 가동 및 연산 30톤 확대 목표",
-   "t_id": "Antam Targetkan Pabrik Emas di Gresik Beroperasi 2028, Tambah Kapasitas Produksi 30 Ton per Tahun"
-  },
-  {
-   "ts": "2026-09-11T04:23:54+07:00",
-   "date": "2026-09-11",
-   "time": "04:23",
-   "src": "Jawa Pos",
-   "t": "Pemanfaatan AI dalam Analisis Klaim Asuransi dan Deteksi Fraud",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609100487/pemanfaatan-ai-dalam-analisis-klaim-asuransi-dan-deteksi-fraud",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/ilustrasi-asuransi-perlindungan-jiwa-pinterest-DXfQ2.webp",
-   "t_ko": "보험금 청구 분석 및 사기 적발에 AI 활용",
-   "t_id": "Pemanfaatan AI dalam Analisis Klaim Asuransi dan Deteksi Fraud"
   }
  ],
  "kisi_news": [
@@ -17933,8 +17918,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.00",
-   "d": -0.48,
-   "ytd": 11.91,
+   "d": -0.45,
+   "ytd": 11.95,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17979,9 +17964,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.55",
-   "d": 6.71,
-   "ytd": 78.6,
+   "v": "102.33",
+   "d": 6.48,
+   "ytd": 78.21,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17991,9 +17976,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,366.0",
-   "d": -1.93,
-   "ytd": 0.93,
+   "v": "4,370.6",
+   "d": -1.83,
+   "ytd": 1.04,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18003,9 +17988,9 @@
   },
   {
    "k": "석탄 Newcastle (US$/t)",
-   "v": "147.00",
+   "v": "147.50",
    "d": 0.0,
-   "ytd": 36.74,
+   "ytd": 37.21,
    "inv": false,
    "note": "investing.com · 연초 107.5",
    "k_ko": "석탄 Newcastle (US$/t)",
@@ -18015,27 +18000,25 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,610",
-   "d": -0.1,
-   "ytd": -0.43,
+   "v": "확인 필요",
+   "d": null,
+   "ytd": null,
    "inv": false,
-   "note": "investing.com · 연초 16,682",
+   "note": null,
    "k_ko": "니켈 LME (US$/t)",
-   "k_id": "Nikel LME (US$/t)",
-   "note_ko": "investing.com · 연초 16,682",
-   "note_id": "investing.com · Awal tahun 16,682"
+   "k_id": "Nikel LME (US$/t)"
   },
   {
    "k": "CPO (MYR/t)",
-   "v": "4,911",
-   "d": 0.14,
-   "ytd": 21.26,
+   "v": "확인 필요",
+   "d": null,
+   "ytd": null,
    "inv": false,
-   "note": "Bursa Malaysia FCPO 근월물 · investing.com · 연초 4,050",
+   "note": "Bursa Malaysia FCPO 근월물",
    "k_ko": "CPO (MYR/t)",
    "k_id": "CPO (MYR/t)",
-   "note_ko": "Bursa Malaysia FCPO 근월물 · investing.com · 연초 4,050",
-   "note_id": "FCPO Bursa Malaysia kontrak terdekat · investing.com · Awal tahun 4,050"
+   "note_ko": "Bursa Malaysia FCPO 근월물",
+   "note_id": "FCPO Bursa Malaysia kontrak terdekat"
   }
  ],
  "calendar": [
@@ -25944,7 +25927,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-10 17:23",
-  "pc_age_min": 910,
+  "pc_age_min": 927,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27386,9 +27369,9 @@
   },
   "model": "gemini-3.5-flash-lite",
   "index": {
-   "ko": "외국인 투자자 순매도 확대와 대형 은행주(BBRI·BBCA) 하락세 영향으로 IHSG 1.33% 하락.",
-   "id": "IHSG melemah 1,33% akibat peningkatan aksi jual bersih investor asing dan penurunan saham bank besar (BBRI·BBCA).",
-   "ts": "2026-09-11T08:33:50.997612+07:00"
+   "ko": "외국인 투자자의 대규모 순매도와 주요 대형주(BBRI, BBCA) 약세로 IHSG 1.33% 하락.",
+   "id": "IHSG melemah 1,33% akibat aksi jual bersih besar-besaran oleh investor asing serta pelemahan saham berkapitalisasi besar (BBRI, BBCA).",
+   "ts": "2026-09-11T08:50:51.707992+07:00"
   }
  },
  "mcap": [
@@ -27587,7 +27570,7 @@
    "s_news": 100,
    "s_size": 56,
    "s_surge": 45,
-   "srcs": 1
+   "srcs": 0
   },
   {
    "t": "TUGU",
