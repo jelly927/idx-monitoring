@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 13:28",
+ "updated": "2026-09-11 13:34",
  "delay_min": 0,
  "fx_basis": "13.09 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,345 · 13:01 Yahoo",
- "idr_per_krw": 13.0934,
+ "idr_per_krw": 13.0939,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -325,7 +325,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 13:27",
+   "asof": "investing.com 13:33",
    "unit": "bp"
   }
  ],
@@ -339,7 +339,7 @@
   "value_idr": 21546688746644,
   "volume": 48552221241,
   "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 13:24",
-  "rank_asof": "13:27",
+  "rank_asof": "13:33",
   "rank_date": "2026-09-11",
   "adv": 143,
   "dec": 552,
@@ -15386,10 +15386,10 @@
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63959.75,
+   "px": 64001.85,
    "prev": 65128.81,
-   "pct": -1.79,
-   "asof": "13:10",
+   "pct": -1.73,
+   "asof": "13:15",
    "live": true,
    "spark": [
     63748.21,
@@ -15456,17 +15456,18 @@
     63943.52,
     63913.22,
     63976.49,
-    63959.75
+    63958.39,
+    64001.85
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24825.39,
+   "px": 24838.87,
    "prev": 24954.47,
-   "pct": -0.52,
-   "asof": "13:10",
+   "pct": -0.46,
+   "asof": "13:15",
    "live": true,
    "spark": [
     24603.11,
@@ -15515,7 +15516,8 @@
     24831.96,
     24824.78,
     24823.5,
-    24825.39
+    24839.17,
+    24838.87
    ]
   }
  ],
@@ -15603,6 +15605,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-11T13:26:00+07:00",
+   "date": "2026-09-11",
+   "time": "13:26",
+   "src": "IDX Channel",
+   "t": "Rantai Pasok Global Bergejolak, KLBF Tinjau Ulang Alokasi Capex Rp1 Triliun",
+   "tags": [
+    "KLBF"
+   ],
+   "url": "https://www.idxchannel.com/market-news/rantai-pasok-global-bergejolak-klbf-tinjau-ulang-alokasi-capex-rp1-triliun",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/07/23/Kalbe_Farma_KLBF.jpg",
+   "t_id": "Rantai Pasok Global Bergejolak, KLBF Tinjau Ulang Alokasi Capex Rp1 Triliun",
+   "t_ko": "글로벌 공급망 흔들림에 KLBF, 설비투자 Rp1조 배정 재검토"
+  },
+  {
    "ts": "2026-09-11T13:21:26+07:00",
    "date": "2026-09-11",
    "time": "13:21",
@@ -15613,8 +15629,8 @@
    ],
    "url": "https://finance.detik.com/bursa-dan-valas/d-8658306/haji-isam-dikabarkan-bidik-62-saham-byan-rp-52-7-t-jauh-di-bawah-nilai-pasar",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/08/25/haji-isam-1756103407444_169.jpeg?w=360&q=90",
-   "t_id": "Haji Isam Dikabarkan Bidik 62% Saham BYAN Rp 52,7 T, Jauh di Bawah Nilai Pasar",
-   "t_ko": "Haji Isam, 시장가 한참 밑도는 Rp52.7조에 BYAN 지분 62% 인수 추진설"
+   "t_ko": "Haji Isam, 시장가 한참 밑도는 Rp52.7조에 BYAN 지분 62% 인수 추진설",
+   "t_id": "Haji Isam Dikabarkan Bidik 62% Saham BYAN Rp 52,7 T, Jauh di Bawah Nilai Pasar"
   },
   {
    "ts": "2026-09-11T13:20:00+07:00",
@@ -15627,8 +15643,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121258/daftar-broker-yang-lepas-saham-byan-di-tengah-tawaran-us-3-miliar",
    "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260604121736.jpeg",
-   "t_id": "Daftar Broker yang Lepas Saham BYAN di Tengah Tawaran US$3 Miliar",
-   "t_ko": "30억 달러 규모 인수 제안 속 BYAN 주식 순매도 증권사 명단"
+   "t_ko": "30억 달러 규모 인수 제안 속 BYAN 주식 순매도 증권사 명단",
+   "t_id": "Daftar Broker yang Lepas Saham BYAN di Tengah Tawaran US$3 Miliar"
   },
   {
    "ts": "2026-09-11T13:10:00+07:00",
@@ -16033,32 +16049,6 @@
     "rights issue",
     "data center",
     "dilusi"
-   ]
-  },
-  {
-   "ts": "2026-09-11T10:09:00+07:00",
-   "date": "2026-09-11",
-   "time": "10:09",
-   "src": "IDX Channel",
-   "t": "SMLE Perkuat Diversifikasi, Bidik Pertumbuhan dari Produk Bernilai Tambah",
-   "tags": [
-    "SMLE"
-   ],
-   "url": "https://www.idxchannel.com/market-news/smle-perkuat-diversifikasi-bidik-pertumbuhan-dari-produk-bernilai-tambah",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/11/smle_ist.jpg",
-   "t_ko": "SMLE, 사업 다각화 강화해 고부가가치 제품서 성장 추진",
-   "t_id": "SMLE Perkuat Diversifikasi, Bidik Pertumbuhan dari Produk Bernilai Tambah",
-   "ai_ko": "Sinergi Multi Lestarindo(SMLE), 원료 유통을 넘어 특수원료·특수화학·자체브랜드와 R&D로 사업 다각화 추진 / 2026년 Emmi Nutritional Solutions, BioGrowing 등과 제휴해 유제품 원료·프로바이오틱스 포트폴리오 확대",
-   "ai_id": "Sinergi Multi Lestarindo (SMLE) memperkuat diversifikasi lewat specialty ingredients, specialty chemicals, own brand, serta penguatan R&D untuk bertransformasi menjadi specialty chemical solutions partner. Sepanjang 2026 perseroan menggandeng Emmi Nutritional Solutions untuk bahan baku dairy dan BioGrowing untuk portofolio probiotik dan starter cultures.",
-   "ai_tags": [
-    "사업다각화",
-    "제휴",
-    "화학"
-   ],
-   "ai_tags_id": [
-    "diversifikasi",
-    "kemitraan",
-    "kimia"
    ]
   },
   {
@@ -17054,6 +17044,18 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T13:34:18+07:00",
+   "date": "2026-09-11",
+   "time": "13:34",
+   "src": "Republika",
+   "t": "Honda Raih Peringkat Bintang 5 dari FIA Road Safety Index",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl6sx6348/honda-raih-peringkat-bintang-5-dari-fia-road-safety-index",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/honda-menjadi-perusahaan-pertama-di-dunia-yang-meraih-peringkat_260911133402-176.jpeg",
+   "t_id": "Honda Raih Peringkat Bintang 5 dari FIA Road Safety Index",
+   "t_ko": "Honda, FIA Road Safety Index 5 스타 획득"
+  },
+  {
    "ts": "2026-09-11T13:26:50+07:00",
    "date": "2026-09-11",
    "time": "13:26",
@@ -17077,6 +17079,18 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2025/08/06/WhatsApp-Image-2025-08-06-at-34848-PM-1-3674763705.jpeg",
    "t_ko": "Anak Krakatau 화산 분화에 따른 여행자보험금 지급 거절 사유",
    "t_id": "Alasan Klaim Asuransi Perjalanan Ditolak karena Erupsi Gunung Anak Krakatau"
+  },
+  {
+   "ts": "2026-09-11T13:21:31+07:00",
+   "date": "2026-09-11",
+   "time": "13:21",
+   "src": "Medcom",
+   "t": "Begini Cara Cek Desil Bansos 2026 Lewat Situs Kemensos, NIK KTP Jadi Kuncinya",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/bisnis/JKR2ey3K-begini-cara-cek-desil-bansos-2026-lewat-situs-kemensos-nik-ktp-jadi-kuncinya",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841504/C1HEe872Kj.jpg?w=720",
+   "t_id": "Begini Cara Cek Desil Bansos 2026 Lewat Situs Kemensos, NIK KTP Jadi Kuncinya",
+   "t_ko": "Kemensos, 2026년 사회보장 데실 조회 서비스 개시"
   },
   {
    "ts": "2026-09-11T13:15:26+07:00",
@@ -17109,8 +17123,20 @@
    "t": "Mulai Oktober 2026, Seluruh Warga Usia 17 Tahun ke Atas Bakal Dibuatkan Rekening Plus Saldo Rp50 Ribu",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932267/mulai-oktober-2026-seluruh-warga-usia-17-tahun-ke-atas-bakal-dibuatkan-rekening-plus-saldo-rp50-ribu",
-   "t_id": "Mulai Oktober 2026, Seluruh Warga Usia 17 Tahun ke Atas Bakal Dibuatkan Rekening Plus Saldo Rp50 Ribu",
-   "t_ko": "2026년 10월부터 17세 이상 전 국민에게 Rp5만 잔고 계좌 개설"
+   "t_ko": "2026년 10월부터 17세 이상 전 국민에게 Rp5만 잔고 계좌 개설",
+   "t_id": "Mulai Oktober 2026, Seluruh Warga Usia 17 Tahun ke Atas Bakal Dibuatkan Rekening Plus Saldo Rp50 Ribu"
+  },
+  {
+   "ts": "2026-09-11T13:11:20+07:00",
+   "date": "2026-09-11",
+   "time": "13:11",
+   "src": "Bloomberg",
+   "t": "Global Bonds Hit By Selloff Ahead of US CPI",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-11/insight-with-haslinda-amin-9-11-2026-video",
+   "g": 1,
+   "t_ko": "미국 CPI 앞두고 글로벌 채권 매물 출하",
+   "t_id": "Obligasi Global Tertekan Aksi Jual Jelang IHK AS"
   },
   {
    "ts": "2026-09-11T13:10:30+07:00",
@@ -17121,8 +17147,8 @@
    "tags": [],
    "url": "https://finance.detik.com/energi/d-8658289/jurus-pertamina-atasi-antrean-panjang-di-spbu",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/direktur-pertamina-patra-niaga-diskusi-dengan-media-1789106889353_169.jpeg?w=360&q=90",
-   "t_id": "Jurus Pertamina Atasi Antrean Panjang di SPBU",
-   "t_ko": "Pertamina, 주유소 장거리 대기 해소 대책 마련"
+   "t_ko": "Pertamina, 주유소 장거리 대기 해소 대책 마련",
+   "t_id": "Jurus Pertamina Atasi Antrean Panjang di SPBU"
   },
   {
    "ts": "2026-09-11T13:08:13+07:00",
@@ -17463,41 +17489,6 @@
    "g": 1,
    "t_ko": "LV, 중국 상표권 소송 승소에도 수백만 달러 손실 본 이유",
    "t_id": "Cara LV Rugi Jutaan Dolar Lewat Kemenangan Sengketa Merek di China"
-  },
-  {
-   "ts": "2026-09-11T12:07:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:07",
-   "src": "Medcom",
-   "t": "Gen Z Effect: Merek Mewah Mulai Jual Citra Pintar, Bukan Sekadar Gaya",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/JKR2eR7K-gen-z-effect-merek-mewah-mulai-jual-citra-pintar-bukan-sekadar-gaya",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841448/JohnXw2TiL.jpg?w=720",
-   "t_ko": "Gen Z 효과: 명품 브랜드, 과시 대신 지적 이미지 판매",
-   "t_id": "Efek Gen Z: Merek Mewah Mulai Jual Citra Pintar, Bukan Sekadar Gaya"
-  },
-  {
-   "ts": "2026-09-11T12:05:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:05",
-   "src": "Katadata",
-   "t": "Debit Air Sungai Mahakam Menyusut, Kehidupan Pesut Terancam",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/energi-baru/6aa38b7ba5030/debit-air-sungai-mahakam-menyusut-kehidupan-pesut-terancam",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/09/08/Pesut_Mahakam-2023_09_08-20_29_30_10e714e8c1d31f101b8ad80293606eb9_620x413_thumb.jpeg",
-   "t_ko": "Mahakam 강 수위 하락으로 돌고래 생존 위협",
-   "t_id": "Debit Air Sungai Mahakam Menyusut, Kehidupan Pesut Terancam"
-  },
-  {
-   "ts": "2026-09-11T12:00:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:00",
-   "src": "Media Indonesia",
-   "t": "Perawatan Alat Berat Penting untuk Jaga Operasional Tambang dan Migas",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932250/perawatan-alat-berat-penting-untuk-jaga-operasional-tambang-dan-migas",
-   "t_ko": "광산·석유·가스 운영 유지를 위한 중장비 정비의 중요성",
-   "t_id": "Perawatan Alat Berat Penting untuk Jaga Operasional Tambang dan Migas"
   }
  ],
  "kisi_news": [
@@ -17705,9 +17696,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.01",
-   "d": -0.06,
-   "ytd": 0.75,
+   "v": "99.03",
+   "d": -0.0,
+   "ytd": 0.76,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17717,9 +17708,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.16",
-   "d": -1.57,
-   "ytd": 76.18,
+   "v": "101.31",
+   "d": -1.13,
+   "ytd": 76.44,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17729,9 +17720,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,398.5",
-   "d": 0.71,
-   "ytd": 1.69,
+   "v": "4,394.5",
+   "d": 0.63,
+   "ytd": 1.59,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17753,9 +17744,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,592",
-   "d": -0.21,
-   "ytd": -0.54,
+   "v": "16,577",
+   "d": -0.3,
+   "ytd": -0.63,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25805,7 +25796,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 13:24",
-  "pc_age_min": 4,
+  "pc_age_min": 10,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
