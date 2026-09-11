@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 20:54",
+ "updated": "2026-09-11 21:07",
  "delay_min": 0,
- "fx_basis": "13.14 IDR/KRW · USD/IDR 17,595 · USD/KRW 1,339 · 17:31 Yahoo",
- "idr_per_krw": 13.1356,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,338 · 21:00 Yahoo",
+ "idr_per_krw": 13.1045,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -275,9 +275,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17595.0,
+   "px": 17531.0,
    "prev": 17501.0,
-   "pct": 0.54,
+   "pct": 0.17,
    "spark": [
     17791.0,
     17822.0,
@@ -302,7 +302,7 @@
     17664.0,
     17588.0,
     17501.0,
-    17595.0
+    17531.0
    ],
    "inv": true,
    "asof": "Yahoo"
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 20:52",
+   "asof": "investing.com 21:06",
    "unit": "bp"
   }
  ],
@@ -15031,51 +15031,60 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7663.9,
+   "px": 7665.7,
    "prev": 7591.7,
-   "pct": 0.95,
-   "asof": "20:50",
+   "pct": 0.97,
+   "asof": "21:05",
    "live": true,
    "spark": [
     7672.47,
     7667.72,
     7668.21,
     7663.06,
-    7663.9
+    7664.55,
+    7676.27,
+    7668.12,
+    7665.7
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26358.19,
+   "px": 26367.55,
    "prev": 26081.72,
-   "pct": 1.06,
-   "asof": "20:50",
+   "pct": 1.1,
+   "asof": "21:05",
    "live": true,
    "spark": [
     26364.04,
     26359.06,
     26364.26,
     26355.99,
-    26358.19
+    26361.36,
+    26409.99,
+    26371.71,
+    26367.55
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52566.36,
+   "px": 52633.18,
    "prev": 52064.1,
-   "pct": 0.96,
-   "asof": "20:50",
+   "pct": 1.09,
+   "asof": "21:05",
    "live": true,
    "spark": [
     52691.44,
     52672.79,
     52624.87,
     52515.81,
-    52566.36
+    52550.94,
+    52663.08,
+    52670.06,
+    52633.18
    ]
   },
   {
@@ -15419,8 +15428,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121313/ubah-arah-bisnis-dari-furnitur-ke-pusat-data-nexai-incar-rp2-5t",
    "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260619152443.jpg",
-   "t_id": "Ubah Arah Bisnis dari Furnitur ke Pusat Data, NexAI Incar Rp2,5T",
-   "t_ko": "NexAI, 가구에서 데이터센터로 사업 전환하며 Rp2.5조 조달 추진"
+   "t_ko": "NexAI, 가구에서 데이터센터로 사업 전환하며 Rp2.5조 조달 추진",
+   "t_id": "Ubah Arah Bisnis dari Furnitur ke Pusat Data, NexAI Incar Rp2,5T"
   },
   {
    "ts": "2026-09-11T20:45:51+07:00",
@@ -16427,9 +16436,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-11T20:48:49+07:00",
+   "ts": "2026-09-11T21:02:38+07:00",
    "date": "2026-09-11",
-   "time": "20:48",
+   "time": "21:02",
    "src": "CNBC",
    "t": "Leopold Aschenbrenner's Situational Awareness is active in options market, sources say",
    "tags": [],
@@ -16437,6 +16446,54 @@
    "g": 1,
    "t_ko": "Leopold Aschenbrenner의 시추에이셔널 어웨어니스, 옵션 시장서 활성화",
    "t_id": "Situational Awareness Leopold Aschenbrenner Ramai di Pasar Opsi, Kata Sumber"
+  },
+  {
+   "ts": "2026-09-11T20:58:20+07:00",
+   "date": "2026-09-11",
+   "time": "20:58",
+   "src": "BBC",
+   "t": "US inflation holds steady as diesel prices pass $6 a gallon",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/cly41rdkrleo?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/39dc/live/efa1fdd0-addb-11f1-8b98-35ffe039e825.jpg",
+   "t_ko": "갤런당 6달러 넘은 디젤 가격에 미국 인플레이션 유지",
+   "t_id": "Inflasi AS Stabil Saat Harga Diesel Tembus $6 per Galon"
+  },
+  {
+   "ts": "2026-09-11T20:58:00+07:00",
+   "date": "2026-09-11",
+   "time": "20:58",
+   "src": "Media Indonesia",
+   "t": "Indonesia-Hong Kong Jajaki Pengembangan Rantai Pasok SAF",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932456/indonesia-hong-kong-jajaki-pengembangan-rantai-pasok-saf",
+   "t_ko": "인도네시아-홍콩, 지속가능항공유(SAF) 공급망 구축 협력 추진",
+   "t_id": "Indonesia-Hong Kong Jajaki Pengembangan Rantai Pasok SAF"
+  },
+  {
+   "ts": "2026-09-11T20:53:00+07:00",
+   "date": "2026-09-11",
+   "time": "20:53",
+   "src": "Media Indonesia",
+   "t": "BPS Manfaatkan Sensus Ekonomi 2026 untuk Perkuat DTSEN",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932457/bps-manfaatkan-sensus-ekonomi-2026-untuk-perkuat-dtsen",
+   "t_id": "BPS Manfaatkan Sensus Ekonomi 2026 untuk Perkuat DTSEN",
+   "t_ko": "BPS, 2026년 경제총조사 활용해 DTSEN 강화"
+  },
+  {
+   "ts": "2026-09-11T20:52:00+07:00",
+   "date": "2026-09-11",
+   "time": "20:52",
+   "src": "WSJ",
+   "t": "Stocks Climb as Inflation Figure Boosts Odds of Rate Hike Next Week",
+   "tags": [],
+   "url": "https://www.wsj.com/finance/stocks/stock-futures-nudge-up-yields-slip-but-markets-remain-on-edge-035097c4?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-948172",
+   "t_ko": "물가 지표 호조에 다음 주 금리 인상 기대감 유입되며 증시 상승",
+   "t_id": "Saham Menguat Seiring Angka Inflasi Kerek Peluang Kenaikan Suku Bunga Pekan Depan"
   },
   {
    "ts": "2026-09-11T20:46:36+07:00",
@@ -16449,6 +16506,17 @@
    "g": 1,
    "t_ko": "8월 인플레이션 지속으로 연준 추가 금리 인상 가능성",
    "t_id": "Inflasi Berlanjut di Agu, The Fed Berpotensi Kerek Suku Bunga"
+  },
+  {
+   "ts": "2026-09-11T20:45:00+07:00",
+   "date": "2026-09-11",
+   "time": "20:45",
+   "src": "Media Indonesia",
+   "t": "Reputasi dan Keterlibatan Karyawan Jadi Kunci Bisnis Berkelanjutan",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932454/reputasi-dan-keterlibatan-karyawan-jadi-kunci-bisnis-berkelanjutan",
+   "t_id": "Reputasi dan Keterlibatan Karyawan Jadi Kunci Bisnis Berkelanjutan",
+   "t_ko": "지속가능 경영의 핵심은 평판과 임직원 참여"
   },
   {
    "ts": "2026-09-11T20:43:58+07:00",
@@ -16479,12 +16547,12 @@
    "date": "2026-09-11",
    "time": "20:36",
    "src": "Katadata",
-   "t": "Kerap Jadi Alat Politik, Pemerintah Diminta Ganti Bantuan Sembako jadi Uang",
+   "t": "Pemerintah Diminta Ganti Bantuan Sembako jadi Uang Tunai, Ini Alasannya",
    "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa403ed90633/kerap-jadi-alat-politik-pemerintah-diminta-ganti-bantuan-sembako-jadi-uang",
+   "url": "https://katadata.co.id/finansial/makro/6aa4091bb1296/pemerintah-diminta-ganti-bantuan-sembako-jadi-uang-tunai-ini-alasannya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/2026_09_10-13_25_00_9342bbf0-acec-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "정치적 도구 전락 지적에 정부 생필품 지원금 현금 전환 요구",
-   "t_id": "Kerap Jadi Alat Politik, Pemerintah Diminta Ganti Bantuan Sembako jadi Uang"
+   "t_id": "Pemerintah Diminta Ganti Bantuan Sembako jadi Uang Tunai, Ini Alasannya",
+   "t_ko": "정부에 식료품 지원금 현금 전환 요구 — 배경과 전망"
   },
   {
    "ts": "2026-09-11T20:35:29+07:00",
@@ -16522,19 +16590,6 @@
    "g": 1,
    "t_ko": "미국 CPI 상승에 금리 결정 앞둔 Kevin Warsh 연준 신뢰도 시험대",
    "t_id": "Analisis: CPI Panas Pertaruhkan Kredibilitas Fed Kevin Warsh Jelang Keputusan Suku Bunga"
-  },
-  {
-   "ts": "2026-09-11T20:32:24+07:00",
-   "date": "2026-09-11",
-   "time": "20:32",
-   "src": "BBC",
-   "t": "US inflation holds steady as diesel prices pass $6 a gallon",
-   "tags": [],
-   "url": "https://www.bbc.co.uk/news/articles/cly41rdkrleo?at_medium=RSS&at_campaign=rss",
-   "g": 1,
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/39dc/live/efa1fdd0-addb-11f1-8b98-35ffe039e825.jpg",
-   "t_ko": "갤런당 6달러 넘은 디젤 가격에 미국 인플레이션 유지",
-   "t_id": "Inflasi AS Stabil Saat Harga Diesel Tembus $6 per Galon"
   },
   {
    "ts": "2026-09-11T20:31:48+07:00",
@@ -16645,18 +16700,6 @@
    "g": 1,
    "t_ko": "8월 물가 지표 발표 후 주식·채권 동반 상승",
    "t_id": "PANDANGAN: Saham dan Obligasi Menguat Usai Laporan Inflasi Agustus"
-  },
-  {
-   "ts": "2026-09-11T20:14:06+07:00",
-   "date": "2026-09-11",
-   "time": "20:14",
-   "src": "CNBC",
-   "t": "Jim Cramer's top 10 things to watch in the stock market Friday",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/jim-cramers-top-10-things-to-watch-in-the-stock-market-friday.html",
-   "g": 1,
-   "t_ko": "Jim Cramer, 금요일 증시 주요 관전 포인트 10선 제시",
-   "t_id": "10 Hal Penting Pantauan Jim Cramer di Pasar Saham Jumat"
   },
   {
    "ts": "2026-09-11T20:08:13+07:00",
@@ -16822,42 +16865,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/10/02/2025_10_02-16_23_00_07b5f35b-9f75-11f0-b51a-9f3be5b34930_620x413_thumb.jpg",
    "t_ko": "BPS, 지원금 지급에 적용되는 데실 산정 방법론 공개",
    "t_id": "BPS Beberkan Metodologi Penetapan Desil yang Digunakan untuk Penyaluran Bansos"
-  },
-  {
-   "ts": "2026-09-11T19:18:09+07:00",
-   "date": "2026-09-11",
-   "time": "19:18",
-   "src": "Jawa Pos",
-   "t": "Tanggapi Ketidaksesuaian Desil, BPS Buka Suara Soal Pembaruan Data DTSEN",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609110400/tanggapi-ketidaksesuaian-desil-bps-buka-suara-soal-pembaruan-data-dtsen",
-   "img": "https://cdn-assets.jawapos.com/images/1/jawapos/2019/01/bps-inflasi-november-2018-sebesar-027-persen_m_.jpg",
-   "t_ko": "BPS, 데실 불일치 지적에 DTSEN 데이터 갱신 입장 표명",
-   "t_id": "Tanggapi Ketidaksesuaian Desil, BPS Buka Suara Soal Pembaruan Data DTSEN"
-  },
-  {
-   "ts": "2026-09-11T19:00:06+07:00",
-   "date": "2026-09-11",
-   "time": "19:00",
-   "src": "Detik",
-   "t": "Kemensos: Butuh Bansos Silakan Minta, Tak Minta Dianggap Tak Butuh",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8658932/kemensos-butuh-bansos-silakan-minta-tak-minta-dianggap-tak-butuh",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/30/ilustrasi-cek-nama-penerima-bansos-1785376578472_169.png?w=360&q=90",
-   "t_ko": "사회부, 지원금 필요하면 신청해야 하며 미신청시 수요 없는 것으로 간주",
-   "t_id": "Kemensos: Butuh Bansos Silakan Minta, Tak Minta Dianggap Tak Butuh"
-  },
-  {
-   "ts": "2026-09-11T19:00:00+07:00",
-   "date": "2026-09-11",
-   "time": "19:00",
-   "src": "Republika",
-   "t": "Nindya Karya Perkuat Rantai Pasok Lewat Strategic Partnership Forum 2026",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl716z416/nindya-karya-perkuat-rantai-pasok-lewat-strategic-partnership-forum-2026",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/pt-nindya-karya-persero-menggelar-strategic-partnership-forum-spf_260911163224-992.jpeg",
-   "t_ko": "Nindya Karya, Strategic Partnership Forum 2026로 공급망 강화",
-   "t_id": "Nindya Karya Perkuat Rantai Pasok Lewat Strategic Partnership Forum 2026"
   }
  ],
  "kisi_news": [
@@ -17017,9 +17024,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,595",
-   "d": 0.54,
-   "ytd": 5.23,
+   "v": "17,531",
+   "d": 0.17,
+   "ytd": 4.85,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -17029,9 +17036,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.11",
-   "d": 0.39,
-   "ytd": 12.89,
+   "v": "13.09",
+   "d": 0.2,
+   "ytd": 12.68,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17041,9 +17048,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.918%",
-   "d": -0.53,
-   "ytd": 18.14,
+   "v": "4.926%",
+   "d": -0.36,
+   "ytd": 18.33,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17064,9 +17071,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.06",
-   "d": -0.09,
-   "ytd": 0.79,
+   "v": "99.02",
+   "d": -0.13,
+   "ytd": 0.76,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17076,9 +17083,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.03",
-   "d": -4.06,
-   "ytd": 72.47,
+   "v": "99.07",
+   "d": -4.02,
+   "ytd": 72.54,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17088,9 +17095,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,433.6",
-   "d": 2.04,
-   "ytd": 2.5,
+   "v": "4,431.7",
+   "d": 2.0,
+   "ytd": 2.45,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17136,20 +17143,6 @@
   }
  ],
  "calendar": [
-  {
-   "date": "2026-08-31",
-   "time": "20:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Chicago PMI  (Aug)",
-   "imp": 3,
-   "exp": "57.8",
-   "prev": "57.6",
-   "act": "47.1",
-   "src": "investing.com",
-   "title_ko": "8월 시카고 PMI",
-   "title_id": "PMI Chicago (Agustus)"
-  },
   {
    "date": "2026-09-01",
    "time": "07:30",
@@ -18302,10 +18295,24 @@
    "imp": 3,
    "exp": null,
    "prev": "5.216%",
-   "act": null,
+   "act": "5.308%",
    "src": "investing.com",
    "title_ko": "30년물 국채 입찰",
    "title_id": "Lelang Obligasi AS Tenor 30 Tahun"
+  },
+  {
+   "date": "2026-09-11",
+   "time": "03:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Fed's Balance Sheet",
+   "imp": 2,
+   "exp": null,
+   "prev": "6,737B",
+   "act": "6,741B",
+   "src": "investing.com",
+   "title_ko": "연준 대차대조표",
+   "title_id": "Neraca The Fed"
   },
   {
    "date": "2026-09-11",
@@ -18344,8 +18351,9 @@
    "imp": 3,
    "exp": "0.4%",
    "prev": "0.1%",
-   "act": null,
+   "act": "0.4%",
    "src": "manual",
+   "act_src": "investing.com",
    "title_ko": "美 8월 CPI",
    "title_id": "Inflasi (CPI) AS Agustus"
   },
@@ -18358,8 +18366,9 @@
    "imp": 3,
    "exp": "0.2%",
    "prev": "0.2%",
-   "act": null,
+   "act": "0.3%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "8월 근원 CPI (MoM)",
    "title_id": "CPI Inti AS (MoM) (Agu)"
   },
@@ -18372,7 +18381,7 @@
    "imp": 2,
    "exp": null,
    "prev": "4.0%",
-   "act": null,
+   "act": "4.6%",
    "src": "investing.com",
    "title_ko": "9월 미시간대 1년 기대인플레이션",
    "title_id": "Ekspektasi Inflasi 1 Tahun Michigan (Sep)"
@@ -18384,9 +18393,9 @@
    "country": "US",
    "title": "Michigan Consumer Expectations  (Sep)",
    "imp": 2,
-   "exp": null,
+   "exp": "50.5",
    "prev": "51.5",
-   "act": null,
+   "act": "45.8",
    "src": "investing.com",
    "title_ko": "9월 미시간대 소비자기대지수",
    "title_id": "Ekspektasi Konsumen Michigan (Sep)"
@@ -25154,7 +25163,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 201,
+  "pc_age_min": 214,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
