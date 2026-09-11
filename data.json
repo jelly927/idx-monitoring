@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 21:07",
+ "updated": "2026-09-11 21:29",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,338 · 21:00 Yahoo",
- "idr_per_krw": 13.1045,
+ "fx_basis": "13.09 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,339 · 21:21 Yahoo",
+ "idr_per_krw": 13.0889,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 21:06",
+   "asof": "investing.com 21:27",
    "unit": "bp"
   }
  ],
@@ -15031,10 +15031,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7665.7,
+   "px": 7672.49,
    "prev": 7591.7,
-   "pct": 0.97,
-   "asof": "21:05",
+   "pct": 1.06,
+   "asof": "21:25",
    "live": true,
    "spark": [
     7672.47,
@@ -15044,17 +15044,21 @@
     7664.55,
     7676.27,
     7668.12,
-    7665.7
+    7667.08,
+    7662.42,
+    7670.43,
+    7671.29,
+    7672.49
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26367.55,
+   "px": 26400.58,
    "prev": 26081.72,
-   "pct": 1.1,
-   "asof": "21:05",
+   "pct": 1.22,
+   "asof": "21:25",
    "live": true,
    "spark": [
     26364.04,
@@ -15064,17 +15068,21 @@
     26361.36,
     26409.99,
     26371.71,
-    26367.55
+    26360.02,
+    26356.33,
+    26382.63,
+    26391.62,
+    26400.58
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52633.18,
+   "px": 52562.42,
    "prev": 52064.1,
-   "pct": 1.09,
-   "asof": "21:05",
+   "pct": 0.96,
+   "asof": "21:25",
    "live": true,
    "spark": [
     52691.44,
@@ -15084,7 +15092,11 @@
     52550.94,
     52663.08,
     52670.06,
-    52633.18
+    52647.54,
+    52572.41,
+    52610.14,
+    52591.6,
+    52562.42
    ]
   },
   {
@@ -16436,6 +16448,142 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T21:22:45+07:00",
+   "date": "2026-09-11",
+   "time": "21:22",
+   "src": "Jawa Pos",
+   "t": "Biaya Kesehatan Naik 17,8 %, Dunia Asuransi Hadapi Tantangan Besar",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609110464/biaya-kesehatan-naik-178-dunia-asuransi-hadapi-tantangan-besar",
+   "g": 1,
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/11/ilustrasi-dunia-asuransi-istimewa-mMAFl.webp",
+   "t_id": "Biaya Kesehatan Naik 17,8 %, Dunia Asuransi Hadapi Tantangan Besar",
+   "t_ko": "의료비 17.8% 상승에 보험업계 대형 악재 직면"
+  },
+  {
+   "ts": "2026-09-11T21:22:42+07:00",
+   "date": "2026-09-11",
+   "time": "21:22",
+   "src": "BBC",
+   "t": "US inflation holds steady as diesel prices pass $6 a gallon",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/cly41rdkrleo?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/39dc/live/efa1fdd0-addb-11f1-8b98-35ffe039e825.jpg",
+   "t_ko": "갤런당 6달러 넘은 디젤 가격에 미국 인플레이션 유지",
+   "t_id": "Inflasi AS Stabil Saat Harga Diesel Tembus $6 per Galon"
+  },
+  {
+   "ts": "2026-09-11T21:22:00+07:00",
+   "date": "2026-09-11",
+   "time": "21:22",
+   "src": "MarketWatch",
+   "t": "All the ways $6 diesel and rising gas prices are about to make your life more expensive — from commuting to grocery shopping",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/all-the-ways-record-high-diesel-and-rising-gas-prices-are-about-to-make-your-life-more-expensive-from-commuting-to-grocery-shopping-2083fec3?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-82750709",
+   "t_ko": "디젤·가스 가격 상승이 통근부터 장보기까지 가계 부담 가중",
+   "t_id": "Dampak Solar $6 dan Kenaikan Harga BBM Bikin Biaya Hidup Makin Mahal"
+  },
+  {
+   "ts": "2026-09-11T21:21:00+07:00",
+   "date": "2026-09-11",
+   "time": "21:21",
+   "src": "WSJ",
+   "t": "BMO, Sun Life Pledge C$75 Billion Private Capital for Canadian Infrastructure Push",
+   "tags": [],
+   "url": "https://www.wsj.com/finance/investing/bmo-sun-life-pledge-c-75-billion-private-capital-for-canadian-infrastructure-push-d35f5f58?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-74614478",
+   "t_ko": "BMO·Sun Life, 캐나다 인프라 확충에 C$750억 민간자본 약정",
+   "t_id": "BMO, Sun Life Kucurkan Modal Swasta C$75 Miliar untuk Infrastruktur Kanada"
+  },
+  {
+   "ts": "2026-09-11T21:18:00+07:00",
+   "date": "2026-09-11",
+   "time": "21:18",
+   "src": "Media Indonesia",
+   "t": "BPJS Ketenagakerjaan dan PERKESO Perkuat Kolaborasi, Perluas Pelindungan Pekerja Migran Indonesia",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932472/bpjs-ketenagakerjaan-dan-perkeso-perkuat-kolaborasi-perluas-pelindungan-pekerja-migran-indonesia",
+   "t_id": "BPJS Ketenagakerjaan dan PERKESO Perkuat Kolaborasi, Perluas Pelindungan Pekerja Migran Indonesia",
+   "t_ko": "BPJS Ketenagakerjaan·PERKESO, 이주노동자 보호 확대 협력 강화"
+  },
+  {
+   "ts": "2026-09-11T21:16:23+07:00",
+   "date": "2026-09-11",
+   "time": "21:16",
+   "src": "Detik",
+   "t": "Punya Banyak Reseller, Tapi Omzet Belum Konsisten? Mungkin Ini yang Kurang",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8659114/punya-banyak-reseller-tapi-omzet-belum-konsisten-mungkin-ini-yang-kurang",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/10/detikevent-reseler-1789059121696_169.jpeg?w=360&q=90",
+   "t_id": "Punya Banyak Reseller, Tapi Omzet Belum Konsisten? Mungkin Ini yang Kurang",
+   "t_ko": "리셀러는 많지만 매출 부진한 이유와 개선점"
+  },
+  {
+   "ts": "2026-09-11T21:14:36+07:00",
+   "date": "2026-09-11",
+   "time": "21:14",
+   "src": "Bloomberg",
+   "t": "Canada Trade Can Help US Cool Inflation, Poilievre Says",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-11/canada-trade-can-help-us-cool-inflation-poilievre-says-video",
+   "g": 1,
+   "t_ko": "Poilievre, 캐나다 무역이 미국의 인플레이션 완화 기여 가능언급",
+   "t_id": "Perdagangan Kanada Dapat Bantu AS Redam Inflasi, Kata Poilievre"
+  },
+  {
+   "ts": "2026-09-11T21:12:42+07:00",
+   "date": "2026-09-11",
+   "time": "21:12",
+   "src": "Republika",
+   "t": "Sensus Ekonomi 2026 Jadi Salah Satu Sumber Pemutakhiran DTSEN",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tl7e56370/sensus-ekonomi-2026-jadi-salah-satu-sumber-pemutakhiran-dtsen",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/badan-pusat-statistik-bps-provinsi-jawa-barat-jabar-melaksanakan_260708114743-578.jpeg",
+   "t_id": "Sensus Ekonomi 2026 Jadi Salah Satu Sumber Pemutakhiran DTSEN",
+   "t_ko": "2026 경제센서스, DTSEN 갱신 주요 재원 활용"
+  },
+  {
+   "ts": "2026-09-11T21:05:22+07:00",
+   "date": "2026-09-11",
+   "time": "21:05",
+   "src": "Detik",
+   "t": "Hasil Seleksi Magang Nasional Diumumkan 18 September",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8659104/hasil-seleksi-magang-nasional-diumumkan-18-september",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/16/onboarding-magang-hub-batch-3-di-jakarta-selasa-16122025-1765891831577_169.jpeg?w=360&q=90",
+   "t_ko": "국가 인턴십 선발 결과 18일 발표"
+  },
+  {
+   "ts": "2026-09-11T21:05:09+07:00",
+   "date": "2026-09-11",
+   "time": "21:05",
+   "src": "Yahoo Finance",
+   "t": "Tech stocks rally as oil prices fall, inflation remains sticky: AlphaCheck",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/article/tech-stocks-rally-as-oil-prices-fall-inflation-remains-sticky-alphacheck-140509850.html",
+   "g": 1,
+   "img": "https://s.yimg.com/uu/api/res/1.2/HchBm_is5fwVkrHmnghcxQ--~B/aD0zMzkyO3c9NTA4ODthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-05/91bd5574-a8f7-4997-898c-29fb0354bb0e",
+   "t_ko": "유가 하락 및 물가 경직성 속 기술주 반등",
+   "t_id": "Saham Teknologi Menguat Seiring Penurunan Harga Minyak dan Inflasi yang Persisten: AlphaCheck"
+  },
+  {
+   "ts": "2026-09-11T21:04:43+07:00",
+   "date": "2026-09-11",
+   "time": "21:04",
+   "src": "Yahoo Finance",
+   "t": "Wall St climbs after August inflation report, oil price slide",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-recover-oil-095547409.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/reuters.com/408f5efa9a40c2e83acd066f58eac6a1.jpg",
+   "t_ko": "8월 물가 지표 호조 및 유가 하락에 Wall Street 상승",
+   "t_id": "Wall Street Menguat Ditopang Data Inflasi Agustus dan Penurunan Harga Minyak"
+  },
+  {
    "ts": "2026-09-11T21:02:38+07:00",
    "date": "2026-09-11",
    "time": "21:02",
@@ -16448,17 +16596,28 @@
    "t_id": "Situational Awareness Leopold Aschenbrenner Ramai di Pasar Opsi, Kata Sumber"
   },
   {
-   "ts": "2026-09-11T20:58:20+07:00",
+   "ts": "2026-09-11T21:01:59+07:00",
    "date": "2026-09-11",
-   "time": "20:58",
-   "src": "BBC",
-   "t": "US inflation holds steady as diesel prices pass $6 a gallon",
+   "time": "21:01",
+   "src": "Medcom",
+   "t": "James Riady: Perumahan dan Pariwisata Bisa Dorong Ekonomi",
    "tags": [],
-   "url": "https://www.bbc.co.uk/news/articles/cly41rdkrleo?at_medium=RSS&at_campaign=rss",
+   "url": "https://www.medcom.id/properti/news-properti/PNg125Pk-james-riady-perumahan-dan-pariwisata-bisa-dorong-ekonomi",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841624/UyJaogLedx.jpeg?w=720",
+   "t_id": "James Riady: Perumahan dan Pariwisata Bisa Dorong Ekonomi",
+   "t_ko": "James Riady, 주택·관광업이 경제 견인 가능 전망"
+  },
+  {
+   "ts": "2026-09-11T21:01:11+07:00",
+   "date": "2026-09-11",
+   "time": "21:01",
+   "src": "Reuters",
+   "t": "US consumer inflation picks up in August",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdW10dVZWcHQ3MkdPRy1fRGN2VVUzeV8tV2tRSnRfVHdBbllhS0hfTzlWUy1tM0pHZWxmTl84b3loTVFqRHdUX3I2REFQQ1h5ZTZIcHBJTy1Jcmd1VUpPdDRtdVhvbVpHMEVCQmJkbnNqYXBCUGZiTjVmcTM5NUpEbFgwb08wQU92TFE?oc=5",
    "g": 1,
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/39dc/live/efa1fdd0-addb-11f1-8b98-35ffe039e825.jpg",
-   "t_ko": "갤런당 6달러 넘은 디젤 가격에 미국 인플레이션 유지",
-   "t_id": "Inflasi AS Stabil Saat Harga Diesel Tembus $6 per Galon"
+   "t_ko": "미국 8월 소비자물가 상승세 전환",
+   "t_id": "Inflasi Konsumen AS Melaju pada Agustus"
   },
   {
    "ts": "2026-09-11T20:58:00+07:00",
@@ -16472,6 +16631,18 @@
    "t_id": "Indonesia-Hong Kong Jajaki Pengembangan Rantai Pasok SAF"
   },
   {
+   "ts": "2026-09-11T20:55:46+07:00",
+   "date": "2026-09-11",
+   "time": "20:55",
+   "src": "Bloomberg",
+   "t": "Oraclum Hedge Fund Founder Is Charged With Lying About Returns",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-11/oraclum-hedge-fund-founder-is-charged-with-lying-about-returns",
+   "g": 1,
+   "t_ko": "Oraclum Hedge Fund 창립자, 수익률 허위 기재 혐의 기소",
+   "t_id": "Pendiri Oraclum Hedge Fund Didakwa Berbohong Soal Imbal Hasil"
+  },
+  {
    "ts": "2026-09-11T20:53:00+07:00",
    "date": "2026-09-11",
    "time": "20:53",
@@ -16479,8 +16650,8 @@
    "t": "BPS Manfaatkan Sensus Ekonomi 2026 untuk Perkuat DTSEN",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932457/bps-manfaatkan-sensus-ekonomi-2026-untuk-perkuat-dtsen",
-   "t_id": "BPS Manfaatkan Sensus Ekonomi 2026 untuk Perkuat DTSEN",
-   "t_ko": "BPS, 2026년 경제총조사 활용해 DTSEN 강화"
+   "t_ko": "BPS, 2026년 경제총조사 활용해 DTSEN 강화",
+   "t_id": "BPS Manfaatkan Sensus Ekonomi 2026 untuk Perkuat DTSEN"
   },
   {
    "ts": "2026-09-11T20:52:00+07:00",
@@ -16494,6 +16665,19 @@
    "img": "https://images.wsj.net/im-948172",
    "t_ko": "물가 지표 호조에 다음 주 금리 인상 기대감 유입되며 증시 상승",
    "t_id": "Saham Menguat Seiring Angka Inflasi Kerek Peluang Kenaikan Suku Bunga Pekan Depan"
+  },
+  {
+   "ts": "2026-09-11T20:47:11+07:00",
+   "date": "2026-09-11",
+   "time": "20:47",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Dow Rallies On Surprise Inflation Data; Nvidia Rebounds, Oracle Jumps (Live Coverage)",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-cpi-inflation-report-oracle-stock-orcl/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/55ca4252bd7c66820fc61ce444908e68.jpg",
+   "t_ko": "서프라이즈 물가 지표에 Dow 상승 및 Nvidia 반등·Oracle 급등",
+   "t_id": "Bursa Saham Hari Ini: Dow Melesat Berkat Data Inflasi; Nvidia Rebound, Oracle Melompat (Live)"
   },
   {
    "ts": "2026-09-11T20:46:36+07:00",
@@ -16515,8 +16699,8 @@
    "t": "Reputasi dan Keterlibatan Karyawan Jadi Kunci Bisnis Berkelanjutan",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932454/reputasi-dan-keterlibatan-karyawan-jadi-kunci-bisnis-berkelanjutan",
-   "t_id": "Reputasi dan Keterlibatan Karyawan Jadi Kunci Bisnis Berkelanjutan",
-   "t_ko": "지속가능 경영의 핵심은 평판과 임직원 참여"
+   "t_ko": "지속가능 경영의 핵심은 평판과 임직원 참여",
+   "t_id": "Reputasi dan Keterlibatan Karyawan Jadi Kunci Bisnis Berkelanjutan"
   },
   {
    "ts": "2026-09-11T20:43:58+07:00",
@@ -16551,8 +16735,8 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/makro/6aa4091bb1296/pemerintah-diminta-ganti-bantuan-sembako-jadi-uang-tunai-ini-alasannya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/2026_09_10-13_25_00_9342bbf0-acec-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Pemerintah Diminta Ganti Bantuan Sembako jadi Uang Tunai, Ini Alasannya",
-   "t_ko": "정부에 식료품 지원금 현금 전환 요구 — 배경과 전망"
+   "t_ko": "정부에 식료품 지원금 현금 전환 요구 — 배경과 전망",
+   "t_id": "Pemerintah Diminta Ganti Bantuan Sembako jadi Uang Tunai, Ini Alasannya"
   },
   {
    "ts": "2026-09-11T20:35:29+07:00",
@@ -16580,56 +16764,6 @@
    "t_id": "Saham Oracle Naik Berkat Lampauan Laporan Keuangan & Pendapatan yang Didorong Permintaan Cloud AI"
   },
   {
-   "ts": "2026-09-11T20:34:08+07:00",
-   "date": "2026-09-11",
-   "time": "20:34",
-   "src": "CNBC",
-   "t": "Analysis: Hot CPI puts Kevin Warsh’s Fed credibility on the line before rate decision",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/kevin-warsh-fed-cpi-inflation-rate-hike-analysis.html",
-   "g": 1,
-   "t_ko": "미국 CPI 상승에 금리 결정 앞둔 Kevin Warsh 연준 신뢰도 시험대",
-   "t_id": "Analisis: CPI Panas Pertaruhkan Kredibilitas Fed Kevin Warsh Jelang Keputusan Suku Bunga"
-  },
-  {
-   "ts": "2026-09-11T20:31:48+07:00",
-   "date": "2026-09-11",
-   "time": "20:31",
-   "src": "Detik",
-   "t": "Investor China dan Arab Mau Bangun Pabrik di Madura",
-   "tags": [],
-   "url": "https://finance.detik.com/industri/d-8659070/investor-china-dan-arab-mau-bangun-pabrik-di-madura",
-   "g": 1,
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/04/15/pembangunan-pabrik-di-kek-batang-pacu-pertumbuhan-investasi-nasional-1776264402884_169.jpeg?w=360&q=90",
-   "t_ko": "중국·아랍 투자자, Madura 공장 건립 추진",
-   "t_id": "Investor China dan Arab Mau Bangun Pabrik di Madura"
-  },
-  {
-   "ts": "2026-09-11T20:30:00+07:00",
-   "date": "2026-09-11",
-   "time": "20:30",
-   "src": "MarketWatch",
-   "t": "The four reasons stocks could embark on a ‘face-ripper rally’ as soon as this morning",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/the-four-reasons-stocks-are-about-to-embark-on-a-face-ripper-rally-e1e05e5e?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-84933086",
-   "t_ko": "증시, 이르면 오늘 강력한 반등 랠리 진입 가능성 4대 요인",
-   "t_id": "Empat Alasan Saham Bisa Reli Kencang Pagi Ini"
-  },
-  {
-   "ts": "2026-09-11T20:27:26+07:00",
-   "date": "2026-09-11",
-   "time": "20:27",
-   "src": "Bloomberg",
-   "t": "Traders Hunt For ‘Elusive’ Catalyst to Push S&P 500 Above 8,000",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-11/traders-hunt-for-elusive-catalyst-to-push-s-p-500-above-8-000",
-   "g": 1,
-   "t_ko": "S&P 500지수 8,000선 돌파 이끌 반등 촉매 탐색",
-   "t_id": "Trader Buru Katalis 'Sulit Ditemukan' untuk Dorong S&P 500 Lewati 8.000"
-  },
-  {
    "ts": "2026-09-11T20:26:38+07:00",
    "date": "2026-09-11",
    "time": "20:26",
@@ -16640,66 +16774,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2025/08/06/WhatsApp-Image-2025-08-06-at-34848-PM-1-3674763705.jpeg",
    "t_ko": "Anak Krakatau 화산 분화에 따른 여행자보험금 지급 거절 사유",
    "t_id": "Alasan Klaim Asuransi Perjalanan Ditolak karena Erupsi Gunung Anak Krakatau"
-  },
-  {
-   "ts": "2026-09-11T20:22:59+07:00",
-   "date": "2026-09-11",
-   "time": "20:22",
-   "src": "CNBC",
-   "t": "Houthis reportedly advance to key Red Sea island, further threatening crucial oil choke point",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/iran-houthis-mokha-red-sea-yemen.html",
-   "g": 1,
-   "t_ko": "후티, 홍해 핵심 섬 진격 소식에 원유 수송로 위협 고조",
-   "t_id": "Houthi Dilaporkan Kuasai Pulau Strategis Laut Merah, Ancam Jalur Krusial Minyak"
-  },
-  {
-   "ts": "2026-09-11T20:21:27+07:00",
-   "date": "2026-09-11",
-   "time": "20:21",
-   "src": "Bloomberg",
-   "t": "Dollar Wavers as Inflation Aids Fed Hike Bets While Oil Falls",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-11/dollar-wavers-as-inflation-aids-fed-hike-bets-while-oil-falls",
-   "g": 1,
-   "t_ko": "물가 상승 속 연준 금리 인상 전망과 유가 하락에 달러화 혼조",
-   "t_id": "Dolar Goyah Saat Inflasi Dukung Spekulasi Kenaikan Suku Bunga The Fed di Tengah Penurunan Harga Minyak"
-  },
-  {
-   "ts": "2026-09-11T20:18:01+07:00",
-   "date": "2026-09-11",
-   "time": "20:18",
-   "src": "CNBC",
-   "t": "Trump dismisses AI extinction risks as more than a dozen OpenAI, Anthropic insiders call for a slowdown",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/trump-ai-extinction-risks.html",
-   "g": 1,
-   "t_ko": "Trump, OpenAI·Anthropic 내부자들의 속도 조절 요구에 AI 인류멸종 위험 일축",
-   "t_id": "Trump Remehkan Risiko Kepunahan AI Saat Belasan Orang Dalam OpenAI dan Anthropic Desak Perlambatan"
-  },
-  {
-   "ts": "2026-09-11T20:15:50+07:00",
-   "date": "2026-09-11",
-   "time": "20:15",
-   "src": "Bloomberg",
-   "t": "Tesla Shares Suffer Slow Summer After SpaceX IPO, Earnings Rout",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-11/tesla-shares-suffer-slow-summer-after-spacex-ipo-earnings-rout",
-   "g": 1,
-   "t_ko": "Tesla, SpaceX 상장 및 실적 부진 여파로 주가 약세",
-   "t_id": "Saham Tesla Lesu di Musim Panas Usai IPO SpaceX dan Kejatuhan Laporan Keuangan"
-  },
-  {
-   "ts": "2026-09-11T20:14:22+07:00",
-   "date": "2026-09-11",
-   "time": "20:14",
-   "src": "Reuters",
-   "t": "VIEW Stocks, bonds rally after August inflation report",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY08xWWcxZWZRWG5WSFJ2ckZFcFk1T0cyNjlfS3F0U0Vyby1EWVJUaUNNaTUwVXRNVnk0Q2NfVVdYT2lPYjUxdjZlVHBXOWVPVnMzWk1DWmE4V1RGNzFrWFhwN3V5alYtbktTcDBST0RORllfc1Nhd0RBNFZ0UTVlbFFaM0FGMEpTLTIxdTVCeEJpcG5YdC1zTUZqMTQwNGhDZVBNbVBxX0Jmbkpsd2c?oc=5",
-   "g": 1,
-   "t_ko": "8월 물가 지표 발표 후 주식·채권 동반 상승",
-   "t_id": "PANDANGAN: Saham dan Obligasi Menguat Usai Laporan Inflasi Agustus"
   },
   {
    "ts": "2026-09-11T20:08:13+07:00",
@@ -16806,65 +16880,6 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841616/nzx40qhovG.jpeg?w=720",
    "t_ko": "아체 티무르 경제 회복세 — 사회보장기금 집행률 99% 달성",
    "t_id": "Pemulihan Ekonomi Aceh Timur Bergerak Signifikan, Penyaluran Bantuan Sosial Capai 99 Persen"
-  },
-  {
-   "ts": "2026-09-11T19:45:00+07:00",
-   "date": "2026-09-11",
-   "time": "19:45",
-   "src": "Media Indonesia",
-   "t": "Kebutuhan Konektivitas Kian Dinamis, Perbankan Nasional Perkuat Infrastruktur Digital",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932424/kebutuhan-konektivitas-kian-dinamis-perbankan-nasional-perkuat-infrastruktur-digital",
-   "t_ko": "은행권, 디지털 인프라 강화로 금융 연결성 수요 대응",
-   "t_id": "Kebutuhan Konektivitas Kian Dinamis, Perbankan Nasional Perkuat Infrastruktur Digital"
-  },
-  {
-   "ts": "2026-09-11T19:42:28+07:00",
-   "date": "2026-09-11",
-   "time": "19:42",
-   "src": "Jawa Pos",
-   "t": "Soroti Polemik Data Bansos, Ekonom Celios Minta BPS Ajukan Anggaran Sensus ke Prabowo!",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609110405/soroti-polemik-data-bansos-ekonom-celios-minta-bps-ajukan-anggaran-sensus-ke-prabowo",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/06/07/ilustrasi-warga-menerima-pencairan-bansos-dokjawaposcom-ZlFwS.webp",
-   "t_ko": "Celios 이코노미스트, 복지 데이터 논란 속 BPS에 Prabowo 예산 신청 촉구",
-   "t_id": "Soroti Polemik Data Bansos, Ekonom Celios Minta BPS Ajukan Anggaran Sensus ke Prabowo!"
-  },
-  {
-   "ts": "2026-09-11T19:34:00+07:00",
-   "date": "2026-09-11",
-   "time": "19:34",
-   "src": "Katadata",
-   "t": "BPS Ungkap Tingkat Error Data Desil DTSEN Capai 23%",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa3f546222dc/bps-ungkap-tingkat-error-data-desil-dtsen-capai-23",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/19/Pemerintah_Gunakan_Data_Desil_Dalam_Rencana_Pembatasan_Pembelian-2026_08_19-19_57_06_208cde9dc1045a4900394f243d70baa5_620x413_thumb.jpg",
-   "t_ko": "BPS, DTSEN 10분위 데이터 오차율 23% 공개",
-   "t_id": "BPS Ungkap Tingkat Error Data Desil DTSEN Capai 23%"
-  },
-  {
-   "ts": "2026-09-11T19:30:15+07:00",
-   "date": "2026-09-11",
-   "time": "19:30",
-   "src": "Detik",
-   "t": "Pertamina Wanti-wanti Warga Jangan Panic Buying BBM!",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8659005/pertamina-wanti-wanti-warga-jangan-panic-buying-bbm",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/02/pertamax-pertamax-turbo-dan-green-95-kompak-turun-harga-1785651003631_169.jpeg?w=360&q=90",
-   "t_ko": "Pertamina, 주민들에게 연료 사재기 자제 경고",
-   "t_id": "Pertamina Wanti-wanti Warga Jangan Panic Buying BBM"
-  },
-  {
-   "ts": "2026-09-11T19:24:00+07:00",
-   "date": "2026-09-11",
-   "time": "19:24",
-   "src": "Katadata",
-   "t": "BPS Beberkan Metodologi Penetapan Desil yang Digunakan untuk Penyaluran Bansos",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aa3f2fa75979/bps-beberkan-metodologi-penetapan-desil-yang-digunakan-untuk-penyaluran-bansos",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/10/02/2025_10_02-16_23_00_07b5f35b-9f75-11f0-b51a-9f3be5b34930_620x413_thumb.jpg",
-   "t_ko": "BPS, 지원금 지급에 적용되는 데실 산정 방법론 공개",
-   "t_id": "BPS Beberkan Metodologi Penetapan Desil yang Digunakan untuk Penyaluran Bansos"
   }
  ],
  "kisi_news": [
@@ -17036,9 +17051,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.09",
-   "d": 0.2,
-   "ytd": 12.68,
+   "v": "13.08",
+   "d": 0.16,
+   "ytd": 12.64,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17048,9 +17063,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.926%",
-   "d": -0.36,
-   "ytd": 18.33,
+   "v": "4.930%",
+   "d": -0.28,
+   "ytd": 18.42,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17071,9 +17086,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.02",
-   "d": -0.13,
-   "ytd": 0.76,
+   "v": "99.01",
+   "d": -0.14,
+   "ytd": 0.74,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17083,9 +17098,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.07",
-   "d": -4.02,
-   "ytd": 72.54,
+   "v": "99.63",
+   "d": -3.48,
+   "ytd": 73.51,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17095,9 +17110,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,431.7",
-   "d": 2.0,
-   "ytd": 2.45,
+   "v": "4,422.6",
+   "d": 1.79,
+   "ytd": 2.24,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17699,7 +17714,7 @@
    "imp": 2,
    "exp": null,
    "prev": "3.6%",
-   "act": null,
+   "act": "3.6%",
    "src": "investing.com",
    "title_ko": "8월 뉴욕 연은 1년 기대인플레이션",
    "title_id": "Ekspektasi Inflasi Konsumen 1 Tahun The Fed NY (Agu)"
@@ -17713,7 +17728,7 @@
    "imp": 2,
    "exp": null,
    "prev": "4.291%",
-   "act": null,
+   "act": "4.474%",
    "src": "investing.com",
    "title_ko": "3년물 국채 입찰",
    "title_id": "Lelang Obligasi AS 3 Tahun"
@@ -17725,9 +17740,9 @@
    "country": "US",
    "title": "Consumer Credit  (Jul)",
    "imp": 2,
-   "exp": null,
-   "prev": "14.17B",
-   "act": null,
+   "exp": "11.90B",
+   "prev": "14.56B",
+   "act": "18.06B",
    "src": "investing.com",
    "title_ko": "7월 소비자신용",
    "title_id": "Kredit Konsumen AS (Jul)"
@@ -17748,14 +17763,14 @@
   },
   {
    "date": "2026-09-09",
-   "time": "19:15",
+   "time": "19:14",
    "kind": "macro",
    "country": "US",
    "title": "ADP Employment Change Weekly",
    "imp": 2,
    "exp": null,
    "prev": "11.80K",
-   "act": null,
+   "act": "10.00K",
    "src": "investing.com",
    "title_ko": "ADP 주간 고용 변화",
    "title_id": "Perubahan Tenaga Kerja Mingguan ADP AS"
@@ -17948,7 +17963,7 @@
    "imp": 3,
    "exp": null,
    "prev": "4.683%",
-   "act": null,
+   "act": "4.834%",
    "src": "investing.com",
    "title_ko": "10년물 국채 입찰",
    "title_id": "Lelang Obligasi AS 10 Tahun"
@@ -17960,9 +17975,9 @@
    "country": "US",
    "title": "API Weekly Crude Oil Stock",
    "imp": 2,
-   "exp": null,
+   "exp": "-1.300M",
    "prev": "-2.600M",
-   "act": null,
+   "act": "-0.300M",
    "src": "investing.com",
    "title_ko": "API 주간 원유 재고",
    "title_id": "Stok Minyak Mentah Mingguan API"
@@ -17980,6 +17995,20 @@
    "src": "investing.com",
    "title_ko": "8월 오토바이 판매 (YoY)",
    "title_id": "Penjualan Sepeda Motor (YoY) (Agu)"
+  },
+  {
+   "date": "2026-09-10",
+   "time": "08:15",
+   "kind": "macro",
+   "country": "US",
+   "title": "U.S. President Trump Speaks",
+   "imp": 3,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "트럼프 미 대통령 연설",
+   "title_id": "Presiden AS Trump Berbicara"
   },
   {
    "date": "2026-09-10",
@@ -18016,9 +18045,9 @@
    "country": "US",
    "title": "Continuing Jobless Claims",
    "imp": 2,
-   "exp": null,
-   "prev": "1,779K",
-   "act": null,
+   "exp": "1,780K",
+   "prev": "1,775K",
+   "act": "1,774K",
    "src": "investing.com",
    "title_ko": "연속 실업수당 청구",
    "title_id": "Klaim Pengangguran Berkelanjutan"
@@ -18032,8 +18061,9 @@
    "imp": 2,
    "exp": "0.3%",
    "prev": "0.2%",
-   "act": null,
+   "act": "0.2%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "8월 근원 PPI (MoM)",
    "title_id": "PPI Inti AS (MoM) (Agu)"
   },
@@ -18046,10 +18076,25 @@
    "imp": 3,
    "exp": "0.3%",
    "prev": "0.0%",
-   "act": null,
+   "act": "0.4%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "8월 PPI (MoM)",
    "title_id": "PPI AS (MoM) (Agu)"
+  },
+  {
+   "date": "2026-09-10",
+   "time": "20:20",
+   "kind": "macro",
+   "country": "US",
+   "title": "Atlanta Fed GDPNow  (Q3)",
+   "imp": 2,
+   "exp": "4.7%",
+   "prev": "4.7%",
+   "act": "4.4%",
+   "src": "investing.com",
+   "title_ko": "3분기 애틀랜타 연은 GDPNow",
+   "title_id": "GDPNow The Fed Atlanta (Q3)"
   },
   {
    "date": "2026-09-10",
@@ -18058,26 +18103,26 @@
    "country": "US",
    "title": "Existing Home Sales  (Aug)",
    "imp": 3,
-   "exp": "4.03M",
+   "exp": "3.98M",
    "prev": "4.06M",
-   "act": null,
+   "act": "3.98M",
    "src": "investing.com",
    "title_ko": "8월 기존주택 판매",
    "title_id": "Penjualan Rumah Existing AS (Agu)"
   },
   {
    "date": "2026-09-10",
-   "time": "22:30",
+   "time": "23:00",
    "kind": "macro",
    "country": "US",
-   "title": "Atlanta Fed GDPNow  (Q3)",
-   "imp": 2,
-   "exp": "4.7%",
-   "prev": "4.7%",
-   "act": null,
+   "title": "Crude Oil Inventories",
+   "imp": 3,
+   "exp": "-1.400M",
+   "prev": "-4.450M",
+   "act": "-0.391M",
    "src": "investing.com",
-   "title_ko": "3분기 애틀랜타 연은 GDPNow",
-   "title_id": "GDPNow The Fed Atlanta (Q3)"
+   "title_ko": "EIA 원유 재고",
+   "title_id": "Stok Minyak Mentah EIA"
   },
   {
    "date": "2026-09-10",
@@ -18351,9 +18396,8 @@
    "imp": 3,
    "exp": "0.4%",
    "prev": "0.1%",
-   "act": "0.4%",
+   "act": null,
    "src": "manual",
-   "act_src": "investing.com",
    "title_ko": "美 8월 CPI",
    "title_id": "Inflasi (CPI) AS Agustus"
   },
@@ -18366,9 +18410,8 @@
    "imp": 3,
    "exp": "0.2%",
    "prev": "0.2%",
-   "act": "0.3%",
+   "act": null,
    "src": "investing.com",
-   "act_src": "investing.com",
    "title_ko": "8월 근원 CPI (MoM)",
    "title_id": "CPI Inti AS (MoM) (Agu)"
   },
@@ -18381,7 +18424,7 @@
    "imp": 2,
    "exp": null,
    "prev": "4.0%",
-   "act": "4.6%",
+   "act": null,
    "src": "investing.com",
    "title_ko": "9월 미시간대 1년 기대인플레이션",
    "title_id": "Ekspektasi Inflasi 1 Tahun Michigan (Sep)"
@@ -18393,9 +18436,9 @@
    "country": "US",
    "title": "Michigan Consumer Expectations  (Sep)",
    "imp": 2,
-   "exp": "50.5",
+   "exp": null,
    "prev": "51.5",
-   "act": "45.8",
+   "act": null,
    "src": "investing.com",
    "title_ko": "9월 미시간대 소비자기대지수",
    "title_id": "Ekspektasi Konsumen Michigan (Sep)"
@@ -25163,7 +25206,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 214,
+  "pc_age_min": 236,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
