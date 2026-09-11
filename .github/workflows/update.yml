@@ -1,7 +1,12 @@
 name: update-and-deploy
-# GitHub 서버(Actions)가 장중 5분마다 수집해 data.json 을 갱신하고 Pages 로 배포한다.
-# → 사장님 PC 가 꺼져 있어도 사이트는 계속 갱신된다.
-# PC 쪽 auto_push 는 기본적으로 번역 캐시(tr_claude.json)·수기값(manual.json)만 올린다 (data.json 은 러너가 단일 작성자).
+# GitHub 서버(Actions)가 장중 5분마다 수집해 data.json 을 갱신한다 → 사장님 PC 가 꺼져 있어도 사이트는 계속 갱신된다.
+# 저장소 2개 구조:
+#   이 저장소(공개)            화면·데이터만: index.html · data.json · data.js · 배너 · chat_context.json · 브리프 PDF · 이 워크플로
+#   github_code_repo(비공개)   파이썬 코드 · config · 캐시 · 수기값 — 아래 checkout 단계가 CODE_PAT 로 받아 작업 폴더에 얹는다 (커밋하지 않음)
+# 필요한 설정 (이 저장소 Settings → Secrets and variables → Actions)
+#   Secrets  CODE_PAT        비공개 코드 저장소 읽기 권한 토큰 (fine-grained: Repository access = 코드 저장소, Contents: Read)
+#   Secrets  GEMINI_API_KEY  (선택) 주말·PC 꺼짐 때 지수·공시 AI 요약
+#   Variables IDX_PROXY      (선택) 러너 IP 가 IDX 에 막히면 Cloudflare Worker 주소
 on:
   schedule:
     - cron: "*/5 1-10 * * 1-5"    # 08:00~17:59 WIB 평일, 5분마다 (GitHub 사정으로 5~15분 지연 가능)
@@ -13,8 +18,6 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-  pages: write
-  id-token: write
 concurrency: { group: update, cancel-in-progress: false }
 jobs:
   fetch:
@@ -23,6 +26,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: private code
+        uses: actions/checkout@v4
+        with:
+          repository: jelly927/idx-live-code      # ← 비공개 코드 저장소 이름 (config.json github_code_repo 와 동일하게)
+          token: ${{ secrets.CODE_PAT }}
+          path: _code
+      - name: overlay code
+        # 비공개 저장소의 코드·설정·캐시를 작업 폴더에 얹는다 (공개 저장소에는 절대 커밋되지 않음 — 아래 commit 단계가 산출물 5개만 add 한다)
+        run: rsync -a --exclude .git --exclude .github _code/ ./ && rm -rf _code
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
       - run: pip install -r requirements.txt
@@ -31,35 +43,21 @@ jobs:
         run: python fetch_data.py
         env:
           TZ: Asia/Jakarta
-          IDX_PROXY: ${{ vars.IDX_PROXY }}      # (선택) 러너 IP 가 IDX 에 막히면 Cloudflare Worker 주소를 Variables 에 등록
-          # (선택) 등록하면 PC 가 꺼진 주말에도 러너가 지수·공시 AI 요약을 만든다. 종목 요약은 호출량이 커서 PC 전용.
+          IDX_PROXY: ${{ vars.IDX_PROXY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - name: chat context
         run: python make_chat_context.py
         env: { TZ: Asia/Jakarta }
       - name: commit data
-        # 러너의 산출물(data.json·data.js·구글 번역 캐시)만 올린다. PC 가 그 사이 올린 파일과 충돌하지 않도록
-        # 최신 main 위에 산출물을 다시 얹어 커밋한다 (rebase 충돌로 data.json 이 안 올라가는 일 방지)
+        # 러너의 산출물(data.json·data.js·구글 번역 캐시·챗봇 컨텍스트)만 올린다. PC 가 그 사이 올린 파일과 충돌하지 않도록
+        # 최신 main 위에 산출물을 다시 얹어 커밋한다. 코드 파일은 untracked 로 남을 뿐 add 되지 않는다
         run: |
           git config user.name idx-live-bot && git config user.email bot@users.noreply.github.com
-          mkdir -p /tmp/out && for f in data.json data.js data/cache/tr_ko.json data/cache/news_seen.json; do [ -e "$f" ] && cp "$f" /tmp/out/$(basename "$f"); done; true
+          mkdir -p /tmp/out && for f in data.json data.js data/cache/tr_ko.json data/cache/news_seen.json data/cache/chat_context.json; do [ -e "$f" ] && cp "$f" /tmp/out/$(basename "$f"); done; true
           git fetch origin main && git reset --hard origin/main
           [ -e /tmp/out/data.json ] && cp /tmp/out/data.json data.json; [ -e /tmp/out/data.js ] && cp /tmp/out/data.js data.js
-          [ -e /tmp/out/tr_ko.json ] && cp /tmp/out/tr_ko.json data/cache/tr_ko.json; [ -e /tmp/out/news_seen.json ] && cp /tmp/out/news_seen.json data/cache/news_seen.json; true
-          git add -A -- data.json data.js data/cache/tr_ko.json data/cache/news_seen.json 2>/dev/null; true
+          mkdir -p data/cache
+          [ -e /tmp/out/tr_ko.json ] && cp /tmp/out/tr_ko.json data/cache/tr_ko.json; [ -e /tmp/out/news_seen.json ] && cp /tmp/out/news_seen.json data/cache/news_seen.json; [ -e /tmp/out/chat_context.json ] && cp /tmp/out/chat_context.json data/cache/chat_context.json; true
+          git add -A -- data.json data.js data/cache/tr_ko.json data/cache/news_seen.json data/cache/chat_context.json 2>/dev/null; true
           git commit -m "data $(TZ=Asia/Jakarta date +%Y-%m-%d\ %H:%M) WIB [skip ci]" || echo "no change"
           for i in 1 2 3; do git push && break; git fetch origin main && git rebase origin/main || git rebase --abort; sleep 5; done; true
-  deploy:
-    needs: fetch
-    if: always() && !cancelled()
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.d.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-        with: { ref: main }
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: . }
-      - id: d
-        uses: actions/deploy-pages@v4
