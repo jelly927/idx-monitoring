@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 12:53",
+ "updated": "2026-09-11 12:58",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,344 · 12:35 Yahoo",
- "idr_per_krw": 13.1022,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,345 · 12:35 Yahoo",
+ "idr_per_krw": 13.0987,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 12:51",
+   "asof": "investing.com 12:55",
    "unit": "bp"
   }
  ],
@@ -337,8 +337,8 @@
   "m1": 3.56,
   "value_idr": 21546688746644,
   "volume": 48552221241,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 12:42",
-  "rank_asof": "12:51",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 12:50",
+  "rank_asof": "12:55",
   "rank_date": "2026-09-11",
   "adv": 143,
   "dec": 552,
@@ -15301,10 +15301,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6879.53,
+   "px": 6877.3,
    "prev": 7042.44,
-   "pct": -2.31,
-   "asof": "12:30",
+   "pct": -2.34,
+   "asof": "12:35",
    "live": true,
    "spark": [
     6836.48,
@@ -15373,17 +15373,18 @@
     6888.97,
     6885.07,
     6873.52,
-    6879.53
+    6878.6,
+    6877.3
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63813.97,
+   "px": 63870.51,
    "prev": 65128.81,
-   "pct": -2.02,
-   "asof": "12:35",
+   "pct": -1.93,
+   "asof": "12:40",
    "live": true,
    "spark": [
     63748.21,
@@ -15443,17 +15444,18 @@
     63809.12,
     63731.49,
     63817.31,
-    63813.97
+    63860.54,
+    63870.51
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24797.54,
+   "px": 24816.15,
    "prev": 24954.47,
-   "pct": -0.63,
-   "asof": "12:35",
+   "pct": -0.55,
+   "asof": "12:40",
    "live": true,
    "spark": [
     24603.11,
@@ -15495,7 +15497,8 @@
     24784.24,
     24775.39,
     24795.21,
-    24797.54
+    24815.87,
+    24816.15
    ]
   }
  ],
@@ -15593,7 +15596,7 @@
    ],
    "url": "https://mediaindonesia.com/teknologi/932197/teleskop-chandra-nasa-ungkap-objek-sinar-x-misterius-di-alam-semesta",
    "t_id": "Teleskop Chandra NASA Ungkap Objek Sinar-X Misterius di Alam Semesta",
-   "t_ko": "NASA Chandra 우주망원경, 우주 속 미스터리 X선 포착"
+   "t_ko": "NASA Chandra 우주망원경, 우주 미스터리 X선 포착"
   },
   {
    "ts": "2026-09-11T12:32:00+07:00",
@@ -15607,22 +15610,6 @@
    "url": "https://mediaindonesia.com/teknologi/932200/apod-nasa-menyingkap-keindahan-nebula-jerapah-ldn-1295-di-antariksa",
    "t_ko": "NASA APOD, 우주 속 LDN 1295 기린 성운의 신비로운 자태 공개",
    "t_id": "APOD NASA: Menyingkap Keindahan Nebula Jerapah LDN 1295 di Antariksa"
-  },
-  {
-   "ts": "2026-09-11T12:17:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:17",
-   "src": "Katadata",
-   "t": "IHSG Sesi I Merosot Tinggalkan Level 6.500, Saham CUAN, CPIN hingga BRPT Loyo",
-   "tags": [
-    "BRPT",
-    "CPIN",
-    "CUAN"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa38edb1297f/ihsg-sesi-i-merosot-tinggalkan-level-6500-saham-cuan-cpin-hingga-brpt-loyo",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/08/IHSG_kembali_ditutup_melemah_ke_level_5342_Foto_KatadataFauza_Sy-2026_06_08-17_44_21_323ed1c93b0bb1a000720b4fd085a28e_620x413_thumb.jpg",
-   "t_ko": "IHSG 1부 6,500선 이탈하며 약세 — CUAN·CPIN·BRPT 부진",
-   "t_id": "IHSG Sesi I Merosot Tinggalkan Level 6.500, Saham CUAN, CPIN hingga BRPT Loyo"
   },
   {
    "ts": "2026-09-11T12:11:00+07:00",
@@ -15652,21 +15639,6 @@
    "t_id": "ACES Tebar Dividen Rp 548 Miliar, Payout Ratio Capai 82%"
   },
   {
-   "ts": "2026-09-11T11:57:00+07:00",
-   "date": "2026-09-11",
-   "time": "11:57",
-   "src": "Katadata",
-   "t": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%",
-   "tags": [
-    "EPMT",
-    "KLBF"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2024/10/31/Kalbe_Farma-2024_10_31-15_43_04_d8d57b7996cc854f003170f0144f5795_620x413_thumb.jpeg",
-   "t_ko": "KLBF, 자회사 상장폐지 검토 — EPMT 유동주식비율 7.51% 불과",
-   "t_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%"
-  },
-  {
    "ts": "2026-09-11T11:55:17+07:00",
    "date": "2026-09-11",
    "time": "11:55",
@@ -15693,20 +15665,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/gedung-graha-merah-putih-1788845167948_169.jpeg?w=360&q=90",
    "t_ko": "Telkom(TLKM), Graha Merah Putih 임대 추진에 사옥 직원 이전 계획",
    "t_id": "Graha Merah Putih Disewa BGN, Telkom Pindahkan Karyawan"
-  },
-  {
-   "ts": "2026-09-11T11:48:00+07:00",
-   "date": "2026-09-11",
-   "time": "11:48",
-   "src": "Katadata",
-   "t": "BUMI Caplok Tambang Laman Mining Rp 1 T Pakai Utang Glencore, Apa Rencananya?",
-   "tags": [
-    "BUMI"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa38824e174b/bumi-caplok-tambang-laman-mining-rp-1-t-pakai-utang-glencore-apa-rencananya",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/12/30/PT_Bumi_Resources_Tbk_BUMI-2025_12_30-10_17_44_8039d0a5bd2b5918bd9d12164c976614_620x413_thumb.jpeg",
-   "t_ko": "Bumi Resources(BUMI), Glencore 차입금으로 Rp1조 규모 Laman Mining 인수",
-   "t_id": "BUMI Caplok Tambang Laman Mining Rp 1 T Pakai Utang Glencore, Ini Rencananya"
   },
   {
    "ts": "2026-09-11T11:37:00+07:00",
@@ -16155,6 +16113,35 @@
     "rights issue",
     "dilusi",
     "data center"
+   ]
+  },
+  {
+   "ts": "2026-09-11T06:37:00+07:00",
+   "date": "2026-09-11",
+   "time": "06:37",
+   "src": "Katadata",
+   "t": "IHSG Rawan Turun, Saham CDIA, UNTR, ADRO, hingga MYOR Jadi Rekomendasi Analis",
+   "tags": [
+    "ADRO",
+    "CDIA",
+    "MYOR",
+    "UNTR"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6aa33f4d0b6ba/ihsg-rawan-turun-saham-cdia-untr-adro-hingga-myor-jadi-rekomendasi-analis",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/IHSG_sesi_pertama_ditutup_naik_056_ke_6337_Foto_KatadataFauza_Sy-2026_08_14-15_00_24_b2c5d55da835075f44230a7491cf70b4_620x413_thumb.jpg",
+   "t_ko": "IHSG 하락 우려 — CDIA·UNTR·ADRO·MYOR 애널리스트 추천",
+   "t_id": "IHSG Rawan Turun, Saham CDIA, UNTR, ADRO, hingga MYOR Jadi Rekomendasi Analis",
+   "ai_ko": "IHSG 1.33% 하락한 6,589로 MA5·MA10 아래 마감, MACD와 Stochastic RSI가 데드크로스 형성해 6,400~6,525 지지선 테스트 전망 / MNC Sekuritas는 CDIA Rp695~705, UNTR Rp25,800~26,225 분할매수 제시, 7월 소매판매는 3개월 만에 1.1% 증가 전환",
+   "ai_id": "IHSG rawan terkoreksi pada Jumat (11/9) setelah turun 1,33% ke 6.589, ditutup di bawah MA5 dan MA10 dengan MACD serta Stochastic RSI membentuk death cross, berpotensi menguji support 6.400-6.525. MNC Sekuritas merekomendasikan buy on weakness CDIA di Rp 695-Rp 705 dan UNTR di Rp 25.800-Rp 26.225, di tengah penjualan ritel Juli 2026 yang tumbuh 1,1% yoy dan defisit APBN Rp 235,6 triliun atau 0,91% PDB.",
+   "ai_tags": [
+    "증시",
+    "투자의견",
+    "소매판매"
+   ],
+   "ai_tags_id": [
+    "IHSG",
+    "rekomendasi",
+    "penjualan ritel"
    ]
   },
   {
@@ -16984,13 +16971,79 @@
     "추천종목"
    ],
    "ai_tags_id": []
+  },
+  {
+   "ts": "2026-08-24T08:33:00+07:00",
+   "date": "2026-08-24",
+   "time": "08/24",
+   "src": "Tempo",
+   "t": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1",
+   "tags": [
+    "AREA"
+   ],
+   "url": "https://bisnis.tempo.co/read/2117248/pt-pertamina-patra-niaga-ru-cilacap-buka-tender-penggantian-column-assy-11c-1",
+   "img": "https://statik.tempo.co/data/2026/08/10/id_1485829/1485829_720.jpg",
+   "t_ko": "Pertamina Patra Niaga Cilacap 정유공장, Column Assy 11C-1 교체 입찰 공고",
+   "t_id": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1",
+   "ai_ko": "Pertamina Patra Niaga RU IV Cilacap, FOC I 지역 Column Assy 11C-1 교체 공사 공개입찰 공고, 접수 마감은 8월 24일 23시 59분 / 정유설비 신뢰도 유지를 위한 정기 발주로 플랜트·기자재 업체에 수주 기회",
+   "ai_id": "PT Pertamina Patra Niaga RU IV Cilacap membuka tender terbuka untuk pekerjaan penggantian Column Assy 11C-1 di area FOC I, dengan pendaftaran daring hingga 24 Agustus 2026 pukul 23.59. Tender ini bagian dari upaya menjaga keandalan operasional dan keberlangsungan produksi kilang.",
+   "ai_tags": [
+    "입찰",
+    "정유",
+    "설비투자"
+   ],
+   "ai_tags_id": [
+    "tender",
+    "kilang",
+    "pengadaan"
+   ]
+  },
+  {
+   "ts": "2026-08-10T18:35:31+07:00",
+   "date": "2026-08-10",
+   "time": "08/10",
+   "src": "Tempo",
+   "t": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://bisnis.tempo.co/read/2117152/bank-mandiri-gandeng-paramount-dorong-pertumbuhan-properti-berkelanjutan",
+   "img": "https://statik.tempo.co/data/2026/08/10/id_1485793/1485793_720.jpg",
+   "t_ko": "Bank Mandiri, Paramount와 제휴 — 지속가능 부동산 성장 추진",
+   "t_id": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
+   "ai_ko": "Bank Mandiri, 8월 5일 Paramount Enterprise International과 부동산 개발 관련 MoU 2건 체결 / 개발부지 협력·마케팅 및 금융상품 이용이 골자로 Paramount 그룹과 계열사에 거래관리·디지털금융·소비자금융 제공",
+   "ai_id": "Bank Mandiri menandatangani dua MoU dengan PT Paramount Enterprise International pada Rabu, 5 Agustus 2026, mencakup kerja sama kawasan serta pemasaran dan penggunaan jasa atau produk perusahaan. Bank Mandiri akan menyediakan layanan perbankan komprehensif bagi Paramount Group dan afiliasinya, mulai dari pengelolaan transaksi, digitalisasi layanan keuangan, hingga solusi pembiayaan konsumen.",
+   "ai_tags": [
+    "업무협약",
+    "부동산",
+    "은행"
+   ],
+   "ai_tags_id": [
+    "MoU",
+    "properti",
+    "perbankan"
+   ]
+  },
+  {
+   "ts": "2026-08-07T14:18:08+07:00",
+   "date": "2026-08-07",
+   "time": "08/07",
+   "src": "Tempo",
+   "t": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN",
+   "tags": [
+    "BKSL"
+   ],
+   "url": "https://bisnis.tempo.co/read/2116937/pemkab-bogor-serah-terima-psu-sentul-city-rampung-tinggal-tunggu-sertifikat-bpn",
+   "img": "https://statik.tempo.co/data/2026/08/07/id_1485550/1485550_720.jpg",
+   "t_ko": "Bogor 군청, Sentul City 공공시설(PSU) 인수 완료 — BPN 등기 대기",
+   "t_id": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN"
   }
  ],
  "market_news": [
   {
-   "ts": "2026-09-11T12:48:48+07:00",
+   "ts": "2026-09-11T12:53:13+07:00",
    "date": "2026-09-11",
-   "time": "12:48",
+   "time": "12:53",
    "src": "CNBC",
    "t": "Trump says he has no regrets about starting the Iran war as U.S. dials up economic pressure",
    "tags": [],
@@ -17012,6 +17065,30 @@
    ]
   },
   {
+   "ts": "2026-09-11T12:50:10+07:00",
+   "date": "2026-09-11",
+   "time": "12:50",
+   "src": "Detik",
+   "t": "Murid di 1.653 Sekolah Tak Lagi Dapat MBG",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8658246/murid-di-1-653-sekolah-tak-lagi-dapat-mbg",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/04/mbg-tetap-jalan-di-tengah-bayang-bayang-korupsi-1780556399300_169.jpeg?w=360&q=90",
+   "t_id": "Murid di 1.653 Sekolah Tak Lagi Dapat MBG",
+   "t_ko": "1,653개 학교 학생들, MBG 지원 중단"
+  },
+  {
+   "ts": "2026-09-11T12:47:26+07:00",
+   "date": "2026-09-11",
+   "time": "12:47",
+   "src": "Bloomberg",
+   "t": "FTSE 100 Live: UK Stocks Set to Snap Five Day Losing Streak",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/live-blog/2026-09-11/ftse-100-live-uk-gdp-iip-trade-data-pound-bonds-oil-prices-hormuz-ai-stocks-what-s-moving-uk-markets-right-now-markets-today-mtwjb3y4",
+   "g": 1,
+   "t_ko": "FTSE 100, 영국 증시 5일 연속 하락세 마감 전망",
+   "t_id": "FTSE 100 Live: Saham UK Siap Putus Tren Penurunan 5 Hari"
+  },
+  {
    "ts": "2026-09-11T12:45:00+07:00",
    "date": "2026-09-11",
    "time": "12:45",
@@ -17020,8 +17097,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121246/efek-el-nino-perhapi-ungkap-3-9-juta-ton-batu-bara-gagal-dikirim",
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260907084627.jpg",
-   "t_ko": "엘니뇨 여파로 석탄 390만 톤 선적 차질 발생",
-   "t_id": "Efek El Niño, Perhapi Ungkap 3,9 Juta Ton Batu Bara Gagal Dikirim"
+   "t_ko": "Perhapi, 엘니뇨 여파로 석탄 390만 톤 선적 차질",
+   "t_id": "Dampak El Niño, Perhapi Ungkap 3,9 Juta Ton Batu Bara Gagal Dikirim"
   },
   {
    "ts": "2026-09-11T12:40:00+07:00",
@@ -17033,7 +17110,7 @@
    "url": "https://mediaindonesia.com/internasional/932259/trump-ungkap-alasan-tunda-serangan-penuh-ke-iran-demi-pemilu-paruh-waktu-as",
    "g": 1,
    "t_id": "Trump Ungkap Alasan Tunda Serangan Penuh ke Iran demi Pemilu Paruh Waktu AS",
-   "t_ko": "Trump, 미국 중간선거 고려해 이란 전면 공격 연기 이유 밝혀"
+   "t_ko": "Trump, 미국 중간선거 앞두고 이란 전면 공격 연기 배경 설명"
   },
   {
    "ts": "2026-09-11T12:39:40+07:00",
@@ -17044,8 +17121,8 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-11/bonds-selloff-pushes-10-year-treasury-yield-closer-to-5-video",
    "g": 1,
-   "t_ko": "채권 매도세에 10년물 국채금리 5%에 근접",
-   "t_id": "Aksi Jual Obligasi Dorong Imbal Hasil US Treasury 10 Tahun Mendekati 5%"
+   "t_ko": "채권 매도세에 10년물 미 국채금리 5% 림박",
+   "t_id": "Aksi Jual Obligasi Dorong Yield US Treasury 10-Tahun Mendekati 5%"
   },
   {
    "ts": "2026-09-11T12:38:13+07:00",
@@ -17057,7 +17134,7 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8658239/negara-gagal-ini-tebar-bansos-rp-300-m-satu-orang-dapat-rp-2-juta",
    "img": "https://akcdn.detik.net.id/community/media/visual/2021/10/18/misionaris-hingga-anak-anak-jadi-korban-penculikan-geng-di-haiti-4_169.jpeg?w=360&q=90",
    "t_id": "Negara Gagal Ini Tebar Bansos Rp 300 M, Satu Orang Dapat Rp 2 Juta",
-   "t_ko": "디폴트 국가, Rp300억 규모 지원금 살포해 1인당 Rp200만 지급"
+   "t_ko": "파산 국가, Rp3,000억 규모 지원금 살포… 1인당 Rp200만 지급"
   },
   {
    "ts": "2026-09-11T12:37:16+07:00",
@@ -17068,7 +17145,7 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-11/india-china-set-for-bilateral-talks-at-brics-summit-video",
    "g": 1,
-   "t_ko": "인도·중국, BRICS 정상회의서 양자 회담 예정",
+   "t_ko": "인도·중국, BRICS 정상회의서 양자회담 개최 예정",
    "t_id": "India-China Bersiap Gelar Pembicaraan Bilateral di KTT BRICS"
   },
   {
@@ -17095,18 +17172,6 @@
    "g": 1,
    "t_ko": "후티-사우디 교전 격화에 유가 107달러선 근접",
    "t_id": "Minyak Dekati $107 Seiring Eskalasi Pertempuran Houthi-Saudi"
-  },
-  {
-   "ts": "2026-09-11T12:33:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:33",
-   "src": "Katadata",
-   "t": "Pertamina Akui Ada Antrean BBM di SPBU Imbas Pergeseran Konsumsi ke Pertalite",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/energi/6aa39294e2dee/pertamina-akui-ada-antrean-bbm-di-spbu-imbas-pergeseran-konsumsi-ke-pertalite",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/2026_09_10-13_25_00_3ffcc242-acec-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Pertamina Akui Ada Antrean BBM di SPBU Imbas Pergeseran Konsumsi ke Pertalite",
-   "t_ko": "Pertamina, Pertalite로 소비 이전 여파로 주유소 연료 대기열 인정"
   },
   {
    "ts": "2026-09-11T12:30:00+07:00",
@@ -17180,18 +17245,6 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841448/JohnXw2TiL.jpg?w=720",
    "t_ko": "Gen Z 효과: 명품 브랜드, 과시 대신 지적 이미지 판매",
    "t_id": "Efek Gen Z: Merek Mewah Mulai Jual Citra Pintar, Bukan Sekadar Gaya"
-  },
-  {
-   "ts": "2026-09-11T12:05:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:05",
-   "src": "Katadata",
-   "t": "Debit Air Sungai Mahakam Menyusut, Kehidupan Pesut Terancam",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/energi-baru/6aa38b7ba5030/debit-air-sungai-mahakam-menyusut-kehidupan-pesut-terancam",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2023/09/08/Pesut_Mahakam-2023_09_08-20_29_30_10e714e8c1d31f101b8ad80293606eb9_620x413_thumb.jpeg",
-   "t_ko": "Mahakam 강 수위 하락으로 돌고래 생존 위협",
-   "t_id": "Debit Air Sungai Mahakam Menyusut, Kehidupan Pesut Terancam"
   },
   {
    "ts": "2026-09-11T12:00:00+07:00",
@@ -17401,19 +17454,6 @@
    "t_id": "Bansos Bakal Serba Digital, Bagaimana Nasib Warga yang Gaptek?"
   },
   {
-   "ts": "2026-09-11T11:12:13+07:00",
-   "date": "2026-09-11",
-   "time": "11:12",
-   "src": "Jawa Pos",
-   "t": "Turun Rp 26 Ribu! Cek Rincian Harga Emas Antam, UBS, dan Galeri24 di Pegadaian Hari Ini",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609110210/turun-rp-26-ribu-cek-rincian-harga-emas-antam-ubs-dan-galeri24-di-pegadaian-hari-ini",
-   "g": 1,
-   "img": "https://cdn-assets.jawapos.com/images/1/2023/05/11/Harga-Emas-Naik-Salman-Toyibi-2-3989551824.jpg",
-   "t_ko": "Pegadaian 금 가격 하락 — Antam·UBS·Galeri24 시세 상세",
-   "t_id": "Turun Rp 26 Ribu! Cek Rincian Harga Emas Antam, UBS, dan Galeri24 di Pegadaian Hari Ini"
-  },
-  {
    "ts": "2026-09-11T11:09:00+07:00",
    "date": "2026-09-11",
    "time": "11:09",
@@ -17448,6 +17488,18 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2024/07/08/2024_07_08-19_00_04_6b057ec8-3d24-11ef-a60e-0242ac120009_620x413_thumb.jpg",
    "t_ko": "Weda Bay Nickel, 4개월 가동 중단 딛고 재가동",
    "t_id": "Weda Bay Nickel Kembali Beroperasi Usai Berhenti 4 Bulan"
+  },
+  {
+   "ts": "2026-09-11T10:56:56+07:00",
+   "date": "2026-09-11",
+   "time": "10:56",
+   "src": "Medcom",
+   "t": "Rekomendasi Dish Dryer Sterilizer untuk Mengeringkan Peralatan Makan",
+   "tags": [],
+   "url": "https://www.medcom.id/properti/news-properti/Rb1y2l2b-rekomendasi-dish-dryer-sterilizer-untuk-mengeringkan-peralatan-makan",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841471/CHhuFiOsUQ.jpg?w=720",
+   "t_ko": "식기 건조용 소독건조기 추천",
+   "t_id": "Rekomendasi Dish Dryer Sterilizer untuk Mengeringkan Peralatan Makan"
   }
  ],
  "kisi_news": [
@@ -17620,9 +17672,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.09",
-   "d": 0.26,
-   "ytd": 12.74,
+   "v": "13.08",
+   "d": 0.18,
+   "ytd": 12.65,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17656,7 +17708,7 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "99.05",
-   "d": 0.02,
+   "d": -0.03,
    "ytd": 0.78,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -17667,9 +17719,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.20",
-   "d": -1.24,
-   "ytd": 76.25,
+   "v": "101.37",
+   "d": -1.36,
+   "ytd": 76.54,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17679,9 +17731,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,375.7",
-   "d": 0.2,
-   "ytd": 1.16,
+   "v": "4,381.6",
+   "d": 0.32,
+   "ytd": 1.29,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -25646,8 +25698,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-11 12:42",
-  "pc_age_min": 11,
+  "idx_from_pc": "2026-09-11 12:50",
+  "pc_age_min": 8,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27314,6 +27366,142 @@
    "ts": "2026-09-11T12:33:19.843001+07:00"
   }
  },
+ "top_day": "2026-09-11",
+ "top_news": [
+  {
+   "ts": "2026-09-11T09:05:00+07:00",
+   "date": "2026-09-11",
+   "time": "09:05",
+   "src": "Katadata",
+   "t": "Harga Minyak Brent Tembus US$108 per Barel, Dipicu Perang Houthi-Arab Saudi",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/energi/6aa361ce4665e/harga-minyak-brent-tembus-us108-per-barel-dipicu-perang-houthi-arab-saudi",
+   "g": 1,
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2022/02/04/minyak-2022_02_04-08_57_45_de9f30c0e6fac82ef11484059b5aef2d_620x413_thumb.jpg",
+   "score": 13.5,
+   "srcs": 8,
+   "t_ko": "Brent유 배럴당 US$108 돌파 — Houthi·사우디아라비아 분쟁 여파",
+   "t_id": "Harga Minyak Brent Tembus US$108 per Barel, Dipicu Perang Houthi-Arab Saudi",
+   "ai_ko": "Brent유 0.5% 오른 배럴당 USD 108.13로 주간 13% 급등, Houthi와 Saudi Arabia 교전 격화에 공급 차질 우려 확산 / Saudi Arabia 산유량은 1990년 이후 최저, Brent는 연초 대비 80% 상승했으나 4월 고점 USD 126은 하회",
+   "ai_id": "Harga minyak Brent naik 0,5% ke US$108,13 per barel, melonjak hampir 13% sepekan, seiring intensifnya pertempuran Houthi dengan pasukan dukungan Arab Saudi dan kekhawatiran gangguan pasokan. Produksi minyak Arab Saudi anjlok ke level terendah sejak 1990, sementara Brent sudah naik hampir 80% sepanjang tahun ini namun masih di bawah puncak US$126 pada April.",
+   "ai_tags": [
+    "유가",
+    "지정학",
+    "원자재"
+   ],
+   "ai_tags_id": [
+    "harga minyak",
+    "geopolitik",
+    "komoditas"
+   ]
+  },
+  {
+   "ts": "2026-09-11T08:47:21+07:00",
+   "date": "2026-09-11",
+   "time": "08:47",
+   "src": "CNBC Indonesia",
+   "t": "IHSG Ambruk, Asing Ternyata Net Sell Jumbo di 10 Saham Ini",
+   "tags": [],
+   "url": "https://www.cnbcindonesia.com/market/20260911083921-17-767100/ihsg-ambruk-asing-ternyata-net-sell-jumbo-di-10-saham-ini",
+   "img": "https://akcdn.detik.net.id/visual/2026/06/08/layar-menampilkan-pergerakan-indeks-harga-saham-gabungan-ihsg-di-gedung-bursa-efek-indonesia-bei-jakarta-senin-862026-cnbc-ind-1780893013496_169.jpeg?w=1200&q=90",
+   "score": 13.5,
+   "srcs": 9,
+   "t_ko": "IHSG 급락 — 외국인, 이 10개 종목 대규모 순매도",
+   "t_id": "IHSG Ambruk, Asing Ternyata Net Sell Jumbo di 10 Saham Ini",
+   "ai_ko": "IHSG, 1.29% 내린 6,591.90으로 마감, 거래대금 Rp19.76조에 541개 종목 하락 / 외국인 전체 시장 순매도 Rp1.95조, 정규장에서만 Rp7,475억 매도로 수급 부담",
+   "ai_id": "IHSG ditutup anjlok 1,29% atau 86,30 poin ke level 6.591,90 pada Kamis (10/9/2026) dengan nilai transaksi Rp19,76 triliun. Investor asing mencatat net sell Rp1,95 triliun di seluruh pasar, termasuk Rp747,51 miliar di pasar reguler.",
+   "ai_tags": [
+    "증시",
+    "외국인",
+    "수급"
+   ],
+   "ai_tags_id": [
+    "IHSG",
+    "asing",
+    "net sell"
+   ]
+  },
+  {
+   "ts": "2026-09-11T08:15:21+07:00",
+   "date": "2026-09-11",
+   "time": "08:15",
+   "src": "Bloomberg Technoz",
+   "t": "Rupiah Berisiko Terjegal Harga Minyak & Sentimen Hawkish The Fed",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121224/rupiah-berisiko-terjegal-harga-minyak-sentimen-hawkish-the-fed",
+   "g": 1,
+   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171902.jpeg",
+   "score": 13.5,
+   "srcs": 8,
+   "t_ko": "루피아, 유가 상승·Fed 매파 기조에 약세 압력",
+   "t_id": "Rupiah Berisiko Terjegal Harga Minyak & Sentimen Hawkish The Fed",
+   "ai_ko": "Brent유 USD 108.49 상승과 미국 8월 생산자물가 0.4% 상승으로 루피아 추가 약세 압력, NDF Rp17,616/USD / 미국 10년물 금리 5% 근접에 인도네시아 국채·외화부채 보유 상장사 부담 확대",
+   "ai_id": "Rupiah berpotensi melanjutkan pelemahan seiring harga Brent US$108,49/barel dan PPI AS Agustus naik 0,4%, dengan NDF bertahan di Rp17.616/US$. Aksi jual US Treasury yang mendorong yield 10 tahun mendekati 5% turut merembet ke pasar obligasi Asia.",
+   "ai_tags": [
+    "환율",
+    "유가",
+    "금리"
+   ],
+   "ai_tags_id": [
+    "kurs",
+    "harga minyak",
+    "suku bunga"
+   ]
+  },
+  {
+   "ts": "2026-09-11T07:50:11+07:00",
+   "date": "2026-09-11",
+   "time": "07:50",
+   "src": "CNN Indonesia",
+   "t": "Harga Minyak Dunia Menyala, Seberapa Kuat Benteng APBN Menahan Beban?",
+   "tags": [],
+   "url": "https://www.cnnindonesia.com/ekonomi/20260911064503-532-1402625/harga-minyak-dunia-menyala-seberapa-kuat-benteng-apbn-menahan-beban",
+   "g": 1,
+   "img": "https://akcdn.detik.net.id/visual/2026/03/31/ilustrasi-petrol-1774934759988_169.jpeg?w=360&q=90",
+   "score": 13.5,
+   "srcs": 9,
+   "t_ko": "국제유가 급등, 국가예산 버팀목 시험대",
+   "t_id": "Harga Minyak Dunia Menyala, Seberapa Kuat Benteng APBN Menahan Beban?",
+   "ai_ko": "Brent유 배럴당 USD 101.34로 2026년 7월 이후 최고, Purbaya 재무장관은 에너지 보조금 쿼터 증액 계획 없다고 밝힘 / USD 100 기준 잔여 재정여력 Rp38.6조에 월 Rp7.9조 부담으로 약 5개월치, 2027년 예산이 관건",
+   "ai_id": "Harga minyak Brent naik ke US$101,34 per barel, tertinggi sejak Juli 2026, namun Menkeu Purbaya memastikan APBN masih cukup dan belum berencana menambah kuota subsidi energi. Pengamat Yayan Satyakti menghitung ruang fiskal tersisa sekitar Rp38,6 triliun dengan beban tambahan Rp7,9 triliun per bulan, atau bantalan sekitar lima bulan.",
+   "ai_tags": [
+    "유가",
+    "재정",
+    "보조금"
+   ],
+   "ai_tags_id": [
+    "harga minyak",
+    "fiskal",
+    "subsidi"
+   ]
+  },
+  {
+   "ts": "2026-09-11T12:33:00+07:00",
+   "date": "2026-09-11",
+   "time": "12:33",
+   "src": "Katadata",
+   "t": "Pertamina Akui Ada Antrean BBM di SPBU Imbas Pergeseran Konsumsi ke Pertalite",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/energi/6aa39294e2dee/pertamina-akui-ada-antrean-bbm-di-spbu-imbas-pergeseran-konsumsi-ke-pertalite",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/2026_09_10-13_25_00_3ffcc242-acec-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_ko": "Pertamina, Pertalite 소비 쏠림에 주유소 기름 대기줄 인정",
+   "t_id": "Pertamina Akui Ada Antrean BBM di SPBU Imbas Pergeseran Konsumsi ke Pertalite",
+   "ai_ko": "Pertamina Patra Niaga가 최근 주유소 대기행렬 원인으로 재고 부족이 아닌 Pertamax·Dex 등 비보조금 제품에서 Pertalite·Biosolar로의 소비 이동을 지목 / 보조금 유종 수요 증가에 따른 주유소 설비 병목 노출, 대응책으로 Sumatera·Kalimantan·Sulawesi에 소형 주유소 확대",
+   "ai_id": "Pertamina Patra Niaga menyebut antrean di sejumlah SPBU bukan karena stok BBM, melainkan shifting konsumsi dari produk nonsubsidi Pertamax Series dan Dex Series ke Pertalite serta Biosolar. Keterbatasan dispenser dan nozzle memicu penumpukan, sehingga perseroan mengembangkan SPBU tipe kecil di Sumatera, Kalimantan, dan Sulawesi.",
+   "ai_tags": [
+    "연료보조금",
+    "유통",
+    "에너지"
+   ],
+   "ai_tags_id": [
+    "BBM subsidi",
+    "distribusi",
+    "energi"
+   ],
+   "score": 12.5,
+   "srcs": 9
+  }
+ ],
  "mcap": [
   {
    "t": "BBCA",
@@ -27456,25 +27644,6 @@
    "srcs": 1
   },
   {
-   "t": "BUMI",
-   "n": "Bumi Resources",
-   "px": 210.0,
-   "pct": -0.94,
-   "val": 482719335000.0,
-   "mcap": 77980432334280.0,
-   "ratio": 0.8,
-   "ev_ko": "지분매각·경영권",
-   "ev_id": "Divestasi & pengendali",
-   "hl": "Bumi Resources(BUMI), Glencore 차입금으로 Rp1조 규모 Laman Mining 인수",
-   "hl_id": "BUMI Caplok Tambang Laman Mining Rp 1 T Pakai Utang Glencore, Ini Rencananya",
-   "url": "https://katadata.co.id/finansial/bursa/6aa38824e174b/bumi-caplok-tambang-laman-mining-rp-1-t-pakai-utang-glencore-apa-rencananya",
-   "score": 59.7,
-   "s_news": 95,
-   "s_size": 72,
-   "s_surge": 0,
-   "srcs": 1
-  },
-  {
    "t": "MGLV",
    "n": "NexAI Digital Infrastruktur",
    "px": 15475.0,
@@ -27494,25 +27663,6 @@
    "srcs": 2
   },
   {
-   "t": "KLBF",
-   "n": "Kalbe Farma",
-   "px": 735.0,
-   "pct": -2.65,
-   "val": 32174909166.666664,
-   "mcap": 34407842781900.0,
-   "ratio": 0.5,
-   "ev_ko": "법적 리스크",
-   "ev_id": "Risiko hukum",
-   "hl": "KLBF, 자회사 상장폐지 검토 — EPMT 유동주식비율 7.51% 불과",
-   "hl_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%",
-   "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
-   "score": 58.2,
-   "s_news": 98,
-   "s_size": 63,
-   "s_surge": 0,
-   "srcs": 2
-  },
-  {
    "t": "BBCA",
    "n": "Bank Central Asia",
    "px": 6300.0,
@@ -27528,6 +27678,25 @@
    "score": 57.1,
    "s_news": 70,
    "s_size": 97,
+   "s_surge": 0,
+   "srcs": 1
+  },
+  {
+   "t": "KLBF",
+   "n": "Kalbe Farma",
+   "px": 735.0,
+   "pct": -2.65,
+   "val": 32174909166.666664,
+   "mcap": 34407842781900.0,
+   "ratio": 0.5,
+   "ev_ko": "법적 리스크",
+   "ev_id": "Risiko hukum",
+   "hl": "KLBF, 수익성 압박에 제품 가격 인상 및 Enseval 상장폐지 검토",
+   "hl_id": "Laba Tertekan, KLBF Kaji Kenaikan Harga dan Delisting Enseval",
+   "url": "https://www.idnfinancials.com/news/68702/profit-under-pressure-klbf-weighs-price-hikes-and-enseval-delisting",
+   "score": 55.0,
+   "s_news": 90,
+   "s_size": 63,
    "s_surge": 0,
    "srcs": 1
   },
@@ -27570,25 +27739,6 @@
    "srcs": 1
   },
   {
-   "t": "EPMT",
-   "n": "Enseval Putera Megatrading",
-   "px": 2400.0,
-   "pct": 0.42,
-   "val": 118258666.66666667,
-   "mcap": 6500736000000.0,
-   "ratio": 1.1,
-   "ev_ko": "법적 리스크",
-   "ev_id": "Risiko hukum",
-   "hl": "KLBF, 자회사 상장폐지 검토 — EPMT 유동주식비율 7.51% 불과",
-   "hl_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%",
-   "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
-   "score": 51.1,
-   "s_news": 90,
-   "s_size": 45,
-   "s_surge": 5,
-   "srcs": 1
-  },
-  {
    "t": "VISI",
    "n": "Satu Visi Putra",
    "px": 975.0,
@@ -27604,6 +27754,44 @@
    "score": 51.1,
    "s_news": 100,
    "s_size": 37,
+   "s_surge": 0,
+   "srcs": 0
+  },
+  {
+   "t": "HRTA",
+   "n": "Hartadinata Abadi",
+   "px": 2150.0,
+   "pct": -3.15,
+   "val": 12081333333.333332,
+   "mcap": 9901314160000.0,
+   "ratio": 0.5,
+   "ev_ko": "자본구조",
+   "ev_id": "Aksi korporasi",
+   "hl": "HRTA, 제3자배정 유상증자로 4억6,052만주 발행",
+   "hl_id": "Private Placement, Emiten HRTA Terbitkan 460,52 Juta Saham",
+   "url": "https://www.liputan6.com/saham/read/8288589/private-placement-emiten-hrta-terbitkan-46052-juta-saham",
+   "score": 51.0,
+   "s_news": 90,
+   "s_size": 50,
+   "s_surge": 0,
+   "srcs": 1
+  },
+  {
+   "t": "BMAS",
+   "n": "Bank Kasikorn Indonesia",
+   "px": 515.0,
+   "pct": -1.9,
+   "val": 100435333.33333333,
+   "mcap": 9229642375200.0,
+   "ratio": 0.3,
+   "ev_ko": "자본구조",
+   "ev_id": "Aksi korporasi",
+   "hl": "PT Bank Kasikorn Indonesia Tbk(BMAS)는 2,874,315,845주 규모의 유상증자(HMETD)를 발행가 Rp350에 추진함. 조달 자금은 여신 확대 지원을 위한 운용 자금으로 사용될 예정이며, 신주 배정 기준일은 2026년 11월 25일임.",
+   "hl_id": "PT Bank Kasikorn Indonesia Tbk (BMAS) berencana menerbitkan Hak Memesan Efek Terlebih Dahulu (HMETD) sebanyak 2.874.315.845 saham baru dengan harga pelaksanaan ",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b62aa261ce_90ae365115.pdf",
+   "score": 50.7,
+   "s_news": 90,
+   "s_size": 49,
    "s_surge": 0,
    "srcs": 0
   }
