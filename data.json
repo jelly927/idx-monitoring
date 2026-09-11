@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 12:41",
+ "updated": "2026-09-11 12:53",
  "delay_min": 0,
- "fx_basis": "13.09 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,345 · 12:35 Yahoo",
- "idr_per_krw": 13.091,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,613 · USD/KRW 1,344 · 12:35 Yahoo",
+ "idr_per_krw": 13.1022,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 12:40",
+   "asof": "investing.com 12:51",
    "unit": "bp"
   }
  ],
@@ -337,8 +337,8 @@
   "m1": 3.56,
   "value_idr": 21546688746644,
   "volume": 48552221241,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 12:33",
-  "rank_asof": "12:39",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 12:42",
+  "rank_asof": "12:51",
   "rank_date": "2026-09-11",
   "adv": 143,
   "dec": 552,
@@ -15301,10 +15301,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6888.07,
+   "px": 6879.53,
    "prev": 7042.44,
-   "pct": -2.19,
-   "asof": "12:20",
+   "pct": -2.31,
+   "asof": "12:30",
    "live": true,
    "spark": [
     6836.48,
@@ -15371,17 +15371,19 @@
     6882.82,
     6893.26,
     6888.97,
-    6888.07
+    6885.07,
+    6873.52,
+    6879.53
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63799.43,
+   "px": 63813.97,
    "prev": 65128.81,
-   "pct": -2.04,
-   "asof": "12:25",
+   "pct": -2.02,
+   "asof": "12:35",
    "live": true,
    "spark": [
     63748.21,
@@ -15439,17 +15441,19 @@
     63870.88,
     63823.69,
     63809.12,
-    63799.43
+    63731.49,
+    63817.31,
+    63813.97
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24785.45,
+   "px": 24797.54,
    "prev": 24954.47,
-   "pct": -0.68,
-   "asof": "12:25",
+   "pct": -0.63,
+   "asof": "12:35",
    "live": true,
    "spark": [
     24603.11,
@@ -15489,7 +15493,9 @@
     24796.13,
     24813.39,
     24784.24,
-    24785.45
+    24775.39,
+    24795.21,
+    24797.54
    ]
   }
  ],
@@ -15577,6 +15583,19 @@
  },
  "news": [
   {
+   "ts": "2026-09-11T12:45:00+07:00",
+   "date": "2026-09-11",
+   "time": "12:45",
+   "src": "Media Indonesia",
+   "t": "Teleskop Chandra NASA Ungkap Objek Sinar-X Misterius di Alam Semesta",
+   "tags": [
+    "NASA"
+   ],
+   "url": "https://mediaindonesia.com/teknologi/932197/teleskop-chandra-nasa-ungkap-objek-sinar-x-misterius-di-alam-semesta",
+   "t_id": "Teleskop Chandra NASA Ungkap Objek Sinar-X Misterius di Alam Semesta",
+   "t_ko": "NASA Chandra 우주망원경, 우주 속 미스터리 X선 포착"
+  },
+  {
    "ts": "2026-09-11T12:32:00+07:00",
    "date": "2026-09-11",
    "time": "12:32",
@@ -15586,8 +15605,8 @@
     "NASA"
    ],
    "url": "https://mediaindonesia.com/teknologi/932200/apod-nasa-menyingkap-keindahan-nebula-jerapah-ldn-1295-di-antariksa",
-   "t_id": "APOD NASA: Menyingkap Keindahan Nebula Jerapah LDN 1295 di Antariksa",
-   "t_ko": "NASA APOD, 우주 속 LDN 1295 기린 성운의 신비로운 자태 공개"
+   "t_ko": "NASA APOD, 우주 속 LDN 1295 기린 성운의 신비로운 자태 공개",
+   "t_id": "APOD NASA: Menyingkap Keindahan Nebula Jerapah LDN 1295 di Antariksa"
   },
   {
    "ts": "2026-09-11T12:17:00+07:00",
@@ -16965,86 +16984,92 @@
     "추천종목"
    ],
    "ai_tags_id": []
-  },
-  {
-   "ts": "2026-08-24T08:33:00+07:00",
-   "date": "2026-08-24",
-   "time": "08/24",
-   "src": "Tempo",
-   "t": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1",
-   "tags": [
-    "AREA"
-   ],
-   "url": "https://bisnis.tempo.co/read/2117248/pt-pertamina-patra-niaga-ru-cilacap-buka-tender-penggantian-column-assy-11c-1",
-   "img": "https://statik.tempo.co/data/2026/08/10/id_1485829/1485829_720.jpg",
-   "t_ko": "Pertamina Patra Niaga Cilacap 정유공장, Column Assy 11C-1 교체 입찰 공고",
-   "t_id": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1",
-   "ai_ko": "Pertamina Patra Niaga RU IV Cilacap, FOC I 지역 Column Assy 11C-1 교체 공사 공개입찰 공고, 접수 마감은 8월 24일 23시 59분 / 정유설비 신뢰도 유지를 위한 정기 발주로 플랜트·기자재 업체에 수주 기회",
-   "ai_id": "PT Pertamina Patra Niaga RU IV Cilacap membuka tender terbuka untuk pekerjaan penggantian Column Assy 11C-1 di area FOC I, dengan pendaftaran daring hingga 24 Agustus 2026 pukul 23.59. Tender ini bagian dari upaya menjaga keandalan operasional dan keberlangsungan produksi kilang.",
-   "ai_tags": [
-    "입찰",
-    "정유",
-    "설비투자"
-   ],
-   "ai_tags_id": [
-    "tender",
-    "kilang",
-    "pengadaan"
-   ]
-  },
-  {
-   "ts": "2026-08-10T18:35:31+07:00",
-   "date": "2026-08-10",
-   "time": "08/10",
-   "src": "Tempo",
-   "t": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
-   "tags": [
-    "BMRI"
-   ],
-   "url": "https://bisnis.tempo.co/read/2117152/bank-mandiri-gandeng-paramount-dorong-pertumbuhan-properti-berkelanjutan",
-   "img": "https://statik.tempo.co/data/2026/08/10/id_1485793/1485793_720.jpg",
-   "t_ko": "Bank Mandiri, Paramount와 제휴 — 지속가능 부동산 성장 추진",
-   "t_id": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
-   "ai_ko": "Bank Mandiri, 8월 5일 Paramount Enterprise International과 부동산 개발 관련 MoU 2건 체결 / 개발부지 협력·마케팅 및 금융상품 이용이 골자로 Paramount 그룹과 계열사에 거래관리·디지털금융·소비자금융 제공",
-   "ai_id": "Bank Mandiri menandatangani dua MoU dengan PT Paramount Enterprise International pada Rabu, 5 Agustus 2026, mencakup kerja sama kawasan serta pemasaran dan penggunaan jasa atau produk perusahaan. Bank Mandiri akan menyediakan layanan perbankan komprehensif bagi Paramount Group dan afiliasinya, mulai dari pengelolaan transaksi, digitalisasi layanan keuangan, hingga solusi pembiayaan konsumen.",
-   "ai_tags": [
-    "업무협약",
-    "부동산",
-    "은행"
-   ],
-   "ai_tags_id": [
-    "MoU",
-    "properti",
-    "perbankan"
-   ]
-  },
-  {
-   "ts": "2026-08-07T14:18:08+07:00",
-   "date": "2026-08-07",
-   "time": "08/07",
-   "src": "Tempo",
-   "t": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN",
-   "tags": [
-    "BKSL"
-   ],
-   "url": "https://bisnis.tempo.co/read/2116937/pemkab-bogor-serah-terima-psu-sentul-city-rampung-tinggal-tunggu-sertifikat-bpn",
-   "img": "https://statik.tempo.co/data/2026/08/07/id_1485550/1485550_720.jpg",
-   "t_ko": "Bogor 군청, Sentul City 공공시설(PSU) 인수 완료 — BPN 등기 대기",
-   "t_id": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN"
   }
  ],
  "market_news": [
+  {
+   "ts": "2026-09-11T12:48:48+07:00",
+   "date": "2026-09-11",
+   "time": "12:48",
+   "src": "CNBC",
+   "t": "Trump says he has no regrets about starting the Iran war as U.S. dials up economic pressure",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/us-iran-war-trump-hormuz-banks-oil-sanctions.html",
+   "g": 1,
+   "t_ko": "Trump, 이란전쟁 개전 후회 없다 — 미국 경제 제재 강화",
+   "t_id": "Trump Sebut Tak Menyesal Mulai Perang Iran, AS Tingkatkan Tekanan Ekonomi",
+   "ai_ko": "Trump 미국 대통령, 이란 전쟁 개시에 후회 없다며 같은 결정 반복할 것이라고 발언 / 중간선거 후 종전·유가 하락 주장에도 장기화 보도 나오며 시장은 전쟁 장기화 대비",
+   "ai_id": "Presiden AS Donald Trump menyatakan tidak menyesal memulai perang dengan Iran dan akan mengambil keputusan yang sama jika diulang. Pasar bersiap menghadapi perang yang lebih panjang setelah laporan Wall Street Journal menyebut konflik bisa berlanjut melewati masa jabatannya.",
+   "ai_tags": [
+    "지정학",
+    "유가",
+    "미국"
+   ],
+   "ai_tags_id": [
+    "geopolitik",
+    "harga minyak",
+    "AS"
+   ]
+  },
+  {
+   "ts": "2026-09-11T12:45:00+07:00",
+   "date": "2026-09-11",
+   "time": "12:45",
+   "src": "Bloomberg Technoz",
+   "t": "Efek El Niño, Perhapi Ungkap 3,9 Juta Ton Batu Bara Gagal Dikirim",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121246/efek-el-nino-perhapi-ungkap-3-9-juta-ton-batu-bara-gagal-dikirim",
+   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260907084627.jpg",
+   "t_ko": "엘니뇨 여파로 석탄 390만 톤 선적 차질 발생",
+   "t_id": "Efek El Niño, Perhapi Ungkap 3,9 Juta Ton Batu Bara Gagal Dikirim"
+  },
+  {
+   "ts": "2026-09-11T12:40:00+07:00",
+   "date": "2026-09-11",
+   "time": "12:40",
+   "src": "Media Indonesia",
+   "t": "Trump Ungkap Alasan Tunda Serangan Penuh ke Iran demi Pemilu Paruh Waktu AS",
+   "tags": [],
+   "url": "https://mediaindonesia.com/internasional/932259/trump-ungkap-alasan-tunda-serangan-penuh-ke-iran-demi-pemilu-paruh-waktu-as",
+   "g": 1,
+   "t_id": "Trump Ungkap Alasan Tunda Serangan Penuh ke Iran demi Pemilu Paruh Waktu AS",
+   "t_ko": "Trump, 미국 중간선거 고려해 이란 전면 공격 연기 이유 밝혀"
+  },
   {
    "ts": "2026-09-11T12:39:40+07:00",
    "date": "2026-09-11",
    "time": "12:39",
    "src": "Bloomberg",
-   "t": "Bonds Selloff Pushes 10-Year Treasury Yield Closer to 5% (Video)",
+   "t": "Bonds Selloff Pushes 10-Year Treasury Yield Closer to 5%",
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-11/bonds-selloff-pushes-10-year-treasury-yield-closer-to-5-video",
    "g": 1,
-   "t_ko": "채권 매도세에 10년물 미 국채 금리 5%에 근접",
-   "t_id": "Aksi Jual Obligasi Dorong Imbal Hasil US Treasury 10 Tahun Mendekati 5% (Video)"
+   "t_ko": "채권 매도세에 10년물 국채금리 5%에 근접",
+   "t_id": "Aksi Jual Obligasi Dorong Imbal Hasil US Treasury 10 Tahun Mendekati 5%"
+  },
+  {
+   "ts": "2026-09-11T12:38:13+07:00",
+   "date": "2026-09-11",
+   "time": "12:38",
+   "src": "Detik",
+   "t": "Negara Gagal Ini Tebar Bansos Rp 300 M, Satu Orang Dapat Rp 2 Juta",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8658239/negara-gagal-ini-tebar-bansos-rp-300-m-satu-orang-dapat-rp-2-juta",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2021/10/18/misionaris-hingga-anak-anak-jadi-korban-penculikan-geng-di-haiti-4_169.jpeg?w=360&q=90",
+   "t_id": "Negara Gagal Ini Tebar Bansos Rp 300 M, Satu Orang Dapat Rp 2 Juta",
+   "t_ko": "디폴트 국가, Rp300억 규모 지원금 살포해 1인당 Rp200만 지급"
+  },
+  {
+   "ts": "2026-09-11T12:37:16+07:00",
+   "date": "2026-09-11",
+   "time": "12:37",
+   "src": "Bloomberg",
+   "t": "India-China Set For Bilateral Talks At BRICS Summit",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-11/india-china-set-for-bilateral-talks-at-brics-summit-video",
+   "g": 1,
+   "t_ko": "인도·중국, BRICS 정상회의서 양자 회담 예정",
+   "t_id": "India-China Bersiap Gelar Pembicaraan Bilateral di KTT BRICS"
   },
   {
    "ts": "2026-09-11T12:34:00+07:00",
@@ -17072,6 +17097,18 @@
    "t_id": "Minyak Dekati $107 Seiring Eskalasi Pertempuran Houthi-Saudi"
   },
   {
+   "ts": "2026-09-11T12:33:00+07:00",
+   "date": "2026-09-11",
+   "time": "12:33",
+   "src": "Katadata",
+   "t": "Pertamina Akui Ada Antrean BBM di SPBU Imbas Pergeseran Konsumsi ke Pertalite",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/energi/6aa39294e2dee/pertamina-akui-ada-antrean-bbm-di-spbu-imbas-pergeseran-konsumsi-ke-pertalite",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/2026_09_10-13_25_00_3ffcc242-acec-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "Pertamina Akui Ada Antrean BBM di SPBU Imbas Pergeseran Konsumsi ke Pertalite",
+   "t_ko": "Pertamina, Pertalite로 소비 이전 여파로 주유소 연료 대기열 인정"
+  },
+  {
    "ts": "2026-09-11T12:30:00+07:00",
    "date": "2026-09-11",
    "time": "12:30",
@@ -17080,8 +17117,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121243/kekeringan-di-kalimantan-esdm-antisipasi-suplai-batu-bara-ke-pln",
    "img": "https://images.bloombergtechnoz.com/data/2025/03/image-20250308135602.jpg",
-   "t_id": "Kekeringan di Kalimantan, ESDM Antisipasi Suplai Batu Bara ke PLN",
-   "t_ko": "칼리만탄 가뭄에 에너지광물자원부, PLN 석탄 공급 대비"
+   "t_ko": "칼리만탄 가뭄에 에너지광물자원부, PLN 석탄 공급 대비",
+   "t_id": "Kekeringan di Kalimantan, ESDM Antisipasi Suplai Batu Bara ke PLN"
   },
   {
    "ts": "2026-09-11T12:25:00+07:00",
@@ -17093,8 +17130,8 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/121261/trader-ragu-tarif-as-harga-tembaga-drop-3-62-jadi-us-14-233-ton",
    "g": 1,
    "img": "https://images.bloombergtechnoz.com/data/2026/05/image-20260519105854.jpg",
-   "t_id": "Trader Ragu Tarif AS, Harga Tembaga Drop 3,62% Jadi US$14.233/Ton",
-   "t_ko": "미국 관세 우려에 구리 가격 3.62% 하락한 톤당 14,233달러"
+   "t_ko": "미국 관세 우려에 구리 가격 3.62% 하락한 톤당 14,233달러",
+   "t_id": "Trader Ragu Tarif AS, Harga Tembaga Drop 3,62% Jadi US$14.233/Ton"
   },
   {
    "ts": "2026-09-11T12:24:43+07:00",
@@ -17105,8 +17142,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tl6pp7370/bri-insurance-perkuat-pengelolaan-sdm-di-tengah-transformasi-teknologi",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260911122319-568.png",
-   "t_id": "BRI Insurance Perkuat Pengelolaan SDM di Tengah Transformasi Teknologi",
-   "t_ko": "BRI Insurance, 기술 전환 속 인력 관리 강화"
+   "t_ko": "BRI Insurance, 기술 전환 속 인력 관리 강화",
+   "t_id": "BRI Insurance Perkuat Pengelolaan SDM di Tengah Transformasi Teknologi"
   },
   {
    "ts": "2026-09-11T12:23:00+07:00",
@@ -17117,8 +17154,8 @@
    "tags": [],
    "url": "https://www.idxchannel.com/market-news/motiontrade-bagikan-tips-mengenal-etf-emas-di-pasar-modal",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/11/5ad17acc-3584-47ad-8380-9053b857c437.jpg",
-   "t_id": "MotionTrade Bagikan Tips Mengenal ETF Emas di Pasar Modal",
-   "t_ko": "MotionTrade, 자본시장 금 ETF 이해 가이드 제공"
+   "t_ko": "MotionTrade, 자본시장 금 ETF 이해 가이드 제공",
+   "t_id": "MotionTrade Bagikan Tips Mengenal ETF Emas di Pasar Modal"
   },
   {
    "ts": "2026-09-11T12:18:35+07:00",
@@ -17389,44 +17426,6 @@
    "t_id": "Angka Masih Rahasia, Purbaya Sebut Gaji Manajer Kopdes Ditanggung Negara 2 Tahun"
   },
   {
-   "ts": "2026-09-11T11:06:44+07:00",
-   "date": "2026-09-11",
-   "time": "11:06",
-   "src": "FT",
-   "t": "US rate rise fears ripple through global bond markets",
-   "tags": [],
-   "url": "https://www.ft.com/content/2c9ce5b0-32ae-4460-aa89-9c80eb05ee41?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F6bb791ed-cfa4-46d3-87a4-8c889e79975b.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "미 금리 인상 우려, 글로벌 채권시장 확산",
-   "t_id": "Kekhawatiran Kenaikan Suku Bunga AS Guncang Pasar Obligasi Global"
-  },
-  {
-   "ts": "2026-09-11T11:01:20+07:00",
-   "date": "2026-09-11",
-   "time": "11:01",
-   "src": "Bloomberg",
-   "t": "Few Places to Hide as Bond Selloffs Continue",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-11/few-places-to-hide-as-bond-selloffs-continue-video",
-   "g": 1,
-   "t_ko": "채권 매도세 지속에 안전자산 실종",
-   "t_id": "Aksi Jual Obligasi Berlanjut, Investor Sulit Cari Perlindungan"
-  },
-  {
-   "ts": "2026-09-11T11:00:29+07:00",
-   "date": "2026-09-11",
-   "time": "11:00",
-   "src": "FT",
-   "t": "Iran and Gulf states to meet in push for Hormuz deal",
-   "tags": [],
-   "url": "https://www.ft.com/content/df2d9bcc-59f9-4122-aa4d-2020bef77e0e?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F95923f1d-41ed-472e-959b-4cba3fe31efe.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "이란-걸프 국가, 호르무즈 협상 위해 회동 추진",
-   "t_id": "Iran dan Negara Teluk Gelar Pertemuan untuk Kesepakatan Selat Hormuz"
-  },
-  {
    "ts": "2026-09-11T11:00:00+07:00",
    "date": "2026-09-11",
    "time": "11:00",
@@ -17449,42 +17448,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2024/07/08/2024_07_08-19_00_04_6b057ec8-3d24-11ef-a60e-0242ac120009_620x413_thumb.jpg",
    "t_ko": "Weda Bay Nickel, 4개월 가동 중단 딛고 재가동",
    "t_id": "Weda Bay Nickel Kembali Beroperasi Usai Berhenti 4 Bulan"
-  },
-  {
-   "ts": "2026-09-11T10:56:56+07:00",
-   "date": "2026-09-11",
-   "time": "10:56",
-   "src": "Medcom",
-   "t": "Rekomendasi Dish Dryer Sterilizer untuk Mengeringkan Peralatan Makan",
-   "tags": [],
-   "url": "https://www.medcom.id/properti/news-properti/Rb1y2l2b-rekomendasi-dish-dryer-sterilizer-untuk-mengeringkan-peralatan-makan",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841471/CHhuFiOsUQ.jpg?w=720",
-   "t_ko": "식기 건조용 소독건조기 추천",
-   "t_id": "Rekomendasi Dish Dryer Sterilizer untuk Mengeringkan Peralatan Makan"
-  },
-  {
-   "ts": "2026-09-11T10:51:35+07:00",
-   "date": "2026-09-11",
-   "time": "10:51",
-   "src": "Medcom",
-   "t": "Pertamina Pangkas Struktur Anak Usaha, 118 Perusahaan Jadi Target Streamlining",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/4ba1ZrJb-pertamina-pangkas-struktur-anak-usaha-118-perusahaan-jadi-target-streamlining",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841467/2YOyFV7lnU.jpg?w=720",
-   "t_ko": "Pertamina, 자회사 구조 축소 — 118개사 조직 슬림화",
-   "t_id": "Pertamina Pangkas Struktur Anak Usaha, 118 Perusahaan Jadi Target Streamlining"
-  },
-  {
-   "ts": "2026-09-11T10:50:00+07:00",
-   "date": "2026-09-11",
-   "time": "10:50",
-   "src": "Bloomberg Technoz",
-   "t": "3 Sungai Kalimantan Surut, APBI Sebut Ada Perusahaan Stop Operasi",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121233/3-sungai-kalimantan-surut-apbi-sebut-ada-perusahaan-stop-operasi",
-   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260911084616.jpg",
-   "t_ko": "Kalimantan 하천 3곳 수위 저하 — APBI, 일부 기업 가동 중단 언급",
-   "t_id": "3 Sungai Kalimantan Surut, APBI Sebut Ada Perusahaan Stop Operasi"
   }
  ],
  "kisi_news": [
@@ -17658,8 +17621,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.09",
-   "d": 0.19,
-   "ytd": 12.67,
+   "d": 0.26,
+   "ytd": 12.74,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17692,9 +17655,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.07",
-   "d": -0.01,
-   "ytd": 0.8,
+   "v": "99.05",
+   "d": 0.02,
+   "ytd": 0.78,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17704,9 +17667,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.94",
-   "d": -0.81,
-   "ytd": 77.53,
+   "v": "101.20",
+   "d": -1.24,
+   "ytd": 76.25,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17716,9 +17679,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,375.1",
-   "d": 0.17,
-   "ytd": 1.14,
+   "v": "4,375.7",
+   "d": 0.2,
+   "ytd": 1.16,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17740,9 +17703,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,609",
-   "d": -0.11,
-   "ytd": -0.44,
+   "v": "16,614",
+   "d": -0.08,
+   "ytd": -0.41,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25683,8 +25646,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-11 12:33",
-  "pc_age_min": 8,
+  "idx_from_pc": "2026-09-11 12:42",
+  "pc_age_min": 11,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
