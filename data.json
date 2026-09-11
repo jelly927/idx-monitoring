@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 13:47",
+ "updated": "2026-09-11 13:53",
  "delay_min": 0,
  "fx_basis": "13.08 IDR/KRW · USD/IDR 17,605 · USD/KRW 1,346 · 13:41 Yahoo",
- "idr_per_krw": 13.0797,
+ "idr_per_krw": 13.0813,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 13:46",
+   "asof": "investing.com 13:52",
    "unit": "bp"
   }
  ],
@@ -340,7 +340,7 @@
   "value_idr": 21546688746644,
   "volume": 48552221241,
   "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 13:41",
-  "rank_asof": "13:46",
+  "rank_asof": "13:51",
   "rank_date": "2026-09-11",
   "adv": 143,
   "dec": 552,
@@ -15467,10 +15467,10 @@
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24816.86,
+   "px": 24806.09,
    "prev": 24954.47,
-   "pct": -0.55,
-   "asof": "13:30",
+   "pct": -0.59,
+   "asof": "13:35",
    "live": true,
    "spark": [
     24603.11,
@@ -15523,7 +15523,8 @@
     24832.73,
     24831.92,
     24821.6,
-    24816.86
+    24803.24,
+    24806.09
    ]
   }
  ],
@@ -15611,308 +15612,16 @@
  },
  "news": [
   {
-   "ts": "2026-09-11T13:47:10.376607+07:00",
+   "ts": "2026-09-11T13:26:00+07:00",
    "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "Laba Diproyeksi Melesat, Simak Target Terbaru Saham MEDC",
-   "tags": [
-    "MEDC"
-   ],
-   "url": "https://www.idxchannel.com/market-news/laba-diproyeksi-melesat-simak-target-terbaru-saham-medc",
-   "t_est": true,
-   "t_ko": "MEDC, 순이익 급증 전망에 목표주가 상향",
-   "t_id": "Laba Diproyeksi Melesat, Simak Target Terbaru Saham MEDC",
-   "ai_ko": "BRI Danareksa가 Medco Energi(MEDC) 목표주가 Rp2,200에 매수 유지, 주가 1.59% 오른 Rp1,600 / 상반기 생산 17만boepd로 18.9% 증가해 가이던스 상단, 유가주 투자심리 개선",
-   "ai_id": "BRI Danareksa mempertahankan rekomendasi beli MEDC dengan target harga Rp2.200 per saham, sementara sahamnya naik 1,59% ke Rp1.600. Produksi migas 1H26 diperkirakan 170 mboepd atau tumbuh 18,9% y-y, berada di batas atas panduan 2026.",
-   "ai_tags": [
-    "목표주가",
-    "생산량",
-    "유가"
-   ],
-   "ai_tags_id": []
-  },
-  {
-   "ts": "2026-09-11T13:47:10.375678+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "Duo Saham Prajogo Pangestu Menggeliat, Intip Proyeksi CUAN-PTRO",
-   "tags": [
-    "CUAN",
-    "PTRO"
-   ],
-   "url": "https://www.idxchannel.com/market-news/duo-saham-prajogo-pangestu-menggeliat-intip-proyeksi-cuan-ptro",
-   "t_est": true,
-   "t_ko": "Prajogo Pangestu 관련주 CUAN·PTRO 동반 강세 — 목표주가 전망",
-   "t_id": "Duo Saham Prajogo Pangestu Menggeliat, Intip Proyeksi CUAN-PTRO",
-   "ai_ko": "Prajogo Pangestu 계열주 9월 10일 동반 강세, CUAN(CUAN) 7.45% 오른 Rp1,010 / PTRO(PTRO) 5.05% 상승 Rp5,725, BRI Danareksa는 CUAN이 저항선 Rp885 돌파 후 20일선 Rp868 위 유지 평가",
-   "ai_id": "Saham grup Prajogo Pangestu kompak menguat pada Kamis (10/9/2026), dengan CUAN naik 7,45% ke Rp1.010 dan PTRO menguat 5,05% ke Rp5.725, diikuti TPIA, BRPT, BREN, dan CDIA. BRI Danareksa Sekuritas menilai CUAN melanjutkan tren naik setelah menembus resistance Rp885 dan bertahan di atas MA20 di Rp868, dengan support dinamis Rp868-Rp885.",
-   "ai_tags": [
-    "주가급등",
-    "기술적분석",
-    "에너지"
-   ],
-   "ai_tags_id": []
-  },
-  {
-   "ts": "2026-09-11T13:47:10.374652+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "Prospek Saham BULL Dinilai Masih Menarik, Intip Target Terbaru",
-   "tags": [
-    "BULL"
-   ],
-   "url": "https://www.idxchannel.com/market-news/prospek-saham-bull-dinilai-masih-menarik-intip-target-terbaru",
-   "t_est": true,
-   "t_ko": "BULL 주가 전망 여전히 매력적 — 최신 목표주가 공개",
-   "t_id": "Prospek Saham BULL Dinilai Masih Menarik, Intip Target Terbaru",
-   "ai_ko": "RHB증권, BULL(BULL) 목표주가를 Rp760에서 Rp800으로 상향하고 매수 유지 / 상반기 순이익 USD 5,800만에 탱커 4척 추가로 2026년 순이익 전망 33% 상향",
-   "ai_id": "RHB Sekuritas menaikkan target harga BULL menjadi Rp800 dari Rp760 dengan rekomendasi beli, seiring lonjakan tarif sewa kapal tanker dan penambahan armada. Laba bersih semester I-2026 tercatat USD58 juta, mendorong proyeksi laba 2026 naik 33%.",
-   "ai_tags": [
-    "목표주가",
-    "실적",
-    "해운"
-   ],
-   "ai_tags_id": []
-  },
-  {
-   "ts": "2026-09-11T13:47:10.373609+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "Saham ENRG-MEDC Cs Bertenaga saat Harga Minyak Brent ke USD107 Per Barel",
-   "tags": [
-    "ENRG",
-    "MEDC"
-   ],
-   "url": "https://www.idxchannel.com/market-news/saham-enrg-medc-cs-bertenaga-saat-harga-minyak-brent-ke-usd107-per-barel",
-   "t_est": true,
-   "t_ko": "ENRG·MEDC 등 브렌트유 USD107 돌파에 강세",
-   "t_id": "Saham ENRG-MEDC Cs Bertenaga saat Harga Minyak Brent ke USD107 Per Barel",
-   "ai_ko": "Brent 등 국제유가가 10일 6% 넘게 급등해 USD 100 돌파, 11일 인니 석유가스주 동반 강세 / ENRG 3.42% 상승 Rp1,505, APEX 2.94%·MEDC 1.91%·ELSA 1.37%·RAJA 1.23%·RATU 0.65% 상승",
-   "ai_id": "Harga minyak dunia melonjak lebih dari 6 persen pada Kamis (10/9) dan menembus USD100 per barel, mendorong saham migas menguat pada Jumat (11/9). ENRG naik 3,42 persen ke Rp1.505, disusul APEX 2,94 persen, MEDC 1,91 persen, ELSA 1,37 persen, RAJA 1,23 persen, dan RATU 0,65 persen.",
-   "ai_tags": [
-    "유가",
-    "석유가스",
-    "주가상승"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "migas",
-    "saham menguat"
-   ]
-  },
-  {
-   "ts": "2026-09-11T13:47:10.371139+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "MGLV Patok Harga Final Right Issue Rp8.880, Berpotensi Raih Dana Rp2,5 Triliun",
-   "tags": [
-    "MGLV"
-   ],
-   "url": "https://www.idxchannel.com/market-news/mglv-patok-harga-final-right-issue-rp8880-berpotensi-raih-dana-rp25-triliun",
-   "t_est": true,
-   "t_ko": "MGLV, 유상증자 최종가 Rp8,880 확정 — Rp2.5조 조달 전망",
-   "t_id": "MGLV Patok Harga Final Right Issue Rp8.880, Berpotensi Raih Dana Rp2,5 Triliun"
-  },
-  {
-   "ts": "2026-09-11T13:47:10.369801+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "BMAS Tetapkan Harga Rights Issue Rp350, Bidik Dana Rp1 Triliun",
-   "tags": [
-    "BMAS"
-   ],
-   "url": "https://www.idxchannel.com/market-news/bmas-tetapkan-harga-rights-issue-rp350-bidik-dana-rp1-triliun",
-   "t_est": true,
-   "t_ko": "BMAS, 유상증자 가격 Rp350 확정해 Rp1조 조달 목표",
-   "t_id": "BMAS Tetapkan Harga Rights Issue Rp350, Bidik Dana Rp1 Triliun",
-   "ai_ko": "Bank Kasikorn Indonesia(BMAS), 주당 Rp350에 최대 29억주를 발행하는 유상증자로 약 Rp1조 조달, 구주 655주당 신주 104주 비율 / 자금은 대출 확대용 운전자본에 투입, 미청약 시 희석률 약 13.7%",
-   "ai_id": "Bank Kasikorn Indonesia (BMAS) menetapkan harga pelaksanaan PMHMETD IV sebesar Rp350 per saham dengan penerbitan maksimal 2,9 miliar saham baru, sehingga berpotensi meraup sekitar Rp1 triliun. Dana bersih akan digunakan sebagai modal kerja untuk penyaluran kredit, dengan potensi dilusi 13,7% dan Kasikorn Vision Financial Company bertindak sebagai pembeli siaga.",
-   "ai_tags": [
-    "유상증자",
-    "은행",
-    "희석"
-   ],
-   "ai_tags_id": [
-    "rights issue",
-    "perbankan",
-    "dilusi"
-   ]
-  },
-  {
-   "ts": "2026-09-11T13:47:10.368733+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "SMLE Perkuat Diversifikasi, Bidik Pertumbuhan dari Produk Bernilai Tambah",
-   "tags": [
-    "SMLE"
-   ],
-   "url": "https://www.idxchannel.com/market-news/smle-perkuat-diversifikasi-bidik-pertumbuhan-dari-produk-bernilai-tambah",
-   "t_est": true,
-   "t_ko": "SMLE, 사업 다각화 강화해 고부가가치 제품서 성장 추진",
-   "t_id": "SMLE Perkuat Diversifikasi, Bidik Pertumbuhan dari Produk Bernilai Tambah",
-   "ai_ko": "Sinergi Multi Lestarindo(SMLE), 원료 유통을 넘어 특수원료·특수화학·자체브랜드와 R&D로 사업 다각화 추진 / 2026년 Emmi Nutritional Solutions, BioGrowing 등과 제휴해 유제품 원료·프로바이오틱스 포트폴리오 확대",
-   "ai_id": "Sinergi Multi Lestarindo (SMLE) memperkuat diversifikasi lewat specialty ingredients, specialty chemicals, own brand, serta penguatan R&D untuk bertransformasi menjadi specialty chemical solutions partner. Sepanjang 2026 perseroan menggandeng Emmi Nutritional Solutions untuk bahan baku dairy dan BioGrowing untuk portofolio probiotik dan starter cultures.",
-   "ai_tags": [
-    "사업다각화",
-    "제휴",
-    "화학"
-   ],
-   "ai_tags_id": [
-    "diversifikasi",
-    "kemitraan",
-    "kimia"
-   ]
-  },
-  {
-   "ts": "2026-09-11T13:47:10.367601+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "Erablue hingga XPENG Jadi Mesin Baru ERAA, Intip Target Terbaru",
-   "tags": [
-    "ERAA"
-   ],
-   "url": "https://www.idxchannel.com/market-news/erablue-hingga-xpeng-jadi-mesin-baru-eraa-intip-target-terbaru",
-   "t_est": true,
-   "t_ko": "Erablue·XPENG, ERAA 새 성장동력으로 부상 — 최신 목표는",
-   "t_id": "Erablue hingga XPENG Jadi Mesin Baru ERAA, Intip Target Terbaru",
-   "ai_ko": "UOB Kay Hian, Erajaya(ERAA)의 비(非)스마트폰 사업 성장성 주목, Erablue 상반기 매출 89% 증가 / 7월 기준 점포 283개로 연초 대비 102개 순증, 동일점포 매출 15.9% 성장",
-   "ai_id": "UOB Kay Hian menilai Erajaya Swasembada (ERAA) punya ruang tumbuh di luar bisnis smartphone lewat Erablue, ERAL, dan kendaraan listrik XPENG. Pendapatan Erablue melonjak 89% YoY pada semester I-2026 dengan SSSG 15,9% dan jaringan 283 toko per Juli 2026.",
-   "ai_tags": [
-    "실적",
-    "유통",
-    "전기차"
-   ],
-   "ai_tags_id": [
-    "kinerja",
-    "ritel",
-    "kendaraan listrik"
-   ]
-  },
-  {
-   "ts": "2026-09-11T13:47:10.366549+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "MITI Alihkan Empat Kapal ke Anak Usaha, Nilai Transaksi Rp22,75 Miliar",
-   "tags": [
-    "MITI"
-   ],
-   "url": "https://www.idxchannel.com/market-news/miti-alihkan-empat-kapal-ke-anak-usaha-nilai-transaksi-rp2275-miliar",
-   "t_est": true,
-   "t_ko": "MITI, 선박 4척 자회사 이전 — 거래가 Rp227.5억",
-   "t_id": "MITI Alihkan Empat Kapal ke Anak Usaha, Nilai Transaksi Rp22,75 Miliar",
-   "ai_ko": "Mitra Investindo(MITI) 자회사 Imako Perkasa Lines가 9일 선박 4척을 Wasesa Line에 Rp227.5억에 매각 / 예인선 3척 각 Rp57.5억, LCT 1척 Rp55억으로 동일 그룹 내 특수관계자 거래",
-   "ai_id": "Anak usaha MITI, PT Imako Perkasa Lines, menjual empat kapal kepada PT Wasesa Line pada 9 September 2026 senilai total Rp22,75 miliar. Transaksi mencakup tiga kapal tunda masing-masing Rp5,75 miliar dan satu LCT Rp5,5 miliar, dan tergolong transaksi afiliasi dalam satu kelompok usaha.",
-   "ai_tags": [
-    "자산매각",
-    "특수관계자",
-    "해운"
-   ],
-   "ai_tags_id": [
-    "penjualan aset",
-    "transaksi afiliasi",
-    "pelayaran"
-   ]
-  },
-  {
-   "ts": "2026-09-11T13:47:10.365366+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "Kalbe (KLBF) Sebut Margin Laba Masih Tertekan, Ruang Gerak Terbatas",
-   "tags": [
-    "KLBF"
-   ],
-   "url": "https://www.idxchannel.com/market-news/kalbe-klbf-sebut-margin-laba-masih-tertekan-ruang-gerak-terbatas",
-   "t_est": true,
-   "t_ko": "Kalbe(KLBF), 이익률 압박 지속에 운신 폭 제한",
-   "t_id": "Kalbe (KLBF) Sebut Margin Laba Masih Tertekan, Ruang Gerak Terbatas",
-   "ai_ko": "Kalbe Farma(KLBF), 루피아 약세와 원료 수입 의존으로 2026년 말까지 마진 압박 지속 전망 / 환율이 달러당 Rp17,500~18,000에 머물러 하반기 마진 개선 어렵고 가격 인상도 소비 위축에 제한적",
-   "ai_id": "KLBF memproyeksikan tekanan margin berlanjut hingga akhir 2026 akibat pelemahan rupiah, kenaikan harga bahan baku impor, dan pelemahan daya beli. Dengan kurs Rp17.500-Rp18.000 per dolar AS dan persediaan yang masih tinggi, penyesuaian harga tidak dapat dilakukan secara agresif.",
-   "ai_tags": [
-    "마진",
-    "환율",
-    "제약"
-   ],
-   "ai_tags_id": [
-    "margin",
-    "kurs",
-    "farmasi"
-   ]
-  },
-  {
-   "ts": "2026-09-11T13:47:10.364198+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "Kisruh FELDA Sempat Mencuat Lagi, BWPT Dinilai Punya Katalis Baru",
-   "tags": [
-    "BWPT"
-   ],
-   "url": "https://www.idxchannel.com/market-news/kisruh-felda-sempat-mencuat-lagi-bwpt-dinilai-punya-katalis-baru",
-   "t_est": true,
-   "t_ko": "FELDA 분쟁 재점화 — BWPT, 새 주가촉매 부각",
-   "t_id": "Kisruh FELDA Sempat Mencuat Lagi, BWPT Dinilai Punya Katalis Baru",
-   "ai_ko": "UOB Kay Hian, Eagle High Plantations(BWPT) 2026년 순이익 20% 증가 전망하며 턴어라운드 국면 진단 / Rajawali Group 인수 후 416,006ha까지 늘렸던 토지는 자산 매각으로 약 157,000ha로 축소, FELDA와의 지분 분쟁은 재부각",
-   "ai_id": "UOB Kay Hian menilai BWPT tengah menjalani turnaround dengan proyeksi laba bersih tumbuh 20% pada 2026, setelah rugi bersih Rp1,4 triliun pada 2021. Landbank menyusut dari 416.006 hektare menjadi sekitar 157.000 hektare pasca divestasi, sementara kisruh FELDA dan Rajawali Group kembali mencuat.",
-   "ai_tags": [
-    "턴어라운드",
-    "지분분쟁",
-    "팜오일"
-   ],
-   "ai_tags_id": [
-    "turnaround",
-    "sengketa saham",
-    "sawit"
-   ]
-  },
-  {
-   "ts": "2026-09-11T13:47:10.362125+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "SCNP Balik Rugi Jadi Laba Rp6,74 Miliar di Semester I-2026",
-   "tags": [
-    "SCNP"
-   ],
-   "url": "https://www.idxchannel.com/market-news/scnp-balik-rugi-jadi-laba-rp674-miliar-di-semester-i-2026",
-   "t_est": true,
-   "t_ko": "SCNP, 2026년 상반기 순이익 Rp67.4억으로 흑자 전환",
-   "t_id": "SCNP Balik Rugi Jadi Laba Rp6,74 Miliar di Semester I-2026"
-  },
-  {
-   "ts": "2026-09-11T13:47:10.361063+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
-   "src": "IDX Channel",
-   "t": "Rupiah Melemah, KLBF Siapkan Strategi Jaga Margin hingga Genjot Ekspor",
-   "tags": [
-    "KLBF"
-   ],
-   "url": "https://www.idxchannel.com/market-news/rupiah-melemah-klbf-siapkan-strategi-jaga-margin-hingga-genjot-ekspor",
-   "t_est": true,
-   "t_ko": "루피아 약세에 KLBF, 마진 방어 및 수출 확대 전략 가동",
-   "t_id": "Rupiah Melemah, KLBF Siapkan Strategi Jaga Margin hingga Genjot Ekspor"
-  },
-  {
-   "ts": "2026-09-11T13:47:10.357541+07:00",
-   "date": "2026-09-11",
-   "time": "13:47",
+   "time": "13:26",
    "src": "IDX Channel",
    "t": "Rantai Pasok Global Bergejolak, KLBF Tinjau Ulang Alokasi Capex Rp1 Triliun",
    "tags": [
     "KLBF"
    ],
    "url": "https://www.idxchannel.com/market-news/rantai-pasok-global-bergejolak-klbf-tinjau-ulang-alokasi-capex-rp1-triliun",
-   "t_est": true,
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/07/23/Kalbe_Farma_KLBF.jpg",
    "t_ko": "글로벌 공급망 흔들림에 KLBF, 설비투자 Rp1조 배정 재검토",
    "t_id": "Rantai Pasok Global Bergejolak, KLBF Tinjau Ulang Alokasi Capex Rp1 Triliun"
   },
@@ -16074,6 +15783,34 @@
    "t_id": "BUMI Caplok Tambang Laman Mining Rp 1 T Pakai Utang Glencore, Ini Rencananya"
   },
   {
+   "ts": "2026-09-11T11:37:00+07:00",
+   "date": "2026-09-11",
+   "time": "11:37",
+   "src": "IDX Channel",
+   "t": "Rupiah Melemah, KLBF Siapkan Strategi Jaga Margin hingga Genjot Ekspor",
+   "tags": [
+    "KLBF"
+   ],
+   "url": "https://www.idxchannel.com/market-news/rupiah-melemah-klbf-siapkan-strategi-jaga-margin-hingga-genjot-ekspor",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2025/03/28/kalbe_klbf.jpeg",
+   "t_ko": "루피아 약세에 KLBF, 마진 방어 및 수출 확대 전략 가동",
+   "t_id": "Rupiah Melemah, KLBF Siapkan Strategi Jaga Margin hingga Genjot Ekspor"
+  },
+  {
+   "ts": "2026-09-11T11:33:00+07:00",
+   "date": "2026-09-11",
+   "time": "11:33",
+   "src": "IDX Channel",
+   "t": "SCNP Balik Rugi Jadi Laba Rp6,74 Miliar di Semester I-2026",
+   "tags": [
+    "SCNP"
+   ],
+   "url": "https://www.idxchannel.com/market-news/scnp-balik-rugi-jadi-laba-rp674-miliar-di-semester-i-2026",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2024/01/16/Cara_Menghitung_Laba_Bersih_sebelum_Pajak.jpg",
+   "t_ko": "SCNP, 2026년 상반기 순이익 Rp67.4억으로 흑자 전환",
+   "t_id": "SCNP Balik Rugi Jadi Laba Rp6,74 Miliar di Semester I-2026"
+  },
+  {
    "ts": "2026-09-11T11:10:00+07:00",
    "date": "2026-09-11",
    "time": "11:10",
@@ -16086,6 +15823,84 @@
    "img": "https://photos.idnfinancials.com/d/1600x900/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/KALBE%20FARMA%20-%20KLBF-min.jpg",
    "t_ko": "KLBF, 수익성 압박에 제품 가격 인상 및 Enseval 상장폐지 검토",
    "t_id": "Laba Tertekan, KLBF Kaji Kenaikan Harga dan Delisting Enseval"
+  },
+  {
+   "ts": "2026-09-11T11:00:00+07:00",
+   "date": "2026-09-11",
+   "time": "11:00",
+   "src": "IDX Channel",
+   "t": "Kisruh FELDA Sempat Mencuat Lagi, BWPT Dinilai Punya Katalis Baru",
+   "tags": [
+    "BWPT"
+   ],
+   "url": "https://www.idxchannel.com/market-news/kisruh-felda-sempat-mencuat-lagi-bwpt-dinilai-punya-katalis-baru",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/11/sawit_Eagle_high_BWPT_-_11_Sept_26.jpg",
+   "t_ko": "FELDA 분쟁 재점화 — BWPT, 새 주가촉매 부각",
+   "t_id": "Kisruh FELDA Sempat Mencuat Lagi, BWPT Dinilai Punya Katalis Baru",
+   "ai_ko": "UOB Kay Hian, Eagle High Plantations(BWPT) 2026년 순이익 20% 증가 전망하며 턴어라운드 국면 진단 / Rajawali Group 인수 후 416,006ha까지 늘렸던 토지는 자산 매각으로 약 157,000ha로 축소, FELDA와의 지분 분쟁은 재부각",
+   "ai_id": "UOB Kay Hian menilai BWPT tengah menjalani turnaround dengan proyeksi laba bersih tumbuh 20% pada 2026, setelah rugi bersih Rp1,4 triliun pada 2021. Landbank menyusut dari 416.006 hektare menjadi sekitar 157.000 hektare pasca divestasi, sementara kisruh FELDA dan Rajawali Group kembali mencuat.",
+   "ai_tags": [
+    "턴어라운드",
+    "지분분쟁",
+    "팜오일"
+   ],
+   "ai_tags_id": [
+    "turnaround",
+    "sengketa saham",
+    "sawit"
+   ]
+  },
+  {
+   "ts": "2026-09-11T10:48:00+07:00",
+   "date": "2026-09-11",
+   "time": "10:48",
+   "src": "IDX Channel",
+   "t": "Kalbe (KLBF) Sebut Margin Laba Masih Tertekan, Ruang Gerak Terbatas",
+   "tags": [
+    "KLBF"
+   ],
+   "url": "https://www.idxchannel.com/market-news/kalbe-klbf-sebut-margin-laba-masih-tertekan-ruang-gerak-terbatas",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/11/kartika_klbf_ang.jpeg",
+   "t_ko": "Kalbe(KLBF), 이익률 압박 지속에 운신 폭 제한",
+   "t_id": "Kalbe (KLBF) Sebut Margin Laba Masih Tertekan, Ruang Gerak Terbatas",
+   "ai_ko": "Kalbe Farma(KLBF), 루피아 약세와 원료 수입 의존으로 2026년 말까지 마진 압박 지속 전망 / 환율이 달러당 Rp17,500~18,000에 머물러 하반기 마진 개선 어렵고 가격 인상도 소비 위축에 제한적",
+   "ai_id": "KLBF memproyeksikan tekanan margin berlanjut hingga akhir 2026 akibat pelemahan rupiah, kenaikan harga bahan baku impor, dan pelemahan daya beli. Dengan kurs Rp17.500-Rp18.000 per dolar AS dan persediaan yang masih tinggi, penyesuaian harga tidak dapat dilakukan secara agresif.",
+   "ai_tags": [
+    "마진",
+    "환율",
+    "제약"
+   ],
+   "ai_tags_id": [
+    "margin",
+    "kurs",
+    "farmasi"
+   ]
+  },
+  {
+   "ts": "2026-09-11T10:47:00+07:00",
+   "date": "2026-09-11",
+   "time": "10:47",
+   "src": "IDX Channel",
+   "t": "MITI Alihkan Empat Kapal ke Anak Usaha, Nilai Transaksi Rp22,75 Miliar",
+   "tags": [
+    "MITI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/miti-alihkan-empat-kapal-ke-anak-usaha-nilai-transaksi-rp2275-miliar",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2023/07/31/PT_Mitra_Investindo_Tbk__MITI_.jpg",
+   "t_ko": "MITI, 선박 4척 자회사 이전 — 거래가 Rp227.5억",
+   "t_id": "MITI Alihkan Empat Kapal ke Anak Usaha, Nilai Transaksi Rp22,75 Miliar",
+   "ai_ko": "Mitra Investindo(MITI) 자회사 Imako Perkasa Lines가 9일 선박 4척을 Wasesa Line에 Rp227.5억에 매각 / 예인선 3척 각 Rp57.5억, LCT 1척 Rp55억으로 동일 그룹 내 특수관계자 거래",
+   "ai_id": "Anak usaha MITI, PT Imako Perkasa Lines, menjual empat kapal kepada PT Wasesa Line pada 9 September 2026 senilai total Rp22,75 miliar. Transaksi mencakup tiga kapal tunda masing-masing Rp5,75 miliar dan satu LCT Rp5,5 miliar, dan tergolong transaksi afiliasi dalam satu kelompok usaha.",
+   "ai_tags": [
+    "자산매각",
+    "특수관계자",
+    "해운"
+   ],
+   "ai_tags_id": [
+    "penjualan aset",
+    "transaksi afiliasi",
+    "pelayaran"
+   ]
   },
   {
    "ts": "2026-09-11T10:33:49+07:00",
@@ -16163,6 +15978,32 @@
     "biaya produksi",
     "harga BBM",
     "kinerja"
+   ]
+  },
+  {
+   "ts": "2026-09-11T10:29:00+07:00",
+   "date": "2026-09-11",
+   "time": "10:29",
+   "src": "IDX Channel",
+   "t": "Erablue hingga XPENG Jadi Mesin Baru ERAA, Intip Target Terbaru",
+   "tags": [
+    "ERAA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/erablue-hingga-xpeng-jadi-mesin-baru-eraa-intip-target-terbaru",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/11/XPENG_Erajaya_GIAAS_-_11_Sept_26-.jpeg",
+   "t_ko": "Erablue·XPENG, ERAA 새 성장동력으로 부상 — 최신 목표는",
+   "t_id": "Erablue hingga XPENG Jadi Mesin Baru ERAA, Intip Target Terbaru",
+   "ai_ko": "UOB Kay Hian, Erajaya(ERAA)의 비(非)스마트폰 사업 성장성 주목, Erablue 상반기 매출 89% 증가 / 7월 기준 점포 283개로 연초 대비 102개 순증, 동일점포 매출 15.9% 성장",
+   "ai_id": "UOB Kay Hian menilai Erajaya Swasembada (ERAA) punya ruang tumbuh di luar bisnis smartphone lewat Erablue, ERAL, dan kendaraan listrik XPENG. Pendapatan Erablue melonjak 89% YoY pada semester I-2026 dengan SSSG 15,9% dan jaringan 283 toko per Juli 2026.",
+   "ai_tags": [
+    "실적",
+    "유통",
+    "전기차"
+   ],
+   "ai_tags_id": [
+    "kinerja",
+    "ritel",
+    "kendaraan listrik"
    ]
   },
   {
@@ -16274,32 +16115,6 @@
    "t_id": "Akuisisi Murah Blok Madura Kerek Laba RAJA Jadi USD 15,54 Juta"
   },
   {
-   "ts": "2026-09-11T09:08:47+07:00",
-   "date": "2026-09-11",
-   "time": "09:08",
-   "src": "Bloomberg Technoz",
-   "t": "Harga Emas Antam dan Buyback Hari Ini Kompak Turun Rp25.000",
-   "tags": [
-    "ANTM"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121235/harga-emas-antam-dan-buyback-hari-ini-kompak-turun-rp25-000",
-   "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250411084604.jpeg",
-   "t_ko": "안탐 금값·바이백가 나란히 Rp25,000 하락",
-   "t_id": "Harga Emas Antam dan Buyback Hari Ini Kompak Turun Rp25.000",
-   "ai_ko": "Antam(ANTM) 금 소매가 g당 Rp25,000 내린 Rp2,600,000, 매입가도 Rp2,450,000으로 동반 하락 / 국제 금 현물가가 전일 1.84% 급락한 USD 4,317.3로 8월 6일 이후 최저 기록한 영향",
-   "ai_id": "Harga emas Logam Mulia Antam (ANTM) turun Rp25.000 menjadi Rp2.600.000 per gram, dengan harga buyback di Rp2.450.000 per gram. Penurunan mengikuti harga emas dunia yang ambles 1,84% ke US$4.317,3 per troy ons, terendah sejak 6 Agustus.",
-   "ai_tags": [
-    "금값",
-    "ANTM",
-    "원자재"
-   ],
-   "ai_tags_id": [
-    "harga emas",
-    "ANTM",
-    "komoditas"
-   ]
-  },
-  {
    "ts": "2026-09-11T06:49:31+07:00",
    "date": "2026-09-11",
    "time": "06:49",
@@ -16390,32 +16205,6 @@
    "img": "https://photos.idnfinancials.com/static/web/adhi%202026/Haji%20Isam.jpg",
    "t_ko": "JARR, Haji Isam 소유 주가 한 달간 94% 급등에 BEI 투자 주의 경고",
    "t_id": "Saham JARR Milik Haji Isam Melesat 94% Sebulan, BEI Beri Peringatan"
-  },
-  {
-   "ts": "2026-09-10T23:09:45.333321+07:00",
-   "date": "2026-09-10",
-   "time": "09/10",
-   "src": "IDX Channel",
-   "t": "Astra International (ASII) Kucurkan Rp8 Triliun untuk Buyback Saham, Intip Strateginya",
-   "tags": [
-    "ASII"
-   ],
-   "url": "https://www.idxchannel.com/market-news/astra-international-asii-kucurkan-rp8-triliun-untuk-buyback-saham-intip-strateginya",
-   "t_est": true,
-   "t_ko": "ASII, 자사주 매입 Rp8조 집행 — 전략 살펴보니",
-   "t_id": "Astra International (ASII) Kucurkan Rp8 Triliun untuk Buyback Saham, Intip Strateginya",
-   "ai_ko": "Astra International(ASII), 향후 12개월간 최대 Rp8조 규모 자사주 매입 추진, 7월 17일 임시 주총 승인 완료 / 5월 도입한 신규 전략 로드맵에 따른 주주환원 강화로 해석",
-   "ai_id": "Astra International (ASII) menyiapkan dana hingga Rp8 triliun untuk buyback saham dalam 12 bulan ke depan, setelah disetujui RUPSLB pada 17 Juli 2026. Aksi ini merupakan bagian dari Strategy Roadmap baru Astra yang diperkenalkan sejak Mei 2026.",
-   "ai_tags": [
-    "자사주매입",
-    "주주환원",
-    "주주총회"
-   ],
-   "ai_tags_id": [
-    "buyback",
-    "shareholder value",
-    "RUPSLB"
-   ]
   },
   {
    "ts": "2026-09-10T21:29:23+07:00",
@@ -17207,6 +16996,18 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T13:49:29+07:00",
+   "date": "2026-09-11",
+   "time": "13:49",
+   "src": "Bloomberg Technoz",
+   "t": "Ambisi 3 Juta Rumah, Pertaruhan Bank Indonesia dan 'Sulap' PFII",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121260/ambisi-3-juta-rumah-pertaruhan-bank-indonesia-dan-sulap-pfii",
+   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260903211803.jpg",
+   "t_id": "Ambisi 3 Juta Rumah, Pertaruhan Bank Indonesia dan 'Sulap' PFII",
+   "t_ko": "주택 3백만 가구 공급 목표 — 인도네시아 중앙은행과 PFII의 자금 조달 전략"
+  },
+  {
    "ts": "2026-09-11T13:40:16+07:00",
    "date": "2026-09-11",
    "time": "13:40",
@@ -17228,8 +17029,32 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121238/proyek-smelter-nikel-hpal-antam-catl-di-haltim-masuk-tahap-fid",
    "img": "https://images.bloombergtechnoz.com/data/2024/02/image-20240215100051.jpg",
-   "t_id": "Proyek Smelter Nikel HPAL Antam & CATL di Haltim Masuk Tahap FID",
-   "t_ko": "Antam·CATL, 할마헤라니켈 HPAL 제련소 프로젝트 최종투자의정서 단계 진입"
+   "t_ko": "Antam·CATL, 할마헤라니켈 HPAL 제련소 프로젝트 최종투자의정서 단계 진입",
+   "t_id": "Proyek Smelter Nikel HPAL Antam & CATL di Haltim Masuk Tahap FID"
+  },
+  {
+   "ts": "2026-09-11T13:40:00+07:00",
+   "date": "2026-09-11",
+   "time": "13:40",
+   "src": "Media Indonesia",
+   "t": "Harga Minyak Dunia Melonjak, ICP Agustus 2026 Naik Jadi US$89,43 per Barel",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932272/harga-minyak-dunia-melonjak-icp-agustus-2026-naik-jadi-us8943-per-barel",
+   "g": 1,
+   "t_id": "Harga Minyak Dunia Melonjak, ICP Agustus 2026 Naik Jadi US$89,43 per Barel",
+   "t_ko": "국제유가 급등에 2026년 8월 ICP 배럴당 US$89.43으로 상승"
+  },
+  {
+   "ts": "2026-09-11T13:36:06+07:00",
+   "date": "2026-09-11",
+   "time": "13:36",
+   "src": "Bloomberg",
+   "t": "Oil Surges as Houthi-Saudi Fighting Escalates, Iran Braces for Long War",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-11/horizons-middle-east-africa-9-11-2026-video",
+   "g": 1,
+   "t_ko": "예멘 후티-사우디 교전 격화 및 이란 장기전 대비에 유가 급등",
+   "t_id": "Minyak Melonjak Seiring Eskalasi Pertempuran Houthi-Arab Saudi, Iran Bersiap Hadapi Perang Panjang"
   },
   {
    "ts": "2026-09-11T13:34:18+07:00",
@@ -17264,8 +17089,8 @@
    "tags": [],
    "url": "https://katadata.co.id/digital/startup/6aa3a0360035b/investasi-robotika-asean-melonjak-13-kali-lipat-singapura-jadi-motor-utama",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/04/13/2026_04_13-19_03_00_5e532520-373e-11f1-9348-0242ac120002_620x413_thumb.jpg",
-   "t_id": "Investasi Robotika ASEAN Melonjak 13 Kali Lipat, Singapura Jadi Motor Utama",
-   "t_ko": "아세안 로봇 투자 13배 급증 — 싱가포르가 주도"
+   "t_ko": "아세안 로봇 투자 13배 급증 — 싱가포르가 주도",
+   "t_id": "Investasi Robotika ASEAN Melonjak 13 Kali Lipat, Singapura Jadi Motor Utama"
   },
   {
    "ts": "2026-09-11T13:26:50+07:00",
@@ -17605,31 +17430,6 @@
    "t_id": "Negara Gagal Ini Tebar Bansos Rp 300 M, Satu Orang Dapat Rp 2 Juta"
   },
   {
-   "ts": "2026-09-11T12:37:16+07:00",
-   "date": "2026-09-11",
-   "time": "12:37",
-   "src": "Bloomberg",
-   "t": "India-China Set For Bilateral Talks At BRICS Summit",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-11/india-china-set-for-bilateral-talks-at-brics-summit-video",
-   "g": 1,
-   "t_ko": "인도·중국, BRICS 정상회의서 양자회담 개최 예정",
-   "t_id": "India-China Bersiap Gelar Pembicaraan Bilateral di KTT BRICS"
-  },
-  {
-   "ts": "2026-09-11T12:34:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:34",
-   "src": "WSJ",
-   "t": "Real Test for China’s ‘Four Little GPU Tigers’ Has yet to Come",
-   "tags": [],
-   "url": "https://www.wsj.com/tech/real-test-for-chinas-four-little-gpu-tigers-has-yet-to-come-3fff21e2?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-76842299",
-   "t_ko": "중국 GPU 4개 신흥 주자에 대한 본격 시험대 아직 미도래",
-   "t_id": "Ujian Nyata bagi 'Empat Macan GPU Kecil' China Belum Dimulai"
-  },
-  {
    "ts": "2026-09-11T12:33:00+07:00",
    "date": "2026-09-11",
    "time": "12:33",
@@ -17640,18 +17440,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/2026_09_10-13_25_00_3ffcc242-acec-11f1-9607-0242ac12000a_620x413_thumb.jpg",
    "t_ko": "Pertamina, Pertalite로 소비 이동에 따른 일부 주유소 연료 대기 인정",
    "t_id": "Pertamina Akui Ada Antrean BBM di SPBU Imbas Pergeseran Konsumsi ke Pertalite"
-  },
-  {
-   "ts": "2026-09-11T12:30:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:30",
-   "src": "Bloomberg Technoz",
-   "t": "Kekeringan di Kalimantan, ESDM Antisipasi Suplai Batu Bara ke PLN",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121243/kekeringan-di-kalimantan-esdm-antisipasi-suplai-batu-bara-ke-pln",
-   "img": "https://images.bloombergtechnoz.com/data/2025/03/image-20250308135602.jpg",
-   "t_ko": "칼리만탄 가뭄에 에너지광물자원부, PLN 석탄 공급 대비",
-   "t_id": "Kekeringan di Kalimantan, ESDM Antisipasi Suplai Batu Bara ke PLN"
   }
  ],
  "kisi_news": [
@@ -17825,8 +17613,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.07",
-   "d": 0.1,
-   "ytd": 12.56,
+   "d": 0.11,
+   "ytd": 12.58,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17859,9 +17647,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.05",
+   "v": "99.04",
    "d": -0.03,
-   "ytd": 0.79,
+   "ytd": 0.78,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17871,9 +17659,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.18",
-   "d": -1.55,
-   "ytd": 76.21,
+   "v": "101.25",
+   "d": -1.48,
+   "ytd": 76.33,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17883,9 +17671,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,390.2",
-   "d": 0.52,
-   "ytd": 1.49,
+   "v": "4,394.4",
+   "d": 0.61,
+   "ytd": 1.59,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -26042,7 +25830,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 13:41",
-  "pc_age_min": 6,
+  "pc_age_min": 12,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27666,33 +27454,6 @@
  "top_day": "2026-09-11",
  "top_news": [
   {
-   "ts": "2026-09-11T11:45:00+07:00",
-   "date": "2026-09-11",
-   "time": "11:45",
-   "src": "IDX Channel",
-   "t": "Imbal Hasil Obligasi Global Terus Naik, Lonjakan Harga Minyak Kerek Risiko Inflasi",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/imbal-hasil-obligasi-global-terus-naik-lonjakan-harga-minyak-kerek-risiko-inflasi",
-   "g": 1,
-   "img": "https://img.idxchannel.com/media/439/images/idx/2024/01/19/ekonomi_global_-_freepik.jpg",
-   "score": 13.5,
-   "srcs": 4,
-   "t_ko": "유가 급등에 글로벌 채권금리 상승, 인플레이션 우려 확대",
-   "t_id": "Imbal Hasil Obligasi Global Terus Naik, Lonjakan Harga Minyak Kerek Risiko Inflasi",
-   "ai_ko": "Brent유가 배럴당 USD 109.97로 4개월래 최고치, 글로벌 국채금리 동반 상승 / Hormuz 해협 물동량 제한과 Houthi의 Mocha 장악으로 인플레이션과 통화 긴축 우려 확대",
-   "ai_id": "Imbal hasil obligasi global melonjak pada Jumat (11/9/2026) seiring harga minyak Brent yang naik ke level tertinggi empat bulan di USD109,97 per barel. Aliran minyak lewat Selat Hormuz tetap terbatas dan penguasaan kota pelabuhan Mocha oleh Houthi menambah risiko inflasi serta potensi pengetatan kebijakan bank sentral.",
-   "ai_tags": [
-    "유가",
-    "금리",
-    "지정학"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "yield",
-    "geopolitik"
-   ]
-  },
-  {
    "ts": "2026-09-11T08:15:21+07:00",
    "date": "2026-09-11",
    "time": "08:15",
@@ -27797,6 +27558,21 @@
     "suku bunga",
     "harga minyak"
    ]
+  },
+  {
+   "ts": "2026-09-11T11:45:00+07:00",
+   "date": "2026-09-11",
+   "time": "11:45",
+   "src": "IDX Channel",
+   "t": "Imbal Hasil Obligasi Global Terus Naik, Lonjakan Harga Minyak Kerek Risiko Inflasi",
+   "tags": [],
+   "url": "https://www.idxchannel.com/market-news/imbal-hasil-obligasi-global-terus-naik-lonjakan-harga-minyak-kerek-risiko-inflasi",
+   "g": 1,
+   "img": "https://img.idxchannel.com/media/439/images/idx/2024/01/19/ekonomi_global_-_freepik.jpg",
+   "score": 11.5,
+   "srcs": 3,
+   "t_ko": "글로벌 채권금리 상승세 지속과 유가 급등에 인플레이션 압박 확대",
+   "t_id": "Imbal Hasil Obligasi Global Terus Naik, Lonjakan Harga Minyak Kerek Risiko Inflasi"
   }
  ],
  "mcap": [
@@ -28017,44 +27793,6 @@
    "srcs": 1
   },
   {
-   "t": "ASII",
-   "n": "Astra International",
-   "px": 4840.0,
-   "pct": -0.62,
-   "val": 49597900000.0,
-   "mcap": 195940397197600.0,
-   "ratio": 0.2,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "ASII, 자사주 매입 Rp8조 집행 — 전략 살펴보니",
-   "hl_id": "Astra International (ASII) Kucurkan Rp8 Triliun untuk Buyback Saham, Intip Strateginya",
-   "url": "https://www.idxchannel.com/market-news/astra-international-asii-kucurkan-rp8-triliun-untuk-buyback-saham-intip-strateginya",
-   "score": 56.7,
-   "s_news": 80,
-   "s_size": 82,
-   "s_surge": 0,
-   "srcs": 1
-  },
-  {
-   "t": "ANTM",
-   "n": "ANTAM Tbk",
-   "px": 3210.0,
-   "pct": -1.83,
-   "val": 244865920000.0,
-   "mcap": 77138754767250.0,
-   "ratio": 0.7,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "안탐 금값·바이백가 나란히 Rp25,000 하락",
-   "hl_id": "Harga Emas Antam dan Buyback Hari Ini Kompak Turun Rp25.000",
-   "url": "https://www.bloombergtechnoz.com/detail-news/121235/harga-emas-antam-dan-buyback-hari-ini-kompak-turun-rp25-000",
-   "score": 53.7,
-   "s_news": 80,
-   "s_size": 72,
-   "s_surge": 0,
-   "srcs": 1
-  },
-  {
    "t": "VICI",
    "n": "Victoria Care Indonesia",
    "px": 1090.0,
@@ -28090,6 +27828,44 @@
    "s_news": 90,
    "s_size": 45,
    "s_surge": 5,
+   "srcs": 1
+  },
+  {
+   "t": "VISI",
+   "n": "Satu Visi Putra",
+   "px": 975.0,
+   "pct": -1.02,
+   "val": 977738000.0,
+   "mcap": 2998125000000.0,
+   "ratio": 0.6,
+   "ev_ko": "지분매각·경영권",
+   "ev_id": "Divestasi & pengendali",
+   "hl": "PT Harmoni Semesta Investama 신규 대주주의 PT Satu Visi Putra Tbk (VISI) 대상 의무공개매수(MTO) 절차가 2026년 8월 27일부로 완료됨. 동 사건이 회사의 운영, 법률, 재무 상태 및 계속기업으로서의 존속에 미치는 영향은 미미함.",
+   "hl_id": "Pelaksanaan Penawaran Tender Wajib atas PT Satu Visi Putra Tbk (VISI) oleh pengendali baru PT Harmoni Semesta Investama telah selesai pada 27 Agustus 2026. Keja",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b26f37c837_f86471639e.pdf",
+   "score": 51.1,
+   "s_news": 100,
+   "s_size": 37,
+   "s_surge": 0,
+   "srcs": 0
+  },
+  {
+   "t": "HRTA",
+   "n": "Hartadinata Abadi",
+   "px": 2150.0,
+   "pct": -3.15,
+   "val": 12081333333.333332,
+   "mcap": 9901314160000.0,
+   "ratio": 0.5,
+   "ev_ko": "자본구조",
+   "ev_id": "Aksi korporasi",
+   "hl": "HRTA, 제3자배정 유상증자로 4억6,052만주 발행",
+   "hl_id": "Private Placement, Emiten HRTA Terbitkan 460,52 Juta Saham",
+   "url": "https://www.liputan6.com/saham/read/8288589/private-placement-emiten-hrta-terbitkan-46052-juta-saham",
+   "score": 51.0,
+   "s_news": 90,
+   "s_size": 50,
+   "s_surge": 0,
    "srcs": 1
   }
  ],
