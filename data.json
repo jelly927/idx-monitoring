@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 14:04",
+ "updated": "2026-09-11 14:10",
  "delay_min": 0,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,605 · USD/KRW 1,344 · 13:41 Yahoo",
- "idr_per_krw": 13.0982,
+ "fx_basis": "13.09 IDR/KRW · USD/IDR 17,600 · USD/KRW 1,345 · 14:07 Yahoo",
+ "idr_per_krw": 13.0887,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -279,9 +279,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17605.0,
+   "px": 17600.0,
    "prev": 17531.0,
-   "pct": 0.42,
+   "pct": 0.39,
    "spark": [
     17530.0,
     17531.0,
@@ -301,10 +301,11 @@
     17610.0,
     17613.0,
     17613.0,
-    17605.0
+    17605.0,
+    17600.0
    ],
    "inv": true,
-   "asof": "13:41",
+   "asof": "14:07",
    "high": 17613.0,
    "low": 17530.0,
    "src": "yahoo"
@@ -326,7 +327,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 14:03",
+   "asof": "investing.com 14:09",
    "unit": "bp"
   }
  ],
@@ -340,7 +341,7 @@
   "value_idr": 21546688746644,
   "volume": 48552221241,
   "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-11 14:00",
-  "rank_asof": "14:03",
+  "rank_asof": "14:08",
   "rank_date": "2026-09-11",
   "adv": 143,
   "dec": 552,
@@ -15467,10 +15468,10 @@
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24812.37,
+   "px": 24810.04,
    "prev": 24954.47,
-   "pct": -0.57,
-   "asof": "13:45",
+   "pct": -0.58,
+   "asof": "13:50",
    "live": true,
    "spark": [
     24603.11,
@@ -15526,7 +15527,8 @@
     24803.24,
     24801.14,
     24812.16,
-    24812.37
+    24809.22,
+    24810.04
    ]
   }
  ],
@@ -15614,6 +15616,49 @@
  },
  "news": [
   {
+   "ts": "2026-09-11T14:05:00+07:00",
+   "date": "2026-09-11",
+   "time": "14:05",
+   "src": "Bloomberg Technoz",
+   "t": "KLBF Terpukul Depresiasi Rupiah, Ada Opsi Naikkan Harga Produk",
+   "tags": [
+    "KLBF"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121275/klbf-terpukul-depresiasi-rupiah-ada-opsi-naikkan-harga-produk",
+   "img": "https://images.bloombergtechnoz.com/data/2023/04/image-20230404152723.jpg",
+   "t_ko": "KLBF, 루피화 약세 직격탄에 제품 가격 인상 검토",
+   "t_id": "KLBF Terpukul Depresiasi Rupiah, Ada Opsi Naikkan Harga Produk"
+  },
+  {
+   "ts": "2026-09-11T14:05:00+07:00",
+   "date": "2026-09-11",
+   "time": "14:05",
+   "src": "IDX Channel",
+   "t": "Belum Penuhi Aturan Free Float, KLBF Buka Opsi Delisting EPMT",
+   "tags": [
+    "EPMT",
+    "KLBF"
+   ],
+   "url": "https://www.idxchannel.com/market-news/belum-penuhi-aturan-free-float-klbf-buka-opsi-delisting-epmt",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2025/03/28/enseval_epmt.jpg",
+   "t_ko": "KLBF, 유통주식수 요건 미충족 EPMT 상장폐지 검토",
+   "t_id": "Belum Penuhi Aturan Free Float, KLBF Buka Opsi Delisting EPMT"
+  },
+  {
+   "ts": "2026-09-11T14:00:00+07:00",
+   "date": "2026-09-11",
+   "time": "14:00",
+   "src": "IDX Channel",
+   "t": "Perolehan Kontrak Baru Radiant Utama (RUIS) Turun 2,6 Persen, Ini Penyebabnya",
+   "tags": [
+    "RUIS"
+   ],
+   "url": "https://www.idxchannel.com/market-news/perolehan-kontrak-baru-radiant-utama-ruis-turun-26-persen-ini-penyebabnya",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2023/03/01/kontrak_baru.jpg",
+   "t_id": "Perolehan Kontrak Baru Radiant Utama (RUIS) Turun 2,6 Persen, Ini Penyebabnya",
+   "t_ko": "RUIS, 신규 수주 2.6% 감소"
+  },
+  {
    "ts": "2026-09-11T13:52:00+07:00",
    "date": "2026-09-11",
    "time": "13:52",
@@ -15624,8 +15669,8 @@
    ],
    "url": "https://katadata.co.id/finansial/bursa/6aa3a51e2d82d/ptpp-restrukturisasi-utang-rp-18-2-triliun-lunas-dalam-15-tahun-ini-skemanya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/11/2026_06_11-19_31_00_fe76b4f0-65a5-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "PTPP Restrukturisasi Utang Rp 18,2 Triliun, Lunas dalam 15 Tahun Ini Skemanya",
-   "t_ko": "PTPP, Rp18.2조 채무 재구조화 — 15년 내 상환 스킴 확정"
+   "t_ko": "PTPP, Rp18.2조 채무 재구조화 — 15년 내 상환 스킴 확정",
+   "t_id": "PTPP Restrukturisasi Utang Rp 18,2 Triliun, Lunas dalam 15 Tahun Ini Skemanya"
   },
   {
    "ts": "2026-09-11T13:45:00+07:00",
@@ -15907,32 +15952,6 @@
    ]
   },
   {
-   "ts": "2026-09-11T10:47:00+07:00",
-   "date": "2026-09-11",
-   "time": "10:47",
-   "src": "IDX Channel",
-   "t": "MITI Alihkan Empat Kapal ke Anak Usaha, Nilai Transaksi Rp22,75 Miliar",
-   "tags": [
-    "MITI"
-   ],
-   "url": "https://www.idxchannel.com/market-news/miti-alihkan-empat-kapal-ke-anak-usaha-nilai-transaksi-rp2275-miliar",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2023/07/31/PT_Mitra_Investindo_Tbk__MITI_.jpg",
-   "t_ko": "MITI, 선박 4척 자회사 이전 — 거래가 Rp227.5억",
-   "t_id": "MITI Alihkan Empat Kapal ke Anak Usaha, Nilai Transaksi Rp22,75 Miliar",
-   "ai_ko": "Mitra Investindo(MITI) 자회사 Imako Perkasa Lines가 9일 선박 4척을 Wasesa Line에 Rp227.5억에 매각 / 예인선 3척 각 Rp57.5억, LCT 1척 Rp55억으로 동일 그룹 내 특수관계자 거래",
-   "ai_id": "Anak usaha MITI, PT Imako Perkasa Lines, menjual empat kapal kepada PT Wasesa Line pada 9 September 2026 senilai total Rp22,75 miliar. Transaksi mencakup tiga kapal tunda masing-masing Rp5,75 miliar dan satu LCT Rp5,5 miliar, dan tergolong transaksi afiliasi dalam satu kelompok usaha.",
-   "ai_tags": [
-    "자산매각",
-    "특수관계자",
-    "해운"
-   ],
-   "ai_tags_id": [
-    "penjualan aset",
-    "transaksi afiliasi",
-    "pelayaran"
-   ]
-  },
-  {
    "ts": "2026-09-11T10:45:00+07:00",
    "date": "2026-09-11",
    "time": "10:45",
@@ -16025,32 +16044,6 @@
    ]
   },
   {
-   "ts": "2026-09-11T10:29:00+07:00",
-   "date": "2026-09-11",
-   "time": "10:29",
-   "src": "IDX Channel",
-   "t": "Erablue hingga XPENG Jadi Mesin Baru ERAA, Intip Target Terbaru",
-   "tags": [
-    "ERAA"
-   ],
-   "url": "https://www.idxchannel.com/market-news/erablue-hingga-xpeng-jadi-mesin-baru-eraa-intip-target-terbaru",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/11/XPENG_Erajaya_GIAAS_-_11_Sept_26-.jpeg",
-   "t_ko": "Erablue·XPENG, ERAA 새 성장동력으로 부상 — 최신 목표는",
-   "t_id": "Erablue hingga XPENG Jadi Mesin Baru ERAA, Intip Target Terbaru",
-   "ai_ko": "UOB Kay Hian, Erajaya(ERAA)의 비(非)스마트폰 사업 성장성 주목, Erablue 상반기 매출 89% 증가 / 7월 기준 점포 283개로 연초 대비 102개 순증, 동일점포 매출 15.9% 성장",
-   "ai_id": "UOB Kay Hian menilai Erajaya Swasembada (ERAA) punya ruang tumbuh di luar bisnis smartphone lewat Erablue, ERAL, dan kendaraan listrik XPENG. Pendapatan Erablue melonjak 89% YoY pada semester I-2026 dengan SSSG 15,9% dan jaringan 283 toko per Juli 2026.",
-   "ai_tags": [
-    "실적",
-    "유통",
-    "전기차"
-   ],
-   "ai_tags_id": [
-    "kinerja",
-    "ritel",
-    "kendaraan listrik"
-   ]
-  },
-  {
    "ts": "2026-09-11T10:24:00+07:00",
    "date": "2026-09-11",
    "time": "10:24",
@@ -16140,7 +16133,7 @@
     "RANS"
    ],
    "url": "https://www.idnfinancials.com/news/68703/rans-investors-protest-as-physical-egms-quota-limited-to-five",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/RANS-25082026.jpg",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/RANS-11092026.jpg",
    "t_ko": "RANS, 대면 임총 참석 인원 제한에 투자자 반발",
    "t_id": "Investor RANS Protes Kuota RUPSLB Offline Dibatasi Lima Orang"
   },
@@ -16220,7 +16213,7 @@
     "TINS"
    ],
    "url": "https://www.idnfinancials.com/news/68644/tins-boosts-production-75-tin-prices-seen-staying-strong",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/TINS-18062026.jpg",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/TINS-Ilhamsyah-Mahendra-11092026.jpg",
    "t_ko": "TINS, 생산량 75% 확대 — 주석 가격 강세 지속 전망",
    "t_id": "TINS Genjot Produksi 75%, Harga Timah Diproyeksi Tetap Kuat",
    "ai_ko": "Timah(TINS), 상반기 주석 정광 생산 1만2,232톤으로 75% 증가하고 판매량은 85% 늘어난 1만984톤 기록 / 평균 판매가는 톤당 USD 49,794로 52% 상승, 회사는 공급 부족 3%를 근거로 톤당 USD 47,000~55,000 강세 지속 전망",
@@ -17013,6 +17006,31 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T14:03:29+07:00",
+   "date": "2026-09-11",
+   "time": "14:03",
+   "src": "BBC",
+   "t": "UK economy grew faster than expected in July",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/cq5xjlvn71lo?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4cb1/live/b6ca05c0-ad09-11f1-a6a8-e924739dac6d.jpg",
+   "t_ko": "영국 7월 경제성장률 예상치 상회",
+   "t_id": "Ekonomi UK Tumbuh Lebih Cepat dari Perkiraan pada Jul"
+  },
+  {
+   "ts": "2026-09-11T14:01:35+07:00",
+   "date": "2026-09-11",
+   "time": "14:01",
+   "src": "Medcom",
+   "t": "Kebutuhan LNG Diprediksi Tembus 50% pada 2029, Pertamina Didorong Kurangi Impor",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/bisnis/GNl1m6yb-kebutuhan-lng-diprediksi-tembus-50-pada-2029-pertamina-didorong-kurangi-impor",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841519/r2AhptPlL4.jpeg?w=720",
+   "t_id": "Kebutuhan LNG Diprediksi Tembus 50% pada 2029, Pertamina Didorong Kurangi Impor",
+   "t_ko": "Pertamina, 2029년 LNG 수요 50% 급증 전망 속 수입 축소 압박"
+  },
+  {
    "ts": "2026-09-11T13:54:47+07:00",
    "date": "2026-09-11",
    "time": "13:54",
@@ -17021,8 +17039,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121273/penyebab-ihsg-turun-1-49-siang-hari-ini",
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727155440.jpeg",
-   "t_id": "Penyebab IHSG Turun 1,49% Siang Hari Ini",
-   "t_ko": "IHSG, 외국인 매도 공세에 1.49% 하락"
+   "t_ko": "IHSG, 외국인 매도 공세에 1.49% 하락",
+   "t_id": "Penyebab IHSG Turun 1,49% Siang Hari Ini"
   },
   {
    "ts": "2026-09-11T13:53:06+07:00",
@@ -17045,8 +17063,8 @@
    "tags": [],
    "url": "https://finance.detik.com/energi/d-8658387/pertamina-harga-pertamax-akan-berkisar-rp-18-20-ribuan",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/10/suasana-di-spbu-bandung-saat-pertamax-naik-1781063321403_169.jpeg?w=360&q=90",
-   "t_id": "Pertamina: Harga Pertamax Akan Berkisar Rp 18-20 Ribuan",
-   "t_ko": "Pertamina, Pertamax 가격 Rp 18,000~20,000선 전망"
+   "t_ko": "Pertamina, Pertamax 가격 Rp 18,000~20,000선 전망",
+   "t_id": "Pertamina: Harga Pertamax Akan Berkisar Rp 18-20 Ribuan"
   },
   {
    "ts": "2026-09-11T13:49:29+07:00",
@@ -17068,8 +17086,8 @@
    "t": "Inovasi Jadi Penggerak Bisnis Berkelanjutan",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932273/inovasi-jadi-penggerak-bisnis-berkelanjutan",
-   "t_id": "Inovasi Jadi Penggerak Bisnis Berkelanjutan",
-   "t_ko": "지속가능 경영 이끄는 혁신 전략 본격화"
+   "t_ko": "지속가능 경영 이끄는 혁신 전략 본격화",
+   "t_id": "Inovasi Jadi Penggerak Bisnis Berkelanjutan"
   },
   {
    "ts": "2026-09-11T13:40:16+07:00",
@@ -17155,19 +17173,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/04/13/2026_04_13-19_03_00_5e532520-373e-11f1-9348-0242ac120002_620x413_thumb.jpg",
    "t_ko": "아세안 로봇 투자 13배 급증 — 싱가포르가 주도",
    "t_id": "Investasi Robotika ASEAN Melonjak 13 Kali Lipat, Singapura Jadi Motor Utama"
-  },
-  {
-   "ts": "2026-09-11T13:26:50+07:00",
-   "date": "2026-09-11",
-   "time": "13:26",
-   "src": "BBC",
-   "t": "UK economy grew faster than expected in July",
-   "tags": [],
-   "url": "https://www.bbc.co.uk/news/articles/cq5xjlvn71lo?at_medium=RSS&at_campaign=rss",
-   "g": 1,
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4cb1/live/b6ca05c0-ad09-11f1-a6a8-e924739dac6d.jpg",
-   "t_ko": "영국 7월 경제성장률 예상치 상회",
-   "t_id": "Ekonomi UK Tumbuh Lebih Cepat dari Perkiraan pada Jul"
   },
   {
    "ts": "2026-09-11T13:26:38+07:00",
@@ -17444,18 +17449,6 @@
    "g": 1,
    "t_ko": "FTSE 100 — 영국 7월 경제성장률 시장 예상치 상회",
    "t_id": "FTSE 100 Live: Ekonomi Inggris Tumbuh Tak Terduga pada Juli"
-  },
-  {
-   "ts": "2026-09-11T12:45:00+07:00",
-   "date": "2026-09-11",
-   "time": "12:45",
-   "src": "Bloomberg Technoz",
-   "t": "Efek El Niño, Perhapi Ungkap 3,9 Juta Ton Batu Bara Gagal Dikirim",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121246/efek-el-nino-perhapi-ungkap-3-9-juta-ton-batu-bara-gagal-dikirim",
-   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260907084627.jpg",
-   "t_ko": "Perhapi, 엘니뇨 여파로 석탄 390만 톤 선적 차질",
-   "t_id": "Dampak El Niño, Perhapi Ungkap 3,9 Juta Ton Batu Bara Gagal Dikirim"
   }
  ],
  "kisi_news": [
@@ -17616,9 +17609,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,605",
-   "d": 0.59,
-   "ytd": 5.29,
+   "v": "17,600",
+   "d": 0.57,
+   "ytd": 5.26,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -17628,9 +17621,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.09",
-   "d": 0.25,
-   "ytd": 12.73,
+   "v": "13.07",
+   "d": 0.11,
+   "ytd": 12.58,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17675,9 +17668,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.05",
-   "d": -2.1,
-   "ytd": 75.98,
+   "v": "101.13",
+   "d": -2.02,
+   "ytd": 76.12,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17687,9 +17680,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,392.2",
-   "d": 1.09,
-   "ytd": 1.54,
+   "v": "4,393.5",
+   "d": 1.12,
+   "ytd": 1.57,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -25857,7 +25850,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 14:00",
-  "pc_age_min": 4,
+  "pc_age_min": 10,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27763,6 +27756,25 @@
    "srcs": 1
   },
   {
+   "t": "KLBF",
+   "n": "Kalbe Farma",
+   "px": 735.0,
+   "pct": -2.65,
+   "val": 32174909166.666664,
+   "mcap": 34407842781900.0,
+   "ratio": 0.5,
+   "ev_ko": "법적 리스크",
+   "ev_id": "Risiko hukum",
+   "hl": "KLBF, 유통주식수 요건 미충족 EPMT 상장폐지 검토",
+   "hl_id": "Belum Penuhi Aturan Free Float, KLBF Buka Opsi Delisting EPMT",
+   "url": "https://www.idxchannel.com/market-news/belum-penuhi-aturan-free-float-klbf-buka-opsi-delisting-epmt",
+   "score": 59.0,
+   "s_news": 100,
+   "s_size": 63,
+   "s_surge": 0,
+   "srcs": 3
+  },
+  {
    "t": "MGLV",
    "n": "NexAI Digital Infrastruktur",
    "px": 15475.0,
@@ -27778,25 +27790,6 @@
    "score": 58.5,
    "s_news": 100,
    "s_size": 62,
-   "s_surge": 0,
-   "srcs": 2
-  },
-  {
-   "t": "KLBF",
-   "n": "Kalbe Farma",
-   "px": 735.0,
-   "pct": -2.65,
-   "val": 32174909166.666664,
-   "mcap": 34407842781900.0,
-   "ratio": 0.5,
-   "ev_ko": "법적 리스크",
-   "ev_id": "Risiko hukum",
-   "hl": "KLBF, 자회사 상장폐지 검토 — EPMT 유동주식비율 7.51% 불과",
-   "hl_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%",
-   "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
-   "score": 58.2,
-   "s_news": 98,
-   "s_size": 63,
    "s_surge": 0,
    "srcs": 2
   },
@@ -27820,6 +27813,44 @@
    "srcs": 1
   },
   {
+   "t": "EPMT",
+   "n": "Enseval Putera Megatrading",
+   "px": 2400.0,
+   "pct": 0.42,
+   "val": 118258666.66666667,
+   "mcap": 6500736000000.0,
+   "ratio": 1.1,
+   "ev_ko": "법적 리스크",
+   "ev_id": "Risiko hukum",
+   "hl": "KLBF, 유통주식수 요건 미충족 EPMT 상장폐지 검토",
+   "hl_id": "Belum Penuhi Aturan Free Float, KLBF Buka Opsi Delisting EPMT",
+   "url": "https://www.idxchannel.com/market-news/belum-penuhi-aturan-free-float-klbf-buka-opsi-delisting-epmt",
+   "score": 54.3,
+   "s_news": 98,
+   "s_size": 45,
+   "s_surge": 5,
+   "srcs": 2
+  },
+  {
+   "t": "RUIS",
+   "n": "Radiant Utama Interinsco",
+   "px": 212.0,
+   "pct": 1.92,
+   "val": 851163600.0,
+   "mcap": 163240000000.0,
+   "ratio": 5.1,
+   "ev_ko": "영업·계약",
+   "ev_id": "Operasional",
+   "hl": "RUIS, 신규 수주 2.6% 감소",
+   "hl_id": "Perolehan Kontrak Baru Radiant Utama (RUIS) Turun 2,6 Persen, Ini Penyebabnya",
+   "url": "https://www.idxchannel.com/market-news/perolehan-kontrak-baru-radiant-utama-ruis-turun-26-persen-ini-penyebabnya",
+   "score": 53.6,
+   "s_news": 55,
+   "s_size": 5,
+   "s_surge": 100,
+   "srcs": 1
+  },
+  {
    "t": "VICI",
    "n": "Victoria Care Indonesia",
    "px": 1090.0,
@@ -27836,25 +27867,6 @@
    "s_news": 95,
    "s_size": 47,
    "s_surge": 0,
-   "srcs": 1
-  },
-  {
-   "t": "EPMT",
-   "n": "Enseval Putera Megatrading",
-   "px": 2400.0,
-   "pct": 0.42,
-   "val": 118258666.66666667,
-   "mcap": 6500736000000.0,
-   "ratio": 1.1,
-   "ev_ko": "법적 리스크",
-   "ev_id": "Risiko hukum",
-   "hl": "KLBF, 자회사 상장폐지 검토 — EPMT 유동주식비율 7.51% 불과",
-   "hl_id": "Kalbe Farma (KLBF) Kaji Delisting Anak Usaha, Free Float EPMT Hanya 7,51%",
-   "url": "https://katadata.co.id/finansial/bursa/6aa38c0d5ad12/kalbe-farma-klbf-kaji-delisting-anak-usaha-free-float-epmt-hanya-7-51",
-   "score": 51.1,
-   "s_news": 90,
-   "s_size": 45,
-   "s_surge": 5,
    "srcs": 1
   },
   {
@@ -27875,25 +27887,6 @@
    "s_size": 37,
    "s_surge": 0,
    "srcs": 0
-  },
-  {
-   "t": "HRTA",
-   "n": "Hartadinata Abadi",
-   "px": 2150.0,
-   "pct": -3.15,
-   "val": 12081333333.333332,
-   "mcap": 9901314160000.0,
-   "ratio": 0.5,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "HRTA, 제3자배정 유상증자로 4억6,052만주 발행",
-   "hl_id": "Private Placement, Emiten HRTA Terbitkan 460,52 Juta Saham",
-   "url": "https://www.liputan6.com/saham/read/8288589/private-placement-emiten-hrta-terbitkan-46052-juta-saham",
-   "score": 51.0,
-   "s_news": 90,
-   "s_size": 50,
-   "s_surge": 0,
-   "srcs": 1
   }
  ],
  "memory": {}
