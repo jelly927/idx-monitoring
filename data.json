@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": "2026-09-12 05:05",
+ "updated": "2026-09-12 06:05",
  "delay_min": 0,
  "fx_basis": "13.13 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,341 · 00:52 Yahoo",
  "idr_per_krw": 13.1285,
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 05:04",
+   "asof": "investing.com 06:04",
    "unit": "bp"
   }
  ],
@@ -14951,11 +14951,11 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7655.5,
+   "px": 7656.98,
    "prev": 7591.7,
-   "pct": 0.84,
-   "asof": "02:55",
-   "live": true,
+   "pct": 0.86,
+   "asof": "09/11 종가",
+   "live": false,
    "spark": [
     7672.47,
     7667.72,
@@ -15041,11 +15041,11 @@
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26328.9,
+   "px": 26333.04,
    "prev": 26081.72,
-   "pct": 0.95,
-   "asof": "02:55",
-   "live": true,
+   "pct": 0.96,
+   "asof": "09/11 종가",
+   "live": false,
    "spark": [
     26364.04,
     26359.06,
@@ -15131,11 +15131,11 @@
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52562.77,
+   "px": 52573.29,
    "prev": 52064.1,
-   "pct": 0.96,
-   "asof": "02:55",
-   "live": true,
+   "pct": 0.98,
+   "asof": "09/11 종가",
+   "live": false,
    "spark": [
     52691.44,
     52672.79,
@@ -16567,6 +16567,104 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-12T06:00:00+07:00",
+   "date": "2026-09-12",
+   "time": "06:00",
+   "src": "IDNFinancials",
+   "t": "U.S. Treasury Secretary tests influence in bond market",
+   "tags": [],
+   "url": "https://www.idnfinancials.com/news/68733/u-s-treasury-secretary-tests-influence-in-bond-market",
+   "g": 1,
+   "img": "https://photo2.idnfinancials.com/fly/idn/gilang/Scott-Bessent5826.jpg",
+   "t_ko": "미 재무장관, 채권시장 영향력 시험대에",
+   "t_id": "Menkeu AS Uji Pengaruhnya di Pasar Obligasi"
+  },
+  {
+   "ts": "2026-09-12T05:55:00+07:00",
+   "date": "2026-09-12",
+   "time": "05:55",
+   "src": "Detik",
+   "t": "Jika Harga Minyak Terus Mendidih, Pertamax Bisa Tembus Rp 20.000/Liter",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8659231/jika-harga-minyak-terus-mendidih-pertamax-bisa-tembus-rp-20-000-liter",
+   "g": 1,
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/10/kenaikan-harga-pertamax-di-spbu-kota-blitar-1781073376529_169.jpeg?w=360&q=90",
+   "t_ko": "국제유가 급등 시 Pertamax 가격 리터당 Rp20,000 돌파 전망"
+  },
+  {
+   "ts": "2026-09-12T05:40:00+07:00",
+   "date": "2026-09-12",
+   "time": "05:40",
+   "src": "Media Indonesia",
+   "t": "Prabowo Tiba di India Hadiri KTT ke-18 BRICS",
+   "tags": [],
+   "url": "https://mediaindonesia.com/internasional/932510/prabowo-tiba-di-india-hadiri-ktt-ke-18-brics",
+   "g": 1,
+   "t_id": "Prabowo Tiba di India Hadiri KTT ke-18 BRICS",
+   "t_ko": "Prabowo, 제18차 BRICS 정상회의 참석차 인도 도착"
+  },
+  {
+   "ts": "2026-09-12T05:37:09+07:00",
+   "date": "2026-09-12",
+   "time": "05:37",
+   "src": "Bloomberg",
+   "t": "JD.com Unit Agrees to Pay SEC $500,000 Over ‘Sham Transactions’",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-11/jd-com-unit-agrees-to-pay-sec-500-000-over-sham-transactions",
+   "g": 1,
+   "t_ko": "JD.com 자회사, 허위 거래 관련 SEC에 50만 달러 벌금 납부 합의",
+   "t_id": "Unit JD.com Sepakat Bayar Denda $500.000 ke SEC Terkait Transaksi Fiktif"
+  },
+  {
+   "ts": "2026-09-12T05:35:09+07:00",
+   "date": "2026-09-12",
+   "time": "05:35",
+   "src": "CNBC",
+   "t": "Cramer’s week ahead: Falling oil could help stocks but Fed is the next big test",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/cramers-week-ahead-falling-oil-fed.html",
+   "g": 1,
+   "t_ko": "크레이머의 주간 전망 — 유가 하락은 호재이나 다음 시험대는 연준",
+   "t_id": "Pekan Depan ala Cramer: Minyak Turun Bisa Bantu Saham, tapi The Fed Ujian Berikutnya"
+  },
+  {
+   "ts": "2026-09-12T05:33:53+07:00",
+   "date": "2026-09-12",
+   "time": "05:33",
+   "src": "Bloomberg",
+   "t": "Bond Trader Whose Wrong-Way Bets Collapsed Firm Gets 16 Years",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-11/bond-trader-whose-wrong-way-bets-collapsed-firm-gets-16-years",
+   "g": 1,
+   "t_ko": "손실 베팅으로 회사 파탄 낸 채권 트레이더, 징역 16년 선고",
+   "t_id": "Trader Obligasi yang Rugikan Perusahaan Lewat Taruhan Salah Arah Divonis 16 Tahun"
+  },
+  {
+   "ts": "2026-09-12T05:06:00+07:00",
+   "date": "2026-09-12",
+   "time": "05:06",
+   "src": "MarketWatch",
+   "t": "This investment is safe from both Trump and the Democrats — and it pays 4.7%",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/this-investment-is-safe-from-both-trump-and-the-democrats-and-it-pays-4-7-4b76c2f3?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-18511444",
+   "t_ko": "Trump·민주당 모두 비켜가는 안전한 투자처 — 연 4.7% 배당",
+   "t_id": "Investasi Ini Aman dari Trump & Demokrat — Serta Beri Imbal Hasil 4,7%"
+  },
+  {
+   "ts": "2026-09-12T04:58:56+07:00",
+   "date": "2026-09-12",
+   "time": "04:58",
+   "src": "Reuters",
+   "t": "Wall St Week Ahead Investors brace for possible rate hike at uncertain Fed meeting",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVGxBNmhfdWpkb1NxVGxZb2dSOEhrM0hRcjYwakJjdHJSNkVQYjNSWVVIbnlwRDB6Wk1yMFFxNTRYdUppekd1QldEbUZSUkVCWlJzWFlrMVQyS2VTV1hXRFB4Vms3RkNqUG5MTjNGNDhZbG5odFZ6dHdubWZfbXg3Z3ZjOExGOEJZcTdiMmU3eEtiQ1lwQV9zWHk0ODZoaFN4YWZEUUlJZ3B5MTFNRGRNRzlsNmduSjZndUJZMA?oc=5",
+   "g": 1,
+   "t_ko": "월가 주간 전망 — 연준 불확실성 속 추가 금리 인상 대비하는 투자자들",
+   "t_id": "Pekan Depan di Wall St: Investor Bersiap Hadapi Potensi Kenaikan Suku Bunga di Rapat The Fed yang Belum Pasti"
+  },
+  {
    "ts": "2026-09-12T04:36:00+07:00",
    "date": "2026-09-12",
    "time": "04:36",
@@ -16637,8 +16735,8 @@
    "t": "Capai Produksi 3 Juta Unit, Midea Perkuat Investasi Manufaktur di Indonesia",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932501/capai-produksi-3-juta-unit-midea-perkuat-investasi-manufaktur-di-indonesia",
-   "t_id": "Capai Produksi 3 Juta Unit, Midea Perkuat Investasi Manufaktur di Indonesia",
-   "t_ko": "Midea, 300만 대 생산 달성해 인도네시아 제조 투자 확대"
+   "t_ko": "Midea, 300만 대 생산 달성해 인도네시아 제조 투자 확대",
+   "t_id": "Capai Produksi 3 Juta Unit, Midea Perkuat Investasi Manufaktur di Indonesia"
   },
   {
    "ts": "2026-09-12T04:16:00+07:00",
@@ -16677,109 +16775,6 @@
    "img": "https://images.wsj.net/im-90549087",
    "t_ko": "유가 하락 속 미국 증시 상승",
    "t_id": "Saham AS Menguat Seiring Penurunan Harga Minyak"
-  },
-  {
-   "ts": "2026-09-12T04:08:09+07:00",
-   "date": "2026-09-12",
-   "time": "04:08",
-   "src": "Bloomberg",
-   "t": "Japan’s GPIF May Sell $62 Billion of Treasuries, Santander Says",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-11/japan-s-gpif-may-sell-62-billion-of-treasuries-santander-says",
-   "g": 1,
-   "t_ko": "Santander, 일본 GPIF가 620억 달러 규모 미 국채 매각 가능성 제기",
-   "t_id": "GPIF Jepang Berpotensi Lepas US$ 62 Miliar Surat Utang AS, Sebut Santander"
-  },
-  {
-   "ts": "2026-09-12T04:06:00+07:00",
-   "date": "2026-09-12",
-   "time": "04:06",
-   "src": "CNA",
-   "t": "Investors brace for possible rate hike at uncertain Fed meeting",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/investors-brace-possible-rate-hike-uncertain-fed-meeting-6379596",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--n-xVQPYy--/fl_relative,g_south_east,l_one-cms:core:watermark:ap_data-1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/Federal_Reserve_Jackson_Hole_44817.jpg?itok=xZi6Kfcn",
-   "t_ko": "투자자, 불확실한 연준 회의 속 금리 인상 가능성 대비",
-   "t_id": "Investor Bersiap Hadapi Potensi Kenaikan Suku Bunga di Rapat The Fed yang Penuh Ketidakpastian"
-  },
-  {
-   "ts": "2026-09-12T04:01:00+07:00",
-   "date": "2026-09-12",
-   "time": "04:01",
-   "src": "WSJ",
-   "t": "Basic Materials Roundup: Market Talk",
-   "tags": [],
-   "url": "https://www.wsj.com/business/basic-materials-roundup-market-talk-89b1e704?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-41645439",
-   "t_ko": "소재 섹터 동향 — 시장 전망",
-   "t_id": "Rangkuman Sektor Material Dasar: Pasar Membahas"
-  },
-  {
-   "ts": "2026-09-12T03:58:00+07:00",
-   "date": "2026-09-12",
-   "time": "03:58",
-   "src": "WSJ",
-   "t": "Tech, Media & Telecom Roundup: Market Talk",
-   "tags": [],
-   "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-4044eee2?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-92361535",
-   "t_ko": "테크·미디어·텔레콤 부문 동향",
-   "t_id": "Teknologi, Media & Telekomunikasi: Market Talk"
-  },
-  {
-   "ts": "2026-09-12T03:56:15+07:00",
-   "date": "2026-09-12",
-   "time": "03:56",
-   "src": "FT",
-   "t": "Houthis seize Red Sea islands in lightning offensive",
-   "tags": [],
-   "url": "https://www.ft.com/content/976fa0d6-ed09-4a6f-be02-ff4317b45f40?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F9c3c0805-b440-44ee-aafe-3606965b522e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "후티 반군, 전격 공세로 홍해 섬들 장악",
-   "t_id": "Houthi Rebut Kepulauan Laut Merah Lewat Serangan Kilat"
-  },
-  {
-   "ts": "2026-09-12T03:54:38+07:00",
-   "date": "2026-09-12",
-   "time": "03:54",
-   "src": "FT",
-   "t": "Lone Pine’s co-CIO to join early SpaceX backer Atreides Management",
-   "tags": [],
-   "url": "https://www.ft.com/content/282a7b82-49b1-48ce-b645-737da2ff093a?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F6182bec8-3b89-4780-befb-1e77ed0d7434.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "Lone Pine 공동 CIO, 초기 SpaceX 투자사 Atreides Management로 이동",
-   "t_id": "Co-CIO Lone Pine Bergabung dengan Pendukung Awal SpaceX, Atreides Management"
-  },
-  {
-   "ts": "2026-09-12T03:52:00+07:00",
-   "date": "2026-09-12",
-   "time": "03:52",
-   "src": "WSJ",
-   "t": "Government Bond Yields Finish Near Multiyear Highs Amid Rate-Rise Bets",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/investing/yields-on-u-s-european-government-bonds-edge-lower-but-still-hover-near-multiyear-highs-90ceba80?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-96906197",
-   "t_ko": "금리 인상 전망 속 국채 금리 수년래 최고치 근처 마감",
-   "t_id": "Imbal Hasil Obligasi Pemerintah Finis Mendekati Level Tertinggi Multi-Tahun di Tengah Proyeksi Kenaikan Suku Bunga"
-  },
-  {
-   "ts": "2026-09-12T03:51:36+07:00",
-   "date": "2026-09-12",
-   "time": "03:51",
-   "src": "FT",
-   "t": "JPMorgan cut off Situational Awareness lending after AI losses",
-   "tags": [],
-   "url": "https://www.ft.com/content/916eea1b-d483-49e1-9a70-53b4df8f9870?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F4ffd0b92-c8c2-457d-8c7c-1a52e5ccfa1f.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "JPMorgan, AI 손실 발생 후 상황 인식 대출 중단",
-   "t_id": "JPMorgan Hentikan Pembiayaan Situational Awareness Usai Rugi AI"
   },
   {
    "ts": "2026-09-12T02:42:28+07:00",
@@ -16950,17 +16945,6 @@
    "t_id": "Ini Cara Baca KPI dan Financial Insight biar Keputusan Bisnis Makin Tajam"
   },
   {
-   "ts": "2026-09-11T21:18:00+07:00",
-   "date": "2026-09-11",
-   "time": "09/11",
-   "src": "Media Indonesia",
-   "t": "BPJS Ketenagakerjaan dan PERKESO Perkuat Kolaborasi, Perluas Pelindungan Pekerja Migran Indonesia",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932472/bpjs-ketenagakerjaan-dan-perkeso-perkuat-kolaborasi-perluas-pelindungan-pekerja-migran-indonesia",
-   "t_ko": "BPJS Ketenagakerjaan·PERKESO, 이주노동자 보호 확대 협력 강화",
-   "t_id": "BPJS Ketenagakerjaan dan PERKESO Perkuat Kolaborasi, Perluas Pelindungan Pekerja Migran Indonesia"
-  },
-  {
    "ts": "2026-09-11T21:16:23+07:00",
    "date": "2026-09-11",
    "time": "09/11",
@@ -17007,6 +16991,18 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841624/UyJaogLedx.jpeg?w=720",
    "t_ko": "James Riady, 주택·관광업이 경제 견인 가능 전망",
    "t_id": "James Riady: Perumahan dan Pariwisata Bisa Dorong Ekonomi"
+  },
+  {
+   "ts": "2026-09-11T20:43:58+07:00",
+   "date": "2026-09-11",
+   "time": "09/11",
+   "src": "Detik",
+   "t": "BAKN Minta KAI Siapkan Plan B Jika Pengalihan Utang KCIC Molor",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8659083/bakn-minta-kai-siapkan-plan-b-jika-pengalihan-utang-kcic-molor",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/bakn-minta-kai-siapkan-plan-b-jika-pengalihan-utang-kcic-molor-1789134208535.jpeg?w=360&q=90",
+   "t_ko": "BAKN, KCIC 부채 전환 지연 대비 KAI에 플랜 B 요구",
+   "t_id": "BAKN Minta KAI Siapkan Plan B Jika Pengalihan Utang KCIC Molor"
   }
  ],
  "kisi_news": [
@@ -25585,7 +25581,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 692,
+  "pc_age_min": 752,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -27095,7 +27091,7 @@
    "t_ko": "사우디, 이라크 드론 공격 잇따라 동서 송유관 가동 중단",
    "t_id": "Arab Saudi Tutup Pipa Minyak Timur-Barat Usai Serangan Beruntun Drone dari Irak",
    "score": 12.0,
-   "srcs": 5
+   "srcs": 4
   },
   {
    "ts": "2026-09-11T20:33:08+07:00",
