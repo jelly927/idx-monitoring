@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 21:41",
+ "updated": "2026-09-11 21:55",
  "delay_min": 0,
- "fx_basis": "13.14 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,340 · 21:34 Yahoo",
- "idr_per_krw": 13.137,
+ "fx_basis": "13.14 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,340 · 21:47 Yahoo",
+ "idr_per_krw": 13.1437,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -311,20 +311,20 @@
    "code": "SUN10Y",
    "label": "SUN 10Y",
    "name": "국채 10년물",
-   "px": 7.156,
+   "px": 7.126,
    "prev": 7.096,
-   "pct": 6.0,
+   "pct": 3.0,
    "spark": [
     7.102,
     7.088,
     7.088,
     7.095,
     7.096,
-    7.156
+    7.126
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 21:39",
+   "asof": "investing.com 17:31",
    "unit": "bp"
   }
  ],
@@ -15031,10 +15031,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7656.18,
+   "px": 7655.64,
    "prev": 7591.7,
-   "pct": 0.85,
-   "asof": "21:35",
+   "pct": 0.84,
+   "asof": "21:50",
    "live": true,
    "spark": [
     7672.47,
@@ -15050,17 +15050,20 @@
     7671.29,
     7671.27,
     7660.97,
-    7656.18
+    7656.74,
+    7653.93,
+    7660.7,
+    7655.64
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26334.65,
+   "px": 26341.37,
    "prev": 26081.72,
-   "pct": 0.97,
-   "asof": "21:35",
+   "pct": 1.0,
+   "asof": "21:50",
    "live": true,
    "spark": [
     26364.04,
@@ -15076,17 +15079,20 @@
     26391.62,
     26405.91,
     26356.42,
-    26334.65
+    26336.1,
+    26331.85,
+    26351.46,
+    26341.37
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52453.25,
+   "px": 52466.1,
    "prev": 52064.1,
-   "pct": 0.75,
-   "asof": "21:35",
+   "pct": 0.77,
+   "asof": "21:50",
    "live": true,
    "spark": [
     52691.44,
@@ -15102,7 +15108,10 @@
     52591.6,
     52547.12,
     52482.48,
-    52453.25
+    52457.63,
+    52432.85,
+    52506.84,
+    52466.1
    ]
   },
   {
@@ -15863,20 +15872,6 @@
    "t_id": "Kalbe Farma Hati-Hati Naikkan Harga Obat dan Susu"
   },
   {
-   "ts": "2026-09-11T11:50:31+07:00",
-   "date": "2026-09-11",
-   "time": "11:50",
-   "src": "Detik",
-   "t": "Graha Merah Putih Mau Disewa BGN, Telkom Bakal Pindahkan Karyawan",
-   "tags": [
-    "TLKM"
-   ],
-   "url": "https://finance.detik.com/bursa-dan-valas/d-8658187/graha-merah-putih-mau-disewa-bgn-telkom-bakal-pindahkan-karyawan",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/gedung-graha-merah-putih-1788845167948_169.jpeg?w=360&q=90",
-   "t_ko": "Telkom(TLKM), Graha Merah Putih 임대 추진에 사옥 직원 이전 계획",
-   "t_id": "Graha Merah Putih Disewa BGN, Telkom Pindahkan Karyawan"
-  },
-  {
    "ts": "2026-09-11T11:37:00+07:00",
    "date": "2026-09-11",
    "time": "11:37",
@@ -16454,6 +16449,54 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T21:46:36+07:00",
+   "date": "2026-09-11",
+   "time": "21:46",
+   "src": "Medcom",
+   "t": "Rekening Massal untuk 200 Juta WNI Disiapkan, Ada Saldo Rp50 Ribu",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/keuangan/Dkq1Oq6k-rekening-massal-untuk-200-juta-wni-disiapkan-ada-saldo-rp50-ribu",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841628/1dHyEurF5n.jpeg?w=720",
+   "t_id": "Rekening Massal untuk 200 Juta WNI Disiapkan, Ada Saldo Rp50 Ribu",
+   "t_ko": "인도네시아 국민 2억명 대상 가상계좌 개설 및 Rp50,000 잔액 지급 추진"
+  },
+  {
+   "ts": "2026-09-11T21:43:33+07:00",
+   "date": "2026-09-11",
+   "time": "21:43",
+   "src": "BBC",
+   "t": "Alstom to build new battery-electric train fleet",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/cd94y7d7qyzo?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b9bb/live/3cc415a0-adb7-11f1-b1d1-571ed4d7ff2c.jpg",
+   "t_ko": "Alstom, 배터리 전기 열차 신규 함대 건조",
+   "t_id": "Alstom Akan Bangun Armada Kereta Baterai-Listrik Baru"
+  },
+  {
+   "ts": "2026-09-11T21:39:18+07:00",
+   "date": "2026-09-11",
+   "time": "21:39",
+   "src": "Detik",
+   "t": "Cahaya Matahari & Angin Jadi Sumber Energi di Lahan Pertanian",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8659148/cahaya-matahari-angin-jadi-sumber-energi-di-lahan-pertanian",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/10/12/pengembangan-tenaga-surya-untuk-irigasi-pertanian-1760250659551_169.jpeg?w=360&q=90",
+   "t_id": "Cahaya Matahari & Angin Jadi Sumber Energi di Lahan Pertanian",
+   "t_ko": "농경지 태양광·풍력 발전 에너지원 활용"
+  },
+  {
+   "ts": "2026-09-11T21:36:41+07:00",
+   "date": "2026-09-11",
+   "time": "21:36",
+   "src": "Detik",
+   "t": "UKM Tetap Resilien, Sektor Produktif Penopang Ekonomi Semester I-2026",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8659142/ukm-tetap-resilien-sektor-produktif-penopang-ekonomi-semester-i-2026",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/ukm-tetap-resilien-sektor-produktif-penopang-ekonomi-semester-i-2026-1789137312934.jpeg?w=360&q=90",
+   "t_ko": "상반기 경제 버팀목 된 회복력 강한 중소기업 및 생산 부문"
+  },
+  {
    "ts": "2026-09-11T21:35:54+07:00",
    "date": "2026-09-11",
    "time": "21:35",
@@ -16488,6 +16531,18 @@
    "g": 1,
    "t_ko": "Kroger 매출 전망 하향 및 Oracle 주가 상승",
    "t_id": "Kroger Pangkas Proyeksi Penjualan, Saham Oracle Naik"
+  },
+  {
+   "ts": "2026-09-11T21:33:19+07:00",
+   "date": "2026-09-11",
+   "time": "21:33",
+   "src": "WSJ",
+   "t": "Chevron CEO Warns Oil Market Is Quickly Losing Buffers That Kept Prices in Check",
+   "tags": [],
+   "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-09-11-2026/card/chevron-ceo-warns-oil-market-is-quickly-losing-buffers-that-kept-prices-in-check-Xi4INBAkBatM4j3OmDRG?mod=rss_markets_main",
+   "g": 1,
+   "t_ko": "Chevron CEO, 원유시장 가격 안정 완충력 급감 경고",
+   "t_id": "CEO Chevron Peringatkan Pasar Minyak Cepat Kehilangan Penyangga Harga"
   },
   {
    "ts": "2026-09-11T21:33:08+07:00",
@@ -16527,6 +16582,19 @@
    "t_id": "Trump Remehkan Risiko Kepunahan AI Saat Belasan Orang Dalam OpenAI dan Anthropic Desak Perlambatan"
   },
   {
+   "ts": "2026-09-11T21:28:59+07:00",
+   "date": "2026-09-11",
+   "time": "21:28",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Leaders Often Shine, Helped By This Sign Of Liquidity Strength",
+   "tags": [],
+   "url": "https://www.investors.com/how-to-invest/investors-corner/stock-market-leaders-average-daily-dollar-volume-nutex-health/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/b9bd4e53d42dc99a63dfb95af11dce10.jpg",
+   "t_ko": "유동성 유입 신호에 힘입어 강세 보이는 주도주",
+   "t_id": "Pemimpin Pasar Saham Kerap Bersinar, Didukung Tanda Kekuatan Likuiditas Ini"
+  },
+  {
    "ts": "2026-09-11T21:28:43+07:00",
    "date": "2026-09-11",
    "time": "21:28",
@@ -16559,8 +16627,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8659123/ini-cara-baca-kpi-dan-financial-insight-biar-keputusan-bisnis-makin-tajam",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/detikevent-business-acumen-kpi-1789136658269_169.jpeg?w=360&q=90",
-   "t_id": "Ini Cara Baca KPI dan Financial Insight biar Keputusan Bisnis Makin Tajam",
-   "t_ko": "KPI와 재무 지표 분석으로 비즈니스 의사결정 역량 강화 방법"
+   "t_ko": "KPI와 재무 지표 분석으로 비즈니스 의사결정 역량 강화 방법",
+   "t_id": "Ini Cara Baca KPI dan Financial Insight biar Keputusan Bisnis Makin Tajam"
   },
   {
    "ts": "2026-09-11T21:22:45+07:00",
@@ -16589,6 +16657,32 @@
    "t_id": "Inflasi AS Stabil Saat Harga Diesel Tembus $6 per Galon"
   },
   {
+   "ts": "2026-09-11T21:22:37+07:00",
+   "date": "2026-09-11",
+   "time": "21:22",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Dow Rallies On Surprise Inflation Data; This Tech Icon Eyes A Breakout (Live Coverage)",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-cpi-inflation-report-oracle-stock-orcl/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/55ca4252bd7c66820fc61ce444908e68.jpg",
+   "t_ko": "뉴욕증시, 예상 밖 물가 지표에 상승… 기술주 반등 주목",
+   "t_id": "Bursa Hari Ini: Dow Menguat Berkat Data Inflasi Mengejutkan; Saham Teknologi Ini Incar Breakout"
+  },
+  {
+   "ts": "2026-09-11T21:22:23+07:00",
+   "date": "2026-09-11",
+   "time": "21:22",
+   "src": "Yahoo Finance",
+   "t": "Gold Miner's Luster Lures Funds; Stock Trades Around Buy Point",
+   "tags": [],
+   "url": "https://www.investors.com/stock-lists/sector-leaders/gold-wheaton-precious-metals-wpm-stock-commodities-buy-point-markets/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/e5af0dc1beafaacaf03b081be9fc70a7.jpg",
+   "t_ko": "자금 유입되는 금광주, 매수 타점 근접 거래",
+   "t_id": "Kilau Emiten Emas Tarik Dana; Saham Di Area Buy"
+  },
+  {
    "ts": "2026-09-11T21:22:00+07:00",
    "date": "2026-09-11",
    "time": "21:22",
@@ -16615,19 +16709,6 @@
    "t_id": "BMO, Sun Life Kucurkan Modal Swasta C$75 Miliar untuk Infrastruktur Kanada"
   },
   {
-   "ts": "2026-09-11T21:19:58+07:00",
-   "date": "2026-09-11",
-   "time": "21:19",
-   "src": "Yahoo Finance",
-   "t": "Jensen Huang Mocks Nvidia ‘Circular Financing’ Fears: ‘If That Is, Let’s Do More of That’",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/jensen-huang-mocks-nvidia-circular-141958748.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/benzinga_prediction_markets_613/e3be4290eb4f5c3440f91c6ba93f0abb.jpg",
-   "t_ko": "Jensen Huang, Nvidia 순환 출자 우려 일축 — 그런 방식이라면 더 확대할 것",
-   "t_id": "Jensen Huang Tanggapi Santai Kekhawatiran 'Pendanaan Melingkar' Nvidia: 'Jika Iya, Mari Buat Lebih Banyak'"
-  },
-  {
    "ts": "2026-09-11T21:18:00+07:00",
    "date": "2026-09-11",
    "time": "21:18",
@@ -16651,18 +16732,6 @@
    "t_id": "Punya Banyak Reseller, Tapi Omzet Belum Konsisten? Mungkin Ini yang Kurang"
   },
   {
-   "ts": "2026-09-11T21:14:36+07:00",
-   "date": "2026-09-11",
-   "time": "21:14",
-   "src": "Bloomberg",
-   "t": "Canada Trade Can Help US Cool Inflation, Poilievre Says",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-11/canada-trade-can-help-us-cool-inflation-poilievre-says-video",
-   "g": 1,
-   "t_ko": "Poilievre, 캐나다 무역이 미국의 인플레이션 완화 기여 가능언급",
-   "t_id": "Perdagangan Kanada Dapat Bantu AS Redam Inflasi, Kata Poilievre"
-  },
-  {
    "ts": "2026-09-11T21:12:42+07:00",
    "date": "2026-09-11",
    "time": "21:12",
@@ -16684,44 +16753,6 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8659104/hasil-seleksi-magang-nasional-diumumkan-18-september",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/16/onboarding-magang-hub-batch-3-di-jakarta-selasa-16122025-1765891831577_169.jpeg?w=360&q=90",
    "t_ko": "국가 인턴십 선발 결과 18일 발표"
-  },
-  {
-   "ts": "2026-09-11T21:05:09+07:00",
-   "date": "2026-09-11",
-   "time": "21:05",
-   "src": "Yahoo Finance",
-   "t": "Tech stocks rally as oil prices fall, inflation remains sticky: AlphaCheck",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/article/tech-stocks-rally-as-oil-prices-fall-inflation-remains-sticky-alphacheck-140509850.html",
-   "g": 1,
-   "img": "https://s.yimg.com/uu/api/res/1.2/HchBm_is5fwVkrHmnghcxQ--~B/aD0zMzkyO3c9NTA4ODthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-05/91bd5574-a8f7-4997-898c-29fb0354bb0e",
-   "t_ko": "유가 하락 및 물가 경직성 속 기술주 반등",
-   "t_id": "Saham Teknologi Menguat Seiring Penurunan Harga Minyak dan Inflasi yang Persisten: AlphaCheck"
-  },
-  {
-   "ts": "2026-09-11T21:04:43+07:00",
-   "date": "2026-09-11",
-   "time": "21:04",
-   "src": "Yahoo Finance",
-   "t": "Wall St climbs after August inflation report, oil price slide",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-recover-oil-095547409.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/reuters.com/408f5efa9a40c2e83acd066f58eac6a1.jpg",
-   "t_ko": "8월 물가 지표 호조 및 유가 하락에 Wall Street 상승",
-   "t_id": "Wall Street Menguat Ditopang Data Inflasi Agustus dan Penurunan Harga Minyak"
-  },
-  {
-   "ts": "2026-09-11T21:02:38+07:00",
-   "date": "2026-09-11",
-   "time": "21:02",
-   "src": "CNBC",
-   "t": "Leopold Aschenbrenner's Situational Awareness is active in options market, sources say",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/leopold-aschenbrenners-situational-awareness-is-active-in-options-market-sources-say.html",
-   "g": 1,
-   "t_ko": "Leopold Aschenbrenner의 시추에이셔널 어웨어니스, 옵션 시장서 활성화",
-   "t_id": "Situational Awareness Leopold Aschenbrenner Ramai di Pasar Opsi, Kata Sumber"
   },
   {
    "ts": "2026-09-11T21:01:59+07:00",
@@ -16863,42 +16894,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/11/direktur-utama-btn-nixon-lp-napitupulu-tengah-istimewa-r7fkO.webp",
    "t_ko": "BTN, Beyond Mortgage 가속화 — 비주택 대출 비중 30% 목표",
    "t_id": "BTN Percepat Beyond Mortgage, Porsi Kredit Non-Perumahan Dibidik 30%"
-  },
-  {
-   "ts": "2026-09-11T19:58:00+07:00",
-   "date": "2026-09-11",
-   "time": "19:58",
-   "src": "Katadata",
-   "t": "Pemerintah Beri Sinyal Tak akan Bangun Infrastruktur Olahraga Baru",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/nasional/6aa3faf685111/pemerintah-beri-sinyal-tak-akan-bangun-infrastruktur-olahraga-baru",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/08/2026_09_08-21_06_00_57e42378-abe8-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "인도네시아 정부, 신규 체육 인프라 미건설 시사",
-   "t_id": "Pemerintah Beri Sinyal Tak akan Bangun Infrastruktur Olahraga Baru"
-  },
-  {
-   "ts": "2026-09-11T19:54:05+07:00",
-   "date": "2026-09-11",
-   "time": "19:54",
-   "src": "Medcom",
-   "t": "Pemulihan Ekonomi Aceh Timur Bergerak Signifikan, Penyaluran Bantuan Sosial Capai 99 Persen",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/3NOxwnmb-pemulihan-ekonomi-aceh-timur-bergerak-signifikan-penyaluran-bantuan-sosial-capai-99-persen",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/11/1841616/nzx40qhovG.jpeg?w=720",
-   "t_ko": "아체 티무르 경제 회복세 — 사회보장기금 집행률 99% 달성",
-   "t_id": "Pemulihan Ekonomi Aceh Timur Bergerak Signifikan, Penyaluran Bantuan Sosial Capai 99 Persen"
-  },
-  {
-   "ts": "2026-09-11T19:42:28+07:00",
-   "date": "2026-09-11",
-   "time": "19:42",
-   "src": "Jawa Pos",
-   "t": "Soroti Polemik Data Bansos, Ekonom Celios Minta BPS Ajukan Anggaran Sensus ke Prabowo!",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609110405/soroti-polemik-data-bansos-ekonom-celios-minta-bps-ajukan-anggaran-sensus-ke-prabowo",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/06/07/ilustrasi-warga-menerima-pencairan-bansos-dokjawaposcom-ZlFwS.webp",
-   "t_ko": "Celios 이코노미스트, 복지 데이터 논란 속 BPS에 Prabowo 예산 신청 촉구",
-   "t_id": "Soroti Polemik Data Bansos, Ekonom Celios Minta BPS Ajukan Anggaran Sensus ke Prabowo!"
   }
  ],
  "kisi_news": [
@@ -17070,9 +17065,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.13",
-   "d": 0.53,
-   "ytd": 13.05,
+   "v": "13.14",
+   "d": 0.62,
+   "ytd": 13.14,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17082,9 +17077,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.930%",
-   "d": -0.28,
-   "ytd": 18.42,
+   "v": "4.938%",
+   "d": -0.12,
+   "ytd": 18.62,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17106,8 +17101,8 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "99.04",
-   "d": -0.11,
-   "ytd": 0.77,
+   "d": -0.1,
+   "ytd": 0.78,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17117,9 +17112,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.59",
-   "d": -3.52,
-   "ytd": 73.44,
+   "v": "99.63",
+   "d": -3.48,
+   "ytd": 73.51,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17129,9 +17124,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,419.2",
-   "d": 1.71,
-   "ytd": 2.16,
+   "v": "4,411.2",
+   "d": 1.52,
+   "ytd": 1.98,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -25195,7 +25190,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 248,
+  "pc_age_min": 262,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
