@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 09:03",
+ "updated": "2026-09-11 09:06",
  "delay_min": 0,
  "fx_basis": "13.01 IDR/KRW · USD/IDR 17,531 · USD/KRW 1,347 · 09:00 Yahoo",
- "idr_per_krw": 13.0115,
+ "idr_per_krw": 13.0131,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -32,8 +32,8 @@
    "label": "USD/IDR",
    "name": "달러/루피아",
    "px": 17531.0,
-   "prev": 17531.0,
-   "pct": 0.0,
+   "prev": 17530.0,
+   "pct": 0.01,
    "spark": [
     17530.0,
     17531.0,
@@ -67,7 +67,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 09:02",
+   "asof": "investing.com 09:05",
    "unit": "bp"
   }
  ],
@@ -80,8 +80,8 @@
   "m1": 5.13,
   "value_idr": 21546688746644,
   "volume": 48552221241,
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 외국인·공시 PC 09-11 08:48",
-  "rank_asof": "09:02",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 외국인·공시 PC 09-11 08:59",
+  "rank_asof": "09:05",
   "rank_date": "2026-09-10",
   "adv": 161,
   "dec": 543,
@@ -15028,10 +15028,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6852.27,
+   "px": 6849.31,
    "prev": 7042.44,
-   "pct": -2.7,
-   "asof": "08:40",
+   "pct": -2.74,
+   "asof": "08:45",
    "live": true,
    "spark": [
     6836.48,
@@ -15054,17 +15054,18 @@
     6843.71,
     6851.45,
     6859.69,
-    6852.27
+    6848.42,
+    6849.31
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63241.04,
+   "px": 63286.98,
    "prev": 65128.81,
-   "pct": -2.9,
-   "asof": "08:45",
+   "pct": -2.83,
+   "asof": "08:50",
    "live": true,
    "spark": [
     63748.21,
@@ -15088,23 +15089,25 @@
     63398.28,
     63355.45,
     63325.48,
-    63241.04
+    63310.26,
+    63286.98
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24654.54,
+   "px": 24653.56,
    "prev": 24954.47,
-   "pct": -1.2,
-   "asof": "08:45",
+   "pct": -1.21,
+   "asof": "08:50",
    "live": true,
    "spark": [
     24603.11,
     24614.53,
     24611.43,
-    24654.54
+    24665.42,
+    24653.56
    ]
   }
  ],
@@ -15492,7 +15495,19 @@
    "url": "https://www.liputan6.com/saham/read/8289156/emiten-raja-ungkap-alasan-akuisisi-5-saham-layar-nusantara-gas",
    "img": "https://cdn0-production-images-kly.akamaized.net/jerop9yDm0xIDFxGh1_ee-NwmYA=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5497603/original/096409200_1770638744-3.jpg",
    "t_ko": "RAJA, Layar Nusantara Gas 지분 5% 인수 배경 공개",
-   "t_id": "Emiten RAJA Ungkap Alasan Akuisisi 5% Saham Layar Nusantara Gas"
+   "t_id": "Emiten RAJA Ungkap Alasan Akuisisi 5% Saham Layar Nusantara Gas",
+   "ai_ko": "Rukun Raharja(RAJA), 자회사 통해 Layar Nusantara Gas 지분 5%를 Genting LNG로부터 9월 4일 인수 / 연 120만톤 FLNG와 가스운반선 확보로 미드스트림 사업 확장",
+   "ai_id": "Rukun Raharja (RAJA) melalui Raharja Gas Kasuri mengakuisisi 5% saham Layar Nusantara Gas dari Genting LNG pada 4 September 2026, pemilik FLNG berkapasitas 1,2 juta ton per tahun dengan pasokan dari Blok Kasuri. RAJA juga memfinalisasi akuisisi perusahaan pelayaran pemilik LNG Carrier dan VLGC untuk memperkuat segmen midstream.",
+   "ai_tags": [
+    "M&A",
+    "LNG",
+    "가스"
+   ],
+   "ai_tags_id": [
+    "akuisisi",
+    "LNG",
+    "gas"
+   ]
   },
   {
    "ts": "2026-09-10T20:40:00+07:00",
@@ -15506,7 +15521,19 @@
    "url": "https://www.idnfinancials.com/news/68678/foreign-outflow-bbca-top-sell-again-at-around-idr-550-billion",
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/BBCA-11092026.jpg",
    "t_ko": "외국인 순매도 지속 — BBCA 약 Rp5,500억 순매도 1위",
-   "t_id": "Dana Asing Keluar, BBCA Kembali Jadi Top Sell Sekitar Rp550 Miliar"
+   "t_id": "Dana Asing Keluar, BBCA Kembali Jadi Top Sell Sekitar Rp550 Miliar",
+   "ai_ko": "9월 10일 외국인 순매도 Rp7,475억으로 전일 Rp6,214억보다 확대, BBCA가 Rp5,497억 최대 순매도 / BBRI·ISAT·DSSA·INDY 매도 우위, 반면 ANTM Rp3,010억·AADI·CUAN·PTBA 등 에너지·광업주는 순매수",
+   "ai_id": "Investor asing mencatat net sell Rp747,51 miliar di pasar reguler pada Kamis (10/9), naik dari Rp621,40 miliar sehari sebelumnya, dengan BBCA sebagai net sell terbesar Rp549,7 miliar diikuti BBRI, ISAT, DSSA, dan INDY. Sebaliknya saham energi dan pertambangan mendominasi net buy dengan ANTM di posisi teratas Rp301 miliar, disusul AADI, CUAN, PTBA, dan ENRG.",
+   "ai_tags": [
+    "외국인",
+    "수급",
+    "은행"
+   ],
+   "ai_tags_id": [
+    "asing",
+    "net sell",
+    "perbankan"
+   ]
   },
   {
    "ts": "2026-09-10T20:31:18+07:00",
@@ -15520,7 +15547,19 @@
    "url": "https://ekonomi.republika.co.id/berita/tl5hk6490/fokus-akuisisi-tambang-emas-belanja-modal-astra-tembus-rp169-triliun",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_210422115231-626.png",
    "t_ko": "Astra(ASII), 금광 인수 집중에 설비투자 Rp16.9조 돌파",
-   "t_id": "Fokus Akuisisi Tambang Emas, Belanja Modal Astra Tembus Rp16,9 Triliun"
+   "t_id": "Fokus Akuisisi Tambang Emas, Belanja Modal Astra Tembus Rp16,9 Triliun",
+   "ai_ko": "Astra International(ASII), 상반기 설비투자 Rp16.9조 중 Rp11.7조를 United Tractors(UNTR) 통한 금 광산 Arafura Surya Alam 인수에 투입 / 상반기 매출 Rp157.9조로 3% 감소, 일회성 제외 순이익 Rp14.9조로 7% 감소",
+   "ai_id": "Astra International (ASII) merealisasikan capex Rp16,9 triliun pada semester I 2026, dengan Rp11,7 triliun untuk akuisisi tambang emas Arafura Surya Alam lewat United Tractors (UNTR) dan Rp5,2 triliun untuk pembelian alat berat. Pendapatan bersih konsolidasi turun 3% menjadi Rp157,9 triliun, sementara laba bersih termasuk non-recurring items Rp2,4 triliun tercatat Rp12,5 triliun atau turun 19% YoY.",
+   "ai_tags": [
+    "설비투자",
+    "M&A",
+    "실적"
+   ],
+   "ai_tags_id": [
+    "capex",
+    "akuisisi",
+    "kinerja"
+   ]
   },
   {
    "ts": "2026-09-10T20:01:48+07:00",
@@ -15534,7 +15573,19 @@
    "url": "https://www.liputan6.com/saham/read/8289148/rukun-raharja-raja-bakal-bawa-anak-usaha-ipo-pada-2027",
    "img": "https://cdn0-production-images-kly.akamaized.net/_uyKrhR8BH0tidg-3boJQBbq8DQ=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9345565/original/078112300_1789037335-Screenshot__1067_.jpg",
    "t_ko": "RAJA, 2027년 자회사 IPO 추진",
-   "t_id": "Rukun Raharja (RAJA) Bakal Bawa Anak Usaha IPO pada 2027"
+   "t_id": "Rukun Raharja (RAJA) Bakal Bawa Anak Usaha IPO pada 2027",
+   "ai_ko": "Rukun Raharja(RAJA), 자회사 IPO 시점을 2027년으로 제시하며 1~2곳 추가 상장 가능성도 언급 / 같은 해 FLNG 개발, 가스운반선 인수, East Kalimantan 120km 가스관 건설 등 대형 프로젝트 집행 예정",
+   "ai_id": "Rukun Raharja (RAJA) menyiapkan IPO anak usaha di BEI yang kemungkinan besar direalisasikan pada 2027, dan membuka peluang melepas saham satu hingga dua entitas anak lainnya. Rencana ini sejalan dengan target eksekusi proyek besar 2027 berupa pengembangan FLNG, akuisisi kapal pengangkut gas, dan pipa gas hampir 120 kilometer di Kalimantan Timur.",
+   "ai_tags": [
+    "IPO",
+    "가스",
+    "설비투자"
+   ],
+   "ai_tags_id": [
+    "IPO",
+    "gas",
+    "ekspansi"
+   ]
   },
   {
    "ts": "2026-09-10T19:50:02+07:00",
@@ -15548,7 +15599,19 @@
    "url": "https://ekonomi.republika.co.id/berita/tl5fne370/msig-life-catat-laba-bersih-rp-181-miliar-pada-semester-i-2026-naik-69-persen",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260910194941-715.png",
    "t_ko": "MSIG Life, 상반기 순이익 Rp1,810억 — 69% 증가",
-   "t_id": "MSIG Life Catat Laba Bersih Rp 181 Miliar pada Semester I 2026, Naik 69 Persen"
+   "t_id": "MSIG Life Catat Laba Bersih Rp 181 Miliar pada Semester I 2026, Naik 69 Persen",
+   "ai_ko": "MSIG Life, 상반기 순이익 Rp1,810억으로 69% 증가, CSM Rp9,130억으로 8% 증가 / 계속보험료 Rp1조로 27% 늘고 자본 Rp8.2조로 OJK 최소요건 Rp1조 상회",
+   "ai_id": "MSIG Life Insurance Indonesia mencatat laba bersih Rp181 miliar pada semester I 2026, naik 69% YoY, dengan CSM tumbuh 8% menjadi Rp913 miliar dan premi lanjutan Rp1 triliun atau naik 27% YoY. Ekuitas mencapai Rp8,2 triliun, melampaui ketentuan minimum POJK 23/2023 sebesar Rp1 triliun, sementara MSIG Sharia Life resmi beroperasi sejak 3 Agustus 2026.",
+   "ai_tags": [
+    "실적",
+    "보험",
+    "자본"
+   ],
+   "ai_tags_id": [
+    "kinerja",
+    "asuransi",
+    "ekuitas"
+   ]
   },
   {
    "ts": "2026-09-10T18:53:31+07:00",
@@ -15562,7 +15625,19 @@
    "url": "https://www.liputan6.com/saham/read/8289152/transaksi-jumbo-rp-13-triliun-di-vici-pengendali-borong-25-saham",
    "img": "https://cdn0-production-images-kly.akamaized.net/fFyvwscjNnCiJ0ROgGnyxmKL9UY=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277615/original/062866500_1672400411-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga-4.JPG",
    "t_ko": "VICI Rp1.3조 대량매매 — 지배주주 지분 25% 매집",
-   "t_id": "Transaksi Jumbo Rp 1,3 Triliun di VICI, Pengendali Borong 25% Saham"
+   "t_id": "Transaksi Jumbo Rp 1,3 Triliun di VICI, Pengendali Borong 25% Saham",
+   "ai_ko": "Victoria Care(VICI), 협상시장에서 Beauty Brands International이 보유 지분 25%(16.77억주)를 주당 Rp747, 총 Rp1.25조에 전량 매각 / 최대주주 Sukses Sejati Sejahtera가 전량 인수해 지분율 59.95%→84.95%로 상승",
+   "ai_id": "Beauty Brands International Pte Ltd melepas seluruh 1,677 miliar saham atau 25% VICI di harga Rp747 per saham senilai Rp1,25 triliun pada 10 September 2026. Sukses Sejati Sejahtera sebagai pengendali membeli seluruh saham tersebut sehingga kepemilikannya naik dari 59,95% menjadi 84,95%, sementara di pasar reguler VICI ditutup naik 5,71% ke Rp1.110.",
+   "ai_tags": [
+    "지분매각",
+    "최대주주",
+    "블록딜"
+   ],
+   "ai_tags_id": [
+    "divestasi",
+    "pengendali",
+    "pasar negosiasi"
+   ]
   },
   {
    "ts": "2026-09-10T18:50:53+07:00",
@@ -15576,7 +15651,19 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/121191/penyebab-ihsg-ditutup-melemah-di-6-589",
    "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260604121604.jpeg",
    "t_ko": "IHSG 6,589 하락 마감 배경",
-   "t_id": "Penyebab IHSG Ditutup Melemah di 6.589"
+   "t_id": "Penyebab IHSG Ditutup Melemah di 6.589",
+   "ai_ko": "IHSG, 9월 10일 1.33% 하락한 6,589 마감, BBRI 등 대형주 약세가 지수 압박 / 중동 긴장 재고조와 Brent유 USD 102.07 돌파로 9월 Fed 금리인상 확률 62.2%로 상승, 루피아도 0.15% 약세 Rp17,539 기록",
+   "ai_id": "IHSG ditutup melemah 1,33% di 6.589 pada Kamis (10/9), tertekan saham BBRI dan sejumlah big caps dengan rentang perdagangan 6.712 hingga 6.585. Pelemahan dipicu tensi geopolitik Timur Tengah, kenaikan probabilitas suku bunga The Fed ke 62,2% setelah Brent menembus US$102,07 per barel, serta rupiah melemah 0,15% ke Rp17.539 per dolar AS.",
+   "ai_tags": [
+    "지수",
+    "유가",
+    "금리"
+   ],
+   "ai_tags_id": [
+    "IHSG",
+    "harga minyak",
+    "suku bunga"
+   ]
   },
   {
    "ts": "2026-09-10T18:30:10+07:00",
@@ -15590,7 +15677,19 @@
    "url": "https://finance.detik.com/bursa-dan-valas/d-8657400/emas-sumbang-mayoritas-pendapatan-antam-total-penjualan-tembus-rp-50-t",
    "img": "https://akcdn.detik.net.id/community/media/visual/2017/01/23/6ed09365-8341-4f97-8cb3-272dbe0f57ff_169.jpg?w=360&q=90",
    "t_ko": "Antam(ANTM), 금이 매출 대부분 차지 — 총매출 Rp50조 돌파",
-   "t_id": "Emas Sumbang Mayoritas Pendapatan Antam, Total Penjualan Tembus Rp 50 T"
+   "t_id": "Emas Sumbang Mayoritas Pendapatan Antam, Total Penjualan Tembus Rp 50 T",
+   "ai_ko": "Antam(ANTM), 상반기 매출 Rp62.71조·순이익 Rp6.91조 기록, 금 판매량 18.1톤으로 금 사업 매출만 Rp50.39조 / 니켈광 생산 778만wmt, Gresik 연 30톤 Logam Mulia 공장은 사전건설 단계",
+   "ai_id": "Aneka Tambang (ANTM) membukukan pendapatan Rp62,71 triliun dan laba bersih Rp6,91 triliun hingga semester I 2026, dengan penjualan emas 18,1 ton menyumbang pendapatan sekitar Rp50,39 triliun. Produksi bijih nikel tercatat 7,78 juta wmt, sementara fasilitas Logam Mulia Gresik berkapasitas 30 ton per tahun masih pada tahap prakonstruksi.",
+   "ai_tags": [
+    "실적",
+    "금",
+    "니켈"
+   ],
+   "ai_tags_id": [
+    "kinerja",
+    "emas",
+    "nikel"
+   ]
   },
   {
    "ts": "2026-09-10T17:00:00+07:00",
@@ -15605,7 +15704,19 @@
    "url": "https://www.idnfinancials.com/news/68649/bank-jago-posts-idr-189-billion-net-profit-as-customers-hit-20-million",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/BANK%20JAGO-min.jpg",
    "t_ko": "Bank Jago, 고객 2,000만 명 돌파 속 순이익 IDR 1,890억",
-   "t_id": "Bank Jago cetak laba bersih Rp189 miliar, nasabah tembus 20 juta"
+   "t_id": "Bank Jago cetak laba bersih Rp189 miliar, nasabah tembus 20 juta",
+   "ai_ko": "Bank Jago(ARTO), 상반기 순이익 Rp1,890억으로 49% 증가, 대출·샤리아 금융 Rp26.6조로 24% 확대 / 고객 2,010만명에 NPL 0.8%·CAR 28.4% 유지, 디지털 은행 성장성 확인",
+   "ai_id": "Bank Jago (ARTO) membukukan laba bersih Rp189 miliar pada semester I-2026, naik 49% yoy, ditopang kredit dan pembiayaan syariah Rp26,6 triliun yang tumbuh 24%. Jumlah nasabah digital dan lending menembus 20,1 juta dengan NPL gross 0,8% serta CAR 28,4%.",
+   "ai_tags": [
+    "실적",
+    "디지털은행",
+    "자산건전성"
+   ],
+   "ai_tags_id": [
+    "kinerja",
+    "bank digital",
+    "kualitas aset"
+   ]
   },
   {
    "ts": "2026-09-10T16:55:36+07:00",
@@ -15753,7 +15864,19 @@
    "url": "https://www.idnfinancials.com/news/68658/ratu-expands-upstream-portfolio-with-madura-block-acquisition",
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/RATU-11092026.jpg",
    "t_ko": "RATU, Madura Block 인수로 업스트림 포트폴리오 확대",
-   "t_id": "RATU Perluas Portofolio Hulu lewat Akuisisi Blok Madura"
+   "t_id": "RATU Perluas Portofolio Hulu lewat Akuisisi Blok Madura",
+   "ai_ko": "Raharja Energi(RATU), SMS Development 인수로 Madura Strait 광구 지분 20% 확보 / Cepu 2.24%·Jabung 8% 지분에 가스 자산 추가, 상류 포트폴리오 다변화",
+   "ai_id": "Raharja Energi Cepu (RATU) memperkuat portofolio hulu migas melalui akuisisi SMS Development Limited yang rampung Juni 2026 dan memberikan PI tidak langsung 20% di Blok Madura Strait. RATU juga menggenggam PI 2,24% di Blok Cepu dan 8% di Blok Jabung, serta berencana bertransformasi menjadi operator.",
+   "ai_tags": [
+    "M&A",
+    "석유가스",
+    "가스"
+   ],
+   "ai_tags_id": [
+    "akuisisi",
+    "hulu migas",
+    "gas"
+   ]
   },
   {
    "ts": "2026-09-10T14:22:47+07:00",
@@ -15883,7 +16006,19 @@
    "url": "https://www.idnfinancials.com/news/68659/ratu-profit-jumps-102-boosted-by-madura-block-acquisition",
    "img": "https://photo2.idnfinancials.com/fly/idn/adhy-2026/RATU-100926.jpg",
    "t_ko": "RATU, Madura Block 인수 효과로 순이익 102% 급증",
-   "t_id": "Laba RATU Melonjak 102%, Didorong Akuisisi Blok Madura"
+   "t_id": "Laba RATU Melonjak 102%, Didorong Akuisisi Blok Madura",
+   "ai_ko": "Raharja Energi(RATU), 상반기 순이익 USD 1,554만으로 102% 급증, 염가매수차익과 유가 상승 효과 / 매출 USD 2,565만(+2%), 회사채 발행에 부채비율 2.42배, 배당성향은 미정",
+   "ai_id": "RATU mencatat laba bersih US$15,54 juta pada semester I-2026, melonjak 102% yoy, terutama karena bargain purchase gain dari akuisisi SMSD dan kenaikan harga minyak. Pendapatan naik 2% menjadi US$25,65 juta, sementara DER naik ke 2,42 kali seiring penerbitan obligasi Rp800 miliar.",
+   "ai_tags": [
+    "실적",
+    "M&A",
+    "재무구조"
+   ],
+   "ai_tags_id": [
+    "kinerja",
+    "akuisisi",
+    "DER"
+   ]
   },
   {
    "ts": "2026-09-10T12:10:00+07:00",
@@ -16321,8 +16456,8 @@
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/10/kevin-hassett-coinbase-stock-trump-crypto-recusal.html",
    "g": 1,
-   "t_ko": "트럼프의 암호화폐 정책 개편 속 Hassett, 최대 500만 달러 Coinbase 지분 보유",
-   "t_id": "Hassett Tahan Kepemilikan Saham Coinbase Senilai Hingga $5 Juta Saat Trump Rombak Kebijakan Kripto"
+   "t_ko": "Hassett, 트럼프 암호화폐 정책 속 Coinbase 지분 최대 500만 달러 보유",
+   "t_id": "Hassett Pertahankan Saham Coinbase hingga USD 5 Juta Saat Trump Rombak Kebijakan Kripto"
   },
   {
    "ts": "2026-09-11T08:55:07+07:00",
@@ -16335,7 +16470,7 @@
    "g": 1,
    "img": "https://cdn0-production-images-kly.akamaized.net/dmc8_VXhRyOccZWNIuL-AjXXxDA=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3046085/original/053383100_1581323844-20200210-Pasar-Saham-di-Asia-Turun-Imbas-Wabah-Virus-Corona-2.jpg",
    "t_id": "Bursa Saham Asia Hari Ini Lesu, Kospi dan Nikkei Pimpin Koreksi",
-   "t_ko": "아시아 증시 약세 — Kospi와 Nikkei 하락 주도"
+   "t_ko": "아시아 증시 약세 — 코스피·닛케이 하락 주도"
   },
   {
    "ts": "2026-09-11T08:53:08+07:00",
@@ -16346,8 +16481,32 @@
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/11/chinese-nvidia-rival-enflame-stock-market-debut-ai.html",
    "g": 1,
-   "t_ko": "AI 수요 호조 속 중국 엔비디아 대항마 Enflame, 상장 첫날 206% 급등",
-   "t_id": "Saingan Nvidia asal China, Enflame, Meroket 206% Saat Debut Perdana di Pasar Saham di Tengah Tingginya Permintaan AI"
+   "t_ko": "중국 Nvidia 경쟁사 Enflame, AI 수요 강세에 상장 첫날 206% 급등",
+   "t_id": "Rival Nvidia Asal China Enflame Melonjak 206% di Debut Bursa Saham, Permintaan AI Tetap Tinggi",
+   "ai_ko": "중국 AI 반도체 Enflame, 상하이 상장 첫날 206% 급등, 개인 청약 경쟁률 6,000배 상회 / MetaX·Moore Threads·Biren에 이은 상장으로 Nvidia 대체 기대 반영",
+   "ai_id": "Produsen chip AI China, Enflame, melonjak 206% pada hari pertama perdagangan di Shanghai dengan permintaan ritel lebih dari 6.000 kali saham yang tersedia. Enflame menjadi yang terakhir melantai dari 'empat naga kecil' chip AI China setelah MetaX, Moore Threads, dan Biren.",
+   "ai_tags": [
+    "IPO",
+    "반도체",
+    "중국"
+   ],
+   "ai_tags_id": [
+    "IPO",
+    "semikonduktor",
+    "China"
+   ]
+  },
+  {
+   "ts": "2026-09-11T08:50:05+07:00",
+   "date": "2026-09-11",
+   "time": "08:50",
+   "src": "Detik",
+   "t": "Pramono Mau Terbitkan Obligasi, Ekonom Soroti APBD Jakarta Lebih dari Cukup",
+   "tags": [],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8657922/pramono-mau-terbitkan-obligasi-ekonom-soroti-apbd-jakarta-lebih-dari-cukup",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2018/04/18/f2ffef2b-12b9-4e96-9cf5-5c1cce1e6d0e_169.jpeg?w=360&q=90",
+   "t_id": "Pramono Mau Terbitkan Obligasi, Ekonom Soroti APBD Jakarta Lebih dari Cukup",
+   "t_ko": "Pramono, 채권 발행 추진 — 전문가, 자카르타 APBD 충분하다고 지적"
   },
   {
    "ts": "2026-09-11T08:43:57+07:00",
@@ -16358,8 +16517,20 @@
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/11/us-iran-war-trump-hormuz-banks-oil-sanctions.html",
    "g": 1,
-   "t_ko": "Trump, 대이란 경제 압박 강화 속 개전 후회 없어",
-   "t_id": "Trump Sebut Tak Menyesal Mulai Perang Iran saat AS Tingkatkan Tekanan Ekonomi"
+   "t_ko": "Trump, 이란전쟁 개전 후회 없다 — 미국 경제 제재 강화",
+   "t_id": "Trump Sebut Tak Menyesal Mulai Perang Iran, AS Tingkatkan Tekanan Ekonomi",
+   "ai_ko": "Trump 미국 대통령, 이란 전쟁 개시에 후회 없다며 같은 결정 반복할 것이라고 발언 / 중간선거 후 종전·유가 하락 주장에도 장기화 보도 나오며 시장은 전쟁 장기화 대비",
+   "ai_id": "Presiden AS Donald Trump menyatakan tidak menyesal memulai perang dengan Iran dan akan mengambil keputusan yang sama jika diulang. Pasar bersiap menghadapi perang yang lebih panjang setelah laporan Wall Street Journal menyebut konflik bisa berlanjut melewati masa jabatannya.",
+   "ai_tags": [
+    "지정학",
+    "유가",
+    "미국"
+   ],
+   "ai_tags_id": [
+    "geopolitik",
+    "harga minyak",
+    "AS"
+   ]
   },
   {
    "ts": "2026-09-11T08:42:30+07:00",
@@ -16370,8 +16541,8 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-11/copper-heads-for-weekly-loss-as-doubts-on-us-tariffs-intensify",
    "g": 1,
-   "t_ko": "미국 관세 불확실성 고조에 구리 가격 주간 기준 하락세",
-   "t_id": "Tembaga Menuju Tren Penurunan Mingguan Seiring Meningkatnya Keraguan Terhadap Tarif AS"
+   "t_ko": "구리, 미국 관세 불확실성 커지며 주간 하락 전망",
+   "t_id": "Harga Tembaga Menuju Pelemahan Mingguan seiring Keraguan Tarif AS Menguat"
   },
   {
    "ts": "2026-09-11T08:37:07+07:00",
@@ -16383,7 +16554,19 @@
    "url": "https://www.cnbc.com/2026/09/11/y-combinator-garry-tan-says-do-nothing-about-distillation.html",
    "g": 1,
    "t_ko": "Garry Tan(Y Combinator), 중국 기술 도용 논란에도 \"증류 대응 불필요\"",
-   "t_id": "Bos Y Combinator Garry Tan: 'Diamkan Saja' Soal Distilasi di Tengah Tudingan Raksasa AI ke China"
+   "t_id": "Bos Y Combinator Garry Tan: 'Diamkan Saja' Soal Distilasi di Tengah Tudingan Raksasa AI ke China",
+   "ai_ko": "Y Combinator CEO Garry Tan, 중국 AI 모델 증류에 규제가 불필요하다는 견해 표명 / OpenAI·Anthropic이 중국 기업 증류를 문제 삼고 미국 당국도 보안 권고 발표, 규제 논쟁 확대",
+   "ai_id": "CEO Y Combinator Garry Tan menilai tidak perlu ada tindakan terhadap praktik distilasi model AI oleh perusahaan China. Pernyataan itu muncul saat OpenAI dan Anthropic menuding perusahaan China menyalin teknologi mereka dan otoritas keamanan siber AS menerbitkan peringatan resmi.",
+   "ai_tags": [
+    "AI",
+    "규제",
+    "지식재산"
+   ],
+   "ai_tags_id": [
+    "AI",
+    "regulasi",
+    "distilasi"
+   ]
   },
   {
    "ts": "2026-09-11T08:35:02+07:00",
@@ -16406,7 +16589,7 @@
    "tags": [],
    "url": "https://finance.detik.com/bursa-dan-valas/d-8657906/ihsg-melemah-ke-level-6-500-cek-rekomendasi-saham-hari-ini",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/bursa-dan-valas-1789089568-1789089568859.jpeg?w=360&q=90",
-   "t_ko": "IHSG 6,500선으로 하락 — 오늘 투자의견 정리",
+   "t_ko": "IHSG 6,500대 하락 — 오늘의 투자의견 정리",
    "t_id": "IHSG Melemah ke Level 6.500, Cek Rekomendasi Saham Hari Ini"
   },
   {
@@ -16419,8 +16602,8 @@
    "url": "https://www.channelnewsasia.com/business/tencent-backed-enflame-surges-188-in-shanghai-debut-after-912-million-ipo-6377566",
    "g": 1,
    "img": "https://dam.mediacorp.sg/image/upload/s--fjYhYnHr--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-11T013310Z_1_LYNXMPEM8A037_RTROPTP_3_CHINA-AI.JPG?itok=qTf-fEU_",
-   "t_ko": "Tencent 지원 Enflame, 상하이 상장 첫날 188% 급등",
-   "t_id": "Enflame Didukung Tencent Meroket 188% di Debut Shanghai Usai IPO $912 Juta"
+   "t_ko": "Tencent 투자 Enflame, USD 9.12억 IPO 후 상하이 상장 첫날 188% 급등",
+   "t_id": "Enflame Dukungan Tencent Melesat 188% di Debut Bursa Shanghai usai IPO US$912 Juta"
   },
   {
    "ts": "2026-09-11T08:23:00+07:00",
@@ -16738,18 +16921,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2021/07/29/potret-warga-terima-bansos-tunai-saat-ppkm-5_169.jpeg?w=360&q=90",
    "t_ko": "소외계층 5,000만 명 대상 지원금 지급 — Luhut, 재원 조달처 공개",
    "t_id": "50 Juta Warga Desil 1-5 Dapat Bansos, Luhut Ungkap Sumber Dananya"
-  },
-  {
-   "ts": "2026-09-11T05:25:19+07:00",
-   "date": "2026-09-11",
-   "time": "05:25",
-   "src": "Jawa Pos",
-   "t": "Jasaraharja Putera Terapkan Tata Kelola Manajemen Risiko, Targetkan Pertumbuhan Berkelanjutan",
-   "tags": [],
-   "url": "https://www.jawapos.com/bisnis/2609100507/jasaraharja-putera-terapkan-tata-kelola-manajemen-risiko-targetkan-pertumbuhan-berkelanjutan",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/10/IzQ3AKZxBK7sX1RkOIrtwn4kJG4Aiv26w7akUmBO.webp",
-   "t_ko": "Jasaraharja Putera, 리스크 관리 거버넌스 도입해 지속가능 성장 목표",
-   "t_id": "Jasaraharja Putera Terapkan Tata Kelola Manajemen Risiko, Targetkan Pertumbuhan Berkelanjutan"
   }
  ],
  "kisi_news": [
@@ -16957,9 +17128,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.06",
-   "d": 0.33,
-   "ytd": 0.8,
+   "v": "99.08",
+   "d": 0.35,
+   "ytd": 0.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -16969,9 +17140,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.63",
-   "d": 6.8,
-   "ytd": 78.74,
+   "v": "102.68",
+   "d": 6.85,
+   "ytd": 78.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -16981,9 +17152,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,369.9",
-   "d": -1.84,
-   "ytd": 1.02,
+   "v": "4,365.2",
+   "d": -1.95,
+   "ytd": 0.92,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -19804,8 +19975,8 @@
    "type": "STOCK",
    "title": "Penyampaian Keterbukaan Informasi kepada Pemegang Saham Sehubungan dengan Rencana Perubahan Status dari Perusahaan Terbuka Menjadi Perusahaan Tertutup (Rencana Go Private) dan Penghapusan Pencatatan Saham dari Bursa Efek Indonesia (Delisting) oleh  PT Era Graharealty Tbk (Perseroan)",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/24e3984bcc_151daa1854.pdf",
-   "title_id": "Penyampaian Keterbukaan Informasi kepada Pemegang Saham Sehubungan dengan Rencana Perubahan Status dari Perusahaan Terbuka Menjadi Perusahaan Tertutup (Rencana Go Private) dan Penghapusan Pencatatan Saham dari Bursa Efek Indonesia (Delisting) oleh  PT Era Graharealty Tbk (Perseroan)",
    "title_ko": "Era Graharealty, 비상장 전환·상장폐지 추진 관련 주주 정보공시",
+   "title_id": "Penyampaian Keterbukaan Informasi kepada Pemegang Saham Sehubungan dengan Rencana Perubahan Status dari Perusahaan Terbuka Menjadi Perusahaan Tertutup (Rencana Go Private) dan Penghapusan Pencatatan Saham dari Bursa Efek Indonesia (Delisting) oleh  PT Era Graharealty Tbk (Perseroan)",
    "ai_ko": "PT Era Graharealty Tbk는 인도네시아 증권거래소 자발적 상장폐지 및 비상장사 전환(Go Private) 추진에 따른 주주 대상 정보 공개 공시를 제출함. 이번 계획은 OJK 규정 제45호 2024년 및 BEI 규정 제I.N호에 근거하여 진행됨.",
    "ai_id": "PT Era Graharealty Tbk menyampaikan keterbukaan informasi kepada pemegang saham sehubungan dengan rencana go private dan penghapusan pencatatan saham (delisting) dari Bursa Efek Indonesia. Rencana tersebut mengacu pada Peraturan OJK No. 45 Tahun 2024 dan Peraturan BEI No. I.N.",
    "ai_tags": [
@@ -19916,8 +20087,8 @@
    "type": "STOCK",
    "title": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Independen",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/478b5ca148_02ad9bfa7a.pdf",
-   "title_id": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Independen",
-   "title_ko": "독립주주총회 의사록 요약"
+   "title_ko": "독립주주총회 의사록 요약",
+   "title_id": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Independen"
   },
   {
    "ts": "2026-09-10T20:46:57+07:00",
@@ -19938,8 +20109,8 @@
    "type": "STOCK",
    "title": "Informasi Tambahan Ringkas perubahan-perubahan/keterangan tambahan yang diperlukan terkait rencana Penawaran Umum Berkelanjutan Obligasi Berkelanjutan IV Lontar Papyrus Pulp & Paper Industry Tahap IV Tahun 2026 dan Sukuk Mudharabah Berkelanjutan II Lontar Papyrus Pulp & Paper Industry Tahap IV Tahun 2026",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/de4474cc13_86305c0da0.pdf",
-   "title_id": "Informasi Tambahan Ringkas perubahan-perubahan/keterangan tambahan yang diperlukan terkait rencana Penawaran Umum Berkelanjutan Obligasi Berkelanjutan IV Lontar Papyrus Pulp & Paper Industry Tahap IV Tahun 2026 dan Sukuk Mudharabah Berkelanjutan II Lontar Papyrus Pulp & Paper Industry Tahap IV Tahun 2026",
-   "title_ko": "Lontar Papyrus, 2026년 지속발행채권 IV·수쿡 무다라바 II 4단계 변경사항 추가 공시"
+   "title_ko": "Lontar Papyrus, 2026년 지속발행채권 IV·수쿡 무다라바 II 4단계 변경사항 추가 공시",
+   "title_id": "Informasi Tambahan Ringkas perubahan-perubahan/keterangan tambahan yang diperlukan terkait rencana Penawaran Umum Berkelanjutan Obligasi Berkelanjutan IV Lontar Papyrus Pulp & Paper Industry Tahap IV Tahun 2026 dan Sukuk Mudharabah Berkelanjutan II Lontar Papyrus Pulp & Paper Industry Tahap IV Tahun 2026"
   },
   {
    "ts": "2026-09-10T19:58:41+07:00",
@@ -20191,8 +20362,8 @@
    "type": "STOCK",
    "title": "Laporan Perkembangan Pengalihan Saham Hasil Pembelian Kembali Saham PT Telefast Indonesia Tbk",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/8c6af64db7_8685d9f424.pdf",
-   "title_id": "Laporan Perkembangan Pengalihan Saham Hasil Pembelian Kembali Saham PT Telefast Indonesia Tbk",
-   "title_ko": "Telefast Indonesia, 자사주 매입분 처분 진행상황 보고"
+   "title_ko": "Telefast Indonesia, 자사주 매입분 처분 진행상황 보고",
+   "title_id": "Laporan Perkembangan Pengalihan Saham Hasil Pembelian Kembali Saham PT Telefast Indonesia Tbk"
   },
   {
    "ts": "2026-09-10T17:31:10+07:00",
@@ -24530,8 +24701,8 @@
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-11 08:48",
-  "pc_age_min": 15,
+  "idx_from_pc": "2026-09-11 08:59",
+  "pc_age_min": 7,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
