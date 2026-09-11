@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 17:22",
+ "updated": "2026-09-11 17:31",
  "delay_min": 0,
  "fx_basis": "13.11 IDR/KRW · USD/IDR 17,595 · USD/KRW 1,342 · 17:04 Yahoo",
- "idr_per_krw": 13.1062,
+ "idr_per_krw": 13.1078,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -16,8 +16,8 @@
     6541.377,
     6547.88,
     6546.108,
-    6544.406,
-    6545.295,
+    6543.553,
+    6545.036,
     6536.463,
     6536.651,
     6537.273,
@@ -94,12 +94,12 @@
     6496.51,
     6494.106,
     6495.914,
-    6496.428,
-    6494.782,
-    6496.489,
-    6495.643,
-    6494.439,
-    6495.613,
+    6494.691,
+    6495.782,
+    6493.737,
+    6497.165,
+    6496.902,
+    6495.671,
     6493.084,
     6496.136,
     6497.95,
@@ -148,9 +148,9 @@
    "spark": [
     649.718,
     651.533,
-    652.215,
+    652.152,
     652.121,
-    651.172,
+    652.162,
     650.596,
     650.427,
     650.698,
@@ -219,15 +219,15 @@
     647.596,
     647.232,
     646.687,
-    647.309,
-    647.254,
-    647.125,
-    646.887,
+    647.107,
+    646.559,
+    647.098,
+    647.277,
     647.247,
-    646.674,
-    647.279,
-    647.139,
-    646.948,
+    647.39,
+    647.423,
+    647.178,
+    646.981,
     647.01,
     647.532,
     646.575,
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 17:21",
+   "asof": "investing.com 17:30",
    "unit": "bp"
   }
  ],
@@ -337,7 +337,7 @@
   "m1": 4.36,
   "value_idr": 14712675309883,
   "volume": 28617128161,
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-11 17:18",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-11 17:25",
   "rank_asof": null,
   "rank_date": "2026-09-11",
   "adv": 199,
@@ -15628,6 +15628,34 @@
  },
  "news": [
   {
+   "ts": "2026-09-11T17:24:46+07:00",
+   "date": "2026-09-11",
+   "time": "17:24",
+   "src": "Detik",
+   "t": "VKTR Pamer Bus Listrik Tambang, Bisa Tempuh 350 Km Sekali Cas",
+   "tags": [
+    "VKTR"
+   ],
+   "url": "https://finance.detik.com/energi/d-8658853/vktr-pamer-bus-listrik-tambang-bisa-tempuh-350-km-sekali-cas",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/vktr-pamer-bus-listrik-tambang-bisa-tempuh-350-km-sekali-cas-1789122228207_169.jpeg?w=360&q=90",
+   "t_ko": "VKTR, 1회 충전 350km 주행 광산용 전기버스 공개",
+   "t_id": "VKTR Pamer Bus Listrik Tambang, Jangkau 350 Km Sekali Cas"
+  },
+  {
+   "ts": "2026-09-11T17:20:00+07:00",
+   "date": "2026-09-11",
+   "time": "17:20",
+   "src": "IDNFinancials",
+   "t": "PTPP restructures IDR 18.2 trillion debt with four state-owned banks",
+   "tags": [
+    "PTPP"
+   ],
+   "url": "https://www.idnfinancials.com/news/68716/ptpp-restructures-idr-18-2-trillion-debt-with-four-state-owned-banks",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/PTPP-02092026.jpg",
+   "t_ko": "PTPP, 국영은행 4곳과 Rp18.2조 채무 재조정",
+   "t_id": "PTPP Restrukturisasi Utang Rp18,2 T dengan Empat Bank BUMN"
+  },
+  {
    "ts": "2026-09-11T17:18:41+07:00",
    "date": "2026-09-11",
    "time": "17:18",
@@ -15638,8 +15666,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8289876/ihsg-hari-ini-tergelincir-ke-6541-saham-cbre-menghijau",
    "img": "https://cdn0-production-images-kly.akamaized.net/YWYRK5oLneOmOWiUYOL3scmBXp8=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5755718/original/069568600_1778657615-5.jpg",
-   "t_id": "IHSG Hari Ini Tergelincir ke 6.541, Saham CBRE Menghijau",
-   "t_ko": "IHSG 6,541로 하락 마감 — CBRE 주가 상승"
+   "t_ko": "IHSG 6,541로 하락 마감 — CBRE 주가 상승",
+   "t_id": "IHSG Hari Ini Tergelincir ke 6.541, Saham CBRE Menghijau"
   },
   {
    "ts": "2026-09-11T17:15:00+07:00",
@@ -15967,20 +15995,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260604121736.jpeg",
    "t_ko": "30억 달러 규모 인수 제안 속 BYAN 주식 순매도 증권사 명단",
    "t_id": "Daftar Broker yang Lepas Saham BYAN di Tengah Tawaran US$3 Miliar"
-  },
-  {
-   "ts": "2026-09-11T13:10:00+07:00",
-   "date": "2026-09-11",
-   "time": "13:10",
-   "src": "Bloomberg Technoz",
-   "t": "TINS Ramal Harga Timah 2026 di US$55.000, Tren Masih Bullish",
-   "tags": [
-    "TINS"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121251/tins-ramal-harga-timah-2026-di-us-55-000-tren-masih-bullish",
-   "img": "https://images.bloombergtechnoz.com/data/2026/02/image-20260223101814.jpg",
-   "t_ko": "TINS, 2026년 주석 가격 USD 55,000 전망 — 강세장 지속",
-   "t_id": "TINS Ramal Harga Timah 2026 di US$55.000, Tren Masih Bullish"
   },
   {
    "ts": "2026-09-11T13:10:00+07:00",
@@ -16781,6 +16795,31 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-11T17:26:00+07:00",
+   "date": "2026-09-11",
+   "time": "17:26",
+   "src": "Media Indonesia",
+   "t": "Peran Kreator Makin Besar di Dunia Digital",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932376/peran-kreator-makin-besar-di-dunia-digital",
+   "g": 1,
+   "t_id": "Peran Kreator Makin Besar di Dunia Digital",
+   "t_ko": "디지털 생태계에서 크리에이터 영향력 확대"
+  },
+  {
+   "ts": "2026-09-11T17:25:00+07:00",
+   "date": "2026-09-11",
+   "time": "17:25",
+   "src": "IDNFinancials",
+   "t": "Nasdaq invests US$100 million in Kraken's parent for tokenized stock",
+   "tags": [],
+   "url": "https://www.idnfinancials.com/digital-asset/68729/nasdaq-invests-us100-million-in-krakens-parent-for-tokenized-stock",
+   "g": 1,
+   "img": "https://photo2.idnfinancials.com/fly/idn/2026/dynasty/Nasdaq-tanam-US100-juta-di-induk-Kraken-untuk-toke.jpg",
+   "t_ko": "Nasdaq, 토큰화 주식 위해 Kraken 모회사에 US$1억 투자",
+   "t_id": "Nasdaq Suntik US$100 Juta ke Induk Kraken untuk Saham Tokenisasi"
+  },
+  {
    "ts": "2026-09-11T17:18:47+07:00",
    "date": "2026-09-11",
    "time": "17:18",
@@ -16789,8 +16828,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609110361/pemerintah-genjot-kpp-rp-50-triliun-dorong-pelaku-umkm-punya-rumah-sendiri",
    "img": "https://cdn-assets.jawapos.com/images/1/2024/12/19/Rumah-Dery-Ridwansah-2JPG-1249787766.jpg",
-   "t_id": "Pemerintah Genjot KPP Rp 50 Triliun, Dorong Pelaku UMKM Punya Rumah Sendiri",
-   "t_ko": "정부, Rp50조 규모 KPP 투입해 중소기업 주택 마련 지원"
+   "t_ko": "정부, Rp50조 규모 KPP 투입해 중소기업 주택 마련 지원",
+   "t_id": "Pemerintah Genjot KPP Rp 50 Triliun, Dorong Pelaku UMKM Punya Rumah Sendiri"
   },
   {
    "ts": "2026-09-11T17:17:28+07:00",
@@ -17048,31 +17087,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/12/2026_08_12-17_36_00_bcadbc66-963e-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
    "t_ko": "Pertamina, 올해 자회사 118개 감축 목표",
    "t_id": "Pertamina Targetkan Pangkas 118 Anak Usaha Tahun Ini"
-  },
-  {
-   "ts": "2026-09-11T16:40:33+07:00",
-   "date": "2026-09-11",
-   "time": "16:40",
-   "src": "FT",
-   "t": "Scott Bessent fails to break ‘fever’ in US bond market",
-   "tags": [],
-   "url": "https://www.ft.com/content/dd4cc4a0-844e-486a-b99c-b379d457019b?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F0895921f-d4d4-4ec6-95a6-d0b59461be1d.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "Scott Bessent, 미국 채권시장 불안 해소 실패",
-   "t_id": "Scott Bessent Gagal Meredam Gejolak Pasar Obligasi AS"
-  },
-  {
-   "ts": "2026-09-11T16:39:59+07:00",
-   "date": "2026-09-11",
-   "time": "16:39",
-   "src": "Bloomberg",
-   "t": "Aareal Works With Alvarez & Marsal on SRT Amid Push for Growth",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-11/aareal-works-with-alvarez-marsal-on-srt-amid-push-for-growth",
-   "g": 1,
-   "t_ko": "Aareal, 성장 추진 속 SRT 위해 Alvarez & Marsal과 협력",
-   "t_id": "Aareal Gandeng Alvarez & Marsal Garap SRT demi Genjot Pertumbuhan"
   },
   {
    "ts": "2026-09-11T16:38:34+07:00",
@@ -17398,8 +17412,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.10",
-   "d": 0.3,
-   "ytd": 12.79,
+   "d": 0.32,
+   "ytd": 12.81,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17432,9 +17446,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.15",
-   "d": 0.0,
-   "ytd": 0.88,
+   "v": "99.16",
+   "d": 0.01,
+   "ytd": 0.89,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17444,9 +17458,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.12",
-   "d": -3.97,
-   "ytd": 72.62,
+   "v": "98.99",
+   "d": -4.1,
+   "ytd": 72.4,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17456,9 +17470,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,389.2",
-   "d": 1.02,
-   "ytd": 1.47,
+   "v": "4,391.8",
+   "d": 1.08,
+   "ytd": 1.53,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17480,9 +17494,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,414",
-   "d": -1.28,
-   "ytd": -1.61,
+   "v": "16,384",
+   "d": -1.46,
+   "ytd": -1.79,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -25962,35 +25976,13 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/1a744ae3f0_598e2ed743.pdf",
    "title_ko": "연간 사업보고서·지속가능경영 및 ESG 보고서 제출 (정정)",
    "title_id": "Penyampaian Laporan Tahunan & Keberlanjutan dan ESG (KOREKSI)"
-  },
-  {
-   "ts": "2026-09-08T17:20:18+07:00",
-   "date": "2026-09-08",
-   "time": "17:20",
-   "t": "IMPC",
-   "type": "STOCK",
-   "title": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-08092026-9363-00.pdf-0.pdf",
-   "title_ko": "상장법인 주식 보유 및 지분 변동 보고",
-   "title_id": "LAPORAN KEPEMILIKAN ATAU SETIAP PERUBAHAN KEPEMILIKAN SAHAM PERUSAHAAN TERBUKA"
-  },
-  {
-   "ts": "2026-09-08T17:18:42+07:00",
-   "date": "2026-09-08",
-   "time": "17:18",
-   "t": "REAL",
-   "type": "STOCK",
-   "title": "Keterbukaan informasi atas Laporan Informasi Transaksi Afiliasi berupa Perjanjian Pinjam Pakai Perseroan dengan PT Repower Global Sinergitama.",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/22c6a17ea3_7d48f6ae14.pdf",
-   "title_ko": "PT Repower Global Sinergitama와의 사용대차 계약 관련 특수관계자 거래 정보 공개",
-   "title_id": "Keterbukaan · Informasi Transaksi Afiliasi Perjanjian Pinjam Pakai Perseroan dengan PT Repower Global Sinergitama"
   }
  ],
  "sources": {
   "idx_index": true,
   "idx_market": true,
-  "idx_from_pc": "2026-09-11 17:18",
-  "pc_age_min": 4,
+  "idx_from_pc": "2026-09-11 17:25",
+  "pc_age_min": 6,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
