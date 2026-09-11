@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-11 23:08",
+ "updated": "2026-09-11 23:28",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,341 · 22:23 Yahoo",
- "idr_per_krw": 13.1308,
+ "fx_basis": "13.14 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,340 · 22:23 Yahoo",
+ "idr_per_krw": 13.1401,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -324,7 +324,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 23:07",
+   "asof": "investing.com 23:27",
    "unit": "bp"
   }
  ],
@@ -15031,10 +15031,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7673.96,
+   "px": 7667.02,
    "prev": 7591.7,
-   "pct": 1.08,
-   "asof": "23:05",
+   "pct": 0.99,
+   "asof": "23:25",
    "live": true,
    "spark": [
     7672.47,
@@ -15068,17 +15068,21 @@
     7668.51,
     7670.36,
     7675.2,
-    7673.96
+    7672.65,
+    7669.36,
+    7668.19,
+    7666.72,
+    7667.02
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26412.49,
+   "px": 26369.85,
    "prev": 26081.72,
-   "pct": 1.27,
-   "asof": "23:05",
+   "pct": 1.1,
+   "asof": "23:25",
    "live": true,
    "spark": [
     26364.04,
@@ -15112,17 +15116,21 @@
     26386.66,
     26388.97,
     26414.08,
-    26412.49
+    26410.4,
+    26392.95,
+    26383.74,
+    26370.31,
+    26369.85
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52601.74,
+   "px": 52591.32,
    "prev": 52064.1,
-   "pct": 1.03,
-   "asof": "23:05",
+   "pct": 1.01,
+   "asof": "23:25",
    "live": true,
    "spark": [
     52691.44,
@@ -15156,7 +15164,11 @@
     52569.28,
     52587.63,
     52611.52,
-    52601.74
+    52599.28,
+    52585.27,
+    52593.4,
+    52595.02,
+    52591.32
    ]
   },
   {
@@ -16480,9 +16492,45 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-11T23:07:35.569426+07:00",
+   "ts": "2026-09-11T23:21:53+07:00",
    "date": "2026-09-11",
-   "time": "23:07",
+   "time": "23:21",
+   "src": "CNBC",
+   "t": "Analysis: Hot inflation data sets up a Fed rate hike. What happens if Warsh wavers",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/kevin-warsh-fed-cpi-inflation-rate-hike-analysis.html",
+   "g": 1,
+   "t_ko": "물가 상승세에 연준 금리 인상 전망 확산 — Warsh 발언 영향 주목",
+   "t_id": "Analisis: Data Inflasi Panas Picu Kenaikan Suku Bunga The Fed, Apa yang Terjadi Jika Warsh Ragu"
+  },
+  {
+   "ts": "2026-09-11T23:21:45+07:00",
+   "date": "2026-09-11",
+   "time": "23:21",
+   "src": "CNBC",
+   "t": "U.S. crude oil falls back below $100 but heads to weekly gain",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/oil-price-today-iran-brent-wti-trump.html",
+   "g": 1,
+   "t_ko": "미국 원유, 100달러 아래로 하락했으나 주간 단위는 상승세",
+   "t_id": "Minyak Mentah AS Turun Lagi di Bawah USD100 tapi Menuju Penguatan Mingguan"
+  },
+  {
+   "ts": "2026-09-11T23:17:25+07:00",
+   "date": "2026-09-11",
+   "time": "23:17",
+   "src": "Bloomberg",
+   "t": "Cantor Co‑CEO: AI Capex Will Drive Trillions in New Debt",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-11/cantor-co-ceo-ai-capex-will-drive-trillions-in-new-debt-video",
+   "g": 1,
+   "t_ko": "Cantor Co-CEO, AI 설비투자로 수조 달러 규모 신규 부채 발생 전망",
+   "t_id": "Co-CEO Cantor: Belanja Modal AI Picu Utang Baru Triliunan Dolar"
+  },
+  {
+   "ts": "2026-09-11T23:17:18+07:00",
+   "date": "2026-09-11",
+   "time": "23:17",
    "src": "Jawa Pos",
    "t": "Bahil Jamin Pertalite-Solar Subsidi Tidak Naik meski Harga Minyak Dunia Melonjak",
    "tags": [],
@@ -16493,16 +16541,132 @@
    "t_id": "Bahil Jamin Pertalite-Solar Subsidi Tidak Naik meski Harga Minyak Dunia Melonjak"
   },
   {
-   "ts": "2026-09-11T23:05:06+07:00",
+   "ts": "2026-09-11T23:17:00+07:00",
    "date": "2026-09-11",
-   "time": "23:05",
-   "src": "CNBC",
-   "t": "Oil prices fall after double-digit weekly gains above $100",
+   "time": "23:17",
+   "src": "MarketWatch",
+   "t": "How rising bond yields can wreck some portfolios while pumping up others with cash",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/oil-price-today-iran-brent-wti-trump.html",
+   "url": "https://www.marketwatch.com/story/how-rising-bond-yields-can-wreck-some-portfolios-while-pumping-up-others-with-cash-c415faf3?mod=mw_rss_topstories",
    "g": 1,
-   "t_ko": "유가, 주간 두 자릿수 급등 100달러 선 위에서 하락 전환",
-   "t_id": "Harga Minyak Turun Usai Kenaikan Mingguan Dua Digit di Atas $100"
+   "img": "https://images.mktw.net/im-33880082",
+   "t_ko": "채권금리 상승, 일부 포트폴리오 타격인 반면 현금 확보 기회인 이유",
+   "t_id": "Alasan Kenaikan Imbal Hasil Obligasi Hancurkan Sebagian Portofolio Sekaligus Genjot Kas Portofolio Lain"
+  },
+  {
+   "ts": "2026-09-11T23:16:31+07:00",
+   "date": "2026-09-11",
+   "time": "23:16",
+   "src": "Bloomberg",
+   "t": "Cantor’s 9/11 Charity Day",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-11/cantor-s-9-11-charity-day-video",
+   "g": 1,
+   "t_ko": "Cantor, 9/11 자선 기부의 날 개최",
+   "t_id": "Hari Amal 9/11 Cantor"
+  },
+  {
+   "ts": "2026-09-11T23:16:23+07:00",
+   "date": "2026-09-11",
+   "time": "23:16",
+   "src": "CNBC",
+   "t": "Jim Cramer calls an AI data center stock a buy, offers a level to buy a household name",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/11/jim-cramer-calls-an-ai-data-center-stock-a-buy-offers-a-level-to-buy-a-household-name.html",
+   "g": 1,
+   "t_ko": "Jim Cramer, AI 데이터센터주 매수 추천 및 주요 종목 매수 가격대 제시",
+   "t_id": "Jim Cramer Sebut Saham Pusat Data AI Layak Beli, Beri Titik Masuk untuk Saham Blue Chip"
+  },
+  {
+   "ts": "2026-09-11T23:12:07+07:00",
+   "date": "2026-09-11",
+   "time": "23:12",
+   "src": "Yahoo Finance",
+   "t": "The Dividend Stocks That Generate $6,400 Tax-Free Inside a Roth (And What They Cost You in a Taxable Account)",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/dividend-stocks-generate-6-400-161207596.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/10a63478d5ee37bb0d2105a3d7269db6.jpg",
+   "t_ko": "비과세 계좌에서 비과세 배당금 연 840만 원 창출 고배당주 분석",
+   "t_id": "Saham Dividen yang Hasilkan USD6.400 Bebas Pajak di Dalam Roth (Serta Biayanya di Akun Kena Pajak)"
+  },
+  {
+   "ts": "2026-09-11T23:07:21+07:00",
+   "date": "2026-09-11",
+   "time": "23:07",
+   "src": "Yahoo Finance",
+   "t": "High-Grade Monthly: Summer sprint continues post-Labor Day as rates soar",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/high-grade-monthly-summer-sprint-160721899.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/pitchbook_790/29c03a0cfc17df5e6efec04dccc29c56.jpg",
+   "t_ko": "우량채 월간 리포트: 노동절 이후 금리 급등 속 여름철 발행 랠리 지속",
+   "t_id": "Buletin Bulanan High-Grade: Laju Musim Panas Berlanjut Pasca-Hari Buruh Seiring Lonjakan Suku Bunga"
+  },
+  {
+   "ts": "2026-09-11T23:07:00+07:00",
+   "date": "2026-09-11",
+   "time": "23:07",
+   "src": "WSJ",
+   "t": "How PayPal’s CEO Is Planning to Go It Alone and Fix the Payments Giant",
+   "tags": [],
+   "url": "https://www.wsj.com/finance/banking/how-paypals-ceo-is-planning-to-go-it-alone-and-fix-the-payments-giant-ec0daf22?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-01976322",
+   "t_ko": "PayPal 대표, 단독 경영 및 결제 대기업 정상화 계획 공개",
+   "t_id": "Strategi CEO PayPal untuk Mandiri dan Perbaiki Raksasa Pembayaran"
+  },
+  {
+   "ts": "2026-09-11T23:03:45+07:00",
+   "date": "2026-09-11",
+   "time": "23:03",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Dow Rallies On Surprise Inflation Data; Apple Jumps, Nears All-Time High (Live Coverage)",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-cpi-inflation-report-oracle-stock-orcl/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/55ca4252bd7c66820fc61ce444908e68.jpg",
+   "t_ko": "뉴욕증시, 예상 밖 물가 지표에 다우 상승…Apple 사상 최고가 육박",
+   "t_id": "Bursa Saham Hari Ini: Dow Reli Berkat Data Inflasi Mengejutkan; Apple Melesat, Nyaris Rekor Tertinggi"
+  },
+  {
+   "ts": "2026-09-11T23:03:43+07:00",
+   "date": "2026-09-11",
+   "time": "23:03",
+   "src": "Yahoo Finance",
+   "t": "Stock Of The Day: AI Energy Play Bloom Energy Nears Buy Point, S&P 500 Entry",
+   "tags": [],
+   "url": "https://www.investors.com/research/ibd-stock-of-the-day/bloom-energy-stock-buy-point-sp-500/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/be5eae8b4cc2e958d8b55635f8749ebc.png",
+   "t_ko": "오늘의 종목: AI 에너지주 Bloom Energy 매수점 육박 및 S&P 500 편입 기대",
+   "t_id": "Saham Pilihan Hari Ini: Pemain Energi AI Bloom Energy Dekati Titik Beli, Masuk S&P 500"
+  },
+  {
+   "ts": "2026-09-11T23:03:28+07:00",
+   "date": "2026-09-11",
+   "time": "23:03",
+   "src": "FT",
+   "t": "Iran and Gulf states to meet in push for Hormuz deal",
+   "tags": [],
+   "url": "https://www.ft.com/content/df2d9bcc-59f9-4122-aa4d-2020bef77e0e?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F95923f1d-41ed-472e-959b-4cba3fe31efe.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "이란-걸프 국가, 호르무즈 협상 위해 회동 추진",
+   "t_id": "Iran dan Negara Teluk Gelar Pertemuan untuk Kesepakatan Selat Hormuz"
+  },
+  {
+   "ts": "2026-09-11T22:59:47+07:00",
+   "date": "2026-09-11",
+   "time": "22:59",
+   "src": "Yahoo Finance",
+   "t": "Why Oracle's 'Solid' Results Aren't Giving Its Stock A Big Boost",
+   "tags": [],
+   "url": "https://www.investors.com/news/technology/oracle-stock-orcl-ai-q1-earnings/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/a1f7f3bfc3e004368b3fea50a0972710.jpg",
+   "t_ko": "Oracle, '견조한' 실적에도 주가 상승 제한적인 배경",
+   "t_id": "Alasan Kinerja 'Solid' Oracle Tak Beri Dorongan Signifikan pada Sahamnya"
   },
   {
    "ts": "2026-09-11T22:54:47+07:00",
@@ -16515,18 +16679,6 @@
    "g": 1,
    "t_ko": "2026년 8월 물가 지표 세부 내용 — 한눈에 보기",
    "t_id": "Rincian Inflasi AS Agustus 2026 dalam Satu Grafik"
-  },
-  {
-   "ts": "2026-09-11T22:53:41+07:00",
-   "date": "2026-09-11",
-   "time": "22:53",
-   "src": "CNBC",
-   "t": "Analysis: Hot inflation data sets up a Fed rate hike. What happens if Warsh wavers",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/11/kevin-warsh-fed-cpi-inflation-rate-hike-analysis.html",
-   "g": 1,
-   "t_ko": "물가 상승세에 연준 금리 인상 전망 확산 — Warsh 발언 영향 주목",
-   "t_id": "Analisis: Data Inflasi Panas Picu Kenaikan Suku Bunga The Fed, Apa yang Terjadi Jika Warsh Ragu"
   },
   {
    "ts": "2026-09-11T22:53:36+07:00",
@@ -16553,71 +16705,6 @@
    "t_id": "Kapolri Dorong Keseimbangan Keberlangsungan Usaha dan Kesejahteraan Buruh"
   },
   {
-   "ts": "2026-09-11T22:49:37+07:00",
-   "date": "2026-09-11",
-   "time": "22:49",
-   "src": "Yahoo Finance",
-   "t": "Amgen vs. Revolution Medicines: Which Healthcare Stock Is a Better Buy in 2026?",
-   "tags": [],
-   "url": "https://finance.yahoo.com/healthcare/articles/amgen-vs-revolution-medicines-healthcare-154937143.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/361150b5027085adfae8578a3c1a9afa.png",
-   "t_ko": "Amgen vs Revolution Medicines: 2026년 유망 헬스케어 주식",
-   "t_id": "Amgen vs. Revolution Medicines: Mana Saham Kesehatan yang Lebih Layak Dibeli pada 2026?"
-  },
-  {
-   "ts": "2026-09-11T22:49:05+07:00",
-   "date": "2026-09-11",
-   "time": "22:49",
-   "src": "Yahoo Finance",
-   "t": "Bloom Energy Climbs 7% as Fuel Cell Bid Spreads Beyond Its S&P 500 Add, FuelCell Energy Rises 4%, Plug Power Inches Higher",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/bloom-energy-climbs-7-fuel-154905251.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/55e3353744e930ccab7cee5c3cc1a1df.jpg",
-   "t_ko": "Bloom Energy, S&P 500 편입 호재 확산에 연료전지주 동반 상승",
-   "t_id": "Bloom Energy Naik 7% Saat Tawaran Sel Bahan Bakar Meluas Lewat Penambahan S&P 500, FuelCell Energy Naik 4%, Plug Power Menguat Tipis"
-  },
-  {
-   "ts": "2026-09-11T22:47:55+07:00",
-   "date": "2026-09-11",
-   "time": "22:47",
-   "src": "Yahoo Finance",
-   "t": "Cognizant Says AI Creates Jobs, Its Own Restructuring Says Otherwise",
-   "tags": [],
-   "url": "https://finance.yahoo.com/technology/ai/articles/cognizant-says-ai-creates-jobs-154755236.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/8de5bf63520ca4f46e1c0f504176ac1a.jpg",
-   "t_ko": "Cognizant, AI 고용 창출 주장과 달리 구조조정 단행",
-   "t_id": "Cognizant Sebut AI Ciptakan Lapangan Kerja, Restrukturisasinya Ungkap Hal Berbeda"
-  },
-  {
-   "ts": "2026-09-11T22:40:05+07:00",
-   "date": "2026-09-11",
-   "time": "22:40",
-   "src": "Yahoo Finance",
-   "t": "Qualcomm’s AWS Deal Takes Aim at Nvidia, But Comes With Fine Print",
-   "tags": [],
-   "url": "https://finance.yahoo.com/technology/ai/articles/qualcomm-aws-deal-takes-aim-154005241.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/3cf97f3bcb223259b55a6001d813cf69.jpg",
-   "t_ko": "Qualcomm의 AWS 제휴, Nvidia 겨냥했으나 세부 조건 주목",
-   "t_id": "Kesepakatan AWS Qualcomm Bidik Nvidia, Namun Disertai Catatan Kritis"
-  },
-  {
-   "ts": "2026-09-11T22:39:54+07:00",
-   "date": "2026-09-11",
-   "time": "22:39",
-   "src": "Yahoo Finance",
-   "t": "Fed Rate Hike Close To A Lock; Clarity Act Vote Looms: Week Ahead",
-   "tags": [],
-   "url": "https://www.investors.com/research/investing-action-plan/federal-reserve-rate-hike-close-to-clarity-act-vote-salesforce-dreamforce/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/9921841ccca9cd2d4d0ea0d78790362b.jpg",
-   "t_ko": "연준 금리 인상 확실시 속 Clarity Act 표결 대기 — 이번 주 일정",
-   "t_id": "Kenaikan Suku Bunga The Fed Nyaris Pasti; Pemungutan Suara Undang-Undang Kejelasan Menanti: Pekan Ini"
-  },
-  {
    "ts": "2026-09-11T22:35:53+07:00",
    "date": "2026-09-11",
    "time": "22:35",
@@ -16640,83 +16727,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/05/distribusi-bbm-dipantau-real-time-pakai-sistem-ini-1780624468628_169.jpeg?w=360&q=90",
    "t_ko": "Kapuas강 수위 저하에 육로로 연료 공급 전환",
    "t_id": "Sungai Kapuas Dangkal, Pasokan BBM Beralih Lewat Jalur Darat"
-  },
-  {
-   "ts": "2026-09-11T22:30:00+07:00",
-   "date": "2026-09-11",
-   "time": "22:30",
-   "src": "Yahoo Finance",
-   "t": "Elon Musk dismisses Bernie Sanders's 5% wealth tax, says 99% of his trillion-dollar fortune is in stock — not cash",
-   "tags": [],
-   "url": "https://finance.yahoo.com/economy/policy/articles/elon-musk-dismisses-bernie-sanderss-153000728.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/moneywise_327/99774d6258f21e455fe4901616138b48.jpg",
-   "t_ko": "Elon Musk, Bernie Sanders 5% 부유세 비판 — 자산 99%는 주식",
-   "t_id": "Elon Musk Tolak Pajak Kekayaan 5% Bernie Sanders, Sebut 99% Kekayaan Triliun Dolar Miliknya Berupa Saham, Bukan Kas"
-  },
-  {
-   "ts": "2026-09-11T22:27:46+07:00",
-   "date": "2026-09-11",
-   "time": "22:27",
-   "src": "Bloomberg",
-   "t": "Hassett Sees Fiscally Responsible Path to $5,000 Payment",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-11/hassett-sees-fiscally-responsible-path-to-5-000-payment-video",
-   "g": 1,
-   "t_ko": "Hassett, 5,000달러 지급을 위한 재정 건전성 확보 방안 제시",
-   "t_id": "Hassett Lihat Jalur Fiskal Bertanggung Jawab untuk Pembayaran $5.000"
-  },
-  {
-   "ts": "2026-09-11T22:26:00+07:00",
-   "date": "2026-09-11",
-   "time": "22:26",
-   "src": "Yahoo Finance",
-   "t": "Metaplanet Slashes Series 10 Share Pool by 41% Amid Dilution Concerns",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/metaplanet-slashes-series-10-share-152600328.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/cryptoprowl_304/4fa233a1cfe87f0b568a3d77853f012b.jpg",
-   "t_ko": "Metaplanet, 희석 우려에 제10차 신주발행 41% 축소",
-   "t_id": "Metaplanet Pangkas Kumpulan Saham Seri 10 Sebesar 41% Di Tengah Kekhawatiran Dilusi"
-  },
-  {
-   "ts": "2026-09-11T22:25:00+07:00",
-   "date": "2026-09-11",
-   "time": "22:25",
-   "src": "Detik",
-   "t": "Inalum Raih Peringkat BBB- Outlook Stabil dari S&P Global Ratings",
-   "tags": [],
-   "url": "https://finance.detik.com/bursa-dan-valas/d-8659205/inalum-raih-peringkat-bbb-outlook-stabil-dari-s-p-global-ratings",
-   "g": 1,
-   "img": "https://akcdn.detik.net.id/community/media/visual/2018/07/23/be3f0f6e-fa8e-4aed-811f-e215e26918b3_169.jpeg?w=360&q=90",
-   "t_ko": "Inalum, S&P Global Ratings서 신용등급 BBB- 및 안정적 전망 획득",
-   "t_id": "Inalum Raih Peringkat BBB- Outlook Stabil dari S&P Global Ratings"
-  },
-  {
-   "ts": "2026-09-11T22:23:00+07:00",
-   "date": "2026-09-11",
-   "time": "22:23",
-   "src": "MarketWatch",
-   "t": "Forget the Fed. The Bank of Japan could deliver next week’s market shock.",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/forget-the-fed-the-bank-of-japan-could-deliver-next-weeks-market-shock-bd8d56d7?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-69599389",
-   "t_ko": "미국 연준보다 일본은행의 다음 주 시장 충격 예고",
-   "t_id": "Lupakan The Fed, Bank of Japan Bisa Picu Kejutan Pasar Pekan Depan"
-  },
-  {
-   "ts": "2026-09-11T22:21:52+07:00",
-   "date": "2026-09-11",
-   "time": "22:21",
-   "src": "Yahoo Finance",
-   "t": "Stock Market Today: Dow Rallies On Surprise Inflation Data; These Tech Names Lead This List (Live Coverage)",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-cpi-inflation-report-oracle-stock-orcl/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/55ca4252bd7c66820fc61ce444908e68.jpg",
-   "t_ko": "미국증시, 예상 밖 물가 지표에 기술주 주도 상승",
-   "t_id": "Bursa Saham Hari Ini: Dow Menguat Berkat Data Inflasi Kejutan; Saham Teknologi Ini Pimpin Daftar (Liputan Langsung)"
   },
   {
    "ts": "2026-09-11T21:54:32+07:00",
@@ -16849,17 +16859,6 @@
    "t_id": "Indonesia-Hong Kong Jajaki Pengembangan Rantai Pasok SAF"
   },
   {
-   "ts": "2026-09-11T20:53:00+07:00",
-   "date": "2026-09-11",
-   "time": "20:53",
-   "src": "Media Indonesia",
-   "t": "BPS Manfaatkan Sensus Ekonomi 2026 untuk Perkuat DTSEN",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932457/bps-manfaatkan-sensus-ekonomi-2026-untuk-perkuat-dtsen",
-   "t_ko": "BPS, 2026년 경제총조사 활용해 DTSEN 강화",
-   "t_id": "BPS Manfaatkan Sensus Ekonomi 2026 untuk Perkuat DTSEN"
-  },
-  {
    "ts": "2026-09-11T20:43:58+07:00",
    "date": "2026-09-11",
    "time": "20:43",
@@ -16918,6 +16917,18 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/11/president-director-asuransi-astra-maximiliaan-agatisianus-nanda-prayogajawaposcom-RkbDj.webp",
    "t_ko": "Asuransi Astra, 사기 탐지용 AI 개발 — 무검증 자동화 목표",
    "t_id": "Asuransi Astra Kembangkan AI untuk Deteksi Fraud, Ditargetkan Otomatis Tanpa Verifikasi"
+  },
+  {
+   "ts": "2026-09-11T20:00:41+07:00",
+   "date": "2026-09-11",
+   "time": "20:00",
+   "src": "Detik",
+   "t": "Pengusaha Dorong Pariwisata RI Jadi Mesin Ekonomi",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8658971/pengusaha-dorong-pariwisata-ri-jadi-mesin-ekonomi",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/01/kunjungan-wisman-meroket-pariwisata-indonesia-kembali-bergairah-1764594419975_169.jpeg?w=360&q=90",
+   "t_ko": "재계, 인도네시아 관광업을 핵심 성장동력으로 육성 촉구",
+   "t_id": "Pengusaha Dorong Pariwisata RI Jadi Mesin Ekonomi"
   }
  ],
  "kisi_news": [
@@ -17101,9 +17112,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.940%",
-   "d": -0.08,
-   "ytd": 18.66,
+   "v": "4.950%",
+   "d": 0.12,
+   "ytd": 18.9,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17124,9 +17135,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.09",
-   "d": -0.06,
-   "ytd": 0.82,
+   "v": "99.08",
+   "d": -0.07,
+   "ytd": 0.81,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17136,9 +17147,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "99.61",
-   "d": -3.5,
-   "ytd": 73.48,
+   "v": "99.85",
+   "d": -3.26,
+   "ytd": 73.89,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17148,9 +17159,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,407.6",
-   "d": 1.44,
-   "ytd": 1.9,
+   "v": "4,403.4",
+   "d": 1.34,
+   "ytd": 1.8,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -25664,7 +25675,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 335,
+  "pc_age_min": 355,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
