@@ -1,8 +1,8 @@
 {
  "mode": "live",
- "updated": "2026-09-13 12:10",
+ "updated": "2026-09-13 14:10",
  "delay_min": 0,
- "fx_basis": "13.11 IDR/KRW · USD/IDR 17,595 · USD/KRW 1,342 · 12:10 Yahoo",
+ "fx_basis": "13.11 IDR/KRW · USD/IDR 17,595 · USD/KRW 1,342 · 14:10 Yahoo",
  "idr_per_krw": 13.1071,
  "indices": [
   {
@@ -325,7 +325,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 12:09",
+   "asof": "investing.com 14:09",
    "unit": "bp"
   }
  ],
@@ -338,12 +338,12 @@
   "m1": 4.36,
   "value_idr": 14712675309883,
   "volume": 28617128161,
-  "rank_src": "Yahoo 15분 지연 · 827종목 · 종가 · 외국인·공시 PC 09-11 17:33",
+  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-11 17:33",
   "rank_asof": null,
   "rank_date": "2026-09-11",
   "adv": 197,
   "dec": 471,
-  "unch": 159,
+  "unch": 160,
   "foreign_net_idr": -728667450249.4258,
   "foreign_buy": 3991314699946.703,
   "foreign_sell": 4719982150196.129,
@@ -4146,6 +4146,22 @@
    "lo": 3280.0,
    "ratio": 0.4,
    "fnet": -1362076514.8883374,
+   "live": 0
+  },
+  {
+   "t": "ACES",
+   "n": "Aspirasi Hidup Indonesia",
+   "px": 352.0,
+   "prev": 352.0,
+   "pct": 0.0,
+   "val": 6023927333.333334,
+   "vol": 17178500.0,
+   "sh": 17120389700,
+   "mcap": 6026377174400.0,
+   "hi": 352.0,
+   "lo": 348.0,
+   "ratio": 0.8,
+   "fnet": -1448883688.5455656,
    "live": 0
   },
   {
@@ -14569,11 +14585,11 @@
   {
    "name": "경기소비재",
    "name_id": "Konsumen Non-Primer",
-   "n": 134,
+   "n": 135,
    "adv": 36,
    "dec": 77,
-   "val": 952975597199.9999,
-   "mcap": 407269370371373.0,
+   "val": 958999524533.3333,
+   "mcap": 413295747545773.0,
    "top": [
     {
      "t": "VKTR",
@@ -14616,7 +14632,7 @@
      "pct": -1.49
     }
    ],
-   "pct": -0.68
+   "pct": -0.67
   },
   {
    "name": "필수소비재",
@@ -15533,6 +15549,48 @@
  },
  "news": [
   {
+   "ts": "2026-09-13T13:50:13+07:00",
+   "date": "2026-09-13",
+   "time": "13:50",
+   "src": "Detik",
+   "t": "Elnusa Petrofin Tambah Armada dan Personel untuk Distribusi BBM Makassar",
+   "tags": [
+    "ELSA"
+   ],
+   "url": "https://finance.detik.com/energi/d-8660837/elnusa-petrofin-tambah-armada-dan-personel-untuk-distribusi-bbm-makassar",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/13/ilustrasi-mobil-tanki-bbm-1789282198001_169.jpeg?w=360&q=90",
+   "t_id": "Elnusa Petrofin Tambah Armada dan Personel untuk Distribusi BBM Makassar",
+   "t_ko": "Elnusa Petrofin, 마카사르 연료 유통용 차량 및 인력 확충"
+  },
+  {
+   "ts": "2026-09-13T13:00:00+07:00",
+   "date": "2026-09-13",
+   "time": "13:00",
+   "src": "IDX Channel",
+   "t": "David Audy Ditunjuk Jadi Presiden Komisaris DSSA, Gantikan Franky Osman Widjaja",
+   "tags": [
+    "DSSA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/david-audy-ditunjuk-jadi-presiden-komisaris-dssa-gantikan-franky-osman-widjaja",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/13/dssa.jpg",
+   "t_id": "David Audy Ditunjuk Jadi Presiden Komisaris DSSA, Gantikan Franky Osman Widjaja",
+   "t_ko": "DSSA, David Audy 신임 이사회의장 선임 — Franky Osman Widjaja 후임"
+  },
+  {
+   "ts": "2026-09-13T12:10:41+07:00",
+   "date": "2026-09-13",
+   "time": "12:10",
+   "src": "Liputan6",
+   "t": "Laba Bersih Emiten LIFE Melonjak 69% di Semester I 2026",
+   "tags": [
+    "LIFE"
+   ],
+   "url": "https://www.liputan6.com/saham/read/8290674/laba-bersih-emiten-life-melonjak-69-di-semester-i-2026",
+   "img": "https://cdn1-production-images-kly.akamaized.net/LV27VQIYJeo74c7gaNMZ2hXN3wU=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9347064/original/005463600_1789268964-banner.jpg",
+   "t_id": "Laba Bersih Emiten LIFE Melonjak 69% di Semester I 2026",
+   "t_ko": "LIFE, 2026년 상반기 순이익 69% 급증"
+  },
+  {
    "ts": "2026-09-13T12:00:00+07:00",
    "date": "2026-09-13",
    "time": "12:00",
@@ -15571,8 +15629,8 @@
     "BBCA"
    ],
    "url": "https://mediaindonesia.com/ekonomi/932809/bca-dan-ekosistem-blibli-tiket-hadirkan-kartu-kredit-one-card-more-rewards-temani-setiap-experience",
-   "t_id": "BCA dan Ekosistem Blibli Tiket Hadirkan Kartu Kredit “One Card More Rewards” Temani Setiap Experience",
-   "t_ko": "BCA, 블리블리·티켓 생태계 연계 'One Card More Rewards' 신용카드 출시"
+   "t_ko": "BCA, 블리블리·티켓 생태계 연계 'One Card More Rewards' 신용카드 출시",
+   "t_id": "BCA dan Ekosistem Blibli Tiket Hadirkan Kartu Kredit “One Card More Rewards” Temani Setiap Experience"
   },
   {
    "ts": "2026-09-13T10:30:00+07:00",
@@ -15585,8 +15643,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121382/laba-bersih-antm-tumbuh-34-margin-makin-tebal",
    "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250411084849.jpeg",
-   "t_id": "Laba Bersih ANTM Tumbuh 34%, Margin Makin Tebal",
-   "t_ko": "ANTM, 순이익 34% 증가 및 마진 확대"
+   "t_ko": "ANTM, 순이익 34% 증가 및 마진 확대",
+   "t_id": "Laba Bersih ANTM Tumbuh 34%, Margin Makin Tebal"
   },
   {
    "ts": "2026-09-13T08:19:57+07:00",
@@ -16411,6 +16469,115 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-13T14:00:51+07:00",
+   "date": "2026-09-13",
+   "time": "14:00",
+   "src": "Detik",
+   "t": "Alat Masak Diobral di Transmart Full Day Sale, Serbu!",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660560/alat-masak-diobral-di-transmart-full-day-sale-serbu",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/13/transmart-full-day-sale-1789268876966_169.png?w=360&q=90",
+   "t_id": "Alat Masak Diobral di Transmart Full Day Sale, Serbu!",
+   "t_ko": "Transmart Full Day Sale, 주방용품 할인 판매 실시"
+  },
+  {
+   "ts": "2026-09-13T14:00:00+07:00",
+   "date": "2026-09-13",
+   "time": "14:00",
+   "src": "Republika",
+   "t": "Investor Kripto Jangan Hanya Lihat Harga, Ini yang Perlu Dicermati",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tla99e416/investor-kripto-jangan-hanya-lihat-harga-ini-yang-perlu-dicermati",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/uang-kripto_211029094238-547.jpg",
+   "t_id": "Investor Kripto Jangan Hanya Lihat Harga, Ini yang Perlu Dicermati",
+   "t_ko": "가상자산 투자자, 가격 외 주의 깊게 살펴야 할 사항"
+  },
+  {
+   "ts": "2026-09-13T13:56:16+07:00",
+   "date": "2026-09-13",
+   "time": "13:56",
+   "src": "Detik",
+   "t": "Integrasi BRI, Pegadaian, dan PNM Berhasil Dorong Jutaan UMKM Naik Kelas",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660858/integrasi-bri-pegadaian-dan-pnm-berhasil-dorong-jutaan-umkm-naik-kelas",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/13/holding-ultra-mikro-1789282469790_169.jpeg?w=360&q=90",
+   "t_id": "Integrasi BRI, Pegadaian, dan PNM Berhasil Dorong Jutaan UMKM Naik Kelas",
+   "t_ko": "BRI·Pegadaian·PNM 통합, 수백만 개 영세기업 성장에 기여"
+  },
+  {
+   "ts": "2026-09-13T13:42:07+07:00",
+   "date": "2026-09-13",
+   "time": "13:42",
+   "src": "Detik",
+   "t": "Kementan Gandeng UGM-BRIN Perkuat Hilirisasi Hortikultura untuk Ekspor",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660812/kementan-gandeng-ugm-brin-perkuat-hilirisasi-hortikultura-untuk-ekspor",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/13/kementan-1789281598186_169.jpeg?w=360&q=90",
+   "t_id": "Kementan Gandeng UGM-BRIN Perkuat Hilirisasi Hortikultura untuk Ekspor",
+   "t_ko": "농림부, UGM·BRIN과 손잡고 수출용 원예 가공 산업 강화"
+  },
+  {
+   "ts": "2026-09-13T13:29:44+07:00",
+   "date": "2026-09-13",
+   "time": "13:29",
+   "src": "Detik",
+   "t": "Harga Emas Antam Loyo, Turun Sedalam Ini Sepekan",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660644/harga-emas-antam-loyo-turun-sedalam-ini-sepekan",
+   "g": 1,
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/10/21/harga-emas-antam-meroket-hari-ini-nyaris-rp-25-juta-per-gram-1761021329828_169.jpeg?w=360&q=90",
+   "t_id": "Harga Emas Antam Loyo, Turun Sedalam Ini Sepekan",
+   "t_ko": "Antam 금 가격, 일주일 새 약세로 하락"
+  },
+  {
+   "ts": "2026-09-13T13:07:11+07:00",
+   "date": "2026-09-13",
+   "time": "13:07",
+   "src": "Detik",
+   "t": "Kapal Tanker Pertamina Ikut Evakuasi Korban Kapal Virgo Transport",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8660762/kapal-tanker-pertamina-ikut-evakuasi-korban-kapal-virgo-transport",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/13/kapal-tanker-mt-mauhau-milik-pt-pertamina-patra-niaga-1789279293016_169.jpeg?w=360&q=90",
+   "t_ko": "Pertamina 유조선, Virgo Transport호 조난자 구조 동참",
+   "t_id": "Kapal Tanker Pertamina Ikut Evakuasi Korban Kapal Virgo Transport"
+  },
+  {
+   "ts": "2026-09-13T12:36:18+07:00",
+   "date": "2026-09-13",
+   "time": "12:36",
+   "src": "Jawa Pos",
+   "t": "Pertamina Terapkan Ganjil-Genap dan tambah Pasokan, Antrean BBM di Makassar Melandai",
+   "tags": [],
+   "url": "https://www.jawapos.com/energi/2609130196/pertamina-terapkan-ganjil-genap-dan-tambah-pasokan-antrean-bbm-di-makassar-melandai",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/13/antrean-pengisian-bbm-di-kota-makassar-perlahan-melandai-usai-pertamina-menerapkan-sistem-ganjil-genap-dan-menambah-pasokan-minggu-139-istimewa-cjrv3.webp",
+   "t_id": "Pertamina Terapkan Ganjil-Genap dan tambah Pasokan, Antrean BBM di Makassar Melandai",
+   "t_ko": "Pertamina, 차량 부제 및 공급 확대 시행해 마카사르 연료 대기 줄어들어"
+  },
+  {
+   "ts": "2026-09-13T12:30:49+07:00",
+   "date": "2026-09-13",
+   "time": "12:30",
+   "src": "Detik",
+   "t": "Harga Cabai Rawit Makin Pedas, Tembus Rp 90 Ribu/Kg",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660638/harga-cabai-rawit-makin-pedas-tembus-rp-90-ribu-kg",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/02/20/cabai-rawit-merah-mengalir-ke-pasar-induk-kramat-jati-1771573533145_169.jpeg?w=360&q=90",
+   "t_ko": "홍고추 가격 급등, 킬로그램당 Rp9만 돌파",
+   "t_id": "Harga Cabai Rawit Makin Pedas, Tembus Rp 90 Ribu/Kg"
+  },
+  {
+   "ts": "2026-09-13T12:10:00+07:00",
+   "date": "2026-09-13",
+   "time": "12:10",
+   "src": "Katadata",
+   "t": "5 Tahun Berdiri, Holding Ultra Mikro Dorong Jutaan UMKM Naik Kelas",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/korporasi/6aa6303e4d2f9/5-tahun-berdiri-holding-ultra-mikro-dorong-jutaan-umkm-naik-kelas",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/13/BRI-2026_09_13-12_05_48_0e2d672841ea4e1e0fb694d4eb95d19f_620x413_thumb.jpeg",
+   "t_id": "5 Tahun Berdiri, Holding Ultra Mikro Dorong Jutaan UMKM Naik Kelas",
+   "t_ko": "울트라 마이크로 지주사 출범 5년, 영세기업 성장에 기여"
+  },
+  {
    "ts": "2026-09-13T12:00:00+07:00",
    "date": "2026-09-13",
    "time": "12:00",
@@ -16443,8 +16610,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tlacov370/pintu-futures-lite-dorong-perdagangan-derivatif-crypto-tumbuh-lebih-dari-200-persen",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260913113312-163.png",
-   "t_id": "Pintu Futures Lite Dorong Perdagangan Derivatif Crypto Tumbuh Lebih dari 200 Persen",
-   "t_ko": "Pintu Futures Lite, 암호화폐 파생상품 거래 200% 이상 성장 견인"
+   "t_ko": "Pintu Futures Lite, 암호화폐 파생상품 거래 200% 이상 성장 견인",
+   "t_id": "Pintu Futures Lite Dorong Perdagangan Derivatif Crypto Tumbuh Lebih dari 200 Persen"
   },
   {
    "ts": "2026-09-13T11:33:00+07:00",
@@ -16454,8 +16621,8 @@
    "t": "Kapal Virgo Transport 8 Hilang Kontak di Laut Jawa, Tim SAR Banjarmasin Mulai Pencarian",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/932822/kapal-virgo-transport-8-hilang-kontak-di-laut-jawa-tim-sar-banjarmasin-mulai-pencarian",
-   "t_id": "Kapal Virgo Transport 8 Hilang Kontak di Laut Jawa, Tim SAR Banjarmasin Mulai Pencarian",
-   "t_ko": "자바해서 실종된 Virgo Transport 8호, 반자르마신 SAR 수색 개시"
+   "t_ko": "자바해서 실종된 Virgo Transport 8호, 반자르마신 SAR 수색 개시",
+   "t_id": "Kapal Virgo Transport 8 Hilang Kontak di Laut Jawa, Tim SAR Banjarmasin Mulai Pencarian"
   },
   {
    "ts": "2026-09-13T11:30:09+07:00",
@@ -16467,8 +16634,8 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660466/prabowo-minta-institusi-keuangan-global-lebih-tanggap-ke-negara-berkembang",
    "g": 1,
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/12/presiden-prabowo-di-ktt-ke-18-brics-india-sabtu-1292026-1789218925039_169.jpeg?w=360&q=90",
-   "t_id": "Prabowo Minta Institusi Keuangan Global Lebih Tanggap ke Negara Berkembang",
-   "t_ko": "Prabowo, 글로벌 금융기관에 개도국 대응 강화 촉구"
+   "t_ko": "Prabowo, 글로벌 금융기관에 개도국 대응 강화 촉구",
+   "t_id": "Prabowo Minta Institusi Keuangan Global Lebih Tanggap ke Negara Berkembang"
   },
   {
    "ts": "2026-09-13T11:19:14+07:00",
@@ -16481,19 +16648,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/mentan-andi-amran-sulaiman-saat-peninjauan-lokasi-pembibitan-kopi-dan-kakao-di-desa-bangun-rejo-kabupaten-lampung-tengah-rabu-268-istimewa-LfZuc.webp",
    "t_ko": "Amran 농업장관, Prabowo 승인 받아 쌀 유통 비리 척결 시사",
    "t_id": "Mentan Amran Klaim Dapat Restu Prabowo Bongkar Mafia Beras"
-  },
-  {
-   "ts": "2026-09-13T11:00:12+07:00",
-   "date": "2026-09-13",
-   "time": "11:00",
-   "src": "FT",
-   "t": "Paris and Beirut push to extend UN peacekeepers’ mission in Lebanon",
-   "tags": [],
-   "url": "https://www.ft.com/content/681a9df8-ab39-4b9f-bc86-7dcf6f68a8c0",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fa691f8fd-44c0-46ed-b179-eb1b5972ebc6.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "파리·베이루트, 레바논 유엔 평화유지군 임무 연장 추진",
-   "t_id": "Paris dan Beirut Dorong Perpanjangan Misi Pasukan Perdamaian PBB di Lebanon"
   },
   {
    "ts": "2026-09-13T11:00:00+07:00",
@@ -16513,12 +16667,12 @@
    "date": "2026-09-13",
    "time": "10:33",
    "src": "Reuters",
-   "t": "Indonesia passenger ship with 243 people reported missing at sea, agency says",
+   "t": "Rescuers searching for 140 people after Indonesia passenger ship sinks, agency says",
    "tags": [],
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeG1Da244T0lHMENCalZmSktXZjd2UU1DLVFJdlktZjNTU0NHRVR4OHI2YnFPU2VwWFUzOHRDOTdTYmVBeFYwZC0wVERfcmUzSFdlcG1yMWdycDVyWDhZT1dpN1VCWEFReDQ2VWFnalQ1dGY3cjI0ZWYzd0pPTF9yRTBuNXRmTjN4cDk2YWlWNWRGYlpTaWdVdWItcmVUR2hiZEZWQXhFZ0FQLUNvQlRQNHBaU3ZqTVhIZkdSakctZTJfcDZMR2JZ?oc=5",
    "g": 1,
-   "t_ko": "인도네시아, 승객 243명 탑승 여객선 해상 실종 신고",
-   "t_id": "Kapal Penumpang Indonesia dengan 243 Orang Dilaporkan Hilang di Laut"
+   "t_ko": "인도네시아 여객선 침몰로 구조 당국 140명 수색 중",
+   "t_id": "Tim SAR Cari 140 Orang Usai Kapal Penumpang Indonesia Tenggelam"
   },
   {
    "ts": "2026-09-13T10:31:00+07:00",
@@ -16529,8 +16683,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tla77x423/bei-catat-perdagangan-sepekan-melemah-ihsg-berakhir-di-level-6541",
    "img": "https://static.republika.co.id/uploads/images/detailnews/002980800-1785491423-830-556.jpg",
-   "t_id": "BEI Catat Perdagangan Sepekan Melemah, IHSG Berakhir di Level 6.541",
-   "t_ko": "BEI 주간 증시 약세 마감 — IHSG 6,541로 후퇴"
+   "t_ko": "BEI 주간 증시 약세 마감 — IHSG 6,541로 후퇴",
+   "t_id": "BEI Catat Perdagangan Sepekan Melemah, IHSG Berakhir di Level 6.541"
   },
   {
    "ts": "2026-09-13T10:30:27+07:00",
@@ -16541,8 +16695,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660468/prabowo-di-ktt-brics-perdagangan-dan-mata-uang-jangan-jadi-senjata",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/12/presiden-prabowo-di-ktt-ke-18-brics-india-sabtu-1292026-1789218924969_169.jpeg?w=360&q=90",
-   "t_id": "Prabowo di KTT BRICS: Perdagangan dan Mata Uang Jangan Jadi Senjata!",
-   "t_ko": "Prabowo, BRICS 정상회의서 무역·통화 무기화 중단 촉구"
+   "t_ko": "Prabowo, BRICS 정상회의서 무역·통화 무기화 중단 촉구",
+   "t_id": "Prabowo di KTT BRICS: Perdagangan dan Mata Uang Jangan Jadi Senjata!"
   },
   {
    "ts": "2026-09-13T10:12:33+07:00",
@@ -16553,20 +16707,8 @@
    "tags": [],
    "url": "https://www.liputan6.com/saham/read/8290672/pendiri-oracle-larry-ellison-batal-lepas-50-juta-saham",
    "img": "https://cdn1-production-images-kly.akamaized.net/FkhIOICVCyZYgNI1TmrfwwSVyxM=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5354392/original/068395000_1758248186-063_1134817584.jpg",
-   "t_id": "Pendiri Oracle Larry Ellison Batal Lepas 50 Juta Saham",
-   "t_ko": "Oracle 창업자 Larry Ellison, 주식 5,000만 주 매각 철회"
-  },
-  {
-   "ts": "2026-09-13T10:11:00+07:00",
-   "date": "2026-09-13",
-   "time": "10:11",
-   "src": "Media Indonesia",
-   "t": "Prabowo Tegaskan Pentingnya Kekuatan Kolektif Merespons Dinamika Global",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/932797/prabowo-tegaskan-pentingnya-kekuatan-kolektif-merespons-dinamika-global",
-   "g": 1,
-   "t_ko": "Prabowo, 글로벌 정세 대응 위한 집단적 역량 강조",
-   "t_id": "Prabowo Tegaskan Pentingnya Kekuatan Kolektif Merespons Dinamika Global"
+   "t_ko": "Oracle 창업자 Larry Ellison, 주식 5,000만 주 매각 철회",
+   "t_id": "Pendiri Oracle Larry Ellison Batal Lepas 50 Juta Saham"
   },
   {
    "ts": "2026-09-13T10:07:48+07:00",
@@ -16748,80 +16890,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121377/christine-lagarde-sebut-guncangan-inflasi-akan-berlangsung-lama",
    "img": "https://images.bloombergtechnoz.com/data/2025/01/image-20250102064644.jpg",
-   "t_id": "Christine Lagarde Sebut Guncangan Inflasi Akan Berlangsung Lama",
-   "t_ko": "Christine Lagarde, 인플레이션 충격 장기화 경고"
-  },
-  {
-   "ts": "2026-09-13T08:00:00+07:00",
-   "date": "2026-09-13",
-   "time": "08:00",
-   "src": "Detik",
-   "t": "Kondisi Terkini Perbankan di RI",
-   "tags": [],
-   "url": "https://finance.detik.com/moneter/d-8660325/kondisi-terkini-perbankan-di-ri",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2024/12/12/ilustrasi-bank-1_169.jpeg?w=360&q=90",
-   "t_ko": "인도네시아 은행업 현황 점검",
-   "t_id": "Kondisi Terkini Perbankan di RI"
-  },
-  {
-   "ts": "2026-09-13T08:00:00+07:00",
-   "date": "2026-09-13",
-   "time": "08:00",
-   "src": "Republika",
-   "t": "Pesantren Baitul Arqom Kembangkan Pertanian dan Peternakan untuk Kemandirian Pangan",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tl9c40416/pesantren-baitul-arqom-kembangkan-pertanian-dan-peternakan-untuk-kemandirian-pangan",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260912222511-639.png",
-   "t_ko": "Pesantren Baitul Arqom, 식량 자립 위해 농축산업 육성",
-   "t_id": "Pesantren Baitul Arqom Kembangkan Pertanian dan Peternakan untuk Kemandirian Pangan"
-  },
-  {
-   "ts": "2026-09-13T07:49:31+07:00",
-   "date": "2026-09-13",
-   "time": "07:49",
-   "src": "Jawa Pos",
-   "t": "Jaringan Bisnis Indonesia-Singapura Diperluas untuk Buka Peluang Kerja Sama",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609130098/jaringan-bisnis-indonesia-singapura-diperluas-untuk-buka-peluang-kerja-sama",
-   "img": "https://cdn-assets.jawapos.com/images/1/2024/06/13/WhatsApp-Image-2024-06-13-at-101044-1075507218.jpeg",
-   "t_ko": "인도네시아-싱가포르, 협력 기회 확대 위해 비즈니스 네트워크 확장",
-   "t_id": "Jaringan Bisnis Indonesia-Singapura Diperluas untuk Buka Peluang Kerja Sama"
-  },
-  {
-   "ts": "2026-09-13T07:25:00+07:00",
-   "date": "2026-09-13",
-   "time": "07:25",
-   "src": "Detik",
-   "t": "Biang Kerok Panel Surya RI Masuk AS Digetok Tarif Selangit",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8660321/biang-kerok-panel-surya-ri-masuk-as-digetok-tarif-selangit",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/02/26/panel-surya-1772085802947_169.jpeg?w=360&q=90",
-   "t_ko": "인도산 태양광 패널의 미국 고율 관세 부과 배경",
-   "t_id": "Panel Surya Biang Kerok RI Masuk AS Terkena Tarif Selangit"
-  },
-  {
-   "ts": "2026-09-13T07:21:39+07:00",
-   "date": "2026-09-13",
-   "time": "07:21",
-   "src": "Bloomberg Technoz",
-   "t": "Sam Altman Pastikan OpenAI Tak IPO Tahun Ini",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121376/sam-altman-pastikan-openai-tak-ipo-tahun-ini",
-   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260911183514.jpg",
-   "t_ko": "Sam Altman, OpenAI 올해 기업공개 계획 부인",
-   "t_id": "Sam Altman Pastikan OpenAI Tak IPO Tahun Ini"
-  },
-  {
-   "ts": "2026-09-13T07:05:00+07:00",
-   "date": "2026-09-13",
-   "time": "07:05",
-   "src": "Reuters",
-   "t": "South Korea's expanded espionage law takes effect amid push to protect chip technology",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPeVc2VklDSTJqenp5QnFhX2s4NFg3SHlkMndlZ3dXT3NfdDhYUnlVMXU0eldKbktyWmNrUkRMZkw4bTJyMHE1cldIUDVKNk41clpBWjkyUlA4c2RMM1dONkZPZEZMTlpCTk5nMmxxcjVXcU50RXoxM2xWOGlLZWtlOE5iTUR6ZkNiaTVGbzVfdXJrNkZxT2ljamQ5MWNsQ0h3UHJLYWlxOG45YVlqa2FsOHRZbDlRbWprY19F?oc=5",
-   "g": 1,
-   "t_ko": "반도체 기술 보호 나선 한국, 확대된 간첩법 시행",
-   "t_id": "UU Spionase Perluasan Korsel Berlaku di Tengah Upaya Lindungi Teknologi Cip"
+   "t_ko": "Christine Lagarde, 인플레이션 충격 장기화 경고",
+   "t_id": "Christine Lagarde Sebut Guncangan Inflasi Akan Berlangsung Lama"
   },
   {
    "ts": "2026-09-13T07:00:00+07:00",
@@ -16834,18 +16904,6 @@
    "g": 1,
    "t_ko": "한국, 거래시간 연장으로 글로벌 투자자 수요 테스트",
    "t_id": "Korea Uji Minat Investor Global Lewat Perpanjangan Jam Perdagangan"
-  },
-  {
-   "ts": "2026-09-13T06:25:00+07:00",
-   "date": "2026-09-13",
-   "time": "06:25",
-   "src": "Detik",
-   "t": "Sederet Upaya Tangani Antrean Panjang di SPBU Kota Makassar",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8660319/sederet-upaya-tangani-antrean-panjang-di-spbu-kota-makassar",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/31/antrean-panjang-di-spbu-panaikang-makassar-1774960969096_169.jpeg?w=360&q=90",
-   "t_ko": "Makassar 주유소 장기 대기열 해소 대책 추진",
-   "t_id": "Sederet Upaya Tangani Antrean Panjang di SPBU Kota Makassar"
   }
  ],
  "kisi_news": [
@@ -17124,6 +17182,230 @@
   }
  ],
  "calendar": [
+  {
+   "date": "2026-08-31",
+   "time": "20:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Chicago PMI  (Aug)",
+   "imp": 3,
+   "exp": "57.8",
+   "prev": "57.6",
+   "act": "47.1",
+   "src": "investing.com",
+   "title_ko": "8월 시카고 PMI",
+   "title_id": "PMI Chicago (Agustus)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "07:30",
+   "kind": "macro",
+   "country": "ID",
+   "title": "S&P Global Manufacturing PMI  (Aug)",
+   "imp": 1,
+   "exp": "53.2",
+   "prev": "50.2",
+   "act": "49.8",
+   "src": "investing.com",
+   "title_ko": "8월 S&P Global 제조업 PMI",
+   "title_id": "PMI Manufaktur S&P Global AS (Agu)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "kind": "macro",
+   "country": "ID",
+   "title": "Core Inflation (YoY)  (Aug)",
+   "imp": 1,
+   "exp": "2.80%",
+   "prev": "2.76%",
+   "act": "2.92%",
+   "src": "investing.com",
+   "title_ko": "8월 근원 CPI (YoY)",
+   "title_id": "Inflasi Inti (YoY) (Agustus)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "kind": "macro",
+   "country": "ID",
+   "title": "Export Growth (YoY)  (Jul)",
+   "imp": 1,
+   "exp": "3.40%",
+   "prev": "8.84%",
+   "act": "6.05%",
+   "src": "investing.com",
+   "title_ko": "7월 수출 증가율 (YoY)",
+   "title_id": "Pertumbuhan Ekspor (YoY) (Juli)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "kind": "macro",
+   "country": "ID",
+   "title": "Import Growth (YoY)  (Jul)",
+   "imp": 1,
+   "exp": "24.10%",
+   "prev": "34.27%",
+   "act": "27.02%",
+   "src": "investing.com",
+   "title_ko": "7월 수입 증가율 (YoY)",
+   "title_id": "Pertumbuhan Impor (YoY) (Juli)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "kind": "macro",
+   "country": "ID",
+   "title": "Inflation (YoY)  (Aug)",
+   "imp": 1,
+   "exp": "3.13%",
+   "prev": "2.88%",
+   "act": "3.19%",
+   "src": "investing.com",
+   "title_ko": "8월 소비자물가 (YoY)",
+   "title_id": "Inflasi AS (YoY) (Agu)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "kind": "macro",
+   "country": "ID",
+   "title": "Trade Balance  (Jul)",
+   "imp": 1,
+   "exp": "-0.30B",
+   "prev": "-0.45B",
+   "act": "0.13B",
+   "src": "investing.com",
+   "title_ko": "7월 무역수지",
+   "title_id": "Neraca Perdagangan (Juli)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "20:05",
+   "kind": "macro",
+   "country": "US",
+   "title": "Fed Vice Chair for Supervision Barr Speaks",
+   "imp": 2,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "연준 Barr 감독담당 부의장 연설",
+   "title_id": "Pidato Wakil Ketua Pengawasan The Fed Barr"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "21:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "Construction Spending (MoM)  (Jul)",
+   "imp": 2,
+   "exp": "0.0%",
+   "prev": "0.0%",
+   "act": "-0.5%",
+   "src": "investing.com",
+   "title_ko": "건설지출 (MoM) (7월)",
+   "title_id": "Belanja Konstruksi (Bulanan) (Jul)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "21:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "ISM Manufacturing Employment  (Aug)",
+   "imp": 2,
+   "exp": "52.5",
+   "prev": "52.8",
+   "act": "51.2",
+   "src": "investing.com",
+   "title_ko": "ISM 제조업 채용 (8월)",
+   "title_id": "Ketenagakerjaan Manufaktur ISM (Agustus)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "21:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "JOLTS Job Openings  (Jul)",
+   "imp": 3,
+   "exp": "7.330M",
+   "prev": "7.182M",
+   "act": "7.271M",
+   "src": "investing.com",
+   "title_ko": "7월 JOLTS 구인건수",
+   "title_id": "Lowongan Kerja JOLTS AS (Jul)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "22:50",
+   "kind": "macro",
+   "country": "US",
+   "title": "Atlanta Fed GDPNow  (Q3)",
+   "imp": 2,
+   "exp": "4.6%",
+   "prev": "4.6%",
+   "act": "4.8%",
+   "src": "investing.com",
+   "title_ko": "3분기 애틀랜타 연은 GDPNow",
+   "title_id": "GDPNow The Fed Atlanta (Q3)"
+  },
+  {
+   "date": "2026-09-02",
+   "time": "03:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "API Weekly Crude Oil Stock",
+   "imp": 2,
+   "exp": "-0.800M",
+   "prev": "4.200M",
+   "act": "-2.600M",
+   "src": "investing.com",
+   "title_ko": "API 주간 원유 재고",
+   "title_id": "Stok Minyak Mentah Mingguan API"
+  },
+  {
+   "date": "2026-09-02",
+   "time": "19:15",
+   "kind": "macro",
+   "country": "US",
+   "title": "ADP Nonfarm Employment Change  (Aug)",
+   "imp": 3,
+   "exp": "47K",
+   "prev": "46K",
+   "act": "38K",
+   "src": "investing.com",
+   "title_ko": "8월 ADP 비농업 고용 변화",
+   "title_id": "Perubahan Ketenagakerjaan Nonpertanian ADP (Agustus)"
+  },
+  {
+   "date": "2026-09-02",
+   "time": "21:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "Factory Orders (MoM)  (Jul)",
+   "imp": 2,
+   "exp": "0.7%",
+   "prev": "-0.2%",
+   "act": "0.9%",
+   "src": "investing.com",
+   "title_ko": "공장수주 (MoM) (7월)",
+   "title_id": "Pesanan Pabrik (Bulanan) (Jul)"
+  },
+  {
+   "date": "2026-09-02",
+   "time": "21:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Crude Oil Inventories",
+   "imp": 3,
+   "exp": "-0.400M",
+   "prev": "0.095M",
+   "act": "-4.450M",
+   "src": "investing.com",
+   "title_ko": "EIA 원유 재고",
+   "title_id": "Stok Minyak Mentah EIA"
+  },
   {
    "date": "2026-09-03",
    "time": "01:00",
@@ -18431,26 +18713,12 @@
   },
   {
    "date": "2026-09-15",
-   "time": "19:15",
-   "kind": "macro",
-   "country": "US",
-   "title": "ADP Employment Change Weekly",
-   "imp": 2,
-   "exp": null,
-   "prev": "12.00K",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "ADP 주간 고용 변화",
-   "title_id": "Perubahan Tenaga Kerja Mingguan ADP AS"
-  },
-  {
-   "date": "2026-09-15",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "NY Empire State Manufacturing Index  (Sep)",
    "imp": 2,
-   "exp": "14.10",
+   "exp": null,
    "prev": "20.60",
    "act": null,
    "src": "investing.com",
@@ -18567,40 +18835,12 @@
   },
   {
    "date": "2026-09-16",
-   "time": "00:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "20-Year Bond Auction",
-   "imp": 2,
-   "exp": null,
-   "prev": "5.204%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "20년물 국채 입찰",
-   "title_id": "Lelang Obligasi AS Tenor 20 Tahun"
-  },
-  {
-   "date": "2026-09-16",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "API Weekly Crude Oil Stock",
-   "imp": 2,
-   "exp": null,
-   "prev": "-0.300M",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "API 주간 원유 재고",
-   "title_id": "Stok Minyak Mentah Mingguan API"
-  },
-  {
-   "date": "2026-09-16",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "Core Retail Sales (MoM)  (Aug)",
    "imp": 3,
-   "exp": "0.5%",
+   "exp": null,
    "prev": "-0.3%",
    "act": null,
    "src": "investing.com",
@@ -18628,7 +18868,7 @@
    "country": "US",
    "title": "Import Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.0%",
+   "exp": null,
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -18642,7 +18882,7 @@
    "country": "US",
    "title": "Retail Control (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.8%",
+   "exp": null,
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -18656,7 +18896,7 @@
    "country": "US",
    "title": "Business Inventories (MoM)  (Jul)",
    "imp": 2,
-   "exp": "0.2%",
+   "exp": null,
    "prev": "0.0%",
    "act": null,
    "src": "investing.com",
@@ -18670,7 +18910,7 @@
    "country": "US",
    "title": "Retail Inventories Ex Auto  (Jul)",
    "imp": 2,
-   "exp": "0.7%",
+   "exp": null,
    "prev": "0.7%",
    "act": null,
    "src": "investing.com",
@@ -18679,27 +18919,13 @@
   },
   {
    "date": "2026-09-16",
-   "time": "21:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Crude Oil Inventories",
-   "imp": 3,
-   "exp": null,
-   "prev": "-0.391M",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "EIA 원유 재고",
-   "title_id": "Stok Minyak Mentah EIA"
-  },
-  {
-   "date": "2026-09-16",
    "time": "22:30",
    "kind": "macro",
    "country": "US",
    "title": "Atlanta Fed GDPNow  (Q3)",
    "imp": 2,
-   "exp": "4.4%",
-   "prev": "4.4%",
+   "exp": null,
+   "prev": null,
    "act": null,
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
@@ -18810,26 +19036,12 @@
   },
   {
    "date": "2026-09-17",
-   "time": "01:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "FOMC Press Conference",
-   "imp": 3,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "FOMC 기자회견",
-   "title_id": "Konferensi Pers FOMC"
-  },
-  {
-   "date": "2026-09-17",
    "time": "03:00",
    "kind": "macro",
    "country": "US",
    "title": "TIC Net Long-Term Transactions  (Jul)",
    "imp": 2,
-   "exp": "146.3B",
+   "exp": null,
    "prev": "172.7B",
    "act": null,
    "src": "investing.com",
@@ -24988,7 +25200,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 2557,
+  "pc_age_min": 2677,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25006,6 +25218,20 @@
  "top_day": "2026-09-13",
  "top_news": [
   {
+   "ts": "2026-09-12T20:13:37+07:00",
+   "date": "2026-09-12",
+   "time": "09/12",
+   "src": "Detik",
+   "t": "Urai Antrean Panjang, Nozzle BBM Subsidi di 12 SPBU Ditambah",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8660169/urai-antrean-panjang-nozzle-bbm-subsidi-di-12-spbu-ditambah",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/antrean-bbm-di-spbu-urip-makassar-abadi-tamrindetikcom-1789109964200_169.jpeg?w=360&q=90",
+   "score": 10.5,
+   "srcs": 3,
+   "t_ko": "긴 대기열 해소 위해 SPBU 12곳에 보조금 연료 노즐 추가",
+   "t_id": "Urai Antrean Panjang, Nozzle BBM Subsidi di 12 SPBU Ditambah"
+  },
+  {
    "ts": "2026-09-13T00:10:00+07:00",
    "date": "2026-09-13",
    "time": "00:10",
@@ -25016,7 +25242,7 @@
    "g": 1,
    "img": "https://images.wsj.net/im-80025367",
    "score": 8.5,
-   "srcs": 4,
+   "srcs": 5,
    "t_ko": "Larry Ellison, 최대 75억 달러 규모 Oracle 주식 매각 계획 철회",
    "t_id": "Larry Ellison Batalkan Rencana Jual Saham Oracle hingga $7,5 Miliar"
   },
@@ -25061,20 +25287,6 @@
    "srcs": 1,
    "t_ko": "에너지 주도 인플레이션, 연준 금리 결정 복잡화",
    "t_id": "Inflasi Dorongan Energi Persulit Keputusan Suku Bunga The Fed"
-  },
-  {
-   "ts": "2026-09-12T20:13:37+07:00",
-   "date": "2026-09-12",
-   "time": "09/12",
-   "src": "Detik",
-   "t": "Urai Antrean Panjang, Nozzle BBM Subsidi di 12 SPBU Ditambah",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8660169/urai-antrean-panjang-nozzle-bbm-subsidi-di-12-spbu-ditambah",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/antrean-bbm-di-spbu-urip-makassar-abadi-tamrindetikcom-1789109964200_169.jpeg?w=360&q=90",
-   "score": 6.5,
-   "srcs": 1,
-   "t_ko": "긴 대기열 해소 위해 SPBU 12곳에 보조금 연료 노즐 추가",
-   "t_id": "Urai Antrean Panjang, Nozzle BBM Subsidi di 12 SPBU Ditambah"
   }
  ],
  "mcap": [
