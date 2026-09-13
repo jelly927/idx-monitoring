@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 03:05",
+ "updated": "2026-09-14 04:05",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,341 · 03:05 Yahoo",
- "idr_per_krw": 13.1285,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,344 · 04:05 Yahoo",
+ "idr_per_krw": 13.0982,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -325,7 +325,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 03:04",
+   "asof": "investing.com 04:03",
    "unit": "bp"
   }
  ],
@@ -338,11 +338,11 @@
   "m1": 4.36,
   "value_idr": 14712675309883,
   "volume": 28617128161,
-  "rank_src": "Yahoo 15분 지연 · 827종목 · 종가 · 외국인·공시 PC 09-11 17:33",
+  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-11 17:33",
   "rank_asof": null,
   "rank_date": "2026-09-11",
   "adv": 197,
-  "dec": 470,
+  "dec": 471,
   "unch": 160,
   "foreign_net_idr": -728667450249.4258,
   "foreign_buy": 3991314699946.703,
@@ -3586,6 +3586,22 @@
    "lo": 92.0,
    "ratio": 0.5,
    "fnet": 1794123224.9745672,
+   "live": 0
+  },
+  {
+   "t": "ASSA",
+   "n": "Adi Sarana Armada",
+   "px": 610.0,
+   "prev": 615.0,
+   "pct": -0.81,
+   "val": 9233283333.333334,
+   "vol": 15178000.0,
+   "sh": 3691137517,
+   "mcap": 2251593885370.0,
+   "hi": 615.0,
+   "lo": 600.0,
+   "ratio": 1.1,
+   "fnet": -826411584.7806035,
    "live": 0
   },
   {
@@ -14881,11 +14897,11 @@
   {
    "name": "운송·물류",
    "name_id": "Transportasi",
-   "n": 34,
+   "n": 35,
    "adv": 6,
-   "dec": 22,
-   "val": 82659002733.33334,
-   "mcap": 73067605592092.0,
+   "dec": 23,
+   "val": 91892286066.66667,
+   "mcap": 75319199477462.0,
    "top": [
     {
      "t": "GIAA",
@@ -14916,19 +14932,19 @@
      "pct": -0.93
     },
     {
+     "t": "ASSA",
+     "pct": -0.81
+    },
+    {
      "t": "IMJS",
      "pct": -1.61
     },
     {
      "t": "BLOG",
      "pct": 0
-    },
-    {
-     "t": "MITI",
-     "pct": 24.35
     }
    ],
-   "pct": -1.41
+   "pct": -1.39
   }
  ],
  "global": [
@@ -15766,20 +15782,6 @@
    "t_id": "RAJA Incar IPO 1-2 Anak Usaha pada 2027"
   },
   {
-   "ts": "2026-09-12T10:24:00+07:00",
-   "date": "2026-09-12",
-   "time": "09/12",
-   "src": "IDX Channel",
-   "t": "Harga Emas Antam (ANTM) Hari Ini Naik Jadi Rp2.604.000 per Gram, Intip Rinciannya",
-   "tags": [
-    "ANTM"
-   ],
-   "url": "https://www.idxchannel.com/market-news/harga-emas-antam-antm-hari-ini-naik-jadi-rp2604000-per-gram-intip-rinciannya",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2021/06/02/emas_antam.jpg",
-   "t_ko": "ANTM, 금 가격 그램당 Rp2,604,000으로 상승",
-   "t_id": "Harga Emas Antam (ANTM) Hari Ini Naik Jadi Rp2.604.000 per Gram, Intip Rinciannya"
-  },
-  {
    "ts": "2026-09-12T10:00:00+07:00",
    "date": "2026-09-12",
    "time": "09/12",
@@ -16356,6 +16358,31 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T03:33:39+07:00",
+   "date": "2026-09-14",
+   "time": "03:33",
+   "src": "Yahoo Finance",
+   "t": "Dow Jones Futures: Will Anthropic-Led Call For Slowdown Hit AI Stocks? Fed Meeting Aheadan, SpaceX's Musk Call For AI Slowdown",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-meeting-anthropic-amodei-openai-altman-spacex-musk-ai-model-slowdown/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/f7ca2e821746f269222d45df46364184.jpg",
+   "t_ko": "뉴욕증시 선물, AI 속도조절론에 영향 받을까 — 연준 회의 앞두고 주목",
+   "t_id": "Futures Dow Jones: Seruan Pembatasan AI Pimpin Anthropic Tekan Saham AI? Pertemuan Fed Menanti, Musk SpaceX Dorong Rem AI"
+  },
+  {
+   "ts": "2026-09-14T03:03:00+07:00",
+   "date": "2026-09-14",
+   "time": "03:03",
+   "src": "IDX Channel",
+   "t": "IHSG Pekan Depan Berpeluang Menguat Terbatas, Simak Analisa Tiga Saham Berikut",
+   "tags": [],
+   "url": "https://www.idxchannel.com/market-news/ihsg-pekan-depan-berpeluang-menguat-terbatas-simak-analisa-tiga-saham-berikut",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2025/09/12/IHSG.jpg",
+   "t_id": "IHSG Pekan Depan Berpeluang Menguat Terbatas, Simak Analisa Tiga Saham Berikut",
+   "t_ko": "다음 주 IHSG, 제한적 강세 전망 — 관심 종목 3선 분석"
+  },
+  {
    "ts": "2026-09-14T02:55:00+07:00",
    "date": "2026-09-14",
    "time": "02:55",
@@ -16381,30 +16408,17 @@
    "t_id": "Kembangkan Ekosistem EV, Pertamina Patra Niaga Ajak Produsen Mobil Listrik Bangun Charging Station"
   },
   {
-   "ts": "2026-09-14T02:46:00+07:00",
+   "ts": "2026-09-14T02:46:22+07:00",
    "date": "2026-09-14",
    "time": "02:46",
    "src": "Yahoo Finance",
-   "t": "Boeing Delivered 51 Jets in August. Here's Why the Stock is Finally Back Above $200.",
+   "t": "DraftKings and Flutter Jump After Court Rules Prediction Markets Are Gambling, Not Federally Regulated Trading",
    "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/boeing-delivered-51-jets-august-194600293.html",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/draftkings-flutter-jump-court-rules-194622553.html",
    "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/73126b8f5b6b1d50f407b0e6fd0a34a2.jpg",
-   "t_ko": "Boeing, 8월 항공기 51대 인도 — 주가 200달러 회복 배경",
-   "t_id": "Boeing Kirim 51 Pesawat di Agustus, Ini Alasan Sahamnya Akhirnya Tembus Lagi di Atas $200"
-  },
-  {
-   "ts": "2026-09-14T02:39:26+07:00",
-   "date": "2026-09-14",
-   "time": "02:39",
-   "src": "Yahoo Finance",
-   "t": "Dow Jones Futures: AI Stocks In Focus As Anthropic's Amodei, OpenAI's Altman, SpaceX's Musk Call For AI Slowdown",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-meeting-anthropic-amodei-openai-altman-spacex-musk-ai-model-slowdown/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/f7ca2e821746f269222d45df46364184.jpg",
-   "t_ko": "다우존스 선물: Anthropic·OpenAI·SpaceX CEO의 AI 속도 조절 요구에 AI주 주목",
-   "t_id": "Futures Dow Jones: Saham AI Disorot Saat Amodei Anthropic, Altman OpenAI, dan Musk SpaceX Serukan Perlambatan AI"
+   "img": "https://media.zenfs.com/en/insidermonkey.com/87f3829b939618c922f32349abb6ee41.jpg",
+   "t_ko": "예측 시장을 도박으로 규정한 법원 판결에 DraftKings·Flutter 급등",
+   "t_id": "DraftKings dan Flutter Melonjak Usai Putusan Pengadilan Sebut Pasar Prediksi Adalah Perjudian, Bukan Perdagangan Diatur Pusat"
   },
   {
    "ts": "2026-09-14T02:22:01+07:00",
@@ -16429,6 +16443,18 @@
    "g": 1,
    "t_ko": "오만, 이란·걸프 국가들과의 호르무즈 회의 연기 발표",
    "t_id": "Oman: Pertemuan Selat Hormuz dengan Iran dan Negara Teluk Ditunda"
+  },
+  {
+   "ts": "2026-09-14T02:14:32+07:00",
+   "date": "2026-09-14",
+   "time": "02:14",
+   "src": "Reuters",
+   "t": "Oman meeting between Gulf states and Iran postponed, Omani foreign minister says",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPT01mN2pHSkgtLWNGSFhGWm9vSDBvNjlLVVB5N2lFRnczZ012SW1pZDdxTXRmY2NZWmw2MmRiOEJPZ1ZNdklvMkgxbXlEQXd6a3ozbWNrLTNaLWlMekNhalBBQjZTSXhEZEItM0s5WUM2cGN5akN6SXRVZVJseUR1M2Q1X2RoM2VBMEFMZHNrdVU0VUZyU2k5eWEtalNvbGVjQk5sS1NkbUV1QThfaUxocWV5NkVmRDBLQmdrNXJBQmp1ckhHTDBOdQ?oc=5",
+   "g": 1,
+   "t_ko": "걸프국가-이란 오만 회의 연기 — 오만 외무장관",
+   "t_id": "Pertemuan Oman Antara Negara Teluk dan Iran Ditunda, Kata Menteri Luar Negeri Oman"
   },
   {
    "ts": "2026-09-14T02:13:28+07:00",
@@ -16576,18 +16602,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/jawapos/2022/02/perumahan-gresik.jpg",
    "t_ko": "PT BAS 주택담보대출 조작 의혹 — Indonesia Property Watch, 은행권 피해 우려 제기",
    "t_id": "Dugaan Manipulasi KPR PT BAS, Indonesia Property Watch: Bank Bisa Jadi Pihak yang Dirugikan"
-  },
-  {
-   "ts": "2026-09-13T23:59:20+07:00",
-   "date": "2026-09-13",
-   "time": "09/13",
-   "src": "Reuters",
-   "t": "Russia hits passenger train on Ukraine's border with Poland, just misses 'diplomatic train'",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMndlVi15QURjTkwwbUI2ZDhyMG5kcDZaV0I2OWh2ekl3eFdkbXpUa1cwSzRSZW4zRGE5Qk1EQzBKUG1KZHpDMmJEVXI4dUFVd2tzQUV3eUZSUXVhUXBPd3F5Z0F6MkFQZG5fbVVqYzFfeHBSSkJnUzY5Wk44UER2MmstalY3d3V6VklDMUlOWDd6dl85WS1pUF84NTRQQzVHV29nWk93algxckVB?oc=5",
-   "g": 1,
-   "t_ko": "러시아, 폴란드 국경 인근 우크라이나 여객열차 타격 — 외교 열차는 비켜가",
-   "t_id": "Rusia Serang Kereta Penumpang di Perbatasan Ukraina-Polandia, Nyaris Hantam Kereta Diplomatik"
   },
   {
    "ts": "2026-09-13T23:43:02+07:00",
@@ -16780,18 +16794,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/ilustrasi-kapal_250703111716-270.jpg",
    "t_ko": "KMP Virgo Transport 8, 차량 89대 싣고 운항… 적재량 집계 중",
    "t_id": "KMP Virgo Transport 8 Bawa 89 Kendaraan, Kondisi Muatan Masih Didata"
-  },
-  {
-   "ts": "2026-09-13T18:25:47+07:00",
-   "date": "2026-09-13",
-   "time": "09/13",
-   "src": "Republika",
-   "t": "Astra Financial dan OJK Kenalkan Literasi Keuangan di SiBakul Jogja Sport & Fest",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tlavqz416/astra-financial-dan-ojk-kenalkan-literasi-keuangan-di-sibakul-jogja-sport-fest",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260913182453-511.png",
-   "t_ko": "Astra Financial·OJK, SiBakul Jogja서 금융 교육",
-   "t_id": "Astra Financial dan OJK Kenalkan Literasi Keuangan di SiBakul Jogja Sport & Fest"
   }
  ],
  "kisi_news": [
@@ -25088,7 +25090,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 3452,
+  "pc_age_min": 3512,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25121,6 +25123,20 @@
    "t_id": "Inflasi AS Panas, Tekanan The Fed Naik Suku Bunga Meningkat"
   },
   {
+   "ts": "2026-09-13T07:21:39+07:00",
+   "date": "2026-09-13",
+   "time": "09/13",
+   "src": "Bloomberg Technoz",
+   "t": "Sam Altman Pastikan OpenAI Tak IPO Tahun Ini",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121376/sam-altman-pastikan-openai-tak-ipo-tahun-ini",
+   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260911183514.jpg",
+   "score": 9.5,
+   "srcs": 3,
+   "t_ko": "Sam Altman, OpenAI 올해 기업공개 계획 부인",
+   "t_id": "Sam Altman Pastikan OpenAI Tak IPO Tahun Ini"
+  },
+  {
    "ts": "2026-09-13T00:10:00+07:00",
    "date": "2026-09-13",
    "time": "09/13",
@@ -25148,20 +25164,6 @@
    "srcs": 2,
    "t_ko": "사우디 송유관 피습 이후 원유 공급 차질 리스크 고조",
    "t_id": "Risiko Pasokan Minyak Naik Usai Serangan Pipa Saudi"
-  },
-  {
-   "ts": "2026-09-13T07:21:39+07:00",
-   "date": "2026-09-13",
-   "time": "09/13",
-   "src": "Bloomberg Technoz",
-   "t": "Sam Altman Pastikan OpenAI Tak IPO Tahun Ini",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121376/sam-altman-pastikan-openai-tak-ipo-tahun-ini",
-   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260911183514.jpg",
-   "score": 7.5,
-   "srcs": 2,
-   "t_ko": "Sam Altman, OpenAI 올해 기업공개 계획 부인",
-   "t_id": "Sam Altman Pastikan OpenAI Tak IPO Tahun Ini"
   },
   {
    "ts": "2026-09-12T20:46:17+07:00",
