@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-13 10:12",
+ "updated": "2026-09-13 12:10",
  "delay_min": 0,
- "fx_basis": "13.13 IDR/KRW · USD/IDR 17,606 · USD/KRW 1,341 · 10:12 Yahoo",
- "idr_per_krw": 13.1285,
+ "fx_basis": "13.11 IDR/KRW · USD/IDR 17,595 · USD/KRW 1,342 · 12:10 Yahoo",
+ "idr_per_krw": 13.1071,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -275,9 +275,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17606.0,
+   "px": 17595.0,
    "prev": 17588.0,
-   "pct": 0.1,
+   "pct": 0.04,
    "spark": [
     17791.0,
     17822.0,
@@ -303,7 +303,7 @@
     17588.0,
     17501.0,
     17588.1,
-    17606.0
+    17595.0
    ],
    "inv": true,
    "asof": "Yahoo"
@@ -325,7 +325,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 10:11",
+   "asof": "investing.com 12:09",
    "unit": "bp"
   }
  ],
@@ -338,12 +338,12 @@
   "m1": 4.36,
   "value_idr": 14712675309883,
   "volume": 28617128161,
-  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-11 17:33",
+  "rank_src": "Yahoo 15분 지연 · 827종목 · 종가 · 외국인·공시 PC 09-11 17:33",
   "rank_asof": null,
   "rank_date": "2026-09-11",
   "adv": 197,
   "dec": 471,
-  "unch": 160,
+  "unch": 159,
   "foreign_net_idr": -728667450249.4258,
   "foreign_buy": 3991314699946.703,
   "foreign_sell": 4719982150196.129,
@@ -4146,22 +4146,6 @@
    "lo": 3280.0,
    "ratio": 0.4,
    "fnet": -1362076514.8883374,
-   "live": 0
-  },
-  {
-   "t": "ACES",
-   "n": "Aspirasi Hidup Indonesia",
-   "px": 352.0,
-   "prev": 352.0,
-   "pct": 0.0,
-   "val": 6023927333.333334,
-   "vol": 17178500.0,
-   "sh": 17120389700,
-   "mcap": 6026377174400.0,
-   "hi": 352.0,
-   "lo": 348.0,
-   "ratio": 0.8,
-   "fnet": -1448883688.5455656,
    "live": 0
   },
   {
@@ -14585,11 +14569,11 @@
   {
    "name": "경기소비재",
    "name_id": "Konsumen Non-Primer",
-   "n": 135,
+   "n": 134,
    "adv": 36,
    "dec": 77,
-   "val": 958999524533.3333,
-   "mcap": 413295747545773.0,
+   "val": 952975597199.9999,
+   "mcap": 407269370371373.0,
    "top": [
     {
      "t": "VKTR",
@@ -14632,7 +14616,7 @@
      "pct": -1.49
     }
    ],
-   "pct": -0.67
+   "pct": -0.68
   },
   {
    "name": "필수소비재",
@@ -15549,18 +15533,60 @@
  },
  "news": [
   {
-   "ts": "2026-09-13T08:41:00+07:00",
+   "ts": "2026-09-13T12:00:00+07:00",
    "date": "2026-09-13",
-   "time": "08:41",
-   "src": "IDX Channel",
-   "t": "Toba Pulp (INRU) Buka Suara Usai Jadi Tersangka Korupsi Transfer Pricing Oleh Kejagung",
+   "time": "12:00",
+   "src": "Bloomberg Technoz",
+   "t": "Negosiasi Prajogo Pangestu (CUAN) Ambil Alih SINI Berlanjut",
    "tags": [
-    "INRU"
+    "CUAN",
+    "SINI"
    ],
-   "url": "https://www.idxchannel.com/market-news/toba-pulp-inru-buka-suara-usai-jadi-tersangka-korupsi-transfer-pricing-oleh-kejagung",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2024/08/27/Toba_Pulp_Lestari.JPG",
-   "t_id": "Toba Pulp (INRU) Buka Suara Usai Jadi Tersangka Korupsi Transfer Pricing Oleh Kejagung",
-   "t_ko": "INRU, 검찰의 이전가격 부인 관련 기소에 공식 입장 표명"
+   "url": "https://www.bloombergtechnoz.com/detail-news/121385/negosiasi-prajogo-pangestu-cuan-ambil-alih-sini-berlanjut",
+   "img": "https://images.bloombergtechnoz.com/data/2024/01/image-20240110165255.jpg",
+   "t_ko": "Prajogo Pangestu(CUAN), SINI 인수 협상 지속",
+   "t_id": "Negosiasi Prajogo Pangestu (CUAN) Akuisisi SINI Berlanjut"
+  },
+  {
+   "ts": "2026-09-13T11:00:00+07:00",
+   "date": "2026-09-13",
+   "time": "11:00",
+   "src": "Bloomberg Technoz",
+   "t": "PACK Siapkan Aksi Korporasi Baru, Kerek Kapasitas Bijih Nikel",
+   "tags": [
+    "PACK"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121383/pack-siapkan-aksi-korporasi-baru-kerek-kapasitas-bijih-nikel",
+   "img": "https://images.bloombergtechnoz.com/data/2023/07/image-20230726105455.jpg",
+   "t_ko": "PACK, 니켈 원광 생산능력 확대를 위한 신규 기업행동 준비",
+   "t_id": "PACK Siapkan Aksi Korporasi, Genjot Kapasitas Bijih Nikel"
+  },
+  {
+   "ts": "2026-09-13T10:55:00+07:00",
+   "date": "2026-09-13",
+   "time": "10:55",
+   "src": "Media Indonesia",
+   "t": "BCA dan Ekosistem Blibli Tiket Hadirkan Kartu Kredit “One Card More Rewards” Temani Setiap Experience",
+   "tags": [
+    "BBCA"
+   ],
+   "url": "https://mediaindonesia.com/ekonomi/932809/bca-dan-ekosistem-blibli-tiket-hadirkan-kartu-kredit-one-card-more-rewards-temani-setiap-experience",
+   "t_id": "BCA dan Ekosistem Blibli Tiket Hadirkan Kartu Kredit “One Card More Rewards” Temani Setiap Experience",
+   "t_ko": "BCA, 블리블리·티켓 생태계 연계 'One Card More Rewards' 신용카드 출시"
+  },
+  {
+   "ts": "2026-09-13T10:30:00+07:00",
+   "date": "2026-09-13",
+   "time": "10:30",
+   "src": "Bloomberg Technoz",
+   "t": "Laba Bersih ANTM Tumbuh 34%, Margin Makin Tebal",
+   "tags": [
+    "ANTM"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121382/laba-bersih-antm-tumbuh-34-margin-makin-tebal",
+   "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250411084849.jpeg",
+   "t_id": "Laba Bersih ANTM Tumbuh 34%, Margin Makin Tebal",
+   "t_ko": "ANTM, 순이익 34% 증가 및 마진 확대"
   },
   {
    "ts": "2026-09-13T08:19:57+07:00",
@@ -15573,8 +15599,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8290633/emiten-aces-realisasikan-belanja-modal-rp-91-miliar-hingga-semester-i-2026",
    "img": "https://cdn0-production-images-kly.akamaized.net/60L-2j-zPUWR8w5DNnuCeQ_LbIk=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9347032/original/019739400_1789261182-AHI__ACES__Terus_Memperkuat_Produktivitas__Omnichannel_dan_Relevansi_Bisnis__2_.jpg",
-   "t_id": "Emiten ACES Realisasikan Belanja Modal Rp 91 Miliar hingga Semester I 2026",
-   "t_ko": "ACES, 2026년 상반기 설비투자 Rp910억 집행"
+   "t_ko": "ACES, 2026년 상반기 설비투자 Rp910억 집행",
+   "t_id": "Emiten ACES Realisasikan Belanja Modal Rp 91 Miliar hingga Semester I 2026"
   },
   {
    "ts": "2026-09-13T07:10:00+07:00",
@@ -15747,20 +15773,6 @@
    "t_id": "Morgan Stanley Lepas 829 Juta Saham GOTO, Sisakan Kepemilikan 5,51%"
   },
   {
-   "ts": "2026-09-12T08:00:00+07:00",
-   "date": "2026-09-12",
-   "time": "09/12",
-   "src": "Detik",
-   "t": "Karyawan Telkom Pindah dari Graha Merah Putih Setelah Disewa BGN",
-   "tags": [
-    "TLKM"
-   ],
-   "url": "https://finance.detik.com/bursa-dan-valas/d-8659250/karyawan-telkom-pindah-dari-graha-merah-putih-setelah-disewa-bgn",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/08/gedung-graha-merah-putih-telkom-1788843531235_169.jpeg?w=360&q=90",
-   "t_ko": "Telkom Indonesia, BGN에 사옥 임대로 Graha Merah Putih 직원 이전",
-   "t_id": "Karyawan Telkom Pindah dari Graha Merah Putih Setelah Disewa BGN"
-  },
-  {
    "ts": "2026-09-12T06:00:28+07:00",
    "date": "2026-09-12",
    "time": "09/12",
@@ -15856,8 +15868,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/ssms-berikan-bantuan-untuk-kegiatan-pemadaman-karhutla-di-kalimantan",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/11/ssms.jpg",
-   "t_id": "SSMS Berikan Bantuan untuk Kegiatan Pemadaman Karhutla di Kalimantan",
-   "t_ko": "SSMS, 칼리만탄 산불 진화 활동에 지원금 전달"
+   "t_ko": "SSMS, 칼리만탄 산불 진화 활동에 지원금 전달",
+   "t_id": "SSMS Berikan Bantuan untuk Kegiatan Pemadaman Karhutla di Kalimantan"
   },
   {
    "ts": "2026-09-11T22:00:00+07:00",
@@ -15930,20 +15942,6 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/HUwhaBGCjym8ug7jmKOE5UmZvYs=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9346067/original/043095500_1789108311-Screenshot__1094_.jpg",
    "t_ko": "RUIS, 화석연료 의존도 축소 위해 지열 포트폴리오 확대",
    "t_id": "Kurangi Ketergantungan Migas, Radiant Utama (RUIS) Pacu Portofolio Geotermal"
-  },
-  {
-   "ts": "2026-09-11T17:20:00+07:00",
-   "date": "2026-09-11",
-   "time": "09/11",
-   "src": "IDNFinancials",
-   "t": "PTPP restructures IDR 18.2 trillion debt with four state-owned banks",
-   "tags": [
-    "PTPP"
-   ],
-   "url": "https://www.idnfinancials.com/news/68716/ptpp-restructures-idr-18-2-trillion-debt-with-four-state-owned-banks",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/PTPP-02092026.jpg",
-   "t_ko": "PTPP, 국영은행 4곳과 Rp18.2조 채무 재조정",
-   "t_id": "PTPP Restrukturisasi Utang Rp18,2 T dengan Empat Bank BUMN"
   },
   {
    "ts": "2026-09-11T17:18:41+07:00",
@@ -16345,28 +16343,6 @@
    "ai_tags_id": []
   },
   {
-   "ts": "2026-09-10T07:48:13+07:00",
-   "date": "2026-09-10",
-   "time": "09/10",
-   "src": "Liputan6",
-   "t": "Emiten BBCA Ungkap Kembali Tebar Dividen Interim Desember 2026",
-   "tags": [
-    "BBCA"
-   ],
-   "url": "https://www.liputan6.com/saham/read/8288566/emiten-bbca-ungkap-kembali-tebar-dividen-interim-desember-2026",
-   "img": "https://cdn1-production-images-kly.akamaized.net/T_l9QXnm4N82cpQ1wcgk1xlPAag=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3626295/original/027885300_1636365579-8_november_2021-2.jpeg",
-   "t_ko": "BBCA, 12월 중간배당 재개 발표",
-   "t_id": "Emiten BBCA Ungkap Kembali Tebar Dividen Interim Desember 2026",
-   "ai_ko": "BCA(BBCA), 9월 16일 주당 Rp25의 2차 중간배당 지급 예정이며 6월 Rp20에서 증액, 3차 중간배당은 12월 실시 / 배당성향은 전년 68%에서 72%로 상승, 상반기 순이익은 1.8% 늘어난 Rp29.5조",
-   "ai_id": "BCA (BBCA) akan membagikan dividen interim termin kedua Rp25 per saham pada 16 September 2026, naik dari Rp20 per saham pada Juni, dengan termin ketiga dijadwalkan Desember 2026. Dividend payout ratio perseroan kini 72% dari 68% tahun sebelumnya, sementara laba bersih semester I 2026 tumbuh 1,8% menjadi Rp29,5 triliun.",
-   "ai_tags": [
-    "배당",
-    "은행",
-    "실적"
-   ],
-   "ai_tags_id": []
-  },
-  {
    "ts": "2026-08-24T08:33:00+07:00",
    "date": "2026-08-24",
    "time": "08/24",
@@ -16435,6 +16411,164 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-13T12:00:00+07:00",
+   "date": "2026-09-13",
+   "time": "12:00",
+   "src": "IDNFinancials",
+   "t": "Houthis control 'Gate of Tears' Strait, increasing pressure on Trump",
+   "tags": [],
+   "url": "https://www.idnfinancials.com/news/68762/houthis-control-gate-of-tears-strait-increasing-pressure-on-trump",
+   "g": 1,
+   "img": "https://photos.idnfinancials.com/_idn/adhi%202026/WAR%20WORD/bab%20el%20mandeb%201.jpg",
+   "t_ko": "후티 반군, 바브엘만데브 해협 통제권 장악하며 트럼프 압박",
+   "t_id": "Houthi Kuasai Selat Bab el-Mandeb, Tingkatkan Tekanan ke Trump"
+  },
+  {
+   "ts": "2026-09-13T11:45:00+07:00",
+   "date": "2026-09-13",
+   "time": "11:45",
+   "src": "Media Indonesia",
+   "t": "OJK Tutup 13 Bank, Pengamat Sebut Pertumbuhan Kredit Masih Kuat",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932824/ojk-tutup-13-bank-pengamat-sebut-pertumbuhan-kredit-masih-kuat",
+   "t_ko": "OJK, 13개 은행 폐쇄에도 대출 증가세 여전",
+   "t_id": "OJK Tutup 13 Bank, Pengamat Sebut Pertumbuhan Kredit Masih Kuat"
+  },
+  {
+   "ts": "2026-09-13T11:34:07+07:00",
+   "date": "2026-09-13",
+   "time": "11:34",
+   "src": "Republika",
+   "t": "Pintu Futures Lite Dorong Perdagangan Derivatif Crypto Tumbuh Lebih dari 200 Persen",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tlacov370/pintu-futures-lite-dorong-perdagangan-derivatif-crypto-tumbuh-lebih-dari-200-persen",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/_260913113312-163.png",
+   "t_id": "Pintu Futures Lite Dorong Perdagangan Derivatif Crypto Tumbuh Lebih dari 200 Persen",
+   "t_ko": "Pintu Futures Lite, 암호화폐 파생상품 거래 200% 이상 성장 견인"
+  },
+  {
+   "ts": "2026-09-13T11:33:00+07:00",
+   "date": "2026-09-13",
+   "time": "11:33",
+   "src": "Media Indonesia",
+   "t": "Kapal Virgo Transport 8 Hilang Kontak di Laut Jawa, Tim SAR Banjarmasin Mulai Pencarian",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932822/kapal-virgo-transport-8-hilang-kontak-di-laut-jawa-tim-sar-banjarmasin-mulai-pencarian",
+   "t_id": "Kapal Virgo Transport 8 Hilang Kontak di Laut Jawa, Tim SAR Banjarmasin Mulai Pencarian",
+   "t_ko": "자바해서 실종된 Virgo Transport 8호, 반자르마신 SAR 수색 개시"
+  },
+  {
+   "ts": "2026-09-13T11:30:09+07:00",
+   "date": "2026-09-13",
+   "time": "11:30",
+   "src": "Detik",
+   "t": "Prabowo Minta Institusi Keuangan Global Lebih Tanggap ke Negara Berkembang",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660466/prabowo-minta-institusi-keuangan-global-lebih-tanggap-ke-negara-berkembang",
+   "g": 1,
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/12/presiden-prabowo-di-ktt-ke-18-brics-india-sabtu-1292026-1789218925039_169.jpeg?w=360&q=90",
+   "t_id": "Prabowo Minta Institusi Keuangan Global Lebih Tanggap ke Negara Berkembang",
+   "t_ko": "Prabowo, 글로벌 금융기관에 개도국 대응 강화 촉구"
+  },
+  {
+   "ts": "2026-09-13T11:19:14+07:00",
+   "date": "2026-09-13",
+   "time": "11:19",
+   "src": "Jawa Pos",
+   "t": "Mentan Amran Klaim Dapat Restu Prabowo Bongkar Mafia Beras",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609130179/mentan-amran-klaim-dapat-restu-prabowo-bongkar-mafia-beras",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/mentan-andi-amran-sulaiman-saat-peninjauan-lokasi-pembibitan-kopi-dan-kakao-di-desa-bangun-rejo-kabupaten-lampung-tengah-rabu-268-istimewa-LfZuc.webp",
+   "t_ko": "Amran 농업장관, Prabowo 승인 받아 쌀 유통 비리 척결 시사",
+   "t_id": "Mentan Amran Klaim Dapat Restu Prabowo Bongkar Mafia Beras"
+  },
+  {
+   "ts": "2026-09-13T11:00:12+07:00",
+   "date": "2026-09-13",
+   "time": "11:00",
+   "src": "FT",
+   "t": "Paris and Beirut push to extend UN peacekeepers’ mission in Lebanon",
+   "tags": [],
+   "url": "https://www.ft.com/content/681a9df8-ab39-4b9f-bc86-7dcf6f68a8c0",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fa691f8fd-44c0-46ed-b179-eb1b5972ebc6.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "파리·베이루트, 레바논 유엔 평화유지군 임무 연장 추진",
+   "t_id": "Paris dan Beirut Dorong Perpanjangan Misi Pasukan Perdamaian PBB di Lebanon"
+  },
+  {
+   "ts": "2026-09-13T11:00:00+07:00",
+   "date": "2026-09-13",
+   "time": "11:00",
+   "src": "IDX Channel",
+   "t": "Harga Emas Dunia Pekan Depan Dipengaruhi Geopolitik Global",
+   "tags": [],
+   "url": "https://www.idxchannel.com/market-news/harga-emas-dunia-pekan-depan-dipengaruhi-geopolitik-global",
+   "g": 1,
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/03/17/emas_-_freepik_-_17_Mar_26.jpeg",
+   "t_ko": "다음 주 국제 금 가격, 글로벌 지정학적 리스크 영향 전망",
+   "t_id": "Harga Emas Dunia Pekan Depan Dipengaruhi Geopolitik Global"
+  },
+  {
+   "ts": "2026-09-13T10:33:00+07:00",
+   "date": "2026-09-13",
+   "time": "10:33",
+   "src": "Reuters",
+   "t": "Indonesia passenger ship with 243 people reported missing at sea, agency says",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQeG1Da244T0lHMENCalZmSktXZjd2UU1DLVFJdlktZjNTU0NHRVR4OHI2YnFPU2VwWFUzOHRDOTdTYmVBeFYwZC0wVERfcmUzSFdlcG1yMWdycDVyWDhZT1dpN1VCWEFReDQ2VWFnalQ1dGY3cjI0ZWYzd0pPTF9yRTBuNXRmTjN4cDk2YWlWNWRGYlpTaWdVdWItcmVUR2hiZEZWQXhFZ0FQLUNvQlRQNHBaU3ZqTVhIZkdSakctZTJfcDZMR2JZ?oc=5",
+   "g": 1,
+   "t_ko": "인도네시아, 승객 243명 탑승 여객선 해상 실종 신고",
+   "t_id": "Kapal Penumpang Indonesia dengan 243 Orang Dilaporkan Hilang di Laut"
+  },
+  {
+   "ts": "2026-09-13T10:31:00+07:00",
+   "date": "2026-09-13",
+   "time": "10:31",
+   "src": "Republika",
+   "t": "BEI Catat Perdagangan Sepekan Melemah, IHSG Berakhir di Level 6.541",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tla77x423/bei-catat-perdagangan-sepekan-melemah-ihsg-berakhir-di-level-6541",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/002980800-1785491423-830-556.jpg",
+   "t_id": "BEI Catat Perdagangan Sepekan Melemah, IHSG Berakhir di Level 6.541",
+   "t_ko": "BEI 주간 증시 약세 마감 — IHSG 6,541로 후퇴"
+  },
+  {
+   "ts": "2026-09-13T10:30:27+07:00",
+   "date": "2026-09-13",
+   "time": "10:30",
+   "src": "Detik",
+   "t": "Prabowo di KTT BRICS: Perdagangan dan Mata Uang Jangan Jadi Senjata!",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660468/prabowo-di-ktt-brics-perdagangan-dan-mata-uang-jangan-jadi-senjata",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/12/presiden-prabowo-di-ktt-ke-18-brics-india-sabtu-1292026-1789218924969_169.jpeg?w=360&q=90",
+   "t_id": "Prabowo di KTT BRICS: Perdagangan dan Mata Uang Jangan Jadi Senjata!",
+   "t_ko": "Prabowo, BRICS 정상회의서 무역·통화 무기화 중단 촉구"
+  },
+  {
+   "ts": "2026-09-13T10:12:33+07:00",
+   "date": "2026-09-13",
+   "time": "10:12",
+   "src": "Liputan6",
+   "t": "Pendiri Oracle Larry Ellison Batal Lepas 50 Juta Saham",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8290672/pendiri-oracle-larry-ellison-batal-lepas-50-juta-saham",
+   "img": "https://cdn1-production-images-kly.akamaized.net/FkhIOICVCyZYgNI1TmrfwwSVyxM=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5354392/original/068395000_1758248186-063_1134817584.jpg",
+   "t_id": "Pendiri Oracle Larry Ellison Batal Lepas 50 Juta Saham",
+   "t_ko": "Oracle 창업자 Larry Ellison, 주식 5,000만 주 매각 철회"
+  },
+  {
+   "ts": "2026-09-13T10:11:00+07:00",
+   "date": "2026-09-13",
+   "time": "10:11",
+   "src": "Media Indonesia",
+   "t": "Prabowo Tegaskan Pentingnya Kekuatan Kolektif Merespons Dinamika Global",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/932797/prabowo-tegaskan-pentingnya-kekuatan-kolektif-merespons-dinamika-global",
+   "g": 1,
+   "t_ko": "Prabowo, 글로벌 정세 대응 위한 집단적 역량 강조",
+   "t_id": "Prabowo Tegaskan Pentingnya Kekuatan Kolektif Merespons Dinamika Global"
+  },
+  {
    "ts": "2026-09-13T10:07:48+07:00",
    "date": "2026-09-13",
    "time": "10:07",
@@ -16443,7 +16577,7 @@
    "tags": [],
    "url": "https://www.channelnewsasia.com/business/speculators-turn-net-long-yen-first-time-february-6381026",
    "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--pYx9hnAA--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-13T030720Z_1_LYNXMPEM8C02C_RTROPTP_3_JAPAN-YEN-INTERVENTION.JPG?itok=afBzvgaj",
+   "img": "https://dam.mediacorp.sg/image/upload/s--NUFAIuRr--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-13T030931Z_2_LYNXMPEM8C02C_RTROPTP_3_JAPAN-YEN-INTERVENTION.JPG?itok=Jnhxe5Hl",
    "t_ko": "투기 세력, 2월 이후 처음으로 엔화 순매수로 전환",
    "t_id": "Spekulator Beralih Net Long Yen untuk Pertama Kali Sejak Februari"
   },
@@ -16456,8 +16590,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tla6ne423/brics-serukan-penyelesaian-konflik-secara-damai-dan-dorong-bursa-gandum",
    "img": "https://static.republika.co.id/uploads/images/detailnews/presiden-prabowo-subianto-saat-sesi-foto-bersama-di-ktt_250707112209-460.jpg",
-   "t_id": "BRICS Serukan Penyelesaian Konflik Secara Damai dan Dorong Bursa Gandum",
-   "t_ko": "BRICS, 분쟁의 평화적 해결 촉구 및 곡물 거래소 추진"
+   "t_ko": "BRICS, 분쟁의 평화적 해결 촉구 및 곡물 거래소 추진",
+   "t_id": "BRICS Serukan Penyelesaian Konflik Secara Damai dan Dorong Bursa Gandum"
   },
   {
    "ts": "2026-09-13T10:00:36+07:00",
@@ -16468,8 +16602,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660500/cuma-di-transmart-full-day-sale-beli-sepeda-semurah-ini",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/13/transmart-full-day-sale-1789266491312_169.png?w=360&q=90",
-   "t_id": "Cuma di Transmart Full Day Sale, Beli Sepeda Semurah Ini",
-   "t_ko": "Transmart Full Day Sale, 최저가 자전거 할인 판매"
+   "t_ko": "Transmart Full Day Sale, 최저가 자전거 할인 판매",
+   "t_id": "Cuma di Transmart Full Day Sale, Beli Sepeda Semurah Ini"
   },
   {
    "ts": "2026-09-13T09:54:57+07:00",
@@ -16504,8 +16638,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609130151/prediksi-rupiah-pekan-ini-dolar-as-menguat-rupiah-berpotensi-melemah",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/05/13/VgvTdmd5GM4KMfJBTNj1nhUpykwUmfhjCin39Ieu.webp",
-   "t_id": "Prediksi Rupiah Pekan Ini: Dolar AS Menguat, Rupiah Berpotensi Melemah",
-   "t_ko": "이번 주 루피아 환율 전망 — 미국 달러 강세에 약세 압력"
+   "t_ko": "이번 주 루피아 환율 전망 — 미국 달러 강세에 약세 압력",
+   "t_id": "Prediksi Rupiah Pekan Ini: Dolar AS Menguat, Rupiah Berpotensi Melemah"
   },
   {
    "ts": "2026-09-13T09:30:00+07:00",
@@ -16541,8 +16675,20 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8660463/turis-malaysia-paling-doyan-naik-whoosh-begini-datanya",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/26/penumpang-whoosh-naik-20-persen-saat-arus-balik-1774530670866_169.jpeg?w=360&q=90",
-   "t_id": "Turis Malaysia Paling Doyan Naik Whoosh, Begini Datanya",
-   "t_ko": "말레이시아 관광객 Whoosh 최다 이용 — 관련 통계 발표"
+   "t_ko": "말레이시아 관광객 Whoosh 최다 이용 — 관련 통계 발표",
+   "t_id": "Turis Malaysia Paling Doyan Naik Whoosh, Begini Datanya"
+  },
+  {
+   "ts": "2026-09-13T09:22:00+07:00",
+   "date": "2026-09-13",
+   "time": "09:22",
+   "src": "Reuters",
+   "t": "New report of attack on Strait of Hormuz shipping fans fears of threats to oil supplies",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUGctZFpGTW5Zd0h2OFl3V0FMR3o0MHVxNW5uSmN6cHpfNWRYRS1Sd0dibnUwUDRCY3VHejJlbUdNVkx6VmN3WTJQVGYtRjRHX1dWQllyQWl3TzEyWWoxY0JRaU45U0RMUTd0SHBvYmRLZmN4bjl3VF82emtKY1JiQzlsN3NqLThWcDk0UEdmaTlHWjJWd0k1b1VtVmVVUFpSZnFhSEZPUk9oeFlTeU5ZcTJKUlJUZjd6d3d2QWJiYmR2UQ?oc=5",
+   "g": 1,
+   "t_ko": "호르무즈 해협 선박 피습 보고에 원유 공급 차질 우려 고조",
+   "t_id": "Laporan Baru Serangan Pelayaran Selat Hormuz Picu Kekhawatiran Pasokan Minyak"
   },
   {
    "ts": "2026-09-13T08:52:19+07:00",
@@ -16554,8 +16700,8 @@
    "url": "https://www.jawapos.com/ekonomi/2609130120/prediksi-harga-emas-dunia-pekan-ini-berpotensi-bergerak-di-rentang-usd-4102-hingga-usd-4650",
    "g": 1,
    "img": "https://cdn-assets.jawapos.com/images/1/2025/08/25/Gold-205669545.jpg",
-   "t_id": "Prediksi Harga Emas Dunia Pekan Ini: Berpotensi Bergerak di Rentang USD 4.102 hingga USD 4.650",
-   "t_ko": "이번 주 국제 금가격 전망 — USD 4,102~USD 4.650 범위 등락 예상"
+   "t_ko": "이번 주 국제 금가격 전망 — USD 4,102~USD 4.650 범위 등락 예상",
+   "t_id": "Prediksi Harga Emas Dunia Pekan Ini: Berpotensi Bergerak di Rentang USD 4.102 hingga USD 4.650"
   },
   {
    "ts": "2026-09-13T08:45:56+07:00",
@@ -16578,8 +16724,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tla47l423/asuransi-astra-tetap-tumbuh-di-tengah-perlambatan-industri",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260913082513-704.png",
-   "t_id": "Asuransi Astra Tetap Tumbuh di Tengah Perlambatan Industri",
-   "t_ko": "업계 성장 둔화 속에서도 성장세 이어간 Asuransi Astra"
+   "t_ko": "업계 성장 둔화 속에서도 성장세 이어간 Asuransi Astra",
+   "t_id": "Asuransi Astra Tetap Tumbuh di Tengah Perlambatan Industri"
   },
   {
    "ts": "2026-09-13T08:25:17+07:00",
@@ -16598,12 +16744,12 @@
    "date": "2026-09-13",
    "time": "08:00",
    "src": "Bloomberg Technoz",
-   "t": "Christine Lagarde Sebut Guncangn Inflasi Akan Berlangsung Lama",
+   "t": "Christine Lagarde Sebut Guncangan Inflasi Akan Berlangsung Lama",
    "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121377/christine-lagarde-sebut-guncangn-inflasi-akan-berlangsung-lama",
+   "url": "https://www.bloombergtechnoz.com/detail-news/121377/christine-lagarde-sebut-guncangan-inflasi-akan-berlangsung-lama",
    "img": "https://images.bloombergtechnoz.com/data/2025/01/image-20250102064644.jpg",
-   "t_ko": "Christine Lagarde, 인플레이션 충격 장기화 전망",
-   "t_id": "Christine Lagarde Sebut Guncangn Inflasi Akan Berlangsung Lama"
+   "t_id": "Christine Lagarde Sebut Guncangan Inflasi Akan Berlangsung Lama",
+   "t_ko": "Christine Lagarde, 인플레이션 충격 장기화 경고"
   },
   {
    "ts": "2026-09-13T08:00:00+07:00",
@@ -16700,177 +16846,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/03/31/antrean-panjang-di-spbu-panaikang-makassar-1774960969096_169.jpeg?w=360&q=90",
    "t_ko": "Makassar 주유소 장기 대기열 해소 대책 추진",
    "t_id": "Sederet Upaya Tangani Antrean Panjang di SPBU Kota Makassar"
-  },
-  {
-   "ts": "2026-09-13T05:55:00+07:00",
-   "date": "2026-09-13",
-   "time": "05:55",
-   "src": "Detik",
-   "t": "Pertalite Tidak Naik hingga Akhir Tahun, Pertamax Bagaimana?",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8660308/pertalite-tidak-naik-hingga-akhir-tahun-pertamax-bagaimana",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/04/22/produk-bbm-di-spbu-pertamina-1776827152590_169.jpeg?w=360&q=90",
-   "t_ko": "Pertamina, 연말까지 Pertalite 가격 동결 — Pertamax는 미정",
-   "t_id": "Pertalite Tidak Naik hingga Akhir Tahun, Pertamax Bagaimana?"
-  },
-  {
-   "ts": "2026-09-13T05:30:39+07:00",
-   "date": "2026-09-13",
-   "time": "05:30",
-   "src": "Jawa Pos",
-   "t": "PLTP Gunung Ungaran Dinilai Berpotensi Dorong Ekonomi dan Kualitas Lingkungan",
-   "tags": [],
-   "url": "https://www.jawapos.com/energi/2609120457/pltp-gunung-ungaran-dinilai-berpotensi-dorong-ekonomi-dan-kualitas-lingkungan",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/12/pltp-gunung-ungaran-jawa-tengahdok-kementerian-esdm-TnDM6.webp",
-   "t_ko": "Gunung Ungaran 지열발전소, 경제 및 환경 개선 기여 전망",
-   "t_id": "PLTP Gunung Ungaran Dinilai Berpotensi Dorong Ekonomi dan Kualitas Lingkungan"
-  },
-  {
-   "ts": "2026-09-13T05:24:53+07:00",
-   "date": "2026-09-13",
-   "time": "05:24",
-   "src": "Jawa Pos",
-   "t": "Buka Service Center di Marunda, Perkuat Layanan Alat Berat di Indonesia",
-   "tags": [],
-   "url": "https://www.jawapos.com/bisnis/2609120454/buka-service-center-di-marunda-perkuat-layanan-alat-berat-di-indonesia",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/12/jajaran-shantui-bersama-mitra-dan-pelanggan-berfoto-bersama-di-depan-deretan-alat-berat-dalam-grand-opening-shantui-service-center-indonesia-di-marunda-jakarta-istimewa-SFg3M.webp",
-   "t_ko": "인도네시아 마룬다에 서비스센터 설립해 중장비 지원 강화",
-   "t_id": "Buka Service Center di Marunda, Perkuat Layanan Alat Berat di Indonesia"
-  },
-  {
-   "ts": "2026-09-13T05:09:58+07:00",
-   "date": "2026-09-13",
-   "time": "05:09",
-   "src": "Reuters",
-   "t": "Russian attacks kill 10, injure dozens in Ukraine; Russia says it hits ships, plants",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcjF5NXdIeXlKQWY5RXRJTmlfVjFfWlNwZm9TOVNOREUxcmUwTk9MRmFUbWZzQnhNZTY1V3d2R2hBZGhlU1ZOT1licGJRdzUwcXhEbmJGTEdkNi1xRUlQUGJ0VnN0MjFLMWJGem1Ta0hGZ21ILXQybi1nS0xuUGo0Wjkta0dzZjhNOUVGTFZNcWJqTURPRzI2bngtdjg1dnZSVUZ4WjZLeF9DWU91M1ZlQjRUZ1FaMjNBc0pEMUhTMnR2Mnh1b0dZ?oc=5",
-   "g": 1,
-   "t_ko": "러시아 우크라이나 공습으로 10명 사망·수십 명 부상 — 러시아, 선박·플랜트 타격 주장",
-   "t_id": "Serangan Rusia Tewaskan 10 Orang dan Lukai Puluhan di Ukraina; Moskow Klaim Hantam Kapal dan Pabrik"
-  },
-  {
-   "ts": "2026-09-13T04:00:31+07:00",
-   "date": "2026-09-13",
-   "time": "04:00",
-   "src": "Jawa Pos",
-   "t": "Mentan Sebut Kelangkaan BBM tak Pengaruhi Distribusi Pangan di Sulawesi Selatan",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609120383/mentan-sebut-kelangkaan-bbm-tak-pengaruhi-distribusi-pangan-di-sulawesi-selatan",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/03/mentan-andi-amran-sulaiman-istimewa-1c8BU.webp",
-   "t_ko": "남술라웨시 농무장관, 연료 부족이 식량 유통에 영향 없음 언급",
-   "t_id": "Mentan Sebut Kelangkaan BBM tak Pengaruhi Distribusi Pangan di Sulawesi Selatan"
-  },
-  {
-   "ts": "2026-09-13T02:16:35+07:00",
-   "date": "2026-09-13",
-   "time": "02:16",
-   "src": "Reuters",
-   "t": "Xi urges BRICS peace role in Middle East, courts Modi on India visit",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQb2hwaW9IeTRsWlZUMXI0TnRSYUhSM0ZNZVRXUHpQM0NKMHJIMlhJaFZZUUJYRE5PbEpvSjg4bDFxT0FVQUp1X0hHSUhOcXJjOFZpaDY3RmRMeFpFT0VaZVlQWG12ZlZJQ3BjdF9MMVJXYUxHV0xwQjVJWGstZWpJYWxlM2pmMzBCdFc5d1NCeE5IWENOUC1Id1ZfZGJDMkMwckY5Y082T2NLOEk?oc=5",
-   "g": 1,
-   "t_ko": "시진핑, 중동 평화 중재 BRICS 역할 촉구 및 인도 방문서 모디 총리 회동",
-   "t_id": "Xi Dorong Peran Perdamaian BRICS di Timur Tengah, Rangkul Modi dalam Kunjungan ke India"
-  },
-  {
-   "ts": "2026-09-13T01:38:45+07:00",
-   "date": "2026-09-13",
-   "time": "01:38",
-   "src": "Reuters",
-   "t": "Larry Ellison cancels plan to sell Oracle stock",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSDN2Q1FMZWstUm9pbTEyaFJBcmxMY2FiV0g2RFF2bGNISTEwVGE4RV9nZW1LcHBKU0luVjR2a0FUVGh2OElMdl92d2FjREhPbW1oMUlSRm5Mc19kR2xzclVHRnJaM21lR2N2NkNhSlpwN1ZZS1VPRjVmYThyb1dNV1JxQlIySG52dzJkcEpaTE12M1k?oc=5",
-   "g": 1,
-   "t_ko": "Larry Ellison, Oracle 주식 매각 계획 철회",
-   "t_id": "Larry Ellison Batalkan Rencana Jual Saham Oracle"
-  },
-  {
-   "ts": "2026-09-13T01:14:06+07:00",
-   "date": "2026-09-13",
-   "time": "01:14",
-   "src": "FT",
-   "t": "Rivals Altman and Musk rally behind Dario Amodei’s call for an AI slowdown",
-   "tags": [],
-   "url": "https://www.ft.com/content/31220b59-b0c6-401c-a146-2b7b5d138837?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F51ca86b7-81e2-40a8-937c-f4f2d43372db.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "Sam Altman과 Elon Musk, AI 개발 속도 조절 지지",
-   "t_id": "Saingan, Altman dan Musk Dukung Seruan Dario Amodei untuk Perlambatan AI"
-  },
-  {
-   "ts": "2026-09-13T00:58:51+07:00",
-   "date": "2026-09-13",
-   "time": "00:58",
-   "src": "Bloomberg",
-   "t": "SpaceX to Get Weighting Boost in Nasdaq 100 After Rebalance",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-12/spacex-to-get-weighting-boost-in-nasdaq-100-after-rebalance",
-   "g": 1,
-   "t_ko": "SpaceX, 나스닥 100 지수 리밸런싱으로 비중 확대",
-   "t_id": "SpaceX Raih Peningkatan Bobot di Nasdaq 100 Usai Rebalancing"
-  },
-  {
-   "ts": "2026-09-13T00:21:36+07:00",
-   "date": "2026-09-13",
-   "time": "00:21",
-   "src": "Reuters",
-   "t": "Ukraine braces for harsh winter as Russian attacks hit economy",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeDhWQzZ1XzNhR29sQnlqci1HYVJBcW9CM0RuMl9MVHRZbzJVSE1tLXllUGRVYUlVZjhfYS0xbmxfM0lGSEQwUHNsaE1YMDJWNFhHTDZwQ2VYS0JOTzAzd2lVTXFhUWJLTEc4blVyQjVNdUFuOG52M0VUV1oyTGY5aGlCUUJqYy16Z3REaHdJZ295UUxXNmREMElhcEJIUQ?oc=5",
-   "g": 1,
-   "t_ko": "우크라이นา, 러시아 공습에 따른 혹독한 겨울 대비",
-   "t_id": "Ukraina Bersiap Hadapi Musim Dingin Ekstrem saat Serangan Rusia Hantam Ekonomi"
-  },
-  {
-   "ts": "2026-09-13T00:18:43+07:00",
-   "date": "2026-09-13",
-   "time": "00:18",
-   "src": "FT",
-   "t": "Larry Ellison cancels $7.5bn Oracle share sale",
-   "tags": [],
-   "url": "https://www.ft.com/content/05e61eb8-9273-4b9a-a356-47f525b7d506?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F140fc6a3-fd4e-412a-88d9-eb49cbd00759.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "Larry Ellison, 75억 달러 규모 Oracle 주식 매각 취소",
-   "t_id": "Larry Ellison Batalkan Penjualan Saham Oracle $7,5 Miliar"
-  },
-  {
-   "ts": "2026-09-13T00:14:56+07:00",
-   "date": "2026-09-13",
-   "time": "00:14",
-   "src": "CNBC",
-   "t": "Larry Ellison nixes plan to offload up to $7.5 billion worth of Oracle stock",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/12/larry-ellison-nixes-plan-to-offload-up-to-7point5-billion-worth-of-oracle-stock-.html",
-   "g": 1,
-   "t_ko": "Larry Ellison, 최대 75억 달러 규모 Oracle 주식 매각 계획 철회",
-   "t_id": "Larry Ellison Batalkan Rencana Lepas Saham Oracle Senilai hingga $7,5 Miliar"
-  },
-  {
-   "ts": "2026-09-13T00:10:20+07:00",
-   "date": "2026-09-13",
-   "time": "00:10",
-   "src": "Bloomberg",
-   "t": "Bloomberg This Weekend 09/12/2026",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-12/bloomberg-this-weekend-09-12-2026-video",
-   "g": 1,
-   "t_ko": "Bloomberg This Weekend 2026년 9월 12일",
-   "t_id": "Bloomberg This Weekend 12 Sep 2026"
-  },
-  {
-   "ts": "2026-09-13T00:10:00+07:00",
-   "date": "2026-09-13",
-   "time": "00:10",
-   "src": "WSJ",
-   "t": "Larry Ellison Scraps Plan to Sell Up to $7.5 Billion Worth of Oracle Stock",
-   "tags": [],
-   "url": "https://www.wsj.com/business/larry-ellison-scraps-plan-to-sell-up-to-7-5-billion-worth-of-oracle-stock-9f41edd2?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-80025367",
-   "t_ko": "Larry Ellison, 최대 75억 달러 규모 Oracle 주식 매각 계획 철회",
-   "t_id": "Larry Ellison Batalkan Rencana Jual Saham Oracle hingga $7,5 Miliar"
   }
  ],
  "kisi_news": [
@@ -17030,9 +17005,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,606",
-   "d": 0.1,
-   "ytd": 5.3,
+   "v": "17,595",
+   "d": 0.04,
+   "ytd": 5.23,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -17042,9 +17017,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.12",
-   "d": 0.65,
-   "ytd": 12.98,
+   "v": "13.10",
+   "d": 0.51,
+   "ytd": 12.82,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17077,9 +17052,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.12",
-   "d": -0.03,
-   "ytd": 0.85,
+   "v": "99.09",
+   "d": -0.05,
+   "ytd": 0.83,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17101,9 +17076,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,366.2",
-   "d": 0.49,
-   "ytd": 0.94,
+   "v": "4,408.9",
+   "d": 1.47,
+   "ytd": 1.93,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -25013,7 +24988,7 @@
   "idx_index": true,
   "idx_market": true,
   "idx_from_pc": "2026-09-11 17:33",
-  "pc_age_min": 2439,
+  "pc_age_min": 2557,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25040,10 +25015,10 @@
    "url": "https://www.wsj.com/business/larry-ellison-scraps-plan-to-sell-up-to-7-5-billion-worth-of-oracle-stock-9f41edd2?mod=rss_markets_main",
    "g": 1,
    "img": "https://images.wsj.net/im-80025367",
-   "t_ko": "Larry Ellison, 최대 75억 달러 규모 Oracle 주식 매각 계획 철회",
-   "t_id": "Larry Ellison Batalkan Rencana Jual Saham Oracle hingga $7,5 Miliar",
    "score": 8.5,
-   "srcs": 5
+   "srcs": 4,
+   "t_ko": "Larry Ellison, 최대 75억 달러 규모 Oracle 주식 매각 계획 철회",
+   "t_id": "Larry Ellison Batalkan Rencana Jual Saham Oracle hingga $7,5 Miliar"
   },
   {
    "ts": "2026-09-12T19:47:06+07:00",
@@ -25058,6 +25033,20 @@
    "srcs": 2,
    "t_ko": "사우디 송유관 피습 이후 원유 공급 차질 리스크 고조",
    "t_id": "Risiko Pasokan Minyak Naik Usai Serangan Pipa Saudi"
+  },
+  {
+   "ts": "2026-09-12T20:46:17+07:00",
+   "date": "2026-09-12",
+   "time": "09/12",
+   "src": "Liputan6",
+   "t": "10 Saham Top Losers Sepekan saat IHSG Melemah 1,43%",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8290495/10-saham-top-losers-sepekan-saat-ihsg-melemah-143",
+   "img": "https://cdn1-production-images-kly.akamaized.net/1muvztO9JwhJRh8cTbnEvARdRGI=/472x0:3363x1630/673x379/filters:quality(75):strip_icc():format(webp):watermark(kly-media-production/assets/images/watermarks/liputan6/watermark-gray-landscape-new.png,573,20,0)/kly-media-production/medias/1505536/original/011475000_1486967390-Pembukaan-Saham3.jpg",
+   "score": 7.5,
+   "srcs": 2,
+   "t_ko": "IHSG 1.43% 하락 속 한 주간 낙폭 상위 주식 10선",
+   "t_id": "10 Saham Top Losers Sepekan saat IHSG Melemah 1,43%"
   },
   {
    "ts": "2026-09-12T22:11:38+07:00",
@@ -25086,20 +25075,6 @@
    "srcs": 1,
    "t_ko": "긴 대기열 해소 위해 SPBU 12곳에 보조금 연료 노즐 추가",
    "t_id": "Urai Antrean Panjang, Nozzle BBM Subsidi di 12 SPBU Ditambah"
-  },
-  {
-   "ts": "2026-09-12T20:46:17+07:00",
-   "date": "2026-09-12",
-   "time": "09/12",
-   "src": "Liputan6",
-   "t": "10 Saham Top Losers Sepekan saat IHSG Melemah 1,43%",
-   "tags": [],
-   "url": "https://www.liputan6.com/saham/read/8290495/10-saham-top-losers-sepekan-saat-ihsg-melemah-143",
-   "img": "https://cdn1-production-images-kly.akamaized.net/1muvztO9JwhJRh8cTbnEvARdRGI=/472x0:3363x1630/673x379/filters:quality(75):strip_icc():format(webp):watermark(kly-media-production/assets/images/watermarks/liputan6/watermark-gray-landscape-new.png,573,20,0)/kly-media-production/medias/1505536/original/011475000_1486967390-Pembukaan-Saham3.jpg",
-   "score": 5.5,
-   "srcs": 1,
-   "t_ko": "IHSG 1.43% 하락 속 한 주간 낙폭 상위 주식 10선",
-   "t_id": "10 Saham Top Losers Sepekan saat IHSG Melemah 1,43%"
   }
  ],
  "mcap": [
@@ -25225,25 +25200,6 @@
    "srcs": 1
   },
   {
-   "t": "BBCA",
-   "n": "Bank Central Asia",
-   "px": 6325.0,
-   "pct": -1.56,
-   "val": 1188611077500.0,
-   "mcap": 771917544337500.0,
-   "ratio": 1.7,
-   "ev_ko": "실적·배당",
-   "ev_id": "Kinerja & dividen",
-   "hl": "BBCA, 12월 중간배당 재개 발표",
-   "hl_id": "Emiten BBCA Ungkap Kembali Tebar Dividen Interim Desember 2026",
-   "url": "https://www.liputan6.com/saham/read/8288566/emiten-bbca-ungkap-kembali-tebar-dividen-interim-desember-2026",
-   "score": 67.7,
-   "s_news": 70,
-   "s_size": 97,
-   "s_surge": 35,
-   "srcs": 1
-  },
-  {
    "t": "VISI",
    "n": "Satu Visi Putra",
    "px": 1035.0,
@@ -25279,6 +25235,25 @@
    "s_news": 100,
    "s_size": 62,
    "s_surge": 20,
+   "srcs": 1
+  },
+  {
+   "t": "ANTM",
+   "n": "ANTAM Tbk",
+   "px": 3270.0,
+   "pct": 0.0,
+   "val": 437885125333.3333,
+   "mcap": 78580600650750.0,
+   "ratio": 1.3,
+   "ev_ko": "실적·배당",
+   "ev_id": "Kinerja & dividen",
+   "hl": "ANTM, 순이익 34% 증가 및 마진 확대",
+   "hl_id": "Laba Bersih ANTM Tumbuh 34%, Margin Makin Tebal",
+   "url": "https://www.bloombergtechnoz.com/detail-news/121382/laba-bersih-antm-tumbuh-34-margin-makin-tebal",
+   "score": 54.2,
+   "s_news": 70,
+   "s_size": 72,
+   "s_surge": 15,
    "srcs": 1
   },
   {
