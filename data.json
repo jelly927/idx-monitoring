@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 23:24",
+ "updated": "2026-09-14 23:28",
  "delay_min": 15,
  "fx_basis": "13.10 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 20:55 Yahoo",
- "idr_per_krw": 13.0975,
+ "idr_per_krw": 13.0986,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 23:22",
+   "asof": "investing.com 23:27",
    "unit": "bp"
   }
  ],
@@ -15699,10 +15699,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7633.9,
+   "px": 7633.05,
    "prev": 7655.5,
-   "pct": -0.28,
-   "asof": "23:20",
+   "pct": -0.29,
+   "asof": "23:25",
    "live": true,
    "spark": [
     7599.57,
@@ -15739,17 +15739,18 @@
     7626.34,
     7628.12,
     7636.57,
-    7633.9
+    7637.17,
+    7633.05
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26254.83,
+   "px": 26244.49,
    "prev": 26333.03,
-   "pct": -0.3,
-   "asof": "23:20",
+   "pct": -0.34,
+   "asof": "23:25",
    "live": true,
    "spark": [
     26018.42,
@@ -15786,17 +15787,18 @@
     26205.96,
     26217.63,
     26262.46,
-    26254.83
+    26264.92,
+    26244.49
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52514.43,
+   "px": 52507.8,
    "prev": 52562.77,
-   "pct": -0.09,
-   "asof": "23:20",
+   "pct": -0.1,
+   "asof": "23:25",
    "live": true,
    "spark": [
     52421.7,
@@ -15833,7 +15835,8 @@
     52494.87,
     52492.34,
     52531.55,
-    52514.43
+    52532.62,
+    52507.8
    ]
   },
   {
@@ -16731,6 +16734,30 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T23:26:29+07:00",
+   "date": "2026-09-14",
+   "time": "23:26",
+   "src": "Detik",
+   "t": "Danatara Buka Suara soal Kabar Mau Pegang 40% Saham Bursa Efek",
+   "tags": [],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8662970/danatara-buka-suara-soal-kabar-mau-pegang-40-saham-bursa-efek",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/07/01/wisma-danantara-indonesia-1751345496316_169.jpeg?w=360&q=90",
+   "t_id": "Danatara Buka Suara soal Kabar Mau Pegang 40% Saham Bursa Efek",
+   "t_ko": "Danatara, 거래소 지분 40% 인수설 공식 부인"
+  },
+  {
+   "ts": "2026-09-14T23:23:34+07:00",
+   "date": "2026-09-14",
+   "time": "23:23",
+   "src": "Bloomberg",
+   "t": "Tariffs Forced Nissan to Speed U.S. Production, Says Americas Chairman",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-14/tariffs-forced-nissan-to-speed-u-s-production-video",
+   "g": 1,
+   "t_ko": "Nissan 미주 법인장, 관세 압박에 미국 현지 생산 가속화",
+   "t_id": "Tarif Paksa Nissan Percepat Produksi AS, Kata Chairman Amerika"
+  },
+  {
    "ts": "2026-09-14T23:21:00+07:00",
    "date": "2026-09-14",
    "time": "23:21",
@@ -16754,6 +16781,30 @@
    "g": 1,
    "t_ko": "사우디, 호르무즈 해협 우회 주요 송유관 가동 중단에 브렌트유 배럴당 $106 상회",
    "t_id": "Minyak Mentah Brent Tembus $106 Usai Arab Saudi Tutup Pipa Krusial Tanpa Lewati Selat Hormuz"
+  },
+  {
+   "ts": "2026-09-14T23:16:01+07:00",
+   "date": "2026-09-14",
+   "time": "23:16",
+   "src": "Bloomberg",
+   "t": "Saudis Seek to Boost Hormuz Oil Exports as Key Pipeline Attacked",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-14/saudis-seek-to-boost-hormuz-oil-exports-as-key-pipeline-attacked",
+   "g": 1,
+   "t_ko": "사우디, 핵심 송유관 피습에 호르무즈 원유 수출 확대 추진",
+   "t_id": "Saudi Berupaya Genjot Ekspor Minyak Selat Hormuz Usai Pipa Utama Diserang"
+  },
+  {
+   "ts": "2026-09-14T23:13:28+07:00",
+   "date": "2026-09-14",
+   "time": "23:13",
+   "src": "Bloomberg",
+   "t": "BofA’s Subramanian Lifts S&P 500 View to 7,400, Stays Cautious",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-14/bofa-s-subramanian-lifts-s-p-500-view-to-7-400-stays-cautious",
+   "g": 1,
+   "t_ko": "BofA Subramanian, S&P 500 전망치 7,400으로 상향하며 신중론 유지",
+   "t_id": "Subramanian BofA Naikkan Proyeksi S&P 500 ke 7.400, Tetap Waspada"
   },
   {
    "ts": "2026-09-14T23:11:29+07:00",
@@ -16926,44 +16977,6 @@
    "url": "https://mediaindonesia.com/ekonomi/933379/mediamind-2026-angkat-isu-tambang-berkelanjutan",
    "t_ko": "MediaMIND 2026, 지속 가능한 광업 이슈 다뤄",
    "t_id": "MediaMIND 2026 Angkat Isu Tambang Berkelanjutan"
-  },
-  {
-   "ts": "2026-09-14T22:47:03+07:00",
-   "date": "2026-09-14",
-   "time": "22:47",
-   "src": "Yahoo Finance",
-   "t": "YPF Lines Up Buyers for $24 Billion Vaca Muerta LNG Project",
-   "tags": [],
-   "url": "https://finance.yahoo.com/energy/articles/ypf-lines-buyers-24-billion-154703112.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/oilprice.com/777de1654327af64da14a575797a364e.jpg",
-   "t_ko": "YPF, 240억 달러 Vaca Muerta LNG 프로젝트 인수 후보군 확보",
-   "t_id": "YPF Cari Pembeli untuk Proyek LNG Vaca Muerta $24 Miliar"
-  },
-  {
-   "ts": "2026-09-14T22:45:30+07:00",
-   "date": "2026-09-14",
-   "time": "22:45",
-   "src": "Reuters",
-   "t": "Bitcoin's late summer rally set to face off against the Fed, Congress",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZEV1dXlZWDh3VTJpMHVvclNtOWY1WVZXSGFIM3JZa1h0bDYyNVUzd0lvcUFpdVJtVjFZemVZSGotMnJmR3Q5aDN5MzVaenluWUhseElqVEltb2RBQU8zTnktd3hOaWZnQ20yTG5OY3ltMjlXZU9ta0tvTkpnTlhncW1DcEg0bl9BNWdnVEdJOFc5THpPZmZYNjFNZEhPdEVvU1ZtWW5vWUlVMFp5VDd2RXpBcw?oc=5",
-   "g": 1,
-   "t_ko": "비트코인 늦여름 랠리, 연준·의회와 정면충돌 국면",
-   "t_id": "Reli Akhir Musim Panas Bitcoin Siap Hadapi The Fed dan Kongres"
-  },
-  {
-   "ts": "2026-09-14T22:40:00+07:00",
-   "date": "2026-09-14",
-   "time": "22:40",
-   "src": "MarketWatch",
-   "t": "10-year Treasury yield briefly tops 5%, hitting its highest level since 2007 as bond-market selloff deepens",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/10-year-treasury-yield-tops-5-for-the-first-time-since-2007-as-bond-market-selloff-deepens-14c81f75?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-41770070",
-   "t_ko": "미국 10년물 국채 금리, 채권 매도세 심화로 2007년 이후 최고치인 5% 상회",
-   "t_id": "Imbal Hasil Obligasi AS 10 Tahun Tembus 5%, Sentuh Level Tertinggi Sejak 2007 di Tengah Aksi Jual"
   },
   {
    "ts": "2026-09-14T22:28:32+07:00",
@@ -17153,18 +17166,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260914171926-313.png",
    "t_ko": "Suahasil 재무장관 내정에 전문가 \"재정 적자 축소에만 치중 말아야\"",
    "t_id": "Suahasil Jadi Menkeu, Ekonom: Jangan Hanya Tekan Defisit"
-  },
-  {
-   "ts": "2026-09-14T21:21:00+07:00",
-   "date": "2026-09-14",
-   "time": "21:21",
-   "src": "Katadata",
-   "t": "Kata Danantara soal Rencana Kuasai 40,12% Saham BEI",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/bursa/6aa802fa9e229/kata-danantara-soal-rencana-kuasai-40-12-saham-bei",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Ilustrasi_logo_Danantara_Indonesia-2026_09_04-10_57_07_43ea5dc45088cfdb506ef1ee0f746aa1_620x413_thumb.jpg",
-   "t_ko": "Danantara, BEI 지분 40.12% 인수 계획 관련 입장 표명",
-   "t_id": "Kata Danantara soal Rencana Kuasai 40,12% Saham BEI"
   }
  ],
  "kisi_news": [
@@ -17373,7 +17374,7 @@
    "k": "달러 인덱스 (DXY)",
    "v": "99.46",
    "d": 0.14,
-   "ytd": 1.21,
+   "ytd": 1.2,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17383,9 +17384,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.26",
-   "d": -0.96,
-   "ytd": 78.09,
+   "v": "102.24",
+   "d": -0.98,
+   "ytd": 78.06,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17395,9 +17396,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,337.1",
-   "d": -0.77,
-   "ytd": 0.27,
+   "v": "4,338.4",
+   "d": -0.74,
+   "ytd": 0.3,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -20231,7 +20232,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-14 23:19",
-  "pc_age_min": 5,
+  "pc_age_min": 9,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21730,8 +21731,8 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/bursa/6aa7f67aee47f/skenario-danantara-rogoh-rp-517-miliar-untuk-beli-40-12-saham-bei",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Ilustrasi_logo_Danantara_dan_gedung_Danantara_Indonesia-2026_09_04-21_11_03_39d179be43b25b5ccf63e8916c549ea6_620x413_thumb.jpg",
-   "score": 416.55,
-   "srcs": 3,
+   "score": 414.35,
+   "srcs": 2,
    "t_ko": "Danantara, BEI 지분 40.12% 인수에 Rp5,170억 투입 시나리오 검토",
    "t_id": "Skenario Danantara Rogoh Rp 517 Miliar untuk Beli 40,12% Saham BEI"
   },
