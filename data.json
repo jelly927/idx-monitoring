@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 05:31",
+ "updated": "2026-09-15 05:45",
  "delay_min": 15,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 02:31 Yahoo",
- "idr_per_krw": 13.095,
+ "fx_basis": "13.09 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 02:31 Yahoo",
+ "idr_per_krw": 13.0934,
  "indices": [
   {
    "code": "USDIDR",
@@ -56,7 +56,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 05:29",
+   "asof": "investing.com 05:43",
    "unit": "bp"
   }
  ],
@@ -67,13 +67,13 @@
   "prev": null,
   "ytd": null,
   "m1": null,
-  "value_idr": 17317136569066.676,
+  "value_idr": 17317150254133.342,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 827종목 · 종가 · 외국인·공시 PC 09-15 05:25",
+  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-15 05:40",
   "rank_asof": null,
   "rank_date": "2026-09-14",
-  "adv": 228,
+  "adv": 229,
   "dec": 455,
   "unch": 144,
   "foreign_net_idr": -317804733771.1885,
@@ -13161,6 +13161,22 @@
    "live": 0
   },
   {
+   "t": "IGAR",
+   "n": "Champion Pacific Indonesia",
+   "px": 468.0,
+   "prev": 466.0,
+   "pct": 0.43,
+   "val": 13685066.666666668,
+   "vol": 29200.0,
+   "sh": 927780600,
+   "mcap": 434201320800.0,
+   "hi": 472.0,
+   "lo": 466.0,
+   "ratio": 0.3,
+   "fnet": -373786.30136986304,
+   "live": 0
+  },
+  {
    "t": "BPFI",
    "n": "Woori Finance Indonesia",
    "px": 250.0,
@@ -14190,11 +14206,11 @@
   {
    "name": "소재",
    "name_id": "Barang Baku",
-   "n": 92,
-   "adv": 23,
+   "n": 93,
+   "adv": 24,
    "dec": 58,
-   "val": 4140403799666.6675,
-   "mcap": 1567668383714631.0,
+   "val": 4140417484733.334,
+   "mcap": 1568102585035431.0,
    "top": [
     {
      "t": "AMMN",
@@ -14237,7 +14253,7 @@
      "pct": -2.9
     }
    ],
-   "fnet": 143413608390,
+   "fnet": 143413234604,
    "pct": -0.25,
    "fbuy_top": [
     {
@@ -16471,6 +16487,48 @@
    "img": "https://cdn1-production-images-kly.akamaized.net/c9Y6rYeY_HZxiaIRs4tqqW_WxdU=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3526828/original/027148900_1627708283-kalbe_farma_31_juli_2021Kalbe_Farma_31_juli_2021.jpg",
    "t_ko": "Kalbe Farma(KLBF), 의약품·분유 가격 인상에 신중 입장",
    "t_id": "Kalbe Farma Hati-Hati Naikkan Harga Obat dan Susu"
+  },
+  {
+   "ts": "2026-08-24T08:33:00+07:00",
+   "date": "2026-08-24",
+   "time": "08/24",
+   "src": "Tempo",
+   "t": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1",
+   "tags": [
+    "AREA"
+   ],
+   "url": "https://bisnis.tempo.co/read/2117248/pt-pertamina-patra-niaga-ru-cilacap-buka-tender-penggantian-column-assy-11c-1",
+   "img": "https://statik.tempo.co/data/2026/08/10/id_1485829/1485829_720.jpg",
+   "t_ko": "Pertamina Patra Niaga Cilacap 정유공장, Column Assy 11C-1 교체 입찰 공고",
+   "t_id": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1"
+  },
+  {
+   "ts": "2026-08-10T18:35:31+07:00",
+   "date": "2026-08-10",
+   "time": "08/10",
+   "src": "Tempo",
+   "t": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://bisnis.tempo.co/read/2117152/bank-mandiri-gandeng-paramount-dorong-pertumbuhan-properti-berkelanjutan",
+   "img": "https://statik.tempo.co/data/2026/08/10/id_1485793/1485793_720.jpg",
+   "t_ko": "Bank Mandiri, Paramount와 제휴 — 지속가능 부동산 성장 추진",
+   "t_id": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan"
+  },
+  {
+   "ts": "2026-08-07T14:18:08+07:00",
+   "date": "2026-08-07",
+   "time": "08/07",
+   "src": "Tempo",
+   "t": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN",
+   "tags": [
+    "BKSL"
+   ],
+   "url": "https://bisnis.tempo.co/read/2116937/pemkab-bogor-serah-terima-psu-sentul-city-rampung-tinggal-tunggu-sertifikat-bpn",
+   "img": "https://statik.tempo.co/data/2026/08/07/id_1485550/1485550_720.jpg",
+   "t_ko": "Bogor 군청, Sentul City 공공시설(PSU) 인수 완료 — BPN 등기 대기",
+   "t_id": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN"
   }
  ],
  "market_news": [
@@ -16507,8 +16565,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tld08b370/siapa-saja-menteri-keuangan-ri-sejak-era-reformasi-ini-daftar-lengkapnya",
    "img": "https://static.republika.co.id/uploads/images/detailnews/094364700-1789380522-830-556.jpg",
-   "t_id": "Siapa Saja Menteri Keuangan RI Sejak Era Reformasi? Ini Daftar Lengkapnya",
-   "t_ko": "개혁개방 이후 인도네시아 재무장관 명단"
+   "t_ko": "개혁개방 이후 인도네시아 재무장관 명단",
+   "t_id": "Siapa Saja Menteri Keuangan RI Sejak Era Reformasi? Ini Daftar Lengkapnya"
   },
   {
    "ts": "2026-09-15T05:18:56+07:00",
@@ -16544,8 +16602,8 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/121506/jika-suku-bunga-fed-naik-mungkin-s-p-500-bakal-drop-10",
    "g": 1,
    "img": "https://images.bloombergtechnoz.com/data/2024/09/image-20240919081147.jpg",
-   "t_id": "Jika Suku Bunga Fed Naik, Mungkin S&P 500 Bakal Drop 10%",
-   "t_ko": "연준 기준금리 인상 시 S&P 500 10% 하락 전망"
+   "t_ko": "연준 기준금리 인상 시 S&P 500 10% 하락 전망",
+   "t_id": "Jika Suku Bunga Fed Naik, Mungkin S&P 500 Bakal Drop 10%"
   },
   {
    "ts": "2026-09-15T05:04:31+07:00",
@@ -17129,9 +17187,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.97",
-   "d": -1.24,
-   "ytd": 77.59,
+   "v": "101.89",
+   "d": -1.32,
+   "ytd": 77.45,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17141,7 +17199,7 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,337.8",
+   "v": "4,337.7",
    "d": -0.75,
    "ytd": 0.28,
    "inv": false,
@@ -19962,8 +20020,8 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-15 05:25",
-  "pc_age_min": 6,
+  "idx_from_pc": "2026-09-15 05:40",
+  "pc_age_min": 5,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21416,7 +21474,7 @@
     "hhmm": "17:05"
    }
   },
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-2.5-flash-lite",
   "index": {
    "ko": "아시아 증시 약세와 대형 은행주(BBCA·BBRI) 약세에 하락 출발했으나, 헬스케어 및 소재주 강세로 낙폭을 축소하며 IHSG 0.10% 하락 마감.",
    "id": "IHSG melemah 0,10% karena tertekan pelemahan bursa Asia dan saham bank besar (BBCA·BBRI), namun berhasil memangkas kerugian didorong sektor kesehatan dan material.",
@@ -21610,15 +21668,6 @@
    "ann": [
     {
      "t": "DSSA",
-     "ko": "임시주주총회 의사록 요약",
-     "id": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Luar Biasa",
-     "kind_ko": "주총결과",
-     "kind_id": "Risalah RUPS",
-     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/484dae9803_a612d61cbd.pdf",
-     "time": "05:19"
-    },
-    {
-     "t": "DSSA",
      "ko": "Dian Swastatika Sentosa(DSSA), 추천보상위원회 구성",
      "id": "Susunan Komite Nominasi dan Remunerasi PT Dian Swastatika Sentosa Tbk",
      "kind_ko": "실무인사",
@@ -21634,6 +21683,15 @@
      "kind_id": "Public Expose",
      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/44d3c65149_5efe3b8fa6.pdf",
      "time": "08:25"
+    },
+    {
+     "t": "GRIA",
+     "ko": "정기주주총회 의사록 요약(정정)",
+     "id": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Tahunan (KOREKSI)",
+     "kind_ko": "주총결과",
+     "kind_id": "Risalah RUPS",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/a12886f4ea_29c1331b54.pdf",
+     "time": "08:34"
     }
    ]
   },
@@ -28441,6 +28499,25 @@
    "srcs": 2
   },
   {
+   "t": "BMRI",
+   "n": "Bank Mandiri Tbk",
+   "px": 4440.0,
+   "pct": 1.83,
+   "val": 1005268273333.3334,
+   "mcap": 410255999982240.0,
+   "ratio": 2.0,
+   "ev_ko": "영업·계약",
+   "ev_id": "Operasional",
+   "hl": "Bank Mandiri, Paramount와 제휴 — 지속가능 부동산 성장 추진",
+   "hl_id": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
+   "url": "https://bisnis.tempo.co/read/2117152/bank-mandiri-gandeng-paramount-dorong-pertumbuhan-properti-berkelanjutan",
+   "score": 64.1,
+   "s_news": 55,
+   "s_size": 90,
+   "s_surge": 50,
+   "srcs": 1
+  },
+  {
    "t": "GGRM",
    "n": "Gudang Garam",
    "px": 19000.0,
@@ -29079,6 +29156,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-15 05:15"
+  "announcements": "2026-09-15 05:31"
  }
 }
