@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 01:18",
+ "updated": "2026-09-15 01:34",
  "delay_min": 15,
- "fx_basis": "13.11 IDR/KRW · USD/IDR 17,640 · USD/KRW 1,346 · 01:00 Yahoo",
- "idr_per_krw": 13.1079,
+ "fx_basis": "13.11 IDR/KRW · USD/IDR 17,640 · USD/KRW 1,345 · 01:00 Yahoo",
+ "idr_per_krw": 13.1137,
  "indices": [
   {
    "code": "USDIDR",
@@ -56,7 +56,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 01:17",
+   "asof": "investing.com 01:32",
    "unit": "bp"
   }
  ],
@@ -70,7 +70,7 @@
   "value_idr": 13677637309266.65,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-15 01:13",
+  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-15 01:29",
   "rank_asof": null,
   "rank_date": "2026-09-11",
   "adv": 197,
@@ -15357,10 +15357,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7635.88,
+   "px": 7633.62,
    "prev": 7655.5,
-   "pct": -0.26,
-   "asof": "01:15",
+   "pct": -0.29,
+   "asof": "01:30",
    "live": true,
    "spark": [
     7599.57,
@@ -15420,17 +15420,20 @@
     7635.8,
     7637.29,
     7636.22,
-    7635.88
+    7635.8,
+    7634.16,
+    7633.15,
+    7633.62
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26299.63,
+   "px": 26282.49,
    "prev": 26333.03,
-   "pct": -0.13,
-   "asof": "01:15",
+   "pct": -0.19,
+   "asof": "01:30",
    "live": true,
    "spark": [
     26018.42,
@@ -15490,17 +15493,20 @@
     26307.07,
     26313.14,
     26305.09,
-    26299.63
+    26298.74,
+    26282.1,
+    26281.9,
+    26282.49
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52437.11,
+   "px": 52434.68,
    "prev": 52562.77,
    "pct": -0.24,
-   "asof": "01:15",
+   "asof": "01:30",
    "live": true,
    "spark": [
     52421.7,
@@ -15560,7 +15566,10 @@
     52435.07,
     52444.41,
     52426.36,
-    52437.11
+    52437.72,
+    52450.28,
+    52429.81,
+    52434.68
    ]
   },
   {
@@ -16024,7 +16033,7 @@
     "FORU"
    ],
    "url": "https://www.idnfinancials.com/news/68804/foru-prepares-idr-27-1-trillion-rights-issue-for-coal-mining",
-   "img": "https://photos.idnfinancials.com/_idn/_NEW/untitled%20folder%201/Tambang%20ZINC.jpg",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/FORU-15092026.jpg",
    "t_ko": "FORU, 석탄 광산 인수를 위한 Rp2.71조 유상증자 준비",
    "t_id": "FORU Siap Gelar Rights Issue Rp27,1 Triliun untuk Tambang Batu Bara"
   },
@@ -16458,6 +16467,68 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-15T01:30:53+07:00",
+   "date": "2026-09-15",
+   "time": "01:30",
+   "src": "CNBC",
+   "t": "10-year Treasury yield hits 5% before reversing as traders await Fed meeting",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
+   "g": 1,
+   "t_ko": "미국 10년물 국채금리, 연준 회의 대기 속 5% 터치 후 하락",
+   "t_id": "Imbal Hasil US Treasury 10 Tahun Sentuh 5% Sebelum Berbalik Arah Jelang Rapat The Fed"
+  },
+  {
+   "ts": "2026-09-15T01:22:34+07:00",
+   "date": "2026-09-15",
+   "time": "01:22",
+   "src": "FT",
+   "t": "US tech stocks fall after big AI groups call for slowdown",
+   "tags": [],
+   "url": "https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F0507c6a7-e813-450e-8ac3-6a2f383a9f36.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "대형 AI 기업의 속도 조절 요구에 미국 기술주 하락",
+   "t_id": "Saham Teknologi AS Anjlok Usai Grup AI Besar Serukan Perlambatan"
+  },
+  {
+   "ts": "2026-09-15T01:21:45+07:00",
+   "date": "2026-09-15",
+   "time": "01:21",
+   "src": "CNBC",
+   "t": "Ukraine says it's open to halting attacks on Russian energy after Trump's claims of deal",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/trump-ukraine-russia-energy-oil-iran.html",
+   "g": 1,
+   "t_ko": "우크라이나, 트럼프 협상 주장 속 러시아 에너지 공격 중단 시사",
+   "t_id": "Ukraina Buka Peluang Hentikan Serangan Energi Rusia Usai Klaim Kesepakatan Trump"
+  },
+  {
+   "ts": "2026-09-15T01:21:18+07:00",
+   "date": "2026-09-15",
+   "time": "01:21",
+   "src": "CNBC",
+   "t": "Trump says no need for more AI regulation, slams Anthropic CEO Dario Amodei",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
+   "g": 1,
+   "t_ko": "트럼프, 추가 AI 규제 불필요 입장 밝히며 Anthropic CEO 비판",
+   "t_id": "Trump Sebut Tak Perlu Regulasi AI Tambahan, Kritik CEO Anthropic Dario Amodei"
+  },
+  {
+   "ts": "2026-09-15T01:20:00+07:00",
+   "date": "2026-09-15",
+   "time": "01:20",
+   "src": "MarketWatch",
+   "t": "AI doomsday fears are arriving at the worst possible time for the stock market",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/ai-doomsday-fears-are-arriving-at-the-worst-possible-time-for-the-stock-market-75c4ad53?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-77345984",
+   "t_ko": "AI 실종포비아, 증시에 가장 취약한 시기에 도래",
+   "t_id": "Kekhawatiran Kiamat AI Melanda Pasar Saham di Saat yang Paling Tidak Tepat"
+  },
+  {
    "ts": "2026-09-15T01:14:00+07:00",
    "date": "2026-09-15",
    "time": "01:14",
@@ -16471,28 +16542,17 @@
    "t_id": "Imbal Hasil Obligasi AS 10 Tahun Turun dari Level Krusial 5% di Tengah Kekhawatiran AI dan Lonjakan Harga Minyak"
   },
   {
-   "ts": "2026-09-15T01:10:43+07:00",
+   "ts": "2026-09-15T01:08:18+07:00",
    "date": "2026-09-15",
-   "time": "01:10",
-   "src": "CNBC",
-   "t": "10-year Treasury yield hits 5% before reversing as traders await Fed meeting",
+   "time": "01:08",
+   "src": "FT",
+   "t": "Ten-year Treasury yield hits 5% for first time since 2023",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
+   "url": "https://www.ft.com/content/06cb850d-089a-4318-88d7-a410e9766b89?syn-25a6b1a6=1",
    "g": 1,
-   "t_ko": "미국 10년물 국채금리, 연준 회의 대기 속 5% 터치 후 하락",
-   "t_id": "Imbal Hasil US Treasury 10 Tahun Sentuh 5% Sebelum Berbalik Arah Jelang Rapat The Fed"
-  },
-  {
-   "ts": "2026-09-15T01:10:10+07:00",
-   "date": "2026-09-15",
-   "time": "01:10",
-   "src": "CNBC",
-   "t": "Ukraine says it's open to halting attacks on Russian energy after Trump's claims of deal",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/trump-ukraine-russia-energy-oil-iran.html",
-   "g": 1,
-   "t_ko": "우크라이나, 트럼프 협상 주장 속 러시아 에너지 공격 중단 시사",
-   "t_id": "Ukraina Buka Peluang Hentikan Serangan Energi Rusia Usai Klaim Kesepakatan Trump"
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F640d3633-43b5-4010-b23b-a6557057990a.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "미국 10년물 국채금리, 2023년 이후 처음 5% 돌파",
+   "t_id": "Imbal Hasil Obligasi 10 Tahun AS Tembus 5% untuk Pertama Kalinya Sejak 2023"
   },
   {
    "ts": "2026-09-15T01:01:37+07:00",
@@ -16517,6 +16577,18 @@
    "g": 1,
    "t_ko": "공화당 민주당 표결 확보 위해 Trump, 암호화폐 Clarity Act 윤리 요건 합의",
    "t_id": "Trump Setujui Syarat Etika di RUU Kripto Clarity Act Saat Republik Cari Suara Demokrat"
+  },
+  {
+   "ts": "2026-09-15T00:49:04+07:00",
+   "date": "2026-09-15",
+   "time": "00:49",
+   "src": "Bloomberg",
+   "t": "Bamboo Insurance Backers Seek $700 Million in US IPO",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-14/bamboo-insurance-backers-seek-700-million-in-us-ipo",
+   "g": 1,
+   "t_ko": "Bamboo Insurance 대주주, 미국 상장서 7억 달러 조달 추진",
+   "t_id": "Pendukung Bamboo Insurance Incar USD 700 Juta dalam IPO di AS"
   },
   {
    "ts": "2026-09-15T00:49:01+07:00",
@@ -16626,68 +16698,6 @@
    "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ffc66dc4a-69ff-4e3a-8722-ae573e7c4256.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "t_ko": "AI 종말 시나리오 지연이 투자자에게도 유리한 이유",
    "t_id": "Alasan Penundaan Kiamat AI Justru Untungkan Investor"
-  },
-  {
-   "ts": "2026-09-15T00:22:00+07:00",
-   "date": "2026-09-15",
-   "time": "00:22",
-   "src": "MarketWatch",
-   "t": "There’s every reason to slow AI development. But here’s why it probably won’t happen.",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/theres-every-reason-to-slow-ai-development-but-heres-why-it-probably-wont-happen-80be6ad6?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-85465510",
-   "t_ko": "AI 개발 속도 조절 당위성과 현실적 한계",
-   "t_id": "Alasan Pengembangan AI Sulit Direm Meski Ada Banyak Risiko"
-  },
-  {
-   "ts": "2026-09-15T00:18:42+07:00",
-   "date": "2026-09-15",
-   "time": "00:18",
-   "src": "FT",
-   "t": "Trump claims Russia and Ukraine have agreed energy truce",
-   "tags": [],
-   "url": "https://www.ft.com/content/d6f98d2e-9f0c-4414-a339-fe8462810276?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F06e2610e-a7ed-419b-8960-193782f9312d.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "러시아·우크라이나, 에너지 휴전 합의 주장",
-   "t_id": "Trump Klaim Rusia-Ukraina Sepakati Gencatan Senjata Energi"
-  },
-  {
-   "ts": "2026-09-15T00:16:23+07:00",
-   "date": "2026-09-15",
-   "time": "00:16",
-   "src": "CNBC",
-   "t": "As the oil surge continues, trader Mike Khouw sees more upside in this surging name",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/as-the-oil-surge-continues-trader-mike-khouw-sees-more-upside-in-this-surging-name.html",
-   "g": 1,
-   "t_ko": "유가 상승세 지속 속 트레이더 Mike Khouw, 관련주 추가 상승 전망",
-   "t_id": "Di Tengah Lonjakan Minyak, Trader Mike Khouw Lihat Potensi Kenaikan Lebih Lanjut pada Saham Ini"
-  },
-  {
-   "ts": "2026-09-15T00:03:38+07:00",
-   "date": "2026-09-15",
-   "time": "00:03",
-   "src": "Reuters",
-   "t": "Wall St falls as AI anxiety batters Nvidia, chipmakers",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYVB5TUc4VTc5MGdNMjVWcVYxUUszYjdXU3hrVnZXbVRCRm40Z3JBX3BhTElKaXVFQmU4SW82WWRwLVdxcGFTVVhPclllM25kSzR0MWdqUmU5YjQydl9MZDhLZ1MzQmF0b01UY3MxaWx0VkxOMjJUQzhmbHJPQjQzdXJMWkJ2OGs5R0ZQc2FjeVpEdjZkM2VqMC1aeGhXSm8?oc=5",
-   "g": 1,
-   "t_ko": "AI 우려에 Nvidia 등 반도체주 타격으로 월가 하락",
-   "t_id": "Wall Street Turun Saat Kecemasan AI Hantam Nvidia dan Produsen Chip"
-  },
-  {
-   "ts": "2026-09-15T00:02:40+07:00",
-   "date": "2026-09-15",
-   "time": "00:02",
-   "src": "CNBC",
-   "t": "Oil prices rise after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html",
-   "g": 1,
-   "t_ko": "사우디, 호르무즈 해협 우회 주요 송유관 가동 중단에 유가 상승",
-   "t_id": "Harga Minyak Naik Usai Arab Saudi Tutup Pipa Kritis Pengganti Selat Hormuz"
   },
   {
    "ts": "2026-09-14T23:49:37+07:00",
@@ -17062,8 +17072,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.10",
-   "d": 0.51,
-   "ytd": 12.83,
+   "d": 0.49,
+   "ytd": 12.8,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17097,7 +17107,7 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "99.43",
-   "d": 0.11,
+   "d": 0.1,
    "ytd": 1.17,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -17108,9 +17118,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.42",
-   "d": -1.77,
-   "ytd": 76.63,
+   "v": "101.48",
+   "d": -1.71,
+   "ytd": 76.73,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17120,9 +17130,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,350.2",
-   "d": -0.47,
-   "ytd": 0.57,
+   "v": "4,350.7",
+   "d": -0.46,
+   "ytd": 0.58,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17674,40 +17684,12 @@
   },
   {
    "date": "2026-09-16",
-   "time": "00:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "20-Year Bond Auction",
-   "imp": 2,
-   "exp": null,
-   "prev": "5.204%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "20년물 국채 입찰",
-   "title_id": "Lelang Obligasi AS Tenor 20 Tahun"
-  },
-  {
-   "date": "2026-09-16",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "API Weekly Crude Oil Stock",
-   "imp": 2,
-   "exp": null,
-   "prev": "-0.300M",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "API 주간 원유 재고",
-   "title_id": "Stok Minyak Mentah Mingguan API"
-  },
-  {
-   "date": "2026-09-16",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "Core Retail Sales (MoM)  (Aug)",
    "imp": 3,
-   "exp": "0.5%",
+   "exp": null,
    "prev": "-0.3%",
    "act": null,
    "src": "investing.com",
@@ -17735,7 +17717,7 @@
    "country": "US",
    "title": "Import Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.0%",
+   "exp": null,
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -17749,7 +17731,7 @@
    "country": "US",
    "title": "Retail Control (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.8%",
+   "exp": null,
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -17763,7 +17745,7 @@
    "country": "US",
    "title": "Business Inventories (MoM)  (Jul)",
    "imp": 2,
-   "exp": "0.2%",
+   "exp": null,
    "prev": "0.0%",
    "act": null,
    "src": "investing.com",
@@ -17777,7 +17759,7 @@
    "country": "US",
    "title": "Retail Inventories Ex Auto  (Jul)",
    "imp": 2,
-   "exp": "0.7%",
+   "exp": null,
    "prev": "0.7%",
    "act": null,
    "src": "investing.com",
@@ -17786,27 +17768,13 @@
   },
   {
    "date": "2026-09-16",
-   "time": "21:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Crude Oil Inventories",
-   "imp": 3,
-   "exp": null,
-   "prev": "-0.391M",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "EIA 원유 재고",
-   "title_id": "Stok Minyak Mentah EIA"
-  },
-  {
-   "date": "2026-09-16",
    "time": "22:30",
    "kind": "macro",
    "country": "US",
    "title": "Atlanta Fed GDPNow  (Q3)",
    "imp": 2,
-   "exp": "4.4%",
-   "prev": "4.4%",
+   "exp": null,
+   "prev": null,
    "act": null,
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
@@ -17833,7 +17801,7 @@
    "country": "US",
    "title": "Fed Interest Rate Decision",
    "imp": 3,
-   "exp": "4.00%",
+   "exp": null,
    "prev": "3.75%",
    "act": null,
    "src": "investing.com",
@@ -17842,26 +17810,12 @@
   },
   {
    "date": "2026-09-17",
-   "time": "01:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "FOMC Press Conference",
-   "imp": 3,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "FOMC 기자회견",
-   "title_id": "Konferensi Pers FOMC"
-  },
-  {
-   "date": "2026-09-17",
    "time": "03:00",
    "kind": "macro",
    "country": "US",
    "title": "TIC Net Long-Term Transactions  (Jul)",
    "imp": 2,
-   "exp": "146.3B",
+   "exp": null,
    "prev": "172.7B",
    "act": null,
    "src": "investing.com",
@@ -19576,7 +19530,7 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-15 01:13",
+  "idx_from_pc": "2026-09-15 01:29",
   "pc_age_min": 5,
   "on_runner": true,
   "bi": null,
@@ -21082,9 +21036,9 @@
    "t_id": "Skenario Danantara Rogoh Rp 517 Miliar untuk Beli 40,12% Saham BEI"
   },
   {
-   "ts": "2026-09-15T01:10:43+07:00",
+   "ts": "2026-09-15T01:30:53+07:00",
    "date": "2026-09-15",
-   "time": "01:10",
+   "time": "01:30",
    "src": "CNBC",
    "t": "10-year Treasury yield hits 5% before reversing as traders await Fed meeting",
    "tags": [],
@@ -21093,7 +21047,7 @@
    "t_ko": "미국 10년물 국채금리, 연준 회의 대기 속 5% 터치 후 하락",
    "t_id": "Imbal Hasil US Treasury 10 Tahun Sentuh 5% Sebelum Berbalik Arah Jelang Rapat The Fed",
    "score": 318.0,
-   "srcs": 8
+   "srcs": 7
   },
   {
    "ts": "2026-09-14T11:40:00+07:00",
@@ -21106,7 +21060,7 @@
    "g": 1,
    "img": "https://photos.idnfinancials.com/_idn/adhi%202026/minyak%20bumi/minyak11.jpg",
    "score": 314.5,
-   "srcs": 8,
+   "srcs": 6,
    "t_ko": "유가 2% 상승 — 브렌트유 배럴당 USD 107.51 기록",
    "t_id": "Harga Minyak Melonjak 2%, Brent Tembus USD 107.51 per Barel"
   }
@@ -21414,7 +21368,7 @@
      "ai_id": "",
      "src": "CNBC",
      "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
-     "time": "01:10",
+     "time": "01:30",
      "tags": [],
      "sc": 318.0,
      "slot": "global"
@@ -21433,14 +21387,14 @@
      "slot": "macro"
     },
     {
-     "t": "10-year Treasury yield eases back from crucial 5% level despite concerns about AI and the surge in oil prices",
-     "ko": "AI 우려와 유가 급등에도 10년물 국채금리 5% 핵심 저항선 하회",
-     "id": "Imbal Hasil Obligasi AS 10 Tahun Turun dari Level Krusial 5% di Tengah Kekhawatiran AI dan Lonjakan Harga Minyak",
+     "t": "Ten-year Treasury yield hits 5% for first time since 2023",
+     "ko": "미국 10년물 국채금리, 2023년 이후 처음 5% 돌파",
+     "id": "Imbal Hasil Obligasi 10 Tahun AS Tembus 5% untuk Pertama Kalinya Sejak 2023",
      "ai_ko": "",
      "ai_id": "",
-     "src": "MarketWatch",
-     "url": "https://www.marketwatch.com/story/10-year-treasury-yield-tops-5-for-the-first-time-since-2007-as-bond-market-selloff-deepens-14c81f75?mod=mw_rss_topstories",
-     "time": "01:14",
+     "src": "FT",
+     "url": "https://www.ft.com/content/06cb850d-089a-4318-88d7-a410e9766b89?syn-25a6b1a6=1",
+     "time": "01:08",
      "tags": [],
      "sc": 313.0,
      "slot": "global"
@@ -28692,6 +28646,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-15 01:06"
+  "announcements": "2026-09-15 01:18"
  }
 }
