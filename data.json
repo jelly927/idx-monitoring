@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 20:45",
+ "updated": "2026-09-14 20:49",
  "delay_min": 15,
  "fx_basis": "13.07 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,349 · 20:00 Yahoo",
- "idr_per_krw": 13.0712,
+ "idr_per_krw": 13.073,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 20:44",
+   "asof": "investing.com 20:48",
    "unit": "bp"
   }
  ],
@@ -340,7 +340,7 @@
   "value_idr": 16438170377728.004,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 20:34",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 20:42",
   "rank_asof": null,
   "rank_date": "2026-09-14",
   "adv": 231,
@@ -15699,45 +15699,48 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7606.55,
+   "px": 7612.97,
    "prev": 7655.5,
-   "pct": -0.64,
-   "asof": "20:40",
+   "pct": -0.56,
+   "asof": "20:45",
    "live": true,
    "spark": [
     7599.57,
     7598.68,
-    7606.55
+    7607.5,
+    7612.97
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26053.17,
+   "px": 26090.22,
    "prev": 26333.03,
-   "pct": -1.06,
-   "asof": "20:40",
+   "pct": -0.92,
+   "asof": "20:45",
    "live": true,
    "spark": [
     26018.42,
     26004.01,
-    26053.17
+    26057.58,
+    26090.22
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52457.47,
+   "px": 52412.46,
    "prev": 52562.77,
-   "pct": -0.2,
-   "asof": "20:40",
+   "pct": -0.29,
+   "asof": "20:45",
    "live": true,
    "spark": [
     52421.7,
     52431.5,
-    52457.47
+    52454.13,
+    52412.46
    ]
   },
   {
@@ -16637,6 +16640,44 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T20:48:54+07:00",
+   "date": "2026-09-14",
+   "time": "20:48",
+   "src": "Republika",
+   "t": "Pertamina NRE Dorong Pengembangan Bioetanol Berbasis Multi-Feedstock dan Multi-Generation",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tlcx1i423/pertamina-nre-dorong-pengembangan-bioetanol-berbasis-multifeedstock-dan-multigeneration",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/pertamina-new-renewable-energy-pertamina-nre-resmi-meluncurkan_260914204658-195.jpeg",
+   "t_id": "Pertamina NRE Dorong Pengembangan Bioetanol Berbasis Multi-Feedstock dan Multi-Generation",
+   "t_ko": "Pertamina NRE, 멀티원료·멀티세대 기반 바이오에탄올 개발 추진"
+  },
+  {
+   "ts": "2026-09-14T20:45:00+07:00",
+   "date": "2026-09-14",
+   "time": "20:45",
+   "src": "MarketWatch",
+   "t": "Here’s how to prepare your portfolio for the Fed’s next interest-rate moves",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/heres-how-to-prepare-your-portfolio-for-the-feds-next-interest-rate-moves-ac306c90?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-87236980",
+   "t_ko": "연준 금리 인하 대비 포트폴리오 재편 전략",
+   "t_id": "Cara Siapkan Portofolio Hadapi Langkah Suku Bunga The Fed"
+  },
+  {
+   "ts": "2026-09-14T20:43:27+07:00",
+   "date": "2026-09-14",
+   "time": "20:43",
+   "src": "CNA",
+   "t": "Musk’s X Corp and SpaceXAI resolve antitrust lawsuit against Apple",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/musks-x-corp-and-spacexai-resolve-antitrust-lawsuit-against-apple-6383731",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--4EwL_rml--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T134327Z_2_LYNXMPEM8D14B_RTROPTP_3_APPLE-DEVICES.JPG?itok=HouLrDbF",
+   "t_ko": "Musk의 X Corp과 SpaceXAI, Apple 대상 반독점 소송 종결",
+   "t_id": "X Corp Milik Musk dan SpaceXAI Selesaikan Gugatan Antimonopoli Terhadap Apple"
+  },
+  {
    "ts": "2026-09-14T20:42:31+07:00",
    "date": "2026-09-14",
    "time": "20:42",
@@ -16685,6 +16726,18 @@
    "t_id": "Bos OpenAI Sam Altman Beberkan Alasan Industri AI Ingin Melambat: 'Kita Bisa Kehilangan Kendali'"
   },
   {
+   "ts": "2026-09-14T20:37:37+07:00",
+   "date": "2026-09-14",
+   "time": "20:37",
+   "src": "Reuters",
+   "t": "S&P 500 and Nasdaq open lower as AI jitters hit Nvidia, chipmakers",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYVB5TUc4VTc5MGdNMjVWcVYxUUszYjdXU3hrVnZXbVRCRm40Z3JBX3BhTElKaXVFQmU4SW82WWRwLVdxcGFTVVhPclllM25kSzR0MWdqUmU5YjQydl9MZDhLZ1MzQmF0b01UY3MxaWx0VkxOMjJUQzhmbHJPQjQzdXJMWkJ2OGs5R0ZQc2FjeVpEdjZkM2VqMC1aeGhXSm8?oc=5",
+   "g": 1,
+   "t_ko": "Nvidia 등 반도체주 약세 속 S&P 500 및 Nasdaq 하락 출발",
+   "t_id": "S&P 500 dan Nasdaq Dibuka Memerah Saat Kekhawatiran AI Hantam Nvidia dan Pembuat Cip"
+  },
+  {
    "ts": "2026-09-14T20:37:00+07:00",
    "date": "2026-09-14",
    "time": "20:37",
@@ -16694,8 +16747,8 @@
    "url": "https://www.marketwatch.com/story/how-investors-are-reacting-to-the-ai-pause-calls-from-anthropic-and-other-frontier-labs-f69391b8?mod=mw_rss_topstories",
    "g": 1,
    "img": "https://images.mktw.net/im-15629837",
-   "t_ko": "AI 속도 조절 요구에 Micron·Nvidia 등 반도체주 약세",
-   "t_id": "Micron, Nvidia dan Saham Chip Lainnya Jatuh Usai Pemimpin Teknologi Serukan Pelambatan AI. Ini yang Perlu Diketahui"
+   "t_ko": "Micron·Nvidia 등 반도체주, AI 속도 조절 요구에 동반 하락",
+   "t_id": "Micron, Nvidia dan Saham Cip Anjlok Usai Seruan Perlambatan AI"
   },
   {
    "ts": "2026-09-14T20:33:12+07:00",
@@ -16707,8 +16760,47 @@
    "url": "https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08?syn-25a6b1a6=1",
    "g": 1,
    "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F0507c6a7-e813-450e-8ac3-6a2f383a9f36.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "주요 AI 그룹의 속도 조절 요구에 미국 기술주 하락",
-   "t_id": "Saham Teknologi AS Jatuh Usai Grup AI Besar Serukan Pelambatan"
+   "t_ko": "대형 AI 기업의 속도 조절 요구에 미국 기술주 하락",
+   "t_id": "Saham Teknologi AS Anjlok Usai Grup AI Besar Serukan Perlambatan"
+  },
+  {
+   "ts": "2026-09-14T20:33:08+07:00",
+   "date": "2026-09-14",
+   "time": "20:33",
+   "src": "Yahoo Finance",
+   "t": "Costco rations Kirkland motor oil, raises price to $57.99",
+   "tags": [],
+   "url": "https://finance.yahoo.com/energy/articles/costco-rations-kirkland-motor-oil-133308837.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/quartz_855/d641521426fc253f12a30f067a979533.jpg",
+   "t_ko": "Costco, Kirkland 엔진오일 배급제 도입 및 가격 USD 57.99로 인상",
+   "t_id": "Costco Batasi Oli Mesin Kirkland, Kerek Harga Jadi $57,99"
+  },
+  {
+   "ts": "2026-09-14T20:30:59+07:00",
+   "date": "2026-09-14",
+   "time": "20:30",
+   "src": "Yahoo Finance",
+   "t": "Tesla Could Be Building Its Next Trillion-Dollar Opportunity. Here’s Where Its Headed",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-could-building-next-trillion-133059317.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/098cea6619aa0445a161974ee69e8705.jpg",
+   "t_ko": "Tesla, 다음 조달 기회로 차세대 성장 동력 구축 전망",
+   "t_id": "Tesla Siap Bangun Peluang Triliunan Dolar Berikutnya, Ini Arahnya"
+  },
+  {
+   "ts": "2026-09-14T20:30:14+07:00",
+   "date": "2026-09-14",
+   "time": "20:30",
+   "src": "Yahoo Finance",
+   "t": "This Analyst Says A Full Reversion to the Mean Would Take the S&P 500 From 7,000 to 2,500",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/analyst-says-full-reversion-mean-133014828.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/f5d2574118daead0256105e3ac658d81.jpg",
+   "t_ko": "애널리스트, 평균 회귀 시 S&P 500 7,000에서 2,500으로 하락 전망",
+   "t_id": "Analis Sebut Reversi Penuh ke Rata-Rata Bisa Bawa S&P 500 dari 7.000 ke 2.500"
   },
   {
    "ts": "2026-09-14T20:28:00+07:00",
@@ -16732,7 +16824,7 @@
    "url": "https://finance.detik.com/moneter/d-8662772/penyaluran-kur-tembus-rp-219-62-triliun-diterima-3-41-juta-debitur",
    "img": "https://akcdn.detik.net.id/community/media/visual/2022/04/23/rupiah_169.jpeg?w=360&q=90",
    "t_id": "Penyaluran KUR Tembus Rp 219,62 Triliun, Diterima 3,41 Juta Debitur",
-   "t_ko": "인민신용대출(KUR) Rp219.62조 집행 — 341만 명 수혜"
+   "t_ko": "KUR 대출 집행액 Rp219.62조 돌파 — 수혜 차주 341만 명"
   },
   {
    "ts": "2026-09-14T20:24:11+07:00",
@@ -16744,20 +16836,7 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8662837/gibran-ucapkan-selamat-suahasil-jadi-menkeu-figur-tepat-kelola-apbn",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/15/wapres-gibran-kukuhkan-paskibraka-2026-1786788752579_169.jpeg?w=360&q=90",
    "t_id": "Gibran Ucapkan Selamat Suahasil Jadi Menkeu: Figur Tepat Kelola APBN",
-   "t_ko": "Gibran, Suahasil 재무차관 임명 축하 — 예산 운용 적임자"
-  },
-  {
-   "ts": "2026-09-14T20:23:34+07:00",
-   "date": "2026-09-14",
-   "time": "20:23",
-   "src": "Yahoo Finance",
-   "t": "Chip Stocks Tumble as AI Pacing Call Reaches Beyond Memory: Intel Drops 7%, AMD Sinks 6%, NVIDIA Pulls Back",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/chip-stocks-tumble-ai-pacing-132334555.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/0b4bc36eca336ee2323794f659a74294.jpg",
-   "t_ko": "AI 속도 조절론 확산에 반도체주 급락 — Intel 7%, AMD 6%, NVIDIA 약세",
-   "t_id": "Saham Chip Anjlok Seiring Seruan Batasi Laju AI Melampaui Memori: Intel Turun 7%, AMD Anjlok 6%, NVIDIA Terkoreksi"
+   "t_ko": "Gibran, Suahasil 재무장관 취임 축하 — 국가예산 관리 적임자"
   },
   {
    "ts": "2026-09-14T20:23:17+07:00",
@@ -16769,8 +16848,8 @@
    "url": "https://www.investors.com/news/technology/definium-therapeutics-synthetic-lsd-generalized-anxiety-disorder/?src=A00220&yptr=yahoo",
    "g": 1,
    "img": "https://media.zenfs.com/en/ibd.com/8d9185f4c4de33ab43f0a78ebc37611f.jpg",
-   "t_ko": "올해 190% 급등한 Definium, 합성 LSD 성과에 주가 상승",
-   "t_id": "Definium, Naik 190% Tahun Ini, Kembali Berjaya dengan LSD Sintetik; Saham Terbang"
+   "t_ko": "올해 190% 급등한 Definium, 합성 LSD로 주가 추가 상승",
+   "t_id": "Definium, Melesat 190% Tahun Ini, Sukses Lagi Lewat LSD Sintetis; Saham Terbang"
   },
   {
    "ts": "2026-09-14T20:20:31+07:00",
@@ -16796,32 +16875,6 @@
    "img": "https://images.mktw.net/im-67332197",
    "t_ko": "Novo Nordisk, 비만약 경쟁 대응 위해 사명서 'Nordisk' 삭제",
    "t_id": "Novo Buang 'Nordisk' dalam Pembaruan Korporat untuk Saingi Lilly di Pasar Diet"
-  },
-  {
-   "ts": "2026-09-14T20:19:04+07:00",
-   "date": "2026-09-14",
-   "time": "20:19",
-   "src": "Yahoo Finance",
-   "t": "Pfizer’s 6% Yield Masks a Fragile Dividend Story",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/pfizer-6-yield-masks-fragile-131904151.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/2b514f21832400cad8f72d70305c8a19.jpg",
-   "t_ko": "Pfizer 6% 배당수익률 뒤에 가려진 취약한 배당 안정성",
-   "t_id": "Imbal Hasil 6% Pfizer Tutupi Rapuhnya Kisah Dividen"
-  },
-  {
-   "ts": "2026-09-14T20:18:13+07:00",
-   "date": "2026-09-14",
-   "time": "20:18",
-   "src": "Yahoo Finance",
-   "t": "Memory Stocks Lead AI Selloff as Anthropic and OpenAI Chiefs Urge Slower Development: Micron and SanDisk Sink 6%, SK Hynix Drops 7%",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/memory-stocks-lead-ai-selloff-131813092.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/afc23c40a0b3692cf73891f6468642af.jpg",
-   "t_ko": "AI 개발 속도 조절 촉구에 Micron·SanDisk 6% 및 SK하이닉스 7% 하락",
-   "t_id": "Saham Memori Pimpin Aksi Jual AI Saat Pimpinan Anthropic dan OpenAI Serukan Pelambatan Pengembangan: Micron dan SanDisk Anjlok 6%, SK Hynix Turun 7%"
   },
   {
    "ts": "2026-09-14T20:17:00+07:00",
@@ -16872,18 +16925,6 @@
    "t_id": "Kemenkeu Anggarkan Rp 31,1 Triliun untuk Pengangkatan P3K  Jadi Penuh Waktu"
   },
   {
-   "ts": "2026-09-14T20:11:41+07:00",
-   "date": "2026-09-14",
-   "time": "20:11",
-   "src": "CNBC",
-   "t": "10-year Treasury yield nears 5% ahead of Fed rate decision this week",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
-   "g": 1,
-   "t_ko": "이번 주 연준 금리 결정을 앞두고 10년물 미 국채금리 5% 육박",
-   "t_id": "Yield US Treasury 10 Tahun Mendekati 5% Jelang Keputusan Suku Bunga The Fed Pekan Ini"
-  },
-  {
    "ts": "2026-09-14T20:09:00+07:00",
    "date": "2026-09-14",
    "time": "20:09",
@@ -16896,18 +16937,6 @@
    "t_id": "Rosan Akan Bahas Skema Dividen Danantara Masuk Kas Negara dengan Suahasil"
   },
   {
-   "ts": "2026-09-14T20:08:13+07:00",
-   "date": "2026-09-14",
-   "time": "20:08",
-   "src": "CNBC",
-   "t": "Satellite images show extent of damage to Saudi Arabia’s oil pipeline that bypasses Strait of Hormuz",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/iran-war-saudi-arabia-east-west-pipeline-oil.html",
-   "g": 1,
-   "t_ko": "위성 사진으로 확인된 사우디 우회 송유관 피습 피해 규모",
-   "t_id": "Citra Satelit Ungkap Dampak Kerusakan Pipa Minyak Arab Saudi yang Lewati Selat Hormuz"
-  },
-  {
    "ts": "2026-09-14T20:05:00+07:00",
    "date": "2026-09-14",
    "time": "20:05",
@@ -16917,18 +16946,6 @@
    "url": "https://mediaindonesia.com/ekonomi/933324/permintaan-pasar-dorong-pra-penjualan-meningkat",
    "t_ko": "시장 수요로 선판매 증가",
    "t_id": "Permintaan Pasar Dorong Pra-Penjualan Meningkat"
-  },
-  {
-   "ts": "2026-09-14T20:02:31+07:00",
-   "date": "2026-09-14",
-   "time": "20:02",
-   "src": "Bloomberg",
-   "t": "Stocks Fall as AI Slowdown Fears, Oil Jitters Hit Sentiment",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-14/stocks-fall-as-ai-slowdown-fears-oil-jitters-hit-sentiment",
-   "g": 1,
-   "t_ko": "AI 성장 둔화 우려와 유가 불안에 증시 하락",
-   "t_id": "Saham Anjlok Ditekan Kekhawatiran Perlambatan AI dan Gejolak Minyak"
   },
   {
    "ts": "2026-09-14T20:02:00+07:00",
@@ -17057,17 +17074,6 @@
    "url": "https://mediaindonesia.com/ekonomi/933298/apkarindo-saatnya-karet-rakyat-bangkit",
    "t_ko": "APKARINDO, 소농 고무 산업 부흥 적기 진단",
    "t_id": "APKARINDO: Saatnya Karet Rakyat Bangkit"
-  },
-  {
-   "ts": "2026-09-14T19:17:00+07:00",
-   "date": "2026-09-14",
-   "time": "19:17",
-   "src": "Media Indonesia",
-   "t": "Industri Keramik Menjerit! Pasokan Gas Dibatasi 80 Persen",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/933296/industri-keramik-menjerit-pasokan-gas-dibatasi-80-persen",
-   "t_ko": "가스 공급 80% 제한에 세라믹 산업계 반발",
-   "t_id": "Industri Keramik Menjerit! Pasokan Gas Dibatasi 80 Persen"
   }
  ],
  "kisi_news": [
@@ -17251,9 +17257,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.985%",
-   "d": 0.2,
-   "ytd": 19.75,
+   "v": "4.983%",
+   "d": 0.16,
+   "ytd": 19.7,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17274,9 +17280,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.64",
-   "d": 0.31,
-   "ytd": 1.38,
+   "v": "99.65",
+   "d": 0.33,
+   "ytd": 1.4,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17286,9 +17292,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.67",
-   "d": 0.41,
-   "ytd": 80.55,
+   "v": "103.74",
+   "d": 0.47,
+   "ytd": 80.67,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17298,9 +17304,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,314.2",
-   "d": -1.29,
-   "ytd": -0.26,
+   "v": "4,310.8",
+   "d": -1.37,
+   "ytd": -0.34,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17322,9 +17328,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,290",
-   "d": -0.86,
-   "ytd": -2.35,
+   "v": "16,292",
+   "d": -0.85,
+   "ytd": -2.33,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20219,8 +20225,8 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-14 20:34",
-  "pc_age_min": 11,
+  "idx_from_pc": "2026-09-14 20:42",
+  "pc_age_min": 7,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21725,20 +21731,6 @@
    "srcs": 3
   },
   {
-   "ts": "2026-09-14T11:26:21+07:00",
-   "date": "2026-09-14",
-   "time": "11:26",
-   "src": "Bloomberg",
-   "t": "Emerging Currencies Fall as Oil Nears $110 at Start of Fed Week",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-14/emerging-market-stocks-decline-on-mideast-tensions-rate-risks",
-   "g": 1,
-   "score": 316.0,
-   "srcs": 6,
-   "t_ko": "연준 회의 주간 돌입 속 유가 배럴당 110달러 근접에 신흥국 통화 약세",
-   "t_id": "Mata Uang Berkembang Jatuh Saat Minyak Dekati USD 110 di Awal Pekan The Fed"
-  },
-  {
    "ts": "2026-09-14T15:34:00+07:00",
    "date": "2026-09-14",
    "time": "15:34",
@@ -21752,6 +21744,20 @@
    "srcs": 4,
    "t_ko": "유가 상승 및 전 세계 AI 관련주 급락에 Nasdaq 선물 하락",
    "t_id": "Minyak Melonjak, Kontrak Berjangka Nasdaq Merosot Saat Saham Terkait AI Anjlok Global"
+  },
+  {
+   "ts": "2026-09-14T20:11:41+07:00",
+   "date": "2026-09-14",
+   "time": "20:11",
+   "src": "CNBC",
+   "t": "10-year Treasury yield nears 5% ahead of Fed rate decision this week",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
+   "g": 1,
+   "score": 314.0,
+   "srcs": 3,
+   "t_ko": "이번 주 연준 금리 결정을 앞두고 10년물 미 국채금리 5% 육박",
+   "t_id": "Yield US Treasury 10 Tahun Mendekati 5% Jelang Keputusan Suku Bunga The Fed Pekan Ini"
   }
  ],
  "daylog": {
@@ -21994,16 +22000,16 @@
   "2026-09-14": {
    "news": [
     {
-     "t": "Emerging Currencies Fall as Oil Nears $110 at Start of Fed Week",
-     "ko": "연준 회의 주간 돌입 속 유가 배럴당 110달러 근접에 신흥국 통화 약세",
-     "id": "Mata Uang Berkembang Jatuh Saat Minyak Dekati USD 110 di Awal Pekan The Fed",
+     "t": "Oil Jumps, Nasdaq Futures Slide as AI-Related Stocks Tumble Worldwide",
+     "ko": "유가 상승 및 전 세계 AI 관련주 급락에 Nasdaq 선물 하락",
+     "id": "Minyak Melonjak, Kontrak Berjangka Nasdaq Merosot Saat Saham Terkait AI Anjlok Global",
      "ai_ko": "",
      "ai_id": "",
-     "src": "Bloomberg",
-     "url": "https://www.bloomberg.com/news/articles/2026-09-14/emerging-market-stocks-decline-on-mideast-tensions-rate-risks",
-     "time": "11:26",
+     "src": "WSJ",
+     "url": "https://www.wsj.com/finance/stocks/oil-jumps-nasdaq-futures-slide-as-ai-related-stocks-tumble-worldwide-eaaf198b?mod=rss_markets_main",
+     "time": "15:34",
      "tags": [],
-     "sc": 316.0,
+     "sc": 314.5,
      "slot": "global"
     },
     {
