@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 21:10",
+ "updated": "2026-09-14 21:22",
  "delay_min": 15,
- "fx_basis": "13.07 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,349 · 20:55 Yahoo",
- "idr_per_krw": 13.0715,
+ "fx_basis": "13.08 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,348 · 20:55 Yahoo",
+ "idr_per_krw": 13.0828,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 20:55",
+   "asof": "investing.com 21:20",
    "unit": "bp"
   }
  ],
@@ -337,15 +337,15 @@
   "prev": 6541.38,
   "ytd": -24.42,
   "m1": 2.07,
-  "value_idr": 16438170377728.004,
+  "value_idr": 16438122736928.004,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 21:00",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-14 21:17",
   "rank_asof": null,
   "rank_date": "2026-09-14",
   "adv": 231,
   "dec": 456,
-  "unch": 146,
+  "unch": 145,
   "foreign_net_idr": -728667450249.4258,
   "foreign_buy": 3991314699946.703,
   "foreign_sell": 4719982150196.129,
@@ -12487,22 +12487,6 @@
    "live": 0
   },
   {
-   "t": "AMAN",
-   "n": "Makmur Berkah Amanda",
-   "px": 226.0,
-   "prev": 226.0,
-   "pct": 0.0,
-   "val": 47640800.0,
-   "vol": 210800.0,
-   "sh": 3873500000,
-   "mcap": 875411000000.0,
-   "hi": 230.0,
-   "lo": 222.0,
-   "ratio": 0.6,
-   "fnet": -8935625.78125,
-   "live": 0
-  },
-  {
    "t": "PSGO",
    "n": "Palma Serasih",
    "px": 194.0,
@@ -15138,11 +15122,11 @@
   {
    "name": "부동산",
    "name_id": "Properti",
-   "n": 79,
+   "n": 78,
    "adv": 24,
    "dec": 38,
-   "val": 321956393933.3332,
-   "mcap": 450618198861605.0,
+   "val": 321908753133.3332,
+   "mcap": 449742787861605.0,
    "top": [
     {
      "t": "MPRO",
@@ -15185,7 +15169,7 @@
      "pct": 0
     }
    ],
-   "fnet": -19357013244,
+   "fnet": -19348077618,
    "pct": -0.38,
    "fbuy_top": [
     {
@@ -15699,10 +15683,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7623.09,
+   "px": 7609.91,
    "prev": 7655.5,
-   "pct": -0.42,
-   "asof": "21:05",
+   "pct": -0.6,
+   "asof": "21:20",
    "live": true,
    "spark": [
     7599.57,
@@ -15712,17 +15696,20 @@
     7615.16,
     7612.76,
     7617.53,
-    7623.09
+    7621.98,
+    7618.47,
+    7612.2,
+    7609.91
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26146.66,
+   "px": 26094.31,
    "prev": 26333.03,
-   "pct": -0.71,
-   "asof": "21:05",
+   "pct": -0.91,
+   "asof": "21:20",
    "live": true,
    "spark": [
     26018.42,
@@ -15732,17 +15719,20 @@
     26114.64,
     26108.04,
     26118.15,
-    26146.66
+    26142.92,
+    26141.16,
+    26097.4,
+    26094.31
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52503.23,
+   "px": 52397.0,
    "prev": 52562.77,
-   "pct": -0.11,
-   "asof": "21:05",
+   "pct": -0.32,
+   "asof": "21:20",
    "live": true,
    "spark": [
     52421.7,
@@ -15752,7 +15742,10 @@
     52437.1,
     52413.74,
     52475.44,
-    52503.23
+    52498.9,
+    52455.16,
+    52430.4,
+    52397.0
    ]
   },
   {
@@ -16652,6 +16645,54 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T21:21:18.946997+07:00",
+   "date": "2026-09-14",
+   "time": "21:21",
+   "src": "Jawa Pos",
+   "t": "Tunggu Ekonomi Membaik! Menkeu Purbaya Sebut Pajak Marketplace 0,5 Persen Batal Berlaku Agustus",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609140298/tunggu-ekonomi-membaik-menkeu-purbaya-sebut-pajak-marketplace-05-persen-batal-berlaku-agustus",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/menteri-keuangan-purbaya-yudhi-sadewa-usai-menyampaikan-tanggapan-pemerintah-pada-rapat-paripurna-ke-3-masa-persidangan-i-tahun-sidang-2026-2027-di-kompleks-parlemen-senayan-jakarta-kamis-2782026-salman-toyibijawa-pos-MNkL2.webp",
+   "t_ko": "경제 회복 대기 — Purbaya 재무장관, 8월 마켓플레이스 세금 0.5% 부과 철회",
+   "t_id": "Tunggu Ekonomi Membaik! Menkeu Purbaya Sebut Pajak Marketplace 0,5 Persen Batal Berlaku Agustus"
+  },
+  {
+   "ts": "2026-09-14T21:20:46+07:00",
+   "date": "2026-09-14",
+   "time": "21:20",
+   "src": "CNBC",
+   "t": "10-year Treasury yield hits 5% for first time since 2023 as traders brace for Fed decision this week",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
+   "g": 1,
+   "t_ko": "연준 결정 앞두고 10년물 국채금리 2023년 이후 처음 5% 돌파",
+   "t_id": "Imbal Hasil US Treasury 10 Tahun Tembus 5% untuk Pertama Kalinya Sejak 2023 Saat Trader Antisipasi Keputusan The Fed Pekan Ini"
+  },
+  {
+   "ts": "2026-09-14T21:19:38+07:00",
+   "date": "2026-09-14",
+   "time": "21:19",
+   "src": "CNBC",
+   "t": "Trump says no need for more AI regulation, slams Anthropic CEO Dario Amodei",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
+   "g": 1,
+   "t_ko": "트럼프, 추가 AI 규제 불필요 입장 밝히며 Anthropic CEO 비판",
+   "t_id": "Trump Sebut Tak Perlu Regulasi AI Tambahan, Kritik CEO Anthropic Dario Amodei"
+  },
+  {
+   "ts": "2026-09-14T21:19:06+07:00",
+   "date": "2026-09-14",
+   "time": "21:19",
+   "src": "CNBC",
+   "t": "What Amodei's AI slowdown could mean for Anthropic's imminent IPO",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
+   "g": 1,
+   "t_ko": "Amodei의 AI 둔화 우려가 Anthropic의 임박한 상장에 미칠 영향",
+   "t_id": "Dampak Perlambatan AI Amodei bagi IPO Anthropic yang Kian Dekat"
+  },
+  {
    "ts": "2026-09-14T21:06:31+07:00",
    "date": "2026-09-14",
    "time": "21:06",
@@ -16660,7 +16701,7 @@
    "tags": [],
    "url": "https://www.channelnewsasia.com/business/trump-says-there-sick-conspiracy-against-ai-data-centers-6383796",
    "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--03bPbbMF--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T140631Z_1_LYNXMPEM8D160_RTROPTP_3_USA-TRUMP-IRELAND.JPG?itok=IRNde2SR",
+   "img": "https://dam.mediacorp.sg/image/upload/s--tSrV98Mf--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T140853Z_1_LYNXMPEM8D162_RTROPTP_3_USA-CHINA-AUTO.JPG?itok=7UbuYMit",
    "t_ko": "Trump, AI·데이터센터 관련 음모 존재 주장",
    "t_id": "Trump Sebut Ada 'Konspirasi Sakit' terhadap AI dan Pusat Data"
   },
@@ -16684,8 +16725,8 @@
    "t": "Dari Ruang Belajar ke Ekosistem Bisnis, Solopreneur Kini Dibidik untuk Naik Kelas",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/933341/dari-ruang-belajar-ke-ekosistem-bisnis-solopreneur-kini-dibidik-untuk-naik-kelas",
-   "t_id": "Dari Ruang Belajar ke Ekosistem Bisnis, Solopreneur Kini Dibidik untuk Naik Kelas",
-   "t_ko": "솔로프리너 대상 비즈니스 생태계 지원 확대"
+   "t_ko": "솔로프리너 대상 비즈니스 생태계 지원 확대",
+   "t_id": "Dari Ruang Belajar ke Ekosistem Bisnis, Solopreneur Kini Dibidik untuk Naik Kelas"
   },
   {
    "ts": "2026-09-14T21:04:53+07:00",
@@ -16699,6 +16740,19 @@
    "img": "https://dam.mediacorp.sg/image/upload/s--XpH02uFF--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T115448Z_1_LYNXMPEM8D0XU_RTROPTP_3_USA-BONDS-BUYBACKS.JPG?itok=-kyBb87a",
    "t_ko": "중동 갈등 유가 상승·연준 금리 인상 우려에 달러화 강세",
    "t_id": "Dolar Menguat Seiring Konflik Timur Tengah Kerek Minyak, Bayang-bayang Kenaikan Suku Bunga The Fed"
+  },
+  {
+   "ts": "2026-09-14T21:03:00+07:00",
+   "date": "2026-09-14",
+   "time": "21:03",
+   "src": "Yahoo Finance",
+   "t": "Kalshi To Offer U.S. Stock And Commodities Trading",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/options/articles/kalshi-offer-u-stock-commodities-140300562.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/cryptoprowl_304/761d6c6b8042ea7499ed54a2c8f86917.jpg",
+   "t_ko": "Kalshi, 미국 주식 및 원자재 거래 서비스 도입 예정",
+   "t_id": "Kalshi Akan Sediakan Perdagangan Saham dan Komoditas AS"
   },
   {
    "ts": "2026-09-14T21:03:00+07:00",
@@ -16725,6 +16779,19 @@
    "t_id": "Ekonom Ingatkan Risiko Jatuh Tempo Utang Luar Negeri Makin Pendek"
   },
   {
+   "ts": "2026-09-14T21:01:34+07:00",
+   "date": "2026-09-14",
+   "time": "21:01",
+   "src": "Yahoo Finance",
+   "t": "Tech stocks today: AI warnings send shock through chip stocks",
+   "tags": [],
+   "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-ai-warnings-send-shock-through-chip-stocks-140134624.html",
+   "g": 1,
+   "img": "https://s.yimg.com/uu/api/res/1.2/8wa5sKEW0eDYzHts4LoPUw--~B/aD00OTA5O3c9NzM2MzthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-09/dafed0d2-c6d2-44f2-8409-b51b9f5276d1",
+   "t_ko": "기술주 동향 — AI 경고에 반도체주 충격 확산",
+   "t_id": "Saham Teknologi Hari Ini: Peringatan AI Guncang Saham Semikonduktor"
+  },
+  {
    "ts": "2026-09-14T21:00:10+07:00",
    "date": "2026-09-14",
    "time": "21:00",
@@ -16745,8 +16812,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121503/tanggapan-danantara-soal-skenario-ambil-sebagian-saham-bei",
    "img": "https://images.bloombergtechnoz.com/data/2025/06/image-20250629173910.jpeg",
-   "t_id": "Tanggapan Danantara Soal Skenario Ambil Sebagian Saham BEI",
-   "t_ko": "Danantara, BEI 지분 일부 인수 시나리오 입장 표명"
+   "t_ko": "Danantara, BEI 지분 일부 인수 시나리오 입장 표명",
+   "t_id": "Tanggapan Danantara Soal Skenario Ambil Sebagian Saham BEI"
   },
   {
    "ts": "2026-09-14T21:00:00+07:00",
@@ -16757,8 +16824,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8662707/menkeu-suahasil-defisit-apbn-akan-tetap-di-bawah-3",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/pesan-suahasil-nazara-usai-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan-1789383969594_169.jpeg?w=360&q=90",
-   "t_id": "Menkeu Suahasil: Defisit APBN Akan Tetap di Bawah 3%",
-   "t_ko": "Suahasil Nazara 재무차관, APBN 적자 3% 미만 유지 전망"
+   "t_ko": "Suahasil Nazara 재무차관, APBN 적자 3% 미만 유지 전망",
+   "t_id": "Menkeu Suahasil: Defisit APBN Akan Tetap di Bawah 3%"
   },
   {
    "ts": "2026-09-14T20:56:25+07:00",
@@ -16782,19 +16849,6 @@
    "url": "https://mediaindonesia.com/ekonomi/933340/ekonom-risiko-jatuh-tempo-utang-luar-negeri-makin-pendek",
    "t_ko": "단기 외채 만기 집중 리스크에 전문가 경고",
    "t_id": "Ekonom: Risiko Jatuh Tempo Utang Luar Negeri Makin Pendek"
-  },
-  {
-   "ts": "2026-09-14T20:50:00+07:00",
-   "date": "2026-09-14",
-   "time": "20:50",
-   "src": "Yahoo Finance",
-   "t": "This Surprising Stock Has Been Stanley Druckenmiller's No. 1 Position for 8 Straight Quarters. Is It a No-Brainer Buy?",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/surprising-stock-stanley-druckenmillers-no-135000908.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/492fd0c545339cf52d49fc2e2fb409ee.jpg",
-   "t_ko": "Stanley Druckenmiller, 8개 분기 연속 특정 종목 1위 유지",
-   "t_id": "Saham Mengejutkan Ini Jadi Posisi No. 1 Stanley Druckenmiller 8 Kuartal Beruntun, Layak Dibeli?"
   },
   {
    "ts": "2026-09-14T20:49:36+07:00",
@@ -16933,56 +16987,6 @@
    "t_id": "Bos OpenAI Sam Altman Beberkan Alasan Industri AI Ingin Melambat: 'Kita Bisa Kehilangan Kendali'"
   },
   {
-   "ts": "2026-09-14T20:37:37+07:00",
-   "date": "2026-09-14",
-   "time": "20:37",
-   "src": "Reuters",
-   "t": "S&P 500 and Nasdaq open lower as AI jitters hit Nvidia, chipmakers",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYVB5TUc4VTc5MGdNMjVWcVYxUUszYjdXU3hrVnZXbVRCRm40Z3JBX3BhTElKaXVFQmU4SW82WWRwLVdxcGFTVVhPclllM25kSzR0MWdqUmU5YjQydl9MZDhLZ1MzQmF0b01UY3MxaWx0VkxOMjJUQzhmbHJPQjQzdXJMWkJ2OGs5R0ZQc2FjeVpEdjZkM2VqMC1aeGhXSm8?oc=5",
-   "g": 1,
-   "t_ko": "Nvidia 등 반도체주 약세 속 S&P 500 및 Nasdaq 하락 출발",
-   "t_id": "S&P 500 dan Nasdaq Dibuka Memerah Saat Kekhawatiran AI Hantam Nvidia dan Pembuat Cip"
-  },
-  {
-   "ts": "2026-09-14T20:37:00+07:00",
-   "date": "2026-09-14",
-   "time": "20:37",
-   "src": "MarketWatch",
-   "t": "Micron, Nvidia and other chip stocks fall after tech leaders call for an AI slowdown. Here’s what to know.",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/how-investors-are-reacting-to-the-ai-pause-calls-from-anthropic-and-other-frontier-labs-f69391b8?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-15629837",
-   "t_ko": "Micron·Nvidia 등 반도체주, AI 속도 조절 요구에 동반 하락",
-   "t_id": "Micron, Nvidia dan Saham Cip Anjlok Usai Seruan Perlambatan AI"
-  },
-  {
-   "ts": "2026-09-14T20:33:12+07:00",
-   "date": "2026-09-14",
-   "time": "20:33",
-   "src": "FT",
-   "t": "US tech stocks fall after big AI groups call for slowdown",
-   "tags": [],
-   "url": "https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F0507c6a7-e813-450e-8ac3-6a2f383a9f36.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "대형 AI 기업의 속도 조절 요구에 미국 기술주 하락",
-   "t_id": "Saham Teknologi AS Anjlok Usai Grup AI Besar Serukan Perlambatan"
-  },
-  {
-   "ts": "2026-09-14T20:31:14+07:00",
-   "date": "2026-09-14",
-   "time": "20:31",
-   "src": "Reuters",
-   "t": "Focus: Unwanted in the US, old oil equipment finds a new home in Venezuela",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVmgtV0piZDBLUGtOM21nQ18yRkdqUUFpMzlKWXVESjBFWFVZT2FEcFFaYXNLRGtjY0RsaGZreUpUN2dsSGdobVladGVsUklvbWxzS2xqSk15SE83MFJJYjlza2s0WWpRX2Q3eFJreWFISjZ0Sl9lM20wcUduQll3VE9OMWRPOEEtQ1ktbk5KbEUtdzcteUFlR1hEV2lsbEZYNUNVZkpPaS1tZw?oc=5",
-   "g": 1,
-   "t_ko": "미국 기피 중고 장비, 베네수엘라로 이전",
-   "t_id": "Fokus: Peralatan Minyak Tua Tak Diinginkan di AS Temukan Rumah Baru di Venezuela"
-  },
-  {
    "ts": "2026-09-14T20:28:00+07:00",
    "date": "2026-09-14",
    "time": "20:28",
@@ -17075,18 +17079,6 @@
    "url": "https://mediaindonesia.com/ekonomi/933323/danantara-pastikan-handover-kcic-ke-kemenkeu-tetap-berjalan",
    "t_ko": "Danantara, KCIC의 재무부 이관 차질 없이 진행 확인",
    "t_id": "Danantara Pastikan Handover KCIC ke Kemenkeu Tetap Berjalan"
-  },
-  {
-   "ts": "2026-09-14T20:00:00+07:00",
-   "date": "2026-09-14",
-   "time": "20:00",
-   "src": "Detik",
-   "t": "Bahlil Pastikan Cadangan BBM di Atas 20 Hari",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8662784/bahlil-pastikan-cadangan-bbm-di-atas-20-hari",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/04/bahlil-lahadalia-1785840108228_169.jpeg?w=360&q=90",
-   "t_ko": "Bahlil, 연료유 재고 20일 이상 유지 확인",
-   "t_id": "Bahlil Pastikan Cadangan BBM di Atas 20 Hari"
   }
  ],
  "kisi_news": [
@@ -17258,9 +17250,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.06",
-   "d": 0.2,
-   "ytd": 12.47,
+   "v": "13.07",
+   "d": 0.28,
+   "ytd": 12.56,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17270,9 +17262,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.992%",
-   "d": 0.34,
-   "ytd": 19.91,
+   "v": "5.000%",
+   "d": 0.5,
+   "ytd": 20.11,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17293,9 +17285,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.72",
-   "d": 0.4,
-   "ytd": 1.47,
+   "v": "99.66",
+   "d": 0.34,
+   "ytd": 1.41,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17305,9 +17297,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "104.26",
-   "d": 0.98,
-   "ytd": 81.57,
+   "v": "104.00",
+   "d": 0.73,
+   "ytd": 81.12,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17317,9 +17309,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,311.5",
-   "d": -1.35,
-   "ytd": -0.33,
+   "v": "4,314.7",
+   "d": -1.28,
+   "ytd": -0.25,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17341,9 +17333,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,290",
-   "d": -0.86,
-   "ytd": -2.35,
+   "v": "16,301",
+   "d": -0.8,
+   "ytd": -2.28,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -19929,8 +19921,8 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-14 21:00",
-  "pc_age_min": 10,
+  "idx_from_pc": "2026-09-14 21:17",
+  "pc_age_min": 5,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21446,7 +21438,7 @@
    "t_ko": "남아프리카공화국 랜드화, 유가 상승·연준 회의 경계에 1% 하락",
    "t_id": "Rand Afrika Selatan Anjlok Lebih dari 1% saat Minyak Melonjak dan Investor Menanti Rapat The Fed",
    "score": 318.0,
-   "srcs": 6
+   "srcs": 5
   },
   {
    "ts": "2026-09-14T15:44:44+07:00",
@@ -29044,6 +29036,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-14 20:56"
+  "announcements": "2026-09-14 21:10"
  }
 }
