@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 18:21",
+ "updated": "2026-09-14 18:24",
  "delay_min": 15,
  "fx_basis": "13.07 IDR/KRW · USD/IDR 17,595 · USD/KRW 1,346 · 11:30 Yahoo",
- "idr_per_krw": 13.0732,
+ "idr_per_krw": 13.0701,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 18:17",
+   "asof": "investing.com 18:12",
    "unit": "bp"
   }
  ],
@@ -337,13 +337,13 @@
   "prev": 6541.38,
   "ytd": -24.42,
   "m1": 2.07,
-  "value_idr": 16438170377728.004,
+  "value_idr": 16432280546928.004,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 18:14",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-14 18:14",
   "rank_asof": null,
   "rank_date": "2026-09-14",
-  "adv": 231,
+  "adv": 230,
   "dec": 456,
   "unch": 146,
   "foreign_net_idr": -728667450249.4258,
@@ -4292,22 +4292,6 @@
    "lo": 266.0,
    "ratio": 0.4,
    "fnet": 821992028.7061336,
-   "live": 0
-  },
-  {
-   "t": "AYLS",
-   "n": "Arkayana Lestari Grup",
-   "px": 156.0,
-   "prev": 150.0,
-   "pct": 4.0,
-   "val": 5889830800.0,
-   "vol": 36582800.0,
-   "sh": 853423236,
-   "mcap": 133134024816.0,
-   "hi": 182.0,
-   "lo": 145.0,
-   "ratio": 11.1,
-   "fnet": 0.0,
    "live": 0
   },
   {
@@ -14459,11 +14443,11 @@
   {
    "name": "소재",
    "name_id": "Barang Baku",
-   "n": 93,
-   "adv": 24,
+   "n": 92,
+   "adv": 23,
    "dec": 58,
-   "val": 4140417484733.334,
-   "mcap": 1568102585035431.0,
+   "val": 4134527653933.334,
+   "mcap": 1567969451010615.0,
    "top": [
     {
      "t": "AMMN",
@@ -16847,9 +16831,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-14T18:19:56.722197+07:00",
+   "ts": "2026-09-14T18:23:42.500376+07:00",
    "date": "2026-09-14",
-   "time": "18:19",
+   "time": "18:23",
    "src": "Jawa Pos",
    "t": "Harga Emas Antam di Pegadaian Naik Jadi Rp 2.642.000 per Gram Pada Senin 14 September 2026",
    "tags": [],
@@ -16858,6 +16842,18 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2025/06/27/emas-antam-1605154587.jpg",
    "t_ko": "14일 Pegadaian Antam 금 가격 그램당 Rp 2,642,000으로 상승",
    "t_id": "Harga Emas Antam di Pegadaian Naik Jadi Rp 2.642.000 per Gram Pada Senin 14 September 2026"
+  },
+  {
+   "ts": "2026-09-14T18:20:00+07:00",
+   "date": "2026-09-14",
+   "time": "18:20",
+   "src": "IDNFinancials",
+   "t": "Purbaya asks Pemda to limit bank deposits, optimize spending",
+   "tags": [],
+   "url": "https://www.idnfinancials.com/news/68820/purbaya-asks-pemda-to-limit-bank-deposits-optimize-spending",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/PURBAYA-15052026.jpg",
+   "t_ko": "Purbaya, 지자체에 예금 축소 및 재정 집행 효율화 주문",
+   "t_id": "Purbaya Minta Pemda Batasi Simpanan Bank dan Optimalkan Belanja"
   },
   {
    "ts": "2026-09-14T18:16:19+07:00",
@@ -16869,7 +16865,20 @@
    "url": "https://finance.detik.com/foto-bisnis/d-8662642/pesan-suahasil-nazara-usai-dilantik-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/pesan-suahasil-nazara-usai-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan-1789383969594_169.jpeg?w=360&q=90",
    "t_id": "Pesan Suahasil Nazara Usai Dilantik Jadi Menkeu: Lanjutkan Tugas dan Jaga Kepercayaan",
-   "t_ko": "Suahasil Nazara 재무장관 취임 일성 — 직무 완수와 신뢰 유지"
+   "t_ko": "Suahasil Nazara 재무장관 취임 일성 — 임무 완수 및 신뢰 유지"
+  },
+  {
+   "ts": "2026-09-14T18:15:00+07:00",
+   "date": "2026-09-14",
+   "time": "18:15",
+   "src": "MarketWatch",
+   "t": "AI has carried the stock market. An industry pause could pull the rug out, warns this Wall Street giant.",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/ai-has-carried-the-stock-market-an-industry-pause-could-pull-the-rug-out-warns-this-wall-street-giant-3272c960?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-77897234",
+   "t_ko": "월가 대형사, 주식시장 지탱해온 AI 둔화 시 충격 경고",
+   "t_id": "AI Topang Pasar Saham, Raksasa Wall Street Peringatkan Risiko Jeda Industri"
   },
   {
    "ts": "2026-09-14T18:15:00+07:00",
@@ -16881,7 +16890,7 @@
    "url": "https://katadata.co.id/finansial/bursa/6aa7d7615274c/danantara-disebut-bakal-kuasai-40-12-saham-bei-lewat-demutualisasi",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/04/13/Logo_Indonesia_Stock_Exchange_Bursa_Efek_Indonesia-2025_04_13-22_33_29_825546ee5f1934ba9acce4534464ee22_620x413_thumb.jpg",
    "t_id": "Danantara Disebut Bakal Kuasai 40,12% Saham BEI lewat Demutualisasi",
-   "t_ko": "Danantara, 데뮤추얼라이제이션 통해 BEI 지분 40.12% 확보 전망"
+   "t_ko": "Danantara, 탈상호화 통해 지분 40.12% 확보 전망"
   },
   {
    "ts": "2026-09-14T18:14:00+07:00",
@@ -16891,8 +16900,8 @@
    "t": "Menkeu Suahasil Nazara Segera Paparkan Realisasi APBN Juli-Agustus 2026",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/933276/menkeu-suahasil-nazara-segera-paparkan-realisasi-apbn-juli-agustus-2026",
-   "t_ko": "Suahasil Nazara 재무장관, 2026년 7~8월 APBN 집행 실적 공개 임박",
-   "t_id": "Menkeu Suahasil Nazara Segera Paparkan Realisasi APBN Juli-Agustus 2026"
+   "t_ko": "Suahasil Nazara 재무장관, 7~8월 APBN 집행 실적 조만간 발표",
+   "t_id": "Menkeu Suahasil Nazara Segera Paparkan Realisasi APBN Juli-Agu 2026"
   },
   {
    "ts": "2026-09-14T18:10:45+07:00",
@@ -16903,8 +16912,8 @@
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/14/india-inflation-august-iran-war-energy-el-nino.html",
    "g": 1,
-   "t_ko": "인도 8월 소매물가 4.8% 기록 — 10개월 연속 상승",
-   "t_id": "Inflasi Ritel India Sentuh 4,8% pada Agustus, Naik 10 Bulan Beruntun"
+   "t_ko": "인도 8월 소매물가 4.8% 상승 — 10개월 연속 오름세",
+   "t_id": "Inflasi Ritel India Tembus 4,8% di Agu, Naik 10 Bulan Beruntun"
   },
   {
    "ts": "2026-09-14T18:08:14+07:00",
@@ -16928,7 +16937,7 @@
    "url": "https://www.medcom.id/ekonomi/makro/9K5yzAPK-suahasil-nazara-pastikan-defisit-apbn-tetap-di-bawah-3-persen",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/14/1842001/w3qnlSVLkh.jpg?w=720",
    "t_id": "Suahasil Nazara Pastikan Defisit APBN Tetap di Bawah 3 Persen",
-   "t_ko": "Suahasil Nazara, APBN 적자 3% 이내 유지 재확인"
+   "t_ko": "Suahasil Nazara, APBN 적자 3% 이내 유지 확언"
   },
   {
    "ts": "2026-09-14T18:06:22+07:00",
@@ -16943,6 +16952,45 @@
    "t_id": "Bos OpenAI Sam Altman Beberkan Alasan Industri AI Ingin Melambat: 'Kita Bisa Kehilangan Kendali'"
   },
   {
+   "ts": "2026-09-14T18:04:47+07:00",
+   "date": "2026-09-14",
+   "time": "18:04",
+   "src": "Yahoo Finance",
+   "t": "Dow Jones Futures: Techs Tumble As Anthropic Leads Call For AI Slowdown; Fed Meeting Ahead",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-meeting-anthropic-amodei-openai-altman-spacex-musk-ai-model-slowdown/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/f7ca2e821746f269222d45df46364184.jpg",
+   "t_ko": "Dow Jones 선물, Anthropic AI 속도 조절 요구에 기술주 하락·연준 회의 대기",
+   "t_id": "Futures Dow Jones: Saham Teknologi Anjlok Saat Anthropic Desak Rem AI; Rapat The Fed Menanti"
+  },
+  {
+   "ts": "2026-09-14T18:04:00+07:00",
+   "date": "2026-09-14",
+   "time": "18:04",
+   "src": "Yahoo Finance",
+   "t": "This Nuclear Stock Is Down This Month. Time to Buy the Dip?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/nuclear-stock-down-month-time-110400376.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/633cddba0035003f69e974d3e885774b.jpg",
+   "t_ko": "이 원전 관련 주 최근 하락 — 저가 매수 타이밍인가",
+   "t_id": "Saham Nuklir Ini Turun Bulan Ini, Saatnya Beli Saat Murah?"
+  },
+  {
+   "ts": "2026-09-14T18:03:45+07:00",
+   "date": "2026-09-14",
+   "time": "18:03",
+   "src": "Yahoo Finance",
+   "t": "Amgen vs. Vertex Pharmaceuticals: Which Healthcare Stock Is a Better Buy in 2026?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/healthcare/articles/amgen-vs-vertex-pharmaceuticals-healthcare-110345866.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/a6005da75497ce68031f2b5b4889e83c.png",
+   "t_ko": "Amgen vs Vertex Pharmaceuticals — 2026년 더 매력적인 헬스케어 주는",
+   "t_id": "Amgen vs Vertex Pharmaceuticals: Saham Kesehatan Mana yang Layak Dibeli 2026?"
+  },
+  {
    "ts": "2026-09-14T18:03:08+07:00",
    "date": "2026-09-14",
    "time": "18:03",
@@ -16952,7 +17000,7 @@
    "url": "https://www.bloomberg.com/news/articles/2026-09-14/pakistan-keeps-rates-steady-as-price-pressures-build",
    "g": 1,
    "t_ko": "파키스탄, 물가 압력 고조 속 기준금리 동결",
-   "t_id": "Pakistan Tahan Suku Bunga saat Tekanan Harga Meningkat"
+   "t_id": "Pakistan Tahan Suku Bunga di Tengah Tekanan Harga"
   },
   {
    "ts": "2026-09-14T18:00:43+07:00",
@@ -16963,7 +17011,7 @@
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8662324/bantuan-pangan-beras-berlanjut-hingga-desember-2026",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/bantuan-pangan-beras-berlanjut-hingga-desember-2026-1789375280648_169.jpeg?w=360&q=90",
-   "t_ko": "쌀 식량 지원, 2026년 12월까지 연장",
+   "t_ko": "쌀 식량 지원 2026년 12월까지 연장",
    "t_id": "Bantuan Pangan Beras Berlanjut hingga Desember 2026"
   },
   {
@@ -16975,8 +17023,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8662628/bakal-rombak-kebijakan-purbaya-suahasil-jawab-begini",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/presiden-prabowo-lantik-suahasil-nazara-sebagai-menkeu-1789383264566_169.jpeg?w=360&q=90",
-   "t_ko": "Suahasil, Purbaya 정책 전면 개편 질문에 즉답 회피",
-   "t_id": "Bakal Rombak Kebijakan Purbaya? Suahasil Jawab Begini"
+   "t_ko": "Purbaya 정책 개편설에 Suahasil 입장은",
+   "t_id": "Bakal Rombak Kebijakan Purbaya? Ini Jawaban Suahasil"
   },
   {
    "ts": "2026-09-14T18:00:02+07:00",
@@ -16989,6 +17037,18 @@
    "g": 1,
    "t_ko": "완벽주의 압박받는 대학생들 — 전문가 진단",
    "t_id": "Mahasiswa Merasa Lebih Tertekan untuk Sempurna, Pakar Jelaskan Alasannya"
+  },
+  {
+   "ts": "2026-09-14T18:00:00+07:00",
+   "date": "2026-09-14",
+   "time": "18:00",
+   "src": "Bloomberg",
+   "t": "Surging Beef Costs Spark Trump Policies That Will Boost Brazil",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-14/surging-beef-costs-spark-trump-policies-that-will-boost-brazil",
+   "g": 1,
+   "t_ko": "급등하는 소고기 가격, 브라질에 유리한 트럼프 정책 유발",
+   "t_id": "Lonjakan Biaya Daging Picu Kebijakan Trump yang Untungkan Brasil"
   },
   {
    "ts": "2026-09-14T18:00:00+07:00",
@@ -17023,8 +17083,8 @@
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8662620/momen-suahasil-nazara-dilantik-sebagai-menteri-keuangan-gantikan-purbaya",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/presiden-prabowo-lantik-suahasil-nazara-sebagai-menkeu-1789383264566_169.jpeg?w=360&q=90",
-   "t_ko": "Purbaya 후임 Suahasil Nazara 신임 재무장관 취임 순간",
-   "t_id": "Momen Suahasil Nazara Dilantik sebagai Menteri Keuangan Gantikan Purbaya"
+   "t_ko": "Purbaya 후임으로 Suahasil Nazara 재무장관 임명 순간",
+   "t_id": "Momen Suahasil Nazara Dilantik Jadi Menkeu Gantikan Purbaya"
   },
   {
    "ts": "2026-09-14T17:55:40+07:00",
@@ -17058,8 +17118,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8662614/purbaya-diganti-suahasil-danantara-bakal-setor-dividen-rp-120-t-buat-apbn",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/07/01/wisma-danantara-indonesia-1751345496559_169.jpeg?w=360&q=90",
-   "t_ko": "Purbaya 교체 후 Suahasil 체제, Danantara APBN에 배당 Rp120조 납부 전망",
-   "t_id": "Purbaya Diganti Suahasil, Danantara Bakal Setor Dividen Rp 120 T buat APBN?"
+   "t_ko": "Purbaya 교체 후 Suahasil, Danantara 국고 배당 Rp 120조 납부할까",
+   "t_id": "Purbaya Diganti Suahasil, Danantara Bakal Setor Dividen Rp120 T ke APBN?"
   },
   {
    "ts": "2026-09-14T17:52:00+07:00",
@@ -17071,32 +17131,6 @@
    "url": "https://mediaindonesia.com/ekonomi/933272/ihsg-berbalik-arah-ke-6534-pasar-soroti-suahasil-nazara-gantikan-purbaya-sebagai-menkeu",
    "t_ko": "IHSG 6,534로 반락 — Suahasil Nazara의 Purbaya 후임 재무장관 지명 주목",
    "t_id": "IHSG Berbalik Arah ke 6.534, Pasar Soroti Suahasil Nazara Gantikan Purbaya sebagai Menkeu"
-  },
-  {
-   "ts": "2026-09-14T17:50:00+07:00",
-   "date": "2026-09-14",
-   "time": "17:50",
-   "src": "Yahoo Finance",
-   "t": "The Anthropic IPO Is Coming. You May Already Own a Piece of the Stock",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-coming-may-already-105000771.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/00285e0d9a137dffb2cd7d4f583cdfdd.jpg",
-   "t_ko": "Anthropic IPO 추진 임박 — 투자 지분 보유 가능성",
-   "t_id": "IPO Anthropic Segera Hadir, Anda Mungkin Sudah Punya Sahamnya"
-  },
-  {
-   "ts": "2026-09-14T17:49:45+07:00",
-   "date": "2026-09-14",
-   "time": "17:49",
-   "src": "Yahoo Finance",
-   "t": "Dow Jones Futures: Techs Tumble As Anthropic Leads Call For AI Slowdown; Fed Meeting Ahead",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-fed-meeting-anthropic-amodei-openai-altman-spacex-musk-ai-model-slowdown/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/f7ca2e821746f269222d45df46364184.jpg",
-   "t_ko": "Dow Jones 선물, Anthropic AI 속도 조절 요구에 기술주 하락·연준 회의 대기",
-   "t_id": "Futures Dow Jones: Saham Teknologi Anjlok Saat Anthropic Desak Rem AI; Rapat The Fed Menanti"
   },
   {
    "ts": "2026-09-14T17:49:21+07:00",
@@ -17198,12 +17232,12 @@
    "date": "2026-09-14",
    "time": "17:40",
    "src": "Bloomberg Technoz",
-   "t": "Proyeksi Terbaru BI Soal Rupiah 2026, Rp17.300-Rp18.000/US$",
+   "t": "Proyeksi Terbaru BI Soal Rupiah 2026, Rp17.300-Rp17.800/US$",
    "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121486/proyeksi-terbaru-bi-soal-rupiah-2026-rp17-300-rp18-000-us",
+   "url": "https://www.bloombergtechnoz.com/detail-news/121486/proyeksi-terbaru-bi-soal-rupiah-2026-rp17-300-rp17-800-us",
    "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260826122620.jpeg",
-   "t_ko": "BI의 2026년 루피아 환율 전망 — USD당 Rp17,300~Rp18,000",
-   "t_id": "Proyeksi Terbaru BI Soal Rupiah 2026, Rp17.300-Rp18.000/US$"
+   "t_ko": "BI의 2026년 루피아 전망치 — US$당 Rp17,300~Rp17,800",
+   "t_id": "Proyeksi Terbaru BI Soal Rupiah 2026 di Kisaran Rp17.300-Rp17.800/US$"
   },
   {
    "ts": "2026-09-14T17:40:00+07:00",
@@ -17228,55 +17262,6 @@
    "g": 1,
    "t_ko": "중동 IPO 부진에 걸프만 거래 자문사들 해외로 눈돌려",
    "t_id": "UEA/Arab Saudi: Bankir Incar IPO Teluk Lirik Pasar Lain di Tengah Lesu"
-  },
-  {
-   "ts": "2026-09-14T17:38:32+07:00",
-   "date": "2026-09-14",
-   "time": "17:38",
-   "src": "CNA",
-   "t": "CPC increased oil exports by 22% in August after fewer attacks on tankers, sources say",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/cpc-increased-oil-exports-22-in-august-after-fewer-attacks-tankers-sources-say-6383276",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--rOEzq-Zc--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T103832Z_1_LYNXMPEM8D0S6_RTROPTP_3_CPC-PIPELINE.JPG?itok=lRK2KBMS",
-   "t_ko": "CPC, 유조선 피습 감소로 8월 원유 수출 22% 확대",
-   "t_id": "CPC Naikkan Ekspor Minyak 22% di Agu Usai Penurunan Serangan Tanker, Kata Sumber"
-  },
-  {
-   "ts": "2026-09-14T17:37:44+07:00",
-   "date": "2026-09-14",
-   "time": "17:37",
-   "src": "Detik",
-   "t": "Pergerakan Rupiah vs Dolar AS Usai Suahasil Gantikan Purbaya",
-   "tags": [],
-   "url": "https://finance.detik.com/bursa-dan-valas/d-8662582/pergerakan-rupiah-vs-dolar-as-usai-suahasil-gantikan-purbaya",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/20/dolar-as-tekuk-rupiah-ke-rp-17978-1784523338136_169.jpeg?w=360&q=90",
-   "t_ko": "Suahasil의 Purbaya 교체 이후 루피아-달러 환율 움직임",
-   "t_id": "Pergerakan Rupiah vs Dolar AS Usai Suahasil Gantikan Purbaya"
-  },
-  {
-   "ts": "2026-09-14T17:37:07+07:00",
-   "date": "2026-09-14",
-   "time": "17:37",
-   "src": "Jawa Pos",
-   "t": "IHSG Naik 200 Poin usai Suahasil Ditunjuk jadi Menkeu, Akankah Berlanjut?",
-   "tags": [],
-   "url": "https://www.jawapos.com/finance/2609140375/ihsg-naik-200-poin-usai-suahasil-ditunjuk-jadi-menkeu-akankah-berlanjut",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-Jhssd.webp",
-   "t_ko": "Suahasil 재무장관 임명 후 IHSG 200포인트 급등 — 상승세 지속 여부",
-   "t_id": "IHSG Naik 200 Poin usai Suahasil Ditunjuk jadi Menkeu, Akankah Berlanjut?"
-  },
-  {
-   "ts": "2026-09-14T17:36:50+07:00",
-   "date": "2026-09-14",
-   "time": "17:36",
-   "src": "Bloomberg",
-   "t": "India August Inflation Accelerates, Narrowing RBI Pause Room",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-14/india-august-inflation-accelerates-narrowing-rbi-pause-room",
-   "g": 1,
-   "t_ko": "8월 인도 물가 상승 — RBI 금리 동결 여지 축소",
-   "t_id": "Inflasi India Agustus Melonjak, Ruang Jeda RBI Menyempit"
   }
  ],
  "kisi_news": [
@@ -17483,9 +17468,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.54",
+   "v": "99.53",
    "d": 0.21,
-   "ytd": 1.28,
+   "ytd": 1.27,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17495,9 +17480,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.57",
-   "d": -0.66,
-   "ytd": 78.63,
+   "v": "102.54",
+   "d": -0.69,
+   "ytd": 78.58,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17507,9 +17492,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,334.0",
-   "d": -0.84,
-   "ytd": 0.19,
+   "v": "4,332.4",
+   "d": -0.87,
+   "ytd": 0.16,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -20429,7 +20414,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-14 18:14",
-  "pc_age_min": 7,
+  "pc_age_min": 10,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
