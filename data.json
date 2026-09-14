@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 02:03",
+ "updated": "2026-09-15 02:07",
  "delay_min": 15,
  "fx_basis": "13.11 IDR/KRW · USD/IDR 17,640 · USD/KRW 1,345 · 01:00 Yahoo",
- "idr_per_krw": 13.1117,
+ "idr_per_krw": 13.1123,
  "indices": [
   {
    "code": "USDIDR",
@@ -56,7 +56,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 02:01",
+   "asof": "investing.com 02:05",
    "unit": "bp"
   }
  ],
@@ -67,14 +67,14 @@
   "prev": null,
   "ytd": null,
   "m1": null,
-  "value_idr": 17317150254133.342,
+  "value_idr": 17316973581966.674,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-15 01:58",
+  "rank_src": "Yahoo 15분 지연 · 827종목 · 종가 · 외국인·공시 PC 09-15 01:58",
   "rank_asof": null,
   "rank_date": "2026-09-14",
   "adv": 229,
-  "dec": 455,
+  "dec": 454,
   "unch": 144,
   "foreign_net_idr": -317804733771.1885,
   "foreign_buy": 5386768978702.147,
@@ -10057,22 +10057,6 @@
    "live": 0
   },
   {
-   "t": "ANJT",
-   "n": "Austindo Nusantara Jaya",
-   "px": 1575.0,
-   "prev": 1595.0,
-   "pct": -1.25,
-   "val": 176672166.6666667,
-   "vol": 111700.0,
-   "sh": 3354175000,
-   "mcap": 5282825625000.0,
-   "hi": 1595.0,
-   "lo": 1575.0,
-   "ratio": 1.0,
-   "fnet": -21330362.578334827,
-   "live": 0
-  },
-  {
    "t": "MIRA",
    "n": "Mitra International Resources",
    "px": 25.0,
@@ -14497,11 +14481,11 @@
   {
    "name": "필수소비재",
    "name_id": "Konsumen Primer",
-   "n": 122,
+   "n": 121,
    "adv": 38,
-   "dec": 55,
-   "val": 1024335881133.333,
-   "mcap": 1076824565547379.0,
+   "dec": 54,
+   "val": 1024159208966.6664,
+   "mcap": 1071541739922379.0,
    "top": [
     {
      "t": "HMSP",
@@ -14544,8 +14528,8 @@
      "pct": 1.13
     }
    ],
-   "fnet": -1399969557,
-   "pct": -0.14,
+   "fnet": -1378639194,
+   "pct": -0.13,
    "fbuy_top": [
     {
      "t": "LSIP",
@@ -15357,10 +15341,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7632.22,
+   "px": 7631.27,
    "prev": 7655.5,
-   "pct": -0.3,
-   "asof": "02:00",
+   "pct": -0.32,
+   "asof": "02:05",
    "live": true,
    "spark": [
     7599.57,
@@ -15429,17 +15413,18 @@
     7637.47,
     7636.17,
     7633.93,
-    7632.22
+    7632.24,
+    7631.27
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26260.21,
+   "px": 26262.03,
    "prev": 26333.03,
-   "pct": -0.28,
-   "asof": "02:00",
+   "pct": -0.27,
+   "asof": "02:05",
    "live": true,
    "spark": [
     26018.42,
@@ -15508,17 +15493,18 @@
     26286.14,
     26274.33,
     26268.67,
-    26260.21
+    26264.14,
+    26262.03
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52465.79,
+   "px": 52451.86,
    "prev": 52562.77,
-   "pct": -0.18,
-   "asof": "02:00",
+   "pct": -0.21,
+   "asof": "02:05",
    "live": true,
    "spark": [
     52421.7,
@@ -15587,7 +15573,8 @@
     52488.76,
     52486.56,
     52465.22,
-    52465.79
+    52458.08,
+    52451.86
    ]
   },
   {
@@ -16439,48 +16426,6 @@
    "img": "https://cdn1-production-images-kly.akamaized.net/c9Y6rYeY_HZxiaIRs4tqqW_WxdU=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3526828/original/027148900_1627708283-kalbe_farma_31_juli_2021Kalbe_Farma_31_juli_2021.jpg",
    "t_ko": "Kalbe Farma(KLBF), 의약품·분유 가격 인상에 신중 입장",
    "t_id": "Kalbe Farma Hati-Hati Naikkan Harga Obat dan Susu"
-  },
-  {
-   "ts": "2026-08-24T08:33:00+07:00",
-   "date": "2026-08-24",
-   "time": "08/24",
-   "src": "Tempo",
-   "t": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1",
-   "tags": [
-    "AREA"
-   ],
-   "url": "https://bisnis.tempo.co/read/2117248/pt-pertamina-patra-niaga-ru-cilacap-buka-tender-penggantian-column-assy-11c-1",
-   "img": "https://statik.tempo.co/data/2026/08/10/id_1485829/1485829_720.jpg",
-   "t_ko": "Pertamina Patra Niaga Cilacap 정유공장, Column Assy 11C-1 교체 입찰 공고",
-   "t_id": "PT Pertamina Patra Niaga RU Cilacap Buka Tender Penggantian Column Assy 11C-1"
-  },
-  {
-   "ts": "2026-08-10T18:35:31+07:00",
-   "date": "2026-08-10",
-   "time": "08/10",
-   "src": "Tempo",
-   "t": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
-   "tags": [
-    "BMRI"
-   ],
-   "url": "https://bisnis.tempo.co/read/2117152/bank-mandiri-gandeng-paramount-dorong-pertumbuhan-properti-berkelanjutan",
-   "img": "https://statik.tempo.co/data/2026/08/10/id_1485793/1485793_720.jpg",
-   "t_ko": "Bank Mandiri, Paramount와 제휴 — 지속가능 부동산 성장 추진",
-   "t_id": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan"
-  },
-  {
-   "ts": "2026-08-07T14:18:08+07:00",
-   "date": "2026-08-07",
-   "time": "08/07",
-   "src": "Tempo",
-   "t": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN",
-   "tags": [
-    "BKSL"
-   ],
-   "url": "https://bisnis.tempo.co/read/2116937/pemkab-bogor-serah-terima-psu-sentul-city-rampung-tinggal-tunggu-sertifikat-bpn",
-   "img": "https://statik.tempo.co/data/2026/08/07/id_1485550/1485550_720.jpg",
-   "t_ko": "Bogor 군청, Sentul City 공공시설(PSU) 인수 완료 — BPN 등기 대기",
-   "t_id": "Pemkab Bogor: Serah Terima PSU Sentul City Rampung, Tinggal Tunggu Sertifikat BPN"
   }
  ],
  "market_news": [
@@ -16528,8 +16473,8 @@
    "t": "Tanda Tangan dan e-Meterai Digital Pangkas Waktu Proses Dokumen hingga 80%",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/933400/tanda-tangan-dan-e-meterai-digital-pangkas-waktu-proses-dokumen-hingga-80",
-   "t_id": "Tanda Tangan dan e-Meterai Digital Pangkas Waktu Proses Dokumen hingga 80%",
-   "t_ko": "디지털 서명·인증으로 문서 처리 시간 80% 단축"
+   "t_ko": "디지털 서명·인증으로 문서 처리 시간 80% 단축",
+   "t_id": "Tanda Tangan dan e-Meterai Digital Pangkas Waktu Proses Dokumen hingga 80%"
   },
   {
    "ts": "2026-09-15T01:54:51+07:00",
@@ -16593,6 +16538,18 @@
    "t_id": "BofA Prediksi Pendapatan Investment Banking Kuartal III Turun Lebih dari 10%; Saham Anjlok"
   },
   {
+   "ts": "2026-09-15T01:38:10+07:00",
+   "date": "2026-09-15",
+   "time": "01:38",
+   "src": "Reuters",
+   "t": "COMMENTARY: When it comes to crude oil prices, it's location, location, location",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRUMzTG56enVWUS00T2RJOEFGcVc4d3lmUldyM1RVUlJMX0d4Q2sxZnd5NHFYSlVidnFyejJqMk5zZGM4a3JBUXNaaWxmZThhcEtCMnIteXNFTklLR3l5dTZGSzBVU1Fyd3dQRDdfVy1hX2Yza1QtcmxfbUlvWEJQalBLUEpPbml1VWxFWFlVRG82UDFDVkJuZzkxeDlvSG04VzR4RkUzOUtZbkxET29sMFRfaWJhVXp2QkZKQzBhSUdKS29YdjRjbkx3?oc=5",
+   "g": 1,
+   "t_ko": "원유 시장의 핵심은 위치라는 분석",
+   "t_id": "KOMENTAR: Soal Harga Minyak Mentah, Lokasi Adalah Segalanya"
+  },
+  {
    "ts": "2026-09-15T01:37:00+07:00",
    "date": "2026-09-15",
    "time": "01:37",
@@ -16631,6 +16588,18 @@
    "t_id": "Desakan Perlambatan AI Ditolak Keras: Trump Sebut 'Konspirasi Sakit'"
   },
   {
+   "ts": "2026-09-15T01:23:21+07:00",
+   "date": "2026-09-15",
+   "time": "01:23",
+   "src": "Reuters",
+   "t": "Wall Street drops as AI worries pummel chipmakers",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYVB5TUc4VTc5MGdNMjVWcVYxUUszYjdXU3hrVnZXbVRCRm40Z3JBX3BhTElKaXVFQmU4SW82WWRwLVdxcGFTVVhPclllM25kSzR0MWdqUmU5YjQydl9MZDhLZ1MzQmF0b01UY3MxaWx0VkxOMjJUQzhmbHJPQjQzdXJMWkJ2OGs5R0ZQc2FjeVpEdjZkM2VqMC1aeGhXSm8?oc=5",
+   "g": 1,
+   "t_ko": "월가, AI 우려 확산에 반도체주 약세 마감",
+   "t_id": "Wall Street Anjlok Ditekan Kekhawatiran AI yang Hantam Saham Chip"
+  },
+  {
    "ts": "2026-09-15T01:22:34+07:00",
    "date": "2026-09-15",
    "time": "01:22",
@@ -16667,32 +16636,6 @@
    "img": "https://images.mktw.net/im-77345984",
    "t_ko": "AI 실종포비아, 증시에 가장 취약한 시기에 도래",
    "t_id": "Kekhawatiran Kiamat AI Melanda Pasar Saham di Saat yang Paling Tidak Tepat"
-  },
-  {
-   "ts": "2026-09-15T01:14:00+07:00",
-   "date": "2026-09-15",
-   "time": "01:14",
-   "src": "MarketWatch",
-   "t": "10-year Treasury yield eases back from crucial 5% level despite concerns about AI and the surge in oil prices",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/10-year-treasury-yield-tops-5-for-the-first-time-since-2007-as-bond-market-selloff-deepens-14c81f75?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-41770070",
-   "t_ko": "AI 우려와 유가 급등에도 10년물 국채금리 5% 핵심 저항선 하회",
-   "t_id": "Imbal Hasil Obligasi AS 10 Tahun Turun dari Level Krusial 5% di Tengah Kekhawatiran AI dan Lonjakan Harga Minyak"
-  },
-  {
-   "ts": "2026-09-15T01:08:18+07:00",
-   "date": "2026-09-15",
-   "time": "01:08",
-   "src": "FT",
-   "t": "Ten-year Treasury yield hits 5% for first time since 2023",
-   "tags": [],
-   "url": "https://www.ft.com/content/06cb850d-089a-4318-88d7-a410e9766b89?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F640d3633-43b5-4010-b23b-a6557057990a.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "미국 10년물 국채금리, 2023년 이후 처음 5% 돌파",
-   "t_id": "Imbal Hasil Obligasi 10 Tahun AS Tembus 5% untuk Pertama Kalinya Sejak 2023"
   },
   {
    "ts": "2026-09-15T00:48:56+07:00",
@@ -17079,7 +17022,7 @@
   {
    "k": "USD/IDR",
    "v": "17,640",
-   "d": 0.3,
+   "d": 0.0,
    "ytd": 5.5,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
@@ -17102,9 +17045,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.959%",
-   "d": -0.32,
-   "ytd": 19.12,
+   "v": "4.961%",
+   "d": -0.28,
+   "ytd": 19.17,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17125,9 +17068,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.42",
-   "d": 0.09,
-   "ytd": 1.16,
+   "v": "99.40",
+   "d": 0.08,
+   "ytd": 1.14,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17137,9 +17080,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "100.67",
-   "d": -2.5,
-   "ytd": 75.32,
+   "v": "100.85",
+   "d": -2.32,
+   "ytd": 75.64,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17149,9 +17092,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,345.4",
-   "d": -0.58,
-   "ytd": 0.46,
+   "v": "4,346.9",
+   "d": -0.54,
+   "ytd": 0.49,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17703,40 +17646,12 @@
   },
   {
    "date": "2026-09-16",
-   "time": "00:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "20-Year Bond Auction",
-   "imp": 2,
-   "exp": null,
-   "prev": "5.204%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "20년물 국채 입찰",
-   "title_id": "Lelang Obligasi AS Tenor 20 Tahun"
-  },
-  {
-   "date": "2026-09-16",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "API Weekly Crude Oil Stock",
-   "imp": 2,
-   "exp": null,
-   "prev": "-0.300M",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "API 주간 원유 재고",
-   "title_id": "Stok Minyak Mentah Mingguan API"
-  },
-  {
-   "date": "2026-09-16",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "Core Retail Sales (MoM)  (Aug)",
    "imp": 3,
-   "exp": "0.5%",
+   "exp": null,
    "prev": "-0.3%",
    "act": null,
    "src": "investing.com",
@@ -17764,7 +17679,7 @@
    "country": "US",
    "title": "Import Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.0%",
+   "exp": null,
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -17778,7 +17693,7 @@
    "country": "US",
    "title": "Retail Control (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.8%",
+   "exp": null,
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -17792,7 +17707,7 @@
    "country": "US",
    "title": "Business Inventories (MoM)  (Jul)",
    "imp": 2,
-   "exp": "0.2%",
+   "exp": null,
    "prev": "0.0%",
    "act": null,
    "src": "investing.com",
@@ -17806,7 +17721,7 @@
    "country": "US",
    "title": "Retail Inventories Ex Auto  (Jul)",
    "imp": 2,
-   "exp": "0.7%",
+   "exp": null,
    "prev": "0.7%",
    "act": null,
    "src": "investing.com",
@@ -17815,27 +17730,13 @@
   },
   {
    "date": "2026-09-16",
-   "time": "21:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Crude Oil Inventories",
-   "imp": 3,
-   "exp": null,
-   "prev": "-0.391M",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "EIA 원유 재고",
-   "title_id": "Stok Minyak Mentah EIA"
-  },
-  {
-   "date": "2026-09-16",
    "time": "22:30",
    "kind": "macro",
    "country": "US",
    "title": "Atlanta Fed GDPNow  (Q3)",
    "imp": 2,
-   "exp": "4.4%",
-   "prev": "4.4%",
+   "exp": null,
+   "prev": null,
    "act": null,
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
@@ -17862,7 +17763,7 @@
    "country": "US",
    "title": "Fed Interest Rate Decision",
    "imp": 3,
-   "exp": "4.00%",
+   "exp": null,
    "prev": "3.75%",
    "act": null,
    "src": "investing.com",
@@ -17871,26 +17772,12 @@
   },
   {
    "date": "2026-09-17",
-   "time": "01:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "FOMC Press Conference",
-   "imp": 3,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "FOMC 기자회견",
-   "title_id": "Konferensi Pers FOMC"
-  },
-  {
-   "date": "2026-09-17",
    "time": "03:00",
    "kind": "macro",
    "country": "US",
    "title": "TIC Net Long-Term Transactions  (Jul)",
    "imp": 2,
-   "exp": "146.3B",
+   "exp": null,
    "prev": "172.7B",
    "act": null,
    "src": "investing.com",
@@ -19606,7 +19493,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-15 01:58",
-  "pc_age_min": 5,
+  "pc_age_min": 9,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21123,7 +21010,7 @@
    "t_ko": "유가 급등에 증시 하락 및 10년물 국채 금리 5% 도달",
    "t_id": "Saham Turun, Imbal Hasil Obligasi 10 Tahun Sentuh 5% di Tengah Lonjakan Minyak",
    "score": 318.5,
-   "srcs": 6
+   "srcs": 7
   },
   {
    "ts": "2026-09-15T00:42:05+07:00",
@@ -21134,8 +21021,8 @@
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/14/fed-rate-hike-anticipated-what-it-means-for-your-money.html",
    "g": 1,
-   "score": 310.0,
-   "srcs": 2,
+   "score": 312.0,
+   "srcs": 3,
    "t_ko": "물가 지속에 따른 연준 금리 인상 가능성 대두",
    "t_id": "The Fed Kemungkinan Kenaikan Suku Bunga Seiring Inflasi yang Berlanjut, Ini Dampaknya bagi Konsumen"
   }
@@ -28083,25 +27970,6 @@
    "srcs": 2
   },
   {
-   "t": "BMRI",
-   "n": "Bank Mandiri Tbk",
-   "px": 4440.0,
-   "pct": 1.83,
-   "val": 1005268273333.3334,
-   "mcap": 410255999982240.0,
-   "ratio": 2.0,
-   "ev_ko": "영업·계약",
-   "ev_id": "Operasional",
-   "hl": "Bank Mandiri, Paramount와 제휴 — 지속가능 부동산 성장 추진",
-   "hl_id": "Bank Mandiri Gandeng Paramount Dorong Pertumbuhan Properti Berkelanjutan",
-   "url": "https://bisnis.tempo.co/read/2117152/bank-mandiri-gandeng-paramount-dorong-pertumbuhan-properti-berkelanjutan",
-   "score": 64.1,
-   "s_news": 55,
-   "s_size": 90,
-   "s_surge": 50,
-   "srcs": 1
-  },
-  {
    "t": "GGRM",
    "n": "Gudang Garam",
    "px": 19000.0,
@@ -28721,6 +28589,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-15 01:48"
+  "announcements": "2026-09-15 02:03"
  }
 }
