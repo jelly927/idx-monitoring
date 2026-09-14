@@ -1,17 +1,17 @@
 {
  "mode": "live",
- "updated": "2026-09-15 00:49",
+ "updated": "2026-09-15 01:03",
  "delay_min": 15,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 20:45 Yahoo",
- "idr_per_krw": 13.1001,
+ "fx_basis": "13.11 IDR/KRW · USD/IDR 17,640 · USD/KRW 1,345 · 01:00 Yahoo",
+ "idr_per_krw": 13.1113,
  "indices": [
   {
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17630.0,
+   "px": 17640.0,
    "prev": 17588.0,
-   "pct": 0.24,
+   "pct": 0.3,
    "spark": [
     17863.0,
     17830.0,
@@ -34,7 +34,7 @@
     17588.0,
     17501.0,
     17588.1,
-    17630.0
+    17640.0
    ],
    "inv": true,
    "asof": "Yahoo"
@@ -56,7 +56,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 00:47",
+   "asof": "investing.com 01:01",
    "unit": "bp"
   }
  ],
@@ -67,14 +67,14 @@
   "prev": null,
   "ytd": null,
   "m1": null,
-  "value_idr": 13677637309266.65,
+  "value_idr": 13668583181266.65,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-15 00:44",
+  "rank_src": "Yahoo 15분 지연 · 827종목 · 종가 · 외국인·공시 PC 09-15 00:58",
   "rank_asof": null,
   "rank_date": "2026-09-11",
   "adv": 197,
-  "dec": 471,
+  "dec": 470,
   "unch": 160,
   "foreign_net_idr": -317804733771.1885,
   "foreign_buy": 5386768978702.147,
@@ -3350,22 +3350,6 @@
    "lo": 660.0,
    "ratio": 0.4,
    "fnet": 832301154.0993733,
-   "live": 0
-  },
-  {
-   "t": "ARKO",
-   "n": "Arkora Hydro",
-   "px": 4590.0,
-   "prev": 4700.0,
-   "pct": -2.34,
-   "val": 9054128000.0,
-   "vol": 1962600.0,
-   "sh": 2928495000,
-   "mcap": 13441792050000.0,
-   "hi": 4700.0,
-   "lo": 4550.0,
-   "ratio": 0.4,
-   "fnet": 3103841042.8461676,
    "live": 0
   },
   {
@@ -14400,11 +14384,11 @@
   {
    "name": "인프라",
    "name_id": "Infrastruktur",
-   "n": 55,
+   "n": 54,
    "adv": 12,
-   "dec": 33,
-   "val": 1095415783200.0,
-   "mcap": 1438742250626636.0,
+   "dec": 32,
+   "val": 1086361655200.0,
+   "mcap": 1425300458576636.0,
    "top": [
     {
      "t": "BREN",
@@ -14447,8 +14431,8 @@
      "pct": -0.87
     }
    ],
-   "fnet": -26339212849,
-   "pct": -1.59,
+   "fnet": -29443053891,
+   "pct": -1.58,
    "fbuy_top": [
     {
      "t": "TLKM",
@@ -14463,10 +14447,10 @@
      "pct": -0.66
     },
     {
-     "t": "ARKO",
-     "n": "Arkora Hydro",
-     "fnet": 3103841043,
-     "pct": -2.34
+     "t": "SSIA",
+     "n": "Surya Semesta Internusa",
+     "fnet": 2855731403,
+     "pct": -3.14
     }
    ],
    "fsell_top": [
@@ -15357,10 +15341,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7640.59,
+   "px": 7637.76,
    "prev": 7655.5,
-   "pct": -0.19,
-   "asof": "00:45",
+   "pct": -0.23,
+   "asof": "01:00",
    "live": true,
    "spark": [
     7599.57,
@@ -15414,17 +15398,20 @@
     7639.26,
     7641.51,
     7638.88,
-    7640.59
+    7640.1,
+    7641.0,
+    7636.5,
+    7637.76
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26323.93,
+   "px": 26311.32,
    "prev": 26333.03,
-   "pct": -0.03,
-   "asof": "00:45",
+   "pct": -0.08,
+   "asof": "01:00",
    "live": true,
    "spark": [
     26018.42,
@@ -15478,17 +15465,20 @@
     26310.01,
     26320.83,
     26313.94,
-    26323.93
+    26326.06,
+    26326.23,
+    26310.65,
+    26311.32
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52470.3,
+   "px": 52455.79,
    "prev": 52562.77,
-   "pct": -0.18,
-   "asof": "00:45",
+   "pct": -0.2,
+   "asof": "01:00",
    "live": true,
    "spark": [
     52421.7,
@@ -15542,7 +15532,10 @@
     52487.26,
     52486.56,
     52468.05,
-    52470.3
+    52450.32,
+    52463.43,
+    52447.76,
+    52455.79
    ]
   },
   {
@@ -16440,7 +16433,44 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-15T00:48:17.811900+07:00",
+   "ts": "2026-09-15T00:50:36+07:00",
+   "date": "2026-09-15",
+   "time": "00:50",
+   "src": "CNBC",
+   "t": "Trump agrees to ethics requirements in crypto Clarity Act as GOP seeks Democratic votes",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/clarity-act-senate-vote-crypto-regulation.html",
+   "g": 1,
+   "t_ko": "공화당 민주당 표결 확보 위해 Trump, 암호화폐 Clarity Act 윤리 요건 합의",
+   "t_id": "Trump Setujui Syarat Etika di RUU Kripto Clarity Act Saat Republik Cari Suara Demokrat"
+  },
+  {
+   "ts": "2026-09-15T00:49:50+07:00",
+   "date": "2026-09-15",
+   "time": "00:49",
+   "src": "Yahoo Finance",
+   "t": "Corning Tumbles 12% on $2B At-the-Market Equity Offering; Coherent Sinks 11%, Lumentum Drops 9%, Fabrinet Slides 6%",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/corning-tumbles-12-2b-market-174950803.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/83c597fdd93a0ae3e24978750aa03289.jpg",
+   "t_ko": "Corning, 20억 달러 규모 유상증자에 12% 급락 — Coherent 11%·Lumentum 9%·Fabrinet 6% 동반 하락",
+   "t_id": "Corning Anjlok 12% Akibat Penawaran Saham ATM USD 2 Miliar; Coherent Ambles 11%, Lumentum Turun 9%, Fabrinet Terperosok 6%"
+  },
+  {
+   "ts": "2026-09-15T00:49:01+07:00",
+   "date": "2026-09-15",
+   "time": "00:49",
+   "src": "Bloomberg",
+   "t": "Trump baja aranceles y favorece la carne de Brasil en EE.UU.",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-14/trump-baja-aranceles-y-favorece-la-carne-de-brasil-en-ee-uu",
+   "g": 1,
+   "t_ko": "트럼프, 관세 인상 및 미국 내 브라질산 육류 우대",
+   "t_id": "Trump Kenakan Tarif Baja dan Untungkan Daging Brasil di AS"
+  },
+  {
+   "ts": "2026-09-15T00:48:56+07:00",
    "date": "2026-09-15",
    "time": "00:48",
    "src": "Jawa Pos",
@@ -16450,6 +16480,18 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/08/09/pergerakan-indeks-harga-saham-gabungan-ihsg-di-bursa-efek-indonesia-bei-jakarta-jumat-782026-dery-ridwansah-jawaposcom-4Wtb4.webp",
    "t_ko": "Suahasil Nazara 재무장관 임명 — Hans Kwee, 장중 IHSG 반등으로 긍정적 반응",
    "t_id": "Suahasil Nazara Ditunjuk jadi Menkeu, Hans Kwee: Pasar Respons Positif Lewat Intraday Rebound IHSG"
+  },
+  {
+   "ts": "2026-09-15T00:48:40+07:00",
+   "date": "2026-09-15",
+   "time": "00:48",
+   "src": "CNBC",
+   "t": "The stock market could do something strange this week after the Fed decision",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/the-stock-market-could-do-something-strange-this-week-after-the-fed-decision.html",
+   "g": 1,
+   "t_ko": "연준 결정 앞두고 이번 주 증시 이례적 흐름 가능성",
+   "t_id": "Pasar Saham Bisa Bergerak Aneh Pekan Ini Usai Keputusan The Fed"
   },
   {
    "ts": "2026-09-15T00:46:41+07:00",
@@ -16474,6 +16516,19 @@
    "g": 1,
    "t_ko": "물가 지속에 따른 연준 금리 인상 가능성 대두",
    "t_id": "The Fed Kemungkinan Kenaikan Suku Bunga Seiring Inflasi yang Berlanjut, Ini Dampaknya bagi Konsumen"
+  },
+  {
+   "ts": "2026-09-15T00:40:30+07:00",
+   "date": "2026-09-15",
+   "time": "00:40",
+   "src": "Yahoo Finance",
+   "t": "Why Direxion Daily Semiconductor Bull 3X ETF Dropped Today",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/why-direxion-daily-semiconductor-bull-174030964.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/989021149ebc034bac513af710468eae.jpg",
+   "t_ko": "Direxion Daily Semiconductor Bull 3X ETF, 오늘 하락 배경",
+   "t_id": "Alasan Direxion Daily Semiconductor Bull 3X ETF Anjlok Hari Ini"
   },
   {
    "ts": "2026-09-15T00:37:07+07:00",
@@ -16512,6 +16567,32 @@
    "t_id": "Kredibilitas Warsh Diuji Seiring Kebijakan Trump Tekan The Fed Naikkan Suku Bunga"
   },
   {
+   "ts": "2026-09-15T00:24:42+07:00",
+   "date": "2026-09-15",
+   "time": "00:24",
+   "src": "FT",
+   "t": "Why delaying an AI doomsday would benefit investors too",
+   "tags": [],
+   "url": "https://www.ft.com/content/38ea0870-0100-4f4e-bd71-89074761095c?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ffc66dc4a-69ff-4e3a-8722-ae573e7c4256.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "AI 종말 연기가 투자자에게도 수혜인 이유",
+   "t_id": "Alasan Penundaan Kiamat AI Juga Untungkan Investor"
+  },
+  {
+   "ts": "2026-09-15T00:23:59+07:00",
+   "date": "2026-09-15",
+   "time": "00:23",
+   "src": "Yahoo Finance",
+   "t": "Carney, locked in US trade war, pitches Canada to global investment titans",
+   "tags": [],
+   "url": "https://finance.yahoo.com/news/carney-locked-us-trade-war-100319218.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/reuters.com/6b017b45f41a08d2f9317b4938d0e372.jpg",
+   "t_ko": "미국 무역전쟁 직면한 Carney, 글로벌 투자자에 캐나다 홍보",
+   "t_id": "Carney, Terjebak Perang Dagang AS, Tarik Investor Global ke Kanada"
+  },
+  {
    "ts": "2026-09-15T00:22:00+07:00",
    "date": "2026-09-15",
    "time": "00:22",
@@ -16538,16 +16619,29 @@
    "t_id": "Trump Klaim Rusia-Ukraina Sepakati Gencatan Senjata Energi"
   },
   {
-   "ts": "2026-09-15T00:15:20+07:00",
+   "ts": "2026-09-15T00:17:12+07:00",
    "date": "2026-09-15",
-   "time": "00:15",
-   "src": "CNBC",
-   "t": "Trump agrees to ethics requirements in crypto Clarity Act as GOP seeks Democratic votes",
+   "time": "00:17",
+   "src": "Yahoo Finance",
+   "t": "Cass: TL rates jump 11% in August, freight shipments turn positive",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/clarity-act-senate-vote-crypto-regulation.html",
+   "url": "https://finance.yahoo.com/economy/articles/cass-tl-rates-jump-11-171712955.html",
    "g": 1,
-   "t_ko": "공화당 민주당 표결 확보 위해 Trump, 암호화폐 Clarity Act 윤리 요건 합의",
-   "t_id": "Trump Setujui Syarat Etika di RUU Kripto Clarity Act Saat Republik Cari Suara Demokrat"
+   "img": "https://media.zenfs.com/en/freightwaves_373/04e557e675164e36561b0b150d2d1117.jpg",
+   "t_ko": "Cass, 8월 트럭 운임 11% 급등 및 화물 운송 반등",
+   "t_id": "Cass: Tarif Truk Lonjak 11% di Agu, Pengiriman Kargo Positif"
+  },
+  {
+   "ts": "2026-09-15T00:16:23+07:00",
+   "date": "2026-09-15",
+   "time": "00:16",
+   "src": "CNBC",
+   "t": "As the oil surge continues, trader Mike Khouw sees more upside in this surging name",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/as-the-oil-surge-continues-trader-mike-khouw-sees-more-upside-in-this-surging-name.html",
+   "g": 1,
+   "t_ko": "유가 상승세 지속 속 트레이더 Mike Khouw, 관련주 추가 상승 전망",
+   "t_id": "Di Tengah Lonjakan Minyak, Trader Mike Khouw Lihat Potensi Kenaikan Lanjutan di Saham Ini"
   },
   {
    "ts": "2026-09-15T00:05:00+07:00",
@@ -16574,106 +16668,6 @@
    "img": "https://media.zenfs.com/en/cryptoprowl_304/153fb1b35562b255842531fca013b6d6.jpg",
    "t_ko": "DeFi Development, Solana 재무 자산 239만 SOL로 확대",
    "t_id": "DeFi Development Perluas Perbendaharaan Solana Jadi 2,39 Juta SOL"
-  },
-  {
-   "ts": "2026-09-15T00:02:40+07:00",
-   "date": "2026-09-15",
-   "time": "00:02",
-   "src": "CNBC",
-   "t": "Oil prices rise after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html",
-   "g": 1,
-   "t_ko": "사우디, 호르무즈 해협 우회 주요 송유관 가동 중단에 유가 상승",
-   "t_id": "Harga Minyak Naik Usai Arab Saudi Tutup Pipa Kritis Pengganti Selat Hormuz"
-  },
-  {
-   "ts": "2026-09-15T00:01:50+07:00",
-   "date": "2026-09-15",
-   "time": "00:01",
-   "src": "Yahoo Finance",
-   "t": "Why CrowdStrike Stock Rocketed Higher Today",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/why-crowdstrike-stock-rocketed-higher-170150661.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/00b2e6080e34276b4af0a092b14144a6.png",
-   "t_ko": "CrowdStrike 주가 급등 배경",
-   "t_id": "Alasan Saham CrowdStrike Melonjak Hari Ini"
-  },
-  {
-   "ts": "2026-09-15T00:01:11+07:00",
-   "date": "2026-09-15",
-   "time": "00:01",
-   "src": "Yahoo Finance",
-   "t": "This Bull Call Spread In Oil Provides A Hedge Against Stocks And Bonds",
-   "tags": [],
-   "url": "https://www.investors.com/research/options/oil-etf-uso-options-spread-hedge-stocks-bonds-inflation-trade-strategy-markets/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/737eadd6c53678408ad34a635a4c532b.jpg",
-   "t_ko": "유가 상승 베팅 콜 스프레드, 주식·채권 헤지 수단으로 부각",
-   "t_id": "Bull Call Spread Minyak Ini Jadi Hedging Atas Saham dan Obligasi"
-  },
-  {
-   "ts": "2026-09-15T00:00:23+07:00",
-   "date": "2026-09-15",
-   "time": "00:00",
-   "src": "CNBC",
-   "t": "10-year Treasury yield hits 5% before reversing as traders await Fed meeting",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
-   "g": 1,
-   "t_ko": "미국 10년물 국채금리, 연준 회의 대기 속 5% 터치 후 하락",
-   "t_id": "Imbal Hasil US Treasury 10 Tahun Sentuh 5% Sebelum Berbalik Arah Jelang Rapat The Fed"
-  },
-  {
-   "ts": "2026-09-15T00:00:17+07:00",
-   "date": "2026-09-15",
-   "time": "00:00",
-   "src": "Yahoo Finance",
-   "t": "Oracle Stock Falls After Ellison Scraps Plan To Sell Up To $7.5 Billion In Stock",
-   "tags": [],
-   "url": "https://www.investors.com/news/technology/oracle-stock-falls-ellison-sell-plan-canceled/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/5c33686a2f74379f84111ae90c032455.jpg",
-   "t_ko": "Oracle, Ellison의 최대 75억 달러 지분 매각 계획 철회 후 하락",
-   "t_id": "Saham Oracle Anjlok Usai Ellison Batalkan Rencana Jual Saham Rp120 T"
-  },
-  {
-   "ts": "2026-09-14T23:59:27+07:00",
-   "date": "2026-09-14",
-   "time": "09/14",
-   "src": "Yahoo Finance",
-   "t": "Stock Market Today: Dow Tries For A Gain, Trump Hits Out At AI Fears; This Fuel Play Clears Entry (Live Coverage)",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-nvidia-nvda-stock-ai-warning/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/226261e66c607a9e2bbfd75081ee18c9.jpg",
-   "t_ko": "뉴욕증시 — 다우 상승 시도 속 Trump AI 우려 비판, 주요 연료주 매수세 유입",
-   "t_id": "Bursa Saham Hari Ini: Dow Coba Menguat, Trump Sentil Ketakutan AI; Saham Energi Ini Tembus Titik Masuk"
-  },
-  {
-   "ts": "2026-09-14T23:59:11+07:00",
-   "date": "2026-09-14",
-   "time": "09/14",
-   "src": "CNBC",
-   "t": "Ukraine says it's open to halting attacks on Russian energy after Trump's claims of deal",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/trump-ukraine-russia-energy-oil-iran.html",
-   "g": 1,
-   "t_ko": "우크라이나, 트럼프 협상 주장 속 러시아 에너지 공격 중단 시사",
-   "t_id": "Ukraina Buka Peluang Hentikan Serangan Energi Rusia Usai Klaim Kesepakatan Trump"
-  },
-  {
-   "ts": "2026-09-14T23:52:58+07:00",
-   "date": "2026-09-14",
-   "time": "09/14",
-   "src": "Bloomberg",
-   "t": "Oil Tankers Earn $1 Million a Day as War Leaves Ship Shortage",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-14/oil-tankers-earn-1-million-a-day-as-war-leaves-ship-shortage",
-   "g": 1,
-   "t_ko": "전쟁 여파 선박 부족으로 유조선 하루 운임 100만 달러 기록",
-   "t_id": "Kapal Tanker Raup USD 1 Juta Per Hari Akibat Krisis Kekurangan Kapal di Tengah Perang"
   },
   {
    "ts": "2026-09-14T23:49:37+07:00",
@@ -17035,9 +17029,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,630",
-   "d": 0.24,
-   "ytd": 5.44,
+   "v": "17,640",
+   "d": 0.3,
+   "ytd": 5.5,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -17059,9 +17053,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.955%",
-   "d": -0.4,
-   "ytd": 19.02,
+   "v": "4.959%",
+   "d": -0.32,
+   "ytd": 19.12,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17082,9 +17076,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.43",
+   "v": "99.44",
    "d": 0.11,
-   "ytd": 1.17,
+   "ytd": 1.18,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17094,9 +17088,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.50",
-   "d": -1.69,
-   "ytd": 76.77,
+   "v": "101.64",
+   "d": -1.56,
+   "ytd": 77.01,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17106,9 +17100,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,350.0",
-   "d": -0.47,
-   "ytd": 0.56,
+   "v": "4,349.4",
+   "d": -0.49,
+   "ytd": 0.55,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17660,40 +17654,12 @@
   },
   {
    "date": "2026-09-16",
-   "time": "00:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "20-Year Bond Auction",
-   "imp": 2,
-   "exp": null,
-   "prev": "5.204%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "20년물 국채 입찰",
-   "title_id": "Lelang Obligasi AS Tenor 20 Tahun"
-  },
-  {
-   "date": "2026-09-16",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "API Weekly Crude Oil Stock",
-   "imp": 2,
-   "exp": null,
-   "prev": "-0.300M",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "API 주간 원유 재고",
-   "title_id": "Stok Minyak Mentah Mingguan API"
-  },
-  {
-   "date": "2026-09-16",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "Core Retail Sales (MoM)  (Aug)",
    "imp": 3,
-   "exp": "0.5%",
+   "exp": null,
    "prev": "-0.3%",
    "act": null,
    "src": "investing.com",
@@ -17721,7 +17687,7 @@
    "country": "US",
    "title": "Import Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.0%",
+   "exp": null,
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -17735,7 +17701,7 @@
    "country": "US",
    "title": "Retail Control (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.8%",
+   "exp": null,
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -17749,7 +17715,7 @@
    "country": "US",
    "title": "Business Inventories (MoM)  (Jul)",
    "imp": 2,
-   "exp": "0.2%",
+   "exp": null,
    "prev": "0.0%",
    "act": null,
    "src": "investing.com",
@@ -17763,7 +17729,7 @@
    "country": "US",
    "title": "Retail Inventories Ex Auto  (Jul)",
    "imp": 2,
-   "exp": "0.7%",
+   "exp": null,
    "prev": "0.7%",
    "act": null,
    "src": "investing.com",
@@ -17772,27 +17738,13 @@
   },
   {
    "date": "2026-09-16",
-   "time": "21:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Crude Oil Inventories",
-   "imp": 3,
-   "exp": null,
-   "prev": "-0.391M",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "EIA 원유 재고",
-   "title_id": "Stok Minyak Mentah EIA"
-  },
-  {
-   "date": "2026-09-16",
    "time": "22:30",
    "kind": "macro",
    "country": "US",
    "title": "Atlanta Fed GDPNow  (Q3)",
    "imp": 2,
-   "exp": "4.4%",
-   "prev": "4.4%",
+   "exp": null,
+   "prev": null,
    "act": null,
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
@@ -17819,7 +17771,7 @@
    "country": "US",
    "title": "Fed Interest Rate Decision",
    "imp": 3,
-   "exp": "4.00%",
+   "exp": null,
    "prev": "3.75%",
    "act": null,
    "src": "investing.com",
@@ -17828,26 +17780,12 @@
   },
   {
    "date": "2026-09-17",
-   "time": "01:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "FOMC Press Conference",
-   "imp": 3,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "FOMC 기자회견",
-   "title_id": "Konferensi Pers FOMC"
-  },
-  {
-   "date": "2026-09-17",
    "time": "03:00",
    "kind": "macro",
    "country": "US",
    "title": "TIC Net Long-Term Transactions  (Jul)",
    "imp": 2,
-   "exp": "146.3B",
+   "exp": null,
    "prev": "172.7B",
    "act": null,
    "src": "investing.com",
@@ -19562,7 +19500,7 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-15 00:44",
+  "idx_from_pc": "2026-09-15 00:58",
   "pc_age_min": 5,
   "on_runner": true,
   "bi": null,
@@ -21068,33 +21006,33 @@
    "t_id": "Skenario Danantara Rogoh Rp 517 Miliar untuk Beli 40,12% Saham BEI"
   },
   {
-   "ts": "2026-09-15T00:00:23+07:00",
-   "date": "2026-09-15",
-   "time": "00:00",
-   "src": "CNBC",
-   "t": "10-year Treasury yield hits 5% before reversing as traders await Fed meeting",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
-   "g": 1,
-   "t_ko": "미국 10년물 국채금리, 연준 회의 대기 속 5% 터치 후 하락",
-   "t_id": "Imbal Hasil US Treasury 10 Tahun Sentuh 5% Sebelum Berbalik Arah Jelang Rapat The Fed",
-   "score": 318.0,
-   "srcs": 6
-  },
-  {
-   "ts": "2026-09-14T11:40:00+07:00",
+   "ts": "2026-09-14T23:21:00+07:00",
    "date": "2026-09-14",
    "time": "09/14",
-   "src": "IDNFinancials",
-   "t": "Oil prices jump 2%, Brent hits USD 107.51 a barrel",
+   "src": "WSJ",
+   "t": "Stocks Decline, 10-Year Treasury Yield Touches 5% Amid Oil Surge",
    "tags": [],
-   "url": "https://www.idnfinancials.com/news/68797/oil-prices-jump-2-brent-hits-usd-107-51-a-barrel",
+   "url": "https://www.wsj.com/finance/stocks/oil-jumps-nasdaq-futures-slide-as-ai-related-stocks-tumble-worldwide-eaaf198b?mod=rss_markets_main",
    "g": 1,
-   "img": "https://photos.idnfinancials.com/_idn/adhi%202026/minyak%20bumi/minyak11.jpg",
-   "score": 314.5,
-   "srcs": 7,
-   "t_ko": "유가 2% 상승 — 브렌트유 배럴당 USD 107.51 기록",
-   "t_id": "Harga Minyak Melonjak 2%, Brent Tembus USD 107.51 per Barel"
+   "img": "https://images.wsj.net/im-90665356",
+   "score": 316.5,
+   "srcs": 5,
+   "t_ko": "유가 급등에 증시 하락 및 10년물 국채 금리 5% 도달",
+   "t_id": "Saham Turun, Imbal Hasil Obligasi 10 Tahun Sentuh 5% di Tengah Lonjakan Minyak"
+  },
+  {
+   "ts": "2026-09-14T20:43:35+07:00",
+   "date": "2026-09-14",
+   "time": "09/14",
+   "src": "Reuters",
+   "t": "South African rand falls over 1% as oil jumps and investors await Fed meeting",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmRDNjZiUTA5ZjFZMWV2T193ZjhkRkphXzE3cno5M3A2N0dmVlo1YzFaQnFaRDh3a25uVmUteWRiR01ORmtpMVVDSi03Ti1MUW83U0FWX2Z2dS11RmdoNDd0Zm5nYWN0RHVSNnozNFk4RDZPc2JaRmw4QVktZkdvUEJwU2Z6U0d1MWZpLW92RWFBZG50RG8wNjF6Mk12ajRnMDRuLXBFZ2FKYW1nekpnUA?oc=5",
+   "g": 1,
+   "score": 316.0,
+   "srcs": 6,
+   "t_ko": "남아프리카공화국 랜드화, 유가 상승·연준 회의 경계에 1% 하락",
+   "t_id": "Rand Afrika Selatan Anjlok Lebih dari 1% saat Minyak Melonjak dan Investor Menanti Rapat The Fed"
   }
  ],
  "daylog": {
@@ -21319,16 +21257,16 @@
   "2026-09-14": {
    "news": [
     {
-     "t": "Oil prices jump 2%, Brent hits USD 107.51 a barrel",
-     "ko": "유가 2% 상승 — 브렌트유 배럴당 USD 107.51 기록",
-     "id": "Harga Minyak Melonjak 2%, Brent Tembus USD 107.51 per Barel",
+     "t": "Stocks Decline, 10-Year Treasury Yield Touches 5% Amid Oil Surge",
+     "ko": "유가 급등에 증시 하락 및 10년물 국채 금리 5% 도달",
+     "id": "Saham Turun, Imbal Hasil Obligasi 10 Tahun Sentuh 5% di Tengah Lonjakan Minyak",
      "ai_ko": "",
      "ai_id": "",
-     "src": "IDNFinancials",
-     "url": "https://www.idnfinancials.com/news/68797/oil-prices-jump-2-brent-hits-usd-107-51-a-barrel",
+     "src": "WSJ",
+     "url": "https://www.wsj.com/finance/stocks/oil-jumps-nasdaq-futures-slide-as-ai-related-stocks-tumble-worldwide-eaaf198b?mod=rss_markets_main",
      "time": "09/14",
      "tags": [],
-     "sc": 314.5,
+     "sc": 316.5,
      "slot": "global"
     },
     {
@@ -21393,16 +21331,16 @@
   "2026-09-15": {
    "news": [
     {
-     "t": "10-year Treasury yield hits 5% before reversing as traders await Fed meeting",
-     "ko": "미국 10년물 국채금리, 연준 회의 대기 속 5% 터치 후 하락",
-     "id": "Imbal Hasil US Treasury 10 Tahun Sentuh 5% Sebelum Berbalik Arah Jelang Rapat The Fed",
+     "t": "Corning Tumbles 12% on $2B At-the-Market Equity Offering; Coherent Sinks 11%, Lumentum Drops 9%, Fabrinet Slides 6%",
+     "ko": "Corning, 20억 달러 규모 유상증자에 12% 급락 — Coherent 11%·Lumentum 9%·Fabrinet 6% 동반 하락",
+     "id": "Corning Anjlok 12% Akibat Penawaran Saham ATM USD 2 Miliar; Coherent Ambles 11%, Lumentum Turun 9%, Fabrinet Terperosok 6%",
      "ai_ko": "",
      "ai_id": "",
-     "src": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
-     "time": "00:00",
+     "src": "Yahoo Finance",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/corning-tumbles-12-2b-market-174950803.html",
+     "time": "00:49",
      "tags": [],
-     "sc": 318.0,
+     "sc": 313.0,
      "slot": "global"
     },
     {
@@ -21419,14 +21357,14 @@
      "slot": "macro"
     },
     {
-     "t": "This Bull Call Spread In Oil Provides A Hedge Against Stocks And Bonds",
-     "ko": "유가 상승 베팅 콜 스프레드, 주식·채권 헤지 수단으로 부각",
-     "id": "Bull Call Spread Minyak Ini Jadi Hedging Atas Saham dan Obligasi",
+     "t": "Warsh's credibility is on the line this week as Trump policies put pressure on Fed to hike",
+     "ko": "트럼프 정책의 연준 금리 인상 압박 속 Warsh의 신뢰도 시험대",
+     "id": "Kredibilitas Warsh Diuji Seiring Kebijakan Trump Tekan The Fed Naikkan Suku Bunga",
      "ai_ko": "",
      "ai_id": "",
-     "src": "Yahoo Finance",
-     "url": "https://www.investors.com/research/options/oil-etf-uso-options-spread-hedge-stocks-bonds-inflation-trade-strategy-markets/?src=A00220&yptr=yahoo",
-     "time": "00:01",
+     "src": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/14/warshs-credibility-is-on-the-line-this-week-as-trump-policies-put-pressure-on-fed-to-hike.html",
+     "time": "00:26",
      "tags": [],
      "sc": 309.0,
      "slot": "global"
@@ -28678,6 +28616,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-15 00:36"
+  "announcements": "2026-09-15 00:49"
  }
 }
