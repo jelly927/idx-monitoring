@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 22:09",
+ "updated": "2026-09-14 22:13",
  "delay_min": 15,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 20:55 Yahoo",
- "idr_per_krw": 13.0953,
+ "fx_basis": "13.09 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 20:55 Yahoo",
+ "idr_per_krw": 13.0944,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 22:08",
+   "asof": "investing.com 22:12",
    "unit": "bp"
   }
  ],
@@ -15699,10 +15699,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7605.1,
+   "px": 7601.15,
    "prev": 7655.5,
-   "pct": -0.66,
-   "asof": "22:05",
+   "pct": -0.71,
+   "asof": "22:10",
    "live": true,
    "spark": [
     7599.57,
@@ -15724,17 +15724,18 @@
     7594.95,
     7598.64,
     7594.84,
-    7605.1
+    7604.38,
+    7601.15
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26108.46,
+   "px": 26099.26,
    "prev": 26333.03,
-   "pct": -0.85,
-   "asof": "22:05",
+   "pct": -0.89,
+   "asof": "22:10",
    "live": true,
    "spark": [
     26018.42,
@@ -15756,17 +15757,18 @@
     26054.08,
     26071.36,
     26059.09,
-    26108.46
+    26110.55,
+    26099.26
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52380.45,
+   "px": 52343.12,
    "prev": 52562.77,
-   "pct": -0.35,
-   "asof": "22:05",
+   "pct": -0.42,
+   "asof": "22:10",
    "live": true,
    "spark": [
     52421.7,
@@ -15788,7 +15790,8 @@
     52294.22,
     52314.38,
     52289.71,
-    52380.45
+    52372.07,
+    52343.12
    ]
   },
   {
@@ -16101,6 +16104,20 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2019/04/22/Petrosea.jpg",
    "t_ko": "Pefindo, Petrosea(PTRO) 신용등급 idA+ 및 안정적 전망 부여",
    "t_id": "Pefindo Sematkan Peringkat idA+ untuk Petrosea (PTRO) dengan Prospek Stabil"
+  },
+  {
+   "ts": "2026-09-14T21:56:05+07:00",
+   "date": "2026-09-14",
+   "time": "21:56",
+   "src": "Medcom",
+   "t": "Summarecon Kembangkan Hunian dan Area Komersial di Bogor",
+   "tags": [
+    "SMRA"
+   ],
+   "url": "https://www.medcom.id/properti/news-properti/yKXeoLON-summarecon-kembangkan-hunian-dan-area-komersial-di-bogor",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/14/1842042/WEhwIJB7GA.jpeg?w=720",
+   "t_id": "Summarecon Kembangkan Hunian dan Area Komersial di Bogor",
+   "t_ko": "Summarecon, 보고르 주거·상업 복합단지 개발"
   },
   {
    "ts": "2026-09-14T20:00:00+07:00",
@@ -16672,6 +16689,18 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T22:09:14+07:00",
+   "date": "2026-09-14",
+   "time": "22:09",
+   "src": "CNBC",
+   "t": "Trump says no need for more AI regulation, slams Anthropic CEO Dario Amodei",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
+   "g": 1,
+   "t_ko": "트럼프, 추가 AI 규제 불필요 입장 밝히며 Anthropic CEO 비판",
+   "t_id": "Trump Sebut Tak Perlu Regulasi AI Tambahan, Kritik CEO Anthropic Dario Amodei"
+  },
+  {
    "ts": "2026-09-14T22:02:00+07:00",
    "date": "2026-09-14",
    "time": "22:02",
@@ -16704,7 +16733,20 @@
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/933362/1400-umkm-dibekali-strategi-digital-dan-teknologi-ai",
    "t_id": "1.400 UMKM Dibekali Strategi Digital dan Teknologi AI",
-   "t_ko": "중소기업 1,400개사 대상 디지털·AI 기술 전략 교육 실시"
+   "t_ko": "중소기업 1,400개사 대상 디지털·AI 전략 교육 실시"
+  },
+  {
+   "ts": "2026-09-14T22:00:35+07:00",
+   "date": "2026-09-14",
+   "time": "22:00",
+   "src": "Yahoo Finance",
+   "t": "Forget Nvidia. Apple Could Be the AI Stock to Watch Next.",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/forget-nvidia-apple-could-ai-150035999.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/d3c769f87a0d89177789f0f03bdf86a8.jpg",
+   "t_ko": "Nvidia 주목 해제 — 다음 AI 주는 Apple 전망",
+   "t_id": "Lupakan Nvidia, Apple Bisa Jadi Saham AI yang Layak Dicermati"
   },
   {
    "ts": "2026-09-14T22:00:26+07:00",
@@ -16715,8 +16757,21 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-14/us-10-year-treasury-yield-hits-highest-since-2023-video",
    "g": 1,
-   "t_ko": "미 국채 10년물 금리, 2023년 이후 최고치 경신",
-   "t_id": "Imbal Hasil US Treasury 10 Tahun Capai Level Tertinggi Sejak 2023"
+   "t_ko": "미국 10년물 국채금리, 2023년 이후 최고치 경신",
+   "t_id": "Imbal Hasil US Treasury 10 Tahun Sentuh Level Tertinggi Sejak 2023"
+  },
+  {
+   "ts": "2026-09-14T22:00:16+07:00",
+   "date": "2026-09-14",
+   "time": "22:00",
+   "src": "Yahoo Finance",
+   "t": "Diesel Just Passed $6 a Gallon for the First Time Ever. Bond Investors Should Be Paying Attention.",
+   "tags": [],
+   "url": "https://finance.yahoo.com/energy/articles/diesel-just-passed-6-gallon-150016428.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/f8b8b39ea9e1f7aac497d2e165914c97.png",
+   "t_ko": "경유 가격 사상 첫 갤런당 6달러 돌파 — 채권 투자자 주목",
+   "t_id": "Solar Tembus $6 per Galon untuk Pertama Kalinya, Investor Obligasi Wajib Waspada"
   },
   {
    "ts": "2026-09-14T21:55:33+07:00",
@@ -16727,7 +16782,7 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-14/strategist-who-foresaw-10-year-treasuries-at-5-says-selloff-isn-t-done-yet",
    "g": 1,
-   "t_ko": "미 국채 10년물 5% 예측 전략가, 매도세 지속 전망",
+   "t_ko": "10년물 국채금리 5% 예측 전략가 — 매도세 지속 전망",
    "t_id": "Strategis yang Ramal US Treasury 10 Tahun di 5% Sebut Aksi Jual Belum Usai"
   },
   {
@@ -16742,6 +16797,19 @@
    "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F0507c6a7-e813-450e-8ac3-6a2f383a9f36.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "t_ko": "대형 AI 기업의 속도 조절 요구에 미국 기술주 하락",
    "t_id": "Saham Teknologi AS Anjlok Usai Grup AI Besar Serukan Perlambatan"
+  },
+  {
+   "ts": "2026-09-14T21:53:24+07:00",
+   "date": "2026-09-14",
+   "time": "21:53",
+   "src": "Yahoo Finance",
+   "t": "Enbridge (ENB) Expands its U.S. Oil Footprint with Tallgrass Acquisition",
+   "tags": [],
+   "url": "https://finance.yahoo.com/energy/articles/enbridge-enb-expands-u-oil-145324207.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/81a75bf4f517b251598cf1673538cf91.jpg",
+   "t_ko": "Enbridge(ENB), Tallgrass 인수로 미국 원유 사업 확장",
+   "t_id": "Enbridge (ENB) Perluas Jejak Minyak AS Lewat Akuisisi Tallgrass"
   },
   {
    "ts": "2026-09-14T21:52:38+07:00",
@@ -16766,6 +16834,19 @@
    "g": 1,
    "t_ko": "Etihad, 중동 경쟁 심화에도 승객 운임 인상 방어 입장",
    "t_id": "Etihad Sebut Rivalitas Timur Tengah Lindungi Penumpang dari Lonjakan Tarif"
+  },
+  {
+   "ts": "2026-09-14T21:52:01+07:00",
+   "date": "2026-09-14",
+   "time": "21:52",
+   "src": "Yahoo Finance",
+   "t": "TotalEnergies (TTE) Sees Long-Term Potential in Angola’s Offshore Oil",
+   "tags": [],
+   "url": "https://finance.yahoo.com/energy/articles/totalenergies-tte-sees-long-term-145201682.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/d38a7cbc4ddfe069f3d71302e0da4bed.jpg",
+   "t_ko": "TotalEnergies(TTE), 앙골라 해상 유전서 장기 성장성 확인",
+   "t_id": "TotalEnergies (TTE) Lirik Potensi Jangka Panjang di Lepas Pantai Angola"
   },
   {
    "ts": "2026-09-14T21:51:43+07:00",
@@ -16793,18 +16874,6 @@
    "t_id": "SpaceX Bergerak Usai Komentar Musk; Oracle Anjlok Gegara Rencana Ellison"
   },
   {
-   "ts": "2026-09-14T21:50:18+07:00",
-   "date": "2026-09-14",
-   "time": "21:50",
-   "src": "CNBC",
-   "t": "Trump says no need for more AI regulation, slams Anthropic CEO Dario Amodei",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
-   "g": 1,
-   "t_ko": "트럼프, 추가 AI 규제 불필요 입장 밝히며 Anthropic CEO 비판",
-   "t_id": "Trump Sebut Tak Perlu Regulasi AI Tambahan, Kritik CEO Anthropic Dario Amodei"
-  },
-  {
    "ts": "2026-09-14T21:49:22+07:00",
    "date": "2026-09-14",
    "time": "21:49",
@@ -16814,7 +16883,7 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8662908/putra-purbaya-buka-suara-bapak-bisa-tidur-nyenyak-balik-jadi-trader",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/menteri-keuangan-purbaya-yudhi-sadewa-1788961453071_169.jpeg?w=360&q=90",
    "t_id": "Putra Purbaya Buka Suara: Bapak Bisa Tidur Nyenyak, Balik Jadi Trader",
-   "t_ko": "Putra Purbaya 입장 표명 — 트레이더 복귀"
+   "t_ko": "Putra Purbaya 공식 입장 — 트레이더 복귀 선언"
   },
   {
    "ts": "2026-09-14T21:48:00+07:00",
@@ -16879,19 +16948,6 @@
    "t_id": "Definium, Melesat 190% Tahun Ini, Sukses Lagi Lewat LSD Sintetis; Saham Terbang"
   },
   {
-   "ts": "2026-09-14T21:41:24+07:00",
-   "date": "2026-09-14",
-   "time": "21:41",
-   "src": "Yahoo Finance",
-   "t": "What Anthropic's AI Slowdown Call Could Mean For Cloud Giants Amazon, Microsoft, Google",
-   "tags": [],
-   "url": "https://www.investors.com/news/technology/anthropic-ai-slowdown-amazon-microsoft-google/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/3d5183f3473c20f2be82caadb8b34de3.jpg",
-   "t_ko": "Anthropic의 AI 성장 속도 조절론, 클라우드 빅테크에 미칠 영향",
-   "t_id": "Dampak Seruan Perlambatan AI Anthropic bagi Raksasa Cloud Amazon, Microsoft, Google"
-  },
-  {
    "ts": "2026-09-14T21:41:01+07:00",
    "date": "2026-09-14",
    "time": "21:41",
@@ -16902,44 +16958,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/perwakilan-mitra-merchant-dan-grab-dalam-acara-teras-perwira-spesial-ulang-tahun-2026-di-jakarta-istimewa-1w7uu.webp",
    "t_ko": "UMKM, 소비재 선택 기준 까다로워져 판매 전략 재편 시급",
    "t_id": "Nggak Bisa Sekadar Jualan, Ini Tantangan UMKM saat Konsumen Makin Selektif"
-  },
-  {
-   "ts": "2026-09-14T21:40:40+07:00",
-   "date": "2026-09-14",
-   "time": "21:40",
-   "src": "Yahoo Finance",
-   "t": "Trump Blasts Anthropic CEO As “Perfect Little Angel,” Says AI Only Needs One “Guardrail.” You Can Probably Guess What It Is",
-   "tags": [],
-   "url": "https://finance.yahoo.com/technology/ai/articles/trump-blasts-anthropic-ceo-perfect-144040436.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/27060e3a065ea9ac3856664e59704940.jpg",
-   "t_ko": "트럼프, Anthropic CEO 비판하며 AI 안전장치 단일화 주장",
-   "t_id": "Trump Sebut CEO Anthropic “Malaikat Kecil”, Sebut AI Hanya Butuh Satu “Pengaman”"
-  },
-  {
-   "ts": "2026-09-14T21:39:57+07:00",
-   "date": "2026-09-14",
-   "time": "21:39",
-   "src": "Bloomberg",
-   "t": "Dollar Jumps Most Since June as 10-Year Treasury Yield Tops 5%",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-14/dollar-jumps-most-since-june-as-10-year-treasury-yield-tops-5",
-   "g": 1,
-   "t_ko": "미국 10년물 국채금리 5% 상회하며 달러화 6월 이후 최대 폭 급등",
-   "t_id": "Dolar Melonjak Tertinggi Sejak Juni Seiring Imbal Hasil US Treasury 10 Tahun Tembus 5%"
-  },
-  {
-   "ts": "2026-09-14T21:39:57+07:00",
-   "date": "2026-09-14",
-   "time": "21:39",
-   "src": "Yahoo Finance",
-   "t": "Dow Rethinks its $20 Billion Saudi Chemicals Bet",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/dow-rethinks-20-billion-saudi-144104986.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/b9dcc24f64ffa1078081700a7139e9b6.jpg",
-   "t_ko": "Dow, 200억 달러 사우디 화학 투자 계획 재검토",
-   "t_id": "Dow Tinjau Ulang Taruhan Bahan Kimia $20 Miliar di Arab Saudi"
   },
   {
    "ts": "2026-09-14T21:32:00+07:00",
@@ -17287,9 +17305,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.994%",
-   "d": 0.38,
-   "ytd": 19.96,
+   "v": "4.989%",
+   "d": 0.28,
+   "ytd": 19.84,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17311,8 +17329,8 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "99.62",
-   "d": 0.29,
-   "ytd": 1.36,
+   "d": 0.3,
+   "ytd": 1.37,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17322,9 +17340,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.73",
-   "d": 0.46,
-   "ytd": 80.65,
+   "v": "103.37",
+   "d": 0.12,
+   "ytd": 80.02,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17334,9 +17352,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,315.5",
-   "d": -1.26,
-   "ytd": -0.23,
+   "v": "4,318.0",
+   "d": -1.2,
+   "ytd": -0.18,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17358,9 +17376,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,310",
-   "d": -0.74,
-   "ytd": -2.23,
+   "v": "16,300",
+   "d": -0.8,
+   "ytd": -2.29,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -19947,7 +19965,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-14 22:04",
-  "pc_age_min": 5,
+  "pc_age_min": 9,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21452,17 +21470,18 @@
    "t_id": "Skenario Danantara Rogoh Rp 517 Miliar untuk Beli 40,12% Saham BEI"
   },
   {
-   "ts": "2026-09-14T21:39:57+07:00",
+   "ts": "2026-09-14T21:51:43+07:00",
    "date": "2026-09-14",
-   "time": "21:39",
-   "src": "Bloomberg",
-   "t": "Dollar Jumps Most Since June as 10-Year Treasury Yield Tops 5%",
+   "time": "21:51",
+   "src": "FT",
+   "t": "Ten-year Treasury yield hits 5% for first time since 2023",
    "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-14/dollar-jumps-most-since-june-as-10-year-treasury-yield-tops-5",
+   "url": "https://www.ft.com/content/06cb850d-089a-4318-88d7-a410e9766b89?syn-25a6b1a6=1",
    "g": 1,
-   "t_ko": "미국 10년물 국채금리 5% 상회하며 달러화 6월 이후 최대 폭 급등",
-   "t_id": "Dolar Melonjak Tertinggi Sejak Juni Seiring Imbal Hasil US Treasury 10 Tahun Tembus 5%",
-   "score": 317.0,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F640d3633-43b5-4010-b23b-a6557057990a.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "미국 10년물 국채금리, 2023년 이후 처음 5% 돌파",
+   "t_id": "Imbal Hasil Obligasi 10 Tahun AS Tembus 5% untuk Pertama Kalinya Sejak 2023",
+   "score": 316.5,
    "srcs": 5
   },
   {
@@ -21720,16 +21739,16 @@
   "2026-09-14": {
    "news": [
     {
-     "t": "Dollar Jumps Most Since June as 10-Year Treasury Yield Tops 5%",
-     "ko": "미국 10년물 국채금리 5% 상회하며 달러화 6월 이후 최대 폭 급등",
-     "id": "Dolar Melonjak Tertinggi Sejak Juni Seiring Imbal Hasil US Treasury 10 Tahun Tembus 5%",
+     "t": "Ten-year Treasury yield hits 5% for first time since 2023",
+     "ko": "미국 10년물 국채금리, 2023년 이후 처음 5% 돌파",
+     "id": "Imbal Hasil Obligasi 10 Tahun AS Tembus 5% untuk Pertama Kalinya Sejak 2023",
      "ai_ko": "",
      "ai_id": "",
-     "src": "Bloomberg",
-     "url": "https://www.bloomberg.com/news/articles/2026-09-14/dollar-jumps-most-since-june-as-10-year-treasury-yield-tops-5",
-     "time": "21:39",
+     "src": "FT",
+     "url": "https://www.ft.com/content/06cb850d-089a-4318-88d7-a410e9766b89?syn-25a6b1a6=1",
+     "time": "21:51",
      "tags": [],
-     "sc": 317.0,
+     "sc": 316.5,
      "slot": "global"
     },
     {
