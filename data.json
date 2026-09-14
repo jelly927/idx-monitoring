@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 02:34",
+ "updated": "2026-09-15 02:49",
  "delay_min": 15,
- "fx_basis": "13.10 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 02:31 Yahoo",
- "idr_per_krw": 13.0997,
+ "fx_basis": "13.09 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,347 · 02:31 Yahoo",
+ "idr_per_krw": 13.0876,
  "indices": [
   {
    "code": "USDIDR",
@@ -56,7 +56,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 02:32",
+   "asof": "investing.com 02:48",
    "unit": "bp"
   }
  ],
@@ -70,7 +70,7 @@
   "value_idr": 17317150254133.342,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-15 02:30",
+  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-15 02:45",
   "rank_asof": null,
   "rank_date": "2026-09-14",
   "adv": 229,
@@ -15357,10 +15357,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7630.63,
+   "px": 7629.36,
    "prev": 7655.5,
-   "pct": -0.32,
-   "asof": "02:30",
+   "pct": -0.34,
+   "asof": "02:45",
    "live": true,
    "spark": [
     7599.57,
@@ -15435,17 +15435,20 @@
     7631.31,
     7630.6,
     7630.16,
-    7630.63
+    7629.56,
+    7628.57,
+    7628.39,
+    7629.36
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26250.2,
+   "px": 26242.85,
    "prev": 26333.03,
-   "pct": -0.31,
-   "asof": "02:30",
+   "pct": -0.34,
+   "asof": "02:45",
    "live": true,
    "spark": [
     26018.42,
@@ -15520,17 +15523,20 @@
     26251.9,
     26250.12,
     26252.63,
-    26250.2
+    26247.87,
+    26240.91,
+    26241.78,
+    26242.85
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52460.13,
+   "px": 52456.05,
    "prev": 52562.77,
    "pct": -0.2,
-   "asof": "02:30",
+   "asof": "02:45",
    "live": true,
    "spark": [
     52421.7,
@@ -15605,7 +15611,10 @@
     52480.54,
     52472.4,
     52453.77,
-    52460.13
+    52450.49,
+    52451.65,
+    52455.74,
+    52456.05
    ]
   },
   {
@@ -16503,6 +16512,43 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-15T02:47:42+07:00",
+   "date": "2026-09-15",
+   "time": "02:47",
+   "src": "CNBC",
+   "t": "Counting the votes: Warsh faces a tough battle as the Fed girds for expected interest rate hike",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/counting-the-votes-warsh-faces-tough-battle-as-fed-girds-for-expected-rate-hike.html",
+   "g": 1,
+   "t_ko": "금리 인상 앞둔 연준, Warsh 인준 청문회 난항 전망",
+   "t_id": "Hitung Suara: Warsh Hadapi Pertarungan Sengit di Tengah Persiapan The Fed Hadapi Kenaikan Suku Bunga"
+  },
+  {
+   "ts": "2026-09-15T02:45:00+07:00",
+   "date": "2026-09-15",
+   "time": "02:45",
+   "src": "WSJ",
+   "t": "U.S. 10-Year Yield Cools After Topping 5%, German Bund Yield Hits 15-Year High",
+   "tags": [],
+   "url": "https://www.wsj.com/economy/central-banking/u-s-treasury-yields-edge-lower-german-10-year-bund-yield-hits-new-15-year-high-19110507?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-27074741",
+   "t_ko": "미국 10년물 국채금리 5% 상회 후 하락 — 독일 분드금리 15년 최고치 경신",
+   "t_id": "Imbal Hasil Obligasi AS 10 Tahun Mereda Usai Tembus 5%, Bund Jerman Capai Rekor Tertinggi 15 Tahun"
+  },
+  {
+   "ts": "2026-09-15T02:33:44+07:00",
+   "date": "2026-09-15",
+   "time": "02:33",
+   "src": "CNA",
+   "t": "Trump privately met with OpenAI’s Altman at GOP convention, MS Now reports",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/trump-privately-met-openais-altman-gop-convention-ms-now-reports-6384291",
+   "g": 1,
+   "t_ko": "트럼프, 공화당 전당대회서 OpenAI CEO Altman과 비공개 회동 — MS Now 보도",
+   "t_id": "Trump Diam-Diam Bertemu Altman OpenAI di Konvensi Partai Republik, Lapor MS Now"
+  },
+  {
    "ts": "2026-09-15T02:32:17+07:00",
    "date": "2026-09-15",
    "time": "02:32",
@@ -16541,18 +16587,6 @@
    "t_id": "CrowdStrike dan Palo Alto Networks Pimpin Saham Perangkat Lunak Menuju Rekor Belum Pernah Terjadi Sebelumnya"
   },
   {
-   "ts": "2026-09-15T02:27:29+07:00",
-   "date": "2026-09-15",
-   "time": "02:27",
-   "src": "CNBC",
-   "t": "Not all tech is under fire in Monday's selling, while investors seek refuge in defensive stocks",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/not-all-tech-is-under-fire-in-monday-selling-investors-seek-out-defensives.html",
-   "g": 1,
-   "t_ko": "증시 하락 속 IT 전면 약세 면해 — 방어주로 피난처 찾는 투자자",
-   "t_id": "Tidak Semua Saham Teknologi Tertekan dalam Aksi Jual Senin, Investor Cari Suaka ke Saham Defensif"
-  },
-  {
    "ts": "2026-09-15T02:16:45+07:00",
    "date": "2026-09-15",
    "time": "02:16",
@@ -16563,18 +16597,6 @@
    "g": 1,
    "t_ko": "연준, 지급준비금 관리 매입 중단 10월 중순까지 연장",
    "t_id": "The Fed Perpanjang Jeda Pembelian Manajemen Cadangan hingga Pertengahan Oktober"
-  },
-  {
-   "ts": "2026-09-15T02:16:31+07:00",
-   "date": "2026-09-15",
-   "time": "02:16",
-   "src": "CNBC",
-   "t": "AI infrastructure stocks slump, cyber shares soar on calls for AI slowdown",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/ai-stocks-slowdown-amodei-altman.html",
-   "g": 1,
-   "t_ko": "AI 인프라 주가 하락 — AI 속도 조절론에 사이버보안주 급등",
-   "t_id": "Saham Infrastruktur AI Anjlok, Saham Siber Meroket di Tengah Seruan Perlambatan AI"
   },
   {
    "ts": "2026-09-15T02:12:00+07:00",
@@ -16602,42 +16624,6 @@
    "t_id": "Khawatir 'Kepercayaan Berlebih' di Pasar: Huszczo"
   },
   {
-   "ts": "2026-09-15T01:59:33+07:00",
-   "date": "2026-09-15",
-   "time": "01:59",
-   "src": "CNBC",
-   "t": "Trump says no need for more AI regulation, slams Anthropic CEO Dario Amodei",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
-   "g": 1,
-   "t_ko": "트럼프, 추가 AI 규제 불필요 입장 밝히며 Anthropic CEO 비판",
-   "t_id": "Trump Sebut Tak Perlu Regulasi AI Tambahan, Kritik CEO Anthropic Dario Amodei"
-  },
-  {
-   "ts": "2026-09-15T01:56:26+07:00",
-   "date": "2026-09-15",
-   "time": "01:56",
-   "src": "CNBC",
-   "t": "Trump agrees to ethics requirements in crypto Clarity Act as GOP seeks Democratic votes",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/clarity-act-senate-vote-crypto-regulation.html",
-   "g": 1,
-   "t_ko": "공화당 민주당 표결 확보 위해 Trump, 암호화폐 Clarity Act 윤리 요건 합의",
-   "t_id": "Trump Setujui Syarat Etika di RUU Kripto Clarity Act Saat Republik Cari Suara Demokrat"
-  },
-  {
-   "ts": "2026-09-15T01:55:38+07:00",
-   "date": "2026-09-15",
-   "time": "01:55",
-   "src": "CNBC",
-   "t": "Oil prices rise after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html",
-   "g": 1,
-   "t_ko": "사우디, 호르무즈 해협 우회 주요 송유관 가동 중단에 유가 상승",
-   "t_id": "Harga Minyak Naik Usai Arab Saudi Tutup Pipa Kritis Pengganti Selat Hormuz"
-  },
-  {
    "ts": "2026-09-15T01:55:00+07:00",
    "date": "2026-09-15",
    "time": "01:55",
@@ -16647,30 +16633,6 @@
    "url": "https://mediaindonesia.com/ekonomi/933400/tanda-tangan-dan-e-meterai-digital-pangkas-waktu-proses-dokumen-hingga-80",
    "t_ko": "디지털 서명·인증으로 문서 처리 시간 80% 단축",
    "t_id": "Tanda Tangan dan e-Meterai Digital Pangkas Waktu Proses Dokumen hingga 80%"
-  },
-  {
-   "ts": "2026-09-15T01:54:51+07:00",
-   "date": "2026-09-15",
-   "time": "01:54",
-   "src": "CNBC",
-   "t": "What Amodei's AI slowdown could mean for Anthropic's imminent IPO",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
-   "g": 1,
-   "t_ko": "Amodei의 AI 둔화 우려가 Anthropic의 임박한 상장에 미칠 영향",
-   "t_id": "Dampak Perlambatan AI Amodei bagi IPO Anthropic yang Kian Dekat"
-  },
-  {
-   "ts": "2026-09-15T01:50:32+07:00",
-   "date": "2026-09-15",
-   "time": "01:50",
-   "src": "CNBC",
-   "t": "Counting the votes: Warsh faces a tough battle as the Fed girds for expected interest rate hike",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/counting-the-votes-warsh-faces-tough-battle-as-fed-girds-for-expected-rate-hike.html",
-   "g": 1,
-   "t_ko": "금리 인상 앞둔 연준, Warsh 인준 청문회 난항 전망",
-   "t_id": "Hitung Suara: Warsh Hadapi Pertarungan Sengit di Tengah Persiapan The Fed Hadapi Kenaikan Suku Bunga"
   },
   {
    "ts": "2026-09-15T01:50:00+07:00",
@@ -16684,18 +16646,6 @@
    "img": "https://images.wsj.net/im-90665356",
    "t_ko": "유가 급등에 증시 하락 및 10년물 국채 금리 5% 도달",
    "t_id": "Saham Turun, Imbal Hasil Obligasi 10 Tahun Sentuh 5% di Tengah Lonjakan Minyak"
-  },
-  {
-   "ts": "2026-09-15T01:39:08+07:00",
-   "date": "2026-09-15",
-   "time": "01:39",
-   "src": "CNBC",
-   "t": "Bank of America expects third-quarter investment banking fees to fall more than 10%; shares slide",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/bank-of-america-bac-q3-investment-banking-fees.html",
-   "g": 1,
-   "t_ko": "Bank of America, 3분기 IB 수수료 10% 이상 감소 전망에 하락",
-   "t_id": "BofA Prediksi Pendapatan Investment Banking Kuartal III Turun Lebih dari 10%; Saham Anjlok"
   },
   {
    "ts": "2026-09-15T01:38:10+07:00",
@@ -16721,6 +16671,68 @@
    "img": "https://images.mktw.net/im-70960671",
    "t_ko": "유명 경제학자들, Fed의 심각한 정책 오류 가능성 경고",
    "t_id": "The Fed di Ambang Kesalahan Fatal, Ekonom Terkemuka Ingatkan"
+  },
+  {
+   "ts": "2026-09-15T01:36:19+07:00",
+   "date": "2026-09-15",
+   "time": "01:36",
+   "src": "Bloomberg",
+   "t": "Canadian Insurer Sagen Plans to Raise Around C$300 Million",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-14/canadian-insurer-sagen-plans-to-raise-around-c-300-million",
+   "g": 1,
+   "t_ko": "캐나다 Sagen, 약 C$3억 규모 유상증자 추진",
+   "t_id": "Perusahaan Asuransi Kanada Sagen Berencana Himpun Sekitar C$300 Juta"
+  },
+  {
+   "ts": "2026-09-15T01:32:00+07:00",
+   "date": "2026-09-15",
+   "time": "01:32",
+   "src": "MarketWatch",
+   "t": "Calls for an AI slowdown meet vigorous pushback: Trump calls it a ‘sick conspiracy’",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/calls-for-an-ai-slowdown-meet-vigorous-pushback-trump-calls-it-a-sick-conspiracy-21b3c1ab?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-29676915",
+   "t_ko": "AI 개발 속도 조절론에 거센 반발 — 트럼프, 음모론 규정",
+   "t_id": "Desakan Perlambatan AI Ditolak Keras: Trump Sebut 'Konspirasi Sakit'"
+  },
+  {
+   "ts": "2026-09-15T01:25:51+07:00",
+   "date": "2026-09-15",
+   "time": "01:25",
+   "src": "Reuters",
+   "t": "Fed's table is set for a rate hike, a first under Warsh",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTmR4eUlzVVZXLUFSSEpiLUs3UkxJMDYwVVpsU2o1REJIOUFSTlN3U2VBV2NRZ3hUTUNzSy1KRTNlODFaTmh6bGgtTFpCM3BCWE13c250dlBDTW5XaS1rWHpUMjV0cFJiSkxqN3g4OTVVZmJKN1dKSXZhRHZ2bW1Lbndrc3UxRGhjNG9LY01lZklaajE4?oc=5",
+   "g": 1,
+   "t_ko": "Warsh 체제 첫 금리 인상 준비 마친 연준",
+   "t_id": "Meja The Fed Siap untuk Kenaikan Suku Bunga, Pertama di Bawah Warsh"
+  },
+  {
+   "ts": "2026-09-15T01:23:21+07:00",
+   "date": "2026-09-15",
+   "time": "01:23",
+   "src": "Reuters",
+   "t": "Wall Street drops as AI worries pummel chipmakers",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYVB5TUc4VTc5MGdNMjVWcVYxUUszYjdXU3hrVnZXbVRCRm40Z3JBX3BhTElKaXVFQmU4SW82WWRwLVdxcGFTVVhPclllM25kSzR0MWdqUmU5YjQydl9MZDhLZ1MzQmF0b01UY3MxaWx0VkxOMjJUQzhmbHJPQjQzdXJMWkJ2OGs5R0ZQc2FjeVpEdjZkM2VqMC1aeGhXSm8?oc=5",
+   "g": 1,
+   "t_ko": "월가, AI 우려 확산에 반도체주 약세 마감",
+   "t_id": "Wall Street Anjlok Ditekan Kekhawatiran AI yang Hantam Saham Chip"
+  },
+  {
+   "ts": "2026-09-15T01:22:34+07:00",
+   "date": "2026-09-15",
+   "time": "01:22",
+   "src": "FT",
+   "t": "US tech stocks fall after big AI groups call for slowdown",
+   "tags": [],
+   "url": "https://www.ft.com/content/aa8a1be7-abe0-44b7-bcd3-31fd0a44de08?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F0507c6a7-e813-450e-8ac3-6a2f383a9f36.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "대형 AI 기업의 속도 조절 요구에 미국 기술주 하락",
+   "t_id": "Saham Teknologi AS Anjlok Usai Grup AI Besar Serukan Perlambatan"
   },
   {
    "ts": "2026-09-15T00:48:56+07:00",
@@ -17106,9 +17118,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.09",
-   "d": 0.41,
-   "ytd": 12.7,
+   "v": "13.08",
+   "d": 0.31,
+   "ytd": 12.6,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17141,9 +17153,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.43",
-   "d": 0.11,
-   "ytd": 1.17,
+   "v": "99.44",
+   "d": 0.12,
+   "ytd": 1.18,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17153,9 +17165,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.22",
-   "d": -1.97,
-   "ytd": 76.28,
+   "v": "101.36",
+   "d": -1.83,
+   "ytd": 76.52,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17165,9 +17177,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,339.5",
-   "d": -0.71,
-   "ytd": 0.32,
+   "v": "4,334.8",
+   "d": -0.82,
+   "ytd": 0.21,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17719,12 +17731,40 @@
   },
   {
    "date": "2026-09-16",
+   "time": "00:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "20-Year Bond Auction",
+   "imp": 2,
+   "exp": null,
+   "prev": "5.204%",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "20년물 국채 입찰",
+   "title_id": "Lelang Obligasi AS Tenor 20 Tahun"
+  },
+  {
+   "date": "2026-09-16",
+   "time": "03:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "API Weekly Crude Oil Stock",
+   "imp": 2,
+   "exp": null,
+   "prev": "-0.300M",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "API 주간 원유 재고",
+   "title_id": "Stok Minyak Mentah Mingguan API"
+  },
+  {
+   "date": "2026-09-16",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "Core Retail Sales (MoM)  (Aug)",
    "imp": 3,
-   "exp": null,
+   "exp": "0.5%",
    "prev": "-0.3%",
    "act": null,
    "src": "investing.com",
@@ -17752,7 +17792,7 @@
    "country": "US",
    "title": "Import Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.0%",
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -17766,7 +17806,7 @@
    "country": "US",
    "title": "Retail Control (MoM)  (Aug)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.8%",
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -17780,7 +17820,7 @@
    "country": "US",
    "title": "Business Inventories (MoM)  (Jul)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.2%",
    "prev": "0.0%",
    "act": null,
    "src": "investing.com",
@@ -17794,7 +17834,7 @@
    "country": "US",
    "title": "Retail Inventories Ex Auto  (Jul)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.7%",
    "prev": "0.7%",
    "act": null,
    "src": "investing.com",
@@ -17803,13 +17843,27 @@
   },
   {
    "date": "2026-09-16",
+   "time": "21:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Crude Oil Inventories",
+   "imp": 3,
+   "exp": null,
+   "prev": "-0.391M",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "EIA 원유 재고",
+   "title_id": "Stok Minyak Mentah EIA"
+  },
+  {
+   "date": "2026-09-16",
    "time": "22:30",
    "kind": "macro",
    "country": "US",
    "title": "Atlanta Fed GDPNow  (Q3)",
    "imp": 2,
-   "exp": null,
-   "prev": null,
+   "exp": "4.4%",
+   "prev": "4.4%",
    "act": null,
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
@@ -17836,7 +17890,7 @@
    "country": "US",
    "title": "Fed Interest Rate Decision",
    "imp": 3,
-   "exp": null,
+   "exp": "4.00%",
    "prev": "3.75%",
    "act": null,
    "src": "investing.com",
@@ -17845,12 +17899,26 @@
   },
   {
    "date": "2026-09-17",
+   "time": "01:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "FOMC Press Conference",
+   "imp": 3,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "FOMC 기자회견",
+   "title_id": "Konferensi Pers FOMC"
+  },
+  {
+   "date": "2026-09-17",
    "time": "03:00",
    "kind": "macro",
    "country": "US",
    "title": "TIC Net Long-Term Transactions  (Jul)",
    "imp": 2,
-   "exp": null,
+   "exp": "146.3B",
    "prev": "172.7B",
    "act": null,
    "src": "investing.com",
@@ -19551,7 +19619,7 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-15 02:30",
+  "idx_from_pc": "2026-09-15 02:45",
   "pc_age_min": 4,
   "on_runner": true,
   "bi": null,
@@ -21069,22 +21137,21 @@
    "t_ko": "유가 급등에 증시 하락 및 10년물 국채 금리 5% 도달",
    "t_id": "Saham Turun, Imbal Hasil Obligasi 10 Tahun Sentuh 5% di Tengah Lonjakan Minyak",
    "score": 318.5,
-   "srcs": 7
+   "srcs": 4
   },
   {
-   "ts": "2026-09-14T21:04:53+07:00",
+   "ts": "2026-09-14T20:43:35+07:00",
    "date": "2026-09-14",
    "time": "09/14",
-   "src": "CNA",
-   "t": "Dollar rises as Middle East conflict lifts oil, Fed hike looms",
+   "src": "Reuters",
+   "t": "South African rand falls over 1% as oil jumps and investors await Fed meeting",
    "tags": [],
-   "url": "https://www.channelnewsasia.com/business/dollar-rises-middle-east-conflict-lifts-oil-fed-hike-looms-6382181",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmRDNjZiUTA5ZjFZMWV2T193ZjhkRkphXzE3cno5M3A2N0dmVlo1YzFaQnFaRDh3a25uVmUteWRiR01ORmtpMVVDSi03Ti1MUW83U0FWX2Z2dS11RmdoNDd0Zm5nYWN0RHVSNnozNFk4RDZPc2JaRmw4QVktZkdvUEJwU2Z6U0d1MWZpLW92RWFBZG50RG8wNjF6Mk12ajRnMDRuLXBFZ2FKYW1nekpnUA?oc=5",
    "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--XpH02uFF--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T115448Z_1_LYNXMPEM8D0XU_RTROPTP_3_USA-BONDS-BUYBACKS.JPG?itok=-kyBb87a",
-   "score": 313.5,
-   "srcs": 7,
-   "t_ko": "중동 분쟁 격화에 따른 유가 상승과 연준 금리 인상 우려로 달러화 강세",
-   "t_id": "Dolar Menguat Seiring Konflik Timur Tengah Dongkrak Minyak, Suku Bunga The Fed Mengintai"
+   "score": 314.0,
+   "srcs": 3,
+   "t_ko": "남아프리카공화국 랜드화, 유가 상승·연준 회의 경계에 1% 하락",
+   "t_id": "Rand Afrika Selatan Anjlok Lebih dari 1% saat Minyak Melonjak dan Investor Menanti Rapat The Fed"
   }
  ],
  "daylog": {
@@ -21309,16 +21376,16 @@
   "2026-09-14": {
    "news": [
     {
-     "t": "Dollar rises as Middle East conflict lifts oil, Fed hike looms",
-     "ko": "중동 분쟁 격화에 따른 유가 상승과 연준 금리 인상 우려로 달러화 강세",
-     "id": "Dolar Menguat Seiring Konflik Timur Tengah Dongkrak Minyak, Suku Bunga The Fed Mengintai",
+     "t": "South African rand falls over 1% as oil jumps and investors await Fed meeting",
+     "ko": "남아프리카공화국 랜드화, 유가 상승·연준 회의 경계에 1% 하락",
+     "id": "Rand Afrika Selatan Anjlok Lebih dari 1% saat Minyak Melonjak dan Investor Menanti Rapat The Fed",
      "ai_ko": "",
      "ai_id": "",
-     "src": "CNA",
-     "url": "https://www.channelnewsasia.com/business/dollar-rises-middle-east-conflict-lifts-oil-fed-hike-looms-6382181",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmRDNjZiUTA5ZjFZMWV2T193ZjhkRkphXzE3cno5M3A2N0dmVlo1YzFaQnFaRDh3a25uVmUteWRiR01ORmtpMVVDSi03Ti1MUW83U0FWX2Z2dS11RmdoNDd0Zm5nYWN0RHVSNnozNFk4RDZPc2JaRmw4QVktZkdvUEJwU2Z6U0d1MWZpLW92RWFBZG50RG8wNjF6Mk12ajRnMDRuLXBFZ2FKYW1nekpnUA?oc=5",
      "time": "09/14",
      "tags": [],
-     "sc": 313.5,
+     "sc": 314.0,
      "slot": "global"
     },
     {
@@ -27992,25 +28059,6 @@
  ],
  "catalyst": [
   {
-   "t": "FORU",
-   "n": "Fortune Indonesia",
-   "px": 4650.0,
-   "pct": 25.0,
-   "val": 19880718000.0,
-   "mcap": 2163291600000.0,
-   "ratio": 2.4,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "FORU, 석탄 광산 인수를 위한 Rp2.71조 유상증자 준비",
-   "hl_id": "FORU Siap Gelar Rights Issue Rp27,1 Triliun untuk Tambang Batu Bara",
-   "url": "https://www.idnfinancials.com/news/68804/foru-prepares-idr-27-1-trillion-rights-issue-for-coal-mining",
-   "score": 70.2,
-   "s_news": 98,
-   "s_size": 33,
-   "s_surge": 70,
-   "srcs": 2
-  },
-  {
    "t": "EPMT",
    "n": "Enseval Putera Megatrading",
    "px": 2480.0,
@@ -28030,6 +28078,25 @@
    "srcs": 1
   },
   {
+   "t": "FORU",
+   "n": "Fortune Indonesia",
+   "px": 4650.0,
+   "pct": 25.0,
+   "val": 19880718000.0,
+   "mcap": 2163291600000.0,
+   "ratio": 2.4,
+   "ev_ko": "자본구조",
+   "ev_id": "Aksi korporasi",
+   "hl": "FORU, 석탄 광산 인수를 위한 Rp2.71조 유상증자 준비",
+   "hl_id": "FORU Siap Gelar Rights Issue Rp27,1 Triliun untuk Tambang Batu Bara",
+   "url": "https://www.idnfinancials.com/news/68804/foru-prepares-idr-27-1-trillion-rights-issue-for-coal-mining",
+   "score": 66.2,
+   "s_news": 88,
+   "s_size": 33,
+   "s_surge": 70,
+   "srcs": 2
+  },
+  {
    "t": "BMRI",
    "n": "Bank Mandiri Tbk",
    "px": 4440.0,
@@ -28047,25 +28114,6 @@
    "s_size": 90,
    "s_surge": 50,
    "srcs": 1
-  },
-  {
-   "t": "SINI",
-   "n": "Singaraja Putra",
-   "px": 13750.0,
-   "pct": 4.96,
-   "val": 161118666666.66666,
-   "mcap": 16534375000000.0,
-   "ratio": 1.1,
-   "ev_ko": "지분매각·경영권",
-   "ev_id": "Divestasi & pengendali",
-   "hl": "Interkayu Nusantara 지분 매각 실시",
-   "hl_id": "Pelaksanaan Divestasi Saham PT Interkayu Nusantara oleh Perseroan.",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/ea94f58653_0f4d0460e6.pdf",
-   "score": 58.1,
-   "s_news": 100,
-   "s_size": 55,
-   "s_surge": 5,
-   "srcs": 0
   },
   {
    "t": "GGRM",
@@ -28106,44 +28154,6 @@
    "srcs": 1
   },
   {
-   "t": "UVCR",
-   "n": "Trimegah Karya Pratama",
-   "px": 155.0,
-   "pct": 0.0,
-   "val": 7281320000.0,
-   "mcap": 310022449890.0,
-   "ratio": 1.0,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "Trimegah Karya Pratama, 자사주 매입 거래 완료 공시",
-   "hl_id": "Keterbukaan Informasi Penyelesaian Transaksi Pembelian Kembali Saham (Buyback) PT Trimegah Karya Pratama Tbk",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/fbbbcf2b71_9177a07216.pdf",
-   "score": 39.7,
-   "s_news": 90,
-   "s_size": 12,
-   "s_surge": 0,
-   "srcs": 0
-  },
-  {
-   "t": "TCPI",
-   "n": "Transcoal Pacific",
-   "px": 1845.0,
-   "pct": -6.82,
-   "val": 7840598833.333334,
-   "mcap": 9225000000000.0,
-   "ratio": 0.5,
-   "ev_ko": "경영진 변동",
-   "ev_id": "Manajemen",
-   "hl": "경영진 및 이사회 구성원 변경",
-   "hl_id": "Perubahan anggota Direksi dan/atau anggota Dewan Komisaris",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/2ce5c74d9d_92f2cc028c.pdf",
-   "score": 34.7,
-   "s_news": 50,
-   "s_size": 49,
-   "s_surge": 0,
-   "srcs": 0
-  },
-  {
    "t": "LPKR",
    "n": "Lippo Karawaci",
    "px": 61.0,
@@ -28163,23 +28173,23 @@
    "srcs": 2
   },
   {
-   "t": "BNBA",
-   "n": "Bank Bumi Arta",
-   "px": 785.0,
-   "pct": 0.0,
-   "val": 199950333.3333333,
-   "mcap": 2632984200000.0,
-   "ratio": 0.3,
+   "t": "LPCK",
+   "n": "Lippo Cikarang",
+   "px": 585.0,
+   "pct": -1.68,
+   "val": 191737833.33333334,
+   "mcap": 3003791129820.0,
+   "ratio": 0.7,
    "ev_ko": "경영진 변동",
    "ev_id": "Manajemen",
-   "hl": "주주총회 결과 공고 증빙 제출",
-   "hl_id": "Penyampaian Bukti Iklan Hasil RUPS",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/96a21342e9_3cd0eda674.pdf",
-   "score": 30.7,
-   "s_news": 50,
-   "s_size": 36,
+   "hl": "Lippo Cikarang, 임시주총서 Ketut Budi Wijaya 이사 선임",
+   "hl_id": "RUPSLB Lippo Cikarang Angkat Ketut Budi Wijaya Jadi Komisaris",
+   "url": "https://www.liputan6.com/saham/read/8291255/rupslb-lippo-cikarang-angkat-ketut-budi-wijaya-jadi-komisaris",
+   "score": 30.3,
+   "s_news": 48,
+   "s_size": 37,
    "s_surge": 0,
-   "srcs": 0
+   "srcs": 2
   }
  ],
  "memory": {
@@ -28723,5 +28733,8 @@
     "q_id": "Apakah pemulihan produksi pada semester II mampu mencapai target nickel matte sebesar 67.645 ton pada 2026 dan dividen dipertahankan pada level tahun sebelumnya (60% dari laba bersih)."
    }
   ]
+ },
+ "stale": {
+  "announcements": "2026-09-15 02:34"
  }
 }
