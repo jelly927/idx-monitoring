@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 23:39",
+ "updated": "2026-09-14 23:45",
  "delay_min": 15,
  "fx_basis": "13.10 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 20:55 Yahoo",
- "idr_per_krw": 13.1013,
+ "idr_per_krw": 13.1016,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 23:38",
+   "asof": "investing.com 23:33",
    "unit": "bp"
   }
  ],
@@ -15699,10 +15699,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7633.29,
+   "px": 7633.49,
    "prev": 7655.5,
    "pct": -0.29,
-   "asof": "23:35",
+   "asof": "23:40",
    "live": true,
    "spark": [
     7599.57,
@@ -15742,17 +15742,18 @@
     7637.17,
     7633.55,
     7633.33,
-    7633.29
+    7633.44,
+    7633.49
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26248.73,
+   "px": 26250.02,
    "prev": 26333.03,
    "pct": -0.32,
-   "asof": "23:35",
+   "asof": "23:40",
    "live": true,
    "spark": [
     26018.42,
@@ -15792,17 +15793,18 @@
     26264.92,
     26241.08,
     26242.04,
-    26248.73
+    26250.69,
+    26250.02
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52513.68,
+   "px": 52521.31,
    "prev": 52562.77,
-   "pct": -0.09,
-   "asof": "23:35",
+   "pct": -0.08,
+   "asof": "23:40",
    "live": true,
    "spark": [
     52421.7,
@@ -15842,7 +15844,8 @@
     52532.62,
     52517.29,
     52525.54,
-    52513.68
+    52514.6,
+    52521.31
    ]
   },
   {
@@ -16740,6 +16743,42 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T23:44:54.111828+07:00",
+   "date": "2026-09-14",
+   "time": "23:44",
+   "src": "Jawa Pos",
+   "t": "Jelang MotoGP Mandalika 2026, Pertamina Dorong Antusiasme dan Aktivitas Ekonomi Masyarakat",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609140334/jelang-motogp-mandalika-2026-pertamina-dorong-antusiasme-dan-aktivitas-ekonomi-masyarakat",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/corporate-secretary-pt-pertamina-persero-arya-dwi-paramita-mengatakan-antusiasme-masyarakat-menjelang-motogp-mandalika-perlu-terus-dibangun-istimewa-nqunC.webp",
+   "t_ko": "만달리카 MotoGP 2026 앞두고 Pertamina, 지역 경제 활성화 도모",
+   "t_id": "Jelang MotoGP Mandalika 2026, Pertamina Dorong Antusiasme dan Aktivitas Ekonomi Masyarakat"
+  },
+  {
+   "ts": "2026-09-14T23:38:56+07:00",
+   "date": "2026-09-14",
+   "time": "23:38",
+   "src": "CNBC",
+   "t": "Trump agrees to ethics requirements in crypto Clarity Act as GOP tries to snag Democratic votes",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/clarity-act-senate-vote-crypto-regulation.html",
+   "g": 1,
+   "t_ko": "트럼프, 암호화폐 Clarity Act 윤리 요건 합의",
+   "t_id": "Trump Setujui Syarat Etika dalam UU Klarifikasi Kripto di Tengah Upaya DPR Gaet Suara Demokrat"
+  },
+  {
+   "ts": "2026-09-14T23:38:34+07:00",
+   "date": "2026-09-14",
+   "time": "23:38",
+   "src": "Bloomberg",
+   "t": "Oil Surges as Saudi Pipeline Shutdown Brings Fresh Supply Risk",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-14/saudi-pipeline-shutdown-brings-fresh-supply-risk-video",
+   "g": 1,
+   "t_ko": "사우디 송유관 가동 중단에 따른 공급 차질 우려로 유가 급등",
+   "t_id": "Minyak Melonjak saat Penghentian Pipa Saudi Picu Risiko Pasokan Baru"
+  },
+  {
    "ts": "2026-09-14T23:38:30+07:00",
    "date": "2026-09-14",
    "time": "23:38",
@@ -16750,20 +16789,7 @@
    "g": 1,
    "img": "https://cdn-assets.jawapos.com/images/1/2026/06/18/menteri-energi-dan-sumber-daya-mineral-esdm-bahlil-lahadalia-saat-mengikuti-rapat-kerja-bersama-komisi-xii-dpr-ri-di-gedung-nusantara-i-kompleks-parlemen-senayan-jakarta-senin-1562026-dery-ridwansah-jawaposcom-D9xnY.webp",
    "t_id": "Bahlil Sebut Rata-rata Harga Minyak RI hingga September USD 90 per Barel, Masih di Atas APBN 2026",
-   "t_ko": "Bahlil, 9월 인도네시아 평균 유가 배럴당 USD 90으로 2026년 예산안 상회 전망"
-  },
-  {
-   "ts": "2026-09-14T23:31:56+07:00",
-   "date": "2026-09-14",
-   "time": "23:31",
-   "src": "FT",
-   "t": "Oil hits $109 after Saudi Arabia closes vital export pipeline",
-   "tags": [],
-   "url": "https://www.ft.com/content/4845a503-3ddd-4bb7-a469-c51f275bc873?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fed3f37fa-0750-4e43-bf4b-22d9be35bd42.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "사우디 핵심 수출 파이프라인 폐쇄에 유가 배럴당 109달러 기록",
-   "t_id": "Minyak Tembus $109 Usai Arab Saudi Tutup Pipa Ekspor Vital"
+   "t_ko": "Bahlil, 9월까지 인도네시아 평균 유가 배럴당 90달러로 2026년 예산안 상회 언급"
   },
   {
    "ts": "2026-09-14T23:29:39+07:00",
@@ -16775,7 +16801,19 @@
    "url": "https://www.jawapos.com/energi/2609140508/pertamina-nre-akselerasi-pengembangan-bioetanol-berbasis-multi-feedstock-di-lampung",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/pnre-mengakselerasi-pengembangan-bioetanol-berbasis-multi-feedstock-dan-multi-generation-melalui-bioethanol-development-center-yang-terletak-di-tegineneng-kabupaten-pesawaran-lampung-antara-zDLyl.webp",
    "t_id": "Pertamina NRE Akselerasi Pengembangan Bioetanol Berbasis Multi-Feedstock di Lampung",
-   "t_ko": "Pertamina NRE, 람푸르 복합 원료 기반 바이오에탄올 개발 가속"
+   "t_ko": "Pertamina NRE, 람푸르서 멀티 원료 기반 바이오에탄올 개발 가속"
+  },
+  {
+   "ts": "2026-09-14T23:26:29+07:00",
+   "date": "2026-09-14",
+   "time": "23:26",
+   "src": "Detik",
+   "t": "Danantara Buka Suara soal Kabar Mau Pegang 40% Saham Bursa Efek",
+   "tags": [],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8662970/danantara-buka-suara-soal-kabar-mau-pegang-40-saham-bursa-efek",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/07/01/wisma-danantara-indonesia-1751345496316_169.jpeg?w=360&q=90",
+   "t_id": "Danantara Buka Suara soal Kabar Mau Pegang 40% Saham Bursa Efek",
+   "t_ko": "Danantara, 거래소 지분 40% 인수설에 공식 입장 표명"
   },
   {
    "ts": "2026-09-14T23:23:34+07:00",
@@ -16812,8 +16850,8 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-flashing-rare-historical-162000444.html",
    "g": 1,
    "img": "https://media.zenfs.com/en/motleyfool.com/ba557de8f869ca9064655e9fbe108545.jpg",
-   "t_ko": "S&P 500, 27년 만의 희귀 경고 신호 발생 — 투자자 시사점",
-   "t_id": "S&P 500 Beri Sinyal Peringatan Langka yang Belum Pernah Ada dalam 27 Tahun, Ini Artinya bagi Investor"
+   "t_ko": "S&P 500, 27년 만의 희귀한 역사적 경고 신호 발생",
+   "t_id": "S&P 500 Berikan Sinyal Peringatan Langka yang Belum Terlihat dalam 27 Tahun, Ini Artinya bagi Investor"
   },
   {
    "ts": "2026-09-14T23:19:28+07:00",
@@ -16825,8 +16863,8 @@
    "url": "https://www.ft.com/content/b01682ae-1d49-46bb-b23a-d6212574214d?syn-25a6b1a6=1",
    "g": 1,
    "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fe4b21bbe-3db7-4682-9d1e-02ce884a2c69.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "프랑스, 러시아 올리차크 EU 제재 해제 추진",
-   "t_id": "Prancis Berupaya Keras Cabut Sanksi EU untuk Oligarki Rusia"
+   "t_ko": "프랑스, 러시아 올리그라크 대상 EU 제재 해제 추진",
+   "t_id": "Prancis Berupaya 'Mengejutkan' Cabut Sanksi UE untuk Oligarki Rusia"
   },
   {
    "ts": "2026-09-14T23:18:49+07:00",
@@ -16849,8 +16887,8 @@
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/14/fed-rate-hike-anticipated-what-it-means-for-your-money.html",
    "g": 1,
-   "t_ko": "인플레이션 지속에 연준 금리 인상 가능성 — 소비자 영향 전망",
-   "t_id": "The Fed Diprediksi Naikkan Suku Bunga Seiring Inflasi Persisten, Apa Dampaknya bagi Konsumen"
+   "t_ko": "물가 지속에 따른 연준 금리 인상 가능성 대두",
+   "t_id": "The Fed Kemungkinan Kenaikan Suku Bunga Seiring Inflasi yang Berlanjut, Ini Dampaknya bagi Konsumen"
   },
   {
    "ts": "2026-09-14T23:16:01+07:00",
@@ -16959,19 +16997,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/new-land-cruiser-300-vx-r-hybrid-ev-kanan-new_260914225221-614.jpg",
    "t_ko": "Land Cruiser 300 하이브리드·Land Cruiser FJ, 족자카르타 사구 주행",
    "t_id": "Land Cruiser 300 Hybrid EV dan Land Cruiser FJ Taklukkan Gumuk Pasir Yogyakarta"
-  },
-  {
-   "ts": "2026-09-14T22:52:18+07:00",
-   "date": "2026-09-14",
-   "time": "22:52",
-   "src": "Yahoo Finance",
-   "t": "Stocks could have a tough road ahead if the Fed hikes rates: Chart of the Day",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/article/stocks-could-have-a-tough-road-ahead-if-the-fed-hikes-rates-chart-of-the-day-155218683.html",
-   "g": 1,
-   "img": "https://s.yimg.com/uu/api/res/1.2/iseM.QdJTikuFCv9s9VpyA--~B/aD0zOTA3O3c9NTg1NzthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-09/373264dc-4a97-4fa7-824c-487c4b0f98ec",
-   "t_ko": "연준 금리 인상 시 증시 난항 예상 — 차트 오브 더 데이",
-   "t_id": "Saham Hadapi Jalan Terjal Jika The Fed Naikkan Suku Bunga: Chart of the Day"
   },
   {
    "ts": "2026-09-14T22:48:00+07:00",
@@ -17148,30 +17173,6 @@
    "url": "https://mediaindonesia.com/ekonomi/933351/pilihan-pialang-makin-banyak-kualitas-layanan-jadi-pembeda",
    "t_ko": "증권사 경쟁 심화로 서비스 품질이 핵심 경쟁력 부상",
    "t_id": "Pilihan Pialang Makin Banyak, Kualitas Layanan Jadi Pembeda"
-  },
-  {
-   "ts": "2026-09-14T21:28:43+07:00",
-   "date": "2026-09-14",
-   "time": "21:28",
-   "src": "Jawa Pos",
-   "t": "Dua Kali Ganti Menkeu dalam 2 Tahun, Prabowo Samai Era Gus Dur Miliki 3 Bendahara Negara",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609140471/dua-kali-ganti-menkeu-dalam-2-tahun-prabowo-samai-era-gus-dur-miliki-3-bendahara-negara",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/presiden-prabowo-subianto-menyalami-pejabat-baru-menteri-keuangan-suahasil-nazara-usai-pelantikan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-1ykt6.webp",
-   "t_ko": "Prabowo, 2년간 재무장관 두 차례 교체… Gus Dur 이후 최다 기록",
-   "t_id": "Dua Kali Ganti Menkeu dalam 2 Tahun, Prabowo Samai Era Gus Dur Miliki 3 Bendahara Negara"
-  },
-  {
-   "ts": "2026-09-14T21:25:00+07:00",
-   "date": "2026-09-14",
-   "time": "21:25",
-   "src": "Republika",
-   "t": "Suahasil Jadi Menkeu, Ekonom: Jangan Hanya Tekan Defisit",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tlcqaz416/suahasil-jadi-menkeu-ekonom-jangan-hanya-tekan-defisit",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260914171926-313.png",
-   "t_ko": "Suahasil 재무장관 내정에 전문가 \"재정 적자 축소에만 치중 말아야\"",
-   "t_id": "Suahasil Jadi Menkeu, Ekonom: Jangan Hanya Tekan Defisit"
   }
  ],
  "kisi_news": [
@@ -17355,9 +17356,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.947%",
-   "d": -0.56,
-   "ytd": 18.83,
+   "v": "4.949%",
+   "d": -0.52,
+   "ytd": 18.88,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17378,9 +17379,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.47",
-   "d": 0.15,
-   "ytd": 1.21,
+   "v": "99.48",
+   "d": 0.16,
+   "ytd": 1.22,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17402,9 +17403,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,345.1",
-   "d": -0.58,
-   "ytd": 0.45,
+   "v": "4,342.4",
+   "d": -0.65,
+   "ytd": 0.39,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17426,9 +17427,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,312",
-   "d": -0.73,
-   "ytd": -2.22,
+   "v": "16,364",
+   "d": -0.42,
+   "ytd": -1.91,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20238,7 +20239,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-14 23:34",
-  "pc_age_min": 5,
+  "pc_age_min": 11,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21755,7 +21756,7 @@
    "t_ko": "유가 급등에 증시 하락 및 10년물 국채 금리 5% 도달",
    "t_id": "Saham Turun, Imbal Hasil Obligasi 10 Tahun Sentuh 5% di Tengah Lonjakan Minyak",
    "score": 318.5,
-   "srcs": 8
+   "srcs": 5
   },
   {
    "ts": "2026-09-14T20:43:35+07:00",
@@ -21766,8 +21767,8 @@
    "tags": [],
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmRDNjZiUTA5ZjFZMWV2T193ZjhkRkphXzE3cno5M3A2N0dmVlo1YzFaQnFaRDh3a25uVmUteWRiR01ORmtpMVVDSi03Ti1MUW83U0FWX2Z2dS11RmdoNDd0Zm5nYWN0RHVSNnozNFk4RDZPc2JaRmw4QVktZkdvUEJwU2Z6U0d1MWZpLW92RWFBZG50RG8wNjF6Mk12ajRnMDRuLXBFZ2FKYW1nekpnUA?oc=5",
    "g": 1,
-   "score": 314.0,
-   "srcs": 3,
+   "score": 316.0,
+   "srcs": 5,
    "t_ko": "남아프리카공화국 랜드화, 유가 상승·연준 회의 경계에 1% 하락",
    "t_id": "Rand Afrika Selatan Anjlok Lebih dari 1% saat Minyak Melonjak dan Investor Menanti Rapat The Fed"
   }
