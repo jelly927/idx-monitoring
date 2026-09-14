@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 03:03",
+ "updated": "2026-09-15 03:07",
  "delay_min": 15,
- "fx_basis": "13.09 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,347 · 02:31 Yahoo",
- "idr_per_krw": 13.0878,
+ "fx_basis": "13.08 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,348 · 02:31 Yahoo",
+ "idr_per_krw": 13.0832,
  "indices": [
   {
    "code": "USDIDR",
@@ -56,7 +56,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 03:02",
+   "asof": "investing.com 03:06",
    "unit": "bp"
   }
  ],
@@ -17156,7 +17156,7 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "99.48",
-   "d": 0.15,
+   "d": 0.16,
    "ytd": 1.22,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -17167,9 +17167,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.65",
-   "d": -1.55,
-   "ytd": 77.03,
+   "v": "101.73",
+   "d": -1.47,
+   "ytd": 77.17,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -20001,7 +20001,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-15 03:00",
-  "pc_age_min": 3,
+  "pc_age_min": 7,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
