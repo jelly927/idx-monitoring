@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 22:30",
+ "updated": "2026-09-14 22:38",
  "delay_min": 15,
- "fx_basis": "13.09 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,347 · 20:55 Yahoo",
- "idr_per_krw": 13.0881,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 20:55 Yahoo",
+ "idr_per_krw": 13.0991,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 22:29",
+   "asof": "investing.com 22:32",
    "unit": "bp"
   }
  ],
@@ -337,13 +337,13 @@
   "prev": 6541.38,
   "ytd": -24.42,
   "m1": 2.07,
-  "value_idr": 16398347118728.004,
+  "value_idr": 16438170377728.004,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-14 22:18",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 22:33",
   "rank_asof": null,
   "rank_date": "2026-09-14",
-  "adv": 230,
+  "adv": 231,
   "dec": 456,
   "unch": 146,
   "foreign_net_idr": -728667450249.4258,
@@ -2244,6 +2244,22 @@
    "lo": 690.0,
    "ratio": 0.6,
    "fnet": -1396082852.3632982,
+   "live": 0
+  },
+  {
+   "t": "AMRT",
+   "n": "Sumber Alfaria Trijaya",
+   "px": 1280.0,
+   "prev": 1255.0,
+   "pct": 1.99,
+   "val": 39823259000.0,
+   "vol": 31315800.0,
+   "sh": 41524501700,
+   "mcap": 53151362176000.0,
+   "hi": 1295.0,
+   "lo": 1240.0,
+   "ratio": 0.9,
+   "fnet": -24993307474.537613,
    "live": 0
   },
   {
@@ -14831,11 +14847,11 @@
   {
    "name": "필수소비재",
    "name_id": "Konsumen Primer",
-   "n": 122,
-   "adv": 38,
+   "n": 123,
+   "adv": 39,
    "dec": 55,
-   "val": 990122806299.9996,
-   "mcap": 995799176229879.0,
+   "val": 1029946065299.9996,
+   "mcap": 1048950538405879.0,
    "top": [
     {
      "t": "HMSP",
@@ -14858,6 +14874,10 @@
      "pct": -3.39
     },
     {
+     "t": "AMRT",
+     "pct": 1.99
+    },
+    {
      "t": "CPIN",
      "pct": -0.95
     },
@@ -14872,14 +14892,10 @@
     {
      "t": "CMRY",
      "pct": 1.13
-    },
-    {
-     "t": "MYOR",
-     "pct": -0.99
     }
    ],
-   "fnet": -68435629548,
-   "pct": -0.37,
+   "fnet": -93428937022,
+   "pct": -0.25,
    "fbuy_top": [
     {
      "t": "INDF",
@@ -14908,16 +14924,16 @@
      "pct": -0.95
     },
     {
+     "t": "AMRT",
+     "n": "Sumber Alfaria Trijaya",
+     "fnet": -24993307475,
+     "pct": 1.99
+    },
+    {
      "t": "UNVR",
      "n": "Unilever Indonesia",
      "fnet": -14237911154,
      "pct": -0.61
-    },
-    {
-     "t": "ICBP",
-     "n": "Indofood CBP Sukses Makmur",
-     "fnet": -5611574434,
-     "pct": 0
     }
    ],
    "fnet_1w": -317058812495,
@@ -15683,10 +15699,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7609.03,
+   "px": 7618.82,
    "prev": 7655.5,
-   "pct": -0.61,
-   "asof": "22:25",
+   "pct": -0.48,
+   "asof": "22:35",
    "live": true,
    "spark": [
     7599.57,
@@ -15712,17 +15728,19 @@
     7599.53,
     7603.95,
     7607.99,
-    7609.03
+    7608.67,
+    7621.08,
+    7618.82
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26141.3,
+   "px": 26196.16,
    "prev": 26333.03,
-   "pct": -0.73,
-   "asof": "22:25",
+   "pct": -0.52,
+   "asof": "22:35",
    "live": true,
    "spark": [
     26018.42,
@@ -15748,17 +15766,19 @@
     26095.79,
     26121.47,
     26133.8,
-    26141.3
+    26137.7,
+    26202.08,
+    26196.16
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52367.48,
+   "px": 52383.73,
    "prev": 52562.77,
-   "pct": -0.37,
-   "asof": "22:25",
+   "pct": -0.34,
+   "asof": "22:35",
    "live": true,
    "spark": [
     52421.7,
@@ -15784,7 +15804,9 @@
     52329.2,
     52348.61,
     52375.69,
-    52367.48
+    52365.36,
+    52418.1,
+    52383.73
    ]
   },
   {
@@ -16668,6 +16690,18 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T22:35:38+07:00",
+   "date": "2026-09-14",
+   "time": "22:35",
+   "src": "CNBC",
+   "t": "Why the election could make Washington's looming next fiscal crisis harder",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/election-debt-limit-fiscal-crisis-congress.html",
+   "g": 1,
+   "t_ko": "미국 대선이 다가오는 재정 위기 대응을 더 어렵게 만드는 이유",
+   "t_id": "Alasan Pemilu Bisa Picu Krisis Fiskal Washington Berikutnya Kian Berat"
+  },
+  {
    "ts": "2026-09-14T22:28:32+07:00",
    "date": "2026-09-14",
    "time": "22:28",
@@ -16754,30 +16788,17 @@
    "t_id": "Palantir, Nvidia Batasi Penggunaan Model AI di Tengah Kekhawatiran Data, Lapor The Information"
   },
   {
-   "ts": "2026-09-14T22:05:34+07:00",
+   "ts": "2026-09-14T22:03:47+07:00",
    "date": "2026-09-14",
-   "time": "22:05",
+   "time": "22:03",
    "src": "Yahoo Finance",
-   "t": "Tesla Expands Into Vietnam as Competition Intensifies in China",
+   "t": "Vale S.A. (VALE) Deepens China Ties with Potential Yuan Bond Debut",
    "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-expands-vietnam-competition-intensifies-150534253.html",
+   "url": "https://finance.yahoo.com/markets/currencies/articles/vale-vale-deepens-china-ties-150347789.html",
    "g": 1,
-   "img": "https://media.zenfs.com/en/benzinga_prediction_markets_613/80bb6c121cc3aeaf99d49978b8213a72.jpg",
-   "t_ko": "Tesla, 중국 경쟁 심화 속 베트남 시장 진출 확대",
-   "t_id": "Tesla Ekspansi ke Vietnam di Tengah Persaingan Ketat di China"
-  },
-  {
-   "ts": "2026-09-14T22:05:02+07:00",
-   "date": "2026-09-14",
-   "time": "22:05",
-   "src": "Yahoo Finance",
-   "t": "Fantastic News for Broadcom Stock Investors",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/fantastic-news-broadcom-stock-investors-150502478.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/9aea36846a79d435df14c7f2815eda27.png",
-   "t_ko": "Broadcom 주주들을 위한 호재",
-   "t_id": "Kabar Fantastis bagi Investor Saham Broadcom"
+   "img": "https://media.zenfs.com/en/insidermonkey.com/138281667b035ca43f0f617eac1e4feb.jpg",
+   "t_ko": "Vale S.A., 위안화 채권 발행 추진하며 중국 협력 강화",
+   "t_id": "Vale S.A. (VALE) Perkuat Hubungan Tiongkok Lewat Potensi Penerbitan Obliguasi Yuan"
   },
   {
    "ts": "2026-09-14T22:02:00+07:00",
@@ -17285,9 +17306,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.973%",
-   "d": -0.04,
-   "ytd": 19.46,
+   "v": "4.979%",
+   "d": 0.08,
+   "ytd": 19.6,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17308,9 +17329,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.59",
-   "d": 0.27,
-   "ytd": 1.33,
+   "v": "99.55",
+   "d": 0.23,
+   "ytd": 1.3,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17320,9 +17341,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.35",
-   "d": 0.1,
-   "ytd": 79.99,
+   "v": "103.52",
+   "d": 0.26,
+   "ytd": 80.29,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17332,9 +17353,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,315.7",
-   "d": -1.26,
-   "ytd": -0.23,
+   "v": "4,320.7",
+   "d": -1.14,
+   "ytd": -0.11,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17356,9 +17377,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,292",
-   "d": -0.85,
-   "ytd": -2.34,
+   "v": "16,324",
+   "d": -0.66,
+   "ytd": -2.15,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20253,8 +20274,8 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-14 22:18",
-  "pc_age_min": 12,
+  "idx_from_pc": "2026-09-14 22:33",
+  "pc_age_min": 5,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21707,7 +21728,7 @@
     "hhmm": "17:05"
    }
   },
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-2.5-flash-lite",
   "index": {
    "ko": "아시아 증시 약세와 대형 은행주(BBCA·BBRI) 약세에 하락 출발했으나, 헬스케어 및 소재주 강세로 낙폭을 축소하며 IHSG 0.10% 하락 마감.",
    "id": "IHSG melemah 0,10% karena tertekan pelemahan bursa Asia dan saham bank besar (BBCA·BBRI), namun berhasil memangkas kerugian didorong sektor kesehatan dan material.",
@@ -21783,7 +21804,7 @@
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmRDNjZiUTA5ZjFZMWV2T193ZjhkRkphXzE3cno5M3A2N0dmVlo1YzFaQnFaRDh3a25uVmUteWRiR01ORmtpMVVDSi03Ti1MUW83U0FWX2Z2dS11RmdoNDd0Zm5nYWN0RHVSNnozNFk4RDZPc2JaRmw4QVktZkdvUEJwU2Z6U0d1MWZpLW92RWFBZG50RG8wNjF6Mk12ajRnMDRuLXBFZ2FKYW1nekpnUA?oc=5",
    "g": 1,
    "score": 316.0,
-   "srcs": 5,
+   "srcs": 4,
    "t_ko": "남아프리카공화국 랜드화, 유가 상승·연준 회의 경계에 1% 하락",
    "t_id": "Rand Afrika Selatan Anjlok Lebih dari 1% saat Minyak Melonjak dan Investor Menanti Rapat The Fed"
   }
@@ -28647,8 +28668,8 @@
   },
   {
    "t": "AMRT",
-   "n": "AMRT",
-   "px": null,
+   "n": "Sumber Alfaria Trijaya",
+   "px": 1280.0,
    "call": "SELL",
    "buy": [],
    "tp": [],
@@ -29368,6 +29389,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-14 22:22"
+  "announcements": "2026-09-14 22:30"
  }
 }
