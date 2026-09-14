@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 20:56",
+ "updated": "2026-09-14 21:06",
  "delay_min": 15,
- "fx_basis": "13.07 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,349 · 20:00 Yahoo",
- "idr_per_krw": 13.0682,
+ "fx_basis": "13.07 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,349 · 20:55 Yahoo",
+ "idr_per_krw": 13.067,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 20:55",
+   "asof": "investing.com 21:05",
    "unit": "bp"
   }
  ],
@@ -337,15 +337,15 @@
   "prev": 6541.38,
   "ytd": -24.42,
   "m1": 2.07,
-  "value_idr": 16438170377728.004,
+  "value_idr": 16437929520561.336,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 20:49",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-14 21:00",
   "rank_asof": null,
   "rank_date": "2026-09-14",
   "adv": 231,
   "dec": 456,
-  "unch": 146,
+  "unch": 145,
   "foreign_net_idr": -728667450249.4258,
   "foreign_buy": 3991314699946.703,
   "foreign_sell": 4719982150196.129,
@@ -9975,22 +9975,6 @@
    "live": 0
   },
   {
-   "t": "BISI",
-   "n": "BISI INTERNATIONAL",
-   "px": 720.0,
-   "prev": 720.0,
-   "pct": 0.0,
-   "val": 240857166.6666667,
-   "vol": 335300.0,
-   "sh": 3000000000,
-   "mcap": 2160000000000.0,
-   "hi": 725.0,
-   "lo": 710.0,
-   "ratio": 1.3,
-   "fnet": -17266822.08588957,
-   "live": 0
-  },
-  {
    "t": "PMJS",
    "n": "Putra Mandiri Jembar",
    "px": 142.0,
@@ -14847,11 +14831,11 @@
   {
    "name": "필수소비재",
    "name_id": "Konsumen Primer",
-   "n": 123,
+   "n": 122,
    "adv": 39,
    "dec": 55,
-   "val": 1029946065299.9996,
-   "mcap": 1048950538405879.0,
+   "val": 1029705208133.333,
+   "mcap": 1046790538405879.0,
    "top": [
     {
      "t": "HMSP",
@@ -14894,7 +14878,7 @@
      "pct": 1.13
     }
    ],
-   "fnet": -93428937022,
+   "fnet": -93411670200,
    "pct": -0.25,
    "fbuy_top": [
     {
@@ -15699,10 +15683,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7615.11,
+   "px": 7617.36,
    "prev": 7655.5,
-   "pct": -0.53,
-   "asof": "20:55",
+   "pct": -0.5,
+   "asof": "21:05",
    "live": true,
    "spark": [
     7599.57,
@@ -15710,17 +15694,19 @@
     7607.5,
     7616.31,
     7615.16,
-    7615.11
+    7612.76,
+    7617.53,
+    7617.36
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26113.84,
+   "px": 26118.15,
    "prev": 26333.03,
-   "pct": -0.83,
-   "asof": "20:55",
+   "pct": -0.82,
+   "asof": "21:00",
    "live": true,
    "spark": [
     26018.42,
@@ -15728,17 +15714,18 @@
     26057.58,
     26122.11,
     26114.64,
-    26113.84
+    26108.04,
+    26118.15
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52429.69,
+   "px": 52474.63,
    "prev": 52562.77,
-   "pct": -0.25,
-   "asof": "20:55",
+   "pct": -0.17,
+   "asof": "21:05",
    "live": true,
    "spark": [
     52421.7,
@@ -15746,7 +15733,9 @@
     52454.13,
     52423.66,
     52437.1,
-    52429.69
+    52413.74,
+    52475.44,
+    52474.63
    ]
   },
   {
@@ -16646,6 +16635,66 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T21:03:00+07:00",
+   "date": "2026-09-14",
+   "time": "21:03",
+   "src": "Jawa Pos",
+   "t": "Menkeu Suahasil Nazara Bakal Kawal APBN sampai 2029",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609140467/menkeu-suahasil-nazara-bakal-kawal-apbn-sampai-2029",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-Jhssd.webp",
+   "t_ko": "Suahasil Nazara 재무차관, 2029년까지 APBN 관리 방침",
+   "t_id": "Menkeu Suahasil Nazara Bakal Kawal APBN Sampai 2029"
+  },
+  {
+   "ts": "2026-09-14T21:02:00+07:00",
+   "date": "2026-09-14",
+   "time": "21:02",
+   "src": "Republika",
+   "t": "Ekonom Ingatkan Risiko Jatuh Tempo Utang Luar Negeri Makin Pendek",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tlcxjl423/ekonom-ingatkan-risiko-jatuh-tempo-utang-luar-negeri-makin-pendek",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/ilustrasiutang-petugas-mendorong-troley-yang-mengangkut-tumpukan-uang_200929224900-449.jpg",
+   "t_ko": "이코노미스트, 대외채무 만기 단축 위험 재차 경고",
+   "t_id": "Ekonom Ingatkan Risiko Jatuh Tempo Utang Luar Negeri Makin Pendek"
+  },
+  {
+   "ts": "2026-09-14T21:00:10+07:00",
+   "date": "2026-09-14",
+   "time": "21:00",
+   "src": "Detik",
+   "t": "Surga Barang Bekas! Mall Rongsok Depok Penuh Benda Jadul",
+   "tags": [],
+   "url": "https://finance.detik.com/foto-bisnis/d-8661808/surga-barang-bekas-mall-rongsok-depok-penuh-benda-jadul",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/surga-barang-bekas-mall-rongsok-depok-penuh-benda-jadul-1789359833578_169.jpeg?w=360&q=90",
+   "t_ko": "중고품의 천국, 데폭 헌옷·골동품 쇼핑몰에 빈티지 가득",
+   "t_id": "Surga Barang Bekas! Mal Rongsok Depok Penuh Benda Jadul"
+  },
+  {
+   "ts": "2026-09-14T21:00:00+07:00",
+   "date": "2026-09-14",
+   "time": "21:00",
+   "src": "Bloomberg Technoz",
+   "t": "Tanggapan Danantara Soal Skenario Ambil Sebagian Saham BEI",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121503/tanggapan-danantara-soal-skenario-ambil-sebagian-saham-bei",
+   "img": "https://images.bloombergtechnoz.com/data/2025/06/image-20250629173910.jpeg",
+   "t_id": "Tanggapan Danantara Soal Skenario Ambil Sebagian Saham BEI",
+   "t_ko": "Danantara, BEI 지분 일부 인수 시나리오 입장 밝혀"
+  },
+  {
+   "ts": "2026-09-14T20:56:25+07:00",
+   "date": "2026-09-14",
+   "time": "20:56",
+   "src": "CNBC",
+   "t": "Novo Nordisk rebrands to 'Novo,' unveils corporate changes as it fights for obesity market share",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/novo-nordisk-rebrands-to-novo-ceo-mike-doustdar.html",
+   "g": 1,
+   "t_ko": "Novo Nordisk, 'Novo'로 사명 변경 및 비만약 시장 대응 조직 개편",
+   "t_id": "Novo Nordisk Rebranding Jadi 'Novo', Rilis Perubahan Korporat Demi Kuasai Pasar Obesitas"
+  },
+  {
    "ts": "2026-09-14T20:54:10+07:00",
    "date": "2026-09-14",
    "time": "20:54",
@@ -16658,6 +16707,30 @@
    "t_id": "Minyak Brent Tembus $109 Usai Arab Saudi Tutup Pipa Krusial Pengganti Selat Hormuz"
   },
   {
+   "ts": "2026-09-14T20:51:00+07:00",
+   "date": "2026-09-14",
+   "time": "20:51",
+   "src": "Media Indonesia",
+   "t": "Ekonom: Risiko Jatuh Tempo Utang Luar Negeri makin Pendek",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/933340/ekonom-risiko-jatuh-tempo-utang-luar-negeri-makin-pendek",
+   "t_ko": "이코노미스트, 대외채무 만기 단축 위험 경고",
+   "t_id": "Ekonom: Risiko Jatuh Tempo Utang Luar Negeri Makin Pendek"
+  },
+  {
+   "ts": "2026-09-14T20:50:00+07:00",
+   "date": "2026-09-14",
+   "time": "20:50",
+   "src": "Yahoo Finance",
+   "t": "This Surprising Stock Has Been Stanley Druckenmiller's No. 1 Position for 8 Straight Quarters. Is It a No-Brainer Buy?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/surprising-stock-stanley-druckenmillers-no-135000908.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/492fd0c545339cf52d49fc2e2fb409ee.jpg",
+   "t_ko": "Stanley Druckenmiller가 8분기 연속 1위 비중 유지한 놀라운 주식, 매수 기회인가",
+   "t_id": "Saham Mengejutkan Ini Jadi Porsi No. 1 Stanley Druckenmiller Selama 8 Kuartal Beruntun, Layak Dibeli?"
+  },
+  {
    "ts": "2026-09-14T20:49:36+07:00",
    "date": "2026-09-14",
    "time": "20:49",
@@ -16666,8 +16739,8 @@
    "tags": [],
    "url": "https://bisnis.tempo.co/read/2119557/soroti-gangguan-operasional-di-stasiun-bogor-komisi-v-dpr-ri-minta-pemerintah-proaktif-perbarui-informasi-ke-masyarakat",
    "img": "https://statik.tempo.co/data/2026/09/14/id_1489083/1489083_720.jpg",
-   "t_id": "Soroti Gangguan Operasional di Stasiun Bogor, Komisi V DPR RI Minta Pemerintah Proaktif Perbarui Informasi ke Masyarakat",
-   "t_ko": "DPR RI 제5위원회, Bogor역 운행 차질 관련 정부에 적극적 정보 공개 요구"
+   "t_ko": "DPR RI 제5위원회, Bogor역 운행 차질 관련 정부에 적극적 정보 공개 요구",
+   "t_id": "Soroti Gangguan Operasional di Stasiun Bogor, Komisi V DPR RI Minta Pemerintah Proaktif Perbarui Informasi ke Masyarakat"
   },
   {
    "ts": "2026-09-14T20:48:54+07:00",
@@ -16759,6 +16832,18 @@
    "t_id": "Pasar Saham Hari Ini: Dow Turun Akibat Lonjakan Minyak; Nvidia, Micron, Sandisk Anjlok di Tengah Peringatan AI (Liputan Langsung)"
   },
   {
+   "ts": "2026-09-14T20:43:35+07:00",
+   "date": "2026-09-14",
+   "time": "20:43",
+   "src": "Reuters",
+   "t": "South African rand falls over 1% as oil jumps and investors await Fed meeting",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmRDNjZiUTA5ZjFZMWV2T193ZjhkRkphXzE3cno5M3A2N0dmVlo1YzFaQnFaRDh3a25uVmUteWRiR01ORmtpMVVDSi03Ti1MUW83U0FWX2Z2dS11RmdoNDd0Zm5nYWN0RHVSNnozNFk4RDZPc2JaRmw4QVktZkdvUEJwU2Z6U0d1MWZpLW92RWFBZG50RG8wNjF6Mk12ajRnMDRuLXBFZ2FKYW1nekpnUA?oc=5",
+   "g": 1,
+   "t_ko": "남아프리카공화국 랜드화, 유가 상승 및 연준 회의 대기 속 1% 하락",
+   "t_id": "Rand Afrika Selatan Turun Lebih dari 1% Saat Minyak Melonjak dan Investor Menanti Rapat Fed"
+  },
+  {
    "ts": "2026-09-14T20:43:27+07:00",
    "date": "2026-09-14",
    "time": "20:43",
@@ -16808,19 +16893,6 @@
    "t_id": "Bos OpenAI Sam Altman Beberkan Alasan Industri AI Ingin Melambat: 'Kita Bisa Kehilangan Kendali'"
   },
   {
-   "ts": "2026-09-14T20:38:32+07:00",
-   "date": "2026-09-14",
-   "time": "20:38",
-   "src": "Yahoo Finance",
-   "t": "Stock Market Today (Sept. 14, 2026): S&P 500 falls on rising oil prices, sagging AI stocks",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-14-133832281.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/thestreet_881/75ef62828f969b61d995645f07e36084.jpg",
-   "t_ko": "9월 14일 뉴욕증시, 유가 상승과 AI주 부진에 S&P 500 하락",
-   "t_id": "Pasar Saham Hari Ini (14 Sep 2026): S&P 500 Turun Akibat Kenaikan Harga Minyak dan Pelemahan Saham AI"
-  },
-  {
    "ts": "2026-09-14T20:37:37+07:00",
    "date": "2026-09-14",
    "time": "20:37",
@@ -16859,6 +16931,18 @@
    "t_id": "Saham Teknologi AS Anjlok Usai Grup AI Besar Serukan Perlambatan"
   },
   {
+   "ts": "2026-09-14T20:31:14+07:00",
+   "date": "2026-09-14",
+   "time": "20:31",
+   "src": "Reuters",
+   "t": "Focus: Unwanted in the US, old oil equipment finds a new home in Venezuela",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVmgtV0piZDBLUGtOM21nQ18yRkdqUUFpMzlKWXVESjBFWFVZT2FEcFFaYXNLRGtjY0RsaGZreUpUN2dsSGdobVladGVsUklvbWxzS2xqSk15SE83MFJJYjlza2s0WWpRX2Q3eFJreWFISjZ0Sl9lM20wcUduQll3VE9OMWRPOEEtQ1ktbk5KbEUtdzcteUFlR1hEV2lsbEZYNUNVZkpPaS1tZw?oc=5",
+   "g": 1,
+   "t_ko": "미국서 기피 대상 된 노후 석유 장비, 베네수엘라로 행해",
+   "t_id": "Fokus: Tak Laku di AS, Peralatan Minyak Tua Temukan Rumah Baru di Venezuela"
+  },
+  {
    "ts": "2026-09-14T20:28:00+07:00",
    "date": "2026-09-14",
    "time": "20:28",
@@ -16893,44 +16977,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/15/wapres-gibran-kukuhkan-paskibraka-2026-1786788752579_169.jpeg?w=360&q=90",
    "t_ko": "Gibran, Suahasil 재무장관 취임 축하 — 국가예산 관리 적임자",
    "t_id": "Gibran Ucapkan Selamat Suahasil Jadi Menkeu: Figur Tepat Kelola APBN"
-  },
-  {
-   "ts": "2026-09-14T20:23:17+07:00",
-   "date": "2026-09-14",
-   "time": "20:23",
-   "src": "Yahoo Finance",
-   "t": "Definium, Up 190% This Year, Succeeds Again With Synthetic LSD; Shares Fly",
-   "tags": [],
-   "url": "https://www.investors.com/news/technology/definium-therapeutics-synthetic-lsd-generalized-anxiety-disorder/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/8d9185f4c4de33ab43f0a78ebc37611f.jpg",
-   "t_ko": "올해 190% 급등한 Definium, 합성 LSD로 주가 추가 상승",
-   "t_id": "Definium, Melesat 190% Tahun Ini, Sukses Lagi Lewat LSD Sintetis; Saham Terbang"
-  },
-  {
-   "ts": "2026-09-14T20:20:31+07:00",
-   "date": "2026-09-14",
-   "time": "20:20",
-   "src": "CNA",
-   "t": "BYD to produce trucks in Europe in bid to become \"European company\"",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/byd-produce-trucks-in-europe-in-bid-become-european-company-6383671",
-   "g": 1,
-   "t_ko": "BYD, '유럽 기업' 도약 위해 유럽 내 트럭 생산 추진",
-   "t_id": "BYD Produksi Truk di Eropa demi Jadi Perusahaan Eropa"
-  },
-  {
-   "ts": "2026-09-14T20:20:00+07:00",
-   "date": "2026-09-14",
-   "time": "20:20",
-   "src": "MarketWatch",
-   "t": "Novo drops ‘Nordisk’ in corporate refresh to take on Lilly in the weight-loss wars",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/novo-drops-nordisk-in-corporate-refresh-to-take-on-lilly-in-the-weight-loss-wars-a406161a?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-67332197",
-   "t_ko": "Novo Nordisk, 비만약 경쟁 대응 위해 사명서 'Nordisk' 삭제",
-   "t_id": "Novo Buang 'Nordisk' dalam Pembaruan Korporat untuk Saingi Lilly di Pasar Diet"
   },
   {
    "ts": "2026-09-14T20:16:39+07:00",
@@ -17024,66 +17070,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/040255800-1789380509-830-556.jpg",
    "t_ko": "Suahasil Nazara 재무장관 내정, 시장 신뢰 강화 평가",
    "t_id": "Suahasil Nazara Jadi Menkeu, DPR Nilai Bisa Perkuat Kepercayaan Pasar"
-  },
-  {
-   "ts": "2026-09-14T19:49:00+07:00",
-   "date": "2026-09-14",
-   "time": "19:49",
-   "src": "Katadata",
-   "t": "Pasar Respons Positif Pergantian Menkeu, Bagaimana Nasib IHSG Selanjutnya?",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/bursa/6aa7edb303cd4/pasar-respons-positif-pergantian-menkeu-bagaimana-nasib-ihsg-selanjutnya",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/14/Presiden_Prabowo_lantik_Suahasil_Nazara_sebagai_Menkeu-2026_09_14-17_46_55_a33aefd56af09957e5ebfdf8d3842bf0_620x413_thumb.jpg",
-   "t_ko": "재무장관 교체에 시장 긍정적 반응, 향후 IHSG 향방은",
-   "t_id": "Pasar Respons Positif Pergantian Menkeu, Bagaimana Nasib IHSG Selanjutnya?"
-  },
-  {
-   "ts": "2026-09-14T19:35:36+07:00",
-   "date": "2026-09-14",
-   "time": "19:35",
-   "src": "Medcom",
-   "t": "Potensi Laju IHSG Setelah Purbaya Digantikan Suahasil Nazara, Bisa Tembus 7.000?",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/keuangan/gNQrm4qb-potensi-laju-ihsg-setelah-purbaya-digantikan-suahasil-nazara-bisa-tembus-7-000",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/14/1842014/Dz71ajTe4E.jpg?w=720",
-   "t_ko": "Purbaya 후임 Suahasil Nazara 체제 속 IHSG 7,000선 돌파 가능성",
-   "t_id": "Potensi Laju IHSG Setelah Purbaya Digantikan Suahasil Nazara, Bisa Tembus 7.000?"
-  },
-  {
-   "ts": "2026-09-14T19:32:17+07:00",
-   "date": "2026-09-14",
-   "time": "19:32",
-   "src": "Jawa Pos",
-   "t": "Suahasil Nazara Punya 5 PR Berat sebagai Menkeu, CELIOS: Jangan jadi Yes-Man Prabowo",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609140420/suahasil-nazara-punya-5-pr-berat-sebagai-menkeu-celios-jangan-jadi-yes-man-prabowo",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/presiden-prabowo-subianto-menyalami-pejabat-baru-menteri-keuangan-suahasil-nazara-usai-pelantikan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-1ykt6.webp",
-   "t_ko": "Suahasil Nazara의 5대 과제, CELIOS \"Prabowo의 예스맨 되지 말아야\"",
-   "t_id": "Suahasil Nazara Punya 5 PR Berat sebagai Menkeu, CELIOS: Jangan jadi Yes-Man Prabowo"
-  },
-  {
-   "ts": "2026-09-14T19:30:21+07:00",
-   "date": "2026-09-14",
-   "time": "19:30",
-   "src": "Detik",
-   "t": "Suahasil Ungkap Nasib Perombakan Pejabat Era Purbaya",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8662711/suahasil-ungkap-nasib-perombakan-pejabat-era-purbaya",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/pesan-suahasil-nazara-usai-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan-1789383969594_169.jpeg?w=360&q=90",
-   "t_ko": "Suahasil, Purbaya 시절 임원진 교체 향방 언급",
-   "t_id": "Suahasil Ungkap Nasib Perombakan Pejabat Era Purbaya"
-  },
-  {
-   "ts": "2026-09-14T19:28:00+07:00",
-   "date": "2026-09-14",
-   "time": "19:28",
-   "src": "Katadata",
-   "t": "Belum Fase Letusan Hebat, BRIN Sebut Anak Krakatau Masih Masa Inkubasi",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6aa7e87f6bc44/belum-fase-letusan-hebat-brin-sebut-anak-krakatau-masih-masa-inkubasi",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/09/2026_09_09-17_33_00_68dda828-ac44-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "BRIN, \"아나크 크라카타우 화산 아직 대폭발 전 잠복기\"",
-   "t_id": "Belum Fase Letusan Hebat, BRIN Sebut Anak Krakatau Masih Masa Inkubasi"
   }
  ],
  "kisi_news": [
@@ -17256,8 +17242,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.06",
-   "d": 0.21,
-   "ytd": 12.48,
+   "d": 0.17,
+   "ytd": 12.44,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17267,9 +17253,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.987%",
-   "d": 0.24,
-   "ytd": 19.79,
+   "v": "4.994%",
+   "d": 0.38,
+   "ytd": 19.96,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17290,9 +17276,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.65",
-   "d": 0.33,
-   "ytd": 1.4,
+   "v": "99.71",
+   "d": 0.39,
+   "ytd": 1.46,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17302,9 +17288,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.86",
-   "d": 0.59,
-   "ytd": 80.88,
+   "v": "104.09",
+   "d": 0.81,
+   "ytd": 81.28,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17314,9 +17300,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,314.5",
-   "d": -1.28,
-   "ytd": -0.26,
+   "v": "4,313.2",
+   "d": -1.31,
+   "ytd": -0.29,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -19926,8 +19912,8 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-14 20:49",
-  "pc_age_min": 7,
+  "idx_from_pc": "2026-09-14 21:00",
+  "pc_age_min": 6,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21404,18 +21390,18 @@
    "t_id": "IHSG Berbalik Menguat Usai Prabowo Lantik Suahasil Gantikan Purbaya"
   },
   {
-   "ts": "2026-09-14T19:49:00+07:00",
+   "ts": "2026-09-14T18:16:19+07:00",
    "date": "2026-09-14",
-   "time": "19:49",
-   "src": "Katadata",
-   "t": "Pasar Respons Positif Pergantian Menkeu, Bagaimana Nasib IHSG Selanjutnya?",
+   "time": "18:16",
+   "src": "Detik",
+   "t": "Pesan Suahasil Nazara Usai Dilantik Jadi Menkeu: Lanjutkan Tugas dan Jaga Kepercayaan",
    "tags": [],
-   "url": "https://katadata.co.id/finansial/bursa/6aa7edb303cd4/pasar-respons-positif-pergantian-menkeu-bagaimana-nasib-ihsg-selanjutnya",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/14/Presiden_Prabowo_lantik_Suahasil_Nazara_sebagai_Menkeu-2026_09_14-17_46_55_a33aefd56af09957e5ebfdf8d3842bf0_620x413_thumb.jpg",
-   "t_ko": "재무장관 교체에 시장 긍정적 반응, 향후 IHSG 향방은",
-   "t_id": "Pasar Respons Positif Pergantian Menkeu, Bagaimana Nasib IHSG Selanjutnya?",
+   "url": "https://finance.detik.com/foto-bisnis/d-8662642/pesan-suahasil-nazara-usai-dilantik-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/pesan-suahasil-nazara-usai-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan-1789383969594_169.jpeg?w=360&q=90",
    "score": 420.65,
-   "srcs": 3
+   "srcs": 5,
+   "t_ko": "Suahasil Nazara 재무장관 취임 일성 — 임무 완수 및 신뢰 유지",
+   "t_id": "Pesan Suahasil Nazara Usai Dilantik Jadi Menkeu: Lanjutkan Tugas dan Jaga Kepercayaan"
   },
   {
    "ts": "2026-09-14T20:28:00+07:00",
@@ -21432,33 +21418,32 @@
    "srcs": 3
   },
   {
-   "ts": "2026-09-14T11:26:21+07:00",
+   "ts": "2026-09-14T20:43:35+07:00",
    "date": "2026-09-14",
-   "time": "11:26",
-   "src": "Bloomberg",
-   "t": "Emerging Currencies Fall as Oil Nears $110 at Start of Fed Week",
+   "time": "20:43",
+   "src": "Reuters",
+   "t": "South African rand falls over 1% as oil jumps and investors await Fed meeting",
    "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-14/emerging-market-stocks-decline-on-mideast-tensions-rate-risks",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmRDNjZiUTA5ZjFZMWV2T193ZjhkRkphXzE3cno5M3A2N0dmVlo1YzFaQnFaRDh3a25uVmUteWRiR01ORmtpMVVDSi03Ti1MUW83U0FWX2Z2dS11RmdoNDd0Zm5nYWN0RHVSNnozNFk4RDZPc2JaRmw4QVktZkdvUEJwU2Z6U0d1MWZpLW92RWFBZG50RG8wNjF6Mk12ajRnMDRuLXBFZ2FKYW1nekpnUA?oc=5",
    "g": 1,
-   "score": 316.0,
-   "srcs": 5,
-   "t_ko": "연준 회의 주간 돌입 속 유가 배럴당 110달러 근접에 신흥국 통화 약세",
-   "t_id": "Mata Uang Berkembang Jatuh Saat Minyak Dekati USD 110 di Awal Pekan The Fed"
+   "t_ko": "남아프리카공화국 랜드화, 유가 상승 및 연준 회의 대기 속 1% 하락",
+   "t_id": "Rand Afrika Selatan Turun Lebih dari 1% Saat Minyak Melonjak dan Investor Menanti Rapat Fed",
+   "score": 318.0,
+   "srcs": 5
   },
   {
-   "ts": "2026-09-14T15:34:00+07:00",
+   "ts": "2026-09-14T20:11:41+07:00",
    "date": "2026-09-14",
-   "time": "15:34",
-   "src": "WSJ",
-   "t": "Oil Jumps, Nasdaq Futures Slide as AI-Related Stocks Tumble Worldwide",
+   "time": "20:11",
+   "src": "CNBC",
+   "t": "10-year Treasury yield nears 5% ahead of Fed rate decision this week",
    "tags": [],
-   "url": "https://www.wsj.com/finance/stocks/oil-jumps-nasdaq-futures-slide-as-ai-related-stocks-tumble-worldwide-eaaf198b?mod=rss_markets_main",
+   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
    "g": 1,
-   "img": "https://images.wsj.net/im-90665356",
-   "score": 314.5,
-   "srcs": 5,
-   "t_ko": "유가 상승 및 전 세계 AI 관련주 급락에 Nasdaq 선물 하락",
-   "t_id": "Minyak Melonjak, Kontrak Berjangka Nasdaq Merosot Saat Saham Terkait AI Anjlok Global"
+   "score": 314.0,
+   "srcs": 3,
+   "t_ko": "이번 주 연준 금리 결정을 앞두고 10년물 미 국채금리 5% 육박",
+   "t_id": "Yield US Treasury 10 Tahun Mendekati 5% Jelang Keputusan Suku Bunga The Fed Pekan Ini"
   }
  ],
  "daylog": {
@@ -21701,16 +21686,16 @@
   "2026-09-14": {
    "news": [
     {
-     "t": "Emerging Currencies Fall as Oil Nears $110 at Start of Fed Week",
-     "ko": "연준 회의 주간 돌입 속 유가 배럴당 110달러 근접에 신흥국 통화 약세",
-     "id": "Mata Uang Berkembang Jatuh Saat Minyak Dekati USD 110 di Awal Pekan The Fed",
+     "t": "South African rand falls over 1% as oil jumps and investors await Fed meeting",
+     "ko": "남아프리카공화국 랜드화, 유가 상승 및 연준 회의 대기 속 1% 하락",
+     "id": "Rand Afrika Selatan Turun Lebih dari 1% Saat Minyak Melonjak dan Investor Menanti Rapat Fed",
      "ai_ko": "",
      "ai_id": "",
-     "src": "Bloomberg",
-     "url": "https://www.bloomberg.com/news/articles/2026-09-14/emerging-market-stocks-decline-on-mideast-tensions-rate-risks",
-     "time": "11:26",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmRDNjZiUTA5ZjFZMWV2T193ZjhkRkphXzE3cno5M3A2N0dmVlo1YzFaQnFaRDh3a25uVmUteWRiR01ORmtpMVVDSi03Ti1MUW83U0FWX2Z2dS11RmdoNDd0Zm5nYWN0RHVSNnozNFk4RDZPc2JaRmw4QVktZkdvUEJwU2Z6U0d1MWZpLW92RWFBZG50RG8wNjF6Mk12ajRnMDRuLXBFZ2FKYW1nekpnUA?oc=5",
+     "time": "20:43",
      "tags": [],
-     "sc": 316.0,
+     "sc": 318.0,
      "slot": "global"
     },
     {
@@ -29041,6 +29026,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-14 20:49"
+  "announcements": "2026-09-14 20:56"
  }
 }
