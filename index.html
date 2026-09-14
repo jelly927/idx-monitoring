@@ -352,8 +352,15 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
       <div id="today-ev"></div>
     </div>
     <div class="card compact daycal fillcard" id="daycal-card" hidden>
-      <h2><span data-t="dcT">일별 거래대금 1위</span> <span class="more" id="dcmeta"></span></h2>
+      <h2><span data-t="dcT">캘린더</span>
+        <span class="dcnav"><a href="#" onclick="dcMove(-1);return false">‹</a><b id="dcmon"></b><a href="#" onclick="dcMove(1);return false">›</a></span>
+        <span class="more" id="dcmeta"></span></h2>
+      <div class="dcdow" id="dcdow"></div>
       <div class="fillbox"><div id="daycal" class="dcgrid fill"></div></div>
+      <div class="annov" id="dcov" hidden>
+        <div class="annovhd"><b id="dcovd"></b><span class="src" id="dcovs"></span><a href="#" onclick="dcOv(null);return false" data-t="closeBtn">닫기</a></div>
+        <div id="dcovbody"></div>
+      </div>
     </div>
     <div class="card compact ann fillcard" id="ann-card">
       <h2><span data-t="ann">실시간 공시</span> <span class="more" data-t="annSub">IDX 공시 · 최근 3일 (정기보고 제외)</span></h2>
@@ -450,7 +457,7 @@ const I18N={
    labValue:'거래대금 순',labG:'상승률 순',labL:'하락률 순',labT:'20일 평균 대비 급증',advdec:'상승 / 하락 / 보합',advPct:'상승 비중',gidx:'주요 지수',gidxSub:'미국 · 아시아',secTop:'시총 상위 종목',moreCal:'건 더 · 캘린더 ›',less:'접기 ‹',divOnly:'배당',ipoOnly:'상장',mnews:'시장 뉴스',mnewsSub:'거시 · 정책 · 원자재 · 글로벌',secTitle:'업종별 등락',secNote:'시총가중 · IDX 업종분류',mcap:'시가총액',inSession:'장중',closed:'장 마감',nextOpen:'다음 개장 09:00',nextMon:'다음 개장 월 09:00',stale:'갱신 지연 · 마지막',hotLatest:'최신 헤드라인',hotNote:'종목 추천·전망성 기사 제외 · 최신순',viewAll:'전체 보기 ›',noStock:'해당 종목 없음',noStockData:'시세 데이터 없음 (거래 없음 또는 미수집)',prevClose:'전일종가',annT:'공시',asofClose:'IDX 확정',qPh:'종목 검색 · BBCA',estTime:'수집 시각 기준 (발행시각 미제공)',turnoverK:'거래대금',hilo:'장중 고 / 저',vol:'거래량',ytd:'YTD',m1:'1개월',range:'장중 폭',fPrev:'외국인 (전일)',
    glob:'글로벌',topNews:'오늘의 주요뉴스',topNewsNote:'보도 매체 수·시장 키워드 점수로 선정 · 하루 고정',tnSrcs:'매체 {n}곳',wlPh:'티커 · 회사명',annPh:'티커 · 키워드',tAdd:'추가',tDel:'삭제',tUp:'위로',tDown:'아래로',tPdf:'원문 PDF',tIdx:'IDX 공시 페이지',tBriefKo:'데일리시황 (한국어) PDF 다운로드',tBriefId:'Morning Brief (인니어) PDF 다운로드',tLayout:'카드 배치·랭킹 탭 편집',layout:'레이아웃',layReset:'초기화',layDone:'완료',layDrag:'드래그로 이동',layHide:'숨기기',layShow:'표시',layPick:'랭킹 탭 구성 (최대 6개)',surge:'대금 급증',volR:'거래량',fTop:'외국인 순매수',fBot:'외국인 순매도',labVol:'거래량 순',netbuy:'순매수',buy:'매수',sell:'매도',price:'현재가',chg:'등락',ratio20:'20일 평균 대비',fnet:'외국인 순매수',headlines:'뉴스',sched:'일정',noNews:'최근 헤드라인 없음',noSched:'등록된 기업 일정 없음',noEv:'오늘 일정 없음',upcoming:'다음 예정',noEv2:'2주 내 일정 없음',
    exp:'예상',prev:'이전',act:'실제',imp:'중요도',pre:'발표 전 · 확인 필요',chk:'확인 필요',exch:'인도네시아 거래소',foot:'출처: IDX · Investing.com · Yahoo Finance · Bank Indonesia · 화이트리스트 매체 RSS',footChk:'미확인 값은',footChk2:'표기',
-   now:'현재',close:'종가',prevClose:'전일종가',lastOk:'마지막 수신',retry:'재시도 중',noProxy:'실시간 프록시 연결 실패 (Worker 미설정)',ixIHSG:'자카르타 종합',ixLQ:'대형 45종목',ixFX:'달러/루피아',ixSUN:'국채 10년물',aiWhy:'왜 움직였을까?',perShare:'/주',upd:'갱신',nextIn:'다음',sec:'초',brandSub:'인도네시아 증시 모니터 · J',memT:'과거 주요 뉴스',memThread:'후속 확인',memDue:'확인 시점',memNone:'아직 쌓인 기록이 없습니다 (매주 금요일 장 마감 후 생성)',aiSrc:'AI 요약 · Gemini',aiSearching:'왜 움직였는지 이유를 찾고 있어요 · 뉴스·공시·수급이 모이면 요약이 올라옵니다',aiLow:'뚜렷한 재료는 확인되지 않음 — 시장·업종 흐름과 유사한 수준',aiUp:'상승',aiDown:'하락',aiFlat:'보합',aiSum:'공시 요약',aiNews:'기사 요약',watch:'관심 종목',wlEmpty:'종목 추가 · 최근 추가가 위로, ▲▼·드래그로 순서 변경 · 최대 20개 · 이 브라우저에 저장',wlSrc:'출처',dchg:'전일비',divInfo:'배당',exDate:'배당락',payDate:'지급',yld:'수익률',fnetAll:'외국인 순매수 · 전체시장',prevLabel:'전일',src:'출처',idxNote:'IDX 실시간 공시',days:'일월화수목금토',day:'일',month:'월',dow:'요일',annAll:'오늘의 공시 전체',annAllF:'전체',annKeyF:'중요만',annCnt:'건',closeBtn:'닫기',fflowT:'외국인 자금동향 · 업종',ffBuy:'순매수 상위',ffSell:'순매도 상위',ffNone:'외국인 수급 데이터 없음',ffNone1w:'주간 누적이 아직 쌓이지 않았습니다 (영업일 마감 후 채워짐)',ffDays:'영업일 누적',ffFill:'누적 중',ffNet:'순',ffLead:'대장주',fvStock:'종목',fvSector:'업종',dcT:'일별 거래대금 1위',ffIn:'외국인 순매수',ffOut:'외국인 순매도',noAnn:'공시 없음',noData:'데이터 없음',noNewsTag:'해당 종목 뉴스 없음'},
+   now:'현재',close:'종가',prevClose:'전일종가',lastOk:'마지막 수신',retry:'재시도 중',noProxy:'실시간 프록시 연결 실패 (Worker 미설정)',ixIHSG:'자카르타 종합',ixLQ:'대형 45종목',ixFX:'달러/루피아',ixSUN:'국채 10년물',aiWhy:'왜 움직였을까?',perShare:'/주',upd:'갱신',nextIn:'다음',sec:'초',brandSub:'인도네시아 증시 모니터 · J',memT:'과거 주요 뉴스',memThread:'후속 확인',memDue:'확인 시점',memNone:'아직 쌓인 기록이 없습니다 (매주 금요일 장 마감 후 생성)',aiSrc:'AI 요약 · Gemini',aiSearching:'왜 움직였는지 이유를 찾고 있어요 · 뉴스·공시·수급이 모이면 요약이 올라옵니다',aiLow:'뚜렷한 재료는 확인되지 않음 — 시장·업종 흐름과 유사한 수준',aiUp:'상승',aiDown:'하락',aiFlat:'보합',aiSum:'공시 요약',aiNews:'기사 요약',watch:'관심 종목',wlEmpty:'종목 추가 · 최근 추가가 위로, ▲▼·드래그로 순서 변경 · 최대 20개 · 이 브라우저에 저장',wlSrc:'출처',dchg:'전일비',divInfo:'배당',exDate:'배당락',payDate:'지급',yld:'수익률',fnetAll:'외국인 순매수 · 전체시장',prevLabel:'전일',src:'출처',idxNote:'IDX 실시간 공시',days:'일월화수목금토',day:'일',month:'월',dow:'요일',annAll:'오늘의 공시 전체',annAllF:'전체',annKeyF:'중요만',annCnt:'건',closeBtn:'닫기',fflowT:'외국인 자금동향 · 업종',ffBuy:'순매수 상위',ffSell:'순매도 상위',ffNone:'외국인 수급 데이터 없음',ffNone1w:'주간 누적이 아직 쌓이지 않았습니다 (영업일 마감 후 채워짐)',ffDays:'영업일 누적',ffFill:'누적 중',ffNet:'순',ffLead:'대장주',fvStock:'종목',fvSector:'업종',dcT:'캘린더',dcNote:'거래대금 1위 · 날짜 클릭',dcTop:'거래대금 1위',dcFuture:'예정',ffIn:'외국인 순매수',ffOut:'외국인 순매도',noAnn:'공시 없음',noData:'데이터 없음',noNewsTag:'해당 종목 뉴스 없음'},
  id:{market:'Pasar',news:'Berita',cal:'Kalender',hot:'Berita utama',connecting:'Menghubungkan',updated:'Diperbarui',next:'Berikut',sec:'dtk',demo:'Snapshot · 1/9 15:45 (kolektor belum aktif)',live:'Live',delay:' mnt tunda',liveIdx:'Live · IDX langsung',
    sumT:'Ringkasan',rank:'Peringkat saham',value:'Nilai transaksi',gainers:'Top gainer',losers:'Top loser',turnover:'Trending',mcapR:'Kapitalisasi',catalyst:'Catalyst',status:'Kondisi pasar',foreign:'Investor asing',prevday:'Hari sebelumnya',ftop:'Net buy terbesar',fbot:'Net sell terbesar',macro:'Indikator pasar',macroSub:'Kurs · Yield · Komoditas',
    newsCard:'Berita emiten',newsTab:'Berita',snews:'Berita emiten',knews:'Berita KISI',all:'Semua',more:'Lihat semua ›',todayEv:'Agenda hari ini',calLink:'Kalender ›',ann:'Keterbukaan informasi',annSub:'Pengumuman IDX · 3 hari terakhir (tanpa laporan rutin)',calTitle:'Kalender',today:'Hari ini',macroCorp:'Makro+Emiten',macroOnly:'Makro',corpOnly:'Emiten',
@@ -458,7 +465,7 @@ const I18N={
    glob:'Global',topNews:'Berita utama hari ini',topNewsNote:'Skor liputan & kata kunci · tetap sehari',tnSrcs:'{n} media',wlPh:'Kode · nama emiten',annPh:'Kode · kata kunci',tAdd:'Tambah',tDel:'Hapus',tUp:'Naik',tDown:'Turun',tPdf:'PDF asli',tIdx:'Halaman keterbukaan IDX',tBriefKo:'Unduh Daily Brief (Korea) PDF',tBriefId:'Unduh Morning Brief (Indonesia) PDF',tLayout:'Atur kartu · tab peringkat',layout:'Tata letak',layReset:'Reset',layDone:'Selesai',layDrag:'Seret untuk memindah',layHide:'Sembunyikan',layShow:'Tampilkan',layPick:'Tab peringkat (maks 6)',surge:'Lonjakan nilai',volR:'Volume',fTop:'Net beli asing',fBot:'Net jual asing',labVol:'Urut volume',netbuy:'Net buy',buy:'Beli',sell:'Jual',price:'Harga',chg:'Perubahan',ratio20:'vs rata-rata 20 hari',fnet:'Net asing',headlines:'Berita',sched:'Agenda',noNews:'Belum ada headline',noSched:'Tidak ada agenda emiten',noEv:'Tidak ada agenda hari ini',upcoming:'Jadwal berikutnya',noEv2:'Tidak ada agenda 2 minggu ke depan',
    exp:'Perkiraan',prev:'Sebelumnya',act:'Aktual',imp:'Tingkat',pre:'Belum rilis · perlu konfirmasi',chk:'perlu konfirmasi',exch:'Bursa Efek Indonesia',foot:'Sumber: IDX · Investing.com · Yahoo Finance · Bank Indonesia · RSS media whitelist',footChk:'Nilai belum terverifikasi ditandai',footChk2:'',
    now:'Sekarang',close:'Penutupan',prevClose:'Penutupan sebelumnya',lastOk:'terakhir diterima',retry:'mencoba lagi',noProxy:'proxy live gagal (Worker belum diset)',ixIHSG:'Indeks Harga Saham Gabungan',ixLQ:'45 saham likuid',ixFX:'Dolar/Rupiah',ixSUN:'Obligasi 10 tahun',aiWhy:'Mengapa bergerak?',perShare:'/saham',upd:'Diperbarui',nextIn:'Berikutnya',sec:' dtk',brandSub:'Monitor Bursa Indonesia · J',memT:'Berita penting sebelumnya',memThread:'Tindak lanjut',memDue:'cek',memNone:'Belum ada catatan (dibuat tiap Jumat setelah pasar tutup)',aiSrc:'Ringkasan AI · Gemini',aiSearching:'Sedang mencari alasan pergerakan · ringkasan muncul setelah berita/keterbukaan/arus dana terkumpul',aiLow:'Belum ada katalis jelas — sejalan dengan pasar/sektor',aiUp:'naik',aiDown:'turun',aiFlat:'datar',aiSum:'Ringkasan keterbukaan',aiNews:'Ringkasan berita',watch:'Watchlist',wlEmpty:'Tambah saham · terbaru di atas, ▲▼/seret untuk urutan · maks. 20 · tersimpan di browser ini',wlSrc:'Sumber',dchg:'Harian',divInfo:'Dividen',exDate:'Ex-date',payDate:'Pembayaran',yld:'Yield',fnetAll:'Net beli asing · seluruh pasar',prevLabel:'Sebelumnya',src:'Sumber',idxNote:'Pengumuman IDX real-time',days:'MinSenSelRabKamJumSab',day:'',month:'',dow:'',noAnn:'Belum ada pengumuman',noData:'Tidak ada data',noNewsTag:'Tidak ada berita untuk saham ini',
-   closeBtn:'Tutup',annAll:'Semua keterbukaan hari ini',annAllF:'Semua',annKeyF:'Penting',annCnt:'item',fflowT:'Aliran dana asing · Sektor',ffBuy:'Top net beli',ffSell:'Top net jual',ffNone:'Tidak ada data aliran dana asing',ffNone1w:'Akumulasi mingguan belum tersedia (terisi setelah hari bursa ditutup)',ffDays:'hari bursa',ffFill:'sedang terakumulasi',ffNet:'Net',ffLead:'Saham utama',fvStock:'Saham',fvSector:'Sektor',dcT:'Nilai transaksi tertinggi harian',ffIn:'Net beli asing',ffOut:'Net jual asing'}
+   closeBtn:'Tutup',annAll:'Semua keterbukaan hari ini',annAllF:'Semua',annKeyF:'Penting',annCnt:'item',fflowT:'Aliran dana asing · Sektor',ffBuy:'Top net beli',ffSell:'Top net jual',ffNone:'Tidak ada data aliran dana asing',ffNone1w:'Akumulasi mingguan belum tersedia (terisi setelah hari bursa ditutup)',ffDays:'hari bursa',ffFill:'sedang terakumulasi',ffNet:'Net',ffLead:'Saham utama',fvStock:'Saham',fvSector:'Sektor',dcT:'Kalender',dcNote:'Top nilai transaksi · klik tanggal',dcTop:'Top nilai transaksi',dcFuture:'Agenda',ffIn:'Net beli asing',ffOut:'Net jual asing'}
 };
 let LANG='ko';try{LANG=localStorage.getItem('idxlive_lang')||'ko';}catch(e){}
 const T=k=>(I18N[LANG]&&I18N[LANG][k])??I18N.ko[k]??k;
@@ -638,7 +645,9 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   $('macro').innerHTML=`<tr class="th"><td></td><td class="r">${T('now')}</td><td class="r">${T('dchg')}</td><td class="r">${T('ytd')}</td></tr>`+(d.macro||[]).map(m=>`<tr><td>${L(m,'k')}${L(m,'note')?`<span class="n2">${L(m,'note')}</span>`:''}</td><td class="r num">${String(m.v).includes('확인')?`<span class="chk">${T('chk')}</span>`:m.v}</td><td class="r num" style="width:70px">${m.d==null?'<span class="flat">—</span>':`<span class="badge ${(m.inv?-m.d:m.d)>0?'up':'dn'}">${m.d>0?'+':''}${fmt(m.d)}%</span>`}</td><td class="r num" style="width:70px">${sg(m.ytd,2,'%',m.inv)}</td></tr>`).join('');
   // 오늘 일정
   const _t=today(),cal=(d.calendar||[]);
-  const tdAll=cal.filter(e=>e.date===_t);
+  /* 난잡함 방지 — 별 2개 이상(중요 지표), 배당·상장, 주주총회(RUPS)만 카드에 올린다. 나머지는 캘린더 탭·달력에서 본다 */
+  const evKey=e=>(e.imp||1)>=2||e.kind==='div'||e.kind==='ipo'||/RUPS|주주총회|Rapat Umum/i.test((e.title_ko||'')+(e.title||''));
+  const tdAll=cal.filter(e=>e.date===_t&&evKey(e));
   const byImp=(a,b)=>(b.imp||0)-(a.imp||0)||(a.time||'—').localeCompare(b.time||'—');
   const tdM=tdAll.filter(e=>e.kind==='macro').sort(byImp),tdC=tdAll.filter(e=>e.kind!=='macro').sort((a,b)=>(a.kind==='div'||a.kind==='ipo'?-1:0)-(b.kind==='div'||b.kind==='ipo'?-1:0)||byImp(a,b));
   const TD_MAX=6;                                                       // 카드가 세로를 독차지하지 않도록 6건까지만 (나머지는 캘린더로)
@@ -695,31 +704,56 @@ function setFview(v){FVIEW=v;
   document.querySelectorAll('#fseg a').forEach((a,i)=>a.classList.toggle('on',(i===0)===(v==='stock')));
   const fd=$('fdate');if(fd)fd.style.display=(v==='stock')?'':'none';
   if(v==='sector')renderFFlow();requestAnimationFrame(fitLists);}
+let dcOff=0;   /* 0=이번 달 · -1=지난 달 */
+function dcKey(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function dcMove(n){const m=dcMonth();m.setMonth(m.getMonth()+n);const t=new Date(today()+'T00:00:00');
+  dcOff=(m.getFullYear()-t.getFullYear())*12+(m.getMonth()-t.getMonth());
+  if(dcOff>1)dcOff=1; if(dcOff<-11)dcOff=-11;
+  dcOv(null);renderDaycal();requestAnimationFrame(fitLists);}
+function dcMonth(){const t=new Date(today()+'T00:00:00');return new Date(t.getFullYear(),t.getMonth()+dcOff,1);}
 function renderDaycal(){const box=$('daycal'),card=$('daycal-card');if(!box||!DATA)return;
-  let rows=(DATA.daycal||[]).slice(-20);
-  if(card)card.hidden=!rows.length;
-  if(!rows.length){box.innerHTML='';return;}
-  const cell=list=>list.map(function(r){
-    const cls=r.pct>0?'up':(r.pct<0?'dn':'fl'),d=(r.d||'').slice(5).replace('-','/');
-    const col=r.pct>0?'#1d8a68':(r.pct<0?'#d1453d':'');
-    const a=Math.abs(r.pct||0),bg=Math.min(46,6+a*7),bd=Math.min(72,20+a*9);   // 0.5%≈10% · 2%≈20% · 5%≈41%
-    const st=col?(' style="background:color-mix(in srgb,'+col+' '+bg.toFixed(0)+'%,transparent);border-color:color-mix(in srgb,'+col+' '+bd.toFixed(0)+'%,var(--line))"'):'';
-    return '<a class="dccell '+cls+'"'+st+' href="#" onclick="openDr(\''+r.t+'\');return false" title="'+(r.n||'')+' · '+idrShort(r.val)+' · '+(r.pct>0?'+':'')+r.pct+'%">'
-      +'<span class="dcd">'+d+'</span><span class="dct">'+r.t+'</span>'
-      +'<span class="dcp">'+(r.pct>0?'+':'')+r.pct+'%</span></a>';});
-  box.innerHTML=cell(rows).join('');
-  dcGrid(box,rows,cell);}
-/* 바둑판이 반듯하게 떨어지게 — 지금 폭에 몇 칸이 들어가는지 재서 그 배수만큼만 남긴다 (마지막 줄 빈 칸 0).
-   칸 수는 카드 폭에 따라 달라지고 그리는 순간 폭이 바뀔 수 있어 두 번까지 다시 잰다. */
-function dcGrid(box,all,cell){
-  for(let i=0;i<3;i++){
-    const cols=Math.max(1,(getComputedStyle(box).gridTemplateColumns||'').split(' ').filter(Boolean).length);
-    const n=cols>1?Math.max(cols,Math.floor(all.length/cols)*cols):all.length;
-    if(n<all.length&&n!==box.children.length)box.innerHTML=cell(all.slice(-n)).join('');
-    else break;
-  }
-  const meta=document.getElementById('dcmeta');
-  if(meta)meta.textContent=box.children.length+T('ffDays').replace(' 누적','');}
+  const cal=(DATA.daycal||[]);
+  if(card)card.hidden=!cal.length;
+  if(!cal.length){box.innerHTML='';return;}
+  const by={};cal.forEach(r=>{by[r.d]=r;});
+  const m=dcMonth(),y=m.getFullYear(),mo=m.getMonth(),tIso=today();
+  const first=new Date(y,mo,1),lastD=new Date(y,mo+1,0).getDate(),lead=first.getDay();
+  const dowKo=['일','월','화','수','목','금','토'],dowId=['Min','Sen','Sel','Rab','Kam','Jum','Sab'];
+  const dw=$('dcdow');if(dw)dw.innerHTML=(LANG==='id'?dowId:dowKo).map((d,i)=>`<span class="${i===0?'sun':i===6?'sat':''}">${d}</span>`).join('');
+  const mn=$('dcmon');if(mn)mn.textContent=LANG==='id'?`${['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'][mo]} ${y}`:`${y}.${String(mo+1).padStart(2,'0')}`;
+  const evByDay={};(DATA.calendar||[]).forEach(e=>{const d=(e.date||'').slice(0,10);if(!d)return;(evByDay[d]=evByDay[d]||[]).push(e);});
+  let html='';
+  for(let i=0;i<lead;i++)html+='<span class="dccell pad"></span>';
+  for(let d=1;d<=lastD;d++){
+    const iso=dcKey(new Date(y,mo,d)),dow=new Date(y,mo,d).getDay(),r=by[iso];
+    const future=iso>tIso, wk=(dow===0||dow===6);
+    const ev=(evByDay[iso]||[]).filter(e=>(e.imp||1)>=2).length;
+    const cls=['dccell',wk?'wknd':'',iso===tIso?'tday':'',r?(r.pct>0?'up':r.pct<0?'dn':'fl'):'nod',future?'fut':''].filter(Boolean).join(' ');
+    let st='';
+    if(r&&r.pct){const col=r.pct>0?'#1d8a68':'#d1453d',a=Math.abs(r.pct),bg=Math.min(46,6+a*7),bd=Math.min(72,20+a*9);
+      st=` style="background:color-mix(in srgb,${col} ${bg.toFixed(0)}%,transparent);border-color:color-mix(in srgb,${col} ${bd.toFixed(0)}%,var(--line))"`;}
+    const body=r?`<span class="dct">${r.t}</span><span class="dcp">${r.pct>0?'+':''}${r.pct}%</span>`
+              :(future&&ev?`<span class="dcev">${ev}</span>`:'<span class="dct nil">·</span>');
+    html+=`<a class="${cls}"${st} href="#" onclick="dcOv('${iso}');return false" title="${r?((r.n||'')+' · '+idrShort(r.val)):iso}"><span class="dcd">${d}</span>${body}</a>`;}
+  const tail=(7-((lead+lastD)%7))%7;for(let i=0;i<tail;i++)html+='<span class="dccell pad"></span>';
+  box.innerHTML=html;
+  const meta=$('dcmeta');if(meta)meta.textContent=T('dcNote');}
+/* 달력 칸 클릭 — 과거: 그날의 주요 종목·공시·뉴스 / 미래: 그날 일정 */
+function dcOv(iso){const ov=$('dcov');if(!ov)return;
+  if(!iso){ov.hidden=true;return;}
+  const r=(DATA.daycal||[]).find(x=>x.d===iso),lg=((DATA.daylog||{})[iso])||{},tIso=today();
+  const evs=(DATA.calendar||[]).filter(e=>(e.date||'').slice(0,10)===iso).sort((a,b)=>(b.imp||0)-(a.imp||0)).slice(0,6);
+  $('dcovd').textContent=dayLabel(iso);
+  $('dcovs').textContent=iso>tIso?T('dcFuture'):(r?T('dcTop'):'');
+  let h='';
+  if(r)h+=`<div class="dcsec"><b>${T('dcTop')}</b><div class="dcrow" onclick="openDr('${r.t}')"><b>${r.t}</b><span>${r.n||''}</span><em class="num ${r.pct>0?'up':r.pct<0?'dn':''}">${r.pct>0?'+':''}${r.pct}%</em><small>${idrShort(r.val)}</small></div></div>`;
+  const an=lg.ann||[];
+  if(an.length)h+=`<div class="dcsec"><b>${T('annT')}</b>${an.map(a=>`<div class="dcrow"><b>${a.t||''}</b>${L(a,'kind')?`<em class="kb">${L(a,'kind')}</em>`:''}<span>${L(a,'ko')||''}</span>${a.url?`<a class="pdf" href="${a.url}" target="_blank" rel="noopener">PDF</a>`:''}</div>`).join('')}</div>`;
+  const nw=lg.news||[];
+  if(nw.length)h+=`<div class="dcsec"><b>${T('mnews')}</b>${nw.map(n=>`<div class="dcrow"><a href="${n.url||'#'}" target="_blank" rel="noopener">${L(n,'ko')||''}</a><small>${n.src||''}</small></div>`).join('')}</div>`;
+  if(evs.length)h+=`<div class="dcsec"><b>${T('todayEv')}</b>${evs.map(e=>`<div class="dcrow"><small>${e.time||'—'}</small><span>${stars(e.imp||1)} ${L(e,'title')}</span></div>`).join('')}</div>`;
+  $('dcovbody').innerHTML=h||`<div class="empty">${T('noData')}</div>`;
+  ov.hidden=false;}
 function setFwin(w){fwin=w;document.querySelectorAll('#fwin a').forEach(a=>a.classList.toggle('on',a.textContent.toLowerCase()===w));renderFFlow();}
 const FF_SHORT={'Konsumen Non-Primer':'Kons. NonPrimer','Konsumen Primer':'Kons. Primer','Transportasi & Logistik':'Transportasi','Barang Baku':'Barang Baku','Perindustrian':'Industri'};
 function renderFFlow(){const box=$('fflow');if(!box||!DATA)return;
@@ -852,7 +886,7 @@ document.querySelectorAll('[data-imp]').forEach(b=>b.onclick=()=>{calImp=+b.data
 document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{calKind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(x=>x.classList.toggle('on',x===b));renderCal();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDr();});
 
-const UI_VER='0914-g';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
+const UI_VER='0914-h';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
 document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('on',b.dataset.lang===LANG));applyStatic();
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
 const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['knews-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
@@ -986,9 +1020,29 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
 .seg a.on{background:var(--brand);color:#fff}
 .ffhd{display:flex;align-items:center;gap:8px;margin:2px 0 4px}.ffhd .seg{margin-left:0}.ffhd .more{margin-left:auto;font-size:11px;color:var(--ink3)}
 /* 일별 거래대금 1위 달력 */
-.dcgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(62px,1fr));gap:4px;align-content:start}
+.dcgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;align-content:start}
+.dcdow{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin:2px 0 4px}
+.dcdow span{text-align:center;font-size:10.5px;font-weight:700;color:var(--ink3)}
+.dcdow .sun{color:#d1453d}.dcdow .sat{color:#3a6ea8}
+.dcnav{display:inline-flex;align-items:center;gap:6px;margin-left:8px;font-size:12px}
+.dcnav a{color:var(--ink3);text-decoration:none;font-weight:800;padding:0 4px;border-radius:5px}
+.dcnav a:hover{background:var(--chip);color:var(--ink)}
+.dcnav b{font-size:12px;font-weight:800;color:var(--ink2);min-width:56px;text-align:center}
+.dccell.pad{border:0;background:none;min-height:0}
+.dccell.wknd{background:var(--chip);opacity:.55}
+.dccell.nod{opacity:.55}
+.dccell.fut{border-style:dashed}
+.dccell.tday{outline:2px solid var(--brand);outline-offset:-2px}
+.dccell .dct.nil{color:var(--ink3);font-weight:400}
+.dccell .dcev{font-size:10px;font-weight:700;color:var(--brand)}
+.dcsec{margin:8px 0 2px}.dcsec>b{display:block;font-size:11.5px;color:var(--brand);font-weight:800;margin-bottom:3px}
+.dcrow{display:flex;align-items:baseline;gap:6px;padding:3px 0;border-bottom:1px solid var(--line);font-size:12.5px;cursor:default}
+.dcrow:last-child{border-bottom:0}
+.dcrow>b{flex:0 0 auto;font-weight:800}.dcrow>span{flex:1 1 auto;min-width:0}
+.dcrow>small{flex:0 0 auto;color:var(--ink3);font-size:11px}
+.dcrow a{color:inherit;text-decoration:none}.dcrow a:hover{text-decoration:underline}
 .daycal{flex:0 0 auto}.daycal .fillbox{min-height:0;flex:0 0 auto}.daycal .fillbox>.fill{position:static;overflow:visible}  /* 달력은 내용 높이만 쓰고 남는 세로 공간은 아래 실시간 공시가 가져간다 */
-.dccell{border:1px solid var(--line);border-radius:8px;padding:3px 5px 4px;min-height:42px;display:flex;flex-direction:column;gap:1px;text-decoration:none;color:inherit}
+.dccell{border:1px solid var(--line);border-radius:7px;padding:2px 4px 3px;min-height:40px;display:flex;flex-direction:column;gap:0;text-decoration:none;color:inherit;overflow:hidden}
 .dccell .dcd{font-size:9.5px;color:var(--ink3);font-weight:600}
 .dccell .dct{font-size:12px;font-weight:800;letter-spacing:.2px;white-space:nowrap}
 /* 외국인 순매수·순매도 상위: 2단으로 좁아져도 티커가 잘리지 않게 */
