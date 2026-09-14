@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 00:36",
+ "updated": "2026-09-15 00:49",
  "delay_min": 15,
- "fx_basis": "13.11 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,345 · 20:45 Yahoo",
- "idr_per_krw": 13.11,
+ "fx_basis": "13.10 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 20:45 Yahoo",
+ "idr_per_krw": 13.1001,
  "indices": [
   {
    "code": "USDIDR",
@@ -56,7 +56,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 00:33",
+   "asof": "investing.com 00:47",
    "unit": "bp"
   }
  ],
@@ -70,7 +70,7 @@
   "value_idr": 13677637309266.65,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-15 00:31",
+  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-15 00:44",
   "rank_asof": null,
   "rank_date": "2026-09-11",
   "adv": 197,
@@ -15357,10 +15357,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7638.41,
+   "px": 7640.59,
    "prev": 7655.5,
-   "pct": -0.22,
-   "asof": "00:30",
+   "pct": -0.19,
+   "asof": "00:45",
    "live": true,
    "spark": [
     7599.57,
@@ -15411,17 +15411,20 @@
     7633.67,
     7635.91,
     7639.79,
-    7638.41
+    7639.26,
+    7641.51,
+    7638.88,
+    7640.59
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26306.78,
+   "px": 26323.93,
    "prev": 26333.03,
-   "pct": -0.1,
-   "asof": "00:30",
+   "pct": -0.03,
+   "asof": "00:45",
    "live": true,
    "spark": [
     26018.42,
@@ -15472,17 +15475,20 @@
     26282.01,
     26297.75,
     26310.58,
-    26306.78
+    26310.01,
+    26320.83,
+    26313.94,
+    26323.93
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52487.35,
+   "px": 52470.3,
    "prev": 52562.77,
-   "pct": -0.14,
-   "asof": "00:30",
+   "pct": -0.18,
+   "asof": "00:45",
    "live": true,
    "spark": [
     52421.7,
@@ -15533,7 +15539,10 @@
     52474.61,
     52467.91,
     52498.71,
-    52487.35
+    52487.26,
+    52486.56,
+    52468.05,
+    52470.3
    ]
   },
   {
@@ -16431,9 +16440,45 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-15T00:35:12.172487+07:00",
+   "ts": "2026-09-15T00:48:17.811900+07:00",
    "date": "2026-09-15",
-   "time": "00:35",
+   "time": "00:48",
+   "src": "Jawa Pos",
+   "t": "Suahasil Nazara Ditunjuk jadi Menkeu, Hans Kwee: Pasar Respons Positif Lewat Intraday Rebound IHSG",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609140381/suahasil-nazara-ditunjuk-jadi-menkeu-hans-kwee-pasar-respons-positif-lewat-intraday-rebound-ihsg",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/09/pergerakan-indeks-harga-saham-gabungan-ihsg-di-bursa-efek-indonesia-bei-jakarta-jumat-782026-dery-ridwansah-jawaposcom-4Wtb4.webp",
+   "t_ko": "Suahasil Nazara 재무장관 임명 — Hans Kwee, 장중 IHSG 반등으로 긍정적 반응",
+   "t_id": "Suahasil Nazara Ditunjuk jadi Menkeu, Hans Kwee: Pasar Respons Positif Lewat Intraday Rebound IHSG"
+  },
+  {
+   "ts": "2026-09-15T00:46:41+07:00",
+   "date": "2026-09-15",
+   "time": "00:46",
+   "src": "CNBC",
+   "t": "AI infrastructure stocks slump and cyber shares pops on calls for AI slowdown",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/ai-stocks-slowdown-amodei-altman.html",
+   "g": 1,
+   "t_ko": "AI 인프라주 약세 속 AI 성장 둔화 우려에 사이버보안주 상승",
+   "t_id": "Saham Infrastruktur AI Anjlok dan Saham Siber Melesat di Tengah Seruan Perlambatan AI"
+  },
+  {
+   "ts": "2026-09-15T00:42:05+07:00",
+   "date": "2026-09-15",
+   "time": "00:42",
+   "src": "CNBC",
+   "t": "The Fed is likely to raise interest rates as inflation persists. What that means for consumers",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/fed-rate-hike-anticipated-what-it-means-for-your-money.html",
+   "g": 1,
+   "t_ko": "물가 지속에 따른 연준 금리 인상 가능성 대두",
+   "t_id": "The Fed Kemungkinan Kenaikan Suku Bunga Seiring Inflasi yang Berlanjut, Ini Dampaknya bagi Konsumen"
+  },
+  {
+   "ts": "2026-09-15T00:37:07+07:00",
+   "date": "2026-09-15",
+   "time": "00:37",
    "src": "Jawa Pos",
    "t": "IHSG Naik 200 Poin usai Suahasil Ditunjuk jadi Menkeu, Akankah Berlanjut?",
    "tags": [],
@@ -16631,19 +16676,6 @@
    "t_id": "Kapal Tanker Raup USD 1 Juta Per Hari Akibat Krisis Kekurangan Kapal di Tengah Perang"
   },
   {
-   "ts": "2026-09-14T23:51:44+07:00",
-   "date": "2026-09-14",
-   "time": "09/14",
-   "src": "CNA",
-   "t": "Exclusive-Vista Equity exploring strategic options for financial software provider Finastra, sources say",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/exclusive-vista-equity-exploring-strategic-options-financial-software-provider-finastra-sources-say-6384101",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--w4J22FL6--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T172200Z_1_LYNXMPEM8D1FY_RTROPTP_3_UKRAINE-BUSINESS.JPG?itok=snCO5etM",
-   "t_ko": "Vista Equity, 금융 소프트웨어 Finastra 매각 등 전략적 방안 검토",
-   "t_id": "Eksklusif-Vista Equity Jajaki Opsi Strategis untuk Penyedia Software Keuangan Finastra"
-  },
-  {
    "ts": "2026-09-14T23:49:37+07:00",
    "date": "2026-09-14",
    "time": "09/14",
@@ -16666,19 +16698,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/pt-pertamina-patra-niaga-menerima-kunjungan-wakil-menteri-perdagangan_260914185057-375.jpeg",
    "t_ko": "Pertamina Patra Niaga, 차관 방문 맞아 LPG 제품 안전성 점검",
    "t_id": "Pertamina Patra Niaga Terima Kunjungan Wamendag, Jamin Keamanan Produk Elpiji"
-  },
-  {
-   "ts": "2026-09-14T23:41:40+07:00",
-   "date": "2026-09-14",
-   "time": "09/14",
-   "src": "FT",
-   "t": "Ten-year Treasury yield hits 5% for first time since 2023",
-   "tags": [],
-   "url": "https://www.ft.com/content/06cb850d-089a-4318-88d7-a410e9766b89?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F640d3633-43b5-4010-b23b-a6557057990a.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "미국 10년물 국채금리, 2023년 이후 처음 5% 돌파",
-   "t_id": "Imbal Hasil Obligasi 10 Tahun AS Tembus 5% untuk Pertama Kalinya Sejak 2023"
   },
   {
    "ts": "2026-09-14T23:29:39+07:00",
@@ -16857,18 +16876,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/perwakilan-mitra-merchant-dan-grab-dalam-acara-teras-perwira-spesial-ulang-tahun-2026-di-jakarta-istimewa-1w7uu.webp",
    "t_ko": "UMKM, 소비재 선택 기준 까다로워져 판매 전략 재편 시급",
    "t_id": "Nggak Bisa Sekadar Jualan, Ini Tantangan UMKM saat Konsumen Makin Selektif"
-  },
-  {
-   "ts": "2026-09-14T21:31:19+07:00",
-   "date": "2026-09-14",
-   "time": "09/14",
-   "src": "Detik",
-   "t": "Pertamina Serahkan 16 Korban Kapal Virgo ke Basarnas",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8662895/pertamina-serahkan-16-korban-kapal-virgo-ke-basarnas",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/tim-sar-evakuasi-15-penumpang-selamat-dan-1-jenazah-kmp-virgo-transport-8-1789352754006_169.jpeg?w=360&q=90",
-   "t_ko": "Pertamina, Virgo호 사고 피해자 16명 Basarnas에 인계",
-   "t_id": "Pertamina Serahkan 16 Korban Kapal Virgo ke Basarnas"
   }
  ],
  "kisi_news": [
@@ -17075,9 +17082,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.41",
-   "d": 0.09,
-   "ytd": 1.15,
+   "v": "99.43",
+   "d": 0.11,
+   "ytd": 1.17,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17087,9 +17094,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.97",
-   "d": -1.24,
-   "ytd": 77.59,
+   "v": "101.50",
+   "d": -1.69,
+   "ytd": 76.77,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17099,9 +17106,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,352.3",
-   "d": -0.42,
-   "ytd": 0.62,
+   "v": "4,350.0",
+   "d": -0.47,
+   "ytd": 0.56,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -19555,7 +19562,7 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-15 00:31",
+  "idx_from_pc": "2026-09-15 00:44",
   "pc_age_min": 5,
   "on_runner": true,
   "bi": null,
@@ -21406,7 +21413,7 @@
      "ai_id": "",
      "src": "Jawa Pos",
      "url": "https://www.jawapos.com/finance/2609140375/ihsg-naik-200-poin-usai-suahasil-ditunjuk-jadi-menkeu-akankah-berlanjut",
-     "time": "00:35",
+     "time": "00:37",
      "tags": [],
      "sc": 416.8,
      "slot": "macro"
@@ -28671,6 +28678,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-15 00:20"
+  "announcements": "2026-09-15 00:36"
  }
 }
