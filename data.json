@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 18:56",
+ "updated": "2026-09-14 19:06",
  "delay_min": 15,
  "fx_basis": "13.07 IDR/KRW · USD/IDR 17,595 · USD/KRW 1,346 · 11:30 Yahoo",
- "idr_per_krw": 13.0701,
+ "idr_per_krw": 13.0676,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 18:55",
+   "asof": "investing.com 19:04",
    "unit": "bp"
   }
  ],
@@ -337,14 +337,14 @@
   "prev": 6541.38,
   "ytd": -24.42,
   "m1": 2.07,
-  "value_idr": 16437711989861.336,
+  "value_idr": 16438170377728.004,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-14 18:51",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 19:01",
   "rank_asof": null,
   "rank_date": "2026-09-14",
   "adv": 231,
-  "dec": 455,
+  "dec": 456,
   "unch": 146,
   "foreign_net_idr": -728667450249.4258,
   "foreign_buy": 3991314699946.703,
@@ -8727,6 +8727,22 @@
    "live": 0
   },
   {
+   "t": "ACRO",
+   "n": "Samcro Hyosung Adilestari",
+   "px": 64.0,
+   "prev": 65.0,
+   "pct": -1.54,
+   "val": 458387866.6666666,
+   "vol": 7125200.0,
+   "sh": 3469345537,
+   "mcap": 222038114368.0,
+   "hi": 66.0,
+   "lo": 63.0,
+   "ratio": 0.7,
+   "fnet": -20974213.596987553,
+   "live": 0
+  },
+  {
    "t": "ROTI",
    "n": "Nippon Indosari Corpindo",
    "px": 585.0,
@@ -15025,11 +15041,11 @@
   {
    "name": "경기소비재",
    "name_id": "Konsumen Non-Primer",
-   "n": 135,
+   "n": 136,
    "adv": 31,
-   "dec": 83,
-   "val": 806090662100.0001,
-   "mcap": 406912895756887.0,
+   "dec": 84,
+   "val": 806549049966.6667,
+   "mcap": 407134933871255.0,
    "top": [
     {
      "t": "VKTR",
@@ -15072,7 +15088,7 @@
      "pct": -5.62
     }
    ],
-   "fnet": -14916259754,
+   "fnet": -14937233968,
    "pct": -1.41,
    "fbuy_top": [
     {
@@ -16832,16 +16848,151 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-14T18:53:52+07:00",
+   "ts": "2026-09-14T19:02:21+07:00",
    "date": "2026-09-14",
-   "time": "18:53",
+   "time": "19:02",
    "src": "CNBC",
-   "t": "Brent crude jumps above $108 after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
+   "t": "Iran says it destroyed U.S. advanced drone over Hormuz as Middle East conflict intensifies",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/us-iran-trump-hormuz-gulf-oil-crude-talks-.html",
+   "g": 1,
+   "t_ko": "이란, 호르무즈 상공서 미군 최첨단 드론 격추 주장… 중동 갈등 고조",
+   "t_id": "Iran Klaim Hancurkan Drone Canggih AS di Selat Hormuz Seiring Memanasnya Konflik Timur Tengah"
+  },
+  {
+   "ts": "2026-09-14T19:00:00+07:00",
+   "date": "2026-09-14",
+   "time": "19:00",
+   "src": "Detik",
+   "t": "Danantara Mau Genggam 40% Saham Bursa Efek!",
+   "tags": [],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8662700/danantara-mau-genggam-40-saham-bursa-efek",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/07/01/wisma-danantara-indonesia-1751345496316_169.jpeg?w=360&q=90",
+   "t_id": "Danantara Mau Genggam 40% Saham Bursa Efek!",
+   "t_ko": "Danantara, IDX 지분 40% 장악 추진"
+  },
+  {
+   "ts": "2026-09-14T18:59:26+07:00",
+   "date": "2026-09-14",
+   "time": "18:59",
+   "src": "CNBC",
+   "t": "U.S. Treasury yields are steady as 10-year closes in on 5% ahead of Fed rates decision",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
+   "g": 1,
+   "t_ko": "연준 금리 결정 앞두고 미 국채 10년물 5% 육박하며 보합세",
+   "t_id": "Imbal Hasil Obligasi AS Stabil Jelang Keputusan Suku Bunga The Fed"
+  },
+  {
+   "ts": "2026-09-14T18:59:00+07:00",
+   "date": "2026-09-14",
+   "time": "18:59",
+   "src": "MarketWatch",
+   "t": "Oil over $100 has JPMorgan stock-market strategists fearing a missing out on a swift decline",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/oil-over-100-has-jpmorgan-stock-market-strategists-fearing-a-missing-out-on-a-swift-decline-ba32bfd4?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-25391839",
+   "t_ko": "JPMorgan, 유가 100달러 상회에 급격한 하락 놓칠라 우려",
+   "t_id": "Minyak di Atas $100 Bikin Strategis Pasar Saham JPMorgan Khawatir Lewatkan Penurunan Cepat"
+  },
+  {
+   "ts": "2026-09-14T18:57:25+07:00",
+   "date": "2026-09-14",
+   "time": "18:57",
+   "src": "CNBC",
+   "t": "Brent crude tops $108 after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html",
    "g": 1,
-   "t_ko": "사우디, 호르무즈 우회 핵심 송유관 폐쇄에 브렌트유 배럴당 108달러 상회",
-   "t_id": "Minyak Brent Melonjak di Atas $108 Usai Arab Saudi Tutup Pipa Krusial Pengganti Selat Hormuz"
+   "t_ko": "사우디 호르무즈 해협 우회 주요 송유관 가동 중단에 브렌트유 배럴당 108달러 돌파",
+   "t_id": "Minyak Brent Tembus $108 Usai Arab Saudi Tutup Pipa Vital Pengganti Selat Hormuz"
+  },
+  {
+   "ts": "2026-09-14T18:56:33+07:00",
+   "date": "2026-09-14",
+   "time": "18:56",
+   "src": "Tempo",
+   "t": "Perkuat Ekosistem Pesisir, KKP Bersama Pemerintah Kota Padang Tanam 1.000 Bibit Mangrove",
+   "tags": [],
+   "url": "https://bisnis.tempo.co/read/2119548/perkuat-ekosistem-pesisir-kkp-bersama-pemerintah-kota-padang-tanam-1-000-bibit-mangrove",
+   "img": "https://statik.tempo.co?id=&width=650",
+   "t_ko": "KKP·Padang시, 연안 생태계 강화를 위해 맹그로브 1,000그루 식재",
+   "t_id": "Perkuat Ekosistem Pesisir, KKP Bersama Pemerintah Kota Padang Tanam 1.000 Bibit Mangrove"
+  },
+  {
+   "ts": "2026-09-14T18:54:00+07:00",
+   "date": "2026-09-14",
+   "time": "18:54",
+   "src": "Media Indonesia",
+   "t": "Ekonom Sebut Pasar Menaruh Kepercayaan Tinggi pada Suahasil Nazara",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/933291/ekonom-sebut-pasar-menaruh-kepercayaan-tinggi-pada-suahasil-nazara",
+   "t_id": "Ekonom Sebut Pasar Menaruh Kepercayaan Tinggi pada Suahasil Nazara",
+   "t_ko": "경제학자, 시장이 Suahasil Nazara에 높은 신뢰 보낸다고 평가"
+  },
+  {
+   "ts": "2026-09-14T18:53:00+07:00",
+   "date": "2026-09-14",
+   "time": "18:53",
+   "src": "Katadata",
+   "t": "Kata Suahasil soal Proses Ambil Alih Utang Whoosh yang Sempat Ditangani Purbaya",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/keuangan/6aa7e037a59de/kata-suahasil-soal-proses-ambil-alih-utang-whoosh-yang-sempat-ditangani-purbaya",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/14/Presiden_Prabowo_lantik_Suahasil_Nazara_sebagai_Menkeu-2026_09_14-17_40_10_ef01e6ba1751d9fe0b67006b7ab70444_620x413_thumb.jpg",
+   "t_id": "Kata Suahasil soal Proses Ambil Alih Utang Whoosh yang Sempat Ditangani Purbaya",
+   "t_ko": "Suahasil, Purbaya가 담당했던 Whoosh 부채 인수 프로세스 언급"
+  },
+  {
+   "ts": "2026-09-14T18:52:37+07:00",
+   "date": "2026-09-14",
+   "time": "18:52",
+   "src": "Bloomberg",
+   "t": "Iran Exploiting Houthi Attack ‘Wildcard,’ Says BI’s Sanders",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-14/iran-exploiting-houthi-wildcard-says-bi-s-sanders-video",
+   "g": 1,
+   "t_ko": "BI의 Sanders, 이란이 후티 공격을 변수로 악용 중이라고 진단",
+   "t_id": "Iran Manfaatkan 'Kartu As' Serangan Houthi, Kata Sanders dari BI"
+  },
+  {
+   "ts": "2026-09-14T18:51:31+07:00",
+   "date": "2026-09-14",
+   "time": "18:51",
+   "src": "Yahoo Finance",
+   "t": "CAVA vs. Chewy: Which Consumer Stock Is a Better Buy in 2026?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cava-vs-chewy-consumer-stock-115131722.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/f7a65c96d166faf21aac2b3268722093.png",
+   "t_ko": "CAVA vs Chewy, 2026년 더 매력적인 소비재주는",
+   "t_id": "CAVA vs Chewy: Saham Konsumer Mana yang Lebih Layak Dibeli pada 2026?"
+  },
+  {
+   "ts": "2026-09-14T18:50:00+07:00",
+   "date": "2026-09-14",
+   "time": "18:50",
+   "src": "Yahoo Finance",
+   "t": "The Stock Market Is Doing Something Incredibly Rare Right Now, and History Has Promising News for Investors",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-doing-something-incredibly-115000643.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/96d3e4aca6093f516ea31435b14c0a37.jpg",
+   "t_ko": "증시 희귀한 흐름 포착 — 역사적 데이터는 투자자에 긍정적 신호",
+   "t_id": "Pasar Saham Catat Rekor Langka, Sejarah Beri Kabar Baik bagi Investor"
+  },
+  {
+   "ts": "2026-09-14T18:50:00+07:00",
+   "date": "2026-09-14",
+   "time": "18:50",
+   "src": "Yahoo Finance",
+   "t": "Nvidia Returned a Record $26 Billion to Shareholders. Here's Why That Matters.",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-returned-record-26-billion-115000113.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/59f260c2dd2d67dcb5ffc053477f20ed.jpg",
+   "t_ko": "Nvidia, 주주 환원 역대 최대 260억 달러 집행 — 배경 점검",
+   "t_id": "Nvidia Kembalikan Rekor $26 Miliar ke Pemegang Saham, Ini Alasannya"
   },
   {
    "ts": "2026-09-14T18:49:00+07:00",
@@ -16863,8 +17014,8 @@
    "tags": [],
    "url": "https://katadata.co.id/ekonomi-hijau/ekonomi-sirkular/6aa7df298ab16/studi-ungkap-bahaya-vape-bekas-logam-berat-kadar-tinggi-dan-sulit-didaur-ulang",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2019/11/15/2019_11_15-17_25_35_2289cdb629a3a5aeaa02575c3e04df49_620x413_thumb.jpg",
-   "t_id": "Studi Ungkap Bahaya Vape Bekas: Logam Berat Kadar Tinggi dan Sulit Didaur Ulang",
-   "t_ko": "전자담배 잔여물 위험: 고농도 중금속과 재활용 어려움"
+   "t_ko": "전자담배 잔여물 위험: 고농도 중금속과 재활용 어려움",
+   "t_id": "Studi Ungkap Bahaya Vape Bekas: Logam Berat Kadar Tinggi dan Sulit Didaur Ulang"
   },
   {
    "ts": "2026-09-14T18:47:00+07:00",
@@ -16875,8 +17026,21 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/energi/6aa7decbb97ee/raih-kontrak-jangka-panjang-dari-as-bahlil-sebut-pasokan-lpg-ri-aman",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/02/10/2026_02_10-21_56_00_1079ed40-069f-11f1-b1cf-0242ac120004_620x413_thumb.jpg",
-   "t_id": "Raih Kontrak Jangka Panjang dari AS, Bahlil Sebut Pasokan LPG RI Aman",
-   "t_ko": "미국과 장기 계약 체결한 Bahlil, 인도네시아 LPG 공급 안정"
+   "t_ko": "미국과 장기 계약 체결한 Bahlil, 인도네시아 LPG 공급 안정",
+   "t_id": "Raih Kontrak Jangka Panjang dari AS, Bahlil Sebut Pasokan LPG RI Aman"
+  },
+  {
+   "ts": "2026-09-14T18:46:34+07:00",
+   "date": "2026-09-14",
+   "time": "18:46",
+   "src": "Yahoo Finance",
+   "t": "Nvidia, chip stocks fall as AI CEOs call for slowdown",
+   "tags": [],
+   "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-chip-stocks-fall-ai-114634380.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/quartz_855/fa7df46af0489eb1b0c7f806f0bdff5b.jpg",
+   "t_ko": "AI CEO들의 속도 조절 요구에 Nvidia 및 반도체주 하락",
+   "t_id": "Nvidia dan Saham Chip Anjlok Seiring Seruan CEO AI untuk Perlambatan"
   },
   {
    "ts": "2026-09-14T18:45:00+07:00",
@@ -16900,8 +17064,8 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/keuangan/6aa7de39783ef/mengapa-purbaya-dicopot-dari-posisi-menkeu",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/Konferensi_Pers_Nota_Keuangan_dan_RAPBN_2027_Foto_KatadataFauza-2026_08_14-21_03_47_227f57c962d13d286e494436b5156b91_620x413_thumb.jpg",
-   "t_id": "Mengapa Purbaya Dicopot dari Posisi Menkeu?",
-   "t_ko": "Purbaya 재무장관 해임 배경에 이목 집중"
+   "t_ko": "Purbaya 재무장관 해임 배경에 이목 집중",
+   "t_id": "Mengapa Purbaya Dicopot dari Posisi Menkeu?"
   },
   {
    "ts": "2026-09-14T18:44:00+07:00",
@@ -16954,17 +17118,16 @@
    "t_id": "Futures Dow Jones: Saham Tech Anjlok Dipimpin Anthropic, Fokus ke Rapat The Fed"
   },
   {
-   "ts": "2026-09-14T18:42:08+07:00",
+   "ts": "2026-09-14T18:40:59+07:00",
    "date": "2026-09-14",
-   "time": "18:42",
-   "src": "Yahoo Finance",
-   "t": "The 12% Yield Monthly Income ETF I’d Rather Own in a Taxable Brokerage Account",
+   "time": "18:40",
+   "src": "Bloomberg",
+   "t": "Saudi Pipeline Attack Sends Oil Higher, AI Slowdown Hits Stocks",
    "tags": [],
-   "url": "https://finance.yahoo.com/markets/options/articles/12-yield-monthly-income-etf-114208071.html",
+   "url": "https://www.bloomberg.com/news/videos/2026-09-14/the-pulse-9-14-2026-video",
    "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/786390ba5d3ef46a70aacc7021612385.jpg",
-   "t_ko": "과세 계좌에서 보유할 만한 연 12% 배당 월배당 ETF",
-   "t_id": "ETF Pendapatan Bulanan Imbal Hasil 12% yang Lebih Layak Dimiliki di Akun Kena Pajak"
+   "t_ko": "사우디 송유관 피격에 유가 상승 및 AI 둔화 우려로 증시 하락",
+   "t_id": "Serangan Pipa Saudi Kerek Harga Minyak, Perlambatan AI Tekan Saham"
   },
   {
    "ts": "2026-09-14T18:38:57+07:00",
@@ -17026,44 +17189,6 @@
    "t_id": "Pemilik LA Clippers Steve Ballmer Minta Maaf Terkait Sanksi Tim"
   },
   {
-   "ts": "2026-09-14T18:34:10+07:00",
-   "date": "2026-09-14",
-   "time": "18:34",
-   "src": "Yahoo Finance",
-   "t": "CrowdStrike vs. UiPath: Which Technology Stock Is a Better Buy in 2026?",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-vs-uipath-technology-stock-113410657.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/eb5062f31a17e14da688248426d8149f.png",
-   "t_ko": "CrowdStrike vs UiPath: 2026년 유망 기술주 분석",
-   "t_id": "CrowdStrike vs. UiPath: Saham Teknologi Mana yang Layak Dibeli pada 2026?"
-  },
-  {
-   "ts": "2026-09-14T18:34:01+07:00",
-   "date": "2026-09-14",
-   "time": "18:34",
-   "src": "Bloomberg",
-   "t": "The Oil Market Needs a Quick Saudi Pipeline Restart",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/newsletters/2026-09-14/the-oil-market-needs-a-quick-saudi-pipeline-restart",
-   "g": 1,
-   "t_ko": "사우디 송유관 조속한 가동 재개 필요한 석유 시장",
-   "t_id": "Pasar Minyak Butuh Pemulihan Cepat Pipa Saudi"
-  },
-  {
-   "ts": "2026-09-14T18:34:00+07:00",
-   "date": "2026-09-14",
-   "time": "18:34",
-   "src": "Yahoo Finance",
-   "t": "The S&P 500 Is Trading at a Valuation Not Seen in a Generation. History Has 1 Very Specific Lesson for Investors.",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-trading-valuation-not-113400167.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/a3e78651cb15878af2ef0d903fe2bf6f.jpg",
-   "t_ko": "S&P 500 밸류에이션 급등 — 역사적 국면의 투자 교훈",
-   "t_id": "Valuasi S&P 500 Tertinggi dalam Generasi Ini, Ini Pelajaran Sejarah bagi Investor"
-  },
-  {
    "ts": "2026-09-14T18:32:19+07:00",
    "date": "2026-09-14",
    "time": "18:32",
@@ -17072,34 +17197,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8662688/beredar-kabar-masalah-internal-di-balik-pencopotan-purbaya-suahasil-buka-suara",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/menteri-keuangan-purbaya-yudhi-sadewa-1788961452912_169.jpeg?w=360&q=90",
-   "t_id": "Beredar Kabar Masalah Internal di Balik Pencopotan Purbaya, Suahasil Buka Suara",
-   "t_ko": "Purbaya 해임 배경 내홍설에 Suahasil 입장 표명"
-  },
-  {
-   "ts": "2026-09-14T18:31:54+07:00",
-   "date": "2026-09-14",
-   "time": "18:31",
-   "src": "Yahoo Finance",
-   "t": "Carney, locked in US trade war, pitches Canada to global investment titans",
-   "tags": [],
-   "url": "https://finance.yahoo.com/news/carney-locked-us-trade-war-100319218.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/reuters.com/0cab0cb38952af6758a243e72da55cba.jpg",
-   "t_ko": "미국 무역전쟁 직면한 Carney, 글로벌 투자자에 캐나다 홍보",
-   "t_id": "Carney, Terjebak Perang Dagang AS, Tarik Investor Global ke Kanada"
-  },
-  {
-   "ts": "2026-09-14T18:31:02+07:00",
-   "date": "2026-09-14",
-   "time": "18:31",
-   "src": "FT",
-   "t": "The Saudi relief valve is being closed",
-   "tags": [],
-   "url": "https://www.ft.com/content/bdc77254-e491-4d9f-8537-6f04317d037f?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ff2c3976b-8f7d-4399-a22a-3c5439c0e997.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "축소되는 사우디아라비아의 구원투수 역할",
-   "t_id": "Katup Penyelamat Saudi Mulai Ditutup"
+   "t_ko": "Purbaya 해임 배경 내홍설에 Suahasil 입장 표명",
+   "t_id": "Beredar Kabar Masalah Internal di Balik Pencopotan Purbaya, Suahasil Buka Suara"
   },
   {
    "ts": "2026-09-14T18:31:00+07:00",
@@ -17111,19 +17210,6 @@
    "url": "https://mediaindonesia.com/ekonomi/933282/ihsg-rebound-analis-cuma-karena-kepastian-figur-pasar-belum-percaya-penuh",
    "t_ko": "IHSG 반등 — 전문가, 불확실성 해소일 뿐 시장 신뢰는 부족",
    "t_id": "IHSG Rebound, Analis: Cuma Karena Kepastian Figur, Pasar belum Percaya Penuh"
-  },
-  {
-   "ts": "2026-09-14T18:29:41+07:00",
-   "date": "2026-09-14",
-   "time": "18:29",
-   "src": "Yahoo Finance",
-   "t": "Silver prices today, Monday, September 14, 2026: Silver slides as rate-hike expectations grow",
-   "tags": [],
-   "url": "https://finance.yahoo.com/personal-finance/investing/article/silver-prices-today-monday-september-14-2026-silver-slides-as-rate-hike-expectations-grow-112941547.html",
-   "g": 1,
-   "img": "https://s.yimg.com/os/creatr-uploaded-images/2024-04/21b3a190-027e-11ef-bbb5-a0f6297c401d",
-   "t_ko": "금리 인상 전망 강화에 14일 은값 하락",
-   "t_id": "Harga Perak Hari Ini, Senin, 14 September 2026: Perak Merosot Seiring Ekspektasi Kenaikan Suku Bunga"
   },
   {
    "ts": "2026-09-14T18:29:00+07:00",
@@ -17171,19 +17257,6 @@
    "t_id": "IHSG Rebound setelah Suahasil Nazara Dilantik Jadi Menkeu"
   },
   {
-   "ts": "2026-09-14T18:25:54+07:00",
-   "date": "2026-09-14",
-   "time": "18:25",
-   "src": "Jawa Pos",
-   "t": "Harga Emas Antam di Pegadaian Naik Jadi Rp 2.642.000 per Gram Pada Senin 14 September 2026",
-   "tags": [],
-   "url": "https://www.jawapos.com/finance/2609140200/harga-emas-antam-di-pegadaian-naik-jadi-rp-2642000-per-gram-pada-senin-14-september-2026",
-   "g": 1,
-   "img": "https://cdn-assets.jawapos.com/images/1/2025/06/27/emas-antam-1605154587.jpg",
-   "t_ko": "14일 Pegadaian Antam 금 가격 그램당 Rp 2,642,000으로 상승",
-   "t_id": "Harga Emas Antam di Pegadaian Naik Jadi Rp 2.642.000 per Gram Pada Senin 14 September 2026"
-  },
-  {
    "ts": "2026-09-14T18:25:00+07:00",
    "date": "2026-09-14",
    "time": "18:25",
@@ -17196,19 +17269,6 @@
    "t_id": "Gantikan Purbaya, Suahasil Janji Jaga Kredibilitas Kemenkeu"
   },
   {
-   "ts": "2026-09-14T18:24:00+07:00",
-   "date": "2026-09-14",
-   "time": "18:24",
-   "src": "WSJ",
-   "t": "Euronext, Deutsche Boerse Shares Rise After CEO’s Merger Comments",
-   "tags": [],
-   "url": "https://www.wsj.com/business/deals/euronext-deutsche-boerse-shares-rise-after-ceos-merger-comments-4e96bbe9?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-42197336",
-   "t_ko": "Euronext와 Deutsche Boerse, CEO 합병 발언에 주가 상승",
-   "t_id": "Saham Euronext dan Deutsche Boerse Naik Usai Komentar Merger CEO"
-  },
-  {
    "ts": "2026-09-14T18:23:25+07:00",
    "date": "2026-09-14",
    "time": "18:23",
@@ -17219,53 +17279,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/suahasil-nazara-eva-safitridetikcom-1789377043420_169.jpeg?w=360&q=90",
    "t_ko": "Suahasil, 관세청에 불법 행위 단속 지속 주문",
    "t_id": "Suahasil Minta Bos Bea Cukai Terus Buru Pelaku Aktivitas Ilegal"
-  },
-  {
-   "ts": "2026-09-14T18:23:00+07:00",
-   "date": "2026-09-14",
-   "time": "18:23",
-   "src": "Katadata",
-   "t": "Menteri UMKM Buka Suara soal Persiapan UMK Hadapi Wajib Halal Oktober",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6aa7d938f1e7e/menteri-umkm-buka-suara-soal-persiapan-umk-hadapi-wajib-halal-oktober",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/10/27/2025_10_27-16_57_00_4c572796-b32b-11f0-9c89-0242ac120006_620x413_thumb.jpg",
-   "t_ko": "중소기업부 장관, 10월 할랄 인증 의무화 준비 입장 표명",
-   "t_id": "Menteri UMKM Buka Suara soal Persiapan UMK Hadapi Wajib Halal Oktober"
-  },
-  {
-   "ts": "2026-09-14T18:21:46+07:00",
-   "date": "2026-09-14",
-   "time": "18:21",
-   "src": "Medcom",
-   "t": "Pesan Prabowo ke Menkeu Suahasil: APBN Harus Sehat, Kredibel, dan Bisa Stabilkan Ekonomi RI",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/makro/VNxAadyb-pesan-prabowo-ke-menkeu-suahasil-apbn-harus-sehat-kredibel-dan-bisa-stabilkan-ekonomi-ri",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/14/1842003/kMj2StxODZ.jpg?w=720",
-   "t_ko": "Prabowo 대통령, Suahasil 신임 Kemenkeu 장관에게 건전·신뢰성 있는 재정 강조",
-   "t_id": "Pesan Prabowo ke Menkeu Suahasil: APBN Harus Sehat, Kredibel, dan Bisa Stabilkan Ekonomi RI"
-  },
-  {
-   "ts": "2026-09-14T18:20:00+07:00",
-   "date": "2026-09-14",
-   "time": "18:20",
-   "src": "IDNFinancials",
-   "t": "Purbaya asks Pemda to limit bank deposits, optimize spending",
-   "tags": [],
-   "url": "https://www.idnfinancials.com/news/68820/purbaya-asks-pemda-to-limit-bank-deposits-optimize-spending",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/PURBAYA-15052026.jpg",
-   "t_ko": "Purbaya, 지자체에 예금 축소 및 재정 집행 효율화 주문",
-   "t_id": "Purbaya Minta Pemda Batasi Simpanan Bank dan Optimalkan Belanja"
-  },
-  {
-   "ts": "2026-09-14T18:20:00+07:00",
-   "date": "2026-09-14",
-   "time": "18:20",
-   "src": "Media Indonesia",
-   "t": "Eks Pimpinan KPK Usul DPR Bentuk Komite Pengawas Perampasan Aset",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/933277/eks-pimpinan-kpk-usul-dpr-bentuk-komite-pengawas-perampasan-aset",
-   "t_ko": "전직 KPK 지도부, 국회에 자산환수 감독위원회 설치 제안",
-   "t_id": "Eks Pimpinan KPK Usul DPR Bentuk Komite Pengawas Perampasan Aset"
   }
  ],
  "kisi_news": [
@@ -17472,9 +17485,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.50",
-   "d": 0.18,
-   "ytd": 1.24,
+   "v": "99.51",
+   "d": 0.19,
+   "ytd": 1.26,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17484,9 +17497,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.25",
-   "d": 0.0,
-   "ytd": 79.82,
+   "v": "103.50",
+   "d": 0.24,
+   "ytd": 80.25,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17496,9 +17509,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,332.5",
-   "d": -0.87,
-   "ytd": 0.16,
+   "v": "4,327.8",
+   "d": -0.98,
+   "ytd": 0.05,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17520,9 +17533,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,386",
-   "d": -0.28,
-   "ytd": -1.77,
+   "v": "16,323",
+   "d": -0.66,
+   "ytd": -2.15,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20108,7 +20121,7 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-14 18:51",
+  "idx_from_pc": "2026-09-14 19:01",
   "pc_age_min": 5,
   "on_runner": true,
   "bi": null,
@@ -21594,53 +21607,52 @@
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8662642/pesan-suahasil-nazara-usai-dilantik-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/pesan-suahasil-nazara-usai-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan-1789383969594_169.jpeg?w=360&q=90",
-   "score": 420.65,
-   "srcs": 5,
+   "score": 418.45,
+   "srcs": 3,
    "t_ko": "Suahasil Nazara 재무장관 취임 일성 — 임무 완수 및 신뢰 유지",
    "t_id": "Pesan Suahasil Nazara Usai Dilantik Jadi Menkeu: Lanjutkan Tugas dan Jaga Kepercayaan"
   },
   {
-   "ts": "2026-09-14T14:19:40+07:00",
+   "ts": "2026-09-14T18:27:09+07:00",
    "date": "2026-09-14",
-   "time": "14:19",
-   "src": "Jawa Pos",
-   "t": "Rupiah Tertekan Harga Minyak Dunia, Potensi Melemah ke Level Rp 17.650 Hari Ini",
+   "time": "18:27",
+   "src": "Bloomberg Technoz",
+   "t": "Skenario Danantara Pegang 40,12% Saham BEI Lewat Rights Issue",
    "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609140069/rupiah-tertekan-harga-minyak-dunia-potensi-melemah-ke-level-rp-17650-hari-ini",
-   "g": 1,
-   "img": "https://cdn-assets.jawapos.com/images/1/jawapos/2021/10/Mata-Uang-Rupiah-_-MIFTAHULHAYAT-6.jpg",
-   "score": 414.55,
-   "srcs": 3,
-   "t_ko": "Rupiah, 국제유가 상승 압박에 달러당 Rp17,650 약세 전망",
-   "t_id": "Rupiah Tertekan Harga Minyak Dunia, Potensi Melemah ke Level Rp 17.650 Hari Ini"
+   "url": "https://www.bloombergtechnoz.com/detail-news/121498/skenario-danantara-pegang-40-12-saham-bei-lewat-rights-issue",
+   "img": "https://images.bloombergtechnoz.com/data/2023/01/image-20230109134434.jpg",
+   "t_ko": "Danantara, 유상증자로 BEI 지분 40.12% 보유 시나리오",
+   "t_id": "Skenario Danantara Pegang 40,12% Saham BEI Lewat Rights Issue",
+   "score": 416.55,
+   "srcs": 3
   },
   {
-   "ts": "2026-09-14T17:33:42+07:00",
+   "ts": "2026-09-14T18:57:25+07:00",
    "date": "2026-09-14",
-   "time": "17:33",
+   "time": "18:57",
    "src": "CNBC",
-   "t": "U.S. Treasury yields are steady as 10-year closes in on 5% ahead of Fed rates decision",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
-   "g": 1,
-   "score": 316.0,
-   "srcs": 6,
-   "t_ko": "연준 금리 결정 앞두고 미 국채 10년물 5% 육박하며 보합세",
-   "t_id": "Imbal Hasil Obligasi AS Stabil Jelang Keputusan Suku Bunga The Fed"
-  },
-  {
-   "ts": "2026-09-14T18:53:52+07:00",
-   "date": "2026-09-14",
-   "time": "18:53",
-   "src": "CNBC",
-   "t": "Brent crude jumps above $108 after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
+   "t": "Brent crude tops $108 after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html",
    "g": 1,
-   "t_ko": "사우디, 호르무즈 우회 핵심 송유관 폐쇄에 브렌트유 배럴당 108달러 상회",
-   "t_id": "Minyak Brent Melonjak di Atas $108 Usai Arab Saudi Tutup Pipa Krusial Pengganti Selat Hormuz",
+   "t_ko": "사우디 호르무즈 해협 우회 주요 송유관 가동 중단에 브렌트유 배럴당 108달러 돌파",
+   "t_id": "Minyak Brent Tembus $108 Usai Arab Saudi Tutup Pipa Vital Pengganti Selat Hormuz",
    "score": 315.0,
-   "srcs": 5
+   "srcs": 4
+  },
+  {
+   "ts": "2026-09-14T02:00:00+07:00",
+   "date": "2026-09-14",
+   "time": "02:00",
+   "src": "Bloomberg",
+   "t": "A 5% Treasury Yield Raises New Risks for Markets, Economy",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-13/a-5-treasury-yield-is-raising-new-risks-for-markets-economy",
+   "g": 1,
+   "score": 315.0,
+   "srcs": 6,
+   "t_ko": "미국 국채금리 5% 돌파에 금융시장·경제 리스크 고조",
+   "t_id": "Imbal Hasil Obligasi AS 5% Picu Risiko Baru bagi Pasar dan Perekonomian"
   }
  ],
  "daylog": {
@@ -21883,14 +21895,14 @@
   "2026-09-14": {
    "news": [
     {
-     "t": "Brent crude jumps above $108 after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
-     "ko": "사우디, 호르무즈 우회 핵심 송유관 폐쇄에 브렌트유 배럴당 108달러 상회",
-     "id": "Minyak Brent Melonjak di Atas $108 Usai Arab Saudi Tutup Pipa Krusial Pengganti Selat Hormuz",
+     "t": "A 5% Treasury Yield Raises New Risks for Markets, Economy",
+     "ko": "미국 국채금리 5% 돌파에 금융시장·경제 리스크 고조",
+     "id": "Imbal Hasil Obligasi AS 5% Picu Risiko Baru bagi Pasar dan Perekonomian",
      "ai_ko": "",
      "ai_id": "",
-     "src": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html",
-     "time": "18:53",
+     "src": "Bloomberg",
+     "url": "https://www.bloomberg.com/news/articles/2026-09-13/a-5-treasury-yield-is-raising-new-risks-for-markets-economy",
+     "time": "02:00",
      "tags": [],
      "sc": 315.0,
      "slot": "global"
@@ -29242,6 +29254,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-14 18:45"
+  "announcements": "2026-09-14 18:56"
  }
 }
