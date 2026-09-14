@@ -1036,5 +1036,121 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden){clearTime
 })();
 </script>
 <!-- ── /AI 챗봇 위젯 ─────────────────────────────────────────────────── -->
+<!-- ══════════════════════════════════════════════════════════════
+  IDX Live — 종목 드로어 정리 (2026-09-14)
+  ① 빈 섹션 접기  ② 주간 기억 섹션 이름 변경
+
+  문제: 뉴스·공시·일정 섹션이 0건이어도 헤더(20px)+"…없음" 박스(43px)가
+        그대로 자리를 차지한다. ANTM 실측 기준 빈 섹션 2개에 139px.
+  해결: 0건 섹션은 헤더까지 통째로 감추고, 드로어 맨 아래에 한 줄로 합친다.
+        "뉴스 · 일정 없음" (11px, 회색) — 정보는 남기고 공간만 회수.
+
+  적용: index.html 의 </body> 직전에 이 블록을 통째로 붙여넣는다.
+        드로어 렌더 함수 이름을 몰라도 되도록 MutationObserver 로 붙는다.
+        되돌리기: 이 블록만 지우면 원상복구.
+
+  실측(ANTM, 창 1568×738): 콘텐츠 882px → 743px (139px, 16% 회수)
+
+  ② 섹션 이름: "이력 · 기억 카드" → "과거 주요 뉴스"
+     내부 저장 용어('기억'·'카드')를 화면에 드러내지 않는다.
+     KIRUDA 말투 규칙과 같은 원칙을 UI 라벨에도 적용.
+
+     제대로 된 수정은 index.html 의 I18N 사전을 직접 고치는 것:
+        ko: "이력 · 기억 카드"        -> "과거 주요 뉴스"
+        id: <같은 키의 인니어 문구>   -> "Berita Penting Sebelumnya"
+     아래 스크립트는 사전 키를 못 찾을 때를 위한 런타임 폴백이다.
+     사전을 고쳤으면 RELABEL 부분은 지워도 된다.
+══════════════════════════════════════════════════════════════ -->
+<style>
+  /* 합친 한 줄 */
+  .dr .empty-note{
+    font-size:11px; color:#98a2b3;
+    padding:6px 0 2px; margin-top:4px;
+    border-top:1px solid #eceff3;
+  }
+  /* 접힌 섹션 */
+  .dr .sec-collapsed{ display:none !important; }
+</style>
+<script>
+(function(){
+  // 섹션 헤더로 인정할 라벨 (이름 변경 전/후 모두 인식)
+  var HEAD = /^(뉴스|공시|일정|이력|기억|과거|Berita|Pengumuman|Agenda)/;
+
+  // ── ② RELABEL — 내부 용어를 화면에서 걷어낸다 ────────────────
+  var RELABEL = [
+    ['이력 · 기억 카드', '과거 주요 뉴스'],
+    ['이력·기억 카드',   '과거 주요 뉴스'],
+    ['기억 카드',        '과거 주요 뉴스'],
+    ['장기기억',         '과거 주요 뉴스']
+  ];
+
+  function relabel(root){
+    if(!root) return;
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+    var n;
+    while((n = w.nextNode())){
+      var t = n.nodeValue;
+      if(!t || t.indexOf('기억') < 0) continue;
+      for(var i = 0; i < RELABEL.length; i++){
+        if(t.indexOf(RELABEL[i][0]) >= 0){
+          n.nodeValue = t.split(RELABEL[i][0]).join(RELABEL[i][1]);
+          break;
+        }
+      }
+    }
+  }
+
+  function collapse(dr){
+    if(!dr) return;
+    relabel(dr);
+
+    // 이전 실행분 원복 (드로어가 다른 종목으로 다시 그려질 때)
+    dr.querySelectorAll('.sec-collapsed').forEach(function(e){
+      e.classList.remove('sec-collapsed');
+    });
+    var old = dr.querySelector('.empty-note');
+    if(old) old.remove();
+
+    var labels = [];
+    dr.querySelectorAll('.empty').forEach(function(e){
+      // 바로 위 형제들을 거슬러 올라가 섹션 헤더를 찾는다
+      var h = e.previousElementSibling;
+      while(h && !HEAD.test(h.textContent.trim())) h = h.previousElementSibling;
+      if(h){
+        labels.push(h.textContent.trim().replace(/\s*·\s*0$/, ''));
+        h.classList.add('sec-collapsed');
+      }
+      e.classList.add('sec-collapsed');
+    });
+
+    if(labels.length){
+      var note = document.createElement('div');
+      note.className = 'empty-note';
+      // KO/ID 토글 대응 — html[lang] 또는 body 클래스 중 있는 쪽을 본다
+      var isID = (document.documentElement.lang || '').toLowerCase().indexOf('id') === 0
+                 || document.body.classList.contains('lang-id');
+      note.textContent = isID
+        ? labels.join(' · ') + ' tidak tersedia'
+        : labels.join(' · ') + ' 없음';
+      dr.appendChild(note);
+    }
+  }
+
+  function hook(){
+    var dr = document.querySelector('.dr');
+    if(!dr) return;
+    if(dr.classList.contains('on')) collapse(dr);
+    new MutationObserver(function(){
+      if(dr.classList.contains('on')) collapse(dr);
+    }).observe(dr, {childList:true, subtree:true, attributes:true, attributeFilter:['class']});
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', hook);
+  } else {
+    hook();
+  }
+})();
+</script>
 </body>
 </html>
