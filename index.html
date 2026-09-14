@@ -1016,6 +1016,43 @@ body[data-lang=id] .ffrow{--ffn:100px}
   .laybtns{margin-left:0}
   .nav .lang{margin-left:auto}
 }
+
+/* ── 버그: .laybtn 의 display:flex 가 [hidden] 을 덮어써 '초기화' 버튼이 편집 모드가 아닐 때도 보였다 ── */
+.laybtn[hidden]{display:none !important}
+
+/* ── 폰 폭(520px 이하) 헤더·네비 정리 ──
+   모바일 전용 화면을 만드는 게 아니라, 헤더가 깨져 보이는 것만 잡는다.
+   본문 그리드·드로어는 데스크톱 기준 그대로다. */
+@media (max-width:520px){
+  .wrap{padding:0 12px 32px}
+  .hdr{gap:10px;padding:12px 0 10px}
+  .brand{gap:10px;width:100%}
+  .brand img{height:24px}
+  .brand .ttl{border-left:1px solid var(--line);padding-left:10px;white-space:nowrap}
+  .brand .ttl b{font-size:15px}
+  .brand .ttl span{font-size:10.5px}
+  .status{font-size:11.5px;gap:10px;row-gap:4px;width:100%}
+  /* Morning Brief: 라벨을 줄이고 KO·ID 만 또렷하게 */
+  .mbrief{font-size:12px}
+  .mbrief .lb{padding-left:8px;padding-right:8px}
+  .nav{gap:3px;padding:8px 0 12px}
+  .nav>button{font-size:13px;padding:6px 10px}
+  /* 레이아웃 편집은 폰에서 쓸 일이 없다 — 아이콘만 남긴다 */
+  .laybtns{margin-left:auto}
+  .laybtn span[data-t]{display:none}
+  .laybtn{padding:5px 8px}
+  .nav .lang{flex:0 0 auto}
+  .nav .lang button{padding:4px 10px;font-size:12px}
+  .nav .srch{order:9;flex:1 1 100%;margin-left:0}
+  .nav .strip{order:10;flex:1 1 100%;margin-left:0;font-size:12px}
+  .nav .strip .txt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+  /* 지수 카드 1열 + 여백 축소 */
+  .idx{grid-template-columns:1fr;gap:8px}
+  .card{padding:12px 12px 14px}
+  .aichip{margin-left:4px}
+  /* 우측 드로어는 폰에서 전체 폭으로 */
+  .dr{width:100vw !important;max-width:100vw}
+}
 </style>
 <button id="gchatFab" title="KIRUDA · AI 시장 어시스턴트">AI<i></i></button>
 <div id="gchatPanel" role="dialog" aria-label="KIRUDA">
