@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 21:52",
+ "updated": "2026-09-14 21:58",
  "delay_min": 15,
  "fx_basis": "13.08 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,348 · 20:55 Yahoo",
- "idr_per_krw": 13.0818,
+ "idr_per_krw": 13.0822,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 21:51",
+   "asof": "investing.com 21:57",
    "unit": "bp"
   }
  ],
@@ -337,14 +337,14 @@
   "prev": 6541.38,
   "ytd": -24.42,
   "m1": 2.07,
-  "value_idr": 16437244955494.67,
+  "value_idr": 16438170377728.004,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-14 21:48",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 21:48",
   "rank_asof": null,
   "rank_date": "2026-09-14",
-  "adv": 230,
-  "dec": 455,
+  "adv": 231,
+  "dec": 456,
   "unch": 146,
   "foreign_net_idr": -728667450249.4258,
   "foreign_buy": 3991314699946.703,
@@ -8183,6 +8183,22 @@
    "live": 0
   },
   {
+   "t": "ASPI",
+   "n": "Andalan Sakti Primaindo",
+   "px": 500.0,
+   "prev": 490.0,
+   "pct": 2.04,
+   "val": 616144033.3333333,
+   "vol": 1221700.0,
+   "sh": 683810725,
+   "mcap": 341905362500.0,
+   "hi": 525.0,
+   "lo": 488.0,
+   "ratio": 0.7,
+   "fnet": -18650521.068597708,
+   "live": 0
+  },
+  {
    "t": "RBMS",
    "n": "Ristia Bintang Mahkotasejati",
    "px": 62.0,
@@ -9491,6 +9507,22 @@
    "hi": 15.0,
    "lo": 15.0,
    "ratio": 1.6,
+   "fnet": 0.0,
+   "live": 0
+  },
+  {
+   "t": "BAPI",
+   "n": "Bhakti Agung Propertindo",
+   "px": 22.0,
+   "prev": 23.0,
+   "pct": -4.35,
+   "val": 309278200.0,
+   "vol": 14058100.0,
+   "sh": 5591980103,
+   "mcap": 123023562266.0,
+   "hi": 23.0,
+   "lo": 21.0,
+   "ratio": 1.0,
    "fnet": 0.0,
    "live": 0
   },
@@ -15106,11 +15138,11 @@
   {
    "name": "부동산",
    "name_id": "Properti",
-   "n": 77,
-   "adv": 23,
-   "dec": 37,
-   "val": 321030971699.9999,
-   "mcap": 450153269936839.0,
+   "n": 79,
+   "adv": 24,
+   "dec": 38,
+   "val": 321956393933.3332,
+   "mcap": 450618198861605.0,
    "top": [
     {
      "t": "MPRO",
@@ -15153,7 +15185,7 @@
      "pct": 0
     }
    ],
-   "fnet": -19338362723,
+   "fnet": -19357013244,
    "pct": -0.38,
    "fbuy_top": [
     {
@@ -15667,10 +15699,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7596.44,
+   "px": 7593.12,
    "prev": 7655.5,
-   "pct": -0.77,
-   "asof": "21:50",
+   "pct": -0.81,
+   "asof": "21:55",
    "live": true,
    "spark": [
     7599.57,
@@ -15689,17 +15721,18 @@
     7597.07,
     7599.11,
     7598.85,
-    7596.44
+    7594.95,
+    7593.12
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26060.92,
+   "px": 26047.74,
    "prev": 26333.03,
-   "pct": -1.03,
-   "asof": "21:50",
+   "pct": -1.08,
+   "asof": "21:55",
    "live": true,
    "spark": [
     26018.42,
@@ -15718,17 +15751,18 @@
     26043.63,
     26056.13,
     26066.74,
-    26060.92
+    26054.08,
+    26047.74
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52303.62,
+   "px": 52284.52,
    "prev": 52562.77,
-   "pct": -0.49,
-   "asof": "21:50",
+   "pct": -0.53,
+   "asof": "21:55",
    "live": true,
    "spark": [
     52421.7,
@@ -15747,7 +15781,8 @@
     52325.44,
     52332.98,
     52317.0,
-    52303.62
+    52294.22,
+    52284.52
    ]
   },
   {
@@ -16631,6 +16666,42 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T21:52:38+07:00",
+   "date": "2026-09-14",
+   "time": "21:52",
+   "src": "CNBC",
+   "t": "What Amodei's AI slowdown could mean for Anthropic's imminent IPO",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
+   "g": 1,
+   "t_ko": "Amodei의 AI 둔화 우려가 Anthropic의 임박한 상장에 미칠 영향",
+   "t_id": "Dampak Perlambatan AI Amodei bagi IPO Anthropic yang Kian Dekat"
+  },
+  {
+   "ts": "2026-09-14T21:52:01+07:00",
+   "date": "2026-09-14",
+   "time": "21:52",
+   "src": "Bloomberg",
+   "t": "Etihad Says Mideast Rivalry Shields Passengers From Higher Fares",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-14/etihad-says-mideast-rivalry-shields-passengers-from-higher-fares",
+   "g": 1,
+   "t_ko": "Etihad, 중동 경쟁 심화에도 승객 운임 인상 방어 입장",
+   "t_id": "Etihad Sebut Rivalitas Timur Tengah Lindungi Penumpang dari Lonjakan Tarif"
+  },
+  {
+   "ts": "2026-09-14T21:51:34+07:00",
+   "date": "2026-09-14",
+   "time": "21:51",
+   "src": "Bloomberg",
+   "t": "SpaceX Moves on Musk Comments; Oracle Drops on Ellison Plan",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-14/spacex-moves-on-musk-remark-oracle-down-on-ellison-plan-video",
+   "g": 1,
+   "t_ko": "Musk 발언에 SpaceX 움직임 포착 — Ellison 계획에 Oracle 하락",
+   "t_id": "SpaceX Bergerak Usai Komentar Musk; Oracle Anjlok Gegara Rencana Ellison"
+  },
+  {
    "ts": "2026-09-14T21:50:18+07:00",
    "date": "2026-09-14",
    "time": "21:50",
@@ -16641,6 +16712,18 @@
    "g": 1,
    "t_ko": "트럼프, 추가 AI 규제 불필요 입장 밝히며 Anthropic CEO 비판",
    "t_id": "Trump Sebut Tak Perlu Regulasi AI Tambahan, Kritik CEO Anthropic Dario Amodei"
+  },
+  {
+   "ts": "2026-09-14T21:48:00+07:00",
+   "date": "2026-09-14",
+   "time": "21:48",
+   "src": "Katadata",
+   "t": "Pertamina Klaim 80% Antrean SPBU di Makassar sudah Melandai",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/energi/6aa809206d6e5/pertamina-klaim-80-antrean-spbu-di-makassar-sudah-melandai",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/10/2026_09_10-13_25_00_3ffcc242-acec-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "Pertamina Klaim 80% Antrean SPBU di Makassar sudah Melandai",
+   "t_ko": "Pertamina, 마카사르 주유소 대기 80% 해소 주장"
   },
   {
    "ts": "2026-09-14T21:47:00+07:00",
@@ -16680,6 +16763,19 @@
    "t_id": "Bahlil Soroti Penyalahgunaan BBM Subsidi, Sebut Tangki Modifikasi Capai 1 Ton"
   },
   {
+   "ts": "2026-09-14T21:41:04+07:00",
+   "date": "2026-09-14",
+   "time": "21:41",
+   "src": "Yahoo Finance",
+   "t": "Dow Rethinks its $20 Billion Saudi Chemicals Bet",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/dow-rethinks-20-billion-saudi-144104986.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/b9dcc24f64ffa1078081700a7139e9b6.jpg",
+   "t_ko": "Dow, 200억 달러 사우디 화학 투자 계획 재검토",
+   "t_id": "Dow Tinjau Ulang Taruhan Bahan Kimia $20 Miliar di Arab Saudi"
+  },
+  {
    "ts": "2026-09-14T21:41:01+07:00",
    "date": "2026-09-14",
    "time": "21:41",
@@ -16704,18 +16800,6 @@
    "t_id": "Dolar Melonjak Tertinggi Sejak Juni Seiring Imbal Hasil US Treasury 10 Tahun Tembus 5%"
   },
   {
-   "ts": "2026-09-14T21:38:08+07:00",
-   "date": "2026-09-14",
-   "time": "21:38",
-   "src": "CNBC",
-   "t": "What Amodei's AI slowdown could mean for Anthropic's imminent IPO",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
-   "g": 1,
-   "t_ko": "Amodei의 AI 둔화 우려가 Anthropic의 임박한 상장에 미칠 영향",
-   "t_id": "Dampak Perlambatan AI Amodei bagi IPO Anthropic yang Kian Dekat"
-  },
-  {
    "ts": "2026-09-14T21:36:49+07:00",
    "date": "2026-09-14",
    "time": "21:36",
@@ -16726,6 +16810,19 @@
    "g": 1,
    "t_ko": "미국 대선이 다가오는 재정 위기 대응을 더 어렵게 만드는 이유",
    "t_id": "Alasan Pemilu Bisa Picu Krisis Fiskal Washington Berikutnya Kian Berat"
+  },
+  {
+   "ts": "2026-09-14T21:34:02+07:00",
+   "date": "2026-09-14",
+   "time": "21:34",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Dow Falls, Oil Jumps On Houthi Moves; Chip Stocks Dive After AI Warning (Live Coverage)",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-nvidia-nvda-stock-ai-warning/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/e0dacf529a71f3e5e8870a6f5b364581.jpg",
+   "t_ko": "뉴욕증시, 후티 사태로 유가 급등 속 다우 하락·반도체 급락",
+   "t_id": "Bursa Saham Hari Ini: Dow Turun, Minyak Loncat Imbas Aksi Houthi; Saham Chip Anjlok Usai Peringatan AI (Liputan Langsung)"
   },
   {
    "ts": "2026-09-14T21:33:54+07:00",
@@ -16823,6 +16920,19 @@
    "t_id": "Dua Kali Ganti Menkeu dalam 2 Tahun, Prabowo Samai Era Gus Dur Miliki 3 Bendahara Negara"
   },
   {
+   "ts": "2026-09-14T21:26:43+07:00",
+   "date": "2026-09-14",
+   "time": "21:26",
+   "src": "Yahoo Finance",
+   "t": "Hub Group warns of Nasdaq delisting notice; flags H1 operating loss",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/hub-group-warns-nasdaq-delisting-142643603.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/freightwaves_373/0951645f338dca1737c2441e3393ec11.jpg",
+   "t_ko": "Hub Group, 나스닥 상장폐지 통지 경고 — 상반기 영업손실 발생",
+   "t_id": "Hub Group Wanti-wanti Peringatan Delisting Nasdaq; Sinyal Rugi Operasional H1"
+  },
+  {
    "ts": "2026-09-14T21:25:00+07:00",
    "date": "2026-09-14",
    "time": "21:25",
@@ -16845,19 +16955,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260914171926-313.png",
    "t_ko": "Suahasil 재무장관 내정에 전문가 \"재정 적자 축소에만 치중 말아야\"",
    "t_id": "Suahasil Jadi Menkeu, Ekonom: Jangan Hanya Tekan Defisit"
-  },
-  {
-   "ts": "2026-09-14T21:24:44+07:00",
-   "date": "2026-09-14",
-   "time": "21:24",
-   "src": "Yahoo Finance",
-   "t": "Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models",
-   "tags": [],
-   "url": "https://finance.yahoo.com/technology/ai/articles/meta-alphabet-microsoft-rise-while-142444084.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/26ece3849447285a50eb87046828eec0",
-   "t_ko": "AI 책임자들의 첨단 모델 개발 속도 조절 요구에 Nvidia 하락 — Meta·Alphabet·Microsoft는 상승",
-   "t_id": "Meta, Alphabet, dan Microsoft Naik Sementara Nvidia Turun Usai Tiga Petinggi AI Serukan Perlambatan Model Frontier"
   },
   {
    "ts": "2026-09-14T21:22:00+07:00",
@@ -16883,58 +16980,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Ilustrasi_logo_Danantara_Indonesia-2026_09_04-10_57_07_43ea5dc45088cfdb506ef1ee0f746aa1_620x413_thumb.jpg",
    "t_ko": "Danantara, BEI 지분 40.12% 인수 계획 관련 입장 표명",
    "t_id": "Kata Danantara soal Rencana Kuasai 40,12% Saham BEI"
-  },
-  {
-   "ts": "2026-09-14T21:20:00+07:00",
-   "date": "2026-09-14",
-   "time": "21:20",
-   "src": "Yahoo Finance",
-   "t": "History Suggests That You'll Regret Not Buying This Struggling Tech Stock",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/history-suggests-youll-regret-not-142000925.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/1049378c615ee6d5646d8f936f7776fc.png",
-   "t_ko": "부진한 기술주 매수 시기임을 보여주는 과거 사례",
-   "t_id": "Sejarah Tunjukkan Anda Akan Menyesal Tidak Beli Saham Teknologi Lesu Ini"
-  },
-  {
-   "ts": "2026-09-14T21:19:33+07:00",
-   "date": "2026-09-14",
-   "time": "21:19",
-   "src": "Yahoo Finance",
-   "t": "Oracle Slides 5% as Layoff Costs Outweigh Ellison’s Canceled $7.5B Stock Sale; Nebius and CoreWeave Fall 5%",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-slides-5-layoff-costs-141933293.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/e1486861c59cdac511655ea7d59b1e4b.jpg",
-   "t_ko": "Oracle, 감원 비용 부담에 5% 하락 — Nebius·CoreWeave 동반 약세",
-   "t_id": "Oracle Anjlok 5% Akibat Beban PHK Lampaui Pembatalan Penjualan Saham $7,5 Miliar Ellison; Nebius dan CoreWeave Turun 5%"
-  },
-  {
-   "ts": "2026-09-14T21:19:03+07:00",
-   "date": "2026-09-14",
-   "time": "21:19",
-   "src": "CNA",
-   "t": "Tech stocks slide on AI slowdown talks",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/tech-stocks-slide-ai-slowdown-talks-6383826",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--PTpMZIe3--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T141903Z_1_LYNXMPEM8D16S_RTROPTP_3_USA-CHINA-AI.JPG?itok=vgL7PXGX",
-   "t_ko": "AI 성장세 둔화 우려에 기술주 하락",
-   "t_id": "Saham Teknologi Anjlok di Tengah Isu Perlambatan AI"
-  },
-  {
-   "ts": "2026-09-14T21:18:54+07:00",
-   "date": "2026-09-14",
-   "time": "21:18",
-   "src": "FT",
-   "t": "Ten-year Treasury yield hits 5% for first time since 2023",
-   "tags": [],
-   "url": "https://www.ft.com/content/06cb850d-089a-4318-88d7-a410e9766b89?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F640d3633-43b5-4010-b23b-a6557057990a.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "미국 10년물 국채금리, 2023년 이후 처음 5% 돌파",
-   "t_id": "Imbal Hasil Obligasi 10 Tahun AS Tembus 5% untuk Pertama Kalinya Sejak 2023"
   },
   {
    "ts": "2026-09-14T21:05:00+07:00",
@@ -17053,18 +17098,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/09/22/IHSG_ditutup_naik_053_atau_4269_poin_ke_level_8051_Foto_Katadata-2025_09_22-23_27_25_4c1fa90f7e0f7b9e231ab52eed5bcfe2_620x413_thumb.jpg",
    "t_ko": "BEI, 내일부터 공매도 재개",
    "t_id": "BEI Kembali Berlakukan Short Selling mulai Besok"
-  },
-  {
-   "ts": "2026-09-14T20:42:09+07:00",
-   "date": "2026-09-14",
-   "time": "20:42",
-   "src": "Jawa Pos",
-   "t": "Kemenkeu Tawarkan Skema Pinjaman PT SMI untuk Pemda di Tengah Penyesuaian DBH",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609140282/kemenkeu-tawarkan-skema-pinjaman-pt-smi-untuk-pemda-di-tengah-penyesuaian-dbh",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/menteri-keuangan-purbaya-yudhi-sadewa-bersiap-menyampaikan-tanggapan-pemerintah-pada-rapat-paripurna-ke-3-masa-persidangan-i-tahun-sidang-2026-2027-di-kompleks-parlemen-senayan-jakarta-kamis-2782026-salman-toyibijawa-pos-CMHxJ.webp",
-   "t_ko": "재무부, DBH 조정 속 지자체 대상 PT SMI 대출 스킴 제안",
-   "t_id": "Kemenkeu Tawarkan Skema Pinjaman PT SMI untuk Pemda di Tengah Penyesuaian DBH"
   }
  ],
  "kisi_news": [
@@ -17271,9 +17304,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.61",
-   "d": 0.29,
-   "ytd": 1.36,
+   "v": "99.59",
+   "d": 0.27,
+   "ytd": 1.33,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17283,9 +17316,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.89",
-   "d": 0.62,
-   "ytd": 80.93,
+   "v": "103.64",
+   "d": 0.38,
+   "ytd": 80.49,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17295,9 +17328,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,312.4",
-   "d": -1.33,
-   "ytd": -0.31,
+   "v": "4,317.5",
+   "d": -1.21,
+   "ytd": -0.19,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -20217,7 +20250,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-14 21:48",
-  "pc_age_min": 4,
+  "pc_age_min": 10,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -29331,6 +29364,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-14 21:45"
+  "announcements": "2026-09-14 21:52"
  }
 }
