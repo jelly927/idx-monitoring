@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 21:37",
+ "updated": "2026-09-14 21:45",
  "delay_min": 15,
  "fx_basis": "13.08 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,348 · 20:55 Yahoo",
- "idr_per_krw": 13.0791,
+ "idr_per_krw": 13.0821,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 21:30",
+   "asof": "investing.com 21:43",
    "unit": "bp"
   }
  ],
@@ -15699,10 +15699,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7599.91,
+   "px": 7595.39,
    "prev": 7655.5,
-   "pct": -0.73,
-   "asof": "21:35",
+   "pct": -0.79,
+   "asof": "21:40",
    "live": true,
    "spark": [
     7599.57,
@@ -15718,17 +15718,18 @@
     7601.9,
     7601.05,
     7603.69,
-    7599.91
+    7597.07,
+    7595.39
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26058.29,
+   "px": 26035.61,
    "prev": 26333.03,
-   "pct": -1.04,
-   "asof": "21:35",
+   "pct": -1.13,
+   "asof": "21:40",
    "live": true,
    "spark": [
     26018.42,
@@ -15744,17 +15745,18 @@
     26065.82,
     26065.6,
     26075.65,
-    26058.29
+    26043.63,
+    26035.61
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52343.6,
+   "px": 52309.56,
    "prev": 52562.77,
-   "pct": -0.42,
-   "asof": "21:35",
+   "pct": -0.48,
+   "asof": "21:40",
    "live": true,
    "spark": [
     52421.7,
@@ -15770,7 +15772,8 @@
     52352.74,
     52345.99,
     52363.69,
-    52343.6
+    52325.44,
+    52309.56
    ]
   },
   {
@@ -16654,6 +16657,42 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T21:41:01+07:00",
+   "date": "2026-09-14",
+   "time": "21:41",
+   "src": "Jawa Pos",
+   "t": "Nggak Bisa Sekadar Jualan, Ini Tantangan UMKM saat Konsumen Makin Selektif",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi-digital/2609140474/nggak-bisa-sekadar-jualan-ini-tantangan-umkm-saat-konsumen-makin-selektif",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/perwakilan-mitra-merchant-dan-grab-dalam-acara-teras-perwira-spesial-ulang-tahun-2026-di-jakarta-istimewa-1w7uu.webp",
+   "t_id": "Nggak Bisa Sekadar Jualan, Ini Tantangan UMKM saat Konsumen Makin Selektif",
+   "t_ko": "UMKM, 소비재 선택 기준 까다로워져 판매 전략 재편 시급"
+  },
+  {
+   "ts": "2026-09-14T21:38:08+07:00",
+   "date": "2026-09-14",
+   "time": "21:38",
+   "src": "CNBC",
+   "t": "What Amodei's AI slowdown could mean for Anthropic's imminent IPO",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
+   "g": 1,
+   "t_ko": "Amodei의 AI 둔화 우려가 Anthropic의 임박한 상장에 미칠 영향",
+   "t_id": "Dampak Perlambatan AI Amodei bagi IPO Anthropic yang Kian Dekat"
+  },
+  {
+   "ts": "2026-09-14T21:36:49+07:00",
+   "date": "2026-09-14",
+   "time": "21:36",
+   "src": "CNBC",
+   "t": "Why the election could make Washington's looming next fiscal crisis harder",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/14/election-debt-limit-fiscal-crisis-congress.html",
+   "g": 1,
+   "t_ko": "미국 대선이 다가오는 재정 위기 대응을 더 어렵게 만드는 이유",
+   "t_id": "Alasan Pemilu Bisa Picu Krisis Fiskal Washington Berikutnya Kian Berat"
+  },
+  {
    "ts": "2026-09-14T21:33:54+07:00",
    "date": "2026-09-14",
    "time": "21:33",
@@ -16664,6 +16703,17 @@
    "g": 1,
    "t_ko": "연준 결정 앞두고 10년물 국채금리 2023년 이후 처음 5% 돌파",
    "t_id": "Imbal Hasil US Treasury 10 Tahun Tembus 5% untuk Pertama Kalinya Sejak 2023 Saat Trader Antisipasi Keputusan The Fed Pekan Ini"
+  },
+  {
+   "ts": "2026-09-14T21:32:00+07:00",
+   "date": "2026-09-14",
+   "time": "21:32",
+   "src": "Media Indonesia",
+   "t": "Kritik Wacana Dewas Perampasan Aset, Pakar Hukum: Ngabisin APBN!",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/933350/kritik-wacana-dewas-perampasan-aset-pakar-hukum-ngabisin-apbn",
+   "t_ko": "자산환수위원회 신설 추진에 법조계 예산 낭비 지적",
+   "t_id": "Kritik Wacana Dewas Perampasan Aset, Pakar Hukum: Ngabisin APBN!"
   },
   {
    "ts": "2026-09-14T21:31:50+07:00",
@@ -16686,8 +16736,8 @@
    "tags": [],
    "url": "https://finance.detik.com/energi/d-8662895/pertamina-serahkan-16-korban-kapal-virgo-ke-basarnas",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/tim-sar-evakuasi-15-penumpang-selamat-dan-1-jenazah-kmp-virgo-transport-8-1789352754006_169.jpeg?w=360&q=90",
-   "t_id": "Pertamina Serahkan 16 Korban Kapal Virgo ke Basarnas",
-   "t_ko": "Pertamina, Virgo호 사고 피해자 16명 Basarnas에 인계"
+   "t_ko": "Pertamina, Virgo호 사고 피해자 16명 Basarnas에 인계",
+   "t_id": "Pertamina Serahkan 16 Korban Kapal Virgo ke Basarnas"
   },
   {
    "ts": "2026-09-14T21:31:02+07:00",
@@ -16727,6 +16777,17 @@
    "t_id": "Imbal Hasil 10 Tahun AS Tembus 5% di Tengah Kekhawatiran Inflasi dan Pasokan"
   },
   {
+   "ts": "2026-09-14T21:29:00+07:00",
+   "date": "2026-09-14",
+   "time": "21:29",
+   "src": "Media Indonesia",
+   "t": "Pilihan Pialang Makin Banyak, Kualitas Layanan Jadi Pembeda",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/933351/pilihan-pialang-makin-banyak-kualitas-layanan-jadi-pembeda",
+   "t_id": "Pilihan Pialang Makin Banyak, Kualitas Layanan Jadi Pembeda",
+   "t_ko": "증권사 경쟁 심화로 서비스 품질이 핵심 경쟁력 부상"
+  },
+  {
    "ts": "2026-09-14T21:28:43+07:00",
    "date": "2026-09-14",
    "time": "21:28",
@@ -16761,6 +16822,19 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260914171926-313.png",
    "t_ko": "Suahasil 재무장관 내정에 전문가 \"재정 적자 축소에만 치중 말아야\"",
    "t_id": "Suahasil Jadi Menkeu, Ekonom: Jangan Hanya Tekan Defisit"
+  },
+  {
+   "ts": "2026-09-14T21:24:44+07:00",
+   "date": "2026-09-14",
+   "time": "21:24",
+   "src": "Yahoo Finance",
+   "t": "Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models",
+   "tags": [],
+   "url": "https://finance.yahoo.com/technology/ai/articles/meta-alphabet-microsoft-rise-while-142444084.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/26ece3849447285a50eb87046828eec0",
+   "t_ko": "AI 책임자들의 첨단 모델 개발 속도 조절 요구에 Nvidia 하락 — Meta·Alphabet·Microsoft는 상승",
+   "t_id": "Meta, Alphabet, dan Microsoft Naik Sementara Nvidia Turun Usai Tiga Petinggi AI Serukan Perlambatan Model Frontier"
   },
   {
    "ts": "2026-09-14T21:22:00+07:00",
@@ -16801,16 +16875,17 @@
    "t_id": "Sejarah Tunjukkan Anda Akan Menyesal Tidak Beli Saham Teknologi Lesu Ini"
   },
   {
-   "ts": "2026-09-14T21:19:06+07:00",
+   "ts": "2026-09-14T21:19:33+07:00",
    "date": "2026-09-14",
    "time": "21:19",
-   "src": "CNBC",
-   "t": "What Amodei's AI slowdown could mean for Anthropic's imminent IPO",
+   "src": "Yahoo Finance",
+   "t": "Oracle Slides 5% as Layoff Costs Outweigh Ellison’s Canceled $7.5B Stock Sale; Nebius and CoreWeave Fall 5%",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/oracle-slides-5-layoff-costs-141933293.html",
    "g": 1,
-   "t_ko": "Amodei의 AI 둔화 우려가 Anthropic의 임박한 상장에 미칠 영향",
-   "t_id": "Dampak Perlambatan AI Amodei bagi IPO Anthropic yang Kian Dekat"
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/e1486861c59cdac511655ea7d59b1e4b.jpg",
+   "t_ko": "Oracle, 감원 비용 부담에 5% 하락 — Nebius·CoreWeave 동반 약세",
+   "t_id": "Oracle Anjlok 5% Akibat Beban PHK Lampaui Pembatalan Penjualan Saham $7,5 Miliar Ellison; Nebius dan CoreWeave Turun 5%"
   },
   {
    "ts": "2026-09-14T21:19:03+07:00",
@@ -16837,6 +16912,18 @@
    "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F640d3633-43b5-4010-b23b-a6557057990a.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
    "t_ko": "미국 10년물 국채금리, 2023년 이후 처음 5% 돌파",
    "t_id": "Imbal Hasil Obligasi 10 Tahun AS Tembus 5% untuk Pertama Kalinya Sejak 2023"
+  },
+  {
+   "ts": "2026-09-14T21:08:40+07:00",
+   "date": "2026-09-14",
+   "time": "21:08",
+   "src": "Reuters",
+   "t": "Unwanted in the US, old oil equipment finds a new home in Venezuela",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVmgtV0piZDBLUGtOM21nQ18yRkdqUUFpMzlKWXVESjBFWFVZT2FEcFFaYXNLRGtjY0RsaGZreUpUN2dsSGdobVladGVsUklvbWxzS2xqSk15SE83MFJJYjlza2s0WWpRX2Q3eFJreWFISjZ0Sl9lM20wcUduQll3VE9OMWRPOEEtQ1ktbk5KbEUtdzcteUFlR1hEV2lsbEZYNUNVZkpPaS1tZw?oc=5",
+   "g": 1,
+   "t_ko": "미국서 퇴출된 노후 시추 장비 베네수엘라로 이전",
+   "t_id": "Tak Diinginkan di AS, Peralatan Minyak Tua Temukan Pasar Baru di Venezuela"
   },
   {
    "ts": "2026-09-14T21:06:31+07:00",
@@ -16875,32 +16962,6 @@
    "t_id": "Dari Ruang Belajar ke Ekosistem Bisnis, Solopreneur Kini Dibidik untuk Naik Kelas"
   },
   {
-   "ts": "2026-09-14T21:04:53+07:00",
-   "date": "2026-09-14",
-   "time": "21:04",
-   "src": "CNA",
-   "t": "Dollar gains as Middle East conflict lifts oil, Fed hike looms",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/dollar-gains-middle-east-conflict-lifts-oil-fed-hike-looms-6382181",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--XpH02uFF--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T115448Z_1_LYNXMPEM8D0XU_RTROPTP_3_USA-BONDS-BUYBACKS.JPG?itok=-kyBb87a",
-   "t_ko": "중동 갈등 유가 상승·연준 금리 인상 우려에 달러화 강세",
-   "t_id": "Dolar Menguat Seiring Konflik Timur Tengah Kerek Minyak, Bayang-bayang Kenaikan Suku Bunga The Fed"
-  },
-  {
-   "ts": "2026-09-14T21:03:00+07:00",
-   "date": "2026-09-14",
-   "time": "21:03",
-   "src": "Yahoo Finance",
-   "t": "Kalshi To Offer U.S. Stock And Commodities Trading",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/options/articles/kalshi-offer-u-stock-commodities-140300562.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/cryptoprowl_304/761d6c6b8042ea7499ed54a2c8f86917.jpg",
-   "t_ko": "Kalshi, 미국 주식 및 원자재 거래 서비스 도입 예정",
-   "t_id": "Kalshi Akan Sediakan Perdagangan Saham dan Komoditas AS"
-  },
-  {
    "ts": "2026-09-14T21:03:00+07:00",
    "date": "2026-09-14",
    "time": "21:03",
@@ -16923,19 +16984,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/ilustrasiutang-petugas-mendorong-troley-yang-mengangkut-tumpukan-uang_200929224900-449.jpg",
    "t_ko": "단기 외채 만기 집중 리스크 경고",
    "t_id": "Ekonom Ingatkan Risiko Jatuh Tempo Utang Luar Negeri Makin Pendek"
-  },
-  {
-   "ts": "2026-09-14T21:01:34+07:00",
-   "date": "2026-09-14",
-   "time": "21:01",
-   "src": "Yahoo Finance",
-   "t": "Tech stocks today: AI warnings send shock through chip stocks",
-   "tags": [],
-   "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-ai-warnings-send-shock-through-chip-stocks-140134624.html",
-   "g": 1,
-   "img": "https://s.yimg.com/uu/api/res/1.2/8wa5sKEW0eDYzHts4LoPUw--~B/aD00OTA5O3c9NzM2MzthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-09/dafed0d2-c6d2-44f2-8409-b51b9f5276d1",
-   "t_ko": "기술주 동향 — AI 경고에 반도체주 충격 확산",
-   "t_id": "Saham Teknologi Hari Ini: Peringatan AI Guncang Saham Semikonduktor"
   },
   {
    "ts": "2026-09-14T21:00:10+07:00",
@@ -16972,18 +17020,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/pesan-suahasil-nazara-usai-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan-1789383969594_169.jpeg?w=360&q=90",
    "t_ko": "Suahasil Nazara 재무차관, APBN 적자 3% 미만 유지 전망",
    "t_id": "Menkeu Suahasil: Defisit APBN Akan Tetap di Bawah 3%"
-  },
-  {
-   "ts": "2026-09-14T20:56:25+07:00",
-   "date": "2026-09-14",
-   "time": "20:56",
-   "src": "CNBC",
-   "t": "Novo Nordisk rebrands to 'Novo,' unveils corporate changes as it fights for obesity market share",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/novo-nordisk-rebrands-to-novo-ceo-mike-doustdar.html",
-   "g": 1,
-   "t_ko": "Novo Nordisk, 'Novo'로 사명 변경 및 비만약 시장 대응 조직 개편",
-   "t_id": "Novo Nordisk Rebranding Jadi 'Novo', Rilis Perubahan Korporat Demi Kuasai Pasar Obesitas"
   },
   {
    "ts": "2026-09-14T20:51:00+07:00",
@@ -17055,42 +17091,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Ilustrasi_logo_Danantara_dan_gedung_Danantara_Indonesia-2026_09_04-21_11_03_39d179be43b25b5ccf63e8916c549ea6_620x413_thumb.jpg",
    "t_ko": "Danantara, BEI 지분 40.12% 인수에 Rp5,170억 투입 시나리오 검토",
    "t_id": "Skenario Danantara Rogoh Rp 517 Miliar untuk Beli 40,12% Saham BEI"
-  },
-  {
-   "ts": "2026-09-14T20:25:00+07:00",
-   "date": "2026-09-14",
-   "time": "20:25",
-   "src": "Detik",
-   "t": "Penyaluran KUR Tembus Rp 219,62 Triliun, Diterima 3,41 Juta Debitur",
-   "tags": [],
-   "url": "https://finance.detik.com/moneter/d-8662772/penyaluran-kur-tembus-rp-219-62-triliun-diterima-3-41-juta-debitur",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2022/04/23/rupiah_169.jpeg?w=360&q=90",
-   "t_ko": "KUR 대출 집행액 Rp219.62조 돌파 — 수혜 차주 341만 명",
-   "t_id": "Penyaluran KUR Tembus Rp 219,62 Triliun, Diterima 3,41 Juta Debitur"
-  },
-  {
-   "ts": "2026-09-14T20:24:11+07:00",
-   "date": "2026-09-14",
-   "time": "20:24",
-   "src": "Detik",
-   "t": "Gibran Ucapkan Selamat Suahasil Jadi Menkeu: Figur Tepat Kelola APBN",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8662837/gibran-ucapkan-selamat-suahasil-jadi-menkeu-figur-tepat-kelola-apbn",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/15/wapres-gibran-kukuhkan-paskibraka-2026-1786788752579_169.jpeg?w=360&q=90",
-   "t_ko": "Gibran, Suahasil 재무장관 취임 축하 — 국가예산 관리 적임자",
-   "t_id": "Gibran Ucapkan Selamat Suahasil Jadi Menkeu: Figur Tepat Kelola APBN"
-  },
-  {
-   "ts": "2026-09-14T20:16:39+07:00",
-   "date": "2026-09-14",
-   "time": "20:16",
-   "src": "Jawa Pos",
-   "t": "Purbaya Diganti, CELIOS Soroti Masalah Internal hingga Gaya Komunikasi Overconfidence",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609140443/purbaya-diganti-celios-soroti-masalah-internal-hingga-gaya-komunikasi-overconfidence",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/menteri-keuangan-purbaya-yudhi-sadewa-usai-menyampaikan-tanggapan-pemerintah-pada-rapat-paripurna-ke-3-masa-persidangan-i-tahun-sidang-2026-2027-di-kompleks-parlemen-senayan-jakarta-kamis-2782026-salman-toyibijawa-pos-MNkL2.webp",
-   "t_ko": "Purbaya 교체 — CELIOS, 내부 갈등 및 과신 톤 소통 방식 지적",
-   "t_id": "Purbaya Diganti, CELIOS Soroti Masalah Internal hingga Gaya Komunikasi Overconfidence"
   }
  ],
  "kisi_news": [
@@ -17274,9 +17274,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "5.004%",
-   "d": 0.58,
-   "ytd": 20.2,
+   "v": "5.008%",
+   "d": 0.66,
+   "ytd": 20.3,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17297,9 +17297,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.69",
-   "d": 0.37,
-   "ytd": 1.43,
+   "v": "99.64",
+   "d": 0.32,
+   "ytd": 1.39,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17309,9 +17309,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "104.21",
-   "d": 0.93,
-   "ytd": 81.49,
+   "v": "103.84",
+   "d": 0.57,
+   "ytd": 80.84,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17321,9 +17321,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,305.7",
-   "d": -1.48,
-   "ytd": -0.46,
+   "v": "4,310.3",
+   "d": -1.38,
+   "ytd": -0.35,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -19934,7 +19934,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-14 21:32",
-  "pc_age_min": 5,
+  "pc_age_min": 13,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -29048,6 +29048,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-14 21:29"
+  "announcements": "2026-09-14 21:37"
  }
 }
