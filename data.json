@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 22:13",
+ "updated": "2026-09-14 22:22",
  "delay_min": 15,
- "fx_basis": "13.09 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,346 · 20:55 Yahoo",
- "idr_per_krw": 13.0944,
+ "fx_basis": "13.09 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,347 · 20:55 Yahoo",
+ "idr_per_krw": 13.0888,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 22:12",
+   "asof": "investing.com 22:21",
    "unit": "bp"
   }
  ],
@@ -340,7 +340,7 @@
   "value_idr": 16438170377728.004,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 22:04",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 22:18",
   "rank_asof": null,
   "rank_date": "2026-09-14",
   "adv": 231,
@@ -15699,10 +15699,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7601.15,
+   "px": 7603.17,
    "prev": 7655.5,
-   "pct": -0.71,
-   "asof": "22:10",
+   "pct": -0.68,
+   "asof": "22:20",
    "live": true,
    "spark": [
     7599.57,
@@ -15725,17 +15725,19 @@
     7598.64,
     7594.84,
     7604.38,
-    7601.15
+    7599.53,
+    7603.95,
+    7603.17
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26099.26,
+   "px": 26114.72,
    "prev": 26333.03,
-   "pct": -0.89,
-   "asof": "22:10",
+   "pct": -0.83,
+   "asof": "22:20",
    "live": true,
    "spark": [
     26018.42,
@@ -15758,17 +15760,19 @@
     26071.36,
     26059.09,
     26110.55,
-    26099.26
+    26095.79,
+    26121.47,
+    26114.72
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52343.12,
+   "px": 52344.74,
    "prev": 52562.77,
-   "pct": -0.42,
-   "asof": "22:10",
+   "pct": -0.41,
+   "asof": "22:20",
    "live": true,
    "spark": [
     52421.7,
@@ -15791,7 +15795,9 @@
     52314.38,
     52289.71,
     52372.07,
-    52343.12
+    52329.2,
+    52348.61,
+    52344.74
    ]
   },
   {
@@ -16116,8 +16122,8 @@
    ],
    "url": "https://www.medcom.id/properti/news-properti/yKXeoLON-summarecon-kembangkan-hunian-dan-area-komersial-di-bogor",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/14/1842042/WEhwIJB7GA.jpeg?w=720",
-   "t_id": "Summarecon Kembangkan Hunian dan Area Komersial di Bogor",
-   "t_ko": "Summarecon, 보고르 주거·상업 복합단지 개발"
+   "t_ko": "Summarecon, 보고르 주거·상업 복합단지 개발",
+   "t_id": "Summarecon Kembangkan Hunian dan Area Komersial di Bogor"
   },
   {
    "ts": "2026-09-14T20:00:00+07:00",
@@ -16689,9 +16695,21 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-14T22:09:14+07:00",
+   "ts": "2026-09-14T22:19:13+07:00",
    "date": "2026-09-14",
-   "time": "22:09",
+   "time": "22:19",
+   "src": "Liputan6",
+   "t": "Saham Teknologi Terdampak Sentimen Perlambatan Sektor AI",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8291700/saham-teknologi-terdampak-sentimen-perlambatan-sektor-ai",
+   "img": "https://cdn0-production-images-kly.akamaized.net/XWnV71NpXyjZsyeaeEsK0EQjgdE=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3046088/original/077180100_1581323846-20200210-Pasar-Saham-di-Asia-Turun-Imbas-Wabah-Virus-Corona-5.jpg",
+   "t_id": "Saham Teknologi Terdampak Sentimen Perlambatan Sektor AI",
+   "t_ko": "AI 섹터 성장 둔화 우려에 기술주 심리 악화"
+  },
+  {
+   "ts": "2026-09-14T22:13:50+07:00",
+   "date": "2026-09-14",
+   "time": "22:13",
    "src": "CNBC",
    "t": "Trump says no need for more AI regulation, slams Anthropic CEO Dario Amodei",
    "tags": [],
@@ -16699,6 +16717,45 @@
    "g": 1,
    "t_ko": "트럼프, 추가 AI 규제 불필요 입장 밝히며 Anthropic CEO 비판",
    "t_id": "Trump Sebut Tak Perlu Regulasi AI Tambahan, Kritik CEO Anthropic Dario Amodei"
+  },
+  {
+   "ts": "2026-09-14T22:11:08+07:00",
+   "date": "2026-09-14",
+   "time": "22:11",
+   "src": "CNA",
+   "t": "Palantir, Nvidia curb AI model use over data fears, The Information reports",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/palantir-nvidia-curb-ai-model-use-over-data-fears-information-reports-6383886",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--i8L4hMMM--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T151108Z_1_LYNXMPEM8D19I_RTROPTP_3_TECH-AI.JPG?itok=JGUfzml3",
+   "t_ko": "Palantir·Nvidia, 데이터 유출 우려로 AI 모델 활용 제한",
+   "t_id": "Palantir, Nvidia Batasi Penggunaan Model AI di Tengah Kekhawatiran Data, Lapor The Information"
+  },
+  {
+   "ts": "2026-09-14T22:08:07+07:00",
+   "date": "2026-09-14",
+   "time": "22:08",
+   "src": "Yahoo Finance",
+   "t": "Cybersecurity Stocks Surge as AI Safety Warnings Spark Security Bid: CrowdStrike and Zscaler Jump 12%, Palo Alto Rallies 11%",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cybersecurity-stocks-surge-ai-safety-150807132.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/dcef7b27886e8a7d5d7e9111aa48beb7.jpg",
+   "t_ko": "AI 안전성 경고에 사이버보안주 급등 — CrowdStrike·Zscaler 12%·Palo Alto 11% 상승",
+   "t_id": "Saham Keamanan Siber Melonjak Seiring Peringatan Keamanan AI Picu Permintaan: CrowdStrike dan Zscaler Lompat 12%, Palo Alto Melesat 11%"
+  },
+  {
+   "ts": "2026-09-14T22:03:47+07:00",
+   "date": "2026-09-14",
+   "time": "22:03",
+   "src": "Yahoo Finance",
+   "t": "Vale S.A. (VALE) Deepens China Ties with Potential Yuan Bond Debut",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/currencies/articles/vale-vale-deepens-china-ties-150347789.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/138281667b035ca43f0f617eac1e4feb.jpg",
+   "t_ko": "Vale S.A., 위안화 채권 발행 추진하며 중국 협력 강화",
+   "t_id": "Vale S.A. (VALE) Perkuat Hubungan Tiongkok Lewat Potensi Penerbitan Obliguasi Yuan"
   },
   {
    "ts": "2026-09-14T22:02:00+07:00",
@@ -16709,8 +16766,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tlcyza483/ekonomi-ri-diprediksi-tumbuh-faktor-investasi-hingga-belanja-jadi-pemicu",
    "img": "https://static.republika.co.id/uploads/images/detailnews/pertumbuhan-ekonomi-ilustrasi-_140610125343-541.jpg",
-   "t_id": "Ekonomi RI Diprediksi Tumbuh, Faktor Investasi Hingga Belanja Jadi Pemicu",
-   "t_ko": "인도네시아 경제 성장 전망 — 투자·소비가 견인차"
+   "t_ko": "인도네시아 경제 성장 전망 — 투자·소비가 견인차",
+   "t_id": "Ekonomi RI Diprediksi Tumbuh, Faktor Investasi Hingga Belanja Jadi Pemicu"
   },
   {
    "ts": "2026-09-14T22:01:18+07:00",
@@ -16732,21 +16789,8 @@
    "t": "1.400 UMKM Dibekali Strategi Digital dan Teknologi AI",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/933362/1400-umkm-dibekali-strategi-digital-dan-teknologi-ai",
-   "t_id": "1.400 UMKM Dibekali Strategi Digital dan Teknologi AI",
-   "t_ko": "중소기업 1,400개사 대상 디지털·AI 전략 교육 실시"
-  },
-  {
-   "ts": "2026-09-14T22:00:35+07:00",
-   "date": "2026-09-14",
-   "time": "22:00",
-   "src": "Yahoo Finance",
-   "t": "Forget Nvidia. Apple Could Be the AI Stock to Watch Next.",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/forget-nvidia-apple-could-ai-150035999.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/d3c769f87a0d89177789f0f03bdf86a8.jpg",
-   "t_ko": "Nvidia 주목 해제 — 다음 AI 주는 Apple 전망",
-   "t_id": "Lupakan Nvidia, Apple Bisa Jadi Saham AI yang Layak Dicermati"
+   "t_ko": "중소기업 1,400개사 대상 디지털·AI 전략 교육 실시",
+   "t_id": "1.400 UMKM Dibekali Strategi Digital dan Teknologi AI"
   },
   {
    "ts": "2026-09-14T22:00:26+07:00",
@@ -16759,19 +16803,6 @@
    "g": 1,
    "t_ko": "미국 10년물 국채금리, 2023년 이후 최고치 경신",
    "t_id": "Imbal Hasil US Treasury 10 Tahun Sentuh Level Tertinggi Sejak 2023"
-  },
-  {
-   "ts": "2026-09-14T22:00:16+07:00",
-   "date": "2026-09-14",
-   "time": "22:00",
-   "src": "Yahoo Finance",
-   "t": "Diesel Just Passed $6 a Gallon for the First Time Ever. Bond Investors Should Be Paying Attention.",
-   "tags": [],
-   "url": "https://finance.yahoo.com/energy/articles/diesel-just-passed-6-gallon-150016428.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/f8b8b39ea9e1f7aac497d2e165914c97.png",
-   "t_ko": "경유 가격 사상 첫 갤런당 6달러 돌파 — 채권 투자자 주목",
-   "t_id": "Solar Tembus $6 per Galon untuk Pertama Kalinya, Investor Obligasi Wajib Waspada"
   },
   {
    "ts": "2026-09-14T21:55:33+07:00",
@@ -16882,8 +16913,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8662908/putra-purbaya-buka-suara-bapak-bisa-tidur-nyenyak-balik-jadi-trader",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/09/menteri-keuangan-purbaya-yudhi-sadewa-1788961453071_169.jpeg?w=360&q=90",
-   "t_id": "Putra Purbaya Buka Suara: Bapak Bisa Tidur Nyenyak, Balik Jadi Trader",
-   "t_ko": "Putra Purbaya 공식 입장 — 트레이더 복귀 선언"
+   "t_ko": "Putra Purbaya 공식 입장 — 트레이더 복귀 선언",
+   "t_id": "Putra Purbaya Buka Suara: Bapak Bisa Tidur Nyenyak, Balik Jadi Trader"
   },
   {
    "ts": "2026-09-14T21:48:00+07:00",
@@ -16933,19 +16964,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/064215300-1789042991-830-556.jpg",
    "t_ko": "Bahlil, 보조금 연료 부정사용 지적… 개조 탱크 용량 1톤 달해",
    "t_id": "Bahlil Soroti Penyalahgunaan BBM Subsidi, Sebut Tangki Modifikasi Capai 1 Ton"
-  },
-  {
-   "ts": "2026-09-14T21:43:55+07:00",
-   "date": "2026-09-14",
-   "time": "21:43",
-   "src": "Yahoo Finance",
-   "t": "Definium, Up 190% This Year, Succeeds Again With Synthetic LSD; Shares Fly",
-   "tags": [],
-   "url": "https://www.investors.com/news/technology/definium-therapeutics-synthetic-lsd-generalized-anxiety-disorder/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/8d9185f4c4de33ab43f0a78ebc37611f.jpg",
-   "t_ko": "올해 190% 급등한 Definium, 합성 LSD로 주가 추가 상승",
-   "t_id": "Definium, Melesat 190% Tahun Ini, Sukses Lagi Lewat LSD Sintetis; Saham Terbang"
   },
   {
    "ts": "2026-09-14T21:41:01+07:00",
@@ -17111,17 +17129,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/pesan-suahasil-nazara-usai-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan-1789383969594_169.jpeg?w=360&q=90",
    "t_ko": "Suahasil Nazara 재무차관, APBN 적자 3% 미만 유지 전망",
    "t_id": "Menkeu Suahasil: Defisit APBN Akan Tetap di Bawah 3%"
-  },
-  {
-   "ts": "2026-09-14T20:51:00+07:00",
-   "date": "2026-09-14",
-   "time": "20:51",
-   "src": "Media Indonesia",
-   "t": "Ekonom: Risiko Jatuh Tempo Utang Luar Negeri makin Pendek",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/933340/ekonom-risiko-jatuh-tempo-utang-luar-negeri-makin-pendek",
-   "t_ko": "단기 외채 만기 집중 리스크에 전문가 경고",
-   "t_id": "Ekonom: Risiko Jatuh Tempo Utang Luar Negeri Makin Pendek"
   }
  ],
  "kisi_news": [
@@ -17305,9 +17312,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.989%",
-   "d": 0.28,
-   "ytd": 19.84,
+   "v": "4.979%",
+   "d": 0.08,
+   "ytd": 19.6,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17328,9 +17335,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.62",
-   "d": 0.3,
-   "ytd": 1.37,
+   "v": "99.57",
+   "d": 0.25,
+   "ytd": 1.31,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17340,9 +17347,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.37",
-   "d": 0.12,
-   "ytd": 80.02,
+   "v": "102.68",
+   "d": -0.55,
+   "ytd": 78.82,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17352,9 +17359,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,318.0",
-   "d": -1.2,
-   "ytd": -0.18,
+   "v": "4,321.2",
+   "d": -1.13,
+   "ytd": -0.1,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17376,9 +17383,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,300",
-   "d": -0.8,
-   "ytd": -2.29,
+   "v": "16,292",
+   "d": -0.85,
+   "ytd": -2.34,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -19964,8 +19971,8 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-14 22:04",
-  "pc_age_min": 9,
+  "idx_from_pc": "2026-09-14 22:18",
+  "pc_age_min": 4,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -29079,6 +29086,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-14 21:58"
+  "announcements": "2026-09-14 22:13"
  }
 }
