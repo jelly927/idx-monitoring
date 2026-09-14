@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-14 21:06",
+ "updated": "2026-09-14 21:10",
  "delay_min": 15,
  "fx_basis": "13.07 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,349 · 20:55 Yahoo",
- "idr_per_krw": 13.067,
+ "idr_per_krw": 13.0715,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 21:05",
+   "asof": "investing.com 20:55",
    "unit": "bp"
   }
  ],
@@ -337,15 +337,15 @@
   "prev": 6541.38,
   "ytd": -24.42,
   "m1": 2.07,
-  "value_idr": 16437929520561.336,
+  "value_idr": 16438170377728.004,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-14 21:00",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-14 21:00",
   "rank_asof": null,
   "rank_date": "2026-09-14",
   "adv": 231,
   "dec": 456,
-  "unch": 145,
+  "unch": 146,
   "foreign_net_idr": -728667450249.4258,
   "foreign_buy": 3991314699946.703,
   "foreign_sell": 4719982150196.129,
@@ -9975,6 +9975,22 @@
    "live": 0
   },
   {
+   "t": "BISI",
+   "n": "BISI INTERNATIONAL",
+   "px": 720.0,
+   "prev": 720.0,
+   "pct": 0.0,
+   "val": 240857166.6666667,
+   "vol": 335300.0,
+   "sh": 3000000000,
+   "mcap": 2160000000000.0,
+   "hi": 725.0,
+   "lo": 710.0,
+   "ratio": 1.3,
+   "fnet": -17266822.08588957,
+   "live": 0
+  },
+  {
    "t": "PMJS",
    "n": "Putra Mandiri Jembar",
    "px": 142.0,
@@ -14831,11 +14847,11 @@
   {
    "name": "필수소비재",
    "name_id": "Konsumen Primer",
-   "n": 122,
+   "n": 123,
    "adv": 39,
    "dec": 55,
-   "val": 1029705208133.333,
-   "mcap": 1046790538405879.0,
+   "val": 1029946065299.9996,
+   "mcap": 1048950538405879.0,
    "top": [
     {
      "t": "HMSP",
@@ -14878,7 +14894,7 @@
      "pct": 1.13
     }
    ],
-   "fnet": -93411670200,
+   "fnet": -93428937022,
    "pct": -0.25,
    "fbuy_top": [
     {
@@ -15683,9 +15699,9 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7617.36,
+   "px": 7623.09,
    "prev": 7655.5,
-   "pct": -0.5,
+   "pct": -0.42,
    "asof": "21:05",
    "live": true,
    "spark": [
@@ -15696,17 +15712,17 @@
     7615.16,
     7612.76,
     7617.53,
-    7617.36
+    7623.09
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26118.15,
+   "px": 26146.66,
    "prev": 26333.03,
-   "pct": -0.82,
-   "asof": "21:00",
+   "pct": -0.71,
+   "asof": "21:05",
    "live": true,
    "spark": [
     26018.42,
@@ -15715,16 +15731,17 @@
     26122.11,
     26114.64,
     26108.04,
-    26118.15
+    26118.15,
+    26146.66
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52474.63,
+   "px": 52503.23,
    "prev": 52562.77,
-   "pct": -0.17,
+   "pct": -0.11,
    "asof": "21:05",
    "live": true,
    "spark": [
@@ -15735,7 +15752,7 @@
     52437.1,
     52413.74,
     52475.44,
-    52474.63
+    52503.23
    ]
   },
   {
@@ -16635,6 +16652,55 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-14T21:06:31+07:00",
+   "date": "2026-09-14",
+   "time": "21:06",
+   "src": "CNA",
+   "t": "Trump says there is a 'sick conspiracy' against AI, data centers",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/trump-says-there-sick-conspiracy-against-ai-data-centers-6383796",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--03bPbbMF--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T140631Z_1_LYNXMPEM8D160_RTROPTP_3_USA-TRUMP-IRELAND.JPG?itok=IRNde2SR",
+   "t_ko": "Trump, AI·데이터센터 관련 음모 존재 주장",
+   "t_id": "Trump Sebut Ada 'Konspirasi Sakit' terhadap AI dan Pusat Data"
+  },
+  {
+   "ts": "2026-09-14T21:05:09+07:00",
+   "date": "2026-09-14",
+   "time": "21:05",
+   "src": "CNBC",
+   "t": "Brent crude tops $109 after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html",
+   "g": 1,
+   "t_ko": "사우디아라비아, 호르무즈 해협 우회 핵심 송유관 가동 중단에 브렌트유 배럴당 109달러 상회",
+   "t_id": "Minyak Brent Tembus $109 Usai Arab Saudi Tutup Pipa Krusial Pengganti Selat Hormuz"
+  },
+  {
+   "ts": "2026-09-14T21:05:00+07:00",
+   "date": "2026-09-14",
+   "time": "21:05",
+   "src": "Media Indonesia",
+   "t": "Dari Ruang Belajar ke Ekosistem Bisnis, Solopreneur Kini Dibidik untuk Naik Kelas",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/933341/dari-ruang-belajar-ke-ekosistem-bisnis-solopreneur-kini-dibidik-untuk-naik-kelas",
+   "t_id": "Dari Ruang Belajar ke Ekosistem Bisnis, Solopreneur Kini Dibidik untuk Naik Kelas",
+   "t_ko": "솔로프리너 대상 비즈니스 생태계 지원 확대"
+  },
+  {
+   "ts": "2026-09-14T21:04:53+07:00",
+   "date": "2026-09-14",
+   "time": "21:04",
+   "src": "CNA",
+   "t": "Dollar gains as Middle East conflict lifts oil, Fed hike looms",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/dollar-gains-middle-east-conflict-lifts-oil-fed-hike-looms-6382181",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--XpH02uFF--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-14T115448Z_1_LYNXMPEM8D0XU_RTROPTP_3_USA-BONDS-BUYBACKS.JPG?itok=-kyBb87a",
+   "t_ko": "중동 갈등 유가 상승·연준 금리 인상 우려에 달러화 강세",
+   "t_id": "Dolar Menguat Seiring Konflik Timur Tengah Kerek Minyak, Bayang-bayang Kenaikan Suku Bunga The Fed"
+  },
+  {
    "ts": "2026-09-14T21:03:00+07:00",
    "date": "2026-09-14",
    "time": "21:03",
@@ -16643,8 +16709,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609140467/menkeu-suahasil-nazara-bakal-kawal-apbn-sampai-2029",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-Jhssd.webp",
-   "t_ko": "Suahasil Nazara 재무차관, 2029년까지 APBN 관리 방침",
-   "t_id": "Menkeu Suahasil Nazara Bakal Kawal APBN Sampai 2029"
+   "t_ko": "Suahasil Nazara 재무차관, 2029년까지 APBN 관리",
+   "t_id": "Menkeu Suahasil Nazara Bakal Kawal APBN hingga 2029"
   },
   {
    "ts": "2026-09-14T21:02:00+07:00",
@@ -16655,7 +16721,7 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tlcxjl423/ekonom-ingatkan-risiko-jatuh-tempo-utang-luar-negeri-makin-pendek",
    "img": "https://static.republika.co.id/uploads/images/detailnews/ilustrasiutang-petugas-mendorong-troley-yang-mengangkut-tumpukan-uang_200929224900-449.jpg",
-   "t_ko": "이코노미스트, 대외채무 만기 단축 위험 재차 경고",
+   "t_ko": "단기 외채 만기 집중 리스크 경고",
    "t_id": "Ekonom Ingatkan Risiko Jatuh Tempo Utang Luar Negeri Makin Pendek"
   },
   {
@@ -16667,7 +16733,7 @@
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8661808/surga-barang-bekas-mall-rongsok-depok-penuh-benda-jadul",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/surga-barang-bekas-mall-rongsok-depok-penuh-benda-jadul-1789359833578_169.jpeg?w=360&q=90",
-   "t_ko": "중고품의 천국, 데폭 헌옷·골동품 쇼핑몰에 빈티지 가득",
+   "t_ko": "Depok 중고 쇼핑몰에 빈티지 제품 인기",
    "t_id": "Surga Barang Bekas! Mal Rongsok Depok Penuh Benda Jadul"
   },
   {
@@ -16680,7 +16746,19 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/121503/tanggapan-danantara-soal-skenario-ambil-sebagian-saham-bei",
    "img": "https://images.bloombergtechnoz.com/data/2025/06/image-20250629173910.jpeg",
    "t_id": "Tanggapan Danantara Soal Skenario Ambil Sebagian Saham BEI",
-   "t_ko": "Danantara, BEI 지분 일부 인수 시나리오 입장 밝혀"
+   "t_ko": "Danantara, BEI 지분 일부 인수 시나리오 입장 표명"
+  },
+  {
+   "ts": "2026-09-14T21:00:00+07:00",
+   "date": "2026-09-14",
+   "time": "21:00",
+   "src": "Detik",
+   "t": "Menkeu Suahasil: Defisit APBN Akan Tetap di Bawah 3%",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8662707/menkeu-suahasil-defisit-apbn-akan-tetap-di-bawah-3",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/pesan-suahasil-nazara-usai-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan-1789383969594_169.jpeg?w=360&q=90",
+   "t_id": "Menkeu Suahasil: Defisit APBN Akan Tetap di Bawah 3%",
+   "t_ko": "Suahasil Nazara 재무차관, APBN 적자 3% 미만 유지 전망"
   },
   {
    "ts": "2026-09-14T20:56:25+07:00",
@@ -16695,18 +16773,6 @@
    "t_id": "Novo Nordisk Rebranding Jadi 'Novo', Rilis Perubahan Korporat Demi Kuasai Pasar Obesitas"
   },
   {
-   "ts": "2026-09-14T20:54:10+07:00",
-   "date": "2026-09-14",
-   "time": "20:54",
-   "src": "CNBC",
-   "t": "Brent crude tops $109 after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html",
-   "g": 1,
-   "t_ko": "사우디아라비아, 호르무즈 해협 우회 핵심 송유관 가동 중단에 브렌트유 배럴당 109달러 상회",
-   "t_id": "Minyak Brent Tembus $109 Usai Arab Saudi Tutup Pipa Krusial Pengganti Selat Hormuz"
-  },
-  {
    "ts": "2026-09-14T20:51:00+07:00",
    "date": "2026-09-14",
    "time": "20:51",
@@ -16714,7 +16780,7 @@
    "t": "Ekonom: Risiko Jatuh Tempo Utang Luar Negeri makin Pendek",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/933340/ekonom-risiko-jatuh-tempo-utang-luar-negeri-makin-pendek",
-   "t_ko": "이코노미스트, 대외채무 만기 단축 위험 경고",
+   "t_ko": "단기 외채 만기 집중 리스크에 전문가 경고",
    "t_id": "Ekonom: Risiko Jatuh Tempo Utang Luar Negeri Makin Pendek"
   },
   {
@@ -16727,8 +16793,8 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/surprising-stock-stanley-druckenmillers-no-135000908.html",
    "g": 1,
    "img": "https://media.zenfs.com/en/motleyfool.com/492fd0c545339cf52d49fc2e2fb409ee.jpg",
-   "t_ko": "Stanley Druckenmiller가 8분기 연속 1위 비중 유지한 놀라운 주식, 매수 기회인가",
-   "t_id": "Saham Mengejutkan Ini Jadi Porsi No. 1 Stanley Druckenmiller Selama 8 Kuartal Beruntun, Layak Dibeli?"
+   "t_ko": "Stanley Druckenmiller, 8개 분기 연속 특정 종목 1위 유지",
+   "t_id": "Saham Mengejutkan Ini Jadi Posisi No. 1 Stanley Druckenmiller 8 Kuartal Beruntun, Layak Dibeli?"
   },
   {
    "ts": "2026-09-14T20:49:36+07:00",
@@ -16755,19 +16821,6 @@
    "t_id": "Pertamina NRE Dorong Pengembangan Bioetanol Berbasis Multi-Feedstock dan Multi-Generation"
   },
   {
-   "ts": "2026-09-14T20:48:19+07:00",
-   "date": "2026-09-14",
-   "time": "20:48",
-   "src": "Yahoo Finance",
-   "t": "S&P 500, Nasdaq fall on AI slowdown fears, oil price surge",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-nasdaq-fall-ai-134819710.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/quartz_855/ecce5005ef8f2b7809be2c0bc183de9b.jpg",
-   "t_ko": "S&P 500·Nasdaq, AI 성장 둔화 우려와 유가 상승에 하락",
-   "t_id": "S&P 500 dan Nasdaq Turun di Tengah Kekhawatiran Perlambatan AI dan Lonjakan Harga Minyak"
-  },
-  {
    "ts": "2026-09-14T20:48:00+07:00",
    "date": "2026-09-14",
    "time": "20:48",
@@ -16778,19 +16831,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/09/22/IHSG_ditutup_naik_053_atau_4269_poin_ke_level_8051_Foto_Katadata-2025_09_22-23_27_25_4c1fa90f7e0f7b9e231ab52eed5bcfe2_620x413_thumb.jpg",
    "t_ko": "BEI, 내일부터 공매도 재개",
    "t_id": "BEI Kembali Berlakukan Short Selling mulai Besok"
-  },
-  {
-   "ts": "2026-09-14T20:47:04+07:00",
-   "date": "2026-09-14",
-   "time": "20:47",
-   "src": "Yahoo Finance",
-   "t": "Hain Celestial sells “international” assets to private-equity investor",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/hain-celestial-sells-international-assets-134704557.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/just_food_692/926149272d592ca1df10acfe7474db51.jpg",
-   "t_ko": "Hain Celestial, 사모펀드에 해외 사업부 매각",
-   "t_id": "Hain Celestial Jual Aset \"Internasional\" ke Investor Ekuitas Swasta"
   },
   {
    "ts": "2026-09-14T20:45:19+07:00",
@@ -16840,8 +16880,8 @@
    "tags": [],
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmRDNjZiUTA5ZjFZMWV2T193ZjhkRkphXzE3cno5M3A2N0dmVlo1YzFaQnFaRDh3a25uVmUteWRiR01ORmtpMVVDSi03Ti1MUW83U0FWX2Z2dS11RmdoNDd0Zm5nYWN0RHVSNnozNFk4RDZPc2JaRmw4QVktZkdvUEJwU2Z6U0d1MWZpLW92RWFBZG50RG8wNjF6Mk12ajRnMDRuLXBFZ2FKYW1nekpnUA?oc=5",
    "g": 1,
-   "t_ko": "남아프리카공화국 랜드화, 유가 상승 및 연준 회의 대기 속 1% 하락",
-   "t_id": "Rand Afrika Selatan Turun Lebih dari 1% Saat Minyak Melonjak dan Investor Menanti Rapat Fed"
+   "t_ko": "남아프리카공화국 랜드화, 유가 상승·연준 회의 경계에 1% 하락",
+   "t_id": "Rand Afrika Selatan Anjlok Lebih dari 1% saat Minyak Melonjak dan Investor Menanti Rapat The Fed"
   },
   {
    "ts": "2026-09-14T20:43:27+07:00",
@@ -16939,8 +16979,8 @@
    "tags": [],
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVmgtV0piZDBLUGtOM21nQ18yRkdqUUFpMzlKWXVESjBFWFVZT2FEcFFaYXNLRGtjY0RsaGZreUpUN2dsSGdobVladGVsUklvbWxzS2xqSk15SE83MFJJYjlza2s0WWpRX2Q3eFJreWFISjZ0Sl9lM20wcUduQll3VE9OMWRPOEEtQ1ktbk5KbEUtdzcteUFlR1hEV2lsbEZYNUNVZkpPaS1tZw?oc=5",
    "g": 1,
-   "t_ko": "미국서 기피 대상 된 노후 석유 장비, 베네수엘라로 행해",
-   "t_id": "Fokus: Tak Laku di AS, Peralatan Minyak Tua Temukan Rumah Baru di Venezuela"
+   "t_ko": "미국 기피 중고 장비, 베네수엘라로 이전",
+   "t_id": "Fokus: Peralatan Minyak Tua Tak Diinginkan di AS Temukan Rumah Baru di Venezuela"
   },
   {
    "ts": "2026-09-14T20:28:00+07:00",
@@ -17047,29 +17087,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/04/bahlil-lahadalia-1785840108228_169.jpeg?w=360&q=90",
    "t_ko": "Bahlil, 연료유 재고 20일 이상 유지 확인",
    "t_id": "Bahlil Pastikan Cadangan BBM di Atas 20 Hari"
-  },
-  {
-   "ts": "2026-09-14T19:59:00+07:00",
-   "date": "2026-09-14",
-   "time": "19:59",
-   "src": "Media Indonesia",
-   "t": "Investasi KEK ETKI BSD Rp1,9 Triliun, Gubernur Banten: Lampaui Ekspektasi",
-   "tags": [],
-   "url": "https://mediaindonesia.com/nusantara/933320/investasi-kek-etki-bsd-rp19-triliun-gubernur-banten-lampaui-ekspektasi",
-   "t_ko": "BSDP의 KEK ETKI 투자 Rp1.9조, Banten 주지사 기대치 상회 평가",
-   "t_id": "Investasi KEK ETKI BSD Rp1,9 Triliun, Gubernur Banten: Lampaui Ekspektasi"
-  },
-  {
-   "ts": "2026-09-14T19:50:06+07:00",
-   "date": "2026-09-14",
-   "time": "19:50",
-   "src": "Republika",
-   "t": "Suahasil Nazara Jadi Menkeu, DPR Nilai Bisa Perkuat Kepercayaan Pasar",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tlcubi423/suahasil-nazara-jadi-menkeu-dpr-nilai-bisa-perkuat-kepercayaan-pasar",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/040255800-1789380509-830-556.jpg",
-   "t_ko": "Suahasil Nazara 재무장관 내정, 시장 신뢰 강화 평가",
-   "t_id": "Suahasil Nazara Jadi Menkeu, DPR Nilai Bisa Perkuat Kepercayaan Pasar"
   }
  ],
  "kisi_news": [
@@ -17242,8 +17259,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "13.06",
-   "d": 0.17,
-   "ytd": 12.44,
+   "d": 0.2,
+   "ytd": 12.47,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17253,9 +17270,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.994%",
-   "d": 0.38,
-   "ytd": 19.96,
+   "v": "4.992%",
+   "d": 0.34,
+   "ytd": 19.91,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17276,9 +17293,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.71",
-   "d": 0.39,
-   "ytd": 1.46,
+   "v": "99.72",
+   "d": 0.4,
+   "ytd": 1.47,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17288,9 +17305,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "104.09",
-   "d": 0.81,
-   "ytd": 81.28,
+   "v": "104.26",
+   "d": 0.98,
+   "ytd": 81.57,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17300,9 +17317,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,313.2",
-   "d": -1.31,
-   "ytd": -0.29,
+   "v": "4,311.5",
+   "d": -1.35,
+   "ytd": -0.33,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -19913,7 +19930,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-14 21:00",
-  "pc_age_min": 6,
+  "pc_age_min": 10,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21426,24 +21443,25 @@
    "tags": [],
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmRDNjZiUTA5ZjFZMWV2T193ZjhkRkphXzE3cno5M3A2N0dmVlo1YzFaQnFaRDh3a25uVmUteWRiR01ORmtpMVVDSi03Ti1MUW83U0FWX2Z2dS11RmdoNDd0Zm5nYWN0RHVSNnozNFk4RDZPc2JaRmw4QVktZkdvUEJwU2Z6U0d1MWZpLW92RWFBZG50RG8wNjF6Mk12ajRnMDRuLXBFZ2FKYW1nekpnUA?oc=5",
    "g": 1,
-   "t_ko": "남아프리카공화국 랜드화, 유가 상승 및 연준 회의 대기 속 1% 하락",
-   "t_id": "Rand Afrika Selatan Turun Lebih dari 1% Saat Minyak Melonjak dan Investor Menanti Rapat Fed",
+   "t_ko": "남아프리카공화국 랜드화, 유가 상승·연준 회의 경계에 1% 하락",
+   "t_id": "Rand Afrika Selatan Anjlok Lebih dari 1% saat Minyak Melonjak dan Investor Menanti Rapat The Fed",
    "score": 318.0,
-   "srcs": 5
+   "srcs": 6
   },
   {
-   "ts": "2026-09-14T20:11:41+07:00",
+   "ts": "2026-09-14T15:44:44+07:00",
    "date": "2026-09-14",
-   "time": "20:11",
-   "src": "CNBC",
-   "t": "10-year Treasury yield nears 5% ahead of Fed rate decision this week",
+   "time": "15:44",
+   "src": "WSJ",
+   "t": "Stock Market Today: 10-Year Treasury Yield Hits 5%, Pushed Higher by Oil Surge",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
+   "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-14-2026?mod=rss_markets_main",
    "g": 1,
-   "score": 314.0,
-   "srcs": 3,
-   "t_ko": "이번 주 연준 금리 결정을 앞두고 10년물 미 국채금리 5% 육박",
-   "t_id": "Yield US Treasury 10 Tahun Mendekati 5% Jelang Keputusan Suku Bunga The Fed Pekan Ini"
+   "img": "https://images.wsj.net/im-34062673",
+   "score": 316.5,
+   "srcs": 5,
+   "t_ko": "유가 급등에 10년물 국채 금리 5% 돌파",
+   "t_id": "Bursa Saham Hari Ini: Imbal Hasil US Treasury 10 Tahun Tembus 5%, Terdorong Lonjakan Minyak"
   }
  ],
  "daylog": {
@@ -21687,8 +21705,8 @@
    "news": [
     {
      "t": "South African rand falls over 1% as oil jumps and investors await Fed meeting",
-     "ko": "남아프리카공화국 랜드화, 유가 상승 및 연준 회의 대기 속 1% 하락",
-     "id": "Rand Afrika Selatan Turun Lebih dari 1% Saat Minyak Melonjak dan Investor Menanti Rapat Fed",
+     "ko": "남아프리카공화국 랜드화, 유가 상승·연준 회의 경계에 1% 하락",
+     "id": "Rand Afrika Selatan Anjlok Lebih dari 1% saat Minyak Melonjak dan Investor Menanti Rapat The Fed",
      "ai_ko": "",
      "ai_id": "",
      "src": "Reuters",
