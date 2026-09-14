@@ -703,7 +703,8 @@ function annFit(){}   /* 공시는 5건 고정 — 카드 절반만 쓰고 나�
 function setFview(v){FVIEW=v;
   const st=$('fv-stock'),se=$('fv-sector');if(st)st.hidden=(v!=='stock');if(se)se.hidden=(v!=='sector');
   document.querySelectorAll('#fseg a').forEach((a,i)=>a.classList.toggle('on',(i===0)===(v==='stock')));
-  const fd=$('fdate');if(fd)fd.style.display=(v==='stock')?'':'none';
+  // 업종 탭에서도 자리는 남겨 둔다 — display:none 으로 지우면 토글이 오른쪽으로 밀린다
+  const fd=$('fdate');if(fd)fd.style.visibility=(v==='stock')?'':'hidden';
   if(v==='sector')renderFFlow();requestAnimationFrame(fitLists);}
 let dcOff=0;   /* 0=이번 달 · -1=지난 달 */
 function dcKey(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
@@ -924,7 +925,7 @@ document.querySelectorAll('[data-imp]').forEach(b=>b.onclick=()=>{calImp=+b.data
 document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{calKind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(x=>x.classList.toggle('on',x===b));renderCal();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDr();});
 
-const UI_VER='0914-m';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
+const UI_VER='0914-n';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
 document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('on',b.dataset.lang===LANG));applyStatic();
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
 const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['knews-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
