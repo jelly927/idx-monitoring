@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 20:44",
+ "updated": "2026-09-15 20:56",
  "delay_min": 15,
- "fx_basis": "13.01 IDR/KRW · USD/IDR 17,682 · USD/KRW 1,359 · 20:34 Yahoo",
- "idr_per_krw": 13.014,
+ "fx_basis": "13.02 IDR/KRW · USD/IDR 17,682 · USD/KRW 1,358 · 20:34 Yahoo",
+ "idr_per_krw": 13.0235,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 20:42",
+   "asof": "investing.com 20:54",
    "unit": "bp"
   }
  ],
@@ -15707,45 +15707,51 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7608.35,
+   "px": 7608.3,
    "prev": 7620.37,
    "pct": -0.16,
-   "asof": "20:40",
+   "asof": "20:50",
    "live": true,
    "spark": [
     7601.41,
     7610.82,
-    7608.35
+    7612.02,
+    7605.83,
+    7608.3
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26150.5,
+   "px": 26129.89,
    "prev": 26186.41,
-   "pct": -0.14,
-   "asof": "20:40",
+   "pct": -0.22,
+   "asof": "20:50",
    "live": true,
    "spark": [
     26107.43,
     26159.75,
-    26150.5
+    26162.64,
+    26141.75,
+    26129.89
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52112.79,
+   "px": 52105.87,
    "prev": 52421.57,
-   "pct": -0.59,
-   "asof": "20:40",
+   "pct": -0.6,
+   "asof": "20:50",
    "live": true,
    "spark": [
     52132.13,
     52131.14,
-    52112.79
+    52135.52,
+    52073.95,
+    52105.87
    ]
   },
   {
@@ -16071,18 +16077,210 @@
  },
  "news": [
   {
-   "ts": "2026-09-15T20:29:00+07:00",
+   "ts": "2026-09-15T20:55:46.129217+07:00",
    "date": "2026-09-15",
-   "time": "20:29",
+   "time": "20:55",
+   "src": "IDX Channel",
+   "t": "Chandra Asri (TPIA) Gandeng Bank Mandiri (BMRI) Dukung Ekosistem Industri Petrokimia",
+   "tags": [
+    "BMRI",
+    "TPIA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/chandra-asri-tpia-gandeng-bank-mandiri-bmri-dukung-ekosistem-industri-petrokimia",
+   "t_est": true,
+   "t_ko": "TPIA, Bank Mandiri(BMRI)와 손잡고 석유화학 생태계 지원",
+   "t_id": "Chandra Asri (TPIA) Gandeng Bank Mandiri (BMRI) Dukung Ekosistem Industri Petrokimia",
+   "ai_ko": "· TPIA, BMRI와 석유화학 생태계 지원 MoU\n· 14일 Wisma Barito Pacific Tower에서 서명\n· 고객사 결제·자금 관리 편의로 거래 확대",
+   "ai_id": "· TPIA gandeng BMRI dukung petrokimia\n· MoU diteken Senin, 14 September 2026\n· Fasilitas penerimaan pembayaran mitra",
+   "ai_tags": [
+    "업무협약",
+    "석유화학",
+    "은행"
+   ],
+   "ai_tags_id": [
+    "MoU",
+    "petrokimia",
+    "perbankan"
+   ]
+  },
+  {
+   "ts": "2026-09-15T20:55:46.127194+07:00",
+   "date": "2026-09-15",
+   "time": "20:55",
+   "src": "IDX Channel",
+   "t": "Kalbe (KLBF) Umumkan Rencana Buyback Saham Rp500 Miliar",
+   "tags": [
+    "KLBF"
+   ],
+   "url": "https://www.idxchannel.com/market-news/kalbe-klbf-umumkan-rencana-buyback-saham-rp500-miliar",
+   "t_est": true,
+   "t_ko": "Kalbe Farma(KLBF), Rp5,000억 규모 자사주 매입 계획 발표",
+   "t_id": "Kalbe (KLBF) Umumkan Rencana Buyback Saham Rp500 Miliar",
+   "ai_ko": "· Kalbe Farma(KLBF), Rp5,000억 자사주 매입\n· 연초 이후 주가 37% 하락해 Rp760\n· 9월 16일~12월 16일 내부 자금으로 집행",
+   "ai_id": "· KLBF siapkan buyback Rp 500 miliar\n· Saham anjlok 37% ke Rp 760 tahun ini\n· Periode 16 September-16 Desember 2026",
+   "ai_tags": [
+    "자사주매입",
+    "주가하락",
+    "제약"
+   ],
+   "ai_tags_id": [
+    "buyback",
+    "saham turun",
+    "farmasi"
+   ]
+  },
+  {
+   "ts": "2026-09-15T20:55:46.126500+07:00",
+   "date": "2026-09-15",
+   "time": "20:55",
+   "src": "IDX Channel",
+   "t": "Saham Emiten Kabel Kompak Melejit, CCSI Sentuh ARA di Tengah Spekulasi Tema Data Center",
+   "tags": [
+    "CCSI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/saham-emiten-kabel-kompak-melejit-ccsi-sentuh-ara-di-tengah-spekulasi-tema-data-center",
+   "t_est": true,
+   "t_ko": "케이블 상장사 주가 동반 급등 — 데이터센터 테마 속 CCSI 상한가",
+   "t_id": "Saham Emiten Kabel Kompak Melejit, CCSI Sentuh ARA di Tengah Spekulasi Tema Data Center",
+   "ai_ko": "· CCSI 24.86% 급등해 Rp442로 ARA 도달\n· 5거래일 연속 상승, 주간 상승률 52.41%\n· VOKS 22.31%·SCCO 16.73% 등 케이블주 강세",
+   "ai_id": "· CCSI melonjak 24.86% ke Rp 442, ARA\n· Naik 5 hari beruntun, sepekan 52.41%\n· VOKS 22.31%, SCCO 16.73%, JECC 14.71%",
+   "ai_tags": [
+    "주가급등",
+    "케이블",
+    "데이터센터"
+   ],
+   "ai_tags_id": [
+    "saham melonjak",
+    "kabel",
+    "data center"
+   ]
+  },
+  {
+   "ts": "2026-09-15T20:55:46.120892+07:00",
+   "date": "2026-09-15",
+   "time": "20:55",
+   "src": "IDX Channel",
+   "t": "Banding Bali Towerindo (BALI) Dikabulkan, Aspimtel Turut Angkat Bicara",
+   "tags": [
+    "BALI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/banding-bali-towerindo-bali-dikabulkan-aspimtel-turut-angkat-bicara",
+   "t_est": true,
+   "t_ko": "Bali Towerindo(BALI) 항소 인용에 Aspimtel 입장 표명",
+   "t_id": "Banding Bali Towerindo (BALI) Dikabulkan, Aspimtel Turut Angkat Bicara"
+  },
+  {
+   "ts": "2026-09-15T20:55:46.107785+07:00",
+   "date": "2026-09-15",
+   "time": "20:55",
+   "src": "IDX Channel",
+   "t": "Kalbe (KLBF) Batalkan Rencana Buyback Saham",
+   "tags": [
+    "KLBF"
+   ],
+   "url": "https://www.idxchannel.com/market-news/kalbe-klbf-batalkan-rencana-buyback-saham",
+   "t_est": true,
+   "t_ko": "Kalbe Farma(KLBF), 자사주 매입 계획 철회",
+   "t_id": "Kalbe (KLBF) Batalkan Rencana Buyback Saham"
+  },
+  {
+   "ts": "2026-09-15T20:55:46.107138+07:00",
+   "date": "2026-09-15",
+   "time": "20:55",
+   "src": "IDX Channel",
+   "t": "KEEN Resmi Operasikan PLTM Salu Noling, Kapasitas Bertambah Jadi 65 MW",
+   "tags": [
+    "KEEN"
+   ],
+   "url": "https://www.idxchannel.com/market-news/keen-resmi-operasikan-pltm-salu-noling-kapasitas-bertambah-jadi-65-mw",
+   "t_est": true,
+   "t_ko": "KEEN, Salu Noling 소수력발전소 상업 가동… 용량 65MW로 확대",
+   "t_id": "KEEN Resmi Operasikan PLTM Salu Noling, Kapasitas Bertambah Jadi 65 MW"
+  },
+  {
+   "ts": "2026-09-15T20:55:46.101026+07:00",
+   "date": "2026-09-15",
+   "time": "20:55",
+   "src": "IDX Channel",
+   "t": "BRI (BBRI) Buyback 31 Juta Saham Senilai Rp90,37 Miliar",
+   "tags": [
+    "BBRI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/bri-bbri-buyback-31-juta-saham-senilai-rp9037-miliar",
+   "t_est": true,
+   "t_ko": "BBRI, Rp90.37억 규모 자사주 3,100만주 매입",
+   "t_id": "BRI (BBRI) Buyback 31 Juta Saham Senilai Rp90,37 Miliar"
+  },
+  {
+   "ts": "2026-09-15T20:55:46.100295+07:00",
+   "date": "2026-09-15",
+   "time": "20:55",
+   "src": "IDX Channel",
+   "t": "Dirut ADHI Ungkap Proyek LRT City Mangkrak Karena ADCP Gagal Capai Target Penjualan",
+   "tags": [
+    "ADCP",
+    "ADHI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/dirut-adhi-ungkap-proyek-lrt-city-mangkrak-karena-adcp-gagal-capai-target-penjualan",
+   "t_est": true,
+   "t_ko": "ADHI 대표, ADCP 분양 목표 미달로 LRT City 사업 중단",
+   "t_id": "Dirut ADHI Ungkap Proyek LRT City Mangkrak Gegara ADCP Gagal Kejar Target Jual"
+  },
+  {
+   "ts": "2026-09-15T20:55:46.099056+07:00",
+   "date": "2026-09-15",
+   "time": "20:55",
    "src": "IDX Channel",
    "t": "Gandeng Omada, Anak Usaha Sarana Menara (TOWR) Jajaki Bisnis Wifi Generasi Baru",
    "tags": [
     "TOWR"
    ],
    "url": "https://www.idxchannel.com/market-news/gandeng-omada-anak-usaha-sarana-menara-towr-jajaki-bisnis-wifi-generasi-baru",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/15/Varnion_TOWR.jpeg",
+   "t_est": true,
    "t_ko": "TOWR 자회사, Omada와 손잡고 차세대 와이파이 사업 추진",
    "t_id": "Gandeng Omada, Anak Usaha Sarana Menara (TOWR) Jajaki Bisnis WiFi Generasi Baru"
+  },
+  {
+   "ts": "2026-09-15T20:55:46.094872+07:00",
+   "date": "2026-09-15",
+   "time": "20:55",
+   "src": "IDX Channel",
+   "t": "IHSG Ditutup Turun 1,13 Persen, Saham BBCA hingga ASII Jadi Pemberat",
+   "tags": [
+    "ASII",
+    "BBCA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/ihsg-ditutup-turun-113-persen-saham-bbca-hingga-asii-jadi-pemberat",
+   "t_est": true,
+   "t_id": "IHSG Ditutup Turun 1,13 Persen, Saham BBCA hingga ASII Jadi Pemberat",
+   "t_ko": "IHSG 1.13% 하락 마감 — BBCA·ASII 등 지수 하방 압력"
+  },
+  {
+   "ts": "2026-09-15T20:45:00+07:00",
+   "date": "2026-09-15",
+   "time": "20:45",
+   "src": "Media Indonesia",
+   "t": "Digitalisasi Perpajakan Bantu UMKM Kelola Bisnis Lebih Mudah",
+   "tags": [
+    "BBNI"
+   ],
+   "url": "https://mediaindonesia.com/ekonomi/933759/digitalisasi-perpajakan-bantu-umkm-kelola-bisnis-lebih-mudah",
+   "t_ko": "세무 디지털화로 중소기업 경영 관리 편의성 제고",
+   "t_id": "Digitalisasi Perpajakan Bantu UMKM Kelola Bisnis Lebih Mudah"
+  },
+  {
+   "ts": "2026-09-15T20:41:19+07:00",
+   "date": "2026-09-15",
+   "time": "20:41",
+   "src": "Detik",
+   "t": "Bos Adhi Karya Ungkap Biang Kerok Proyek LRT City Bermasalah",
+   "tags": [
+    "ADCP"
+   ],
+   "url": "https://finance.detik.com/infrastruktur/d-8664443/bos-adhi-karya-ungkap-biang-kerok-proyek-lrt-city-bermasalah",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2017/10/29/27a2dd08-22f1-40ab-923c-123f86351006_169.jpg?w=360&q=90",
+   "t_ko": "Adhi Karya 대표, LRT City 사업 부실 원인 밝혀",
+   "t_id": "Bos Adhi Karya Ungkap Biang Kerok Proyek LRT City Bermasalah"
   },
   {
    "ts": "2026-09-15T20:26:42+07:00",
@@ -16110,8 +16308,8 @@
    ],
    "url": "https://www.liputan6.com/saham/read/8292449/tunggal-jaya-investama-genggam-3842-saham-impc",
    "img": "https://cdn1-production-images-kly.akamaized.net/-7BckhRnBYo5liqIOdphEpiliRg=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4112072/original/006568500_1659528503-IHSG_Ditutup_Menguat-Angga-2.jpg",
-   "t_id": "Tunggal Jaya Investama Genggam 38,42% Saham IMPC",
-   "t_ko": "Tunggal Jaya Investama, IMPC 지분 38.42% 확보"
+   "t_ko": "Tunggal Jaya Investama, IMPC 지분 38.42% 확보",
+   "t_id": "Tunggal Jaya Investama Genggam 38,42% Saham IMPC"
   },
   {
    "ts": "2026-09-15T20:00:00+07:00",
@@ -16142,35 +16340,6 @@
    "t_id": "Paradiso Resources Pangkas Kepemilikan Saham NSSS Jadi 1,15%"
   },
   {
-   "ts": "2026-09-15T20:00:00+07:00",
-   "date": "2026-09-15",
-   "time": "20:00",
-   "src": "IDX Channel",
-   "t": "Dirut ADHI Ungkap Proyek LRT City Mangkrak Karena ADCP Gagal Capai Target Penjualan",
-   "tags": [
-    "ADCP",
-    "ADHI"
-   ],
-   "url": "https://www.idxchannel.com/market-news/dirut-adhi-ungkap-proyek-lrt-city-mangkrak-karena-adcp-gagal-capai-target-penjualan",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/07/29/LRT_City_Adhi.jpg",
-   "t_ko": "ADHI 대표, ADCP 분양 목표 미달로 LRT City 사업 중단",
-   "t_id": "Dirut ADHI Ungkap Proyek LRT City Mangkrak Gegara ADCP Gagal Kejar Target Jual"
-  },
-  {
-   "ts": "2026-09-15T20:00:00+07:00",
-   "date": "2026-09-15",
-   "time": "20:00",
-   "src": "IDX Channel",
-   "t": "BRI (BBRI) Buyback 31 Juta Saham Senilai Rp90,37 Miliar",
-   "tags": [
-    "BBRI"
-   ],
-   "url": "https://www.idxchannel.com/market-news/bri-bbri-buyback-31-juta-saham-senilai-rp9037-miliar",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/12/29/bri_bbri.jpg",
-   "t_ko": "BBRI, Rp90.37억 규모 자사주 3,100만주 매입",
-   "t_id": "BRI (BBRI) Buyback 31 Juta Saham Senilai Rp90,37 Miliar"
-  },
-  {
    "ts": "2026-09-15T19:39:37+07:00",
    "date": "2026-09-15",
    "time": "19:39",
@@ -16197,20 +16366,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2021/11/19/ihsg-ditutup-menguat-1_169.jpeg?w=360&q=90",
    "t_ko": "Summarecon(SMRA), 대표 KPK 체포에 주가 급락",
    "t_id": "Saham Summarecon Rontok Usai Bosnya Kena OTT KPK"
-  },
-  {
-   "ts": "2026-09-15T19:30:00+07:00",
-   "date": "2026-09-15",
-   "time": "19:30",
-   "src": "IDX Channel",
-   "t": "KEEN Resmi Operasikan PLTM Salu Noling, Kapasitas Bertambah Jadi 65 MW",
-   "tags": [
-    "KEEN"
-   ],
-   "url": "https://www.idxchannel.com/market-news/keen-resmi-operasikan-pltm-salu-noling-kapasitas-bertambah-jadi-65-mw",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/15/pltm_salu_noling_keen.jpeg",
-   "t_ko": "KEEN, Salu Noling 소수력발전소 상업 가동… 용량 65MW로 확대",
-   "t_id": "KEEN Resmi Operasikan PLTM Salu Noling, Kapasitas Bertambah Jadi 65 MW"
   },
   {
    "ts": "2026-09-15T19:29:00+07:00",
@@ -16240,20 +16395,6 @@
    "t_id": "Perpres Terbit, PT Timah Kini Bisa Beli Hasil Tambang dari Luar WIUP"
   },
   {
-   "ts": "2026-09-15T19:15:00+07:00",
-   "date": "2026-09-15",
-   "time": "19:15",
-   "src": "IDX Channel",
-   "t": "Kalbe (KLBF) Batalkan Rencana Buyback Saham",
-   "tags": [
-    "KLBF"
-   ],
-   "url": "https://www.idxchannel.com/market-news/kalbe-klbf-batalkan-rencana-buyback-saham",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/03/28/kalbe_klbf.jpeg",
-   "t_ko": "Kalbe Farma(KLBF), 자사주 매입 계획 철회",
-   "t_id": "Kalbe (KLBF) Batalkan Rencana Buyback Saham"
-  },
-  {
    "ts": "2026-09-15T19:01:39+07:00",
    "date": "2026-09-15",
    "time": "19:01",
@@ -16280,20 +16421,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/15/Delapan_tersangka_kasus_Hak_Guna_Bangunan_HGB_saat_dibawa_ke_tah-2026_09_15-18_49_06_94861a0b91d595020b8b7fd9278ce8b5_620x413_thumb.png",
    "t_ko": "KPK, 보고르 HGB 사건으로 Summarecon 대표 포함 8명 기소",
    "t_id": "KPK Tetapkan 8 Tersangka Kasus HGB Bogor, Termasuk Bos Summarecon"
-  },
-  {
-   "ts": "2026-09-15T18:42:00+07:00",
-   "date": "2026-09-15",
-   "time": "18:42",
-   "src": "IDX Channel",
-   "t": "Banding Bali Towerindo (BALI) Dikabulkan, Aspimtel Turut Angkat Bicara",
-   "tags": [
-    "BALI"
-   ],
-   "url": "https://www.idxchannel.com/market-news/banding-bali-towerindo-bali-dikabulkan-aspimtel-turut-angkat-bicara",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2024/10/30/Mitratel__MTEL__1.jpg",
-   "t_ko": "Bali Towerindo(BALI) 항소 인용에 Aspimtel 입장 표명",
-   "t_id": "Banding Bali Towerindo (BALI) Dikabulkan, Aspimtel Turut Angkat Bicara"
   },
   {
    "ts": "2026-09-15T18:20:00+07:00",
@@ -16450,32 +16577,6 @@
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/PTRO-PRAJOGO-15092026.jpg",
    "t_ko": "Pefindo, 사업 확장 추진 중인 PTRO 신용등급 상향 조정",
    "t_id": "Pefindo Perbarui Peringkat PTRO Milik Prajogo Pangestu di Tengah Dorongan Ekspansi"
-  },
-  {
-   "ts": "2026-09-15T15:44:00+07:00",
-   "date": "2026-09-15",
-   "time": "15:44",
-   "src": "IDX Channel",
-   "t": "Saham Emiten Kabel Kompak Melejit, CCSI Sentuh ARA di Tengah Spekulasi Tema Data Center",
-   "tags": [
-    "CCSI"
-   ],
-   "url": "https://www.idxchannel.com/market-news/saham-emiten-kabel-kompak-melejit-ccsi-sentuh-ara-di-tengah-spekulasi-tema-data-center",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/15/CCSI_kabel_-_15_Sept_26_web.jpeg",
-   "t_ko": "케이블 상장사 주가 동반 급등 — 데이터센터 테마 속 CCSI 상한가",
-   "t_id": "Saham Emiten Kabel Kompak Melejit, CCSI Sentuh ARA di Tengah Spekulasi Tema Data Center",
-   "ai_ko": "· CCSI 24.86% 급등해 Rp442로 ARA 도달\n· 5거래일 연속 상승, 주간 상승률 52.41%\n· VOKS 22.31%·SCCO 16.73% 등 케이블주 강세",
-   "ai_id": "· CCSI melonjak 24.86% ke Rp 442, ARA\n· Naik 5 hari beruntun, sepekan 52.41%\n· VOKS 22.31%, SCCO 16.73%, JECC 14.71%",
-   "ai_tags": [
-    "주가급등",
-    "케이블",
-    "데이터센터"
-   ],
-   "ai_tags_id": [
-    "saham melonjak",
-    "kabel",
-    "data center"
-   ]
   },
   {
    "ts": "2026-09-15T15:40:00+07:00",
@@ -16873,6 +16974,34 @@
    ]
   },
   {
+   "ts": "2026-09-15T05:59:30.278916+07:00",
+   "date": "2026-09-15",
+   "time": "05:59",
+   "src": "IDX Channel",
+   "t": "Bayan Resources (BYAN) Tetapkan Keadaan Kahar usai Gagal Dapat Persetujuan RKAB",
+   "tags": [
+    "BYAN"
+   ],
+   "url": "https://www.idxchannel.com/market-news/bayan-resources-byan-tetapkan-keadaan-kahar-usai-gagal-dapat-persetujuan-rkab",
+   "t_est": true,
+   "t_ko": "BYAN, RKAB 승인 불발로 불가항력 선언",
+   "t_id": "Bayan Resources (BYAN) Tetapkan Keadaan Kahar Usai Gagal Kantongi Persetujuan RKAB"
+  },
+  {
+   "ts": "2026-09-15T05:59:30.277488+07:00",
+   "date": "2026-09-15",
+   "time": "05:59",
+   "src": "IDX Channel",
+   "t": "Pefindo Beri Petrosea (PTRO) Peringkat idA+ dengan Prospek Stabil",
+   "tags": [
+    "PTRO"
+   ],
+   "url": "https://www.idxchannel.com/market-news/pefindo-beri-petrosea-ptro-peringkat-ida-dengan-prospek-stabil",
+   "t_est": true,
+   "t_ko": "Pefindo, Petrosea(PTRO) 신용등급 idA+ 및 안정적 전망 부여",
+   "t_id": "Pefindo Sematkan Peringkat idA+ untuk Petrosea (PTRO) dengan Prospek Stabil"
+  },
+  {
    "ts": "2026-09-14T19:12:55+07:00",
    "date": "2026-09-14",
    "time": "09/14",
@@ -17193,9 +17322,21 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-15T20:40:09+07:00",
+   "ts": "2026-09-15T20:54:09+07:00",
    "date": "2026-09-15",
-   "time": "20:40",
+   "time": "20:54",
+   "src": "CNBC",
+   "t": "Fed up with AI interviews, some job seekers are dropping out as candidates and blacklisting companies from consideration",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/15/job-seekers-refusing-ai-interviews-blacklisting-employers.html",
+   "g": 1,
+   "t_ko": "AI 면접 지친 구직자들, 지원 포기 및 해당 기업 기피",
+   "t_id": "Muak Wawancara AI, Sejumlah Pencari Kerja Mundur dan Blacklist Perusahaan"
+  },
+  {
+   "ts": "2026-09-15T20:52:21+07:00",
+   "date": "2026-09-15",
+   "time": "20:52",
    "src": "CNBC",
    "t": "Trump calls Supreme Court mail ballot ruling 'big loss for Republicans'",
    "tags": [],
@@ -17203,6 +17344,55 @@
    "g": 1,
    "t_ko": "Trump, 대법원 우편투표 판결은 '공화당의 큰 패배'",
    "t_id": "Trump Sebut Putusan Pemilu Surat Suara Mahkamah Agung Kekalahan Besar Bagi Republik"
+  },
+  {
+   "ts": "2026-09-15T20:51:49+07:00",
+   "date": "2026-09-15",
+   "time": "20:51",
+   "src": "CNBC",
+   "t": "10-year Treasury yield rises to highest since 2007 as Fed rate-hike expectations rise",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/15/10-year-treasury-yield-rises-to-highest-since-2007.html",
+   "g": 1,
+   "t_ko": "연준 금리 인상 전망 강화에 미 10년물 국채 금리 2007년 이후 최고치로 상승",
+   "t_id": "Imbal Hasil US Treasury 10-Tahun Naik ke Level Tertinggi Sejak 2007 Seiring Ekspektasi Kenaikan Suku Bunga The Fed"
+  },
+  {
+   "ts": "2026-09-15T20:49:57+07:00",
+   "date": "2026-09-15",
+   "time": "20:49",
+   "src": "Jawa Pos",
+   "t": "Pertamina Perkuat Ketahanan Energi melalui Integrasi Portofolio dan Infrastruktur LNG",
+   "tags": [],
+   "url": "https://www.jawapos.com/energi/2609150513/pertamina-perkuat-ketahanan-energi-melalui-integrasi-portofolio-dan-infrastruktur-lng",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/15/pt-pertamina-persero-hadir-dalam-forum-gastech-2026-sebagi-bagian-dari-upaya-memperluas-konektivitas-dengan-pelaku-industri-energi-dunia-di-bangkok-thailand-istimewa-25Zzd.webp",
+   "t_id": "Pertamina Perkuat Ketahanan Energi melalui Integrasi Portofolio dan Infrastruktur LNG",
+   "t_ko": "Pertamina, 포트폴리오 및 LNG 인프라 통합으로 에너지 안보 강화"
+  },
+  {
+   "ts": "2026-09-15T20:46:56+07:00",
+   "date": "2026-09-15",
+   "time": "20:46",
+   "src": "Republika",
+   "t": "Toyota New bZ4X Touring Buktikan Mobil Listrik Bisa Diajak Bertualang",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tlerm8487/toyota-new-bz4x-touring-buktikan-mobil-listrik-bisa-diajak-bertualang",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/toyota-new-bz4x_260915204303-325.jpg",
+   "t_ko": "Toyota, 신형 bZ4X Touring으로 전기차 오프로드 주행 성능 입증",
+   "t_id": "Toyota New bZ4X Touring Buktikan Mobil Listrik Bisa Diajak Bertualang"
+  },
+  {
+   "ts": "2026-09-15T20:44:00+07:00",
+   "date": "2026-09-15",
+   "time": "20:44",
+   "src": "MarketWatch",
+   "t": "Traditional bond investors have lost money for years. These five-star portfolio managers show a better way.",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/heres-the-best-way-to-invest-in-bonds-for-the-long-term-according-to-these-five-star-portfolio-managers-bbf0d5e3?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-91707062",
+   "t_ko": "채권 투자자 손실 지속 — 성과 우수 펀드매니저들의 대안 제시",
+   "t_id": "Investor Obligasi Tradisional Merugi Tahunan, 5 Manajer Portofolio Ini Tawarkan Solusi"
   },
   {
    "ts": "2026-09-15T20:39:00+07:00",
@@ -17230,6 +17420,19 @@
    "t_id": "Rusia Genjot Ekspor Minyak Saat Perang Timur Tengah Dorong Lonjakan Harga"
   },
   {
+   "ts": "2026-09-15T20:32:21+07:00",
+   "date": "2026-09-15",
+   "time": "20:32",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today (Sept. 15, 2026): Nasdaq edges lower as oil prices surge and Treasury yields hit 2007 highs",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-15-133221036.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/thestreet_881/856601f2668664870e8b177fb3614720.jpg",
+   "t_ko": "뉴욕증시 15일 — 유가 급등 및 미 국채금리 2007년 최고치 경신에 나스닥 소폭 하락",
+   "t_id": "Bursa Saham Hari Ini (15 Sep 2026): Nasdaq Turun Tipis Seiring Lonjakan Harga Minyak dan Imbal Hasil US Treasury ke Level Tertinggi 2007"
+  },
+  {
    "ts": "2026-09-15T20:30:00+07:00",
    "date": "2026-09-15",
    "time": "20:30",
@@ -17255,29 +17458,17 @@
    "t_id": "PVMBG: Gunung Anak Krakatau Sudah Tak Erupsi 2 Hari Terakhir"
   },
   {
-   "ts": "2026-09-15T20:22:29+07:00",
+   "ts": "2026-09-15T20:25:00+07:00",
    "date": "2026-09-15",
-   "time": "20:22",
-   "src": "CNBC",
-   "t": "10-year Treasury yield rises to highest since 2007 as Fed rate-hike expectations rise",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/15/10-year-treasury-yield-rises-to-highest-since-2007.html",
-   "g": 1,
-   "t_ko": "연준 금리 인상 전망 강화에 미 10년물 국채 금리 2007년 이후 최고치로 상승",
-   "t_id": "Imbal Hasil US Treasury 10-Tahun Naik ke Level Tertinggi Sejak 2007 Seiring Ekspektasi Kenaikan Suku Bunga The Fed"
-  },
-  {
-   "ts": "2026-09-15T20:19:01+07:00",
-   "date": "2026-09-15",
-   "time": "20:19",
+   "time": "20:25",
    "src": "Yahoo Finance",
-   "t": "Executive at Iconic Energy Company Sells Nearly 4,000 Shares",
+   "t": "Robinhood To Offer Share Redemptions And Voting Rights On Tokenized Stocks",
    "tags": [],
-   "url": "https://finance.yahoo.com/energy/articles/executive-iconic-energy-company-sells-131901958.html",
+   "url": "https://finance.yahoo.com/markets/crypto/articles/robinhood-offer-share-redemptions-voting-132500081.html",
    "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/c2be141052df25b8d0a87e7be03c304c.png",
-   "t_ko": "유력 에너지 기업 임원, 주식 약 4,000주 매도",
-   "t_id": "Eksekutif Perusahaan Energi Ikonik Jual Hampir 4.000 Saham"
+   "img": "https://media.zenfs.com/en/cryptoprowl_304/1aa94ad6d666160e48ae6a8985588adb.jpg",
+   "t_ko": "Robinhood, 토큰화 주식 주주총회 의결권 및 환매 서비스 도입",
+   "t_id": "Robinhood Bakal Tawarkan Penebusan Saham dan Hak Suara pada Saham Terasiasi"
   },
   {
    "ts": "2026-09-15T20:18:00+07:00",
@@ -17435,18 +17626,6 @@
    "t_id": "Iran Tekan Minyak Arab Saudi di Timur dan Barat, Kata Schork"
   },
   {
-   "ts": "2026-09-15T20:05:01+07:00",
-   "date": "2026-09-15",
-   "time": "20:05",
-   "src": "CNBC",
-   "t": "Fed up with AI interviews, some job seekers are dropping out as candidates and blacklisting companies from consideration",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/15/job-seekers-refusing-ai-interviews-blacklisting-employers.html",
-   "g": 1,
-   "t_ko": "AI 면접 지친 구직자들, 지원 포기 및 해당 기업 기피",
-   "t_id": "Muak Wawancara AI, Sejumlah Pencari Kerja Mundur dan Blacklist Perusahaan"
-  },
-  {
    "ts": "2026-09-15T20:03:28+07:00",
    "date": "2026-09-15",
    "time": "20:03",
@@ -17470,31 +17649,6 @@
    "img": "https://images.mktw.net/im-01802268",
    "t_ko": "사우디아라비아, 원유 수출 중단 위기 임박 전망",
    "t_id": "Arab Saudi Tinggal Hitungan Hari Menuju Henti Ekspor Minyak"
-  },
-  {
-   "ts": "2026-09-15T20:02:21+07:00",
-   "date": "2026-09-15",
-   "time": "20:02",
-   "src": "CNA",
-   "t": "Delos Data, a chip startup founded by Intel veterans, raises $100 million for AI networks",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/delos-data-chip-startup-founded-intel-veterans-raises-100-million-ai-networks-6386386",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--BKqUBBw6--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-15T130221Z_1_LYNXMPEM8E17S_RTROPTP_3_MARVELL-TECH-RESULTS.JPG?itok=08yniylG",
-   "t_ko": "인텔 출신이 설립한 칩 스타트업 Delos Data, AI 네트워크용 1억 달러 투자 유치",
-   "t_id": "Delos Data, Startup Cip Eks-Intel, Raih Pendanaan $100 Juta untuk Jaringan AI"
-  },
-  {
-   "ts": "2026-09-15T20:01:20+07:00",
-   "date": "2026-09-15",
-   "time": "20:01",
-   "src": "Bloomberg",
-   "t": "Carney Expands Business Tax Break to Broad Range of Investments",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-15/carney-expands-business-tax-break-to-broad-range-of-investments",
-   "g": 1,
-   "t_ko": "Carney, 광범위한 투자 대상으로 사업용 세제 혜택 확대",
-   "t_id": "Carney Perluas Keringanan Pajak Bisnis untuk Berbagai Investasi"
   },
   {
    "ts": "2026-09-15T19:45:00+07:00",
@@ -17601,30 +17755,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/beli-koper-di-metro-bisa-dapat-asuransi-mega-life-begini-caranya-1789473964814_169.jpeg?w=360&q=90",
    "t_ko": "METRO 백화점, 캐리어 구매 고객 대상 Mega Life 보험 제공",
    "t_id": "Beli Koper di METRO Bisa Dapat Asuransi Mega Life, Begini Caranya"
-  },
-  {
-   "ts": "2026-09-15T19:08:00+07:00",
-   "date": "2026-09-15",
-   "time": "19:08",
-   "src": "Katadata",
-   "t": "Shell Mulai Operasikan Pabrik Manufaktur Gemuk di Marunda, Kapasitas 12 Kiloton",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6aa9352dc744d/shell-mulai-operasikan-pabrik-manufaktur-gemuk-di-marunda-kapasitas-12-kiloton",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/15/Pabrik_Manufaktur_Gemuk_Shell_Indonesia-2026_09_15-18_59_46_08dc77057312e82a331fb57433fa164a_620x413_thumb.jpg",
-   "t_ko": "Shell, Marunda에 연산 12킬로톤 윤활유 공장 가동",
-   "t_id": "Shell Mulai Operasikan Pabrik Manufaktur Gemuk di Marunda, Kapasitas 12 Kiloton"
-  },
-  {
-   "ts": "2026-09-15T19:00:21+07:00",
-   "date": "2026-09-15",
-   "time": "19:00",
-   "src": "Detik",
-   "t": "Wamen ATR/BPN Pastikan Layanan Tetap Jalan Meski Dirjen Kena OTT KPK",
-   "tags": [],
-   "url": "https://finance.detik.com/infrastruktur/d-8664265/wamen-atr-bpn-pastikan-layanan-tetap-jalan-meski-dirjen-kena-ott-kpk",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/04/wamen-atr-1780559739011_169.jpeg?w=360&q=90",
-   "t_ko": "ATR/BPN 차관, KPK 체포 속에도 행정 서비스 정상화 확인",
-   "t_id": "Wamen ATR/BPN Pastikan Layanan Tetap Jalan Meski Dirjen Kena OTT KPK"
   }
  ],
  "kisi_news": [
@@ -17796,9 +17926,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.01",
-   "d": -0.71,
-   "ytd": 12.02,
+   "v": "13.02",
+   "d": -0.63,
+   "ytd": 12.11,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17808,9 +17938,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "5.000%",
-   "d": 0.79,
-   "ytd": 20.11,
+   "v": "5.004%",
+   "d": 0.87,
+   "ytd": 20.2,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17831,9 +17961,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.63",
-   "d": 0.04,
-   "ytd": 1.38,
+   "v": "99.60",
+   "d": -0.0,
+   "ytd": 1.34,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17843,9 +17973,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.64",
-   "d": 0.69,
-   "ytd": 80.49,
+   "v": "103.55",
+   "d": 0.6,
+   "ytd": 80.34,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17855,9 +17985,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,326.7",
-   "d": -0.42,
-   "ytd": 0.03,
+   "v": "4,328.3",
+   "d": -0.39,
+   "ytd": 0.06,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17879,9 +18009,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,197",
-   "d": -1.02,
-   "ytd": -2.91,
+   "v": "16,173",
+   "d": -1.16,
+   "ytd": -3.05,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -17903,455 +18033,6 @@
   }
  ],
  "calendar": [
-  {
-   "date": "2026-08-31",
-   "time": "20:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Chicago PMI  (Aug)",
-   "imp": 3,
-   "exp": "57.8",
-   "prev": "57.6",
-   "act": "47.1",
-   "src": "investing.com",
-   "title_ko": "8월 시카고 PMI",
-   "title_id": "PMI Chicago (Agustus)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "07:30",
-   "kind": "macro",
-   "country": "ID",
-   "title": "S&P Global Manufacturing PMI  (Aug)",
-   "imp": 1,
-   "exp": "53.2",
-   "prev": "50.2",
-   "act": "49.8",
-   "src": "investing.com",
-   "title_ko": "8월 S&P Global 제조업 PMI",
-   "title_id": "PMI Manufaktur S&P Global AS (Agu)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "11:00",
-   "kind": "macro",
-   "country": "ID",
-   "title": "Core Inflation (YoY)  (Aug)",
-   "imp": 1,
-   "exp": "2.80%",
-   "prev": "2.76%",
-   "act": "2.92%",
-   "src": "investing.com",
-   "title_ko": "8월 근원 CPI (YoY)",
-   "title_id": "Inflasi Inti (YoY) (Agustus)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "11:00",
-   "kind": "macro",
-   "country": "ID",
-   "title": "Export Growth (YoY)  (Jul)",
-   "imp": 1,
-   "exp": "3.40%",
-   "prev": "8.84%",
-   "act": "6.05%",
-   "src": "investing.com",
-   "title_ko": "7월 수출 증가율 (YoY)",
-   "title_id": "Pertumbuhan Ekspor (YoY) (Juli)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "11:00",
-   "kind": "macro",
-   "country": "ID",
-   "title": "Import Growth (YoY)  (Jul)",
-   "imp": 1,
-   "exp": "24.10%",
-   "prev": "34.27%",
-   "act": "27.02%",
-   "src": "investing.com",
-   "title_ko": "7월 수입 증가율 (YoY)",
-   "title_id": "Pertumbuhan Impor (YoY) (Juli)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "11:00",
-   "kind": "macro",
-   "country": "ID",
-   "title": "Inflation (YoY)  (Aug)",
-   "imp": 1,
-   "exp": "3.13%",
-   "prev": "2.88%",
-   "act": "3.19%",
-   "src": "investing.com",
-   "title_ko": "8월 소비자물가 (YoY)",
-   "title_id": "Inflasi AS (YoY) (Agu)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "11:00",
-   "kind": "macro",
-   "country": "ID",
-   "title": "Trade Balance  (Jul)",
-   "imp": 1,
-   "exp": "-0.30B",
-   "prev": "-0.45B",
-   "act": "0.13B",
-   "src": "investing.com",
-   "title_ko": "7월 무역수지",
-   "title_id": "Neraca Perdagangan (Juli)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "20:05",
-   "kind": "macro",
-   "country": "US",
-   "title": "Fed Vice Chair for Supervision Barr Speaks",
-   "imp": 2,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "연준 Barr 감독담당 부의장 연설",
-   "title_id": "Pidato Wakil Ketua Pengawasan The Fed Barr"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "21:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "Construction Spending (MoM)  (Jul)",
-   "imp": 2,
-   "exp": "0.0%",
-   "prev": "0.0%",
-   "act": "-0.5%",
-   "src": "investing.com",
-   "title_ko": "건설지출 (MoM) (7월)",
-   "title_id": "Belanja Konstruksi (Bulanan) (Jul)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "21:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "ISM Manufacturing Employment  (Aug)",
-   "imp": 2,
-   "exp": "52.5",
-   "prev": "52.8",
-   "act": "51.2",
-   "src": "investing.com",
-   "title_ko": "ISM 제조업 채용 (8월)",
-   "title_id": "Ketenagakerjaan Manufaktur ISM (Agustus)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "21:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "JOLTS Job Openings  (Jul)",
-   "imp": 3,
-   "exp": "7.330M",
-   "prev": "7.182M",
-   "act": "7.271M",
-   "src": "investing.com",
-   "title_ko": "7월 JOLTS 구인건수",
-   "title_id": "Lowongan Kerja JOLTS AS (Jul)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "22:50",
-   "kind": "macro",
-   "country": "US",
-   "title": "Atlanta Fed GDPNow  (Q3)",
-   "imp": 2,
-   "exp": "4.6%",
-   "prev": "4.6%",
-   "act": "4.8%",
-   "src": "investing.com",
-   "title_ko": "3분기 애틀랜타 연은 GDPNow",
-   "title_id": "GDPNow The Fed Atlanta (Q3)"
-  },
-  {
-   "date": "2026-09-02",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "API Weekly Crude Oil Stock",
-   "imp": 2,
-   "exp": "-0.800M",
-   "prev": "4.200M",
-   "act": "-2.600M",
-   "src": "investing.com",
-   "title_ko": "API 주간 원유 재고",
-   "title_id": "Stok Minyak Mentah Mingguan API"
-  },
-  {
-   "date": "2026-09-02",
-   "time": "19:15",
-   "kind": "macro",
-   "country": "US",
-   "title": "ADP Nonfarm Employment Change  (Aug)",
-   "imp": 3,
-   "exp": "47K",
-   "prev": "46K",
-   "act": "38K",
-   "src": "investing.com",
-   "title_ko": "8월 ADP 비농업 고용 변화",
-   "title_id": "Perubahan Ketenagakerjaan Nonpertanian ADP (Agustus)"
-  },
-  {
-   "date": "2026-09-02",
-   "time": "21:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "Factory Orders (MoM)  (Jul)",
-   "imp": 2,
-   "exp": "0.7%",
-   "prev": "-0.2%",
-   "act": "0.9%",
-   "src": "investing.com",
-   "title_ko": "공장수주 (MoM) (7월)",
-   "title_id": "Pesanan Pabrik (Bulanan) (Jul)"
-  },
-  {
-   "date": "2026-09-02",
-   "time": "21:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Crude Oil Inventories",
-   "imp": 3,
-   "exp": "-0.400M",
-   "prev": "0.095M",
-   "act": "-4.450M",
-   "src": "investing.com",
-   "title_ko": "EIA 원유 재고",
-   "title_id": "Stok Minyak Mentah EIA"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "01:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "Beige Book",
-   "imp": 2,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "연준 베이지북",
-   "title_id": "Beige Book The Fed"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Continuing Jobless Claims",
-   "imp": 2,
-   "exp": "205K",
-   "prev": "1,771K",
-   "act": "1,779K",
-   "src": "investing.com",
-   "title_ko": "연속 실업수당 청구",
-   "title_id": "Klaim Pengangguran Berkelanjutan"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Exports  (Jul)",
-   "imp": 2,
-   "exp": null,
-   "prev": "314.70B",
-   "act": "310.70B",
-   "src": "investing.com",
-   "title_ko": "7월 수출",
-   "title_id": "Ekspor (Juli)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Fed Waller Speaks",
-   "imp": 2,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "연준 Waller 이사 연설",
-   "title_id": "Pidato Gubernur The Fed Waller"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Imports  (Jul)",
-   "imp": 2,
-   "exp": null,
-   "prev": "388.00B",
-   "act": "399.30B",
-   "src": "investing.com",
-   "title_ko": "7월 수입",
-   "title_id": "Impor (Juli)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Nonfarm Productivity (QoQ)  (Q2)",
-   "imp": 2,
-   "exp": "1.4%",
-   "prev": "0.8%",
-   "act": "1.4%",
-   "src": "investing.com",
-   "title_ko": "2분기 비농업 생산성 (QoQ)",
-   "title_id": "Produktivitas Nonpertanian (QoQ) (Q2)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Trade Balance  (Jul)",
-   "imp": 2,
-   "exp": "-89.40B",
-   "prev": "-71.20B",
-   "act": "-88.60B",
-   "src": "investing.com",
-   "title_ko": "7월 무역수지",
-   "title_id": "Neraca Perdagangan (Juli)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Unit Labor Costs (QoQ)  (Q2)",
-   "imp": 2,
-   "exp": "1.3%",
-   "prev": "1.3%",
-   "act": "1.2%",
-   "src": "investing.com",
-   "title_ko": "2분기 단위노동비용 (QoQ)",
-   "title_id": "Biaya Tenaga Kerja per Unit (QoQ) (Q2)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "20:45",
-   "kind": "macro",
-   "country": "US",
-   "title": "S&P Global Composite PMI  (Aug)",
-   "imp": 2,
-   "exp": "56.0",
-   "prev": "54.5",
-   "act": "56.0",
-   "src": "investing.com",
-   "title_ko": "8월 S&P Global 합성 PMI",
-   "title_id": "PMI Komposit S&P Global (Agustus)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "21:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "ISM Non-Manufacturing Employment  (Aug)",
-   "imp": 2,
-   "exp": "48.3",
-   "prev": "47.4",
-   "act": "47.8",
-   "src": "investing.com",
-   "title_ko": "8월 ISM 비제조업 고용지수",
-   "title_id": "Ketenagakerjaan Non-Manufaktur ISM (Agustus)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "22:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Atlanta Fed GDPNow  (Q3)",
-   "imp": 2,
-   "exp": "4.8%",
-   "prev": "4.8%",
-   "act": "4.7%",
-   "src": "investing.com",
-   "act_src": "investing.com",
-   "title_ko": "3분기 애틀랜타 연은 GDPNow",
-   "title_id": "GDPNow The Fed Atlanta (Q3)"
-  },
-  {
-   "date": "2026-09-04",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Fed's Balance Sheet",
-   "imp": 2,
-   "exp": null,
-   "prev": "6,731B",
-   "act": "6,737B",
-   "src": "investing.com",
-   "title_ko": "연준 대차대조표",
-   "title_id": "Neraca The Fed"
-  },
-  {
-   "date": "2026-09-04",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Average Hourly Earnings (MoM)  (Aug)",
-   "imp": 3,
-   "exp": "0.3%",
-   "prev": "0.1%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "8월 시간당 평균임금 (MoM)",
-   "title_id": "Rata-rata Upah per Jam (MoM) (Agustus)"
-  },
-  {
-   "date": "2026-09-04",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Nonfarm Payrolls  (Aug)",
-   "imp": 3,
-   "exp": "55K",
-   "prev": "-23K",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "8월 비농업 고용",
-   "title_id": "Nonfarm Payrolls AS (Agu)"
-  },
-  {
-   "date": "2026-09-04",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Participation Rate  (Aug)",
-   "imp": 2,
-   "exp": null,
-   "prev": "61.4%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "8월 경제활동참가율",
-   "title_id": "Tingkat Partisipasi Angkatan Kerja (Agustus)"
-  },
-  {
-   "date": "2026-09-04",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "U6 Unemployment Rate  (Aug)",
-   "imp": 2,
-   "exp": "4.1%",
-   "prev": "7.9%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "8월 U6 실업률",
-   "title_id": "Tingkat Pengangguran U6 (Agustus)"
-  },
   {
    "date": "2026-09-05",
    "time": "00:00",
@@ -18830,14 +18511,28 @@
   },
   {
    "date": "2026-09-15",
+   "time": "19:15",
+   "kind": "macro",
+   "country": "US",
+   "title": "ADP Employment Change Weekly",
+   "imp": 2,
+   "exp": null,
+   "prev": "12.00K",
+   "act": "16.30K",
+   "src": "investing.com",
+   "title_ko": "ADP 주간 고용 변화",
+   "title_id": "Perubahan Tenaga Kerja Mingguan ADP AS"
+  },
+  {
+   "date": "2026-09-15",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "NY Empire State Manufacturing Index  (Sep)",
    "imp": 2,
-   "exp": null,
+   "exp": "14.80",
    "prev": "20.60",
-   "act": null,
+   "act": "7.60",
    "src": "investing.com",
    "title_ko": "9월 뉴욕 엠파이어스테이트 제조업지수",
    "title_id": "Indeks Manufaktur Empire State NY (Sep)"
@@ -21337,9 +21032,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-15 16:12",
-  "pc_age_min": 272,
+  "pc_age_min": 284,
   "news_ai_cache": 87,
-  "news_ai_hit": 30,
+  "news_ai_hit": 33,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -23111,18 +22806,30 @@
    "t_id": "Dirjen Bea Cukai Bicara Nasib Ratusan Pejabat yang Dirombak Purbaya"
   },
   {
-   "ts": "2026-09-15T09:12:29+07:00",
+   "ts": "2026-09-15T16:02:22+07:00",
    "date": "2026-09-15",
-   "time": "09:12",
-   "src": "Liputan6",
-   "t": "Sempat Menghijau, IHSG Berbalik Anjlok 0,84% di Awal Perdagangan 15 September",
+   "time": "16:02",
+   "src": "Bloomberg Technoz",
+   "t": "Rupiah Menutup Perdagangan di Level Rp17.691/US$",
    "tags": [],
-   "url": "https://www.liputan6.com/saham/read/8291816/sempat-menghijau-ihsg-berbalik-anjlok-084-di-awal-perdagangan-15-september",
-   "img": "https://cdn0-production-images-kly.akamaized.net/-o35MYuAohN50YTZXAUk586YjyM=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3008993/original/066039300_1577703438-20191230-Akhir-2019_-IHSG-Ditutup-Melemah-4.jpg",
-   "score": 413.65,
-   "srcs": 4,
-   "t_ko": "IHSG, 장초반 상승 반전해 0.84% 급락 — 15일 개장",
-   "t_id": "Sempat Menghijau, IHSG Berbalik Anjlok 0,84% di Awal Perdagangan 15 September"
+   "url": "https://www.bloombergtechnoz.com/detail-news/121598/rupiah-menutup-perdagangan-di-level-rp17-691-us",
+   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171757.jpeg",
+   "score": 409.15,
+   "srcs": 1,
+   "t_ko": "루피아, Rp17,691/USD 마감",
+   "t_id": "Rupiah Menutup Perdagangan di Level Rp17.691/US$",
+   "ai_ko": "· 루피아 0.24% 약세, USD당 Rp17,691 마감\n· 미국 10년물 금리 5.02%, 2023년 10월來 최고\n· 유가 USD 106, 미국 물가 3.5%로 완화 기대 후퇴",
+   "ai_id": "· Rupiah melemah 0,24% ke Rp17.691/US$\n· Yield UST 10 tahun naik ke 5,02%\n· Minyak US$106 dan inflasi AS 3,5%",
+   "ai_tags": [
+    "환율",
+    "금리",
+    "유가"
+   ],
+   "ai_tags_id": [
+    "kurs",
+    "suku bunga",
+    "minyak"
+   ]
   },
   {
    "ts": "2026-09-15T20:33:05+07:00",
@@ -32876,9 +32583,9 @@
    "ratio": 1.5,
    "ev_ko": "자본구조",
    "ev_id": "Aksi korporasi",
-   "hl": "Kalbe Farma(KLBF), 자사주 매입 계획 철회",
-   "hl_id": "Kalbe (KLBF) Batalkan Rencana Buyback Saham",
-   "url": "https://www.idxchannel.com/market-news/kalbe-klbf-batalkan-rencana-buyback-saham",
+   "hl": "Kalbe Farma(KLBF), Rp5,000억 규모 자사주 매입 계획 발표",
+   "hl_id": "Kalbe (KLBF) Umumkan Rencana Buyback Saham Rp500 Miliar",
+   "url": "https://www.idxchannel.com/market-news/kalbe-klbf-umumkan-rencana-buyback-saham-rp500-miliar",
    "score": 79.0,
    "s_news": 98,
    "s_size": 64,
@@ -32914,7 +32621,7 @@
    "alpha": -6.98,
    "vrank": 78,
    "flow": -40.0,
-   "srcs": 3
+   "srcs": 4
   },
   {
    "t": "UVCR",
