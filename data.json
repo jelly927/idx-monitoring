@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 13:28",
+ "updated": "2026-09-15 13:33",
  "delay_min": 15,
  "fx_basis": "13.02 IDR/KRW · USD/IDR 17,693 · USD/KRW 1,359 · 13:26 Yahoo",
- "idr_per_krw": 13.0202,
+ "idr_per_krw": 13.0212,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -318,7 +318,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 01:25",
+   "asof": "investing.com 13:30",
    "unit": "bp"
   }
  ],
@@ -332,8 +332,8 @@
   "value_idr": 6181672590333.337,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 외국인·공시 PC 09-15 13:15",
-  "rank_asof": "13:26",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 외국인·공시 PC 09-15 13:27",
+  "rank_asof": "13:30",
   "rank_date": "2026-09-15",
   "adv": 334,
   "dec": 320,
@@ -16037,9 +16037,9 @@
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63628.71,
+   "px": 63645.2,
    "prev": 63633.57,
-   "pct": -0.01,
+   "pct": 0.02,
    "asof": "13:10",
    "live": true,
    "spark": [
@@ -16107,17 +16107,17 @@
     63589.79,
     63652.75,
     63634.18,
-    63628.71
+    63645.2
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24718.96,
+   "px": 24727.1,
    "prev": 24917.6,
-   "pct": -0.8,
-   "asof": "13:10",
+   "pct": -0.76,
+   "asof": "13:15",
    "live": true,
    "spark": [
     24806.13,
@@ -16166,7 +16166,8 @@
     24737.41,
     24714.22,
     24725.96,
-    24718.96
+    24735.03,
+    24727.1
    ]
   }
  ],
@@ -16257,8 +16258,20 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121573/penyebab-ihsg-melemah-siang-ini",
    "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260604121721.jpeg",
+   "t_ko": "IHSG, 장중 약세 배경",
    "t_id": "Penyebab IHSG Melemah Siang Ini",
-   "t_ko": "IHSG, 장중 약세 배경"
+   "ai_ko": "· IHSG 전장 0.76% 하락 6,484 마감\n· BYAN·ASII 등 대형주 급락, 유가 반등\n· 국제 정세·금리 부담에 증시 약세",
+   "ai_id": "· IHSG Sesi I turun 0,76% ke 6.484\n· Big caps BYAN & ASII jadi pemberat\n· Minyak naik, UST 10Y dekati 5%",
+   "ai_tags": [
+    "증시",
+    "유가",
+    "금리"
+   ],
+   "ai_tags_id": [
+    "IHSG",
+    "harga minyak",
+    "suku bunga"
+   ]
   },
   {
    "ts": "2026-09-15T12:55:00+07:00",
@@ -17420,21 +17433,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-15T13:27:34.755853+07:00",
+   "ts": "2026-09-15T13:33:05.745148+07:00",
    "date": "2026-09-15",
-   "time": "13:27",
-   "src": "Jawa Pos",
-   "t": "Perbedaan Nilai Transaksi Belum Bisa Dijadikan Bukti Praktik Transfer Pricing -Underinvoicing",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609150060/perbedaan-nilai-transaksi-belum-bisa-dijadikan-bukti-praktik-transfer-pricing-underinvoicing",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/01/06/JKT_-Neraca-Dagang-RI-Surplus-266-miliar-dolar-AS_Salman-Toyibi_-5-3770957360.jpg",
-   "t_ko": "거래금액 차이, 이전가격·과소청구 관행 증거로 보기 어려워",
-   "t_id": "Perbedaan Nilai Transaksi Belum Bisa Dijadikan Bukti Praktik Transfer Pricing - Underinvoicing"
-  },
-  {
-   "ts": "2026-09-15T13:27:34.752365+07:00",
-   "date": "2026-09-15",
-   "time": "13:27",
+   "time": "13:33",
    "src": "Jawa Pos",
    "t": "Salah Satu Pusat Kawasan Industri, Karawang jadi Primadona Kedua setelah Bekasi",
    "tags": [],
@@ -17442,6 +17443,30 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/01/25/pabrik-daihatsu-karawang-1927488506.jpg",
    "t_ko": "산업단지 중심지 Karawang, Bekasi에 이어 2위 선호지역 부상",
    "t_id": "Salah Satu Pusat Kawasan Industri, Karawang jadi Primadona Kedua setelah Bekasi"
+  },
+  {
+   "ts": "2026-09-15T13:28:17+07:00",
+   "date": "2026-09-15",
+   "time": "13:28",
+   "src": "Jawa Pos",
+   "t": "Perbedaan Nilai Transaksi Belum Bisa Dijadikan Bukti Praktik Transfer Pricing -Underinvoicing",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609150060/perbedaan-nilai-transaksi-belum-bisa-dijadikan-bukti-praktik-transfer-pricing-underinvoicing",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/01/06/JKT_-Neraca-Dagang-RI-Surplus-266-miliar-dolar-AS_Salman-Toyibi_-5-3770957360.jpg",
+   "t_ko": "거래금액 차이, 이전가격·과소청구 관행 증거로 보기 어려워",
+   "t_id": "Perbedaan Nilai Transaksi Belum Bisa Dijadikan Bukti Praktik Transfer Pricing - Underinvoicing",
+   "ai_ko": "· 거래가격 차이만으로 이전가격\n  입증 불가 지적\n· Ade, 초기 정황과 법적 결론\n  구분 필요성 강조\n· 특수관계자 거래의 정상가격\n  원칙 충족 여부가 핵심",
+   "ai_id": "· Selisih harga transaksi belum\n cukup buktikan transfer pricing\n· Ade: indikasi awal harus beda\n dari kesimpulan hukum\n· Kunci: arm's length principle\n di transaksi afiliasi",
+   "ai_tags": [
+    "세무",
+    "규제",
+    "이전가격"
+   ],
+   "ai_tags_id": [
+    "pajak",
+    "regulasi",
+    "transfer pricing"
+   ]
   },
   {
    "ts": "2026-09-15T13:26:51+07:00",
@@ -17478,7 +17503,68 @@
    "g": 1,
    "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/54e2/live/14cabf70-b0ca-11f1-a2b7-314e849a6e43.jpg",
    "t_ko": "내년 4월 국민연금 3.9% 인상 전망",
-   "t_id": "Pensiun Negara Berpotensi Naik 3,9% April Tahun Depan"
+   "t_id": "Pensiun Negara Berpotensi Naik 3,9% April Tahun Depan",
+   "ai_ko": "· 영국 기초연금 내년 4월 3.9% 인상 전망\n· 트리플락 기준, 5~7월 임금 상승 둔화\n· 구인 감소·실업급여 수급자 증가 확인",
+   "ai_id": "· Pensiun Inggris naik 3,9% April depan\n· Acuan triple lock, upah Mei-Juli melambat\n· Lowongan turun, klaim pengangguran naik",
+   "ai_tags": [
+    "연금",
+    "임금",
+    "고용"
+   ],
+   "ai_tags_id": [
+    "pensiun",
+    "upah",
+    "ketenagakerjaan"
+   ]
+  },
+  {
+   "ts": "2026-09-15T13:23:59+07:00",
+   "date": "2026-09-15",
+   "time": "13:23",
+   "src": "Detik",
+   "t": "Izin Usaha Produsen Beras Fortifikasi Abal-abal Segera Dicabut!",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8663576/izin-usaha-produsen-beras-fortifikasi-abal-abal-segera-dicabut",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/25-merek-beras-fortifikasi-dinyatakan-tak-sesuai-standar-1789447060266_169.jpeg?w=360&q=90",
+   "t_ko": "불량 강화쌀 생산자 영업허가 즉시 취소",
+   "t_id": "Izin Usaha Produsen Beras Fortifikasi Ilegal Segera Dicabut",
+   "ai_ko": "· 강화미 27개 중 25개 표시 불일치\n· 최고 Rp57,000/kg 판매, 적정가 Rp13,000\n· 농업부, 회수·인허가 취소·수사 의뢰",
+   "ai_id": "· 25 dari 27 beras fortifikasi tak sesuai\n· Dijual Rp57.000/kg, wajar Rp13.000/kg\n· Ditarik, izin dicabut, diproses hukum",
+   "ai_tags": [
+    "규제",
+    "식품",
+    "가격"
+   ],
+   "ai_tags_id": [
+    "regulasi",
+    "pangan",
+    "harga"
+   ]
+  },
+  {
+   "ts": "2026-09-15T13:22:54+07:00",
+   "date": "2026-09-15",
+   "time": "13:22",
+   "src": "CNA",
+   "t": "Samsung's India public policy chief resigns, sources say",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/samsungs-india-public-policy-chief-resigns-sources-say-6385366",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--T1RY3tYP--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-15T062254Z_1_LYNXMPEM8E0GR_RTROPTP_3_SOUTHKOREA-MARKETS-INVESTORS.JPG?itok=RnxLCc_T",
+   "t_ko": "Samsung 인도 공공정책 총괄 사임",
+   "t_id": "Kepala Kebijakan Publik Samsung India Mundur",
+   "ai_ko": "· Samsung India 대관 총괄 Rajiv Aggarwal 사임\n· 4년 근무, 이번 주가 마지막 근무\n· 인도 스마트폰 점유율 16.2%로 3위권",
+   "ai_id": "· Kepala public affairs Samsung India mundur\n· Rajiv Aggarwal hampir 4 tahun menjabat\n· Pangsa smartphone Samsung India 16,2%",
+   "ai_tags": [
+    "인사",
+    "규제",
+    "스마트폰"
+   ],
+   "ai_tags_id": [
+    "pergantian pejabat",
+    "regulasi",
+    "smartphone"
+   ]
   },
   {
    "ts": "2026-09-15T13:20:00+07:00",
@@ -17489,8 +17575,8 @@
    "tags": [],
    "url": "https://www.idxchannel.com/market-news/menkeu-baru-suahasil-utamakan-kredibilitas-fiskal-saham-jangka-panjang-jadi-pilihan",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/15/Suahasil_Nazara_-_Menkeu_-_MNC_Media.jpeg",
-   "t_id": "Menkeu Baru Suahasil Utamakan Kredibilitas Fiskal, Saham Jangka Panjang Jadi Pilihan",
-   "t_ko": "Suahasil 신임 재무장관, 재정 신뢰도 강조하며 장기 주식 주목"
+   "t_ko": "Suahasil 신임 재무장관, 재정 신뢰도 강조하며 장기 주식 주목",
+   "t_id": "Menkeu Baru Suahasil Utamakan Kredibilitas Fiskal, Saham Jangka Panjang Jadi Pilihan"
   },
   {
    "ts": "2026-09-15T13:19:00+07:00",
@@ -17500,8 +17586,20 @@
    "t": "25 Merek Beras Fortifikasi yang Kandungannya tidak Sesuai Label, Ini Daftarnya",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/933560/25-merek-beras-fortifikasi-yang-kandungannya-tidak-sesuai-label-ini-daftarnya",
+   "t_ko": "라벨 불일치 강화쌀 25개 브랜드 적발",
    "t_id": "25 Merek Beras Fortifikasi yang Kandungannya tidak Sesuai Label, Ini Daftarnya",
-   "t_ko": "라벨 불일치 강화쌀 25개 브랜드 적발"
+   "ai_ko": "· 강화미 25개 브랜드 표시와 성분 불일치\n· 4개 기관 시험 결과, 평균 Rp22,000/kg 판매\n· 적정가 Rp13,500, 당국과 후속 조치 협의",
+   "ai_id": "· 25 merek beras fortifikasi tak sesuai label\n· Uji 4 lembaga, jual rata-rata Rp22.000/kg\n· Harga wajar Rp13.500, Kementan tindaklanjut",
+   "ai_tags": [
+    "규제",
+    "식품",
+    "가격"
+   ],
+   "ai_tags_id": [
+    "regulasi",
+    "pangan",
+    "harga"
+   ]
   },
   {
    "ts": "2026-09-15T13:17:04+07:00",
@@ -17513,7 +17611,19 @@
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8663546/harapan-pengusaha-usai-suahasil-jadi-menkeu-gantikan-purbaya",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/purbaya-serahkan-jabatan-menkeu-kepada-suahasil-nazara-1789449141293_169.jpeg?w=360&q=90",
    "t_ko": "Purbaya 후임 Suahasil 재무장관 취임에 대한 재계 기대감",
-   "t_id": "Harapan Pengusaha Usai Suahasil Jadi Menkeu Gantikan Purbaya"
+   "t_id": "Harapan Pengusaha Usai Suahasil Jadi Menkeu Gantikan Purbaya",
+   "ai_ko": "· Suahasil Nazara 신임 재무장관 취임\n· Purbaya Yudhi Sadewa 교체, 대통령 권한\n· Apindo, 재정 신뢰·정책 일관성 유지 요구",
+   "ai_id": "· Suahasil Nazara gantikan Purbaya\n· Hak prerogatif Presiden Prabowo\n· Apindo minta kredibilitas fiskal terjaga",
+   "ai_tags": [
+    "정책",
+    "재정",
+    "인사"
+   ],
+   "ai_tags_id": [
+    "kebijakan",
+    "fiskal",
+    "pergantian menteri"
+   ]
   },
   {
    "ts": "2026-09-15T13:15:00+07:00",
@@ -17537,7 +17647,31 @@
    "url": "https://mediaindonesia.com/ekonomi/933558/daftar-lengkap-harga-emas-pegadaian-15-september-2026-antam-galeri24-dan-ubs",
    "g": 1,
    "t_ko": "Pegadaian 2026년 9월 15일 금 가격 — Antam·Galeri24·UBS",
-   "t_id": "Daftar Lengkap Harga Emas Pegadaian 15 September 2026: Antam, Galeri24, dan UBS"
+   "t_id": "Daftar Lengkap Harga Emas Pegadaian 15 September 2026: Antam, Galeri24, dan UBS",
+   "ai_ko": "· Pegadaian 금값, Antam 그램당 Rp2,631,000\n· UBS Rp2,566,000·Galeri24 Rp2,541,000\n· 3g는 Antam만 판매, Rp7,776,000",
+   "ai_id": "· Emas Antam Rp2.631.000 per gram\n· UBS Rp2.566.000, Galeri24 Rp2.541.000\n· Ukuran 3 gram hanya Antam Rp7.776.000",
+   "ai_tags": [
+    "금값",
+    "귀금속",
+    "시세"
+   ],
+   "ai_tags_id": [
+    "harga emas",
+    "logam mulia",
+    "Pegadaian"
+   ]
+  },
+  {
+   "ts": "2026-09-15T13:11:47+07:00",
+   "date": "2026-09-15",
+   "time": "13:11",
+   "src": "Bloomberg",
+   "t": "China’s Benchmark Crude Oil Futures Have Never Been So Expensive",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-15/china-s-benchmark-crude-oil-futures-have-never-been-so-expensive",
+   "g": 1,
+   "t_ko": "중국 벤치마크 원유 선물 역대 최고가 경신",
+   "t_id": "Minyak Mentah Acuan China Cetak Rekor Tertinggi Sepanjang Masa"
   },
   {
    "ts": "2026-09-15T13:11:00+07:00",
@@ -17549,20 +17683,32 @@
    "url": "https://mediaindonesia.com/ekonomi/933557/dunia-usaha-harap-suahasil-nazara-jaga-kredibilitas-fiskal-dan-apbn",
    "g": 1,
    "t_ko": "재계, Suahasil Nazara의 재정 신인도 및 예산 건전성 유지 기대",
-   "t_id": "Dunia Usaha Harap Suahasil Nazara Jaga Kredibilitas Fiskal dan APBN"
+   "t_id": "Dunia Usaha Harap Suahasil Nazara Jaga Kredibilitas Fiskal dan APBN",
+   "ai_ko": "· Suahasil Nazara 재무장관 임명, 대통령령 97P호\n· 전 재무차관·BKF 청장 경력, 정책 연속성\n· 재계, 재정 건전성과 실물 지원 병행 기대",
+   "ai_id": "· Suahasil dilantik lewat Keppres 97 P/2026\n· Eks Wamenkeu dan Kepala BKF, kontinuitas\n· Dunia usaha minta APBN sehat dan produktif",
+   "ai_tags": [
+    "정책",
+    "재정",
+    "인사"
+   ],
+   "ai_tags_id": [
+    "kebijakan",
+    "fiskal",
+    "pergantian menteri"
+   ]
   },
   {
    "ts": "2026-09-15T13:07:06+07:00",
    "date": "2026-09-15",
    "time": "13:07",
    "src": "FT",
-   "t": "US Treasury yields surge to highest since 2007",
+   "t": "Ten-year Treasury yield hits highest since 2007",
    "tags": [],
    "url": "https://www.ft.com/content/5e2327aa-dbd0-4a79-8c99-622a893876d7?syn-25a6b1a6=1",
    "g": 1,
    "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F822a62d2-748e-4f4f-8f6d-36d177b78ff9.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "미국 국채금리 2007년 이후 최고치로 급등",
-   "t_id": "Imbal Hasil US Treasury Melonjak ke Level Tertinggi Sejak 2007"
+   "t_ko": "미 10년물 국채 금리 2007년 이후 최고치 경기",
+   "t_id": "Imbal Hasil US Treasury 10 Tahun Sentuh Level Tertinggi Sejak 2007"
   },
   {
    "ts": "2026-09-15T13:06:10+07:00",
@@ -17610,6 +17756,18 @@
     "pangan",
     "penindakan"
    ]
+  },
+  {
+   "ts": "2026-09-15T13:05:00+07:00",
+   "date": "2026-09-15",
+   "time": "13:05",
+   "src": "IDNFinancials",
+   "t": "JCI falls 0.76% in first session as foreigners sell bank stocks",
+   "tags": [],
+   "url": "https://www.idnfinancials.com/news/68876/jci-falls-0-76-in-first-session-as-foreigners-sell-bank-stocks",
+   "img": "https://photos.idnfinancials.com/d/1600x900/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG8.jpg",
+   "t_ko": "외국인 은행주 순매도에 IHSG 1부 0.76% 하락",
+   "t_id": "IHSG Anjlok 0,76% di Sesi I di Tengah Aksi Jual Saham Bank oleh Asing"
   },
   {
    "ts": "2026-09-15T13:04:00+07:00",
@@ -18024,99 +18182,6 @@
     "pangan",
     "penyidikan"
    ]
-  },
-  {
-   "ts": "2026-09-15T12:34:00+07:00",
-   "date": "2026-09-15",
-   "time": "12:34",
-   "src": "Katadata",
-   "t": "Mentan Klaim Stok Beras Aman 10 Bulan di Tengah Kondisi El Nino",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6aa8d8d22586a/mentan-klaim-stok-beras-aman-10-bulan-di-tengah-kondisi-el-nino",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/12/2026_09_12-10_56_00_16e1da4c-ae76-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "농림장관, 엘니뇨 속 쌀 재고 10개월간 안정적 주장",
-   "t_id": "Mentan Klaim Stok Beras Aman 10 Bulan di Tengah Kondisi El Nino",
-   "ai_ko": "· 쌀 재고 2,500만~2,600만톤, 10개월분 확보\n· 월 소비 250만~260만톤, Bulog 재고 500만톤\n· El Nino에도 수급 안정, Malaysia 수출 개시",
-   "ai_id": "· Stok beras 25-26 juta ton, cukup 10 bulan\n· Kebutuhan 2,5-2,6 juta ton per bulan\n· Aman meski El Nino, ekspor ke Malaysia",
-   "ai_tags": [
-    "식량",
-    "쌀재고",
-    "El Nino"
-   ],
-   "ai_tags_id": [
-    "pangan",
-    "stok beras",
-    "El Nino"
-   ]
-  },
-  {
-   "ts": "2026-09-15T12:32:00+07:00",
-   "date": "2026-09-15",
-   "time": "12:32",
-   "src": "Jawa Pos",
-   "t": "Tak Lagi Jabat Menkeu, Purbaya: Saya Hanya Ngomong Pendek Aja",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609150246/tak-lagi-jabat-menkeu-purbaya-saya-hanya-ngomong-pendek-aja",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/menteri-keuangan-purbaya-yudhi-sadewa-usai-menyampaikan-tanggapan-pemerintah-pada-rapat-paripurna-ke-3-masa-persidangan-i-tahun-sidang-2026-2027-di-kompleks-parlemen-senayan-jakarta-kamis-2782026-salman-toyibijawa-pos-MNkL2.webp",
-   "t_ko": "장관직 퇴임한 Purbaya, 짧은 소감 밝혀",
-   "t_id": "Tak Lagi Jabat Menkeu, Purbaya: Saya Hanya Ngomong Pendek Aja",
-   "ai_ko": "· Purbaya, 재무장관 이임사 짧게 마무리\n· 과거 정치법률안보조정부·경제조정부 특별보좌관 역임\n· 대통령실 전략이슈 담당 부실장 경력 보유",
-   "ai_id": "· Purbaya sampaikan sambutan singkat\n· Pernah jadi Staf Khusus Menko Polhukam\n· Eks Deputi III Kantor Staf Presiden",
-   "ai_tags": [
-    "정부인사"
-   ],
-   "ai_tags_id": [
-    "pejabat"
-   ]
-  },
-  {
-   "ts": "2026-09-15T12:30:00+07:00",
-   "date": "2026-09-15",
-   "time": "12:30",
-   "src": "Bloomberg Technoz",
-   "t": "Permintaan—Geopolitik Ikut Kerek PNBP Minerba Kala RKAB Dipangkas",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121567/permintaan-geopolitik-ikut-kerek-pnbp-minerba-kala-rkab-dipangkas",
-   "g": 1,
-   "img": "https://images.bloombergtechnoz.com/data/2025/05/image-20250506091058.jpg",
-   "t_ko": "RKAB 감축 속 수요·지정학적 요인으로 광물 비세입금(PNBP) 증가",
-   "t_id": "Permintaan dan Geopolitik Kerek PNBP Minerba Kala RKAB Dipangkas",
-   "ai_ko": "· APBI, 석탄 PNBP 증가는 감산만의 결과 아냐\n· 지정학 리스크·수출 수요·환율이 가격 견인\n· RKAB 2026 감산과 수요 증가 동시 작용",
-   "ai_id": "· APBI: PNBP naik bukan cuma karena RKAB\n· Geopolitik, permintaan, kurs kerek harga\n· Pemangkasan RKAB 2026 salah satu faktor",
-   "ai_tags": [
-    "석탄",
-    "정부수입",
-    "유가"
-   ],
-   "ai_tags_id": [
-    "batu bara",
-    "PNBP",
-    "harga energi"
-   ]
-  },
-  {
-   "ts": "2026-09-15T12:30:00+07:00",
-   "date": "2026-09-15",
-   "time": "12:30",
-   "src": "Katadata",
-   "t": "YLKI: Beras Fortifikasi Palsu Langgar Hak Konsumen, Masuk Ranah Pidana",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6aa8d7ec7ed2c/ylki-beras-fortifikasi-palsu-langgar-hak-konsumen-masuk-ranah-pidana",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/15/Konpers_Beras_Fortifikasi_Palsu-2026_09_15-12_29_36_9b29f32a192bdeacc2ac1c4e40c4d70c_620x413_thumb.jpeg",
-   "t_ko": "YLKI, 가짜 강화 쌀은 소비자 권익 침해이자 형사 사건",
-   "t_id": "YLKI: Beras Fortifikasi Palsu Langgar Hak Konsumen, Masuk Ranah Pidana",
-   "ai_ko": "· YLKI, 영양강화미 표시 위반은 형사 사안\n· 라벨 성분과 시험 결과 불일치 의혹 제기\n· 소비자보호법 8조 위반, 브랜드 공개 요구",
-   "ai_id": "· YLKI: beras fortifikasi palsu masuk pidana\n· Kandungan label beda dengan hasil uji lab\n· Langgar Pasal 8 UU Perlindungan Konsumen",
-   "ai_tags": [
-    "소비자보호",
-    "식품규제",
-    "쌀"
-   ],
-   "ai_tags_id": [
-    "perlindungan konsume",
-    "pidana",
-    "beras"
-   ]
   }
  ],
  "kisi_news": [
@@ -18288,9 +18353,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.00",
-   "d": -0.82,
-   "ytd": 11.9,
+   "v": "13.01",
+   "d": -0.7,
+   "ytd": 12.03,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18323,9 +18388,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.63",
-   "d": 0.02,
-   "ytd": 1.37,
+   "v": "99.65",
+   "d": 0.06,
+   "ytd": 1.4,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18335,9 +18400,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.17",
-   "d": 0.13,
-   "ytd": 79.68,
+   "v": "102.98",
+   "d": 0.07,
+   "ytd": 79.35,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18347,9 +18412,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,330.6",
-   "d": -0.56,
-   "ytd": 0.12,
+   "v": "4,329.5",
+   "d": -0.29,
+   "ytd": 0.09,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18371,9 +18436,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,292",
-   "d": -0.44,
-   "ytd": -2.34,
+   "v": "16,285",
+   "d": -0.48,
+   "ytd": -2.38,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -21412,10 +21477,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-15 13:15",
-  "pc_age_min": 13,
-  "news_ai_cache": 100,
-  "news_ai_hit": 67,
+  "idx_from_pc": "2026-09-15 13:27",
+  "pc_age_min": 6,
+  "news_ai_cache": 101,
+  "news_ai_hit": 71,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -23262,58 +23327,30 @@
  "top_day": "2026-09-15",
  "top_news": [
   {
-   "ts": "2026-09-15T10:35:30+07:00",
+   "ts": "2026-09-15T13:17:04+07:00",
    "date": "2026-09-15",
-   "time": "10:35",
-   "src": "Medcom",
-   "t": "Dilantik Prabowo Jadi Menkeu, Suahasil Nazara Ungkap Tugas Pertamanya",
+   "time": "13:17",
+   "src": "Detik",
+   "t": "Harapan Pengusaha Usai Suahasil Jadi Menkeu Gantikan Purbaya",
    "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/zNAdWdeK-dilantik-prabowo-jadi-menkeu-suahasil-nazara-ungkap-tugas-pertamanya",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/15/1842102/DKfwoNG3VR.jpg?w=720",
-   "score": 423.65,
-   "srcs": 6,
-   "t_ko": "Prabowo 내각 재무장관 임명 Suahasil Nazara, 첫 과제 공개",
-   "t_id": "Dilantik Prabowo Jadi Menkeu, Suahasil Nazara Ungkap Tugas Pertamanya"
-  },
-  {
-   "ts": "2026-09-15T08:37:52+07:00",
-   "date": "2026-09-15",
-   "time": "08:37",
-   "src": "Republika",
-   "t": "Suahasil Jadi Menkeu Gantikan Purbaya, Danantara Siap Bahas Setoran Dividen",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tldtv4490/suahasil-jadi-menkeu-gantikan-purbaya-danantara-siap-bahas-setoran-dividen",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/019920100-1789380513-830-556.jpg",
-   "score": 423.65,
-   "srcs": 6,
-   "t_ko": "Suahasil 재무장관 취임에 Danantara 배당 납부 논의 착수",
-   "t_id": "Suahasil Jadi Menkeu Gantikan Purbaya, Danantara Siap Bahas Setoran Dividen",
-   "ai_ko": "· Danantara, 국고 배당 Rp120조 납입 협의\n· 기존 국영기업 배당 연 Rp90조 대비 증가\n· 2026년 재정수지·국영 상장사 배당에 영향",
-   "ai_id": "· Danantara bahas setoran Rp120 triliun\n· Sebelumnya dividen BUMN Rp90 triliun\n· Topang APBN 2026 dan emiten BUMN",
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8663546/harapan-pengusaha-usai-suahasil-jadi-menkeu-gantikan-purbaya",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/purbaya-serahkan-jabatan-menkeu-kepada-suahasil-nazara-1789449141293_169.jpeg?w=360&q=90",
+   "t_ko": "Purbaya 후임 Suahasil 재무장관 취임에 대한 재계 기대감",
+   "t_id": "Harapan Pengusaha Usai Suahasil Jadi Menkeu Gantikan Purbaya",
+   "ai_ko": "· Suahasil Nazara 신임 재무장관 취임\n· Purbaya Yudhi Sadewa 교체, 대통령 권한\n· Apindo, 재정 신뢰·정책 일관성 유지 요구",
+   "ai_id": "· Suahasil Nazara gantikan Purbaya\n· Hak prerogatif Presiden Prabowo\n· Apindo minta kredibilitas fiskal terjaga",
    "ai_tags": [
-    "배당",
-    "국영기업",
-    "재정"
+    "정책",
+    "재정",
+    "인사"
    ],
    "ai_tags_id": [
-    "dividen",
-    "BUMN",
-    "fiskal"
-   ]
-  },
-  {
-   "ts": "2026-09-15T09:12:29+07:00",
-   "date": "2026-09-15",
-   "time": "09:12",
-   "src": "Liputan6",
-   "t": "Sempat Menghijau, IHSG Berbalik Anjlok 0,84% di Awal Perdagangan 15 September",
-   "tags": [],
-   "url": "https://www.liputan6.com/saham/read/8291816/sempat-menghijau-ihsg-berbalik-anjlok-084-di-awal-perdagangan-15-september",
-   "img": "https://cdn0-production-images-kly.akamaized.net/-o35MYuAohN50YTZXAUk586YjyM=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3008993/original/066039300_1577703438-20191230-Akhir-2019_-IHSG-Ditutup-Melemah-4.jpg",
-   "score": 418.65,
-   "srcs": 7,
-   "t_ko": "IHSG, 장초반 상승 반전해 0.84% 급락 — 15일 개장",
-   "t_id": "Sempat Menghijau, IHSG Berbalik Anjlok 0,84% di Awal Perdagangan 15 September"
+    "kebijakan",
+    "fiskal",
+    "pergantian menteri"
+   ],
+   "score": 423.85,
+   "srcs": 6
   },
   {
    "ts": "2026-09-15T09:21:57+07:00",
@@ -23328,6 +23365,34 @@
    "srcs": 1,
    "t_ko": "증시 공매도 오늘부터 시행",
    "t_id": "Short Selling Bursa Mulai Berlaku Hari Ini"
+  },
+  {
+   "ts": "2026-09-15T09:12:29+07:00",
+   "date": "2026-09-15",
+   "time": "09:12",
+   "src": "Liputan6",
+   "t": "Sempat Menghijau, IHSG Berbalik Anjlok 0,84% di Awal Perdagangan 15 September",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8291816/sempat-menghijau-ihsg-berbalik-anjlok-084-di-awal-perdagangan-15-september",
+   "img": "https://cdn0-production-images-kly.akamaized.net/-o35MYuAohN50YTZXAUk586YjyM=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3008993/original/066039300_1577703438-20191230-Akhir-2019_-IHSG-Ditutup-Melemah-4.jpg",
+   "score": 413.65,
+   "srcs": 7,
+   "t_ko": "IHSG, 장초반 상승 반전해 0.84% 급락 — 15일 개장",
+   "t_id": "Sempat Menghijau, IHSG Berbalik Anjlok 0,84% di Awal Perdagangan 15 September"
+  },
+  {
+   "ts": "2026-09-15T08:50:00+07:00",
+   "date": "2026-09-15",
+   "time": "08:50",
+   "src": "IDNFinancials",
+   "t": "Indonesia's stock market awaits Suahasil effect and Fed rate direction",
+   "tags": [],
+   "url": "https://www.idnfinancials.com/news/68858/indonesias-stock-market-awaits-suahasil-effect-and-fed-rate-direction",
+   "img": "https://photos.idnfinancials.com/static/web/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG3.jpg",
+   "score": 413.65,
+   "srcs": 8,
+   "t_ko": "인도네시아 증시, Suahasil 효과와 연준 금리 방향성 주시",
+   "t_id": "Bursa Saham Menanti Efek Suahasil dan Arah Suku Bunga The Fed"
   },
   {
    "ts": "2026-09-15T01:50:00+07:00",
@@ -23627,7 +23692,7 @@
     },
     {
      "t": "Suahasil Jadi Menkeu Gantikan Purbaya, Danantara Siap Bahas Setoran Dividen",
-     "ko": "Suahasil 재무장관 취임에 Danantara 배당 납부 논의 착수",
+     "ko": "Suahasil, Purbaya 이어 재무장관 취임 — Danantara 배당 납입 논의 준비",
      "id": "Suahasil Jadi Menkeu Gantikan Purbaya, Danantara Siap Bahas Setoran Dividen",
      "ai_ko": "· Danantara, 국고 배당 Rp120조 납입 협의\n· 기존 국영기업 배당 연 Rp90조 대비 증가\n· 2026년 재정수지·국영 상장사 배당에 영향",
      "ai_id": "· Danantara bahas setoran Rp120 triliun\n· Sebelumnya dividen BUMN Rp90 triliun\n· Topang APBN 2026 dan emiten BUMN",
@@ -33841,6 +33906,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-15 13:20"
+  "announcements": "2026-09-15 13:28"
  }
 }
