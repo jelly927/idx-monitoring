@@ -661,7 +661,7 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   $('updated').textContent=d.updated||'—';
   hotRender();
   // 지수
-  $('ixsess').textContent=d.index?.session||'';
+  $('ixsess').textContent=asofTs(d.index?.session||'');   // '09/15 종가' 같은 값이 ID판에 한글로 새던 자리
   const i=d.index||{};const fn=i.foreign_net_idr;
   const ixs=mergeLive((d.indices||[]).slice(0,4));
   if(changed('idx',[ixs,LANG,ixAI()]))$('idx').innerHTML=ixs.map(x=>ixCard(x)).join('');
@@ -1050,7 +1050,7 @@ document.querySelectorAll('[data-imp]').forEach(b=>b.onclick=()=>{calImp=+b.data
 document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{calKind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(x=>x.classList.toggle('on',x===b));renderCal();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDr();});
 
-const UI_VER='0914-r';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
+const UI_VER='0915-a';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
 document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('on',b.dataset.lang===LANG));applyStatic();
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
 const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['knews-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
