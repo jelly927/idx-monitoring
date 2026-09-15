@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 12:46",
+ "updated": "2026-09-15 13:01",
  "delay_min": 15,
- "fx_basis": "13.03 IDR/KRW · USD/IDR 17,675 · USD/KRW 1,356 · 12:27 Yahoo",
- "idr_per_krw": 13.0349,
+ "fx_basis": "13.03 IDR/KRW · USD/IDR 17,678 · USD/KRW 1,357 · 12:55 Yahoo",
+ "idr_per_krw": 13.028,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -279,9 +279,9 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17675.0,
+   "px": 17678.0,
    "prev": 17630.0,
-   "pct": 0.26,
+   "pct": 0.27,
    "spark": [
     17640.0,
     17630.0,
@@ -291,11 +291,12 @@
     17673.0,
     17675.0,
     17675.0,
-    17675.0
+    17675.0,
+    17678.0
    ],
    "inv": true,
-   "asof": "12:27",
-   "high": 17675.0,
+   "asof": "12:55",
+   "high": 17678.0,
    "low": 17595.0,
    "src": "yahoo"
   },
@@ -316,7 +317,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 12:44",
+   "asof": "investing.com 12:58",
    "unit": "bp"
   }
  ],
@@ -330,8 +331,8 @@
   "value_idr": 6181672590333.337,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 외국인·공시 PC 09-15 12:37",
-  "rank_asof": "12:44",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 외국인·공시 PC 09-15 12:47",
+  "rank_asof": "12:58",
   "rank_date": "2026-09-15",
   "adv": 334,
   "dec": 320,
@@ -15951,10 +15952,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6593.11,
+   "px": 6622.55,
    "prev": 6677.81,
-   "pct": -1.27,
-   "asof": "12:20",
+   "pct": -0.83,
+   "asof": "12:35",
    "live": true,
    "spark": [
     6643.44,
@@ -16021,17 +16022,20 @@
     6608.92,
     6591.61,
     6591.23,
-    6593.11
+    6593.11,
+    6611.97,
+    6628.99,
+    6622.55
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63514.2,
+   "px": 63597.02,
    "prev": 63633.57,
-   "pct": -0.19,
-   "asof": "12:25",
+   "pct": -0.06,
+   "asof": "12:40",
    "live": true,
    "spark": [
     63110.43,
@@ -16089,17 +16093,20 @@
     63292.42,
     63203.18,
     63366.15,
-    63514.2
+    63516.34,
+    63547.45,
+    63525.87,
+    63597.02
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24783.56,
+   "px": 24763.24,
    "prev": 24917.6,
-   "pct": -0.54,
-   "asof": "12:25",
+   "pct": -0.62,
+   "asof": "12:40",
    "live": true,
    "spark": [
     24806.13,
@@ -16139,7 +16146,10 @@
     24785.91,
     24777.81,
     24791.3,
-    24783.56
+    24781.57,
+    24779.51,
+    24753.06,
+    24763.24
    ]
   }
  ],
@@ -16270,7 +16280,19 @@
    "url": "https://www.idnfinancials.com/news/68874/smra-president-director-caught-in-kpk-sting-shares-plunge-6-02",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/SMRA-16122025.jpg",
    "t_ko": "SMRA 대표 KPK 체포에 주가 6.02% 급락",
-   "t_id": "Dirut SMRA Terjaring OTT KPK, Saham Anjlok 6,02%"
+   "t_id": "Dirut SMRA Terjaring OTT KPK, Saham Anjlok 6,02%",
+   "ai_ko": "· SMRA 주가 6.02% 급락, Rp312\n· KPK 함정수사로 사장 등 17명 체포\n· Bogor HGB 인허가 의혹, 건설·부동산 투심 악화",
+   "ai_id": "· Saham SMRA anjlok 6,02% ke Rp312\n· OTT KPK jaring 17 orang, Dirut SMRA\n· Isu HGB Bogor tekan sektor properti",
+   "ai_tags": [
+    "규제",
+    "주가급락",
+    "부동산"
+   ],
+   "ai_tags_id": [
+    "regulasi",
+    "saham anjlok",
+    "properti"
+   ]
   },
   {
    "ts": "2026-09-15T11:45:00+07:00",
@@ -16453,20 +16475,6 @@
    ]
   },
   {
-   "ts": "2026-09-15T10:47:00+07:00",
-   "date": "2026-09-15",
-   "time": "10:47",
-   "src": "Katadata",
-   "t": "KPK Gelar OTT, Tangkap Politikus Golkar hingga Presdir Summarecon Agung",
-   "tags": [
-    "SMRA"
-   ],
-   "url": "https://katadata.co.id/berita/nasional/6aa8bfd20866a/kpk-gelar-ott-tangkap-politikus-golkar-hingga-presdir-summarecon-agung",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2022/11/08/Gedung_KPK-2022_11_08-08_48_28_d3164d8a3c9a6d2920f73129966e3f5d_620x413_thumb.jpg",
-   "t_ko": "KPK 기습 작전으로 Golkar 정치인 및 SMRA 대표 등 체포",
-   "t_id": "KPK Gelar OTT, Tangkap Politikus Golkar hingga Presdir Summarecon Agung"
-  },
-  {
    "ts": "2026-09-15T10:40:00+07:00",
    "date": "2026-09-15",
    "time": "10:40",
@@ -16623,33 +16631,6 @@
    ]
   },
   {
-   "ts": "2026-09-15T09:16:00+07:00",
-   "date": "2026-09-15",
-   "time": "09:16",
-   "src": "Katadata",
-   "t": "FTSE Russell Depak ALII dan SILO dari Indeks GEIS Periode September 2026",
-   "tags": [
-    "ALII",
-    "SILO"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa8aa89cd6c3/ftse-russell-depak-alii-dan-silo-dari-indeks-geis-periode-september-2026",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/05/24/FTSE_Russell-2026_05_24-11_12_45_bc19ad489d6095ee4e6a3f80f005873d_620x413_thumb.png",
-   "t_ko": "FTSE Russell, 2026년 9월 정기 지수에서 ALII·SILO 제외",
-   "t_id": "FTSE Russell Depak ALII dan SILO dari Indeks GEIS Periode September 2026",
-   "ai_ko": "· FTSE Russell, 9월 정기 변경서\n· Siloam(SILO)·Ancara Logistics(ALII)\n· GEIS 지수 제외",
-   "ai_id": "· FTSE Russell depak SILO dan ALII\n· Dari indeks GEIS review September\n· Gagal lolos Surveillance Stock Screen",
-   "ai_tags": [
-    "지수편출",
-    "외국인",
-    "규제"
-   ],
-   "ai_tags_id": [
-    "indeks",
-    "asing",
-    "regulasi"
-   ]
-  },
-  {
    "ts": "2026-09-15T09:00:58+07:00",
    "date": "2026-09-15",
    "time": "09:00",
@@ -16734,86 +16715,6 @@
     "rekomendasi saham",
     "sekuritas",
     "IHSG"
-   ]
-  },
-  {
-   "ts": "2026-09-15T07:14:00+07:00",
-   "date": "2026-09-15",
-   "time": "07:14",
-   "src": "Katadata",
-   "t": "Hak Tambang Batu Bara Bayan (BYAN) Terganjal RKAB di Tengah Manuver Haji Isam",
-   "tags": [
-    "BYAN"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa88dfbf20ef/hak-tambang-batu-bara-bayan-byan-terganjal-rkab-di-tengah-manuver-haji-isam",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2021/12/30/PT_Bayan_Resources_Tbk_BYAN-2021_12_30-11_33_00_778adbca313f3c19647cb5a2200c2f2b_620x413_thumb.jpg",
-   "t_ko": "BYAN, Haji Isam 인수 추진 속 석탄 광업권 RKAB 승인 난항",
-   "t_id": "Hak Tambang Batu Bara Bayan (BYAN) Terganjal RKAB di Tengah Manuver Haji Isam",
-   "ai_ko": "· Bayan(BYAN) 자회사 3곳 불가항력 선언\n· RKAB 2026 변경 승인 지연이 원인\n· 2025년 생산 68백만톤 기록 후 차질",
-   "ai_id": "· 3 anak usaha BYAN umumkan kahar\n· Perubahan RKAB 2026 belum disetujui\n· Produksi 2025 rekor 68 juta ton",
-   "ai_tags": [
-    "규제",
-    "석탄",
-    "생산차질"
-   ],
-   "ai_tags_id": [
-    "regulasi",
-    "batu bara",
-    "gangguan produksi"
-   ]
-  },
-  {
-   "ts": "2026-09-15T06:47:00+07:00",
-   "date": "2026-09-15",
-   "time": "06:47",
-   "src": "Katadata",
-   "t": "Dari Satelit ke Lapangan, Upaya Triputra Agro Persada Deteksi Dini Karhutla",
-   "tags": [
-    "TAPG"
-   ],
-   "url": "https://katadata.co.id/berita/nasional/6aa7e123d1681/dari-satelit-ke-lapangan-upaya-triputra-agro-persada-deteksi-dini-karhutla",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/14/Simulasi_anak_usaha_PT_Triputra_Agro_Persada_Tbk_PT_Etam_Bersama-2026_09_14-18_27_46_f4bbda7ff98ce8001329d4a19e264473_620x413_thumb.jpeg",
-   "t_ko": "Triputra Agro Persada, 위성·현장 점검 통한 산불 조기 감지 체계 구축",
-   "t_id": "Dari Satelit ke Lapangan, Upaya Triputra Agro Persada Deteksi Dini Karhutla",
-   "ai_ko": "· Triputra Agro Persada(TAPG),\n  위성 hotspot 기반 산불 조기경보 가동\n· 자회사 EBL, 감시탑 24기·저수지 30개\n  드론 3대·대응인력 237명 배치\n· 산불 리스크 관리 강화로 팜 농장\n  운영 차질 예방 체계 구축",
-   "ai_id": "· Triputra Agro Persada (TAPG)\n pakai EWS hotspot satelit LAPAN\n· Anak usaha EBL punya 24 menara\n api, 30 embung, 3 drone, 237 personel\n· Mitigasi karhutla perkuat\n keberlanjuta n operasi kebun sawit",
-   "ai_tags": [
-    "산불",
-    "리스크관리",
-    "팜오일"
-   ],
-   "ai_tags_id": [
-    "karhutla",
-    "mitigasi risiko",
-    "sawit"
-   ]
-  },
-  {
-   "ts": "2026-09-15T06:47:00+07:00",
-   "date": "2026-09-15",
-   "time": "06:47",
-   "src": "Katadata",
-   "t": "IHSG Hari Ini Berpotensi Turun, Analis Jagokan Saham AADI, ASII hingga BRMS",
-   "tags": [
-    "AADI",
-    "ASII",
-    "BRMS"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa87da313c87/ihsg-hari-ini-berpotensi-turun-analis-jagokan-saham-aadi-asii-hingga-brms",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/08/IHSG_kembali_ditutup_melemah_ke_level_5342_Foto_KatadataFauza_Sy-2026_06_08-17_48_01_7a52cca2efab744648edec05cc36728f_620x413_thumb.jpg",
-   "t_ko": "IHSG 하락 압력 우려 속 Analis, AADI·ASII·BRMS 제시",
-   "t_id": "IHSG Hari Ini Berpotensi Turun, Analis Jagokan Saham AADI, ASII hingga BRMS",
-   "ai_ko": "· IHSG, 15일 하락 전망\n  지지선 6,290 테스트 가능성\n· BinaArtha, SMA-20 회복 실패 지적\n  저항선 6,752~7,071 제시\n· 추천주 AADI·ADMR·ASII·DEWA·ICBP\n  BRMS 목표가 785·905",
-   "ai_id": "· IHSG diproyeksi turun, uji\n support 6.290 dan SMA-60\n· BinaArtha: gagal tahan di atas\n SMA-20, resisten 6.752-7.071\n· Rekomendasi AADI, ADMR, ASII,\n DEWA, ICBP; BRMS target 785-905",
-   "ai_tags": [
-    "증시전망",
-    "기술적분석",
-    "추천종목"
-   ],
-   "ai_tags_id": [
-    "proyeksi IHSG",
-    "analisis teknikal",
-    "rekomendasi saham"
    ]
   },
   {
@@ -17340,6 +17241,101 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-15T12:59:00+07:00",
+   "date": "2026-09-15",
+   "time": "12:59",
+   "src": "Medcom",
+   "t": "Sertijab Menkeu, Purbaya Pilih Singkat dan Serahkan Kepemimpinan ke Suahasil",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/bisnis/eN44wDrN-sertijab-menkeu-purbaya-pilih-singkat-dan-serahkan-kepemimpinan-ke-suahasil",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/15/1842139/u0EMQBnOSk.jpeg?w=720",
+   "t_id": "Sertijab Menkeu, Purbaya Pilih Singkat dan Serahkan Kepemimpinan ke Suahasil",
+   "t_ko": "재무부 차관 이취임식, Purbaya가 Suahasil에게 리더십 이양"
+  },
+  {
+   "ts": "2026-09-15T12:51:29+07:00",
+   "date": "2026-09-15",
+   "time": "12:51",
+   "src": "Detik",
+   "t": "Purbaya Cerita Ditelepon Mensesneg soal Dicopot Saat Rapat di DPD",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8663505/purbaya-cerita-ditelepon-mensesneg-soal-dicopot-saat-rapat-di-dpd",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/purbaya-serahkan-jabatan-menkeu-kepada-suahasil-nazara-1789449141293_169.jpeg?w=360&q=90",
+   "t_id": "Purbaya Cerita Ditelepon Mensesneg soal Dicopot Saat Rapat di DPD",
+   "t_ko": "Purbaya, DPD 회의 중 장관 교체 통보받은 일화 공개"
+  },
+  {
+   "ts": "2026-09-15T12:49:00+07:00",
+   "date": "2026-09-15",
+   "time": "12:49",
+   "src": "Media Indonesia",
+   "t": "Pemerintah Tahan Harga Pertalite di Tengah Gejolak Minyak Dunia, Ekonom Ungkap Dampaknya ke Inflasi",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/933545/pemerintah-tahan-harga-pertalite-di-tengah-gejolak-minyak-dunia-ekonom-ungkap-dampaknya-ke-inflasi",
+   "g": 1,
+   "t_id": "Pemerintah Tahan Harga Pertalite di Tengah Gejolak Minyak Dunia, Ekonom Ungkap Dampaknya ke Inflasi",
+   "t_ko": "정부, 유가 변동에도 Pertalite 가격 동결… 물가 영향 전망"
+  },
+  {
+   "ts": "2026-09-15T12:45:35+07:00",
+   "date": "2026-09-15",
+   "time": "12:45",
+   "src": "CNBC",
+   "t": "Wealthy Chinese, tech talent confront tighter borders as Beijing widens exit controls",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/15/china-rich-talent-immigration-capital-outflows-border-control-.html",
+   "g": 1,
+   "t_ko": "중국 부유층·인재, 베이징의 출국 통제 강화에 직면",
+   "t_id": "Orang Kaya dan Talenta Tech China Hadapi Perbatasan Ketat Saat Beijing Perluas Kontrol Keluar",
+   "ai_ko": "· 중국, 출입국 통제 규정 확대 시행\n· 7월 역외신탁 이전 자산에 20% 과세\n· 외국인 배당 20% 과세로 절세 유인 축소",
+   "ai_id": "· China perketat aturan keluar-masuk\n· Juli: pajak 20% aset ke trust luar negeri\n· Dividen asing kena pajak 20%",
+   "ai_tags": [
+    "규제",
+    "과세",
+    "자본유출"
+   ],
+   "ai_tags_id": [
+    "regulasi",
+    "pajak",
+    "arus modal"
+   ]
+  },
+  {
+   "ts": "2026-09-15T12:45:34+07:00",
+   "date": "2026-09-15",
+   "time": "12:45",
+   "src": "Bloomberg",
+   "t": "FTSE Live: UK Stock Futures, Pound Slip as Oil Extends Climb",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/live-blog/2026-09-15/ftse-100-live-pound-bonds-gilts-brent-oil-prices-hormuz-us-iran-trump-uk-jobs-data-what-s-moving-uk-markets-right-now-markets-today-mu2904d2",
+   "g": 1,
+   "t_ko": "유가 상승세 지속에 영국 주식 선물·파운드화 하락",
+   "t_id": "FTSE Live: Kontrak Berjangka Saham UK, Pound Melemah Seiring Kenaikan Minyak"
+  },
+  {
+   "ts": "2026-09-15T12:45:00+07:00",
+   "date": "2026-09-15",
+   "time": "12:45",
+   "src": "Bloomberg",
+   "t": "Eastern Europe Is Outshining West in Region’s New Bond Order",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-15/eastern-europe-is-outshining-west-in-region-s-new-bond-order",
+   "g": 1,
+   "t_ko": "동유럽, 신규 채권 발행 시장서 서유럽 압도",
+   "t_id": "Eropa Timur Ungguli Barat dalam Tatanan Obligasi Baru Kawasan"
+  },
+  {
+   "ts": "2026-09-15T12:45:00+07:00",
+   "date": "2026-09-15",
+   "time": "12:45",
+   "src": "Media Indonesia",
+   "t": "Suahasil Nazara Jadi Menteri Keuangan, Upaya Jaga Kredibilitas Fiskal",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/933544/suahasil-nazara-jadi-menteri-keuangan-upaya-jaga-kredibilitas-fiskal",
+   "t_id": "Suahasil Nazara Jadi Menteri Keuangan, Upaya Jaga Kredibilitas Fiskal",
+   "t_ko": "Suahasil Nazara 재무장관 임명, 재정 신뢰도 유지 노력"
+  },
+  {
    "ts": "2026-09-15T12:43:18+07:00",
    "date": "2026-09-15",
    "time": "12:43",
@@ -17373,7 +17369,19 @@
    "url": "https://www.cnbc.com/2026/09/15/china-august-retail-sales-industrial-output-investment-exports-.html",
    "g": 1,
    "t_ko": "중국 8월 소매판매 부진 및 투자 침로 심화로 베이징 압박 가중",
-   "t_id": "Penjualan Ritel China Agustus Meleset dari Proyeksi, Tekanan ke Beijing Kian Berat"
+   "t_id": "Penjualan Ritel China Agustus Meleset dari Proyeksi, Tekanan ke Beijing Kian Berat",
+   "ai_ko": "· 중국 8월 소매판매 0.4% 증가, 전망치 하회\n· 1~8월 고정자산투자 7.2% 감소로 낙폭 확대\n· 산업생산 5.2%, 8월 신규대출 600억위안 그쳐",
+   "ai_id": "· Penjualan ritel China Agustus naik 0,4%\n· Investasi aset tetap Jan-Agt turun 7,2%\n· Produksi industri 5,2%, kredit baru lesu",
+   "ai_tags": [
+    "중국",
+    "경기",
+    "내수"
+   ],
+   "ai_tags_id": [
+    "China",
+    "ekonomi",
+    "permintaan domestik"
+   ]
   },
   {
    "ts": "2026-09-15T12:40:00+07:00",
@@ -17384,8 +17392,18 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8663476/ogah-pidato-panjang-saat-sertijab-purbaya-terima-kasih-satu-tahun-ini",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/purbaya-serahkan-jabatan-menkeu-kepada-suahasil-nazara-1789449141097_169.jpeg?w=360&q=90",
+   "t_ko": "Purbaya, 이취임식서 짧은 소감으로 지난 1년에 감사 표명",
    "t_id": "Ogah Pidato Panjang Saat Sertijab, Purbaya: Terima Kasih Satu Tahun Ini",
-   "t_ko": "Purbaya, 이취임식서 짧은 소감으로 지난 1년에 감사 표명"
+   "ai_ko": "· Purbaya, 재무장관직 Suahasil Nazara에 이양\n· 취임 1년 만의 교체, 이임사는 짧게 마무리\n· 재정정책 수장 교체로 정책 연속성 주목",
+   "ai_id": "· Purbaya serahkan jabatan ke Suahasil\n· Sertijab Menkeu setelah satu tahun\n· Pasar cermati arah kebijakan fiskal",
+   "ai_tags": [
+    "정부인사",
+    "재정정책"
+   ],
+   "ai_tags_id": [
+    "reshuffle",
+    "kebijakan fiskal"
+   ]
   },
   {
    "ts": "2026-09-15T12:38:33+07:00",
@@ -17397,30 +17415,18 @@
    "url": "https://ekonomi.republika.co.id/berita/tle509490/mentan-ungkap-dugaan-kecurangan-beras-fortifikasi-merek-populer-ikut-terseret",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260915123754-279.png",
    "t_ko": "농림장관, 강화 쌀 부정 제조 의혹 제기… 유명 브랜드도 연루",
-   "t_id": "Mentan Ungkap Dugaan Kecurangan Beras Fortifikasi, Merek Populer Ikut Terseret"
-  },
-  {
-   "ts": "2026-09-15T12:34:00+07:00",
-   "date": "2026-09-15",
-   "time": "12:34",
-   "src": "Katadata",
-   "t": "Mentan Klaim Stok Beras Aman 10 Bulan di Tengah Kondisi El Nino",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6aa8d8d22586a/mentan-klaim-stok-beras-aman-10-bulan-di-tengah-kondisi-el-nino",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/12/2026_09_12-10_56_00_16e1da4c-ae76-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Mentan Klaim Stok Beras Aman 10 Bulan di Tengah Kondisi El Nino",
-   "t_ko": "농림장관, 엘니뇨 속 쌀 재고 10개월간 안정적 주장",
-   "ai_ko": "· 쌀 재고 2,500만~2,600만톤, 10개월분 확보\n· 월 소비 250만~260만톤, Bulog 재고 500만톤\n· El Nino에도 수급 안정, Malaysia 수출 개시",
-   "ai_id": "· Stok beras 25-26 juta ton, cukup 10 bulan\n· Kebutuhan 2,5-2,6 juta ton per bulan\n· Aman meski El Nino, ekspor ke Malaysia",
+   "t_id": "Mentan Ungkap Dugaan Kecurangan Beras Fortifikasi, Merek Populer Ikut Terseret",
+   "ai_ko": "· 강화미 허위표시 피해액 Rp89조 추산\n· 검사 대상 90%가 기준 미달, kg당 Rp13,000이 Rp57,000에 판매\n· 형법·소비자보호법 적용 검토, 식품 유통업 규제 강화",
+   "ai_id": "· Dugaan kerugian beras Rp89 triliun\n· 90% sampel tak sesuai standar label\n· Ancaman pidana penipuan bagi produsen",
    "ai_tags": [
-    "식량",
-    "쌀재고",
-    "El Nino"
+    "규제",
+    "식품",
+    "수사"
    ],
    "ai_tags_id": [
+    "regulasi",
     "pangan",
-    "stok beras",
-    "El Nino"
+    "penyidikan"
    ]
   },
   {
@@ -17433,7 +17439,15 @@
    "url": "https://www.jawapos.com/ekonomi/2609150246/tak-lagi-jabat-menkeu-purbaya-saya-hanya-ngomong-pendek-aja",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/menteri-keuangan-purbaya-yudhi-sadewa-usai-menyampaikan-tanggapan-pemerintah-pada-rapat-paripurna-ke-3-masa-persidangan-i-tahun-sidang-2026-2027-di-kompleks-parlemen-senayan-jakarta-kamis-2782026-salman-toyibijawa-pos-MNkL2.webp",
    "t_ko": "장관직 퇴임한 Purbaya, 짧은 소감 밝혀",
-   "t_id": "Tak Lagi Jabat Menkeu, Purbaya: Saya Hanya Ngomong Pendek Aja"
+   "t_id": "Tak Lagi Jabat Menkeu, Purbaya: Saya Hanya Ngomong Pendek Aja",
+   "ai_ko": "· Purbaya, 재무장관 이임사 짧게 마무리\n· 과거 정치법률안보조정부·경제조정부 특별보좌관 역임\n· 대통령실 전략이슈 담당 부실장 경력 보유",
+   "ai_id": "· Purbaya sampaikan sambutan singkat\n· Pernah jadi Staf Khusus Menko Polhukam\n· Eks Deputi III Kantor Staf Presiden",
+   "ai_tags": [
+    "정부인사"
+   ],
+   "ai_tags_id": [
+    "pejabat"
+   ]
   },
   {
    "ts": "2026-09-15T12:30:00+07:00",
@@ -17458,30 +17472,6 @@
     "batu bara",
     "PNBP",
     "harga energi"
-   ]
-  },
-  {
-   "ts": "2026-09-15T12:30:00+07:00",
-   "date": "2026-09-15",
-   "time": "12:30",
-   "src": "Katadata",
-   "t": "YLKI: Beras Fortifikasi Palsu Langgar Hak Konsumen, Masuk Ranah Pidana",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6aa8d7ec7ed2c/ylki-beras-fortifikasi-palsu-langgar-hak-konsumen-masuk-ranah-pidana",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/15/Konpers_Beras_Fortifikasi_Palsu-2026_09_15-12_29_36_9b29f32a192bdeacc2ac1c4e40c4d70c_620x413_thumb.jpeg",
-   "t_ko": "YLKI, 가짜 강화 쌀은 소비자 권익 침해이자 형사 사건",
-   "t_id": "YLKI: Beras Fortifikasi Palsu Langgar Hak Konsumen, Masuk Ranah Pidana",
-   "ai_ko": "· YLKI, 영양강화미 표시 위반은 형사 사안\n· 라벨 성분과 시험 결과 불일치 의혹 제기\n· 소비자보호법 8조 위반, 브랜드 공개 요구",
-   "ai_id": "· YLKI: beras fortifikasi palsu masuk pidana\n· Kandungan label beda dengan hasil uji lab\n· Langgar Pasal 8 UU Perlindungan Konsumen",
-   "ai_tags": [
-    "소비자보호",
-    "식품규제",
-    "쌀"
-   ],
-   "ai_tags_id": [
-    "perlindungan konsume",
-    "pidana",
-    "beras"
    ]
   },
   {
@@ -17528,8 +17518,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/finance/2609150243/digitalisasi-perbankan-makin-masif-konektivitas-fleksibel-jadi-kebutuhan-baru",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/15/forum-lintasarta-executive-dialogue-bertema-mastering-digital-infrastructure-in-the-intelligent-banking-era-through-bandwidth-on-demand-bwod-di-jakarta-X96WX.webp",
-   "t_id": "Digitalisasi Perbankan Makin Masif, Konektivitas Fleksibel Jadi Kebutuhan Baru",
    "t_ko": "디지털 뱅킹 가속화에 유연한 연결성 필수 과제로 부상",
+   "t_id": "Digitalisasi Perbankan Makin Masif, Konektivitas Fleksibel Jadi Kebutuhan Baru",
    "ai_ko": "· 은행권 디지털화로 유연한 회선 수요 확대\n· 월말·연말 결산, 급여 처리 때 부하 급증\n· 재해복구·신규 앱 출시도 용량 변동 요인",
    "ai_id": "· Digitalisasi bank dorong konektivitas lentur\n· Tutup buku dan payroll picu lonjakan beban\n· Pemulihan bencana & aplikasi baru jadi faktor",
    "ai_tags": [
@@ -17568,30 +17558,6 @@
    ]
   },
   {
-   "ts": "2026-09-15T12:21:00+07:00",
-   "date": "2026-09-15",
-   "time": "12:21",
-   "src": "Katadata",
-   "t": "25 Merek Beras Fortifikasi Diduga Palsu, Dijual hingga 4 Kali Harga Wajar",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6aa8d5d833666/25-merek-beras-fortifikasi-diduga-palsu-dijual-hingga-4-kali-harga-wajar",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/15/Konpers_Beras_Fortifikasi_Palsu-2026_09_15-12_12_00_e6400628736fe5b0b8a315499f0b4b98_620x413_thumb.jpeg",
-   "t_ko": "정상 가격 최대 4배 판매된 위조 의심 강화 쌀 25개 브랜드",
-   "t_id": "25 Merek Beras Fortifikasi Diduga Palsu, Dijual hingga 4 Kali Harga Wajar",
-   "ai_ko": "· 강화미 위조 의혹, 추정 피해 Rp89조\n· 적정가 Rp13,000 쌀을 Rp57,000에 판매\n· 24개 브랜드 적발, 쌀 유통업계 파장",
-   "ai_id": "· Nilai dugaan penipuan Rp89 triliun\n· Dijual Rp57.000/kg, wajar Rp13.000\n· 24 merek diduga palsu, 9.2 juta ton",
-   "ai_tags": [
-    "쌀",
-    "규제",
-    "식품"
-   ],
-   "ai_tags_id": [
-    "beras",
-    "regulasi",
-    "pangan"
-   ]
-  },
-  {
    "ts": "2026-09-15T12:19:30+07:00",
    "date": "2026-09-15",
    "time": "12:19",
@@ -17600,8 +17566,8 @@
    "tags": [],
    "url": "https://finance.detik.com/energi/d-8663434/trans-mall-group-pasang-plts-12-34-mwp-di-16-lokasi-hemat-listrik-10",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/plts-atap-transmart-1789448919218_169.jpeg?w=360&q=90",
-   "t_id": "Trans Mall Group Pasang PLTS 12,34 MWp di 16 Lokasi, Hemat Listrik 10%",
    "t_ko": "Trans Mall Group, 16개 지역에 12.34 MWp 태양광 설치로 전력 10% 절감",
+   "t_id": "Trans Mall Group Pasang PLTS 12,34 MWp di 16 Lokasi, Hemat Listrik 10%",
    "ai_ko": "· Trans Mall Group, 옥상 태양광 12.34MWp 가동\n· 16개 지점 설치, 연 16.8GWh 발전\n· 전기요금 연 10% 절감, 탄소 1.3만톤 감축",
    "ai_id": "· Trans Mall pasang PLTS atap 12,34 MWp\n· 16 lokasi, produksi 16,8 GWh per tahun\n· Hemat listrik 10%, pangkas 13.000 ton CO2",
    "ai_tags": [
@@ -17765,7 +17731,17 @@
    "url": "https://www.idnfinancials.com/news/68875/suahasil-nazaras-wealth-2-4-times-higher-than-purbayas",
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/SUAHASIL-PURBAYA-14092026.jpg",
    "t_ko": "Suahasil Nazara 재산, Purbaya의 2.4배 수준",
-   "t_id": "Harta Suahasil Nazara 2,4 Kali Lipat Lebih Tinggi Dibanding Purbaya"
+   "t_id": "Harta Suahasil Nazara 2,4 Kali Lipat Lebih Tinggi Dibanding Purbaya",
+   "ai_ko": "· Suahasil Nazara 재산 Rp1,381억7,000만\n· 전임 Purbaya의 Rp574억8,000만 대비 2.4배\n· 증권 보유 Rp668억8,000만으로 절반 차지",
+   "ai_id": "· Harta Suahasil Rp138,17 miliar\n· 2,4 kali lipat harta Purbaya\n· Surat berharga capai Rp66,88 miliar",
+   "ai_tags": [
+    "정부인사",
+    "재산공개"
+   ],
+   "ai_tags_id": [
+    "pejabat",
+    "LHKPN"
+   ]
   },
   {
    "ts": "2026-09-15T12:07:45+07:00",
@@ -17799,30 +17775,6 @@
    "ai_tags_id": [
     "perikanan",
     "kebijakan"
-   ]
-  },
-  {
-   "ts": "2026-09-15T12:02:00+07:00",
-   "date": "2026-09-15",
-   "time": "12:02",
-   "src": "Katadata",
-   "t": "Pasokan Listrik Tertekan, Daya Mampu PLTA Sulawesi Bagian Selatan Anjlok 600 MW",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/energi/6aa8d15145207/pasokan-listrik-tertekan-daya-mampu-plta-sulawesi-bagian-selatan-anjlok-600-mw",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2024/12/16/Konferensi_Pers_Paket_Kebijakan_Ekonomi_Untuk_Kesejahteraan-2024_12_16-17_02_21_113faef72293e745dafb4e568150a7ae_620x413_thumb.jpg",
-   "t_ko": "전력 공급 차질, 술라웨시 남부 수력발전 가용량 600MW 급감",
-   "t_id": "Pasokan Listrik Tertekan, Daya Mampu PLTA Sulawesi Bagian Selatan Anjlok 600 MW",
-   "ai_ko": "· Sulawesi 남부 수력 발전능력 600MW 급감\n· 850MW→250MW, El Nino로 수량 부족\n· PLN 627MW 추가 확보, 9월 말 균형 목표",
-   "ai_id": "· Daya mampu hidro Sulbagsel -600 MW\n· Dari 850 MW jadi 250 MW, El Nino\n· PLN siapkan tambahan 627 MW",
-   "ai_tags": [
-    "전력",
-    "가뭄",
-    "발전"
-   ],
-   "ai_tags_id": [
-    "listrik",
-    "kekeringan",
-    "pembangkit"
    ]
   },
   {
@@ -17932,30 +17884,6 @@
    ]
   },
   {
-   "ts": "2026-09-15T11:50:41+07:00",
-   "date": "2026-09-15",
-   "time": "11:50",
-   "src": "CNBC",
-   "t": "Wealthy Chinese, tech talent confront tighter borders as Beijing widens exit controls",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/15/china-rich-talent-immigration-capital-outflows-border-control-.html",
-   "g": 1,
-   "t_ko": "중국 부유층·인재, 베이징의 출국 통제 강화에 직면",
-   "t_id": "Orang Kaya dan Talenta Tech China Hadapi Perbatasan Ketat Saat Beijing Perluas Kontrol Keluar",
-   "ai_ko": "· 중국, 출입국 통제 규정 확대 시행\n· 7월 역외신탁 이전 자산에 20% 과세\n· 외국인 배당 20% 과세로 절세 유인 축소",
-   "ai_id": "· China perketat aturan keluar-masuk\n· Juli: pajak 20% aset ke trust luar negeri\n· Dividen asing kena pajak 20%",
-   "ai_tags": [
-    "규제",
-    "과세",
-    "자본유출"
-   ],
-   "ai_tags_id": [
-    "regulasi",
-    "pajak",
-    "arus modal"
-   ]
-  },
-  {
    "ts": "2026-09-15T11:47:28+07:00",
    "date": "2026-09-15",
    "time": "11:47",
@@ -17966,54 +17894,6 @@
    "g": 1,
    "t_ko": "Moody's, 필리핀 신용평가사 소수 지분 인수",
    "t_id": "Moody's Beli Saham Minoritas Lembaga Pemeringkat Kredit Filipina"
-  },
-  {
-   "ts": "2026-09-15T11:43:51+07:00",
-   "date": "2026-09-15",
-   "time": "11:43",
-   "src": "Detik",
-   "t": "Wamendag Cek Takaran LPG 3 Kg, 753 SPBE Pertamina Terapkan BDKT",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8663419/wamendag-cek-takaran-lpg-3-kg-753-spbe-pertamina-terapkan-bdkt",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/lpg-1789449192081_169.jpeg?w=360&q=90",
-   "t_ko": "Wamendag, 3kg LPG 정량 점검 — Pertamina 753개 충전소 BDKT 도입",
-   "t_id": "Wamendag Cek Takaran LPG 3 Kg, 753 SPBE Pertamina Terapkan BDKT",
-   "ai_ko": "· Pertamina SPBE 753곳 BDKT 기준 100% 적용\n· 3kg LPG 보조·비보조 충전 계량 점검\n· 무역부와 합동 감독, 공급·재고 이상 없음",
-   "ai_id": "· 753 SPBE Pertamina terapkan BDKT\n· Takaran LPG 3 kg dicek di Padalarang\n· Pengawasan bareng Kemendag, stok aman",
-   "ai_tags": [
-    "규제",
-    "LPG",
-    "유통"
-   ],
-   "ai_tags_id": [
-    "regulasi",
-    "LPG",
-    "distribusi"
-   ]
-  },
-  {
-   "ts": "2026-09-15T11:41:36+07:00",
-   "date": "2026-09-15",
-   "time": "11:41",
-   "src": "CNBC",
-   "t": "Oil extends gains following Houthi strikes on Saudi Arabia",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
-   "g": 1,
-   "t_ko": "사우디 아라비아 후티 공습 여파로 유가 상승세 지속",
-   "t_id": "Minyak Lanjutkan Penguatan Usai Serangan Houthi ke Arab Saudi",
-   "ai_ko": "· Saudi East-West 송유관 폐쇄, 유가 상승\n· Iraq발 드론 피격, Hormuz 우회 노선\n· 유가 강세로 에너지주 수혜, 인플레 압력",
-   "ai_id": "· Pipa East-West Saudi ditutup, minyak naik\n· Drone dari Iraq rusak jalur luar Hormuz\n· Saham energi diuntungkan, inflasi naik",
-   "ai_tags": [
-    "유가",
-    "지정학",
-    "인플레이션"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "geopolitik",
-    "inflasi"
-   ]
   }
  ],
  "kisi_news": [
@@ -18173,9 +18053,9 @@
  "macro": [
   {
    "k": "USD/IDR",
-   "v": "17,675",
-   "d": 0.26,
-   "ytd": 5.71,
+   "v": "17,678",
+   "d": 0.27,
+   "ytd": 5.73,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 16,720",
    "k_ko": "USD/IDR",
@@ -18185,9 +18065,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.03",
-   "d": -0.59,
-   "ytd": 12.16,
+   "v": "13.02",
+   "d": -0.63,
+   "ytd": 12.11,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18220,9 +18100,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.64",
-   "d": 0.03,
-   "ytd": 1.38,
+   "v": "99.60",
+   "d": 0.01,
+   "ytd": 1.35,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18232,9 +18112,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.30",
-   "d": 0.25,
-   "ytd": 79.9,
+   "v": "102.99",
+   "d": 0.08,
+   "ytd": 79.36,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18244,9 +18124,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,329.3",
-   "d": -0.59,
-   "ytd": 0.09,
+   "v": "4,337.1",
+   "d": -0.12,
+   "ytd": 0.27,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18798,12 +18678,40 @@
   },
   {
    "date": "2026-09-16",
+   "time": "00:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "20-Year Bond Auction",
+   "imp": 2,
+   "exp": null,
+   "prev": "5.204%",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "20년물 국채 입찰",
+   "title_id": "Lelang Obligasi AS Tenor 20 Tahun"
+  },
+  {
+   "date": "2026-09-16",
+   "time": "03:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "API Weekly Crude Oil Stock",
+   "imp": 2,
+   "exp": null,
+   "prev": "-0.300M",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "API 주간 원유 재고",
+   "title_id": "Stok Minyak Mentah Mingguan API"
+  },
+  {
+   "date": "2026-09-16",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "Core Retail Sales (MoM)  (Aug)",
    "imp": 3,
-   "exp": null,
+   "exp": "0.5%",
    "prev": "-0.3%",
    "act": null,
    "src": "investing.com",
@@ -18831,7 +18739,7 @@
    "country": "US",
    "title": "Import Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.0%",
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -18845,7 +18753,7 @@
    "country": "US",
    "title": "Retail Control (MoM)  (Aug)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.8%",
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -18859,7 +18767,7 @@
    "country": "US",
    "title": "Business Inventories (MoM)  (Jul)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.2%",
    "prev": "0.0%",
    "act": null,
    "src": "investing.com",
@@ -18873,7 +18781,7 @@
    "country": "US",
    "title": "Retail Inventories Ex Auto  (Jul)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.7%",
    "prev": "0.7%",
    "act": null,
    "src": "investing.com",
@@ -18882,13 +18790,27 @@
   },
   {
    "date": "2026-09-16",
+   "time": "21:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Crude Oil Inventories",
+   "imp": 3,
+   "exp": null,
+   "prev": "-0.391M",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "EIA 원유 재고",
+   "title_id": "Stok Minyak Mentah EIA"
+  },
+  {
+   "date": "2026-09-16",
    "time": "22:30",
    "kind": "macro",
    "country": "US",
    "title": "Atlanta Fed GDPNow  (Q3)",
    "imp": 2,
-   "exp": null,
-   "prev": null,
+   "exp": "4.4%",
+   "prev": "4.4%",
    "act": null,
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
@@ -18915,7 +18837,7 @@
    "country": "US",
    "title": "Fed Interest Rate Decision",
    "imp": 3,
-   "exp": null,
+   "exp": "4.00%",
    "prev": "3.75%",
    "act": null,
    "src": "investing.com",
@@ -18924,12 +18846,26 @@
   },
   {
    "date": "2026-09-17",
+   "time": "01:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "FOMC Press Conference",
+   "imp": 3,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "FOMC 기자회견",
+   "title_id": "Konferensi Pers FOMC"
+  },
+  {
+   "date": "2026-09-17",
    "time": "03:00",
    "kind": "macro",
    "country": "US",
    "title": "TIC Net Long-Term Transactions  (Jul)",
    "imp": 2,
-   "exp": null,
+   "exp": "146.3B",
    "prev": "172.7B",
    "act": null,
    "src": "investing.com",
@@ -19717,6 +19653,18 @@
    "kind_ko": "공모·자금",
    "kind_id": "Prospektus",
    "rk": 48
+  },
+  {
+   "ts": "2026-09-15T12:43:30+07:00",
+   "date": "2026-09-15",
+   "time": "12:43",
+   "t": "BOLT",
+   "type": "STOCK",
+   "title": "Komisaris Utama Perseroan Meninggal Dunia ",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/229fad720f_c712bfbf11.pdf",
+   "title_ko": "사내 이사장이자 Komisaris Utama 별세",
+   "title_id": "Komisaris Utama Perseroan Meninggal Dunia",
+   "rk": 46
   },
   {
    "ts": "2026-09-15T11:50:17+07:00",
@@ -20862,10 +20810,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-15 12:37",
-  "pc_age_min": 9,
-  "news_ai_cache": 97,
-  "news_ai_hit": 66,
+  "idx_from_pc": "2026-09-15 12:47",
+  "pc_age_min": 14,
+  "news_ai_cache": 96,
+  "news_ai_hit": 60,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -22723,7 +22671,7 @@
    "url": "https://www.medcom.id/ekonomi/bisnis/zNAdWdeK-dilantik-prabowo-jadi-menkeu-suahasil-nazara-ungkap-tugas-pertamanya",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/15/1842102/DKfwoNG3VR.jpg?w=720",
    "score": 423.65,
-   "srcs": 6,
+   "srcs": 7,
    "t_ko": "Prabowo 내각 재무장관 임명 Suahasil Nazara, 첫 과제 공개",
    "t_id": "Dilantik Prabowo Jadi Menkeu, Suahasil Nazara Ungkap Tugas Pertamanya"
   },
@@ -22737,7 +22685,7 @@
    "url": "https://ekonomi.republika.co.id/berita/tldtv4490/suahasil-jadi-menkeu-gantikan-purbaya-danantara-siap-bahas-setoran-dividen",
    "img": "https://static.republika.co.id/uploads/images/detailnews/019920100-1789380513-830-556.jpg",
    "score": 423.65,
-   "srcs": 6,
+   "srcs": 8,
    "t_ko": "Suahasil 재무장관 취임에 Danantara 배당 납부 논의 착수",
    "t_id": "Suahasil Jadi Menkeu Gantikan Purbaya, Danantara Siap Bahas Setoran Dividen",
    "ai_ko": "· Danantara, 국고 배당 Rp120조 납입 협의\n· 기존 국영기업 배당 연 Rp90조 대비 증가\n· 2026년 재정수지·국영 상장사 배당에 영향",
@@ -22780,6 +22728,20 @@
    ]
   },
   {
+   "ts": "2026-09-14T20:28:00+07:00",
+   "date": "2026-09-14",
+   "time": "09/14",
+   "src": "Katadata",
+   "t": "Skenario Danantara Rogoh Rp 517 Miliar untuk Beli 40,12% Saham BEI",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/bursa/6aa7f67aee47f/skenario-danantara-rogoh-rp-517-miliar-untuk-beli-40-12-saham-bei",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/04/Ilustrasi_logo_Danantara_dan_gedung_Danantara_Indonesia-2026_09_04-21_11_03_39d179be43b25b5ccf63e8916c549ea6_620x413_thumb.jpg",
+   "score": 417.35,
+   "srcs": 2,
+   "t_ko": "Danantara, BEI 지분 40.12% 인수에 Rp5,170억 투입 시나리오 검토",
+   "t_id": "Skenario Danantara Rogoh Rp 517 Miliar untuk Beli 40,12% Saham BEI"
+  },
+  {
    "ts": "2026-09-15T08:50:00+07:00",
    "date": "2026-09-15",
    "time": "08:50",
@@ -22803,33 +22765,6 @@
     "bursa",
     "kebijakan",
     "suku bunga"
-   ]
-  },
-  {
-   "ts": "2026-09-15T09:57:52+07:00",
-   "date": "2026-09-15",
-   "time": "09:57",
-   "src": "Bloomberg Technoz",
-   "t": "Harga Minyak Masih Tekan Rupiah",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121543/harga-minyak-masih-tekan-rupiah",
-   "g": 1,
-   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171850.jpeg",
-   "score": 408.25,
-   "srcs": 1,
-   "t_ko": "유가 하락세 지속에 루피화 환율 약세 압력",
-   "t_id": "Harga Minyak Masih Tekan Rupiah",
-   "ai_ko": "· 루피아 0.15% 약세, Rp17,675/USD\n· 유가 USD 106.9 지속에 에너지 수입 부담\n· 미 10년물 금리 5% 돌파도 압력 요인",
-   "ai_id": "· Rupiah melemah 0,15% ke Rp17.675/US$\n· Harga minyak bertahan di US$106,9/barel\n· Yield Treasury 10 tahun tembus 5%",
-   "ai_tags": [
-    "환율",
-    "유가",
-    "금리"
-   ],
-   "ai_tags_id": [
-    "rupiah",
-    "harga minyak",
-    "yield"
    ]
   }
  ],
@@ -32583,7 +32518,7 @@
    "alpha": -5.1,
    "vrank": 67,
    "flow": -40.0,
-   "srcs": 4
+   "srcs": 3
   },
   {
    "t": "FORU",
