@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 12:23",
+ "updated": "2026-09-15 12:27",
  "delay_min": 15,
- "fx_basis": "13.03 IDR/KRW · USD/IDR 17,675 · USD/KRW 1,356 · 12:00 Yahoo",
- "idr_per_krw": 13.03,
+ "fx_basis": "13.02 IDR/KRW · USD/IDR 17,675 · USD/KRW 1,357 · 12:00 Yahoo",
+ "idr_per_krw": 13.0233,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -315,7 +315,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 01:25",
+   "asof": "investing.com 12:26",
    "unit": "bp"
   }
  ],
@@ -330,7 +330,7 @@
   "volume": null,
   "value_src": "yahoo",
   "rank_src": "Yahoo 15분 지연 · 832종목 · 외국인·공시 PC 09-15 12:18",
-  "rank_asof": "12:21",
+  "rank_asof": "12:25",
   "rank_date": "2026-09-15",
   "adv": 334,
   "dec": 320,
@@ -15950,10 +15950,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6624.06,
+   "px": 6620.87,
    "prev": 6677.81,
-   "pct": -0.8,
-   "asof": "12:00",
+   "pct": -0.85,
+   "asof": "12:05",
    "live": true,
    "spark": [
     6643.44,
@@ -16016,17 +16016,18 @@
     6648.59,
     6635.02,
     6617.68,
-    6624.06
+    6620.05,
+    6620.87
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63463.54,
+   "px": 63341.64,
    "prev": 63633.57,
-   "pct": -0.27,
-   "asof": "12:05",
+   "pct": -0.46,
+   "asof": "12:10",
    "live": true,
    "spark": [
     63110.43,
@@ -16080,17 +16081,18 @@
     63466.54,
     63370.57,
     63443.37,
-    63463.54
+    63335.2,
+    63341.64
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24827.67,
+   "px": 24808.75,
    "prev": 24917.6,
-   "pct": -0.36,
-   "asof": "12:05",
+   "pct": -0.44,
+   "asof": "12:10",
    "live": true,
    "spark": [
     24806.13,
@@ -16126,7 +16128,8 @@
     24859.45,
     24859.45,
     24828.13,
-    24827.67
+    24815.52,
+    24808.75
    ]
   }
  ],
@@ -16192,7 +16195,7 @@
    "type": "Interim",
    "ex": "2026-09-16",
    "pay": "2026-10-02",
-   "yld": "12.45%",
+   "yld": "12.23%",
    "name": "Bank Mandiri Persero Tbk PT"
   },
   "PSAB": {
@@ -16216,8 +16219,8 @@
    ],
    "url": "https://www.idnfinancials.com/news/68863/sini-sells-subsidiary-for-idr-31-8-billion-as-shares-remain-suspended",
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/SINI-07082026.jpg",
-   "t_ko": "SINI, 거래정지 지속 가운데 자회사 Rp318억에 매각",
-   "t_id": "SINI Lepas Anak Usaha Rp31,8 Miliar di Tengah Suspensi Saham",
+   "t_ko": "SINI, 주식 거래정지 지속 가운데 자회사 Rp318억에 매각",
+   "t_id": "SINI Jual Anak Usaha Rp31,8 Miliar di Tengah Suspensi Saham",
    "ai_ko": "· Singaraja Putra(SINI), 자회사 지분 매각\n· Interkayu Nusantara 54% 전량 처분\n· 석탄광업 집중, 거래는 매매정지 상태",
    "ai_id": "· SINI jual 54% saham IKN Rp31,8 miliar\n· Pembeli Hendra Hasan Kustarjo\n· Fokus batu bara, saham disuspensi",
    "ai_tags": [
@@ -16372,8 +16375,8 @@
    ],
    "url": "https://www.idnfinancials.com/news/68867/edwin-soeryadjaya-buys-more-srtg-shares-as-retail-investors-shrink",
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/SRTG-Edwin-Soeryadjaja-04082026.jpg",
-   "t_ko": "SRTG, 소매투자자 감소 속 Edwin Soeryadjaya 자사주 추가 매입",
-   "t_id": "Edwin Soeryadjaya Borong Saham SRTG Saat Investor Ritel Menyusut",
+   "t_ko": "Edwin Soeryadjaya, 개인투자자 감소 속 SRTG 지분 추가 매수",
+   "t_id": "Edwin Soeryadjaya Tambah Saham SRTG Saat Investor Ritel Menyusut",
    "ai_ko": "· Edwin Soeryadjaya, SRTG 574만주 매입\n· 평균 Rp1,815.13, 총 Rp104.3억 규모\n· 지분 35.88%→35.92%, 주주 수는 감소",
    "ai_id": "· Edwin borong 5,74 juta saham SRTG\n· Rata-rata Rp1.815,13, Rp10,43 miliar\n· Kepemilikan naik 35,88% ke 35,92%",
    "ai_tags": [
@@ -17299,16 +17302,40 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-15T12:19:30+07:00",
+   "ts": "2026-09-15T12:24:56+07:00",
    "date": "2026-09-15",
-   "time": "12:19",
-   "src": "Detik",
-   "t": "Trans Mall Group Pasang PLTS 12,34 MWp di 16 Lokasi, Hemat Listrik 10%",
+   "time": "12:24",
+   "src": "CNBC",
+   "t": "10-year Treasury yield rises to highest since 2007 as Fed rate-hike expectations rise",
    "tags": [],
-   "url": "https://finance.detik.com/energi/d-8663434/trans-mall-group-pasang-plts-12-34-mwp-di-16-lokasi-hemat-listrik-10",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/plts-atap-transmart-1789448919218_169.jpeg?w=360&q=90",
-   "t_id": "Trans Mall Group Pasang PLTS 12,34 MWp di 16 Lokasi, Hemat Listrik 10%",
-   "t_ko": "Trans Mall Group, 16개 지점에 12.34 MWp 태양광 설치로 전력 10% 절감"
+   "url": "https://www.cnbc.com/2026/09/15/10-year-treasury-yield-rises-to-highest-since-2007.html",
+   "g": 1,
+   "t_ko": "연준 금리 인상 전망 강화에 미 10년물 국채 금리 2007년 이후 최고치로 상승",
+   "t_id": "Imbal Hasil US Treasury 10-Tahun Naik ke Level Tertinggi Sejak 2007 Seiring Ekspektasi Kenaikan Suku Bunga The Fed"
+  },
+  {
+   "ts": "2026-09-15T12:22:57+07:00",
+   "date": "2026-09-15",
+   "time": "12:22",
+   "src": "CNBC",
+   "t": "Oil and Treasury yields haven’t moved this closely in seven years. That’s bad news for markets",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/15/oil-us-treasurys-stocks-pressure.html",
+   "g": 1,
+   "t_ko": "유가와 미 국채 금리 7년래 동조화 심화 — 증시 하방 압력",
+   "t_id": "Korelasi Minyak dan Yield US Treasury Terketat dalam 7 Tahun, Buruk bagi Pasar"
+  },
+  {
+   "ts": "2026-09-15T12:21:00+07:00",
+   "date": "2026-09-15",
+   "time": "12:21",
+   "src": "Katadata",
+   "t": "25 Merek Beras Fortifikasi Diduga Palsu, Dijual hingga 4 Kali Harga Wajar",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/industri/6aa8d5d833666/25-merek-beras-fortifikasi-diduga-palsu-dijual-hingga-4-kali-harga-wajar",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/15/Konpers_Beras_Fortifikasi_Palsu-2026_09_15-12_12_00_e6400628736fe5b0b8a315499f0b4b98_620x413_thumb.jpeg",
+   "t_ko": "정상 가격 최대 4배 판매된 위조 의심 강화 쌀 25개 브랜드",
+   "t_id": "25 Merek Beras Fortifikasi Diduga Palsu, Dijual hingga 4 Kali Harga Wajar"
   },
   {
    "ts": "2026-09-15T12:16:44+07:00",
@@ -17320,7 +17347,7 @@
    "url": "https://www.jawapos.com/ekonomi/2609150242/detik-detik-purbaya-yudhi-sadewa-lengser-dari-menteri-keuangan",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/08/28/menteri-keuangan-purbaya-yudhi-sadewa-usai-menyampaikan-tanggapan-pemerintah-pada-rapat-paripurna-ke-3-masa-persidangan-i-tahun-sidang-2026-2027-di-kompleks-parlemen-senayan-jakarta-kamis-2782026-salman-toyibijawa-pos-MNkL2.webp",
    "t_id": "Detik-detik Purbaya Yudhi Sadewa Lengser dari Menteri Keuangan",
-   "t_ko": "Purbaya Yudhi Sadewa, 재무장관 퇴임",
+   "t_ko": "Purbaya Yudhi Sadewa 재무장관 퇴임 순간",
    "ai_ko": "· 재무부, 지방 인프라 금융 구도 제시\n· Sarana Multi Infrastruktur(SMI) 투입\n· 지방정부에 개발자금 공급 추진",
    "ai_id": "· Kemenkeu siapkan skema pembiayaan\n· PT SMI digandeng kerja sama pemda\n· Pemda dapat dana bangun daerah",
    "ai_tags": [
@@ -17333,18 +17360,6 @@
    ]
   },
   {
-   "ts": "2026-09-15T12:14:56+07:00",
-   "date": "2026-09-15",
-   "time": "12:14",
-   "src": "CNBC",
-   "t": "10-year Treasury yield rises to highest since 2007",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/15/10-year-treasury-yield-rises-to-highest-since-2007.html",
-   "g": 1,
-   "t_ko": "미국 10년물 국채 금리, 2007년 이후 최고 수준으로 상승",
-   "t_id": "Imbal Hasil Obligasi AS 10 Tahun Naik ke Level Tertinggi Sejak 2007"
-  },
-  {
    "ts": "2026-09-15T12:14:30+07:00",
    "date": "2026-09-15",
    "time": "12:14",
@@ -17353,7 +17368,7 @@
    "tags": [],
    "url": "https://finance.detik.com/foto-bisnis/d-8663421/purbaya-serahkan-jabatan-menkeu-kepada-suahasil-nazara",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/purbaya-serahkan-jabatan-menkeu-kepada-suahasil-nazara-1789449141031.jpeg?w=360&q=90",
-   "t_ko": "Purbaya, 재무장관직 Suahasil Nazara에게 인계",
+   "t_ko": "Purbaya, Suahasil Nazara에게 재무장관직 이양",
    "t_id": "Purbaya Serahkan Jabatan Menkeu kepada Suahasil Nazara"
   },
   {
@@ -17390,8 +17405,8 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-15/wade-ai-bosses-genuinely-worried-video",
    "g": 1,
-   "t_ko": "Wade, AI 최고경영진들의 진정한 우려 언급",
-   "t_id": "Wade: Petinggi AI 'Benar-Benar Khawatir'"
+   "t_ko": "Wade, AI 최고경영자들 진정으로 우려한다고 언급",
+   "t_id": "Wade: Pimpinan AI 'Benar-Benar Khawatir'"
   },
   {
    "ts": "2026-09-15T12:11:00+07:00",
@@ -17402,7 +17417,7 @@
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/933531/purbaya-serahkan-jabatan-menkeu-ke-suahasil-sampaikan-pernyataan-singkat",
    "t_id": "Purbaya Serahkan Jabatan Menkeu ke Suahasil, Sampaikan Pernyataan Singkat",
-   "t_ko": "Purbaya, Suahasil에게 재무장관직 인계하며 짧은 소감 발표",
+   "t_ko": "Purbaya, Suahasil에게 장관직 넘기며 짧은 소회 밝혀",
    "ai_ko": "· 재무장관 Purbaya, Suahasil에 직 이양\n· 취임 1년 만에 교체, 9월 14일 임명\n· 전날 국가예산·지방이전 회의 주재",
    "ai_id": "· Purbaya serahkan jabatan ke Suahasil\n· Dilantik Prabowo, Senin 14 Sep 2026\n· Sehari sebelumnya rapat APBN-TKD",
    "ai_tags": [
@@ -17424,7 +17439,7 @@
    "url": "https://finance.detik.com/energi/d-8663415/13-gerai-transmart-resmi-pasang-plts-atap-jadi-pelopor-green-retail-di-ri",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/plts-atap-transmart-1789448919515_169.jpeg?w=360&q=90",
    "t_id": "13 Gerai Transmart Resmi Pasang PLTS Atap, Jadi Pelopor Green Retail di RI",
-   "t_ko": "Transmart, 13개 매장 지붕형 태양광 공식 설치로 인도네시아 친환경 유통 선도",
+   "t_ko": "Transmart, 13개 매장에 태양광 설치해 친환경 유통 선도",
    "ai_ko": "· Trans Mall Group, 16곳 옥상 태양광 가동\n· 용량 12.34MWp, 연 16.8GWh 발전\n· 전기료 연 8~10% 절감, Xurya와 협력",
    "ai_id": "· PLTS atap Trans Mall di 16 lokasi\n· Kapasitas 12,34 MWp, 16,8 GWh/tahun\n· Efisiensi listrik 8-10% per tahun",
    "ai_tags": [
@@ -17447,8 +17462,8 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-15/us-10-year-treasury-yields-rise-to-highest-level-since-2007",
    "g": 1,
-   "t_ko": "미국 10년물 국채 금리, 2007년 이후 최고치로 상승",
-   "t_id": "Imbal Hasil Obligasi AS 10 Tahun Naik ke Level Tertinggi Sejak 2007"
+   "t_ko": "미 10년물 국채 금리 2007년 이후 최고치로 상승",
+   "t_id": "Imbal Hasil US Treasury 10-Tahun Naik ke Level Tertinggi Sejak 2007"
   },
   {
    "ts": "2026-09-15T12:06:01+07:00",
@@ -17635,7 +17650,7 @@
    "tags": [],
    "url": "https://finance.detik.com/energi/d-8663419/wamendag-cek-takaran-lpg-3-kg-753-spbe-pertamina-terapkan-bdkt",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/lpg-1789449192081_169.jpeg?w=360&q=90",
-   "t_ko": "무역부 차관, 3kg LPG 용량 점검 — Pertamina SPBE 753곳 BDKT 적용",
+   "t_ko": "Wamendag, 3kg LPG 정량 점검 — Pertamina 753개 충전소 BDKT 도입",
    "t_id": "Wamendag Cek Takaran LPG 3 Kg, 753 SPBE Pertamina Terapkan BDKT"
   },
   {
@@ -17864,8 +17879,8 @@
    "tags": [],
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVGZNVlpqdGZqMGlsa1lSR2IyWU0tbmd2R1ZkY2o5VDNlb0VsMEdhbWlZVzJBLXJ0WU9MTm13WnN2R0M0Slg4TzFkb1VSYVRxQXE5ejQ5eTNRbGcxdUVSNTFKYlk2WmxYbkdPMTJIUEZJRVdBUmFKVHVCamlsUzB2NFJLbkNGbkJFSjR3TTlhNF9vT2g4MXk0MjlzOHhVaWNGX3U3RGlUS0JzekpCb0VBbU8zMGdUbFpIaGlCVHlwcEtoR0U?oc=5",
    "g": 1,
-   "t_ko": "사우디 송유관 중단 및 추가 공격으로 공급 우려 고조에 유가 상승",
-   "t_id": "Minyak Naik Akibat Gangguan Pipa Saudi dan Serangan Baru Picu Kekhawatiran Pasokan"
+   "t_ko": "사우디 송유관 가동 중단 및 추가 공격으로 공급 우려 고조에 유가 상승",
+   "t_id": "Harga Minyak Naik Dipicu Gangguan Pipa Saudi dan Serangan Baru yang Tingkatkan Kekhawatiran Pasokan"
   },
   {
    "ts": "2026-09-15T11:22:45+07:00",
@@ -17964,31 +17979,6 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/15/1842110/BxW2J6pPbv.jpg?w=720",
    "t_ko": "Seblak 창업 자금 Rp300만부터 시작 — 비용 및 매출 상세 내역",
    "t_id": "Modal Usaha Seblak Mulai Rp3 Juta, Ini Rincian Biaya dan Omzetnya"
-  },
-  {
-   "ts": "2026-09-15T11:15:54+07:00",
-   "date": "2026-09-15",
-   "time": "11:15",
-   "src": "Detik",
-   "t": "HIPMI Sambut Menkeu Baru, Dorong Kebijakan Fiskal Pro-Pertumbuhan-Dunia Usaha",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8663307/hipmi-sambut-menkeu-baru-dorong-kebijakan-fiskal-pro-pertumbuhan-dunia-usaha",
-   "g": 1,
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/ketua-umum-bpp-hipmi-ade-jona-prasetyo-1789445696761_169.jpeg?w=360&q=90",
-   "t_ko": "HIPMI, 신임 재무장관 환영하며 친성장·기업 중심 재정정책 촉구",
-   "t_id": "HIPMI Sambut Menkeu Baru, Dorong Fiskal Pro-Pertumbuhan",
-   "ai_ko": "· 2분기 경제성장률 5.29% 기록\n· 투자 6.87%, 정부소비 15.97% 증가\n· HIPMI, 신임 재무장관에 재정 확대 요구",
-   "ai_id": "· Ekonomi kuartal II 2026 naik 5,29%\n· Investasi 6,87%, konsumsi pemerintah 15,97%\n· HIPMI dorong fiskal pro-pertumbuhan",
-   "ai_tags": [
-    "경제성장률",
-    "재정정책",
-    "투자"
-   ],
-   "ai_tags_id": [
-    "pertumbuhan ekonomi",
-    "kebijakan fiskal",
-    "investasi"
-   ]
   }
  ],
  "kisi_news": [
@@ -18160,9 +18150,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.03",
-   "d": -0.56,
-   "ytd": 12.2,
+   "v": "13.02",
+   "d": -0.63,
+   "ytd": 12.12,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18195,9 +18185,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.61",
-   "d": 0.0,
-   "ytd": 1.35,
+   "v": "99.62",
+   "d": 0.03,
+   "ytd": 1.36,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18207,9 +18197,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.28",
-   "d": 0.23,
-   "ytd": 79.87,
+   "v": "103.31",
+   "d": 0.39,
+   "ytd": 79.92,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18219,9 +18209,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,341.1",
-   "d": -0.32,
-   "ytd": 0.36,
+   "v": "4,339.5",
+   "d": -0.06,
+   "ytd": 0.32,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18243,9 +18233,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,306",
-   "d": -0.35,
-   "ytd": -2.25,
+   "v": "16,312",
+   "d": -0.31,
+   "ytd": -2.22,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -21273,9 +21263,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-15 12:18",
-  "pc_age_min": 5,
+  "pc_age_min": 9,
   "news_ai_cache": 96,
-  "news_ai_hit": 66,
+  "news_ai_hit": 65,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -23118,8 +23108,8 @@
    "tags": [],
    "url": "https://www.idnfinancials.com/news/68858/indonesias-stock-market-awaits-suahasil-effect-and-fed-rate-direction",
    "img": "https://photos.idnfinancials.com/static/web/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG3.jpg",
-   "score": 411.45,
-   "srcs": 3,
+   "score": 413.65,
+   "srcs": 7,
    "t_ko": "인도네시아 증시, Suahasil 효과와 연준 금리 방향성 주시",
    "t_id": "Bursa Saham Menanti Efek Suahasil dan Arah Suku Bunga The Fed"
   },
