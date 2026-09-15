@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 23:41",
+ "updated": "2026-09-15 23:55",
  "delay_min": 15,
- "fx_basis": "12.98 IDR/KRW · USD/IDR 17,682 · USD/KRW 1,362 · 20:34 Yahoo",
- "idr_per_krw": 12.9828,
+ "fx_basis": "12.99 IDR/KRW · USD/IDR 17,682 · USD/KRW 1,361 · 23:49 Yahoo",
+ "idr_per_krw": 12.9928,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,7 +326,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 23:39",
+   "asof": "investing.com 23:53",
    "unit": "bp"
   }
  ],
@@ -15707,10 +15707,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7586.73,
+   "px": 7590.29,
    "prev": 7620.37,
-   "pct": -0.44,
-   "asof": "23:35",
+   "pct": -0.39,
+   "asof": "23:50",
    "live": true,
    "spark": [
     7601.41,
@@ -15750,17 +15750,20 @@
     7587.87,
     7587.07,
     7588.09,
-    7586.73
+    7586.67,
+    7587.06,
+    7585.55,
+    7590.29
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26011.0,
+   "px": 26019.26,
    "prev": 26186.41,
-   "pct": -0.67,
-   "asof": "23:35",
+   "pct": -0.64,
+   "asof": "23:50",
    "live": true,
    "spark": [
     26107.43,
@@ -15800,17 +15803,20 @@
     26019.03,
     26011.32,
     26015.98,
-    26011.0
+    26011.0,
+    26005.12,
+    26002.15,
+    26019.26
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51988.65,
+   "px": 52033.84,
    "prev": 52421.57,
-   "pct": -0.83,
-   "asof": "23:35",
+   "pct": -0.74,
+   "asof": "23:50",
    "live": true,
    "spark": [
     52132.13,
@@ -15850,7 +15856,10 @@
     51982.24,
     51989.54,
     52003.42,
-    51988.65
+    51989.19,
+    52005.19,
+    52009.27,
+    52033.84
    ]
   },
   {
@@ -17314,9 +17323,58 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-15T23:36:51+07:00",
+   "ts": "2026-09-15T23:54:16.650851+07:00",
    "date": "2026-09-15",
-   "time": "23:36",
+   "time": "23:54",
+   "src": "Jawa Pos",
+   "t": "Perkuat Posisi di Industri Asuransi, Tugu Insurance Catat Laba Bersih Rp711,06 Miliar",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609150390/perkuat-posisi-di-industri-asuransi-tugu-insurance-catat-laba-bersih-rp71106-miliar",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/15/pt-asuransi-tugu-pratama-indonesia-tbk-tugu-insurance-terus-menjaga-momentum-pertumbuhan-dengan-memperkuat-fundamental-bisnis-dan-kualitas-kinerja-secara-berkelanjutanistimewa-2IY8Z.webp",
+   "t_ko": "Tugu Insurance, 보험업 입지 강화 속 순이익 Rp7,110억 기록",
+   "t_id": "Perkuat Posisi di Industri Asuransi, Tugu Insurance Catat Laba Bersih Rp711,06 Miliar"
+  },
+  {
+   "ts": "2026-09-15T23:46:42+07:00",
+   "date": "2026-09-15",
+   "time": "23:46",
+   "src": "Reuters",
+   "t": "Saudi cancels some oil cargoes after pipeline hit, top buyer chasing alternatives",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSzFDc2FCc0FfZmtWMnByQ3RVclRnWXlXOUdlSWJlVFdrOUZ0VFU2MHMtZXFRck9JdXZqTUs1VTlNRGVYdk1CQnZmQVRhaEh6UzlDbmQxMlZrSGdQTnBidmVibG10MnhiVDhZMC03Mi01VWRZdnNvT1R6M2tzMlI2RTFVNzJLdy1LbWtGY1A3Vm5Ka3VKRUpRRzU3U1BZTHdTU0c0T0RiM0tINDFoWE84UFUtdFBqa2lUcE5v?oc=5",
+   "g": 1,
+   "t_ko": "송유관 피격 후 사우디 일부 원유 선적 취소 — 주요 구매자 대체재 모색",
+   "t_id": "Saudi Batalkan Sejumlah Kargo Minyak Usai Pipa Diserang, Pembeli Utama Buru Alternatif"
+  },
+  {
+   "ts": "2026-09-15T23:45:00+07:00",
+   "date": "2026-09-15",
+   "time": "23:45",
+   "src": "MarketWatch",
+   "t": "Institutional investors are dangerously overinvested in stocks",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/institutional-investors-are-dangerously-overinvested-in-stocks-ea889386?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-99718623",
+   "t_ko": "기관투자자, 주식 비중 과도하게 확대",
+   "t_id": "Investor Institusional Kelebihan Investasi Saham Secara Berbahaya"
+  },
+  {
+   "ts": "2026-09-15T23:43:07+07:00",
+   "date": "2026-09-15",
+   "time": "23:43",
+   "src": "Bloomberg",
+   "t": "Venezuela Squeezes Banks as Higher Spending Tests Bolivar",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-15/venezuela-squeezes-banks-as-higher-spending-tests-bolivar",
+   "g": 1,
+   "t_ko": "베네수엘라, 지출 증가에 볼리바르화 압박 — 은행권 규제 강화",
+   "t_id": "Venezuela Tekan Perbankan Saat Lonjakan Belanja Uji Ketahanan Bolívar"
+  },
+  {
+   "ts": "2026-09-15T23:42:07+07:00",
+   "date": "2026-09-15",
+   "time": "23:42",
    "src": "CNBC",
    "t": "Judge blocks Kennedy Center board from putting Trump's name on plaza, building",
    "tags": [],
@@ -17324,6 +17382,19 @@
    "g": 1,
    "t_ko": "판사, Kennedy Center 이사회의 트럼프 이름 명명 금지 가처분",
    "t_id": "Hakim Cegah Dewan Kennedy Center Sematkan Nama Trump di Plasa dan Gedung"
+  },
+  {
+   "ts": "2026-09-15T23:33:00+07:00",
+   "date": "2026-09-15",
+   "time": "23:33",
+   "src": "Yahoo Finance",
+   "t": "Bernstein's AI slowdown warning has one clear loser",
+   "tags": [],
+   "url": "https://finance.yahoo.com/technology/ai/articles/bernsteins-ai-slowdown-warning-one-163300319.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/thestreet_881/073a237f06af60ca6ed4536eb5e555ad.jpg",
+   "t_ko": "Bernstein의 AI 둔화 경고에 따른 최대 피해 기업",
+   "t_id": "Peringatan Perlambatan AI Bernstein Punya Satu Pecundang Jelas"
   },
   {
    "ts": "2026-09-15T23:29:43+07:00",
@@ -17362,6 +17433,18 @@
    "img": "https://images.wsj.net/im-07626629",
    "t_ko": "헬스케어 부문 동향",
    "t_id": "Fokus Kesehatan: Market Talk"
+  },
+  {
+   "ts": "2026-09-15T23:27:43+07:00",
+   "date": "2026-09-15",
+   "time": "23:27",
+   "src": "Bloomberg",
+   "t": "Maduro Fixer Saab Pleads Guilty in US Money-Laundering Case",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-15/maduro-fixer-saab-pleads-guilty-in-us-money-laundering-case",
+   "g": 1,
+   "t_ko": "마두로 측근 Saab, 미국 자금세탁 혐의 유죄 인정",
+   "t_id": "Tokoh Kunci Maduro Saab Mengaku Bersalah dalam Kasus Pencucian Uang AS"
   },
   {
    "ts": "2026-09-15T23:26:00+07:00",
@@ -17441,19 +17524,6 @@
    "t_id": "Emas Mulai Bergerak karena Faktor yang Jauh Lebih Besar dari Inflasi"
   },
   {
-   "ts": "2026-09-15T23:20:29+07:00",
-   "date": "2026-09-15",
-   "time": "23:20",
-   "src": "Yahoo Finance",
-   "t": "Novo Nordisk Expands Obesity Drug to Children, But Market Hesitates on Adoption",
-   "tags": [],
-   "url": "https://finance.yahoo.com/healthcare/articles/novo-nordisk-expands-obesity-drug-162029037.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/4f4d6ca834b066b593c21f1e49810537.jpg",
-   "t_ko": "Novo Nordisk, 비만 치료제 소아 대상 확대에도 시장 반응은 신중",
-   "t_id": "Novo Nordisk Perluas Obat Obesitas ke Anak-anak, tapi Pasar Ragu soal Adopsi"
-  },
-  {
    "ts": "2026-09-15T23:19:03+07:00",
    "date": "2026-09-15",
    "time": "23:19",
@@ -17464,57 +17534,6 @@
    "g": 1,
    "t_ko": "역사적으로 연준은 시장이 예상한 금리 인상 단행 전망",
    "t_id": "Sejarah Tunjukkan The Fed Bakal Naikkan Suku Bunga yang Telah Dikunci Pasar"
-  },
-  {
-   "ts": "2026-09-15T23:16:00+07:00",
-   "date": "2026-09-15",
-   "time": "23:16",
-   "src": "MarketWatch",
-   "t": "Wall Street may have gotten the ‘slower AI’ story all wrong",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/wall-street-may-have-gotten-the-slower-ai-story-all-wrong-a08613c4?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-69966637",
-   "t_ko": "월가, AI 성장 둔화 전망 잘못 짚었을 가능성",
-   "t_id": "Wall Street Dinilai Salah Pahami Narasi ‘AI Lebih Lambat’"
-  },
-  {
-   "ts": "2026-09-15T23:14:29+07:00",
-   "date": "2026-09-15",
-   "time": "23:14",
-   "src": "CNBC",
-   "t": "Musk urges top AI labs, Chinese companies to test each other's models amid calls for slowdown",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/15/elon-musk-ai-safety-testing.html",
-   "g": 1,
-   "t_ko": "Musk, 속도 조절 요구 속 AI 연구소 및 중국 기업에 상호 모델 테스트 촉구",
-   "t_id": "Musk Desak Lab AI Puncak & Perusahaan China Uji Model Satu Sama Lain di Tengah Seruan Jeda"
-  },
-  {
-   "ts": "2026-09-15T23:11:00+07:00",
-   "date": "2026-09-15",
-   "time": "23:11",
-   "src": "MarketWatch",
-   "t": "Factory robots long posed a safety threat to human workers. This company says it has solved that problem.",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/factory-robots-long-posed-a-safety-threat-to-human-workers-one-company-says-its-solved-that-problem-2db84297?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-58131452",
-   "t_ko": "인간 작업자 안전 위협하던 공장 로봇, 문제 해결 발표한 기업",
-   "t_id": "Robot Pabrik Lama Ancam Keselamatan Pekerja, Perusahaan Ini Klaim Sudah Atasi Masalah"
-  },
-  {
-   "ts": "2026-09-15T23:00:00+07:00",
-   "date": "2026-09-15",
-   "time": "23:00",
-   "src": "Yahoo Finance",
-   "t": "OXEA taps Uber Freight to manage North American, European logistics",
-   "tags": [],
-   "url": "https://finance.yahoo.com/economy/articles/oxea-taps-uber-freight-manage-160000087.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/freightwaves_373/7edab1ebea664c14b4c552595e0e6ae7.jpg",
-   "t_ko": "OXEA, 북미·유럽 물류 관리에 Uber Freight 도입",
-   "t_id": "OXEA Tunjuk Uber Freight untuk Kelola Logistik Amerika Utara dan Eropa"
   },
   {
    "ts": "2026-09-15T22:45:33+07:00",
@@ -17598,17 +17617,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/pertamina-perkuat-ketahanan-energi-lewat-portofolio-lng-1789484219712.jpeg?w=360&q=90",
    "t_ko": "Pertamina, LNG 포트폴리오로 에너지 안보 강화 전략 추진",
    "t_id": "Jurus Pertamina Perkuat Ketahanan Energi Lewat Portofolio LNG"
-  },
-  {
-   "ts": "2026-09-15T21:47:00+07:00",
-   "date": "2026-09-15",
-   "time": "21:47",
-   "src": "Media Indonesia",
-   "t": "Ekonom: Pemerintah harus Dorong Reinvestasi untuk Perkuat Rupiah",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/933787/ekonom-pemerintah-harus-dorong-reinvestasi-untuk-perkuat-rupiah",
-   "t_ko": "전문가: 정부, 루피화 강세 위해 재투자 촉진 필요",
-   "t_id": "Ekonom: Pemerintah harus Dorong Reinvestasi untuk Perkuat Rupiah"
   },
   {
    "ts": "2026-09-15T21:29:00+07:00",
@@ -17924,9 +17932,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "13.02",
-   "d": -0.63,
-   "ytd": 12.11,
+   "v": "12.99",
+   "d": -0.9,
+   "ytd": 11.81,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17936,9 +17944,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.996%",
-   "d": 0.71,
-   "ytd": 20.01,
+   "v": "5.000%",
+   "d": 0.79,
+   "ytd": 20.11,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17971,9 +17979,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "105.34",
-   "d": 2.34,
-   "ytd": 83.46,
+   "v": "106.03",
+   "d": 3.01,
+   "ytd": 84.66,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17983,9 +17991,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,335.3",
-   "d": -0.23,
-   "ytd": 0.22,
+   "v": "4,335.7",
+   "d": -0.22,
+   "ytd": 0.23,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18007,9 +18015,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "15,898",
-   "d": -2.85,
-   "ytd": -4.7,
+   "v": "15,907",
+   "d": -2.79,
+   "ytd": -4.65,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -21548,7 +21556,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-15 16:12",
-  "pc_age_min": 449,
+  "pc_age_min": 463,
   "news_ai_cache": 87,
   "news_ai_hit": 28,
   "on_runner": true,
@@ -23349,7 +23357,7 @@
    "t_ko": "10년물 국채금리 5% 근접에 증시 하락",
    "t_id": "Saham Turun Seiring Imbal Hasil US Treasury 10 Tahun Bertahan Dekat 5%",
    "score": 317.5,
-   "srcs": 7
+   "srcs": 6
   }
  ],
  "daylog": {
