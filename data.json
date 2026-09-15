@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-15 08:54",
+ "updated": "2026-09-15 08:58",
  "delay_min": 15,
- "fx_basis": "13.05 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,351 · 08:26 Yahoo",
- "idr_per_krw": 13.0527,
+ "fx_basis": "13.04 IDR/KRW · USD/IDR 17,630 · USD/KRW 1,352 · 08:26 Yahoo",
+ "idr_per_krw": 13.0382,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -110,7 +110,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 08:53",
+   "asof": "investing.com 08:57",
    "unit": "bp"
   }
  ],
@@ -15681,10 +15681,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6693.53,
+   "px": 6680.82,
    "prev": 6677.81,
-   "pct": 0.24,
-   "asof": "08:30",
+   "pct": 0.05,
+   "asof": "08:35",
    "live": true,
    "spark": [
     6643.44,
@@ -15705,17 +15705,18 @@
     6700.09,
     6702.33,
     6686.2,
-    6693.53
+    6688.24,
+    6680.82
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63877.82,
+   "px": 63797.91,
    "prev": 63633.57,
-   "pct": 0.38,
-   "asof": "08:35",
+   "pct": 0.26,
+   "asof": "08:40",
    "live": true,
    "spark": [
     63110.43,
@@ -15737,21 +15738,23 @@
     63906.14,
     63902.53,
     63944.79,
-    63877.82
+    63893.09,
+    63797.91
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24830.91,
+   "px": 24802.09,
    "prev": 24917.6,
-   "pct": -0.35,
-   "asof": "08:35",
+   "pct": -0.46,
+   "asof": "08:40",
    "live": true,
    "spark": [
     24806.13,
-    24830.91
+    24844.01,
+    24802.09
    ]
   }
  ],
@@ -15831,6 +15834,34 @@
  },
  "news": [
   {
+   "ts": "2026-09-15T08:45:31+07:00",
+   "date": "2026-09-15",
+   "time": "08:45",
+   "src": "Detik",
+   "t": "INET Cetak Pertumbuhan Kinerja, INDY Kembangkan Ekosistem Kendaraan Listrik",
+   "tags": [
+    "INDY",
+    "INET",
+    "UVCR"
+   ],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8663124/inet-cetak-pertumbuhan-kinerja-indy-kembangkan-ekosistem-kendaraan-listrik",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/15/bursa-dan-valas-1789435363-1789435363924.jpeg?w=360&q=90",
+   "t_ko": "INET 실적 성장세 시현 및 INDY 전기차 생태계 구축 추진",
+   "t_id": "INET Cetak Pertumbuhan Kinerja, INDY Kembangkan Ekosistem Kendaraan Listrik",
+   "ai_ko": "· INET membukukan pendapatan semester I 2026 sebesar Rp926,45 miliar atau melonjak 1.958,68% secara tahunan\n· Lonjakan ditopang konsolidasi PADA serta ekspansi layanan internet dengan total aset mencapai Rp6,11 triliun\n· Pertumbuhan signifikan memperkuat posisi sektor telekomunikasi dan infrastruktur digital di bursa",
+   "ai_id": "· INET catat pendapatan Rp926,45 miliar pada 1H26 atau melonjak 1.958,68% secara tahunan\n· Lonjakan ditopang konsolidasi PADA serta ekspansi layanan internet dengan total aset Rp6,11 triliun\n· Pertumbuhan memperkuat posisi sektor telekomunikasi dan infrastruktur digital",
+   "ai_tags": [
+    "실적",
+    "M&A",
+    "유상증자"
+   ],
+   "ai_tags_id": [
+    "kinerja",
+    "akuisisi",
+    "rights issue"
+   ]
+  },
+  {
    "ts": "2026-09-15T08:32:29+07:00",
    "date": "2026-09-15",
    "time": "08:32",
@@ -15843,17 +15874,15 @@
    "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250411084716.jpeg",
    "t_ko": "Antam 금값 Rp10,000 하락 — 자사주 매입가는 낙폭 확대",
    "t_id": "Harga Emas Antam Hari ini Turun Rp10.000, Buyback Lebih Dalam",
-   "ai_ko": "· 금값 Rp2,592,000/g 기록\n· 전일 대비 Rp10,000 하락\n· Aneka Tambang(ANTM) 실적 악화",
-   "ai_id": "· Harga emas Rp2,592,000/gram\n· Turun Rp10,000 dari kemarin\n· Kinerja Aneka Tambang(ANTM) tertekan",
+   "ai_ko": "· ANTM membanderol emas batangan Rp2.592.000 per gram dengan penurunan harga Rp10.000\n· Pelemahan dipicu koreksi harga emas dunia di pasar spot ke level USD 4.282,7 per troy ons\n· Penurunan harga jual berdampak langsung pada emiten logam mulia dan sektor pertambangan",
+   "ai_id": "· ANTM banderol emas Rp2.592.000/gram dengan penurunan harga Rp10.000\n· Pelemahan dipicu koreksi harga emas dunia ke level USD 4.282,7/troy ons\n· Penurunan harga berdampak langsung pada emiten logam mulia dan pertambangan",
    "ai_tags": [
-    "금",
     "원자재",
-    "시황"
+    "금"
    ],
    "ai_tags_id": [
-    "emas",
     "komoditas",
-    "pasar"
+    "emas"
    ]
   },
   {
@@ -15869,17 +15898,17 @@
    "img": "https://images.bloombergtechnoz.com/data/2023/04/image-20230427054544.jpg",
    "t_ko": "BYAN, Haji Isam 인수설 속 불가항력 사태 발생",
    "t_id": "Bayan (BYAN) Alami Force Majeure di Tengah Isu Masuknya Haji Isam",
-   "ai_ko": "· RKAB 2026 미승인 발생\n· 자회사 3곳 생산 차질\n· Bayan Resources(BYAN) 계약 불이행",
-   "ai_id": "· RKAB 2026 belum disetujui\n· Produksi 3 anak usaha terganggu\n· Bayan Resources(BYAN) force majeure",
+   "ai_ko": "· BYAN mengumumkan kondisi force majeure akibat belum terbitnya persetujuan perubahan RKAB 2026\n· Kendala izin operasional dialami tiga anak usaha sehingga tidak mampu memenuhi suplai pelanggan\n· Gangguan produksi membebani kinerja keuangan emiten batu bara milik Low Tuck Kwong",
+   "ai_id": "· BYAN umumkan force majeure akibat belum terbitnya persetujuan perubahan RKAB 2026\n· Kendala izin dialami tiga anak usaha sehingga gagal memenuhi suplai pelanggan\n· Gangguan produksi membebani kinerja emiten batu bara milik Low Tuck Kwong",
    "ai_tags": [
-    "석탄",
     "규제",
-    "생산"
+    "석탄",
+    "실적"
    ],
    "ai_tags_id": [
-    "batu bara",
     "regulasi",
-    "produksi"
+    "batu bara",
+    "kinerja"
    ]
   },
   {
@@ -15897,17 +15926,15 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/08/09/pergerakan-indeks-harga-saham-gabungan-ihsg-di-bursa-efek-indonesia-bei-jakarta-jumat-782026-dery-ridwansah-jawaposcom-M6XR7.webp",
    "t_ko": "IHSG 조정 압력 지속 전망 — MNC Sekuritas 추천주 정리",
    "t_id": "IHSG Berpotensi Lanjutkan Koreksi, Cek Rekomendasi Saham MNC Sekuritas Hari Ini",
-   "ai_ko": "· 외국인 매도세 지속\n· 지수 하락 압력 확대\n· Medco(MEDC) 관심 종목",
-   "ai_id": "· Tekanan jual asing berlanjut\n· IHSG rawan koreksi lanjuta n\n· Medco(MEDC) saham pilihan",
+   "ai_ko": "· MNC Sekuritas merekomendasikan saham MEDC, RAJA, SSMS, dan AVIA pada perdagangan Senin\n· Rekomendasi diberikan di tengah potensi kelanjutan koreksi Indeks Harga Saham Gabungan\n· Pemilihan saham didasarkan analisis teknikal untuk mencermati peluang beli saat melemah",
+   "ai_id": "· MNC Sekuritas rekomendasikan saham MEDC, RAJA, SSMS, dan AVIA pada perdagangan\n· Rekomendasi diberikan di tengah potensi kelanjuta n koreksi Indeks Harga Saham Gabungan\n· Pemilihan saham didasarkan analisis teknikal untuk mencermati peluang beli",
    "ai_tags": [
-    "증시",
-    "종목추천",
-    "외국인"
+    "증권",
+    "추천"
    ],
    "ai_tags_id": [
-    "IHSG",
-    "rekomendasi",
-    "asing"
+    "sekuritas",
+    "rekomendasi"
    ]
   },
   {
@@ -15923,17 +15950,15 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2021/12/30/PT_Bayan_Resources_Tbk_BYAN-2021_12_30-11_33_00_778adbca313f3c19647cb5a2200c2f2b_620x413_thumb.jpg",
    "t_ko": "BYAN, Haji Isam 인수 추진 속 석탄 광업권 RKAB 승인 난항",
    "t_id": "Hak Tambang Batu Bara Bayan (BYAN) Terganjal RKAB di Tengah Manuver Haji Isam",
-   "ai_ko": "· 생산량 6,800만 톤 달성\n· 자회사 RKAB 미승인 직면\n· Bayan Resources(BYAN) 리스크 확대",
-   "ai_id": "· Produksi capai 68 juta ton\n· Kendala RKAB anak usaha\n· Risiko Bayan Resources(BYAN) naik",
+   "ai_ko": "· BYAN dan tiga anak usaha menetapkan force majeure karena perubahan RKAB 2026 belum disetujui ESDM\n· Kendala perizinan mengganggu pasokan batu bara di tengah rekor produksi 68 juta ton pada 2025\n· Hambatan operasional memengaruhi kemampuan emiten memenuhi kewajiban kontrak pelanggan",
+   "ai_id": "· BYAN tetapkan force majeure karena perubahan RKAB 2026 belum disetujui ESDM\n· Kendala perizinan mengganggu pasokan batu bara di tengah rekor produksi 68 juta ton\n· Hambatan operasional memengaruhi kemampuan emiten penuhi kontrak pelanggan",
    "ai_tags": [
-    "석탄",
-    "생산",
-    "규제"
+    "규제",
+    "석탄"
    ],
    "ai_tags_id": [
-    "batu bara",
-    "produksi",
-    "regulasi"
+    "regulasi",
+    "batu bara"
    ]
   },
   {
@@ -15949,17 +15974,15 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/14/Simulasi_anak_usaha_PT_Triputra_Agro_Persada_Tbk_PT_Etam_Bersama-2026_09_14-18_27_46_f4bbda7ff98ce8001329d4a19e264473_620x413_thumb.jpeg",
    "t_ko": "Triputra Agro Persada, 위성·현장 점검 통한 산불 조기 감지 체계 구축",
    "t_id": "Dari Satelit ke Lapangan, Upaya Triputra Agro Persada Deteksi Dini Karhutla",
-   "ai_ko": "· 핫스팟 모니터링 시스템 구축\n· 자회사 팜유 농장 방재 강화\n· Triputra Agro(TAP) 화재 예방",
-   "ai_id": "· Sistem deteksi hotspot aktif\n· Pengamanan kebun sawit diperketat\n· Mitigasi Triputra Agro(TAP)",
+   "ai_ko": "· TAP memperkuat sistem peringatan dini karhutla melalui pemantauan satelit dan patroli lapangan\n· Anak usaha TAP melibatkan 237 personel serta sarana pemadaman di Kutai Timur, Kalimantan Timur\n· Mitigasi risiko kebakaran menjaga keberlanjutan operasional perkebunan sawit perseroan",
+   "ai_id": "· TAP perkuat sistem peringatan dini karhutla melalui pemantauan satelit dan patroli\n· Anak usaha TAP libatkan 237 personel serta sarana pemadaman di Kutai Timur\n· Mitigasi risiko kebakaran jaga keberlanjuta n operasional perkebunan sawit",
    "ai_tags": [
-    "팜유",
-    "농업",
-    "ESG"
+    "ESG",
+    "CPO"
    ],
    "ai_tags_id": [
-    "sawit",
-    "pertanian",
-    "ESG"
+    "ESG",
+    "sawit"
    ]
   },
   {
@@ -15977,17 +16000,15 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/08/IHSG_kembali_ditutup_melemah_ke_level_5342_Foto_KatadataFauza_Sy-2026_06_08-17_48_01_7a52cca2efab744648edec05cc36728f_620x413_thumb.jpg",
    "t_ko": "IHSG 하락 압력 우려 속 Analis, AADI·ASII·BRMS 제시",
    "t_id": "IHSG Hari Ini Berpotensi Turun, Analis Jagokan Saham AADI, ASII hingga BRMS",
-   "ai_ko": "· 지수 6,290선 테스트 전망\n· 국제유가 및 환율 변동성 주목\n· Adaro(AADI) 매수 추천",
-   "ai_id": "· IHSG uji support 6,290\n· Fokus minyak dunia dan rupiah\n· Adaro Andalan(AADI) dijagokan",
+   "ai_ko": "· Analis memproyeksikan IHSG berpotensi turun dengan support Fibonacci di level 6.290 pada perdagangan\n· Pergerakan pasar dipengaruhi harga minyak dunia, yield US Treasury, serta kebijakan BI\n· Analis merekomendasikan saham AADI, ASII, dan BRMS untuk dicermati investor",
+   "ai_id": "· Analis proyeksikan IHSG berpotensi turun uji support level 6.290 pada perdagangan\n· Pergerakan pasar dipengaruhi harga minyak, yield US Treasury, dan kebijakan BI\n· Analis rekomendasikan saham AADI, ASII, dan BRMS untuk dicermati investor",
    "ai_tags": [
     "증시",
-    "유가",
-    "환율"
+    "추천"
    ],
    "ai_tags_id": [
-    "IHSG",
-    "minyak",
-    "kurs"
+    "indeks",
+    "rekomendasi"
    ]
   },
   {
@@ -16003,17 +16024,15 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/8lS1O_V9znL5jGj7KujBq-Slcmo=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4220931/original/010439400_1668038510-Laba_Rugi_3.jpg",
    "t_ko": "CMRY, 자회사 2곳 대상 증자 참여",
    "t_id": "Emiten CMRY Menambah Modal Buat 2 Anak Usaha",
-   "ai_ko": "· 자회사 유상증자 Rp3,250억\n· Macrosentra 및 Macroprima 대상\n· Cimory(CMRY) 시설 확장 투자",
-   "ai_id": "· Tambah modal anak usaha Rp325 miliar\n· Sasaran Macrosentra dan Macroprima\n· Ekspansi Cisarua Mountain(CMRY)",
+   "ai_ko": "· CMRY menyuntik modal Rp325 miliar kepada dua anak usaha untuk mendukung rencana ekspansi\n· Suntikan dana dialokasikan Rp125 miliar ke MS dan Rp200 miliar ke MP secara bertahap\n· Aksi korporasi memperkuat modal kerja dan kapasitas produksi emiten barang konsumsi",
+   "ai_id": "· CMRY suntik modal Rp325 miliar kepada dua anak usaha untuk mendukung ekspansi\n· Dana dialokasikan Rp125 miliar ke MS dan Rp200 miliar ke MP secara bertahap\n· Aksi korporasi perkuat modal kerja dan kapasitas produksi emiten konsumer",
    "ai_tags": [
     "유상증자",
-    "투자",
-    "음식료"
+    "실적"
    ],
    "ai_tags_id": [
     "rights issue",
-    "investasi",
-    "mamin"
+    "kinerja"
    ]
   },
   {
@@ -16029,17 +16048,15 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2021/02/15/divestasi_saham.jpg",
    "t_ko": "SINI, Interkayu Nusantara 지분 Rp318억 규모 매각",
    "t_id": "Singaraja Putra (SINI) Divestasi Saham Interkayu Nusantara Senilai Rp31,80 Miliar",
-   "ai_ko": "· 지분 54% 매각 완료\n· 거래금액 Rp31.80억\n· Singaraja Putra(SINI) 자회사 정리",
-   "ai_id": "· Divestasi saham 54 persen\n· Nilai transaksi Rp31,80 miliar\n· Singaraja Putra(SINI) lepas anak usaha",
+   "ai_ko": "· SINI mendivestasi 54% kepemilikan saham pada anak usaha pengolahan kayu IKN senilai Rp31,80 miliar\n· Penjualan seluruh saham IKN dilakukan kepada Hendra Hasan Kustarjo melalui akta jual beli\n· Transaksi pelepasan aset tidak memenuhi kriteria transaksi material berdasarkan ketentuan OJK",
+   "ai_id": "· SINI divestasi 54% saham anak usaha pengolahan kayu IKN senilai Rp31,80 miliar\n· Penjualan seluruh saham IKN dilakukan kepada Hendra Hasan Kustarjo via akta\n· Transaksi pelepasan aset tidak memenuhi kriteria material berdasarkan OJK",
    "ai_tags": [
     "M&A",
-    "지분매각",
-    "목재"
+    "지분매각"
    ],
    "ai_tags_id": [
     "divestasi",
-    "akuisisi",
-    "kayu"
+    "akuisisi"
    ]
   },
   {
@@ -16056,17 +16073,15 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/07/23/ihsg_dhera.jpg",
    "t_ko": "IHSG, 6,290~6,370선 추가 이탈 우려 — MEDC·RAJA 분석",
    "t_id": "IHSG Diprediksi Masih Rawan Uji Rentang 6.290-6.370, Simak Analisa Saham MEDC-RAJA",
-   "ai_ko": "· 지수 0.1% 하락 마감\n· 추가 조정 가능성 상존\n· Medco(MEDC) 저점 매수",
-   "ai_id": "· IHSG melemah 0,1 persen\n· Potensi uji support berlanjut\n· Medco(MEDC) buy on weakness",
+   "ai_ko": "· IHSG terkoreksi tipis 0,1% ke level 6.534 dengan kerawanan uji rentang 6.290 sampai 6.370\n· MEDC menguat 1,29% ke Rp1.575 dengan rekomendasi beli saat melemah dari sekuritas\n· Pergerakan saham energi dipantau investor di tengah fluktuasi volume transaksi pasar",
+   "ai_id": "· IHSG terkoreksi 0,1% ke 6.534 dengan kerawanan uji rentang 6.290 hingga 6.370\n· MEDC menguat 1,29% ke Rp1.575 dengan rekomendasi beli saat melemah dari sekuritas\n· Pergerakan saham energi dipantau investor di tengah fluktuasi volume transaksi",
    "ai_tags": [
     "증시",
-    "기술적분석",
-    "에너지"
+    "추천"
    ],
    "ai_tags_id": [
-    "IHSG",
-    "teknikal",
-    "energi"
+    "indeks",
+    "rekomendasi"
    ]
   },
   {
@@ -16082,17 +16097,15 @@
    "img": "https://img.idxchannel.com/media/439/images/idx/2024/07/24/gaji-direksi-komisaris-bumn.jpg",
    "t_ko": "Transcoal Pacific(TCPI), Ade Supandi 이사회 의장 선임",
    "t_id": "Ade Supandi Ditunjuk Jadi Komisaris Utama Transcoal Pacific (TCPI)",
-   "ai_ko": "· 임시 주총 개최 완료\n· Ade Supandi 신임 의장 선임\n· Transcoal Pacific(TCPI) 경영진 개편",
-   "ai_id": "· RUPSLB setujui pengurus baru\n· Ade Supandi jadi Komisaris Utama\n· Perombakan Transcoal Pacific(TCPI)",
+   "ai_ko": "· TCPI mengangkat Ade Supandi sebagai Komisaris Utama dan Komisaris Independen perseroan\n· RUPSLB menyetujui perubahan susunan dewan komisaris hingga penutupan RUPST 2028\n· Penyegaran manajemen diharapkan memperkuat tata kelola emiten penyedia jasa pelayaran",
+   "ai_id": "· TCPI angkat Ade Supandi sebagai Komisaris Utama dan Komisaris Independen\n· RUPSLB setujui perubahan susunan dewan komisaris hingga penutupan RUPST 2028\n· Penyegaran manajemen harapkan perkuat tata kelola emiten jasa pelayaran",
    "ai_tags": [
-    "경영진",
-    "주총",
-    "물류"
+    "지배구조",
+    "경영진"
    ],
    "ai_tags_id": [
-    "manajemen",
     "RUPS",
-    "logistik"
+    "manajemen"
    ]
   },
   {
@@ -16108,17 +16121,15 @@
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/HAPPY-HAPSORO-UANG-14092026.jpg",
    "t_ko": "UANG, 최적 유동주식비율 충족 위한 3대 전략 마련",
    "t_id": "UANG Siapkan 3 Strategi Penuhi Syarat Minimum Free Float",
-   "ai_ko": "· 유통주식 비율 충족 추진\n· 스크립트 주식 전환 시도\n· Pakuan(UANG) 규제 대응",
-   "ai_id": "· Strategi penuhi free float\n· Konversi saham scrip\n· Pakuan(UANG) atasi kendala",
+   "ai_ko": "· UANG menyiapkan tiga strategi untuk memenuhi ketentuan porsi saham publik minimum bursa\n· Kendala pemenuhan meliputi likuiditas perdagangan rendah dan saham scrip non-afiliasi\n· Perseroan mengkaji konversi saham, peningkatan likuiditas, dan aksi korporasi lanjutan",
+   "ai_id": "· UANG siapkan tiga strategi untuk penuhi ketentuan porsi saham publik minimum\n· Kendala pemenuhan meliputi likuiditas rendah dan saham scrip non-afiliasi\n· Perseroan kaji konversi saham, peningkatan likuiditas, dan aksi korporasi",
    "ai_tags": [
     "규제",
-    "유통주식",
-    "부동산"
+    "유상증자"
    ],
    "ai_tags_id": [
     "regulasi",
-    "free float",
-    "properti"
+    "rights issue"
    ]
   },
   {
@@ -16133,19 +16144,7 @@
    "url": "https://www.idxchannel.com/market-news/pefindo-beri-petrosea-ptro-peringkat-ida-dengan-prospek-stabil",
    "img": "https://img.idxchannel.com/media/439/images/idx/2019/04/22/Petrosea.jpg",
    "t_ko": "Pefindo, Petrosea(PTRO) 신용등급 idA+ 및 안정적 전망 부여",
-   "t_id": "Pefindo Sematkan Peringkat idA+ untuk Petrosea (PTRO) dengan Prospek Stabil",
-   "ai_ko": "· 신용등급 idA+ 유지\n· 등급 전망 안정적 부여\n· Petrosea(PTRO) 재무 건전성 입증",
-   "ai_id": "· Pefindo tegaskan rating idA+\n· Prospek perusahaan stabil\n· Kualitas Petrosea(PTRO) terjaga",
-   "ai_tags": [
-    "신용등급",
-    "채권",
-    "광업"
-   ],
-   "ai_tags_id": [
-    "peringkat",
-    "obligasi",
-    "pertambangan"
-   ]
+   "t_id": "Pefindo Sematkan Peringkat idA+ untuk Petrosea (PTRO) dengan Prospek Stabil"
   },
   {
    "ts": "2026-09-14T21:56:05+07:00",
@@ -16258,20 +16257,6 @@
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/FORU-15092026.jpg",
    "t_ko": "FORU, 석탄 광산 인수를 위한 Rp2.71조 유상증자 준비",
    "t_id": "FORU Siap Gelar Rights Issue Rp27,1 Triliun untuk Tambang Batu Bara"
-  },
-  {
-   "ts": "2026-09-14T14:18:00+07:00",
-   "date": "2026-09-14",
-   "time": "09/14",
-   "src": "IDX Channel",
-   "t": "Fortune Indonesia (FORU) Raih Restu OJK untuk Gelar Rights Issue Jumbo",
-   "tags": [
-    "FORU"
-   ],
-   "url": "https://www.idxchannel.com/market-news/fortune-indonesia-foru-raih-restu-ojk-untuk-gelar-rights-issue-jumbo",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/14/foru_borneo_batu_bara.jpg",
-   "t_ko": "FORU, OJK로부터 대규모 유상증자 승인 획득",
-   "t_id": "Fortune Indonesia (FORU) Raih Restu OJK untuk Gelar Rights Issue Jumbo"
   },
   {
    "ts": "2026-09-14T14:15:55+07:00",
@@ -16591,6 +16576,19 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-15T08:51:00+07:00",
+   "date": "2026-09-15",
+   "time": "08:51",
+   "src": "IDX Channel",
+   "t": "Harga Emas Antam Hari Ini Turun Rp10 Ribu, Jadi Rp2.592.000 per Gram",
+   "tags": [],
+   "url": "https://www.idxchannel.com/market-news/harga-emas-antam-hari-ini-turun-rp10-ribu-jadi-rp2592000-per-gram",
+   "g": 1,
+   "img": "https://img.idxchannel.com/media/439/images/idx/2025/04/23/emas_antam_Yudistiro_Pranoto_inews_group.jpg",
+   "t_id": "Harga Emas Antam Hari Ini Turun Rp10 Ribu, Jadi Rp2.592.000 per Gram",
+   "t_ko": "Antam 오늘 금 가격 그램당 Rp1만 내려 Rp2,592,000 기록"
+  },
+  {
    "ts": "2026-09-15T08:45:45+07:00",
    "date": "2026-09-15",
    "time": "08:45",
@@ -16599,7 +16597,7 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121534/suahasil-gantikan-purbaya-respons-pasar-terbelah",
    "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814105708.jpeg",
-   "t_ko": "Suahasil의 Purbaya 후임 임명에 시장 반응 엇갈려",
+   "t_ko": "Suahasil의 Purbaya 교체에 시장 반응 엇갈려",
    "t_id": "Suahasil Gantikan Purbaya, Respons Pasar Terbelah"
   },
   {
@@ -16622,7 +16620,7 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-15/landmark-nse-ipo-threatens-to-hollow-out-india-shadow-market",
    "g": 1,
-   "t_ko": "인도 증권사 대어급 IPO에 비공식 시장 위축 우려",
+   "t_ko": "인도 대형 NSE 상장, 그림자 금융시장 위축 우려",
    "t_id": "IPO Landmark NSE Ancam Kosongkan Pasar Bayangan India"
   },
   {
@@ -16647,7 +16645,7 @@
    "url": "https://www.liputan6.com/saham/read/8291800/bursa-asia-kompak-melemah-investor-tunggu-keputusan-the-fed",
    "g": 1,
    "img": "https://cdn0-production-images-kly.akamaized.net/OD_Mar2z7vAkPov4BJdvnUJy4Ws=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1694575/original/019523900_1503994463-20170829-Saham-Akibat-Rudal-Korut-AP2.jpg",
-   "t_ko": "아시아증시 일제히 약세 — 연준 결정 주시",
+   "t_ko": "아시아 증시 동반 하락 속 연준 결정 주시",
    "t_id": "Bursa Asia Kompak Melemah, Investor Tunggu Keputusan The Fed"
   },
   {
@@ -16931,18 +16929,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/18/pemerintah-pastikan-apbn-2025-tetap-sehat-meski-defisit-rp560-triliun-1766056871530_169.jpeg?w=360&q=90",
    "t_ko": "Purbaya, 오늘 Suahasil에 재무부 장관직 이양",
    "t_id": "Purbaya Serahkan Jabatan Menkeu ke Suahasil Hari Ini"
-  },
-  {
-   "ts": "2026-09-15T07:33:00+07:00",
-   "date": "2026-09-15",
-   "time": "07:33",
-   "src": "WSJ",
-   "t": "Nikkei Falls 0.2%, Dragged by Chip-Related Stocks, Trading Houses",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/stocks/nikkei-falls-0-2-dragged-by-chip-related-stocks-trading-houses-9b2ded96?mod=rss_markets_main",
-   "g": 1,
-   "t_ko": "Nikkei, 반도체·상사주 약세로 0.2% 하락",
-   "t_id": "Nikkei Turun 0,2%, Tertekan Saham Terkait Chip dan Perusahaan Dagang"
   },
   {
    "ts": "2026-09-15T07:30:29+07:00",
@@ -17233,9 +17219,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.60",
+   "v": "99.59",
    "d": 0.27,
-   "ytd": 1.34,
+   "ytd": 1.33,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17245,9 +17231,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.80",
-   "d": -0.44,
-   "ytd": 79.03,
+   "v": "102.73",
+   "d": -0.5,
+   "ytd": 78.91,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17257,9 +17243,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,335.9",
-   "d": -0.79,
-   "ytd": 0.24,
+   "v": "4,339.7",
+   "d": -0.71,
+   "ytd": 0.33,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17281,9 +17267,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,331",
-   "d": -0.2,
-   "ytd": -2.1,
+   "v": "16,364",
+   "d": -0.42,
+   "ytd": -1.91,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -17305,455 +17291,6 @@
   }
  ],
  "calendar": [
-  {
-   "date": "2026-08-31",
-   "time": "20:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Chicago PMI  (Aug)",
-   "imp": 3,
-   "exp": "57.8",
-   "prev": "57.6",
-   "act": "47.1",
-   "src": "investing.com",
-   "title_ko": "8월 시카고 PMI",
-   "title_id": "PMI Chicago (Agustus)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "07:30",
-   "kind": "macro",
-   "country": "ID",
-   "title": "S&P Global Manufacturing PMI  (Aug)",
-   "imp": 1,
-   "exp": "53.2",
-   "prev": "50.2",
-   "act": "49.8",
-   "src": "investing.com",
-   "title_ko": "8월 S&P Global 제조업 PMI",
-   "title_id": "PMI Manufaktur S&P Global AS (Agu)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "11:00",
-   "kind": "macro",
-   "country": "ID",
-   "title": "Core Inflation (YoY)  (Aug)",
-   "imp": 1,
-   "exp": "2.80%",
-   "prev": "2.76%",
-   "act": "2.92%",
-   "src": "investing.com",
-   "title_ko": "8월 근원 CPI (YoY)",
-   "title_id": "Inflasi Inti (YoY) (Agustus)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "11:00",
-   "kind": "macro",
-   "country": "ID",
-   "title": "Export Growth (YoY)  (Jul)",
-   "imp": 1,
-   "exp": "3.40%",
-   "prev": "8.84%",
-   "act": "6.05%",
-   "src": "investing.com",
-   "title_ko": "7월 수출 증가율 (YoY)",
-   "title_id": "Pertumbuhan Ekspor (YoY) (Juli)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "11:00",
-   "kind": "macro",
-   "country": "ID",
-   "title": "Import Growth (YoY)  (Jul)",
-   "imp": 1,
-   "exp": "24.10%",
-   "prev": "34.27%",
-   "act": "27.02%",
-   "src": "investing.com",
-   "title_ko": "7월 수입 증가율 (YoY)",
-   "title_id": "Pertumbuhan Impor (YoY) (Juli)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "11:00",
-   "kind": "macro",
-   "country": "ID",
-   "title": "Inflation (YoY)  (Aug)",
-   "imp": 1,
-   "exp": "3.13%",
-   "prev": "2.88%",
-   "act": "3.19%",
-   "src": "investing.com",
-   "title_ko": "8월 소비자물가 (YoY)",
-   "title_id": "Inflasi AS (YoY) (Agu)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "11:00",
-   "kind": "macro",
-   "country": "ID",
-   "title": "Trade Balance  (Jul)",
-   "imp": 1,
-   "exp": "-0.30B",
-   "prev": "-0.45B",
-   "act": "0.13B",
-   "src": "investing.com",
-   "title_ko": "7월 무역수지",
-   "title_id": "Neraca Perdagangan (Juli)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "20:05",
-   "kind": "macro",
-   "country": "US",
-   "title": "Fed Vice Chair for Supervision Barr Speaks",
-   "imp": 2,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "연준 Barr 감독담당 부의장 연설",
-   "title_id": "Pidato Wakil Ketua Pengawasan The Fed Barr"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "21:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "Construction Spending (MoM)  (Jul)",
-   "imp": 2,
-   "exp": "0.0%",
-   "prev": "0.0%",
-   "act": "-0.5%",
-   "src": "investing.com",
-   "title_ko": "건설지출 (MoM) (7월)",
-   "title_id": "Belanja Konstruksi (Bulanan) (Jul)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "21:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "ISM Manufacturing Employment  (Aug)",
-   "imp": 2,
-   "exp": "52.5",
-   "prev": "52.8",
-   "act": "51.2",
-   "src": "investing.com",
-   "title_ko": "ISM 제조업 채용 (8월)",
-   "title_id": "Ketenagakerjaan Manufaktur ISM (Agustus)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "21:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "JOLTS Job Openings  (Jul)",
-   "imp": 3,
-   "exp": "7.330M",
-   "prev": "7.182M",
-   "act": "7.271M",
-   "src": "investing.com",
-   "title_ko": "7월 JOLTS 구인건수",
-   "title_id": "Lowongan Kerja JOLTS AS (Jul)"
-  },
-  {
-   "date": "2026-09-01",
-   "time": "22:50",
-   "kind": "macro",
-   "country": "US",
-   "title": "Atlanta Fed GDPNow  (Q3)",
-   "imp": 2,
-   "exp": "4.6%",
-   "prev": "4.6%",
-   "act": "4.8%",
-   "src": "investing.com",
-   "title_ko": "3분기 애틀랜타 연은 GDPNow",
-   "title_id": "GDPNow The Fed Atlanta (Q3)"
-  },
-  {
-   "date": "2026-09-02",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "API Weekly Crude Oil Stock",
-   "imp": 2,
-   "exp": "-0.800M",
-   "prev": "4.200M",
-   "act": "-2.600M",
-   "src": "investing.com",
-   "title_ko": "API 주간 원유 재고",
-   "title_id": "Stok Minyak Mentah Mingguan API"
-  },
-  {
-   "date": "2026-09-02",
-   "time": "19:15",
-   "kind": "macro",
-   "country": "US",
-   "title": "ADP Nonfarm Employment Change  (Aug)",
-   "imp": 3,
-   "exp": "47K",
-   "prev": "46K",
-   "act": "38K",
-   "src": "investing.com",
-   "title_ko": "8월 ADP 비농업 고용 변화",
-   "title_id": "Perubahan Ketenagakerjaan Nonpertanian ADP (Agustus)"
-  },
-  {
-   "date": "2026-09-02",
-   "time": "21:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "Factory Orders (MoM)  (Jul)",
-   "imp": 2,
-   "exp": "0.7%",
-   "prev": "-0.2%",
-   "act": "0.9%",
-   "src": "investing.com",
-   "title_ko": "공장수주 (MoM) (7월)",
-   "title_id": "Pesanan Pabrik (Bulanan) (Jul)"
-  },
-  {
-   "date": "2026-09-02",
-   "time": "21:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Crude Oil Inventories",
-   "imp": 3,
-   "exp": "-0.400M",
-   "prev": "0.095M",
-   "act": "-4.450M",
-   "src": "investing.com",
-   "title_ko": "EIA 원유 재고",
-   "title_id": "Stok Minyak Mentah EIA"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "01:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "Beige Book",
-   "imp": 2,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "연준 베이지북",
-   "title_id": "Beige Book The Fed"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Continuing Jobless Claims",
-   "imp": 2,
-   "exp": "205K",
-   "prev": "1,771K",
-   "act": "1,779K",
-   "src": "investing.com",
-   "title_ko": "연속 실업수당 청구",
-   "title_id": "Klaim Pengangguran Berkelanjutan"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Exports  (Jul)",
-   "imp": 2,
-   "exp": null,
-   "prev": "314.70B",
-   "act": "310.70B",
-   "src": "investing.com",
-   "title_ko": "7월 수출",
-   "title_id": "Ekspor (Juli)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Fed Waller Speaks",
-   "imp": 2,
-   "exp": null,
-   "prev": null,
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "연준 Waller 이사 연설",
-   "title_id": "Pidato Gubernur The Fed Waller"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Imports  (Jul)",
-   "imp": 2,
-   "exp": null,
-   "prev": "388.00B",
-   "act": "399.30B",
-   "src": "investing.com",
-   "title_ko": "7월 수입",
-   "title_id": "Impor (Juli)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Nonfarm Productivity (QoQ)  (Q2)",
-   "imp": 2,
-   "exp": "1.4%",
-   "prev": "0.8%",
-   "act": "1.4%",
-   "src": "investing.com",
-   "title_ko": "2분기 비농업 생산성 (QoQ)",
-   "title_id": "Produktivitas Nonpertanian (QoQ) (Q2)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Trade Balance  (Jul)",
-   "imp": 2,
-   "exp": "-89.40B",
-   "prev": "-71.20B",
-   "act": "-88.60B",
-   "src": "investing.com",
-   "title_ko": "7월 무역수지",
-   "title_id": "Neraca Perdagangan (Juli)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Unit Labor Costs (QoQ)  (Q2)",
-   "imp": 2,
-   "exp": "1.3%",
-   "prev": "1.3%",
-   "act": "1.2%",
-   "src": "investing.com",
-   "title_ko": "2분기 단위노동비용 (QoQ)",
-   "title_id": "Biaya Tenaga Kerja per Unit (QoQ) (Q2)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "20:45",
-   "kind": "macro",
-   "country": "US",
-   "title": "S&P Global Composite PMI  (Aug)",
-   "imp": 2,
-   "exp": "56.0",
-   "prev": "54.5",
-   "act": "56.0",
-   "src": "investing.com",
-   "title_ko": "8월 S&P Global 합성 PMI",
-   "title_id": "PMI Komposit S&P Global (Agustus)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "21:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "ISM Non-Manufacturing Employment  (Aug)",
-   "imp": 2,
-   "exp": "48.3",
-   "prev": "47.4",
-   "act": "47.8",
-   "src": "investing.com",
-   "title_ko": "8월 ISM 비제조업 고용지수",
-   "title_id": "Ketenagakerjaan Non-Manufaktur ISM (Agustus)"
-  },
-  {
-   "date": "2026-09-03",
-   "time": "22:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Atlanta Fed GDPNow  (Q3)",
-   "imp": 2,
-   "exp": "4.8%",
-   "prev": "4.8%",
-   "act": "4.7%",
-   "src": "investing.com",
-   "act_src": "investing.com",
-   "title_ko": "3분기 애틀랜타 연은 GDPNow",
-   "title_id": "GDPNow The Fed Atlanta (Q3)"
-  },
-  {
-   "date": "2026-09-04",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Fed's Balance Sheet",
-   "imp": 2,
-   "exp": null,
-   "prev": "6,731B",
-   "act": "6,737B",
-   "src": "investing.com",
-   "title_ko": "연준 대차대조표",
-   "title_id": "Neraca The Fed"
-  },
-  {
-   "date": "2026-09-04",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Average Hourly Earnings (MoM)  (Aug)",
-   "imp": 3,
-   "exp": "0.3%",
-   "prev": "0.1%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "8월 시간당 평균임금 (MoM)",
-   "title_id": "Rata-rata Upah per Jam (MoM) (Agustus)"
-  },
-  {
-   "date": "2026-09-04",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Nonfarm Payrolls  (Aug)",
-   "imp": 3,
-   "exp": "55K",
-   "prev": "-23K",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "8월 비농업 고용",
-   "title_id": "Nonfarm Payrolls AS (Agu)"
-  },
-  {
-   "date": "2026-09-04",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Participation Rate  (Aug)",
-   "imp": 2,
-   "exp": null,
-   "prev": "61.4%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "8월 경제활동참가율",
-   "title_id": "Tingkat Partisipasi Angkatan Kerja (Agustus)"
-  },
-  {
-   "date": "2026-09-04",
-   "time": "19:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "U6 Unemployment Rate  (Aug)",
-   "imp": 2,
-   "exp": "4.1%",
-   "prev": "7.9%",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "8월 U6 실업률",
-   "title_id": "Tingkat Pengangguran U6 (Agustus)"
-  },
   {
    "date": "2026-09-05",
    "time": "00:00",
@@ -18232,12 +17769,26 @@
   },
   {
    "date": "2026-09-15",
+   "time": "19:15",
+   "kind": "macro",
+   "country": "US",
+   "title": "ADP Employment Change Weekly",
+   "imp": 2,
+   "exp": null,
+   "prev": "12.00K",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "ADP 주간 고용 변화",
+   "title_id": "Perubahan Tenaga Kerja Mingguan ADP AS"
+  },
+  {
+   "date": "2026-09-15",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "NY Empire State Manufacturing Index  (Sep)",
    "imp": 2,
-   "exp": null,
+   "exp": "14.10",
    "prev": "20.60",
    "act": null,
    "src": "investing.com",
@@ -18246,12 +17797,40 @@
   },
   {
    "date": "2026-09-16",
+   "time": "00:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "20-Year Bond Auction",
+   "imp": 2,
+   "exp": null,
+   "prev": "5.204%",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "20년물 국채 입찰",
+   "title_id": "Lelang Obligasi AS Tenor 20 Tahun"
+  },
+  {
+   "date": "2026-09-16",
+   "time": "03:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "API Weekly Crude Oil Stock",
+   "imp": 2,
+   "exp": null,
+   "prev": "-0.300M",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "API 주간 원유 재고",
+   "title_id": "Stok Minyak Mentah Mingguan API"
+  },
+  {
+   "date": "2026-09-16",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "Core Retail Sales (MoM)  (Aug)",
    "imp": 3,
-   "exp": null,
+   "exp": "0.5%",
    "prev": "-0.3%",
    "act": null,
    "src": "investing.com",
@@ -18279,7 +17858,7 @@
    "country": "US",
    "title": "Import Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.0%",
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -18293,7 +17872,7 @@
    "country": "US",
    "title": "Retail Control (MoM)  (Aug)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.8%",
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -18307,7 +17886,7 @@
    "country": "US",
    "title": "Business Inventories (MoM)  (Jul)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.2%",
    "prev": "0.0%",
    "act": null,
    "src": "investing.com",
@@ -18321,7 +17900,7 @@
    "country": "US",
    "title": "Retail Inventories Ex Auto  (Jul)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.7%",
    "prev": "0.7%",
    "act": null,
    "src": "investing.com",
@@ -18330,13 +17909,27 @@
   },
   {
    "date": "2026-09-16",
+   "time": "21:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Crude Oil Inventories",
+   "imp": 3,
+   "exp": null,
+   "prev": "-0.391M",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "EIA 원유 재고",
+   "title_id": "Stok Minyak Mentah EIA"
+  },
+  {
+   "date": "2026-09-16",
    "time": "22:30",
    "kind": "macro",
    "country": "US",
    "title": "Atlanta Fed GDPNow  (Q3)",
    "imp": 2,
-   "exp": null,
-   "prev": null,
+   "exp": "4.4%",
+   "prev": "4.4%",
    "act": null,
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
@@ -18363,7 +17956,7 @@
    "country": "US",
    "title": "Fed Interest Rate Decision",
    "imp": 3,
-   "exp": null,
+   "exp": "4.00%",
    "prev": "3.75%",
    "act": null,
    "src": "investing.com",
@@ -18372,12 +17965,26 @@
   },
   {
    "date": "2026-09-17",
+   "time": "01:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "FOMC Press Conference",
+   "imp": 3,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "FOMC 기자회견",
+   "title_id": "Konferensi Pers FOMC"
+  },
+  {
+   "date": "2026-09-17",
    "time": "03:00",
    "kind": "macro",
    "country": "US",
    "title": "TIC Net Long-Term Transactions  (Jul)",
    "imp": 2,
-   "exp": null,
+   "exp": "146.3B",
    "prev": "172.7B",
    "act": null,
    "src": "investing.com",
@@ -20105,7 +19712,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-15 08:48",
-  "pc_age_min": 6,
+  "pc_age_min": 10,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -21530,17 +21137,17 @@
    "t_id": "Suahasil Jadi Menkeu Gantikan Purbaya, Danantara Siap Bahas Setoran Dividen",
    "score": 423.65,
    "srcs": 6,
-   "ai_ko": "· Danantara menyetor Rp120 triliun ke kas negara untuk APBN 2026\n· Jumlah itu naik dari rata-rata dividen BUMN sebelumnya yaitu Rp90 triliun\n· Peningkatan setoran memperkuat pendapatan negara dan mengurangi defisit fiskal",
-   "ai_id": "· Danantara setor Rp120 triliun ke kas negara untuk APBN 2026\n· Jumlah itu naik dari dividen BUMN sebelumnya yaitu Rp90 triliun\n· Peningkatan setoran memperkuat pendapatan negara dan kurangi defisit",
+   "ai_ko": "· Danantara menyetorkan Rp120조 배당을 국가에 납부할 예정\n· 전년도 BUMN 배당인 Rp90조 대비 증가한 규모\n· 국가 재정 적자 해소에 기여하는 긍정적 요인",
+   "ai_id": "· Danantara setorkan dividen Rp120 triliun ke kas negara\n· Naik dari dividen BUMN sebelumnya Rp90 triliun\n· Berdampak positif bagi defisit anggaran",
    "ai_tags": [
     "배당",
     "실적",
-    "규제"
+    "재정"
    ],
    "ai_tags_id": [
     "dividen",
     "kinerja",
-    "regulasi"
+    "anggaran"
    ]
   },
   {
@@ -21556,8 +21163,8 @@
    "srcs": 3,
    "t_ko": "Danantara, BEI 지분 40.12% 인수에 Rp5,170억 투입 시나리오 검토",
    "t_id": "Skenario Danantara Rogoh Rp 517 Miliar untuk Beli 40,12% Saham BEI",
-   "ai_ko": "· Danantara menggelontorkan Rp517,5 miliar membeli 40,12% saham BEI\n· Transaksi menggunakan skema rights issue mencakup 69 lembar saham\n· Aksi korporasi memperkuat struktur permodalan bursa efek domestik",
-   "ai_id": "· Danantara gelontorkan Rp517,5 miliar beli 40,12% saham BEI\n· Transaksi pakai skema rights issue mencakup 69 lembar saham\n· Aksi korporasi perkuat struktur permodalan bursa efek domestik",
+   "ai_ko": "· Danantara mengalokasikan Rp517.5억을 투자해 BEI 지분 40.12% 인수 추진\n· 유상증자 방식을 통해 총 69주를 확보할 계획\n· 자본시장 인프라 관련 업종 전반에 미칠 영향 주시",
+   "ai_id": "· Danantara siapkan Rp517,5 miliar beli 40,12% saham BEI\n· Transaksi dilakukan melalui skema rights issue sebanyak 69 saham\n· Memperkuat posisi strategis di infrastruktur pasar modal",
    "ai_tags": [
     "유상증자",
     "M&A",
@@ -21582,15 +21189,17 @@
    "srcs": 5,
    "t_ko": "Suahasil Nazara 재무차관, 2029년까지 APBN 관리",
    "t_id": "Menkeu Suahasil Nazara Bakal Kawal APBN hingga 2029",
-   "ai_ko": "· Suahasil Nazara bertugas menjaga keuangan negara hingga 2029\n· Fokus kebijakan diarahkan pada pertumbuhan dan stabilitas ekonomi\n· Pengelolaan fiskal mendukung konsumsi, investasi, dan ekspor nasional",
-   "ai_id": "· Suahasil Nazara bertugas jaga keuangan negara hingga 2029\n· Fokus kebijakan diarahkan pada pertumbuhan dan stabilitas ekonomi\n· Pengelolaan fiskal dukung konsumsi, investasi, dan ekspor nasional",
+   "ai_ko": "· Suahasil Nazara menjabat Menteri Keuangan hingga 2029\n· 국가 재정 안정성과 경제 성장 촉진 역할 수행\n· 소비와 투자 및 수출 활성화 정책 총괄",
+   "ai_id": "· Suahasil Nazara kawal APBN hingga tahun 2029\n· Fokus jaga kesehatan keuangan dan pertumbuhan ekonomi\n· Maksimalkan konsumsi, investasi, dan ekspor",
    "ai_tags": [
-    "실적",
-    "규제"
+    "재정",
+    "경제",
+    "정책"
    ],
    "ai_tags_id": [
-    "kinerja",
-    "regulasi"
+    "anggaran",
+    "ekonomi",
+    "kebijakan"
    ]
   },
   {
@@ -21607,15 +21216,17 @@
    "srcs": 5,
    "t_ko": "연준 기준금리 인상 시 S&P 500 10% 하락 전망",
    "t_id": "Jika Suku Bunga Fed Naik, Mungkin S&P 500 Bakal Drop 10%",
-   "ai_ko": "· Fed berencana menaikkan suku bunga acuan pada pekan ini\n· Kebijakan pengetatan moneter memicu koreksi indeks S&P 500 hingga 10%\n· Imbal hasil obligasi Treasury AS bertenor 10 tahun melampaui 5%",
-   "ai_id": "· Fed berencana naikan suku bunga acuan pada pekan ini\n· Kebijakan pengetatan moneter picu koreksi S&P 500 hingga 10%\n· Imbal hasil obligasi Treasury AS bertenor 10 tahun lampaui 5%",
+   "ai_ko": "· 미국 연방준비제도 금리 인상 시 S&P 500 지수 10% 하락 가능성\n· 국채 금리 상승과 기업 마진 축소 우려가 복합적으로 작용\n· 글로벌 증시 변동성 확대 및 투자 심리 위축",
+   "ai_id": "· Kenaikan suku bunga Fed picu potensi koreksi S&P 500\n· Imbal hasil obligasi AS tembus 5% tekan marjin laba\n· Meningkatkan volatilitas pasar saham global",
    "ai_tags": [
-    "유가",
-    "실적"
+    "금리",
+    "인플레이션",
+    "미국"
    ],
    "ai_tags_id": [
-    "minyak",
-    "kinerja"
+    "suku bunga",
+    "inflasi",
+    "Amerika Serikat"
    ]
   },
   {
@@ -30513,25 +30124,6 @@
  ],
  "catalyst": [
   {
-   "t": "FORU",
-   "n": "Fortune Indonesia",
-   "px": 4650.0,
-   "pct": 25.0,
-   "val": 19880718000.0,
-   "mcap": 2163291600000.0,
-   "ratio": 2.4,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "FORU, 석탄 광산 인수를 위한 Rp2.71조 유상증자 준비",
-   "hl_id": "FORU Siap Gelar Rights Issue Rp27,1 Triliun untuk Tambang Batu Bara",
-   "url": "https://www.idnfinancials.com/news/68804/foru-prepares-idr-27-1-trillion-rights-issue-for-coal-mining",
-   "score": 70.2,
-   "s_news": 98,
-   "s_size": 33,
-   "s_surge": 70,
-   "srcs": 2
-  },
-  {
    "t": "EPMT",
    "n": "Enseval Putera Megatrading",
    "px": 2480.0,
@@ -30548,6 +30140,25 @@
    "s_news": 90,
    "s_size": 46,
    "s_surge": 60,
+   "srcs": 1
+  },
+  {
+   "t": "FORU",
+   "n": "Fortune Indonesia",
+   "px": 4650.0,
+   "pct": 25.0,
+   "val": 19880718000.0,
+   "mcap": 2163291600000.0,
+   "ratio": 2.4,
+   "ev_ko": "자본구조",
+   "ev_id": "Aksi korporasi",
+   "hl": "FORU, 석탄 광산 인수를 위한 Rp2.71조 유상증자 준비",
+   "hl_id": "FORU Siap Gelar Rights Issue Rp27,1 Triliun untuk Tambang Batu Bara",
+   "url": "https://www.idnfinancials.com/news/68804/foru-prepares-idr-27-1-trillion-rights-issue-for-coal-mining",
+   "score": 67.0,
+   "s_news": 90,
+   "s_size": 33,
+   "s_surge": 70,
    "srcs": 1
   },
   {
