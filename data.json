@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 08:42",
+ "updated": "2026-09-16 08:50",
  "delay_min": 15,
- "fx_basis": "12.90 IDR/KRW · USD/IDR 17,682 · USD/KRW 1,371 · 08:15 Yahoo",
- "idr_per_krw": 12.9002,
+ "fx_basis": "12.89 IDR/KRW · USD/IDR 17,682 · USD/KRW 1,372 · 08:15 Yahoo",
+ "idr_per_krw": 12.8898,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15714,10 +15714,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6638.56,
+   "px": 6657.28,
    "prev": 6620.5,
-   "pct": 0.27,
-   "asof": "08:20",
+   "pct": 0.56,
+   "asof": "08:25",
    "live": true,
    "spark": [
     6627.08,
@@ -15736,17 +15736,18 @@
     6645.46,
     6647.99,
     6637.43,
-    6638.56
+    6646.77,
+    6657.28
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63389.28,
+   "px": 63418.74,
    "prev": 63611.84,
-   "pct": -0.35,
-   "asof": "08:25",
+   "pct": -0.3,
+   "asof": "08:30",
    "live": true,
    "spark": [
     63365.52,
@@ -15766,24 +15767,21 @@
     63394.47,
     63363.18,
     63408.32,
-    63389.28
+    63423.25,
+    63418.74
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24789.91,
+   "px": 24636.49,
    "prev": 24667.24,
-   "pct": 0.5,
-   "asof": "09/13 종가",
-   "live": false,
+   "pct": -0.12,
+   "asof": "08:30",
+   "live": true,
    "spark": [
-    25317.18,
-    25274.96,
-    24954.47,
-    24805.63,
-    24917.6
+    24636.49
    ]
   }
  ],
@@ -15873,8 +15871,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121648/harga-emas-antam-hari-ini-naik-tipis-kala-emas-dunia-turun",
    "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250411084642.jpeg",
-   "t_id": "Harga Emas Antam Hari Ini Naik Tipis Kala Emas Dunia Turun",
-   "t_ko": "국제 금값 하락에도 Antam 금 가격 소폭 상승"
+   "t_ko": "국제 금값 하락에도 Antam 금 가격 소폭 상승",
+   "t_id": "Harga Emas Antam Hari Ini Naik Tipis Kala Emas Dunia Turun"
   },
   {
    "ts": "2026-09-16T08:20:00+07:00",
@@ -17377,6 +17375,44 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-16T08:45:57+07:00",
+   "date": "2026-09-16",
+   "time": "08:45",
+   "src": "Jawa Pos",
+   "t": "Pemerintah Percepat Pembangunan 5 Ribu Kampung Nelayan hingga 2029",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609160105/pemerintah-percepat-pembangunan-5-ribu-kampung-nelayan-hingga-2029",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/16/kampung-nelayan-merah-putih-knmp-leato-selatan-kecamatan-dumbo-raya-kota-gorontalo-dok-bakom-ri-VUv9a.webp",
+   "t_ko": "정부, 2029년까지 어촌마을 5,000곳 조성 가속",
+   "t_id": "Pemerintah Percepat Pembangunan 5 Ribu Kampung Nelayan hingga 2029"
+  },
+  {
+   "ts": "2026-09-16T08:45:00+07:00",
+   "date": "2026-09-16",
+   "time": "08:45",
+   "src": "Bloomberg Technoz",
+   "t": "IHSG Dibayangi Hasil Keputusan The Fed Soal Suku Bunga",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121649/ihsg-dibayangi-hasil-keputusan-the-fed-soal-suku-bunga",
+   "g": 1,
+   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814105723.jpeg",
+   "t_ko": "IHSG, 연준 금리 결정 경계감에 약세 압력",
+   "t_id": "IHSG Dibayangi Hasil Keputusan The Fed Soal Suku Bunga"
+  },
+  {
+   "ts": "2026-09-16T08:40:08+07:00",
+   "date": "2026-09-16",
+   "time": "08:40",
+   "src": "Liputan6",
+   "t": "Bursa Saham Asia Hari Ini Stabil Jelang Keputusan The Fed",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8292617/bursa-saham-asia-hari-ini-stabil-jelang-keputusan-the-fed",
+   "g": 1,
+   "img": "https://cdn0-production-images-kly.akamaized.net/6LqFdsMErb0fyBozyTi9LhZIc9U=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1694576/original/098412300_1503994463-20170829-Saham-Akibat-Rudal-Korut-AP3.jpg",
+   "t_id": "Bursa Saham Asia Hari Ini Stabil Jelang Keputusan The Fed",
+   "t_ko": "연준 금리 결정을 앞두고 아시아 증시 보합세"
+  },
+  {
    "ts": "2026-09-16T08:31:16+07:00",
    "date": "2026-09-16",
    "time": "08:31",
@@ -17682,18 +17718,6 @@
    "t_id": "BOJ Diproyeksi Naikkan Suku Bunga 25 Basis Poin ke Level Tertinggi Tiga Dekade: Survei CNBC"
   },
   {
-   "ts": "2026-09-16T07:22:00+07:00",
-   "date": "2026-09-16",
-   "time": "07:22",
-   "src": "Media Indonesia",
-   "t": "Kawasan Asia-Pasifik Dorong Pertumbuhan Penerbangan Global dengan Kebutuhan 19.120 Pesawat Baru",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/933888/kawasan-asia-pasifik-dorong-pertumbuhan-penerbangan-global-dengan-kebutuhan-19120-pesawat-baru",
-   "g": 1,
-   "t_ko": "아시아태평양, 항공기 1만9,120대 수요로 글로벌 항공 성장 견인",
-   "t_id": "Kawasan Asia-Pasifik Dorong Pertumbuhan Penerbangan Global dengan Kebutuhan 19.120 Pesawat Baru"
-  },
-  {
    "ts": "2026-09-16T07:19:53+07:00",
    "date": "2026-09-16",
    "time": "07:19",
@@ -17704,18 +17728,6 @@
    "img": "https://cdn1-production-images-kly.akamaized.net/1muvztO9JwhJRh8cTbnEvARdRGI=/472x0:3363x1630/673x379/filters:quality(75):strip_icc():format(webp):watermark(kly-media-production/assets/images/watermarks/liputan6/watermark-gray-landscape-new.png,573,20,0)/kly-media-production/medias/1505536/original/011475000_1486967390-Pembukaan-Saham3.jpg",
    "t_ko": "IHSG 조정 압력 우려 — 2026년 9월 16일 오늘의 투자의견 참고",
    "t_id": "IHSG Rawan Koreksi, Cermati Rekomendasi Saham Hari Ini 16 September 2026"
-  },
-  {
-   "ts": "2026-09-16T07:10:17+07:00",
-   "date": "2026-09-16",
-   "time": "07:10",
-   "src": "Bloomberg",
-   "t": "Shrinking Chinese Fuel Inventories Raise Chance of Export Curbs",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-16/shrinking-chinese-fuel-inventories-raise-chance-of-export-curbs",
-   "g": 1,
-   "t_ko": "중국 연료 재고 감소로 수출 규제 가능성 고조",
-   "t_id": "Menipisnya Stok Bahan Bakar China Perbesar Risiko Pembatasan Ekspor"
   },
   {
    "ts": "2026-09-16T07:08:00+07:00",
@@ -17882,18 +17894,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/04/28/tren-diversifikasi-keuangan-dan-proteksi-berbasis-valuta-asing-makin-menguat-di-indonesia-YoEFH.webp",
    "t_ko": "디지털 외환 거래, 188개국으로 확대",
    "t_id": "Transaksi Valuta Asing Digital Menjangkau 188 Negara"
-  },
-  {
-   "ts": "2026-09-16T00:58:31+07:00",
-   "date": "2026-09-16",
-   "time": "00:58",
-   "src": "Jawa Pos",
-   "t": "1 Tahun Purbaya Jadi Menkeu: Pertumbuhan Ekonomi Melejit Rp 5,61 Persen, Rupiah dan IHSG Ambruk",
-   "tags": [],
-   "url": "https://www.jawapos.com/finance/2609150420/1-tahun-purbaya-jadi-menkeu-pertumbuhan-ekonomi-melejit-rp-561-persen-rupiah-dan-ihsg-ambruk",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/07/15/menteri-keuangan-purbaya-yudhi-sadewa-mengikuti-rapat-kerja-dengan-banggar-dpr-di-kompleks-parlemen-senayan-jakarta-selasa-1472026-salman-toyibijawa-pos-bWy9L.webp",
-   "t_ko": "Purbaya 재무장관 취임 1년: 경제성장률 5.61% 급등 vs 루피아·IHSG 폭락",
-   "t_id": "1 Tahun Purbaya Jadi Menkeu: Pertumbuhan Ekonomi Melejit Rp 5,61 Persen, Rupiah dan IHSG Ambruk"
   }
  ],
  "kisi_news": [
@@ -18066,8 +18066,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.89",
-   "d": -1.48,
-   "ytd": 10.98,
+   "d": -1.47,
+   "ytd": 11.0,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18100,9 +18100,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.72",
-   "d": 0.12,
-   "ytd": 1.46,
+   "v": "99.73",
+   "d": 0.13,
+   "ytd": 1.47,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18112,9 +18112,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "105.09",
-   "d": 2.1,
-   "ytd": 83.02,
+   "v": "105.11",
+   "d": 2.12,
+   "ytd": 83.05,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18124,9 +18124,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,330.3",
-   "d": -0.34,
-   "ytd": 0.11,
+   "v": "4,326.6",
+   "d": -0.43,
+   "ytd": 0.02,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18140,11 +18140,11 @@
    "d": 0.0,
    "ytd": 36.51,
    "inv": false,
-   "note": "investing.com · 연초 107.5",
+   "note": "investing.com · 09/15 마지막 값 · 연초 107.5",
    "k_ko": "석탄 Newcastle (US$/t)",
    "k_id": "Batu bara Newcastle (US$/t)",
-   "note_ko": "investing.com · 연초 107.5",
-   "note_id": "investing.com · Awal tahun 107.5"
+   "note_ko": "investing.com · 09/15 마지막 값 · 연초 107.5",
+   "note_id": "investing.com · 09/15 nilai terakhir · Awal tahun 107.5"
   },
   {
    "k": "니켈 LME (US$/t)",
@@ -22584,7 +22584,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-16 08:37",
-  "pc_age_min": 5,
+  "pc_age_min": 14,
   "news_ai_cache": 86,
   "news_ai_hit": 66,
   "on_runner": true,
@@ -24371,18 +24371,18 @@
    "srcs": 1
   },
   {
-   "ts": "2026-09-16T00:58:31+07:00",
-   "date": "2026-09-16",
-   "time": "00:58",
-   "src": "Jawa Pos",
-   "t": "1 Tahun Purbaya Jadi Menkeu: Pertumbuhan Ekonomi Melejit Rp 5,61 Persen, Rupiah dan IHSG Ambruk",
+   "ts": "2026-09-15T21:00:00+07:00",
+   "date": "2026-09-15",
+   "time": "09/15",
+   "src": "Bloomberg Technoz",
+   "t": "OJK Pastikan Koordinasi Rutin dengan Menkeu Baru Lewat KSSK",
    "tags": [],
-   "url": "https://www.jawapos.com/finance/2609150420/1-tahun-purbaya-jadi-menkeu-pertumbuhan-ekonomi-melejit-rp-561-persen-rupiah-dan-ihsg-ambruk",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/07/15/menteri-keuangan-purbaya-yudhi-sadewa-mengikuti-rapat-kerja-dengan-banggar-dpr-di-kompleks-parlemen-senayan-jakarta-selasa-1472026-salman-toyibijawa-pos-bWy9L.webp",
-   "t_ko": "Purbaya 재무장관 취임 1년: 경제성장률 5.61% 급등 vs 루피아·IHSG 폭락",
-   "t_id": "1 Tahun Purbaya Jadi Menkeu: Pertumbuhan Ekonomi Melejit Rp 5,61 Persen, Rupiah dan IHSG Ambruk",
-   "score": 417.15,
-   "srcs": 1
+   "url": "https://www.bloombergtechnoz.com/detail-news/121618/ojk-pastikan-koordinasi-rutin-dengan-menkeu-baru-lewat-kssk",
+   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814201208.jpeg",
+   "score": 410.15,
+   "srcs": 1,
+   "t_ko": "OJK, KSSK 통해 신임 재무장관과 정례 공조 확인",
+   "t_id": "OJK Pastikan Koordinasi Rutin dengan Menkeu Baru Lewat KSSK"
   },
   {
    "ts": "2026-09-16T04:12:31+07:00",
@@ -24405,37 +24405,37 @@
     "suku bunga",
     "kebijakan moneter"
    ],
-   "score": 411.35,
-   "srcs": 2
+   "score": 409.15,
+   "srcs": 1
   },
   {
-   "ts": "2026-09-16T08:14:44+07:00",
+   "ts": "2026-09-16T01:02:25+07:00",
    "date": "2026-09-16",
-   "time": "08:14",
-   "src": "Bloomberg Technoz",
-   "t": "Gerak Rupiah Terhalang Harga Minyak dan Sikap Hawkish The Fed",
+   "time": "01:02",
+   "src": "Jawa Pos",
+   "t": "Transaksi Valuta Asing Digital Menjangkau 188 Negara",
    "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121640/gerak-rupiah-terhalang-harga-minyak-dan-sikap-hawkish-the-fed",
-   "g": 1,
-   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171809.jpeg",
-   "t_ko": "유가 상승 및 연준 매파적 기조에 루피아화 환율 상승 제한",
-   "t_id": "Gerak Rupiah Terhalang Harga Minyak dan Sikap Hawkish The Fed",
-   "score": 408.65,
-   "srcs": 3
+   "url": "https://www.jawapos.com/ekonomi/2609150424/transaksi-valuta-asing-digital-menjangkau-188-negara",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/04/28/tren-diversifikasi-keuangan-dan-proteksi-berbasis-valuta-asing-makin-menguat-di-indonesia-YoEFH.webp",
+   "t_ko": "디지털 외환 거래, 188개국으로 확대",
+   "t_id": "Transaksi Valuta Asing Digital Menjangkau 188 Negara",
+   "score": 409.05,
+   "srcs": 1
   },
   {
-   "ts": "2026-09-16T05:49:50+07:00",
+   "ts": "2026-09-16T06:44:00+07:00",
    "date": "2026-09-16",
-   "time": "05:49",
-   "src": "Reuters",
-   "t": "Wall Street ends lower as oil spikes and the benchmark Treasury yield breaches 5%",
+   "time": "06:44",
+   "src": "IDX Channel",
+   "t": "Harga Minyak Melonjak di Tengah Gangguan Yanbu dan Pembatalan Kargo Saudi",
    "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQM1BPdzlzdEkxaTg2MURwV0psdFNmbUZ0ZnZreDZEZkFfT0JXSGUxcU9lZ0JGc09LMkRZYTMxYVNwU2hVYjdfcnl1UzhnS0M5eHF1bVdwWFh2Rmp6SmlZMUo2MjlaODdFRHBBVGQ2OHVtcjBQVTFIekZjdkdKbkh5dVhTRUVtOEE1cjRwM21UVXNlV25LUzhiMFNEeWd4a3hGMExiczlZNC1pN2tpQmhPTFJn?oc=5",
+   "url": "https://www.idxchannel.com/market-news/harga-minyak-melonjak-di-tengah-gangguan-yanbu-dan-pembatalan-kargo-saudi",
    "g": 1,
-   "score": 314.0,
-   "srcs": 3,
-   "t_ko": "유가 급등 및 미 국채 10년물 금리 5% 상회에 월가 하락 마감",
-   "t_id": "Wall Street Ditutup Memerah Akibat Lonjakan Minyak dan Imbal Hasil US Treasury Tembus 5%"
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/02/25/kilang_jack_pump_minyak_-_Freepik_-_24_Feb_26.jpeg",
+   "score": 312.5,
+   "srcs": 2,
+   "t_ko": "Yanbu 차질 및 사우디 화물 취소에 유가 급등",
+   "t_id": "Harga Minyak Melonjak di Tengah Gangguan Yanbu dan Pembatalan Kargo Saudi"
   }
  ],
  "daylog": {
@@ -34982,6 +34982,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 08:32"
+  "announcements": "2026-09-16 08:42"
  }
 }
