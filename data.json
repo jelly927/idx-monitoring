@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 21:12",
+ "updated": "2026-09-16 21:24",
  "delay_min": 15,
- "fx_basis": "12.95 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,368 · 19:15 Yahoo",
- "idr_per_krw": 12.9457,
+ "fx_basis": "12.94 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,368 · 21:20 Yahoo",
+ "idr_per_krw": 12.9407,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -334,7 +334,7 @@
   "value_idr": 10929839903866.678,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 21:06",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 21:19",
   "rank_asof": null,
   "rank_date": "2026-09-16",
   "adv": 215,
@@ -15757,10 +15757,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7607.37,
+   "px": 7602.75,
    "prev": 7585.51,
-   "pct": 0.29,
-   "asof": "21:10",
+   "pct": 0.23,
+   "asof": "21:20",
    "live": true,
    "spark": [
     7603.81,
@@ -15771,17 +15771,19 @@
     7614.04,
     7608.74,
     7608.25,
-    7607.37
+    7606.48,
+    7604.66,
+    7602.75
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26143.55,
+   "px": 26148.88,
    "prev": 25981.57,
-   "pct": 0.62,
-   "asof": "21:10",
+   "pct": 0.64,
+   "asof": "21:20",
    "live": true,
    "spark": [
     26099.29,
@@ -15792,17 +15794,19 @@
     26168.22,
     26140.74,
     26152.42,
-    26143.55
+    26139.87,
+    26151.91,
+    26148.88
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51969.39,
+   "px": 51903.54,
    "prev": 52092.45,
-   "pct": -0.24,
-   "asof": "21:10",
+   "pct": -0.36,
+   "asof": "21:20",
    "live": true,
    "spark": [
     52038.56,
@@ -15813,7 +15817,9 @@
     52011.06,
     52015.98,
     51977.45,
-    51969.39
+    51960.53,
+    51927.07,
+    51903.54
    ]
   },
   {
@@ -17066,22 +17072,22 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-16T21:10:00+07:00",
+   "ts": "2026-09-16T21:21:37+07:00",
    "date": "2026-09-16",
-   "time": "21:10",
-   "src": "MarketWatch",
-   "t": "More home builders cut prices as buyers get spooked",
+   "time": "21:21",
+   "src": "BBC",
+   "t": "Burnham rejects 'tax and spend socialist' comments",
    "tags": [],
-   "url": "https://www.marketwatch.com/story/more-home-builders-cut-prices-as-buyers-get-spooked-4cd4b4ec?mod=mw_rss_topstories",
+   "url": "https://www.bbc.co.uk/news/articles/cqr7dj1e34z9o?at_medium=RSS&at_campaign=rss",
    "g": 1,
-   "img": "https://images.mktw.net/im-69808812",
-   "t_ko": "주택 수요 위축에 건설사들 잇따라 분양가 인하",
-   "t_id": "Semakin Banyak Pengembang Pangkas Harga Rumah Seiring Pembeli Mulai Gentar"
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b1a9/live/42c84500-b1c9-11f1-8493-1910d79d53eb.jpg",
+   "t_ko": "Burnham, '세금 낭비 사회주의자' 비판 반박",
+   "t_id": "Burnham Tolak Komentar 'Sosialis Pajak dan Belanja'"
   },
   {
-   "ts": "2026-09-16T21:07:12+07:00",
+   "ts": "2026-09-16T21:20:49+07:00",
    "date": "2026-09-16",
-   "time": "21:07",
+   "time": "21:20",
    "src": "CNBC",
    "t": "Oil prices fall after U.S. says damaged Saudi pipeline will restart operations in days",
    "tags": [],
@@ -17101,6 +17107,101 @@
     "stok minyak",
     "geopolitik"
    ]
+  },
+  {
+   "ts": "2026-09-16T21:19:00+07:00",
+   "date": "2026-09-16",
+   "time": "21:19",
+   "src": "Media Indonesia",
+   "t": "Ini 3 Masalah Utama yang Jadi Fokus Presiden Prabowo",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/934218/ini-3-masalah-utama-yang-jadi-fokus-presiden-prabowo",
+   "t_id": "Ini 3 Masalah Utama yang Jadi Fokus Presiden Prabowo",
+   "t_ko": "Prabowo 대통령의 핵심 집중 과제 3가지"
+  },
+  {
+   "ts": "2026-09-16T21:16:00+07:00",
+   "date": "2026-09-16",
+   "time": "21:16",
+   "src": "Media Indonesia",
+   "t": "Uang Rp300 Juta Jadi Gerbang Masuk OTT Pejabat Kementerian ATR/BPN",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/934216/uang-rp300-juta-jadi-gerbang-masuk-ott-pejabat-kementerian-atrbpn",
+   "t_id": "Uang Rp300 Juta Jadi Gerbang Masuk OTT Pejabat Kementerian ATR/BPN",
+   "t_ko": "ATR/BPN 부처 고위직, Rp3억 뇌물 수수 적발"
+  },
+  {
+   "ts": "2026-09-16T21:13:00+07:00",
+   "date": "2026-09-16",
+   "time": "21:13",
+   "src": "Media Indonesia",
+   "t": "Mengenal Aturan Saham Rp1 BEI: Pengertian dan Mekanisme Perdagangan",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/934214/mengenal-aturan-saham-rp1-bei-pengertian-dan-mekanisme-perdagangan",
+   "t_id": "Mengenal Aturan Saham Rp1 BEI: Pengertian dan Mekanisme Perdagangan",
+   "t_ko": "BEI Rp1 주식 규정의 이해와 거래 메커니즘"
+  },
+  {
+   "ts": "2026-09-16T21:10:18+07:00",
+   "date": "2026-09-16",
+   "time": "21:10",
+   "src": "Bloomberg",
+   "t": "Pangestu: Indonesia May See Lower Budget Deficit in 2027",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-16/pangestu-indonesia-may-see-lower-budget-deficit-in-2027-video",
+   "g": 1,
+   "t_ko": "Pangestu, 인도네시아 2027년 재정적자 축소 전망",
+   "t_id": "Pangestu: Defisit Anggaran Indonesia Berpotensi Turun pada 2027"
+  },
+  {
+   "ts": "2026-09-16T21:10:00+07:00",
+   "date": "2026-09-16",
+   "time": "21:10",
+   "src": "MarketWatch",
+   "t": "More home builders cut prices as buyers get spooked",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/more-home-builders-cut-prices-as-buyers-get-spooked-4cd4b4ec?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-69808812",
+   "t_ko": "주택 수요 위축에 건설사들 잇따라 분양가 인하",
+   "t_id": "Semakin Banyak Pengembang Pangkas Harga Rumah Seiring Pembeli Mulai Gentar"
+  },
+  {
+   "ts": "2026-09-16T21:09:00+07:00",
+   "date": "2026-09-16",
+   "time": "21:09",
+   "src": "Media Indonesia",
+   "t": "Abu Vulkanik Anak Krakatau Picu Lonjakan Permintaan Masker hingga 24 Kali Lipat",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/934215/abu-vulkanik-anak-krakatau-picu-lonjakan-permintaan-masker-hingga-24-kali-lipat",
+   "t_ko": "Anak Krakatau 화산재에 마스크 수요 24배 급증",
+   "t_id": "Abu Vulkanik Anak Krakatau Picu Lonjakan Permintaan Masker hingga 24 Kali Lipat"
+  },
+  {
+   "ts": "2026-09-16T21:05:28+07:00",
+   "date": "2026-09-16",
+   "time": "21:05",
+   "src": "Yahoo Finance",
+   "t": "10-year Treasury sits below 5% as market awaits Fed decision: AlphaCheck",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/article/10-year-treasury-sits-below-5-as-market-awaits-fed-decision-alphacheck-140528141.html",
+   "g": 1,
+   "img": "https://s.yimg.com/uu/api/res/1.2/KOQycXR2.rzD.hETOEslKg--~B/aD0zODQwO3c9NTc2MDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-09/f128b170-14d0-4965-8d22-35c1236e36ae",
+   "t_ko": "시장 연준 결정 대기 속 10년물 국채금리 5% 하회",
+   "t_id": "Yield US Treasury 10-Tahun di Bawah 5% Menanti Keputusan The Fed: AlphaCheck"
+  },
+  {
+   "ts": "2026-09-16T21:05:27+07:00",
+   "date": "2026-09-16",
+   "time": "21:05",
+   "src": "Yahoo Finance",
+   "t": "Ray Dalio’s Fund Was Buying These 2 AI Stocks",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/ray-dalio-fund-buying-2-140527912.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/6228995eb045c5e06c1bec4b1de72bb9.jpg",
+   "t_ko": "Ray Dalio 펀드, AI 주식 2종 매수",
+   "t_id": "Dana Ray Dalio Borong 2 Saham AI Ini"
   },
   {
    "ts": "2026-09-16T21:03:35+07:00",
@@ -17127,17 +17228,30 @@
    ]
   },
   {
-   "ts": "2026-09-16T20:59:23+07:00",
+   "ts": "2026-09-16T21:00:45+07:00",
    "date": "2026-09-16",
-   "time": "20:59",
+   "time": "21:00",
    "src": "Yahoo Finance",
-   "t": "Lumson acquires packaging company Lombardi’s US and Asia units",
+   "t": "Prediction: Alphabet Stock at $400 May Be Just the Beginning",
    "tags": [],
-   "url": "https://finance.yahoo.com/small-business/articles/lumson-acquires-packaging-company-lombardi-135923238.html",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/prediction-alphabet-stock-400-may-140045985.html",
    "g": 1,
-   "img": "https://media.zenfs.com/en/packaging_gateway_559/d784c95c2296189087be8ef91a219085.jpg",
-   "t_ko": "Lumson, 포장재 업체 Lombardi의 미국·아시아 사업부 인수",
-   "t_id": "Lumson Akuisisi Unit Usaha AS dan Asia Perusahaan Pengemasan Lombardi"
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/9c8922133c8351a6c259997fb5eeb8b5.jpg",
+   "t_ko": "Alphabet 주가 $400 도달은 시작에 불과하다는 전망",
+   "t_id": "Prediksi: Saham Alphabet di $400 Baru Permulaan"
+  },
+  {
+   "ts": "2026-09-16T21:00:05+07:00",
+   "date": "2026-09-16",
+   "time": "21:00",
+   "src": "FT",
+   "t": "AI must not outrun safety controls, DeepMind co-founder warns",
+   "tags": [],
+   "url": "https://www.ft.com/content/0fc3ae6d-732e-4f08-950e-8669b1fcfd8e?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F8769987f-4073-46ec-88d1-fbb2e89c62e3.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "DeepMind 공동 창업자, 안전 통제 없는 AI 개발 경고",
+   "t_id": "Pendiri Bersama DeepMind Peringatkan AI Tak Boleh Lampaui Kontrol Keamanan"
   },
   {
    "ts": "2026-09-16T20:58:52+07:00",
@@ -17148,8 +17262,8 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666025/soal-setoran-dividen-rp-120-triliun-bos-danantara-mau-bertemu-menkeu-baru",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/11/20/menteri-investasi-dan-hilirisasikepala-bkpm-rosan-roeslani-1763634019135_169.jpeg?w=360&q=90",
-   "t_id": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru",
-   "t_ko": "Rp120조 배당금 납입 건으로 Danantara 대표, 신임 재무장관 회동 추진"
+   "t_ko": "Rp120조 배당금 납입 건으로 Danantara 대표, 신임 재무장관 회동 추진",
+   "t_id": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru"
   },
   {
    "ts": "2026-09-16T20:58:30+07:00",
@@ -17164,19 +17278,6 @@
    "t_id": "Potensi Aliansi Intel-SK Hynix; Saham JB Hunt Turun Akibat Beban Biaya"
   },
   {
-   "ts": "2026-09-16T20:55:25+07:00",
-   "date": "2026-09-16",
-   "time": "20:55",
-   "src": "Yahoo Finance",
-   "t": "Minerals 260 to raise $178m for Bullabulling Gold Project in WA",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/commodities/articles/minerals-260-raise-178m-bullabulling-135525545.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/mining_technology_700/65f9bd47e6f8b420ce2ad584e742c156.jpg",
-   "t_ko": "Minerals 260, Bullabulling 금광 프로젝트 위해 1억 7,800만 달러 조달",
-   "t_id": "Minerals 260 Himpun $178 Juta untuk Proyek Emas Bullabulling di Australia Barat"
-  },
-  {
    "ts": "2026-09-16T20:55:00+07:00",
    "date": "2026-09-16",
    "time": "20:55",
@@ -17185,8 +17286,8 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/korporasi/6aaa9fdccd197/pt-denera-pengembangan-wte-butuh-1-dekade-tantangannya-ada-di-regulasi",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/16/Para_narasumber_membahas_upaya_mengubah_sampah_menjadi_sumber_da-2026_09_16-20_02_13_2c41d8820b49692f958b9c931dc5ac98_620x413_thumb.jpg",
-   "t_id": "PT Denera: Pengembangan WtE Butuh 1 Dekade, Tantangannya Ada di Regulasi",
-   "t_ko": "Denera, 폐기물 에너지 개발에 10년 소요… 규제가 최대 난제"
+   "t_ko": "Denera, 폐기물 에너지 개발에 10년 소요… 규제가 최대 난제",
+   "t_id": "PT Denera: Pengembangan WtE Butuh 1 Dekade, Tantangannya Ada di Regulasi"
   },
   {
    "ts": "2026-09-16T20:51:00+07:00",
@@ -17208,8 +17309,8 @@
    "tags": [],
    "url": "https://www.medcom.id/ekonomi/bisnis/1bVzOpQb-prabowo-sistem-pendidikan-harus-diperbaiki-pemerintah-bahas-rencana-rekrutmen-guru-kembali-ke-pusat",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/16/1842570/qJygvmlGI2.jpg?w=720",
-   "t_id": "Prabowo: Sistem Pendidikan Harus Diperbaiki, Pemerintah Bahas Rencana Rekrutmen Guru Kembali ke Pusat",
-   "t_ko": "Prabowo, 교육 체계 개선 및 교원 채용 권한 중앙 회귀 검토"
+   "t_ko": "Prabowo, 교육 체계 개선 및 교원 채용 권한 중앙 회귀 검토",
+   "t_id": "Prabowo: Sistem Pendidikan Harus Diperbaiki, Pemerintah Bahas Rencana Rekrutmen Guru Kembali ke Pusat"
   },
   {
    "ts": "2026-09-16T20:48:08+07:00",
@@ -17246,8 +17347,8 @@
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/934205/hakim-as-blokir-aturan-trump-batasi-masa-tinggal-mahasiswa-dan-jurnalis-asing",
    "g": 1,
-   "t_id": "Hakim AS Blokir Aturan Trump Batasi Masa Tinggal Mahasiswa dan Jurnalis Asing",
-   "t_ko": "미국 판사, 외국인 유학생·기자 체류 기간 제한 트럼프 규칙 차단"
+   "t_ko": "미국 판사, 외국인 유학생·기자 체류 기간 제한 트럼프 규칙 차단",
+   "t_id": "Hakim AS Blokir Aturan Trump Batasi Masa Tinggal Mahasiswa dan Jurnalis Asing"
   },
   {
    "ts": "2026-09-16T20:46:00+07:00",
@@ -17281,8 +17382,8 @@
    "t": "Indonesia Disebut akan Dilanda Gelombang Investasi Besar-Besaran",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/934198/indonesia-disebut-akan-dilanda-gelombang-investasi-besar-besaran",
-   "t_id": "Indonesia Disebut akan Dilanda Gelombang Investasi Besar-Besaran",
-   "t_ko": "인도네시아, 대규모 투자 물결 직면 전망"
+   "t_ko": "인도네시아, 대규모 투자 물결 직면 전망",
+   "t_id": "Indonesia Disebut akan Dilanda Gelombang Investasi Besar-Besaran"
   },
   {
    "ts": "2026-09-16T20:42:34+07:00",
@@ -17340,8 +17441,8 @@
    "t": "Prabowo Ogah Lindungi Koruptor, Ini Buktinya",
    "tags": [],
    "url": "https://mediaindonesia.com/politik-dan-hukum/934195/prabowo-ogah-lindungi-koruptor-ini-buktinya",
-   "t_id": "Prabowo Ogah Lindungi Koruptor, Ini Buktinya",
-   "t_ko": "Prabowo, 부패 세력 불용 방침 천명"
+   "t_ko": "Prabowo, 부패 세력 불용 방침 천명",
+   "t_id": "Prabowo Ogah Lindungi Koruptor, Ini Buktinya"
   },
   {
    "ts": "2026-09-16T20:37:00+07:00",
@@ -17351,33 +17452,8 @@
    "t": "Suahasil Gantikan Purbaya jadi Menteri Keuangan, Istana: Hak Presiden",
    "tags": [],
    "url": "https://mediaindonesia.com/politik-dan-hukum/934196/suahasil-gantikan-purbaya-jadi-menteri-keuangan-istana-hak-presiden",
-   "t_id": "Suahasil Gantikan Purbaya jadi Menteri Keuangan, Istana: Hak Presiden",
-   "t_ko": "Suahasil, Purbaya 후임 재무장관 내정 — 대통령 고유 권한"
-  },
-  {
-   "ts": "2026-09-16T20:36:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:36",
-   "src": "Bloomberg",
-   "t": "Fed Expected to Hike Rates for First Time Since 2023",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-16/fed-expected-to-hike-rates-for-first-time-since-2023-video",
-   "g": 1,
-   "t_ko": "연준, 2023년 이후 첫 금리 인상 전망",
-   "t_id": "Fed Diprediksi Kerek Suku Bunga untuk Pertama Kalinya Sejak 2023"
-  },
-  {
-   "ts": "2026-09-16T20:35:42+07:00",
-   "date": "2026-09-16",
-   "time": "20:35",
-   "src": "Yahoo Finance",
-   "t": "CoStar (CSGP): Residential Strategy Unchanged Despite Persistent Market Skepticism",
-   "tags": [],
-   "url": "https://finance.yahoo.com/real-estate/articles/costar-csgp-residential-strategy-unchanged-133542445.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/017174cc5c9e8720a5075e82fe7b59ea.jpg",
-   "t_ko": "CoStar(CSGP), 지속되는 시장 회의론에도 주거 전략 유지",
-   "t_id": "CoStar: Strategi Residensial Tak Berubah di Tengah Skeptisme Pasar yang Berlanjut"
+   "t_ko": "Suahasil, Purbaya 후임 재무장관 내정 — 대통령 고유 권한",
+   "t_id": "Suahasil Gantikan Purbaya jadi Menteri Keuangan, Istana: Hak Presiden"
   },
   {
    "ts": "2026-09-16T20:35:00+07:00",
@@ -17389,31 +17465,6 @@
    "url": "https://mediaindonesia.com/politik-dan-hukum/934194/komitmen-kapolri-berantas-impor-tekstil-ilegal-diapresiasi",
    "t_ko": "경찰청장의 불법 섬유 수입 근절 의지 호평",
    "t_id": "Komitmen Kapolri Berantas Impor Tekstil Ilegal Diapresiasi"
-  },
-  {
-   "ts": "2026-09-16T20:34:42+07:00",
-   "date": "2026-09-16",
-   "time": "20:34",
-   "src": "Reuters",
-   "t": "Wall St opens higher ahead of much-anticipated Fed decision",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSUtqeWNnZEJZT0IyaHpTajZTM3hWV0gwZUV1VkhQV21PUzJBQ0kzLWhxTk5iWUtNbTI1eUVWQnN1b2Y4T2RQSnhmc1pDcVVWYldOc19HSzRId2pZMHZFWHZrNHhnMVh3VGd4RkRSdDJGZ2ZJSzd6TWhiWWtUd1lWRkxzcklsRmJhOS1TcEZYMkRTQjhmakMyVDFtQQ?oc=5",
-   "g": 1,
-   "t_ko": "연준 결정 앞두고 월가 상승 출발",
-   "t_id": "Wall St Dibuka Menguat Jelang Keputusan The Fed yang Ditunggu"
-  },
-  {
-   "ts": "2026-09-16T20:33:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:33",
-   "src": "MarketWatch",
-   "t": "The ‘CIA’ strategy beating the market: How one top-performing money manager spots mispriced stocks",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/the-cia-strategy-beating-the-market-how-one-top-performing-money-manager-spots-mispriced-stocks-535c638d?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-85505267",
-   "t_ko": "펀드매니저의 저평가 주식 발굴 'CIA' 전략",
-   "t_id": "Strategi Ala 'CIA' Kalahkan Pasar: Cara Manajer Investasi Unggulan Bidik Saham Salah Harga"
   },
   {
    "ts": "2026-09-16T20:33:00+07:00",
@@ -17482,51 +17533,6 @@
    "img": "https://cdn0-production-images-kly.akamaized.net/tZETKcytiRd_A3VZdFR6_MGa_E8=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5182873/original/071417500_1744109076-20250408-Penutupan_IHSG-HER_2.jpg",
    "t_ko": "IHSG 6,436으로 하락 — 인프라 섹터 낙폭 최대로",
    "t_id": "IHSG Hari Ini Merosot ke 6.436, Sektor Saham Infrastruktur Alami Penurunan Terbesar"
-  },
-  {
-   "ts": "2026-09-16T20:24:18+07:00",
-   "date": "2026-09-16",
-   "time": "20:24",
-   "src": "Republika",
-   "t": "Pengembangan Panas Bumi Gunung Ungaran, Undip Soroti Pengurangan Emisi dan Keberlanjutan",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tlgl8i370/pengembangan-panas-bumi-gunung-ungaran-undip-soroti-pengurangan-emisi-dan-keberlanjutan",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/026883400-1788262003-830-556.jpg",
-   "t_ko": "Ungaran산 지열 개발 — Diponegoro 대학, 감축 및 지속가능성 강조",
-   "t_id": "Pengembangan Panas Bumi Gunung Ungaran, Undip Soroti Pengurangan Emisi dan Keberlanjutan"
-  },
-  {
-   "ts": "2026-09-16T20:21:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:21",
-   "src": "Media Indonesia",
-   "t": "Kebutuhan Listrik Diprediksi terus Naik imbas Industrialisasi dan Kendaraan Listrik",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/934187/kebutuhan-listrik-diprediksi-terus-naik-imbas-industrialisasi-dan-kendaraan-listrik",
-   "t_ko": "산업화·전기차 확산으로 전력 수요 증가 전망",
-   "t_id": "Kebutuhan Listrik Diprediksi terus Naik imbas Industrialisasi dan Kendaraan Listrik"
-  },
-  {
-   "ts": "2026-09-16T20:21:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:21",
-   "src": "Media Indonesia",
-   "t": "Hilirisasi Industri Agro Penopang Ekspor",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/934180/hilirisasi-industri-agro-penopang-ekspor",
-   "t_ko": "농산물 산업 가공 고도화가 수출 견인",
-   "t_id": "Hilirisasi Industri Agro Penopang Ekspor"
-  },
-  {
-   "ts": "2026-09-16T20:19:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:19",
-   "src": "Media Indonesia",
-   "t": "Perubahan Status Perusahaan Tandai Babak Baru Penguatan Peran di Industri Perdagangan Berjangka",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/934178/perubahan-status-perusahaan-tandai-babak-baru-penguatan-peran-di-industri-perdagangan-berjangka",
-   "t_ko": "사명 변경으로 선물거래 산업 내 역할 강화의 새 장 마련",
-   "t_id": "Perubahan Status Perusahaan Tandai Babak Baru Penguatan Peran di Industri Perdagangan Berjangka"
   }
  ],
  "kisi_news": [
@@ -17696,9 +17702,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "12.94",
-   "d": -1.08,
-   "ytd": 11.44,
+   "v": "12.93",
+   "d": -1.17,
+   "ytd": 11.34,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17708,9 +17714,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.967%",
-   "d": -0.58,
-   "ytd": 19.31,
+   "v": "4.971%",
+   "d": -0.5,
+   "ytd": 19.41,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17731,9 +17737,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.74",
-   "d": 0.07,
-   "ytd": 1.48,
+   "v": "99.71",
+   "d": 0.05,
+   "ytd": 1.45,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17743,9 +17749,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.27",
-   "d": -1.44,
-   "ytd": 79.85,
+   "v": "103.80",
+   "d": -0.94,
+   "ytd": 80.77,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17755,9 +17761,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,377.3",
-   "d": 0.23,
-   "ytd": 1.2,
+   "v": "4,378.5",
+   "d": 0.26,
+   "ytd": 1.22,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -23581,10 +23587,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-16 21:06",
-  "pc_age_min": 6,
-  "news_ai_cache": 46,
-  "news_ai_hit": 34,
+  "idx_from_pc": "2026-09-16 21:19",
+  "pc_age_min": 5,
+  "news_ai_cache": 45,
+  "news_ai_hit": 33,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25279,6 +25285,20 @@
  "top_day": "2026-09-16",
  "top_news": [
   {
+   "ts": "2026-09-16T20:30:00+07:00",
+   "date": "2026-09-16",
+   "time": "20:30",
+   "src": "IDX Channel",
+   "t": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi",
+   "tags": [],
+   "url": "https://www.idxchannel.com/market-news/penjelasan-ojk-soal-danantara-dikabarkan-bakal-kuasai-40-persen-saham-bei-usai-demutualisasi",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/04/08/IDX_bursa_BEI.jpg",
+   "t_ko": "데무추얼라이제이션 후 Danantara가 BEI 지분 40% 장악설에 OJK 입장 표명",
+   "t_id": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi",
+   "score": 419.75,
+   "srcs": 4
+  },
+  {
    "ts": "2026-09-16T16:33:41+07:00",
    "date": "2026-09-16",
    "time": "16:33",
@@ -25305,20 +25325,6 @@
    ]
   },
   {
-   "ts": "2026-09-16T20:58:52+07:00",
-   "date": "2026-09-16",
-   "time": "20:58",
-   "src": "Detik",
-   "t": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666025/soal-setoran-dividen-rp-120-triliun-bos-danantara-mau-bertemu-menkeu-baru",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/11/20/menteri-investasi-dan-hilirisasikepala-bkpm-rosan-roeslani-1763634019135_169.jpeg?w=360&q=90",
-   "t_id": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru",
-   "t_ko": "Rp120조 배당금 납입 건으로 Danantara 대표, 신임 재무장관 회동 추진",
-   "score": 419.35,
-   "srcs": 2
-  },
-  {
    "ts": "2026-09-16T17:05:00+07:00",
    "date": "2026-09-16",
    "time": "17:05",
@@ -25328,7 +25334,7 @@
    "url": "https://www.idnfinancials.com/news/68946/jci-weakens-for-six-days-odds-of-fed-rate-hike-reach-92",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG-12022026.jpg",
    "score": 416.75,
-   "srcs": 5,
+   "srcs": 4,
    "t_ko": "IHSG 6거래일 연속 하락 — 연준 금리 인상 확률 92% 반영",
    "t_id": "IHSG Melemah 6 Hari Beruntun, Peluang Suku Bunga The Fed Naik Capai 92%"
   },
@@ -25347,30 +25353,19 @@
    "t_id": "Diresmikan Prabowo, LRT Jakarta Fase 1B Terapkan Tarif Rp 8 Selama Delapan Hari"
   },
   {
-   "ts": "2026-09-16T21:07:12+07:00",
+   "ts": "2026-09-16T04:01:00+07:00",
    "date": "2026-09-16",
-   "time": "21:07",
-   "src": "CNBC",
-   "t": "Oil prices fall after U.S. says damaged Saudi pipeline will restart operations in days",
+   "time": "04:01",
+   "src": "WSJ",
+   "t": "What Comes Next, Now that the 10-Year Treasury Yield Has Crossed 5%?",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
+   "url": "https://www.wsj.com/finance/investing/what-comes-next-now-that-the-10-year-treasury-yield-has-crossed-5-c3bd8b05?mod=rss_markets_main",
    "g": 1,
-   "t_ko": "미국, 사우디 송유관 조기 복구 발표에 유가 하락",
-   "t_id": "Harga Minyak Turun Usai AS Sebut Pipa Saudi yang Rusak Beroperasi Lagi dalam Hitungan Hari",
-   "ai_ko": "· 미국 원유재고 710만배럴 증가, 유가 하락\n· 시장은 160만배럴 감소 전망, 9월 11일 기준\n· Saudi East-West 송유관 폐쇄로 공급 불안 상존",
-   "ai_id": "· Stok minyak AS naik 7,1 juta barel\n· Konsensus perkirakan turun 1,6 juta barel\n· Pipa East-West Saudi tutup, pasokan rawan",
-   "ai_tags": [
-    "유가",
-    "원유재고",
-    "지정학"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "stok minyak",
-    "geopolitik"
-   ],
-   "score": 315.0,
-   "srcs": 5
+   "img": "https://images.wsj.net/im-84433863",
+   "score": 315.5,
+   "srcs": 6,
+   "t_ko": "미국 10년물 국채 금리 5% 상회 이후 전망",
+   "t_id": "Apa Langkah Selanjutnya Usai Imbal Hasil Obligasi AS 10 Tahun Tembus 5%?"
   }
  ],
  "daylog": {
@@ -42816,6 +42811,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 20:58"
+  "announcements": "2026-09-16 21:12"
  }
 }
