@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 00:30",
+ "updated": "2026-09-17 00:43",
  "delay_min": 15,
  "fx_basis": "12.94 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,368 · 00:14 Yahoo",
- "idr_per_krw": 12.9448,
+ "idr_per_krw": 12.9438,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -119,7 +119,7 @@
   "value_idr": 10727972431400.006,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 830종목 · 종가 · 외국인·공시 PC 09-17 00:25",
+  "rank_src": "Yahoo 15분 지연 · 830종목 · 종가 · 외국인·공시 PC 09-17 00:39",
   "rank_asof": null,
   "rank_date": "2026-09-15",
   "adv": 330,
@@ -15502,10 +15502,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7609.68,
+   "px": 7606.37,
    "prev": 7585.51,
-   "pct": 0.32,
-   "asof": "00:25",
+   "pct": 0.28,
+   "asof": "00:40",
    "live": true,
    "spark": [
     7603.81,
@@ -15555,17 +15555,20 @@
     7608.52,
     7608.64,
     7607.63,
-    7609.68
+    7610.38,
+    7609.19,
+    7607.48,
+    7606.37
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26151.75,
+   "px": 26131.26,
    "prev": 25981.57,
-   "pct": 0.65,
-   "asof": "00:25",
+   "pct": 0.58,
+   "asof": "00:40",
    "live": true,
    "spark": [
     26099.29,
@@ -15615,17 +15618,20 @@
     26154.75,
     26148.59,
     26145.61,
-    26151.75
+    26156.38,
+    26152.58,
+    26140.0,
+    26131.26
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52110.63,
+   "px": 52120.5,
    "prev": 52092.45,
-   "pct": 0.03,
-   "asof": "00:25",
+   "pct": 0.05,
+   "asof": "00:40",
    "live": true,
    "spark": [
     52038.56,
@@ -15675,7 +15681,10 @@
     52057.4,
     52075.77,
     52082.94,
-    52110.63
+    52119.01,
+    52120.03,
+    52125.68,
+    52120.5
    ]
   },
   {
@@ -16865,9 +16874,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-17T00:28:25+07:00",
+   "ts": "2026-09-17T00:35:25+07:00",
    "date": "2026-09-17",
-   "time": "00:28",
+   "time": "00:35",
    "src": "CNBC",
    "t": "Continental Resources to develop massive oil patch in Venezuela",
    "tags": [],
@@ -16875,6 +16884,82 @@
    "g": 1,
    "t_ko": "Continental Resources, 베네수엘라 대규모 유전 개발 추진",
    "t_id": "Continental Resources Garap Ladang Minyak Raksasa di Venezuela"
+  },
+  {
+   "ts": "2026-09-17T00:33:55+07:00",
+   "date": "2026-09-17",
+   "time": "00:33",
+   "src": "Yahoo Finance",
+   "t": "US DFC approves $500 million in guarantees to boost US exports to emerging markets",
+   "tags": [],
+   "url": "https://finance.yahoo.com/economy/policy/articles/us-dfc-approves-500-million-173355620.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/reuters.com/83f94f2ed11abdbfb0c59c30e8cd9273.jpg",
+   "t_ko": "미국 DFC, 신흥국 수출 촉진 위해 5억 달러 보증 승인",
+   "t_id": "US DFC Setujui Jaminan $500 Juta untuk Genjot Ekspor AS ke Pasar Berkembang"
+  },
+  {
+   "ts": "2026-09-17T00:33:34+07:00",
+   "date": "2026-09-17",
+   "time": "00:33",
+   "src": "Yahoo Finance",
+   "t": "The Fed Has a Chance to Help the Long Treasury Market. Will it Deliver?",
+   "tags": [],
+   "url": "https://www.barrons.com/livecoverage/stock-market-news-today-091626/card/the-fed-has-a-chance-to-help-the-long-treasury-market-will-it-deliver--SUkLMLbbmBkzvVd8sBJX?siteid=yhoof2&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/Barrons.com/12ea0f43d8f8307249a68d1cb2e0587e.png",
+   "t_ko": "연준, 장기 국채시장 지원 기회 맞이할 것인가",
+   "t_id": "The Fed Punya Peluang Bantu Pasar US Treasury, Mampukah?"
+  },
+  {
+   "ts": "2026-09-17T00:33:00+07:00",
+   "date": "2026-09-17",
+   "time": "00:33",
+   "src": "Yahoo Finance",
+   "t": "Palantir, Microsoft’s biggest warning gets real for AI stocks",
+   "tags": [],
+   "url": "https://finance.yahoo.com/technology/ai/articles/palantir-microsoft-biggest-warning-gets-173300865.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/thestreet_881/6d4010a194be3fcb4677a36c2c4b4041.jpg",
+   "t_ko": "Palantir·Microsoft, AI 주식에 대한 경고 현실화",
+   "t_id": "Peringatan Terbesar Palantir dan Microsoft Jadi Nyata untuk Saham AI"
+  },
+  {
+   "ts": "2026-09-17T00:32:22+07:00",
+   "date": "2026-09-17",
+   "time": "00:32",
+   "src": "CNBC",
+   "t": "Consumers hit by one-two punch of oil and rates from Iran war. The estimated bill is $1,700 per household",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/oil-prices-treasury-yields-consumers-iran.html",
+   "g": 1,
+   "t_ko": "이란 전쟁 여파로 유가·금리 동반 상승 — 가구당 비용 $1,700 추산",
+   "t_id": "Konsumen Terdampak Ganda Perang Iran: Minyak dan Suku Bunga, Tagihan Rp27 Juta per Rumah Tangga"
+  },
+  {
+   "ts": "2026-09-17T00:30:00+07:00",
+   "date": "2026-09-17",
+   "time": "00:30",
+   "src": "Bloomberg",
+   "t": "Bank of Canada Troubled by High Gas Prices, Warns of Hike Risk",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-16/bank-of-canada-troubled-by-high-gas-prices-warns-of-hike-risk",
+   "g": 1,
+   "t_ko": "캐나다 중앙은행, 높은 휘발유 가격 우려하며 금리 인상 경고",
+   "t_id": "Bank of Canada Resah Harga BBM Tinggi, Peringatkan Risiko Kenaikan Suku Bunga"
+  },
+  {
+   "ts": "2026-09-17T00:30:00+07:00",
+   "date": "2026-09-17",
+   "time": "00:30",
+   "src": "MarketWatch",
+   "t": "The data-center backlash is so fierce that Republican candidates are willing to cross Trump",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/the-data-center-backlash-is-so-fierce-that-republican-candidates-are-willing-to-cross-trump-9a6eaa03?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-46437813",
+   "t_ko": "공화당 후보들까지 트럼프에 반대하는 거센 데이터센터 역풍",
+   "t_id": "Penolakan Pusat Data Begitu Kuat hingga Kandidat Republik Siap Menentang Trump"
   },
   {
    "ts": "2026-09-17T00:27:29+07:00",
@@ -16885,8 +16970,20 @@
    "tags": [],
    "url": "https://www.jawapos.com/bisnis/2609170019/lebih-dari-90-persen-umkm-belum-optimal-gunakan-ai-tata-kelola-jadi-tantangan",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/ilustrasi-ai-pinterest-ax0BW.webp",
-   "t_id": "Lebih dari 90 Persen UMKM Belum Optimal Gunakan AI, Tata Kelola jadi Tantangan",
-   "t_ko": "인니 중소기업 90% 이상 AI 활용 미흡 — 거버넌스가 과제"
+   "t_ko": "인니 중소기업 90% 이상 AI 활용 미흡 — 거버넌스가 과제",
+   "t_id": "Lebih dari 90 Persen UMKM Belum Optimal Gunakan AI, Tata Kelola jadi Tantangan"
+  },
+  {
+   "ts": "2026-09-17T00:17:47+07:00",
+   "date": "2026-09-17",
+   "time": "00:17",
+   "src": "CNBC",
+   "t": "Sen. Blumenthal urges AI oversight: 'We're on the verge of losing control'",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/blumenthal-ai-regulation-safety-oversight.html",
+   "g": 1,
+   "t_ko": "Blumenthal 상원의원, AI 통제력 상실 임박 경고하며 규제 촉구",
+   "t_id": "Senator Blumenthal Desak Pengawasan AI: 'Kita di Ambang Kehilangan Kendali'"
   },
   {
    "ts": "2026-09-17T00:15:55+07:00",
@@ -16905,13 +17002,13 @@
    "date": "2026-09-17",
    "time": "00:14",
    "src": "Yahoo Finance",
-   "t": "Stock Market Today: Nasdaq Leads Gains As Fed News Looms; Oil Ship Stocks Jam (Live Coverage)",
+   "t": "Stock Market Today: Nasdaq Leads Gains As Fed News Looms; Oil Ship Stocks Sail North (Live Coverage)",
    "tags": [],
    "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-rate-hike-warsh-intel-sk-hynix/?src=A00220&yptr=yahoo",
    "g": 1,
    "img": "https://media.zenfs.com/en/ibd.com/055e6190716b8ff765115a6c4fe3695a.jpg",
-   "t_ko": "오늘의 증시 — 연준 앞두고 나스닥 상승 주도, 해운주 급등",
-   "t_id": "Bursa Saham Hari Ini: Nasdaq Pimpin Kenaikan Jelang Keputusan The Fed; Saham Kapal Tanker Minyak Melesat"
+   "t_ko": "증시 — 연준 이벤트 앞두고 Nasdaq 상승 주도 및 해운주 강세",
+   "t_id": "Bursa Saham Hari Ini: Nasdaq Pimpin Penguatan Jelang Kebijakan The Fed; Saham Kapal Tanker Melesat (Liputan Langsung)"
   },
   {
    "ts": "2026-09-17T00:12:12+07:00",
@@ -16925,30 +17022,6 @@
    "img": "https://s.yimg.com/uu/api/res/1.2/uKTnx5Un6FsOYdEatN60WA--~B/aD00NTA7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://d29szjachogqwa.cloudfront.net/images/user-uploaded/31f62b1d-ad7b-4ddb-9f80-500d79242169_4e52d96284df3411872d942041f19eb5b3587350d641ca1182532e8290f9a497.jpg",
    "t_ko": "월가, 금리 인상 베팅 속 연준 결정 주목",
    "t_id": "Wall Street Pertaruhkan Kenaikan Suku Bunga, Keputusan The Fed Bakal Alot"
-  },
-  {
-   "ts": "2026-09-17T00:03:21+07:00",
-   "date": "2026-09-17",
-   "time": "00:03",
-   "src": "CNBC",
-   "t": "Oil prices fall after U.S. says damaged Saudi pipeline will restart operations in days",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
-   "g": 1,
-   "t_ko": "미국, 사우디 송유관 조기 복구 발표에 유가 하락",
-   "t_id": "Harga Minyak Turun Usai AS Sebut Pipa Saudi yang Rusak Beroperasi Lagi dalam Hitungan Hari",
-   "ai_ko": "· 미국 원유재고 710만배럴 증가, 유가 하락\n· 시장은 160만배럴 감소 전망, 9월 11일 기준\n· Saudi East-West 송유관 폐쇄로 공급 불안 상존",
-   "ai_id": "· Stok minyak AS naik 7,1 juta barel\n· Konsensus perkirakan turun 1,6 juta barel\n· Pipa East-West Saudi tutup, pasokan rawan",
-   "ai_tags": [
-    "유가",
-    "원유재고",
-    "지정학"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "stok minyak",
-    "geopolitik"
-   ]
   },
   {
    "ts": "2026-09-17T00:00:50+07:00",
@@ -17013,31 +17086,6 @@
    "t_id": "Jose Rizal Bawa Nama Indonesia ke Panggung Dunia"
   },
   {
-   "ts": "2026-09-16T23:37:22+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "CNBC",
-   "t": "We're significantly trimming a stock that has not gone to plan",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/were-significantly-trimming-a-stock-that-has-not-gone-to-plan.html",
-   "g": 1,
-   "t_ko": "운용 계획에 못 미친 보유 종목 대폭 축소",
-   "t_id": "Kami Pangkas Signifikan Saham yang Tak Sesuai Rencana"
-  },
-  {
-   "ts": "2026-09-16T23:32:59+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "FT",
-   "t": "Traders expect Fed to raise interest rates for first time in 3 years",
-   "tags": [],
-   "url": "https://www.ft.com/content/61b5fbae-9dd6-4980-bd1f-effe54b72d84",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F483e82fa-436c-48dc-b399-65f068ca193b.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "트레이더들, 연준 3년 만의 첫 금리 인상 전망",
-   "t_id": "Trader Ekspektasikan The Fed Naikkan Suku Bunga untuk Pertama Kali dalam 3 Tahun"
-  },
-  {
    "ts": "2026-09-16T23:30:13+07:00",
    "date": "2026-09-16",
    "time": "09/16",
@@ -17048,56 +17096,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/jawapos/2020/02/PIPA-GAS-1.jpg",
    "t_ko": "배관망 미설치 지역에 Gagas, 상업용 고객 대상 CNG 공급",
    "t_id": "Belum Ada Jaringan Pipa, Gagas Salurkan CNG ke Pelanggan Komersial"
-  },
-  {
-   "ts": "2026-09-16T23:26:58+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "CNBC",
-   "t": "Pentagon CTO says U.S. government shouldn't take stakes in tech giants, questions adding AI rules",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/emil-michael-ai-regulation-trump.html",
-   "g": 1,
-   "t_ko": "미 국방부 CTO, 빅테크 지분 인수 반대 및 AI 규제 신중론 제기",
-   "t_id": "CTO Pentagon Sebut Pemerintah AS Tak Perlu Ambil Saham Raksasa Teknologi, Pertanyakan Aturan AI"
-  },
-  {
-   "ts": "2026-09-16T23:26:41+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "CNBC",
-   "t": "Senate is still a toss-up, but Democrats now have slight edge, prediction market traders think",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/prediction-markets-say-democrats-are-slightly-favored-to-win-senate.html",
-   "g": 1,
-   "t_ko": "미 상원 선거 박빙 속 민주당 우세 전망 — 예측 시장",
-   "t_id": "Senat Masih Ketat, Demokrat Unggul Tipis Versi Pasar Prediksi"
-  },
-  {
-   "ts": "2026-09-16T23:24:00+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "MarketWatch",
-   "t": "Classic budgeting rules don’t work anymore — even if your household makes $100,000. Here’s what does.",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/classic-budgeting-rules-dont-work-anymore-even-if-your-household-makes-100-000-heres-what-does-cfb235a8?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-71917168",
-   "t_ko": "소득 10만 달러 가구도 무너진 전통적 예산 관리법의 대안",
-   "t_id": "Aturan Anggaran Klasik Tak Lagi Ampuh Meski Penghasilan Rp1,5 Miliar, Ini Solusinya"
-  },
-  {
-   "ts": "2026-09-16T23:17:00+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "WSJ",
-   "t": "Markets Steady as Investors Await Rate Decision",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/stocks/oil-pares-gains-stock-futures-steady-as-cautious-optimism-heralds-fed-day-65090da0?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-79262334",
-   "t_ko": "금리 결정 앞두고 증시 안정세",
-   "t_id": "Pasar Stabil Saat Investor Menanti Keputusan Suku Bunga"
   },
   {
    "ts": "2026-09-16T23:16:27+07:00",
@@ -17513,8 +17511,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.94",
-   "d": -1.11,
-   "ytd": 11.4,
+   "d": -1.12,
+   "ytd": 11.39,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17547,9 +17545,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.73",
-   "d": 0.06,
-   "ytd": 1.47,
+   "v": "99.71",
+   "d": 0.05,
+   "ytd": 1.46,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17559,9 +17557,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.65",
-   "d": -2.03,
-   "ytd": 78.77,
+   "v": "102.45",
+   "d": -2.22,
+   "ytd": 78.42,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17571,9 +17569,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,386.5",
-   "d": 0.44,
-   "ytd": 1.41,
+   "v": "4,388.0",
+   "d": 0.48,
+   "ytd": 1.44,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -23641,10 +23639,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-17 00:25",
-  "pc_age_min": 5,
-  "news_ai_cache": 45,
-  "news_ai_hit": 32,
+  "idx_from_pc": "2026-09-17 00:39",
+  "pc_age_min": 4,
+  "news_ai_cache": 42,
+  "news_ai_hit": 30,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25388,7 +25386,7 @@
    "url": "https://www.idnfinancials.com/news/68946/jci-weakens-for-six-days-odds-of-fed-rate-hike-reach-92",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG-12022026.jpg",
    "score": 416.75,
-   "srcs": 6,
+   "srcs": 7,
    "t_ko": "IHSG 6거래일 연속 하락 — 연준 금리 인상 확률 92% 반영",
    "t_id": "IHSG Melemah 6 Hari Beruntun, Peluang Suku Bunga The Fed Naik Capai 92%"
   },
@@ -25407,29 +25405,17 @@
    "t_id": "Demutualisasi Masuk Tahap Akhir, Pemegang Saham BEI Bakal Terima Dividen Tahunan?"
   },
   {
-   "ts": "2026-09-17T00:03:21+07:00",
+   "ts": "2026-09-17T00:32:22+07:00",
    "date": "2026-09-17",
-   "time": "00:03",
+   "time": "00:32",
    "src": "CNBC",
-   "t": "Oil prices fall after U.S. says damaged Saudi pipeline will restart operations in days",
+   "t": "Consumers hit by one-two punch of oil and rates from Iran war. The estimated bill is $1,700 per household",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
+   "url": "https://www.cnbc.com/2026/09/16/oil-prices-treasury-yields-consumers-iran.html",
    "g": 1,
-   "t_ko": "미국, 사우디 송유관 조기 복구 발표에 유가 하락",
-   "t_id": "Harga Minyak Turun Usai AS Sebut Pipa Saudi yang Rusak Beroperasi Lagi dalam Hitungan Hari",
-   "ai_ko": "· 미국 원유재고 710만배럴 증가, 유가 하락\n· 시장은 160만배럴 감소 전망, 9월 11일 기준\n· Saudi East-West 송유관 폐쇄로 공급 불안 상존",
-   "ai_id": "· Stok minyak AS naik 7,1 juta barel\n· Konsensus perkirakan turun 1,6 juta barel\n· Pipa East-West Saudi tutup, pasokan rawan",
-   "ai_tags": [
-    "유가",
-    "원유재고",
-    "지정학"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "stok minyak",
-    "geopolitik"
-   ],
-   "score": 315.0,
+   "t_ko": "이란 전쟁 여파로 유가·금리 동반 상승 — 가구당 비용 $1,700 추산",
+   "t_id": "Konsumen Terdampak Ganda Perang Iran: Minyak dan Suku Bunga, Tagihan Rp27 Juta per Rumah Tangga",
+   "score": 317.0,
    "srcs": 4
   }
  ],
@@ -25834,16 +25820,16 @@
   "2026-09-17": {
    "news": [
     {
-     "t": "Oil prices fall after U.S. says damaged Saudi pipeline will restart operations in days",
-     "ko": "미국, 사우디 송유관 조기 복구 발표에 유가 하락",
-     "id": "Harga Minyak Turun Usai AS Sebut Pipa Saudi yang Rusak Beroperasi Lagi dalam Hitungan Hari",
-     "ai_ko": "· 미국 원유재고 710만배럴 증가, 유가 하락\n· 시장은 160만배럴 감소 전망, 9월 11일 기준\n· Saudi East-West 송유관 폐쇄로 공급 불안 상존",
-     "ai_id": "· Stok minyak AS naik 7,1 juta barel\n· Konsensus perkirakan turun 1,6 juta barel\n· Pipa East-West Saudi tutup, pasokan rawan",
+     "t": "Consumers hit by one-two punch of oil and rates from Iran war. The estimated bill is $1,700 per household",
+     "ko": "이란 전쟁 여파로 유가·금리 동반 상승 — 가구당 비용 $1,700 추산",
+     "id": "Konsumen Terdampak Ganda Perang Iran: Minyak dan Suku Bunga, Tagihan Rp27 Juta per Rumah Tangga",
+     "ai_ko": "",
+     "ai_id": "",
      "src": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
-     "time": "00:03",
+     "url": "https://www.cnbc.com/2026/09/16/oil-prices-treasury-yields-consumers-iran.html",
+     "time": "00:32",
      "tags": [],
-     "sc": 315.0,
+     "sc": 317.0,
      "slot": "global",
      "q": 85
     },
@@ -42922,6 +42908,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-17 00:15"
+  "announcements": "2026-09-17 00:30"
  }
 }
