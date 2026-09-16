@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 21:29",
+ "updated": "2026-09-16 21:38",
  "delay_min": 15,
  "fx_basis": "12.94 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,369 · 21:20 Yahoo",
- "idr_per_krw": 12.9379,
+ "idr_per_krw": 12.9357,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -334,7 +334,7 @@
   "value_idr": 10929839903866.678,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 21:19",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 21:33",
   "rank_asof": null,
   "rank_date": "2026-09-16",
   "adv": 215,
@@ -15757,10 +15757,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7599.94,
+   "px": 7600.82,
    "prev": 7585.51,
-   "pct": 0.19,
-   "asof": "21:25",
+   "pct": 0.2,
+   "asof": "21:35",
    "live": true,
    "spark": [
     7603.81,
@@ -15774,17 +15774,19 @@
     7606.48,
     7604.66,
     7601.1,
-    7599.94
+    7600.65,
+    7602.59,
+    7600.82
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26143.24,
+   "px": 26128.18,
    "prev": 25981.57,
-   "pct": 0.62,
-   "asof": "21:25",
+   "pct": 0.56,
+   "asof": "21:35",
    "live": true,
    "spark": [
     26099.29,
@@ -15798,17 +15800,19 @@
     26139.87,
     26151.91,
     26146.96,
-    26143.24
+    26141.72,
+    26139.78,
+    26128.18
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51907.92,
+   "px": 51970.04,
    "prev": 52092.45,
-   "pct": -0.35,
-   "asof": "21:25",
+   "pct": -0.23,
+   "asof": "21:35",
    "live": true,
    "spark": [
     52038.56,
@@ -15822,7 +15826,9 @@
     51960.53,
     51927.07,
     51887.38,
-    51907.92
+    51932.3,
+    51962.16,
+    51970.04
    ]
   },
   {
@@ -16157,8 +16163,8 @@
     "SMRA"
    ],
    "url": "https://mediaindonesia.com/ekonomi/934221/kpk-endus-struktur-bayangan-di-lingkungan-kementerian-atrbpn",
-   "t_id": "KPK Endus Struktur Bayangan di Lingkungan Kementerian ATR/BPN",
-   "t_ko": "KPK, ATR/BPN 부처 내 그림자 조직 비리 포착"
+   "t_ko": "KPK, ATR/BPN 부처 내 그림자 조직 비리 포착",
+   "t_id": "KPK Endus Struktur Bayangan di Lingkungan Kementerian ATR/BPN"
   },
   {
    "ts": "2026-09-16T20:45:00+07:00",
@@ -16421,32 +16427,6 @@
     "top gainer",
     "bursa",
     "saham kecil"
-   ]
-  },
-  {
-   "ts": "2026-09-16T16:13:00+07:00",
-   "date": "2026-09-16",
-   "time": "16:13",
-   "src": "Katadata",
-   "t": "Respons Kasus HGB Summarecon, Wamen PKP Fahri Hamzah Sentil Bisnis Pengembang",
-   "tags": [
-    "SMRA"
-   ],
-   "url": "https://katadata.co.id/berita/nasional/6aaa5db379fa1/respons-kasus-hgb-summarecon-wamen-pkp-fahri-hamzah-sentil-bisnis-pengembang",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/06/05/Simposium_Nasional_Sumitronomics_dan_Arah_Ekonomi_Indonesia_Foto-2025_06_05-04_06_33_ea931edfea10c988389acbb57d309af2_620x413_thumb.jpg",
-   "t_ko": "Summarecon 토지소유권 이슈에 Fahri Hamzah 차관, 디벨로퍼 업계 직격",
-   "t_id": "Respons Kasus HGB Summarecon, Wamen PKP Fahri Hamzah Sentil Bisnis Pengembang",
-   "ai_ko": "· KPK, Summarecon(SMRA) 대표 뇌물 입건\n· Fahri Hamzah 차관, 디벨로퍼 토지사업 편중 지적\n· 정부 토지 활용 주택정책 추진, 개발업체 규제 부담",
-   "ai_id": "· KPK tetapkan Dirut SMRA tersangka HGB\n· Wamen PKP soroti bisnis tanah pengembang\n· Rumah rakyat diarahkan ke tanah negara",
-   "ai_tags": [
-    "규제",
-    "부동산",
-    "수사"
-   ],
-   "ai_tags_id": [
-    "regulasi",
-    "properti",
-    "korupsi"
    ]
   },
   {
@@ -17088,6 +17068,78 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-16T21:32:00+07:00",
+   "date": "2026-09-16",
+   "time": "21:32",
+   "src": "Katadata",
+   "t": "Prabowo Siapkan 2 Juta Ha Lahan Tebu demi Kejar Target E20 BBM Bensin di 2028",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6aaaa88b8bf2e/prabowo-siapkan-2-juta-ha-lahan-tebu-demi-kejar-target-e20-bbm-bensin-di-2028",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2017/07/11/2017_07_11-12_26_40_d94d477acb22ac88d412d38b590b44c4_620x413_thumb.jpg",
+   "t_id": "Prabowo Siapkan 2 Juta Ha Lahan Tebu demi Kejar Target E20 BBM Bensin di 2028",
+   "t_ko": "Prabowo, 2028년 E20 휘발유 목표 위해 사탕수수 농지 200만 헥타르 조성"
+  },
+  {
+   "ts": "2026-09-16T21:31:24+07:00",
+   "date": "2026-09-16",
+   "time": "21:31",
+   "src": "CNBC",
+   "t": "World's top-performing sovereign wealth fund warns of looming pullback in U.S. stock market",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/new-zealand-sovereign-wealth-fund-stock-market.html",
+   "g": 1,
+   "t_ko": "세계 최고 수익률 국부펀드, 미국 증시 조정 국면 경고",
+   "t_id": "SWF Terbaik Dunia Peringatkan Potensi Koreksi Pasar Saham AS"
+  },
+  {
+   "ts": "2026-09-16T21:30:51+07:00",
+   "date": "2026-09-16",
+   "time": "21:30",
+   "src": "BBC",
+   "t": "Petrol and diesel price rises push UK inflation higher",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/cv2dw7lw4rkpo?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d847/live/6dc55eb0-b1be-11f1-b1d1-571ed4d7ff2c.jpg",
+   "t_ko": "휘발유·디젤 가격 상승으로 영국 물가 상승",
+   "t_id": "Kenaikan Harga BBM Dorong Inflasi Inggris Naik",
+   "ai_ko": "· 영국 8월 물가상승률 3.1%로 상승\n· 휘발유·경유 등 연료가격 23% 급등\n· 유가 강세로 정유·에너지주 주목",
+   "ai_id": "· Inflasi Inggris Agustus naik ke 3,1%\n· Harga BBM melonjak 23% yoy\n· Brent sempat tembus USD 100 per barel",
+   "ai_tags": [
+    "물가",
+    "유가",
+    "금리"
+   ],
+   "ai_tags_id": [
+    "inflasi",
+    "harga minyak",
+    "suku bunga"
+   ]
+  },
+  {
+   "ts": "2026-09-16T21:28:00+07:00",
+   "date": "2026-09-16",
+   "time": "21:28",
+   "src": "Media Indonesia",
+   "t": "KPK Bongkar Struktur Bayangan Kementerian Agraria dan Tata Ruang/Badan Pertanahan Nasional",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/934225/kpk-bongkar-struktur-bayangan-kementerian-agraria-dan-tata-ruangbadan-pertanahan-nasional-",
+   "t_id": "KPK Bongkar Struktur Bayangan Kementerian Agraria dan Tata Ruang/Badan Pertanahan Nasional",
+   "t_ko": "KPK, 토지공간부의 그림자 조직 구조 적발"
+  },
+  {
+   "ts": "2026-09-16T21:27:43+07:00",
+   "date": "2026-09-16",
+   "time": "21:27",
+   "src": "Medcom",
+   "t": "Prabowo Ungkap Alasan Bentuk URI, Soroti Masalah SDM dan Birokrasi",
+   "tags": [],
+   "url": "https://www.medcom.id/nasional/peristiwa/nN9dQWjK-prabowo-ungkap-alasan-bentuk-uri-soroti-masalah-sdm-dan-birokrasi",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/16/1842574/RoMhK8QH9f.JPG?w=720",
+   "t_id": "Prabowo Ungkap Alasan Bentuk URI, Soroti Masalah SDM dan Birokrasi",
+   "t_ko": "Prabowo, 인력·관료제 문제 지적하며 URI 설립 배경 설명"
+  },
+  {
    "ts": "2026-09-16T21:23:42+07:00",
    "date": "2026-09-16",
    "time": "21:23",
@@ -17144,8 +17196,8 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/nasional/6aaaa5121287d/suahasil-evaluasi-perombakan-pejabat-kemenkeu-di-era-purbaya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/15/2026_09_15-14_27_00_b5c2abba-b0dc-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Suahasil Evaluasi Perombakan Pejabat Kemenkeu di Era Purbaya",
-   "t_ko": "Suahasil, Purbaya 체제 기획재정부 고위직 개편 평가"
+   "t_ko": "Suahasil, Purbaya 체제 기획재정부 고위직 개편 평가",
+   "t_id": "Suahasil Evaluasi Perombakan Pejabat Kemenkeu di Era Purbaya"
   },
   {
    "ts": "2026-09-16T21:16:00+07:00",
@@ -17206,6 +17258,18 @@
    "img": "https://images.mktw.net/im-69808812",
    "t_ko": "주택 수요 위축에 건설사들 잇따라 분양가 인하",
    "t_id": "Semakin Banyak Pengembang Pangkas Harga Rumah Seiring Pembeli Mulai Gentar"
+  },
+  {
+   "ts": "2026-09-16T21:09:49+07:00",
+   "date": "2026-09-16",
+   "time": "21:09",
+   "src": "Bloomberg",
+   "t": "Venezuela Plans to Ship Aluminum to US in Mercuria-Heeney Deal",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-16/venezuela-plans-to-ship-aluminum-to-us-in-mercuria-heeney-deal",
+   "g": 1,
+   "t_ko": "Venezuela, Mercuria-Heeney 계약 통해 미국으로 알루미늄 선적 계획",
+   "t_id": "Venezuela Rencana Kirim Aluminium ke AS Lewat Kesepakatan Mercuria-Heeney"
   },
   {
    "ts": "2026-09-16T21:09:00+07:00",
@@ -17380,30 +17444,6 @@
    "t_id": "Pasar Stabil Saat Investor Menanti Keputusan Suku Bunga"
   },
   {
-   "ts": "2026-09-16T20:47:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:47",
-   "src": "Media Indonesia",
-   "t": "Hakim AS Blokir Aturan Trump Batasi Masa Tinggal Mahasiswa dan Jurnalis Asing",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/934205/hakim-as-blokir-aturan-trump-batasi-masa-tinggal-mahasiswa-dan-jurnalis-asing",
-   "g": 1,
-   "t_ko": "미국 판사, 외국인 유학생·기자 체류 기간 제한 트럼프 규칙 차단",
-   "t_id": "Hakim AS Blokir Aturan Trump Batasi Masa Tinggal Mahasiswa dan Jurnalis Asing"
-  },
-  {
-   "ts": "2026-09-16T20:46:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:46",
-   "src": "Bloomberg",
-   "t": "Unloved Consumer Names Like Walmart Face Pressure as Rate Hike Draws Near",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-16/unloved-consumer-names-like-walmart-face-pressure-as-rate-hike-draws-near",
-   "g": 1,
-   "t_ko": "금리 인상 임박에 Walmart 등 비인기 소비재주 압박",
-   "t_id": "Saham Konsumer Kurang Populer Seperti Walmart Tertekan Jelang Kenaikan Suku Bunga"
-  },
-  {
    "ts": "2026-09-16T20:45:00+07:00",
    "date": "2026-09-16",
    "time": "20:45",
@@ -17425,30 +17465,6 @@
    "url": "https://mediaindonesia.com/ekonomi/934198/indonesia-disebut-akan-dilanda-gelombang-investasi-besar-besaran",
    "t_ko": "인도네시아, 대규모 투자 물결 직면 전망",
    "t_id": "Indonesia Disebut akan Dilanda Gelombang Investasi Besar-Besaran"
-  },
-  {
-   "ts": "2026-09-16T20:42:23+07:00",
-   "date": "2026-09-16",
-   "time": "20:42",
-   "src": "CNBC",
-   "t": "Intel, SK Hynix shares jump on report they're discussing U.S. memory chip manufacturing",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/intel-sk-hynix-us-memory-chips.html",
-   "g": 1,
-   "t_ko": "Intel·SK 하이닉스, 미국 메모리 반도체 생산 협력 보도에 급등",
-   "t_id": "Saham Intel dan SK Hynix Melonjak di Tengah Kabar Pembahasan Manufaktur Chip AS",
-   "ai_ko": "· Intel·SK Hynix, 미국 메모리 생산 협의 보도\n· Ohio 공장 일부 임대·합작 설립 등 검토\n· SK Hynix 한국 상장주 1년간 400% 상승",
-   "ai_id": "· Intel dan SK Hynix bahas produksi memori AS\n· Opsi sewa pabrik Ohio atau joint venture\n· Saham SK Hynix naik 400% setahun",
-   "ai_tags": [
-    "반도체",
-    "합작",
-    "HBM"
-   ],
-   "ai_tags_id": [
-    "semikonduktor",
-    "joint venture",
-    "HBM"
-   ]
   },
   {
    "ts": "2026-09-16T20:42:00+07:00",
@@ -17515,40 +17531,6 @@
    "url": "https://mediaindonesia.com/ekonomi/934183/pemerintah-diharapkan-ambil-peran-optimalisasi-udang-lokal-sebagai-instrumen-ekonomi-indonesia",
    "t_ko": "인도네시아 경제 지표로 새우 활용 정부 역할론 대두",
    "t_id": "Pemerintah Diharapkan Ambil Peran Optimalkan Udang Lokal sebagai Instrumen Ekonomi RI"
-  },
-  {
-   "ts": "2026-09-16T20:30:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:30",
-   "src": "IDX Channel",
-   "t": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/penjelasan-ojk-soal-danantara-dikabarkan-bakal-kuasai-40-persen-saham-bei-usai-demutualisasi",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/04/08/IDX_bursa_BEI.jpg",
-   "t_ko": "데무추얼라이제이션 후 Danantara가 BEI 지분 40% 장악설에 OJK 입장 표명",
-   "t_id": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi"
-  },
-  {
-   "ts": "2026-09-16T20:30:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:30",
-   "src": "Media Indonesia",
-   "t": "Istana Tegaskan Presiden Prabowo tak Intervensi OTT Pejabat ATR/BPN",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/934190/istana-tegaskan-presiden-prabowo-tak-intervensi-ott-pejabat-atrbpn",
-   "t_ko": "프라보 대통령, ATR/BPN 고위직 체포 불개입 방침 재확인",
-   "t_id": "Istana Tegaskan Presiden Prabowo Tak Intervensi OTT Pejabat ATR/BPN"
-  },
-  {
-   "ts": "2026-09-16T20:28:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:28",
-   "src": "Media Indonesia",
-   "t": "MK Larang Presiden Ubah APBN Sepihak, Pakar: Jaga Amanat Konstitusi",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/934184/mk-larang-presiden-ubah-apbn-sepihak-pakar-jaga-amanat-konstitusi",
-   "t_ko": "헌재, 대통령의 일방적 예산안 변경 금지… 헌법 수호 평가",
-   "t_id": "MK Larang Presiden Ubah APBN Sepihak, Pakar: Jaga Amanat Konstitusi"
   }
  ],
  "kisi_news": [
@@ -17719,8 +17701,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.93",
-   "d": -1.15,
-   "ytd": 11.35,
+   "d": -1.18,
+   "ytd": 11.33,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17730,9 +17712,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.969%",
-   "d": -0.54,
-   "ytd": 19.36,
+   "v": "4.967%",
+   "d": -0.58,
+   "ytd": 19.31,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17753,9 +17735,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.71",
-   "d": 0.05,
-   "ytd": 1.45,
+   "v": "99.69",
+   "d": 0.03,
+   "ytd": 1.44,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17765,9 +17747,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.37",
-   "d": -1.35,
-   "ytd": 80.02,
+   "v": "103.15",
+   "d": -1.56,
+   "ytd": 79.64,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17777,9 +17759,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,377.8",
-   "d": 0.24,
-   "ytd": 1.21,
+   "v": "4,376.3",
+   "d": 0.21,
+   "ytd": 1.17,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17801,9 +17783,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,171",
-   "d": 1.72,
-   "ytd": -3.06,
+   "v": "16,180",
+   "d": 1.77,
+   "ytd": -3.01,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18442,7 +18424,7 @@
    "imp": 3,
    "exp": "-1.600M",
    "prev": "-0.391M",
-   "act": null,
+   "act": "-0.640M",
    "src": "investing.com",
    "title_ko": "EIA 원유 재고",
    "title_id": "Stok Minyak Mentah EIA"
@@ -23603,10 +23585,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-16 21:19",
-  "pc_age_min": 10,
+  "idx_from_pc": "2026-09-16 21:33",
+  "pc_age_min": 5,
   "news_ai_cache": 45,
-  "news_ai_hit": 34,
+  "news_ai_hit": 33,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25335,10 +25317,10 @@
    "tags": [],
    "url": "https://www.idxchannel.com/market-news/penjelasan-ojk-soal-danantara-dikabarkan-bakal-kuasai-40-persen-saham-bei-usai-demutualisasi",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/04/08/IDX_bursa_BEI.jpg",
+   "score": 417.75,
+   "srcs": 4,
    "t_ko": "데무추얼라이제이션 후 Danantara가 BEI 지분 40% 장악설에 OJK 입장 표명",
-   "t_id": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi",
-   "score": 419.75,
-   "srcs": 4
+   "t_id": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi"
   },
   {
    "ts": "2026-09-16T17:05:00+07:00",
@@ -42838,6 +42820,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 21:24"
+  "announcements": "2026-09-16 21:29"
  }
 }
