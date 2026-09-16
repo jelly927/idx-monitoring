@@ -1077,7 +1077,7 @@ document.querySelectorAll('[data-imp]').forEach(b=>b.onclick=()=>{calImp=+b.data
 document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{calKind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(x=>x.classList.toggle('on',x===b));renderCal();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDr();});
 
-const UI_VER='0915-j';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
+const UI_VER='0916-a';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
 document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('on',b.dataset.lang===LANG));applyStatic();
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
 const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['knews-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
@@ -1507,5 +1507,340 @@ body[data-lang=id] .ffrow{--ffn:100px}
 })();
 </script>
 <!-- ── /AI 챗봇 위젯 ─────────────────────────────────────────────────── -->
+<!-- ── 알림 (브라우저 데스크톱 알림) ───────────────────────────────────
+     1단계: 탭이 열려 있는 동안만 동작한다(서버 변경 0). 탭을 닫아도 받으려면
+     Service Worker + Web Push 가 필요하고 그건 2단계.
+     조건·상태는 전부 이 브라우저의 localStorage 에만 남는다 — 서버로 보내는 것 없음. -->
+<style>
+#alrtFab{position:fixed;right:22px;bottom:88px;z-index:9997;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+  background:var(--card);color:var(--ink2);cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.16);padding:0;font-size:17px;line-height:1;transition:transform .15s ease}
+#alrtFab:hover{transform:translateY(-2px)}
+#alrtFab.on{background:var(--brand);border-color:var(--brand);color:#fff}
+#alrtWrap{position:fixed;right:22px;bottom:140px;z-index:9997;width:332px;max-width:calc(100vw - 32px);background:var(--card);border:1px solid var(--line);
+  border-radius:14px;box-shadow:0 14px 40px rgba(0,0,0,.20);overflow:hidden;font-size:12.5px;
+  display:flex;flex-direction:column;max-height:calc(100vh - 168px)}
+#alrtHd,#alrtPerm,#alrtFoot{flex:0 0 auto}
+#alrtWrap[hidden]{display:none!important}
+#alrtHd{display:flex;align-items:baseline;gap:7px;padding:11px 13px;border-bottom:1px solid var(--line);font-weight:800}
+#alrtHd small{font-weight:500;color:var(--ink3);font-size:11px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#alrtHd button{margin-left:auto;border:0;background:transparent;color:var(--ink3);font-size:16px;cursor:pointer;line-height:1;flex:0 0 auto}
+#alrtBody{flex:1 1 auto;min-height:64px;overflow-y:auto;padding:4px 0;scrollbar-width:thin;overscroll-behavior:contain}
+.alrtSec{padding:9px 13px 3px;font-size:10.5px;font-weight:800;color:var(--ink3);letter-spacing:.02em}
+.alrtRow{display:flex;align-items:center;gap:9px;padding:7px 13px;border-bottom:1px solid var(--line)}
+.alrtRow:last-child{border-bottom:0}
+.alrtRow label{flex:1;min-width:0;cursor:pointer;line-height:1.35}
+.alrtRow label small{display:block;color:var(--ink3);font-size:10.5px;font-weight:500}
+.alrtRow input[type=number]{width:50px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:7px;padding:4px 6px;font-size:12px;text-align:right;font-variant-numeric:tabular-nums;flex:0 0 auto}
+.alrtRow input[type=checkbox]{width:15px;height:15px;accent-color:var(--brand);cursor:pointer;flex:0 0 auto}
+.alrtRow .un{color:var(--ink3);font-size:11px;flex:0 0 auto}
+#alrtFoot{padding:9px 13px;border-top:1px solid var(--line);color:var(--ink3);font-size:10.5px;line-height:1.5}
+#alrtFoot b{color:var(--ink2)}
+#alrtPerm{margin:9px 13px 0;padding:8px 10px;border-radius:9px;background:var(--chip);color:var(--ink2);font-size:11.5px;line-height:1.5}
+#alrtPerm button{margin-top:6px;border:0;background:var(--brand);color:#fff;border-radius:8px;padding:5px 11px;font-size:11.5px;cursor:pointer;font-family:inherit}
+#alrtLog{flex:0 0 auto;max-height:86px;overflow-y:auto;padding:2px 13px 9px;color:var(--ink3);font-size:10.5px;overscroll-behavior:contain}
+#alrtLog div{padding:3px 0;border-bottom:1px dashed var(--line);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#alrtLog div:last-child{border-bottom:0}
+@media(max-width:520px){#alrtWrap{right:12px;bottom:126px;width:auto;left:12px;max-height:calc(100vh - 152px)}#alrtFab{right:14px;bottom:80px}}
+</style>
+<button id="alrtFab" title="알림" aria-label="알림">🔔</button>
+<div id="alrtWrap" hidden>
+  <div id="alrtHd"><span id="alrtTitle">알림</span><small id="alrtSub"></small><button id="alrtX" aria-label="close">×</button></div>
+  <div id="alrtPerm" hidden></div>
+  <div id="alrtBody"></div>
+  <div id="alrtFoot"></div>
+  <div id="alrtLog"></div>
+</div>
+<script>
+(function(){
+  'use strict';
+  var KEY='idxlive_alerts_v1', LOCK='idxlive_alerts_lock', ME=Math.random().toString(36).slice(2,9);
+  /* WL·DATA·LANG 은 let 으로 선언돼 window 에 없다. 이름을 직접 읽되 미정의일 때를 막는다(eval 안 씀 — CSP 안전) */
+  function gDATA(){try{return DATA;}catch(e){return undefined;}}
+  function gWL(){try{return WL;}catch(e){return undefined;}}
+  function gLANG(){try{return LANG;}catch(e){return undefined;}}
+  function $(i){return document.getElementById(i);}
+  function day(){return new Date(Date.now()+7*3600e3).toISOString().slice(0,10);}
+
+  var DEF={on:false,rules:{
+      pct:{on:false,v:5}, hi20:{on:false}, lo20:{on:false}, ratio:{on:false,v:3}, call:{on:false},
+      ann:{on:false,q:80}, annWl:{on:false}, news:{on:false}, newsWl:{on:false}, catNew:{on:false},
+      cal:{on:false,min:30}, stale:{on:false,min:15}},
+    seen:{ann:[],news:[],cal:[],cat:[],once:{},day:''}, log:[]};
+
+  function loadS(){
+    try{
+      var j=JSON.parse(localStorage.getItem(KEY)||'null');
+      if(!j)return JSON.parse(JSON.stringify(DEF));
+      j.rules=Object.assign({},DEF.rules,j.rules||{});
+      Object.keys(DEF.rules).forEach(function(k){j.rules[k]=Object.assign({},DEF.rules[k],j.rules[k]||{});});
+      j.seen=Object.assign({},DEF.seen,j.seen||{});j.seen.once=j.seen.once||{};j.log=j.log||[];
+      return j;
+    }catch(e){return JSON.parse(JSON.stringify(DEF));}
+  }
+  function save(){
+    try{
+      var cut=new Date(Date.now()+7*3600e3-4*864e5).toISOString().slice(0,10);   /* 공시는 하루 200건대라 건수로 자르면 이틀 만에 기준이 사라진다 → 4일치로 자른다 */
+      S.seen.ann=S.seen.ann.filter(function(k){return k.slice(0,10)>=cut;}).slice(-2000);
+      S.seen.news=S.seen.news.slice(-600);
+      S.seen.cal=S.seen.cal.slice(-200);S.seen.cat=S.seen.cat.slice(-100);S.log=S.log.slice(-12);
+      localStorage.setItem(KEY,JSON.stringify(S));
+    }catch(e){}
+  }
+  var S=loadS(),PT=0;
+  if(S.seen.day!==day()){S.seen.once={};S.seen.cat=[];S.seen.day=day();save();}   /* 하루 1회 규칙은 날짜가 바뀌면 초기화 */
+
+  /* 사내 전용 항목: 챗봇 암구호를 넣어 본 브라우저에서만 보인다 */
+  function inHouse(){try{return !!(localStorage.getItem('idxlive_chat_token')||'').trim();}catch(e){return false;}}
+  function isID(){return gLANG()==='id';}
+
+  var TX={
+   ko:{t:'알림',sub:'이 브라우저',off:'꺼짐',on:'켜짐',
+     secPx:'종목 · 관심 종목 기준',secDoc:'공시 · 뉴스',secCal:'일정',secOps:'운영 (사내)',
+     pct:'등락률 도달',pctS:'관심 종목이 ±N% 에 닿으면',
+     hi20:'20일 최고가 돌파',hi20S:'관심 종목이 20영업일 최고가를 넘으면',
+     lo20:'20일 최저가 이탈',lo20S:'관심 종목이 20영업일 최저가를 밑돌면',
+     ratio:'거래대금 급증',ratioS:'20일 평균 대비 N배 이상',
+     call:'의견 가격대 도달',callS:'관심종목 의견의 목표가·손절가 (KISI 리서치 작성)',
+     ann:'중요 공시',annS:'중요도 점수 N점 이상 (100점 만점)',
+     annWl:'관심 종목 공시',annWlS:'점수와 무관하게 전부',
+     news:'주요뉴스 신규 진입',newsS:'오늘의 주요뉴스 5건이 바뀌면',
+     newsWl:'관심 종목 뉴스',newsWlS:'관심 종목이 태그된 기사가 올라오면',
+     catNew:'주목 신규 진입',catNewS:'주목 명단에 새 종목이 들어오면',
+     cal:'일정 사전 알림',calS:'중요도 높은 일정 N분 전 (FOMC·BI Rate 등)',
+     stale:'수집 정체',staleS:'데이터가 N분 이상 안 바뀌면',
+     min:'분',x:'배',pt:'점',pc:'%',
+     perm:'브라우저 알림 권한이 필요합니다. 허용하면 이 탭이 열려 있는 동안 조건에 맞을 때 알림이 뜹니다.',
+     permB:'알림 허용',permDeny:'브라우저에서 알림이 차단돼 있습니다. 주소창 좌측 자물쇠 → 알림 → 허용으로 바꿔 주세요.',
+     foot:'탭이 열려 있는 동안만 동작합니다(최소화·백그라운드 OK). 조건과 기록은 이 브라우저에만 저장되며 서버로 보내지 않습니다. 시세는 <b>15분 지연</b>입니다.',
+     nPx:'종목알림',nNews:'뉴스 업로드',nAnn:'공시 업로드',nTop:'주요뉴스',nCat:'주목 진입',nCal:'일정',nStale:'수집 정체',
+     tp:'목표가',sl:'손절가',buy:'매수가',by:'KISI 리서치 의견',
+     after:'후',stale1:'분째 미갱신 · 마지막',basis:'기준',delay:'15분 지연',logNone:'아직 보낸 알림 없음',test:'시험 알림'},
+   id:{t:'Notifikasi',sub:'browser ini',off:'mati',on:'aktif',
+     secPx:'Saham · dari Saham Pilihan',secDoc:'Keterbukaan · Berita',secCal:'Agenda',secOps:'Operasional (internal)',
+     pct:'Perubahan harga',pctS:'Saham pilihan menyentuh ±N%',
+     hi20:'Tembus tertinggi 20 hari',hi20S:'Melewati tertinggi 20 hari bursa',
+     lo20:'Tembus terendah 20 hari',lo20S:'Turun di bawah terendah 20 hari bursa',
+     ratio:'Lonjakan nilai transaksi',ratioS:'N kali rata-rata 20 hari',
+     call:'Menyentuh level opini',callS:'Target dan stop loss pada Opini Saham Pilihan (KISI Research)',
+     ann:'Keterbukaan penting',annS:'Skor kepentingan minimal N (dari 100)',
+     annWl:'Keterbukaan saham pilihan',annWlS:'Semua, tanpa batas skor',
+     news:'Berita utama baru',newsS:'Saat 5 berita utama hari ini berubah',
+     newsWl:'Berita saham pilihan',newsWlS:'Artikel yang menandai saham pilihan',
+     catNew:'Watchout baru',catNewS:'Saham baru masuk daftar Watchout',
+     cal:'Pengingat agenda',calS:'N menit sebelum agenda penting (FOMC, BI Rate)',
+     stale:'Data tertahan',staleS:'Data tidak berubah lebih dari N menit',
+     min:'mnt',x:'x',pt:'poin',pc:'%',
+     perm:'Perlu izin notifikasi browser. Setelah diizinkan, notifikasi muncul selama tab ini terbuka.',
+     permB:'Izinkan notifikasi',permDeny:'Notifikasi diblokir browser. Buka ikon gembok di address bar → Notifikasi → Izinkan.',
+     foot:'Berjalan hanya selama tab terbuka (boleh diminimalkan). Pengaturan dan riwayat hanya tersimpan di browser ini, tidak dikirim ke server. Harga <b>tertunda 15 menit</b>.',
+     nPx:'Notifikasi saham',nNews:'Berita baru',nAnn:'Keterbukaan baru',nTop:'Berita utama',nCat:'Masuk Watchout',nCal:'Agenda',nStale:'Data tertahan',
+     tp:'Target',sl:'Stop loss',buy:'Harga beli',by:'Opini KISI Research',
+     after:'lagi',stale1:'menit tidak diperbarui · terakhir',basis:'per',delay:'tertunda 15 mnt',logNone:'Belum ada notifikasi',test:'Notifikasi uji'}};
+  function X(k){return (isID()?TX.id:TX.ko)[k];}
+
+  /* ── 시세 공급부 ────────────────────────────────────────────────
+     지금은 data.json(Yahoo 15분 지연)을 읽는다. 회사 실시간 시세로 바꿀 때는
+     alrtSetFeed(fn) 로 이 함수만 교체하면 되고, 규칙·알림 문구·설정 UI 는 그대로 쓴다.
+     fn(ticker) -> {px, pct, ts, delay} | null   (delay 는 분, 0 이면 실시간) */
+  var FEED=function(t){
+    var d=gDATA(),st=(d&&d.stocks)||[],o=null;
+    for(var i=0;i<st.length;i++){if(st[i].t===t){o=st[i];break;}}
+    if(!o||o.px==null)return null;
+    return {px:o.px,pct:o.pct,ts:(d.index&&d.index.rank_asof)||d.updated||'',delay:15};
+  };
+  window.alrtSetFeed=function(fn){if(typeof fn==='function')FEED=fn;};
+  window.alrtFeed=function(t){return FEED(t);};
+
+  /* ── 발송 ──────────────────────────────────────────────────── */
+  function canFire(){
+    if(!S.on)return false;
+    if(!('Notification' in window)||Notification.permission!=='granted')return false;
+    try{                                   /* 탭이 여러 개면 한 탭만 보낸다 */
+      var l=JSON.parse(localStorage.getItem(LOCK)||'null'),now=Date.now();
+      if(!l||!l.id||now-l.ts>90000||l.id===ME){localStorage.setItem(LOCK,JSON.stringify({id:ME,ts:now}));return true;}
+      return false;
+    }catch(e){return true;}
+  }
+  function fire(title,body,go){
+    try{
+      var n=new Notification(title,{body:body,tag:title+'|'+body});
+      n.onclick=function(){try{window.focus();if(go)go();}catch(e){}n.close();};
+    }catch(e){}
+    S.log.unshift(new Date(Date.now()+7*3600e3).toISOString().slice(11,16)+'  '+title+' · '+body);
+    clearTimeout(PT);PT=setTimeout(function(){paint();save();},60);     /* 보낸 기록만 갱신 — 매 검사마다 다시 그리지 않는다 */
+  }
+  function once(k){if(S.seen.once[k])return false;S.seen.once[k]=1;return true;}
+
+  /* ── 검사 ──────────────────────────────────────────────────── */
+  function wl(){var v=gWL();return Array.isArray(v)?v.slice():[];}
+  function sgn(v){return (v>0?'+':'')+(Math.round(v*100)/100)+'%';}
+  function rp(v){return 'Rp'+Number(Math.round(v)).toLocaleString('en-US');}
+  function dr(t){return function(){try{openDr(t);}catch(e){}};}
+  function wibAge(s){                       /* "2026-09-16 08:32" → 지금(WIB) 기준 경과 분 */
+    if(!s)return null;var m=String(s).match(/(\d{4})-(\d\d)-(\d\d)[ T](\d\d):(\d\d)/);if(!m)return null;
+    return Math.floor((Date.now()-(Date.UTC(+m[1],+m[2]-1,+m[3],+m[4],+m[5])-7*3600e3))/60000);
+  }
+  function calLeft(e){                      /* 일정까지 남은 분 */
+    if(!e||!e.date||!e.time||!/^\d{1,2}:\d\d$/.test(e.time))return null;
+    var m=String(e.date).match(/(\d{4})-(\d\d)-(\d\d)/);if(!m)return null;
+    var hm=e.time.split(':');
+    return Math.round(((Date.UTC(+m[1],+m[2]-1,+m[3],+hm[0],+hm[1])-7*3600e3)-Date.now())/60000);
+  }
+  function L(o,base){return (isID()?(o[base+'_id']||o[base]):(o[base+'_ko']||o[base]))||o[base]||'';}
+
+  function scan(d){
+    if(!canFire()||!d)return;
+    if(S.seen.day!==day()){S.seen.once={};S.seen.cat=[];S.seen.day=day();}
+    var R=S.rules,W=wl(),sn=S.seen,sent=0,MAX=6;   /* 한 번에 6건까지 — 밀린 알림이 쏟아지지 않게 */
+
+    /* 0) 시각이 정해진 알림(일정·수집 정체)은 다른 알림에 밀리면 안 되므로 건수 상한 밖에서 먼저 본다 */
+    if(R.cal.on)(d.calendar||[]).forEach(function(e){
+      if((e.imp||0)<3)return;
+      var left=calLeft(e);if(left==null||left<0||left>(+R.cal.min||30))return;
+      var k=(e.date||'')+'|'+(e.time||'')+'|'+String(e.title||'').slice(0,40);
+      if(sn.cal.indexOf(k)>=0)return;sn.cal.push(k);
+      fire(X('nCal')+' · '+left+X('min')+' '+X('after'),(e.country?e.country+' · ':'')+L(e,'title'),null);
+    });
+    if(R.stale.on&&inHouse()){
+      var age=wibAge(d.updated),lim=+R.stale.min||15;
+      if(age!=null&&age>=lim&&once(day()+'|stale|'+Math.floor(age/lim)))
+        fire(X('nStale'),age+X('stale1')+' '+(d.updated||''),null);
+    }
+
+    /* 1) 종목 가격 — 관심 종목 기준. 값은 FEED 가 준다(실시간 시세로 교체 가능) */
+    W.forEach(function(t){
+      if(sent>=MAX)return;
+      var q=FEED(t);if(!q)return;
+      var bs=(q.ts?' · '+q.ts+' '+X('basis'):'')+(q.delay?' ('+X('delay')+')':'');
+      var tc=(d.tech||{})[t]||null,o=null,st=d.stocks||[];
+      for(var i=0;i<st.length;i++)if(st[i].t===t){o=st[i];break;}
+      if(R.pct.on&&q.pct!=null&&Math.abs(q.pct)>=Math.abs(+R.pct.v||5)&&once(day()+'|'+t+'|pct|'+(q.pct>0?'u':'d'))){
+        sent++;fire(X('nPx')+' · '+t,sgn(q.pct)+' · '+rp(q.px)+bs,dr(t));}
+      if(tc&&R.hi20.on&&tc.hi20&&q.px>tc.hi20&&once(day()+'|'+t+'|hi')){
+        sent++;fire(X('nPx')+' · '+t,X('hi20')+' · '+rp(q.px)+bs,dr(t));}
+      if(tc&&R.lo20.on&&tc.lo20&&q.px<tc.lo20&&once(day()+'|'+t+'|lo')){
+        sent++;fire(X('nPx')+' · '+t,X('lo20')+' · '+rp(q.px)+bs,dr(t));}
+      if(o&&R.ratio.on&&o.ratio&&o.ratio>=(+R.ratio.v||3)&&once(day()+'|'+t+'|rt')){
+        sent++;fire(X('nPx')+' · '+t,X('ratio')+' '+(Math.round(o.ratio*10)/10)+X('x')+bs,dr(t));}
+    });
+
+    /* 1-b) 애널리스트 의견 가격대 도달 — 목표가·손절가는 사람이 쓴 의견일 때만 알린다 */
+    if(R.call.on)(d.watch||[]).forEach(function(c){
+      if(sent>=MAX||!c||!c.t)return;
+      var q=FEED(c.t);if(!q)return;
+      var bs=(q.ts?' · '+q.ts+' '+X('basis'):'')+(q.delay?' ('+X('delay')+')':'');
+      var tps=[].concat(c.tp||[]),i;
+      for(i=0;i<tps.length;i++)if(tps[i]&&q.px>=tps[i]&&once(day()+'|'+c.t+'|tp'+i)){
+        sent++;fire(X('nPx')+' · '+c.t,X('tp')+' '+rp(tps[i])+' · '+rp(q.px)+bs+' · '+X('by'),dr(c.t));break;}
+      if(c.sl&&q.px<=c.sl&&once(day()+'|'+c.t+'|sl')){
+        sent++;fire(X('nPx')+' · '+c.t,X('sl')+' '+rp(c.sl)+' · '+rp(q.px)+bs+' · '+X('by'),dr(c.t));}
+    });
+
+    /* 2) 공시 */
+    var annFirst=sn.ann.length===0;
+    (d.announcements||[]).forEach(function(a){
+      if(sent>=MAX&&!annFirst)return;
+      var k=(a.date||'')+'|'+(a.t||'')+'|'+(a.time||'')+'|'+(a.url||'');   /* 날짜를 앞에 둬 오래된 것만 정리한다 */
+      if(sn.ann.indexOf(k)>=0)return;sn.ann.push(k);
+      if(annFirst)return;                       /* 켠 시점에 이미 올라와 있던 공시는 알리지 않는다 */
+      var mine=W.indexOf(a.t)>=0;
+      if(!((R.annWl.on&&mine)||(R.ann.on&&(a.rk||0)>=(+R.ann.q||80))))return;
+      var txt=String((isID()?(a.ai_id||a.title_id):(a.ai_ko||a.title_ko))||a.title||'').replace(/^[·\s]+/,'').split('\n')[0];
+      sent++;fire(X('nAnn')+' · '+(a.t||'IDX'),txt.slice(0,110),a.t&&a.t!=='IDX'?dr(a.t):null);
+    });
+
+    /* 3) 뉴스 */
+    var newsFirst=sn.news.length===0;
+    (d.top_news||[]).forEach(function(n){
+      if(sent>=MAX&&!newsFirst)return;
+      var k=n.url||n.t;if(!k||sn.news.indexOf(k)>=0)return;sn.news.push(k);
+      if(newsFirst||!R.news.on)return;           /* 켠 시점의 기존 기사는 기준만 잡는다 */
+      sent++;fire(X('nTop'),String(L(n,'t')).slice(0,110),null);
+    });
+    (d.news||[]).forEach(function(n){
+      if(sent>=MAX&&!newsFirst)return;
+      var k=n.url||n.t;if(!k||sn.news.indexOf(k)>=0)return;sn.news.push(k);
+      if(newsFirst||!R.newsWl.on)return;
+      var tags=n.tags||[],mine=null,i;
+      for(i=0;i<tags.length;i++)if(W.indexOf(tags[i])>=0){mine=tags[i];break;}
+      if(!mine)return;
+      sent++;fire(X('nPx')+' · '+mine,X('nNews')+' · '+String(L(n,'t')).slice(0,110),dr(mine));
+    });
+
+    /* 4) 주목 신규 진입 — 첫 로드분은 기준만 잡고 알리지 않는다 */
+    if(R.catNew.on){
+      var first=sn.cat.length===0;
+      (d.catalyst||[]).forEach(function(c){
+        var t=c&&c.t;if(!t||sent>=MAX)return;
+        if(sn.cat.indexOf(t)>=0)return;sn.cat.push(t);
+        if(first)return;
+        sent++;fire(X('nCat')+' · '+t,(c.n||t)+(c.score!=null?' · '+c.score:''),dr(t));
+      });
+    }
+
+    save();
+  }
+
+  /* ── 설정 화면 ─────────────────────────────────────────────── */
+  function row(k,unit,min,max,step){
+    var r=S.rules[k],f=r.v!=null?'v':(r.q!=null?'q':(r.min!=null?'min':''));
+    return '<div class="alrtRow"><input type="checkbox" data-k="'+k+'"'+(r.on?' checked':'')+'>'+
+      '<label data-k="'+k+'">'+X(k)+'<small>'+X(k+'S')+'</small></label>'+
+      (f?'<input type="number" data-k="'+k+'" data-f="'+f+'" value="'+r[f]+'" min="'+min+'" max="'+max+'" step="'+(step||1)+'"><span class="un">'+unit+'</span>':'')+
+      '</div>';
+  }
+  function paint(){
+    $('alrtTitle').textContent=X('t');
+    $('alrtSub').textContent='· '+X('sub')+' · '+(S.on?X('on'):X('off'));
+    var b=$('alrtBody');
+    b.innerHTML=
+      '<div class="alrtSec">'+X('secPx')+'</div>'+
+      row('pct',X('pc'),1,50,0.5)+row('hi20','',0,0)+row('lo20','',0,0)+row('ratio',X('x'),1.5,20,0.5)+row('call','',0,0)+
+      '<div class="alrtSec">'+X('secDoc')+'</div>'+
+      row('ann',X('pt'),50,100,5)+row('annWl','',0,0)+row('news','',0,0)+row('newsWl','',0,0)+row('catNew','',0,0)+
+      '<div class="alrtSec">'+X('secCal')+'</div>'+row('cal',X('min'),5,180,5)+
+      (inHouse()?'<div class="alrtSec">'+X('secOps')+'</div>'+row('stale',X('min'),5,120,5):'');
+    Array.prototype.forEach.call(b.querySelectorAll('input[type=checkbox]'),function(el){
+      el.onchange=function(){
+        S.rules[el.getAttribute('data-k')].on=el.checked;
+        S.on=Object.keys(S.rules).some(function(k){return S.rules[k].on;});
+        if(el.checked)ask();save();paint();};});
+    Array.prototype.forEach.call(b.querySelectorAll('input[type=number]'),function(el){
+      el.onchange=function(){var v=parseFloat(el.value);if(!isNaN(v))S.rules[el.getAttribute('data-k')][el.getAttribute('data-f')]=v;save();};});
+    Array.prototype.forEach.call(b.querySelectorAll('label'),function(el){
+      el.onclick=function(){var c=b.querySelector('input[type=checkbox][data-k="'+el.getAttribute('data-k')+'"]');if(c){c.checked=!c.checked;c.onchange();}};});
+    $('alrtFoot').innerHTML=X('foot');
+    $('alrtLog').innerHTML=S.log.length?S.log.map(function(x){return '<div>'+String(x).replace(/[<>&]/g,'')+'</div>';}).join(''):'<div>'+X('logNone')+'</div>';
+    var p=$('alrtPerm'),st=('Notification' in window)?Notification.permission:'denied';
+    if(S.on&&st!=='granted'){p.hidden=false;
+      p.innerHTML=(st==='denied'?X('permDeny'):X('perm')+'<br><button id="alrtAsk">'+X('permB')+'</button>');
+      var ab=$('alrtAsk');if(ab)ab.onclick=ask;}
+    else p.hidden=true;
+    $('alrtFab').classList.toggle('on',!!S.on&&st==='granted');
+  }
+  function ask(){
+    if(!('Notification' in window))return;
+    if(Notification.permission==='default')Notification.requestPermission().then(function(){paint();});
+  }
+
+  $('alrtFab').onclick=function(e){e.stopPropagation();var w=$('alrtWrap');w.hidden=!w.hidden;if(!w.hidden)paint();};
+  $('alrtX').onclick=function(){$('alrtWrap').hidden=true;};
+  document.addEventListener('click',function(e){
+    var w=$('alrtWrap');if(w.hidden)return;
+    if(!w.contains(e.target)&&!$('alrtFab').contains(e.target))w.hidden=true;});
+  window.alrtLang=function(){if(!$('alrtWrap').hidden)paint();};
+  window.alrtScan=function(){try{scan(gDATA());}catch(e){}};
+
+  /* render 뒤에 붙어 매 갱신마다 검사한다 — 기존 코드는 건드리지 않는다 */
+  if(typeof window.render==='function'){
+    var r0=window.render;
+    window.render=function(d){r0(d);try{scan(d);}catch(e){}};
+  }
+  /* 일정 사전 알림은 데이터 갱신과 무관하게 시각이 오는 것이라 1분마다 따로 본다 */
+  setInterval(function(){try{scan(gDATA());}catch(e){}},60000);
+  paint();
+})();
+</script>
+
 </body>
 </html>
