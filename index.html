@@ -1077,7 +1077,7 @@ document.querySelectorAll('[data-imp]').forEach(b=>b.onclick=()=>{calImp=+b.data
 document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{calKind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(x=>x.classList.toggle('on',x===b));renderCal();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDr();});
 
-const UI_VER='0916-a';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
+const UI_VER='0916-b';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
 document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('on',b.dataset.lang===LANG));applyStatic();
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
 const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['knews-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
@@ -1585,6 +1585,7 @@ body[data-lang=id] .ffrow{--ffn:100px}
       S.seen.cal=S.seen.cal.slice(-200);S.seen.cat=S.seen.cat.slice(-100);S.log=S.log.slice(-12);
       localStorage.setItem(KEY,JSON.stringify(S));
     }catch(e){}
+    try{if(S.push)swSync();}catch(e){}
   }
   var S=loadS(),PT=0;
   if(S.seen.day!==day()){S.seen.once={};S.seen.cat=[];S.seen.day=day();save();}   /* 하루 1회 규칙은 날짜가 바뀌면 초기화 */
@@ -1608,6 +1609,11 @@ body[data-lang=id] .ffrow{--ffn:100px}
      catNew:'주목 신규 진입',catNewS:'주목 명단에 새 종목이 들어오면',
      cal:'일정 사전 알림',calS:'중요도 높은 일정 N분 전 (FOMC·BI Rate 등)',
      stale:'수집 정체',staleS:'데이터가 N분 이상 안 바뀌면',
+     secPush:'탭을 닫아도 받기',
+     push:'백그라운드 알림',pushS:'브라우저를 닫아도 받습니다 (서비스 워커 + 웹 푸시)',
+     pushOff:'이 브라우저는 백그라운드 알림을 지원하지 않습니다',
+     pushErr:'구독에 실패했습니다 — 잠시 후 다시 시도해 주세요',
+     pushNote:'서버에는 구독 주소만 저장되고 90일 뒤 자동 삭제됩니다. 관심 종목과 알림 조건은 서버로 나가지 않습니다.',
      min:'분',x:'배',pt:'점',pc:'%',
      perm:'브라우저 알림 권한이 필요합니다. 허용하면 이 탭이 열려 있는 동안 조건에 맞을 때 알림이 뜹니다.',
      permB:'알림 허용',permDeny:'브라우저에서 알림이 차단돼 있습니다. 주소창 좌측 자물쇠 → 알림 → 허용으로 바꿔 주세요.',
@@ -1629,6 +1635,11 @@ body[data-lang=id] .ffrow{--ffn:100px}
      catNew:'Watchout baru',catNewS:'Saham baru masuk daftar Watchout',
      cal:'Pengingat agenda',calS:'N menit sebelum agenda penting (FOMC, BI Rate)',
      stale:'Data tertahan',staleS:'Data tidak berubah lebih dari N menit',
+     secPush:'Tetap terima saat tab ditutup',
+     push:'Notifikasi latar belakang',pushS:'Diterima walau browser ditutup (service worker + web push)',
+     pushOff:'Browser ini tidak mendukung notifikasi latar belakang',
+     pushErr:'Gagal berlangganan — coba lagi sebentar',
+     pushNote:'Server hanya menyimpan alamat langganan dan menghapusnya otomatis setelah 90 hari. Saham pilihan dan aturan notifikasi tidak dikirim ke server.',
      min:'mnt',x:'x',pt:'poin',pc:'%',
      perm:'Perlu izin notifikasi browser. Setelah diizinkan, notifikasi muncul selama tab ini terbuka.',
      permB:'Izinkan notifikasi',permDeny:'Notifikasi diblokir browser. Buka ikon gembok di address bar → Notifikasi → Izinkan.',
@@ -1799,7 +1810,16 @@ body[data-lang=id] .ffrow{--ffn:100px}
       '<div class="alrtSec">'+X('secDoc')+'</div>'+
       row('ann',X('pt'),50,100,5)+row('annWl','',0,0)+row('news','',0,0)+row('newsWl','',0,0)+row('catNew','',0,0)+
       '<div class="alrtSec">'+X('secCal')+'</div>'+row('cal',X('min'),5,180,5)+
-      (inHouse()?'<div class="alrtSec">'+X('secOps')+'</div>'+row('stale',X('min'),5,120,5):'');
+      (inHouse()?'<div class="alrtSec">'+X('secOps')+'</div>'+row('stale',X('min'),5,120,5):'')+
+      '<div class="alrtSec">'+X('secPush')+'</div>'+
+      '<div class="alrtRow"><input type="checkbox" id="alrtPush"'+(S.push?' checked':'')+(SWOK?'':' disabled')+'>'+
+      '<label for="alrtPush">'+X('push')+'<small>'+(SWOK?X('pushS'):X('pushOff'))+'</small></label></div>';
+    var pc=$('alrtPush');
+    if(pc)pc.onchange=function(){
+      if(pc.checked){pushOn().then(function(){S.push=true;save();paint();})
+        .catch(function(){S.push=false;save();pc.checked=false;alert(X('pushErr'));});}
+      else {pushOff().then(function(){S.push=false;save();paint();});}
+    };
     Array.prototype.forEach.call(b.querySelectorAll('input[type=checkbox]'),function(el){
       el.onchange=function(){
         S.rules[el.getAttribute('data-k')].on=el.checked;
@@ -1809,7 +1829,7 @@ body[data-lang=id] .ffrow{--ffn:100px}
       el.onchange=function(){var v=parseFloat(el.value);if(!isNaN(v))S.rules[el.getAttribute('data-k')][el.getAttribute('data-f')]=v;save();};});
     Array.prototype.forEach.call(b.querySelectorAll('label'),function(el){
       el.onclick=function(){var c=b.querySelector('input[type=checkbox][data-k="'+el.getAttribute('data-k')+'"]');if(c){c.checked=!c.checked;c.onchange();}};});
-    $('alrtFoot').innerHTML=X('foot');
+    $('alrtFoot').innerHTML=X('foot')+(S.push?'<br>'+X('pushNote'):'');
     $('alrtLog').innerHTML=S.log.length?S.log.map(function(x){return '<div>'+String(x).replace(/[<>&]/g,'')+'</div>';}).join(''):'<div>'+X('logNone')+'</div>';
     var p=$('alrtPerm'),st=('Notification' in window)?Notification.permission:'denied';
     if(S.on&&st!=='granted'){p.hidden=false;
@@ -1828,6 +1848,64 @@ body[data-lang=id] .ffrow{--ffn:100px}
   document.addEventListener('click',function(e){
     var w=$('alrtWrap');if(w.hidden)return;
     if(!w.contains(e.target)&&!$('alrtFab').contains(e.target))w.hidden=true;});
+  /* ── 2단계: 탭을 닫아도 받기 ────────────────────────────────────
+     서버는 "뭔가 바뀌었다"는 신호만 보내고, 알림 문구·판정은 서비스 워커가 브라우저 안에서 만든다.
+     그래서 관심 종목·알림 조건은 서버로 나가지 않는다. */
+  var SWOK=('serviceWorker' in navigator)&&('PushManager' in window)&&location.protocol==='https:';
+  var REG=null;
+  function swState(){
+    return {on:!!S.on,rules:S.rules,wl:wl(),lang:isID()?'id':'ko',inHouse:inHouse(),seen:S.seen};
+  }
+  function swSync(){
+    if(!REG)return;
+    var w=REG.active||REG.waiting||REG.installing;
+    if(w&&w.postMessage)try{w.postMessage({type:'alrt-state',state:swState()});}catch(e){}
+  }
+  function swMerge(){                       /* 탭이 닫혀 있는 동안 워커가 보낸 것을 같은 것으로 본다 */
+    if(!('caches' in window))return Promise.resolve();
+    return caches.open('idxalrt-v1').then(function(c){return c.match('/__alrt_state');})
+      .then(function(r){return r?r.json():null;})
+      .then(function(j){
+        if(!j||!j.seen)return;
+        ['ann','news','cal','cat'].forEach(function(k){
+          var a=S.seen[k]||[],b=j.seen[k]||[],i;
+          for(i=0;i<b.length;i++)if(a.indexOf(b[i])<0)a.push(b[i]);
+          S.seen[k]=a;});
+        if(j.seen.once)for(var k2 in j.seen.once)S.seen.once[k2]=1;
+        save();
+      }).catch(function(){});
+  }
+  function pushOn(){
+    if(!SWOK)return Promise.reject(new Error('unsupported'));
+    return navigator.serviceWorker.register('/sw.js')
+      .then(function(r){REG=r;return navigator.serviceWorker.ready;})
+      .then(function(r){REG=r;return fetch('/api/push/key').then(function(x){return x.json();});})
+      .then(function(j){
+        if(!j||!j.key)throw new Error('key');
+        var raw=atob(j.key.replace(/-/g,'+').replace(/_/g,'/')),arr=new Uint8Array(raw.length),i;
+        for(i=0;i<raw.length;i++)arr[i]=raw.charCodeAt(i);
+        return REG.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:arr});
+      })
+      .then(function(sub){
+        return fetch('/api/push/sub',{method:'POST',headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({endpoint:sub.endpoint})}).then(function(){swSync();});
+      });
+  }
+  function pushOff(){
+    if(!SWOK||!REG)return Promise.resolve();
+    return REG.pushManager.getSubscription().then(function(sub){
+      if(!sub)return;
+      var ep=sub.endpoint;
+      return sub.unsubscribe().then(function(){
+        return fetch('/api/push/unsub',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({endpoint:ep})});
+      });
+    }).catch(function(){});
+  }
+  if(SWOK)navigator.serviceWorker.getRegistration('/').then(function(r){if(r){REG=r;swMerge().then(swSync);}}).catch(function(){});
+  navigator.serviceWorker&&navigator.serviceWorker.addEventListener('message',function(e){
+    var m=e.data||{};if(m.type==='alrt-open'&&m.t)try{openDr(m.t);}catch(err){}
+  });
+
   window.alrtLang=function(){if(!$('alrtWrap').hidden)paint();};
   window.alrtScan=function(){try{scan(gDATA());}catch(e){}};
 
