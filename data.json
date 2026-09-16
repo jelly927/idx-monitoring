@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 18:39",
+ "updated": "2026-09-16 18:42",
  "delay_min": 15,
- "fx_basis": "12.94 IDR/KRW · USD/IDR 17,690 · USD/KRW 1,367 · 17:15 Yahoo",
- "idr_per_krw": 12.9419,
+ "fx_basis": "12.94 IDR/KRW · USD/IDR 17,690 · USD/KRW 1,368 · 17:15 Yahoo",
+ "idr_per_krw": 12.9353,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -331,15 +331,15 @@
   "prev": 6461.15,
   "ytd": -25.56,
   "m1": -0.2,
-  "value_idr": 10929719004666.678,
+  "value_idr": 10929839903866.678,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-16 18:34",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 18:34",
   "rank_asof": null,
   "rank_date": "2026-09-16",
   "adv": 215,
   "dec": 459,
-  "unch": 158,
+  "unch": 159,
   "foreign_net_idr": -588236609776.6709,
   "foreign_buy": 3175175425708.6626,
   "foreign_sell": 3763412035485.3335,
@@ -10961,6 +10961,22 @@
    "live": 0
   },
   {
+   "t": "BLTA",
+   "n": "Berlian Laju Tanker",
+   "px": 32.0,
+   "prev": 32.0,
+   "pct": 0.0,
+   "val": 120899200.0,
+   "vol": 3778100.0,
+   "sh": 25940187103,
+   "mcap": 830085987296.0,
+   "hi": 32.0,
+   "lo": 32.0,
+   "ratio": 1.1,
+   "fnet": -57840000.0,
+   "live": 0
+  },
+  {
    "t": "BAYU",
    "n": "Bayu Buana",
    "px": 1335.0,
@@ -15407,11 +15423,11 @@
   {
    "name": "운송·물류",
    "name_id": "Transportasi",
-   "n": 36,
+   "n": 37,
    "adv": 12,
    "dec": 17,
-   "val": 99687600266.66667,
-   "mcap": 73973037785099.0,
+   "val": 99808499466.66667,
+   "mcap": 74803123772395.0,
    "top": [
     {
      "t": "GIAA",
@@ -15454,8 +15470,8 @@
      "pct": -1.09
     }
    ],
-   "fnet": -1133176266,
-   "pct": -0.49,
+   "fnet": -1191016266,
+   "pct": -0.48,
    "fbuy_top": [
     {
      "t": "SMDR",
@@ -17294,6 +17310,42 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-16T18:39:00+07:00",
+   "date": "2026-09-16",
+   "time": "18:39",
+   "src": "MarketWatch",
+   "t": "Intel’s stock rises as investors hope memory chips can mark the next step in its turnaround",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/intels-stock-rises-as-investors-hope-memory-chips-can-mark-the-next-step-in-its-turnaround-a276608f?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-00632956",
+   "t_ko": "메모리반도체가 반등 계기 될 것이란 기대감에 Intel 주가 상승",
+   "t_id": "Saham Intel Naik di Tengah Harapan Chip Memori Jadi Langkah Awal Pemulihan"
+  },
+  {
+   "ts": "2026-09-16T18:36:00+07:00",
+   "date": "2026-09-16",
+   "time": "18:36",
+   "src": "Media Indonesia",
+   "t": "Swasembada Bawang Putih Dikejar, Produksi Ditarget Tembus 630 Ribu Ton",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/934127/swasembada-bawang-putih-dikejar-produksi-ditarget-tembus-630-ribu-ton",
+   "t_ko": "마늘 자급자족 추진, 생산량 63만 톤 달성 목표",
+   "t_id": "Kejar Swasembada Bawang Putih, Produksi Ditarget Tembus 630 Ribu Ton"
+  },
+  {
+   "ts": "2026-09-16T18:33:13+07:00",
+   "date": "2026-09-16",
+   "time": "18:33",
+   "src": "Detik",
+   "t": "Warga Mulai Menjajal LRT Kelapa Gading - Manggarai",
+   "tags": [],
+   "url": "https://finance.detik.com/foto-bisnis/d-8665714/warga-mulai-menjajal-lrt-kelapa-gading-manggarai",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/16/warga-mulai-menjajal-lrt-kelapa-gading-manggarai-1789554576049.jpeg?w=360&q=90",
+   "t_ko": "시민들, Kelapa Gading - Manggarai LRT 노선 시승 시작",
+   "t_id": "Warga Mulai Jajal LRT Kelapa Gading - Manggarai"
+  },
+  {
    "ts": "2026-09-16T18:32:57+07:00",
    "date": "2026-09-16",
    "time": "18:32",
@@ -17302,8 +17354,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609160361/target-200-juta-rekening-bansos-dipertanyakan-dpr-jangan-sampai-ada-pemborosan",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/06/07/ilustrasi-warga-menerima-pencairan-bansos-dokjawaposcom-ZlFwS.webp",
-   "t_ko": "사회보장성 기금 계좌 2억 개 목표에 의회, 예산 낭비 우려 제기",
-   "t_id": "Target 200 Juta Rekening Bansos Dipertanyakan, DPR Wanti-Wanti Pemborosan"
+   "t_ko": "국회, 정부의 사회보장성 계좌 2억 개 목표에 예산 낭비 우려 제기",
+   "t_id": "Target 200 Juta Rekening Bansos Dipertanyakan, DPR: Jangan Ada Pemborosan"
   },
   {
    "ts": "2026-09-16T18:31:45+07:00",
@@ -17314,8 +17366,21 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-16/illycaffe-ceo-on-coffee-prices-us-market-ipo-prospects-video",
    "g": 1,
-   "t_ko": "Illycaffe CEO, 커피 가격·미국 시장·IPO 전망 언급",
-   "t_id": "CEO Illycaffe Bahas Harga Kopi, Pasar AS, hingga Prospek IPO"
+   "t_ko": "Illycaffe 대표, 커피 가격·미국 시장·IPO 전망 언급",
+   "t_id": "CEO Illycaffe Bahas Harga Kopi, Pasar AS, dan Prospek IPO"
+  },
+  {
+   "ts": "2026-09-16T18:30:59+07:00",
+   "date": "2026-09-16",
+   "time": "18:30",
+   "src": "Yahoo Finance",
+   "t": "Stock futures rise ahead of Fed interest rate decision Sept. 2026",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-futures-rise-ahead-fed-113059484.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/quartz_855/0d987fcdfb728a0742e8a1b992c31314.jpg",
+   "t_ko": "2026년 9월 연방준비제도 금리 결정 앞두고 주가지수 선물 상승",
+   "t_id": "Futures Saham Menguat Jelang Keputusan Suku Bunga The Fed Sep 2026"
   },
   {
    "ts": "2026-09-16T18:30:00+07:00",
@@ -17327,8 +17392,8 @@
    "url": "https://www.marketwatch.com/story/most-workers-would-take-a-pay-cut-for-job-security-right-now-i-cant-deal-with-this-stress-anymore-284aa87a?mod=mw_rss_topstories",
    "g": 1,
    "img": "https://images.mktw.net/im-65564331",
-   "t_ko": "직장인 대다수, 고용 안정을 위해 임금 삭감 수용 의향",
-   "t_id": "Mayoritas Pekerja Rela Potong Gaji Demi Kepastian Kerja di Tengah Stres Tinggi"
+   "t_ko": "직장인 대다수, 극심한 스트레스 피해 고용 안정 위해 감봉 수용 의향",
+   "t_id": "Mayoritas Pekerja Rela Potong Gaji Demi Keamanan Kerja: 'Tak Tahan Lagi dengan Stres Ini'"
   },
   {
    "ts": "2026-09-16T18:30:00+07:00",
@@ -17339,8 +17404,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121770/dki-siapkan-perpanjangan-rute-lrt-minta-bantuan-danantara",
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260916142516.jpg",
-   "t_ko": "자카르타, LRT 노선 연장 추진에 Danantara 지원 요청",
-   "t_id": "DKI Siapkan Perpanjangan Rute LRT dan Gandeng Danantara"
+   "t_ko": "자카르타주, LRT 노선 연장 추진하며 Danantara에 지원 요청",
+   "t_id": "DKI Siapkan Perpanjangan Rute LRT, Minta Bantuan Danantara"
   },
   {
    "ts": "2026-09-16T18:27:32+07:00",
@@ -17353,6 +17418,19 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/16/pejabat-lama-purbaya-yudhi-sadewa-usai-serah-terima-jabatan-menteri-keuangan-di-kemenkeu-jakarta-selasa-1592026-Pt2Tz.webp",
    "t_ko": "Purbaya 후임에 Suahasil Nazara 지명 — 아내 SNS에 네티즌 몰려",
    "t_id": "Purbaya Digantikan Suahasil Nazara, Unggahan sang Istri Ida Yulidina di Medsos Diserbu Warganet"
+  },
+  {
+   "ts": "2026-09-16T18:25:49+07:00",
+   "date": "2026-09-16",
+   "time": "18:25",
+   "src": "Yahoo Finance",
+   "t": "Treasury yields hold above 5% ahead of Fed rate decision",
+   "tags": [],
+   "url": "https://finance.yahoo.com/economy/policy/articles/treasury-yields-hold-above-5-112549587.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/quartz_855/ca9f23609b2e3702c6230b4bf0742d90.jpg",
+   "t_ko": "연준 금리 결정 앞두고 미 국채 금리 5% 상회 유지",
+   "t_id": "Imbal Hasil US Treasury Bertahan di Atas 5% Jelang Keputusan Suku Bunga The Fed"
   },
   {
    "ts": "2026-09-16T18:25:45+07:00",
@@ -17376,8 +17454,21 @@
    "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-september-16-2026-crypto-prices-tank-after-clarity-act-fails-and-ahead-of-fed-decision-112517152.html",
    "g": 1,
    "img": "https://s.yimg.com/uu/api/res/1.2/ZpWX2Yzi4TnvhZyi00u31A--~B/aD0zNTA7dz02MTI7YXBwaWQ9eXRhY2h5b24-/https://d29szjachogqwa.cloudfront.net/images/user-uploaded/bitcoin_4_7197.jpg",
-   "t_ko": "가상자산 법안 무산 및 연준 결정 앞두고 비트코인·이더리움 급락",
-   "t_id": "Harga Bitcoin dan Ethereum Hari Ini, Rabu, 16 September 2026: Kripto Anjlok Usai RUU CLARITY Gagal dan Jelang Keputusan The Fed"
+   "t_ko": "CLARITY Act 부결 및 연준 결정 앞두고 비트코인·이더리움 등 가상자산 급락",
+   "t_id": "Harga Bitcoin dan Ethereum Hari Ini, Rabu, 16 Sep 2026: Kripto Anjlok Usai RUU CLARITY Gagal dan Jelang Keputusan The Fed"
+  },
+  {
+   "ts": "2026-09-16T18:23:21+07:00",
+   "date": "2026-09-16",
+   "time": "18:23",
+   "src": "Yahoo Finance",
+   "t": "These 7 Stocks Are Analyst Favorites For Magnificent Earnings Growth; Cloudflare Hits Buy Point",
+   "tags": [],
+   "url": "https://www.investors.com/research/best-stocks-seven-magnificent-stocks-earnings-growth/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/60db304efdc88fa55e8cacefa22c9a60.jpg",
+   "t_ko": "분석가들이 꼽은 실적 성장 유망주 7선 — Cloudflare 매수 구간 진입",
+   "t_id": "7 Saham Pilihan Analis untuk Pertumbuhan Laba Jumbo; Cloudflare Tembus Titik Beli"
   },
   {
    "ts": "2026-09-16T18:21:56+07:00",
@@ -17390,6 +17481,19 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260915123754-279.png",
    "t_ko": "Bapanas, 11개 주에 문제 있는 강화 쌀 25개 브랜드 허가 취소",
    "t_id": "Bapanas Minta 11 Provinsi Cabut Izin 25 Merek Beras Fortifikasi Bermasalah"
+  },
+  {
+   "ts": "2026-09-16T18:21:20+07:00",
+   "date": "2026-09-16",
+   "time": "18:21",
+   "src": "Yahoo Finance",
+   "t": "Dow Jones Futures Rise As ServiceNow, Twilio Lead 8 New Buys; Will Market Bid Bond Voyage After Fed Rate Hike?",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-how-will-bonds-react-to-fed-rate-hike/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/24ee3a477044c231715245d41a21f0e3.jpg",
+   "t_ko": "ServiceNow·Twilio 매수세에 다우선물 상승",
+   "t_id": "Dow Jones Futures Naik Seiring ServiceNow dan Twilio Pimpin 8 Pembelian Baru; Pasar Siap Lepas Obligasi Usai Kenaikan Suku Bunga The Fed?"
   },
   {
    "ts": "2026-09-16T18:20:00+07:00",
@@ -17412,8 +17516,8 @@
    "t": "OJK Terbitkan Izin Usaha Perusahaan Asuransi Jiwa Syariah Hasil Pemisahan Unit Syariah",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/934112/ojk-terbitkan-izin-usaha-perusahaan-asuransi-jiwa-syariah-hasil-pemisahan-unit-syariah",
-   "t_ko": "OJK, 분할 설립된 이슬람 생명보험사 신규 영업 인가 발급",
-   "t_id": "OJK Terbitkan Izin Usaha Asuransi Jiwa Syariah Hasil Spin-Off"
+   "t_ko": "OJK, 이슬람 금융부문 분리 완료한 이슬람 생명보험사에 영업 인가 발급",
+   "t_id": "OJK Terbitkan Izin Usaha Asuransi Jiwa Syariah Hasil Spin-Off Unit Syariah"
   },
   {
    "ts": "2026-09-16T18:15:00+07:00",
@@ -17437,8 +17541,8 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/warren-buffetts-phenomenal-advice-gm-111500447.html",
    "g": 1,
    "img": "https://media.zenfs.com/en/moneywise_ecomm_711/9f884293df2e6d170b74786b64a5224c.jpg",
-   "t_ko": "Warren Buffett의 과거 조언, Berkshire 주가 급등에도 엇갈린 결과",
-   "t_id": "Nasihat Warren Buffett ke CEO GM Jadi Bumerang bagi Berkshire Meski Saham Naik Tiga Kali Lipat"
+   "t_ko": "Buffett의 GM CEO 조언, 주가 세 배 급등에도 Berkshire에는 역효과",
+   "t_id": "Nasihat 'Fenomenal' Warren Buffett ke CEO GM Menjadi Bumerang bagi Berkshire Meski Saham Naik Tiga Kali Lipat"
   },
   {
    "ts": "2026-09-16T18:11:44+07:00",
@@ -17476,32 +17580,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814105502.jpeg",
    "t_ko": "IDX, 증시 거래 시간 연장 방안 재검토",
    "t_id": "BEI Kaji Ulang Wacana Perpanjangan Jam Bursa"
-  },
-  {
-   "ts": "2026-09-16T18:08:54+07:00",
-   "date": "2026-09-16",
-   "time": "18:08",
-   "src": "Yahoo Finance",
-   "t": "China condiment firm Haitan buys Amoy Food",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/china-condiment-firm-haitan-buys-110854132.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/just_food_692/444c2817f03eb6d21678dd642c219aad.jpg",
-   "t_ko": "중국 조미료사 Haitan, Amoy Food 인수",
-   "t_id": "Perusahaan Bumbu Asal China Haitan Akuisisi Amoy Food"
-  },
-  {
-   "ts": "2026-09-16T18:08:31+07:00",
-   "date": "2026-09-16",
-   "time": "18:08",
-   "src": "Yahoo Finance",
-   "t": "Dow Jones Futures Rise As ServiceNow, Twilio Lead 8 New Buys; Will Market Bid Bond Voyage After Fed Rate Hike?",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-how-will-bonds-react-to-fed-rate-hike/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/24ee3a477044c231715245d41a21f0e3.jpg",
-   "t_ko": "ServiceNow·Twilio 매수세에 다우선물 상승",
-   "t_id": "Dow Jones Futures Naik Seiring ServiceNow dan Twilio Pimpin 8 Pembelian Baru; Pasar Siap Lepas Obligasi Usai Kenaikan Suku Bunga The Fed?"
   },
   {
    "ts": "2026-09-16T18:05:00+07:00",
@@ -17588,18 +17666,6 @@
    "t_id": "Ketahanan Energi Butuh Penguatan Industri Hulu Migas"
   },
   {
-   "ts": "2026-09-16T17:59:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:59",
-   "src": "Media Indonesia",
-   "t": "Harga Minyak Dunia Melonjak, Harga BBM Global Diprediksi Meroket",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/934096/harga-minyak-dunia-melonjak-harga-bbm-global-diprediksi-meroket",
-   "g": 1,
-   "t_ko": "국제유가 급등에 글로벌 연료비 폭등 전망",
-   "t_id": "Harga Minyak Dunia Melonjak, Harga BBM Global Diprediksi Meroket"
-  },
-  {
    "ts": "2026-09-16T17:54:00+07:00",
    "date": "2026-09-16",
    "time": "17:54",
@@ -17610,32 +17676,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/09/17/2025_09_17-18_41_00_afb7d4ee-93c4-11f0-a112-9f3be5b34930_620x413_thumb.jpg",
    "t_ko": "환경산림부 차관, 전기차를 배출 감축 핵심으로 꼽으며 나무와 비교",
    "t_id": "Wamen LHK Sebut Kendaraan Listrik Kunci Tekan Emisi, Bandingkan dengan Pohon"
-  },
-  {
-   "ts": "2026-09-16T17:51:34+07:00",
-   "date": "2026-09-16",
-   "time": "17:51",
-   "src": "Yahoo Finance",
-   "t": "Silver price today, Wednesday, September 16, 2026:  Silver prices rise in anticipation of the Fed",
-   "tags": [],
-   "url": "https://finance.yahoo.com/personal-finance/investing/article/silver-price-today-wednesday-september-16-2026-silver-prices-rise-in-anticipation-of-the-fed-105134969.html",
-   "g": 1,
-   "img": "https://s.yimg.com/uu/api/res/1.2/qkBh3DyyvNvOMM9FOGidIA--~B/aD0zNjU4O3c9NTQ5ODthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-05/4ee3f2ba-4678-4447-ba10-98ba355d52c8",
-   "t_ko": "연준 금리 인하 기대에 은 가격 상승",
-   "t_id": "Harga Perak Hari Ini, Rabu, 16 Sep 2026: Harga Perak Naik Jelang Keputusan The Fed"
-  },
-  {
-   "ts": "2026-09-16T17:51:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:51",
-   "src": "MarketWatch",
-   "t": "How the Iran war is transforming the relationship between stocks, bonds and oil",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/2-charts-showing-how-oil-is-becoming-the-global-markets-biggest-wild-card-ec273da8?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-72907615",
-   "t_ko": "이란 전쟁이 주식·채권·유가 관계에 미치는 영향",
-   "t_id": "Perang Iran Ubah Hubungan Antara Saham, Obligasi, dan Minyak"
   },
   {
    "ts": "2026-09-16T17:34:00+07:00",
@@ -17720,30 +17760,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2019/03/04/5394c5b5-e2e8-4cc6-b022-29b973e633f2_169.jpeg?w=360&q=90",
    "t_ko": "Purbaya 연기했던 4개 온라인몰, 10월 1일부터 판매자 세금 징수 개시",
    "t_id": "Sempat Ditunda Purbaya, 4 Toko Online Mulai Pungut Pajak Seller 1 Okt"
-  },
-  {
-   "ts": "2026-09-16T17:15:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:15",
-   "src": "Katadata",
-   "t": "Kementerian Lingkungan Anggap AI Jadi Ancaman Penurunan Emisi Nasional",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/nasional/6aaa6c256b08c/kementerian-lingkungan-anggap-ai-jadi-ancaman-penurunan-emisi-nasional",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/06/16/2026_06_16-16_50_00_6fccdd9c-6979-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "환경부, AI를 국가 탄소 감축의 위협 요소로 규정",
-   "t_id": "Kementerian Lingkungan Anggap AI Jadi Ancaman Penurunan Emisi Nasional"
-  },
-  {
-   "ts": "2026-09-16T17:14:46+07:00",
-   "date": "2026-09-16",
-   "time": "17:14",
-   "src": "Detik",
-   "t": "Kejagung Siap Kawal Penegakan Hukum Dugaan Pelanggaran Beras Fortifikasi",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8665647/kejagung-siap-kawal-penegakan-hukum-dugaan-pelanggaran-beras-fortifikasi",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/16/kejagung-siap-kawal-proses-hukum-kasus-peredaran-beras-fortifikasi-1789553508841_169.jpeg?w=360&q=90",
-   "t_ko": "검찰, 영양 강화 쌀 불법 위반 의혹 법 집행 지원 표명",
-   "t_id": "Kejagung Siap Kawal Penegakan Hukum Dugaan Pelanggaran Beras Fortifikasi"
   }
  ],
  "kisi_news": [
@@ -17960,9 +17976,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.18",
-   "d": -1.53,
-   "ytd": 79.69,
+   "v": "103.32",
+   "d": -1.39,
+   "ytd": 79.94,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -23829,7 +23845,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-16 18:34",
-  "pc_age_min": 5,
+  "pc_age_min": 8,
   "news_ai_cache": 55,
   "news_ai_hit": 37,
   "on_runner": true,
@@ -25526,32 +25542,6 @@
  "top_day": "2026-09-16",
  "top_news": [
   {
-   "ts": "2026-09-16T15:56:00+07:00",
-   "date": "2026-09-16",
-   "time": "15:56",
-   "src": "Katadata",
-   "t": "Prabowo Resmikan LRT Rute Kelapa Gading-Manggarai, Tarif Rp 8 Selama 8 Hari",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/nasional/6aaa59b071bfc/prabowo-resmikan-lrt-rute-kelapa-gading-manggarai-tarif-rp-8-selama-8-hari",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/16/Presiden_prabowo_Subianto_Gubernur_Jakarta_Pramono_Anung_dan_Men-2026_09_16-15_53_51_d72d96251389d0adcc5969f6478dd249_620x413_thumb.png",
-   "score": 417.85,
-   "srcs": 4,
-   "t_ko": "Prabowo, Kelapa Gading-Manggarai LRT 개통 및 8일간 Rp8 요금 적용",
-   "t_id": "Prabowo Resmikan LRT Rute Kelapa Gading-Manggarai, Tarif Rp 8 Selama 8 Hari",
-   "ai_ko": "· Jakarta LRT Kelapa Gading-Manggarai 개통\n· 12.2km·11개역, 투자비 Rp2.7조\n· 하루 8만명 수송 목표, 8일간 Rp8 요금",
-   "ai_id": "· LRT Kelapa Gading-Manggarai diresmikan\n· 12,2 km, 11 stasiun, investasi Rp2,7 triliun\n· Target 80 ribu penumpang, tarif Rp8 8 hari",
-   "ai_tags": [
-    "인프라",
-    "교통",
-    "정부정책"
-   ],
-   "ai_tags_id": [
-    "infrastruktur",
-    "transportasi",
-    "kebijakan"
-   ]
-  },
-  {
    "ts": "2026-09-16T16:33:41+07:00",
    "date": "2026-09-16",
    "time": "16:33",
@@ -25590,6 +25580,32 @@
    "srcs": 7,
    "t_ko": "IHSG 6거래일 연속 하락 — 연준 금리 인상 확률 92% 반영",
    "t_id": "IHSG Melemah 6 Hari Beruntun, Peluang Suku Bunga The Fed Naik Capai 92%"
+  },
+  {
+   "ts": "2026-09-16T15:56:00+07:00",
+   "date": "2026-09-16",
+   "time": "15:56",
+   "src": "Katadata",
+   "t": "Prabowo Resmikan LRT Rute Kelapa Gading-Manggarai, Tarif Rp 8 Selama 8 Hari",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6aaa59b071bfc/prabowo-resmikan-lrt-rute-kelapa-gading-manggarai-tarif-rp-8-selama-8-hari",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/16/Presiden_prabowo_Subianto_Gubernur_Jakarta_Pramono_Anung_dan_Men-2026_09_16-15_53_51_d72d96251389d0adcc5969f6478dd249_620x413_thumb.png",
+   "score": 415.65,
+   "srcs": 3,
+   "t_ko": "Prabowo, Kelapa Gading-Manggarai LRT 개통 및 8일간 Rp8 요금 적용",
+   "t_id": "Prabowo Resmikan LRT Rute Kelapa Gading-Manggarai, Tarif Rp 8 Selama 8 Hari",
+   "ai_ko": "· Jakarta LRT Kelapa Gading-Manggarai 개통\n· 12.2km·11개역, 투자비 Rp2.7조\n· 하루 8만명 수송 목표, 8일간 Rp8 요금",
+   "ai_id": "· LRT Kelapa Gading-Manggarai diresmikan\n· 12,2 km, 11 stasiun, investasi Rp2,7 triliun\n· Target 80 ribu penumpang, tarif Rp8 8 hari",
+   "ai_tags": [
+    "인프라",
+    "교통",
+    "정부정책"
+   ],
+   "ai_tags_id": [
+    "infrastruktur",
+    "transportasi",
+    "kebijakan"
+   ]
   },
   {
    "ts": "2026-09-16T15:30:00+07:00",
