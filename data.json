@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 21:42",
+ "updated": "2026-09-16 21:51",
  "delay_min": 15,
- "fx_basis": "12.94 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,369 · 21:20 Yahoo",
- "idr_per_krw": 12.9372,
+ "fx_basis": "12.95 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,367 · 21:20 Yahoo",
+ "idr_per_krw": 12.9535,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -334,7 +334,7 @@
   "value_idr": 10929839903866.678,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 21:33",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 21:47",
   "rank_asof": null,
   "rank_date": "2026-09-16",
   "adv": 215,
@@ -15757,10 +15757,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7607.18,
+   "px": 7607.48,
    "prev": 7585.51,
    "pct": 0.29,
-   "asof": "21:40",
+   "asof": "21:50",
    "live": true,
    "spark": [
     7603.81,
@@ -15777,17 +15777,19 @@
     7600.65,
     7602.59,
     7604.55,
-    7607.18
+    7609.78,
+    7607.46,
+    7607.48
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26146.89,
+   "px": 26153.52,
    "prev": 25981.57,
-   "pct": 0.64,
-   "asof": "21:40",
+   "pct": 0.66,
+   "asof": "21:50",
    "live": true,
    "spark": [
     26099.29,
@@ -15804,17 +15806,19 @@
     26141.72,
     26139.78,
     26136.9,
-    26146.89
+    26159.65,
+    26153.38,
+    26153.52
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52013.87,
+   "px": 52009.47,
    "prev": 52092.45,
-   "pct": -0.15,
-   "asof": "21:40",
+   "pct": -0.16,
+   "asof": "21:50",
    "live": true,
    "spark": [
     52038.56,
@@ -15831,7 +15835,9 @@
     51932.3,
     51962.16,
     51996.73,
-    52013.87
+    52032.26,
+    52008.01,
+    52009.47
    ]
   },
   {
@@ -17071,6 +17077,67 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-16T21:49:18+07:00",
+   "date": "2026-09-16",
+   "time": "21:49",
+   "src": "Jawa Pos",
+   "t": "Tangkap Potensi Carbon Trading dari PLTP Gunung Salak, PLN IP-South Pole AG Teken Kerja Sama ERPA",
+   "tags": [],
+   "url": "https://www.jawapos.com/energi/2609160484/tangkap-potensi-carbon-trading-dari-pltp-gunung-salak-pln-ip-south-pole-ag-teken-kerja-sama-erpa",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/15/pltp-gunung-salak-menjadi-salah-satu-aset-energi-bersih-pln-indonesia-power-yang-terus-dioptimalkan-termasuk-melalui-pengembangan-aset-karbon-dari-potensi-pengurangan-emisi-pln-ip-ti7tz.webp",
+   "t_id": "Tangkap Potensi Carbon Trading dari PLTP Gunung Salak, PLN IP-South Pole AG Teken Kerja Sama ERPA",
+   "t_ko": "PLN IP와 South Pole AG, Gunung Salak 지열발전소 탄소배출권 확보 협력"
+  },
+  {
+   "ts": "2026-09-16T21:43:09+07:00",
+   "date": "2026-09-16",
+   "time": "21:43",
+   "src": "CNBC",
+   "t": "Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/canada-eu-associate-member-von-der-leyen.html",
+   "g": 1,
+   "t_ko": "트럼프 무역전쟁 격화 속 캐나다, EU 첫 준회원국 가입 초청",
+   "t_id": "Kanada Diundang Jadi 'Anggota Asosiasi' Pertama UE Seiring Memanasnya Perang Dagang Trump",
+   "ai_ko": "· 유럽연합, 캐나다에 준회원국 지위 제안\n· von der Leyen 연설서 최초 사례로 언급\n· 미국 관세 갈등 속 교역축 재편 신호",
+   "ai_id": "· Uni Eropa tawarkan status associate member\n· Disampaikan Ursula von der Leyen\n· Kanada sedang perang dagang dengan AS",
+   "ai_tags": [
+    "무역",
+    "관세",
+    "국제정세"
+   ],
+   "ai_tags_id": [
+    "perdagangan",
+    "tarif",
+    "geopolitik"
+   ]
+  },
+  {
+   "ts": "2026-09-16T21:42:13+07:00",
+   "date": "2026-09-16",
+   "time": "21:42",
+   "src": "Detik",
+   "t": "Prabowo Larang Keras Pembakaran Hutan dan Lahan!",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666051/prabowo-larang-keras-pembakaran-hutan-dan-lahan",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/24/presiden-prabowo-subianto-saat-rapat-penanggulangan-karhutla-di-palembang-sumsel-1787584265164_169.jpeg?w=360&q=90",
+   "t_id": "Prabowo Larang Keras Pembakaran Hutan dan Lahan!",
+   "t_ko": "Prabowo, 산림 및 토지 무단 소각 강력 금지"
+  },
+  {
+   "ts": "2026-09-16T21:35:01+07:00",
+   "date": "2026-09-16",
+   "time": "21:35",
+   "src": "Yahoo Finance",
+   "t": "CFO Liquidates Shares Valued at More Than $100,000",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/cfo-liquidates-shares-valued-more-143501502.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/493481cc238529aefc80335a85115c6c.png",
+   "t_ko": "CFO, 10만 달러 이상 규모 주식 현금화",
+   "t_id": "CFO Jual Saham Senilai Lebih dari $100.000"
+  },
+  {
    "ts": "2026-09-16T21:32:00+07:00",
    "date": "2026-09-16",
    "time": "21:32",
@@ -17079,8 +17146,8 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/nasional/6aaaa88b8bf2e/prabowo-siapkan-2-juta-ha-lahan-tebu-demi-kejar-target-e20-bbm-bensin-di-2028",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2017/07/11/2017_07_11-12_26_40_d94d477acb22ac88d412d38b590b44c4_620x413_thumb.jpg",
-   "t_id": "Prabowo Siapkan 2 Juta Ha Lahan Tebu demi Kejar Target E20 BBM Bensin di 2028",
-   "t_ko": "Prabowo, 2028년 휘발유 E20 목표 위해 사탕수수밭 200만 헥타르 조성"
+   "t_ko": "Prabowo, 2028년 휘발유 E20 목표 위해 사탕수수밭 200만 헥타르 조성",
+   "t_id": "Prabowo Siapkan 2 Juta Ha Lahan Tebu demi Kejar Target E20 BBM Bensin di 2028"
   },
   {
    "ts": "2026-09-16T21:32:00+07:00",
@@ -17090,8 +17157,8 @@
    "t": "Rosan bakal Temui Menkeu Bahas Setoran Dividen BUMN Rp120 Triliun",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/934229/rosan-bakal-temui-menkeu-bahas-setoran-dividen-bumn-rp120-triliun",
-   "t_id": "Rosan bakal Temui Menkeu Bahas Setoran Dividen BUMN Rp120 Triliun",
-   "t_ko": "Rosan, 재무장관 만나 국영기업 배당금 Rp120조 납부 논의 예정"
+   "t_ko": "Rosan, 재무장관 만나 국영기업 배당금 Rp120조 납부 논의 예정",
+   "t_id": "Rosan bakal Temui Menkeu Bahas Setoran Dividen BUMN Rp120 Triliun"
   },
   {
    "ts": "2026-09-16T21:31:24+07:00",
@@ -17138,8 +17205,8 @@
    "t": "KPK Bongkar Struktur Bayangan Kementerian Agraria dan Tata Ruang/Badan Pertanahan Nasional",
    "tags": [],
    "url": "https://mediaindonesia.com/politik-dan-hukum/934225/kpk-bongkar-struktur-bayangan-kementerian-agraria-dan-tata-ruangbadan-pertanahan-nasional-",
-   "t_id": "KPK Bongkar Struktur Bayangan Kementerian Agraria dan Tata Ruang/Badan Pertanahan Nasional",
-   "t_ko": "KPK, 토지공간부의 그림자 조직 구조 적발"
+   "t_ko": "KPK, 토지공간부의 그림자 조직 구조 적발",
+   "t_id": "KPK Bongkar Struktur Bayangan Kementerian Agraria dan Tata Ruang/Badan Pertanahan Nasional"
   },
   {
    "ts": "2026-09-16T21:27:43+07:00",
@@ -17150,8 +17217,34 @@
    "tags": [],
    "url": "https://www.medcom.id/nasional/peristiwa/nN9dQWjK-prabowo-ungkap-alasan-bentuk-uri-soroti-masalah-sdm-dan-birokrasi",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/16/1842574/RoMhK8QH9f.JPG?w=720",
-   "t_id": "Prabowo Ungkap Alasan Bentuk URI, Soroti Masalah SDM dan Birokrasi",
-   "t_ko": "Prabowo, URI 신설 배경으로 인력 및 관료제 문제 지적"
+   "t_ko": "Prabowo, URI 신설 배경으로 인력 및 관료제 문제 지적",
+   "t_id": "Prabowo Ungkap Alasan Bentuk URI, Soroti Masalah SDM dan Birokrasi"
+  },
+  {
+   "ts": "2026-09-16T21:26:31+07:00",
+   "date": "2026-09-16",
+   "time": "21:26",
+   "src": "Yahoo Finance",
+   "t": "Intel Stock Rises On Talk Of Fab Deal With SK Hynix",
+   "tags": [],
+   "url": "https://www.investors.com/news/technology/intel-stock-possible-sk-hynix-fab-deal/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/fd5c53d2f47a7738ddb28ebb258ebaea.jpg",
+   "t_ko": "Intel, SK Hynix와 팹 협력 기대감에 주가 상승",
+   "t_id": "Saham Intel Naik di Tengah Rumor Kesepakatan Pabrik dengan SK Hynix"
+  },
+  {
+   "ts": "2026-09-16T21:24:13+07:00",
+   "date": "2026-09-16",
+   "time": "21:24",
+   "src": "Yahoo Finance",
+   "t": "Billionaire Ray Dalio’s Bridgewater’s and Cathie Wood’s ARK Portfolios: 2 Stocks They Both Own",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/billionaire-ray-dalio-bridgewater-cathie-142413224.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/a37b66a628fbb571ddd7e31262a199b0.png",
+   "t_ko": "Ray Dalio의 Bridgewater와 Cathie Wood의 ARK 공통 보유 종목 2선",
+   "t_id": "Portofolio Bridgewater Milik Milyarder Ray Dalio & ARK Milik Cathie Wood: 2 Saham Pilihan Bersama"
   },
   {
    "ts": "2026-09-16T21:23:42+07:00",
@@ -17191,17 +17284,16 @@
    "t_id": "Burnham Tolak Komentar 'Sosialis Pajak dan Belanja'"
   },
   {
-   "ts": "2026-09-16T21:20:25+07:00",
+   "ts": "2026-09-16T21:19:10+07:00",
    "date": "2026-09-16",
-   "time": "21:20",
-   "src": "Yahoo Finance",
-   "t": "Bank of America CFO Claims All Is Well as Stock Slides 7% in a Month",
+   "time": "21:19",
+   "src": "Reuters",
+   "t": "Bond market woes likely a factor for Fed, but intervention seen as unlikely",
    "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-cfo-claims-well-142025288.html",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWHQzSC11Z3EtOUFVMG9sQnYwOHhnZkJGM2VoVWtFNWp1Y0ZlM2lIMEhoSnkzaExSQlZ4SzVFRkk0aHR3S0NUWC1ZdWQ0MXdJNmxoYWdxdGJJcmtDWENDa0JvNE9fQjFCTFhqTVZZR0NuQmNDNE03dHVEcUVmZDdpaUhXUTFWdzdmeXJUVkxGdThDaG8wNGRWSXl3V09DZVNDN1BzbllrN0tSZw?oc=5",
    "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/ccadc809b448fb7be47e2c884ce3a38a.jpg",
-   "t_ko": "Bank of America CFO, 한 달간 주가 7% 하락 속 건전성 강조",
-   "t_id": "CFO Bank of America Sebut Kondisi Aman Saat Saham Anjlok 7% Sebulan"
+   "t_ko": "채권시장 불안이 연준 고려사항이나 개입 가능성은 낮아",
+   "t_id": "Gejolak Pasar Obligasi Jadi Pertimbangan The Fed, Intervensi Kecil Kemungkinan"
   },
   {
    "ts": "2026-09-16T21:19:00+07:00",
@@ -17213,6 +17305,19 @@
    "url": "https://mediaindonesia.com/politik-dan-hukum/934218/ini-3-masalah-utama-yang-jadi-fokus-presiden-prabowo",
    "t_ko": "Prabowo 대통령의 핵심 집중 과제 3가지",
    "t_id": "Ini 3 Masalah Utama yang Jadi Fokus Presiden Prabowo"
+  },
+  {
+   "ts": "2026-09-16T21:17:57+07:00",
+   "date": "2026-09-16",
+   "time": "21:17",
+   "src": "Yahoo Finance",
+   "t": "Brad Gerstner Says Latest ‘Negativity’ Around AI is ‘Political Agenda’; See His 2 New AI Stock Picks",
+   "tags": [],
+   "url": "https://finance.yahoo.com/technology/ai/articles/brad-gerstner-says-latest-negativity-141757194.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/55b9a63b040c05b566867f9c67530d55.jpg",
+   "t_ko": "Brad Gerstner, AI 관련 부정적 시각은 정치적 의도… 신규 AI 주식 2종 추천",
+   "t_id": "Brad Gerstner Sebut 'Negativitas' AI Terbaru Adalah 'Agenda Politik'; Intip 2 Saham AI Pilihan Barunya"
   },
   {
    "ts": "2026-09-16T21:17:00+07:00",
@@ -17336,69 +17441,6 @@
    "t_id": "2 Pilihan Saham Non-AI Milik Miliarder Ray Dalio dari Bridgewater"
   },
   {
-   "ts": "2026-09-16T21:05:28+07:00",
-   "date": "2026-09-16",
-   "time": "21:05",
-   "src": "Yahoo Finance",
-   "t": "10-year Treasury sits below 5% as market awaits Fed decision: AlphaCheck",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/article/10-year-treasury-sits-below-5-as-market-awaits-fed-decision-alphacheck-140528141.html",
-   "g": 1,
-   "img": "https://s.yimg.com/uu/api/res/1.2/KOQycXR2.rzD.hETOEslKg--~B/aD0zODQwO3c9NTc2MDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-09/f128b170-14d0-4965-8d22-35c1236e36ae",
-   "t_ko": "시장 연준 결정 대기 속 10년물 국채금리 5% 하회",
-   "t_id": "Yield US Treasury 10-Tahun di Bawah 5% Menanti Keputusan The Fed: AlphaCheck"
-  },
-  {
-   "ts": "2026-09-16T21:05:27+07:00",
-   "date": "2026-09-16",
-   "time": "21:05",
-   "src": "Yahoo Finance",
-   "t": "Ray Dalio’s Fund Was Buying These 2 AI Stocks",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/ray-dalio-fund-buying-2-140527912.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/6228995eb045c5e06c1bec4b1de72bb9.jpg",
-   "t_ko": "Ray Dalio 펀드, AI 주식 2종 매수",
-   "t_id": "Dana Ray Dalio Borong 2 Saham AI Ini"
-  },
-  {
-   "ts": "2026-09-16T21:03:35+07:00",
-   "date": "2026-09-16",
-   "time": "21:03",
-   "src": "CNBC",
-   "t": "Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/canada-eu-associate-member-von-der-leyen.html",
-   "g": 1,
-   "t_ko": "트럼프 무역전쟁 격화 속 캐나다, EU 첫 준회원국 가입 초청",
-   "t_id": "Kanada Diundang Jadi 'Anggota Asosiasi' Pertama UE Seiring Memanasnya Perang Dagang Trump",
-   "ai_ko": "· 유럽연합, 캐나다에 준회원국 지위 제안\n· von der Leyen 연설서 최초 사례로 언급\n· 미국 관세 갈등 속 교역축 재편 신호",
-   "ai_id": "· Uni Eropa tawarkan status associate member\n· Disampaikan Ursula von der Leyen\n· Kanada sedang perang dagang dengan AS",
-   "ai_tags": [
-    "무역",
-    "관세",
-    "국제정세"
-   ],
-   "ai_tags_id": [
-    "perdagangan",
-    "tarif",
-    "geopolitik"
-   ]
-  },
-  {
-   "ts": "2026-09-16T21:00:05+07:00",
-   "date": "2026-09-16",
-   "time": "21:00",
-   "src": "FT",
-   "t": "AI must not outrun safety controls, DeepMind co-founder warns",
-   "tags": [],
-   "url": "https://www.ft.com/content/0fc3ae6d-732e-4f08-950e-8669b1fcfd8e?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F8769987f-4073-46ec-88d1-fbb2e89c62e3.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "DeepMind 공동 창업자, 안전 통제 없는 AI 개발 경고",
-   "t_id": "Pendiri Bersama DeepMind Peringatkan AI Tak Boleh Lampaui Kontrol Keamanan"
-  },
-  {
    "ts": "2026-09-16T20:58:52+07:00",
    "date": "2026-09-16",
    "time": "20:58",
@@ -17409,18 +17451,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/11/20/menteri-investasi-dan-hilirisasikepala-bkpm-rosan-roeslani-1763634019135_169.jpeg?w=360&q=90",
    "t_ko": "Rp120조 배당금 납입 건으로 Danantara 대표, 신임 재무장관 회동 추진",
    "t_id": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru"
-  },
-  {
-   "ts": "2026-09-16T20:58:30+07:00",
-   "date": "2026-09-16",
-   "time": "20:58",
-   "src": "Bloomberg",
-   "t": "Intel-SK Hynix Potential Tie Up; JB Hunt Lower on Costs",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-16/intel-sk-hynix-potential-tie-up-jb-hunt-lower-on-costs-video",
-   "g": 1,
-   "t_ko": "Intel-SK Hynix 협력 가능성 부각, 비용 우려에 JB Hunt 약세",
-   "t_id": "Potensi Aliansi Intel-SK Hynix; Saham JB Hunt Turun Akibat Beban Biaya"
   },
   {
    "ts": "2026-09-16T20:55:00+07:00",
@@ -17512,28 +17542,6 @@
    "url": "https://mediaindonesia.com/politik-dan-hukum/934196/suahasil-gantikan-purbaya-jadi-menteri-keuangan-istana-hak-presiden",
    "t_ko": "Suahasil, Purbaya 후임 재무장관 내정 — 대통령 고유 권한",
    "t_id": "Suahasil Gantikan Purbaya jadi Menteri Keuangan, Istana: Hak Presiden"
-  },
-  {
-   "ts": "2026-09-16T20:35:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:35",
-   "src": "Media Indonesia",
-   "t": "Komitmen Kapolri Berantas Impor Tekstil Ilegal Diapresiasi",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/934194/komitmen-kapolri-berantas-impor-tekstil-ilegal-diapresiasi",
-   "t_ko": "경찰청장의 불법 섬유 수입 근절 의지 호평",
-   "t_id": "Komitmen Kapolri Berantas Impor Tekstil Ilegal Diapresiasi"
-  },
-  {
-   "ts": "2026-09-16T20:33:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:33",
-   "src": "Media Indonesia",
-   "t": "Serikat Buruh Usulkan Kenaikan Upah Minimum 2027 di Kisaran 7,5% - 9,5%",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/934188/serikat-buruh-usulkan-kenaikan-upah-minimum-2027-di-kisaran-75---95",
-   "t_ko": "노조, 2027년 최저임금 7.5%~9.5% 인상 요구",
-   "t_id": "Serikat Buruh Usulkan Kenaikan Upah Minimum 2027 di Kisaran 7,5% - 9,5%"
   }
  ],
  "kisi_news": [
@@ -17703,9 +17711,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "12.93",
-   "d": -1.19,
-   "ytd": 11.31,
+   "v": "12.95",
+   "d": -1.05,
+   "ytd": 11.47,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17715,9 +17723,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.967%",
-   "d": -0.58,
-   "ytd": 19.31,
+   "v": "4.971%",
+   "d": -0.5,
+   "ytd": 19.41,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17738,9 +17746,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.69",
-   "d": 0.03,
-   "ytd": 1.43,
+   "v": "99.66",
+   "d": 0.0,
+   "ytd": 1.41,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17750,9 +17758,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.35",
-   "d": -1.36,
-   "ytd": 79.99,
+   "v": "103.24",
+   "d": -1.47,
+   "ytd": 79.8,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17762,9 +17770,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,378.2",
-   "d": 0.25,
-   "ytd": 1.22,
+   "v": "4,382.7",
+   "d": 0.35,
+   "ytd": 1.32,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17786,9 +17794,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,180",
-   "d": 1.77,
-   "ytd": -3.01,
+   "v": "16,196",
+   "d": 1.87,
+   "ytd": -2.91,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -23588,9 +23596,9 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-16 21:33",
-  "pc_age_min": 9,
-  "news_ai_cache": 45,
+  "idx_from_pc": "2026-09-16 21:47",
+  "pc_age_min": 4,
+  "news_ai_cache": 44,
   "news_ai_hit": 33,
   "on_runner": true,
   "bi": null,
@@ -25349,7 +25357,7 @@
    "url": "https://www.idnfinancials.com/news/68946/jci-weakens-for-six-days-odds-of-fed-rate-hike-reach-92",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG-12022026.jpg",
    "score": 416.75,
-   "srcs": 6,
+   "srcs": 4,
    "t_ko": "IHSG 6거래일 연속 하락 — 연준 금리 인상 확률 92% 반영",
    "t_id": "IHSG Melemah 6 Hari Beruntun, Peluang Suku Bunga The Fed Naik Capai 92%"
   },
@@ -42823,6 +42831,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 21:29"
+  "announcements": "2026-09-16 21:42"
  }
 }
