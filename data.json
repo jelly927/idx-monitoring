@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 03:41",
+ "updated": "2026-09-17 03:55",
  "delay_min": 15,
- "fx_basis": "12.83 IDR/KRW · USD/IDR 17,675 · USD/KRW 1,377 · 01:15 Yahoo",
- "idr_per_krw": 12.8341,
+ "fx_basis": "12.83 IDR/KRW · USD/IDR 17,675 · USD/KRW 1,378 · 01:15 Yahoo",
+ "idr_per_krw": 12.8301,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -116,15 +116,15 @@
   "prev": 6486.25,
   "ytd": -25.56,
   "m1": -0.2,
-  "value_idr": 10881937799233.346,
+  "value_idr": 10881650905933.346,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-17 03:36",
+  "rank_src": "Yahoo 15분 지연 · 826종목 · 종가 · 외국인·공시 PC 09-17 03:50",
   "rank_asof": null,
   "rank_date": "2026-09-16",
-  "adv": 213,
+  "adv": 212,
   "dec": 456,
-  "unch": 159,
+  "unch": 158,
   "foreign_net_idr": -588236609776.6709,
   "foreign_buy": 3175175425708.6626,
   "foreign_sell": 3763412035485.3335,
@@ -9130,22 +9130,6 @@
    "live": 0
   },
   {
-   "t": "AISA",
-   "n": "FKS Food Sejahtera",
-   "px": 116.0,
-   "prev": 115.0,
-   "pct": 0.87,
-   "val": 282423300.0,
-   "vol": 2441700.0,
-   "sh": 9311800000,
-   "mcap": 1080168800000.0,
-   "hi": 117.0,
-   "lo": 114.0,
-   "ratio": 0.4,
-   "fnet": -23515163.951345373,
-   "live": 0
-  },
-  {
    "t": "PPRO",
    "n": "PP Properti",
    "px": 15.0,
@@ -13738,22 +13722,6 @@
    "live": 0
   },
   {
-   "t": "BABP",
-   "n": "Bank MNC Internasional",
-   "px": 50.0,
-   "prev": 50.0,
-   "pct": 0.0,
-   "val": 4470000.0,
-   "vol": 89400.0,
-   "sh": 44014333126,
-   "mcap": 2200716656300.0,
-   "hi": 50.0,
-   "lo": 50.0,
-   "ratio": 0.2,
-   "fnet": 0.0,
-   "live": 0
-  },
-  {
    "t": "KINO",
    "n": "Kino Indonesia",
    "px": 1405.0,
@@ -14352,11 +14320,11 @@
   {
    "name": "금융",
    "name_id": "Keuangan",
-   "n": 97,
+   "n": 96,
    "adv": 24,
    "dec": 50,
-   "val": 1868170302366.6672,
-   "mcap": 2907834509103532.0,
+   "val": 1868165832366.6672,
+   "mcap": 2905633792447232.0,
    "top": [
     {
      "t": "BBCA",
@@ -14449,11 +14417,11 @@
   {
    "name": "필수소비재",
    "name_id": "Konsumen Primer",
-   "n": 122,
-   "adv": 40,
+   "n": 121,
+   "adv": 39,
    "dec": 56,
-   "val": 884230468666.6666,
-   "mcap": 1074724679562458.0,
+   "val": 883948045366.6666,
+   "mcap": 1073644510762458.0,
    "top": [
     {
      "t": "ICBP",
@@ -14496,7 +14464,7 @@
      "pct": -1.54
     }
    ],
-   "fnet": -21240398782,
+   "fnet": -21216883618,
    "pct": 0.08,
    "fbuy_top": [
     {
@@ -16923,6 +16891,82 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-17T03:53:00+07:00",
+   "date": "2026-09-17",
+   "time": "03:53",
+   "src": "MarketWatch",
+   "t": "Intel’s stock rises as investors hope memory chips can mark the next step in its turnaround",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/intels-stock-rises-as-investors-hope-memory-chips-can-mark-the-next-step-in-its-turnaround-a276608f?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-00632956",
+   "t_ko": "메모리반도체가 반등 계기 될 것이란 기대감에 Intel 주가 상승",
+   "t_id": "Saham Intel Naik di Tengah Harapan Chip Memori Jadi Langkah Awal Pemulihan"
+  },
+  {
+   "ts": "2026-09-17T03:52:00+07:00",
+   "date": "2026-09-17",
+   "time": "03:52",
+   "src": "MarketWatch",
+   "t": "Why optical stocks Lumentum and Coherent were the day’s biggest S&P 500 gainers",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/why-optical-stocks-lumentum-and-coherent-were-the-days-biggest-gainers-051af440?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-759206",
+   "t_ko": "Lumentum·Coherent, S&P 500 광학주 상승 상위 기록",
+   "t_id": "Alasan Saham Optik Lumentum dan Coherent Jadi Pemenang Terbesar S&P 500 Hari Ini"
+  },
+  {
+   "ts": "2026-09-17T03:51:44+07:00",
+   "date": "2026-09-17",
+   "time": "03:51",
+   "src": "CNBC",
+   "t": "Trump demands 1% or lower interest rate after first Fed hike since 2023",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/trump-fed-interest-rate-warsh.html",
+   "g": 1,
+   "t_ko": "Trump, 2023년 이후 첫 금리 인상 후 1% 이하 금리 요구",
+   "t_id": "Trump Tuntut Suku Bunga 1% atau Lebih Rendah Usai Kenaikan Pertama Fed Sejak 2023"
+  },
+  {
+   "ts": "2026-09-17T03:50:54+07:00",
+   "date": "2026-09-17",
+   "time": "03:50",
+   "src": "CNBC",
+   "t": "Analysis: How Trump could reignite the Fed independence fight after Warsh's rate hike",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/fed-interest-rates-kevin-warsh-trump.html",
+   "g": 1,
+   "t_ko": "Warsh 금리 인상 이후 Trump의 연준 독립성 공방 재점화 분석",
+   "t_id": "Analisis: Cara Trump Kobarkan Kembali Perang Independensi The Fed Usai Kenaikan Suku Bunga Warsh"
+  },
+  {
+   "ts": "2026-09-17T03:46:00+07:00",
+   "date": "2026-09-17",
+   "time": "03:46",
+   "src": "WSJ",
+   "t": "U.S. Stocks Fall After Fed Rate Increase",
+   "tags": [],
+   "url": "https://www.wsj.com/finance/stocks/u-s-stocks-fall-after-fed-rate-increase-27d5809c?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-45756558",
+   "t_ko": "미국 기준금리 인상에 증시 하락",
+   "t_id": "Saham AS Turun Usai Kenaikan Suku Bunga The Fed"
+  },
+  {
+   "ts": "2026-09-17T03:38:00+07:00",
+   "date": "2026-09-17",
+   "time": "03:38",
+   "src": "MarketWatch",
+   "t": "Here’s a sneaky way to play the Fed’s rate increase",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/heres-a-sneaky-way-to-play-the-feds-rate-increase-6deb072f?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-42957235",
+   "t_ko": "연준 금리 인상의 은밀한 수혜주 접근법",
+   "t_id": "Cara Terselubung Manfaatkan Kenaikan Suku Bunga The Fed"
+  },
+  {
    "ts": "2026-09-17T03:33:08+07:00",
    "date": "2026-09-17",
    "time": "03:33",
@@ -16946,6 +16990,18 @@
    "g": 1,
    "t_ko": "Beatty 하원의원, 트럼프의 Kennedy Center 폐쇄는 불법이라 주장",
    "t_id": "Penutupan Kennedy Center oleh Trump 'Melanggar Hukum', Ungkap Rep. Beatty ke Hakim dalam Permintaan Sidang Darurat"
+  },
+  {
+   "ts": "2026-09-17T03:26:28+07:00",
+   "date": "2026-09-17",
+   "time": "03:26",
+   "src": "Bloomberg",
+   "t": "Bloomberg Deals 9/16/2026",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-16/bloomberg-deals-9-16-2026-video",
+   "g": 1,
+   "t_ko": "Bloomberg 데일리 딜즈",
+   "t_id": "Bloomberg Deals 16/9/2026"
   },
   {
    "ts": "2026-09-17T03:25:37+07:00",
@@ -16972,19 +17028,6 @@
    "t_id": "Pasar Sesuaikan Ekspektasi The Fed, Ungkap Rosenberg dari BlackRock"
   },
   {
-   "ts": "2026-09-17T03:24:00+07:00",
-   "date": "2026-09-17",
-   "time": "03:24",
-   "src": "WSJ",
-   "t": "U.S. Stocks Fall After Fed Rate Increase",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/stocks/u-s-stocks-fall-after-fed-rate-increase-27d5809c?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-45756558",
-   "t_ko": "미국 기준금리 인상에 증시 하락",
-   "t_id": "Saham AS Turun Usai Kenaikan Suku Bunga The Fed"
-  },
-  {
    "ts": "2026-09-17T03:21:00+07:00",
    "date": "2026-09-17",
    "time": "03:21",
@@ -16996,6 +17039,18 @@
    "img": "https://images.wsj.net/im-57415476",
    "t_ko": "Fed, 2023년 이후 첫 금리인상 단행",
    "t_id": "The Fed Umumkan Kenaikan Suku Bunga Pertama Sejak 2023"
+  },
+  {
+   "ts": "2026-09-17T03:17:37+07:00",
+   "date": "2026-09-17",
+   "time": "03:17",
+   "src": "Reuters",
+   "t": "Fed hikes rates in search of 'timelier' drop in inflation, sees more tightening ahead",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd0VZMTZPMGRVWVVTY0lVRERxMHhQdlNnb2NBOHROMDJETXBLVmJFTW12SmFybUloWGRfYm1ueDhEZHJuOWNPQXh3RHpDVllhRVpSUVFVeDJmMGFNNTM2RTRqMkVFaXdwTmM1eG1UeVhqLXNuYW5LMjZGYUFCYUV0djFqUTUxRkF2Vk9NeTh5VU44bENZYi1kaTBnS1NuVngtX1dIeEVtaw?oc=5",
+   "g": 1,
+   "t_ko": "연준, 물가 조기 안정 위해 금리 인하 단행하며 추가 완화 시사",
+   "t_id": "The Fed Kerek Suku Bunga demi Turunkan Inflasi Lebih Cepat, Isyaratkan Pengetatan Lanjutan"
   },
   {
    "ts": "2026-09-17T03:15:00+07:00",
@@ -17056,91 +17111,6 @@
    "g": 1,
    "t_ko": "트럼프 후원자 Harold Hamm의 Continental Resources, 베네수엘라 유전 개발 추진",
    "t_id": "Continental Resources Milik Donatur Trump Harold Hamm Akan Kembangkan Wilayah Minyak di Venezuela"
-  },
-  {
-   "ts": "2026-09-17T03:06:34+07:00",
-   "date": "2026-09-17",
-   "time": "03:06",
-   "src": "Bloomberg",
-   "t": "Canadian M&A Sentiment Amid Trade War",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-16/canadian-m-a-sentiment-amid-trade-war-video-mu4j78hl",
-   "g": 1,
-   "t_ko": "무역전쟁 속 캐나다 M&A 투자심리 동향",
-   "t_id": "Sentimen M&A Kanada di Tengah Perang Dagang"
-  },
-  {
-   "ts": "2026-09-17T03:00:36+07:00",
-   "date": "2026-09-17",
-   "time": "03:00",
-   "src": "CNBC",
-   "t": "J.B. Hunt stock plunges 13% after company warns third-quarter earnings will fall",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/jb-hunt-stock-jbht-earnings.html",
-   "g": 1,
-   "t_ko": "J.B. Hunt, 3분기 실적 부진 경고에 주가 13% 폭락",
-   "t_id": "Saham J.B. Hunt Anjlok 13% Usai Perusahaan Peringatkan Penurunan Laporan Keuangan Kuartal III"
-  },
-  {
-   "ts": "2026-09-17T02:45:28+07:00",
-   "date": "2026-09-17",
-   "time": "02:45",
-   "src": "Bloomberg",
-   "t": "GFL CEO Dovigi Says Company Exploring Potential Take-Private",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-16/gfl-ceo-dovigi-says-company-exploring-potential-take-private",
-   "g": 1,
-   "t_ko": "GFL CEO Dovigi, 비상장사 전환 검토 시사",
-   "t_id": "CEO GFL Dovigi Sebut Perusahaan Jajaki Potensi Go Private"
-  },
-  {
-   "ts": "2026-09-17T02:38:41+07:00",
-   "date": "2026-09-17",
-   "time": "02:38",
-   "src": "CNBC",
-   "t": "Jeff Gundlach says the Fed should have hiked rates by more to fight rising inflation",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/gundlach-bonds-fed-rate-hike.html",
-   "g": 1,
-   "t_ko": "Jeff Gundlach, 인플레이션 대응 위해 연준의 더 큰 폭 금리 인상 필요 주장",
-   "t_id": "Jeff Gundlach Sebut The Fed Harus Naikkan Suku Bunga Lebih Tinggi untuk Redam Inflasi"
-  },
-  {
-   "ts": "2026-09-17T02:29:18+07:00",
-   "date": "2026-09-17",
-   "time": "02:29",
-   "src": "CNBC",
-   "t": "Hyperscaler debt signals warning sign, Apollo cautions",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/hyperscaler-debt-signals-warning-sign-apollo-cautions.html",
-   "g": 1,
-   "t_ko": "대형 클라우드 부채 경고음 — Apollo 경고",
-   "t_id": "Utang Hyperscaler Beri Sinyal Peringatan, Apollo Ingatkan"
-  },
-  {
-   "ts": "2026-09-17T02:24:40+07:00",
-   "date": "2026-09-17",
-   "time": "02:24",
-   "src": "Bloomberg",
-   "t": "Harold Hamm’s Continental Set to Announce Venezuela Oil Deal",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-16/harold-hamm-s-continental-to-announce-venezuela-oil-deal-video",
-   "g": 1,
-   "t_ko": "Harold Hamm의 Continental, 베네수엘라 원유 계약 발표 임박",
-   "t_id": "Continental Milik Harold Hamm Bersiap Umumkan Kesepakatan Minyak Venezuela"
-  },
-  {
-   "ts": "2026-09-17T02:18:00+07:00",
-   "date": "2026-09-17",
-   "time": "02:18",
-   "src": "WSJ",
-   "t": "Congressional Democrats Take Aim at Private Equity’s Role in Medicine",
-   "tags": [],
-   "url": "https://www.wsj.com/pro/private-equity/congressional-democrats-take-aim-at-private-equitys-role-in-medicine-444ee2ed?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-41753515",
-   "t_ko": "미 민주당, 의료 분야 사모펀드 진출에 제동",
-   "t_id": "Demokrat Kongres Soroti Peran Ekuitas Swasta di Sektor Kesehatan"
   },
   {
    "ts": "2026-09-17T02:12:37+07:00",
@@ -17600,9 +17570,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.06",
-   "d": -2.6,
-   "ytd": 77.74,
+   "v": "102.15",
+   "d": -2.51,
+   "ytd": 77.9,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17612,9 +17582,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,298.8",
-   "d": -1.57,
-   "ytd": -0.62,
+   "v": "4,301.0",
+   "d": -1.52,
+   "ytd": -0.57,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -23503,7 +23473,7 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-17 03:36",
+  "idx_from_pc": "2026-09-17 03:50",
   "pc_age_min": 5,
   "news_ai_cache": 43,
   "news_ai_hit": 30,
@@ -25250,7 +25220,7 @@
    "url": "https://www.idnfinancials.com/news/68946/jci-weakens-for-six-days-odds-of-fed-rate-hike-reach-92",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG-12022026.jpg",
    "score": 416.75,
-   "srcs": 7,
+   "srcs": 8,
    "t_ko": "IHSG 6거래일 연속 하락 — 연준 금리 인상 확률 92% 반영",
    "t_id": "IHSG Melemah 6 Hari Beruntun, Peluang Suku Bunga The Fed Naik Capai 92%"
   },
@@ -42772,6 +42742,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-17 03:26"
+  "announcements": "2026-09-17 03:41"
  }
 }
