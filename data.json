@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 00:43",
+ "updated": "2026-09-17 00:57",
  "delay_min": 15,
- "fx_basis": "12.94 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,368 · 00:14 Yahoo",
- "idr_per_krw": 12.9438,
+ "fx_basis": "12.95 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,367 · 00:14 Yahoo",
+ "idr_per_krw": 12.9495,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -119,7 +119,7 @@
   "value_idr": 10727972431400.006,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 830종목 · 종가 · 외국인·공시 PC 09-17 00:39",
+  "rank_src": "Yahoo 15분 지연 · 830종목 · 종가 · 외국인·공시 PC 09-17 00:53",
   "rank_asof": null,
   "rank_date": "2026-09-15",
   "adv": 330,
@@ -15502,10 +15502,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7606.37,
+   "px": 7608.54,
    "prev": 7585.51,
-   "pct": 0.28,
-   "asof": "00:40",
+   "pct": 0.3,
+   "asof": "00:55",
    "live": true,
    "spark": [
     7603.81,
@@ -15558,17 +15558,20 @@
     7610.38,
     7609.19,
     7607.48,
-    7606.37
+    7604.15,
+    7606.29,
+    7608.32,
+    7608.54
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26131.26,
+   "px": 26135.55,
    "prev": 25981.57,
-   "pct": 0.58,
-   "asof": "00:40",
+   "pct": 0.59,
+   "asof": "00:55",
    "live": true,
    "spark": [
     26099.29,
@@ -15621,17 +15624,20 @@
     26156.38,
     26152.58,
     26140.0,
-    26131.26
+    26121.34,
+    26129.04,
+    26132.68,
+    26135.55
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52120.5,
+   "px": 52115.93,
    "prev": 52092.45,
    "pct": 0.05,
-   "asof": "00:40",
+   "asof": "00:55",
    "live": true,
    "spark": [
     52038.56,
@@ -15684,7 +15690,10 @@
     52119.01,
     52120.03,
     52125.68,
-    52120.5
+    52097.85,
+    52094.39,
+    52124.94,
+    52115.93
    ]
   },
   {
@@ -16874,9 +16883,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-17T00:35:25+07:00",
+   "ts": "2026-09-17T00:50:56+07:00",
    "date": "2026-09-17",
-   "time": "00:35",
+   "time": "00:50",
    "src": "CNBC",
    "t": "Continental Resources to develop massive oil patch in Venezuela",
    "tags": [],
@@ -16884,6 +16893,31 @@
    "g": 1,
    "t_ko": "Continental Resources, 베네수엘라 대규모 유전 개발 추진",
    "t_id": "Continental Resources Garap Ladang Minyak Raksasa di Venezuela"
+  },
+  {
+   "ts": "2026-09-17T00:50:00+07:00",
+   "date": "2026-09-17",
+   "time": "00:50",
+   "src": "CNBC",
+   "t": "Pentagon CTO says U.S. government shouldn't take stakes in tech giants, questions adding AI rules",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/emil-michael-ai-regulation-trump.html",
+   "g": 1,
+   "t_ko": "미 국방부 CTO, 빅테크 지분 인수 반대 및 AI 규제 신중론 제기",
+   "t_id": "CTO Pentagon Sebut Pemerintah AS Tak Perlu Ambil Saham Raksasa Teknologi, Pertanyakan Aturan AI"
+  },
+  {
+   "ts": "2026-09-17T00:39:16+07:00",
+   "date": "2026-09-17",
+   "time": "00:39",
+   "src": "FT",
+   "t": "Trump oil ally Harold Hamm to invest in Venezuela",
+   "tags": [],
+   "url": "https://www.ft.com/content/7be92efe-13d6-4d02-9f77-0e8229b3b8fa?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fe659a9f2-f467-47e3-8007-88f96f7ffa69.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "트럼프의 석유계 측근 Harold Hamm, 베네수엘라 투자 추진",
+   "t_id": "Sekutu Minyak Trump, Harold Hamm, Berencana Investasi di Venezuela"
   },
   {
    "ts": "2026-09-17T00:33:55+07:00",
@@ -17060,30 +17094,6 @@
    "g": 1,
    "t_ko": "대형 클라우드 부채 경고음 — Apollo 경고",
    "t_id": "Utang Hyperscaler Beri Sinyal Peringatan, Apollo Ingatkan"
-  },
-  {
-   "ts": "2026-09-16T23:48:13+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "CNBC",
-   "t": "J.B. Hunt stock plunges 10% after company warns third-quarter earnings will fall",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/jb-hunt-stock-jbht-earnings.html",
-   "g": 1,
-   "t_ko": "J.B. Hunt, 3분기 실적 부진 경고에 주가 10% 급락",
-   "t_id": "Saham J.B. Hunt Anjlok 10% Usai Peringatkan Penurunan Laba Kuartal III"
-  },
-  {
-   "ts": "2026-09-16T23:48:00+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "Media Indonesia",
-   "t": "Jose Rizal Bawa Nama Indonesia ke Panggung Dunia",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/934282/jose-rizal-bawa-nama-indonesia-ke-panggung-dunia-",
-   "g": 1,
-   "t_ko": "Jose Rizal, 인도네시아의 위상을 세계 무대로 제고",
-   "t_id": "Jose Rizal Bawa Nama Indonesia ke Panggung Dunia"
   },
   {
    "ts": "2026-09-16T23:30:13+07:00",
@@ -17511,8 +17521,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.94",
-   "d": -1.12,
-   "ytd": 11.39,
+   "d": -1.11,
+   "ytd": 11.4,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17522,9 +17532,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.955%",
-   "d": -0.82,
-   "ytd": 19.02,
+   "v": "4.951%",
+   "d": -0.9,
+   "ytd": 18.93,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17557,9 +17567,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.45",
-   "d": -2.22,
-   "ytd": 78.42,
+   "v": "102.51",
+   "d": -2.17,
+   "ytd": 78.53,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17569,9 +17579,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,388.0",
-   "d": 0.48,
-   "ytd": 1.44,
+   "v": "4,385.7",
+   "d": 0.42,
+   "ytd": 1.39,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -23639,7 +23649,7 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-17 00:39",
+  "idx_from_pc": "2026-09-17 00:53",
   "pc_age_min": 4,
   "news_ai_cache": 42,
   "news_ai_hit": 30,
@@ -42908,6 +42918,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-17 00:30"
+  "announcements": "2026-09-17 00:43"
  }
 }
