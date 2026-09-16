@@ -522,6 +522,10 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
       <h2><span data-t="gidx">주요 지수</span> <span class="more" data-t="gidxSub">미국 · 아시아</span></h2>
       <div class="gidx" id="gidx"></div>
     </div>
+    <div class="card" id="curve-card" hidden>
+      <h2><span data-t="cvT">국채 수익률 곡선</span> <span class="more" id="cv-sub"></span></h2>
+      <div id="cv-body"></div>
+    </div>
     <div class="card" id="macro-card">
       <h2><span data-t="macro">시장 지표</span> <span class="more" data-t="macroSub">환율 · 금리 · 원자재</span></h2>
       <table id="macro"></table>
@@ -652,16 +656,16 @@ function curveSpark(){
   const W=100,H=34,pt=3,pb=3;
   const xs=rows.map(r=>Math.log(Math.max(0.1,r[0])));
   const ys=rows.map(r=>r[1]).concat(rows.map(r=>r[2]).filter(v=>v!=null));
-  const x0=Math.min(...xs),x1=Math.max(...xs),lo=Math.min(...ys),hi=Math.max(...ys),pad=(hi-lo)*0.2||0.04;
+  const x0=Math.min(...xs),x1=Math.max(...xs),lo=Math.min(...ys),hi=Math.max(...ys),pad=(hi-lo)*0.08||0.03;
   const mn=lo-pad,mx=hi+pad;
   const X=v=>(Math.log(Math.max(0.1,v))-x0)/((x1-x0)||1)*W;
   const Y=v=>pt+(mx-v)/((mx-mn)||1)*(H-pt-pb);
   const ln=k=>rows.filter(r=>r[k]!=null).map(r=>`${X(r[0]).toFixed(1)},${Y(r[k]).toFixed(1)}`).join(' ');
   const m={};rows.forEach(r=>m[r[0]]=r);
   const tip=[1,5,10,20,30].filter(t=>m[t]).map(t=>`${t}${T('cvY')} ${m[t][1].toFixed(3)}%`).join('  ·  ');
+  const dot=[1,10].filter(t=>m[t]).map(t=>`<circle cx="${X(t).toFixed(1)}" cy="${Y(m[t][1]).toFixed(1)}" r="1.6" fill="var(--brand)"/>`).join('');
   return`<svg class="cvspk" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><title>${tip}</title>
-    <polyline fill="none" stroke="var(--ink3)" stroke-width="1.1" stroke-dasharray="3 2.5" opacity=".7" points="${ln(2)}"/>
-    <polyline fill="none" stroke="var(--brand)" stroke-width="1.8" points="${ln(1)}"/></svg>`;}
+    <polyline fill="none" stroke="var(--brand)" stroke-width="1.8" points="${ln(1)}"/>${dot}</svg>`;}
 function ixCard(x){const yld=x.code==='SUN10Y';const dec=x.code==='USDIDR'?0:yld?3:2,unit=x.code==='USDIDR'?'':yld?'%':'pt',chg=x.px-x.prev;
   return`<div class="ix" id="ix-${x.code}"><div class="lbl"><span>${x.label} · ${ixName()[x.code]||x.name}${x.code==='COMPOSITE'&&ixAI()?'<span class="aibadge">AI</span>':''}</span><span class="live ${x.live?'':'off'}">${x.live?(x.src==='idx'?'IDX '+T('now'):T('now')+' · 15'+T('delay'))+(asofTs(x.asof)?' · '+asofTs(x.asof):''):(asofTs(x.asof)||T('close'))}</span></div>
   <div class="px num" data-px="${x.px}">${fmt(x.px,dec)}${yld?'%':''}</div>
@@ -839,6 +843,7 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
     :(up.length?`<div class="ev-day">${T('upcoming')}</div>`+up.map(e=>ev(Object.assign({},e,{time:(e.date.slice(5).replace('-','/'))+' '+(e.time&&e.time!=='—'?e.time:'')}))).join('')
               :`<div class="empty">${T('noEv')}</div>`));
   renderAnn();renderDaycal();if(FVIEW==='sector')renderFFlow();renderWL();setTimeout(annFit,50);
+  renderCurve();
   renderNews();if(changed('npv',[(d.news||[]).slice(0,30),LANG]))$('news-preview').innerHTML=(d.news||[]).slice(0,30).map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`;
   requestAnimationFrame(fitLists);
   {const td=today();if(!calDate||calDate===calTodayISO)calDate=td;calTodayISO=td;}renderCal();
@@ -1287,7 +1292,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDr();});
 const UI_VER='0916-c';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
 document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('on',b.dataset.lang===LANG));applyStatic();
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
-const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['knews-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
+const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','curve-card','macro-card'],['knews-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
 const LAY_CARDS=LAY_DEF.cols.flat();
 const RANK_ALL=[['value','value'],['gainers','gainers'],['losers','losers'],['mcap','mcapR'],['catalyst','catalyst'],['turnover','surge'],['volume','volR'],['fnet_top','fTop'],['fnet_bot','fBot']];
 let LAY=null,layEdit=false,layDrag=null;
