@@ -282,7 +282,13 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
 .trow b{flex:0 0 auto;font-weight:700;font-variant-numeric:tabular-nums}
 .tdisc{margin-top:8px;font-size:10.5px;line-height:1.5;color:var(--ink3)}
 /* 국채 수익률 곡선 — 오늘(실선) vs 어제(점선). PHEI(IBPA) 일일 고시 */
-.ix .cvspk{position:absolute;left:0;right:0;bottom:0;height:34px;width:100%;opacity:.95;pointer-events:none}
+.ix .cvspk{position:static;width:100%;height:52px;display:block;margin-top:8px;opacity:.95}
+.ix .ixcv{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:8px}
+.ix .ixcv span{background:var(--chip);border-radius:7px;padding:4px 2px;text-align:center;line-height:1.25}
+.ix .ixcv i{display:block;font-style:normal;font-size:9.5px;color:var(--ink3)}
+.ix .ixcv b{display:block;font-size:12px;font-weight:800;font-variant-numeric:tabular-nums}
+.ix .ixcv em{display:block;font-style:normal;font-size:9.5px;font-variant-numeric:tabular-nums}
+@media(max-width:520px){.ix .ixcv{gap:4px}.ix .ixcv b{font-size:11px}}
 #cv-body .cvchart{position:relative;height:132px;margin:2px 0 8px}
 #cv-body svg{width:100%;height:100%;display:block;overflow:visible}
 #cv-body .cvx{display:flex;justify-content:space-between;font-size:10px;color:var(--ink3);margin-top:-2px}
@@ -522,10 +528,6 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
       <h2><span data-t="gidx">주요 지수</span> <span class="more" data-t="gidxSub">미국 · 아시아</span></h2>
       <div class="gidx" id="gidx"></div>
     </div>
-    <div class="card" id="curve-card" hidden>
-      <h2><span data-t="cvT">국채 수익률 곡선</span> <span class="more" id="cv-sub"></span></h2>
-      <div id="cv-body"></div>
-    </div>
     <div class="card" id="macro-card">
       <h2><span data-t="macro">시장 지표</span> <span class="more" data-t="macroSub">환율 · 금리 · 원자재</span></h2>
       <table id="macro"></table>
@@ -667,10 +669,18 @@ function curveSpark(){
   return`<svg class="cvspk" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><title>${tip}</title>
     <polyline fill="none" stroke="var(--brand)" stroke-width="1.8" points="${ln(1)}"/>${dot}</svg>`;}
 function ixCard(x){const yld=x.code==='SUN10Y';const dec=x.code==='USDIDR'?0:yld?3:2,unit=x.code==='USDIDR'?'':yld?'%':'pt',chg=x.px-x.prev;
-  return`<div class="ix" id="ix-${x.code}"><div class="lbl"><span>${x.label} · ${ixName()[x.code]||x.name}${x.code==='COMPOSITE'&&ixAI()?'<span class="aibadge">AI</span>':''}</span><span class="live ${x.live?'':'off'}">${x.live?(x.src==='idx'?'IDX '+T('now'):T('now')+' · 15'+T('delay'))+(asofTs(x.asof)?' · '+asofTs(x.asof):''):(asofTs(x.asof)||T('close'))}</span></div>
+  return`<div class="ix" id="ix-${x.code}"><div class="lbl"><span>${x.label} · ${(x.code==='SUN10Y'&&cvRows().length>=4)?T('cvT'):(ixName()[x.code]||x.name)}${x.code==='COMPOSITE'&&ixAI()?'<span class="aibadge">AI</span>':''}</span><span class="live ${x.live?'':'off'}">${x.live?(x.src==='idx'?'IDX '+T('now'):T('now')+' · 15'+T('delay'))+(asofTs(x.asof)?' · '+asofTs(x.asof):''):(asofTs(x.asof)||T('close'))}</span></div>
   <div class="px num" data-px="${x.px}">${fmt(x.px,dec)}${yld?'%':''}</div>
   <div class="chg num">${yld?sg(x.pct,1,'bp',x.inv):sg(x.pct,2,'%',x.inv)} ${yld?'':`<span class="num ${(x.inv?-chg:chg)>0?'up':(x.inv?-chg:chg)<0?'dn':'flat'}">${chg>0?'+':''}${fmt(chg,dec)}${unit}</span>`}</div>
-  <div class="prevc num">${T('prevClose')} ${fmt(x.prev,dec)}${unit}</div>${yld&&curveSpark()?curveSpark():spark(x.spark,x.prev,x.inv)}${yld&&curveSpark()?`<span class="spl">${T('cvSpl')}</span>`:(x.span==='1W'?'<span class="spl">1W</span>':'')}${ixPop(x)}</div>`;}
+  ${yld&&cvRows().length>=4?cvIn():`<div class="prevc num">${T('prevClose')} ${fmt(x.prev,dec)}${unit}</div>${spark(x.spark,x.prev,x.inv)}${x.span==='1W'?'<span class="spl">1W</span>':''}`}${ixPop(x)}</div>`;}
+/* 상단 4번째 칸 — 국채는 장중 시계열이 없으므로 숫자 아래에 수익률 곡선과 만기별 값을 넣는다 */
+const cvRows=()=>((DATA&&DATA.curve&&DATA.curve.rows)||[]);
+function cvIn(){
+  const rows=cvRows(),m={};rows.forEach(r=>m[r[0]]=r);
+  const bp=r=>(r&&r[2]!=null)?Math.round((r[1]-r[2])*1000)/10:null;
+  const cell=t=>{const r=m[t];if(!r)return'';const v=bp(r);
+    return `<span><i>${t}${T('cvY')}</i><b>${r[1].toFixed(3)}</b><em class="${v>0?'dn':v<0?'up':''}">${v==null?'':(v>0?'+':'')+v.toFixed(1)}</em></span>`;};
+  return `${curveSpark()}<div class="ixcv">${[1,5,10,20].map(cell).join('')}</div>`;}
 // 지수 카드에 마우스를 올리면 '왜 움직였나' 한 줄 요약 (fetch_data.py 의 ai_index 결과, 없으면 아무것도 안 띄운다)
 function ixAI(){const a=DATA&&DATA.ai&&DATA.ai.index;if(!a)return'';return (LANG==='id'?(a.id||a.ko):a.ko)||'';}
 function ixPop(x){if(x.code!=='COMPOSITE')return'';const t=ixAI();if(!t)return'';return`<div class="ixpop"><b>${T('sumT')}</b>${t}</div>`;}
@@ -843,7 +853,6 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
     :(up.length?`<div class="ev-day">${T('upcoming')}</div>`+up.map(e=>ev(Object.assign({},e,{time:(e.date.slice(5).replace('-','/'))+' '+(e.time&&e.time!=='—'?e.time:'')}))).join('')
               :`<div class="empty">${T('noEv')}</div>`));
   renderAnn();renderDaycal();if(FVIEW==='sector')renderFFlow();renderWL();setTimeout(annFit,50);
-  renderCurve();
   renderNews();if(changed('npv',[(d.news||[]).slice(0,30),LANG]))$('news-preview').innerHTML=(d.news||[]).slice(0,30).map(newsItem).join('')||`<div class="empty">${T('noNews')}</div>`;
   requestAnimationFrame(fitLists);
   {const td=today();if(!calDate||calDate===calTodayISO)calDate=td;calTodayISO=td;}renderCal();
@@ -1292,7 +1301,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDr();});
 const UI_VER='0916-c';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
 document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('on',b.dataset.lang===LANG));applyStatic();
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
-const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','curve-card','macro-card'],['knews-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
+const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['knews-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
 const LAY_CARDS=LAY_DEF.cols.flat();
 const RANK_ALL=[['value','value'],['gainers','gainers'],['losers','losers'],['mcap','mcapR'],['catalyst','catalyst'],['turnover','surge'],['volume','volR'],['fnet_top','fTop'],['fnet_bot','fBot']];
 let LAY=null,layEdit=false,layDrag=null;
