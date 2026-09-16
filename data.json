@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 20:43",
+ "updated": "2026-09-16 20:55",
  "delay_min": 15,
- "fx_basis": "12.94 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,368 · 19:15 Yahoo",
- "idr_per_krw": 12.9392,
+ "fx_basis": "12.94 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,369 · 19:15 Yahoo",
+ "idr_per_krw": 12.9371,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -334,7 +334,7 @@
   "value_idr": 10929839903866.678,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 20:36",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 20:50",
   "rank_asof": null,
   "rank_date": "2026-09-16",
   "adv": 215,
@@ -15757,45 +15757,51 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7599.23,
+   "px": 7614.56,
    "prev": 7585.51,
-   "pct": 0.18,
-   "asof": "20:40",
+   "pct": 0.38,
+   "asof": "20:50",
    "live": true,
    "spark": [
     7603.81,
     7598.41,
-    7599.23
+    7598.84,
+    7609.7,
+    7614.56
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26104.75,
+   "px": 26166.25,
    "prev": 25981.57,
-   "pct": 0.47,
-   "asof": "20:40",
+   "pct": 0.71,
+   "asof": "20:50",
    "live": true,
    "spark": [
     26099.29,
     26086.35,
-    26104.75
+    26095.31,
+    26151.31,
+    26166.25
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51948.36,
+   "px": 52048.83,
    "prev": 52092.45,
-   "pct": -0.28,
-   "asof": "20:40",
+   "pct": -0.08,
+   "asof": "20:50",
    "live": true,
    "spark": [
     52038.56,
     51997.42,
-    51948.36
+    51996.17,
+    52024.55,
+    52048.83
    ]
   },
   {
@@ -16120,6 +16126,20 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-16T20:43:01+07:00",
+   "date": "2026-09-16",
+   "time": "20:43",
+   "src": "Liputan6",
+   "t": "Morgan Stanley Genggam 6,97% Saham GOTO",
+   "tags": [
+    "GOTO"
+   ],
+   "url": "https://www.liputan6.com/saham/read/8293268/morgan-stanley-genggam-697-saham-goto",
+   "img": "https://cdn1-production-images-kly.akamaized.net/qBNgXWUc4SHJvyWhS9YiLaXqrPM=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5568754/original/068350400_1777371982-PT_GoTo_Gojek_Tokopedia_Tbk__GOTO_-28_April_2026a.jpeg",
+   "t_id": "Morgan Stanley Genggam 6,97% Saham GOTO",
+   "t_ko": "Morgan Stanley, GOTO 지분 6.97% 보유"
+  },
   {
    "ts": "2026-09-16T20:00:00+07:00",
    "date": "2026-09-16",
@@ -17059,6 +17079,122 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-16T20:51:00+07:00",
+   "date": "2026-09-16",
+   "time": "20:51",
+   "src": "Media Indonesia",
+   "t": "Pergantian Menteri Keuangan, Guru Besar UMY Soroti soal Kepatutan Komunikasi",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/934202/pergantian-menteri-keuangan-guru-besar-umy-soroti-soal-kepatutan-komunikasi",
+   "t_ko": "재무장관 교체에 UMY 교수 소통 적절성 지적",
+   "t_id": "Pergantian Menteri Keuangan, Guru Besar UMY Soroti Soal Kepatutan Komunikasi"
+  },
+  {
+   "ts": "2026-09-16T20:47:00+07:00",
+   "date": "2026-09-16",
+   "time": "20:47",
+   "src": "Media Indonesia",
+   "t": "Hakim AS Blokir Aturan Trump Batasi Masa Tinggal Mahasiswa dan Jurnalis Asing",
+   "tags": [],
+   "url": "https://mediaindonesia.com/internasional/934205/hakim-as-blokir-aturan-trump-batasi-masa-tinggal-mahasiswa-dan-jurnalis-asing",
+   "g": 1,
+   "t_id": "Hakim AS Blokir Aturan Trump Batasi Masa Tinggal Mahasiswa dan Jurnalis Asing",
+   "t_ko": "미국 법원, 외국인 유학생·언론인 체류 기간 제한 트럼프 규칙 차단"
+  },
+  {
+   "ts": "2026-09-16T20:45:00+07:00",
+   "date": "2026-09-16",
+   "time": "20:45",
+   "src": "Katadata",
+   "t": "ESDM Sebut Belum Ada Investasi Pembangkit Angin Masuk RI 4 Tahun Terakhir",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/energi/6aaa9d8f021d5/esdm-sebut-belum-ada-investasi-pembangkit-angin-masuk-ri-4-tahun-terakhir",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2017/12/12/2017_12_12-16_46_10_2fca3f74812d3ac1ee83d49c43ab3bcb_620x413_thumb.jpg",
+   "t_ko": "ESDM, 지난 4년간 인도네시아 풍력발전 투자 부재",
+   "t_id": "ESDM Sebut Belum Ada Investasi Pembangkit Angin Masuk RI 4 Tahun Terakhir"
+  },
+  {
+   "ts": "2026-09-16T20:43:00+07:00",
+   "date": "2026-09-16",
+   "time": "20:43",
+   "src": "Media Indonesia",
+   "t": "Indonesia Disebut akan Dilanda Gelombang Investasi Besar-Besaran",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/934198/indonesia-disebut-akan-dilanda-gelombang-investasi-besar-besaran",
+   "t_id": "Indonesia Disebut akan Dilanda Gelombang Investasi Besar-Besaran",
+   "t_ko": "인도네시아, 대규모 투자 유치 전망"
+  },
+  {
+   "ts": "2026-09-16T20:42:23+07:00",
+   "date": "2026-09-16",
+   "time": "20:42",
+   "src": "CNBC",
+   "t": "Intel, SK Hynix shares jump on report they're discussing U.S. memory chip manufacturing",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/intel-sk-hynix-us-memory-chips.html",
+   "g": 1,
+   "t_ko": "Intel·SK 하이닉스, 미국 메모리 반도체 생산 협력 보도에 급등",
+   "t_id": "Saham Intel dan SK Hynix Melonjak di Tengah Kabar Pembahasan Manufaktur Chip AS",
+   "ai_ko": "· Intel·SK Hynix, 미국 메모리 생산 협의 보도\n· Ohio 공장 일부 임대·합작 설립 등 검토\n· SK Hynix 한국 상장주 1년간 400% 상승",
+   "ai_id": "· Intel dan SK Hynix bahas produksi memori AS\n· Opsi sewa pabrik Ohio atau joint venture\n· Saham SK Hynix naik 400% setahun",
+   "ai_tags": [
+    "반도체",
+    "합작",
+    "HBM"
+   ],
+   "ai_tags_id": [
+    "semikonduktor",
+    "joint venture",
+    "HBM"
+   ]
+  },
+  {
+   "ts": "2026-09-16T20:42:00+07:00",
+   "date": "2026-09-16",
+   "time": "20:42",
+   "src": "Media Indonesia",
+   "t": "Prabowo: Dampak Ekonomi Kopdes Merah Putih Baru Terasa 2027",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/934201/prabowo-dampak-ekonomi-kopdes-merah-putih-baru-terasa-2027",
+   "t_ko": "Prabowo, Kopdes Merah Putih 경제적 효과 2027년 가시화 전망",
+   "t_id": "Prabowo: Dampak Ekonomi Kopdes Merah Putih Baru Terasa 2027"
+  },
+  {
+   "ts": "2026-09-16T20:39:49+07:00",
+   "date": "2026-09-16",
+   "time": "20:39",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today (Sept. 16, 2026): Dow edges higher ahead of Fed decision",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-16-133949098.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/thestreet_881/75ef62828f969b61d995645f07e36084.jpg",
+   "t_ko": "연준 결정 앞두고 다우지수 강보합 마감",
+   "t_id": "Bursa Saham AS Hari Ini (16 Sep 2026): Dow Menguat Tipis Jelang Keputusan The Fed"
+  },
+  {
+   "ts": "2026-09-16T20:39:00+07:00",
+   "date": "2026-09-16",
+   "time": "20:39",
+   "src": "Media Indonesia",
+   "t": "Prabowo Ogah Lindungi Koruptor, Ini Buktinya",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/934195/prabowo-ogah-lindungi-koruptor-ini-buktinya",
+   "t_id": "Prabowo Ogah Lindungi Koruptor, Ini Buktinya",
+   "t_ko": "Prabowo, 부패 세력 비호 의사 없음 표명"
+  },
+  {
+   "ts": "2026-09-16T20:37:00+07:00",
+   "date": "2026-09-16",
+   "time": "20:37",
+   "src": "Media Indonesia",
+   "t": "Suahasil Gantikan Purbaya jadi Menteri Keuangan, Istana: Hak Presiden",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/934196/suahasil-gantikan-purbaya-jadi-menteri-keuangan-istana-hak-presiden",
+   "t_id": "Suahasil Gantikan Purbaya jadi Menteri Keuangan, Istana: Hak Presiden",
+   "t_ko": "Suahasil, Purbaya 후임 재무장관 임명 — 대통령 고유 권한"
+  },
+  {
    "ts": "2026-09-16T20:36:00+07:00",
    "date": "2026-09-16",
    "time": "20:36",
@@ -17071,6 +17207,19 @@
    "t_id": "Fed Diprediksi Kerek Suku Bunga untuk Pertama Kalinya Sejak 2023"
   },
   {
+   "ts": "2026-09-16T20:35:42+07:00",
+   "date": "2026-09-16",
+   "time": "20:35",
+   "src": "Yahoo Finance",
+   "t": "CoStar (CSGP): Residential Strategy Unchanged Despite Persistent Market Skepticism",
+   "tags": [],
+   "url": "https://finance.yahoo.com/real-estate/articles/costar-csgp-residential-strategy-unchanged-133542445.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/017174cc5c9e8720a5075e82fe7b59ea.jpg",
+   "t_ko": "CoStar(CSGP), 시장 우려에도 주거용 전략 유지",
+   "t_id": "CoStar (CSGP): Strategi Residensial Tak Berubah Di Tengah Skeptisisme Pasar"
+  },
+  {
    "ts": "2026-09-16T20:35:00+07:00",
    "date": "2026-09-16",
    "time": "20:35",
@@ -17080,6 +17229,18 @@
    "url": "https://mediaindonesia.com/politik-dan-hukum/934194/komitmen-kapolri-berantas-impor-tekstil-ilegal-diapresiasi",
    "t_ko": "경찰청장의 불법 섬유 수입 근절 의지 호평",
    "t_id": "Komitmen Kapolri Berantas Impor Tekstil Ilegal Diapresiasi"
+  },
+  {
+   "ts": "2026-09-16T20:34:42+07:00",
+   "date": "2026-09-16",
+   "time": "20:34",
+   "src": "Reuters",
+   "t": "Wall St opens higher ahead of much-anticipated Fed decision",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSUtqeWNnZEJZT0IyaHpTajZTM3hWV0gwZUV1VkhQV21PUzJBQ0kzLWhxTk5iWUtNbTI1eUVWQnN1b2Y4T2RQSnhmc1pDcVVWYldOc19HSzRId2pZMHZFWHZrNHhnMVh3VGd4RkRSdDJGZ2ZJSzd6TWhiWWtUd1lWRkxzcklsRmJhOS1TcEZYMkRTQjhmakMyVDFtQQ?oc=5",
+   "g": 1,
+   "t_ko": "연준 금리 결정 앞두고 월가 상승 출발",
+   "t_id": "Wall St Dibuka Menguat Jelang Keputusan The Fed yang Dinanti"
   },
   {
    "ts": "2026-09-16T20:33:00+07:00",
@@ -17102,8 +17263,8 @@
    "t": "Serikat Buruh Usulkan Kenaikan Upah Minimum 2027 di Kisaran 7,5% - 9,5%",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/934188/serikat-buruh-usulkan-kenaikan-upah-minimum-2027-di-kisaran-75---95",
-   "t_id": "Serikat Buruh Usulkan Kenaikan Upah Minimum 2027 di Kisaran 7,5% - 9,5%",
-   "t_ko": "노조, 2027년 최저임금 7.5%~9.5% 인상 요구"
+   "t_ko": "노조, 2027년 최저임금 7.5%~9.5% 인상 요구",
+   "t_id": "Serikat Buruh Usulkan Kenaikan Upah Minimum 2027 di Kisaran 7,5% - 9,5%"
   },
   {
    "ts": "2026-09-16T20:31:51+07:00",
@@ -17162,8 +17323,8 @@
    "tags": [],
    "url": "https://www.idxchannel.com/market-news/penjelasan-ojk-soal-danantara-dikabarkan-bakal-kuasai-40-persen-saham-bei-usai-demutualisasi",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/04/08/IDX_bursa_BEI.jpg",
-   "t_id": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi",
-   "t_ko": "데무추얼라이제이션 후 Danantara가 BEI 지분 40% 장악설에 OJK 입장 표명"
+   "t_ko": "데무추얼라이제이션 후 Danantara가 BEI 지분 40% 장악설에 OJK 입장 표명",
+   "t_id": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi"
   },
   {
    "ts": "2026-09-16T20:30:00+07:00",
@@ -17224,6 +17385,19 @@
    "t_id": "Pengembangan Panas Bumi Gunung Ungaran, Undip Soroti Pengurangan Emisi dan Keberlanjutan"
   },
   {
+   "ts": "2026-09-16T20:24:01+07:00",
+   "date": "2026-09-16",
+   "time": "20:24",
+   "src": "FT",
+   "t": "Chinese oil prices hit record highs after attacks on Saudi pipeline",
+   "tags": [],
+   "url": "https://www.ft.com/content/3a88d016-9575-4c11-bd34-14606964a867?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ff49ffbb7-cd8c-4737-beea-b92665ab3853.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "사우디 송유관 피습 후 중국 원유 가격 사상 최고치 경신",
+   "t_id": "Harga Minyak China Rekor Tertinggi Usai Serangan Pipa Saudi"
+  },
+  {
    "ts": "2026-09-16T20:23:37+07:00",
    "date": "2026-09-16",
    "time": "20:23",
@@ -17235,6 +17409,19 @@
    "img": "https://dam.mediacorp.sg/image/upload/s--mNVV9Sdy--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-16T132337Z_2_LYNXMPEM8F1CE_RTROPTP_3_AI-COMPANIES-COHERE.JPG?itok=BofMNPq7",
    "t_ko": "Cohere·Aleph Alpha, 엔터프라이즈 AI 시장 공략 제휴",
    "t_id": "Cohere dan Aleph Alpha Gabung Sasar Pasar AI Korporat"
+  },
+  {
+   "ts": "2026-09-16T20:22:23+07:00",
+   "date": "2026-09-16",
+   "time": "20:22",
+   "src": "Yahoo Finance",
+   "t": "Why Meta's Zuckerberg, Nvidia's Huang Say An AI Slowdown Is Not Needed",
+   "tags": [],
+   "url": "https://www.investors.com/news/technology/meta-stock-zuckerberg-ai-safety-nvidia-anthropic/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/1029f27ae4590ce27197e4db5be52669.jpg",
+   "t_ko": "Meta의 Zuckerberg·Nvidia의 Huang, AI 속도 조절 불필요 강조",
+   "t_id": "Alasan Zuckerberg Meta dan Huang Nvidia Sebut Perlambatan AI Tak Diperlukan"
   },
   {
    "ts": "2026-09-16T20:22:00+07:00",
@@ -17257,8 +17444,8 @@
    "t": "Kebutuhan Listrik Diprediksi terus Naik imbas Industrialisasi dan Kendaraan Listrik",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/934187/kebutuhan-listrik-diprediksi-terus-naik-imbas-industrialisasi-dan-kendaraan-listrik",
-   "t_id": "Kebutuhan Listrik Diprediksi terus Naik imbas Industrialisasi dan Kendaraan Listrik",
-   "t_ko": "산업화·전기차 확산으로 전력 수요 증가 전망"
+   "t_ko": "산업화·전기차 확산으로 전력 수요 증가 전망",
+   "t_id": "Kebutuhan Listrik Diprediksi terus Naik imbas Industrialisasi dan Kendaraan Listrik"
   },
   {
    "ts": "2026-09-16T20:21:00+07:00",
@@ -17307,31 +17494,6 @@
    "t_id": "Tropical Smoothie Cafe Bersiap Ubah Tampilan untuk 3.000 Gerai Baru"
   },
   {
-   "ts": "2026-09-16T20:16:31+07:00",
-   "date": "2026-09-16",
-   "time": "20:16",
-   "src": "CNBC",
-   "t": "Your AI interviewer will see you now: How job seekers should navigate the 'jarring' new hiring technology",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/your-ai-interviewer-will-see-you-now-what-job-seekers-should-know-about-new-hiring-tech.html",
-   "g": 1,
-   "t_ko": "AI 면접 도입에 구직자가 대처하는 방법",
-   "t_id": "Wawancara Kerja dengan AI: Panduan bagi Pencari Kerja Hadapi Teknologi Rekrutmen Baru"
-  },
-  {
-   "ts": "2026-09-16T20:15:32+07:00",
-   "date": "2026-09-16",
-   "time": "20:15",
-   "src": "Yahoo Finance",
-   "t": "Think Nvidia Is Overpriced? The Irony Keeps Me Buying Again and Again",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/think-nvidia-overpriced-irony-keeps-131532848.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/8afb5921814fb90f2b3aad3cf87cb781.jpg",
-   "t_ko": "Nvidia 고평가 논란 속 지속 매수 배경",
-   "t_id": "Nilai Nvidia Kemahalan? Ironi Ini Bikin Saya Terus Borong Sahamnya"
-  },
-  {
    "ts": "2026-09-16T20:15:00+07:00",
    "date": "2026-09-16",
    "time": "20:15",
@@ -17365,152 +17527,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/pemerintah-sebut-2961-penerbangan-terdampak-erupsi-anak-krakatau-1788779302096_169.jpeg?w=360&q=90",
    "t_ko": "AHY, 전국에 7,000곳의 낙후 지역 존재 밝혀",
    "t_id": "AHY Sebut Ada 7.000 Titik Kawasan Kumuh"
-  },
-  {
-   "ts": "2026-09-16T20:12:55+07:00",
-   "date": "2026-09-16",
-   "time": "20:12",
-   "src": "CNA",
-   "t": "May Mobility to list on Nasdaq via $1.4 billion SPAC deal",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/may-mobility-list-nasdaq-14-billion-spac-deal-6389361",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--DMztcF4---/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-16T131920Z_2_LYNXMPEM8F1C5_RTROPTP_3_ORION180-INSURANCE-IPO.JPG?itok=T7jqEjR1",
-   "t_ko": "May Mobility, 14억 달러 규모 SPAC 통해 나스닥 상장 추진",
-   "t_id": "May Mobility Melantai di Nasdaq Lewat Aksi SPAC US$1,4 Miliar"
-  },
-  {
-   "ts": "2026-09-16T20:10:44+07:00",
-   "date": "2026-09-16",
-   "time": "20:10",
-   "src": "CNA",
-   "t": "Equinor plans LNG expansion in early 2030s to meet European and Asian demand",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/equinor-plans-lng-expansion-in-early-2030s-meet-european-and-asian-demand-6389371",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--2F5G7n2P--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-16T131044Z_2_LYNXMPEM8F1C0_RTROPTP_3_UNIPER-EQUINOR-GAS.JPG?itok=3V52ck30",
-   "t_ko": "Equinor, 유럽·아시아 수요 대응 위해 2030년대 초 LNG 확충 계획",
-   "t_id": "Equinor Rencana Ekspansi LNG Awal 2030 untuk Penuhi Permintaan Eropa dan Asia"
-  },
-  {
-   "ts": "2026-09-16T20:09:30+07:00",
-   "date": "2026-09-16",
-   "time": "20:09",
-   "src": "Republika",
-   "t": "MIND ID Perkuat Kontribusi Penerimaan Negara lewat Pengelolaan Mineral",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tlgkju522/mind-id-perkuat-kontribusi-penerimaan-negara-lewat-pengelolaan-mineral",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/direktur-utama-mind-id-maroef-dalam-rdp-bersama-komisi_260916200919-320.jpeg",
-   "t_ko": "MIND ID, 광물 자원 관리를 통한 국가 재정 기여 확대",
-   "t_id": "MIND ID Perkuat Kontribusi Penerimaan Negara lewat Pengelolaan Mineral"
-  },
-  {
-   "ts": "2026-09-16T20:09:11+07:00",
-   "date": "2026-09-16",
-   "time": "20:09",
-   "src": "CNA",
-   "t": "Apple considers Nvidia tech for return to server market, The Information reports",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/apple-considers-nvidia-tech-return-server-market-information-reports-6389366",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--1k0d5FrU--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-16T131858Z_1_LYNXMPEM8F1CL_RTROPTP_3_D-MATRIX-NVIDIA.JPG?itok=aa2zHhDx",
-   "t_ko": "Apple, 서버 시장 복귀 위해 Nvidia 기술 검토 소식",
-   "t_id": "Apple Pertimbangkan Teknologi Nvidia untuk Masuk Kembali ke Pasar Server, Lapor The Information"
-  },
-  {
-   "ts": "2026-09-16T20:07:24+07:00",
-   "date": "2026-09-16",
-   "time": "20:07",
-   "src": "Yahoo Finance",
-   "t": "Real REMAX Group (REAX) Stock Weakness Reflects Fears of AI-Driven Market Changes",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/real-remax-group-reax-stock-130724417.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/65fb71f7099594492a8ffd9643be6b05.jpg",
-   "t_ko": "REMAX Group(REAX), AI 중심 시장 변화 우려로 주가 약세",
-   "t_id": "Kelemahan Saham Real REMAX Group (REAX) Cerminkan Kekhawatiran Perubahan Pasar Berbasis AI"
-  },
-  {
-   "ts": "2026-09-16T20:04:10+07:00",
-   "date": "2026-09-16",
-   "time": "20:04",
-   "src": "CNBC",
-   "t": "Intel, SK Hynix shares jump on report they're discussing U.S. memory chip manufacturing",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/intel-sk-hynix-us-memory-chips.html",
-   "g": 1,
-   "t_ko": "Intel·SK 하이닉스, 미국 메모리 반도체 생산 협력 보도에 급등",
-   "t_id": "Saham Intel dan SK Hynix Melonjak di Tengah Kabar Pembahasan Manufaktur Chip AS",
-   "ai_ko": "· Intel·SK Hynix, 미국 메모리 생산 협의 보도\n· Ohio 공장 일부 임대·합작 설립 등 검토\n· SK Hynix 한국 상장주 1년간 400% 상승",
-   "ai_id": "· Intel dan SK Hynix bahas produksi memori AS\n· Opsi sewa pabrik Ohio atau joint venture\n· Saham SK Hynix naik 400% setahun",
-   "ai_tags": [
-    "반도체",
-    "합작",
-    "HBM"
-   ],
-   "ai_tags_id": [
-    "semikonduktor",
-    "joint venture",
-    "HBM"
-   ]
-  },
-  {
-   "ts": "2026-09-16T20:04:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:04",
-   "src": "Katadata",
-   "t": "Madani Soroti Hak Masyarakat dalam Proyek Karbon, Apa Respons Pemerintah?",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6aaa93d806077/madani-soroti-hak-masyarakat-dalam-proyek-karbon-apa-respons-pemerintah",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/16/Katadata_SAFE_2026-2026_09_16-20_01_30_5d34d5967d5cf3a043a50442e0ad2842_620x413_thumb.jpeg",
-   "t_ko": "Madani, 탄소 프로젝트 속 주민 권리 지적에 정부 대응 촉구",
-   "t_id": "Madani Soroti Hak Masyarakat dalam Proyek Karbon, Apa Respons Pemerintah?"
-  },
-  {
-   "ts": "2026-09-16T20:00:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:00",
-   "src": "Media Indonesia",
-   "t": "Dorong Waste-to-Value melalui Proyek Decentralized Waste Management di Bandung",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/934171/dorong-waste-to-value-melalui-proyek-decentralized-waste-management-di-bandung",
-   "t_ko": "반도체 분산형 폐기물 관리 프로젝트로 Waste-to-Value 추진",
-   "t_id": "Dorong Waste-to-Value melalui Proyek Decentralized Waste Management di Bandung"
-  },
-  {
-   "ts": "2026-09-16T19:58:00+07:00",
-   "date": "2026-09-16",
-   "time": "19:58",
-   "src": "Media Indonesia",
-   "t": "Pemerintah Perkuat Kerja Sama Perbatasan, Fokus Penataan Pulau Sebatik",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/934175/pemerintah-perkuat-kerja-sama-perbatasan-fokus-penataan-pulau-sebatik",
-   "t_ko": "정부, Sebatik섬 개발 중심의 국경 협력 강화",
-   "t_id": "Pemerintah Perkuat Kerja Sama Perbatasan, Fokus Penataan Pulau Sebatik"
-  },
-  {
-   "ts": "2026-09-16T19:54:00+07:00",
-   "date": "2026-09-16",
-   "time": "19:54",
-   "src": "IDX Channel",
-   "t": "OJK Susun RPOJK, Pastikan Direksi dan Komisaris BEI Tetap Independen Usai Demutualisasi",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/ojk-susun-rpojk-pastikan-direksi-dan-komisaris-bei-tetap-independen-usai-demutualisasi",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/07/hasan_ojk_pubex.jpg",
-   "t_ko": "OJK, 데뮤추얼라이제이션 이후 BEI 임원진 독립성 보장 규정 마련",
-   "t_id": "OJK Susun RPOJK, Pastikan Direksi dan Komisaris BEI Tetap Independen Usai Demutualisasi"
-  },
-  {
-   "ts": "2026-09-16T19:50:00+07:00",
-   "date": "2026-09-16",
-   "time": "19:50",
-   "src": "Bloomberg Technoz",
-   "t": "Jelang IPO OpenAI Buka Opsi Penggalangan Dana Baru",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121782/jelang-ipo-openai-buka-opsi-penggalangan-dana-baru",
-   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260710133242.jpg",
-   "t_ko": "OpenAI, IPO 앞두고 신규 자금 조달 옵션 검토",
-   "t_id": "Jelang IPO OpenAI Buka Opsi Penggalangan Dana Baru"
   }
  ],
  "kisi_news": [
@@ -17692,9 +17708,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.977%",
-   "d": -0.38,
-   "ytd": 19.55,
+   "v": "4.965%",
+   "d": -0.62,
+   "ytd": 19.26,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17715,9 +17731,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.71",
-   "d": 0.05,
-   "ytd": 1.46,
+   "v": "99.69",
+   "d": 0.02,
+   "ytd": 1.43,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17727,9 +17743,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.85",
-   "d": -0.89,
-   "ytd": 80.86,
+   "v": "103.50",
+   "d": -1.22,
+   "ytd": 80.25,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17739,9 +17755,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,391.3",
-   "d": 0.55,
-   "ytd": 1.52,
+   "v": "4,384.9",
+   "d": 0.41,
+   "ytd": 1.37,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17763,9 +17779,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,118",
-   "d": 1.39,
-   "ytd": -3.38,
+   "v": "16,116",
+   "d": 1.37,
+   "ytd": -3.39,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24049,9 +24065,9 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-16 20:36",
-  "pc_age_min": 7,
-  "news_ai_cache": 49,
+  "idx_from_pc": "2026-09-16 20:50",
+  "pc_age_min": 5,
+  "news_ai_cache": 48,
   "news_ai_hit": 35,
   "on_runner": true,
   "bi": null,
@@ -25755,10 +25771,36 @@
    "tags": [],
    "url": "https://www.idxchannel.com/market-news/penjelasan-ojk-soal-danantara-dikabarkan-bakal-kuasai-40-persen-saham-bei-usai-demutualisasi",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/04/08/IDX_bursa_BEI.jpg",
-   "t_id": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi",
    "t_ko": "데무추얼라이제이션 후 Danantara가 BEI 지분 40% 장악설에 OJK 입장 표명",
+   "t_id": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi",
    "score": 419.75,
    "srcs": 4
+  },
+  {
+   "ts": "2026-09-16T16:33:41+07:00",
+   "date": "2026-09-16",
+   "time": "16:33",
+   "src": "Detik",
+   "t": "Menkeu Suahasil Perdana Rapat di Istana usai Gantikan Purbaya",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8665562/menkeu-suahasil-perdana-rapat-di-istana-usai-gantikan-purbaya",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/16/menteri-keuangan-suahasil-nazara-1789551122093_169.jpeg?w=360&q=90",
+   "score": 419.55,
+   "srcs": 3,
+   "t_ko": "재무차관 Suahasil, Purbaya 후임으로 대통령궁 첫 회의 참석",
+   "t_id": "Menkeu Suahasil Perdana Rapat di Istana usai Gantikan Purbaya",
+   "ai_ko": "· Suahasil Nazara 재무장관 첫 국무회의\n· Purbaya 후임으로 월요일 취임\n· 에너지 정책도 논의, ESDM 장관 동석",
+   "ai_id": "· Menkeu Suahasil ikut ratas perdana\n· Dilantik Senin gantikan Purbaya\n· Bahlil hadir bahas kebijakan energi",
+   "ai_tags": [
+    "정책",
+    "재무장관",
+    "에너지"
+   ],
+   "ai_tags_id": [
+    "kebijakan",
+    "menkeu",
+    "energi"
+   ]
   },
   {
    "ts": "2026-09-16T15:56:00+07:00",
@@ -25787,32 +25829,6 @@
    ]
   },
   {
-   "ts": "2026-09-16T16:33:41+07:00",
-   "date": "2026-09-16",
-   "time": "16:33",
-   "src": "Detik",
-   "t": "Menkeu Suahasil Perdana Rapat di Istana usai Gantikan Purbaya",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8665562/menkeu-suahasil-perdana-rapat-di-istana-usai-gantikan-purbaya",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/16/menteri-keuangan-suahasil-nazara-1789551122093_169.jpeg?w=360&q=90",
-   "score": 417.35,
-   "srcs": 2,
-   "t_ko": "재무차관 Suahasil, Purbaya 후임으로 대통령궁 첫 회의 참석",
-   "t_id": "Menkeu Suahasil Perdana Rapat di Istana usai Gantikan Purbaya",
-   "ai_ko": "· Suahasil Nazara 재무장관 첫 국무회의\n· Purbaya 후임으로 월요일 취임\n· 에너지 정책도 논의, ESDM 장관 동석",
-   "ai_id": "· Menkeu Suahasil ikut ratas perdana\n· Dilantik Senin gantikan Purbaya\n· Bahlil hadir bahas kebijakan energi",
-   "ai_tags": [
-    "정책",
-    "재무장관",
-    "에너지"
-   ],
-   "ai_tags_id": [
-    "kebijakan",
-    "menkeu",
-    "energi"
-   ]
-  },
-  {
    "ts": "2026-09-16T17:05:00+07:00",
    "date": "2026-09-16",
    "time": "17:05",
@@ -25822,7 +25838,7 @@
    "url": "https://www.idnfinancials.com/news/68946/jci-weakens-for-six-days-odds-of-fed-rate-hike-reach-92",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG-12022026.jpg",
    "score": 416.75,
-   "srcs": 7,
+   "srcs": 4,
    "t_ko": "IHSG 6거래일 연속 하락 — 연준 금리 인상 확률 92% 반영",
    "t_id": "IHSG Melemah 6 Hari Beruntun, Peluang Suku Bunga The Fed Naik Capai 92%"
   },
@@ -25850,7 +25866,7 @@
     "geopolitik"
    ],
    "score": 315.0,
-   "srcs": 4
+   "srcs": 5
   }
  ],
  "daylog": {
@@ -43296,6 +43312,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 20:29"
+  "announcements": "2026-09-16 20:43"
  }
 }
