@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 23:48",
+ "updated": "2026-09-16 23:54",
  "delay_min": 15,
  "fx_basis": "12.95 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,368 · 23:16 Yahoo",
- "idr_per_krw": 12.9478,
+ "idr_per_krw": 12.9483,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15765,10 +15765,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7612.26,
+   "px": 7609.2,
    "prev": 7585.51,
-   "pct": 0.35,
-   "asof": "23:45",
+   "pct": 0.31,
+   "asof": "23:50",
    "live": true,
    "spark": [
     7603.81,
@@ -15810,17 +15810,18 @@
     7608.24,
     7610.3,
     7610.39,
-    7612.26
+    7612.07,
+    7609.2
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26177.55,
+   "px": 26165.7,
    "prev": 25981.57,
-   "pct": 0.75,
-   "asof": "23:45",
+   "pct": 0.71,
+   "asof": "23:50",
    "live": true,
    "spark": [
     26099.29,
@@ -15862,17 +15863,18 @@
     26160.59,
     26164.85,
     26165.79,
-    26177.55
+    26178.72,
+    26165.7
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52058.33,
+   "px": 52031.21,
    "prev": 52092.45,
-   "pct": -0.07,
-   "asof": "23:45",
+   "pct": -0.12,
+   "asof": "23:50",
    "live": true,
    "spark": [
     52038.56,
@@ -15914,7 +15916,8 @@
     52045.31,
     52054.68,
     52054.64,
-    52058.33
+    52055.17,
+    52031.21
    ]
   },
   {
@@ -17130,6 +17133,55 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-16T23:51:18+07:00",
+   "date": "2026-09-16",
+   "time": "23:51",
+   "src": "CNBC",
+   "t": "Hyperscaler debt signals warning sign, Apollo cautions",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/hyperscaler-debt-signals-warning-sign-apollo-cautions.html",
+   "g": 1,
+   "t_ko": "대형 클라우드 부채 경고음 — Apollo 경고",
+   "t_id": "Utang Hyperscaler Beri Sinyal Peringatan, Apollo Ingatkan"
+  },
+  {
+   "ts": "2026-09-16T23:48:13+07:00",
+   "date": "2026-09-16",
+   "time": "23:48",
+   "src": "CNBC",
+   "t": "J.B. Hunt stock plunges 10% after company warns third-quarter earnings will fall",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/jb-hunt-stock-jbht-earnings.html",
+   "g": 1,
+   "t_ko": "J.B. Hunt, 3분기 실적 부진 경고에 주가 10% 급락",
+   "t_id": "Saham J.B. Hunt Anjlok 10% Usai Peringatkan Penurunan Laba Kuartal III"
+  },
+  {
+   "ts": "2026-09-16T23:37:22+07:00",
+   "date": "2026-09-16",
+   "time": "23:37",
+   "src": "CNBC",
+   "t": "We're significantly trimming a stock that has not gone to plan",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/were-significantly-trimming-a-stock-that-has-not-gone-to-plan.html",
+   "g": 1,
+   "t_ko": "운용 계획에 못 미친 보유 종목 대폭 축소",
+   "t_id": "Kami Pangkas Signifikan Saham yang Tak Sesuai Rencana"
+  },
+  {
+   "ts": "2026-09-16T23:32:59+07:00",
+   "date": "2026-09-16",
+   "time": "23:32",
+   "src": "FT",
+   "t": "Traders expect Fed to raise interest rates for first time in 3 years",
+   "tags": [],
+   "url": "https://www.ft.com/content/61b5fbae-9dd6-4980-bd1f-effe54b72d84",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F483e82fa-436c-48dc-b399-65f068ca193b.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "트레이더들, 연준 3년 만의 첫 금리 인상 전망",
+   "t_id": "Trader Ekspektasikan The Fed Naikkan Suku Bunga untuk Pertama Kali dalam 3 Tahun"
+  },
+  {
    "ts": "2026-09-16T23:30:37+07:00",
    "date": "2026-09-16",
    "time": "23:30",
@@ -17277,6 +17329,18 @@
    "t_id": "Saham Salesforce Turun Jelang Paparan Publik di Tengah Gangguan Sistem"
   },
   {
+   "ts": "2026-09-16T23:11:02+07:00",
+   "date": "2026-09-16",
+   "time": "23:11",
+   "src": "Reuters",
+   "t": "Nasdaq, S&P 500 climb as oil retreat tempers pre-Fed jitters",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSUtqeWNnZEJZT0IyaHpTajZTM3hWV0gwZUV1VkhQV21PUzJBQ0kzLWhxTk5iWUtNbTI1eUVWQnN1b2Y4T2RQSnhmc1pDcVVWYldOc19HSzRId2pZMHZFWHZrNHhnMVh3VGd4RkRSdDJGZ2ZJSzd6TWhiWWtUd1lWRkxzcklsRmJhOS1TcEZYMkRTQjhmakMyVDFtQQ?oc=5",
+   "g": 1,
+   "t_ko": "유가 하락으로 연준 경계감 완화 속 Nasdaq·S&P 500 상승",
+   "t_id": "Nasdaq dan S&P 500 Menguat Seiring Penurunan Harga Minyak Meredakan Kekawatiran Jelang The Fed"
+  },
+  {
    "ts": "2026-09-16T23:10:31+07:00",
    "date": "2026-09-16",
    "time": "23:10",
@@ -17327,30 +17391,6 @@
    "t_id": "Trump Cabut Status Narkotika Venezuela dan Sebut Kolombia Bisa Menyusul"
   },
   {
-   "ts": "2026-09-16T23:07:25+07:00",
-   "date": "2026-09-16",
-   "time": "23:07",
-   "src": "CNBC",
-   "t": "Yield on 10-year Treasury below 5% as investors await Fed decision",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html",
-   "g": 1,
-   "t_ko": "연준 결정 앞두고 10년물 미 국채금리 5% 하회",
-   "t_id": "Imbal Hasil US Treasury 10-Tahun di Bawah 5% Menanti Keputusan The Fed",
-   "ai_ko": "· 미국 10년물 국채금리 5% 상회\n· 8월 소비자물가 3.4%, 7월 PCE 3.7%\n· 유가 배럴당 USD 100 상회로 물가 부담",
-   "ai_id": "· Yield UST 10 tahun di atas 5%\n· Inflasi AS Agustus 3.4%, PCE Juli 3.7%\n· Harga minyak di atas USD 100 per barel",
-   "ai_tags": [
-    "금리",
-    "물가",
-    "유가"
-   ],
-   "ai_tags_id": [
-    "suku bunga",
-    "inflasi",
-    "harga minyak"
-   ]
-  },
-  {
    "ts": "2026-09-16T23:06:08+07:00",
    "date": "2026-09-16",
    "time": "23:06",
@@ -17373,31 +17413,6 @@
    ]
   },
   {
-   "ts": "2026-09-16T23:05:19+07:00",
-   "date": "2026-09-16",
-   "time": "23:05",
-   "src": "Yahoo Finance",
-   "t": "AMD, IBD Stock Of The Day, Gains As Heavyweights Dismiss AI Slowdown",
-   "tags": [],
-   "url": "https://www.investors.com/research/ibd-stock-of-the-day/amd-stock-rises-pundits-dismiss-ai-slowdown/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/c7f25ae791144e806637193d01a8d9c5.png",
-   "t_ko": "AMD, AI 둔화 우려 해소에 대형주 강세 속 오늘의 IBD 주식 선정",
-   "t_id": "AMD, Saham Pilihan IBD, Naik Saat Raksasa Teknologi Tepis Perlambatan AI"
-  },
-  {
-   "ts": "2026-09-16T23:04:44+07:00",
-   "date": "2026-09-16",
-   "time": "23:04",
-   "src": "CNBC",
-   "t": "Jim Cramer says this enterprise software stock is 'way too cheap'",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/jim-cramer-says-this-enterprise-software-stock-is-way-too-cheap.html",
-   "g": 1,
-   "t_ko": "Jim Cramer, 해당 기업용 소프트웨어 주식 '저평가' 진단",
-   "t_id": "Jim Cramer Sebut Saham Perangkat Lunak Korporat Ini Terlalu Murah"
-  },
-  {
    "ts": "2026-09-16T23:03:00+07:00",
    "date": "2026-09-16",
    "time": "23:03",
@@ -17407,31 +17422,6 @@
    "url": "https://mediaindonesia.com/ekonomi/934270/layanan-keuangan-digital-catat-puluhan-inovasi-dan-perubahan-perilaku-pengguna",
    "t_ko": "디지털 금융 서비스, 수십 가지 혁신과 사용자 행동 변화 기록",
    "t_id": "Layanan Keuangan Digital Catat Puluhan Inovasi dan Perubahan Perilaku Pengguna"
-  },
-  {
-   "ts": "2026-09-16T23:01:37+07:00",
-   "date": "2026-09-16",
-   "time": "23:01",
-   "src": "Bloomberg",
-   "t": "Kremlin Pushes to Keep Russia’s Edge as Biggest Wheat Exporter",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-16/kremlin-pushes-to-keep-russia-s-edge-as-biggest-wheat-exporter",
-   "g": 1,
-   "t_ko": "러시아, 세계 1위 밀 수출국 지위 수성 총력",
-   "t_id": "Kremlin Dorong Rusia Pertahankan Dominasi sebagai Eksportir Gandum Terbesar"
-  },
-  {
-   "ts": "2026-09-16T23:00:00+07:00",
-   "date": "2026-09-16",
-   "time": "23:00",
-   "src": "MarketWatch",
-   "t": "15 stocks that have grown dividends the most — and nearly all have beaten the S&P 500",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/15-stocks-that-have-grown-dividends-the-most-and-nearly-all-have-beaten-the-s-p-500-6d8923fc?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-24811711",
-   "t_ko": "배당 성장 상위 15개 종목 — 대부분 S&P 500 상회",
-   "t_id": "15 Saham dengan Pertumbuhan Dividen Tertinggi dan Nyaris Seluruhnya Kalahkan S&P 500"
   },
   {
    "ts": "2026-09-16T22:57:00+07:00",
@@ -17789,9 +17779,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.961%",
-   "d": -0.7,
-   "ytd": 19.17,
+   "v": "4.959%",
+   "d": -0.74,
+   "ytd": 19.12,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17813,8 +17803,8 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "99.70",
-   "d": 0.04,
-   "ytd": 1.45,
+   "d": 0.03,
+   "ytd": 1.44,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17824,9 +17814,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.63",
-   "d": -2.05,
-   "ytd": 78.74,
+   "v": "102.64",
+   "d": -2.04,
+   "ytd": 78.75,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17836,9 +17826,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,387.9",
-   "d": 0.47,
-   "ytd": 1.44,
+   "v": "4,389.0",
+   "d": 0.5,
+   "ytd": 1.47,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -24072,9 +24062,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-16 23:44",
-  "pc_age_min": 4,
+  "pc_age_min": 10,
   "news_ai_cache": 44,
-  "news_ai_hit": 32,
+  "news_ai_hit": 31,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25818,7 +25808,7 @@
    "url": "https://www.idnfinancials.com/news/68946/jci-weakens-for-six-days-odds-of-fed-rate-hike-reach-92",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG-12022026.jpg",
    "score": 416.75,
-   "srcs": 7,
+   "srcs": 8,
    "t_ko": "IHSG 6거래일 연속 하락 — 연준 금리 인상 확률 92% 반영",
    "t_id": "IHSG Melemah 6 Hari Beruntun, Peluang Suku Bunga The Fed Naik Capai 92%"
   },
@@ -25846,10 +25836,10 @@
    "url": "https://www.marketwatch.com/story/15-stocks-that-have-grown-dividends-the-most-and-nearly-all-have-beaten-the-s-p-500-6d8923fc?mod=mw_rss_topstories",
    "g": 1,
    "img": "https://images.mktw.net/im-24811711",
-   "t_ko": "배당 성장 상위 15개 종목 — 대부분 S&P 500 상회",
-   "t_id": "15 Saham dengan Pertumbuhan Dividen Tertinggi dan Nyaris Seluruhnya Kalahkan S&P 500",
    "score": 314.5,
-   "srcs": 4
+   "srcs": 5,
+   "t_ko": "배당 성장 상위 15개 종목 — 대부분 S&P 500 상회",
+   "t_id": "15 Saham dengan Pertumbuhan Dividen Tertinggi dan Nyaris Seluruhnya Kalahkan S&P 500"
   }
  ],
  "daylog": {
@@ -43295,6 +43285,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 23:40"
+  "announcements": "2026-09-16 23:48"
  }
 }
