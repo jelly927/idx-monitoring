@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 12:40",
+ "updated": "2026-09-16 12:53",
  "delay_min": 15,
  "fx_basis": "12.95 IDR/KRW · USD/IDR 17,705 · USD/KRW 1,367 · 12:24 Yahoo",
- "idr_per_krw": 12.9533,
+ "idr_per_krw": 12.9491,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -320,7 +320,7 @@
    ],
    "span": "1W",
    "inv": true,
-   "asof": "investing.com 12:39",
+   "asof": "investing.com 12:51",
    "unit": "bp"
   }
  ],
@@ -331,14 +331,14 @@
   "prev": 6461.15,
   "ytd": -25.01,
   "m1": 0.53,
-  "value_idr": 5704539627833.338,
+  "value_idr": 5692507827833.338,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 외국인·공시 PC 09-16 12:33",
-  "rank_asof": "12:39",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 외국인·공시 PC 09-16 12:48",
+  "rank_asof": "12:51",
   "rank_date": "2026-09-16",
   "adv": 319,
-  "dec": 291,
+  "dec": 290,
   "unch": 223,
   "foreign_net_idr": -352281051832.25635,
   "foreign_buy": 3617505114905.0186,
@@ -2558,22 +2558,6 @@
    "lo": 3100.0,
    "ratio": 0.2,
    "fnet": -2510037196.9588175,
-   "live": 1
-  },
-  {
-   "t": "ASLI",
-   "n": "Asri Karya Lestari",
-   "px": 360.0,
-   "prev": 362.0,
-   "pct": -0.55,
-   "val": 12031800000.0,
-   "vol": 32814000.0,
-   "sh": 6250000000,
-   "mcap": 2250000000000.0,
-   "hi": 384.0,
-   "lo": 356.0,
-   "ratio": 0.4,
-   "fnet": -2005187042.8532355,
    "live": 1
   },
   {
@@ -15035,11 +15019,11 @@
   {
    "name": "인프라",
    "name_id": "Infrastruktur",
-   "n": 55,
+   "n": 54,
    "adv": 20,
-   "dec": 23,
-   "val": 328444585033.3333,
-   "mcap": 1416763387027075.0,
+   "dec": 22,
+   "val": 316412785033.3333,
+   "mcap": 1414513387027075.0,
    "top": [
     {
      "t": "BREN",
@@ -15082,7 +15066,7 @@
      "pct": -0.89
     }
    ],
-   "fnet": 81886685699,
+   "fnet": 83891872742,
    "pct": -0.62,
    "fbuy_top": [
     {
@@ -15979,10 +15963,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6683.81,
+   "px": 6678.91,
    "prev": 6620.5,
-   "pct": 0.96,
-   "asof": "12:15",
+   "pct": 0.88,
+   "asof": "12:30",
    "live": true,
    "spark": [
     6627.08,
@@ -16048,17 +16032,20 @@
     6672.04,
     6681.92,
     6673.93,
-    6683.81
+    6686.04,
+    6683.81,
+    6677.14,
+    6678.91
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63686.78,
+   "px": 63678.94,
    "prev": 63611.84,
-   "pct": 0.12,
-   "asof": "12:20",
+   "pct": 0.11,
+   "asof": "12:35",
    "live": true,
    "spark": [
     63365.52,
@@ -16115,17 +16102,20 @@
     63677.43,
     63675.85,
     63683.73,
-    63686.78
+    63691.51,
+    63709.08,
+    63700.29,
+    63678.94
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24667.11,
+   "px": 24698.3,
    "prev": 24667.24,
-   "pct": -0.0,
-   "asof": "12:20",
+   "pct": 0.13,
+   "asof": "12:35",
    "live": true,
    "spark": [
     24633.56,
@@ -16164,7 +16154,10 @@
     24680.72,
     24682.08,
     24663.82,
-    24667.11
+    24663.83,
+    24667.59,
+    24696.55,
+    24698.3
    ]
   }
  ],
@@ -16244,6 +16237,58 @@
  },
  "news": [
   {
+   "ts": "2026-09-16T12:44:19+07:00",
+   "date": "2026-09-16",
+   "time": "12:44",
+   "src": "Liputan6",
+   "t": "KLBF Buyback Saham Rp 500 Miliar Mulai 17 September 2026",
+   "tags": [
+    "KLBF"
+   ],
+   "url": "https://www.liputan6.com/saham/read/8292843/klbf-buyback-saham-rp-500-miliar-mulai-17-september-2026",
+   "img": "https://cdn1-production-images-kly.akamaized.net/c9Y6rYeY_HZxiaIRs4tqqW_WxdU=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3526828/original/027148900_1627708283-kalbe_farma_31_juli_2021Kalbe_Farma_31_juli_2021.jpg",
+   "t_id": "KLBF Buyback Saham Rp 500 Miliar Mulai 17 September 2026",
+   "t_ko": "KLBF, 9월 17일부터 Rp5,000억 규모 자사주 매입",
+   "ai_ko": "· KLBF, Rp5,000억 규모 자사주 매입 결정\n· 9월 17일부터 3개월간 내부 자금으로 집행\n· 상반기 매출 Rp19.47조로 14.04% 증가",
+   "ai_id": "· KLBF buyback saham Rp500 miliar\n· 17 Sep-17 Des 2026, pakai dana internal\n· Penjualan semester I Rp19,47 triliun",
+   "ai_tags": [
+    "자사주매입",
+    "실적",
+    "제약"
+   ],
+   "ai_tags_id": [
+    "buyback",
+    "kinerja",
+    "farmasi"
+   ]
+  },
+  {
+   "ts": "2026-09-16T12:42:00+07:00",
+   "date": "2026-09-16",
+   "time": "12:42",
+   "src": "Katadata",
+   "t": "Katadata SAFE 2026 Dibuka, Co-Founder Metta Umumkan Rencana ESG 50 Index",
+   "tags": [
+    "SAFE"
+   ],
+   "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6aaa2c2be352a/katadata-safe-2026-dibuka-co-founder-metta-umumkan-rencana-esg-50-index",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/16/Katadata_SAFE_2026-2026_09_16-12_28_47_e23223c4453015916c1fe637d0d4a622_620x413_thumb.jpg",
+   "t_ko": "Katadata SAFE 2026 개막 — Metta 공동창업자 ESG 50 지수 계획 발표",
+   "t_id": "Katadata SAFE 2026 Dibuka, Co-Founder Metta Umumkan Rencana ESG 50 Index",
+   "ai_ko": "· Katadata, ESG 50 Index 출시 계획 발표\n· SAFE 2026 개막, 9월 16~17일 이틀간 개최\n· 재무·지속가능성 우수 상장사 50곳 선정",
+   "ai_id": "· Katadata umumkan rencana ESG 50 Index\n· SAFE 2026 digelar 16-17 September\n· 50 emiten sehat finansial dan berkelanjuta n",
+   "ai_tags": [
+    "ESG",
+    "지수",
+    "행사"
+   ],
+   "ai_tags_id": [
+    "ESG",
+    "indeks",
+    "acara"
+   ]
+  },
+  {
    "ts": "2026-09-16T12:30:00+07:00",
    "date": "2026-09-16",
    "time": "12:30",
@@ -16256,8 +16301,20 @@
    ],
    "url": "https://www.idxchannel.com/market-news/jejak-sandiaga-uno-dan-tsamanov-merentang-dari-mutu-elit-hingga-miti",
    "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/16/Sandiaga_Uno_-_Tsamanov_-_IG.jpg",
+   "t_ko": "Sandiaga Uno·Tsamanov, MUTU·ELIT·MITI 등 지분 투자 행보",
    "t_id": "Jejak Sandiaga Uno dan Tsamanov Merentang dari MUTU, ELIT hingga MITI",
-   "t_ko": "Sandiaga Uno·Tsamanov, MUTU·ELIT·MITI 등 지분 투자 행보"
+   "ai_ko": "· Sandiaga Uno, MUTU 이사회 의장 선임\n· 8/24 임시 주주총회서 결정, Roestiandi\nTsamanov 부사장 선임 동시 확정\n· MUTU 6월 3.09억주 제3자배정 Rp299.9억",
+   "ai_id": "· Sandiaga Uno jadi Preskom MUTU\n· Ditetapkan via RUPSLB 24 Agustus\n· Private placement Juni Rp29,99 miliar",
+   "ai_tags": [
+    "경영진 변경",
+    "주주총회",
+    "제3자배정"
+   ],
+   "ai_tags_id": [
+    "perubahan manajemen",
+    "RUPS",
+    "private placement"
+   ]
   },
   {
    "ts": "2026-09-16T12:06:00+07:00",
@@ -16702,30 +16759,6 @@
     "media",
     "kerja sama",
     "kinerja"
-   ]
-  },
-  {
-   "ts": "2026-09-16T07:40:00+07:00",
-   "date": "2026-09-16",
-   "time": "07:40",
-   "src": "Katadata",
-   "t": "Emiten Hapsoro SINI Lepas Saham Lini Kayu IKN, Kantongi Rp 31 M Apa Rencananya?",
-   "tags": [
-    "SINI"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aa9e8e2b6590/emiten-hapsoro-sini-lepas-saham-lini-kayu-ikn-kantongi-rp-31-m-apa-rencananya",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/24/Singaraja_Putra_atau_SINI-2026_08_24-17_44_18_7fde3996155a8680632754f935719c9c_620x413_thumb.png",
-   "t_ko": "Hapsoro계 상장사 SINI, 신도시(IKN) 목재 자회사 지분 매각으로 Rp31억 확보",
-   "t_id": "Emiten Hapsoro SINI Lepas Saham Lini Kayu IKN, Kantongi Rp 31 M Apa Rencananya?",
-   "ai_ko": "· Singaraja Putra(SINI), Interkayu Nusantara 지분 전량 매각\n· 54% 지분을 Hendra Hasan Kustarjo에 처분\n· 매각대금 Rp318억, 포트폴리오 재편 목적",
-   "ai_id": "· SINI divestasi seluruh saham IKN\n· 54% dilepas ke Hendra Hasan Kustarjo\n· Nilai Rp31,8 miliar, tata portofolio",
-   "ai_tags": [
-    "지분매각",
-    "M&A"
-   ],
-   "ai_tags_id": [
-    "divestasi",
-    "M&A"
    ]
   },
   {
@@ -17629,6 +17662,63 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-16T12:45:40+07:00",
+   "date": "2026-09-16",
+   "time": "12:45",
+   "src": "Detik",
+   "t": "El Nino Bikin PLTA Sulsel Terganggu, Bahlil Siapkan Pembangkit Pengganti",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8665097/el-nino-bikin-plta-sulsel-terganggu-bahlil-siapkan-pembangkit-pengganti",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/04/20/cadangan-gas-raksasa-ditemukan-di-kaltim-pemerintah-genjot-energi-nasional-1776674766178_169.jpeg?w=360&q=90",
+   "t_ko": "술라웨시 엘니뇨로 수력발전 차질… Bahlil 장관 대체 발전소 준비",
+   "t_id": "El Nino Bikin PLTA Sulsel Terganggu, Bahlil Siapkan Pembangkit Pengganti"
+  },
+  {
+   "ts": "2026-09-16T12:39:38+07:00",
+   "date": "2026-09-16",
+   "time": "12:39",
+   "src": "CNBC",
+   "t": "Oil falls as U.S. crude inventories reportedly rise, traders weigh Saudi pipeline closure",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
+   "g": 1,
+   "t_ko": "미국 원유 재고 증가 보도 및 사우디 송유관 폐쇄 우려에 유가 하락",
+   "t_id": "Harga Minyak Turun di Tengah Laporan Konon Stok Minyak Mentah AS Naik, Pasar Cermati Penutupan Pipa Saudi",
+   "ai_ko": "· 미국 원유재고 710만배럴 증가, 유가 하락\n· 시장은 160만배럴 감소 전망, 9월 11일 기준\n· Saudi East-West 송유관 폐쇄로 공급 불안 상존",
+   "ai_id": "· Stok minyak AS naik 7,1 juta barel\n· Konsensus perkirakan turun 1,6 juta barel\n· Pipa East-West Saudi tutup, pasokan rawan",
+   "ai_tags": [
+    "유가",
+    "원유재고",
+    "지정학"
+   ],
+   "ai_tags_id": [
+    "harga minyak",
+    "stok minyak",
+    "geopolitik"
+   ]
+  },
+  {
+   "ts": "2026-09-16T12:38:00+07:00",
+   "date": "2026-09-16",
+   "time": "12:38",
+   "src": "Media Indonesia",
+   "t": "Cara Membaca Chart Trading untuk Pemula",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/933960/cara-membaca-chart-trading-untuk-pemula",
+   "t_id": "Cara Membaca Chart Trading untuk Pemula",
+   "t_ko": "초보자를 위한 주식 차트 분석법",
+   "ai_ko": "· 초보 투자자용 차트 읽기 기초 해설\n· 캔들스틱·추세·지지선·저항선 순으로 설명\n· 상승·하락·횡보 구분으로 매매 판단 지원",
+   "ai_id": "· Panduan baca chart trading untuk pemula\n· Candlestick, tren, support dan resistance\n· Uptrend, downtrend, sideways jadi acuan",
+   "ai_tags": [
+    "기술적분석",
+    "투자교육"
+   ],
+   "ai_tags_id": [
+    "analisis teknikal",
+    "edukasi investasi"
+   ]
+  },
+  {
    "ts": "2026-09-16T12:30:18+07:00",
    "date": "2026-09-16",
    "time": "12:30",
@@ -17639,6 +17729,18 @@
    "g": 1,
    "t_ko": "Wolf, 사우디 송유관 복구 단기간 내 해결 불가 시사",
    "t_id": "Wolf: Pemulihan Pipa Saudi Bukan Solusi Instan"
+  },
+  {
+   "ts": "2026-09-16T12:29:31+07:00",
+   "date": "2026-09-16",
+   "time": "12:29",
+   "src": "Bloomberg",
+   "t": "Saudis Pivot to Send More Oil Through Hormuz After Pipeline Shut",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-16/saudis-pivot-to-send-more-oil-through-hormuz-after-pipeline-shut",
+   "g": 1,
+   "t_ko": "사우디, 송유관 폐쇄로 호르무즈 해협 원유 수송 확대",
+   "t_id": "Saudi Alihkan Ekspor Minyak Lewat Hormuz Usai Pipa Ditutup"
   },
   {
    "ts": "2026-09-16T12:28:01+07:00",
@@ -17673,8 +17775,8 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/bursa/6aaa27db24239/sp-beri-alarm-untuk-bank-himbara-imbas-pertumbuhan-kredit-terlalu-agresif",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/02/01/Bank_Himbara-2026_02_01-10_18_02_fb96018d25e5dd946e455abaa23bd0ee_620x413_thumb.jpg",
-   "t_id": "SdanP Beri Alarm untuk Bank Himbara Imbas Pertumbuhan Kredit Terlalu Agresif",
    "t_ko": "S&P, 과도한 여신 증가에 Himbara 은행권 경고",
+   "t_id": "SdanP Beri Alarm untuk Bank Himbara Imbas Pertumbuhan Kredit Terlalu Agresif",
    "ai_ko": "· S&P, Himbara 3사 대출 26% 급증 경고\n· 산업 평균 12%의 2배, NIM 10~20bp 압박\n· BMRI·BBRI·BBNI, Agrinas 여신 2~6% 노출",
    "ai_id": "· S&P: kredit Himbara tumbuh 26% yoy\n· Dua kali industri 12%, NIM -10~20 bps\n· BMRI, BBRI, BBNI: Agrinas 2%-6% kredit",
    "ai_tags": [
@@ -17827,28 +17929,17 @@
    "t_id": "ANZ Soroti Rencana Lima Tahun Hong Kong"
   },
   {
-   "ts": "2026-09-16T11:56:02+07:00",
+   "ts": "2026-09-16T11:55:08+07:00",
    "date": "2026-09-16",
-   "time": "11:56",
-   "src": "CNBC",
-   "t": "Oil falls as U.S. crude inventories reportedly rise, traders weigh Saudi pipeline closure",
+   "time": "11:55",
+   "src": "FT",
+   "t": "World’s best-performing sovereign wealth fund expects equities pullback",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
+   "url": "https://www.ft.com/content/6b6a27bd-2725-4591-be8a-fda643c2ac5c?syn-25a6b1a6=1",
    "g": 1,
-   "t_ko": "미국 원유 재고 증가 보도 및 사우디 송유관 폐쇄 우려에 유가 하락",
-   "t_id": "Harga Minyak Turun di Tengah Laporan Konon Stok Minyak Mentah AS Naik, Pasar Cermati Penutupan Pipa Saudi",
-   "ai_ko": "· 미국 원유재고 710만배럴 증가, 유가 하락\n· 시장은 160만배럴 감소 전망, 9월 11일 기준\n· Saudi East-West 송유관 폐쇄로 공급 불안 상존",
-   "ai_id": "· Stok minyak AS naik 7,1 juta barel\n· Konsensus perkirakan turun 1,6 juta barel\n· Pipa East-West Saudi tutup, pasokan rawan",
-   "ai_tags": [
-    "유가",
-    "원유재고",
-    "지정학"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "stok minyak",
-    "geopolitik"
-   ]
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fff06fe4c-81a1-4443-859c-5f3124f4be04.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "세계 최고 성과 국부펀드, 주식 조정 전망",
+   "t_id": "SWF Kinerja Terbaik Dunia Proyeksi Koreksi Pasar Saham"
   },
   {
    "ts": "2026-09-16T11:50:08+07:00",
@@ -18090,54 +18181,6 @@
    ]
   },
   {
-   "ts": "2026-09-16T11:21:39+07:00",
-   "date": "2026-09-16",
-   "time": "11:21",
-   "src": "CNBC",
-   "t": "Nvidia's Huang diverges with CEOs of Anthropic, OpenAI on AI safety at Dreamforce",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/15/nvidia-and-anthropic-ceos-diverge-on-ai-safety-at-dreamforce.html",
-   "g": 1,
-   "t_ko": "Nvidia Huang, Dreamforce서 AI 안전성 두고 Anthropic·OpenAI CEO와 이견",
-   "t_id": "Huang Nvidia Berbeda Pandangan dengan CEO Anthropic dan OpenAI soal Keamanan AI di Dreamforce",
-   "ai_ko": "· Nvidia Huang, AI 안전-속도 양립 주장\n· Dreamforce서 Anthropic·OpenAI와 이견\n· Salesforce, Nvidia Nemotron 기반 모델 공개",
-   "ai_id": "· Huang: AI aman dan cepat bisa seiring\n· Beda sikap dengan Anthropic dan OpenAI\n· Salesforce rilis model berbasis Nemotron",
-   "ai_tags": [
-    "인공지능",
-    "규제",
-    "제휴"
-   ],
-   "ai_tags_id": [
-    "AI",
-    "regulasi",
-    "kemitraan"
-   ]
-  },
-  {
-   "ts": "2026-09-16T11:20:11+07:00",
-   "date": "2026-09-16",
-   "time": "11:20",
-   "src": "CNA",
-   "t": "India's payment firms jump as UPI fee boosts revenue outlook",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/indias-payment-firms-jump-upi-fee-boosts-revenue-outlook-6388116",
-   "g": 1,
-   "t_ko": "인도 결제 수수료 인상에 핀테크주 상승 — 매출 전망 상향",
-   "t_id": "Perusahaan Pembayaran India Melonjak Seiring Biaya UPI Dongkrak Prospek Pendapatan",
-   "ai_ko": "· 인도 결제주 2~8% 상승, UPI 수수료 도입\n· 10/15부터 2,000루피 초과 가맹점 결제 0.4%\n· Paytm·Mobikwik·Yes Bank 수혜, Pine Labs 3.2% 하락",
-   "ai_id": "· Saham pembayaran India naik 2%-8%\n· Biaya UPI 0,4% mulai 15 Oktober\n· Paytm dan Mobikwik untung, Pine Labs turun",
-   "ai_tags": [
-    "수수료",
-    "결제",
-    "주가"
-   ],
-   "ai_tags_id": [
-    "biaya",
-    "pembayaran",
-    "saham"
-   ]
-  },
-  {
    "ts": "2026-09-16T11:18:04+07:00",
    "date": "2026-09-16",
    "time": "11:18",
@@ -18303,52 +18346,6 @@
     "regulasi",
     "ekspor",
     "batu bara"
-   ]
-  },
-  {
-   "ts": "2026-09-16T09:36:28+07:00",
-   "date": "2026-09-16",
-   "time": "09:36",
-   "src": "Detik",
-   "t": "Dolar AS Menguat ke Level Rp 17.737",
-   "tags": [],
-   "url": "https://finance.detik.com/bursa-dan-valas/d-8664777/dolar-as-menguat-ke-level-rp-17-737",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/10/rupiah-masih-tertekan-dolar-as-betah-di-level-rp18000-1783662450657_169.jpeg?w=360&q=90",
-   "t_ko": "미국 달러화, Rp17,737 수준으로 강세",
-   "t_id": "Dolar AS Menguat ke Level Rp 17.737",
-   "ai_ko": "· 달러/루피아 0.24% 오른 Rp17,737\n· 전일 종가 Rp17,694, 최근 1주 0.70% 절하\n· 달러는 엔·캐나다달러 강세, 유로·파운드 약세",
-   "ai_id": "· Dolar AS naik 0,24% ke Rp 17.737\n· Sepekan rupiah melemah 0,70%\n· Dolar variatif: kuat vs JPY, lemah vs EUR",
-   "ai_tags": [
-    "환율",
-    "루피아"
-   ],
-   "ai_tags_id": [
-    "kurs",
-    "rupiah"
-   ]
-  },
-  {
-   "ts": "2026-09-16T09:28:01+07:00",
-   "date": "2026-09-16",
-   "time": "09:28",
-   "src": "Republika",
-   "t": "Amran Akui Harga Beras Naik, Ini Sejumlah Faktor Penyebabnya",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tlfqup490/amran-akui-harga-beras-naik-ini-sejumlah-faktor-penyebabnya",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/058726000-1789302768-830-556.jpg",
-   "t_ko": "Amran 장관, 쌀값 상승 인정… 주요 원인 진단",
-   "t_id": "Amran Akui Harga Beras Naik, Ini Sejumlah Faktor Penyebabnya",
-   "ai_ko": "· 정부, SPHP 쌀 100만톤 추가 공급 결정\n· 쌀값 상승에 3,340만 가구 식량지원 앞당겨\n· 강화미 둔갑 의혹 제기, 쌀 유통 규제 부각",
-   "ai_id": "· Pemerintah tambah SPHP 1 juta ton\n· Bantuan pangan 33,4 juta rumah tangga\n· Dugaan beras premium ke fortifikasi",
-   "ai_tags": [
-    "쌀값",
-    "물가",
-    "규제"
-   ],
-   "ai_tags_id": [
-    "harga beras",
-    "inflasi",
-    "regulasi"
    ]
   }
  ],
@@ -18521,9 +18518,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "12.94",
-   "d": -1.06,
-   "ytd": 11.46,
+   "v": "12.97",
+   "d": -0.91,
+   "ytd": 11.63,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18557,8 +18554,8 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "99.61",
-   "d": -0.06,
-   "ytd": 1.35,
+   "d": -0.02,
+   "ytd": 1.36,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18568,9 +18565,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "104.78",
-   "d": 0.0,
-   "ytd": 82.48,
+   "v": "104.64",
+   "d": 0.32,
+   "ytd": 82.24,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18580,9 +18577,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,365.2",
-   "d": -0.05,
-   "ytd": 0.92,
+   "v": "4,370.2",
+   "d": -0.2,
+   "ytd": 1.03,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18604,9 +18601,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,046",
-   "d": 0.93,
-   "ytd": -3.81,
+   "v": "16,048",
+   "d": 0.95,
+   "ytd": -3.8,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -19554,6 +19551,171 @@
    "title_id": "Neraca Anggaran Federal AS (Agu)"
   },
   {
+   "date": "2026-09-14",
+   "t": "BBCA",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "ARTO",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "SIDO",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "JSMR",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "BBNI",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "ITMG",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "REFI",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Penyampaian Laporan Keuangan Interim Auditan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan Interim Auditan",
+   "title_id": "Kinerja · Penyampaian Laporan Keuangan Interim Auditan"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "LMSH",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Penyampaian Laporan Keuangan Tahunan (KOREKSI)",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan Tahunan (KOREKSI)",
+   "title_id": "Kinerja · Penyampaian Laporan Keuangan Tahunan (KOREKSI)"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "LION",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Penyampaian Laporan Keuangan Tahunan (KOREKSI)",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan Tahunan (KOREKSI)",
+   "title_id": "Kinerja · Penyampaian Laporan Keuangan Tahunan (KOREKSI)"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "BNBA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Hasil RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Hasil RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Hasil RUPS"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "TCPI",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Hasil RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Hasil RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Hasil RUPS"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "AIMS",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "HEXA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "SMLE",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-14",
+   "t": "GRPH",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Insidentil"
+  },
+  {
    "date": "2026-09-15",
    "time": "19:30",
    "kind": "macro",
@@ -19566,6 +19728,160 @@
    "src": "investing.com",
    "title_ko": "9월 뉴욕 엠파이어스테이트 제조업지수",
    "title_id": "Indeks Manufaktur Empire State NY (Sep)"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "ANTM",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "INCO",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "ASII",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "BBTN",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "MIKA",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "TINS",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "RAJA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Rencana Penyelenggaraan Public Expose - Tahunan (KOREKSI)",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Rencana Penyelenggaraan Public Expose - Tahunan (KOREKSI)",
+   "title_id": "Public Expose · Rencana Penyelenggaraan Public Expose - Tahunan (KOREKSI)"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "EDGE",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Transaksi Material Tanpa Persetujuan RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Transaksi Material Tanpa Persetujuan RUPS",
+   "title_id": "RUPS · Transaksi Material Tanpa Persetujuan RUPS"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "AKKU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Insidentil"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "GGRM",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "MGLV",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Insidentil"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "LAPD",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Pemberitahuan RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Pemberitahuan RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Pemberitahuan RUPS"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "LPCK",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Siaran Pers: PT Lippo Cikarang Tbk Gelar RUPSLB 2026, Menyetujui Perubahan Susunan Dewan K",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Siaran Pers: PT Lippo Cikarang Tbk Gelar RUPSLB 2026, Menyetujui Perubahan Susunan Dewan K",
+   "title_id": "RUPS · Siaran Pers: PT Lippo Cikarang Tbk Gelar RUPSLB 2026, Menyetujui Perubahan Susunan Dewan K"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "RATU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
   },
   {
    "date": "2026-09-16",
@@ -19664,6 +19980,17 @@
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
    "title_id": "GDPNow The Fed Atlanta (Q3)"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "MGLV",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Insidentil (KOREKSI)",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Insidentil (KOREKSI)",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose - Insidentil (KOREKSI)"
   },
   {
    "date": "2026-09-17",
@@ -23265,10 +23592,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-16 12:33",
-  "pc_age_min": 7,
-  "news_ai_cache": 103,
-  "news_ai_hit": 75,
+  "idx_from_pc": "2026-09-16 12:48",
+  "pc_age_min": 5,
+  "news_ai_cache": 105,
+  "news_ai_hit": 73,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25053,32 +25380,6 @@
  "top_day": "2026-09-16",
  "top_news": [
   {
-   "ts": "2026-09-16T10:39:00+07:00",
-   "date": "2026-09-16",
-   "time": "10:39",
-   "src": "Katadata",
-   "t": "Apindo Berharap Menkeu Suahasil Nazara Bisa Atasi Masalah Fiskal dan Investasi",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/industri/6aaa0f807fe80/apindo-berharap-menkeu-suahasil-nazara-bisa-atasi-masalah-fiskal-dan-investasi",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/10/11/2025_10_11-13_57_00_27f5c7da-a67f-11f0-9c89-0242ac120006_620x413_thumb.jpg",
-   "t_ko": "Apindo, Suahasil Nazara 재무차관이 재정 및 투자 현안 해결하기를 기대",
-   "t_id": "Apindo Berharap Menkeu Suahasil Nazara Bisa Atasi Masalah Fiskal dan Investasi",
-   "ai_ko": "· Apindo, 신임 재무장관 Suahasil Nazara에 기대\n· 재정차관·BKF 경력으로 정책 연속성 평가\n· 세제·관세·투자 인센티브 예측가능성 요구",
-   "ai_id": "· Apindo berharap pada Menkeu Suahasil\n· Eks Wamenkeu dan BKF, jaga kontinuitas\n· Minta kepastian pajak dan insentif",
-   "ai_tags": [
-    "정책",
-    "재정",
-    "투자"
-   ],
-   "ai_tags_id": [
-    "fiskal",
-    "kebijakan",
-    "investasi"
-   ],
-   "score": 416.55,
-   "srcs": 3
-  },
-  {
    "ts": "2026-09-16T00:58:31+07:00",
    "date": "2026-09-16",
    "time": "00:58",
@@ -25093,31 +25394,18 @@
    "t_id": "1 Tahun Purbaya Jadi Menkeu: Pertumbuhan Ekonomi Melejit Rp 5,61 Persen, Rupiah dan IHSG Ambruk"
   },
   {
-   "ts": "2026-09-16T08:49:22+07:00",
+   "ts": "2026-09-16T10:39:00+07:00",
    "date": "2026-09-16",
-   "time": "08:49",
-   "src": "IDNFinancials",
-   "t": "See where Indonesia’s stocks are heading to ahead of the Fed policy",
+   "time": "10:39",
+   "src": "Katadata",
+   "t": "Apindo Berharap Menkeu Suahasil Nazara Bisa Atasi Masalah Fiskal dan Investasi",
    "tags": [],
-   "url": "https://www.idnfinancials.com/news/68919/see-where-indonesias-stocks-are-heading-to-ahead-of-the-fed-policy",
-   "g": 1,
-   "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG-THE-FED.jpg",
-   "score": 413.65,
-   "srcs": 8,
-   "t_ko": "연준 통화정책 앞두고 인도네시아 증시 전망",
-   "t_id": "Prospek Saham RI Jelang Keputusan The Fed",
-   "ai_ko": "· JCI 5거래일 연속 하락 전망\n· 지지선 6,350~6,400 테스트 예상\n· 유가 강세·외국인 순매도 부담",
-   "ai_id": "· IHSG diprediksi lanjut melemah\n· Support di kisaran 6.350-6.400\n· Harga minyak & jual asing membebani",
-   "ai_tags": [
-    "증시전망",
-    "외국인",
-    "유가"
-   ],
-   "ai_tags_id": [
-    "proyeksi IHSG",
-    "asing",
-    "harga minyak"
-   ]
+   "url": "https://katadata.co.id/berita/industri/6aaa0f807fe80/apindo-berharap-menkeu-suahasil-nazara-bisa-atasi-masalah-fiskal-dan-investasi",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/10/11/2025_10_11-13_57_00_27f5c7da-a67f-11f0-9c89-0242ac120006_620x413_thumb.jpg",
+   "t_ko": "Apindo, Suahasil Nazara 재무차관이 재정 및 투자 현안 해결하기를 기대",
+   "t_id": "Apindo Berharap Menkeu Suahasil Nazara Bisa Atasi Masalah Fiskal dan Investasi",
+   "score": 414.45,
+   "srcs": 3
   },
   {
    "ts": "2026-09-16T11:00:00+07:00",
@@ -25144,6 +25432,20 @@
    ],
    "score": 408.15,
    "srcs": 1
+  },
+  {
+   "ts": "2026-09-16T04:12:31+07:00",
+   "date": "2026-09-16",
+   "time": "04:12",
+   "src": "Jawa Pos",
+   "t": "Ekonom: Peluang BI Naikkan Suku Bunga Kecil Pada RDG Pekan Depan",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609150532/ekonom-peluang-bi-naikkan-suku-bunga-kecil-pada-rdg-pekan-depan",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/15/asean-economist-uob-enrico-tanuwidjaja-dalam-diskusi-bertajuk-reclaiming-global-trust-indonesias-investment-agenda-for-a-volatile-world-di-jakarta-selasa-159dimas-choiruljawaposcom-0OsHP.webp",
+   "score": 407.05,
+   "srcs": 1,
+   "t_ko": "전문가, 다음 주 통화정책회의서 BI 금리 인상 가능성 낮아",
+   "t_id": "Ekonom: Peluang BI Naikkan Suku Bunga Kecil Pada RDG Pekan Depan"
   },
   {
    "ts": "2026-09-16T12:28:01+07:00",
@@ -25503,34 +25805,34 @@
   "2026-09-16": {
    "news": [
     {
-     "t": "Gold Steadies Below $4,300 as Markets Await Fed Rate Decision",
-     "ko": "금값 4,300달러 하회 안정, 연준 금리 결정 대기",
-     "id": "Emas Stabil di Bawah US$4,300 Jelang Keputusan Suku Bunga The Fed",
-     "ai_ko": "",
-     "ai_id": "",
-     "src": "Bloomberg",
-     "url": "https://www.bloomberg.com/news/articles/2026-09-16/gold-steadies-below-4-300-as-markets-await-fed-rate-decision",
-     "time": "07:00",
+     "t": "Treasury yields hitting 5% may not break markets now — but the clock is ticking",
+     "ko": "국채 금리 5% 돌파, 당장 시장 충격 없으나 잠재 위험 부각",
+     "id": "Imbal Hasil US Treasury Tembus 5% Belum Tentu Guncang Pasar Saat Ini",
+     "ai_ko": "· 미국 10년물 국채금리 2007년 이후 최고\n· 저금리기 조달 부채 6~8% 차환 부담\n· 주택·상업용부동산·고부채 기업 취약",
+     "ai_id": "· Yield UST 10 tahun tertinggi sejak 2007\n· Utang murah harus refinancing di 6-8%\n· Sektor properti dan emiten utang tinggi rentan",
+     "src": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/16/10-year-treasury-yeilds-rise-impact-markets.html",
+     "time": "12:28",
      "tags": [],
-     "sc": 316.0,
+     "sc": 318.0,
      "slot": "global",
-     "q": 85
+     "q": 86
     },
     {
-     "t": "Buyback Rampung, Saham BRI (BBRI) Melesat 16%",
-     "ko": "BBRI, 자사주 매입 완료로 주가 16% 급등",
-     "id": "Buyback Rampung, Saham BRI (BBRI) Melesat 16%",
-     "ai_ko": "· BBRI 자사주 매입 종료, 주가 16% 상승\n· 6월 12일 Rp2,850에서 현재 Rp3,320\n· 3,100만주·Rp903.7억 집행, 한도 Rp5,000억",
-     "ai_id": "· Buyback BBRI selesai, saham naik 16%\n· Dari Rp2.850 kini Rp3.320 per saham\n· Realisasi 31 juta saham, Rp90,37 miliar",
-     "src": "Bloomberg Technoz",
-     "url": "https://www.bloombergtechnoz.com/detail-news/121645/buyback-rampung-saham-bri-bbri-melesat-16",
-     "time": "08:20",
+     "t": "Emiten Hapsoro SINI Lepas Saham Lini Kayu IKN, Kantongi Rp 31 M Apa Rencananya?",
+     "ko": "Hapsoro 계열 SINI, IKN 목재사업 지분 매각 Rp310억 확보 — 향후 계획은",
+     "id": "Emiten Hapsoro SINI Lepas Saham Lini Kayu IKN, Kantongi Rp 31 M Apa Rencananya?",
+     "ai_ko": "· Singaraja Putra(SINI), Interkayu Nusantara 지분 전량 매각\n· 54% 지분을 Hendra Hasan Kustarjo에 처분\n· 매각대금 Rp318억, 포트폴리오 재편 목적",
+     "ai_id": "· SINI divestasi seluruh saham IKN\n· 54% dilepas ke Hendra Hasan Kustarjo\n· Nilai Rp31,8 miliar, tata portofolio",
+     "src": "Katadata",
+     "url": "https://katadata.co.id/finansial/bursa/6aa9e8e2b6590/emiten-hapsoro-sini-lepas-saham-lini-kayu-ikn-kantongi-rp-31-m-apa-rencananya",
+     "time": "07:40",
      "tags": [
-      "BBRI"
+      "SINI"
      ],
-     "sc": 216.8,
+     "sc": 217.8,
      "slot": "stock",
-     "q": 81
+     "q": 60
     },
     {
      "t": "BEI Aktifkan Lagi Short Selling, Ini Cara Kerjanya",
@@ -35107,9 +35409,9 @@
    "ratio": 0.4,
    "ev_ko": "자본구조",
    "ev_id": "Aksi korporasi",
-   "hl": "KLBF, 루피아 약세 타격에 자사주 매입 결정",
-   "hl_id": "Fundamental & Harga Saham Dihantam Rupiah, KLBF Putuskan Buyback",
-   "url": "https://www.bloombergtechnoz.com/detail-news/121664/fundamental-harga-saham-dihantam-rupiah-klbf-putuskan-buyback",
+   "hl": "KLBF, 9월 17일부터 Rp5,000억 규모 자사주 매입",
+   "hl_id": "KLBF Buyback Saham Rp 500 Miliar Mulai 17 September 2026",
+   "url": "https://www.liputan6.com/saham/read/8292843/klbf-buyback-saham-rp-500-miliar-mulai-17-september-2026",
    "score": 56.4,
    "s_news": 95,
    "s_size": 64,
@@ -35120,7 +35422,7 @@
    "alpha": -1.66,
    "vrank": 43,
    "flow": -26.65,
-   "srcs": 3
+   "srcs": 4
   },
   {
    "t": "PSAB",
@@ -35741,6 +36043,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 12:24"
+  "announcements": "2026-09-16 12:40"
  }
 }
