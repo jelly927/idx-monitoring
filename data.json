@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 18:12",
+ "updated": "2026-09-16 18:16",
  "delay_min": 15,
  "fx_basis": "12.93 IDR/KRW · USD/IDR 17,690 · USD/KRW 1,368 · 17:15 Yahoo",
- "idr_per_krw": 12.9268,
+ "idr_per_krw": 12.9277,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -331,13 +331,13 @@
   "prev": 6461.15,
   "ytd": -25.56,
   "m1": -0.2,
-  "value_idr": 10929839903866.678,
+  "value_idr": 10929364477866.678,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 18:04",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-16 18:04",
   "rank_asof": null,
   "rank_date": "2026-09-16",
-  "adv": 215,
+  "adv": 214,
   "dec": 459,
   "unch": 159,
   "foreign_net_idr": -588236609776.6709,
@@ -8545,22 +8545,6 @@
    "live": 0
   },
   {
-   "t": "BINA",
-   "n": "Bank Ina Perdana",
-   "px": 4080.0,
-   "prev": 4060.0,
-   "pct": 0.49,
-   "val": 475426000.0,
-   "vol": 117100.0,
-   "sh": 6073369498,
-   "mcap": 24779347551840.0,
-   "hi": 4080.0,
-   "lo": 4020.0,
-   "ratio": 0.3,
-   "fnet": -131973590.94790778,
-   "live": 0
-  },
-  {
    "t": "KAEF",
    "n": "Kimia Farma Tbk",
    "px": 442.0,
@@ -14647,11 +14631,11 @@
   {
    "name": "금융",
    "name_id": "Keuangan",
-   "n": 98,
-   "adv": 24,
+   "n": 97,
+   "adv": 23,
    "dec": 51,
-   "val": 1868170501866.6672,
-   "mcap": 2907834509103532.0,
+   "val": 1867695075866.6672,
+   "mcap": 2883055161551692.0,
    "top": [
     {
      "t": "BBCA",
@@ -14694,8 +14678,8 @@
      "pct": 0.26
     }
    ],
-   "fnet": -355677309523,
-   "pct": -0.69,
+   "fnet": -355545335932,
+   "pct": -0.7,
    "fbuy_top": [
     {
      "t": "TUGU",
@@ -15520,6 +15504,14 @@
  ],
  "daycal": [
   {
+   "d": "2026-08-10",
+   "t": "TPIA",
+   "n": "Chandra Asri Pacific",
+   "px": 2120,
+   "pct": -4.93,
+   "val": 1437562207000
+  },
+  {
    "d": "2026-08-11",
    "t": "TPIA",
    "n": "Chandra Asri Pacific",
@@ -16324,22 +16316,8 @@
    ],
    "url": "https://www.idnfinancials.com/news/68943/ptpp-approved-by-shareholders-for-idr-18-2-trillion-debt-restructuring",
    "img": "https://photo2.idnfinancials.com/fly/idn/PTPP-restrukturisasi-utang-Rp182-triliun-lewat-3-s.jpg",
-   "t_ko": "PTPP, 주총서 Rp18.2조 규모 채무 재조정 승인",
-   "t_id": "PTPP Kantongi Restu Pemegang Saham Restrukturisasi Utang Rp18,2 Triliun"
-  },
-  {
-   "ts": "2026-09-16T17:57:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:57",
-   "src": "IDX Channel",
-   "t": "Elnusa (ELSA) Tuntaskan Proyek Seismik PHE 6.000 Km di Laut Selatan Jawa",
-   "tags": [
-    "ELSA"
-   ],
-   "url": "https://www.idxchannel.com/economics/elnusa-elsa-tuntaskan-proyek-seismik-phe-6000-km-di-laut-selatan-jawa",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2018/12/10/Elnusa.jpeg",
-   "t_id": "Elnusa (ELSA) Tuntaskan Proyek Seismik PHE 6.000 Km di Laut Selatan Jawa",
-   "t_ko": "ELSA, 자바 해상 6,000km PHE 탄성파 탐사 프로젝트 완료"
+   "t_ko": "PTPP, 주총서 Rp18.2조 채무 재조정 승인",
+   "t_id": "PTPP Setujui Restrukturisasi Utang Rp18,2 Triliun dalam RUPS"
   },
   {
    "ts": "2026-09-16T17:54:00+07:00",
@@ -16352,7 +16330,7 @@
    ],
    "url": "https://www.idxchannel.com/market-news/produsen-air-minum-ades-perluas-bisnis-perdagangan-lewat-anak-usaha-baru",
    "img": "https://img.idxchannel.com/media/439/images/idx/2023/06/23/ADES.JPG",
-   "t_ko": "ADES, 신설 자회사 통해 음용수 유통 사업 확충",
+   "t_ko": "ADES, 신설 자회사 통해 생수 유통 사업 확장",
    "t_id": "Produsen Air Minum (ADES) Perluas Bisnis Perdagangan Lewat Anak Usaha Baru"
   },
   {
@@ -16368,20 +16346,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260916174954-424.png",
    "t_ko": "OMODA·JAECOO, SCBD와 Bekasi에 대리점 2곳 추가",
    "t_id": "OMODA dan JAECOO Tambah Dua Dealer, Ada di SCBD dan Bekasi"
-  },
-  {
-   "ts": "2026-09-16T17:19:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:19",
-   "src": "IDX Channel",
-   "t": "KPK Deteksi Ada Pemberian Lain dari Summarecon ke Kementerian ATR/BPN pada Maret",
-   "tags": [
-    "SMRA"
-   ],
-   "url": "https://www.idxchannel.com/news/kpk-deteksi-ada-pemberian-lain-dari-summarecon-ke-kementerian-atrbpn-pada-maret",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/16/1000490163__1_.jpg",
-   "t_id": "KPK Deteksi Ada Pemberian Lain dari Summarecon ke Kementerian ATR/BPN pada Maret",
-   "t_ko": "KPK, 3월 Summarecon의 ATR/BPN 부처 추가 자금 제공 정황 포착"
   },
   {
    "ts": "2026-09-16T16:59:19+07:00",
@@ -16439,6 +16403,59 @@
    ]
   },
   {
+   "ts": "2026-09-16T16:47:00+07:00",
+   "date": "2026-09-16",
+   "time": "16:47",
+   "src": "IDX Channel",
+   "t": "Pinago (PNGO) Rombak Kegiatan Usaha, 83 Lini Bisnis Dihapus",
+   "tags": [
+    "PNGO"
+   ],
+   "url": "https://www.idxchannel.com/market-news/pinago-pngo-rombak-kegiatan-usaha-83-lini-bisnis-dihapus",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/05/06/Pinago_Utama_dok_PNGO.JPG",
+   "t_ko": "PNGO, 사업 다각화 재편으로 83개 사업부문 철수",
+   "t_id": "Pinago (PNGO) Rombak Kegiatan Usaha, 83 Lini Bisnis Dihapus",
+   "ai_ko": "· Pinago(PNGO), 미영위 사업 83개 정리\n· KBLI 2025 기준 축산·농업서비스 등 전환\n· 실제 미영위로 부문별 실적 영향 없음",
+   "ai_id": "· Pinago (PNGO) hapus 83 lini bisnis\n· Disesuaikan dengan KBLI 2025\n· Tak ada dampak ke kinerja segmen",
+   "ai_tags": [
+    "사업목적변경",
+    "공시",
+    "규제"
+   ],
+   "ai_tags_id": [
+    "perubahan usaha",
+    "keterbukaan informas",
+    "regulasi"
+   ]
+  },
+  {
+   "ts": "2026-09-16T16:22:00+07:00",
+   "date": "2026-09-16",
+   "time": "16:22",
+   "src": "IDX Channel",
+   "t": "10 Saham Top Gainer Perdagangan Rabu 16 September 2026, MGNA-UANG Posisi Teratas",
+   "tags": [
+    "MGNA",
+    "UANG"
+   ],
+   "url": "https://www.idxchannel.com/market-news/10-saham-top-gainer-perdagangan-rabu-16-september-2026-mgna-uang-posisi-teratas",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/06/03/Saham_naik_-_buy_-_magnific_-_freepi_Jun_26.jpeg",
+   "t_ko": "16일 거래소 상승 상위 10개 종목 — MGNA·UANG 선두",
+   "t_id": "10 Saham Top Gainer Perdagangan Rabu 16 September 2026, MGNA-UANG Posisi Teratas",
+   "ai_ko": "· MGNA 34.46% 급등해 상승률 1위\n· UANG 24.93%, VISI 24.88% 뒤이어\n· IHSG 0.38% 하락장서 소형주 강세",
+   "ai_id": "· MGNA melonjak 34,46% jadi top gainer\n· UANG 24,93%, VISI naik 24,88%\n· IHSG turun 0,38%, saham kecil ramai",
+   "ai_tags": [
+    "급등주",
+    "증시",
+    "소형주"
+   ],
+   "ai_tags_id": [
+    "top gainer",
+    "bursa",
+    "saham kecil"
+   ]
+  },
+  {
    "ts": "2026-09-16T16:13:00+07:00",
    "date": "2026-09-16",
    "time": "16:13",
@@ -16462,6 +16479,32 @@
     "regulasi",
     "properti",
     "korupsi"
+   ]
+  },
+  {
+   "ts": "2026-09-16T16:03:00+07:00",
+   "date": "2026-09-16",
+   "time": "16:03",
+   "src": "IDX Channel",
+   "t": "TGUK Lanjutkan MTO di Tengah Transformasi Bisnis dan Perbaikan Kinerja",
+   "tags": [
+    "TGUK"
+   ],
+   "url": "https://www.idxchannel.com/market-news/tguk-lanjutkan-mto-di-tengah-transformasi-bisnis-dan-perbaikan-kinerja",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/16/TGUK.jpg",
+   "t_ko": "TGUK, 사업 체질 개선 및 실적 회복 속 MTO 지속",
+   "t_id": "TGUK Lanjutkan MTO di Tengah Transformasi Bisnis dan Perbaikan Kinerja",
+   "ai_ko": "· Platinum Wahab(TGUK) 주가 Rp98~100 강세\n· 경영권 인수 절차 재개, 공개매수 단계 진입\n· 9월 3일 IDX에 MTO 지속 의사 서한 제출",
+   "ai_id": "· Saham TGUK menguat di Rp98-Rp100\n· Proses akuisisi berlanjut ke tahap MTO\n· Surat ke BEI dikirim 3 September 2026",
+   "ai_tags": [
+    "M&A",
+    "공개매수",
+    "주가"
+   ],
+   "ai_tags_id": [
+    "akuisisi",
+    "tender offer",
+    "saham"
    ]
   },
   {
@@ -16528,6 +16571,32 @@
     "akuisisi",
     "pengendali",
     "tender offer"
+   ]
+  },
+  {
+   "ts": "2026-09-16T14:47:00+07:00",
+   "date": "2026-09-16",
+   "time": "14:47",
+   "src": "IDX Channel",
+   "t": "Presdir Summarecon (SMRA) Diamankan KPK, Ini Penjelasan Manajemen",
+   "tags": [
+    "SMRA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/presdir-summarecon-smra-diamankan-kpk-ini-penjelasan-manajemen",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/15/Summarecon_Bekasi.jpg",
+   "t_ko": "Summarecon(SMRA) 대표 KPK 체포에 경영진 입장 표명",
+   "t_id": "Presdir Summarecon (SMRA) Diamankan KPK, Ini Penjelasan Manajemen",
+   "ai_ko": "· Summarecon(SMRA) 대표 KPK 긴급체포\n· Bogor HGB 인허가 부패 의혹 연루\n· 경영 공백에 부동산주 투자심리 부담",
+   "ai_id": "· Presdir Summarecon (SMRA) kena OTT KPK\n· Dugaan korupsi urus HGB di Bogor\n· Risiko sentimen negatif saham properti",
+   "ai_tags": [
+    "규제",
+    "경영진",
+    "부동산"
+   ],
+   "ai_tags_id": [
+    "regulasi",
+    "manajemen",
+    "properti"
    ]
   },
   {
@@ -16610,6 +16679,34 @@
    ]
   },
   {
+   "ts": "2026-09-16T12:30:00+07:00",
+   "date": "2026-09-16",
+   "time": "12:30",
+   "src": "IDX Channel",
+   "t": "Jejak Sandiaga Uno dan Tsamanov Merentang dari MUTU, ELIT hingga MITI",
+   "tags": [
+    "ELIT",
+    "MITI",
+    "MUTU"
+   ],
+   "url": "https://www.idxchannel.com/market-news/jejak-sandiaga-uno-dan-tsamanov-merentang-dari-mutu-elit-hingga-miti",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/16/Sandiaga_Uno_-_Tsamanov_-_IG.jpg",
+   "t_ko": "Sandiaga Uno·Tsamanov, MUTU·ELIT·MITI 등 지분 투자 행보",
+   "t_id": "Jejak Sandiaga Uno dan Tsamanov Merentang dari MUTU, ELIT hingga MITI",
+   "ai_ko": "· Sandiaga Uno, MUTU 이사회 의장 선임\n· 8/24 임시 주주총회서 결정, Roestiandi\nTsamanov 부사장 선임 동시 확정\n· MUTU 6월 3.09억주 제3자배정 Rp299.9억",
+   "ai_id": "· Sandiaga Uno jadi Preskom MUTU\n· Ditetapkan via RUPSLB 24 Agustus\n· Private placement Juni Rp29,99 miliar",
+   "ai_tags": [
+    "경영진 변경",
+    "주주총회",
+    "제3자배정"
+   ],
+   "ai_tags_id": [
+    "perubahan manajemen",
+    "RUPS",
+    "private placement"
+   ]
+  },
+  {
    "ts": "2026-09-16T12:25:00+07:00",
    "date": "2026-09-16",
    "time": "12:25",
@@ -16633,6 +16730,32 @@
     "direksi",
     "perbankan",
     "RUPS"
+   ]
+  },
+  {
+   "ts": "2026-09-16T12:06:00+07:00",
+   "date": "2026-09-16",
+   "time": "12:06",
+   "src": "IDX Channel",
+   "t": "Nawasena Caplok 66,58 Persen Saham IDEA, Siap Jadi Pengendali Baru",
+   "tags": [
+    "IDEA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/nawasena-caplok-6658-persen-saham-idea-siap-jadi-pengendali-baru",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2023/07/06/Idea_Indonesia.jpeg",
+   "t_ko": "Nawasena, IDEA 지분 66.58% 인수해 최대주주 등극",
+   "t_id": "Nawasena Caplok 66,58 Persen Saham IDEA, Siap Jadi Pengendali Baru",
+   "ai_ko": "· Nawasena, IDEA 지분 66.58% 인수\n· 대상 주식 7억732만주, 기존 최대주주 물량\n· 거래금액·일정 미확정, IDEA 경영권 변경",
+   "ai_id": "· Nawasena caplok 66,58% saham IDEA\n· Sebanyak 707.322.700 saham dialihkan\n· Nilai dan jadwal belum final",
+   "ai_tags": [
+    "M&A",
+    "지분인수",
+    "경영권"
+   ],
+   "ai_tags_id": [
+    "akuisisi",
+    "pengambilalihan",
+    "pengendali"
    ]
   },
   {
@@ -17171,6 +17294,19 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-16T18:11:44+07:00",
+   "date": "2026-09-16",
+   "time": "18:11",
+   "src": "CNA",
+   "t": "Japan gas association welcomes government's first emergency LNG deal with Petronas",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/japan-gas-association-welcomes-governments-first-emergency-lng-deal-petronas-6389061",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--XaNYqI5I--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-16T111144Z_1_LYNXMPEM8F13I_RTROPTP_3_PETRONAS-PRODUCTION-SHARING-CONTRACT-PTT.JPG?itok=5cxO3Ub5",
+   "t_ko": "일본 가스협회, Petronas와의 첫 비상 LNG 계약 환영",
+   "t_id": "Asosiasi Gas Jepang Sambut Kesepakatan LNG Darurat Pertama Pemerintah dengan Petronas"
+  },
+  {
    "ts": "2026-09-16T18:10:00+07:00",
    "date": "2026-09-16",
    "time": "18:10",
@@ -17179,8 +17315,47 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121772/bei-kaji-ulang-wacana-perpanjangan-jam-bursa",
    "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814105502.jpeg",
-   "t_ko": "BEI, 거래시간 연장 방안 재검토",
+   "t_ko": "IDX, 증시 거래 시간 연장 방안 재검토",
    "t_id": "BEI Kaji Ulang Wacana Perpanjangan Jam Bursa"
+  },
+  {
+   "ts": "2026-09-16T18:08:54+07:00",
+   "date": "2026-09-16",
+   "time": "18:08",
+   "src": "Yahoo Finance",
+   "t": "China condiment firm Haitan buys Amoy Food",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/china-condiment-firm-haitan-buys-110854132.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/just_food_692/444c2817f03eb6d21678dd642c219aad.jpg",
+   "t_ko": "중국 조미료사 Haitan, Amoy Food 인수",
+   "t_id": "Perusahaan Bumbu Asal China Haitan Akuisisi Amoy Food"
+  },
+  {
+   "ts": "2026-09-16T18:08:31+07:00",
+   "date": "2026-09-16",
+   "time": "18:08",
+   "src": "Yahoo Finance",
+   "t": "Dow Jones Futures Rise As ServiceNow, Twilio Lead 8 New Buys; Will Market Bid Bond Voyage After Fed Rate Hike?",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-how-will-bonds-react-to-fed-rate-hike/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/24ee3a477044c231715245d41a21f0e3.jpg",
+   "t_ko": "ServiceNow·Twilio 매수세에 다우선물 상승",
+   "t_id": "Dow Jones Futures Naik Seiring ServiceNow dan Twilio Pimpin 8 Pembelian Baru; Pasar Siap Lepas Obligasi Usai Kenaikan Suku Bunga The Fed?"
+  },
+  {
+   "ts": "2026-09-16T18:05:40+07:00",
+   "date": "2026-09-16",
+   "time": "18:05",
+   "src": "Yahoo Finance",
+   "t": "Taiwan Semiconductor Vs. ASML: There’s Actually One True Dominant Picks-and-Shovels Play",
+   "tags": [],
+   "url": "https://finance.yahoo.com/technology/articles/taiwan-semiconductor-vs-asml-actually-110540607.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/42e20d654f02e9e4c737c3ff92b1b780.jpg",
+   "t_ko": "Taiwan Semiconductor·ASML 비교 분석",
+   "t_id": "Taiwan Semiconductor vs ASML: Pilihan Pemasok Utama yang Paling Dominan"
   },
   {
    "ts": "2026-09-16T18:05:00+07:00",
@@ -17192,8 +17367,8 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/121778/ancaman-bunga-the-fed-naik-gerogoti-harga-bitcoin",
    "g": 1,
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260907133731.jpg",
-   "t_id": "Ancaman Bunga The Fed Naik ‘Gerogoti’ Harga Bitcoin",
-   "t_ko": "연준 금리 인상 우려에 비트코인 가격 하락 압력"
+   "t_ko": "연준 금리 인상 우려에 비트코인 가격 하락 압력",
+   "t_id": "Ancaman Bunga The Fed Naik ‘Gerogoti’ Harga Bitcoin"
   },
   {
    "ts": "2026-09-16T18:05:00+07:00",
@@ -17203,8 +17378,33 @@
    "t": "Usai Resmikan LRT Jakarta Prabowo Panggil Sejumlah Menteri ke Istana, Ini yang Dibahas",
    "tags": [],
    "url": "https://mediaindonesia.com/politik-dan-hukum/934095/usai-resmikan-lrt-jakarta-prabowo-panggil-sejumlah-menteri-ke-istana-ini-yang-dibahas",
-   "t_id": "Usai Resmikan LRT Jakarta Prabowo Panggil Sejumlah Menteri ke Istana, Ini yang Dibahas",
-   "t_ko": "Prabowo 대통령, 자카르타 경전철 개통식 직후 장관들 소집해 현안 논의"
+   "t_ko": "Prabowo, 자카르타 LRT 개통 후 장관들 소집해 현안 논의",
+   "t_id": "Usai Resmikan LRT Jakarta Prabowo Panggil Sejumlah Menteri ke Istana, Ini yang Dibahas"
+  },
+  {
+   "ts": "2026-09-16T18:03:56+07:00",
+   "date": "2026-09-16",
+   "time": "18:03",
+   "src": "Yahoo Finance",
+   "t": "Majority of US Gen Z healthcare workers eye new jobs within the year, survey shows",
+   "tags": [],
+   "url": "https://finance.yahoo.com/healthcare/articles/majority-us-gen-z-healthcare-110356580.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/reuters.com/4bb8c8e6ac5aab0bce4944655813a8ce.jpg",
+   "t_ko": "미국 Z세대 보건의료 근로자 대다수 1년 내 이직 의향",
+   "t_id": "Mayoritas Pekerja Kesehatan Gen Z AS Incar Pekerjaan Baru dalam Setahun, Ungkap Survei"
+  },
+  {
+   "ts": "2026-09-16T18:03:00+07:00",
+   "date": "2026-09-16",
+   "time": "18:03",
+   "src": "Media Indonesia",
+   "t": "Trump Percepat Penjualan Senjata ke Israel dan Saudi saat Stok AS Menipis",
+   "tags": [],
+   "url": "https://mediaindonesia.com/internasional/934099/trump-percepat-penjualan-senjata-ke-israel-dan-saudi-saat-stok-as-menipis",
+   "g": 1,
+   "t_id": "Trump Percepat Penjualan Senjata ke Israel dan Saudi saat Stok AS Menipis",
+   "t_ko": "미국 재고 감소 속 트럼프, 이스라엘·사우디 무기 판매 가속"
   },
   {
    "ts": "2026-09-16T18:00:01+07:00",
@@ -17216,7 +17416,7 @@
    "url": "https://www.cnbc.com/2026/09/16/mortgage-demand-from-homebuyers-drops-19percent-from-a-year-ago.html",
    "g": 1,
    "t_ko": "금리 급등 여파로 주택담보대출 수요 전년 동기 대비 19% 감소",
-   "t_id": "Permintaan KPR Pembeli Rumah Anjlok 19% YoY, Suku Bunga Melonjak Tajam"
+   "t_id": "Permintaan KPR Pembeli Rumah Anjlok 19% secara YoY, Suku Bunga Melonjak Tajam"
   },
   {
    "ts": "2026-09-16T18:00:00+07:00",
@@ -17227,7 +17427,7 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121758/prabowo-minta-danantara-bantu-dki-perpanjang-rute-lrt-jakarta",
    "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260916142350.jpg",
-   "t_ko": "Prabowo 대통령, Danantara에 자카르타 경전철 노선 연장 지원 요청",
+   "t_ko": "Prabowo, Danantara에 자카르타 LRT 노선 연장 지원 요청",
    "t_id": "Prabowo Minta Danantara Bantu DKI Perpanjang Rute LRT Jakarta"
   },
   {
@@ -17238,7 +17438,7 @@
    "t": "Ketahanan Energi Butuh Penguatan Industri Hulu Migas",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/934097/ketahanan-energi-butuh-penguatan-industri-hulu-migas",
-   "t_ko": "에너지 안보 확립 위해 석유가스 상류 부문 강화 필요",
+   "t_ko": "에너지 안보 확보 위해 석유·가스 상류 산업 강화 필요",
    "t_id": "Ketahanan Energi Butuh Penguatan Industri Hulu Migas"
   },
   {
@@ -17250,7 +17450,7 @@
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/934096/harga-minyak-dunia-melonjak-harga-bbm-global-diprediksi-meroket",
    "g": 1,
-   "t_ko": "국제 유가 급등에 글로벌 연료비 폭등 전망",
+   "t_ko": "국제유가 급등에 글로벌 연료비 폭등 전망",
    "t_id": "Harga Minyak Dunia Melonjak, Harga BBM Global Diprediksi Meroket"
   },
   {
@@ -17262,8 +17462,21 @@
    "tags": [],
    "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6aaa757a2e5a4/wamen-lhk-sebut-kendaraan-listrik-kunci-tekan-emisi-bandingkan-dengan-pohon",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/09/17/2025_09_17-18_41_00_afb7d4ee-93c4-11f0-a112-9f3be5b34930_620x413_thumb.jpg",
-   "t_ko": "차관, 전기차가 탄소 감축의 핵심… 나무와 비교",
+   "t_ko": "환경산림부 차관, 전기차를 배출 감축 핵심으로 꼽으며 나무와 비교",
    "t_id": "Wamen LHK Sebut Kendaraan Listrik Kunci Tekan Emisi, Bandingkan dengan Pohon"
+  },
+  {
+   "ts": "2026-09-16T17:51:34+07:00",
+   "date": "2026-09-16",
+   "time": "17:51",
+   "src": "Yahoo Finance",
+   "t": "Silver price today, Wednesday, September 16, 2026:  Silver prices rise in anticipation of the Fed",
+   "tags": [],
+   "url": "https://finance.yahoo.com/personal-finance/investing/article/silver-price-today-wednesday-september-16-2026-silver-prices-rise-in-anticipation-of-the-fed-105134969.html",
+   "g": 1,
+   "img": "https://s.yimg.com/uu/api/res/1.2/qkBh3DyyvNvOMM9FOGidIA--~B/aD0zNjU4O3c9NTQ5ODthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-05/4ee3f2ba-4678-4447-ba10-98ba355d52c8",
+   "t_ko": "연준 금리 인하 기대에 은 가격 상승",
+   "t_id": "Harga Perak Hari Ini, Rabu, 16 Sep 2026: Harga Perak Naik Jelang Keputusan The Fed"
   },
   {
    "ts": "2026-09-16T17:51:00+07:00",
@@ -17303,32 +17516,6 @@
    ]
   },
   {
-   "ts": "2026-09-16T17:47:34+07:00",
-   "date": "2026-09-16",
-   "time": "17:47",
-   "src": "Yahoo Finance",
-   "t": "Dow Jones Futures Rise As ServiceNow, Twilio Lead 8 New Buys; Will Market Bid Bond Voyage After Fed Rate Hike?",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-sp500-nasdaq-how-will-bonds-react-to-fed-rate-hike/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/24ee3a477044c231715245d41a21f0e3.jpg",
-   "t_ko": "다우존스 선물 상승 — ServiceNow·Twilio 등 8개 종목 매수 유망",
-   "t_id": "Dow Jones Futures Naik Saat ServiceNow dan Twilio Pimpin 8 Saham Baru; Pasar Sambut Obligasi Usai Kenaikan Suku Bunga The Fed?"
-  },
-  {
-   "ts": "2026-09-16T17:41:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:41",
-   "src": "Yahoo Finance",
-   "t": "IonQ vs. Rigetti Computing: Which Pure-Play Quantum Stock Actually Has the Technology Edge?",
-   "tags": [],
-   "url": "https://finance.yahoo.com/technology/ai/articles/ionq-vs-rigetti-computing-pure-104100526.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/f89bc6cfd5341b96d26a01b4b10381e6.jpg",
-   "t_ko": "IonQ vs Rigetti Computing: 양자 컴퓨팅 순수주식 기술 경쟁력 비교",
-   "t_id": "IonQ vs Rigetti Computing: Saham Kuantum Murni Mana yang Punya Keunggulan Teknologi?"
-  },
-  {
    "ts": "2026-09-16T17:40:38+07:00",
    "date": "2026-09-16",
    "time": "17:40",
@@ -17338,21 +17525,8 @@
    "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-wednesday-september-16-2026-gold-holds-in-the-4300-range-awaiting-the-feds-decision-104038147.html",
    "g": 1,
    "img": "https://s.yimg.com/uu/api/res/1.2/Oa7DO4jl9HF3ik1etGzo7Q--~B/aD0xMDgwO3c9MTkyMDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/user-uploaded/wednesday.png",
-   "t_ko": "연준 결정 앞두고 16일 금 가격 4,300달러 선 유지",
-   "t_id": "Harga Emas Hari Ini, Rabu, 16 Sep 2026: Emas Bertahan di Kisaran $4.300, Menanti Keputusan The Fed"
-  },
-  {
-   "ts": "2026-09-16T17:39:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:39",
-   "src": "IDX Channel",
-   "t": "Rupiah Melemah Rp17.696 Tertekan Sentimen Suku Bunga The Fed hingga Krisis Energi",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/rupiah-melemah-rp17696-tertekan-sentimen-suku-bunga-the-fed-hingga-krisis-energi",
-   "g": 1,
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/06/22/rupiah_dolar_sin.jpeg",
-   "t_ko": "연준 금리 인하 기대 후퇴와 에너지 위기에 루피아화 Rp17,696으로 약세",
-   "t_id": "Rupiah Melemah Rp17.696 Tertekan Sentimen Suku Bunga The Fed hingga Krisis Energi"
+   "t_ko": "국제 금값, 연준 결정 앞두고 4,300달러선 유지",
+   "t_id": "Harga Emas Hari Ini, Rabu, 16 September 2026: Emas Bertahan di Kisaran $4.300, Menanti Keputusan The Fed"
   },
   {
    "ts": "2026-09-16T17:38:00+07:00",
@@ -17403,44 +17577,6 @@
    "t_id": "Anggaran ESDM 2027 Capai Rp 27,37 Triliun, Ada Alokasi untuk Kompor Listrik"
   },
   {
-   "ts": "2026-09-16T17:33:42+07:00",
-   "date": "2026-09-16",
-   "time": "17:33",
-   "src": "BBC",
-   "t": "Petrol and diesel price rises push UK inflation higher",
-   "tags": [],
-   "url": "https://www.bbc.co.uk/news/articles/cv2dw7lw4rkpo?at_medium=RSS&at_campaign=rss",
-   "g": 1,
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d847/live/6dc55eb0-b1be-11f1-b1d1-571ed4d7ff2c.jpg",
-   "t_ko": "휘발유·디젤 가격 상승으로 영국 물가 상승",
-   "t_id": "Kenaikan Harga BBM Dorong Inflasi Inggris Naik",
-   "ai_ko": "· 영국 8월 물가상승률 3.1%로 상승\n· 휘발유·경유 등 연료가격 23% 급등\n· 유가 강세로 정유·에너지주 주목",
-   "ai_id": "· Inflasi Inggris Agustus naik ke 3,1%\n· Harga BBM melonjak 23% yoy\n· Brent sempat tembus USD 100 per barel",
-   "ai_tags": [
-    "물가",
-    "유가",
-    "금리"
-   ],
-   "ai_tags_id": [
-    "inflasi",
-    "harga minyak",
-    "suku bunga"
-   ]
-  },
-  {
-   "ts": "2026-09-16T17:33:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:33",
-   "src": "WSJ",
-   "t": "An AI Slowdown Has To Happen Regardless of Safety",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/stocks/an-ai-slowdown-has-to-happen-regardless-of-safety-69d6675d?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-47882279",
-   "t_ko": "안전성 무관하게 AI 성장 둔화 불가피",
-   "t_id": "Pelambatan AI Tak Terhindarkan Terlepas dari Faktor Keamanan"
-  },
-  {
    "ts": "2026-09-16T17:31:00+07:00",
    "date": "2026-09-16",
    "time": "17:31",
@@ -17453,32 +17589,6 @@
    "t_id": "Dukung Bisnis Hijau, Climateworks Centre Usung Kawasan Industri Rendah Karbon"
   },
   {
-   "ts": "2026-09-16T17:30:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:30",
-   "src": "MarketWatch",
-   "t": "5% Treasury yields mean America’s debt bill just got a lot bigger",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/5-treasury-yields-mean-americas-debt-bill-just-got-a-lot-bigger-8a5702b0?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-85902503",
-   "t_ko": "미 국채 금리 5% 돌파로 국가 부채 이자 급증",
-   "t_id": "Imbal Hasil US Treasury 5% Bikin Beban Utang AS Makin Membengkak"
-  },
-  {
-   "ts": "2026-09-16T17:29:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:29",
-   "src": "MarketWatch",
-   "t": "Inflation killed the penny. Now it’s coming for your dollar.",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/inflation-killed-the-penny-now-its-coming-for-your-dollar-78336cd8?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-86919316",
-   "t_ko": "인플레이션으로 센트 화폐 이어 달러 가치 위협",
-   "t_id": "Inflasi Bunuh Koin Sen, Kini Incar Dolar Anda"
-  },
-  {
    "ts": "2026-09-16T17:24:33+07:00",
    "date": "2026-09-16",
    "time": "17:24",
@@ -17489,18 +17599,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/03/image-20260309104304.jpg",
    "t_ko": "공매도 대상 종목 후보 유출 — 2026년 10월 도입",
    "t_id": "Bocoran Soal Kandidat Saham Short Selling, Meluncur Oktober 2026"
-  },
-  {
-   "ts": "2026-09-16T17:20:00+07:00",
-   "date": "2026-09-16",
-   "time": "17:20",
-   "src": "IDX Channel",
-   "t": "Danantara Bantu LRT, DKI Tetap Siapkan Pembiayaan Lewat Obligasi dan APBD",
-   "tags": [],
-   "url": "https://www.idxchannel.com/economics/danantara-bantu-lrt-dki-tetap-siapkan-pembiayaan-lewat-obligasi-dan-apbd",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/14/LRT_Jakarta_Kelapa_Gading_Manggarai__1_.jpg",
-   "t_id": "Danantara Bantu LRT, DKI Tetap Siapkan Pembiayaan Lewat Obligasi dan APBD",
-   "t_ko": "Danantara의 경전철 지원에도 DKI 자카르타, 채권·APBD로 자체 재원 조달 유지"
   },
   {
    "ts": "2026-09-16T17:17:35+07:00",
@@ -17655,6 +17753,18 @@
     "seleksi",
     "kebijakan"
    ]
+  },
+  {
+   "ts": "2026-09-16T17:00:08+07:00",
+   "date": "2026-09-16",
+   "time": "17:00",
+   "src": "Detik",
+   "t": "Kabut Asap Karhutla Ganggu Penerbangan di Bandara Supadio",
+   "tags": [],
+   "url": "https://finance.detik.com/foto-bisnis/d-8665187/kabut-asap-karhutla-ganggu-penerbangan-di-bandara-supadio",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/16/kabut-asap-karhutla-ganggu-penerbangan-di-bandara-supadio-1789539713234.jpeg?w=360&q=90",
+   "t_ko": "산불 연무로 Supadio 공항 항공편 운항 차질",
+   "t_id": "Kabut Asap Karhutla Ganggu Penerbangan di Bandara Supadio"
   }
  ],
  "kisi_news": [
@@ -17859,9 +17969,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.67",
-   "d": 0.0,
-   "ytd": 1.41,
+   "v": "99.68",
+   "d": 0.02,
+   "ytd": 1.43,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17871,9 +17981,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "103.18",
-   "d": -1.53,
-   "ytd": 79.69,
+   "v": "103.31",
+   "d": -1.4,
+   "ytd": 79.92,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17883,9 +17993,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,393.5",
-   "d": 0.6,
-   "ytd": 1.57,
+   "v": "4,391.5",
+   "d": 0.56,
+   "ytd": 1.52,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17907,9 +18017,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,216",
-   "d": 2.0,
-   "ytd": -2.79,
+   "v": "16,219",
+   "d": 2.02,
+   "ytd": -2.78,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -17993,6 +18103,525 @@
   "n": 41
  },
  "calendar": [
+  {
+   "date": "2026-08-31",
+   "time": "20:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Chicago PMI  (Aug)",
+   "imp": 3,
+   "exp": "57.8",
+   "prev": "57.6",
+   "act": "47.1",
+   "src": "investing.com",
+   "title_ko": "8월 시카고 PMI",
+   "title_id": "PMI Chicago (Agustus)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "07:30",
+   "kind": "macro",
+   "country": "ID",
+   "title": "S&P Global Manufacturing PMI  (Aug)",
+   "imp": 1,
+   "exp": "53.2",
+   "prev": "50.2",
+   "act": "49.8",
+   "src": "investing.com",
+   "title_ko": "8월 S&P Global 제조업 PMI",
+   "title_id": "PMI Manufaktur S&P Global AS (Agu)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "kind": "macro",
+   "country": "ID",
+   "title": "Core Inflation (YoY)  (Aug)",
+   "imp": 1,
+   "exp": "2.80%",
+   "prev": "2.76%",
+   "act": "2.92%",
+   "src": "investing.com",
+   "title_ko": "8월 근원 CPI (YoY)",
+   "title_id": "Inflasi Inti (YoY) (Agustus)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "kind": "macro",
+   "country": "ID",
+   "title": "Export Growth (YoY)  (Jul)",
+   "imp": 1,
+   "exp": "3.40%",
+   "prev": "8.84%",
+   "act": "6.05%",
+   "src": "investing.com",
+   "title_ko": "7월 수출 증가율 (YoY)",
+   "title_id": "Pertumbuhan Ekspor (YoY) (Juli)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "kind": "macro",
+   "country": "ID",
+   "title": "Import Growth (YoY)  (Jul)",
+   "imp": 1,
+   "exp": "24.10%",
+   "prev": "34.27%",
+   "act": "27.02%",
+   "src": "investing.com",
+   "title_ko": "7월 수입 증가율 (YoY)",
+   "title_id": "Pertumbuhan Impor (YoY) (Juli)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "kind": "macro",
+   "country": "ID",
+   "title": "Inflation (YoY)  (Aug)",
+   "imp": 1,
+   "exp": "3.13%",
+   "prev": "2.88%",
+   "act": "3.19%",
+   "src": "investing.com",
+   "title_ko": "8월 소비자물가 (YoY)",
+   "title_id": "Inflasi AS (YoY) (Agu)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "kind": "macro",
+   "country": "ID",
+   "title": "Trade Balance  (Jul)",
+   "imp": 1,
+   "exp": "-0.30B",
+   "prev": "-0.45B",
+   "act": "0.13B",
+   "src": "investing.com",
+   "title_ko": "7월 무역수지",
+   "title_id": "Neraca Perdagangan (Juli)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "20:05",
+   "kind": "macro",
+   "country": "US",
+   "title": "Fed Vice Chair for Supervision Barr Speaks",
+   "imp": 2,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "연준 Barr 감독담당 부의장 연설",
+   "title_id": "Pidato Wakil Ketua Pengawasan The Fed Barr"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "21:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "Construction Spending (MoM)  (Jul)",
+   "imp": 2,
+   "exp": "0.0%",
+   "prev": "0.0%",
+   "act": "-0.5%",
+   "src": "investing.com",
+   "title_ko": "건설지출 (MoM) (7월)",
+   "title_id": "Belanja Konstruksi (Bulanan) (Jul)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "21:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "ISM Manufacturing Employment  (Aug)",
+   "imp": 2,
+   "exp": "52.5",
+   "prev": "52.8",
+   "act": "51.2",
+   "src": "investing.com",
+   "title_ko": "ISM 제조업 채용 (8월)",
+   "title_id": "Ketenagakerjaan Manufaktur ISM (Agustus)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "21:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "JOLTS Job Openings  (Jul)",
+   "imp": 3,
+   "exp": "7.330M",
+   "prev": "7.182M",
+   "act": "7.271M",
+   "src": "investing.com",
+   "title_ko": "7월 JOLTS 구인건수",
+   "title_id": "Lowongan Kerja JOLTS AS (Jul)"
+  },
+  {
+   "date": "2026-09-01",
+   "time": "22:50",
+   "kind": "macro",
+   "country": "US",
+   "title": "Atlanta Fed GDPNow  (Q3)",
+   "imp": 2,
+   "exp": "4.6%",
+   "prev": "4.6%",
+   "act": "4.8%",
+   "src": "investing.com",
+   "title_ko": "3분기 애틀랜타 연은 GDPNow",
+   "title_id": "GDPNow The Fed Atlanta (Q3)"
+  },
+  {
+   "date": "2026-09-02",
+   "time": "03:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "API Weekly Crude Oil Stock",
+   "imp": 2,
+   "exp": "-0.800M",
+   "prev": "4.200M",
+   "act": "-2.600M",
+   "src": "investing.com",
+   "title_ko": "API 주간 원유 재고",
+   "title_id": "Stok Minyak Mentah Mingguan API"
+  },
+  {
+   "date": "2026-09-02",
+   "time": "19:15",
+   "kind": "macro",
+   "country": "US",
+   "title": "ADP Nonfarm Employment Change  (Aug)",
+   "imp": 3,
+   "exp": "47K",
+   "prev": "46K",
+   "act": "38K",
+   "src": "investing.com",
+   "title_ko": "8월 ADP 비농업 고용 변화",
+   "title_id": "Perubahan Ketenagakerjaan Nonpertanian ADP (Agustus)"
+  },
+  {
+   "date": "2026-09-02",
+   "time": "21:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "Factory Orders (MoM)  (Jul)",
+   "imp": 2,
+   "exp": "0.7%",
+   "prev": "-0.2%",
+   "act": "0.9%",
+   "src": "investing.com",
+   "title_ko": "공장수주 (MoM) (7월)",
+   "title_id": "Pesanan Pabrik (Bulanan) (Jul)"
+  },
+  {
+   "date": "2026-09-02",
+   "time": "21:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Crude Oil Inventories",
+   "imp": 3,
+   "exp": "-0.400M",
+   "prev": "0.095M",
+   "act": "-4.450M",
+   "src": "investing.com",
+   "title_ko": "EIA 원유 재고",
+   "title_id": "Stok Minyak Mentah EIA"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "01:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "Beige Book",
+   "imp": 2,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "연준 베이지북",
+   "title_id": "Beige Book The Fed"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Continuing Jobless Claims",
+   "imp": 2,
+   "exp": "205K",
+   "prev": "1,771K",
+   "act": "1,779K",
+   "src": "investing.com",
+   "title_ko": "연속 실업수당 청구",
+   "title_id": "Klaim Pengangguran Berkelanjutan"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Exports  (Jul)",
+   "imp": 2,
+   "exp": null,
+   "prev": "314.70B",
+   "act": "310.70B",
+   "src": "investing.com",
+   "title_ko": "7월 수출",
+   "title_id": "Ekspor (Juli)"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Fed Waller Speaks",
+   "imp": 2,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "연준 Waller 이사 연설",
+   "title_id": "Pidato Gubernur The Fed Waller"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Imports  (Jul)",
+   "imp": 2,
+   "exp": null,
+   "prev": "388.00B",
+   "act": "399.30B",
+   "src": "investing.com",
+   "title_ko": "7월 수입",
+   "title_id": "Impor (Juli)"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Nonfarm Productivity (QoQ)  (Q2)",
+   "imp": 2,
+   "exp": "1.4%",
+   "prev": "0.8%",
+   "act": "1.4%",
+   "src": "investing.com",
+   "title_ko": "2분기 비농업 생산성 (QoQ)",
+   "title_id": "Produktivitas Nonpertanian (QoQ) (Q2)"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Trade Balance  (Jul)",
+   "imp": 2,
+   "exp": "-89.40B",
+   "prev": "-71.20B",
+   "act": "-88.60B",
+   "src": "investing.com",
+   "title_ko": "7월 무역수지",
+   "title_id": "Neraca Perdagangan (Juli)"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Unit Labor Costs (QoQ)  (Q2)",
+   "imp": 2,
+   "exp": "1.3%",
+   "prev": "1.3%",
+   "act": "1.2%",
+   "src": "investing.com",
+   "title_ko": "2분기 단위노동비용 (QoQ)",
+   "title_id": "Biaya Tenaga Kerja per Unit (QoQ) (Q2)"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "20:45",
+   "kind": "macro",
+   "country": "US",
+   "title": "S&P Global Composite PMI  (Aug)",
+   "imp": 2,
+   "exp": "56.0",
+   "prev": "54.5",
+   "act": "56.0",
+   "src": "investing.com",
+   "title_ko": "8월 S&P Global 합성 PMI",
+   "title_id": "PMI Komposit S&P Global (Agustus)"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "21:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "ISM Non-Manufacturing Employment  (Aug)",
+   "imp": 2,
+   "exp": "48.3",
+   "prev": "47.4",
+   "act": "47.8",
+   "src": "investing.com",
+   "title_ko": "8월 ISM 비제조업 고용지수",
+   "title_id": "Ketenagakerjaan Non-Manufaktur ISM (Agustus)"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "22:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Atlanta Fed GDPNow  (Q3)",
+   "imp": 2,
+   "exp": "4.8%",
+   "prev": "4.8%",
+   "act": "4.7%",
+   "src": "investing.com",
+   "act_src": "investing.com",
+   "title_ko": "3분기 애틀랜타 연은 GDPNow",
+   "title_id": "GDPNow The Fed Atlanta (Q3)"
+  },
+  {
+   "date": "2026-09-04",
+   "time": "03:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Fed's Balance Sheet",
+   "imp": 2,
+   "exp": null,
+   "prev": "6,731B",
+   "act": "6,737B",
+   "src": "investing.com",
+   "title_ko": "연준 대차대조표",
+   "title_id": "Neraca The Fed"
+  },
+  {
+   "date": "2026-09-04",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Average Hourly Earnings (MoM)  (Aug)",
+   "imp": 3,
+   "exp": "0.3%",
+   "prev": "0.1%",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "8월 시간당 평균임금 (MoM)",
+   "title_id": "Rata-rata Upah per Jam (MoM) (Agustus)"
+  },
+  {
+   "date": "2026-09-04",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Nonfarm Payrolls  (Aug)",
+   "imp": 3,
+   "exp": "55K",
+   "prev": "-23K",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "8월 비농업 고용",
+   "title_id": "Nonfarm Payrolls AS (Agu)"
+  },
+  {
+   "date": "2026-09-04",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Participation Rate  (Aug)",
+   "imp": 2,
+   "exp": null,
+   "prev": "61.4%",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "8월 경제활동참가율",
+   "title_id": "Tingkat Partisipasi Angkatan Kerja (Agustus)"
+  },
+  {
+   "date": "2026-09-04",
+   "time": "19:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "U6 Unemployment Rate  (Aug)",
+   "imp": 2,
+   "exp": "4.1%",
+   "prev": "7.9%",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "8월 U6 실업률",
+   "title_id": "Tingkat Pengangguran U6 (Agustus)"
+  },
+  {
+   "date": "2026-09-05",
+   "time": "00:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "U.S. Baker Hughes Oil Rig Count",
+   "imp": 2,
+   "exp": null,
+   "prev": "447",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "미국 Baker Hughes 원유 시추기 수",
+   "title_id": "Jumlah Rig Minyak Baker Hughes AS"
+  },
+  {
+   "date": "2026-09-05",
+   "time": "02:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "CFTC Crude Oil speculative net positions",
+   "imp": 2,
+   "exp": null,
+   "prev": "123.4K",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "CFTC 원유 투기적 순포지션",
+   "title_id": "Posisi Bersih Spekulatif Minyak Mentah CFTC"
+  },
+  {
+   "date": "2026-09-05",
+   "time": "02:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "CFTC Gold speculative net positions",
+   "imp": 2,
+   "exp": null,
+   "prev": "243.3K",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "CFTC 금 투기적 순포지션",
+   "title_id": "Posisi Bersih Spekulatif Emas CFTC"
+  },
+  {
+   "date": "2026-09-05",
+   "time": "02:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "CFTC Nasdaq 100 speculative net positions",
+   "imp": 2,
+   "exp": null,
+   "prev": "10.0K",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "CFTC 나스닥100 투기적 순포지션",
+   "title_id": "Posisi Bersih Spekulatif CFTC Nasdaq 100"
+  },
+  {
+   "date": "2026-09-05",
+   "time": "02:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "CFTC S&P 500 speculative net positions",
+   "imp": 2,
+   "exp": null,
+   "prev": "-68.0K",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "CFTC S&P500 투기적 순포지션",
+   "title_id": "Posisi Bersih Spekulatif CFTC S&P 500"
+  },
   {
    "date": "2026-09-06",
    "time": "17:00",
@@ -18415,40 +19044,12 @@
   },
   {
    "date": "2026-09-16",
-   "time": "00:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "20-Year Bond Auction",
-   "imp": 2,
-   "exp": null,
-   "prev": "5.204%",
-   "act": "5.420%",
-   "src": "investing.com",
-   "title_ko": "20년물 국채 입찰",
-   "title_id": "Lelang Obligasi AS Tenor 20 Tahun"
-  },
-  {
-   "date": "2026-09-16",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "API Weekly Crude Oil Stock",
-   "imp": 2,
-   "exp": "-1.800M",
-   "prev": "-0.300M",
-   "act": "7.140M",
-   "src": "investing.com",
-   "title_ko": "API 주간 원유 재고",
-   "title_id": "Stok Minyak Mentah Mingguan API"
-  },
-  {
-   "date": "2026-09-16",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "Core Retail Sales (MoM)  (Aug)",
    "imp": 3,
-   "exp": "0.6%",
+   "exp": null,
    "prev": "-0.3%",
    "act": null,
    "src": "investing.com",
@@ -18462,7 +19063,7 @@
    "country": "US",
    "title": "Export Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.5%",
+   "exp": null,
    "prev": "-1.3%",
    "act": null,
    "src": "investing.com",
@@ -18476,7 +19077,7 @@
    "country": "US",
    "title": "Import Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.4%",
+   "exp": null,
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -18490,7 +19091,7 @@
    "country": "US",
    "title": "Retail Control (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.8%",
+   "exp": null,
    "prev": "-0.4%",
    "act": null,
    "src": "investing.com",
@@ -18504,7 +19105,7 @@
    "country": "US",
    "title": "Business Inventories (MoM)  (Jul)",
    "imp": 2,
-   "exp": "0.6%",
+   "exp": null,
    "prev": "0.0%",
    "act": null,
    "src": "investing.com",
@@ -18518,26 +19119,12 @@
    "country": "US",
    "title": "Retail Inventories Ex Auto  (Jul)",
    "imp": 2,
-   "exp": "0.7%",
-   "prev": "-0.4%",
+   "exp": null,
+   "prev": "0.7%",
    "act": null,
    "src": "investing.com",
    "title_ko": "7월 자동차 제외 소매재고",
    "title_id": "Persediaan Ritel Ex-Otomotif AS (Jul)"
-  },
-  {
-   "date": "2026-09-16",
-   "time": "21:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Crude Oil Inventories",
-   "imp": 3,
-   "exp": "-1.600M",
-   "prev": "-0.391M",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "EIA 원유 재고",
-   "title_id": "Stok Minyak Mentah EIA"
   },
   {
    "date": "2026-09-16",
@@ -18546,8 +19133,8 @@
    "country": "US",
    "title": "Atlanta Fed GDPNow  (Q3)",
    "imp": 2,
-   "exp": "4.4%",
-   "prev": "4.4%",
+   "exp": null,
+   "prev": null,
    "act": null,
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
@@ -22606,9 +23193,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-16 18:04",
-  "pc_age_min": 8,
-  "news_ai_cache": 62,
-  "news_ai_hit": 35,
+  "pc_age_min": 12,
+  "news_ai_cache": 61,
+  "news_ai_hit": 39,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -24900,7 +25487,7 @@
  ],
  "tech": {
   "BMRI": {
-   "n": 25,
+   "n": 26,
    "ma5": 4354,
    "ma20": 4305,
    "rsi": 53.4,
@@ -24923,7 +25510,7 @@
    "quad": "mid"
   },
   "AMMN": {
-   "n": 25,
+   "n": 26,
    "ma5": 4994,
    "ma20": 4579,
    "rsi": 73.3,
@@ -24946,7 +25533,7 @@
    "quad": "up_in"
   },
   "BUMI": {
-   "n": 25,
+   "n": 26,
    "ma5": 208,
    "ma20": 203,
    "rsi": 56.2,
@@ -24969,7 +25556,7 @@
    "quad": "mid"
   },
   "ANTM": {
-   "n": 25,
+   "n": 26,
    "ma5": 3244,
    "ma20": 3154,
    "rsi": 52.7,
@@ -24992,7 +25579,7 @@
    "quad": "up_in"
   },
   "BBCA": {
-   "n": 25,
+   "n": 26,
    "ma5": 6395,
    "ma20": 6490,
    "rsi": 47.1,
@@ -25015,7 +25602,7 @@
    "quad": "dip_out"
   },
   "BBRI": {
-   "n": 25,
+   "n": 26,
    "ma5": 3328,
    "ma20": 3288,
    "rsi": 62.5,
@@ -25038,7 +25625,7 @@
    "quad": "up_out"
   },
   "DEWA": {
-   "n": 25,
+   "n": 26,
    "ma5": 403,
    "ma20": 436,
    "rsi": 20.0,
@@ -25061,7 +25648,7 @@
    "quad": "mid"
   },
   "DSSA": {
-   "n": 25,
+   "n": 26,
    "ma5": 1090,
    "ma20": 1112,
    "rsi": 40.0,
@@ -25084,7 +25671,7 @@
    "quad": "dip_out"
   },
   "BRMS": {
-   "n": 25,
+   "n": 26,
    "ma5": 712,
    "ma20": 715,
    "rsi": 40.0,
@@ -25107,7 +25694,7 @@
    "quad": "mid"
   },
   "TLKM": {
-   "n": 25,
+   "n": 26,
    "ma5": 2656,
    "ma20": 2622,
    "rsi": 56.8,
@@ -25130,7 +25717,7 @@
    "quad": "up_in"
   },
   "CUAN": {
-   "n": 25,
+   "n": 26,
    "ma5": 938,
    "ma20": 884,
    "rsi": 65.5,
@@ -25153,7 +25740,7 @@
    "quad": "mid"
   },
   "TINS": {
-   "n": 25,
+   "n": 26,
    "ma5": 4702,
    "ma20": 4298,
    "rsi": 74.6,
@@ -25176,7 +25763,7 @@
    "quad": "up_in"
   },
   "ASII": {
-   "n": 25,
+   "n": 26,
    "ma5": 4900,
    "ma20": 4858,
    "rsi": 53.2,
@@ -25199,7 +25786,7 @@
    "quad": "mid"
   },
   "SINI": {
-   "n": 25,
+   "n": 26,
    "ma5": 13645,
    "ma20": 11801,
    "rsi": 76.3,
@@ -25222,7 +25809,7 @@
    "quad": "up_in"
   },
   "INCO": {
-   "n": 25,
+   "n": 26,
    "ma5": 4762,
    "ma20": 5001,
    "rsi": 31.6,
@@ -25245,7 +25832,7 @@
    "quad": "dip_in"
   },
   "ADRO": {
-   "n": 25,
+   "n": 26,
    "ma5": 2624,
    "ma20": 2660,
    "rsi": 42.2,
@@ -25268,7 +25855,7 @@
    "quad": "dip_out"
   },
   "BULL": {
-   "n": 25,
+   "n": 26,
    "ma5": 419,
    "ma20": 437,
    "rsi": 36.7,
@@ -25291,7 +25878,7 @@
    "quad": "dip_in"
   },
   "TPIA": {
-   "n": 25,
+   "n": 26,
    "ma5": 1867,
    "ma20": 1945,
    "rsi": 28.1,
@@ -25314,7 +25901,7 @@
    "quad": "dip_out"
   },
   "MDKA": {
-   "n": 25,
+   "n": 26,
    "ma5": 2930,
    "ma20": 2955,
    "rsi": 39.3,
@@ -25337,7 +25924,7 @@
    "quad": "dip_out"
   },
   "DPUM": {
-   "n": 25,
+   "n": 26,
    "ma5": 140,
    "ma20": 110,
    "rsi": 82.8,
@@ -25360,7 +25947,7 @@
    "quad": "mid"
   },
   "BYAN": {
-   "n": 25,
+   "n": 26,
    "ma5": 11620,
    "ma20": 13816,
    "rsi": 20.6,
@@ -25383,7 +25970,7 @@
    "quad": "dip_out"
   },
   "PTRO": {
-   "n": 25,
+   "n": 26,
    "ma5": 5280,
    "ma20": 5251,
    "rsi": 50.0,
@@ -25406,7 +25993,7 @@
    "quad": "dip_out"
   },
   "EMAS": {
-   "n": 25,
+   "n": 26,
    "ma5": 8025,
    "ma20": 8475,
    "rsi": 27.1,
@@ -25429,7 +26016,7 @@
    "quad": "dip_in"
   },
   "ADMR": {
-   "n": 25,
+   "n": 26,
    "ma5": 1586,
    "ma20": 1651,
    "rsi": 29.0,
@@ -25452,7 +26039,7 @@
    "quad": "mid"
   },
   "AADI": {
-   "n": 25,
+   "n": 26,
    "ma5": 12280,
    "ma20": 11105,
    "rsi": 85.8,
@@ -25475,7 +26062,7 @@
    "quad": "up_in"
   },
   "UNTR": {
-   "n": 25,
+   "n": 26,
    "ma5": 26250,
    "ma20": 25062,
    "rsi": 65.7,
@@ -25498,7 +26085,7 @@
    "quad": "up_in"
   },
   "INET": {
-   "n": 25,
+   "n": 26,
    "ma5": 332,
    "ma20": 339,
    "rsi": 35.6,
@@ -25521,7 +26108,7 @@
    "quad": "dip_out"
   },
   "MEDC": {
-   "n": 25,
+   "n": 26,
    "ma5": 1566,
    "ma20": 1470,
    "rsi": 82.5,
@@ -25544,7 +26131,7 @@
    "quad": "up_out"
   },
   "ISAT": {
-   "n": 25,
+   "n": 26,
    "ma5": 2392,
    "ma20": 2478,
    "rsi": 27.3,
@@ -25567,7 +26154,7 @@
    "quad": "dip_out"
   },
   "BBNI": {
-   "n": 25,
+   "n": 26,
    "ma5": 3780,
    "ma20": 3788,
    "rsi": 51.4,
@@ -25590,7 +26177,7 @@
    "quad": "dip_out"
   },
   "PTBA": {
-   "n": 25,
+   "n": 26,
    "ma5": 3060,
    "ma20": 2762,
    "rsi": 83.8,
@@ -25613,7 +26200,7 @@
    "quad": "up_in"
   },
   "ENRG": {
-   "n": 25,
+   "n": 26,
    "ma5": 1434,
    "ma20": 1354,
    "rsi": 65.8,
@@ -25636,7 +26223,7 @@
    "quad": "up_in"
   },
   "ARCI": {
-   "n": 25,
+   "n": 26,
    "ma5": 1322,
    "ma20": 1344,
    "rsi": 34.2,
@@ -25659,7 +26246,7 @@
    "quad": "dip_in"
   },
   "DEFI": {
-   "n": 25,
+   "n": 26,
    "ma5": 114,
    "ma20": 108,
    "rsi": 60.0,
@@ -25682,7 +26269,7 @@
    "quad": "mid"
   },
   "ESSA": {
-   "n": 25,
+   "n": 26,
    "ma5": 642,
    "ma20": 655,
    "rsi": 47.9,
@@ -25705,7 +26292,7 @@
    "quad": "dip_out"
   },
   "PGAS": {
-   "n": 25,
+   "n": 26,
    "ma5": 1527,
    "ma20": 1529,
    "rsi": 46.8,
@@ -25728,7 +26315,7 @@
    "quad": "dip_in"
   },
   "SLIS": {
-   "n": 25,
+   "n": 26,
    "ma5": 86,
    "ma20": 91,
    "rsi": 50.0,
@@ -25751,7 +26338,7 @@
    "quad": "mid"
   },
   "BRPT": {
-   "n": 25,
+   "n": 26,
    "ma5": 1661,
    "ma20": 1775,
    "rsi": 13.6,
@@ -25774,7 +26361,7 @@
    "quad": "dip_out"
   },
   "IATA": {
-   "n": 25,
+   "n": 26,
    "ma5": 123,
    "ma20": 125,
    "rsi": 49.4,
@@ -25797,7 +26384,7 @@
    "quad": "dip_out"
   },
   "CPIN": {
-   "n": 25,
+   "n": 26,
    "ma5": 3156,
    "ma20": 3112,
    "rsi": 55.0,
@@ -25820,7 +26407,7 @@
    "quad": "up_out"
   },
   "ULTJ": {
-   "n": 25,
+   "n": 26,
    "ma5": 1686,
    "ma20": 1548,
    "rsi": 87.4,
@@ -25843,7 +26430,7 @@
    "quad": "up_in"
   },
   "MBMA": {
-   "n": 25,
+   "n": 26,
    "ma5": 510,
    "ma20": 535,
    "rsi": 31.4,
@@ -25866,7 +26453,7 @@
    "quad": "dip_out"
   },
   "COCO": {
-   "n": 25,
+   "n": 26,
    "ma5": 136,
    "ma20": 121,
    "rsi": 68.1,
@@ -25889,7 +26476,7 @@
    "quad": "up_out"
   },
   "KIJA": {
-   "n": 25,
+   "n": 26,
    "ma5": 188,
    "ma20": 198,
    "rsi": 25.0,
@@ -25912,7 +26499,7 @@
    "quad": "dip_out"
   },
   "ITMG": {
-   "n": 25,
+   "n": 26,
    "ma5": 26150,
    "ma20": 25914,
    "rsi": 65.5,
@@ -25935,7 +26522,7 @@
    "quad": "up_out"
   },
   "KLBF": {
-   "n": 25,
+   "n": 26,
    "ma5": 751,
    "ma20": 779,
    "rsi": 37.8,
@@ -25958,7 +26545,7 @@
    "quad": "dip_out"
   },
   "MDIA": {
-   "n": 25,
+   "n": 26,
    "ma5": 207,
    "ma20": 241,
    "rsi": 39.2,
@@ -25981,7 +26568,7 @@
    "quad": "dip_out"
   },
   "KOTA": {
-   "n": 25,
+   "n": 26,
    "ma5": 199,
    "ma20": 192,
    "rsi": 57.7,
@@ -26004,7 +26591,7 @@
    "quad": "mid"
   },
   "JARR": {
-   "n": 25,
+   "n": 26,
    "ma5": 3806,
    "ma20": 3316,
    "rsi": 73.0,
@@ -26027,7 +26614,7 @@
    "quad": "mid"
   },
   "BRIS": {
-   "n": 25,
+   "n": 26,
    "ma5": 1716,
    "ma20": 1767,
    "rsi": 20.0,
@@ -26050,7 +26637,7 @@
    "quad": "dip_out"
   },
   "BNBR": {
-   "n": 25,
+   "n": 26,
    "ma5": 93,
    "ma20": 98,
    "rsi": 17.6,
@@ -26073,7 +26660,7 @@
    "quad": "dip_out"
   },
   "UNVR": {
-   "n": 25,
+   "n": 26,
    "ma5": 1630,
    "ma20": 1711,
    "rsi": 11.1,
@@ -26096,7 +26683,7 @@
    "quad": "dip_out"
   },
   "INKP": {
-   "n": 25,
+   "n": 26,
    "ma5": 8810,
    "ma20": 8866,
    "rsi": 45.3,
@@ -26119,7 +26706,7 @@
    "quad": "mid"
   },
   "RAJA": {
-   "n": 25,
+   "n": 26,
    "ma5": 795,
    "ma20": 812,
    "rsi": 31.6,
@@ -26142,7 +26729,7 @@
    "quad": "mid"
   },
   "IMPC": {
-   "n": 25,
+   "n": 26,
    "ma5": 1695,
    "ma20": 1508,
    "rsi": 65.1,
@@ -26165,7 +26752,7 @@
    "quad": "up_out"
   },
   "INDY": {
-   "n": 25,
+   "n": 26,
    "ma5": 2788,
    "ma20": 2771,
    "rsi": 46.5,
@@ -26188,7 +26775,7 @@
    "quad": "dip_out"
   },
   "INDF": {
-   "n": 25,
+   "n": 26,
    "ma5": 7275,
    "ma20": 7316,
    "rsi": 46.9,
@@ -26211,7 +26798,7 @@
    "quad": "dip_in"
   },
   "NCKL": {
-   "n": 25,
+   "n": 26,
    "ma5": 930,
    "ma20": 950,
    "rsi": 41.5,
@@ -26234,7 +26821,7 @@
    "quad": "mid"
   },
   "ERAA": {
-   "n": 25,
+   "n": 26,
    "ma5": 593,
    "ma20": 539,
    "rsi": 70.2,
@@ -26257,7 +26844,7 @@
    "quad": "up_in"
   },
   "KPIG": {
-   "n": 25,
+   "n": 26,
    "ma5": 79,
    "ma20": 70,
    "rsi": 56.8,
@@ -26280,7 +26867,7 @@
    "quad": "up_out"
   },
   "NZIA": {
-   "n": 25,
+   "n": 26,
    "ma5": 191,
    "ma20": 171,
    "rsi": 58.6,
@@ -26303,7 +26890,7 @@
    "quad": "up_in"
   },
   "BIPI": {
-   "n": 25,
+   "n": 26,
    "ma5": 144,
    "ma20": 148,
    "rsi": 36.2,
@@ -26326,7 +26913,7 @@
    "quad": "dip_out"
   },
   "MUTU": {
-   "n": 25,
+   "n": 26,
    "ma5": 130,
    "ma20": 125,
    "rsi": 55.6,
@@ -26349,7 +26936,7 @@
    "quad": "mid"
   },
   "HMSP": {
-   "n": 25,
+   "n": 26,
    "ma5": 701,
    "ma20": 733,
    "rsi": 25.0,
@@ -26372,7 +26959,7 @@
    "quad": "dip_in"
   },
   "SMRA": {
-   "n": 25,
+   "n": 26,
    "ma5": 314,
    "ma20": 323,
    "rsi": 34.1,
@@ -26395,7 +26982,7 @@
    "quad": "dip_out"
   },
   "PSAB": {
-   "n": 25,
+   "n": 26,
    "ma5": 574,
    "ma20": 590,
    "rsi": 23.5,
@@ -26418,7 +27005,7 @@
    "quad": "dip_out"
   },
   "ASLI": {
-   "n": 25,
+   "n": 26,
    "ma5": 385,
    "ma20": 327,
    "rsi": 74.0,
@@ -26441,7 +27028,7 @@
    "quad": "mid"
   },
   "DFAM": {
-   "n": 25,
+   "n": 26,
    "ma5": 86,
    "ma20": 83,
    "rsi": 75.0,
@@ -26464,7 +27051,7 @@
    "quad": "mid"
   },
   "VAST": {
-   "n": 25,
+   "n": 26,
    "ma5": 116,
    "ma20": 114,
    "rsi": 78.9,
@@ -26487,7 +27074,7 @@
    "quad": "mid"
   },
   "AMRT": {
-   "n": 25,
+   "n": 26,
    "ma5": 1287,
    "ma20": 1333,
    "rsi": 33.3,
@@ -26510,7 +27097,7 @@
    "quad": "dip_out"
   },
   "ICBP": {
-   "n": 25,
+   "n": 26,
    "ma5": 7070,
    "ma20": 7425,
    "rsi": 10.6,
@@ -26533,7 +27120,7 @@
    "quad": "mid"
   },
   "KETR": {
-   "n": 25,
+   "n": 26,
    "ma5": 924,
    "ma20": 828,
    "rsi": 72.1,
@@ -26556,7 +27143,7 @@
    "quad": "up_out"
   },
   "TUGU": {
-   "n": 25,
+   "n": 26,
    "ma5": 1471,
    "ma20": 1384,
    "rsi": 81.1,
@@ -26579,7 +27166,7 @@
    "quad": "up_out"
   },
   "CCSI": {
-   "n": 25,
+   "n": 26,
    "ma5": 372,
    "ma20": 296,
    "rsi": 89.8,
@@ -26602,7 +27189,7 @@
    "quad": "mid"
   },
   "VKTR": {
-   "n": 25,
+   "n": 26,
    "ma5": 770,
    "ma20": 869,
    "rsi": 23.9,
@@ -26625,7 +27212,7 @@
    "quad": "dip_out"
   },
   "LSIP": {
-   "n": 25,
+   "n": 26,
    "ma5": 1697,
    "ma20": 1583,
    "rsi": 78.4,
@@ -26648,7 +27235,7 @@
    "quad": "up_in"
   },
   "LUCY": {
-   "n": 25,
+   "n": 26,
    "ma5": 367,
    "ma20": 400,
    "rsi": 47.9,
@@ -26671,7 +27258,7 @@
    "quad": "mid"
   },
   "TKIM": {
-   "n": 25,
+   "n": 26,
    "ma5": 7830,
    "ma20": 8029,
    "rsi": 42.5,
@@ -26694,7 +27281,7 @@
    "quad": "dip_in"
   },
   "FORU": {
-   "n": 25,
+   "n": 26,
    "ma5": 4032,
    "ma20": 3038,
    "rsi": 74.1,
@@ -26717,7 +27304,7 @@
    "quad": "mid"
   },
   "BUVA": {
-   "n": 25,
+   "n": 26,
    "ma5": 711,
    "ma20": 738,
    "rsi": 41.9,
@@ -26740,7 +27327,7 @@
    "quad": "dip_out"
   },
   "TAPG": {
-   "n": 25,
+   "n": 26,
    "ma5": 2242,
    "ma20": 2165,
    "rsi": 58.3,
@@ -26763,7 +27350,7 @@
    "quad": "up_in"
   },
   "SSIA": {
-   "n": 25,
+   "n": 26,
    "ma5": 1716,
    "ma20": 1804,
    "rsi": 32.0,
@@ -26786,7 +27373,7 @@
    "quad": "mid"
   },
   "FILM": {
-   "n": 25,
+   "n": 26,
    "ma5": 765,
    "ma20": 813,
    "rsi": 34.5,
@@ -26809,7 +27396,7 @@
    "quad": "dip_out"
   },
   "PANI": {
-   "n": 25,
+   "n": 26,
    "ma5": 5575,
    "ma20": 5858,
    "rsi": 28.6,
@@ -26832,7 +27419,7 @@
    "quad": "dip_out"
   },
   "ELIT": {
-   "n": 25,
+   "n": 26,
    "ma5": 273,
    "ma20": 254,
    "rsi": 56.1,
@@ -26855,7 +27442,7 @@
    "quad": "mid"
   },
   "NICL": {
-   "n": 25,
+   "n": 26,
    "ma5": 468,
    "ma20": 487,
    "rsi": 27.4,
@@ -26878,7 +27465,7 @@
    "quad": "dip_out"
   },
   "MSIN": {
-   "n": 25,
+   "n": 26,
    "ma5": 304,
    "ma20": 318,
    "rsi": 42.5,
@@ -26901,7 +27488,7 @@
    "quad": "dip_out"
   },
   "RMKE": {
-   "n": 25,
+   "n": 26,
    "ma5": 409,
    "ma20": 422,
    "rsi": 42.0,
@@ -26924,7 +27511,7 @@
    "quad": "mid"
   },
   "UVCR": {
-   "n": 25,
+   "n": 26,
    "ma5": 162,
    "ma20": 149,
    "rsi": 72.1,
@@ -26947,7 +27534,7 @@
    "quad": "up_in"
   },
   "SMIL": {
-   "n": 25,
+   "n": 26,
    "ma5": 431,
    "ma20": 418,
    "rsi": 60.0,
@@ -26970,7 +27557,7 @@
    "quad": "up_out"
   },
   "DMAS": {
-   "n": 25,
+   "n": 26,
    "ma5": 192,
    "ma20": 189,
    "rsi": 56.3,
@@ -26993,7 +27580,7 @@
    "quad": "mid"
   },
   "AALI": {
-   "n": 25,
+   "n": 26,
    "ma5": 8515,
    "ma20": 8274,
    "rsi": 67.6,
@@ -27016,7 +27603,7 @@
    "quad": "up_in"
   },
   "SQMI": {
-   "n": 25,
+   "n": 26,
    "ma5": 94,
    "ma20": 83,
    "rsi": 62.1,
@@ -27039,7 +27626,7 @@
    "quad": "up_out"
   },
   "BREN": {
-   "n": 25,
+   "n": 26,
    "ma5": 3178,
    "ma20": 3323,
    "rsi": 24.6,
@@ -27062,7 +27649,7 @@
    "quad": "dip_out"
   },
   "AHAP": {
-   "n": 25,
+   "n": 26,
    "ma5": 106,
    "ma20": 102,
    "rsi": 67.4,
@@ -27085,7 +27672,7 @@
    "quad": "mid"
   },
   "ARKO": {
-   "n": 25,
+   "n": 26,
    "ma5": 4412,
    "ma20": 4851,
    "rsi": 9.9,
@@ -27108,7 +27695,7 @@
    "quad": "dip_in"
   },
   "SMGR": {
-   "n": 25,
+   "n": 26,
    "ma5": 1650,
    "ma20": 1630,
    "rsi": 56.1,
@@ -27131,7 +27718,7 @@
    "quad": "mid"
   },
   "JGLE": {
-   "n": 25,
+   "n": 26,
    "ma5": 75,
    "ma20": 83,
    "rsi": 35.0,
@@ -27154,7 +27741,7 @@
    "quad": "mid"
   },
   "PART": {
-   "n": 25,
+   "n": 26,
    "ma5": 103,
    "ma20": 107,
    "rsi": 43.9,
@@ -27177,7 +27764,7 @@
    "quad": "mid"
   },
   "ARTO": {
-   "n": 25,
+   "n": 26,
    "ma5": 972,
    "ma20": 1008,
    "rsi": 33.9,
@@ -27200,7 +27787,7 @@
    "quad": "dip_out"
   },
   "GULA": {
-   "n": 25,
+   "n": 26,
    "ma5": 829,
    "ma20": 784,
    "rsi": 63.2,
@@ -27223,7 +27810,7 @@
    "quad": "up_in"
   },
   "CDIA": {
-   "n": 25,
+   "n": 26,
    "ma5": 669,
    "ma20": 686,
    "rsi": 38.7,
@@ -27246,7 +27833,7 @@
    "quad": "mid"
   },
   "WIFI": {
-   "n": 25,
+   "n": 26,
    "ma5": 1971,
    "ma20": 2052,
    "rsi": 33.3,
@@ -27269,7 +27856,7 @@
    "quad": "dip_out"
   },
   "MITI": {
-   "n": 25,
+   "n": 26,
    "ma5": 265,
    "ma20": 235,
    "rsi": 61.4,
@@ -27292,7 +27879,7 @@
    "quad": "mid"
   },
   "BACH": {
-   "n": 25,
+   "n": 26,
    "ma5": 430,
    "ma20": 457,
    "rsi": 13.2,
@@ -27315,7 +27902,7 @@
    "quad": "dip_out"
   },
   "BBTN": {
-   "n": 25,
+   "n": 26,
    "ma5": 1191,
    "ma20": 1218,
    "rsi": 40.4,
@@ -27338,7 +27925,7 @@
    "quad": "dip_out"
   },
   "DOOH": {
-   "n": 25,
+   "n": 26,
    "ma5": 399,
    "ma20": 346,
    "rsi": 80.6,
@@ -27361,7 +27948,7 @@
    "quad": "mid"
   },
   "HRTA": {
-   "n": 25,
+   "n": 26,
    "ma5": 2154,
    "ma20": 2254,
    "rsi": 28.8,
@@ -27384,7 +27971,7 @@
    "quad": "dip_out"
   },
   "BBHI": {
-   "n": 25,
+   "n": 26,
    "ma5": 899,
    "ma20": 900,
    "rsi": 50.0,
@@ -27407,7 +27994,7 @@
    "quad": "mid"
   },
   "AYAM": {
-   "n": 25,
+   "n": 26,
    "ma5": 491,
    "ma20": 486,
    "rsi": 73.0,
@@ -27430,7 +28017,7 @@
    "quad": "up_in"
   },
   "PIPA": {
-   "n": 25,
+   "n": 26,
    "ma5": 191,
    "ma20": 193,
    "rsi": 38.9,
@@ -27453,7 +28040,7 @@
    "quad": "dip_out"
   },
   "MMIX": {
-   "n": 25,
+   "n": 26,
    "ma5": 852,
    "ma20": 805,
    "rsi": 82.6,
@@ -27476,7 +28063,7 @@
    "quad": "up_in"
   },
   "MGNA": {
-   "n": 25,
+   "n": 26,
    "ma5": 153,
    "ma20": 111,
    "rsi": 95.6,
@@ -27499,7 +28086,7 @@
    "quad": "mid"
   },
   "JPFA": {
-   "n": 25,
+   "n": 26,
    "ma5": 2282,
    "ma20": 2264,
    "rsi": 57.9,
@@ -27522,7 +28109,7 @@
    "quad": "up_out"
   },
   "SRSN": {
-   "n": 25,
+   "n": 26,
    "ma5": 100,
    "ma20": 90,
    "rsi": 69.3,
@@ -27545,7 +28132,7 @@
    "quad": "up_out"
   },
   "BFIN": {
-   "n": 25,
+   "n": 26,
    "ma5": 994,
    "ma20": 950,
    "rsi": 68.5,
@@ -27568,7 +28155,7 @@
    "quad": "up_in"
   },
   "ACES": {
-   "n": 25,
+   "n": 26,
    "ma5": 352,
    "ma20": 356,
    "rsi": 37.5,
@@ -27591,7 +28178,7 @@
    "quad": "dip_in"
   },
   "VICI": {
-   "n": 25,
+   "n": 26,
    "ma5": 1149,
    "ma20": 904,
    "rsi": 90.7,
@@ -27614,7 +28201,7 @@
    "quad": "up_in"
   },
   "IRSX": {
-   "n": 25,
+   "n": 26,
    "ma5": 405,
    "ma20": 393,
    "rsi": 61.3,
@@ -27637,7 +28224,7 @@
    "quad": "mid"
   },
   "HATM": {
-   "n": 25,
+   "n": 26,
    "ma5": 581,
    "ma20": 592,
    "rsi": 52.9,
@@ -27660,7 +28247,7 @@
    "quad": "mid"
   },
   "WIRG": {
-   "n": 25,
+   "n": 26,
    "ma5": 79,
    "ma20": 76,
    "rsi": 51.5,
@@ -27683,7 +28270,7 @@
    "quad": "up_out"
   },
   "RATU": {
-   "n": 25,
+   "n": 26,
    "ma5": 4466,
    "ma20": 4404,
    "rsi": 51.5,
@@ -27706,7 +28293,7 @@
    "quad": "mid"
   },
   "CMRY": {
-   "n": 25,
+   "n": 26,
    "ma5": 4470,
    "ma20": 4625,
    "rsi": 42.1,
@@ -27729,7 +28316,7 @@
    "quad": "dip_out"
   },
   "MYOR": {
-   "n": 25,
+   "n": 26,
    "ma5": 1506,
    "ma20": 1568,
    "rsi": 23.8,
@@ -27752,7 +28339,7 @@
    "quad": "dip_out"
   },
   "CYBR": {
-   "n": 25,
+   "n": 26,
    "ma5": 524,
    "ma20": 534,
    "rsi": 42.1,
@@ -27775,7 +28362,7 @@
    "quad": "dip_in"
   },
   "SGER": {
-   "n": 25,
+   "n": 26,
    "ma5": 691,
    "ma20": 623,
    "rsi": 69.8,
@@ -27798,7 +28385,7 @@
    "quad": "up_out"
   },
   "TRIN": {
-   "n": 25,
+   "n": 26,
    "ma5": 402,
    "ma20": 367,
    "rsi": 57.0,
@@ -27821,7 +28408,7 @@
    "quad": "mid"
   },
   "MARK": {
-   "n": 25,
+   "n": 26,
    "ma5": 1131,
    "ma20": 1092,
    "rsi": 82.9,
@@ -27844,7 +28431,7 @@
    "quad": "mid"
   },
   "SOCI": {
-   "n": 25,
+   "n": 26,
    "ma5": 646,
    "ma20": 601,
    "rsi": 65.5,
@@ -27867,7 +28454,7 @@
    "quad": "up_in"
   },
   "GGRM": {
-   "n": 25,
+   "n": 26,
    "ma5": 18700,
    "ma20": 19758,
    "rsi": 31.0,
@@ -27890,7 +28477,7 @@
    "quad": "dip_out"
   },
   "COIN": {
-   "n": 25,
+   "n": 26,
    "ma5": 730,
    "ma20": 799,
    "rsi": 39.0,
@@ -27913,7 +28500,7 @@
    "quad": "dip_out"
   },
   "RSCH": {
-   "n": 25,
+   "n": 26,
    "ma5": 430,
    "ma20": 378,
    "rsi": 82.6,
@@ -27936,7 +28523,7 @@
    "quad": "up_in"
   },
   "EXCL": {
-   "n": 25,
+   "n": 26,
    "ma5": 2594,
    "ma20": 2718,
    "rsi": 24.4,
@@ -27959,7 +28546,7 @@
    "quad": "dip_out"
   },
   "VISI": {
-   "n": 25,
+   "n": 26,
    "ma5": 1069,
    "ma20": 990,
    "rsi": 82.9,
@@ -27982,7 +28569,7 @@
    "quad": "up_in"
   },
   "BWPT": {
-   "n": 25,
+   "n": 26,
    "ma5": 124,
    "ma20": 118,
    "rsi": 63.6,
@@ -28005,7 +28592,7 @@
    "quad": "up_out"
   },
   "JAYA": {
-   "n": 25,
+   "n": 26,
    "ma5": 160,
    "ma20": 148,
    "rsi": 65.6,
@@ -28028,7 +28615,7 @@
    "quad": "mid"
   },
   "DSFI": {
-   "n": 25,
+   "n": 26,
    "ma5": 88,
    "ma20": 87,
    "rsi": 53.8,
@@ -28051,7 +28638,7 @@
    "quad": "mid"
   },
   "TOWR": {
-   "n": 25,
+   "n": 26,
    "ma5": 448,
    "ma20": 452,
    "rsi": 35.6,
@@ -28074,7 +28661,7 @@
    "quad": "dip_out"
   },
   "MSJA": {
-   "n": 25,
+   "n": 26,
    "ma5": 833,
    "ma20": 567,
    "rsi": 82.4,
@@ -28097,7 +28684,7 @@
    "quad": "mid"
   },
   "SMMT": {
-   "n": 25,
+   "n": 26,
    "ma5": 2782,
    "ma20": 2320,
    "rsi": 85.0,
@@ -28120,7 +28707,7 @@
    "quad": "up_out"
   },
   "DSNG": {
-   "n": 25,
+   "n": 26,
    "ma5": 1627,
    "ma20": 1585,
    "rsi": 53.2,
@@ -28143,7 +28730,7 @@
    "quad": "up_in"
   },
   "LAPD": {
-   "n": 25,
+   "n": 26,
    "ma5": 79,
    "ma20": 72,
    "rsi": 58.9,
@@ -28166,7 +28753,7 @@
    "quad": "mid"
   },
   "EMTK": {
-   "n": 25,
+   "n": 26,
    "ma5": 494,
    "ma20": 515,
    "rsi": 39.7,
@@ -28189,7 +28776,7 @@
    "quad": "dip_out"
   },
   "FUTR": {
-   "n": 25,
+   "n": 26,
    "ma5": 296,
    "ma20": 323,
    "rsi": 36.1,
@@ -28212,7 +28799,7 @@
    "quad": "mid"
   },
   "GPRA": {
-   "n": 25,
+   "n": 26,
    "ma5": 104,
    "ma20": 108,
    "rsi": 38.5,
@@ -28235,7 +28822,7 @@
    "quad": "dip_in"
   },
   "SMDR": {
-   "n": 25,
+   "n": 26,
    "ma5": 390,
    "ma20": 345,
    "rsi": 86.8,
@@ -28258,7 +28845,7 @@
    "quad": "up_in"
   },
   "RANS": {
-   "n": 25,
+   "n": 26,
    "ma5": 200,
    "ma20": 206,
    "rsi": 29.4,
@@ -28281,7 +28868,7 @@
    "quad": "dip_out"
   },
   "ELSA": {
-   "n": 25,
+   "n": 26,
    "ma5": 722,
    "ma20": 720,
    "rsi": 54.3,
@@ -28304,7 +28891,7 @@
    "quad": "mid"
   },
   "PGEO": {
-   "n": 25,
+   "n": 26,
    "ma5": 1033,
    "ma20": 1038,
    "rsi": 54.2,
@@ -28327,7 +28914,7 @@
    "quad": "mid"
   },
   "MPIX": {
-   "n": 25,
+   "n": 26,
    "ma5": 155,
    "ma20": 120,
    "rsi": 83.2,
@@ -28350,7 +28937,7 @@
    "quad": "mid"
   },
   "KOPI": {
-   "n": 25,
+   "n": 26,
    "ma5": 202,
    "ma20": 205,
    "rsi": 50.0,
@@ -28373,7 +28960,7 @@
    "quad": "mid"
   },
   "UANG": {
-   "n": 25,
+   "n": 26,
    "ma5": 3802,
    "ma20": 3178,
    "rsi": 72.8,
@@ -28396,7 +28983,7 @@
    "quad": "up_out"
   },
   "JSMR": {
-   "n": 25,
+   "n": 26,
    "ma5": 2914,
    "ma20": 2898,
    "rsi": 52.8,
@@ -28419,7 +29006,7 @@
    "quad": "mid"
   },
   "HRUM": {
-   "n": 25,
+   "n": 26,
    "ma5": 910,
    "ma20": 924,
    "rsi": 42.1,
@@ -28442,7 +29029,7 @@
    "quad": "dip_out"
   },
   "SSMS": {
-   "n": 25,
+   "n": 26,
    "ma5": 1127,
    "ma20": 1052,
    "rsi": 60.5,
@@ -28465,7 +29052,7 @@
    "quad": "up_out"
   },
   "BUKA": {
-   "n": 25,
+   "n": 26,
    "ma5": 106,
    "ma20": 110,
    "rsi": 41.4,
@@ -28488,7 +29075,7 @@
    "quad": "dip_out"
   },
   "AUTO": {
-   "n": 25,
+   "n": 26,
    "ma5": 3326,
    "ma20": 3272,
    "rsi": 50.0,
@@ -28511,7 +29098,7 @@
    "quad": "up_in"
   },
   "LABA": {
-   "n": 25,
+   "n": 26,
    "ma5": 127,
    "ma20": 119,
    "rsi": 65.0,
@@ -28534,7 +29121,7 @@
    "quad": "mid"
   },
   "CMNT": {
-   "n": 25,
+   "n": 26,
    "ma5": 760,
    "ma20": 755,
    "rsi": 60.0,
@@ -28557,7 +29144,7 @@
    "quad": "up_out"
   },
   "AKRA": {
-   "n": 25,
+   "n": 26,
    "ma5": 1503,
    "ma20": 1437,
    "rsi": 60.5,
@@ -28580,7 +29167,7 @@
    "quad": "up_out"
   },
   "CINT": {
-   "n": 25,
+   "n": 26,
    "ma5": 186,
    "ma20": 184,
    "rsi": 78.6,
@@ -28603,7 +29190,7 @@
    "quad": "mid"
   },
   "TCPI": {
-   "n": 25,
+   "n": 26,
    "ma5": 1851,
    "ma20": 2233,
    "rsi": 25.3,
@@ -28626,7 +29213,7 @@
    "quad": "dip_out"
   },
   "FOLK": {
-   "n": 25,
+   "n": 26,
    "ma5": 264,
    "ma20": 205,
    "rsi": 65.0,
@@ -28649,7 +29236,7 @@
    "quad": "mid"
   },
   "MGLV": {
-   "n": 25,
+   "n": 26,
    "ma5": 14765,
    "ma20": 12776,
    "rsi": 65.7,
@@ -28672,7 +29259,7 @@
    "quad": "up_in"
   },
   "KRYA": {
-   "n": 25,
+   "n": 26,
    "ma5": 68,
    "ma20": 67,
    "rsi": 72.2,
@@ -28695,7 +29282,7 @@
    "quad": "mid"
   },
   "MNCN": {
-   "n": 25,
+   "n": 26,
    "ma5": 202,
    "ma20": 202,
    "rsi": 47.4,
@@ -28718,7 +29305,7 @@
    "quad": "dip_out"
   },
   "PWON": {
-   "n": 25,
+   "n": 26,
    "ma5": 270,
    "ma20": 272,
    "rsi": 50.0,
@@ -28741,7 +29328,7 @@
    "quad": "mid"
   },
   "TEBE": {
-   "n": 25,
+   "n": 26,
    "ma5": 1702,
    "ma20": 1716,
    "rsi": 41.8,
@@ -28764,7 +29351,7 @@
    "quad": "dip_out"
   },
   "TOTL": {
-   "n": 25,
+   "n": 26,
    "ma5": 1523,
    "ma20": 1490,
    "rsi": 47.7,
@@ -28787,7 +29374,7 @@
    "quad": "up_in"
   },
   "MAPI": {
-   "n": 25,
+   "n": 26,
    "ma5": 1360,
    "ma20": 1428,
    "rsi": 35.4,
@@ -28810,7 +29397,7 @@
    "quad": "dip_out"
   },
   "HOPE": {
-   "n": 25,
+   "n": 26,
    "ma5": 208,
    "ma20": 241,
    "rsi": 36.6,
@@ -28833,7 +29420,7 @@
    "quad": "dip_in"
   },
   "KAQI": {
-   "n": 25,
+   "n": 26,
    "ma5": 95,
    "ma20": 97,
    "rsi": 51.9,
@@ -28856,7 +29443,7 @@
    "quad": "dip_out"
   },
   "WBSA": {
-   "n": 25,
+   "n": 26,
    "ma5": 668,
    "ma20": 687,
    "rsi": 44.2,
@@ -28879,7 +29466,7 @@
    "quad": "dip_out"
   },
   "WIIM": {
-   "n": 25,
+   "n": 26,
    "ma5": 1553,
    "ma20": 1642,
    "rsi": 22.2,
@@ -28902,7 +29489,7 @@
    "quad": "dip_out"
   },
   "HEXA": {
-   "n": 25,
+   "n": 26,
    "ma5": 4454,
    "ma20": 4434,
    "rsi": 58.8,
@@ -28925,7 +29512,7 @@
    "quad": "mid"
   },
   "CLEO": {
-   "n": 25,
+   "n": 26,
    "ma5": 424,
    "ma20": 412,
    "rsi": 61.5,
@@ -28948,7 +29535,7 @@
    "quad": "up_out"
   },
   "JAWA": {
-   "n": 25,
+   "n": 26,
    "ma5": 153,
    "ma20": 141,
    "rsi": 61.4,
@@ -28971,7 +29558,7 @@
    "quad": "mid"
   },
   "MTEL": {
-   "n": 25,
+   "n": 26,
    "ma5": 486,
    "ma20": 474,
    "rsi": 60.0,
@@ -28994,7 +29581,7 @@
    "quad": "up_out"
   },
   "INTD": {
-   "n": 25,
+   "n": 26,
    "ma5": 282,
    "ma20": 281,
    "rsi": 47.2,
@@ -29017,7 +29604,7 @@
    "quad": "mid"
   },
   "PTSN": {
-   "n": 25,
+   "n": 26,
    "ma5": 408,
    "ma20": 325,
    "rsi": 78.5,
@@ -29040,7 +29627,7 @@
    "quad": "mid"
   },
   "RGAS": {
-   "n": 25,
+   "n": 26,
    "ma5": 110,
    "ma20": 154,
    "rsi": 5.3,
@@ -29063,7 +29650,7 @@
    "quad": "mid"
   },
   "WINS": {
-   "n": 25,
+   "n": 26,
    "ma5": 585,
    "ma20": 553,
    "rsi": 68.4,
@@ -29086,7 +29673,7 @@
    "quad": "up_out"
   },
   "LPKR": {
-   "n": 25,
+   "n": 26,
    "ma5": 60,
    "ma20": 62,
    "rsi": 25.0,
@@ -29109,7 +29696,7 @@
    "quad": "dip_out"
   },
   "SMLE": {
-   "n": 25,
+   "n": 26,
    "ma5": 203,
    "ma20": 182,
    "rsi": 76.3,
@@ -29132,7 +29719,7 @@
    "quad": "up_in"
   },
   "PADI": {
-   "n": 25,
+   "n": 26,
    "ma5": 71,
    "ma20": 72,
    "rsi": 33.3,
@@ -29155,7 +29742,7 @@
    "quad": "mid"
   },
   "INDO": {
-   "n": 25,
+   "n": 26,
    "ma5": 185,
    "ma20": 184,
    "rsi": 56.7,
@@ -29178,7 +29765,7 @@
    "quad": "up_in"
   },
   "BBSS": {
-   "n": 25,
+   "n": 26,
    "ma5": 90,
    "ma20": 98,
    "rsi": 31.2,
@@ -29201,7 +29788,7 @@
    "quad": "mid"
   },
   "SIDO": {
-   "n": 25,
+   "n": 26,
    "ma5": 349,
    "ma20": 352,
    "rsi": 44.4,
@@ -29224,7 +29811,7 @@
    "quad": "dip_out"
   },
   "POWR": {
-   "n": 25,
+   "n": 26,
    "ma5": 991,
    "ma20": 926,
    "rsi": 58.6,
@@ -29247,7 +29834,7 @@
    "quad": "mid"
   },
   "MLPT": {
-   "n": 25,
+   "n": 26,
    "ma5": 1167,
    "ma20": 1259,
    "rsi": 25.4,
@@ -29270,7 +29857,7 @@
    "quad": "dip_in"
   },
   "HEAL": {
-   "n": 25,
+   "n": 26,
    "ma5": 677,
    "ma20": 674,
    "rsi": 57.6,
@@ -29293,7 +29880,7 @@
    "quad": "up_out"
   },
   "NSSS": {
-   "n": 25,
+   "n": 26,
    "ma5": 796,
    "ma20": 850,
    "rsi": 36.7,
@@ -29316,7 +29903,7 @@
    "quad": "dip_in"
   },
   "DEWI": {
-   "n": 25,
+   "n": 26,
    "ma5": 166,
    "ma20": 156,
    "rsi": 80.6,
@@ -29339,7 +29926,7 @@
    "quad": "up_in"
   },
   "IDEA": {
-   "n": 25,
+   "n": 26,
    "ma5": 86,
    "ma20": 68,
    "rsi": 88.5,
@@ -29362,7 +29949,7 @@
    "quad": "mid"
   },
   "SRTG": {
-   "n": 25,
+   "n": 26,
    "ma5": 1796,
    "ma20": 1850,
    "rsi": 17.5,
@@ -29385,7 +29972,7 @@
    "quad": "dip_out"
   },
   "VOKS": {
-   "n": 25,
+   "n": 26,
    "ma5": 276,
    "ma20": 242,
    "rsi": 81.1,
@@ -29408,7 +29995,7 @@
    "quad": "mid"
   },
   "DATA": {
-   "n": 25,
+   "n": 26,
    "ma5": 1714,
    "ma20": 1826,
    "rsi": 31.2,
@@ -29431,7 +30018,7 @@
    "quad": "mid"
   },
   "ASSA": {
-   "n": 25,
+   "n": 26,
    "ma5": 605,
    "ma20": 629,
    "rsi": 39.1,
@@ -29454,7 +30041,7 @@
    "quad": "dip_out"
   },
   "AGAR": {
-   "n": 25,
+   "n": 26,
    "ma5": 2275,
    "ma20": 1848,
    "rsi": 67.1,
@@ -29477,7 +30064,7 @@
    "quad": "mid"
   },
   "CTRA": {
-   "n": 25,
+   "n": 26,
    "ma5": 611,
    "ma20": 624,
    "rsi": 40.0,
@@ -29500,7 +30087,7 @@
    "quad": "dip_in"
   },
   "TRON": {
-   "n": 25,
+   "n": 26,
    "ma5": 101,
    "ma20": 101,
    "rsi": 63.2,
@@ -29523,7 +30110,7 @@
    "quad": "mid"
   },
   "KJEN": {
-   "n": 25,
+   "n": 26,
    "ma5": 162,
    "ma20": 163,
    "rsi": 54.5,
@@ -29546,7 +30133,7 @@
    "quad": "mid"
   },
   "BMTR": {
-   "n": 25,
+   "n": 26,
    "ma5": 116,
    "ma20": 116,
    "rsi": 48.4,
@@ -29569,7 +30156,7 @@
    "quad": "mid"
   },
   "GMFI": {
-   "n": 25,
+   "n": 26,
    "ma5": 58,
    "ma20": 59,
    "rsi": 50.0,
@@ -29592,7 +30179,7 @@
    "quad": "dip_out"
   },
   "SNLK": {
-   "n": 25,
+   "n": 26,
    "ma5": 244,
    "ma20": 233,
    "rsi": 68.6,
@@ -29615,7 +30202,7 @@
    "quad": "up_out"
   },
   "BBKP": {
-   "n": 25,
+   "n": 26,
    "ma5": 52,
    "ma20": 54,
    "rsi": 16.7,
@@ -29638,7 +30225,7 @@
    "quad": "dip_out"
   },
   "BKSL": {
-   "n": 25,
+   "n": 26,
    "ma5": 70,
    "ma20": 74,
    "rsi": 23.1,
@@ -29661,7 +30248,7 @@
    "quad": "dip_out"
   },
   "MAPA": {
-   "n": 25,
+   "n": 26,
    "ma5": 659,
    "ma20": 683,
    "rsi": 26.9,
@@ -29684,7 +30271,7 @@
    "quad": "dip_out"
   },
   "TOBA": {
-   "n": 25,
+   "n": 26,
    "ma5": 541,
    "ma20": 569,
    "rsi": 20.7,
@@ -29707,7 +30294,7 @@
    "quad": "mid"
   },
   "MINA": {
-   "n": 25,
+   "n": 26,
    "ma5": 268,
    "ma20": 274,
    "rsi": 32.0,
@@ -29730,7 +30317,7 @@
    "quad": "dip_out"
   },
   "INTP": {
-   "n": 25,
+   "n": 26,
    "ma5": 5195,
    "ma20": 5432,
    "rsi": 33.3,
@@ -29753,7 +30340,7 @@
    "quad": "dip_out"
   },
   "MOLI": {
-   "n": 25,
+   "n": 26,
    "ma5": 318,
    "ma20": 304,
    "rsi": 66.7,
@@ -29776,7 +30363,7 @@
    "quad": "up_in"
   },
   "SCMA": {
-   "n": 25,
+   "n": 26,
    "ma5": 198,
    "ma20": 204,
    "rsi": 36.4,
@@ -29799,7 +30386,7 @@
    "quad": "dip_out"
   },
   "AVIA": {
-   "n": 25,
+   "n": 26,
    "ma5": 349,
    "ma20": 358,
    "rsi": 40.0,
@@ -29822,7 +30409,7 @@
    "quad": "dip_out"
   },
   "PADA": {
-   "n": 25,
+   "n": 26,
    "ma5": 198,
    "ma20": 217,
    "rsi": 16.1,
@@ -29845,7 +30432,7 @@
    "quad": "mid"
   },
   "SIMP": {
-   "n": 25,
+   "n": 26,
    "ma5": 615,
    "ma20": 621,
    "rsi": 50.0,
@@ -29868,7 +30455,7 @@
    "quad": "dip_in"
   },
   "BSDE": {
-   "n": 25,
+   "n": 26,
    "ma5": 641,
    "ma20": 646,
    "rsi": 45.5,
@@ -29891,7 +30478,7 @@
    "quad": "dip_out"
   },
   "ENZO": {
-   "n": 25,
+   "n": 26,
    "ma5": 77,
    "ma20": 75,
    "rsi": 59.4,
@@ -29914,7 +30501,7 @@
    "quad": "mid"
   },
   "BSML": {
-   "n": 25,
+   "n": 26,
    "ma5": 542,
    "ma20": 524,
    "rsi": 66.7,
@@ -29937,7 +30524,7 @@
    "quad": "up_out"
   },
   "NISP": {
-   "n": 25,
+   "n": 26,
    "ma5": 1275,
    "ma20": 1256,
    "rsi": 59.1,
@@ -29960,7 +30547,7 @@
    "quad": "up_out"
   },
   "KEEN": {
-   "n": 25,
+   "n": 26,
    "ma5": 918,
    "ma20": 910,
    "rsi": 61.9,
@@ -29983,7 +30570,7 @@
    "quad": "up_in"
   },
   "SMSM": {
-   "n": 25,
+   "n": 26,
    "ma5": 1734,
    "ma20": 1732,
    "rsi": 51.7,
@@ -30006,7 +30593,7 @@
    "quad": "mid"
   },
   "EURO": {
-   "n": 25,
+   "n": 26,
    "ma5": 1405,
    "ma20": 1452,
    "rsi": 54.8,
@@ -30029,7 +30616,7 @@
    "quad": "mid"
   },
   "ASPR": {
-   "n": 25,
+   "n": 26,
    "ma5": 145,
    "ma20": 150,
    "rsi": 38.1,
@@ -30052,7 +30639,7 @@
    "quad": "dip_out"
   },
   "GRIA": {
-   "n": 25,
+   "n": 26,
    "ma5": 166,
    "ma20": 174,
    "rsi": 22.7,
@@ -30075,7 +30662,7 @@
    "quad": "dip_in"
   },
   "OLIV": {
-   "n": 25,
+   "n": 26,
    "ma5": 62,
    "ma20": 53,
    "rsi": 60.8,
@@ -30098,7 +30685,7 @@
    "quad": "up_out"
   },
   "FAST": {
-   "n": 25,
+   "n": 26,
    "ma5": 436,
    "ma20": 459,
    "rsi": 21.7,
@@ -30121,7 +30708,7 @@
    "quad": "dip_out"
   },
   "EPAC": {
-   "n": 25,
+   "n": 26,
    "ma5": 53,
    "ma20": 56,
    "rsi": 38.9,
@@ -30144,7 +30731,7 @@
    "quad": "dip_in"
   },
   "SUPA": {
-   "n": 25,
+   "n": 26,
    "ma5": 503,
    "ma20": 521,
    "rsi": 38.0,
@@ -30167,7 +30754,7 @@
    "quad": "dip_in"
   },
   "CBRE": {
-   "n": 25,
+   "n": 26,
    "ma5": 724,
    "ma20": 716,
    "rsi": 55.0,
@@ -30190,7 +30777,7 @@
    "quad": "mid"
   },
   "WEHA": {
-   "n": 25,
+   "n": 26,
    "ma5": 112,
    "ma20": 110,
    "rsi": 80.0,
@@ -30213,7 +30800,7 @@
    "quad": "mid"
   },
   "STAA": {
-   "n": 25,
+   "n": 26,
    "ma5": 1204,
    "ma20": 1210,
    "rsi": 47.7,
@@ -30236,7 +30823,7 @@
    "quad": "dip_in"
   },
   "POLA": {
-   "n": 25,
+   "n": 26,
    "ma5": 74,
    "ma20": 61,
    "rsi": 67.3,
@@ -30259,7 +30846,7 @@
    "quad": "mid"
   },
   "RODA": {
-   "n": 25,
+   "n": 26,
    "ma5": 65,
    "ma20": 65,
    "rsi": 52.6,
@@ -30282,7 +30869,7 @@
    "quad": "up_out"
   },
   "KKES": {
-   "n": 25,
+   "n": 26,
    "ma5": 89,
    "ma20": 82,
    "rsi": 61.8,
@@ -30305,7 +30892,7 @@
    "quad": "mid"
   },
   "OBMD": {
-   "n": 25,
+   "n": 26,
    "ma5": 199,
    "ma20": 194,
    "rsi": 62.3,
@@ -30328,7 +30915,7 @@
    "quad": "mid"
   },
   "OASA": {
-   "n": 25,
+   "n": 26,
    "ma5": 294,
    "ma20": 316,
    "rsi": 22.2,
@@ -30351,7 +30938,7 @@
    "quad": "mid"
   },
   "CSMI": {
-   "n": 25,
+   "n": 26,
    "ma5": 195,
    "ma20": 177,
    "rsi": 45.7,
@@ -30374,7 +30961,7 @@
    "quad": "mid"
   },
   "DOSS": {
-   "n": 25,
+   "n": 26,
    "ma5": 169,
    "ma20": 169,
    "rsi": 56.0,
@@ -30397,7 +30984,7 @@
    "quad": "up_out"
   },
   "DKFT": {
-   "n": 25,
+   "n": 26,
    "ma5": 674,
    "ma20": 680,
    "rsi": 41.4,
@@ -30420,7 +31007,7 @@
    "quad": "dip_out"
   },
   "DIVA": {
-   "n": 25,
+   "n": 26,
    "ma5": 136,
    "ma20": 137,
    "rsi": 42.1,
@@ -30443,7 +31030,7 @@
    "quad": "dip_in"
   },
   "BBYB": {
-   "n": 25,
+   "n": 26,
    "ma5": 250,
    "ma20": 257,
    "rsi": 46.2,
@@ -30466,7 +31053,7 @@
    "quad": "mid"
   },
   "MCAS": {
-   "n": 25,
+   "n": 26,
    "ma5": 270,
    "ma20": 284,
    "rsi": 36.4,
@@ -30489,7 +31076,7 @@
    "quad": "dip_in"
   },
   "APEX": {
-   "n": 25,
+   "n": 26,
    "ma5": 200,
    "ma20": 197,
    "rsi": 55.6,
@@ -30512,7 +31099,7 @@
    "quad": "mid"
   },
   "DGWG": {
-   "n": 25,
+   "n": 26,
    "ma5": 330,
    "ma20": 340,
    "rsi": 29.0,
@@ -30535,7 +31122,7 @@
    "quad": "mid"
   },
   "BJTM": {
-   "n": 25,
+   "n": 26,
    "ma5": 522,
    "ma20": 524,
    "rsi": 50.0,
@@ -30558,7 +31145,7 @@
    "quad": "dip_out"
   },
   "KOCI": {
-   "n": 25,
+   "n": 26,
    "ma5": 127,
    "ma20": 113,
    "rsi": 67.3,
@@ -30581,7 +31168,7 @@
    "quad": "mid"
   },
   "CBDK": {
-   "n": 25,
+   "n": 26,
    "ma5": 3774,
    "ma20": 3878,
    "rsi": 43.7,
@@ -30604,7 +31191,7 @@
    "quad": "dip_in"
   },
   "JATI": {
-   "n": 25,
+   "n": 26,
    "ma5": 116,
    "ma20": 109,
    "rsi": 63.6,
@@ -30627,7 +31214,7 @@
    "quad": "mid"
   },
   "BNGA": {
-   "n": 25,
+   "n": 26,
    "ma5": 1739,
    "ma20": 1706,
    "rsi": 67.7,
@@ -30650,7 +31237,7 @@
    "quad": "up_in"
   },
   "NEST": {
-   "n": 25,
+   "n": 26,
    "ma5": 731,
    "ma20": 719,
    "rsi": 60.0,
@@ -30673,7 +31260,7 @@
    "quad": "mid"
   },
   "IKAN": {
-   "n": 25,
+   "n": 26,
    "ma5": 89,
    "ma20": 90,
    "rsi": 40.9,
@@ -30696,7 +31283,7 @@
    "quad": "mid"
   },
   "YELO": {
-   "n": 25,
+   "n": 26,
    "ma5": 95,
    "ma20": 96,
    "rsi": 55.3,
@@ -30719,7 +31306,7 @@
    "quad": "dip_in"
   },
   "PYFA": {
-   "n": 25,
+   "n": 26,
    "ma5": 252,
    "ma20": 251,
    "rsi": 57.7,
@@ -30742,7 +31329,7 @@
    "quad": "mid"
   },
   "BSSR": {
-   "n": 25,
+   "n": 26,
    "ma5": 4914,
    "ma20": 4734,
    "rsi": 72.2,
@@ -30765,7 +31352,7 @@
    "quad": "up_in"
   },
   "TOOL": {
-   "n": 25,
+   "n": 26,
    "ma5": 71,
    "ma20": 69,
    "rsi": 58.6,
@@ -30788,7 +31375,7 @@
    "quad": "mid"
   },
   "OILS": {
-   "n": 25,
+   "n": 26,
    "ma5": 314,
    "ma20": 269,
    "rsi": 85.1,
@@ -30811,7 +31398,7 @@
    "quad": "mid"
   },
   "BKDP": {
-   "n": 25,
+   "n": 26,
    "ma5": 182,
    "ma20": 169,
    "rsi": 52.4,
@@ -30834,7 +31421,7 @@
    "quad": "mid"
   },
   "BLES": {
-   "n": 25,
+   "n": 26,
    "ma5": 207,
    "ma20": 204,
    "rsi": 41.3,
@@ -30857,7 +31444,7 @@
    "quad": "mid"
   },
   "KKGI": {
-   "n": 25,
+   "n": 26,
    "ma5": 306,
    "ma20": 295,
    "rsi": 69.4,
@@ -30880,7 +31467,7 @@
    "quad": "up_in"
   },
   "GJTL": {
-   "n": 25,
+   "n": 26,
    "ma5": 1345,
    "ma20": 1376,
    "rsi": 26.5,
@@ -30903,7 +31490,7 @@
    "quad": "dip_out"
   },
   "BTEK": {
-   "n": 25,
+   "n": 26,
    "ma5": 12,
    "ma20": 11,
    "rsi": 50.0,
@@ -30926,7 +31513,7 @@
    "quad": "mid"
   },
   "ASHA": {
-   "n": 25,
+   "n": 26,
    "ma5": 57,
    "ma20": 58,
    "rsi": 41.7,
@@ -30949,7 +31536,7 @@
    "quad": "dip_out"
   },
   "PGLI": {
-   "n": 25,
+   "n": 26,
    "ma5": 208,
    "ma20": 210,
    "rsi": 57.1,
@@ -30972,7 +31559,7 @@
    "quad": "mid"
   },
   "BDKR": {
-   "n": 25,
+   "n": 26,
    "ma5": 158,
    "ma20": 158,
    "rsi": 55.6,
@@ -30995,7 +31582,7 @@
    "quad": "up_in"
   },
   "PEGE": {
-   "n": 25,
+   "n": 26,
    "ma5": 130,
    "ma20": 123,
    "rsi": 69.4,
@@ -31018,7 +31605,7 @@
    "quad": "up_in"
   },
   "UNTD": {
-   "n": 25,
+   "n": 26,
    "ma5": 81,
    "ma20": 82,
    "rsi": 41.7,
@@ -31041,7 +31628,7 @@
    "quad": "dip_out"
   },
   "MEDS": {
-   "n": 25,
+   "n": 26,
    "ma5": 84,
    "ma20": 79,
    "rsi": 58.1,
@@ -31064,7 +31651,7 @@
    "quad": "mid"
   },
   "KBLI": {
-   "n": 25,
+   "n": 26,
    "ma5": 359,
    "ma20": 337,
    "rsi": 74.5,
@@ -31087,7 +31674,7 @@
    "quad": "mid"
   },
   "AGII": {
-   "n": 25,
+   "n": 26,
    "ma5": 3168,
    "ma20": 2987,
    "rsi": 76.2,
@@ -31110,7 +31697,7 @@
    "quad": "up_out"
   },
   "ERAL": {
-   "n": 25,
+   "n": 26,
    "ma5": 322,
    "ma20": 314,
    "rsi": 59.5,
@@ -31133,7 +31720,7 @@
    "quad": "up_in"
   },
   "WGSH": {
-   "n": 25,
+   "n": 26,
    "ma5": 135,
    "ma20": 156,
    "rsi": 34.8,
@@ -31156,7 +31743,7 @@
    "quad": "mid"
   },
   "PNLF": {
-   "n": 25,
+   "n": 26,
    "ma5": 222,
    "ma20": 228,
    "rsi": 40.0,
@@ -31179,7 +31766,7 @@
    "quad": "dip_out"
   },
   "MGRO": {
-   "n": 25,
+   "n": 26,
    "ma5": 683,
    "ma20": 682,
    "rsi": 50.0,
@@ -31202,7 +31789,7 @@
    "quad": "mid"
   },
   "SOFA": {
-   "n": 25,
+   "n": 26,
    "ma5": 354,
    "ma20": 344,
    "rsi": 50.0,
@@ -31225,7 +31812,7 @@
    "quad": "up_in"
   },
   "SCCO": {
-   "n": 25,
+   "n": 26,
    "ma5": 2732,
    "ma20": 2494,
    "rsi": 78.1,
@@ -31248,7 +31835,7 @@
    "quad": "mid"
   },
   "MKAP": {
-   "n": 25,
+   "n": 26,
    "ma5": 1127,
    "ma20": 1132,
    "rsi": 58.3,
@@ -31271,7 +31858,7 @@
    "quad": "mid"
   },
   "BDMN": {
-   "n": 25,
+   "n": 26,
    "ma5": 4442,
    "ma20": 4372,
    "rsi": 57.7,
@@ -31294,7 +31881,7 @@
    "quad": "mid"
   },
   "MBSS": {
-   "n": 25,
+   "n": 26,
    "ma5": 2886,
    "ma20": 2851,
    "rsi": 62.5,
@@ -31317,7 +31904,7 @@
    "quad": "up_in"
   },
   "PBSA": {
-   "n": 25,
+   "n": 26,
    "ma5": 751,
    "ma20": 806,
    "rsi": 19.2,
@@ -31340,7 +31927,7 @@
    "quad": "dip_out"
   },
   "APIC": {
-   "n": 25,
+   "n": 26,
    "ma5": 441,
    "ma20": 498,
    "rsi": 22.6,
@@ -31363,7 +31950,7 @@
    "quad": "dip_out"
   },
   "MEJA": {
-   "n": 25,
+   "n": 26,
    "ma5": 115,
    "ma20": 117,
    "rsi": 47.5,
@@ -31386,7 +31973,7 @@
    "quad": "mid"
   },
   "PPRI": {
-   "n": 25,
+   "n": 26,
    "ma5": 176,
    "ma20": 158,
    "rsi": 62.4,
@@ -31409,7 +31996,7 @@
    "quad": "up_in"
   },
   "GIAA": {
-   "n": 25,
+   "n": 26,
    "ma5": 64,
    "ma20": 67,
    "rsi": 38.9,
@@ -31432,7 +32019,7 @@
    "quad": "dip_in"
   },
   "BEEF": {
-   "n": 25,
+   "n": 26,
    "ma5": 438,
    "ma20": 453,
    "rsi": 28.3,
@@ -31455,7 +32042,7 @@
    "quad": "mid"
   },
   "CNMA": {
-   "n": 25,
+   "n": 26,
    "ma5": 92,
    "ma20": 92,
    "rsi": 40.0,
@@ -31478,7 +32065,7 @@
    "quad": "dip_out"
   },
   "GRPM": {
-   "n": 25,
+   "n": 26,
    "ma5": 170,
    "ma20": 176,
    "rsi": 46.0,
@@ -31501,7 +32088,7 @@
    "quad": "dip_in"
   },
   "HUMI": {
-   "n": 25,
+   "n": 26,
    "ma5": 134,
    "ma20": 142,
    "rsi": 39.1,
@@ -31524,7 +32111,7 @@
    "quad": "mid"
   },
   "PNBN": {
-   "n": 25,
+   "n": 26,
    "ma5": 902,
    "ma20": 903,
    "rsi": 47.1,
@@ -31547,7 +32134,7 @@
    "quad": "dip_in"
   },
   "GZCO": {
-   "n": 25,
+   "n": 26,
    "ma5": 189,
    "ma20": 189,
    "rsi": 55.6,
@@ -31570,7 +32157,7 @@
    "quad": "mid"
   },
   "CENT": {
-   "n": 25,
+   "n": 26,
    "ma5": 107,
    "ma20": 103,
    "rsi": 45.9,
@@ -31593,7 +32180,7 @@
    "quad": "mid"
   },
   "SDMU": {
-   "n": 25,
+   "n": 26,
    "ma5": 91,
    "ma20": 90,
    "rsi": 44.4,
@@ -31616,7 +32203,7 @@
    "quad": "mid"
   },
   "ASGR": {
-   "n": 25,
+   "n": 26,
    "ma5": 2112,
    "ma20": 2069,
    "rsi": 50.0,
@@ -31639,7 +32226,7 @@
    "quad": "up_in"
   },
   "KIOS": {
-   "n": 25,
+   "n": 26,
    "ma5": 100,
    "ma20": 100,
    "rsi": 50.0,
@@ -31662,7 +32249,7 @@
    "quad": "mid"
   },
   "TIFA": {
-   "n": 25,
+   "n": 26,
    "ma5": 316,
    "ma20": 330,
    "rsi": 31.7,
@@ -31685,7 +32272,7 @@
    "quad": "dip_in"
   },
   "NAYZ": {
-   "n": 25,
+   "n": 26,
    "ma5": 74,
    "ma20": 73,
    "rsi": 56.5,
@@ -31708,7 +32295,7 @@
    "quad": "up_out"
   },
   "BOAT": {
-   "n": 25,
+   "n": 26,
    "ma5": 137,
    "ma20": 141,
    "rsi": 37.5,
@@ -31731,7 +32318,7 @@
    "quad": "mid"
   },
   "RMKO": {
-   "n": 25,
+   "n": 26,
    "ma5": 340,
    "ma20": 317,
    "rsi": 67.2,
@@ -31754,7 +32341,7 @@
    "quad": "mid"
   },
   "DGIK": {
-   "n": 25,
+   "n": 26,
    "ma5": 137,
    "ma20": 138,
    "rsi": 52.8,
@@ -31777,7 +32364,7 @@
    "quad": "mid"
   },
   "KBLM": {
-   "n": 25,
+   "n": 26,
    "ma5": 367,
    "ma20": 329,
    "rsi": 88.0,
@@ -31800,7 +32387,7 @@
    "quad": "mid"
   },
   "TRJA": {
-   "n": 25,
+   "n": 26,
    "ma5": 132,
    "ma20": 128,
    "rsi": 58.5,
@@ -31823,7 +32410,7 @@
    "quad": "mid"
   },
   "PKPK": {
-   "n": 25,
+   "n": 26,
    "ma5": 4304,
    "ma20": 4000,
    "rsi": 67.1,
@@ -31846,7 +32433,7 @@
    "quad": "up_in"
   },
   "ZATA": {
-   "n": 25,
+   "n": 26,
    "ma5": 67,
    "ma20": 68,
    "rsi": 42.9,
@@ -31869,7 +32456,7 @@
    "quad": "mid"
   },
   "LPPF": {
-   "n": 25,
+   "n": 26,
    "ma5": 1627,
    "ma20": 1621,
    "rsi": 52.0,
@@ -31892,7 +32479,7 @@
    "quad": "mid"
   },
   "TMPO": {
-   "n": 25,
+   "n": 26,
    "ma5": 154,
    "ma20": 178,
    "rsi": 11.7,
@@ -31915,7 +32502,7 @@
    "quad": "mid"
   },
   "APLN": {
-   "n": 25,
+   "n": 26,
    "ma5": 128,
    "ma20": 135,
    "rsi": 30.4,
@@ -31938,7 +32525,7 @@
    "quad": "dip_out"
   },
   "ECII": {
-   "n": 25,
+   "n": 26,
    "ma5": 167,
    "ma20": 164,
    "rsi": 62.3,
@@ -31961,7 +32548,7 @@
    "quad": "mid"
   },
   "APII": {
-   "n": 25,
+   "n": 26,
    "ma5": 192,
    "ma20": 191,
    "rsi": 62.5,
@@ -31984,7 +32571,7 @@
    "quad": "mid"
   },
   "LEAD": {
-   "n": 25,
+   "n": 26,
    "ma5": 109,
    "ma20": 109,
    "rsi": 50.8,
@@ -32007,7 +32594,7 @@
    "quad": "dip_out"
   },
   "FUJI": {
-   "n": 25,
+   "n": 26,
    "ma5": 249,
    "ma20": 279,
    "rsi": 16.4,
@@ -32030,7 +32617,7 @@
    "quad": "dip_out"
   },
   "ISSP": {
-   "n": 25,
+   "n": 26,
    "ma5": 444,
    "ma20": 437,
    "rsi": 52.3,
@@ -32053,7 +32640,7 @@
    "quad": "mid"
   },
   "ELTY": {
-   "n": 25,
+   "n": 26,
    "ma5": 35,
    "ma20": 37,
    "rsi": 40.0,
@@ -32076,7 +32663,7 @@
    "quad": "dip_out"
   },
   "BEST": {
-   "n": 25,
+   "n": 26,
    "ma5": 125,
    "ma20": 129,
    "rsi": 47.9,
@@ -32099,7 +32686,7 @@
    "quad": "dip_in"
   },
   "STRK": {
-   "n": 25,
+   "n": 26,
    "ma5": 65,
    "ma20": 66,
    "rsi": 44.4,
@@ -32122,7 +32709,7 @@
    "quad": "mid"
   },
   "MSIE": {
-   "n": 25,
+   "n": 26,
    "ma5": 165,
    "ma20": 125,
    "rsi": 83.9,
@@ -32145,7 +32732,7 @@
    "quad": "up_in"
   },
   "YOII": {
-   "n": 25,
+   "n": 26,
    "ma5": 82,
    "ma20": 82,
    "rsi": 57.1,
@@ -32168,7 +32755,7 @@
    "quad": "up_out"
   },
   "MAIN": {
-   "n": 25,
+   "n": 26,
    "ma5": 671,
    "ma20": 676,
    "rsi": 51.7,
@@ -32191,7 +32778,7 @@
    "quad": "dip_out"
   },
   "BTPS": {
-   "n": 25,
+   "n": 26,
    "ma5": 1046,
    "ma20": 1014,
    "rsi": 63.4,
@@ -32214,7 +32801,7 @@
    "quad": "up_in"
   },
   "FITT": {
-   "n": 25,
+   "n": 26,
    "ma5": 447,
    "ma20": 420,
    "rsi": 59.5,
@@ -32237,7 +32824,7 @@
    "quad": "mid"
   },
   "CTTH": {
-   "n": 25,
+   "n": 26,
    "ma5": 127,
    "ma20": 128,
    "rsi": 55.6,
@@ -32260,7 +32847,7 @@
    "quad": "mid"
   },
   "FIRE": {
-   "n": 25,
+   "n": 26,
    "ma5": 123,
    "ma20": 119,
    "rsi": 58.8,
@@ -32283,7 +32870,7 @@
    "quad": "mid"
   },
   "PPRE": {
-   "n": 25,
+   "n": 26,
    "ma5": 105,
    "ma20": 106,
    "rsi": 47.4,
@@ -32306,7 +32893,7 @@
    "quad": "dip_out"
   },
   "BRNA": {
-   "n": 25,
+   "n": 26,
    "ma5": 644,
    "ma20": 623,
    "rsi": 83.3,
@@ -32329,7 +32916,7 @@
    "quad": "mid"
   },
   "RBMS": {
-   "n": 25,
+   "n": 26,
    "ma5": 62,
    "ma20": 63,
    "rsi": 45.5,
@@ -32352,7 +32939,7 @@
    "quad": "mid"
   },
   "KOKA": {
-   "n": 25,
+   "n": 26,
    "ma5": 191,
    "ma20": 185,
    "rsi": 59.5,
@@ -32375,7 +32962,7 @@
    "quad": "mid"
   },
   "POLU": {
-   "n": 25,
+   "n": 26,
    "ma5": 17035,
    "ma20": 16739,
    "rsi": 41.0,
@@ -32398,7 +32985,7 @@
    "quad": "mid"
   },
   "ISEA": {
-   "n": 25,
+   "n": 26,
    "ma5": 89,
    "ma20": 86,
    "rsi": 75.0,
@@ -32421,7 +33008,7 @@
    "quad": "mid"
   },
   "NRCA": {
-   "n": 25,
+   "n": 26,
    "ma5": 548,
    "ma20": 569,
    "rsi": 27.3,
@@ -32444,7 +33031,7 @@
    "quad": "dip_out"
   },
   "MSKY": {
-   "n": 25,
+   "n": 26,
    "ma5": 74,
    "ma20": 67,
    "rsi": 54.8,
@@ -32467,7 +33054,7 @@
    "quad": "mid"
   },
   "ABMM": {
-   "n": 25,
+   "n": 26,
    "ma5": 2830,
    "ma20": 2791,
    "rsi": 58.6,
@@ -32490,7 +33077,7 @@
    "quad": "up_in"
   },
   "GTSI": {
-   "n": 25,
+   "n": 26,
    "ma5": 160,
    "ma20": 171,
    "rsi": 29.2,
@@ -32513,7 +33100,7 @@
    "quad": "mid"
   },
   "LFLO": {
-   "n": 25,
+   "n": 26,
    "ma5": 526,
    "ma20": 522,
    "rsi": 54.2,
@@ -32536,7 +33123,7 @@
    "quad": "mid"
   },
   "MPMX": {
-   "n": 25,
+   "n": 26,
    "ma5": 1027,
    "ma20": 1026,
    "rsi": 55.6,
@@ -32559,7 +33146,7 @@
    "quad": "up_out"
   },
   "LAND": {
-   "n": 25,
+   "n": 26,
    "ma5": 73,
    "ma20": 74,
    "rsi": 41.7,
@@ -32582,7 +33169,7 @@
    "quad": "dip_out"
   },
   "EKAD": {
-   "n": 25,
+   "n": 26,
    "ma5": 408,
    "ma20": 397,
    "rsi": 43.4,
@@ -32605,7 +33192,7 @@
    "quad": "mid"
   },
   "MIKA": {
-   "n": 25,
+   "n": 26,
    "ma5": 1827,
    "ma20": 1860,
    "rsi": 39.5,
@@ -32628,7 +33215,7 @@
    "quad": "dip_in"
   },
   "BAIK": {
-   "n": 25,
+   "n": 26,
    "ma5": 243,
    "ma20": 272,
    "rsi": 26.9,
@@ -32651,7 +33238,7 @@
    "quad": "mid"
   },
   "ESTI": {
-   "n": 25,
+   "n": 26,
    "ma5": 170,
    "ma20": 165,
    "rsi": 56.1,
@@ -32674,7 +33261,7 @@
    "quad": "mid"
   },
   "ASPI": {
-   "n": 25,
+   "n": 26,
    "ma5": 507,
    "ma20": 437,
    "rsi": 69.1,
@@ -32697,7 +33284,7 @@
    "quad": "up_out"
   },
   "PRDL": {
-   "n": 25,
+   "n": 26,
    "ma5": 231,
    "ma20": 248,
    "rsi": 20.0,
@@ -32720,7 +33307,7 @@
    "quad": "dip_in"
   },
   "MIDI": {
-   "n": 25,
+   "n": 26,
    "ma5": 268,
    "ma20": 275,
    "rsi": 38.1,
@@ -32743,7 +33330,7 @@
    "quad": "dip_out"
   },
   "GPSO": {
-   "n": 25,
+   "n": 26,
    "ma5": 286,
    "ma20": 293,
    "rsi": 35.3,
@@ -32766,7 +33353,7 @@
    "quad": "dip_in"
   },
   "MBTO": {
-   "n": 25,
+   "n": 26,
    "ma5": 153,
    "ma20": 135,
    "rsi": 69.2,
@@ -32789,7 +33376,7 @@
    "quad": "mid"
   },
   "RELF": {
-   "n": 25,
+   "n": 26,
    "ma5": 38,
    "ma20": 37,
    "rsi": 66.7,
@@ -32812,7 +33399,7 @@
    "quad": "mid"
   },
   "TOSK": {
-   "n": 25,
+   "n": 26,
    "ma5": 83,
    "ma20": 78,
    "rsi": 73.9,
@@ -32835,7 +33422,7 @@
    "quad": "mid"
   },
   "PRDA": {
-   "n": 25,
+   "n": 26,
    "ma5": 2812,
    "ma20": 2682,
    "rsi": 82.1,
@@ -32858,7 +33445,7 @@
    "quad": "up_out"
   },
   "FORE": {
-   "n": 25,
+   "n": 26,
    "ma5": 788,
    "ma20": 809,
    "rsi": 35.3,
@@ -32881,7 +33468,7 @@
    "quad": "mid"
   },
   "HOKI": {
-   "n": 25,
+   "n": 26,
    "ma5": 55,
    "ma20": 56,
    "rsi": 40.0,
@@ -32904,7 +33491,7 @@
    "quad": "dip_out"
   },
   "LAJU": {
-   "n": 25,
+   "n": 26,
    "ma5": 70,
    "ma20": 70,
    "rsi": 57.1,
@@ -32927,7 +33514,7 @@
    "quad": "mid"
   },
   "BIPP": {
-   "n": 25,
+   "n": 26,
    "ma5": 67,
    "ma20": 68,
    "rsi": 52.9,
@@ -32950,7 +33537,7 @@
    "quad": "mid"
   },
   "KBLV": {
-   "n": 25,
+   "n": 26,
    "ma5": 127,
    "ma20": 136,
    "rsi": 26.9,
@@ -32973,7 +33560,7 @@
    "quad": "dip_out"
   },
   "KLAS": {
-   "n": 25,
+   "n": 26,
    "ma5": 83,
    "ma20": 85,
    "rsi": 42.9,
@@ -32996,7 +33583,7 @@
    "quad": "dip_out"
   },
   "PLAN": {
-   "n": 25,
+   "n": 26,
    "ma5": 66,
    "ma20": 55,
    "rsi": 67.9,
@@ -33019,7 +33606,7 @@
    "quad": "mid"
   },
   "RLCO": {
-   "n": 25,
+   "n": 26,
    "ma5": 4412,
    "ma20": 4461,
    "rsi": 54.2,
@@ -33042,7 +33629,7 @@
    "quad": "mid"
   },
   "BIRD": {
-   "n": 25,
+   "n": 26,
    "ma5": 1605,
    "ma20": 1625,
    "rsi": 33.3,
@@ -33065,7 +33652,7 @@
    "quad": "dip_out"
   },
   "UCID": {
-   "n": 25,
+   "n": 26,
    "ma5": 508,
    "ma20": 499,
    "rsi": 47.6,
@@ -33088,7 +33675,7 @@
    "quad": "mid"
   },
   "HAJJ": {
-   "n": 25,
+   "n": 26,
    "ma5": 112,
    "ma20": 112,
    "rsi": 46.9,
@@ -33111,7 +33698,7 @@
    "quad": "mid"
   },
   "BGTG": {
-   "n": 25,
+   "n": 26,
    "ma5": 121,
    "ma20": 118,
    "rsi": 61.8,
@@ -33134,7 +33721,7 @@
    "quad": "up_out"
   },
   "TBLA": {
-   "n": 25,
+   "n": 26,
    "ma5": 624,
    "ma20": 628,
    "rsi": 50.0,
@@ -33157,7 +33744,7 @@
    "quad": "mid"
   },
   "MSTI": {
-   "n": 25,
+   "n": 26,
    "ma5": 1362,
    "ma20": 1350,
    "rsi": 51.3,
@@ -33180,7 +33767,7 @@
    "quad": "up_in"
   },
   "OMED": {
-   "n": 25,
+   "n": 26,
    "ma5": 214,
    "ma20": 231,
    "rsi": 35.3,
@@ -33203,7 +33790,7 @@
    "quad": "dip_in"
   },
   "VERN": {
-   "n": 25,
+   "n": 26,
    "ma5": 228,
    "ma20": 238,
    "rsi": 14.3,
@@ -33226,7 +33813,7 @@
    "quad": "dip_out"
   },
   "CASH": {
-   "n": 25,
+   "n": 26,
    "ma5": 231,
    "ma20": 231,
    "rsi": 52.3,
@@ -33249,7 +33836,7 @@
    "quad": "mid"
   },
   "KDTN": {
-   "n": 25,
+   "n": 26,
    "ma5": 394,
    "ma20": 387,
    "rsi": 66.2,
@@ -33272,7 +33859,7 @@
    "quad": "up_in"
   },
   "TSPC": {
-   "n": 25,
+   "n": 26,
    "ma5": 2748,
    "ma20": 2744,
    "rsi": 64.7,
@@ -33295,7 +33882,7 @@
    "quad": "up_out"
   },
   "FPNI": {
-   "n": 25,
+   "n": 26,
    "ma5": 531,
    "ma20": 581,
    "rsi": 28.8,
@@ -33318,7 +33905,7 @@
    "quad": "dip_in"
   },
   "SWID": {
-   "n": 25,
+   "n": 26,
    "ma5": 121,
    "ma20": 120,
    "rsi": 59.3,
@@ -33341,7 +33928,7 @@
    "quad": "mid"
   },
   "ICON": {
-   "n": 25,
+   "n": 26,
    "ma5": 144,
    "ma20": 138,
    "rsi": 65.6,
@@ -33364,7 +33951,7 @@
    "quad": "mid"
   },
   "NIKL": {
-   "n": 25,
+   "n": 26,
    "ma5": 226,
    "ma20": 213,
    "rsi": 58.6,
@@ -33387,7 +33974,7 @@
    "quad": "up_out"
   },
   "MINE": {
-   "n": 25,
+   "n": 26,
    "ma5": 291,
    "ma20": 263,
    "rsi": 81.6,
@@ -33410,7 +33997,7 @@
    "quad": "up_out"
   },
   "MLPL": {
-   "n": 25,
+   "n": 26,
    "ma5": 89,
    "ma20": 92,
    "rsi": 27.3,
@@ -33433,7 +34020,7 @@
    "quad": "dip_out"
   },
   "BJBR": {
-   "n": 25,
+   "n": 26,
    "ma5": 794,
    "ma20": 794,
    "rsi": 50.0,
@@ -33456,7 +34043,7 @@
    "quad": "mid"
   },
   "GOLF": {
-   "n": 25,
+   "n": 26,
    "ma5": 178,
    "ma20": 165,
    "rsi": 66.7,
@@ -33479,7 +34066,7 @@
    "quad": "mid"
   },
   "JECX": {
-   "n": 25,
+   "n": 26,
    "ma5": 1332,
    "ma20": 1416,
    "rsi": 44.8,
@@ -33502,7 +34089,7 @@
    "quad": "dip_out"
   },
   "TGUK": {
-   "n": 25,
+   "n": 26,
    "ma5": 90,
    "ma20": 75,
    "rsi": 76.8,
@@ -33525,7 +34112,7 @@
    "quad": "mid"
   },
   "PSKT": {
-   "n": 25,
+   "n": 26,
    "ma5": 236,
    "ma20": 239,
    "rsi": 48.2,
@@ -33548,7 +34135,7 @@
    "quad": "dip_out"
   },
   "NASI": {
-   "n": 25,
+   "n": 26,
    "ma5": 163,
    "ma20": 152,
    "rsi": 73.7,
@@ -33571,7 +34158,7 @@
    "quad": "up_in"
   },
   "BELL": {
-   "n": 25,
+   "n": 26,
    "ma5": 109,
    "ma20": 113,
    "rsi": 33.3,
@@ -33594,7 +34181,7 @@
    "quad": "mid"
   },
   "AYLS": {
-   "n": 25,
+   "n": 26,
    "ma5": 152,
    "ma20": 154,
    "rsi": 46.5,
@@ -33617,7 +34204,7 @@
    "quad": "mid"
   },
   "SMAR": {
-   "n": 25,
+   "n": 26,
    "ma5": 6225,
    "ma20": 6278,
    "rsi": 48.7,
@@ -33640,7 +34227,7 @@
    "quad": "dip_in"
   },
   "VTNY": {
-   "n": 25,
+   "n": 26,
    "ma5": 76,
    "ma20": 79,
    "rsi": 33.3,
@@ -33663,7 +34250,7 @@
    "quad": "mid"
   },
   "KUAS": {
-   "n": 25,
+   "n": 26,
    "ma5": 100,
    "ma20": 99,
    "rsi": 52.4,
@@ -33686,7 +34273,7 @@
    "quad": "mid"
   },
   "ESIP": {
-   "n": 25,
+   "n": 26,
    "ma5": 122,
    "ma20": 123,
    "rsi": 50.0,
@@ -33709,7 +34296,7 @@
    "quad": "mid"
   },
   "MTDL": {
-   "n": 25,
+   "n": 26,
    "ma5": 510,
    "ma20": 512,
    "rsi": 45.5,
@@ -33732,7 +34319,7 @@
    "quad": "dip_out"
   },
   "NTBK": {
-   "n": 25,
+   "n": 26,
    "ma5": 83,
    "ma20": 83,
    "rsi": 52.4,
@@ -33755,7 +34342,7 @@
    "quad": "dip_in"
   },
   "DILD": {
-   "n": 25,
+   "n": 26,
    "ma5": 117,
    "ma20": 120,
    "rsi": 36.8,
@@ -33778,7 +34365,7 @@
    "quad": "dip_out"
   },
   "JELI": {
-   "n": 25,
+   "n": 26,
    "ma5": 499,
    "ma20": 575,
    "rsi": 9.6,
@@ -33801,7 +34388,7 @@
    "quad": "dip_in"
   },
   "TRIM": {
-   "n": 25,
+   "n": 26,
    "ma5": 764,
    "ma20": 679,
    "rsi": 82.8,
@@ -33824,7 +34411,7 @@
    "quad": "mid"
   },
   "RALS": {
-   "n": 25,
+   "n": 26,
    "ma5": 390,
    "ma20": 385,
    "rsi": 60.0,
@@ -33847,7 +34434,7 @@
    "quad": "mid"
   },
   "IPCC": {
-   "n": 25,
+   "n": 26,
    "ma5": 1121,
    "ma20": 1144,
    "rsi": 20.0,
@@ -33870,7 +34457,7 @@
    "quad": "mid"
   },
   "INPS": {
-   "n": 25,
+   "n": 26,
    "ma5": 864,
    "ma20": 746,
    "rsi": 86.6,
@@ -33893,7 +34480,7 @@
    "quad": "mid"
   },
   "WOWS": {
-   "n": 25,
+   "n": 26,
    "ma5": 57,
    "ma20": 59,
    "rsi": 18.2,
@@ -33916,7 +34503,7 @@
    "quad": "mid"
   },
   "BLUE": {
-   "n": 25,
+   "n": 26,
    "ma5": 2992,
    "ma20": 2846,
    "rsi": 60.7,
@@ -33939,7 +34526,7 @@
    "quad": "up_in"
   },
   "PGJO": {
-   "n": 25,
+   "n": 26,
    "ma5": 883,
    "ma20": 910,
    "rsi": 43.5,
@@ -33962,7 +34549,7 @@
    "quad": "dip_out"
   },
   "WINR": {
-   "n": 25,
+   "n": 26,
    "ma5": 27,
    "ma20": 24,
    "rsi": 64.7,
@@ -33985,7 +34572,7 @@
    "quad": "mid"
   },
   "DWGL": {
-   "n": 25,
+   "n": 26,
    "ma5": 231,
    "ma20": 259,
    "rsi": 15.6,
@@ -34008,7 +34595,7 @@
    "quad": "dip_out"
   },
   "PSDN": {
-   "n": 25,
+   "n": 26,
    "ma5": 137,
    "ma20": 136,
    "rsi": 46.3,
@@ -34031,7 +34618,7 @@
    "quad": "mid"
   },
   "ARNA": {
-   "n": 25,
+   "n": 26,
    "ma5": 509,
    "ma20": 502,
    "rsi": 75.0,
@@ -34054,7 +34641,7 @@
    "quad": "up_out"
   },
   "PTPP": {
-   "n": 25,
+   "n": 26,
    "ma5": 199,
    "ma20": 205,
    "rsi": 39.2,
@@ -34077,7 +34664,7 @@
    "quad": "dip_out"
   },
   "MLBI": {
-   "n": 25,
+   "n": 26,
    "ma5": 6835,
    "ma20": 6866,
    "rsi": 50.0,
@@ -41013,7 +41600,7 @@
     "hi20": 5150,
     "lo20": 4140,
     "band20": 24.4,
-    "n": 25
+    "n": 26
    }
   },
   {
@@ -41041,7 +41628,7 @@
     "hi20": 1455,
     "lo20": 1240,
     "band20": 17.3,
-    "n": 25
+    "n": 26
    }
   }
  ],
@@ -41094,6 +41681,31 @@
    "alpha": 4.47,
    "vrank": 15,
    "flow": 9.84,
+   "srcs": 1
+  },
+  {
+   "t": "IDEA",
+   "n": "Idea Indonesia Akademi",
+   "px": 102.0,
+   "pct": 9.68,
+   "val": 5724962100.0,
+   "mcap": 108368625000.0,
+   "ratio": 8.1,
+   "ev_ko": "지분매각·경영권",
+   "ev_id": "Divestasi & pengendali",
+   "hl": "Nawasena, IDEA 지분 66.58% 인수해 최대주주 등극",
+   "hl_id": "Nawasena Caplok 66,58 Persen Saham IDEA, Siap Jadi Pengendali Baru",
+   "url": "https://www.idxchannel.com/market-news/nawasena-caplok-6658-persen-saham-idea-siap-jadi-pengendali-baru",
+   "score": 73.6,
+   "s_news": 95,
+   "s_size": 1,
+   "s_surge": 100,
+   "s_move": 100,
+   "s_conc": 100,
+   "s_flow": 0,
+   "alpha": 10.06,
+   "vrank": null,
+   "flow": -0.0,
    "srcs": 1
   },
   {
@@ -41269,31 +41881,6 @@
    "alpha": 5.14,
    "vrank": null,
    "flow": -13.02,
-   "srcs": 0
-  },
-  {
-   "t": "TIFA",
-   "n": "KDB Tifa Finance",
-   "px": 320.0,
-   "pct": 4.58,
-   "val": 1885249333.3333335,
-   "mcap": 1136708160000.0,
-   "ratio": 13.5,
-   "ev_ko": "가격·수급 이상",
-   "ev_id": "Harga & arus dana",
-   "hl": "시장 대비 +4.96%p · 20일 평균 13.5배 · 외국인 5일 +6.3%",
-   "hl_id": "vs pasar +4.96%p · 13.5x rata 20 hari · asing 5 hari +6.3%",
-   "url": "",
-   "score": 55.1,
-   "s_news": 0,
-   "s_size": 26,
-   "s_surge": 100,
-   "s_move": 99,
-   "s_conc": 100,
-   "s_flow": 63,
-   "alpha": 4.96,
-   "vrank": null,
-   "flow": 6.31,
    "srcs": 0
   }
  ],
@@ -41840,6 +42427,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 17:57"
+  "announcements": "2026-09-16 18:08"
  }
 }
