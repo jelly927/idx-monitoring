@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 22:40",
+ "updated": "2026-09-16 22:50",
  "delay_min": 15,
- "fx_basis": "12.95 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,368 · 21:20 Yahoo",
- "idr_per_krw": 12.9462,
+ "fx_basis": "12.95 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,367 · 21:20 Yahoo",
+ "idr_per_krw": 12.9543,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -334,7 +334,7 @@
   "value_idr": 10929839903866.678,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 22:31",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 22:46",
   "rank_asof": null,
   "rank_date": "2026-09-16",
   "adv": 215,
@@ -15520,6 +15520,14 @@
  ],
  "daycal": [
   {
+   "d": "2026-08-04",
+   "t": "BBCA",
+   "n": "Bank Central Asia",
+   "px": 6500,
+   "pct": 3.17,
+   "val": 892392425000
+  },
+  {
    "d": "2026-08-05",
    "t": "BUMI",
    "n": "Bumi Resources",
@@ -15757,10 +15765,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7616.16,
+   "px": 7622.17,
    "prev": 7585.51,
-   "pct": 0.4,
-   "asof": "22:35",
+   "pct": 0.48,
+   "asof": "22:45",
    "live": true,
    "spark": [
     7603.81,
@@ -15788,17 +15796,19 @@
     7616.53,
     7615.04,
     7612.89,
-    7616.16
+    7615.11,
+    7616.77,
+    7622.17
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26185.45,
+   "px": 26214.37,
    "prev": 25981.57,
-   "pct": 0.78,
-   "asof": "22:35",
+   "pct": 0.9,
+   "asof": "22:45",
    "live": true,
    "spark": [
     26099.29,
@@ -15826,17 +15836,19 @@
     26196.42,
     26187.53,
     26174.61,
-    26185.45
+    26180.71,
+    26184.39,
+    26214.37
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52070.62,
+   "px": 52127.38,
    "prev": 52092.45,
-   "pct": -0.04,
-   "asof": "22:35",
+   "pct": 0.07,
+   "asof": "22:45",
    "live": true,
    "spark": [
     52038.56,
@@ -15864,7 +15876,9 @@
     52063.03,
     52064.84,
     52044.99,
-    52070.62
+    52074.08,
+    52094.19,
+    52127.38
    ]
   },
   {
@@ -16204,19 +16218,6 @@
    "img": "https://www.idnfinancials.com/assets/img/idn-d1.png?t=1",
    "t_ko": "Ferry Sudjono, FORE 주식 134만 주 취득해 지분율 6% 육박",
    "t_id": "Ferry Sudjono Borong 1,34 Juta Saham FORE, Kepemilikan Nyaris 6%"
-  },
-  {
-   "ts": "2026-09-16T21:20:00+07:00",
-   "date": "2026-09-16",
-   "time": "21:20",
-   "src": "Media Indonesia",
-   "t": "KPK Endus Struktur Bayangan di Lingkungan Kementerian ATR/BPN",
-   "tags": [
-    "SMRA"
-   ],
-   "url": "https://mediaindonesia.com/ekonomi/934221/kpk-endus-struktur-bayangan-di-lingkungan-kementerian-atrbpn",
-   "t_ko": "KPK, ATR/BPN 부처 내 그림자 조직 비리 포착",
-   "t_id": "KPK Endus Struktur Bayangan di Lingkungan Kementerian ATR/BPN"
   },
   {
    "ts": "2026-09-16T20:45:00+07:00",
@@ -17094,6 +17095,41 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-16T22:38:40+07:00",
+   "date": "2026-09-16",
+   "time": "22:38",
+   "src": "CNBC",
+   "t": "House set to pass sweeping Russia sanctions bill honoring Lindsey Graham",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/russia-sanctions-bill-lindsey-graham-congress.html",
+   "g": 1,
+   "t_ko": "미 하원, Lindsey Graham 추모 포괄적 대러 제재 법안 처리 예정",
+   "t_id": "DPR AS Siap Sahkan Undang-Undang Sanksi Luas Rusia untuk Hormati Lindsey Graham"
+  },
+  {
+   "ts": "2026-09-16T22:37:00+07:00",
+   "date": "2026-09-16",
+   "time": "22:37",
+   "src": "Media Indonesia",
+   "t": "Alasan Prabowo Bentuk Universitas Republik Indonesia: Atasi Masalah SDM dan 'Raja Kecil'",
+   "tags": [],
+   "url": "https://mediaindonesia.com/politik-dan-hukum/934260/alasan-prabowo-bentuk-universitas-republik-indonesia-atasi-masalah-sdm-dan-raja-kecil",
+   "t_id": "Alasan Prabowo Bentuk Universitas Republik Indonesia: Atasi Masalah SDM dan 'Raja Kecil'",
+   "t_ko": "Prabowo의 공화국 대학교 설립 배경 — 인적 자원 문제 및 지방 권력 해소"
+  },
+  {
+   "ts": "2026-09-16T22:35:50+07:00",
+   "date": "2026-09-16",
+   "time": "22:35",
+   "src": "Detik",
+   "t": "Punya Usaha Baru Merintis? Nggak Perlu Jasa Editor, Modal HP dan Pelajari di Sini",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666109/punya-usaha-baru-merintis-nggak-perlu-jasa-editor-modal-hp-dan-pelajari-di-sini",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/16/detikevent-capcut-mastery-1789572919263_169.jpeg?w=360&q=90",
+   "t_id": "Punya Usaha Baru Merintis? Nggak Perlu Jasa Editor, Modal HP dan Pelajari di Sini",
+   "t_ko": "신규 사업 창업 시 스마트폰으로 에디터 없이 콘텐츠 제작하는 방법"
+  },
+  {
    "ts": "2026-09-16T22:34:59+07:00",
    "date": "2026-09-16",
    "time": "22:34",
@@ -17130,6 +17166,18 @@
    ]
   },
   {
+   "ts": "2026-09-16T22:31:40+07:00",
+   "date": "2026-09-16",
+   "time": "22:31",
+   "src": "Medcom",
+   "t": "Mantan Presiden Kosovo Divonis 25 Tahun Imbas Kejahatan Perang",
+   "tags": [],
+   "url": "https://www.medcom.id/internasional/eropa/8KyxgWEk-mantan-presiden-kosovo-divonis-25-tahun-imbas-kejahatan-perang",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/16/1842581/Z6SOpuMDIV.jpeg?w=720",
+   "t_ko": "전 코소보 대통령, 전쟁 범죄 혐의로 징역 25년 선고",
+   "t_id": "Mantan Presiden Kosovo Divonis 25 Tahun Imbas Kejahatan Perang"
+  },
+  {
    "ts": "2026-09-16T22:31:00+07:00",
    "date": "2026-09-16",
    "time": "22:31",
@@ -17138,8 +17186,8 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/nasional/6aaab64854c58/prabowo-ungkap-alasan-pangkas-tkd-singgung-pemda-yang-simpan-uang-di-bank",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/30/2026_07_30-15_11_00_3e8ac8c2-8c04-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Prabowo Ungkap Alasan Pangkas TKD, Singgung Pemda yang Simpan Uang di Bank",
-   "t_ko": "Prabowo, 지방정부 은행 예치금 지적하며 TKD 삭감 배경 설명"
+   "t_ko": "Prabowo, 지방정부 은행 예치금 지적하며 TKD 삭감 배경 설명",
+   "t_id": "Prabowo Ungkap Alasan Pangkas TKD, Singgung Pemda yang Simpan Uang di Bank"
   },
   {
    "ts": "2026-09-16T22:30:00+07:00",
@@ -17150,8 +17198,8 @@
    "tags": [],
    "url": "https://finance.detik.com/energi/d-8666091/bbm-e20-mau-diproduksi-lahan-tebu-2-juta-ha-di-jawa-papua-disiapkan",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/10/08/menko-pangan-serap-1000-ton-gula-petani-lumajang-1759903659523_169.jpeg?w=360&q=90",
-   "t_id": "BBM E20 Mau Diproduksi, Lahan Tebu 2 Juta Ha di Jawa-Papua Disiapkan",
-   "t_ko": "E20 연료 생산 추진 위해 자바·파푸아에 사탕수수 농지 200만 헥타르 조성"
+   "t_ko": "E20 연료 생산 추진 위해 자바·파푸아에 사탕수수 농지 200만 헥타르 조성",
+   "t_id": "BBM E20 Mau Diproduksi, Lahan Tebu 2 Juta Ha di Jawa-Papua Disiapkan"
   },
   {
    "ts": "2026-09-16T22:29:25+07:00",
@@ -17188,6 +17236,32 @@
    "g": 1,
    "t_ko": "연준 결정 앞두고 주식·채권 동반 상승",
    "t_id": "Saham dan Obligasi Naik Jelang Keputusan Fed"
+  },
+  {
+   "ts": "2026-09-16T22:26:07+07:00",
+   "date": "2026-09-16",
+   "time": "22:26",
+   "src": "Yahoo Finance",
+   "t": "Arista Stock Holds Up Well Amid Weakness. Here's How To Capitalize.",
+   "tags": [],
+   "url": "https://www.investors.com/research/options/arista-anet-stock-covered-call-options/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/57c21aba64e82e81cd63e7a092fcdeee.jpg",
+   "t_ko": "Arista, 약세장 속 주가 방어력 입증 — 투자 활용 전략",
+   "t_id": "Saham Arista Bertahan Kuat di Tengah Lemahnya Pasar, Begini Cara Manfaatkannya"
+  },
+  {
+   "ts": "2026-09-16T22:24:33+07:00",
+   "date": "2026-09-16",
+   "time": "22:24",
+   "src": "Yahoo Finance",
+   "t": "Radiant Logistics (RLGT) Bets $100M On A Freight Rebound",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/radiant-logistics-rlgt-bets-100m-152433522.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/391b35cf2fa0b933db9ca36afb1bdd22.jpg",
+   "t_ko": "Radiant Logistics(RLGT), 화물 운송 반등에 $1억 베팅",
+   "t_id": "Radiant Logistics (RLGT) Rogoh $100 Juta untuk Antisipasi Pemulihan Kargo"
   },
   {
    "ts": "2026-09-16T22:20:50+07:00",
@@ -17239,19 +17313,6 @@
    "t_id": "Saham Truk S&P 500 Anjlok Usai Peringatan CFO"
   },
   {
-   "ts": "2026-09-16T22:14:01+07:00",
-   "date": "2026-09-16",
-   "time": "22:14",
-   "src": "Yahoo Finance",
-   "t": "Advance Auto Parts vs. Intuitive Machines: Which Stock Is a Better Buy in 2026?",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/advance-auto-parts-vs-intuitive-151401359.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/f7a65c96d166faf21aac2b3268722093.png",
-   "t_ko": "Advance Auto Parts vs Intuitive Machines, 2026년 유망 종목 분석",
-   "t_id": "Advance Auto Parts vs Intuitive Machines: Saham Mana yang Lebih Layak Dibeli pada 2026?"
-  },
-  {
    "ts": "2026-09-16T22:12:32+07:00",
    "date": "2026-09-16",
    "time": "22:12",
@@ -17274,19 +17335,6 @@
     "pengembangan",
     "energi"
    ]
-  },
-  {
-   "ts": "2026-09-16T22:11:39+07:00",
-   "date": "2026-09-16",
-   "time": "22:11",
-   "src": "Yahoo Finance",
-   "t": "OpenAI’s CFO Just Explained Why Nvidia Is No Longer the Only Option",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/openai-cfo-just-explained-why-151139632.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/3762d40ae956cc767afbcb6aa7123d82.jpg",
-   "t_ko": "OpenAI CFO, Nvidia가 유일한 선택지 아닌 이유 설명",
-   "t_id": "CFO OpenAI Jelaskan Alasan Nvidia Bukan Lagi Satu-satunya Pilihan"
   },
   {
    "ts": "2026-09-16T22:10:43+07:00",
@@ -17471,30 +17519,6 @@
    "t_id": "Politikus AS Borong Dua Saham Ini"
   },
   {
-   "ts": "2026-09-16T21:43:09+07:00",
-   "date": "2026-09-16",
-   "time": "21:43",
-   "src": "CNBC",
-   "t": "Canada invited to become EU’s first ‘associate member’ as Trump trade war intensifies",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/canada-eu-associate-member-von-der-leyen.html",
-   "g": 1,
-   "t_ko": "트럼프 무역전쟁 격화 속 캐나다, EU 첫 준회원국 가입 초청",
-   "t_id": "Kanada Diundang Jadi 'Anggota Asosiasi' Pertama UE Seiring Memanasnya Perang Dagang Trump",
-   "ai_ko": "· 유럽연합, 캐나다에 준회원국 지위 제안\n· von der Leyen 연설서 최초 사례로 언급\n· 미국 관세 갈등 속 교역축 재편 신호",
-   "ai_id": "· Uni Eropa tawarkan status associate member\n· Disampaikan Ursula von der Leyen\n· Kanada sedang perang dagang dengan AS",
-   "ai_tags": [
-    "무역",
-    "관세",
-    "국제정세"
-   ],
-   "ai_tags_id": [
-    "perdagangan",
-    "tarif",
-    "geopolitik"
-   ]
-  },
-  {
    "ts": "2026-09-16T21:42:13+07:00",
    "date": "2026-09-16",
    "time": "21:42",
@@ -17528,40 +17552,6 @@
    "url": "https://mediaindonesia.com/ekonomi/934229/rosan-bakal-temui-menkeu-bahas-setoran-dividen-bumn-rp120-triliun",
    "t_ko": "Rosan, 재무장관 만나 국영기업 배당금 Rp120조 납부 논의 예정",
    "t_id": "Rosan bakal Temui Menkeu Bahas Setoran Dividen BUMN Rp120 Triliun"
-  },
-  {
-   "ts": "2026-09-16T21:28:00+07:00",
-   "date": "2026-09-16",
-   "time": "21:28",
-   "src": "Media Indonesia",
-   "t": "KPK Bongkar Struktur Bayangan Kementerian Agraria dan Tata Ruang/Badan Pertanahan Nasional",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/934225/kpk-bongkar-struktur-bayangan-kementerian-agraria-dan-tata-ruangbadan-pertanahan-nasional-",
-   "t_ko": "KPK, 토지공간부의 그림자 조직 구조 적발",
-   "t_id": "KPK Bongkar Struktur Bayangan Kementerian Agraria dan Tata Ruang/Badan Pertanahan Nasional"
-  },
-  {
-   "ts": "2026-09-16T21:27:43+07:00",
-   "date": "2026-09-16",
-   "time": "21:27",
-   "src": "Medcom",
-   "t": "Prabowo Ungkap Alasan Bentuk URI, Soroti Masalah SDM dan Birokrasi",
-   "tags": [],
-   "url": "https://www.medcom.id/nasional/peristiwa/nN9dQWjK-prabowo-ungkap-alasan-bentuk-uri-soroti-masalah-sdm-dan-birokrasi",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/16/1842574/RoMhK8QH9f.JPG?w=720",
-   "t_ko": "Prabowo, URI 신설 배경으로 인력 및 관료제 문제 지적",
-   "t_id": "Prabowo Ungkap Alasan Bentuk URI, Soroti Masalah SDM dan Birokrasi"
-  },
-  {
-   "ts": "2026-09-16T21:19:00+07:00",
-   "date": "2026-09-16",
-   "time": "21:19",
-   "src": "Media Indonesia",
-   "t": "Ini 3 Masalah Utama yang Jadi Fokus Presiden Prabowo",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/934218/ini-3-masalah-utama-yang-jadi-fokus-presiden-prabowo",
-   "t_ko": "Prabowo 대통령의 핵심 집중 과제 3가지",
-   "t_id": "Ini 3 Masalah Utama yang Jadi Fokus Presiden Prabowo"
   }
  ],
  "kisi_news": [
@@ -17743,9 +17733,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.959%",
-   "d": -0.74,
-   "ytd": 19.12,
+   "v": "4.961%",
+   "d": -0.7,
+   "ytd": 19.17,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17766,8 +17756,8 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.69",
-   "d": 0.03,
+   "v": "99.68",
+   "d": 0.02,
    "ytd": 1.43,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -17778,9 +17768,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.82",
-   "d": -2.82,
-   "ytd": 77.32,
+   "v": "102.19",
+   "d": -2.47,
+   "ytd": 77.97,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17790,9 +17780,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,387.8",
-   "d": 0.47,
-   "ytd": 1.44,
+   "v": "4,393.7",
+   "d": 0.61,
+   "ytd": 1.57,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17814,9 +17804,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,126",
-   "d": 1.43,
-   "ytd": -3.34,
+   "v": "16,138",
+   "d": 1.51,
+   "ytd": -3.26,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18321,241 +18311,6 @@
    "title_id": "Indeks Manufaktur Empire State NY (Sep)"
   },
   {
-   "date": "2026-09-15",
-   "t": "BMRI",
-   "kind": "div",
-   "imp": 3,
-   "title": "배당부 마감(cum) · 중간현금배당 Rp66/주 — Bank Mandiri",
-   "src": "IDX 캘린더",
-   "title_id": "cum Dividen Tunai Interim PT Bank Mandiri (Persero) Tbk — Rp66/saham",
-   "dps": 66.0,
-   "pay": "2026-10-02",
-   "yld": "12.51%",
-   "country": "ID",
-   "title_ko": "배당부 마감(cum) · 중간현금배당 Rp66/주 — Bank Mandiri"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "PSAB",
-   "kind": "div",
-   "imp": 3,
-   "title": "배당부 마감(cum) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK",
-   "src": "IDX 캘린더",
-   "title_id": "cum Dividen Tunai Interim J RESOURCES ASIA PASIFIK Tbk — Rp30/saham",
-   "dps": 30.0,
-   "pay": "2026-09-29",
-   "yld": "23.68%",
-   "country": "ID",
-   "title_ko": "배당부 마감(cum) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "DKFT",
-   "kind": "div",
-   "imp": 1,
-   "title": "배당 기준일(DPS) · 중간현금배당 Rp30/주 — Central Omega Resources",
-   "src": "IDX 캘린더",
-   "title_id": "DPS Dividen Tunai Interim Central Omega Resources Tbk — Rp30/saham",
-   "dps": 30.0,
-   "pay": "2026-09-21",
-   "yld": "12.86%",
-   "country": "ID",
-   "title_ko": "배당 기준일(DPS) · 중간현금배당 Rp30/주 — Central Omega Resources"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "BBTN",
-   "kind": "corp",
-   "imp": 3,
-   "title": "기업설명회 · Bank Tabungan Negara 연례 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Tahunan  PT Bank Tabungan Negara (Persero) Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · Bank Tabungan Negara 연례 Public Expose 결과"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "TINS",
-   "kind": "corp",
-   "imp": 3,
-   "title": "기업설명회 · TIMAH 연례 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Tahunan  PT TIMAH (Persero) Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · TIMAH 연례 Public Expose 결과"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "MIKA",
-   "kind": "corp",
-   "imp": 3,
-   "title": "기업설명회 · Mitra Keluarga Karyasehat 연례 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Tahunan  PT Mitra Keluarga Karyasehat Tbk.",
-   "country": "ID",
-   "title_ko": "기업설명회 · Mitra Keluarga Karyasehat 연례 Public Expose 결과"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "ASII",
-   "kind": "corp",
-   "imp": 3,
-   "title": "기업설명회 · Astra International 연례 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Tahunan  Astra International Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · Astra International 연례 Public Expose 결과"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "UNTR",
-   "kind": "corp",
-   "imp": 3,
-   "title": "자사주 · 자사주 매입 보고",
-   "src": "IDX 캘린더",
-   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
-   "country": "ID",
-   "title_ko": "자사주 · 자사주 매입 보고"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "ANTM",
-   "kind": "corp",
-   "imp": 3,
-   "title": "기업설명회 · ANTAM 연례 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Tahunan  PT ANTAM (Persero) Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · ANTAM 연례 Public Expose 결과"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "WIKA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "수쿠크보유자집회 소집 · SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020",
-   "src": "IDX 캘린더",
-   "title_id": "RUPSU · PANGGILAN RupSu emisi SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020",
-   "country": "ID",
-   "title_ko": "수쿠크보유자집회 소집 · SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "WIKA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "수쿠크보유자집회 소집 · Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022",
-   "src": "IDX 캘린더",
-   "title_id": "RUPSU · PANGGILAN RupSu emisi Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022",
-   "country": "ID",
-   "title_ko": "수쿠크보유자집회 소집 · Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "KKGI",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Resource Alam Indonesia 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Resource Alam Indonesia",
-   "country": "ID",
-   "title_ko": "주주총회 · Resource Alam Indonesia 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "PTPP",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · PP 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS PP",
-   "country": "ID",
-   "title_ko": "주주총회 · PP 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "WIKA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "수쿠크보유자집회 계획 · SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020",
-   "src": "IDX 캘린더",
-   "title_id": "RUPSU · RENCANA RupSu emisi SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020",
-   "country": "ID",
-   "title_ko": "수쿠크보유자집회 계획 · SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "WIKA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "수쿠크보유자집회 계획 · Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022",
-   "src": "IDX 캘린더",
-   "title_id": "RUPSU · RENCANA RupSu emisi Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022",
-   "country": "ID",
-   "title_ko": "수쿠크보유자집회 계획 · Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "GGRM",
-   "kind": "corp",
-   "imp": 2,
-   "title": "기업설명회 · Gudang Garam 연례 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Tahunan  Gudang Garam Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · Gudang Garam 연례 Public Expose 결과"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "RATU",
-   "kind": "corp",
-   "imp": 2,
-   "title": "기업설명회 · Raharja Energi Cepu 연례 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Tahunan  PT Raharja Energi Cepu Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · Raharja Energi Cepu 연례 Public Expose 결과"
-  },
-  {
-   "date": "2026-09-15",
-   "t": "LPCK",
-   "kind": "corp",
-   "imp": 2,
-   "title": "Luar Biasa · Hasil RUPS Luar Biasa  Lippo Cikarang Tbk",
-   "src": "IDX 캘린더",
-   "country": "ID",
-   "title_ko": "임시 · Lippo Cikarang 임시주주총회 결과",
-   "title_id": "Hasil RUPSLB Lippo Cikarang Tbk"
-  },
-  {
-   "date": "2026-09-16",
-   "time": "00:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "20-Year Bond Auction",
-   "imp": 2,
-   "exp": null,
-   "prev": "5.204%",
-   "act": "5.420%",
-   "src": "investing.com",
-   "title_ko": "20년물 국채 입찰",
-   "title_id": "Lelang Obligasi AS Tenor 20 Tahun"
-  },
-  {
-   "date": "2026-09-16",
-   "time": "03:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "API Weekly Crude Oil Stock",
-   "imp": 2,
-   "exp": "-1.800M",
-   "prev": "-0.300M",
-   "act": "7.140M",
-   "src": "investing.com",
-   "title_ko": "API 주간 원유 재고",
-   "title_id": "Stok Minyak Mentah Mingguan API"
-  },
-  {
    "date": "2026-09-16",
    "time": "19:30",
    "kind": "macro",
@@ -18607,9 +18362,9 @@
    "country": "US",
    "title": "Retail Control (MoM)  (Aug)",
    "imp": 2,
-   "exp": "0.8%",
+   "exp": "0.4%",
    "prev": "-0.4%",
-   "act": "1.2%",
+   "act": "1.4%",
    "src": "investing.com",
    "act_src": "investing.com",
    "title_ko": "8월 소매판매 통제그룹 (MoM)",
@@ -18638,25 +18393,12 @@
    "title": "Retail Inventories Ex Auto  (Jul)",
    "imp": 2,
    "exp": "0.7%",
-   "prev": "-0.4%",
+   "prev": "0.7%",
    "act": "0.8%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "7월 자동차 제외 소매재고",
    "title_id": "Persediaan Ritel Ex-Otomotif AS (Jul)"
-  },
-  {
-   "date": "2026-09-16",
-   "time": "21:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "Crude Oil Inventories",
-   "imp": 3,
-   "exp": "-1.600M",
-   "prev": "-0.391M",
-   "act": "-0.640M",
-   "src": "investing.com",
-   "title_ko": "EIA 원유 재고",
-   "title_id": "Stok Minyak Mentah EIA"
   },
   {
    "date": "2026-09-16",
@@ -18674,210 +18416,129 @@
   },
   {
    "date": "2026-09-16",
-   "t": "BMRI",
-   "kind": "div",
+   "time": "—",
+   "kind": "macro",
+   "country": "US",
+   "title": "Retail Sales (MoM) (Aug)",
    "imp": 3,
-   "title": "배당락(ex) · 중간현금배당 Rp66/주 — Bank Mandiri",
-   "src": "IDX 캘린더",
-   "title_id": "ex Dividen Tunai Interim PT Bank Mandiri (Persero) Tbk — Rp66/saham",
-   "dps": 66.0,
-   "pay": "2026-10-02",
-   "yld": "12.51%",
-   "country": "ID",
-   "title_ko": "배당락(ex) · 중간현금배당 Rp66/주 — Bank Mandiri"
+   "exp": "0.8%",
+   "prev": "-0.5%",
+   "act": "1.2%",
+   "src": "investing.com",
+   "title_ko": "8월 소매판매(MoM)",
+   "title_id": "Penjualan Ritel (MoM) (Agu)"
   },
   {
    "date": "2026-09-16",
-   "t": "BBCA",
-   "kind": "div",
-   "imp": 1,
-   "title": "배당 지급 · 중간현금배당 Rp25/주 — Bank Central Asia",
-   "src": "IDX 캘린더",
-   "title_id": "Pembayaran Dividen Tunai Interim PT Bank Central Asia Tbk. — Rp25/saham",
-   "dps": 25.0,
-   "pay": "2026-09-16",
-   "yld": "5.88%",
-   "country": "ID",
-   "title_ko": "배당 지급 · 중간현금배당 Rp25/주 — Bank Central Asia"
-  },
-  {
-   "date": "2026-09-16",
-   "t": "PSAB",
-   "kind": "div",
+   "time": "—",
+   "kind": "macro",
+   "country": "US",
+   "title": "Crude Oil Inventories",
    "imp": 3,
-   "title": "배당락(ex) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK",
-   "src": "IDX 캘린더",
-   "title_id": "ex Dividen Tunai Interim J RESOURCES ASIA PASIFIK Tbk — Rp30/saham",
-   "dps": 30.0,
-   "pay": "2026-09-29",
-   "yld": "23.68%",
-   "country": "ID",
-   "title_ko": "배당락(ex) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK"
+   "exp": "-1.600M",
+   "prev": "-0.391M",
+   "act": "-0.640M",
+   "src": "investing.com",
+   "title_ko": "EIA 원유 재고",
+   "title_id": "Stok Minyak Mentah EIA"
   },
   {
    "date": "2026-09-16",
-   "t": "INCO",
-   "kind": "corp",
+   "time": "—",
+   "kind": "macro",
+   "country": "US",
+   "title": "Cushing Crude Oil Inventories",
+   "imp": 2,
+   "exp": null,
+   "prev": "-0.684M",
+   "act": "-0.342M",
+   "src": "investing.com",
+   "title_ko": "쿠싱 원유 재고",
+   "title_id": "Cadangan Minyak Mentah Cushing"
+  },
+  {
+   "date": "2026-09-16",
+   "time": "—",
+   "kind": "macro",
+   "country": "US",
+   "title": "Fed Interest Rate Decision",
    "imp": 3,
-   "title": "기업설명회 · Vale Indonesia 연례 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Tahunan  Vale Indonesia Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · Vale Indonesia 연례 Public Expose 결과"
+   "exp": "4.00%",
+   "prev": "3.75%",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "FOMC 기준금리 결정",
+   "title_id": "Keputusan Suku Bunga The Fed (FOMC)"
   },
   {
    "date": "2026-09-16",
-   "t": "UNTR",
-   "kind": "corp",
+   "time": "—",
+   "kind": "macro",
+   "country": "US",
+   "title": "FOMC Economic Projections",
    "imp": 3,
-   "title": "자사주 · 자사주 매입 보고",
-   "src": "IDX 캘린더",
-   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
-   "country": "ID",
-   "title_ko": "자사주 · 자사주 매입 보고"
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "FOMC 경제 전망",
+   "title_id": "Proyeksi Ekonomi FOMC"
   },
   {
    "date": "2026-09-16",
-   "t": "KLBF",
-   "kind": "corp",
+   "time": "—",
+   "kind": "macro",
+   "country": "US",
+   "title": "FOMC Statement",
    "imp": 3,
-   "title": "기업설명회 · Kalbe Farma 연례 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Tahunan  Kalbe Farma Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · Kalbe Farma 연례 Public Expose 결과"
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "FOMC 성명서",
+   "title_id": "Pernyataan FOMC"
   },
   {
    "date": "2026-09-16",
-   "t": "MDLN",
-   "kind": "corp",
+   "time": "—",
+   "kind": "macro",
+   "country": "US",
+   "title": "Interest Rate Projection - 3rd Yr  (Q1)",
    "imp": 2,
-   "title": "Luar Biasa · Hasil RUPS Luar Biasa  PT Modernland Realty Tbk.",
-   "src": "IDX 캘린더",
-   "country": "ID",
-   "title_ko": "임시 · PT Modernland Realty Tbk RUPSLB 결과",
-   "title_id": "RUPSLB · Hasil RUPS Luar Biasa PT Modernland Realty Tbk"
+   "exp": null,
+   "prev": "3.1%",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "3년물 금리 전망(1분기)",
+   "title_id": "Proyeksi Suku Bunga - Tahun ke-3 (Q1)"
   },
   {
    "date": "2026-09-16",
-   "t": "MGLV",
-   "kind": "corp",
-   "imp": 2,
-   "title": "기업설명회 · NexAI Digital Infrastruktur Public Expose 자료",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Materi public expose Insidentil  PT NexAI Digital Infrastruktur Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · NexAI Digital Infrastruktur Public Expose 자료"
+   "time": "—",
+   "kind": "macro",
+   "country": "US",
+   "title": "FOMC Press Conference",
+   "imp": 3,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "FOMC 기자회견",
+   "title_id": "Konferensi Pers FOMC"
   },
   {
    "date": "2026-09-16",
-   "t": "PNGO",
-   "kind": "corp",
+   "time": "—",
+   "kind": "macro",
+   "country": "US",
+   "title": "TIC Net Long-Term Transactions  (Jul)",
    "imp": 2,
-   "title": "Luar Biasa · Hasil RUPS Luar Biasa  PT AEP Pinago Plantations Tbk",
-   "src": "IDX 캘린더",
-   "country": "ID",
-   "title_ko": "임시 · AEP Pinago Plantations 임시주주총회 결과",
-   "title_id": "Hasil RUPSLB PT AEP Pinago Plantations Tbk"
-  },
-  {
-   "date": "2026-09-16",
-   "t": "PTPP",
-   "kind": "corp",
-   "imp": 2,
-   "title": "Luar Biasa · Hasil RUPS Luar Biasa  PP (Persero) Tbk",
-   "src": "IDX 캘린더",
-   "country": "ID",
-   "title_ko": "임시 · PP (Persero) 임시주주총회 결과",
-   "title_id": "Hasil RUPSLB PP (Persero) Tbk"
-  },
-  {
-   "date": "2026-09-16",
-   "t": "VTNY",
-   "kind": "corp",
-   "imp": 2,
-   "title": "기업설명회 · Venteny Fortuna International 연례 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Tahunan  PT Venteny Fortuna International Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · Venteny Fortuna International 연례 Public Expose 결과"
-  },
-  {
-   "date": "2026-09-16",
-   "t": "BCIC",
-   "kind": "corp",
-   "imp": 2,
-   "title": "기업설명회 · Bank JTrust Indonesia 연례 Public Expose 계획",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Rencana public expose Tahunan 2025 PT Bank JTrust Indonesia Tbk.",
-   "country": "ID",
-   "title_ko": "기업설명회 · Bank JTrust Indonesia 연례 Public Expose 계획"
-  },
-  {
-   "date": "2026-09-16",
-   "t": "GRPH",
-   "kind": "corp",
-   "imp": 2,
-   "title": "기업설명회 · Griptha Putra Persada 수시 Public Expose 결과",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Hasil Insidentil  PT Griptha Putra Persada Tbk.",
-   "country": "ID",
-   "title_ko": "기업설명회 · Griptha Putra Persada 수시 Public Expose 결과"
-  },
-  {
-   "date": "2026-09-16",
-   "t": "BBHI",
-   "kind": "corp",
-   "imp": 2,
-   "title": "자사주 · 자사주 매입 보고",
-   "src": "IDX 캘린더",
-   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
-   "country": "ID",
-   "title_ko": "자사주 · 자사주 매입 보고"
-  },
-  {
-   "date": "2026-09-16",
-   "t": "ERAA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "자사주 · 자사주 매입 보고",
-   "src": "IDX 캘린더",
-   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
-   "country": "ID",
-   "title_ko": "자사주 · 자사주 매입 보고"
-  },
-  {
-   "date": "2026-09-16",
-   "t": "MKNT",
-   "kind": "corp",
-   "imp": 2,
-   "title": "Luar Biasa · Hasil RUPS Luar Biasa  PT Mitra Komunikasi Nusantara Tbk.",
-   "src": "IDX 캘린더",
-   "country": "ID",
-   "title_ko": "임시 · Mitra Komunikasi Nusantara 임시주주총회 결과",
-   "title_id": "Hasil RUPSLB PT Mitra Komunikasi Nusantara Tbk"
-  },
-  {
-   "date": "2026-09-16",
-   "t": "AKKU",
-   "kind": "corp",
-   "imp": 2,
-   "title": "기업설명회 · Anugerah Kagum Karya Utama Public Expose 자료",
-   "src": "IDX 캘린더",
-   "title_id": "Public Expose · Materi public expose Insidentil  PT Anugerah Kagum Karya Utama Tbk",
-   "country": "ID",
-   "title_ko": "기업설명회 · Anugerah Kagum Karya Utama Public Expose 자료"
-  },
-  {
-   "date": "2026-09-16",
-   "t": "PRDA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "자사주 · 자사주 매입 보고",
-   "src": "IDX 캘린더",
-   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
-   "country": "ID",
-   "title_ko": "자사주 · 자사주 매입 보고"
+   "exp": "146.3B",
+   "prev": "172.7B",
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "7월 TIC 장기증권 순매수",
+   "title_id": "Transaksi Jangka Panjang Bersih TIC AS (Jul)"
   },
   {
    "date": "2026-09-17",
@@ -19006,111 +18667,6 @@
    "title_id": "Penjualan Rumah Tertunda AS (MoM) (Agu)"
   },
   {
-   "date": "2026-09-17",
-   "t": "BMRI",
-   "kind": "div",
-   "imp": 1,
-   "title": "배당 기준일(DPS) · 중간현금배당 Rp66/주 — Bank Mandiri",
-   "src": "IDX 캘린더",
-   "title_id": "DPS Dividen Tunai Interim PT Bank Mandiri (Persero) Tbk — Rp66/saham",
-   "dps": 66.0,
-   "pay": "2026-10-02",
-   "yld": "12.51%",
-   "country": "ID",
-   "title_ko": "배당 기준일(DPS) · 중간현금배당 Rp66/주 — Bank Mandiri"
-  },
-  {
-   "date": "2026-09-17",
-   "t": "PSAB",
-   "kind": "div",
-   "imp": 1,
-   "title": "배당 기준일(DPS) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK",
-   "src": "IDX 캘린더",
-   "title_id": "DPS Dividen Tunai Interim J RESOURCES ASIA PASIFIK Tbk — Rp30/saham",
-   "dps": 30.0,
-   "pay": "2026-09-29",
-   "yld": "23.68%",
-   "country": "ID",
-   "title_ko": "배당 기준일(DPS) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK"
-  },
-  {
-   "date": "2026-09-17",
-   "t": "BSDE",
-   "kind": "corp",
-   "imp": 3,
-   "title": "공시 · 이자 지급 — Kupon seri BSDE04ACN2 ke 3",
-   "src": "IDX 캘린더",
-   "title_id": "Keterbukaan · Informasi Pembayaran Kupon seri BSDE04ACN2 ke 3",
-   "country": "ID",
-   "title_ko": "공시 · 이자 지급 — Kupon seri BSDE04ACN2 ke 3"
-  },
-  {
-   "date": "2026-09-17",
-   "t": "BSDE",
-   "kind": "corp",
-   "imp": 3,
-   "title": "공시 · 이자 지급 — Kupon seri SIBSDE02ACN2 ke 3",
-   "src": "IDX 캘린더",
-   "title_id": "Keterbukaan · Informasi Pembayaran Kupon seri SIBSDE02ACN2 ke 3",
-   "country": "ID",
-   "title_ko": "공시 · 이자 지급 — Kupon seri SIBSDE02ACN2 ke 3"
-  },
-  {
-   "date": "2026-09-17",
-   "t": "HEXA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Hexindo Adiperkasa 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Hexindo Adiperkasa",
-   "country": "ID",
-   "title_ko": "주주총회 · Hexindo Adiperkasa 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-17",
-   "t": "MBSS",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Mitrabahtera Segara Sejati 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Mitrabahtera Segara Sejati",
-   "country": "ID",
-   "title_ko": "주주총회 · Mitrabahtera Segara Sejati 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-17",
-   "t": "AIMS",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Artha Mahiya Investama 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Artha Mahiya Investama",
-   "country": "ID",
-   "title_ko": "주주총회 · Artha Mahiya Investama 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-17",
-   "t": "WIKA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "사채권자집회 계획 · Obligasi Berkelanjutan I Wijaya Karya Tahap II Tahun 2021",
-   "src": "IDX 캘린더",
-   "title_id": "RUPO · RENCANA Rupo emisi Obligasi Berkelanjutan I Wijaya Karya Tahap II Tahun 2021",
-   "country": "ID",
-   "title_ko": "사채권자집회 계획 · Obligasi Berkelanjutan I Wijaya Karya Tahap II Tahun 2021"
-  },
-  {
-   "date": "2026-09-17",
-   "t": "WIKA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "수쿠크보유자집회 계획 · Sukuk Mudharabah Berkelanjutan I Wijaya Karya Tahap II Tahun 2021",
-   "src": "IDX 캘린더",
-   "title_id": "RUPSU · RENCANA RupSu emisi Sukuk Mudharabah Berkelanjutan I Wijaya Karya Tahap II Tahun 2021",
-   "country": "ID",
-   "title_ko": "수쿠크보유자집회 계획 · Sukuk Mudharabah Berkelanjutan I Wijaya Karya Tahap II Tahun 2021"
-  },
-  {
    "date": "2026-09-18",
    "time": "20:15",
    "kind": "macro",
@@ -19137,480 +18693,6 @@
    "src": "manual",
    "title_ko": "FTSE GEIS 리밸런싱 기준 종가 (9/21 효력)",
    "title_id": "Harga penutupan acuan rebalancing FTSE GEIS (efektif 21/9)"
-  },
-  {
-   "date": "2026-09-18",
-   "t": "CMRY",
-   "kind": "div",
-   "imp": 1,
-   "title": "배당 지급 · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy",
-   "src": "IDX 캘린더",
-   "title_id": "Pembayaran Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk — Rp100/saham",
-   "dps": 100.0,
-   "pay": "2026-09-18",
-   "yld": "6.21%",
-   "country": "ID",
-   "title_ko": "배당 지급 · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy"
-  },
-  {
-   "date": "2026-09-18",
-   "t": "BVIC",
-   "kind": "corp",
-   "imp": 2,
-   "title": "공시 · 이자 지급 — Kupon seri BVIC03SBCN2 ke 5",
-   "src": "IDX 캘린더",
-   "title_id": "Keterbukaan · Informasi Pembayaran Kupon seri BVIC03SBCN2 ke 5",
-   "country": "ID",
-   "title_ko": "공시 · 이자 지급 — Kupon seri BVIC03SBCN2 ke 5"
-  },
-  {
-   "date": "2026-09-18",
-   "t": "VICO",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Victoria Investama 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Victoria Investama",
-   "country": "ID",
-   "title_ko": "주주총회 · Victoria Investama 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-18",
-   "t": "EURO",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Estee Gold Feet 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Estee Gold Feet",
-   "country": "ID",
-   "title_ko": "주주총회 · Estee Gold Feet 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-18",
-   "t": "HRUM",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Harum Energy 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Harum Energy",
-   "country": "ID",
-   "title_ko": "주주총회 · Harum Energy 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-18",
-   "t": "PBSA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Paramita Bangun Sarana 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Paramita Bangun Sarana",
-   "country": "ID",
-   "title_ko": "주주총회 · Paramita Bangun Sarana 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-21",
-   "t": "DKFT",
-   "kind": "div",
-   "imp": 1,
-   "title": "배당 지급 · 중간현금배당 Rp30/주 — Central Omega Resources",
-   "src": "IDX 캘린더",
-   "title_id": "Pembayaran Dividen Tunai Interim Central Omega Resources Tbk — Rp30/saham",
-   "dps": 30.0,
-   "pay": "2026-09-21",
-   "yld": "12.86%",
-   "country": "ID",
-   "title_ko": "배당 지급 · 중간현금배당 Rp30/주 — Central Omega Resources"
-  },
-  {
-   "date": "2026-09-21",
-   "t": "FORU",
-   "kind": "corp",
-   "imp": 2,
-   "title": "tanggal cum HMETD Fortune Indonesia Tbk · tanggal cum HMETD Fortune Indonesia Tbk",
-   "src": "IDX 캘린더",
-   "country": "ID",
-   "title_ko": "Fortune Indonesia(FORU), 유상증자 신주인수권 매매 마감일 확정",
-   "title_id": "Tanggal Cum HMETD Fortune Indonesia Tbk · Tanggal Cum HMETD Fortune Indonesia Tbk"
-  },
-  {
-   "date": "2026-09-21",
-   "t": "PGUN",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Pradiksi Gunatama 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Pradiksi Gunatama",
-   "country": "ID",
-   "title_ko": "주주총회 · Pradiksi Gunatama 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-21",
-   "t": "JARR",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Jhonlin Agro Raya 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Jhonlin Agro Raya",
-   "country": "ID",
-   "title_ko": "주주총회 · Jhonlin Agro Raya 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-21",
-   "t": "POST",
-   "kind": "corp",
-   "imp": 2,
-   "title": "사채권자집회 소집 · Obligasi I Pos Indonesia Tahun 2022",
-   "src": "IDX 캘린더",
-   "title_id": "RUPO · PANGGILAN Rupo emisi Obligasi I Pos Indonesia Tahun 2022",
-   "country": "ID",
-   "title_ko": "사채권자집회 소집 · Obligasi I Pos Indonesia Tahun 2022"
-  },
-  {
-   "date": "2026-09-21",
-   "t": "POST",
-   "kind": "corp",
-   "imp": 2,
-   "title": "수쿠크보유자집회 소집 · Sukuk Ijarah Berkelanjutan I Pos Indonesia Tahap I Tahun 2024",
-   "src": "IDX 캘린더",
-   "title_id": "RUPSU · PANGGILAN RupSu emisi Sukuk Ijarah Berkelanjutan I Pos Indonesia Tahap I Tahun 2024",
-   "country": "ID",
-   "title_ko": "수쿠크보유자집회 소집 · Sukuk Ijarah Berkelanjutan I Pos Indonesia Tahap I Tahun 2024"
-  },
-  {
-   "date": "2026-09-22",
-   "t": "DMAS",
-   "kind": "corp",
-   "imp": 3,
-   "title": "주주총회 · Puradelta Lestari 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Puradelta Lestari",
-   "country": "ID",
-   "title_ko": "주주총회 · Puradelta Lestari 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-22",
-   "t": "SILO",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Siloam International Hospitals 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Siloam International Hospitals",
-   "country": "ID",
-   "title_ko": "주주총회 · Siloam International Hospitals 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-22",
-   "t": "OILS",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Indo Oil Perkasa 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Indo Oil Perkasa",
-   "country": "ID",
-   "title_ko": "주주총회 · Indo Oil Perkasa 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-22",
-   "t": "FORU",
-   "kind": "corp",
-   "imp": 2,
-   "title": "tanggal ex HMETD Fortune Indonesia Tbk · tanggal ex HMETD Fortune Indonesia Tbk",
-   "src": "IDX 캘린더",
-   "country": "ID",
-   "title_ko": "Fortune Indonesia(FORU), 유상증자 신주인수권 락일 확정",
-   "title_id": "Tanggal Ex HMETD Fortune Indonesia Tbk · Tanggal Ex HMETD Fortune Indonesia Tbk"
-  },
-  {
-   "date": "2026-09-23",
-   "t": "TRIS",
-   "kind": "div",
-   "imp": 1,
-   "title": "배당 지급 · 중간현금배당 Rp2.27/주 — Trisula International",
-   "src": "IDX 캘린더",
-   "title_id": "Pembayaran Dividen Tunai Interim Trisula International Tbk — Rp2.27/saham",
-   "dps": 2.27,
-   "pay": "2026-09-23",
-   "yld": "5.66%",
-   "country": "ID",
-   "title_ko": "배당 지급 · 중간현금배당 Rp2.27/주 — Trisula International"
-  },
-  {
-   "date": "2026-09-23",
-   "t": "FORU",
-   "kind": "corp",
-   "imp": 2,
-   "title": "tanggal DPS HMETD Fortune Indonesia Tbk · tanggal DPS HMETD Fortune Indonesia Tbk",
-   "src": "IDX 캘린더",
-   "country": "ID",
-   "title_ko": "Fortune Indonesia(FORU), 유상증자 신주인수권(HMETD) 배정 기준일(주주명부 확정일) 확정",
-   "title_id": "Tanggal DPS HMETD Fortune Indonesia Tbk · Tanggal DPS HMETD Fortune Indonesia Tbk"
-  },
-  {
-   "date": "2026-09-23",
-   "t": "XCID",
-   "kind": "corp",
-   "imp": 2,
-   "title": "수익자총회 소집 · Pemberitahuan Rencana dan Panggilan RUPUP DIRE Ciptadana Properti Ritel Indonesia seri",
-   "src": "IDX 캘린더",
-   "title_id": "RUPUP · Pemberitahuan Rencana dan Panggilan RUPUP DIRE Ciptadana Properti Ritel Indonesia seri",
-   "country": "ID",
-   "title_ko": "수익자총회 소집 · Pemberitahuan Rencana dan Panggilan RUPUP DIRE Ciptadana Properti Ritel Indonesia seri"
-  },
-  {
-   "date": "2026-09-23",
-   "t": "LUCK",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Sentral Mitra Informatika 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Sentral Mitra Informatika",
-   "country": "ID",
-   "title_ko": "주주총회 · Sentral Mitra Informatika 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-23",
-   "t": "UANG",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Pakuan 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Pakuan",
-   "country": "ID",
-   "title_ko": "주주총회 · Pakuan 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-23",
-   "t": "IPCM",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Jasa Armada Indonesia 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Jasa Armada Indonesia",
-   "country": "ID",
-   "title_ko": "주주총회 · Jasa Armada Indonesia 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-24",
-   "t": "IRSX",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Folago Global Nusantara 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Folago Global Nusantara",
-   "country": "ID",
-   "title_ko": "주주총회 · Folago Global Nusantara 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-24",
-   "t": "MAYA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Bank Mayapada Internasional 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Bank Mayapada Internasional",
-   "country": "ID",
-   "title_ko": "주주총회 · Bank Mayapada Internasional 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-24",
-   "t": "FORU",
-   "kind": "corp",
-   "imp": 2,
-   "title": "tanggal distribusi HMETD Fortune Indonesia Tbk · tanggal distribusi HMETD Fortune Indonesia Tbk",
-   "src": "IDX 캘린더",
-   "country": "ID",
-   "title_ko": "Fortune Indonesia(FORU), 유상증자 신주인수권 배정일 확정",
-   "title_id": "Tanggal Distribusi HMETD Fortune Indonesia Tbk · Tanggal Distribusi HMETD Fortune Indonesia Tbk"
-  },
-  {
-   "date": "2026-09-25",
-   "t": "LMPI",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Langgeng Makmur Industri 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Langgeng Makmur Industri",
-   "country": "ID",
-   "title_ko": "주주총회 · Langgeng Makmur Industri 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-25",
-   "t": "CRAB",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Toba Surimi Industries 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Toba Surimi Industries",
-   "country": "ID",
-   "title_ko": "주주총회 · Toba Surimi Industries 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-25",
-   "t": "SMCB",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Solusi Bangun Indonesia 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Solusi Bangun Indonesia",
-   "country": "ID",
-   "title_ko": "주주총회 · Solusi Bangun Indonesia 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-25",
-   "t": "BIPP",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Bhuwanatala Indah Permai 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Bhuwanatala Indah Permai",
-   "country": "ID",
-   "title_ko": "주주총회 · Bhuwanatala Indah Permai 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-28",
-   "t": "DGWG",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Delta Giri Wacana 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Delta Giri Wacana",
-   "country": "ID",
-   "title_ko": "주주총회 · Delta Giri Wacana 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-28",
-   "t": "BVIC",
-   "kind": "corp",
-   "imp": 2,
-   "title": "공시 · 이자 지급 — Kupon seri BVIC04CN2 ke 4",
-   "src": "IDX 캘린더",
-   "title_id": "Keterbukaan · Informasi Pembayaran Kupon seri BVIC04CN2 ke 4",
-   "country": "ID",
-   "title_ko": "공시 · 이자 지급 — Kupon seri BVIC04CN2 ke 4"
-  },
-  {
-   "date": "2026-09-29",
-   "t": "PSAB",
-   "kind": "div",
-   "imp": 1,
-   "title": "배당 지급 · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK",
-   "src": "IDX 캘린더",
-   "title_id": "Pembayaran Dividen Tunai Interim J RESOURCES ASIA PASIFIK Tbk — Rp30/saham",
-   "dps": 30.0,
-   "pay": "2026-09-29",
-   "yld": "23.68%",
-   "country": "ID",
-   "title_ko": "배당 지급 · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK"
-  },
-  {
-   "date": "2026-09-29",
-   "t": "ISAT",
-   "kind": "corp",
-   "imp": 3,
-   "title": "주주총회 · Indosat 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Indosat",
-   "country": "ID",
-   "title_ko": "주주총회 · Indosat 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-29",
-   "t": "OBMD",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · OBM Drilchem 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS OBM Drilchem",
-   "country": "ID",
-   "title_ko": "주주총회 · OBM Drilchem 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-29",
-   "t": "TUGU",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Asuransi Tugu Pratama Indonesia 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Asuransi Tugu Pratama Indonesia",
-   "country": "ID",
-   "title_ko": "주주총회 · Asuransi Tugu Pratama Indonesia 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-30",
-   "t": "TLKM",
-   "kind": "corp",
-   "imp": 3,
-   "title": "주주총회 · Telkom Indonesia 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Telkom Indonesia",
-   "country": "ID",
-   "title_ko": "주주총회 · Telkom Indonesia 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-30",
-   "t": "ASBI",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Asuransi Bintang 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Asuransi Bintang",
-   "country": "ID",
-   "title_ko": "주주총회 · Asuransi Bintang 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-30",
-   "t": "AMAR",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Bank Amar Indonesia 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Bank Amar Indonesia",
-   "country": "ID",
-   "title_ko": "주주총회 · Bank Amar Indonesia 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-30",
-   "t": "DMND",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Diamond Food Indonesia 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Diamond Food Indonesia",
-   "country": "ID",
-   "title_ko": "주주총회 · Diamond Food Indonesia 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-30",
-   "t": "SOFA",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Solusi Environment Asia 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Solusi Environment Asia",
-   "country": "ID",
-   "title_ko": "주주총회 · Solusi Environment Asia 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-30",
-   "t": "ADHI",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Adhi Karya 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Adhi Karya",
-   "country": "ID",
-   "title_ko": "주주총회 · Adhi Karya 주주총회 개최 예정"
-  },
-  {
-   "date": "2026-09-30",
-   "t": "VISI",
-   "kind": "corp",
-   "imp": 2,
-   "title": "주주총회 · Satu Visi Putra 주주총회 개최 예정",
-   "src": "IDX 캘린더",
-   "title_id": "RUPS · Pemberitahuan RUPS Satu Visi Putra",
-   "country": "ID",
-   "title_ko": "주주총회 · Satu Visi Putra 주주총회 개최 예정"
   }
  ],
  "announcements": [
@@ -24036,10 +23118,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-16 22:31",
-  "pc_age_min": 9,
-  "news_ai_cache": 44,
-  "news_ai_hit": 32,
+  "idx_from_pc": "2026-09-16 22:46",
+  "pc_age_min": 4,
+  "news_ai_cache": 42,
+  "news_ai_hit": 31,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25734,20 +24816,6 @@
  "top_day": "2026-09-16",
  "top_news": [
   {
-   "ts": "2026-09-16T20:30:00+07:00",
-   "date": "2026-09-16",
-   "time": "20:30",
-   "src": "IDX Channel",
-   "t": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/penjelasan-ojk-soal-danantara-dikabarkan-bakal-kuasai-40-persen-saham-bei-usai-demutualisasi",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/04/08/IDX_bursa_BEI.jpg",
-   "score": 417.75,
-   "srcs": 4,
-   "t_ko": "데무추얼라이제이션 후 Danantara가 BEI 지분 40% 장악설에 OJK 입장 표명",
-   "t_id": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi"
-  },
-  {
    "ts": "2026-09-16T21:32:00+07:00",
    "date": "2026-09-16",
    "time": "21:32",
@@ -25801,6 +24869,20 @@
    "t_id": "IHSG Melemah 6 Hari Beruntun, Peluang Suku Bunga The Fed Naik Capai 92%"
   },
   {
+   "ts": "2026-09-16T20:30:00+07:00",
+   "date": "2026-09-16",
+   "time": "20:30",
+   "src": "IDX Channel",
+   "t": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi",
+   "tags": [],
+   "url": "https://www.idxchannel.com/market-news/penjelasan-ojk-soal-danantara-dikabarkan-bakal-kuasai-40-persen-saham-bei-usai-demutualisasi",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/04/08/IDX_bursa_BEI.jpg",
+   "score": 415.55,
+   "srcs": 3,
+   "t_ko": "데무추얼라이제이션 후 Danantara가 BEI 지분 40% 장악설에 OJK 입장 표명",
+   "t_id": "Penjelasan OJK soal Danantara Dikabarkan Bakal Kuasai 40 Persen Saham BEI usai Demutualisasi"
+  },
+  {
    "ts": "2026-09-16T22:33:24+07:00",
    "date": "2026-09-16",
    "time": "22:33",
@@ -25824,7 +24906,7 @@
     "geopolitik"
    ],
    "score": 315.0,
-   "srcs": 5
+   "srcs": 4
   }
  ],
  "daylog": {
@@ -26330,7 +25412,7 @@
  ],
  "tech": {
   "BMRI": {
-   "n": 29,
+   "n": 30,
    "ma5": 4354,
    "ma20": 4305,
    "rsi": 53.4,
@@ -26353,7 +25435,7 @@
    "quad": "mid"
   },
   "AMMN": {
-   "n": 29,
+   "n": 30,
    "ma5": 4994,
    "ma20": 4579,
    "rsi": 73.3,
@@ -26376,7 +25458,7 @@
    "quad": "up_in"
   },
   "BUMI": {
-   "n": 29,
+   "n": 30,
    "ma5": 208,
    "ma20": 203,
    "rsi": 56.2,
@@ -26399,7 +25481,7 @@
    "quad": "mid"
   },
   "ANTM": {
-   "n": 29,
+   "n": 30,
    "ma5": 3244,
    "ma20": 3154,
    "rsi": 52.7,
@@ -26422,7 +25504,7 @@
    "quad": "up_in"
   },
   "BBCA": {
-   "n": 29,
+   "n": 30,
    "ma5": 6395,
    "ma20": 6490,
    "rsi": 47.1,
@@ -26445,7 +25527,7 @@
    "quad": "dip_out"
   },
   "BBRI": {
-   "n": 29,
+   "n": 30,
    "ma5": 3328,
    "ma20": 3288,
    "rsi": 62.5,
@@ -26468,7 +25550,7 @@
    "quad": "up_out"
   },
   "DEWA": {
-   "n": 29,
+   "n": 30,
    "ma5": 403,
    "ma20": 436,
    "rsi": 20.0,
@@ -26491,7 +25573,7 @@
    "quad": "mid"
   },
   "DSSA": {
-   "n": 29,
+   "n": 30,
    "ma5": 1090,
    "ma20": 1112,
    "rsi": 40.0,
@@ -26514,7 +25596,7 @@
    "quad": "dip_out"
   },
   "BRMS": {
-   "n": 29,
+   "n": 30,
    "ma5": 712,
    "ma20": 715,
    "rsi": 40.0,
@@ -26537,7 +25619,7 @@
    "quad": "mid"
   },
   "TLKM": {
-   "n": 29,
+   "n": 30,
    "ma5": 2656,
    "ma20": 2622,
    "rsi": 56.8,
@@ -26560,7 +25642,7 @@
    "quad": "up_in"
   },
   "CUAN": {
-   "n": 29,
+   "n": 30,
    "ma5": 938,
    "ma20": 884,
    "rsi": 65.5,
@@ -26583,7 +25665,7 @@
    "quad": "mid"
   },
   "TINS": {
-   "n": 29,
+   "n": 30,
    "ma5": 4702,
    "ma20": 4298,
    "rsi": 74.6,
@@ -26606,7 +25688,7 @@
    "quad": "up_in"
   },
   "ASII": {
-   "n": 29,
+   "n": 30,
    "ma5": 4900,
    "ma20": 4858,
    "rsi": 53.2,
@@ -26629,7 +25711,7 @@
    "quad": "mid"
   },
   "SINI": {
-   "n": 29,
+   "n": 30,
    "ma5": 13645,
    "ma20": 11801,
    "rsi": 76.3,
@@ -26652,7 +25734,7 @@
    "quad": "up_in"
   },
   "INCO": {
-   "n": 29,
+   "n": 30,
    "ma5": 4762,
    "ma20": 5001,
    "rsi": 31.6,
@@ -26675,7 +25757,7 @@
    "quad": "dip_in"
   },
   "ADRO": {
-   "n": 29,
+   "n": 30,
    "ma5": 2624,
    "ma20": 2660,
    "rsi": 42.2,
@@ -26698,7 +25780,7 @@
    "quad": "dip_out"
   },
   "BULL": {
-   "n": 29,
+   "n": 30,
    "ma5": 419,
    "ma20": 437,
    "rsi": 36.7,
@@ -26721,7 +25803,7 @@
    "quad": "dip_in"
   },
   "TPIA": {
-   "n": 29,
+   "n": 30,
    "ma5": 1867,
    "ma20": 1945,
    "rsi": 28.1,
@@ -26744,7 +25826,7 @@
    "quad": "dip_out"
   },
   "MDKA": {
-   "n": 29,
+   "n": 30,
    "ma5": 2930,
    "ma20": 2955,
    "rsi": 39.3,
@@ -26767,7 +25849,7 @@
    "quad": "dip_out"
   },
   "DPUM": {
-   "n": 29,
+   "n": 30,
    "ma5": 140,
    "ma20": 110,
    "rsi": 82.8,
@@ -26790,7 +25872,7 @@
    "quad": "mid"
   },
   "BYAN": {
-   "n": 29,
+   "n": 30,
    "ma5": 11620,
    "ma20": 13816,
    "rsi": 20.6,
@@ -26813,7 +25895,7 @@
    "quad": "dip_out"
   },
   "PTRO": {
-   "n": 29,
+   "n": 30,
    "ma5": 5280,
    "ma20": 5251,
    "rsi": 50.0,
@@ -26836,7 +25918,7 @@
    "quad": "dip_out"
   },
   "EMAS": {
-   "n": 29,
+   "n": 30,
    "ma5": 8025,
    "ma20": 8475,
    "rsi": 27.1,
@@ -26859,7 +25941,7 @@
    "quad": "dip_in"
   },
   "ADMR": {
-   "n": 29,
+   "n": 30,
    "ma5": 1586,
    "ma20": 1651,
    "rsi": 29.0,
@@ -26882,7 +25964,7 @@
    "quad": "mid"
   },
   "AADI": {
-   "n": 29,
+   "n": 30,
    "ma5": 12280,
    "ma20": 11105,
    "rsi": 85.8,
@@ -26905,7 +25987,7 @@
    "quad": "up_in"
   },
   "UNTR": {
-   "n": 29,
+   "n": 30,
    "ma5": 26250,
    "ma20": 25062,
    "rsi": 65.7,
@@ -26928,7 +26010,7 @@
    "quad": "up_in"
   },
   "INET": {
-   "n": 29,
+   "n": 30,
    "ma5": 332,
    "ma20": 339,
    "rsi": 35.6,
@@ -26951,7 +26033,7 @@
    "quad": "dip_out"
   },
   "MEDC": {
-   "n": 29,
+   "n": 30,
    "ma5": 1566,
    "ma20": 1470,
    "rsi": 82.5,
@@ -26974,7 +26056,7 @@
    "quad": "up_out"
   },
   "ISAT": {
-   "n": 29,
+   "n": 30,
    "ma5": 2392,
    "ma20": 2478,
    "rsi": 27.3,
@@ -26997,7 +26079,7 @@
    "quad": "dip_out"
   },
   "BBNI": {
-   "n": 29,
+   "n": 30,
    "ma5": 3780,
    "ma20": 3788,
    "rsi": 51.4,
@@ -27020,7 +26102,7 @@
    "quad": "dip_out"
   },
   "PTBA": {
-   "n": 29,
+   "n": 30,
    "ma5": 3060,
    "ma20": 2762,
    "rsi": 83.8,
@@ -27043,7 +26125,7 @@
    "quad": "up_in"
   },
   "ENRG": {
-   "n": 29,
+   "n": 30,
    "ma5": 1434,
    "ma20": 1354,
    "rsi": 65.8,
@@ -27066,7 +26148,7 @@
    "quad": "up_in"
   },
   "ARCI": {
-   "n": 29,
+   "n": 30,
    "ma5": 1322,
    "ma20": 1344,
    "rsi": 34.2,
@@ -27089,7 +26171,7 @@
    "quad": "dip_in"
   },
   "DEFI": {
-   "n": 29,
+   "n": 30,
    "ma5": 114,
    "ma20": 108,
    "rsi": 60.0,
@@ -27112,7 +26194,7 @@
    "quad": "mid"
   },
   "ESSA": {
-   "n": 29,
+   "n": 30,
    "ma5": 642,
    "ma20": 655,
    "rsi": 47.9,
@@ -27135,7 +26217,7 @@
    "quad": "dip_out"
   },
   "PGAS": {
-   "n": 29,
+   "n": 30,
    "ma5": 1527,
    "ma20": 1529,
    "rsi": 46.8,
@@ -27158,7 +26240,7 @@
    "quad": "dip_in"
   },
   "SLIS": {
-   "n": 29,
+   "n": 30,
    "ma5": 86,
    "ma20": 91,
    "rsi": 50.0,
@@ -27181,7 +26263,7 @@
    "quad": "mid"
   },
   "BRPT": {
-   "n": 29,
+   "n": 30,
    "ma5": 1661,
    "ma20": 1775,
    "rsi": 13.6,
@@ -27204,7 +26286,7 @@
    "quad": "dip_out"
   },
   "IATA": {
-   "n": 29,
+   "n": 30,
    "ma5": 123,
    "ma20": 125,
    "rsi": 49.4,
@@ -27227,7 +26309,7 @@
    "quad": "dip_out"
   },
   "CPIN": {
-   "n": 29,
+   "n": 30,
    "ma5": 3156,
    "ma20": 3112,
    "rsi": 55.0,
@@ -27250,7 +26332,7 @@
    "quad": "up_out"
   },
   "ULTJ": {
-   "n": 29,
+   "n": 30,
    "ma5": 1686,
    "ma20": 1548,
    "rsi": 87.4,
@@ -27273,7 +26355,7 @@
    "quad": "up_in"
   },
   "MBMA": {
-   "n": 29,
+   "n": 30,
    "ma5": 510,
    "ma20": 535,
    "rsi": 31.4,
@@ -27296,7 +26378,7 @@
    "quad": "dip_out"
   },
   "COCO": {
-   "n": 29,
+   "n": 30,
    "ma5": 136,
    "ma20": 121,
    "rsi": 68.1,
@@ -27319,7 +26401,7 @@
    "quad": "up_out"
   },
   "KIJA": {
-   "n": 29,
+   "n": 30,
    "ma5": 188,
    "ma20": 198,
    "rsi": 25.0,
@@ -27342,7 +26424,7 @@
    "quad": "dip_out"
   },
   "ITMG": {
-   "n": 29,
+   "n": 30,
    "ma5": 26150,
    "ma20": 25914,
    "rsi": 65.5,
@@ -27365,7 +26447,7 @@
    "quad": "up_out"
   },
   "KLBF": {
-   "n": 29,
+   "n": 30,
    "ma5": 751,
    "ma20": 779,
    "rsi": 37.8,
@@ -27388,7 +26470,7 @@
    "quad": "dip_out"
   },
   "MDIA": {
-   "n": 29,
+   "n": 30,
    "ma5": 207,
    "ma20": 241,
    "rsi": 39.2,
@@ -27411,7 +26493,7 @@
    "quad": "dip_out"
   },
   "KOTA": {
-   "n": 29,
+   "n": 30,
    "ma5": 199,
    "ma20": 192,
    "rsi": 57.7,
@@ -27434,7 +26516,7 @@
    "quad": "mid"
   },
   "JARR": {
-   "n": 29,
+   "n": 30,
    "ma5": 3806,
    "ma20": 3316,
    "rsi": 73.0,
@@ -27457,7 +26539,7 @@
    "quad": "mid"
   },
   "BRIS": {
-   "n": 29,
+   "n": 30,
    "ma5": 1716,
    "ma20": 1767,
    "rsi": 20.0,
@@ -27480,7 +26562,7 @@
    "quad": "dip_out"
   },
   "BNBR": {
-   "n": 29,
+   "n": 30,
    "ma5": 93,
    "ma20": 98,
    "rsi": 17.6,
@@ -27503,7 +26585,7 @@
    "quad": "dip_out"
   },
   "UNVR": {
-   "n": 29,
+   "n": 30,
    "ma5": 1630,
    "ma20": 1711,
    "rsi": 11.1,
@@ -27526,7 +26608,7 @@
    "quad": "dip_out"
   },
   "INKP": {
-   "n": 29,
+   "n": 30,
    "ma5": 8810,
    "ma20": 8866,
    "rsi": 45.3,
@@ -27549,7 +26631,7 @@
    "quad": "mid"
   },
   "RAJA": {
-   "n": 29,
+   "n": 30,
    "ma5": 795,
    "ma20": 812,
    "rsi": 31.6,
@@ -27572,7 +26654,7 @@
    "quad": "mid"
   },
   "IMPC": {
-   "n": 29,
+   "n": 30,
    "ma5": 1695,
    "ma20": 1508,
    "rsi": 65.1,
@@ -27595,7 +26677,7 @@
    "quad": "up_out"
   },
   "INDY": {
-   "n": 29,
+   "n": 30,
    "ma5": 2788,
    "ma20": 2771,
    "rsi": 46.5,
@@ -27618,7 +26700,7 @@
    "quad": "dip_out"
   },
   "INDF": {
-   "n": 29,
+   "n": 30,
    "ma5": 7275,
    "ma20": 7316,
    "rsi": 46.9,
@@ -27641,7 +26723,7 @@
    "quad": "dip_in"
   },
   "NCKL": {
-   "n": 29,
+   "n": 30,
    "ma5": 930,
    "ma20": 950,
    "rsi": 41.5,
@@ -27664,7 +26746,7 @@
    "quad": "mid"
   },
   "ERAA": {
-   "n": 29,
+   "n": 30,
    "ma5": 593,
    "ma20": 539,
    "rsi": 70.2,
@@ -27687,7 +26769,7 @@
    "quad": "up_in"
   },
   "KPIG": {
-   "n": 29,
+   "n": 30,
    "ma5": 79,
    "ma20": 70,
    "rsi": 56.8,
@@ -27710,7 +26792,7 @@
    "quad": "up_out"
   },
   "NZIA": {
-   "n": 29,
+   "n": 30,
    "ma5": 191,
    "ma20": 171,
    "rsi": 58.6,
@@ -27733,7 +26815,7 @@
    "quad": "up_in"
   },
   "BIPI": {
-   "n": 29,
+   "n": 30,
    "ma5": 144,
    "ma20": 148,
    "rsi": 36.2,
@@ -27756,7 +26838,7 @@
    "quad": "dip_out"
   },
   "MUTU": {
-   "n": 29,
+   "n": 30,
    "ma5": 130,
    "ma20": 125,
    "rsi": 55.6,
@@ -27779,7 +26861,7 @@
    "quad": "mid"
   },
   "HMSP": {
-   "n": 29,
+   "n": 30,
    "ma5": 701,
    "ma20": 733,
    "rsi": 25.0,
@@ -27802,7 +26884,7 @@
    "quad": "dip_in"
   },
   "SMRA": {
-   "n": 29,
+   "n": 30,
    "ma5": 314,
    "ma20": 323,
    "rsi": 34.1,
@@ -27825,7 +26907,7 @@
    "quad": "dip_out"
   },
   "PSAB": {
-   "n": 29,
+   "n": 30,
    "ma5": 574,
    "ma20": 590,
    "rsi": 23.5,
@@ -27848,7 +26930,7 @@
    "quad": "dip_out"
   },
   "ASLI": {
-   "n": 29,
+   "n": 30,
    "ma5": 385,
    "ma20": 327,
    "rsi": 74.0,
@@ -27871,7 +26953,7 @@
    "quad": "mid"
   },
   "DFAM": {
-   "n": 29,
+   "n": 30,
    "ma5": 86,
    "ma20": 83,
    "rsi": 75.0,
@@ -27894,7 +26976,7 @@
    "quad": "mid"
   },
   "VAST": {
-   "n": 29,
+   "n": 30,
    "ma5": 116,
    "ma20": 114,
    "rsi": 78.9,
@@ -27917,7 +26999,7 @@
    "quad": "mid"
   },
   "AMRT": {
-   "n": 29,
+   "n": 30,
    "ma5": 1287,
    "ma20": 1333,
    "rsi": 33.3,
@@ -27940,7 +27022,7 @@
    "quad": "dip_out"
   },
   "ICBP": {
-   "n": 29,
+   "n": 30,
    "ma5": 7070,
    "ma20": 7425,
    "rsi": 10.6,
@@ -27963,7 +27045,7 @@
    "quad": "mid"
   },
   "KETR": {
-   "n": 29,
+   "n": 30,
    "ma5": 924,
    "ma20": 828,
    "rsi": 72.1,
@@ -27986,7 +27068,7 @@
    "quad": "up_out"
   },
   "TUGU": {
-   "n": 29,
+   "n": 30,
    "ma5": 1471,
    "ma20": 1384,
    "rsi": 81.1,
@@ -28009,7 +27091,7 @@
    "quad": "up_out"
   },
   "CCSI": {
-   "n": 29,
+   "n": 30,
    "ma5": 372,
    "ma20": 296,
    "rsi": 89.8,
@@ -28032,7 +27114,7 @@
    "quad": "mid"
   },
   "VKTR": {
-   "n": 29,
+   "n": 30,
    "ma5": 770,
    "ma20": 869,
    "rsi": 23.9,
@@ -28055,7 +27137,7 @@
    "quad": "dip_out"
   },
   "LSIP": {
-   "n": 29,
+   "n": 30,
    "ma5": 1697,
    "ma20": 1583,
    "rsi": 78.4,
@@ -28078,7 +27160,7 @@
    "quad": "up_in"
   },
   "LUCY": {
-   "n": 29,
+   "n": 30,
    "ma5": 367,
    "ma20": 400,
    "rsi": 47.9,
@@ -28101,7 +27183,7 @@
    "quad": "mid"
   },
   "TKIM": {
-   "n": 29,
+   "n": 30,
    "ma5": 7830,
    "ma20": 8029,
    "rsi": 42.5,
@@ -28124,7 +27206,7 @@
    "quad": "dip_in"
   },
   "FORU": {
-   "n": 29,
+   "n": 30,
    "ma5": 4032,
    "ma20": 3038,
    "rsi": 74.1,
@@ -28147,7 +27229,7 @@
    "quad": "mid"
   },
   "BUVA": {
-   "n": 29,
+   "n": 30,
    "ma5": 711,
    "ma20": 738,
    "rsi": 41.9,
@@ -28170,7 +27252,7 @@
    "quad": "dip_out"
   },
   "TAPG": {
-   "n": 29,
+   "n": 30,
    "ma5": 2242,
    "ma20": 2165,
    "rsi": 58.3,
@@ -28193,7 +27275,7 @@
    "quad": "up_in"
   },
   "SSIA": {
-   "n": 29,
+   "n": 30,
    "ma5": 1716,
    "ma20": 1804,
    "rsi": 32.0,
@@ -28216,7 +27298,7 @@
    "quad": "mid"
   },
   "FILM": {
-   "n": 29,
+   "n": 30,
    "ma5": 765,
    "ma20": 813,
    "rsi": 34.5,
@@ -28239,7 +27321,7 @@
    "quad": "dip_out"
   },
   "PANI": {
-   "n": 29,
+   "n": 30,
    "ma5": 5575,
    "ma20": 5858,
    "rsi": 28.6,
@@ -28262,7 +27344,7 @@
    "quad": "dip_out"
   },
   "ELIT": {
-   "n": 29,
+   "n": 30,
    "ma5": 273,
    "ma20": 254,
    "rsi": 56.1,
@@ -28285,7 +27367,7 @@
    "quad": "mid"
   },
   "NICL": {
-   "n": 29,
+   "n": 30,
    "ma5": 468,
    "ma20": 487,
    "rsi": 27.4,
@@ -28308,7 +27390,7 @@
    "quad": "dip_out"
   },
   "MSIN": {
-   "n": 29,
+   "n": 30,
    "ma5": 304,
    "ma20": 318,
    "rsi": 42.5,
@@ -28331,7 +27413,7 @@
    "quad": "dip_out"
   },
   "RMKE": {
-   "n": 29,
+   "n": 30,
    "ma5": 409,
    "ma20": 422,
    "rsi": 42.0,
@@ -28354,7 +27436,7 @@
    "quad": "mid"
   },
   "UVCR": {
-   "n": 29,
+   "n": 30,
    "ma5": 162,
    "ma20": 149,
    "rsi": 72.1,
@@ -28377,7 +27459,7 @@
    "quad": "up_in"
   },
   "SMIL": {
-   "n": 29,
+   "n": 30,
    "ma5": 431,
    "ma20": 418,
    "rsi": 60.0,
@@ -28400,7 +27482,7 @@
    "quad": "up_out"
   },
   "DMAS": {
-   "n": 29,
+   "n": 30,
    "ma5": 192,
    "ma20": 189,
    "rsi": 56.3,
@@ -28423,7 +27505,7 @@
    "quad": "mid"
   },
   "AALI": {
-   "n": 29,
+   "n": 30,
    "ma5": 8515,
    "ma20": 8274,
    "rsi": 67.6,
@@ -28446,7 +27528,7 @@
    "quad": "up_in"
   },
   "SQMI": {
-   "n": 29,
+   "n": 30,
    "ma5": 94,
    "ma20": 83,
    "rsi": 62.1,
@@ -28469,7 +27551,7 @@
    "quad": "up_out"
   },
   "BREN": {
-   "n": 29,
+   "n": 30,
    "ma5": 3178,
    "ma20": 3323,
    "rsi": 24.6,
@@ -28492,7 +27574,7 @@
    "quad": "dip_out"
   },
   "AHAP": {
-   "n": 29,
+   "n": 30,
    "ma5": 106,
    "ma20": 102,
    "rsi": 67.4,
@@ -28515,7 +27597,7 @@
    "quad": "mid"
   },
   "ARKO": {
-   "n": 29,
+   "n": 30,
    "ma5": 4412,
    "ma20": 4851,
    "rsi": 9.9,
@@ -28538,7 +27620,7 @@
    "quad": "dip_in"
   },
   "SMGR": {
-   "n": 29,
+   "n": 30,
    "ma5": 1650,
    "ma20": 1630,
    "rsi": 56.1,
@@ -28561,7 +27643,7 @@
    "quad": "mid"
   },
   "JGLE": {
-   "n": 29,
+   "n": 30,
    "ma5": 75,
    "ma20": 83,
    "rsi": 35.0,
@@ -28584,7 +27666,7 @@
    "quad": "mid"
   },
   "PART": {
-   "n": 29,
+   "n": 30,
    "ma5": 103,
    "ma20": 107,
    "rsi": 43.9,
@@ -28607,7 +27689,7 @@
    "quad": "mid"
   },
   "ARTO": {
-   "n": 29,
+   "n": 30,
    "ma5": 972,
    "ma20": 1008,
    "rsi": 33.9,
@@ -28630,7 +27712,7 @@
    "quad": "dip_out"
   },
   "GULA": {
-   "n": 29,
+   "n": 30,
    "ma5": 829,
    "ma20": 784,
    "rsi": 63.2,
@@ -28653,7 +27735,7 @@
    "quad": "up_in"
   },
   "CDIA": {
-   "n": 29,
+   "n": 30,
    "ma5": 669,
    "ma20": 686,
    "rsi": 38.7,
@@ -28676,7 +27758,7 @@
    "quad": "mid"
   },
   "WIFI": {
-   "n": 29,
+   "n": 30,
    "ma5": 1971,
    "ma20": 2052,
    "rsi": 33.3,
@@ -28699,7 +27781,7 @@
    "quad": "dip_out"
   },
   "MITI": {
-   "n": 29,
+   "n": 30,
    "ma5": 265,
    "ma20": 235,
    "rsi": 61.4,
@@ -28722,7 +27804,7 @@
    "quad": "mid"
   },
   "BACH": {
-   "n": 29,
+   "n": 30,
    "ma5": 430,
    "ma20": 457,
    "rsi": 13.2,
@@ -28745,7 +27827,7 @@
    "quad": "dip_out"
   },
   "BBTN": {
-   "n": 29,
+   "n": 30,
    "ma5": 1191,
    "ma20": 1218,
    "rsi": 40.4,
@@ -28768,7 +27850,7 @@
    "quad": "dip_out"
   },
   "DOOH": {
-   "n": 29,
+   "n": 30,
    "ma5": 399,
    "ma20": 346,
    "rsi": 80.6,
@@ -28791,7 +27873,7 @@
    "quad": "mid"
   },
   "HRTA": {
-   "n": 29,
+   "n": 30,
    "ma5": 2154,
    "ma20": 2254,
    "rsi": 28.8,
@@ -28814,7 +27896,7 @@
    "quad": "dip_out"
   },
   "BBHI": {
-   "n": 29,
+   "n": 30,
    "ma5": 899,
    "ma20": 900,
    "rsi": 50.0,
@@ -28837,7 +27919,7 @@
    "quad": "mid"
   },
   "AYAM": {
-   "n": 29,
+   "n": 30,
    "ma5": 491,
    "ma20": 486,
    "rsi": 73.0,
@@ -28860,7 +27942,7 @@
    "quad": "up_in"
   },
   "PIPA": {
-   "n": 29,
+   "n": 30,
    "ma5": 191,
    "ma20": 193,
    "rsi": 38.9,
@@ -28883,7 +27965,7 @@
    "quad": "dip_out"
   },
   "MMIX": {
-   "n": 29,
+   "n": 30,
    "ma5": 852,
    "ma20": 805,
    "rsi": 82.6,
@@ -28906,7 +27988,7 @@
    "quad": "up_in"
   },
   "MGNA": {
-   "n": 29,
+   "n": 30,
    "ma5": 153,
    "ma20": 111,
    "rsi": 95.6,
@@ -28929,7 +28011,7 @@
    "quad": "mid"
   },
   "JPFA": {
-   "n": 29,
+   "n": 30,
    "ma5": 2282,
    "ma20": 2264,
    "rsi": 57.9,
@@ -28952,7 +28034,7 @@
    "quad": "up_out"
   },
   "SRSN": {
-   "n": 29,
+   "n": 30,
    "ma5": 100,
    "ma20": 90,
    "rsi": 69.3,
@@ -28975,7 +28057,7 @@
    "quad": "up_out"
   },
   "BFIN": {
-   "n": 29,
+   "n": 30,
    "ma5": 994,
    "ma20": 950,
    "rsi": 68.5,
@@ -28998,7 +28080,7 @@
    "quad": "up_in"
   },
   "ACES": {
-   "n": 29,
+   "n": 30,
    "ma5": 352,
    "ma20": 356,
    "rsi": 37.5,
@@ -29021,7 +28103,7 @@
    "quad": "dip_in"
   },
   "VICI": {
-   "n": 29,
+   "n": 30,
    "ma5": 1149,
    "ma20": 904,
    "rsi": 90.7,
@@ -29044,7 +28126,7 @@
    "quad": "up_in"
   },
   "IRSX": {
-   "n": 29,
+   "n": 30,
    "ma5": 405,
    "ma20": 393,
    "rsi": 61.3,
@@ -29067,7 +28149,7 @@
    "quad": "mid"
   },
   "HATM": {
-   "n": 29,
+   "n": 30,
    "ma5": 581,
    "ma20": 592,
    "rsi": 52.9,
@@ -29090,7 +28172,7 @@
    "quad": "mid"
   },
   "WIRG": {
-   "n": 29,
+   "n": 30,
    "ma5": 79,
    "ma20": 76,
    "rsi": 51.5,
@@ -29113,7 +28195,7 @@
    "quad": "up_out"
   },
   "RATU": {
-   "n": 29,
+   "n": 30,
    "ma5": 4466,
    "ma20": 4404,
    "rsi": 51.5,
@@ -29136,7 +28218,7 @@
    "quad": "mid"
   },
   "CMRY": {
-   "n": 29,
+   "n": 30,
    "ma5": 4470,
    "ma20": 4625,
    "rsi": 42.1,
@@ -29159,7 +28241,7 @@
    "quad": "dip_out"
   },
   "MYOR": {
-   "n": 29,
+   "n": 30,
    "ma5": 1506,
    "ma20": 1568,
    "rsi": 23.8,
@@ -29182,7 +28264,7 @@
    "quad": "dip_out"
   },
   "CYBR": {
-   "n": 29,
+   "n": 30,
    "ma5": 524,
    "ma20": 534,
    "rsi": 42.1,
@@ -29205,7 +28287,7 @@
    "quad": "dip_in"
   },
   "SGER": {
-   "n": 29,
+   "n": 30,
    "ma5": 691,
    "ma20": 623,
    "rsi": 69.8,
@@ -29228,7 +28310,7 @@
    "quad": "up_out"
   },
   "TRIN": {
-   "n": 29,
+   "n": 30,
    "ma5": 402,
    "ma20": 367,
    "rsi": 57.0,
@@ -29251,7 +28333,7 @@
    "quad": "mid"
   },
   "MARK": {
-   "n": 29,
+   "n": 30,
    "ma5": 1131,
    "ma20": 1092,
    "rsi": 82.9,
@@ -29274,7 +28356,7 @@
    "quad": "mid"
   },
   "SOCI": {
-   "n": 29,
+   "n": 30,
    "ma5": 646,
    "ma20": 601,
    "rsi": 65.5,
@@ -29297,7 +28379,7 @@
    "quad": "up_in"
   },
   "GGRM": {
-   "n": 29,
+   "n": 30,
    "ma5": 18700,
    "ma20": 19758,
    "rsi": 31.0,
@@ -29320,7 +28402,7 @@
    "quad": "dip_out"
   },
   "COIN": {
-   "n": 29,
+   "n": 30,
    "ma5": 730,
    "ma20": 799,
    "rsi": 39.0,
@@ -29343,7 +28425,7 @@
    "quad": "dip_out"
   },
   "RSCH": {
-   "n": 29,
+   "n": 30,
    "ma5": 430,
    "ma20": 378,
    "rsi": 82.6,
@@ -29366,7 +28448,7 @@
    "quad": "up_in"
   },
   "EXCL": {
-   "n": 29,
+   "n": 30,
    "ma5": 2594,
    "ma20": 2718,
    "rsi": 24.4,
@@ -29389,7 +28471,7 @@
    "quad": "dip_out"
   },
   "VISI": {
-   "n": 29,
+   "n": 30,
    "ma5": 1069,
    "ma20": 990,
    "rsi": 82.9,
@@ -29412,7 +28494,7 @@
    "quad": "up_in"
   },
   "BWPT": {
-   "n": 29,
+   "n": 30,
    "ma5": 124,
    "ma20": 118,
    "rsi": 63.6,
@@ -29435,7 +28517,7 @@
    "quad": "up_out"
   },
   "JAYA": {
-   "n": 29,
+   "n": 30,
    "ma5": 160,
    "ma20": 148,
    "rsi": 65.6,
@@ -29458,7 +28540,7 @@
    "quad": "mid"
   },
   "DSFI": {
-   "n": 29,
+   "n": 30,
    "ma5": 88,
    "ma20": 87,
    "rsi": 53.8,
@@ -29481,7 +28563,7 @@
    "quad": "mid"
   },
   "TOWR": {
-   "n": 29,
+   "n": 30,
    "ma5": 448,
    "ma20": 452,
    "rsi": 35.6,
@@ -29504,7 +28586,7 @@
    "quad": "dip_out"
   },
   "MSJA": {
-   "n": 29,
+   "n": 30,
    "ma5": 833,
    "ma20": 567,
    "rsi": 82.4,
@@ -29527,7 +28609,7 @@
    "quad": "mid"
   },
   "SMMT": {
-   "n": 29,
+   "n": 30,
    "ma5": 2782,
    "ma20": 2320,
    "rsi": 85.0,
@@ -29550,7 +28632,7 @@
    "quad": "up_out"
   },
   "DSNG": {
-   "n": 29,
+   "n": 30,
    "ma5": 1627,
    "ma20": 1585,
    "rsi": 53.2,
@@ -29573,7 +28655,7 @@
    "quad": "up_in"
   },
   "LAPD": {
-   "n": 29,
+   "n": 30,
    "ma5": 79,
    "ma20": 72,
    "rsi": 58.9,
@@ -29596,7 +28678,7 @@
    "quad": "mid"
   },
   "EMTK": {
-   "n": 29,
+   "n": 30,
    "ma5": 494,
    "ma20": 515,
    "rsi": 39.7,
@@ -29619,7 +28701,7 @@
    "quad": "dip_out"
   },
   "FUTR": {
-   "n": 29,
+   "n": 30,
    "ma5": 296,
    "ma20": 323,
    "rsi": 36.1,
@@ -29642,7 +28724,7 @@
    "quad": "mid"
   },
   "GPRA": {
-   "n": 29,
+   "n": 30,
    "ma5": 104,
    "ma20": 108,
    "rsi": 38.5,
@@ -29665,7 +28747,7 @@
    "quad": "dip_in"
   },
   "SMDR": {
-   "n": 29,
+   "n": 30,
    "ma5": 390,
    "ma20": 345,
    "rsi": 86.8,
@@ -29688,7 +28770,7 @@
    "quad": "up_in"
   },
   "RANS": {
-   "n": 29,
+   "n": 30,
    "ma5": 200,
    "ma20": 206,
    "rsi": 29.4,
@@ -29711,7 +28793,7 @@
    "quad": "dip_out"
   },
   "ELSA": {
-   "n": 29,
+   "n": 30,
    "ma5": 722,
    "ma20": 720,
    "rsi": 54.3,
@@ -29734,7 +28816,7 @@
    "quad": "mid"
   },
   "PGEO": {
-   "n": 29,
+   "n": 30,
    "ma5": 1033,
    "ma20": 1038,
    "rsi": 54.2,
@@ -29757,7 +28839,7 @@
    "quad": "mid"
   },
   "MPIX": {
-   "n": 29,
+   "n": 30,
    "ma5": 155,
    "ma20": 120,
    "rsi": 83.2,
@@ -29780,7 +28862,7 @@
    "quad": "mid"
   },
   "KOPI": {
-   "n": 29,
+   "n": 30,
    "ma5": 202,
    "ma20": 205,
    "rsi": 50.0,
@@ -29803,7 +28885,7 @@
    "quad": "mid"
   },
   "UANG": {
-   "n": 29,
+   "n": 30,
    "ma5": 3802,
    "ma20": 3178,
    "rsi": 72.8,
@@ -29826,7 +28908,7 @@
    "quad": "up_out"
   },
   "JSMR": {
-   "n": 29,
+   "n": 30,
    "ma5": 2914,
    "ma20": 2898,
    "rsi": 52.8,
@@ -29849,7 +28931,7 @@
    "quad": "mid"
   },
   "HRUM": {
-   "n": 29,
+   "n": 30,
    "ma5": 910,
    "ma20": 924,
    "rsi": 42.1,
@@ -29872,7 +28954,7 @@
    "quad": "dip_out"
   },
   "SSMS": {
-   "n": 29,
+   "n": 30,
    "ma5": 1127,
    "ma20": 1052,
    "rsi": 60.5,
@@ -29895,7 +28977,7 @@
    "quad": "up_out"
   },
   "BUKA": {
-   "n": 29,
+   "n": 30,
    "ma5": 106,
    "ma20": 110,
    "rsi": 41.4,
@@ -29918,7 +29000,7 @@
    "quad": "dip_out"
   },
   "AUTO": {
-   "n": 29,
+   "n": 30,
    "ma5": 3326,
    "ma20": 3272,
    "rsi": 50.0,
@@ -29941,7 +29023,7 @@
    "quad": "up_in"
   },
   "LABA": {
-   "n": 29,
+   "n": 30,
    "ma5": 127,
    "ma20": 119,
    "rsi": 65.0,
@@ -29964,7 +29046,7 @@
    "quad": "mid"
   },
   "CMNT": {
-   "n": 29,
+   "n": 30,
    "ma5": 760,
    "ma20": 755,
    "rsi": 60.0,
@@ -29987,7 +29069,7 @@
    "quad": "up_out"
   },
   "AKRA": {
-   "n": 29,
+   "n": 30,
    "ma5": 1503,
    "ma20": 1437,
    "rsi": 60.5,
@@ -30010,7 +29092,7 @@
    "quad": "up_out"
   },
   "CINT": {
-   "n": 29,
+   "n": 30,
    "ma5": 186,
    "ma20": 184,
    "rsi": 78.6,
@@ -30033,7 +29115,7 @@
    "quad": "mid"
   },
   "TCPI": {
-   "n": 29,
+   "n": 30,
    "ma5": 1851,
    "ma20": 2233,
    "rsi": 25.3,
@@ -30056,7 +29138,7 @@
    "quad": "dip_out"
   },
   "FOLK": {
-   "n": 29,
+   "n": 30,
    "ma5": 264,
    "ma20": 205,
    "rsi": 65.0,
@@ -30079,7 +29161,7 @@
    "quad": "mid"
   },
   "MGLV": {
-   "n": 29,
+   "n": 30,
    "ma5": 14765,
    "ma20": 12776,
    "rsi": 65.7,
@@ -30102,7 +29184,7 @@
    "quad": "up_in"
   },
   "KRYA": {
-   "n": 29,
+   "n": 30,
    "ma5": 68,
    "ma20": 67,
    "rsi": 72.2,
@@ -30125,7 +29207,7 @@
    "quad": "mid"
   },
   "MNCN": {
-   "n": 29,
+   "n": 30,
    "ma5": 202,
    "ma20": 202,
    "rsi": 47.4,
@@ -30148,7 +29230,7 @@
    "quad": "dip_out"
   },
   "PWON": {
-   "n": 29,
+   "n": 30,
    "ma5": 270,
    "ma20": 272,
    "rsi": 50.0,
@@ -30171,7 +29253,7 @@
    "quad": "mid"
   },
   "TEBE": {
-   "n": 29,
+   "n": 30,
    "ma5": 1702,
    "ma20": 1716,
    "rsi": 41.8,
@@ -30194,7 +29276,7 @@
    "quad": "dip_out"
   },
   "TOTL": {
-   "n": 29,
+   "n": 30,
    "ma5": 1523,
    "ma20": 1490,
    "rsi": 47.7,
@@ -30217,7 +29299,7 @@
    "quad": "up_in"
   },
   "MAPI": {
-   "n": 29,
+   "n": 30,
    "ma5": 1360,
    "ma20": 1428,
    "rsi": 35.4,
@@ -30240,7 +29322,7 @@
    "quad": "dip_out"
   },
   "HOPE": {
-   "n": 29,
+   "n": 30,
    "ma5": 208,
    "ma20": 241,
    "rsi": 36.6,
@@ -30263,7 +29345,7 @@
    "quad": "dip_in"
   },
   "KAQI": {
-   "n": 29,
+   "n": 30,
    "ma5": 95,
    "ma20": 97,
    "rsi": 51.9,
@@ -30286,7 +29368,7 @@
    "quad": "dip_out"
   },
   "WBSA": {
-   "n": 29,
+   "n": 30,
    "ma5": 668,
    "ma20": 687,
    "rsi": 44.2,
@@ -30309,7 +29391,7 @@
    "quad": "dip_out"
   },
   "WIIM": {
-   "n": 29,
+   "n": 30,
    "ma5": 1553,
    "ma20": 1642,
    "rsi": 22.2,
@@ -30332,7 +29414,7 @@
    "quad": "dip_out"
   },
   "HEXA": {
-   "n": 29,
+   "n": 30,
    "ma5": 4454,
    "ma20": 4434,
    "rsi": 58.8,
@@ -30355,7 +29437,7 @@
    "quad": "mid"
   },
   "CLEO": {
-   "n": 29,
+   "n": 30,
    "ma5": 424,
    "ma20": 412,
    "rsi": 61.5,
@@ -30378,7 +29460,7 @@
    "quad": "up_out"
   },
   "JAWA": {
-   "n": 29,
+   "n": 30,
    "ma5": 153,
    "ma20": 141,
    "rsi": 61.4,
@@ -30401,7 +29483,7 @@
    "quad": "mid"
   },
   "MTEL": {
-   "n": 29,
+   "n": 30,
    "ma5": 486,
    "ma20": 474,
    "rsi": 60.0,
@@ -30424,7 +29506,7 @@
    "quad": "up_out"
   },
   "INTD": {
-   "n": 29,
+   "n": 30,
    "ma5": 282,
    "ma20": 281,
    "rsi": 47.2,
@@ -30447,7 +29529,7 @@
    "quad": "mid"
   },
   "PTSN": {
-   "n": 29,
+   "n": 30,
    "ma5": 408,
    "ma20": 325,
    "rsi": 78.5,
@@ -30470,7 +29552,7 @@
    "quad": "mid"
   },
   "RGAS": {
-   "n": 29,
+   "n": 30,
    "ma5": 110,
    "ma20": 154,
    "rsi": 5.3,
@@ -30493,7 +29575,7 @@
    "quad": "mid"
   },
   "WINS": {
-   "n": 29,
+   "n": 30,
    "ma5": 585,
    "ma20": 553,
    "rsi": 68.4,
@@ -30516,7 +29598,7 @@
    "quad": "up_out"
   },
   "LPKR": {
-   "n": 29,
+   "n": 30,
    "ma5": 60,
    "ma20": 62,
    "rsi": 25.0,
@@ -30539,7 +29621,7 @@
    "quad": "dip_out"
   },
   "SMLE": {
-   "n": 29,
+   "n": 30,
    "ma5": 203,
    "ma20": 182,
    "rsi": 76.3,
@@ -30562,7 +29644,7 @@
    "quad": "up_in"
   },
   "PADI": {
-   "n": 29,
+   "n": 30,
    "ma5": 71,
    "ma20": 72,
    "rsi": 33.3,
@@ -30585,7 +29667,7 @@
    "quad": "mid"
   },
   "INDO": {
-   "n": 29,
+   "n": 30,
    "ma5": 185,
    "ma20": 184,
    "rsi": 56.7,
@@ -30608,7 +29690,7 @@
    "quad": "up_in"
   },
   "BBSS": {
-   "n": 29,
+   "n": 30,
    "ma5": 90,
    "ma20": 98,
    "rsi": 31.2,
@@ -30631,7 +29713,7 @@
    "quad": "mid"
   },
   "SIDO": {
-   "n": 29,
+   "n": 30,
    "ma5": 349,
    "ma20": 352,
    "rsi": 44.4,
@@ -30654,7 +29736,7 @@
    "quad": "dip_out"
   },
   "POWR": {
-   "n": 29,
+   "n": 30,
    "ma5": 991,
    "ma20": 926,
    "rsi": 58.6,
@@ -30677,7 +29759,7 @@
    "quad": "mid"
   },
   "MLPT": {
-   "n": 29,
+   "n": 30,
    "ma5": 1167,
    "ma20": 1259,
    "rsi": 25.4,
@@ -30700,7 +29782,7 @@
    "quad": "dip_in"
   },
   "HEAL": {
-   "n": 29,
+   "n": 30,
    "ma5": 677,
    "ma20": 674,
    "rsi": 57.6,
@@ -30723,7 +29805,7 @@
    "quad": "up_out"
   },
   "NSSS": {
-   "n": 29,
+   "n": 30,
    "ma5": 796,
    "ma20": 850,
    "rsi": 36.7,
@@ -30746,7 +29828,7 @@
    "quad": "dip_in"
   },
   "DEWI": {
-   "n": 29,
+   "n": 30,
    "ma5": 166,
    "ma20": 156,
    "rsi": 80.6,
@@ -30769,7 +29851,7 @@
    "quad": "up_in"
   },
   "IDEA": {
-   "n": 29,
+   "n": 30,
    "ma5": 86,
    "ma20": 68,
    "rsi": 88.5,
@@ -30792,7 +29874,7 @@
    "quad": "mid"
   },
   "SRTG": {
-   "n": 29,
+   "n": 30,
    "ma5": 1796,
    "ma20": 1850,
    "rsi": 17.5,
@@ -30815,7 +29897,7 @@
    "quad": "dip_out"
   },
   "VOKS": {
-   "n": 29,
+   "n": 30,
    "ma5": 276,
    "ma20": 242,
    "rsi": 81.1,
@@ -30838,7 +29920,7 @@
    "quad": "mid"
   },
   "DATA": {
-   "n": 29,
+   "n": 30,
    "ma5": 1714,
    "ma20": 1826,
    "rsi": 31.2,
@@ -30861,7 +29943,7 @@
    "quad": "mid"
   },
   "ASSA": {
-   "n": 29,
+   "n": 30,
    "ma5": 605,
    "ma20": 629,
    "rsi": 39.1,
@@ -30884,7 +29966,7 @@
    "quad": "dip_out"
   },
   "AGAR": {
-   "n": 29,
+   "n": 30,
    "ma5": 2275,
    "ma20": 1848,
    "rsi": 67.1,
@@ -30907,7 +29989,7 @@
    "quad": "mid"
   },
   "CTRA": {
-   "n": 29,
+   "n": 30,
    "ma5": 611,
    "ma20": 624,
    "rsi": 40.0,
@@ -30930,7 +30012,7 @@
    "quad": "dip_in"
   },
   "TRON": {
-   "n": 29,
+   "n": 30,
    "ma5": 101,
    "ma20": 101,
    "rsi": 63.2,
@@ -30953,7 +30035,7 @@
    "quad": "mid"
   },
   "KJEN": {
-   "n": 29,
+   "n": 30,
    "ma5": 162,
    "ma20": 163,
    "rsi": 54.5,
@@ -30976,7 +30058,7 @@
    "quad": "mid"
   },
   "BMTR": {
-   "n": 29,
+   "n": 30,
    "ma5": 116,
    "ma20": 116,
    "rsi": 48.4,
@@ -30999,7 +30081,7 @@
    "quad": "mid"
   },
   "GMFI": {
-   "n": 29,
+   "n": 30,
    "ma5": 58,
    "ma20": 59,
    "rsi": 50.0,
@@ -31022,7 +30104,7 @@
    "quad": "dip_out"
   },
   "SNLK": {
-   "n": 29,
+   "n": 30,
    "ma5": 244,
    "ma20": 233,
    "rsi": 68.6,
@@ -31045,7 +30127,7 @@
    "quad": "up_out"
   },
   "BBKP": {
-   "n": 29,
+   "n": 30,
    "ma5": 52,
    "ma20": 54,
    "rsi": 16.7,
@@ -31068,7 +30150,7 @@
    "quad": "dip_out"
   },
   "BKSL": {
-   "n": 29,
+   "n": 30,
    "ma5": 70,
    "ma20": 74,
    "rsi": 23.1,
@@ -31091,7 +30173,7 @@
    "quad": "dip_out"
   },
   "MAPA": {
-   "n": 29,
+   "n": 30,
    "ma5": 659,
    "ma20": 683,
    "rsi": 26.9,
@@ -31114,7 +30196,7 @@
    "quad": "dip_out"
   },
   "TOBA": {
-   "n": 29,
+   "n": 30,
    "ma5": 541,
    "ma20": 569,
    "rsi": 20.7,
@@ -31137,7 +30219,7 @@
    "quad": "mid"
   },
   "MINA": {
-   "n": 29,
+   "n": 30,
    "ma5": 268,
    "ma20": 274,
    "rsi": 32.0,
@@ -31160,7 +30242,7 @@
    "quad": "dip_out"
   },
   "INTP": {
-   "n": 29,
+   "n": 30,
    "ma5": 5195,
    "ma20": 5432,
    "rsi": 33.3,
@@ -31183,7 +30265,7 @@
    "quad": "dip_out"
   },
   "MOLI": {
-   "n": 29,
+   "n": 30,
    "ma5": 318,
    "ma20": 304,
    "rsi": 66.7,
@@ -31206,7 +30288,7 @@
    "quad": "up_in"
   },
   "SCMA": {
-   "n": 29,
+   "n": 30,
    "ma5": 198,
    "ma20": 204,
    "rsi": 36.4,
@@ -31229,7 +30311,7 @@
    "quad": "dip_out"
   },
   "AVIA": {
-   "n": 29,
+   "n": 30,
    "ma5": 349,
    "ma20": 358,
    "rsi": 40.0,
@@ -31252,7 +30334,7 @@
    "quad": "dip_out"
   },
   "PADA": {
-   "n": 29,
+   "n": 30,
    "ma5": 198,
    "ma20": 217,
    "rsi": 16.1,
@@ -31275,7 +30357,7 @@
    "quad": "mid"
   },
   "SIMP": {
-   "n": 29,
+   "n": 30,
    "ma5": 615,
    "ma20": 621,
    "rsi": 50.0,
@@ -31298,7 +30380,7 @@
    "quad": "dip_in"
   },
   "BSDE": {
-   "n": 29,
+   "n": 30,
    "ma5": 641,
    "ma20": 646,
    "rsi": 45.5,
@@ -31321,7 +30403,7 @@
    "quad": "dip_out"
   },
   "ENZO": {
-   "n": 29,
+   "n": 30,
    "ma5": 77,
    "ma20": 75,
    "rsi": 59.4,
@@ -31344,7 +30426,7 @@
    "quad": "mid"
   },
   "BSML": {
-   "n": 29,
+   "n": 30,
    "ma5": 542,
    "ma20": 524,
    "rsi": 66.7,
@@ -31367,7 +30449,7 @@
    "quad": "up_out"
   },
   "NISP": {
-   "n": 29,
+   "n": 30,
    "ma5": 1275,
    "ma20": 1256,
    "rsi": 59.1,
@@ -31390,7 +30472,7 @@
    "quad": "up_out"
   },
   "KEEN": {
-   "n": 29,
+   "n": 30,
    "ma5": 918,
    "ma20": 910,
    "rsi": 61.9,
@@ -31413,7 +30495,7 @@
    "quad": "up_in"
   },
   "SMSM": {
-   "n": 29,
+   "n": 30,
    "ma5": 1734,
    "ma20": 1732,
    "rsi": 51.7,
@@ -31436,7 +30518,7 @@
    "quad": "mid"
   },
   "EURO": {
-   "n": 29,
+   "n": 30,
    "ma5": 1405,
    "ma20": 1452,
    "rsi": 54.8,
@@ -31459,7 +30541,7 @@
    "quad": "mid"
   },
   "ASPR": {
-   "n": 29,
+   "n": 30,
    "ma5": 145,
    "ma20": 150,
    "rsi": 38.1,
@@ -31482,7 +30564,7 @@
    "quad": "dip_out"
   },
   "GRIA": {
-   "n": 29,
+   "n": 30,
    "ma5": 166,
    "ma20": 174,
    "rsi": 22.7,
@@ -31505,7 +30587,7 @@
    "quad": "dip_in"
   },
   "OLIV": {
-   "n": 29,
+   "n": 30,
    "ma5": 62,
    "ma20": 53,
    "rsi": 60.8,
@@ -31528,7 +30610,7 @@
    "quad": "up_out"
   },
   "FAST": {
-   "n": 29,
+   "n": 30,
    "ma5": 436,
    "ma20": 459,
    "rsi": 21.7,
@@ -31551,7 +30633,7 @@
    "quad": "dip_out"
   },
   "EPAC": {
-   "n": 29,
+   "n": 30,
    "ma5": 53,
    "ma20": 56,
    "rsi": 38.9,
@@ -31574,7 +30656,7 @@
    "quad": "dip_in"
   },
   "SUPA": {
-   "n": 29,
+   "n": 30,
    "ma5": 503,
    "ma20": 521,
    "rsi": 38.0,
@@ -31597,7 +30679,7 @@
    "quad": "dip_in"
   },
   "CBRE": {
-   "n": 29,
+   "n": 30,
    "ma5": 724,
    "ma20": 716,
    "rsi": 55.0,
@@ -31620,7 +30702,7 @@
    "quad": "mid"
   },
   "WEHA": {
-   "n": 29,
+   "n": 30,
    "ma5": 112,
    "ma20": 110,
    "rsi": 80.0,
@@ -31643,7 +30725,7 @@
    "quad": "mid"
   },
   "STAA": {
-   "n": 29,
+   "n": 30,
    "ma5": 1204,
    "ma20": 1210,
    "rsi": 47.7,
@@ -31666,7 +30748,7 @@
    "quad": "dip_in"
   },
   "POLA": {
-   "n": 29,
+   "n": 30,
    "ma5": 74,
    "ma20": 61,
    "rsi": 67.3,
@@ -31689,7 +30771,7 @@
    "quad": "mid"
   },
   "RODA": {
-   "n": 29,
+   "n": 30,
    "ma5": 65,
    "ma20": 65,
    "rsi": 52.6,
@@ -31712,7 +30794,7 @@
    "quad": "up_out"
   },
   "KKES": {
-   "n": 29,
+   "n": 30,
    "ma5": 89,
    "ma20": 82,
    "rsi": 61.8,
@@ -31735,7 +30817,7 @@
    "quad": "mid"
   },
   "OBMD": {
-   "n": 29,
+   "n": 30,
    "ma5": 199,
    "ma20": 194,
    "rsi": 62.3,
@@ -31758,7 +30840,7 @@
    "quad": "mid"
   },
   "OASA": {
-   "n": 29,
+   "n": 30,
    "ma5": 294,
    "ma20": 316,
    "rsi": 22.2,
@@ -31781,7 +30863,7 @@
    "quad": "mid"
   },
   "CSMI": {
-   "n": 29,
+   "n": 30,
    "ma5": 195,
    "ma20": 177,
    "rsi": 45.7,
@@ -31804,7 +30886,7 @@
    "quad": "mid"
   },
   "DOSS": {
-   "n": 29,
+   "n": 30,
    "ma5": 169,
    "ma20": 169,
    "rsi": 56.0,
@@ -31827,7 +30909,7 @@
    "quad": "up_out"
   },
   "DKFT": {
-   "n": 29,
+   "n": 30,
    "ma5": 674,
    "ma20": 680,
    "rsi": 41.4,
@@ -31850,7 +30932,7 @@
    "quad": "dip_out"
   },
   "DIVA": {
-   "n": 29,
+   "n": 30,
    "ma5": 136,
    "ma20": 137,
    "rsi": 42.1,
@@ -31873,7 +30955,7 @@
    "quad": "dip_in"
   },
   "BBYB": {
-   "n": 29,
+   "n": 30,
    "ma5": 250,
    "ma20": 257,
    "rsi": 46.2,
@@ -31896,7 +30978,7 @@
    "quad": "mid"
   },
   "MCAS": {
-   "n": 29,
+   "n": 30,
    "ma5": 270,
    "ma20": 284,
    "rsi": 36.4,
@@ -31919,7 +31001,7 @@
    "quad": "dip_in"
   },
   "APEX": {
-   "n": 29,
+   "n": 30,
    "ma5": 200,
    "ma20": 197,
    "rsi": 55.6,
@@ -31942,7 +31024,7 @@
    "quad": "mid"
   },
   "DGWG": {
-   "n": 29,
+   "n": 30,
    "ma5": 330,
    "ma20": 340,
    "rsi": 29.0,
@@ -31965,7 +31047,7 @@
    "quad": "mid"
   },
   "BJTM": {
-   "n": 29,
+   "n": 30,
    "ma5": 522,
    "ma20": 524,
    "rsi": 50.0,
@@ -31988,7 +31070,7 @@
    "quad": "dip_out"
   },
   "KOCI": {
-   "n": 29,
+   "n": 30,
    "ma5": 127,
    "ma20": 113,
    "rsi": 67.3,
@@ -32011,7 +31093,7 @@
    "quad": "mid"
   },
   "CBDK": {
-   "n": 29,
+   "n": 30,
    "ma5": 3774,
    "ma20": 3878,
    "rsi": 43.7,
@@ -32034,7 +31116,7 @@
    "quad": "dip_in"
   },
   "JATI": {
-   "n": 29,
+   "n": 30,
    "ma5": 116,
    "ma20": 109,
    "rsi": 63.6,
@@ -32057,7 +31139,7 @@
    "quad": "mid"
   },
   "BNGA": {
-   "n": 29,
+   "n": 30,
    "ma5": 1739,
    "ma20": 1706,
    "rsi": 67.7,
@@ -32080,7 +31162,7 @@
    "quad": "up_in"
   },
   "NEST": {
-   "n": 29,
+   "n": 30,
    "ma5": 731,
    "ma20": 719,
    "rsi": 60.0,
@@ -32103,7 +31185,7 @@
    "quad": "mid"
   },
   "IKAN": {
-   "n": 29,
+   "n": 30,
    "ma5": 89,
    "ma20": 90,
    "rsi": 40.9,
@@ -32126,7 +31208,7 @@
    "quad": "mid"
   },
   "YELO": {
-   "n": 29,
+   "n": 30,
    "ma5": 95,
    "ma20": 96,
    "rsi": 55.3,
@@ -32149,7 +31231,7 @@
    "quad": "dip_in"
   },
   "PYFA": {
-   "n": 29,
+   "n": 30,
    "ma5": 252,
    "ma20": 251,
    "rsi": 57.7,
@@ -32172,7 +31254,7 @@
    "quad": "mid"
   },
   "BSSR": {
-   "n": 29,
+   "n": 30,
    "ma5": 4914,
    "ma20": 4734,
    "rsi": 72.2,
@@ -32195,7 +31277,7 @@
    "quad": "up_in"
   },
   "TOOL": {
-   "n": 29,
+   "n": 30,
    "ma5": 71,
    "ma20": 69,
    "rsi": 58.6,
@@ -32218,7 +31300,7 @@
    "quad": "mid"
   },
   "OILS": {
-   "n": 29,
+   "n": 30,
    "ma5": 314,
    "ma20": 269,
    "rsi": 85.1,
@@ -32241,7 +31323,7 @@
    "quad": "mid"
   },
   "BKDP": {
-   "n": 29,
+   "n": 30,
    "ma5": 182,
    "ma20": 169,
    "rsi": 52.4,
@@ -32264,7 +31346,7 @@
    "quad": "mid"
   },
   "BLES": {
-   "n": 29,
+   "n": 30,
    "ma5": 207,
    "ma20": 204,
    "rsi": 41.3,
@@ -32287,7 +31369,7 @@
    "quad": "mid"
   },
   "KKGI": {
-   "n": 29,
+   "n": 30,
    "ma5": 306,
    "ma20": 295,
    "rsi": 69.4,
@@ -32310,7 +31392,7 @@
    "quad": "up_in"
   },
   "GJTL": {
-   "n": 29,
+   "n": 30,
    "ma5": 1345,
    "ma20": 1376,
    "rsi": 26.5,
@@ -32333,7 +31415,7 @@
    "quad": "dip_out"
   },
   "BTEK": {
-   "n": 29,
+   "n": 30,
    "ma5": 12,
    "ma20": 11,
    "rsi": 50.0,
@@ -32356,7 +31438,7 @@
    "quad": "mid"
   },
   "ASHA": {
-   "n": 29,
+   "n": 30,
    "ma5": 57,
    "ma20": 58,
    "rsi": 41.7,
@@ -32379,7 +31461,7 @@
    "quad": "dip_out"
   },
   "PGLI": {
-   "n": 29,
+   "n": 30,
    "ma5": 208,
    "ma20": 210,
    "rsi": 57.1,
@@ -32402,7 +31484,7 @@
    "quad": "mid"
   },
   "BDKR": {
-   "n": 29,
+   "n": 30,
    "ma5": 158,
    "ma20": 158,
    "rsi": 55.6,
@@ -32425,7 +31507,7 @@
    "quad": "up_in"
   },
   "PEGE": {
-   "n": 29,
+   "n": 30,
    "ma5": 130,
    "ma20": 123,
    "rsi": 69.4,
@@ -32448,7 +31530,7 @@
    "quad": "up_in"
   },
   "UNTD": {
-   "n": 29,
+   "n": 30,
    "ma5": 81,
    "ma20": 82,
    "rsi": 41.7,
@@ -32471,7 +31553,7 @@
    "quad": "dip_out"
   },
   "MEDS": {
-   "n": 29,
+   "n": 30,
    "ma5": 84,
    "ma20": 79,
    "rsi": 58.1,
@@ -32494,7 +31576,7 @@
    "quad": "mid"
   },
   "KBLI": {
-   "n": 29,
+   "n": 30,
    "ma5": 359,
    "ma20": 337,
    "rsi": 74.5,
@@ -32517,7 +31599,7 @@
    "quad": "mid"
   },
   "AGII": {
-   "n": 29,
+   "n": 30,
    "ma5": 3168,
    "ma20": 2987,
    "rsi": 76.2,
@@ -32540,7 +31622,7 @@
    "quad": "up_out"
   },
   "ERAL": {
-   "n": 29,
+   "n": 30,
    "ma5": 322,
    "ma20": 314,
    "rsi": 59.5,
@@ -32563,7 +31645,7 @@
    "quad": "up_in"
   },
   "WGSH": {
-   "n": 29,
+   "n": 30,
    "ma5": 135,
    "ma20": 156,
    "rsi": 34.8,
@@ -32586,7 +31668,7 @@
    "quad": "mid"
   },
   "PNLF": {
-   "n": 29,
+   "n": 30,
    "ma5": 222,
    "ma20": 228,
    "rsi": 40.0,
@@ -32609,7 +31691,7 @@
    "quad": "dip_out"
   },
   "MGRO": {
-   "n": 29,
+   "n": 30,
    "ma5": 683,
    "ma20": 682,
    "rsi": 50.0,
@@ -32632,7 +31714,7 @@
    "quad": "mid"
   },
   "SOFA": {
-   "n": 29,
+   "n": 30,
    "ma5": 354,
    "ma20": 344,
    "rsi": 50.0,
@@ -32655,7 +31737,7 @@
    "quad": "up_in"
   },
   "SCCO": {
-   "n": 29,
+   "n": 30,
    "ma5": 2732,
    "ma20": 2494,
    "rsi": 78.1,
@@ -32678,7 +31760,7 @@
    "quad": "mid"
   },
   "MKAP": {
-   "n": 29,
+   "n": 30,
    "ma5": 1127,
    "ma20": 1132,
    "rsi": 58.3,
@@ -32701,7 +31783,7 @@
    "quad": "mid"
   },
   "BDMN": {
-   "n": 29,
+   "n": 30,
    "ma5": 4442,
    "ma20": 4372,
    "rsi": 57.7,
@@ -32724,7 +31806,7 @@
    "quad": "mid"
   },
   "MBSS": {
-   "n": 29,
+   "n": 30,
    "ma5": 2886,
    "ma20": 2851,
    "rsi": 62.5,
@@ -32747,7 +31829,7 @@
    "quad": "up_in"
   },
   "PBSA": {
-   "n": 29,
+   "n": 30,
    "ma5": 751,
    "ma20": 806,
    "rsi": 19.2,
@@ -32770,7 +31852,7 @@
    "quad": "dip_out"
   },
   "APIC": {
-   "n": 29,
+   "n": 30,
    "ma5": 441,
    "ma20": 498,
    "rsi": 22.6,
@@ -32793,7 +31875,7 @@
    "quad": "dip_out"
   },
   "MEJA": {
-   "n": 29,
+   "n": 30,
    "ma5": 115,
    "ma20": 117,
    "rsi": 47.5,
@@ -32816,7 +31898,7 @@
    "quad": "mid"
   },
   "PPRI": {
-   "n": 29,
+   "n": 30,
    "ma5": 176,
    "ma20": 158,
    "rsi": 62.4,
@@ -32839,7 +31921,7 @@
    "quad": "up_in"
   },
   "GIAA": {
-   "n": 29,
+   "n": 30,
    "ma5": 64,
    "ma20": 67,
    "rsi": 38.9,
@@ -32862,7 +31944,7 @@
    "quad": "dip_in"
   },
   "BEEF": {
-   "n": 29,
+   "n": 30,
    "ma5": 438,
    "ma20": 453,
    "rsi": 28.3,
@@ -32885,7 +31967,7 @@
    "quad": "mid"
   },
   "CNMA": {
-   "n": 29,
+   "n": 30,
    "ma5": 92,
    "ma20": 92,
    "rsi": 40.0,
@@ -32908,7 +31990,7 @@
    "quad": "dip_out"
   },
   "GRPM": {
-   "n": 29,
+   "n": 30,
    "ma5": 170,
    "ma20": 176,
    "rsi": 46.0,
@@ -32931,7 +32013,7 @@
    "quad": "dip_in"
   },
   "HUMI": {
-   "n": 29,
+   "n": 30,
    "ma5": 134,
    "ma20": 142,
    "rsi": 39.1,
@@ -32954,7 +32036,7 @@
    "quad": "mid"
   },
   "PNBN": {
-   "n": 29,
+   "n": 30,
    "ma5": 902,
    "ma20": 903,
    "rsi": 47.1,
@@ -32977,7 +32059,7 @@
    "quad": "dip_in"
   },
   "GZCO": {
-   "n": 29,
+   "n": 30,
    "ma5": 189,
    "ma20": 189,
    "rsi": 55.6,
@@ -33000,7 +32082,7 @@
    "quad": "mid"
   },
   "CENT": {
-   "n": 29,
+   "n": 30,
    "ma5": 107,
    "ma20": 103,
    "rsi": 45.9,
@@ -33023,7 +32105,7 @@
    "quad": "mid"
   },
   "SDMU": {
-   "n": 29,
+   "n": 30,
    "ma5": 91,
    "ma20": 90,
    "rsi": 44.4,
@@ -33046,7 +32128,7 @@
    "quad": "mid"
   },
   "ASGR": {
-   "n": 29,
+   "n": 30,
    "ma5": 2112,
    "ma20": 2069,
    "rsi": 50.0,
@@ -33069,7 +32151,7 @@
    "quad": "up_in"
   },
   "KIOS": {
-   "n": 29,
+   "n": 30,
    "ma5": 100,
    "ma20": 100,
    "rsi": 50.0,
@@ -33092,7 +32174,7 @@
    "quad": "mid"
   },
   "TIFA": {
-   "n": 29,
+   "n": 30,
    "ma5": 316,
    "ma20": 330,
    "rsi": 31.7,
@@ -33115,7 +32197,7 @@
    "quad": "dip_in"
   },
   "NAYZ": {
-   "n": 29,
+   "n": 30,
    "ma5": 74,
    "ma20": 73,
    "rsi": 56.5,
@@ -33138,7 +32220,7 @@
    "quad": "up_out"
   },
   "BOAT": {
-   "n": 29,
+   "n": 30,
    "ma5": 137,
    "ma20": 141,
    "rsi": 37.5,
@@ -33161,7 +32243,7 @@
    "quad": "mid"
   },
   "RMKO": {
-   "n": 29,
+   "n": 30,
    "ma5": 340,
    "ma20": 317,
    "rsi": 67.2,
@@ -33184,7 +32266,7 @@
    "quad": "mid"
   },
   "DGIK": {
-   "n": 29,
+   "n": 30,
    "ma5": 137,
    "ma20": 138,
    "rsi": 52.8,
@@ -33207,7 +32289,7 @@
    "quad": "mid"
   },
   "KBLM": {
-   "n": 29,
+   "n": 30,
    "ma5": 367,
    "ma20": 329,
    "rsi": 88.0,
@@ -33230,7 +32312,7 @@
    "quad": "mid"
   },
   "TRJA": {
-   "n": 29,
+   "n": 30,
    "ma5": 132,
    "ma20": 128,
    "rsi": 58.5,
@@ -33253,7 +32335,7 @@
    "quad": "mid"
   },
   "PKPK": {
-   "n": 29,
+   "n": 30,
    "ma5": 4304,
    "ma20": 4000,
    "rsi": 67.1,
@@ -33276,7 +32358,7 @@
    "quad": "up_in"
   },
   "ZATA": {
-   "n": 29,
+   "n": 30,
    "ma5": 67,
    "ma20": 68,
    "rsi": 42.9,
@@ -33299,7 +32381,7 @@
    "quad": "mid"
   },
   "LPPF": {
-   "n": 29,
+   "n": 30,
    "ma5": 1627,
    "ma20": 1621,
    "rsi": 52.0,
@@ -33322,7 +32404,7 @@
    "quad": "mid"
   },
   "TMPO": {
-   "n": 29,
+   "n": 30,
    "ma5": 154,
    "ma20": 178,
    "rsi": 11.7,
@@ -33345,7 +32427,7 @@
    "quad": "mid"
   },
   "APLN": {
-   "n": 29,
+   "n": 30,
    "ma5": 128,
    "ma20": 135,
    "rsi": 30.4,
@@ -33368,7 +32450,7 @@
    "quad": "dip_out"
   },
   "ECII": {
-   "n": 29,
+   "n": 30,
    "ma5": 167,
    "ma20": 164,
    "rsi": 62.3,
@@ -33391,7 +32473,7 @@
    "quad": "mid"
   },
   "APII": {
-   "n": 29,
+   "n": 30,
    "ma5": 192,
    "ma20": 191,
    "rsi": 62.5,
@@ -33414,7 +32496,7 @@
    "quad": "mid"
   },
   "LEAD": {
-   "n": 29,
+   "n": 30,
    "ma5": 109,
    "ma20": 109,
    "rsi": 50.8,
@@ -33437,7 +32519,7 @@
    "quad": "dip_out"
   },
   "FUJI": {
-   "n": 29,
+   "n": 30,
    "ma5": 249,
    "ma20": 279,
    "rsi": 16.4,
@@ -33460,7 +32542,7 @@
    "quad": "dip_out"
   },
   "ISSP": {
-   "n": 29,
+   "n": 30,
    "ma5": 444,
    "ma20": 437,
    "rsi": 52.3,
@@ -33483,7 +32565,7 @@
    "quad": "mid"
   },
   "ELTY": {
-   "n": 29,
+   "n": 30,
    "ma5": 35,
    "ma20": 37,
    "rsi": 40.0,
@@ -33506,7 +32588,7 @@
    "quad": "dip_out"
   },
   "BEST": {
-   "n": 29,
+   "n": 30,
    "ma5": 125,
    "ma20": 129,
    "rsi": 47.9,
@@ -33529,7 +32611,7 @@
    "quad": "dip_in"
   },
   "STRK": {
-   "n": 29,
+   "n": 30,
    "ma5": 65,
    "ma20": 66,
    "rsi": 44.4,
@@ -33552,7 +32634,7 @@
    "quad": "mid"
   },
   "MSIE": {
-   "n": 29,
+   "n": 30,
    "ma5": 165,
    "ma20": 125,
    "rsi": 83.9,
@@ -33575,7 +32657,7 @@
    "quad": "up_in"
   },
   "YOII": {
-   "n": 29,
+   "n": 30,
    "ma5": 82,
    "ma20": 82,
    "rsi": 57.1,
@@ -33598,7 +32680,7 @@
    "quad": "up_out"
   },
   "MAIN": {
-   "n": 29,
+   "n": 30,
    "ma5": 671,
    "ma20": 676,
    "rsi": 51.7,
@@ -33621,7 +32703,7 @@
    "quad": "dip_out"
   },
   "BTPS": {
-   "n": 29,
+   "n": 30,
    "ma5": 1046,
    "ma20": 1014,
    "rsi": 63.4,
@@ -33644,7 +32726,7 @@
    "quad": "up_in"
   },
   "FITT": {
-   "n": 29,
+   "n": 30,
    "ma5": 447,
    "ma20": 420,
    "rsi": 59.5,
@@ -33667,7 +32749,7 @@
    "quad": "mid"
   },
   "CTTH": {
-   "n": 29,
+   "n": 30,
    "ma5": 127,
    "ma20": 128,
    "rsi": 55.6,
@@ -33690,7 +32772,7 @@
    "quad": "mid"
   },
   "FIRE": {
-   "n": 29,
+   "n": 30,
    "ma5": 123,
    "ma20": 119,
    "rsi": 58.8,
@@ -33713,7 +32795,7 @@
    "quad": "mid"
   },
   "PPRE": {
-   "n": 29,
+   "n": 30,
    "ma5": 105,
    "ma20": 106,
    "rsi": 47.4,
@@ -33736,7 +32818,7 @@
    "quad": "dip_out"
   },
   "BRNA": {
-   "n": 29,
+   "n": 30,
    "ma5": 644,
    "ma20": 623,
    "rsi": 83.3,
@@ -33759,7 +32841,7 @@
    "quad": "mid"
   },
   "RBMS": {
-   "n": 29,
+   "n": 30,
    "ma5": 62,
    "ma20": 63,
    "rsi": 45.5,
@@ -33782,7 +32864,7 @@
    "quad": "mid"
   },
   "KOKA": {
-   "n": 29,
+   "n": 30,
    "ma5": 191,
    "ma20": 185,
    "rsi": 59.5,
@@ -33805,7 +32887,7 @@
    "quad": "mid"
   },
   "POLU": {
-   "n": 29,
+   "n": 30,
    "ma5": 17035,
    "ma20": 16739,
    "rsi": 41.0,
@@ -33828,7 +32910,7 @@
    "quad": "mid"
   },
   "ISEA": {
-   "n": 29,
+   "n": 30,
    "ma5": 89,
    "ma20": 86,
    "rsi": 75.0,
@@ -33851,7 +32933,7 @@
    "quad": "mid"
   },
   "NRCA": {
-   "n": 29,
+   "n": 30,
    "ma5": 548,
    "ma20": 569,
    "rsi": 27.3,
@@ -33874,7 +32956,7 @@
    "quad": "dip_out"
   },
   "MSKY": {
-   "n": 29,
+   "n": 30,
    "ma5": 74,
    "ma20": 67,
    "rsi": 54.8,
@@ -33897,7 +32979,7 @@
    "quad": "mid"
   },
   "ABMM": {
-   "n": 29,
+   "n": 30,
    "ma5": 2830,
    "ma20": 2791,
    "rsi": 58.6,
@@ -33920,7 +33002,7 @@
    "quad": "up_in"
   },
   "GTSI": {
-   "n": 29,
+   "n": 30,
    "ma5": 160,
    "ma20": 171,
    "rsi": 29.2,
@@ -33943,7 +33025,7 @@
    "quad": "mid"
   },
   "LFLO": {
-   "n": 29,
+   "n": 30,
    "ma5": 526,
    "ma20": 522,
    "rsi": 54.2,
@@ -33966,7 +33048,7 @@
    "quad": "mid"
   },
   "MPMX": {
-   "n": 29,
+   "n": 30,
    "ma5": 1027,
    "ma20": 1026,
    "rsi": 55.6,
@@ -33989,7 +33071,7 @@
    "quad": "up_out"
   },
   "LAND": {
-   "n": 29,
+   "n": 30,
    "ma5": 73,
    "ma20": 74,
    "rsi": 41.7,
@@ -34012,7 +33094,7 @@
    "quad": "dip_out"
   },
   "EKAD": {
-   "n": 29,
+   "n": 30,
    "ma5": 408,
    "ma20": 397,
    "rsi": 43.4,
@@ -34035,7 +33117,7 @@
    "quad": "mid"
   },
   "MIKA": {
-   "n": 29,
+   "n": 30,
    "ma5": 1827,
    "ma20": 1860,
    "rsi": 39.5,
@@ -34058,7 +33140,7 @@
    "quad": "dip_in"
   },
   "BAIK": {
-   "n": 29,
+   "n": 30,
    "ma5": 243,
    "ma20": 272,
    "rsi": 26.9,
@@ -34081,7 +33163,7 @@
    "quad": "mid"
   },
   "ESTI": {
-   "n": 29,
+   "n": 30,
    "ma5": 170,
    "ma20": 165,
    "rsi": 56.1,
@@ -34104,7 +33186,7 @@
    "quad": "mid"
   },
   "ASPI": {
-   "n": 29,
+   "n": 30,
    "ma5": 507,
    "ma20": 437,
    "rsi": 69.1,
@@ -34127,7 +33209,7 @@
    "quad": "up_out"
   },
   "PRDL": {
-   "n": 29,
+   "n": 30,
    "ma5": 231,
    "ma20": 248,
    "rsi": 20.0,
@@ -34150,7 +33232,7 @@
    "quad": "dip_in"
   },
   "MIDI": {
-   "n": 29,
+   "n": 30,
    "ma5": 268,
    "ma20": 275,
    "rsi": 38.1,
@@ -34173,7 +33255,7 @@
    "quad": "dip_out"
   },
   "GPSO": {
-   "n": 29,
+   "n": 30,
    "ma5": 286,
    "ma20": 293,
    "rsi": 35.3,
@@ -34196,7 +33278,7 @@
    "quad": "dip_in"
   },
   "MBTO": {
-   "n": 29,
+   "n": 30,
    "ma5": 153,
    "ma20": 135,
    "rsi": 69.2,
@@ -34219,7 +33301,7 @@
    "quad": "mid"
   },
   "RELF": {
-   "n": 29,
+   "n": 30,
    "ma5": 38,
    "ma20": 37,
    "rsi": 66.7,
@@ -34242,7 +33324,7 @@
    "quad": "mid"
   },
   "TOSK": {
-   "n": 29,
+   "n": 30,
    "ma5": 83,
    "ma20": 78,
    "rsi": 73.9,
@@ -34265,7 +33347,7 @@
    "quad": "mid"
   },
   "PRDA": {
-   "n": 29,
+   "n": 30,
    "ma5": 2812,
    "ma20": 2682,
    "rsi": 82.1,
@@ -34288,7 +33370,7 @@
    "quad": "up_out"
   },
   "FORE": {
-   "n": 29,
+   "n": 30,
    "ma5": 788,
    "ma20": 809,
    "rsi": 35.3,
@@ -34311,7 +33393,7 @@
    "quad": "mid"
   },
   "HOKI": {
-   "n": 29,
+   "n": 30,
    "ma5": 55,
    "ma20": 56,
    "rsi": 40.0,
@@ -34334,7 +33416,7 @@
    "quad": "dip_out"
   },
   "LAJU": {
-   "n": 29,
+   "n": 30,
    "ma5": 70,
    "ma20": 70,
    "rsi": 57.1,
@@ -34357,7 +33439,7 @@
    "quad": "mid"
   },
   "BIPP": {
-   "n": 29,
+   "n": 30,
    "ma5": 67,
    "ma20": 68,
    "rsi": 52.9,
@@ -34380,7 +33462,7 @@
    "quad": "mid"
   },
   "KBLV": {
-   "n": 29,
+   "n": 30,
    "ma5": 127,
    "ma20": 136,
    "rsi": 26.9,
@@ -34403,7 +33485,7 @@
    "quad": "dip_out"
   },
   "KLAS": {
-   "n": 29,
+   "n": 30,
    "ma5": 83,
    "ma20": 85,
    "rsi": 42.9,
@@ -34426,7 +33508,7 @@
    "quad": "dip_out"
   },
   "PLAN": {
-   "n": 29,
+   "n": 30,
    "ma5": 66,
    "ma20": 55,
    "rsi": 67.9,
@@ -34449,7 +33531,7 @@
    "quad": "mid"
   },
   "RLCO": {
-   "n": 29,
+   "n": 30,
    "ma5": 4412,
    "ma20": 4461,
    "rsi": 54.2,
@@ -34472,7 +33554,7 @@
    "quad": "mid"
   },
   "BIRD": {
-   "n": 29,
+   "n": 30,
    "ma5": 1605,
    "ma20": 1625,
    "rsi": 33.3,
@@ -34495,7 +33577,7 @@
    "quad": "dip_out"
   },
   "UCID": {
-   "n": 29,
+   "n": 30,
    "ma5": 508,
    "ma20": 499,
    "rsi": 47.6,
@@ -34518,7 +33600,7 @@
    "quad": "mid"
   },
   "HAJJ": {
-   "n": 29,
+   "n": 30,
    "ma5": 112,
    "ma20": 112,
    "rsi": 46.9,
@@ -34541,7 +33623,7 @@
    "quad": "mid"
   },
   "BGTG": {
-   "n": 29,
+   "n": 30,
    "ma5": 121,
    "ma20": 118,
    "rsi": 61.8,
@@ -34564,7 +33646,7 @@
    "quad": "up_out"
   },
   "TBLA": {
-   "n": 29,
+   "n": 30,
    "ma5": 624,
    "ma20": 628,
    "rsi": 50.0,
@@ -34587,7 +33669,7 @@
    "quad": "mid"
   },
   "MSTI": {
-   "n": 29,
+   "n": 30,
    "ma5": 1362,
    "ma20": 1350,
    "rsi": 51.3,
@@ -34610,7 +33692,7 @@
    "quad": "up_in"
   },
   "OMED": {
-   "n": 29,
+   "n": 30,
    "ma5": 214,
    "ma20": 231,
    "rsi": 35.3,
@@ -34633,7 +33715,7 @@
    "quad": "dip_in"
   },
   "VERN": {
-   "n": 29,
+   "n": 30,
    "ma5": 228,
    "ma20": 238,
    "rsi": 14.3,
@@ -34656,7 +33738,7 @@
    "quad": "dip_out"
   },
   "CASH": {
-   "n": 29,
+   "n": 30,
    "ma5": 231,
    "ma20": 231,
    "rsi": 52.3,
@@ -34679,7 +33761,7 @@
    "quad": "mid"
   },
   "KDTN": {
-   "n": 29,
+   "n": 30,
    "ma5": 394,
    "ma20": 387,
    "rsi": 66.2,
@@ -34702,7 +33784,7 @@
    "quad": "up_in"
   },
   "TSPC": {
-   "n": 29,
+   "n": 30,
    "ma5": 2748,
    "ma20": 2744,
    "rsi": 64.7,
@@ -34725,7 +33807,7 @@
    "quad": "up_out"
   },
   "FPNI": {
-   "n": 29,
+   "n": 30,
    "ma5": 531,
    "ma20": 581,
    "rsi": 28.8,
@@ -34748,7 +33830,7 @@
    "quad": "dip_in"
   },
   "SWID": {
-   "n": 29,
+   "n": 30,
    "ma5": 121,
    "ma20": 120,
    "rsi": 59.3,
@@ -34771,7 +33853,7 @@
    "quad": "mid"
   },
   "ICON": {
-   "n": 29,
+   "n": 30,
    "ma5": 144,
    "ma20": 138,
    "rsi": 65.6,
@@ -34794,7 +33876,7 @@
    "quad": "mid"
   },
   "NIKL": {
-   "n": 29,
+   "n": 30,
    "ma5": 226,
    "ma20": 213,
    "rsi": 58.6,
@@ -34817,7 +33899,7 @@
    "quad": "up_out"
   },
   "MINE": {
-   "n": 29,
+   "n": 30,
    "ma5": 291,
    "ma20": 263,
    "rsi": 81.6,
@@ -34840,7 +33922,7 @@
    "quad": "up_out"
   },
   "MLPL": {
-   "n": 29,
+   "n": 30,
    "ma5": 89,
    "ma20": 92,
    "rsi": 27.3,
@@ -34863,7 +33945,7 @@
    "quad": "dip_out"
   },
   "BJBR": {
-   "n": 29,
+   "n": 30,
    "ma5": 794,
    "ma20": 794,
    "rsi": 50.0,
@@ -34886,7 +33968,7 @@
    "quad": "mid"
   },
   "GOLF": {
-   "n": 29,
+   "n": 30,
    "ma5": 178,
    "ma20": 165,
    "rsi": 66.7,
@@ -34909,7 +33991,7 @@
    "quad": "mid"
   },
   "JECX": {
-   "n": 29,
+   "n": 30,
    "ma5": 1332,
    "ma20": 1416,
    "rsi": 44.8,
@@ -34932,7 +34014,7 @@
    "quad": "dip_out"
   },
   "TGUK": {
-   "n": 29,
+   "n": 30,
    "ma5": 90,
    "ma20": 75,
    "rsi": 76.8,
@@ -34955,7 +34037,7 @@
    "quad": "mid"
   },
   "PSKT": {
-   "n": 29,
+   "n": 30,
    "ma5": 236,
    "ma20": 239,
    "rsi": 48.2,
@@ -34978,7 +34060,7 @@
    "quad": "dip_out"
   },
   "NASI": {
-   "n": 29,
+   "n": 30,
    "ma5": 163,
    "ma20": 152,
    "rsi": 73.7,
@@ -35001,7 +34083,7 @@
    "quad": "up_in"
   },
   "BELL": {
-   "n": 29,
+   "n": 30,
    "ma5": 109,
    "ma20": 113,
    "rsi": 33.3,
@@ -35024,7 +34106,7 @@
    "quad": "mid"
   },
   "AYLS": {
-   "n": 29,
+   "n": 30,
    "ma5": 152,
    "ma20": 154,
    "rsi": 46.5,
@@ -35047,7 +34129,7 @@
    "quad": "mid"
   },
   "SMAR": {
-   "n": 29,
+   "n": 30,
    "ma5": 6225,
    "ma20": 6278,
    "rsi": 48.7,
@@ -35070,7 +34152,7 @@
    "quad": "dip_in"
   },
   "VTNY": {
-   "n": 29,
+   "n": 30,
    "ma5": 76,
    "ma20": 79,
    "rsi": 33.3,
@@ -35093,7 +34175,7 @@
    "quad": "mid"
   },
   "KUAS": {
-   "n": 29,
+   "n": 30,
    "ma5": 100,
    "ma20": 99,
    "rsi": 52.4,
@@ -35116,7 +34198,7 @@
    "quad": "mid"
   },
   "ESIP": {
-   "n": 29,
+   "n": 30,
    "ma5": 122,
    "ma20": 123,
    "rsi": 50.0,
@@ -35139,7 +34221,7 @@
    "quad": "mid"
   },
   "MTDL": {
-   "n": 29,
+   "n": 30,
    "ma5": 510,
    "ma20": 512,
    "rsi": 45.5,
@@ -35162,7 +34244,7 @@
    "quad": "dip_out"
   },
   "NTBK": {
-   "n": 29,
+   "n": 30,
    "ma5": 83,
    "ma20": 83,
    "rsi": 52.4,
@@ -35185,7 +34267,7 @@
    "quad": "dip_in"
   },
   "DILD": {
-   "n": 29,
+   "n": 30,
    "ma5": 117,
    "ma20": 120,
    "rsi": 36.8,
@@ -35208,7 +34290,7 @@
    "quad": "dip_out"
   },
   "JELI": {
-   "n": 29,
+   "n": 30,
    "ma5": 499,
    "ma20": 575,
    "rsi": 9.6,
@@ -35231,7 +34313,7 @@
    "quad": "dip_in"
   },
   "TRIM": {
-   "n": 29,
+   "n": 30,
    "ma5": 764,
    "ma20": 679,
    "rsi": 82.8,
@@ -35254,7 +34336,7 @@
    "quad": "mid"
   },
   "RALS": {
-   "n": 29,
+   "n": 30,
    "ma5": 390,
    "ma20": 385,
    "rsi": 60.0,
@@ -35277,7 +34359,7 @@
    "quad": "mid"
   },
   "IPCC": {
-   "n": 29,
+   "n": 30,
    "ma5": 1121,
    "ma20": 1144,
    "rsi": 20.0,
@@ -35300,7 +34382,7 @@
    "quad": "mid"
   },
   "INPS": {
-   "n": 29,
+   "n": 30,
    "ma5": 864,
    "ma20": 746,
    "rsi": 86.6,
@@ -35323,7 +34405,7 @@
    "quad": "mid"
   },
   "WOWS": {
-   "n": 29,
+   "n": 30,
    "ma5": 57,
    "ma20": 59,
    "rsi": 18.2,
@@ -35346,7 +34428,7 @@
    "quad": "mid"
   },
   "BLUE": {
-   "n": 29,
+   "n": 30,
    "ma5": 2992,
    "ma20": 2846,
    "rsi": 60.7,
@@ -35369,7 +34451,7 @@
    "quad": "up_in"
   },
   "PGJO": {
-   "n": 29,
+   "n": 30,
    "ma5": 883,
    "ma20": 910,
    "rsi": 43.5,
@@ -35392,7 +34474,7 @@
    "quad": "dip_out"
   },
   "WINR": {
-   "n": 29,
+   "n": 30,
    "ma5": 27,
    "ma20": 24,
    "rsi": 64.7,
@@ -35415,7 +34497,7 @@
    "quad": "mid"
   },
   "DWGL": {
-   "n": 29,
+   "n": 30,
    "ma5": 231,
    "ma20": 259,
    "rsi": 15.6,
@@ -35438,7 +34520,7 @@
    "quad": "dip_out"
   },
   "PSDN": {
-   "n": 29,
+   "n": 30,
    "ma5": 137,
    "ma20": 136,
    "rsi": 46.3,
@@ -35461,7 +34543,7 @@
    "quad": "mid"
   },
   "ARNA": {
-   "n": 29,
+   "n": 30,
    "ma5": 509,
    "ma20": 502,
    "rsi": 75.0,
@@ -35484,7 +34566,7 @@
    "quad": "up_out"
   },
   "PTPP": {
-   "n": 29,
+   "n": 30,
    "ma5": 199,
    "ma20": 205,
    "rsi": 39.2,
@@ -35507,7 +34589,7 @@
    "quad": "dip_out"
   },
   "MLBI": {
-   "n": 29,
+   "n": 30,
    "ma5": 6835,
    "ma20": 6866,
    "rsi": 50.0,
@@ -42443,7 +41525,7 @@
     "hi20": 5150,
     "lo20": 4140,
     "band20": 24.4,
-    "n": 29
+    "n": 30
    }
   },
   {
@@ -42471,7 +41553,7 @@
     "hi20": 1455,
     "lo20": 1240,
     "band20": 17.3,
-    "n": 29
+    "n": 30
    }
   }
  ],
@@ -43270,6 +42352,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 22:27"
+  "announcements": "2026-09-16 22:40"
  }
 }
