@@ -74,7 +74,7 @@ function run(){
 function show(n){
   return self.registration.showNotification(n.title, {
     body: n.body, tag: n.title + '|' + n.body, renotify: false,
-    data: {t: n.t || ''}, icon: '/favicon.ico', badge: '/favicon.ico'
+    data: {t: n.t || ''}, icon: '/assets/icon-192.png', badge: '/favicon.ico'
   });
 }
 
