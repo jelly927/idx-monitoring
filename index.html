@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IDX Live · 인도네시아 증시</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#226b5a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
@@ -1077,7 +1080,7 @@ document.querySelectorAll('[data-imp]').forEach(b=>b.onclick=()=>{calImp=+b.data
 document.querySelectorAll('[data-kind]').forEach(b=>b.onclick=()=>{calKind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(x=>x.classList.toggle('on',x===b));renderCal();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDr();});
 
-const UI_VER='0916-b';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
+const UI_VER='0916-c';{const _uv=document.getElementById('uiver');if(_uv)_uv.textContent='UI '+UI_VER;}
 document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('on',b.dataset.lang===LANG));applyStatic();
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
 const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['knews-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
@@ -1564,7 +1567,7 @@ body[data-lang=id] .ffrow{--ffn:100px}
   var DEF={on:false,rules:{
       pct:{on:false,v:5}, hi20:{on:false}, lo20:{on:false}, ratio:{on:false,v:3}, call:{on:false},
       ann:{on:false,q:80}, annWl:{on:false}, news:{on:false}, newsWl:{on:false}, catNew:{on:false},
-      cal:{on:false,min:30}, stale:{on:false,min:15}},
+      cal:{on:false,min:30}, stale:{on:false,min:25}},
     seen:{ann:[],news:[],cal:[],cat:[],once:{},day:''}, log:[]};
 
   function loadS(){
@@ -1810,7 +1813,7 @@ body[data-lang=id] .ffrow{--ffn:100px}
       '<div class="alrtSec">'+X('secDoc')+'</div>'+
       row('ann',X('pt'),50,100,5)+row('annWl','',0,0)+row('news','',0,0)+row('newsWl','',0,0)+row('catNew','',0,0)+
       '<div class="alrtSec">'+X('secCal')+'</div>'+row('cal',X('min'),5,180,5)+
-      (inHouse()?'<div class="alrtSec">'+X('secOps')+'</div>'+row('stale',X('min'),5,120,5):'')+
+      (inHouse()?'<div class="alrtSec">'+X('secOps')+'</div>'+row('stale',X('min'),10,120,5):'')+
       '<div class="alrtSec">'+X('secPush')+'</div>'+
       '<div class="alrtRow"><input type="checkbox" id="alrtPush"'+(S.push?' checked':'')+(SWOK?'':' disabled')+'>'+
       '<label for="alrtPush">'+X('push')+'<small>'+(SWOK?X('pushS'):X('pushOff'))+'</small></label></div>';
