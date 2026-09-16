@@ -80,10 +80,10 @@ function show(n){
 
 /* ── 문구 ──────────────────────────────────────────────────── */
 var TX = {
-  ko:{nPx:'종목알림',nNews:'뉴스 업로드',nAnn:'공시 업로드',nTop:'주요뉴스',nCat:'주목 진입',nCal:'일정',nStale:'수집 정체',
+  ko:{nPx:'종목알림',nNews:'뉴스 업로드',nAnn:'공시 업로드',nTop:'주요뉴스',nCat:'주목 진입',nKw:'키워드',nCal:'일정',nStale:'수집 정체',
       hi20:'20일 최고가 돌파',lo20:'20일 최저가 이탈',ratio:'거래대금 급증',tp:'목표가',sl:'손절가',by:'KISI 리서치 의견',
       min:'분',x:'배',after:'후',basis:'기준',delay:'15분 지연',stale1:'분째 미갱신 · 마지막'},
-  id:{nPx:'Notifikasi saham',nNews:'Berita baru',nAnn:'Keterbukaan baru',nTop:'Berita utama',nCat:'Masuk Watchout',nCal:'Agenda',nStale:'Data tertahan',
+  id:{nPx:'Notifikasi saham',nNews:'Berita baru',nAnn:'Keterbukaan baru',nTop:'Berita utama',nCat:'Masuk Watchout',nKw:'Kata kunci',nCal:'Agenda',nStale:'Data tertahan',
       hi20:'Tembus tertinggi 20 hari',lo20:'Tembus terendah 20 hari',ratio:'Lonjakan nilai transaksi',tp:'Target',sl:'Stop loss',by:'Opini KISI Research',
       min:'mnt',x:'x',after:'lagi',basis:'per',delay:'tertunda 15 mnt',stale1:'menit tidak diperbarui · terakhir'}
 };
@@ -91,7 +91,7 @@ var TX = {
 /* ── 규칙 판정 — index.html 알림 모듈과 같은 기준 ───────────── */
 function evaluate(d, st){
   var ID = st.lang === 'id', X = function(k){ return TX[ID?'id':'ko'][k]; };
-  var R = st.rules || {}, W = st.wl || [], sn = st.seen = st.seen || {};
+  var R = st.rules || {}, W = st.wl || [], KWL = st.kw || [], sn = st.seen = st.seen || {};
   sn.ann = sn.ann || []; sn.news = sn.news || []; sn.cal = sn.cal || []; sn.cat = sn.cat || []; sn.once = sn.once || {};
   var day = new Date(Date.now()+7*3600e3).toISOString().slice(0,10);
   if (sn.day !== day) { sn.once = {}; sn.cat = []; sn.day = day; }
@@ -180,6 +180,21 @@ function evaluate(d, st){
     if (!mine) return;
     out.push({title:X('nPx')+' · '+mine, body:X('nNews')+' · '+String(L(n,'t')).slice(0,110), t:mine});
   });
+
+  /* 키워드 뉴스 — 페이지와 같은 규칙. 키워드 목록은 이 브라우저 안에만 있고 서버로 나가지 않는다 */
+  if (R.kw && R.kw.on && KWL.length) {
+    var kwFirst = !sn.kw || !sn.kw.length; sn.kw = sn.kw || [];
+    (d.news||[]).concat(d.market_news||[], d.kisi_news||[]).forEach(function(n){
+      var u = n.url; if (!u || sn.kw.indexOf(u) >= 0) return;
+      var hay = [n.t,n.t_ko,n.t_id,n.ai,n.ai_ko,n.ai_id].filter(Boolean).join(' ').toLowerCase(), hit = null, z;
+      for (z=0;z<KWL.length;z++) if (hay.indexOf(String(KWL[z]).toLowerCase()) >= 0) { hit = KWL[z]; break; }
+      if (!hit) return;
+      sn.kw.push(u);
+      if (kwFirst) return;                       /* 처음 한 번은 기준만 잡고 보내지 않는다 */
+      out.push({title:X('nKw')+' \u00b7 '+hit, body:String(L(n,'t')).slice(0,110)});
+    });
+    sn.kw = sn.kw.slice(-800);
+  }
 
   /* 주목 신규 진입 */
   if (R.catNew && R.catNew.on) {
