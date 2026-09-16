@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 22:27",
+ "updated": "2026-09-16 22:36",
  "delay_min": 15,
- "fx_basis": "12.95 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,367 · 21:20 Yahoo",
- "idr_per_krw": 12.9499,
+ "fx_basis": "12.94 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,368 · 21:20 Yahoo",
+ "idr_per_krw": 12.9443,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -334,7 +334,7 @@
   "value_idr": 10929839903866.678,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 22:17",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 22:31",
   "rank_asof": null,
   "rank_date": "2026-09-16",
   "adv": 215,
@@ -15757,10 +15757,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7618.84,
+   "px": 7612.94,
    "prev": 7585.51,
-   "pct": 0.44,
-   "asof": "22:25",
+   "pct": 0.36,
+   "asof": "22:30",
    "live": true,
    "spark": [
     7603.81,
@@ -15786,17 +15786,18 @@
     7618.61,
     7617.14,
     7616.53,
-    7618.84
+    7615.04,
+    7612.94
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26206.29,
+   "px": 26171.73,
    "prev": 25981.57,
-   "pct": 0.86,
-   "asof": "22:25",
+   "pct": 0.73,
+   "asof": "22:30",
    "live": true,
    "spark": [
     26099.29,
@@ -15822,17 +15823,18 @@
     26209.35,
     26199.17,
     26196.42,
-    26206.29
+    26187.53,
+    26171.73
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52077.16,
+   "px": 52044.16,
    "prev": 52092.45,
-   "pct": -0.03,
-   "asof": "22:25",
+   "pct": -0.09,
+   "asof": "22:30",
    "live": true,
    "spark": [
     52038.56,
@@ -15858,7 +15860,8 @@
     52094.84,
     52094.51,
     52063.03,
-    52077.16
+    52064.84,
+    52044.16
    ]
   },
   {
@@ -16528,32 +16531,6 @@
    ]
   },
   {
-   "ts": "2026-09-16T14:24:08+07:00",
-   "date": "2026-09-16",
-   "time": "14:24",
-   "src": "Detik",
-   "t": "BYAN Umumkan Kahar, ESDM Tegaskan Revisi RKAB Masih Dievaluasi",
-   "tags": [
-    "BYAN"
-   ],
-   "url": "https://finance.detik.com/energi/d-8665301/byan-umumkan-kahar-esdm-tegaskan-revisi-rkab-masih-dievaluasi",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/11/10/dirjen-mineral-dan-batu-bara-minerba-tri-winarno-1762781652198_169.jpeg?w=360&q=90",
-   "t_ko": "BYAN, 불가항력 선언에 ESDM은 RKAB 수정안 심사 중",
-   "t_id": "BYAN Umumkan Kahar, ESDM Tegaskan Revisi RKAB Masih Dievaluasi",
-   "ai_ko": "· Bayan Resources(BYAN)\n· 자회사 3곳 불가항력 선언\n· RKAB 변경 승인 지연 탓",
-   "ai_id": "· Bayan Resources (BYAN) umumkan\n· kahar di tiga anak usaha\n· Revisi RKAB 2026 belum terbit",
-   "ai_tags": [
-    "규제",
-    "석탄",
-    "공급차질"
-   ],
-   "ai_tags_id": [
-    "regulasi",
-    "batu bara",
-    "pasokan"
-   ]
-  },
-  {
    "ts": "2026-09-16T14:06:39+07:00",
    "date": "2026-09-16",
    "time": "14:06",
@@ -17114,6 +17091,90 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-16T22:33:24+07:00",
+   "date": "2026-09-16",
+   "time": "22:33",
+   "src": "CNBC",
+   "t": "Oil prices fall after U.S. says damaged Saudi pipeline will restart operations in days",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
+   "g": 1,
+   "t_ko": "미국, 사우디 송유관 조기 복구 발표에 유가 하락",
+   "t_id": "Harga Minyak Turun Usai AS Sebut Pipa Saudi yang Rusak Beroperasi Lagi dalam Hitungan Hari",
+   "ai_ko": "· 미국 원유재고 710만배럴 증가, 유가 하락\n· 시장은 160만배럴 감소 전망, 9월 11일 기준\n· Saudi East-West 송유관 폐쇄로 공급 불안 상존",
+   "ai_id": "· Stok minyak AS naik 7,1 juta barel\n· Konsensus perkirakan turun 1,6 juta barel\n· Pipa East-West Saudi tutup, pasokan rawan",
+   "ai_tags": [
+    "유가",
+    "원유재고",
+    "지정학"
+   ],
+   "ai_tags_id": [
+    "harga minyak",
+    "stok minyak",
+    "geopolitik"
+   ]
+  },
+  {
+   "ts": "2026-09-16T22:31:00+07:00",
+   "date": "2026-09-16",
+   "time": "22:31",
+   "src": "Katadata",
+   "t": "Prabowo Ungkap Alasan Pangkas TKD, Singgung Pemda yang Simpan Uang di Bank",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/nasional/6aaab64854c58/prabowo-ungkap-alasan-pangkas-tkd-singgung-pemda-yang-simpan-uang-di-bank",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/30/2026_07_30-15_11_00_3e8ac8c2-8c04-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "Prabowo Ungkap Alasan Pangkas TKD, Singgung Pemda yang Simpan Uang di Bank",
+   "t_ko": "Prabowo, 지방정부의 은행 예치금 지적하며 TKD 삭감 배경 설명"
+  },
+  {
+   "ts": "2026-09-16T22:30:00+07:00",
+   "date": "2026-09-16",
+   "time": "22:30",
+   "src": "Detik",
+   "t": "BBM E20 Mau Diproduksi, Lahan Tebu 2 Juta Ha di Jawa-Papua Disiapkan",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8666091/bbm-e20-mau-diproduksi-lahan-tebu-2-juta-ha-di-jawa-papua-disiapkan",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/10/08/menko-pangan-serap-1000-ton-gula-petani-lumajang-1759903659523_169.jpeg?w=360&q=90",
+   "t_id": "BBM E20 Mau Diproduksi, Lahan Tebu 2 Juta Ha di Jawa-Papua Disiapkan",
+   "t_ko": "E20 연료 생산 추진 위해 자바·파푸아 지역에 200만 헥타르 사탕수수 부지 조성"
+  },
+  {
+   "ts": "2026-09-16T22:29:25+07:00",
+   "date": "2026-09-16",
+   "time": "22:29",
+   "src": "Detik",
+   "t": "Keputusan Bisnis Selalu Meleset? Kuasai Business Acumen Agar Strategi Lebih Tepat",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666106/keputusan-bisnis-selalu-meleset-kuasai-business-acumen-agar-strategi-lebih-tepat",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/11/detikevent-business-acumen-kpi-1789136658269_169.jpeg?w=360&q=90",
+   "t_ko": "경영 판단 지속 실패 시, 정확한 전략 수립을 위한 비즈니스 통찰력 강조",
+   "t_id": "Keputusan Bisnis Selalu Meleset? Kuasai Business Acumen Agar Strategi Lebih Tepat"
+  },
+  {
+   "ts": "2026-09-16T22:29:20+07:00",
+   "date": "2026-09-16",
+   "time": "22:29",
+   "src": "Bloomberg",
+   "t": "Aggressive Rate Hike Bets Raise Stakes for Fed",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-16/aggressive-rate-hike-bets-raise-stakes-for-fed-video",
+   "g": 1,
+   "t_ko": "공격적인 금리 인상 전망으로 연준 정책 불확실성 확대",
+   "t_id": "Taruhan Kenaikan Suku Bunga Agresif Perberat Langkah The Fed"
+  },
+  {
+   "ts": "2026-09-16T22:27:30+07:00",
+   "date": "2026-09-16",
+   "time": "22:27",
+   "src": "Bloomberg",
+   "t": "Stocks, Bonds Rise in Countdown to Fed Decision",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-16/stocks-bonds-rise-in-countdown-to-fed-decision-video",
+   "g": 1,
+   "t_ko": "연준 금리 결정 앞두고 주식·채권 동반 상승",
+   "t_id": "Saham dan Obligasi Naik Jelang Keputusan The Fed"
+  },
+  {
    "ts": "2026-09-16T22:20:50+07:00",
    "date": "2026-09-16",
    "time": "22:20",
@@ -17126,6 +17187,18 @@
    "t_id": "CEO Circle: UU Kejelasan Belum Mati"
   },
   {
+   "ts": "2026-09-16T22:19:35+07:00",
+   "date": "2026-09-16",
+   "time": "22:19",
+   "src": "Bloomberg",
+   "t": "Goldman Chief US Economist: Economy Isn't Overheating",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-16/goldman-chief-us-economist-economy-isn-t-overheating-video",
+   "g": 1,
+   "t_ko": "Goldman Sachs 수석 미국 이코노미스트, 미국 경제 과열 국면 아님 진단",
+   "t_id": "Kepala Ekonom AS Goldman: Ekonomi Tidak Overheating"
+  },
+  {
    "ts": "2026-09-16T22:18:00+07:00",
    "date": "2026-09-16",
    "time": "22:18",
@@ -17136,6 +17209,45 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/2026_08_14-16_37_00_27523958-97ce-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
    "t_ko": "Prabowo, Dadan Hindayana 부패 연루에 직접 검찰 송치 밝혔다고 언급",
    "t_id": "Prabowo Ungkit Dadan Hindayana Terjerat Korupsi: Saya yang Serahkan ke Kejaksaan"
+  },
+  {
+   "ts": "2026-09-16T22:16:56+07:00",
+   "date": "2026-09-16",
+   "time": "22:16",
+   "src": "Yahoo Finance",
+   "t": "Interactive Brokers Senior Economist Shares The Oil Price That Finally Breaks The American Consumer",
+   "tags": [],
+   "url": "https://finance.yahoo.com/energy/articles/interactive-brokers-senior-economist-shares-151656371.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/79e4a336f4f7afbc03c30e3602539f29.jpg",
+   "t_ko": "Interactive Brokers 수석 이코노미스트, 미국 소비자에 타격 주는 유가 수준 진단",
+   "t_id": "Ekonom Senior Interactive Brokers Ungkap Harga Minyak yang Akhirnya Hancurkan Konsumen AS"
+  },
+  {
+   "ts": "2026-09-16T22:16:13+07:00",
+   "date": "2026-09-16",
+   "time": "22:16",
+   "src": "Yahoo Finance",
+   "t": "S&P 500 Trucking Stock Craters On CFO's Warning",
+   "tags": [],
+   "url": "https://www.investors.com/news/sp-500-stocks-jb-hunt-cfo-earnings-oil-diesel-prices-iran-war/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/86872a53e567b1dd42e1f3edad214948.jpg",
+   "t_ko": "CFO 경고에 S&P 500 트럭 운송주 급락",
+   "t_id": "Saham Truk S&P 500 Anjlok Usai Peringatan CFO"
+  },
+  {
+   "ts": "2026-09-16T22:14:01+07:00",
+   "date": "2026-09-16",
+   "time": "22:14",
+   "src": "Yahoo Finance",
+   "t": "Advance Auto Parts vs. Intuitive Machines: Which Stock Is a Better Buy in 2026?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/advance-auto-parts-vs-intuitive-151401359.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/f7a65c96d166faf21aac2b3268722093.png",
+   "t_ko": "Advance Auto Parts vs Intuitive Machines, 2026년 유망 투자 종목",
+   "t_id": "Advance Auto Parts vs Intuitive Machines: Saham Mana yang Lebih Layak Dibeli pada 2026?"
   },
   {
    "ts": "2026-09-16T22:12:32+07:00",
@@ -17160,6 +17272,19 @@
     "pengembangan",
     "energi"
    ]
+  },
+  {
+   "ts": "2026-09-16T22:10:43+07:00",
+   "date": "2026-09-16",
+   "time": "22:10",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Nasdaq, S&P 500 Up With Fed Decision Looming; Intel, Micron, Sandisk Rise (Live Coverage)",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-rate-hike-warsh-intel-sk-hynix/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/055e6190716b8ff765115a6c4fe3695a.jpg",
+   "t_ko": "미 증시, 연준 결정을 앞두고 S&P 500·나스닥 상승 — 인텔·마이크론·샌디스크 강세",
+   "t_id": "Pasar Saham Hari Ini: Nasdaq, S&P 500 Naik Jelang Keputusan The Fed; Intel, Micron, Sandisk Menguat (Liputan Langsung)"
   },
   {
    "ts": "2026-09-16T22:10:00+07:00",
@@ -17197,32 +17322,6 @@
    "t_id": "The Fed Putuskan Suku Bunga, Pasar Proyeksikan Kenaikan"
   },
   {
-   "ts": "2026-09-16T22:07:42+07:00",
-   "date": "2026-09-16",
-   "time": "22:07",
-   "src": "Yahoo Finance",
-   "t": "Why Cipher Digital Stock Is Skyrocketing Today",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/why-cipher-digital-stock-skyrocketing-150742187.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/eeca9db27270e08b4581df7cc65edc81.jpg",
-   "t_ko": "Cipher Digital 주가 급등 배경",
-   "t_id": "Alasan Saham Cipher Digital Meroket Hari Ini"
-  },
-  {
-   "ts": "2026-09-16T22:05:00+07:00",
-   "date": "2026-09-16",
-   "time": "22:05",
-   "src": "Yahoo Finance",
-   "t": "Direxion Semiconductor Bull ETF Drops 14% as Chip Sector Faces Sharp Selloff",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/direxion-semiconductor-bull-etf-drops-150500906.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/f439b872f857584667bc5ecaf20e7c8c.jpg",
-   "t_ko": "반도체 섹터 매도세에 Direxion Semiconductor Bull ETF 14% 하락",
-   "t_id": "ETF Bull Semikonduktor Direxion Anjlok 14% Saat Sektor Cip Hadapi Aksi Jual Tajam"
-  },
-  {
    "ts": "2026-09-16T22:04:37+07:00",
    "date": "2026-09-16",
    "time": "22:04",
@@ -17245,30 +17344,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/pesan-suahasil-nazara-usai-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan-1789383969386_169.jpeg?w=360&q=90",
    "t_ko": "상원, 2027년 예산안 편성 앞두고 Suahasil에게 당부 전해",
    "t_id": "DPD Titip Pesan Ini buat Suahasil Saat Susun APBN 2027"
-  },
-  {
-   "ts": "2026-09-16T22:03:57+07:00",
-   "date": "2026-09-16",
-   "time": "22:03",
-   "src": "CNBC",
-   "t": "Oil prices fall after U.S. says damaged Saudi pipeline will restart operations in days",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
-   "g": 1,
-   "t_ko": "미국, 사우디 송유관 조기 복구 발표에 유가 하락",
-   "t_id": "Harga Minyak Turun Usai AS Sebut Pipa Saudi yang Rusak Beroperasi Lagi dalam Hitungan Hari",
-   "ai_ko": "· 미국 원유재고 710만배럴 증가, 유가 하락\n· 시장은 160만배럴 감소 전망, 9월 11일 기준\n· Saudi East-West 송유관 폐쇄로 공급 불안 상존",
-   "ai_id": "· Stok minyak AS naik 7,1 juta barel\n· Konsensus perkirakan turun 1,6 juta barel\n· Pipa East-West Saudi tutup, pasokan rawan",
-   "ai_tags": [
-    "유가",
-    "원유재고",
-    "지정학"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "stok minyak",
-    "geopolitik"
-   ]
   },
   {
    "ts": "2026-09-16T21:59:57+07:00",
@@ -17336,13 +17411,13 @@
    "date": "2026-09-16",
    "time": "21:52",
    "src": "BBC",
-   "t": "Henry Zeffman: Andy Burnham and his chancellor have a battle on their hands",
+   "t": "Henry Zeffman: Andy Burnham and his chancellor have a battle on their hands as the Budget approaches",
    "tags": [],
    "url": "https://www.bbc.co.uk/news/articles/cwp93jp4p7xpo?at_medium=RSS&at_campaign=rss",
    "g": 1,
    "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a48e/live/4c8ed8e0-b1d0-11f1-8493-1910d79d53eb.png",
-   "t_ko": "Henry Zeffman: Andy Burnham과 재무장관의 치열한 공방",
-   "t_id": "Henry Zeffman: Andy Burnham dan Kanselirnya Hadapi Pertarungan Sengit"
+   "t_ko": "Henry Zeffman, 예산안 발표 앞두고 Andy Burnham과 재무장관 간의 갈등 전망",
+   "t_id": "Henry Zeffman: Andy Burnham dan Menteri Keuangannya Hadapi Pertarungan Sengit Jelang Anggaran"
   },
   {
    "ts": "2026-09-16T21:51:50+07:00",
@@ -17429,19 +17504,6 @@
    "t_id": "Prabowo Larang Keras Pembakaran Hutan dan Lahan!"
   },
   {
-   "ts": "2026-09-16T21:37:33+07:00",
-   "date": "2026-09-16",
-   "time": "21:37",
-   "src": "Yahoo Finance",
-   "t": "Apple Watch Rival Garmin Traverses Rocky Road Toward Buy Range",
-   "tags": [],
-   "url": "https://www.investors.com/research/breakout-stocks-technical-analysis/garmin-stock-apple-watch-rival-buy-range/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/b3a37f6bd746f848a442016b42355220.jpg",
-   "t_ko": "Garmin, 매수 구간 진입 앞두고 주가 변동성 확대",
-   "t_id": "Saingan Apple Watch, Garmin Tempuh Jalan Terjal Menuju Area Beli"
-  },
-  {
    "ts": "2026-09-16T21:32:00+07:00",
    "date": "2026-09-16",
    "time": "21:32",
@@ -17463,43 +17525,6 @@
    "url": "https://mediaindonesia.com/ekonomi/934229/rosan-bakal-temui-menkeu-bahas-setoran-dividen-bumn-rp120-triliun",
    "t_ko": "Rosan, 재무장관 만나 국영기업 배당금 Rp120조 납부 논의 예정",
    "t_id": "Rosan bakal Temui Menkeu Bahas Setoran Dividen BUMN Rp120 Triliun"
-  },
-  {
-   "ts": "2026-09-16T21:31:24+07:00",
-   "date": "2026-09-16",
-   "time": "21:31",
-   "src": "CNBC",
-   "t": "World's top-performing sovereign wealth fund warns of looming pullback in U.S. stock market",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/new-zealand-sovereign-wealth-fund-stock-market.html",
-   "g": 1,
-   "t_ko": "세계 최고 수익률 국부펀드, 미국 증시 조정 국면 경고",
-   "t_id": "SWF Terbaik Dunia Peringatkan Potensi Koreksi Pasar Saham AS"
-  },
-  {
-   "ts": "2026-09-16T21:30:51+07:00",
-   "date": "2026-09-16",
-   "time": "21:30",
-   "src": "BBC",
-   "t": "Petrol and diesel price rises push UK inflation higher",
-   "tags": [],
-   "url": "https://www.bbc.co.uk/news/articles/cv2dw7lw4rkpo?at_medium=RSS&at_campaign=rss",
-   "g": 1,
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d847/live/6dc55eb0-b1be-11f1-b1d1-571ed4d7ff2c.jpg",
-   "t_ko": "휘발유·디젤 가격 상승으로 영국 물가 상승",
-   "t_id": "Kenaikan Harga BBM Dorong Inflasi Inggris Naik",
-   "ai_ko": "· 영국 8월 물가상승률 3.1%로 상승\n· 휘발유·경유 등 연료가격 23% 급등\n· 유가 강세로 정유·에너지주 주목",
-   "ai_id": "· Inflasi Inggris Agustus naik ke 3,1%\n· Harga BBM melonjak 23% yoy\n· Brent sempat tembus USD 100 per barel",
-   "ai_tags": [
-    "물가",
-    "유가",
-    "금리"
-   ],
-   "ai_tags_id": [
-    "inflasi",
-    "harga minyak",
-    "suku bunga"
-   ]
   },
   {
    "ts": "2026-09-16T21:28:00+07:00",
@@ -17525,32 +17550,6 @@
    "t_id": "Prabowo Ungkap Alasan Bentuk URI, Soroti Masalah SDM dan Birokrasi"
   },
   {
-   "ts": "2026-09-16T21:26:31+07:00",
-   "date": "2026-09-16",
-   "time": "21:26",
-   "src": "Yahoo Finance",
-   "t": "Intel Stock Rises On Talk Of Fab Deal With SK Hynix",
-   "tags": [],
-   "url": "https://www.investors.com/news/technology/intel-stock-possible-sk-hynix-fab-deal/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/fd5c53d2f47a7738ddb28ebb258ebaea.jpg",
-   "t_ko": "Intel, SK Hynix와 팹 협력 기대감에 주가 상승",
-   "t_id": "Saham Intel Naik di Tengah Rumor Kesepakatan Pabrik dengan SK Hynix"
-  },
-  {
-   "ts": "2026-09-16T21:24:13+07:00",
-   "date": "2026-09-16",
-   "time": "21:24",
-   "src": "Yahoo Finance",
-   "t": "Billionaire Ray Dalio’s Bridgewater’s and Cathie Wood’s ARK Portfolios: 2 Stocks They Both Own",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/billionaire-ray-dalio-bridgewater-cathie-142413224.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/a37b66a628fbb571ddd7e31262a199b0.png",
-   "t_ko": "Ray Dalio의 Bridgewater와 Cathie Wood의 ARK 공통 보유 종목 2선",
-   "t_id": "Portofolio Bridgewater Milik Milyarder Ray Dalio & ARK Milik Cathie Wood: 2 Saham Pilihan Bersama"
-  },
-  {
    "ts": "2026-09-16T21:19:00+07:00",
    "date": "2026-09-16",
    "time": "21:19",
@@ -17560,40 +17559,6 @@
    "url": "https://mediaindonesia.com/politik-dan-hukum/934218/ini-3-masalah-utama-yang-jadi-fokus-presiden-prabowo",
    "t_ko": "Prabowo 대통령의 핵심 집중 과제 3가지",
    "t_id": "Ini 3 Masalah Utama yang Jadi Fokus Presiden Prabowo"
-  },
-  {
-   "ts": "2026-09-16T21:17:00+07:00",
-   "date": "2026-09-16",
-   "time": "21:17",
-   "src": "Katadata",
-   "t": "Suahasil Evaluasi Perombakan Pejabat Kemenkeu di Era Purbaya",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/nasional/6aaaa5121287d/suahasil-evaluasi-perombakan-pejabat-kemenkeu-di-era-purbaya",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/15/2026_09_15-14_27_00_b5c2abba-b0dc-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "Suahasil, Purbaya 체제 기획재정부 고위직 개편 평가",
-   "t_id": "Suahasil Evaluasi Perombakan Pejabat Kemenkeu di Era Purbaya"
-  },
-  {
-   "ts": "2026-09-16T21:16:00+07:00",
-   "date": "2026-09-16",
-   "time": "21:16",
-   "src": "Media Indonesia",
-   "t": "Uang Rp300 Juta Jadi Gerbang Masuk OTT Pejabat Kementerian ATR/BPN",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/934216/uang-rp300-juta-jadi-gerbang-masuk-ott-pejabat-kementerian-atrbpn",
-   "t_ko": "ATR/BPN 부처 고위직, Rp3억 뇌물 수수 적발",
-   "t_id": "Uang Rp300 Juta Jadi Gerbang Masuk OTT Pejabat Kementerian ATR/BPN"
-  },
-  {
-   "ts": "2026-09-16T21:13:00+07:00",
-   "date": "2026-09-16",
-   "time": "21:13",
-   "src": "Media Indonesia",
-   "t": "Mengenal Aturan Saham Rp1 BEI: Pengertian dan Mekanisme Perdagangan",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/934214/mengenal-aturan-saham-rp1-bei-pengertian-dan-mekanisme-perdagangan",
-   "t_ko": "BEI Rp1 주식 규정의 이해와 거래 메커니즘",
-   "t_id": "Mengenal Aturan Saham Rp1 BEI: Pengertian dan Mekanisme Perdagangan"
   }
  ],
  "kisi_news": [
@@ -17798,9 +17763,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.66",
-   "d": -0.0,
-   "ytd": 1.4,
+   "v": "99.67",
+   "d": 0.01,
+   "ytd": 1.42,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17810,9 +17775,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.43",
-   "d": -3.2,
-   "ytd": 76.65,
+   "v": "101.71",
+   "d": -2.93,
+   "ytd": 77.13,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17822,9 +17787,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,394.2",
-   "d": 0.62,
-   "ytd": 1.59,
+   "v": "4,392.2",
+   "d": 0.57,
+   "ytd": 1.54,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17846,9 +17811,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,166",
-   "d": 1.69,
-   "ytd": -3.09,
+   "v": "16,126",
+   "d": 1.44,
+   "ytd": -3.33,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18367,6 +18332,213 @@
    "title_id": "Indeks Manufaktur Empire State NY (Sep)"
   },
   {
+   "date": "2026-09-15",
+   "t": "BMRI",
+   "kind": "div",
+   "imp": 3,
+   "title": "배당부 마감(cum) · 중간현금배당 Rp66/주 — Bank Mandiri",
+   "src": "IDX 캘린더",
+   "title_id": "cum Dividen Tunai Interim PT Bank Mandiri (Persero) Tbk — Rp66/saham",
+   "dps": 66.0,
+   "pay": "2026-10-02",
+   "yld": "12.51%",
+   "country": "ID",
+   "title_ko": "배당부 마감(cum) · 중간현금배당 Rp66/주 — Bank Mandiri"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "PSAB",
+   "kind": "div",
+   "imp": 3,
+   "title": "배당부 마감(cum) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK",
+   "src": "IDX 캘린더",
+   "title_id": "cum Dividen Tunai Interim J RESOURCES ASIA PASIFIK Tbk — Rp30/saham",
+   "dps": 30.0,
+   "pay": "2026-09-29",
+   "yld": "23.68%",
+   "country": "ID",
+   "title_ko": "배당부 마감(cum) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "DKFT",
+   "kind": "div",
+   "imp": 1,
+   "title": "배당 기준일(DPS) · 중간현금배당 Rp30/주 — Central Omega Resources",
+   "src": "IDX 캘린더",
+   "title_id": "DPS Dividen Tunai Interim Central Omega Resources Tbk — Rp30/saham",
+   "dps": 30.0,
+   "pay": "2026-09-21",
+   "yld": "12.86%",
+   "country": "ID",
+   "title_ko": "배당 기준일(DPS) · 중간현금배당 Rp30/주 — Central Omega Resources"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "BBTN",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Bank Tabungan Negara 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  PT Bank Tabungan Negara (Persero) Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · Bank Tabungan Negara 연례 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "TINS",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · TIMAH 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  PT TIMAH (Persero) Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · TIMAH 연례 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "MIKA",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Mitra Keluarga Karyasehat 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  PT Mitra Keluarga Karyasehat Tbk.",
+   "country": "ID",
+   "title_ko": "기업설명회 · Mitra Keluarga Karyasehat 연례 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "ASII",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Astra International 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  Astra International Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · Astra International 연례 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "UNTR",
+   "kind": "corp",
+   "imp": 3,
+   "title": "자사주 · 자사주 매입 보고",
+   "src": "IDX 캘린더",
+   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
+   "country": "ID",
+   "title_ko": "자사주 · 자사주 매입 보고"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "ANTM",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · ANTAM 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  PT ANTAM (Persero) Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · ANTAM 연례 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "WIKA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "수쿠크보유자집회 소집 · SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020",
+   "src": "IDX 캘린더",
+   "title_id": "RUPSU · PANGGILAN RupSu emisi SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020",
+   "country": "ID",
+   "title_ko": "수쿠크보유자집회 소집 · SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "WIKA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "수쿠크보유자집회 소집 · Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022",
+   "src": "IDX 캘린더",
+   "title_id": "RUPSU · PANGGILAN RupSu emisi Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022",
+   "country": "ID",
+   "title_ko": "수쿠크보유자집회 소집 · Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "KKGI",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Resource Alam Indonesia 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Resource Alam Indonesia",
+   "country": "ID",
+   "title_ko": "주주총회 · Resource Alam Indonesia 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "PTPP",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · PP 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS PP",
+   "country": "ID",
+   "title_ko": "주주총회 · PP 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "WIKA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "수쿠크보유자집회 계획 · SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020",
+   "src": "IDX 캘린더",
+   "title_id": "RUPSU · RENCANA RupSu emisi SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020",
+   "country": "ID",
+   "title_ko": "수쿠크보유자집회 계획 · SUKUK MUDHARABAH BERKELANJUTAN I WIJAYA KARYA TAHAP I TAHUN 2020"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "WIKA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "수쿠크보유자집회 계획 · Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022",
+   "src": "IDX 캘린더",
+   "title_id": "RUPSU · RENCANA RupSu emisi Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022",
+   "country": "ID",
+   "title_ko": "수쿠크보유자집회 계획 · Sukuk Mudharabah Berkelanjutan III Wijaya Karya Tahap I Tahun 2022"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "GGRM",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Gudang Garam 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  Gudang Garam Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · Gudang Garam 연례 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "RATU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Raharja Energi Cepu 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  PT Raharja Energi Cepu Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · Raharja Energi Cepu 연례 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "LPCK",
+   "kind": "corp",
+   "imp": 2,
+   "title": "Luar Biasa · Hasil RUPS Luar Biasa  Lippo Cikarang Tbk",
+   "src": "IDX 캘린더",
+   "country": "ID",
+   "title_ko": "임시 · Lippo Cikarang 임시주주총회 결과",
+   "title_id": "Hasil RUPSLB Lippo Cikarang Tbk"
+  },
+  {
    "date": "2026-09-16",
    "time": "00:00",
    "kind": "macro",
@@ -18505,6 +18677,213 @@
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
    "title_id": "GDPNow The Fed Atlanta (Q3)"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "BMRI",
+   "kind": "div",
+   "imp": 3,
+   "title": "배당락(ex) · 중간현금배당 Rp66/주 — Bank Mandiri",
+   "src": "IDX 캘린더",
+   "title_id": "ex Dividen Tunai Interim PT Bank Mandiri (Persero) Tbk — Rp66/saham",
+   "dps": 66.0,
+   "pay": "2026-10-02",
+   "yld": "12.51%",
+   "country": "ID",
+   "title_ko": "배당락(ex) · 중간현금배당 Rp66/주 — Bank Mandiri"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "BBCA",
+   "kind": "div",
+   "imp": 1,
+   "title": "배당 지급 · 중간현금배당 Rp25/주 — Bank Central Asia",
+   "src": "IDX 캘린더",
+   "title_id": "Pembayaran Dividen Tunai Interim PT Bank Central Asia Tbk. — Rp25/saham",
+   "dps": 25.0,
+   "pay": "2026-09-16",
+   "yld": "5.88%",
+   "country": "ID",
+   "title_ko": "배당 지급 · 중간현금배당 Rp25/주 — Bank Central Asia"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "PSAB",
+   "kind": "div",
+   "imp": 3,
+   "title": "배당락(ex) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK",
+   "src": "IDX 캘린더",
+   "title_id": "ex Dividen Tunai Interim J RESOURCES ASIA PASIFIK Tbk — Rp30/saham",
+   "dps": 30.0,
+   "pay": "2026-09-29",
+   "yld": "23.68%",
+   "country": "ID",
+   "title_ko": "배당락(ex) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "INCO",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Vale Indonesia 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  Vale Indonesia Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · Vale Indonesia 연례 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "UNTR",
+   "kind": "corp",
+   "imp": 3,
+   "title": "자사주 · 자사주 매입 보고",
+   "src": "IDX 캘린더",
+   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
+   "country": "ID",
+   "title_ko": "자사주 · 자사주 매입 보고"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "KLBF",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Kalbe Farma 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  Kalbe Farma Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · Kalbe Farma 연례 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "MDLN",
+   "kind": "corp",
+   "imp": 2,
+   "title": "Luar Biasa · Hasil RUPS Luar Biasa  PT Modernland Realty Tbk.",
+   "src": "IDX 캘린더",
+   "country": "ID",
+   "title_ko": "임시 · PT Modernland Realty Tbk RUPSLB 결과",
+   "title_id": "RUPSLB · Hasil RUPS Luar Biasa PT Modernland Realty Tbk"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "MGLV",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · NexAI Digital Infrastruktur Public Expose 자료",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Materi public expose Insidentil  PT NexAI Digital Infrastruktur Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · NexAI Digital Infrastruktur Public Expose 자료"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "PNGO",
+   "kind": "corp",
+   "imp": 2,
+   "title": "Luar Biasa · Hasil RUPS Luar Biasa  PT AEP Pinago Plantations Tbk",
+   "src": "IDX 캘린더",
+   "country": "ID",
+   "title_ko": "임시 · AEP Pinago Plantations 임시주주총회 결과",
+   "title_id": "Hasil RUPSLB PT AEP Pinago Plantations Tbk"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "PTPP",
+   "kind": "corp",
+   "imp": 2,
+   "title": "Luar Biasa · Hasil RUPS Luar Biasa  PP (Persero) Tbk",
+   "src": "IDX 캘린더",
+   "country": "ID",
+   "title_ko": "임시 · PP (Persero) 임시주주총회 결과",
+   "title_id": "Hasil RUPSLB PP (Persero) Tbk"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "VTNY",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Venteny Fortuna International 연례 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Tahunan  PT Venteny Fortuna International Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · Venteny Fortuna International 연례 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "BCIC",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Bank JTrust Indonesia 연례 Public Expose 계획",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Rencana public expose Tahunan 2025 PT Bank JTrust Indonesia Tbk.",
+   "country": "ID",
+   "title_ko": "기업설명회 · Bank JTrust Indonesia 연례 Public Expose 계획"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "GRPH",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Griptha Putra Persada 수시 Public Expose 결과",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Hasil Insidentil  PT Griptha Putra Persada Tbk.",
+   "country": "ID",
+   "title_ko": "기업설명회 · Griptha Putra Persada 수시 Public Expose 결과"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "BBHI",
+   "kind": "corp",
+   "imp": 2,
+   "title": "자사주 · 자사주 매입 보고",
+   "src": "IDX 캘린더",
+   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
+   "country": "ID",
+   "title_ko": "자사주 · 자사주 매입 보고"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "ERAA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "자사주 · 자사주 매입 보고",
+   "src": "IDX 캘린더",
+   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
+   "country": "ID",
+   "title_ko": "자사주 · 자사주 매입 보고"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "MKNT",
+   "kind": "corp",
+   "imp": 2,
+   "title": "Luar Biasa · Hasil RUPS Luar Biasa  PT Mitra Komunikasi Nusantara Tbk.",
+   "src": "IDX 캘린더",
+   "country": "ID",
+   "title_ko": "임시 · Mitra Komunikasi Nusantara 임시주주총회 결과",
+   "title_id": "Hasil RUPSLB PT Mitra Komunikasi Nusantara Tbk"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "AKKU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Anugerah Kagum Karya Utama Public Expose 자료",
+   "src": "IDX 캘린더",
+   "title_id": "Public Expose · Materi public expose Insidentil  PT Anugerah Kagum Karya Utama Tbk",
+   "country": "ID",
+   "title_ko": "기업설명회 · Anugerah Kagum Karya Utama Public Expose 자료"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "PRDA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "자사주 · 자사주 매입 보고",
+   "src": "IDX 캘린더",
+   "title_id": "Buyback · Laporan Pembelian Kembali Saham (Buyback)",
+   "country": "ID",
+   "title_ko": "자사주 · 자사주 매입 보고"
   },
   {
    "date": "2026-09-17",
@@ -18661,6 +19040,111 @@
    "title_id": "Penjualan Rumah Tertunda AS (MoM) (Agu)"
   },
   {
+   "date": "2026-09-17",
+   "t": "BMRI",
+   "kind": "div",
+   "imp": 1,
+   "title": "배당 기준일(DPS) · 중간현금배당 Rp66/주 — Bank Mandiri",
+   "src": "IDX 캘린더",
+   "title_id": "DPS Dividen Tunai Interim PT Bank Mandiri (Persero) Tbk — Rp66/saham",
+   "dps": 66.0,
+   "pay": "2026-10-02",
+   "yld": "12.51%",
+   "country": "ID",
+   "title_ko": "배당 기준일(DPS) · 중간현금배당 Rp66/주 — Bank Mandiri"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "PSAB",
+   "kind": "div",
+   "imp": 1,
+   "title": "배당 기준일(DPS) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK",
+   "src": "IDX 캘린더",
+   "title_id": "DPS Dividen Tunai Interim J RESOURCES ASIA PASIFIK Tbk — Rp30/saham",
+   "dps": 30.0,
+   "pay": "2026-09-29",
+   "yld": "23.68%",
+   "country": "ID",
+   "title_ko": "배당 기준일(DPS) · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "BSDE",
+   "kind": "corp",
+   "imp": 3,
+   "title": "공시 · 이자 지급 — Kupon seri BSDE04ACN2 ke 3",
+   "src": "IDX 캘린더",
+   "title_id": "Keterbukaan · Informasi Pembayaran Kupon seri BSDE04ACN2 ke 3",
+   "country": "ID",
+   "title_ko": "공시 · 이자 지급 — Kupon seri BSDE04ACN2 ke 3"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "BSDE",
+   "kind": "corp",
+   "imp": 3,
+   "title": "공시 · 이자 지급 — Kupon seri SIBSDE02ACN2 ke 3",
+   "src": "IDX 캘린더",
+   "title_id": "Keterbukaan · Informasi Pembayaran Kupon seri SIBSDE02ACN2 ke 3",
+   "country": "ID",
+   "title_ko": "공시 · 이자 지급 — Kupon seri SIBSDE02ACN2 ke 3"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "HEXA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Hexindo Adiperkasa 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Hexindo Adiperkasa",
+   "country": "ID",
+   "title_ko": "주주총회 · Hexindo Adiperkasa 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "MBSS",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Mitrabahtera Segara Sejati 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Mitrabahtera Segara Sejati",
+   "country": "ID",
+   "title_ko": "주주총회 · Mitrabahtera Segara Sejati 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "AIMS",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Artha Mahiya Investama 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Artha Mahiya Investama",
+   "country": "ID",
+   "title_ko": "주주총회 · Artha Mahiya Investama 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "WIKA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "사채권자집회 계획 · Obligasi Berkelanjutan I Wijaya Karya Tahap II Tahun 2021",
+   "src": "IDX 캘린더",
+   "title_id": "RUPO · RENCANA Rupo emisi Obligasi Berkelanjutan I Wijaya Karya Tahap II Tahun 2021",
+   "country": "ID",
+   "title_ko": "사채권자집회 계획 · Obligasi Berkelanjutan I Wijaya Karya Tahap II Tahun 2021"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "WIKA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "수쿠크보유자집회 계획 · Sukuk Mudharabah Berkelanjutan I Wijaya Karya Tahap II Tahun 2021",
+   "src": "IDX 캘린더",
+   "title_id": "RUPSU · RENCANA RupSu emisi Sukuk Mudharabah Berkelanjutan I Wijaya Karya Tahap II Tahun 2021",
+   "country": "ID",
+   "title_ko": "수쿠크보유자집회 계획 · Sukuk Mudharabah Berkelanjutan I Wijaya Karya Tahap II Tahun 2021"
+  },
+  {
    "date": "2026-09-18",
    "time": "00:00",
    "kind": "macro",
@@ -18745,6 +19229,75 @@
    "title_id": "Harga penutupan acuan rebalancing FTSE GEIS (efektif 21/9)"
   },
   {
+   "date": "2026-09-18",
+   "t": "CMRY",
+   "kind": "div",
+   "imp": 1,
+   "title": "배당 지급 · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy",
+   "src": "IDX 캘린더",
+   "title_id": "Pembayaran Dividen Tunai Interim PT Cisarua Mountain Dairy Tbk — Rp100/saham",
+   "dps": 100.0,
+   "pay": "2026-09-18",
+   "yld": "6.21%",
+   "country": "ID",
+   "title_ko": "배당 지급 · 중간현금배당 Rp100/주 — Cisarua Mountain Dairy"
+  },
+  {
+   "date": "2026-09-18",
+   "t": "BVIC",
+   "kind": "corp",
+   "imp": 2,
+   "title": "공시 · 이자 지급 — Kupon seri BVIC03SBCN2 ke 5",
+   "src": "IDX 캘린더",
+   "title_id": "Keterbukaan · Informasi Pembayaran Kupon seri BVIC03SBCN2 ke 5",
+   "country": "ID",
+   "title_ko": "공시 · 이자 지급 — Kupon seri BVIC03SBCN2 ke 5"
+  },
+  {
+   "date": "2026-09-18",
+   "t": "VICO",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Victoria Investama 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Victoria Investama",
+   "country": "ID",
+   "title_ko": "주주총회 · Victoria Investama 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-18",
+   "t": "EURO",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Estee Gold Feet 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Estee Gold Feet",
+   "country": "ID",
+   "title_ko": "주주총회 · Estee Gold Feet 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-18",
+   "t": "HRUM",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Harum Energy 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Harum Energy",
+   "country": "ID",
+   "title_ko": "주주총회 · Harum Energy 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-18",
+   "t": "PBSA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Paramita Bangun Sarana 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Paramita Bangun Sarana",
+   "country": "ID",
+   "title_ko": "주주총회 · Paramita Bangun Sarana 주주총회 개최 예정"
+  },
+  {
    "date": "2026-09-19",
    "time": "00:00",
    "kind": "macro",
@@ -18815,6 +19368,75 @@
    "title_id": "Posisi Bersih Spekulatif CFTC S&P 500"
   },
   {
+   "date": "2026-09-21",
+   "t": "DKFT",
+   "kind": "div",
+   "imp": 1,
+   "title": "배당 지급 · 중간현금배당 Rp30/주 — Central Omega Resources",
+   "src": "IDX 캘린더",
+   "title_id": "Pembayaran Dividen Tunai Interim Central Omega Resources Tbk — Rp30/saham",
+   "dps": 30.0,
+   "pay": "2026-09-21",
+   "yld": "12.86%",
+   "country": "ID",
+   "title_ko": "배당 지급 · 중간현금배당 Rp30/주 — Central Omega Resources"
+  },
+  {
+   "date": "2026-09-21",
+   "t": "FORU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "tanggal cum HMETD Fortune Indonesia Tbk · tanggal cum HMETD Fortune Indonesia Tbk",
+   "src": "IDX 캘린더",
+   "country": "ID",
+   "title_ko": "Fortune Indonesia(FORU), 유상증자 신주인수권 매매 마감일 확정",
+   "title_id": "Tanggal Cum HMETD Fortune Indonesia Tbk · Tanggal Cum HMETD Fortune Indonesia Tbk"
+  },
+  {
+   "date": "2026-09-21",
+   "t": "PGUN",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Pradiksi Gunatama 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Pradiksi Gunatama",
+   "country": "ID",
+   "title_ko": "주주총회 · Pradiksi Gunatama 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-21",
+   "t": "JARR",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Jhonlin Agro Raya 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Jhonlin Agro Raya",
+   "country": "ID",
+   "title_ko": "주주총회 · Jhonlin Agro Raya 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-21",
+   "t": "POST",
+   "kind": "corp",
+   "imp": 2,
+   "title": "사채권자집회 소집 · Obligasi I Pos Indonesia Tahun 2022",
+   "src": "IDX 캘린더",
+   "title_id": "RUPO · PANGGILAN Rupo emisi Obligasi I Pos Indonesia Tahun 2022",
+   "country": "ID",
+   "title_ko": "사채권자집회 소집 · Obligasi I Pos Indonesia Tahun 2022"
+  },
+  {
+   "date": "2026-09-21",
+   "t": "POST",
+   "kind": "corp",
+   "imp": 2,
+   "title": "수쿠크보유자집회 소집 · Sukuk Ijarah Berkelanjutan I Pos Indonesia Tahap I Tahun 2024",
+   "src": "IDX 캘린더",
+   "title_id": "RUPSU · PANGGILAN RupSu emisi Sukuk Ijarah Berkelanjutan I Pos Indonesia Tahap I Tahun 2024",
+   "country": "ID",
+   "title_ko": "수쿠크보유자집회 소집 · Sukuk Ijarah Berkelanjutan I Pos Indonesia Tahap I Tahun 2024"
+  },
+  {
    "date": "2026-09-22",
    "time": "19:15",
    "kind": "macro",
@@ -18841,6 +19463,50 @@
    "src": "investing.com",
    "title_ko": "Williams 연준 위원 연설",
    "title_id": "Pidato Anggota FOMC Williams AS"
+  },
+  {
+   "date": "2026-09-22",
+   "t": "DMAS",
+   "kind": "corp",
+   "imp": 3,
+   "title": "주주총회 · Puradelta Lestari 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Puradelta Lestari",
+   "country": "ID",
+   "title_ko": "주주총회 · Puradelta Lestari 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-22",
+   "t": "SILO",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Siloam International Hospitals 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Siloam International Hospitals",
+   "country": "ID",
+   "title_ko": "주주총회 · Siloam International Hospitals 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-22",
+   "t": "OILS",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Indo Oil Perkasa 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Indo Oil Perkasa",
+   "country": "ID",
+   "title_ko": "주주총회 · Indo Oil Perkasa 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-22",
+   "t": "FORU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "tanggal ex HMETD Fortune Indonesia Tbk · tanggal ex HMETD Fortune Indonesia Tbk",
+   "src": "IDX 캘린더",
+   "country": "ID",
+   "title_ko": "Fortune Indonesia(FORU), 유상증자 신주인수권 락일 확정",
+   "title_id": "Tanggal Ex HMETD Fortune Indonesia Tbk · Tanggal Ex HMETD Fortune Indonesia Tbk"
   },
   {
    "date": "2026-09-23",
@@ -18955,6 +19621,75 @@
    "title_id": "PMI Komposit S&P Global (Sep)"
   },
   {
+   "date": "2026-09-23",
+   "t": "TRIS",
+   "kind": "div",
+   "imp": 1,
+   "title": "배당 지급 · 중간현금배당 Rp2.27/주 — Trisula International",
+   "src": "IDX 캘린더",
+   "title_id": "Pembayaran Dividen Tunai Interim Trisula International Tbk — Rp2.27/saham",
+   "dps": 2.27,
+   "pay": "2026-09-23",
+   "yld": "5.66%",
+   "country": "ID",
+   "title_ko": "배당 지급 · 중간현금배당 Rp2.27/주 — Trisula International"
+  },
+  {
+   "date": "2026-09-23",
+   "t": "FORU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "tanggal DPS HMETD Fortune Indonesia Tbk · tanggal DPS HMETD Fortune Indonesia Tbk",
+   "src": "IDX 캘린더",
+   "country": "ID",
+   "title_ko": "Fortune Indonesia(FORU), 유상증자 신주인수권(HMETD) 배정 기준일(주주명부 확정일) 확정",
+   "title_id": "Tanggal DPS HMETD Fortune Indonesia Tbk · Tanggal DPS HMETD Fortune Indonesia Tbk"
+  },
+  {
+   "date": "2026-09-23",
+   "t": "XCID",
+   "kind": "corp",
+   "imp": 2,
+   "title": "수익자총회 소집 · Pemberitahuan Rencana dan Panggilan RUPUP DIRE Ciptadana Properti Ritel Indonesia seri",
+   "src": "IDX 캘린더",
+   "title_id": "RUPUP · Pemberitahuan Rencana dan Panggilan RUPUP DIRE Ciptadana Properti Ritel Indonesia seri",
+   "country": "ID",
+   "title_ko": "수익자총회 소집 · Pemberitahuan Rencana dan Panggilan RUPUP DIRE Ciptadana Properti Ritel Indonesia seri"
+  },
+  {
+   "date": "2026-09-23",
+   "t": "LUCK",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Sentral Mitra Informatika 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Sentral Mitra Informatika",
+   "country": "ID",
+   "title_ko": "주주총회 · Sentral Mitra Informatika 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-23",
+   "t": "UANG",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Pakuan 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Pakuan",
+   "country": "ID",
+   "title_ko": "주주총회 · Pakuan 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-23",
+   "t": "IPCM",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Jasa Armada Indonesia 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Jasa Armada Indonesia",
+   "country": "ID",
+   "title_ko": "주주총회 · Jasa Armada Indonesia 주주총회 개최 예정"
+  },
+  {
    "date": "2026-09-24",
    "time": "00:00",
    "kind": "macro",
@@ -19037,6 +19772,39 @@
    "src": "investing.com",
    "title_ko": "8월 신규주택판매",
    "title_id": "Penjualan Rumah Baru AS (Agu)"
+  },
+  {
+   "date": "2026-09-24",
+   "t": "IRSX",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Folago Global Nusantara 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Folago Global Nusantara",
+   "country": "ID",
+   "title_ko": "주주총회 · Folago Global Nusantara 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-24",
+   "t": "MAYA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Bank Mayapada Internasional 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Bank Mayapada Internasional",
+   "country": "ID",
+   "title_ko": "주주총회 · Bank Mayapada Internasional 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-24",
+   "t": "FORU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "tanggal distribusi HMETD Fortune Indonesia Tbk · tanggal distribusi HMETD Fortune Indonesia Tbk",
+   "src": "IDX 캘린더",
+   "country": "ID",
+   "title_ko": "Fortune Indonesia(FORU), 유상증자 신주인수권 배정일 확정",
+   "title_id": "Tanggal Distribusi HMETD Fortune Indonesia Tbk · Tanggal Distribusi HMETD Fortune Indonesia Tbk"
   },
   {
    "date": "2026-09-25",
@@ -19123,6 +19891,50 @@
    "title_id": "Ekspektasi Konsumen Michigan (Sep)"
   },
   {
+   "date": "2026-09-25",
+   "t": "LMPI",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Langgeng Makmur Industri 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Langgeng Makmur Industri",
+   "country": "ID",
+   "title_ko": "주주총회 · Langgeng Makmur Industri 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-25",
+   "t": "CRAB",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Toba Surimi Industries 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Toba Surimi Industries",
+   "country": "ID",
+   "title_ko": "주주총회 · Toba Surimi Industries 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-25",
+   "t": "SMCB",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Solusi Bangun Indonesia 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Solusi Bangun Indonesia",
+   "country": "ID",
+   "title_ko": "주주총회 · Solusi Bangun Indonesia 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-25",
+   "t": "BIPP",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Bhuwanatala Indah Permai 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Bhuwanatala Indah Permai",
+   "country": "ID",
+   "title_ko": "주주총회 · Bhuwanatala Indah Permai 주주총회 개최 예정"
+  },
+  {
    "date": "2026-09-26",
    "time": "00:00",
    "kind": "macro",
@@ -19135,6 +19947,28 @@
    "src": "investing.com",
    "title_ko": "미국 Baker Hughes 원유 시추기 수",
    "title_id": "Jumlah Rig Minyak Baker Hughes AS"
+  },
+  {
+   "date": "2026-09-28",
+   "t": "DGWG",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Delta Giri Wacana 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Delta Giri Wacana",
+   "country": "ID",
+   "title_ko": "주주총회 · Delta Giri Wacana 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-28",
+   "t": "BVIC",
+   "kind": "corp",
+   "imp": 2,
+   "title": "공시 · 이자 지급 — Kupon seri BVIC04CN2 ke 4",
+   "src": "IDX 캘린더",
+   "title_id": "Keterbukaan · Informasi Pembayaran Kupon seri BVIC04CN2 ke 4",
+   "country": "ID",
+   "title_ko": "공시 · 이자 지급 — Kupon seri BVIC04CN2 ke 4"
   },
   {
    "date": "2026-09-29",
@@ -19177,6 +20011,53 @@
    "src": "investing.com",
    "title_ko": "8월 JOLTS 구인공고",
    "title_id": "Lowongan Kerja JOLTS AS (Agu)"
+  },
+  {
+   "date": "2026-09-29",
+   "t": "PSAB",
+   "kind": "div",
+   "imp": 1,
+   "title": "배당 지급 · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK",
+   "src": "IDX 캘린더",
+   "title_id": "Pembayaran Dividen Tunai Interim J RESOURCES ASIA PASIFIK Tbk — Rp30/saham",
+   "dps": 30.0,
+   "pay": "2026-09-29",
+   "yld": "23.68%",
+   "country": "ID",
+   "title_ko": "배당 지급 · 중간현금배당 Rp30/주 — J RESOURCES ASIA PASIFIK"
+  },
+  {
+   "date": "2026-09-29",
+   "t": "ISAT",
+   "kind": "corp",
+   "imp": 3,
+   "title": "주주총회 · Indosat 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Indosat",
+   "country": "ID",
+   "title_ko": "주주총회 · Indosat 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-29",
+   "t": "OBMD",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · OBM Drilchem 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS OBM Drilchem",
+   "country": "ID",
+   "title_ko": "주주총회 · OBM Drilchem 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-29",
+   "t": "TUGU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Asuransi Tugu Pratama Indonesia 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Asuransi Tugu Pratama Indonesia",
+   "country": "ID",
+   "title_ko": "주주총회 · Asuransi Tugu Pratama Indonesia 주주총회 개최 예정"
   },
   {
    "date": "2026-09-30",
@@ -19317,6 +20198,83 @@
    "src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
    "title_id": "GDPNow The Fed Atlanta (Q3)"
+  },
+  {
+   "date": "2026-09-30",
+   "t": "TLKM",
+   "kind": "corp",
+   "imp": 3,
+   "title": "주주총회 · Telkom Indonesia 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Telkom Indonesia",
+   "country": "ID",
+   "title_ko": "주주총회 · Telkom Indonesia 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-30",
+   "t": "ASBI",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Asuransi Bintang 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Asuransi Bintang",
+   "country": "ID",
+   "title_ko": "주주총회 · Asuransi Bintang 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-30",
+   "t": "AMAR",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Bank Amar Indonesia 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Bank Amar Indonesia",
+   "country": "ID",
+   "title_ko": "주주총회 · Bank Amar Indonesia 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-30",
+   "t": "DMND",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Diamond Food Indonesia 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Diamond Food Indonesia",
+   "country": "ID",
+   "title_ko": "주주총회 · Diamond Food Indonesia 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-30",
+   "t": "SOFA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Solusi Environment Asia 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Solusi Environment Asia",
+   "country": "ID",
+   "title_ko": "주주총회 · Solusi Environment Asia 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-30",
+   "t": "ADHI",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Adhi Karya 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Adhi Karya",
+   "country": "ID",
+   "title_ko": "주주총회 · Adhi Karya 주주총회 개최 예정"
+  },
+  {
+   "date": "2026-09-30",
+   "t": "VISI",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Satu Visi Putra 주주총회 개최 예정",
+   "src": "IDX 캘린더",
+   "title_id": "RUPS · Pemberitahuan RUPS Satu Visi Putra",
+   "country": "ID",
+   "title_ko": "주주총회 · Satu Visi Putra 주주총회 개최 예정"
   }
  ],
  "announcements": [
@@ -23742,10 +24700,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-16 22:17",
-  "pc_age_min": 10,
-  "news_ai_cache": 45,
-  "news_ai_hit": 34,
+  "idx_from_pc": "2026-09-16 22:31",
+  "pc_age_min": 5,
+  "news_ai_cache": 44,
+  "news_ai_hit": 32,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25507,9 +26465,9 @@
    "t_id": "IHSG Melemah 6 Hari Beruntun, Peluang Suku Bunga The Fed Naik Capai 92%"
   },
   {
-   "ts": "2026-09-16T22:03:57+07:00",
+   "ts": "2026-09-16T22:33:24+07:00",
    "date": "2026-09-16",
-   "time": "22:03",
+   "time": "22:33",
    "src": "CNBC",
    "t": "Oil prices fall after U.S. says damaged Saudi pipeline will restart operations in days",
    "tags": [],
@@ -25530,7 +26488,7 @@
     "geopolitik"
    ],
    "score": 315.0,
-   "srcs": 4
+   "srcs": 6
   }
  ],
  "daylog": {
@@ -42192,11 +43150,11 @@
    "ratio": 4.5,
    "ev_ko": "인허가·생산차질",
    "ev_id": "Izin & produksi",
-   "hl": "BYAN, 불가항력 선언에 ESDM은 RKAB 수정안 심사 중",
-   "hl_id": "BYAN Umumkan Kahar, ESDM Tegaskan Revisi RKAB Masih Dievaluasi",
-   "url": "https://finance.detik.com/energi/d-8665301/byan-umumkan-kahar-esdm-tegaskan-revisi-rkab-masih-dievaluasi",
-   "score": 98.4,
-   "s_news": 100,
+   "hl": "BYAN, 2026년 RKAB 미발급으로 불가항력 선언",
+   "hl_id": "RKAB 2026 Belum Terbit, BYAN Umumkan Force Majeure",
+   "url": "https://www.liputan6.com/saham/read/8291817/rkab-2026-belum-terbit-byan-umumkan-force-majeure",
+   "score": 97.8,
+   "s_news": 98,
    "s_size": 89,
    "s_surge": 100,
    "s_move": 100,
@@ -42205,7 +43163,7 @@
    "alpha": 11.65,
    "vrank": 21,
    "flow": -35.35,
-   "srcs": 2
+   "srcs": 1
   },
   {
    "t": "BMRI",
@@ -42976,6 +43934,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 22:21"
+  "announcements": "2026-09-16 22:27"
  }
 }
