@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-16 23:03",
+ "updated": "2026-09-16 23:09",
  "delay_min": 15,
  "fx_basis": "12.95 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,368 · 21:20 Yahoo",
- "idr_per_krw": 12.9479,
+ "idr_per_krw": 12.9477,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -331,13 +331,13 @@
   "prev": 6461.15,
   "ytd": -25.56,
   "m1": -0.2,
-  "value_idr": 10929839903866.678,
+  "value_idr": 10404950084700.006,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-16 22:59",
+  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-16 22:59",
   "rank_asof": null,
   "rank_date": "2026-09-16",
-  "adv": 215,
+  "adv": 214,
   "dec": 459,
   "unch": 159,
   "foreign_net_idr": -588236609776.6709,
@@ -362,22 +362,6 @@
    "lo": 4260.0,
    "ratio": 1.1,
    "fnet": -238243809574.33224,
-   "live": 0
-  },
-  {
-   "t": "AMMN",
-   "n": "Amman Mineral Internasional",
-   "px": 5150.0,
-   "prev": 5050.0,
-   "pct": 1.98,
-   "val": 524889819166.6666,
-   "vol": 101755700.0,
-   "sh": 72518217656,
-   "mcap": 373468820928400.0,
-   "hi": 5275.0,
-   "lo": 5050.0,
-   "ratio": 1.6,
-   "fnet": -25228071582.095646,
    "live": 0
   },
   {
@@ -506,6 +490,22 @@
    "lo": 2650.0,
    "ratio": 0.8,
    "fnet": -18206585639.568623,
+   "live": 0
+  },
+  {
+   "t": "CUAN",
+   "n": "Petrindo Jaya Kreasi",
+   "px": 900.0,
+   "prev": 920.0,
+   "pct": -2.17,
+   "val": 190789305333.33334,
+   "vol": 208893400.0,
+   "sh": 112418900000,
+   "mcap": 101177010000000.0,
+   "hi": 940.0,
+   "lo": 900.0,
+   "ratio": 0.4,
+   "fnet": -17957411203.53252,
    "live": 0
   }
  ],
@@ -1134,22 +1134,6 @@
    "lo": 4260.0,
    "ratio": 1.1,
    "fnet": -238243809574.33224,
-   "live": 0
-  },
-  {
-   "t": "AMMN",
-   "n": "Amman Mineral Internasional",
-   "px": 5150.0,
-   "prev": 5050.0,
-   "pct": 1.98,
-   "val": 524889819166.6666,
-   "vol": 101755700.0,
-   "sh": 72518217656,
-   "mcap": 373468820928400.0,
-   "hi": 5275.0,
-   "lo": 5050.0,
-   "ratio": 1.6,
-   "fnet": -25228071582.095646,
    "live": 0
   },
   {
@@ -14550,16 +14534,12 @@
   {
    "name": "기초소재",
    "name_id": "Barang Baku",
-   "n": 93,
-   "adv": 21,
+   "n": 92,
+   "adv": 20,
    "dec": 56,
-   "val": 2577203901433.333,
-   "mcap": 1552941601449810.0,
+   "val": 2052314082266.667,
+   "mcap": 1179472780521410.0,
    "top": [
-    {
-     "t": "AMMN",
-     "pct": 1.98
-    },
     {
      "t": "TPIA",
      "pct": -0.54
@@ -14595,10 +14575,14 @@
     {
      "t": "INCO",
      "pct": 4.09
+    },
+    {
+     "t": "INKP",
+     "pct": -0.86
     }
    ],
-   "fnet": 160608709550,
-   "pct": 0.09,
+   "fnet": 185836781133,
+   "pct": -0.5,
    "fbuy_top": [
     {
      "t": "BRMS",
@@ -14621,12 +14605,6 @@
    ],
    "fsell_top": [
     {
-     "t": "AMMN",
-     "n": "Amman Mineral Internasional",
-     "fnet": -25228071582,
-     "pct": 1.98
-    },
-    {
      "t": "BRPT",
      "n": "Barito Pacific",
      "fnet": -16865494277,
@@ -14637,6 +14615,12 @@
      "n": "TIMAH Tbk",
      "fnet": -7127807438,
      "pct": -1.27
+    },
+    {
+     "t": "SQMI",
+     "n": "Wilton Makmur Indonesia",
+     "fnet": -4922558505,
+     "pct": -8.42
     }
    ],
    "fnet_1w": 143413234604,
@@ -15765,10 +15749,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7616.31,
+   "px": 7614.81,
    "prev": 7585.51,
-   "pct": 0.41,
-   "asof": "23:00",
+   "pct": 0.39,
+   "asof": "23:05",
    "live": true,
    "spark": [
     7603.81,
@@ -15801,17 +15785,18 @@
     7621.74,
     7619.66,
     7618.28,
-    7616.31
+    7614.66,
+    7614.81
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26174.58,
+   "px": 26166.67,
    "prev": 25981.57,
-   "pct": 0.74,
-   "asof": "23:00",
+   "pct": 0.71,
+   "asof": "23:05",
    "live": true,
    "spark": [
     26099.29,
@@ -15844,17 +15829,18 @@
     26209.63,
     26196.12,
     26184.4,
-    26174.58
+    26166.8,
+    26166.67
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52120.15,
+   "px": 52120.47,
    "prev": 52092.45,
    "pct": 0.05,
-   "asof": "23:00",
+   "asof": "23:05",
    "live": true,
    "spark": [
     52038.56,
@@ -15887,7 +15873,8 @@
     52126.65,
     52124.58,
     52128.69,
-    52120.15
+    52112.86,
+    52120.47
    ]
   },
   {
@@ -17104,9 +17091,33 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-16T23:02:46.473045+07:00",
+   "ts": "2026-09-16T23:07:51.417342+07:00",
    "date": "2026-09-16",
-   "time": "23:02",
+   "time": "23:07",
+   "src": "Jawa Pos",
+   "t": "Laba Bersih BTN  Konsolidasi Tumbuh 35,89%, Kredit dan Pembiayaan yang Tembus Rp431 Triliun",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609160317/laba-bersih-btn-konsolidasi-tumbuh-3589-kredit-dan-pembiayaan-yang-tembus-rp431-triliun",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/16/ilustrasi-kantor-btn-jakarta-istimewa-SpZet.webp",
+   "t_ko": "BTN 연결 순이익 35.89% 증가, 대출 및 금융자산 Rp431조 돌파",
+   "t_id": "Laba Bersih BTN  Konsolidasi Tumbuh 35,89%, Kredit dan Pembiayaan yang Tembus Rp431 Triliun"
+  },
+  {
+   "ts": "2026-09-16T23:07:15+07:00",
+   "date": "2026-09-16",
+   "time": "23:07",
+   "src": "CNBC",
+   "t": "Yield on 10-year Treasury below 5% as investors await Fed decision",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html",
+   "g": 1,
+   "t_ko": "연준 결정 앞두고 10년물 미 국채금리 5% 하회",
+   "t_id": "Imbal Hasil US Treasury 10-Tahun di Bawah 5% Menanti Keputusan The Fed"
+  },
+  {
+   "ts": "2026-09-16T23:06:08+07:00",
+   "date": "2026-09-16",
+   "time": "23:06",
    "src": "Jawa Pos",
    "t": "7 Trainset KRL Jabodetabek Masuk Perbaikan, KAI Targetkan 1 Trainset Rampung Pekan Ini",
    "tags": [],
@@ -17126,6 +17137,55 @@
    ]
   },
   {
+   "ts": "2026-09-16T23:04:44+07:00",
+   "date": "2026-09-16",
+   "time": "23:04",
+   "src": "CNBC",
+   "t": "Jim Cramer says this enterprise software stock is 'way too cheap'",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/jim-cramer-says-this-enterprise-software-stock-is-way-too-cheap.html",
+   "g": 1,
+   "t_ko": "Jim Cramer, 해당 기업용 소프트웨어 주식 '저평가' 진단",
+   "t_id": "Jim Cramer Sebut Saham Perangkat Lunak Korporat Ini Terlalu Murah"
+  },
+  {
+   "ts": "2026-09-16T23:01:37+07:00",
+   "date": "2026-09-16",
+   "time": "23:01",
+   "src": "Bloomberg",
+   "t": "Kremlin Pushes to Keep Russia’s Edge as Biggest Wheat Exporter",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-16/kremlin-pushes-to-keep-russia-s-edge-as-biggest-wheat-exporter",
+   "g": 1,
+   "t_ko": "러시아, 세계 1위 밀 수출국 지위 수성 총력",
+   "t_id": "Kremlin Dorong Rusia Pertahankan Dominasi sebagai Eksportir Gandum Terbesar"
+  },
+  {
+   "ts": "2026-09-16T23:00:00+07:00",
+   "date": "2026-09-16",
+   "time": "23:00",
+   "src": "MarketWatch",
+   "t": "15 stocks that have grown dividends the most — and nearly all have beaten the S&P 500",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/15-stocks-that-have-grown-dividends-the-most-and-nearly-all-have-beaten-the-s-p-500-6d8923fc?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-24811711",
+   "t_ko": "배당 성장 상위 15개 종목 — 대부분 S&P 500 상회",
+   "t_id": "15 Saham dengan Pertumbuhan Dividen Tertinggi dan Nyaris Seluruhnya Kalahkan S&P 500"
+  },
+  {
+   "ts": "2026-09-16T22:57:59+07:00",
+   "date": "2026-09-16",
+   "time": "22:57",
+   "src": "Reuters",
+   "t": "Robust US retail sales underscore economy's resilience; inflation pressures building",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZVdndU5ZZ1lnT0pkMEZEVG4zTjdERHB1Z1Vwem1aUURBS3pxOUpDWXh3Tkd1NDFfWWp1eDJQNWdQanlhcHBJZTJJaWs3U1JXQTluNDV2dUp2QlFNZ1ZFU1Y5T295QXM1akRDdnM4UTBjR09XUjhYV0FUWUZCM3dldUJoTHloMWk1QlFzbjNxeWxRNktyOFVyb3AzYndmMGg1?oc=5",
+   "g": 1,
+   "t_ko": "미국 탄탄한 소매판매가 증명한 경제 회복력 — 인플레이션 압박 고조",
+   "t_id": "Penjualan Ritel AS yang Kuat Tegaskan Ketahanan Ekonomi, Tekanan Inflasi Meningkat"
+  },
+  {
    "ts": "2026-09-16T22:57:00+07:00",
    "date": "2026-09-16",
    "time": "22:57",
@@ -17134,8 +17194,8 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/makro/6aaabc5f5838b/prabowo-indonesia-kehilangan-us-908-miliar-akibat-underinvoicing-ekspor-sda",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/07/21/2026_07_21-20_05_00_2648f924-853c-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Prabowo: Indonesia Kehilangan US$ 908 Miliar akibat Underinvoicing Ekspor SDA",
-   "t_ko": "Prabowo, 천연자원 수출 저가 신고로 US$ 908억 손실 지적"
+   "t_ko": "Prabowo, 천연자원 수출 저가 신고로 US$ 908억 손실 지적",
+   "t_id": "Prabowo: Indonesia Kehilangan US$ 908 Miliar akibat Underinvoicing Ekspor SDA"
   },
   {
    "ts": "2026-09-16T22:56:00+07:00",
@@ -17145,8 +17205,33 @@
    "t": "BPP KAPMI Buka Peluang Ekspor UMKM ke Kazakhstan",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/934264/bpp-kapmi-buka-peluang-ekspor-umkm-ke-kazakhstan",
-   "t_id": "BPP KAPMI Buka Peluang Ekspor UMKM ke Kazakhstan",
-   "t_ko": "BPP KAPMI, 중소기업의 카자흐스탄 수출 길 개척"
+   "t_ko": "BPP KAPMI, 중소기업의 카자흐스탄 수출 길 개척",
+   "t_id": "BPP KAPMI Buka Peluang Ekspor UMKM ke Kazakhstan"
+  },
+  {
+   "ts": "2026-09-16T22:41:33+07:00",
+   "date": "2026-09-16",
+   "time": "22:41",
+   "src": "Bloomberg",
+   "t": "Goldman, GIC Among Buyers in NSE’s $703 Million Anchor Book",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-16/goldman-gic-among-buyers-in-nse-s-703-million-anchor-book",
+   "g": 1,
+   "t_ko": "Goldman·GIC 등, NSE 7억3,000만 달러 앵커 지분 인수",
+   "t_id": "Goldman dan GIC Masuk Deretan Pembeli di Anchor Book NSE USD 703 Juta"
+  },
+  {
+   "ts": "2026-09-16T22:39:15+07:00",
+   "date": "2026-09-16",
+   "time": "22:39",
+   "src": "Yahoo Finance",
+   "t": "Content Creators Are Seeking Equity Over Brand Deals",
+   "tags": [],
+   "url": "https://finance.yahoo.com/small-business/articles/content-creators-seeking-equity-over-153915383.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/black_enterprise_497/32f94ae2603dc60fa83383d482b35fd2.jpg",
+   "t_ko": "콘텐츠 크리에이터, 브랜드 협업 대신 지분 선호",
+   "t_id": "Kreator Konten Kini Incar Ekuitas Ketimbang Kesepakatan Merek"
   },
   {
    "ts": "2026-09-16T22:38:40+07:00",
@@ -17159,6 +17244,19 @@
    "g": 1,
    "t_ko": "미 하원, Lindsey Graham 추모 대러 제재법 통과 임박",
    "t_id": "DPR AS Siap Sahkan UU Sanksi Menyeluruh untuk Rusia untuk Hormati Lindsey Graham"
+  },
+  {
+   "ts": "2026-09-16T22:38:12+07:00",
+   "date": "2026-09-16",
+   "time": "22:38",
+   "src": "Yahoo Finance",
+   "t": "One Reason the Stakes Are So High for a Rate Increase",
+   "tags": [],
+   "url": "https://www.barrons.com/livecoverage/fed-meeting-rate-decision-september-warsh/card/one-reason-the-stakes-are-so-high-for-a-rate-increase-lB2nUPADwnk4MsVODrKO?siteid=yhoof2&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/Barrons.com/12ea0f43d8f8307249a68d1cb2e0587e.png",
+   "t_ko": "금리 인상 압박이 거센 배경",
+   "t_id": "Satu Alasan Taruhan Kenaikan Suku Bunga Begitu Tinggi"
   },
   {
    "ts": "2026-09-16T22:37:00+07:00",
@@ -17330,18 +17428,6 @@
    "t_id": "CEO Circle: UU Kejelasan Belum Mati"
   },
   {
-   "ts": "2026-09-16T22:19:35+07:00",
-   "date": "2026-09-16",
-   "time": "22:19",
-   "src": "Bloomberg",
-   "t": "Goldman Chief US Economist: Economy Isn't Overheating",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-16/goldman-chief-us-economist-economy-isn-t-overheating-video",
-   "g": 1,
-   "t_ko": "Goldman Sachs 수석 미국 이코노미스트, 경제 과열 아님 진단",
-   "t_id": "Kepala Ekonom AS Goldman: Ekonomi Tidak Overheating"
-  },
-  {
    "ts": "2026-09-16T22:18:00+07:00",
    "date": "2026-09-16",
    "time": "22:18",
@@ -17352,19 +17438,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/2026_08_14-16_37_00_27523958-97ce-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
    "t_ko": "Prabowo, Dadan Hindayana 부패 연루에 직접 검찰 송치 밝혔다고 언급",
    "t_id": "Prabowo Ungkit Dadan Hindayana Terjerat Korupsi: Saya yang Serahkan ke Kejaksaan"
-  },
-  {
-   "ts": "2026-09-16T22:16:13+07:00",
-   "date": "2026-09-16",
-   "time": "22:16",
-   "src": "Yahoo Finance",
-   "t": "S&P 500 Trucking Stock Craters On CFO's Warning",
-   "tags": [],
-   "url": "https://www.investors.com/news/sp-500-stocks-jb-hunt-cfo-earnings-oil-diesel-prices-iran-war/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/86872a53e567b1dd42e1f3edad214948.jpg",
-   "t_ko": "CFO 경고에 S&P 500 트럭 운송주 급락",
-   "t_id": "Saham Truk S&P 500 Anjlok Usai Peringatan CFO"
   },
   {
    "ts": "2026-09-16T22:12:32+07:00",
@@ -17391,31 +17464,6 @@
    ]
   },
   {
-   "ts": "2026-09-16T22:12:20+07:00",
-   "date": "2026-09-16",
-   "time": "22:12",
-   "src": "Bloomberg",
-   "t": "Stocks, Bonds Rise Ahead of Expected Fed Rate Hike",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-16/bloomberg-surveillance-9-16-2026-video",
-   "g": 1,
-   "t_ko": "미국 금리 인상 전망 앞서 주식·채권 동반 상승",
-   "t_id": "Saham dan Obligasi Naik Jelang Ekspektasi Kenaikan Suku Bunga The Fed"
-  },
-  {
-   "ts": "2026-09-16T22:10:43+07:00",
-   "date": "2026-09-16",
-   "time": "22:10",
-   "src": "Yahoo Finance",
-   "t": "Stock Market Today: Nasdaq, S&P 500 Up With Fed Decision Looming; Intel, Micron, Sandisk Rise (Live Coverage)",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-rate-hike-warsh-intel-sk-hynix/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/055e6190716b8ff765115a6c4fe3695a.jpg",
-   "t_ko": "연준 결정 앞두고 나스닥·S&P 500 상승 — Intel·Micron·Sandisk 강세",
-   "t_id": "Bursa Saham Hari Ini: Nasdaq, S&P 500 Menguat Jelang Keputusan Fed; Intel, Micron, Sandisk Naik"
-  },
-  {
    "ts": "2026-09-16T22:10:00+07:00",
    "date": "2026-09-16",
    "time": "22:10",
@@ -17436,19 +17484,6 @@
    "url": "https://mediaindonesia.com/ekonomi/934246/ojk-penghimpunan-dana-pasar-modal-tembus-rp1483-triliun",
    "t_ko": "OJK, 자본시장 자금 조달 규모 Rp148.3조 돌파",
    "t_id": "OJK: Penghimpunan Dana Pasar Modal Tembus Rp148,3 Triliun"
-  },
-  {
-   "ts": "2026-09-16T22:08:30+07:00",
-   "date": "2026-09-16",
-   "time": "22:08",
-   "src": "CNA",
-   "t": "US Fed to deliver rate decision with markets betting on hike",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/world/fed-rate-decision-markets-bet-hike-6389631",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--6Z99Od8n--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-15T074800Z_1_LYNXMPEM8E0LW_RTROPTP_3_USA-FED-INVESTORS.JPG?itok=XZSWYLkb",
-   "t_ko": "미 연준, 금리 인상 전망 속 금리 결정 발표 예정",
-   "t_id": "The Fed Putuskan Suku Bunga, Pasar Proyeksikan Kenaikan"
   },
   {
    "ts": "2026-09-16T22:04:37+07:00",
@@ -17475,19 +17510,6 @@
    "t_id": "DPD Titip Pesan Ini buat Suahasil Saat Susun APBN 2027"
   },
   {
-   "ts": "2026-09-16T21:59:57+07:00",
-   "date": "2026-09-16",
-   "time": "21:59",
-   "src": "FT",
-   "t": "AI must not outrun safety controls, DeepMind co-founder warns",
-   "tags": [],
-   "url": "https://www.ft.com/content/0fc3ae6d-732e-4f08-950e-8669b1fcfd8e?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F8769987f-4073-46ec-88d1-fbb2e89c62e3.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "DeepMind 공동 창업자, 안전 통제 없는 AI 개발 경고",
-   "t_id": "Pendiri Bersama DeepMind Peringatkan AI Tak Boleh Lampaui Kontrol Keamanan"
-  },
-  {
    "ts": "2026-09-16T21:59:00+07:00",
    "date": "2026-09-16",
    "time": "21:59",
@@ -17511,32 +17533,6 @@
    "t_id": "Perluas Akses Pasar, Koperasi Didorong Jadi Penggerak Ekonomi Berbasis Masyarakat"
   },
   {
-   "ts": "2026-09-16T21:56:12+07:00",
-   "date": "2026-09-16",
-   "time": "21:56",
-   "src": "Yahoo Finance",
-   "t": "SandiskCorp. (SNDK): AI Boom Fuels Attractive Storage Market Opportunity",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/sandiskcorp-sndk-ai-boom-fuels-145612588.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/6f9b63ea6a8b26f33c58e0485b351bdb.jpg",
-   "t_ko": "SanDisk, AI 훈풍 속 저장장치 시장 매력적 기회 확대",
-   "t_id": "SandiskCorp. (SNDK): Boom AI Pacu Peluang Pasar Penyimpanan Menarik"
-  },
-  {
-   "ts": "2026-09-16T21:52:38+07:00",
-   "date": "2026-09-16",
-   "time": "21:52",
-   "src": "BBC",
-   "t": "Henry Zeffman: Andy Burnham and his chancellor have a battle on their hands as the Budget approaches",
-   "tags": [],
-   "url": "https://www.bbc.co.uk/news/articles/cwp93jp4p7xpo?at_medium=RSS&at_campaign=rss",
-   "g": 1,
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a48e/live/4c8ed8e0-b1d0-11f1-8493-1910d79d53eb.png",
-   "t_ko": "Henry Zeffman, 예산안 앞두고 Andy Burnham과 재무장관 갈등 조명",
-   "t_id": "Henry Zeffman: Andy Burnham dan Menteri Keuangannya Hadapi Pertarungan Jelang Anggaran"
-  },
-  {
    "ts": "2026-09-16T21:51:50+07:00",
    "date": "2026-09-16",
    "time": "21:51",
@@ -17558,18 +17554,6 @@
    "url": "https://mediaindonesia.com/ekonomi/934234/dpr-peningkatan-kualitas-sdm-kunci-sukses-hilirisasi-minerba",
    "t_ko": "하원, 광물 하류화 성공의 핵심은 인재 양성 강조",
    "t_id": "DPR: Peningkatan Kualitas SDM Kunci Sukses Hilirisasi Minerba"
-  },
-  {
-   "ts": "2026-09-16T21:49:18+07:00",
-   "date": "2026-09-16",
-   "time": "21:49",
-   "src": "Jawa Pos",
-   "t": "Tangkap Potensi Carbon Trading dari PLTP Gunung Salak, PLN IP-South Pole AG Teken Kerja Sama ERPA",
-   "tags": [],
-   "url": "https://www.jawapos.com/energi/2609160484/tangkap-potensi-carbon-trading-dari-pltp-gunung-salak-pln-ip-south-pole-ag-teken-kerja-sama-erpa",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/15/pltp-gunung-salak-menjadi-salah-satu-aset-energi-bersih-pln-indonesia-power-yang-terus-dioptimalkan-termasuk-melalui-pengembangan-aset-karbon-dari-potensi-pengurangan-emisi-pln-ip-ti7tz.webp",
-   "t_ko": "PLN IP와 South Pole AG, Gunung Salak 지열발전소 탄소배출권 확보 협력",
-   "t_id": "Tangkap Potensi Carbon Trading dari PLTP Gunung Salak, PLN IP-South Pole AG Teken Kerja Sama ERPA"
   }
  ],
  "kisi_news": [
@@ -17751,9 +17735,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.961%",
-   "d": -0.7,
-   "ytd": 19.17,
+   "v": "4.957%",
+   "d": -0.78,
+   "ytd": 19.07,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17776,7 +17760,7 @@
    "k": "달러 인덱스 (DXY)",
    "v": "99.69",
    "d": 0.03,
-   "ytd": 1.43,
+   "ytd": 1.44,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17786,9 +17770,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.02",
-   "d": -2.63,
-   "ytd": 77.67,
+   "v": "101.94",
+   "d": -2.71,
+   "ytd": 77.53,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17798,9 +17782,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,394.5",
-   "d": 0.63,
-   "ytd": 1.59,
+   "v": "4,393.4",
+   "d": 0.6,
+   "ytd": 1.57,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -24008,9 +23992,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-16 22:59",
-  "pc_age_min": 4,
+  "pc_age_min": 10,
   "news_ai_cache": 43,
-  "news_ai_hit": 32,
+  "news_ai_hit": 31,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25753,8 +25737,8 @@
    "tags": [],
    "url": "https://www.idnfinancials.com/news/68946/jci-weakens-for-six-days-odds-of-fed-rate-hike-reach-92",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/ARTIKEL%20IMAGE%20%28ARIF%29/IHSG-12022026.jpg",
-   "score": 416.75,
-   "srcs": 8,
+   "score": 414.55,
+   "srcs": 3,
    "t_ko": "IHSG 6거래일 연속 하락 — 연준 금리 인상 확률 92% 반영",
    "t_id": "IHSG Melemah 6 Hari Beruntun, Peluang Suku Bunga The Fed Naik Capai 92%"
   },
@@ -25773,30 +25757,18 @@
    "t_id": "Demutualisasi Masuk Tahap Akhir, Pemegang Saham BEI Bakal Terima Dividen Tahunan?"
   },
   {
-   "ts": "2026-09-16T22:33:24+07:00",
+   "ts": "2026-09-16T05:49:50+07:00",
    "date": "2026-09-16",
-   "time": "22:33",
-   "src": "CNBC",
-   "t": "Oil prices fall after U.S. says damaged Saudi pipeline will restart operations in days",
+   "time": "05:49",
+   "src": "Reuters",
+   "t": "Wall Street ends lower as oil spikes and the benchmark Treasury yield breaches 5%",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQM1BPdzlzdEkxaTg2MURwV0psdFNmbUZ0ZnZreDZEZkFfT0JXSGUxcU9lZ0JGc09LMkRZYTMxYVNwU2hVYjdfcnl1UzhnS0M5eHF1bVdwWFh2Rmp6SmlZMUo2MjlaODdFRHBBVGQ2OHVtcjBQVTFIekZjdkdKbkh5dVhTRUVtOEE1cjRwM21UVXNlV25LUzhiMFNEeWd4a3hGMExiczlZNC1pN2tpQmhPTFJn?oc=5",
    "g": 1,
-   "t_ko": "미국, 사우디 송유관 조기 복구 발표에 유가 하락",
-   "t_id": "Harga Minyak Turun Usai AS Sebut Pipa Saudi yang Rusak Beroperasi Lagi dalam Hitungan Hari",
-   "ai_ko": "· 미국 원유재고 710만배럴 증가, 유가 하락\n· 시장은 160만배럴 감소 전망, 9월 11일 기준\n· Saudi East-West 송유관 폐쇄로 공급 불안 상존",
-   "ai_id": "· Stok minyak AS naik 7,1 juta barel\n· Konsensus perkirakan turun 1,6 juta barel\n· Pipa East-West Saudi tutup, pasokan rawan",
-   "ai_tags": [
-    "유가",
-    "원유재고",
-    "지정학"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "stok minyak",
-    "geopolitik"
-   ],
-   "score": 315.0,
-   "srcs": 4
+   "score": 316.0,
+   "srcs": 7,
+   "t_ko": "유가 급등 및 미 국채 10년물 금리 5% 상회에 월가 하락 마감",
+   "t_id": "Wall Street Ditutup Memerah Akibat Lonjakan Minyak dan Imbal Hasil US Treasury Tembus 5%"
   }
  ],
  "daylog": {
@@ -26260,16 +26232,6 @@
    "mcap": 378333352250000.0
   },
   {
-   "t": "AMMN",
-   "n": "Amman Mineral Internasional",
-   "px": 5150.0,
-   "pct": 1.98,
-   "val": 524889819166.6666,
-   "ratio": 1.6,
-   "fnet": -25228071582.095646,
-   "mcap": 373468820928400.0
-  },
-  {
    "t": "TLKM",
    "n": "Telkom Indonesia Tbk",
    "px": 2660.0,
@@ -26298,6 +26260,16 @@
    "ratio": 0.6,
    "fnet": 2064503948.6393278,
    "mcap": 209012316800000.0
+  },
+  {
+   "t": "ASII",
+   "n": "Astra International",
+   "px": 4850.0,
+   "pct": -0.82,
+   "val": 170628104666.66666,
+   "ratio": 0.8,
+   "fnet": -22729079764.44936,
+   "mcap": 196345232729000.0
   }
  ],
  "tech": {
@@ -42377,8 +42349,8 @@
  "watch": [
   {
    "t": "AMMN",
-   "n": "Amman Mineral Internasional",
-   "px": 5150.0,
+   "n": "AMMN",
+   "px": null,
    "call": "BUY",
    "buy": [
     4700,
@@ -42469,7 +42441,7 @@
    "s_conc": 100,
    "s_flow": 100,
    "alpha": 11.65,
-   "vrank": 21,
+   "vrank": 20,
    "flow": -35.35,
    "srcs": 1
   },
@@ -42508,8 +42480,8 @@
    "ratio": 5.2,
    "ev_ko": "가격·수급 이상",
    "ev_id": "Harga & arus dana",
-   "hl": "시장 대비 +4.82%p · 거래대금 41위 · 20일 평균 5.2배 · 외국인 5일 +8.1%",
-   "hl_id": "vs pasar +4.82%p · nilai transaksi #41 · 5.2x rata 20 hari · asing 5 hari +8.1%",
+   "hl": "시장 대비 +4.82%p · 거래대금 40위 · 20일 평균 5.2배 · 외국인 5일 +8.1%",
+   "hl_id": "vs pasar +4.82%p · nilai transaksi #40 · 5.2x rata 20 hari · asing 5 hari +8.1%",
    "url": "",
    "score": 60.8,
    "s_news": 0,
@@ -42519,7 +42491,7 @@
    "s_conc": 100,
    "s_flow": 81,
    "alpha": 4.82,
-   "vrank": 41,
+   "vrank": 40,
    "flow": 8.07,
    "srcs": 0
   },
@@ -42533,8 +42505,8 @@
    "ratio": 7.8,
    "ev_ko": "가격·수급 이상",
    "ev_id": "Harga & arus dana",
-   "hl": "시장 대비 +12.41%p · 거래대금 72위 · 20일 평균 7.8배 · 외국인 5일 -5.7%",
-   "hl_id": "vs pasar +12.41%p · nilai transaksi #72 · 7.8x rata 20 hari · asing 5 hari -5.7%",
+   "hl": "시장 대비 +12.41%p · 거래대금 71위 · 20일 평균 7.8배 · 외국인 5일 -5.7%",
+   "hl_id": "vs pasar +12.41%p · nilai transaksi #71 · 7.8x rata 20 hari · asing 5 hari -5.7%",
    "url": "",
    "score": 57.3,
    "s_news": 0,
@@ -42544,7 +42516,7 @@
    "s_conc": 100,
    "s_flow": 57,
    "alpha": 12.41,
-   "vrank": 72,
+   "vrank": 71,
    "flow": -5.67,
    "srcs": 0
   },
@@ -42583,8 +42555,8 @@
    "ratio": 2.4,
    "ev_ko": "가격·수급 이상",
    "ev_id": "Harga & arus dana",
-   "hl": "시장 대비 +4.47%p · 거래대금 15위 · 20일 평균 2.4배 · 외국인 5일 +9.8%",
-   "hl_id": "vs pasar +4.47%p · nilai transaksi #15 · 2.4x rata 20 hari · asing 5 hari +9.8%",
+   "hl": "시장 대비 +4.47%p · 거래대금 14위 · 20일 평균 2.4배 · 외국인 5일 +9.8%",
+   "hl_id": "vs pasar +4.47%p · nilai transaksi #14 · 2.4x rata 20 hari · asing 5 hari +9.8%",
    "url": "",
    "score": 56.3,
    "s_news": 0,
@@ -42594,7 +42566,7 @@
    "s_conc": 70,
    "s_flow": 98,
    "alpha": 4.47,
-   "vrank": 15,
+   "vrank": 14,
    "flow": 9.84,
    "srcs": 0
   },
@@ -43242,6 +43214,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-16 22:54"
+  "announcements": "2026-09-16 23:03"
  }
 }
