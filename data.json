@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 01:05",
+ "updated": "2026-09-17 01:11",
  "delay_min": 15,
- "fx_basis": "12.94 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,368 · 00:14 Yahoo",
- "idr_per_krw": 12.9434,
+ "fx_basis": "12.95 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,367 · 00:14 Yahoo",
+ "idr_per_krw": 12.9506,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -116,15 +116,15 @@
   "prev": 6486.25,
   "ytd": -25.56,
   "m1": -0.2,
-  "value_idr": 10727972431400.006,
+  "value_idr": 10727956475600.006,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 830종목 · 종가 · 외국인·공시 PC 09-17 00:59",
+  "rank_src": "Yahoo 15분 지연 · 829종목 · 종가 · 외국인·공시 PC 09-17 01:06",
   "rank_asof": null,
   "rank_date": "2026-09-15",
   "adv": 330,
   "dec": 332,
-  "unch": 168,
+  "unch": 167,
   "foreign_net_idr": -588236609776.6709,
   "foreign_buy": 3175175425708.6626,
   "foreign_sell": 3763412035485.3335,
@@ -13162,22 +13162,6 @@
    "live": 0
   },
   {
-   "t": "ASBI",
-   "n": "Asuransi Bintang",
-   "px": 400.0,
-   "prev": 400.0,
-   "pct": 0.0,
-   "val": 15955800.0,
-   "vol": 39300.0,
-   "sh": 348386472,
-   "mcap": 139354588800.0,
-   "hi": 420.0,
-   "lo": 398.0,
-   "ratio": 0.2,
-   "fnet": 0.0,
-   "live": 0
-  },
-  {
    "t": "CTBN",
    "n": "Citra Tubindo",
    "px": 3040.0,
@@ -14287,11 +14271,11 @@
   {
    "name": "금융",
    "name_id": "Keuangan",
-   "n": 97,
+   "n": 96,
    "adv": 32,
    "dec": 36,
-   "val": 2173742561633.333,
-   "mcap": 2926882933934845.0,
+   "val": 2173726605833.333,
+   "mcap": 2926743579346045.0,
    "top": [
     {
      "t": "BBCA",
@@ -15502,10 +15486,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7607.69,
+   "px": 7618.52,
    "prev": 7585.51,
-   "pct": 0.29,
-   "asof": "01:00",
+   "pct": 0.44,
+   "asof": "01:05",
    "live": true,
    "spark": [
     7603.81,
@@ -15562,17 +15546,18 @@
     7606.29,
     7608.32,
     7613.32,
-    7607.69
+    7613.3,
+    7618.52
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26162.44,
+   "px": 26204.41,
    "prev": 25981.57,
-   "pct": 0.7,
-   "asof": "01:00",
+   "pct": 0.86,
+   "asof": "01:05",
    "live": true,
    "spark": [
     26099.29,
@@ -15629,17 +15614,18 @@
     26129.04,
     26132.68,
     26161.78,
-    26162.44
+    26186.44,
+    26204.41
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 52054.02,
+   "px": 52111.57,
    "prev": 52092.45,
-   "pct": -0.07,
-   "asof": "01:00",
+   "pct": 0.04,
+   "asof": "01:05",
    "live": true,
    "spark": [
     52038.56,
@@ -15696,7 +15682,8 @@
     52094.39,
     52124.94,
     52137.4,
-    52054.02
+    52076.15,
+    52111.57
    ]
   },
   {
@@ -16886,9 +16873,33 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-17T01:02:08+07:00",
+   "ts": "2026-09-17T01:06:53+07:00",
    "date": "2026-09-17",
-   "time": "01:02",
+   "time": "01:06",
+   "src": "CNBC",
+   "t": "10-year Treasury yield falls as traders bet Fed rate increase can tamp down inflation",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html",
+   "g": 1,
+   "t_ko": "미국 국채 10년물 금리, 연준 물가 안정 기대 속 하락",
+   "t_id": "Imbal Hasil Obligasi AS 10 Tahun Turun saat Trader Berharap Kenaikan Suku Bunga The Fed Meredam Inflasi",
+   "ai_ko": "· 미국 10년물 국채금리 5% 상회\n· 8월 소비자물가 3.4%, 7월 PCE 3.7%\n· 유가 배럴당 USD 100 상회로 물가 부담",
+   "ai_id": "· Yield UST 10 tahun di atas 5%\n· Inflasi AS Agustus 3.4%, PCE Juli 3.7%\n· Harga minyak di atas USD 100 per barel",
+   "ai_tags": [
+    "금리",
+    "물가",
+    "유가"
+   ],
+   "ai_tags_id": [
+    "suku bunga",
+    "inflasi",
+    "harga minyak"
+   ]
+  },
+  {
+   "ts": "2026-09-17T01:06:48+07:00",
+   "date": "2026-09-17",
+   "time": "01:06",
    "src": "CNBC",
    "t": "Fed approves interest rate hike, signals one more to come this year",
    "tags": [],
@@ -16896,6 +16907,19 @@
    "g": 1,
    "t_ko": "연준, 기준금리 인상 단행 및 연내 추가 인상 시사",
    "t_id": "The Fed Setujui Kenaikan Suku Bunga, Isyaratkan Satu Lagi Tahun Ini"
+  },
+  {
+   "ts": "2026-09-17T01:01:54+07:00",
+   "date": "2026-09-17",
+   "time": "01:01",
+   "src": "FT",
+   "t": "Federal Reserve raises rates for first time since 2023",
+   "tags": [],
+   "url": "https://www.ft.com/content/61b5fbae-9dd6-4980-bd1f-effe54b72d84",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F483e82fa-436c-48dc-b399-65f068ca193b.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "연준, 2023년 이후 처음으로 기준금리 인상",
+   "t_id": "The Fed Naikkan Suku Bunga untuk Pertama Kalinya Sejak 2023"
   },
   {
    "ts": "2026-09-17T01:01:11+07:00",
@@ -17066,30 +17090,6 @@
    "g": 1,
    "t_ko": "Jose Rizal, 인도네시아의 위상을 세계 무대로 제고",
    "t_id": "Jose Rizal Bawa Nama Indonesia ke Panggung Dunia"
-  },
-  {
-   "ts": "2026-09-16T23:46:51+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "Reuters",
-   "t": "Warsh's words may matter more than the anticipated Fed rate hike",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd0VZMTZPMGRVWVVTY0lVRERxMHhQdlNnb2NBOHROMDJETXBLVmJFTW12SmFybUloWGRfYm1ueDhEZHJuOWNPQXh3RHpDVllhRVpSUVFVeDJmMGFNNTM2RTRqMkVFaXdwTmM1eG1UeVhqLXNuYW5LMjZGYUFCYUV0djFqUTUxRkF2Vk9NeTh5VU44bENZYi1kaTBnS1NuVngtX1dIeEVtaw?oc=5",
-   "g": 1,
-   "t_ko": "Warsh 발언, 연준 금리 인상 전망보다 시장에 큰 영향",
-   "t_id": "Pernyataan Warsh Lebih Berpengaruh Dibanding Ekspektasi Kenaikan Suku Bunga The Fed"
-  },
-  {
-   "ts": "2026-09-16T23:37:22+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "CNBC",
-   "t": "We're significantly trimming a stock that has not gone to plan",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/were-significantly-trimming-a-stock-that-has-not-gone-to-plan.html",
-   "g": 1,
-   "t_ko": "운용 계획에 못 미친 보유 종목 대폭 축소",
-   "t_id": "Kami Pangkas Signifikan Saham yang Tak Sesuai Rencana"
   },
   {
    "ts": "2026-09-16T23:30:13+07:00",
@@ -17528,9 +17528,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.947%",
-   "d": -0.98,
-   "ytd": 18.83,
+   "v": "4.949%",
+   "d": -0.94,
+   "ytd": 18.88,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17551,9 +17551,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "99.72",
-   "d": 0.06,
-   "ytd": 1.47,
+   "v": "99.70",
+   "d": 0.04,
+   "ytd": 1.45,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17563,9 +17563,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.29",
-   "d": -2.38,
-   "ytd": 78.14,
+   "v": "102.31",
+   "d": -2.36,
+   "ytd": 78.18,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17575,9 +17575,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,391.4",
-   "d": 0.55,
-   "ytd": 1.52,
+   "v": "4,394.9",
+   "d": 0.63,
+   "ytd": 1.6,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -23141,10 +23141,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-17 00:59",
-  "pc_age_min": 6,
-  "news_ai_cache": 42,
-  "news_ai_hit": 30,
+  "idx_from_pc": "2026-09-17 01:06",
+  "pc_age_min": 5,
+  "news_ai_cache": 43,
+  "news_ai_hit": 31,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -24907,18 +24907,18 @@
    "t_id": "Demutualisasi Masuk Tahap Akhir, Pemegang Saham BEI Bakal Terima Dividen Tahunan?"
   },
   {
-   "ts": "2026-09-17T00:32:22+07:00",
-   "date": "2026-09-17",
-   "time": "00:32",
-   "src": "CNBC",
-   "t": "Consumers hit by one-two punch of oil and rates from Iran war. The estimated bill is $1,700 per household",
+   "ts": "2026-09-16T05:49:50+07:00",
+   "date": "2026-09-16",
+   "time": "09/16",
+   "src": "Reuters",
+   "t": "Wall Street ends lower as oil spikes and the benchmark Treasury yield breaches 5%",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/16/oil-prices-treasury-yields-consumers-iran.html",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQM1BPdzlzdEkxaTg2MURwV0psdFNmbUZ0ZnZreDZEZkFfT0JXSGUxcU9lZ0JGc09LMkRZYTMxYVNwU2hVYjdfcnl1UzhnS0M5eHF1bVdwWFh2Rmp6SmlZMUo2MjlaODdFRHBBVGQ2OHVtcjBQVTFIekZjdkdKbkh5dVhTRUVtOEE1cjRwM21UVXNlV25LUzhiMFNEeWd4a3hGMExiczlZNC1pN2tpQmhPTFJn?oc=5",
    "g": 1,
-   "t_ko": "이란 전쟁 여파로 유가·금리 동반 상승 — 가구당 비용 $1,700 추산",
-   "t_id": "Konsumen Terdampak Ganda Perang Iran: Minyak dan Suku Bunga, Tagihan Rp27 Juta per Rumah Tangga",
-   "score": 315.0,
-   "srcs": 3
+   "score": 316.0,
+   "srcs": 7,
+   "t_ko": "유가 급등 및 미 국채 10년물 금리 5% 상회에 월가 하락 마감",
+   "t_id": "Wall Street Ditutup Memerah Akibat Lonjakan Minyak dan Imbal Hasil US Treasury Tembus 5%"
   }
  ],
  "daylog": {
@@ -42410,6 +42410,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-17 00:57"
+  "announcements": "2026-09-17 01:05"
  }
 }
