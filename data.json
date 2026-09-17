@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 01:42",
+ "updated": "2026-09-18 01:56",
  "delay_min": 15,
- "fx_basis": "12.85 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 00:45 Yahoo",
- "idr_per_krw": 12.849,
+ "fx_basis": "12.86 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,380 · 00:45 Yahoo",
+ "idr_per_krw": 12.8575,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15315,10 +15315,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7633.34,
+   "px": 7634.54,
    "prev": 7553.33,
-   "pct": 1.06,
-   "asof": "01:40",
+   "pct": 1.08,
+   "asof": "01:50",
    "live": true,
    "spark": [
     7625.67,
@@ -15383,17 +15383,19 @@
     7638.45,
     7636.28,
     7633.17,
-    7633.34
+    7635.19,
+    7636.39,
+    7634.54
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26381.53,
+   "px": 26392.88,
    "prev": 25978.42,
-   "pct": 1.55,
-   "asof": "01:40",
+   "pct": 1.6,
+   "asof": "01:50",
    "live": true,
    "spark": [
     26321.01,
@@ -15458,17 +15460,19 @@
     26396.61,
     26391.14,
     26380.61,
-    26381.53
+    26388.58,
+    26393.58,
+    26392.88
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51794.32,
+   "px": 51791.35,
    "prev": 51477.73,
-   "pct": 0.62,
-   "asof": "01:40",
+   "pct": 0.61,
+   "asof": "01:50",
    "live": true,
    "spark": [
     51760.85,
@@ -15533,7 +15537,9 @@
     51824.02,
     51805.03,
     51792.51,
-    51794.32
+    51803.74,
+    51808.77,
+    51791.35
    ]
   },
   {
@@ -16804,9 +16810,33 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-18T01:41:04.007722+07:00",
+   "ts": "2026-09-18T01:52:00+07:00",
    "date": "2026-09-18",
-   "time": "01:41",
+   "time": "01:52",
+   "src": "CNBC",
+   "t": "Oil prices fall as Saudi Arabia reportedly offers more crude via Hormuz after pipeline attack",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
+   "g": 1,
+   "t_ko": "사우디, 송유관 피격 후 호르무즈 원유 공급 확대 보도에 유가 하락",
+   "t_id": "Harga Minyak Turun Seiring Saudi Dilaporkan Tawarkan Tambahan Minyak via Selat Hormuz Pasca-Serangan Pipa",
+   "ai_ko": "· 브렌트유 배럴당 USD 105.81로 하락세 연장\n· 사우디아라비아의 대체 선박 이송으로 공급 우려 완화\n· 중동 지정학적 리스크가 유가 변동성 자극",
+   "ai_id": "· Harga minyak Brent turun ke USD 105,81\n· Pasokan stabil berkat transfer kapal Saudi\n· Risiko geopolitik Timur Tengah pengaruhi minyak",
+   "ai_tags": [
+    "유가",
+    "원자재",
+    "지정학"
+   ],
+   "ai_tags_id": [
+    "minyak",
+    "komoditas",
+    "geopolitik"
+   ]
+  },
+  {
+   "ts": "2026-09-18T01:49:09+07:00",
+   "date": "2026-09-18",
+   "time": "01:49",
    "src": "Jawa Pos",
    "t": "RUU Perlindungan Ketenagakerjaan Dibahas, Buruh Ingatkan PHK Tetap Ada Walaupun Upah Murah",
    "tags": [],
@@ -16814,6 +16844,31 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/presiden-konfederasi-aspek-indonesia-muhamad-rusdi-saat-rdp-dengan-dpr-ri-istimewa-jVS5r.webp",
    "t_ko": "고용보호법 개정안 심의 착수 — 저임금에도 구조조정 우려 제기",
    "t_id": "RUU Perlindungan Ketenagakerjaan Dibahas, Buruh Ingatkan PHK Tetap Ada Walau Upah Murah"
+  },
+  {
+   "ts": "2026-09-18T01:46:00+07:00",
+   "date": "2026-09-18",
+   "time": "01:46",
+   "src": "MarketWatch",
+   "t": "This is the only cybersecurity stock that can post big gains, according to one analyst",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/this-is-the-only-cybersecurity-stock-that-can-post-big-gains-according-to-one-analyst-8ffe034f?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-343657",
+   "t_ko": "애널리스트 선정 대형 상승 여력 보유 단 하나의 사이버보안주",
+   "t_id": "Ini Satu-satunya Saham Siber yang Bisa Catat Konversi Besar, Menurut Analis"
+  },
+  {
+   "ts": "2026-09-18T01:42:34+07:00",
+   "date": "2026-09-18",
+   "time": "01:42",
+   "src": "Bloomberg",
+   "t": "Rockefeller Foundation Poll Shows Economic Optimism Down Across Globe",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-17/rockefeller-poll-shows-economic-optimism-down-globally-video",
+   "g": 1,
+   "t_ko": "Rockefeller Foundation 조사, 글로벌 경제 낙관론 하락",
+   "t_id": "Jajak Pendapat Rockefeller Foundation Tunjukkan Optimisme Ekonomi Turun Global"
   },
   {
    "ts": "2026-09-18T01:23:25+07:00",
@@ -17011,42 +17066,6 @@
    "t_id": "Minyak, Suku Bunga, dan Imbal Hasil Naik Racik Koktail Stagflasi Pasar"
   },
   {
-   "ts": "2026-09-17T23:55:06+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Bloomberg",
-   "t": "Former Trafigura CEO Contender Hallouche Starts New Energy Firm",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-17/former-trafigura-ceo-contender-hallouche-starts-new-energy-firm",
-   "g": 1,
-   "t_ko": "Trafigura 전 CEO 후보 Hallouche, 신생 에너지사 설립",
-   "t_id": "Mantan Kandidat CEO Trafigura Hallouche Dirikan Perusahaan Energi Baru"
-  },
-  {
-   "ts": "2026-09-17T23:53:14+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "CNBC",
-   "t": "Oil prices fall as Saudi Arabia reportedly offers more crude via Hormuz after pipeline attack",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
-   "g": 1,
-   "t_ko": "사우디, 송유관 피격 후 호르무즈 원유 공급 확대 보도에 유가 하락",
-   "t_id": "Harga Minyak Turun Seiring Saudi Dilaporkan Tawarkan Tambahan Minyak via Selat Hormuz Pasca-Serangan Pipa",
-   "ai_ko": "· 브렌트유 배럴당 USD 105.81로 하락세 연장\n· 사우디아라비아의 대체 선박 이송으로 공급 우려 완화\n· 중동 지정학적 리스크가 유가 변동성 자극",
-   "ai_id": "· Harga minyak Brent turun ke USD 105,81\n· Pasokan stabil berkat transfer kapal Saudi\n· Risiko geopolitik Timur Tengah pengaruhi minyak",
-   "ai_tags": [
-    "유가",
-    "원자재",
-    "지정학"
-   ],
-   "ai_tags_id": [
-    "minyak",
-    "komoditas",
-    "geopolitik"
-   ]
-  },
-  {
    "ts": "2026-09-17T23:53:00+07:00",
    "date": "2026-09-17",
    "time": "09/17",
@@ -17127,19 +17146,6 @@
    "img": "https://images.wsj.net/im-92361535",
    "t_ko": "테크·미디어·텔레콤 부문 동향",
    "t_id": "Teknologi, Media & Telekomunikasi: Market Talk"
-  },
-  {
-   "ts": "2026-09-17T23:27:00+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "WSJ",
-   "t": "Basic Materials Roundup: Market Talk",
-   "tags": [],
-   "url": "https://www.wsj.com/business/basic-materials-roundup-market-talk-234fc45c?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-41645439",
-   "t_ko": "소재 섹터 동향 — 시장 전망",
-   "t_id": "Rangkuman Sektor Material Dasar: Pasar Membahas"
   },
   {
    "ts": "2026-09-17T23:22:46+07:00",
@@ -17470,9 +17476,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.05",
-   "d": -0.22,
-   "ytd": 77.73,
+   "v": "101.79",
+   "d": -0.47,
+   "ytd": 77.27,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17482,9 +17488,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,395.5",
-   "d": 1.39,
-   "ytd": 1.62,
+   "v": "4,392.0",
+   "d": 1.31,
+   "ytd": 1.54,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -24865,9 +24871,9 @@
    "t_id": "Ini Alasan OJK Tunda IPO Swayasa Prakarsa (SWAP)"
   },
   {
-   "ts": "2026-09-17T23:53:14+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
+   "ts": "2026-09-18T01:52:00+07:00",
+   "date": "2026-09-18",
+   "time": "01:52",
    "src": "CNBC",
    "t": "Oil prices fall as Saudi Arabia reportedly offers more crude via Hormuz after pipeline attack",
    "tags": [],
@@ -25353,30 +25359,30 @@
   "2026-09-18": {
    "news": [
     {
-     "t": "Stocks stage a comeback after Fed-induced declines — plus, what's ailing Boeing",
-     "ko": "Fed 발 급락 이후 뉴욕증시 반등 — Boeing 부진 배경은",
-     "id": "Saham berbalik menguat usai tergerus penurunan akibat The Fed — plus, masalah yang membelit Boeing",
-     "ai_ko": "",
-     "ai_id": "",
+     "t": "Oil prices fall as Saudi Arabia reportedly offers more crude via Hormuz after pipeline attack",
+     "ko": "사우디, 송유관 피격 후 호르무즈 원유 공급 확대 보도에 유가 하락",
+     "id": "Harga Minyak Turun Seiring Saudi Dilaporkan Tawarkan Tambahan Minyak via Selat Hormuz Pasca-Serangan Pipa",
+     "ai_ko": "· 브렌트유 배럴당 USD 105.81로 하락세 연장\n· 사우디아라비아의 대체 선박 이송으로 공급 우려 완화\n· 중동 지정학적 리스크가 유가 변동성 자극",
+     "ai_id": "· Harga minyak Brent turun ke USD 105,81\n· Pasokan stabil berkat transfer kapal Saudi\n· Risiko geopolitik Timur Tengah pengaruhi minyak",
      "src": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/17/stocks-stage-a-comeback-after-fed-induced-declines-plus-whats-ailing-boeing.html",
-     "time": "00:12",
+     "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
+     "time": "01:51",
      "tags": [],
-     "sc": 312.0,
+     "sc": 315.0,
      "slot": "global",
      "q": 85
     },
     {
-     "t": "Indonesia Ajukan Kebijakan Clean Cooking di G20",
-     "ko": "인도네시아, G20서 친환경 조리(Clean Cooking) 정책 제안",
-     "id": "Indonesia Ajukan Kebijakan Clean Cooking di G20",
+     "t": "RUU Perlindungan Ketenagakerjaan Dibahas, Buruh Ingatkan PHK Tetap Ada Walaupun Upah Murah",
+     "ko": "고용보호법 개정안 심의 착수 — 저임금에도 구조조정 우려 제기",
+     "id": "RUU Perlindungan Ketenagakerjaan Dibahas, Buruh Ingatkan PHK Tetap Ada Walau Upah Murah",
      "ai_ko": "",
      "ai_id": "",
      "src": "Jawa Pos",
-     "url": "https://www.jawapos.com/energi/2609170324/indonesia-ajukan-kebijakan-clean-cooking-di-g20",
-     "time": "00:32",
+     "url": "https://www.jawapos.com/ekonomi/2609170372/ruu-perlindungan-ketenagakerjaan-dibahas-buruh-ingatkan-phk-tetap-ada-walaupun-upah-murah",
+     "time": "01:49",
      "tags": [],
-     "sc": 208.8,
+     "sc": 209.8,
      "slot": "stock",
      "q": 47
     },
@@ -25388,7 +25394,7 @@
      "ai_id": "",
      "src": "Jawa Pos",
      "url": "https://www.jawapos.com/ekonomi/2609170322/3-menkeu-dalam-2-tahun-core-indonesia-ungkap-kekhawatiran-pasar-dan-nasib-apbn",
-     "time": "00:32",
+     "time": "00:36",
      "tags": [],
      "sc": 416.8,
      "slot": "macro",
