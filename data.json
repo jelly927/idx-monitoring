@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 12:54",
+ "updated": "2026-09-17 13:00",
  "delay_min": 15,
  "fx_basis": "12.83 IDR/KRW · USD/IDR 17,745 · USD/KRW 1,383 · 12:30 Yahoo",
- "idr_per_krw": 12.834,
+ "idr_per_krw": 12.8305,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -319,14 +319,21 @@
    "code": "SUN10Y",
    "label": "SUN 10Y",
    "name": "국채 10년물",
-   "px": 7.168,
-   "prev": 7.174,
-   "pct": -0.6,
-   "spark": [],
-   "span": "1M",
+   "px": 7.141,
+   "prev": 7.141,
+   "pct": 0.0,
+   "spark": [
+    7.096,
+    7.156,
+    7.156,
+    7.156,
+    7.141,
+    7.141
+   ],
+   "span": "1W",
    "inv": true,
-   "unit": "bp",
-   "asof": "PHEI · 09/16"
+   "asof": "investing.com · 09/16",
+   "unit": "bp"
   }
  ],
  "index": {
@@ -340,7 +347,7 @@
   "volume": null,
   "value_src": "yahoo",
   "rank_src": "Yahoo 15분 지연 · 831종목 · 외국인·공시 PC 09-17 12:49",
-  "rank_asof": "12:52",
+  "rank_asof": "12:56",
   "rank_date": "2026-09-17",
   "adv": 394,
   "dec": 247,
@@ -16008,10 +16015,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6728.39,
+   "px": 6723.1,
    "prev": 6679.18,
-   "pct": 0.74,
-   "asof": "12:30",
+   "pct": 0.66,
+   "asof": "12:35",
    "live": true,
    "spark": [
     6765.54,
@@ -16080,17 +16087,18 @@
     6745.61,
     6737.91,
     6731.26,
-    6728.39
+    6722.53,
+    6723.1
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63976.11,
+   "px": 63955.37,
    "prev": 63857.24,
-   "pct": 0.19,
-   "asof": "12:35",
+   "pct": 0.15,
+   "asof": "12:40",
    "live": true,
    "spark": [
     64478.19,
@@ -16150,17 +16158,18 @@
     64066.03,
     64076.45,
     64011.51,
-    63976.11
+    64011.87,
+    63955.37
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24464.26,
+   "px": 24480.37,
    "prev": 24713.78,
-   "pct": -1.01,
-   "asof": "12:35",
+   "pct": -0.94,
+   "asof": "12:40",
    "live": true,
    "spark": [
     24487.9,
@@ -16202,7 +16211,8 @@
     24494.96,
     24479.47,
     24479.51,
-    24464.26
+    24477.29,
+    24480.37
    ]
   }
  ],
@@ -17373,35 +17383,34 @@
     "RUPS",
     "properti"
    ]
-  },
-  {
-   "ts": "2026-09-14T11:35:28+07:00",
-   "date": "2026-09-14",
-   "time": "09/14",
-   "src": "Liputan6",
-   "t": "RUPSLB Lippo Karawaci Setujui Perubahan Komisaris, Simak Daftarnya",
-   "tags": [
-    "LPKR"
-   ],
-   "url": "https://www.liputan6.com/saham/read/8291176/rupslb-lippo-karawaci-setujui-perubahan-komisaris-simak-daftarnya",
-   "img": "https://cdn0-production-images-kly.akamaized.net/IMdl4Zp4HG99J24K6lva3lwPfXw=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9347612/original/054464600_1789359918-IMG_6136.JPEG",
-   "t_ko": "Lippo Karawaci(LPKR), 임시주주총회서 이사 교체 승인",
-   "t_id": "RUPSLB Lippo Karawaci Setujui Perubahan Komisaris, Simak Daftarnya",
-   "ai_ko": "· Lippo Karawaci(LPKR) 임시 주주총회서 이사회 개편 승인\n· 자사주 2,070.06만주 소각으로 자본금 감액\n· Anand Kumar 사임, Indra Yuwana 대표이사 선임",
-   "ai_id": "· RUPSLB LPKR setujui perubahan komisaris\n· Tarik 20.700.600 saham treasuri\n· Anand Kumar mundur, Indra Yuwana Dirut",
-   "ai_tags": [
-    "주주총회",
-    "자사주소각",
-    "지배구조"
-   ],
-   "ai_tags_id": [
-    "RUPS",
-    "saham treasuri",
-    "manajemen"
-   ]
   }
  ],
  "market_news": [
+  {
+   "ts": "2026-09-17T12:52:46+07:00",
+   "date": "2026-09-17",
+   "time": "12:52",
+   "src": "Detik",
+   "t": "Banyak BUMN Rugi Jadi Untung, Prabowo Targetkan Dividen Danantara Rp 200 T",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666716/banyak-bumn-rugi-jadi-untung-prabowo-targetkan-dividen-danantara-rp-200-t",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/14/presiden-prabowo-subianto-dalam-pidato-kenegaraan-di-sidang-tahunan-mpr-dan-sidang-bersama-dpr-dpd-2026-di-kompleks-parlemen-s-1786681176919_169.png?w=360&q=90",
+   "t_id": "Banyak BUMN Rugi Jadi Untung, Prabowo Targetkan Dividen Danantara Rp 200 T",
+   "t_ko": "적자 국영기업 흑자 전환… Prabowo, Danantara 배당 Rp200조 목표"
+  },
+  {
+   "ts": "2026-09-17T12:52:39+07:00",
+   "date": "2026-09-17",
+   "time": "12:52",
+   "src": "Liputan6",
+   "t": "The Fed Kerek Suku Bunga, Hal Ini Perlu Investor Ketahui",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8293623/the-fed-kerek-suku-bunga-hal-ini-perlu-investor-ketahui",
+   "g": 1,
+   "img": "https://cdn1-production-images-kly.akamaized.net/5X0r_efVtoon0dESImTHZ7A7wy0=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9310804/original/001692600_1785370401-AP26210732321904.jpg",
+   "t_id": "The Fed Kerek Suku Bunga, Hal Ini Perlu Investor Ketahui",
+   "t_ko": "연준 금리 인상에 투자자가 알아야 할 핵심 포인트"
+  },
   {
    "ts": "2026-09-17T12:51:40+07:00",
    "date": "2026-09-17",
@@ -17411,7 +17420,7 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121851/valuasi-ihsg-sudah-murah-layak-serok",
    "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814105619.jpeg",
-   "t_ko": "IHSG 밸류에이션 저점 도달 — 저가 매수 시점인가",
+   "t_ko": "IHSG 밸류에이션 매력 부각 속 저가 매수 시기 점검",
    "t_id": "Valuasi IHSG Sudah Murah, Layak Serok?"
   },
   {
@@ -17423,7 +17432,7 @@
    "tags": [],
    "url": "https://www.jawapos.com/ekonomi/2609170193/menkeu-suahasil-diminta-intensifkan-dialog-dengan-pemda-pahami-kebutuhan-daerah",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-Jhssd.webp",
-   "t_ko": "수하실 재무차관, 지방정부 소통 강화 및 지역 수요 파악 주문",
+   "t_ko": "Suahasil 재무차관, 지자체 소통 강화해 지역 수요 파악 주력",
    "t_id": "Menkeu Suahasil Diminta Intensifkan Dialog dengan Pemda, Pahami Kebutuhan Daerah"
   },
   {
@@ -17436,7 +17445,19 @@
    "url": "https://katadata.co.id/ekonomi-hijau/energi-baru/6aab7fc56c4a6/belajar-dari-jerman-ekonomi-bisa-tumbuh-tanpa-boros-emisi-bagaimana-caranya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/17/Katadata_SAFE_2026-2026_09_17-12_42_37_31ddfdb12147cc1f198a7bf0810fc86f_620x413_thumb.jpeg",
    "t_id": "Belajar dari Jerman: Ekonomi Bisa Tumbuh Tanpa Boros Emisi, Bagaimana Caranya?",
-   "t_ko": "독일 사례로 본 저탄소 경제 성장 가능성과 그 해법"
+   "t_ko": "독일 사례로 본 탄소 배출 없는 경제 성장 가능성"
+  },
+  {
+   "ts": "2026-09-17T12:48:00+07:00",
+   "date": "2026-09-17",
+   "time": "12:48",
+   "src": "WSJ",
+   "t": "U.S. Treasury Yields Trade Calm, Little Changed in Asian Session",
+   "tags": [],
+   "url": "https://www.wsj.com/finance/long-term-jgb-yields-largely-steady-as-boj-starts-two-day-meeting-0e67c4e8?mod=rss_markets_main",
+   "g": 1,
+   "t_ko": "미국 국채금리, 아시아장에서 소폭 변동에 그치며 안정세",
+   "t_id": "Imbal Hasil US Treasury Tenang, Minim Perubahan di Sesi Asia"
   },
   {
    "ts": "2026-09-17T12:47:34+07:00",
@@ -17447,8 +17468,8 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-17/indonesia-steps-up-e20-bioethanol-push-in-bid-to-cut-oil-imports",
    "g": 1,
-   "t_ko": "인도네시아, 원유 수입 절감 위해 E20 바이오에탄올 도입 가속",
-   "t_id": "Indonesia Intensifkan Dorongan Bioetanol E20 Demi Pangkas Impor Minyak"
+   "t_ko": "인도네시아, 석유 수입 감축 위해 E20 바이오에탄올 도입 확대",
+   "t_id": "Indonesia Genjot Bioetanol E20 Tekan Impor Minyak"
   },
   {
    "ts": "2026-09-17T12:47:00+07:00",
@@ -17460,7 +17481,7 @@
    "url": "https://ekonomi.republika.co.id/berita/tlhuqc416/asuransi-gagal-panen-lindungi-petani-dan-jaga-pasokan-pangan",
    "img": "https://static.republika.co.id/uploads/images/detailnews/026929200-1787234251-830-556.jpg",
    "t_id": "Asuransi Gagal Panen Lindungi Petani dan Jaga Pasokan Pangan",
-   "t_ko": "농작물 손실 보험으로 농가 보호 및 식량 공급 유지",
+   "t_ko": "농작물 실패 보험으로 농가 보호 및 식량 공급 안정",
    "ai_ko": "· 정부, 10만 헥타르 대상 AUTP 프로그램 운영\n· 프리미엄 80% 보조 및 피해 시 Rp6백만 지급\n· 농업 부문 생산 안정성 유지에 긍정적 영향",
    "ai_id": "· Program AUTP lindungi 100 ribu ha\n· Subsidi premi 80% dan klaim Rp6 juta\n· Jaga kestabilan sektor pertanian",
    "ai_tags": [
@@ -17483,8 +17504,8 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/live-blog/2026-09-17/ftse-100-live-boe-rate-decision-bailey-pound-bonds-gilts-oil-prices-ai-stocks-what-s-moving-uk-markets-right-now-markets-today-mu53wbsg",
    "g": 1,
-   "t_ko": "FTSE 100 — BOE 앞두고 영국 증시 선물 상승 및 파운드화 안정",
-   "t_id": "FTSE 100 Live: Kontrak Berjangka Saham UK Menguat, Pound Sterling Stabil Jelang BOE"
+   "t_ko": "영란은행(BOE) 앞두고 FTSE 100 선물 상승 및 파운드화 안정",
+   "t_id": "FTSE 100 Live: Berjangka Saham UK Menguat, Poundsterling Stabil Jelang BOE"
   },
   {
    "ts": "2026-09-17T12:45:26+07:00",
@@ -17545,7 +17566,7 @@
    "g": 1,
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/20/mulai-investasi-di-exchange-crypto-2026-simak-tipsnya-untuk-pemula-1784542058111_169.png?w=360&q=90",
    "t_id": "Harga Bitcoin Naik Jadi 1,35 Miliar Usai The Fed Naikkan Suku Bunga",
-   "t_ko": "연준 금리 인상에 Bitcoin 가격 13.5억 원으로 상승",
+   "t_ko": "연준 금리 인상에 비트코인 가격 Rp1.35억으로 상승",
    "ai_ko": "· Bitcoin 가격 US$ 76,400대로 1.05% 상승\n· The Fed 기준금리 25베이시스포인트 인상\n· 금리 인상 속 가상자산 변동성 확대",
    "ai_id": "· Harga Bitcoin naik ke USD 76.400\n· The Fed naikkan suku bunga 25 bps\n· Volatilitas pasar aset kripto tinggi",
    "ai_tags": [
@@ -17588,12 +17609,12 @@
    "date": "2026-09-17",
    "time": "12:37",
    "src": "Bloomberg",
-   "t": "BOE Expected to Keep Rates Unchanged (Video)",
+   "t": "BOE Expected to Keep Rates Unchanged",
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-17/boe-expected-to-keep-rates-unchanged-video",
    "g": 1,
-   "t_ko": "BOE, 금리 동결 전망",
-   "t_id": "BOE Diprediksi Tahan Suku Bunga (Video)"
+   "t_ko": "영란은행(BOE), 금리 동결 전망",
+   "t_id": "BOE Diprediksi Tahan Suku Bunga"
   },
   {
    "ts": "2026-09-17T12:34:10+07:00",
@@ -17604,8 +17625,8 @@
    "tags": [],
    "url": "https://www.bloomberg.com/news/articles/2026-09-17/airasia-plunges-to-four-year-low-on-route-absorption-report",
    "g": 1,
-   "t_ko": "AirAsia, 노선 인수 보도에 4년 만에 최저가로 급락",
-   "t_id": "AirAsia Anjlok ke Level Terendah Empat Tahun Imbas Laporan Penyerapan Rute"
+   "t_ko": "노선 흡수 보도에 AirAsia 4년 만에 최저가로 급락",
+   "t_id": "AirAsia Anjlok ke Level Terendah 4 Tahun di Tengah Laporan Penyerapan Rute"
   },
   {
    "ts": "2026-09-17T12:34:02+07:00",
@@ -18022,30 +18043,6 @@
    ]
   },
   {
-   "ts": "2026-09-17T12:00:01+07:00",
-   "date": "2026-09-17",
-   "time": "12:00",
-   "src": "CNBC",
-   "t": "Putin braces for election stress test as Russians ‘feel the pain’ of struggling economy",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/17/russia-putin-state-duma-election-ukraine-war.html",
-   "g": 1,
-   "t_ko": "푸틴, 경제난 속 대선 정치적 시험대 직면",
-   "t_id": "Putin Hadapi Uji Stres Pemilu Saat Warga Rusia Rasakan Tekanan Ekonomi",
-   "ai_ko": "· 여당 통합러시아당 지지도 4년래 최저\n· 우크라이나 전쟁 장기화 경제적 타격\n· 현지 진출 기업 지정학적 리스크 증대",
-   "ai_id": "· Dukungan partai berkuasa merosot\n· Beban ekonomi akibat perang berlanjut\n· Risiko geopolitik tekan pasar Rusia",
-   "ai_tags": [
-    "지정학",
-    "선거",
-    "경제"
-   ],
-   "ai_tags_id": [
-    "geopolitik",
-    "pemilu",
-    "ekonomi"
-   ]
-  },
-  {
    "ts": "2026-09-17T11:56:22+07:00",
    "date": "2026-09-17",
    "time": "11:56",
@@ -18094,19 +18091,6 @@
    ]
   },
   {
-   "ts": "2026-09-17T11:49:41+07:00",
-   "date": "2026-09-17",
-   "time": "11:49",
-   "src": "Jawa Pos",
-   "t": "Harga Emas Antam Hari Ini Naik Rp 6.000, Cek Daftar Lengkap Antam, Galeri24 dan UBS",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609170180/harga-emas-antam-hari-ini-naik-rp-6000-cek-daftar-lengkap-antam-galeri24-dan-ubs",
-   "g": 1,
-   "img": "https://cdn-assets.jawapos.com/images/1/2025/09/19/harga-emas-antam-jumat-turun-3768754572.jpg",
-   "t_ko": "오늘 Antam 금 가격 Rp6,000 상승 — Antam·Galeri24·UBS 시세",
-   "t_id": "Harga Emas Antam Hari Ini Naik Rp 6.000, Cek Daftar Lengkap Antam, Galeri24 dan UBS"
-  },
-  {
    "ts": "2026-09-17T11:44:02+07:00",
    "date": "2026-09-17",
    "time": "11:44",
@@ -18128,30 +18112,6 @@
     "anggaran",
     "perdagangan",
     "infrastruktur"
-   ]
-  },
-  {
-   "ts": "2026-09-17T11:40:00+07:00",
-   "date": "2026-09-17",
-   "time": "11:40",
-   "src": "Bloomberg Technoz",
-   "t": "HPM Baru Turunkan Harga Ore Nikel, Penambang Waswas Efek ke PNBP",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121832/hpm-baru-turunkan-harga-ore-nikel-penambang-waswas-efek-ke-pnbp",
-   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260706104713.jpg",
-   "t_ko": "HPM, 니켈 원광 가격 인하에 광산 업계 PNBP 영향 우려",
-   "t_id": "HPM Baru Turunkan Harga Ore Nikel, Penambang Waswas Efek ke PNBP",
-   "ai_ko": "· 신규 광물기준가격 도입으로 저품위 니켈 가격 하락 우려\n· 국가비과세세입(PNBP) 감소 영향 모니터링 요구\n· 니켈 채굴 및 제련 관련 종목 실적에 영향",
-   "ai_id": "· Potensi turun harga bijih nikel limonit\n· Risiko penurunan setoran PNBP minerba\n· Dampak bagi emiten tambang nikel",
-   "ai_tags": [
-    "니켈",
-    "규제",
-    "광물"
-   ],
-   "ai_tags_id": [
-    "nikel",
-    "regulasi",
-    "mineral"
    ]
   }
  ],
@@ -18322,9 +18282,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "12.83",
-   "d": -0.92,
-   "ytd": 10.43,
+   "v": "12.82",
+   "d": -0.96,
+   "ytd": 10.39,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18357,9 +18317,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.27",
-   "d": -0.05,
-   "ytd": 2.03,
+   "v": "100.26",
+   "d": -0.06,
+   "ytd": 2.02,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18369,9 +18329,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.82",
-   "d": -0.44,
-   "ytd": 77.32,
+   "v": "101.76",
+   "d": -0.5,
+   "ytd": 77.22,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18381,9 +18341,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,334.2",
-   "d": -0.03,
-   "ytd": 0.2,
+   "v": "4,334.5",
+   "d": -0.02,
+   "ytd": 0.21,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18405,9 +18365,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,234",
-   "d": 0.77,
-   "ytd": -2.68,
+   "v": "16,261",
+   "d": 0.94,
+   "ytd": -2.52,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18428,68 +18388,7 @@
    "note_id": "FCPO Bursa Malaysia kontrak terdekat · investing.com · Awal tahun 4,050"
   }
  ],
- "curve": {
-  "date": "2026-09-16",
-  "src": "PHEI (IBPA)",
-  "rows": [
-   [
-    0.1,
-    6.5994,
-    6.5991
-   ],
-   [
-    1.0,
-    6.6998,
-    6.7058
-   ],
-   [
-    2.0,
-    6.7936,
-    6.7933
-   ],
-   [
-    3.0,
-    6.8784,
-    6.8723
-   ],
-   [
-    5.0,
-    7.0153,
-    7.008
-   ],
-   [
-    7.0,
-    7.1037,
-    7.1021
-   ],
-   [
-    10.0,
-    7.1679,
-    7.1743
-   ],
-   [
-    15.0,
-    7.1954,
-    7.2068
-   ],
-   [
-    20.0,
-    7.199,
-    7.2112
-   ],
-   [
-    25.0,
-    7.1994,
-    7.2117
-   ],
-   [
-    30.0,
-    7.1995,
-    7.2117
-   ]
-  ],
-  "n": 41
- },
+ "curve": null,
  "calendar": [
   {
    "date": "2026-08-31",
@@ -24508,9 +24407,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-17 12:49",
-  "pc_age_min": 5,
+  "pc_age_min": 11,
   "news_ai_cache": 93,
-  "news_ai_hit": 70,
+  "news_ai_hit": 67,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26449,30 +26348,18 @@
    "srcs": 8
   },
   {
-   "ts": "2026-09-16T20:58:52+07:00",
-   "date": "2026-09-16",
-   "time": "09/16",
-   "src": "Detik",
-   "t": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru",
+   "ts": "2026-09-17T05:04:37+07:00",
+   "date": "2026-09-17",
+   "time": "05:04",
+   "src": "Jawa Pos",
+   "t": "Purbaya Tepis Rumor Adanya 'Gesekan' sehingga Dia Di-reshuffle",
    "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666025/soal-setoran-dividen-rp-120-triliun-bos-danantara-mau-bertemu-menkeu-baru",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/11/20/menteri-investasi-dan-hilirisasikepala-bkpm-rosan-roeslani-1763634019135_169.jpeg?w=360&q=90",
-   "score": 415.15,
+   "url": "https://www.jawapos.com/ekonomi/2609160493/purbaya-tepis-rumor-adanya-gesekan-sehingga-dia-di-reshuffle",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/15/mantan-menteri-keuangan-purbaya-yudhi-sadewadimas-choiruljawaposcom-KfRXn.webp",
+   "score": 407.95,
    "srcs": 1,
-   "t_ko": "Rp120조 배당금 납입 건으로 Danantara 대표, 신임 재무장관 회동 추진",
-   "t_id": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru",
-   "ai_ko": "· Danantara 배당 Rp120조 국고 납입 불투명\n· 전 재무장관 Purbaya 추진, 전년 Rp90조\n· Rosan-Suahasil 협의 대기, 재정·BUMN 변수",
-   "ai_id": "· Setoran dividen Danantara Rp 120 triliun belum pasti\n· Digagas eks Menkeu Purbaya, tahun lalu Rp 90 triliun\n· Rosan akan bertemu Menkeu Suahasil bahas kelanjuta n",
-   "ai_tags": [
-    "배당",
-    "정책",
-    "국영기업"
-   ],
-   "ai_tags_id": [
-    "dividen",
-    "kebijakan",
-    "BUMN"
-   ]
+   "t_ko": "Purbaya, 교체 배경에 갈등설 있다는 소문 일축",
+   "t_id": "Purbaya Tepis Rumor Adanya 'Gesekan' sehingga Dia Di-reshuffle"
   },
   {
    "ts": "2026-09-17T11:44:02+07:00",
@@ -26855,7 +26742,7 @@
     },
     {
      "t": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru",
-     "ko": "Rp120조 배당금 납입 건으로 Danantara 대표, 신임 재무장관 회동 추진",
+     "ko": "Danantara 대표, Rp120조 배당 납부 놓고 신임 재무장관 면담 추진",
      "id": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru",
      "ai_ko": "· Danantara 배당 Rp120조 국고 납입 불투명\n· 전 재무장관 Purbaya 추진, 전년 Rp90조\n· Rosan-Suahasil 협의 대기, 재정·BUMN 변수",
      "ai_id": "· Setoran dividen Danantara Rp 120 triliun belum pasti\n· Digagas eks Menkeu Purbaya, tahun lalu Rp 90 triliun\n· Rosan akan bertemu Menkeu Suahasil bahas kelanjuta n",
