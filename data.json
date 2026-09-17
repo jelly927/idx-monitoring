@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 12:26",
+ "updated": "2026-09-17 12:38",
  "delay_min": 15,
- "fx_basis": "12.84 IDR/KRW · USD/IDR 17,745 · USD/KRW 1,382 · 12:00 Yahoo",
- "idr_per_krw": 12.839,
+ "fx_basis": "12.83 IDR/KRW · USD/IDR 17,745 · USD/KRW 1,383 · 12:30 Yahoo",
+ "idr_per_krw": 12.8328,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -283,7 +283,6 @@
    "prev": 17665.0,
    "pct": 0.45,
    "spark": [
-    17705.0,
     17702.0,
     17695.0,
     17695.0,
@@ -307,10 +306,11 @@
     17740.0,
     17745.0,
     17745.0,
+    17745.0,
     17745.0
    ],
    "inv": true,
-   "asof": "12:00",
+   "asof": "12:30",
    "high": 17745.0,
    "low": 17675.0,
    "src": "yahoo"
@@ -339,8 +339,8 @@
   "value_idr": 6863097222700.007,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 831종목 · 외국인·공시 PC 09-17 12:16",
-  "rank_asof": "12:24",
+  "rank_src": "Yahoo 15분 지연 · 831종목 · 외국인·공시 PC 09-17 12:33",
+  "rank_asof": "12:35",
   "rank_date": "2026-09-17",
   "adv": 394,
   "dec": 247,
@@ -16008,10 +16008,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6763.88,
+   "px": 6757.46,
    "prev": 6679.18,
-   "pct": 1.27,
-   "asof": "12:05",
+   "pct": 1.17,
+   "asof": "12:15",
    "live": true,
    "spark": [
     6765.54,
@@ -16075,17 +16075,19 @@
     6768.25,
     6768.77,
     6767.5,
-    6763.88
+    6763.44,
+    6762.78,
+    6757.46
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64134.4,
+   "px": 64079.52,
    "prev": 63857.24,
-   "pct": 0.43,
-   "asof": "12:10",
+   "pct": 0.35,
+   "asof": "12:20",
    "live": true,
    "spark": [
     64478.19,
@@ -16140,17 +16142,19 @@
     64117.81,
     64143.96,
     64132.82,
-    64134.4
+    64114.58,
+    64102.87,
+    64079.52
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24530.73,
+   "px": 24502.35,
    "prev": 24713.78,
-   "pct": -0.74,
-   "asof": "12:10",
+   "pct": -0.86,
+   "asof": "12:20",
    "live": true,
    "spark": [
     24487.9,
@@ -16187,7 +16191,9 @@
     24533.46,
     24539.5,
     24524.99,
-    24530.73
+    24523.74,
+    24513.06,
+    24502.35
    ]
   }
  ],
@@ -16277,8 +16283,8 @@
    ],
    "url": "https://katadata.co.id/berita/energi/6aab7855ccc86/chandra-asri-perkuat-bisnis-energi-kimia-dan-infrastruktur",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/17/Pabrik_Chandra_Asri-2026_09_17-12_17_44_4c474fee7f18380dc7e0fa13475c91ef_620x413_thumb.jpeg",
-   "t_id": "Chandra Asri Perkuat Bisnis Energi, Kimia, dan Infrastruktur",
-   "t_ko": "Chandra Asri, 에너지·화학·인프라 사업 강화"
+   "t_ko": "Chandra Asri, 에너지·화학·인프라 사업 강화",
+   "t_id": "Chandra Asri Perkuat Bisnis Energi, Kimia, dan Infrastruktur"
   },
   {
    "ts": "2026-09-17T12:12:33+07:00",
@@ -16306,8 +16312,8 @@
    ],
    "url": "https://www.bloombergtechnoz.com/detail-news/121835/tak-cuma-ptba-swasta-disebut-pasok-batu-bara-dmo-lebih-dari-25",
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260707091545.jpg",
-   "t_id": "Tak Cuma PTBA, Swasta Disebut Pasok Batu Bara DMO Lebih dari 25%",
-   "t_ko": "PTBA 외 민간사도 DMO 석탄 25% 이상 공급 전망"
+   "t_ko": "PTBA 외 민간사도 DMO 석탄 25% 이상 공급 전망",
+   "t_id": "Tak Cuma PTBA, Swasta Disebut Pasok Batu Bara DMO Lebih dari 25%"
   },
   {
    "ts": "2026-09-17T11:30:00+07:00",
@@ -16321,7 +16327,19 @@
    "url": "https://www.idnfinancials.com/news/68987/bbtn-offers-idr-2-trillion-social-bonds-heres-the-purpose",
    "img": "https://photos.idnfinancials.com/_idn/2025/BBTN.png",
    "t_ko": "BBTN, Rp2조 규모 사회채권 발행 추진",
-   "t_id": "BBTN Terbitkan Social Bonds Rp2 Triliun, Ini Tujuannya"
+   "t_id": "BBTN Terbitkan Social Bonds Rp2 Triliun, Ini Tujuannya",
+   "ai_ko": "· Bank BTN(BBTN)이 Rp 2조 규모의 소셜본드 발행 추진\n· 공모 목표 Rp 10조 중 2차 발행이며 만기 최대 3년\n· 저소득층 주택 공급 및 중소기업 지원 재원으로 활용",
+   "ai_id": "· Bank BTN(BBTN) rilis social bonds Rp 2 triliun\n· Bagian dari target Rp 10 triliun, tenor hingga 3 tahun\n· Dana untuk pembiayaan perumahan dan UMKM",
+   "ai_tags": [
+    "채권",
+    "실적",
+    "금융"
+   ],
+   "ai_tags_id": [
+    "obligasi",
+    "kinerja",
+    "perbankan"
+   ]
   },
   {
    "ts": "2026-09-17T11:00:00+07:00",
@@ -16636,32 +16654,6 @@
    ]
   },
   {
-   "ts": "2026-09-17T08:15:00+07:00",
-   "date": "2026-09-17",
-   "time": "08:15",
-   "src": "Bloomberg Technoz",
-   "t": "Suspensi Dibuka, Rumor Akuisisi PACK Akhirnya Terjawab",
-   "tags": [
-    "PACK"
-   ],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121806/suspensi-dibuka-rumor-akuisisi-pack-akhirnya-terjawab",
-   "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814105708.jpeg",
-   "t_ko": "거래정지 해제된 PACK, 인수설의 실체 드러나",
-   "t_id": "Suspensi Dibuka, Rumor Akuisisi PACK Terjawab",
-   "ai_ko": "· BEI는 17일 PACK 주식 거래 재개\n· 한 달간 주가 106.19% 급등 기록\n· 니켈 테마주 투자 유의 필요",
-   "ai_id": "· BEI buka suspensi saham PACK pada 17 Sep\n· Saham naik 106,19% dalam waktu sebulan\n· Perhatian khusus pada emiten nikel",
-   "ai_tags": [
-    "주가",
-    "규제",
-    "증시"
-   ],
-   "ai_tags_id": [
-    "saham",
-    "regulasi",
-    "bursa"
-   ]
-  },
-  {
    "ts": "2026-09-17T08:12:00+07:00",
    "date": "2026-09-17",
    "time": "08:12",
@@ -16791,34 +16783,6 @@
     "rekomendasi saham",
     "IHSG",
     "energi"
-   ]
-  },
-  {
-   "ts": "2026-09-17T06:31:00+07:00",
-   "date": "2026-09-17",
-   "time": "06:31",
-   "src": "Katadata",
-   "t": "IHSG Berpotensi Loyo Usai Suku Bunga AS Naik, Analis Jagokan JPFA, UNVR, MBMA",
-   "tags": [
-    "JPFA",
-    "MBMA",
-    "UNVR"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aab26b720ebe/ihsg-berpotensi-loyo-usai-suku-bunga-as-naik-analis-jagokan-jpfa-unvr-mbma",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/IHSG_sesi_pertama_ditutup_naik_056_ke_6337_Foto_KatadataFauza_Sy-2026_08_14-14_59_44_e5a1cf05894dc42757bb5c7376f9b056_620x413_thumb.jpg",
-   "t_ko": "미 금리 인상 여파에 IHSG 약세 전망 — JPFA·UNVR·MBMA 유망",
-   "t_id": "IHSG Berpotensi Loyo Usai Suku Bunga AS Naik, Analis Jagokan JPFA, UNVR, MBMA",
-   "ai_ko": "· 미국 Fed, 25bp 인상해 3.75~4.00%\n· 2023년 7월 이후 첫 인상, 이미 선반영\n· 증권가 JPFA·UNVR·MBMA 매수 추천",
-   "ai_id": "· The Fed naikkan 25 bps ke 3,75-4,00%\n· Kenaikan pertama sejak Juli 2023\n· Analis jagokan JPFA, UNVR, MBMA",
-   "ai_tags": [
-    "금리",
-    "증시전망",
-    "추천종목"
-   ],
-   "ai_tags_id": [
-    "suku bunga",
-    "prospek IHSG",
-    "rekomendasi saham"
    ]
   },
   {
@@ -17506,6 +17470,125 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-17T12:33:06+07:00",
+   "date": "2026-09-17",
+   "time": "12:33",
+   "src": "Detik",
+   "t": "Siapa Saja Bisa Genggam Saham Bursa? Ini Syarat dari OJK",
+   "tags": [],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8666673/siapa-saja-bisa-genggam-saham-bursa-ini-syarat-dari-ojk",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2017/01/18/399561aa-8412-4a88-bda6-b8018496ac9b_169.jpg?w=360&q=90",
+   "t_id": "Siapa Saja Bisa Genggam Saham Bursa? Ini Syarat dari OJK",
+   "t_ko": "OJK, 누구나 거래소 지분 보유 가능한 요건 공개"
+  },
+  {
+   "ts": "2026-09-17T12:30:00+07:00",
+   "date": "2026-09-17",
+   "time": "12:30",
+   "src": "Bloomberg Technoz",
+   "t": "Realisasi DMO Batu Bara Tak Merata: Akibat Spek & Kuota Produksi",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121837/realisasi-dmo-batu-bara-tak-merata-akibat-spek-kuota-produksi",
+   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260917110442.jpg",
+   "t_ko": "석탄 DMO 실적 불균형 발생 — 투기 및 생산 쿼터가 원인",
+   "t_id": "Realisasi DMO Batu Bara Tak Merata: Dampak Spek & Kuota Produksi",
+   "ai_ko": "· PLN 수요와 석탄사 생산 스펙 불일치로 DMO 미스매치 발생\n· 중칼로리 석탄 부족에 따른 정부의 추가 공급 배정 지시\n· 특정 석탄 채굴사의 생산 및 물류 부담 가중",
+   "ai_id": "· Ketimpangan realisasi DMO akibat spesifikasi PLN\n· Kewajiban tambahan pasokan bagi emiten batu bara\n· Beban operasional produsen batu bara kalori medium",
+   "ai_tags": [
+    "석탄",
+    "규제",
+    "에너지"
+   ],
+   "ai_tags_id": [
+    "batu bara",
+    "regulasi",
+    "energi"
+   ]
+  },
+  {
+   "ts": "2026-09-17T12:29:31+07:00",
+   "date": "2026-09-17",
+   "time": "12:29",
+   "src": "Detik",
+   "t": "Prabowo Ungkap Giant Sea Wall Dibangun Tahun Depan",
+   "tags": [],
+   "url": "https://finance.detik.com/infrastruktur/d-8666665/prabowo-ungkap-giant-sea-wall-dibangun-tahun-depan",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/presiden-prabowo-pimpin-ratas-penanganan-bencana-alam-di-indonesia-senin-792026-1788764255782_169.jpeg?w=360&q=90",
+   "t_ko": "Prabowo, 내년 방파제(Giant Sea Wall) 착공 계획 발표",
+   "t_id": "Prabowo Ungkap Giant Sea Wall Dibangun Tahun Depan"
+  },
+  {
+   "ts": "2026-09-17T12:27:06+07:00",
+   "date": "2026-09-17",
+   "time": "12:27",
+   "src": "Republika",
+   "t": "Bahlil Siapkan Rapat dengan PLN Bahas Pasokan Listrik Terdampak El Nino",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tlhtt6370/bahlil-siapkan-rapat-dengan-pln-bahas-pasokan-listrik-terdampak-el-nino",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/menteri-energi-dan-sumber-daya-mineral-bahlil-lahadalia-memberikan_260915083614-443.JPG",
+   "t_ko": "Bahlil, 엘니뇨 피해 전력 공급 논의 위해 PLN과 회의 개최",
+   "t_id": "Bahlil Siapkan Rapat Bersama PLN Bahas Pasokan Listrik Terdampak El Nino",
+   "ai_ko": "· 엘니뇨로 인한 수력발전소 발전량 감소로 전력 공급 차질\n· 에너지부와 PT PLN (Persero)의 비상 대책 회의 개최\n· 전력 수급 불안정에 따른 유틸리티 업종 리스크 확대",
+   "ai_id": "· Gangguan pasokan listrik akibat dampak El Nino pada PLTA\n· Kementerian ESDM siapkan rapat darurat bersama PT PLN\n· Risiko operasional bagi penyedia listrik nasional",
+   "ai_tags": [
+    "전력",
+    "기후",
+    "인프라"
+   ],
+   "ai_tags_id": [
+    "listrik",
+    "iklim",
+    "infrastruktur"
+   ]
+  },
+  {
+   "ts": "2026-09-17T12:26:00+07:00",
+   "date": "2026-09-17",
+   "time": "12:26",
+   "src": "Media Indonesia",
+   "t": "Kreator Indonesia Ditantang Rancang Kemasan Gift Series, Hadiah Emas 20 Gram Menanti",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/934385/kreator-indonesia-ditantang-rancang-kemasan-gift-series-hadiah-emas-20-gram-menanti",
+   "t_ko": "인도네시아 크리에이터 대상 기프트 시리즈 패키지 디자인 공모",
+   "t_id": "Kreator Indonesia Ditantang Rancang Kemasan Gift Series, Hadiah Emas 20 Gram Menanti",
+   "ai_ko": "· PT Aneka Tambang Tbk (ANTM)가 20g 금 상품 디자인 공모전 개최\n· 고객의 날 기념 귀금속 브랜드 인지도 제고 마케팅\n· 금속 및 광업 부문의 소비자 참여형 영업 강화",
+   "ai_id": "· PT Aneka Tambang Tbk (ANTM) adakan sayembara desain\n· Peringatan Bulan Pelanggan 2026 dengan hadiah emas\n· Strategi pemasaran produk logam mulia perseroan",
+   "ai_tags": [
+    "금",
+    "실적",
+    "마케팅"
+   ],
+   "ai_tags_id": [
+    "emas",
+    "kinerja",
+    "pemasaran"
+   ]
+  },
+  {
+   "ts": "2026-09-17T12:24:00+07:00",
+   "date": "2026-09-17",
+   "time": "12:24",
+   "src": "Katadata",
+   "t": "Pebisnis Media - Pertahanan Norman Joesoef Akuisisi INews Group Milik Hary Tanoe",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/bursa/6aab799f9be2c/pebisnis-media-pertahanan-norman-joesoef-akuisisi-inews-group-milik-hary-tanoe",
+   "img": "https://cdn1.katadata.co.id/media/oldmedia/field/image/MNC-Katadata-Arief.jpg",
+   "t_ko": "미디어 사업가 Norman Joesoef, Hary Tanoe의 iNews Group 인수",
+   "t_id": "Pengusaha Media - Pertahanan Norman Joesoef Akuisisi iNews Group Milik Hary Tanoe",
+   "ai_ko": "· PT Media Nusantara Citra Tbk (MNCN)이 iNews 그룹 매각\n· Republikorp 계열사 RMAB와의 미디어 자산 인수합병\n· 미디어 부문의 디지털 전환 및 플랫폼 통합 가속화",
+   "ai_id": "· PT Media Nusantara Citra Tbk (MNCN) lepas iNews Group\n· Akuisisi oleh PT Republik Media Anak Bangsa\n· Konsolidasi ekosistem media digital dan penyiaran",
+   "ai_tags": [
+    "M&A",
+    "미디어",
+    "방송"
+   ],
+   "ai_tags_id": [
+    "merger dan akuisisi",
+    "media",
+    "penyiaran"
+   ]
+  },
+  {
    "ts": "2026-09-17T12:20:23+07:00",
    "date": "2026-09-17",
    "time": "12:20",
@@ -17515,7 +17598,43 @@
    "url": "https://www.cnbc.com/2026/09/17/bank-of-england-interest-rate-decision-fed-rate-hike-uk-inflation.html",
    "g": 1,
    "t_ko": "영국 중앙은행, 물가 상승에도 연준과 다른 금리 행보 전망",
-   "t_id": "Bank of England Bakal Abai Arah Kenaikan Suku Bunga The Fed di Tengah Inflasi Merangkak"
+   "t_id": "Bank of England Bakal Abai Arah Kenaikan Suku Bunga The Fed di Tengah Inflasi Merangkak",
+   "ai_ko": "· 영국의 8월 물가상승률이 3.1%로 상승 기록\n· 차량 연료비 급등과 에너지 수입 의존도가 주원인\n· 영란은행의 금리 동결 기조 속 시장 경계감 확대",
+   "ai_id": "· Inflasi Inggris naik ke 3,1% pada bulan Agustus\n· Lonjakan harga BBM dorong kenaikan inflasi\n· Bank of England pertahankan suku bunga",
+   "ai_tags": [
+    "인플레이션",
+    "금리",
+    "환율"
+   ],
+   "ai_tags_id": [
+    "inflasi",
+    "suku bunga",
+    "nilai tukar"
+   ]
+  },
+  {
+   "ts": "2026-09-17T12:16:04+07:00",
+   "date": "2026-09-17",
+   "time": "12:16",
+   "src": "Detik",
+   "t": "Prabowo: Kita Harus Amankan Pangan, Habis Itu BBM",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666655/prabowo-kita-harus-amankan-pangan-habis-itu-bbm",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/03/presiden-prabowo-subianto-di-eastern-economic-forum-eef-ke-11-vladivostok-rusia-kamis-392026-1788429824081_169.jpeg?w=360&q=90",
+   "t_ko": "Prabowo: 식량 안보 선행 후 연료 확보 추진",
+   "t_id": "Prabowo: RI Harus Amankan Pangan, Menyusul BBM",
+   "ai_ko": "· 프라보보 대통령이 식량 안보와 에너지 자립 최우선 강조\n· 팜유 기반 바이오연료 B50 및 태양광 개발 추진\n· 농어촌 협동조합 육성으로 물류비 절감 및 소득 증대",
+   "ai_id": "· Prabowo prioritaskan ketahanan pangan dan energi\n· Dorong pengembangan B50 dan energi surya\n· Koperasi desa perkuat rantai pasok logistik",
+   "ai_tags": [
+    "에너지",
+    "농업",
+    "정책"
+   ],
+   "ai_tags_id": [
+    "energi",
+    "pertanian",
+    "kebijakan"
+   ]
   },
   {
    "ts": "2026-09-17T12:10:05+07:00",
@@ -17550,8 +17669,20 @@
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/934381/donald-trump-desak-the-fed-turunkan-suku-bunga-ke-level-1-persen",
    "g": 1,
+   "t_ko": "도널드 트럼프, 연준에 기준금리 1% 인하 촉구",
    "t_id": "Donald Trump Desak The Fed Turunkan Suku Bunga ke Level 1 Persen",
-   "t_ko": "도널드 트럼프, 연준에 기준금리 1% 인하 촉구"
+   "ai_ko": "· 도널드 트럼프 미국 대통령이 연준에 기준금리 인하 요구\n· 연준의 25bp 금리 인상 직후 1%대 금리 주장\n· 제롬 파월 전 의장 비판하며 신임 의장 기대감 표명",
+   "ai_id": "· Donald Trump desak The Fed turunkan suku bunga\n· Kritik kenaikan 25 bps dan tuntut suku bunga 1%\n· Harapkan kepemimpinan baru di bank sentral",
+   "ai_tags": [
+    "금리",
+    "미국",
+    "통화정책"
+   ],
+   "ai_tags_id": [
+    "suku bunga",
+    "Amerika Serikat",
+    "kebijakan moneter"
+   ]
   },
   {
    "ts": "2026-09-17T12:06:08+07:00",
@@ -17563,8 +17694,20 @@
    "url": "https://finance.detik.com/energi/d-8666642/timur-tengah-memanas-suku-bunga-the-fed-naik-harga-minyak-keder",
    "g": 1,
    "img": "https://akcdn.detik.net.id/community/media/visual/2020/03/31/4b167337-a5da-4fae-bb8f-2ec1518b899d_169.jpeg?w=360&q=90",
+   "t_ko": "중동 긴장 고조 및 연준 금리 인상에 유가 약세",
    "t_id": "Timur Tengah Memanas, Suku Bunga The Fed Naik, Harga Minyak Keder",
-   "t_ko": "중동 긴장 고조 및 연준 금리 인상에 유가 약세"
+   "ai_ko": "· 브렌트유가 배럴당 USD 104.59로 1.2% 하락\n· 사우디아라비아의 오만 경유 원유 공급 우려 완화 반영\n· 연준 금리 인상과 중동 지정학적 리스크가 복합 작용",
+   "ai_id": "· Harga minyak Brent turun 1,2% ke USD 104,59\n· Pasokan Arab Saudi via Oman redakan kekhawatiran\n· Kenaikan suku bunga The Fed tekan harga komoditas",
+   "ai_tags": [
+    "유가",
+    "금리",
+    "지정학"
+   ],
+   "ai_tags_id": [
+    "minyak",
+    "suku bunga",
+    "geopolitik"
+   ]
   },
   {
    "ts": "2026-09-17T12:05:00+07:00",
@@ -17639,6 +17782,18 @@
    ]
   },
   {
+   "ts": "2026-09-17T12:01:14+07:00",
+   "date": "2026-09-17",
+   "time": "12:01",
+   "src": "Detik",
+   "t": "Buruh Beri Tenggat 22 September Revisi RUU Ketenagakerjaan atau Demo Besar",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666666/buruh-beri-tenggat-22-september-revisi-ruu-ketenagakerjaan-atau-demo-besar",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/24/andi-gani-1787552521990_169.jpeg?w=360&q=90",
+   "t_ko": "노조, 22일까지 노동법 개정 안 하면 대규모 시위 예고",
+   "t_id": "Buruh Beri Tenggat 22 September Revisi RUU Ketenagakerjaan atau Demo Akbar"
+  },
+  {
    "ts": "2026-09-17T12:01:00+07:00",
    "date": "2026-09-17",
    "time": "12:01",
@@ -17671,8 +17826,8 @@
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/934377/the-fed-naikkan-suku-bunga-ke-4-akibat-inflasi-perang-iran",
    "g": 1,
-   "t_id": "The Fed Naikkan Suku Bunga ke 4% akibat Inflasi Perang Iran",
    "t_ko": "이란 전쟁 인플레이션 여파로 미 연준 금리 4% 인상",
+   "t_id": "The Fed Naikkan Suku Bunga ke 4% akibat Inflasi Perang Iran",
    "ai_ko": "· 연방기금금리 3.75~4.00% 인상\n· 이란 전쟁 발발에 따른 물가 상승 대응\n· 글로벌 증시 전반 투자 심리 위축",
    "ai_id": "· Suku bunga naik ke kisaran 4 persen\n· Lonjakan inflasi akibat perang di Iran\n· Pengetatan moneter tekan pasar modal",
    "ai_tags": [
@@ -18059,185 +18214,6 @@
     "dana asing",
     "nilai tukar"
    ]
-  },
-  {
-   "ts": "2026-09-17T10:41:00+07:00",
-   "date": "2026-09-17",
-   "time": "10:41",
-   "src": "Media Indonesia",
-   "t": "Prabowo Minta Investigasi Kapal Virgo Transport 8 Libatkan TNI- Polri",
-   "tags": [],
-   "url": "https://mediaindonesia.com/politik-dan-hukum/934354/prabowo-minta-investigasi-kapal-virgo-transport-8-libatkan-tni--polri",
-   "t_ko": "Prabowo, Virgo Transport 8호 사고에 TNI·Polri 합동 조사 지시",
-   "t_id": "Prabowo Minta Investigasi Kapal Virgo Transport 8 Libatkan TNI-Polri",
-   "ai_ko": "· 자바해에서 상선 사고로 114명이 구조 및 수습\n· 승객 243명과 차량 89우를 싣고 운항 중 악천후로 침몰 위기 발생\n· 해운 및 물류 업종의 안전 규제 강화 요인으로 작용",
-   "ai_id": "· Evakuasi 114 korban kecelakaan kapal di laut\n· Kapal bawa 243 penumpang hadapi cuaca buruk\n· Dorong pengawasan ketat keselamatan pelayaran",
-   "ai_tags": [
-    "사고",
-    "해운",
-    "규제"
-   ],
-   "ai_tags_id": [
-    "kecelakaan",
-    "pelayaran",
-    "regulasi"
-   ]
-  },
-  {
-   "ts": "2026-09-17T10:40:00+07:00",
-   "date": "2026-09-17",
-   "time": "10:40",
-   "src": "Medcom",
-   "t": "Keputusan Suku Bunga Bank Sentral Amerika Bisa Bikin Cicilan KPR di Indonesia Naik, Kok Bisa?",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/keuangan/0KvZj6lK-keputusan-suku-bunga-bank-sentral-amerika-bisa-bikin-cicilan-kpr-di-indonesia-naik-kok-bisa",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/17/1842664/t5CucaBdJR.jpg?w=720",
-   "t_ko": "미국 기준금리 인상에 인도네시아 주택담보대출 금리 상승 전망",
-   "t_id": "Keputusan Suku Bunga Bank Sentral Amerika Bisa Bikin Cicilan KPR di Indonesia Naik, Kok Bisa?"
-  },
-  {
-   "ts": "2026-09-17T10:37:00+07:00",
-   "date": "2026-09-17",
-   "time": "10:37",
-   "src": "Katadata",
-   "t": "Fitch Ratings Beri Outlook Negatif SWF Indonesia Investment Authority (INA)Â",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/bursa/6aab6090c50ae/fitch-ratings-beri-outlook-negatif-swf-indonesia-investment-authority-ina",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/02/13/Logo_INA_Indonesia_Investment_Authority-2026_02_13-13_58_31_b0c5d81633eda42022430c17824597af_620x413_thumb.jpg",
-   "t_ko": "Fitch Ratings, 인도네시아 국부펀드 INA 전망 부정적 하향",
-   "t_id": "Fitch Beri Outlook Negatif SWF INA",
-   "ai_ko": "· 피치가 INA 신용등급 BBB 유지 및 부정적 전망 부여\n· 정부 신용등급 연동과 함께 BMRI·BBRI 배당으로 자금 조달\n· 국부펀드 신인도 하락에 따른 공공 인프라 투자 심리 위축",
-   "ai_id": "· Fitch pertahankan peringkat BBB untuk INA\n· Prospek negatif sejalan rating pemerintah\n· Berpotensi tekan sentimen investasi publik",
-   "ai_tags": [
-    "신용등급",
-    "국부펀드",
-    "배당"
-   ],
-   "ai_tags_id": [
-    "peringkat kredit",
-    "SWF",
-    "dividen"
-   ]
-  },
-  {
-   "ts": "2026-09-17T10:36:35+07:00",
-   "date": "2026-09-17",
-   "time": "10:36",
-   "src": "Detik",
-   "t": "Penempatan Manajer Kopdes Ditargetkan Paling Lambat 25 September",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666470/penempatan-manajer-kopdes-ditargetkan-paling-lambat-25-september",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/01/menteri-koperasi-menkop-ferry-juliantono-1788251580278_169.jpeg?w=360&q=90",
-   "t_ko": "Kopdes 관리자 배치, 9월 25일 이전 완료 목표",
-   "t_id": "Penempatan Manajer Kopdes Ditargetkan Paling Lambat 25 September",
-   "ai_ko": "· Agrinas Pangan koperasi manajer penempatan\n· 9월 25일까지 배치 완료 목표\n· 운영 체계 구축 및 급여 확정",
-   "ai_id": "· Penempatan manajer koperasi desa\n· Target selesai paling lambat 25 Sept\n· Operasional didukung Agrinas Pangan",
-   "ai_tags": [
-    "유통",
-    "정책",
-    "협동조합"
-   ],
-   "ai_tags_id": [
-    "koperasi",
-    "kebijakan",
-    "pangan"
-   ]
-  },
-  {
-   "ts": "2026-09-17T10:30:04+07:00",
-   "date": "2026-09-17",
-   "time": "10:30",
-   "src": "Detik",
-   "t": "Investasi Ribuan Triliun Buka Lapangan Kerja, Prabowo: Bukan dari MBG-Kopdes",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666459/investasi-ribuan-triliun-buka-lapangan-kerja-prabowo-bukan-dari-mbg-kopdes",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/presiden-prabowo-pimpin-ratas-penanganan-bencana-alam-di-indonesia-senin-792026-1788764255782_169.jpeg?w=360&q=90",
-   "t_ko": "Prabowo, 수조 원대 투자의 일자리 창출 효과 강조 — MBG·Kopdes 제외",
-   "t_id": "Investasi Ribuan Triliun Buka Lapangan Kerja, Prabowo: Bukan dari MBG-Kopdes",
-   "ai_ko": "· 2025년 투자 Rp1,931조 달성\n· 270만 개 신규 일자리 창출 효과\n· 정부 프로그램 외 민간 투자 성장",
-   "ai_id": "· Realisasi investasi Rp1.931 triliun\n· Ciptakan 2,7 juta lapangan kerja\n· Pertumbuhan ekonomi dukung swasta",
-   "ai_tags": [
-    "투자",
-    "경제",
-    "고용"
-   ],
-   "ai_tags_id": [
-    "investasi",
-    "ekonomi",
-    "tenaga kerja"
-   ]
-  },
-  {
-   "ts": "2026-09-17T10:24:00+07:00",
-   "date": "2026-09-17",
-   "time": "10:24",
-   "src": "Katadata",
-   "t": "Sempat Ditunda, Pajak E-Commerce Berlaku Mulai 1 Oktober 2026",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aab5d8bc7251/sempat-ditunda-pajak-e-commerce-berlaku-mulai-1-oktober-2026",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2019/07/23/2019_07_23-22_58_53_db552cba9847fea2132531372c42a0bb_620x413_thumb.jpg",
-   "t_ko": "연기된 이더리움 이커머스세 2026년 10월 1일부 시행",
-   "t_id": "Sempat Ditunda, Pajak E-Commerce Berlaku Mulai 1 Oktober 2026",
-   "ai_ko": "· 전자상거래 플랫폼 소상공인 소득세 10월 1일 부과\n· 쇼피와 토코피디아 등 주요 4개사 시스템 연동 완료\n· 세수 확대 및 세무 시스템 정비 본격 추진",
-   "ai_id": "· Pajak e-commerce berlaku mulai 1 Oktober 2026\n· Shopee dan Tokopedia siapkan sistem pemungutan\n· Pemerintah tingkatkan efektivitas penerimaan negara",
-   "ai_tags": [
-    "세금",
-    "규제",
-    "이커머스"
-   ],
-   "ai_tags_id": [
-    "pajak",
-    "regulasi",
-    "e-commerce"
-   ]
-  },
-  {
-   "ts": "2026-09-17T10:22:49+07:00",
-   "date": "2026-09-17",
-   "time": "10:22",
-   "src": "Detik",
-   "t": "Proyek Rp 2,8 T di Bogor Dimulai, Sampah 500 Ribu Ton Bakal Jadi Listrik",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8666451/proyek-rp-2-8-t-di-bogor-dimulai-sampah-500-ribu-ton-bakal-jadi-listrik",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/09/12/sampah-disulap-jadi-listrik-ramah-lingkungan-pemerintah-genjot-pltsa-1757661733541_169.jpeg?w=360&q=90",
-   "t_ko": "보고르서 Rp2.8조 규모 프로젝트 착공 — 쓰레기 50만 톤으로 전력 생산",
-   "t_id": "Proyek Rp 2,8 T di Bogor Dimulai, Sampah 500 Ribu Ton Bakal Jadi Listrik",
-   "ai_ko": "·보고르 폐기물 발전소 프로젝트 투자액 Rp2.8조 투입\n· 연간 50만 톤 이상의 쓰레기 처리 용량 확보\n· 녹색 에너지 생산으로 10만 가구 전력 공급 기여",
-   "ai_id": "· Proyek PSEL Bogor nilai investasi Rp2.8 triliun\n· Kapasitas pengolahan capai 500 ribu ton per tahun\n· Energi hijau pasok listrik untuk 100 ribu rumah",
-   "ai_tags": [
-    "인프라",
-    "에너지",
-    "친환경"
-   ],
-   "ai_tags_id": [
-    "infrastruktur",
-    "energi",
-    "lingkungan"
-   ]
-  },
-  {
-   "ts": "2026-09-17T10:16:00+07:00",
-   "date": "2026-09-17",
-   "time": "10:16",
-   "src": "Katadata",
-   "t": "Industri Hijau Diproyeksikan Ciptakan 72 Juta Lapangan Kerja, Kualitas Didorong",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/investasi-hijau/6aab59efc33d2/industri-hijau-diproyeksikan-ciptakan-72-juta-lapangan-kerja-kualitas-didorong",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/17/SAFE_ThematicSession_Navigating_The_Green_Transition_Industrial-2026_09_17-10_08_10_6f8fa814bb7a347f6d26c0135a6b01fb_620x413_thumb.jpg",
-   "t_ko": "친환경 산업, 일자리 7200만 개 창출 전망 속 질적 성장 추진",
-   "t_id": "Industri Hijau Bidik 72 Juta Lapangan Kerja, Kualitas Terus Didorong",
-   "ai_ko": "· 녹색산업정책을 통해 2029년까지 7,200만 개 신규 일자리 창출 목표\n· 제조업 탈산업화 대응 및 에너지·농업 등 8개 핵심 부문 전환 추진\n· 친환경 전환 비용 증가에 따른 상장 제조사 수익성 압박 우려",
-   "ai_id": "· Target ciptakan 72 juta lapangan kerja hijau pada 2029\n· Restrukturisasi ekonomi atasi deindustrialisasi manufaktur\n· Beban biaya transisi tekan margin emiten sektor industri",
-   "ai_tags": [
-    "친환경",
-    "고용",
-    "제조업"
-   ],
-   "ai_tags_id": [
-    "hijau",
-    "ketenagakerjaan",
-    "manufaktur"
-   ]
   }
  ],
  "kisi_news": [
@@ -18408,8 +18384,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.83",
-   "d": -0.87,
-   "ytd": 10.49,
+   "d": -0.91,
+   "ytd": 10.44,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18454,9 +18430,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.23",
-   "d": 0.77,
-   "ytd": 78.04,
+   "v": "102.13",
+   "d": 0.67,
+   "ytd": 77.86,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18466,9 +18442,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,332.3",
-   "d": 0.18,
-   "ytd": 0.15,
+   "v": "4,325.5",
+   "d": 0.02,
+   "ytd": -0.0,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -24251,10 +24227,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-17 12:16",
-  "pc_age_min": 10,
-  "news_ai_cache": 88,
-  "news_ai_hit": 67,
+  "idx_from_pc": "2026-09-17 12:33",
+  "pc_age_min": 5,
+  "news_ai_cache": 92,
+  "news_ai_hit": 72,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26225,8 +26201,8 @@
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/934377/the-fed-naikkan-suku-bunga-ke-4-akibat-inflasi-perang-iran",
    "g": 1,
-   "t_id": "The Fed Naikkan Suku Bunga ke 4% akibat Inflasi Perang Iran",
    "t_ko": "이란 전쟁 인플레이션 여파로 미 연준 금리 4% 인상",
+   "t_id": "The Fed Naikkan Suku Bunga ke 4% akibat Inflasi Perang Iran",
    "ai_ko": "· 연방기금금리 3.75~4.00% 인상\n· 이란 전쟁 발발에 따른 물가 상승 대응\n· 글로벌 증시 전반 투자 심리 위축",
    "ai_id": "· Suku bunga naik ke kisaran 4 persen\n· Lonjakan inflasi akibat perang di Iran\n· Pengetatan moneter tekan pasar modal",
    "ai_tags": [
@@ -26254,48 +26230,72 @@
    "score": 415.15,
    "srcs": 1,
    "t_ko": "Rp120조 배당금 납입 건으로 Danantara 대표, 신임 재무장관 회동 추진",
-   "t_id": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru"
-  },
-  {
-   "ts": "2026-09-17T10:45:00+07:00",
-   "date": "2026-09-17",
-   "time": "10:45",
-   "src": "IDX Channel",
-   "t": "Yield Obligasi AS Capai Rekor, Ini Dampaknya ke Pasar Keuangan Domestik",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/yield-obligasi-as-capai-rekor-ini-dampaknya-ke-pasar-keuangan-domestik",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/17/1001269711.jpg",
-   "t_ko": "미국 국채 금리 최고치 경신에 국내 금융시장 파장",
-   "t_id": "Yield Obligasi AS Capai Rekor, Ini Dampaknya ke Pasar Keuangan Domestik",
-   "ai_ko": "· 미국 10년물 국채 금리 5.0210% 기록하며 2007년 이후 최고\n· 인도네시아 국채 시장, 외국인 자금 유입으로 영향 제한적\n· 루피아화 안정세 속 채권 시장 충격 흡수",
-   "ai_id": "· Yield US Treasury 10 tahun capai rekor tertinggi sejak 2007\n· Aliran modal asing masuk redam dampak ke SBN domestik\n· Penguatan rupiah topang stabilitas pasar keuangan",
+   "t_id": "Soal Setoran Dividen Rp 120 Triliun, Bos Danantara Mau Bertemu Menkeu Baru",
+   "ai_ko": "· Danantara 배당 Rp120조 국고 납입 불투명\n· 전 재무장관 Purbaya 추진, 전년 Rp90조\n· Rosan-Suahasil 협의 대기, 재정·BUMN 변수",
+   "ai_id": "· Setoran dividen Danantara Rp 120 triliun belum pasti\n· Digagas eks Menkeu Purbaya, tahun lalu Rp 90 triliun\n· Rosan akan bertemu Menkeu Suahasil bahas kelanjuta n",
    "ai_tags": [
-    "채권금리",
-    "외국인자금",
-    "환율"
+    "배당",
+    "정책",
+    "국영기업"
    ],
    "ai_tags_id": [
-    "yield obligasi",
-    "dana asing",
-    "nilai tukar"
+    "dividen",
+    "kebijakan",
+    "BUMN"
+   ]
+  },
+  {
+   "ts": "2026-09-17T11:44:02+07:00",
+   "date": "2026-09-17",
+   "time": "11:44",
+   "src": "Detik",
+   "t": "Mendag Minta Tambah Anggaran Rp 1,86 T buat Bangun-Revitalisasi 200 Pasar",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666599/mendag-minta-tambah-anggaran-rp-1-86-t-buat-bangun-revitalisasi-200-pasar",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/17/menteri-perdagangan-mendag-budi-santoso-1789620199438_169.jpeg?w=360&q=90",
+   "t_ko": "무역부, 전통시장 200곳 건립·개보수 예산 Rp1.86조 증액 요청",
+   "t_id": "Mendag Minta Tambah Anggaran Rp 1,86 T Buat Bangun-Revitalisasi 200 Pasar",
+   "ai_ko": "· 2027년 예산 Rp 1.86조 추가 요청\n· 전통시장 200곳 건설 및 개보수 추진\n· 유통 및 건설 관련 업종 수혜 예상",
+   "ai_id": "· Usulan tambahan anggaran Rp1,86 triliun\n· Revitalisasi 200 unit pasar rakyat\n· Katalis positif bagi sektor perdagangan",
+   "ai_tags": [
+    "예산",
+    "유통",
+    "인프라"
    ],
-   "score": 410.25,
+   "ai_tags_id": [
+    "anggaran",
+    "perdagangan",
+    "infrastruktur"
+   ],
+   "score": 409.85,
    "srcs": 1
   },
   {
-   "ts": "2026-09-17T09:01:00+07:00",
+   "ts": "2026-09-17T06:45:00+07:00",
    "date": "2026-09-17",
-   "time": "09:01",
-   "src": "Katadata",
-   "t": "Harga Minyak Turun ke US$ 104 usai Arab Saudi Pulihkan Jalur Pipa Vital",
+   "time": "06:45",
+   "src": "IDX Channel",
+   "t": "Harga Minyak Merosot usai Saudi Tawarkan Pasokan via Oman",
    "tags": [],
-   "url": "https://katadata.co.id/berita/energi/6aab4a0222689/harga-minyak-turun-ke-us-104-usai-arab-saudi-pulihkan-jalur-pipa-vital",
+   "url": "https://www.idxchannel.com/market-news/harga-minyak-merosot-usai-saudi-tawarkan-pasokan-via-oman",
    "g": 1,
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/04/16/Harga_Minyak_Turun-2026_04_16-16_02_47_d2a1e7682cf9eeac8917e080212459e0_620x413_thumb.jpg",
-   "score": 313.5,
+   "img": "https://img.idxchannel.com/media/439/images/idx/2024/01/17/kilang_minyak_rig_-_reuters.jpg",
+   "score": 314.5,
    "srcs": 3,
-   "t_ko": "사우디 주요 송유관 복구에 유가 US$104로 하락",
-   "t_id": "Harga Minyak Turun ke US$ 104 usai Arab Saudi Pulihkan Jalur Pipa Vital"
+   "t_ko": "사우디, 오만 경유 공급 제안에 유가 하락",
+   "t_id": "Harga Minyak Merosot Usai Saudi Tawarkan Pasokan via Oman",
+   "ai_ko": "· Brent 2.7% 하락, USD105.83/배럴 마감\n· Saudi, Oman Sohar 항구 해상 선박간\n  이송으로 아시아 정유사에 추가 물량\n· 유가 하락으로 정유·연료 수입주 부담 완화",
+   "ai_id": "· Brent turun 2,7% ke USD105,83/barel\n· Saudi tawarkan kargo tambahan lewat\n transfer kapal di lepas Sohar, Oman\n· WTI melemah 3,2% ke USD102,43/barel",
+   "ai_tags": [
+    "유가",
+    "원유공급",
+    "중동"
+   ],
+   "ai_tags_id": [
+    "harga minyak",
+    "pasokan minyak",
+    "Timur Tengah"
+   ]
   }
  ],
  "daylog": {
@@ -43822,6 +43822,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-17 12:08"
+  "announcements": "2026-09-17 12:26"
  }
 }
