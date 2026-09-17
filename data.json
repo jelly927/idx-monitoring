@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 13:00",
+ "updated": "2026-09-17 13:09",
  "delay_min": 15,
- "fx_basis": "12.83 IDR/KRW · USD/IDR 17,745 · USD/KRW 1,383 · 12:30 Yahoo",
- "idr_per_krw": 12.8305,
+ "fx_basis": "12.83 IDR/KRW · USD/IDR 17,745 · USD/KRW 1,383 · 12:45 Yahoo",
+ "idr_per_krw": 12.827,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -307,10 +307,11 @@
     17745.0,
     17745.0,
     17745.0,
+    17745.0,
     17745.0
    ],
    "inv": true,
-   "asof": "12:30",
+   "asof": "12:45",
    "high": 17745.0,
    "low": 17675.0,
    "src": "yahoo"
@@ -319,9 +320,9 @@
    "code": "SUN10Y",
    "label": "SUN 10Y",
    "name": "국채 10년물",
-   "px": 7.141,
-   "prev": 7.141,
-   "pct": 0.0,
+   "px": 7.168,
+   "prev": 7.174,
+   "pct": -0.6,
    "spark": [
     7.096,
     7.156,
@@ -330,10 +331,11 @@
     7.141,
     7.141
    ],
-   "span": "1W",
+   "span": "1M",
    "inv": true,
-   "asof": "investing.com · 09/16",
-   "unit": "bp"
+   "unit": "bp",
+   "asof": "PHEI · 09/16",
+   "spark_stale": "investing.com · 09/16"
   }
  ],
  "index": {
@@ -346,8 +348,8 @@
   "value_idr": 6863097222700.007,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 831종목 · 외국인·공시 PC 09-17 12:49",
-  "rank_asof": "12:56",
+  "rank_src": "Yahoo 15분 지연 · 831종목 · 외국인·공시 PC 09-17 13:05",
+  "rank_asof": "13:08",
   "rank_date": "2026-09-17",
   "adv": 394,
   "dec": 247,
@@ -16015,10 +16017,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6723.1,
+   "px": 6713.1,
    "prev": 6679.18,
-   "pct": 0.66,
-   "asof": "12:35",
+   "pct": 0.51,
+   "asof": "12:45",
    "live": true,
    "spark": [
     6765.54,
@@ -16088,17 +16090,19 @@
     6737.91,
     6731.26,
     6722.53,
-    6723.1
+    6722.87,
+    6708.99,
+    6713.1
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 63955.37,
+   "px": 63903.88,
    "prev": 63857.24,
-   "pct": 0.15,
-   "asof": "12:40",
+   "pct": 0.07,
+   "asof": "12:50",
    "live": true,
    "spark": [
     64478.19,
@@ -16159,17 +16163,19 @@
     64076.45,
     64011.51,
     64011.87,
-    63955.37
+    63924.89,
+    63951.74,
+    63903.88
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24480.37,
+   "px": 24459.3,
    "prev": 24713.78,
-   "pct": -0.94,
-   "asof": "12:40",
+   "pct": -1.03,
+   "asof": "12:50",
    "live": true,
    "spark": [
     24487.9,
@@ -16212,7 +16218,9 @@
     24479.47,
     24479.51,
     24477.29,
-    24480.37
+    24469.23,
+    24454.68,
+    24459.3
    ]
   }
  ],
@@ -16291,6 +16299,22 @@
   }
  },
  "news": [
+  {
+   "ts": "2026-09-17T12:52:00+07:00",
+   "date": "2026-09-17",
+   "time": "12:52",
+   "src": "Katadata",
+   "t": "IHSG Sesi I Naik 0,42% hingga Net Buy Rp 77,54 M, Asing Beli BMRI, CUAN, DSSA",
+   "tags": [
+    "BMRI",
+    "CUAN",
+    "DSSA"
+   ],
+   "url": "https://katadata.co.id/finansial/bursa/6aab80382f6b4/ihsg-sesi-i-naik-0-42-hingga-net-buy-rp-77-54-m-asing-beli-bmri-cuan-dssa",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/2026_08_14-19_34_00_a80a53c0-97e5-11f1-8ba5-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "IHSG Sesi I Naik 0,42% hingga Net Buy Rp 77,54 M, Asing Beli BMRI, CUAN, DSSA",
+   "t_ko": "IHSG 1부 0.42% 상승 및 외국인 Rp775억 순매수 — BMRI·CUAN·DSSSA 순매수 상위"
+  },
   {
    "ts": "2026-09-17T12:19:00+07:00",
    "date": "2026-09-17",
@@ -17387,6 +17411,94 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-17T13:08:53+07:00",
+   "date": "2026-09-17",
+   "time": "13:08",
+   "src": "Republika",
+   "t": "Trump Desak The Fed Turunkan Suku Bunga AS",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tlhvqt370/trump-desak-the-fed-turunkan-suku-bunga-as",
+   "g": 1,
+   "img": "https://static.republika.co.id/uploads/images/detailnews/kantor-the-federal-reserve-di-washington-amerika-serikat-_180618230922-127.jpg",
+   "t_ko": "Trump, 연준에 미국 금리 인하 촉구",
+   "t_id": "Trump Desak The Fed Turunkan Suku Bunga AS"
+  },
+  {
+   "ts": "2026-09-17T13:06:49+07:00",
+   "date": "2026-09-17",
+   "time": "13:06",
+   "src": "BBC",
+   "t": "Interest rates hold expected but Bank of England facing tough choices",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a58a/live/dab4a350-b1be-11f1-bdcf-d393eb724fa3.jpg",
+   "t_ko": "금리 동결 예상 속 영란은행의 어려운 선택",
+   "t_id": "Suku Bunga Sesuai Ekspektasi, tapi Bank of England Hadapi Pilihan Sulit"
+  },
+  {
+   "ts": "2026-09-17T13:05:00+07:00",
+   "date": "2026-09-17",
+   "time": "13:05",
+   "src": "IDNFinancials",
+   "t": "JCI edges up 0.42%, foreign sell two MIND ID stocks in first session",
+   "tags": [],
+   "url": "https://www.idnfinancials.com/news/68992/jci-edges-up-0-42-foreign-sell-two-mind-id-stocks-in-first-session",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/IHSG-DOLAR-29052026.jpg",
+   "t_ko": "IHSG 0.42% 상승 마감 — 1부서 외국인 MIND ID 계열 2개사 순매도",
+   "t_id": "IHSG Menguat Tipis 0.42%, Asing Lepas Dua Saham MIND ID di Sesi I"
+  },
+  {
+   "ts": "2026-09-17T13:01:09+07:00",
+   "date": "2026-09-17",
+   "time": "13:01",
+   "src": "CNA",
+   "t": "CNA Explains: Why is the Fed raising interest rates again - and what does it mean for Asia?",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/world/fed-interest-rates-new-tightening-cycle-asia-cna-explains-6390921",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--oP_IVl6H--/c_crop,h_1125,w_2000,x_0,y_104/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/09/17/2026-09-16t185939z_2004256706_rc2ikna0aljx_rtrmadp_3_usa-fed.jpg?itok=L9hqAD-0",
+   "t_ko": "연준의 거듭된 금리 인상 배경과 아시아 영향 점검",
+   "t_id": "CNA Jelaskan: Alasan The Fed Kembali Naikkan Suku Bunga dan Dampaknya bagi Asia",
+   "ai_ko": "· 미국 연방준비제도 기준금리를 25bp 인상해 3.75~4%로 상향\n· 2023년 이후 첫 금리 인상이며 지속되는 인플레이션 압력에 대응\n· 강한 경제와 고용 지표를 바탕으로 추가 긴축 가능성 시사",
+   "ai_id": "· The Fed naikkan suku bunga 25 bps ke kisaran 3,75-4%\n· Kenaikan pertama sejak 2023 untuk redam inflasi persisten\n· Isyaratkan potensi pengetatan lanjuta n di tengah ekonomi kuat",
+   "ai_tags": [
+    "기준금리",
+    "연방준비제도",
+    "인플레이션"
+   ],
+   "ai_tags_id": [
+    "suku bunga",
+    "The Fed",
+    "inflasi"
+   ]
+  },
+  {
+   "ts": "2026-09-17T12:54:27+07:00",
+   "date": "2026-09-17",
+   "time": "12:54",
+   "src": "CNA",
+   "t": "Japan vows effort to maintain orderly yen moves",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/japan-vows-effort-maintain-orderly-yen-moves-6391251",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s---e5dLySX--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-17T055427Z_1_LYNXMPEM8G0FH_RTROPTP_3_JAPAN-YEN-RETAIL.JPG?itok=MWgGO8zL",
+   "t_ko": "일본, 엔화 환율 질서 있는 움직임 유지 노력 공언",
+   "t_id": "Jepang Janji Upaya Jaga Pergerakan Yen Tetap Teratur",
+   "ai_ko": "· 미국 연방준비제도 금리 인상 여파로 달러 강세 및 엔화 약세 심화\n· 일본 정부는 미국과 긴밀히 소통하며 질서 있는 환율 움직임 유지 방침\n· 일본은행은 물가 목표 달성을 위해 적절한 통화정책 공조 시사",
+   "ai_id": "· Dolar menguat dan yen melemah usai The Fed naikkan suku bunga\n· Pemerintah Jepang jaga pergerakan yen lewat komunikasi AS\n· Bank Sentral Jepang pertimbangkan kebijakan moneter",
+   "ai_tags": [
+    "환율",
+    "통화정책",
+    "일본은행"
+   ],
+   "ai_tags_id": [
+    "nilai tukar",
+    "kebijakan moneter",
+    "Bank Jepang"
+   ]
+  },
+  {
    "ts": "2026-09-17T12:52:46+07:00",
    "date": "2026-09-17",
    "time": "12:52",
@@ -17395,8 +17507,20 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666716/banyak-bumn-rugi-jadi-untung-prabowo-targetkan-dividen-danantara-rp-200-t",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/14/presiden-prabowo-subianto-dalam-pidato-kenegaraan-di-sidang-tahunan-mpr-dan-sidang-bersama-dpr-dpd-2026-di-kompleks-parlemen-s-1786681176919_169.png?w=360&q=90",
+   "t_ko": "적자 국영기업 흑자 전환… Prabowo, Danantara 배당 Rp200조 목표",
    "t_id": "Banyak BUMN Rugi Jadi Untung, Prabowo Targetkan Dividen Danantara Rp 200 T",
-   "t_ko": "적자 국영기업 흑자 전환… Prabowo, Danantara 배당 Rp200조 목표"
+   "ai_ko": "· 조코위 대통령 후임 프라보보 대통령이 Danantara 산하 BUMN의 실적 개선 발표\n· PT Timah Tbk (TINS) 상반기 이익이 전년 동기 대비 9배 급증\n· 호조세를 바탕으로 올해 Danantara 배당 목표를 Rp200조로 제시",
+   "ai_id": "· Presiden Prabowo pamerkan peningkatan kinerja laba BUMN\n· Laba PT Timah Tbk (TINS) melonjak 9 kali lipat semester I\n· Bidik target dividen Danantara capai Rp200 triliun tahun ini",
+   "ai_tags": [
+    "실적",
+    "배당",
+    "국영기업"
+   ],
+   "ai_tags_id": [
+    "kinerja",
+    "dividen",
+    "BUMN"
+   ]
   },
   {
    "ts": "2026-09-17T12:52:39+07:00",
@@ -17408,8 +17532,20 @@
    "url": "https://www.liputan6.com/saham/read/8293623/the-fed-kerek-suku-bunga-hal-ini-perlu-investor-ketahui",
    "g": 1,
    "img": "https://cdn1-production-images-kly.akamaized.net/5X0r_efVtoon0dESImTHZ7A7wy0=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9310804/original/001692600_1785370401-AP26210732321904.jpg",
+   "t_ko": "연준 금리 인상에 투자자가 알아야 할 핵심 포인트",
    "t_id": "The Fed Kerek Suku Bunga, Hal Ini Perlu Investor Ketahui",
-   "t_ko": "연준 금리 인상에 투자자가 알아야 할 핵심 포인트"
+   "ai_ko": "· 미국 연방준비제도 기준금리 25bp 인상으로 3.75~4% 기록\n· 10년물 국채 금리 상승과 유가 반등이 인플레이션 압력 가중\n· 재무부의 국채 매입과 연준의 긴축 기조 간 정책 엇갈림 발생",
+   "ai_id": "· The Fed kerek FFR 25 bps ke level 3,75%-4,00%\n· Kenaikan yield obligasi dan harga minyak dorong inflasi\n· Divergensi kebijakan antara Kemenkeu dan The Fed AS",
+   "ai_tags": [
+    "금리인상",
+    "국채금리",
+    "인플레이션"
+   ],
+   "ai_tags_id": [
+    "suku bunga",
+    "yield obligasi",
+    "inflasi"
+   ]
   },
   {
    "ts": "2026-09-17T12:51:40+07:00",
@@ -17421,7 +17557,19 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/121851/valuasi-ihsg-sudah-murah-layak-serok",
    "img": "https://images.bloombergtechnoz.com/data/2026/08/image-20260814105619.jpeg",
    "t_ko": "IHSG 밸류에이션 매력 부각 속 저가 매수 시기 점검",
-   "t_id": "Valuasi IHSG Sudah Murah, Layak Serok?"
+   "t_id": "Valuasi IHSG Sudah Murah, Layak Serok?",
+   "ai_ko": "· MSCI 지수 재분류 우려와 연초 이후 25% 하락으로 IHSG 밸류에이션 매력 부각\n· 현재 IHSG PBV 1.74배 및 PER 10.84배로 지역 증시 대비 낮은 수준\n· 인도를 제외한 다수 아시아 주요 증시는 연초 이후 상승세 기록",
+   "ai_id": "· Valuasi IHSG kian murah dengan PBV 1,74x dan PER 10,84x\n· Tertekan kekhawatiran MSCI dan koreksi 25% year-to-date\n· Sejumlah bursa saham Asia lain catat penguatan",
+   "ai_tags": [
+    "밸류에이션",
+    "주가지수",
+    "증시"
+   ],
+   "ai_tags_id": [
+    "valuasi",
+    "IHSG",
+    "bursa saham"
+   ]
   },
   {
    "ts": "2026-09-17T12:51:22+07:00",
@@ -17433,7 +17581,19 @@
    "url": "https://www.jawapos.com/ekonomi/2609170193/menkeu-suahasil-diminta-intensifkan-dialog-dengan-pemda-pahami-kebutuhan-daerah",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-Jhssd.webp",
    "t_ko": "Suahasil 재무차관, 지자체 소통 강화해 지역 수요 파악 주력",
-   "t_id": "Menkeu Suahasil Diminta Intensifkan Dialog dengan Pemda, Pahami Kebutuhan Daerah"
+   "t_id": "Menkeu Suahasil Diminta Intensifkan Dialog dengan Pemda, Pahami Kebutuhan Daerah",
+   "ai_ko": "· 프라보보 대통령이 수아하실 나자라 재무차관 임명 과정에서 종교 여부 질의\n· 2024~2029년 임기 남은 기간 동안 재무부 장관직 수행 관련 질의 진행\n· 각 지역의 수요 파악을 위해 지방정부와의 대화 강화 주문",
+   "ai_id": "· Presiden Prabowo tanyakan agama Suahasil Nazara saat sumpah\n· Pengangkatan sebagai Menteri Keuangan sisa masa jabatan\n· Minta perkuat dialog intensif dengan pemerintah daerah",
+   "ai_tags": [
+    "재무부",
+    "장관",
+    "정부"
+   ],
+   "ai_tags_id": [
+    "Kementerian Keuangan",
+    "menteri",
+    "pemerintah"
+   ]
   },
   {
    "ts": "2026-09-17T12:51:00+07:00",
@@ -17444,8 +17604,20 @@
    "tags": [],
    "url": "https://katadata.co.id/ekonomi-hijau/energi-baru/6aab7fc56c4a6/belajar-dari-jerman-ekonomi-bisa-tumbuh-tanpa-boros-emisi-bagaimana-caranya",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/17/Katadata_SAFE_2026-2026_09_17-12_42_37_31ddfdb12147cc1f198a7bf0810fc86f_620x413_thumb.jpeg",
+   "t_ko": "독일 사례로 본 탄소 배출 없는 경제 성장 가능성",
    "t_id": "Belajar dari Jerman: Ekonomi Bisa Tumbuh Tanpa Boros Emisi, Bagaimana Caranya?",
-   "t_ko": "독일 사례로 본 탄소 배출 없는 경제 성장 가능성"
+   "ai_ko": "· 독일은 지난 30년간 에너지 부문 배출량을 50% 감축하며 경제 성장과 분리 달성\n· 재생에너지 비중 확대와 전력 사용 효율화가 핵심 성공 요인으로 작용\n· 인니도 전력 인프라 확장과 함께 에너지 사용 효율화 병행 필요",
+   "ai_id": "· Jerman sukses pisahkan pertumbuhan ekonomi dan emisi karbon\n· Tingkatkan porsi energi surya dan angin capai 60 persen\n· Indonesia dinilai miliki peluang terapkan efisiensi energi",
+   "ai_tags": [
+    "친환경",
+    "신재생에너지",
+    "전력"
+   ],
+   "ai_tags_id": [
+    "energi terbarukan",
+    "emisi",
+    "listrik"
+   ]
   },
   {
    "ts": "2026-09-17T12:48:00+07:00",
@@ -17480,8 +17652,8 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tlhuqc416/asuransi-gagal-panen-lindungi-petani-dan-jaga-pasokan-pangan",
    "img": "https://static.republika.co.id/uploads/images/detailnews/026929200-1787234251-830-556.jpg",
-   "t_id": "Asuransi Gagal Panen Lindungi Petani dan Jaga Pasokan Pangan",
    "t_ko": "농작물 실패 보험으로 농가 보호 및 식량 공급 안정",
+   "t_id": "Asuransi Gagal Panen Lindungi Petani dan Jaga Pasokan Pangan",
    "ai_ko": "· 정부, 10만 헥타르 대상 AUTP 프로그램 운영\n· 프리미엄 80% 보조 및 피해 시 Rp6백만 지급\n· 농업 부문 생산 안정성 유지에 긍정적 영향",
    "ai_id": "· Program AUTP lindungi 100 ribu ha\n· Subsidi premi 80% dan klaim Rp6 juta\n· Jaga kestabilan sektor pertanian",
    "ai_tags": [
@@ -17516,8 +17688,8 @@
    "tags": [],
    "url": "https://www.liputan6.com/bisnis/read/8293598/produksi-pesawat-terhambat-saham-boeing-turun-tajam",
    "img": "https://cdn0-production-images-kly.akamaized.net/ewxSL6GXDpeEJNvgFkzQ9o9L5N0=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2808006/original/045550500_1558064206-bungo.jpg",
-   "t_id": "Produksi Pesawat Terhambat, Saham Boeing Turun Tajam",
    "t_ko": "항공기 생산 차질에 Boeing 주가 급락",
+   "t_id": "Produksi Pesawat Terhambat, Saham Boeing Turun Tajam",
    "ai_ko": "· Boeing 737 Max 생산 지연으로 주가 5% 하락\n· 렌턴 공장의 날개 생산 차질이 주요 원인\n· 미국 항공기 제조업종 투자심리 위축",
    "ai_id": "· Saham Boeing turun 5% akibat produksi\n· Hambatan produksi sayap di pabrik Renton\n· Sentimen negatif bagi emiten dirgantara",
    "ai_tags": [
@@ -17565,8 +17737,8 @@
    "url": "https://finance.detik.com/fintech/d-8666685/harga-bitcoin-naik-jadi-1-35-miliar-usai-the-fed-naikkan-suku-bunga",
    "g": 1,
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/20/mulai-investasi-di-exchange-crypto-2026-simak-tipsnya-untuk-pemula-1784542058111_169.png?w=360&q=90",
-   "t_id": "Harga Bitcoin Naik Jadi 1,35 Miliar Usai The Fed Naikkan Suku Bunga",
    "t_ko": "연준 금리 인상에 비트코인 가격 Rp1.35억으로 상승",
+   "t_id": "Harga Bitcoin Naik Jadi 1,35 Miliar Usai The Fed Naikkan Suku Bunga",
    "ai_ko": "· Bitcoin 가격 US$ 76,400대로 1.05% 상승\n· The Fed 기준금리 25베이시스포인트 인상\n· 금리 인상 속 가상자산 변동성 확대",
    "ai_id": "· Harga Bitcoin naik ke USD 76.400\n· The Fed naikkan suku bunga 25 bps\n· Volatilitas pasar aset kripto tinggi",
    "ai_tags": [
@@ -17615,6 +17787,18 @@
    "g": 1,
    "t_ko": "영란은행(BOE), 금리 동결 전망",
    "t_id": "BOE Diprediksi Tahan Suku Bunga"
+  },
+  {
+   "ts": "2026-09-17T12:36:51+07:00",
+   "date": "2026-09-17",
+   "time": "12:36",
+   "src": "Bloomberg",
+   "t": "Asian Bonds Decline, Dollar Jumps As Fed Hikes",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-17/the-asia-trade-9-17-2026-video",
+   "g": 1,
+   "t_ko": "연준 금리 인상에 아시아 채권 하락 및 달러 급등",
+   "t_id": "Obligasi Asia Turun, Dolar Melonjak Seiring Kenaikan Suku Bunga The Fed"
   },
   {
    "ts": "2026-09-17T12:34:10+07:00",
@@ -17852,79 +18036,6 @@
    ]
   },
   {
-   "ts": "2026-09-17T12:10:00+07:00",
-   "date": "2026-09-17",
-   "time": "12:10",
-   "src": "Media Indonesia",
-   "t": "Donald Trump Desak The Fed Turunkan Suku Bunga ke Level 1 Persen",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/934381/donald-trump-desak-the-fed-turunkan-suku-bunga-ke-level-1-persen",
-   "g": 1,
-   "t_ko": "도널드 트럼프, 연준에 기준금리 1% 인하 촉구",
-   "t_id": "Donald Trump Desak The Fed Turunkan Suku Bunga ke Level 1 Persen",
-   "ai_ko": "· 도널드 트럼프 미국 대통령이 연준에 기준금리 인하 요구\n· 연준의 25bp 금리 인상 직후 1%대 금리 주장\n· 제롬 파월 전 의장 비판하며 신임 의장 기대감 표명",
-   "ai_id": "· Donald Trump desak The Fed turunkan suku bunga\n· Kritik kenaikan 25 bps dan tuntut suku bunga 1%\n· Harapkan kepemimpinan baru di bank sentral",
-   "ai_tags": [
-    "금리",
-    "미국",
-    "통화정책"
-   ],
-   "ai_tags_id": [
-    "suku bunga",
-    "Amerika Serikat",
-    "kebijakan moneter"
-   ]
-  },
-  {
-   "ts": "2026-09-17T12:06:08+07:00",
-   "date": "2026-09-17",
-   "time": "12:06",
-   "src": "Detik",
-   "t": "Timur Tengah Memanas, Suku Bunga The Fed Naik, Harga Minyak Keder",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8666642/timur-tengah-memanas-suku-bunga-the-fed-naik-harga-minyak-keder",
-   "g": 1,
-   "img": "https://akcdn.detik.net.id/community/media/visual/2020/03/31/4b167337-a5da-4fae-bb8f-2ec1518b899d_169.jpeg?w=360&q=90",
-   "t_ko": "중동 긴장 고조 및 연준 금리 인상에 유가 약세",
-   "t_id": "Timur Tengah Memanas, Suku Bunga The Fed Naik, Harga Minyak Keder",
-   "ai_ko": "· 브렌트유가 배럴당 USD 104.59로 1.2% 하락\n· 사우디아라비아의 오만 경유 원유 공급 우려 완화 반영\n· 연준 금리 인상과 중동 지정학적 리스크가 복합 작용",
-   "ai_id": "· Harga minyak Brent turun 1,2% ke USD 104,59\n· Pasokan Arab Saudi via Oman redakan kekhawatiran\n· Kenaikan suku bunga The Fed tekan harga komoditas",
-   "ai_tags": [
-    "유가",
-    "금리",
-    "지정학"
-   ],
-   "ai_tags_id": [
-    "minyak",
-    "suku bunga",
-    "geopolitik"
-   ]
-  },
-  {
-   "ts": "2026-09-17T12:05:00+07:00",
-   "date": "2026-09-17",
-   "time": "12:05",
-   "src": "Media Indonesia",
-   "t": "Kurs Rupiah Dibuka Melemah AS Usai The Fed AS Naikkan Suku Bunga",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/934380/kurs-rupiah-dibuka-melemah-as-usai-the-fed-as-naikkan-suku-bunga",
-   "g": 1,
-   "t_ko": "미 연준 금리 인상에 원/달러 환율 약세 출발",
-   "t_id": "Kurs Rupiah Dibuka Melemah Usai The Fed Naikkan Suku Bunga",
-   "ai_ko": "· 환율 Rp17.739 기록\n· 미국 기준금리 25bp 인상 영향\n· 은행 및 수출입 업종 환율 변동성 확대",
-   "ai_id": "· Kurs Rupiah di Rp17.739 per dolar AS\n· Kenaikan suku bunga The Fed 25 bps\n· Volatilitas menekan sektor perbankan",
-   "ai_tags": [
-    "환율",
-    "금리",
-    "통화정책"
-   ],
-   "ai_tags_id": [
-    "nilai tukar",
-    "suku bunga",
-    "kebijakan moneter"
-   ]
-  },
-  {
    "ts": "2026-09-17T12:04:56+07:00",
    "date": "2026-09-17",
    "time": "12:04",
@@ -17946,30 +18057,6 @@
     "regulasi",
     "IPO",
     "bursa"
-   ]
-  },
-  {
-   "ts": "2026-09-17T12:03:07+07:00",
-   "date": "2026-09-17",
-   "time": "12:03",
-   "src": "CNBC",
-   "t": "A stronger dollar and rising yields: How the Fed’s rate hike could hit global markets",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/17/fed-rate-hike-impact-globally-currency-yields.html",
-   "g": 1,
-   "t_ko": "강달러와 금리 상승에 연준 금리 인상 글로벌 시장 영향",
-   "t_id": "Dolar Kuat dan Imbal Hasil Naik: Dampak Kenaikan Suku Bunga The Fed ke Pasar Global",
-   "ai_ko": "· 10년물 국채 금리 5%대 육박\n· 미국 금리 인상 장기화 우려 심화\n· 기술주 및 경기민감주 밸류에이션 부담",
-   "ai_id": "· Imbal hasil obligasi dekati 5 persen\n· Kenaikan suku bunga AS tekan pasar global\n· Valuasi saham teknologi hadapi tekanan",
-   "ai_tags": [
-    "금리",
-    "증시",
-    "미국"
-   ],
-   "ai_tags_id": [
-    "suku bunga",
-    "pasar saham",
-    "Amerika Serikat"
    ]
   },
   {
@@ -18019,30 +18106,6 @@
    ]
   },
   {
-   "ts": "2026-09-17T12:01:00+07:00",
-   "date": "2026-09-17",
-   "time": "12:01",
-   "src": "Media Indonesia",
-   "t": "The Fed Naikkan Suku Bunga ke 4% akibat Inflasi Perang Iran",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/934377/the-fed-naikkan-suku-bunga-ke-4-akibat-inflasi-perang-iran",
-   "g": 1,
-   "t_ko": "이란 전쟁 인플레이션 여파로 미 연준 금리 4% 인상",
-   "t_id": "The Fed Naikkan Suku Bunga ke 4% akibat Inflasi Perang Iran",
-   "ai_ko": "· 연방기금금리 3.75~4.00% 인상\n· 이란 전쟁 발발에 따른 물가 상승 대응\n· 글로벌 증시 전반 투자 심리 위축",
-   "ai_id": "· Suku bunga naik ke kisaran 4 persen\n· Lonjakan inflasi akibat perang di Iran\n· Pengetatan moneter tekan pasar modal",
-   "ai_tags": [
-    "금리",
-    "인플레이션",
-    "유가"
-   ],
-   "ai_tags_id": [
-    "suku bunga",
-    "inflasi",
-    "minyak"
-   ]
-  },
-  {
    "ts": "2026-09-17T11:56:22+07:00",
    "date": "2026-09-17",
    "time": "11:56",
@@ -18088,30 +18151,6 @@
     "mineral",
     "energi",
     "investasi"
-   ]
-  },
-  {
-   "ts": "2026-09-17T11:44:02+07:00",
-   "date": "2026-09-17",
-   "time": "11:44",
-   "src": "Detik",
-   "t": "Mendag Minta Tambah Anggaran Rp 1,86 T buat Bangun-Revitalisasi 200 Pasar",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666599/mendag-minta-tambah-anggaran-rp-1-86-t-buat-bangun-revitalisasi-200-pasar",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/17/menteri-perdagangan-mendag-budi-santoso-1789620199438_169.jpeg?w=360&q=90",
-   "t_ko": "무역부, 전통시장 200곳 건립·개보수 예산 Rp1.86조 증액 요청",
-   "t_id": "Mendag Minta Tambah Anggaran Rp 1,86 T Buat Bangun-Revitalisasi 200 Pasar",
-   "ai_ko": "· 2027년 예산 Rp 1.86조 추가 요청\n· 전통시장 200곳 건설 및 개보수 추진\n· 유통 및 건설 관련 업종 수혜 예상",
-   "ai_id": "· Usulan tambahan anggaran Rp1,86 triliun\n· Revitalisasi 200 unit pasar rakyat\n· Katalis positif bagi sektor perdagangan",
-   "ai_tags": [
-    "예산",
-    "유통",
-    "인프라"
-   ],
-   "ai_tags_id": [
-    "anggaran",
-    "perdagangan",
-    "infrastruktur"
    ]
   }
  ],
@@ -18283,8 +18322,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.82",
-   "d": -0.96,
-   "ytd": 10.39,
+   "d": -0.95,
+   "ytd": 10.4,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18317,9 +18356,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.26",
-   "d": -0.06,
-   "ytd": 2.02,
+   "v": "100.25",
+   "d": -0.07,
+   "ytd": 2.0,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18329,9 +18368,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.76",
-   "d": -0.5,
-   "ytd": 77.22,
+   "v": "101.43",
+   "d": -0.82,
+   "ytd": 76.65,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18341,9 +18380,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,334.5",
-   "d": -0.02,
-   "ytd": 0.21,
+   "v": "4,341.6",
+   "d": 0.14,
+   "ytd": 0.37,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18365,9 +18404,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,261",
-   "d": 0.94,
-   "ytd": -2.52,
+   "v": "16,284",
+   "d": 1.07,
+   "ytd": -2.39,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18388,7 +18427,68 @@
    "note_id": "FCPO Bursa Malaysia kontrak terdekat · investing.com · Awal tahun 4,050"
   }
  ],
- "curve": null,
+ "curve": {
+  "date": "2026-09-16",
+  "src": "PHEI (IBPA)",
+  "rows": [
+   [
+    0.1,
+    6.5994,
+    6.5991
+   ],
+   [
+    1.0,
+    6.6998,
+    6.7058
+   ],
+   [
+    2.0,
+    6.7936,
+    6.7933
+   ],
+   [
+    3.0,
+    6.8784,
+    6.8723
+   ],
+   [
+    5.0,
+    7.0153,
+    7.008
+   ],
+   [
+    7.0,
+    7.1037,
+    7.1021
+   ],
+   [
+    10.0,
+    7.1679,
+    7.1743
+   ],
+   [
+    15.0,
+    7.1954,
+    7.2068
+   ],
+   [
+    20.0,
+    7.199,
+    7.2112
+   ],
+   [
+    25.0,
+    7.1994,
+    7.2117
+   ],
+   [
+    30.0,
+    7.1995,
+    7.2117
+   ]
+  ],
+  "n": 41
+ },
  "calendar": [
   {
    "date": "2026-08-31",
@@ -24406,10 +24506,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-17 12:49",
-  "pc_age_min": 11,
-  "news_ai_cache": 93,
-  "news_ai_hit": 67,
+  "idx_from_pc": "2026-09-17 13:05",
+  "pc_age_min": 4,
+  "news_ai_cache": 85,
+  "news_ai_hit": 65,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26322,30 +26422,31 @@
    ]
   },
   {
-   "ts": "2026-09-17T12:01:00+07:00",
+   "ts": "2026-09-17T12:38:43+07:00",
    "date": "2026-09-17",
-   "time": "12:01",
-   "src": "Media Indonesia",
-   "t": "The Fed Naikkan Suku Bunga ke 4% akibat Inflasi Perang Iran",
+   "time": "12:38",
+   "src": "Detik",
+   "t": "Harga Bitcoin Naik Jadi 1,35 Miliar Usai The Fed Naikkan Suku Bunga",
    "tags": [],
-   "url": "https://mediaindonesia.com/internasional/934377/the-fed-naikkan-suku-bunga-ke-4-akibat-inflasi-perang-iran",
+   "url": "https://finance.detik.com/fintech/d-8666685/harga-bitcoin-naik-jadi-1-35-miliar-usai-the-fed-naikkan-suku-bunga",
    "g": 1,
-   "t_ko": "이란 전쟁 인플레이션 여파로 미 연준 금리 4% 인상",
-   "t_id": "The Fed Naikkan Suku Bunga ke 4% akibat Inflasi Perang Iran",
-   "ai_ko": "· 연방기금금리 3.75~4.00% 인상\n· 이란 전쟁 발발에 따른 물가 상승 대응\n· 글로벌 증시 전반 투자 심리 위축",
-   "ai_id": "· Suku bunga naik ke kisaran 4 persen\n· Lonjakan inflasi akibat perang di Iran\n· Pengetatan moneter tekan pasar modal",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/20/mulai-investasi-di-exchange-crypto-2026-simak-tipsnya-untuk-pemula-1784542058111_169.png?w=360&q=90",
+   "t_ko": "연준 금리 인상에 비트코인 가격 Rp1.35억으로 상승",
+   "t_id": "Harga Bitcoin Naik Jadi 1,35 Miliar Usai The Fed Naikkan Suku Bunga",
+   "ai_ko": "· Bitcoin 가격 US$ 76,400대로 1.05% 상승\n· The Fed 기준금리 25베이시스포인트 인상\n· 금리 인상 속 가상자산 변동성 확대",
+   "ai_id": "· Harga Bitcoin naik ke USD 76.400\n· The Fed naikkan suku bunga 25 bps\n· Volatilitas pasar aset kripto tinggi",
    "ai_tags": [
     "금리",
-    "인플레이션",
-    "유가"
+    "가상자산",
+    "통화정책"
    ],
    "ai_tags_id": [
     "suku bunga",
-    "inflasi",
-    "minyak"
+    "kripto",
+    "kebijakan moneter"
    ],
-   "score": 419.0,
-   "srcs": 8
+   "score": 418.5,
+   "srcs": 11
   },
   {
    "ts": "2026-09-17T05:04:37+07:00",
@@ -26362,18 +26463,30 @@
    "t_id": "Purbaya Tepis Rumor Adanya 'Gesekan' sehingga Dia Di-reshuffle"
   },
   {
-   "ts": "2026-09-17T11:44:02+07:00",
-   "date": "2026-09-17",
-   "time": "11:44",
+   "ts": "2026-09-16T22:04:01+07:00",
+   "date": "2026-09-16",
+   "time": "09/16",
    "src": "Detik",
-   "t": "Mendag Minta Tambah Anggaran Rp 1,86 T buat Bangun-Revitalisasi 200 Pasar",
+   "t": "DPD Titip Pesan Ini buat Suahasil Saat Susun APBN 2027",
    "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666599/mendag-minta-tambah-anggaran-rp-1-86-t-buat-bangun-revitalisasi-200-pasar",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/17/menteri-perdagangan-mendag-budi-santoso-1789620199438_169.jpeg?w=360&q=90",
-   "t_ko": "무역부, 전통시장 200곳 건립·개보수 예산 Rp1.86조 증액 요청",
-   "t_id": "Mendag Minta Tambah Anggaran Rp 1,86 T Buat Bangun-Revitalisasi 200 Pasar",
-   "score": 407.75,
-   "srcs": 1
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8666077/dpd-titip-pesan-ini-buat-suahasil-saat-susun-apbn-2027",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/14/pesan-suahasil-nazara-usai-jadi-menkeu-lanjutkan-tugas-dan-jaga-kepercayaan-1789383969386_169.jpeg?w=360&q=90",
+   "score": 406.05,
+   "srcs": 1,
+   "t_ko": "상원, 2027년 예산안 편성 앞두고 Suahasil에게 당부 전해",
+   "t_id": "DPD Titip Pesan Ini buat Suahasil Saat Susun APBN 2027",
+   "ai_ko": "· DPD, 2027 예산안 의견 정부에 전달\n· 지방이전재정·인프라·마을기금 등 거론\n· 지방 재정 확대 시 건설·인프라주 관심",
+   "ai_id": "· DPD serahkan pertimbangan RAPBN 2027\n· Soroti transfer daerah, infrastruktur\n· Fiskal daerah jadi fokus pembahasan DPR",
+   "ai_tags": [
+    "예산안",
+    "재정정책",
+    "인프라"
+   ],
+   "ai_tags_id": [
+    "APBN",
+    "kebijakan fiskal",
+    "infrastruktur"
+   ]
   },
   {
    "ts": "2026-09-17T06:45:00+07:00",
@@ -43927,6 +44040,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-17 12:42"
+  "announcements": "2026-09-17 13:00"
  }
 }
