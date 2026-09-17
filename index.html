@@ -302,16 +302,23 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
 #cv-body .cvnote{margin-top:6px;font-size:10.5px;color:var(--ink3);line-height:1.5}
 @media(max-width:520px){#cv-body .cvpts{grid-template-columns:repeat(2,1fr)}}
 /* 뉴스 키워드 — 등록한 낱말로 기사를 모아 보고, 새로 올라오면 알림을 받는다 */
-.kwbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-.kwbar .kwlab{font-size:11.5px;color:var(--ink3);margin-right:2px;white-space:nowrap}
+.kwbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-left:auto;min-width:0}
 .kwbar .kwnone{font-size:11.5px;color:var(--ink3)}
-.pill.kw{padding-right:5px}
+.pill.kw{padding-right:5px;border-color:var(--brand);color:var(--brand);background:var(--card);font-weight:700}
 .pill.kw i{font-style:normal;margin-left:5px;color:var(--ink3);cursor:pointer;font-size:11px}
 .pill.kw i:hover{color:var(--dn)}
-.pill.kw b{margin-left:5px;font-weight:700;opacity:.6;font-size:10.5px}
+.pill.kw b{margin-left:5px;font-weight:700;opacity:.55;font-size:10.5px}
+.pill.kw.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.pill.kw.on i{color:rgba(255,255,255,.65)}
 .pill.kw.on b{opacity:.85}
-.pill.kwadd{font-weight:800;padding-left:9px;padding-right:9px}
-.kwin{border:1px solid var(--brand);border-radius:999px;padding:3px 11px;font-size:12px;width:140px;outline:none;background:var(--card);color:var(--ink)}
+/* A안 — 탭 줄 오른쪽에 입력창을 상시 노출한다. 클릭 한 번 없이 바로 낱말을 넣는다 */
+.kwbox{display:flex;align-items:center;gap:6px;background:var(--brand2);border:1px solid var(--brand);border-radius:999px;padding:3px 4px 3px 10px;max-width:100%}
+.kwbox .kwlab{font-size:11.5px;font-weight:800;color:var(--brand);white-space:nowrap}
+.kwin{border:0;background:transparent;padding:0;font-size:12.5px;width:132px;min-width:0;outline:none;color:var(--ink)}
+.kwin::placeholder{color:var(--brand);opacity:.55}
+.kwgo{background:var(--brand);color:#fff;border:0;border-radius:999px;width:22px;height:22px;font-size:13px;line-height:1;cursor:pointer;flex:0 0 auto;padding:0}
+.kwgo:hover{filter:brightness(1.12)}
+@media(max-width:760px){.kwbar{margin-left:0;width:100%;margin-top:2px}.kwbox{flex:1 1 auto}.kwin{width:auto;flex:1 1 auto}}
 /* 외국인 수급 1D·1W·1M — 금액만 보면 종목 크기에 좌우된다 → 같은 칸에 비중과 섹터·시장 평균을 나란히 둔다 */
 .ffbox{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 14px;background:var(--card)}
 .ffbox .aih{display:flex;align-items:baseline;gap:8px;margin-bottom:6px}
@@ -556,8 +563,7 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
 <div class="view" id="v-news">
 <div class="card">
   <h2><span data-t="newsTab">뉴스</span> <span class="more">Kontan · Antara · Bisnis · Tribunnews · IDNFinancials · Kompas · IDXChannel · KISI</span></h2>
-  <div class="news-tools news-mode"><span class="pill sm on" data-f="" data-t="all" onclick="setMode('all')">전체</span><span class="pill sm" data-f="market" data-t="mnews" onclick="setMode('market')">시장 뉴스</span><span class="pill sm" data-f="kisi" data-t="knews" onclick="setMode('kisi')">KISI 뉴스</span><span class="pill sm" data-f="stock" data-t="snews" onclick="setMode('stock')">종목 뉴스</span></div>
-  <div class="news-tools kwbar" id="kwbar"></div>
+  <div class="news-tools news-mode"><span class="pill sm on" data-f="" data-t="all" onclick="setMode('all')">전체</span><span class="pill sm" data-f="market" data-t="mnews" onclick="setMode('market')">시장 뉴스</span><span class="pill sm" data-f="kisi" data-t="knews" onclick="setMode('kisi')">KISI 뉴스</span><span class="pill sm" data-f="stock" data-t="snews" onclick="setMode('stock')">종목 뉴스</span><span class="kwbar" id="kwbar"></span></div>
   <div class="news-tools" id="newsfilt"></div>
   <div id="news"></div>
 </div>
@@ -1109,16 +1115,16 @@ function kwAdd(v){v=String(v||'').trim();
   kwBar();renderNews();try{window.alrtNeed&&window.alrtNeed();}catch(e){}}
 function kwDel(v){KW=KW.filter(x=>x!==v);if(newsKw===v)newsKw=null;kwSave();kwBar();renderNews();}
 function kwPick(v){newsKw=(newsKw===v)?null:v;if(newsKw){newsMode='all';newsTag=null;}renderNews();}
-function kwOpen(){const i=$('kwin');if(!i)return;i.hidden=false;i.value='';i.focus();}
-function kwKey(e){if(e.key==='Enter'){const v=e.target.value;e.target.value='';e.target.hidden=true;kwAdd(v);}
-  else if(e.key==='Escape'){e.target.value='';e.target.hidden=true;}}
+function kwOpen(){const i=$('kwin');if(!i)return;i.focus();i.select();}
+function kwKey(e){if(e.key==='Enter'){const v=e.target.value;e.target.value='';kwAdd(v);const j=$('kwin');if(j)j.focus();}
+  else if(e.key==='Escape'){e.target.value='';e.target.blur();}}
 function kwBar(){const el=$('kwbar');if(!el)return;
   const pool=kwPool(),esc=k=>k.replace(/'/g,"&#39;").replace(/"/g,'&quot;');
-  el.innerHTML=`<span class="kwlab">${T('kwT')}</span>`
-    +KW.map(k=>`<span class="pill sm kw ${k===newsKw?'on':''}" onclick="kwPick('${esc(k)}')">${k}<b>${pool.filter(n=>kwHit(n,k)).length}</b><i title="${T('tDel')}" onclick="event.stopPropagation();kwDel('${esc(k)}')">\u00d7</i></span>`).join('')
-    +`<span class="pill sm kwadd" onclick="kwOpen()">\uff0b</span>`
-    +`<input id="kwin" class="kwin" hidden placeholder="${T('kwPh')}" maxlength="24" onkeydown="kwKey(event)" onblur="this.hidden=true">`
-    +(KW.length?'':`<span class="kwnone">${T('kwNone')}</span>`);}
+  el.innerHTML=KW.map(k=>`<span class="pill sm kw ${k===newsKw?'on':''}" onclick="kwPick('${esc(k)}')">${k}<b>${pool.filter(n=>kwHit(n,k)).length}</b><i title="${T('tDel')}" onclick="event.stopPropagation();kwDel('${esc(k)}')">\u00d7</i></span>`).join('')
+    +`<span class="kwbox" title="${T('kwNone')}"><span class="kwlab">\ud83d\udd14 ${T('kwT')}</span>`
+    +`<input id="kwin" class="kwin" placeholder="${T('kwPh')}" maxlength="24" onkeydown="kwKey(event)">`
+    +`<button class="kwgo" type="button" title="${T('kwT')}" onclick="kwAddIn()">\uff0b</button></span>`;}
+function kwAddIn(){const i=$('kwin');if(!i)return;const v=i.value;i.value='';kwAdd(v);const j=$('kwin');if(j)j.focus();}
 function setMode(m){newsKw=null;newsMode=m;if(m==='market'||m==='kisi')newsTag=null;renderNews();}
 
 /* ---------- 종목 드로어 ---------- */
