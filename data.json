@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 22:55",
+ "updated": "2026-09-17 23:03",
  "delay_min": 15,
- "fx_basis": "12.85 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 21:45 Yahoo",
- "idr_per_krw": 12.8499,
+ "fx_basis": "12.86 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,380 · 22:45 Yahoo",
+ "idr_per_krw": 12.8601,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -308,10 +308,11 @@
     17743.0,
     17748.0,
     17748.0,
+    17748.0,
     17748.0
    ],
    "inv": true,
-   "asof": "21:45",
+   "asof": "22:45",
    "high": 17748.0,
    "low": 17675.0,
    "src": "yahoo"
@@ -15518,10 +15519,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7634.46,
+   "px": 7636.11,
    "prev": 7553.33,
-   "pct": 1.07,
-   "asof": "22:50",
+   "pct": 1.1,
+   "asof": "23:00",
    "live": true,
    "spark": [
     7625.67,
@@ -15552,17 +15553,19 @@
     7631.56,
     7634.49,
     7634.21,
-    7634.46
+    7635.6,
+    7636.23,
+    7636.11
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26401.56,
+   "px": 26401.5,
    "prev": 25978.42,
    "pct": 1.63,
-   "asof": "22:50",
+   "asof": "23:00",
    "live": true,
    "spark": [
     26321.01,
@@ -15593,17 +15596,19 @@
     26389.75,
     26400.18,
     26403.76,
-    26401.56
+    26403.21,
+    26402.68,
+    26401.5
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51776.84,
+   "px": 51823.28,
    "prev": 51477.73,
-   "pct": 0.58,
-   "asof": "22:50",
+   "pct": 0.67,
+   "asof": "23:00",
    "live": true,
    "spark": [
     51760.85,
@@ -15634,7 +15639,9 @@
     51773.91,
     51793.51,
     51776.53,
-    51776.84
+    51790.8,
+    51819.12,
+    51823.28
    ]
   },
   {
@@ -16905,9 +16912,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-17T22:39:38+07:00",
+   "ts": "2026-09-17T23:01:18+07:00",
    "date": "2026-09-17",
-   "time": "22:39",
+   "time": "23:01",
    "src": "CNBC",
    "t": "Trump photo seems to reference Kennedy Center demolition amid legal battle over closure",
    "tags": [],
@@ -16917,30 +16924,41 @@
    "t_id": "Foto Trump Diduga Sindir Pembongkaran Kennedy Center di Tengah Sengketa Hukum Penutupan"
   },
   {
-   "ts": "2026-09-17T22:37:25+07:00",
+   "ts": "2026-09-17T23:00:54+07:00",
    "date": "2026-09-17",
-   "time": "22:37",
-   "src": "Yahoo Finance",
-   "t": "North American Gold ETF Buying Jumped From $71 Million to $7.7 Billion in One Month. Can GLDM Hold Up?",
+   "time": "23:00",
+   "src": "Detik",
+   "t": "Pakistan Berlakukan Subsidi BBM untuk Kendaraan Kecil",
    "tags": [],
-   "url": "https://finance.yahoo.com/markets/commodities/articles/north-american-gold-etf-buying-153725893.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/2e8d8fe3b8570889f9c883618ec756b9.jpg",
-   "t_ko": "북미 골드 ETF 매수세, 한 달 만에 대폭 증가",
-   "t_id": "Pembelian ETF Emas Amerika Utara Melonjak dari US$71 Juta ke US$7,7 Miliar dalam Sebulan, Mampukah GLDM Bertahan?"
+   "url": "https://finance.detik.com/foto-bisnis/d-8666828/pakistan-berlakukan-subsidi-bbm-untuk-kendaraan-kecil",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/17/pakistan-berlakukan-subsidi-bbm-untuk-kendaraan-kecil-1789627177235.jpeg?w=360&q=90",
+   "t_id": "Pakistan Berlakukan Subsidi BBM untuk Kendaraan Kecil",
+   "t_ko": "파키스탄, 소형 차량 대상 유류 보조금 도입"
   },
   {
-   "ts": "2026-09-17T22:35:00+07:00",
+   "ts": "2026-09-17T22:42:39+07:00",
    "date": "2026-09-17",
-   "time": "22:35",
-   "src": "Yahoo Finance",
-   "t": "The Overlooked Semiconductor Stock Poised to Lead in the AI Race",
+   "time": "22:42",
+   "src": "Bloomberg",
+   "t": "Belgium Ramps Up Budget Talks to Tackle €10 Billion Shortfall",
    "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/overlooked-semiconductor-stock-poised-lead-153500894.html",
+   "url": "https://www.bloomberg.com/news/articles/2026-09-17/belgium-ramps-up-budget-talks-to-tackle-10-billion-shortfall",
    "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/c6f4cc7f0d0e07f2e083136440a521be.jpg",
-   "t_ko": "AI 주도권 쥘 저평가 반도체주 주목",
-   "t_id": "Saham Semikonduktor Underrated yang Siap Pimpin Laju AI"
+   "t_ko": "벨기에, 100억 유로 재정 적자 해소 위한 예산 협상 가속",
+   "t_id": "Belgia Genjot Pembahasan Anggaran Atasi Defisit Rp168 T"
+  },
+  {
+   "ts": "2026-09-17T22:41:00+07:00",
+   "date": "2026-09-17",
+   "time": "22:41",
+   "src": "Yahoo Finance",
+   "t": "Forget Oracle's Stock Price Swings. Its Backlog-to-Revenue Ratio Tells the Real Story.",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/forget-oracles-stock-price-swings-154100956.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/ee24491949634db49c242eff2066570d.jpg",
+   "t_ko": "Oracle, 주가 변동성 대신 백로그 대비 매출 비율이 핵심",
+   "t_id": "Abaikan Fluktuasi Saham Oracle, Rasio Backlog-ke-Pendapatan Ungkap Realitasnya"
   },
   {
    "ts": "2026-09-17T22:33:36+07:00",
@@ -16954,19 +16972,6 @@
    "img": "https://media.zenfs.com/en/ibd.com/01789f158da88386543408d79e11de77.jpg",
    "t_ko": "미 증권당국, 토큰화 주식 거래 허용에 관련주 상승",
    "t_id": "SEC Buka Jalan Perdagangan Saham Tokenisasi, Saham-Saham Ini Menguat"
-  },
-  {
-   "ts": "2026-09-17T22:33:00+07:00",
-   "date": "2026-09-17",
-   "time": "22:33",
-   "src": "Yahoo Finance",
-   "t": "Portfolio manager favors AI & value 'barbell' stock strategy",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/portfolio-manager-favors-ai-value-153300952.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/thestreet_881/f6ee6fbff06756b6a21a4978ada63e4a.jpg",
-   "t_ko": "포트폴리오 매니저, AI·가치주 바벨 전략 선호",
-   "t_id": "Manajer Portofolio Jagokan Strategi Saham 'Barbell' AI & Nilai"
   },
   {
    "ts": "2026-09-17T22:32:32+07:00",
@@ -17214,6 +17219,18 @@
    "t_id": "Bitcoin Melesat Usai Pengumuman Suku Bunga AS"
   },
   {
+   "ts": "2026-09-17T22:00:13+07:00",
+   "date": "2026-09-17",
+   "time": "22:00",
+   "src": "Bloomberg",
+   "t": "Private Credit Defaults Are 1%, 6% or 19%, Depending Who You Ask",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-17/private-credit-defaults-are-1-6-or-19-depending-who-you-ask",
+   "g": 1,
+   "t_ko": "사립 신용 채무 불이행률, 집계 기관 따라 1%·6%·19%로 엇갈려",
+   "t_id": "Gagal Bayar Private Credit Bisa 1%, 6%, atau 19%, Tergantung Siapa yang Ditanya"
+  },
+  {
    "ts": "2026-09-17T22:00:11+07:00",
    "date": "2026-09-17",
    "time": "22:00",
@@ -17341,18 +17358,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/pt-penjaminan-infrastruktur-indonesia-persero-pt-pii-memulai-rangkaian_260917211931-714.jpg",
    "t_ko": "PT PII, PIIdaya 프로그램으로 시투본도 중소기업 육성 지원",
    "t_id": "PT PII Bersama Kampus Bisnis Umar Usman Dorong UMKM Situbondo Naik Kelas Melalui Program PIIdaya"
-  },
-  {
-   "ts": "2026-09-17T21:15:00+07:00",
-   "date": "2026-09-17",
-   "time": "21:15",
-   "src": "Katadata",
-   "t": "PLTS 100 GWp Mulai Jalan, Ini Perkembangan Rantai Pasok di Dalam Negeri",
-   "tags": [],
-   "url": "https://katadata.co.id/ekonomi-hijau/energi-baru/6aabf61b6b7cb/plts-100-gwp-mulai-jalan-ini-perkembangan-rantai-pasok-di-dalam-negeri",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/01/12/2026_01_12-12_41_00_288a89b8-ef83-11f0-b1cf-0242ac120004_620x413_thumb.jpg",
-   "t_ko": "100GWp 태양광 발전 본격 가동 — 국내 공급망 현황",
-   "t_id": "PLTS 100 GWp Mulai Jalan, Ini Perkembangan Rantai Pasok di Dalam Negeri"
   }
  ],
  "kisi_news": [
@@ -17520,8 +17525,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.85",
-   "d": -0.77,
-   "ytd": 10.6,
+   "d": -0.72,
+   "ytd": 10.66,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17531,9 +17536,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.947%",
-   "d": -1.18,
-   "ytd": 18.83,
+   "v": "4.945%",
+   "d": -1.22,
+   "ytd": 18.78,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17554,9 +17559,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.21",
-   "d": -0.11,
-   "ytd": 1.97,
+   "v": "100.24",
+   "d": -0.08,
+   "ytd": 1.99,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17566,9 +17571,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.20",
-   "d": -1.05,
-   "ytd": 76.25,
+   "v": "101.06",
+   "d": -1.18,
+   "ytd": 76.0,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17578,9 +17583,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,405.6",
-   "d": 1.62,
-   "ytd": 1.85,
+   "v": "4,406.2",
+   "d": 1.63,
+   "ytd": 1.86,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17602,9 +17607,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,110",
-   "d": 1.34,
-   "ytd": -3.43,
+   "v": "16,280",
+   "d": 1.05,
+   "ytd": -2.41,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18109,6 +18114,160 @@
    "title_id": "Indeks Manufaktur Empire State NY (Sep)"
   },
   {
+   "date": "2026-09-15",
+   "t": "ANTM",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "INCO",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "ASII",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "BBTN",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "MIKA",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "TINS",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "RAJA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Rencana Penyelenggaraan Public Expose - Tahunan (KOREKSI)",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Rencana Penyelenggaraan Public Expose - Tahunan (KOREKSI)",
+   "title_id": "Public Expose · Rencana Penyelenggaraan Public Expose - Tahunan (KOREKSI)"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "EDGE",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Transaksi Material Tanpa Persetujuan RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Transaksi Material Tanpa Persetujuan RUPS",
+   "title_id": "RUPS · Transaksi Material Tanpa Persetujuan RUPS"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "AKKU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Insidentil"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "GGRM",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "MGLV",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Insidentil"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "LAPD",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Pemberitahuan RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Pemberitahuan RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Pemberitahuan RUPS"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "LPCK",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Siaran Pers: PT Lippo Cikarang Tbk Gelar RUPSLB 2026, Menyetujui Perubahan Susunan Dewan K",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Siaran Pers: PT Lippo Cikarang Tbk Gelar RUPSLB 2026, Menyetujui Perubahan Susunan Dewan K",
+   "title_id": "RUPS · Siaran Pers: PT Lippo Cikarang Tbk Gelar RUPSLB 2026, Menyetujui Perubahan Susunan Dewan K"
+  },
+  {
+   "date": "2026-09-15",
+   "t": "RATU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
    "date": "2026-09-16",
    "time": "00:00",
    "kind": "macro",
@@ -18255,6 +18414,171 @@
    "title_id": "GDPNow The Fed Atlanta (Q3)"
   },
   {
+   "date": "2026-09-16",
+   "t": "KLBF",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "INCO",
+   "kind": "corp",
+   "imp": 3,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan (KOREKSI)",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan (KOREKSI)",
+   "title_id": "Public Expose · Laporan Hasil Public Expose - Tahunan (KOREKSI)"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "IRSX",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Penyampaian Laporan Keuangan Interim Auditan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan Interim Auditan",
+   "title_id": "Kinerja · Penyampaian Laporan Keuangan Interim Auditan"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "GMFI",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Penyampaian Laporan Keuangan Interim Auditan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan Interim Auditan",
+   "title_id": "Kinerja · Penyampaian Laporan Keuangan Interim Auditan"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "REFI",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Sanksi Keterlambatan Laporan Keuangan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Sanksi Keterlambatan Laporan Keuangan",
+   "title_id": "Laporan Keuangan · Sanksi Keterlambatan Laporan Keuangan"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "MREI",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Sanksi Keterlambatan Laporan Keuangan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Sanksi Keterlambatan Laporan Keuangan",
+   "title_id": "Laporan Keuangan · Sanksi Keterlambatan Laporan Keuangan"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "TRUE",
+   "kind": "corp",
+   "imp": 3,
+   "title": "실적 공시 · Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "실적 공시 · Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit",
+   "title_id": "Laporan Keuangan · Penyampaian Laporan Keuangan Interim Yang Tidak Diaudit"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "VICI",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Rencana Penyelenggaraan Public Expose - Insidentil",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Rencana Penyelenggaraan Public Expose - Insidentil",
+   "title_id": "Public Expose · Rencana Penyelenggaraan Public Expose - Insidentil"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "RUIS",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Tahunan",
+   "title_id": "Public Expose · Laporan Hasil Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "AGRO",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Panggilan RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Panggilan RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Panggilan RUPS"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "AKKU",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Insidentil (KOREKSI)",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Insidentil (KOREKSI)",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose - Insidentil (KOREKSI)"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "GRPH",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Insidentil",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Insidentil",
+   "title_id": "Public Expose · Laporan Hasil Public Expose - Insidentil"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "BCIC",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Rencana Penyelenggaraan Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Rencana Penyelenggaraan Public Expose - Tahunan",
+   "title_id": "Public Expose · Rencana Penyelenggaraan Public Expose - Tahunan"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "PTPP",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Hasil RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Hasil RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Hasil RUPS"
+  },
+  {
+   "date": "2026-09-16",
+   "t": "DADA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Panggilan RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Panggilan RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Panggilan RUPS"
+  },
+  {
    "date": "2026-09-17",
    "time": "01:00",
    "kind": "macro",
@@ -18393,6 +18717,94 @@
    "src": "investing.com",
    "title_ko": "8월 잠정주택 판매 (MoM)",
    "title_id": "Penjualan Rumah Tertunda AS (MoM) (Agu)"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "MGLV",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Laporan Hasil Public Expose - Insidentil",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Laporan Hasil Public Expose - Insidentil",
+   "title_id": "Public Expose · Laporan Hasil Public Expose - Insidentil"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "VICI",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Insidentil",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Insidentil"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "CASH",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Panggilan RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Panggilan RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Panggilan RUPS"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "WIKA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Rencana Penyelenggaraan Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Rencana Penyelenggaraan Public Expose - Tahunan",
+   "title_id": "Public Expose · Rencana Penyelenggaraan Public Expose - Tahunan"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "TNCA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Hasil RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Hasil RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Hasil RUPS"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "HYGN",
+   "kind": "corp",
+   "imp": 2,
+   "title": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "기업설명회 · Penyampaian Materi Public Expose - Tahunan",
+   "title_id": "Public Expose · Penyampaian Materi Public Expose Tahunan"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "MKNT",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Hasil RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Hasil RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Hasil RUPS"
+  },
+  {
+   "date": "2026-09-17",
+   "t": "IDEA",
+   "kind": "corp",
+   "imp": 2,
+   "title": "주주총회 · Penyampaian Bukti Iklan Pemberitahuan RUPS",
+   "src": "IDX 공시",
+   "country": "ID",
+   "title_ko": "주주총회 · Penyampaian Bukti Iklan Pemberitahuan RUPS",
+   "title_id": "RUPS · Penyampaian Bukti Iklan Pemberitahuan RUPS"
   },
   {
    "date": "2026-09-18",
@@ -19607,20 +20019,6 @@
    "rk": 60
   },
   {
-   "ts": "2026-09-14T22:49:25+07:00",
-   "date": "2026-09-14",
-   "time": "22:49",
-   "t": "RSGK",
-   "type": "STOCK",
-   "title": "Penjelasan atas Volatilitas Transaksi",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e9f70a008c_b0ee480c9e.pdf",
-   "title_ko": "거래 변동성에 대한 설명",
-   "title_id": "Penjelasan atas Volatilitas Transaksi",
-   "kind_ko": "주가급변",
-   "kind_id": "Volatilitas",
-   "rk": 60
-  },
-  {
    "ts": "2026-09-17T18:55:51+07:00",
    "date": "2026-09-17",
    "time": "18:55",
@@ -19965,15 +20363,15 @@
    "rk": 46
   },
   {
-   "ts": "2026-09-16T18:30:31+07:00",
-   "date": "2026-09-16",
-   "time": "18:30",
+   "ts": "2026-09-17T22:43:18+07:00",
+   "date": "2026-09-17",
+   "time": "22:43",
    "t": "IDX",
    "type": "SPOP",
-   "title": "Kalender Kegiatan Operasional Perdagangan dan Pelaporan Transaksi Efek Bersifat Utang dan Sukuk Tahun 2027",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/Exchange/Kalender EBUS Peng-00170 ID-No. Peng-00170BEI.POP09-2026.pdf",
-   "title_ko": "2027년 채권·수쿡 거래 및 보고 업무 캘린더",
-   "title_id": "Kalender Kegiatan Operasional Perdagangan dan Pelaporan Transaksi Efek Bersifat Utang dan Sukuk Tahun 2027",
+   "title": "Penyesuaian Keterangan pada Kalender Kegiatan Operasional Perdagangan dan Pelaporan Transaksi Efek Bersifat Utang dan Sukuk",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/Exchange/Penyesuaian Kalender EBUS Peng-00172 ID-No. Peng-00172BEI.POP09-2026.pdf",
+   "title_id": "Penyesuaian Keterangan pada Kalender Kegiatan Operasional Perdagangan dan Pelaporan Transaksi Efek Bersifat Utang dan Sukuk",
+   "title_ko": "채권·수쿡 거래 및 보고 영업일 캘린더 안내 사항 정정",
    "kind_ko": "사채만기",
    "kind_id": "Obligasi",
    "rk": 44
@@ -20136,6 +20534,20 @@
    "title_id": "Pencatatan Saham",
    "kind_ko": "추가상장",
    "kind_id": "Pencatatan",
+   "rk": 40
+  },
+  {
+   "ts": "2026-09-16T18:30:31+07:00",
+   "date": "2026-09-16",
+   "time": "18:30",
+   "t": "IDX",
+   "type": "SPOP",
+   "title": "Kalender Kegiatan Operasional Perdagangan dan Pelaporan Transaksi Efek Bersifat Utang dan Sukuk Tahun 2027",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/Exchange/Kalender EBUS Peng-00170 ID-No. Peng-00170BEI.POP09-2026.pdf",
+   "title_ko": "2027년 채권·수쿡 거래 및 보고 업무 캘린더",
+   "title_id": "Kalender Kegiatan Operasional Perdagangan dan Pelaporan Transaksi Efek Bersifat Utang dan Sukuk Tahun 2027",
+   "kind_ko": "사채만기",
+   "kind_id": "Obligasi",
    "rk": 40
   },
   {
@@ -20697,18 +21109,6 @@
    "rk": 32
   },
   {
-   "ts": "2026-09-16T18:27:43+07:00",
-   "date": "2026-09-16",
-   "time": "18:27",
-   "t": "IDX",
-   "type": "SPOP",
-   "title": "Kalender Libur Bursa Tahun 2027",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/Exchange/Libur Bursa Peng-00169 ID-No. Peng-00169BEI.POP09-2026.pdf",
-   "title_ko": "2027년 증권시장 휴장일 캘린더",
-   "title_id": "Kalender Libur Bursa 2027",
-   "rk": 32
-  },
-  {
    "ts": "2026-09-15T18:33:21+07:00",
    "date": "2026-09-15",
    "time": "18:33",
@@ -20811,6 +21211,18 @@
    "kind_ko": "기업설명회",
    "kind_id": "Public Expose",
    "rk": 30
+  },
+  {
+   "ts": "2026-09-17T22:42:09+07:00",
+   "date": "2026-09-17",
+   "time": "22:42",
+   "t": "IDX",
+   "type": "SPOP",
+   "title": "Penyesuaian Keterangan Pada Kalender Libur Bursa Tahun 2027",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/Exchange/Penyesuaian Kalender Bursa Peng-00171 ID-No. Peng-00171BEI.POP09-2026.pdf",
+   "title_id": "Penyesuaian Keterangan Pada Kalender Libur Bursa Tahun 2027",
+   "title_ko": "2027년 증시 휴장일 캘린더 안내 사항 정정",
+   "rk": 28
   },
   {
    "ts": "2026-09-17T19:42:05+07:00",
@@ -21102,6 +21514,18 @@
    "title_id": "Laporan Hasil Public Expose Tahunan",
    "kind_ko": "기업설명회",
    "kind_id": "Public Expose",
+   "rk": 24
+  },
+  {
+   "ts": "2026-09-16T18:27:43+07:00",
+   "date": "2026-09-16",
+   "time": "18:27",
+   "t": "IDX",
+   "type": "SPOP",
+   "title": "Kalender Libur Bursa Tahun 2027",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/Exchange/Libur Bursa Peng-00169 ID-No. Peng-00169BEI.POP09-2026.pdf",
+   "title_ko": "2027년 증권시장 휴장일 캘린더",
+   "title_id": "Kalender Libur Bursa 2027",
    "rk": 24
   },
   {
@@ -24736,16 +25160,6 @@
      "q": 78
     },
     {
-     "t": "RSGK",
-     "ko": "거래 변동성에 대한 설명",
-     "id": "Penjelasan atas Volatilitas Transaksi",
-     "kind_ko": "주가급변",
-     "kind_id": "Volatilitas",
-     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/e9f70a008c_b0ee480c9e.pdf",
-     "time": "22:49",
-     "q": 60
-    },
-    {
      "t": "BNBA",
      "ko": "주주총회 결과 공고 증빙 제출",
      "id": "Penyampaian Bukti Iklan Hasil RUPS",
@@ -24754,6 +25168,16 @@
      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/96a21342e9_3cd0eda674.pdf",
      "time": "23:46",
      "q": 22
+    },
+    {
+     "t": "BNBA",
+     "ko": "임시주주총회 의사록 요약",
+     "id": "Ringkasan Risalah Rapat Umum Para Pemegang Saham Luar Biasa",
+     "kind_ko": "주총결과",
+     "kind_id": "Risalah RUPS",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/b3fd54d59c_625d89a567.pdf",
+     "time": "23:07",
+     "q": 18
     }
    ]
   },
@@ -24995,6 +25419,40 @@
      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/2b17cf85a3_5b3c0582e4.pdf",
      "time": "15:51",
      "q": 96
+    }
+   ]
+  },
+  "2026-09-10": {
+   "ann": [
+    {
+     "t": "BUMI",
+     "ko": "거래소 조회공시 요구에 대한 답변",
+     "id": "Penjelasan atas Permintaan Penjelasan Bursa",
+     "kind_ko": "조회공시",
+     "kind_id": "Penjelasan Bursa",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/5d22e77149_12e6084dc3.pdf",
+     "time": "19:12",
+     "q": 85
+    },
+    {
+     "t": "MGLV",
+     "ko": "유상증자(HMETD) 추진 기업정보 공시 — 9월10일",
+     "id": "Keterbukaan Informasi Aksi Korporasi - Rencana Penambahan Modal dengan HMETD - 10 Sep 2026",
+     "kind_ko": "유상증자",
+     "kind_id": "Rights Issue",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/881c3a5b7b_ce2450a4f0.pdf",
+     "time": "19:13",
+     "q": 90
+    },
+    {
+     "t": "ELSA",
+     "ko": "Elnusa, 임시주총서 임원 변경 결정 — 지배구조·사업 지속성 강화",
+     "id": "RUPSLB Elnusa Tetapkan Perubahan Pengurus, Tegaskan Komitmen pada Tata Kelola dan  Kesinambungan Bisnis",
+     "kind_ko": "경영권",
+     "kind_id": "Direksi",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/2f95f51f0d_ceac20ede8.pdf",
+     "time": "05:34",
+     "q": 88
     }
    ]
   }
