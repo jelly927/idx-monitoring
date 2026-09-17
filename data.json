@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 23:19",
+ "updated": "2026-09-17 23:27",
  "delay_min": 15,
- "fx_basis": "12.85 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 22:45 Yahoo",
- "idr_per_krw": 12.8508,
+ "fx_basis": "12.85 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 23:15 Yahoo",
+ "idr_per_krw": 12.852,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -285,7 +285,6 @@
    "spark": [
     17707.0,
     17707.0,
-    17707.0,
     17675.0,
     17707.0,
     17707.0,
@@ -309,10 +308,11 @@
     17748.0,
     17748.0,
     17748.0,
+    17748.0,
     17748.0
    ],
    "inv": true,
-   "asof": "22:45",
+   "asof": "23:15",
    "high": 17748.0,
    "low": 17675.0,
    "src": "yahoo"
@@ -15527,10 +15527,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7635.33,
+   "px": 7636.9,
    "prev": 7553.33,
-   "pct": 1.09,
-   "asof": "23:15",
+   "pct": 1.11,
+   "asof": "23:25",
    "live": true,
    "spark": [
     7625.67,
@@ -15566,17 +15566,19 @@
     7635.33,
     7636.55,
     7634.09,
-    7635.33
+    7635.15,
+    7636.43,
+    7636.9
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26398.25,
+   "px": 26408.37,
    "prev": 25978.42,
-   "pct": 1.62,
-   "asof": "23:15",
+   "pct": 1.65,
+   "asof": "23:25",
    "live": true,
    "spark": [
     26321.01,
@@ -15612,17 +15614,19 @@
     26396.62,
     26400.77,
     26398.17,
-    26398.25
+    26396.09,
+    26407.34,
+    26408.37
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51824.12,
+   "px": 51839.91,
    "prev": 51477.73,
-   "pct": 0.67,
-   "asof": "23:15",
+   "pct": 0.7,
+   "asof": "23:25",
    "live": true,
    "spark": [
     51760.85,
@@ -15658,7 +15662,9 @@
     51832.33,
     51841.22,
     51807.79,
-    51824.12
+    51826.99,
+    51835.86,
+    51839.91
    ]
   },
   {
@@ -16086,6 +16092,20 @@
    "ts": "2026-09-17T19:50:00+07:00",
    "date": "2026-09-17",
    "time": "19:50",
+   "src": "IDX Channel",
+   "t": "Low Tuck Kwong dan Putrinya Sepakat Lepas Saham BYAN ke Haji Isam",
+   "tags": [
+    "BYAN"
+   ],
+   "url": "https://www.idxchannel.com/market-news/low-tuck-kwong-dan-putrinya-sepakat-lepas-saham-byan-ke-haji-isam",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/17/bayan_byan.jpg",
+   "t_ko": "Low Tuck Kwong 부녀, Haji Isam에 BYAN 지분 매각 합의",
+   "t_id": "Low Tuck Kwong dan Putrinya Sepakat Lepas Saham BYAN ke Haji Isam"
+  },
+  {
+   "ts": "2026-09-17T19:50:00+07:00",
+   "date": "2026-09-17",
+   "time": "19:50",
    "src": "Katadata",
    "t": "KPK Geledah Sejumlah Ruangan ATR Terkait Kasus HGB, Bawa 3 Koper Barang Bukti",
    "tags": [
@@ -16095,6 +16115,20 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/17/Penyidik_Komisi_Pemberantasan_Korupsi_saat_menggeledah_Kementeri-2026_09_17-19_49_44_849a1f83e7b6f3f397bb6b0f3644d1b0_620x413_thumb.jpeg",
    "t_ko": "KPK, HGB 관련 ATR 사무실 압수수색해 증거품 3개 상자 압수",
    "t_id": "KPK Geledah Sejumlah Ruangan ATR Terkait Kasus HGB, Bawa 3 Koper Barang Bukti"
+  },
+  {
+   "ts": "2026-09-17T19:35:00+07:00",
+   "date": "2026-09-17",
+   "time": "19:35",
+   "src": "IDX Channel",
+   "t": "MBSS Punya Manajemen Baru, Eks Kapolda Banten Jadi Komut",
+   "tags": [
+    "MBSS"
+   ],
+   "url": "https://www.idxchannel.com/market-news/mbss-punya-manajemen-baru-eks-kapolda-banten-jadi-komut",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/06/24/mbss.jpg",
+   "t_ko": "MBSS, 새 경영진 선임 — 전 Banten 경찰청장 이사회 의장 선임",
+   "t_id": "MBSS Punya Manajemen Baru, Eks Kapolda Banten Jadi Komut"
   },
   {
    "ts": "2026-09-17T19:28:47+07:00",
@@ -16123,6 +16157,20 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/bold-merayakan-pencapaiannya-dengan-melakukan-ekspansi-usaha-ke-metro-manila-filipina-istimewa-q6FaU.webp",
    "t_ko": "BOLT, 필리핀 마닐라 메트로로 마케팅 확대",
    "t_id": "Perluas Ekspansi, BOLT Kembangakan Pemasaran di Metro Manila Filipina"
+  },
+  {
+   "ts": "2026-09-17T18:58:00+07:00",
+   "date": "2026-09-17",
+   "time": "18:58",
+   "src": "IDX Channel",
+   "t": "Merdeka Battery (MBMA) Kembali Perpanjang Masa Buyback Saham",
+   "tags": [
+    "MBMA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/merdeka-battery-mbma-kembali-perpanjang-masa-buyback-saham",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2025/02/25/mbma.jpg",
+   "t_ko": "MBMA, 자사주 매입 기간 연장",
+   "t_id": "Merdeka Battery (MBMA) Kembali Perpanjang Masa Buyback Saham"
   },
   {
    "ts": "2026-09-17T18:56:37+07:00",
@@ -16165,6 +16213,21 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/05/image-20260522183543.jpeg",
    "t_ko": "Haji Isam 계열사, 거래정지 해제 후 상한가 직행",
    "t_id": "Emiten Terafiliasi Haji Isam Langsung ARA Usai Suspensi Dibuka"
+  },
+  {
+   "ts": "2026-09-17T16:46:00+07:00",
+   "date": "2026-09-17",
+   "time": "16:46",
+   "src": "IDX Channel",
+   "t": "10 Saham Top Gainer Perdagangan Kamis 17 September, Ada TEBE dan FILM",
+   "tags": [
+    "FILM",
+    "TEBE"
+   ],
+   "url": "https://www.idxchannel.com/market-news/10-saham-top-gainer-perdagangan-kamis-17-september-ada-tebe-dan-film",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/08/19/saham_-_magnific_-_18_Agust_26_-.jpg",
+   "t_ko": "9월 17일 목요일 상승 상위 10개 종목 — TEBE·FILM 포함",
+   "t_id": "10 Saham Top Gainer Perdagangan Kamis 17 September, Ada TEBE dan FILM"
   },
   {
    "ts": "2026-09-17T16:20:00+07:00",
@@ -16219,6 +16282,30 @@
    ]
   },
   {
+   "ts": "2026-09-17T14:43:00+07:00",
+   "date": "2026-09-17",
+   "time": "14:43",
+   "src": "IDX Channel",
+   "t": "KKGI Angkat Wimpi Salim Jadi Direktur Utama, Tetapkan Dividen Rp97,47 Miliar",
+   "tags": [
+    "KKGI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/kkgi-angkat-wimpi-salim-jadi-direktur-utama-tetapkan-dividen-rp9747-miliar",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/17/kkgi.jpg",
+   "t_ko": "KKGI, Wimpi Salim 대표 선임 및 Rp974.7억 배당 결정",
+   "t_id": "KKGI Angkat Wimpi Salim Jadi Direktur Utama, Tetapkan Dividen Rp97,47 Miliar",
+   "ai_ko": "· 배당금 Rp97.47억 지급 결정\n· Wimpi Salim 신임 대표이사 선임\n· Resource Alam Indonesia(KKGI) 경영진 개편",
+   "ai_id": "· Dividen tunai Rp97,46 miliar\n· Penunjukan Wimpi Salim sebagai Dirut\n· Perombakan manajemen KKGI",
+   "ai_tags": [
+    "배당",
+    "인사"
+   ],
+   "ai_tags_id": [
+    "dividen",
+    "manajemen"
+   ]
+  },
+  {
    "ts": "2026-09-17T14:14:52+07:00",
    "date": "2026-09-17",
    "time": "14:14",
@@ -16243,6 +16330,30 @@
     "rekomendasi saham",
     "IHSG",
     "energi"
+   ]
+  },
+  {
+   "ts": "2026-09-17T13:35:00+07:00",
+   "date": "2026-09-17",
+   "time": "13:35",
+   "src": "IDX Channel",
+   "t": "INET Caplok SGI Rp280 Miliar, Perluas Ekspansi ke Bisnis Kabel Bawah Laut",
+   "tags": [
+    "INET"
+   ],
+   "url": "https://www.idxchannel.com/market-news/inet-caplok-sgi-rp280-miliar-perluas-ekspansi-ke-bisnis-kabel-bawah-laut",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/17/inet_sgi_kapal.jpg",
+   "t_ko": "INET, SGI Rp2,800억에 인수해 해저 케이블 사업 확장",
+   "t_id": "INET Caplok SGI Rp280 Miliar, Perluas Ekspansi ke Bisnis Kabel Bawah Laut",
+   "ai_ko": "· 해저 케이블 인프라 통합 구축\n· Rp280.4억 규모 인수 완료\n· Sinergi Inti Andalan Prima(INET) 디지털 영토 확장",
+   "ai_id": "· Integrasi infrastruktur kabel laut\n· Penyelesaian transaksi Rp280,4 miliar\n· Penguatan konektivitas nasional oleh INET",
+   "ai_tags": [
+    "인프라",
+    "M&A"
+   ],
+   "ai_tags_id": [
+    "infrastruktur",
+    "M&A"
    ]
   },
   {
@@ -16824,6 +16935,31 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-17T23:26:05.819661+07:00",
+   "date": "2026-09-17",
+   "time": "23:26",
+   "src": "Jawa Pos",
+   "t": "Jeli Lihat Peluang, Nasabah PNM Mekaar Sulap Sampah Pasar Jadi Usaha Beromzet Jutaan",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609170301/jeli-lihat-peluang-nasabah-pnm-mekaar-sulap-sampah-pasar-jadi-usaha-beromzet-jutaan",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/berkat-pembiayaan-pnm-mekaar-dan-mengikuti-program-pembinaan-umkm-zulhaida-berhasil-mengembangkan-usaha-merangkai-bunga-berbahan-kulit-jagung-yang-bisa-menambah-penghasilan-untuk-keluarga-istimewa-LGpbH.webp",
+   "t_ko": "PNM Mekaar 고객, 시장 쓰레기로 수백만 루피아 매출 사업 창출",
+   "t_id": "Jeli Lihat Peluang, Nasabah PNM Mekaar Sulap Sampah Pasar Jadi Usaha Beromzet Jutaan"
+  },
+  {
+   "ts": "2026-09-17T23:17:00+07:00",
+   "date": "2026-09-17",
+   "time": "23:17",
+   "src": "WSJ",
+   "t": "World Bank Grows Footprint With More Private Capital",
+   "tags": [],
+   "url": "https://www.wsj.com/finance/investing/world-bank-grows-footprint-with-more-private-capital-2b56df71?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-00937907",
+   "t_ko": "World Bank, 민간 자본 협력 확대 추진",
+   "t_id": "Bank Dunia Perluas Jejak Lewat Tambahan Modal Swasta"
+  },
+  {
    "ts": "2026-09-17T23:15:00+07:00",
    "date": "2026-09-17",
    "time": "23:15",
@@ -16849,6 +16985,18 @@
    "t_id": "Dampak Rekor Harga Diesel ke Ekonomi AS, Truk hingga Kereta Jadi Awal"
   },
   {
+   "ts": "2026-09-17T23:12:05+07:00",
+   "date": "2026-09-17",
+   "time": "23:12",
+   "src": "Bloomberg",
+   "t": "US to Reopen Largest Port for Mexican Cattle Shipments",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-17/us-to-reopen-largest-port-for-mexican-cattle-shipments",
+   "g": 1,
+   "t_ko": "미국, 멕시코산 육류 반입 최대 항구 재개방",
+   "t_id": "AS Buka Kembali Pelabuhan Terbesar untuk Pengiriman Sapi Meksiko"
+  },
+  {
    "ts": "2026-09-17T23:12:04+07:00",
    "date": "2026-09-17",
    "time": "23:12",
@@ -16861,6 +17009,19 @@
    "t_id": "Tegas! Maruarar Sirait Minta Pihak Terkait Tanggung Jawab Penyelesaian LRT City"
   },
   {
+   "ts": "2026-09-17T23:10:01+07:00",
+   "date": "2026-09-17",
+   "time": "23:10",
+   "src": "Yahoo Finance",
+   "t": "Nvidia Expects Chip Sales to Double in 2027",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-expects-chip-sales-double-161001284.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/353e3e611ba952f7b94ccbe35a737fbe.jpg",
+   "t_ko": "Nvidia, 2027년 칩 매출 2배 증가 전망",
+   "t_id": "Nvidia Proyeksi Penjualan Chip Lipat Dua pada 2027"
+  },
+  {
    "ts": "2026-09-17T23:08:21+07:00",
    "date": "2026-09-17",
    "time": "23:08",
@@ -16869,7 +17030,7 @@
    "tags": [],
    "url": "https://www.channelnewsasia.com/business/uk-silence-over-demand-apple-data-access-farcical-lawyer-says-6392756",
    "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--eoWLJHmJ--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-17T160821Z_1_LYNXMPEM8G1Q0_RTROPTP_3_BRITAIN-APPLE-SECURITY.JPG?itok=vO28a5k_",
+   "img": "https://dam.mediacorp.sg/image/upload/s--HZBb_L45--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-17T161253Z_2_LYNXMPEM8G1Q0_RTROPTP_3_BRITAIN-APPLE-SECURITY.JPG?itok=b31euBDQ",
    "t_ko": "애플 데이터 접근 요구에 대한 영국 정부의 침묵은 터무니없다고 변호사 지적",
    "t_id": "Diamnya Inggris Atas Permintaan Akses Data Apple Dinilai Konyol, Kata Pengacara"
   },
@@ -16884,6 +17045,32 @@
    "g": 1,
    "t_ko": "트럼프 사진, 폐쇄 법적 공방 속 케네디 센터 철거 연상시켜",
    "t_id": "Foto Trump Diduga Sindir Pembongkaran Kennedy Center di Tengah Sengketa Hukum Penutupan"
+  },
+  {
+   "ts": "2026-09-17T23:06:21+07:00",
+   "date": "2026-09-17",
+   "time": "23:06",
+   "src": "Yahoo Finance",
+   "t": "Why CoreWeave Is Tumbling Hard While the Market Is Soaring",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/why-coreweave-tumbling-hard-while-160621149.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/a0a0ce18a4ba09937e44aad3b14c200e.jpg",
+   "t_ko": "증시 강세 속 CoreWeave 주가 급락 배경",
+   "t_id": "Alasan CoreWeave Anjlok Tajam di Tengah Pasar yang Melambung"
+  },
+  {
+   "ts": "2026-09-17T23:06:19+07:00",
+   "date": "2026-09-17",
+   "time": "23:06",
+   "src": "Yahoo Finance",
+   "t": "Everyone Seems to Have Missed the 13 Most Important Words in Kevin Warsh’s Press Conference About Hiking Rates",
+   "tags": [],
+   "url": "https://finance.yahoo.com/economy/policy/articles/everyone-seems-missed-13-most-160619465.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/ad4701c255d785e8f5b57f67b3abd133",
+   "t_ko": "Kevin Warsh 금리 인상 기자회견 속 핵심 발언 주목",
+   "t_id": "Semua Pihak Tampaknya Lewatkan 13 Kata Paling Penting dalam Konferensi Pers Kevin Warsh soal Kenaikan Suku Bunga"
   },
   {
    "ts": "2026-09-17T23:05:16+07:00",
@@ -16905,8 +17092,8 @@
    "t": "Respons Positif Pasar Jadi Sinyal Pergantian Menkeu",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/934709/respons-positif-pasar-jadi-sinyal-pergantian-menkeu-",
-   "t_id": "Respons Positif Pasar Jadi Sinyal Pergantian Menkeu",
-   "t_ko": "재무장관 교체에 시장 긍정적 반응"
+   "t_ko": "재무장관 교체에 시장 긍정적 반응",
+   "t_id": "Respons Positif Pasar Jadi Sinyal Pergantian Menkeu"
   },
   {
    "ts": "2026-09-17T23:03:16+07:00",
@@ -16942,6 +17129,19 @@
    "url": "https://mediaindonesia.com/ekonomi/934706/memainkan-peran-perkuat-hilirisasi-nasional",
    "t_ko": "국가 하류화 정책 강화에 주력",
    "t_id": "Memainkan Peran Perkuat Hilirisasi Nasional"
+  },
+  {
+   "ts": "2026-09-17T23:01:06+07:00",
+   "date": "2026-09-17",
+   "time": "23:01",
+   "src": "Yahoo Finance",
+   "t": "Struggling Coinbase Stock Sets Itself Up For This Bearish Trade",
+   "tags": [],
+   "url": "https://www.investors.com/research/options/coinbase-coin-stock-bear-put-spread-options/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/b2a5e3d9bc5337a1d63ee46272a8236a.jpg",
+   "t_ko": "Coinbase, 실적 부진 속 약세장 대비 포지션 구축",
+   "t_id": "Saham Coinbase yang Tertekan Bersiap untuk Transaksi Bearish Ini"
   },
   {
    "ts": "2026-09-17T23:00:54+07:00",
@@ -16992,17 +17192,30 @@
    "t_id": "Mineral di Dalam Bumi ternyata Bisa Menyimpan Air, Ini Temuan Terbarunya"
   },
   {
-   "ts": "2026-09-17T22:49:15+07:00",
+   "ts": "2026-09-17T22:56:57+07:00",
    "date": "2026-09-17",
-   "time": "22:49",
+   "time": "22:56",
    "src": "Yahoo Finance",
-   "t": "Why Goldgroup Mining Stock Popped, Then Dropped",
+   "t": "Stock Market Today: Nasdaq Leads Dow After Surprise Jobs Data; Gold Name Vaults Higher (Live Coverage)",
    "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/why-goldgroup-mining-stock-popped-154915558.html",
+   "url": "https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-fed-reaction-generac-nebius-bloom-energy-spacex/?src=A00220&yptr=yahoo",
    "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/dbbe3ef1c7cccc3926f4d6692d87e5c1.jpg",
-   "t_ko": "Goldgroup Mining 주가 급등 후 급락 배경",
-   "t_id": "Sebab Saham Goldgroup Mining Sempat Melonjak lalu Anjlok"
+   "img": "https://media.zenfs.com/en/ibd.com/072cc1cb987ee93017a2c4d63e4be893.jpg",
+   "t_ko": "증시 개장 — 고용 지표 호조에 Nasdaq 상승 주도, 금 관련주 강세",
+   "t_id": "Pasar Saham Hari Ini: Nasdaq Pimpin Dow Usai Data Kerja Kejutkan Pasar; Saham Emas Melonjak (Liputan Langsung)"
+  },
+  {
+   "ts": "2026-09-17T22:56:11+07:00",
+   "date": "2026-09-17",
+   "time": "22:56",
+   "src": "Yahoo Finance",
+   "t": "Stellantis (STLA) and Ford (F) Bet Gas Engines Can Fix America’s EV Range Anxiety",
+   "tags": [],
+   "url": "https://finance.yahoo.com/technology/articles/stellantis-stla-ford-f-bet-155611688.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/b7ed25e93a81d612d4851d4b4e39d11a.jpg",
+   "t_ko": "Stellantis·Ford, 전기차 주행거리 불안 해소 위해 내연기관 고수",
+   "t_id": "Stellantis (STLA) dan Ford (F) Andalkan Mesin Bensin Atasi Kecemasan Jarak Tempuh EV AS"
   },
   {
    "ts": "2026-09-17T22:42:39+07:00",
@@ -17054,31 +17267,6 @@
    "t_id": "Produksi Sumur Minyak Tua Digenjot"
   },
   {
-   "ts": "2026-09-17T22:31:00+07:00",
-   "date": "2026-09-17",
-   "time": "22:31",
-   "src": "WSJ",
-   "t": "America Made Me Very Rich. There’s a Pro-Market Way to Give Back.",
-   "tags": [],
-   "url": "https://www.wsj.com/economy/market-humanism-nick-hanauer-fba8b428?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-76283672",
-   "t_ko": "미국에서의 부 축적과 시장 친화적 환원 방식",
-   "t_id": "AS Buat Saya Sangat Kaya, Ada Cara Pro-Pasar untuk Berbagi Kembali"
-  },
-  {
-   "ts": "2026-09-17T22:31:00+07:00",
-   "date": "2026-09-17",
-   "time": "22:31",
-   "src": "Media Indonesia",
-   "t": "Suku Bunga The Fed Naik, DPR Ingatkan BI Hati-Hati dan Jaga Rupiah",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/934694/suku-bunga-the-fed-naik-dpr-ingatkan-bi-hati-hati-dan-jaga-rupiah",
-   "g": 1,
-   "t_ko": "미국 기준금리 인상에 인도네시아 하원, BI에 루피아화 방어 당부",
-   "t_id": "Suku Bunga The Fed Naik, DPR Ingatkan BI Hati-Hati dan Jaga Rupiah"
-  },
-  {
    "ts": "2026-09-17T22:30:54+07:00",
    "date": "2026-09-17",
    "time": "22:30",
@@ -17103,31 +17291,6 @@
    "t_id": "Pembenahan Sistem Dermaga Belum Disentuh, Asosiasi Sopir Truk Pesimis Zero ODOL Terealisasi 2027"
   },
   {
-   "ts": "2026-09-17T22:26:52+07:00",
-   "date": "2026-09-17",
-   "time": "22:26",
-   "src": "Yahoo Finance",
-   "t": "Average auto loan interest rates by credit score in 2026",
-   "tags": [],
-   "url": "https://finance.yahoo.com/news/average-car-loan-interest-rates-212521067.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/bankrate_626/815064319fdeb325366f47743b4cc6a6.jpg",
-   "t_ko": "2026년 신용점수별 자동차 대출 평균 금리",
-   "t_id": "Rata-rata Suku Bunga Kredit Mobil Berdasarkan Skor Kredit pada 2026"
-  },
-  {
-   "ts": "2026-09-17T22:24:22+07:00",
-   "date": "2026-09-17",
-   "time": "22:24",
-   "src": "Bloomberg",
-   "t": "Bond Rout Spurs Record Outflow From $3.6 Billion Schwab Muni ETF",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-17/bond-rout-spurs-record-outflow-from-3-6-billion-schwab-muni-etf",
-   "g": 1,
-   "t_ko": "채권 약세에 36억 달러 규모 Schwab Muni ETF서 사상 최대 유출",
-   "t_id": "Aksi Jual Obligasi Picu Rekor Outflow dari Schwab Muni ETF $3,6 Miliar"
-  },
-  {
    "ts": "2026-09-17T22:24:00+07:00",
    "date": "2026-09-17",
    "time": "22:24",
@@ -17138,19 +17301,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/03/2026_09_03-19_02_00_c2817d0e-a795-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
    "t_ko": "BGN, MBG 주방 인센티브 규정 개정 관련 Kemenkeu 대기",
    "t_id": "BGN Tunggu Kemenkeu Soal Revisi Aturan Insentif Dapur MBG"
-  },
-  {
-   "ts": "2026-09-17T22:22:00+07:00",
-   "date": "2026-09-17",
-   "time": "22:22",
-   "src": "MarketWatch",
-   "t": "Micron, Intel and other chip stocks are furthering their strong comebacks",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/micron-intel-and-other-chip-stocks-are-furthering-their-strong-comebacks-14b1ecac?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-37901280",
-   "t_ko": "마이크론·인텔 등 반도체주, 강한 반등세 이어가",
-   "t_id": "Saham Chip Micron, Intel dan Lainnya Lanjutkan Tren Penguatan"
   },
   {
    "ts": "2026-09-17T22:20:30+07:00",
@@ -17165,41 +17315,16 @@
    "t_id": "Pensiun Tak Cukup hanya Siapkan Dana, Kesehatan juga Wajib jadi Perhatian"
   },
   {
-   "ts": "2026-09-17T22:14:28+07:00",
+   "ts": "2026-09-17T22:11:16+07:00",
    "date": "2026-09-17",
-   "time": "22:14",
-   "src": "Yahoo Finance",
-   "t": "Meta Stock Climbs On Muse AI Excitement. Here's The Next Potential Catalyst.",
+   "time": "22:11",
+   "src": "Medcom",
+   "t": "PSEL Bogor Raya 1 Mulai Dibangun, 1.500 Ton Sampah per Hari Bakal Diubah Jadi Listrik",
    "tags": [],
-   "url": "https://www.investors.com/news/technology/meta-stock-connect-2026-preview-muse-ai/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/7dac0304acf1f11726a9b70d07036f18.jpg",
-   "t_ko": "Meta, Muse AI 기대감에 상승 — 향후 잠재적 촉매 요인 점검",
-   "t_id": "Saham Meta Naik Berkat Antusiasme Muse AI, Ini Katalis Potensial Berikutnya"
-  },
-  {
-   "ts": "2026-09-17T22:13:50+07:00",
-   "date": "2026-09-17",
-   "time": "22:13",
-   "src": "CNBC",
-   "t": "Oil prices fall as Saudi Arabia reportedly offers more crude via Hormuz after pipeline attack",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
-   "g": 1,
-   "t_ko": "사우디, 송유관 피격 후 호르무즈 원유 공급 확대 보도에 유가 하락",
-   "t_id": "Harga Minyak Turun Seiring Saudi Dilaporkan Tawarkan Tambahan Minyak via Selat Hormuz Pasca-Serangan Pipa",
-   "ai_ko": "· 브렌트유 배럴당 USD 105.81로 하락세 연장\n· 사우디아라비아의 대체 선박 이송으로 공급 우려 완화\n· 중동 지정학적 리스크가 유가 변동성 자극",
-   "ai_id": "· Harga minyak Brent turun ke USD 105,81\n· Pasokan stabil berkat transfer kapal Saudi\n· Risiko geopolitik Timur Tengah pengaruhi minyak",
-   "ai_tags": [
-    "유가",
-    "원자재",
-    "지정학"
-   ],
-   "ai_tags_id": [
-    "minyak",
-    "komoditas",
-    "geopolitik"
-   ]
+   "url": "https://www.medcom.id/ekonomi/sustainability/JKR2eYQK-psel-bogor-raya-1-mulai-dibangun-1-500-ton-sampah-per-hari-bakal-diubah-jadi-listrik",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/17/1842848/Gsb90MyKWx.jpg?w=720",
+   "t_ko": "Bogor Raya 1 PSEL 착공 — 하루 쓰레기 1,500톤 전력화",
+   "t_id": "PSEL Bogor Raya 1 Mulai Dibangun, 1.500 Ton Sampah per Hari Bakal Diubah Jadi Listrik"
   },
   {
    "ts": "2026-09-17T22:07:00+07:00",
@@ -17240,36 +17365,12 @@
    "ts": "2026-09-17T22:00:00+07:00",
    "date": "2026-09-17",
    "time": "22:00",
-   "src": "IDX Channel",
-   "t": "Bakom RI Ungkap Pencopotan Purbaya Sebagai Menkeu Bukan Karena Kinerjanya Buruk",
-   "tags": [],
-   "url": "https://www.idxchannel.com/news/bakom-ri-ungkap-pencopotan-purbaya-sebagai-menkeu-bukan-karena-kinerjanya-buruk",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/17/fitrah_faisal_bakom_Ri.jpg",
-   "t_ko": "Bakom RI, Purbaya 재무장관 해임은 실적 부진 때문이 아님을 밝혀",
-   "t_id": "Bakom RI Ungkap Pencopotan Purbaya Sebagai Menkeu Bukan Karena Kinerja Buruk"
-  },
-  {
-   "ts": "2026-09-17T22:00:00+07:00",
-   "date": "2026-09-17",
-   "time": "22:00",
    "src": "Media Indonesia",
    "t": "DPR Desak TNI-Polri Perkuat Mitigasi Teror KKB di Papua",
    "tags": [],
    "url": "https://mediaindonesia.com/politik-dan-hukum/934678/dpr-desak-tni-polri-perkuat-mitigasi-teror-kkb-di-papua",
    "t_ko": "DPR, 군경에 파푸아 KKB 테러 대응 강화 촉구",
    "t_id": "DPR Desak TNI-Polri Perkuat Mitigasi Teror KKB di Papua"
-  },
-  {
-   "ts": "2026-09-17T21:54:20+07:00",
-   "date": "2026-09-17",
-   "time": "21:54",
-   "src": "Detik",
-   "t": "Laba Pegadaian Naik 84,6%, Ini Angka Penting di Balik Kinerjanya",
-   "tags": [],
-   "url": "https://finance.detik.com/infografis/d-8667713/laba-pegadaian-naik-84-6-ini-angka-penting-di-balik-kinerjanya",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/06/berkilau-di-bawah-danantara-pegadaian-akselerasi-ekosistem-bank-emas-1783337310220_169.jpeg?w=360&q=90",
-   "t_ko": "Pegadaian, 순이익 84.6% 증가 — 주요 실적 지표 공개",
-   "t_id": "Laba Pegadaian Naik 84,6%, Ini Angka Penting di Balik Kinerjanya"
   }
  ],
  "kisi_news": [
@@ -17437,8 +17538,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.85",
-   "d": -0.77,
-   "ytd": 10.6,
+   "d": -0.76,
+   "ytd": 10.61,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17471,9 +17572,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.24",
-   "d": -0.07,
-   "ytd": 2.0,
+   "v": "100.22",
+   "d": -0.1,
+   "ytd": 1.98,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17483,9 +17584,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "100.81",
-   "d": -1.43,
-   "ytd": 75.57,
+   "v": "101.17",
+   "d": -1.08,
+   "ytd": 76.19,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17495,7 +17596,7 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,408.0",
+   "v": "4,407.7",
    "d": 1.67,
    "ytd": 1.9,
    "inv": false,
@@ -17519,9 +17620,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,258",
-   "d": 0.92,
-   "ytd": -2.54,
+   "v": "16,257",
+   "d": 0.91,
+   "ytd": -2.55,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -19931,20 +20032,6 @@
    "title_id": "Transaksi Material Tanpa Persetujuan RUPS",
    "kind_ko": "특수관계",
    "kind_id": "Transaksi Afiliasi",
-   "rk": 78
-  },
-  {
-   "ts": "2026-09-14T23:07:43+07:00",
-   "date": "2026-09-14",
-   "time": "23:07",
-   "t": "SMDR",
-   "type": "STOCK",
-   "title": "Penjelasan atas Volatilitas Transaksi",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/957e4d7ad7_377c9887f9.pdf",
-   "title_ko": "거래 변동성에 대한 설명",
-   "title_id": "Penjelasan atas Volatilitas Transaksi",
-   "kind_ko": "주가급변",
-   "kind_id": "Volatilitas",
    "rk": 78
   },
   {
@@ -23472,7 +23559,7 @@
   "idx_from_pc": null,
   "pc_age_min": null,
   "news_ai_cache": 39,
-  "news_ai_hit": 25,
+  "news_ai_hit": 27,
   "on_runner": true,
   "bi": null,
   "hist_days": 1,
@@ -25230,17 +25317,16 @@
    "t_id": "Trump Tuntut The Fed Turunkan Suku Bunga Jadi 1% atau Kurang: Segera!"
   },
   {
-   "ts": "2026-09-17T22:00:00+07:00",
+   "ts": "2026-09-17T23:04:00+07:00",
    "date": "2026-09-17",
-   "time": "22:00",
-   "src": "IDX Channel",
-   "t": "Bakom RI Ungkap Pencopotan Purbaya Sebagai Menkeu Bukan Karena Kinerjanya Buruk",
+   "time": "23:04",
+   "src": "Media Indonesia",
+   "t": "Respons Positif Pasar Jadi Sinyal Pergantian Menkeu",
    "tags": [],
-   "url": "https://www.idxchannel.com/news/bakom-ri-ungkap-pencopotan-purbaya-sebagai-menkeu-bukan-karena-kinerjanya-buruk",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/17/fitrah_faisal_bakom_Ri.jpg",
-   "t_ko": "Bakom RI, Purbaya 재무장관 해임은 실적 부진 때문이 아님을 밝혀",
-   "t_id": "Bakom RI Ungkap Pencopotan Purbaya Sebagai Menkeu Bukan Karena Kinerja Buruk",
-   "score": 413.15,
+   "url": "https://mediaindonesia.com/ekonomi/934709/respons-positif-pasar-jadi-sinyal-pergantian-menkeu-",
+   "t_ko": "재무장관 교체에 시장 긍정적 반응",
+   "t_id": "Respons Positif Pasar Jadi Sinyal Pergantian Menkeu",
+   "score": 411.4,
    "srcs": 1
   },
   {
@@ -25258,32 +25344,32 @@
    "t_id": "DPR Ingin Ubah Batas Defisit APBN, Kemenkeu Pastikan Jaga di Bawah 3%"
   },
   {
-   "ts": "2026-09-17T20:03:21+07:00",
+   "ts": "2026-09-17T12:01:00+07:00",
    "date": "2026-09-17",
-   "time": "20:03",
-   "src": "Detik",
-   "t": "Bakal Ada Badan Usaha Khusus Langsung di Bawah Prabowo, Ganti SKK Migas?",
+   "time": "12:01",
+   "src": "IDX Channel",
+   "t": "Ini Alasan OJK Tunda IPO Swayasa Prakarsa (SWAP)",
    "tags": [],
-   "url": "https://finance.detik.com/energi/d-8667590/bakal-ada-badan-usaha-khusus-langsung-di-bawah-prabowo-ganti-skk-migas",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/16/menteri-esdm-bahlil-lahadalia-1789550049461_169.jpeg?w=360&q=90",
-   "score": 409.05,
-   "srcs": 1,
-   "t_ko": "Prabowo 직속 특별 기관 신설 추진 — SKK Migas 대체하나",
-   "t_id": "Bakal Ada Badan Usaha Khusus Langsung di Bawah Prabowo, Ganti SKK Migas?"
+   "url": "https://www.idxchannel.com/market-news/ini-alasan-ojk-tunda-ipo-swayasa-prakarsa-swap",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2025/12/04/IPO_-_ilustrasi_-_4_Des_25.jpg",
+   "score": 409.35,
+   "srcs": 2,
+   "t_ko": "OJK, Swayasa Prakarsa(SWAP) IPO 연기 배경 설명",
+   "t_id": "Ini Alasan OJK Tunda IPO Swayasa Prakarsa (SWAP)"
   },
   {
-   "ts": "2026-09-17T22:13:50+07:00",
+   "ts": "2026-09-17T22:32:32+07:00",
    "date": "2026-09-17",
-   "time": "22:13",
-   "src": "CNBC",
-   "t": "Oil prices fall as Saudi Arabia reportedly offers more crude via Hormuz after pipeline attack",
+   "time": "22:32",
+   "src": "Bloomberg",
+   "t": "Inflation Can Jeopardize Growth, Says Croation Central Bank Governor",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
+   "url": "https://www.bloomberg.com/news/videos/2026-09-17/inflation-can-jeopardize-growth-says-zigman-video",
    "g": 1,
-   "t_ko": "사우디, 송유관 피격 후 호르무즈 원유 공급 확대 보도에 유가 하락",
-   "t_id": "Harga Minyak Turun Seiring Saudi Dilaporkan Tawarkan Tambahan Minyak via Selat Hormuz Pasca-Serangan Pipa",
-   "score": 313.0,
-   "srcs": 4
+   "t_ko": "크로아티아 중앙은행 총재, 인플레이션의 성장 저해 경고",
+   "t_id": "Inflasi Ancam Pertumbuhan, Gubernur Bank Sentral Kroasia Ingatkan Hal Ini",
+   "score": 311.0,
+   "srcs": 2
   }
  ],
  "daylog": {
@@ -25492,16 +25578,6 @@
     }
    ],
    "ann": [
-    {
-     "t": "SMDR",
-     "ko": "거래 변동성에 대한 설명",
-     "id": "Penjelasan atas Volatilitas Transaksi",
-     "kind_ko": "주가급변",
-     "kind_id": "Volatilitas",
-     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/957e4d7ad7_377c9887f9.pdf",
-     "time": "23:07",
-     "q": 78
-    },
     {
      "t": "BNBA",
      "ko": "주주총회 결과 공고 증빙 제출",
@@ -25752,6 +25828,40 @@
      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/2b17cf85a3_5b3c0582e4.pdf",
      "time": "15:51",
      "q": 96
+    }
+   ]
+  },
+  "2026-09-10": {
+   "ann": [
+    {
+     "t": "BUMI",
+     "ko": "거래소 조회공시 요구에 대한 답변",
+     "id": "Penjelasan atas Permintaan Penjelasan Bursa",
+     "kind_ko": "조회공시",
+     "kind_id": "Penjelasan Bursa",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/5d22e77149_12e6084dc3.pdf",
+     "time": "19:12",
+     "q": 85
+    },
+    {
+     "t": "MGLV",
+     "ko": "유상증자(HMETD) 추진 기업정보 공시 — 9월10일",
+     "id": "Keterbukaan Informasi Aksi Korporasi - Rencana Penambahan Modal dengan HMETD - 10 Sep 2026",
+     "kind_ko": "유상증자",
+     "kind_id": "Rights Issue",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/881c3a5b7b_ce2450a4f0.pdf",
+     "time": "19:13",
+     "q": 90
+    },
+    {
+     "t": "ELSA",
+     "ko": "Elnusa, 임시주총서 임원 변경 결정 — 지배구조·사업 지속성 강화",
+     "id": "RUPSLB Elnusa Tetapkan Perubahan Pengurus, Tegaskan Komitmen pada Tata Kelola dan  Kesinambungan Bisnis",
+     "kind_ko": "경영권",
+     "kind_id": "Direksi",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/2f95f51f0d_ceac20ede8.pdf",
+     "time": "05:34",
+     "q": 88
     }
    ]
   }
@@ -43594,6 +43704,31 @@
  ],
  "catalyst": [
   {
+   "t": "INET",
+   "n": "Sinergi Inti Andalan Prima",
+   "px": 338,
+   "pct": 6.96,
+   "val": 157572414200,
+   "mcap": 7563691916092,
+   "ratio": 0,
+   "ev_ko": "지분매각·경영권",
+   "ev_id": "Divestasi & pengendali",
+   "hl": "INET, SGI Rp2,800억에 인수해 해저 케이블 사업 확장",
+   "hl_id": "INET Caplok SGI Rp280 Miliar, Perluas Ekspansi ke Bisnis Kabel Bawah Laut",
+   "url": "https://www.idxchannel.com/market-news/inet-caplok-sgi-rp280-miliar-perluas-ekspansi-ke-bisnis-kabel-bawah-laut",
+   "score": 66.6,
+   "s_news": 95,
+   "s_size": 47,
+   "s_surge": 0,
+   "s_move": 100,
+   "s_conc": 15,
+   "s_flow": 30,
+   "alpha": 6.56,
+   "vrank": 18,
+   "flow": -3.01,
+   "srcs": 1
+  },
+  {
    "t": "BBRI",
    "n": "Bank Rakyat Indonesia (Persero)",
    "px": 3330,
@@ -43628,9 +43763,9 @@
    "ratio": 0,
    "ev_ko": "자본구조",
    "ev_id": "Aksi korporasi",
-   "hl": "Merdeka Battery Materials(MBMA), 주가 변동성 완화 목적 자사주 매입 기간 종료",
-   "hl_id": "Berakhirnya Periode Pelaksanaan Pembelian Kembali Saham dalam Kondisi Pasar yang Berfluktuasi Secara Signifikan PT Merdeka Battery Materials Tbk",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/1b40f19e1b_cd56580eb5.pdf",
+   "hl": "MBMA, 자사주 매입 기간 연장",
+   "hl_id": "Merdeka Battery (MBMA) Kembali Perpanjang Masa Buyback Saham",
+   "url": "https://www.idxchannel.com/market-news/merdeka-battery-mbma-kembali-perpanjang-masa-buyback-saham",
    "score": 65.3,
    "s_news": 90,
    "s_size": 69,
@@ -43641,7 +43776,7 @@
    "alpha": 3.6,
    "vrank": 43,
    "flow": -14.32,
-   "srcs": 0
+   "srcs": 1
   },
   {
    "t": "AMMN",
@@ -43817,31 +43952,6 @@
    "vrank": 4,
    "flow": -2.25,
    "srcs": 0
-  },
-  {
-   "t": "KLBF",
-   "n": "Kalbe Farma",
-   "px": 775,
-   "pct": 1.97,
-   "val": 51988902000,
-   "mcap": 36280378443500,
-   "ratio": 0,
-   "ev_ko": "자본구조",
-   "ev_id": "Aksi korporasi",
-   "hl": "KLBF, 9월 17일부터 Rp5,000억 규모 자사주 매입",
-   "hl_id": "KLBF Buyback Saham Rp 500 Miliar Mulai 17 September 2026",
-   "url": "https://www.liputan6.com/saham/read/8292843/klbf-buyback-saham-rp-500-miliar-mulai-17-september-2026",
-   "score": 52.9,
-   "s_news": 90,
-   "s_size": 64,
-   "s_surge": 0,
-   "s_move": 31,
-   "s_conc": 0,
-   "s_flow": 85,
-   "alpha": 1.57,
-   "vrank": 50,
-   "flow": -8.5,
-   "srcs": 1
   }
  ],
  "memory": {
