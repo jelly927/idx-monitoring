@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 05:05",
+ "updated": "2026-09-18 05:10",
  "delay_min": 15,
  "fx_basis": "12.86 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,380 · 04:00 Yahoo",
- "idr_per_krw": 12.8609,
+ "idr_per_krw": 12.8611,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -16850,6 +16850,19 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T05:00:00+07:00",
+   "date": "2026-09-18",
+   "time": "05:00",
+   "src": "CNA",
+   "t": "CNA Explains: Will Singapore home loan rates rise after the Fed's rate hike?",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/singapore/home-loans-fed-rate-hike-fixed-floating-mortgage-6391396",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--ZA2coTMu--/c_crop,h_900,w_1600,x_0,y_66/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2023/10/24/jem_0180.jpg?itok=T1mfqDMP",
+   "t_ko": "미국 금리 인상 후 싱가포르 주택담보대출 금리 전망",
+   "t_id": "CNA Menjelaskan: Suku Bunga KPR Singapura Naik Usai Kenaikan Suku Bunga The Fed?"
+  },
+  {
    "ts": "2026-09-18T04:49:49+07:00",
    "date": "2026-09-18",
    "time": "04:49",
@@ -16939,13 +16952,13 @@
    "date": "2026-09-18",
    "time": "04:22",
    "src": "MarketWatch",
-   "t": "The bond market is having a historically bad run. Why investors are buying now anyway.",
+   "t": "The 10-year Treasury is having its worst run in over 100 years. Why investors are buying bonds anyway.",
    "tags": [],
    "url": "https://www.marketwatch.com/story/the-bond-market-is-seeing-trouble-why-investors-are-buying-now-anyway-065a2f9f?mod=mw_rss_topstories",
    "g": 1,
    "img": "https://images.mktw.net/im-19641233",
-   "t_ko": "역사적 약세장 맞은 채권시장, 그럼에도 매수세 유입되는 이유",
-   "t_id": "Pasar Obligasi Catat Rekor Terburuk Sepanjang Sejarah, Investor Tetap Borong"
+   "t_ko": "미국 10년물 국채 100년 만의 최악 부진에도 매수세 유입 이유",
+   "t_id": "Treasury 10 Tahun Catat Kinerja Terburuk dalam 100 Tahun Lebih, Investor Tetap Borong Obligasi"
   },
   {
    "ts": "2026-09-18T04:22:00+07:00",
@@ -17046,19 +17059,6 @@
    "img": "https://dam.mediacorp.sg/image/upload/s--ooIkgIa_--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-17T210747Z_1_LYNXMPEM8G22Y_RTROPTP_3_USA-STOCKS.JPG?itok=pcqM3IKG",
    "t_ko": "거래일: 유가 하락, 수익률로 주가 상승",
    "t_id": "Trading Day: Penurunan Minyak & Imbal Hasil Dongkrak Saham"
-  },
-  {
-   "ts": "2026-09-18T04:01:00+07:00",
-   "date": "2026-09-18",
-   "time": "04:01",
-   "src": "WSJ",
-   "t": "U.S. Stocks Up on Hopes Rising Inflation, Oil Prices Are Now Contained",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/stocks/u-s-stocks-rise-on-inflation-containment-hopes-4b45bf55?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-32734767",
-   "t_ko": "미국증시, 물가 상승 기대와 유가 안정세에 상승",
-   "t_id": "Wall Street Menguat di Tengah Harapan Meredanya Inflasi dan Terkendalinya Harga Minyak"
   },
   {
    "ts": "2026-09-18T03:45:36+07:00",
@@ -17497,7 +17497,7 @@
    "k": "달러 인덱스 (DXY)",
    "v": "100.22",
    "d": -0.1,
-   "ytd": 1.97,
+   "ytd": 1.98,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -23102,7 +23102,7 @@
   "idx_market": true,
   "idx_from_pc": null,
   "pc_age_min": null,
-  "news_ai_cache": 38,
+  "news_ai_cache": 37,
   "news_ai_hit": 28,
   "on_runner": true,
   "bi": null,
@@ -25422,6 +25422,40 @@
      "sc": 416.8,
      "slot": "macro",
      "q": 93
+    }
+   ]
+  },
+  "2026-09-10": {
+   "ann": [
+    {
+     "t": "BUMI",
+     "ko": "거래소 조회공시 요구에 대한 답변",
+     "id": "Penjelasan atas Permintaan Penjelasan Bursa",
+     "kind_ko": "조회공시",
+     "kind_id": "Penjelasan Bursa",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/5d22e77149_12e6084dc3.pdf",
+     "time": "19:12",
+     "q": 85
+    },
+    {
+     "t": "MGLV",
+     "ko": "유상증자(HMETD) 추진 기업정보 공시 — 9월10일",
+     "id": "Keterbukaan Informasi Aksi Korporasi - Rencana Penambahan Modal dengan HMETD - 10 Sep 2026",
+     "kind_ko": "유상증자",
+     "kind_id": "Rights Issue",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/881c3a5b7b_ce2450a4f0.pdf",
+     "time": "19:13",
+     "q": 90
+    },
+    {
+     "t": "ELSA",
+     "ko": "Elnusa, 임시주총서 임원 변경 결정 — 지배구조·사업 지속성 강화",
+     "id": "RUPSLB Elnusa Tetapkan Perubahan Pengurus, Tegaskan Komitmen pada Tata Kelola dan  Kesinambungan Bisnis",
+     "kind_ko": "경영권",
+     "kind_id": "Direksi",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/2f95f51f0d_ceac20ede8.pdf",
+     "time": "05:34",
+     "q": 88
     }
    ]
   }
