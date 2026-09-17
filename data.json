@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 03:50",
+ "updated": "2026-09-18 04:04",
  "delay_min": 15,
- "fx_basis": "12.87 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,379 · 03:15 Yahoo",
- "idr_per_krw": 12.872,
+ "fx_basis": "12.86 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,380 · 04:00 Yahoo",
+ "idr_per_krw": 12.8599,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -97,10 +97,11 @@
     17748.0,
     17748.0,
     17748.0,
+    17748.0,
     17748.0
    ],
    "inv": true,
-   "asof": "03:15",
+   "asof": "04:00",
    "high": 17748.0,
    "low": 17707.0,
    "src": "yahoo"
@@ -16849,6 +16850,95 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T04:01:59+07:00",
+   "date": "2026-09-18",
+   "time": "04:01",
+   "src": "CNBC",
+   "t": "Labor crisis in U.S. chip manufacturing leaves Samsung, TSMC desperate for talent",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/17/us-chipmakers-face-deep-labor-shortage-samsung-micron-sound-alarm.html",
+   "g": 1,
+   "t_ko": "미국 반도체 인력난으로 삼성전자·TSMC 구인난 심화",
+   "t_id": "Krisis Tenaga Kerja Chip AS Bikin Samsung, TSMC Krisis Talenta"
+  },
+  {
+   "ts": "2026-09-18T04:01:00+07:00",
+   "date": "2026-09-18",
+   "time": "04:01",
+   "src": "WSJ",
+   "t": "U.S. Stocks Up on Hopes Rising Inflation, Oil Prices Are Now Contained",
+   "tags": [],
+   "url": "https://www.wsj.com/finance/stocks/u-s-stocks-rise-on-inflation-containment-hopes-4b45bf55?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-32734767",
+   "t_ko": "미국증시, 물가 상승 기대와 유가 안정세에 상승",
+   "t_id": "Wall Street Menguat di Tengah Harapan Meredanya Inflasi dan Terjaganya Harga Minyak"
+  },
+  {
+   "ts": "2026-09-18T04:00:47+07:00",
+   "date": "2026-09-18",
+   "time": "04:00",
+   "src": "CNBC",
+   "t": "Jensen Huang says Nvidia will sell twice as many chips next year",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html",
+   "g": 1,
+   "t_ko": "Jensen Huang, 내년 엔비디아 칩 판매량 두 배 확대 전망",
+   "t_id": "Jensen Huang Sebut Nvidia Bakal Jual Cip Dua Kali Lipat Tahun Depan"
+  },
+  {
+   "ts": "2026-09-18T03:56:00+07:00",
+   "date": "2026-09-18",
+   "time": "03:56",
+   "src": "WSJ",
+   "t": "Energy & Utilities Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/energy-utilities-roundup-market-talk-7634530f?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-16844321",
+   "t_ko": "에너지·유틸리티 섹터 마켓 토크",
+   "t_id": "Rangkuman Energi & Utilitas: Pembicaraan Pasar"
+  },
+  {
+   "ts": "2026-09-18T03:56:00+07:00",
+   "date": "2026-09-18",
+   "time": "03:56",
+   "src": "WSJ",
+   "t": "Basic Materials Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/basic-materials-roundup-market-talk-234fc45c?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-41645439",
+   "t_ko": "소재 섹터 동향 — 시장 전망",
+   "t_id": "Rangkuman Sektor Material Dasar: Pasar Membahas"
+  },
+  {
+   "ts": "2026-09-18T03:53:00+07:00",
+   "date": "2026-09-18",
+   "time": "03:53",
+   "src": "WSJ",
+   "t": "Financial Services Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/financial-services-roundup-market-talk-5f5fbe95?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-03838137",
+   "t_ko": "금융권 동향 — 시장 전망",
+   "t_id": "Rangkuman Jasa Keuangan: Sinyal Pasar"
+  },
+  {
+   "ts": "2026-09-18T03:53:00+07:00",
+   "date": "2026-09-18",
+   "time": "03:53",
+   "src": "WSJ",
+   "t": "Tech, Media & Telecom Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-8dfe699f?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-92361535",
+   "t_ko": "테크·미디어·텔레콤 부문 동향",
+   "t_id": "Teknologi, Media & Telekomunikasi: Market Talk"
+  },
+  {
    "ts": "2026-09-18T03:45:36+07:00",
    "date": "2026-09-18",
    "time": "03:45",
@@ -16971,31 +17061,6 @@
    "t_id": "Foto Trump Diduga Acu Perobohan Kennedy Center, Hakim Perintahkan Pemberitahuan Dini"
   },
   {
-   "ts": "2026-09-18T03:22:00+07:00",
-   "date": "2026-09-18",
-   "time": "03:22",
-   "src": "WSJ",
-   "t": "U.S. Stocks Rise on Inflation Containment Hopes",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/stocks/u-s-stocks-rise-on-inflation-containment-hopes-4b45bf55?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-32734767",
-   "t_ko": "인플레이션 안정 기대감에 미국 증시 상승",
-   "t_id": "Bursa Saham AS Naik di Tengah Harapan Meredanya Inflasi"
-  },
-  {
-   "ts": "2026-09-18T03:21:21+07:00",
-   "date": "2026-09-18",
-   "time": "03:21",
-   "src": "Bloomberg",
-   "t": "Munis Are Near Cheapest Levels in a Year",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-17/munis-are-near-cheapest-levels-in-a-year-video",
-   "g": 1,
-   "t_ko": "지방채, 1년 내 최저 수준의 저렴한 밸류에이션 기록",
-   "t_id": "Munis Berada di Level Termurah dalam Setahun"
-  },
-  {
    "ts": "2026-09-18T03:21:00+07:00",
    "date": "2026-09-18",
    "time": "03:21",
@@ -17005,54 +17070,6 @@
    "url": "https://mediaindonesia.com/ekonomi/934730/mayoritas-masyarakat-indonesia-belum-siap-hadapi-masa-pensiun",
    "t_ko": "인도네시아 국민 대다수, 은퇴 준비 미흡",
    "t_id": "Mayoritas Masyarakat Indonesia Belum Siap Hadapi Masa Pensiun"
-  },
-  {
-   "ts": "2026-09-18T03:17:29+07:00",
-   "date": "2026-09-18",
-   "time": "03:17",
-   "src": "Reuters",
-   "t": "Latam markets inch higher in global risk-on mood after Fed hike",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORHBHWWNMXzJ6VlVwbnBOc3ZudVowMk1sUkw0M1l5MjRzX1BrQzhNUjZrNmdMYTdKakR0OTJaeGZtUC1JeERMVVRpVUZyc2V3ZTgydlNBTE5aZW9SZTZiejBydGJIWExHS0N1eWhVVGpUNlpmdUVwOEpMbWY3dGxybklRUEVKNU1JOEVZaGYtcjRqeVg0S2g2ODFVWmRmbExyRjdPWHJRR3BYZjBMS0w4?oc=5",
-   "g": 1,
-   "t_ko": "연준 금리 인상 후 글로벌 위험선호 심리에 중남미 시장 소폭 상승",
-   "t_id": "Pasar Latam Menguat di Tengah Sentimen Global Pasca-Kenaikan Suku Bunga The Fed"
-  },
-  {
-   "ts": "2026-09-18T03:14:37+07:00",
-   "date": "2026-09-18",
-   "time": "03:14",
-   "src": "Bloomberg",
-   "t": "Loan Dispersion Near An All-Time High: Sinjin Bowron",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-17/loan-dispersion-near-an-all-time-high-sinjin-bowron-video",
-   "g": 1,
-   "t_ko": "Sinjin Bowron, 역대 최고 수준의 대출 분산 지적",
-   "t_id": "Penyebaran Pinjaman Dekati Rekor Tertinggi: Sinjin Bowron"
-  },
-  {
-   "ts": "2026-09-18T03:12:31+07:00",
-   "date": "2026-09-18",
-   "time": "03:12",
-   "src": "Bloomberg",
-   "t": "Leveraged Loan Maturity Wall Is Coming in 2028: Michael Best",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-17/leveraged-loan-maturity-wall-is-coming-in-2028-best-video",
-   "g": 1,
-   "t_ko": "Michael Best, 2028년 레버리지 론 만기 집중 도래 경고",
-   "t_id": "Tembok Jatuh Tempo Loan Berleverage Datang pada 2028: Michael Best"
-  },
-  {
-   "ts": "2026-09-18T03:06:26+07:00",
-   "date": "2026-09-18",
-   "time": "03:06",
-   "src": "Bloomberg",
-   "t": "Duration Is The 'Knife Fight' in Treasuries: Ed Al-Hussainy",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-17/duration-is-the-knife-fight-in-treasuries-al-hussainy-video",
-   "g": 1,
-   "t_ko": "미 국채 듀레이션 공방 심화 — Ed Al-Hussainy",
-   "t_id": "Durasi Jadi 'Perang Pisau' di US Treasury: Ed Al-Hussainy"
   },
   {
    "ts": "2026-09-18T02:55:00+07:00",
@@ -17065,19 +17082,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/jajaran-komisaris-dan-direksi-pt-sier-menggelar-audiensi-dengan-gubernur-jatim-khofifah-indar-parawansa-di-gedung-negara-grahadi-surabaya-rabu-malam-169-dok-pt-sier-cjHHO.webp",
    "t_ko": "동자와 지역 세수 확충 위해 산업단지 실적 제고 촉구",
    "t_id": "Dongkrak PAD Jatim, Kawasan Industri Didorong Tingkatkan Kinerja"
-  },
-  {
-   "ts": "2026-09-18T02:52:00+07:00",
-   "date": "2026-09-18",
-   "time": "02:52",
-   "src": "MarketWatch",
-   "t": "Saudi Arabia is now pushing to export more oil through the Strait of Hormuz",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/saudi-arabia-is-now-pushing-to-export-more-oil-through-the-strait-of-hormuz-bcce044b?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-46541430",
-   "t_ko": "사우디아라비아, 호르무즈 해협 통한 원유 수출 확대 추진",
-   "t_id": "Arab Saudi Kini Genjot Ekspor Minyak Lewat Selat Hormuz"
   },
   {
    "ts": "2026-09-18T02:43:44+07:00",
@@ -17457,8 +17461,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.85",
-   "d": -0.73,
-   "ytd": 10.65,
+   "d": -0.71,
+   "ytd": 10.66,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17492,7 +17496,7 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "100.22",
-   "d": -0.09,
+   "d": -0.1,
    "ytd": 1.98,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -17503,9 +17507,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.30",
-   "d": -0.95,
-   "ytd": 76.42,
+   "v": "101.15",
+   "d": -1.1,
+   "ytd": 76.16,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17515,9 +17519,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,380.3",
-   "d": 1.04,
-   "ytd": 1.26,
+   "v": "4,381.5",
+   "d": 1.06,
+   "ytd": 1.29,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -24884,32 +24888,33 @@
    "t_id": "DPR Ingin Ubah Batas Defisit APBN, Kemenkeu Pastikan Jaga di Bawah 3%"
   },
   {
-   "ts": "2026-09-17T12:01:00+07:00",
+   "ts": "2026-09-17T20:03:21+07:00",
    "date": "2026-09-17",
    "time": "09/17",
-   "src": "IDX Channel",
-   "t": "Ini Alasan OJK Tunda IPO Swayasa Prakarsa (SWAP)",
+   "src": "Detik",
+   "t": "Bakal Ada Badan Usaha Khusus Langsung di Bawah Prabowo, Ganti SKK Migas?",
    "tags": [],
-   "url": "https://www.idxchannel.com/market-news/ini-alasan-ojk-tunda-ipo-swayasa-prakarsa-swap",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/12/04/IPO_-_ilustrasi_-_4_Des_25.jpg",
-   "score": 409.35,
-   "srcs": 2,
-   "t_ko": "OJK, Swayasa Prakarsa(SWAP) IPO 연기 배경 설명",
-   "t_id": "Ini Alasan OJK Tunda IPO Swayasa Prakarsa (SWAP)"
+   "url": "https://finance.detik.com/energi/d-8667590/bakal-ada-badan-usaha-khusus-langsung-di-bawah-prabowo-ganti-skk-migas",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/16/menteri-esdm-bahlil-lahadalia-1789550049461_169.jpeg?w=360&q=90",
+   "score": 409.05,
+   "srcs": 1,
+   "t_ko": "Prabowo 직속 특별 기관 신설 추진 — SKK Migas 대체하나",
+   "t_id": "Bakal Ada Badan Usaha Khusus Langsung di Bawah Prabowo, Ganti SKK Migas?"
   },
   {
-   "ts": "2026-09-17T15:46:04+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "CNBC",
-   "t": "Trump gains a tariff weapon against China and India. Will he use it?",
+   "ts": "2026-09-18T04:01:00+07:00",
+   "date": "2026-09-18",
+   "time": "04:01",
+   "src": "WSJ",
+   "t": "U.S. Stocks Up on Hopes Rising Inflation, Oil Prices Are Now Contained",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/17/trump-russia-sanctions-india-china-oil-tariffs.html",
+   "url": "https://www.wsj.com/finance/stocks/u-s-stocks-rise-on-inflation-containment-hopes-4b45bf55?mod=rss_markets_main",
    "g": 1,
-   "score": 310.0,
-   "srcs": 2,
-   "t_ko": "Trump, 중국·인도 겨냥한 관세 무기 확보에 활용 여부 주목",
-   "t_id": "Trump Kantongi Senjata Tarif untuk China dan India, Bakal Digunakan?"
+   "img": "https://images.wsj.net/im-32734767",
+   "t_ko": "미국증시, 물가 상승 기대와 유가 안정세에 상승",
+   "t_id": "Wall Street Menguat di Tengah Harapan Meredanya Inflasi dan Terjaganya Harga Minyak",
+   "score": 314.5,
+   "srcs": 7
   }
  ],
  "daylog": {
