@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 03:01",
+ "updated": "2026-09-18 03:04",
  "delay_min": 15,
  "fx_basis": "12.86 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,380 · 00:45 Yahoo",
- "idr_per_krw": 12.8569,
+ "idr_per_krw": 12.8576,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15315,8 +15315,8 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7639.01,
-   "prev": 7553.33,
+   "px": 7637.05,
+   "prev": 7551.81,
    "pct": 1.13,
    "asof": "02:55",
    "live": true,
@@ -15398,16 +15398,16 @@
     7642.42,
     7639.34,
     7642.54,
-    7639.01
+    7637.05
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26425.25,
+   "px": 26414.72,
    "prev": 25978.42,
-   "pct": 1.72,
+   "pct": 1.68,
    "asof": "02:55",
    "live": true,
    "spark": [
@@ -15488,16 +15488,16 @@
     26433.59,
     26423.57,
     26439.83,
-    26425.25
+    26414.72
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51788.06,
-   "prev": 51477.73,
-   "pct": 0.6,
+   "px": 51776.48,
+   "prev": 51461.9,
+   "pct": 0.61,
    "asof": "02:55",
    "live": true,
    "spark": [
@@ -15578,7 +15578,7 @@
     51796.82,
     51780.33,
     51800.21,
-    51788.06
+    51776.48
    ]
   },
   {
@@ -16878,12 +16878,12 @@
    "date": "2026-09-18",
    "time": "02:50",
    "src": "Bloomberg",
-   "t": "Real Yield 9/17/2026",
+   "t": "Fed Hikes, Warsh's Credibility, Credit Concerns | Real Yield 9/17/2026",
    "tags": [],
    "url": "https://www.bloomberg.com/news/videos/2026-09-17/real-yield-9-17-2026-video",
    "g": 1,
-   "t_ko": "미국 실질금리",
-   "t_id": "Real Yield 17 Sep 2026"
+   "t_ko": "Fed 금리 인상·Warsh 신뢰도·신용 우려 — 9/17/2026 실질금리",
+   "t_id": "The Fed Naik, Kredibilitas Warsh, Kekhawatiran Kredit | Real Yield 17/9/2026"
   },
   {
    "ts": "2026-09-18T02:48:00+07:00",
@@ -17504,7 +17504,7 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.21",
+   "v": "100.20",
    "d": -0.11,
    "ytd": 1.96,
    "inv": false,
@@ -17516,9 +17516,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.19",
-   "d": -1.06,
-   "ytd": 76.23,
+   "v": "101.26",
+   "d": -0.99,
+   "ytd": 76.35,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17528,9 +17528,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,383.4",
-   "d": 1.11,
-   "ytd": 1.34,
+   "v": "4,386.8",
+   "d": 1.19,
+   "ytd": 1.41,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17552,15 +17552,15 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,110",
-   "d": 1.34,
-   "ytd": -3.43,
+   "v": "16,262",
+   "d": 0.94,
+   "ytd": -2.52,
    "inv": false,
-   "note": "investing.com · 09/17 마지막 값 · 연초 16,682",
+   "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
    "k_id": "Nikel LME (US$/t)",
-   "note_ko": "investing.com · 09/17 마지막 값 · 연초 16,682",
-   "note_id": "investing.com · 09/17 nilai terakhir · Awal tahun 16,682"
+   "note_ko": "investing.com · 연초 16,682",
+   "note_id": "investing.com · Awal tahun 16,682"
   },
   {
    "k": "CPO (MYR/t)",
