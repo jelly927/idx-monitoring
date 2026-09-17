@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": "2026-09-17 12:38",
+ "updated": "2026-09-17 12:42",
  "delay_min": 15,
  "fx_basis": "12.83 IDR/KRW · USD/IDR 17,745 · USD/KRW 1,383 · 12:30 Yahoo",
  "idr_per_krw": 12.8328,
@@ -336,13 +336,13 @@
   "prev": 6436.85,
   "ytd": -25.25,
   "m1": 0.21,
-  "value_idr": 6863097222700.007,
+  "value_idr": 6863043773766.674,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 831종목 · 외국인·공시 PC 09-17 12:33",
-  "rank_asof": "12:35",
+  "rank_src": "Yahoo 15분 지연 · 830종목 · 외국인·공시 PC 09-17 12:33",
+  "rank_asof": "12:40",
   "rank_date": "2026-09-17",
-  "adv": 394,
+  "adv": 393,
   "dec": 247,
   "unch": 190,
   "foreign_net_idr": -588236609776.6709,
@@ -10854,22 +10854,6 @@
    "live": 1
   },
   {
-   "t": "BMHS",
-   "n": "Bundamedik",
-   "px": 200.0,
-   "prev": 199.0,
-   "pct": 0.5,
-   "val": 53448933.333333336,
-   "vol": 266800.0,
-   "sh": 8603416176,
-   "mcap": 1720683235200.0,
-   "hi": 202.0,
-   "lo": 199.0,
-   "ratio": 0.2,
-   "fnet": 7679314.021421617,
-   "live": 1
-  },
-  {
    "t": "CMNP",
    "n": "Citra Marga Nusaphala Persada",
    "px": 1395.0,
@@ -15299,11 +15283,11 @@
   {
    "name": "헬스케어",
    "name_id": "Kesehatan",
-   "n": 39,
-   "adv": 23,
+   "n": 38,
+   "adv": 22,
    "dec": 9,
-   "val": 114257710466.66666,
-   "mcap": 376608951211088.0,
+   "val": 114204261533.33333,
+   "mcap": 374888267975888.0,
    "top": [
     {
      "t": "SRAJ",
@@ -15346,7 +15330,7 @@
      "pct": 0
     }
    ],
-   "fnet": -22867138276,
+   "fnet": -22874817590,
    "pct": -0.18,
    "fbuy_top": [
     {
@@ -16008,10 +15992,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6757.46,
+   "px": 6745.84,
    "prev": 6679.18,
-   "pct": 1.17,
-   "asof": "12:15",
+   "pct": 1.0,
+   "asof": "12:20",
    "live": true,
    "spark": [
     6765.54,
@@ -16077,17 +16061,18 @@
     6767.5,
     6763.44,
     6762.78,
-    6757.46
+    6745.61,
+    6745.84
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64079.52,
+   "px": 64107.19,
    "prev": 63857.24,
-   "pct": 0.35,
-   "asof": "12:20",
+   "pct": 0.39,
+   "asof": "12:25",
    "live": true,
    "spark": [
     64478.19,
@@ -16144,17 +16129,18 @@
     64132.82,
     64114.58,
     64102.87,
-    64079.52
+    64066.03,
+    64107.19
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24502.35,
+   "px": 24491.13,
    "prev": 24713.78,
-   "pct": -0.86,
-   "asof": "12:20",
+   "pct": -0.9,
+   "asof": "12:25",
    "live": true,
    "spark": [
     24487.9,
@@ -16193,7 +16179,8 @@
     24524.99,
     24523.74,
     24513.06,
-    24502.35
+    24494.96,
+    24491.13
    ]
   }
  ],
@@ -17470,6 +17457,42 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-17T12:37:58+07:00",
+   "date": "2026-09-17",
+   "time": "12:37",
+   "src": "CNBC",
+   "t": "Trump plans to meet Gulf leaders at UN next week on Iran war's endgame: report",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/17/us-iran-war-trump-hormuz.html",
+   "g": 1,
+   "t_ko": "Trump, 다음 주 UN에서 걸프 지도자들과 이란 전쟁 종식 논의 전망",
+   "t_id": "Trump Berencana Temui Pemimpin Teluk di PBB Pekan Depan Bahas Akhir Perang Iran: Laporan"
+  },
+  {
+   "ts": "2026-09-17T12:37:26+07:00",
+   "date": "2026-09-17",
+   "time": "12:37",
+   "src": "Bloomberg",
+   "t": "BOE Expected to Keep Rates Unchanged (Video)",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-17/boe-expected-to-keep-rates-unchanged-video",
+   "g": 1,
+   "t_ko": "BOE, 금리 동결 전망",
+   "t_id": "BOE Diprediksi Tahan Suku Bunga (Video)"
+  },
+  {
+   "ts": "2026-09-17T12:34:02+07:00",
+   "date": "2026-09-17",
+   "time": "12:34",
+   "src": "Bloomberg",
+   "t": "Key Takeaways After the Fed's Rate Hike",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-17/key-takeaways-after-the-fed-s-rate-hike-video",
+   "g": 1,
+   "t_ko": "연준 금리 인상 이후 주요 시사점",
+   "t_id": "Poin Penting Usai Kenaikan Suku Bunga The Fed"
+  },
+  {
    "ts": "2026-09-17T12:33:06+07:00",
    "date": "2026-09-17",
    "time": "12:33",
@@ -17478,8 +17501,8 @@
    "tags": [],
    "url": "https://finance.detik.com/bursa-dan-valas/d-8666673/siapa-saja-bisa-genggam-saham-bursa-ini-syarat-dari-ojk",
    "img": "https://akcdn.detik.net.id/community/media/visual/2017/01/18/399561aa-8412-4a88-bda6-b8018496ac9b_169.jpg?w=360&q=90",
-   "t_id": "Siapa Saja Bisa Genggam Saham Bursa? Ini Syarat dari OJK",
-   "t_ko": "OJK, 누구나 거래소 지분 보유 가능한 요건 공개"
+   "t_ko": "OJK, 누구나 거래소 지분 보유 가능한 요건 공개",
+   "t_id": "Siapa Saja Bisa Genggam Saham Bursa? Ini Syarat dari OJK"
   },
   {
    "ts": "2026-09-17T12:30:00+07:00",
@@ -18072,18 +18095,6 @@
    "t_id": "Harga Minyak Lanjutkan Penurunan Seiring Meredanya Kekhawatiran Gangguan Pasokan Timur Tengah"
   },
   {
-   "ts": "2026-09-17T11:33:31+07:00",
-   "date": "2026-09-17",
-   "time": "11:33",
-   "src": "Bloomberg",
-   "t": "BNP Paribas' Davis on Hiring Plans, Market Flows",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-17/bnp-paribas-davis-on-hiring-plans-market-flows-video",
-   "g": 1,
-   "t_ko": "BNP Paribas Davis 대표의 채용 계획 및 자금 흐름",
-   "t_id": "Davis dari BNP Paribas Bahas Rencana Perekrutan dan Arus Pasar"
-  },
-  {
    "ts": "2026-09-17T11:33:09+07:00",
    "date": "2026-09-17",
    "time": "11:33",
@@ -18106,30 +18117,6 @@
     "regulasi",
     "pemerintah"
    ]
-  },
-  {
-   "ts": "2026-09-17T11:31:37+07:00",
-   "date": "2026-09-17",
-   "time": "11:31",
-   "src": "Bloomberg",
-   "t": "Harker on Federal Reserve Rate Hike",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-17/harker-on-federal-reserve-rate-hike-video",
-   "g": 1,
-   "t_ko": "연준 Harker 총재 금리 인상 관련 발언",
-   "t_id": "Harker Soal Kenaikan Suku Bunga The Fed"
-  },
-  {
-   "ts": "2026-09-17T11:21:10+07:00",
-   "date": "2026-09-17",
-   "time": "11:21",
-   "src": "Bloomberg",
-   "t": "Hong Kong Property Stocks Fall as Rate Hike Threatens Recovery",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-17/hong-kong-property-stocks-fall-as-rate-hike-threatens-recovery",
-   "g": 1,
-   "t_ko": "금리 인상 우려에 홍콩 부동산주 하락",
-   "t_id": "Saham Properti Hong Kong Turun Seiring Ancaman Suku Bunga terhadap Pemulihan"
   },
   {
    "ts": "2026-09-17T11:03:14+07:00",
@@ -18385,7 +18372,7 @@
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.83",
    "d": -0.91,
-   "ytd": 10.44,
+   "ytd": 10.45,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18430,9 +18417,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.13",
-   "d": 0.67,
-   "ytd": 77.86,
+   "v": "102.03",
+   "d": 0.57,
+   "ytd": 77.69,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18442,9 +18429,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,325.5",
-   "d": 0.02,
-   "ytd": -0.0,
+   "v": "4,328.3",
+   "d": 0.09,
+   "ytd": 0.06,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18466,9 +18453,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,110",
-   "d": 1.34,
-   "ytd": -3.43,
+   "v": "16,282",
+   "d": 1.06,
+   "ytd": -2.4,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24228,7 +24215,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-17 12:33",
-  "pc_age_min": 5,
+  "pc_age_min": 9,
   "news_ai_cache": 92,
   "news_ai_hit": 72,
   "on_runner": true,
@@ -43822,6 +43809,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-17 12:26"
+  "announcements": "2026-09-17 12:38"
  }
 }
