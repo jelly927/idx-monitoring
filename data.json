@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 08:40",
+ "updated": "2026-09-17 08:51",
  "delay_min": 15,
- "fx_basis": "12.83 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,380 · 04:47 Yahoo",
- "idr_per_krw": 12.8323,
+ "fx_basis": "12.81 IDR/KRW · USD/IDR 17,707 · USD/KRW 1,382 · 04:45 Yahoo",
+ "idr_per_krw": 12.8128,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -120,7 +120,7 @@
   "value_idr": 10881937799233.346,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-17 08:35",
+  "rank_src": "Yahoo 15분 지연 · 828종목 · 종가 · 외국인·공시 PC 09-17 08:42",
   "rank_asof": null,
   "rank_date": "2026-09-16",
   "adv": 213,
@@ -15741,10 +15741,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6766.4,
+   "px": 6759.22,
    "prev": 6679.18,
-   "pct": 1.31,
-   "asof": "08:15",
+   "pct": 1.2,
+   "asof": "08:30",
    "live": true,
    "spark": [
     6765.54,
@@ -15762,17 +15762,20 @@
     6746.51,
     6765.45,
     6763.82,
-    6766.4
+    6768.48,
+    6761.55,
+    6764.34,
+    6759.22
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64251.19,
+   "px": 64414.54,
    "prev": 63857.24,
-   "pct": 0.62,
-   "asof": "08:20",
+   "pct": 0.87,
+   "asof": "08:35",
    "live": true,
    "spark": [
     64478.19,
@@ -15791,25 +15794,24 @@
     64210.03,
     64284.27,
     64210.92,
-    64251.19
+    64264.28,
+    64369.15,
+    64369.73,
+    64414.54
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24480.57,
+   "px": 24493.86,
    "prev": 24713.78,
-   "pct": -0.94,
-   "asof": "09/15 종가",
-   "live": false,
+   "pct": -0.89,
+   "asof": "08:35",
+   "live": true,
    "spark": [
-    25274.96,
-    24954.47,
-    24805.63,
-    24917.6,
-    24667.24,
-    24713.78
+    24487.9,
+    24493.86
    ]
   }
  ],
@@ -15889,6 +15891,34 @@
  },
  "news": [
   {
+   "ts": "2026-09-17T08:48:47+07:00",
+   "date": "2026-09-17",
+   "time": "08:48",
+   "src": "Bloomberg Technoz",
+   "t": "Harga Emas Antam Tak Kompak dengan Emas Dunia",
+   "tags": [
+    "ANTM"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121814/harga-emas-antam-tak-kompak-dengan-emas-dunia",
+   "img": "https://images.bloombergtechnoz.com/data/2025/04/image-20250415103736.jpeg",
+   "t_ko": "Antam 금값, 국제 금값과 디커플링",
+   "t_id": "Harga Emas Antam Tak Kompak dengan Emas Dunia"
+  },
+  {
+   "ts": "2026-09-17T08:40:00+07:00",
+   "date": "2026-09-17",
+   "time": "08:40",
+   "src": "Bloomberg Technoz",
+   "t": "Detail Aturan yang Bikin TINS Bisa Garap Timah di Atas Kuota RKAB",
+   "tags": [
+    "TINS"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121809/detail-aturan-yang-bikin-tins-bisa-garap-timah-di-atas-kuota-rkab",
+   "img": "https://images.bloombergtechnoz.com/data/2024/01/image-20240123073737.jpg",
+   "t_id": "Detail Aturan yang Bikin TINS Bisa Garap Timah di Atas Kuota RKAB",
+   "t_ko": "TINS, RKAB 할당량 초과 채굴 허용 규정 세부안 확정"
+  },
+  {
    "ts": "2026-09-17T08:31:15+07:00",
    "date": "2026-09-17",
    "time": "08:31",
@@ -15901,8 +15931,8 @@
    ],
    "url": "https://finance.detik.com/bursa-dan-valas/d-8666297/simak-rekomendasi-saham-saat-ihsg-merah",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/17/bursa-dan-valas-1789607885-1789607886223.jpeg?w=360&q=90",
-   "t_id": "Simak Rekomendasi Saham saat IHSG Merah",
-   "t_ko": "IHSG 약세장 속 주요 주식 투자의견 정리"
+   "t_ko": "IHSG 약세장 속 주요 주식 투자의견 정리",
+   "t_id": "Simak Rekomendasi Saham saat IHSG Merah"
   },
   {
    "ts": "2026-09-17T08:15:00+07:00",
@@ -16962,6 +16992,19 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-17T08:39:24+07:00",
+   "date": "2026-09-17",
+   "time": "08:39",
+   "src": "CNA",
+   "t": "Timeline: From budget-airline pioneer to financial strain - how did AirAsia get here?",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/asia/airasia-timeline-budget-airline-pioneer-financial-strain-6389446",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--BFhJVGzV--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-03T051701Z_1_LYNXMPEM820CZ_RTROPTP_3_AIRASIA-FINANCING.JPG?itok=7-E_UnKB",
+   "t_ko": "AirAsia, 저가항공 개척자에서 재무 악화까지의 궤적",
+   "t_id": "Kronologi: Dari Pelopor Maskapai Berjangka Rendah hingga Tekanan Finansial - Bagaimana AirAsia Bisa Sampai di Sini"
+  },
+  {
    "ts": "2026-09-17T08:38:12+07:00",
    "date": "2026-09-17",
    "time": "08:38",
@@ -16982,8 +17025,8 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121811/rangkuman-rekomendasi-saham-hari-ini-17-september-2026",
    "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260604121750.jpeg",
-   "t_id": "Rangkuman Rekomendasi Saham Hari Ini, 17 September 2026",
-   "t_ko": "17일 증권사별 추천 종목 정리"
+   "t_ko": "17일 증권사별 추천 종목 정리",
+   "t_id": "Rangkuman Rekomendasi Saham Hari Ini, 17 September 2026"
   },
   {
    "ts": "2026-09-17T08:29:00+07:00",
@@ -16995,8 +17038,8 @@
    "url": "https://www.idxchannel.com/market-news/the-fed-naikkan-suku-bunga-ihsg-berpotensi-tertekan-hari-ini",
    "g": 1,
    "img": "https://img.idxchannel.com/media/439/images/idx/2025/08/31/bei_idx.jpeg",
-   "t_id": "The Fed Naikkan Suku Bunga, IHSG Berpotensi Tertekan Hari Ini",
-   "t_ko": "연준 금리 인상에 IHSG 하락 압력 전망"
+   "t_ko": "연준 금리 인상에 IHSG 하락 압력 전망",
+   "t_id": "The Fed Naikkan Suku Bunga, IHSG Berpotensi Tertekan Hari Ini"
   },
   {
    "ts": "2026-09-17T08:27:32+07:00",
@@ -17495,18 +17538,6 @@
    ]
   },
   {
-   "ts": "2026-09-17T07:24:11+07:00",
-   "date": "2026-09-17",
-   "time": "07:24",
-   "src": "Bloomberg",
-   "t": "Berkshire May Boost Japan Trading House Holdings, Itochu Says",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-17/berkshire-may-boost-japan-trading-house-holdings-itochu-says",
-   "g": 1,
-   "t_ko": "Itochu, Berkshire의 일본 상사 지분 추가 확대 가능성 언급",
-   "t_id": "Itochu Sebut Berkshire Berpeluang Tambah Kepemilikan di Perusahaan Dagang Jepang"
-  },
-  {
    "ts": "2026-09-17T07:22:31+07:00",
    "date": "2026-09-17",
    "time": "07:22",
@@ -17887,9 +17918,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.31",
-   "d": 0.65,
-   "ytd": 2.06,
+   "v": "100.34",
+   "d": 0.68,
+   "ytd": 2.1,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17899,9 +17930,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.09",
-   "d": -2.57,
-   "ytd": 77.8,
+   "v": "102.26",
+   "d": -2.41,
+   "ytd": 78.09,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17911,9 +17942,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,347.1",
-   "d": -0.46,
-   "ytd": 0.5,
+   "v": "4,350.7",
+   "d": -0.38,
+   "ytd": 0.58,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17935,9 +17966,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,155",
-   "d": 0.28,
-   "ytd": -3.16,
+   "v": "16,206",
+   "d": 0.6,
+   "ytd": -2.85,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -23840,10 +23871,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-17 08:35",
-  "pc_age_min": 5,
-  "news_ai_cache": 92,
-  "news_ai_hit": 65,
+  "idx_from_pc": "2026-09-17 08:42",
+  "pc_age_min": 9,
+  "news_ai_cache": 91,
+  "news_ai_hit": 64,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -42378,6 +42409,31 @@
    "srcs": 1
   },
   {
+   "t": "TINS",
+   "n": "TIMAH Tbk",
+   "px": 4680.0,
+   "pct": -1.27,
+   "val": 179659746000.0,
+   "mcap": 34855486164720.0,
+   "ratio": 0.9,
+   "ev_ko": "인허가·생산차질",
+   "ev_id": "Izin & produksi",
+   "hl": "TINS, RKAB 할당량 초과 채굴 허용 규정 세부안 확정",
+   "hl_id": "Detail Aturan yang Bikin TINS Bisa Garap Timah di Atas Kuota RKAB",
+   "url": "https://www.bloombergtechnoz.com/detail-news/121809/detail-aturan-yang-bikin-tins-bisa-garap-timah-di-atas-kuota-rkab",
+   "score": 60.3,
+   "s_news": 98,
+   "s_size": 64,
+   "s_surge": 0,
+   "s_move": 25,
+   "s_conc": 45,
+   "s_flow": 60,
+   "alpha": -1.27,
+   "vrank": 12,
+   "flow": 5.98,
+   "srcs": 1
+  },
+  {
    "t": "ULTJ",
    "n": "Ultrajaya Milk Industry & Trading Company",
    "px": 1880.0,
@@ -42575,31 +42631,6 @@
    "alpha": -9.52,
    "vrank": null,
    "flow": -9.04,
-   "srcs": 0
-  },
-  {
-   "t": "WINS",
-   "n": "Wintermar Offshore Marine",
-   "px": 620.0,
-   "pct": 8.77,
-   "val": 6538627666.666667,
-   "mcap": 2804300853660.0,
-   "ratio": 4.0,
-   "ev_ko": "가격·수급 이상",
-   "ev_id": "Harga & arus dana",
-   "hl": "시장 대비 +8.77%p · 20일 평균 4.0배 · 외국인 5일 -3.2%",
-   "hl_id": "vs pasar +8.77%p · 4.0x rata 20 hari · asing 5 hari -3.2%",
-   "url": "",
-   "score": 53.7,
-   "s_news": 0,
-   "s_size": 36,
-   "s_surge": 100,
-   "s_move": 100,
-   "s_conc": 100,
-   "s_flow": 32,
-   "alpha": 8.77,
-   "vrank": null,
-   "flow": -3.24,
    "srcs": 0
   }
  ],
@@ -43146,6 +43177,6 @@
   ]
  },
  "stale": {
-  "announcements": "2026-09-17 08:35"
+  "announcements": "2026-09-17 08:40"
  }
 }
