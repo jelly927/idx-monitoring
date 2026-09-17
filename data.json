@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 21:05",
+ "updated": "2026-09-17 21:09",
  "delay_min": 15,
  "fx_basis": "12.86 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,380 · 20:45 Yahoo",
- "idr_per_krw": 12.8577,
+ "idr_per_krw": 12.858,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15469,10 +15469,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7617.33,
+   "px": 7613.92,
    "prev": 7553.33,
-   "pct": 0.85,
-   "asof": "21:00",
+   "pct": 0.8,
+   "asof": "21:05",
    "live": true,
    "spark": [
     7625.67,
@@ -15481,17 +15481,18 @@
     7625.79,
     7622.32,
     7623.32,
-    7617.33
+    7617.72,
+    7613.92
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26332.1,
+   "px": 26326.32,
    "prev": 25978.42,
-   "pct": 1.36,
-   "asof": "21:00",
+   "pct": 1.34,
+   "asof": "21:05",
    "live": true,
    "spark": [
     26321.01,
@@ -15500,17 +15501,18 @@
     26314.0,
     26327.18,
     26339.3,
-    26332.1
+    26344.05,
+    26326.32
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51658.27,
+   "px": 51637.19,
    "prev": 51477.73,
-   "pct": 0.35,
-   "asof": "21:00",
+   "pct": 0.31,
+   "asof": "21:05",
    "live": true,
    "spark": [
     51760.85,
@@ -15519,7 +15521,8 @@
     51752.27,
     51699.15,
     51705.15,
-    51658.27
+    51638.29,
+    51637.19
    ]
   },
   {
@@ -16858,9 +16861,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-17T21:04:28.965703+07:00",
+   "ts": "2026-09-17T21:07:28+07:00",
    "date": "2026-09-17",
-   "time": "21:04",
+   "time": "21:07",
    "src": "Jawa Pos",
    "t": "Atasi Darurat Sampah, Pemerintah Siapkan 24 Proyek PSEL di Indonesia",
    "tags": [],
@@ -16880,6 +16883,44 @@
    ]
   },
   {
+   "ts": "2026-09-17T21:05:38+07:00",
+   "date": "2026-09-17",
+   "time": "21:05",
+   "src": "BBC",
+   "t": "Interest rates held but Bank signals rise if energy prices stay high",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8a70/live/ce050920-b28f-11f1-8096-b33a1297275a.jpg",
+   "t_ko": "기준금리 동결했으나 에너지 가격 고공행진 시 인상 시사",
+   "t_id": "Suku Bunga Tetap, Bank Sentral Isyaratkan Kenaikan Jika Harga Energi Tinggi"
+  },
+  {
+   "ts": "2026-09-17T21:04:00+07:00",
+   "date": "2026-09-17",
+   "time": "21:04",
+   "src": "MarketWatch",
+   "t": "The smartest money moves to make now that interest rates are going up",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/the-smartest-money-moves-to-make-with-interest-rates-expected-to-go-higher-aefe375b?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-72886474",
+   "t_ko": "금리 인상기 대비 자산 관리 전략",
+   "t_id": "Langkah Keuangan Paling Cerdas Saat Suku Bunga Naik"
+  },
+  {
+   "ts": "2026-09-17T21:01:20+07:00",
+   "date": "2026-09-17",
+   "time": "21:01",
+   "src": "Bloomberg",
+   "t": "Lazard's Van Nostrand Says Markets Are Entering a Supply-Side Era",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-17/lazard-s-van-nostrand-markets-entering-supply-side-era-video",
+   "g": 1,
+   "t_ko": "Lazard의 Van Nostrand, 시장 공급자 중심 시대 진입 전망",
+   "t_id": "Van Nostrand dari Lazard Sebut Pasar Memasuki Era Sisi Penawaran"
+  },
+  {
    "ts": "2026-09-17T21:00:01+07:00",
    "date": "2026-09-17",
    "time": "21:00",
@@ -16888,8 +16929,8 @@
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/17/chevy-silverado-gmc-sierra-v-8-engines.html",
    "g": 1,
-   "t_ko": "GM, 전기차 부진 속 포드·램과의 트럭 경쟁에 신형 V8 엔진 내세워",
-   "t_id": "GM Pamer Mesin V-8 Baru di Tengah Lesunya Penjualan EV Lawan Ford dan Ram"
+   "t_ko": "GM, 전기차 부진 속 Ford·Ram과 트럭 경쟁 위해 신형 V8 엔진 공개",
+   "t_id": "GM Pamer Mesin V-8 Baru di 'Perang Truk' dengan Ford, Ram di Tengah Penjualan EV Lesu"
   },
   {
    "ts": "2026-09-17T21:00:00+07:00",
@@ -16908,12 +16949,24 @@
    "ts": "2026-09-17T21:00:00+07:00",
    "date": "2026-09-17",
    "time": "21:00",
+   "src": "Detik",
+   "t": "Prabowo Minta Bahlil Garap BBM Campur Etanol E50",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8667601/prabowo-minta-bahlil-garap-bbm-campur-etanol-e50",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/04/bahlil-lahadalia-1785840108228_169.jpeg?w=360&q=90",
+   "t_ko": "Prabowo, Bahlil에 E50 에탄올 혼합 연료 도입 지시",
+   "t_id": "Prabowo Minta Bahlil Garap BBM Campur Etanol E50"
+  },
+  {
+   "ts": "2026-09-17T21:00:00+07:00",
+   "date": "2026-09-17",
+   "time": "21:00",
    "src": "IDNFinancials",
    "t": "Prabowo urges harsher sanctions for forest fire perpetrators",
    "tags": [],
    "url": "https://www.idnfinancials.com/news/69003/prabowo-urges-harsher-sanctions-for-forest-fire-perpetrators",
    "img": "https://photo2.idnfinancials.com/fly/idn/Kebakaran-hutan.jpg",
-   "t_ko": "Prabowo, 산불 방화범에 강력한 처벌 촉구",
+   "t_ko": "Prabowo 대통령, 산불 방화범 처벌 강화 촉구",
    "t_id": "Prabowo Desak Sanksi Lebih Berat bagi Pelaku Kebakaran Hutan"
   },
   {
@@ -16926,7 +16979,19 @@
    "url": "https://mediaindonesia.com/ekonomi/934646/bahlil-pasokan-minyak-mentah-nasional-aman-termasuk-dari-rusia",
    "g": 1,
    "t_id": "Bahlil: Pasokan Minyak Mentah Nasional Aman, Termasuk dari Rusia",
-   "t_ko": "Bahlil, 러시아산 포함 국내 원유 공급 안정적"
+   "t_ko": "Bahlil 장관, 러시아산 포함 국내 원유 공급 안정적"
+  },
+  {
+   "ts": "2026-09-17T20:57:31+07:00",
+   "date": "2026-09-17",
+   "time": "20:57",
+   "src": "Bloomberg",
+   "t": "Inflation Pressures Remain in 'Cyclical Upswing,' Says Lakshman Achuthan",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-17/inflation-pressures-in-cyclical-upswing-says-achuthan-video",
+   "g": 1,
+   "t_ko": "Lakshman Achuthan, 인플레이션 압력 '경기 순환적 상승' 국면 유지",
+   "t_id": "Tekanan Inflasi Berada di 'Kenaikan Siklikal', Kata Lakshman Achuthan"
   },
   {
    "ts": "2026-09-17T20:47:31+07:00",
@@ -16938,8 +17003,8 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/lyft-downgraded-trip-com-upgraded-134731474.html",
    "g": 1,
    "img": "https://media.zenfs.com/en/the_fly_169/5039a5ccc6ec98e1b92bc672330bfcec.jpg",
-   "t_ko": "Lyft 하향 조정 및 Trip.com 상향 — 월가 주요 애널리스트 의견",
-   "t_id": "Lyft Diturunkan, Trip.com Naik: Rekomendasi Analis Papan Atas Wall Street"
+   "t_ko": "Wall Street 주요 애널리스트, Lyft 하향·Trip.com 상향 조정",
+   "t_id": "Lyft Diturunkan, Trip.com Ditingkatkan: Panggilan Analis Papan Atas Wall Street"
   },
   {
    "ts": "2026-09-17T20:46:14+07:00",
@@ -16987,8 +17052,8 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/arm-ceo-says-demand-off-134529258.html",
    "g": 1,
    "img": "https://media.zenfs.com/en/24_7_wall_st__718/50de5440af4c42acdf59891b973c7796.jpg",
-   "t_ko": "Arm CEO, '수요 폭발적이나 반도체 생산 속도가 한계'",
-   "t_id": "CEO Arm Sebut Permintaan Melejit, Tantangannya Produksi Chip Kurang Cepat"
+   "t_ko": "Arm CEO, '수요 폭발적이나 칩 생산 속도가 수요 못 미쳐'",
+   "t_id": "CEO Arm Sebut Permintaan 'Melejit'. Masalahnya Tak Ada yang Bisa Buat Cip Cukup Cepat"
   },
   {
    "ts": "2026-09-17T20:44:08+07:00",
@@ -17051,6 +17116,18 @@
    "t_id": "Wall Street Dibuka Menguat Seiring Meredanya Harga Minyak Redakan Kekhawatiran Suku Bunga The Fed"
   },
   {
+   "ts": "2026-09-17T20:37:22+07:00",
+   "date": "2026-09-17",
+   "time": "20:37",
+   "src": "Detik",
+   "t": "Dari Anyaman hingga Madu, UMKM Asal Aceh Ini Didorong Naik Kelas",
+   "tags": [],
+   "url": "https://finance.detik.com/solusiukm/d-8667657/dari-anyaman-hingga-madu-umkm-asal-aceh-ini-didorong-naik-kelas",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/17/umkm-1789653997171_169.jpeg?w=360&q=90",
+   "t_id": "Dari Anyaman hingga Madu, UMKM Asal Aceh Ini Didorong Naik Kelas",
+   "t_ko": "아체 중소기업, 전통 공예부터 꿀까지 고부가가치화 추진"
+  },
+  {
    "ts": "2026-09-17T20:34:46+07:00",
    "date": "2026-09-17",
    "time": "20:34",
@@ -17089,44 +17166,6 @@
    "t_id": "Generac Naik Berkat Perjanjian Amazon; Coreweave Mulai Penggalangan Dana"
   },
   {
-   "ts": "2026-09-17T20:31:12+07:00",
-   "date": "2026-09-17",
-   "time": "20:31",
-   "src": "Bloomberg",
-   "t": "BOE's Bailey Says Feed-Through of Energy Shock Has Been 'Subdued'",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-17/bailey-feed-through-of-energy-shock-has-been-subdued-video",
-   "g": 1,
-   "t_ko": "영란은행 Bailey 총재, 에너지 충격 파급 효과 제한적 평가",
-   "t_id": "Bailey BOE Sebut Penularan Guncangan Energi 'Peredamannya Rendah'"
-  },
-  {
-   "ts": "2026-09-17T20:29:49+07:00",
-   "date": "2026-09-17",
-   "time": "20:29",
-   "src": "CNA",
-   "t": "CoreWeave launches $3 billion convertible debt sale",
-   "tags": [],
-   "url": "https://www.channelnewsasia.com/business/coreweave-launches-3-billion-convertible-debt-sale-6392396",
-   "g": 1,
-   "img": "https://dam.mediacorp.sg/image/upload/s--8_GnHgAV--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-17T132949Z_1_LYNXMPEM8G1EU_RTROPTP_3_COREWEAVE-MEMORY.JPG?itok=IvIgdiIy",
-   "t_ko": "CoreWeave, 30억달러 규모 전환사채 발행 추진",
-   "t_id": "CoreWeave Rilis Penjualan Utang Konversi $3 Miliar"
-  },
-  {
-   "ts": "2026-09-17T20:28:20+07:00",
-   "date": "2026-09-17",
-   "time": "20:28",
-   "src": "Yahoo Finance",
-   "t": "Nebius Stock Jumps On Cloud Computing Price Hikes",
-   "tags": [],
-   "url": "https://www.investors.com/news/technology/nebius-stock-jumps-cloud-computing-price-hikes-nvidia-gpu/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/884fa17ab00027cf17e87090fd83c923.jpg",
-   "t_ko": "Nebius, 클라우드 컴퓨팅 가격 인상에 주가 급등",
-   "t_id": "Saham Nebius Melonjak Berkat Kenaikan Tarif Cloud Computing"
-  },
-  {
    "ts": "2026-09-17T20:28:00+07:00",
    "date": "2026-09-17",
    "time": "20:28",
@@ -17136,19 +17175,6 @@
    "url": "https://mediaindonesia.com/ekonomi/934630/wacana-pelebaran-defisit-anggaran-risiko-utang-dan-kualitas-belanja",
    "t_ko": "예산 적자 확대 구상 — 부채 리스크와 지출 품질 우려",
    "t_id": "Wacana Pelebaran Defisit Anggaran: Risiko Utang dan Kualitas Belanja"
-  },
-  {
-   "ts": "2026-09-17T20:27:00+07:00",
-   "date": "2026-09-17",
-   "time": "20:27",
-   "src": "Yahoo Finance",
-   "t": "Strategy’s Preferred Stock Nears Par Value After Buybacks",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/strategy-preferred-stock-nears-par-132700962.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/cryptoprowl_304/56640335cfd8d30a225fc4cac3ca651b.jpg",
-   "t_ko": "자사주 매입 힘입어 우선주 액면가에 근접",
-   "t_id": "Saham Preferen Strategy Dekati Nilai Par Usai Buyback"
   },
   {
    "ts": "2026-09-17T20:20:00+07:00",
@@ -17315,30 +17341,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/penandatanganan-perjanjian-jual-beli-piutang-asset-buy-antara-bank_260917192526-274.jpg",
    "t_ko": "bank bjb·MNC Finance, 자산 양수도로 사업 시너지 강화",
    "t_id": "bank bjb dan MNC Finance Perkuat Sinergi Bisnis melalui Kerja Sama Asset Buy"
-  },
-  {
-   "ts": "2026-09-17T19:22:00+07:00",
-   "date": "2026-09-17",
-   "time": "19:22",
-   "src": "Katadata",
-   "t": "DPR Ingin Ubah Batas Defisit APBN, Kemenkeu Pastikan Jaga di Bawah 3%",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/makro/6aabdb921f832/dpr-ingin-ubah-batas-defisit-apbn-kemenkeu-pastikan-jaga-di-bawah-3",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/05/25/Konferensi_Nasional_Pengembangan_Ekonomi_Daerah_Foto_KatadataFau-2026_05_25-12_03_18_1974c1245e66756179e589cb4d12d17d_620x413_thumb.jpg",
-   "t_ko": "DPR, APBN 적자 한도 변경 추진에 Kemenkeu는 3% 미만 유지 확약",
-   "t_id": "DPR Ingin Ubah Batas Defisit APBN, Kemenkeu Pastikan Jaga di Bawah 3%"
-  },
-  {
-   "ts": "2026-09-17T19:20:23+07:00",
-   "date": "2026-09-17",
-   "time": "19:20",
-   "src": "Republika",
-   "t": "Bansos Pakai Pemindaian Wajah, DPR: Tetap Sediakan Layanan Alternatif",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tlicxz416/bansos-pakai-pemindaian-wajah-dpr-tetap-sediakan-layanan-alternatif",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/049196700-1740478244-830-556.jpg",
-   "t_ko": "DPR, 안면 인식 복지 지원에 대체 서비스 제공 촉구",
-   "t_id": "Bansos Pakai Pemindaian Wajah, DPR: Tetap Sediakan Layanan Alternatif"
   }
  ],
  "kisi_news": [
@@ -17506,8 +17508,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.85",
-   "d": -0.74,
-   "ytd": 10.64,
+   "d": -0.71,
+   "ytd": 10.67,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17517,9 +17519,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.947%",
-   "d": -1.18,
-   "ytd": 18.83,
+   "v": "4.943%",
+   "d": -1.26,
+   "ytd": 18.74,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17552,9 +17554,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "100.40",
-   "d": -1.83,
-   "ytd": 74.85,
+   "v": "100.55",
+   "d": -1.68,
+   "ytd": 75.11,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17564,9 +17566,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,408.6",
-   "d": 1.69,
-   "ytd": 1.92,
+   "v": "4,408.1",
+   "d": 1.68,
+   "ytd": 1.91,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17588,9 +17590,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,346",
-   "d": 1.46,
-   "ytd": -2.02,
+   "v": "16,344",
+   "d": 1.45,
+   "ytd": -2.03,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -20620,20 +20622,6 @@
    "rk": 54
   },
   {
-   "ts": "2026-09-17T20:53:35+07:00",
-   "date": "2026-09-17",
-   "time": "20:53",
-   "t": "YELO",
-   "type": "STOCK",
-   "title": "Pemberitahuan Rencana Rapat Umum Pemegang Saham Luar Biasa",
-   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/d532314bfb_8323bd2b8a.pdf",
-   "title_ko": "임시주주총회 개최 계획 통지",
-   "title_id": "Pemberitahuan Rencana Rapat Umum Pemegang Saham Luar Biasa",
-   "kind_ko": "주총계획",
-   "kind_id": "Rencana RUPS",
-   "rk": 52
-  },
-  {
    "ts": "2026-09-17T19:03:16+07:00",
    "date": "2026-09-17",
    "time": "19:03",
@@ -21591,6 +21579,20 @@
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/de35d5b9fe_6f062b9d75.pdf",
    "title_ko": "Maskapai Reasuransi Indonesia(MREI), 2026 회계연도 재무제표 회계감사 위한 공인회계사 및 법인 선임 보고서",
    "title_id": "Laporan Penunjukan Akuntan Publik dan/atau Kantor Akuntan Publik dalam Rangka Audit atas Informasi Keuangan Historis Tahunan pada PT Maskapai Reasuransi Indonesia Tbk. untuk Tahun Buku 2026",
+   "rk": 32
+  },
+  {
+   "ts": "2026-09-14T21:00:51+07:00",
+   "date": "2026-09-14",
+   "time": "21:00",
+   "t": "BJBR",
+   "type": "STOCK",
+   "title": "Penyampaian Hasil Pemeringkatan PT Pemeringkat Efek Indonesia (PEFINDO)",
+   "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/ffecd2006a_24f49478e4.pdf",
+   "title_ko": "PEFINDO 신용등급 평가 결과 제출",
+   "title_id": "Hasil Pemeringkatan PEFINDO",
+   "kind_ko": "신용등급",
+   "kind_id": "Pemeringkatan",
    "rk": 32
   },
   {
@@ -25282,10 +25284,10 @@
    "tags": [],
    "url": "https://katadata.co.id/finansial/makro/6aabdb921f832/dpr-ingin-ubah-batas-defisit-apbn-kemenkeu-pastikan-jaga-di-bawah-3",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/05/25/Konferensi_Nasional_Pengembangan_Ekonomi_Daerah_Foto_KatadataFau-2026_05_25-12_03_18_1974c1245e66756179e589cb4d12d17d_620x413_thumb.jpg",
+   "score": 411.25,
+   "srcs": 2,
    "t_ko": "DPR, APBN 적자 한도 변경 추진에 Kemenkeu는 3% 미만 유지 확약",
-   "t_id": "DPR Ingin Ubah Batas Defisit APBN, Kemenkeu Pastikan Jaga di Bawah 3%",
-   "score": 413.25,
-   "srcs": 2
+   "t_id": "DPR Ingin Ubah Batas Defisit APBN, Kemenkeu Pastikan Jaga di Bawah 3%"
   },
   {
    "ts": "2026-09-17T12:01:00+07:00",
@@ -25807,40 +25809,6 @@
      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/2b17cf85a3_5b3c0582e4.pdf",
      "time": "15:51",
      "q": 96
-    }
-   ]
-  },
-  "2026-09-10": {
-   "ann": [
-    {
-     "t": "BUMI",
-     "ko": "거래소 조회공시 요구에 대한 답변",
-     "id": "Penjelasan atas Permintaan Penjelasan Bursa",
-     "kind_ko": "조회공시",
-     "kind_id": "Penjelasan Bursa",
-     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/5d22e77149_12e6084dc3.pdf",
-     "time": "19:12",
-     "q": 85
-    },
-    {
-     "t": "MGLV",
-     "ko": "유상증자(HMETD) 추진 기업정보 공시 — 9월10일",
-     "id": "Keterbukaan Informasi Aksi Korporasi - Rencana Penambahan Modal dengan HMETD - 10 Sep 2026",
-     "kind_ko": "유상증자",
-     "kind_id": "Rights Issue",
-     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/881c3a5b7b_ce2450a4f0.pdf",
-     "time": "19:13",
-     "q": 90
-    },
-    {
-     "t": "ELSA",
-     "ko": "Elnusa, 임시주총서 임원 변경 결정 — 지배구조·사업 지속성 강화",
-     "id": "RUPSLB Elnusa Tetapkan Perubahan Pengurus, Tegaskan Komitmen pada Tata Kelola dan  Kesinambungan Bisnis",
-     "kind_ko": "경영권",
-     "kind_id": "Direksi",
-     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/2f95f51f0d_ceac20ede8.pdf",
-     "time": "05:34",
-     "q": 88
     }
    ]
   }
