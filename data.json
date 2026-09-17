@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 00:57",
+ "updated": "2026-09-18 01:05",
  "delay_min": 15,
  "fx_basis": "12.85 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 00:45 Yahoo",
- "idr_per_krw": 12.8495,
+ "idr_per_krw": 12.8509,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15315,10 +15315,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7635.85,
+   "px": 7638.45,
    "prev": 7553.33,
-   "pct": 1.09,
-   "asof": "00:55",
+   "pct": 1.13,
+   "asof": "01:00",
    "live": true,
    "spark": [
     7625.67,
@@ -15374,17 +15374,18 @@
     7635.89,
     7636.33,
     7635.32,
-    7635.85
+    7637.99,
+    7638.45
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26396.78,
+   "px": 26402.59,
    "prev": 25978.42,
-   "pct": 1.61,
-   "asof": "00:55",
+   "pct": 1.63,
+   "asof": "01:00",
    "live": true,
    "spark": [
     26321.01,
@@ -15440,17 +15441,18 @@
     26399.35,
     26400.32,
     26394.63,
-    26396.78
+    26403.72,
+    26402.59
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51810.59,
+   "px": 51833.3,
    "prev": 51477.73,
-   "pct": 0.65,
-   "asof": "00:55",
+   "pct": 0.69,
+   "asof": "01:00",
    "live": true,
    "spark": [
     51760.85,
@@ -15506,7 +15508,8 @@
     51802.99,
     51796.86,
     51804.01,
-    51810.59
+    51829.74,
+    51833.3
    ]
   },
   {
@@ -16777,6 +16780,30 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T00:56:57+07:00",
+   "date": "2026-09-18",
+   "time": "00:56",
+   "src": "CNBC",
+   "t": "Trump photo seems to reference Kennedy Center demolition, judge denies emergency hearing bid",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/17/trump-kennedy-center-demolish-beatty.html",
+   "g": 1,
+   "t_ko": "Trump 사진, Kennedy Center 철거 연상 — 판사, 긴급 심문 기각",
+   "t_id": "Foto Trump Seolah Sindir Penghancuran Kennedy Center, Hakim Tolak Permohonan Sidang Darurat"
+  },
+  {
+   "ts": "2026-09-18T00:52:29+07:00",
+   "date": "2026-09-18",
+   "time": "00:52",
+   "src": "CNBC",
+   "t": "Jensen Huang says Nvidia will sell twice as many chips next year",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html",
+   "g": 1,
+   "t_ko": "Jensen Huang, 내년 엔비디아 칩 판매량 두 배 확대 전망",
+   "t_id": "Jensen Huang Sebut Nvidia Bakal Jual Cip Dua Kali Lipat Tahun Depan"
+  },
+  {
    "ts": "2026-09-18T00:40:33+07:00",
    "date": "2026-09-18",
    "time": "00:40",
@@ -16801,19 +16828,6 @@
    "t_id": "Temukan 'Nama Ajaib' Tanpa Asesmen dalam Rotasi Pejabat Kemenkeu, Dirjen Pajak Buka Suara"
   },
   {
-   "ts": "2026-09-18T00:37:07+07:00",
-   "date": "2026-09-18",
-   "time": "00:37",
-   "src": "Yahoo Finance",
-   "t": "AMD Jumps 7% as Semiconductor Rebound Reaches a Third Session; Broadcom Rises 3%, NVIDIA Edges Higher",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/amd-jumps-7-semiconductor-rebound-173707172.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/8b16e79cf4e05275a3c2fa92d3611298.png",
-   "t_ko": "반도체 반등 3거래일째 이어지며 AMD 7% 급등 — Broadcom 3%·NVIDIA 강세",
-   "t_id": "AMD Lonjak 7% Saat Pemulihan Semikonduktor Masuki Sesi Ketiga; Broadcom Naik 3%, NVIDIA Menguat Tipis"
-  },
-  {
    "ts": "2026-09-18T00:36:55+07:00",
    "date": "2026-09-18",
    "time": "00:36",
@@ -16824,45 +16838,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/16/menteri-keuangan-suahasil-nazara-berjabat-tangan-dengan-pejabat-lama-purbaya-yudhi-sadewa-usai-serah-terima-jabatan-menteri-keuangan-di-kemenkeu-jakarta-selasa-1592026-y8QXw.webp",
    "t_ko": "인도네시아 2년간 장관 3명 교체에 CORE, 시장 우려 및 국가예산 영향 지적",
    "t_id": "3 Menkeu dalam 2 Tahun, CORE Indonesia Ungkap Kekhawatiran Pasar dan Nasib APBN"
-  },
-  {
-   "ts": "2026-09-18T00:31:00+07:00",
-   "date": "2026-09-18",
-   "time": "00:31",
-   "src": "Yahoo Finance",
-   "t": "2 Cybersecurity Stocks That Will Rule 2027",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/2-cybersecurity-stocks-rule-2027-173100563.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/d1c7a1a569e7c2d1c72823fefd867151.png",
-   "t_ko": "2027년 시장 주도할 사이버보안 관련주 2선",
-   "t_id": "2 Saham Keamanan Siber yang Akan Menguasai 2027"
-  },
-  {
-   "ts": "2026-09-18T00:20:50+07:00",
-   "date": "2026-09-18",
-   "time": "00:20",
-   "src": "Yahoo Finance",
-   "t": "How does the Fed interest rate affect car loans?",
-   "tags": [],
-   "url": "https://finance.yahoo.com/news/fed-affects-auto-loan-rates-190622401.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/bankrate_626/05d3cf15da091dc9f61780f21c8b57f8.jpg",
-   "t_ko": "연준 금리 인하가 자동차 대출에 미치는 영향",
-   "t_id": "Bagaimana Suku Bunga The Fed Pengaruhi Kredit Mobil?"
-  },
-  {
-   "ts": "2026-09-18T00:17:07+07:00",
-   "date": "2026-09-18",
-   "time": "00:17",
-   "src": "Yahoo Finance",
-   "t": "Stock Market Today: Nasdaq Dwarfs Dow's Gain; This AI Chip Leader Breaks Out To All-Time High (Live Coverage)",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-fed-reaction-generac-nebius-bloom-energy-spacex/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/8f300b5c66b9faffcbd41c3f0b0dedd8.jpg",
-   "t_ko": "증시 — Nasdaq 상승폭 Dow 압도, AI 반도체 대장주 사상 최고가 경신",
-   "t_id": "Bursa Saham Hari Ini: Nasdaq Kalahkan Kenaikan Dow; Pemimpin Cip AI Ini Tembus Rekor Tertinggi"
   },
   {
    "ts": "2026-09-18T00:16:00+07:00",
@@ -16876,18 +16851,6 @@
    "img": "https://images.mktw.net/im-98901631",
    "t_ko": "성장주의 뜻밖의 강세가 시사하는 시장 버블 경고등",
    "t_id": "Alasan Kekuatan Saham Growth Bisa Jadi Sinyal Bubble Pasar"
-  },
-  {
-   "ts": "2026-09-18T00:14:39+07:00",
-   "date": "2026-09-18",
-   "time": "00:14",
-   "src": "CNBC",
-   "t": "Trump photo seems to reference Kennedy Center demolition amid legal battle over closure",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/17/trump-kennedy-center-demolish-beatty.html",
-   "g": 1,
-   "t_ko": "트럼프 사진, 폐쇄 법적 공방 속 케네디 센터 철거 연상시켜",
-   "t_id": "Foto Trump Diduga Sindir Pembongkaran Kennedy Center di Tengah Sengketa Hukum Penutupan"
   },
   {
    "ts": "2026-09-18T00:10:02+07:00",
@@ -16975,19 +16938,6 @@
    "t_id": "Minyak, Suku Bunga, dan Imbal Hasil Naik Racik Koktail Stagflasi Pasar"
   },
   {
-   "ts": "2026-09-17T23:58:11+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Yahoo Finance",
-   "t": "Aon’s $17 Billion USI Deal: What Hedge Fund Sentiment Says About AON and KKR",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/aon-17-billion-usi-deal-165811093.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/48687becb22102c151b18b57fabd44ea.jpg",
-   "t_ko": "Aon의 170억 달러 USI 인수 — AON·KKR에 대한 헤지펀드 심리 분석",
-   "t_id": "Aksi USD 17 Miliar Aon: Sentimen Hedge Fund pada AON dan KKR"
-  },
-  {
    "ts": "2026-09-17T23:55:06+07:00",
    "date": "2026-09-17",
    "time": "09/17",
@@ -17046,19 +16996,6 @@
    "t_id": "Gempa Magnitudo 6,5 Guncang Alaska"
   },
   {
-   "ts": "2026-09-17T23:47:33+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Yahoo Finance",
-   "t": "Jim Cramer on Tesla (TSLA): “My Only Solution to It Is That SpaceX Has to Buy It”",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-tesla-tsla-only-164733818.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/insidermonkey.com/3fe61364b95991c98978f250ba7bea2c.png",
-   "t_ko": "Jim Cramer, Tesla(TSLA)에 대해 “유일한 해법은 SpaceX의 인수뿐”",
-   "t_id": "Jim Cramer Soal Tesla (TSLA): Solusi Satu-Satunya Adalah Dibeli SpaceX"
-  },
-  {
    "ts": "2026-09-17T23:35:59+07:00",
    "date": "2026-09-17",
    "time": "09/17",
@@ -17083,6 +17020,30 @@
    ]
   },
   {
+   "ts": "2026-09-17T23:30:59+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "Bloomberg",
+   "t": "Stocks Gain in Wake of Fed",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-17/open-interest-9-17-2026-video",
+   "g": 1,
+   "t_ko": "연준 금리 결정 여파로 증시 상승세",
+   "t_id": "Saham Menguat Pasca-Keputusan Fed"
+  },
+  {
+   "ts": "2026-09-17T23:30:32+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "Bloomberg",
+   "t": "Poland Warns That Russia Plans to Strike Ukraine’s NATO Allies",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-17/poland-warns-that-russia-plans-to-strike-ukraine-s-nato-allies",
+   "g": 1,
+   "t_ko": "폴란드, 러시아의 우크라이나 나토 동맹국 타격 계획 경고",
+   "t_id": "Polandia Peringatkan Rencana Rusia Serang Sekutu NATO Ukraina"
+  },
+  {
    "ts": "2026-09-17T23:30:27+07:00",
    "date": "2026-09-17",
    "time": "09/17",
@@ -17104,6 +17065,45 @@
    "url": "https://mediaindonesia.com/ekonomi/934703/bahlil-pastikan-stok-bbm-subsidi-aman-dan-dorong-penyaluran-tepat-sasaran",
    "t_ko": "Bahlil 장관, 보조금 유류 재고 안정 및 적시 공급 강조",
    "t_id": "Bahlil Pastikan Stok BBM Subsidi Aman dan Dorong Penyaluran Tepat Sasaran"
+  },
+  {
+   "ts": "2026-09-17T23:28:00+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "WSJ",
+   "t": "Tech, Media & Telecom Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-8dfe699f?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-92361535",
+   "t_ko": "테크·미디어·텔레콤 부문 동향",
+   "t_id": "Teknologi, Media & Telekomunikasi: Market Talk"
+  },
+  {
+   "ts": "2026-09-17T23:27:00+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "WSJ",
+   "t": "Basic Materials Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/basic-materials-roundup-market-talk-234fc45c?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-41645439",
+   "t_ko": "소재 섹터 동향 — 시장 전망",
+   "t_id": "Rangkuman Sektor Material Dasar: Pasar Membahas"
+  },
+  {
+   "ts": "2026-09-17T23:24:00+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "WSJ",
+   "t": "Auto & Transport Roundup: Market Talk",
+   "tags": [],
+   "url": "https://www.wsj.com/business/auto-transport-roundup-market-talk-4e72f55e?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-96905171",
+   "t_ko": "자동차·운송 섹터 동향 정리",
+   "t_id": "Rangkuman Auto & Transport: Ulasan Pasar"
   },
   {
    "ts": "2026-09-17T23:22:46+07:00",
@@ -17400,8 +17400,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.84",
-   "d": -0.79,
-   "ytd": 10.58,
+   "d": -0.78,
+   "ytd": 10.59,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17435,8 +17435,8 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "100.24",
-   "d": -0.08,
-   "ytd": 1.99,
+   "d": -0.07,
+   "ytd": 2.0,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17446,9 +17446,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.87",
-   "d": -0.39,
-   "ytd": 77.41,
+   "v": "101.97",
+   "d": -0.29,
+   "ytd": 77.59,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17458,9 +17458,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,399.3",
-   "d": 1.47,
-   "ytd": 1.7,
+   "v": "4,400.3",
+   "d": 1.5,
+   "ytd": 1.73,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
