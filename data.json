@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 00:04",
+ "updated": "2026-09-18 00:08",
  "delay_min": 15,
  "fx_basis": "12.85 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 23:45 Yahoo",
- "idr_per_krw": 12.8479,
+ "idr_per_krw": 12.8536,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15315,10 +15315,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7636.66,
+   "px": 7637.57,
    "prev": 7553.33,
-   "pct": 1.1,
-   "asof": "00:00",
+   "pct": 1.12,
+   "asof": "00:05",
    "live": true,
    "spark": [
     7625.67,
@@ -15363,17 +15363,18 @@
     7636.39,
     7635.71,
     7635.6,
-    7636.66
+    7637.76,
+    7637.57
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26405.93,
+   "px": 26411.2,
    "prev": 25978.42,
-   "pct": 1.65,
-   "asof": "00:00",
+   "pct": 1.67,
+   "asof": "00:05",
    "live": true,
    "spark": [
     26321.01,
@@ -15418,17 +15419,18 @@
     26402.04,
     26402.06,
     26397.9,
-    26405.93
+    26410.72,
+    26411.2
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51812.83,
+   "px": 51819.12,
    "prev": 51477.73,
-   "pct": 0.65,
-   "asof": "00:00",
+   "pct": 0.66,
+   "asof": "00:05",
    "live": true,
    "spark": [
     51760.85,
@@ -15473,7 +15475,8 @@
     51829.9,
     51813.89,
     51811.25,
-    51812.83
+    51827.27,
+    51819.12
    ]
   },
   {
@@ -16744,9 +16747,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-18T00:03:29.223429+07:00",
+   "ts": "2026-09-18T00:06:15.235501+07:00",
    "date": "2026-09-18",
-   "time": "00:03",
+   "time": "00:06",
    "src": "Jawa Pos",
    "t": "Pembangunan Infrastruktur Papua Dimatangkan AHY, Konektivitas Jadi Prioritas Utama",
    "tags": [],
@@ -16754,6 +16757,18 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/menteri-koordinator-bidang-infrastruktur-dan-pembangunan-kewilayahan-agus-harimurti-yudhoyono-ahyhumas-kemenko-infrastruktur-GRHqF.webp",
    "t_ko": "AHY, 파푸아 인프라 개발 구체화 — 연결성 최우선",
    "t_id": "Pembangunan Infrastruktur Papua Dimatangkan AHY, Konektivitas Jadi Prioritas Utama"
+  },
+  {
+   "ts": "2026-09-18T00:03:50+07:00",
+   "date": "2026-09-18",
+   "time": "00:03",
+   "src": "CNBC",
+   "t": "Trump photo seems to reference Kennedy Center demolition amid legal battle over closure",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/17/trump-kennedy-center-demolish-beatty.html",
+   "g": 1,
+   "t_ko": "트럼프 사진, 폐쇄 법적 공방 속 케네디 센터 철거 연상시켜",
+   "t_id": "Foto Trump Diduga Sindir Pembongkaran Kennedy Center di Tengah Sengketa Hukum Penutupan"
   },
   {
    "ts": "2026-09-18T00:02:07+07:00",
@@ -16764,8 +16779,32 @@
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/17/diesel-gas-prices-oil-us-economy.html",
    "g": 1,
-   "t_ko": "디젤 가격 사상 최고치 경신에 미국 경제 타격",
-   "t_id": "Rekor Harga Diesel Hantam Ekonomi AS, Truk dan Kereta Baru Awal Mula"
+   "t_ko": "기록적 디젤 가격이 미국 경제에 미치는 영향 — 트럭·철도 시작 불과",
+   "t_id": "Lonjakan Rekor Harga Solar Hantam Ekonomi AS, Truk dan Kereta Jadi Awal Mula"
+  },
+  {
+   "ts": "2026-09-17T23:59:07+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "Reuters",
+   "t": "Rising oil, rates and yields brew up stagflation cocktail for markets",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWmhlTzlKbEFSMGdBRGhpNGxzWDVGZzFsWHR5cXZXLVZwTjRZX0xtVjN4UW1LU3BVNW4wSGlod0VLSEhBbWRJNS0za2NIWWkxVlJqSzBsVU1rWHlIcXNUVmRDemNnbFBrV2J3eEhRSjM4NG9xaHl2ZXR0ZzAySFpOT0tFeWxnZw?oc=5",
+   "g": 1,
+   "t_ko": "유가·금리·국채금리 상승으로 증시 스태그플레이션 우려 고조",
+   "t_id": "Minyak, Suku Bunga, dan Imbal Hasil Naik Racik Koktail Stagflasi Pasar"
+  },
+  {
+   "ts": "2026-09-17T23:55:06+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "Bloomberg",
+   "t": "Former Trafigura CEO Contender Hallouche Starts New Energy Firm",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-17/former-trafigura-ceo-contender-hallouche-starts-new-energy-firm",
+   "g": 1,
+   "t_ko": "Trafigura 전 CEO 후보 Hallouche, 신생 에너지사 설립",
+   "t_id": "Mantan Kandidat CEO Trafigura Hallouche Dirikan Perusahaan Energi Baru"
   },
   {
    "ts": "2026-09-17T23:53:14+07:00",
@@ -16800,7 +16839,7 @@
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/934724/reshuffle-kabinet-hanya-3-menteri-yang-dipertahankan",
    "t_id": "Reshuffle Kabinet, Hanya 3 Menteri yang Dipertahankan",
-   "t_ko": "내각 개편 단행, 장관 3명만 유임"
+   "t_ko": "개각 단행, 장관 3명만 유임"
   },
   {
    "ts": "2026-09-17T23:49:00+07:00",
@@ -16810,7 +16849,7 @@
    "t": "Gempa Magnitudo 6,5 Guncang Alaska",
    "tags": [],
    "url": "https://mediaindonesia.com/internasional/934722/gempa-magnitudo-65-guncang-alaska",
-   "t_ko": "알래스카서 규모 6.5 지진 발생",
+   "t_ko": "알래스카에 규모 6.5 지진 발생",
    "t_id": "Gempa Magnitudo 6,5 Guncang Alaska"
   },
   {
@@ -16835,8 +16874,8 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-look-priced-perfection-3-164844800.html",
    "g": 1,
    "img": "https://media.zenfs.com/en/24_7_wall_st__718/aa3dbe2c1dd6f3f75e654ecc2d762b9c.jpg",
-   "t_ko": "증시 과열 국면, 조정기 대비 배당 ETF 3선",
-   "t_id": "Valuasi Saham Dinilai Sempurna, 3 ETF Dividen Ini Tahan Koreksi"
+   "t_ko": "완벽히 가격 반영된 증시 — 조정 대비형 배당 ETF 3선",
+   "t_id": "Saham Dinilai Terlalu Sempurna, 3 ETF Dividen Ini Dirancang Hadapi Koreksi"
   },
   {
    "ts": "2026-09-17T23:47:33+07:00",
@@ -16848,8 +16887,8 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-tesla-tsla-only-164733818.html",
    "g": 1,
    "img": "https://media.zenfs.com/en/insidermonkey.com/3fe61364b95991c98978f250ba7bea2c.png",
-   "t_ko": "Jim Cramer, Tesla(TSLA) 인수를 위해 SpaceX 합병 제안",
-   "t_id": "Jim Cramer Soal Tesla (TSLA): Satu-satunya Solusi Adalah Dibeli SpaceX"
+   "t_ko": "Jim Cramer, Tesla(TSLA)에 대해 “유일한 해법은 SpaceX의 인수뿐”",
+   "t_id": "Jim Cramer Soal Tesla (TSLA): Solusi Satu-Satunya Adalah Dibeli SpaceX"
   },
   {
    "ts": "2026-09-17T23:44:12+07:00",
@@ -16861,8 +16900,8 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-faces-2-7-164412973.html",
    "g": 1,
    "img": "https://media.zenfs.com/en/insidermonkey.com/bd47dc2e86b4a3086f845d200d9daf1f.jpg",
-   "t_ko": "Apple(AAPL), 앱 추적 규칙 관련 27억 달러 규모 영국 소송 직면",
-   "t_id": "Apple (AAPL) Hadapi Gugatan UK Senilai US$2,7 Miliar Terkait Aturan Pelacakan Aplikasi"
+   "t_ko": "Apple(AAPL), 앱 추적 규칙 관련 영국에서 27억 달러 소송 직면",
+   "t_id": "Apple (AAPL) Hadapi Gugatan 2,7 Miliar Poundsterling di Inggris Terkait Aturan Pelacakan Aplikasi"
   },
   {
    "ts": "2026-09-17T23:41:57+07:00",
@@ -16887,8 +16926,8 @@
    "url": "https://www.investors.com/news/technology/amd-stock-leads-chip-stocks-sox-index-higher-amid-sector-rebound/?src=A00220&yptr=yahoo",
    "g": 1,
    "img": "https://media.zenfs.com/en/ibd.com/274ae6a029b0f4de8e5d42a5484880e9.jpg",
-   "t_ko": "반도체 섹터 반등 속 AMD 상승세 주도",
-   "t_id": "AMD Pimpin Kenaikan Saham Chip di Tengah Pemulihan Sektor"
+   "t_ko": "AMD, 섹터 반등 속 반도체주 상승 주도",
+   "t_id": "AMD Pimpin Kenaikan Saham Chip di Tengah Rebound Sektor"
   },
   {
    "ts": "2026-09-17T23:39:53+07:00",
@@ -16900,8 +16939,8 @@
    "url": "https://www.ft.com/content/0480bd32-41e7-465d-b828-156edae94ecb?syn-25a6b1a6=1",
    "g": 1,
    "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F118f821f-f9e6-4390-a1f1-8436c22b794e.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "금리 상승에 투자은행 수익 모델 타격",
-   "t_id": "Kenaikan Suku Bunga Kacaukan Proyeksi Bankir Investasi"
+   "t_ko": "금리 상승이 투자은행의 재무 모델에 미치는 타격",
+   "t_id": "Suku Bunga Naik Ganggu Proyeksi Bankir Investasi"
   },
   {
    "ts": "2026-09-17T23:38:51+07:00",
@@ -17000,45 +17039,6 @@
    "img": "https://media.zenfs.com/en/pitchbook_790/33eed11b981748320abf466da8d24a27.jpg",
    "t_ko": "Assemblin Caverion, 유럽 하이일드 채권 시장서 15억 유로 플로팅 노트 발행",
    "t_id": "Assemblin Caverion Terbitkan Surat Utang Mengambang €1,5 Miliar di Tengah Ramainya Pasar High Yield Eropa"
-  },
-  {
-   "ts": "2026-09-17T23:27:00+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "WSJ",
-   "t": "Basic Materials Roundup: Market Talk",
-   "tags": [],
-   "url": "https://www.wsj.com/business/basic-materials-roundup-market-talk-234fc45c?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-41645439",
-   "t_ko": "소재 섹터 동향 — 시장 전망",
-   "t_id": "Rangkuman Sektor Material Dasar: Pasar Membahas"
-  },
-  {
-   "ts": "2026-09-17T23:24:00+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "WSJ",
-   "t": "Auto & Transport Roundup: Market Talk",
-   "tags": [],
-   "url": "https://www.wsj.com/business/auto-transport-roundup-market-talk-4e72f55e?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-96905171",
-   "t_ko": "자동차·운송 섹터 동향 정리",
-   "t_id": "Rangkuman Auto & Transport: Ulasan Pasar"
-  },
-  {
-   "ts": "2026-09-17T23:24:00+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "WSJ",
-   "t": "Energy & Utilities Roundup: Market Talk",
-   "tags": [],
-   "url": "https://www.wsj.com/business/energy-utilities-roundup-market-talk-7634530f?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-16844321",
-   "t_ko": "에너지·유틸리티 섹터 마켓 토크",
-   "t_id": "Rangkuman Energi & Utilitas: Pembicaraan Pasar"
   },
   {
    "ts": "2026-09-17T23:22:46+07:00",
@@ -17382,9 +17382,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.947%",
-   "d": -1.18,
-   "ytd": 18.83,
+   "v": "4.949%",
+   "d": -1.14,
+   "ytd": 18.88,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17405,9 +17405,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.24",
-   "d": -0.08,
-   "ytd": 1.99,
+   "v": "100.25",
+   "d": -0.07,
+   "ytd": 2.0,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17417,9 +17417,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.04",
-   "d": -0.22,
-   "ytd": 77.71,
+   "v": "101.98",
+   "d": -0.28,
+   "ytd": 77.6,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17429,9 +17429,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,397.5",
-   "d": 1.43,
-   "ytd": 1.66,
+   "v": "4,398.9",
+   "d": 1.46,
+   "ytd": 1.69,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17453,15 +17453,15 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,110",
-   "d": 1.34,
-   "ytd": -3.43,
+   "v": "16,262",
+   "d": 0.94,
+   "ytd": -2.52,
    "inv": false,
-   "note": "investing.com · 09/17 마지막 값 · 연초 16,682",
+   "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
    "k_id": "Nikel LME (US$/t)",
-   "note_ko": "investing.com · 09/17 마지막 값 · 연초 16,682",
-   "note_id": "investing.com · 09/17 nilai terakhir · Awal tahun 16,682"
+   "note_ko": "investing.com · 연초 16,682",
+   "note_id": "investing.com · Awal tahun 16,682"
   },
   {
    "k": "CPO (MYR/t)",
@@ -24830,8 +24830,8 @@
    "news": [
     {
      "t": "How record diesel prices will rip through the U.S. economy. Trucks, rails are only the start",
-     "ko": "디젤 가격 사상 최고치 경신에 미국 경제 타격",
-     "id": "Rekor Harga Diesel Hantam Ekonomi AS, Truk dan Kereta Baru Awal Mula",
+     "ko": "기록적 디젤 가격이 미국 경제에 미치는 영향 — 트럭·철도 시작 불과",
+     "id": "Lonjakan Rekor Harga Solar Hantam Ekonomi AS, Truk dan Kereta Jadi Awal Mula",
      "ai_ko": "",
      "ai_id": "",
      "src": "CNBC",
@@ -24841,6 +24841,40 @@
      "sc": 109.0,
      "slot": "global",
      "q": 11
+    }
+   ]
+  },
+  "2026-09-10": {
+   "ann": [
+    {
+     "t": "BUMI",
+     "ko": "거래소 조회공시 요구에 대한 답변",
+     "id": "Penjelasan atas Permintaan Penjelasan Bursa",
+     "kind_ko": "조회공시",
+     "kind_id": "Penjelasan Bursa",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/5d22e77149_12e6084dc3.pdf",
+     "time": "19:12",
+     "q": 85
+    },
+    {
+     "t": "MGLV",
+     "ko": "유상증자(HMETD) 추진 기업정보 공시 — 9월10일",
+     "id": "Keterbukaan Informasi Aksi Korporasi - Rencana Penambahan Modal dengan HMETD - 10 Sep 2026",
+     "kind_ko": "유상증자",
+     "kind_id": "Rights Issue",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/881c3a5b7b_ce2450a4f0.pdf",
+     "time": "19:13",
+     "q": 90
+    },
+    {
+     "t": "ELSA",
+     "ko": "Elnusa, 임시주총서 임원 변경 결정 — 지배구조·사업 지속성 강화",
+     "id": "RUPSLB Elnusa Tetapkan Perubahan Pengurus, Tegaskan Komitmen pada Tata Kelola dan  Kesinambungan Bisnis",
+     "kind_ko": "경영권",
+     "kind_id": "Direksi",
+     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/2f95f51f0d_ceac20ede8.pdf",
+     "time": "05:34",
+     "q": 88
     }
    ]
   }
