@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 00:14",
+ "updated": "2026-09-18 00:29",
  "delay_min": 15,
  "fx_basis": "12.85 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 23:45 Yahoo",
- "idr_per_krw": 12.8477,
+ "idr_per_krw": 12.8529,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15315,10 +15315,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7634.6,
+   "px": 7631.66,
    "prev": 7553.33,
-   "pct": 1.08,
-   "asof": "00:10",
+   "pct": 1.04,
+   "asof": "00:25",
    "live": true,
    "spark": [
     7625.67,
@@ -15365,17 +15365,20 @@
     7635.6,
     7637.76,
     7635.71,
-    7634.6
+    7634.1,
+    7633.39,
+    7630.57,
+    7631.66
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26399.08,
+   "px": 26386.63,
    "prev": 25978.42,
-   "pct": 1.62,
-   "asof": "00:10",
+   "pct": 1.57,
+   "asof": "00:25",
    "live": true,
    "spark": [
     26321.01,
@@ -15422,17 +15425,20 @@
     26397.9,
     26410.72,
     26405.11,
-    26399.08
+    26394.32,
+    26393.17,
+    26381.82,
+    26386.63
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51806.93,
+   "px": 51782.53,
    "prev": 51477.73,
-   "pct": 0.64,
-   "asof": "00:10",
+   "pct": 0.59,
+   "asof": "00:25",
    "live": true,
    "spark": [
     51760.85,
@@ -15479,7 +15485,10 @@
     51811.25,
     51827.27,
     51809.06,
-    51806.93
+    51809.21,
+    51790.4,
+    51777.71,
+    51782.53
    ]
   },
   {
@@ -16750,9 +16759,46 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-18T00:13:08+07:00",
+   "ts": "2026-09-18T00:28:50.760547+07:00",
    "date": "2026-09-18",
-   "time": "00:13",
+   "time": "00:28",
+   "src": "Jawa Pos",
+   "t": "3 Menkeu dalam 2 Tahun, CORE Indonesia Ungkap Kekhawatiran Pasar dan Nasib APBN",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609170322/3-menkeu-dalam-2-tahun-core-indonesia-ungkap-kekhawatiran-pasar-dan-nasib-apbn",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/16/menteri-keuangan-suahasil-nazara-berjabat-tangan-dengan-pejabat-lama-purbaya-yudhi-sadewa-usai-serah-terima-jabatan-menteri-keuangan-di-kemenkeu-jakarta-selasa-1592026-y8QXw.webp",
+   "t_ko": "인도네시아 2년간 장관 3명 교체에 CORE, 시장 우려 및 국가예산 영향 지적",
+   "t_id": "3 Menkeu dalam 2 Tahun, CORE Indonesia Ungkap Kekhawatiran Pasar dan Nasib APBN"
+  },
+  {
+   "ts": "2026-09-18T00:28:50.756819+07:00",
+   "date": "2026-09-18",
+   "time": "00:28",
+   "src": "Jawa Pos",
+   "t": "Temukan 'Nama Ajaib' Tanpa Asesmen dalam Rotasi Pejabat Kemenkeu, Dirjen Pajak Buka Suara",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609170323/temukan-nama-ajaib-tanpa-asesmen-dalam-rotasi-pejabat-kemenkeu-dirjen-pajak-buka-suara",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/03/05/dirjen-pajak-bimo-wijayanto-nurul-fjawaposcom-zHj1J.webp",
+   "t_ko": "재무부 인사 개편서 비정상적 '비밀 명단' 포착에 국세청장 해명",
+   "t_id": "Temukan 'Nama Ajaib' Tanpa Asesmen dalam Rotasi Pejabat Kemenkeu, Dirjen Pajak Buka Suara"
+  },
+  {
+   "ts": "2026-09-18T00:16:00+07:00",
+   "date": "2026-09-18",
+   "time": "00:16",
+   "src": "MarketWatch",
+   "t": "Why growth stocks’ surprising strength may be warning of a market bubble",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/why-growth-stocks-surprising-strength-may-be-warning-of-a-market-bubble-5288a7dc?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-98901631",
+   "t_ko": "성장주의 뜻밖의 강세가 시사하는 시장 버블 경고등",
+   "t_id": "Alasan Kekuatan Saham Growth Bisa Jadi Sinyal Bubble Pasar"
+  },
+  {
+   "ts": "2026-09-18T00:14:39+07:00",
+   "date": "2026-09-18",
+   "time": "00:14",
    "src": "CNBC",
    "t": "Trump photo seems to reference Kennedy Center demolition amid legal battle over closure",
    "tags": [],
@@ -16784,6 +16830,19 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/menteri-koordinator-bidang-infrastruktur-dan-pembangunan-kewilayahan-agus-harimurti-yudhoyono-ahyhumas-kemenko-infrastruktur-GRHqF.webp",
    "t_ko": "AHY, 파푸아 인프라 개발 구체화 — 연결성 최우선",
    "t_id": "Pembangunan Infrastruktur Papua Dimatangkan AHY, Konektivitas Jadi Prioritas Utama"
+  },
+  {
+   "ts": "2026-09-18T00:07:00+07:00",
+   "date": "2026-09-18",
+   "time": "00:07",
+   "src": "Yahoo Finance",
+   "t": "Generac, Nebius, CoreWeave, Nokia, Lucid, Paramount, and More Stocks That Explain Today’s Market",
+   "tags": [],
+   "url": "https://www.barrons.com/articles/stock-movers-be111893?siteid=yhoof2&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/Barrons.com/1b4a1427277d3b43389be70266d7b58d.jpg",
+   "t_ko": "오늘의 증시 특징주 — Generac·Nebius·CoreWeave·Nokia·Lucid·Paramount",
+   "t_id": "Generac, Nebius, CoreWeave, Nokia, Lucid, Paramount, dan Saham Penggerak Pasar"
   },
   {
    "ts": "2026-09-18T00:02:07+07:00",
@@ -16820,6 +16879,19 @@
    "g": 1,
    "t_ko": "유가·금리·국채금리 상승으로 증시 스태그플레이션 우려 고조",
    "t_id": "Minyak, Suku Bunga, dan Imbal Hasil Naik Racik Koktail Stagflasi Pasar"
+  },
+  {
+   "ts": "2026-09-17T23:58:11+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "Yahoo Finance",
+   "t": "Aon’s $17 Billion USI Deal: What Hedge Fund Sentiment Says About AON and KKR",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/aon-17-billion-usi-deal-165811093.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/48687becb22102c151b18b57fabd44ea.jpg",
+   "t_ko": "Aon의 170억 달러 USI 인수 — AON·KKR에 대한 헤지펀드 심리 분석",
+   "t_id": "Aksi USD 17 Miliar Aon: Sentimen Hedge Fund pada AON dan KKR"
   },
   {
    "ts": "2026-09-17T23:55:06+07:00",
@@ -16878,6 +16950,32 @@
    "url": "https://mediaindonesia.com/internasional/934722/gempa-magnitudo-65-guncang-alaska",
    "t_ko": "알래스카에 규모 6.5 지진 발생",
    "t_id": "Gempa Magnitudo 6,5 Guncang Alaska"
+  },
+  {
+   "ts": "2026-09-17T23:47:33+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "Yahoo Finance",
+   "t": "Jim Cramer on Tesla (TSLA): “My Only Solution to It Is That SpaceX Has to Buy It”",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-tesla-tsla-only-164733818.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/3fe61364b95991c98978f250ba7bea2c.png",
+   "t_ko": "Jim Cramer, Tesla(TSLA)에 대해 “유일한 해법은 SpaceX의 인수뿐”",
+   "t_id": "Jim Cramer Soal Tesla (TSLA): Solusi Satu-Satunya Adalah Dibeli SpaceX"
+  },
+  {
+   "ts": "2026-09-17T23:44:12+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "Yahoo Finance",
+   "t": "Apple (AAPL) Faces a $2.7 Billion UK Lawsuit over its App Tracking Rules",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/apple-aapl-faces-2-7-164412973.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/bd47dc2e86b4a3086f845d200d9daf1f.jpg",
+   "t_ko": "Apple(AAPL), 앱 추적 규칙 관련 영국에서 27억 달러 소송 직면",
+   "t_id": "Apple (AAPL) Hadapi Gugatan 2,7 Miliar Poundsterling di Inggris Terkait Aturan Pelacakan Aplikasi"
   },
   {
    "ts": "2026-09-17T23:41:57+07:00",
@@ -16956,56 +17054,6 @@
    ]
   },
   {
-   "ts": "2026-09-17T23:35:16+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Yahoo Finance",
-   "t": "CEO Claims Investors Got It Wrong on $30 Billion Shortfall as ON Stock Plummets 9%",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/ceo-claims-investors-got-wrong-163516827.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/1014bc9de829be24cdd1484b58d795ae.png",
-   "t_ko": "ON 주가 9% 폭락 속 CEO, 300억 달러 부족분은 오해라 주장",
-   "t_id": "CEO Klaim Investor Salah Pahami Kekurangan $30 Miliar saat Saham ON Anjlok 9%"
-  },
-  {
-   "ts": "2026-09-17T23:35:00+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Yahoo Finance",
-   "t": "3 Financial Stocks Whose Dividends Survived the Last Recession Intact",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/3-financial-stocks-whose-dividends-163500498.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/f8023ec01cc8052fb817709b35767d4a.jpg",
-   "t_ko": "지난 경기 침체에도 배당 유지한 금융주 3선",
-   "t_id": "3 Saham Keuangan yang Dividennya Selamat dari Resesi Terakhir"
-  },
-  {
-   "ts": "2026-09-17T23:30:59+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Bloomberg",
-   "t": "Stocks Gain in Wake of Fed",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-17/open-interest-9-17-2026-video",
-   "g": 1,
-   "t_ko": "연준 금리 결정 여파로 증시 상승세",
-   "t_id": "Saham Menguat Pasca-Keputusan Fed"
-  },
-  {
-   "ts": "2026-09-17T23:30:32+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Bloomberg",
-   "t": "Poland Warns That Russia Plans to Strike Ukraine’s NATO Allies",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-17/poland-warns-that-russia-plans-to-strike-ukraine-s-nato-allies",
-   "g": 1,
-   "t_ko": "폴란드, 러시아의 우크라이나 나토 동맹국 타격 계획 경고",
-   "t_id": "Polandia Peringatkan Rencana Rusia Serang Sekutu NATO Ukraina"
-  },
-  {
    "ts": "2026-09-17T23:30:27+07:00",
    "date": "2026-09-17",
    "time": "09/17",
@@ -17027,19 +17075,6 @@
    "url": "https://mediaindonesia.com/ekonomi/934703/bahlil-pastikan-stok-bbm-subsidi-aman-dan-dorong-penyaluran-tepat-sasaran",
    "t_ko": "Bahlil 장관, 보조금 유류 재고 안정 및 적시 공급 강조",
    "t_id": "Bahlil Pastikan Stok BBM Subsidi Aman dan Dorong Penyaluran Tepat Sasaran"
-  },
-  {
-   "ts": "2026-09-17T23:28:00+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "WSJ",
-   "t": "Tech, Media & Telecom Roundup: Market Talk",
-   "tags": [],
-   "url": "https://www.wsj.com/business/tech-media-telecom-roundup-market-talk-8dfe699f?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-92361535",
-   "t_ko": "테크·미디어·텔레콤 부문 동향",
-   "t_id": "Teknologi, Media & Telekomunikasi: Market Talk"
   },
   {
    "ts": "2026-09-17T23:22:46+07:00",
@@ -17181,30 +17216,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/07/06/berkilau-di-bawah-danantara-pegadaian-akselerasi-ekosistem-bank-emas-1783337310220_169.jpeg?w=360&q=90",
    "t_ko": "전당포부터 금까지 — Pegadaian 실적 견인 사업",
    "t_id": "Dari Gadai hingga Emas, Ini Bisnis Penopang Kinerja Pegadaian"
-  },
-  {
-   "ts": "2026-09-17T22:28:31+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Jawa Pos",
-   "t": "Pembenahan Sistem Dermaga Belum Disentuh, Asosiasi Sopir Truk Pesimis Zero ODOL Bisa Terlaksana 2027",
-   "tags": [],
-   "url": "https://www.jawapos.com/bisnis/2609170492/pembenahan-sistem-dermaga-belum-disentuh-asosiasi-sopir-truk-pesimis-zero-odol-bisa-terlaksana-2027",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/ilustrasi-antre-di-pelabuhan-ketapang-ramada-kusumajawa-pos-radar-banyuwangi-kLly8.webp",
-   "t_ko": "화물차 연합회, 부두 시스템 미비로 2027년 과적 근절 회의적",
-   "t_id": "Pembenahan Sistem Dermaga Belum Disentuh, Asosiasi Sopir Truk Pesimis Zero ODOL Terealisasi 2027"
-  },
-  {
-   "ts": "2026-09-17T22:24:00+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Katadata",
-   "t": "BGN Tunggu Kemenkeu Soal Revisi Aturan Insentif Dapur MBG",
-   "tags": [],
-   "url": "https://katadata.co.id/berita/nasional/6aac063db4fb4/bgn-tunggu-kemenkeu-soal-revisi-aturan-insentif-dapur-mbg",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/03/2026_09_03-19_02_00_c2817d0e-a795-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_ko": "BGN, MBG 주방 인센티브 규정 개정 관련 Kemenkeu 대기",
-   "t_id": "BGN Tunggu Kemenkeu Soal Revisi Aturan Insentif Dapur MBG"
   }
  ],
  "kisi_news": [
@@ -17383,9 +17394,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.955%",
-   "d": -1.02,
-   "ytd": 19.02,
+   "v": "4.957%",
+   "d": -0.98,
+   "ytd": 19.07,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17406,9 +17417,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.26",
-   "d": -0.06,
-   "ytd": 2.02,
+   "v": "100.25",
+   "d": -0.07,
+   "ytd": 2.0,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17418,9 +17429,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "102.12",
-   "d": -0.15,
-   "ytd": 77.85,
+   "v": "102.23",
+   "d": -0.04,
+   "ytd": 78.04,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17430,9 +17441,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,398.9",
-   "d": 1.46,
-   "ytd": 1.69,
+   "v": "4,399.9",
+   "d": 1.49,
+   "ytd": 1.72,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17454,15 +17465,15 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,110",
-   "d": 1.34,
-   "ytd": -3.43,
+   "v": "16,262",
+   "d": 0.94,
+   "ytd": -2.52,
    "inv": false,
-   "note": "investing.com · 09/17 마지막 값 · 연초 16,682",
+   "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
    "k_id": "Nikel LME (US$/t)",
-   "note_ko": "investing.com · 09/17 마지막 값 · 연초 16,682",
-   "note_id": "investing.com · 09/17 nilai terakhir · Awal tahun 16,682"
+   "note_ko": "investing.com · 연초 16,682",
+   "note_id": "investing.com · Awal tahun 16,682"
   },
   {
    "k": "CPO (MYR/t)",
@@ -24839,43 +24850,9 @@
      "url": "https://www.cnbc.com/2026/09/17/stocks-stage-a-comeback-after-fed-induced-declines-plus-whats-ailing-boeing.html",
      "time": "00:12",
      "tags": [],
-     "sc": 309.0,
+     "sc": 312.0,
      "slot": "global",
      "q": 85
-    }
-   ]
-  },
-  "2026-09-10": {
-   "ann": [
-    {
-     "t": "BUMI",
-     "ko": "거래소 조회공시 요구에 대한 답변",
-     "id": "Penjelasan atas Permintaan Penjelasan Bursa",
-     "kind_ko": "조회공시",
-     "kind_id": "Penjelasan Bursa",
-     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/5d22e77149_12e6084dc3.pdf",
-     "time": "19:12",
-     "q": 85
-    },
-    {
-     "t": "MGLV",
-     "ko": "유상증자(HMETD) 추진 기업정보 공시 — 9월10일",
-     "id": "Keterbukaan Informasi Aksi Korporasi - Rencana Penambahan Modal dengan HMETD - 10 Sep 2026",
-     "kind_ko": "유상증자",
-     "kind_id": "Rights Issue",
-     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/881c3a5b7b_ce2450a4f0.pdf",
-     "time": "19:13",
-     "q": 90
-    },
-    {
-     "t": "ELSA",
-     "ko": "Elnusa, 임시주총서 임원 변경 결정 — 지배구조·사업 지속성 강화",
-     "id": "RUPSLB Elnusa Tetapkan Perubahan Pengurus, Tegaskan Komitmen pada Tata Kelola dan  Kesinambungan Bisnis",
-     "kind_ko": "경영권",
-     "kind_id": "Direksi",
-     "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/2f95f51f0d_ceac20ede8.pdf",
-     "time": "05:34",
-     "q": 88
     }
    ]
   }
