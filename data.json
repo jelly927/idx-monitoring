@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 22:27",
+ "updated": "2026-09-17 22:32",
  "delay_min": 15,
- "fx_basis": "12.85 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 21:45 Yahoo",
- "idr_per_krw": 12.8545,
+ "fx_basis": "12.86 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 21:45 Yahoo",
+ "idr_per_krw": 12.8557,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15502,10 +15502,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7627.24,
+   "px": 7627.53,
    "prev": 7553.33,
    "pct": 0.98,
-   "asof": "22:25",
+   "asof": "22:30",
    "live": true,
    "spark": [
     7625.67,
@@ -15531,17 +15531,18 @@
     7622.88,
     7626.47,
     7624.46,
-    7627.24
+    7627.27,
+    7627.53
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26375.35,
+   "px": 26377.24,
    "prev": 25978.42,
-   "pct": 1.53,
-   "asof": "22:25",
+   "pct": 1.54,
+   "asof": "22:30",
    "live": true,
    "spark": [
     26321.01,
@@ -15567,17 +15568,18 @@
     26357.21,
     26369.56,
     26366.34,
-    26375.35
+    26378.42,
+    26377.24
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51744.66,
+   "px": 51743.0,
    "prev": 51477.73,
    "pct": 0.52,
-   "asof": "22:25",
+   "asof": "22:30",
    "live": true,
    "spark": [
     51760.85,
@@ -15603,7 +15605,8 @@
     51727.28,
     51761.68,
     51729.88,
-    51744.66
+    51736.3,
+    51743.0
    ]
   },
   {
@@ -16874,6 +16877,30 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-17T22:28:31+07:00",
+   "date": "2026-09-17",
+   "time": "22:28",
+   "src": "Jawa Pos",
+   "t": "Pembenahan Sistem Dermaga Belum Disentuh, Asosiasi Sopir Truk Pesimis Zero ODOL Bisa Terlaksana 2027",
+   "tags": [],
+   "url": "https://www.jawapos.com/bisnis/2609170492/pembenahan-sistem-dermaga-belum-disentuh-asosiasi-sopir-truk-pesimis-zero-odol-bisa-terlaksana-2027",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/ilustrasi-antre-di-pelabuhan-ketapang-ramada-kusumajawa-pos-radar-banyuwangi-kLly8.webp",
+   "t_ko": "화물차 연합회, 부두 시스템 미비로 2027년 과적 근절 회의적",
+   "t_id": "Pembenahan Sistem Dermaga Belum Disentuh, Asosiasi Sopir Truk Pesimis Zero ODOL Terealisasi 2027"
+  },
+  {
+   "ts": "2026-09-17T22:24:22+07:00",
+   "date": "2026-09-17",
+   "time": "22:24",
+   "src": "Bloomberg",
+   "t": "Bond Rout Spurs Record Outflow From $3.6 Billion Schwab Muni ETF",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-17/bond-rout-spurs-record-outflow-from-3-6-billion-schwab-muni-etf",
+   "g": 1,
+   "t_ko": "채권 약세에 36억 달러 규모 Schwab Muni ETF서 사상 최대 유출",
+   "t_id": "Aksi Jual Obligasi Picu Rekor Outflow dari Schwab Muni ETF $3,6 Miliar"
+  },
+  {
    "ts": "2026-09-17T22:24:00+07:00",
    "date": "2026-09-17",
    "time": "22:24",
@@ -16907,8 +16934,8 @@
    "tags": [],
    "url": "https://www.jawapos.com/finance/2609170490/pensiun-tak-cukup-hanya-siapkan-dana-kesehatan-juga-wajib-jadi-perhatian",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/ilustrasi-pensiunan-melakukan-pengecekan-kesehatan-istimewa-b0Z4Z.webp",
-   "t_id": "Pensiun Tak Cukup hanya Siapkan Dana, Kesehatan juga Wajib jadi Perhatian",
-   "t_ko": "은퇴 대비, 자금뿐만 아니라 건강 관리도 필수"
+   "t_ko": "은퇴 대비, 자금뿐만 아니라 건강 관리도 필수",
+   "t_id": "Pensiun Tak Cukup hanya Siapkan Dana, Kesehatan juga Wajib jadi Perhatian"
   },
   {
    "ts": "2026-09-17T22:15:41+07:00",
@@ -16921,6 +16948,19 @@
    "g": 1,
    "t_ko": "트럼프 사진, 폐쇄 법적 공방 속 케네디 센터 철거 연상시켜",
    "t_id": "Foto Trump Diduga Sindir Pembongkaran Kennedy Center di Tengah Sengketa Hukum Penutupan"
+  },
+  {
+   "ts": "2026-09-17T22:14:28+07:00",
+   "date": "2026-09-17",
+   "time": "22:14",
+   "src": "Yahoo Finance",
+   "t": "Meta Stock Climbs On Muse AI Excitement. Here's The Next Potential Catalyst.",
+   "tags": [],
+   "url": "https://www.investors.com/news/technology/meta-stock-connect-2026-preview-muse-ai/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/7dac0304acf1f11726a9b70d07036f18.jpg",
+   "t_ko": "Meta, Muse AI 기대감에 상승 — 향후 잠재적 촉매 요인 점검",
+   "t_id": "Saham Meta Naik Berkat Antusiasme Muse AI, Ini Katalis Potensial Berikutnya"
   },
   {
    "ts": "2026-09-17T22:13:50+07:00",
@@ -16955,8 +16995,8 @@
    "tags": [],
    "url": "https://www.medcom.id/ekonomi/sustainability/JKR2eYQK-psel-bogor-raya-1-mulai-dibangun-1-500-ton-sampah-per-hari-bakal-diubah-jadi-listrik",
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/17/1842848/Gsb90MyKWx.jpg?w=720",
-   "t_id": "PSEL Bogor Raya 1 Mulai Dibangun, 1.500 Ton Sampah per Hari Bakal Diubah Jadi Listrik",
-   "t_ko": "Bogor Raya 1 PSEL 착공 — 하루 쓰레기 1,500톤 전력화"
+   "t_ko": "Bogor Raya 1 PSEL 착공 — 하루 쓰레기 1,500톤 전력화",
+   "t_id": "PSEL Bogor Raya 1 Mulai Dibangun, 1.500 Ton Sampah per Hari Bakal Diubah Jadi Listrik"
   },
   {
    "ts": "2026-09-17T22:10:50+07:00",
@@ -16971,6 +17011,19 @@
    "t_id": "Imbal Hasil Tinggi Obligasi US Treasury dan Utang Pemerintah Jadi New Normal"
   },
   {
+   "ts": "2026-09-17T22:10:00+07:00",
+   "date": "2026-09-17",
+   "time": "22:10",
+   "src": "Yahoo Finance",
+   "t": "Michael Burry Disclosed Put Options Worth an Estimated $1.1 Billion Against Nvidia and Palantir Before Closing His Hedge Fund. Was That Bearish Bet Ahead of Its Time?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/options/articles/michael-burry-disclosed-put-options-151000579.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/354d8e59803468211666f25a77a777c9.jpg",
+   "t_ko": "Michael Burry, 펀드 청산 전 Nvidia·Palantir에 11억 달러 풋옵션 매입",
+   "t_id": "Michael Burry Ungkap Put Option Senilai Estimasi $1,1 Miliar untuk Nvidia dan Palantir Sebelum Tutup Hedge Fund, Apakah Ini Taruhan Bearish yang Terlalu Dini?"
+  },
+  {
    "ts": "2026-09-17T22:07:00+07:00",
    "date": "2026-09-17",
    "time": "22:07",
@@ -16980,32 +17033,6 @@
    "url": "https://mediaindonesia.com/politik-dan-hukum/934683/menteri-ham-pigai-aspirasi-rakyat-soal-ham-akan-didengar-dan-ditindaklanjuti",
    "t_ko": "인권장관 Pigai, 인권 관련 민원 청취 및 후속 조치 약속",
    "t_id": "Menteri HAM Pigai: Aspirasi Rakyat soal HAM akan Didengar dan Ditindaklanjuti"
-  },
-  {
-   "ts": "2026-09-17T22:05:00+07:00",
-   "date": "2026-09-17",
-   "time": "22:05",
-   "src": "Yahoo Finance",
-   "t": "JEPI and JEPQ Yield Way More Than SCHD, but SCHD Could Produce More Passive Income Over the Long Term. Here's Why.",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/jepi-jepq-yield-way-more-150500652.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/b0e2c1b2cb67c2f00394dc0cd8f82b05.jpg",
-   "t_ko": "JEPI·JEPQ, SCHD보다 배당수익률 높지만 장기 패시브 소득은 SCHD 유리",
-   "t_id": "Yield JEPI dan JEPQ Ungguli SCHD, Namun SCHD Potensi Beri Cuan Jangka Panjang"
-  },
-  {
-   "ts": "2026-09-17T22:03:01+07:00",
-   "date": "2026-09-17",
-   "time": "22:03",
-   "src": "Yahoo Finance",
-   "t": "Prediction: This AI Infrastructure Stock Will Go Parabolic After Sept. 30 (Hint: It’s Not Micron)",
-   "tags": [],
-   "url": "https://finance.yahoo.com/technology/ai/articles/prediction-ai-infrastructure-stock-parabolic-150301796.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/fb92132ca14fcff90d8a20cd1116889a.jpg",
-   "t_ko": "9월 30일 이후 폭등할 AI 인프라주 전망 — 마이크론 아님",
-   "t_id": "Prediksi: Saham Infrastruktur AI Ini Bakal Meroket Usai 30 Sep (Bukan Micron)"
   },
   {
    "ts": "2026-09-17T22:01:24+07:00",
@@ -17251,19 +17278,6 @@
    "t_id": "Lesunya Ekuitas Swasta China Dinilai Jadi Berkah, Asal Tepat Memilih"
   },
   {
-   "ts": "2026-09-17T21:24:50+07:00",
-   "date": "2026-09-17",
-   "time": "21:24",
-   "src": "Yahoo Finance",
-   "t": "Breakout Watch: Savvy Investors Get Wired Up For This Nvidia, Amazon Partner",
-   "tags": [],
-   "url": "https://www.investors.com/research/ibd-stock-analysis/f5-stock-near-breakout-as-top-funds-buy-into-nvidia-amazon-partner/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/ed578921d7e565c46c4bcbbd21d24851.jpg",
-   "t_ko": "돌파 관측: 스마트 투자자, Nvidia·Amazon 협력사에 주목",
-   "t_id": "Pantauan Breakout: Investor Cerdas Bidik Mitra Nvidia dan Amazon Ini"
-  },
-  {
    "ts": "2026-09-17T21:21:53+07:00",
    "date": "2026-09-17",
    "time": "21:21",
@@ -17319,18 +17333,6 @@
     "energi hijau",
     "energi"
    ]
-  },
-  {
-   "ts": "2026-09-17T21:00:00+07:00",
-   "date": "2026-09-17",
-   "time": "21:00",
-   "src": "Detik",
-   "t": "Prabowo Minta Bahlil Garap BBM Campur Etanol E50",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8667601/prabowo-minta-bahlil-garap-bbm-campur-etanol-e50",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/08/04/bahlil-lahadalia-1785840108228_169.jpeg?w=360&q=90",
-   "t_ko": "Prabowo, Bahlil에 E50 에탄올 혼합 연료 도입 지시",
-   "t_id": "Prabowo Minta Bahlil Garap BBM Campur Etanol E50"
   }
  ],
  "kisi_news": [
@@ -17509,9 +17511,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.955%",
-   "d": -1.02,
-   "ytd": 19.02,
+   "v": "4.945%",
+   "d": -1.22,
+   "ytd": 18.78,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17544,9 +17546,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "100.75",
-   "d": -1.49,
-   "ytd": 75.46,
+   "v": "100.49",
+   "d": -1.74,
+   "ytd": 75.01,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17556,9 +17558,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,401.5",
-   "d": 1.52,
-   "ytd": 1.75,
+   "v": "4,401.8",
+   "d": 1.53,
+   "ytd": 1.76,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17580,9 +17582,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,282",
-   "d": 1.06,
-   "ytd": -2.4,
+   "v": "16,110",
+   "d": 1.34,
+   "ytd": -3.43,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
