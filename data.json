@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-17 23:49",
+ "updated": "2026-09-17 23:53",
  "delay_min": 15,
- "fx_basis": "12.85 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 23:30 Yahoo",
- "idr_per_krw": 12.851,
+ "fx_basis": "12.85 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,381 · 23:45 Yahoo",
+ "idr_per_krw": 12.8492,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -309,10 +309,11 @@
     17748.0,
     17748.0,
     17748.0,
+    17748.0,
     17748.0
    ],
    "inv": true,
-   "asof": "23:30",
+   "asof": "23:45",
    "high": 17748.0,
    "low": 17675.0,
    "src": "yahoo"
@@ -15527,10 +15528,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7637.32,
+   "px": 7636.14,
    "prev": 7553.33,
-   "pct": 1.11,
-   "asof": "23:45",
+   "pct": 1.1,
+   "asof": "23:50",
    "live": true,
    "spark": [
     7625.67,
@@ -15572,17 +15573,18 @@
     7632.53,
     7633.18,
     7637.89,
-    7637.32
+    7636.39,
+    7636.14
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26406.62,
+   "px": 26401.32,
    "prev": 25978.42,
-   "pct": 1.65,
-   "asof": "23:45",
+   "pct": 1.63,
+   "asof": "23:50",
    "live": true,
    "spark": [
     26321.01,
@@ -15624,17 +15626,18 @@
     26385.52,
     26391.63,
     26403.59,
-    26406.62
+    26402.04,
+    26401.32
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51835.03,
+   "px": 51824.14,
    "prev": 51477.73,
-   "pct": 0.69,
-   "asof": "23:45",
+   "pct": 0.67,
+   "asof": "23:50",
    "live": true,
    "spark": [
     51760.85,
@@ -15676,7 +15679,8 @@
     51812.12,
     51811.99,
     51856.81,
-    51835.03
+    51829.9,
+    51824.14
    ]
   },
   {
@@ -16947,6 +16951,18 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-17T23:48:59+07:00",
+   "date": "2026-09-17",
+   "time": "23:48",
+   "src": "CNBC",
+   "t": "Stocks stage a comeback after Fed-induced declines — plus, what's ailing Boeing",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/17/stocks-stage-a-comeback-after-fed-induced-declines-plus-whats-ailing-boeing.html",
+   "g": 1,
+   "t_ko": "연준발 하락 딛고 증시 반등 — Boeing 부진 요인 진단",
+   "t_id": "Saham-Saham Bangkit Usai Tertekan The Fed — Plus, Masalah yang Belum Usai di Boeing"
+  },
+  {
    "ts": "2026-09-17T23:47:26+07:00",
    "date": "2026-09-17",
    "time": "23:47",
@@ -16971,6 +16987,19 @@
    ]
   },
   {
+   "ts": "2026-09-17T23:41:57+07:00",
+   "date": "2026-09-17",
+   "time": "23:41",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Nasdaq Charges Higher As AI Leaders Mount A Rally; Salesforce Extends Losses (Live Coverage)",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-fed-reaction-generac-nebius-bloom-energy-spacex/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/072cc1cb987ee93017a2c4d63e4be893.jpg",
+   "t_ko": "증권가 동향 — AI 주도주 랠리에 나스닥 상승, Salesforce는 하락세 연장",
+   "t_id": "Bursa Saham Hari Ini: Nasdaq Melesat Saat Pemimpin AI Memimpin Reli; Salesforce Perpanjang Penurunan"
+  },
+  {
    "ts": "2026-09-17T23:38:51+07:00",
    "date": "2026-09-17",
    "time": "23:38",
@@ -16982,18 +17011,6 @@
    "img": "https://media.zenfs.com/en/insidermonkey.com/357b8ac780f8ad012988c6b49f572b04.jpg",
    "t_ko": "Rackspace, Nvidia와 파트너십에 주가 상승했으나 $28억 부채 부담 지속",
    "t_id": "Kemitraan Nvidia Rackspace Picu Penguatan Awal, Beban Utang $2,8 Miliar Masih Menbayangi"
-  },
-  {
-   "ts": "2026-09-17T23:37:00+07:00",
-   "date": "2026-09-17",
-   "time": "23:37",
-   "src": "CNBC",
-   "t": "Stocks stage a comeback after Fed-induced declines — plus, what's ailing Boeing",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/17/stocks-stage-a-comeback-after-fed-induced-declines-plus-whats-ailing-boeing.html",
-   "g": 1,
-   "t_ko": "연준발 하락 딛고 증시 반등 — Boeing 부진 요인 진단",
-   "t_id": "Saham-Saham Bangkit Usai Tertekan The Fed — Plus, Masalah yang Belum Usai di Boeing"
   },
   {
    "ts": "2026-09-17T23:35:59+07:00",
@@ -17020,6 +17037,32 @@
    ]
   },
   {
+   "ts": "2026-09-17T23:35:16+07:00",
+   "date": "2026-09-17",
+   "time": "23:35",
+   "src": "Yahoo Finance",
+   "t": "CEO Claims Investors Got It Wrong on $30 Billion Shortfall as ON Stock Plummets 9%",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/ceo-claims-investors-got-wrong-163516827.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/1014bc9de829be24cdd1484b58d795ae.png",
+   "t_ko": "ON 주가 9% 폭락 속 CEO, 300억 달러 부족분은 오해라 주장",
+   "t_id": "CEO Klaim Investor Salah Pahami Kekurangan $30 Miliar saat Saham ON Anjlok 9%"
+  },
+  {
+   "ts": "2026-09-17T23:35:00+07:00",
+   "date": "2026-09-17",
+   "time": "23:35",
+   "src": "Yahoo Finance",
+   "t": "3 Financial Stocks Whose Dividends Survived the Last Recession Intact",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/3-financial-stocks-whose-dividends-163500498.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/f8023ec01cc8052fb817709b35767d4a.jpg",
+   "t_ko": "지난 경기 침체에도 배당 유지한 금융주 3선",
+   "t_id": "3 Saham Keuangan yang Dividennya Selamat dari Resesi Terakhir"
+  },
+  {
    "ts": "2026-09-17T23:30:32+07:00",
    "date": "2026-09-17",
    "time": "23:30",
@@ -17042,19 +17085,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/10/09/pegadaian-luncurkan-super-apps-tring-1760013227685_169.jpeg?w=360&q=90",
    "t_ko": "Pegadaian, 인도네시아 금융포용성 확대 추진 전략 공개",
    "t_id": "Pegadaian Dorong Penetrasi Inklusi Keuangan di Indonesia, Ini Caranya"
-  },
-  {
-   "ts": "2026-09-17T23:30:15+07:00",
-   "date": "2026-09-17",
-   "time": "23:30",
-   "src": "Yahoo Finance",
-   "t": "SoFi Could Be Building Something Wall Street Hasn’t Fully Priced In",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/sofi-could-building-something-wall-163015781.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/3edaf044a5192c78e17b3d0ba24b4117.jpg",
-   "t_ko": "SoFi, 월가가 아직 가격에 온전히 반영하지 못한 성장 동력 구축 중",
-   "t_id": "SoFi Berpotensi Kembangkan Sesuatu yang Belum Sepenuhnya Dihitung Wall Street"
   },
   {
    "ts": "2026-09-17T23:30:00+07:00",
@@ -17194,30 +17224,6 @@
    "g": 1,
    "t_ko": "역대급 디젤 가격이 미국 경제에 미치는 영향과 트럭·철도 타격",
    "t_id": "Dampak Rekor Harga Diesel ke Ekonomi AS, Truk hingga Kereta Jadi Awal"
-  },
-  {
-   "ts": "2026-09-17T23:12:50+07:00",
-   "date": "2026-09-17",
-   "time": "23:12",
-   "src": "Reuters",
-   "t": "Wall St rises as oil slide offers respite after Fed rate hike",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORkVra0Q0cjNkbjlDN0N2SENMZHYyeVVFSU1tcG5LOXhBTk5leFlZNjFNRGpad3NoWmhnaWZVd2I3N19oa2hQSERYZzBQWFcxaUJQNDZaSHMwVjFrNGlKbGRUNjg5TEt2WENpMUJiUFRVTjR6WlQyc0IzY2V2M05FanNlWExPdUZ2bTJFUlp4YW5HdTAwTExfNTI3MWkwVEVTMTRZUURlR01lVHA5?oc=5",
-   "g": 1,
-   "t_ko": "월가, 유가 하락으로 연준 금리 인상 충격 완화되며 상승",
-   "t_id": "Wall St Menguat Seiring Penurunan Harga Minyak Beri Jeda Usai Kenaikan Suku Bunga The Fed"
-  },
-  {
-   "ts": "2026-09-17T23:12:05+07:00",
-   "date": "2026-09-17",
-   "time": "23:12",
-   "src": "Bloomberg",
-   "t": "US to Reopen Largest Port for Mexican Cattle Shipments",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-17/us-to-reopen-largest-port-for-mexican-cattle-shipments",
-   "g": 1,
-   "t_ko": "미국, 멕시코산 육류 반입 최대 항구 재개방",
-   "t_id": "AS Buka Kembali Pelabuhan Terbesar untuk Pengiriman Sapi Meksiko"
   },
   {
    "ts": "2026-09-17T23:12:04+07:00",
@@ -17385,18 +17391,6 @@
    "t_id": "Pensiun Tak Cukup hanya Siapkan Dana, Kesehatan juga Wajib jadi Perhatian"
   },
   {
-   "ts": "2026-09-17T22:11:16+07:00",
-   "date": "2026-09-17",
-   "time": "22:11",
-   "src": "Medcom",
-   "t": "PSEL Bogor Raya 1 Mulai Dibangun, 1.500 Ton Sampah per Hari Bakal Diubah Jadi Listrik",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/sustainability/JKR2eYQK-psel-bogor-raya-1-mulai-dibangun-1-500-ton-sampah-per-hari-bakal-diubah-jadi-listrik",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/17/1842848/Gsb90MyKWx.jpg?w=720",
-   "t_ko": "Bogor Raya 1 PSEL 착공 — 하루 쓰레기 1,500톤 전력화",
-   "t_id": "PSEL Bogor Raya 1 Mulai Dibangun, 1.500 Ton Sampah per Hari Bakal Diubah Jadi Listrik"
-  },
-  {
    "ts": "2026-09-17T22:07:00+07:00",
    "date": "2026-09-17",
    "time": "22:07",
@@ -17406,6 +17400,18 @@
    "url": "https://mediaindonesia.com/politik-dan-hukum/934683/menteri-ham-pigai-aspirasi-rakyat-soal-ham-akan-didengar-dan-ditindaklanjuti",
    "t_ko": "인권장관 Pigai, 인권 관련 민원 청취 및 후속 조치 약속",
    "t_id": "Menteri HAM Pigai: Aspirasi Rakyat soal HAM akan Didengar dan Ditindaklanjuti"
+  },
+  {
+   "ts": "2026-09-17T22:00:39+07:00",
+   "date": "2026-09-17",
+   "time": "22:00",
+   "src": "Detik",
+   "t": "Bitcoin Melesat Usai Pengumuman Suku Bunga AS",
+   "tags": [],
+   "url": "https://finance.detik.com/fintech/d-8667716/bitcoin-melesat-usai-pengumuman-suku-bunga-as",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/02/asia-tenggara-waspadai-penambangan-kripto-1764646630714_169.jpeg?w=360&q=90",
+   "t_ko": "미국 금리 인하 발표 이후 비트코인 상승세",
+   "t_id": "Bitcoin Melesat Usai Pengumuman Suku Bunga AS"
   }
  ],
  "kisi_news": [
@@ -17619,9 +17625,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.58",
-   "d": -0.67,
-   "ytd": 76.91,
+   "v": "101.63",
+   "d": -0.63,
+   "ytd": 76.99,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17655,9 +17661,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,262",
-   "d": 0.94,
-   "ytd": -2.52,
+   "v": "16,264",
+   "d": 0.95,
+   "ytd": -2.51,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
