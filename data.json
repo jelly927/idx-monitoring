@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 18:05",
+ "updated": "2026-09-18 18:10",
  "delay_min": 15,
  "fx_basis": "12.79 IDR/KRW · USD/IDR 17,735 · USD/KRW 1,386 · 17:15 Yahoo",
- "idr_per_krw": 12.7948,
+ "idr_per_krw": 12.7932,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -16453,8 +16453,8 @@
    "px": 24750.78,
    "prev": 24604.29,
    "pct": 0.6,
-   "asof": "15:05",
-   "live": true,
+   "asof": "09/18 종가",
+   "live": false,
    "spark": [
     24793.86,
     24787.82,
@@ -16601,9 +16601,246 @@
    "pay": "2026-09-29",
    "yld": "23.68%",
    "name": "J Resources Asia Pasifik Tbk"
+  },
+  "IFII": {
+   "dps": 5.0,
+   "type": "",
+   "ex": null,
+   "pay": null,
+   "yld": null,
+   "src": "IDX Channel",
+   "url": "https://www.idxchannel.com/market-news/ifii-bagikan-dividen-interim-rp5-per-saham-pertengahan-oktober"
   }
  },
  "news": [
+  {
+   "ts": "2026-09-18T18:09:18.268649+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "Merdeka Battery (MBMA) Kembali Perpanjang Masa Buyback Saham",
+   "tags": [
+    "MBMA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/merdeka-battery-mbma-kembali-perpanjang-masa-buyback-saham",
+   "t_est": true,
+   "t_ko": "MBMA, 자사주 매입 기간 연장",
+   "t_id": "Merdeka Battery (MBMA) Kembali Perpanjang Masa Buyback Saham"
+  },
+  {
+   "ts": "2026-09-18T18:09:18.266021+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "MBSS Punya Manajemen Baru, Eks Kapolda Banten Jadi Komut",
+   "tags": [
+    "MBSS"
+   ],
+   "url": "https://www.idxchannel.com/market-news/mbss-punya-manajemen-baru-eks-kapolda-banten-jadi-komut",
+   "t_est": true,
+   "t_ko": "MBSS, 새 경영진 선임 — 전 Banten 경찰청장 이사회 의장 선임",
+   "t_id": "MBSS Punya Manajemen Baru, Eks Kapolda Banten Jadi Komut"
+  },
+  {
+   "ts": "2026-09-18T18:09:18.265210+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "Low Tuck Kwong dan Putrinya Sepakat Lepas Saham BYAN ke Haji Isam",
+   "tags": [
+    "BYAN"
+   ],
+   "url": "https://www.idxchannel.com/market-news/low-tuck-kwong-dan-putrinya-sepakat-lepas-saham-byan-ke-haji-isam",
+   "t_est": true,
+   "t_ko": "Low Tuck Kwong 부녀, Haji Isam에 BYAN 지분 매각 합의",
+   "t_id": "Low Tuck Kwong dan Putrinya Sepakat Lepas Saham BYAN ke Haji Isam"
+  },
+  {
+   "ts": "2026-09-18T18:09:18.262926+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "IFII Bagikan Dividen Interim Rp5 per Saham Pertengahan Oktober",
+   "tags": [
+    "IFII"
+   ],
+   "url": "https://www.idxchannel.com/market-news/ifii-bagikan-dividen-interim-rp5-per-saham-pertengahan-oktober",
+   "t_est": true,
+   "t_ko": "IFII, 10월 중순 주당 Rp5 중간배당 실시",
+   "t_id": "IFII Bagikan Dividen Interim Rp5 per Saham Pertengahan Oktober"
+  },
+  {
+   "ts": "2026-09-18T18:09:18.262031+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "Momentum Saham Hapsoro-Prajogo SINI, Seberapa Jauh Reli Berlanjut?",
+   "tags": [
+    "SINI"
+   ],
+   "url": "https://www.idxchannel.com/market-news/momentum-saham-hapsoro-prajogo-sini-seberapa-jauh-reli-berlanjut",
+   "t_est": true,
+   "t_ko": "Hapsoro-Prajogo 연대 SINI 주가 상승세 지속 가능성 점검",
+   "t_id": "Momentum Saham Hapsoro-Prajogo SINI, Seberapa Jauh Reli Berlanjut?"
+  },
+  {
+   "ts": "2026-09-18T18:09:18.259902+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "Terkendala Likuiditas, PTSN Belum Penuhi Free Float 15 Persen",
+   "tags": [
+    "PTSN"
+   ],
+   "url": "https://www.idxchannel.com/market-news/terkendala-likuiditas-ptsn-belum-penuhi-free-float-15-persen",
+   "t_est": true,
+   "t_ko": "PTSN, 유동성 부족으로 유통주식 비율 15% 미달",
+   "t_id": "Terkendala Likuiditas, PTSN Belum Penuhi Free Float 15 Persen",
+   "ai_ko": "· PTSN 유통주식비율 10%로 기준 미달\n· 거래소 최소 요건은 15%, 거래 부진 지속\n· 유상증자·제3자배정 검토, 투자자 확보 난항",
+   "ai_id": "· Free float PTSN sekitar 10%\n· Ketentuan BEI minimal 15%, likuiditas tipis\n· Kaji rights issue dan private placement",
+   "ai_tags": [
+    "유상증자",
+    "규제",
+    "유동성"
+   ],
+   "ai_tags_id": [
+    "rights issue",
+    "regulasi",
+    "likuiditas"
+   ]
+  },
+  {
+   "ts": "2026-09-18T18:09:18.259112+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "Gudang di Tangerang Kebakaran, Sekar Bumi (SKBM) Tegaskan Operasional Tetap Berjalan",
+   "tags": [
+    "SKBM"
+   ],
+   "url": "https://www.idxchannel.com/market-news/gudang-di-tangerang-kebakaran-sekar-bumi-skbm-tegaskan-operasional-tetap-berjalan",
+   "t_est": true,
+   "t_ko": "SKBM, 탱거랑 창고 화재에도 정상 영업 유지 확인",
+   "t_id": "Gudang di Tangerang Kebakaran, Sekar Bumi (SKBM) Tegaskan Operasional Tetap Berjalan",
+   "ai_ko": "· Sekar Bumi(SKBM) Tangerang 창고 9/17 화재\n· Kawasan Industri Millennium 창고 일부 파손, 인명피해 없음\n· 가동 지속, 매출 90%가 수산물·대부분 수출",
+   "ai_id": "· Gudang SKBM di Tangerang kebakaran\n· Sebagian area rusak, tanpa korban\n· Operasional tetap berjalan, dievaluasi",
+   "ai_tags": [
+    "화재",
+    "식품"
+   ],
+   "ai_tags_id": [
+    "kebakaran",
+    "operasional"
+   ]
+  },
+  {
+   "ts": "2026-09-18T18:09:18.257443+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "BAJA Kantongi Restu OJK untuk Gelar Rights Issue Rp450 Miliar",
+   "tags": [
+    "BAJA"
+   ],
+   "url": "https://www.idxchannel.com/market-news/baja-kantongi-restu-ojk-untuk-gelar-rights-issue-rp450-miliar",
+   "t_est": true,
+   "t_ko": "BAJA, OJK로부터 Rp450억 규모 유상증자 승인 획득",
+   "t_id": "BAJA Kantongi Restu OJK untuk Gelar Rights Issue Rp450 Miliar",
+   "ai_ko": "· Saranacentral Bajatama(BAJA) 유상증자 승인\n· 신주 9억주, 주당 Rp500, 조달액 Rp4,500억\n· 자금 대부분 Sarana Steel 차입금 상환용",
+   "ai_id": "· OJK setujui rights issue BAJA\n· 900 juta saham, Rp500, Rp450 miliar\n· Dana untuk lunasi utang ke Sarana Steel",
+   "ai_tags": [
+    "유상증자",
+    "부채상환",
+    "철강"
+   ],
+   "ai_tags_id": [
+    "rights issue",
+    "utang",
+    "baja"
+   ]
+  },
+  {
+   "ts": "2026-09-18T18:09:18.256597+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "Induk Frisian Flag Bakal Jadi Pengendali Baru Ultrajaya (ULTJ)",
+   "tags": [
+    "ULTJ"
+   ],
+   "url": "https://www.idxchannel.com/market-news/induk-frisian-flag-bakal-jadi-pengendali-baru-ultrajaya-ultj",
+   "t_est": true,
+   "t_ko": "Frisian Flag 모회사, Ultrajaya(ULTJ) 새 최대주주 등극 예정",
+   "t_id": "Induk Frisian Flag Bakal Jadi Pengendali Baru Ultrajaya (ULTJ)",
+   "ai_ko": "· FCIH, Ultrajaya(ULTJ) 신규 지배주주 등극\n· 74.7억주 유상증자, 발행가 Rp2,150\n· Frisian Flag Indonesia는 ULTJ 자회사로 편입",
+   "ai_id": "· FCIH jadi pengendali baru ULTJ\n· Rights issue 7,87 miliar saham Rp2.150\n· FFI masuk jadi anak usaha ULTJ",
+   "ai_tags": [
+    "유상증자",
+    "M&A",
+    "경영권"
+   ],
+   "ai_tags_id": [
+    "rights issue",
+    "akuisisi",
+    "pengendali"
+   ]
+  },
+  {
+   "ts": "2026-09-18T18:09:18.255754+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "Saham Ultrajaya (ULTJ) Melejit 42 Persen Imbas Kabar Frisian Flag Jadi Pemilik Baru",
+   "tags": [
+    "ULTJ"
+   ],
+   "url": "https://www.idxchannel.com/market-news/saham-ultrajaya-ultj-melejit-42-persen-imbas-kabar-frisian-flag-jadi-pemilik-baru",
+   "t_est": true,
+   "t_ko": "Ultrajaya(ULTJ), FrieslandCampina 인수설에 주가 42% 급등",
+   "t_id": "Saham Ultrajaya (ULTJ) Melejit 42 Persen Imbas Kabar Frisian Flag Jadi Pemilik Baru",
+   "ai_ko": "· Ultrajaya(ULTJ) 주가 15% 급등\n  Rp2,150, 1개월 42% 상승\n· FCIH·Blue Waves Group 등이\n  신규 지배주주로 등극\n· 유상증자 78.7억주 발행,\n  발행가 주당 Rp2,150",
+   "ai_id": "· Saham ULTJ melejit 15% ke Rp2.150\n· FCIH dan BWG jadi pengendali baru\n· Rights issue 7,87 miliar saham\n harga pelaksanaan Rp2.150",
+   "ai_tags": [
+    "유상증자",
+    "경영권",
+    "주가급등"
+   ],
+   "ai_tags_id": [
+    "rights issue",
+    "pengendali baru",
+    "saham melonjak"
+   ]
+  },
+  {
+   "ts": "2026-09-18T18:09:18.252423+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "10 Saham Top Gainer Perdagangan Jumat 18 September 2026, Ada BYAN hingga CAMP",
+   "tags": [
+    "BYAN",
+    "CAMP"
+   ],
+   "url": "https://www.idxchannel.com/market-news/10-saham-top-gainer-perdagangan-jumat-18-september-2026-ada-byan-hingga-camp",
+   "t_est": true,
+   "t_ko": "9월 18일(금) 상장사 상승 상위 10선 — BYAN·CAMP 등 포함",
+   "t_id": "10 Saham Top Gainer Perdagangan Jumat 18 September 2026, Ada BYAN hingga CAMP"
+  },
+  {
+   "ts": "2026-09-18T18:09:18.248442+07:00",
+   "date": "2026-09-18",
+   "time": "18:09",
+   "src": "IDX Channel",
+   "t": "IHSG Ditutup Melemah 0,3 Persen, Saham JARR-PACK Anjlok",
+   "tags": [
+    "JARR",
+    "PACK"
+   ],
+   "url": "https://www.idxchannel.com/market-news/ihsg-ditutup-melemah-03-persen-saham-jarr-pack-anjlok",
+   "t_est": true,
+   "t_id": "IHSG Ditutup Melemah 0,3 Persen, Saham JARR-PACK Anjlok",
+   "t_ko": "IHSG 0.3% 하락 마감 — JARR·PACK 낙폭 상위"
+  },
   {
    "ts": "2026-09-18T17:50:00+07:00",
    "date": "2026-09-18",
@@ -16617,21 +16854,6 @@
    "img": "https://images.bloombergtechnoz.com/data/2026/03/image-20260311171912.jpg",
    "t_ko": "PTRO, 상반기 순이익 902.5% 급증",
    "t_id": "Laba Petrosea (PTRO) Lompat 902,5% Semester I-2026"
-  },
-  {
-   "ts": "2026-09-18T17:38:00+07:00",
-   "date": "2026-09-18",
-   "time": "17:38",
-   "src": "IDX Channel",
-   "t": "10 Saham Top Gainer Perdagangan Jumat 18 September 2026, Ada BYAN hingga CAMP",
-   "tags": [
-    "BYAN",
-    "CAMP"
-   ],
-   "url": "https://www.idxchannel.com/market-news/10-saham-top-gainer-perdagangan-jumat-18-september-2026-ada-byan-hingga-camp",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/07/30/saham_turun_freep.jpg",
-   "t_ko": "9월 18일(금) 상장사 상승 상위 10선 — BYAN·CAMP 등 포함",
-   "t_id": "10 Saham Top Gainer Perdagangan Jumat 18 September 2026, Ada BYAN hingga CAMP"
   },
   {
    "ts": "2026-09-18T17:33:50+07:00",
@@ -16925,32 +17147,6 @@
    ]
   },
   {
-   "ts": "2026-09-18T14:56:00+07:00",
-   "date": "2026-09-18",
-   "time": "14:56",
-   "src": "IDX Channel",
-   "t": "Saham Ultrajaya (ULTJ) Melejit 42 Persen Imbas Kabar Frisian Flag Jadi Pemilik Baru",
-   "tags": [
-    "ULTJ"
-   ],
-   "url": "https://www.idxchannel.com/market-news/saham-ultrajaya-ultj-melejit-42-persen-imbas-kabar-frisian-flag-jadi-pemilik-baru",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/09/18/frisian_flag.jpg",
-   "t_ko": "Ultrajaya(ULTJ), FrieslandCampina 인수설에 주가 42% 급등",
-   "t_id": "Saham Ultrajaya (ULTJ) Melejit 42 Persen Imbas Kabar Frisian Flag Jadi Pemilik Baru",
-   "ai_ko": "· Ultrajaya(ULTJ) 주가 15% 급등\n  Rp2,150, 1개월 42% 상승\n· FCIH·Blue Waves Group 등이\n  신규 지배주주로 등극\n· 유상증자 78.7억주 발행,\n  발행가 주당 Rp2,150",
-   "ai_id": "· Saham ULTJ melejit 15% ke Rp2.150\n· FCIH dan BWG jadi pengendali baru\n· Rights issue 7,87 miliar saham\n harga pelaksanaan Rp2.150",
-   "ai_tags": [
-    "유상증자",
-    "경영권",
-    "주가급등"
-   ],
-   "ai_tags_id": [
-    "rights issue",
-    "pengendali baru",
-    "saham melonjak"
-   ]
-  },
-  {
    "ts": "2026-09-18T14:51:23+07:00",
    "date": "2026-09-18",
    "time": "14:51",
@@ -16977,32 +17173,6 @@
    ]
   },
   {
-   "ts": "2026-09-18T14:40:00+07:00",
-   "date": "2026-09-18",
-   "time": "14:40",
-   "src": "IDX Channel",
-   "t": "Induk Frisian Flag Bakal Jadi Pengendali Baru Ultrajaya (ULTJ)",
-   "tags": [
-    "ULTJ"
-   ],
-   "url": "https://www.idxchannel.com/market-news/induk-frisian-flag-bakal-jadi-pengendali-baru-ultrajaya-ultj",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/04/24/ultrajaya_ultj.jpg",
-   "t_ko": "Frisian Flag 모회사, Ultrajaya(ULTJ) 새 최대주주 등극 예정",
-   "t_id": "Induk Frisian Flag Bakal Jadi Pengendali Baru Ultrajaya (ULTJ)",
-   "ai_ko": "· FCIH, Ultrajaya(ULTJ) 신규 지배주주 등극\n· 74.7억주 유상증자, 발행가 Rp2,150\n· Frisian Flag Indonesia는 ULTJ 자회사로 편입",
-   "ai_id": "· FCIH jadi pengendali baru ULTJ\n· Rights issue 7,87 miliar saham Rp2.150\n· FFI masuk jadi anak usaha ULTJ",
-   "ai_tags": [
-    "유상증자",
-    "M&A",
-    "경영권"
-   ],
-   "ai_tags_id": [
-    "rights issue",
-    "akuisisi",
-    "pengendali"
-   ]
-  },
-  {
    "ts": "2026-09-18T14:37:33+07:00",
    "date": "2026-09-18",
    "time": "14:37",
@@ -17026,56 +17196,6 @@
     "korupsi",
     "properti",
     "manajemen"
-   ]
-  },
-  {
-   "ts": "2026-09-18T14:05:00+07:00",
-   "date": "2026-09-18",
-   "time": "14:05",
-   "src": "IDX Channel",
-   "t": "BAJA Kantongi Restu OJK untuk Gelar Rights Issue Rp450 Miliar",
-   "tags": [
-    "BAJA"
-   ],
-   "url": "https://www.idxchannel.com/market-news/baja-kantongi-restu-ojk-untuk-gelar-rights-issue-rp450-miliar",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/08/12/saranatama_baja.jpg",
-   "t_ko": "BAJA, OJK로부터 Rp450억 규모 유상증자 승인 획득",
-   "t_id": "BAJA Kantongi Restu OJK untuk Gelar Rights Issue Rp450 Miliar",
-   "ai_ko": "· Saranacentral Bajatama(BAJA) 유상증자 승인\n· 신주 9억주, 주당 Rp500, 조달액 Rp4,500억\n· 자금 대부분 Sarana Steel 차입금 상환용",
-   "ai_id": "· OJK setujui rights issue BAJA\n· 900 juta saham, Rp500, Rp450 miliar\n· Dana untuk lunasi utang ke Sarana Steel",
-   "ai_tags": [
-    "유상증자",
-    "부채상환",
-    "철강"
-   ],
-   "ai_tags_id": [
-    "rights issue",
-    "utang",
-    "baja"
-   ]
-  },
-  {
-   "ts": "2026-09-18T13:27:00+07:00",
-   "date": "2026-09-18",
-   "time": "13:27",
-   "src": "IDX Channel",
-   "t": "Gudang di Tangerang Kebakaran, Sekar Bumi (SKBM) Tegaskan Operasional Tetap Berjalan",
-   "tags": [
-    "SKBM"
-   ],
-   "url": "https://www.idxchannel.com/market-news/gudang-di-tangerang-kebakaran-sekar-bumi-skbm-tegaskan-operasional-tetap-berjalan",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/06/09/kebakaran_okz.jpg",
-   "t_ko": "SKBM, 탱거랑 창고 화재에도 정상 영업 유지 확인",
-   "t_id": "Gudang di Tangerang Kebakaran, Sekar Bumi (SKBM) Tegaskan Operasional Tetap Berjalan",
-   "ai_ko": "· Sekar Bumi(SKBM) Tangerang 창고 9/17 화재\n· Kawasan Industri Millennium 창고 일부 파손, 인명피해 없음\n· 가동 지속, 매출 90%가 수산물·대부분 수출",
-   "ai_id": "· Gudang SKBM di Tangerang kebakaran\n· Sebagian area rusak, tanpa korban\n· Operasional tetap berjalan, dievaluasi",
-   "ai_tags": [
-    "화재",
-    "식품"
-   ],
-   "ai_tags_id": [
-    "kebakaran",
-    "operasional"
    ]
   },
   {
@@ -17114,32 +17234,6 @@
    "ai_tags_id": [
     "kebakaran",
     "keterbukaan informas"
-   ]
-  },
-  {
-   "ts": "2026-09-18T11:28:00+07:00",
-   "date": "2026-09-18",
-   "time": "11:28",
-   "src": "IDX Channel",
-   "t": "Terkendala Likuiditas, PTSN Belum Penuhi Free Float 15 Persen",
-   "tags": [
-    "PTSN"
-   ],
-   "url": "https://www.idxchannel.com/market-news/terkendala-likuiditas-ptsn-belum-penuhi-free-float-15-persen",
-   "img": "https://img.idxchannel.com/media/439/images/idx/2025/03/19/Kenapa_Beberapa_Saham_Tidak_Bergerak_Bertahun-Tahun.png",
-   "t_ko": "PTSN, 유동성 부족으로 유통주식 비율 15% 미달",
-   "t_id": "Terkendala Likuiditas, PTSN Belum Penuhi Free Float 15 Persen",
-   "ai_ko": "· PTSN 유통주식비율 10%로 기준 미달\n· 거래소 최소 요건은 15%, 거래 부진 지속\n· 유상증자·제3자배정 검토, 투자자 확보 난항",
-   "ai_id": "· Free float PTSN sekitar 10%\n· Ketentuan BEI minimal 15%, likuiditas tipis\n· Kaji rights issue dan private placement",
-   "ai_tags": [
-    "유상증자",
-    "규제",
-    "유동성"
-   ],
-   "ai_tags_id": [
-    "rights issue",
-    "regulasi",
-    "likuiditas"
    ]
   },
   {
@@ -17495,6 +17589,21 @@
    ]
   },
   {
+   "ts": "2026-09-17T18:18:21.444753+07:00",
+   "date": "2026-09-17",
+   "time": "09/17",
+   "src": "IDX Channel",
+   "t": "10 Saham Top Gainer Perdagangan Kamis 17 September, Ada TEBE dan FILM",
+   "tags": [
+    "FILM",
+    "TEBE"
+   ],
+   "url": "https://www.idxchannel.com/market-news/10-saham-top-gainer-perdagangan-kamis-17-september-ada-tebe-dan-film",
+   "t_est": true,
+   "t_ko": "9월 17일 목요일 상승 상위 10개 종목 — TEBE·FILM 포함",
+   "t_id": "10 Saham Top Gainer Perdagangan Kamis 17 September, Ada TEBE dan FILM"
+  },
+  {
    "ts": "2026-09-17T10:23:19+07:00",
    "date": "2026-09-17",
    "time": "09/17",
@@ -17784,6 +17893,19 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T18:08:52.432050+07:00",
+   "date": "2026-09-18",
+   "time": "18:08",
+   "src": "Jawa Pos",
+   "t": "Harga Emas Antam di Pegadaian Meroket Hingga Rp 26 Ribu Pada Jumat Ini",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609180190/harga-emas-antam-di-pegadaian-meroket-hingga-rp-26-ribu-pada-jumat-ini",
+   "g": 1,
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/15/ilustrasi-emas-batangan-istimewa-91ZgI.webp",
+   "t_ko": "금요일 금지금 가격, 그람당 2만 6,000루피아 급등",
+   "t_id": "Harga Emas Antam di Pegadaian Meroket Hingga Rp 26 Ribu Pada Jumat Ini"
+  },
+  {
    "ts": "2026-09-18T18:00:01+07:00",
    "date": "2026-09-18",
    "time": "18:00",
@@ -17792,8 +17914,8 @@
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/18/beauty-health-wellness-consumer-spending.html",
    "g": 1,
-   "t_ko": "뷰티·건강·웰니스, 하나의 소매 카테고리로 통합",
-   "t_id": "Kecantikan, Kesehatan, dan Kebugaran Konvergen Jadi Satu Kategori Ritel"
+   "t_ko": "뷰티·헬스·웰니스 유통 시장의 단일 카테고리 통합 추세",
+   "t_id": "Kecantikan, Kesehatan, dan Kebugaran Menyatu dalam Satu Kategori Ritel"
   },
   {
    "ts": "2026-09-18T17:55:00+07:00",
@@ -17805,7 +17927,7 @@
    "url": "https://www.wsj.com/pro/bankruptcy/daily-briefing-higher-rates-deepen-private-equitys-zombie-fund-problem-26ac6796?mod=rss_markets_main",
    "g": 1,
    "img": "https://images.wsj.net/im-39043944",
-   "t_ko": "데일리 브리핑: 고금리가 심화하는 사모펀드의 한계기업 문제",
+   "t_ko": "고금리 장기화로 사모펀드의 한계기업 자금난 심화",
    "t_id": "Daily Briefing: Suku Bunga Tinggi Perparah Masalah Zombie-Fund Ekuitas Swasta"
   },
   {
@@ -18205,19 +18327,6 @@
    "t_id": "The Fed Tak Pernah SEYAKIN Ini pada Pertumbuhan Ekonomi, Simak Saran KKR bagi Investor"
   },
   {
-   "ts": "2026-09-18T17:08:00+07:00",
-   "date": "2026-09-18",
-   "time": "17:08",
-   "src": "MarketWatch",
-   "t": "The Fed hasn’t been this terse since 2007. What a 130-word statement signals for market stability.",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/the-fed-hasnt-been-this-terse-since-2007-what-a-130-word-statement-signals-for-market-stability-0fd31292?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-45285362",
-   "t_ko": "연준, 2007년 이래 최단 성명서 발표 — 130단어가 시사하는 시장 안정",
-   "t_id": "The Fed Paling Irit Bicara Sejak 2007, Ini Sinyal Pernyataan 130 Kata untuk Stabilitas Pasar"
-  },
-  {
    "ts": "2026-09-18T17:07:40+07:00",
    "date": "2026-09-18",
    "time": "17:07",
@@ -18441,7 +18550,7 @@
   {
    "k": "달러 인덱스 (DXY)",
    "v": "100.43",
-   "d": 0.2,
+   "d": 0.19,
    "ytd": 2.19,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
@@ -18452,9 +18561,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "95.69",
-   "d": -5.42,
-   "ytd": 66.65,
+   "v": "95.60",
+   "d": -5.51,
+   "ytd": 66.49,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18464,9 +18573,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,417.0",
-   "d": 0.46,
-   "ytd": 2.11,
+   "v": "4,419.6",
+   "d": 0.52,
+   "ytd": 2.17,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18488,9 +18597,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,219",
-   "d": -0.26,
-   "ytd": -2.77,
+   "v": "16,187",
+   "d": -0.46,
+   "ytd": -2.97,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -24041,7 +24150,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-18 18:00",
-  "pc_age_min": 5,
+  "pc_age_min": 10,
   "news_ai_cache": 78,
   "news_ai_hit": 39,
   "on_runner": true,
@@ -44567,9 +44676,9 @@
    "ratio": 16.5,
    "ev_ko": "지분매각·경영권",
    "ev_id": "Divestasi & pengendali",
-   "hl": "FrieslandCampina, Ultrajaya(ULTJ) 최대주주 등극 예정",
-   "hl_id": "FrieslandCampina Bakal Jadi Pengendali Saham Ultrajaya",
-   "url": "https://www.liputan6.com/saham/read/8294593/frieslandcampina-bakal-jadi-pengendali-saham-ultrajaya",
+   "hl": "Frisian Flag 모회사, Ultrajaya(ULTJ) 새 최대주주 등극 예정",
+   "hl_id": "Induk Frisian Flag Bakal Jadi Pengendali Baru Ultrajaya (ULTJ)",
+   "url": "https://www.idxchannel.com/market-news/induk-frisian-flag-bakal-jadi-pengendali-baru-ultrajaya-ultj",
    "score": 91.4,
    "s_news": 100,
    "s_size": 58,
@@ -44592,11 +44701,11 @@
    "ratio": 1.5,
    "ev_ko": "자본구조",
    "ev_id": "Aksi korporasi",
-   "hl": "MBMA, 자사주 매입 발표 후 주가 4% 상승",
-   "hl_id": "Saham MBMA Menguat 4% Usai Umumkan Buyback",
-   "url": "https://www.liputan6.com/saham/read/8294151/saham-mbma-menguat-4-usai-umumkan-buyback",
-   "score": 77.4,
-   "s_news": 90,
+   "hl": "MBMA, 자사주 매입 기간 연장",
+   "hl_id": "Merdeka Battery (MBMA) Kembali Perpanjang Masa Buyback Saham",
+   "url": "https://www.idxchannel.com/market-news/merdeka-battery-mbma-kembali-perpanjang-masa-buyback-saham",
+   "score": 79.8,
+   "s_news": 98,
    "s_size": 69,
    "s_surge": 25,
    "s_move": 100,
@@ -44605,7 +44714,7 @@
    "alpha": 5.14,
    "vrank": 34,
    "flow": -14.32,
-   "srcs": 1
+   "srcs": 2
   },
   {
    "t": "IDEA",
@@ -45804,7 +45913,7 @@
     "opened": "2026-W38",
     "last": "",
     "type_id": "Lainnya",
-    "q_id": "Apakah kerugian sekitar Rp17 triliun akibat pengurangan afiliasi dari 68 menjadi 19 perusahaan tercermin pada kinerja kuartal berapa dan apakah restrukturisasi akan selesai pada akhir tahun"
+    "q_id": "Tentang kuartal mana kerugian sekitar Rp17 triliun akibat pengurangan afiliasi dari 68 menjadi 19 perusahaan akan tercatat dan apakah restrukturisasi akan selesai pada akhir tahun"
    },
    {
     "id": "th19",
@@ -45815,7 +45924,7 @@
     "opened": "2026-W38",
     "last": "",
     "type_id": "Regulasi & litigasi",
-    "q_id": "Hasil audit BP BUMN terhadap ADCP dan rencana penanganan 2.400 unit LRT City yang belum diserahterimakan, serta besaran pengakuan rugi konsolidasian ADHI"
+    "q_id": "Hasil audit BP BUMN terhadap ADCP, rencana penanganan 2.400 unit LRT City yang belum diserahterimakan, serta skala pengakuan kerugian konsolidasian ADHI"
    },
    {
     "id": "th20",
@@ -45826,7 +45935,7 @@
     "opened": "2026-W38",
     "last": "",
     "type_id": "M&A · Kepemilikan Saham",
-    "q_id": "Apakah diakusisinya 66,58% saham Nawasena Nugra Investama telah selesai serta apakah harga dan jadwal Penawaran Tender Wajib (MTO) diumumkan"
+    "q_id": "Apakah akuisisi 66,58% saham di Nawasena Nugra Investama telah selesai dan apakah harga serta jadwal penawaran tender wajib diumumkan"
    }
   ]
  }
