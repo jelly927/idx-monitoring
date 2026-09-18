@@ -850,7 +850,15 @@ function wlPick(i){const x=wlList[i];if(!x)return;wlAdd(x.t);}
 function wlAdd(t){if(!WL.includes(t)){WL.unshift(t);while(WL.length>WL_MAX)WL.pop();wlSave();}$('wlq').value='';$('wlqbox').hidden=true;renderWL();$('wlq').focus();}
 function wlRemove(t){WL=WL.filter(x=>x!==t);wlSave();renderWL();}
 function wlRow(t){const o=findStock(t);const i=WL.indexOf(t);return`<div class="row" draggable="true" ondragstart="wlDS(event,'${t}')" ondragover="wlDO(event)" ondrop="wlDrop(event,'${t}')" onclick="openDr('${t}')"><span class="ord"><i class="${i===0?'off':''}" title="${T('tUp')}" onclick="event.stopPropagation();wlMove('${t}',-1)">▲</i><i class="${i===WL.length-1?'off':''}" title="${T('tDown')}" onclick="event.stopPropagation();wlMove('${t}',1)">▼</i></span>${logo(t,o.n)}<div class="nm"><b>${o.n||t}</b><small>${t}${o.val!=null?' · '+T('turnoverK')+' '+idr(o.val).replace(/<span.*<\/span>/,''):''}${o.fnet!=null?' · '+T('fnet')+' <span class="'+(o.fnet>=0?'up':'dn')+'">'+(o.fnet>=0?'+':'−')+idrShort(o.fnet)+'</span>':''}</small></div><div class="px"><b class="num">${o.px==null?'—':'Rp'+fmt(o.px,0)}</b><small class="num">${sg(o.pct)}</small></div><span class="rm" title="${T('tDel')}" onclick="event.stopPropagation();wlRemove('${t}')">×</span></div>`;}
-function wlShow(){const rc=$('rank-card'),w=$('wl'),c=$('wl-card');if(!rc||!w||!c)return WL_SHOW;const wide=innerWidth>1280;c.style.height='';c.style.flex='';if(wide){const h=rc.getBoundingClientRect().bottom-c.getBoundingClientRect().top;if(h>200){c.style.height=h+'px';c.style.flex='none';}}const avail=rc.getBoundingClientRect().bottom-w.getBoundingClientRect().top-16;return wide?Math.max(3,Math.min(7,Math.floor(avail/47))):WL_SHOW;}   // 카드 안에는 최대 7개, 나머지는 더보기   // 종목 랭킹 카드 바닥까지 들어가는 행 수(최소 5)
+function wlShow(){const rc=$('rank-card'),w=$('wl'),c=$('wl-card');if(!rc||!w||!c)return WL_SHOW;const wide=innerWidth>1280;c.style.height='';c.style.flex='';
+  /* 관심 종목이 늘면 이 카드가 열을 밀어 올리고, 열이 커지면 종목 랭킹 카드도 같이 늘어난다(서로 키워주는 되먹임).
+     그래서 재기 전에 이 카드를 0으로 접어 랭킹 카드의 제 높이를 확정한 뒤, 거기에 맞춰 높이를 박는다.
+     넘치는 종목은 #wl 안에서 스크롤된다 — 다른 카드를 밀지 않는다. */
+  let h=0;
+  if(wide){c.style.height='0px';c.style.flex='none';void c.offsetHeight;
+    h=rc.getBoundingClientRect().bottom-c.getBoundingClientRect().top;
+    if(h>200){c.style.height=h+'px';}else{c.style.height='';c.style.flex='';}}
+  const avail=rc.getBoundingClientRect().bottom-w.getBoundingClientRect().top-16;return wide?Math.max(3,Math.min(7,Math.floor(avail/47))):WL_SHOW;}   // 카드 안에는 최대 7개, 나머지는 더보기   // 종목 랭킹 카드 바닥까지 들어가는 행 수(최소 5)
 function renderWL(){if(!DATA)return;$('wlcnt').textContent=`${WL.length} / ${WL_MAX}`;const rows=WL.map(wlRow);const SHOW=wlShow();const slots=Math.max(0,SHOW-rows.length);
   /* 주목(WATCHOUT) 카드처럼 칸 높이를 고정하고 넘치는 건 스크롤로 본다 — 더보기·오버레이는 안 쓴다 */
   $('wl').innerHTML=rows.join('')+Array.from({length:slots},(_,i)=>`<div class="wl-slot" onclick="wlToggle()">${i===0&&!rows.length?`<b>＋</b>${T('wlEmpty')}`:''}</div>`).join('');
