@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 21:30",
+ "updated": "2026-09-18 21:40",
  "delay_min": 15,
- "fx_basis": "12.77 IDR/KRW · USD/IDR 17,740 · USD/KRW 1,390 · 20:45 Yahoo",
- "idr_per_krw": 12.7667,
+ "fx_basis": "12.76 IDR/KRW · USD/IDR 17,740 · USD/KRW 1,390 · 20:45 Yahoo",
+ "idr_per_krw": 12.7639,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,9 +326,9 @@
    "code": "SUN10Y",
    "label": "SUN 10Y",
    "name": "국채 10년물",
-   "px": 7.157,
-   "prev": 7.157,
-   "pct": 0.0,
+   "px": 7.154,
+   "prev": 7.17,
+   "pct": -1.5,
    "spark": [
     7.095,
     7.096,
@@ -337,10 +337,11 @@
     7.156,
     7.157
    ],
-   "span": "1W",
+   "span": "1M",
    "inv": true,
-   "asof": "investing.com · 09/15",
-   "unit": "bp"
+   "unit": "bp",
+   "asof": "PHEI · 09/18",
+   "spark_stale": "investing.com · 09/15"
   }
  ],
  "index": {
@@ -16016,10 +16017,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7622.38,
+   "px": 7623.96,
    "prev": 7637.05,
-   "pct": -0.19,
-   "asof": "21:25",
+   "pct": -0.17,
+   "asof": "21:35",
    "live": true,
    "spark": [
     7643.16,
@@ -16033,17 +16034,19 @@
     7621.79,
     7623.33,
     7622.2,
-    7622.38
+    7623.98,
+    7622.65,
+    7623.96
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26392.23,
+   "px": 26391.1,
    "prev": 26418.3,
    "pct": -0.1,
-   "asof": "21:25",
+   "asof": "21:35",
    "live": true,
    "spark": [
     26506.5,
@@ -16057,17 +16060,19 @@
     26391.67,
     26384.96,
     26393.37,
-    26392.23
+    26390.62,
+    26382.16,
+    26391.1
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51580.92,
+   "px": 51568.07,
    "prev": 51776.48,
-   "pct": -0.38,
-   "asof": "21:25",
+   "pct": -0.4,
+   "asof": "21:35",
    "live": true,
    "spark": [
     51685.21,
@@ -16081,7 +16086,9 @@
     51565.06,
     51609.2,
     51588.99,
-    51580.92
+    51599.88,
+    51569.14,
+    51568.07
    ]
   },
   {
@@ -16426,8 +16433,8 @@
    ],
    "url": "https://katadata.co.id/berita/nasional/6aad48ccef73e/kpk-geledah-rumah-dirjen-atr-lampri-dan-kantor-summarecon-terkait-kasus-hgb",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/18/Komisi_Pemberantasan_Korupsi_menggeledah_kantor_PT_Summarecon_Ag-2026_09_18-20_59_43_9c6353b28fd55c557e0292efebb144a8_620x413_thumb.jpg",
-   "t_id": "KPK Geledah Rumah Dirjen ATR Lampri dan Kantor Summarecon Terkait Kasus HGB",
-   "t_ko": "KPK, HGB 관련 부패 의혹으로 ATR Lampri 차관 자택 및 Summarecon 사무실 압수수색"
+   "t_ko": "KPK, HGB 관련 부패 의혹으로 ATR Lampri 차관 자택 및 Summarecon 사무실 압수수색",
+   "t_id": "KPK Geledah Rumah Dirjen ATR Lampri dan Kantor Summarecon Terkait Kasus HGB"
   },
   {
    "ts": "2026-09-18T20:20:00+07:00",
@@ -17402,6 +17409,30 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T21:30:35+07:00",
+   "date": "2026-09-18",
+   "time": "21:30",
+   "src": "Detik",
+   "t": "Prabowo Klaim Harga Pupuk Turun!",
+   "tags": [],
+   "url": "https://finance.detik.com/industri/d-8669347/prabowo-klaim-harga-pupuk-turun",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/30/distribusi-pupuk-bersubsidi-digenjot-untuk-dukung-produksi-beras-1782813104202_169.jpeg?w=360&q=90",
+   "t_id": "Prabowo Klaim Harga Pupuk Turun!",
+   "t_ko": "Prabowo, 비료 가격 하락 주장"
+  },
+  {
+   "ts": "2026-09-18T21:27:56+07:00",
+   "date": "2026-09-18",
+   "time": "21:27",
+   "src": "Bloomberg",
+   "t": "Bowman Expects Finalized Fed Stress Test Revisions in ‘Coming Weeks’",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-18/bowman-finalized-stress-test-changes-in-coming-weeks-video",
+   "g": 1,
+   "t_ko": "Bowman 연준 이사, 수주 내 은행 스트레스테스트 개정안 최종 확정 전망",
+   "t_id": "Bowman Ekspektasi Revisi Uji Stres Fed Final dalam 'Pekan Mendatang'"
+  },
+  {
    "ts": "2026-09-18T21:24:12+07:00",
    "date": "2026-09-18",
    "time": "21:24",
@@ -17410,8 +17441,33 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8669337/prabowo-ngaku-dari-kecil-disumpah-jadikan-ri-sejahtera-tak-ada-orang-lapar",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/18/presiden-prabowo-subianto-1789739989549_169.jpeg?w=360&q=90",
-   "t_id": "Prabowo Ngaku dari Kecil Disumpah Jadikan RI Sejahtera-Tak Ada Orang Lapar",
-   "t_ko": "Prabowo, 국민 빈곤 없는 번영하는 인도네시아 건설 다짐"
+   "t_ko": "Prabowo, 국민 빈곤 없는 번영하는 인도네시아 건설 다짐",
+   "t_id": "Prabowo Ngaku dari Kecil Disumpah Jadikan RI Sejahtera-Tak Ada Orang Lapar"
+  },
+  {
+   "ts": "2026-09-18T21:20:46+07:00",
+   "date": "2026-09-18",
+   "time": "21:20",
+   "src": "CNBC",
+   "t": "Rep. Chip Roy doesn't want to regulate AI, but says Congress should have an oversight role",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/chip-roy-ai-congress-regulate.html",
+   "g": 1,
+   "t_ko": "Chip Roy 의원, AI 규제 반대하며 의회 감독 역할 강조",
+   "t_id": "Anggota DPR Chip Roy Tolak Regulasi AI, Sebut Kongres Perlu Berperan Pengawasan"
+  },
+  {
+   "ts": "2026-09-18T21:20:00+07:00",
+   "date": "2026-09-18",
+   "time": "21:20",
+   "src": "Yahoo Finance",
+   "t": "2 Growth Stocks I Plan to Buy if the Stock Market Crashes",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/2-growth-stocks-plan-buy-142000827.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/b14e0c02a7f221a2273cd5fd22dd8aa1.jpg",
+   "t_ko": "증시 폭락 시 매수할 성장주 2선",
+   "t_id": "2 Saham Pertumbuhan yang Ingin Saya Beli jika Pasar Saham Anjlok"
   },
   {
    "ts": "2026-09-18T21:18:03+07:00",
@@ -17422,8 +17478,8 @@
    "tags": [],
    "url": "https://finance.detik.com/bursa-dan-valas/d-8669334/bursa-mineral-1-januari-2027-peralihan-pengawasan-dari-bappebti-dimulai",
    "img": "https://akcdn.detik.net.id/community/media/visual/2025/05/10/di-balik-kemilau-timah-1746867415034_169.jpeg?w=360&q=90",
-   "t_id": "Bursa Mineral 1 Januari 2027, Peralihan Pengawasan dari Bappebti Dimulai",
-   "t_ko": "2027년 1월 1일 미네랄 거래소 개설 — Bappebti에서 감독권 이관"
+   "t_ko": "2027년 1월 1일 미네랄 거래소 개설 — Bappebti에서 감독권 이관",
+   "t_id": "Bursa Mineral 1 Januari 2027, Peralihan Pengawasan dari Bappebti Dimulai"
   },
   {
    "ts": "2026-09-18T21:14:03+07:00",
@@ -17452,7 +17508,7 @@
    "t_id": "S&P 500 Bergerak Datar Usai Reli Sehari Terbaik dalam Enam Pekan: AlphaCheck"
   },
   {
-   "ts": "2026-09-18T21:10:05+07:00",
+   "ts": "2026-09-18T21:10:00+07:00",
    "date": "2026-09-18",
    "time": "21:10",
    "src": "CNA",
@@ -17513,6 +17569,18 @@
    "g": 1,
    "t_ko": "사우디 송유관 폐쇄 여파에 미국 유가 상승",
    "t_id": "Minyak Mentah AS Naik Seiring Pasar Evaluasi Dampak Penutupan Pipa Saudi"
+  },
+  {
+   "ts": "2026-09-18T20:59:57+07:00",
+   "date": "2026-09-18",
+   "time": "20:59",
+   "src": "Reuters",
+   "t": "Goldman's October hike call underscores renewed Fed tightening risks",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPNnA4bVp0ZlNGeVVZRGJvNmIwcVdmSHN3N1I1WlpaYldOaDdGUEoxUkxJNjd3ZkFkNkxhN09iR0RJbzU0VnQxdHdqUHhhVHRsZ3B4cnl0dHE5VHh1WHFBbjRFNnhpQ2NtRjlNQXRtUUVHN0w3azFuS2VxMEJ1NHB3SG5MVWl0NzVDcGNNVmlwYXJsMzZoNWpr?oc=5",
+   "g": 1,
+   "t_ko": "Goldman Sachs, 10월 금리 인상 전망으로 연준 긴축 우려 재부각",
+   "t_id": "Seruan Kenaikan Suku Bunga Goldman Oktober Tegaskan Risiko Pengetatan The Fed"
   },
   {
    "ts": "2026-09-18T20:56:29+07:00",
@@ -17671,44 +17739,6 @@
    "t_id": "AirNav Indonesia Buka Lowongan Kerja 2026: Cek 7 Posisi dan Syaratnya"
   },
   {
-   "ts": "2026-09-18T20:34:00+07:00",
-   "date": "2026-09-18",
-   "time": "20:34",
-   "src": "WSJ",
-   "t": "Treasury Yields Tick Higher as Markets Price Hawkish Fed",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/jgb-yields-decline-as-energy-inflation-fears-ease-85bf5679?mod=rss_markets_main",
-   "g": 1,
-   "t_ko": "매파적 연준 전망 반영하며 국채 금리 소폭 상승",
-   "t_id": "Imbal Hasil US Treasury Naik Seiring Pasar Perhitungkan The Fed Hawkish"
-  },
-  {
-   "ts": "2026-09-18T20:32:00+07:00",
-   "date": "2026-09-18",
-   "time": "20:32",
-   "src": "MarketWatch",
-   "t": "How can I get my employees to stop oversharing at work?",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/how-can-i-get-my-employees-to-stop-oversharing-at-work-540ba78c?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-07441721",
-   "t_ko": "직원의 과도한 사생활 공유 막는 소통 관리 방안",
-   "t_id": "Cara Mencegah Karyawan Terlalu Terbuka di Tempat Kerja"
-  },
-  {
-   "ts": "2026-09-18T20:30:00+07:00",
-   "date": "2026-09-18",
-   "time": "20:30",
-   "src": "MarketWatch",
-   "t": "A sideways market and rising earnings are presenting a buying opportunity for this crucial sector",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/a-sideways-market-and-rising-earnings-are-presenting-opportunities-not-seen-since-chatgpt-first-launched-0c37f89d?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-02558330",
-   "t_ko": "박스권 장세와 실적 개선이 맞물린 핵심 업종 매수 기회",
-   "t_id": "Pasar Mendatar dan Kinerja Menanjak Jadi Peluang Beli Sektor Vital"
-  },
-  {
    "ts": "2026-09-18T20:29:54+07:00",
    "date": "2026-09-18",
    "time": "20:29",
@@ -17719,18 +17749,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/07/menteri-perhubungan-dudy-purwagandhi-tengah-mengelar-doorstop-usai-rapat-dampak-sebaran-abu-vulkanik-di-bandara-soekarno-hatta-tangerang-minggu-06092026-hanung-hambara-jawa-pos-ZNfRU.webp",
    "t_ko": "교통부, 해운국장 해임 단행하며 교통부 평가 시사",
    "t_id": "Menhub Dudy Copot Muhammad Masyhud dari Jabatan Dirjen Hubla, Bentuk Evaluasi Kemenhub"
-  },
-  {
-   "ts": "2026-09-18T20:27:33+07:00",
-   "date": "2026-09-18",
-   "time": "20:27",
-   "src": "Bloomberg",
-   "t": "Options Triple Witching Sees $7 Trillion Expiring on Friday",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-18/options-triple-witching-sees-7-trillion-expiring-on-friday",
-   "g": 1,
-   "t_ko": "미국 선물옵션 동시 만기일에 7조 달러 규모 소멸",
-   "t_id": "Triple Witching Opsi Catat $7 Triliun Kedaluwarsa pada Jumat"
   },
   {
    "ts": "2026-09-18T20:24:00+07:00",
@@ -17858,18 +17876,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260918195834-335.png",
    "t_ko": "가상자산 시장 횡보 속 자산 토큰화 수요 증가",
    "t_id": "Pasar Kripto Sideways, Tokenisasi Aset Kian Diminati"
-  },
-  {
-   "ts": "2026-09-18T20:00:00+07:00",
-   "date": "2026-09-18",
-   "time": "20:00",
-   "src": "Katadata",
-   "t": "BRI Kartu Kredit Siapkan Jalur Khusus ke MAMA Awards 2026 di Osaka, Cek Caranya",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/keuangan/6aad3607dfd33/bri-kartu-kredit-siapkan-jalur-khusus-ke-mama-awards-2026-di-osaka-cek-caranya",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/18/BRI_Kartu_Kredit_menghadirkan_program_spesial_berhadiah_MAMA_Awa-2026_09_18-19_50_41_bed8b00c9b3757851357bdc3bb7787a2_620x413_thumb.jpg",
-   "t_ko": "BRI 카드, 오사카 개최 2026 MAMA 어워즈 단독 패키지 출시",
-   "t_id": "BRI Kartu Kredit Siapkan Jalur Khusus ke MAMA Awards 2026 di Osaka, Cek Caranya"
   }
  ],
  "kisi_news": [
@@ -18047,9 +18053,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.992%",
-   "d": 0.91,
-   "ytd": 19.91,
+   "v": "5.000%",
+   "d": 1.07,
+   "ytd": 20.11,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -18082,9 +18088,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "97.86",
-   "d": -3.27,
-   "ytd": 70.43,
+   "v": "97.88",
+   "d": -3.25,
+   "ytd": 70.46,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18094,9 +18100,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,391.4",
-   "d": -0.12,
-   "ytd": 1.52,
+   "v": "4,383.5",
+   "d": -0.3,
+   "ytd": 1.34,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18141,7 +18147,68 @@
    "note_id": "FCPO Bursa Malaysia kontrak terdekat · investing.com · Awal tahun 4,050"
   }
  ],
- "curve": null,
+ "curve": {
+  "date": "2026-09-18",
+  "src": "PHEI (IBPA)",
+  "rows": [
+   [
+    0.1,
+    6.6203,
+    6.5966
+   ],
+   [
+    1.0,
+    6.6821,
+    6.6953
+   ],
+   [
+    2.0,
+    6.7601,
+    6.7925
+   ],
+   [
+    3.0,
+    6.8425,
+    6.8806
+   ],
+   [
+    5.0,
+    6.9869,
+    7.02
+   ],
+   [
+    7.0,
+    7.0834,
+    7.1075
+   ],
+   [
+    10.0,
+    7.1542,
+    7.1696
+   ],
+   [
+    15.0,
+    7.1846,
+    7.1957
+   ],
+   [
+    20.0,
+    7.1885,
+    7.199
+   ],
+   [
+    25.0,
+    7.1889,
+    7.1994
+   ],
+   [
+    30.0,
+    7.1889,
+    7.1994
+   ]
+  ],
+  "n": 41
+ },
  "calendar": [
   {
    "date": "2026-08-31",
@@ -23445,7 +23512,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-18 20:52",
-  "pc_age_min": 38,
+  "pc_age_min": 48,
   "news_ai_cache": 56,
   "news_ai_hit": 30,
   "on_runner": true,
