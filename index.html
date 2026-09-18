@@ -337,7 +337,6 @@ td .n2{display:block;font-size:11px;color:var(--ink3);font-weight:400}
 .hdctr .v{font-size:23px;font-weight:800;line-height:1;letter-spacing:-.5px}
 .hdctr .l{font-size:10px;color:var(--ink3);margin-top:2px;max-width:76px;text-align:center;line-height:1.2;word-break:keep-all}
 em.af{background:#fdf0e3!important;color:#a85d16!important;border:1px solid #f0d3ae}
-em.k.kc{background:linear-gradient(90deg,#fdecea 0 52%,#fdf0e3 52% 100%)!important;color:#a8431a!important;border:1px solid #f0c9b0!important;cursor:help}
 .hdbg{padding:0 0 4px!important}
 .hdbadge{display:inline-block;font-size:10px;font-weight:800;padding:2px 9px;border-radius:999px;border:1px solid;white-space:nowrap}
 .hdlg{flex:1 1 auto;min-width:0}
@@ -1491,14 +1490,14 @@ function holdHtml(t,H){const d=((H||{}).st||{})[t];
     const _af=(r[8]&&r[8][0])?r[8]:null;
     /* 1위 주주가 IDX 공표 지배주주면 '최대주주'와 '관계자·지배주주'가 같은 말이다 — 칩 하나로 합치고 근거는 툴팁에 남긴다 */
     const _afDup=(i===0&&_af&&(_af[1]||'').trim()==='Pengendali');
-    if(i===0)c.push('<em class="k'+(_afDup?' kc':'')+'"'+(_afDup?' title="'+hdEsc(T('afSrc'))+'"':'')
-      +'>'+T('hdB1')+(_afDup?' \u00b7 '+T('afCtl'):'')+'</em>');
+    if(i===0)c.push('<em class="k">'+T('hdB1')+'</em>');
     const cn=cls[r[3]]||'';if(cn&&cn!=='Individual')c.push('<em title="'+hdEsc(cn)+'">'+hdEsc(hdCls(cn))+'</em>');
     /* 보관 명의(증권사·프라이빗뱅크 계좌에 여러 고객 지분이 한 이름으로 묶인 것)는 실소유자가 아니라서 역조회를 열지 않는다 */
     const cu=r[6]===1, id=r[5];
     if(cu)c.push('<em class="cu" title="'+T('hdCuT')+'">'+T('hdCu')+'</em>');
     /* 관계자 표시 — IDX 기업 프로필 공표값을 옮긴 것(우리가 판정하지 않는다). r[8]=[유형,직위원문] */
-    if(_af&&!_afDup)c.push('<em class="af" title="'+hdEsc(T('afSrc')+' \u00b7 '+(_af[1]||''))+'">'+T('afT')+' \u00b7 '+afJob(_af)+'</em>');
+    /* 1행이 지배주주면 '최대주주' 칩과 뜻이 겹친다 — 직위만 빼고 '관계자' 는 남긴다(근거는 툴팁) */
+    if(_af)c.push('<em class="af" title="'+hdEsc(T('afSrc')+' \u00b7 '+(_af[1]||''))+'">'+T('afT')+(_afDup?'':' \u00b7 '+afJob(_af))+'</em>');
     const clk=(!cu&&id>=0);
     return'<div class="r"><span class="nm"><span class="'+(clk?'lk':'')+'" title="'+hdEsc(r[0])+'"'
       +(clk?' onclick="hdIx('+id+',this)"':'')+'>'+hdEsc(hdName(r[0]))+'</span>'+c.join('')
