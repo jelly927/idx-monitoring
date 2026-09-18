@@ -1025,11 +1025,10 @@ function rowFit(keep){
   const band={};
   cols.forEach(c=>{const t=Math.round(c.el.getBoundingClientRect().top/8)*8;(band[t]=band[t]||[]).push(c);});
   Object.values(band).forEach(g=>{
-    const byN={};g.forEach(c=>{(byN[c.cards.length]=byN[c.cards.length]||[]).push(c);});
-    Object.values(byN).forEach(list=>{
+    const list=g.filter(c=>c.cards.length>1&&!c.cards[0].classList.contains('banner'));
+    {
       if(list.length<2)return;
-      const n=list[0].cards.length;
-      for(let i=0;i<n-1;i++){
+      for(let i=0;i<1;i++){          /* 맨 윗 카드 한 줄만 — 그 아래는 배너가 끼어 자연스럽게 흐르게 둔다 */
         const cards=list.map(c=>c.cards[i]);
         const hs=cards.map(el=>el.getBoundingClientRect().height).filter(h=>h>0);
         if(!hs.length)continue;
@@ -1041,7 +1040,7 @@ function rowFit(keep){
         /* 채움 카드는 flex-grow 가 남는 높이를 도로 먹어 버리므로 flex 를 끄고 높이를 못박는다 */
         soft.forEach(el=>{el.style.flex='0 0 auto';el.style.height=h+'px';el.style.minHeight='';});
         hard.forEach(el=>{el.style.minHeight=h+'px';el.style.height='';});
-      }});});}
+      }}});}
 function annCount(){const list=$('ann');if(!list)return;
   const shown=[...list.children].filter(el=>el.classList.contains('row')).length;
   const c=$('anncnt'),m=$('annmore');
@@ -1476,7 +1475,7 @@ function negoCard(){
   const all=(DATA.stocks||[]).filter(x=>x.nrv>0).sort((a,b)=>b.nrv-a.nrv);
   const i=DATA.index||{}, reg=i.value_idr||0, nr=i.nonreg_idr||0;
   if(!all.length)return '<div class="empty">'+T('ngNone')+'</div>';
-  const top=all[0], rest=all.slice(1,6);
+  const top=all[0], rest=all.slice(1,20);   /* 칸 높이만큼만 보이고 나머지는 카드 안에서 스크롤 (fitLists) */
   const big=r=>(r.nrper||0)>=NG_BIG;
   const nm=o=>(o.n||'').replace(/\s*\(Persero\)/i,'');
   const hero='<div class="nghero">'
@@ -1622,7 +1621,7 @@ document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-la
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
 /* 기본 배치 (2026-09-18 사장 지시) — 장외 대량거래는 왼쪽, 뉴스(시장·종목)는 오른쪽,
    홍보 배너는 아랫줄 좌(banner)·우(banner2) 한 장씩 */
-const LAY_DEF={cols:[['rank-card'],['status-card','gidx-card','wl-card'],['mnews-card'],['nego-card','banner','ann-card'],['foreign-card','daycal-card','macro-card'],['todayev-card','banner2','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
+const LAY_DEF={cols:[['rank-card'],['status-card','gidx-card','wl-card'],['mnews-card'],['todayev-card','nego-card','banner'],['foreign-card','macro-card','ann-card'],['daycal-card','banner2','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
 const LAY_CARDS=LAY_DEF.cols.flat();
 const RANK_ALL=[['value','value'],['gainers','gainers'],['losers','losers'],['mcap','mcapR'],['catalyst','catalyst'],['turnover','surge'],['volume','volR'],['fnet_top','fTop'],['fnet_bot','fBot']];
 let LAY=null,layEdit=false,layDrag=null;
