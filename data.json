@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 20:58",
+ "updated": "2026-09-18 21:07",
  "delay_min": 15,
- "fx_basis": "12.78 IDR/KRW · USD/IDR 17,740 · USD/KRW 1,388 · 20:45 Yahoo",
- "idr_per_krw": 12.7788,
+ "fx_basis": "12.77 IDR/KRW · USD/IDR 17,740 · USD/KRW 1,389 · 20:45 Yahoo",
+ "idr_per_krw": 12.7693,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -16017,10 +16017,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7631.77,
+   "px": 7623.44,
    "prev": 7637.05,
-   "pct": -0.07,
-   "asof": "20:55",
+   "pct": -0.18,
+   "asof": "21:05",
    "live": true,
    "spark": [
     7643.16,
@@ -16028,17 +16028,19 @@
     7640.03,
     7635.6,
     7630.95,
-    7631.77
+    7628.05,
+    7621.56,
+    7623.44
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26461.0,
+   "px": 26416.24,
    "prev": 26418.3,
-   "pct": 0.16,
-   "asof": "20:55",
+   "pct": -0.01,
+   "asof": "21:05",
    "live": true,
    "spark": [
     26506.5,
@@ -16046,17 +16048,19 @@
     26487.22,
     26474.83,
     26460.54,
-    26461.0
+    26440.38,
+    26405.95,
+    26416.24
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51591.49,
+   "px": 51538.4,
    "prev": 51776.48,
-   "pct": -0.36,
-   "asof": "20:55",
+   "pct": -0.46,
+   "asof": "21:05",
    "live": true,
    "spark": [
     51685.21,
@@ -16064,7 +16068,9 @@
     51644.59,
     51627.15,
     51593.09,
-    51591.49
+    51577.74,
+    51555.51,
+    51538.4
    ]
   },
   {
@@ -17398,9 +17404,9 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-18T20:57:48.618701+07:00",
+   "ts": "2026-09-18T21:05:19+07:00",
    "date": "2026-09-18",
-   "time": "20:57",
+   "time": "21:05",
    "src": "Jawa Pos",
    "t": "Realisasi Subsidi Energi Tembus Rp 331 Triliun, Naik Rp 113 Triliun dari 2025",
    "tags": [],
@@ -17408,6 +17414,53 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/1fYKFUeniGOc5z25Ayl9ddfRAK50eT6NEE67JGST.webp",
    "t_ko": "에너지 보조금 집행액 Rp331조 — 2025년 대비 Rp113조 증가",
    "t_id": "Realisasi Subsidi Energi Tembus Rp 331 Triliun, Naik Rp 113 Triliun dari 2025"
+  },
+  {
+   "ts": "2026-09-18T21:03:00+07:00",
+   "date": "2026-09-18",
+   "time": "21:03",
+   "src": "WSJ",
+   "t": "New Fed Report on SVB Collapse Pins Blame on Fed’s Own Regulators",
+   "tags": [],
+   "url": "https://www.wsj.com/economy/central-banking/new-fed-report-on-svb-collapse-pins-blame-on-feds-own-regulators-9a3cb062?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-25561998",
+   "t_ko": "SVB 파산 보고서, 연준 자체 규제 실패 지목",
+   "t_id": "Laporan Baru The Fed Soal Runtuhnya SVB Salahkan Regulator Sendiri"
+  },
+  {
+   "ts": "2026-09-18T21:01:51+07:00",
+   "date": "2026-09-18",
+   "time": "21:01",
+   "src": "CNBC",
+   "t": "U.S. crude oil rises as market assesses disruption from Saudi pipeline closure",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/oil-prices-today-brent-wti-saudi-arabia-houthi.html",
+   "g": 1,
+   "t_ko": "사우디 송유관 폐쇄 여파에 미국 유가 상승",
+   "t_id": "Minyak Mentah AS Naik Seiring Pasar Evaluasi Dampak Penutupan Pipa Saudi"
+  },
+  {
+   "ts": "2026-09-18T20:54:00+07:00",
+   "date": "2026-09-18",
+   "time": "20:54",
+   "src": "Media Indonesia",
+   "t": "Legislator Nilai BUK Migas yang Bertanggung Jawab Langsung kepada Presiden sebagai Hal Positif",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/935065/legislator-nilai-buk-migas-yang-bertanggung-jawab-langsung-kepada-presiden-sebagai-hal-positif",
+   "t_id": "Legislator Nilai BUK Migas yang Bertanggung Jawab Langsung kepada Presiden sebagai Hal Positif",
+   "t_ko": "대통령 직속 Migas BUK 신설, 국회서 긍정 평가"
+  },
+  {
+   "ts": "2026-09-18T20:51:00+07:00",
+   "date": "2026-09-18",
+   "time": "20:51",
+   "src": "Media Indonesia",
+   "t": "Lahan Pesisir Tak Produktif 6 Tahun Kini Hasilkan 166,5 Ton Gabah",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/935067/lahan-pesisir-tak-produktif-6-tahun-kini-hasilkan-1665-ton-gabah",
+   "t_ko": "6년 방치 해안 간척지, 벼 166.5톤 수확",
+   "t_id": "Lahan Pesisir Tak Produktif 6 Tahun Kini Hasilkan 166,5 Ton Gabah"
   },
   {
    "ts": "2026-09-18T20:48:20+07:00",
@@ -17453,8 +17506,8 @@
    "t": "Financial Fitness Index 2026: 92 Persen Anak Muda Indonesia Rutin Menabung",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/935061/financial-fitness-index-2026-92-persen-anak-muda-indonesia-rutin-menabung",
-   "t_id": "Financial Fitness Index 2026: 92 Persen Anak Muda Indonesia Rutin Menabung",
-   "t_ko": "2026년 금융건전성 지수: 인니 청년 92% 정기 저축"
+   "t_ko": "2026년 금융건전성 지수: 인니 청년 92% 정기 저축",
+   "t_id": "Financial Fitness Index 2026: 92 Persen Anak Muda Indonesia Rutin Menabung"
   },
   {
    "ts": "2026-09-18T20:41:53+07:00",
@@ -17636,6 +17689,18 @@
    "t_id": "Peningkatan Keterampilan Petani Kakao Didorong untuk Perkuat Kesejahteraan"
   },
   {
+   "ts": "2026-09-18T20:08:59+07:00",
+   "date": "2026-09-18",
+   "time": "20:08",
+   "src": "CNBC",
+   "t": "Jim Cramer's top 10 things to watch in the stock market Friday",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/jim-cramers-top-10-things-to-watch-in-the-stock-market-friday.html",
+   "g": 1,
+   "t_ko": "Jim Cramer, 금요일 증시 주요 관전 포인트 10선 제시",
+   "t_id": "10 Hal Penting Pantauan Jim Cramer di Pasar Saham Jumat"
+  },
+  {
    "ts": "2026-09-18T20:07:46+07:00",
    "date": "2026-09-18",
    "time": "20:07",
@@ -17730,17 +17795,6 @@
    "t_id": "Sampai September 2026, Investasi Asing di Indonesia Tembus Rp 141,6 Triliun"
   },
   {
-   "ts": "2026-09-18T19:49:00+07:00",
-   "date": "2026-09-18",
-   "time": "19:49",
-   "src": "Media Indonesia",
-   "t": "Waspada Eskalasi Konflik Houthi, DPR Tekankan Pentingnya Rencana Kontinjensi untuk WNI dan Jemaah Umrah",
-   "tags": [],
-   "url": "https://mediaindonesia.com/internasional/935028/waspada-eskalasi-konflik-houthi-dpr-tekankan-pentingnya-rencana-kontinjensi-untuk-wni-dan-jemaah-umrah",
-   "t_ko": "후티 충돌 격화 우려에 인도네시아 교민·성지순례객 비상대책 강조",
-   "t_id": "Waspada Eskalasi Konflik Houthi, DPR Tekankan Pentingnya Rencana Kontinjensi untuk WNI dan Jemaah Umrah"
-  },
-  {
    "ts": "2026-09-18T19:47:28+07:00",
    "date": "2026-09-18",
    "time": "19:47",
@@ -17812,67 +17866,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260918193427-879.png",
    "t_ko": "인도네시아 투자자를 위한 2026년 미국 우량 주식 10선 및 종목 선정법",
    "t_id": "10 Saham Amerika Terbaik 2026 dan Cara Memilihnya untuk Investor Indonesia"
-  },
-  {
-   "ts": "2026-09-18T19:37:22+07:00",
-   "date": "2026-09-18",
-   "time": "19:37",
-   "src": "Bloomberg",
-   "t": "Turkey’s Wealth Fund Bought Blue-Chip Stocks to Stem Market Rout",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-18/turkey-s-wealth-fund-bought-blue-chip-stocks-to-stem-market-rout",
-   "g": 1,
-   "t_ko": "튀르키예 국부펀드, 증시 급락 방어 위해 우량주 매수",
-   "t_id": "Dana Kekayaan Turki Borong Saham Unggulan untuk Redam Kejatuhan Pasar"
-  },
-  {
-   "ts": "2026-09-18T19:36:29+07:00",
-   "date": "2026-09-18",
-   "time": "19:36",
-   "src": "Jawa Pos",
-   "t": "Pendapatan Negara Tumbuh  25,4 Persen, APBN Masih Defisit Rp 240,1 Triliun",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609180207/pendapatan-negara-tumbuh-254-persen-apbn-masih-defisit-rp-2401-triliun",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-xKe3u.webp",
-   "t_ko": "국가 재정 수입 25.4% 증가에도 재정 적자 Rp240.1조 기록",
-   "t_id": "Pendapatan Negara Tumbuh  25,4 Persen, APBN Masih Defisit Rp 240,1 Triliun",
-   "ai_ko": "· 국가재정 적자 Rp240.1조 기록\n· 국가지출 중 중앙정부 지출 Rp1,791.5조\n· 부처 지출 Rp912.4조로 33.0% 증가",
-   "ai_id": "· Defisit APBN capai Rp240,1 triliun\n· Belanja pusat Rp1.791,5 T, +29,0% yoy\n· Belanja K/L Rp912,4 T, naik 33,0% yoy",
-   "ai_tags": [
-    "재정적자",
-    "정부지출",
-    "국가예산"
-   ],
-   "ai_tags_id": [
-    "defisit",
-    "belanja negara",
-    "APBN"
-   ]
-  },
-  {
-   "ts": "2026-09-18T19:34:00+07:00",
-   "date": "2026-09-18",
-   "time": "19:34",
-   "src": "MarketWatch",
-   "t": "Tesla’s upcoming product frenzy could leave investors disappointed",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/teslas-upcoming-product-frenzy-could-leave-investors-disappointed-18619fb3?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-00352218",
-   "t_ko": "Tesla 신제품 출시 공세에 투자자 실망 우려",
-   "t_id": "Produk Baru Tesla Bisa Bikin Investor Kecewa"
-  },
-  {
-   "ts": "2026-09-18T19:30:05+07:00",
-   "date": "2026-09-18",
-   "time": "19:30",
-   "src": "Bloomberg",
-   "t": "Lilly’s Newest Bull Says Near 300% Rally Is Only the Beginning",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-18/lilly-s-newest-bull-says-near-300-rally-is-only-the-beginning",
-   "g": 1,
-   "t_ko": "Eli Lilly, 300% 급등은 시작에 불과하다는 전망",
-   "t_id": "Banteng Terbaru Lilly Sebut Reli Hampir 300% Baru Permulaan"
   }
  ],
  "kisi_news": [
@@ -18038,9 +18031,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "12.77",
-   "d": -0.67,
-   "ytd": 9.99,
+   "v": "12.76",
+   "d": -0.75,
+   "ytd": 9.9,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18050,9 +18043,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.992%",
-   "d": 0.91,
-   "ytd": 19.91,
+   "v": "4.996%",
+   "d": 0.99,
+   "ytd": 20.01,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -18073,9 +18066,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.48",
-   "d": 0.25,
-   "ytd": 2.24,
+   "v": "100.51",
+   "d": 0.28,
+   "ytd": 2.27,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18085,9 +18078,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "97.81",
-   "d": -3.32,
-   "ytd": 70.34,
+   "v": "97.70",
+   "d": -3.43,
+   "ytd": 70.15,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18097,9 +18090,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,395.8",
-   "d": -0.02,
-   "ytd": 1.62,
+   "v": "4,388.1",
+   "d": -0.19,
+   "ytd": 1.44,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -21214,8 +21207,8 @@
    "type": "STOCK",
    "title": "Siaran Pers - KB Bank Perkuat Fundamental Bisnis, Aset dan Pendanaan Tumbuh Solid pada Semester I 2026",
    "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202609/c1d99b5423_77773099b3.pdf",
-   "title_id": "Siaran Pers - KB Bank Perkuat Fundamental Bisnis, Aset dan Pendanaan Tumbuh Solid pada Semester I 2026",
    "title_ko": "실적 공시 — KB Bank, 상반기 자산 및 조달 건전성 바탕으로 탄탄한 성장",
+   "title_id": "Siaran Pers - KB Bank Perkuat Fundamental Bisnis, Aset dan Pendanaan Tumbuh Solid pada Semester I 2026",
    "rk": 44
   },
   {
@@ -23509,9 +23502,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-18 20:52",
-  "pc_age_min": 6,
+  "pc_age_min": 15,
   "news_ai_cache": 56,
-  "news_ai_hit": 33,
+  "news_ai_hit": 31,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25498,35 +25491,23 @@
    ]
   },
   {
-   "ts": "2026-09-18T19:36:29+07:00",
+   "ts": "2026-09-18T17:40:27+07:00",
    "date": "2026-09-18",
-   "time": "19:36",
+   "time": "17:40",
    "src": "Jawa Pos",
-   "t": "Pendapatan Negara Tumbuh  25,4 Persen, APBN Masih Defisit Rp 240,1 Triliun",
+   "t": "Realiasi Penyaluran TKD 2026 Sentuh Rp 504,3 Triliun, 72,8 Persen dari Target APBN",
    "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609180207/pendapatan-negara-tumbuh-254-persen-apbn-masih-defisit-rp-2401-triliun",
+   "url": "https://www.jawapos.com/ekonomi/2609180349/realiasi-penyaluran-tkd-2026-sentuh-rp-5043-triliun-728-persen-dari-target-apbn",
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-xKe3u.webp",
-   "t_ko": "국가 재정 수입 25.4% 증가에도 재정 적자 Rp240.1조 기록",
-   "t_id": "Pendapatan Negara Tumbuh  25,4 Persen, APBN Masih Defisit Rp 240,1 Triliun",
-   "ai_ko": "· 국가재정 적자 Rp240.1조 기록\n· 국가지출 중 중앙정부 지출 Rp1,791.5조\n· 부처 지출 Rp912.4조로 33.0% 증가",
-   "ai_id": "· Defisit APBN capai Rp240,1 triliun\n· Belanja pusat Rp1.791,5 T, +29,0% yoy\n· Belanja K/L Rp912,4 T, naik 33,0% yoy",
-   "ai_tags": [
-    "재정적자",
-    "정부지출",
-    "국가예산"
-   ],
-   "ai_tags_id": [
-    "defisit",
-    "belanja negara",
-    "APBN"
-   ],
-   "score": 415.05,
-   "srcs": 1
+   "score": 412.35,
+   "srcs": 3,
+   "t_ko": "2026년 TKD 집행 실적 Rp504.3조, APBN 목표의 72.8%",
+   "t_id": "Realiasi Penyaluran TKD 2026 Sentuh Rp 504,3 Triliun, 72,8 Persen dari Target APBN"
   },
   {
-   "ts": "2026-09-18T20:57:48.618701+07:00",
+   "ts": "2026-09-18T21:05:19+07:00",
    "date": "2026-09-18",
-   "time": "20:57",
+   "time": "21:05",
    "src": "Jawa Pos",
    "t": "Realisasi Subsidi Energi Tembus Rp 331 Triliun, Naik Rp 113 Triliun dari 2025",
    "tags": [],
@@ -25572,8 +25553,8 @@
    "tags": [],
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORkVra0Q0cjNkbjlDN0N2SENMZHYyeVVFSU1tcG5LOXhBTk5leFlZNjFNRGpad3NoWmhnaWZVd2I3N19oa2hQSERYZzBQWFcxaUJQNDZaSHMwVjFrNGlKbGRUNjg5TEt2WENpMUJiUFRVTjR6WlQyc0IzY2V2M05FanNlWExPdUZ2bTJFUlp4YW5HdTAwTExfNTI3MWkwVEVTMTRZUURlR01lVHA5?oc=5",
    "g": 1,
-   "score": 314.0,
-   "srcs": 4,
+   "score": 312.0,
+   "srcs": 3,
    "t_ko": "기술은 유가 완화로 월스트리트를 더 높은 수준으로 이끌고 국채 수익률은 하락합니다.",
    "t_id": "Teknologi Pimpin Wall St Ditutup Menguat Seiring Meredanya Minyak & Imbal Hasil US Treasury Turun"
   }
@@ -26043,8 +26024,8 @@
    "news": [
     {
      "t": "Oil prices fall for third day on Saudi Arabia supply hopes; U.S. crude briefly dips below $100",
-     "ko": "사우디 공급 기대에 유가 사흘째 하락, 미국 원유 한때 배럴당 100달러 밑돌아",
-     "id": "Harga Minyak Turun Tiga Hari Beruntun di Tengah Harapan Pasokan Arab Saudi; Minyak Mentah AS Sempat di Bawah US$100",
+     "ko": "사우디 송유관 폐쇄 여파에 미국 유가 상승",
+     "id": "Minyak Mentah AS Naik Seiring Pasar Evaluasi Dampak Penutupan Pipa Saudi",
      "ai_ko": "· Brent 0.94% 내린 USD 103.83,\n  WTI 0.88% 하락한 USD 101.01\n· Saudi Arabia가 Oman 경유로\n  아시아 수출 대체 경로 확보\n· Houthi 공격에 따른 송유관\n  중단 우려 완화, 지정학 프리미엄 축소",
      "ai_id": "· Brent turun 0,94% ke US$103,83\n WTI melemah ke US$101,01\n· Saudi kirim minyak ke Asia\n lewat jalur alternatif via Oman\n· Kekhawatiran pipa East-West\n mereda, premi geopolitik susut",
      "src": "CNBC",
