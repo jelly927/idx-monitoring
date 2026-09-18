@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 23:10",
+ "updated": "2026-09-18 23:28",
  "delay_min": 15,
  "fx_basis": "12.78 IDR/KRW · USD/IDR 17,740 · USD/KRW 1,388 · 22:30 Yahoo",
- "idr_per_krw": 12.7812,
+ "idr_per_krw": 12.7824,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -349,14 +349,14 @@
   "prev": 6462.43,
   "ytd": -25.51,
   "m1": -0.13,
-  "value_idr": 17282502361033.342,
+  "value_idr": 17283316187700.008,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 832종목 · 종가 · 외국인·공시 PC 09-18 20:52",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-18 20:52",
   "rank_asof": null,
   "rank_date": "2026-09-18",
   "adv": 215,
-  "dec": 463,
+  "dec": 464,
   "unch": 154,
   "foreign_net_idr": 157062291789.93994,
   "foreign_buy": 3817441648764.809,
@@ -7507,6 +7507,22 @@
    "lo": 154.0,
    "ratio": 0.3,
    "fnet": 10683099.244909503,
+   "live": 0
+  },
+  {
+   "t": "BLUE",
+   "n": "Berkah Prima Perkasa",
+   "px": 2990.0,
+   "prev": 3020.0,
+   "pct": -0.99,
+   "val": 813826666.6666666,
+   "vol": 268000.0,
+   "sh": 418000000,
+   "mcap": 1249820000000.0,
+   "hi": 3150.0,
+   "lo": 2970.0,
+   "ratio": 0.5,
+   "fnet": -162584148.64864865,
    "live": 0
   },
   {
@@ -15010,11 +15026,11 @@
   {
    "name": "산업재",
    "name_id": "Perindustrian",
-   "n": 54,
+   "n": 55,
    "adv": 12,
-   "dec": 33,
-   "val": 982262781499.9999,
-   "mcap": 480664710773359.0,
+   "dec": 34,
+   "val": 983076608166.6665,
+   "mcap": 481914530773359.0,
    "top": [
     {
      "t": "ASII",
@@ -15057,7 +15073,7 @@
      "pct": -0.93
     }
    ],
-   "fnet": 58103254649,
+   "fnet": 57940670500,
    "pct": -1.41,
    "fbuy_top": [
     {
@@ -15099,11 +15115,11 @@
      "pct": -3.4
     }
    ],
-   "fnet_1w": 256456176529,
+   "fnet_1w": 256293592380,
    "flow_days": 5,
    "flow_from": "2026-09-14",
    "flow_to": "2026-09-18",
-   "fnet_1m": 254112179134,
+   "fnet_1m": 253949594985,
    "flow_days_1m": 10,
    "win_from": "2026-09-12",
    "win_to": "2026-09-18",
@@ -15999,10 +16015,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7621.24,
+   "px": 7613.6,
    "prev": 7637.05,
-   "pct": -0.21,
-   "asof": "23:05",
+   "pct": -0.31,
+   "asof": "23:20",
    "live": true,
    "spark": [
     7643.16,
@@ -16036,17 +16052,20 @@
     7620.34,
     7620.7,
     7619.0,
-    7621.24
+    7621.77,
+    7621.24,
+    7621.5,
+    7613.6
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26380.47,
+   "px": 26348.05,
    "prev": 26418.3,
-   "pct": -0.14,
-   "asof": "23:05",
+   "pct": -0.27,
+   "asof": "23:20",
    "live": true,
    "spark": [
     26506.5,
@@ -16080,17 +16099,20 @@
     26376.66,
     26378.46,
     26374.57,
-    26380.47
+    26384.63,
+    26379.61,
+    26383.62,
+    26348.05
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51568.91,
+   "px": 51508.55,
    "prev": 51776.48,
-   "pct": -0.4,
-   "asof": "23:05",
+   "pct": -0.52,
+   "asof": "23:20",
    "live": true,
    "spark": [
     51685.21,
@@ -16124,7 +16146,10 @@
     51539.6,
     51548.07,
     51541.85,
-    51568.91
+    51560.68,
+    51556.25,
+    51550.63,
+    51508.55
    ]
   },
   {
@@ -16510,7 +16535,7 @@
     "JECX"
    ],
    "url": "https://www.idnfinancials.com/news/69088/emtek-adds-shares-in-jecx-for-two-days",
-   "img": "https://www.idnfinancials.com/assets/img/idn-d2.png?t=1",
+   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/JECX-03092026.jpg",
    "t_ko": "Emtek, JECX 주식 이틀간 추가 매수",
    "t_id": "Emtek Tambah Saham di JECX Selama Dua Hari"
   },
@@ -17081,20 +17106,6 @@
    ]
   },
   {
-   "ts": "2026-09-18T04:36:19+07:00",
-   "date": "2026-09-18",
-   "time": "04:36",
-   "src": "Jawa Pos",
-   "t": "H Isam Caplok 30 Persen Saham Bayan Resources (BYAN) Milik Low Tuck Kwong",
-   "tags": [
-    "BYAN"
-   ],
-   "url": "https://www.jawapos.com/bisnis/2609170469/h-isam-caplok-30-persen-saham-bayan-resources-byan-milik-low-tuck-kwong",
-   "img": "https://cdn-assets.jawapos.com/images/1/2025/08/25/WhatsApp-Image-2025-08-25-at-131651-3758930877.jpeg",
-   "t_ko": "Haji Isam, Low Tuck Kwong 소유 Bayan Resources(BYAN) 지분 30% 인수",
-   "t_id": "H Isam Caplok 30 Persen Saham Bayan Resources (BYAN) Milik Low Tuck Kwong"
-  },
-  {
    "ts": "2026-09-17T20:30:06+07:00",
    "date": "2026-09-17",
    "time": "09/17",
@@ -17408,6 +17419,152 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T23:26:27+07:00",
+   "date": "2026-09-18",
+   "time": "23:26",
+   "src": "CNBC",
+   "t": "Auto industry urges Trump to bar Chinese automakers in U.S. ahead of Xi visit",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/xi-visit-automakers-urge-trump-to-bar-chinese-automakers-in-us.html",
+   "g": 1,
+   "t_ko": "자동차 업계, 시진핑 방미 앞두고 트럼프에 중국차 미국 진입 금지 촉구",
+   "t_id": "Industri Otomatisasi Desak Trump Blokir Produsen Mobil China di AS Jelang Kunjungan Xi"
+  },
+  {
+   "ts": "2026-09-18T23:25:48+07:00",
+   "date": "2026-09-18",
+   "time": "23:25",
+   "src": "Jawa Pos",
+   "t": "Pengalihan Saham Whoosh ke Pemerintah Masuk Tahap Finalisasi",
+   "tags": [],
+   "url": "https://www.jawapos.com/bisnis/2609180542/pengalihan-saham-whoosh-ke-pemerintah-masuk-tahap-finalisasi",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/07/04/kereta-cepat-whoosh-dok-kcic-XQJB8.webp",
+   "t_id": "Pengalihan Saham Whoosh ke Pemerintah Masuk Tahap Finalisasi",
+   "t_ko": "Whoosh 지분 정부 이관 최종 단계 진입"
+  },
+  {
+   "ts": "2026-09-18T23:24:37+07:00",
+   "date": "2026-09-18",
+   "time": "23:24",
+   "src": "CNBC",
+   "t": "Fed staff should have known Silicon Valley Bank was vulnerable, new report finds",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/fed-silicon-valley-bank.html",
+   "g": 1,
+   "t_ko": "신규 보고서, 연준 내부 실리콘밸리은행 취약성 사전 인지 지적",
+   "t_id": "Staf The Fed Seharusnya Tahu Kerentanan Silicon Valley Bank, Temuan Laporan Baru"
+  },
+  {
+   "ts": "2026-09-18T23:21:20+07:00",
+   "date": "2026-09-18",
+   "time": "23:21",
+   "src": "CNBC",
+   "t": "JPMorgan CEO Jamie Dimon attending Trump's state dinner for China's Xi: Source",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/trump-xi-state-dinner-jpmorgan-jamie-dimon.html",
+   "g": 1,
+   "t_ko": "JPMorgan CEO Jamie Dimon, 트럼프의 시진핑 국빈만찬 참석",
+   "t_id": "CEO JPMorgan Jamie Dimon Hadiri Jamuan Kenegaraan Trump untuk Xi Jinping: Sumber"
+  },
+  {
+   "ts": "2026-09-18T23:19:20+07:00",
+   "date": "2026-09-18",
+   "time": "23:19",
+   "src": "Jawa Pos",
+   "t": "Penerbangan di Bandara Singkawang Terhenti Satu Bulan akibat Kabut Asap Karhutla",
+   "tags": [],
+   "url": "https://www.jawapos.com/bisnis/2609180541/penerbangan-di-bandara-singkawang-terhenti-satu-bulan-akibat-kabut-asap-karhutla",
+   "img": "https://cdn-assets.jawapos.com/images/1/2024/01/29/bandara-3767820260.jpg",
+   "t_id": "Penerbangan di Bandara Singkawang Terhenti Satu Bulan akibat Kabut Asap Karhutla",
+   "t_ko": "산불 연기로 싱카왕 공항 항공편 한 달간 운항 중단"
+  },
+  {
+   "ts": "2026-09-18T23:16:08+07:00",
+   "date": "2026-09-18",
+   "time": "23:16",
+   "src": "Jawa Pos",
+   "t": "Babe Haikal: Halal Bukan untuk Muslim Saja",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi-syariah/2609180540/babe-haikal-halal-bukan-untuk-muslim-saja",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/18/kepala-bpjph-ahmad-haikal-hasan-dok-bpjph-ny6Xo.webp",
+   "t_id": "Babe Haikal: Halal Bukan untuk Muslim Saja",
+   "t_ko": "Babe Haikal: 할랄은 무슬림만을 위한 것이 아님"
+  },
+  {
+   "ts": "2026-09-18T23:16:00+07:00",
+   "date": "2026-09-18",
+   "time": "23:16",
+   "src": "WSJ",
+   "t": "Two-Year U.S. Treasury Yield Reaches New Multi-Year High",
+   "tags": [],
+   "url": "https://www.wsj.com/finance/investing/two-year-u-s-treasury-yield-reaches-new-multi-year-high-99d3112b?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-41293276",
+   "t_ko": "미국 2년물 국채금리, 다년간 최고치 경신",
+   "t_id": "Imbal Hasil US Treasury 2 Tahun Capai Rekor Tertinggi Multi-Tahun"
+  },
+  {
+   "ts": "2026-09-18T23:15:31+07:00",
+   "date": "2026-09-18",
+   "time": "23:15",
+   "src": "Bloomberg",
+   "t": "The Business of the $60 Loaf of Bread",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-18/the-business-of-the-60-loaf-of-bread",
+   "g": 1,
+   "t_ko": "60달러짜리 빵 사업의 실체",
+   "t_id": "Bisnis Roti Seharga $60"
+  },
+  {
+   "ts": "2026-09-18T23:14:27+07:00",
+   "date": "2026-09-18",
+   "time": "23:14",
+   "src": "CNBC",
+   "t": "We're buying more of this defensive stock ahead of an upcoming long-term catalyst",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/were-buying-more-of-this-defensive-stock-ahead-of-an-upcoming-long-term-catalyst.html",
+   "g": 1,
+   "t_ko": "장기 호재 앞두고 방어주 추가 매수",
+   "t_id": "Kami Borong Saham Defensif Ini Jelang Katalis Jangka Panjang"
+  },
+  {
+   "ts": "2026-09-18T23:11:00+07:00",
+   "date": "2026-09-18",
+   "time": "23:11",
+   "src": "MarketWatch",
+   "t": "These fast-growing ETFs aim for yields as high as 17.5%. But here’s the catch.",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/these-fast-growing-etfs-aim-for-yields-as-high-as-17-5-but-heres-the-catch-6f0a3d43?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-31131483",
+   "t_ko": "17.5% 고배당 목표 고성장 ETF의 이면",
+   "t_id": "ETF Pertumbuhan Cepat Ini Incar Imbal Hasil 17,5%, Ini Risikonya"
+  },
+  {
+   "ts": "2026-09-18T23:10:19+07:00",
+   "date": "2026-09-18",
+   "time": "23:10",
+   "src": "Jawa Pos",
+   "t": "Pemerintah Harus Terbuka soal Dampak Proyek PLTP Gunung Ungaran",
+   "tags": [],
+   "url": "https://www.jawapos.com/energi/2609180538/pemerintah-harus-terbuka-soal-dampak-proyek-pltp-gunung-ungaran",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/18/pakar-ilmu-lingkungan-mantan-rektor-universitas-diponegoro-semarang-prof-sudharto-p-hadi-antara-250Ej.webp",
+   "t_ko": "정부, Gunung Ungaran 지열발전 프로젝트 영향 공개해야",
+   "t_id": "Pemerintah Harus Terbuka soal Dampak Proyek PLTP Gunung Ungaran"
+  },
+  {
+   "ts": "2026-09-18T23:07:00+07:00",
+   "date": "2026-09-18",
+   "time": "23:07",
+   "src": "Bloomberg",
+   "t": "Yen Pares BOJ-Fueled Declines as Nikkei Reports a Rate Check",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-18/yen-pares-boj-fueled-declines-as-nikkei-reports-a-rate-check",
+   "g": 1,
+   "t_ko": "엔화, BOJ 금리 체크 보도에 하락폭 축소",
+   "t_id": "Yen Pangkas Penurunan Imbas BOJ Usai Nikkei Laporkan Pemeriksaan Suku Bunga"
+  },
+  {
    "ts": "2026-09-18T23:06:04+07:00",
    "date": "2026-09-18",
    "time": "23:06",
@@ -17418,6 +17575,44 @@
    "g": 1,
    "t_ko": "사우디 파이프라인 폐쇄에 따른 차질 우려 속 유가 보합권",
    "t_id": "Harga Minyak Cenderung Datar di Tengah Penilaian Pasar atas Gangguan Penutupan Pipa Saudi"
+  },
+  {
+   "ts": "2026-09-18T23:04:37+07:00",
+   "date": "2026-09-18",
+   "time": "23:04",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Dow Pressured As Yields Hit 5%; Strategy Soars As Bitcoin Price Tops $80,500 (Live Coverage)",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-apple-amd-micron-sandisk/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/55ca4252bd7c66820fc61ce444908e68.jpg",
+   "t_ko": "뉴욕증시, 국채금리 5% 돌파에 다우 약세 — 비트코인 80,500달러 돌파",
+   "t_id": "Bursa Saham Tertekan Saat Yield Sentuh 5%; Strategy Melesat Usai Bitcoin Tembus $80.500"
+  },
+  {
+   "ts": "2026-09-18T23:00:45+07:00",
+   "date": "2026-09-18",
+   "time": "23:00",
+   "src": "Detik",
+   "t": "Janji Prabowo Bangun Ribuan Kampung Nelayan Dilengkapi Lapangan Terbang",
+   "tags": [],
+   "url": "https://finance.detik.com/infrastruktur/d-8669418/janji-prabowo-bangun-ribuan-kampung-nelayan-dilengkapi-lapangan-terbang",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/presiden-prabowo-pimpin-ratas-penanganan-bencana-alam-di-indonesia-senin-792026-1788764255782_169.jpeg?w=360&q=90",
+   "t_ko": "Prabowo, 비행장이 포함된 수천 개 어촌 마을 건설 약속",
+   "t_id": "Janji Prabowo Bangun Ribuan Kampung Nelayan Dilengkapi Lapangan Terbang"
+  },
+  {
+   "ts": "2026-09-18T22:58:02+07:00",
+   "date": "2026-09-18",
+   "time": "22:58",
+   "src": "Yahoo Finance",
+   "t": "Tesla Stock Fell After Its Last 4 Delivery Reports, Even a Big Beat. Here's What History Says to Expect in October.",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/tesla-stock-fell-last-4-155802806.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/e9df3d7377f3f37f3d6ff784d034e6c0.png",
+   "t_ko": "테슬라, 실적 호조에도 인도량 발표 직후 주가 하락 — 10월 전망",
+   "t_id": "Saham Tesla Anjlok Usai 4 Laporan Pengiriman Terakhir, Ini Proyeksi Oktober"
   },
   {
    "ts": "2026-09-18T22:56:00+07:00",
@@ -17442,19 +17637,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/18/pltu-bolok-berkapasitas-2x165-mw-merupakan-salah-satu-pembangkit-yang-menopang-kebutuhan-listrik-di-pulau-timor-antara-tAqLW.webp",
    "t_ko": "Bolok 석탄발전소, 티모르섬 전력 수요 뒷받침",
    "t_id": "PLTU Bolok Topang Kebutuhan Listrik Pulau Timor"
-  },
-  {
-   "ts": "2026-09-18T22:49:47+07:00",
-   "date": "2026-09-18",
-   "time": "22:49",
-   "src": "Yahoo Finance",
-   "t": "NuScale Power Drops 7% as Nuclear Stocks Hand Back the Vote Rally; Oklo Falls 5%, Centrus Energy Slides 3%",
-   "tags": [],
-   "url": "https://finance.yahoo.com/energy/articles/nuscale-power-drops-7-nuclear-154947830.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/8cbbd4f1c1614f22a165d412964beb6d.jpg",
-   "t_ko": "원자력주 랠리 되돌림에 NuScale Power 7% 하락 — Oklo 5%·Centrus Energy 하락",
-   "t_id": "NuScale Power Anjlok 7% Saat Saham Nuklir Lepas Reli Vote; Oklo Turun 5%, Centrus Energy Terperosok 3%"
   },
   {
    "ts": "2026-09-18T22:49:14+07:00",
@@ -17494,17 +17676,15 @@
    "t_id": "Saham Produsen Baja Ini Anjlok ke Dasar S&P 500 Usai Rilis Proyeksi Lemah"
   },
   {
-   "ts": "2026-09-18T22:45:39+07:00",
+   "ts": "2026-09-18T22:46:00+07:00",
    "date": "2026-09-18",
-   "time": "22:45",
-   "src": "Yahoo Finance",
-   "t": "These Shipping Stocks Yield Up to 9%. The Dividends Come With a Catch",
+   "time": "22:46",
+   "src": "Media Indonesia",
+   "t": "Beri Manfaat Tambahan Peserta, Perkuat Program TJSL",
    "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/shipping-stocks-yield-9-dividends-154539864.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/24_7_wall_st__718/e9ac3a2f24713c0ca106175aad2dfac9.jpg",
-   "t_ko": "배당수익률 최대 9% 해운주 — 함의하는 투자 리스크",
-   "t_id": "Saham Pelayaran Ini Beri Imbal Hasil hingga 9%, Dividen Miliki Syarat Khusus"
+   "url": "https://mediaindonesia.com/ekonomi/935103/beri-manfaat-tambahan-peserta-perkuat-program-tjsl",
+   "t_ko": "참가자 혜택 확대 및 TJSL 프로그램 강화",
+   "t_id": "Beri Manfaat Tambahan Peserta, Perkuat Program TJSL"
   },
   {
    "ts": "2026-09-18T22:43:31+07:00",
@@ -17567,66 +17747,16 @@
    "t_id": "Prabowo Sebut Kekayaan RI US$ 1.000 Triliun: 3-4 Tahun Akan Naik!"
   },
   {
-   "ts": "2026-09-18T22:25:38+07:00",
+   "ts": "2026-09-18T22:25:46+07:00",
    "date": "2026-09-18",
    "time": "22:25",
-   "src": "Bloomberg",
-   "t": "VW Cuts Profit Outlook After China Sales Slump, Costs Rise",
+   "src": "Reuters",
+   "t": "Aramco halts October crude deliveries to some European refiners after pipeline attack, Bloomberg reports",
    "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-18/vw-cuts-outlook-after-writedown-on-porsche-decline-in-china",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPLXZOci1kaFhqMWtjVXZMN1BDS0Q0LUF0UjNEVUlIMHlJR2x0bkNvZlhnX3FSQXg1T0lyRlVHSDlIV09xOFBOdUFSWU4yMmpMOUE5aXpJYjdJaGNZVTdwVmdxWlZuNmd1OU5hUXh5clNDbHh0dFNTQVJRaUdJdGNfdk4ySE1NVXZtODQ1UENyczdUMGpTTzNBaG82bjBvSm94WGxLZFNIOXFBQy1xb0Zqb0d6cVRISG52UkNSOXc0aGJROUgzLUE?oc=5",
    "g": 1,
-   "t_ko": "VW, 중국 판매 부진과 비용 증가로 실적 전망치 하향",
-   "t_id": "VW Pangkas Proyeksi Laba Usai Penjualan China Anjlok, Biaya Naik"
-  },
-  {
-   "ts": "2026-09-18T22:22:48+07:00",
-   "date": "2026-09-18",
-   "time": "22:22",
-   "src": "Yahoo Finance",
-   "t": "Gold Stock Franco-Nevada Flashes Strength Amid Rate-Hike Woes",
-   "tags": [],
-   "url": "https://www.investors.com/stock-lists/sector-leaders/gold-stock-franco-nevada-fnv/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/cd17c6ce2cde93789ff9ec539bee6a85.jpg",
-   "t_ko": "금산사 Franco-Nevada, 금리 인상 우려 속 강세 포착",
-   "t_id": "Saham Emas Franco-Nevada Tunjukkan Kekuatan di Tengah Kekhawatiran Kenaikan Suku Bunga"
-  },
-  {
-   "ts": "2026-09-18T22:21:20+07:00",
-   "date": "2026-09-18",
-   "time": "22:21",
-   "src": "Bloomberg",
-   "t": "BofA Warns of Warsh’s Fed Hiking Rate Above 5% in 2022 Redux",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-18/bofa-warns-of-warsh-s-fed-raising-rates-above-5-in-2022-redux",
-   "g": 1,
-   "t_ko": "BofA, 2022년과 유사하게 Warsh 체제 연준 5% 금리 인상 가능성 경고",
-   "t_id": "BofA Peringatkan Risiko Suku Bunga Fed Warsh Tembus 5% di 2022 Jilid II"
-  },
-  {
-   "ts": "2026-09-18T22:19:16+07:00",
-   "date": "2026-09-18",
-   "time": "22:19",
-   "src": "Jawa Pos",
-   "t": "Dorong Kelancaran Arus Perdagangan Dunia, Indonesia Hadiri Forum BRICS 2026 di India",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609180298/dorong-kelancaran-arus-perdagangan-dunia-indonesia-hadiri-forum-brics-2026-di-india",
-   "g": 1,
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/18/rangkaian-pertemuan-brics-customs-experts-meeting-dan-brics-heads-of-customs-administrations-meeting-tahun-2026-di-chandigarh-india-yang-diselenggarakan-pada-17-19-agustus-2026-istimewa-WqkqE.webp",
-   "t_ko": "인도네시아, 글로벌 교역 원활화 위해 인도서 열린 BRICS 2026 포럼 참석",
-   "t_id": "Dorong Kelancaran Arus Perdagangan Dunia, Indonesia Hadiri Forum BRICS 2026 di India"
-  },
-  {
-   "ts": "2026-09-18T22:18:38+07:00",
-   "date": "2026-09-18",
-   "time": "22:18",
-   "src": "CNBC",
-   "t": "Why more companies are fighting over consumers' beauty, health and wellness spending",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/18/beauty-health-wellness-consumer-spending.html",
-   "g": 1,
-   "t_ko": "기업들의 뷰티·건강·웰니스 소비 시장 경쟁 심화 배경",
-   "t_id": "Alasan Perusahaan Berebut Belanja Kecantikan dan Kesehatan Konsumen"
+   "t_ko": "블룸버그: 아람코, 파이프라인 피습 여파로 일부 유럽 정유사에 10월 원유 인도 중단",
+   "t_id": "Aramco Hentikan Pengiriman Minyak Mentah Oktober ke Sejumlah Kilang Eropa Usai Serangan Pipa, Lapor Bloomberg"
   },
   {
    "ts": "2026-09-18T22:18:00+07:00",
@@ -17639,19 +17769,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/17/Prabowo_Subianto-2026_09_17-15_58_50_66d2b6679554e3e910f0a39912e8c7b4_620x413_thumb.png",
    "t_ko": "Prabowo, 초등학교부터 국립대학까지 무상교육 공약",
    "t_id": "Prabowo Janji Gratiskan Biaya SD hingga Universitas Negeri"
-  },
-  {
-   "ts": "2026-09-18T22:14:00+07:00",
-   "date": "2026-09-18",
-   "time": "22:14",
-   "src": "MarketWatch",
-   "t": "Many young investors can’t afford to invest without their parents’ help",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/many-young-investors-cant-afford-to-invest-without-their-parents-help-dbb05687?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-96227400",
-   "t_ko": "부모 도움 없이는 투자 어려운 청년층 증가",
-   "t_id": "Banyak Investor Muda Belum Bisa Investasi Tanpa Bantuan Orang Tua"
   },
   {
    "ts": "2026-09-18T22:14:00+07:00",
@@ -17677,18 +17794,6 @@
    "t_id": "Pemerintah Daerah NTB Diminta Siapkan Pipeline KPDBU"
   },
   {
-   "ts": "2026-09-18T22:13:44+07:00",
-   "date": "2026-09-18",
-   "time": "22:13",
-   "src": "Reuters",
-   "t": "Aramco halts October crude deliveries to some European refiners after pipeline attack, Bloomberg reports",
-   "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPLXZOci1kaFhqMWtjVXZMN1BDS0Q0LUF0UjNEVUlIMHlJR2x0bkNvZlhnX3FSQXg1T0lyRlVHSDlIV09xOFBOdUFSWU4yMmpMOUE5aXpJYjdJaGNZVTdwVmdxWlZuNmd1OU5hUXh5clNDbHh0dFNTQVJRaUdJdGNfdk4ySE1NVXZtODQ1UENyczdUMGpTTzNBaG82bjBvSm94WGxLZFNIOXFBQy1xb0Zqb0d6cVRISG52UkNSOXc0aGJROUgzLUE?oc=5",
-   "g": 1,
-   "t_ko": "블룸버그: 아람코, 파이프라인 피습 여파로 일부 유럽 정유사에 10월 원유 인도 중단",
-   "t_id": "Aramco Hentikan Pengiriman Minyak Mentah Oktober ke Sejumlah Kilang Eropa Usai Serangan Pipa, Lapor Bloomberg"
-  },
-  {
    "ts": "2026-09-18T22:13:13+07:00",
    "date": "2026-09-18",
    "time": "22:13",
@@ -17711,31 +17816,6 @@
    "img": "https://cdn.medcom.id/dynamic/content/2026/09/18/1843073/cE0LWDNjBa.jpg?w=720",
    "t_ko": "여성 임금 남성보다 낮아, 가사 부담이 주요 요인으로 지목",
    "t_id": "Upah Perempuan Masih Lebih Rendah Dari Pria, Beban Domestik Jadi Sorotan"
-  },
-  {
-   "ts": "2026-09-18T22:11:31+07:00",
-   "date": "2026-09-18",
-   "time": "22:11",
-   "src": "Yahoo Finance",
-   "t": "Stock Market Today: Dow Sinks On Surprise Economic Data; Energy Name Teases Buy Point (Live Coverage)",
-   "tags": [],
-   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-apple-amd-micron-sandisk/?src=A00220&yptr=yahoo",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ibd.com/55ca4252bd7c66820fc61ce444908e68.jpg",
-   "t_ko": "증시 마감 — 예상 밖 경제 지표에 Dow 하락 및 에너지주 매수세 부각",
-   "t_id": "Bursa Saham Hari Ini: Dow Anjlok Akibat Data Ekonomi Mengejutkan"
-  },
-  {
-   "ts": "2026-09-18T22:10:29+07:00",
-   "date": "2026-09-18",
-   "time": "22:10",
-   "src": "Bloomberg",
-   "t": "FTSE Russell Flags Energy Risks",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-18/ftse-russell-flags-energy-risks-video",
-   "g": 1,
-   "t_ko": "FTSE Russell, 에너지 리스크 경고",
-   "t_id": "FTSE Russell Soroti Risiko Sektor Energi"
   },
   {
    "ts": "2026-09-18T22:10:22+07:00",
@@ -17772,78 +17852,6 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/18/warga-jagakarsa-belajar-masak-untuk-kembangkan-usaha-1789712931221.jpeg?w=360&q=90",
    "t_ko": "자카르타 Jagakarsa 주민들, 사업 확장을 위한 요리 강습 수강",
    "t_id": "Warga Jagakarsa Belajar Masak untuk Kembangkan Usaha"
-  },
-  {
-   "ts": "2026-09-18T21:49:26+07:00",
-   "date": "2026-09-18",
-   "time": "21:49",
-   "src": "Detik",
-   "t": "Prabowo Sebut Penghasilan Danantara dalam 1,5 Tahun Naik 400%!",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8669369/prabowo-sebut-penghasilan-danantara-dalam-1-5-tahun-naik-400",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/07/01/wisma-danantara-indonesia-1751345496255_169.jpeg?w=360&q=90",
-   "t_ko": "Prabowo, Danantara 수익 1년 반 만에 400% 급증 발표",
-   "t_id": "Prabowo Sebut Penghasilan Danantara dalam 1,5 Tahun Naik 400%!"
-  },
-  {
-   "ts": "2026-09-18T21:40:53+07:00",
-   "date": "2026-09-18",
-   "time": "21:40",
-   "src": "Detik",
-   "t": "Prabowo Beberkan BUMN Untung, Ada Pertamina hingga Pegadaian",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8669359/prabowo-beberkan-bumn-untung-ada-pertamina-hingga-pegadaian",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2020/07/02/logo-baru-kementerian-bumn-1_169.jpeg?w=360&q=90",
-   "t_ko": "Prabowo, Pertamina·Pegadaian 등 흑자 국영기업 명단 공개",
-   "t_id": "Prabowo Beberkan BUMN Untung, Ada Pertamina hingga Pegadaian"
-  },
-  {
-   "ts": "2026-09-18T21:30:35+07:00",
-   "date": "2026-09-18",
-   "time": "21:30",
-   "src": "Detik",
-   "t": "Prabowo Klaim Harga Pupuk Turun!",
-   "tags": [],
-   "url": "https://finance.detik.com/industri/d-8669347/prabowo-klaim-harga-pupuk-turun",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/06/30/distribusi-pupuk-bersubsidi-digenjot-untuk-dukung-produksi-beras-1782813104202_169.jpeg?w=360&q=90",
-   "t_ko": "Prabowo, 비료 가격 하락 주장",
-   "t_id": "Prabowo Klaim Harga Pupuk Turun!"
-  },
-  {
-   "ts": "2026-09-18T21:24:12+07:00",
-   "date": "2026-09-18",
-   "time": "21:24",
-   "src": "Detik",
-   "t": "Prabowo Ngaku dari Kecil Disumpah Jadikan RI Sejahtera-Tak Ada Orang Lapar",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8669337/prabowo-ngaku-dari-kecil-disumpah-jadikan-ri-sejahtera-tak-ada-orang-lapar",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/18/presiden-prabowo-subianto-1789739989549_169.jpeg?w=360&q=90",
-   "t_ko": "Prabowo, 국민 빈곤 없는 번영하는 인도네시아 건설 다짐",
-   "t_id": "Prabowo Ngaku dari Kecil Disumpah Jadikan RI Sejahtera-Tak Ada Orang Lapar"
-  },
-  {
-   "ts": "2026-09-18T21:18:03+07:00",
-   "date": "2026-09-18",
-   "time": "21:18",
-   "src": "Detik",
-   "t": "Bursa Mineral 1 Januari 2027, Peralihan Pengawasan dari Bappebti Dimulai",
-   "tags": [],
-   "url": "https://finance.detik.com/bursa-dan-valas/d-8669334/bursa-mineral-1-januari-2027-peralihan-pengawasan-dari-bappebti-dimulai",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/05/10/di-balik-kemilau-timah-1746867415034_169.jpeg?w=360&q=90",
-   "t_ko": "2027년 1월 1일 미네랄 거래소 개설 — Bappebti에서 감독권 이관",
-   "t_id": "Bursa Mineral 1 Januari 2027, Peralihan Pengawasan dari Bappebti Dimulai"
-  },
-  {
-   "ts": "2026-09-18T21:17:00+07:00",
-   "date": "2026-09-18",
-   "time": "21:17",
-   "src": "Medcom",
-   "t": "Pasar Asuransi Jiwa Syariah Indonesia Belum Besar, Padahal Ada 250 Juta Muslim",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/ybJdRl6K-pasar-asuransi-jiwa-syariah-indonesia-belum-besar-padahal-ada-250-juta-muslim",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/18/1843038/9u74xCVpF1.jpeg?w=720",
-   "t_ko": "인도네시아 샤리아 생명보험 시장, 2억 5,000만 무슬림에도 아직 미성숙",
-   "t_id": "Pasar Asuransi Jiwa Syariah Indonesia Belum Besar, Padahal Ada 250 Juta Muslim"
   }
  ],
  "kisi_news": [
@@ -18021,9 +18029,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.998%",
-   "d": 1.03,
-   "ytd": 20.06,
+   "v": "5.000%",
+   "d": 1.07,
+   "ytd": 20.11,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -18044,9 +18052,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.42",
-   "d": 0.18,
-   "ytd": 2.17,
+   "v": "100.35",
+   "d": 0.11,
+   "ytd": 2.1,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18056,9 +18064,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.89",
-   "d": -4.23,
-   "ytd": 68.74,
+   "v": "96.62",
+   "d": -4.5,
+   "ytd": 68.27,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18068,9 +18076,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,394.0",
-   "d": -0.06,
-   "ytd": 1.58,
+   "v": "4,399.1",
+   "d": 0.06,
+   "ytd": 1.7,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -23419,9 +23427,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-18 20:52",
-  "pc_age_min": 138,
+  "pc_age_min": 156,
   "news_ai_cache": 56,
-  "news_ai_hit": 23,
+  "news_ai_hit": 24,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25422,46 +25430,58 @@
    "t_id": "Realisasi Subsidi Energi Tembus Rp 331 Triliun, Naik Rp 113 Triliun dari 2025"
   },
   {
-   "ts": "2026-09-18T22:21:20+07:00",
+   "ts": "2026-09-18T19:36:29+07:00",
    "date": "2026-09-18",
-   "time": "22:21",
-   "src": "Bloomberg",
-   "t": "BofA Warns of Warsh’s Fed Hiking Rate Above 5% in 2022 Redux",
+   "time": "19:36",
+   "src": "Jawa Pos",
+   "t": "Pendapatan Negara Tumbuh  25,4 Persen, APBN Masih Defisit Rp 240,1 Triliun",
    "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-18/bofa-warns-of-warsh-s-fed-raising-rates-above-5-in-2022-redux",
-   "g": 1,
-   "t_ko": "BofA, 2022년과 유사하게 Warsh 체제 연준 5% 금리 인상 가능성 경고",
-   "t_id": "BofA Peringatkan Risiko Suku Bunga Fed Warsh Tembus 5% di 2022 Jilid II",
-   "score": 411.0,
-   "srcs": 1
-  },
-  {
-   "ts": "2026-09-18T16:12:26+07:00",
-   "date": "2026-09-18",
-   "time": "16:12",
-   "src": "Bloomberg Technoz",
-   "t": "Permintaan SVBI Membeludak, Tapi Belum Cukup Kuat Topang Rupiah",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/122061/permintaan-svbi-membeludak-tapi-belum-cukup-kuat-topang-rupiah",
-   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171624.jpeg",
-   "score": 408.15,
+   "url": "https://www.jawapos.com/ekonomi/2609180207/pendapatan-negara-tumbuh-254-persen-apbn-masih-defisit-rp-2401-triliun",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-xKe3u.webp",
+   "score": 410.95,
    "srcs": 1,
-   "t_ko": "SVBI 수요 급증했으나 루피아 방어에는 역부족",
-   "t_id": "Permintaan SVBI Membeludak, Tapi Belum Cukup Kuat Topang Rupiah"
+   "t_ko": "국가 재정 수입 25.4% 증가에도 재정 적자 Rp240.1조 기록",
+   "t_id": "Pendapatan Negara Tumbuh  25,4 Persen, APBN Masih Defisit Rp 240,1 Triliun",
+   "ai_ko": "· 국가재정 적자 Rp240.1조 기록\n· 국가지출 중 중앙정부 지출 Rp1,791.5조\n· 부처 지출 Rp912.4조로 33.0% 증가",
+   "ai_id": "· Defisit APBN capai Rp240,1 triliun\n· Belanja pusat Rp1.791,5 T, +29,0% yoy\n· Belanja K/L Rp912,4 T, naik 33,0% yoy",
+   "ai_tags": [
+    "재정적자",
+    "정부지출",
+    "국가예산"
+   ],
+   "ai_tags_id": [
+    "defisit",
+    "belanja negara",
+    "APBN"
+   ]
   },
   {
-   "ts": "2026-09-18T23:06:04+07:00",
+   "ts": "2026-09-18T16:07:00+07:00",
    "date": "2026-09-18",
-   "time": "23:06",
-   "src": "CNBC",
-   "t": "Oil prices little changed as market assesses disruption from Saudi pipeline closure",
+   "time": "16:07",
+   "src": "IDX Channel",
+   "t": "Harga CPO Turun, Tertekan Minyak Mentah dan Pesaing",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/18/oil-prices-today-brent-wti-saudi-arabia-houthi.html",
+   "url": "https://www.idxchannel.com/market-news/harga-cpo-turun-tertekan-minyak-mentah-dan-pesaing",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/01/05/cpo_sawit_freepik.jpg",
+   "score": 408.25,
+   "srcs": 2,
+   "t_ko": "CPO 가격, 원유 및 경쟁유 약세에 하락",
+   "t_id": "Harga CPO Turun, Tertekan Minyak Mentah dan Pesaing"
+  },
+  {
+   "ts": "2026-09-18T20:34:00+07:00",
+   "date": "2026-09-18",
+   "time": "20:34",
+   "src": "WSJ",
+   "t": "Treasury Yields Tick Higher as Markets Price Hawkish Fed",
+   "tags": [],
+   "url": "https://www.wsj.com/finance/jgb-yields-decline-as-energy-inflation-fears-ease-85bf5679?mod=rss_markets_main",
    "g": 1,
-   "t_ko": "사우디 파이프라인 폐쇄에 따른 차질 우려 속 유가 보합권",
-   "t_id": "Harga Minyak Cenderung Datar di Tengah Penilaian Pasar atas Gangguan Penutupan Pipa Saudi",
-   "score": 313.0,
-   "srcs": 4
+   "score": 314.0,
+   "srcs": 4,
+   "t_ko": "매파적 연준 전망 반영하며 국채 금리 소폭 상승",
+   "t_id": "Imbal Hasil US Treasury Naik Seiring Pasar Perhitungkan The Fed Hawkish"
   }
  ],
  "daylog": {
@@ -43870,31 +43890,6 @@
  ],
  "catalyst": [
   {
-   "t": "BYAN",
-   "n": "Bayan Resources",
-   "px": 13825.0,
-   "pct": 19.96,
-   "val": 155587575000.0,
-   "mcap": 460833356375000.0,
-   "ratio": 6.9,
-   "ev_ko": "지분매각·경영권",
-   "ev_id": "Divestasi & pengendali",
-   "hl": "Haji Isam, Low Tuck Kwong 소유 Bayan Resources(BYAN) 지분 30% 인수",
-   "hl_id": "H Isam Caplok 30 Persen Saham Bayan Resources (BYAN) Milik Low Tuck Kwong",
-   "url": "https://www.jawapos.com/bisnis/2609170469/h-isam-caplok-30-persen-saham-bayan-resources-byan-milik-low-tuck-kwong",
-   "score": 97.2,
-   "s_news": 95,
-   "s_size": 92,
-   "s_surge": 100,
-   "s_move": 100,
-   "s_conc": 100,
-   "s_flow": 100,
-   "alpha": 20.29,
-   "vrank": 24,
-   "flow": -22.84,
-   "srcs": 1
-  },
-  {
    "t": "ULTJ",
    "n": "Ultrajaya Milk Industry & Trading Company",
    "px": 2060.0,
@@ -44042,6 +44037,31 @@
    "alpha": 4.18,
    "vrank": null,
    "flow": -0.75,
+   "srcs": 0
+  },
+  {
+   "t": "BYAN",
+   "n": "Bayan Resources",
+   "px": 13825.0,
+   "pct": 19.96,
+   "val": 155587575000.0,
+   "mcap": 460833356375000.0,
+   "ratio": 6.9,
+   "ev_ko": "가격·수급 이상",
+   "ev_id": "Harga & arus dana",
+   "hl": "시장 대비 +20.29%p · 거래대금 24위 · 20일 평균 6.9배 · 외국인 5일 -22.8%",
+   "hl_id": "vs pasar +20.29%p · nilai transaksi #24 · 6.9x rata 20 hari · asing 5 hari -22.8%",
+   "url": "",
+   "score": 68.7,
+   "s_news": 0,
+   "s_size": 92,
+   "s_surge": 100,
+   "s_move": 100,
+   "s_conc": 100,
+   "s_flow": 100,
+   "alpha": 20.29,
+   "vrank": 24,
+   "flow": -22.84,
    "srcs": 0
   },
   {
