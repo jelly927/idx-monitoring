@@ -1181,12 +1181,11 @@ function renderFTop(){
         +'<div><span>'+T('buy')+'</span><b class="num">'+(q.foreign_buy==null?'\u2014':idr(q.foreign_buy).replace(/<span.*<\/span>/,''))+'</b></div>'
         +'<div><span>'+T('sell')+'</span><b class="num">'+(q.foreign_sell==null?'\u2014':idr(q.foreign_sell).replace(/<span.*<\/span>/,''))+'</b></div>';
     }else{
-      const vals=Object.values(F.stk||{}).map(o=>((o.v||[])[i]||[])[0]).filter(v=>v!=null&&v!==0);
-      const net=(F.mktv||[])[i], nb=vals.filter(v=>v>0).length, ns=vals.filter(v=>v<0).length;
+      const net=(F.mktv||[])[i], bu=(F.mktbuy||[])[i], se=(F.mktsell||[])[i];
       fx.innerHTML='<div><span>'+T('netbuy')+'</span><b class="num '+(net==null?'':net>=0?'up':'dn')+'">'
           +(net==null?'\u2014':(net>=0?'+':'\u2212')+idr(Math.abs(net)))+'</b></div>'
-        +'<div><span>'+T('fwNbuy')+'</span><b class="num up">'+nb+'</b></div>'
-        +'<div><span>'+T('fwNsell')+'</span><b class="num dn">'+ns+'</b></div>';
+        +'<div><span>'+T('buy')+'</span><b class="num">'+(bu==null?'\u2014':idr(bu).replace(/<span.*<\/span>/,''))+'</b></div>'
+        +'<div><span>'+T('sell')+'</span><b class="num">'+(se==null?'\u2014':idr(se).replace(/<span.*<\/span>/,''))+'</b></div>';
     }
   }
 }
