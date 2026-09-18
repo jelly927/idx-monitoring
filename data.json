@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 08:07",
+ "updated": "2026-09-18 08:18",
  "delay_min": 15,
- "fx_basis": "12.84 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,382 · 04:00 Yahoo",
- "idr_per_krw": 12.8406,
+ "fx_basis": "12.83 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,383 · 04:00 Yahoo",
+ "idr_per_krw": 12.8318,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -90,6 +90,7 @@
     17743.0,
     17743.0,
     17743.0,
+    17748.0,
     17748.0,
     17748.0,
     17748.0,
@@ -15962,10 +15963,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6864.61,
+   "px": 6863.27,
    "prev": 6699.4,
-   "pct": 2.47,
-   "asof": "07:45",
+   "pct": 2.45,
+   "asof": "07:55",
    "live": true,
    "spark": [
     6869.47,
@@ -15977,17 +15978,19 @@
     6872.89,
     6861.61,
     6864.89,
-    6864.61
+    6863.28,
+    6863.53,
+    6863.27
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64657.2,
+   "px": 64672.41,
    "prev": 64098.31,
-   "pct": 0.87,
-   "asof": "07:50",
+   "pct": 0.9,
+   "asof": "08:00",
    "live": true,
    "spark": [
     64620.01,
@@ -16000,7 +16003,9 @@
     64694.32,
     64685.4,
     64693.41,
-    64657.2
+    64672.15,
+    64692.81,
+    64672.41
    ]
   },
   {
@@ -17355,6 +17360,44 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T08:11:44+07:00",
+   "date": "2026-09-18",
+   "time": "08:11",
+   "src": "Liputan6",
+   "t": "Bursa Saham Asia Hari Ini Melesat Setelah Imbal Hasil Obligasi AS Turun",
+   "tags": [],
+   "url": "https://www.liputan6.com/saham/read/8294203/bursa-saham-asia-hari-ini-melesat-setelah-imbal-hasil-obligasi-as-turun",
+   "g": 1,
+   "img": "https://cdn0-production-images-kly.akamaized.net/XWnV71NpXyjZsyeaeEsK0EQjgdE=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3046088/original/077180100_1581323846-20200210-Pasar-Saham-di-Asia-Turun-Imbas-Wabah-Virus-Corona-5.jpg",
+   "t_id": "Bursa Saham Asia Hari Ini Melesat Setelah Imbal Hasil Obligasi AS Turun",
+   "t_ko": "미국 국채금리 하락에 아시아 증시 일제히 상승"
+  },
+  {
+   "ts": "2026-09-18T08:10:00+07:00",
+   "date": "2026-09-18",
+   "time": "08:10",
+   "src": "Bloomberg Technoz",
+   "t": "Jelang Pertemuan Trump-Xi Jinping, AS Tunda Pengumuman Tarif Baru",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121955/jelang-pertemuan-trump-xi-jinping-as-tunda-pengumuman-tarif-baru",
+   "g": 1,
+   "img": "https://images.bloombergtechnoz.com/data/2026/05/image-20260514105605.jpg",
+   "t_ko": "트럼프-시진핑 회담 앞두고 미국 신규 관세 발표 보류",
+   "t_id": "Jelang Pertemuan Trump-Xi, AS Tunda Tarif Baru"
+  },
+  {
+   "ts": "2026-09-18T08:04:46+07:00",
+   "date": "2026-09-18",
+   "time": "08:04",
+   "src": "Medcom",
+   "t": "PLN IP Dorong Nilai Ekonomi dari Pengurangan Emisi PLTP Gunung Salak",
+   "tags": [],
+   "url": "https://www.medcom.id/ekonomi/bisnis/MkM5Lamk-pln-ip-dorong-nilai-ekonomi-dari-pengurangan-emisi-pltp-gunung-salak",
+   "img": "https://cdn.medcom.id/dynamic/content/2026/09/18/1842876/l8krAaKb0U.jpg?w=720",
+   "t_id": "PLN IP Dorong Nilai Ekonomi dari Pengurangan Emisi PLTP Gunung Salak",
+   "t_ko": "PLN IP, Gunung Salak 지열발전소 감축 배출권으로 경제적 가치 창출 추진"
+  },
+  {
    "ts": "2026-09-18T08:04:06+07:00",
    "date": "2026-09-18",
    "time": "08:04",
@@ -17367,6 +17410,31 @@
    "t_id": "Lonjakan Rekor Harga Solar Hantam Ekonomi AS, Truk dan Kereta Jadi Awal Mula"
   },
   {
+   "ts": "2026-09-18T08:03:17+07:00",
+   "date": "2026-09-18",
+   "time": "08:03",
+   "src": "CNA",
+   "t": "Oil prices fall 1% on hopes of limited supply disruptions",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/oil-prices-fall-1-hopes-limited-supply-disruptions-6393506",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--cjUmZ6UF--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-18T010140Z_1_LYNXMPEM8H029_RTROPTP_3_IRAN-CRISIS-HORMUZ.JPG?itok=fBJf1Vsv",
+   "t_ko": "공급 차질 우려 완화에 유가 1% 하락",
+   "t_id": "Harga Minyak Turun 1% di Tengah Harapan Gangguan Pasokan Terbatas"
+  },
+  {
+   "ts": "2026-09-18T08:02:00+07:00",
+   "date": "2026-09-18",
+   "time": "08:02",
+   "src": "Katadata",
+   "t": "BGN Siapkan Marketplace Bahan Baku MBG, 7 Komoditas Jadi Prioritas",
+   "tags": [],
+   "url": "https://katadata.co.id/berita/industri/6aac8dbfaa8ca/bgn-siapkan-marketplace-bahan-baku-mbg-7-komoditas-jadi-prioritas",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/17/2026_09_17-17_49_00_e9df7350-b290-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "BGN Siapkan Marketplace Bahan Baku MBG, 7 Komoditas Jadi Prioritas",
+   "t_ko": "BGN, MBG 원자재 마켓플레이스 구축… 7대 품목 우선순위 지정"
+  },
+  {
    "ts": "2026-09-18T08:00:00+07:00",
    "date": "2026-09-18",
    "time": "08:00",
@@ -17376,8 +17444,8 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/121954/rupiah-berpotensi-menguat-hari-ini-ditopang-sentimen-global",
    "g": 1,
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171604.jpeg",
-   "t_id": "Rupiah Berpotensi Menguat Hari Ini, Ditopang Sentimen Global",
-   "t_ko": "글로벌 호재에 루피아화 강세 압력"
+   "t_ko": "글로벌 호재에 루피아화 강세 압력",
+   "t_id": "Rupiah Berpotensi Menguat Hari Ini, Ditopang Sentimen Global"
   },
   {
    "ts": "2026-09-18T07:55:59+07:00",
@@ -17389,8 +17457,8 @@
    "url": "https://finance.detik.com/moneter/d-8667854/efek-bunga-the-fed-naik-menjalar-ke-mana-mana",
    "g": 1,
    "img": "https://akcdn.detik.net.id/community/media/visual/2023/02/02/bank-sentral-as-the-fed-naikkan-suku-bunga-sebesar-025-3_169.jpeg?w=360&q=90",
-   "t_id": "Efek Bunga The Fed Naik Menjalar ke Mana-mana",
-   "t_ko": "미국 기준금리 인상 파급 효과 확산"
+   "t_ko": "미국 기준금리 인상 파급 효과 확산",
+   "t_id": "Efek Bunga The Fed Naik Menjalar ke Mana-mana"
   },
   {
    "ts": "2026-09-18T07:44:37+07:00",
@@ -17624,44 +17692,6 @@
    "t_id": "Bullock Sebut RBA Harus Cek Apakah Suku Bunga Cukup Redam Harga"
   },
   {
-   "ts": "2026-09-18T07:00:00+07:00",
-   "date": "2026-09-18",
-   "time": "07:00",
-   "src": "WSJ",
-   "t": "Christine Lagarde Helped Block Binance’s Foothold in Europe",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/currencies/christine-lagarde-helped-block-binances-foothold-in-europe-d905c86d?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-82387593",
-   "t_ko": "Christine Lagarde, Binance의 유럽 진출 저지에 기여",
-   "t_id": "Christine Lagarde Bantu Blokir Ekspansi Binance di Eropa"
-  },
-  {
-   "ts": "2026-09-18T07:00:00+07:00",
-   "date": "2026-09-18",
-   "time": "07:00",
-   "src": "Bloomberg Technoz",
-   "t": "Bursa Asia Mengekor Wall Street, Fokus Tertuju ke Keputusan BOJ",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121949/bursa-asia-mengekor-wall-street-fokus-tertuju-ke-keputusan-boj",
-   "g": 1,
-   "img": "https://images.bloombergtechnoz.com/data/2024/02/image-20240216105117.jpg",
-   "t_ko": "아시아증시, 월가 흐름 이어받아 BOJ 금리 결정에 주목",
-   "t_id": "Bursa Asia Mengekor Wall Street, Fokus Tertuju ke Keputusan BOJ",
-   "ai_ko": "· S&P 500 1.1%·Nasdaq 100 1.7% 상승\n· 유가 하락에 미국 10년물 금리 9bp 내린 4.93%\n· 아시아 증시 동반 강세, BOJ 금리 결정 대기",
-   "ai_id": "· S&P 500 naik 1,1%, Nasdaq 100 1,7%\n· Yield UST 10 tahun turun ke 4,93%\n· Bursa Asia menguat, fokus ke BOJ",
-   "ai_tags": [
-    "증시",
-    "금리",
-    "유가"
-   ],
-   "ai_tags_id": [
-    "bursa",
-    "suku bunga",
-    "harga minyak"
-   ]
-  },
-  {
    "ts": "2026-09-18T06:56:20+07:00",
    "date": "2026-09-18",
    "time": "06:56",
@@ -17718,31 +17748,6 @@
     "keamanan siber",
     "penipuan",
     "aset kripto"
-   ]
-  },
-  {
-   "ts": "2026-09-18T06:52:00+07:00",
-   "date": "2026-09-18",
-   "time": "06:52",
-   "src": "IDX Channel",
-   "t": "Harga Minyak Turun 1 Persen, tapi Brent Masih di Atas USD100 per Barel",
-   "tags": [],
-   "url": "https://www.idxchannel.com/market-news/harga-minyak-turun-1-persen-tapi-brent-masih-di-atas-usd100-per-barel",
-   "g": 1,
-   "img": "https://img.idxchannel.com/media/439/images/idx/2026/03/13/Minyak_kilang_oil_rigs_-_jack_pump_-_Freepik.jpeg",
-   "t_ko": "유가 1% 하락에도 Brent 배럴당 USD100 상회",
-   "t_id": "Harga Minyak Turun 1 Persen, tapi Brent Masih di Atas USD100 per Barel",
-   "ai_ko": "· Brent 0.95% 내린 USD 104.82\n· Saudi-Houthi 교전 지속에도 1% 약세\n· Saudi 추가 공급 관측에 공급 우려 완화",
-   "ai_id": "· Brent turun 0,95% ke USD104,82\n· Konflik Saudi-Houthi masih berlanjut\n· Pasokan tambahan Saudi redakan cemas",
-   "ai_tags": [
-    "유가",
-    "중동",
-    "원유"
-   ],
-   "ai_tags_id": [
-    "harga minyak",
-    "Timur Tengah",
-    "pasokan"
    ]
   },
   {
@@ -18026,42 +18031,6 @@
     "kebijakan",
     "anggaran"
    ]
-  },
-  {
-   "ts": "2026-09-18T04:25:48+07:00",
-   "date": "2026-09-18",
-   "time": "04:25",
-   "src": "Medcom",
-   "t": "Serapan Tambahan TKD Kota Pariaman Capai 27,57 Persen, Pekerjaan Fisik Dipercepat",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/GNl1mB2b-serapan-tambahan-tkd-kota-pariaman-capai-27-57-persen-pekerjaan-fisik-dipercepat",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/18/1842863/z9lZkuYyBK.jpg?w=720",
-   "t_ko": "Pariaman, 추가 TKD 집행률 27.57% 기록해 인프라 공사 가속화",
-   "t_id": "Serapan Tambahan TKD Kota Pariaman Capai 27,57 Persen, Pekerjaan Fisik Dipercepat"
-  },
-  {
-   "ts": "2026-09-18T03:45:36+07:00",
-   "date": "2026-09-18",
-   "time": "03:45",
-   "src": "Jawa Pos",
-   "t": "Indef: Gaji PPPK Dialihkan ke APBN, Ruang Fiskal Daerah Lebih Longgar",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609170437/indef-gaji-pppk-dialihkan-ke-apbn-ruang-fiskal-daerah-lebih-longgar",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/01/23/a1a07aaf-35c8-49e5-acfb-0f6553994e64-2833063967.jpeg",
-   "t_ko": "Indef, PPPK 급여 APBN 전환으로 지방 재정 여력 확대",
-   "t_id": "Indef: Gaji PPPK Dialihkan ke APBN, Ruang Fiskal Daerah Lebih Longgar",
-   "ai_ko": "· 2027년 예산안에 PPPK 인건비 Rp23조 배정\n· 지방정부 인건비 부담을 중앙정부로 이전\n· 지방 재정여력 확대 효과라고 Indef 평가",
-   "ai_id": "· Rp23 triliun di APBN 2027 untuk PPPK\n· Beban belanja pegawai daerah berkurang\n· Indef nilai ruang fiskal daerah longgar",
-   "ai_tags": [
-    "재정",
-    "정책",
-    "예산"
-   ],
-   "ai_tags_id": [
-    "fiskal",
-    "kebijakan",
-    "anggaran"
-   ]
   }
  ],
  "kisi_news": [
@@ -18265,7 +18234,7 @@
    "k": "달러 인덱스 (DXY)",
    "v": "100.22",
    "d": -0.1,
-   "ytd": 1.98,
+   "ytd": 1.97,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18275,9 +18244,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "100.98",
-   "d": -1.26,
-   "ytd": 75.86,
+   "v": "101.02",
+   "d": -1.22,
+   "ytd": 75.93,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18287,9 +18256,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,394.2",
-   "d": 1.36,
-   "ytd": 1.59,
+   "v": "4,404.0",
+   "d": 1.58,
+   "ytd": 1.81,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18311,15 +18280,15 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,110",
-   "d": 1.34,
-   "ytd": -3.43,
+   "v": "16,271",
+   "d": 0.06,
+   "ytd": -2.46,
    "inv": false,
-   "note": "investing.com · 09/17 마지막 값 · 연초 16,682",
+   "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
    "k_id": "Nikel LME (US$/t)",
-   "note_ko": "investing.com · 09/17 마지막 값 · 연초 16,682",
-   "note_id": "investing.com · 09/17 nilai terakhir · Awal tahun 16,682"
+   "note_ko": "investing.com · 연초 16,682",
+   "note_id": "investing.com · Awal tahun 16,682"
   },
   {
    "k": "CPO (MYR/t)",
@@ -23869,9 +23838,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-18 08:00",
-  "pc_age_min": 7,
+  "pc_age_min": 18,
   "news_ai_cache": 100,
-  "news_ai_hit": 69,
+  "news_ai_hit": 67,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26209,7 +26178,7 @@
    "news": [
     {
      "t": "Harga Minyak Turun 1 Persen, tapi Brent Masih di Atas USD100 per Barel",
-     "ko": "유가 1% 하락에도 Brent 배럴당 USD100 상회",
+     "ko": "유가 1% 하락에도 Brent USD100대 유지",
      "id": "Harga Minyak Turun 1 Persen, tapi Brent Masih di Atas USD100 per Barel",
      "ai_ko": "· Brent 0.95% 내린 USD 104.82\n· Saudi-Houthi 교전 지속에도 1% 약세\n· Saudi 추가 공급 관측에 공급 우려 완화",
      "ai_id": "· Brent turun 0,95% ke USD104,82\n· Konflik Saudi-Houthi masih berlanjut\n· Pasokan tambahan Saudi redakan cemas",
