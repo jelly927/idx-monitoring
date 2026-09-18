@@ -599,9 +599,9 @@ em.ngbig{font-style:normal;font-size:9.5px;font-weight:800;padding:1px 6px;borde
     </div>
   </div>
   <div class="col r2" data-col="3">
-    <div class="card compact fillcard" id="todayev-card">
+    <div class="card compact" id="todayev-card">
       <h2><span data-t="todayEv">오늘 일정</span> <span class="more" onclick="showView('cal')" style="cursor:pointer" data-t="calLink">캘린더 ›</span></h2>
-      <div class="fillbox"><div id="today-ev" class="fill"></div></div>
+      <div id="today-ev"></div>
     </div>
     <div class="card compact daycal fillcard" id="daycal-card" hidden>
       <h2><span data-t="dcT">캘린더</span>
@@ -651,9 +651,9 @@ em.ngbig{font-style:normal;font-size:9.5px;font-weight:800;padding:1px 6px;borde
   </div>
 
   <div class="col r2" data-col="5">
-    <div class="card compact fillcard" id="nego-card">
+    <div class="card compact" id="nego-card">
       <h2><span data-t="ngT">장외 대량거래</span> <span class="src" data-t="ngSub" style="font-weight:400">네고·현금시장</span></h2>
-      <div class="fillbox"><div id="nego" class="fill"></div></div>
+      <div id="nego"></div>
     </div>
     <div class="banner" id="banner" hidden><a id="banner-a" href="https://kisi.co.id" target="_blank" rel="noopener"><img id="banner-img" alt=""></a><div class="dots" id="banner-dots"></div></div>
     <div class="banner" id="banner2" hidden><a id="banner2-a" href="https://kisi.co.id" target="_blank" rel="noopener"><img id="banner2-img" alt=""></a></div>
@@ -933,8 +933,8 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   // 외국인
   $('fdate').textContent=i.foreign_date?((i.foreign_date)+' · '+T('prevday')):'';$('fnote').textContent='';
   $('fx').innerHTML=`<div><span>${T('netbuy')}</span><b class="num ${fn==null?'':fn>=0?'up':'dn'}">${fn==null?'<span class="chk">확인 필요</span>':(fn>=0?'+':'−')+idr(Math.abs(fn))}</b></div><div><span>${T('buy')}</span><b class="num">${i.foreign_buy==null?'—':idr(i.foreign_buy).replace(/<span.*<\/span>/,'')}</b></div><div><span>${T('sell')}</span><b class="num">${i.foreign_sell==null?'—':idr(i.foreign_sell).replace(/<span.*<\/span>/,'')}</b></div>`;
-  if(changed('ftop',[d.foreign_top,LANG]))$('ftop').innerHTML=(d.foreign_top||[]).slice(0,7).map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
-  if(changed('fbot',[d.foreign_bottom,LANG]))$('fbot').innerHTML=(d.foreign_bottom||[]).slice(0,7).map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
+  if(changed('ftop',[d.foreign_top,LANG]))$('ftop').innerHTML=(d.foreign_top||[]).slice(0,5).map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
+  if(changed('fbot',[d.foreign_bottom,LANG]))$('fbot').innerHTML=(d.foreign_bottom||[]).slice(0,5).map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
   renderRank();
   // 시장 뉴스 (티커 없는 거시·정책 기사, 썸네일)
   const tn=d.top_news||[];if(changed('topnews',[tn,LANG]))$('topnews').innerHTML=tnBlock(tn);$('topnews').hidden=!tn.length;   // 오늘의 주요뉴스(하루 고정) — 카드 상단, 아래 실시간 목록에서는 중복 제외
@@ -970,9 +970,9 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   const tdAll=cal.filter(e=>e.date===_t&&evKey(e));
   const byImp=(a,b)=>(b.imp||0)-(a.imp||0)||(a.time||'—').localeCompare(b.time||'—');
   const tdM=tdAll.filter(e=>e.kind==='macro').sort(byImp),tdC=tdAll.filter(e=>e.kind!=='macro').sort((a,b)=>(a.kind==='div'||a.kind==='ipo'?-1:0)-(b.kind==='div'||b.kind==='ipo'?-1:0)||byImp(a,b));
-  const TD_MAX=14;                                                      // 채움 카드다 — 칸 높이만큼만 보이고 나머지는 카드 안에서 스크롤 (2026-09-18)
-  let pick=[...tdM.slice(0,7),...tdC.slice(0,7)];                       // 매크로 3 + 기업(배당·상장 우선) 3, 한쪽이 모자라면 다른 쪽으로 채움
-  if(pick.length<TD_MAX)pick=[...pick,...[...tdM.slice(7),...tdC.slice(7)].sort(byImp).slice(0,TD_MAX-pick.length)];
+  const TD_MAX=6;                                                       // 카드가 세로를 독차지하지 않도록 6건까지만 (나머지는 캘린더로)
+  let pick=[...tdM.slice(0,3),...tdC.slice(0,3)];                       // 매크로 3 + 기업(배당·상장 우선) 3, 한쪽이 모자라면 다른 쪽으로 채움
+  if(pick.length<TD_MAX)pick=[...pick,...[...tdM.slice(3),...tdC.slice(3)].sort(byImp).slice(0,TD_MAX-pick.length)];
   pick=pick.sort(byImp).slice(0,TD_MAX);                                // 별 많은 일정 우선
   const td=pick.sort((a,b)=>(a.time||'—').localeCompare(b.time||'—'));
   const up=tdAll.length?[]:cal.filter(e=>e.date>_t).sort((a,b)=>(b.imp||0)-(a.imp||0)||(a.date+(a.time||'')).localeCompare(b.date+(b.time||''))).slice(0,4);
@@ -1011,7 +1011,7 @@ function fitLists(){
         // 항목이 모두 들어가고도 남으면(예: KISI 뉴스 10건뿐) 카드를 내용 높이로 줄여 같은 열의 다른 카드가 남는 공간을 쓰게 한다
         const need=list.scrollHeight;
         if(pass===0&&need&&H-need>24){box.style.flex='0 0 auto';box.style.height=need+'px';}});}};
-  fitBoxes(); rowFit(); fitBoxes(); rowFit(true); fitBoxes();   /* 목록을 다시 채우면 카드 키가 조금 바뀐다 — 두 번째는 '키우기만' 하며 마무리 */
+  rowFit(); fitBoxes();   /* rowFit 은 지금 높이를 맞추지 않고 이전에 박아 둔 높이만 푼다 (사장: 높이까지 맞출 필요 없음) */
   annCount();}
 /* 같은 줄에 놓인 카드들의 이음매를 맞춘다 — 열마다 카드 높이가 제각각이면 가로줄이 톱니처럼 보인다.
    맞추는 대상은 '같은 그리드 줄 · 같은 카드 수'인 열끼리, 마지막 카드는 건드리지 않는다
@@ -1021,7 +1021,7 @@ function rowFit(keep){
     .map(c=>({el:c,cards:[...c.children].filter(el=>LAY_CARDS.includes(el.id)&&!el.hidden&&!el.classList.contains('lay-off'))}))
     .filter(c=>c.cards.length);
   if(!keep)cols.forEach(c=>c.cards.forEach(el=>{el.style.height='';el.style.minHeight='';el.style.flex='';}));
-  if(document.body.classList.contains('laymode'))return;          // 편집 중에는 손대지 않는다
+  return;   /* 2026-09-18: 줄 높이 강제 맞춤 중단 — 위에서 이전 높이만 풀고 끝낸다. 되살리려면 이 줄만 지운다 */
   const band={};
   cols.forEach(c=>{const t=Math.round(c.el.getBoundingClientRect().top/8)*8;(band[t]=band[t]||[]).push(c);});
   Object.values(band).forEach(g=>{
@@ -1475,7 +1475,7 @@ function negoCard(){
   const all=(DATA.stocks||[]).filter(x=>x.nrv>0).sort((a,b)=>b.nrv-a.nrv);
   const i=DATA.index||{}, reg=i.value_idr||0, nr=i.nonreg_idr||0;
   if(!all.length)return '<div class="empty">'+T('ngNone')+'</div>';
-  const top=all[0], rest=all.slice(1,20);   /* 칸 높이만큼만 보이고 나머지는 카드 안에서 스크롤 (fitLists) */
+  const top=all[0], rest=all.slice(1,6);    /* 히어로 1 + 5행 고정 — 카드가 열을 독차지하지 않게 */
   const big=r=>(r.nrper||0)>=NG_BIG;
   const nm=o=>(o.n||'').replace(/\s*\(Persero\)/i,'');
   const hero='<div class="nghero">'
@@ -1621,7 +1621,7 @@ document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-la
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
 /* 기본 배치 (2026-09-18 사장 지시) — 장외 대량거래는 왼쪽, 뉴스(시장·종목)는 오른쪽,
    홍보 배너는 아랫줄 좌(banner)·우(banner2) 한 장씩 */
-const LAY_DEF={cols:[['rank-card'],['status-card','gidx-card','wl-card'],['mnews-card'],['todayev-card','nego-card','banner'],['foreign-card','macro-card','ann-card'],['daycal-card','banner2','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
+const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['nego-card','banner','banner2','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
 const LAY_CARDS=LAY_DEF.cols.flat();
 const RANK_ALL=[['value','value'],['gainers','gainers'],['losers','losers'],['mcap','mcapR'],['catalyst','catalyst'],['turnover','surge'],['volume','volR'],['fnet_top','fTop'],['fnet_bot','fBot']];
 let LAY=null,layEdit=false,layDrag=null;
