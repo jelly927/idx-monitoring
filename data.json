@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 20:10",
+ "updated": "2026-09-18 20:14",
  "delay_min": 15,
- "fx_basis": "12.78 IDR/KRW · USD/IDR 17,735 · USD/KRW 1,387 · 17:15 Yahoo",
- "idr_per_krw": 12.784,
+ "fx_basis": "12.79 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,388 · 20:00 Yahoo",
+ "idr_per_krw": 12.7883,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -279,12 +279,10 @@
    "code": "USDIDR",
    "label": "USD/IDR",
    "name": "달러/루피아",
-   "px": 17735.0,
+   "px": 17748.0,
    "prev": 17718.0,
-   "pct": 0.1,
+   "pct": 0.17,
    "spark": [
-    17743.0,
-    17743.0,
     17748.0,
     17748.0,
     17748.0,
@@ -313,10 +311,11 @@
     17735.0,
     17735.0,
     17735.0,
-    17735.0
+    17735.0,
+    17748.0
    ],
    "inv": true,
-   "asof": "17:15",
+   "asof": "20:00",
    "high": 17748.0,
    "low": 17730.0,
    "src": "yahoo"
@@ -325,9 +324,9 @@
    "code": "SUN10Y",
    "label": "SUN 10Y",
    "name": "국채 10년물",
-   "px": 7.157,
-   "prev": 7.157,
-   "pct": 0.0,
+   "px": 7.154,
+   "prev": 7.17,
+   "pct": -1.5,
    "spark": [
     7.156,
     7.156,
@@ -336,10 +335,11 @@
     7.157,
     7.157
    ],
-   "span": "1W",
+   "span": "1M",
    "inv": true,
-   "asof": "investing.com · 09/18",
-   "unit": "bp"
+   "unit": "bp",
+   "asof": "PHEI · 09/18",
+   "spark_stale": "PHEI · 09/18"
   }
  ],
  "index": {
@@ -352,7 +352,7 @@
   "value_idr": 17283316187700.008,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-18 19:57",
+  "rank_src": "Yahoo 15분 지연 · 833종목 · 종가 · 외국인·공시 PC 09-18 20:05",
   "rank_asof": null,
   "rank_date": "2026-09-18",
   "adv": 215,
@@ -17649,6 +17649,18 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T20:13:05.276684+07:00",
+   "date": "2026-09-18",
+   "time": "20:13",
+   "src": "Jawa Pos",
+   "t": "Soal Pengembalian Restitusi Pajak, Menkeu Minta DJP Tingkatkan Komunikasi ke Wajib Pajak",
+   "tags": [],
+   "url": "https://www.jawapos.com/finance/2609180230/soal-pengembalian-restitusi-pajak-menkeu-minta-djp-tingkatkan-komunikasi-ke-wajib-pajak",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-ooMqZ.webp",
+   "t_ko": "재무부 장관, 세금 환급 관련 국세청의 납세자 소통 강화 주문",
+   "t_id": "Soal Pengembalian Restitusi Pajak, Menkeu Minta DJP Tingkatkan Komunikasi ke Wajib Pajak"
+  },
+  {
    "ts": "2026-09-18T20:09:10+07:00",
    "date": "2026-09-18",
    "time": "20:09",
@@ -17658,7 +17670,19 @@
    "url": "https://ekonomi.republika.co.id/berita/tlk9va522/peningkatan-keterampilan-petani-kakao-didorong-untuk-perkuat-kesejahteraan",
    "img": "https://static.republika.co.id/uploads/images/detailnews/festival-kakao_260918200847-417.jpeg",
    "t_id": "Peningkatan Keterampilan Petani Kakao Didorong untuk Perkuat Kesejahteraan",
-   "t_ko": "카카오 농가 역량 강화해 농가 소득 증대 도모"
+   "t_ko": "카카오 농가 역량 강화 통한 소득 증대 추진"
+  },
+  {
+   "ts": "2026-09-18T20:07:46+07:00",
+   "date": "2026-09-18",
+   "time": "20:07",
+   "src": "Detik",
+   "t": "Daftar Lengkap 8 Blok Migas Dilelang",
+   "tags": [],
+   "url": "https://finance.detik.com/energi/d-8669212/daftar-lengkap-8-blok-migas-dilelang",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2016/08/09/dba44465-67b1-4f8d-a07e-80c9ebbb22da_169.jpg?w=360&q=90",
+   "t_ko": "석유·가스 광구 8곳 입찰 명단 공개",
+   "t_id": "Daftar Lengkap 8 Blok Migas Dilelang"
   },
   {
    "ts": "2026-09-18T20:05:56+07:00",
@@ -17703,8 +17727,20 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tlk9k9370/pasar-kripto-sideways-tokenisasi-aset-kian-diminati",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260918195834-335.png",
-   "t_ko": "가상자산 시장 횡보 속 자산 토큰화 수요 확대",
+   "t_ko": "가상자산 시장 횡보 속 자산 토큰화 수요 증가",
    "t_id": "Pasar Kripto Sideways, Tokenisasi Aset Kian Diminati"
+  },
+  {
+   "ts": "2026-09-18T20:00:00+07:00",
+   "date": "2026-09-18",
+   "time": "20:00",
+   "src": "Katadata",
+   "t": "BRI Kartu Kredit Siapkan Jalur Khusus ke MAMA Awards 2026 di Osaka, Cek Caranya",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/keuangan/6aad3607dfd33/bri-kartu-kredit-siapkan-jalur-khusus-ke-mama-awards-2026-di-osaka-cek-caranya",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/18/BRI_Kartu_Kredit_menghadirkan_program_spesial_berhadiah_MAMA_Awa-2026_09_18-19_50_41_bed8b00c9b3757851357bdc3bb7787a2_620x413_thumb.jpg",
+   "t_id": "BRI Kartu Kredit Siapkan Jalur Khusus ke MAMA Awards 2026 di Osaka, Cek Caranya",
+   "t_ko": "BRI 카드, 오사카 개최 2026 MAMA 어워즈 단독 패키지 출시"
   },
   {
    "ts": "2026-09-18T19:53:14+07:00",
@@ -17715,8 +17751,8 @@
    "tags": [],
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ2p6dkpCd0xfbVRBMnhySFRVbm5OSElMZXRXc0NpaGhoRmw2MzNfSUstaC1RVFFnUU1DNUM0MEpHTmxhbHJxOC1Ec2lMWU0xMFVaSVdsZGdVSi1JaWpDX093SHhBdlBkdFdGZnFpd05yYW9LRXk2NkdOMnRWSzJ2dkhuTFpDN01LM1JvNjhyamFZM2dLRFRzM24xSUZwRGVBakhwM3N3em1ycFBuWVg2UVB2OTQ?oc=5",
    "g": 1,
-   "t_ko": "유가 하락 및 국채금리 상승에 Wall St 약보합 출발 전망",
-   "t_id": "Wall St Bersiap Datar Seiring Penurunan Harga Minyak dan Kenaikan Yield US Treasury"
+   "t_ko": "유가 하락·국채금리 상승에 Wall Street 혼조세 출발 전망",
+   "t_id": "Wall St Bersiap Datar Seiring Penurunan Harga Minyak dan Kenaikan Imbal Hasil US Treasury"
   },
   {
    "ts": "2026-09-18T19:52:19+07:00",
@@ -18090,41 +18126,6 @@
    "g": 1,
    "t_ko": "아르헨티나 경기 회복 정체, Milei 재선 가도에 리스크",
    "t_id": "Pemulihan Argentina yang Stagnan Jadi Risiko bagi Pencalonan Kembali Milei"
-  },
-  {
-   "ts": "2026-09-18T18:57:00+07:00",
-   "date": "2026-09-18",
-   "time": "18:57",
-   "src": "Media Indonesia",
-   "t": "Belanja Pemerintah Pusat hingga Agustus Naik 29 Persen",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/935005/belanja-pemerintah-pusat-hingga-agustus-naik-29-persen",
-   "t_ko": "8월 중앙정부 지출 29% 증가",
-   "t_id": "Belanja Pemerintah Pusat hingga Agustus Naik 29 Persen"
-  },
-  {
-   "ts": "2026-09-18T18:55:00+07:00",
-   "date": "2026-09-18",
-   "time": "18:55",
-   "src": "Media Indonesia",
-   "t": "Harga Minyak dan Rupiah Picu Risiko Pembengkakan Belanja Negara 2026",
-   "tags": [],
-   "url": "https://mediaindonesia.com/ekonomi/935004/harga-minyak-dan-rupiah-picu-risiko-pembengkakan-belanja-negara-2026",
-   "g": 1,
-   "t_ko": "유가와 루피아 가치 하락으로 2026년 국가 예산 적자 확대 리스크",
-   "t_id": "Harga Minyak dan Rupiah Picu Risiko Pembengkakan Belanja Negara 2026"
-  },
-  {
-   "ts": "2026-09-18T18:51:40+07:00",
-   "date": "2026-09-18",
-   "time": "18:51",
-   "src": "Detik",
-   "t": "Dirjen Pajak Pastikan Tak Ada Kenaikan Tarif PPN",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8669067/dirjen-pajak-pastikan-tak-ada-kenaikan-tarif-ppn",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/07/31/dirjen-pajak-bimo-wijayanto-1753973379712_169.jpeg?w=360&q=90",
-   "t_ko": "세무국장, 부가가치세율 인상 없음 재확인",
-   "t_id": "Dirjen Pajak Pastikan Tak Ada Kenaikan Tarif PPN"
   }
  ],
  "kisi_news": [
@@ -18291,8 +18292,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.78",
-   "d": -0.62,
-   "ytd": 10.04,
+   "d": -0.61,
+   "ytd": 10.05,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18327,7 +18328,7 @@
    "k": "달러 인덱스 (DXY)",
    "v": "100.46",
    "d": 0.22,
-   "ytd": 2.22,
+   "ytd": 2.21,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18337,9 +18338,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.67",
-   "d": -4.45,
-   "ytd": 68.36,
+   "v": "97.35",
+   "d": -3.78,
+   "ytd": 69.54,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18349,9 +18350,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,405.9",
-   "d": 0.21,
-   "ytd": 1.86,
+   "v": "4,406.6",
+   "d": 0.23,
+   "ytd": 1.87,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18373,9 +18374,9 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,151",
-   "d": -0.68,
-   "ytd": -3.18,
+   "v": "16,181",
+   "d": -0.5,
+   "ytd": -3.0,
    "inv": false,
    "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
@@ -18396,7 +18397,68 @@
    "note_id": "FCPO Bursa Malaysia kontrak terdekat · investing.com · Awal tahun 4,050"
   }
  ],
- "curve": null,
+ "curve": {
+  "date": "2026-09-18",
+  "src": "PHEI (IBPA)",
+  "rows": [
+   [
+    0.1,
+    6.6203,
+    6.5966
+   ],
+   [
+    1.0,
+    6.6821,
+    6.6953
+   ],
+   [
+    2.0,
+    6.7601,
+    6.7925
+   ],
+   [
+    3.0,
+    6.8425,
+    6.8806
+   ],
+   [
+    5.0,
+    6.9869,
+    7.02
+   ],
+   [
+    7.0,
+    7.0834,
+    7.1075
+   ],
+   [
+    10.0,
+    7.1542,
+    7.1696
+   ],
+   [
+    15.0,
+    7.1846,
+    7.1957
+   ],
+   [
+    20.0,
+    7.1885,
+    7.199
+   ],
+   [
+    25.0,
+    7.1889,
+    7.1994
+   ],
+   [
+    30.0,
+    7.1889,
+    7.1994
+   ]
+  ],
+  "n": 41
+ },
  "calendar": [
   {
    "date": "2026-08-31",
@@ -23992,10 +24054,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-18 19:57",
-  "pc_age_min": 13,
-  "news_ai_cache": 61,
-  "news_ai_hit": 32,
+  "idx_from_pc": "2026-09-18 20:05",
+  "pc_age_min": 9,
+  "news_ai_cache": 59,
+  "news_ai_hit": 31,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26022,18 +26084,18 @@
    "t_id": "Yen Turun Pasca Kenaikan Suku Bunga BOJ Seiring Perpanjangan Penurunan Minyak"
   },
   {
-   "ts": "2026-09-18T14:05:19+07:00",
+   "ts": "2026-09-18T18:55:00+07:00",
    "date": "2026-09-18",
-   "time": "14:05",
-   "src": "Jawa Pos",
-   "t": "Realisasi Subsidi Energi Tembus Rp 331 Triliun, Naik Rp 113 Triliun dari 2025",
+   "time": "18:55",
+   "src": "Media Indonesia",
+   "t": "Harga Minyak dan Rupiah Picu Risiko Pembengkakan Belanja Negara 2026",
    "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609180254/realisasi-subsidi-energi-tembus-rp-331-triliun-naik-rp-113-triliun-dari-2025",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/1fYKFUeniGOc5z25Ayl9ddfRAK50eT6NEE67JGST.webp",
-   "score": 409.95,
+   "url": "https://mediaindonesia.com/ekonomi/935004/harga-minyak-dan-rupiah-picu-risiko-pembengkakan-belanja-negara-2026",
+   "g": 1,
+   "score": 410.6,
    "srcs": 1,
-   "t_ko": "에너지 보조금 집행액 Rp331조 — 2025년 대비 Rp113조 증가",
-   "t_id": "Realisasi Subsidi Energi Tembus Rp 331 Triliun, Naik Rp 113 Triliun dari 2025"
+   "t_ko": "유가와 루피아 가치 하락으로 2026년 국가 예산 적자 확대 리스크",
+   "t_id": "Harga Minyak dan Rupiah Picu Risiko Pembengkakan Belanja Negara 2026"
   },
   {
    "ts": "2026-09-18T05:43:46+07:00",
