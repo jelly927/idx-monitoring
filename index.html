@@ -473,7 +473,8 @@ em.ngbig{font-style:normal;font-size:9.5px;font-weight:800;padding:1px 6px;borde
 .ann .row a.pdf{display:inline-block;font-size:10px;font-weight:800;color:var(--ink3);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:6px;vertical-align:1px;text-decoration:none}.ann .row a.pdf:hover{color:var(--brand);border-color:var(--brand)}
 .divline{background:var(--brand2);color:var(--brand);border-radius:8px;padding:8px 10px;font-size:12.5px;margin:0 0 8px}.divline b{margin-right:4px}
 #macro tr.th td{font-size:11px;color:var(--ink3);font-weight:700;padding-bottom:4px;border-bottom:1px solid var(--line)}
-.banner{position:relative;border-radius:14px;overflow:hidden;box-shadow:var(--sh,0 1px 3px rgba(0,0,0,.08));background:#0b3d2e}
+.banner{position:relative;border-radius:14px;overflow:hidden;box-shadow:var(--sh,0 1px 3px rgba(0,0,0,.08));background:#0b3d2e;max-height:124px}
+.banner img{object-fit:cover;object-position:center}
 .banner img{display:block;width:100%;height:auto;transition:opacity .6s}.banner img.fade{opacity:0}
 .banner .dots{position:absolute;right:10px;bottom:8px;display:flex;gap:5px}.banner .dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.45);cursor:pointer}.banner .dots i.on{background:#fff}
 .n-item .logo{width:34px;height:34px;flex-basis:34px;font-size:12px;margin-top:1px}
@@ -1374,7 +1375,7 @@ function callBox(t){const w=((DATA.watch||[]).find(x=>x.t===t));if(!w||!w.call)r
    지분율·이름·분류만 싣는다. 개인에게 국적·소재국을 붙이지 않고, 주주명 역검색 색인도 만들지 않는다.
    아래 insBox(지분 변동 신고)와 이름으로 매칭하지 말 것 — 원문에 없는 '내부자' 판정을 만들게 된다(09 컴플라이언스). */
 let HOLD=null,HOLD_P=null;
-const HOLD_URL=['data/holders.json','https://raw.githubusercontent.com/jelly927/idx-monitoring/main/data/holders.json'];
+const HOLD_URL=['data/holders.json','https://raw.githubusercontent.com/kisiweb/idx-monitoring/main/data/holders.json'];
 /* Worker 의 PUBLIC_PATH 에 경로가 아직 없으면 로컬은 404 다 — data.json 과 같은 방식으로 GitHub raw 로 넘어간다.
    (Worker CSP connect-src 에 raw.githubusercontent.com 이 이미 열려 있다) */
 function holdLoad(){if(HOLD)return Promise.resolve(HOLD);
@@ -1688,7 +1689,7 @@ function marketState(){const el=$('mstate');if(!el)return;const now=new Date(Dat
   el.textContent=txt;el.className=cls;}
 setInterval(marketState,30000);
 function loadSidecar(){return new Promise(res=>{if(window.__IDX_DATA)return res(window.__IDX_DATA);const sc=document.createElement('script');sc.src='data.js?t='+Date.now();sc.onload=()=>res(window.__IDX_DATA||null);sc.onerror=()=>res(null);document.head.appendChild(sc);});}
-const REMOTE_DATA_URL='https://raw.githubusercontent.com/jelly927/idx-monitoring/main/data.json';   // 공개 사이트(workers.dev 등)는 GitHub 의 최신 data.json 을 읽는다 (Actions 가 5분마다 갱신). localhost 는 같은 폴더의 data.json
+const REMOTE_DATA_URL='https://raw.githubusercontent.com/kisiweb/idx-monitoring/main/data.json';   // 공개 사이트(workers.dev 등)는 GitHub 의 최신 data.json 을 읽는다 (Actions 가 5분마다 갱신). localhost 는 같은 폴더의 data.json
 const DATA_URL=()=>'data.json';   // 항상 같은 주소의 data.json 먼저 (localhost·Pages·Worker 프록시 모두 여기서 제공) → 실패 시 GitHub raw
 async function fetchJson(u){const r=await fetch(u+(u.includes('?')?'&':'?')+'t='+Date.now(),{cache:'no-store'});if(!r.ok)throw 0;return r.json();}
 async function load(){try{let d;try{d=await fetchJson(DATA_URL());}catch(e){if(!REMOTE_DATA_URL||/^(localhost|127\.0\.0\.1)$/.test(location.hostname))throw e;d=await fetchJson(REMOTE_DATA_URL);}(d.indices||[]).forEach(x=>{x.live=/지연|tunda/.test(x.asof||'');x.t=0;});dataOk();render(d);marketState();}
