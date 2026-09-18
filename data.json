@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-19 00:12",
+ "updated": "2026-09-19 01:05",
  "delay_min": 15,
- "fx_basis": "12.81 IDR/KRW · USD/IDR 17,740 · USD/KRW 1,385 · 22:30 Yahoo",
- "idr_per_krw": 12.8088,
+ "fx_basis": "12.80 IDR/KRW · USD/IDR 17,740 · USD/KRW 1,385 · 00:30 Yahoo",
+ "idr_per_krw": 12.8041,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -49,13 +49,9 @@
    "label": "USD/IDR",
    "name": "달러/루피아",
    "px": 17740.0,
-   "prev": 17718.0,
-   "pct": 0.12,
+   "prev": 17740.0,
+   "pct": 0.0,
    "spark": [
-    17748.0,
-    17748.0,
-    17748.0,
-    17748.0,
     17748.0,
     17748.0,
     17748.0,
@@ -82,10 +78,11 @@
     17740.0,
     17740.0,
     17740.0,
+    17740.0,
     17740.0
    ],
    "inv": true,
-   "asof": "22:30",
+   "asof": "00:30",
    "high": 17748.0,
    "low": 17730.0,
    "src": "yahoo"
@@ -94,9 +91,9 @@
    "code": "SUN10Y",
    "label": "SUN 10Y",
    "name": "국채 10년물",
-   "px": 7.157,
-   "prev": 7.157,
-   "pct": 0.0,
+   "px": 7.154,
+   "prev": 7.17,
+   "pct": -1.5,
    "spark": [
     7.095,
     7.096,
@@ -105,10 +102,11 @@
     7.156,
     7.157
    ],
-   "span": "1W",
+   "span": "1M",
    "inv": true,
-   "asof": "investing.com · 09/15",
-   "unit": "bp"
+   "unit": "bp",
+   "asof": "PHEI · 09/18",
+   "spark_stale": "investing.com · 09/15"
   }
  ],
  "index": {
@@ -118,13 +116,13 @@
   "prev": 6462.43,
   "ytd": -25.51,
   "m1": -0.13,
-  "value_idr": 12037072873733.324,
+  "value_idr": 12021002038733.324,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-18 20:52",
+  "rank_src": "Yahoo 15분 지연 · 830종목 · 종가 · 외국인·공시 PC 09-18 20:52",
   "rank_asof": null,
   "rank_date": "2026-09-17",
-  "adv": 407,
+  "adv": 406,
   "dec": 255,
   "unch": 169,
   "foreign_net_idr": 157062291789.93994,
@@ -2780,22 +2778,6 @@
    "lo": 540.0,
    "ratio": 3.4,
    "fnet": 3219849973.3145046,
-   "live": 0
-  },
-  {
-   "t": "AALI",
-   "n": "Astra Agro Lestari",
-   "px": 8675.0,
-   "prev": 8625.0,
-   "pct": 0.58,
-   "val": 16070835000.0,
-   "vol": 1857900.0,
-   "sh": 1924688333,
-   "mcap": 16696671288775.0,
-   "hi": 8700.0,
-   "lo": 8575.0,
-   "ratio": 1.1,
-   "fnet": 8411665950.26643,
    "live": 0
   },
   {
@@ -14555,11 +14537,11 @@
   {
    "name": "필수소비재",
    "name_id": "Konsumen Primer",
-   "n": 123,
-   "adv": 59,
+   "n": 122,
+   "adv": 58,
    "dec": 41,
-   "val": 1060649175633.333,
-   "mcap": 1087631438278915.0,
+   "val": 1044578340633.333,
+   "mcap": 1070934766990140.0,
    "top": [
     {
      "t": "ICBP",
@@ -14602,8 +14584,8 @@
      "pct": -0.22
     }
    ],
-   "fnet": 46900434787,
-   "pct": 1.19,
+   "fnet": 38488768837,
+   "pct": 1.2,
    "fbuy_top": [
     {
      "t": "JARR",
@@ -14618,10 +14600,10 @@
      "pct": 1.92
     },
     {
-     "t": "AALI",
-     "n": "Astra Agro Lestari",
-     "fnet": 8411665950,
-     "pct": 0.58
+     "t": "ULTJ",
+     "n": "Ultrajaya Milk Industry & Trading Company",
+     "fnet": 5979794894,
+     "pct": 1.06
     }
    ],
    "fsell_top": [
@@ -15752,10 +15734,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7624.11,
+   "px": 7629.77,
    "prev": 7637.05,
-   "pct": -0.17,
-   "asof": "00:00",
+   "pct": -0.1,
+   "asof": "01:00",
    "live": true,
    "spark": [
     7643.16,
@@ -15800,17 +15782,29 @@
     7621.86,
     7624.91,
     7624.07,
-    7624.11
+    7623.96,
+    7623.75,
+    7623.7,
+    7623.58,
+    7625.24,
+    7624.65,
+    7624.31,
+    7626.93,
+    7628.03,
+    7626.84,
+    7628.2,
+    7628.39,
+    7629.77
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26393.22,
+   "px": 26415.71,
    "prev": 26418.3,
-   "pct": -0.09,
-   "asof": "00:00",
+   "pct": -0.01,
+   "asof": "01:00",
    "live": true,
    "spark": [
     26506.5,
@@ -15855,17 +15849,29 @@
     26382.18,
     26392.37,
     26390.06,
-    26393.22
+    26392.49,
+    26394.58,
+    26400.72,
+    26402.6,
+    26406.02,
+    26401.54,
+    26396.38,
+    26410.69,
+    26416.73,
+    26414.81,
+    26418.07,
+    26415.37,
+    26415.71
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51588.15,
+   "px": 51628.41,
    "prev": 51776.48,
-   "pct": -0.36,
-   "asof": "00:00",
+   "pct": -0.29,
+   "asof": "01:00",
    "live": true,
    "spark": [
     51685.21,
@@ -15910,7 +15916,19 @@
     51578.45,
     51607.92,
     51597.85,
-    51588.15
+    51585.7,
+    51573.31,
+    51556.88,
+    51558.14,
+    51573.54,
+    51566.45,
+    51571.05,
+    51585.02,
+    51597.96,
+    51579.71,
+    51593.66,
+    51602.31,
+    51628.41
    ]
   },
   {
@@ -16319,15 +16337,15 @@
    "date": "2026-09-18",
    "time": "09/18",
    "src": "IDNFinancials",
-   "t": "Concerning outflow, BBCA and BMRI are top sells",
+   "t": "Foreign outflow at IDR1.79 trillion, BBCA and BMRI are top net sells",
    "tags": [
     "BBCA",
     "BMRI"
    ],
-   "url": "https://www.idnfinancials.com/news/69078/concerning-outflow-bbca-and-bmri-are-top-sells",
+   "url": "https://www.idnfinancials.com/news/69078/foreign-outflow-at-idr1-79-trillion-bbca-and-bmri-are-top-net-sells",
    "img": "https://photos.idnfinancials.com/_idn/_DESIGN%20GRAFIS/NET%20FOREIGN%20IMAGE%20%28ARIF%29/NET%20FOREIGN%2019.jpeg",
-   "t_ko": "BBCA·BMRI, 외국인 순매도 상위 기록",
-   "t_id": "Terkait Modal Keluar, BBCA dan BMRI Jadi Paling Banyak Dilepas"
+   "t_ko": "외국인 Rp1.79조 순매도 — BBCA·BMRI 순매도 상위",
+   "t_id": "Asing Lepas Saham Rp1,79 T, BBCA dan BMRI Jadi Paling Banyak Dilego"
   },
   {
    "ts": "2026-09-18T19:56:37+07:00",
@@ -17180,6 +17198,179 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-19T00:52:17+07:00",
+   "date": "2026-09-19",
+   "time": "00:52",
+   "src": "Jawa Pos",
+   "t": "Persaingan Ritel Makin Ketat, Model Omnichannel Jadi Jalan Baru Mengejar Pertumbuhan",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609180354/persaingan-ritel-makin-ketat-model-omnichannel-jadi-jalan-baru-mengejar-pertumbuhan",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/18/ilustrasi-strategi-omnichannel-appier-cOCmO.webp",
+   "t_ko": "유통 경쟁 심화에 옴니채널 모델로 성장 돌파구 마련",
+   "t_id": "Persaingan Ritel Makin Ketat, Model Omnichannel Jadi Jalan Baru Mengejar Pertumbuhan"
+  },
+  {
+   "ts": "2026-09-19T00:51:00+07:00",
+   "date": "2026-09-19",
+   "time": "00:51",
+   "src": "WSJ",
+   "t": "New Report on SVB Collapse Pins Blame on Fed’s Own Regulators, Fed Official Says",
+   "tags": [],
+   "url": "https://www.wsj.com/economy/central-banking/new-fed-report-on-svb-collapse-pins-blame-on-feds-own-regulators-9a3cb062?mod=rss_markets_main",
+   "g": 1,
+   "img": "https://images.wsj.net/im-25561998",
+   "t_ko": "SVB 파산 보고서, 연준 자체 규제 당국 책임으로 지목",
+   "t_id": "Laporan Baru Runtuhnya SVB Salahkan Regulator The Fed Sendiri, Ungkap Pejabat The Fed"
+  },
+  {
+   "ts": "2026-09-19T00:41:00+07:00",
+   "date": "2026-09-19",
+   "time": "00:41",
+   "src": "MarketWatch",
+   "t": "As Warren Buffett’s reign ends, fans should sell Berkshire — and buy these stocks instead",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/as-warren-buffetts-reign-ends-fans-should-sell-berkshire-and-buy-these-stocks-instead-bff5ba32?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-69210702",
+   "t_ko": "Warren Buffett 시대 종료에 Berkshire 매도 및 대안 주식 매수 권고",
+   "t_id": "Saat Era Warren Buffett Berakhir, Investor Disarankan Jual Berkshire dan Beli Saham Ini"
+  },
+  {
+   "ts": "2026-09-19T00:40:27+07:00",
+   "date": "2026-09-19",
+   "time": "00:40",
+   "src": "Jawa Pos",
+   "t": "Realiasi Penyaluran TKD 2026 Sentuh Rp 504,3 Triliun, 72,8 Persen dari Target APBN",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609180349/realiasi-penyaluran-tkd-2026-sentuh-rp-5043-triliun-728-persen-dari-target-apbn",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-xKe3u.webp",
+   "t_ko": "2026년 TKD 집행 실적 Rp504.3조, APBN 목표의 72.8%",
+   "t_id": "Realiasi Penyaluran TKD 2026 Sentuh Rp 504,3 Triliun, 72,8 Persen dari Target APBN"
+  },
+  {
+   "ts": "2026-09-19T00:36:51+07:00",
+   "date": "2026-09-19",
+   "time": "00:36",
+   "src": "Jawa Pos",
+   "t": "Kemenkeu Mulai Pungut PPh Marketplace 0,5 Persen per 1 November 2026",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609180347/kemenkeu-mulai-pungut-pph-marketplace-05-persen-per-1-november-2026",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/03/05/dirjen-pajak-bimo-wijayanto-nurul-fjawaposcom-zHj1J.webp",
+   "t_ko": "재무부, 11월 1일부터 마켓플레이스 PPh 0.5% 징수 개시",
+   "t_id": "Kemenkeu Mulai Pungut PPh Marketplace 0,5 Persen per 1 November 2026"
+  },
+  {
+   "ts": "2026-09-19T00:34:53+07:00",
+   "date": "2026-09-19",
+   "time": "00:34",
+   "src": "Jawa Pos",
+   "t": "Pemerintah Rampungkan Pelunasan Utang BLBI Peninggalan Krisis 1997-1998",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609180346/pemerintah-rampungkan-pelunasan-utang-blbi-peninggalan-krisis-1997-1998",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/StPEKGg1VA3QF2CzvzNHkGBen9GcUPCy7U2gni6f.webp",
+   "t_ko": "정부, 1997~1998년 위기 유산 BLBI 부채 상환 완료",
+   "t_id": "Pemerintah Rampungkan Pelunasan Utang BLBI Peninggalan Krisis 1997-1998"
+  },
+  {
+   "ts": "2026-09-19T00:34:49+07:00",
+   "date": "2026-09-19",
+   "time": "00:34",
+   "src": "CNBC",
+   "t": "JPMorgan, Citigroup CEOs attending Trump's state dinner for China's Xi: Sources",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/trump-xi-state-dinner-jpmorgan-jamie-dimon.html",
+   "g": 1,
+   "t_ko": "JPMorgan·Citigroup CEO, 트럼프 주최 중국 시진핑 국빈 만찬 참석",
+   "t_id": "CEO JPMorgan dan Citigroup Hadiri Jamuan Kenegaraan Trump untuk Xi dari China: Sumber"
+  },
+  {
+   "ts": "2026-09-19T00:32:02+07:00",
+   "date": "2026-09-19",
+   "time": "00:32",
+   "src": "Yahoo Finance",
+   "t": "Astera Labs vs. Arm: Which AI-Driven Tech Stock Is a Better Buy in 2026?",
+   "tags": [],
+   "url": "https://finance.yahoo.com/technology/ai/articles/astera-labs-vs-arm-ai-173202579.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/motleyfool.com/361150b5027085adfae8578a3c1a9afa.png",
+   "t_ko": "Astera Labs vs Arm, 2026년 유망 AI 기술주 분석",
+   "t_id": "Astera Labs vs. Arm: Saham Teknologi AI Mana yang Lebih Layak Dibeli pada 2026?"
+  },
+  {
+   "ts": "2026-09-19T00:26:13+07:00",
+   "date": "2026-09-19",
+   "time": "00:26",
+   "src": "Bloomberg",
+   "t": "Earnings, Not the Fed, Are Driving Stocks: UBS's Lovell",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-18/earnings-not-the-fed-are-driving-stocks-ubs-s-lovell-video",
+   "g": 1,
+   "t_ko": "UBS Lovell, 연준보다 실적이 주식시장 견인",
+   "t_id": "Laporan Keuangan, Bukan The Fed, Dorong Saham: Lovell dari UBS"
+  },
+  {
+   "ts": "2026-09-19T00:19:28+07:00",
+   "date": "2026-09-19",
+   "time": "00:19",
+   "src": "Bloomberg",
+   "t": "Investor Sentiment Plunges to 16-Month Low, AAII Survey Shows",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-18/investor-sentiment-plunges-to-16-month-low-aaii-survey-shows",
+   "g": 1,
+   "t_ko": "AAII 조사, 투자자 심리 16개월 내 최저치로 급락",
+   "t_id": "Sentimen Investor Anjlok ke Level Terendah 16 Bulan, Survei AAII Ungkap"
+  },
+  {
+   "ts": "2026-09-19T00:15:51+07:00",
+   "date": "2026-09-19",
+   "time": "00:15",
+   "src": "Bloomberg",
+   "t": "College Students Look for Leg Up to Get Wall Street Job",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-18/college-students-look-for-leg-up-to-get-wall-street-job-video",
+   "g": 1,
+   "t_ko": "월가 취업 노리는 대학생들",
+   "t_id": "Mahasiswa Cari Keunggulan demi Dapat Kerja di Wall Street"
+  },
+  {
+   "ts": "2026-09-19T00:11:39+07:00",
+   "date": "2026-09-19",
+   "time": "00:11",
+   "src": "CNBC",
+   "t": "Auto industry urges Trump to bar Chinese automakers in U.S. ahead of Xi visit",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/xi-visit-automakers-urge-trump-to-bar-chinese-automakers-in-us.html",
+   "g": 1,
+   "t_ko": "자동차 업계, 시진핑 방미 앞두고 트럼프에 중국차 미국 진입 금지 촉구",
+   "t_id": "Industri Otomatisasi Desak Trump Blokir Produsen Mobil China di AS Jelang Kunjungan Xi"
+  },
+  {
+   "ts": "2026-09-19T00:10:58+07:00",
+   "date": "2026-09-19",
+   "time": "00:10",
+   "src": "BBC",
+   "t": "Ryanair boss Michael O'Leary apologises over 'high-fare rapists' remarks",
+   "tags": [],
+   "url": "https://www.bbc.co.uk/news/articles/cm1j4kj57k08o?at_medium=RSS&at_campaign=rss",
+   "g": 1,
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4468/live/9a3d9590-9fbc-11ef-8538-e1655f5a8342.jpg",
+   "t_ko": "Ryanair CEO Michael O'Leary, 고가 운임 발언 사과",
+   "t_id": "Bos Ryanair Michael O'Leary Minta Maaf atas Komentar 'Pemerkosa Tarif Tinggi'"
+  },
+  {
+   "ts": "2026-09-19T00:09:47+07:00",
+   "date": "2026-09-19",
+   "time": "00:09",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Dow Pressured As Yields Hit 5%; Chip Gear Players Jump, Lead Nasdaq 100 (Live Coverage)",
+   "tags": [],
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-apple-amd-micron-sandisk/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/55ca4252bd7c66820fc61ce444908e68.jpg",
+   "t_ko": "증시 현황: 국채금리 5% 돌파에 다우 약세 속 반도체 장비주 나스닥 100 견인",
+   "t_id": "Pasar Saham Hari Ini: Dow Tertekan Seiring Imbal Hasil Sentus 5%; Saham Chip Naik, Pimpin Nasdaq 100"
+  },
+  {
    "ts": "2026-09-19T00:02:00+07:00",
    "date": "2026-09-19",
    "time": "00:02",
@@ -17206,6 +17397,31 @@
    "t_id": "Saham Anjlok Seiring Kenaikan Imbal Hasil US Treasury"
   },
   {
+   "ts": "2026-09-18T23:58:33+07:00",
+   "date": "2026-09-18",
+   "time": "09/18",
+   "src": "Bloomberg",
+   "t": "Stocks Waver as Treasuries Yield Resume Advance",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/videos/2026-09-18/bloomberg-surveillance-9-18-2026-video",
+   "g": 1,
+   "t_ko": "국채금리 상승 재개에 증시 혼조세",
+   "t_id": "Saham Fluktuatif Seiring Kenaikan Imbal Hasil US Treasury Lanjut"
+  },
+  {
+   "ts": "2026-09-18T23:57:59+07:00",
+   "date": "2026-09-18",
+   "time": "09/18",
+   "src": "Yahoo Finance",
+   "t": "Say What? This AI Stock Gets Support, Eyes New Entry As Earnings Surge 66%",
+   "tags": [],
+   "url": "https://www.investors.com/stock-lists/stock-spotlight/ai-stock-netapp-ntap-support-entry-earnings-surge/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/8987f034d18ddd57bfdc447fd5b9bf55.jpg",
+   "t_ko": "실적 66% 급증 AI 주식, 매수세 유입 속 신규 진입 주목",
+   "t_id": "Maksudnya? Saham AI Ini Raih Dukungan, Bidik Masuk Baru Seiring Lonjakan Laba 66%"
+  },
+  {
    "ts": "2026-09-18T23:57:00+07:00",
    "date": "2026-09-18",
    "time": "09/18",
@@ -17219,169 +17435,17 @@
    "t_id": "Skandal Pasar Saham Bernilai Miliar Dolar Guncang Turki Era Erdogan"
   },
   {
-   "ts": "2026-09-18T23:50:00+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "MarketWatch",
-   "t": "What’s really driving inflation and rising interest rates",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/whats-really-driving-inflation-and-rising-interest-rates-59a9cd51?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-73380465",
-   "t_ko": "인플레이션과 금리 상승 유발하는 실질 요인 분석",
-   "t_id": "Penyebab Utama Inflasi dan Kenaikan Suku Bunga"
-  },
-  {
-   "ts": "2026-09-18T23:49:03+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "CNBC",
-   "t": "Trump's $403 million war chest is finally being spent on the midterms. Now comes the hard part",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/18/trump-election-ad-spend-maga-inc.html",
-   "g": 1,
-   "t_ko": "트럼프 4억 3,00만 달러 선거 자금 중간선거 투입 돌입",
-   "t_id": "Dana Kampanye Trump USD 403 Juta Mulai Digelontor untuk Pemilu Sela, Tantangan Berat Menanti"
-  },
-  {
-   "ts": "2026-09-18T23:47:00+07:00",
+   "ts": "2026-09-18T23:56:58+07:00",
    "date": "2026-09-18",
    "time": "09/18",
    "src": "Yahoo Finance",
-   "t": "Accenture vs. Micron Technology: Which Technology Stock Is a Better Buy in 2026?",
+   "t": "When To Dump Stocks: These IBD 50 Components Hit Sell Signals",
    "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/accenture-vs-micron-technology-technology-164700535.html",
+   "url": "https://www.investors.com/stock-lists/ibd-50/when-to-sell-stocks-ibd-50-nem-stock/?src=A00220&yptr=yahoo",
    "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/f7a65c96d166faf21aac2b3268722093.png",
-   "t_ko": "Accenture vs Micron Technology, 2026년 유망 IT주 분석",
-   "t_id": "Accenture vs. Micron Technology: Saham Teknologi Mana yang Layak Dibeli pada 2026?"
-  },
-  {
-   "ts": "2026-09-18T23:43:25+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Yahoo Finance",
-   "t": "Why Shares of Okta Stock Shot Up 10% This Week",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/why-shares-okta-stock-shot-164325002.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/3f9b5c1fbada12996e3d0f2097ea99ea.jpg",
-   "t_ko": "Okta 주가 이번 주 10% 급등 배경",
-   "t_id": "Penyebab Saham Okta Meroket 10% Pekan Ini"
-  },
-  {
-   "ts": "2026-09-18T23:42:02+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Bloomberg",
-   "t": "Big Take: If You Work, Are You ‘Working Class’?",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-18/big-take-if-you-work-are-you-working-class-video",
-   "g": 1,
-   "t_ko": "근로자의 경제적 계급 정체성에 대한 분석",
-   "t_id": "Pekerja Kantoran, Termasuk Kelas Pekerjakah Anda?"
-  },
-  {
-   "ts": "2026-09-18T23:40:00+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "WSJ",
-   "t": "New Report on SVB Collapse Pins Blame on Fed’s Own Regulators, Fed Official Says",
-   "tags": [],
-   "url": "https://www.wsj.com/economy/central-banking/new-fed-report-on-svb-collapse-pins-blame-on-feds-own-regulators-9a3cb062?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-25561998",
-   "t_ko": "SVB 파산 보고서, 연준 자체 규제 당국 책임으로 지목",
-   "t_id": "Laporan Baru Runtuhnya SVB Salahkan Regulator The Fed Sendiri, Ungkap Pejabat The Fed"
-  },
-  {
-   "ts": "2026-09-18T23:40:00+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "WSJ",
-   "t": "Financial Services Roundup: Market Talk",
-   "tags": [],
-   "url": "https://www.wsj.com/business/financial-services-roundup-market-talk-2666de92?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-03838137",
-   "t_ko": "금융권 동향 — 시장 전망",
-   "t_id": "Rangkuman Jasa Keuangan: Sinyal Pasar"
-  },
-  {
-   "ts": "2026-09-18T23:39:00+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "MarketWatch",
-   "t": "Why investors’ best move in reaction to Fed’s rate hike is doing nothing at all",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/why-investors-best-move-in-reaction-to-feds-rate-hike-is-doing-nothing-at-all-6ff56b4c?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-01779006",
-   "t_ko": "연준 금리 인상에 투자자 대응 최선책은 무대응 분석",
-   "t_id": "Strategi Terbaik Hadapi Kenaikan Suku Bunga The Fed: Diam Saja"
-  },
-  {
-   "ts": "2026-09-18T23:38:56+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "CNBC",
-   "t": "Fed staff should have known Silicon Valley Bank was vulnerable, new report finds",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/18/fed-silicon-valley-bank.html",
-   "g": 1,
-   "t_ko": "신규 보고서, 연준 내부 실리콘밸리은행 취약성 사전 인지 지적",
-   "t_id": "Staf The Fed Seharusnya Tahu Kerentanan Silicon Valley Bank, Temuan Laporan Baru"
-  },
-  {
-   "ts": "2026-09-18T23:36:10+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Yahoo Finance",
-   "t": "Kevin O’Leary Is Buying Crypto Again — His Gold Theory Points to $760K Bitcoin",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/crypto/articles/kevin-o-leary-buying-crypto-163610001.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/ccn_928/ca2d2e8feda20f06186b60e67c84e9e9.png",
-   "t_ko": "Kevin O'Leary, 암호화폐 재매수 — 금 가격 이론 바탕 비트코인 76만 달러 전망",
-   "t_id": "Kevin O’Leary Kembali Borong Kripto, Teori Emas Isyaratkan Bitcoin $760 Ribu"
-  },
-  {
-   "ts": "2026-09-18T23:35:00+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "WSJ",
-   "t": "Auto & Transport Roundup: Market Talk",
-   "tags": [],
-   "url": "https://www.wsj.com/business/auto-transport-roundup-market-talk-69274855?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-96905171",
-   "t_ko": "자동차·운송 섹터 동향 정리",
-   "t_id": "Rangkuman Auto & Transport: Ulasan Pasar"
-  },
-  {
-   "ts": "2026-09-18T23:35:00+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Yahoo Finance",
-   "t": "1 Incredible Reason to Buy Costco Stock Before It Reports Earnings on Sept. 24.",
-   "tags": [],
-   "url": "https://finance.yahoo.com/markets/stocks/articles/1-incredible-reason-buy-costco-163500644.html",
-   "g": 1,
-   "img": "https://media.zenfs.com/en/motleyfool.com/78f0c5d6d97db784c34e3778de35a2be.jpg",
-   "t_ko": "Costco, 24일 실적 발표 앞두고 매수해야 할 이유",
-   "t_id": "Alasan Kuat Beli Saham Costco Jelang Laporan Keuangan 24 Sep"
-  },
-  {
-   "ts": "2026-09-18T23:33:43+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "CNBC",
-   "t": "Three words from Kevin Warsh have Wall Street wondering how far the Fed will go with rate hikes",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/18/three-words-from-kevin-warsh-have-wall-street-wondering-how-far-the-fed-will-go-with-rate-hikes.html",
-   "g": 1,
-   "t_ko": "Kevin Warsh의 한마디에 연준 금리 인상 폭 촉각 곤두세운 월가",
-   "t_id": "Tiga Kata dari Kevin Warsh Bikin Wall Street Pertanyakan Batas Kenaikan Suku Bunga The Fed"
+   "img": "https://media.zenfs.com/en/ibd.com/9a79a487d75556a690883561642616bc.jpg",
+   "t_ko": "매도 타이밍: IBD 50 종목 매도 신호 발생",
+   "t_id": "Waktu Jual Saham: Komponen IBD 50 Ini Picu Sinyal Jual"
   },
   {
    "ts": "2026-09-18T23:25:48+07:00",
@@ -17570,54 +17634,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/09/18/ilustrasi-panen-raya-padi-biosalin-hasil-riset-brin-dan-pgn-istimewa-Ba6Uq.webp",
    "t_ko": "Padi Biosalin, Batang 지역 염해지 및 엘니뇨 대응 솔루션으로 부상",
    "t_id": "Padi Biosalin Jadi Solusi Atasi Lahan Asin dan Tantangan El Nino di Batang"
-  },
-  {
-   "ts": "2026-09-18T22:13:05+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Medcom",
-   "t": "Upah Perempuan Masih Lebih Rendah Dari Pria, Beban Domestik Jadi Sorotan",
-   "tags": [],
-   "url": "https://www.medcom.id/ekonomi/bisnis/dN6y9oGK-upah-perempuan-masih-lebih-rendah-dari-pria-beban-domestik-jadi-sorotan",
-   "img": "https://cdn.medcom.id/dynamic/content/2026/09/18/1843073/cE0LWDNjBa.jpg?w=720",
-   "t_ko": "여성 임금 남성보다 낮아, 가사 부담이 주요 요인으로 지목",
-   "t_id": "Upah Perempuan Masih Lebih Rendah Dari Pria, Beban Domestik Jadi Sorotan"
-  },
-  {
-   "ts": "2026-09-18T22:10:22+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Detik",
-   "t": "Prabowo: 1.000 Km Irigasi Terbangun, Hampir 4.000 Jembatan Dibangun di Desa",
-   "tags": [],
-   "url": "https://finance.detik.com/infrastruktur/d-8669382/prabowo-1-000-km-irigasi-terbangun-hampir-4-000-jembatan-dibangun-di-desa",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/01/14/penerapan-sistem-irigasi-padi-hemat-air_169.jpeg?w=360&q=90",
-   "t_ko": "Prabowo, 농촌에 1,000km 관개시설 및 교량 4,000개 건설 완료 발표",
-   "t_id": "Prabowo: 1.000 Km Irigasi Terbangun, Hampir 4.000 Jembatan Dibangun di Desa"
-  },
-  {
-   "ts": "2026-09-18T22:07:06+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Jawa Pos",
-   "t": "Rekam Jejak Muhammad Masyhud, Pejabat Karier Kemenhub yang Dicopot dari Dirjen Hubla",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609180519/rekam-jejak-muhammad-masyhud-pejabat-karier-kemenhub-yang-dicopot-dari-dirjen-hubla",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/07/menteri-perhubungan-dudy-purwagandhi-tengah-mengelar-doorstop-usai-rapat-dampak-sebaran-abu-vulkanik-di-bandara-soekarno-hatta-tangerang-minggu-06092026-hanung-hambara-jawa-pos-DXrRU.webp",
-   "t_ko": "교통부, 후블라 청장 해임된 경력 관료 Muhammad Masyhud 경위 조사",
-   "t_id": "Rekam Jejak Muhammad Masyhud, Pejabat Karier Kemenhub yang Dicopot dari Dirjen Hubla"
-  },
-  {
-   "ts": "2026-09-18T22:00:05+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Detik",
-   "t": "Warga Jagakarsa Belajar Masak untuk Kembangkan Usaha",
-   "tags": [],
-   "url": "https://finance.detik.com/foto-bisnis/d-8668444/warga-jagakarsa-belajar-masak-untuk-kembangkan-usaha",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/18/warga-jagakarsa-belajar-masak-untuk-kembangkan-usaha-1789712931221.jpeg?w=360&q=90",
-   "t_ko": "자카르타 Jagakarsa 주민들, 사업 확장을 위한 요리 강습 수강",
-   "t_id": "Warga Jagakarsa Belajar Masak untuk Kembangkan Usaha"
   }
  ],
  "kisi_news": [
@@ -17783,9 +17799,9 @@
   },
   {
    "k": "KRW/IDR (1원당 루피아)",
-   "v": "12.77",
-   "d": -0.69,
-   "ytd": 9.97,
+   "v": "12.80",
+   "d": -0.5,
+   "ytd": 10.18,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -17795,9 +17811,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "5.000%",
-   "d": 1.07,
-   "ytd": 20.11,
+   "v": "5.002%",
+   "d": 1.11,
+   "ytd": 20.15,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -17818,9 +17834,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.29",
-   "d": 0.06,
-   "ytd": 2.05,
+   "v": "100.22",
+   "d": -0.01,
+   "ytd": 1.98,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -17830,9 +17846,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "96.08",
-   "d": -5.03,
-   "ytd": 67.33,
+   "v": "96.00",
+   "d": -5.11,
+   "ytd": 67.19,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -17842,9 +17858,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,419.4",
-   "d": 0.52,
-   "ytd": 2.17,
+   "v": "4,432.2",
+   "d": 0.81,
+   "ytd": 2.46,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -17889,7 +17905,68 @@
    "note_id": "FCPO Bursa Malaysia kontrak terdekat · investing.com · Awal tahun 4,050"
   }
  ],
- "curve": null,
+ "curve": {
+  "date": "2026-09-18",
+  "src": "PHEI (IBPA)",
+  "rows": [
+   [
+    0.1,
+    6.6203,
+    6.5966
+   ],
+   [
+    1.0,
+    6.6821,
+    6.6953
+   ],
+   [
+    2.0,
+    6.7601,
+    6.7925
+   ],
+   [
+    3.0,
+    6.8425,
+    6.8806
+   ],
+   [
+    5.0,
+    6.9869,
+    7.02
+   ],
+   [
+    7.0,
+    7.0834,
+    7.1075
+   ],
+   [
+    10.0,
+    7.1542,
+    7.1696
+   ],
+   [
+    15.0,
+    7.1846,
+    7.1957
+   ],
+   [
+    20.0,
+    7.1885,
+    7.199
+   ],
+   [
+    25.0,
+    7.1889,
+    7.1994
+   ],
+   [
+    30.0,
+    7.1889,
+    7.1994
+   ]
+  ],
+  "n": 41
+ },
  "calendar": [
   {
    "date": "2026-09-09",
@@ -18243,17 +18320,59 @@
   },
   {
    "date": "2026-09-15",
+   "time": "19:15",
+   "kind": "macro",
+   "country": "US",
+   "title": "ADP Employment Change Weekly",
+   "imp": 2,
+   "exp": null,
+   "prev": "12.00K",
+   "act": "16.30K",
+   "src": "investing.com",
+   "title_ko": "ADP 주간 고용 변화",
+   "title_id": "Perubahan Tenaga Kerja Mingguan ADP AS"
+  },
+  {
+   "date": "2026-09-15",
    "time": "19:30",
    "kind": "macro",
    "country": "US",
    "title": "NY Empire State Manufacturing Index  (Sep)",
    "imp": 2,
-   "exp": null,
+   "exp": "14.80",
    "prev": "20.60",
-   "act": null,
+   "act": "7.60",
    "src": "investing.com",
    "title_ko": "9월 뉴욕 엠파이어스테이트 제조업지수",
    "title_id": "Indeks Manufaktur Empire State NY (Sep)"
+  },
+  {
+   "date": "2026-09-16",
+   "time": "00:00",
+   "kind": "macro",
+   "country": "US",
+   "title": "20-Year Bond Auction",
+   "imp": 2,
+   "exp": null,
+   "prev": "5.204%",
+   "act": "5.420%",
+   "src": "investing.com",
+   "title_ko": "20년물 국채 입찰",
+   "title_id": "Lelang Obligasi AS Tenor 20 Tahun"
+  },
+  {
+   "date": "2026-09-16",
+   "time": "03:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "API Weekly Crude Oil Stock",
+   "imp": 2,
+   "exp": "-1.800M",
+   "prev": "-0.300M",
+   "act": "7.140M",
+   "src": "investing.com",
+   "title_ko": "API 주간 원유 재고",
+   "title_id": "Stok Minyak Mentah Mingguan API"
   },
   {
    "date": "2026-09-16",
@@ -18262,10 +18381,11 @@
    "country": "US",
    "title": "Core Retail Sales (MoM)  (Aug)",
    "imp": 3,
-   "exp": null,
+   "exp": "0.6%",
    "prev": "-0.3%",
-   "act": null,
+   "act": "1.4%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "8월 근원 소매판매 (MoM)",
    "title_id": "Penjualan Ritel Inti AS (MoM) (Agu)"
   },
@@ -18276,10 +18396,11 @@
    "country": "US",
    "title": "Export Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.5%",
    "prev": "-1.3%",
-   "act": null,
+   "act": "0.6%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "8월 수출물가 (MoM)",
    "title_id": "Indeks Harga Ekspor AS (MoM) (Agu)"
   },
@@ -18290,10 +18411,11 @@
    "country": "US",
    "title": "Import Price Index (MoM)  (Aug)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.4%",
    "prev": "-0.4%",
-   "act": null,
+   "act": "0.7%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "8월 수입물가 (MoM)",
    "title_id": "Indeks Harga Impor AS (MoM) (Agu)"
   },
@@ -18304,10 +18426,11 @@
    "country": "US",
    "title": "Retail Control (MoM)  (Aug)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.8%",
    "prev": "-0.4%",
-   "act": null,
+   "act": "1.2%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "8월 소매판매 통제그룹 (MoM)",
    "title_id": "Penjualan Ritel Kelompok Kontrol AS (MoM) (Agu)"
   },
@@ -18318,10 +18441,11 @@
    "country": "US",
    "title": "Business Inventories (MoM)  (Jul)",
    "imp": 2,
-   "exp": null,
+   "exp": "0.6%",
    "prev": "0.0%",
-   "act": null,
+   "act": "0.8%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "7월 기업재고 (MoM)",
    "title_id": "Persediaan Bisnis AS (MoM) (Jul)"
   },
@@ -18332,12 +18456,26 @@
    "country": "US",
    "title": "Retail Inventories Ex Auto  (Jul)",
    "imp": 2,
-   "exp": null,
-   "prev": "0.7%",
-   "act": null,
+   "exp": "0.7%",
+   "prev": "-0.4%",
+   "act": "0.8%",
    "src": "investing.com",
    "title_ko": "7월 자동차 제외 소매재고",
    "title_id": "Persediaan Ritel Ex-Otomotif AS (Jul)"
+  },
+  {
+   "date": "2026-09-16",
+   "time": "21:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "Crude Oil Inventories",
+   "imp": 3,
+   "exp": "-1.600M",
+   "prev": "-0.391M",
+   "act": "-0.640M",
+   "src": "investing.com",
+   "title_ko": "EIA 원유 재고",
+   "title_id": "Stok Minyak Mentah EIA"
   },
   {
    "date": "2026-09-16",
@@ -18346,10 +18484,11 @@
    "country": "US",
    "title": "Atlanta Fed GDPNow  (Q3)",
    "imp": 2,
-   "exp": null,
-   "prev": null,
-   "act": null,
+   "exp": "4.4%",
+   "prev": "4.4%",
+   "act": "5.1%",
    "src": "investing.com",
+   "act_src": "investing.com",
    "title_ko": "3분기 애틀랜타 연은 GDPNow",
    "title_id": "GDPNow The Fed Atlanta (Q3)"
   },
@@ -18362,7 +18501,7 @@
    "imp": 2,
    "exp": null,
    "prev": "3.6%",
-   "act": null,
+   "act": "4.1%",
    "src": "investing.com",
    "title_ko": "3분기 FOMC 1년 금리 전망(점도표)",
    "title_id": "Proyeksi Suku Bunga The Fed 1 Tahun (Q3)"
@@ -18374,12 +18513,26 @@
    "country": "US",
    "title": "Fed Interest Rate Decision",
    "imp": 3,
-   "exp": null,
+   "exp": "4.00%",
    "prev": "3.75%",
-   "act": null,
+   "act": "4.00%",
    "src": "investing.com",
    "title_ko": "FOMC 기준금리 결정",
    "title_id": "Keputusan Suku Bunga The Fed (FOMC)"
+  },
+  {
+   "date": "2026-09-17",
+   "time": "01:30",
+   "kind": "macro",
+   "country": "US",
+   "title": "FOMC Press Conference",
+   "imp": 3,
+   "exp": null,
+   "prev": null,
+   "act": null,
+   "src": "investing.com",
+   "title_ko": "FOMC 기자회견",
+   "title_id": "Konferensi Pers FOMC"
   },
   {
    "date": "2026-09-17",
@@ -18388,9 +18541,9 @@
    "country": "US",
    "title": "TIC Net Long-Term Transactions  (Jul)",
    "imp": 2,
-   "exp": null,
-   "prev": "172.7B",
-   "act": null,
+   "exp": "146.3B",
+   "prev": "174.4B",
+   "act": "-27.9B",
    "src": "investing.com",
    "title_ko": "7월 TIC 장기증권 순매수",
    "title_id": "Transaksi Jangka Panjang Bersih TIC AS (Jul)"
@@ -18506,76 +18659,6 @@
    "src": "manual",
    "title_ko": "FTSE GEIS 리밸런싱 기준 종가 (9/21 효력)",
    "title_id": "Harga penutupan acuan rebalancing FTSE GEIS (efektif 21/9)"
-  },
-  {
-   "date": "2026-09-19",
-   "time": "00:00",
-   "kind": "macro",
-   "country": "US",
-   "title": "U.S. Baker Hughes Oil Rig Count",
-   "imp": 2,
-   "exp": null,
-   "prev": "450",
-   "act": "452",
-   "src": "investing.com",
-   "title_ko": "미국 Baker Hughes 원유 시추기 수",
-   "title_id": "Jumlah Rig Minyak Baker Hughes AS"
-  },
-  {
-   "date": "2026-09-19",
-   "time": "02:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "CFTC S&P 500 speculative net positions",
-   "imp": 2,
-   "exp": null,
-   "prev": "-76.0K",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "CFTC S&P500 투기적 순포지션",
-   "title_id": "Posisi Bersih Spekulatif CFTC S&P 500"
-  },
-  {
-   "date": "2026-09-19",
-   "time": "02:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "CFTC Nasdaq 100 speculative net positions",
-   "imp": 2,
-   "exp": null,
-   "prev": "20.9K",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "CFTC 나스닥100 투기적 순포지션",
-   "title_id": "Posisi Bersih Spekulatif CFTC Nasdaq 100"
-  },
-  {
-   "date": "2026-09-19",
-   "time": "02:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "CFTC Gold speculative net positions",
-   "imp": 2,
-   "exp": null,
-   "prev": "232.0K",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "CFTC 금 투기적 순포지션",
-   "title_id": "Posisi Bersih Spekulatif Emas CFTC"
-  },
-  {
-   "date": "2026-09-19",
-   "time": "02:30",
-   "kind": "macro",
-   "country": "US",
-   "title": "CFTC Crude Oil speculative net positions",
-   "imp": 2,
-   "exp": null,
-   "prev": "136.6K",
-   "act": null,
-   "src": "investing.com",
-   "title_ko": "CFTC 원유 투기적 순포지션",
-   "title_id": "Posisi Bersih Spekulatif Minyak Mentah CFTC"
   }
  ],
  "announcements": [
@@ -22688,7 +22771,7 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-18 20:52",
-  "pc_age_min": 200,
+  "pc_age_min": 253,
   "news_ai_cache": 56,
   "news_ai_hit": 23,
   "on_runner": true,
@@ -24677,6 +24760,20 @@
    ]
   },
   {
+   "ts": "2026-09-19T00:40:27+07:00",
+   "date": "2026-09-19",
+   "time": "00:40",
+   "src": "Jawa Pos",
+   "t": "Realiasi Penyaluran TKD 2026 Sentuh Rp 504,3 Triliun, 72,8 Persen dari Target APBN",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609180349/realiasi-penyaluran-tkd-2026-sentuh-rp-5043-triliun-728-persen-dari-target-apbn",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/14/suahasil-nazara-mengucapkan-sumpah-jabatan-saat-dilantik-sebagai-menteri-keuangan-di-istana-negara-jakarta-senin-1492026-bpmi-setpres-xKe3u.webp",
+   "t_ko": "2026년 TKD 집행 실적 Rp504.3조, APBN 목표의 72.8%",
+   "t_id": "Realiasi Penyaluran TKD 2026 Sentuh Rp 504,3 Triliun, 72,8 Persen dari Target APBN",
+   "score": 415.15,
+   "srcs": 2
+  },
+  {
    "ts": "2026-09-18T23:33:43+07:00",
    "date": "2026-09-18",
    "time": "09/18",
@@ -24685,24 +24782,10 @@
    "tags": [],
    "url": "https://www.cnbc.com/2026/09/18/three-words-from-kevin-warsh-have-wall-street-wondering-how-far-the-fed-will-go-with-rate-hikes.html",
    "g": 1,
+   "score": 412.0,
+   "srcs": 3,
    "t_ko": "Kevin Warsh의 한마디에 연준 금리 인상 폭 촉각 곤두세운 월가",
-   "t_id": "Tiga Kata dari Kevin Warsh Bikin Wall Street Pertanyakan Batas Kenaikan Suku Bunga The Fed",
-   "score": 414.0,
-   "srcs": 4
-  },
-  {
-   "ts": "2026-09-18T21:05:19+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Jawa Pos",
-   "t": "Realisasi Subsidi Energi Tembus Rp 331 Triliun, Naik Rp 113 Triliun dari 2025",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609180254/realisasi-subsidi-energi-tembus-rp-331-triliun-naik-rp-113-triliun-dari-2025",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/1fYKFUeniGOc5z25Ayl9ddfRAK50eT6NEE67JGST.webp",
-   "score": 412.15,
-   "srcs": 2,
-   "t_ko": "에너지 보조금 집행액 Rp331조 — 2025년 대비 Rp113조 증가",
-   "t_id": "Realisasi Subsidi Energi Tembus Rp 331 Triliun, Naik Rp 113 Triliun dari 2025"
+   "t_id": "Tiga Kata dari Kevin Warsh Bikin Wall Street Pertanyakan Batas Kenaikan Suku Bunga The Fed"
   },
   {
    "ts": "2026-09-18T16:07:00+07:00",
@@ -24719,19 +24802,19 @@
    "t_id": "Harga CPO Turun, Tertekan Minyak Mentah dan Pesaing"
   },
   {
-   "ts": "2026-09-18T23:16:00+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "WSJ",
-   "t": "Two-Year U.S. Treasury Yield Reaches New Multi-Year High",
+   "ts": "2026-09-19T00:09:47+07:00",
+   "date": "2026-09-19",
+   "time": "00:09",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Today: Dow Pressured As Yields Hit 5%; Chip Gear Players Jump, Lead Nasdaq 100 (Live Coverage)",
    "tags": [],
-   "url": "https://www.wsj.com/finance/investing/two-year-u-s-treasury-yield-reaches-new-multi-year-high-99d3112b?mod=rss_markets_main",
+   "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-apple-amd-micron-sandisk/?src=A00220&yptr=yahoo",
    "g": 1,
-   "img": "https://images.wsj.net/im-41293276",
-   "score": 313.5,
-   "srcs": 4,
-   "t_ko": "미국 2년물 국채금리, 다년간 최고치 경신",
-   "t_id": "Imbal Hasil US Treasury 2 Tahun Capai Rekor Tertinggi Multi-Tahun"
+   "img": "https://media.zenfs.com/en/ibd.com/55ca4252bd7c66820fc61ce444908e68.jpg",
+   "t_ko": "증시 현황: 국채금리 5% 돌파에 다우 약세 속 반도체 장비주 나스닥 100 견인",
+   "t_id": "Pasar Saham Hari Ini: Dow Tertekan Seiring Imbal Hasil Sentus 5%; Saham Chip Naik, Pimpin Nasdaq 100",
+   "score": 315.5,
+   "srcs": 4
   }
  ],
  "daylog": {
@@ -25278,18 +25361,46 @@
   "2026-09-19": {
    "news": [
     {
-     "t": "Stocks Fall as Treasury Yields Rise",
-     "ko": "미 국채 금리 상승에 증시 하락",
-     "id": "Saham Anjlok Seiring Kenaikan Imbal Hasil US Treasury",
+     "t": "Stock Market Today: Dow Pressured As Yields Hit 5%; Chip Gear Players Jump, Lead Nasdaq 100 (Live Coverage)",
+     "ko": "증시 현황: 국채금리 5% 돌파에 다우 약세 속 반도체 장비주 나스닥 100 견인",
+     "id": "Pasar Saham Hari Ini: Dow Tertekan Seiring Imbal Hasil Sentus 5%; Saham Chip Naik, Pimpin Nasdaq 100",
      "ai_ko": "",
      "ai_id": "",
-     "src": "WSJ",
-     "url": "https://www.wsj.com/finance/stocks/stock-futures-rise-as-oil-extends-losses-treasury-yields-rise-0bda0bff?mod=rss_markets_main",
-     "time": "00:02",
+     "src": "Yahoo Finance",
+     "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-apple-amd-micron-sandisk/?src=A00220&yptr=yahoo",
+     "time": "00:09",
      "tags": [],
-     "sc": 308.0,
+     "sc": 315.5,
      "slot": "global",
      "q": 85
+    },
+    {
+     "t": "Kemenkeu Mulai Pungut PPh Marketplace 0,5 Persen per 1 November 2026",
+     "ko": "재무부, 11월 1일부터 마켓플레이스 PPh 0.5% 징수 개시",
+     "id": "Kemenkeu Mulai Pungut PPh Marketplace 0,5 Persen per 1 November 2026",
+     "ai_ko": "",
+     "ai_id": "",
+     "src": "Jawa Pos",
+     "url": "https://www.jawapos.com/ekonomi/2609180347/kemenkeu-mulai-pungut-pph-marketplace-05-persen-per-1-november-2026",
+     "time": "00:36",
+     "tags": [],
+     "sc": 211.8,
+     "slot": "stock",
+     "q": 48
+    },
+    {
+     "t": "Realiasi Penyaluran TKD 2026 Sentuh Rp 504,3 Triliun, 72,8 Persen dari Target APBN",
+     "ko": "2026년 TKD 집행 실적 Rp504.3조, APBN 목표의 72.8%",
+     "id": "Realiasi Penyaluran TKD 2026 Sentuh Rp 504,3 Triliun, 72,8 Persen dari Target APBN",
+     "ai_ko": "",
+     "ai_id": "",
+     "src": "Jawa Pos",
+     "url": "https://www.jawapos.com/ekonomi/2609180349/realiasi-penyaluran-tkd-2026-sentuh-rp-5043-triliun-728-persen-dari-target-apbn",
+     "time": "00:40",
+     "tags": [],
+     "sc": 416.8,
+     "slot": "macro",
+     "q": 93
     }
    ]
   }
