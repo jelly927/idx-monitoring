@@ -11,7 +11,7 @@
 'use strict';
 var CACHE = 'idxalrt-v1', SKEY = '/__alrt_state';
 var DATA_URL = '/data.json';
-var RAW_URL = 'https://raw.githubusercontent.com/jelly927/idx-monitoring/main/data.json';
+var RAW_URL = 'https://raw.githubusercontent.com/kisiweb/idx-monitoring/main/data.json';
 
 self.addEventListener('install', function(e){ self.skipWaiting(); });
 self.addEventListener('activate', function(e){ e.waitUntil(self.clients.claim()); });
