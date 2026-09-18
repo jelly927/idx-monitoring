@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 08:34",
+ "updated": "2026-09-18 08:45",
  "delay_min": 15,
- "fx_basis": "12.83 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,384 · 04:00 Yahoo",
- "idr_per_krw": 12.8257,
+ "fx_basis": "12.82 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,384 · 04:00 Yahoo",
+ "idr_per_krw": 12.8211,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -139,7 +139,7 @@
   "value_idr": 12037072873733.324,
   "volume": null,
   "value_src": "yahoo",
-  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-18 08:18",
+  "rank_src": "Yahoo 15분 지연 · 831종목 · 종가 · 외국인·공시 PC 09-18 08:37",
   "rank_asof": null,
   "rank_date": "2026-09-17",
   "adv": 407,
@@ -16834,10 +16834,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6850.88,
+   "px": 6837.83,
    "prev": 6699.4,
-   "pct": 2.26,
-   "asof": "08:10",
+   "pct": 2.07,
+   "asof": "08:20",
    "live": true,
    "spark": [
     6869.47,
@@ -16854,17 +16854,19 @@
     6854.89,
     6860.31,
     6855.43,
-    6850.88
+    6842.08,
+    6848.77,
+    6837.83
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64724.14,
+   "px": 64682.58,
    "prev": 64098.31,
-   "pct": 0.98,
-   "asof": "08:15",
+   "pct": 0.91,
+   "asof": "08:25",
    "live": true,
    "spark": [
     64620.01,
@@ -16882,16 +16884,18 @@
     64683.82,
     64677.12,
     64741.25,
-    64724.14
+    64754.68,
+    64720.04,
+    64682.58
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24604.29,
-   "prev": 24713.78,
-   "pct": -0.44,
+   "px": 24723.85,
+   "prev": 24604.29,
+   "pct": 0.49,
    "asof": "09/15 종가",
    "live": false,
    "spark": [
@@ -16979,6 +16983,24 @@
  },
  "news": [
   {
+   "ts": "2026-09-18T08:32:46+07:00",
+   "date": "2026-09-18",
+   "time": "08:32",
+   "src": "Detik",
+   "t": "Rekomendasi Saham Hari Ini: CUAN, INET, hingga DSSA",
+   "tags": [
+    "CLEO",
+    "CUAN",
+    "DSSA",
+    "INET",
+    "MBMA"
+   ],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8667923/rekomendasi-saham-hari-ini-cuan-inet-hingga-dssa",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/18/bursa-dan-valas-1789694298-1789694298829.jpeg?w=360&q=90",
+   "t_id": "Rekomendasi Saham Hari Ini: CUAN, INET, hingga DSSA",
+   "t_ko": "CUAN·INET·DSSA 투자의견 정리"
+  },
+  {
    "ts": "2026-09-18T08:21:37+07:00",
    "date": "2026-09-18",
    "time": "08:21",
@@ -16990,7 +17012,19 @@
    "url": "https://ekonomi.republika.co.id/berita/tljd41490/sempat-umumkan-force-majeure-haji-isam-bakal-ambil-alih-30-persen-saham-bayan-resources",
    "img": "https://static.republika.co.id/uploads/images/detailnews/_260918082126-535.png",
    "t_ko": "Haji Isam, 불가항력 선언했던 Bayan Resources(BYAN) 지분 30% 인수 추진",
-   "t_id": "Sempat Umumkan Force Majeure, Haji Isam Bakal Ambil Alih 30 Persen Saham Bayan Resources"
+   "t_id": "Sempat Umumkan Force Majeure, Haji Isam Bakal Ambil Alih 30 Persen Saham Bayan Resources",
+   "ai_ko": "· Jhonlin Baratama, BYAN 지분 30% 인수 계약\n· 매도자 Low Tuck Kwong·Elaine Low, 100억주\n· 석탄 대형주 지배구조 변화, 주가 Rp11,525",
+   "ai_id": "· Jhonlin Baratama beli 30% saham BYAN\n· Penjual Low Tuck Kwong & Elaine Low\n· 10 miliar saham, harga BYAN Rp11.525",
+   "ai_tags": [
+    "M&A",
+    "지분매각",
+    "석탄"
+   ],
+   "ai_tags_id": [
+    "M&A",
+    "divestasi saham",
+    "batu bara"
+   ]
   },
   {
    "ts": "2026-09-18T08:20:00+07:00",
@@ -17004,7 +17038,19 @@
    "url": "https://www.idnfinancials.com/news/69016/prajogo-pangestus-firm-acquires-100-of-stl-for-idr880-million",
    "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/PRAJOGO-PANGESTU-TPIA-CDIA-01092026.jpg",
    "t_ko": "Prajogo Pangestu 계열사, STL 지분 100% IDR8억8,000만 원에 인수",
-   "t_id": "Perusahaan Prajogo Pangestu Akuisisi 100% STL Rp880 Juta"
+   "t_id": "Perusahaan Prajogo Pangestu Akuisisi 100% STL Rp880 Juta",
+   "ai_ko": "· PTRO, STL 지분 100% Rp8.8억에 인수\n· 자회사 PEPC 99.80%·REKAN 0.20% 취득\n· 항만서비스 확보로 물류사업 통합 추진",
+   "ai_id": "· PTRO akuisisi 100% saham STL Rp880 juta\n· Lewat PEPC 99,80% dan REKAN 0,20%\n· STL jasa pelabuhan, perkuat logistik",
+   "ai_tags": [
+    "M&A",
+    "물류",
+    "자회사"
+   ],
+   "ai_tags_id": [
+    "M&A",
+    "logistik",
+    "anak usaha"
+   ]
   },
   {
    "ts": "2026-09-18T07:50:00+07:00",
@@ -17728,30 +17774,6 @@
    ]
   },
   {
-   "ts": "2026-09-17T09:50:00+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "IDNFinancials",
-   "t": "SMRA speaks on KPK probe into HGB processing",
-   "tags": [
-    "SMRA"
-   ],
-   "url": "https://www.idnfinancials.com/news/68970/smra-speaks-on-kpk-probe-into-hgb-processing",
-   "img": "https://photo2.idnfinancials.com/fly/idn/adhy-2026/SHGB-170926.jpg",
-   "t_ko": "SMRA, HGB 처리 과정 관련 KPK 수사 공식 입장 발표",
-   "t_id": "SMRA Buka Suara soal Penyelidikan KPK Terkait Pengurusan HGB",
-   "ai_ko": "· SMRA(SMRA) 자회사 HGB 취득 관련 KPK 조사 공식 답변\n· 경영진 2명 조사를 받았으나 법적 지위 변동은 없어\n· 자산 및 재무 상태에 미치는 영향은 아직 부존재",
-   "ai_id": "· SMRA beri klarifikasi terkait penyelidikan KPK\n· Status hukum sertifikat HGB belum mengalami perubahan\n· Operasional dan kondisi keuangan diklaim aman",
-   "ai_tags": [
-    "규제",
-    "부동산"
-   ],
-   "ai_tags_id": [
-    "regulasi",
-    "properti"
-   ]
-  },
-  {
    "ts": "2026-09-17T07:45:00+07:00",
    "date": "2026-09-17",
    "time": "09/17",
@@ -18122,6 +18144,79 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T08:42:00+07:00",
+   "date": "2026-09-18",
+   "time": "08:42",
+   "src": "Katadata",
+   "t": "Daftar Wilayah Paling Terpapar Polusi Pagi Ini, Tabalong di Kalsel Terparah",
+   "tags": [],
+   "url": "https://katadata.co.id/ekonomi-hijau/ekonomi-sirkular/6aac9707df648/daftar-wilayah-paling-terpapar-polusi-pagi-ini-tabalong-di-kalsel-terparah",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/12/2026_09_12-22_12_00_bbe0f3ac-af07-11f1-9607-0242ac12000a_620x413_thumb.jpg",
+   "t_id": "Daftar Wilayah Paling Terpapar Polusi Pagi Ini, Tabalong di Kalsel Terparah",
+   "t_ko": "칼리만탄셀라탄주 타발롱 최악 기록 — 오전 시간대 대기오염 심각 지역"
+  },
+  {
+   "ts": "2026-09-18T08:40:02+07:00",
+   "date": "2026-09-18",
+   "time": "08:40",
+   "src": "Bloomberg Technoz",
+   "t": "Rangkuman Rekomendasi Saham Hari Ini, 18 September 2026",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121963/rangkuman-rekomendasi-saham-hari-ini-18-september-2026",
+   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727155440.jpeg",
+   "t_id": "Rangkuman Rekomendasi Saham Hari Ini, 18 September 2026",
+   "t_ko": "18일 주요 상장사 투자의견 요약"
+  },
+  {
+   "ts": "2026-09-18T08:39:17+07:00",
+   "date": "2026-09-18",
+   "time": "08:39",
+   "src": "Bloomberg Technoz",
+   "t": "Bitcoin Sideway di US$76.500-an, Terpukul Putusan Bunga The Fed",
+   "tags": [],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121966/bitcoin-sideway-di-us-76-500-an-terpukul-putusan-bunga-the-fed",
+   "g": 1,
+   "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260624095803.jpg",
+   "t_id": "Bitcoin Sideway di US$76.500-an, Terpukul Putusan Bunga The Fed",
+   "t_ko": "연준 금리 결정 여파에 비트코인 US$76,500선 보합세"
+  },
+  {
+   "ts": "2026-09-18T08:35:38+07:00",
+   "date": "2026-09-18",
+   "time": "08:35",
+   "src": "CNBC",
+   "t": "Oil prices fall as Saudi supply hopes outweigh fresh Houthi strikes",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/oil-prices-today-brent-wti-saudi-arabia-houthi.html",
+   "g": 1,
+   "t_ko": "후티 공습 우려에도 사우디 공급 확대 전망에 유가 하락",
+   "t_id": "Harga Minyak Turun Seiring Harapan Pasokan Arab Saudi Redam Kekhawatiran Serangan Houthi"
+  },
+  {
+   "ts": "2026-09-18T08:32:20+07:00",
+   "date": "2026-09-18",
+   "time": "08:32",
+   "src": "Bloomberg",
+   "t": "RBA: Firms Starting to Ask If Inflation Coming Back Under 3%",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-18/rba-firms-starting-to-ask-if-inflation-coming-back-under-3",
+   "g": 1,
+   "t_ko": "RBA, 인플레이션 3% 아래로 복귀 여부 관심 고조",
+   "t_id": "RBA: Perusahaan Mulai Pertanyakan Inflasi Kembali di Bawah 3%"
+  },
+  {
+   "ts": "2026-09-18T08:32:12+07:00",
+   "date": "2026-09-18",
+   "time": "08:32",
+   "src": "Bloomberg",
+   "t": "Chinese Yuan Hits Strongest Level Since 2022 After PBOC Fixing",
+   "tags": [],
+   "url": "https://www.bloomberg.com/news/articles/2026-09-18/chinese-yuan-hits-strongest-level-since-2022-after-pboc-fixing",
+   "g": 1,
+   "t_ko": "인민은행 고시환율 발표 이후 위안화 2022년 이후 최고치 기록",
+   "t_id": "Yuan Tembus Level Terkuat Sejak 2022 Usai Penetapan PBOC"
+  },
+  {
    "ts": "2026-09-18T08:32:07+07:00",
    "date": "2026-09-18",
    "time": "08:32",
@@ -18130,8 +18225,18 @@
    "tags": [],
    "url": "https://ekonomi.republika.co.id/berita/tljdlj370/aturan-ecommerce-bisa-diubah-lagi-ini-penjelasan-mendag",
    "img": "https://static.republika.co.id/uploads/images/detailnews/figur-publik-anang-hermansyah-dan-ashanty-melakukan-pemasaran-melalui_260813235136-153.jpg",
+   "t_ko": "전자상거래 규정 개정 추진 — 무역장관 설명",
    "t_id": "Aturan E-Commerce Bisa Diubah Lagi, Ini Penjelasan Mendag",
-   "t_ko": "전자상거래 규정 개정 추진 — 무역장관 설명"
+   "ai_ko": "· 무역부, 전자상거래 규정 추가 개정 시사\n· 최근 Permendag 19/2026으로 규정 개편\n· 판매대금 유보·점포 폐쇄 기준이 쟁점",
+   "ai_id": "· Mendag buka opsi revisi aturan PMSE\n· Permendag 19/2026 baru saja terbit\n· Isu penahanan dana & penutupan toko",
+   "ai_tags": [
+    "규제",
+    "전자상거래"
+   ],
+   "ai_tags_id": [
+    "regulasi",
+    "e-commerce"
+   ]
   },
   {
    "ts": "2026-09-18T08:27:54+07:00",
@@ -18142,8 +18247,20 @@
    "tags": [],
    "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8667921/bisnis-waralaba-ri-tembus-rp-143-t-sektor-ini-jadi-penopang",
    "img": "https://akcdn.detik.net.id/community/media/visual/2021/08/03/ilustrasi-bisnis-waralaba_169.jpeg?w=360&q=90",
+   "t_ko": "인도네시아 프랜차이즈 시장 Rp143조 규모 돌파 — 유통 부문이 성장 견인",
    "t_id": "Bisnis Waralaba RI Tembus Rp 143 T, Sektor Ini Jadi Penopang",
-   "t_ko": "인도네시아 프랜차이즈 시장 Rp143조 규모 돌파 — 유통 부문이 성장 견인"
+   "ai_ko": "· 인도네시아 프랜차이즈 시장 Rp143조 돌파\n· 연 10~15% 성장, 식음료·서비스·소매 주도\n· 식음료·소매 가맹 확대, 10월 FLEI 개최",
+   "ai_id": "· Bisnis waralaba RI tembus Rp143 triliun\n· Tumbuh 10-15% per tahun, F&B teratas\n· FLEI Business Show 9-11 Oktober",
+   "ai_tags": [
+    "프랜차이즈",
+    "소비",
+    "유통"
+   ],
+   "ai_tags_id": [
+    "waralaba",
+    "konsumsi",
+    "ritel"
+   ]
   },
   {
    "ts": "2026-09-18T08:26:54+07:00",
@@ -18155,8 +18272,20 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/121961/harga-minyak-turun-obligasi-asia-rebound",
    "g": 1,
    "img": "https://images.bloombergtechnoz.com/data/2025/09/image-20250911170956.jpg",
+   "t_ko": "유가 하락에 힘입은 아시아 채권 반등",
    "t_id": "Harga Minyak Turun, Obligasi Asia Rebound",
-   "t_ko": "유가 하락에 힘입은 아시아 채권 반등"
+   "ai_ko": "· Fed 25bp 인상 후 아시아 국채 금리 하락\n· 기준금리 3.75~4%, Wall Street 반등\n· INDON-미 국채 스프레드 95bp 유지",
+   "ai_id": "· Yield obligasi Asia kompak turun\n· The Fed naikkan 25 bps ke 3,75-4%\n· Spread INDON-UST masih sekitar 95 bps",
+   "ai_tags": [
+    "채권",
+    "금리",
+    "유가"
+   ],
+   "ai_tags_id": [
+    "obligasi",
+    "suku bunga",
+    "harga minyak"
+   ]
   },
   {
    "ts": "2026-09-18T08:21:08+07:00",
@@ -18169,7 +18298,17 @@
    "g": 1,
    "img": "https://cdn-assets.jawapos.com/images/1/2026/08/14/ilustrasi-pelayaran-di-selat-hormuz-dok-jawaposcom-m4Lss.webp",
    "t_ko": "중동 갈등·사우디 조치에 국제유가 하락세 지속",
-   "t_id": "Turun Lagi! Harga Minyak Dunia Tertekan Konflik dan Langkah Arab Saudi"
+   "t_id": "Turun Lagi! Harga Minyak Dunia Tertekan Konflik dan Langkah Arab Saudi",
+   "ai_ko": "· 국제유가 추가 하락, 분쟁·사우디 변수\n· Trump, 이란 공습 확대 여부 결정 앞둬\n· 다음주 뉴욕서 걸프 정상·Xi Jinping 회동",
+   "ai_id": "· Harga minyak dunia kembali tertekan\n· Trump timbang eskalasi serangan Iran\n· Pekan depan temui pemimpin Teluk & Xi",
+   "ai_tags": [
+    "유가",
+    "지정학"
+   ],
+   "ai_tags_id": [
+    "harga minyak",
+    "geopolitik"
+   ]
   },
   {
    "ts": "2026-09-18T08:15:18+07:00",
@@ -18182,7 +18321,19 @@
    "g": 1,
    "img": "https://akcdn.detik.net.id/community/media/visual/2018/07/07/1d07813b-dede-4368-ac72-ab007d52dc90_169.jpeg?w=360&q=90",
    "t_ko": "연준 이어 일본은행도 금리 인상 준비",
-   "t_id": "Susul The Fed, Bank Sentral Jepang Bersiap Naikkan Suku Bunga"
+   "t_id": "Susul The Fed, Bank Sentral Jepang Bersiap Naikkan Suku Bunga",
+   "ai_ko": "· BOJ, 금리 1%→1.25% 인상 전망\n· 1995년 이후 31년 만의 최고 수준\n· 미일 금리차 확대 시 엔 약세·수입물가 부담",
+   "ai_id": "· BOJ diperkirakan naikkan bunga ke 1,25%\n· Tertinggi dalam 31 tahun sejak 1995\n· Selisih bunga AS-Jepang tekan yen",
+   "ai_tags": [
+    "금리",
+    "중앙은행",
+    "환율"
+   ],
+   "ai_tags_id": [
+    "suku bunga",
+    "bank sentral",
+    "kurs"
+   ]
   },
   {
    "ts": "2026-09-18T08:11:44+07:00",
@@ -18341,8 +18492,20 @@
    "url": "https://www.bloombergtechnoz.com/detail-news/121954/kondisi-global-agak-kondusif-begini-prediksi-rupiah-hari-ini",
    "g": 1,
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727171604.jpeg",
+   "t_ko": "글로벌 여건 호조에 따른 오늘의 루피아 환율 전망",
    "t_id": "Kondisi Global Agak Kondusif, Begini Prediksi Rupiah Hari Ini",
-   "t_ko": "글로벌 여건 호조에 따른 오늘의 루피아 환율 전망"
+   "ai_ko": "· 루피아 Rp17,650~17,750/USD 예상\n· NDF Rp17,778, 유가 하락에 우려 완화\n· SUN 1년물 6.74%·10년물 7.15%로 하락",
+   "ai_id": "· Rupiah diprediksi Rp17.650-17.750/US$\n· NDF menguat ke Rp17.778/US$\n· Yield SUN 1 tahun 6,74%, 10 tahun 7,15%",
+   "ai_tags": [
+    "환율",
+    "채권",
+    "금리"
+   ],
+   "ai_tags_id": [
+    "kurs",
+    "obligasi",
+    "suku bunga"
+   ]
   },
   {
    "ts": "2026-09-18T07:55:59+07:00",
@@ -18455,43 +18618,6 @@
    "t_id": "El Niño Bawa India Menuju Muson Kering Terburuk Sejak 2009"
   },
   {
-   "ts": "2026-09-18T07:30:00+07:00",
-   "date": "2026-09-18",
-   "time": "07:30",
-   "src": "Bloomberg Technoz",
-   "t": "Inflasi Jepang Melambat Jelang Pengumuman Suku Bunga BOJ",
-   "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121952/inflasi-jepang-melambat-jelang-pengumuman-suku-bunga-boj",
-   "g": 1,
-   "img": "https://images.bloombergtechnoz.com/data/2025/02/image-20250221082520.jpg",
-   "t_ko": "BOJ 금리 결정을 앞두고 일본 인플레이션 둔화",
-   "t_id": "Inflasi Jepang Melambat Jelang Pengumuman Suku Bunga BOJ",
-   "ai_ko": "· 일본 8월 근원 CPI 1.7%, 4개월 만에 둔화\n· 7월 1.8%에서 하락, 정부 보조금 영향\n· BOJ 금리 결정 직전 발표",
-   "ai_id": "· Inflasi inti Jepang Agustus 1,7%\n· Melambat dari 1,8% pada Juli\n· Rilis jelang keputusan bunga BOJ",
-   "ai_tags": [
-    "물가",
-    "금리",
-    "일본"
-   ],
-   "ai_tags_id": [
-    "inflasi",
-    "suku bunga",
-    "Jepang"
-   ]
-  },
-  {
-   "ts": "2026-09-18T07:28:51+07:00",
-   "date": "2026-09-18",
-   "time": "07:28",
-   "src": "Bloomberg",
-   "t": "Vietnam Stocks See Early Foreign Inflows as FTSE Upgrade Nears",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-18/vietnam-stocks-see-early-foreign-inflows-as-ftse-upgrade-nears",
-   "g": 1,
-   "t_ko": "FTSE 등급 상향 임박에 베트남증시 외국인 자금 유입",
-   "t_id": "Saham Vietnam Kebanjiran Asing Jelang Peningkatan Status FTSE"
-  },
-  {
    "ts": "2026-09-18T07:15:35+07:00",
    "date": "2026-09-18",
    "time": "07:15",
@@ -18514,30 +18640,6 @@
     "analisis teknikal",
     "rekomendasi saham"
    ]
-  },
-  {
-   "ts": "2026-09-18T07:15:16+07:00",
-   "date": "2026-09-18",
-   "time": "07:15",
-   "src": "Bloomberg",
-   "t": "Gold Holds Gain as Lower Oil and Fed Hike Temper Inflation Fears",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-18/gold-holds-gain-as-lower-oil-and-fed-hike-temper-inflation-fears",
-   "g": 1,
-   "t_ko": "유가 하락과 연준 인상 우려 완화에 금 가격 상승세 유지",
-   "t_id": "Emas Pertahankan Kenaikan Saat Penurunan Minyak dan Kenaikan Suku Bunga Fed Redam Kekhawatiran Inflasi"
-  },
-  {
-   "ts": "2026-09-18T07:14:00+07:00",
-   "date": "2026-09-18",
-   "time": "07:14",
-   "src": "WSJ",
-   "t": "Nikkei Rises 0.8%, Led by Chip-Related Stocks",
-   "tags": [],
-   "url": "https://www.wsj.com/finance/stocks/nikkei-rises-0-8-led-by-chip-related-stocks-2b0efbba?mod=rss_markets_main",
-   "g": 1,
-   "t_ko": "반도체주 중심으로 닛케이 0.8% 상승",
-   "t_id": "Nikkei Naik 0,8%, Dipimpin Saham Terkait Chip"
   },
   {
    "ts": "2026-09-18T06:56:20+07:00",
@@ -18785,54 +18887,6 @@
     "koperasi",
     "distribusi"
    ]
-  },
-  {
-   "ts": "2026-09-18T05:55:00+07:00",
-   "date": "2026-09-18",
-   "time": "05:55",
-   "src": "Detik",
-   "t": "Prabowo Ungkap Mesin Pertumbuhan Ekonomi, Bukan Cuma Kopdes & MBG",
-   "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8667682/prabowo-ungkap-mesin-pertumbuhan-ekonomi-bukan-cuma-kopdes-mbg",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/07/presiden-prabowo-subianto-1788766824465_169.png?w=360&q=90",
-   "t_ko": "Prabowo, 협동조합·무상급식 외 경제 성장 동력 추가 제시",
-   "t_id": "Prabowo Beberkan Mesin Pertumbuhan Ekonomi, Tak Cuma Kopdes & MBG",
-   "ai_ko": "· 2026년 6월까지 투자 실적 Rp1,010조 기록\n· 2025년 Rp1,931조, 신규 일자리 270만개 창출\n· 물가 2.92%·재정적자 3% 미만, 투자 유입 지속 전망",
-   "ai_id": "· Realisasi investasi Juni 2026 Rp1.010 triliun\n· 2025 capai Rp1.931 triliun, 2,7 juta lapangan kerja\n· Inflasi 2,92 persen, defisit di bawah 3 persen",
-   "ai_tags": [
-    "투자",
-    "경제성장",
-    "물가"
-   ],
-   "ai_tags_id": [
-    "investasi",
-    "pertumbuhan ekonomi",
-    "inflasi"
-   ]
-  },
-  {
-   "ts": "2026-09-18T05:28:31+07:00",
-   "date": "2026-09-18",
-   "time": "05:28",
-   "src": "Jawa Pos",
-   "t": "Pembenahan Sistem Dermaga Belum Disentuh, Asosiasi Sopir Truk Pesimis Zero ODOL Bisa Terlaksana 2027",
-   "tags": [],
-   "url": "https://www.jawapos.com/bisnis/2609170492/pembenahan-sistem-dermaga-belum-disentuh-asosiasi-sopir-truk-pesimis-zero-odol-bisa-terlaksana-2027",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/ilustrasi-antre-di-pelabuhan-ketapang-ramada-kusumajawa-pos-radar-banyuwangi-kLly8.webp",
-   "t_ko": "화물차 연합회, 부두 시스템 미비로 2027년 과적 근절 회의적",
-   "t_id": "Pembenahan Sistem Dermaga Belum Disentuh, Asosiasi Sopir Truk Pesimis Zero ODOL Terealisasi 2027",
-   "ai_ko": "· Zero ODOL 2027년 시행에 물류업계 회의론\n· 선착장 화물차 대기행렬 여전히 지속\n· 항만 시설·선박 서비스 미비를 원인으로 지목",
-   "ai_id": "· Sopir truk pesimistis Zero ODOL 2027\n· Antrean truk di dermaga masih panjang\n· Sarana dan layanan kapal belum memadai",
-   "ai_tags": [
-    "물류",
-    "규제",
-    "인프라"
-   ],
-   "ai_tags_id": [
-    "logistik",
-    "regulasi",
-    "infrastruktur"
-   ]
   }
  ],
  "kisi_news": [
@@ -19034,9 +19088,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.23",
-   "d": -0.09,
-   "ytd": 1.98,
+   "v": "100.25",
+   "d": -0.06,
+   "ytd": 2.01,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -19046,9 +19100,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.25",
-   "d": -1.0,
-   "ytd": 76.33,
+   "v": "101.23",
+   "d": -1.02,
+   "ytd": 76.3,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -19058,9 +19112,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,401.5",
-   "d": 1.52,
-   "ytd": 1.75,
+   "v": "4,392.5",
+   "d": 1.32,
+   "ytd": 1.55,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -19082,15 +19136,15 @@
   },
   {
    "k": "니켈 LME (US$/t)",
-   "v": "16,110",
-   "d": 1.34,
-   "ytd": -3.43,
+   "v": "16,237",
+   "d": -0.15,
+   "ytd": -2.67,
    "inv": false,
-   "note": "investing.com · 09/17 마지막 값 · 연초 16,682",
+   "note": "investing.com · 연초 16,682",
    "k_ko": "니켈 LME (US$/t)",
    "k_id": "Nikel LME (US$/t)",
-   "note_ko": "investing.com · 09/17 마지막 값 · 연초 16,682",
-   "note_id": "investing.com · 09/17 nilai terakhir · Awal tahun 16,682"
+   "note_ko": "investing.com · 연초 16,682",
+   "note_id": "investing.com · Awal tahun 16,682"
   },
   {
    "k": "CPO (MYR/t)",
@@ -24639,10 +24693,10 @@
  "sources": {
   "idx_index": false,
   "idx_market": true,
-  "idx_from_pc": "2026-09-18 08:18",
-  "pc_age_min": 16,
+  "idx_from_pc": "2026-09-18 08:37",
+  "pc_age_min": 8,
   "news_ai_cache": 103,
-  "news_ai_hit": 68,
+  "news_ai_hit": 70,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -26399,105 +26453,82 @@
   },
   "model": "gemini-3.5-flash-lite",
   "index": {
-   "ko": "미국 국채 금리 하락과 글로벌 증시 강세에 힘입어 IHSG 0.0% 보합세 거래 중.",
-   "id": "IHSG diperdagangkan datar 0,0% di tengah penurunan imbal hasil obligasi AS dan penguatan bursa global.",
-   "ts": "2026-09-18T08:34:23.280030+07:00"
+   "ko": "미국 국채 금리 하락에 따른 아시아 증시 강세 영향으로 IHSG 보합세 기록.",
+   "id": "IHSG tercatat stagnan seiring penguatan bursa saham Asia akibat penurunan imbal hasil obligasi AS.",
+   "ts": "2026-09-18T08:45:54.035752+07:00"
   }
  },
  "top_day": "2026-09-18",
  "top_news": [
   {
-   "ts": "2026-09-17T21:00:00+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Bloomberg Technoz",
-   "t": "Suku Bunga The FED Naik, Kemenkeu Diversifikasi Pembiayaan Global",
+   "ts": "2026-09-18T08:15:18+07:00",
+   "date": "2026-09-18",
+   "time": "08:15",
+   "src": "Detik",
+   "t": "Susul The Fed, Bank Sentral Jepang Bersiap Naikkan Suku Bunga",
    "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121937/suku-bunga-the-fed-naik-kemenkeu-diversifikasi-pembiayaan-global",
+   "url": "https://finance.detik.com/moneter/d-8667905/susul-the-fed-bank-sentral-jepang-bersiap-naikkan-suku-bunga",
    "g": 1,
-   "img": "https://images.bloombergtechnoz.com/data/2025/09/image-20250911170956.jpg",
-   "score": 415.85,
-   "srcs": 6,
-   "t_ko": "미국 연준 금리 인상에 재무부, 글로벌 조달 다변화",
-   "t_id": "Suku Bunga The FED Naik, Kemenkeu Diversifikasi Pembiayaan Global",
-   "ai_ko": "· 재무부, 글로벌 채권 조달처 다각화 방침\n· 미국 금리 인상에 국채 리프라이싱 발생\n· 위안화 Panda Bond 발행 계획 유지",
-   "ai_id": "· Kemenkeu diversifikasi pembiayaan global\n· Kenaikan FFR picu repricing SBN global\n· Panda Bond berdenominasi yuan tetap",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2018/07/07/1d07813b-dede-4368-ac72-ab007d52dc90_169.jpeg?w=360&q=90",
+   "t_ko": "연준 이어 일본은행도 금리 인상 준비",
+   "t_id": "Susul The Fed, Bank Sentral Jepang Bersiap Naikkan Suku Bunga",
+   "ai_ko": "· BOJ, 금리 1%→1.25% 인상 전망\n· 1995년 이후 31년 만의 최고 수준\n· 미일 금리차 확대 시 엔 약세·수입물가 부담",
+   "ai_id": "· BOJ diperkirakan naikkan bunga ke 1,25%\n· Tertinggi dalam 31 tahun sejak 1995\n· Selisih bunga AS-Jepang tekan yen",
    "ai_tags": [
     "금리",
-    "국채",
-    "조달"
+    "중앙은행",
+    "환율"
    ],
    "ai_tags_id": [
     "suku bunga",
-    "SBN",
-    "pembiayaan"
-   ]
+    "bank sentral",
+    "kurs"
+   ],
+   "score": 416.5,
+   "srcs": 5
   },
   {
-   "ts": "2026-09-17T20:03:21+07:00",
+   "ts": "2026-09-17T22:00:39+07:00",
    "date": "2026-09-17",
    "time": "09/17",
    "src": "Detik",
-   "t": "Bakal Ada Badan Usaha Khusus Langsung di Bawah Prabowo, Ganti SKK Migas?",
+   "t": "Bitcoin Melesat Usai Pengumuman Suku Bunga AS",
    "tags": [],
-   "url": "https://finance.detik.com/energi/d-8667590/bakal-ada-badan-usaha-khusus-langsung-di-bawah-prabowo-ganti-skk-migas",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/16/menteri-esdm-bahlil-lahadalia-1789550049461_169.jpeg?w=360&q=90",
-   "score": 409.05,
-   "srcs": 1,
-   "t_ko": "Prabowo 직속 특별 기관 신설 추진 — SKK Migas 대체하나",
-   "t_id": "Bakal Ada Badan Usaha Khusus Langsung di Bawah Prabowo, Ganti SKK Migas?",
-   "ai_ko": "· 석유가스 특별기구 BUK 신설 추진\n· 대통령 직속, RUU Migas에 포함\n· 인허가 단축으로 생산량 확대 기대",
-   "ai_id": "· Pemerintah bentuk BUK migas baru\n· Langsung di bawah Presiden, masuk RUU\n· Perizinan lebih cepat, lifting terdorong",
-   "ai_tags": [
-    "규제",
-    "에너지",
-    "정책"
-   ],
-   "ai_tags_id": [
-    "regulasi",
-    "migas",
-    "kebijakan"
-   ]
+   "url": "https://finance.detik.com/fintech/d-8667716/bitcoin-melesat-usai-pengumuman-suku-bunga-as",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/12/02/asia-tenggara-waspadai-penambangan-kripto-1764646630714_169.jpeg?w=360&q=90",
+   "score": 409.35,
+   "srcs": 2,
+   "t_ko": "미국 금리 인하 발표 이후 비트코인 상승세",
+   "t_id": "Bitcoin Melesat Usai Pengumuman Suku Bunga AS"
   },
   {
-   "ts": "2026-09-18T07:30:16+07:00",
+   "ts": "2026-09-18T04:48:34+07:00",
    "date": "2026-09-18",
-   "time": "07:30",
-   "src": "Detik",
-   "t": "Buruh Ancam Demo Jika RUU Ketenagakerjaan Tak Direvisi Sebelum 22 September",
+   "time": "04:48",
+   "src": "Jawa Pos",
+   "t": "Anggaran MBG Terserap 63,89 Persen per September 2026, Sisa Rp 79 Triliun sampai Akhir Tahun",
    "tags": [],
-   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8667853/buruh-ancam-demo-jika-ruu-ketenagakerjaan-tak-direvisi-sebelum-22-september",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2025/09/10/buruh-demo-si-patung-kuda-jakpus-beliadetikcom-1757499918064_169.jpeg?w=360&q=90",
-   "t_ko": "노조, 22일 전 노동법 개정 안되면 시위 돌입 예고",
-   "t_id": "Buruh Ancam Demo Jika RUU Ketenagakerjaan Tak Direvisi Sebelum 22 September",
-   "ai_ko": "· 노동계, 9월 22일까지 노동법안 수정 요구\n· 미이행 시 Jakarta 대규모 집회 예고\n· 최대 10만명 동원, 노동비용 불확실성",
-   "ai_id": "· Buruh beri tenggat 22 September\n· Ancam demo besar di Jakarta\n· Massa diprediksi hingga 100 ribu",
-   "ai_tags": [
-    "규제",
-    "노동",
-    "정책"
-   ],
-   "ai_tags_id": [
-    "regulasi",
-    "ketenagakerjaan",
-    "kebijakan"
-   ],
-   "score": 408.05,
-   "srcs": 2
+   "url": "https://www.jawapos.com/ekonomi/2609170478/anggaran-mbg-terserap-6389-persen-per-september-2026-sisa-rp-79-triliun-sampai-akhir-tahun",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/kepala-badan-gizi-nasional-bgn-sudaryono-dalam-rapat-dengar-pendapat-rdp-bersama-komisi-ix-dpr-ri-kamis-179-istimewa-l9Gzm.webp",
+   "score": 409.05,
+   "srcs": 3,
+   "t_ko": "2026년 9월 기준 MBG 예산 63.89% 소진 — 연말까지 Rp79조 잔여",
+   "t_id": "Anggaran MBG Terserap 63,89 Persen per September 2026, Sisa Rp 79 Triliun sampai Akhir Tahun"
   },
   {
-   "ts": "2026-09-17T19:06:21+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Liputan6",
-   "t": "OJK Siapkan Rancangan Aturan Demutualisasi BEI, Ini Poin-poinnya",
+   "ts": "2026-09-18T05:06:18+07:00",
+   "date": "2026-09-18",
+   "time": "05:06",
+   "src": "CNA",
+   "t": "Bank of Japan set to raise interest rates to 31-year high",
    "tags": [],
-   "url": "https://www.liputan6.com/saham/read/8293677/ojk-siapkan-rancangan-aturan-demutualisasi-bei-ini-poin-poinnya",
-   "img": "https://cdn0-production-images-kly.akamaized.net/v_FtjuQMzYZWlLgSrcFOG0bPWmI=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5751492/original/016627700_1778652313-IMG_3406.jpeg",
-   "score": 407.05,
+   "url": "https://www.channelnewsasia.com/business/bank-japan-set-raise-interest-rates-31-year-high-6393281",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--Km1_gqUB--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-17T220618Z_1_LYNXMPEM8G25D_RTROPTP_3_JAPAN-BOJ.JPG?itok=FYhCaOdX",
+   "score": 402.5,
    "srcs": 1,
-   "t_ko": "OJK, BEI 탈수조화 규정 초안 마련 — 주요 내용",
-   "t_id": "OJK Siapkan Rancangan Aturan Demutualisasi BEI, Ini Poin-poinnya"
+   "t_ko": "일본은행, 31년 만에 최고 수준 금리 인상 전망",
+   "t_id": "Bank of Japan Bersiap Naikkan Suku Bunga ke Level Tertinggi 31 Tahun"
   },
   {
    "ts": "2026-09-18T08:03:17+07:00",
@@ -26523,8 +26554,8 @@
     "pasokan",
     "Timur Tengah"
    ],
-   "score": 316.5,
-   "srcs": 3
+   "score": 318.5,
+   "srcs": 4
   }
  ],
  "daylog": {
@@ -26942,7 +26973,7 @@
     },
     {
      "t": "Suku Bunga The FED Naik, Kemenkeu Diversifikasi Pembiayaan Global",
-     "ko": "미국 연준 금리 인상에 재무부, 글로벌 조달 다변화",
+     "ko": "연준 금리 인상에 재무부, 해외 자금조달 다변화",
      "id": "Suku Bunga The FED Naik, Kemenkeu Diversifikasi Pembiayaan Global",
      "ai_ko": "· 재무부, 글로벌 채권 조달처 다각화 방침\n· 미국 금리 인상에 국채 리프라이싱 발생\n· 위안화 Panda Bond 발행 계획 유지",
      "ai_id": "· Kemenkeu diversifikasi pembiayaan global\n· Kenaikan FFR picu repricing SBN global\n· Panda Bond berdenominasi yuan tetap",
@@ -26991,18 +27022,18 @@
   "2026-09-18": {
    "news": [
     {
-     "t": "Harga Minyak Turun 1 Persen, tapi Brent Masih di Atas USD100 per Barel",
-     "ko": "유가 1% 하락에도 Brent USD100대 유지",
-     "id": "Harga Minyak Turun 1 Persen, tapi Brent Masih di Atas USD100 per Barel",
-     "ai_ko": "· Brent 0.95% 내린 USD 104.82\n· Saudi-Houthi 교전 지속에도 1% 약세\n· Saudi 추가 공급 관측에 공급 우려 완화",
-     "ai_id": "· Brent turun 0,95% ke USD104,82\n· Konflik Saudi-Houthi masih berlanjut\n· Pasokan tambahan Saudi redakan cemas",
-     "src": "IDX Channel",
-     "url": "https://www.idxchannel.com/market-news/harga-minyak-turun-1-persen-tapi-brent-masih-di-atas-usd100-per-barel",
-     "time": "06:52",
+     "t": "Oil prices fall 1% on hopes of limited supply disruptions",
+     "ko": "공급 차질 우려 완화에 유가 1% 하락",
+     "id": "Harga Minyak Turun 1% di Tengah Harapan Gangguan Pasokan Terbatas",
+     "ai_ko": "· Brent 1% 하락한 USD 103.77\n· WTI도 1% 내린 USD 100.88\n· 홍해 송유관 복구 기대에 공급 우려 완화",
+     "ai_id": "· Brent turun 1% ke US$103,77\n· WTI melemah 1% ke US$100,88\n· Harapan pipa Saudi pulih tekan harga",
+     "src": "CNA",
+     "url": "https://www.channelnewsasia.com/business/oil-prices-fall-1-hopes-limited-supply-disruptions-6393506",
+     "time": "08:03",
      "tags": [],
-     "sc": 316.5,
+     "sc": 318.5,
      "slot": "global",
-     "q": 85
+     "q": 86
     },
     {
      "t": "Mengukur Dampak Akuisisi 30% BYAN pada Kinerja Saham Haji Isam JARR dan PGUN",
@@ -27023,18 +27054,18 @@
      "q": 82
     },
     {
-     "t": "Harga Emas Rebound Hampir 2 Persen, Investor Cerna Kenaikan Suku Bunga The Fed",
-     "ko": "금값 2% 반등, 투자자들 연준 금리 인상 소화",
-     "id": "Harga Emas Rebound Hampir 2 Persen, Investor Cerna Kenaikan Suku Bunga The Fed",
-     "ai_ko": "· 금 현물 1.83% 오른 USD 4,341.84\n· 6주 만의 최저치서 반등, 유가 하락·달러 약세\n· 에너지값 하락에 인플레 압력 완화",
-     "ai_id": "· Emas spot naik 1,83% ke USD4.341,84\n· Rebound dari level terendah 6 pekan\n· Minyak turun & dolar AS melemah",
-     "src": "IDX Channel",
-     "url": "https://www.idxchannel.com/market-news/harga-emas-rebound-hampir-2-persen-investor-cerna-kenaikan-suku-bunga-the-fed",
-     "time": "06:42",
+     "t": "Susul The Fed, Bank Sentral Jepang Bersiap Naikkan Suku Bunga",
+     "ko": "연준 이어 일본은행도 금리 인상 준비",
+     "id": "Susul The Fed, Bank Sentral Jepang Bersiap Naikkan Suku Bunga",
+     "ai_ko": "· BOJ, 금리 1%→1.25% 인상 전망\n· 1995년 이후 31년 만의 최고 수준\n· 미일 금리차 확대 시 엔 약세·수입물가 부담",
+     "ai_id": "· BOJ diperkirakan naikkan bunga ke 1,25%\n· Tertinggi dalam 31 tahun sejak 1995\n· Selisih bunga AS-Jepang tekan yen",
+     "src": "Detik",
+     "url": "https://finance.detik.com/moneter/d-8667905/susul-the-fed-bank-sentral-jepang-bersiap-naikkan-suku-bunga",
+     "time": "08:15",
      "tags": [],
-     "sc": 418.5,
+     "sc": 416.5,
      "slot": "macro",
-     "q": 94
+     "q": 93
     }
    ]
   }
