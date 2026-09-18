@@ -1,6 +1,6 @@
 {
  "mode": "live",
- "updated": "2026-09-19 05:05",
+ "updated": "2026-09-19 06:07",
  "delay_min": 15,
  "fx_basis": "12.80 IDR/KRW · USD/IDR 17,740 · USD/KRW 1,386 · 04:45 Yahoo",
  "idr_per_krw": 12.7999,
@@ -15721,11 +15721,11 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7646.04,
+   "px": 7650.5,
    "prev": 7637.76,
-   "pct": 0.11,
-   "asof": "02:55",
-   "live": true,
+   "pct": 0.17,
+   "asof": "09/18 종가",
+   "live": false,
    "spark": [
     7643.16,
     7640.82,
@@ -15811,11 +15811,11 @@
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26511.01,
+   "px": 26522.54,
    "prev": 26418.3,
-   "pct": 0.35,
-   "asof": "02:55",
-   "live": true,
+   "pct": 0.39,
+   "asof": "09/18 종가",
+   "live": false,
    "spark": [
     26506.5,
     26513.84,
@@ -15901,11 +15901,11 @@
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51656.25,
+   "px": 51682.64,
    "prev": 51778.04,
-   "pct": -0.24,
-   "asof": "02:55",
-   "live": true,
+   "pct": -0.18,
+   "asof": "09/18 종가",
+   "live": false,
    "spark": [
     51685.21,
     51641.47,
@@ -16319,6 +16319,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-19T05:05:00+07:00",
+   "date": "2026-09-19",
+   "time": "05:05",
+   "src": "IDX Channel",
+   "t": "Ultra Voucher (UVCR) Mau Gelar Rights Issue, Terbitkan 200 Juta Saham Baru",
+   "tags": [
+    "UVCR"
+   ],
+   "url": "https://www.idxchannel.com/market-news/ultra-voucher-uvcr-mau-gelar-rights-issue-terbitkan-200-juta-saham-baru",
+   "img": "https://img.idxchannel.com/media/439/images/idx/2026/01/09/UVCR_gift_card.jpg",
+   "t_id": "Ultra Voucher (UVCR) Mau Gelar Rights Issue, Terbitkan 200 Juta Saham Baru",
+   "t_ko": "Ultra Voucher(UVCR)는 권리 발행을 원하며 2억 개의 새로운 주식을 발행합니다."
+  },
+  {
    "ts": "2026-09-19T04:04:00+07:00",
    "date": "2026-09-19",
    "time": "04:04",
@@ -16329,8 +16343,8 @@
    ],
    "url": "https://www.idxchannel.com/market-news/samudera-indonesia-smdr-suntik-modal-ke-dua-anak-usaha-senilai-rp4070-miliar",
    "img": "https://img.idxchannel.com/media/439/images/idx/2025/02/21/Samudera_Indonesia_-_SMDR.jpg",
-   "t_id": "Samudera Indonesia (SMDR) Suntik Modal ke Dua Anak Usaha Senilai Rp40,70 Miliar",
-   "t_ko": "SMDR, 자회사 2곳에 Rp407억 출자"
+   "t_ko": "SMDR, 자회사 2곳에 Rp407억 출자",
+   "t_id": "Samudera Indonesia (SMDR) Suntik Modal ke Dua Anak Usaha Senilai Rp40,70 Miliar"
   },
   {
    "ts": "2026-09-18T22:30:00+07:00",
@@ -16822,30 +16836,6 @@
    ]
   },
   {
-   "ts": "2026-09-18T10:45:00+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "IDNFinancials",
-   "t": "BYAN shares surge 19.96% after Haji Isam buys 30% stake",
-   "tags": [
-    "BYAN"
-   ],
-   "url": "https://www.idnfinancials.com/news/69053/byan-shares-surge-19-96-after-haji-isam-buys-30-stake",
-   "img": "https://photo2.idnfinancials.com/fly/idn/test/arif/HAJI-ISAM-BYAN-18092026.jpg",
-   "t_ko": "Haji Isam의 30% 지분 인수 이후 BYAN 주가 19.96% 급등",
-   "t_id": "Saham BYAN Meroket 19,96% Usai Haji Isam Borong 30% Kepemilikan",
-   "ai_ko": "· BYAN 전장 19.96% 상승 Rp13,825, 상한가\n· Jhonlin Baratama가 100억주 매입, 총 333.3억주의 약 30%\n· 인수금액 미공개, 2026년 석탄 쿼터 제한에 force majeure",
-   "ai_id": "· BYAN kena ARA, naik 19,96% ke Rp13.825\n· Jhonlin beli 10 miliar saham atau 30%\n· Nilai akuisisi belum diungkap manajemen",
-   "ai_tags": [
-    "M&A",
-    "석탄"
-   ],
-   "ai_tags_id": [
-    "akuisisi",
-    "batu bara"
-   ]
-  },
-  {
    "ts": "2026-09-18T09:53:50+07:00",
    "date": "2026-09-18",
    "time": "09/18",
@@ -17242,21 +17232,118 @@
  ],
  "market_news": [
   {
-   "ts": "2026-09-19T05:04:25.907536+07:00",
+   "ts": "2026-09-19T06:04:37.683043+07:00",
    "date": "2026-09-19",
-   "time": "05:04",
+   "time": "06:04",
    "src": "Jawa Pos",
-   "t": "Rekam Jejak Muhammad Masyhud, Pejabat Karier Kemenhub yang Dicopot dari Dirjen Hubla",
+   "t": "Pemerintah Harus Terbuka soal Dampak Proyek PLTP Gunung Ungaran",
    "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609180519/rekam-jejak-muhammad-masyhud-pejabat-karier-kemenhub-yang-dicopot-dari-dirjen-hubla",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/07/menteri-perhubungan-dudy-purwagandhi-tengah-mengelar-doorstop-usai-rapat-dampak-sebaran-abu-vulkanik-di-bandara-soekarno-hatta-tangerang-minggu-06092026-hanung-hambara-jawa-pos-DXrRU.webp",
-   "t_ko": "교통부, 후블라 청장 해임된 경력 관료 Muhammad Masyhud 경위 조사",
-   "t_id": "Rekam Jejak Muhammad Masyhud, Pejabat Karier Kemenhub yang Dicopot dari Dirjen Hubla"
+   "url": "https://www.jawapos.com/energi/2609180538/pemerintah-harus-terbuka-soal-dampak-proyek-pltp-gunung-ungaran",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/18/pakar-ilmu-lingkungan-mantan-rektor-universitas-diponegoro-semarang-prof-sudharto-p-hadi-antara-250Ej.webp",
+   "t_ko": "정부, Gunung Ungaran 지열발전 프로젝트 영향 공개해야",
+   "t_id": "Pemerintah Harus Terbuka soal Dampak Proyek PLTP Gunung Ungaran"
   },
   {
-   "ts": "2026-09-19T05:04:25.903856+07:00",
+   "ts": "2026-09-19T06:03:21+07:00",
    "date": "2026-09-19",
-   "time": "05:04",
+   "time": "06:03",
+   "src": "CNBC",
+   "t": "Trump says he's banning MS NOW, CNN and Politico from White House",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/trump-white-house-ban-msnow-cnn-politico.html",
+   "g": 1,
+   "t_ko": "Trump, 백악관 출입 기자단에서 MSNBC·CNN·Politico 배제",
+   "t_id": "Trump Sebut Larang MS NOW, CNN, dan Politico Masuk Gedung Putih"
+  },
+  {
+   "ts": "2026-09-19T05:55:00+07:00",
+   "date": "2026-09-19",
+   "time": "05:55",
+   "src": "Detik",
+   "t": "Utang Rp 640 Triliun Akhirnya Lunas!",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8669057/utang-rp-640-triliun-akhirnya-lunas",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2015/12/17/00d5a8dc-da3d-483a-bd2e-e78ce08f1d66_169.jpg?w=360&q=90",
+   "t_id": "Utang Rp 640 Triliun Akhirnya Lunas!",
+   "t_ko": "IDR 640조 부채가 마침내 청산되었습니다!"
+  },
+  {
+   "ts": "2026-09-19T05:54:48+07:00",
+   "date": "2026-09-19",
+   "time": "05:54",
+   "src": "Jawa Pos",
+   "t": "PLTU Bolok Topang Kebutuhan Listrik Pulau Timor",
+   "tags": [],
+   "url": "https://www.jawapos.com/energi/2609180533/pltu-bolok-topang-kebutuhan-listrik-pulau-timor",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/18/pltu-bolok-berkapasitas-2x165-mw-merupakan-salah-satu-pembangkit-yang-menopang-kebutuhan-listrik-di-pulau-timor-antara-tAqLW.webp",
+   "t_ko": "Bolok 석탄발전소, 티모르섬 전력 수요 뒷받침",
+   "t_id": "PLTU Bolok Topang Kebutuhan Listrik Pulau Timor"
+  },
+  {
+   "ts": "2026-09-19T05:48:20+07:00",
+   "date": "2026-09-19",
+   "time": "05:48",
+   "src": "Jawa Pos",
+   "t": "Penempatan SAL Rp 200 Triliun Dana Pemerintah di Bank Himbara Dilanjutkan hingga Juli 2027",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609180532/penempatan-sal-rp-200-triliun-dana-pemerintah-di-bank-himbara-dilanjutkan-hingga-juli-2027",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/05/25/wakil-menteri-keuangan-juda-agung-foto-nurul-fitrianajawaposcom-VQNsK.webp",
+   "t_ko": "정부, Himbara 은행에 Rp200조 예치금 2027년 7월까지 연장",
+   "t_id": "Penempatan SAL Rp 200 Triliun Dana Pemerintah di Bank Himbara Dilanjutkan hingga Juli 2027"
+  },
+  {
+   "ts": "2026-09-19T05:48:00+07:00",
+   "date": "2026-09-19",
+   "time": "05:48",
+   "src": "FT",
+   "t": "Trump says US has deal with Denmark for ‘control’ of Greenland’s security",
+   "tags": [],
+   "url": "https://www.ft.com/content/2ecc74bd-2fba-4ca6-9f1c-f0a927ed983c?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fe8067781-a5e5-439d-9937-b7ec6bbcf3cd.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "트럼프, 미국이 그린란드 안보 '통제' 위해 덴마크와 협상",
+   "t_id": "Trump mengatakan AS telah sepakat dengan Denmark untuk 'mengendalikan' keamanan Greenland"
+  },
+  {
+   "ts": "2026-09-19T05:41:00+07:00",
+   "date": "2026-09-19",
+   "time": "05:41",
+   "src": "MarketWatch",
+   "t": "Why investors shouldn’t be spooked by fears of an October stock-market crash",
+   "tags": [],
+   "url": "https://www.marketwatch.com/story/why-investors-shouldnt-be-spooked-by-fears-of-an-october-stock-market-crash-ac0eb2e1?mod=mw_rss_topstories",
+   "g": 1,
+   "img": "https://images.mktw.net/im-96714164",
+   "t_ko": "투자자들이 10월 주식시장 붕괴에 대한 두려움 때문에 겁을 먹어서는 안 되는 이유",
+   "t_id": "Mengapa investor tidak perlu takut dengan ketakutan akan jatuhnya pasar saham pada bulan Oktober"
+  },
+  {
+   "ts": "2026-09-19T05:38:00+07:00",
+   "date": "2026-09-19",
+   "time": "05:38",
+   "src": "Media Indonesia",
+   "t": "Warren Buffett Mundur dari Jabatan Pimpinan Berkshire Hathaway, Sang Putra Howard Ditunjuk Jadi Pengganti",
+   "tags": [],
+   "url": "https://mediaindonesia.com/ekonomi/935127/warren-buffett-mundur-dari-jabatan-pimpinan-berkshire-hathaway-sang-putra-howard-ditunjuk-jadi-pengganti",
+   "t_id": "Warren Buffett Mundur dari Jabatan Pimpinan Berkshire Hathaway, Sang Putra Howard Ditunjuk Jadi Pengganti",
+   "t_ko": "워렌 버핏이 버크셔 해서웨이 회장직을 사임하고 손 하워드가 후임 회장으로 임명되었습니다."
+  },
+  {
+   "ts": "2026-09-19T05:32:08+07:00",
+   "date": "2026-09-19",
+   "time": "05:32",
+   "src": "CNBC",
+   "t": "Trump says U.S. to build a 'large Military presence' in Greenland as part of a security deal with it and Denmark",
+   "tags": [],
+   "url": "https://www.cnbc.com/2026/09/18/trump-greenland-denmark-military-deal.html",
+   "g": 1,
+   "t_ko": "Trump, 덴마크와 안보 합의 일환으로 그린란드 대규모 주둔 공언",
+   "t_id": "Trump Sebut AS Bakal Bangun 'Kehadiran Militer Besar' di Greenland Lewat Kesepakatan Keamanan"
+  },
+  {
+   "ts": "2026-09-19T05:13:13+07:00",
+   "date": "2026-09-19",
+   "time": "05:13",
    "src": "Jawa Pos",
    "t": "Padi Biosalin Jadi Solusi Atasi Lahan Asin dan Tantangan El Nino di Batang",
    "tags": [],
@@ -17266,16 +17353,54 @@
    "t_id": "Padi Biosalin Jadi Solusi Atasi Lahan Asin dan Tantangan El Nino di Batang"
   },
   {
-   "ts": "2026-09-19T04:57:42+07:00",
+   "ts": "2026-09-19T05:10:00+07:00",
    "date": "2026-09-19",
-   "time": "04:57",
-   "src": "CNBC",
-   "t": "Trump says U.S. to build a 'large Military presence' in Greenland as part of a security deal with it and Denmark",
+   "time": "05:10",
+   "src": "Media Indonesia",
+   "t": "Donald Trump Melarang CNN, MS NOW, dan Politico Akses Gedung Putih",
    "tags": [],
-   "url": "https://www.cnbc.com/2026/09/18/trump-greenland-denmark-military-deal.html",
+   "url": "https://mediaindonesia.com/internasional/935124/donald-trump-melarang-cnn-ms-now-dan-politico-akses-gedung-putih",
    "g": 1,
-   "t_ko": "Trump, 덴마크와 안보 합의 일환으로 그린란드 대규모 주둔 공언",
-   "t_id": "Trump Sebut AS Bakal Bangun 'Kehadiran Militer Besar' di Greenland Lewat Kesepakatan Keamanan"
+   "t_id": "Donald Trump Melarang CNN, MS NOW, dan Politico Akses Gedung Putih",
+   "t_ko": "도널드 트럼프, CNN, MS NOW, Politico를 백악관 접근 금지"
+  },
+  {
+   "ts": "2026-09-19T05:07:06+07:00",
+   "date": "2026-09-19",
+   "time": "05:07",
+   "src": "Jawa Pos",
+   "t": "Rekam Jejak Muhammad Masyhud, Pejabat Karier Kemenhub yang Dicopot dari Dirjen Hubla",
+   "tags": [],
+   "url": "https://www.jawapos.com/ekonomi/2609180519/rekam-jejak-muhammad-masyhud-pejabat-karier-kemenhub-yang-dicopot-dari-dirjen-hubla",
+   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/07/menteri-perhubungan-dudy-purwagandhi-tengah-mengelar-doorstop-usai-rapat-dampak-sebaran-abu-vulkanik-di-bandara-soekarno-hatta-tangerang-minggu-06092026-hanung-hambara-jawa-pos-DXrRU.webp",
+   "t_ko": "교통부, 후블라 청장 해임된 경력 관료 Muhammad Masyhud 경위 조사",
+   "t_id": "Rekam Jejak Muhammad Masyhud, Pejabat Karier Kemenhub yang Dicopot dari Dirjen Hubla"
+  },
+  {
+   "ts": "2026-09-19T05:03:02+07:00",
+   "date": "2026-09-19",
+   "time": "05:03",
+   "src": "CNA",
+   "t": "Oracle's $18 billion data center debt under pressure, FT reports",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/business/oracles-18-billion-data-center-debt-under-pressure-ft-reports-6395981",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--a05-t3nw--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-18T220435Z_2_LYNXMPEM8H1Y8_RTROPTP_3_ORACLE-STOCKS.JPG?itok=tjbVITmf",
+   "t_ko": "FT는 오라클의 180억 달러 규모의 데이터 센터 부채가 압박을 받고 있다고 보도했습니다.",
+   "t_id": "Utang pusat data Oracle senilai $18 miliar berada di bawah tekanan, FT melaporkan"
+  },
+  {
+   "ts": "2026-09-19T05:00:15+07:00",
+   "date": "2026-09-19",
+   "time": "05:00",
+   "src": "FT",
+   "t": "Trump bans major US news outlets from White House",
+   "tags": [],
+   "url": "https://www.ft.com/content/4cd82226-3d4a-474d-bc3e-de2ed0b1e6f8?syn-25a6b1a6=1",
+   "g": 1,
+   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7cc2a650-20dd-4c4d-9c3d-77fa8f7b2e47.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
+   "t_ko": "트럼프, 백악관 주요 미국 언론사 취재 금지",
+   "t_id": "Trump Larang Media Besar AS Masuk Gedung Putih"
   },
   {
    "ts": "2026-09-19T04:37:38+07:00",
@@ -17303,6 +17428,18 @@
    "t_id": "Wall Street Tutup Pekan yang Volatil dengan Tenang"
   },
   {
+   "ts": "2026-09-19T04:31:28+07:00",
+   "date": "2026-09-19",
+   "time": "04:31",
+   "src": "Reuters",
+   "t": "Russia sanctions bill gives Trump sweeping new tariff powers",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWEtRUVNvYVIwTTZqQ3pmak0zd0NlNjZEcmxxQ3FUWTJKVUZjTHdjUmt1SThTNVFmZWl5OXVLUmljaWJoSFRQbU5qVnZDUjcyWEhJNk5yWjZDOTNzazlrenItWHdvODFNbE5Ka3ZoMGF4ZFRGcEFFeVhlWF8tWGZYYU1XWWttR3BuR0hmdF9iY0Z2WGQwbFJfV2lOT2FwSExyT21yUE80ZVM?oc=5",
+   "g": 1,
+   "t_ko": "러시아 제재 법안, 트럼프에게 새로운 관세 권한 부여",
+   "t_id": "RUU sanksi Rusia memberi Trump kekuatan tarif baru"
+  },
+  {
    "ts": "2026-09-19T04:30:00+07:00",
    "date": "2026-09-19",
    "time": "04:30",
@@ -17311,21 +17448,8 @@
    "tags": [],
    "url": "https://katadata.co.id/berita/nasional/6aad742481748/prabowo-pamer-kinerja-kabinet-rilis-125-kebijakan-dan-tekan-harga-pupuk",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/08/14/2026_08_14-18_15_00_050a3754-97df-11f1-9cb1-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Prabowo Pamer Kinerja Kabinet: Rilis 125 Kebijakan dan Tekan Harga Pupuk",
-   "t_ko": "Prabowo, 내각 성과 발표 — 정책 125건 추진 및 비료 가격 안정"
-  },
-  {
-   "ts": "2026-09-19T04:28:48+07:00",
-   "date": "2026-09-19",
-   "time": "04:28",
-   "src": "FT",
-   "t": "Trump claims US has deal with Denmark for ‘control’ of Greenland security",
-   "tags": [],
-   "url": "https://www.ft.com/content/2ecc74bd-2fba-4ca6-9f1c-f0a927ed983c?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F5b2dc2d4-831c-4df5-a3f5-e65a9f76f20b.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "Trump, 덴마크와 그린란드 안보 통제권 확보 합의 주장",
-   "t_id": "Trump Sebut AS Capai Kesepakatan dengan Denmark Terkait 'Kendali' Keamanan Greenland"
+   "t_ko": "Prabowo, 내각 성과 발표 — 정책 125건 추진 및 비료 가격 안정",
+   "t_id": "Prabowo Pamer Kinerja Kabinet: Rilis 125 Kebijakan dan Tekan Harga Pupuk"
   },
   {
    "ts": "2026-09-19T04:23:23+07:00",
@@ -17339,18 +17463,6 @@
    "img": "https://dam.mediacorp.sg/image/upload/s--kNrfzgbl--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-18T212323Z_2_LYNXMPEM8H1WL_RTROPTP_3_USA-CONGRESS.JPG?itok=VHOIF0KW",
    "t_ko": "Trump, 데이터센터 전력 비용 절감 법안 관련 Thune 상원의원과 논의",
    "t_id": "Trump Bahas RUU Pemangkasan Biaya Listrik Pusat Data dengan Thune dari Senat"
-  },
-  {
-   "ts": "2026-09-19T04:20:17+07:00",
-   "date": "2026-09-19",
-   "time": "04:20",
-   "src": "CNBC",
-   "t": "Trump says he's banning MS NOW, CNN and Politico from White House",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/18/trump-white-house-ban-msnow-cnn-politico.html",
-   "g": 1,
-   "t_ko": "Trump, 백악관 출입 기자단에서 MSNBC·CNN·Politico 배제",
-   "t_id": "Trump Sebut Larang MS NOW, CNN, dan Politico Masuk Gedung Putih"
   },
   {
    "ts": "2026-09-19T04:15:00+07:00",
@@ -17414,70 +17526,6 @@
    "img": "https://images.wsj.net/im-96905171",
    "t_ko": "자동차·운송 섹터 동향 정리",
    "t_id": "Rangkuman Auto & Transport: Ulasan Pasar"
-  },
-  {
-   "ts": "2026-09-19T04:00:33+07:00",
-   "date": "2026-09-19",
-   "time": "04:00",
-   "src": "Bloomberg",
-   "t": "Own Stocks, Trim Govt Bond Holdings: KKR's McVey",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-18/own-stocks-trim-govt-bond-holdings-kkr-s-mcvey",
-   "g": 1,
-   "t_ko": "KKR의 McVey, 주식 보유 확대 및 국채 비중 축소 권고",
-   "t_id": "Pegang Saham, Pangkas Kepemilikan Obligasi Pemerintah: McVey KKR"
-  },
-  {
-   "ts": "2026-09-19T03:59:00+07:00",
-   "date": "2026-09-19",
-   "time": "03:59",
-   "src": "WSJ",
-   "t": "Financial Services Roundup: Market Talk",
-   "tags": [],
-   "url": "https://www.wsj.com/business/financial-services-roundup-market-talk-2666de92?mod=rss_markets_main",
-   "g": 1,
-   "img": "https://images.wsj.net/im-03838137",
-   "t_ko": "금융권 동향 — 시장 전망",
-   "t_id": "Rangkuman Jasa Keuangan: Sinyal Pasar"
-  },
-  {
-   "ts": "2026-09-19T03:50:45+07:00",
-   "date": "2026-09-19",
-   "time": "03:50",
-   "src": "FT",
-   "t": "Trump bans major US news outlets from White House",
-   "tags": [],
-   "url": "https://www.ft.com/content/4cd82226-3d4a-474d-bc3e-de2ed0b1e6f8?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7cc2a650-20dd-4c4d-9c3d-77fa8f7b2e47.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "트럼프, 백악관 주요 미국 언론사 취재 금지",
-   "t_id": "Trump Larang Media Besar AS Masuk Gedung Putih"
-  },
-  {
-   "ts": "2026-09-19T03:48:35+07:00",
-   "date": "2026-09-19",
-   "time": "03:48",
-   "src": "FT",
-   "t": "Oracle’s $18bn data centre debt under strain amid local pushback",
-   "tags": [],
-   "url": "https://www.ft.com/content/bd441859-6c94-4874-894f-9362c1703127?syn-25a6b1a6=1",
-   "g": 1,
-   "img": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Ffccbe8bf-71a9-4f40-9463-992b049853a7.jpg?source=next-home-page&dpr=2&width=580&fit=scale-down",
-   "t_ko": "Oracle, 지역 반발 속 180억 달러 데이터센터 부채 압박 가중",
-   "t_id": "Utang Pusat Data Oracle $18m Tertekan di Tengah Penolakan Lokal"
-  },
-  {
-   "ts": "2026-09-19T03:48:00+07:00",
-   "date": "2026-09-19",
-   "time": "03:48",
-   "src": "MarketWatch",
-   "t": "Stocks are failing the ‘breadth’ test, but options traders still see reason to buy",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/stocks-are-failing-the-breadth-test-but-options-traders-still-see-reason-to-buy-ef78ef14?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-94913151",
-   "t_ko": "주식시장 건전성 지표 부진에도 옵션 투자자들은 매수 유지",
-   "t_id": "Saham Gagal Penuhi Uji 'Luas', Tapi Trader Opsi Masih Lihat Alasan Beli"
   },
   {
    "ts": "2026-09-19T03:36:01+07:00",
@@ -17618,66 +17666,6 @@
    "img": "https://cdn-assets.jawapos.com/images/1/2026/03/05/dirjen-pajak-bimo-wijayanto-nurul-fjawaposcom-zHj1J.webp",
    "t_ko": "재무부, 11월 1일부터 마켓플레이스 PPh 0.5% 징수 개시",
    "t_id": "Kemenkeu Mulai Pungut PPh Marketplace 0,5 Persen per 1 November 2026"
-  },
-  {
-   "ts": "2026-09-19T00:34:53+07:00",
-   "date": "2026-09-19",
-   "time": "00:34",
-   "src": "Jawa Pos",
-   "t": "Pemerintah Rampungkan Pelunasan Utang BLBI Peninggalan Krisis 1997-1998",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609180346/pemerintah-rampungkan-pelunasan-utang-blbi-peninggalan-krisis-1997-1998",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/StPEKGg1VA3QF2CzvzNHkGBen9GcUPCy7U2gni6f.webp",
-   "t_ko": "정부, 1997~1998년 위기 유산 BLBI 부채 상환 완료",
-   "t_id": "Pemerintah Rampungkan Pelunasan Utang BLBI Peninggalan Krisis 1997-1998"
-  },
-  {
-   "ts": "2026-09-18T23:25:48+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Jawa Pos",
-   "t": "Pengalihan Saham Whoosh ke Pemerintah Masuk Tahap Finalisasi",
-   "tags": [],
-   "url": "https://www.jawapos.com/bisnis/2609180542/pengalihan-saham-whoosh-ke-pemerintah-masuk-tahap-finalisasi",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/07/04/kereta-cepat-whoosh-dok-kcic-XQJB8.webp",
-   "t_ko": "Whoosh 지분 정부 이관 최종 단계 진입",
-   "t_id": "Pengalihan Saham Whoosh ke Pemerintah Masuk Tahap Finalisasi"
-  },
-  {
-   "ts": "2026-09-18T23:19:20+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Jawa Pos",
-   "t": "Penerbangan di Bandara Singkawang Terhenti Satu Bulan akibat Kabut Asap Karhutla",
-   "tags": [],
-   "url": "https://www.jawapos.com/bisnis/2609180541/penerbangan-di-bandara-singkawang-terhenti-satu-bulan-akibat-kabut-asap-karhutla",
-   "img": "https://cdn-assets.jawapos.com/images/1/2024/01/29/bandara-3767820260.jpg",
-   "t_ko": "산불 연기로 싱카왕 공항 항공편 한 달간 운항 중단",
-   "t_id": "Penerbangan di Bandara Singkawang Terhenti Satu Bulan akibat Kabut Asap Karhutla"
-  },
-  {
-   "ts": "2026-09-18T23:16:08+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Jawa Pos",
-   "t": "Babe Haikal: Halal Bukan untuk Muslim Saja",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi-syariah/2609180540/babe-haikal-halal-bukan-untuk-muslim-saja",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/18/kepala-bpjph-ahmad-haikal-hasan-dok-bpjph-ny6Xo.webp",
-   "t_ko": "Babe Haikal: 할랄은 무슬림만을 위한 것이 아님",
-   "t_id": "Babe Haikal: Halal Bukan untuk Muslim Saja"
-  },
-  {
-   "ts": "2026-09-18T23:10:19+07:00",
-   "date": "2026-09-18",
-   "time": "09/18",
-   "src": "Jawa Pos",
-   "t": "Pemerintah Harus Terbuka soal Dampak Proyek PLTP Gunung Ungaran",
-   "tags": [],
-   "url": "https://www.jawapos.com/energi/2609180538/pemerintah-harus-terbuka-soal-dampak-proyek-pltp-gunung-ungaran",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/18/pakar-ilmu-lingkungan-mantan-rektor-universitas-diponegoro-semarang-prof-sudharto-p-hadi-antara-250Ej.webp",
-   "t_ko": "정부, Gunung Ungaran 지열발전 프로젝트 영향 공개해야",
-   "t_id": "Pemerintah Harus Terbuka soal Dampak Proyek PLTP Gunung Ungaran"
   }
  ],
  "kisi_news": [
@@ -17942,11 +17930,11 @@
    "d": 0.68,
    "ytd": 21.41,
    "inv": false,
-   "note": "Bursa Malaysia FCPO 근월물 · investing.com · 연초 4,050",
+   "note": "Bursa Malaysia FCPO 근월물 · investing.com · 09/18 마지막 값 · 연초 4,050",
    "k_ko": "CPO (MYR/t)",
    "k_id": "CPO (MYR/t)",
-   "note_ko": "Bursa Malaysia FCPO 근월물 · investing.com · 연초 4,050",
-   "note_id": "FCPO Bursa Malaysia kontrak terdekat · investing.com · Awal tahun 4,050"
+   "note_ko": "Bursa Malaysia FCPO 근월물 · investing.com · 09/18 마지막 값 · 연초 4,050",
+   "note_id": "FCPO Bursa Malaysia kontrak terdekat · investing.com · 09/18 nilai terakhir · Awal tahun 4,050"
   }
  ],
  "curve": {
@@ -23314,9 +23302,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-18 20:52",
-  "pc_age_min": 493,
+  "pc_age_min": 555,
   "news_ai_cache": 56,
-  "news_ai_hit": 21,
+  "news_ai_hit": 20,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25269,7 +25257,7 @@
     "hhmm": "16:27"
    }
   },
-  "model": "gemini-3.5-flash-lite",
+  "model": "gemini-2.5-flash-lite",
   "index": {
    "ko": "AMMN과 TLKM 등 대형주 약세 영향으로 IHSG는 0.33% 하락 마감.",
    "id": "IHSG ditutup melemah 0,33% akibat tekanan dari saham berkapitalisasi besar seperti AMMN dan TLKM.",
@@ -25335,19 +25323,18 @@
    "t_id": "OJK Terbitkan 2 POJK BMKS, Atur Peralihan Tugas Bappebti"
   },
   {
-   "ts": "2026-09-19T04:15:00+07:00",
+   "ts": "2026-09-19T04:31:28+07:00",
    "date": "2026-09-19",
-   "time": "04:15",
-   "src": "WSJ",
-   "t": "U.S. Stocks Mixed as Inflation Trepidation Offsets AI Optimism",
+   "time": "04:31",
+   "src": "Reuters",
+   "t": "Russia sanctions bill gives Trump sweeping new tariff powers",
    "tags": [],
-   "url": "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-inflation-trepidation-offsets-ai-optimism-36053264?mod=rss_markets_main",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWEtRUVNvYVIwTTZqQ3pmak0zd0NlNjZEcmxxQ3FUWTJKVUZjTHdjUmt1SThTNVFmZWl5OXVLUmljaWJoSFRQbU5qVnZDUjcyWEhJNk5yWjZDOTNzazlrenItWHdvODFNbE5Ka3ZoMGF4ZFRGcEFFeVhlWF8tWGZYYU1XWWttR3BuR0hmdF9iY0Z2WGQwbFJfV2lOT2FwSExyT21yUE80ZVM?oc=5",
    "g": 1,
-   "img": "https://images.wsj.net/im-57644213",
-   "t_ko": "미국증시, 인플레이션 우려와 AI 낙관론 맞물려 혼조 마감",
-   "t_id": "Bursa AS Beragam Saat Kekhawatiran Inflasi Redam Optimisme AI",
-   "score": 307.5,
-   "srcs": 1
+   "t_ko": "러시아 제재 법안, 트럼프에게 새로운 관세 권한 부여",
+   "t_id": "RUU sanksi Rusia memberi Trump kekuatan tarif baru",
+   "score": 310.0,
+   "srcs": 2
   }
  ],
  "daylog": {
@@ -25814,20 +25801,20 @@
   "2026-09-18": {
    "news": [
     {
-     "t": "BYAN shares surge 19.96% after Haji Isam buys 30% stake",
-     "ko": "Haji Isam의 30% 지분 인수 이후 BYAN 주가 19.96% 급등",
-     "id": "Saham BYAN Meroket 19,96% Usai Haji Isam Borong 30% Kepemilikan",
-     "ai_ko": "· BYAN 전장 19.96% 상승 Rp13,825, 상한가\n· Jhonlin Baratama가 100억주 매입, 총 333.3억주의 약 30%\n· 인수금액 미공개, 2026년 석탄 쿼터 제한에 force majeure",
-     "ai_id": "· BYAN kena ARA, naik 19,96% ke Rp13.825\n· Jhonlin beli 10 miliar saham atau 30%\n· Nilai akuisisi belum diungkap manajemen",
-     "src": "IDNFinancials",
-     "url": "https://www.idnfinancials.com/news/69053/byan-shares-surge-19-96-after-haji-isam-buys-30-stake",
+     "t": "Saham BYAN Hari Ini Terbang 19,96%, Begini Kata Analis",
+     "ko": "BYAN 주가 오늘 19.96% 급등 — 분석가 진단",
+     "id": "Saham BYAN Hari Ini Terbang 19,96%, Begini Kata Analis",
+     "ai_ko": "· Bayan Resources(BYAN) 전장 19.96% 상승 Rp13,825\n· Jhonlin Baratama의 100억주(약 30%) 조건부 매매계약\n· 거래대금 Rp1,246억, RKAB·force majeure가 변수",
+     "ai_id": "· BYAN sesi I naik 19,96% ke Rp13.825\n· Jhonlin beli 10 miliar saham, ~30%\n· Nilai transaksi Rp124,6 miliar",
+     "src": "Liputan6",
+     "url": "https://www.liputan6.com/saham/read/8294411/saham-byan-hari-ini-terbang-1996-begini-kata-analis",
      "time": "09/18",
      "tags": [
       "BYAN"
      ],
-     "sc": 217.8,
+     "sc": 216.8,
      "slot": "stock",
-     "q": 82
+     "q": 81
     },
     {
      "t": "Realisasi Subsidi Energi Tembus Rp 331 Triliun, Naik Rp 113 Triliun dari 2025",
@@ -25894,34 +25881,34 @@
   "2026-09-19": {
    "news": [
     {
-     "t": "U.S. Stocks Mixed as Inflation Trepidation Offsets AI Optimism",
-     "ko": "미국증시, 인플레이션 우려와 AI 낙관론 맞물려 혼조 마감",
-     "id": "Bursa AS Beragam Saat Kekhawatiran Inflasi Redam Optimisme AI",
+     "t": "Russia sanctions bill gives Trump sweeping new tariff powers",
+     "ko": "러시아 제재 법안, 트럼프에게 새로운 관세 권한 부여",
+     "id": "RUU sanksi Rusia memberi Trump kekuatan tarif baru",
      "ai_ko": "",
      "ai_id": "",
-     "src": "WSJ",
-     "url": "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-inflation-trepidation-offsets-ai-optimism-36053264?mod=rss_markets_main",
-     "time": "04:15",
+     "src": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWEtRUVNvYVIwTTZqQ3pmak0zd0NlNjZEcmxxQ3FUWTJKVUZjTHdjUmt1SThTNVFmZWl5OXVLUmljaWJoSFRQbU5qVnZDUjcyWEhJNk5yWjZDOTNzazlrenItWHdvODFNbE5Ka3ZoMGF4ZFRGcEFFeVhlWF8tWGZYYU1XWWttR3BuR0hmdF9iY0Z2WGQwbFJfV2lOT2FwSExyT21yUE80ZVM?oc=5",
+     "time": "04:31",
      "tags": [],
-     "sc": 309.0,
+     "sc": 310.0,
      "slot": "global",
      "q": 85
     },
     {
-     "t": "Samudera Indonesia (SMDR) Suntik Modal ke Dua Anak Usaha Senilai Rp40,70 Miliar",
-     "ko": "SMDR, 자회사 2곳에 Rp407억 출자",
-     "id": "Samudera Indonesia (SMDR) Suntik Modal ke Dua Anak Usaha Senilai Rp40,70 Miliar",
+     "t": "Ultra Voucher (UVCR) Mau Gelar Rights Issue, Terbitkan 200 Juta Saham Baru",
+     "ko": "Ultra Voucher(UVCR)는 권리 발행을 원하며 2억 개의 새로운 주식을 발행합니다.",
+     "id": "Ultra Voucher (UVCR) Mau Gelar Rights Issue, Terbitkan 200 Juta Saham Baru",
      "ai_ko": "",
      "ai_id": "",
      "src": "IDX Channel",
-     "url": "https://www.idxchannel.com/market-news/samudera-indonesia-smdr-suntik-modal-ke-dua-anak-usaha-senilai-rp4070-miliar",
-     "time": "04:04",
+     "url": "https://www.idxchannel.com/market-news/ultra-voucher-uvcr-mau-gelar-rights-issue-terbitkan-200-juta-saham-baru",
+     "time": "05:05",
      "tags": [
-      "SMDR"
+      "UVCR"
      ],
-     "sc": 213.8,
+     "sc": 212.8,
      "slot": "stock",
-     "q": 51
+     "q": 56
     },
     {
      "t": "Realiasi Penyaluran TKD 2026 Sentuh Rp 504,3 Triliun, 72,8 Persen dari Target APBN",
