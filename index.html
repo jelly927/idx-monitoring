@@ -852,13 +852,18 @@ document.addEventListener('click',e=>{if(!e.target.closest('.wl-box'))$('wlqbox'
 let BAN=null,banI=0,banT=null;
 function banShow(k){const it=BAN.items[k];if(!it)return;banI=k;const im=$('banner-img');im.classList.add('fade');setTimeout(()=>{im.src=it.img;im.alt=it.alt||'';$('banner-a').href=it.url||'https://kisi.co.id';im.onload=()=>im.classList.remove('fade');},BAN.items.length>1?350:0);
   $('banner-dots').innerHTML=BAN.items.map((_,j)=>`<i class="${j===k?'on':''}" onclick="banGo(${j})"></i>`).join('');
-  /* 오른쪽 배너는 항상 왼쪽의 '다음 장'을 보여 준다 — 같은 화면에 같은 그림이 두 번 뜨지 않게 */
-  const n=BAN.items.length, im2=$('banner2-img');
-  if(n>1&&im2){const it2=BAN.items[(k+1)%n];im2.classList.add('fade');
-    setTimeout(()=>{im2.src=it2.img;im2.alt=it2.alt||'';$('banner2-a').href=it2.url||'https://kisi.co.id';im2.onload=()=>im2.classList.remove('fade');},350);}}
+}
 function banGo(k){banShow(k);banStart();}
 function banStart(){clearInterval(banT);if(BAN.items.length>1)banT=setInterval(()=>banShow((banI+1)%BAN.items.length),(BAN.interval_sec||45)*1000);}
-fetch('data/banners.json?'+Date.now()).then(r=>r.json()).then(j=>{if(!j||!(j.items||[]).length)return;BAN=j;$('banner').hidden=false;if(j.items.length>1)$('banner2').hidden=false;banShow(0);banStart();requestAnimationFrame(fitLists);}).catch(()=>{});
+fetch('data/banners.json?'+Date.now()).then(r=>r.json()).then(j=>{
+  if(!j||!(j.items||[]).length)return;
+  /* slot:"b" 인 배너는 자리 고정(채용 배너) — 돌지 않고 banner2 에만 걸린다. 나머지는 banner 에서 순환 */
+  const fx=(j.items||[]).filter(x=>x.slot==='b'), rot=(j.items||[]).filter(x=>x.slot!=='b');
+  if(fx.length){const it=fx[0],im2=$('banner2-img');
+    if(im2){im2.src=it.img;im2.alt=it.alt||'';$('banner2-a').href=it.url||'https://kisi.co.id';$('banner2').hidden=false;}}
+  if(!rot.length){requestAnimationFrame(fitLists);return;}
+  BAN={interval_sec:j.interval_sec,items:rot};$('banner').hidden=false;banShow(0);banStart();requestAnimationFrame(fitLists);
+}).catch(()=>{});
 function updateIx(x){const el=$('ix-'+x.code);if(!el){return;}const old=+el.querySelector('.px').dataset.px;
   if(old===x.px){const b=el.querySelector('.live');if(b&&x.live){b.textContent=`${T('now')} · 15${T('delay')}${asofTs(x.asof)?' · '+asofTs(x.asof):''}`;b.classList.remove('off');}return;}   // 값 같으면 숫자 갱신 없이 시각만
   const card=document.createElement('div');card.innerHTML=ixCard(x);el.replaceWith(card.firstElementChild);
@@ -1621,7 +1626,7 @@ document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-la
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
 /* 기본 배치 (2026-09-18 사장 지시) — 장외 대량거래는 왼쪽, 뉴스(시장·종목)는 오른쪽,
    홍보 배너는 아랫줄 좌(banner)·우(banner2) 한 장씩 */
-const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['nego-card','banner','banner2','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
+const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','banner2','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['nego-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
 const LAY_CARDS=LAY_DEF.cols.flat();
 const RANK_ALL=[['value','value'],['gainers','gainers'],['losers','losers'],['mcap','mcapR'],['catalyst','catalyst'],['turnover','surge'],['volume','volR'],['fnet_top','fTop'],['fnet_bot','fBot']];
 let LAY=null,layEdit=false,layDrag=null;
