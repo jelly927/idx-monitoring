@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 21:07",
+ "updated": "2026-09-18 21:30",
  "delay_min": 15,
- "fx_basis": "12.77 IDR/KRW · USD/IDR 17,740 · USD/KRW 1,389 · 20:45 Yahoo",
- "idr_per_krw": 12.7693,
+ "fx_basis": "12.77 IDR/KRW · USD/IDR 17,740 · USD/KRW 1,390 · 20:45 Yahoo",
+ "idr_per_krw": 12.7667,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -326,22 +326,21 @@
    "code": "SUN10Y",
    "label": "SUN 10Y",
    "name": "국채 10년물",
-   "px": 7.154,
-   "prev": 7.17,
-   "pct": -1.5,
+   "px": 7.157,
+   "prev": 7.157,
+   "pct": 0.0,
    "spark": [
+    7.095,
+    7.096,
     7.156,
     7.156,
     7.156,
-    7.141,
-    7.157,
     7.157
    ],
-   "span": "1M",
+   "span": "1W",
    "inv": true,
-   "unit": "bp",
-   "asof": "PHEI · 09/18",
-   "spark_stale": "PHEI · 09/18"
+   "asof": "investing.com · 09/15",
+   "unit": "bp"
   }
  ],
  "index": {
@@ -16017,10 +16016,10 @@
    "sym": "^GSPC",
    "name": "S&P 500",
    "name_id": "S&P500",
-   "px": 7623.44,
+   "px": 7622.38,
    "prev": 7637.05,
-   "pct": -0.18,
-   "asof": "21:05",
+   "pct": -0.19,
+   "asof": "21:25",
    "live": true,
    "spark": [
     7643.16,
@@ -16030,17 +16029,21 @@
     7630.95,
     7628.05,
     7621.56,
-    7623.44
+    7624.23,
+    7621.79,
+    7623.33,
+    7622.2,
+    7622.38
    ]
   },
   {
    "sym": "^IXIC",
    "name": "나스닥",
    "name_id": "Nasdaq",
-   "px": 26416.24,
+   "px": 26392.23,
    "prev": 26418.3,
-   "pct": -0.01,
-   "asof": "21:05",
+   "pct": -0.1,
+   "asof": "21:25",
    "live": true,
    "spark": [
     26506.5,
@@ -16050,17 +16053,21 @@
     26460.54,
     26440.38,
     26405.95,
-    26416.24
+    26410.33,
+    26391.67,
+    26384.96,
+    26393.37,
+    26392.23
    ]
   },
   {
    "sym": "^DJI",
    "name": "다우",
    "name_id": "Dow Jones",
-   "px": 51538.4,
+   "px": 51580.92,
    "prev": 51776.48,
-   "pct": -0.46,
-   "asof": "21:05",
+   "pct": -0.38,
+   "asof": "21:25",
    "live": true,
    "spark": [
     51685.21,
@@ -16070,7 +16077,11 @@
     51593.09,
     51577.74,
     51555.51,
-    51538.4
+    51560.53,
+    51565.06,
+    51609.2,
+    51588.99,
+    51580.92
    ]
   },
   {
@@ -16405,6 +16416,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-18T21:21:00+07:00",
+   "date": "2026-09-18",
+   "time": "21:21",
+   "src": "Katadata",
+   "t": "KPK Geledah Rumah Dirjen ATR Lampri dan Kantor Summarecon Terkait Kasus HGB",
+   "tags": [
+    "SMRA"
+   ],
+   "url": "https://katadata.co.id/berita/nasional/6aad48ccef73e/kpk-geledah-rumah-dirjen-atr-lampri-dan-kantor-summarecon-terkait-kasus-hgb",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/18/Komisi_Pemberantasan_Korupsi_menggeledah_kantor_PT_Summarecon_Ag-2026_09_18-20_59_43_9c6353b28fd55c557e0292efebb144a8_620x413_thumb.jpg",
+   "t_id": "KPK Geledah Rumah Dirjen ATR Lampri dan Kantor Summarecon Terkait Kasus HGB",
+   "t_ko": "KPK, HGB 관련 부패 의혹으로 ATR Lampri 차관 자택 및 Summarecon 사무실 압수수색"
+  },
+  {
    "ts": "2026-09-18T20:20:00+07:00",
    "date": "2026-09-18",
    "time": "20:20",
@@ -16631,33 +16656,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2025/08/27/Saham_Haji_Isam_Apa_saja-2025_08_27-16_45_26_2bbf973b9fe91cfe14b416d8bba6b7cf_620x413_thumb.jpeg",
    "t_ko": "Haji Isam, PACK부터 BYAN까지 상장사 인수 통한 사업 확장 행보",
    "t_id": "Jejak Ekspansi Bisnis Haji Isam Lewat Akuisisi Emiten: PACK hingga BYAN"
-  },
-  {
-   "ts": "2026-09-18T16:53:00+07:00",
-   "date": "2026-09-18",
-   "time": "16:53",
-   "src": "Katadata",
-   "t": "IHSG Ditutup Lesu, Saham BYAN ARA seusai Aksi Haji Isam, JARR Malah Nyaris ARB",
-   "tags": [
-    "BYAN",
-    "JARR"
-   ],
-   "url": "https://katadata.co.id/finansial/bursa/6aad0a0b62917/ihsg-ditutup-lesu-saham-byan-ara-seusai-aksi-haji-isam-jarr-malah-nyaris-arb",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/15/IHSG_Hari_ini-2026_09_15-13_05_50_af3bfd62980379a0476be4723327f3d1_620x413_thumb.jpg",
-   "t_ko": "IHSG 약세 마감 — Haji Isam 인수 관련 BYAN 상한가 vs JARR 하한가 임박",
-   "t_id": "IHSG Ditutup Lesu, Saham BYAN ARA seusai Aksi Haji Isam, JARR Malah Nyaris ARB",
-   "ai_ko": "· IHSG 0.33% 하락한 6,441 마감\n· BYAN 19.96% 급등 Rp13,825 ARA\n· JARR 14.08% 급락, UNTR 3.40% 약세",
-   "ai_id": "· IHSG ditutup -0,33% ke 6.441\n· BYAN melesat 19,96% ARA Rp13.825\n· JARR anjlok 14,08%, UNTR -3,40%",
-   "ai_tags": [
-    "증시",
-    "석탄",
-    "M&A"
-   ],
-   "ai_tags_id": [
-    "bursa",
-    "batu bara",
-    "akuisisi"
-   ]
   },
   {
    "ts": "2026-09-18T16:48:26+07:00",
@@ -17404,6 +17402,69 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T21:24:12+07:00",
+   "date": "2026-09-18",
+   "time": "21:24",
+   "src": "Detik",
+   "t": "Prabowo Ngaku dari Kecil Disumpah Jadikan RI Sejahtera-Tak Ada Orang Lapar",
+   "tags": [],
+   "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8669337/prabowo-ngaku-dari-kecil-disumpah-jadikan-ri-sejahtera-tak-ada-orang-lapar",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/18/presiden-prabowo-subianto-1789739989549_169.jpeg?w=360&q=90",
+   "t_id": "Prabowo Ngaku dari Kecil Disumpah Jadikan RI Sejahtera-Tak Ada Orang Lapar",
+   "t_ko": "Prabowo, 국민 빈곤 없는 번영하는 인도네시아 건설 다짐"
+  },
+  {
+   "ts": "2026-09-18T21:18:03+07:00",
+   "date": "2026-09-18",
+   "time": "21:18",
+   "src": "Detik",
+   "t": "Bursa Mineral 1 Januari 2027, Peralihan Pengawasan dari Bappebti Dimulai",
+   "tags": [],
+   "url": "https://finance.detik.com/bursa-dan-valas/d-8669334/bursa-mineral-1-januari-2027-peralihan-pengawasan-dari-bappebti-dimulai",
+   "img": "https://akcdn.detik.net.id/community/media/visual/2025/05/10/di-balik-kemilau-timah-1746867415034_169.jpeg?w=360&q=90",
+   "t_id": "Bursa Mineral 1 Januari 2027, Peralihan Pengawasan dari Bappebti Dimulai",
+   "t_ko": "2027년 1월 1일 미네랄 거래소 개설 — Bappebti에서 감독권 이관"
+  },
+  {
+   "ts": "2026-09-18T21:14:03+07:00",
+   "date": "2026-09-18",
+   "time": "21:14",
+   "src": "Yahoo Finance",
+   "t": "These Huge Mortgage REIT Yields Are Really a Bet on Interest Rates",
+   "tags": [],
+   "url": "https://finance.yahoo.com/real-estate/articles/huge-mortgage-reit-yields-really-141403967.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/24_7_wall_st__718/fac00c2982555a7e5f4d3b542245f32b.jpg",
+   "t_ko": "모기지 리츠 고배당, 금리 향방에 대한 베팅",
+   "t_id": "Imbal Hasil REIT KPR Jumbo Ini Nyatanya Pertaruhan pada Suku Bunga"
+  },
+  {
+   "ts": "2026-09-18T21:13:22+07:00",
+   "date": "2026-09-18",
+   "time": "21:13",
+   "src": "Yahoo Finance",
+   "t": "S&P 500 wavers after best one-day rally in six weeks: AlphaCheck",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/article/sp-500-wavers-after-best-one-day-rally-in-six-weeks-alphacheck-141322068.html",
+   "g": 1,
+   "img": "https://s.yimg.com/uu/api/res/1.2/KOQycXR2.rzD.hETOEslKg--~B/aD0zODQwO3c9NTc2MDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-09/f128b170-14d0-4965-8d22-35c1236e36ae",
+   "t_ko": "S&P 500, 최근 6주간 최대 상승 이후 관망세",
+   "t_id": "S&P 500 Bergerak Datar Usai Reli Sehari Terbaik dalam Enam Pekan: AlphaCheck"
+  },
+  {
+   "ts": "2026-09-18T21:10:05+07:00",
+   "date": "2026-09-18",
+   "time": "21:10",
+   "src": "CNA",
+   "t": "Singapore Airlines named world’s best airline for 2026",
+   "tags": [],
+   "url": "https://www.channelnewsasia.com/singapore/singapore-airlines-worlds-best-airline-2026-skytrax-awards-sia-scoot-6395136",
+   "g": 1,
+   "img": "https://dam.mediacorp.sg/image/upload/s--8Doj8GnI--/c_crop,h_448,w_798,x_0,y_18/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-09T052358Z_3_LYNXMPEM880AT_RTROPTP_3_AIR-INDIA-FUNDRAISING-SINGAPORE-AIR.JPG?itok=85Lp6Wnm",
+   "t_ko": "Singapore Airlines, 2026년 세계 최고의 항공사 선정",
+   "t_id": "Singapore Airlines Dinobatkan sebagai Maskapai Terbaik Dunia 2026"
+  },
+  {
    "ts": "2026-09-18T21:05:19+07:00",
    "date": "2026-09-18",
    "time": "21:05",
@@ -17416,17 +17477,30 @@
    "t_id": "Realisasi Subsidi Energi Tembus Rp 331 Triliun, Naik Rp 113 Triliun dari 2025"
   },
   {
+   "ts": "2026-09-18T21:04:00+07:00",
+   "date": "2026-09-18",
+   "time": "21:04",
+   "src": "Katadata",
+   "t": "6 Institusi Investasi Negara Termasuk INA Bentuk Dewan Investasi ASEAN-China",
+   "tags": [],
+   "url": "https://katadata.co.id/finansial/keuangan/6aad44e36aaa8/6-institusi-investasi-negara-termasuk-ina-bentuk-dewan-investasi-asean-china",
+   "g": 1,
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/18/Peluncuran_China-ASEAN_Joint_Investment_Council_CAJIC_di_ajang_C-2026_09_18-20_57_14_da410e7d1c319f42ecc3be21a111e942_620x413_thumb.jpeg",
+   "t_ko": "INA 등 6개국 국부펀드, 아세안-중국 투자위원회 결성",
+   "t_id": "6 Institusi Investasi Negara Termasuk INA Bentuk Dewan Investasi ASEAN-China"
+  },
+  {
    "ts": "2026-09-18T21:03:00+07:00",
    "date": "2026-09-18",
    "time": "21:03",
    "src": "WSJ",
-   "t": "New Fed Report on SVB Collapse Pins Blame on Fed’s Own Regulators",
+   "t": "New Report on SVB Collapse Pins Blame on Fed’s Own Regulators, Fed Official Says",
    "tags": [],
    "url": "https://www.wsj.com/economy/central-banking/new-fed-report-on-svb-collapse-pins-blame-on-feds-own-regulators-9a3cb062?mod=rss_markets_main",
    "g": 1,
    "img": "https://images.wsj.net/im-25561998",
-   "t_ko": "SVB 파산 보고서, 연준 자체 규제 실패 지목",
-   "t_id": "Laporan Baru The Fed Soal Runtuhnya SVB Salahkan Regulator Sendiri"
+   "t_ko": "SVB 파산 보고서, 연준 자체 규제 당국 책임으로 지목",
+   "t_id": "Laporan Baru Runtuhnya SVB Salahkan Regulator The Fed Sendiri, Ungkap Pejabat The Fed"
   },
   {
    "ts": "2026-09-18T21:01:51+07:00",
@@ -17441,6 +17515,19 @@
    "t_id": "Minyak Mentah AS Naik Seiring Pasar Evaluasi Dampak Penutupan Pipa Saudi"
   },
   {
+   "ts": "2026-09-18T20:56:29+07:00",
+   "date": "2026-09-18",
+   "time": "20:56",
+   "src": "Yahoo Finance",
+   "t": "Here’s Why Aristotle International Equity Fund Exited Unilever (UL)",
+   "tags": [],
+   "url": "https://finance.yahoo.com/markets/stocks/articles/why-aristotle-international-equity-fund-135629902.html",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/insidermonkey.com/9d84e20ee050bf9723b9108f00cec0b7.jpg",
+   "t_ko": "Aristotle International Equity Fund, Unilever(UL) 지분 전량 매각 배경",
+   "t_id": "Alasan Aristotle International Equity Fund Lepas Saham Unilever (UL)"
+  },
+  {
    "ts": "2026-09-18T20:54:00+07:00",
    "date": "2026-09-18",
    "time": "20:54",
@@ -17448,8 +17535,8 @@
    "t": "Legislator Nilai BUK Migas yang Bertanggung Jawab Langsung kepada Presiden sebagai Hal Positif",
    "tags": [],
    "url": "https://mediaindonesia.com/ekonomi/935065/legislator-nilai-buk-migas-yang-bertanggung-jawab-langsung-kepada-presiden-sebagai-hal-positif",
-   "t_id": "Legislator Nilai BUK Migas yang Bertanggung Jawab Langsung kepada Presiden sebagai Hal Positif",
-   "t_ko": "대통령 직속 Migas BUK 신설, 국회서 긍정 평가"
+   "t_ko": "대통령 직속 Migas BUK 신설, 국회서 긍정 평가",
+   "t_id": "Legislator Nilai BUK Migas yang Bertanggung Jawab Langsung kepada Presiden sebagai Hal Positif"
   },
   {
    "ts": "2026-09-18T20:51:00+07:00",
@@ -17461,6 +17548,19 @@
    "url": "https://mediaindonesia.com/ekonomi/935067/lahan-pesisir-tak-produktif-6-tahun-kini-hasilkan-1665-ton-gabah",
    "t_ko": "6년 방치 해안 간척지, 벼 166.5톤 수확",
    "t_id": "Lahan Pesisir Tak Produktif 6 Tahun Kini Hasilkan 166,5 Ton Gabah"
+  },
+  {
+   "ts": "2026-09-18T20:50:15+07:00",
+   "date": "2026-09-18",
+   "time": "20:50",
+   "src": "Yahoo Finance",
+   "t": "Stock Market Falls On AI Fears, Hawkish Fed But Bounces Back: Weekly Review",
+   "tags": [],
+   "url": "https://www.investors.com/news/stock-market-falls-on-ai-fears-hawkish-fed-bounces-back/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/b283cf9270fa12af4ffc04c36bf8070e.jpg",
+   "t_ko": "주식시장, AI 우려와 매파적 연준에 하락 후 반등 — 주간 리뷰",
+   "t_id": "Bursa Saham Turun Akibat Ketakutan AI dan The Fed Hawkish, tapi Kembali Rebound: Ulasan Mingguan"
   },
   {
    "ts": "2026-09-18T20:48:20+07:00",
@@ -17485,6 +17585,19 @@
     "investasi",
     "regulasi"
    ]
+  },
+  {
+   "ts": "2026-09-18T20:47:55+07:00",
+   "date": "2026-09-18",
+   "time": "20:47",
+   "src": "Yahoo Finance",
+   "t": "Breakout Watch: Savvy Investors Get Wired Up For This Nvidia, Amazon Partner",
+   "tags": [],
+   "url": "https://www.investors.com/research/ibd-stock-analysis/f5-stock-near-breakout-as-top-funds-buy-into-nvidia-amazon-partner/?src=A00220&yptr=yahoo",
+   "g": 1,
+   "img": "https://media.zenfs.com/en/ibd.com/ed578921d7e565c46c4bcbbd21d24851.jpg",
+   "t_ko": "돌파 관측: 스마트 투자자, Nvidia·Amazon 협력사에 주목",
+   "t_id": "Pantauan Breakout: Investor Cerdas Bidik Mitra Nvidia dan Amazon Ini"
   },
   {
    "ts": "2026-09-18T20:46:36+07:00",
@@ -17520,6 +17633,18 @@
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/18/citra-satelit-waduk-jatigede-1789738346739_169.jpeg?w=360&q=90",
    "t_ko": "Jatigede 저수지 고갈 위기 — 피해 면적 축구장 360개 규모",
    "t_id": "Waduk Jatigede Terancam Kering, Luas Terdampak Setara 360 Lapangan Bola"
+  },
+  {
+   "ts": "2026-09-18T20:40:27+07:00",
+   "date": "2026-09-18",
+   "time": "20:40",
+   "src": "Reuters",
+   "t": "Gold climbs to one-week high, heads for weekly gain on easing oil prices",
+   "tags": [],
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaEtrczJxeXh5VlUxY1VWWF9xVVdYX0xwZjU4UGlCU19tTV91TzlFdzVyeXJWS0JmNjBVVHo2VVVSa1FwN1RWODJXbko1MkxmQnlwVEZ6eHV5cV9RRno1VHl3Si1OZU51bEgtSV9SeUNOaERzMjdmQ0wwelFVR3lPTWhXV3VlamQwU09XZkFsTlRTb0cyQ0VaaThBWWxIRUwtOFAw?oc=5",
+   "g": 1,
+   "t_ko": "금값, 유가 하락에 힘입어 1주일 내 최고가 및 주간 상승세",
+   "t_id": "Harga Emas Naik ke Level Tertinggi Satu Pekan, Menuju Penguatan Mingguan di Tengah Penurunan Harga Minyak"
   },
   {
    "ts": "2026-09-18T20:37:44+07:00",
@@ -17608,18 +17733,6 @@
    "t_id": "Triple Witching Opsi Catat $7 Triliun Kedaluwarsa pada Jumat"
   },
   {
-   "ts": "2026-09-18T20:26:23+07:00",
-   "date": "2026-09-18",
-   "time": "20:26",
-   "src": "Bloomberg",
-   "t": "Screwworm Reappears in New Mexico Ahead of Port Reopening",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-18/screwworm-reappears-in-new-mexico-ahead-of-port-reopening",
-   "g": 1,
-   "t_ko": "항구 재개장 앞두고 뉴멕시코주에 구리충 다시 출현",
-   "t_id": "Cacing Skru Muncul Kembali di New Mexico Menjelang Pembukaan Kembali Pelabuhan"
-  },
-  {
    "ts": "2026-09-18T20:24:00+07:00",
    "date": "2026-09-18",
    "time": "20:24",
@@ -17687,18 +17800,6 @@
    "img": "https://static.republika.co.id/uploads/images/detailnews/festival-kakao_260918200847-417.jpeg",
    "t_ko": "카카오 농가 역량 강화 통한 소득 증대 추진",
    "t_id": "Peningkatan Keterampilan Petani Kakao Didorong untuk Perkuat Kesejahteraan"
-  },
-  {
-   "ts": "2026-09-18T20:08:59+07:00",
-   "date": "2026-09-18",
-   "time": "20:08",
-   "src": "CNBC",
-   "t": "Jim Cramer's top 10 things to watch in the stock market Friday",
-   "tags": [],
-   "url": "https://www.cnbc.com/2026/09/18/jim-cramers-top-10-things-to-watch-in-the-stock-market-friday.html",
-   "g": 1,
-   "t_ko": "Jim Cramer, 금요일 증시 주요 관전 포인트 10선 제시",
-   "t_id": "10 Hal Penting Pantauan Jim Cramer di Pasar Saham Jumat"
   },
   {
    "ts": "2026-09-18T20:07:46+07:00",
@@ -17769,103 +17870,6 @@
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/18/BRI_Kartu_Kredit_menghadirkan_program_spesial_berhadiah_MAMA_Awa-2026_09_18-19_50_41_bed8b00c9b3757851357bdc3bb7787a2_620x413_thumb.jpg",
    "t_ko": "BRI 카드, 오사카 개최 2026 MAMA 어워즈 단독 패키지 출시",
    "t_id": "BRI Kartu Kredit Siapkan Jalur Khusus ke MAMA Awards 2026 di Osaka, Cek Caranya"
-  },
-  {
-   "ts": "2026-09-18T19:52:19+07:00",
-   "date": "2026-09-18",
-   "time": "19:52",
-   "src": "Bloomberg",
-   "t": "BOJ Hikes Rate at Fastest Pace in More Than Three Decades",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/videos/2026-09-18/boj-hikes-rate-at-fastest-pace-in-decades-video",
-   "g": 1,
-   "t_ko": "일본은행(BOJ), 30여 년 만에 가장 빠른 속도로 금리 인상",
-   "t_id": "BOJ Naikkan Suku Bunga dengan Laju Tercepat dalam Tiga Dekade Lebih"
-  },
-  {
-   "ts": "2026-09-18T19:50:16+07:00",
-   "date": "2026-09-18",
-   "time": "19:50",
-   "src": "Jawa Pos",
-   "t": "Sampai September 2026, Investasi Asing di Indonesia Tembus Rp 141,6 Triliun",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609180209/sampai-september-2026-investasi-asing-di-indonesia-tembus-rp-1416-triliun",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/09/17/1fYKFUeniGOc5z25Ayl9ddfRAK50eT6NEE67JGST.webp",
-   "t_ko": "2026년 9월까지 인도네시아 외국인 투자 Rp141.6조 돌파",
-   "t_id": "Sampai September 2026, Investasi Asing di Indonesia Tembus Rp 141,6 Triliun"
-  },
-  {
-   "ts": "2026-09-18T19:47:28+07:00",
-   "date": "2026-09-18",
-   "time": "19:47",
-   "src": "Bloomberg",
-   "t": "Trump’s $1.4 Billion Haul Comes Back to Haunt Crypto Industry",
-   "tags": [],
-   "url": "https://www.bloomberg.com/news/articles/2026-09-18/trump-s-1-4-billion-haul-comes-back-to-haunt-crypto-industry",
-   "g": 1,
-   "t_ko": "트럼프 14억 달러 모금액, 암호화폐 업계에 부메랑",
-   "t_id": "Perolehan Dana US$1,4 Miliar Trump Kembali Hantui Industri Kripto"
-  },
-  {
-   "ts": "2026-09-18T19:46:00+07:00",
-   "date": "2026-09-18",
-   "time": "19:46",
-   "src": "Katadata",
-   "t": "RSPI Group Beri Layanan Kesehatan Khusus bagi Nasabah BRI Private-BRI Prioritas",
-   "tags": [],
-   "url": "https://katadata.co.id/finansial/keuangan/6aad3297da8a4/rspi-group-beri-layanan-kesehatan-khusus-bagi-nasabah-bri-private-bri-prioritas",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/18/Ilsutrasi_layanan_kesehatan-2026_09_18-19_39_28_6791da934f2a05b1c5f722810ed35786_620x413_thumb.jpg",
-   "t_ko": "RSPI Group, BRI Private·Prioritas 우대 고객 맞춤형 의료 서비스 제공",
-   "t_id": "RSPI Group Sediakan Layanan Kesehatan Khusus Nasabah BRI Private-BRI Prioritas"
-  },
-  {
-   "ts": "2026-09-18T19:44:07+07:00",
-   "date": "2026-09-18",
-   "time": "19:44",
-   "src": "Jawa Pos",
-   "t": "Realisasi Restitusi Pajak Hingga Agustus 2026 Turun 37 Persen Jadi Rp 191,8 Triliun",
-   "tags": [],
-   "url": "https://www.jawapos.com/ekonomi/2609180394/realisasi-restitusi-pajak-hingga-agustus-2026-turun-37-persen-jadi-rp-1918-triliun",
-   "img": "https://cdn-assets.jawapos.com/images/1/2026/03/05/dirjen-pajak-bimo-wijayanto-nurul-fjawaposcom-zHj1J.webp",
-   "t_ko": "8월 세금 환급 실적 37% 감소한 Rp191.8조 기록",
-   "t_id": "Realisasi Restitusi Pajak Hingga Agustus 2026 Turun 37 Persen Jadi Rp 191,8 Triliun"
-  },
-  {
-   "ts": "2026-09-18T19:43:52+07:00",
-   "date": "2026-09-18",
-   "time": "19:43",
-   "src": "Detik",
-   "t": "1 Juta Jaringan Gas Ditargetkan Rampung 2028",
-   "tags": [],
-   "url": "https://finance.detik.com/energi/d-8669161/1-juta-jaringan-gas-ditargetkan-rampung-2028",
-   "img": "https://akcdn.detik.net.id/community/media/visual/2026/05/21/kepala-kantor-staf-presiden-ksp-dudung-abdurachman-1779342097390_169.png?w=360&q=90",
-   "t_ko": "가스 배관망 100만 가구, 2028년 완공 목표",
-   "t_id": "1 Juta Jaringan Gas Ditargetkan Rampung 2028"
-  },
-  {
-   "ts": "2026-09-18T19:40:00+07:00",
-   "date": "2026-09-18",
-   "time": "19:40",
-   "src": "MarketWatch",
-   "t": "Why mortgage bonds are set to deteriorate, and possibly hit the whole market, according to this Wall Street expert",
-   "tags": [],
-   "url": "https://www.marketwatch.com/story/why-mortgage-bonds-are-set-to-deteriorate-and-possibly-hit-the-whole-market-according-to-this-wall-street-expert-0dd7f05d?mod=mw_rss_topstories",
-   "g": 1,
-   "img": "https://images.mktw.net/im-58988269",
-   "t_ko": "Wall Street 전문가, 모기지 채권 부실화 및 시장 전반 확산 경고",
-   "t_id": "Penyebab Obligasi KPR Bakal Memburuk dan Ancam Pasar Luas Menurut Pakar Wall Street Ini"
-  },
-  {
-   "ts": "2026-09-18T19:40:00+07:00",
-   "date": "2026-09-18",
-   "time": "19:40",
-   "src": "Republika",
-   "t": "10 Saham Amerika Terbaik 2026 dan Cara Memilihnya untuk Investor Indonesia",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tlk8c8423/10-saham-amerika-terbaik-2026-dan-cara-memilihnya-untuk-investor-indonesia",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/_260918193427-879.png",
-   "t_ko": "인도네시아 투자자를 위한 2026년 미국 우량 주식 10선 및 종목 선정법",
-   "t_id": "10 Saham Amerika Terbaik 2026 dan Cara Memilihnya untuk Investor Indonesia"
   }
  ],
  "kisi_news": [
@@ -18032,8 +18036,8 @@
   {
    "k": "KRW/IDR (1원당 루피아)",
    "v": "12.76",
-   "d": -0.75,
-   "ytd": 9.9,
+   "d": -0.77,
+   "ytd": 9.88,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 11.6144",
    "k_ko": "KRW/IDR (1원당 루피아)",
@@ -18043,9 +18047,9 @@
   },
   {
    "k": "UST 10Y",
-   "v": "4.996%",
-   "d": 0.99,
-   "ytd": 20.01,
+   "v": "4.992%",
+   "d": 0.91,
+   "ytd": 19.91,
    "inv": true,
    "note": "Yahoo 15분 지연 · 연초 4.163",
    "k_ko": "UST 10Y",
@@ -18066,9 +18070,9 @@
   },
   {
    "k": "달러 인덱스 (DXY)",
-   "v": "100.51",
-   "d": 0.28,
-   "ytd": 2.27,
+   "v": "100.49",
+   "d": 0.26,
+   "ytd": 2.25,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 98.28",
    "k_ko": "달러 인덱스 (DXY)",
@@ -18078,9 +18082,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "97.70",
-   "d": -3.43,
-   "ytd": 70.15,
+   "v": "97.86",
+   "d": -3.27,
+   "ytd": 70.43,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18090,9 +18094,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,388.1",
-   "d": -0.19,
-   "ytd": 1.44,
+   "v": "4,391.4",
+   "d": -0.12,
+   "ytd": 1.52,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -18137,68 +18141,7 @@
    "note_id": "FCPO Bursa Malaysia kontrak terdekat · investing.com · Awal tahun 4,050"
   }
  ],
- "curve": {
-  "date": "2026-09-18",
-  "src": "PHEI (IBPA)",
-  "rows": [
-   [
-    0.1,
-    6.6203,
-    6.5966
-   ],
-   [
-    1.0,
-    6.6821,
-    6.6953
-   ],
-   [
-    2.0,
-    6.7601,
-    6.7925
-   ],
-   [
-    3.0,
-    6.8425,
-    6.8806
-   ],
-   [
-    5.0,
-    6.9869,
-    7.02
-   ],
-   [
-    7.0,
-    7.0834,
-    7.1075
-   ],
-   [
-    10.0,
-    7.1542,
-    7.1696
-   ],
-   [
-    15.0,
-    7.1846,
-    7.1957
-   ],
-   [
-    20.0,
-    7.1885,
-    7.199
-   ],
-   [
-    25.0,
-    7.1889,
-    7.1994
-   ],
-   [
-    30.0,
-    7.1889,
-    7.1994
-   ]
-  ],
-  "n": 41
- },
+ "curve": null,
  "calendar": [
   {
    "date": "2026-08-31",
@@ -23502,9 +23445,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-18 20:52",
-  "pc_age_min": 15,
+  "pc_age_min": 38,
   "news_ai_cache": 56,
-  "news_ai_hit": 31,
+  "news_ai_hit": 30,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25545,18 +25488,19 @@
    ]
   },
   {
-   "ts": "2026-09-18T05:43:46+07:00",
+   "ts": "2026-09-18T15:05:04+07:00",
    "date": "2026-09-18",
-   "time": "05:43",
-   "src": "Reuters",
-   "t": "Tech leads Wall St to higher close as oil eases, Treasury yields dip",
+   "time": "15:05",
+   "src": "Yahoo Finance",
+   "t": "Stock market today: Dow, S&P 500, Nasdaq mixed as oil prices rise",
    "tags": [],
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORkVra0Q0cjNkbjlDN0N2SENMZHYyeVVFSU1tcG5LOXhBTk5leFlZNjFNRGpad3NoWmhnaWZVd2I3N19oa2hQSERYZzBQWFcxaUJQNDZaSHMwVjFrNGlKbGRUNjg5TEt2WENpMUJiUFRVTjR6WlQyc0IzY2V2M05FanNlWExPdUZ2bTJFUlp4YW5HdTAwTExfNTI3MWkwVEVTMTRZUURlR01lVHA5?oc=5",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-18-dow-sp-500-nasdaq-080504071.html",
    "g": 1,
-   "score": 312.0,
-   "srcs": 3,
-   "t_ko": "기술은 유가 완화로 월스트리트를 더 높은 수준으로 이끌고 국채 수익률은 하락합니다.",
-   "t_id": "Teknologi Pimpin Wall St Ditutup Menguat Seiring Meredanya Minyak & Imbal Hasil US Treasury Turun"
+   "img": "https://s.yimg.com/uu/api/res/1.2/Alh9oHD2owhCgZEEiPvUeg--~B/aD00MDAwO3c9NjAwMDthcHBpZD15dGFjaHlvbg--/https://d29szjachogqwa.cloudfront.net/images/2026-09/afd551e1-22a3-47ce-8b92-0bc9b31a778a",
+   "score": 313.5,
+   "srcs": 4,
+   "t_ko": "유가 상승 속 뉴욕증시 다우·S&P500·나스닥 혼조세 마감",
+   "t_id": "Bursa Saham Hari Ini: Dow, S&P 500, Nasdaq Beragam Seiring Kenaikan Harga Minyak"
   }
  ],
  "daylog": {
