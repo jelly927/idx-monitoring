@@ -1,9 +1,9 @@
 {
  "mode": "live",
- "updated": "2026-09-18 08:50",
+ "updated": "2026-09-18 09:02",
  "delay_min": 15,
- "fx_basis": "12.82 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,384 · 04:00 Yahoo",
- "idr_per_krw": 12.8211,
+ "fx_basis": "12.81 IDR/KRW · USD/IDR 17,748 · USD/KRW 1,385 · 04:00 Yahoo",
+ "idr_per_krw": 12.8128,
  "indices": [
   {
    "code": "COMPOSITE",
@@ -15963,10 +15963,10 @@
    "sym": "^KS11",
    "name": "코스피",
    "name_id": "KOSPI",
-   "px": 6834.1,
+   "px": 6852.74,
    "prev": 6699.4,
-   "pct": 2.01,
-   "asof": "08:25",
+   "pct": 2.29,
+   "asof": "08:40",
    "live": true,
    "spark": [
     6869.47,
@@ -15986,17 +15986,20 @@
     6842.08,
     6848.77,
     6841.2,
-    6834.1
+    6836.38,
+    6837.65,
+    6851.79,
+    6852.74
    ]
   },
   {
    "sym": "^N225",
    "name": "니케이 225",
    "name_id": "Nikkei 225",
-   "px": 64550.19,
+   "px": 64482.58,
    "prev": 64098.31,
-   "pct": 0.7,
-   "asof": "08:30",
+   "pct": 0.6,
+   "asof": "08:45",
    "live": true,
    "spark": [
     64620.01,
@@ -16017,20 +16020,26 @@
     64754.68,
     64720.04,
     64674.83,
-    64550.19
+    64555.7,
+    64542.26,
+    64497.74,
+    64482.58
    ]
   },
   {
    "sym": "^HSI",
    "name": "항셍",
    "name_id": "Hang Seng",
-   "px": 24767.14,
+   "px": 24786.06,
    "prev": 24604.29,
-   "pct": 0.66,
-   "asof": "08:30",
+   "pct": 0.74,
+   "asof": "08:45",
    "live": true,
    "spark": [
-    24767.14
+    24793.86,
+    24787.82,
+    24802.77,
+    24786.06
    ]
   }
  ],
@@ -16110,6 +16119,20 @@
  },
  "news": [
   {
+   "ts": "2026-09-18T09:00:49+07:00",
+   "date": "2026-09-18",
+   "time": "09:00",
+   "src": "Bloomberg Technoz",
+   "t": "Investor Asing Diam-diam Borong Saham BMRI hingga ANTM",
+   "tags": [
+    "BMRI"
+   ],
+   "url": "https://www.bloombergtechnoz.com/detail-news/121971/investor-asing-diam-diam-borong-saham-bmri-hingga-antm",
+   "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727155522.jpeg",
+   "t_id": "Investor Asing Diam-diam Borong Saham BMRI hingga ANTM",
+   "t_ko": "외국인, BMRI·ANTM 주식 순매수"
+  },
+  {
    "ts": "2026-09-18T08:32:46+07:00",
    "date": "2026-09-18",
    "time": "08:32",
@@ -16124,8 +16147,8 @@
    ],
    "url": "https://finance.detik.com/bursa-dan-valas/d-8667923/rekomendasi-saham-hari-ini-cuan-inet-hingga-dssa",
    "img": "https://akcdn.detik.net.id/community/media/visual/2026/09/18/bursa-dan-valas-1789694298-1789694298829.jpeg?w=360&q=90",
-   "t_id": "Rekomendasi Saham Hari Ini: CUAN, INET, hingga DSSA",
-   "t_ko": "CUAN·INET·DSSA 투자의견 정리"
+   "t_ko": "CUAN·INET·DSSA 투자의견 정리",
+   "t_id": "Rekomendasi Saham Hari Ini: CUAN, INET, hingga DSSA"
   },
   {
    "ts": "2026-09-18T08:21:37+07:00",
@@ -16612,32 +16635,6 @@
     "akuisisi",
     "divestasi",
     "batu bara"
-   ]
-  },
-  {
-   "ts": "2026-09-17T19:50:00+07:00",
-   "date": "2026-09-17",
-   "time": "09/17",
-   "src": "Katadata",
-   "t": "KPK Geledah Sejumlah Ruangan ATR Terkait Kasus HGB, Bawa 3 Koper Barang Bukti",
-   "tags": [
-    "SMRA"
-   ],
-   "url": "https://katadata.co.id/berita/nasional/6aabe2257837b/kpk-geledah-sejumlah-ruangan-atr-terkait-kasus-hgb-bawa-3-koper-barang-bukti",
-   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/17/Penyidik_Komisi_Pemberantasan_Korupsi_saat_menggeledah_Kementeri-2026_09_17-19_49_44_849a1f83e7b6f3f397bb6b0f3644d1b0_620x413_thumb.jpeg",
-   "t_ko": "KPK, HGB 관련 ATR 사무실 압수수색해 증거품 3개 상자 압수",
-   "t_id": "KPK Geledah Sejumlah Ruangan ATR Terkait Kasus HGB, Bawa 3 Koper Barang Bukti",
-   "ai_ko": "· KPK, ATR/BPN 압수수색해 증거 3상자 확보\n· Bogor HGB 비리로 8명 입건, 국장 Lampri 포함\n· Summarecon Agung(SMRA) 사장도 피의자로 입건",
-   "ai_id": "· KPK geledah ATR/BPN, bawa 3 koper bukti\n· Kasus HGB Bogor, 8 orang tersangka\n· Presdir Summarecon jadi tersangka",
-   "ai_tags": [
-    "수사",
-    "부동산",
-    "규제"
-   ],
-   "ai_tags_id": [
-    "korupsi",
-    "properti",
-    "regulasi"
    ]
   },
   {
@@ -17271,6 +17268,30 @@
  ],
  "market_news": [
   {
+   "ts": "2026-09-18T08:58:29+07:00",
+   "date": "2026-09-18",
+   "time": "08:58",
+   "src": "Republika",
+   "t": "MIND ID Didorong Perkuat Kendali atas Rantai Nilai Mineral",
+   "tags": [],
+   "url": "https://ekonomi.republika.co.id/berita/tljeth522/mind-id-didorong-perkuat-kendali-atas-rantai-nilai-mineral",
+   "img": "https://static.republika.co.id/uploads/images/detailnews/direktur-utama-mind-id-maroef-dalam-rdp-bersama-komisi_260916200919-320.jpeg",
+   "t_ko": "MIND ID, 광물 공급망 지배력 강화 추진",
+   "t_id": "MIND ID Didorong Perkuat Kendali Rantai Pasok Mineral"
+  },
+  {
+   "ts": "2026-09-18T08:56:00+07:00",
+   "date": "2026-09-18",
+   "time": "08:56",
+   "src": "Katadata",
+   "t": "Jejakin Kembangkan Sensor Bioakustik, Pantau 11.000 Spesies Burung",
+   "tags": [],
+   "url": "https://katadata.co.id/ekonomi-hijau/ekonomi-sirkular/6aac9a59a4d3b/jejakin-kembangkan-sensor-bioakustik-pantau-11000-spesies-burung",
+   "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/17/Plenary_Session_Katadata_SAFE_2026-2026_09_17-19_42_10_6deb8ab1b12befe1a630139b53ce5cfa_620x413_thumb.jpeg",
+   "t_ko": "Jejakin, 조류 1만1,000종 모니터링하는 바이오음향 센서 개발",
+   "t_id": "Jejakin Kembangkan Sensor Bioakustik, Pantau 11.000 Spesies Burung"
+  },
+  {
    "ts": "2026-09-18T08:42:00+07:00",
    "date": "2026-09-18",
    "time": "08:42",
@@ -17292,8 +17313,8 @@
    "tags": [],
    "url": "https://katadata.co.id/ekonomi-hijau/ekonomi-sirkular/6aac9707df648/daftar-wilayah-paling-terpapar-polusi-pagi-ini-tabalong-di-kalsel-terparah",
    "img": "https://cdn1.katadata.co.id/media/images/thumb/2026/09/12/2026_09_12-22_12_00_bbe0f3ac-af07-11f1-9607-0242ac12000a_620x413_thumb.jpg",
-   "t_id": "Daftar Wilayah Paling Terpapar Polusi Pagi Ini, Tabalong di Kalsel Terparah",
-   "t_ko": "오늘 아침 대기오염 심각 지역 — 칼셀 Tabalong 가장 심각"
+   "t_ko": "오늘 아침 대기오염 심각 지역 — 칼셀 Tabalong 가장 심각",
+   "t_id": "Daftar Wilayah Paling Terpapar Polusi Pagi Ini, Tabalong di Kalsel Terparah"
   },
   {
    "ts": "2026-09-18T08:40:02+07:00",
@@ -17304,21 +17325,21 @@
    "tags": [],
    "url": "https://www.bloombergtechnoz.com/detail-news/121963/rangkuman-rekomendasi-saham-hari-ini-18-september-2026",
    "img": "https://images.bloombergtechnoz.com/data/2026/07/image-20260727155440.jpeg",
-   "t_id": "Rangkuman Rekomendasi Saham Hari Ini, 18 September 2026",
-   "t_ko": "오늘의 주식 투자의견 정리 — 2026년 9월 18일"
+   "t_ko": "오늘의 주식 투자의견 정리 — 2026년 9월 18일",
+   "t_id": "Rangkuman Rekomendasi Saham Hari Ini, 18 September 2026"
   },
   {
    "ts": "2026-09-18T08:39:17+07:00",
    "date": "2026-09-18",
    "time": "08:39",
    "src": "Bloomberg Technoz",
-   "t": "Bitcoin Sideway di US$76.500-an, Terpukul Putusan Bunga The Fed",
+   "t": "Bitcoin Sideways di US$76.500-an, Terpukul Putusan Bunga The Fed",
    "tags": [],
-   "url": "https://www.bloombergtechnoz.com/detail-news/121966/bitcoin-sideway-di-us-76-500-an-terpukul-putusan-bunga-the-fed",
+   "url": "https://www.bloombergtechnoz.com/detail-news/121966/bitcoin-sideways-di-us-76-500-an-terpukul-putusan-bunga-the-fed",
    "g": 1,
-   "img": "https://images.bloombergtechnoz.com/data/2026/06/image-20260624095803.jpg",
-   "t_id": "Bitcoin Sideway di US$76.500-an, Terpukul Putusan Bunga The Fed",
-   "t_ko": "비트코인, 연준 금리 결정 타격에 US$76,500선 횡보"
+   "img": "https://images.bloombergtechnoz.com/data/2026/09/image-20260918085425.jpg",
+   "t_id": "Bitcoin Sideways di US$76.500-an, Terpukul Putusan Bunga The Fed",
+   "t_ko": "비트코인, 연준 금리 결정 충격에 US$76,500선 횡보"
   },
   {
    "ts": "2026-09-18T08:35:38+07:00",
@@ -17969,52 +17990,6 @@
     "ekspor",
     "pajak"
    ]
-  },
-  {
-   "ts": "2026-09-18T06:00:00+07:00",
-   "date": "2026-09-18",
-   "time": "06:00",
-   "src": "Republika",
-   "t": "Kesiapan Dana Pensiun Rendah, Lansia Bergantung pada Keluarga",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tlihjl416/kesiapan-dana-pensiun-rendah-lansia-bergantung-pada-keluarga",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/hal-yang-perlu-dipertimbangkan-sebelum-memutuskan-pensiun-dini_220921221437-131.jpg",
-   "t_ko": "낮은 연금 준비율에 노인층 가족 부양 의존도 심화",
-   "t_id": "Kesiapan Dana Pensiun Rendah, Lansia Bergantung pada Keluarga",
-   "ai_ko": "· 고령가구 82.96%가 가족 소득에 의존\n· 저축·투자 의존은 1% 미만, 연금 보유율 5.37%\n· 고령인구 2025년 12%→2045년 20% 초과 전망",
-   "ai_id": "· 82,96 persen lansia andalkan keluarga\n· Kepemilikan dana pensiun 5,37 persen\n· Lansia 12 persen 2025, di atas 20 persen 2045",
-   "ai_tags": [
-    "연금",
-    "고령화"
-   ],
-   "ai_tags_id": [
-    "dana pensiun",
-    "ageing society"
-   ]
-  },
-  {
-   "ts": "2026-09-18T05:58:23+07:00",
-   "date": "2026-09-18",
-   "time": "05:58",
-   "src": "Republika",
-   "t": "Menkop Ferry: Koperasi Merah Putih Wajib Prioritaskan Produk UMKM Lokal",
-   "tags": [],
-   "url": "https://ekonomi.republika.co.id/berita/tlirat1130000/menkop-ferry-koperasi-merah-putih-wajib-prioritaskan-produk-umkm-lokal",
-   "img": "https://static.republika.co.id/uploads/images/detailnews/044513600-1789666229-menkopjpg.jpg",
-   "t_ko": "Ferry 중소기업부 장관, Merah Putih 협동조합에 지역 중소기업 제품 우선 매입 지시",
-   "t_id": "Menkop Ferry: Koperasi Merah Putih Wajib Prioritaskan Produk UMKM Lokal",
-   "ai_ko": "· 협동조합 KDKMP 약 2.3만개 건립, 목표 3만개\n· 지역 중소기업 제품 우선 취급 방침 제시\n· Bulog 쌀·Pertamina LPG·Pupuk Indonesia 비료 유통 담당",
-   "ai_id": "· KDKMP capai 23.000 unit, target 30.000\n· Wajib utamakan produk UMKM lokal\n· Salurkan beras, LPG 3 kg, dan pupuk subsidi",
-   "ai_tags": [
-    "정책",
-    "협동조합",
-    "유통"
-   ],
-   "ai_tags_id": [
-    "kebijakan",
-    "koperasi",
-    "distribusi"
-   ]
   }
  ],
  "kisi_news": [
@@ -18228,9 +18203,9 @@
   },
   {
    "k": "WTI (US$/bbl)",
-   "v": "101.16",
-   "d": -1.09,
-   "ytd": 76.18,
+   "v": "101.10",
+   "d": -1.14,
+   "ytd": 76.07,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 57.42",
    "k_ko": "WTI (US$/bbl)",
@@ -18240,9 +18215,9 @@
   },
   {
    "k": "금 (US$/oz)",
-   "v": "4,393.2",
-   "d": 1.33,
-   "ytd": 1.56,
+   "v": "4,384.7",
+   "d": 1.14,
+   "ytd": 1.37,
    "inv": false,
    "note": "Yahoo 15분 지연 · 연초 4,326",
    "k_ko": "금 (US$/oz)",
@@ -23822,9 +23797,9 @@
   "idx_index": false,
   "idx_market": true,
   "idx_from_pc": "2026-09-18 08:37",
-  "pc_age_min": 13,
+  "pc_age_min": 25,
   "news_ai_cache": 103,
-  "news_ai_hit": 70,
+  "news_ai_hit": 68,
   "on_runner": true,
   "bi": null,
   "hist_days": 20,
@@ -25625,7 +25600,7 @@
     "kurs"
    ],
    "score": 416.5,
-   "srcs": 5
+   "srcs": 4
   },
   {
    "ts": "2026-09-17T22:00:39+07:00",
