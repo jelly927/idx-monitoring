@@ -473,8 +473,7 @@ em.ngbig{font-style:normal;font-size:9.5px;font-weight:800;padding:1px 6px;borde
 .ann .row a.pdf{display:inline-block;font-size:10px;font-weight:800;color:var(--ink3);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:6px;vertical-align:1px;text-decoration:none}.ann .row a.pdf:hover{color:var(--brand);border-color:var(--brand)}
 .divline{background:var(--brand2);color:var(--brand);border-radius:8px;padding:8px 10px;font-size:12.5px;margin:0 0 8px}.divline b{margin-right:4px}
 #macro tr.th td{font-size:11px;color:var(--ink3);font-weight:700;padding-bottom:4px;border-bottom:1px solid var(--line)}
-.banner{position:relative;border-radius:14px;overflow:hidden;box-shadow:var(--sh,0 1px 3px rgba(0,0,0,.08));background:#0b3d2e;max-height:124px}
-.banner img{object-fit:cover;object-position:center}
+.banner{position:relative;border-radius:14px;overflow:hidden;box-shadow:var(--sh,0 1px 3px rgba(0,0,0,.08));background:#0b3d2e}
 .banner img{display:block;width:100%;height:auto;transition:opacity .6s}.banner img.fade{opacity:0}
 .banner .dots{position:absolute;right:10px;bottom:8px;display:flex;gap:5px}.banner .dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.45);cursor:pointer}.banner .dots i.on{background:#fff}
 .n-item .logo{width:34px;height:34px;flex-basis:34px;font-size:12px;margin-top:1px}
@@ -633,6 +632,7 @@ em.ngbig{font-style:normal;font-size:9.5px;font-weight:800;padding:1px 6px;borde
         <span class="seg" id="fseg"><a href="#" class="on" onclick="setFview('stock');return false" data-t="fvStock">종목</a><a href="#" onclick="setFview('sector');return false" data-t="fvSector">업종</a></span>
         <span class="more" id="fdate"></span></h2>
       <div id="fv-stock">
+        <div class="ffhd"><span class="seg" id="fswin"><a href="#" class="on" onclick="setFsWin('1d');return false">1D</a><a href="#" onclick="setFsWin('1w');return false">1W</a><a href="#" onclick="setFsWin('1m');return false">1M</a></span><span class="more" id="fsmeta"></span></div>
         <div class="fx" id="fx"></div>
         <div class="two"><div><div class="h" data-t="ftop">순매수 상위</div><div class="list mini-list" id="ftop"></div></div><div><div class="h" data-t="fbot">순매도 상위</div><div class="list mini-list" id="fbot"></div></div></div>
         <div class="sub" id="fnote"></div>
@@ -940,8 +940,7 @@ function render(d){DATA=d;IDRKRW=d.idr_per_krw||IDRKRW;const demo=d.mode==='demo
   // 외국인
   $('fdate').textContent=i.foreign_date?((i.foreign_date)+' · '+T('prevday')):'';$('fnote').textContent='';
   $('fx').innerHTML=`<div><span>${T('netbuy')}</span><b class="num ${fn==null?'':fn>=0?'up':'dn'}">${fn==null?'<span class="chk">확인 필요</span>':(fn>=0?'+':'−')+idr(Math.abs(fn))}</b></div><div><span>${T('buy')}</span><b class="num">${i.foreign_buy==null?'—':idr(i.foreign_buy).replace(/<span.*<\/span>/,'')}</b></div><div><span>${T('sell')}</span><b class="num">${i.foreign_sell==null?'—':idr(i.foreign_sell).replace(/<span.*<\/span>/,'')}</b></div>`;
-  if(changed('ftop',[d.foreign_top,LANG]))$('ftop').innerHTML=(d.foreign_top||[]).slice(0,5).map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
-  if(changed('fbot',[d.foreign_bottom,LANG]))$('fbot').innerHTML=(d.foreign_bottom||[]).slice(0,5).map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
+  if(changed('ftop',[d.foreign_top,d.foreign_bottom,(d.fflow||{}).basis,LANG,fswin]))renderFTop();
   renderRank();
   // 시장 뉴스 (티커 없는 거시·정책 기사, 썸네일)
   const tn=d.top_news||[];if(changed('topnews',[tn,LANG]))$('topnews').innerHTML=tnBlock(tn);$('topnews').hidden=!tn.length;   // 오늘의 주요뉴스(하루 고정) — 카드 상단, 아래 실시간 목록에서는 중복 제외
@@ -1006,7 +1005,7 @@ function hotRender(){const l=hotList();if(!l.length){$('hot').textContent='—';
   clearInterval(hotTimer);hotTimer=setInterval(()=>{if($('hotbox').classList.contains('on'))return;hotI=(hotI+1)%l.length;const x=l[hotI];$('hot').textContent=`${x.src} · ${nTitle(x)}`;$('hotcnt').textContent=`${hotI+1} / ${l.length}`;},7000);}
 let hotCloseT=null;
 function hotOpen(on){clearTimeout(hotCloseT);if(on)$('hotbox').classList.add('on');else hotCloseT=setTimeout(()=>$('hotbox').classList.remove('on'),450);}   // 마우스가 잠깐 벗어나도 바로 닫히지 않게
-let annQ='',annMore=false,annLim=5,ANN_ALL=0,FVIEW='stock';let fwin='1d';   // 공시는 5건 고정(더보기는 오버레이) · fwin: 섹터 자금동향 기간
+let annQ='',annMore=false,annLim=5,ANN_ALL=0,FVIEW='stock';let fwin='1d',fswin='1d';   // 공시는 5건 고정(더보기는 오버레이) · fwin: 섹터 자금동향 기간
 function fitLists(){
   // 빈 열(보이는 카드 없음)은 보기 모드에서 숨겨 다른 열이 채우게 한다 (편집 모드에서는 드롭 대상으로 보여야 하므로 표시)
   document.querySelectorAll('#row2 .col').forEach(c=>c.classList.toggle('empty',![...c.children].some(el=>LAY_CARDS.includes(el.id)&&!el.hidden&&!el.classList.contains('lay-off'))));
@@ -1155,15 +1154,35 @@ function dcPlace(ov,cell){
   ov.style.maxHeight=Math.round(use)+'px';
   ov.style.top=Math.max(0,Math.round(top))+'px';}
 function setFwin(w){fwin=w;document.querySelectorAll('#fwin a').forEach(a=>a.classList.toggle('on',a.textContent.toLowerCase()===w));renderFFlow();}
+/* 종목 탭 기간 — 1D 는 거래소 확정치(foreign_top/bottom), 1W·1M 은 fflow.stk 누적을 정렬한다 */
+function setFsWin(w){fswin=w;document.querySelectorAll('#fswin a').forEach(a=>a.classList.toggle('on',a.textContent.toLowerCase()===w));renderFTop();}
+function renderFTop(){
+  const F=DATA.fflow||{}, i={'1d':0,'1w':1,'1m':2}[fswin]||0;
+  let top=[],bot=[];
+  if(fswin==='1d'){top=(DATA.foreign_top||[]).slice(0,5);bot=(DATA.foreign_bottom||[]).slice(0,5);}
+  else{
+    const arr=Object.entries(F.stk||{}).map(([t,o])=>{const v=((o.v||[])[i]||[])[0];
+        return v?Object.assign({},findStock(t)||{},{t:t,fnet:v}):null}).filter(Boolean);
+    arr.sort((a,b)=>b.fnet-a.fnet);
+    top=arr.slice(0,5); bot=arr.slice(-5).reverse();
+  }
+  const g=id=>document.getElementById(id);
+  if(g('ftop'))g('ftop').innerHTML=top.map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
+  if(g('fbot'))g('fbot').innerHTML=bot.map((o,k)=>stockRow(o,k,'foreign')).join('')||`<div class="empty">${T('noData')}</div>`;
+  const m=g('fsmeta');
+  if(m){const fr=(F.from||[])[i],to=F.to,dd=(F.days||[])[i];
+    m.textContent=fswin==='1d'?((DATA.index&&DATA.index.foreign_date)||''):((fr&&to)?(mmdd(fr)+'~'+mmdd(to)+(dd?' · '+dd+T('fwD'):'')):'');}
+}
+const mmdd=d=>String(d||'').slice(5).replace('-','/');
 const FF_SHORT={'Konsumen Non-Primer':'Kons. NonPrimer','Konsumen Primer':'Kons. Primer','Transportasi & Logistik':'Transportasi','Barang Baku':'Barang Baku','Perindustrian':'Industri'};
 function renderFFlow(){const box=$('fflow');if(!box||!DATA)return;
   const secs=(DATA.sectors||[]).map(x=>({n:LANG==='id'?(x.name_id||x.name):x.name,
     v:(fwin==='1m'?x.fnet_1m:fwin==='1w'?x.fnet_1w:x.fnet)||0,b:x.fbuy_top||[],s:x.fsell_top||[],
     days:(fwin==='1m'?x.flow_days_1m:x.flow_days)||0,
-    from:(fwin==='1m'?x.flow_from_1m:x.flow_from)||'',to:(fwin==='1m'?x.flow_to_1m:x.flow_to)||''}));
+    from:(fwin==='1m'?(x.win_from_1m||x.flow_from_1m):(x.win_from||x.flow_from))||'',to:(x.win_to||(fwin==='1m'?x.flow_to_1m:x.flow_to))||''}));
   const meta=$('fflowmeta');
   if(meta){const dd=(secs[0]||{}).days||0,md=v=>(v||'').slice(5).replace('-','/'),fr=md((secs[0]||{}).from),to=md((secs[0]||{}).to);
-    meta.textContent=(fwin==='1w'||fwin==='1m')?(dd?(dd+T('ffDays')+(fr?' · '+fr+'~'+to:'')):T('ffFill')):((DATA.index&&DATA.index.foreign_date)||'');}
+    meta.textContent=(fwin==='1w'||fwin==='1m')?(fr?(mmdd(fr)+'~'+mmdd(to)+(dd?' · '+dd+T('fwD'):'')):T('ffFill')):((DATA.index&&DATA.index.foreign_date)||'');}
   if(!secs.filter(x=>x.v).length){box.innerHTML=`<div class="empty">${(fwin==='1w'||fwin==='1m')?T('ffNone1w'):T('ffNone')}</div>`;return;}
   secs.sort((a,b)=>b.v-a.v);
   const mx=Math.max.apply(null,secs.map(x=>Math.abs(x.v)))||1;
@@ -1628,7 +1647,7 @@ document.body.setAttribute('data-lang',LANG);document.querySelectorAll('[data-la
 /* ---------- 레이아웃 커스터마이징 (카드 배치·숨김·랭킹 탭, 브라우저 저장) ---------- */
 /* 기본 배치 (2026-09-18 사장 지시) — 장외 대량거래는 왼쪽, 뉴스(시장·종목)는 오른쪽,
    홍보 배너는 아랫줄 좌(banner)·우(banner2) 한 장씩 */
-const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','banner','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['nego-card','banner2','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
+const LAY_DEF={cols:[['rank-card'],['status-card','wl-card'],['mnews-card'],['todayev-card','banner2','daycal-card','ann-card'],['foreign-card','gidx-card','macro-card'],['nego-card','banner','snews-card']],hidden:[],ranks:['value','gainers','losers','mcap','catalyst']};
 const LAY_CARDS=LAY_DEF.cols.flat();
 const RANK_ALL=[['value','value'],['gainers','gainers'],['losers','losers'],['mcap','mcapR'],['catalyst','catalyst'],['turnover','surge'],['volume','volR'],['fnet_top','fTop'],['fnet_bot','fBot']];
 let LAY=null,layEdit=false,layDrag=null;
